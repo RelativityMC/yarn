@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_10792
+	FIELD field_56763 mipLevels I
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_10793;III)V
+		ARG 5 mipLevels

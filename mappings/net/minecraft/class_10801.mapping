@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_10801
-	FIELD comp_3751 useAmbientOcclusion Z
-	FIELD comp_3752 getParticleSprite Lnet/minecraft/class_1058;

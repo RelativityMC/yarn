@@ -1,4 +1,57 @@
 CLASS net/minecraft/class_10097 net/minecraft/client/render/model/ReferencedModelsCollector
 	FIELD field_53664 LOGGER Lorg/slf4j/Logger;
+	FIELD field_56989 modelCache Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;
+	FIELD field_56990 missingModel Lnet/minecraft/class_10097$class_10814;
+	FIELD field_56992 resolver Lnet/minecraft/class_10526$class_10103;
+	METHOD <init> (Ljava/util/Map;Lnet/minecraft/class_1100;)V
+		ARG 1 unbakedModels
+		ARG 2 missingModel
 	METHOD method_62630 resolveAll (Ljava/util/List;)V
-	METHOD method_65744 add (Lnet/minecraft/class_10526;)V
+	METHOD method_65744 resolve (Lnet/minecraft/class_10526;)V
+		ARG 1 model
+	METHOD method_68022 getMissingModel ()Lnet/minecraft/class_10819;
+	METHOD method_68023 resolve (Lnet/minecraft/class_2960;)Lnet/minecraft/class_10097$class_10814;
+		ARG 1 id
+	METHOD method_68024 addSpecialModel (Lnet/minecraft/class_2960;Lnet/minecraft/class_1100;)V
+		ARG 1 id
+		ARG 2 model
+	METHOD method_68026 isRootModel (Lnet/minecraft/class_1100;)Z
+		ARG 0 model
+	METHOD method_68027 (Ljava/util/Map;Ljava/lang/Object;)Lnet/minecraft/class_10097$class_10814;
+		ARG 2 id
+	METHOD method_68029 (Lnet/minecraft/class_2960;Lnet/minecraft/class_1100;)Lnet/minecraft/class_10097$class_10814;
+		ARG 1 id
+		ARG 2 model
+	CLASS class_10814
+		FIELD field_56994 AMBIENT_OCCLUSION_PROPERTY Lnet/minecraft/class_10097$class_10815;
+		FIELD field_56995 GUI_LIGHT_PROPERTY Lnet/minecraft/class_10097$class_10815;
+		FIELD field_56996 GEOMETRY_PROPERTY Lnet/minecraft/class_10097$class_10815;
+		FIELD field_56997 TRANSFORMATIONS_PROPERTY Lnet/minecraft/class_10097$class_10815;
+		FIELD field_56998 TEXTURE_PROPERTY Lnet/minecraft/class_10097$class_10815;
+		FIELD field_56999 PARTICLE_TEXTURE_PROPERTY Lnet/minecraft/class_10097$class_10815;
+		FIELD field_57000 BAKED_GEOMETRY_PROPERTY Lnet/minecraft/class_10097$class_10815;
+		FIELD field_57001 PROPERTY_COUNT I
+		FIELD field_57002 id Lnet/minecraft/class_2960;
+		FIELD field_57004 parent Lnet/minecraft/class_10097$class_10814;
+		FIELD field_57005 model Lnet/minecraft/class_1100;
+		FIELD field_57006 properties Ljava/util/concurrent/atomic/AtomicReferenceArray;
+		FIELD field_57007 bakeCache Ljava/util/Map;
+		METHOD <init> (Lnet/minecraft/class_2960;Lnet/minecraft/class_1100;Z)V
+			ARG 1 id
+			ARG 2 model
+		METHOD method_68032 createProperty (I)Lnet/minecraft/class_10097$class_10815;
+		METHOD method_68035 getProperty (Lnet/minecraft/class_10097$class_10815;)Ljava/lang/Object;
+			ARG 1 property
+		METHOD method_68036 setProperty (Lnet/minecraft/class_10097$class_10815;Ljava/lang/Object;)Ljava/lang/Object;
+			ARG 1 property
+			ARG 2 value
+		METHOD method_68037 getProperty (Lnet/minecraft/class_10097$class_10815;Ljava/util/function/Function;)Ljava/lang/Object;
+			ARG 1 property
+			ARG 2 fallback
+		METHOD method_68039 getBakedGeometry (Lnet/minecraft/class_10419;Lnet/minecraft/class_7775;Lnet/minecraft/class_3665;)Lnet/minecraft/class_10817;
+			ARG 1 textures
+			ARG 2 baker
+			ARG 3 settings
+		METHOD method_68041 (Lnet/minecraft/class_10419;Lnet/minecraft/class_7775;Lnet/minecraft/class_3665;)Lnet/minecraft/class_10817;
+			ARG 3 settings1
+	CLASS class_10815 Property

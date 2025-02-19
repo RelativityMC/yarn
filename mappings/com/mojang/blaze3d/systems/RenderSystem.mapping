@@ -78,23 +78,12 @@ CLASS com/mojang/blaze3d/systems/RenderSystem
 		ARG 0 width
 	METHOD logicOp (Lcom/mojang/blaze3d/platform/GlStateManager$class_1030;)V
 		ARG 0 op
-	METHOD pixelStore (II)V
-		ARG 0 pname
-		ARG 1 param
 	METHOD polygonMode (II)V
 		ARG 0 face
 		ARG 1 mode
 	METHOD polygonOffset (FF)V
 		ARG 0 factor
 		ARG 1 units
-	METHOD readPixels (IIIIIILjava/nio/ByteBuffer;)V
-		ARG 0 x
-		ARG 1 y
-		ARG 2 width
-		ARG 3 height
-		ARG 4 format
-		ARG 5 type
-		ARG 6 pixels
 	METHOD setErrorCallback (Lorg/lwjgl/glfw/GLFWErrorCallbackI;)V
 		ARG 0 callback
 	METHOD setProjectionMatrix (Lorg/joml/Matrix4f;Lnet/minecraft/class_10366;)V

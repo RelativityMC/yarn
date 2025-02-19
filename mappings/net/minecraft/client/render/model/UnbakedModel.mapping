@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_1100 net/minecraft/client/render/model/UnbakedModel
 	FIELD field_57026 PARTICLE_TEXTURE Ljava/lang/String;
+	METHOD comp_3740 guiLight ()Lnet/minecraft/class_1100$class_4751;
 	METHOD comp_3742 transformations ()Lnet/minecraft/class_809;
 	METHOD comp_3743 textures ()Lnet/minecraft/class_10419$class_10420;
 	METHOD comp_3744 parentId ()Lnet/minecraft/class_2960;

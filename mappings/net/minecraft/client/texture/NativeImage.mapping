@@ -25,11 +25,6 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 		ARG 5 pointer
 	METHOD method_24032 write (Ljava/nio/channels/WritableByteChannel;)Z
 		ARG 1 channel
-	METHOD method_35620 readDepthComponent (F)V
-		ARG 1 unused
-	METHOD method_35627 drawPixels ()V
-		COMMENT Use {@code upload} to upload this image to GL so it can be used later. This
-		COMMENT method is not used in vanilla, and its side effects are not yet known.
 	METHOD method_36559 isOutOfBounds (II)Z
 		ARG 1 x
 		ARG 2 y
@@ -90,7 +85,6 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 	METHOD method_4317 copyFrom (Lnet/minecraft/class_1011;)V
 		ARG 1 image
 	METHOD method_4318 getFormat ()Lnet/minecraft/class_1011$class_1012;
-	METHOD method_4319 mirrorVertically ()V
 	METHOD method_4320 checkAllocated ()V
 	METHOD method_4322 makePixelArray ()[I
 	METHOD method_4323 getHeight ()I
@@ -104,9 +98,6 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 		ARG 3 width
 		ARG 4 height
 		ARG 5 color
-	METHOD method_4327 loadFromTextureImage (IZ)V
-		ARG 1 level
-		ARG 2 removeAlpha
 	METHOD method_47594 copyRect (Lnet/minecraft/class_1011;IIIIIIZZ)V
 		ARG 1 image
 		ARG 2 x
@@ -122,8 +113,6 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 	METHOD method_48463 copyPixelsAbgr ()[I
 	METHOD method_49277 read ([B)Lnet/minecraft/class_1011;
 		ARG 0 bytes
-	METHOD method_51596 apply (Ljava/util/function/IntUnaryOperator;)V
-		ARG 1 operator
 	METHOD method_61940 getColorArgb (II)I
 		ARG 1 x
 		ARG 2 y
@@ -198,8 +187,6 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 			ARG 0 glFormat
 		METHOD method_4337 hasOpacityChannel ()Z
 		METHOD method_4338 isWriteable ()Z
-		METHOD method_4339 setPackAlignment ()V
-		METHOD method_4340 setUnpackAlignment ()V
 	CLASS class_1014 WriteCallback
 		FIELD field_5018 channel Ljava/nio/channels/WritableByteChannel;
 		FIELD field_5019 exception Ljava/io/IOException;

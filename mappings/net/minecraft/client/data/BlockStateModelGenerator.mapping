@@ -16,7 +16,6 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 	FIELD field_56785 ROTATE_Y_90 Lnet/minecraft/class_10804;
 	FIELD field_56786 ROTATE_Y_180 Lnet/minecraft/class_10804;
 	FIELD field_56787 ROTATE_Y_270 Lnet/minecraft/class_10804;
-	FIELD field_56788 WEIGHT_2 Lnet/minecraft/class_10804;
 	FIELD field_56789 UNORIENTABLE_TRAPDOORS Ljava/util/List;
 	FIELD field_56790 BASE_WITH_CUSTOM_GENERATOR Ljava/util/Map;
 	FIELD field_56791 NORTH_DEFAULT_ROTATION_OPERATIONS Lnet/minecraft/class_4926;

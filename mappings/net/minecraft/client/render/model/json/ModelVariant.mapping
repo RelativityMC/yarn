@@ -3,13 +3,11 @@ CLASS net/minecraft/class_813 net/minecraft/client/render/model/json/ModelVarian
 	FIELD field_56933 CODEC Lcom/mojang/serialization/Codec;
 	METHOD <init> (Lnet/minecraft/class_2960;)V
 		ARG 1 model
-	METHOD <init> (Lnet/minecraft/class_2960;Lnet/minecraft/class_813$class_10803;I)V
+	METHOD <init> (Lnet/minecraft/class_2960;Lnet/minecraft/class_813$class_10803;)V
 		ARG 1 location
 	METHOD comp_3379 modelId ()Lnet/minecraft/class_2960;
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
-	METHOD method_67935 withWeight (I)Lnet/minecraft/class_813;
-		ARG 1 weight
 	METHOD method_67936 withModel (Lnet/minecraft/class_2960;)Lnet/minecraft/class_813;
 		ARG 1 modelId
 	METHOD method_67937 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

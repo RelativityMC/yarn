@@ -7,14 +7,14 @@ CLASS net/minecraft/class_10785 net/minecraft/client/gl/ShaderPipeline
 	FIELD field_56710 glUniforms Ljava/util/List;
 	FIELD field_56711 depthTest Lnet/minecraft/class_10798;
 	FIELD field_56712 hasCulling Z
-	FIELD field_56713 colorLogic Lcom/mojang/blaze3d/platform/GlStateManager$class_1030;
+	FIELD field_56713 colorLogic Lnet/minecraft/class_10879;
 	FIELD field_56714 blender Ljava/util/Optional;
 	FIELD field_56715 hasColor Z
 	FIELD field_56716 hasAlpha Z
 	FIELD field_56717 hasDepth Z
 	FIELD field_56718 format Lnet/minecraft/class_293;
 	FIELD field_56719 drawMode Lnet/minecraft/class_293$class_5596;
-	METHOD <init> (Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;Lnet/minecraft/class_10149;Ljava/util/List;Ljava/util/List;Ljava/util/Optional;Lnet/minecraft/class_10798;ZZZZLcom/mojang/blaze3d/platform/GlStateManager$class_1030;Lnet/minecraft/class_293;Lnet/minecraft/class_293$class_5596;)V
+	METHOD <init> (Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;Lnet/minecraft/class_10149;Ljava/util/List;Ljava/util/List;Ljava/util/Optional;Lnet/minecraft/class_10798;Lnet/minecraft/class_10880;ZZZZLnet/minecraft/class_10879;Lnet/minecraft/class_293;Lnet/minecraft/class_293$class_5596;FF)V
 		ARG 1 id
 		ARG 2 vertices
 		ARG 3 pass
@@ -23,22 +23,10 @@ CLASS net/minecraft/class_10785 net/minecraft/client/gl/ShaderPipeline
 		ARG 6 glUniforms
 		ARG 7 blender
 		ARG 8 depthTest
-		ARG 9 hasCulling
-		ARG 10 hasColor
-		ARG 11 hasAlpha
-		ARG 12 hasDepth
-		ARG 13 colorLogic
-		ARG 14 format
-		ARG 15 drawMode
-	METHOD method_67727 begin ()V
-	METHOD method_67728 applyDepthTest (Lnet/minecraft/class_10798;)I
-		ARG 1 mode
 	METHOD method_67729 builder ([Lnet/minecraft/class_10785$class_10787;)Lnet/minecraft/class_10785$class_10786;
 		ARG 0 stages
-	METHOD method_67730 getProgram ()Lnet/minecraft/class_5944;
-	METHOD method_67731 reset ()V
 	METHOD method_67732 getId ()Lnet/minecraft/class_2960;
-	METHOD method_67733 hasCulling ()Ljava/lang/Boolean;
+	METHOD method_67733 hasCulling ()Z
 	METHOD method_67734 getFormat ()Lnet/minecraft/class_293;
 	METHOD method_67735 getDrawMode ()Lnet/minecraft/class_293$class_5596;
 	METHOD method_67736 getVertices ()Lnet/minecraft/class_2960;
@@ -65,7 +53,7 @@ CLASS net/minecraft/class_10785 net/minecraft/client/gl/ShaderPipeline
 		METHOD method_67741 noBlender ()Lnet/minecraft/class_10785$class_10786;
 		METHOD method_67742 id (Lnet/minecraft/class_2960;)Lnet/minecraft/class_10785$class_10786;
 			ARG 1 id
-		METHOD method_67743 colorLogic (Lcom/mojang/blaze3d/platform/GlStateManager$class_1030;)Lnet/minecraft/class_10785$class_10786;
+		METHOD method_67743 colorLogic (Lnet/minecraft/class_10879;)Lnet/minecraft/class_10785$class_10786;
 			ARG 1 logic
 		METHOD method_67744 blender (Lnet/minecraft/class_10784;)Lnet/minecraft/class_10785$class_10786;
 			ARG 1 blender
@@ -84,7 +72,7 @@ CLASS net/minecraft/class_10785 net/minecraft/client/gl/ShaderPipeline
 		METHOD method_67750 defines (Ljava/lang/String;I)Lnet/minecraft/class_10785$class_10786;
 			ARG 1 name
 			ARG 2 value
-		METHOD method_67751 uniform (Ljava/lang/String;Lnet/minecraft/class_284$class_10789;)Lnet/minecraft/class_10785$class_10786;
+		METHOD method_67751 uniform (Ljava/lang/String;Lnet/minecraft/class_10789;)Lnet/minecraft/class_10785$class_10786;
 			ARG 1 name
 			ARG 2 type
 		METHOD method_67752 (Ljava/util/List;)V

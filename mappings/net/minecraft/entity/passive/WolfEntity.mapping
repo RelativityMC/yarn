@@ -57,8 +57,6 @@ CLASS net/minecraft/class_1493 net/minecraft/entity/passive/WolfEntity
 		ARG 1 tickProgress
 	METHOD method_68128 (Lnet/minecraft/class_5321;)Ljava/util/Optional;
 		ARG 1 soundVariantKey
-	METHOD method_68129 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_5321;
-		ARG 0 soundVariantId
 	METHOD method_68130 (Lnet/minecraft/class_2487;Lnet/minecraft/class_5321;)V
 		ARG 1 soundVariant
 	METHOD method_68131 getSoundVariant ()Lnet/minecraft/class_6880;

@@ -11,14 +11,14 @@ CLASS net/minecraft/class_5603 net/minecraft/client/model/ModelTransform
 	METHOD comp_3000 pitch ()F
 	METHOD comp_3001 yaw ()F
 	METHOD comp_3002 roll ()F
-	METHOD method_32090 anchor (FFF)Lnet/minecraft/class_5603;
+	METHOD method_32090 origin (FFF)Lnet/minecraft/class_5603;
 		ARG 0 x
 		ARG 1 y
 		ARG 2 z
 	METHOD method_32091 of (FFFFFF)Lnet/minecraft/class_5603;
-		ARG 0 pivotX
-		ARG 1 pivotY
-		ARG 2 pivotZ
+		ARG 0 originX
+		ARG 1 originY
+		ARG 2 originZ
 		ARG 3 pitch
 		ARG 4 yaw
 		ARG 5 roll
@@ -30,7 +30,7 @@ CLASS net/minecraft/class_5603 net/minecraft/client/model/ModelTransform
 		ARG 1 scale
 	METHOD method_62134 scaled (F)Lnet/minecraft/class_5603;
 		ARG 1 scale
-	METHOD method_62135 offset (FFF)Lnet/minecraft/class_5603;
+	METHOD method_62135 moveOrigin (FFF)Lnet/minecraft/class_5603;
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

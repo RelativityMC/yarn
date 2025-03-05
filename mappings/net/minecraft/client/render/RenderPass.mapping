@@ -44,6 +44,6 @@ CLASS net/minecraft/class_10883 net/minecraft/client/render/RenderPass
 			ARG 5 firstIndex
 			ARG 6 indexCount
 	CLASS class_10885 UniformUploader
-		METHOD upload upload (Ljava/lang/String;[F)V
+		METHOD upload (Ljava/lang/String;[F)V
 			ARG 1 uniform
 			ARG 2 values

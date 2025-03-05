@@ -4,7 +4,6 @@ CLASS net/minecraft/class_9360 net/minecraft/predicate/item/ItemSubPredicate
 		ARG 1 components
 	METHOD method_67301 createCodec (Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;
 		ARG 0 predicateFieldName
-	CLASS class_10727 TypedSubPredicate
 	CLASS class_8745 Type
 		FIELD field_56401 predicateCodec Lcom/mojang/serialization/Codec;
 		FIELD field_56402 typedCodec Lcom/mojang/serialization/MapCodec;
@@ -16,3 +15,4 @@ CLASS net/minecraft/class_9360 net/minecraft/predicate/item/ItemSubPredicate
 		METHOD method_67304 (Lnet/minecraft/class_9360;)Lnet/minecraft/class_9360$class_10727;
 			ARG 1 predicate
 		METHOD method_67305 getTypedCodec ()Lcom/mojang/serialization/MapCodec;
+	CLASS class_10727 TypedSubPredicate

@@ -43,23 +43,6 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 	METHOD method_3633 clear ()V
 	METHOD method_38555 (Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletionStage;
 		ARG 0 future
-	CLASS class_10196 NormalizedRelativePos
-		FIELD field_54170 x I
-		FIELD field_54171 y I
-		FIELD field_54172 z I
-		METHOD equals (Ljava/lang/Object;)Z
-			ARG 1 o
-		METHOD method_64067 isOnCameraAxis ()Z
-		METHOD method_64068 normalize (DI)I
-			ARG 0 cameraCoord
-			ARG 2 sectionCoord
-		METHOD method_64069 of (Lnet/minecraft/class_243;J)Lnet/minecraft/class_846$class_10196;
-			ARG 0 cameraPos
-			ARG 1 sectionPos
-		METHOD method_64070 with (Lnet/minecraft/class_243;J)Lnet/minecraft/class_846$class_10196;
-			ARG 1 cameraPos
-			ARG 2 sectionPos
-	CLASS class_4690 Result
 	CLASS class_849 ChunkData
 		FIELD field_4450 nonEmptyLayers Ljava/util/Set;
 		FIELD field_4451 UNPROCESSED Lnet/minecraft/class_846$class_849;
@@ -161,3 +144,20 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 				ARG 3 throwable
 			METHOD method_22790 (Ljava/lang/Void;)Lnet/minecraft/class_846$class_4690;
 				ARG 0 v
+	CLASS class_4690 Result
+	CLASS class_10196 NormalizedRelativePos
+		FIELD field_54170 x I
+		FIELD field_54171 y I
+		FIELD field_54172 z I
+		METHOD equals (Ljava/lang/Object;)Z
+			ARG 1 o
+		METHOD method_64067 isOnCameraAxis ()Z
+		METHOD method_64068 normalize (DI)I
+			ARG 0 cameraCoord
+			ARG 2 sectionCoord
+		METHOD method_64069 of (Lnet/minecraft/class_243;J)Lnet/minecraft/class_846$class_10196;
+			ARG 0 cameraPos
+			ARG 1 sectionPos
+		METHOD method_64070 with (Lnet/minecraft/class_243;J)Lnet/minecraft/class_846$class_10196;
+			ARG 1 cameraPos
+			ARG 2 sectionPos

@@ -1,9 +1,6 @@
 CLASS net/minecraft/class_10881 net/minecraft/client/render/RenderResourceManager
 	METHOD method_68347 readBufferFully (Lnet/minecraft/class_10227;)Lnet/minecraft/class_10227$class_10858;
 		ARG 1 source
-	METHOD method_68348 clearAndResizeBuffer (Lnet/minecraft/class_10227;I)V
-		ARG 1 target
-		ARG 2 size
 	METHOD method_68349 readBuffer (Lnet/minecraft/class_10227;II)Lnet/minecraft/class_10227$class_10858;
 		ARG 1 source
 		ARG 2 offset

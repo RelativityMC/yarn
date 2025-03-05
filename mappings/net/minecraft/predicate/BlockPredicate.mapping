@@ -4,7 +4,6 @@ CLASS net/minecraft/class_4550 net/minecraft/predicate/BlockPredicate
 	FIELD field_49181 PACKET_CODEC Lnet/minecraft/class_9139;
 	METHOD comp_1733 state ()Ljava/util/Optional;
 	METHOD method_22454 test (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;)Z
-		ARG 1 world
 		ARG 2 pos
 	METHOD method_57143 hasNbt ()Z
 	METHOD method_57144 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

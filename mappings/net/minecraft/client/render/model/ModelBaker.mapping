@@ -31,11 +31,11 @@ CLASS net/minecraft/class_1088 net/minecraft/client/render/model/ModelBaker
 		ARG 1 spriteGetter
 	METHOD method_60912 (Ljava/lang/String;)Ljava/lang/String;
 		ARG 0 path
-	CLASS class_10524 BakedModels
-	CLASS class_10812 BlockItemModels
-		METHOD method_68021 bake (Lnet/minecraft/class_10819;Lnet/minecraft/class_9826;)Lnet/minecraft/class_1088$class_10812;
-			ARG 0 model
 	CLASS class_7778 BakerImpl
 		FIELD field_56988 spriteGetter Lnet/minecraft/class_9826;
 		FIELD field_57959 cache Ljava/util/Map;
 		FIELD field_57960 cacheValueFunction Ljava/util/function/Function;
+	CLASS class_10524 BakedModels
+	CLASS class_10812 BlockItemModels
+		METHOD method_68021 bake (Lnet/minecraft/class_10819;Lnet/minecraft/class_9826;)Lnet/minecraft/class_1088$class_10812;
+			ARG 0 model

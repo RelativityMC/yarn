@@ -87,5 +87,5 @@ CLASS net/minecraft/class_1092 net/minecraft/client/render/model/BakedModelManag
 		ARG 7 models
 	CLASS 1
 		FIELD field_55480 missingSprite Lnet/minecraft/class_1058;
-	CLASS class_10816 Models
 	CLASS class_7779 BakingResult
+	CLASS class_10816 Models

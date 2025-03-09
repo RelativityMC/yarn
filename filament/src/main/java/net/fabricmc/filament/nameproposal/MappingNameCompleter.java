@@ -30,7 +30,6 @@ import java.util.regex.Pattern;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.tree.ClassNode;
 
-import net.fabricmc.mappingio.MappedElementKind;
 import net.fabricmc.mappingio.MappingReader;
 import net.fabricmc.mappingio.MappingWriter;
 import net.fabricmc.mappingio.format.MappingFormat;
@@ -77,7 +76,7 @@ public class MappingNameCompleter {
 
 			if (yarnFieldName == null || yarnFieldName.startsWith("field_") || yarnFieldName.startsWith("comp_")) {
 				// Set a new dst name if it doesn't have one, or matches intermediary
-				yarn.visitDstName(MappedElementKind.FIELD, yarnNamedNs, entry.getValue());
+				fieldMapping.setDstName(entry.getValue(), yarnNamedNs);
 			}
 		}
 
@@ -95,7 +94,7 @@ public class MappingNameCompleter {
 
 			if (yarnFieldName == null || yarnFieldName.startsWith("method_") || yarnFieldName.startsWith("comp_")) {
 				// Set a new dst name if it doesn't have one, or matches intermediary
-				yarn.visitDstName(MappedElementKind.METHOD, yarnNamedNs, entry.getValue());
+				methodMapping.setDstName(entry.getValue(), yarnNamedNs);
 			}
 		}
 

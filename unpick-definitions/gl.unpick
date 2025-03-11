@@ -17,96 +17,96 @@ v2
 # Only constants that need unpicking in vanilla are listed.
 
 # GlConst
-constant gl_depth_test_state com/mojang/blaze3d/platform/GlConst GL_EQUAL
-constant gl_depth_test_state com/mojang/blaze3d/platform/GlConst GL_LEQUAL
-constant gl_depth_test_state com/mojang/blaze3d/platform/GlConst GL_LESS
-constant gl_depth_test_state com/mojang/blaze3d/platform/GlConst GL_GREATER
-constant gl_depth_test_state com/mojang/blaze3d/platform/GlConst GL_GEQUAL
-constant gl_depth_test_state com/mojang/blaze3d/platform/GlConst GL_ALWAYS
+constant gl_depth_test_state com/mojang/blaze3d/opengl/GlConst GL_EQUAL
+constant gl_depth_test_state com/mojang/blaze3d/opengl/GlConst GL_LEQUAL
+constant gl_depth_test_state com/mojang/blaze3d/opengl/GlConst GL_LESS
+constant gl_depth_test_state com/mojang/blaze3d/opengl/GlConst GL_GREATER
+constant gl_depth_test_state com/mojang/blaze3d/opengl/GlConst GL_GEQUAL
+constant gl_depth_test_state com/mojang/blaze3d/opengl/GlConst GL_ALWAYS
 
-constant gl_polygon_mode com/mojang/blaze3d/platform/GlConst GL_LINE
-constant gl_polygon_mode com/mojang/blaze3d/platform/GlConst GL_FILL
+constant gl_polygon_mode com/mojang/blaze3d/opengl/GlConst GL_LINE
+constant gl_polygon_mode com/mojang/blaze3d/opengl/GlConst GL_FILL
 
-constant gl_draw_mode com/mojang/blaze3d/platform/GlConst GL_LINES
-constant gl_draw_mode com/mojang/blaze3d/platform/GlConst GL_LINE_STRIP
-constant gl_draw_mode com/mojang/blaze3d/platform/GlConst GL_TRIANGLE_STRIP
-constant gl_draw_mode com/mojang/blaze3d/platform/GlConst GL_TRIANGLE_FAN
-constant gl_draw_mode com/mojang/blaze3d/platform/GlConst GL_TRIANGLES
+constant gl_draw_mode com/mojang/blaze3d/opengl/GlConst GL_LINES
+constant gl_draw_mode com/mojang/blaze3d/opengl/GlConst GL_LINE_STRIP
+constant gl_draw_mode com/mojang/blaze3d/opengl/GlConst GL_TRIANGLE_STRIP
+constant gl_draw_mode com/mojang/blaze3d/opengl/GlConst GL_TRIANGLE_FAN
+constant gl_draw_mode com/mojang/blaze3d/opengl/GlConst GL_TRIANGLES
 
-constant gl_texture_clamp_mode com/mojang/blaze3d/platform/GlConst GL_CLAMP_TO_EDGE
-constant gl_texture_clamp_mode com/mojang/blaze3d/platform/GlConst GL_REPEAT
+constant gl_texture_clamp_mode com/mojang/blaze3d/opengl/GlConst GL_CLAMP_TO_EDGE
+constant gl_texture_clamp_mode com/mojang/blaze3d/opengl/GlConst GL_REPEAT
 
 # Framebuffer
 
-constant gl_framebuffer_target com/mojang/blaze3d/platform/GlConst GL_FRAMEBUFFER
-constant gl_framebuffer_target com/mojang/blaze3d/platform/GlConst GL_READ_FRAMEBUFFER
-constant gl_framebuffer_target com/mojang/blaze3d/platform/GlConst GL_DRAW_FRAMEBUFFER
+constant gl_framebuffer_target com/mojang/blaze3d/opengl/GlConst GL_FRAMEBUFFER
+constant gl_framebuffer_target com/mojang/blaze3d/opengl/GlConst GL_READ_FRAMEBUFFER
+constant gl_framebuffer_target com/mojang/blaze3d/opengl/GlConst GL_DRAW_FRAMEBUFFER
 
-constant gl_filter com/mojang/blaze3d/platform/GlConst GL_NEAREST
-constant gl_filter com/mojang/blaze3d/platform/GlConst GL_LINEAR
+constant gl_filter com/mojang/blaze3d/opengl/GlConst GL_NEAREST
+constant gl_filter com/mojang/blaze3d/opengl/GlConst GL_LINEAR
 
-constant gl_tex_target com/mojang/blaze3d/platform/GlConst GL_TEXTURE_2D
-constant gl_tex_target com/mojang/blaze3d/platform/GlConst GL_PROXY_TEXTURE_2D
+constant gl_tex_target com/mojang/blaze3d/opengl/GlConst GL_TEXTURE_2D
+constant gl_tex_target com/mojang/blaze3d/opengl/GlConst GL_PROXY_TEXTURE_2D
 
-constant gl_tex_parameter_pname com/mojang/blaze3d/platform/GlConst GL_TEXTURE_MAG_FILTER
-constant gl_tex_parameter_pname com/mojang/blaze3d/platform/GlConst GL_TEXTURE_MIN_FILTER
-constant gl_tex_parameter_pname com/mojang/blaze3d/platform/GlConst GL_TEXTURE_COMPARE_MODE
-constant gl_tex_parameter_pname com/mojang/blaze3d/platform/GlConst GL_TEXTURE_WRAP_S
-constant gl_tex_parameter_pname com/mojang/blaze3d/platform/GlConst GL_TEXTURE_WRAP_T
+constant gl_tex_parameter_pname com/mojang/blaze3d/opengl/GlConst GL_TEXTURE_MAG_FILTER
+constant gl_tex_parameter_pname com/mojang/blaze3d/opengl/GlConst GL_TEXTURE_MIN_FILTER
+constant gl_tex_parameter_pname com/mojang/blaze3d/opengl/GlConst GL_TEXTURE_COMPARE_MODE
+constant gl_tex_parameter_pname com/mojang/blaze3d/opengl/GlConst GL_TEXTURE_WRAP_S
+constant gl_tex_parameter_pname com/mojang/blaze3d/opengl/GlConst GL_TEXTURE_WRAP_T
 constant gl_tex_parameter_pname org/lwjgl/opengl/GL12 GL_TEXTURE_MAX_LEVEL
 constant gl_tex_parameter_pname org/lwjgl/opengl/GL12 GL_TEXTURE_MAX_LOD
 constant gl_tex_parameter_pname org/lwjgl/opengl/GL12 GL_TEXTURE_MIN_LOD
 constant gl_tex_parameter_pname org/lwjgl/opengl/GL14 GL_TEXTURE_LOD_BIAS
 
-constant gl_tex_level_parameter_pname com/mojang/blaze3d/platform/GlConst GL_TEXTURE_WIDTH
+constant gl_tex_level_parameter_pname com/mojang/blaze3d/opengl/GlConst GL_TEXTURE_WIDTH
 
-constant gl_tex_parameter_value com/mojang/blaze3d/platform/GlConst GL_NEAREST
-constant gl_tex_parameter_value com/mojang/blaze3d/platform/GlConst GL_LINEAR
-constant gl_tex_parameter_value com/mojang/blaze3d/platform/GlConst GL_CLAMP_TO_EDGE
-constant gl_tex_parameter_value com/mojang/blaze3d/platform/GlConst GL_NEAREST_MIPMAP_LINEAR
-constant gl_tex_parameter_value com/mojang/blaze3d/platform/GlConst GL_LINEAR_MIPMAP_LINEAR
+constant gl_tex_parameter_value com/mojang/blaze3d/opengl/GlConst GL_NEAREST
+constant gl_tex_parameter_value com/mojang/blaze3d/opengl/GlConst GL_LINEAR
+constant gl_tex_parameter_value com/mojang/blaze3d/opengl/GlConst GL_CLAMP_TO_EDGE
+constant gl_tex_parameter_value com/mojang/blaze3d/opengl/GlConst GL_NEAREST_MIPMAP_LINEAR
+constant gl_tex_parameter_value com/mojang/blaze3d/opengl/GlConst GL_LINEAR_MIPMAP_LINEAR
 
-constant gl_tex_format com/mojang/blaze3d/platform/GlConst GL_DEPTH_COMPONENT
-constant gl_tex_format com/mojang/blaze3d/platform/GlConst GL_DEPTH_COMPONENT32
-constant gl_tex_format com/mojang/blaze3d/platform/GlConst GL_RGBA8
-constant gl_tex_format com/mojang/blaze3d/platform/GlConst GL_RGBA
-constant gl_tex_format com/mojang/blaze3d/platform/GlConst GL_BGR
-constant gl_tex_format com/mojang/blaze3d/platform/GlConst GL_RG
-constant gl_tex_format com/mojang/blaze3d/platform/GlConst GL_R8
-constant gl_tex_format com/mojang/blaze3d/platform/GlConst GL_RGB
-constant gl_tex_format com/mojang/blaze3d/platform/GlConst GL_RED
+constant gl_tex_format com/mojang/blaze3d/opengl/GlConst GL_DEPTH_COMPONENT
+constant gl_tex_format com/mojang/blaze3d/opengl/GlConst GL_DEPTH_COMPONENT32
+constant gl_tex_format com/mojang/blaze3d/opengl/GlConst GL_RGBA8
+constant gl_tex_format com/mojang/blaze3d/opengl/GlConst GL_RGBA
+constant gl_tex_format com/mojang/blaze3d/opengl/GlConst GL_BGR
+constant gl_tex_format com/mojang/blaze3d/opengl/GlConst GL_RG
+constant gl_tex_format com/mojang/blaze3d/opengl/GlConst GL_R8
+constant gl_tex_format com/mojang/blaze3d/opengl/GlConst GL_RGB
+constant gl_tex_format com/mojang/blaze3d/opengl/GlConst GL_RED
 constant gl_tex_format org/lwjgl/opengl/GL12 GL_BGRA
 
-constant gl_type com/mojang/blaze3d/platform/GlConst GL_BYTE
-constant gl_type com/mojang/blaze3d/platform/GlConst GL_UNSIGNED_BYTE
-constant gl_type com/mojang/blaze3d/platform/GlConst GL_SHORT
-constant gl_type com/mojang/blaze3d/platform/GlConst GL_UNSIGNED_SHORT
-constant gl_type com/mojang/blaze3d/platform/GlConst GL_INT
-constant gl_type com/mojang/blaze3d/platform/GlConst GL_UNSIGNED_INT
-constant gl_type com/mojang/blaze3d/platform/GlConst GL_FLOAT
+constant gl_type com/mojang/blaze3d/opengl/GlConst GL_BYTE
+constant gl_type com/mojang/blaze3d/opengl/GlConst GL_UNSIGNED_BYTE
+constant gl_type com/mojang/blaze3d/opengl/GlConst GL_SHORT
+constant gl_type com/mojang/blaze3d/opengl/GlConst GL_UNSIGNED_SHORT
+constant gl_type com/mojang/blaze3d/opengl/GlConst GL_INT
+constant gl_type com/mojang/blaze3d/opengl/GlConst GL_UNSIGNED_INT
+constant gl_type com/mojang/blaze3d/opengl/GlConst GL_FLOAT
 constant gl_type org/lwjgl/opengl/GL20 GL_FLOAT_VEC2
 constant gl_type org/lwjgl/opengl/GL20 GL_FLOAT_VEC3
 constant gl_type org/lwjgl/opengl/GL20 GL_FLOAT_VEC4
 constant gl_type org/lwjgl/opengl/GL20 GL_FLOAT_MAT4
 
-constant gl_framebuffer_attachment com/mojang/blaze3d/platform/GlConst GL_COLOR_ATTACHMENT0
-constant gl_framebuffer_attachment com/mojang/blaze3d/platform/GlConst GL_DEPTH_ATTACHMENT
+constant gl_framebuffer_attachment com/mojang/blaze3d/opengl/GlConst GL_COLOR_ATTACHMENT0
+constant gl_framebuffer_attachment com/mojang/blaze3d/opengl/GlConst GL_DEPTH_ATTACHMENT
 
-constant gl_framebuffer_status com/mojang/blaze3d/platform/GlConst GL_FRAMEBUFFER_COMPLETE
-constant gl_framebuffer_status com/mojang/blaze3d/platform/GlConst GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT
-constant gl_framebuffer_status com/mojang/blaze3d/platform/GlConst GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT
-constant gl_framebuffer_status com/mojang/blaze3d/platform/GlConst GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER
-constant gl_framebuffer_status com/mojang/blaze3d/platform/GlConst GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER
-constant gl_framebuffer_status com/mojang/blaze3d/platform/GlConst GL_FRAMEBUFFER_UNSUPPORTED
-constant gl_framebuffer_status com/mojang/blaze3d/platform/GlConst GL_OUT_OF_MEMORY
+constant gl_framebuffer_status com/mojang/blaze3d/opengl/GlConst GL_FRAMEBUFFER_COMPLETE
+constant gl_framebuffer_status com/mojang/blaze3d/opengl/GlConst GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT
+constant gl_framebuffer_status com/mojang/blaze3d/opengl/GlConst GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT
+constant gl_framebuffer_status com/mojang/blaze3d/opengl/GlConst GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER
+constant gl_framebuffer_status com/mojang/blaze3d/opengl/GlConst GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER
+constant gl_framebuffer_status com/mojang/blaze3d/opengl/GlConst GL_FRAMEBUFFER_UNSUPPORTED
+constant gl_framebuffer_status com/mojang/blaze3d/opengl/GlConst GL_OUT_OF_MEMORY
 
 # GlBlendState
 
-constant gl_blend_equation_mode com/mojang/blaze3d/platform/GlConst GL_FUNC_ADD
-constant gl_blend_equation_mode com/mojang/blaze3d/platform/GlConst GL_MIN
-constant gl_blend_equation_mode com/mojang/blaze3d/platform/GlConst GL_MAX
-constant gl_blend_equation_mode com/mojang/blaze3d/platform/GlConst GL_FUNC_SUBTRACT
-constant gl_blend_equation_mode com/mojang/blaze3d/platform/GlConst GL_FUNC_REVERSE_SUBTRACT
+constant gl_blend_equation_mode com/mojang/blaze3d/opengl/GlConst GL_FUNC_ADD
+constant gl_blend_equation_mode com/mojang/blaze3d/opengl/GlConst GL_MIN
+constant gl_blend_equation_mode com/mojang/blaze3d/opengl/GlConst GL_MAX
+constant gl_blend_equation_mode com/mojang/blaze3d/opengl/GlConst GL_FUNC_SUBTRACT
+constant gl_blend_equation_mode com/mojang/blaze3d/opengl/GlConst GL_FUNC_REVERSE_SUBTRACT
 
 # DebugLabelManager
 constant gl_khr_label_identifier org/lwjgl/opengl/KHRDebug GL_BUFFER
@@ -154,18 +154,18 @@ constant gl_enable_state org/lwjgl/opengl/GL43 GL_DEBUG_OUTPUT_SYNCHRONOUS
 constant gl_hint_mode org/lwjgl/opengl/GL11 GL_DONT_CARE
 
 # GlFenceSync
-constant gl_client_wait_sync_result com/mojang/blaze3d/platform/GlConst GL_TIMEOUT_EXPIRED
-constant gl_client_wait_sync_result com/mojang/blaze3d/platform/GlConst GL_WAIT_FAILED
+constant gl_client_wait_sync_result com/mojang/blaze3d/opengl/GlConst GL_TIMEOUT_EXPIRED
+constant gl_client_wait_sync_result com/mojang/blaze3d/opengl/GlConst GL_WAIT_FAILED
 
 # GlResourceManager
-constant gl_draw_buffer_buf com/mojang/blaze3d/platform/GlConst GL_COLOR_ATTACHMENT0
+constant gl_draw_buffer_buf com/mojang/blaze3d/opengl/GlConst GL_COLOR_ATTACHMENT0
 
-constant gl_polygon_mode_face com/mojang/blaze3d/platform/GlConst GL_FRONT_AND_BACK
+constant gl_polygon_mode_face com/mojang/blaze3d/opengl/GlConst GL_FRONT_AND_BACK
 
 # GlProgramManager
 
-constant gl_program_pname com/mojang/blaze3d/platform/GlConst GL_LINK_STATUS
-constant gl_program_pname com/mojang/blaze3d/platform/GlConst GL_COMPILE_STATUS
+constant gl_program_pname com/mojang/blaze3d/opengl/GlConst GL_LINK_STATUS
+constant gl_program_pname com/mojang/blaze3d/opengl/GlConst GL_COMPILE_STATUS
 constant gl_program_pname org/lwjgl/opengl/GL20 GL_ACTIVE_UNIFORMS
 
 # note: glGetProgramInfoLog 32768 is not a const or flag
@@ -178,34 +178,34 @@ constant gl_query_object_pname org/lwjgl/opengl/GL15 GL_QUERY_RESULT
 constant gl_query_object_pname org/lwjgl/opengl/GL15 GL_QUERY_RESULT_AVAILABLE
 
 # JsonEffectGlShader etc
-constant gl_texture com/mojang/blaze3d/platform/GlConst GL_TEXTURE0
-constant gl_texture com/mojang/blaze3d/platform/GlConst GL_TEXTURE1
-constant gl_texture com/mojang/blaze3d/platform/GlConst GL_TEXTURE2
+constant gl_texture com/mojang/blaze3d/opengl/GlConst GL_TEXTURE0
+constant gl_texture com/mojang/blaze3d/opengl/GlConst GL_TEXTURE1
+constant gl_texture com/mojang/blaze3d/opengl/GlConst GL_TEXTURE2
 
 # Program
-constant gl_program_type com/mojang/blaze3d/platform/GlConst GL_VERTEX_SHADER
-constant gl_program_type com/mojang/blaze3d/platform/GlConst GL_FRAGMENT_SHADER
+constant gl_program_type com/mojang/blaze3d/opengl/GlConst GL_VERTEX_SHADER
+constant gl_program_type com/mojang/blaze3d/opengl/GlConst GL_FRAGMENT_SHADER
 
 # VertexBuffer
-constant gl_buffer_target com/mojang/blaze3d/platform/GlConst GL_ARRAY_BUFFER
-constant gl_buffer_target com/mojang/blaze3d/platform/GlConst GL_ELEMENT_ARRAY_BUFFER
-constant gl_buffer_target com/mojang/blaze3d/platform/GlConst GL_PIXEL_PACK_BUFFER
-constant gl_buffer_target com/mojang/blaze3d/platform/GlConst GL_COPY_READ_BUFFER
-constant gl_buffer_target com/mojang/blaze3d/platform/GlConst GL_COPY_WRITE_BUFFER
-constant gl_buffer_target com/mojang/blaze3d/platform/GlConst GL_PIXEL_UNPACK_BUFFER
-constant gl_buffer_target com/mojang/blaze3d/platform/GlConst GL_UNIFORM_BUFFER
+constant gl_buffer_target com/mojang/blaze3d/opengl/GlConst GL_ARRAY_BUFFER
+constant gl_buffer_target com/mojang/blaze3d/opengl/GlConst GL_ELEMENT_ARRAY_BUFFER
+constant gl_buffer_target com/mojang/blaze3d/opengl/GlConst GL_PIXEL_PACK_BUFFER
+constant gl_buffer_target com/mojang/blaze3d/opengl/GlConst GL_COPY_READ_BUFFER
+constant gl_buffer_target com/mojang/blaze3d/opengl/GlConst GL_COPY_WRITE_BUFFER
+constant gl_buffer_target com/mojang/blaze3d/opengl/GlConst GL_PIXEL_UNPACK_BUFFER
+constant gl_buffer_target com/mojang/blaze3d/opengl/GlConst GL_UNIFORM_BUFFER
 
-constant gl_buffer_data_usage com/mojang/blaze3d/platform/GlConst GL_STATIC_DRAW
-constant gl_buffer_data_usage com/mojang/blaze3d/platform/GlConst GL_DYNAMIC_DRAW
-constant gl_buffer_data_usage com/mojang/blaze3d/platform/GlConst GL_STREAM_DRAW
-constant gl_buffer_data_usage com/mojang/blaze3d/platform/GlConst GL_STATIC_READ
-constant gl_buffer_data_usage com/mojang/blaze3d/platform/GlConst GL_DYNAMIC_READ
-constant gl_buffer_data_usage com/mojang/blaze3d/platform/GlConst GL_STREAM_READ
-constant gl_buffer_data_usage com/mojang/blaze3d/platform/GlConst GL_STATIC_COPY
-constant gl_buffer_data_usage com/mojang/blaze3d/platform/GlConst GL_DYNAMIC_COPY
-constant gl_buffer_data_usage com/mojang/blaze3d/platform/GlConst GL_STREAM_COPY
+constant gl_buffer_data_usage com/mojang/blaze3d/opengl/GlConst GL_STATIC_DRAW
+constant gl_buffer_data_usage com/mojang/blaze3d/opengl/GlConst GL_DYNAMIC_DRAW
+constant gl_buffer_data_usage com/mojang/blaze3d/opengl/GlConst GL_STREAM_DRAW
+constant gl_buffer_data_usage com/mojang/blaze3d/opengl/GlConst GL_STATIC_READ
+constant gl_buffer_data_usage com/mojang/blaze3d/opengl/GlConst GL_DYNAMIC_READ
+constant gl_buffer_data_usage com/mojang/blaze3d/opengl/GlConst GL_STREAM_READ
+constant gl_buffer_data_usage com/mojang/blaze3d/opengl/GlConst GL_STATIC_COPY
+constant gl_buffer_data_usage com/mojang/blaze3d/opengl/GlConst GL_DYNAMIC_COPY
+constant gl_buffer_data_usage com/mojang/blaze3d/opengl/GlConst GL_STREAM_COPY
 
-constant gl_error com/mojang/blaze3d/platform/GlConst GL_OUT_OF_MEMORY
+constant gl_error com/mojang/blaze3d/opengl/GlConst GL_OUT_OF_MEMORY
 
 # GlDebugInfo
 constant gl_get_string_name org/lwjgl/opengl/GL11 GL_VENDOR
@@ -240,74 +240,74 @@ constant gl_blend_func_factor org/lwjgl/opengl/GL14 GL_CONSTANT_ALPHA
 constant gl_blend_func_factor org/lwjgl/opengl/GL14 GL_CONSTANT_COLOR
 constant gl_blend_func_factor org/lwjgl/opengl/GL14 GL_ONE_MINUS_CONSTANT_ALPHA
 constant gl_blend_func_factor org/lwjgl/opengl/GL14 GL_ONE_MINUS_CONSTANT_COLOR
-constant gl_blend_func_factor com/mojang/blaze3d/platform/GlConst GL_ZERO
-constant gl_blend_func_factor com/mojang/blaze3d/platform/GlConst GL_ONE
-constant gl_blend_func_factor com/mojang/blaze3d/platform/GlConst GL_DST_ALPHA
-constant gl_blend_func_factor com/mojang/blaze3d/platform/GlConst GL_DST_COLOR
-constant gl_blend_func_factor com/mojang/blaze3d/platform/GlConst GL_ONE_MINUS_DST_ALPHA
-constant gl_blend_func_factor com/mojang/blaze3d/platform/GlConst GL_ONE_MINUS_DST_COLOR
-constant gl_blend_func_factor com/mojang/blaze3d/platform/GlConst GL_SRC_ALPHA
-constant gl_blend_func_factor com/mojang/blaze3d/platform/GlConst GL_SRC_COLOR
-constant gl_blend_func_factor com/mojang/blaze3d/platform/GlConst GL_ONE_MINUS_SRC_ALPHA
-constant gl_blend_func_factor com/mojang/blaze3d/platform/GlConst GL_ONE_MINUS_SRC_COLOR
+constant gl_blend_func_factor com/mojang/blaze3d/opengl/GlConst GL_ZERO
+constant gl_blend_func_factor com/mojang/blaze3d/opengl/GlConst GL_ONE
+constant gl_blend_func_factor com/mojang/blaze3d/opengl/GlConst GL_DST_ALPHA
+constant gl_blend_func_factor com/mojang/blaze3d/opengl/GlConst GL_DST_COLOR
+constant gl_blend_func_factor com/mojang/blaze3d/opengl/GlConst GL_ONE_MINUS_DST_ALPHA
+constant gl_blend_func_factor com/mojang/blaze3d/opengl/GlConst GL_ONE_MINUS_DST_COLOR
+constant gl_blend_func_factor com/mojang/blaze3d/opengl/GlConst GL_SRC_ALPHA
+constant gl_blend_func_factor com/mojang/blaze3d/opengl/GlConst GL_SRC_COLOR
+constant gl_blend_func_factor com/mojang/blaze3d/opengl/GlConst GL_ONE_MINUS_SRC_ALPHA
+constant gl_blend_func_factor com/mojang/blaze3d/opengl/GlConst GL_ONE_MINUS_SRC_COLOR
 
 # TextureUtil
-constant gl_pixel_store_pname com/mojang/blaze3d/platform/GlConst GL_UNPACK_SWAP_BYTES
-constant gl_pixel_store_pname com/mojang/blaze3d/platform/GlConst GL_UNPACK_LSB_FIRST
-constant gl_pixel_store_pname com/mojang/blaze3d/platform/GlConst GL_UNPACK_ROW_LENGTH
-constant gl_pixel_store_pname com/mojang/blaze3d/platform/GlConst GL_UNPACK_SKIP_ROWS
-constant gl_pixel_store_pname com/mojang/blaze3d/platform/GlConst GL_UNPACK_SKIP_PIXELS
-constant gl_pixel_store_pname com/mojang/blaze3d/platform/GlConst GL_UNPACK_ALIGNMENT
-constant gl_pixel_store_pname com/mojang/blaze3d/platform/GlConst GL_PACK_ALIGNMENT
-constant gl_pixel_store_pname com/mojang/blaze3d/platform/GlConst GL_PACK_ROW_LENGTH
+constant gl_pixel_store_pname com/mojang/blaze3d/opengl/GlConst GL_UNPACK_SWAP_BYTES
+constant gl_pixel_store_pname com/mojang/blaze3d/opengl/GlConst GL_UNPACK_LSB_FIRST
+constant gl_pixel_store_pname com/mojang/blaze3d/opengl/GlConst GL_UNPACK_ROW_LENGTH
+constant gl_pixel_store_pname com/mojang/blaze3d/opengl/GlConst GL_UNPACK_SKIP_ROWS
+constant gl_pixel_store_pname com/mojang/blaze3d/opengl/GlConst GL_UNPACK_SKIP_PIXELS
+constant gl_pixel_store_pname com/mojang/blaze3d/opengl/GlConst GL_UNPACK_ALIGNMENT
+constant gl_pixel_store_pname com/mojang/blaze3d/opengl/GlConst GL_PACK_ALIGNMENT
+constant gl_pixel_store_pname com/mojang/blaze3d/opengl/GlConst GL_PACK_ROW_LENGTH
 
-constant gl_map_buffer_access com/mojang/blaze3d/platform/GlConst GL_WRITE_ONLY
+constant gl_map_buffer_access com/mojang/blaze3d/opengl/GlConst GL_WRITE_ONLY
 
 # MinecraftClient
-flag gl_buffer_mask com/mojang/blaze3d/platform/GlConst GL_DEPTH_BUFFER_BIT
-flag gl_buffer_mask com/mojang/blaze3d/platform/GlConst GL_COLOR_BUFFER_BIT
+flag gl_buffer_mask com/mojang/blaze3d/opengl/GlConst GL_DEPTH_BUFFER_BIT
+flag gl_buffer_mask com/mojang/blaze3d/opengl/GlConst GL_COLOR_BUFFER_BIT
 
 # Target definition
 
-target_method com/mojang/blaze3d/platform/GlConst toGl (Lnet/minecraft/client/render/DepthTestState;)I
+target_method com/mojang/blaze3d/opengl/GlConst toGl (Lnet/minecraft/client/render/DepthTestState;)I
 	return gl_depth_test_state
 
-target_method com/mojang/blaze3d/platform/GlConst toGl (Lnet/minecraft/client/render/PolygonMode;)I
+target_method com/mojang/blaze3d/opengl/GlConst toGl (Lnet/minecraft/client/render/PolygonMode;)I
 	return gl_polygon_mode
 
-target_method com/mojang/blaze3d/platform/GlConst toGl (Lcom/mojang/blaze3d/platform/DestFactor;)I
+target_method com/mojang/blaze3d/opengl/GlConst toGl (Lcom/mojang/blaze3d/platform/DestFactor;)I
 	return gl_blend_func_factor
-target_method com/mojang/blaze3d/platform/GlConst toGl (Lcom/mojang/blaze3d/platform/SourceFactor;)I
+target_method com/mojang/blaze3d/opengl/GlConst toGl (Lcom/mojang/blaze3d/platform/SourceFactor;)I
 	return gl_blend_func_factor
 
-target_method com/mojang/blaze3d/platform/GlConst toGl (Lnet/minecraft/client/gl/GlBufferTarget;)I
+target_method com/mojang/blaze3d/opengl/GlConst toGl (Lnet/minecraft/client/gl/GlBufferTarget;)I
 	return gl_buffer_target
 
-target_method com/mojang/blaze3d/platform/GlConst toGl (Lnet/minecraft/client/render/VertexFormat$DrawMode;)I
+target_method com/mojang/blaze3d/opengl/GlConst toGl (Lnet/minecraft/client/render/VertexFormat$DrawMode;)I
 	return gl_draw_mode
 
-target_method com/mojang/blaze3d/platform/GlConst toGl (Lnet/minecraft/client/render/VertexFormat$IndexType;)I
+target_method com/mojang/blaze3d/opengl/GlConst toGl (Lnet/minecraft/client/render/VertexFormat$IndexType;)I
 	return gl_type
-target_method com/mojang/blaze3d/platform/GlConst toGl (Lnet/minecraft/client/render/VertexFormatElement$ComponentType;)I
+target_method com/mojang/blaze3d/opengl/GlConst toGl (Lnet/minecraft/client/render/VertexFormatElement$ComponentType;)I
 	return gl_type
-target_method com/mojang/blaze3d/platform/GlConst toGlType (Lnet/minecraft/client/texture/TextureType;)I
+target_method com/mojang/blaze3d/opengl/GlConst toGlType (Lnet/minecraft/client/texture/TextureType;)I
 	return gl_type
 
-target_method com/mojang/blaze3d/platform/GlConst toGl (Lnet/minecraft/client/texture/NativeImage$Format;)I
+target_method com/mojang/blaze3d/opengl/GlConst toGl (Lnet/minecraft/client/texture/NativeImage$Format;)I
 	return gl_tex_format
 
-target_method com/mojang/blaze3d/platform/GlConst toGl (Lnet/minecraft/client/gl/GlUsage;)I
+target_method com/mojang/blaze3d/opengl/GlConst toGl (Lnet/minecraft/client/gl/GlUsage;)I
 	return gl_buffer_data_usage
 
-target_method com/mojang/blaze3d/platform/GlConst toGl (Lnet/minecraft/client/texture/TextureClampMode;)I
+target_method com/mojang/blaze3d/opengl/GlConst toGl (Lnet/minecraft/client/texture/TextureClampMode;)I
 	return gl_texture_clamp_mode
 
-target_method com/mojang/blaze3d/platform/GlConst toGlInternalId (Lnet/minecraft/client/texture/TextureType;)I
+target_method com/mojang/blaze3d/opengl/GlConst toGlInternalId (Lnet/minecraft/client/texture/TextureType;)I
 	return gl_tex_format
-target_method com/mojang/blaze3d/platform/GlConst toGlExternalId (Lnet/minecraft/client/texture/TextureType;)I
+target_method com/mojang/blaze3d/opengl/GlConst toGlExternalId (Lnet/minecraft/client/texture/TextureType;)I
 	return gl_tex_format
 
-target_method com/mojang/blaze3d/platform/GlConst toGl (Lnet/minecraft/client/gl/ShaderType;)I
+target_method com/mojang/blaze3d/opengl/GlConst toGl (Lnet/minecraft/client/gl/ShaderType;)I
 	return gl_program_type
 
 target_method com/mojang/blaze3d/platform/GlStateManager _glBindFramebuffer (II)V

@@ -23,7 +23,6 @@ CLASS net/minecraft/class_287 net/minecraft/client/render/BufferBuilder
 	FIELD field_52070 LITTLE_ENDIAN Z
 	FIELD field_52071 allocator Lnet/minecraft/class_9799;
 	FIELD field_52072 vertexPointer J
-	FIELD field_52073 drawMode Lnet/minecraft/class_293$class_5596;
 	FIELD field_52074 vertexSizeByte I
 	FIELD field_52075 requiredMask I
 	FIELD field_52076 offsetsByElementId [I

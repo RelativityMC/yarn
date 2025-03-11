@@ -1,7 +1,6 @@
 CLASS net/minecraft/class_10866 net/minecraft/client/gl/RenderPassImpl
 	FIELD field_57867 IS_DEVELOPMENT Z
 	FIELD field_57868 pipeline Lnet/minecraft/class_10867;
-	FIELD field_57871 indexType Lnet/minecraft/class_293$class_5595;
 	FIELD field_57873 simpleUniforms Ljava/util/HashMap;
 	FIELD field_57874 samplerUniforms Ljava/util/HashMap;
 	FIELD field_57875 setSimpleUniforms Ljava/util/Set;

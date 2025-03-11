@@ -169,7 +169,6 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 			ARG 2 sectionPos
 	CLASS class_10896 Buffers
 		FIELD field_57957 indexCount I
-		FIELD field_57958 indexType Lnet/minecraft/class_293$class_5595;
 		METHOD method_68541 setIndexCount (I)V
 			ARG 1 indexCount
 		METHOD method_68543 setIndexType (Lnet/minecraft/class_293$class_5595;)V

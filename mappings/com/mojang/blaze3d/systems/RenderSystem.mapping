@@ -9,8 +9,6 @@ CLASS com/mojang/blaze3d/systems/RenderSystem
 		ARG 2 capturer
 	METHOD getSequentialBuffer (Lnet/minecraft/class_293$class_5596;)Lcom/mojang/blaze3d/systems/RenderSystem$class_5590;
 		ARG 0 drawMode
-	METHOD getShaderTexture (I)Lnet/minecraft/class_10792;
-		ARG 0 texture
 	METHOD initRenderer (JIZLjava/util/function/BiFunction;Z)V
 		ARG 0 windowHandle
 		ARG 2 debugVerbosity
@@ -48,13 +46,8 @@ CLASS com/mojang/blaze3d/systems/RenderSystem
 		ARG 0 shaderGlintAlpha
 	METHOD setShaderGlintAlpha (F)V
 		ARG 0 shaderGlintAlpha
-	METHOD setShaderTexture (ILnet/minecraft/class_10792;)V
-		ARG 0 textureId
-		ARG 1 texture
 	METHOD setTextureMatrix (Lorg/joml/Matrix4f;)V
 		ARG 0 textureMatrix
-	METHOD setupOverlayColor (Lnet/minecraft/class_10792;)V
-		ARG 0 texture
 	CLASS class_5590 ShapeIndexBuffer
 		COMMENT An index buffer that holds a pre-made indices for a specific shape. If
 		COMMENT this buffer is not large enough for the required number of indices when
@@ -65,7 +58,6 @@ CLASS com/mojang/blaze3d/systems/RenderSystem
 		FIELD field_27334 triangulator Lcom/mojang/blaze3d/systems/RenderSystem$class_5590$class_5591;
 		FIELD field_27336 indexType Lnet/minecraft/class_293$class_5595;
 		FIELD field_27337 size I
-		FIELD field_54299 buffer Lnet/minecraft/class_10227;
 		METHOD <init> (IILcom/mojang/blaze3d/systems/RenderSystem$class_5590$class_5591;)V
 			ARG 1 vertexCountInShape
 				COMMENT the number of vertices in a shape
@@ -81,8 +73,6 @@ CLASS com/mojang/blaze3d/systems/RenderSystem
 			ARG 1 index
 		METHOD method_31924 getIndexType ()Lnet/minecraft/class_293$class_5595;
 		METHOD method_43409 isLargeEnough (I)Z
-			ARG 1 requiredSize
-		METHOD method_68274 getIndexBuffer (I)Lnet/minecraft/class_10227;
 			ARG 1 requiredSize
 		CLASS class_5591 Triangulator
 			COMMENT A functional interface that decomposes a shape into triangles.

@@ -168,24 +168,11 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 			ARG 1 cameraPos
 			ARG 2 sectionPos
 	CLASS class_10896 Buffers
-		FIELD field_57955 vertexBuffer Lnet/minecraft/class_10227;
-		FIELD field_57956 indexBuffer Lnet/minecraft/class_10227;
 		FIELD field_57957 indexCount I
 		FIELD field_57958 indexType Lnet/minecraft/class_293$class_5595;
-		METHOD <init> (Lnet/minecraft/class_10227;Lnet/minecraft/class_10227;ILnet/minecraft/class_293$class_5595;)V
-			ARG 1 vertexBuffer
-			ARG 2 indexBuffer
-			ARG 3 indexCount
-			ARG 4 indexType
-		METHOD method_68540 getVertexBuffer ()Lnet/minecraft/class_10227;
 		METHOD method_68541 setIndexCount (I)V
 			ARG 1 indexCount
-		METHOD method_68542 setIndexBuffer (Lnet/minecraft/class_10227;)V
-			ARG 1 indexBuffer
 		METHOD method_68543 setIndexType (Lnet/minecraft/class_293$class_5595;)V
 			ARG 1 indexType
-		METHOD method_68544 getIndexBuffer ()Lnet/minecraft/class_10227;
-		METHOD method_68545 setVertexBuffer (Lnet/minecraft/class_10227;)V
-			ARG 1 vertexBuffer
 		METHOD method_68546 getIndexCount ()I
 		METHOD method_68547 getIndexType ()Lnet/minecraft/class_293$class_5595;

@@ -1,5 +1,0 @@
-CLASS net/minecraft/class_10880 net/minecraft/client/render/PolygonMode
-	FIELD field_57906 FILL Lnet/minecraft/class_10880;
-	FIELD field_57907 WIREFRAME Lnet/minecraft/class_10880;
-	FIELD field_57908 $VALUES [Lnet/minecraft/class_10880;
-	METHOD method_68448 $values ()[Lnet/minecraft/class_10880;

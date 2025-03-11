@@ -1,8 +1,0 @@
-CLASS net/minecraft/class_10798 net/minecraft/client/render/DepthTestState
-	FIELD field_56806 NO_DEPTH_TEST Lnet/minecraft/class_10798;
-	FIELD field_56807 EQUAL_DEPTH_TEST Lnet/minecraft/class_10798;
-	FIELD field_56808 LEQUAL_DEPTH_TEST Lnet/minecraft/class_10798;
-	FIELD field_56809 GREATER_DEPTH_TEST Lnet/minecraft/class_10798;
-	FIELD field_56810 $VALUES [Lnet/minecraft/class_10798;
-	FIELD field_57902 LESS_DEPTH_TEST Lnet/minecraft/class_10798;
-	METHOD method_67881 $values ()[Lnet/minecraft/class_10798;

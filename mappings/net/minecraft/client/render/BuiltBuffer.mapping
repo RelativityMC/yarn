@@ -9,10 +9,6 @@ CLASS net/minecraft/class_9801 net/minecraft/client/render/BuiltBuffer
 	METHOD method_60819 sortQuads (Lnet/minecraft/class_9799;Lnet/minecraft/class_8251;)Lnet/minecraft/class_9801$class_9802;
 		ARG 1 allocator
 		ARG 2 sorter
-	METHOD method_60820 collectCentroids (Ljava/nio/ByteBuffer;ILnet/minecraft/class_293;)[Lorg/joml/Vector3f;
-		ARG 0 buf
-		ARG 1 vertexCount
-		ARG 2 format
 	METHOD method_60821 getSortedBuffer ()Ljava/nio/ByteBuffer;
 	METHOD method_60822 getDrawParameters ()Lnet/minecraft/class_9801$class_4574;
 	CLASS class_4574 DrawParameters

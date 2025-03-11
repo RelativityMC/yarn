@@ -1,5 +1,0 @@
-CLASS net/minecraft/class_10790 net/minecraft/client/texture/TextureClampMode
-	FIELD field_56752 REPEAT Lnet/minecraft/class_10790;
-	FIELD field_56753 CLAMP_TO_EDGE Lnet/minecraft/class_10790;
-	FIELD field_56755 $VALUES [Lnet/minecraft/class_10790;
-	METHOD method_67775 $values ()[Lnet/minecraft/class_10790;

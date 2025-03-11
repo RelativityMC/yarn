@@ -3,7 +3,6 @@ CLASS net/minecraft/class_10860 net/minecraft/client/gl/GlResourceManager
 	FIELD field_57844 backend Lnet/minecraft/class_10865;
 	FIELD field_57845 temporaryFb1 I
 	FIELD field_57846 temporaryFb2 I
-	FIELD field_57847 currentPipeline Lnet/minecraft/class_10785;
 	FIELD field_57848 renderPassOpen Z
 	FIELD field_57849 currentProgram Lnet/minecraft/class_5944;
 	METHOD <init> (Lnet/minecraft/class_10865;)V
@@ -25,8 +24,4 @@ CLASS net/minecraft/class_10860 net/minecraft/client/gl/GlResourceManager
 	METHOD method_68354 (Lnet/minecraft/class_10866;Ljava/lang/String;[F)V
 		ARG 1 name
 		ARG 2 values
-	METHOD method_68355 drawObjectsWithRenderPass (Lnet/minecraft/class_10866;Ljava/util/Collection;Lnet/minecraft/class_10227;Lnet/minecraft/class_293$class_5595;)V
-		ARG 1 pass
-	METHOD method_68356 setPipelineAndApplyState (Lnet/minecraft/class_10785;)V
-		ARG 1 pipeline
 	METHOD method_68369 getBackend ()Lnet/minecraft/class_10865;

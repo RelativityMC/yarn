@@ -1,8 +1,19 @@
 CLASS net/minecraft/class_8555 net/minecraft/client/gl/GlUsage
+	FIELD field_44796 $VALUES [Lnet/minecraft/class_8555;
+	FIELD field_54339 DYNAMIC_WRITE Lnet/minecraft/class_8555;
+	FIELD field_54340 STATIC_WRITE Lnet/minecraft/class_8555;
+	FIELD field_54341 STREAM_WRITE Lnet/minecraft/class_8555;
+	FIELD field_54342 STATIC_READ Lnet/minecraft/class_8555;
+	FIELD field_54343 DYNAMIC_READ Lnet/minecraft/class_8555;
+	FIELD field_54344 STREAM_READ Lnet/minecraft/class_8555;
+	FIELD field_54345 DYNAMIC_COPY Lnet/minecraft/class_8555;
+	FIELD field_54346 STATIC_COPY Lnet/minecraft/class_8555;
+	FIELD field_54347 STREAM_COPY Lnet/minecraft/class_8555;
 	FIELD field_54348 readable Z
 	FIELD field_54349 writable Z
 	METHOD <init> (Ljava/lang/String;IZZ)V
 		ARG 3 readable
 		ARG 4 writable
+	METHOD method_51735 $values ()[Lnet/minecraft/class_8555;
 	METHOD method_68341 isReadable ()Z
 	METHOD method_68342 isWritable ()Z

@@ -1,0 +1,38 @@
+CLASS com/mojang/blaze3d/opengl/GlStateManager
+	CLASS class_1017 BlendFuncState
+		FIELD field_5045 capState Lcom/mojang/blaze3d/opengl/GlStateManager$class_1018;
+		FIELD field_5046 dstFactorAlpha I
+		FIELD field_5047 srcFactorAlpha I
+		FIELD field_5048 dstFactorRGB I
+		FIELD field_5049 srcFactorRGB I
+	CLASS class_1018 CapabilityTracker
+		FIELD field_5050 cap I
+		FIELD field_5051 state Z
+		METHOD <init> (I)V
+			ARG 1 cap
+		METHOD method_4469 disable ()V
+		METHOD method_4470 setState (Z)V
+			ARG 1 state
+		METHOD method_4471 enable ()V
+	CLASS class_1021 LogicOpState
+		FIELD field_5058 capState Lcom/mojang/blaze3d/opengl/GlStateManager$class_1018;
+		FIELD field_5059 op I
+	CLASS class_1022 ColorMask
+		FIELD field_5060 alpha Z
+		FIELD field_5061 blue Z
+		FIELD field_5062 green Z
+		FIELD field_5063 red Z
+	CLASS class_1025 CullFaceState
+		FIELD field_5072 capState Lcom/mojang/blaze3d/opengl/GlStateManager$class_1018;
+	CLASS class_1026 DepthTestState
+		FIELD field_5074 capState Lcom/mojang/blaze3d/opengl/GlStateManager$class_1018;
+		FIELD field_5075 func I
+		FIELD field_5076 mask Z
+	CLASS class_1031 PolygonOffsetState
+		FIELD field_5122 units F
+		FIELD field_5123 capFill Lcom/mojang/blaze3d/opengl/GlStateManager$class_1018;
+		FIELD field_5124 factor F
+	CLASS class_1039 Texture2DState
+		FIELD field_5167 boundTexture I
+	CLASS class_5518 ScissorTestState
+		FIELD field_26840 capState Lcom/mojang/blaze3d/opengl/GlStateManager$class_1018;

@@ -101,7 +101,7 @@ CLASS net/minecraft/class_10785 net/minecraft/client/gl/ShaderPipeline
 		METHOD method_67751 uniform (Ljava/lang/String;Lnet/minecraft/class_10789;)Lnet/minecraft/class_10785$class_10786;
 			ARG 1 name
 			ARG 2 type
-		METHOD method_67752 (Ljava/util/List;)V
+		METHOD method_67752 lambda$withSnippet$1 (Ljava/util/List;)V
 			ARG 1 uniform
 		METHOD method_67753 culling (Z)Lnet/minecraft/class_10785$class_10786;
 			ARG 1 cull
@@ -113,7 +113,7 @@ CLASS net/minecraft/class_10785 net/minecraft/client/gl/ShaderPipeline
 			ARG 1 fragmentShader
 		METHOD method_67757 fragmentShader (Ljava/lang/String;)Lnet/minecraft/class_10785$class_10786;
 			ARG 1 fragmentShader
-		METHOD method_67758 (Ljava/util/List;)V
+		METHOD method_67758 lambda$withSnippet$0 (Ljava/util/List;)V
 			ARG 1 sampler
 		METHOD method_67759 color (Z)Lnet/minecraft/class_10785$class_10786;
 			ARG 1 color
@@ -134,4 +134,38 @@ CLASS net/minecraft/class_10785 net/minecraft/client/gl/ShaderPipeline
 		METHOD method_68444 polygonMode (Lnet/minecraft/class_10880;)Lnet/minecraft/class_10785$class_10786;
 			ARG 1 mode
 	CLASS class_10787 Stage
+		FIELD comp_3699 vertexShader Ljava/util/Optional;
+		FIELD comp_3700 fragmentShader Ljava/util/Optional;
+		FIELD comp_3701 shaderDefines Ljava/util/Optional;
+		FIELD comp_3702 samplers Ljava/util/Optional;
+		FIELD comp_3703 uniforms Ljava/util/Optional;
+		FIELD comp_3704 blendFunction Ljava/util/Optional;
+		FIELD comp_3705 depthTestFunction Ljava/util/Optional;
+		FIELD comp_3706 cull Ljava/util/Optional;
+		FIELD comp_3707 writeColor Ljava/util/Optional;
+		FIELD comp_3708 writeAlpha Ljava/util/Optional;
+		FIELD comp_3709 writeDepth Ljava/util/Optional;
+		FIELD comp_3710 colorLogic Ljava/util/Optional;
+		FIELD comp_3711 vertexFormat Ljava/util/Optional;
+		FIELD comp_3712 vertexFormatMode Ljava/util/Optional;
+		FIELD comp_3803 polygonMode Ljava/util/Optional;
+		METHOD comp_3699 vertexShader ()Ljava/util/Optional;
+		METHOD comp_3700 fragmentShader ()Ljava/util/Optional;
+		METHOD comp_3701 shaderDefines ()Ljava/util/Optional;
+		METHOD comp_3702 samplers ()Ljava/util/Optional;
+		METHOD comp_3703 uniforms ()Ljava/util/Optional;
+		METHOD comp_3704 blendFunction ()Ljava/util/Optional;
+		METHOD comp_3705 depthTestFunction ()Ljava/util/Optional;
+		METHOD comp_3706 cull ()Ljava/util/Optional;
+		METHOD comp_3707 writeColor ()Ljava/util/Optional;
+		METHOD comp_3708 writeAlpha ()Ljava/util/Optional;
+		METHOD comp_3709 writeDepth ()Ljava/util/Optional;
+		METHOD comp_3710 colorLogic ()Ljava/util/Optional;
+		METHOD comp_3711 vertexFormat ()Ljava/util/Optional;
+		METHOD comp_3712 vertexFormatMode ()Ljava/util/Optional;
+		METHOD comp_3803 polygonMode ()Ljava/util/Optional;
 	CLASS class_10788 Uniform
+		FIELD comp_3713 name Ljava/lang/String;
+		FIELD comp_3714 type Lnet/minecraft/class_10789;
+		METHOD comp_3713 name ()Ljava/lang/String;
+		METHOD comp_3714 type ()Lnet/minecraft/class_10789;

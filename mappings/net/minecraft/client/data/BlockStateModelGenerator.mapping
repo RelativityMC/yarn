@@ -577,13 +577,9 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 1 block
 	METHOD method_65422 registerBuiltin (Lnet/minecraft/class_2248;)V
 		ARG 1 block
-	METHOD method_66526 registerSegmentedBlock (Lnet/minecraft/class_2248;Lnet/minecraft/class_2758;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;)V
+	METHOD method_66526 registerSegmentedBlock (Lnet/minecraft/class_2248;Lnet/minecraft/class_807;Ljava/util/function/Function;Lnet/minecraft/class_807;Ljava/util/function/Function;Lnet/minecraft/class_807;Ljava/util/function/Function;Lnet/minecraft/class_807;Ljava/util/function/Function;)V
 		ARG 1 block
-		ARG 2 amountProperty
-		ARG 3 firstSegmentModel
 		ARG 4 secondSegmentModel
-		ARG 5 thirdSegmentModel
-		ARG 6 fourthSegmentModel
 	METHOD method_66527 (Lnet/minecraft/class_2248;Ljava/lang/String;Lnet/minecraft/class_4944;)V
 		ARG 2 textureMap
 	METHOD method_66528 createCreakingHeartModel (Lnet/minecraft/class_4946$class_4947;Lnet/minecraft/class_2248;Ljava/lang/String;)Lnet/minecraft/class_2960;

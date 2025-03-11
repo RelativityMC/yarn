@@ -1,1 +1,5 @@
 CLASS net/minecraft/class_10791 net/minecraft/client/texture/FilteredTexture
+	FIELD field_56756 NEAREST Lnet/minecraft/class_10791;
+	FIELD field_56757 LINEAR Lnet/minecraft/class_10791;
+	FIELD field_56758 $VALUES [Lnet/minecraft/class_10791;
+	METHOD method_67776 $values ()[Lnet/minecraft/class_10791;

@@ -29,7 +29,7 @@ CLASS net/minecraft/class_10883 net/minecraft/client/gl/RenderPass
 	METHOD method_68417 setUniform (Ljava/lang/String;[I)V
 		ARG 1 name
 		ARG 2 values
-	METHOD method_68418 drawObjects (Ljava/util/Collection;)V
+	METHOD method_68418 drawObjects (Ljava/util/Collection;Lnet/minecraft/class_10227;Lnet/minecraft/class_293$class_5595;)V
 		ARG 1 objects
 	METHOD method_68419 disableScissor ()V
 	METHOD method_68420 drawObjectsNoIndex (II)V

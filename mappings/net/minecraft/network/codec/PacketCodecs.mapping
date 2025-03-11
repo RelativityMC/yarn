@@ -344,17 +344,12 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 			ARG 2 r
 		METHOD method_68100 (Lio/netty/buffer/ByteBuf;Lnet/minecraft/class_9139;Ljava/lang/Object;)V
 			ARG 2 l
-	CLASS 19
+	CLASS 20
 		METHOD method_68105 getValues (Lnet/minecraft/class_9129;)Lnet/minecraft/class_2359;
 			ARG 1 buf
-	CLASS 20
-		FIELD field_57060 DIRECT_ENTRY_MARKER I
-		METHOD method_68106 getEntries (Lnet/minecraft/class_9129;)Lnet/minecraft/class_2359;
-			ARG 1 buf
 	CLASS 21
-		FIELD field_57062 DIRECT_MARKER I
-		FIELD field_57063 entryPacketCodec Lnet/minecraft/class_9139;
 	CLASS 22
+	CLASS 24
 		FIELD field_57064 NAME_MAX_LENGTH I
 		FIELD field_57065 VALUE_MAX_LENGTH I
 		FIELD field_57066 SIGNATURE_MAX_LENGTH I

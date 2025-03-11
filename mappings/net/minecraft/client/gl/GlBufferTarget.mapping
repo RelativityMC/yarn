@@ -1,1 +1,10 @@
 CLASS net/minecraft/class_10226 net/minecraft/client/gl/GlBufferTarget
+	FIELD field_54330 VERTICES Lnet/minecraft/class_10226;
+	FIELD field_54331 INDICES Lnet/minecraft/class_10226;
+	FIELD field_54332 PIXEL_PACK Lnet/minecraft/class_10226;
+	FIELD field_54333 COPY_READ Lnet/minecraft/class_10226;
+	FIELD field_54334 COPY_WRITE Lnet/minecraft/class_10226;
+	FIELD field_54335 PIXEL_UNPACK Lnet/minecraft/class_10226;
+	FIELD field_54336 UNIFORM Lnet/minecraft/class_10226;
+	FIELD field_54338 $VALUES [Lnet/minecraft/class_10226;
+	METHOD method_64317 $values ()[Lnet/minecraft/class_10226;

@@ -1,7 +1,12 @@
 CLASS net/minecraft/class_10793 net/minecraft/client/texture/TextureType
+	FIELD field_56773 RGBA8 Lnet/minecraft/class_10793;
+	FIELD field_56774 RED8 Lnet/minecraft/class_10793;
+	FIELD field_56775 DEPTH32 Lnet/minecraft/class_10793;
+	FIELD field_56779 $VALUES [Lnet/minecraft/class_10793;
 	FIELD field_57101 pixelSize I
 	METHOD <init> (Ljava/lang/String;II)V
 		ARG 3 glId
+	METHOD method_67794 $values ()[Lnet/minecraft/class_10793;
 	METHOD method_68155 getPixelSize ()I
 	METHOD method_68696 isColor ()Z
 	METHOD method_68697 isDepth ()Z

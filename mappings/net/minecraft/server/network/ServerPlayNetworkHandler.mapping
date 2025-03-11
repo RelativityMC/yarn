@@ -131,8 +131,6 @@ CLASS net/minecraft/class_3244 net/minecraft/server/network/ServerPlayNetworkHan
 		COMMENT improper order or if chat is disabled.
 		ARG 1 message
 		ARG 2 callback
-	METHOD method_44897 addPendingAcknowledgment (Lnet/minecraft/class_7471;)V
-		ARG 1 message
 	METHOD method_45002 (Lnet/minecraft/class_7448;Lnet/minecraft/class_2168;)Lnet/minecraft/class_2168;
 		ARG 2 source
 	METHOD method_45003 parse (Ljava/lang/String;)Lcom/mojang/brigadier/ParseResults;
@@ -158,7 +156,6 @@ CLASS net/minecraft/class_3244 net/minecraft/server/network/ServerPlayNetworkHan
 	METHOD method_45169 validateAcknowledgment (Lnet/minecraft/class_7635$class_7636;)Ljava/util/Optional;
 		ARG 1 acknowledgment
 	METHOD method_45170 sendChatMessage (Lnet/minecraft/class_7471;Lnet/minecraft/class_2556$class_7602;)V
-		ARG 1 message
 		ARG 2 params
 	METHOD method_45171 handleMessageChainException (Lnet/minecraft/class_7610$class_7825;)V
 		ARG 1 exception

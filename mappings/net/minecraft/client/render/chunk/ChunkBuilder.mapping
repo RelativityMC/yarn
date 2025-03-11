@@ -80,7 +80,6 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 			ARG 1 important
 		METHOD method_3656 getBuffers (Lnet/minecraft/class_1921;)Lnet/minecraft/class_846$class_10896;
 			ARG 1 layer
-		METHOD method_3659 delete ()V
 		METHOD method_3661 needsImportantRebuild ()Z
 		METHOD method_3662 cancelRebuild ()V
 		METHOD method_3663 cancel ()V

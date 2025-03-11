@@ -1,1 +1,5 @@
 CLASS net/minecraft/class_10879 net/minecraft/client/gl/ColorLogic
+	FIELD field_57903 NONE Lnet/minecraft/class_10879;
+	FIELD field_57904 OR_REVERSE Lnet/minecraft/class_10879;
+	FIELD field_57905 $VALUES [Lnet/minecraft/class_10879;
+	METHOD method_68447 $values ()[Lnet/minecraft/class_10879;

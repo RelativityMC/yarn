@@ -171,13 +171,12 @@ CLASS net/minecraft/class_2586 net/minecraft/block/entity/BlockEntity
 		COMMENT Writes the ID of {@code type} to {@code nbt} under the {@code id} key.
 		ARG 0 nbt
 		ARG 1 type
-	METHOD method_38239 posFromNbt (Lnet/minecraft/class_2487;)Lnet/minecraft/class_2338;
+	METHOD method_38239 posFromNbt (Lnet/minecraft/class_1923;Lnet/minecraft/class_2487;)Lnet/minecraft/class_2338;
 		COMMENT {@return the block position from {@code nbt}}
 		COMMENT
 		COMMENT <p>The passed NBT should use lowercase {@code x}, {@code y}, and {@code z}
 		COMMENT keys to store the position. This is incompatible with {@link
 		COMMENT net.minecraft.nbt.NbtHelper#fromBlockPos} that use uppercase keys.
-		ARG 0 nbt
 	METHOD method_38241 writeIdToNbt (Lnet/minecraft/class_2487;)V
 		COMMENT Writes the block entity type ID to {@code nbt} under the {@code id} key.
 		COMMENT

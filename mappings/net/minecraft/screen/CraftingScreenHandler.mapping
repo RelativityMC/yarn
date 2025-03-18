@@ -23,9 +23,6 @@ CLASS net/minecraft/class_1714 net/minecraft/screen/CraftingScreenHandler
 		ARG 3 craftingInventory
 		ARG 4 resultInventory
 		ARG 5 recipe
-	METHOD method_17400 (Lnet/minecraft/class_1799;Lnet/minecraft/class_1657;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)V
-		ARG 2 world
-		ARG 3 pos
 	METHOD method_17401 (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)V
 		ARG 1 world
 		ARG 2 pos

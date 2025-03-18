@@ -305,10 +305,7 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 		ARG 2 user
 	METHOD method_7981 useOnBlock (Lnet/minecraft/class_1838;)Lnet/minecraft/class_1269;
 		ARG 1 context
-	METHOD method_7982 onCraftByPlayer (Lnet/minecraft/class_1937;Lnet/minecraft/class_1657;I)V
-		ARG 1 world
-		ARG 2 player
-		ARG 3 amount
+	METHOD method_7982 onCraftByPlayer (Lnet/minecraft/class_1657;I)V
 	METHOD method_7984 areItemsEqual (Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;)Z
 		COMMENT {@return whether the given item stacks contain the same item, regardless of item count or components}
 		COMMENT

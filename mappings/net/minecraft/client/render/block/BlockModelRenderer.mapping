@@ -139,7 +139,6 @@ CLASS net/minecraft/class_778 net/minecraft/client/render/block/BlockModelRender
 		METHOD method_20549 getInt (Lnet/minecraft/class_2680;Lnet/minecraft/class_1920;Lnet/minecraft/class_2338;)I
 			ARG 1 state
 			ARG 2 world
-			ARG 3 pos
 		METHOD method_20550 disable ()V
 		METHOD method_20551 getFloat (Lnet/minecraft/class_2680;Lnet/minecraft/class_1920;Lnet/minecraft/class_2338;)F
 			ARG 1 state

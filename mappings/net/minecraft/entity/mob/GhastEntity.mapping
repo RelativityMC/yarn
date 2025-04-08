@@ -23,14 +23,8 @@ CLASS net/minecraft/class_1571 net/minecraft/entity/mob/GhastEntity
 		COMMENT since the attacker is set as the player in that case.
 		ARG 0 damageSource
 	CLASS class_1572 LookAtTargetGoal
-		FIELD field_7274 ghast Lnet/minecraft/class_1571;
-		METHOD <init> (Lnet/minecraft/class_1571;)V
-			ARG 1 ghast
 	CLASS class_1573 GhastMoveControl
-		FIELD field_7275 ghast Lnet/minecraft/class_1571;
 		FIELD field_7276 collisionCheckCooldown I
-		METHOD <init> (Lnet/minecraft/class_1571;)V
-			ARG 1 ghast
 		METHOD method_7051 willCollide (Lnet/minecraft/class_243;I)Z
 			ARG 1 direction
 			ARG 2 steps
@@ -40,6 +34,3 @@ CLASS net/minecraft/class_1571 net/minecraft/entity/mob/GhastEntity
 		METHOD <init> (Lnet/minecraft/class_1571;)V
 			ARG 1 ghast
 	CLASS class_1575 FlyRandomlyGoal
-		FIELD field_7279 ghast Lnet/minecraft/class_1571;
-		METHOD <init> (Lnet/minecraft/class_1571;)V
-			ARG 1 ghast

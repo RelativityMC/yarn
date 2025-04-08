@@ -2253,9 +2253,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_64613 getPassengerTeleportTarget (Lnet/minecraft/class_5454;Lnet/minecraft/class_1297;)Lnet/minecraft/class_5454;
 		ARG 1 teleportTarget
 		ARG 2 passenger
-	METHOD method_64614 teleportCrossDimension (Lnet/minecraft/class_3218;Lnet/minecraft/class_5454;)Lnet/minecraft/class_1297;
-		ARG 1 world
-		ARG 2 teleportTarget
+	METHOD method_64614 teleportCrossDimension (Lnet/minecraft/class_3218;Lnet/minecraft/class_3218;Lnet/minecraft/class_5454;)Lnet/minecraft/class_1297;
 	METHOD method_64615 onRemove (Lnet/minecraft/class_1297$class_5529;)V
 		COMMENT Called when the entity is about to be removed.
 		ARG 1 reason

@@ -35,7 +35,7 @@ CLASS net/minecraft/class_3027 net/minecraft/server/command/DatapackCommand
 		ARG 1 profile
 	METHOD method_13123 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
-	METHOD method_13125 register (Lcom/mojang/brigadier/CommandDispatcher;)V
+	METHOD method_13125 register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/class_7157;)V
 		ARG 0 dispatcher
 	METHOD method_13126 executeListEnabled (Lnet/minecraft/class_2168;)I
 		ARG 0 source

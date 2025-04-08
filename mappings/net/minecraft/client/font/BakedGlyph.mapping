@@ -8,16 +8,8 @@ CLASS net/minecraft/class_382 net/minecraft/client/font/BakedGlyph
 	FIELD field_2279 minY F
 	FIELD field_2280 maxX F
 	FIELD field_44760 textRenderLayers Lnet/minecraft/class_8538;
-	METHOD <init> (Lnet/minecraft/class_8538;FFFFFFFF)V
+	METHOD <init> (Lnet/minecraft/class_8538;Lcom/mojang/blaze3d/textures/GpuTexture;FFFFFFFF)V
 		ARG 1 textRenderLayers
-		ARG 2 minU
-		ARG 3 maxU
-		ARG 4 minV
-		ARG 5 maxV
-		ARG 6 minX
-		ARG 7 maxX
-		ARG 8 minY
-		ARG 9 maxY
 	METHOD method_2025 draw (ZFFFLorg/joml/Matrix4f;Lnet/minecraft/class_4588;IZI)V
 		ARG 1 italic
 		ARG 2 x

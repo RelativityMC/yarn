@@ -30,7 +30,6 @@ CLASS net/minecraft/class_1295 net/minecraft/entity/AreaEffectCloudEntity
 		ARG 1 waitTime
 	METHOD method_5596 setRadiusGrowth (F)V
 		ARG 1 radiusGrowth
-	METHOD method_5597 updateColor ()V
 	METHOD method_5598 setWaiting (Z)V
 		ARG 1 waiting
 	METHOD method_5599 getRadius ()F
@@ -43,7 +42,6 @@ CLASS net/minecraft/class_1295 net/minecraft/entity/AreaEffectCloudEntity
 	METHOD method_5607 setOwner (Lnet/minecraft/class_1309;)V
 		ARG 1 owner
 	METHOD method_5608 setParticleType (Lnet/minecraft/class_2394;)V
-		ARG 1 particle
 	METHOD method_5609 setRadiusOnUse (F)V
 		ARG 1 radiusOnUse
 	METHOD method_5610 addEffect (Lnet/minecraft/class_1293;)V

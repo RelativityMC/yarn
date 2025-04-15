@@ -5,7 +5,7 @@ CLASS net/minecraft/class_11239 net/minecraft/client/gui/render/SpecialGuiElemen
 	FIELD field_59936 outputDepthTextureOverride Lcom/mojang/blaze3d/textures/GpuTexture;
 	METHOD <init> (Lnet/minecraft/class_4597$class_4598;)V
 		ARG 1 vertexConsumers
-	METHOD method_70903 getClass ()Ljava/lang/Class;
+	METHOD method_70903 getElementClass ()Ljava/lang/Class;
 	METHOD method_70905 render (Lnet/minecraft/class_11256;Lnet/minecraft/class_4587;)V
 		ARG 1 state
 		ARG 2 matrices

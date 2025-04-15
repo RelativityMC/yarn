@@ -6,5 +6,3 @@ CLASS net/minecraft/class_1532 net/minecraft/entity/decoration/LeashKnotEntity
 		ARG 0 world
 		ARG 1 pos
 	METHOD method_59944 onPlace ()V
-	METHOD method_61164 (Lnet/minecraft/class_1657;Lnet/minecraft/class_9817;)Z
-		ARG 2 entity

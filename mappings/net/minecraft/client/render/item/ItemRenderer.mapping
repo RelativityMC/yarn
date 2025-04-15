@@ -1,6 +1,4 @@
 CLASS net/minecraft/class_918 net/minecraft/client/render/item/ItemRenderer
-	FIELD field_32935 COMPASS_WITH_GLINT_GUI_MODEL_MULTIPLIER F
-	FIELD field_32936 COMPASS_WITH_GLINT_FIRST_PERSON_MODEL_MULTIPLIER F
 	FIELD field_43086 ENTITY_ENCHANTMENT_GLINT Lnet/minecraft/class_2960;
 	FIELD field_43087 ITEM_ENCHANTMENT_GLINT Lnet/minecraft/class_2960;
 	FIELD field_55296 itemModelManager Lnet/minecraft/class_10442;
@@ -42,10 +40,6 @@ CLASS net/minecraft/class_918 net/minecraft/client/render/item/ItemRenderer
 		ARG 0 provider
 		ARG 1 layer
 		ARG 2 glint
-	METHOD method_30114 getDynamicDisplayGlintConsumer (Lnet/minecraft/class_4597;Lnet/minecraft/class_1921;Lnet/minecraft/class_4587$class_4665;)Lnet/minecraft/class_4588;
-		ARG 0 provider
-		ARG 1 layer
-		ARG 2 entry
 	METHOD method_62476 renderItem (Lnet/minecraft/class_811;Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;II[ILjava/util/List;Lnet/minecraft/class_1921;Lnet/minecraft/class_10444$class_10445;)V
 		ARG 0 displayContext
 		ARG 1 matrices

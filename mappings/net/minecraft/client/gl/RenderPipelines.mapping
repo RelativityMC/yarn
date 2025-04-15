@@ -33,13 +33,7 @@ CLASS net/minecraft/class_10799 net/minecraft/client/gl/RenderPipelines
 	FIELD field_56843 OUTLINE_NO_CULL Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56844 BILT_SCREEN_LIGHTMAP Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56845 PIPELINES Ljava/util/Map;
-	FIELD field_56846 MATRICES_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
-	FIELD field_56847 FOG_NO_COLOR_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
 	FIELD field_56848 FOG_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
-	FIELD field_56849 MATRICES_COLOR_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
-	FIELD field_56850 MATRICES_COLOR_FOG_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
-	FIELD field_56851 MATRICES_COLOR_FOG_OFFSET_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
-	FIELD field_56852 MATRICES_COLOR_FOG_LIGHT_DIR_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
 	FIELD field_56853 TERRAIN_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
 	FIELD field_56854 ENTITY_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
 	FIELD field_56855 RENDERTYPE_BEACON_BEAM_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;

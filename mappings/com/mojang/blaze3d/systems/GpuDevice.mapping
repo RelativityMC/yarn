@@ -1,14 +1,8 @@
 CLASS com/mojang/blaze3d/systems/GpuDevice
-	METHOD createBuffer (Ljava/util/function/Supplier;Lcom/mojang/blaze3d/buffers/BufferType;Lcom/mojang/blaze3d/buffers/BufferUsage;I)Lcom/mojang/blaze3d/buffers/GpuBuffer;
+	METHOD createBuffer (Ljava/util/function/Supplier;II)Lcom/mojang/blaze3d/buffers/GpuBuffer;
 		ARG 1 labelGetter
-		ARG 2 type
-		ARG 3 usage
-		ARG 4 size
-	METHOD createBuffer (Ljava/util/function/Supplier;Lcom/mojang/blaze3d/buffers/BufferType;Lcom/mojang/blaze3d/buffers/BufferUsage;Ljava/nio/ByteBuffer;)Lcom/mojang/blaze3d/buffers/GpuBuffer;
+	METHOD createBuffer (Ljava/util/function/Supplier;ILjava/nio/ByteBuffer;)Lcom/mojang/blaze3d/buffers/GpuBuffer;
 		ARG 1 labelGetter
-		ARG 2 type
-		ARG 3 usage
-		ARG 4 source
 	METHOD createTexture (Ljava/lang/String;Lcom/mojang/blaze3d/textures/TextureFormat;III)Lcom/mojang/blaze3d/textures/GpuTexture;
 		ARG 1 label
 		ARG 2 format

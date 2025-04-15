@@ -4,8 +4,6 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 	FIELD field_44659 scissorStack Lnet/minecraft/class_332$class_8214;
 	FIELD field_45337 guiAtlasManager Lnet/minecraft/class_8658;
 	FIELD field_59826 state Lnet/minecraft/class_11246;
-	FIELD field_59827 guiLayerStack Ljava/util/List;
-	FIELD field_59828 zIndex F
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_11246;)V
 		ARG 1 client
 		ARG 2 state
@@ -193,13 +191,7 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 2 stack
 		ARG 3 x
 		ARG 4 y
-	METHOD method_51432 drawStackOverlay (Lnet/minecraft/class_332$class_11222;Lnet/minecraft/class_327;Lnet/minecraft/class_1799;IILjava/lang/String;)V
-		ARG 1 guiType
-		ARG 2 textRenderer
-		ARG 3 stack
-		ARG 4 x
-		ARG 5 y
-		ARG 6 stackCountText
+	METHOD method_51432 drawStackOverlay (Lnet/minecraft/class_327;Lnet/minecraft/class_1799;IILjava/lang/String;)V
 	METHOD method_51433 drawText (Lnet/minecraft/class_327;Ljava/lang/String;IIIZ)V
 		ARG 1 textRenderer
 		ARG 2 text
@@ -387,8 +379,6 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 1 x
 		ARG 2 y
 	METHOD method_60649 drawTextWithBackground (Lnet/minecraft/class_327;Lnet/minecraft/class_2561;IIII)V
-		ARG 1 textRenderer
-		ARG 2 text
 		ARG 3 x
 		ARG 4 y
 		ARG 5 width
@@ -495,14 +485,6 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 6 y2
 		ARG 7 color
 		ARG 8 color2
-	METHOD method_70849 drawStackOverlay (Lnet/minecraft/class_332$class_11222;Lnet/minecraft/class_327;Lnet/minecraft/class_1799;II)V
-		ARG 1 guiType
-		ARG 2 textRenderer
-		ARG 3 stack
-		ARG 4 x
-		ARG 5 y
-	METHOD method_70850 pushGuiLayer (Lnet/minecraft/class_11227;)V
-		ARG 1 layer
 	METHOD method_70851 drawText (Lnet/minecraft/class_11248;II)V
 		ARG 1 state
 		ARG 2 x
@@ -562,10 +544,6 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 3 y1
 		ARG 4 x2
 		ARG 5 y2
-	METHOD method_70859 putGuiLayerLast (Lnet/minecraft/class_11227;)V
-		ARG 1 layer
-	METHOD method_70860 popGuiLayer ()V
-	METHOD method_70861 nextZIndex ()F
 	CLASS class_8214 ScissorStack
 		FIELD field_43099 stack Ljava/util/Deque;
 		METHOD method_49699 pop ()Lnet/minecraft/class_8030;
@@ -575,4 +553,3 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 			ARG 1 x
 			ARG 2 y
 		METHOD method_70863 peekLast ()Lnet/minecraft/class_8030;
-	CLASS class_11222 GuiType

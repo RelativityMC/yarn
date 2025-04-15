@@ -8,7 +8,6 @@ CLASS net/minecraft/class_10866 net/minecraft/client/gl/RenderPassImpl
 	FIELD field_57873 simpleUniforms Ljava/util/HashMap;
 	FIELD field_57874 samplerUniforms Ljava/util/HashMap;
 	FIELD field_57875 setSimpleUniforms Ljava/util/Set;
-	FIELD field_57876 setSamplers Ljava/util/Set;
 	FIELD field_57877 resourceManager Lnet/minecraft/class_10860;
 	FIELD field_57878 hasDepth Z
 	FIELD field_57879 closed Z

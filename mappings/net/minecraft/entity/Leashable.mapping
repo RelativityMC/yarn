@@ -4,19 +4,12 @@ CLASS net/minecraft/class_9817 net/minecraft/entity/Leashable
 	FIELD field_52315 SHORT_LEASH_LENGTH D
 	METHOD method_5931 canBeLeashed ()Z
 	METHOD method_5932 detachLeash ()V
+	METHOD method_29919 getLeashOffset ()Lnet/minecraft/class_243;
+	METHOD method_45321 getLeashOffset (F)Lnet/minecraft/class_243;
 	METHOD method_60952 getLeashHolder ()Lnet/minecraft/class_1297;
 	METHOD method_60953 isLeashed ()Z
 	METHOD method_60954 mightBeLeashed ()Z
 	METHOD method_60955 getLeashData ()Lnet/minecraft/class_9817$class_9818;
-	METHOD method_60956 beforeLeashTick (Lnet/minecraft/class_1297;F)Z
-		COMMENT Called before the default leash-ticking logic.
-		COMMENT Subclasses can override this to add their own logic to it.
-		COMMENT
-		COMMENT @return whether the default logic should run after this
-		COMMENT
-		COMMENT @see Leashable#tickLeash
-		ARG 1 leashHolder
-		ARG 2 distance
 	METHOD method_60957 attachLeash (Lnet/minecraft/class_1297;Lnet/minecraft/class_1297;Z)V
 		ARG 0 entity
 		ARG 1 leashHolder
@@ -47,15 +40,7 @@ CLASS net/minecraft/class_9817 net/minecraft/entity/Leashable
 		ARG 1 nbt
 	METHOD method_60968 setUnresolvedLeashHolderId (I)V
 		ARG 1 unresolvedLeashHolderId
-	METHOD method_60969 canLeashAttachTo ()Z
 	METHOD method_60970 breakLongLeash ()V
-	METHOD method_61161 applyLeashElasticity (Lnet/minecraft/class_1297;Lnet/minecraft/class_1297;F)V
-		ARG 0 entity
-		ARG 1 leashHolder
-		ARG 2 distance
-	METHOD method_61162 applyLeashElasticity (Lnet/minecraft/class_1297;F)V
-		ARG 1 leashHolder
-		ARG 2 distance
 	METHOD method_65894 detachLeashWithoutDrop ()V
 	METHOD method_65895 onLeashRemoved ()V
 	CLASS class_9818 LeashData

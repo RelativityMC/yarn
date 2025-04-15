@@ -479,7 +479,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 1 onClose
 	METHOD method_53524 (Ljava/lang/Runnable;Z)V
 		ARG 1 confirmed
-	METHOD method_53525 createInitScreens (Ljava/util/List;)V
+	METHOD method_53525 createInitScreens (Ljava/util/List;)Z
 		ARG 1 list
 	METHOD method_53526 getDebugHud ()Lnet/minecraft/class_340;
 	METHOD method_53527 onInitFinished (Lnet/minecraft/class_310$class_8764;)Ljava/lang/Runnable;

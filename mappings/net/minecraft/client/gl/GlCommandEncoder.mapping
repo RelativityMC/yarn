@@ -9,23 +9,22 @@ CLASS net/minecraft/class_10860 net/minecraft/client/gl/GlCommandEncoder
 	METHOD <init> (Lnet/minecraft/class_10865;)V
 		ARG 1 backend
 	METHOD method_68346 closePass ()V
-	METHOD method_68351 setupRenderPass (Lnet/minecraft/class_10866;)Z
+	METHOD method_68351 setupRenderPass (Lnet/minecraft/class_10866;Ljava/util/Collection;)Z
 		ARG 1 pass
-	METHOD method_68352 drawBoundObjectWithRenderPass (Lnet/minecraft/class_10866;IILcom/mojang/blaze3d/vertex/VertexFormat$class_5595;)V
+	METHOD method_68352 drawBoundObjectWithRenderPass (Lnet/minecraft/class_10866;IILcom/mojang/blaze3d/vertex/VertexFormat$class_5595;I)V
 		ARG 1 pass
 		ARG 2 first
 		ARG 3 count
 		ARG 4 indexType
-	METHOD method_68353 drawObjectWithRenderPass (Lnet/minecraft/class_10866;IILcom/mojang/blaze3d/vertex/VertexFormat$class_5595;Lnet/minecraft/class_10867;)V
+	METHOD method_68353 drawObjectWithRenderPass (Lnet/minecraft/class_10866;IILcom/mojang/blaze3d/vertex/VertexFormat$class_5595;Lnet/minecraft/class_10867;I)V
 		ARG 1 pass
 		ARG 2 first
 		ARG 3 count
 		ARG 4 indexType
 		ARG 5 pipeline
-	METHOD method_68354 (Lnet/minecraft/class_10866;Ljava/lang/String;[F)V
+	METHOD method_68354 (Lnet/minecraft/class_10866;Ljava/lang/String;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
 		ARG 1 name
-		ARG 2 values
-	METHOD method_68355 drawObjectsWithRenderPass (Lnet/minecraft/class_10866;Ljava/util/Collection;Lcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5595;)V
+	METHOD method_68355 drawObjectsWithRenderPass (Lnet/minecraft/class_10866;Ljava/util/Collection;Lcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5595;Ljava/util/Collection;)V
 		ARG 1 pass
 		ARG 2 objects
 		ARG 3 indexBuffer

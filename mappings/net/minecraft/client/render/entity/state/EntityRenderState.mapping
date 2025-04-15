@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_10017 net/minecraft/client/render/entity/state/EntityRenderState
-	FIELD field_53324 leashData Lnet/minecraft/class_10017$class_10018;
 	FIELD field_53325 x D
 	FIELD field_53326 y D
 	FIELD field_53327 z D

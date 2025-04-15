@@ -27,20 +27,17 @@ CLASS net/minecraft/class_9975 net/minecraft/client/render/SkyRendering
 		ARG 2 vertexConsumers
 		ARG 3 angleRadians
 		ARG 4 color
-	METHOD method_62307 renderCelestialBodies (Lnet/minecraft/class_4587;Lnet/minecraft/class_4597$class_4598;FIFFLnet/minecraft/class_9958;)V
+	METHOD method_62307 renderCelestialBodies (Lnet/minecraft/class_4587;Lnet/minecraft/class_4597$class_4598;FIFF)V
 		ARG 1 matrices
 		ARG 2 vertexConsumers
 		ARG 3 rot
 		ARG 4 phase
 		ARG 5 alpha
 		ARG 6 starBrightness
-		ARG 7 fog
 	METHOD method_62309 createSky (Lnet/minecraft/class_4588;F)V
 		ARG 1 vertexConsumer
 		ARG 2 height
-	METHOD method_62310 renderStars (Lnet/minecraft/class_9958;FLnet/minecraft/class_4587;)V
-		ARG 2 color
-		ARG 3 matrices
+	METHOD method_62310 renderStars (FLnet/minecraft/class_4587;)V
 	METHOD method_62312 renderEndSky ()V
 	METHOD method_65233 createStars ()Lcom/mojang/blaze3d/buffers/GpuBuffer;
 	METHOD method_65234 createEndSky ()Lcom/mojang/blaze3d/buffers/GpuBuffer;

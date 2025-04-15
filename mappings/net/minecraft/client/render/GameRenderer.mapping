@@ -32,7 +32,6 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	FIELD field_59966 guiState Lnet/minecraft/class_11246;
 	FIELD field_59967 overlayRenderer Lnet/minecraft/class_4603;
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_759;Lnet/minecraft/class_4599;)V
-		ARG 1 client
 		ARG 2 firstPersonHeldItemRenderer
 		ARG 3 buffers
 	METHOD method_3167 onCameraEntitySet (Lnet/minecraft/class_1297;)V
@@ -109,8 +108,6 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	METHOD method_62906 getPostProcessorId ()Lnet/minecraft/class_2960;
 	METHOD method_68164 (Ljava/nio/file/Path;Lnet/minecraft/class_1011;)V
 		ARG 1 screenshot
-	METHOD method_68478 (FLcom/mojang/blaze3d/systems/RenderPass;)V
-		ARG 1 pass
 	METHOD method_68479 (Lnet/minecraft/class_5912;Lnet/minecraft/class_2960;Lcom/mojang/blaze3d/shaders/ShaderType;)Ljava/lang/String;
 		ARG 1 id
 		ARG 2 type

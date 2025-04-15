@@ -3,7 +3,6 @@ CLASS net/minecraft/class_11239 net/minecraft/client/gui/render/SpecialGuiElemen
 	FIELD field_59934 POSE_MATRIX Lorg/joml/Matrix3x2f;
 	FIELD field_59935 outputColorTextureOverride Lcom/mojang/blaze3d/textures/GpuTexture;
 	FIELD field_59936 outputDepthTextureOverride Lcom/mojang/blaze3d/textures/GpuTexture;
-	FIELD field_59937 projectionMatrix Lorg/joml/Matrix4f;
 	METHOD <init> (Lnet/minecraft/class_4597$class_4598;)V
 		ARG 1 vertexConsumers
 	METHOD method_70903 getClass ()Ljava/lang/Class;

@@ -7,7 +7,6 @@ CLASS net/minecraft/class_10151 net/minecraft/client/gl/ShaderLoader
 	FIELD field_54019 onError Ljava/util/function/Consumer;
 	FIELD field_54020 cache Lnet/minecraft/class_10151$class_10170;
 	METHOD <init> (Lnet/minecraft/class_1060;Ljava/util/function/Consumer;)V
-		ARG 1 textureManager
 		ARG 2 onError
 	METHOD method_62939 loadShaderSource (Lnet/minecraft/class_2960;Lnet/minecraft/class_3298;Lcom/mojang/blaze3d/shaders/ShaderType;Ljava/util/Map;Lcom/google/common/collect/ImmutableMap$Builder;)V
 		ARG 0 id

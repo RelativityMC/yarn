@@ -563,8 +563,6 @@ CLASS net/minecraft/class_315 net/minecraft/client/option/GameOptions
 	METHOD method_48582 (Ljava/lang/Double;)V
 		ARG 0 value
 	METHOD method_48974 getDamageTiltStrength ()Lnet/minecraft/class_7172;
-	METHOD method_48975 (Ljava/lang/Double;)V
-		ARG 0 value
 	METHOD method_49598 refreshResourcePacks (Lnet/minecraft/class_3283;)V
 		ARG 1 resourcePackManager
 	METHOD method_49599 (Ljava/lang/Boolean;)V

@@ -1,6 +1,4 @@
 CLASS net/minecraft/class_796 net/minecraft/client/render/model/BakedQuadFactory
-	FIELD field_4259 MAX_SCALE F
-	FIELD field_4260 MIN_SCALE F
 	METHOD method_3455 transformVertex (Lorg/joml/Vector3f;Lnet/minecraft/class_4590;)V
 		ARG 0 vertex
 		ARG 1 transformation

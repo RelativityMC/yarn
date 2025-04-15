@@ -52,13 +52,8 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 1 removed
 		ARG 2 added
 	METHOD method_3246 getCompletedChunkCount ()I
-	METHOD method_3251 renderLayer (Lnet/minecraft/class_1921;DDDLorg/joml/Matrix4f;Lorg/joml/Matrix4f;)V
+	METHOD method_3251 renderLayer (Lnet/minecraft/class_1921;[Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
 		ARG 1 renderLayer
-		ARG 2 x
-		ARG 4 y
-		ARG 6 z
-		ARG 8 viewMatrix
-		ARG 9 positionMatrix
 	METHOD method_3252 tick ()V
 	METHOD method_3254 drawEntityOutlinesFramebuffer ()V
 	METHOD method_3268 getRandomParticleSpawnChance (Z)Lnet/minecraft/class_4066;
@@ -228,32 +223,26 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 1 tickProgress
 	METHOD method_62198 translucencySort (Lnet/minecraft/class_243;)V
 		ARG 1 cameraPos
-	METHOD method_62199 renderLateDebug (Lnet/minecraft/class_9909;Lnet/minecraft/class_243;Lnet/minecraft/class_9958;)V
+	METHOD method_62199 renderLateDebug (Lnet/minecraft/class_9909;Lnet/minecraft/class_243;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
 		ARG 1 frameGraphBuilder
 		ARG 2 pos
 		ARG 3 fog
-	METHOD method_62200 renderSky (Lnet/minecraft/class_9909;Lnet/minecraft/class_4184;FLnet/minecraft/class_9958;)V
+	METHOD method_62200 renderSky (Lnet/minecraft/class_9909;Lnet/minecraft/class_4184;FLcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
 		ARG 1 frameGraphBuilder
 		ARG 2 camera
 		ARG 3 tickProgress
 		ARG 4 fog
-	METHOD method_62201 renderParticles (Lnet/minecraft/class_9909;Lnet/minecraft/class_4184;FLnet/minecraft/class_9958;)V
+	METHOD method_62201 renderParticles (Lnet/minecraft/class_9909;Lnet/minecraft/class_4184;FLcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
 		ARG 1 frameGraphBuilder
 		ARG 2 camera
 		ARG 3 tickProgress
 		ARG 4 fog
-	METHOD method_62202 renderMain (Lnet/minecraft/class_9909;Lnet/minecraft/class_4604;Lnet/minecraft/class_4184;Lorg/joml/Matrix4f;Lorg/joml/Matrix4f;Lnet/minecraft/class_9958;ZZLnet/minecraft/class_9779;Lnet/minecraft/class_3695;)V
+	METHOD method_62202 renderMain (Lnet/minecraft/class_9909;Lnet/minecraft/class_4604;Lnet/minecraft/class_4184;Lorg/joml/Matrix4f;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;ZZLnet/minecraft/class_9779;Lnet/minecraft/class_3695;)V
 		ARG 1 frameGraphBuilder
 		ARG 2 frustum
 		ARG 3 camera
 		ARG 4 positionMatrix
-		ARG 5 projectionMatrix
-		ARG 6 fog
-		ARG 7 renderBlockOutline
-		ARG 8 renderEntityOutlines
-		ARG 9 renderTickCounter
-		ARG 10 profiler
-	METHOD method_62203 renderWeather (Lnet/minecraft/class_9909;Lnet/minecraft/class_243;FLnet/minecraft/class_9958;)V
+	METHOD method_62203 renderWeather (Lnet/minecraft/class_9909;Lnet/minecraft/class_243;FLcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
 		ARG 1 frameGraphBuilder
 		ARG 2 cameraPos
 		ARG 3 tickProgress

@@ -11,11 +11,10 @@ CLASS net/minecraft/class_8019 net/minecraft/client/gui/widget/NarratedMultiline
 		ARG 2 message
 		ARG 3 textRenderer
 		ARG 4 margin
-	METHOD <init> (ILnet/minecraft/class_2561;Lnet/minecraft/class_327;ZI)V
+	METHOD <init> (ILnet/minecraft/class_2561;Lnet/minecraft/class_327;ZZI)V
 		ARG 1 maxWidth
 		ARG 2 message
 		ARG 3 textRenderer
 		ARG 4 alwaysShowBorders
-		ARG 5 margin
 	METHOD method_57721 initMaxWidth (I)V
 		ARG 1 baseWidth

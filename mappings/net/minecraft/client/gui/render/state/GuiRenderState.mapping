@@ -13,7 +13,7 @@ CLASS net/minecraft/class_11246 net/minecraft/client/gui/render/state/GuiRenderS
 		ARG 1 state
 	METHOD method_70926 clear ()V
 	METHOD method_71059 createNewRootLayer ()V
-	METHOD method_71060 forEachSimpleElement (Lnet/minecraft/class_11246$class_11275;)V
+	METHOD method_71060 forEachSimpleElement (Lnet/minecraft/class_11246$class_11275;Lnet/minecraft/class_11246$class_11325;)V
 		ARG 1 simpleElementStateConsumer
 	METHOD method_71061 traverseLayers (Lnet/minecraft/class_11246$class_11276;Ljava/util/function/Consumer;)V
 		ARG 1 layer
@@ -39,7 +39,7 @@ CLASS net/minecraft/class_11246 net/minecraft/client/gui/render/state/GuiRenderS
 	METHOD method_71072 (Ljava/util/function/Consumer;Lnet/minecraft/class_11246$class_11276;)V
 		ARG 2 layer
 	METHOD method_71073 goDownLayer ()V
-	METHOD method_71074 forEachLayer (Ljava/util/function/Consumer;)V
+	METHOD method_71074 forEachLayer (Ljava/util/function/Consumer;Lnet/minecraft/class_11246$class_11325;)V
 		ARG 1 layerConsumer
 	METHOD method_71075 pushCheckpoint ()V
 	METHOD method_71076 popCheckpoint ()V

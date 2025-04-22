@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_11179 net/minecraft/server/network/ServerWaypointHandler
-	FIELD field_59632 NOOP Lnet/minecraft/class_11179;
 	FIELD field_59633 waypoints Ljava/util/Set;
 	FIELD field_59634 players Ljava/util/Set;
 	FIELD field_59635 trackers Lcom/google/common/collect/Table;

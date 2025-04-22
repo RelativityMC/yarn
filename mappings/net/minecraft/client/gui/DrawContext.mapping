@@ -216,7 +216,7 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 4 y
 		ARG 5 positioner
 		ARG 6 texture
-	METHOD method_51436 drawTooltip (Lnet/minecraft/class_327;Ljava/util/List;Lnet/minecraft/class_8000;II)V
+	METHOD method_51436 drawTooltip (Lnet/minecraft/class_327;Ljava/util/List;Lnet/minecraft/class_8000;IIZ)V
 		ARG 1 textRenderer
 		ARG 2 text
 		ARG 3 positioner
@@ -254,8 +254,6 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 2 style
 		ARG 3 x
 		ARG 4 y
-	METHOD method_51442 (Ljava/util/List;Lnet/minecraft/class_5632;)V
-		ARG 1 data
 	METHOD method_51443 getScaledWindowHeight ()I
 	METHOD method_51445 drawItemWithoutEntity (Lnet/minecraft/class_1799;II)V
 		ARG 1 stack

@@ -9,10 +9,6 @@ CLASS net/minecraft/class_11178 net/minecraft/server/command/WaypointCommand
 	METHOD method_70613 executeReset (Lnet/minecraft/class_2168;Lnet/minecraft/class_11212;)I
 		ARG 0 source
 		ARG 1 waypoint
-	METHOD method_70614 executeFadeReset (Lnet/minecraft/class_2168;Lnet/minecraft/class_11212;Lnet/minecraft/class_11208$class_11209$class_11210;)I
-		ARG 0 source
-		ARG 1 waypoint
-		ARG 2 fade
 	METHOD method_70615 executeColor (Lnet/minecraft/class_2168;Lnet/minecraft/class_11212;Ljava/lang/Integer;)I
 		ARG 0 source
 		ARG 1 waypoint
@@ -25,8 +21,6 @@ CLASS net/minecraft/class_11178 net/minecraft/server/command/WaypointCommand
 		ARG 0 source
 		ARG 1 waypoint
 		ARG 2 color
-	METHOD method_70618 (Lnet/minecraft/class_11208$class_11209$class_11210;Lnet/minecraft/class_11208$class_11209;)V
-		ARG 1 config
 	METHOD method_70619 (Lnet/minecraft/class_11208$class_11209;)V
 		ARG 0 config
 	METHOD method_70621 (Ljava/lang/Integer;Lnet/minecraft/class_11208$class_11209;)V

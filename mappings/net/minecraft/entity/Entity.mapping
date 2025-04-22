@@ -2304,7 +2304,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 1 fallDistance
 		ARG 3 damagePerDistance
 		ARG 4 damageSource
-	METHOD method_67632 (Lit/unimi/dsi/fastutil/longs/LongSet;Lnet/minecraft/class_243;Lnet/minecraft/class_243;Lnet/minecraft/class_10774$class_10775;Lnet/minecraft/class_2338;I)V
+	METHOD method_67632 (Lit/unimi/dsi/fastutil/longs/LongSet;Lnet/minecraft/class_243;Lnet/minecraft/class_243;Lnet/minecraft/class_10774$class_10775;Lnet/minecraft/class_2338;I)Z
 		ARG 5 pos
 		ARG 6 version
 	METHOD method_67633 igniteByLava ()V

@@ -996,8 +996,6 @@ CLASS net/minecraft/class_1802 net/minecraft/item/Items
 		ARG 0 settings
 	METHOD method_58106 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
 		ARG 0 settings
-	METHOD method_58107 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
-		ARG 0 settings
 	METHOD method_58108 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
 		ARG 0 settings
 	METHOD method_58109 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
@@ -1558,6 +1556,4 @@ CLASS net/minecraft/class_1802 net/minecraft/item/Items
 	METHOD method_64661 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
 		ARG 0 settings
 	METHOD method_65360 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
-		ARG 0 settings
-	METHOD method_70726 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
 		ARG 0 settings

@@ -27,7 +27,7 @@ CLASS net/minecraft/class_9955 net/minecraft/client/render/CloudRenderer
 		ARG 3 x
 	METHOD method_62174 buildCloudCellFancy (Lnet/minecraft/class_9955$class_9956;Ljava/nio/ByteBuffer;IIJ)V
 		ARG 1 viewMode
-	METHOD method_62175 buildCloudCells (Lnet/minecraft/class_9955$class_9956;Ljava/nio/ByteBuffer;IIZ)V
+	METHOD method_62175 buildCloudCells (Lnet/minecraft/class_9955$class_9956;Ljava/nio/ByteBuffer;IIZI)V
 		ARG 1 viewMode
 		ARG 3 x
 		ARG 4 z

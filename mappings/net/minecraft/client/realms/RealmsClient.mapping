@@ -9,7 +9,6 @@ CLASS net/minecraft/class_4341 net/minecraft/client/realms/RealmsClient
 	FIELD field_32060 ACCEPT_INVITATION_ENDPOINT Ljava/lang/String;
 	FIELD field_32061 REJECT_INVITATION_ENDPOINT Ljava/lang/String;
 	FIELD field_32062 WORLD_ENDPOINT_4 Ljava/lang/String;
-	FIELD field_32063 WORLD_ENDPOINT_5 Ljava/lang/String;
 	FIELD field_32064 WORLD_SLOT_ENDPOINT Ljava/lang/String;
 	FIELD field_32065 WORLD_OPEN_ENDPOINT Ljava/lang/String;
 	FIELD field_32066 WORLD_CLOSE_ENDPOINT Ljava/lang/String;
@@ -66,7 +65,7 @@ CLASS net/minecraft/class_4341 net/minecraft/client/realms/RealmsClient
 	METHOD method_20992 switchSlot (JI)Z
 		ARG 1 worldId
 		ARG 3 slot
-	METHOD method_20993 updateSlot (JILnet/minecraft/class_4883;)V
+	METHOD method_20993 updateSlot (JILnet/minecraft/class_4883;Ljava/util/List;)V
 		ARG 1 worldId
 		ARG 3 slot
 		ARG 4 options
@@ -89,10 +88,6 @@ CLASS net/minecraft/class_4341 net/minecraft/client/realms/RealmsClient
 	METHOD method_21004 invite (JLjava/lang/String;)Lnet/minecraft/class_4877;
 		ARG 1 worldId
 		ARG 3 profileName
-	METHOD method_21005 update (JLjava/lang/String;Ljava/lang/String;)V
-		ARG 1 worldId
-		ARG 3 name
-		ARG 4 motd
 	METHOD method_21006 rejectInvitation (Ljava/lang/String;)V
 		ARG 1 invitationId
 	METHOD method_21007 url (Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;

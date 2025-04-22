@@ -77,7 +77,6 @@ CLASS net/minecraft/class_339 net/minecraft/client/gui/widget/ClickableWidget
 		ARG 7 endY
 		ARG 8 color
 	METHOD method_49606 isHovered ()Z
-	METHOD method_51254 getTooltip ()Lnet/minecraft/class_7919;
 	METHOD method_52718 drawScrollableText (Lnet/minecraft/class_332;Lnet/minecraft/class_327;Lnet/minecraft/class_2561;IIIII)V
 		ARG 0 context
 		ARG 1 textRenderer

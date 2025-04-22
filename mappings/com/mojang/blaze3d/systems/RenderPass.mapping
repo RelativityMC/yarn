@@ -5,10 +5,7 @@ CLASS com/mojang/blaze3d/systems/RenderPass
 	METHOD draw (II)V
 		ARG 1 offset
 		ARG 2 count
-	METHOD drawIndexed (II)V
-		ARG 1 offset
-		ARG 2 count
-	METHOD drawIndexed (III)V
+	METHOD drawIndexed (IIII)V
 		ARG 1 offset
 		ARG 2 count
 		ARG 3 primcount

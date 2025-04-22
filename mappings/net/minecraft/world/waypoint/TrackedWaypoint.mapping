@@ -9,11 +9,6 @@ CLASS net/minecraft/class_11200 net/minecraft/world/waypoint/TrackedWaypoint
 		ARG 2 config
 		ARG 3 type
 	METHOD method_70763 getSource ()Lcom/mojang/datafixers/util/Either;
-	METHOD method_70764 getRelativeYaw (Lnet/minecraft/class_1297;)D
-		ARG 1 receiver
-	METHOD method_70765 getPitch (Lnet/minecraft/class_1297;Lnet/minecraft/class_11200$class_11204;)I
-		ARG 1 receiver
-		ARG 2 provider
 	METHOD method_70766 handleUpdate (Lnet/minecraft/class_11200;)V
 		ARG 1 waypoint
 	METHOD method_70767 writeBuf (Lio/netty/buffer/ByteBuf;)V
@@ -59,8 +54,7 @@ CLASS net/minecraft/class_11200 net/minecraft/world/waypoint/TrackedWaypoint
 			ARG 1 source
 			ARG 2 config
 			ARG 3 chunkPos
-		METHOD method_70776 getChunkCenterPos (Lnet/minecraft/class_1297;)Lnet/minecraft/class_243;
-			ARG 1 receiver
+		METHOD method_70776 getChunkCenterPos (D)Lnet/minecraft/class_243;
 	CLASS class_11203 Empty
 		METHOD <init> (Lcom/mojang/datafixers/util/Either;Lnet/minecraft/class_11208$class_11209;Lnet/minecraft/class_2540;)V
 			ARG 1 source

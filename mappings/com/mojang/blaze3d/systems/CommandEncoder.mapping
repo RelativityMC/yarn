@@ -45,14 +45,6 @@ CLASS com/mojang/blaze3d/systems/CommandEncoder
 		ARG 7 sourceY
 		ARG 8 width
 		ARG 9 height
-	METHOD createRenderPass (Lcom/mojang/blaze3d/textures/GpuTexture;Ljava/util/OptionalInt;)Lcom/mojang/blaze3d/systems/RenderPass;
-		ARG 1 colorAttachment
-		ARG 2 clearColor
-	METHOD createRenderPass (Lcom/mojang/blaze3d/textures/GpuTexture;Ljava/util/OptionalInt;Lcom/mojang/blaze3d/textures/GpuTexture;Ljava/util/OptionalDouble;)Lcom/mojang/blaze3d/systems/RenderPass;
-		ARG 1 colorAttachment
-		ARG 2 clearColor
-		ARG 3 depthAttachment
-		ARG 4 clearDepth
 	METHOD mapBuffer (Lcom/mojang/blaze3d/buffers/GpuBuffer;ZZ)Lcom/mojang/blaze3d/buffers/GpuBuffer$MappedView;
 		ARG 1 buffer
 		ARG 2 read

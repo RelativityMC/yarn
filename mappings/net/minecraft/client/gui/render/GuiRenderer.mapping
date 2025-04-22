@@ -33,11 +33,6 @@ CLASS net/minecraft/class_11228 net/minecraft/client/gui/render/GuiRenderer
 		ARG 2 pixelsPerItem
 	METHOD method_70882 startBuffer (Lcom/mojang/blaze3d/pipeline/RenderPipeline;)Lnet/minecraft/class_287;
 		ARG 1 pipeline
-	METHOD method_70883 endBuffer (Lnet/minecraft/class_287;Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/class_11231;Lnet/minecraft/class_8030;)V
-		ARG 1 buffer
-		ARG 2 pipeline
-		ARG 3 textureSetup
-		ARG 4 scissorArea
 	METHOD method_70884 enableScissor (Lnet/minecraft/class_8030;Lcom/mojang/blaze3d/systems/RenderPass;)V
 		ARG 1 scissorArea
 		ARG 2 pass
@@ -76,9 +71,6 @@ CLASS net/minecraft/class_11228 net/minecraft/client/gui/render/GuiRenderer
 		ARG 5 state
 	METHOD method_71056 (ILnet/minecraft/class_11256;)V
 		ARG 2 state
-	METHOD method_71057 (Lnet/minecraft/class_11244;I)V
-		ARG 1 state
-		ARG 2 depth
 	METHOD method_71058 (Lnet/minecraft/class_11247;)V
 		ARG 1 state
 	CLASS class_11229 RenderedItem

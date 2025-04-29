@@ -551,15 +551,7 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 3 y1
 		ARG 4 x2
 		ARG 5 y2
-	METHOD method_71045 popLayers (I)V
-		ARG 1 count
-	METHOD method_71046 goUpLayer ()V
-	METHOD method_71047 goTopLayer ()V
 	METHOD method_71048 createNewRootLayer ()V
-	METHOD method_71049 goDownLayer ()V
-	METHOD method_71050 popLayer ()V
-	METHOD method_71051 pushCheckpoint ()V
-	METHOD method_71052 popCheckpoint ()V
 	METHOD method_71273 drawTooltip (Lnet/minecraft/class_327;Ljava/util/List;IILnet/minecraft/class_8000;Lnet/minecraft/class_2960;Z)V
 		ARG 1 textRenderer
 		ARG 2 components

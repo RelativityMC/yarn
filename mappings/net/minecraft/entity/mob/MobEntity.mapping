@@ -22,7 +22,7 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 	FIELD field_6206 lookControl Lnet/minecraft/class_1333;
 	FIELD field_6207 moveControl Lnet/minecraft/class_1335;
 	FIELD field_18074 positionTarget Lnet/minecraft/class_2338;
-	FIELD field_18075 positionTargetRange F
+	FIELD field_18075 positionTargetRange I
 	FIELD field_30083 DEFAULT_CAN_PICKUP_LOOT_CHANCE F
 		COMMENT Used by Zombies to control the chance that they spawn with the ability to pick up loot.
 		COMMENT
@@ -178,7 +178,7 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 	METHOD method_18410 hasPositionTarget ()Z
 	METHOD method_18411 isInPositionTargetRange ()Z
 	METHOD method_18412 getPositionTarget ()Lnet/minecraft/class_2338;
-	METHOD method_18413 getPositionTargetRange ()F
+	METHOD method_18413 getPositionTargetRange ()I
 	METHOD method_19540 setAttacking (Z)V
 		ARG 1 attacking
 	METHOD method_20240 getMaxLookYawChange ()I

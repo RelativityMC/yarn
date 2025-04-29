@@ -388,8 +388,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 entity
 	METHOD method_18392 setPositionInBed (Lnet/minecraft/class_2338;)V
 		ARG 1 pos
-	METHOD method_18393 (Lnet/minecraft/class_2487;Lnet/minecraft/class_2338;)V
-		ARG 1 pos
 	METHOD method_18395 canTarget (Lnet/minecraft/class_1309;)Z
 		ARG 1 target
 	METHOD method_18396 getArmorVisibility ()F
@@ -492,8 +490,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 state
 	METHOD method_26827 createLivingAttributes ()Lnet/minecraft/class_5132$class_5133;
 	METHOD method_27071 shouldDropLoot ()Z
-	METHOD method_28305 (Lnet/minecraft/class_2487;Lnet/minecraft/class_2520;)V
-		ARG 1 brain
 	METHOD method_28306 createBrainProfile ()Lnet/minecraft/class_4095$class_5303;
 	METHOD method_29242 updateLimbs (Z)V
 		ARG 1 flutter
@@ -762,8 +758,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 pos
 	METHOD method_68264 (Ljava/lang/String;)V
 		ARG 1 team
-	METHOD method_68265 (Lnet/minecraft/class_2487;)V
-		ARG 1 brain
 	METHOD method_70670 travelFlying (Lnet/minecraft/class_243;F)V
 		ARG 1 movementInput
 		ARG 2 speed

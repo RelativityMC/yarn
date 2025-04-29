@@ -25,7 +25,7 @@ CLASS net/minecraft/class_3499 net/minecraft/structure/StructureTemplate
 		ARG 4 offsetZ
 	METHOD method_15163 (Lnet/minecraft/class_1297;)Z
 		ARG 0 entity
-	METHOD method_15164 addEntitiesFromWorld (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;)V
+	METHOD method_15164 addEntitiesFromWorld (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;Lnet/minecraft/class_8942;)V
 		ARG 1 world
 		ARG 2 firstCorner
 		ARG 3 secondCorner
@@ -79,8 +79,7 @@ CLASS net/minecraft/class_3499 net/minecraft/structure/StructureTemplate
 		ARG 1 blockLookup
 		ARG 2 palette
 		ARG 3 blocks
-	METHOD method_15179 spawnEntities (Lnet/minecraft/class_5425;Lnet/minecraft/class_2338;Lnet/minecraft/class_2415;Lnet/minecraft/class_2470;Lnet/minecraft/class_2338;Lnet/minecraft/class_3341;Z)V
-		ARG 1 world
+	METHOD method_15179 spawnEntities (Lnet/minecraft/class_5425;Lnet/minecraft/class_2338;Lnet/minecraft/class_2415;Lnet/minecraft/class_2470;Lnet/minecraft/class_2338;Lnet/minecraft/class_3341;ZLnet/minecraft/class_8942;)V
 		ARG 2 pos
 		ARG 3 mirror
 		ARG 4 rotation
@@ -113,9 +112,7 @@ CLASS net/minecraft/class_3499 net/minecraft/structure/StructureTemplate
 		ARG 2 pivot
 		ARG 3 placementData
 		ARG 4 infos
-	METHOD method_17916 getEntity (Lnet/minecraft/class_5425;Lnet/minecraft/class_2487;)Ljava/util/Optional;
-		ARG 0 world
-		ARG 1 nbt
+	METHOD method_17916 getEntity (Lnet/minecraft/class_8942;Lnet/minecraft/class_5425;Lnet/minecraft/class_2487;)Ljava/util/Optional;
 	METHOD method_17917 (Lnet/minecraft/class_2470;Lnet/minecraft/class_2415;Lnet/minecraft/class_243;ZLnet/minecraft/class_5425;Lnet/minecraft/class_1297;)V
 		ARG 5 entity
 	METHOD method_20532 updateCorner (Lnet/minecraft/class_1936;ILnet/minecraft/class_251;III)V

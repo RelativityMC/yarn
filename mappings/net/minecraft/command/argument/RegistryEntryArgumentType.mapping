@@ -1,17 +1,12 @@
 CLASS net/minecraft/class_9433 net/minecraft/command/argument/RegistryEntryArgumentType
 	FIELD field_50037 FAILED_TO_PARSE_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_50038 EXAMPLES Ljava/util/Collection;
-	FIELD field_50039 INVALID_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_50040 registries Lnet/minecraft/class_7225$class_7874;
-	FIELD field_50041 canLookupRegistry Z
 	FIELD field_50042 entryCodec Lcom/mojang/serialization/Codec;
-	FIELD field_58145 SNBT_READER Lnet/minecraft/class_2522;
 	METHOD <init> (Lnet/minecraft/class_7157;Lnet/minecraft/class_5321;Lcom/mojang/serialization/Codec;)V
 		ARG 1 registryAccess
 		ARG 2 registry
 		ARG 3 entryCodec
-	METHOD method_58480 (Lcom/mojang/brigadier/StringReader;Ljava/lang/String;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
-		ARG 1 argument
 	METHOD method_58481 getLootTable (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880;
 		ARG 0 context
 		ARG 1 argument
@@ -19,17 +14,11 @@ CLASS net/minecraft/class_9433 net/minecraft/command/argument/RegistryEntryArgum
 		ARG 0 registryAccess
 	METHOD method_58483 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 argument
-	METHOD method_58484 parseAsNbt (Lcom/mojang/serialization/DynamicOps;Lnet/minecraft/class_2522;Lcom/mojang/brigadier/StringReader;)Lcom/mojang/serialization/Dynamic;
-		ARG 0 ops
-		ARG 1 snbtReader
-		ARG 2 reader
 	METHOD method_58485 getLootFunction (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880;
 		ARG 0 context
 		ARG 1 argument
 	METHOD method_58486 lootFunction (Lnet/minecraft/class_7157;)Lnet/minecraft/class_9433$class_9434;
 		ARG 0 registryAccess
-	METHOD method_58487 hasFinishedReading (Lcom/mojang/brigadier/StringReader;)Z
-		ARG 0 stringReader
 	METHOD method_58488 getLootCondition (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880;
 		ARG 0 context
 		ARG 1 argument
@@ -38,9 +27,8 @@ CLASS net/minecraft/class_9433 net/minecraft/command/argument/RegistryEntryArgum
 	METHOD method_58490 getArgument (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880;
 		ARG 0 context
 		ARG 1 argument
-	METHOD method_68814 parse (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/class_2522;)Lnet/minecraft/class_6880;
+	METHOD method_68814 parse (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/class_9408;Lcom/mojang/serialization/DynamicOps;)Lnet/minecraft/class_6880;
 		ARG 1 reader
-		ARG 2 snbtReader
 	CLASS class_9434 LootFunctionArgumentType
 		METHOD <init> (Lnet/minecraft/class_7157;)V
 			ARG 1 registryAccess

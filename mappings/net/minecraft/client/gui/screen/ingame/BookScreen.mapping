@@ -44,5 +44,5 @@ CLASS net/minecraft/class_3872 net/minecraft/client/gui/screen/ingame/BookScreen
 		METHOD method_17560 getPageCount ()I
 		METHOD method_17562 create (Lnet/minecraft/class_1799;)Lnet/minecraft/class_3872$class_3931;
 			ARG 0 stack
-		METHOD method_17563 getPage (I)Lnet/minecraft/class_5348;
+		METHOD method_17563 getPage (I)Lnet/minecraft/class_2561;
 			ARG 1 index

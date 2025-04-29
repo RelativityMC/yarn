@@ -1,7 +1,6 @@
 CLASS net/minecraft/class_11246 net/minecraft/client/gui/render/state/GuiRenderState
 	FIELD field_60043 rootLayers Ljava/util/List;
 	FIELD field_60044 currentLayer Lnet/minecraft/class_11246$class_11276;
-	FIELD field_60045 checkpointStack Ljava/util/List;
 	FIELD field_60046 itemModelKeys Ljava/util/Set;
 	FIELD field_60314 blurLayer I
 	METHOD method_70919 addSimpleElement (Lnet/minecraft/class_11244;)V
@@ -35,7 +34,6 @@ CLASS net/minecraft/class_11246 net/minecraft/client/gui/render/state/GuiRenderS
 		ARG 1 textElementStateConsumer
 	METHOD method_71069 (Ljava/util/function/Consumer;Lnet/minecraft/class_11246$class_11276;)V
 		ARG 2 layer
-	METHOD method_71070 goTopLayer ()V
 	METHOD method_71071 forEachSpecialElement (Ljava/util/function/Consumer;)V
 		ARG 1 specialElementStateConsumer
 	METHOD method_71072 (Ljava/util/function/Consumer;Lnet/minecraft/class_11246$class_11276;)V
@@ -44,9 +42,6 @@ CLASS net/minecraft/class_11246 net/minecraft/client/gui/render/state/GuiRenderS
 	METHOD method_71074 forEachLayer (Ljava/util/function/Consumer;Lnet/minecraft/class_11246$class_11325;)V
 		ARG 1 layerConsumer
 		ARG 2 filter
-	METHOD method_71075 pushCheckpoint ()V
-	METHOD method_71076 popCheckpoint ()V
-	METHOD method_71077 popLayer ()V
 	METHOD method_71078 getItemModelKeys ()Ljava/util/Set;
 	METHOD method_71299 applyBlur ()V
 	CLASS class_11275 SimpleElementStateConsumer

@@ -126,7 +126,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_17763 splashTextLoader Lnet/minecraft/class_4008;
 	FIELD field_18008 paintingManager Lnet/minecraft/class_4044;
 	FIELD field_18009 COMPLETED_UNIT_FUTURE Ljava/util/concurrent/CompletableFuture;
-	FIELD field_18173 statusEffectSpriteManager Lnet/minecraft/class_4074;
 	FIELD field_18174 resourceReloadFuture Ljava/util/concurrent/CompletableFuture;
 	FIELD field_18175 overlay Lnet/minecraft/class_4071;
 	FIELD field_20907 debugChunkInfo Z
@@ -296,7 +295,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_18321 getPaintingManager ()Lnet/minecraft/class_4044;
 	METHOD method_18502 setOverlay (Lnet/minecraft/class_4071;)V
 		ARG 1 overlay
-	METHOD method_18505 getStatusEffectSpriteManager ()Lnet/minecraft/class_4074;
 	METHOD method_18506 getOverlay ()Lnet/minecraft/class_4071;
 	METHOD method_18507 (Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletionStage;
 		ARG 0 future
@@ -375,14 +373,12 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 1 chatMessageSender
 	METHOD method_34746 (Ljava/util/function/Consumer;Lnet/minecraft/class_3696;)V
 		ARG 2 result
-	METHOD method_35698 takePanorama (Ljava/io/File;II)Lnet/minecraft/class_2561;
+	METHOD method_35698 takePanorama (Ljava/io/File;)Lnet/minecraft/class_2561;
 		COMMENT Takes a panorama. The panorama is stored in the given {@code directory}, in
 		COMMENT where 6 screenshots of size {@code width} and {@code height} will be taken.
 		COMMENT
 		COMMENT @return a user-oriented piece of text for screenshot result
 		ARG 1 directory
-		ARG 2 width
-		ARG 3 height
 	METHOD method_35701 (Lnet/minecraft/class_2561;)V
 		ARG 0 message
 	METHOD method_35703 getWorldGenerationProgressTracker ()Lnet/minecraft/class_3953;

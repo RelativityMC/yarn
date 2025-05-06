@@ -7,14 +7,14 @@ CLASS com/mojang/blaze3d/systems/GpuDevice
 		ARG 1 labelGetter
 		ARG 2 usage
 		ARG 3 data
-	METHOD createTexture (Ljava/lang/String;ILcom/mojang/blaze3d/textures/TextureFormat;III)Lcom/mojang/blaze3d/textures/GpuTexture;
+	METHOD createTexture (Ljava/lang/String;ILcom/mojang/blaze3d/textures/TextureFormat;IIII)Lcom/mojang/blaze3d/textures/GpuTexture;
 		ARG 1 label
 		ARG 2 usage
 		ARG 3 format
 		ARG 4 width
 		ARG 5 height
 		ARG 6 mipLevels
-	METHOD createTexture (Ljava/util/function/Supplier;ILcom/mojang/blaze3d/textures/TextureFormat;III)Lcom/mojang/blaze3d/textures/GpuTexture;
+	METHOD createTexture (Ljava/util/function/Supplier;ILcom/mojang/blaze3d/textures/TextureFormat;IIII)Lcom/mojang/blaze3d/textures/GpuTexture;
 		ARG 1 labelGetter
 		ARG 2 usage
 		ARG 3 format

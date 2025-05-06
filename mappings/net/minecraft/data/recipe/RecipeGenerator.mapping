@@ -287,7 +287,7 @@ CLASS net/minecraft/class_2446 net/minecraft/data/recipe/RecipeGenerator
 	METHOD method_48533 offerSmithingTemplateCopyingRecipe (Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)V
 		ARG 1 template
 		ARG 2 resource
-	METHOD method_51890 offerDyeableRecipes (Ljava/util/List;Ljava/util/List;Ljava/lang/String;)V
+	METHOD method_51890 offerDyeableRecipes (Ljava/util/List;Ljava/util/List;Ljava/lang/String;Lnet/minecraft/class_7800;)V
 		ARG 1 dyes
 		ARG 2 dyeables
 		ARG 3 group

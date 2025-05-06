@@ -45,15 +45,12 @@ CLASS com/mojang/blaze3d/systems/CommandEncoder
 		ARG 7 sourceY
 		ARG 8 width
 		ARG 9 height
-	METHOD createRenderPass (Ljava/util/function/Supplier;Lcom/mojang/blaze3d/textures/GpuTexture;Ljava/util/OptionalInt;)Lcom/mojang/blaze3d/systems/RenderPass;
+	METHOD createRenderPass (Ljava/util/function/Supplier;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/OptionalInt;)Lcom/mojang/blaze3d/systems/RenderPass;
 		ARG 1 labelGetter
-		ARG 2 colorAttachment
 		ARG 3 clearColor
-	METHOD createRenderPass (Ljava/util/function/Supplier;Lcom/mojang/blaze3d/textures/GpuTexture;Ljava/util/OptionalInt;Lcom/mojang/blaze3d/textures/GpuTexture;Ljava/util/OptionalDouble;)Lcom/mojang/blaze3d/systems/RenderPass;
+	METHOD createRenderPass (Ljava/util/function/Supplier;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/OptionalInt;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/OptionalDouble;)Lcom/mojang/blaze3d/systems/RenderPass;
 		ARG 1 labelGetter
-		ARG 2 colorAttachment
 		ARG 3 clearColor
-		ARG 4 depthAttachment
 		ARG 5 clearDepth
 	METHOD mapBuffer (Lcom/mojang/blaze3d/buffers/GpuBuffer;ZZ)Lcom/mojang/blaze3d/buffers/GpuBuffer$MappedView;
 		ARG 1 buffer
@@ -63,12 +60,10 @@ CLASS com/mojang/blaze3d/systems/CommandEncoder
 		ARG 1 slice
 		ARG 2 read
 		ARG 3 write
-	METHOD presentTexture (Lcom/mojang/blaze3d/textures/GpuTexture;)V
-		ARG 1 texture
 	METHOD writeToBuffer (Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Ljava/nio/ByteBuffer;)V
 		ARG 1 slice
 		ARG 2 source
-	METHOD writeToTexture (Lcom/mojang/blaze3d/textures/GpuTexture;Ljava/nio/IntBuffer;Lnet/minecraft/class_1011$class_1012;IIIII)V
+	METHOD writeToTexture (Lcom/mojang/blaze3d/textures/GpuTexture;Ljava/nio/IntBuffer;Lnet/minecraft/class_1011$class_1012;IIIIII)V
 		ARG 1 target
 		ARG 2 source
 		ARG 3 format
@@ -80,7 +75,7 @@ CLASS com/mojang/blaze3d/systems/CommandEncoder
 	METHOD writeToTexture (Lcom/mojang/blaze3d/textures/GpuTexture;Lnet/minecraft/class_1011;)V
 		ARG 1 target
 		ARG 2 source
-	METHOD writeToTexture (Lcom/mojang/blaze3d/textures/GpuTexture;Lnet/minecraft/class_1011;IIIIIII)V
+	METHOD writeToTexture (Lcom/mojang/blaze3d/textures/GpuTexture;Lnet/minecraft/class_1011;IIIIIIII)V
 		ARG 1 target
 		ARG 2 source
 		ARG 3 mipLevel

@@ -202,5 +202,4 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 			ARG 1 difficultyLocked
 		METHOD method_28105 getSkyDarknessHeight (Lnet/minecraft/class_5539;)D
 			ARG 1 world
-		METHOD method_28106 getHorizonShadingRatio ()F
 	CLASS class_5612 ClientEntityHandler

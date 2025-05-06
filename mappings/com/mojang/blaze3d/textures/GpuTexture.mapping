@@ -1,5 +1,5 @@
 CLASS com/mojang/blaze3d/textures/GpuTexture
-	METHOD <init> (ILjava/lang/String;Lcom/mojang/blaze3d/textures/TextureFormat;III)V
+	METHOD <init> (ILjava/lang/String;Lcom/mojang/blaze3d/textures/TextureFormat;IIII)V
 		ARG 1 usage
 		ARG 2 label
 		ARG 3 format

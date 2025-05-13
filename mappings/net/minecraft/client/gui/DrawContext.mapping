@@ -181,7 +181,6 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 3 y
 		ARG 4 seed
 	METHOD method_51430 drawText (Lnet/minecraft/class_327;Lnet/minecraft/class_5481;IIIZ)V
-		ARG 1 textRenderer
 		ARG 2 text
 		ARG 3 x
 		ARG 4 y
@@ -199,12 +198,6 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 4 y
 		ARG 5 stackCountText
 	METHOD method_51433 drawText (Lnet/minecraft/class_327;Ljava/lang/String;IIIZ)V
-		ARG 1 textRenderer
-		ARG 2 text
-		ARG 3 x
-		ARG 4 y
-		ARG 5 color
-		ARG 6 shadow
 	METHOD method_51434 drawTooltip (Lnet/minecraft/class_327;Ljava/util/List;II)V
 		ARG 1 textRenderer
 		ARG 2 text
@@ -492,10 +485,6 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 6 y2
 		ARG 7 color
 		ARG 8 color2
-	METHOD method_70851 drawText (Lnet/minecraft/class_11248;II)V
-		ARG 1 state
-		ARG 2 x
-		ARG 3 y
 	METHOD method_70852 addBookModel (Lnet/minecraft/class_557;Lnet/minecraft/class_2960;FFFIIII)V
 		ARG 1 bookModel
 		ARG 2 texture

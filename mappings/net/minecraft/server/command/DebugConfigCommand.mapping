@@ -6,8 +6,6 @@ CLASS net/minecraft/class_8600 net/minecraft/server/command/DebugConfigCommand
 	METHOD method_52301 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 0 context
 		ARG 1 suggestionsBuilder
-	METHOD method_52302 (Lnet/minecraft/class_2168;)Z
-		ARG 0 source
 	METHOD method_52303 executeConfig (Lnet/minecraft/class_2168;Lnet/minecraft/class_3222;)I
 		ARG 0 source
 		ARG 1 player

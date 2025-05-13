@@ -10,7 +10,6 @@ CLASS net/minecraft/class_9433 net/minecraft/command/argument/RegistryEntryArgum
 	METHOD <init> (Lnet/minecraft/class_7157;Lnet/minecraft/class_5321;Lcom/mojang/serialization/Codec;)V
 		ARG 1 registryAccess
 		ARG 2 registry
-		ARG 3 entryCodec
 	METHOD method_58481 getLootTable (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880;
 		ARG 0 context
 		ARG 1 argument

@@ -88,9 +88,6 @@ CLASS net/minecraft/class_1140 net/minecraft/client/sound/SoundSystem
 		ARG 1 stream
 	METHOD method_19759 (Ljava/util/stream/Stream;)V
 		ARG 0 sources
-	METHOD method_19760 (Ljava/util/stream/Stream;)V
-		ARG 0 sources
-	METHOD method_19761 pauseAll ()V
 	METHOD method_19762 resumeAll ()V
 	METHOD method_20185 tick (Z)V
 		ARG 1 paused

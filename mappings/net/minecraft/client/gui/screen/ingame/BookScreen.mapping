@@ -13,7 +13,7 @@ CLASS net/minecraft/class_3872 net/minecraft/client/gui/screen/ingame/BookScreen
 	FIELD field_32332 MAX_TEXT_HEIGHT I
 	FIELD field_32333 WIDTH I
 	FIELD field_32334 HEIGHT I
-	FIELD field_60476 TITLE_TEXT Lnet/minecraft/class_5250;
+	FIELD field_60476 TITLE_TEXT Lnet/minecraft/class_2561;
 	METHOD <init> (Lnet/minecraft/class_3872$class_3931;)V
 		ARG 1 pageProvider
 	METHOD <init> (Lnet/minecraft/class_3872$class_3931;Z)V

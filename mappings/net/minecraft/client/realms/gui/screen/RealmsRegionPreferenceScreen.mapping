@@ -29,7 +29,7 @@ CLASS net/minecraft/class_11316 net/minecraft/client/realms/gui/screen/RealmsReg
 		CLASS class_11318 RegionEntry
 			FIELD field_60264 region Lnet/minecraft/class_11319$class_11320;
 			FIELD field_60265 name Lnet/minecraft/class_2561;
-			METHOD <init> (Lnet/minecraft/class_11316$class_11317;Lnet/minecraft/class_11310$class_11311;Lnet/minecraft/class_11303;)V
+			METHOD <init> (Lnet/minecraft/class_11316$class_11317;Lnet/minecraft/class_11311;Lnet/minecraft/class_11303;)V
 				ARG 2 selectionMethod
 				ARG 3 region
 			METHOD <init> (Lnet/minecraft/class_11316$class_11317;Lnet/minecraft/class_11319$class_11320;)V

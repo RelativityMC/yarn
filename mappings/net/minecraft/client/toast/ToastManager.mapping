@@ -5,7 +5,7 @@ CLASS net/minecraft/class_374 net/minecraft/client/toast/ToastManager
 	FIELD field_39929 SPACES I
 	FIELD field_39931 occupiedSpaces Ljava/util/BitSet;
 	FIELD field_55860 queuedToastSounds Ljava/util/Set;
-	METHOD <init> (Lnet/minecraft/class_310;)V
+	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_315;)V
 		ARG 1 client
 	METHOD method_1995 getClient ()Lnet/minecraft/class_310;
 	METHOD method_1996 draw (Lnet/minecraft/class_332;)V

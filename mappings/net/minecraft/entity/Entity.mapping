@@ -547,7 +547,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		COMMENT @see #dropItem(ServerWorld, ItemConvertible, int)
 		COMMENT @see #dropStack(ServerWorld, ItemStack)
 		ARG 1 world
-		ARG 2 stack
 		ARG 3 yOffset
 	METHOD method_5700 onBubbleColumnSurfaceCollision (ZLnet/minecraft/class_2338;)V
 		COMMENT Called when the entity collides with a bubble column with an air above.
@@ -846,7 +845,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 1 world
 	METHOD method_5769 getHoverEvent ()Lnet/minecraft/class_2568;
 		COMMENT {@return the hover event referencing this entity}
-	METHOD method_5770 getEntityWorld ()Lnet/minecraft/class_1937;
 	METHOD method_5771 isInLava ()Z
 		COMMENT {@return whether the entity is in lava}
 	METHOD method_5772 removeAllPassengers ()V

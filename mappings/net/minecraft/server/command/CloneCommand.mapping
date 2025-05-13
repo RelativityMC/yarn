@@ -15,8 +15,6 @@ CLASS net/minecraft/class_3023 net/minecraft/server/command/CloneCommand
 		ARG 4 filter
 		ARG 5 mode
 		ARG 6 strict
-	METHOD method_13094 (Lnet/minecraft/class_2168;)Z
-		ARG 0 source
 	METHOD method_13096 (Lnet/minecraft/class_2694;)Z
 		ARG 0 pos
 	METHOD method_13099 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;

@@ -170,8 +170,6 @@ CLASS net/minecraft/class_437 net/minecraft/client/gui/screen/Screen
 		ARG 5 v
 		ARG 6 width
 		ARG 7 height
-	METHOD method_61039 (Ljava/net/URI;Z)V
-		ARG 2 confirmed
 	METHOD method_61040 refreshNarrator (Z)V
 		ARG 1 previouslyDisabled
 	METHOD method_64506 getTextRenderer ()Lnet/minecraft/class_327;

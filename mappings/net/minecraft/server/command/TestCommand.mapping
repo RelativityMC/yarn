@@ -106,8 +106,6 @@ CLASS net/minecraft/class_4527 net/minecraft/server/command/TestCommand
 		ARG 1 pos
 	METHOD method_67018 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
-	METHOD method_67019 (Lnet/minecraft/class_2168;)Z
-		ARG 0 source
 	METHOD method_67020 clear (Lnet/minecraft/class_9123;)I
 		ARG 0 finder
 	METHOD method_67021 (Lnet/minecraft/class_10618;Lcom/mojang/brigadier/context/CommandContext;)I
@@ -145,16 +143,6 @@ CLASS net/minecraft/class_4527 net/minecraft/server/command/TestCommand
 	METHOD method_67037 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_67038 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 context
-	METHOD method_67039 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 context
-	METHOD method_67040 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 context
-	METHOD method_67041 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 context
-	METHOD method_67042 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 context
-	METHOD method_67043 (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/class_9123;
 		ARG 0 context
 	METHOD method_67044 (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/class_9123;
 		ARG 0 context

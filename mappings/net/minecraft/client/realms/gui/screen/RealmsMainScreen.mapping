@@ -29,7 +29,6 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 	FIELD field_45191 CLOSED_STATUS_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_45192 INVITE_ICON_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_45193 NEWS_ICON_TEXTURE Lnet/minecraft/class_2960;
-	FIELD field_45194 REALMS_TITLE_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_45195 NO_REALMS_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_45196 MENU_TEXT Lnet/minecraft/class_2561;
 	FIELD field_45197 LOADING_TEXT Lnet/minecraft/class_2561;

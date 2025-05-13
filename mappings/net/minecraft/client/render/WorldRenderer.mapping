@@ -38,7 +38,6 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	FIELD field_54160 lastTranslucencySortCameraPos Lnet/minecraft/class_2338;
 	FIELD field_54161 chunkIndex I
 	FIELD field_54164 nearbyChunks Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
-	FIELD field_60110 fogRenderer Lnet/minecraft/class_758;
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_898;Lnet/minecraft/class_824;Lnet/minecraft/class_4599;)V
 		ARG 1 client
 		ARG 2 entityRenderDispatcher
@@ -156,14 +155,11 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 1 pos
 		ARG 2 old
 		ARG 3 updated
-	METHOD method_22710 render (Lnet/minecraft/class_9922;Lnet/minecraft/class_9779;ZLnet/minecraft/class_4184;Lnet/minecraft/class_757;Lorg/joml/Matrix4f;Lorg/joml/Matrix4f;)V
+	METHOD method_22710 render (Lnet/minecraft/class_9922;Lnet/minecraft/class_9779;ZLnet/minecraft/class_4184;Lorg/joml/Matrix4f;Lorg/joml/Matrix4f;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Lorg/joml/Vector4f;Z)V
 		ARG 1 allocator
 		ARG 2 tickCounter
 		ARG 3 renderBlockOutline
 		ARG 4 camera
-		ARG 5 gameRenderer
-		ARG 6 positionMatrix
-		ARG 7 projectionMatrix
 	METHOD method_22712 drawBlockOutline (Lnet/minecraft/class_4587;Lnet/minecraft/class_4588;Lnet/minecraft/class_1297;DDDLnet/minecraft/class_2338;Lnet/minecraft/class_2680;I)V
 		ARG 1 matrices
 		ARG 2 vertexConsumer
@@ -305,7 +301,6 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 5 ignoreCameraAlignment
 	METHOD method_65201 scheduleNeighborUpdates (Lnet/minecraft/class_1923;)V
 		ARG 1 chunkPos
-	METHOD method_71117 getFogRenderer ()Lnet/minecraft/class_758;
 	CLASS class_10948 BrightnessGetter
 		FIELD field_58200 DEFAULT Lnet/minecraft/class_761$class_10948;
 		METHOD method_68890 (Lnet/minecraft/class_1920;Lnet/minecraft/class_2338;)I

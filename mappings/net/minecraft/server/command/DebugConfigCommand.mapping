@@ -1,11 +1,8 @@
 CLASS net/minecraft/class_8600 net/minecraft/server/command/DebugConfigCommand
-	METHOD method_52299 register (Lcom/mojang/brigadier/CommandDispatcher;)V
+	METHOD method_52299 register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/class_7157;)V
 		ARG 0 dispatcher
 	METHOD method_52300 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
-	METHOD method_52301 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 context
-		ARG 1 suggestionsBuilder
 	METHOD method_52303 executeConfig (Lnet/minecraft/class_2168;Lnet/minecraft/class_3222;)I
 		ARG 0 source
 		ARG 1 player

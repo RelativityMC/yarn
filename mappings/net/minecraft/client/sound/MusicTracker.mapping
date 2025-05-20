@@ -6,10 +6,7 @@ CLASS net/minecraft/class_1142 net/minecraft/client/sound/MusicTracker
 	FIELD field_33019 DEFAULT_TIME_UNTIL_NEXT_SONG I
 	FIELD field_55164 volume F
 	FIELD field_60796 musicFrequency Lnet/minecraft/class_1142$class_11504;
-	METHOD <init> (Lnet/minecraft/class_310;)V
-		ARG 1 client
 	METHOD method_4858 play (Lnet/minecraft/class_10383;)V
-		ARG 1 music
 	METHOD method_4859 stop ()V
 	METHOD method_4860 isPlayingType (Lnet/minecraft/class_5195;)Z
 		ARG 1 type

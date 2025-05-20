@@ -209,7 +209,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	FIELD field_44873 forceUpdateSupportingBlockPos Z
 	FIELD field_47742 stateAtPos Lnet/minecraft/class_2680;
 	FIELD field_51994 portalManager Lnet/minecraft/class_9787;
-	FIELD field_54947 queuedCollisionChecks Ljava/util/List;
+	FIELD field_54947 queuedCollisionChecks Ljava/util/ArrayDeque;
 	FIELD field_54948 collidedBlockPositions Lit/unimi/dsi/fastutil/longs/LongSet;
 	FIELD field_56630 collisionHandler Lnet/minecraft/class_10774$class_10775;
 	FIELD field_56631 TAG_LIST_CODEC Lcom/mojang/serialization/Codec;

@@ -54,8 +54,6 @@ CLASS net/minecraft/class_11246 net/minecraft/client/gui/render/state/GuiRenderS
 		ARG 1 state
 	METHOD method_71532 findAndGoToLayerIntersecting (Lnet/minecraft/class_8030;)V
 		ARG 1 bounds
-	METHOD method_71533 forceAddSimpleElementToCurrentLayer (Lnet/minecraft/class_11244;)V
-		ARG 1 state
 	CLASS class_11275 SimpleElementStateConsumer
 		METHOD accept (Lnet/minecraft/class_11244;I)V
 			ARG 1 simpleElementState

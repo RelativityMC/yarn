@@ -131,9 +131,6 @@ CLASS net/minecraft/class_3324 net/minecraft/server/PlayerManager
 		ARG 1 profile
 	METHOD method_14611 remove (Lnet/minecraft/class_3222;)V
 		ARG 1 player
-	METHOD method_14613 createPlayer (Lcom/mojang/authlib/GameProfile;Lnet/minecraft/class_8791;)Lnet/minecraft/class_3222;
-		ARG 1 profile
-		ARG 2 syncedOptions
 	METHOD method_14614 isWhitelistEnabled ()Z
 	METHOD method_14617 saveAllPlayerData ()V
 	METHOD method_31441 (Lnet/minecraft/class_1297;)V

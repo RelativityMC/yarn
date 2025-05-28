@@ -64,12 +64,11 @@ CLASS net/minecraft/class_3499 net/minecraft/structure/StructureTemplate
 		ARG 8 x
 		ARG 9 y
 		ARG 10 z
-	METHOD method_15174 saveFromWorld (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2382;ZLnet/minecraft/class_2248;)V
+	METHOD method_15174 saveFromWorld (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2382;ZLjava/util/List;)V
 		ARG 1 world
 		ARG 2 start
 		ARG 3 dimensions
 		ARG 4 includeEntities
-		ARG 5 ignoredBlock
 	METHOD method_15175 writeNbt (Lnet/minecraft/class_2487;)Lnet/minecraft/class_2487;
 		ARG 1 nbt
 	METHOD method_15176 transformAround (Lnet/minecraft/class_243;Lnet/minecraft/class_2415;Lnet/minecraft/class_2470;Lnet/minecraft/class_2338;)Lnet/minecraft/class_243;

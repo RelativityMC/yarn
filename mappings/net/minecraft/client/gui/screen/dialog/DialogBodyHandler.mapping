@@ -1,4 +1,3 @@
 CLASS net/minecraft/class_11482 net/minecraft/client/gui/screen/dialog/DialogBodyHandler
-	METHOD method_71894 createWidget (Lnet/minecraft/class_437;Lnet/minecraft/class_11432;)Lnet/minecraft/class_8021;
-		ARG 1 screen
+	METHOD method_71894 createWidget (Lnet/minecraft/class_11473;Lnet/minecraft/class_11432;)Lnet/minecraft/class_8021;
 		ARG 2 body

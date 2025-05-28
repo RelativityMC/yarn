@@ -19,7 +19,6 @@ CLASS net/minecraft/class_10799 net/minecraft/client/gl/RenderPipelines
 	FIELD field_56829 END_GATEWAY Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56830 FLAT_CLOUDS Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56831 CLOUDS Lcom/mojang/blaze3d/pipeline/RenderPipeline;
-	FIELD field_56832 CLOUDS_DEPTH_ONLY Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56833 LINES Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56834 SECOND_BLOCK_OUTLINE Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56835 LINE_STRIP Lcom/mojang/blaze3d/pipeline/RenderPipeline;

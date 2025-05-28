@@ -50,7 +50,6 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 		FIELD field_29641 index I
 		FIELD field_32832 CHUNK_SIZE I
 		FIELD field_53958 sectionPos J
-		FIELD field_60151 renderIndex I
 		FIELD field_60949 currentRenderData Ljava/util/concurrent/atomic/AtomicReference;
 		METHOD <init> (Lnet/minecraft/class_846;IJ)V
 			ARG 2 index
@@ -88,9 +87,6 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 			ARG 1 data
 			ARG 2 buffer
 			ARG 3 layer
-		METHOD method_71136 setRenderIndex (I)V
-			ARG 1 index
-		METHOD method_71137 getRenderIndex ()I
 		METHOD method_72048 (Lnet/minecraft/class_11516;Lnet/minecraft/class_11515;Lnet/minecraft/class_9801;)V
 			ARG 2 layer
 			ARG 3 buffer

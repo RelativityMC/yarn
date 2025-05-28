@@ -309,8 +309,7 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 		ARG 1 bufWrapper
 	METHOD method_68862 (ILjava/util/function/BiFunction;Lnet/minecraft/class_9139;)Lnet/minecraft/class_9139;
 		ARG 2 codec
-	METHOD method_68863 (Lnet/minecraft/class_9129;Lio/netty/buffer/ByteBuf;)Lnet/minecraft/class_9129;
-		ARG 0 originalBuf
+	METHOD method_68863 (Lio/netty/buffer/ByteBuf;Lio/netty/buffer/ByteBuf;)Lio/netty/buffer/ByteBuf;
 		ARG 1 bufToWrap
 	METHOD method_68864 lengthPrepended (I)Lnet/minecraft/class_9139$class_9140;
 		ARG 0 maxSize
@@ -339,37 +338,29 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 		METHOD method_68116 encode (Lio/netty/buffer/ByteBuf;[J)V
 			ARG 1 buf
 			ARG 2 values
-	CLASS 8
+	CLASS 9
 		METHOD method_71604 (Ljava/lang/Object;Ljava/lang/String;)Lio/netty/handler/codec/EncoderException;
 			ARG 1 error
 		METHOD method_71605 (Ljava/lang/Object;Ljava/lang/String;)Lio/netty/handler/codec/DecoderException;
 			ARG 1 error
-	CLASS 9
+	CLASS 10
 		METHOD method_71606 (Ljava/lang/Object;Ljava/lang/String;)Lio/netty/handler/codec/EncoderException;
 			ARG 1 error
 		METHOD method_71607 (Lnet/minecraft/class_2520;Ljava/lang/String;)Lio/netty/handler/codec/DecoderException;
 			ARG 1 error
-	CLASS 16
 	CLASS 17
-		METHOD method_71579 (Lnet/minecraft/class_9139;Lio/netty/buffer/ByteBuf;Lnet/minecraft/class_9139;Ljava/lang/Object;Ljava/lang/Object;)V
-			ARG 3 k
-			ARG 4 v
 	CLASS 18
+	CLASS 19
 		METHOD method_71582 (Lio/netty/buffer/ByteBuf;Lnet/minecraft/class_9139;Ljava/lang/Object;)V
 			ARG 2 value
 		METHOD method_71583 (Lio/netty/buffer/ByteBuf;Lnet/minecraft/class_9139;Ljava/lang/Object;)V
 			ARG 2 value
-	CLASS 21
+	CLASS 22
 		METHOD method_71590 getRegistryOrThrow (Lnet/minecraft/class_9129;)Lnet/minecraft/class_2359;
 			ARG 1 buf
-	CLASS 22
-		FIELD field_60505 DIRECT_ENTRY_MARKER I
-		METHOD method_71591 getRegistryOrThrow (Lnet/minecraft/class_9129;)Lnet/minecraft/class_2359;
-			ARG 1 buf
 	CLASS 24
-		FIELD field_60507 DIRECT_MARKER I
-		FIELD field_60508 entryPacketCodec Lnet/minecraft/class_9139;
 	CLASS 25
+	CLASS 26
 		FIELD field_60509 NAME_MAX_LENGTH I
 		FIELD field_60510 VALUE_MAX_LENGTH I
 		FIELD field_60511 SIGNATURE_MAX_LENGTH I
@@ -379,5 +370,5 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 			ARG 1 signature
 		METHOD method_71597 (Lio/netty/buffer/ByteBuf;)Ljava/lang/String;
 			ARG 0 bufx
-	CLASS 28
+	CLASS 29
 		FIELD field_60514 GSON Lcom/google/gson/Gson;

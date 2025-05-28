@@ -2344,8 +2344,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 3 shears
 		ARG 4 entity
 	METHOD method_71965 clearQueuedCollisionChecks ()V
-	METHOD method_71966 addQueuedCollisionChecks (Ljava/util/List;)V
-		ARG 1 queuedCollisionChecks
+	METHOD method_71966 addQueuedCollisionChecks (Lnet/minecraft/class_1297$class_10365;)V
 	CLASS class_4738 PositionUpdater
 		METHOD accept (Lnet/minecraft/class_1297;DDD)V
 			ARG 1 entity

@@ -7,7 +7,6 @@ CLASS net/minecraft/class_7940 net/minecraft/client/gui/widget/MultilineTextWidg
 		ARG 1 x
 		ARG 2 y
 		ARG 3 message
-		ARG 4 textRenderer
 	METHOD <init> (Lnet/minecraft/class_2561;Lnet/minecraft/class_327;)V
 		ARG 1 message
 		ARG 2 textRenderer

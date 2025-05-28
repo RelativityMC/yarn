@@ -29,7 +29,7 @@ CLASS net/minecraft/class_10860 net/minecraft/client/gl/GlCommandEncoder
 		ARG 7 instanceCount
 	METHOD method_68354 (Lnet/minecraft/class_10866;Ljava/lang/String;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
 		ARG 1 name
-	METHOD method_68355 drawObjectsWithRenderPass (Lnet/minecraft/class_10866;Ljava/util/Collection;Lcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5595;Ljava/util/Collection;)V
+	METHOD method_68355 drawObjectsWithRenderPass (Lnet/minecraft/class_10866;Ljava/util/Collection;Lcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5595;Ljava/util/Collection;Ljava/lang/Object;)V
 		ARG 1 pass
 		ARG 2 objects
 		ARG 3 indexBuffer

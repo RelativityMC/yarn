@@ -67,6 +67,7 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 		ARG 4 y
 	METHOD method_8441 tick (Ljava/util/function/BooleanSupplier;)V
 		ARG 1 shouldKeepTicking
+	METHOD method_8525 disconnect (Lnet/minecraft/class_2561;)V
 	METHOD method_18110 unloadBlockEntities (Lnet/minecraft/class_2818;)V
 		ARG 1 chunk
 	METHOD method_18112 getEntities ()Ljava/lang/Iterable;

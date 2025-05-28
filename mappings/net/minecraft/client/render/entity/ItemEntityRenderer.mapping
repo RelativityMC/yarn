@@ -14,5 +14,3 @@ CLASS net/minecraft/class_916 net/minecraft/client/render/entity/ItemEntityRende
 		ARG 2 light
 		ARG 3 state
 		ARG 4 random
-	METHOD method_67985 getBoundingBox (Lnet/minecraft/class_10444;)Lnet/minecraft/class_238;
-		ARG 0 state

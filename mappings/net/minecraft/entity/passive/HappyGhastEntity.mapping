@@ -23,7 +23,6 @@ CLASS net/minecraft/class_11187 net/minecraft/entity/passive/HappyGhastEntity
 	METHOD method_70700 (Lnet/minecraft/class_1799;)Z
 		ARG 0 stack
 	METHOD method_70701 createHappyGhastAttributes ()Lnet/minecraft/class_5132$class_5133;
-	METHOD method_70702 shouldStayStill ()Z
 	METHOD method_70703 initAdultHappyGhast ()V
 	METHOD method_71010 hasRopes ()Z
 	METHOD method_71011 setHasRopes (Z)V

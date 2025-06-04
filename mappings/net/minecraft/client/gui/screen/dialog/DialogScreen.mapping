@@ -43,15 +43,9 @@ CLASS net/minecraft/class_11473 net/minecraft/client/gui/screen/dialog/DialogScr
 		ARG 2 afterAction
 	CLASS class_11514 WarningScreen
 		FIELD field_60875 dialogScreen Lorg/apache/commons/lang3/mutable/MutableObject;
-		METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_11513;Lorg/apache/commons/lang3/mutable/MutableObject;)V
+		METHOD <init> (Lnet/minecraft/class_310;Lorg/apache/commons/lang3/mutable/MutableObject;)V
 			ARG 1 client
-			ARG 2 networkAccess
-			ARG 3 dialogScreen
-		METHOD method_72007 create (Lnet/minecraft/class_310;Lnet/minecraft/class_11513;Lnet/minecraft/class_11473;)Lnet/minecraft/class_437;
+		METHOD method_72007 create (Lnet/minecraft/class_310;Lnet/minecraft/class_437;)Lnet/minecraft/class_437;
 			ARG 0 client
-			ARG 1 networkAccess
-			ARG 2 dialogScreen
-		METHOD method_72009 setDialogScreen (Lnet/minecraft/class_11473;)V
-			ARG 1 dialogScreen
-		METHOD method_72010 getDialogScreen ()Lnet/minecraft/class_11473;
-		METHOD method_72011 clearDialogScreen ()V
+		METHOD method_72009 setDialogScreen (Lnet/minecraft/class_437;)V
+		METHOD method_72010 getDialogScreen ()Lnet/minecraft/class_437;

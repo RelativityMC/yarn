@@ -15,7 +15,7 @@ CLASS net/minecraft/class_1144 net/minecraft/client/sound/SoundManager
 		ARG 1 gameOptions
 		ARG 2 musicTracker
 	METHOD method_4864 getKeys ()Ljava/util/Collection;
-	METHOD method_4865 updateSoundVolume (Lnet/minecraft/class_3419;)V
+	METHOD method_4865 updateSoundVolume (Lnet/minecraft/class_3419;F)V
 	METHOD method_4866 unregisterListener (Lnet/minecraft/class_1145;)V
 		ARG 1 listener
 	METHOD method_4868 isSoundResourcePresent (Lnet/minecraft/class_1111;Lnet/minecraft/class_2960;Lnet/minecraft/class_5912;)Z

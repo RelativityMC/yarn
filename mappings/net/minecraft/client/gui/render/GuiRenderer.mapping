@@ -59,7 +59,7 @@ CLASS net/minecraft/class_11228 net/minecraft/client/gui/render/GuiRenderer
 	METHOD method_70888 prepareSpecialElement (Lnet/minecraft/class_11256;I)V
 		ARG 1 elementState
 		ARG 2 windowScaleFactor
-	METHOD method_70889 prepareItemInitially (Lnet/minecraft/class_10444;Lnet/minecraft/class_4587;III)V
+	METHOD method_70889 prepareItemInitially (Lnet/minecraft/class_11540;Lnet/minecraft/class_4587;III)V
 		ARG 2 matrices
 		ARG 3 x
 		ARG 4 y

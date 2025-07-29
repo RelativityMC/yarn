@@ -62,7 +62,6 @@ CLASS net/minecraft/class_466 net/minecraft/client/gui/screen/ingame/BeaconScree
 		METHOD <init> (IILnet/minecraft/class_2960;Lnet/minecraft/class_2561;)V
 			ARG 1 x
 			ARG 2 y
-			ARG 3 texture
 			ARG 4 message
 	CLASS class_6392 BeaconButtonWidget
 		METHOD method_37080 tick (I)V

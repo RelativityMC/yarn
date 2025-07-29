@@ -5,17 +5,12 @@ CLASS net/minecraft/class_327 net/minecraft/client/font/TextRenderer
 	COMMENT {@code MinecraftClient.getInstance().textRenderer}.
 	COMMENT
 	COMMENT @see net.minecraft.client.MinecraftClient#textRenderer
-	FIELD field_1997 fontStorageAccessor Ljava/util/function/Function;
 	FIELD field_2000 fontHeight I
 		COMMENT The font height of the text that is rendered by the text renderer.
 	FIELD field_2001 random Lnet/minecraft/class_5819;
 	FIELD field_24237 FORWARD_SHIFT F
 	FIELD field_24238 handler Lnet/minecraft/class_5225;
 	FIELD field_32166 Z_INDEX F
-	FIELD field_39925 validateAdvance Z
-	METHOD <init> (Ljava/util/function/Function;Z)V
-		ARG 1 fontStorageAccessor
-		ARG 2 validateAdvance
 	METHOD method_1713 getWrappedLinesHeight (Ljava/lang/String;I)I
 		COMMENT Gets the height of the text when it has been wrapped.
 		COMMENT
@@ -101,8 +96,6 @@ CLASS net/minecraft/class_327 net/minecraft/client/font/TextRenderer
 		COMMENT Gets the width of some text when rendered.
 		ARG 1 text
 			COMMENT the text
-	METHOD method_27526 getFontStorage (Lnet/minecraft/class_2960;)Lnet/minecraft/class_377;
-		ARG 1 id
 	METHOD method_27527 getTextHandler ()Lnet/minecraft/class_5225;
 	METHOD method_30880 getWidth (Lnet/minecraft/class_5481;)I
 		COMMENT Gets the width of some text when rendered.

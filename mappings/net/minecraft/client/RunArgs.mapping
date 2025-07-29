@@ -29,7 +29,7 @@ CLASS net/minecraft/class_542 net/minecraft/client/RunArgs
 		FIELD field_25062 onlineChatDisabled Z
 		FIELD field_54272 tracyEnabled Z
 		FIELD field_57923 renderDebugLabels Z
-		METHOD <init> (ZLjava/lang/String;Ljava/lang/String;ZZZZ)V
+		METHOD <init> (ZLjava/lang/String;Ljava/lang/String;ZZZZZ)V
 			ARG 1 demo
 			ARG 2 version
 			ARG 3 versionType

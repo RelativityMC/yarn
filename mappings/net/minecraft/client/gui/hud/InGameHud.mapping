@@ -247,16 +247,13 @@ CLASS net/minecraft/class_329 net/minecraft/client/gui/hud/InGameHud
 		ARG 0 air
 		ARG 1 maxAir
 		ARG 2 delay
-	METHOD method_70834 shouldRenderCrosshair ()Z
 	METHOD method_70837 renderBossBarHud (Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V
 		ARG 1 context
 		ARG 2 tickCounter
-	METHOD method_70838 renderDebugHud (Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V
+	METHOD method_70838 renderDebugHud (Lnet/minecraft/class_332;)V
 		ARG 1 context
-		ARG 2 tickCounter
-	METHOD method_70839 renderSubtitlesHud (Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V
+	METHOD method_70839 renderSubtitlesHud (Lnet/minecraft/class_332;Z)V
 		ARG 1 context
-		ARG 2 tickCounter
 	METHOD method_70840 shouldShowExperienceBar ()Z
 	METHOD method_70841 shouldShowJumpBar ()Z
 	METHOD method_70842 getCurrentBarType ()Lnet/minecraft/class_329$class_11220;

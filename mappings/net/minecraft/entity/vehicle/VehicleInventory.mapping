@@ -1,8 +1,8 @@
 CLASS net/minecraft/class_7265 net/minecraft/entity/vehicle/VehicleInventory
+	METHOD comp_4424 getPos ()Lnet/minecraft/class_243;
+	METHOD comp_4426 getWorld ()Lnet/minecraft/class_1937;
 	METHOD method_5829 getBoundingBox ()Lnet/minecraft/class_238;
-	METHOD method_19538 getPos ()Lnet/minecraft/class_243;
 	METHOD method_31481 isRemoved ()Z
-	METHOD method_37908 getWorld ()Lnet/minecraft/class_1937;
 	METHOD method_42273 resetInventory ()V
 	METHOD method_42274 setLootTableSeed (J)V
 		ARG 1 lootTableSeed

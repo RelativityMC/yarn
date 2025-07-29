@@ -7,9 +7,8 @@ CLASS net/minecraft/class_2281 net/minecraft/block/ChestBlock
 	FIELD field_46311 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_55747 SINGLE_SHAPE Lnet/minecraft/class_265;
 	FIELD field_55748 DOUBLE_SHAPES_BY_DIRECTION Ljava/util/Map;
-	METHOD <init> (Ljava/util/function/Supplier;Lnet/minecraft/class_4970$class_2251;)V
+	METHOD <init> (Ljava/util/function/Supplier;Lnet/minecraft/class_3414;Lnet/minecraft/class_3414;Lnet/minecraft/class_4970$class_2251;)V
 		ARG 1 blockEntityTypeSupplier
-		ARG 2 settings
 	METHOD method_9753 getNeighborChestDirection (Lnet/minecraft/class_1750;Lnet/minecraft/class_2350;)Lnet/minecraft/class_2350;
 		ARG 1 ctx
 		ARG 2 dir
@@ -39,8 +38,6 @@ CLASS net/minecraft/class_2281 net/minecraft/block/ChestBlock
 	METHOD method_24169 getDoubleBlockType (Lnet/minecraft/class_2680;)Lnet/minecraft/class_4732$class_4733;
 		ARG 0 state
 	METHOD method_31641 getExpectedEntityType ()Lnet/minecraft/class_2591;
-	METHOD method_53992 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2281;
-		ARG 0 settings
 	CLASS 3
 		METHOD method_23900 (Lnet/minecraft/class_2595;Lnet/minecraft/class_2595;F)F
 			ARG 2 tickProgress

@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_11561
+	METHOD method_14508 add (Lnet/minecraft/class_11560;)V
+	METHOD method_14512 getByUuid (Ljava/util/UUID;)Ljava/util/Optional;
+	METHOD method_14515 findByName (Ljava/lang/String;)Ljava/util/Optional;
+	METHOD method_14518 save ()V
+	METHOD method_37156 findByNameAsync (Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture;

@@ -148,8 +148,6 @@ CLASS net/minecraft/class_4527 net/minecraft/server/command/TestCommand
 		ARG 0 context
 	METHOD method_67307 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 maxSize
-	METHOD method_68079 (Lnet/minecraft/class_3218;Lnet/minecraft/class_3341;)V
-		ARG 1 box
 	METHOD method_71944 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_71945 (Lcom/mojang/brigadier/context/CommandContext;)I

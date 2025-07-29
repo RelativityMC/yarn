@@ -45,7 +45,7 @@ CLASS net/minecraft/class_10592 net/minecraft/server/world/ChunkTicketManager
 		ARG 1 forSimulation
 	METHOD method_66363 getAllChunksMatching (Ljava/util/function/Predicate;)Lit/unimi/dsi/fastutil/longs/LongSet;
 		ARG 1 predicate
-	METHOD method_66364 removeTicketsIf (Ljava/util/function/BiPredicate;Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;)V
+	METHOD method_66364 removeTicketsIf (Lnet/minecraft/class_10592$class_11581;Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;)V
 		ARG 2 transferTo
 	METHOD method_66367 promoteToRealTickets ()V
 	METHOD method_66368 getTicketsMutable (J)Ljava/util/List;

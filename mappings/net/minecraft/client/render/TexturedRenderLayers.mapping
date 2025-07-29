@@ -53,7 +53,6 @@ CLASS net/minecraft/class_4722 net/minecraft/client/render/TexturedRenderLayers
 	METHOD method_24059 getBannerPatterns ()Lnet/minecraft/class_1921;
 	METHOD method_24062 getChestTextureId (Lnet/minecraft/class_2586;Lnet/minecraft/class_2745;Z)Lnet/minecraft/class_4730;
 		ARG 0 blockEntity
-		ARG 1 type
 		ARG 2 christmas
 	METHOD method_24063 getChestTextureId (Lnet/minecraft/class_2745;Lnet/minecraft/class_4730;Lnet/minecraft/class_4730;Lnet/minecraft/class_4730;)Lnet/minecraft/class_4730;
 		ARG 0 type

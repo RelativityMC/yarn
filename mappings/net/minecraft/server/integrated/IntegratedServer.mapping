@@ -7,7 +7,7 @@ CLASS net/minecraft/class_1132 net/minecraft/server/integrated/IntegratedServer
 	FIELD field_5524 paused Z
 	FIELD field_28075 forcedGameMode Lnet/minecraft/class_1934;
 	FIELD field_34965 simulationDistance I
-	METHOD <init> (Ljava/lang/Thread;Lnet/minecraft/class_310;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_3283;Lnet/minecraft/class_6904;Lnet/minecraft/class_7497;Lnet/minecraft/class_3950;)V
+	METHOD <init> (Ljava/lang/Thread;Lnet/minecraft/class_310;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_3283;Lnet/minecraft/class_6904;Lnet/minecraft/class_7497;Lnet/minecraft/class_11545;)V
 		ARG 1 serverThread
 		ARG 2 client
 		ARG 3 session

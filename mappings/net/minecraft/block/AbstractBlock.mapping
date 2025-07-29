@@ -567,7 +567,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 	METHOD method_9571 getCullingShape (Lnet/minecraft/class_2680;)Lnet/minecraft/class_265;
 		COMMENT @see AbstractBlockState#getCullingShape
 		ARG 1 state
-	METHOD method_9572 getComparatorOutput (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)I
+	METHOD method_9572 getComparatorOutput (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;)I
 		COMMENT {@return the comparator output of the block, from {@code 0} to {@code 15}}
 		COMMENT
 		COMMENT <p>When overriding this, {@link #hasComparatorOutput} must also be overridden.
@@ -1097,7 +1097,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 			ARG 2 state
 			ARG 3 hit
 			ARG 4 projectile
-		METHOD method_26176 getComparatorOutput (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)I
+		METHOD method_26176 getComparatorOutput (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;)I
 			ARG 1 world
 			ARG 2 pos
 		METHOD method_26177 onSyncedBlockEvent (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;II)Z

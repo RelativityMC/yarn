@@ -413,7 +413,7 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 1 textures
 	METHOD method_34650 (Lnet/minecraft/class_2960;Lnet/minecraft/class_4944;)V
 		ARG 1 textureMap
-	METHOD method_34852 registerLightningRod ()V
+	METHOD method_34852 registerLightningRod (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
 	METHOD method_36440 registerInfestedDeepslate ()V
 	METHOD method_37317 registerPottedAzaleaBush (Lnet/minecraft/class_2248;)V
 		ARG 1 block

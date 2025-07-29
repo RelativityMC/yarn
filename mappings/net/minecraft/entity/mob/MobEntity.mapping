@@ -166,6 +166,7 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 		ARG 2 hand
 	METHOD method_5993 getJumpControl ()Lnet/minecraft/class_1334;
 	METHOD method_5994 getAmbientSound ()Lnet/minecraft/class_3414;
+	METHOD method_6475 eat (Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;Lnet/minecraft/class_1799;)V
 	METHOD method_6510 isAttacking ()Z
 	METHOD method_7217 setBaby (Z)V
 		ARG 1 baby
@@ -201,7 +202,6 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 	METHOD method_20820 canGather (Lnet/minecraft/class_3218;Lnet/minecraft/class_1799;)Z
 		ARG 1 world
 		ARG 2 stack
-	METHOD method_23734 isDisallowedInPeaceful ()Z
 	METHOD method_24522 (Lnet/minecraft/class_1657;Lnet/minecraft/class_1308;)V
 		ARG 2 entity
 	METHOD method_24523 tryEquip (Lnet/minecraft/class_3218;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1799;

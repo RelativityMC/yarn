@@ -121,8 +121,6 @@ CLASS net/minecraft/class_3222 net/minecraft/server/network/ServerPlayerEntity
 	METHOD method_14239 isDisconnected ()Z
 	METHOD method_14240 onTeleportationDone ()V
 	METHOD method_14242 getCameraEntity ()Lnet/minecraft/class_1297;
-	METHOD method_14244 calculateSpawnOffsetMultiplier (I)I
-		ARG 1 horizontalSpawnArea
 	METHOD method_14248 getStatHandler ()Lnet/minecraft/class_3442;
 	METHOD method_14250 (ILnet/minecraft/class_9014;)V
 		ARG 1 innerScore
@@ -172,8 +170,6 @@ CLASS net/minecraft/class_3222 net/minecraft/server/network/ServerPlayerEntity
 		COMMENT
 		COMMENT @see MinecraftServer#getForcedGameMode
 		ARG 1 backupGameMode
-	METHOD method_32748 readGameModeData (Lnet/minecraft/class_11368;)V
-		ARG 1 view
 	METHOD method_32749 writeGameModeData (Lnet/minecraft/class_11372;)V
 		ARG 1 view
 	METHOD method_33795 shouldFilterMessagesSentTo (Lnet/minecraft/class_3222;)Z
@@ -259,9 +255,6 @@ CLASS net/minecraft/class_3222 net/minecraft/server/network/ServerPlayerEntity
 		ARG 1 respawnPos
 	METHOD method_60594 detachForDimensionChange ()V
 	METHOD method_61272 getPlayerListOrder ()I
-	METHOD method_61274 canSpawnIn (Lnet/minecraft/class_3218;Lnet/minecraft/class_238;)Z
-		ARG 1 world
-		ARG 2 box
 	METHOD method_63561 setPlayerInput (Lnet/minecraft/class_10185;)V
 		ARG 1 playerInput
 	METHOD method_63562 getPlayerInput ()Lnet/minecraft/class_10185;

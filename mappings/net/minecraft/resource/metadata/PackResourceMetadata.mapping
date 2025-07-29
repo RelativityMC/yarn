@@ -1,8 +1,4 @@
 CLASS net/minecraft/class_3272 net/minecraft/resource/metadata/PackResourceMetadata
-	FIELD field_14202 SERIALIZER Lnet/minecraft/class_7677;
 	FIELD field_45051 CODEC Lcom/mojang/serialization/Codec;
-	METHOD <init> (Lnet/minecraft/class_2561;ILjava/util/Optional;)V
+	METHOD <init> (Lnet/minecraft/class_2561;Lnet/minecraft/class_6497;)V
 		ARG 1 description
-		ARG 2 format
-	METHOD method_52434 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance

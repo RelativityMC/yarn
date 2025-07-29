@@ -202,10 +202,13 @@ CLASS net/minecraft/class_437 net/minecraft/client/gui/screen/Screen
 		ARG 1 client
 		ARG 2 screenAfterRun
 	CLASS class_6390 SelectedElementNarrationData
-		FIELD field_33825 selectable Lnet/minecraft/class_6379;
-		FIELD field_33826 index I
-		FIELD field_33827 selectType Lnet/minecraft/class_6379$class_6380;
+		FIELD comp_4463 selectable Lnet/minecraft/class_6379;
+		FIELD comp_4464 index I
+		FIELD comp_4465 selectType Lnet/minecraft/class_6379$class_6380;
 		METHOD <init> (Lnet/minecraft/class_6379;ILnet/minecraft/class_6379$class_6380;)V
 			ARG 1 selectable
 			ARG 2 index
 			ARG 3 selectType
+		METHOD comp_4463 selectable ()Lnet/minecraft/class_6379;
+		METHOD comp_4464 index ()I
+		METHOD comp_4465 selectType ()Lnet/minecraft/class_6379$class_6380;

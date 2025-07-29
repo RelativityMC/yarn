@@ -236,6 +236,16 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD <init> (Lnet/minecraft/class_1299;Lnet/minecraft/class_1937;)V
 		ARG 1 type
 		ARG 2 world
+	METHOD comp_4424 ()Lnet/minecraft/class_243;
+		COMMENT {@return the exact position of the entity}
+		COMMENT
+		COMMENT @see #getSyncedPos
+		COMMENT @see #getBlockPos
+		COMMENT @see #getChunkPos
+	METHOD comp_4425 ()F
+		COMMENT {@return the body yaw of the entity}
+		COMMENT
+		COMMENT @see #setBodyYaw
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
 	METHOD method_5622 onBlockCollision (Lnet/minecraft/class_2680;)V
@@ -1289,17 +1299,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_5867 calculateNextStepSoundDistance ()F
 	METHOD method_5869 isSubmergedInWater ()Z
 		COMMENT {@return whether this entity's hitbox is fully submerged in water}
-	METHOD method_5870 dropItem (Lnet/minecraft/class_3218;Lnet/minecraft/class_1935;I)Lnet/minecraft/class_1542;
-		COMMENT Drops one {@code item} at the entity's position with the given Y offset.
-		COMMENT
-		COMMENT @return the spawned item entity, or {@code null} if called on the client
-		COMMENT
-		COMMENT @see #dropItem(ServerWorld, ItemConvertible)
-		COMMENT @see #dropStack(ServerWorld, ItemStack)
-		COMMENT @see #dropStack(ServerWorld, ItemStack, float)
-		ARG 1 world
-		ARG 2 item
-		ARG 3 offsetY
 	METHOD method_5871 getTargetingMargin ()F
 		COMMENT {@return the margin around the entity's bounding box where the entity
 		COMMENT targeting is still successful}
@@ -1310,7 +1309,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_5872 changeLookDirection (DD)V
 		ARG 1 cursorDeltaX
 		ARG 3 cursorDeltaY
-	METHOD method_5873 startRiding (Lnet/minecraft/class_1297;Z)Z
+	METHOD method_5873 startRiding (Lnet/minecraft/class_1297;ZZ)Z
 		COMMENT Starts riding {@code entity}.
 		COMMENT
 		COMMENT <p>For example, {@code player.startRiding(horse)} causes the player to ride a
@@ -1332,7 +1331,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 1 entity
 		ARG 2 force
 			COMMENT whether to bypass the entity's rideability check
-	METHOD method_5874 onKilledOther (Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;)Z
+	METHOD method_5874 onKilledOther (Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;Lnet/minecraft/class_1282;)Z
 		COMMENT Called when this entity kills {@code other}.
 		COMMENT
 		COMMENT @apiNote {@link net.minecraft.entity.mob.ZombieEntity} overrides this to convert the
@@ -1446,12 +1445,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 2 yaw
 	METHOD method_18864 getOppositeRotationVector (F)Lnet/minecraft/class_243;
 		ARG 1 tickProgress
-	METHOD method_19538 getPos ()Lnet/minecraft/class_243;
-		COMMENT {@return the exact position of the entity}
-		COMMENT
-		COMMENT @see #getSyncedPos
-		COMMENT @see #getBlockPos
-		COMMENT @see #getChunkPos
 	METHOD method_20232 isInSwimmingPose ()Z
 		COMMENT {@return whether the entity is in swimming pose}
 		COMMENT
@@ -1904,7 +1897,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 0 player
 	METHOD method_37217 (Lnet/minecraft/class_1297;)Z
 		ARG 0 passenger
-	METHOD method_37908 getWorld ()Lnet/minecraft/class_1937;
 	METHOD method_38785 onLanding ()V
 		COMMENT Called when the entity lands on a block.
 	METHOD method_39759 hasCollidedSoftly (Lnet/minecraft/class_243;)Z
@@ -1948,10 +1940,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		COMMENT @see #getFirstPassenger
 	METHOD method_43077 playSoundIfNotSilent (Lnet/minecraft/class_3414;)V
 		ARG 1 event
-	METHOD method_43078 getBodyYaw ()F
-		COMMENT {@return the body yaw of the entity}
-		COMMENT
-		COMMENT @see #setBodyYaw
 	METHOD method_43258 getPosWithYOffset (F)Lnet/minecraft/class_2338;
 		ARG 1 offset
 	METHOD method_43259 isInRange (Lnet/minecraft/class_1297;DD)Z

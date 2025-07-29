@@ -24,8 +24,6 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	FIELD field_45614 chunkBuilder Lnet/minecraft/class_846;
 	FIELD field_45615 chunkRenderingDataPreparer Lnet/minecraft/class_8679;
 	FIELD field_45616 builtChunks Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
-	FIELD field_53072 renderedEntities Ljava/util/List;
-	FIELD field_53073 renderedEntitiesCount I
 	FIELD field_53075 skyRendering Lnet/minecraft/class_9975;
 	FIELD field_53076 cloudRenderer Lnet/minecraft/class_9955;
 	FIELD field_53077 worldBorderRendering Lnet/minecraft/class_9978;
@@ -38,16 +36,10 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	FIELD field_54161 chunkIndex I
 	FIELD field_54164 nearbyChunks Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
 	FIELD field_61060 ENTITY_COMPARATOR Ljava/util/Comparator;
-	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_898;Lnet/minecraft/class_824;Lnet/minecraft/class_4599;)V
-		ARG 1 client
-		ARG 2 entityRenderDispatcher
-		ARG 3 blockEntityRenderDispatcher
-		ARG 4 bufferBuilders
 	METHOD method_3242 onResized (II)V
 		ARG 1 width
 		ARG 2 height
 	METHOD method_3244 setWorld (Lnet/minecraft/class_638;)V
-		ARG 1 world
 	METHOD method_3246 getCompletedChunkCount ()I
 	METHOD method_3252 tick ()V
 	METHOD method_3254 drawEntityOutlinesFramebuffer ()V
@@ -170,14 +162,6 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 10 pos
 		ARG 11 state
 		ARG 12 color
-	METHOD method_22977 renderEntity (Lnet/minecraft/class_1297;DDDFLnet/minecraft/class_4587;Lnet/minecraft/class_4597;)V
-		ARG 1 entity
-		ARG 2 cameraX
-		ARG 4 cameraY
-		ARG 6 cameraZ
-		ARG 8 tickProgress
-		ARG 9 matrices
-		ARG 10 vertexConsumers
 	METHOD method_22979 checkEmpty (Lnet/minecraft/class_4587;)V
 		ARG 1 matrices
 	METHOD method_22987 removeBlockBreakingInfo (Lnet/minecraft/class_3191;)V
@@ -234,14 +218,13 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 2 camera
 		ARG 3 tickProgress
 		ARG 4 fog
-	METHOD method_62202 renderMain (Lnet/minecraft/class_9909;Lnet/minecraft/class_4604;Lnet/minecraft/class_4184;Lorg/joml/Matrix4f;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;ZZLnet/minecraft/class_9779;Lnet/minecraft/class_3695;)V
+	METHOD method_62202 renderMain (Lnet/minecraft/class_9909;Lnet/minecraft/class_4604;Lnet/minecraft/class_4184;Lorg/joml/Matrix4f;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;ZLnet/minecraft/class_11658;Lnet/minecraft/class_9779;Lnet/minecraft/class_3695;)V
 		ARG 1 frameGraphBuilder
 		ARG 2 frustum
 		ARG 3 camera
 		ARG 4 positionMatrix
 		ARG 5 fog
 		ARG 6 renderBlockOutline
-		ARG 7 renderEntityOutline
 		ARG 8 tickCounter
 		ARG 9 profiler
 	METHOD method_62203 renderWeather (Lnet/minecraft/class_9909;Lnet/minecraft/class_243;FLcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
@@ -260,12 +243,6 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 1 matrices
 		ARG 2 camera
 		ARG 3 vertexConsumers
-	METHOD method_62207 renderEntities (Lnet/minecraft/class_4587;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_4184;Lnet/minecraft/class_9779;Ljava/util/List;)V
-		ARG 1 matrices
-		ARG 2 vertexConsumers
-		ARG 3 camera
-		ARG 4 tickCounter
-		ARG 5 entities
 	METHOD method_62208 renderBlockEntities (Lnet/minecraft/class_4587;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_4184;F)V
 		ARG 1 matrices
 		ARG 2 entityVertexConsumers
@@ -279,10 +256,6 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 2 vertexConsumers
 		ARG 3 matrices
 		ARG 4 translucent
-	METHOD method_62211 getEntitiesToRender (Lnet/minecraft/class_4184;Lnet/minecraft/class_4604;Ljava/util/List;)Z
-		ARG 1 camera
-		ARG 2 frustum
-		ARG 3 output
 	METHOD method_62217 (Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_4588;Lnet/minecraft/class_1921;)Lnet/minecraft/class_4588;
 		ARG 2 renderLayer
 	METHOD method_62219 scheduleChunkRenders (IIIIII)V

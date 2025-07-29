@@ -18,7 +18,7 @@ CLASS net/minecraft/class_1299 net/minecraft/entity/EntityType
 	FIELD field_50125 spawnBoxScale F
 	FIELD field_55544 POTENTIALLY_EXECUTES_COMMANDS Ljava/util/Set;
 	FIELD field_57582 CODEC Lcom/mojang/serialization/Codec;
-	METHOD <init> (Lnet/minecraft/class_1299$class_4049;Lnet/minecraft/class_1311;ZZZZLcom/google/common/collect/ImmutableSet;Lnet/minecraft/class_4048;FIILjava/lang/String;Ljava/util/Optional;Lnet/minecraft/class_7699;)V
+	METHOD <init> (Lnet/minecraft/class_1299$class_4049;Lnet/minecraft/class_1311;ZZZZLcom/google/common/collect/ImmutableSet;Lnet/minecraft/class_4048;FIILjava/lang/String;Ljava/util/Optional;Lnet/minecraft/class_7699;Z)V
 		ARG 1 factory
 		ARG 2 spawnGroup
 		ARG 3 saveable
@@ -33,11 +33,10 @@ CLASS net/minecraft/class_1299 net/minecraft/entity/EntityType
 		ARG 12 translationKey
 		ARG 13 lootTable
 		ARG 14 requiredFeatures
-	METHOD method_5881 loadFromEntityNbt (Lnet/minecraft/class_1937;Lnet/minecraft/class_1309;Lnet/minecraft/class_1297;Lnet/minecraft/class_9279;)V
+	METHOD method_5881 loadFromEntityNbt (Lnet/minecraft/class_1937;Lnet/minecraft/class_1309;Lnet/minecraft/class_1297;Lnet/minecraft/class_11580;)V
 		ARG 0 world
 		ARG 1 spawner
 		ARG 2 entity
-		ARG 3 nbt
 	METHOD method_5882 getTranslationKey ()Ljava/lang/String;
 	METHOD method_5883 create (Lnet/minecraft/class_1937;Lnet/minecraft/class_3730;)Lnet/minecraft/class_1297;
 		ARG 1 world
@@ -135,7 +134,7 @@ CLASS net/minecraft/class_1299 net/minecraft/entity/EntityType
 		ARG 3 reason
 	METHOD method_47823 (Lnet/minecraft/class_1297;)V
 		ARG 0 entity
-	METHOD method_48008 (Lnet/minecraft/class_1937;Lnet/minecraft/class_1309;Lnet/minecraft/class_9279;Lnet/minecraft/class_1297;)V
+	METHOD method_48008 (Lnet/minecraft/class_1937;Lnet/minecraft/class_1309;Lnet/minecraft/class_11580;Lnet/minecraft/class_1297;)V
 		ARG 3 entity
 	METHOD method_48009 copier (Lnet/minecraft/class_1937;Lnet/minecraft/class_1799;Lnet/minecraft/class_1309;)Ljava/util/function/Consumer;
 		ARG 0 world
@@ -217,7 +216,6 @@ CLASS net/minecraft/class_1299 net/minecraft/entity/EntityType
 		FIELD field_53972 lootTable Lnet/minecraft/class_10162;
 		FIELD field_53973 translationKey Lnet/minecraft/class_10162;
 		METHOD <init> (Lnet/minecraft/class_1299$class_4049;Lnet/minecraft/class_1311;)V
-			ARG 1 factory
 			ARG 2 spawnGroup
 		METHOD method_5900 (Lnet/minecraft/class_1299;Lnet/minecraft/class_1937;)Lnet/minecraft/class_1297;
 			ARG 0 type

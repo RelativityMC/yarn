@@ -37,8 +37,6 @@ CLASS net/minecraft/class_1792 net/minecraft/item/Item
 	FIELD field_54952 ENTRY_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_55708 ENTRY_PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_56296 DEFAULT_BLOCKS_ATTACKS_MAX_USE_TIME I
-	METHOD <init> (Lnet/minecraft/class_1792$class_1793;)V
-		ARG 1 settings
 	METHOD method_7836 use (Lnet/minecraft/class_1937;Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;)Lnet/minecraft/class_1269;
 		COMMENT Called when the player uses (or starts using) the item.
 		COMMENT The use action, by default, is bound to the right mouse button.

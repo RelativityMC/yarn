@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_11618
+	CLASS class_7412 AllocationRateCalculator
+		FIELD field_38986 INTERVAL I
+		FIELD field_38987 GARBAGE_COLLECTORS Ljava/util/List;
+		FIELD field_38988 lastCalculated J
+		FIELD field_38989 allocatedBytes J
+		FIELD field_38990 collectionCount J
+		FIELD field_38991 allocationRate J
+		METHOD method_43447 getCollectionCount ()J
+		METHOD method_43448 get (J)J
+			ARG 1 allocatedBytes

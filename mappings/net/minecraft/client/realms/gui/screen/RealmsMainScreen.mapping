@@ -19,7 +19,6 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 	FIELD field_26460 OPEN_TEXT Lnet/minecraft/class_2561;
 	FIELD field_26461 CLOSED_TEXT Lnet/minecraft/class_2561;
 	FIELD field_33776 UNINITIALIZED_BUTTON_NARRATION Lnet/minecraft/class_2561;
-	FIELD field_37267 lastPlayButtonClickTime J
 	FIELD field_39681 serverFilterer Lnet/minecraft/class_7580;
 	FIELD field_42859 PLAY_TEXT Lnet/minecraft/class_2561;
 	FIELD field_42860 LEAVE_TEXT Lnet/minecraft/class_2561;

@@ -14,4 +14,3 @@ CLASS net/minecraft/class_11515 net/minecraft/client/render/BlockRenderLayer
 	METHOD method_72022 getName ()Ljava/lang/String;
 	METHOD method_72023 isTranslucent ()Z
 	METHOD method_72024 getTextureView ()Lcom/mojang/blaze3d/textures/GpuTextureView;
-	METHOD method_72025 getFramebuffer ()Lnet/minecraft/class_276;

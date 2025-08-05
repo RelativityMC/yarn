@@ -68,9 +68,8 @@ CLASS com/mojang/blaze3d/systems/CommandEncoder
 	METHOD writeToBuffer (Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Ljava/nio/ByteBuffer;)V
 		ARG 1 slice
 		ARG 2 source
-	METHOD writeToTexture (Lcom/mojang/blaze3d/textures/GpuTexture;Ljava/nio/IntBuffer;Lnet/minecraft/class_1011$class_1012;IIIIII)V
+	METHOD writeToTexture (Lcom/mojang/blaze3d/textures/GpuTexture;Ljava/nio/ByteBuffer;Lnet/minecraft/class_1011$class_1012;IIIIII)V
 		ARG 1 target
-		ARG 2 source
 		ARG 3 format
 		ARG 4 mipLevel
 		ARG 5 depth

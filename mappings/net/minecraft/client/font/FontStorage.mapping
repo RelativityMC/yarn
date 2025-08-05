@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_377 net/minecraft/client/font/FontStorage
-	FIELD field_2246 id Lnet/minecraft/class_2960;
 	FIELD field_2249 charactersByWidth Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
 	FIELD field_2256 blankBakedGlyph Lnet/minecraft/class_377$class_11639;
 	FIELD field_20910 whiteRectangleBakedGlyph Lnet/minecraft/class_377$class_11639;
@@ -12,9 +11,8 @@ CLASS net/minecraft/class_377 net/minecraft/client/font/FontStorage
 	FIELD field_61613 blankBakedGlyphPair Lnet/minecraft/class_377$class_11640;
 	FIELD field_61614 anyGlyphs Lnet/minecraft/class_11603;
 	FIELD field_61615 advanceValidatingGlyphs Lnet/minecraft/class_11603;
-	METHOD <init> (Lnet/minecraft/class_11642;Lnet/minecraft/class_2960;)V
+	METHOD <init> (Lnet/minecraft/class_11642;)V
 		ARG 1 baker
-		ARG 2 id
 	METHOD method_2004 setFonts (Ljava/util/List;Ljava/util/Set;)V
 		ARG 1 allFonts
 		ARG 2 activeFilters
@@ -33,7 +31,6 @@ CLASS net/minecraft/class_377 net/minecraft/client/font/FontStorage
 		ARG 0 glyph
 	METHOD method_51638 (I)[[Lnet/minecraft/class_377$class_11640;
 		ARG 0 rowCount
-	METHOD method_57034 getId ()Lnet/minecraft/class_2960;
 	METHOD method_57035 (Ljava/util/List;Ljava/util/Set;I)V
 		ARG 3 codePoint
 	METHOD method_57036 setActiveFilters (Ljava/util/Set;)V
@@ -45,10 +42,8 @@ CLASS net/minecraft/class_377 net/minecraft/client/font/FontStorage
 	METHOD method_72788 getGlyphs (Z)Lnet/minecraft/class_11603;
 		ARG 1 advanceValidating
 	CLASS class_11639 CachedGlyph
-		FIELD field_61617 glyph Lnet/minecraft/class_379;
+		FIELD field_61617 glyph Lnet/minecraft/class_379$class_11713;
 		FIELD field_61618 bakedGlyph Lnet/minecraft/class_382;
-		METHOD <init> (Lnet/minecraft/class_377;Lnet/minecraft/class_379;)V
-			ARG 2 glyph
 		METHOD method_72792 rebake ()V
 		METHOD method_72793 bake ()Lnet/minecraft/class_382;
 	CLASS class_11640 GlyphPair

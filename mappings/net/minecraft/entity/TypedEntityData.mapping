@@ -13,8 +13,6 @@ CLASS net/minecraft/class_11580 net/minecraft/entity/TypedEntityData
 		ARG 1 entity
 	METHOD method_72532 createCodec (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
 		ARG 0 typeCodec
-	METHOD method_72533 (Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 1 instance
 	METHOD method_72534 applyToBlockEntity (Lnet/minecraft/class_2586;Lnet/minecraft/class_7225$class_7874;)Z
 		ARG 1 blockEntity
 		ARG 2 registryLookup

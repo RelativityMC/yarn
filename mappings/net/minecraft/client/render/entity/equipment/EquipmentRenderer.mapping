@@ -12,7 +12,7 @@ CLASS net/minecraft/class_10197 net/minecraft/client/render/entity/equipment/Equ
 		ARG 1 layerType
 		ARG 2 assetKey
 		ARG 3 model
-	METHOD method_64078 render (Lnet/minecraft/class_10186$class_10190;Lnet/minecraft/class_5321;Lnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_1799;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;ILnet/minecraft/class_2960;I)V
+	METHOD method_64078 render (Lnet/minecraft/class_10186$class_10190;Lnet/minecraft/class_5321;Lnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_1799;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;ILnet/minecraft/class_2960;II)V
 		ARG 1 layerType
 		ARG 2 assetKey
 	METHOD method_64079 (Lnet/minecraft/class_10197$class_10198;)Lnet/minecraft/class_2960;

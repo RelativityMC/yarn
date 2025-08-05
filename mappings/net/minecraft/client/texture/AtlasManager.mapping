@@ -1,7 +1,6 @@
 CLASS net/minecraft/class_11697 net/minecraft/client/texture/AtlasManager
 	FIELD field_61861 stitchKey Lnet/minecraft/class_3302$class_11559;
 	FIELD field_61862 ATLAS_METADATA Ljava/util/List;
-	FIELD field_61863 entries Ljava/util/Map;
 	FIELD field_61864 sprites Ljava/util/Map;
 	FIELD field_61865 mipmapLevels I
 	METHOD <init> (Lnet/minecraft/class_1060;I)V
@@ -13,15 +12,11 @@ CLASS net/minecraft/class_11697 net/minecraft/client/texture/AtlasManager
 		ARG 1 id
 	METHOD method_73026 (Lnet/minecraft/class_3300;Ljava/util/concurrent/Executor;Lnet/minecraft/class_11697$class_11699;)V
 		ARG 3 entry
-	METHOD method_73027 (Lnet/minecraft/class_1060;Lnet/minecraft/class_11697$class_11698;)Lnet/minecraft/class_11697$class_7772;
-		ARG 1 metadata
 	METHOD method_73028 (Lnet/minecraft/class_11697$class_11699;Lnet/minecraft/class_7766$class_7767;Ljava/lang/Throwable;)V
 		ARG 1 stitchResult
 	METHOD method_73031 (Ljava/util/Map;Ljava/util/List;Ljava/util/List;Lnet/minecraft/class_2960;Lnet/minecraft/class_11697$class_7772;)V
 		ARG 3 textureId
 		ARG 4 metadata
-	METHOD method_73033 getEntry (Lnet/minecraft/class_2960;)Lnet/minecraft/class_11697$class_7772;
-		ARG 1 id
 	CLASS class_7772 Entry
 		FIELD comp_4557 metadata Lnet/minecraft/class_11697$class_11698;
 		METHOD comp_4557 metadata ()Lnet/minecraft/class_11697$class_11698;

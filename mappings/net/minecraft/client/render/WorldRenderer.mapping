@@ -35,7 +35,6 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	FIELD field_54160 lastTranslucencySortCameraPos Lnet/minecraft/class_2338;
 	FIELD field_54161 chunkIndex I
 	FIELD field_54164 nearbyChunks Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
-	FIELD field_61060 ENTITY_COMPARATOR Ljava/util/Comparator;
 	FIELD field_61737 entityRenderStates Lnet/minecraft/class_11658;
 	FIELD field_61738 entityRenderCommandQueue Lnet/minecraft/class_11661;
 	FIELD field_61739 entityRenderDispatcher Lnet/minecraft/class_11684;

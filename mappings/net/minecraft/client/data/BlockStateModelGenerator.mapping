@@ -47,7 +47,6 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 	METHOD method_25517 registerCocoa ()V
 	METHOD method_25518 registerDirtPath ()V
 	METHOD method_25519 registerHopper ()V
-	METHOD method_25520 registerIronBars ()V
 	METHOD method_25521 registerLever ()V
 	METHOD method_25522 registerLilyPad ()V
 	METHOD method_25523 registerNetherPortal ()V

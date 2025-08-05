@@ -54,7 +54,6 @@ CLASS net/minecraft/class_4267 net/minecraft/client/gui/screen/multiplayer/Multi
 		FIELD field_19113 client Lnet/minecraft/class_310;
 		FIELD field_19114 server Lnet/minecraft/class_1131;
 		FIELD field_19115 screen Lnet/minecraft/class_500;
-		FIELD field_19116 time J
 		FIELD field_26588 TITLE_TEXT Lnet/minecraft/class_2561;
 		FIELD field_26589 HIDDEN_ADDRESS_TEXT Lnet/minecraft/class_2561;
 		METHOD <init> (Lnet/minecraft/class_500;Lnet/minecraft/class_1131;)V

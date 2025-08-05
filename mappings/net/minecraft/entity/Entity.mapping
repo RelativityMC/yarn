@@ -214,8 +214,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	FIELD field_56630 collisionHandler Lnet/minecraft/class_10774$class_10775;
 	FIELD field_56631 TAG_LIST_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_57579 currentlyCheckedCollisions Ljava/util/List;
-	FIELD field_57580 X_THEN_Z Lcom/google/common/collect/ImmutableList;
-	FIELD field_57581 Z_THEN_X Lcom/google/common/collect/ImmutableList;
 	FIELD field_58050 CUSTOM_DATA_KEY Ljava/lang/String;
 	FIELD field_58051 customData Lnet/minecraft/class_9279;
 	FIELD field_59667 alwaysSyncAbsolute Z
@@ -780,10 +778,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		COMMENT @see #setAir
 	METHOD method_5749 readCustomData (Lnet/minecraft/class_11368;)V
 		ARG 1 view
-	METHOD method_5750 setVelocityClient (DDD)V
-		ARG 1 x
-		ARG 3 y
-		ARG 5 z
+	METHOD method_5750 setVelocityClient (Lnet/minecraft/class_243;)V
 	METHOD method_5751 getStandingEyeHeight ()F
 		COMMENT {@return the standing eye height}
 		COMMENT
@@ -2212,9 +2207,8 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 2 amount
 	METHOD method_64421 isAlwaysInvulnerableTo (Lnet/minecraft/class_1282;)Z
 		ARG 1 damageSource
-	METHOD method_64578 rotate (FF)V
+	METHOD method_64578 rotate (FZFZ)V
 		ARG 1 yaw
-		ARG 2 pitch
 	METHOD method_64611 teleportSameDimension (Lnet/minecraft/class_3218;Lnet/minecraft/class_5454;)Lnet/minecraft/class_1297;
 		ARG 1 world
 		ARG 2 teleportTarget
@@ -2248,8 +2242,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_66245 isInterpolating ()Z
 	METHOD method_66246 updateTrackedPositionAndAngles (Lnet/minecraft/class_243;FF)V
 		ARG 1 pos
-		ARG 2 yaw
-		ARG 3 pitch
 	METHOD method_66247 isLogicalSideForUpdatingMovement ()Z
 	METHOD method_66248 isControlledByMainPlayer ()Z
 	METHOD method_66249 canMoveVoluntarily ()Z
@@ -2288,9 +2280,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 1 fallDistance
 		ARG 3 damagePerDistance
 		ARG 4 damageSource
-	METHOD method_67632 (Lit/unimi/dsi/fastutil/longs/LongSet;Lnet/minecraft/class_243;Lnet/minecraft/class_243;Lnet/minecraft/class_10774$class_10775;Lnet/minecraft/class_2338;I)Z
-		ARG 5 pos
-		ARG 6 version
 	METHOD method_67633 igniteByLava ()V
 	METHOD method_67634 (Ljava/util/UUID;)V
 		ARG 1 uuid
@@ -2298,8 +2287,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_68259 popQueuedCollisionCheck ()V
 	METHOD method_68260 tickBlockCollisions (Ljava/util/List;)V
 		ARG 1 checks
-	METHOD method_68261 getAxisCheckOrder (Lnet/minecraft/class_243;)Ljava/lang/Iterable;
-		ARG 0 movement
 	METHOD method_70666 teleportSpectatingPlayers (Lnet/minecraft/class_5454;Lnet/minecraft/class_3218;)V
 		ARG 1 teleportTarget
 		ARG 2 from
@@ -2334,7 +2321,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_71965 clearQueuedCollisionChecks ()V
 	METHOD method_71966 addQueuedCollisionChecks (Lnet/minecraft/class_1297$class_10365;)V
 		ARG 1 queuedCollisionCheck
-	METHOD method_72084 checkBlockCollision (Lnet/minecraft/class_243;Lnet/minecraft/class_243;Lnet/minecraft/class_10774$class_10775;Lit/unimi/dsi/fastutil/longs/LongSet;)V
+	METHOD method_72084 checkBlockCollision (Lnet/minecraft/class_243;Lnet/minecraft/class_243;Lnet/minecraft/class_10774$class_10775;Lit/unimi/dsi/fastutil/longs/LongSet;I)I
 		ARG 1 from
 		ARG 2 to
 		ARG 3 collisionHandler

@@ -83,9 +83,8 @@ CLASS net/minecraft/class_11228 net/minecraft/client/gui/render/GuiRenderer
 		ARG 2 pipeline
 		ARG 3 textureSetup
 		ARG 4 scissorArea
-	METHOD method_71287 prepareSimpleElement (Lnet/minecraft/class_11244;I)V
+	METHOD method_71287 prepareSimpleElement (Lnet/minecraft/class_11244;)V
 		ARG 1 state
-		ARG 2 depth
 	METHOD method_71288 prepareSimpleElements (Lnet/minecraft/class_11246$class_11325;)V
 		ARG 1 filter
 	METHOD method_71289 render (Ljava/util/function/Supplier;Lnet/minecraft/class_276;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Lcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5595;II)V

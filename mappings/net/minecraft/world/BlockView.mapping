@@ -53,12 +53,8 @@ CLASS net/minecraft/class_1922 net/minecraft/world/BlockView
 	METHOD method_35230 getBlockEntity (Lnet/minecraft/class_2338;Lnet/minecraft/class_2591;)Ljava/util/Optional;
 		ARG 1 pos
 		ARG 2 type
-	METHOD method_61715 collectCollisionsBetween (Lit/unimi/dsi/fastutil/longs/LongSet;Lnet/minecraft/class_243;Lnet/minecraft/class_243;Lnet/minecraft/class_238;Lnet/minecraft/class_1922$class_10781;)I
+	METHOD method_61715 collectCollisionsBetween (Lit/unimi/dsi/fastutil/longs/LongSet;Lnet/minecraft/class_243;Lnet/minecraft/class_238;Lnet/minecraft/class_1922$class_10781;)I
 		ARG 0 visited
-		ARG 1 oldPos
-		ARG 2 newPos
-		ARG 3 boundingBox
-		ARG 4 visitor
 	METHOD method_67677 collectCollisionsBetween (Lnet/minecraft/class_243;Lnet/minecraft/class_243;Lnet/minecraft/class_238;Lnet/minecraft/class_1922$class_10781;)Z
 		ARG 0 from
 		ARG 1 to

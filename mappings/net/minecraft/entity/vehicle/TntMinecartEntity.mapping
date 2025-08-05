@@ -17,7 +17,5 @@ CLASS net/minecraft/class_1701 net/minecraft/entity/vehicle/TntMinecartEntity
 		ARG 2 power
 	METHOD method_7577 getFuseTicks ()I
 	METHOD method_7578 isPrimed ()Z
-	METHOD method_47305 explode (D)V
-		ARG 1 power
 	METHOD method_55057 shouldDetonate (Lnet/minecraft/class_1282;)Z
 		ARG 0 source

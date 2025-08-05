@@ -145,8 +145,7 @@ CLASS net/minecraft/class_327 net/minecraft/client/font/TextRenderer
 	METHOD method_72731 getGlyph (ILnet/minecraft/class_2583;)Lnet/minecraft/class_11643;
 		ARG 1 codePoint
 		ARG 2 style
-	METHOD method_72732 getGlyphs (Lnet/minecraft/class_2960;)Lnet/minecraft/class_11603;
-		ARG 1 fontId
+	METHOD method_72732 getGlyphs (Lnet/minecraft/class_11719;)Lnet/minecraft/class_11603;
 	CLASS class_5232 Drawer
 		FIELD field_24241 shadow Z
 		FIELD field_24250 x F
@@ -214,5 +213,4 @@ CLASS net/minecraft/class_327 net/minecraft/client/font/TextRenderer
 			ARG 1 glyphDrawer
 	CLASS class_11602 GlyphsProvider
 		METHOD method_72734 defaultGlyph ()Lnet/minecraft/class_11643;
-		METHOD method_72735 getGlyphs (Lnet/minecraft/class_2960;)Lnet/minecraft/class_11603;
-			ARG 1 fontId
+		METHOD method_72735 getGlyphs (Lnet/minecraft/class_11719;)Lnet/minecraft/class_11603;

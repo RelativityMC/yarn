@@ -30,10 +30,6 @@ CLASS com/mojang/blaze3d/systems/RenderSystem
 		ARG 0 callback
 	METHOD setGlobalSettingsUniform (Lcom/mojang/blaze3d/buffers/GpuBuffer;)V
 		ARG 0 globalSettingsUniform
-	METHOD setModelOffset (FFF)V
-		ARG 0 offsetX
-		ARG 1 offsetY
-		ARG 2 offsetZ
 	METHOD setProjectionMatrix (Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Lnet/minecraft/class_10366;)V
 		ARG 0 projectionMatrixBuffer
 		ARG 1 projectionType

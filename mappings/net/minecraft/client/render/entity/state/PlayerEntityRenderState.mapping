@@ -1,7 +1,6 @@
 CLASS net/minecraft/class_10055 net/minecraft/client/render/entity/state/PlayerEntityRenderState
 	FIELD field_53520 skinTextures Lnet/minecraft/class_8685;
 	FIELD field_53521 flyingRotation F
-	FIELD field_53522 handSwinging Z
 	FIELD field_53525 playerName Lnet/minecraft/class_2561;
 	FIELD field_53526 leftShoulderParrotVariant Lnet/minecraft/class_1453$class_7989;
 	FIELD field_53527 rightShoulderParrotVariant Lnet/minecraft/class_1453$class_7989;
@@ -14,7 +13,6 @@ CLASS net/minecraft/class_10055 net/minecraft/client/render/entity/state/PlayerE
 	FIELD field_53535 applyFlyingRotation Z
 	FIELD field_53539 stuckArrowCount I
 	FIELD field_53540 stingerCount I
-	FIELD field_53541 itemUseTimeLeft I
 	FIELD field_53542 spectator Z
 	FIELD field_53543 hatVisible Z
 	FIELD field_53544 jacketVisible Z

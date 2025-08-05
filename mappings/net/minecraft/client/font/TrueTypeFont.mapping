@@ -12,10 +12,10 @@ CLASS net/minecraft/class_395 net/minecraft/client/font/TrueTypeFont
 		ARG 6 shiftY
 		ARG 7 excludedCharacters
 	METHOD method_51884 getInfo ()Lorg/lwjgl/util/freetype/FT_Face;
-	METHOD method_61901 getOrLoadGlyph (ILnet/minecraft/class_395$class_9908;)Lnet/minecraft/class_379;
+	METHOD method_61901 getOrLoadGlyph (ILnet/minecraft/class_395$class_9908;)Lnet/minecraft/class_379$class_11713;
 		ARG 1 codePoint
 		ARG 2 glyph
-	METHOD method_61902 loadGlyph (ILorg/lwjgl/util/freetype/FT_Face;I)Lnet/minecraft/class_379;
+	METHOD method_61902 loadGlyph (ILorg/lwjgl/util/freetype/FT_Face;I)Lnet/minecraft/class_379$class_11713;
 		ARG 1 codePoint
 		ARG 2 face
 		ARG 3 index
@@ -35,6 +35,6 @@ CLASS net/minecraft/class_395 net/minecraft/client/font/TrueTypeFont
 			ARG 7 glyphIndex
 	CLASS class_9908 LazyGlyph
 		FIELD field_52696 index I
-		FIELD field_52697 glyph Lnet/minecraft/class_379;
+		FIELD field_52697 glyph Lnet/minecraft/class_379$class_11713;
 		METHOD <init> (I)V
 			ARG 1 index

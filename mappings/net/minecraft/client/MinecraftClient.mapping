@@ -76,7 +76,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_1727 soundManager Lnet/minecraft/class_1144;
 	FIELD field_1729 mouse Lnet/minecraft/class_312;
 	FIELD field_1730 chunkCullingEnabled Z
-	FIELD field_1731 entityRenderDispatcher Lnet/minecraft/class_898;
+	FIELD field_1731 entityRenderManager Lnet/minecraft/class_898;
 	FIELD field_1732 creativeHotbarStorage Lnet/minecraft/class_302;
 	FIELD field_1734 paused Z
 	FIELD field_1735 fpsCounter I
@@ -135,7 +135,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_26842 socialInteractionsManager Lnet/minecraft/class_5520;
 	FIELD field_26843 socialInteractionsToast Lnet/minecraft/class_372;
 	FIELD field_26902 userApiService Lcom/mojang/authlib/minecraft/UserApiService;
-	FIELD field_27388 blockEntityRenderDispatcher Lnet/minecraft/class_824;
+	FIELD field_27388 blockEntityRenderManager Lnet/minecraft/class_824;
 	FIELD field_29569 recorder Lnet/minecraft/class_5962;
 	FIELD field_32144 wireFrame Z
 	FIELD field_33697 resourceReloadLogger Lnet/minecraft/class_6360;
@@ -179,6 +179,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_55226 itemModelManager Lnet/minecraft/class_10442;
 	FIELD field_60302 waypointStyleAssetManager Lnet/minecraft/class_11327;
 	FIELD field_60984 SAVING_LEVEL_TEXT Lnet/minecraft/class_2561;
+	FIELD field_61502 atlasManager Lnet/minecraft/class_11697;
 	FIELD field_61503 offlineDeveloperMode Z
 	FIELD field_61504 debugHudEntryList Lnet/minecraft/class_11633;
 	METHOD <init> (Lnet/minecraft/class_542;)V
@@ -506,6 +507,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_72098 getQuickActionsDialog ()Ljava/util/Optional;
 	METHOD method_72099 disconnectWithSavingScreen ()V
 	METHOD method_72100 disconnectWithProgressScreen ()V
+	METHOD method_72703 getAtlasManager ()Lnet/minecraft/class_11697;
 	METHOD method_72704 isOfflineDeveloperMode ()Z
 	CLASS 1
 		FIELD field_52756 closed Z

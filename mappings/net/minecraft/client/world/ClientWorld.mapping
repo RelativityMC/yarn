@@ -26,7 +26,6 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 	FIELD field_60919 blockEntities Ljava/util/Set;
 	FIELD field_61021 QUITTING_MULTIPLAYER_TEXT Lnet/minecraft/class_2561;
 	METHOD <init> (Lnet/minecraft/class_634;Lnet/minecraft/class_638$class_5271;Lnet/minecraft/class_5321;Lnet/minecraft/class_6880;IILnet/minecraft/class_761;ZJI)V
-		ARG 1 networkHandler
 		ARG 2 properties
 		ARG 3 registryRef
 		ARG 4 dimensionType

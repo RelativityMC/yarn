@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_5294 net/minecraft/client/render/DimensionEffects
 	FIELD field_24609 BY_IDENTIFIER Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;
-	FIELD field_24613 brightenLighting Z
 	FIELD field_25637 skyType Lnet/minecraft/class_5294$class_5401;
 	FIELD field_25638 darkened Z
 	METHOD <init> (Lnet/minecraft/class_5294$class_5401;ZZ)V
@@ -17,7 +16,6 @@ CLASS net/minecraft/class_5294 net/minecraft/client/render/DimensionEffects
 		COMMENT fog during night.
 		ARG 1 color
 		ARG 2 sunHeight
-	METHOD method_28114 shouldBrightenLighting ()Z
 	METHOD method_29092 (Lit/unimi/dsi/fastutil/objects/Object2ObjectArrayMap;)V
 		ARG 0 map
 	METHOD method_29992 getSkyType ()Lnet/minecraft/class_5294$class_5401;

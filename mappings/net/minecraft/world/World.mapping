@@ -99,7 +99,7 @@ CLASS net/minecraft/class_1937 net/minecraft/world/World
 		ARG 1 pos
 		ARG 2 sourceBlock
 		ARG 3 orientation
-	METHOD method_8454 createExplosion (Lnet/minecraft/class_1297;Lnet/minecraft/class_1282;Lnet/minecraft/class_5362;DDDFZLnet/minecraft/class_1937$class_7867;Lnet/minecraft/class_2394;Lnet/minecraft/class_2394;Lnet/minecraft/class_6880;)V
+	METHOD method_8454 createExplosion (Lnet/minecraft/class_1297;Lnet/minecraft/class_1282;Lnet/minecraft/class_5362;DDDFZLnet/minecraft/class_1937$class_7867;Lnet/minecraft/class_2394;Lnet/minecraft/class_2394;Lnet/minecraft/class_6012;Lnet/minecraft/class_6880;)V
 		COMMENT Creates an explosion.
 		ARG 1 entity
 			COMMENT the entity that exploded (like TNT) or {@code null} to indicate no entity exploded
@@ -117,7 +117,6 @@ CLASS net/minecraft/class_1937 net/minecraft/world/World
 		ARG 12 explosionSourceType
 		ARG 13 smallParticle
 		ARG 14 largeParticle
-		ARG 15 soundEvent
 	METHOD method_8455 updateComparators (Lnet/minecraft/class_2338;Lnet/minecraft/class_2248;)V
 		ARG 1 pos
 		ARG 2 block

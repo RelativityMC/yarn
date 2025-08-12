@@ -2324,16 +2324,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 1 pos
 		ARG 2 blockCollision
 		ARG 3 fluidCollision
-	METHOD method_73188 ()F
-		COMMENT {@return the body yaw of the entity}
-		COMMENT
-		COMMENT @see #setBodyYaw
-	METHOD method_73189 ()Lnet/minecraft/class_243;
-		COMMENT {@return the exact position of the entity}
-		COMMENT
-		COMMENT @see #getSyncedPos
-		COMMENT @see #getBlockPos
-		COMMENT @see #getChunkPos
 	CLASS class_4738 PositionUpdater
 		METHOD accept (Lnet/minecraft/class_1297;DDD)V
 			ARG 1 entity

@@ -10,10 +10,7 @@ CLASS net/minecraft/class_2631 net/minecraft/block/entity/SkullBlockEntity
 	METHOD <init> (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
 		ARG 1 pos
 		ARG 2 state
-	METHOD method_11333 setOwner (Lnet/minecraft/class_9296;)V
-		ARG 1 profile
 	METHOD method_11334 getOwner ()Lnet/minecraft/class_9296;
-	METHOD method_11339 loadOwnerProperties ()V
 	METHOD method_47588 getPoweredTicks (F)F
 		ARG 1 tickProgress
 	METHOD method_47589 tick (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2631;)V
@@ -22,5 +19,3 @@ CLASS net/minecraft/class_2631 net/minecraft/block/entity/SkullBlockEntity
 		ARG 2 state
 		ARG 3 blockEntity
 	METHOD method_47888 getNoteBlockSound ()Lnet/minecraft/class_2960;
-	METHOD method_58126 (Lnet/minecraft/class_9296;)V
-		ARG 1 owner

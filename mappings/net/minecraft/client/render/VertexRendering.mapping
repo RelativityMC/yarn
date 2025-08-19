@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_9974 net/minecraft/client/render/VertexRendering
-	METHOD method_62292 drawBox (Lnet/minecraft/class_4587;Lnet/minecraft/class_4588;DDDDDDFFFF)V
-		ARG 0 matrices
+	METHOD method_62292 drawBox (Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;DDDDDDFFFF)V
 		ARG 1 vertexConsumers
 		ARG 2 x1
 		ARG 4 y1
@@ -12,8 +11,7 @@ CLASS net/minecraft/class_9974 net/minecraft/client/render/VertexRendering
 		ARG 15 green
 		ARG 16 blue
 		ARG 17 alpha
-	METHOD method_62293 drawBox (Lnet/minecraft/class_4587;Lnet/minecraft/class_4588;DDDDDDFFFFFFF)V
-		ARG 0 matrices
+	METHOD method_62293 drawBox (Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;DDDDDDFFFFFFF)V
 		ARG 1 vertexConsumers
 		ARG 2 x1
 		ARG 4 y1
@@ -41,8 +39,7 @@ CLASS net/minecraft/class_9974 net/minecraft/client/render/VertexRendering
 		ARG 9 green
 		ARG 10 blue
 		ARG 11 alpha
-	METHOD method_62295 drawBox (Lnet/minecraft/class_4587;Lnet/minecraft/class_4588;Lnet/minecraft/class_238;FFFF)V
-		ARG 0 matrices
+	METHOD method_62295 drawBox (Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;Lnet/minecraft/class_238;FFFF)V
 		ARG 1 vertexConsumers
 		ARG 2 box
 		ARG 3 red
@@ -57,8 +54,7 @@ CLASS net/minecraft/class_9974 net/minecraft/client/render/VertexRendering
 		ARG 5 offsetY
 		ARG 7 offsetZ
 		ARG 9 color
-	METHOD method_62297 drawSide (Lnet/minecraft/class_4587;Lnet/minecraft/class_4588;Lnet/minecraft/class_2350;FFFFFFFFFF)V
-		ARG 0 matrices
+	METHOD method_62297 drawSide (Lorg/joml/Matrix4f;Lnet/minecraft/class_4588;Lnet/minecraft/class_2350;FFFFFFFFFF)V
 		ARG 1 vertexConsumers
 		ARG 2 side
 		ARG 3 minX

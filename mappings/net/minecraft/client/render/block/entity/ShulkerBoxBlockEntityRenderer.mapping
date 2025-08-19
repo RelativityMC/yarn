@@ -4,13 +4,11 @@ CLASS net/minecraft/class_834 net/minecraft/client/render/block/entity/ShulkerBo
 		ARG 1 models
 	METHOD <init> (Lnet/minecraft/class_5614$class_5615;)V
 		ARG 1 ctx
-	METHOD method_65562 render (Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;IILnet/minecraft/class_2350;FLnet/minecraft/class_4730;)V
-		ARG 1 matrices
+	METHOD method_65562 render (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;IILnet/minecraft/class_2350;FLnet/minecraft/class_11683$class_11792;Lnet/minecraft/class_4730;)V
 		ARG 3 light
 		ARG 4 overlay
 		ARG 5 facing
 		ARG 6 openness
-		ARG 7 textureId
 	METHOD method_72162 setTransforms (Lnet/minecraft/class_4587;Lnet/minecraft/class_2350;F)V
 		ARG 1 matrices
 		ARG 2 facing

@@ -17,7 +17,6 @@ CLASS net/minecraft/class_5699 net/minecraft/util/dynamic/Codecs
 	FIELD field_40723 VECTOR_3F Lcom/mojang/serialization/Codec;
 	FIELD field_40724 BIT_SET Lcom/mojang/serialization/Codec;
 	FIELD field_40725 GAME_PROFILE_PROPERTY_MAP Lcom/mojang/serialization/Codec;
-	FIELD field_40726 GAME_PROFILE_WITH_PROPERTIES Lcom/mojang/serialization/Codec;
 	FIELD field_40727 GAME_PROFILE_PROPERTY Lcom/mojang/serialization/Codec;
 	FIELD field_41759 NON_EMPTY_STRING Lcom/mojang/serialization/Codec;
 	FIELD field_42265 QUATERNION_F Lcom/mojang/serialization/Codec;
@@ -26,7 +25,6 @@ CLASS net/minecraft/class_5699 net/minecraft/util/dynamic/Codecs
 	FIELD field_42268 MATRIX_4F Lcom/mojang/serialization/Codec;
 	FIELD field_44703 CODEPOINT Lcom/mojang/serialization/Codec;
 	FIELD field_45075 IDENTIFIER_PATH Lcom/mojang/serialization/Codec;
-	FIELD field_45076 GAME_PROFILE Lcom/mojang/serialization/MapCodec;
 	FIELD field_46165 ESCAPED_STRING Lcom/mojang/serialization/Codec;
 	FIELD field_46236 BASIC_OBJECT Lcom/mojang/serialization/Codec;
 		COMMENT A passthrough codec for a basic object. See {@link RuntimeOps} for
@@ -130,12 +128,6 @@ CLASS net/minecraft/class_5699 net/minecraft/util/dynamic/Codecs
 		ARG 0 optional
 	METHOD method_44169 (Ljava/util/OptionalLong;)Ljava/util/Optional;
 		ARG 0 optionalLong
-	METHOD method_46370 (Lcom/mojang/authlib/GameProfile;Lcom/mojang/authlib/properties/PropertyMap;)Lcom/mojang/authlib/GameProfile;
-		ARG 0 profile
-		ARG 1 properties
-	METHOD method_46371 (Lcom/mojang/authlib/GameProfile;Ljava/lang/String;Lcom/mojang/authlib/properties/Property;)V
-		ARG 1 key
-		ARG 2 property
 	METHOD method_46372 (Lcom/mojang/authlib/properties/Property;)Ljava/util/Optional;
 		ARG 0 property
 	METHOD method_46373 (Lcom/mojang/authlib/properties/PropertyMap;)Lcom/mojang/datafixers/util/Either;
@@ -196,12 +188,8 @@ CLASS net/minecraft/class_5699 net/minecraft/util/dynamic/Codecs
 		ARG 0 quaternion
 	METHOD method_51494 (Ljava/lang/String;)Lcom/mojang/serialization/DataResult;
 		ARG 0 string
-	METHOD method_52459 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance
 	METHOD method_52460 (Ljava/lang/String;)Lcom/mojang/serialization/DataResult;
 		ARG 0 path
-	METHOD method_52462 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance
 	METHOD method_53058 object2BooleanMap (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
 		ARG 0 keyCodec
 	METHOD method_53700 formattedTime (Ljava/time/format/DateTimeFormatter;)Lcom/mojang/serialization/Codec;

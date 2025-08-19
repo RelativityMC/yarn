@@ -17,6 +17,5 @@ CLASS net/minecraft/class_11743 net/minecraft/client/render/EndLightFlashManager
 	METHOD method_73239 getYaw ()F
 	METHOD method_73240 update (J)V
 		ARG 1 time
-	METHOD method_73241 shouldPlayFlashSound ()Z
 	METHOD method_73242 calcSkyFactor (J)F
 		ARG 1 time

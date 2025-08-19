@@ -8,6 +8,6 @@ CLASS net/minecraft/class_11686 net/minecraft/client/render/entity/command/Debug
 		ARG 1 hitboxAndView
 		ARG 2 vertexConsumer
 		ARG 3 standingEyeHeight
-	METHOD method_73009 render (Lnet/minecraft/class_11661;Lnet/minecraft/class_4597$class_4598;)V
+	METHOD method_73009 render (Lnet/minecraft/class_11788;Lnet/minecraft/class_4597$class_4598;)V
 		ARG 1 queue
 		ARG 2 vertexConsumers

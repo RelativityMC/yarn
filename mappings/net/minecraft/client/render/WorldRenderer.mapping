@@ -254,12 +254,8 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 1 matrices
 		ARG 2 camera
 		ARG 3 vertexConsumers
-	METHOD method_62208 renderBlockEntities (Lnet/minecraft/class_4587;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_4184;F)V
+	METHOD method_62208 renderBlockEntities (Lnet/minecraft/class_4587;Lnet/minecraft/class_4184;F)V
 		ARG 1 matrices
-		ARG 2 entityVertexConsumers
-		ARG 3 effectVertexConsumers
-		ARG 4 camera
-		ARG 5 tickProgress
 	METHOD method_62209 addWeatherParticlesAndSound (Lnet/minecraft/class_4184;)V
 		ARG 1 camera
 	METHOD method_62210 renderTargetBlockOutline (Lnet/minecraft/class_4184;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_4587;Z)V
@@ -267,8 +263,6 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 2 vertexConsumers
 		ARG 3 matrices
 		ARG 4 translucent
-	METHOD method_62217 (Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_4588;Lnet/minecraft/class_1921;)Lnet/minecraft/class_4588;
-		ARG 2 renderLayer
 	METHOD method_62219 scheduleChunkRenders (IIIIII)V
 		ARG 1 minX
 		ARG 2 minY

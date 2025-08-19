@@ -47,9 +47,6 @@ CLASS net/minecraft/class_433 net/minecraft/client/gui/screen/GameMenuScreen
 		ARG 2 dialog
 		ARG 3 gridAdder
 	METHOD method_71842 shouldShowNowPlayingToast ()Z
-	METHOD method_72130 disconnect (Lnet/minecraft/class_310;Lnet/minecraft/class_2561;)V
-		ARG 0 client
-		ARG 1 disconnectReason
 	CLASS class_9804 FeedbackScreen
 		FIELD field_52134 parent Lnet/minecraft/class_437;
 		FIELD field_52135 TITLE Lnet/minecraft/class_2561;

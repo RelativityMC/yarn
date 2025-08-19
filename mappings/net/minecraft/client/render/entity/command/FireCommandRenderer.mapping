@@ -5,7 +5,7 @@ CLASS net/minecraft/class_11685 net/minecraft/client/render/entity/command/FireC
 		ARG 3 renderState
 		ARG 4 rotation
 		ARG 5 atlasManager
-	METHOD method_73006 render (Lnet/minecraft/class_11661;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_11697;)V
+	METHOD method_73006 render (Lnet/minecraft/class_11788;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_11697;)V
 		ARG 1 queue
 		ARG 2 vertexConsumers
 		ARG 3 atlasManager

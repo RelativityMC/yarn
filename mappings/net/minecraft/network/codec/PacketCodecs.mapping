@@ -377,5 +377,5 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 			ARG 1 signature
 		METHOD method_71597 (Lio/netty/buffer/ByteBuf;)Ljava/lang/String;
 			ARG 0 bufx
-	CLASS 29
+	CLASS 28
 		FIELD field_60514 GSON Lcom/google/gson/Gson;

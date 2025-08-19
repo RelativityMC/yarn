@@ -10,17 +10,6 @@ CLASS net/minecraft/class_382 net/minecraft/client/font/BakedGlyph
 	FIELD field_44760 textRenderLayers Lnet/minecraft/class_8538;
 	FIELD field_55098 Z_OFFSET F
 	FIELD field_60569 gpuTexture Lcom/mojang/blaze3d/textures/GpuTextureView;
-	METHOD <init> (Lnet/minecraft/class_8538;Lcom/mojang/blaze3d/textures/GpuTextureView;FFFFFFFF)V
-		ARG 1 textRenderLayers
-		ARG 2 gpuTexture
-		ARG 3 minU
-		ARG 4 maxU
-		ARG 5 minV
-		ARG 6 maxV
-		ARG 7 minX
-		ARG 8 maxX
-		ARG 9 minY
-		ARG 10 maxY
 	METHOD method_2025 draw (ZFFFLorg/joml/Matrix4f;Lnet/minecraft/class_4588;IZI)V
 		ARG 1 italic
 		ARG 2 x
@@ -37,8 +26,6 @@ CLASS net/minecraft/class_382 net/minecraft/client/font/BakedGlyph
 		ARG 3 vertexConsumer
 		ARG 4 light
 		ARG 5 fixedZ
-	METHOD method_24045 getLayer (Lnet/minecraft/class_327$class_6415;)Lnet/minecraft/class_1921;
-		ARG 1 layerType
 	METHOD method_65025 draw (Lnet/minecraft/class_382$class_10364;Lorg/joml/Matrix4f;Lnet/minecraft/class_4588;IZ)V
 		ARG 1 glyph
 		ARG 2 matrix
@@ -53,12 +40,10 @@ CLASS net/minecraft/class_382 net/minecraft/client/font/BakedGlyph
 		ARG 5 vertexConsumer
 		ARG 6 light
 		ARG 7 matrix
-	METHOD method_71820 getTexture ()Lcom/mojang/blaze3d/textures/GpuTextureView;
 	METHOD method_71821 getEffectiveMinX (Lnet/minecraft/class_382$class_10364;)F
 		ARG 1 glyph
 	METHOD method_71822 getXExpansion (Z)F
 		ARG 0 bold
-	METHOD method_71823 getPipeline ()Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	METHOD method_71824 getEffectiveMinY (Lnet/minecraft/class_382$class_10364;)F
 		ARG 1 glyph
 	METHOD method_71825 getItalicOffsetAtMaxY ()F
@@ -74,13 +59,6 @@ CLASS net/minecraft/class_382 net/minecraft/client/font/BakedGlyph
 		FIELD comp_3310 maxY F
 		FIELD comp_3311 zIndex F
 		FIELD comp_3312 color I
-		METHOD <init> (FFFFFI)V
-			ARG 1 minX
-			ARG 2 minY
-			ARG 3 maxX
-			ARG 4 maxY
-			ARG 5 zIndex
-			ARG 6 color
 		METHOD comp_3307 minX ()F
 		METHOD comp_3308 minY ()F
 		METHOD comp_3309 maxX ()F
@@ -88,13 +66,5 @@ CLASS net/minecraft/class_382 net/minecraft/client/font/BakedGlyph
 		METHOD comp_3311 zIndex ()F
 		METHOD comp_3312 color ()I
 		METHOD method_65183 hasShadow ()Z
-		METHOD method_71829 getEffectiveMinX ()F
-		METHOD method_71830 getEffectiveMinY ()F
-		METHOD method_71831 getEffectiveMaxX ()F
-		METHOD method_71832 getEffectiveMaxY ()F
 	CLASS class_10364 DrawnGlyph
 		METHOD method_65184 hasShadow ()Z
-		METHOD method_71833 getEffectiveMinX ()F
-		METHOD method_71834 getEffectiveMinY ()F
-		METHOD method_71835 getEffectiveMaxX ()F
-		METHOD method_71836 getEffectiveMaxY ()F

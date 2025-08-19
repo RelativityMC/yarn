@@ -68,7 +68,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_1719 cameraEntity Lnet/minecraft/class_1297;
 	FIELD field_1720 versionType Ljava/lang/String;
 	FIELD field_1721 isDemo Z
-	FIELD field_1723 sessionService Lcom/mojang/authlib/minecraft/MinecraftSessionService;
 	FIELD field_1724 player Lnet/minecraft/class_746;
 		COMMENT Represents the client's own player.
 		COMMENT This field is not null when in game.
@@ -149,7 +148,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_37856 gpuUtilizationPercentage D
 	FIELD field_37857 currentGlTimerQuery Lnet/minecraft/class_7168$class_7169;
 	FIELD field_39068 profileKeys Lnet/minecraft/class_7853;
-	FIELD field_39420 authenticationService Lcom/mojang/authlib/yggdrasil/YggdrasilAuthenticationService;
 	FIELD field_39492 abuseReportContext Lnet/minecraft/class_7574;
 	FIELD field_39718 realmsPeriodicCheckers Lnet/minecraft/class_7578;
 	FIELD field_39769 narratorManager Lnet/minecraft/class_333;
@@ -195,7 +193,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_1493 isPaused ()Z
 	METHOD method_1494 setCrashReportSupplierAndAddDetails (Lnet/minecraft/class_128;)V
 		ARG 1 crashReport
-	METHOD method_1495 getSessionService ()Lcom/mojang/authlib/minecraft/MinecraftSessionService;
 	METHOD method_1496 isIntegratedServerRunning ()Z
 	METHOD method_1498 isHudEnabled ()Z
 	METHOD method_1504 setCameraEntity (Lnet/minecraft/class_1297;)V
@@ -279,8 +276,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 2 transferring
 	METHOD method_18097 setWorld (Lnet/minecraft/class_638;)V
 		ARG 1 world
-	METHOD method_18098 reset (Lnet/minecraft/class_437;)V
-		ARG 1 resettingScreen
 	METHOD method_18502 setOverlay (Lnet/minecraft/class_4071;)V
 		ARG 1 overlay
 	METHOD method_18506 getOverlay ()Lnet/minecraft/class_4071;
@@ -406,7 +401,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_43587 setCrashReportSupplier (Lnet/minecraft/class_128;)V
 		ARG 1 crashReport
 	METHOD method_43590 getProfileKeys ()Lnet/minecraft/class_7853;
-	METHOD method_44256 getServicesSignatureVerifier ()Lnet/minecraft/class_7500;
 	METHOD method_44352 (Z)V
 		ARG 1 confirmed
 	METHOD method_44376 ensureAbuseReportContext (Lnet/minecraft/class_7569;)V
@@ -476,7 +470,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_54785 getTargetMillisPerTick (F)F
 		ARG 1 millis
 	METHOD method_55505 onDisconnected ()V
-	METHOD method_55606 providesProfileKeys ()Z
 	METHOD method_55607 getUserProperties ()Lcom/mojang/authlib/minecraft/UserApiService$UserProperties;
 	METHOD method_57017 onFontOptionsChanged ()V
 	METHOD method_60320 (Lnet/minecraft/class_1078;)V

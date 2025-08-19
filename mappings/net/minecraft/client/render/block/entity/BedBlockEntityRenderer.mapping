@@ -3,10 +3,8 @@ CLASS net/minecraft/class_825 net/minecraft/client/render/block/entity/BedBlockE
 	FIELD field_27745 bedFoot Lnet/minecraft/class_3879$class_9948;
 	METHOD <init> (Lnet/minecraft/class_5614$class_5615;)V
 		ARG 1 ctx
-	METHOD method_3558 renderPart (Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;Lnet/minecraft/class_3879$class_9948;Lnet/minecraft/class_2350;Lnet/minecraft/class_4730;IIZ)V
-		ARG 1 matrices
+	METHOD method_3558 renderPart (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;Lnet/minecraft/class_3879$class_9948;Lnet/minecraft/class_2350;Lnet/minecraft/class_4730;IIZLnet/minecraft/class_11683$class_11792;)V
 		ARG 4 direction
-		ARG 5 sprite
 		ARG 6 light
 		ARG 7 overlay
 		ARG 8 isFoot
@@ -15,9 +13,8 @@ CLASS net/minecraft/class_825 net/minecraft/client/render/block/entity/BedBlockE
 		ARG 1 pos
 	METHOD method_32136 getHeadTexturedModelData ()Lnet/minecraft/class_5607;
 	METHOD method_32137 getFootTexturedModelData ()Lnet/minecraft/class_5607;
-	METHOD method_65557 renderAsItem (Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;IILnet/minecraft/class_4730;)V
+	METHOD method_65557 renderAsItem (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;IILnet/minecraft/class_4730;)V
 		ARG 1 matrices
-		ARG 2 vertexConsumers
 		ARG 3 light
 		ARG 4 overlay
 		ARG 5 textureId

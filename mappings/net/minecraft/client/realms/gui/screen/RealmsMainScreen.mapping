@@ -205,7 +205,6 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 		METHOD method_52653 play ()V
 		METHOD method_52654 createRealm ()V
 		METHOD method_60862 drawPlayers (Lnet/minecraft/class_332;IIIIIIF)Z
-			ARG 1 context
 			ARG 2 top
 			ARG 3 left
 			ARG 4 width
@@ -277,10 +276,6 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 			ARG 3 x
 			ARG 4 width
 			ARG 5 server
-	CLASS class_8200 VisitButtonEntry
-		FIELD field_42999 button Lnet/minecraft/class_4185;
-		METHOD <init> (Lnet/minecraft/class_4325;Lnet/minecraft/class_4185;)V
-			ARG 2 button
 	CLASS class_8201 CrossButton
 		FIELD field_45222 TEXTURES Lnet/minecraft/class_8666;
 		METHOD <init> (Lnet/minecraft/class_4185$class_4241;Lnet/minecraft/class_2561;)V
@@ -294,16 +289,11 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 		FIELD field_43009 grid Lnet/minecraft/class_7845;
 		FIELD field_43010 textGrid Lnet/minecraft/class_7843;
 		FIELD field_43011 width I
-		FIELD field_46218 lines I
-		METHOD <init> (Lnet/minecraft/class_4325;Lnet/minecraft/class_2561;ILnet/minecraft/class_8204;)V
-			ARG 2 message
+		METHOD <init> (Lnet/minecraft/class_4325;Lnet/minecraft/class_4325;ILnet/minecraft/class_2561;Lnet/minecraft/class_8204$class_8205;)V
 			ARG 3 lines
-			ARG 4 notification
 		METHOD method_49564 setWidth (I)V
 			ARG 1 width
-		METHOD method_49565 (Lnet/minecraft/class_332;IIFLnet/minecraft/class_339;)V
-			ARG 4 child
-		METHOD method_49566 (Lnet/minecraft/class_8204;Lnet/minecraft/class_4185;)V
+		METHOD method_49566 (Lnet/minecraft/class_8204$class_8205;Lnet/minecraft/class_4185;)V
 			ARG 2 button
 		METHOD method_49567 updateWidth (I)V
 			ARG 1 width
@@ -316,7 +306,7 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 		FIELD field_45229 SIZE I
 		FIELD field_45230 TEXTURE_SIZE I
 		FIELD field_45231 notificationCount I
-		METHOD <init> (Lnet/minecraft/class_2561;Lnet/minecraft/class_2960;Lnet/minecraft/class_4185$class_4241;)V
+		METHOD <init> (Lnet/minecraft/class_2561;Lnet/minecraft/class_2960;Lnet/minecraft/class_4185$class_4241;Lnet/minecraft/class_2561;)V
 			ARG 1 message
 			ARG 2 texture
 			ARG 3 onPress
@@ -325,7 +315,6 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 		METHOD method_52652 render (Lnet/minecraft/class_332;)V
 			ARG 1 context
 		METHOD method_53794 getNotificationCount ()I
-	CLASS class_8802 EmptyEntry
 	CLASS class_8840 SnapshotEntry
 		FIELD field_46676 START_TEXT Lnet/minecraft/class_2561;
 		FIELD field_46678 tooltip Lnet/minecraft/class_9110;

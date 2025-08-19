@@ -5,11 +5,4 @@ CLASS net/minecraft/class_826 net/minecraft/client/render/block/entity/ChestBloc
 	FIELD field_53167 doubleChestRight Lnet/minecraft/class_9944;
 	METHOD <init> (Lnet/minecraft/class_5614$class_5615;)V
 		ARG 1 context
-	METHOD method_22749 render (Lnet/minecraft/class_4587;Lnet/minecraft/class_4588;Lnet/minecraft/class_9944;FII)V
-		ARG 1 matrices
-		ARG 2 vertices
-		ARG 3 model
-		ARG 4 animationProgress
-		ARG 5 light
-		ARG 6 overlay
 	METHOD method_65559 isAroundChristmas ()Z

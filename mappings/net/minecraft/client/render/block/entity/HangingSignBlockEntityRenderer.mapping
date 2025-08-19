@@ -24,7 +24,7 @@ CLASS net/minecraft/class_7761 net/minecraft/client/render/block/entity/HangingS
 		ARG 0 variant
 	METHOD method_65242 (Lnet/minecraft/class_4719;)Ljava/util/stream/Stream;
 		ARG 0 woodType
-	METHOD method_65829 renderAsItem (Lnet/minecraft/class_11701;Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;IILnet/minecraft/class_3879$class_9948;Lnet/minecraft/class_4730;)V
+	METHOD method_65829 renderAsItem (Lnet/minecraft/class_11701;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;IILnet/minecraft/class_3879$class_9948;Lnet/minecraft/class_4730;)V
 	METHOD method_65830 createModel (Lnet/minecraft/class_5599;Lnet/minecraft/class_4719;Lnet/minecraft/class_7761$class_10381;)Lnet/minecraft/class_3879$class_9948;
 		ARG 0 models
 		ARG 1 woodType

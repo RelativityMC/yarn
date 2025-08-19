@@ -103,7 +103,6 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 8 chunkLoadProgress
 	METHOD method_3716 getKeyPair ()Ljava/security/KeyPair;
 	METHOD method_3718 isFlightEnabled ()Z
-	METHOD method_3719 getGameProfileRepo ()Lcom/mojang/authlib/GameProfileRepository;
 	METHOD method_3723 save (ZZZ)Z
 		COMMENT Saves the server to the data storage device.
 		COMMENT
@@ -253,7 +252,6 @@ CLASS net/minecraft/server/MinecraftServer
 	METHOD method_3841 getSpawnProtectionRadius ()I
 	METHOD method_3842 setServerIp (Ljava/lang/String;)V
 		ARG 1 serverIp
-	METHOD method_3844 getSessionService ()Lcom/mojang/authlib/minecraft/MinecraftSessionService;
 	METHOD method_3845 getScoreboard ()Lnet/minecraft/class_2995;
 	METHOD method_3846 setPlayerManager (Lnet/minecraft/class_3324;)V
 		ARG 1 playerManager
@@ -415,7 +413,6 @@ CLASS net/minecraft/server/MinecraftServer
 		COMMENT {@return the message decorator used by the server}
 		COMMENT
 		COMMENT @see MessageDecorator
-	METHOD method_44301 getServicesSignatureVerifier ()Lnet/minecraft/class_7500;
 	METHOD method_46221 getCombinedDynamicRegistries ()Lnet/minecraft/class_7780;
 	METHOD method_46841 (Lnet/minecraft/class_3218;Lnet/minecraft/class_3215;Lnet/minecraft/class_5268;Lnet/minecraft/class_6880$class_6883;)V
 		ARG 3 feature
@@ -490,7 +487,6 @@ CLASS net/minecraft/server/MinecraftServer
 	METHOD method_73044 createChunkLoadMap (I)Lnet/minecraft/class_11544;
 		COMMENT {@return a {@link ChunkLoadMap} to visualize chunk loading in singleplayer}
 		ARG 1 radius
-	METHOD method_73045 getNameToIdCache ()Lnet/minecraft/class_11561;
 	METHOD method_73046 getChunkLoadProgress ()Lnet/minecraft/class_11545;
 	CLASS 1
 		FIELD field_61875 chunkLoadingManager Lnet/minecraft/class_3898;

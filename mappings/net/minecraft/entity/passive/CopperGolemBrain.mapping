@@ -22,8 +22,6 @@ CLASS net/minecraft/class_11574 net/minecraft/entity/passive/CopperGolemBrain
 		ARG 0 state
 		ARG 1 soundEvent
 	METHOD method_72485 (Lnet/minecraft/class_11577;Lnet/minecraft/class_3414;Lnet/minecraft/class_1314;Lnet/minecraft/class_11568$class_11572;Ljava/lang/Integer;)V
-		ARG 2 entity
-		ARG 3 storage
 		ARG 4 interactionTicks
 	METHOD method_72486 (Lnet/minecraft/class_2680;)Z
 		ARG 0 state

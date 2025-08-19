@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_377 net/minecraft/client/font/FontStorage
 	FIELD field_2249 charactersByWidth Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
-	FIELD field_2256 blankBakedGlyph Lnet/minecraft/class_377$class_11639;
-	FIELD field_20910 whiteRectangleBakedGlyph Lnet/minecraft/class_377$class_11639;
+	FIELD field_2256 blankBakedGlyph Lnet/minecraft/class_11768;
+	FIELD field_20910 whiteRectangleBakedGlyph Lnet/minecraft/class_11769;
 	FIELD field_39934 MAX_ADVANCE F
 	FIELD field_49120 allFonts Ljava/util/List;
 	FIELD field_49121 availableFonts Ljava/util/List;
@@ -16,12 +16,12 @@ CLASS net/minecraft/class_377 net/minecraft/client/font/FontStorage
 	METHOD method_2004 setFonts (Ljava/util/List;Ljava/util/Set;)V
 		ARG 1 allFonts
 		ARG 2 activeFilters
-	METHOD method_2013 getObfuscatedBakedGlyph (Lnet/minecraft/class_5819;I)Lnet/minecraft/class_11643;
+	METHOD method_2013 getObfuscatedBakedGlyph (Lnet/minecraft/class_5819;I)Lnet/minecraft/class_11768;
 		ARG 1 random
 		ARG 2 width
 	METHOD method_2014 getBaked (I)Lnet/minecraft/class_377$class_11640;
 		ARG 1 codePoint
-	METHOD method_22943 getRectangleBakedGlyph ()Lnet/minecraft/class_11643;
+	METHOD method_22943 getRectangleBakedGlyph ()Lnet/minecraft/class_11769;
 	METHOD method_40038 findGlyph (I)Lnet/minecraft/class_377$class_11640;
 		COMMENT {@return the glyph of {@code codePoint}}
 		COMMENT
@@ -41,15 +41,10 @@ CLASS net/minecraft/class_377 net/minecraft/client/font/FontStorage
 	METHOD method_57038 clear ()V
 	METHOD method_72788 getGlyphs (Z)Lnet/minecraft/class_11603;
 		ARG 1 advanceValidating
-	CLASS class_11639 CachedGlyph
-		FIELD field_61617 glyph Lnet/minecraft/class_379$class_11713;
-		FIELD field_61618 bakedGlyph Lnet/minecraft/class_382;
-		METHOD method_72792 rebake ()V
-		METHOD method_72793 bake ()Lnet/minecraft/class_382;
 	CLASS class_11640 GlyphPair
-		FIELD comp_4460 advanceValidating Lnet/minecraft/class_377$class_11639;
-		METHOD comp_4460 advanceValidating ()Lnet/minecraft/class_377$class_11639;
-		METHOD method_72794 get (Z)Lnet/minecraft/class_377$class_11639;
+		FIELD comp_4460 advanceValidating Ljava/util/function/Supplier;
+		METHOD comp_4460 advanceValidating ()Ljava/util/function/Supplier;
+		METHOD method_72794 get (Z)Ljava/util/function/Supplier;
 			ARG 1 advanceValidating
 	CLASS class_11641 Glyphs
 		FIELD field_61620 advanceValidating Z

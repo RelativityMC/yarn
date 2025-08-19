@@ -11,9 +11,6 @@ CLASS net/minecraft/class_353 net/minecraft/client/gui/widget/OptionListWidget
 		ARG 2 secondWidget
 	METHOD method_20408 addAll ([Lnet/minecraft/class_7172;)V
 		ARG 1 options
-	METHOD method_29624 getHoveredWidget (DD)Ljava/util/Optional;
-		ARG 1 mouseX
-		ARG 3 mouseY
 	METHOD method_31046 getWidgetFor (Lnet/minecraft/class_7172;)Lnet/minecraft/class_339;
 		ARG 1 option
 	METHOD method_58227 addAll (Ljava/util/List;)V

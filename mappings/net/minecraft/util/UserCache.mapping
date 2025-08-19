@@ -7,7 +7,6 @@ CLASS net/minecraft/class_3312 net/minecraft/util/UserCache
 	FIELD field_25724 accessCount Ljava/util/concurrent/atomic/AtomicLong;
 	FIELD field_25805 LOGGER Lorg/slf4j/Logger;
 	FIELD field_29788 MAX_SAVED_ENTRIES I
-	FIELD field_33860 pendingRequests Ljava/util/Map;
 	FIELD field_61163 offlineMode Z
 	METHOD <init> (Lcom/mojang/authlib/GameProfileRepository;Ljava/io/File;)V
 		ARG 1 profileRepository
@@ -31,8 +30,6 @@ CLASS net/minecraft/class_3312 net/minecraft/util/UserCache
 		ARG 2 json
 	METHOD method_30169 incrementAndGetAccessCount ()J
 	METHOD method_30170 getDateFormat ()Ljava/text/DateFormat;
-	METHOD method_37155 (Ljava/lang/String;Ljava/util/concurrent/CompletableFuture;Ljava/util/Optional;Ljava/lang/Throwable;)V
-		ARG 3 player
 	METHOD method_53912 getOfflinePlayerProfile (Ljava/lang/String;)Ljava/util/Optional;
 	METHOD method_72368 addToCache (Lnet/minecraft/class_11560;)Lnet/minecraft/class_3312$class_3313;
 		ARG 1 player

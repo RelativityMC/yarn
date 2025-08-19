@@ -1,13 +1,12 @@
 CLASS net/minecraft/class_976 net/minecraft/client/render/entity/feature/HeadFeatureRenderer
 	FIELD field_27771 headModels Ljava/util/function/Function;
 	FIELD field_53211 headTransformation Lnet/minecraft/class_976$class_9994;
-	METHOD <init> (Lnet/minecraft/class_3883;Lnet/minecraft/class_5599;)V
+	METHOD <init> (Lnet/minecraft/class_3883;Lnet/minecraft/class_5599;Lnet/minecraft/class_11786;)V
 		ARG 1 context
 		ARG 2 models
-	METHOD <init> (Lnet/minecraft/class_3883;Lnet/minecraft/class_5599;Lnet/minecraft/class_976$class_9994;)V
+	METHOD <init> (Lnet/minecraft/class_3883;Lnet/minecraft/class_5599;Lnet/minecraft/class_11786;Lnet/minecraft/class_976$class_9994;)V
 		ARG 1 context
 		ARG 2 models
-		ARG 3 headTransformation
 	METHOD method_32798 translate (Lnet/minecraft/class_4587;Lnet/minecraft/class_976$class_9994;)V
 		ARG 0 matrices
 		ARG 1 transformation

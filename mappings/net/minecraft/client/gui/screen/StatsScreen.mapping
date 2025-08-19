@@ -1,9 +1,5 @@
 CLASS net/minecraft/class_447 net/minecraft/client/gui/screen/StatsScreen
-	FIELD field_2642 itemStats Lnet/minecraft/class_447$class_4200;
-	FIELD field_2643 selectedList Lnet/minecraft/class_4280;
-	FIELD field_2644 generalStats Lnet/minecraft/class_447$class_4198;
 	FIELD field_2645 downloadingStats Z
-	FIELD field_2646 mobStats Lnet/minecraft/class_447$class_4202;
 	FIELD field_2647 statHandler Lnet/minecraft/class_3469;
 	FIELD field_2648 parent Lnet/minecraft/class_437;
 	FIELD field_26546 DOWNLOADING_STATS_TEXT Lnet/minecraft/class_2561;
@@ -20,23 +16,9 @@ CLASS net/minecraft/class_447 net/minecraft/client/gui/screen/StatsScreen
 	METHOD <init> (Lnet/minecraft/class_437;Lnet/minecraft/class_3469;)V
 		ARG 1 parent
 		ARG 2 statHandler
-	METHOD method_2267 createButtons ()V
-	METHOD method_2270 createLists ()V
 	METHOD method_2300 onStatsReady ()V
-	METHOD method_19390 selectStatList (Lnet/minecraft/class_4280;)V
-		ARG 1 list
-	METHOD method_19866 (Lnet/minecraft/class_4185;)V
-		ARG 1 button
-	METHOD method_19867 (Lnet/minecraft/class_4185;)V
-		ARG 1 button
-	METHOD method_19868 (Lnet/minecraft/class_4185;)V
-		ARG 1 button
-	METHOD method_19869 (Lnet/minecraft/class_4185;)V
-		ARG 1 button
 	METHOD method_27027 getStatTranslationKey (Lnet/minecraft/class_3445;)Ljava/lang/String;
 		ARG 0 stat
-	METHOD method_57739 (Lnet/minecraft/class_447;Lnet/minecraft/class_364;)V
-		ARG 1 child
 	CLASS class_4198 GeneralStatsListWidget
 		METHOD <init> (Lnet/minecraft/class_447;Lnet/minecraft/class_310;)V
 			ARG 2 client
@@ -51,11 +33,9 @@ CLASS net/minecraft/class_447 net/minecraft/client/gui/screen/StatsScreen
 	CLASS class_4200 ItemStatsListWidget
 		FIELD field_18754 blockStatTypes Ljava/util/List;
 		FIELD field_18755 itemStatTypes Ljava/util/List;
-		FIELD field_18756 selectedHeaderColumn I
 		FIELD field_18758 comparator Ljava/util/Comparator;
 		FIELD field_18759 selectedStatType Lnet/minecraft/class_3448;
 		FIELD field_18760 listOrder I
-		FIELD field_45422 headerIconTextures [Lnet/minecraft/class_2960;
 		METHOD <init> (Lnet/minecraft/class_447;Lnet/minecraft/class_310;)V
 			ARG 2 client
 		METHOD method_19408 selectStatType (Lnet/minecraft/class_3448;)V
@@ -66,9 +46,6 @@ CLASS net/minecraft/class_447 net/minecraft/client/gui/screen/StatsScreen
 			ARG 1 headerColumn
 		METHOD method_57742 getIconX (I)I
 			ARG 1 index
-		METHOD method_65518 select (II)Z
-			ARG 1 mouseX
-			ARG 2 mouseY
 		CLASS class_450 ItemComparator
 			METHOD compare (Ljava/lang/Object;Ljava/lang/Object;)I
 				ARG 1 a

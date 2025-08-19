@@ -8,10 +8,9 @@ CLASS net/minecraft/class_11595 net/minecraft/block/entity/CopperGolemStatueBloc
 		ARG 1 copperGolemEntity
 	METHOD method_72658 createCopperGolem (Lnet/minecraft/class_2680;)Lnet/minecraft/class_11573;
 		ARG 1 state
-	METHOD method_72659 setupEntity (Lnet/minecraft/class_2680;Lnet/minecraft/class_11573;Lnet/minecraft/class_1937;)Lnet/minecraft/class_11573;
+	METHOD method_72659 setupEntity (Lnet/minecraft/class_2680;Lnet/minecraft/class_11573;)Lnet/minecraft/class_11573;
 		ARG 1 state
 		ARG 2 entity
-		ARG 3 world
 	METHOD method_72660 (Ljava/lang/String;)Z
 		ARG 0 key
 	METHOD method_72661 getEntityData (Lnet/minecraft/class_11573;)Lnet/minecraft/class_2487;

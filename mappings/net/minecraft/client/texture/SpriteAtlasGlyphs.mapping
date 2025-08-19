@@ -13,13 +13,3 @@ CLASS net/minecraft/class_11714 net/minecraft/client/texture/SpriteAtlasGlyphs
 	METHOD method_73144 createFixedGlyphProvider (Lnet/minecraft/class_1058;)Lnet/minecraft/class_11603;
 		ARG 1 sprite
 	CLASS class_11715 FixedGlyphProvider
-	CLASS class_11716 BakedGlyph
-		FIELD comp_4585 bakedGlyph Lnet/minecraft/class_382;
-		FIELD field_61931 ADVANCE F
-		FIELD field_61932 MAX_X F
-		FIELD field_61933 glyph Lnet/minecraft/class_379;
-			COMMENT A stub implementation for {@link Glyph}, which only requires the glyph's advance.
-		METHOD method_73145 createBakedGlyph (Lnet/minecraft/class_8538;Lcom/mojang/blaze3d/textures/GpuTextureView;Lnet/minecraft/class_1058;)Lnet/minecraft/class_382;
-			ARG 0 renderLayerSet
-			ARG 1 textureView
-			ARG 2 sprite

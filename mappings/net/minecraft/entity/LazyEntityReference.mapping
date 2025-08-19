@@ -7,9 +7,8 @@ CLASS net/minecraft/class_10583 net/minecraft/entity/LazyEntityReference
 	METHOD <init> (Lnet/minecraft/class_10599;)V
 		ARG 1 value
 	METHOD method_66253 createCodec ()Lcom/mojang/serialization/Codec;
-	METHOD method_66254 resolve (Lnet/minecraft/class_10583;Lnet/minecraft/class_10598;Ljava/lang/Class;)Lnet/minecraft/class_10599;
+	METHOD method_66254 resolve (Lnet/minecraft/class_10583;Lnet/minecraft/class_1937;Ljava/lang/Class;)Lnet/minecraft/class_10599;
 		ARG 0 entity
-		ARG 1 world
 		ARG 2 type
 	METHOD method_66255 resolve (Lnet/minecraft/class_10598;Ljava/lang/Class;)Lnet/minecraft/class_10599;
 		ARG 1 world

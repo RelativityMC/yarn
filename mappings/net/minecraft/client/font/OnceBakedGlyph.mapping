@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_11643 net/minecraft/client/font/OnceBakedGlyph
-	METHOD comp_4585 bakedGlyph ()Lnet/minecraft/class_382;
-	METHOD method_72790 glyph ()Lnet/minecraft/class_379;

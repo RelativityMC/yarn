@@ -10,7 +10,7 @@ CLASS net/minecraft/class_10444 net/minecraft/client/render/item/ItemRenderState
 		ARG 1 add
 	METHOD method_65603 getParticleSprite (Lnet/minecraft/class_5819;)Lnet/minecraft/class_1058;
 		ARG 1 random
-	METHOD method_65604 render (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;II)V
+	METHOD method_65604 render (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;III)V
 		ARG 1 matrices
 		ARG 3 light
 		ARG 4 overlay
@@ -45,7 +45,7 @@ CLASS net/minecraft/class_10444 net/minecraft/client/render/item/ItemRenderState
 		METHOD method_65612 clear ()V
 		METHOD method_65613 initTints (I)[I
 			ARG 1 maxIndex
-		METHOD method_65614 render (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;II)V
+		METHOD method_65614 render (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;III)V
 			ARG 1 matrices
 			ARG 3 light
 			ARG 4 overlay

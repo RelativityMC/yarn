@@ -13,13 +13,4 @@ CLASS net/minecraft/class_11714 net/minecraft/client/texture/SpriteAtlasGlyphs
 		ARG 3 id
 	METHOD method_73144 createFixedGlyphProvider (Lnet/minecraft/class_1058;)Lnet/minecraft/class_11603;
 		ARG 1 sprite
-	CLASS class_11715 FixedGlyphProvider
 	CLASS class_11765 Glyph
-		METHOD method_73402 draw (Lorg/joml/Matrix4f;Lnet/minecraft/class_4588;IFFFI)V
-			ARG 1 matrix
-			ARG 2 vertexConsumers
-			ARG 3 light
-			ARG 4 x
-			ARG 5 y
-			ARG 6 z
-			ARG 7 color

@@ -19,7 +19,7 @@ plugins {
 	id 'net.fabricmc.filament'
 }
 
-def minecraft_version = "25w34b"
+def minecraft_version = "25w35a"
 
 filament {
 	minecraftVersion = minecraft_version

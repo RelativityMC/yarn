@@ -12,7 +12,7 @@ CLASS net/minecraft/class_378 net/minecraft/client/font/FontManager
 	FIELD field_61606 advanceValidatedFonts Lnet/minecraft/class_378$class_11638;
 	FIELD field_61934 atlasManager Lnet/minecraft/class_11697;
 	FIELD field_61935 spriteGlyphs Ljava/util/Map;
-	METHOD <init> (Lnet/minecraft/class_1060;Lnet/minecraft/class_11697;)V
+	METHOD <init> (Lnet/minecraft/class_1060;Lnet/minecraft/class_11697;Lnet/minecraft/class_11786;)V
 		ARG 1 textureManager
 		ARG 2 atlasManager
 	METHOD method_27539 createTextRenderer ()Lnet/minecraft/class_327;

@@ -27,7 +27,6 @@ CLASS net/minecraft/class_1041 net/minecraft/client/util/Window
 	FIELD field_55579 zeroWidthOrHeight Z
 	METHOD <init> (Lnet/minecraft/class_3678;Lnet/minecraft/class_323;Lnet/minecraft/class_543;Ljava/lang/String;Ljava/lang/String;)V
 		ARG 1 eventHandler
-		ARG 2 monitorTracker
 		ARG 3 settings
 		ARG 4 fullscreenVideoMode
 		ARG 5 title

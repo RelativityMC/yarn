@@ -1,10 +1,12 @@
 package net.fabricmc.filament.task;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
+import java.util.stream.StreamSupport;
 
 import javax.inject.Inject;
 
@@ -56,8 +58,10 @@ public abstract class JavadocLintTask extends DefaultTask {
 
 	@TaskAction
 	public void run(InputChanges changes) {
-		List<FileChange> fileChanges = new ArrayList<>();
-		changes.getFileChanges(mappingDirectory).forEach(fileChanges::add);
+		List<File> fileChanges = StreamSupport.stream(changes.getFileChanges(mappingDirectory).spliterator(), false)
+				.filter(change -> change.getChangeType() != ChangeType.REMOVED && change.getFileType() == FileType.FILE)
+				.map(FileChange::getFile)
+				.toList();
 
 		if (fileChanges.isEmpty()) {
 			// Nothing changed, nothing to do!
@@ -67,11 +71,7 @@ public abstract class JavadocLintTask extends DefaultTask {
 		WorkQueue workQueue = getWorkerExecutor().noIsolation();
 
 		workQueue.submit(LintAction.class, parameters -> {
-			for (FileChange change : fileChanges) {
-				if (change.getChangeType() != ChangeType.REMOVED && change.getFileType() == FileType.FILE) {
-					parameters.getMappingFiles().from(change.getFile());
-				}
-			}
+			parameters.getMappingFiles().setFrom(fileChanges);
 		});
 	}
 

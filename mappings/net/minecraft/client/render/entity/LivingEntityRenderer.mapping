@@ -40,7 +40,6 @@ CLASS net/minecraft/class_922 net/minecraft/client/render/entity/LivingEntityRen
 		COMMENT zombie, husk, or piglin undergoing conversion shakes.
 		ARG 1 state
 	METHOD method_38563 shouldFlipUpsideDown (Lnet/minecraft/class_1309;)Z
-		ARG 0 entity
 	METHOD method_62482 clampBodyYaw (Lnet/minecraft/class_1309;FF)F
 		ARG 0 entity
 		ARG 1 degrees

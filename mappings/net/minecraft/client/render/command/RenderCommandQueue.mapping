@@ -30,7 +30,7 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 3 light
 		ARG 4 overlay
 		ARG 5 outlineColor
-	METHOD method_73482 submitLabel (Lnet/minecraft/class_4587;Lnet/minecraft/class_243;Lnet/minecraft/class_2561;ZID)V
+	METHOD method_73482 submitLabel (Lnet/minecraft/class_4587;Lnet/minecraft/class_243;Lnet/minecraft/class_2561;ZIDLnet/minecraft/class_12075;)V
 		ARG 1 matrices
 		ARG 2 nameLabelPos
 		ARG 3 label

@@ -17,7 +17,6 @@ CLASS net/minecraft/class_10042 net/minecraft/client/render/entity/state/LivingE
 	FIELD field_53460 hurt Z
 	FIELD field_53461 invisibleToPlayer Z
 	FIELD field_53463 sleepingDirection Lnet/minecraft/class_2350;
-	FIELD field_53464 customName Lnet/minecraft/class_2561;
 	FIELD field_53465 pose Lnet/minecraft/class_4050;
 	FIELD field_53467 headItemRenderState Lnet/minecraft/class_10444;
 	FIELD field_55315 wearingSkullType Lnet/minecraft/class_2484$class_2485;

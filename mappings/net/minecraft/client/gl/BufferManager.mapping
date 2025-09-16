@@ -19,7 +19,7 @@ CLASS net/minecraft/class_10874 net/minecraft/client/gl/BufferManager
 		ARG 10 dstY1
 		ARG 11 mask
 		ARG 12 filter
-	METHOD method_68813 create (Lorg/lwjgl/opengl/GLCapabilities;Ljava/util/Set;)Lnet/minecraft/class_10874;
+	METHOD method_68813 create (Lorg/lwjgl/opengl/GLCapabilities;Ljava/util/Set;Lnet/minecraft/class_11541;)Lnet/minecraft/class_10874;
 		ARG 0 capabilities
 		ARG 1 usedCapabilities
 	METHOD method_71023 createBuffer ()I

@@ -57,7 +57,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_1705 inGameHud Lnet/minecraft/class_329;
 	FIELD field_1707 skinProvider Lnet/minecraft/class_1071;
 	FIELD field_1708 fontManager Lnet/minecraft/class_378;
-	FIELD field_1709 debugRenderer Lnet/minecraft/class_863;
 	FIELD field_1711 gameVersion Ljava/lang/String;
 	FIELD field_1712 nextDebugInfoUpdateTime J
 	FIELD field_1713 particleManager Lnet/minecraft/class_702;

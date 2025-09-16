@@ -55,3 +55,7 @@ CLASS net/minecraft/class_47 net/minecraft/loot/context/LootContext
 			ARG 0 type
 		METHOD method_315 getParameter ()Lnet/minecraft/class_169;
 	CLASS class_8487 Entry
+	CLASS class_9319 Source
+		FIELD field_49438 id Ljava/lang/String;
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lnet/minecraft/class_169;)V
+			ARG 3 id

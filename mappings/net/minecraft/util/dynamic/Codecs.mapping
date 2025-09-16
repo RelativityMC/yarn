@@ -43,7 +43,7 @@ CLASS net/minecraft/class_5699 net/minecraft/util/dynamic/Codecs
 	FIELD field_59994 VECTOR_3I Lcom/mojang/serialization/Codec;
 	FIELD field_60980 NBT_ELEMENT Lcom/mojang/serialization/Codec;
 	FIELD field_62069 GAME_PROFILE_CODEC Lcom/mojang/serialization/Codec;
-	FIELD field_62070 INT_STREAM_UUID_GAME_PROFILE_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_62070 INT_STREAM_UUID_GAME_PROFILE_CODEC Lcom/mojang/serialization/MapCodec;
 	METHOD method_36241 rangedInt (IILjava/util/function/Function;)Lcom/mojang/serialization/Codec;
 		ARG 0 min
 		ARG 1 max
@@ -304,7 +304,7 @@ CLASS net/minecraft/class_5699 net/minecraft/util/dynamic/Codecs
 		ARG 0 listx
 	METHOD method_73294 (Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 1 instance
-	METHOD method_73295 createGameProfileCodec (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
+	METHOD method_73295 createGameProfileCodec (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/MapCodec;
 		ARG 0 uuidCodec
 	CLASS 1
 		METHOD apply (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;Lcom/mojang/serialization/DataResult;)Lcom/mojang/serialization/DataResult;

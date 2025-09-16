@@ -32,33 +32,3 @@ CLASS net/minecraft/class_11827 net/minecraft/server/dedicated/management/dispat
 	METHOD method_74480 create (Lnet/minecraft/class_3176;)Lnet/minecraft/class_11827;
 		ARG 0 server
 	METHOD method_74481 getListener ()Lnet/minecraft/class_11870;
-	METHOD method_74482 builder ()Lnet/minecraft/class_11827$class_11989;
-	CLASS class_11989 Builder
-		FIELD field_62808 managementListener Lnet/minecraft/class_11870;
-		FIELD field_62809 allowlistHandler Lnet/minecraft/class_11826;
-		FIELD field_62810 banHandler Lnet/minecraft/class_11828;
-		FIELD field_62811 playerListHandler Lnet/minecraft/class_11831;
-		FIELD field_62812 gameRuleHanler Lnet/minecraft/class_11829;
-		FIELD field_62813 operatorHandler Lnet/minecraft/class_11830;
-		FIELD field_62814 propertiesHandler Lnet/minecraft/class_11832;
-		FIELD field_62815 serverHandler Lnet/minecraft/class_11833;
-		FIELD field_62816 submitter Lnet/minecraft/class_11991;
-		METHOD method_74483 build ()Lnet/minecraft/class_11827;
-		METHOD method_74484 allowlistHandler (Lnet/minecraft/class_11826;)Lnet/minecraft/class_11827$class_11989;
-			ARG 1 allowlistHandler
-		METHOD method_74485 banHandler (Lnet/minecraft/class_11828;)Lnet/minecraft/class_11827$class_11989;
-			ARG 1 banHandler
-		METHOD method_74486 submitter (Lnet/minecraft/class_11991;)Lnet/minecraft/class_11827$class_11989;
-			ARG 1 submitter
-		METHOD method_74487 gameRuleHanler (Lnet/minecraft/class_11829;)Lnet/minecraft/class_11827$class_11989;
-			ARG 1 gameRuleHanler
-		METHOD method_74488 operatorHandler (Lnet/minecraft/class_11830;)Lnet/minecraft/class_11827$class_11989;
-			ARG 1 operatorHandler
-		METHOD method_74489 playerListHandler (Lnet/minecraft/class_11831;)Lnet/minecraft/class_11827$class_11989;
-			ARG 1 playerListHandler
-		METHOD method_74490 propertiesHandler (Lnet/minecraft/class_11832;)Lnet/minecraft/class_11827$class_11989;
-			ARG 1 propertiesHandler
-		METHOD method_74491 serverHandler (Lnet/minecraft/class_11833;)Lnet/minecraft/class_11827$class_11989;
-			ARG 1 serverHandler
-		METHOD method_74492 managementListener (Lnet/minecraft/class_11870;)Lnet/minecraft/class_11827$class_11989;
-			ARG 1 managementListener

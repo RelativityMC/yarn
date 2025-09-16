@@ -27,12 +27,11 @@ CLASS net/minecraft/class_11568 net/minecraft/entity/ai/brain/task/MoveItemsTask
 		ARG 6 interactionCallbacks
 		ARG 7 travellingCallback
 		ARG 8 storagePredicate
-	METHOD method_72398 isWithinRange (DLnet/minecraft/class_11568$class_11572;Lnet/minecraft/class_1937;Lnet/minecraft/class_1314;)Z
+	METHOD method_72398 isWithinRange (DLnet/minecraft/class_11568$class_11572;Lnet/minecraft/class_1937;Lnet/minecraft/class_1314;Lnet/minecraft/class_243;)Z
 		ARG 1 range
-		ARG 3 storage
 		ARG 4 world
 		ARG 5 entity
-	METHOD method_72399 tick (Lnet/minecraft/class_3218;Lnet/minecraft/class_1314;)V
+	METHOD method_72399 tick (Lnet/minecraft/class_3218;Lnet/minecraft/class_1314;)Z
 		ARG 1 world
 		ARG 2 entity
 	METHOD method_72401 (Lnet/minecraft/class_3218;Lnet/minecraft/class_1923;)Ljava/util/stream/Stream;
@@ -167,11 +166,9 @@ CLASS net/minecraft/class_11568 net/minecraft/entity/ai/brain/task/MoveItemsTask
 		ARG 1 entity
 	METHOD method_72450 resetNavigation (Lnet/minecraft/class_1314;)V
 		ARG 1 entity
-	METHOD method_74018 isVisible (Lnet/minecraft/class_1937;ZLnet/minecraft/class_2338;Lnet/minecraft/class_11568$class_11572;Lnet/minecraft/class_1314;)Z
+	METHOD method_74018 isVisible (Lnet/minecraft/class_1937;ZLnet/minecraft/class_243;Lnet/minecraft/class_11568$class_11572;Lnet/minecraft/class_1314;)Z
 		ARG 1 world
 		ARG 2 nextToStorage
-		ARG 3 pos
-		ARG 4 storage
 		ARG 5 entity
 	METHOD method_74019 (Ljava/util/Set;Ljava/util/Set;Lnet/minecraft/class_4208;)Z
 		ARG 2 pos

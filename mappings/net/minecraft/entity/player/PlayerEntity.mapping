@@ -22,15 +22,10 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 	FIELD field_7520 experienceLevel I
 	FIELD field_7523 reducedDebugInfo Z
 	FIELD field_7525 selectedItem Lnet/minecraft/class_1799;
-	FIELD field_18134 POSE_DIMENSIONS Ljava/util/Map;
-	FIELD field_18135 STANDING_DIMENSIONS Lnet/minecraft/class_4048;
 	FIELD field_30644 MAX_HEALTH I
 	FIELD field_30645 SLEEP_DURATION I
 	FIELD field_30646 WAKE_UP_DURATION I
 	FIELD field_30647 ENDER_SLOT_OFFSET I
-	FIELD field_30648 CROUCH_BOX_HEIGHT F
-	FIELD field_30649 SWIMMING_BOX_WIDTH F
-	FIELD field_30650 SWIMMING_BOX_HEIGHT F
 	FIELD field_39445 lastDeathPos Ljava/util/Optional;
 	FIELD field_41765 damageTiltYaw F
 	FIELD field_47819 BLOCK_INTERACTION_RANGE F

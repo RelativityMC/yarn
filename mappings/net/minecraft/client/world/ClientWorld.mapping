@@ -112,9 +112,6 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 	METHOD method_23789 getLightningTicksLeft ()I
 	METHOD method_24462 (Lnet/minecraft/class_2338$class_2339;Lnet/minecraft/class_4761;)V
 		ARG 2 config
-	METHOD method_27873 setSpawnPos (Lnet/minecraft/class_2338;F)V
-		ARG 1 pos
-		ARG 2 angle
 	METHOD method_28103 getDimensionEffects ()Lnet/minecraft/class_5294;
 	METHOD method_29089 setTime (JJZ)V
 		ARG 1 time
@@ -210,8 +207,6 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 		FIELD field_24441 difficulty Lnet/minecraft/class_1267;
 		FIELD field_24442 difficultyLocked Z
 		FIELD field_24607 flatWorld Z
-		FIELD field_26372 spawnAngle F
-		FIELD field_48402 spawnPos Lnet/minecraft/class_2338;
 		METHOD <init> (Lnet/minecraft/class_1267;ZZ)V
 			ARG 1 difficulty
 			ARG 2 hardcore

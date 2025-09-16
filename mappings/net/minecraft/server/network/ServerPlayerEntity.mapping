@@ -334,7 +334,7 @@ CLASS net/minecraft/class_3222 net/minecraft/server/network/ServerPlayerEntity
 	CLASS class_9773 RespawnPos
 		FIELD comp_2811 pos Lnet/minecraft/class_243;
 		METHOD comp_2811 pos ()Lnet/minecraft/class_243;
-		METHOD method_60595 fromCurrentPos (Lnet/minecraft/class_243;Lnet/minecraft/class_2338;)Lnet/minecraft/class_3222$class_9773;
+		METHOD method_60595 fromCurrentPos (Lnet/minecraft/class_243;Lnet/minecraft/class_2338;F)Lnet/minecraft/class_3222$class_9773;
 			ARG 0 respawnPos
 			ARG 1 currentPos
 		METHOD method_60596 getYaw (Lnet/minecraft/class_243;Lnet/minecraft/class_2338;)F

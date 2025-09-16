@@ -19,12 +19,6 @@ CLASS net/minecraft/class_8985 net/minecraft/client/render/debug/BreezeDebugRend
 		ARG 11 color
 	METHOD method_55257 (Lnet/minecraft/class_1297;)Lnet/minecraft/class_243;
 		ARG 1 attackTarget
-	METHOD method_55259 render (Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;DDDLnet/minecraft/class_12021;)V
-		ARG 1 matrices
-		ARG 2 vertexConsumers
-		ARG 3 cameraX
-		ARG 5 cameraY
-		ARG 7 cameraZ
 	METHOD method_55260 (Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;DDDLnet/minecraft/class_1297;Lnet/minecraft/class_243;)V
 		ARG 9 targetPos
 	METHOD method_55261 (Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;DDDLnet/minecraft/class_1297;Lnet/minecraft/class_2338;)V

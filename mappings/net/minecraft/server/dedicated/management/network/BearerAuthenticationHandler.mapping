@@ -5,9 +5,6 @@ CLASS net/minecraft/class_12000 net/minecraft/server/dedicated/management/networ
 	FIELD field_62833 token Lnet/minecraft/class_12003;
 	METHOD <init> (Lnet/minecraft/class_12003;)V
 		ARG 1 token
-	METHOD channelRead (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Object;)V
-		ARG 1 context
-		ARG 2 object
 	METHOD method_74508 getHostAddress (Lio/netty/channel/ChannelHandlerContext;)Ljava/lang/String;
 		ARG 1 context
 	METHOD method_74509 (Lio/netty/channel/ChannelHandlerContext;Lio/netty/util/concurrent/Future;)V
@@ -20,8 +17,6 @@ CLASS net/minecraft/class_12000 net/minecraft/server/dedicated/management/networ
 	METHOD method_74512 tokenMatches (Ljava/lang/String;)Z
 		ARG 1 requestToken
 	METHOD method_74513 isAuthenticated (Lio/netty/handler/codec/http/HttpRequest;)Z
-		ARG 1 request
-	METHOD method_74514 isWebSocketUpgrade (Lio/netty/handler/codec/http/HttpRequest;)Z
 		ARG 1 request
 	CLASS class_12001 Result
 		FIELD field_62834 successful Z

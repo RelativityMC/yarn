@@ -21,12 +21,6 @@ CLASS net/minecraft/class_11786 net/minecraft/client/texture/PlayerSkinCache
 	CLASS 1
 		METHOD load (Ljava/lang/Object;)Ljava/lang/Object;
 			ARG 1 profile
-		METHOD method_73497 (Lcom/mojang/authlib/GameProfile;)Ljava/util/concurrent/CompletionStage;
-			ARG 1 profile
-		METHOD method_73498 (Lcom/mojang/authlib/GameProfile;Lnet/minecraft/class_8685;)Lnet/minecraft/class_11786$class_11787;
-			ARG 2 skinTextures
-		METHOD method_73499 (Lcom/mojang/authlib/GameProfile;Ljava/util/Optional;)Ljava/util/Optional;
-			ARG 2 textures
 	CLASS 2
 		METHOD load (Ljava/lang/Object;)Ljava/lang/Object;
 			ARG 1 profile
@@ -36,7 +30,7 @@ CLASS net/minecraft/class_11786 net/minecraft/client/texture/PlayerSkinCache
 		FIELD field_62223 renderLayer Lnet/minecraft/class_1921;
 		FIELD field_62482 textureView Lcom/mojang/blaze3d/textures/GpuTextureView;
 		FIELD field_62483 textRenderLayers Lnet/minecraft/class_8538;
-		METHOD <init> (Lnet/minecraft/class_11786;Lcom/mojang/authlib/GameProfile;Lnet/minecraft/class_8685;)V
+		METHOD <init> (Lnet/minecraft/class_11786;Lcom/mojang/authlib/GameProfile;Lnet/minecraft/class_8685;Lnet/minecraft/class_8685$class_11892;)V
 			ARG 2 profile
 			ARG 3 textures
 		METHOD equals (Ljava/lang/Object;)Z

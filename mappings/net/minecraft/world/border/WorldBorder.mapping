@@ -130,11 +130,6 @@ CLASS net/minecraft/class_2784 net/minecraft/world/border/WorldBorder
 		ARG 5 z
 	METHOD method_61770 clamp (Lnet/minecraft/class_243;)Lnet/minecraft/class_243;
 		ARG 1 pos
-	METHOD method_67543 (Lnet/minecraft/class_2784$class_10763;)D
-		ARG 0 distance
-	METHOD method_67544 calculateDistancesFromCamera (DD)Ljava/util/List;
-		ARG 1 x
-		ARG 3 z
 	METHOD method_74147 (Lnet/minecraft/class_18$class_10740;)Lcom/mojang/serialization/Codec;
 		ARG 0 context
 	METHOD method_74148 (Lnet/minecraft/class_18$class_10740;)Lnet/minecraft/class_2784;
@@ -191,6 +186,3 @@ CLASS net/minecraft/class_2784 net/minecraft/world/border/WorldBorder
 		METHOD method_74149 toWorldBorder ()Lnet/minecraft/class_2784;
 		METHOD method_74150 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance
-	CLASS class_10763 Distance
-		FIELD comp_3672 value D
-		METHOD comp_3672 value ()D

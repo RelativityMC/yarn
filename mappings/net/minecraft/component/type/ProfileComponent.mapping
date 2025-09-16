@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_9296 net/minecraft/component/type/ProfileComponent
-	FIELD field_49359 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_49360 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_62071 profile Lcom/mojang/authlib/GameProfile;
 	METHOD <init> (Lcom/mojang/authlib/GameProfile;Lnet/minecraft/class_8685$class_11892;)V

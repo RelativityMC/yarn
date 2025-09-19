@@ -36,14 +36,10 @@ CLASS net/minecraft/class_11568 net/minecraft/entity/ai/brain/task/MoveItemsTask
 	METHOD method_72399 tick (Lnet/minecraft/class_3218;Lnet/minecraft/class_1314;)Z
 		ARG 1 world
 		ARG 2 entity
-	METHOD method_72401 (Lnet/minecraft/class_3218;Lnet/minecraft/class_1923;)Ljava/util/stream/Stream;
-		ARG 1 positions
 	METHOD method_72402 hasItem (Lnet/minecraft/class_1263;)Z
 		ARG 0 inventory
 	METHOD method_72403 resetVisitedPositions (Lnet/minecraft/class_1314;)V
 		ARG 1 entity
-	METHOD method_72404 (Lnet/minecraft/class_1314;Lnet/minecraft/class_3218;Ljava/util/Set;Ljava/util/Set;Lnet/minecraft/class_238;Ljava/util/Map$Entry;)Ljava/util/stream/Stream;
-		ARG 6 entry
 	METHOD method_72405 canInsert (Lnet/minecraft/class_1314;Lnet/minecraft/class_1263;)Z
 		ARG 0 entity
 		ARG 1 inventory
@@ -60,19 +56,10 @@ CLASS net/minecraft/class_11568 net/minecraft/entity/ai/brain/task/MoveItemsTask
 		ARG 1 entity
 		ARG 2 world
 		ARG 3 pos
-	METHOD method_72409 getStorageFor (Lnet/minecraft/class_1314;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2586;Ljava/util/Set;Ljava/util/Set;Lnet/minecraft/class_238;)Ljava/util/Optional;
-		ARG 1 entity
-		ARG 2 world
-		ARG 3 pos
-		ARG 4 blockEntity
-		ARG 5 visitedPositions
-		ARG 6 unreachablePositions
-		ARG 7 searchBox
+	METHOD method_72409 getStorageFor (Lnet/minecraft/class_1314;Lnet/minecraft/class_1937;Lnet/minecraft/class_2586;Ljava/util/Set;Ljava/util/Set;Lnet/minecraft/class_238;)Lnet/minecraft/class_11568$class_11572;
 	METHOD method_72410 testContainer (Lnet/minecraft/class_1314;Lnet/minecraft/class_2680;)Z
 		ARG 1 entity
 		ARG 2 state
-	METHOD method_72411 (Lnet/minecraft/class_1314;Ljava/util/Set;Ljava/util/Set;Lnet/minecraft/class_1937;Lnet/minecraft/class_238;Lnet/minecraft/class_11568$class_11572;)Z
-		ARG 6 storage
 	METHOD method_72412 createSetInteractionStateCallback (Lnet/minecraft/class_11568$class_11569;)Ljava/util/function/BiConsumer;
 		ARG 1 state
 	METHOD method_72413 (Lnet/minecraft/class_11568$class_11569;Lnet/minecraft/class_1314;Lnet/minecraft/class_1263;)V
@@ -84,8 +71,6 @@ CLASS net/minecraft/class_11568 net/minecraft/entity/ai/brain/task/MoveItemsTask
 		ARG 1 storage
 		ARG 2 world
 		ARG 3 entity
-	METHOD method_72417 (Lnet/minecraft/class_11568$class_11572;Lnet/minecraft/class_11568$class_11572;)Ljava/util/List;
-		ARG 1 storagex
 	METHOD method_72418 getContainerStorages (Lnet/minecraft/class_11568$class_11572;Lnet/minecraft/class_1937;)Ljava/util/List;
 		ARG 1 storage
 		ARG 2 world
@@ -104,9 +89,6 @@ CLASS net/minecraft/class_11568 net/minecraft/entity/ai/brain/task/MoveItemsTask
 		ARG 2 checkedPositions
 		ARG 3 storage
 		ARG 4 visited
-	METHOD method_72424 findNearestStorage (Lnet/minecraft/class_3218;Lnet/minecraft/class_1314;)Ljava/util/Optional;
-		ARG 1 world
-		ARG 2 entity
 	METHOD method_72426 extractStack (Lnet/minecraft/class_1263;)Lnet/minecraft/class_1799;
 		ARG 0 inventory
 	METHOD method_72427 transitionToQueuing (Lnet/minecraft/class_1314;)V
@@ -176,8 +158,6 @@ CLASS net/minecraft/class_11568 net/minecraft/entity/ai/brain/task/MoveItemsTask
 		ARG 5 entity
 	METHOD method_74019 (Ljava/util/Set;Ljava/util/Set;Lnet/minecraft/class_4208;)Z
 		ARG 2 pos
-	METHOD method_74020 (Lnet/minecraft/class_1314;Ljava/util/Map$Entry;)Ljava/lang/Double;
-		ARG 1 entry
 	METHOD method_74021 markUnreachable (Lnet/minecraft/class_1314;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)V
 		ARG 1 entity
 		ARG 2 world
@@ -227,10 +207,7 @@ CLASS net/minecraft/class_11568 net/minecraft/entity/ai/brain/task/MoveItemsTask
 			ARG 1 state
 			ARG 2 world
 			ARG 3 pos
-		METHOD method_72454 forContainer (Lnet/minecraft/class_2338;Lnet/minecraft/class_1937;)Ljava/util/Optional;
+		METHOD method_72454 forContainer (Lnet/minecraft/class_2338;Lnet/minecraft/class_1937;)Lnet/minecraft/class_11568$class_11572;
 			ARG 0 pos
 			ARG 1 world
-		METHOD method_72455 forContainer (Lnet/minecraft/class_2338;Lnet/minecraft/class_2586;Lnet/minecraft/class_1937;)Ljava/util/Optional;
-			ARG 0 pos
-			ARG 1 blockEntity
-			ARG 2 world
+		METHOD method_72455 forContainer (Lnet/minecraft/class_2586;Lnet/minecraft/class_1937;)Lnet/minecraft/class_11568$class_11572;

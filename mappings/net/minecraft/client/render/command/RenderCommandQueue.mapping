@@ -30,14 +30,9 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 3 light
 		ARG 4 overlay
 		ARG 5 outlineColor
-	METHOD method_73482 submitLabel (Lnet/minecraft/class_4587;Lnet/minecraft/class_243;Lnet/minecraft/class_2561;ZIDLnet/minecraft/class_12075;)V
+	METHOD method_73482 submitLabel (Lnet/minecraft/class_4587;Lnet/minecraft/class_243;ILnet/minecraft/class_2561;ZIDLnet/minecraft/class_12075;)V
 		ARG 1 matrices
 		ARG 2 nameLabelPos
-		ARG 3 label
-		ARG 4 notSneaking
-		ARG 5 light
-		ARG 6 squaredDistanceToCamera
-		ARG 8 cameraRenderState
 	METHOD method_73483 submitCustom (Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;Lnet/minecraft/class_11659$class_11660;)V
 		ARG 1 matrices
 		ARG 2 renderLayer

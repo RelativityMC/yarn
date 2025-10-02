@@ -413,7 +413,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		COMMENT @see AbstractBlockState#getFluidState
 		COMMENT @see net.minecraft.fluid.Fluids#WATER
 		ARG 1 state
-	METHOD method_9548 onEntityCollision (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1297;Lnet/minecraft/class_10774;)V
+	METHOD method_9548 onEntityCollision (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1297;Lnet/minecraft/class_10774;Z)V
 		COMMENT Called when the entity's collision box intersects the block. Therefore,
 		COMMENT this method is not called for blocks with a collision; use {@link Block#onSteppedOn}
 		COMMENT for those blocks.
@@ -1108,7 +1108,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 			ARG 2 pos
 			ARG 3 type
 			ARG 4 data
-		METHOD method_26178 onEntityCollision (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1297;Lnet/minecraft/class_10774;)V
+		METHOD method_26178 onEntityCollision (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1297;Lnet/minecraft/class_10774;Z)V
 			ARG 1 world
 			ARG 2 pos
 			ARG 3 entity

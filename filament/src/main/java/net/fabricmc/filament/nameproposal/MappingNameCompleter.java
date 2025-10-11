@@ -21,6 +21,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.jar.JarEntry;
@@ -28,7 +29,9 @@ import java.util.jar.JarInputStream;
 import java.util.regex.Pattern;
 
 import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.Type;
 import org.objectweb.asm.tree.ClassNode;
+import org.objectweb.asm.tree.RecordComponentNode;
 
 import net.fabricmc.mappingio.MappingReader;
 import net.fabricmc.mappingio.MappingWriter;
@@ -53,10 +56,12 @@ public class MappingNameCompleter {
 		Map<MappingEntry, String> fieldNames = nameFinder.getFieldNames();
 		Map<MappingEntry, String> methodNames = nameFinder.getMethodNames();
 		Map<String, String> recordNames = nameFinder.getRecordNames();
+		Map<String, List<RecordComponentNode>> recordComponentNames = nameFinder.getRecordComponents();
 
 		System.out.printf("Found %d field names%n", fieldNames.size());
 		System.out.printf("Found %d method names%n", methodNames.size());
 		System.out.printf("Found %d record names%n", recordNames.size());
+		System.out.printf("Found %d record constructors%n", recordComponentNames.size());
 
 		final MemoryMappingTree yarn = readMappings(inputYarnMappings);
 		final int yarnIntermediaryNs = yarn.getNamespaceId("intermediary");
@@ -95,6 +100,46 @@ public class MappingNameCompleter {
 			if (yarnFieldName == null || yarnFieldName.startsWith("method_") || yarnFieldName.startsWith("comp_")) {
 				// Set a new dst name if it doesn't have one, or matches intermediary
 				methodMapping.setDstName(entry.getValue(), yarnNamedNs);
+			}
+		}
+
+		for (Map.Entry<String, List<RecordComponentNode>> entry : recordComponentNames.entrySet()) {
+			String classNameIntermediary = entry.getKey();
+			List<RecordComponentNode> recordComponents = entry.getValue();
+
+			yarn.visitClass(classNameIntermediary);
+			MappingTree.ClassMapping classMapping = yarn.getClass(classNameIntermediary, yarnIntermediaryNs);
+
+			StringBuilder initDescBuilder = new StringBuilder();
+			initDescBuilder.append("(");
+
+			for (RecordComponentNode node : recordComponents) {
+				initDescBuilder.append(node.descriptor);
+			}
+
+			initDescBuilder.append(")V");
+			String initDesc = initDescBuilder.toString();
+
+			yarn.visitMethod("<init>", initDesc);
+			MappingTree.MethodMapping methodMapping = classMapping.getMethod("<init>", initDesc, yarnIntermediaryNs);
+			int lvIndex = 1;
+
+			for (RecordComponentNode recordComponentNode : recordComponents) {
+				int currentLvIndex = lvIndex;
+				lvIndex += Type.getType(recordComponentNode.descriptor).getSize();
+				String name = recordNames.get(recordComponentNode.name);
+
+				if (name == null) {
+					continue;
+				}
+
+				yarn.visitMethodArg(-1, currentLvIndex, null);
+				MappingTree.MethodArgMapping argMapping = methodMapping.getArg(-1, currentLvIndex, null);
+				String yarnArgName = argMapping.getName(yarnNamedNs);
+
+				if (yarnArgName == null) {
+					argMapping.setDstName(name, yarnNamedNs);
+				}
 			}
 		}
 

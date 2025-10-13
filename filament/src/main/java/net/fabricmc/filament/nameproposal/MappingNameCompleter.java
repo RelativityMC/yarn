@@ -109,6 +109,11 @@ public class MappingNameCompleter {
 
 			yarn.visitClass(classNameIntermediary);
 			MappingTree.ClassMapping classMapping = yarn.getClass(classNameIntermediary, yarnIntermediaryNs);
+			String className = classMapping.getName(yarnNamedNs);
+
+			if (className == null) {
+				classMapping.setDstName(classNameIntermediary, yarnNamedNs);
+			}
 
 			StringBuilder initDescBuilder = new StringBuilder();
 			initDescBuilder.append("(");
@@ -122,6 +127,7 @@ public class MappingNameCompleter {
 
 			yarn.visitMethod("<init>", initDesc);
 			MappingTree.MethodMapping methodMapping = classMapping.getMethod("<init>", initDesc, yarnIntermediaryNs);
+			methodMapping.setDstName("<init>", yarnNamedNs);
 			int lvIndex = 1;
 
 			for (RecordComponentNode recordComponentNode : recordComponents) {

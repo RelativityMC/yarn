@@ -110,8 +110,6 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 	METHOD method_23787 getStarBrightness (F)F
 		ARG 1 tickProgress
 	METHOD method_23789 getLightningTicksLeft ()I
-	METHOD method_24462 (Lnet/minecraft/class_2338$class_2339;Lnet/minecraft/class_4761;)V
-		ARG 2 config
 	METHOD method_28103 getDimensionEffects ()Lnet/minecraft/class_5294;
 	METHOD method_29089 setTime (JJZ)V
 		ARG 1 time

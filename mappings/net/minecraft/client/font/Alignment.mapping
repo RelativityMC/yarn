@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_11735 net/minecraft/client/font/Alignment
+	METHOD method_73214 getAdjustedX (II)I
+		ARG 1 x
+		ARG 2 width

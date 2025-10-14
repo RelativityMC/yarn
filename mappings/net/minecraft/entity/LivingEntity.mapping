@@ -802,7 +802,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_72397 (Lnet/minecraft/class_1297;Lnet/minecraft/class_1799;Lnet/minecraft/class_8567$class_8568;)Lnet/minecraft/class_8567;
 		ARG 3 parameterSetBuilder
 	METHOD method_74092 shouldDrown ()Z
-	METHOD method_75118 isInPiercingCooldown (Lnet/minecraft/class_1297;)Z
+	METHOD method_75118 isInPiercingCooldown (Lnet/minecraft/class_1297;I)Z
 		ARG 1 target
 	METHOD method_75119 startPiercingCooldown (Lnet/minecraft/class_1297;)V
 		ARG 1 target

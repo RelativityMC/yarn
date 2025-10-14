@@ -62,8 +62,6 @@ CLASS net/minecraft/class_437 net/minecraft/client/gui/screen/Screen
 		COMMENT <p>This method is called when this screen is {@linkplain net.minecraft.client.MinecraftClient#setScreen(Screen) opened} or resized.
 	METHOD method_25429 addSelectableChild (Lnet/minecraft/class_364;)Lnet/minecraft/class_364;
 		ARG 1 child
-	METHOD method_25430 handleTextClick (Lnet/minecraft/class_2583;)Z
-		ARG 1 style
 	METHOD method_25432 removed ()V
 	METHOD method_25435 getNarratedTitle ()Lnet/minecraft/class_2561;
 	METHOD method_25440 getTitle ()Lnet/minecraft/class_2561;
@@ -171,9 +169,6 @@ CLASS net/minecraft/class_437 net/minecraft/client/gui/screen/Screen
 		ARG 2 screenAfterRun
 	METHOD method_71845 (Ljava/net/URI;Lnet/minecraft/class_310;Lnet/minecraft/class_437;Z)V
 		ARG 3 confirmed
-	METHOD method_71846 handleClickEvent (Lnet/minecraft/class_310;Lnet/minecraft/class_2558;)V
-		ARG 1 client
-		ARG 2 clickEvent
 	METHOD method_71847 handleBasicClickEvent (Lnet/minecraft/class_2558;Lnet/minecraft/class_310;Lnet/minecraft/class_437;)V
 		ARG 0 clickEvent
 		ARG 1 client

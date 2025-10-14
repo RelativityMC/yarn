@@ -158,7 +158,6 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 		ARG 1 stack
 		ARG 2 retainOwnership
 	METHOD method_7330 updateTurtleHelmet ()V
-	METHOD method_7331 requestRespawn ()V
 	METHOD method_7332 canConsume (Z)Z
 		ARG 1 ignoreHunger
 	METHOD method_7333 lockRecipes (Ljava/util/Collection;)I
@@ -373,7 +372,7 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 	METHOD method_75198 handleAttackDamage (Lnet/minecraft/class_1297;F)V
 		ARG 1 target
 		ARG 2 healthBeforeAttack
-	METHOD method_75199 onTargetDamaged (Lnet/minecraft/class_1297;Lnet/minecraft/class_1799;Lnet/minecraft/class_1282;)V
+	METHOD method_75199 onTargetDamaged (Lnet/minecraft/class_1297;Lnet/minecraft/class_1799;Lnet/minecraft/class_1282;Z)V
 		ARG 1 target
 		ARG 2 stack
 		ARG 3 damageSource
@@ -395,10 +394,8 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 		ARG 1 stack
 	CLASS class_1658 SleepFailureReason
 		COMMENT A reason why a player cannot start sleeping.
-		FIELD field_18593 message Lnet/minecraft/class_2561;
-		METHOD <init> (Ljava/lang/String;ILnet/minecraft/class_2561;)V
-			ARG 3 message
-		METHOD method_19206 getMessage ()Lnet/minecraft/class_2561;
+		FIELD comp_5144 message Lnet/minecraft/class_2561;
+		METHOD comp_5144 message ()Lnet/minecraft/class_2561;
 			COMMENT Returns the action bar message that is sent to the player
 			COMMENT when sleeping fails with this reason.
 			COMMENT

@@ -376,6 +376,7 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 		ARG 1 target
 		ARG 2 stack
 		ARG 3 damageSource
+		ARG 4 runEnchantmentEffects
 	METHOD method_75200 addAttackParticlesAndSounds (Lnet/minecraft/class_1297;ZZZF)V
 		ARG 1 target
 		ARG 2 criticalHit

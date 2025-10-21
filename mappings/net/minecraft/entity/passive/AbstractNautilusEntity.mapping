@@ -7,9 +7,6 @@ CLASS net/minecraft/class_12116 net/minecraft/entity/passive/AbstractNautilusEnt
 	METHOD method_75152 dash (FLnet/minecraft/class_1657;)V
 		ARG 1 strength
 		ARG 2 controller
-	METHOD method_75153 tickAir (Lnet/minecraft/class_3218;I)V
-		ARG 1 world
-		ARG 2 air
 	METHOD method_75154 canSpawn (Lnet/minecraft/class_1299;Lnet/minecraft/class_1936;Lnet/minecraft/class_3730;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)Z
 		ARG 0 type
 		ARG 1 world

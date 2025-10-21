@@ -4,7 +4,7 @@ CLASS net/minecraft/class_12000 net/minecraft/server/dedicated/management/networ
 	FIELD field_62833 token Lnet/minecraft/class_12003;
 	FIELD field_63006 AUTHENTICATED_KEY Lio/netty/util/AttributeKey;
 	FIELD field_63671 WEBSOCKET_AUTH_ALLOWED_KEY Lio/netty/util/AttributeKey;
-	FIELD field_63672 PROTOCOL Ljava/lang/CharSequence;
+	FIELD field_63672 PROTOCOL Ljava/lang/String;
 	FIELD field_63673 PROTOCOL_PREFIX Ljava/lang/String;
 	FIELD field_63674 allowedOrigins Ljava/util/Set;
 	METHOD <init> (Lnet/minecraft/class_12003;Ljava/lang/String;)V

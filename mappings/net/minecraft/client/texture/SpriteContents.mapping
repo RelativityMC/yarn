@@ -7,18 +7,16 @@ CLASS net/minecraft/class_7764 net/minecraft/client/texture/SpriteContents
 	FIELD field_40540 mipmapLevelsImages [Lnet/minecraft/class_1011;
 	FIELD field_40541 animation Lnet/minecraft/class_7764$class_5790;
 	FIELD field_61860 additionalMetadata Ljava/util/List;
-	FIELD field_63617 darkenedCutoutMipmap Z
 	METHOD <init> (Lnet/minecraft/class_2960;Lnet/minecraft/class_7771;Lnet/minecraft/class_1011;)V
 		ARG 1 id
 		ARG 2 dimensions
 		ARG 3 image
-	METHOD <init> (Lnet/minecraft/class_2960;Lnet/minecraft/class_7771;Lnet/minecraft/class_1011;Ljava/util/Optional;Ljava/util/List;Z)V
+	METHOD <init> (Lnet/minecraft/class_2960;Lnet/minecraft/class_7771;Lnet/minecraft/class_1011;Ljava/util/Optional;Ljava/util/List;Lnet/minecraft/class_12253;)V
 		ARG 1 id
 		ARG 2 dimensions
 		ARG 3 image
 		ARG 4 animationResourceMetadata
 		ARG 5 additionalMetadata
-		ARG 6 darkenedCutoutMipmap
 	METHOD method_45808 generateMipmaps (I)V
 		ARG 1 mipmapLevels
 	METHOD method_45809 upload (IILcom/mojang/blaze3d/textures/GpuTexture;)V
@@ -29,14 +27,13 @@ CLASS net/minecraft/class_7764 net/minecraft/client/texture/SpriteContents
 		ARG 1 frame
 		ARG 2 x
 		ARG 3 y
-	METHOD method_45811 upload (IIII[Lnet/minecraft/class_1011;Lcom/mojang/blaze3d/textures/GpuTexture;I)V
+	METHOD method_45811 upload (IIII[Lnet/minecraft/class_1011;Lcom/mojang/blaze3d/textures/GpuTexture;)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 unpackSkipPixels
 		ARG 4 unpackSkipRows
 		ARG 5 images
 		ARG 6 texture
-		ARG 7 maxMipmapLevels
 	METHOD method_45812 createAnimation (Lnet/minecraft/class_7771;IILnet/minecraft/class_1079;)Lnet/minecraft/class_7764$class_5790;
 		ARG 1 dimensions
 		ARG 2 imageWidth
@@ -84,12 +81,11 @@ CLASS net/minecraft/class_7764 net/minecraft/client/texture/SpriteContents
 		METHOD method_33450 getDistinctFrameCount ()Ljava/util/stream/IntStream;
 		METHOD method_33451 getFrameY (I)I
 			ARG 1 frame
-		METHOD method_33455 upload (IIILcom/mojang/blaze3d/textures/GpuTexture;I)V
+		METHOD method_33455 upload (IIILcom/mojang/blaze3d/textures/GpuTexture;)V
 			ARG 1 x
 			ARG 2 y
 			ARG 3 frame
 			ARG 4 texture
-			ARG 5 maxMipmapLevels
 		METHOD method_45823 createAnimator ()Lnet/minecraft/class_7768;
 	CLASS class_5791 AnimationFrame
 		FIELD comp_3445 index I

@@ -1768,13 +1768,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		COMMENT @see #isFrozen
 		COMMENT @see #getMinFreezeDamageTicks
 		ARG 1 frozenTicks
-	METHOD method_32318 getStackReference (I)Lnet/minecraft/class_5630;
-		COMMENT Obtains a stack reference to be modified. Used by commands like
-		COMMENT {@code /loot} or {@code /item}.
-		COMMENT
-		COMMENT @see net.minecraft.command.argument.ItemSlotArgumentType
-		ARG 1 mappedIndex
-			COMMENT the mapped index as given by the item slot argument
 	METHOD method_32319 setInPowderSnow (Z)V
 		ARG 1 inPowderSnow
 	METHOD method_32875 emitGameEvent (Lnet/minecraft/class_6880;Lnet/minecraft/class_1297;)V

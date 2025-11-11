@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_7948
+	CLASS class_12299
+		METHOD method_52853 get (Lnet/minecraft/class_8684;)Lnet/minecraft/class_7764;

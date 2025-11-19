@@ -20,7 +20,6 @@ CLASS net/minecraft/class_663 net/minecraft/client/particle/BlockLeakParticle
 			ARG 4 y
 			ARG 6 z
 			ARG 8 fluid
-			ARG 9 nextParticle
 			ARG 10 sprite
 	CLASS class_4084 Dripping
 		FIELD field_18293 nextParticle Lnet/minecraft/class_2394;
@@ -34,14 +33,6 @@ CLASS net/minecraft/class_663 net/minecraft/client/particle/BlockLeakParticle
 			ARG 10 sprite
 	CLASS class_4085 Landing
 	CLASS class_4497 Falling
-		METHOD <init> (Lnet/minecraft/class_638;DDDLnet/minecraft/class_3611;ILnet/minecraft/class_1058;)V
-			ARG 1 world
-			ARG 2 x
-			ARG 4 y
-			ARG 6 z
-			ARG 8 fluid
-			ARG 9 maxAge
-			ARG 10 sprite
 	CLASS class_4498 FallingHoney
 	CLASS class_5692 DripstoneLavaDrip
 	CLASS class_11913 FallingDripstoneLavaFactory

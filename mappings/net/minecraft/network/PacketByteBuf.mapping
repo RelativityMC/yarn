@@ -120,9 +120,6 @@ CLASS net/minecraft/class_2540 net/minecraft/network/PacketByteBuf
 		COMMENT written} in their string form.
 	FIELD field_33284 MAX_TEXT_LENGTH I
 		COMMENT The maximum size, in terms of JSON string length, allowed for serialized texts.
-	FIELD field_33287 MAX_READ_NBT_SIZE I
-		COMMENT The maximum size, in number of bytes, allowed of the NBT compound read by
-		COMMENT {@link #readNbt()}.
 	FIELD field_42966 GSON Lcom/google/gson/Gson;
 	METHOD <init> (Lio/netty/buffer/ByteBuf;)V
 		COMMENT Creates a packet byte buf that delegates its operations to the {@code

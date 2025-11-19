@@ -3,8 +3,6 @@ unpick v4
 group int max_string_length
 	net.minecraft.network.PacketByteBuf.DEFAULT_MAX_STRING_LENGTH
 	net.minecraft.network.PacketByteBuf.MAX_TEXT_LENGTH
-group long max_nbt_size
-	net.minecraft.network.PacketByteBuf.MAX_READ_NBT_SIZE
 group int max_var_int_length
 	net.minecraft.network.encoding.VarInts.MAX_BYTES
 group int max_var_long_length
@@ -14,10 +12,6 @@ target_method net.minecraft.network.PacketByteBuf readString (I)Ljava/lang/Strin
 	param 0 max_string_length
 target_method net.minecraft.network.PacketByteBuf writeString (Ljava/lang/String;I)Lnet/minecraft/network/PacketByteBuf;
 	param 1 max_string_length
-target_method net.minecraft.nbt.NbtSizeTracker <init> (JI)V
-	param 0 max_nbt_size
-target_method net.minecraft.nbt.NbtSizeTracker of (J)Lnet/minecraft/nbt/NbtSizeTracker;
-	param 0 max_nbt_size
 target_method net.minecraft.network.encoding.VarInts getSizeInBytes (I)I
 	return max_var_int_length
 target_method net.minecraft.network.encoding.VarLongs getSizeInBytes (J)I

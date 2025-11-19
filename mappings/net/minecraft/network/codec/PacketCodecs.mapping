@@ -369,10 +369,6 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 	CLASS 25
 		FIELD field_61047 entryCodec Lnet/minecraft/class_9139;
 	CLASS 26
-		FIELD field_60509 NAME_MAX_LENGTH I
-		FIELD field_60510 VALUE_MAX_LENGTH I
-		FIELD field_60511 SIGNATURE_MAX_LENGTH I
-		FIELD field_60512 MAP_MAX_SIZE I
 		METHOD method_71596 (Lio/netty/buffer/ByteBuf;Ljava/lang/String;)V
 			ARG 0 bufx
 			ARG 1 signature

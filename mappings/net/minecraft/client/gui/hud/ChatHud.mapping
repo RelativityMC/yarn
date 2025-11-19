@@ -100,7 +100,7 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 		ARG 2 windowHeight
 		ARG 3 currentTick
 		ARG 4 expanded
-	METHOD method_75804 render (Lnet/minecraft/class_332;Lnet/minecraft/class_327;IIIZ)V
+	METHOD method_75804 render (Lnet/minecraft/class_332;Lnet/minecraft/class_327;IIIZZ)V
 		ARG 1 context
 		ARG 2 textRenderer
 		ARG 3 currentTick
@@ -187,7 +187,7 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 		FIELD field_63881 mouseY I
 		FIELD field_63882 untransformedOffset Lorg/joml/Vector2f;
 		FIELD field_63883 style Lnet/minecraft/class_2583;
-		METHOD <init> (Lnet/minecraft/class_332;Lnet/minecraft/class_327;II)V
+		METHOD <init> (Lnet/minecraft/class_332;Lnet/minecraft/class_327;IIZ)V
 			ARG 1 context
 			ARG 2 textRenderer
 			ARG 3 mouseX

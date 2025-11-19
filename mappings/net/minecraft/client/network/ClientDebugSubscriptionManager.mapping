@@ -53,7 +53,6 @@ CLASS net/minecraft/class_12036 net/minecraft/client/network/ClientDebugSubscrip
 	METHOD method_74727 (Lnet/minecraft/class_12036$class_12039;)Lnet/minecraft/class_12036$class_12037;
 		ARG 0 maps
 	METHOD method_74728 onSubscriptionsChanged (Ljava/util/Set;)V
-		ARG 1 types
 	METHOD method_74729 addDebugSubscription (Ljava/util/Set;Lnet/minecraft/class_12017;Z)V
 		ARG 0 types
 		ARG 1 type

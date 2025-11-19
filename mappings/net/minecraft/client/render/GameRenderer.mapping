@@ -101,15 +101,6 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	METHOD method_37473 updateWorldIcon ()V
 	METHOD method_37474 (Ljava/nio/file/Path;)V
 		ARG 1 path
-	METHOD method_56153 findCrosshairTarget (Lnet/minecraft/class_1297;DDF)Lnet/minecraft/class_239;
-		ARG 1 camera
-		ARG 2 blockInteractionRange
-		ARG 4 entityInteractionRange
-		ARG 6 tickProgress
-	METHOD method_56154 ensureTargetInRange (Lnet/minecraft/class_239;Lnet/minecraft/class_243;D)Lnet/minecraft/class_239;
-		ARG 0 hitResult
-		ARG 1 cameraPos
-		ARG 2 interactionRange
 	METHOD method_57796 renderBlur ()V
 	METHOD method_62904 setPostProcessor (Lnet/minecraft/class_2960;)V
 		ARG 1 id

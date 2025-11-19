@@ -11,7 +11,7 @@ CLASS net/minecraft/class_7764 net/minecraft/client/texture/SpriteContents
 		ARG 1 id
 		ARG 2 dimensions
 		ARG 3 image
-	METHOD <init> (Lnet/minecraft/class_2960;Lnet/minecraft/class_7771;Lnet/minecraft/class_1011;Ljava/util/Optional;Ljava/util/List;Lnet/minecraft/class_12253;)V
+	METHOD <init> (Lnet/minecraft/class_2960;Lnet/minecraft/class_7771;Lnet/minecraft/class_1011;Ljava/util/Optional;Ljava/util/List;Ljava/util/Optional;)V
 		ARG 1 id
 		ARG 2 dimensions
 		ARG 3 image

@@ -36,8 +36,6 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 	FIELD field_49990 explodedBy Lnet/minecraft/class_1297;
 	FIELD field_49991 ignoreFallDamageFromCurrentExplosion Z
 	FIELD field_52223 currentExplosionResetGraceTime I
-	FIELD field_55203 remainingLoadTicks I
-	FIELD field_55204 loaded Z
 	FIELD field_62530 LEFT_SHOULDER_PARROT_VARIANT_ID Lnet/minecraft/class_2940;
 	FIELD field_62531 RIGHT_SHOULDER_PARROT_VARIANT_ID Lnet/minecraft/class_2940;
 	METHOD <init> (Lnet/minecraft/class_1937;Lcom/mojang/authlib/GameProfile;)V
@@ -322,14 +320,6 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 		ARG 1 item
 	METHOD method_64271 canDropItems ()Z
 	METHOD method_64400 tickHunger ()V
-	METHOD method_65350 isLoaded ()Z
-		COMMENT {@return whether the player is considered "loaded", either because the client
-		COMMENT acknowledged loading or because the 60-tick timer elapsed}
-		COMMENT
-		COMMENT <p>If {@code false}, the player is invulnerable and cannot perform most actions.
-	METHOD method_65351 tickLoaded ()V
-	METHOD method_65352 setLoaded (Z)V
-		ARG 1 loaded
 	METHOD method_66324 shouldSkipBlockDrops ()Z
 	METHOD method_66325 getExpectedPose ()Lnet/minecraft/class_4050;
 	METHOD method_66695 openTestBlockScreen (Lnet/minecraft/class_10637;)V

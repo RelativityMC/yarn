@@ -8,8 +8,3 @@ CLASS net/minecraft/class_3065 net/minecraft/server/command/GameRuleCommand
 	METHOD method_13397 executeQuery (Lnet/minecraft/class_2168;Lnet/minecraft/class_12279;)I
 		ARG 0 source
 		ARG 1 key
-	CLASS 1
-		METHOD method_20797 (Lnet/minecraft/class_12279;Lcom/mojang/brigadier/context/CommandContext;)I
-			ARG 1 context
-		METHOD method_20798 (Lnet/minecraft/class_12279;Lcom/mojang/brigadier/context/CommandContext;)I
-			ARG 1 context

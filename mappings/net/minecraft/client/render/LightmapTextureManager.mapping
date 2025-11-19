@@ -21,7 +21,6 @@ CLASS net/minecraft/class_765 net/minecraft/client/render/LightmapTextureManager
 	FIELD field_60112 buffer Lnet/minecraft/class_11285;
 	FIELD field_60581 glTextureView Lcom/mojang/blaze3d/textures/GpuTextureView;
 	METHOD <init> (Lnet/minecraft/class_757;Lnet/minecraft/class_310;)V
-		ARG 1 renderer
 		ARG 2 client
 	METHOD method_3313 update (F)V
 		ARG 1 tickProgress

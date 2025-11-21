@@ -9,11 +9,6 @@ CLASS net/minecraft/class_3360 net/minecraft/world/updater/FeatureUpdater
 	FIELD field_37194 NEW_STRUCTURE_NAMES Ljava/util/Set;
 	FIELD field_63962 TARGET_DATA_VERSION I
 	FIELD field_63963 dataFixer Lcom/mojang/datafixers/DataFixer;
-	METHOD <init> (Lnet/minecraft/class_26;Ljava/util/List;Ljava/util/List;Lcom/mojang/datafixers/DataFixer;)V
-		ARG 1 persistentStateManager
-		ARG 2 oldNames
-		ARG 3 newNames
-		ARG 4 dataFixer
 	METHOD method_14734 init (Lnet/minecraft/class_26;)V
 		ARG 1 persistentStateManager
 	METHOD method_14735 getUpdatedReferences (Lnet/minecraft/class_2487;)Lnet/minecraft/class_2487;

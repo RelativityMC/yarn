@@ -398,14 +398,7 @@ target_method net.minecraft.client.gl.BufferManager setBufferStorage (IJI)V
 	param 2 gpu_buffer_flags
 target_method net.minecraft.client.gl.BufferManager setBufferStorage (ILjava/nio/ByteBuffer;I)V
 	param 2 gpu_buffer_flags
-target_method net.minecraft.client.gl.BufferManager mapBufferRange (IIIII)Ljava/nio/ByteBuffer;
-	param 3 gl_map_buffer_access
-	param 4 gpu_buffer_flags
 target_method net.minecraft.client.gl.BufferManager unmapBuffer (II)V
-	param 1 gpu_buffer_flags
-target_method net.minecraft.client.gl.BufferManager flushMappedBufferRange (IIII)V
-	param 3 gpu_buffer_flags
-target_method com.mojang.blaze3d.systems.GpuDevice createBuffer (Ljava/util/function/Supplier;II)Lcom/mojang/blaze3d/buffers/GpuBuffer;
 	param 1 gpu_buffer_flags
 target_method com.mojang.blaze3d.systems.GpuDevice createBuffer (Ljava/util/function/Supplier;ILjava/nio/ByteBuffer;)Lcom/mojang/blaze3d/buffers/GpuBuffer;
 	param 1 gpu_buffer_flags
@@ -538,11 +531,6 @@ target_method com.mojang.blaze3d.opengl.GlStateManager _glBufferData (IJI)V
 target_method com.mojang.blaze3d.opengl.GlStateManager _glBufferData (ILjava/nio/ByteBuffer;I)V
 	param 0 gl_buffer_target
 	param 2 gl_buffer_data_usage
-target_method com.mojang.blaze3d.opengl.GlStateManager _glBufferSubData (IILjava/nio/ByteBuffer;)V
-	param 0 gl_buffer_target
-target_method com.mojang.blaze3d.opengl.GlStateManager _glMapBufferRange (IIII)Ljava/nio/ByteBuffer;
-	param 0 gl_buffer_target
-	param 3 gl_map_buffer_access
 target_method com.mojang.blaze3d.opengl.GlStateManager _glUnmapBuffer (I)V
 	param 0 gl_buffer_target
 target_method org.lwjgl.opengl.GL15 glBindBuffer (II)V
@@ -558,8 +546,6 @@ target_method org.lwjgl.opengl.GL30 glMapBufferRange (IJJI)Ljava/nio/ByteBuffer;
 	param 3 gl_map_buffer_access
 target_method org.lwjgl.opengl.GL30 glBindBufferRange (IIIJJ)V
 	param 0 gl_buffer_target
-target_method org.lwjgl.opengl.GL30 glFlushMappedBufferRange (IJJ)V
-	param 0 gl_buffer_target
 
 target_method org.lwjgl.opengl.ARBBufferStorage glBufferStorage (IJI)V
 	param 0 gl_buffer_target
@@ -568,12 +554,8 @@ target_method org.lwjgl.opengl.ARBBufferStorage glBufferStorage (ILjava/nio/Byte
 	param 0 gl_buffer_target
 	param 2 gl_arb_buffer_flags
 
-target_method com.mojang.blaze3d.buffers.GpuBuffer <init> (II)V
-	param 0 gpu_buffer_flags
 target_method com.mojang.blaze3d.buffers.GpuBuffer usage ()I
 	return gpu_buffer_flags
-target_method net.minecraft.client.gl.GlGpuBuffer <init> (Ljava/util/function/Supplier;Lnet/minecraft/client/gl/BufferManager;IIILjava/nio/ByteBuffer;)V
-	param 2 gpu_buffer_flags
 
 target_method com.mojang.blaze3d.opengl.GlStateManager _getError ()I
 	return gl_error

@@ -7,7 +7,7 @@ CLASS net/minecraft/class_308 net/minecraft/client/render/DiffuseLighting
 	FIELD field_29568 INVENTORY_DIFFUSION_LIGHT_1 Lorg/joml/Vector3f;
 	FIELD field_60022 UBO_SIZE I
 	FIELD field_60023 buffer Lcom/mojang/blaze3d/buffers/GpuBuffer;
-	FIELD field_60024 roundedUboSize I
+	FIELD field_60024 roundedUboSize J
 	METHOD method_71034 setShaderLights (Lnet/minecraft/class_308$class_11274;)V
 		ARG 1 type
 	METHOD method_71035 updateBuffer (Lnet/minecraft/class_308$class_11274;Lorg/joml/Vector3f;Lorg/joml/Vector3f;)V

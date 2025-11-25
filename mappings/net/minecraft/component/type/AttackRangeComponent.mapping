@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_12392 net/minecraft/component/type/AttackRangeComponent
 	FIELD field_64653 DEFAULT Lnet/minecraft/class_12392;
 	FIELD field_64655 PACKET_CODEC Lnet/minecraft/class_9139;
-	METHOD method_76732 getEffectiveMinRange (Lnet/minecraft/class_1297;)D
+	METHOD method_76732 getEffectiveMinRange (Lnet/minecraft/class_1297;)F
 		ARG 1 entity
 	METHOD method_76733 getHitResult (Lnet/minecraft/class_1297;FLjava/util/function/Predicate;)Lnet/minecraft/class_239;
 		ARG 1 entity
@@ -22,5 +22,5 @@ CLASS net/minecraft/class_12392 net/minecraft/component/type/AttackRangeComponen
 		ARG 3 extraHitboxMargin
 	METHOD method_76738 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
-	METHOD method_76739 getEffectiveMaxRange (Lnet/minecraft/class_1297;)D
+	METHOD method_76739 getEffectiveMaxRange (Lnet/minecraft/class_1297;)F
 		ARG 1 entity

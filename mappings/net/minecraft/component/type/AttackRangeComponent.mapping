@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_12392 net/minecraft/component/type/AttackRangeComponent
-	FIELD field_64653 DEFAULT Lnet/minecraft/class_12392;
 	FIELD field_64655 PACKET_CODEC Lnet/minecraft/class_9139;
 	METHOD method_76732 getEffectiveMinRange (Lnet/minecraft/class_1297;)F
 		ARG 1 entity
@@ -24,5 +23,3 @@ CLASS net/minecraft/class_12392 net/minecraft/component/type/AttackRangeComponen
 		ARG 0 instance
 	METHOD method_76739 getEffectiveMaxRange (Lnet/minecraft/class_1297;)F
 		ARG 1 entity
-	METHOD method_76774 withRangeForEntity (Lnet/minecraft/class_1297;)Lnet/minecraft/class_12392;
-		ARG 1 entiy

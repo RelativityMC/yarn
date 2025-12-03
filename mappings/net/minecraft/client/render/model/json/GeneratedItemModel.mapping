@@ -4,9 +4,9 @@ CLASS net/minecraft/class_801 net/minecraft/client/render/model/json/GeneratedIt
 	FIELD field_55274 TEXTURES Lnet/minecraft/class_10419$class_10420;
 	FIELD field_56930 FACING_SOUTH_UV Lnet/minecraft/class_783$class_10800;
 	FIELD field_56931 FACING_NORTH_UV Lnet/minecraft/class_783$class_10800;
-	METHOD method_3476 buildCube (Lnet/minecraft/class_801$class_803;Ljava/util/List;Lnet/minecraft/class_7764;IIIII)V
+	METHOD method_3476 buildCube (Lnet/minecraft/class_801$class_803;Ljava/util/Set;Lnet/minecraft/class_7764;IIIII)V
 	METHOD method_3477 isPixelTransparent (Lnet/minecraft/class_7764;IIIII)Z
-	METHOD method_3478 getFrames (Lnet/minecraft/class_7764;)Ljava/util/List;
+	METHOD method_3478 getFrames (Lnet/minecraft/class_7764;)Ljava/util/Collection;
 	METHOD method_3479 bakeGeometry (Lnet/minecraft/class_10419;Lnet/minecraft/class_7775;Lnet/minecraft/class_3665;Lnet/minecraft/class_10813;)Lnet/minecraft/class_10817;
 		ARG 0 textures
 		ARG 2 settings

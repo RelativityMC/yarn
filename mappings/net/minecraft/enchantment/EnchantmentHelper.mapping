@@ -397,11 +397,11 @@ CLASS net/minecraft/class_1890 net/minecraft/enchantment/EnchantmentHelper
 		ARG 3 level
 		ARG 4 context
 	CLASS class_1891 Consumer
-		METHOD accept (Lnet/minecraft/class_6880;I)V
+		METHOD method_1_260 (Lnet/minecraft/class_6880;I)V
 			ARG 1 enchantment
 			ARG 2 level
 	CLASS class_9702 ContextAwareConsumer
-		METHOD accept (Lnet/minecraft/class_6880;ILnet/minecraft/class_9699;)V
+		METHOD method_1_259 (Lnet/minecraft/class_6880;ILnet/minecraft/class_9699;)V
 			ARG 1 enchantment
 			ARG 2 level
 			ARG 3 context

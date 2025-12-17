@@ -63,10 +63,10 @@ CLASS net/minecraft/class_42 net/minecraft/loot/operator/BoundedIntUnaryOperator
 	METHOD method_53265 (Lnet/minecraft/class_42;)Ljava/util/Optional;
 		ARG 0 operator
 	CLASS class_5638 Tester
-		METHOD test (Lnet/minecraft/class_47;I)Z
+		METHOD method_1_182 (Lnet/minecraft/class_47;I)Z
 			ARG 1 context
 			ARG 2 value
 	CLASS class_5639 Applier
-		METHOD apply (Lnet/minecraft/class_47;I)I
+		METHOD method_1_183 (Lnet/minecraft/class_47;I)I
 			ARG 1 context
 			ARG 2 value

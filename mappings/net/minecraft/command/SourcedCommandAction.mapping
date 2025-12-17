@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_8856 net/minecraft/command/SourcedCommandAction
-	METHOD bind (Ljava/lang/Object;)Lnet/minecraft/class_8853;
+	METHOD method_1_222 (Ljava/lang/Object;)Lnet/minecraft/class_8853;
 		ARG 1 source
-	METHOD execute (Ljava/lang/Object;Lnet/minecraft/class_8854;Lnet/minecraft/class_8937;)V
+	METHOD method_1_223 (Ljava/lang/Object;Lnet/minecraft/class_8854;Lnet/minecraft/class_8937;)V
 		ARG 1 source
 		ARG 2 context
 		ARG 3 frame

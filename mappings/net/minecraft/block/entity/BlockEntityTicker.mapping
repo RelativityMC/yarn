@@ -3,7 +3,7 @@ CLASS net/minecraft/class_5558 net/minecraft/block/entity/BlockEntityTicker
 	COMMENT as a static method in the block entity's class.
 	COMMENT
 	COMMENT @see net.minecraft.block.BlockEntityProvider#getTicker
-	METHOD tick (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2586;)V
+	METHOD method_1_281 (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2586;)V
 		COMMENT Ticks the block entity.
 		ARG 1 world
 		ARG 2 pos

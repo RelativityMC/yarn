@@ -5,6 +5,10 @@ CLASS net/minecraft/class_7833 net/minecraft/util/math/RotationAxis
 	FIELD field_40716 POSITIVE_Y Lnet/minecraft/class_7833;
 	FIELD field_40717 NEGATIVE_Z Lnet/minecraft/class_7833;
 	FIELD field_40718 POSITIVE_Z Lnet/minecraft/class_7833;
+	METHOD method_1_1 (F)Lorg/joml/Quaternionf;
+		ARG 1 rad
+	METHOD method_1_2 (F)Lorg/joml/Quaternionf;
+		ARG 1 deg
 	METHOD method_46349 (F)Lorg/joml/Quaternionf;
 		ARG 0 rad
 	METHOD method_46350 (Lorg/joml/Vector3f;F)Lorg/joml/Quaternionf;
@@ -21,7 +25,3 @@ CLASS net/minecraft/class_7833 net/minecraft/util/math/RotationAxis
 		ARG 0 rad
 	METHOD method_46356 of (Lorg/joml/Vector3f;)Lnet/minecraft/class_7833;
 		ARG 0 axis
-	METHOD rotation (F)Lorg/joml/Quaternionf;
-		ARG 1 rad
-	METHOD rotationDegrees (F)Lorg/joml/Quaternionf;
-		ARG 1 deg

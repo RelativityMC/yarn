@@ -43,6 +43,6 @@ CLASS net/minecraft/class_10451 net/minecraft/client/render/item/model/SelectIte
 			ARG 1 value
 			ARG 2 world
 	CLASS class_10722 ModelSelector
-		METHOD get (Ljava/lang/Object;Lnet/minecraft/class_638;)Lnet/minecraft/class_10439;
+		METHOD method_1_206 (Ljava/lang/Object;Lnet/minecraft/class_638;)Lnet/minecraft/class_10439;
 			ARG 1 propertyValue
 			ARG 2 world

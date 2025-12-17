@@ -83,7 +83,7 @@ CLASS net/minecraft/class_6544 net/minecraft/world/biome/source/util/MultiNoiseU
 			ARG 0 instance
 		METHOD method_38145 getParameters ()Ljava/util/List;
 	CLASS class_6545 NodeDistanceFunction
-		METHOD distance getDistance (Lnet/minecraft/class_6544$class_6548$class_6550;[J)J
+		METHOD method_1_69 getDistance (Lnet/minecraft/class_6544$class_6548$class_6550;[J)J
 			ARG 1 node
 			ARG 2 otherParameters
 	CLASS class_6546 ParameterRange

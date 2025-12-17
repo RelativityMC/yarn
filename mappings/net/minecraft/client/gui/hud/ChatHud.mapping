@@ -119,7 +119,7 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 			ARG 2 messageHistory
 			ARG 3 removalQueue
 	CLASS class_11511 LineConsumer
-		METHOD accept (Lnet/minecraft/class_303$class_7590;IF)V
+		METHOD method_1_190 (Lnet/minecraft/class_303$class_7590;IF)V
 			ARG 1 line
 			ARG 2 y1
 			ARG 3 opacity
@@ -140,14 +140,14 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 	CLASS class_11733 Draft
 	CLASS class_12232 OpacityRule
 		FIELD field_63874 CONSTANT Lnet/minecraft/class_338$class_12232;
-		METHOD calculate (Lnet/minecraft/class_303$class_7590;)F
+		METHOD method_1_188 (Lnet/minecraft/class_303$class_7590;)F
 			ARG 1 line
+		METHOD method_1_189 (I)Lnet/minecraft/class_338$class_12232;
+			ARG 0 currentTick
 		METHOD method_75805 (ILnet/minecraft/class_303$class_7590;)F
 			ARG 1 line
 		METHOD method_75806 (Lnet/minecraft/class_303$class_7590;)F
 			ARG 0 line
-		METHOD timeBased (I)Lnet/minecraft/class_338$class_12232;
-			ARG 0 currentTick
 	CLASS class_12233 Backend
 		METHOD method_75807 text (IFLnet/minecraft/class_5481;)Z
 			ARG 1 y

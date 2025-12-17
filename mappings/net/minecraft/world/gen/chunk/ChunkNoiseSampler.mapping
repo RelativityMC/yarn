@@ -187,7 +187,7 @@ CLASS net/minecraft/class_6568 net/minecraft/world/gen/chunk/ChunkNoiseSampler
 			COMMENT Interpolates the two remaining densities on the Z axis.
 			ARG 1 deltaZ
 	CLASS class_6569 BlockStateSampler
-		METHOD calculate sample (Lnet/minecraft/class_6910$class_6912;)Lnet/minecraft/class_2680;
+		METHOD method_1_150 sample (Lnet/minecraft/class_6910$class_6912;)Lnet/minecraft/class_2680;
 			ARG 1 pos
 	CLASS class_6946 BlendAlphaDensityFunction
 	CLASS class_6947 BlendOffsetDensityFunction

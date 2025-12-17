@@ -33,6 +33,6 @@ CLASS net/minecraft/class_9463 net/minecraft/item/ProjectileItem
 				ARG 0 pointer
 				ARG 1 direction
 	CLASS class_9466 PositionFunction
-		METHOD getDispensePosition (Lnet/minecraft/class_2342;Lnet/minecraft/class_2350;)Lnet/minecraft/class_2374;
+		METHOD method_1_65 (Lnet/minecraft/class_2342;Lnet/minecraft/class_2350;)Lnet/minecraft/class_2374;
 			ARG 1 pointer
 			ARG 2 facing

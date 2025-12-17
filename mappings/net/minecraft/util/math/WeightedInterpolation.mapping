@@ -7,11 +7,11 @@ CLASS net/minecraft/class_12207 net/minecraft/util/math/WeightedInterpolation
 		ARG 1 f
 		ARG 2 accum
 	CLASS class_12208 Accumulator
-		METHOD accumulate (DLjava/lang/Object;)V
+		METHOD method_1_144 (DLjava/lang/Object;)V
 			ARG 1 weight
 			ARG 3 value
 	CLASS class_12209 PositionalFunction
-		METHOD get (III)Ljava/lang/Object;
+		METHOD method_1_145 (III)Ljava/lang/Object;
 			ARG 1 x
 			ARG 2 y
 			ARG 3 z

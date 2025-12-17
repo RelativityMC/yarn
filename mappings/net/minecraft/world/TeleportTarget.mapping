@@ -49,9 +49,7 @@ CLASS net/minecraft/class_5454 net/minecraft/world/TeleportTarget
 		ARG 0 player
 		ARG 1 postDimensionTransition
 	CLASS class_9823 PostDimensionTransition
-		METHOD method_61027 (Lnet/minecraft/class_5454$class_9823;Lnet/minecraft/class_1297;)V
-			ARG 2 entity
-		METHOD onTransition (Lnet/minecraft/class_1297;)V
+		METHOD method_1_232 (Lnet/minecraft/class_1297;)V
 			ARG 1 entity
-		METHOD then (Lnet/minecraft/class_5454$class_9823;)Lnet/minecraft/class_5454$class_9823;
+		METHOD method_1_233 (Lnet/minecraft/class_5454$class_9823;)Lnet/minecraft/class_5454$class_9823;
 			ARG 1 next

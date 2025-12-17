@@ -90,7 +90,7 @@ CLASS net/minecraft/class_391 net/minecraft/client/font/UnihexFont
 		METHOD method_51681 (Lnet/minecraft/class_391$class_8545;)Lcom/mojang/serialization/DataResult;
 			ARG 0 override
 	CLASS class_8546 BitmapGlyphConsumer
-		METHOD accept (ILnet/minecraft/class_391$class_8544;)V
+		METHOD method_1_256 (ILnet/minecraft/class_391$class_8544;)V
 			ARG 1 codePoint
 			ARG 2 glyph
 	CLASS class_8547 FontImage16x16

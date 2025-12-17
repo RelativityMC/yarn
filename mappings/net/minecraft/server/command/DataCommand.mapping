@@ -160,13 +160,13 @@ CLASS net/minecraft/class_3164 net/minecraft/server/command/DataCommand
 		ARG 1 startIndex
 		ARG 2 endIndex
 	CLASS class_3165 ModifyOperation
-		METHOD modify (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_2487;Lnet/minecraft/class_2203$class_2209;Ljava/util/List;)I
+		METHOD method_1_173 (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_2487;Lnet/minecraft/class_2203$class_2209;Ljava/util/List;)I
 			ARG 1 context
 			ARG 2 sourceNbt
 			ARG 3 path
 			ARG 4 elements
 	CLASS class_3166 ModifyArgumentCreator
-		METHOD create (Lnet/minecraft/class_3164$class_3165;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+		METHOD method_1_174 (Lnet/minecraft/class_3164$class_3165;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
 			ARG 1 modifier
 	CLASS class_3167 ObjectType
 		METHOD method_13924 getObject (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/class_3162;
@@ -175,5 +175,5 @@ CLASS net/minecraft/class_3164 net/minecraft/server/command/DataCommand
 			ARG 1 argument
 			ARG 2 argumentAdder
 	CLASS class_8569 Processor
-		METHOD process (Ljava/lang/String;)Ljava/lang/String;
+		METHOD method_1_175 (Ljava/lang/String;)Ljava/lang/String;
 			ARG 1 string

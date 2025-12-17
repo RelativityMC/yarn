@@ -64,9 +64,9 @@ CLASS net/minecraft/class_4286 net/minecraft/client/gui/widget/CheckboxWidget
 			ARG 1 maxWidth
 	CLASS class_8930 Callback
 		FIELD field_47116 EMPTY Lnet/minecraft/class_4286$class_8930;
+		METHOD method_1_120 (Lnet/minecraft/class_4286;Z)V
+			ARG 1 checkbox
+			ARG 2 checked
 		METHOD method_54795 (Lnet/minecraft/class_4286;Z)V
 			ARG 0 checkbox
 			ARG 1 checked
-		METHOD onValueChange (Lnet/minecraft/class_4286;Z)V
-			ARG 1 checkbox
-			ARG 2 checked

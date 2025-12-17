@@ -155,6 +155,6 @@ CLASS net/minecraft/class_3115 net/minecraft/server/command/ScoreboardCommand
 	METHOD method_55363 (Lnet/minecraft/class_3115$class_9008;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 1 context
 	CLASS class_9008 NumberFormatCommandExecutor
-		METHOD run (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_9022;)I
+		METHOD method_1_172 (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_9022;)I
 			ARG 1 context
 			ARG 2 numberFormat

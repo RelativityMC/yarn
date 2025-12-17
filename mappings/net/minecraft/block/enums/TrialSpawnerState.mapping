@@ -66,7 +66,7 @@ CLASS net/minecraft/class_8967 net/minecraft/block/enums/TrialSpawnerState
 		FIELD field_47402 WAITING Lnet/minecraft/class_8967$class_8969;
 		FIELD field_47403 ACTIVE Lnet/minecraft/class_8967$class_8969;
 		FIELD field_47404 COOLDOWN Lnet/minecraft/class_8967$class_8969;
-		METHOD emit (Lnet/minecraft/class_1937;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338;Z)V
+		METHOD method_1_337 (Lnet/minecraft/class_1937;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338;Z)V
 			ARG 1 world
 			ARG 2 random
 			ARG 3 pos

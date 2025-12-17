@@ -22,9 +22,6 @@ CLASS net/minecraft/class_2233 net/minecraft/command/argument/ScoreHolderArgumen
 	METHOD method_9453 parse (Lcom/mojang/brigadier/StringReader;Z)Lnet/minecraft/class_2233$class_2234;
 		ARG 1 reader
 		ARG 2 allowAtSelectors
-	METHOD method_9455 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 context
-		ARG 1 builder
 	METHOD method_9456 (Ljava/util/List;Lnet/minecraft/class_2168;Ljava/util/function/Supplier;)Ljava/util/Collection;
 		ARG 1 source
 		ARG 2 players
@@ -46,16 +43,12 @@ CLASS net/minecraft/class_2233 net/minecraft/command/argument/ScoreHolderArgumen
 		ARG 1 reader
 		ARG 2 source
 	CLASS class_2234 ScoreHolders
-		METHOD getNames (Lnet/minecraft/class_2168;Ljava/util/function/Supplier;)Ljava/util/Collection;
+		METHOD method_1_240 (Lnet/minecraft/class_2168;Ljava/util/function/Supplier;)Ljava/util/Collection;
 			ARG 1 source
 			ARG 2 holders
 	CLASS class_2235 SelectorScoreHolders
 		FIELD field_9952 selector Lnet/minecraft/class_2300;
-		METHOD <init> (Lnet/minecraft/class_2300;)V
-			ARG 1 selector
 	CLASS class_2236 Serializer
 		FIELD field_37930 MULTIPLE_FLAG B
 		CLASS class_7200 Properties
 			FIELD field_37932 multiple Z
-			METHOD <init> (Lnet/minecraft/class_2233$class_2236;Z)V
-				ARG 2 multiple

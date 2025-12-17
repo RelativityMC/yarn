@@ -13,7 +13,7 @@ CLASS net/minecraft/class_9838 net/minecraft/recipe/RecipeGridAligner
 		ARG 3 slots
 		ARG 4 filler
 	CLASS class_9839 Filler
-		METHOD addItemToSlot (Ljava/lang/Object;III)V
+		METHOD method_1_101 (Ljava/lang/Object;III)V
 			ARG 1 slot
 			ARG 2 index
 			ARG 3 x

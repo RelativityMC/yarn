@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_7179 net/minecraft/client/render/entity/animation/Transformation
 	CLASS class_7180 Interpolation
-		METHOD apply (Lorg/joml/Vector3f;F[Lnet/minecraft/class_7186;IIF)Lorg/joml/Vector3f;
+		METHOD method_1_159 (Lorg/joml/Vector3f;F[Lnet/minecraft/class_7186;IIF)Lorg/joml/Vector3f;
 			ARG 1 dest
 			ARG 2 delta
 			ARG 3 keyframes
@@ -25,7 +25,7 @@ CLASS net/minecraft/class_7179 net/minecraft/client/render/entity/animation/Tran
 			ARG 4 end
 			ARG 5 scale
 	CLASS class_7182 Target
-		METHOD apply (Lnet/minecraft/class_630;Lorg/joml/Vector3f;)V
+		METHOD method_1_160 (Lnet/minecraft/class_630;Lorg/joml/Vector3f;)V
 			ARG 1 modelPart
 			ARG 2 vec
 	CLASS class_7183 Targets

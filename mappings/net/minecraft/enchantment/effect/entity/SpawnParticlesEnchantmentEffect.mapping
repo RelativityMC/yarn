@@ -43,7 +43,7 @@ CLASS net/minecraft/class_9734 net/minecraft/enchantment/effect/entity/SpawnPart
 			ARG 4 boundingBoxSize
 			ARG 5 random
 		CLASS class_9737 CoordinateSource
-			METHOD getCoordinate (DDFLnet/minecraft/class_5819;)D
+			METHOD method_1_314 (DDFLnet/minecraft/class_5819;)D
 				ARG 1 entityPosition
 				ARG 3 boundingBoxCenter
 				ARG 5 boundingBoxSize

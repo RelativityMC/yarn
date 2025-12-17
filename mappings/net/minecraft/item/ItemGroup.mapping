@@ -105,7 +105,7 @@ CLASS net/minecraft/class_1761 net/minecraft/item/ItemGroup
 		METHOD method_47323 noScrollbar ()Lnet/minecraft/class_1761$class_7913;
 		METHOD method_47324 build ()Lnet/minecraft/class_1761;
 	CLASS class_7914 EntryCollector
-		METHOD accept (Lnet/minecraft/class_1761$class_8128;Lnet/minecraft/class_1761$class_7704;)V
+		METHOD method_1_76 (Lnet/minecraft/class_1761$class_8128;Lnet/minecraft/class_1761$class_7704;)V
 			ARG 1 displayContext
 			ARG 2 entries
 	CLASS class_7915 Row

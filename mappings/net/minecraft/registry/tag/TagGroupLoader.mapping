@@ -70,7 +70,7 @@ CLASS net/minecraft/class_3503 net/minecraft/registry/tag/TagGroupLoader
 		METHOD method_51481 (Ljava/util/function/Consumer;Lnet/minecraft/class_3503$class_5145;)V
 			ARG 1 entry
 	CLASS class_10272 EntrySupplier
-		METHOD get (Lnet/minecraft/class_2960;Z)Ljava/util/Optional;
+		METHOD method_1_7 (Lnet/minecraft/class_2960;Z)Ljava/util/Optional;
 			ARG 1 id
 			ARG 2 required
 		METHOD method_64597 (Lnet/minecraft/class_7871;Lnet/minecraft/class_2385;Lnet/minecraft/class_2960;Z)Ljava/util/Optional;

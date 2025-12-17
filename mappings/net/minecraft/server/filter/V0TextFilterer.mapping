@@ -34,5 +34,5 @@ CLASS net/minecraft/class_5514 net/minecraft/server/filter/V0TextFilterer
 		ARG 3 profile
 		ARG 4 message
 	CLASS class_7241 ProfileEncoder
-		METHOD encode (Lcom/mojang/authlib/GameProfile;)Lcom/google/gson/JsonObject;
+		METHOD method_1_139 (Lcom/mojang/authlib/GameProfile;)Lcom/google/gson/JsonObject;
 			ARG 1 gameProfile

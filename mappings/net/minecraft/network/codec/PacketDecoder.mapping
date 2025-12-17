@@ -6,5 +6,5 @@ CLASS net/minecraft/class_9141 net/minecraft/network/codec/PacketDecoder
 	COMMENT
 	COMMENT @see PacketEncoder
 	COMMENT @see ValueFirstEncoder
-	METHOD decode (Ljava/lang/Object;)Ljava/lang/Object;
+	METHOD method_1_81 (Ljava/lang/Object;)Ljava/lang/Object;
 		ARG 1 buf

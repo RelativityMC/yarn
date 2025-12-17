@@ -78,8 +78,6 @@ CLASS net/minecraft/class_1928 net/minecraft/world/rule/GameRules
 		ARG 3 rule
 	METHOD method_76190 (Lnet/minecraft/class_4311;Lnet/minecraft/class_12279;)V
 		ARG 1 rule
-	METHOD method_76191 (Lnet/minecraft/class_1928;)Lnet/minecraft/class_12280;
-		ARG 0 gameRules
 	METHOD method_76192 copyFrom (Lnet/minecraft/class_1928;Lnet/minecraft/server/MinecraftServer;)V
 		ARG 1 rules
 		ARG 2 server
@@ -114,6 +112,6 @@ CLASS net/minecraft/class_1928 net/minecraft/world/rule/GameRules
 	METHOD method_76200 getRuleValueName (Lnet/minecraft/class_12279;)Ljava/lang/String;
 		ARG 1 rule
 	CLASS class_5199 Acceptor
-		METHOD call (Lnet/minecraft/class_4311;Lnet/minecraft/class_12279;)V
+		METHOD method_1_149 (Lnet/minecraft/class_4311;Lnet/minecraft/class_12279;)V
 			ARG 1 consumer
 			ARG 2 rule

@@ -31,7 +31,7 @@ CLASS net/minecraft/class_1317 net/minecraft/entity/SpawnRestriction
 		METHOD comp_2254 location ()Lnet/minecraft/class_9168;
 		METHOD comp_2255 predicate ()Lnet/minecraft/class_1317$class_4306;
 	CLASS class_4306 SpawnPredicate
-		METHOD test (Lnet/minecraft/class_1299;Lnet/minecraft/class_5425;Lnet/minecraft/class_3730;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)Z
+		METHOD method_1_106 (Lnet/minecraft/class_1299;Lnet/minecraft/class_5425;Lnet/minecraft/class_3730;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)Z
 			ARG 1 type
 			ARG 2 world
 			ARG 3 spawnReason

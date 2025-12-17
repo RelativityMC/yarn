@@ -187,7 +187,7 @@ CLASS net/minecraft/class_3515 net/minecraft/network/encryption/NetworkEncryptio
 		COMMENT
 		COMMENT @see NetworkEncryptionUtils#decodeEncodedRsaPrivateKey(byte[])
 		COMMENT @see NetworkEncryptionUtils#decodeEncodedRsaPublicKey(byte[])
-		METHOD apply ([B)Ljava/security/Key;
+		METHOD method_1_3 ([B)Ljava/security/Key;
 			ARG 1 key
 	CLASS class_7425 SignatureData
 		COMMENT A record holding a signature of a data and the salt added while signing. Note that

@@ -18,7 +18,7 @@ CLASS net/minecraft/class_8490 net/minecraft/loot/LootDataType
 	METHOD method_51216 simpleValidator ()Lnet/minecraft/class_8490$class_8491;
 	METHOD method_51217 tableValidator ()Lnet/minecraft/class_8490$class_8491;
 	CLASS class_8491 Validator
-		METHOD run (Lnet/minecraft/class_58;Lnet/minecraft/class_5321;Ljava/lang/Object;)V
+		METHOD method_1_234 (Lnet/minecraft/class_58;Lnet/minecraft/class_5321;Ljava/lang/Object;)V
 			ARG 1 reporter
 			ARG 2 key
 			ARG 3 value

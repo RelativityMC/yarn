@@ -29,8 +29,8 @@ CLASS net/minecraft/class_4448 net/minecraft/client/realms/util/RealmsUtil
 		ARG 0 screenCreator
 		ARG 1 errorPrefix
 	CLASS class_11538 RealmsRunnable
-		METHOD accept (Lnet/minecraft/class_4341;)V
+		METHOD method_1_59 (Lnet/minecraft/class_4341;)V
 			ARG 1 client
 	CLASS class_11539 RealmsSupplier
-		METHOD apply (Lnet/minecraft/class_4341;)Ljava/lang/Object;
+		METHOD method_1_61 (Lnet/minecraft/class_4341;)Ljava/lang/Object;
 			ARG 1 client

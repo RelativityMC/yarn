@@ -27,6 +27,6 @@ CLASS net/minecraft/class_9762 net/minecraft/util/collection/BoundedRegionArray
 		ARG 1 x
 		ARG 2 z
 	CLASS class_9763 Getter
-		METHOD get (II)Ljava/lang/Object;
+		METHOD method_1_19 (II)Ljava/lang/Object;
 			ARG 1 x
 			ARG 2 z

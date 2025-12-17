@@ -65,13 +65,13 @@ CLASS net/minecraft/class_251 net/minecraft/util/shape/VoxelSet
 	METHOD method_66493 transform (Lnet/minecraft/class_4990;)Lnet/minecraft/class_251;
 		ARG 1 transformation
 	CLASS class_252 PositionConsumer
-		METHOD consume (Lnet/minecraft/class_2350;III)V
+		METHOD method_1_214 (Lnet/minecraft/class_2350;III)V
 			ARG 1 direction
 			ARG 2 x
 			ARG 3 y
 			ARG 4 z
 	CLASS class_253 PositionBiConsumer
-		METHOD consume (IIIIII)V
+		METHOD method_1_215 (IIIIII)V
 			ARG 1 x1
 			ARG 2 y1
 			ARG 3 z1

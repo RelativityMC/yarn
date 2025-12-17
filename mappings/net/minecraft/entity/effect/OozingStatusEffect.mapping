@@ -14,7 +14,7 @@ CLASS net/minecraft/class_9456 net/minecraft/entity/effect/OozingStatusEffect
 		ARG 1 slimeCounter
 		ARG 2 potentialSlimes
 	CLASS class_9775 SlimeCounter
-		METHOD count (I)I
+		METHOD method_1_104 (I)I
 			ARG 1 limit
 		METHOD method_60604 around (Lnet/minecraft/class_1309;)Lnet/minecraft/class_9456$class_9775;
 			ARG 0 entity

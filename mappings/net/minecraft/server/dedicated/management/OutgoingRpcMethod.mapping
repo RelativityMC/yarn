@@ -35,6 +35,6 @@ CLASS net/minecraft/class_11808 net/minecraft/server/dedicated/management/Outgoi
 	CLASS class_11813 Simple
 	CLASS class_12055 Attributes
 	CLASS class_12056 Factory
-		METHOD create (Lnet/minecraft/class_11817;Lnet/minecraft/class_11808$class_12055;)Lnet/minecraft/class_11808;
+		METHOD method_1_156 (Lnet/minecraft/class_11817;Lnet/minecraft/class_11808$class_12055;)Lnet/minecraft/class_11808;
 			ARG 1 methodInfo
 			ARG 2 attributes

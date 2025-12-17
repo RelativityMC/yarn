@@ -208,12 +208,10 @@ CLASS net/minecraft/class_8113 net/minecraft/entity/decoration/DisplayEntity
 		CLASS class_8124 TextAlignment
 			FIELD field_42453 CODEC Lcom/mojang/serialization/Codec;
 			FIELD field_42454 name Ljava/lang/String;
-			METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
-				ARG 3 name
 		CLASS class_8125 TextLines
 		CLASS class_8126 TextLine
 		CLASS class_8127 LineSplitter
-			METHOD split (Lnet/minecraft/class_2561;I)Lnet/minecraft/class_8113$class_8123$class_8125;
+			METHOD method_1_30 (Lnet/minecraft/class_2561;I)Lnet/minecraft/class_8113$class_8123$class_8125;
 				ARG 1 text
 				ARG 2 lineWidth
 		CLASS class_8230 Data

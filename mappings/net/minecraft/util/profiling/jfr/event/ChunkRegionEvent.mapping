@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_9232 net/minecraft/util/profiling/jfr/event/ChunkRegionEvent
-	FIELD levelId worldId Ljava/lang/String;
+	FIELD field_1_11 worldId Ljava/lang/String;
 	METHOD <init> (Lnet/minecraft/class_9240;Lnet/minecraft/class_1923;Lnet/minecraft/class_4486;I)V
 		ARG 1 key
 		ARG 2 chunkPos

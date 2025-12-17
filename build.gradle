@@ -19,10 +19,11 @@ plugins {
 	id 'net.fabricmc.filament'
 }
 
-def minecraft_version = "1.21.11"
+def minecraft_version = "1.21.11_unobfuscated"
 
 filament {
 	minecraftVersion = minecraft_version
+	minecraftVersionManifestUrl = "https://maven.fabricmc.net/net/minecraft/experimental_versions.json"
 }
 
 def ENV = System.getenv()
@@ -131,7 +132,7 @@ import java.util.zip.GZIPOutputStream
 
 tasks.register('downloadIntermediary', DownloadTask) {
 	group = buildMappingGroup
-	url = "https://github.com/FabricMC/intermediary/raw/master/mappings/${minecraft_version}.tiny"
+	url = "https://github.com/RelativityMC/intermediary/raw/master/mappings/${minecraft_version}.tiny"
 	output = new File(cacheFilesMinecraft, "${minecraft_version}-intermediary.tiny")
 }
 

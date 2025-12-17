@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_5224 net/minecraft/text/CharacterVisitor
 	COMMENT A visitor for single characters in a string.
-	METHOD accept (ILnet/minecraft/class_2583;I)Z
+	METHOD method_1_42 (ILnet/minecraft/class_2583;I)Z
 		COMMENT Visits a single character.
 		COMMENT
 		COMMENT <p>Multiple surrogate characters are converted into one single {@code

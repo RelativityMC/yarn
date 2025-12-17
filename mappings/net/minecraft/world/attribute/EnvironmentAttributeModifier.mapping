@@ -3,12 +3,12 @@ CLASS net/minecraft/class_12212 net/minecraft/world/attribute/EnvironmentAttribu
 	FIELD field_63769 FLOAT_MODIFIERS Ljava/util/Map;
 	FIELD field_64127 RGB Ljava/util/Map;
 	FIELD field_64128 ARGB Ljava/util/Map;
-	METHOD apply (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+	METHOD method_1_278 (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 		ARG 1 value
 		ARG 2 argument
-	METHOD argumentCodec (Lnet/minecraft/class_12197;)Lcom/mojang/serialization/Codec;
+	METHOD method_1_279 (Lnet/minecraft/class_12197;)Lcom/mojang/serialization/Codec;
 		ARG 1 attribute
-	METHOD argumentKeyframeLerp (Lnet/minecraft/class_12197;)Lnet/minecraft/class_12210;
+	METHOD method_1_280 (Lnet/minecraft/class_12197;)Lnet/minecraft/class_12210;
 		ARG 1 attribute
 	METHOD method_75713 override ()Lnet/minecraft/class_12212;
 	CLASS class_12213 Type

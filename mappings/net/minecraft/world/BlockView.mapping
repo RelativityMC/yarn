@@ -64,6 +64,6 @@ CLASS net/minecraft/class_1922 net/minecraft/world/BlockView
 		ARG 2 box
 		ARG 3 visitor
 	CLASS class_10781 CollisionVisitor
-		METHOD visit (Lnet/minecraft/class_2338;I)Z
+		METHOD method_1_50 (Lnet/minecraft/class_2338;I)Z
 			ARG 1 pos
 			ARG 2 version

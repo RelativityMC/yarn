@@ -290,10 +290,10 @@ CLASS net/minecraft/class_3050 net/minecraft/server/command/ExecuteCommand
 		ARG 0 context
 		ARG 1 range
 	CLASS class_3051 ExistsCondition
-		METHOD test (Lcom/mojang/brigadier/context/CommandContext;)I
+		METHOD method_1_128 (Lcom/mojang/brigadier/context/CommandContext;)I
 			ARG 1 context
 	CLASS class_3052 Condition
-		METHOD test (Lcom/mojang/brigadier/context/CommandContext;)Z
+		METHOD method_1_129 (Lcom/mojang/brigadier/context/CommandContext;)Z
 			ARG 1 context
 	CLASS class_8831 IfUnlessRedirector
 		FIELD field_46643 predicate Ljava/util/function/IntPredicate;
@@ -306,6 +306,6 @@ CLASS net/minecraft/class_3050 net/minecraft/server/command/ExecuteCommand
 		METHOD method_54271 (I)Z
 			ARG 0 result
 	CLASS class_9007 ScoreComparisonPredicate
-		METHOD test (II)Z
+		METHOD method_1_130 (II)Z
 			ARG 1 targetScore
 			ARG 2 sourceScore

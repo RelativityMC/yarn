@@ -22,6 +22,6 @@ CLASS net/minecraft/class_5739 net/minecraft/client/render/debug/GameEventDebugR
 		ARG 0 pos
 		ARG 1 radius
 	CLASS class_12044 EventConsumer
-		METHOD accept (Lnet/minecraft/class_243;I)V
+		METHOD method_1_302 (Lnet/minecraft/class_243;I)V
 			ARG 1 pos
 			ARG 2 radius

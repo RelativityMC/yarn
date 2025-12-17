@@ -17,14 +17,14 @@ CLASS net/minecraft/class_7237 net/minecraft/server/SaveLoading
 		METHOD comp_361 commandEnvironment ()Lnet/minecraft/class_2170$class_5364;
 		METHOD comp_634 dataPacks ()Lnet/minecraft/class_7237$class_7238;
 	CLASS class_6907 LoadContextSupplier
-		METHOD get (Lnet/minecraft/class_7237$class_7660;)Lnet/minecraft/class_7237$class_7661;
+		METHOD method_1_18 (Lnet/minecraft/class_7237$class_7660;)Lnet/minecraft/class_7237$class_7661;
 			ARG 1 context
 	CLASS class_7238 DataPacks
 		FIELD comp_635 manager Lnet/minecraft/class_3283;
 		METHOD comp_635 manager ()Lnet/minecraft/class_3283;
 		METHOD method_42099 load ()Lcom/mojang/datafixers/util/Pair;
 	CLASS class_7239 SaveApplierFactory
-		METHOD create (Lnet/minecraft/class_6860;Lnet/minecraft/class_5350;Lnet/minecraft/class_7780;Ljava/lang/Object;)Ljava/lang/Object;
+		METHOD method_1_17 (Lnet/minecraft/class_6860;Lnet/minecraft/class_5350;Lnet/minecraft/class_7780;Ljava/lang/Object;)Ljava/lang/Object;
 			ARG 1 resourceManager
 			ARG 2 dataPackContents
 			ARG 3 combinedDynamicRegistries

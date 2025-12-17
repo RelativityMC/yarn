@@ -37,7 +37,7 @@ CLASS net/minecraft/class_8582 net/minecraft/util/path/AllowedSymlinkPathMatcher
 	CLASS class_8584 EntryType
 		FIELD field_44962 DEFAULT Lnet/minecraft/class_8582$class_8584;
 		FIELD field_44963 PREFIX Lnet/minecraft/class_8582$class_8584;
-		METHOD compile (Ljava/nio/file/FileSystem;Ljava/lang/String;)Ljava/nio/file/PathMatcher;
+		METHOD method_1_213 (Ljava/nio/file/FileSystem;Ljava/lang/String;)Ljava/nio/file/PathMatcher;
 			ARG 1 fileSystem
 			ARG 2 pattern
 		METHOD method_52260 (Ljava/lang/String;Ljava/nio/file/Path;)Z

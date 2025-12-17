@@ -1,9 +1,11 @@
 CLASS net/minecraft/class_5912 net/minecraft/resource/ResourceFactory
 	COMMENT Provides resource access.
 	FIELD field_49043 MISSING Lnet/minecraft/class_5912;
-	METHOD fromMap (Ljava/util/Map;)Lnet/minecraft/class_5912;
-		ARG 0 map
-	METHOD getResourceOrThrow (Lnet/minecraft/class_2960;)Lnet/minecraft/class_3298;
+	METHOD method_1_248 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_3298;
+		ARG 1 id
+	METHOD method_1_249 (Lnet/minecraft/class_2960;)Ljava/io/InputStream;
+		ARG 1 id
+	METHOD method_1_250 (Lnet/minecraft/class_2960;)Ljava/io/BufferedReader;
 		ARG 1 id
 	METHOD method_14486 getResource (Lnet/minecraft/class_2960;)Ljava/util/Optional;
 		COMMENT Finds and returns the corresponding resource for a resource's identifier.

@@ -85,7 +85,7 @@ CLASS net/minecraft/class_6350 net/minecraft/world/gen/chunk/AquiferSampler
 		METHOD method_38318 getBlockState (I)Lnet/minecraft/class_2680;
 			ARG 1 y
 	CLASS class_6565 FluidLevelSampler
-		METHOD computeFluid getFluidLevel (III)Lnet/minecraft/class_6350$class_6351;
+		METHOD method_1_110 getFluidLevel (III)Lnet/minecraft/class_6350$class_6351;
 			ARG 1 x
 			ARG 2 y
 			ARG 3 z

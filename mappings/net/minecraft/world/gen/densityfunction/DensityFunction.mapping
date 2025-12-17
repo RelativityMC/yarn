@@ -72,7 +72,7 @@ CLASS net/minecraft/class_6910 net/minecraft/world/gen/densityfunction/DensityFu
 		COMMENT {@link #apply(DensityFunctionVisitor)} for this case.
 	CLASS class_6914 UnblendedNoisePos
 	CLASS class_6915 DensityFunctionVisitor
-		METHOD apply (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		METHOD method_1_212 (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
 			ARG 1 densityFunction
 		METHOD method_42358 apply (Lnet/minecraft/class_6910$class_7270;)Lnet/minecraft/class_6910$class_7270;
 			ARG 1 noiseDensityFunction

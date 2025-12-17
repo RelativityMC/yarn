@@ -104,13 +104,13 @@ CLASS net/minecraft/class_6748 net/minecraft/world/gen/chunk/Blender
 		ARG 7 data
 	METHOD method_72689 isEmpty ()Z
 	CLASS class_6781 BlendingSampler
-		METHOD get (Lnet/minecraft/class_6749;III)D
+		METHOD method_1_230 (Lnet/minecraft/class_6749;III)D
 			ARG 1 data
 			ARG 2 biomeX
 			ARG 3 biomeY
 			ARG 4 biomeZ
 	CLASS class_6831 DistanceFunction
-		METHOD getDistance (DDD)D
+		METHOD method_1_231 (DDD)D
 			ARG 1 offsetX
 			ARG 3 y
 			ARG 5 offsetZ

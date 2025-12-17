@@ -54,7 +54,7 @@ CLASS net/minecraft/class_6603 net/minecraft/network/packet/s2c/play/ChunkData
 		METHOD method_38597 write (Lnet/minecraft/class_9129;)V
 			ARG 1 buf
 	CLASS class_6605 BlockEntityVisitor
-		METHOD accept (Lnet/minecraft/class_2338;Lnet/minecraft/class_2591;Lnet/minecraft/class_2487;)V
+		METHOD method_1_323 (Lnet/minecraft/class_2338;Lnet/minecraft/class_2591;Lnet/minecraft/class_2487;)V
 			ARG 1 pos
 			ARG 2 type
 			ARG 3 nbt

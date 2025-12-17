@@ -49,7 +49,7 @@ CLASS net/minecraft/class_8942 net/minecraft/util/ErrorReporter
 		METHOD comp_4206 key ()Ljava/lang/String;
 	CLASS class_11335 ListElementContext
 	CLASS class_11336 Context
-		METHOD get getName ()Ljava/lang/String;
+		METHOD method_1_25 getName ()Ljava/lang/String;
 	CLASS class_11337 Error
 		METHOD method_71358 getMessage ()Ljava/lang/String;
 	CLASS class_11338 LootTableContext

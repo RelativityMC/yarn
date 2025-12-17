@@ -46,7 +46,7 @@ CLASS net/minecraft/class_2837 net/minecraft/world/chunk/Palette
 	METHOD method_39956 copy ()Lnet/minecraft/class_2837;
 	CLASS class_6559 Factory
 		COMMENT An interface for easy creation of palettes.
-		METHOD create (ILjava/util/List;)Lnet/minecraft/class_2837;
+		METHOD method_1_70 (ILjava/util/List;)Lnet/minecraft/class_2837;
 			COMMENT Creates a palette.
 			COMMENT
 			COMMENT @return the created new palette

@@ -318,6 +318,6 @@ CLASS net/minecraft/class_1299 net/minecraft/entity/EntityType
 		METHOD method_63006 dropsNothing ()Lnet/minecraft/class_1299$class_1300;
 		METHOD method_72391 notAllowedInPeaceful ()Lnet/minecraft/class_1299$class_1300;
 	CLASS class_4049 EntityFactory
-		METHOD create (Lnet/minecraft/class_1299;Lnet/minecraft/class_1937;)Lnet/minecraft/class_1297;
+		METHOD method_1_49 (Lnet/minecraft/class_1299;Lnet/minecraft/class_1937;)Lnet/minecraft/class_1297;
 			ARG 1 type
 			ARG 2 world

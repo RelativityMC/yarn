@@ -28,6 +28,6 @@ CLASS net/minecraft/class_8532 net/minecraft/client/font/GlyphContainer
 	METHOD method_51604 remove (I)Ljava/lang/Object;
 		ARG 1 codePoint
 	CLASS class_8533 GlyphConsumer
-		METHOD accept (ILjava/lang/Object;)V
+		METHOD method_1_96 (ILjava/lang/Object;)V
 			ARG 1 codePoint
 			ARG 2 glyph

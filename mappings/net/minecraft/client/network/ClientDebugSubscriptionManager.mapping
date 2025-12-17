@@ -95,7 +95,7 @@ CLASS net/minecraft/class_12036 net/minecraft/client/network/ClientDebugSubscrip
 		METHOD method_74745 removeKeys (Ljava/util/function/Predicate;)V
 			ARG 1 predicate
 	CLASS class_12038 TrackableValueGetter
-		METHOD get (Lnet/minecraft/class_12036$class_12039;)Lnet/minecraft/class_12036$class_12037;
+		METHOD method_1_257 (Lnet/minecraft/class_12036$class_12039;)Lnet/minecraft/class_12036$class_12037;
 			ARG 1 map
 	CLASS class_12039 TrackableValueMap
 		FIELD field_62939 chunks Lnet/minecraft/class_12036$class_12037;

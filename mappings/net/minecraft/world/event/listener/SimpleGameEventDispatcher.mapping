@@ -22,5 +22,5 @@ CLASS net/minecraft/class_5711 net/minecraft/world/event/listener/SimpleGameEven
 		ARG 0 world
 		ARG 1 listener
 	CLASS class_8512 DisposalCallback
-		METHOD apply (I)V
+		METHOD method_1_340 (I)V
 			ARG 1 ySectionCoord

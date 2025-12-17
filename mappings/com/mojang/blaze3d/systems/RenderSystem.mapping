@@ -69,7 +69,7 @@ CLASS com/mojang/blaze3d/systems/RenderSystem
 			COMMENT vertices in the triangle.
 			COMMENT
 			COMMENT @see <a href="https://en.wikipedia.org/wiki/Polygon_triangulation">Polygon triangulation - Wikipedia</a>
-			METHOD accept (Lit/unimi/dsi/fastutil/ints/IntConsumer;I)V
+			METHOD method_1_56 (Lit/unimi/dsi/fastutil/ints/IntConsumer;I)V
 				COMMENT Decomposes a shape into triangles.
 				ARG 1 indexConsumer
 					COMMENT the consumer that accepts triangles

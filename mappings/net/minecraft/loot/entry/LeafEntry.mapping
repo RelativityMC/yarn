@@ -39,7 +39,7 @@ CLASS net/minecraft/class_85 net/minecraft/loot/entry/LeafEntry
 			ARG 1 factory
 	CLASS class_88 Choice
 	CLASS class_89 Factory
-		METHOD build (IILjava/util/List;Ljava/util/List;)Lnet/minecraft/class_85;
+		METHOD method_1_350 (IILjava/util/List;Ljava/util/List;)Lnet/minecraft/class_85;
 			ARG 1 weight
 			ARG 2 quality
 			ARG 3 conditions

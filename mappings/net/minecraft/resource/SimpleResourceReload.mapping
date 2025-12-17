@@ -77,7 +77,7 @@ CLASS net/minecraft/class_4014 net/minecraft/resource/SimpleResourceReload
 		COMMENT A factory that creates a completable future for each reloader in the
 		COMMENT resource reload.
 		FIELD field_56610 SIMPLE Lnet/minecraft/class_4014$class_4047;
-		METHOD create (Lnet/minecraft/class_3302$class_11558;Lnet/minecraft/class_3302$class_4045;Lnet/minecraft/class_3302;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
+		METHOD method_1_286 (Lnet/minecraft/class_3302$class_11558;Lnet/minecraft/class_3302$class_4045;Lnet/minecraft/class_3302;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
 			ARG 1 store
 			ARG 2 reloadSynchronizer
 			ARG 3 reloader

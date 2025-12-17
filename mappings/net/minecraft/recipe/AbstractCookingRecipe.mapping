@@ -14,7 +14,7 @@ CLASS net/minecraft/class_1874 net/minecraft/recipe/AbstractCookingRecipe
 	METHOD method_45438 getCategory ()Lnet/minecraft/class_7709;
 	METHOD method_64663 getCookerItem ()Lnet/minecraft/class_1792;
 	CLASS class_3958 RecipeFactory
-		METHOD create (Ljava/lang/String;Lnet/minecraft/class_7709;Lnet/minecraft/class_1856;Lnet/minecraft/class_1799;FI)Lnet/minecraft/class_1874;
+		METHOD method_1_271 (Ljava/lang/String;Lnet/minecraft/class_7709;Lnet/minecraft/class_1856;Lnet/minecraft/class_1799;FI)Lnet/minecraft/class_1874;
 			ARG 1 group
 			ARG 2 category
 			ARG 3 ingredient

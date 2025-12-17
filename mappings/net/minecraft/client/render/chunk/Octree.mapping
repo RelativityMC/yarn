@@ -77,7 +77,7 @@ CLASS net/minecraft/class_10143 net/minecraft/client/render/chunk/Octree
 			ARG 6 nearCenter
 		METHOD method_62920 getBoundingBox ()Lnet/minecraft/class_238;
 	CLASS class_10148 Visitor
-		METHOD visit (Lnet/minecraft/class_10143$class_10147;ZIZ)V
+		METHOD method_1_38 (Lnet/minecraft/class_10143$class_10147;ZIZ)V
 			ARG 1 node
 			ARG 2 skipVisibilityCheck
 			ARG 3 depth

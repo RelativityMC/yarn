@@ -9,7 +9,7 @@ CLASS net/minecraft/class_11474 net/minecraft/client/gui/screen/dialog/DialogScr
 		ARG 0 dialogCodec
 		ARG 1 factory
 	CLASS class_11475 Factory
-		METHOD create (Lnet/minecraft/class_437;Lnet/minecraft/class_11419;Lnet/minecraft/class_11513;)Lnet/minecraft/class_11473;
+		METHOD method_1_245 (Lnet/minecraft/class_437;Lnet/minecraft/class_11419;Lnet/minecraft/class_11513;)Lnet/minecraft/class_11473;
 			ARG 1 parent
 			ARG 2 dialog
 			ARG 3 networkAccess

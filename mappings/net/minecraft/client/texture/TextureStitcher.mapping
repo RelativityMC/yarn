@@ -62,7 +62,7 @@ CLASS net/minecraft/class_1055 net/minecraft/client/texture/TextureStitcher
 			ARG 2 padding
 		METHOD method_4569 getX ()I
 	CLASS class_4726 SpriteConsumer
-		METHOD load (Lnet/minecraft/class_1055$class_7769;III)V
+		METHOD method_1_151 (Lnet/minecraft/class_1055$class_7769;III)V
 			ARG 1 info
 			ARG 2 x
 			ARG 3 y

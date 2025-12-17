@@ -50,5 +50,5 @@ CLASS net/minecraft/class_2405 net/minecraft/data/DataProvider
 		ARG 2 pathResolver
 		ARG 3 idsToValues
 	CLASS class_7857 Factory
-		METHOD create (Lnet/minecraft/class_7784;)Lnet/minecraft/class_2405;
+		METHOD method_1_16 (Lnet/minecraft/class_7784;)Lnet/minecraft/class_2405;
 			ARG 1 output

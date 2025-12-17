@@ -6,6 +6,6 @@ CLASS net/minecraft/class_9143 net/minecraft/network/codec/ValueFirstEncoder
 	COMMENT
 	COMMENT @see PacketDecoder
 	COMMENT @see PacketEncoder
-	METHOD encode (Ljava/lang/Object;Ljava/lang/Object;)V
+	METHOD method_1_170 (Ljava/lang/Object;Ljava/lang/Object;)V
 		ARG 1 value
 		ARG 2 buf

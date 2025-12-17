@@ -307,7 +307,7 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 		METHOD method_76233 (Lnet/minecraft/class_332;IIFLnet/minecraft/class_339;)V
 			ARG 4 child
 	CLASS class_8203 Request
-		METHOD request (Lnet/minecraft/class_4341;)Ljava/lang/Object;
+		METHOD method_1_71 (Lnet/minecraft/class_4341;)Ljava/lang/Object;
 			ARG 1 client
 	CLASS class_8650 LoadStatus
 	CLASS class_8651 NotificationButtonWidget

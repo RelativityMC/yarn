@@ -7,6 +7,9 @@ CLASS net/minecraft/class_3302 net/minecraft/resource/ResourceReloader
 	COMMENT (completes preparation in one method)
 	COMMENT @see SynchronousResourceReloader SynchronousResourceReloader
 	COMMENT (performs all reloading in the apply executor)
+	METHOD method_1_303 (Lnet/minecraft/class_3302$class_11558;)V
+		COMMENT Inserts state that should be shared between reloaders into the provided data store.
+		ARG 1 store
 	METHOD method_22322 getName ()Ljava/lang/String;
 		COMMENT Returns a user-friendly name for logging.
 	METHOD method_25931 reload (Lnet/minecraft/class_3302$class_11558;Ljava/util/concurrent/Executor;Lnet/minecraft/class_3302$class_4045;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
@@ -33,9 +36,6 @@ CLASS net/minecraft/class_3302 net/minecraft/resource/ResourceReloader
 		ARG 2 prepareExecutor
 		ARG 3 reloadSynchronizer
 		ARG 4 applyExecutor
-	METHOD prepareSharedState (Lnet/minecraft/class_3302$class_11558;)V
-		COMMENT Inserts state that should be shared between reloaders into the provided data store.
-		ARG 1 store
 	CLASS class_4045 Synchronizer
 		COMMENT A synchronizer to indicate completion of a reloader's prepare stage and
 		COMMENT to allow start of the apply stage only if all reloaders have finished

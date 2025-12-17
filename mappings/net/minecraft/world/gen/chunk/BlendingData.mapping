@@ -119,18 +119,18 @@ CLASS net/minecraft/class_6749 net/minecraft/world/gen/chunk/BlendingData
 	METHOD method_61807 fromSerialized (Lnet/minecraft/class_6749$class_9899;)Lnet/minecraft/class_6749;
 		ARG 0 serialized
 	CLASS class_6750 CollidableBlockDensityConsumer
-		METHOD consume (IIID)V
+		METHOD method_1_283 (IIID)V
 			ARG 1 biomeX
 			ARG 2 halfSectionY
 			ARG 3 biomeZ
 			ARG 4 collidableBlockDensity
 	CLASS class_6751 HeightConsumer
-		METHOD consume (IID)V
+		METHOD method_1_284 (IID)V
 			ARG 1 biomeX
 			ARG 2 biomeZ
 			ARG 3 height
 	CLASS class_6853 BiomeConsumer
-		METHOD consume (IILnet/minecraft/class_6880;)V
+		METHOD method_1_282 (IILnet/minecraft/class_6880;)V
 			ARG 1 biomeX
 			ARG 2 biomeZ
 			ARG 3 biome

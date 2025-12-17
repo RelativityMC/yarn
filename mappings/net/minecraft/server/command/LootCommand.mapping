@@ -150,14 +150,14 @@ CLASS net/minecraft/class_3039 net/minecraft/server/command/LootCommand
 	METHOD method_62993 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 blockName
 	CLASS class_3040 FeedbackMessage
-		METHOD accept (Ljava/util/List;)V
+		METHOD method_1_86 (Ljava/util/List;)V
 			ARG 1 items
 	CLASS class_3041 Target
-		METHOD accept (Lcom/mojang/brigadier/context/CommandContext;Ljava/util/List;Lnet/minecraft/class_3039$class_3040;)I
+		METHOD method_1_87 (Lcom/mojang/brigadier/context/CommandContext;Ljava/util/List;Lnet/minecraft/class_3039$class_3040;)I
 			ARG 1 context
 			ARG 2 items
 			ARG 3 messageSender
 	CLASS class_3042 SourceConstructor
-		METHOD construct (Lcom/mojang/brigadier/builder/ArgumentBuilder;Lnet/minecraft/class_3039$class_3041;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+		METHOD method_1_88 (Lcom/mojang/brigadier/builder/ArgumentBuilder;Lnet/minecraft/class_3039$class_3041;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
 			ARG 1 builder
 			ARG 2 target

@@ -81,7 +81,7 @@ CLASS net/minecraft/class_7655 net/minecraft/registry/RegistryLoader
 	METHOD method_62810 createLoadingException (Ljava/util/Map;)Lnet/minecraft/class_148;
 		ARG 0 exceptions
 	CLASS class_7656 RegistryLoadable
-		METHOD apply (Lnet/minecraft/class_7655$class_9158;Lnet/minecraft/class_6903$class_7863;)V
+		METHOD method_1_102 (Lnet/minecraft/class_7655$class_9158;Lnet/minecraft/class_6903$class_7863;)V
 			ARG 1 loader
 			ARG 2 infoGetter
 	CLASS class_7657 Entry

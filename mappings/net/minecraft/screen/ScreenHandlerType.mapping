@@ -35,6 +35,6 @@ CLASS net/minecraft/class_3917 net/minecraft/screen/ScreenHandlerType
 		COMMENT
 		COMMENT <p>Screen handlers usually have a constructor that can be used as an implementation.
 		COMMENT See the note on {@link ScreenHandler}.
-		METHOD create (ILnet/minecraft/class_1661;)Lnet/minecraft/class_1703;
+		METHOD method_1_53 (ILnet/minecraft/class_1661;)Lnet/minecraft/class_1703;
 			ARG 1 syncId
 			ARG 2 playerInventory

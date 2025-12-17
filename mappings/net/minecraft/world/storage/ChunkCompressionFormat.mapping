@@ -49,5 +49,5 @@ CLASS net/minecraft/class_4486 net/minecraft/world/storage/ChunkCompressionForma
 	METHOD method_56570 (Ljava/io/OutputStream;)Ljava/io/OutputStream;
 		ARG 0 stream
 	CLASS class_4487 Wrapper
-		METHOD wrap (Ljava/lang/Object;)Ljava/lang/Object;
+		METHOD method_1_287 (Ljava/lang/Object;)Ljava/lang/Object;
 			ARG 1 object

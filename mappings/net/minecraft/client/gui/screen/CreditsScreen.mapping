@@ -44,5 +44,5 @@ CLASS net/minecraft/class_445 net/minecraft/client/gui/screen/CreditsScreen
 	METHOD method_57738 renderVignette (Lnet/minecraft/class_332;)V
 		ARG 1 context
 	CLASS class_6824 CreditsReader
-		METHOD read (Ljava/io/Reader;)V
+		METHOD method_1_97 (Ljava/io/Reader;)V
 			ARG 1 reader

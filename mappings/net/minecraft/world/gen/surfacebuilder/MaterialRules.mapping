@@ -193,7 +193,7 @@ CLASS net/minecraft/class_6686 net/minecraft/world/gen/surfacebuilder/MaterialRu
 		CLASS class_6714 StoneDepthPredicate
 	CLASS class_6715 BlockStateRule
 		COMMENT Returns a {@link BlockState} to generate at a given position, or {@code null}.
-		METHOD tryApply (III)Lnet/minecraft/class_2680;
+		METHOD method_1_181 (III)Lnet/minecraft/class_2680;
 			ARG 1 x
 			ARG 2 y
 			ARG 3 z

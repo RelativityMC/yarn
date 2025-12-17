@@ -423,25 +423,12 @@ CLASS net/minecraft/class_5699 net/minecraft/util/dynamic/Codecs
 	CLASS class_7476 TagEntryId
 		METHOD method_43963 asString ()Ljava/lang/String;
 	CLASS class_8783 StrictUnboundedMapCodec
-		FIELD a keyCodec Lcom/mojang/serialization/Codec;
-		FIELD b elementCodec Lcom/mojang/serialization/Codec;
-		METHOD <init> (Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/Codec;)V
-			ARG 1 keyCodec
-			ARG 2 elementCodec
-		METHOD decode (Lcom/mojang/serialization/DynamicOps;Lcom/mojang/serialization/MapLike;)Lcom/mojang/serialization/DataResult;
-			ARG 1 ops
-			ARG 2 input
-		METHOD decode (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
-			ARG 1 ops
-			ARG 2 input
+		FIELD comp_1_1 elementCodec Lcom/mojang/serialization/Codec;
+		FIELD comp_1_2 keyCodec Lcom/mojang/serialization/Codec;
 		METHOD encode (Ljava/lang/Object;Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
 			ARG 1 input
 			ARG 2 ops
 			ARG 3 prefix
-		METHOD equals (Ljava/lang/Object;)Z
-			ARG 1 o
-		METHOD method_53706 (Lcom/mojang/serialization/DynamicOps;Lcom/mojang/serialization/MapLike;)Lcom/mojang/serialization/DataResult;
-			ARG 2 map
 		METHOD method_53707 (Ljava/lang/Object;Ljava/util/Map;)Lcom/mojang/datafixers/util/Pair;
 			ARG 1 map
 	CLASS class_10388 IdMapper

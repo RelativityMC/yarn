@@ -14,6 +14,6 @@ CLASS net/minecraft/class_69 net/minecraft/loot/entry/CombinedEntry
 	METHOD method_53281 (Lnet/minecraft/class_69;)Ljava/util/List;
 		ARG 0 entry
 	CLASS class_70 Factory
-		METHOD create (Ljava/util/List;Ljava/util/List;)Lnet/minecraft/class_69;
+		METHOD method_1_316 (Ljava/util/List;Ljava/util/List;)Lnet/minecraft/class_69;
 			ARG 1 terms
 			ARG 2 conditions

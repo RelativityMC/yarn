@@ -21,7 +21,7 @@ CLASS net/minecraft/class_2191 net/minecraft/command/argument/GameProfileArgumen
 		ARG 1 reader
 		ARG 2 source
 	CLASS class_2192 GameProfileArgument
-		METHOD getNames (Lnet/minecraft/class_2168;)Ljava/util/Collection;
+		METHOD method_1_239 (Lnet/minecraft/class_2168;)Ljava/util/Collection;
 			ARG 1 source
 	CLASS class_2193 SelectorBacked
 		FIELD field_9870 selector Lnet/minecraft/class_2300;

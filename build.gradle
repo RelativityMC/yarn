@@ -645,7 +645,7 @@ publishing {
 			artifact(extrasJar) {
 				classifier = "extras"
 			}
-			artifact javadocJar
+//			artifact javadocJar
 		}
 
 	}

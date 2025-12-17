@@ -857,7 +857,7 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		METHOD method_47520 uvLockedLog (Lnet/minecraft/class_2248;)Lnet/minecraft/class_4910$class_4914;
 			ARG 1 logBlock
 	CLASS class_5879 StateFactory
-		METHOD method_1_244 (Lnet/minecraft/class_2248;Lnet/minecraft/class_813;Lnet/minecraft/class_4944;Ljava/util/function/BiConsumer;)Lnet/minecraft/class_4917;
+		METHOD method_1_244 findTests (Lnet/minecraft/class_2248;Lnet/minecraft/class_813;Lnet/minecraft/class_4944;Ljava/util/function/BiConsumer;)Lnet/minecraft/class_4917;
 			ARG 1 block
 			ARG 2 variant
 			ARG 3 textures

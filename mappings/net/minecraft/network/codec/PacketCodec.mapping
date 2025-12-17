@@ -298,7 +298,6 @@ CLASS net/minecraft/class_9139 net/minecraft/network/codec/PacketCodec
 		ARG 19 from10
 		ARG 20 to
 	CLASS 11
-		FIELD field_49712 codecSupplier Ljava/util/function/Supplier;
 	CLASS class_9140 ResultFunction
 		METHOD method_1_62 (Lnet/minecraft/class_9139;)Lnet/minecraft/class_9139;
 			ARG 1 codec

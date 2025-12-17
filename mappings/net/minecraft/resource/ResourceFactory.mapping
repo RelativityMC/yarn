@@ -20,7 +20,3 @@ CLASS net/minecraft/class_5912 net/minecraft/resource/ResourceFactory
 		ARG 1 id
 	METHOD method_56937 (Lnet/minecraft/class_2960;)Ljava/util/Optional;
 		ARG 0 id
-	METHOD open (Lnet/minecraft/class_2960;)Ljava/io/InputStream;
-		ARG 1 id
-	METHOD openAsReader (Lnet/minecraft/class_2960;)Ljava/io/BufferedReader;
-		ARG 1 id

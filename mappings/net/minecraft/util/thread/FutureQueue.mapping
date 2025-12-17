@@ -6,8 +6,6 @@ CLASS net/minecraft/class_7620 net/minecraft/util/thread/FutureQueue
 	METHOD method_1_13 (Ljava/util/concurrent/CompletableFuture;Ljava/util/function/Consumer;)V
 		ARG 1 future
 		ARG 2 callback
-	METHOD immediate (Ljava/util/concurrent/Executor;)Lnet/minecraft/class_7620;
-		ARG 0 executor
 	METHOD method_54441 (Ljava/lang/Runnable;Ljava/lang/Object;)V
 		ARG 1 current
 	CLASS 1

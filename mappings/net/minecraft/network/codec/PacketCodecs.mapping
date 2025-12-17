@@ -326,53 +326,15 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 	METHOD method_72187 lengthPrependedRegistry (I)Lnet/minecraft/class_9139$class_9140;
 		ARG 0 maxSize
 	CLASS 3
-		METHOD method_59799 decode (Lio/netty/buffer/ByteBuf;)[B
-			ARG 1 buf
-		METHOD method_59800 encode (Lio/netty/buffer/ByteBuf;[B)V
-			ARG 1 buf
-			ARG 2 value
 	CLASS 4
-		METHOD method_56403 decode (Lio/netty/buffer/ByteBuf;)[B
-			ARG 1 buf
-		METHOD method_56404 encode (Lio/netty/buffer/ByteBuf;[B)V
-			ARG 1 buf
-			ARG 2 value
 	CLASS 5
-		METHOD method_68115 decode (Lio/netty/buffer/ByteBuf;)[J
-			ARG 1 buf
-		METHOD method_68116 encode (Lio/netty/buffer/ByteBuf;[J)V
-			ARG 1 buf
-			ARG 2 values
 	CLASS 9
-		METHOD method_71604 (Ljava/lang/Object;Ljava/lang/String;)Lio/netty/handler/codec/EncoderException;
-			ARG 1 error
-		METHOD method_71605 (Ljava/lang/Object;Ljava/lang/String;)Lio/netty/handler/codec/DecoderException;
-			ARG 1 error
 	CLASS 10
-		METHOD method_71606 (Ljava/lang/Object;Ljava/lang/String;)Lio/netty/handler/codec/EncoderException;
-			ARG 1 error
-		METHOD method_71607 (Lnet/minecraft/class_2520;Ljava/lang/String;)Lio/netty/handler/codec/DecoderException;
-			ARG 1 error
 	CLASS 17
 	CLASS 18
 	CLASS 19
-		METHOD method_71582 (Lio/netty/buffer/ByteBuf;Lnet/minecraft/class_9139;Ljava/lang/Object;)V
-			ARG 2 value
-		METHOD method_71583 (Lio/netty/buffer/ByteBuf;Lnet/minecraft/class_9139;Ljava/lang/Object;)V
-			ARG 2 value
 	CLASS 22
-		METHOD method_71590 getRegistryOrThrow (Lnet/minecraft/class_9129;)Lnet/minecraft/class_2359;
-			ARG 1 buf
 	CLASS 24
-		METHOD method_72191 getIndexedEntries (Lnet/minecraft/class_9129;)Lnet/minecraft/class_2359;
-			ARG 1 buf
 	CLASS 25
-		FIELD field_61047 entryCodec Lnet/minecraft/class_9139;
 	CLASS 26
-		METHOD method_71596 (Lio/netty/buffer/ByteBuf;Ljava/lang/String;)V
-			ARG 0 bufx
-			ARG 1 signature
-		METHOD method_71597 (Lio/netty/buffer/ByteBuf;)Ljava/lang/String;
-			ARG 0 bufx
 	CLASS 28
-		FIELD field_60514 GSON Lcom/google/gson/Gson;

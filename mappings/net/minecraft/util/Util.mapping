@@ -513,19 +513,8 @@ CLASS net/minecraft/class_156 net/minecraft/util/Util
 	METHOD method_75862 getDefaultLocaleFormatter (Ljava/time/format/FormatStyle;)Ljava/time/format/DateTimeFormatter;
 		ARG 0 style
 	CLASS 2
-		FIELD field_29655 cache Ljava/util/Map;
-		METHOD apply (Ljava/lang/Object;)Ljava/lang/Object;
-			ARG 1 object
 	CLASS 3
-		FIELD field_29657 cache Ljava/util/Map;
-		METHOD apply (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-			ARG 1 a
-			ARG 2 b
-		METHOD method_34867 (Ljava/util/function/BiFunction;Lcom/mojang/datafixers/util/Pair;)Ljava/lang/Object;
-			ARG 1 pair
 	CLASS 4
-		METHOD onTermination (Ljava/lang/Throwable;)V
-			ARG 1 throwable
 	CLASS class_158 OperatingSystem
 		COMMENT An enum representing the operating system of the current platform.
 		COMMENT This defines the behavior for opening links.

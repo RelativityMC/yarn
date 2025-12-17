@@ -627,8 +627,8 @@ check.dependsOn javadocLint
 publishing {
 	publications {
 		register("maven", MavenPublication) {
-			groupId = 'net.fabricmc'
-			artifactId = "yarn"
+			groupId = 'org.relativitymc'
+			artifactId = "modern-yarn"
 			version = yarnVersion
 
 			artifact(compressTiny.output) {
@@ -654,8 +654,8 @@ publishing {
 			maven {
 				url = ENV.MAVEN_URL
 				credentials {
-					username = ENV.MAVEN_USERNAME
-					password = ENV.MAVEN_PASSWORD
+					username = ENV.MAVEN_CRED_USR
+					password = ENV.MAVEN_CRED_PSW
 				}
 			}
 		}

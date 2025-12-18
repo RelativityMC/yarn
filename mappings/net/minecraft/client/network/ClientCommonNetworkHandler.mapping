@@ -68,7 +68,7 @@ CLASS net/minecraft/class_8673 net/minecraft/client/network/ClientCommonNetworkH
 			ARG 4 pack
 			ARG 5 required
 			ARG 6 prompt
-		METHOD method_55612 (Lnet/minecraft/class_310;Lnet/minecraft/class_437;ZLjava/util/List;Lnet/minecraft/class_8673;Z)V
+		METHOD method_55612 (Lnet/minecraft/class_310;Lnet/minecraft/class_437;Lnet/minecraft/class_8673;ZLjava/util/List;Z)V
 			ARG 5 confirmed
 		METHOD method_55613 add (Lnet/minecraft/class_310;Ljava/util/UUID;Ljava/net/URL;Ljava/lang/String;ZLnet/minecraft/class_2561;)Lnet/minecraft/class_8673$class_9058;
 			ARG 1 client

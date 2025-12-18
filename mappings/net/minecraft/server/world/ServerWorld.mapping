@@ -315,8 +315,6 @@ CLASS net/minecraft/class_3218 net/minecraft/server/world/ServerWorld
 		ARG 1 id
 	METHOD method_31426 addEntities (Ljava/util/stream/Stream;)V
 		ARG 1 entities
-	METHOD method_31431 (Lnet/minecraft/class_1297;)Ljava/lang/String;
-		ARG 0 entity
 	METHOD method_32819 getLogicalHeight ()I
 	METHOD method_33143 sendSleepingStatus ()V
 		COMMENT Sends sleeping status action bar messages to players in this world.

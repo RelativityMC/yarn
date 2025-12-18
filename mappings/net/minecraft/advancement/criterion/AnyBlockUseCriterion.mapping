@@ -8,8 +8,6 @@ CLASS net/minecraft/class_9104 net/minecraft/advancement/criterion/AnyBlockUseCr
 	CLASS class_9105 Conditions
 		FIELD comp_2029 player Ljava/util/Optional;
 		FIELD field_48277 CODEC Lcom/mojang/serialization/Codec;
-		METHOD method_56051 (Lnet/minecraft/class_8944;Lnet/minecraft/class_5258;)V
-			ARG 1 location
 		METHOD method_56052 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance
 		METHOD method_56053 test (Lnet/minecraft/class_47;)Z

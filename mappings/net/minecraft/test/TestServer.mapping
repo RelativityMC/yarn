@@ -11,19 +11,18 @@ CLASS net/minecraft/class_6306 net/minecraft/test/TestServer
 	FIELD field_53734 ENABLED_FEATURES Lnet/minecraft/class_7699;
 	FIELD field_56192 tests Ljava/util/Optional;
 	FIELD field_56193 verify Z
-	METHOD <init> (Ljava/lang/Thread;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_3283;Lnet/minecraft/class_6904;Ljava/util/Optional;Z)V
+	METHOD <init> (Ljava/lang/Thread;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_3283;Lnet/minecraft/class_6904;Ljava/util/Optional;ZI)V
 		ARG 1 serverThread
 		ARG 2 session
 		ARG 3 dataPackManager
 		ARG 4 saveLoader
 		ARG 5 tests
-		ARG 6 verify
 	METHOD method_36096 runTestBatches (Lnet/minecraft/class_3218;)V
 		ARG 1 world
 	METHOD method_36098 isTesting ()Z
 	METHOD method_40377 (Lnet/minecraft/class_1940;Lnet/minecraft/class_7237$class_7660;)Lnet/minecraft/class_7237$class_7661;
 		ARG 1 context
-	METHOD method_40378 create (Ljava/lang/Thread;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_3283;Ljava/util/Optional;Z)Lnet/minecraft/class_6306;
+	METHOD method_40378 create (Ljava/lang/Thread;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_3283;Ljava/util/Optional;ZI)Lnet/minecraft/class_6306;
 		ARG 0 thread
 		ARG 1 session
 		ARG 2 resourcePackManager

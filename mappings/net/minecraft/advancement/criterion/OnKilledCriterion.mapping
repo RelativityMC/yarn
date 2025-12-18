@@ -11,7 +11,6 @@ CLASS net/minecraft/class_2080 net/minecraft/advancement/criterion/OnKilledCrite
 		FIELD field_47304 CODEC Lcom/mojang/serialization/Codec;
 		METHOD <init> (Ljava/util/Optional;Ljava/util/Optional;Ljava/util/Optional;)V
 			ARG 1 playerPredicate
-			ARG 2 entity
 			ARG 3 killingBlow
 		METHOD comp_2068 entity ()Ljava/util/Optional;
 		METHOD method_8997 createPlayerKilledEntity (Lnet/minecraft/class_2048$class_2049;)Lnet/minecraft/class_175;

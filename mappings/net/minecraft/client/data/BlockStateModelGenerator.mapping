@@ -478,8 +478,6 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 	METHOD method_49990 registerSnifferEgg ()V
 	METHOD method_49991 registerPitcherPlant ()V
 	METHOD method_49992 registerPitcherCrop ()V
-	METHOD method_51463 registerGeneric (Lnet/minecraft/class_2248;)V
-		ARG 1 block
 	METHOD method_54654 registerCrafter ()V
 	METHOD method_54822 createCopperBulbBlockState (Lnet/minecraft/class_2248;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;)Lnet/minecraft/class_4917;
 		ARG 0 block

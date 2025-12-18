@@ -12,7 +12,7 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	FIELD field_4017 lastWorldIconUpdate J
 	FIELD field_4019 fovMultiplier F
 	FIELD field_4025 viewDistanceBlocks F
-	FIELD field_4028 lightmapTextureManager Lnet/minecraft/class_765;
+	FIELD field_4028 lightmapTextureManager Lnet/minecraft/class_1_52;
 	FIELD field_18765 camera Lnet/minecraft/class_4184;
 	FIELD field_20948 buffers Lnet/minecraft/class_4599;
 	FIELD field_20949 overlayTexture Lnet/minecraft/class_4608;
@@ -90,7 +90,6 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	METHOD method_19418 getCamera ()Lnet/minecraft/class_4184;
 	METHOD method_22973 getBasicProjectionMatrix (F)Lorg/joml/Matrix4f;
 		ARG 1 fovDegrees
-	METHOD method_22974 getLightmapTextureManager ()Lnet/minecraft/class_765;
 	METHOD method_22975 getOverlayTexture ()Lnet/minecraft/class_4608;
 	METHOD method_32796 getFarPlaneDistance ()F
 	METHOD method_34521 preloadPrograms (Lnet/minecraft/class_5912;)V

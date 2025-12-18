@@ -19,11 +19,10 @@ plugins {
 	id 'net.fabricmc.filament'
 }
 
-def minecraft_version = "1.21.11_unobfuscated"
+def minecraft_version = "26.1-snapshot-1"
 
 filament {
 	minecraftVersion = minecraft_version
-	minecraftVersionManifestUrl = "https://maven.fabricmc.net/net/minecraft/experimental_versions.json"
 }
 
 def ENV = System.getenv()

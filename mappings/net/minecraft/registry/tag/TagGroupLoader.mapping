@@ -42,9 +42,8 @@ CLASS net/minecraft/class_3503 net/minecraft/registry/tag/TagGroupLoader
 	METHOD method_61308 loadInitial (Lnet/minecraft/class_3300;Lnet/minecraft/class_2385;)V
 		ARG 0 resourceManager
 		ARG 1 registry
-	METHOD method_61309 loadFromNetwork (Lnet/minecraft/class_6864$class_5748;Lnet/minecraft/class_2385;)V
+	METHOD method_61309 loadFromNetwork (Lnet/minecraft/class_6864$class_5748;Lnet/minecraft/class_2378;)Ljava/util/Map;
 		ARG 0 tags
-		ARG 1 registry
 	METHOD method_61310 find (Ljava/util/List;Lnet/minecraft/class_5321;)Lnet/minecraft/class_2378$class_10106;
 		ARG 0 pendingTags
 		ARG 1 registryRef
@@ -53,9 +52,6 @@ CLASS net/minecraft/class_3503 net/minecraft/registry/tag/TagGroupLoader
 	METHOD method_61313 collectRegistries (Lnet/minecraft/class_5455$class_6890;Ljava/util/List;)Ljava/util/List;
 		ARG 0 registryManager
 		ARG 1 tagLoads
-	METHOD method_61314 (Lnet/minecraft/class_2385;Lnet/minecraft/class_5321;Lnet/minecraft/class_2960;Ljava/util/List;)V
-		ARG 2 id
-		ARG 3 entries
 	CLASS class_5145 TrackedEntry
 		FIELD comp_324 entry Lnet/minecraft/class_3497;
 		FIELD comp_325 source Ljava/lang/String;
@@ -73,9 +69,9 @@ CLASS net/minecraft/class_3503 net/minecraft/registry/tag/TagGroupLoader
 		METHOD method_1_7 (Lnet/minecraft/class_2960;Z)Ljava/util/Optional;
 			ARG 1 id
 			ARG 2 required
-		METHOD method_64597 (Lnet/minecraft/class_7871;Lnet/minecraft/class_2385;Lnet/minecraft/class_2960;Z)Ljava/util/Optional;
-			ARG 2 id
-			ARG 3 required
+		METHOD method_64597 (Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;Lnet/minecraft/class_5321;Lnet/minecraft/class_2960;Z)Ljava/util/Optional;
+			ARG 3 id
+			ARG 4 required
 		METHOD method_64598 forReload (Lnet/minecraft/class_2378;)Lnet/minecraft/class_3503$class_10272;
 			ARG 0 registry
 		METHOD method_64599 (Lnet/minecraft/class_2378;Lnet/minecraft/class_2960;Z)Ljava/util/Optional;

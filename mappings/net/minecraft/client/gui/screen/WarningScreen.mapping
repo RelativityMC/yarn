@@ -17,5 +17,3 @@ CLASS net/minecraft/class_7065 net/minecraft/client/gui/screen/WarningScreen
 	METHOD method_57750 getLayout ()Lnet/minecraft/class_8133;
 	METHOD method_57753 (Lnet/minecraft/class_7847;)V
 		ARG 0 positioner
-	METHOD method_57754 (Lnet/minecraft/class_7065;Lnet/minecraft/class_364;)V
-		ARG 1 child

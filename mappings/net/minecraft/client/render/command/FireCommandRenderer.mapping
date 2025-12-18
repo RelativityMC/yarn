@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_11685 net/minecraft/client/render/command/FireCommandRenderer
-	METHOD method_73004 vertex (Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;FFFFF)V
+	METHOD method_73004 vertex (Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;FFFFFI)V
 		ARG 0 matricesEntry
 		ARG 1 vertexConsumer
 		ARG 2 x

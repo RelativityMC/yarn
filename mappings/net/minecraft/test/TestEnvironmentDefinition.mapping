@@ -2,24 +2,19 @@ CLASS net/minecraft/class_10665 net/minecraft/test/TestEnvironmentDefinition
 	FIELD field_56200 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_56201 ENTRY_CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_67050 getCodec ()Lcom/mojang/serialization/MapCodec;
-	METHOD method_67051 setup (Lnet/minecraft/class_3218;)V
+	METHOD method_67051 setup (Lnet/minecraft/class_3218;)Ljava/lang/Object;
 		ARG 1 world
 	METHOD method_67052 (Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
 		ARG 0 codec
 	METHOD method_67053 registerAndGetDefault (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
 		ARG 0 registry
-	METHOD method_67054 teardown (Lnet/minecraft/class_3218;)V
-		ARG 1 world
+	METHOD method_67054 teardown (Lnet/minecraft/class_3218;Ljava/lang/Object;)V
 	CLASS class_10666 AllOf
 		FIELD field_56202 CODEC Lcom/mojang/serialization/MapCodec;
 		METHOD <init> ([Lnet/minecraft/class_10665;)V
 			ARG 1 definitionTypes
-		METHOD method_67055 (Lnet/minecraft/class_3218;Lnet/minecraft/class_6880;)V
-			ARG 1 definition
 		METHOD method_67056 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance
-		METHOD method_67057 (Lnet/minecraft/class_3218;Lnet/minecraft/class_6880;)V
-			ARG 1 definition
 	CLASS class_10667 Function
 		FIELD field_56203 CODEC Lcom/mojang/serialization/MapCodec;
 		FIELD field_56204 LOGGER Lorg/slf4j/Logger;
@@ -28,19 +23,10 @@ CLASS net/minecraft/class_10665 net/minecraft/test/TestEnvironmentDefinition
 			ARG 1 functionId
 		METHOD method_67059 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance
-		METHOD method_67060 (Lnet/minecraft/class_3218;Lnet/minecraft/class_2960;)V
-			ARG 1 functionId
-		METHOD method_67061 (Lnet/minecraft/class_3218;Lnet/minecraft/class_2960;)V
-			ARG 1 functionId
 	CLASS class_10668 GameRules
 		FIELD field_56205 CODEC Lcom/mojang/serialization/MapCodec;
-		METHOD method_76326 resetValue (Lnet/minecraft/class_3218;Lnet/minecraft/class_12279;)V
-			ARG 1 serverWorld
-			ARG 2 rule
 		METHOD method_76327 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance
-		METHOD method_76328 (Lnet/minecraft/class_3218;Lnet/minecraft/class_12279;)V
-			ARG 2 rule
 	CLASS class_10670 TimeOfDay
 		FIELD field_56206 CODEC Lcom/mojang/serialization/MapCodec;
 		METHOD method_67066 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

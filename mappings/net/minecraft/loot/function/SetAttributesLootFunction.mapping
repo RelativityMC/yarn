@@ -6,8 +6,6 @@ CLASS net/minecraft/class_137 net/minecraft/loot/function/SetAttributesLootFunct
 		ARG 1 conditions
 		ARG 2 attributes
 		ARG 3 replace
-	METHOD method_32406 (Lnet/minecraft/class_137$class_138;)Ljava/util/stream/Stream;
-		ARG 0 attribute
 	METHOD method_35524 attributeBuilder (Lnet/minecraft/class_2960;Lnet/minecraft/class_6880;Lnet/minecraft/class_1322$class_1323;Lnet/minecraft/class_5658;)Lnet/minecraft/class_137$class_6156;
 		ARG 0 id
 		ARG 1 attribute

@@ -19,8 +19,6 @@ CLASS net/minecraft/class_58 net/minecraft/loot/LootTableReporter
 	METHOD method_364 makeChild (Lnet/minecraft/class_8942$class_11336;)Lnet/minecraft/class_58;
 	METHOD method_22567 validateContext (Lnet/minecraft/class_46;)V
 		ARG 1 contextAware
-	METHOD method_22568 withContextType (Lnet/minecraft/class_176;)Lnet/minecraft/class_58;
-		ARG 1 contextType
 	METHOD method_51218 isInStack (Lnet/minecraft/class_5321;)Z
 		ARG 1 key
 	METHOD method_51219 makeChild (Lnet/minecraft/class_8942$class_11336;Lnet/minecraft/class_5321;)Lnet/minecraft/class_58;

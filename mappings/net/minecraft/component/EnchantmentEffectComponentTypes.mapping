@@ -26,13 +26,7 @@ CLASS net/minecraft/class_9701 net/minecraft/component/EnchantmentEffectComponen
 		ARG 0 builder
 	METHOD method_60085 (Lnet/minecraft/class_9331$class_9332;)Lnet/minecraft/class_9331$class_9332;
 		ARG 0 builder
-	METHOD method_60086 (Lnet/minecraft/class_9331$class_9332;)Lnet/minecraft/class_9331$class_9332;
-		ARG 0 builder
-	METHOD method_60087 (Lnet/minecraft/class_9331$class_9332;)Lnet/minecraft/class_9331$class_9332;
-		ARG 0 builder
 	METHOD method_60088 (Lnet/minecraft/class_9331$class_9332;)Lnet/minecraft/class_9331$class_9332;
-		ARG 0 builder
-	METHOD method_60089 (Lnet/minecraft/class_9331$class_9332;)Lnet/minecraft/class_9331$class_9332;
 		ARG 0 builder
 	METHOD method_60090 (Lnet/minecraft/class_9331$class_9332;)Lnet/minecraft/class_9331$class_9332;
 		ARG 0 builder
@@ -42,13 +36,7 @@ CLASS net/minecraft/class_9701 net/minecraft/component/EnchantmentEffectComponen
 		ARG 0 builder
 	METHOD method_60093 (Lnet/minecraft/class_9331$class_9332;)Lnet/minecraft/class_9331$class_9332;
 		ARG 0 builder
-	METHOD method_60094 (Lnet/minecraft/class_9331$class_9332;)Lnet/minecraft/class_9331$class_9332;
-		ARG 0 builder
-	METHOD method_60095 (Lnet/minecraft/class_9331$class_9332;)Lnet/minecraft/class_9331$class_9332;
-		ARG 0 builder
 	METHOD method_60096 (Lnet/minecraft/class_9331$class_9332;)Lnet/minecraft/class_9331$class_9332;
-		ARG 0 builder
-	METHOD method_60097 (Lnet/minecraft/class_9331$class_9332;)Lnet/minecraft/class_9331$class_9332;
 		ARG 0 builder
 	METHOD method_60098 (Lnet/minecraft/class_9331$class_9332;)Lnet/minecraft/class_9331$class_9332;
 		ARG 0 builder

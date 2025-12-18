@@ -44,4 +44,4 @@ CLASS net/minecraft/class_9317 net/minecraft/loot/function/CopyComponentsLootFun
 	CLASS class_12066 BlockEntityComponentsSource
 		FIELD comp_4918 contextParam Lnet/minecraft/class_169;
 	CLASS class_12288 ComponentAccessSource
-		FIELD comp_4918 contextParam Lnet/minecraft/class_169;
+		FIELD comp_4920 contextParam Lnet/minecraft/class_169;

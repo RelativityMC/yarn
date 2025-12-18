@@ -22,8 +22,6 @@ CLASS net/minecraft/class_7551 net/minecraft/client/gui/screen/report/AbuseRepor
 	METHOD method_57760 getWidth ()I
 	METHOD method_57761 getHeight ()I
 	METHOD method_57762 getReasonListHeight ()I
-	METHOD method_57763 (Lnet/minecraft/class_7551;Lnet/minecraft/class_364;)V
-		ARG 1 child
 	METHOD method_57764 getLeft ()I
 	CLASS class_7552 ReasonListWidget
 		METHOD <init> (Lnet/minecraft/class_7551;Lnet/minecraft/class_310;)V

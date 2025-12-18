@@ -49,7 +49,6 @@ CLASS net/minecraft/class_778 net/minecraft/client/render/block/BlockModelRender
 		ARG 1 world
 		ARG 2 state
 		ARG 3 pos
-		ARG 4 light
 		ARG 5 overlay
 		ARG 6 useWorldLight
 		ARG 7 matrices
@@ -103,13 +102,11 @@ CLASS net/minecraft/class_778 net/minecraft/client/render/block/BlockModelRender
 		METHOD method_3383 ([Lnet/minecraft/class_778$class_779;)V
 			ARG 0 values
 	CLASS class_780 AmbientOcclusionCalculator
-		METHOD method_3386 getAmbientOcclusionBrightness (IIII)I
 		METHOD method_3388 apply (Lnet/minecraft/class_1920;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;Z)V
 			ARG 1 world
 			ARG 2 state
 			ARG 3 pos
 			ARG 4 direction
-		METHOD method_3389 getBrightness (IIIIFFFF)I
 	CLASS class_781 Translation
 		FIELD field_4198 thirdCorner I
 		FIELD field_4201 secondCorner I

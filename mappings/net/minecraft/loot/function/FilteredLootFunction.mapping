@@ -10,14 +10,10 @@ CLASS net/minecraft/class_9668 net/minecraft/loot/function/FilteredLootFunction
 		ARG 4 onFail
 	METHOD method_75902 builder (Lnet/minecraft/class_2073;)Lnet/minecraft/class_9668$class_12244;
 		ARG 0 itemFilter
-	METHOD method_75903 (Lnet/minecraft/class_58;Lnet/minecraft/class_117;)V
-		ARG 1 lootFunction
 	METHOD method_75904 (Lnet/minecraft/class_9668;)Ljava/util/Optional;
 		ARG 0 lootFunction
 	METHOD method_75905 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
-	METHOD method_75906 (Lnet/minecraft/class_58;Lnet/minecraft/class_117;)V
-		ARG 1 lootFunction
 	METHOD method_75907 (Lnet/minecraft/class_9668;)Ljava/util/Optional;
 		ARG 0 lootFunction
 	METHOD method_75908 (Lnet/minecraft/class_9668;)Lnet/minecraft/class_2073;

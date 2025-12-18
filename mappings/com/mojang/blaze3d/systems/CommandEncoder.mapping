@@ -66,8 +66,6 @@ CLASS com/mojang/blaze3d/systems/CommandEncoder
 		ARG 1 slice
 		ARG 2 read
 		ARG 3 write
-	METHOD presentTexture (Lcom/mojang/blaze3d/textures/GpuTextureView;)V
-		ARG 1 texture
 	METHOD writeToBuffer (Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Ljava/nio/ByteBuffer;)V
 		ARG 1 slice
 		ARG 2 source

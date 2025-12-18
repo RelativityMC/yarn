@@ -33,8 +33,6 @@ CLASS net/minecraft/class_52 net/minecraft/loot/LootTable
 		ARG 1 inventory
 		ARG 2 parameters
 		ARG 3 seed
-	METHOD method_330 validate (Lnet/minecraft/class_58;)V
-		ARG 1 reporter
 	METHOD method_331 (Lnet/minecraft/class_3218;Ljava/util/function/Consumer;Lnet/minecraft/class_1799;)V
 		ARG 2 stack
 	METHOD method_332 processStacks (Lnet/minecraft/class_3218;Ljava/util/function/Consumer;)Ljava/util/function/Consumer;

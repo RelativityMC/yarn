@@ -5,9 +5,6 @@ CLASS net/minecraft/class_79 net/minecraft/loot/entry/LootPoolEntry
 		ARG 1 conditions
 	METHOD method_414 test (Lnet/minecraft/class_47;)Z
 		ARG 1 context
-	METHOD method_415 validate (Lnet/minecraft/class_58;)V
-		ARG 1 reporter
-	METHOD method_29318 getType ()Lnet/minecraft/class_5338;
 	METHOD method_53287 addConditionsField (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/Products$P1;
 		ARG 0 instance
 	METHOD method_53288 (Lnet/minecraft/class_79;)Ljava/util/List;

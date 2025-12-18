@@ -101,8 +101,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 world
 		ARG 2 source
 	METHOD method_5936 canPickUpLoot ()Z
-	METHOD method_5973 canTarget (Lnet/minecraft/class_1299;)Z
-		ARG 1 type
+	METHOD method_5973 canTarget (Lnet/minecraft/class_1297;)Z
 	METHOD method_5996 getAttributeInstance (Lnet/minecraft/class_6880;)Lnet/minecraft/class_1324;
 		ARG 1 attribute
 	METHOD method_5997 attackLivingEntity (Lnet/minecraft/class_1309;)V

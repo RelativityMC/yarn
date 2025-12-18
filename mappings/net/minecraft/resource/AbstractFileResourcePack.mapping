@@ -1,7 +1,4 @@
 CLASS net/minecraft/class_3255 net/minecraft/resource/AbstractFileResourcePack
-	FIELD field_14182 LOGGER Lorg/slf4j/Logger;
 	FIELD field_49031 info Lnet/minecraft/class_9224;
 	METHOD <init> (Lnet/minecraft/class_9224;)V
 		ARG 1 info
-	METHOD method_14392 parseMetadata (Lnet/minecraft/class_7677;Ljava/io/InputStream;Lnet/minecraft/class_9224;)Ljava/lang/Object;
-		ARG 1 inputStream

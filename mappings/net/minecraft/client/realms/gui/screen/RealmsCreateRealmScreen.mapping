@@ -14,8 +14,6 @@ CLASS net/minecraft/class_4390 net/minecraft/client/realms/gui/screen/RealmsCrea
 	METHOD method_21245 createWorld (Lnet/minecraft/class_4877;Z)V
 		ARG 1 realmsServer
 		ARG 2 prerelease
-	METHOD method_52665 (Lnet/minecraft/class_4390;Lnet/minecraft/class_364;)V
-		ARG 1 child
 	METHOD method_52666 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
 	METHOD method_52667 (Lnet/minecraft/class_4185;Ljava/lang/String;)V

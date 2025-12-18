@@ -16,7 +16,7 @@ CLASS net/minecraft/class_3977 net/minecraft/world/storage/VersionedChunkStorage
 		ARG 4 dsync
 		ARG 5 dataFixTypes
 		ARG 6 updaterFactory
-	METHOD method_17907 updateChunkNbt (Lnet/minecraft/class_2487;ILnet/minecraft/class_2487;)Lnet/minecraft/class_2487;
+	METHOD method_17907 updateChunkNbt (Lnet/minecraft/class_2487;ILnet/minecraft/class_2487;I)Lnet/minecraft/class_2487;
 		ARG 1 chunkNbt
 		ARG 2 fallbackVersion
 		ARG 3 context

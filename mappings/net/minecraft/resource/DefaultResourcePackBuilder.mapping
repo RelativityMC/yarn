@@ -4,11 +4,10 @@ CLASS net/minecraft/class_7665 net/minecraft/resource/DefaultResourcePackBuilder
 	FIELD field_40006 RESOURCE_TYPE_TO_PATH Ljava/util/Map;
 	FIELD field_40007 rootPaths Ljava/util/Set;
 	FIELD field_40008 paths Ljava/util/Map;
-	FIELD field_40009 metadataMap Lnet/minecraft/class_7662;
+	FIELD field_40009 metadataMap Lnet/minecraft/class_7368;
 	FIELD field_40010 namespaces Ljava/util/Set;
 	METHOD method_45197 withDefaultPaths ()Lnet/minecraft/class_7665;
-	METHOD method_45198 withMetadataMap (Lnet/minecraft/class_7662;)Lnet/minecraft/class_7665;
-		ARG 1 metadataMap
+	METHOD method_45198 withMetadataMap (Lnet/minecraft/class_7368;)Lnet/minecraft/class_7665;
 	METHOD method_45199 (Lnet/minecraft/class_3264;)Ljava/util/Set;
 		ARG 0 type2
 	METHOD method_45200 withPaths (Lnet/minecraft/class_3264;Ljava/lang/Class;)Lnet/minecraft/class_7665;

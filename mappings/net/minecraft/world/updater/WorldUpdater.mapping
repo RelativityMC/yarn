@@ -2,103 +2,26 @@ CLASS net/minecraft/class_1257 net/minecraft/world/updater/WorldUpdater
 	FIELD field_5755 persistentStateManager Lnet/minecraft/class_26;
 	FIELD field_5756 LOGGER Lorg/slf4j/Logger;
 	FIELD field_5757 UPDATE_THREAD_FACTORY Ljava/util/concurrent/ThreadFactory;
-	FIELD field_5759 done Z
-	FIELD field_5760 keepUpgradingChunks Z
-	FIELD field_5762 dimensionProgress Lit/unimi/dsi/fastutil/objects/Reference2FloatMap;
-	FIELD field_5763 progress F
-	FIELD field_5764 skippedChunkCount I
-	FIELD field_5765 status Lnet/minecraft/class_2561;
-	FIELD field_5766 upgradedChunkCount I
 	FIELD field_5767 updateThread Ljava/lang/Thread;
-	FIELD field_5768 totalChunkCount I
-	FIELD field_17622 REGION_FILE_PATTERN Ljava/util/regex/Pattern;
 	FIELD field_19225 eraseCache Z
 	FIELD field_24083 session Lnet/minecraft/class_32$class_5143;
 	FIELD field_24084 dataFixer Lcom/mojang/datafixers/DataFixer;
 	FIELD field_40113 dimensionOptionsRegistry Lnet/minecraft/class_2378;
 	FIELD field_40114 worldKeys Ljava/util/Set;
-	FIELD field_48723 NEW_PREFIX Ljava/lang/String;
-	FIELD field_48724 UPGRADING_POI_TEXT Lnet/minecraft/class_2561;
-	FIELD field_48725 FINISHED_POI_TEXT Lnet/minecraft/class_2561;
-	FIELD field_48726 UPGRADING_ENTITIES_TEXT Lnet/minecraft/class_2561;
-	FIELD field_48727 FINISHED_ENTITIES_TEXT Lnet/minecraft/class_2561;
-	FIELD field_48728 UPGRADING_CHUNKS_TEXT Lnet/minecraft/class_2561;
-	FIELD field_48729 FINISHED_CHUNKS_TEXT Lnet/minecraft/class_2561;
 	FIELD field_48730 recreateRegionFiles Z
-	FIELD field_48731 totalRegionCount I
-	METHOD <init> (Lnet/minecraft/class_32$class_5143;Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_5219;Lnet/minecraft/class_5455;ZZ)V
+	METHOD <init> (Lnet/minecraft/class_32$class_5143;Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_5455;ZZ)V
 		ARG 1 session
 		ARG 2 dataFixer
-		ARG 3 saveProperties
-		ARG 4 registries
-		ARG 5 eraseCache
-		ARG 6 recreateRegionFiles
+		ARG 3 registries
+		ARG 4 eraseCache
+		ARG 5 recreateRegionFiles
 	METHOD method_5393 getProgress (Lnet/minecraft/class_5321;)F
 		ARG 1 world
 	METHOD method_5394 getStatus ()Lnet/minecraft/class_2561;
 	METHOD method_5397 getTotalChunkCount ()I
-	METHOD method_5398 (Ljava/lang/Thread;Ljava/lang/Throwable;)V
-		ARG 1 thread
-		ARG 2 throwable
 	METHOD method_5399 getSkippedChunkCount ()I
 	METHOD method_5400 getUpgradedChunkCount ()I
 	METHOD method_5401 getProgress ()F
 	METHOD method_5402 cancel ()V
 	METHOD method_5403 isDone ()Z
-	METHOD method_5404 updateWorld ()V
 	METHOD method_28304 getWorlds ()Ljava/util/Set;
-	METHOD method_56987 getNewDirectoryPath (Ljava/nio/file/Path;)Ljava/nio/file/Path;
-		ARG 0 current
-	CLASS class_9161 Update
-		FIELD field_48732 pendingUpdateFuture Ljava/util/concurrent/CompletableFuture;
-		FIELD field_48733 dataFixTypes Lnet/minecraft/class_4284;
-		FIELD field_48735 upgradingText Lnet/minecraft/class_2561;
-		FIELD field_48736 finishedText Lnet/minecraft/class_2561;
-		FIELD field_48737 targetName Ljava/lang/String;
-		FIELD field_49072 name Ljava/lang/String;
-		METHOD <init> (Lnet/minecraft/class_1257;Lnet/minecraft/class_4284;Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/class_2561;Lnet/minecraft/class_2561;)V
-			ARG 2 dataFixTypes
-			ARG 3 name
-			ARG 4 targetName
-			ARG 5 upgradingText
-			ARG 6 finishedText
-		METHOD method_56537 update ()V
-		METHOD method_56538 update (Lnet/minecraft/class_5321;Lnet/minecraft/class_3977;Lnet/minecraft/class_1923;)Z
-			ARG 1 worldKey
-			ARG 2 storage
-			ARG 3 chunkPos
-		METHOD method_56539 listRegions (Lnet/minecraft/class_9240;Ljava/nio/file/Path;)Ljava/util/List;
-			ARG 0 key
-			ARG 1 regionDirectory
-		METHOD method_56540 (Lnet/minecraft/class_1257$class_9165;)I
-			ARG 0 region
-		METHOD method_56541 recreate (Lnet/minecraft/class_2861;)V
-			ARG 1 regionFile
-		METHOD method_56542 (Ljava/io/File;Ljava/lang/String;)Z
-			ARG 0 file
-			ARG 1 name
-		METHOD method_56543 update (Lnet/minecraft/class_3977;Lnet/minecraft/class_1923;Lnet/minecraft/class_5321;)Z
-			ARG 1 storage
-			ARG 2 chunkPos
-			ARG 3 worldKey
-		METHOD method_56544 listWoldData ()Ljava/util/List;
-		METHOD method_56545 enumerateRegions (Lnet/minecraft/class_9240;Ljava/nio/file/Path;)Ljava/util/ListIterator;
-			ARG 1 key
-			ARG 2 regionDirectory
-		METHOD method_56552 openStorage (Lnet/minecraft/class_9240;Ljava/nio/file/Path;)Lnet/minecraft/class_3977;
-			ARG 1 storageKey
-			ARG 2 directory
-	CLASS class_9162 RegionUpdate
-	CLASS class_9163 WorldData
-	CLASS class_9164 EntitiesUpdate
-	CLASS class_9165 Region
-	CLASS class_9166 PoiUpdate
-	CLASS class_9167 ChunkPosKeyedStorageUpdate
-		METHOD <init> (Lnet/minecraft/class_1257;Lnet/minecraft/class_4284;Ljava/lang/String;Lnet/minecraft/class_2561;Lnet/minecraft/class_2561;)V
-			ARG 2 dataFixTypes
-			ARG 3 targetName
-			ARG 4 upgradingText
-			ARG 5 finishedText
-		METHOD method_56550 updateNbt (Lnet/minecraft/class_3977;Lnet/minecraft/class_2487;)Lnet/minecraft/class_2487;
-			ARG 1 storage
-			ARG 2 nbt

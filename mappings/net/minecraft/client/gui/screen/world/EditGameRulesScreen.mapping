@@ -16,8 +16,6 @@ CLASS net/minecraft/class_5235 net/minecraft/client/gui/screen/world/EditGameRul
 	METHOD method_27626 markValid (Lnet/minecraft/class_5235$class_5240;)V
 		ARG 1 ruleWidget
 	METHOD method_27632 updateDoneButton ()V
-	METHOD method_48682 (Lnet/minecraft/class_5235;Lnet/minecraft/class_364;)V
-		ARG 1 child
 	METHOD method_57770 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
 	CLASS class_5236 BooleanRuleWidget
@@ -29,7 +27,7 @@ CLASS net/minecraft/class_5235 net/minecraft/client/gui/screen/world/EditGameRul
 			ARG 5 rule
 		METHOD method_32675 (Ljava/lang/String;Lnet/minecraft/class_5676;)Lnet/minecraft/class_5250;
 			ARG 1 button
-		METHOD method_76290 (Lnet/minecraft/class_12279;Lnet/minecraft/class_5676;Ljava/lang/Boolean;)V
+		METHOD method_76290 (Lnet/minecraft/class_5235;Lnet/minecraft/class_12279;Lnet/minecraft/class_5676;Ljava/lang/Boolean;)V
 			ARG 2 button
 			ARG 3 value
 	CLASS class_5237 RuleCategoryWidget
@@ -49,8 +47,8 @@ CLASS net/minecraft/class_5235 net/minecraft/client/gui/screen/world/EditGameRul
 			ARG 3 description
 			ARG 4 ruleName
 			ARG 5 rule
-		METHOD method_27635 (Lnet/minecraft/class_12279;Ljava/lang/String;)V
-			ARG 2 value
+		METHOD method_27635 (Lnet/minecraft/class_12279;Lnet/minecraft/class_5235;Ljava/lang/String;)V
+			ARG 3 value
 	CLASS class_5240 AbstractRuleWidget
 		FIELD field_24311 description Ljava/util/List;
 		METHOD <init> (Ljava/util/List;)V
@@ -58,8 +56,8 @@ CLASS net/minecraft/class_5235 net/minecraft/client/gui/screen/world/EditGameRul
 	CLASS class_5241 RuleListWidget
 		METHOD <init> (Lnet/minecraft/class_5235;Lnet/minecraft/class_1928;)V
 			ARG 2 gameRules
-		METHOD method_27637 (Ljava/util/Map$Entry;)V
-			ARG 1 entry
+		METHOD method_27637 (Lnet/minecraft/class_5235;Ljava/util/Map$Entry;)V
+			ARG 2 entry
 		METHOD method_27638 (Ljava/util/Map$Entry;)V
 			ARG 1 e
 		CLASS 1

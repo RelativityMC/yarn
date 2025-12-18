@@ -20,5 +20,4 @@ CLASS net/minecraft/class_7130 net/minecraft/block/SculkVeinBlock
 	CLASS class_7131 SculkVeinGrowChecker
 		FIELD field_37635 growTypes [Lnet/minecraft/class_7118$class_7123;
 		METHOD <init> (Lnet/minecraft/class_7130;[Lnet/minecraft/class_7118$class_7123;)V
-			ARG 1 block
 			ARG 2 growTypes

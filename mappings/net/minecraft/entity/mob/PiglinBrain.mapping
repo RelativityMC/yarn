@@ -16,8 +16,6 @@ CLASS net/minecraft/class_4838 net/minecraft/entity/mob/PiglinBrain
 	METHOD method_24718 makeRandomWanderTask ()Lnet/minecraft/class_4118;
 	METHOD method_24720 (Lnet/minecraft/class_1309;Lnet/minecraft/class_1309;)Z
 		ARG 1 preferredTarget
-	METHOD method_24721 (Lnet/minecraft/class_1309;Lnet/minecraft/class_5418;)V
-		ARG 1 piglinx
 	METHOD method_24722 tickActivities (Lnet/minecraft/class_4836;)V
 		ARG 0 piglin
 	METHOD method_24723 canRide (Lnet/minecraft/class_4836;Lnet/minecraft/class_1297;)Z
@@ -196,8 +194,7 @@ CLASS net/minecraft/class_4838 net/minecraft/entity/mob/PiglinBrain
 		ARG 1 target
 	METHOD method_29277 canRideHoglin (Lnet/minecraft/class_4836;)Z
 		ARG 0 piglin
-	METHOD method_29534 isZombified (Lnet/minecraft/class_1299;)Z
-		ARG 0 entityType
+	METHOD method_29534 isZombified (Lnet/minecraft/class_1297;)Z
 	METHOD method_29535 (Lnet/minecraft/class_1309;Lnet/minecraft/class_4095;Lnet/minecraft/class_1309;)V
 		ARG 2 avoiding
 	METHOD method_29536 getAvoiding (Lnet/minecraft/class_4836;)Ljava/util/Optional;
@@ -231,8 +228,6 @@ CLASS net/minecraft/class_4838 net/minecraft/entity/mob/PiglinBrain
 	METHOD method_30090 goToNemesisTask ()Lnet/minecraft/class_7893;
 	METHOD method_30091 getCurrentActivitySound (Lnet/minecraft/class_4836;)Ljava/util/Optional;
 		ARG 0 piglin
-	METHOD method_30241 (Lnet/minecraft/class_5418;)Z
-		ARG 0 nearbyVisiblePiglin
 	METHOD method_47272 makeFollowTasks ()Lcom/google/common/collect/ImmutableList;
 	METHOD method_47273 (Lnet/minecraft/class_7895$class_7896;Lnet/minecraft/class_1309;)Z
 		ARG 1 entity

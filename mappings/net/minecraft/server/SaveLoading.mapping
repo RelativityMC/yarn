@@ -1,16 +1,9 @@
 CLASS net/minecraft/class_7237 net/minecraft/server/SaveLoading
-	FIELD field_39979 LOGGER Lorg/slf4j/Logger;
 	METHOD method_42096 (Lnet/minecraft/class_6860;Lnet/minecraft/class_5350;Ljava/lang/Throwable;)V
 		ARG 1 dataPackContents
 		ARG 2 throwable
 	METHOD method_42097 (Lnet/minecraft/class_7237$class_7239;Lnet/minecraft/class_6860;Lnet/minecraft/class_7780;Lnet/minecraft/class_7237$class_7661;Lnet/minecraft/class_5350;)Ljava/lang/Object;
 		ARG 4 dataPackContents
-	METHOD method_42098 load (Lnet/minecraft/class_7237$class_6906;Lnet/minecraft/class_7237$class_6907;Lnet/minecraft/class_7237$class_7239;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 serverConfig
-		ARG 1 loadContextSupplier
-		ARG 2 saveApplierFactory
-		ARG 3 prepareExecutor
-		ARG 4 applyExecutor
 	CLASS class_6906 ServerConfig
 		FIELD comp_361 commandEnvironment Lnet/minecraft/class_2170$class_5364;
 		FIELD comp_634 dataPacks Lnet/minecraft/class_7237$class_7238;

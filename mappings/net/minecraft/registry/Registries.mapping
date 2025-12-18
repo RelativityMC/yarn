@@ -98,8 +98,6 @@ CLASS net/minecraft/class_7923 net/minecraft/registry/Registries
 	FIELD field_63926 ATTRIBUTE_TYPE Lnet/minecraft/class_2378;
 	FIELD field_64250 SLOT_SOURCE_TYPE Lnet/minecraft/class_2378;
 	FIELD field_64251 GAME_RULE Lnet/minecraft/class_2378;
-	METHOD method_47452 (Lnet/minecraft/class_2378;)Ljava/lang/Object;
-		ARG 0 registry
 	METHOD method_47453 (Lnet/minecraft/class_2378;)Ljava/lang/Object;
 		ARG 0 registry
 	METHOD method_47454 (Lnet/minecraft/class_2378;)Ljava/lang/Object;
@@ -197,12 +195,6 @@ CLASS net/minecraft/class_7923 net/minecraft/registry/Registries
 		ARG 0 registry
 	METHOD method_47509 (Lnet/minecraft/class_2378;)Ljava/lang/Object;
 		ARG 0 registry
-	METHOD method_47512 (Lnet/minecraft/class_2378;)Ljava/lang/Object;
-		ARG 0 registry
-	METHOD method_47513 (Lnet/minecraft/class_2378;)Ljava/lang/Object;
-		ARG 0 registry
-	METHOD method_47514 (Lnet/minecraft/class_2378;)Ljava/lang/Object;
-		ARG 0 registry
 	METHOD method_49927 (Lnet/minecraft/class_2378;)Ljava/lang/Object;
 		ARG 0 registry
 	METHOD method_53495 createIntrusive (Lnet/minecraft/class_5321;Lnet/minecraft/class_7923$class_6889;)Lnet/minecraft/class_2378;
@@ -216,11 +208,7 @@ CLASS net/minecraft/class_7923 net/minecraft/registry/Registries
 		ARG 0 registry
 	METHOD method_66552 (Lnet/minecraft/class_2378;)Ljava/lang/Object;
 		ARG 0 registry
-	METHOD method_66903 (Lnet/minecraft/class_2378;)Ljava/lang/Object;
-		ARG 0 registry
 	METHOD method_74053 (Lnet/minecraft/class_2378;)Ljava/lang/Object;
-		ARG 0 registry
-	METHOD method_76572 (Lnet/minecraft/class_2378;)Ljava/lang/Object;
 		ARG 0 registry
 	CLASS class_6889 Initializer
 		METHOD method_1_167 (Lnet/minecraft/class_2378;)Ljava/lang/Object;

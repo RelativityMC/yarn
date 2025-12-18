@@ -10,7 +10,6 @@ CLASS net/minecraft/class_342 net/minecraft/client/gui/widget/TextFieldWidget
 	FIELD field_2102 selectionStart I
 	FIELD field_2103 firstCharacterIndex I
 		COMMENT The index of the leftmost character that is rendered on a screen.
-	FIELD field_2104 textPredicate Ljava/util/function/Predicate;
 	FIELD field_2105 textRenderer Lnet/minecraft/class_327;
 	FIELD field_2106 suggestion Ljava/lang/String;
 	FIELD field_2108 maxLength I
@@ -107,8 +106,6 @@ CLASS net/minecraft/class_342 net/minecraft/client/gui/widget/TextFieldWidget
 		ARG 1 editable
 	METHOD method_1889 getCharacterX (I)I
 		ARG 1 index
-	METHOD method_1890 setTextPredicate (Ljava/util/function/Predicate;)V
-		ARG 1 textPredicate
 	METHOD method_16873 erase (IZ)V
 		ARG 1 offset
 		ARG 2 words

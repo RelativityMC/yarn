@@ -21,7 +21,6 @@ CLASS net/minecraft/class_42 net/minecraft/loot/operator/BoundedIntUnaryOperator
 	METHOD method_282 create (II)Lnet/minecraft/class_42;
 		ARG 0 min
 		ARG 1 max
-	METHOD method_32386 getRequiredParameters ()Ljava/util/Set;
 	METHOD method_32387 create (I)Lnet/minecraft/class_42;
 		ARG 0 value
 	METHOD method_32389 apply (Lnet/minecraft/class_47;I)I

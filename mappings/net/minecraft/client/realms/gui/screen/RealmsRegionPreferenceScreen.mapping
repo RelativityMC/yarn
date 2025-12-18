@@ -14,8 +14,6 @@ CLASS net/minecraft/class_11316 net/minecraft/client/realms/gui/screen/RealmsReg
 		ARG 4 textSupplier
 	METHOD method_71221 (Lnet/minecraft/class_11316$class_11317$class_11318;)Z
 		ARG 1 region
-	METHOD method_71223 (Lnet/minecraft/class_11316;Lnet/minecraft/class_364;)V
-		ARG 1 child
 	METHOD method_71224 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
 	METHOD method_71226 (Lnet/minecraft/class_4185;)V
@@ -25,8 +23,6 @@ CLASS net/minecraft/class_11316 net/minecraft/client/realms/gui/screen/RealmsReg
 	CLASS class_11317 RegionListWidget
 		METHOD method_71228 (Lnet/minecraft/class_11303;)Lnet/minecraft/class_11316$class_11317$class_11318;
 			ARG 1 region
-		METHOD method_71230 (Lnet/minecraft/class_11316$class_11317;Lnet/minecraft/class_350$class_351;)V
-			ARG 1 entry
 		CLASS class_11318 RegionEntry
 			FIELD field_60264 region Lnet/minecraft/class_11319$class_11320;
 			FIELD field_60265 name Lnet/minecraft/class_2561;

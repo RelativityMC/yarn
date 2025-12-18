@@ -61,7 +61,6 @@ CLASS net/minecraft/class_465 net/minecraft/client/gui/screen/ingame/HandledScre
 		ARG 1 slot
 		ARG 2 slotId
 		ARG 3 button
-		ARG 4 actionType
 	METHOD method_2384 handleHotbarKeyPressed (Lnet/minecraft/class_11908;)Z
 	METHOD method_2385 drawSlot (Lnet/minecraft/class_332;Lnet/minecraft/class_1735;II)V
 		ARG 1 context
@@ -98,7 +97,6 @@ CLASS net/minecraft/class_465 net/minecraft/client/gui/screen/ingame/HandledScre
 		ARG 1 item
 	METHOD method_64239 onMouseClick (Lnet/minecraft/class_1735;Lnet/minecraft/class_1713;)V
 		ARG 1 slot
-		ARG 2 actionType
 	METHOD method_64240 getSlotAt (DD)Lnet/minecraft/class_1735;
 		ARG 1 mouseX
 		ARG 3 mouseY

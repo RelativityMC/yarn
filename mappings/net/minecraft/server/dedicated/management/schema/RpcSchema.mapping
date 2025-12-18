@@ -12,8 +12,6 @@ CLASS net/minecraft/class_11821 net/minecraft/server/dedicated/management/schema
 	METHOD method_73714 ofArray (Lnet/minecraft/class_11821;Lcom/mojang/serialization/Codec;)Lnet/minecraft/class_11821;
 		ARG 0 itemSchema
 		ARG 1 codec
-	METHOD method_73716 (Ljava/lang/Object;)Ljava/lang/String;
-		ARG 0 value
 	METHOD method_73717 ofReference (Ljava/net/URI;Lcom/mojang/serialization/Codec;)Lnet/minecraft/class_11821;
 		ARG 0 reference
 		ARG 1 codec

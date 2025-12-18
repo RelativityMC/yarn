@@ -31,10 +31,6 @@ CLASS net/minecraft/class_447 net/minecraft/client/gui/screen/StatsScreen
 		ARG 1 child
 	METHOD method_73418 (Lnet/minecraft/class_8030;Lnet/minecraft/class_8087;)V
 		ARG 1 tab
-	METHOD method_73419 (Lnet/minecraft/class_447;Lnet/minecraft/class_364;)V
-		ARG 1 child
-	METHOD method_73420 (Lnet/minecraft/class_447;Lnet/minecraft/class_364;)V
-		ARG 1 child
 	CLASS class_4198 GeneralStatsListWidget
 		METHOD <init> (Lnet/minecraft/class_447;Lnet/minecraft/class_310;)V
 			ARG 2 client
@@ -106,8 +102,6 @@ CLASS net/minecraft/class_447 net/minecraft/client/gui/screen/StatsScreen
 				METHOD <init> (Lnet/minecraft/class_447$class_4200$class_11773;ILnet/minecraft/class_2960;)V
 					ARG 2 index
 					ARG 3 texture
-				METHOD method_73425 (ILnet/minecraft/class_447$class_4200;Lnet/minecraft/class_4185;)V
-					ARG 2 button
 	CLASS class_4202 EntityStatsListWidget
 		FIELD field_18763 screen Lnet/minecraft/class_447;
 		METHOD <init> (Lnet/minecraft/class_447;Lnet/minecraft/class_310;)V

@@ -50,8 +50,6 @@ CLASS net/minecraft/class_8768 net/minecraft/client/gui/screen/report/ReportScre
 	METHOD method_61138 (Lnet/minecraft/class_4286;Z)V
 		ARG 1 checkbox
 		ARG 2 attested
-	METHOD method_61139 (Lnet/minecraft/class_8768;Lnet/minecraft/class_364;)V
-		ARG 1 child
 	METHOD method_61140 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
 	METHOD method_61141 addTitle ()V

@@ -115,8 +115,6 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 		ARG 1 availabilityInfo
 	METHOD method_52635 onLoadStatusChange (Lnet/minecraft/class_4325$class_8650;)V
 		ARG 1 loadStatus
-	METHOD method_52636 (Lnet/minecraft/class_4325;Lnet/minecraft/class_364;)V
-		ARG 1 child
 	METHOD method_52637 drawEnvironmentText (Lnet/minecraft/class_332;Ljava/lang/String;I)V
 		ARG 1 context
 		ARG 2 text
@@ -129,8 +127,6 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 		ARG 2 button
 	METHOD method_52641 makeLayoutFor (Lnet/minecraft/class_4325$class_8650;)Lnet/minecraft/class_8132;
 		ARG 1 loadStatus
-	METHOD method_52642 (Lnet/minecraft/class_4325;Lnet/minecraft/class_364;)V
-		ARG 1 child
 	METHOD method_52643 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
 	METHOD method_52644 makeInnerLayout (Lnet/minecraft/class_4325$class_8650;)Lnet/minecraft/class_8133;
@@ -297,7 +293,7 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 			ARG 4 message
 			ARG 5 url
 		METHOD method_49564 setWidth ()V
-		METHOD method_49566 (Lnet/minecraft/class_8204$class_8205;Lnet/minecraft/class_4185;)V
+		METHOD method_49566 (Lnet/minecraft/class_4325;Lnet/minecraft/class_8204$class_8205;Lnet/minecraft/class_4185;)V
 			ARG 2 button
 		METHOD method_49567 updateWidth (I)V
 			ARG 1 width

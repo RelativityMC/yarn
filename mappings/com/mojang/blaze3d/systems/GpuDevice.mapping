@@ -30,14 +30,10 @@ CLASS com/mojang/blaze3d/systems/GpuDevice
 		ARG 5 height
 		ARG 6 depthOrLayers
 		ARG 7 mipLevels
-	METHOD createTextureView (Lcom/mojang/blaze3d/textures/GpuTexture;)Lcom/mojang/blaze3d/textures/GpuTextureView;
-		ARG 1 texture
 	METHOD createTextureView (Lcom/mojang/blaze3d/textures/GpuTexture;II)Lcom/mojang/blaze3d/textures/GpuTextureView;
 		ARG 1 texture
 		ARG 2 baseMipLevel
 		ARG 3 mipLevels
-	METHOD precompilePipeline (Lcom/mojang/blaze3d/pipeline/RenderPipeline;)Lcom/mojang/blaze3d/pipeline/CompiledRenderPipeline;
-		ARG 1 pipeline
 	METHOD precompilePipeline (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/class_12289;)Lcom/mojang/blaze3d/pipeline/CompiledRenderPipeline;
 		ARG 1 pipeline
 		ARG 2 sourceGetter

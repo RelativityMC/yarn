@@ -39,7 +39,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	COMMENT
 	COMMENT @see net.minecraft.server.integrated.IntegratedServer
 	COMMENT @see net.minecraft.client.render.GameRenderer
-	FIELD field_1686 windowProvider Lnet/minecraft/class_3682;
 	FIELD field_1687 world Lnet/minecraft/class_638;
 		COMMENT Represents the world the client is currently viewing.
 		COMMENT This field is not null when in game.

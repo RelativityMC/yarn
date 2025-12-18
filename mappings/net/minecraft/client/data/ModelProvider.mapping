@@ -18,8 +18,6 @@ CLASS net/minecraft/class_4916 net/minecraft/client/data/ModelProvider
 			ARG 1 block
 		METHOD method_65467 (Lnet/minecraft/class_6880$class_6883;)Z
 			ARG 1 entry
-		METHOD method_65468 (Lnet/minecraft/class_6880$class_6883;)Z
-			ARG 0 entry
 	CLASS class_10407 ItemAssets
 		FIELD field_55249 itemAssets Ljava/util/Map;
 		FIELD field_55250 aliasedAssets Ljava/util/Map;

@@ -1065,8 +1065,6 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 			ARG 1 block
 			ARG 2 propertyMap
 			ARG 3 codec
-		METHOD method_26164 isIn (Lnet/minecraft/class_6862;)Z
-			ARG 1 tag
 		METHOD method_26165 calcBlockBreakingDelta (Lnet/minecraft/class_1657;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)F
 			ARG 1 player
 			ARG 2 world
@@ -1268,8 +1266,6 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		METHOD method_27851 isIn (Lnet/minecraft/class_6862;Ljava/util/function/Predicate;)Z
 			ARG 1 tag
 			ARG 2 predicate
-		METHOD method_27852 isOf (Lnet/minecraft/class_2248;)Z
-			ARG 1 block
 		METHOD method_29291 isToolRequired ()Z
 		METHOD method_30101 updateNeighbors (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;I)V
 			ARG 1 world
@@ -1288,10 +1284,6 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 			ARG 1 world
 			ARG 2 blockEntityType
 		METHOD method_31709 hasBlockEntity ()Z
-		METHOD method_40143 isIn (Lnet/minecraft/class_6885;)Z
-			ARG 1 blocks
-		METHOD method_40144 streamTags ()Ljava/util/stream/Stream;
-		METHOD method_41520 getRegistryEntry ()Lnet/minecraft/class_6880;
 		METHOD method_45474 isReplaceable ()Z
 		METHOD method_45475 hasBlockBreakParticles ()Z
 		METHOD method_49228 hasModelOffset ()Z
@@ -1301,10 +1293,6 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		METHOD method_51365 shouldBeSolid ()Z
 		METHOD method_51366 blocksMovement ()Z
 		METHOD method_51367 isSolid ()Z
-		METHOD method_53257 isOf (Lnet/minecraft/class_6880;)Z
-			ARG 1 blockEntry
-		METHOD method_54097 matchesKey (Lnet/minecraft/class_5321;)Z
-			ARG 1 key
 		METHOD method_55225 onExploded (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_1927;Ljava/util/function/BiConsumer;)V
 			ARG 1 world
 			ARG 2 pos

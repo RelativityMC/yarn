@@ -337,12 +337,6 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 		COMMENT @see #getFrame
 		COMMENT @see #getHolder
 		ARG 1 holder
-	METHOD method_31573 isIn (Lnet/minecraft/class_6862;)Z
-		COMMENT {@return whether the item is in {@code tag}}
-		ARG 1 tag
-	METHOD method_31574 isOf (Lnet/minecraft/class_1792;)Z
-		COMMENT {@return whether the item is {@code item}}
-		ARG 1 item
 	METHOD method_31575 onStackClicked (Lnet/minecraft/class_1735;Lnet/minecraft/class_5536;Lnet/minecraft/class_1657;)Z
 		ARG 1 slot
 		ARG 2 clickType
@@ -372,23 +366,12 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 	METHOD method_32347 getTooltipData ()Ljava/util/Optional;
 	METHOD method_33262 onItemEntityDestroyed (Lnet/minecraft/class_1542;)V
 		ARG 1 entity
-	METHOD method_40133 streamTags ()Ljava/util/stream/Stream;
-		COMMENT {@return a stream of all tags the item is in}
-		COMMENT
-		COMMENT @see #isIn(TagKey)
-	METHOD method_41406 itemMatches (Lnet/minecraft/class_6880;)Z
-		COMMENT {@return whether the item's registry entry matches {@code itemEntry}}
-		COMMENT
-		COMMENT @see #itemMatches(Predicate)
-		COMMENT @see #isOf(Item)
-		ARG 1 itemEntry
 	METHOD method_41407 itemMatches (Ljava/util/function/Predicate;)Z
 		COMMENT {@return whether the item's registry entry passes the {@code predicate}}
 		COMMENT
 		COMMENT @see #itemMatches(RegistryEntry)
 		COMMENT @see #isOf(Item)
 		ARG 1 predicate
-	METHOD method_41409 getRegistryEntry ()Lnet/minecraft/class_6880;
 	METHOD method_45435 isItemEnabled (Lnet/minecraft/class_7699;)Z
 		ARG 1 enabledFeatures
 	METHOD method_46651 copyWithCount (I)Lnet/minecraft/class_1799;
@@ -401,8 +384,6 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 		ARG 1 count
 			COMMENT the item count of the resultant stack
 	METHOD method_51164 copyAndEmpty ()Lnet/minecraft/class_1799;
-	METHOD method_53187 isIn (Lnet/minecraft/class_6885;)Z
-		ARG 1 registryEntryList
 	METHOD method_54466 onCraftByCrafter (Lnet/minecraft/class_1937;)V
 		ARG 1 world
 	METHOD method_56097 (Lnet/minecraft/class_1309;Lnet/minecraft/class_1304;Lnet/minecraft/class_1792;)V

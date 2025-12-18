@@ -5,4 +5,4 @@ CLASS net/minecraft/class_3789 net/minecraft/structure/BuriedTreasureGenerator
 		METHOD <init> (Lnet/minecraft/class_2487;)V
 			ARG 1 nbt
 		METHOD method_14655 isLiquid (Lnet/minecraft/class_2680;)Z
-			ARG 1 state
+			ARG 0 state

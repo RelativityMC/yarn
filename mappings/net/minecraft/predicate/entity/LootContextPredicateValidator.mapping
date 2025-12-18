@@ -4,22 +4,3 @@ CLASS net/minecraft/class_8944 net/minecraft/predicate/entity/LootContextPredica
 	METHOD <init> (Lnet/minecraft/class_8942;Lnet/minecraft/class_7871$class_7872;)V
 		ARG 1 errorReporter
 		ARG 2 conditionsLookup
-	METHOD method_54961 validate (Lnet/minecraft/class_5258;Lnet/minecraft/class_176;Ljava/lang/String;)V
-		ARG 1 predicate
-		ARG 2 type
-		ARG 3 path
-	METHOD method_54962 validateEntityPredicate (Lnet/minecraft/class_5258;Ljava/lang/String;)V
-		ARG 1 predicate
-		ARG 2 path
-	METHOD method_54963 (Ljava/lang/String;Lnet/minecraft/class_5258;)V
-		ARG 2 p
-	METHOD method_54964 validate (Ljava/util/List;Lnet/minecraft/class_176;Ljava/lang/String;)V
-		ARG 1 predicates
-		ARG 2 type
-		ARG 3 path
-	METHOD method_54965 validateEntityPredicates (Ljava/util/List;Ljava/lang/String;)V
-		ARG 1 predicates
-		ARG 2 path
-	METHOD method_54966 validateEntityPredicate (Ljava/util/Optional;Ljava/lang/String;)V
-		ARG 1 predicate
-		ARG 2 path

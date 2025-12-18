@@ -17,8 +17,6 @@ CLASS net/minecraft/class_83 net/minecraft/loot/entry/LootTableEntry
 		ARG 4 functions
 	METHOD method_51222 (Lnet/minecraft/class_58;Lnet/minecraft/class_52;)V
 		ARG 1 table
-	METHOD method_51223 (Lnet/minecraft/class_58;Lnet/minecraft/class_5321;)V
-		ARG 1 key
 	METHOD method_53293 (Lnet/minecraft/class_83;)Lcom/mojang/datafixers/util/Either;
 		ARG 0 entry
 	METHOD method_53294 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
@@ -32,7 +30,5 @@ CLASS net/minecraft/class_83 net/minecraft/loot/entry/LootTableEntry
 		ARG 2 quality
 		ARG 3 conditions
 		ARG 4 functions
-	METHOD method_57633 (Lnet/minecraft/class_58;Lnet/minecraft/class_5321;Lnet/minecraft/class_6880$class_6883;)V
-		ARG 2 entry
 	METHOD method_57634 (Lnet/minecraft/class_52;)Lnet/minecraft/class_52;
 		ARG 0 table

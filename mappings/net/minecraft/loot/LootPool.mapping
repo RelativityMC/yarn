@@ -22,8 +22,6 @@ CLASS net/minecraft/class_55 net/minecraft/loot/LootPool
 		ARG 1 lootConsumer
 		ARG 2 context
 	METHOD method_347 builder ()Lnet/minecraft/class_55$class_56;
-	METHOD method_349 validate (Lnet/minecraft/class_58;)V
-		ARG 1 reporter
 	METHOD method_53268 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
 	METHOD method_53269 (Lnet/minecraft/class_55;)Lnet/minecraft/class_5658;

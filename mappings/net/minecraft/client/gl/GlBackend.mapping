@@ -19,12 +19,9 @@ CLASS net/minecraft/class_10865 net/minecraft/client/gl/GlBackend
 	FIELD field_60017 gpuBufferManager Lnet/minecraft/class_11266;
 	FIELD field_60018 uniformOffsetAlignment I
 	FIELD field_64185 maxSupportedAnisotropy I
-	METHOD <init> (JIZLnet/minecraft/class_12289;Z)V
+	METHOD <init> (JLnet/minecraft/class_12289;Lnet/minecraft/class_1_16;)V
 		ARG 1 contextId
-		ARG 3 debugVerbosity
-		ARG 4 sync
-		ARG 5 defaultShaderSourceGetter
-		ARG 6 renderDebugLabels
+		ARG 3 defaultShaderSourceGetter
 	METHOD method_68377 getDebugLabelManager ()Lnet/minecraft/class_10861;
 	METHOD method_68378 compileShader (Lnet/minecraft/class_2960;Lcom/mojang/blaze3d/shaders/ShaderType;Lnet/minecraft/class_10149;Lnet/minecraft/class_12289;)Lnet/minecraft/class_10141;
 		ARG 1 id

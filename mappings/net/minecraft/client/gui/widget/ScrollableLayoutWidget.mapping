@@ -14,7 +14,7 @@ CLASS net/minecraft/class_11467 net/minecraft/client/gui/widget/ScrollableLayout
 	CLASS class_11468 Container
 		FIELD field_60721 client Lnet/minecraft/class_310;
 		FIELD field_60722 children Ljava/util/List;
-		METHOD <init> (Lnet/minecraft/class_11467;Lnet/minecraft/class_310;II)V
+		METHOD <init> (Lnet/minecraft/class_11467;Lnet/minecraft/class_310;IILnet/minecraft/class_7528$class_1_47;)V
 			ARG 2 client
 			ARG 3 width
 			ARG 4 height

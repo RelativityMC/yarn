@@ -19,9 +19,7 @@ CLASS net/minecraft/class_459 net/minecraft/client/gui/screen/option/ControlsLis
 		METHOD <init> (Lnet/minecraft/class_459;Lnet/minecraft/class_304;Lnet/minecraft/class_2561;)V
 			ARG 2 binding
 			ARG 3 bindingName
-		METHOD method_19870 (Lnet/minecraft/class_304;Lnet/minecraft/class_4185;)V
-			ARG 2 button
-		METHOD method_19871 (Lnet/minecraft/class_304;Lnet/minecraft/class_4185;)V
+		METHOD method_19871 (Lnet/minecraft/class_459;Lnet/minecraft/class_304;Lnet/minecraft/class_4185;)V
 			ARG 2 button
 		METHOD method_46514 (Lnet/minecraft/class_304;Lnet/minecraft/class_2561;Ljava/util/function/Supplier;)Lnet/minecraft/class_5250;
 			ARG 2 textSupplier

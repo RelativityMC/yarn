@@ -47,8 +47,6 @@ CLASS net/minecraft/class_4419 net/minecraft/client/realms/gui/screen/RealmsSele
 		ARG 1 button
 	METHOD method_25236 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
-	METHOD method_53515 (Lnet/minecraft/class_4419;Lnet/minecraft/class_364;)V
-		ARG 1 child
 	CLASS class_4420 WorldTemplateObjectSelectionList
 		METHOD <init> (Lnet/minecraft/class_4419;)V
 			ARG 1 screen

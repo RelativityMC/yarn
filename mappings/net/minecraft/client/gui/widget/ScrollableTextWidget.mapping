@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_8577 net/minecraft/client/gui/widget/ScrollableTextWidget
-	FIELD field_44947 textRenderer Lnet/minecraft/class_327;
 	FIELD field_44948 wrapped Lnet/minecraft/class_7940;
 	METHOD <init> (IIIILnet/minecraft/class_2561;Lnet/minecraft/class_327;)V
 		ARG 1 x

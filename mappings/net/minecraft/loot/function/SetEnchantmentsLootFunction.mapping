@@ -6,8 +6,6 @@ CLASS net/minecraft/class_5642 net/minecraft/loot/function/SetEnchantmentsLootFu
 		ARG 1 conditions
 		ARG 2 enchantments
 		ARG 3 add
-	METHOD method_32409 (Lnet/minecraft/class_5658;)Ljava/util/stream/Stream;
-		ARG 0 numberProvider
 	METHOD method_53370 (Lnet/minecraft/class_5642;)Ljava/lang/Boolean;
 		ARG 0 function
 	METHOD method_53371 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

@@ -23,8 +23,6 @@ CLASS net/minecraft/class_8816 net/minecraft/client/gui/screen/PopupScreen
 		ARG 7 onClosed
 	METHOD method_54122 (Lnet/minecraft/class_8816$class_8818;Lnet/minecraft/class_4185;)V
 		ARG 2 button
-	METHOD method_54123 (Lnet/minecraft/class_8816;Lnet/minecraft/class_364;)V
-		ARG 1 child
 	METHOD method_54124 createButtonLayout ()Lnet/minecraft/class_8667;
 	CLASS class_8817 Builder
 		FIELD field_46568 backgroundScreen Lnet/minecraft/class_437;

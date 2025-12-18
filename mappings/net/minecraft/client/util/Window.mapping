@@ -29,11 +29,11 @@ CLASS net/minecraft/class_1041 net/minecraft/client/util/Window
 	FIELD field_55579 zeroWidthOrHeight Z
 	FIELD field_62447 allowCursorChanges Z
 	FIELD field_62448 cursor Lnet/minecraft/class_11875;
-	METHOD <init> (Lnet/minecraft/class_3678;Lnet/minecraft/class_323;Lnet/minecraft/class_543;Ljava/lang/String;Ljava/lang/String;)V
+	METHOD <init> (Lnet/minecraft/class_3678;Lnet/minecraft/class_543;Ljava/lang/String;Ljava/lang/String;[Lnet/minecraft/class_1_11;Lnet/minecraft/class_12289;Lnet/minecraft/class_1_16;)V
 		ARG 1 eventHandler
-		ARG 3 settings
-		ARG 4 fullscreenVideoMode
-		ARG 5 title
+		ARG 2 settings
+		ARG 3 fullscreenVideoMode
+		ARG 4 title
 	METHOD method_4474 setPhase (Ljava/lang/String;)V
 		ARG 1 phase
 	METHOD method_4475 applyFullscreenVideoMode ()V

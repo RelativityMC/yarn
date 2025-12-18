@@ -12,8 +12,6 @@ CLASS net/minecraft/class_12283 net/minecraft/loot/context/LootEntityValueSource
 	CLASS class_12284 Builder
 		FIELD field_64180 ID_MAPPER Lnet/minecraft/class_5699$class_10388;
 		METHOD method_76212 getCodec ()Lcom/mojang/serialization/Codec;
-		METHOD method_76213 (Ljava/lang/Object;)Lnet/minecraft/class_12283;
-			ARG 0 value
 		METHOD method_76214 forEntities (Ljava/util/function/Function;)Lnet/minecraft/class_12283$class_12284;
 			ARG 1 sourceFactory
 		METHOD method_76215 (Ljava/util/function/Function;Lnet/minecraft/class_47$class_9319;)Lnet/minecraft/class_12283;

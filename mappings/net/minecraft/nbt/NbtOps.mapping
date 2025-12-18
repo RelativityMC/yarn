@@ -105,8 +105,6 @@ CLASS net/minecraft/class_2509 net/minecraft/nbt/NbtOps
 		METHOD get (Ljava/lang/String;)Ljava/lang/Object;
 			ARG 1 key
 	CLASS class_5320 MapBuilder
-		METHOD <init> (Lnet/minecraft/class_2509;)V
-			ARG 1 ops
 		METHOD append (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 			ARG 1 key
 			ARG 2 value
@@ -141,8 +139,6 @@ CLASS net/minecraft/class_2509 net/minecraft/nbt/NbtOps
 		METHOD method_46240 merge (Lnet/minecraft/class_2520;)Lnet/minecraft/class_2509$class_7813;
 			ARG 1 nbt
 		METHOD method_46247 merge (Ljava/lang/Iterable;)Lnet/minecraft/class_2509$class_7813;
-			ARG 1 nbts
-		METHOD method_46248 merge (Ljava/util/stream/Stream;)Lnet/minecraft/class_2509$class_7813;
 			ARG 1 nbts
 	CLASS class_7814 LongArrayMerger
 		FIELD field_40673 list Lit/unimi/dsi/fastutil/longs/LongArrayList;

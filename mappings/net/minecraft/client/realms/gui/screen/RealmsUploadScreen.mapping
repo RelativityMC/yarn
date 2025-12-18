@@ -43,8 +43,6 @@ CLASS net/minecraft/class_4427 net/minecraft/client/realms/gui/screen/RealmsUplo
 	METHOD method_27460 setStatusTexts ([Lnet/minecraft/class_2561;)V
 		ARG 1 statusTexts
 	METHOD method_37014 getNarration ()Lnet/minecraft/class_2561;
-	METHOD method_56133 (Lnet/minecraft/class_4427;Lnet/minecraft/class_364;)V
-		ARG 1 child
 	METHOD method_64364 (Ljava/lang/Object;Ljava/lang/Throwable;)Ljava/lang/Object;
 		ARG 1 v
 		ARG 2 throwable

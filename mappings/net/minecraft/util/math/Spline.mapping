@@ -2,10 +2,6 @@ CLASS net/minecraft/class_6492 net/minecraft/util/math/Spline
 	METHOD method_37918 builder (Lnet/minecraft/class_6501;)Lnet/minecraft/class_6492$class_6493;
 		ARG 0 locationFunction
 	METHOD method_39225 getDebugString ()Ljava/lang/String;
-	METHOD method_39226 (FLnet/minecraft/class_6492;F)Lnet/minecraft/class_6492$class_6737;
-		ARG 0 location
-		ARG 1 value
-		ARG 2 derivative
 	METHOD method_39227 (Lnet/minecraft/class_6492$class_6738;)Ljava/lang/Record;
 		ARG 0 spline
 	METHOD method_39228 (Lnet/minecraft/class_6492$class_6738;I)Lnet/minecraft/class_6492$class_6737;

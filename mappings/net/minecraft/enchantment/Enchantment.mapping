@@ -74,7 +74,6 @@ CLASS net/minecraft/class_1887 net/minecraft/enchantment/Enchantment
 		ARG 1 level
 		ARG 2 stack
 	METHOD method_60018 modifyDamageProtection (Lnet/minecraft/class_3218;ILnet/minecraft/class_1799;Lnet/minecraft/class_1297;Lnet/minecraft/class_1282;Lorg/apache/commons/lang3/mutable/MutableFloat;)V
-		ARG 1 world
 		ARG 2 level
 		ARG 3 stack
 		ARG 4 user
@@ -129,10 +128,6 @@ CLASS net/minecraft/class_1887 net/minecraft/enchantment/Enchantment
 		ARG 3 context
 		ARG 4 user
 		ARG 5 damageSource
-	METHOD method_60032 applyEffects (Ljava/util/List;Lnet/minecraft/class_47;Ljava/util/function/Consumer;)V
-		ARG 0 entries
-		ARG 1 lootContext
-		ARG 2 effectConsumer
 	METHOD method_60033 canBeCombined (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)Z
 		ARG 0 first
 		ARG 1 second
@@ -159,10 +154,6 @@ CLASS net/minecraft/class_1887 net/minecraft/enchantment/Enchantment
 		ARG 3 level
 		ARG 4 stack
 		ARG 5 value
-	METHOD method_60038 (Lorg/apache/commons/lang3/mutable/MutableFloat;ILnet/minecraft/class_3218;Lnet/minecraft/class_9723;)V
-		ARG 3 effect
-	METHOD method_60039 (Lorg/apache/commons/lang3/mutable/MutableFloat;ILnet/minecraft/class_1297;Lnet/minecraft/class_9723;)V
-		ARG 3 effect
 	METHOD method_60040 createEnchantedDamageLootContext (Lnet/minecraft/class_3218;ILnet/minecraft/class_1297;Lnet/minecraft/class_1282;)Lnet/minecraft/class_47;
 		ARG 0 world
 		ARG 1 level
@@ -195,8 +186,6 @@ CLASS net/minecraft/class_1887 net/minecraft/enchantment/Enchantment
 		ARG 4 effect
 	METHOD method_60046 isSupportedItem (Lnet/minecraft/class_1799;)Z
 		ARG 1 stack
-	METHOD method_60047 (Lorg/apache/commons/lang3/mutable/MutableFloat;ILnet/minecraft/class_1297;Lnet/minecraft/class_9723;)V
-		ARG 3 effect
 	METHOD method_60048 modifySmashDamagePerFallenBlock (Lnet/minecraft/class_3218;ILnet/minecraft/class_1799;Lnet/minecraft/class_1297;Lnet/minecraft/class_1282;Lorg/apache/commons/lang3/mutable/MutableFloat;)V
 		ARG 1 world
 		ARG 2 level

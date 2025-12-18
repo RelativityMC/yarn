@@ -67,8 +67,6 @@ CLASS net/minecraft/class_2096 net/minecraft/predicate/NumberRange
 		METHOD method_74117 between (Ljava/lang/Number;Ljava/lang/Number;)Lnet/minecraft/class_2096$class_11893;
 			ARG 0 min
 			ARG 1 max
-		METHOD method_74118 (Ljava/lang/Object;)Lnet/minecraft/class_2096$class_11893;
-			ARG 0 value
 		METHOD method_74119 map (Ljava/util/function/Function;)Lnet/minecraft/class_2096$class_11893;
 			ARG 1 mappingFunction
 		METHOD method_74120 validate ()Lcom/mojang/serialization/DataResult;

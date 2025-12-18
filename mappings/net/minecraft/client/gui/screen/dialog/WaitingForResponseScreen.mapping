@@ -11,6 +11,4 @@ CLASS net/minecraft/class_11530 net/minecraft/client/gui/screen/dialog/WaitingFo
 		ARG 1 parent
 	METHOD method_72143 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
-	METHOD method_72144 (Lnet/minecraft/class_11530;Lnet/minecraft/class_364;)V
-		ARG 1 child
 	METHOD method_72145 getParentScreen ()Lnet/minecraft/class_437;

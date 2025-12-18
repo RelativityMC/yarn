@@ -5,11 +5,6 @@ CLASS net/minecraft/class_7788 net/minecraft/data/loottable/BlockLootTableGenera
 	FIELD field_40610 lootTables Ljava/util/Map;
 	FIELD field_40611 LEAVES_STICK_DROP_CHANCE [F
 	FIELD field_51845 registries Lnet/minecraft/class_7225$class_7874;
-	METHOD <init> (Ljava/util/Set;Lnet/minecraft/class_7699;Ljava/util/Map;Lnet/minecraft/class_7225$class_7874;)V
-		ARG 1 explosionImmuneItems
-		ARG 2 requiredFeatures
-		ARG 3 lootTables
-		ARG 4 registries
 	METHOD <init> (Ljava/util/Set;Lnet/minecraft/class_7699;Lnet/minecraft/class_7225$class_7874;)V
 		ARG 1 explosionImmuneItems
 		ARG 2 requiredFeatures

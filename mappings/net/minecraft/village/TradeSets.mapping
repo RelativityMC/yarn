@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_26 net/minecraft/village/TradeSets
+	METHOD method_1_470 bootstrap (Lnet/minecraft/class_7891;)Lnet/minecraft/class_6880;

@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_1767 net/minecraft/util/DyeColor
 	COMMENT An enum representing 16 dye colors.
+	FIELD field_1_22 VALUES Ljava/util/List;
 	FIELD field_7943 entityColor I
 	FIELD field_7948 id Ljava/lang/String;
 	FIELD field_7950 BY_FIREWORK_COLOR Lit/unimi/dsi/fastutil/ints/Int2ObjectOpenHashMap;

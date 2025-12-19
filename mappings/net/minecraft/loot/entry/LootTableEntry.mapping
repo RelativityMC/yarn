@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_83 net/minecraft/loot/entry/LootTableEntry
-	FIELD field_45803 CODEC Lcom/mojang/serialization/MapCodec;
+	FIELD field_45803 MAP_CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_49429 value Lcom/mojang/datafixers/util/Either;
 	FIELD field_60422 INLINE_CONTEXT Lnet/minecraft/class_8942$class_11336;
 	METHOD <init> (Lcom/mojang/datafixers/util/Either;IILjava/util/List;Ljava/util/List;)V
@@ -8,6 +8,8 @@ CLASS net/minecraft/class_83 net/minecraft/loot/entry/LootTableEntry
 		ARG 3 quality
 		ARG 4 conditions
 		ARG 5 functions
+	METHOD method_1_724 (Lnet/minecraft/class_58;Lnet/minecraft/class_5321;)V
+		ARG 1 key
 	METHOD method_428 builder (Lnet/minecraft/class_5321;)Lnet/minecraft/class_85$class_86;
 		ARG 0 key
 	METHOD method_430 (Lnet/minecraft/class_5321;IILjava/util/List;Ljava/util/List;)Lnet/minecraft/class_85;

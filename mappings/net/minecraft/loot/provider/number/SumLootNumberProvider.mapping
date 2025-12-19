@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_54 net/minecraft/loot/provider/number/SumLootNumberProvider
+	METHOD method_1_685 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_686 of ([Lnet/minecraft/class_5658;)Lnet/minecraft/class_1_54;
+		ARG 0 summands

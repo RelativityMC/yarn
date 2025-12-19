@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_1_50 net/minecraft/client/render/state/LightmapRenderState
+	FIELD field_1_684 ambientLightColor Lorg/joml/Vector3fc;
+	FIELD field_1_685 blockLightFactor F
+	FIELD field_1_686 blockLightTint Lorg/joml/Vector3fc;
+	FIELD field_1_687 skyDarkness F
+	FIELD field_1_688 gamma F
+	FIELD field_1_689 darknessScale F
+	FIELD field_1_690 dirty Z
+	FIELD field_1_691 nightVisionColor Lorg/joml/Vector3fc;
+	FIELD field_1_692 nightVisionStrength F
+	FIELD field_1_693 skyLightFactor F
+	FIELD field_1_694 skyLightColor Lorg/joml/Vector3fc;

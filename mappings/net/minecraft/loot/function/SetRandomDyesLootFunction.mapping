@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_68 net/minecraft/loot/function/SetRandomDyesLootFunction
+	FIELD field_1_812 CODEC Lcom/mojang/serialization/MapCodec;
+	FIELD field_1_813 numberOfDyes Lnet/minecraft/class_5658;
+	METHOD <init> (Ljava/util/List;Lnet/minecraft/class_5658;)V
+		ARG 2 numberOfDyes
+	METHOD method_1_752 builder (Lnet/minecraft/class_5658;)Lnet/minecraft/class_120$class_121;

@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_1_24 net/minecraft/server/command/SwingCommand
+	FIELD field_1_135 NOT_LIVING_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
+	METHOD method_1_462 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD method_1_463 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD method_1_466 register (Lcom/mojang/brigadier/CommandDispatcher;)V
+		ARG 0 dispatcher
+	METHOD method_1_467 execute (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_1268;)I
+		ARG 0 source
+		ARG 1 entities
+		ARG 2 hand

@@ -1,5 +1,7 @@
 CLASS net/minecraft/class_2602 net/minecraft/network/listener/ClientPlayPacketListener
 	COMMENT A client side packet listener where play stage packets from the server are processed.
+	METHOD method_1_689 onLowDiskSpaceWarning (Lnet/minecraft/class_1_71;)V
+		ARG 1 packet
 	METHOD method_11077 onParticle (Lnet/minecraft/class_2675;)V
 		ARG 1 packet
 	METHOD method_11078 onBossBar (Lnet/minecraft/class_2629;)V

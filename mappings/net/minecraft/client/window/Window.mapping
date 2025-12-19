@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_1041 net/minecraft/client/util/Window
+CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	FIELD field_5174 windowedWidth I
 	FIELD field_5175 windowedX I
 	FIELD field_5176 eventHandler Lnet/minecraft/class_3678;
@@ -34,6 +34,7 @@ CLASS net/minecraft/class_1041 net/minecraft/client/util/Window
 		ARG 2 settings
 		ARG 3 fullscreenVideoMode
 		ARG 4 title
+	METHOD method_1_385 initializeFirstSupported ([Lnet/minecraft/class_1_11;IILjava/lang/String;JLnet/minecraft/class_12289;Lnet/minecraft/class_1_16;)Lnet/minecraft/class_1_17;
 	METHOD method_4474 setPhase (Ljava/lang/String;)V
 		ARG 1 phase
 	METHOD method_4475 applyFullscreenVideoMode ()V

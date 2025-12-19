@@ -3,6 +3,7 @@ CLASS net/minecraft/class_79 net/minecraft/loot/entry/LootPoolEntry
 	FIELD field_989 conditionPredicate Ljava/util/function/Predicate;
 	METHOD <init> (Ljava/util/List;)V
 		ARG 1 conditions
+	METHOD method_1_748 getMapCodec ()Lcom/mojang/serialization/MapCodec;
 	METHOD method_414 test (Lnet/minecraft/class_47;)Z
 		ARG 1 context
 	METHOD method_53287 addConditionsField (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/Products$P1;

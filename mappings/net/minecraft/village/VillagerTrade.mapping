@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_1_30 net/minecraft/village/VillagerTrade
+	FIELD field_1_226 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_227 additionalWants Ljava/util/Optional;
+	FIELD field_1_228 doubleTradePriceEnchantments Ljava/util/Optional;
+	FIELD field_1_229 givenItemModifiers Ljava/util/List;
+	FIELD field_1_230 gives Lnet/minecraft/class_1799;
+	FIELD field_1_231 maxUses Lnet/minecraft/class_5658;
+	FIELD field_1_232 merchantPredicate Ljava/util/Optional;
+	FIELD field_1_233 reputationDiscount Lnet/minecraft/class_5658;
+	FIELD field_1_234 wants Lnet/minecraft/class_1_25;
+	FIELD field_1_235 xp Lnet/minecraft/class_5658;
+	METHOD method_1_513 createOffer (Lnet/minecraft/class_47;)Lnet/minecraft/class_1914;
+	METHOD method_1_515 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

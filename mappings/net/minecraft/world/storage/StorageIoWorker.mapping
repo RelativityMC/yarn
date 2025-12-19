@@ -65,3 +65,4 @@ CLASS net/minecraft/class_4698 net/minecraft/world/storage/StorageIoWorker
 		METHOD method_60627 copyNbt ()Lnet/minecraft/class_2487;
 	CLASS class_5276 Priority
 	CLASS class_10195 Callable
+		METHOD method_1_187 call ()Ljava/lang/Object;

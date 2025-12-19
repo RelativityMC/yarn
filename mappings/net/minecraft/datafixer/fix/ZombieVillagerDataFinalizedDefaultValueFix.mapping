@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_70 net/minecraft/datafixer/fix/ZombieVillagerDataFinalizedDefaultValueFix
+	FIELD field_1_815 KEY Ljava/lang/String;
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD method_1_756 setVillagerDataFinalized (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 zombieVillagerData

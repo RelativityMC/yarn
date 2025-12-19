@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_67 net/minecraft/datafixer/fix/VillagerDataFinalizedDefaultValueFix
+	FIELD field_1_809 KEY Ljava/lang/String;
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD method_1_737 setVillagerDataFinalized (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 villagerData

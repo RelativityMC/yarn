@@ -1,0 +1,107 @@
+CLASS net/minecraft/class_1_43 net/minecraft/world/updater/RegionStorageUpgrader
+	FIELD field_1_646 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_647 NEW_PREFIX Ljava/lang/String;
+	FIELD field_1_648 REGION_FILE_PATTERN Ljava/util/regex/Pattern;
+	FIELD field_1_649 context Lnet/minecraft/class_2487;
+	FIELD field_1_650 dataFixType Lnet/minecraft/class_4284;
+	FIELD field_1_651 dataFixer Lcom/mojang/datafixers/DataFixer;
+	FIELD field_1_652 fallbackVersion I
+	FIELD field_1_653 world Lnet/minecraft/class_5321;
+	FIELD field_1_654 regions Ljava/util/List;
+	FIELD field_1_655 directoryName Ljava/lang/String;
+	FIELD field_1_656 updaterFactory Ljava/util/function/Supplier;
+	FIELD field_1_657 setNbtFuture Ljava/util/concurrent/CompletableFuture;
+	FIELD field_1_658 recreateRegionFiles Z
+	FIELD field_1_659 cumulativeRegionCount I
+	FIELD field_1_660 versionedChunkStorage Lnet/minecraft/class_3977;
+	FIELD field_1_661 fixersByVersion Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+	FIELD field_1_662 type Ljava/lang/String;
+	FIELD field_1_663 progress Lnet/minecraft/class_1_27;
+	METHOD <init> (Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_4284;Ljava/lang/String;Ljava/lang/String;IZLnet/minecraft/class_1_27;ILnet/minecraft/class_2487;Ljava/util/function/Supplier;Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;)V
+		ARG 1 dataFixer
+		ARG 2 dataFixTypes
+		ARG 3 type
+		ARG 4 directoryName
+		ARG 5 fallbackVersion
+		ARG 6 recreateRegionFiles
+		ARG 7 progress
+		ARG 8 cumulativeRegionCount
+		ARG 9 context
+		ARG 10 updaterFactory
+		ARG 11 fixersByVersion
+	METHOD method_1_612 createVersionedChunkStorage (Lnet/minecraft/class_9240;Ljava/nio/file/Path;)Lnet/minecraft/class_3977;
+		ARG 1 key
+		ARG 2 directory
+	METHOD method_1_613 getRegionCount ()I
+	METHOD method_1_614 readRegionsInDirectory (Lnet/minecraft/class_9240;Ljava/nio/file/Path;)Ljava/util/List;
+		ARG 0 key
+		ARG 1 directory
+	METHOD method_1_615 getRegionsInDirectory (Lnet/minecraft/class_9240;Ljava/nio/file/Path;)Ljava/util/List;
+		ARG 1 key
+		ARG 2 directory
+	METHOD method_1_616 initialize (Lnet/minecraft/class_5321;Lnet/minecraft/class_32$class_5143;)V
+		ARG 1 world
+		ARG 2 session
+	METHOD method_1_617 (Ljava/io/File;Ljava/lang/String;)Z
+		ARG 1 name
+	METHOD method_1_618 (Lnet/minecraft/class_9165;)I
+		ARG 0 region
+	METHOD method_1_619 finish (Lnet/minecraft/class_2861;)V
+		ARG 1 file
+	METHOD method_1_620 upgradeChunk (Lnet/minecraft/class_3977;Lnet/minecraft/class_1923;)Z
+		ARG 1 storage
+		ARG 2 chunkPos
+	METHOD method_1_621 getPathOfNew (Ljava/nio/file/Path;)Ljava/nio/file/Path;
+		ARG 0 path
+	METHOD method_1_622 doUpgradeChunk (Lnet/minecraft/class_3977;Lnet/minecraft/class_1923;)Z
+		COMMENT @return {@code true} if upgraded; {@code false} if skipped
+		ARG 1 storage
+		ARG 2 chunkPos
+	METHOD method_1_623 upgrade ()V
+	METHOD method_1_624 updateChunkNbt (Lnet/minecraft/class_3977;Lnet/minecraft/class_2487;I)Lnet/minecraft/class_2487;
+		ARG 1 storage
+		ARG 2 chunkNbt
+		ARG 3 targetVersion
+	CLASS class_1_44 Builder
+		FIELD field_1_664 context Lnet/minecraft/class_2487;
+		FIELD field_1_665 dataFixType Lnet/minecraft/class_4284;
+		FIELD field_1_666 dataFixer Lcom/mojang/datafixers/DataFixer;
+		FIELD field_1_667 fallbackVersion I
+		FIELD field_1_668 directoryName Ljava/lang/String;
+		FIELD field_1_669 updaterFactory Ljava/util/function/Supplier;
+		FIELD field_1_670 recreateRegionFiles Z
+		FIELD field_1_671 fixersByVersion Lit/unimi/dsi/fastutil/ints/Int2ObjectAVLTreeMap;
+		FIELD field_1_672 type Ljava/lang/String;
+		FIELD field_1_673 progress Lnet/minecraft/class_1_27;
+		METHOD <init> (Lcom/mojang/datafixers/DataFixer;)V
+			ARG 1 dataFixer
+		METHOD method_1_625 fixer (ILnet/minecraft/class_1_43$class_1_45;)Lnet/minecraft/class_1_43$class_1_44;
+			ARG 1 version
+			ARG 2 fixer
+		METHOD method_1_626 build (I)Lnet/minecraft/class_1_43;
+			ARG 1 cumulativeRegionCount
+		METHOD method_1_627 copy ()Lnet/minecraft/class_1_43$class_1_44;
+		METHOD method_1_628 context (Lnet/minecraft/class_2487;)Lnet/minecraft/class_1_43$class_1_44;
+			ARG 1 context
+		METHOD method_1_629 dataFixType (Lnet/minecraft/class_4284;)Lnet/minecraft/class_1_43$class_1_44;
+			ARG 1 dataFixType
+		METHOD method_1_630 fallbackVersion (I)Lnet/minecraft/class_1_43$class_1_44;
+			ARG 1 fallbackVersion
+		METHOD method_1_631 directoryName (Ljava/lang/String;)Lnet/minecraft/class_1_43$class_1_44;
+			ARG 1 directoryName
+		METHOD method_1_632 updaterFactory (Ljava/util/function/Supplier;)Lnet/minecraft/class_1_43$class_1_44;
+			ARG 1 updaterFactory
+		METHOD method_1_633 recreateRegionFiles (Z)Lnet/minecraft/class_1_43$class_1_44;
+			ARG 1 recreateRegionFiles
+		METHOD method_1_634 fixersByVersion (Lit/unimi/dsi/fastutil/ints/Int2ObjectAVLTreeMap;)Lnet/minecraft/class_1_43$class_1_44;
+			ARG 1 fixersByVersion
+		METHOD method_1_635 type (Ljava/lang/String;)Lnet/minecraft/class_1_43$class_1_44;
+			ARG 1 type
+		METHOD method_1_636 name (Ljava/lang/String;)Lnet/minecraft/class_1_43$class_1_44;
+			ARG 1 name
+		METHOD method_1_637 progress (Lnet/minecraft/class_1_27;)Lnet/minecraft/class_1_43$class_1_44;
+			ARG 1 progress
+	CLASS class_1_45 Fixer
+		METHOD method_1_638 fix (Lnet/minecraft/class_1923;Lnet/minecraft/class_2487;)Z
+			ARG 1 chunkPos
+			ARG 2 tag

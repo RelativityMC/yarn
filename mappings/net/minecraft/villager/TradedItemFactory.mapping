@@ -1,4 +1,0 @@
-CLASS net/minecraft/class_1_25 net/minecraft/villager/TradedItemFactory
-	METHOD method_1_468 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance
-	METHOD method_1_469 create (Lnet/minecraft/class_47;I)Lnet/minecraft/class_9306;

@@ -2,4 +2,20 @@ CLASS net/minecraft/class_8490 net/minecraft/loot/LootDataType
 	FIELD field_44496 PREDICATES Lnet/minecraft/class_8490;
 	FIELD field_44497 ITEM_MODIFIERS Lnet/minecraft/class_8490;
 	FIELD field_44498 LOOT_TABLES Lnet/minecraft/class_8490;
+	METHOD method_1_597 (Lnet/minecraft/class_8944;Lnet/minecraft/class_6880$class_6883;)V
+		ARG 2 entry
+	METHOD method_1_598 validate (Lnet/minecraft/class_8944;Lnet/minecraft/class_7225;)V
+		ARG 1 validator
+		ARG 2 registry
+	METHOD method_1_599 validate (Lnet/minecraft/class_8944;Lnet/minecraft/class_5321;Lnet/minecraft/class_1_38;)V
+		ARG 1 validator
+		ARG 2 key
+		ARG 3 value
 	METHOD method_51215 stream ()Ljava/util/stream/Stream;
+	CLASS class_1_40 ContextTypeGetter
+		METHOD method_1_600 constant (Lnet/minecraft/class_176;)Lnet/minecraft/class_8490$class_1_40;
+			ARG 0 contextType
+		METHOD method_1_601 getType (Ljava/lang/Object;)Lnet/minecraft/class_176;
+			ARG 1 value
+		METHOD method_1_602 (Lnet/minecraft/class_176;Ljava/lang/Object;)Lnet/minecraft/class_176;
+			ARG 1 value

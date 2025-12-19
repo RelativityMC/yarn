@@ -14,7 +14,7 @@ CLASS net/minecraft/class_4284 net/minecraft/datafixer/DataFixType
 		ARG 2 dynamic
 		ARG 3 oldVersion
 		ARG 4 newVersion
-	METHOD method_48130 update (Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_2487;I)Lnet/minecraft/class_2487;
+	METHOD method_48130 outputVersion (Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_2487;I)Lnet/minecraft/class_2487;
 		COMMENT {@return {@code nbt} updated from {@code oldVersion} to the current version}
 		COMMENT
 		COMMENT @see net.minecraft.nbt.NbtHelper#getDataVersion

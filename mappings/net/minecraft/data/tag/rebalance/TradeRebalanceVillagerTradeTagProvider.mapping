@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_1_37 net/minecraft/data/tag/vanilla/VanillaVillagerTradeTagProvider
+CLASS net/minecraft/class_1_51 net/minecraft/data/tag/rebalance/TradeRebalanceVillagerTradeTagProvider
 	METHOD <init> (Lnet/minecraft/class_7784;Ljava/util/concurrent/CompletableFuture;)V
 		ARG 1 dataOutput
 		ARG 2 registriesFuture

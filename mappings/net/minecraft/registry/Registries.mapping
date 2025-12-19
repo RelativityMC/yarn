@@ -211,5 +211,5 @@ CLASS net/minecraft/class_7923 net/minecraft/registry/Registries
 	METHOD method_74053 (Lnet/minecraft/class_2378;)Ljava/lang/Object;
 		ARG 0 registry
 	CLASS class_6889 Initializer
-		METHOD method_1_167 (Lnet/minecraft/class_2378;)Ljava/lang/Object;
+		METHOD method_1_167 run (Lnet/minecraft/class_2378;)Ljava/lang/Object;
 			ARG 1 registry

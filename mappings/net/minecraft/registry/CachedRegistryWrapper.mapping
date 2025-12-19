@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_1_42 net/minecraft/registry/CachedRegistryWrapper
+	FIELD field_1_642 cachedEntries Ljava/util/Map;
+	FIELD field_1_643 lock Ljava/lang/Object;
+	FIELD field_1_644 lookup Lnet/minecraft/class_7871;
+	FIELD field_1_645 cachedTags Ljava/util/Map;
+	METHOD <init> (Ljava/lang/Object;Lnet/minecraft/class_7871;)V
+		ARG 1 lock
+		ARG 2 lookup
+	METHOD method_1_607 (Lnet/minecraft/class_5321;)Ljava/util/Optional;
+		ARG 1 k
+	METHOD method_1_608 (Lnet/minecraft/class_6862;)Ljava/util/Optional;
+		ARG 1 k

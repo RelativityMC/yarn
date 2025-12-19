@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_5462 net/minecraft/util/function/CharPredicate
-	METHOD method_1_5 (C)Z
+	METHOD method_1_5 test (C)Z
 		ARG 1 c
 	METHOD method_36123 negate ()Lnet/minecraft/class_5462;
 	METHOD method_36124 (C)Z

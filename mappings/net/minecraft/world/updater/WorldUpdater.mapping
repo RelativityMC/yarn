@@ -16,8 +16,6 @@ CLASS net/minecraft/class_1257 net/minecraft/world/updater/WorldUpdater
 		ARG 4 eraseCache
 		ARG 5 recreateRegionFiles
 	METHOD method_1_481 (Lnet/minecraft/class_1_43$class_1_44;Lnet/minecraft/class_5321;)Lnet/minecraft/class_1_43$class_1_44;
-		ARG 0 a
-		ARG 1 b
 	METHOD method_1_484 (Lnet/minecraft/class_4284;Lnet/minecraft/class_1_43$class_1_44;)V
 		ARG 1 dataFixType
 		ARG 2 builder

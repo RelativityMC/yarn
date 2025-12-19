@@ -10,14 +10,6 @@ CLASS net/minecraft/class_1_43 net/minecraft/world/storage/RegionStorageUpgrader
 		ARG 1 dataFixer
 		ARG 2 dataFixTypes
 		ARG 3 type
-		ARG 4 d
-		ARG 5 e
-		ARG 6 f
-		ARG 7 g
-		ARG 8 h
-		ARG 9 i
-		ARG 10 j
-		ARG 11 k
 	METHOD method_1_616 (Lnet/minecraft/class_5321;Lnet/minecraft/class_32$class_5143;)V
 		ARG 1 world
 		ARG 2 session
@@ -29,30 +21,19 @@ CLASS net/minecraft/class_1_43 net/minecraft/world/storage/RegionStorageUpgrader
 			ARG 1 dataFixer
 		METHOD method_1_625 (ILnet/minecraft/class_1_43$class_1_45;)Lnet/minecraft/class_1_43$class_1_44;
 			ARG 1 version
-			ARG 2 a
 		METHOD method_1_626 build (I)Lnet/minecraft/class_1_43;
 		METHOD method_1_627 copy ()Lnet/minecraft/class_1_43$class_1_44;
 		METHOD method_1_628 (Lnet/minecraft/class_2487;)Lnet/minecraft/class_1_43$class_1_44;
-			ARG 1 a
 		METHOD method_1_629 dataFixType (Lnet/minecraft/class_4284;)Lnet/minecraft/class_1_43$class_1_44;
 			ARG 1 dataFixType
 		METHOD method_1_630 (I)Lnet/minecraft/class_1_43$class_1_44;
-			ARG 1 a
 		METHOD method_1_631 (Ljava/lang/String;)Lnet/minecraft/class_1_43$class_1_44;
-			ARG 1 a
 		METHOD method_1_632 (Ljava/util/function/Supplier;)Lnet/minecraft/class_1_43$class_1_44;
-			ARG 1 a
 		METHOD method_1_633 (Z)Lnet/minecraft/class_1_43$class_1_44;
-			ARG 1 a
 		METHOD method_1_634 (Lit/unimi/dsi/fastutil/ints/Int2ObjectAVLTreeMap;)Lnet/minecraft/class_1_43$class_1_44;
-			ARG 1 a
 		METHOD method_1_635 type (Ljava/lang/String;)Lnet/minecraft/class_1_43$class_1_44;
-			ARG 1 a
 		METHOD method_1_636 (Ljava/lang/String;)Lnet/minecraft/class_1_43$class_1_44;
-			ARG 1 a
 		METHOD method_1_637 (Lnet/minecraft/class_1_27;)Lnet/minecraft/class_1_43$class_1_44;
-			ARG 1 a
 	CLASS class_1_45
 		METHOD method_1_638 (Lnet/minecraft/class_1923;Lnet/minecraft/class_2487;)Z
 			ARG 1 chunkPos
-			ARG 2 a

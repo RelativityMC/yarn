@@ -136,10 +136,10 @@ tasks.register('downloadIntermediary', DownloadTask) {
 }
 
 tasks.register('mapIntermediaryJar', MapJarTask) {
-	dependsOn downloadIntermediary, mergeMinecraftJars
+	dependsOn downloadIntermediary, stripMergedMinecraftJar
 	group = mapJarGroup
 	output = layout.buildDirectory.file("${minecraft_version}-intermediary.jar")
-	input = mergeMinecraftJars.output
+	input = stripMergedMinecraftJar.output
 	mappings = downloadIntermediary.output
 	from = 'official'
 	to = 'intermediary'

@@ -2,6 +2,9 @@ package net.fabricmc.filament;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
+import net.fabricmc.filament.task.minecraft.StripLvtTask;
+
 import org.gradle.api.Plugin;
 import org.gradle.api.Project;
 import org.gradle.api.artifacts.Dependency;
@@ -53,11 +56,16 @@ public final class FilamentGradlePlugin implements Plugin<Project> {
 			task.getInput().set(getOutput(minecraftServer));
 			task.getOutput().set(extension.getMinecraftFile("server.jar"));
 		});
-		tasks.register("mergeMinecraftJars", MergeMinecraftTask.class, task -> {
+		var mergeMinecraftJarsTask = tasks.register("mergeMinecraftJars", MergeMinecraftTask.class, task -> {
 			task.getClientJar().set(getOutput(minecraftClient));
 			task.getServerJar().set(getOutput(extractBundledServer));
 
 			task.getOutput().set(extension.getMinecraftFile("merged.jar"));
+		});
+		tasks.register("stripMergedMinecraftJar", StripLvtTask.class, task -> {
+			task.getInputJar().set(getOutput(mergeMinecraftJarsTask));
+
+			task.getOutput().set(extension.getMinecraftFile("merged-stripped.jar"));
 		});
 		tasks.register("generatePackageInfoMappings", GeneratePackageInfoMappingsTask.class);
 		tasks.register("javadocLint", JavadocLintTask.class);

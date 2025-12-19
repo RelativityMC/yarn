@@ -1,0 +1,29 @@
+CLASS net/minecraft/class_1_38 net/minecraft/loot/LootTableReportable
+	METHOD method_1_583 (Lnet/minecraft/class_176;Ljava/util/List;)Lcom/mojang/serialization/DataResult;
+		ARG 1 reportable
+	METHOD method_1_588 (Lnet/minecraft/class_176;Lnet/minecraft/class_1_38;)Lcom/mojang/serialization/DataResult;
+		ARG 1 reportable
+	METHOD method_1_590 validateList (Lnet/minecraft/class_176;)Ljava/util/function/Function;
+		ARG 0 contextType
+	METHOD method_1_591 reportChildren (Lnet/minecraft/class_58;Ljava/lang/String;Ljava/util/List;)V
+		ARG 0 reporter
+		ARG 1 name
+		ARG 2 values
+	METHOD method_1_592 reportOptionalChild (Lnet/minecraft/class_58;Ljava/lang/String;Ljava/util/Optional;)V
+		ARG 0 reporter
+		ARG 1 name
+		ARG 2 value
+	METHOD method_1_593 reportChild (Lnet/minecraft/class_58;Ljava/lang/String;Lnet/minecraft/class_1_38;)V
+		ARG 0 reporter
+		ARG 1 name
+		ARG 2 value
+	METHOD method_1_594 reportChildren (Lnet/minecraft/class_58;Ljava/util/List;)V
+		ARG 0 reporter
+		ARG 1 values
+	METHOD method_1_595 reportReference (Lnet/minecraft/class_58;Lnet/minecraft/class_5321;)V
+		ARG 0 reporter
+		ARG 1 key
+	METHOD method_1_596 validateOne (Lnet/minecraft/class_176;)Ljava/util/function/Function;
+		ARG 0 contextType
+	METHOD method_292 report (Lnet/minecraft/class_58;)V
+		ARG 1 reporter

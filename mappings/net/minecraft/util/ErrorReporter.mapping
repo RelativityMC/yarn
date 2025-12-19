@@ -4,6 +4,7 @@ CLASS net/minecraft/class_8942 net/minecraft/util/ErrorReporter
 		ARG 1 context
 	METHOD method_54947 report (Lnet/minecraft/class_8942$class_11337;)V
 		ARG 1 error
+	CLASS class_1_6 NamedMapElementContext
 	CLASS class_8943 Impl
 		FIELD field_60349 CONTEXT Lnet/minecraft/class_8942$class_11336;
 		FIELD field_60350 parent Lnet/minecraft/class_8942$class_8943;

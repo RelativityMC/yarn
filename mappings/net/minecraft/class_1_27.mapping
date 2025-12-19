@@ -1,0 +1,27 @@
+CLASS net/minecraft/class_1_27
+	FIELD field_1_212 upgradedChunkCount I
+	FIELD field_1_214 done Z
+	FIELD field_1_216 skippedChunkCount I
+	FIELD field_1_217 status Lnet/minecraft/class_1_27$class_1_29;
+	FIELD field_1_218 totalChunkCount I
+	FIELD field_1_220 progress F
+	METHOD method_1_492 addTotalChunkCount (I)V
+	METHOD method_1_493 (I)V
+		ARG 1 a
+	METHOD method_1_494 getUpgradedChunkCount ()I
+	METHOD method_1_496 getProgress (Lnet/minecraft/class_5321;)F
+	METHOD method_1_497 getSkippedChunkCount ()I
+	METHOD method_1_498 getStatus ()Lnet/minecraft/class_1_27$class_1_29;
+	METHOD method_1_499 getTotalChunkCount ()I
+	METHOD method_1_501 getProgress ()F
+	METHOD method_1_502 incrementUpgradedChunkCount ()V
+	METHOD method_1_503 incrementSkippedChunkCount ()V
+	METHOD method_1_505 isDone ()Z
+	METHOD method_1_506 reset (Lnet/minecraft/class_4284;)V
+	METHOD method_1_509 setDone (Z)V
+		ARG 1 done
+	METHOD method_1_510 setStatus (Lnet/minecraft/class_1_27$class_1_29;)V
+		ARG 1 status
+	METHOD method_1_511 setProgress (F)V
+	CLASS class_1_28 Dummy
+	CLASS class_1_29 Status

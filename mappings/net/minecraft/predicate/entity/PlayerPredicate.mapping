@@ -34,6 +34,7 @@ CLASS net/minecraft/class_4553 net/minecraft/predicate/entity/PlayerPredicate
 		METHOD method_53223 (Lnet/minecraft/class_4553$class_4556;)Lcom/mojang/datafixers/util/Either;
 			ARG 0 predicate
 	CLASS class_4557 Builder
+		FIELD field_1_635 food Lnet/minecraft/class_1_35;
 		FIELD field_20730 experienceLevel Lnet/minecraft/class_2096$class_2100;
 		FIELD field_20731 gameMode Lnet/minecraft/class_9789;
 		FIELD field_20732 stats Lcom/google/common/collect/ImmutableList$Builder;
@@ -41,6 +42,8 @@ CLASS net/minecraft/class_4553 net/minecraft/predicate/entity/PlayerPredicate
 		FIELD field_20734 advancements Ljava/util/Map;
 		FIELD field_33930 lookingAt Ljava/util/Optional;
 		FIELD field_54148 input Ljava/util/Optional;
+		METHOD method_1_603 food (Lnet/minecraft/class_1_35;)Lnet/minecraft/class_4553$class_4557;
+			ARG 1 food
 		METHOD method_22507 build ()Lnet/minecraft/class_4553;
 		METHOD method_35310 create ()Lnet/minecraft/class_4553$class_4557;
 		METHOD method_35311 stat (Lnet/minecraft/class_3448;Lnet/minecraft/class_6880$class_6883;Lnet/minecraft/class_2096$class_2100;)Lnet/minecraft/class_4553$class_4557;

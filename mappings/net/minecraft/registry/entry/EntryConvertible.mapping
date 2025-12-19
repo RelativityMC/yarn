@@ -1,0 +1,13 @@
+CLASS net/minecraft/class_1_2 net/minecraft/registry/entry/EntryConvertible
+	METHOD method_1_371 is (Ljava/lang/Object;)Z
+		ARG 1 value
+	METHOD method_1_372 is (Lnet/minecraft/class_6880;)Z
+		ARG 1 entry
+	METHOD method_1_373 isIn (Lnet/minecraft/class_6885;)Z
+		ARG 1 entries
+	METHOD method_1_374 is (Lnet/minecraft/class_5321;)Z
+		ARG 1 key
+	METHOD method_1_375 isIn (Lnet/minecraft/class_6862;)Z
+		ARG 1 tag
+	METHOD method_1_376 tags ()Ljava/util/stream/Stream;
+	METHOD method_40180 getRegistryEntry ()Lnet/minecraft/class_6880;

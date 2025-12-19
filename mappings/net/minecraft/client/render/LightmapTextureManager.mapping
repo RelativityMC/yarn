@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_1_52 net/minecraft/client/render/LightmapTextureManager
+	FIELD field_1_697 WHITE Lorg/joml/Vector3fc;
+	FIELD field_1_698 blockLightFlicker F
+	FIELD field_1_699 client Lnet/minecraft/class_310;
+	FIELD field_1_700 dirty Z
+	FIELD field_1_701 random Lnet/minecraft/class_5819;
+	FIELD field_1_702 renderer Lnet/minecraft/class_757;
+	METHOD <init> (Lnet/minecraft/class_757;Lnet/minecraft/class_310;)V
+		ARG 1 renderer
+		ARG 2 client
+	METHOD method_1_662 calculateDarknessScale (Lnet/minecraft/class_1309;FF)F
+		ARG 1 entity
+	METHOD method_1_663 prepareRender (Lnet/minecraft/class_1_50;F)V
+	METHOD method_1_664 tick ()V

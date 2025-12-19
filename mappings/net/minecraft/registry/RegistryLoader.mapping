@@ -33,6 +33,8 @@ CLASS net/minecraft/class_7655 net/minecraft/registry/RegistryLoader
 		ARG 0 exceptions
 	METHOD method_62810 createLoadingException (Ljava/util/Map;)Lnet/minecraft/class_148;
 		ARG 0 exceptions
+	CLASS class_1_22
+		FIELD field_1_130 elementsRegistered Z
 	CLASS class_7657 Entry
 		METHOD <init> (Lnet/minecraft/class_5321;Lcom/mojang/serialization/Codec;)V
 			ARG 1 key

@@ -1,7 +1,11 @@
 CLASS net/minecraft/class_3495 net/minecraft/registry/tag/TagBuilder
 	COMMENT A builder class to ease the creation of tags. It can also be used as a
 	COMMENT mutable form of a tag.
+	FIELD field_1_19 replace Z
 	FIELD field_23688 entries Ljava/util/List;
+	METHOD method_1_364 replace (Z)Lnet/minecraft/class_3495;
+		ARG 1 replace
+	METHOD method_1_365 replace ()Z
 	METHOD method_26778 create ()Lnet/minecraft/class_3495;
 	METHOD method_26782 build ()Ljava/util/List;
 	METHOD method_26784 add (Lnet/minecraft/class_2960;)Lnet/minecraft/class_3495;

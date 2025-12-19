@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_543 net/minecraft/client/WindowSettings
+CLASS net/minecraft/class_543 net/minecraft/client/window/WindowSettings
 	FIELD comp_3494 width I
 	FIELD comp_3495 height I
 	FIELD comp_3496 fullscreenWidth Ljava/util/OptionalInt;

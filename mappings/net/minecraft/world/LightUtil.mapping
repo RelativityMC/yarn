@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_1_5 net/minecraft/world/LightUtil
+	FIELD field_1_26 MAX_EMISSION I
+	METHOD method_1_387 getBlock (I)I
+	METHOD method_1_388 addEmission (II)I
+	METHOD method_1_389 max (II)I
+	METHOD method_1_390 pack (II)I
+	METHOD method_1_391 getSky (I)I
+	METHOD method_1_393 getBlockA (I)I
+	METHOD method_1_394 packA (II)I
+	METHOD method_1_395 getSkyA (I)I
+	METHOD method_1_397 withBlockA (II)I

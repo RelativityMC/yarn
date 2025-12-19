@@ -1,0 +1,31 @@
+CLASS net/minecraft/class_1_55 net/minecraft/client/gui/hud/debug/LookingAtBlockDebugHudEntry
+	FIELD field_1_712 LOOKING_AT_BLOCK Lnet/minecraft/class_2960;
+	FIELD field_1_713 LOOKING_AT_FLUID Lnet/minecraft/class_2960;
+	METHOD method_1_690 addHashPrefixedEntryTags (Ljava/util/List;Lnet/minecraft/class_1_2;)V
+	METHOD method_1_691 addLines (Ljava/util/List;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)V
+		ARG 1 linesOut
+		ARG 2 world
+		ARG 3 pos
+	METHOD method_1_692 getId ()Lnet/minecraft/class_2960;
+	METHOD method_1_693 (Lnet/minecraft/class_6862;)Ljava/lang/String;
+		ARG 0 tag
+	CLASS class_1_56 NonfluidState
+	CLASS class_1_57 NonfluidTags
+	CLASS class_1_58 State
+		FIELD field_1_714 label Ljava/lang/String;
+		METHOD <init> (Ljava/lang/String;)V
+			ARG 1 label
+		METHOD method_1_696 addProperties (Ljava/util/List;Lnet/minecraft/class_2688;)V
+			ARG 0 linesOut
+			ARG 1 state
+		METHOD method_1_697 getState (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)Lnet/minecraft/class_2688;
+			ARG 1 world
+			ARG 2 pos
+		METHOD method_1_698 propertyEntryToString (Ljava/util/Map$Entry;)Ljava/lang/String;
+			ARG 0 entry
+	CLASS class_1_59 Tags
+		METHOD method_1_699 getState (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)Lnet/minecraft/class_1_2;
+			ARG 1 world
+			ARG 2 pos
+	CLASS class_1_60 FluidState
+	CLASS class_1_61 FluidTags

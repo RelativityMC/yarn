@@ -1,2 +1,0 @@
-CLASS net/minecraft/class_1_2
-	METHOD method_40180 getRegistryEntry ()Lnet/minecraft/class_6880;

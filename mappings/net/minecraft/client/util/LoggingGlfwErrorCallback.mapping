@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_7 net/minecraft/client/util/LoggingGlfwErrorCallback
+	FIELD field_1_28 errors Ljava/util/List;
+	METHOD method_1_398 getFirstError ()Lnet/minecraft/class_1_7$class_1_8;
+	CLASS class_1_8 Error

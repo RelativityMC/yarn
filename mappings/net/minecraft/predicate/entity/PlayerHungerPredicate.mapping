@@ -1,0 +1,13 @@
+CLASS net/minecraft/class_1_35 net/minecraft/predicate/entity/PlayerHungerPredicate
+	FIELD field_1_627 ANY Lnet/minecraft/class_1_35;
+	METHOD method_1_576 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_577 test (Lnet/minecraft/class_1702;)Z
+		ARG 1 hungerManager
+	CLASS class_1_36 Builder
+		FIELD field_1_629 level Lnet/minecraft/class_2096$class_2100;
+		FIELD field_1_630 saturation Lnet/minecraft/class_2096$class_2099;
+		METHOD method_1_578 build ()Lnet/minecraft/class_1_35;
+		METHOD method_1_579 builder ()Lnet/minecraft/class_1_35$class_1_36;
+		METHOD method_1_580 level (Lnet/minecraft/class_2096$class_2100;)Lnet/minecraft/class_1_35$class_1_36;
+		METHOD method_1_581 saturation (Lnet/minecraft/class_2096$class_2099;)Lnet/minecraft/class_1_35$class_1_36;

@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_13 net/minecraft/data/tag/BaseTagProvider
+	METHOD method_1_411 tag (Lnet/minecraft/class_6862;)Lnet/minecraft/class_11389;
+		ARG 1 key
+	METHOD method_1_412 tag (Lnet/minecraft/class_6862;Z)Lnet/minecraft/class_11389;
+		ARG 1 key
+		ARG 2 replace

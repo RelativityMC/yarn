@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_11 net/minecraft/client/window/WindowBackend
+	METHOD method_1_404 initialize (IILjava/lang/String;JLnet/minecraft/class_12289;Lnet/minecraft/class_1_16;)Lnet/minecraft/class_1_17;
+	METHOD method_1_405 getName ()Ljava/lang/String;

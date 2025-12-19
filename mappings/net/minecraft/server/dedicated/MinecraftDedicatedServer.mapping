@@ -21,6 +21,10 @@ CLASS net/minecraft/class_3176 net/minecraft/server/dedicated/MinecraftDedicated
 		ARG 5 propertiesLoader
 		ARG 6 dataFixer
 		ARG 7 apiServices
+	METHOD method_1_490 (Lnet/minecraft/class_12087$class_12089;Lnet/minecraft/class_3222;)Z
+		ARG 1 player
+	METHOD method_1_491 (Lnet/minecraft/class_3222;)V
+		ARG 0 player
 	METHOD method_3841 getSpawnProtectionRadius ()I
 	METHOD method_13941 executeQueuedCommands ()V
 	METHOD method_13942 sleepFiveSeconds ()V

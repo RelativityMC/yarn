@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_62 net/minecraft/predicate/entity/VillagerVariantPredicate
+	FIELD field_1_715 CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_1_703 of (Lnet/minecraft/class_6885;)Lnet/minecraft/class_1_62;

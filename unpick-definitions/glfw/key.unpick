@@ -123,9 +123,6 @@ group int key
 	org.lwjgl.glfw.GLFW.GLFW_KEY_WORLD_1
 	org.lwjgl.glfw.GLFW.GLFW_KEY_WORLD_2
 
-target_method net.minecraft.client.util.InputUtil isKeyPressed (Lnet/minecraft/client/util/Window;I)Z
-	param 1 key
-
 target_method net.minecraft.client.input.KeyInput key ()I
 	return key
 

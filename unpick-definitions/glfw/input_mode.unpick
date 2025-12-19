@@ -19,5 +19,3 @@ target_method org.lwjgl.glfw.GLFW glfwSetInputMode (JII)V
 	param 1 input_mode
 	param 2 value
 
-target_method net.minecraft.client.util.InputUtil setCursorParameters(Lnet/minecraft/client/util/Window;IDD)V
-	param 1 value

@@ -2,12 +2,11 @@ package net.fabricmc.filament.task.minecraft;
 
 import java.io.IOException;
 
-import net.fabricmc.filament.common.LvtStripper;
-
 import org.gradle.api.file.RegularFileProperty;
 import org.gradle.api.tasks.InputFile;
 import org.gradle.api.tasks.TaskAction;
 
+import net.fabricmc.filament.common.LvtStripper;
 import net.fabricmc.filament.task.base.FileOutputTask;
 
 public abstract class StripLvtTask extends FileOutputTask {

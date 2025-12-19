@@ -2,9 +2,6 @@ package net.fabricmc.filament;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-
-import net.fabricmc.filament.task.minecraft.StripLvtTask;
-
 import org.gradle.api.Plugin;
 import org.gradle.api.Project;
 import org.gradle.api.artifacts.Dependency;
@@ -22,6 +19,7 @@ import net.fabricmc.filament.task.JavadocLintTask;
 import net.fabricmc.filament.task.base.WithFileOutput;
 import net.fabricmc.filament.task.minecraft.ExtractBundledServerTask;
 import net.fabricmc.filament.task.minecraft.MergeMinecraftTask;
+import net.fabricmc.filament.task.minecraft.StripLvtTask;
 import net.fabricmc.filament.task.unpick.CombineUnpickDefinitionsTask;
 import net.fabricmc.filament.task.unpick.RemapUnpickDefinitionsTask;
 import net.fabricmc.loom.configuration.providers.minecraft.MinecraftVersionMeta;

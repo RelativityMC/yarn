@@ -21,12 +21,11 @@ import java.util.concurrent.TimeUnit;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
 
 import net.fabricmc.loom.util.Constants;
 import net.fabricmc.loom.util.FileSystemUtil;
-
-import org.objectweb.asm.Label;
-import org.objectweb.asm.MethodVisitor;
 
 public class LvtStripper implements AutoCloseable {
 	public static class Entry {
@@ -176,7 +175,6 @@ public class LvtStripper implements AutoCloseable {
 		}
 	}
 
-
 	public static class LvtStripperClassVisitor extends ClassVisitor {
 		protected LvtStripperClassVisitor(int api, ClassVisitor classVisitor) {
 			super(api, classVisitor);
@@ -209,5 +207,4 @@ public class LvtStripper implements AutoCloseable {
 			}
 		}
 	}
-
 }

@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_9173 net/minecraft/client/network/ClientRegistries
+	FIELD field_1_680 LOGGER Lorg/slf4j/Logger;
 	FIELD field_48767 dynamicRegistries Lnet/minecraft/class_9173$class_9174;
 	FIELD field_48768 tags Lnet/minecraft/class_9173$class_9954;
 	METHOD method_56583 putDynamicRegistry (Lnet/minecraft/class_5321;Ljava/util/List;)V

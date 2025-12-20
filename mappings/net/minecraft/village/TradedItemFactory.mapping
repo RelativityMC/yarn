@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_1_25 net/minecraft/village/TradedItemFactory
+	METHOD <init> (Lnet/minecraft/class_1935;I)V
+		ARG 1 item
+		ARG 2 count
+	METHOD <init> (Lnet/minecraft/class_1935;Lnet/minecraft/class_5658;)V
+		ARG 1 item
+		ARG 2 count
+	METHOD method_1_468 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_469 create (Lnet/minecraft/class_47;I)Lnet/minecraft/class_9306;
+		ARG 1 context
+		ARG 2 bonusCount

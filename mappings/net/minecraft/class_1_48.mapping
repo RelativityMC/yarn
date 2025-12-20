@@ -1,5 +1,0 @@
-CLASS net/minecraft/class_1_48
-	FIELD field_1_681 DATA_FIX_TYPE_DESCRIPTIONS Ljava/util/Map;
-	METHOD method_1_648 (Ljava/util/EnumMap;)V
-		ARG 0 map
-	CLASS class_1_49 Description

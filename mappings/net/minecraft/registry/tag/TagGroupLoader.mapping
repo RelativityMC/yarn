@@ -5,6 +5,10 @@ CLASS net/minecraft/class_3503 net/minecraft/registry/tag/TagGroupLoader
 	METHOD <init> (Lnet/minecraft/class_3503$class_10272;Ljava/lang/String;)V
 		ARG 1 entrySupplier
 		ARG 2 dataType
+	METHOD method_1_361 loadInitial (Lnet/minecraft/class_3300;Lnet/minecraft/class_5321;Lnet/minecraft/class_3503$class_10272;)Ljava/util/Map;
+		ARG 0 resourceManager
+		ARG 1 registryKey
+		ARG 2 entrySupplier
 	METHOD method_18242 buildGroup (Ljava/util/Map;)Ljava/util/Map;
 		ARG 1 tags
 	METHOD method_32840 (Ljava/util/Map;Lnet/minecraft/class_2960;Ljava/util/List;)V
@@ -44,6 +48,7 @@ CLASS net/minecraft/class_3503 net/minecraft/registry/tag/TagGroupLoader
 		ARG 1 registry
 	METHOD method_61309 loadFromNetwork (Lnet/minecraft/class_6864$class_5748;Lnet/minecraft/class_2378;)Ljava/util/Map;
 		ARG 0 tags
+		ARG 1 registry
 	METHOD method_61310 find (Ljava/util/List;Lnet/minecraft/class_5321;)Lnet/minecraft/class_2378$class_10106;
 		ARG 0 pendingTags
 		ARG 1 registryRef
@@ -66,9 +71,13 @@ CLASS net/minecraft/class_3503 net/minecraft/registry/tag/TagGroupLoader
 		METHOD method_51481 (Ljava/util/function/Consumer;Lnet/minecraft/class_3503$class_5145;)V
 			ARG 1 entry
 	CLASS class_10272 EntrySupplier
-		METHOD method_1_7 (Lnet/minecraft/class_2960;Z)Ljava/util/Optional;
+		METHOD method_1_7 get (Lnet/minecraft/class_2960;Z)Ljava/util/Optional;
 			ARG 1 id
 			ARG 2 required
+		METHOD method_1_362 forInitial (Lnet/minecraft/class_5321;Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;)Lnet/minecraft/class_3503$class_10272;
+			ARG 0 registryKey
+			ARG 1 requiredLookup
+			ARG 2 optionalLookup
 		METHOD method_64597 (Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;Lnet/minecraft/class_5321;Lnet/minecraft/class_2960;Z)Ljava/util/Optional;
 			ARG 3 id
 			ARG 4 required

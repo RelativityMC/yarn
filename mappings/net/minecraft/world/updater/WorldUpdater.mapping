@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_1257 net/minecraft/world/updater/WorldUpdater
+	FIELD field_1_208 describer Lnet/minecraft/class_1_48;
+	FIELD field_1_209 worldUpdateProgress Lnet/minecraft/class_1_27;
 	FIELD field_5755 persistentStateManager Lnet/minecraft/class_26;
 	FIELD field_5756 LOGGER Lorg/slf4j/Logger;
 	FIELD field_5757 UPDATE_THREAD_FACTORY Ljava/util/concurrent/ThreadFactory;
@@ -15,14 +17,29 @@ CLASS net/minecraft/class_1257 net/minecraft/world/updater/WorldUpdater
 		ARG 3 registries
 		ARG 4 eraseCache
 		ARG 5 recreateRegionFiles
+	METHOD method_1_479 getContextNbt (Lnet/minecraft/class_2378;Lnet/minecraft/class_5321;)Lnet/minecraft/class_2487;
+		ARG 0 dimensionOptionsRegistry
+		ARG 1 dimension
 	METHOD method_1_481 (Lnet/minecraft/class_1_43$class_1_44;Lnet/minecraft/class_5321;)Lnet/minecraft/class_1_43$class_1_44;
-	METHOD method_1_484 (Lnet/minecraft/class_4284;Lnet/minecraft/class_1_43$class_1_44;)V
+		ARG 0 builder
+		ARG 1 dimension
+	METHOD method_1_482 (ILnet/minecraft/class_1_43$class_1_44;Lnet/minecraft/class_5321;)Lnet/minecraft/class_1_43$class_1_44;
+		ARG 2 builder
+		ARG 3 dimension
+	METHOD method_1_484 upgrade (Lnet/minecraft/class_4284;Lnet/minecraft/class_1_43$class_1_44;)V
 		ARG 1 dataFixType
 		ARG 2 builder
-	METHOD method_1_485 (Lnet/minecraft/class_4284;Lnet/minecraft/class_1_43$class_1_44;Ljava/util/function/BiFunction;)V
+	METHOD method_1_485 upgrade (Lnet/minecraft/class_4284;Lnet/minecraft/class_1_43$class_1_44;Ljava/util/function/BiFunction;)V
 		ARG 1 dataFixType
 		ARG 2 builder
-		ARG 3 worldSpecificUpgradeSettings
+		ARG 3 dimensionSpecificUpgradeSettings
+	METHOD method_1_486 verifyChunkPos (Lnet/minecraft/class_1923;Lnet/minecraft/class_2487;)Z
+		ARG 0 chunkPos
+		ARG 1 tag
+	METHOD method_1_487 eraseCaches (Lnet/minecraft/class_1923;Lnet/minecraft/class_2487;)Z
+		ARG 0 chunkPos
+		ARG 1 tag
+	METHOD method_1_488 upgrade ()V
 	METHOD method_5393 getProgress (Lnet/minecraft/class_5321;)F
 		ARG 1 world
 	METHOD method_5394 getStatus ()Lnet/minecraft/class_2561;

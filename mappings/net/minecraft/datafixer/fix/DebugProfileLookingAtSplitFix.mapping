@@ -1,0 +1,13 @@
+CLASS net/minecraft/class_1_65 net/minecraft/datafixer/fix/DebugProfileLookingAtSplitFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD method_1_712 (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 0 debugProfile
+	METHOD method_1_713 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 remainder
+	METHOD method_1_714 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 custom
+	METHOD method_1_715 (Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/datafixers/util/Pair;
+		ARG 0 entry
+	METHOD method_1_716 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 key

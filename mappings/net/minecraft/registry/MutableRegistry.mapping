@@ -11,3 +11,4 @@ CLASS net/minecraft/class_2385 net/minecraft/registry/MutableRegistry
 		COMMENT {@return whether the registry is empty}
 	METHOD method_46769 createMutableRegistryLookup ()Lnet/minecraft/class_7871;
 	METHOD method_62681 setEntries (Ljava/util/Map;)V
+		ARG 1 entries

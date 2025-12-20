@@ -1,27 +1,42 @@
-CLASS net/minecraft/class_1_27
+CLASS net/minecraft/class_1_27 net/minecraft/world/updater/WorldUpdateProgress
+	FIELD field_1_211 canceled Z
 	FIELD field_1_212 upgradedChunkCount I
+	FIELD field_1_213 dataFixType Lnet/minecraft/class_4284;
 	FIELD field_1_214 done Z
+	FIELD field_1_215 progressByDimension Lit/unimi/dsi/fastutil/objects/Reference2FloatMap;
 	FIELD field_1_216 skippedChunkCount I
 	FIELD field_1_217 status Lnet/minecraft/class_1_27$class_1_29;
 	FIELD field_1_218 totalChunkCount I
+	FIELD field_1_219 readChunkCount I
 	FIELD field_1_220 progress F
 	METHOD method_1_492 addTotalChunkCount (I)V
-	METHOD method_1_493 (I)V
-		ARG 1 a
+		ARG 1 count
+	METHOD method_1_493 addReadChunkCount (I)V
+		ARG 1 count
 	METHOD method_1_494 getUpgradedChunkCount ()I
+	METHOD method_1_495 getDataFixType ()Lnet/minecraft/class_4284;
 	METHOD method_1_496 getProgress (Lnet/minecraft/class_5321;)F
+		ARG 1 dimension
 	METHOD method_1_497 getSkippedChunkCount ()I
 	METHOD method_1_498 getStatus ()Lnet/minecraft/class_1_27$class_1_29;
 	METHOD method_1_499 getTotalChunkCount ()I
+	METHOD method_1_500 getReadChunkCount ()I
 	METHOD method_1_501 getProgress ()F
 	METHOD method_1_502 incrementUpgradedChunkCount ()V
 	METHOD method_1_503 incrementSkippedChunkCount ()V
+	METHOD method_1_504 isCanceled ()Z
 	METHOD method_1_505 isDone ()Z
-	METHOD method_1_506 reset (Lnet/minecraft/class_4284;)V
+	METHOD method_1_506 restart (Lnet/minecraft/class_4284;)V
+		ARG 1 dataFixType
+	METHOD method_1_507 cancel ()V
+	METHOD method_1_508 setProgress (Lnet/minecraft/class_5321;F)V
+		ARG 1 dimension
+		ARG 2 progress
 	METHOD method_1_509 setDone (Z)V
 		ARG 1 done
 	METHOD method_1_510 setStatus (Lnet/minecraft/class_1_27$class_1_29;)V
 		ARG 1 status
 	METHOD method_1_511 setProgress (F)V
+		ARG 1 progress
 	CLASS class_1_28 Dummy
 	CLASS class_1_29 Status

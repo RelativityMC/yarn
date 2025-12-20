@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_6306 net/minecraft/test/TestServer
+	FIELD field_1_237 runCount I
 	FIELD field_33156 LOGGER Lorg/slf4j/Logger;
 	FIELD field_33157 RESULT_STRING_LOG_INTERVAL I
 	FIELD field_33158 batches Ljava/util/List;
@@ -17,6 +18,11 @@ CLASS net/minecraft/class_6306 net/minecraft/test/TestServer
 		ARG 3 dataPackManager
 		ARG 4 saveLoader
 		ARG 5 tests
+		ARG 6 verify
+		ARG 7 runCount
+	METHOD method_1_528 (Lnet/minecraft/class_6880$class_6883;Lnet/minecraft/class_3218;)Ljava/util/stream/Stream;
+		ARG 1 testInstance
+		ARG 2 world
 	METHOD method_36096 runTestBatches (Lnet/minecraft/class_3218;)V
 		ARG 1 world
 	METHOD method_36098 isTesting ()Z
@@ -28,6 +34,7 @@ CLASS net/minecraft/class_6306 net/minecraft/test/TestServer
 		ARG 2 resourcePackManager
 		ARG 3 tests
 		ARG 4 verify
+		ARG 5 runCount
 	METHOD method_43615 (Lnet/minecraft/class_7237$class_6906;Lnet/minecraft/class_1940;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
 		ARG 2 executor
 	METHOD method_66983 (Lnet/minecraft/class_6880$class_6883;)Z

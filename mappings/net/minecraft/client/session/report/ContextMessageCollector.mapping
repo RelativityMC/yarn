@@ -13,7 +13,7 @@ CLASS net/minecraft/class_7757 net/minecraft/client/session/report/ContextMessag
 	METHOD method_45761 tryLink (Lnet/minecraft/class_7471;)Z
 		ARG 1 message
 	CLASS class_7632 IndexedMessageConsumer
-		METHOD method_1_329 (ILnet/minecraft/class_7557$class_7558;)V
+		METHOD method_1_329 accept (ILnet/minecraft/class_7557$class_7558;)V
 			ARG 1 index
 			ARG 2 message
 	CLASS class_7758 ContextMessage

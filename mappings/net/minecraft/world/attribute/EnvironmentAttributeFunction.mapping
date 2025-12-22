@@ -1,13 +1,13 @@
 CLASS net/minecraft/class_12310 net/minecraft/world/attribute/EnvironmentAttributeFunction
 	CLASS class_12311 Constant
-		METHOD method_1_268 (Ljava/lang/Object;)Ljava/lang/Object;
+		METHOD method_1_268 applyConstant (Ljava/lang/Object;)Ljava/lang/Object;
 			ARG 1 value
 	CLASS class_12312 Positional
-		METHOD method_1_269 (Ljava/lang/Object;Lnet/minecraft/class_243;Lnet/minecraft/class_12211;)Ljava/lang/Object;
+		METHOD method_1_269 applyPositional (Ljava/lang/Object;Lnet/minecraft/class_243;Lnet/minecraft/class_12211;)Ljava/lang/Object;
 			ARG 1 value
 			ARG 2 pos
 			ARG 3 weightedAttributeList
 	CLASS class_12313 TimeBased
-		METHOD method_1_270 (Ljava/lang/Object;I)Ljava/lang/Object;
+		METHOD method_1_270 applyTimeBased (Ljava/lang/Object;I)Ljava/lang/Object;
 			ARG 1 value
 			ARG 2 time

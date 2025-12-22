@@ -10,5 +10,9 @@ CLASS net/minecraft/class_1_52 net/minecraft/client/render/LightmapTextureManage
 		ARG 2 client
 	METHOD method_1_662 calculateDarknessScale (Lnet/minecraft/class_1309;FF)F
 		ARG 1 entity
+		ARG 2 factor
+		ARG 3 tickProgress
 	METHOD method_1_663 prepareRender (Lnet/minecraft/class_1_50;F)V
+		ARG 1 state
+		ARG 2 tickProgress
 	METHOD method_1_664 tick ()V

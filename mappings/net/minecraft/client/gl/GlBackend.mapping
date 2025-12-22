@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_10865 net/minecraft/client/gl/GlBackend
+	FIELD field_1_23 contextId J
 	FIELD field_57853 LOGGER Lorg/slf4j/Logger;
 	FIELD field_57854 commandEncoder Lcom/mojang/blaze3d/systems/CommandEncoder;
 	FIELD field_57855 glDebug Lnet/minecraft/class_1008;
@@ -22,6 +23,7 @@ CLASS net/minecraft/class_10865 net/minecraft/client/gl/GlBackend
 	METHOD <init> (JLnet/minecraft/class_12289;Lnet/minecraft/class_1_16;)V
 		ARG 1 contextId
 		ARG 3 defaultShaderSourceGetter
+		ARG 4 debugOptions
 	METHOD method_68377 getDebugLabelManager ()Lnet/minecraft/class_10861;
 	METHOD method_68378 compileShader (Lnet/minecraft/class_2960;Lcom/mojang/blaze3d/shaders/ShaderType;Lnet/minecraft/class_10149;Lnet/minecraft/class_12289;)Lnet/minecraft/class_10141;
 		ARG 1 id

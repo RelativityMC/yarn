@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_9041 net/minecraft/client/resource/server/ReloadScheduler
-	METHOD method_1_258 (Lnet/minecraft/class_9041$class_9042;)V
+	METHOD method_1_258 scheduleReload (Lnet/minecraft/class_9041$class_9042;)V
 		ARG 1 context
 	CLASS class_9042 ReloadContext
 		METHOD method_55549 onSuccess ()V

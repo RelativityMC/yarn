@@ -1,4 +1,10 @@
 CLASS net/minecraft/class_694 net/minecraft/client/particle/LavaEmberParticle
+	METHOD <init> (Lnet/minecraft/class_638;DDDLnet/minecraft/class_1058;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 sprite
 	CLASS class_695 Factory
 		FIELD field_17818 spriteProvider Lnet/minecraft/class_4002;
 		METHOD <init> (Lnet/minecraft/class_4002;)V

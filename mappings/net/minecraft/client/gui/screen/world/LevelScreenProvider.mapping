@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_5293 net/minecraft/client/gui/screen/world/LevelScreenProvider
 	FIELD field_37912 WORLD_PRESET_TO_SCREEN_PROVIDER Ljava/util/Map;
-	METHOD method_1_297 (Lnet/minecraft/class_525;Lnet/minecraft/class_7193;)Lnet/minecraft/class_437;
+	METHOD method_1_297 createEditScreen (Lnet/minecraft/class_525;Lnet/minecraft/class_7193;)Lnet/minecraft/class_437;
 		ARG 1 parent
 		ARG 2 generatorOptionsHolder
 	METHOD method_41856 createModifier (Lnet/minecraft/class_3232;)Lnet/minecraft/class_7193$class_7195;

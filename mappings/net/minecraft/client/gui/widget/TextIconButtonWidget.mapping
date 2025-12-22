@@ -56,4 +56,24 @@ CLASS net/minecraft/class_8662 net/minecraft/client/gui/widget/TextIconButtonWid
 			ARG 2 width
 			ARG 3 height
 	CLASS class_8664 IconOnly
+		METHOD <init> (IILnet/minecraft/class_2561;IILnet/minecraft/class_8666;Lnet/minecraft/class_4185$class_4241;Lnet/minecraft/class_2561;Lnet/minecraft/class_4185$class_7841;)V
+			ARG 1 width
+			ARG 2 height
+			ARG 3 message
+			ARG 4 textureWidth
+			ARG 5 textureHeight
+			ARG 6 textures
+			ARG 7 onPress
+			ARG 8 tooltip
+			ARG 9 narrationSupplier
 	CLASS class_8665 WithText
+		METHOD <init> (IILnet/minecraft/class_2561;IILnet/minecraft/class_8666;Lnet/minecraft/class_4185$class_4241;Lnet/minecraft/class_2561;Lnet/minecraft/class_4185$class_7841;)V
+			ARG 1 width
+			ARG 2 height
+			ARG 3 message
+			ARG 4 textureWidth
+			ARG 5 textureHeight
+			ARG 6 textures
+			ARG 7 onPress
+			ARG 8 tooltip
+			ARG 9 narrationSupplier

@@ -3,6 +3,17 @@ CLASS net/minecraft/class_1887 net/minecraft/enchantment/Enchantment
 	FIELD field_51644 ENTRY_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_51949 MAX_LEVEL I
 	FIELD field_51950 ENTRY_PACKET_CODEC Lnet/minecraft/class_9139;
+	METHOD method_1_565 (Ljava/util/List;Lnet/minecraft/class_47;Lnet/minecraft/class_1887$class_1_34;)V
+		ARG 0 effects
+		ARG 1 context
+		ARG 2 applier
+	METHOD method_1_566 (Ljava/util/List;Lnet/minecraft/class_47;Lorg/apache/commons/lang3/mutable/MutableFloat;Lnet/minecraft/class_1887$class_1_33;)V
+		ARG 0 effects
+		ARG 1 context
+		ARG 2 value
+	METHOD method_1_568 (ILnet/minecraft/class_1297;Lnet/minecraft/class_9723;F)F
+		ARG 2 valueEffect
+		ARG 3 value
 	METHOD method_8179 getName (Lnet/minecraft/class_6880;I)Lnet/minecraft/class_2561;
 		ARG 0 enchantment
 		ARG 1 level
@@ -74,6 +85,7 @@ CLASS net/minecraft/class_1887 net/minecraft/enchantment/Enchantment
 		ARG 1 level
 		ARG 2 stack
 	METHOD method_60018 modifyDamageProtection (Lnet/minecraft/class_3218;ILnet/minecraft/class_1799;Lnet/minecraft/class_1297;Lnet/minecraft/class_1282;Lorg/apache/commons/lang3/mutable/MutableFloat;)V
+		ARG 1 world
 		ARG 2 level
 		ARG 3 stack
 		ARG 4 user
@@ -272,6 +284,17 @@ CLASS net/minecraft/class_1887 net/minecraft/enchantment/Enchantment
 		ARG 4 attacker
 	METHOD method_75252 (Lnet/minecraft/class_3218;ILnet/minecraft/class_9699;Lnet/minecraft/class_1297;Lnet/minecraft/class_9721;)V
 		ARG 4 effect
+	CLASS class_1_33 ValueAdjuster
+		METHOD method_1_571 adjust (Ljava/lang/Object;F)F
+			ARG 1 effect
+			ARG 2 value
+		METHOD method_1_572 adjustment (Lorg/apache/commons/lang3/mutable/MutableFloat;)Lnet/minecraft/class_1887$class_1_34;
+			ARG 1 value
+		METHOD method_1_573 (Lorg/apache/commons/lang3/mutable/MutableFloat;Ljava/lang/Object;)V
+			ARG 2 effect
+	CLASS class_1_34 EffectApplier
+		METHOD method_1_574 apply (Ljava/lang/Object;)V
+			ARG 1 effect
 	CLASS class_9426 Cost
 		FIELD field_51649 CODEC Lcom/mojang/serialization/Codec;
 		METHOD method_58447 forLevel (I)I

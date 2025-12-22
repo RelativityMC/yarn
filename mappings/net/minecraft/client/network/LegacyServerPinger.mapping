@@ -14,7 +14,7 @@ CLASS net/minecraft/class_8676 net/minecraft/client/network/LegacyServerPinger
 		ARG 1 context
 		ARG 2 throwable
 	CLASS class_8677 ResponseHandler
-		METHOD method_1_216 (ILjava/lang/String;Ljava/lang/String;II)V
+		METHOD method_1_216 handleResponse (ILjava/lang/String;Ljava/lang/String;II)V
 			ARG 1 protocolVersion
 			ARG 2 version
 			ARG 3 label

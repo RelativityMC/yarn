@@ -65,7 +65,7 @@ CLASS net/minecraft/class_3940 net/minecraft/client/particle/BillboardParticle
 	CLASS class_8981 Rotator
 		FIELD field_47457 ALL_AXIS Lnet/minecraft/class_3940$class_8981;
 		FIELD field_47458 Y_AND_W_ONLY Lnet/minecraft/class_3940$class_8981;
-		METHOD method_1_184 (Lorg/joml/Quaternionf;Lnet/minecraft/class_4184;F)V
+		METHOD method_1_184 setRotation (Lorg/joml/Quaternionf;Lnet/minecraft/class_4184;F)V
 			ARG 1 quaternion
 			ARG 2 camera
 			ARG 3 tickProgress

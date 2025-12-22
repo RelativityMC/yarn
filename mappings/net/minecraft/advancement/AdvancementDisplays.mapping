@@ -15,7 +15,7 @@ CLASS net/minecraft/class_8005 net/minecraft/advancement/AdvancementDisplays
 	METHOD method_48033 shouldDisplay (Lit/unimi/dsi/fastutil/Stack;)Z
 		ARG 0 statuses
 	CLASS class_8006 ResultConsumer
-		METHOD method_1_311 (Lnet/minecraft/class_8781;Z)V
+		METHOD method_1_311 accept (Lnet/minecraft/class_8781;Z)V
 			ARG 1 advancement
 			ARG 2 shouldDisplay
 	CLASS class_8007 Status

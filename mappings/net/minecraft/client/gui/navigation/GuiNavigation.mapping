@@ -2,5 +2,9 @@ CLASS net/minecraft/class_8023 net/minecraft/client/gui/navigation/GuiNavigation
 	COMMENT Represents a directional navigation initiated by keyboard.
 	METHOD method_48231 getDirection ()Lnet/minecraft/class_8028;
 	CLASS class_8024 Arrow
+		METHOD <init> (Lnet/minecraft/class_8028;)V
+			ARG 1 direction
+		METHOD method_1_654 withPreviousFocus (Lnet/minecraft/class_8030;)Lnet/minecraft/class_8023$class_8024;
+			ARG 1 previousFocus
 	CLASS class_8025 Down
 	CLASS class_8026 Tab

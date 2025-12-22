@@ -267,10 +267,10 @@ CLASS net/minecraft/class_7172 net/minecraft/client/option/SimpleOption
 		COMMENT
 		COMMENT @see <a href="SimpleOption.html#callbacks">Callbacks</a>
 	CLASS class_7277 TooltipFactory
-		METHOD method_1_33 (Ljava/lang/Object;)Lnet/minecraft/class_7919;
+		METHOD method_1_33 apply (Ljava/lang/Object;)Lnet/minecraft/class_7919;
 			ARG 1 value
 	CLASS class_7303 ValueTextGetter
-		METHOD method_1_31 (Lnet/minecraft/class_2561;Ljava/lang/Object;)Lnet/minecraft/class_2561;
+		METHOD method_1_31 toString (Lnet/minecraft/class_2561;Ljava/lang/Object;)Lnet/minecraft/class_2561;
 			ARG 1 optionText
 			ARG 2 value
 	CLASS class_7304 MaxSuppliableIntCallbacks
@@ -288,7 +288,7 @@ CLASS net/minecraft/class_7172 net/minecraft/client/option/SimpleOption
 			ARG 4 button
 			ARG 5 value
 		CLASS class_7274 ValueSetter
-			METHOD method_1_32 (Lnet/minecraft/class_7172;Ljava/lang/Object;)V
+			METHOD method_1_32 set (Lnet/minecraft/class_7172;Ljava/lang/Object;)V
 				ARG 1 option
 				ARG 2 value
 	CLASS class_7306 TypeChangeableCallbacks

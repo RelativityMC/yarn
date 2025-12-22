@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_9401 net/minecraft/util/packrat/Suggestable
-	METHOD method_1_251 (Lnet/minecraft/class_9393;)Ljava/util/stream/Stream;
+	METHOD method_1_251 getSuggestions (Lnet/minecraft/class_9393;)Ljava/util/stream/Stream;
 		ARG 1 state
 	METHOD method_58329 empty ()Lnet/minecraft/class_9401;
 	METHOD method_58330 (Lnet/minecraft/class_9393;)Ljava/util/stream/Stream;

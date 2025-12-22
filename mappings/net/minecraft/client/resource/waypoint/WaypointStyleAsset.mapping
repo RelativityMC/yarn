@@ -3,6 +3,7 @@ CLASS net/minecraft/class_11326 net/minecraft/client/resource/waypoint/WaypointS
 	FIELD field_60322 DEFAULT_FAR_DISTANCE I
 	FIELD field_60323 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_60324 DISTANCE_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_62050 PATH_PREFIX Ljava/lang/String;
 	METHOD <init> (IILjava/util/List;)V
 		ARG 1 nearDistance
 		ARG 2 farDistance

@@ -107,6 +107,7 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 		ARG 4 mouseX
 		ARG 5 mouseY
 		ARG 6 interactable
+		ARG 7 shouldInsert
 	CLASS 1
 		FIELD field_63866 styledCurrentLine Z
 	CLASS class_7731 RemovalQueuedMessage
@@ -119,7 +120,7 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 			ARG 2 messageHistory
 			ARG 3 removalQueue
 	CLASS class_11511 LineConsumer
-		METHOD method_1_190 (Lnet/minecraft/class_303$class_7590;IF)V
+		METHOD method_1_190 accept (Lnet/minecraft/class_303$class_7590;IF)V
 			ARG 1 line
 			ARG 2 y1
 			ARG 3 opacity
@@ -140,9 +141,9 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 	CLASS class_11733 Draft
 	CLASS class_12232 OpacityRule
 		FIELD field_63874 CONSTANT Lnet/minecraft/class_338$class_12232;
-		METHOD method_1_188 (Lnet/minecraft/class_303$class_7590;)F
+		METHOD method_1_188 calculate (Lnet/minecraft/class_303$class_7590;)F
 			ARG 1 line
-		METHOD method_1_189 (I)Lnet/minecraft/class_338$class_12232;
+		METHOD method_1_189 timeBased (I)Lnet/minecraft/class_338$class_12232;
 			ARG 0 currentTick
 		METHOD method_75805 (ILnet/minecraft/class_303$class_7590;)F
 			ARG 1 line
@@ -187,11 +188,13 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 		FIELD field_63881 mouseY I
 		FIELD field_63882 untransformedOffset Lorg/joml/Vector2f;
 		FIELD field_63883 style Lnet/minecraft/class_2583;
+		FIELD field_64672 shouldInsert Z
 		METHOD <init> (Lnet/minecraft/class_332;Lnet/minecraft/class_327;IIZ)V
 			ARG 1 context
 			ARG 2 textRenderer
 			ARG 3 mouseX
 			ARG 4 mouseY
+			ARG 5 shouldInsert
 		METHOD accept (Ljava/lang/Object;)V
 			ARG 1 style
 		METHOD method_75812 calculateUntransformedOffset ()V

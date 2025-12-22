@@ -1,10 +1,21 @@
 CLASS net/minecraft/class_7528 net/minecraft/client/gui/widget/ScrollableWidget
 	COMMENT A widget that can be focused and vertically scrolled.
+	FIELD field_1_678 scrollbar Lnet/minecraft/class_7528$class_1_47;
 	FIELD field_39497 scrollY D
 	FIELD field_39498 scrollbarDragged Z
 	FIELD field_45906 SCROLLER_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_55258 SCROLLBAR_WIDTH I
 	FIELD field_55259 SCROLLER_BACKGROUND_TEXTURE Lnet/minecraft/class_2960;
+	METHOD <init> (IIIILnet/minecraft/class_2561;Lnet/minecraft/class_7528$class_1_47;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+		ARG 5 message
+		ARG 6 scrollbar
+	METHOD method_1_642 create (I)Lnet/minecraft/class_7528$class_1_47;
+		ARG 0 scrollRate
+	METHOD method_1_643 getScrollbarWidth ()I
 	METHOD method_44382 setScrollY (D)V
 		ARG 1 scrollY
 	METHOD method_44387 getScrollY ()D
@@ -26,3 +37,4 @@ CLASS net/minecraft/class_7528 net/minecraft/client/gui/widget/ScrollableWidget
 	METHOD method_74038 isInScrollbar (DD)Z
 		ARG 1 mouseX
 		ARG 3 mouseY
+	CLASS class_1_47 Scrollbar

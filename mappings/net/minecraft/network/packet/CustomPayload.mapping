@@ -18,7 +18,7 @@ CLASS net/minecraft/class_8710 net/minecraft/network/packet/CustomPayload
 			ARG 2 id
 			ARG 3 payload
 	CLASS class_9153 CodecFactory
-		METHOD method_1_310 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_9139;
+		METHOD method_1_310 create (Lnet/minecraft/class_2960;)Lnet/minecraft/class_9139;
 			ARG 1 id
 	CLASS class_9154 Id
 	CLASS class_9155 Type

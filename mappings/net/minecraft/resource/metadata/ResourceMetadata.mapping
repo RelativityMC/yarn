@@ -1,6 +1,14 @@
 CLASS net/minecraft/class_7368 net/minecraft/resource/metadata/ResourceMetadata
 	FIELD field_38688 NONE Lnet/minecraft/class_7368;
 	FIELD field_40056 NONE_SUPPLIER Lnet/minecraft/class_7367;
+	METHOD method_1_639 lookup (Lnet/minecraft/class_7677;Ljava/lang/Object;)Lnet/minecraft/class_7368;
+		ARG 0 serializer
+		ARG 1 value
+	METHOD method_1_640 lookup (Lnet/minecraft/class_7677;Ljava/lang/Object;Lnet/minecraft/class_7677;Ljava/lang/Object;)Lnet/minecraft/class_7368;
+		ARG 0 serializer1
+		ARG 1 value1
+		ARG 2 serializer2
+		ARG 3 value2
 	METHOD method_43041 decode (Lnet/minecraft/class_7677;)Ljava/util/Optional;
 		ARG 1 serializer
 	METHOD method_43042 create (Ljava/io/InputStream;)Lnet/minecraft/class_7368;
@@ -9,3 +17,7 @@ CLASS net/minecraft/class_7368 net/minecraft/resource/metadata/ResourceMetadata
 		ARG 1 serializers
 	METHOD method_72365 decodeAsValue (Lnet/minecraft/class_7677;)Ljava/util/Optional;
 		ARG 1 additionalMetadata
+	CLASS class_1_46 Lookup
+		FIELD field_1_674 metadataBySerializer Ljava/util/Map;
+		METHOD <init> (Ljava/util/Map;)V
+			ARG 1 metadataBySerializer

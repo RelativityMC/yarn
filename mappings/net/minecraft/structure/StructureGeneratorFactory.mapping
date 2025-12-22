@@ -1,11 +1,15 @@
 CLASS net/minecraft/class_6834 net/minecraft/structure/StructureGeneratorFactory
-	METHOD method_1_352 (Lnet/minecraft/class_2902$class_2903;)Ljava/util/function/Predicate;
+	METHOD method_1_352 checkForBiomeOnTop (Lnet/minecraft/class_2902$class_2903;)Ljava/util/function/Predicate;
 		ARG 0 heightmapType
-	METHOD method_1_353 (Lnet/minecraft/class_6834$class_6835;)Ljava/util/Optional;
+	METHOD method_1_353 createGenerator (Lnet/minecraft/class_6834$class_6835;)Ljava/util/Optional;
 		ARG 1 context
-	METHOD method_1_354 (Ljava/util/function/Predicate;Lnet/minecraft/class_6622;)Lnet/minecraft/class_6834;
+	METHOD method_1_354 simple (Ljava/util/function/Predicate;Lnet/minecraft/class_6622;)Lnet/minecraft/class_6834;
 		ARG 0 predicate
 		ARG 1 generator
+	METHOD method_39844 (Lnet/minecraft/class_2902$class_2903;Lnet/minecraft/class_6834$class_6835;)Z
+		ARG 1 context
+	METHOD method_39845 (Ljava/util/function/Predicate;Ljava/util/Optional;Lnet/minecraft/class_6834$class_6835;)Ljava/util/Optional;
+		ARG 2 context
 	CLASS class_6835 Context
 		FIELD comp_311 world Lnet/minecraft/class_5539;
 		FIELD comp_314 registryManager Lnet/minecraft/class_5455;

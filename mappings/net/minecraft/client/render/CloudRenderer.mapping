@@ -18,6 +18,9 @@ CLASS net/minecraft/class_9955 net/minecraft/client/render/CloudRenderer
 		ARG 1 color
 		ARG 2 mode
 		ARG 3 cloudHeight
+		ARG 4 cameraPos
+		ARG 5 time
+		ARG 7 tickProgress
 	METHOD method_62169 packCloudCell (IZZZZ)J
 		ARG 0 color
 		ARG 1 borderNorth
@@ -25,14 +28,19 @@ CLASS net/minecraft/class_9955 net/minecraft/client/render/CloudRenderer
 		ARG 3 borderSouth
 		ARG 4 borderWest
 	METHOD method_62172 buildCloudCellFast (Ljava/nio/ByteBuffer;II)V
-		ARG 2 color
-		ARG 3 x
+		ARG 2 x
+		ARG 3 z
 	METHOD method_62174 buildCloudCellFancy (Lnet/minecraft/class_9955$class_9956;Ljava/nio/ByteBuffer;IIJ)V
 		ARG 1 viewMode
+		ARG 3 x
+		ARG 4 z
+		ARG 5 packedCell
 	METHOD method_62175 buildCloudCells (Lnet/minecraft/class_9955$class_9956;Ljava/nio/ByteBuffer;IIZI)V
 		ARG 1 viewMode
 		ARG 3 x
 		ARG 4 z
+		ARG 5 fancy
+		ARG 6 renderRadiusCells
 	METHOD method_62178 hasBorderNorth (J)Z
 		ARG 0 packed
 	METHOD method_62179 hasBorderEast (J)Z
@@ -41,8 +49,23 @@ CLASS net/minecraft/class_9955 net/minecraft/client/render/CloudRenderer
 		ARG 0 packed
 	METHOD method_62181 hasBorderWest (J)Z
 		ARG 0 packed
+	METHOD method_71098 buildCloudFace (Ljava/nio/ByteBuffer;IILnet/minecraft/class_2350;I)V
+		ARG 2 x
+		ARG 3 z
+		ARG 4 direction
+		ARG 5 extraFlags
 	METHOD method_71099 rotate ()V
 	METHOD method_71301 calcCloudBufferSize (I)I
 		ARG 0 cloudRange
+	METHOD method_72155 buildCloudCell (Lnet/minecraft/class_9955$class_9956;Ljava/nio/ByteBuffer;IIZIIII[J)V
+		ARG 1 viewMode
+		ARG 3 centerX
+		ARG 4 centerZ
+		ARG 5 fancy
+		ARG 6 x
+		ARG 7 width
+		ARG 8 z
+		ARG 9 height
+		ARG 10 cells
 	CLASS class_9956 ViewMode
 	CLASS class_9957 CloudCells

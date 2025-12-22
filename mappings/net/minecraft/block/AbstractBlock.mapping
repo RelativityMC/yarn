@@ -1342,17 +1342,17 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 				ARG 0 direction
 				ARG 1 shapeType
 	CLASS class_4972 TypedContextPredicate
-		METHOD method_1_242 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Ljava/lang/Object;)Z
+		METHOD method_1_242 test (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Ljava/lang/Object;)Z
 			ARG 1 state
 			ARG 2 world
 			ARG 3 pos
 			ARG 4 type
 	CLASS class_4973 ContextPredicate
-		METHOD method_1_243 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z
+		METHOD method_1_243 test (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z
 			ARG 1 state
 			ARG 2 world
 			ARG 3 pos
 	CLASS class_8176 Offsetter
-		METHOD method_1_241 (Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;)Lnet/minecraft/class_243;
+		METHOD method_1_241 evaluate (Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;)Lnet/minecraft/class_243;
 			ARG 1 state
 			ARG 2 pos

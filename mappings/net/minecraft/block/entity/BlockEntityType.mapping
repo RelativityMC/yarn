@@ -56,6 +56,6 @@ CLASS net/minecraft/class_2591 net/minecraft/block/entity/BlockEntityType
 		COMMENT instance. This is usually not implemented directly; the block entity class's
 		COMMENT constructor (such as {@code MyBlockEntity::MyBlockEntity}) can be used as the
 		COMMENT implementation.
-		METHOD method_1_262 (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Lnet/minecraft/class_2586;
+		METHOD method_1_262 create (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Lnet/minecraft/class_2586;
 			ARG 1 pos
 			ARG 2 state

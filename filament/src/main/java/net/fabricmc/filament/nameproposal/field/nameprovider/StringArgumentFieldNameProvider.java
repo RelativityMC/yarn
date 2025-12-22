@@ -43,7 +43,7 @@ public class StringArgumentFieldNameProvider implements FieldNameProvider {
 			s = s.substring(s.indexOf(':') + 1);
 		}
 
-		if (s.contains("/")) {
+		if (s.contains("/") && !field.owner().equals("net/minecraft/class_1_31")) { // rotation of names don't apply to villager trades since 26.1-snapshot-1
 			int separator = s.indexOf('/');
 			String sFirst = s.substring(0, separator);
 			String sLast;

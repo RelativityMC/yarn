@@ -1,4 +1,10 @@
 CLASS com/mojang/blaze3d/vertex/VertexFormat
+	METHOD <init> (Ljava/util/List;Ljava/util/List;Lit/unimi/dsi/fastutil/ints/IntList;I)V
+		ARG 1 elements
+		ARG 2 names
+		ARG 4 vertexSize
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other
 	METHOD lambda$new$0 (II)I
 		ARG 0 a
 		ARG 1 b
@@ -8,6 +14,7 @@ CLASS com/mojang/blaze3d/vertex/VertexFormat
 		ARG 1 data
 	METHOD uploadToBuffer (Lcom/mojang/blaze3d/buffers/GpuBuffer;Ljava/nio/ByteBuffer;ILjava/util/function/Supplier;)Lcom/mojang/blaze3d/buffers/GpuBuffer;
 		ARG 1 data
+		ARG 2 usage
 		ARG 3 labelGetter
 	CLASS Builder
 		METHOD add (Ljava/lang/String;Lcom/mojang/blaze3d/vertex/VertexFormatElement;)Lcom/mojang/blaze3d/vertex/VertexFormat$Builder;

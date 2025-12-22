@@ -27,6 +27,8 @@ CLASS net/minecraft/class_778 net/minecraft/client/render/block/BlockModelRender
 		ARG 0 world
 		ARG 1 state
 		ARG 2 pos
+		ARG 3 quad
+		ARG 4 cache
 	METHOD method_3365 renderQuads (Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;FFFLjava/util/List;II)V
 		ARG 0 entry
 		ARG 1 vertexConsumer
@@ -49,6 +51,7 @@ CLASS net/minecraft/class_778 net/minecraft/client/render/block/BlockModelRender
 		ARG 1 world
 		ARG 2 state
 		ARG 3 pos
+		ARG 4 light
 		ARG 5 overlay
 		ARG 6 useWorldLight
 		ARG 7 matrices
@@ -102,11 +105,13 @@ CLASS net/minecraft/class_778 net/minecraft/client/render/block/BlockModelRender
 		METHOD method_3383 ([Lnet/minecraft/class_778$class_779;)V
 			ARG 0 values
 	CLASS class_780 AmbientOcclusionCalculator
+		FIELD field_58158 weightsByNeighborOrientation [F
 		METHOD method_3388 apply (Lnet/minecraft/class_1920;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;Z)V
 			ARG 1 world
 			ARG 2 state
 			ARG 3 pos
-			ARG 4 direction
+			ARG 4 face
+			ARG 5 shade
 	CLASS class_781 Translation
 		FIELD field_4198 thirdCorner I
 		FIELD field_4201 secondCorner I
@@ -153,6 +158,8 @@ CLASS net/minecraft/class_778 net/minecraft/client/render/block/BlockModelRender
 				ARG 1 newN
 	CLASS class_10931 LightmapCache
 		FIELD field_58159 pos Lnet/minecraft/class_2338$class_2339;
+		FIELD field_58160 isExtremalFace Z
+		FIELD field_58161 isPartialFace Z
 		FIELD field_58162 fs [F
 		FIELD field_58163 is [I
 		FIELD field_58164 lastTintIndex I

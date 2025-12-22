@@ -1,3 +1,4 @@
 CLASS net/minecraft/class_5670 net/minecraft/loot/provider/score/LootScoreProvider
+	METHOD method_1_775 getCodec ()Lcom/mojang/serialization/MapCodec;
 	METHOD method_55379 getScoreHolder (Lnet/minecraft/class_47;)Lnet/minecraft/class_9015;
 		ARG 1 context

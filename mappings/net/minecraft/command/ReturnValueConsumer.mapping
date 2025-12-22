@@ -1,13 +1,14 @@
 CLASS net/minecraft/class_8935 net/minecraft/command/ReturnValueConsumer
 	FIELD field_47158 EMPTY Lnet/minecraft/class_8935;
-	METHOD method_1_122 (Lnet/minecraft/class_8935;Lnet/minecraft/class_8935;)Lnet/minecraft/class_8935;
+	METHOD method_1_122 chain (Lnet/minecraft/class_8935;Lnet/minecraft/class_8935;)Lnet/minecraft/class_8935;
 		ARG 0 a
 		ARG 1 b
-	METHOD method_1_124 (ZI)V
+	METHOD method_1_123 onFail ()V
+	METHOD method_1_124 onResult (ZI)V
 		ARG 1 successful
 		ARG 2 returnValue
-	METHOD method_1_125 (I)V
-		ARG 1 successful
+	METHOD method_1_125 onSuccess (I)V
+		ARG 1 value
 	METHOD method_54880 (Lnet/minecraft/class_8935;Lnet/minecraft/class_8935;ZI)V
 		ARG 2 successful
 		ARG 3 returnValue

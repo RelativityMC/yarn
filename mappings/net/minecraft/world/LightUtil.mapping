@@ -1,11 +1,60 @@
 CLASS net/minecraft/class_1_5 net/minecraft/world/LightUtil
-	FIELD field_1_26 MAX_EMISSION I
+	COMMENT Contains helper methods for manipulating lightmap coordinates.
+	COMMENT <p>
+	COMMENT Lightmap coordinates are stored as two 16-bit integers packed in an {@code int}.
+	COMMENT The lower 16 bits store the block light level, while the upper 16 bits store
+	COMMENT the sky light level. Only the lower 8 bits of each component are used; the
+	COMMENT upper 8 bits are always set to zero. Since the lightmap texture is 16×16,
+	COMMENT this allows for a resolution of 1/16 of a texel on each axis.
+	COMMENT <p>
+	COMMENT The methods suffixed with {@code 44} deal with block and sky light levels
+	COMMENT expressed as “4.4” fixed point, where bits 4 to 7 describe the integral
+	COMMENT light level and bits 0 to 3 correspond to the fractional part. The
+	COMMENT corresponding methods without the {@code 44} suffix take or return the
+	COMMENT integral parts of these, setting the fractional part to zero or ignoring
+	COMMENT them.
+	FIELD field_1_24 FULL I
+	FIELD field_1_25 SKY I
+	FIELD field_1_26 MAX_COMPONENT I
+	FIELD field_1_27 NONE I
+	METHOD method_1_386 increaseBlockLight (IF)I
+		ARG 0 packed
+		ARG 1 fraction
 	METHOD method_1_387 getBlock (I)I
+		ARG 0 packed
 	METHOD method_1_388 addEmission (II)I
+		ARG 0 light
+		ARG 1 emission
 	METHOD method_1_389 max (II)I
+		ARG 0 light1
+		ARG 1 light2
 	METHOD method_1_390 pack (II)I
+		ARG 0 block
+		ARG 1 sky
 	METHOD method_1_391 getSky (I)I
-	METHOD method_1_393 getBlockA (I)I
-	METHOD method_1_394 packA (II)I
-	METHOD method_1_395 getSkyA (I)I
-	METHOD method_1_397 withBlockA (II)I
+		ARG 0 packed
+	METHOD method_1_392 blend (IIII)I
+		COMMENT This method is used in the ambient occlusion algorithm.
+		ARG 0 neighbor1
+		ARG 1 neighbor2
+		ARG 2 neighbor3
+		ARG 3 central
+	METHOD method_1_393 getBlock44 (I)I
+		ARG 0 packed
+	METHOD method_1_394 pack44 (II)I
+		ARG 0 block44
+		ARG 1 sky44
+	METHOD method_1_395 getSky44 (I)I
+		ARG 0 packed
+	METHOD method_1_396 weightedAverage (IIIIFFFF)I
+		ARG 0 a
+		ARG 1 b
+		ARG 2 c
+		ARG 3 d
+		ARG 4 wa
+		ARG 5 wb
+		ARG 6 wc
+		ARG 7 wd
+	METHOD method_1_397 withBlock (II)I
+		ARG 0 packed
+		ARG 1 block

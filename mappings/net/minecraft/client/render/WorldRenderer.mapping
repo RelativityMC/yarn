@@ -271,7 +271,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_76647 collectGizmos ()V
 	CLASS class_10948 BrightnessGetter
 		FIELD field_58200 DEFAULT Lnet/minecraft/class_761$class_10948;
-		METHOD method_1_114 (Lnet/minecraft/class_1920;Lnet/minecraft/class_2338;)I
+		METHOD method_1_114 packedBrightness (Lnet/minecraft/class_1920;Lnet/minecraft/class_2338;)I
 			ARG 1 world
 			ARG 2 pos
 		METHOD method_68890 (Lnet/minecraft/class_1920;Lnet/minecraft/class_2338;)I

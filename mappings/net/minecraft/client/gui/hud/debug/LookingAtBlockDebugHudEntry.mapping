@@ -2,6 +2,7 @@ CLASS net/minecraft/class_1_55 net/minecraft/client/gui/hud/debug/LookingAtBlock
 	FIELD field_1_712 LOOKING_AT_BLOCK Lnet/minecraft/class_2960;
 	FIELD field_1_713 LOOKING_AT_FLUID Lnet/minecraft/class_2960;
 	METHOD method_1_690 addHashPrefixedEntryTags (Ljava/util/List;Lnet/minecraft/class_1_2;)V
+		ARG 0 linesOut
 	METHOD method_1_691 addLines (Ljava/util/List;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)V
 		ARG 1 linesOut
 		ARG 2 world

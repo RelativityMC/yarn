@@ -62,7 +62,7 @@ CLASS net/minecraft/class_703 net/minecraft/client/particle/Particle
 		COMMENT To directly update the current bounding box, visit {@link Particle#setBoundingBox(Box)};
 	METHOD method_3067 setBoundingBox (Lnet/minecraft/class_238;)V
 		ARG 1 boundingBox
-	METHOD method_3068 getBrightness (F)I
+	METHOD method_3068 getLight (F)I
 		COMMENT {@return the packed light level this particle should render at}
 		COMMENT
 		COMMENT @see net.minecraft.client.render.LightmapTextureManager

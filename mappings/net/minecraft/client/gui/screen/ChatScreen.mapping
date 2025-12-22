@@ -36,7 +36,7 @@ CLASS net/minecraft/class_408 net/minecraft/client/gui/screen/ChatScreen
 		ARG 2 insert
 	METHOD method_76757 shouldInsert ()Z
 	CLASS class_11738 Factory
-		METHOD method_1_113 (Ljava/lang/String;Z)Lnet/minecraft/class_408;
+		METHOD method_1_113 create (Ljava/lang/String;Z)Lnet/minecraft/class_408;
 			ARG 1 string
 			ARG 2 draft
 	CLASS class_11739 CloseReason

@@ -13,7 +13,7 @@ CLASS net/minecraft/class_3929 net/minecraft/client/gui/screen/ingame/HandledScr
 		ARG 0 type
 		ARG 1 provider
 	CLASS class_3930 Provider
-		METHOD method_1_121 (Lnet/minecraft/class_1703;Lnet/minecraft/class_1661;Lnet/minecraft/class_2561;)Lnet/minecraft/class_437;
+		METHOD method_1_121 create (Lnet/minecraft/class_1703;Lnet/minecraft/class_1661;Lnet/minecraft/class_2561;)Lnet/minecraft/class_437;
 			ARG 1 handler
 			ARG 2 playerInventory
 			ARG 3 title

@@ -1,9 +1,24 @@
 CLASS net/minecraft/class_3988 net/minecraft/entity/passive/MerchantEntity
+	FIELD field_1_696 LOGGER Lorg/slf4j/Logger;
 	FIELD field_17721 offers Lnet/minecraft/class_1916;
 	FIELD field_17722 customer Lnet/minecraft/class_1657;
 	FIELD field_17723 inventory Lnet/minecraft/class_1277;
 	FIELD field_19295 HEAD_ROLLING_TIME_LEFT Lnet/minecraft/class_2940;
 	FIELD field_30600 INVENTORY_SIZE I
+	METHOD method_1_656 addTradesFromSetAllowingDuplicates (Lnet/minecraft/class_47;Lnet/minecraft/class_1916;Lnet/minecraft/class_6885;I)V
+		ARG 0 context
+		ARG 1 offers
+		ARG 2 trades
+		ARG 3 amount
+	METHOD method_1_657 addTradesFromSetsDisallowingDuplicates (Lnet/minecraft/class_47;Lnet/minecraft/class_1916;Lnet/minecraft/class_6885;I)V
+		ARG 0 context
+		ARG 1 offers
+		ARG 2 trades
+		ARG 3 amount
+	METHOD method_1_658 addTradesFromSet (Lnet/minecraft/class_3218;Lnet/minecraft/class_1916;Lnet/minecraft/class_5321;)V
+		ARG 1 world
+		ARG 2 offers
+		ARG 3 tradeSet
 	METHOD method_7237 fillRecipes (Lnet/minecraft/class_3218;)V
 		ARG 1 world
 	METHOD method_18007 produceParticles (Lnet/minecraft/class_2394;)V

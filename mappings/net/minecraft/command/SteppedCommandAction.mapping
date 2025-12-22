@@ -13,6 +13,6 @@ CLASS net/minecraft/class_8863 net/minecraft/command/SteppedCommandAction
 		ARG 2 actions
 		ARG 3 wrapper
 	CLASS class_8864 ActionWrapper
-		METHOD method_1_267 (Lnet/minecraft/class_8937;Ljava/lang/Object;)Lnet/minecraft/class_8847;
+		METHOD method_1_267 create (Lnet/minecraft/class_8937;Ljava/lang/Object;)Lnet/minecraft/class_8847;
 			ARG 1 frame
 			ARG 2 action

@@ -1,5 +1,9 @@
 CLASS net/minecraft/class_5737 net/minecraft/client/particle/VibrationParticle
+	FIELD field_28248 lastYaw F
 	FIELD field_28249 vibration Lnet/minecraft/class_5716;
+	FIELD field_28250 yaw F
+	FIELD field_40507 pitch F
+	FIELD field_40508 lastPitch F
 	METHOD <init> (Lnet/minecraft/class_638;DDDLnet/minecraft/class_5716;ILnet/minecraft/class_1058;)V
 		ARG 1 world
 		ARG 2 x

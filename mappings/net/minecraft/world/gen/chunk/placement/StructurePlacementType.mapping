@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_6875 net/minecraft/world/gen/chunk/placement/StructurePlacementType
+	METHOD method_1_357 getMapCodec ()Lcom/mojang/serialization/MapCodec;
 	METHOD method_40177 register (Ljava/lang/String;Lcom/mojang/serialization/MapCodec;)Lnet/minecraft/class_6875;
 		ARG 0 id
 		ARG 1 codec

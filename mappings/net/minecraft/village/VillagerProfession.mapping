@@ -14,6 +14,8 @@ CLASS net/minecraft/class_3852 net/minecraft/village/VillagerProfession
 	METHOD comp_821 gatherableItems ()Lcom/google/common/collect/ImmutableSet;
 	METHOD comp_822 secondaryJobSites ()Lcom/google/common/collect/ImmutableSet;
 	METHOD comp_823 workSound ()Lnet/minecraft/class_3414;
+	METHOD method_1_683 getTradeSetAtLevel (I)Lnet/minecraft/class_5321;
+		ARG 1 level
 	METHOD method_16926 register (Lnet/minecraft/class_2378;Lnet/minecraft/class_5321;Lnet/minecraft/class_5321;Lnet/minecraft/class_3414;Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;)Lnet/minecraft/class_3852;
 		ARG 0 registry
 		ARG 1 key

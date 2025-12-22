@@ -1,5 +1,11 @@
 CLASS net/minecraft/class_1129 net/minecraft/client/search/SearchProvider
 	COMMENT A functional interface that provides searching.
+	METHOD method_1_99 empty ()Lnet/minecraft/class_1129;
+	METHOD method_1_100 ofList (Ljava/util/List;Ljava/util/function/Function;)Lnet/minecraft/class_1129;
+		ARG 0 items
+		ARG 1 namer
 	METHOD method_4810 findAll (Ljava/lang/String;)Ljava/util/List;
 		COMMENT {@return the search result of {@code text}}
 		ARG 1 text
+	METHOD method_60376 (Lnet/minecraft/class_1128;Ljava/lang/Object;Ljava/lang/String;)V
+		ARG 2 name

@@ -9,6 +9,7 @@ CLASS net/minecraft/class_9976 net/minecraft/client/render/WeatherRendering
 		COMMENT
 		COMMENT These lookup tables are used for rendering rain and snow.
 	FIELD field_53156 NORMAL_LINE_DZ [F
+	FIELD field_63581 PRECIPITATION_DENSITY F
 	METHOD method_62314 createRainPiece (Lnet/minecraft/class_5819;IIIIIIF)Lnet/minecraft/class_9976$class_9977;
 		ARG 1 random
 		ARG 2 ticks

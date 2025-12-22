@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_6371 net/minecraft/client/network/RedirectResolver
 	FIELD field_33749 LOGGER Lorg/slf4j/Logger;
 	FIELD field_33750 INVALID Lnet/minecraft/class_6371;
-	METHOD method_1_307 (Lnet/minecraft/class_639;)Ljava/util/Optional;
+	METHOD method_1_307 lookupRedirect (Lnet/minecraft/class_639;)Ljava/util/Optional;
 		ARG 1 address
 	METHOD method_36909 createSrv ()Lnet/minecraft/class_6371;
 	METHOD method_36910 (Lnet/minecraft/class_639;)Ljava/util/Optional;

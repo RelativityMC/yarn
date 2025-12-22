@@ -37,3 +37,5 @@ CLASS com/mojang/blaze3d/systems/GpuDevice
 	METHOD precompilePipeline (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/class_12289;)Lcom/mojang/blaze3d/pipeline/CompiledRenderPipeline;
 		ARG 1 pipeline
 		ARG 2 sourceGetter
+	METHOD setVsync (Z)V
+		ARG 1 vsync

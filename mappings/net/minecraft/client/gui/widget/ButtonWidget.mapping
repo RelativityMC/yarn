@@ -19,7 +19,7 @@ CLASS net/minecraft/class_4185 net/minecraft/client/gui/widget/ButtonWidget
 		ARG 0 message
 		ARG 1 onPress
 	CLASS class_4241 PressAction
-		METHOD method_1_95 (Lnet/minecraft/class_4185;)V
+		METHOD method_1_95 onPress (Lnet/minecraft/class_4185;)V
 			ARG 1 button
 	CLASS class_7840 Builder
 		FIELD field_40756 message Lnet/minecraft/class_2561;
@@ -52,6 +52,6 @@ CLASS net/minecraft/class_4185 net/minecraft/client/gui/widget/ButtonWidget
 			ARG 1 width
 			ARG 2 height
 	CLASS class_7841 NarrationSupplier
-		METHOD method_1_94 (Ljava/util/function/Supplier;)Lnet/minecraft/class_5250;
+		METHOD method_1_94 createNarrationMessage (Ljava/util/function/Supplier;)Lnet/minecraft/class_5250;
 			ARG 1 textSupplier
 	CLASS class_12231 Text

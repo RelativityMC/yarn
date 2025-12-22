@@ -44,7 +44,7 @@ CLASS net/minecraft/class_5348 net/minecraft/text/StringVisitable
 		ARG 1 string
 	CLASS class_5245 Visitor
 		COMMENT A visitor for string content.
-		METHOD method_1_73 (Ljava/lang/String;)Ljava/util/Optional;
+		METHOD method_1_73 accept (Ljava/lang/String;)Ljava/util/Optional;
 			COMMENT Visits a literal string.
 			COMMENT
 			COMMENT <p>When a {@link Optional#isPresent() present optional} is returned,
@@ -56,7 +56,7 @@ CLASS net/minecraft/class_5348 net/minecraft/text/StringVisitable
 				COMMENT the literal string
 	CLASS class_5246 StyledVisitor
 		COMMENT A visitor for string content and a contextual {@link Style}.
-		METHOD method_1_74 (Lnet/minecraft/class_2583;Ljava/lang/String;)Ljava/util/Optional;
+		METHOD method_1_74 accept (Lnet/minecraft/class_2583;Ljava/lang/String;)Ljava/util/Optional;
 			COMMENT Visits a string's content with a contextual style.
 			COMMENT
 			COMMENT <p>A contextual style is obtained by calling {@link Style#withParent(Style)}

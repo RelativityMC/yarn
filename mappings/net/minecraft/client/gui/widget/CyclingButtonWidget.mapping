@@ -170,7 +170,7 @@ CLASS net/minecraft/class_5676 net/minecraft/client/gui/widget/CyclingButtonWidg
 			ARG 0 button
 			ARG 1 value
 	CLASS class_5678 UpdateCallback
-		METHOD method_1_161 (Lnet/minecraft/class_5676;Ljava/lang/Object;)V
+		METHOD method_1_161 onValueChange (Lnet/minecraft/class_5676;Ljava/lang/Object;)V
 			ARG 1 button
 			ARG 2 value
 	CLASS class_5680 Values
@@ -184,6 +184,6 @@ CLASS net/minecraft/class_5676 net/minecraft/client/gui/widget/CyclingButtonWidg
 		METHOD method_32629 getDefaults ()Ljava/util/List;
 	CLASS class_12346 LabelType
 	CLASS class_12347 IconGetter
-		METHOD method_1_162 (Lnet/minecraft/class_5676;Ljava/lang/Object;)Lnet/minecraft/class_2960;
+		METHOD method_1_162 apply (Lnet/minecraft/class_5676;Ljava/lang/Object;)Lnet/minecraft/class_2960;
 			ARG 1 button
 			ARG 2 value

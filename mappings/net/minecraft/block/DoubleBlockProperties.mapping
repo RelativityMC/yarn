@@ -17,7 +17,7 @@ CLASS net/minecraft/class_4732 net/minecraft/block/DoubleBlockProperties
 		METHOD method_24174 getFallback ()Ljava/lang/Object;
 	CLASS class_4733 Type
 	CLASS class_4734 PropertySource
-		METHOD method_1_228 (Lnet/minecraft/class_4732$class_3923;)Ljava/lang/Object;
+		METHOD method_1_228 apply (Lnet/minecraft/class_4732$class_3923;)Ljava/lang/Object;
 			ARG 1 retriever
 		CLASS class_4735 Pair
 			FIELD field_21787 first Ljava/lang/Object;

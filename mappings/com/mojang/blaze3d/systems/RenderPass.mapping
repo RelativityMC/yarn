@@ -45,6 +45,6 @@ CLASS com/mojang/blaze3d/systems/RenderPass
 			ARG 5 firstIndex
 			ARG 6 indexCount
 	CLASS class_10885 UniformUploader
-		METHOD method_1_44 (Ljava/lang/String;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
+		METHOD method_1_44 upload (Ljava/lang/String;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
 			ARG 1 name
 			ARG 2 slice

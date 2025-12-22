@@ -194,6 +194,10 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 1 frameGraphBuilder
 		ARG 2 mode
 		ARG 3 cameraPos
+		ARG 4 time
+		ARG 6 tickProgress
+		ARG 7 color
+		ARG 8 cloudHeight
 	METHOD method_62206 renderBlockDamage (Lnet/minecraft/class_4587;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_11658;)V
 		ARG 1 matrices
 		ARG 2 immediate

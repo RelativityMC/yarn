@@ -103,7 +103,7 @@ CLASS net/minecraft/class_7118 net/minecraft/block/MultifaceGrower
 			ARG 2 direction
 	CLASS class_7121 GrowPos
 	CLASS class_7122 GrowPosPredicate
-		METHOD method_1_200 (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_7118$class_7121;)Z
+		METHOD method_1_200 test (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_7118$class_7121;)Z
 			ARG 1 world
 			ARG 2 pos
 			ARG 3 growPos

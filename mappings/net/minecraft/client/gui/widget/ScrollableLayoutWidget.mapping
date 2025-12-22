@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_11467 net/minecraft/client/gui/widget/ScrollableLayoutWidget
+	FIELD field_1_636 minHeight I
+	FIELD field_1_637 marginSide Lnet/minecraft/class_11467$class_1_41;
+	FIELD field_1_638 marginWidth I
 	FIELD field_60716 layout Lnet/minecraft/class_8133;
 	FIELD field_60717 container Lnet/minecraft/class_11467$class_11468;
 	FIELD field_60718 width I
@@ -7,10 +10,13 @@ CLASS net/minecraft/class_11467 net/minecraft/client/gui/widget/ScrollableLayout
 		ARG 1 client
 		ARG 2 layout
 		ARG 3 height
+	METHOD method_1_604 setMinHeight (I)V
+		ARG 1 minHeight
 	METHOD method_71806 setWidth (I)V
 		ARG 1 width
 	METHOD method_71807 setHeight (I)V
 		ARG 1 height
+	CLASS class_1_41 MarginSide
 	CLASS class_11468 Container
 		FIELD field_60721 client Lnet/minecraft/class_310;
 		FIELD field_60722 children Ljava/util/List;
@@ -18,3 +24,5 @@ CLASS net/minecraft/class_11467 net/minecraft/client/gui/widget/ScrollableLayout
 			ARG 2 client
 			ARG 3 width
 			ARG 4 height
+			ARG 5 scrollbar
+		METHOD method_1_605 getSideMargin ()I

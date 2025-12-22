@@ -1,6 +1,11 @@
 CLASS com/mojang/blaze3d/systems/RenderSystem
 	METHOD bindDefaultUniforms (Lcom/mojang/blaze3d/systems/RenderPass;)V
 		ARG 0 pass
+	METHOD enableScissorForRenderTypeDraws (IIII)V
+		ARG 0 x
+		ARG 1 y
+		ARG 2 width
+		ARG 3 height
 	METHOD flipFrame (Lnet/minecraft/class_10219;)V
 		ARG 0 capturer
 	METHOD getSequentialBuffer (Lcom/mojang/blaze3d/vertex/VertexFormat$class_5596;)Lcom/mojang/blaze3d/systems/RenderSystem$class_5590;
@@ -60,7 +65,7 @@ CLASS com/mojang/blaze3d/systems/RenderSystem
 			COMMENT vertices in the triangle.
 			COMMENT
 			COMMENT @see <a href="https://en.wikipedia.org/wiki/Polygon_triangulation">Polygon triangulation - Wikipedia</a>
-			METHOD method_1_56 (Lit/unimi/dsi/fastutil/ints/IntConsumer;I)V
+			METHOD method_1_56 accept (Lit/unimi/dsi/fastutil/ints/IntConsumer;I)V
 				COMMENT Decomposes a shape into triangles.
 				ARG 1 indexConsumer
 					COMMENT the consumer that accepts triangles

@@ -1,5 +1,9 @@
 CLASS net/minecraft/class_7566 net/minecraft/client/session/report/ChatAbuseReport
 	FIELD field_46059 selectedMessages Lit/unimi/dsi/fastutil/ints/IntSet;
+	METHOD <init> (Ljava/util/UUID;Ljava/time/Instant;Ljava/util/UUID;)V
+		ARG 1 reportId
+		ARG 2 currentTime
+		ARG 3 reportedPlayerUuid
 	METHOD method_44569 toggleMessageSelection (ILcom/mojang/authlib/minecraft/report/AbuseReportLimits;)V
 		ARG 1 index
 		ARG 2 limits

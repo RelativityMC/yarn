@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_340 net/minecraft/client/gui/hud/DebugHud
+	FIELD field_1_679 lightmapTextureVisible Z
 	FIELD field_2079 client Lnet/minecraft/class_310;
 	FIELD field_2080 chunkFuture Ljava/util/concurrent/CompletableFuture;
 	FIELD field_2081 textRenderer Lnet/minecraft/class_327;
@@ -22,6 +23,16 @@ CLASS net/minecraft/class_340 net/minecraft/client/gui/hud/DebugHud
 	FIELD field_59832 DEBUG_CROSSHAIR_SCALE F
 	METHOD <init> (Lnet/minecraft/class_310;)V
 		ARG 1 client
+	METHOD method_1_644 getChartLabel (Lnet/minecraft/class_304;Lnet/minecraft/class_304;Ljava/lang/String;Z)Ljava/lang/String;
+		ARG 0 debugKey
+		ARG 1 chartKey
+		ARG 2 description
+		ARG 3 visible
+	METHOD method_1_645 getKeyComboText (Lnet/minecraft/class_304;Lnet/minecraft/class_304;)Ljava/lang/String;
+		ARG 0 debugKey
+		ARG 1 chartKey
+	METHOD method_1_646 shouldRenderLightmapTexture ()Z
+	METHOD method_1_647 toggleLightmapTexture ()V
 	METHOD method_1834 getChunk ()Lnet/minecraft/class_2818;
 	METHOD method_1836 getClientChunk ()Lnet/minecraft/class_2818;
 	METHOD method_1840 getWorld ()Lnet/minecraft/class_1937;

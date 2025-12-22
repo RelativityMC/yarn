@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_217 net/minecraft/loot/condition/LootConditions
+	METHOD method_1_747 registerAndGetDefault (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;

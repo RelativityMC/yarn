@@ -1,3 +1,4 @@
 CLASS net/minecraft/class_5651 net/minecraft/loot/provider/nbt/LootNbtProvider
+	METHOD method_1_733 getCodec ()Lcom/mojang/serialization/MapCodec;
 	METHOD method_32440 getNbt (Lnet/minecraft/class_47;)Lnet/minecraft/class_2520;
 		ARG 1 context

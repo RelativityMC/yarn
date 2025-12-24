@@ -27,7 +27,10 @@ public class InternalInitFieldPredicate implements FieldPredicate {
 
 	@Override
 	public boolean test(FieldData field) {
-		return field.owner().equals(field.methodOwner()) || field.isEnum();
+		return field.owner().equals(field.methodOwner())
+				// Needed for RebalancedVillagerTrades
+				|| field.methodOwner().equals("net/minecraft/class_1_31")
+				|| field.isEnum();
 	}
 
 	@Override

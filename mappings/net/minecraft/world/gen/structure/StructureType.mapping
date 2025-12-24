@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_7151 net/minecraft/world/gen/structure/StructureType
+	METHOD method_1_294 getCodec ()Lcom/mojang/serialization/MapCodec;
 	METHOD method_41623 register (Ljava/lang/String;Lcom/mojang/serialization/MapCodec;)Lnet/minecraft/class_7151;
 		ARG 0 id
 		ARG 1 codec

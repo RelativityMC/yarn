@@ -3,6 +3,10 @@ CLASS net/minecraft/class_4516 net/minecraft/test/TestContext
 	FIELD field_33146 hasFinalClause Z
 	METHOD <init> (Lnet/minecraft/class_4517;)V
 		ARG 1 test
+	METHOD method_1_525 expectBlockPresent (Lnet/minecraft/class_2248;)V
+		ARG 1 block
+	METHOD method_1_526 (Lnet/minecraft/class_2248;Lnet/minecraft/class_2338;)Z
+		ARG 2 pos
 	METHOD method_35943 getWorld ()Lnet/minecraft/class_3218;
 	METHOD method_35945 pushButton (III)V
 		ARG 1 x

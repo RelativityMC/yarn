@@ -100,7 +100,7 @@ CLASS net/minecraft/class_2841 net/minecraft/world/chunk/PalettedContainer
 	CLASS class_4464 Counter
 		COMMENT A counter that receives a palette entry and its number of occurrences
 		COMMENT in the container.
-		METHOD method_1_201 (Ljava/lang/Object;I)V
+		METHOD method_1_201 accept (Ljava/lang/Object;I)V
 			ARG 1 object
 				COMMENT the palette entry
 			ARG 2 count

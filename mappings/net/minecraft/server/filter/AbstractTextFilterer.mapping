@@ -57,7 +57,7 @@ CLASS net/minecraft/class_9847 net/minecraft/server/filter/AbstractTextFilterer
 	CLASS class_5515 HashIgnorer
 		FIELD field_26834 NEVER_IGNORE Lnet/minecraft/class_9847$class_5515;
 		FIELD field_26835 IGNORE_IF_MATCHES_ALL Lnet/minecraft/class_9847$class_5515;
-		METHOD method_1_140 (Ljava/lang/String;I)Z
+		METHOD method_1_140 shouldIgnore (Ljava/lang/String;I)Z
 			ARG 1 hashes
 			ARG 2 hashesSize
 		METHOD method_31310 (Ljava/lang/String;I)Z
@@ -86,6 +86,6 @@ CLASS net/minecraft/class_9847 net/minecraft/server/filter/AbstractTextFilterer
 		METHOD <init> (Ljava/lang/String;)V
 			ARG 1 message
 	CLASS class_7242 MessageEncoder
-		METHOD method_1_141 (Lcom/mojang/authlib/GameProfile;Ljava/lang/String;)Lcom/google/gson/JsonObject;
+		METHOD method_1_141 encode (Lcom/mojang/authlib/GameProfile;Ljava/lang/String;)Lcom/google/gson/JsonObject;
 			ARG 1 gameProfile
 			ARG 2 message

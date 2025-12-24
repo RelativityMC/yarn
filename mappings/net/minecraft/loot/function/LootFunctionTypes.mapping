@@ -3,6 +3,7 @@ CLASS net/minecraft/class_131 net/minecraft/loot/function/LootFunctionTypes
 	FIELD field_45831 BASE_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_45832 ENTRY_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_50023 CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_1_743 register (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
 	METHOD method_591 (Ljava/util/function/BiFunction;Ljava/util/function/BiFunction;Lnet/minecraft/class_1799;Lnet/minecraft/class_47;)Lnet/minecraft/class_1799;
 		ARG 2 stack
 		ARG 3 context

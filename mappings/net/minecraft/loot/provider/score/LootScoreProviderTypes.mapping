@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_5671 net/minecraft/loot/provider/score/LootScoreProviderTypes
 	FIELD field_45895 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_45896 BASE_CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_1_776 register (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
 	METHOD method_53449 (Lnet/minecraft/class_5670;)Lcom/mojang/datafixers/util/Either;
 		ARG 0 provider

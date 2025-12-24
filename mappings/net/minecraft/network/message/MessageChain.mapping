@@ -31,18 +31,22 @@ CLASS net/minecraft/class_7610 net/minecraft/network/message/MessageChain
 		COMMENT the message chain's legitimacy.
 		COMMENT
 		COMMENT @see MessageChain#getUnpacker
-		METHOD method_1_135 (Lnet/minecraft/class_7469;Lnet/minecraft/class_7608;)Lnet/minecraft/class_7471;
+		METHOD method_1_134 unpack ()V
+		METHOD method_1_135 unpack (Lnet/minecraft/class_7469;Lnet/minecraft/class_7608;)Lnet/minecraft/class_7471;
 			ARG 1 signature
 			ARG 2 body
-		METHOD method_1_136 (Ljava/util/UUID;Ljava/util/function/BooleanSupplier;)Lnet/minecraft/class_7610$class_7611;
+		METHOD method_1_136 unsigned (Ljava/util/UUID;Ljava/util/function/BooleanSupplier;)Lnet/minecraft/class_7610$class_7611;
 			ARG 0 sender
 			ARG 1 secureProfileEnforced
+		METHOD method_46315 (Ljava/util/function/BooleanSupplier;Ljava/util/UUID;Lnet/minecraft/class_7469;Lnet/minecraft/class_7608;)Lnet/minecraft/class_7471;
+			ARG 2 signature
+			ARG 3 body
 	CLASS class_7612 Packer
 		COMMENT Packers sign a message on the client with its preceding message's index.
 		COMMENT
 		COMMENT @see MessageChain#getPacker
 		FIELD field_40694 NONE Lnet/minecraft/class_7610$class_7612;
-		METHOD method_1_137 (Lnet/minecraft/class_7608;)Lnet/minecraft/class_7469;
+		METHOD method_1_137 pack (Lnet/minecraft/class_7608;)Lnet/minecraft/class_7469;
 			ARG 1 body
 	CLASS class_7825 MessageChainException
 		FIELD field_50256 MISSING_PROFILE_KEY_EXCEPTION Lnet/minecraft/class_2561;

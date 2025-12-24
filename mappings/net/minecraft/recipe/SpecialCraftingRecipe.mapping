@@ -17,5 +17,5 @@ CLASS net/minecraft/class_1852 net/minecraft/recipe/SpecialCraftingRecipe
 		METHOD method_53773 (Lnet/minecraft/class_1852$class_1866$class_7711;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 1 instance
 		CLASS class_7711 Factory
-			METHOD method_1_158 (Lnet/minecraft/class_7710;)Lnet/minecraft/class_3955;
+			METHOD method_1_158 create (Lnet/minecraft/class_7710;)Lnet/minecraft/class_3955;
 				ARG 1 category

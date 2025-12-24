@@ -1,1 +1,4 @@
 CLASS net/minecraft/class_1_63 net/minecraft/village/RebalancedVillagerTrades
+	METHOD method_1_704 bootstrap (Lnet/minecraft/class_7891;)Lnet/minecraft/class_6880;
+		ARG 0 registries
+	CLASS class_1_64 SpecialBookTrade

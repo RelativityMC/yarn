@@ -29,6 +29,6 @@ CLASS net/minecraft/class_8918 net/minecraft/datafixer/fix/ProjectileItemTypeFix
 	METHOD method_54741 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
 		ARG 0 data
 	CLASS class_8919 Fixer
-		METHOD method_1_277 (Lcom/mojang/datafixers/Typed;Lcom/mojang/datafixers/types/Type;)Lcom/mojang/datafixers/Typed;
+		METHOD method_1_277 fix (Lcom/mojang/datafixers/Typed;Lcom/mojang/datafixers/types/Type;)Lcom/mojang/datafixers/Typed;
 			ARG 1 typed
 			ARG 2 type

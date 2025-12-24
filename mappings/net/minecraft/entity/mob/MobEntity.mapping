@@ -62,6 +62,8 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 	FIELD field_60548 NO_AI_KEY Ljava/lang/String;
 	FIELD field_62909 ARMOR_UPGRADE_CHANCE F
 	FIELD field_62910 ARMOR_UPGRADE_ROLLS F
+	METHOD method_1_370 filterTarget (Lnet/minecraft/class_1309;)Lnet/minecraft/class_1309;
+		ARG 1 target
 	METHOD method_5930 setForwardSpeed (F)V
 		ARG 1 forwardSpeed
 	METHOD method_5937 setLeftHanded (Z)V
@@ -145,6 +147,7 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 		ARG 1 world
 		ARG 2 spawnReason
 	METHOD method_5980 setTarget (Lnet/minecraft/class_1309;)V
+		ARG 1 target
 	METHOD method_5983 onEatingGrass ()V
 	METHOD method_5984 updateEnchantments (Lnet/minecraft/class_5425;Lnet/minecraft/class_5819;Lnet/minecraft/class_1266;)V
 		ARG 1 world

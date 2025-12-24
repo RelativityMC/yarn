@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_4520 net/minecraft/test/TestRunContext
+	FIELD field_1_236 testEnvironmentMemento Lnet/minecraft/class_10665$class_1_53;
 	FIELD field_33151 DEFAULT_TESTS_PER_ROW I
 	FIELD field_48470 LOGGER Lorg/slf4j/Logger;
 	FIELD field_48471 world Lnet/minecraft/class_3218;
@@ -86,12 +87,12 @@ CLASS net/minecraft/class_4520 net/minecraft/test/TestRunContext
 		METHOD method_61097 stopAfterFailure ()Lnet/minecraft/class_4520$class_9115;
 		METHOD method_73076 clearBetweenBatches ()Lnet/minecraft/class_4520$class_9115;
 	CLASS class_9116 Batcher
-		METHOD method_1_168 (Ljava/util/Collection;)Ljava/util/Collection;
+		METHOD method_1_168 batch (Ljava/util/Collection;)Ljava/util/Collection;
 			ARG 1 states
 	CLASS class_9117 TestStructureSpawner
 		FIELD field_48491 REUSE Lnet/minecraft/class_4520$class_9117;
 		FIELD field_48492 NOOP Lnet/minecraft/class_4520$class_9117;
-		METHOD method_1_169 (Lnet/minecraft/class_4517;)Ljava/util/Optional;
+		METHOD method_1_169 spawnStructure (Lnet/minecraft/class_4517;)Ljava/util/Optional;
 			ARG 1 oldState
 		METHOD method_56239 (Lnet/minecraft/class_4517;)Ljava/util/Optional;
 			ARG 0 oldState

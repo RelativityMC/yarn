@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_12210 net/minecraft/util/math/Interpolator
-	METHOD method_1_103 (FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+	METHOD method_1_103 apply (FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 		ARG 1 t
 		ARG 2 a
 		ARG 3 b

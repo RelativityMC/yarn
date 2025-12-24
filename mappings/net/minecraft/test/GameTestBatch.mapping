@@ -1,5 +1,7 @@
 CLASS net/minecraft/class_4514 net/minecraft/test/GameTestBatch
 	FIELD comp_2210 states Ljava/util/Collection;
 	METHOD <init> (ILjava/util/Collection;Lnet/minecraft/class_6880;)V
+		ARG 1 index
 		ARG 2 testFunctions
+		ARG 3 environment
 	METHOD comp_2210 states ()Ljava/util/Collection;

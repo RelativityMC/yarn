@@ -117,8 +117,8 @@ CLASS net/minecraft/class_2818 net/minecraft/world/chunk/WorldChunk
 		METHOD method_31727 setWrapped (Lnet/minecraft/class_5562;)V
 			ARG 1 wrapped
 	CLASS class_6829 EntityLoader
-		METHOD method_1_108 (Lnet/minecraft/class_2818;)V
+		METHOD method_1_108 run (Lnet/minecraft/class_2818;)V
 			ARG 1 chunk
 	CLASS class_10368 UnsavedListener
-		METHOD method_1_109 (Lnet/minecraft/class_1923;)V
+		METHOD method_1_109 setUnsaved (Lnet/minecraft/class_1923;)V
 			ARG 1 pos

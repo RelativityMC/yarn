@@ -34,10 +34,10 @@ CLASS net/minecraft/class_2218 net/minecraft/command/argument/OperationArgumentT
 	METHOD parse (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
 		ARG 1 reader
 	CLASS class_2219 Operation
-		METHOD method_1_207 (Lnet/minecraft/class_9014;Lnet/minecraft/class_9014;)V
+		METHOD method_1_207 apply (Lnet/minecraft/class_9014;Lnet/minecraft/class_9014;)V
 			ARG 1 a
 			ARG 2 b
 	CLASS class_2220 IntOperator
-		METHOD method_1_208 (II)I
+		METHOD method_1_208 apply (II)I
 			ARG 1 a
 			ARG 2 b

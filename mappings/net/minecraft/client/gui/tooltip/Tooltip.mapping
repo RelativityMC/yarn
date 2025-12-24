@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_7919 net/minecraft/client/gui/tooltip/Tooltip
+	FIELD field_1_205 data Ljava/util/Optional;
+	FIELD field_1_206 texture Lnet/minecraft/class_2960;
 	FIELD field_41101 ROW_LENGTH I
 	FIELD field_41102 content Lnet/minecraft/class_2561;
 	FIELD field_41103 lines Ljava/util/List;
@@ -7,6 +9,14 @@ CLASS net/minecraft/class_7919 net/minecraft/client/gui/tooltip/Tooltip
 	METHOD <init> (Lnet/minecraft/class_2561;Lnet/minecraft/class_2561;Ljava/util/Optional;Lnet/minecraft/class_2960;)V
 		ARG 1 content
 		ARG 2 narration
+		ARG 3 data
+		ARG 4 texture
+	METHOD method_1_474 getData ()Ljava/util/Optional;
+	METHOD method_1_475 of (Lnet/minecraft/class_2561;Ljava/util/Optional;Lnet/minecraft/class_2960;)Lnet/minecraft/class_7919;
+		ARG 0 content
+		ARG 1 data
+		ARG 2 texture
+	METHOD method_1_476 getTexture ()Lnet/minecraft/class_2960;
 	METHOD method_47405 getLines (Lnet/minecraft/class_310;)Ljava/util/List;
 		ARG 1 client
 	METHOD method_47406 wrapLines (Lnet/minecraft/class_310;Lnet/minecraft/class_2561;)Ljava/util/List;

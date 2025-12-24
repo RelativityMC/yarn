@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_7501 net/minecraft/network/encryption/Signer
 	FIELD field_39399 LOGGER Lorg/slf4j/Logger;
-	METHOD method_1_4 (Lnet/minecraft/class_7498;)[B
+	METHOD method_1_4 sign (Lnet/minecraft/class_7498;)[B
 		ARG 1 updatable
 	METHOD method_44178 (Ljava/lang/String;Ljava/security/PrivateKey;Lnet/minecraft/class_7498;)[B
 		ARG 2 updatable

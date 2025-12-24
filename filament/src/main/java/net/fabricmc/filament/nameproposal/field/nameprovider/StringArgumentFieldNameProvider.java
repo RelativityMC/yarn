@@ -17,6 +17,7 @@
 package net.fabricmc.filament.nameproposal.field.nameprovider;
 
 import java.util.Locale;
+import java.util.Set;
 
 import net.fabricmc.filament.nameproposal.field.FieldData;
 
@@ -29,6 +30,12 @@ import net.fabricmc.filament.nameproposal.field.FieldData;
  */
 public class StringArgumentFieldNameProvider implements FieldNameProvider {
 	public static final StringArgumentFieldNameProvider INSTANCE = new StringArgumentFieldNameProvider();
+
+	// Classes whose fields shouldn’t be name-rotated (namely, those listing registry keys for villager trades)
+	private static final Set<String> EXEMPT_FROM_NAME_ROTATION = Set.of(
+			"net/minecraft/class_1_31", // VillagerTrades
+			"net/minecraft/class_1_63"  // RebalancedVillagerTrades
+	);
 
 	private StringArgumentFieldNameProvider() {
 		return;
@@ -43,7 +50,7 @@ public class StringArgumentFieldNameProvider implements FieldNameProvider {
 			s = s.substring(s.indexOf(':') + 1);
 		}
 
-		if (s.contains("/") && !field.owner().equals("net/minecraft/class_1_31")) { // rotation of names don't apply to villager trades since 26.1-snapshot-1
+		if (s.contains("/") && !EXEMPT_FROM_NAME_ROTATION.contains(field.owner())) {
 			int separator = s.indexOf('/');
 			String sFirst = s.substring(0, separator);
 			String sLast;

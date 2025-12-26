@@ -3,14 +3,15 @@ CLASS net/minecraft/class_1887 net/minecraft/enchantment/Enchantment
 	FIELD field_51644 ENTRY_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_51949 MAX_LEVEL I
 	FIELD field_51950 ENTRY_PACKET_CODEC Lnet/minecraft/class_9139;
-	METHOD method_1_565 (Ljava/util/List;Lnet/minecraft/class_47;Lnet/minecraft/class_1887$class_1_34;)V
+	METHOD method_1_565 applyEnchantmentEffects (Ljava/util/List;Lnet/minecraft/class_47;Lnet/minecraft/class_1887$class_1_34;)V
 		ARG 0 effects
 		ARG 1 context
 		ARG 2 applier
-	METHOD method_1_566 (Ljava/util/List;Lnet/minecraft/class_47;Lorg/apache/commons/lang3/mutable/MutableFloat;Lnet/minecraft/class_1887$class_1_33;)V
+	METHOD method_1_566 adjustByEnchantmentEffects (Ljava/util/List;Lnet/minecraft/class_47;Lorg/apache/commons/lang3/mutable/MutableFloat;Lnet/minecraft/class_1887$class_1_33;)V
 		ARG 0 effects
 		ARG 1 context
 		ARG 2 value
+		ARG 3 adjuster
 	METHOD method_1_568 (ILnet/minecraft/class_1297;Lnet/minecraft/class_9723;F)F
 		ARG 2 valueEffect
 		ARG 3 value

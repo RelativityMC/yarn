@@ -1,11 +1,13 @@
 CLASS net/minecraft/class_7620 net/minecraft/util/thread/FutureQueue
 	COMMENT A functional interface that can enqueue completable futures.
 	FIELD field_39831 LOGGER Lorg/slf4j/Logger;
-	METHOD method_1_12 (Ljava/lang/Runnable;)V
+	METHOD method_1_12 append (Ljava/lang/Runnable;)V
 		ARG 1 callback
-	METHOD method_1_13 (Ljava/util/concurrent/CompletableFuture;Ljava/util/function/Consumer;)V
+	METHOD method_1_13 append (Ljava/util/concurrent/CompletableFuture;Ljava/util/function/Consumer;)V
 		ARG 1 future
 		ARG 2 callback
+	METHOD method_1_14 forExecutor (Ljava/util/concurrent/Executor;)Lnet/minecraft/class_7620;
+		ARG 0 executor
 	METHOD method_54441 (Ljava/lang/Runnable;Ljava/lang/Object;)V
 		ARG 1 current
 	CLASS 1

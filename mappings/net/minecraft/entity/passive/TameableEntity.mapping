@@ -6,6 +6,12 @@ CLASS net/minecraft/class_1321 net/minecraft/entity/passive/TameableEntity
 		COMMENT #isTamed() tamed}.
 	FIELD field_21974 sitting Z
 	FIELD field_57595 DEFAULT_SITTING Z
+	METHOD method_1_420 eatAndHeal (Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;Lnet/minecraft/class_1799;FF)V
+		ARG 1 player
+		ARG 2 hand
+		ARG 3 stack
+		ARG 4 healthPerNutrition
+		ARG 5 defaultHealing
 	METHOD method_6170 setTamedBy (Lnet/minecraft/class_1657;)V
 		ARG 1 player
 	METHOD method_6171 isOwner (Lnet/minecraft/class_1309;)Z

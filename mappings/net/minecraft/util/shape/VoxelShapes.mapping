@@ -136,7 +136,7 @@ CLASS net/minecraft/class_259 net/minecraft/util/shape/VoxelShapes
 		ARG 0 shape
 		ARG 1 anchor
 	CLASS class_260 BoxConsumer
-		METHOD method_1_54 (DDDDDD)V
+		METHOD method_1_54 accept (DDDDDD)V
 			ARG 1 minX
 			ARG 3 minY
 			ARG 5 minZ

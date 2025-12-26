@@ -7,7 +7,7 @@ CLASS net/minecraft/class_7775 net/minecraft/client/render/model/Baker
 	METHOD method_76673 getBlockPart ()Lnet/minecraft/class_10889;
 	METHOD method_76674 getVec3fInterner ()Lnet/minecraft/class_7775$class_12356;
 	CLASS class_10897 ResolvableCacheKey
-		METHOD method_1_164 (Lnet/minecraft/class_7775;)Ljava/lang/Object;
+		METHOD method_1_164 compute (Lnet/minecraft/class_7775;)Ljava/lang/Object;
 			ARG 1 baker
 	CLASS class_12356 Vec3fInterner
 		METHOD method_76675 intern (FFF)Lorg/joml/Vector3fc;

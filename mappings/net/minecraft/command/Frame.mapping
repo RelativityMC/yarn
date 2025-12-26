@@ -4,3 +4,4 @@ CLASS net/minecraft/class_8937 net/minecraft/command/Frame
 		ARG 1 returnValue
 	METHOD method_54896 doReturn ()V
 	CLASS class_8938 Control
+		METHOD method_1_52 doReturn ()V

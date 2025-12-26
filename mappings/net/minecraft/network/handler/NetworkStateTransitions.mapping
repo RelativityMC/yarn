@@ -20,7 +20,9 @@ CLASS net/minecraft/class_9130 net/minecraft/network/handler/NetworkStateTransit
 			ARG 2 received
 			ARG 3 promise
 	CLASS class_9132 DecoderTransitioner
-		METHOD method_1_194 (Lio/netty/channel/ChannelHandlerContext;)V
+		METHOD method_1_193 then (Lnet/minecraft/class_9130$class_9132;)Lnet/minecraft/class_9130$class_9132;
+			ARG 1 next
+		METHOD method_1_194 run (Lio/netty/channel/ChannelHandlerContext;)V
 			ARG 1 context
 		METHOD method_56358 (Lnet/minecraft/class_9130$class_9132;Lio/netty/channel/ChannelHandlerContext;)V
 			ARG 2 context
@@ -30,7 +32,9 @@ CLASS net/minecraft/class_9130 net/minecraft/network/handler/NetworkStateTransit
 			ARG 2 received
 			ARG 3 promise
 	CLASS class_9134 EncoderTransitioner
-		METHOD method_1_196 (Lio/netty/channel/ChannelHandlerContext;)V
+		METHOD method_1_195 then (Lnet/minecraft/class_9130$class_9134;)Lnet/minecraft/class_9130$class_9134;
+			ARG 1 next
+		METHOD method_1_196 run (Lio/netty/channel/ChannelHandlerContext;)V
 			ARG 1 context
 		METHOD method_56359 (Lnet/minecraft/class_9130$class_9134;Lio/netty/channel/ChannelHandlerContext;)V
 			ARG 2 context

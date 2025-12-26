@@ -18,7 +18,7 @@ CLASS net/minecraft/class_7244 net/minecraft/entity/LargeEntitySpawnHelper
 		FIELD field_39400 IRON_GOLEM Lnet/minecraft/class_7244$class_7502;
 		FIELD field_39401 WARDEN Lnet/minecraft/class_7244$class_7502;
 		FIELD field_54558 CREAKING Lnet/minecraft/class_7244$class_7502;
-		METHOD method_1_8 (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Z
+		METHOD method_1_8 canSpawnOn (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Z
 			ARG 1 world
 			ARG 2 pos
 			ARG 3 state

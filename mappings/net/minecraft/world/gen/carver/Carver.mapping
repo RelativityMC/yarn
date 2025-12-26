@@ -73,7 +73,7 @@ CLASS net/minecraft/class_2939 net/minecraft/world/gen/carver/Carver
 	METHOD method_39116 (Lnet/minecraft/class_2791;Lnet/minecraft/class_2338$class_2339;Lnet/minecraft/class_2680;)V
 		ARG 2 state
 	CLASS class_5874 SkipPredicate
-		METHOD method_1_255 (Lnet/minecraft/class_5873;DDDI)Z
+		METHOD method_1_255 shouldSkip (Lnet/minecraft/class_5873;DDDI)Z
 			ARG 1 context
 			ARG 2 scaledRelativeX
 			ARG 4 scaledRelativeY

@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_12301 net/minecraft/world/attribute/timeline/EasingType
 	FIELD field_64275 EASING_TYPES_BY_NAME Lnet/minecraft/class_5699$class_10388;
 	FIELD field_64276 CODEC Lcom/mojang/serialization/Codec;
-	METHOD method_1_9 (F)F
+	METHOD method_1_9 apply (F)F
 		ARG 1 x
 	METHOD method_76356 (F)F
 		ARG 0 x

@@ -75,7 +75,7 @@ CLASS net/minecraft/class_3057 net/minecraft/server/command/FillCommand
 			ARG 1 pos
 	CLASS class_3120 Filter
 		FIELD field_55586 IDENTITY Lnet/minecraft/class_3057$class_3120;
-		METHOD method_1_84 (Lnet/minecraft/class_3341;Lnet/minecraft/class_2338;Lnet/minecraft/class_2247;Lnet/minecraft/class_3218;)Lnet/minecraft/class_2247;
+		METHOD method_1_84 filter (Lnet/minecraft/class_3341;Lnet/minecraft/class_2338;Lnet/minecraft/class_2247;Lnet/minecraft/class_3218;)Lnet/minecraft/class_2247;
 			ARG 1 box
 			ARG 2 pos
 			ARG 3 block
@@ -87,11 +87,12 @@ CLASS net/minecraft/class_3057 net/minecraft/server/command/FillCommand
 			ARG 3 world
 	CLASS class_10555 PostProcessor
 		FIELD field_55585 EMPTY Lnet/minecraft/class_3057$class_10555;
-		METHOD method_1_83 (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;)Z
+		METHOD method_1_83 affect (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;)Z
 			ARG 1 world
 			ARG 2 pos
 		METHOD method_66000 (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;)Z
 			ARG 0 world
 			ARG 1 pos
 	CLASS class_10557 OptionalArgumentResolver
+		METHOD method_1_85 resolve (Ljava/lang/Object;)Ljava/lang/Object;
 	CLASS class_11176 Replaced

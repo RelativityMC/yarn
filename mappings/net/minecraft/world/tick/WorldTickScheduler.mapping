@@ -77,6 +77,6 @@ CLASS net/minecraft/class_6757 net/minecraft/world/tick/WorldTickScheduler
 		ARG 2 chunkPos
 		ARG 4 chunkTickScheduler
 	CLASS class_6758 ChunkVisitor
-		METHOD method_1_43 (JLnet/minecraft/class_6755;)V
+		METHOD method_1_43 accept (JLnet/minecraft/class_6755;)V
 			ARG 1 chunkPos
 			ARG 3 chunkTickScheduler

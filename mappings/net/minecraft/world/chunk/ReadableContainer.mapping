@@ -37,6 +37,6 @@ CLASS net/minecraft/class_7522 net/minecraft/world/chunk/ReadableContainer
 			ARG 1 paletteEntries
 			ARG 2 storage
 	CLASS class_7523 Reader
-		METHOD method_1_229 (Lnet/minecraft/class_6563;Lnet/minecraft/class_7522$class_6562;)Lcom/mojang/serialization/DataResult;
+		METHOD method_1_229 read (Lnet/minecraft/class_6563;Lnet/minecraft/class_7522$class_6562;)Lcom/mojang/serialization/DataResult;
 			ARG 1 provider
 			ARG 2 serialized

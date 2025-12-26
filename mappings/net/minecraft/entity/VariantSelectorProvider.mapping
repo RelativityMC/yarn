@@ -27,6 +27,7 @@ CLASS net/minecraft/class_10695 net/minecraft/entity/VariantSelectorProvider
 		METHOD method_67165 (Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 1 instance
 	CLASS class_10697 SelectorCondition
+		METHOD method_1_227 alwaysAccept ()Lnet/minecraft/class_10695$class_10697;
 		METHOD method_67166 (Ljava/lang/Object;)Z
 			ARG 0 context
 	CLASS class_10698 UnwrappedSelector

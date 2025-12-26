@@ -10,6 +10,8 @@ CLASS net/minecraft/class_4838 net/minecraft/entity/mob/PiglinBrain
 	FIELD field_30574 AVOID_TARGET_EXPIRY I
 	FIELD field_30575 ADMIRING_DISABLED_EXPIRY I
 	FIELD field_30584 CROSSBOW_ATTACK_FORWARD_MOVEMENT F
+	METHOD method_1_582 getNearbyAdultPiglins (Lnet/minecraft/class_4095;)Ljava/util/List;
+		ARG 0 brain
 	METHOD method_24714 hasBeenHitByPlayer (Lnet/minecraft/class_4836;)Z
 		ARG 0 piglin
 	METHOD method_24717 makeRandomFollowTask ()Lnet/minecraft/class_4118;
@@ -195,6 +197,7 @@ CLASS net/minecraft/class_4838 net/minecraft/entity/mob/PiglinBrain
 	METHOD method_29277 canRideHoglin (Lnet/minecraft/class_4836;)Z
 		ARG 0 piglin
 	METHOD method_29534 isZombified (Lnet/minecraft/class_1297;)Z
+		ARG 0 entity
 	METHOD method_29535 (Lnet/minecraft/class_1309;Lnet/minecraft/class_4095;Lnet/minecraft/class_1309;)V
 		ARG 2 avoiding
 	METHOD method_29536 getAvoiding (Lnet/minecraft/class_4836;)Ljava/util/Optional;

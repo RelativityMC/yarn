@@ -7,7 +7,7 @@ CLASS net/minecraft/class_9127 net/minecraft/network/state/NetworkState
 			ARG 1 callback
 		METHOD method_61109 side ()Lnet/minecraft/class_2598;
 		CLASS class_9828 PacketTypeConsumer
-			METHOD method_1_24 (Lnet/minecraft/class_9145;I)V
+			METHOD method_1_24 accept (Lnet/minecraft/class_9145;I)V
 				ARG 1 type
 				ARG 2 protocolId
 	CLASS class_10940 Factory

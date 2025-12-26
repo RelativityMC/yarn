@@ -111,16 +111,22 @@ CLASS net/minecraft/class_8113 net/minecraft/entity/decoration/DisplayEntity
 		CLASS class_8225 Data
 	CLASS class_8116 ArgbLerper
 	CLASS class_8117 FloatLerper
+		METHOD method_1_27 constant (F)Lnet/minecraft/class_8113$class_8117;
+			ARG 0 value
 		METHOD method_48886 lerp (F)F
 			ARG 1 delta
 		METHOD method_49779 (FF)F
 			ARG 1 delta
 	CLASS class_8118 AbstractInterpolator
+		METHOD method_1_28 constant (Ljava/lang/Object;)Lnet/minecraft/class_8113$class_8118;
+			ARG 0 value
 		METHOD method_48888 interpolate (F)Ljava/lang/Object;
 			ARG 1 delta
 		METHOD method_49780 (Ljava/lang/Object;F)Ljava/lang/Object;
 			ARG 1 delta
 	CLASS class_8119 IntLerper
+		METHOD method_1_29 constant (I)Lnet/minecraft/class_8113$class_8119;
+			ARG 0 value
 		METHOD method_48889 lerp (F)I
 			ARG 1 delta
 		METHOD method_49781 (IF)I
@@ -205,7 +211,7 @@ CLASS net/minecraft/class_8113 net/minecraft/entity/decoration/DisplayEntity
 		CLASS class_8125 TextLines
 		CLASS class_8126 TextLine
 		CLASS class_8127 LineSplitter
-			METHOD method_1_30 (Lnet/minecraft/class_2561;I)Lnet/minecraft/class_8113$class_8123$class_8125;
+			METHOD method_1_30 split (Lnet/minecraft/class_2561;I)Lnet/minecraft/class_8113$class_8123$class_8125;
 				ARG 1 text
 				ARG 2 lineWidth
 		CLASS class_8230 Data

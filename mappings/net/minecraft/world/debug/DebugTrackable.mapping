@@ -7,3 +7,4 @@ CLASS net/minecraft/class_12023 net/minecraft/world/debug/DebugTrackable
 			ARG 1 type
 			ARG 2 dataSupplier
 	CLASS class_12025 DebugDataSupplier
+		METHOD method_1_90 get ()Ljava/lang/Object;

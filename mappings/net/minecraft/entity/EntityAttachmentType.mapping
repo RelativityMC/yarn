@@ -10,7 +10,7 @@ CLASS net/minecraft/class_9064 net/minecraft/entity/EntityAttachmentType
 		FIELD field_47749 ZERO Lnet/minecraft/class_9064$class_9065;
 		FIELD field_47750 AT_HEIGHT Lnet/minecraft/class_9064$class_9065;
 		FIELD field_48321 WARDEN_CHEST Lnet/minecraft/class_9064$class_9065;
-		METHOD method_1_116 (FF)Ljava/util/List;
+		METHOD method_1_116 create (FF)Ljava/util/List;
 			ARG 1 width
 			ARG 2 height
 		METHOD method_55671 (FF)Ljava/util/List;

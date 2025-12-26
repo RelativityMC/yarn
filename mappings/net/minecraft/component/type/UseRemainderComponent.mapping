@@ -9,5 +9,5 @@ CLASS net/minecraft/class_10131 net/minecraft/component/type/UseRemainderCompone
 		ARG 3 inCreative
 		ARG 4 inserter
 	CLASS class_10259 StackInserter
-		METHOD method_1_179 (Lnet/minecraft/class_1799;)V
+		METHOD method_1_179 apply (Lnet/minecraft/class_1799;)V
 			ARG 1 stack

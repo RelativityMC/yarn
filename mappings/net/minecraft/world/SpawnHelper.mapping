@@ -115,15 +115,15 @@ CLASS net/minecraft/class_1948 net/minecraft/world/SpawnHelper
 		ARG 2 spawnMonsters
 		ARG 3 rare
 	CLASS class_5259 Runner
-		METHOD method_1_77 (Lnet/minecraft/class_1308;Lnet/minecraft/class_2791;)V
+		METHOD method_1_77 run (Lnet/minecraft/class_1308;Lnet/minecraft/class_2791;)V
 			ARG 1 entity
 			ARG 2 chunk
 	CLASS class_5260 ChunkSource
-		METHOD method_1_78 (JLjava/util/function/Consumer;)V
+		METHOD method_1_78 query (JLjava/util/function/Consumer;)V
 			ARG 1 pos
 			ARG 3 chunkConsumer
 	CLASS class_5261 Checker
-		METHOD method_1_79 (Lnet/minecraft/class_1299;Lnet/minecraft/class_2338;Lnet/minecraft/class_2791;)Z
+		METHOD method_1_79 test (Lnet/minecraft/class_1299;Lnet/minecraft/class_2338;Lnet/minecraft/class_2791;)Z
 			ARG 1 type
 			ARG 2 pos
 			ARG 3 chunk

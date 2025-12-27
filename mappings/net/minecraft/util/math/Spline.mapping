@@ -1,4 +1,8 @@
 CLASS net/minecraft/class_6492 net/minecraft/util/math/Spline
+	METHOD method_1_369 (Ljava/lang/Float;Lnet/minecraft/class_6492;Ljava/lang/Float;)Lnet/minecraft/class_6492$class_6737;
+		ARG 0 location
+		ARG 1 value
+		ARG 2 derivative
 	METHOD method_37918 builder (Lnet/minecraft/class_6501;)Lnet/minecraft/class_6492$class_6493;
 		ARG 0 locationFunction
 	METHOD method_39225 getDebugString ()Ljava/lang/String;
@@ -79,6 +83,8 @@ CLASS net/minecraft/class_6492 net/minecraft/util/math/Spline
 			ARG 2 value
 			ARG 3 derivatives
 			ARG 4 i
+		METHOD method_41298 (F[FI)Z
+			ARG 2 i
 		METHOD method_41299 build (Lnet/minecraft/class_6501;[FLjava/util/List;[F)Lnet/minecraft/class_6492$class_6738;
 			ARG 0 locationFunction
 			ARG 1 locations
@@ -92,5 +98,5 @@ CLASS net/minecraft/class_6492 net/minecraft/util/math/Spline
 			ARG 1 values
 			ARG 2 derivatives
 	CLASS class_7073 Visitor
-		METHOD method_1_11 (Ljava/lang/Object;)Ljava/lang/Object;
+		METHOD method_1_11 visit (Ljava/lang/Object;)Ljava/lang/Object;
 			ARG 1 value

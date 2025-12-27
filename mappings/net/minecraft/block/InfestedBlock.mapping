@@ -10,6 +10,10 @@ CLASS net/minecraft/class_2384 net/minecraft/block/InfestedBlock
 			COMMENT the block this infested block should mimic
 		ARG 2 settings
 			COMMENT block settings
+	METHOD method_1_489 copyProperty (Lnet/minecraft/class_2769;Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;)Lnet/minecraft/class_2680;
+		ARG 0 property
+		ARG 1 src
+		ARG 2 dest
 	METHOD method_10269 isInfestable (Lnet/minecraft/class_2680;)Z
 		ARG 0 block
 	METHOD method_10270 toRegularState (Lnet/minecraft/class_2680;)Lnet/minecraft/class_2680;

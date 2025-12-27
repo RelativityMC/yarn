@@ -2270,6 +2270,9 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 1 fallDistance
 		ARG 3 damagePerDistance
 		ARG 4 damageSource
+	METHOD method_67632 (ILjava/util/concurrent/atomic/AtomicInteger;ZLnet/minecraft/class_243;Lnet/minecraft/class_243;Lit/unimi/dsi/fastutil/longs/LongSet;ZLnet/minecraft/class_238;Lnet/minecraft/class_10774$class_10775;Lnet/minecraft/class_2338;I)Z
+		ARG 10 pos
+		ARG 11 version
 	METHOD method_67633 igniteByLava ()V
 	METHOD method_67634 (Ljava/util/UUID;)V
 		ARG 1 uuid
@@ -2342,8 +2345,9 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_76333 getKineticAttackMovement ()Lnet/minecraft/class_243;
 	METHOD method_76440 tickLastPos ()V
 	METHOD method_76798 isMovingHorizontally ()Z
+	CLASS class_1_4 FlagIndex
 	CLASS class_4738 PositionUpdater
-		METHOD method_1_23 (Lnet/minecraft/class_1297;DDD)V
+		METHOD method_1_23 accept (Lnet/minecraft/class_1297;DDD)V
 			ARG 1 entity
 			ARG 2 x
 			ARG 4 y
@@ -2394,4 +2398,11 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		METHOD method_33578 playsSounds ()Z
 			COMMENT Returns whether this means an entity may play sounds as it moves.
 	CLASS class_10365 QueuedCollisionCheck
+		METHOD <init> (Lnet/minecraft/class_243;Lnet/minecraft/class_243;)V
+			ARG 1 from
+			ARG 2 to
+		METHOD <init> (Lnet/minecraft/class_243;Lnet/minecraft/class_243;Lnet/minecraft/class_243;)V
+			ARG 1 from
+			ARG 2 to
+			ARG 3 axisDependentOriginalMovement
 	CLASS class_11344 ErrorReporterContext

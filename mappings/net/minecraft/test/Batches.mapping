@@ -34,6 +34,6 @@ CLASS net/minecraft/class_9113 net/minecraft/test/Batches
 	METHOD method_66931 (Lnet/minecraft/class_4517;)Lnet/minecraft/class_6880;
 		ARG 0 state
 	CLASS class_10658 Decorator
-		METHOD method_1_246 (Lnet/minecraft/class_6880$class_6883;Lnet/minecraft/class_3218;)Ljava/util/stream/Stream;
+		METHOD method_1_246 decorate (Lnet/minecraft/class_6880$class_6883;Lnet/minecraft/class_3218;)Ljava/util/stream/Stream;
 			ARG 1 instance
 			ARG 2 world

@@ -20,6 +20,6 @@ CLASS net/minecraft/class_5713 net/minecraft/world/event/listener/GameEventDispa
 		ARG 1 listener
 			COMMENT the listener to remove
 	CLASS class_7721 DispatchCallback
-		METHOD method_1_304 (Lnet/minecraft/class_5714;Lnet/minecraft/class_243;)V
+		METHOD method_1_304 visit (Lnet/minecraft/class_5714;Lnet/minecraft/class_243;)V
 			ARG 1 listener
 			ARG 2 listenerPos

@@ -137,5 +137,5 @@ CLASS net/minecraft/class_1863 net/minecraft/recipe/ServerRecipeManager
 		METHOD method_64994 build (Lnet/minecraft/class_7699;)Lnet/minecraft/class_10290;
 			ARG 1 enabledFeatures
 	CLASS class_10357 SoleIngredientGetter
-		METHOD method_1_180 (Lnet/minecraft/class_1860;)Ljava/util/Optional;
+		METHOD method_1_180 apply (Lnet/minecraft/class_1860;)Ljava/util/Optional;
 			ARG 1 recipe

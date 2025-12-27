@@ -20,7 +20,7 @@ CLASS net/minecraft/class_6306 net/minecraft/test/TestServer
 		ARG 5 tests
 		ARG 6 verify
 		ARG 7 runCount
-	METHOD method_1_528 (Lnet/minecraft/class_6880$class_6883;Lnet/minecraft/class_3218;)Ljava/util/stream/Stream;
+	METHOD method_1_528 makeRepeatedBatches (Lnet/minecraft/class_6880$class_6883;Lnet/minecraft/class_3218;)Ljava/util/stream/Stream;
 		ARG 1 testInstance
 		ARG 2 world
 	METHOD method_36096 runTestBatches (Lnet/minecraft/class_3218;)V

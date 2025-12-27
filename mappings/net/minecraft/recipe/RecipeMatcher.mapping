@@ -111,8 +111,8 @@ CLASS net/minecraft/class_1662 net/minecraft/recipe/RecipeMatcher
 		METHOD method_61532 clearRequirements ()V
 		METHOD method_61533 clearVisited ()V
 	CLASS class_9874 ItemCallback
-		METHOD method_1_199 (Ljava/lang/Object;)V
+		METHOD method_1_199 accept (Ljava/lang/Object;)V
 			ARG 1 item
 	CLASS class_10528 RawIngredient
-		METHOD method_1_198 (Ljava/lang/Object;)Z
+		METHOD method_1_198 acceptsItem (Ljava/lang/Object;)Z
 			ARG 1 entry

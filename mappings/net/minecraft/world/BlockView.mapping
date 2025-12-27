@@ -63,7 +63,9 @@ CLASS net/minecraft/class_1922 net/minecraft/world/BlockView
 		ARG 1 to
 		ARG 2 box
 		ARG 3 visitor
+	METHOD method_73110 (Lnet/minecraft/class_243;)Lnet/minecraft/class_2382;
+		ARG 0 delta
 	CLASS class_10781 CollisionVisitor
-		METHOD method_1_50 (Lnet/minecraft/class_2338;I)Z
+		METHOD method_1_50 visit (Lnet/minecraft/class_2338;I)Z
 			ARG 1 pos
 			ARG 2 version

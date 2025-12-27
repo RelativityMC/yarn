@@ -27,3 +27,4 @@ CLASS net/minecraft/class_9794 net/minecraft/block/jukebox/JukeboxManager
 	METHOD method_60761 getTicksSinceSongStarted ()J
 	METHOD method_60763 hasSecondPassed ()Z
 	CLASS class_9795 ChangeNotifier
+		METHOD method_1_107 onChange ()V

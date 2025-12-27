@@ -107,6 +107,6 @@ CLASS net/minecraft/class_3027 net/minecraft/server/command/DatapackCommand
 	METHOD method_72058 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 name
 	CLASS class_3028 PackAdder
-		METHOD method_1_138 (Ljava/util/List;Lnet/minecraft/class_3288;)V
+		METHOD method_1_138 apply (Ljava/util/List;Lnet/minecraft/class_3288;)V
 			ARG 1 profiles
 			ARG 2 profile

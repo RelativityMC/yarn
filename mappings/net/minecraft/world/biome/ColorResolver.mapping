@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_6539 net/minecraft/world/biome/ColorResolver
-	METHOD method_1_66 (Lnet/minecraft/class_1959;DD)I
+	METHOD method_1_66 getColor (Lnet/minecraft/class_1959;DD)I
 		ARG 1 biome
 		ARG 2 x
 		ARG 4 z

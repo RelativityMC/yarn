@@ -12,6 +12,6 @@ CLASS net/minecraft/class_7288 net/minecraft/client/render/entity/feature/Emissi
 		ARG 5 renderLayerFunction
 		ARG 6 ignoresInvisibility
 	CLASS class_7289 AnimationAlphaAdjuster
-		METHOD method_1_331 (Lnet/minecraft/class_10042;F)F
+		METHOD method_1_331 apply (Lnet/minecraft/class_10042;F)F
 			ARG 1 state
 			ARG 2 tickProgress

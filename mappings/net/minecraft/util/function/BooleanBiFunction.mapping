@@ -32,7 +32,7 @@ CLASS net/minecraft/class_247 net/minecraft/util/function/BooleanBiFunction
 		COMMENT A {@link BooleanBiFunction} that returns {@code true} if the second argument is {@code false}.
 	FIELD field_16899 CAUSED_BY Lnet/minecraft/class_247;
 		COMMENT A {@link BooleanBiFunction} that returns {@code true} if the first argument is {@code true} or the second argument is {@code false}.
-	METHOD method_1_91 (ZZ)Z
+	METHOD method_1_91 apply (ZZ)Z
 		ARG 1 a
 		ARG 2 b
 	METHOD method_16781 (ZZ)Z

@@ -104,6 +104,7 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 6 dataFixer
 		ARG 7 apiServices
 		ARG 8 chunkLoadProgress
+	METHOD method_1_402 checkLowDiskSpaceWarning ()V
 	METHOD method_3716 getKeyPair ()Ljava/security/KeyPair;
 	METHOD method_3718 isFlightEnabled ()Z
 	METHOD method_3723 save (ZZZ)Z
@@ -437,7 +438,7 @@ CLASS net/minecraft/server/MinecraftServer
 	METHOD method_56604 startTaskPerformanceLog ()V
 	METHOD method_56605 pushPerformanceLogs ()V
 	METHOD method_56626 shouldPushTickTimeLog ()Z
-	METHOD method_57823 checkLowDiskSpaceWarning ()V
+	METHOD method_57823 showLowDiskSpaceWarning ()V
 	METHOD method_58576 getReloadableRegistries ()Lnet/minecraft/class_9383$class_9385;
 	METHOD method_59777 getBrewingRecipeRegistry ()Lnet/minecraft/class_1845;
 	METHOD method_59847 forceEnableRequestedFeatures (Lnet/minecraft/class_3283;Lnet/minecraft/class_7699;)V

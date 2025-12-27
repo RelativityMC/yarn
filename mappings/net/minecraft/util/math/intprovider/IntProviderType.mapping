@@ -1,3 +1,4 @@
 CLASS net/minecraft/class_6018 net/minecraft/util/math/intprovider/IntProviderType
+	METHOD method_1_197 getCodec ()Lcom/mojang/serialization/MapCodec;
 	METHOD method_35014 register (Ljava/lang/String;Lcom/mojang/serialization/MapCodec;)Lnet/minecraft/class_6018;
 		ARG 0 id

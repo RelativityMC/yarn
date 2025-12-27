@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_7500 net/minecraft/network/encryption/SignatureVerifier
 	FIELD field_39397 NOOP Lnet/minecraft/class_7500;
 	FIELD field_39398 LOGGER Lorg/slf4j/Logger;
-	METHOD method_1_48 (Lnet/minecraft/class_7498;[B)Z
+	METHOD method_1_48 validate (Lnet/minecraft/class_7498;[B)Z
 		ARG 1 updatable
 		ARG 2 signatureData
 	METHOD method_44170 (Lnet/minecraft/class_7498;[B)Z

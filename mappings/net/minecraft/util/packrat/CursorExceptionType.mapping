@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_10837 net/minecraft/util/packrat/CursorExceptionType
-	METHOD method_1_225 (Ljava/lang/String;I)Ljava/lang/Exception;
+	METHOD method_1_225 create (Ljava/lang/String;I)Ljava/lang/Exception;
 		ARG 1 input
 		ARG 2 cursor
 	METHOD method_68201 create (Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;Ljava/lang/String;)Lnet/minecraft/class_10837;

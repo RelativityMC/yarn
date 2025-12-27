@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_10674 net/minecraft/test/TestInstanceFinder
+	METHOD method_1_224 findInstances ()Ljava/util/stream/Stream;

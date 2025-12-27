@@ -23,6 +23,7 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 		ARG 3 height
 		ARG 4 useStb
 		ARG 5 pointer
+	METHOD method_1_415 isClosed ()Z
 	METHOD method_4300 resizeSubRectTo (IIIILnet/minecraft/class_1011;)V
 		ARG 1 x
 		ARG 2 y

@@ -21,7 +21,7 @@ CLASS net/minecraft/class_12021 net/minecraft/world/debug/DebugDataStore
 		ARG 1 type
 		ARG 2 action
 	CLASS class_12022 EventConsumer
-		METHOD method_1_89 (Ljava/lang/Object;II)V
+		METHOD method_1_89 accept (Ljava/lang/Object;II)V
 			ARG 1 value
 			ARG 2 remainingTime
 			ARG 3 expiry

@@ -409,7 +409,7 @@ CLASS net/minecraft/class_2446 net/minecraft/data/recipe/RecipeGenerator
 		ARG 1 output
 		ARG 2 input
 	CLASS class_10113 BlockFamilyRecipeFactory
-		METHOD method_1_80 (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)Lnet/minecraft/class_5797;
+		METHOD method_1_80 create (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)Lnet/minecraft/class_5797;
 			ARG 1 generator
 			ARG 2 output
 			ARG 3 input

@@ -8,5 +8,5 @@ CLASS net/minecraft/class_10719 net/minecraft/client/world/DataCache
 	METHOD method_67267 compute (Lnet/minecraft/class_10719$class_10720;)Ljava/lang/Object;
 		ARG 1 context
 	CLASS class_10720 CacheContext
-		METHOD method_1_98 (Lnet/minecraft/class_10719;)V
+		METHOD method_1_98 registerForCleaning (Lnet/minecraft/class_10719;)V
 			ARG 1 dataCache

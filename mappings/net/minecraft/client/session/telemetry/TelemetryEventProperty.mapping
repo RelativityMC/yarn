@@ -55,7 +55,7 @@ CLASS net/minecraft/class_7969 net/minecraft/client/session/telemetry/TelemetryE
 		ARG 0 id
 		ARG 1 exportKey
 	CLASS class_7970 PropertyExporter
-		METHOD method_1_185 (Lcom/mojang/authlib/minecraft/TelemetryPropertyContainer;Ljava/lang/String;Ljava/lang/Object;)V
+		METHOD method_1_185 apply (Lcom/mojang/authlib/minecraft/TelemetryPropertyContainer;Ljava/lang/String;Ljava/lang/Object;)V
 			ARG 1 container
 			ARG 2 key
 			ARG 3 value

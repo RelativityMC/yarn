@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_10675 net/minecraft/test/TestInstanceBlockFinder
+	METHOD method_1_153 findBlocks ()Ljava/util/stream/Stream;

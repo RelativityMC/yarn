@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_9168 net/minecraft/entity/SpawnLocation
-	METHOD method_1_146 (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;Lnet/minecraft/class_1299;)Z
+	METHOD method_1_146 isSpawnPositionOk (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;Lnet/minecraft/class_1299;)Z
 		ARG 1 world
 		ARG 2 pos
 		ARG 3 entityType

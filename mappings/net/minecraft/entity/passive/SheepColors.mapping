@@ -19,6 +19,6 @@ CLASS net/minecraft/class_10777 net/minecraft/entity/passive/SheepColors
 	METHOD method_67669 createSingleSelector (Lnet/minecraft/class_1767;)Lnet/minecraft/class_10777$class_10778;
 		ARG 0 color
 	CLASS class_10778 ColorSelector
-		METHOD method_1_300 (Lnet/minecraft/class_5819;)Lnet/minecraft/class_1767;
+		METHOD method_1_300 get (Lnet/minecraft/class_5819;)Lnet/minecraft/class_1767;
 			ARG 1 random
 	CLASS class_10779 SpawnConfig

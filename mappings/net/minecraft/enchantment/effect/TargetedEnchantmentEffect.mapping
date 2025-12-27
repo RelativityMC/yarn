@@ -1,4 +1,8 @@
 CLASS net/minecraft/class_9710 net/minecraft/enchantment/effect/TargetedEnchantmentEffect
+	METHOD method_1_717 postAttackCodec (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
+		ARG 0 codec
+	METHOD method_1_718 equipmentDropsCodec (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
+		ARG 0 codec
 	METHOD method_60206 (Lnet/minecraft/class_9703;Ljava/lang/Object;Ljava/util/Optional;)Lnet/minecraft/class_9710;
 		ARG 0 enchantedx
 		ARG 1 effect

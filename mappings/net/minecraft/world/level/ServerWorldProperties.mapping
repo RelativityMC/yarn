@@ -11,8 +11,10 @@ CLASS net/minecraft/class_5268 net/minecraft/world/level/ServerWorldProperties
 	METHOD method_173 setThunderTime (I)V
 		ARG 1 thunderTime
 	METHOD method_190 getRainTime ()I
-	METHOD method_193 (Lnet/minecraft/class_1934;)V
+	METHOD method_193 setGameMode (Lnet/minecraft/class_1934;)V
 		ARG 1 gameMode
+	METHOD method_194 areCommandsAllowed ()Z
+	METHOD method_210 getGameMode ()Lnet/minecraft/class_1934;
 	METHOD method_222 isInitialized ()Z
 	METHOD method_223 setInitialized (Z)V
 		ARG 1 initialized

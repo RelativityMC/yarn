@@ -7,7 +7,7 @@ CLASS net/minecraft/class_1941 net/minecraft/world/CollisionView
 		ARG 2 box
 	METHOD method_8606 doesNotIntersectEntities (Lnet/minecraft/class_1297;)Z
 		ARG 1 entity
-	METHOD method_8611 (Lnet/minecraft/class_1297;Lnet/minecraft/class_265;)Z
+	METHOD method_8611 doesNotIntersectEntities (Lnet/minecraft/class_1297;Lnet/minecraft/class_265;)Z
 		COMMENT {@return {@code true} if {@code shape} does not intersect
 		COMMENT with non-spectator entities except {@code except}}
 		COMMENT

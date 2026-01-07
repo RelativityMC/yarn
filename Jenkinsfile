@@ -18,7 +18,7 @@ pipeline {
                 sh 'git fetch --tags'
                 sh 'git reset --hard'
                 withCredentials([usernamePassword(credentialsId: 'nexus-repository', passwordVariable: 'MAVEN_CRED_PSW', usernameVariable: 'MAVEN_CRED_USR')]) {
-                    sh './gradlew build javadocJar checkVersion publish --stacktrace'
+                    sh './gradlew build checkVersion publish --stacktrace -x javadoc'
                 }
             }
             post {

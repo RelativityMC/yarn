@@ -3,7 +3,7 @@ CLASS net/minecraft/class_10756 net/minecraft/entity/passive/ChickenVariant
 	FIELD field_56539 NETWORK_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_56540 ENTRY_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_56541 ENTRY_PACKET_CODEC Lnet/minecraft/class_9139;
-	METHOD <init> (Lnet/minecraft/class_10693;)V
+	METHOD <init> (Lnet/minecraft/class_10693;Lnet/minecraft/class_12079$class_10726;)V
 		ARG 1 modelAndTexture
 	METHOD method_67523 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance

@@ -32,10 +32,6 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 	FIELD field_47820 ENTITY_INTERACTION_RANGE F
 	FIELD field_49734 HELD_ITEM_SLOT_OFFSET I
 	FIELD field_49735 CRAFTING_SLOT_OFFSET I
-	FIELD field_49989 currentExplosionImpactPos Lnet/minecraft/class_243;
-	FIELD field_49990 explodedBy Lnet/minecraft/class_1297;
-	FIELD field_49991 ignoreFallDamageFromCurrentExplosion Z
-	FIELD field_52223 currentExplosionResetGraceTime I
 	FIELD field_62530 LEFT_SHOULDER_PARROT_VARIANT_ID Lnet/minecraft/class_2940;
 	FIELD field_62531 RIGHT_SHOULDER_PARROT_VARIANT_ID Lnet/minecraft/class_2940;
 	METHOD <init> (Lnet/minecraft/class_1937;Lcom/mojang/authlib/GameProfile;)V
@@ -290,7 +286,6 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 		ARG 2 additionalRange
 			COMMENT the player's additional interaction range added to {@linkplain
 			COMMENT #getEntityInteractionRange the default range}
-	METHOD method_58396 clearCurrentExplosion ()V
 	METHOD method_59818 isSpaceAroundPlayerEmpty (DDD)Z
 		ARG 1 offsetX
 		ARG 3 offsetZ
@@ -299,10 +294,6 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 		ARG 1 target
 		ARG 2 baseDamage
 		ARG 3 damageSource
-	METHOD method_60983 tryClearCurrentExplosion ()V
-	METHOD method_60984 setIgnoreFallDamageFromCurrentExplosion (Z)V
-		ARG 1 ignoreFallDamageFromCurrentExplosion
-	METHOD method_61165 shouldIgnoreFallDamageFromCurrentExplosion ()Z
 	METHOD method_61498 shouldRotateWithMinecart ()Z
 	METHOD method_61499 dropCreativeStack (Lnet/minecraft/class_1799;)V
 		ARG 1 stack
@@ -386,9 +377,6 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 		COMMENT is {@code box}}
 		ARG 1 box
 		ARG 2 additionalRange
-	METHOD method_76730 isInCurrentExplosionResetGraceTime ()Z
-	METHOD method_76731 setCurrentExplosionResetGraceTime (I)V
-		ARG 1 currentExplosionResetGraceTime
 	CLASS class_1658 SleepFailureReason
 		COMMENT A reason why a player cannot start sleeping.
 		FIELD comp_5144 message Lnet/minecraft/class_2561;

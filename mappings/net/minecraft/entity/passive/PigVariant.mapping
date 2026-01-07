@@ -3,7 +3,7 @@ CLASS net/minecraft/class_10586 net/minecraft/entity/passive/PigVariant
 	FIELD field_55682 ENTRY_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_55683 ENTRY_PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_56270 NETWORK_CODEC Lcom/mojang/serialization/Codec;
-	METHOD <init> (Lnet/minecraft/class_10693;)V
+	METHOD <init> (Lnet/minecraft/class_10693;Lnet/minecraft/class_12079$class_10726;)V
 		ARG 1 modelAndTexture
 	METHOD method_67134 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance

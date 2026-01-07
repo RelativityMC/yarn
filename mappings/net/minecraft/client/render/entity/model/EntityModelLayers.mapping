@@ -23,7 +23,6 @@ CLASS net/minecraft/class_5602 net/minecraft/client/render/entity/model/EntityMo
 	FIELD field_52979 PLAYER_EARS Lnet/minecraft/class_5601;
 	FIELD field_52980 PLAYER_CAPE Lnet/minecraft/class_5601;
 	FIELD field_52984 LLAMA_BABY_DECOR Lnet/minecraft/class_5601;
-	FIELD field_52989 PIG_BABY_SADDLE Lnet/minecraft/class_5601;
 	FIELD field_52996 SHEEP_BABY_WOOL Lnet/minecraft/class_5601;
 	FIELD field_55120 STRIDER_BABY_SADDLE Lnet/minecraft/class_5601;
 	FIELD field_55122 STANDING_BANNER_FLAG Lnet/minecraft/class_5601;
@@ -41,7 +40,6 @@ CLASS net/minecraft/class_5602 net/minecraft/client/render/entity/model/EntityMo
 	FIELD field_56089 ZOMBIE_HORSE_SADDLE Lnet/minecraft/class_5601;
 	FIELD field_56090 ZOMBIE_HORSE_BABY_SADDLE Lnet/minecraft/class_5601;
 	FIELD field_57102 SHEEP_WOOL_UNDERCOAT Lnet/minecraft/class_5601;
-	FIELD field_57103 SHEEP_BABY_WOOL_UNDERCOAT Lnet/minecraft/class_5601;
 	FIELD field_61684 BOGGED_EQUIPMENT Lnet/minecraft/class_11677;
 	FIELD field_61685 BREEZE_EYES Lnet/minecraft/class_5601;
 	FIELD field_61686 DROWNED_BABY_EQUIPMENT Lnet/minecraft/class_11677;

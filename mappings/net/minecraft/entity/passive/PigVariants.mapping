@@ -7,15 +7,14 @@ CLASS net/minecraft/class_10588 net/minecraft/entity/passive/PigVariants
 		ARG 0 id
 	METHOD method_66318 bootstrap (Lnet/minecraft/class_7891;)V
 		ARG 0 registry
-	METHOD method_66319 register (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_10586$class_10587;Ljava/lang/String;Lnet/minecraft/class_6862;)V
+	METHOD method_66319 register (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_10586$class_10587;Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/class_6862;)V
 		ARG 0 registry
 		ARG 1 key
 		ARG 2 model
 		ARG 3 textureName
-		ARG 4 biomes
-	METHOD method_66320 register (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_10586$class_10587;Ljava/lang/String;Lnet/minecraft/class_10702;)V
-		ARG 0 registry
+		ARG 5 biomes
+	METHOD method_66320 register (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_10586$class_10587;Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/class_10702;)V
 		ARG 1 key
 		ARG 2 model
 		ARG 3 textureName
-		ARG 4 spawnConditions
+		ARG 5 spawnConditions

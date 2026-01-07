@@ -33,19 +33,7 @@ CLASS net/minecraft/class_582 net/minecraft/client/render/entity/model/FelineEnt
 	COMMENT </tr>
 	COMMENT </table>
 	COMMENT </div>
-	FIELD field_3435 head Lnet/minecraft/class_630;
-	FIELD field_3436 upperTail Lnet/minecraft/class_630;
-	FIELD field_3437 body Lnet/minecraft/class_630;
-	FIELD field_3442 lowerTail Lnet/minecraft/class_630;
-	FIELD field_27454 leftHindLeg Lnet/minecraft/class_630;
-	FIELD field_27455 rightHindLeg Lnet/minecraft/class_630;
-	FIELD field_27456 leftFrontLeg Lnet/minecraft/class_630;
-	FIELD field_27457 rightFrontLeg Lnet/minecraft/class_630;
 	FIELD field_32517 FRONT_LEG_PIVOT_Z F
-	FIELD field_32518 TAIL1 Ljava/lang/String;
-		COMMENT The key of the upper tail model part, whose value is {@value}.
-	FIELD field_32519 TAIL2 Ljava/lang/String;
-		COMMENT The key of the lower tail model part, whose value is {@value}.
 	FIELD field_32521 HIND_LEG_PIVOT_Y F
 	FIELD field_32522 HIND_LEG_PIVOT_Z F
 	FIELD field_32523 FRONT_LEG_PIVOT_Y F

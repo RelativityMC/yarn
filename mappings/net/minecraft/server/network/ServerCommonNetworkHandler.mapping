@@ -18,7 +18,7 @@ CLASS net/minecraft/class_8609 net/minecraft/server/network/ServerCommonNetworkH
 		ARG 1 server
 		ARG 2 connection
 		ARG 3 clientData
-	METHOD method_14364 sendPacket (Lnet/minecraft/class_2596;)V
+	METHOD method_14364 (Lnet/minecraft/class_2596;)V
 		ARG 1 packet
 	METHOD method_52391 send (Lnet/minecraft/class_2596;Lio/netty/channel/ChannelFutureListener;)V
 		ARG 1 packet

@@ -18,10 +18,10 @@ CLASS net/minecraft/class_1277 net/minecraft/inventory/SimpleInventory
 	COMMENT overriding {@link #markDirty}, or by using {@link #addListener}.
 	FIELD field_5828 heldStacks Lnet/minecraft/class_2371;
 	FIELD field_5831 size I
-	METHOD <init> ([Lnet/minecraft/class_1799;)V
-		ARG 1 items
 	METHOD <init> (I)V
 		ARG 1 size
+	METHOD <init> ([Lnet/minecraft/class_1799;)V
+		ARG 1 items
 	METHOD method_5491 addStack (Lnet/minecraft/class_1799;)Lnet/minecraft/class_1799;
 		COMMENT Adds {@code stack} to this inventory as much as possible. It is possible
 		COMMENT that the item stack gets inserted into a non-empty slot or spread across

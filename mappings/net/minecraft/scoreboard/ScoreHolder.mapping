@@ -1,7 +1,6 @@
 CLASS net/minecraft/class_9015 net/minecraft/scoreboard/ScoreHolder
 	FIELD field_47537 WILDCARD_NAME Ljava/lang/String;
 	FIELD field_47538 WILDCARD Lnet/minecraft/class_9015;
-	METHOD method_5476 getDisplayName ()Lnet/minecraft/class_2561;
 	METHOD method_5820 getNameForScoreboard ()Ljava/lang/String;
 		COMMENT {@return the name uniquely identifying the score holder}
 		COMMENT

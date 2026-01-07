@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_10245 net/minecraft/world/EntityLookupView
-	METHOD method_8410 toServerWorld ()Lnet/minecraft/class_3218;
 	METHOD method_64386 (Lnet/minecraft/class_1309;)Z
 		ARG 0 entity
 	METHOD method_64387 getClosestPlayer (Lnet/minecraft/class_4051;DDD)Lnet/minecraft/class_1657;

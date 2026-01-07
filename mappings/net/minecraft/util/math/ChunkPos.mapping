@@ -2,8 +2,8 @@ CLASS net/minecraft/class_1923 net/minecraft/util/math/ChunkPos
 	COMMENT An immutable pair of two integers representing the X and Z coordinates of a chunk.
 	COMMENT
 	COMMENT <p>Chunk positions are usually serialized as a {@code long}.
-	FIELD field_9180 z I
-	FIELD field_9181 x I
+	FIELD comp_1_44 x I
+	FIELD comp_1_45 z I
 	FIELD field_17348 MARKER J
 		COMMENT A {@code long}-serialized chunk position {@code 1875066, 1875066}. This is a
 		COMMENT special value used as a marker.
@@ -12,13 +12,6 @@ CLASS net/minecraft/class_1923 net/minecraft/util/math/ChunkPos
 	FIELD field_54241 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_54242 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_54975 MAX_COORDINATE I
-	METHOD <init> (II)V
-		ARG 1 x
-		ARG 2 z
-	METHOD <init> (J)V
-		ARG 1 pos
-	METHOD <init> (Lnet/minecraft/class_2338;)V
-		ARG 1 pos
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
 	METHOD method_8323 getStartPos ()Lnet/minecraft/class_2338;

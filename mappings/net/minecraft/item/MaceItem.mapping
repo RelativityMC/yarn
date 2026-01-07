@@ -24,5 +24,4 @@ CLASS net/minecraft/class_9362 net/minecraft/item/MaceItem
 		ARG 1 attacked
 		ARG 2 distance
 	METHOD method_59532 createAttributeModifiers ()Lnet/minecraft/class_9285;
-	METHOD method_61658 getCurrentExplosionImpactPos (Lnet/minecraft/class_3222;)Lnet/minecraft/class_243;
-		ARG 1 player
+	METHOD method_61658 getCurrentExplosionImpactPos (Lnet/minecraft/class_1309;)Lnet/minecraft/class_243;

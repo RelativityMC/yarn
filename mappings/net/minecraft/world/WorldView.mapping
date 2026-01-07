@@ -14,7 +14,7 @@ CLASS net/minecraft/class_4538 net/minecraft/world/WorldView
 		ARG 4 create
 	METHOD method_8594 getAmbientDarkness ()I
 	METHOD method_8597 getDimension ()Lnet/minecraft/class_2874;
-	METHOD method_8598 getTopPosition (Lnet/minecraft/class_2902$class_2903;Lnet/minecraft/class_2338;)Lnet/minecraft/class_2338;
+	METHOD method_8598 (Lnet/minecraft/class_2902$class_2903;Lnet/minecraft/class_2338;)Lnet/minecraft/class_2338;
 		COMMENT {@return the position of the topmost block in the column
 		COMMENT containing {@code pos} using {@code heightmap} heightmap}
 		ARG 1 heightmap

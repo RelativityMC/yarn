@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_78 net/minecraft/client/render/entity/model/BabyCatEntityModel
+	FIELD field_1_881 COLLAR_TRANSFORMER Lnet/minecraft/class_9953;

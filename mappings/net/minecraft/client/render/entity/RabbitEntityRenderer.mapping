@@ -1,1 +1,5 @@
 CLASS net/minecraft/class_939 net/minecraft/client/render/entity/RabbitEntityRenderer
+	FIELD field_1_870 BABY_TEXTURES_BY_VARIANT Ljava/util/Map;
+	FIELD field_1_871 ADULT_TEXTURES_BY_VARIANT Ljava/util/Map;
+	FIELD field_1_872 TOAST_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_873 BABY_TOAST_TEXTURE Lnet/minecraft/class_2960;

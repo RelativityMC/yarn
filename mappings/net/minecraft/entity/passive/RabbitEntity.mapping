@@ -1,4 +1,8 @@
 CLASS net/minecraft/class_1463 net/minecraft/entity/passive/RabbitEntity
+	FIELD field_1_851 BABY_DIMENSIONS Lnet/minecraft/class_4048;
+	FIELD field_1_855 jumpState Lnet/minecraft/class_7094;
+	FIELD field_1_856 ticksUntilLook I
+	FIELD field_1_857 lookState Lnet/minecraft/class_7094;
 	FIELD field_6846 KILLER_BUNNY Lnet/minecraft/class_2960;
 	FIELD field_6847 moreCarrotTicks I
 	FIELD field_6848 ticksUntilJump I
@@ -10,6 +14,8 @@ CLASS net/minecraft/class_1463 net/minecraft/entity/passive/RabbitEntity
 	FIELD field_30360 MELEE_ATTACK_SPEED D
 	FIELD field_51587 KILLER_BUNNY_ATTACK_DAMAGE_MODIFIER_ID Lnet/minecraft/class_2960;
 	FIELD field_57616 DEFAULT_MORE_CARROT_TICKS I
+	METHOD method_1_788 animationTick ()V
+	METHOD method_1_789 shouldLook ()Z
 	METHOD method_6605 getJumpProgress (F)F
 		ARG 1 tickProgress
 	METHOD method_6606 setSpeed (D)V

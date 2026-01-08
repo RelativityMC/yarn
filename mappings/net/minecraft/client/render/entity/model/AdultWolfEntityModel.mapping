@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_79 net/minecraft/client/render/entity/model/AdultWolfEntityModel
+	FIELD field_1_883 REAL_HEAD Ljava/lang/String;
+	FIELD field_1_884 REAL_TAIL Ljava/lang/String;
+	FIELD field_1_885 UPPER_BODY Ljava/lang/String;
+	FIELD field_1_886 realHead Lnet/minecraft/class_630;
+	FIELD field_1_887 realTail Lnet/minecraft/class_630;
+	FIELD field_1_888 upperBody Lnet/minecraft/class_630;
+	METHOD method_1_800 getModelData (Lnet/minecraft/class_5605;)Lnet/minecraft/class_5609;
+		ARG 0 dilation

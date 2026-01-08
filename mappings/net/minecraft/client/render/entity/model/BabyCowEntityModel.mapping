@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_74 net/minecraft/client/render/entity/model/BabyCowEntityModel
+	METHOD method_1_794 getTexturedModelData ()Lnet/minecraft/class_5607;

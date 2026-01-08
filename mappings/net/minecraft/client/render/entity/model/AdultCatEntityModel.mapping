@@ -1,5 +1,6 @@
-CLASS net/minecraft/class_3680 net/minecraft/client/render/entity/model/CatEntityModel
+CLASS net/minecraft/class_3680 net/minecraft/client/render/entity/model/AdultCatEntityModel
 	COMMENT Represents the model of a {@linkplain CatEntity}.
 	COMMENT
 	COMMENT <p>Inherits the {@link OcelotEntityModel}.
+	FIELD field_1_894 DILATION Lnet/minecraft/class_5605;
 	FIELD field_52884 CAT_TRANSFORMER Lnet/minecraft/class_9953;

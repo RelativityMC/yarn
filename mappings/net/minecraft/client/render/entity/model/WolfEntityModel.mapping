@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_1_73 net/minecraft/client/render/entity/model/WolfEntityModel
+	FIELD field_1_861 body Lnet/minecraft/class_630;
+	FIELD field_1_862 head Lnet/minecraft/class_630;
+	FIELD field_1_863 leftFrontLeg Lnet/minecraft/class_630;
+	FIELD field_1_864 leftHindLeg Lnet/minecraft/class_630;
+	FIELD field_1_865 rightFrontLeg Lnet/minecraft/class_630;
+	FIELD field_1_866 rightHindLeg Lnet/minecraft/class_630;
+	FIELD field_1_867 tail Lnet/minecraft/class_630;
+	METHOD method_1_790 setSittingAngles (Lnet/minecraft/class_10085;)V
+		ARG 1 state
+	METHOD method_1_792 setRoll (Lnet/minecraft/class_10085;)V
+		ARG 1 state

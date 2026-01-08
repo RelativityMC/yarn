@@ -1,5 +1,15 @@
 CLASS net/minecraft/class_9232 net/minecraft/util/profiling/jfr/event/ChunkRegionEvent
+	FIELD field_1_6 bytes I
+	FIELD field_1_7 chunkPosX I
+	FIELD field_1_8 chunkPosZ I
+	FIELD field_1_9 compression Ljava/lang/String;
+	FIELD field_1_10 dimension Ljava/lang/String;
 	FIELD field_1_11 worldId Ljava/lang/String;
+	FIELD field_1_12 localPosX I
+	FIELD field_1_13 localPosZ I
+	FIELD field_1_14 regionPosX I
+	FIELD field_1_15 regionPosZ I
+	FIELD field_1_16 type Ljava/lang/String;
 	METHOD <init> (Lnet/minecraft/class_9240;Lnet/minecraft/class_1923;Lnet/minecraft/class_4486;I)V
 		ARG 1 key
 		ARG 2 chunkPos

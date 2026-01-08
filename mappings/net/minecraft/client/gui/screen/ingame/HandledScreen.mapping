@@ -33,6 +33,12 @@ CLASS net/minecraft/class_465 net/minecraft/client/gui/screen/ingame/HandledScre
 		ARG 1 handler
 		ARG 2 inventory
 		ARG 3 title
+	METHOD <init> (Lnet/minecraft/class_1703;Lnet/minecraft/class_1661;Lnet/minecraft/class_2561;II)V
+		ARG 1 handler
+		ARG 2 inventory
+		ARG 3 title
+		ARG 4 backgroundWidth
+		ARG 5 backgroundHeight
 	METHOD method_1_741 onFinishDrag ()V
 	METHOD method_1_742 canDrag (Lnet/minecraft/class_1735;Lnet/minecraft/class_1799;)Z
 		ARG 1 slot

@@ -1,3 +1,45 @@
 CLASS net/minecraft/class_1_91 net/minecraft/client/render/entity/model/FelineEntityModel
+	COMMENT Represents the model of an ocelot-like entity.
+	COMMENT
+	COMMENT <div class="fabric">
+	COMMENT <table border=1>
+	COMMENT <caption>Model parts of this model</caption>
+	COMMENT <tr>
+	COMMENT   <th>Part Name</th><th>Parent</th><th>Corresponding Field</th>
+	COMMENT </tr>
+	COMMENT <tr>
+	COMMENT   <td>{@value EntityModelPartNames#HEAD}</td><td>Root part</td><td>{@link #head}</td>
+	COMMENT </tr>
+	COMMENT <tr>
+	COMMENT   <td>{@value EntityModelPartNames#BODY}</td><td>Root part</td><td>{@link #body}</td>
+	COMMENT </tr>
+	COMMENT <tr>
+	COMMENT   <td>{@value #TAIL1}</td><td>Root part</td><td>{@link #upperTail}</td>
+	COMMENT </tr>
+	COMMENT <tr>
+	COMMENT   <td>{@value #TAIL2}</td><td>Root part</td><td>{@link #lowerTail}</td>
+	COMMENT </tr>
+	COMMENT <tr>
+	COMMENT   <td>{@value EntityModelPartNames#RIGHT_HIND_LEG}</td><td>Root part</td><td>{@link #rightHindLeg}</td>
+	COMMENT </tr>
+	COMMENT <tr>
+	COMMENT   <td>{@value EntityModelPartNames#LEFT_HIND_LEG}</td><td>Root part</td><td>{@link #leftHindLeg}</td>
+	COMMENT </tr>
+	COMMENT <tr>
+	COMMENT   <td>{@value EntityModelPartNames#RIGHT_FRONT_LEG}</td><td>Root part</td><td>{@link #rightFrontLeg}</td>
+	COMMENT </tr>
+	COMMENT <tr>
+	COMMENT   <td>{@value EntityModelPartNames#LEFT_FRONT_LEG}</td><td>Root part</td><td>{@link #leftFrontLeg}</td>
+	COMMENT </tr>
+	COMMENT </table>
+	COMMENT </div>
 	FIELD field_1_903 TAIL1 Ljava/lang/String;
 	FIELD field_1_904 TAIL2 Ljava/lang/String;
+	FIELD field_1_905 body Lnet/minecraft/class_630;
+	FIELD field_1_906 head Lnet/minecraft/class_630;
+	FIELD field_1_907 leftFrontLeg Lnet/minecraft/class_630;
+	FIELD field_1_908 leftHindLeg Lnet/minecraft/class_630;
+	FIELD field_1_909 rightFrontLeg Lnet/minecraft/class_630;
+	FIELD field_1_910 rightHindLeg Lnet/minecraft/class_630;
+	FIELD field_1_911 upperTail Lnet/minecraft/class_630;
+	FIELD field_1_912 lowerTail Lnet/minecraft/class_630;

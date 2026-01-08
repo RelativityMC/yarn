@@ -11,6 +11,9 @@ CLASS net/minecraft/class_10638 net/minecraft/block/entity/TestInstanceBlockEnti
 	METHOD <init> (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
 		ARG 1 pos
 		ARG 2 state
+	METHOD method_1_812 getPadding ()I
+	METHOD method_1_813 getBlockBoxWithPadding ()Lnet/minecraft/class_3341;
+	METHOD method_1_814 getBoxWithPadding ()Lnet/minecraft/class_238;
 	METHOD method_66731 placeStructure ()Z
 	METHOD method_66732 getStartPos ()Lnet/minecraft/class_2338;
 	METHOD method_66733 placeBarriers ()V

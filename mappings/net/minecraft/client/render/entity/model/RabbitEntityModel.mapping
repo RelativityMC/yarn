@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_1_76 net/minecraft/client/render/entity/model/RabbitEntityModel
+	FIELD field_1_874 BACKLEGS Ljava/lang/String;
+	FIELD field_1_875 FRONTLEGS Ljava/lang/String;
+	FIELD field_1_876 LEFT_HAUNCH Ljava/lang/String;
+	FIELD field_1_877 RIGHT_HAUNCH Ljava/lang/String;
+	FIELD field_1_878 jumpAnimation Lnet/minecraft/class_11509;
+	FIELD field_1_879 lookAnimation Lnet/minecraft/class_11509;
+		COMMENT Used when a rabbit has just been released from a leash.
+	METHOD <init> (Lnet/minecraft/class_630;Lnet/minecraft/class_7184;Lnet/minecraft/class_7184;)V
+		ARG 1 root
+		ARG 2 jump
+		ARG 3 look

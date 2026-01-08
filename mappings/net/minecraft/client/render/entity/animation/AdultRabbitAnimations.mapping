@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_88 net/minecraft/client/render/entity/animation/AdultRabbitAnimations
+	FIELD field_1_896 JUMP Lnet/minecraft/class_7184;
+	FIELD field_1_897 LOOK Lnet/minecraft/class_7184;

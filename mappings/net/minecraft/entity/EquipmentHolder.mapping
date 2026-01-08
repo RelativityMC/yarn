@@ -1,11 +1,11 @@
 CLASS net/minecraft/class_9460 net/minecraft/entity/EquipmentHolder
-	METHOD method_5673 (Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;)V
+	METHOD method_5673 setEquipment (Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;)V
 		ARG 1 slot
 		ARG 2 stack
 	METHOD method_5946 setEquipmentDropChance (Lnet/minecraft/class_1304;F)V
 		ARG 1 slot
 		ARG 2 dropChance
-	METHOD method_6118 (Lnet/minecraft/class_1304;)Lnet/minecraft/class_1799;
+	METHOD method_6118 getEquipment (Lnet/minecraft/class_1304;)Lnet/minecraft/class_1799;
 		ARG 1 slot
 	METHOD method_58631 setEquipmentFromTable (Lnet/minecraft/class_9652;Lnet/minecraft/class_8567;)V
 		ARG 1 equipmentTable

@@ -12,8 +12,13 @@ CLASS net/minecraft/class_1923 net/minecraft/util/math/ChunkPos
 	FIELD field_54241 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_54242 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_54975 MAX_COORDINATE I
+	FIELD field_54976 CHUNK_GENERATION_STEPS_MARGIN I
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
+	METHOD method_1_778 fromBlockPos (Lnet/minecraft/class_2338;)Lnet/minecraft/class_1923;
+		ARG 0 blockPos
+	METHOD method_1_779 fromLong (J)Lnet/minecraft/class_1923;
+		ARG 0 l
 	METHOD method_8323 getStartPos ()Lnet/minecraft/class_2338;
 	METHOD method_8324 toLong ()J
 		COMMENT {@return the chunk position serialized as {@code long}}
@@ -64,10 +69,10 @@ CLASS net/minecraft/class_1923 net/minecraft/util/math/ChunkPos
 		COMMENT
 		COMMENT @see #toLong(int, int)
 		ARG 0 pos
-	METHOD method_42305 fromRegion (II)Lnet/minecraft/class_1923;
+	METHOD method_42305 fromRegionMin (II)Lnet/minecraft/class_1923;
 		ARG 0 x
 		ARG 1 z
-	METHOD method_42306 fromRegionCenter (II)Lnet/minecraft/class_1923;
+	METHOD method_42306 fromRegionMax (II)Lnet/minecraft/class_1923;
 		ARG 0 x
 		ARG 1 z
 	METHOD method_42307 hashCode (II)I

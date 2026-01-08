@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_90 net/minecraft/client/render/entity/model/AdultChickenEntityModel
+	FIELD field_1_900 RED_THING Ljava/lang/String;
+	FIELD field_1_901 head Lnet/minecraft/class_630;
+	METHOD method_1_810 getModelData ()Lnet/minecraft/class_5609;
+	METHOD method_1_811 getTexturedModelData ()Lnet/minecraft/class_5607;

@@ -1,5 +1,8 @@
 CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	COMMENT Represents an entity which has a health value and can receive damage.
+	FIELD field_1_847 currentExplosionEntity Lnet/minecraft/class_1297;
+	FIELD field_1_848 currentImpulseContextResetGraceTime I
+	FIELD field_1_849 currentExplosionImpactPos Lnet/minecraft/class_243;
 	FIELD field_6212 sidewaysSpeed F
 	FIELD field_6213 deathTime I
 	FIELD field_6214 POTION_SWIRLS_AMBIENT Lnet/minecraft/class_2940;
@@ -94,6 +97,15 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	FIELD field_63291 ticksSinceHandEquipping I
 	FIELD field_63292 piercingCooldowns Lit/unimi/dsi/fastutil/objects/Object2LongMap;
 	FIELD field_63950 lastKineticAttackTime J
+	METHOD method_1_780 setImpulseContextResetGraceTime (I)V
+		ARG 1 graceTime
+	METHOD method_1_781 isAffectedByImpulse ()Z
+	METHOD method_1_782 hasImpulseContextResetGraceTime ()Z
+	METHOD method_1_783 resetImpulseData ()V
+	METHOD method_1_784 onReceiveImpulse (ZLnet/minecraft/class_243;)V
+		ARG 1 wind
+		ARG 2 pos
+	METHOD method_1_785 resetImpulseDataIfGraceTimeReset ()V
 	METHOD method_5673 equipStack (Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;)V
 		ARG 1 slot
 		ARG 2 stack
@@ -722,6 +734,8 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 4 entityY
 	METHOD method_64619 isEntityLookingAtMe (Lnet/minecraft/class_1309;DZZ[D)Z
 		ARG 1 entity
+		ARG 2 tolerance
+		ARG 4 scaleToleranceByDistance
 		ARG 5 visualShape
 		ARG 6 checkedYs
 	METHOD method_64620 (Lnet/minecraft/class_1309;)Z

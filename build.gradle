@@ -421,6 +421,30 @@ tasks.register('mapNamedJar', MapJarTask) {
 	]
 }
 
+// Test that we cam remap from official to named
+tasks.register('mapDirectOfficialNamedJar', MapJarTask) {
+	dependsOn mergeV2, stripMergedMinecraftJar
+	group = mapJarGroup
+	output = layout.buildDirectory.file("${minecraft_version}-direct-official-named.jar")
+	input = stripMergedMinecraftJar.output
+	mappings = mergeV2.output
+	from = 'official'
+	to = 'named'
+}
+
+// Test that we cam remap back from named to official
+tasks.register('mapDirectNamedOfficialJar', MapJarTask) {
+	dependsOn mergeV2, mapDirectOfficialNamedJar
+	group = mapJarGroup
+	output = layout.buildDirectory.file("${minecraft_version}-direct-official-named-official.jar")
+	input = mapDirectOfficialNamedJar.output
+	mappings = mergeV2.output
+	from = 'named'
+	to = 'official'
+}
+
+check.dependsOn mapDirectNamedOfficialJar
+
 // Test that we can remap back to intermediary.
 tasks.register('remapIntermediaryJar', MapJarTask) {
 	group = mapJarGroup

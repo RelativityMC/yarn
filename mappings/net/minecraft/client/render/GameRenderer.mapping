@@ -135,7 +135,7 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	METHOD method_76543 setCameraOverride (Lnet/minecraft/class_12335;)V
 		ARG 1 cameraOverride
 	METHOD method_76544 getCameraOverride ()Lnet/minecraft/class_12335;
-	CLASS 1
+	CLASS 1 1
 		FIELD field_63914 index I
 		METHOD method_75838 addGlyph (Lnet/minecraft/class_12236;Z)V
 			ARG 1 glyph

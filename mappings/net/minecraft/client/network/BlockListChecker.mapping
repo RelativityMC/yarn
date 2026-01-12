@@ -4,7 +4,7 @@ CLASS net/minecraft/class_6394 net/minecraft/client/network/BlockListChecker
 		ARG 1 address
 	METHOD method_37099 isAllowed (Lnet/minecraft/class_639;)Z
 		ARG 1 address
-	CLASS 1
+	CLASS 1 1
 		METHOD method_37100 (Ljava/lang/String;Ljava/lang/String;Ljava/util/function/Predicate;)Z
 			ARG 2 predicate
 		METHOD method_37101 (Ljava/lang/String;Ljava/util/function/Predicate;)Z

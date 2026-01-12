@@ -13,5 +13,5 @@ CLASS net/minecraft/class_7935 net/minecraft/util/logging/LogWriter
 	METHOD method_47568 write (Ljava/lang/Object;)V
 		ARG 1 object
 	METHOD method_47569 closeIfNotReferenced ()V
-	CLASS 1
+	CLASS 1 1
 		FIELD field_41301 pos J

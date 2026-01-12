@@ -424,7 +424,7 @@ CLASS net/minecraft/class_2446 net/minecraft/data/recipe/RecipeGenerator
 			ARG 2 exporter
 		METHOD method_62767 (Lnet/minecraft/class_7403;Lnet/minecraft/class_7225$class_7874;)Ljava/util/concurrent/CompletionStage;
 			ARG 2 registries
-		CLASS 1
+		CLASS 1 1
 			FIELD field_53728 registries Lnet/minecraft/class_7225$class_7874;
 			FIELD field_53729 recipePathResolver Lnet/minecraft/class_7784$class_7489;
 			FIELD field_53730 recipeAdvancementPathResolver Lnet/minecraft/class_7784$class_7489;

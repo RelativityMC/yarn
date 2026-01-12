@@ -67,7 +67,7 @@ CLASS net/minecraft/class_340 net/minecraft/client/gui/hud/DebugHud
 	METHOD method_61981 getPieChart ()Lnet/minecraft/class_9931;
 	METHOD method_67545 renderDebugCrosshair (Lnet/minecraft/class_4184;)V
 		ARG 1 camera
-	CLASS 1
+	CLASS 1 1
 		METHOD method_72742 (Lnet/minecraft/class_2960;)Ljava/util/Collection;
 			ARG 0 sectionLines
 		METHOD method_72746 (Lnet/minecraft/class_2960;)Ljava/util/Collection;

@@ -65,9 +65,9 @@ CLASS net/minecraft/class_7877 net/minecraft/registry/RegistryBuilder
 		ARG 1 key
 	METHOD method_57094 (Ljava/util/Map;Lnet/minecraft/class_7877$class_7879;Lnet/minecraft/class_7225$class_7226;)V
 		ARG 2 wrapper
-	CLASS 2
+	CLASS 2 2
 		FIELD field_40947 keysToEntries Ljava/util/Map;
-	CLASS 3
+	CLASS 3 3
 		METHOD method_57095 get (Lnet/minecraft/class_5321;)Ljava/util/Optional;
 			ARG 1 registryRef
 	CLASS class_7878 Registries

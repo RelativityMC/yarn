@@ -64,7 +64,7 @@ CLASS net/minecraft/class_1066 net/minecraft/client/resource/server/ServerResour
 	METHOD method_55540 declineAll ()V
 	METHOD method_55541 clear ()V
 	METHOD method_55542 getReloadScheduler ()Lnet/minecraft/class_9041;
-	CLASS 3
+	CLASS 3 3
 		FIELD field_47604 toastType Lnet/minecraft/class_370$class_9037;
 		FIELD field_47605 toastTitle Lnet/minecraft/class_2561;
 		FIELD field_47606 toastDescription Lnet/minecraft/class_2561;
@@ -74,11 +74,11 @@ CLASS net/minecraft/class_1066 net/minecraft/client/resource/server/ServerResour
 		METHOD method_55543 showProgress (J)V
 			ARG 1 writtenBytes
 		METHOD method_55544 showToast ()V
-	CLASS 4
+	CLASS 4 4
 		FIELD field_47614 MAX_BYTES I
 		FIELD field_47615 SHA1 Lcom/google/common/hash/HashFunction;
 		METHOD method_55545 getHeaders ()Ljava/util/Map;
-	CLASS 5
+	CLASS 5 5
 		FIELD field_47618 currentlyRunning Z
 		FIELD field_47619 shouldKeepRunning Z
 		METHOD method_55547 runOnExecutor ()V

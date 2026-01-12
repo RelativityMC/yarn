@@ -80,9 +80,9 @@ CLASS net/minecraft/class_2170 net/minecraft/server/command/CommandManager
 		ARG 0 command
 	METHOD method_75745 createSource (Lnet/minecraft/class_12096;)Lnet/minecraft/class_2168;
 		ARG 0 permissions
-	CLASS 1
+	CLASS 1 1
 		FIELD field_63811 source Lnet/minecraft/class_2168;
-	CLASS 2
+	CLASS 2 2
 		METHOD method_56811 createTagCreatingLookup (Lnet/minecraft/class_7225$class_7226;)Lnet/minecraft/class_7225$class_7226$class_7875;
 			ARG 1 original
 	CLASS class_2171 CommandParser

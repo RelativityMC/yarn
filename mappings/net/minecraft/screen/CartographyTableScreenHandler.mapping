@@ -27,7 +27,7 @@ CLASS net/minecraft/class_3910 net/minecraft/screen/CartographyTableScreenHandle
 	METHOD method_17382 (Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)V
 		ARG 4 world
 		ARG 5 pos
-	CLASS 5
+	CLASS 5 5
 		METHOD method_17387 (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)V
 			ARG 1 world
 			ARG 2 pos

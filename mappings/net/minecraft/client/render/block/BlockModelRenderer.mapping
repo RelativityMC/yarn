@@ -150,10 +150,10 @@ CLASS net/minecraft/class_778 net/minecraft/client/render/block/BlockModelRender
 		METHOD method_68891 (Lnet/minecraft/class_1920;Lnet/minecraft/class_2338;)I
 			ARG 1 world
 			ARG 2 pos
-		CLASS 1
+		CLASS 1 1
 			METHOD rehash (I)V
 				ARG 1 newN
-		CLASS 2
+		CLASS 2 2
 			METHOD rehash (I)V
 				ARG 1 newN
 	CLASS class_10931 LightmapCache

@@ -39,7 +39,7 @@ CLASS net/minecraft/class_2519 net/minecraft/nbt/NbtString
 		COMMENT @implNote The resulting string is not quoted. Unlike {@link #escape}, this
 		COMMENT escapes both singlequotes and double quotes.
 		ARG 0 value
-	CLASS 1
+	CLASS 1 1
 		METHOD method_53904 readString (Ljava/io/DataInput;Lnet/minecraft/class_2505;)Ljava/lang/String;
 			ARG 0 input
 			ARG 1 tracker

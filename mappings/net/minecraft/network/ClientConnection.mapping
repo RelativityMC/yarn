@@ -197,14 +197,14 @@ CLASS net/minecraft/class_2535 net/minecraft/network/ClientConnection
 	METHOD method_60924 disconnect (Lnet/minecraft/class_9812;)V
 		ARG 1 disconnectionInfo
 	METHOD method_60926 getDisconnectionInfo ()Lnet/minecraft/class_9812;
-	CLASS 1
+	CLASS 1 1
 		METHOD initChannel (Lio/netty/channel/Channel;)V
 			ARG 1 channel
-	CLASS 2
+	CLASS 2 2
 		METHOD write (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Object;Lio/netty/channel/ChannelPromise;)V
 			ARG 1 context
 			ARG 2 value
 			ARG 3 promise
-	CLASS 3
+	CLASS 3 3
 		METHOD initChannel (Lio/netty/channel/Channel;)V
 			ARG 1 channel

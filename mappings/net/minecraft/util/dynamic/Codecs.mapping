@@ -338,7 +338,7 @@ CLASS net/minecraft/class_5699 net/minecraft/util/dynamic/Codecs
 		ARG 1 value
 	METHOD method_76690 (Ljava/util/Map;)Lcom/mojang/serialization/DataResult;
 		ARG 0 map
-	CLASS 1
+	CLASS 1 1
 		METHOD apply (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;Lcom/mojang/serialization/DataResult;)Lcom/mojang/serialization/DataResult;
 			ARG 1 ops
 			ARG 2 input
@@ -347,7 +347,7 @@ CLASS net/minecraft/class_5699 net/minecraft/util/dynamic/Codecs
 			ARG 1 ops
 			ARG 2 input
 			ARG 3 result
-	CLASS 2
+	CLASS 2 2
 		METHOD decode (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
 			ARG 1 ops
 			ARG 2 input
@@ -355,7 +355,7 @@ CLASS net/minecraft/class_5699 net/minecraft/util/dynamic/Codecs
 			ARG 1 input
 			ARG 2 ops
 			ARG 3 prefix
-	CLASS 3
+	CLASS 3 3
 		METHOD decode (Lcom/mojang/serialization/DynamicOps;Lcom/mojang/serialization/MapLike;)Lcom/mojang/serialization/DataResult;
 			ARG 1 ops
 			ARG 2 input
@@ -365,7 +365,7 @@ CLASS net/minecraft/class_5699 net/minecraft/util/dynamic/Codecs
 			ARG 3 prefix
 		METHOD keys (Lcom/mojang/serialization/DynamicOps;)Ljava/util/stream/Stream;
 			ARG 1 ops
-	CLASS 4
+	CLASS 4 4
 		METHOD apply (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;Lcom/mojang/serialization/DataResult;)Lcom/mojang/serialization/DataResult;
 			ARG 1 ops
 			ARG 2 input
@@ -376,11 +376,11 @@ CLASS net/minecraft/class_5699 net/minecraft/util/dynamic/Codecs
 			ARG 3 result
 		METHOD method_39515 (Lcom/mojang/serialization/DataResult;Ljava/util/function/Function;Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/serialization/DataResult;
 			ARG 2 pair
-	CLASS 5
+	CLASS 5 5
 		METHOD decode (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
 			ARG 1 ops
 			ARG 2 input
-	CLASS 6
+	CLASS 6 6
 		METHOD decode (Lcom/mojang/serialization/DynamicOps;Lcom/mojang/serialization/MapLike;)Lcom/mojang/serialization/DataResult;
 			ARG 1 ops
 			ARG 2 input
@@ -396,7 +396,7 @@ CLASS net/minecraft/class_5699 net/minecraft/util/dynamic/Codecs
 			ARG 3 ops
 		METHOD method_54943 (Lcom/mojang/serialization/MapLike;Ljava/lang/String;Lcom/mojang/serialization/DynamicOps;Ljava/util/function/Function;Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/serialization/DataResult;
 			ARG 4 pair
-	CLASS 7
+	CLASS 7 7
 		METHOD decode (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
 			ARG 1 ops
 			ARG 2 input

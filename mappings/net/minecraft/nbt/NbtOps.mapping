@@ -99,7 +99,7 @@ CLASS net/minecraft/class_2509 net/minecraft/nbt/NbtOps
 	METHOD remove (Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 		ARG 1 element
 		ARG 2 key
-	CLASS 1
+	CLASS 1 1
 		METHOD get (Ljava/lang/Object;)Ljava/lang/Object;
 			ARG 1 nbt
 		METHOD get (Ljava/lang/String;)Ljava/lang/Object;

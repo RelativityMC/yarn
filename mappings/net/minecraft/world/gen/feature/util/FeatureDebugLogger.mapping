@@ -18,7 +18,7 @@ CLASS net/minecraft/class_6785 net/minecraft/world/gen/feature/util/FeatureDebug
 		ARG 3 featureData
 		ARG 4 count
 	METHOD method_39603 dump ()V
-	CLASS 1
+	CLASS 1 1
 		METHOD load (Ljava/lang/Object;)Ljava/lang/Object;
 			ARG 1 world
 	CLASS class_6786 FeatureData

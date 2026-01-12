@@ -71,7 +71,7 @@ CLASS net/minecraft/class_12036 net/minecraft/client/network/ClientDebugSubscrip
 		ARG 0 type
 	METHOD method_76759 clearSubscriptions (Ljava/util/Set;)V
 		ARG 1 subscriptions
-	CLASS 1
+	CLASS 1 1
 		METHOD method_74738 (Lnet/minecraft/class_1937;Ljava/util/function/BiConsumer;Ljava/util/UUID;Ljava/lang/Object;)V
 			ARG 2 uuid
 			ARG 3 type

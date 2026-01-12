@@ -529,7 +529,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 1 world
 	METHOD method_76797 disconnectWithProgressScreen (Z)V
 		ARG 1 stopSounds
-	CLASS 1
+	CLASS 1 1
 		FIELD field_52756 closed Z
 	CLASS class_5859 ChatRestriction
 		COMMENT Represents the restrictions on chat on a Minecraft client.

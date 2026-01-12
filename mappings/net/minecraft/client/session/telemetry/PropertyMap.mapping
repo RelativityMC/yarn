@@ -8,7 +8,7 @@ CLASS net/minecraft/class_7973 net/minecraft/client/session/telemetry/PropertyMa
 	METHOD method_47761 createCodec (Ljava/util/List;)Lcom/mojang/serialization/MapCodec;
 		ARG 0 properties
 	METHOD method_47762 keySet ()Ljava/util/Set;
-	CLASS 1
+	CLASS 1 1
 		METHOD decode (Lcom/mojang/serialization/DynamicOps;Lcom/mojang/serialization/MapLike;)Lcom/mojang/serialization/DataResult;
 			ARG 1 ops
 			ARG 2 map

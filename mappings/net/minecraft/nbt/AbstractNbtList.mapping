@@ -18,5 +18,5 @@ CLASS net/minecraft/class_2483 net/minecraft/nbt/AbstractNbtList
 		ARG 2 element
 	METHOD method_10536 remove (I)Lnet/minecraft/class_2520;
 		ARG 1 element
-	CLASS 1
+	CLASS 1 1
 		FIELD field_57976 current I

@@ -40,6 +40,6 @@ CLASS net/minecraft/class_3248 net/minecraft/server/network/ServerLoginNetworkHa
 		ARG 1 profile
 	METHOD method_52420 sendSuccessPacket (Lcom/mojang/authlib/GameProfile;)V
 		ARG 1 profile
-	CLASS 1
+	CLASS 1 1
 		METHOD method_14386 getClientAddress ()Ljava/net/InetAddress;
 	CLASS class_3249 State

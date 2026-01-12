@@ -325,16 +325,16 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 		ARG 0 sizeTrackerSupplier
 	METHOD method_72187 lengthPrependedRegistry (I)Lnet/minecraft/class_9139$class_9140;
 		ARG 0 maxSize
-	CLASS 3
-	CLASS 4
-	CLASS 5
-	CLASS 9
-	CLASS 10
-	CLASS 17
-	CLASS 18
-	CLASS 19
-	CLASS 22
-	CLASS 24
-	CLASS 25
-	CLASS 26
-	CLASS 28
+	CLASS 3 3
+	CLASS 4 4
+	CLASS 5 5
+	CLASS 9 9
+	CLASS 10 10
+	CLASS 17 17
+	CLASS 18 18
+	CLASS 19 19
+	CLASS 22 22
+	CLASS 24 24
+	CLASS 25 25
+	CLASS 26 26
+	CLASS 28 28

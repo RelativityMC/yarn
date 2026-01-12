@@ -29,7 +29,7 @@ CLASS net/minecraft/class_11580 net/minecraft/entity/TypedEntityData
 		COMMENT @deprecated Use {@link #copyNbtWithoutId} instead.j
 	METHOD method_72540 copyNbtWithoutId ()Lnet/minecraft/class_2487;
 	METHOD method_72541 getNbtWithoutIdInternal ()Lnet/minecraft/class_2487;
-	CLASS 1
+	CLASS 1 1
 		METHOD decode (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
 			ARG 1 ops
 			ARG 2 value

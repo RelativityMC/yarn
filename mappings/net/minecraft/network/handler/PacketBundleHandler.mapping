@@ -9,8 +9,8 @@ CLASS net/minecraft/class_8039 net/minecraft/network/handler/PacketBundleHandler
 	METHOD method_48327 forEachPacket (Lnet/minecraft/class_2596;Ljava/util/function/Consumer;)V
 		ARG 1 packet
 		ARG 2 consumer
-	CLASS 1
-		CLASS 1
+	CLASS 1 1
+		CLASS 1 1
 			FIELD field_41884 packets Ljava/util/List;
 	CLASS class_8040 Bundler
 		METHOD method_48328 add (Lnet/minecraft/class_2596;)Lnet/minecraft/class_2596;

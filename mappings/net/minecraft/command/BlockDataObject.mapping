@@ -9,5 +9,5 @@ CLASS net/minecraft/class_3161 net/minecraft/command/BlockDataObject
 		ARG 2 pos
 	METHOD method_13878 (Ljava/lang/String;)Lnet/minecraft/class_3164$class_3167;
 		ARG 0 argumentName
-	CLASS 1
+	CLASS 1 1
 		FIELD field_13787 argumentName Ljava/lang/String;

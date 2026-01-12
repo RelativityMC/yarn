@@ -208,7 +208,7 @@ CLASS net/minecraft/class_327 net/minecraft/client/font/TextRenderer
 			ARG 3 light
 		METHOD method_75775 drawEmptyGlyphRect (Lnet/minecraft/class_12237;)V
 			ARG 1 rect
-		CLASS 1
+		CLASS 1 1
 			METHOD method_73365 draw (Lnet/minecraft/class_11767;)V
 				ARG 1 glyph
 	CLASS class_11465 GlyphDrawable

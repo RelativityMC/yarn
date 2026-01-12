@@ -40,7 +40,7 @@ CLASS net/minecraft/class_3971 net/minecraft/screen/StonecutterScreenHandler
 		ARG 1 id
 	METHOD method_64655 (Lnet/minecraft/class_8786;)V
 		ARG 1 recipe
-	CLASS 2
+	CLASS 2 2
 		METHOD method_17868 (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)V
 			ARG 1 world
 			ARG 2 pos

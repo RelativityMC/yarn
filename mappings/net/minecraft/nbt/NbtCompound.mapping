@@ -377,7 +377,7 @@ CLASS net/minecraft/class_2487 net/minecraft/nbt/NbtCompound
 	METHOD method_68721 (Ljava/util/HashMap;Ljava/lang/String;Lnet/minecraft/class_2520;)V
 		ARG 1 key
 		ARG 2 value
-	CLASS 1
+	CLASS 1 1
 		METHOD method_53888 scanCompound (Ljava/io/DataInput;Lnet/minecraft/class_6836;Lnet/minecraft/class_2505;)Lnet/minecraft/class_6836$class_6838;
 			ARG 0 input
 			ARG 1 visitor

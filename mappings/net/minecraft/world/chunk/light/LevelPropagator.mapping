@@ -56,6 +56,6 @@ CLASS net/minecraft/class_3554 net/minecraft/world/chunk/light/LevelPropagator
 	METHOD method_50014 calculateLevel (II)I
 		ARG 1 a
 		ARG 2 b
-	CLASS 1
+	CLASS 1 1
 		METHOD rehash (I)V
 			ARG 1 newN

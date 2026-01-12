@@ -9,7 +9,7 @@ CLASS net/minecraft/class_9336 net/minecraft/component/Component
 		ARG 1 value
 	METHOD method_57946 apply (Lnet/minecraft/class_9335;)V
 		ARG 1 components
-	CLASS 1
+	CLASS 1 1
 		METHOD method_57949 read (Lnet/minecraft/class_9129;Lnet/minecraft/class_9331;)Lnet/minecraft/class_9336;
 			ARG 0 buf
 			ARG 1 type

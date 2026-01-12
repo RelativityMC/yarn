@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_7708 net/minecraft/item/ItemStackSet
 	FIELD field_40212 HASH_STRATEGY Lit/unimi/dsi/fastutil/Hash$Strategy;
 	METHOD method_47572 create ()Ljava/util/Set;
-	CLASS 1
+	CLASS 1 1
 		METHOD equals (Ljava/lang/Object;Ljava/lang/Object;)Z
 			ARG 1 first
 			ARG 2 second

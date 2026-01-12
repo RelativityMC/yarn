@@ -118,7 +118,7 @@ CLASS net/minecraft/class_1863 net/minecraft/recipe/ServerRecipeManager
 		ARG 0 expectedType
 	METHOD method_64993 (Lnet/minecraft/class_1860;)Ljava/util/Optional;
 		ARG 0 recipe
-	CLASS 1
+	CLASS 1 1
 		FIELD field_38221 id Lnet/minecraft/class_5321;
 	CLASS class_7266 MatchGetter
 		METHOD method_42303 getFirstMatch (Lnet/minecraft/class_9695;Lnet/minecraft/class_3218;)Ljava/util/Optional;

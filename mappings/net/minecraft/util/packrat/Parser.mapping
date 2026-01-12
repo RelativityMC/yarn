@@ -10,6 +10,6 @@ CLASS net/minecraft/class_10846 net/minecraft/util/packrat/Parser
 		ARG 4 invalidDataError
 	METHOD method_68240 map (Ljava/util/function/Function;)Lnet/minecraft/class_10846;
 		ARG 1 mapper
-	CLASS 2
+	CLASS 2 2
 		METHOD method_68241 (Lcom/mojang/brigadier/StringReader;ILcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;Ljava/lang/String;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
 			ARG 3 error

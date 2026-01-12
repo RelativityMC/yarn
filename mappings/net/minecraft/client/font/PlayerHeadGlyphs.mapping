@@ -6,7 +6,7 @@ CLASS net/minecraft/class_11879 net/minecraft/client/font/PlayerHeadGlyphs
 		ARG 1 playerSkinCache
 	METHOD method_74040 get (Lnet/minecraft/class_11719$class_11881;)Lnet/minecraft/class_11603;
 		ARG 1 source
-	CLASS 1
+	CLASS 1 1
 		METHOD load (Ljava/lang/Object;)Ljava/lang/Object;
 			ARG 1 source
 	CLASS class_11880 HeadGlyph

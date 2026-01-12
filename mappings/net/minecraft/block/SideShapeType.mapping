@@ -4,7 +4,7 @@ CLASS net/minecraft/class_5431 net/minecraft/block/SideShapeType
 		ARG 2 world
 		ARG 3 pos
 		ARG 4 direction
-	CLASS 2
+	CLASS 2 2
 		FIELD field_25827 squareCuboid Lnet/minecraft/class_265;
-	CLASS 3
+	CLASS 3 3
 		FIELD field_25829 hollowSquareCuboid Lnet/minecraft/class_265;

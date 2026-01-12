@@ -16,6 +16,6 @@ CLASS net/minecraft/class_8257 net/minecraft/world/chunk/light/PendingUpdateQueu
 		ARG 3 level
 		ARG 4 levelCount
 	METHOD method_50023 isEmpty ()Z
-	CLASS 1
+	CLASS 1 1
 		METHOD rehash (I)V
 			ARG 1 newN

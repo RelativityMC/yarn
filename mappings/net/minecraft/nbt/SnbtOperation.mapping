@@ -5,11 +5,11 @@ CLASS net/minecraft/class_10916 net/minecraft/nbt/SnbtOperation
 	FIELD field_58064 SUGGESTIONS Lnet/minecraft/class_9401;
 	FIELD field_58065 EXPECTED_STRING_UUID_EXCEPTION Lnet/minecraft/class_10837;
 	FIELD field_58066 EXPECTED_NUMBER_OR_BOOLEAN_EXCEPTION Lnet/minecraft/class_10837;
-	CLASS 1
+	CLASS 1 1
 		METHOD method_68728 asBoolean (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Ljava/lang/Boolean;
 			ARG 0 ops
 			ARG 1 value
-	CLASS 3
+	CLASS 3 3
 		FIELD field_58067 values Ljava/util/Set;
 	CLASS class_10917 Type
 	CLASS class_10918 Operator

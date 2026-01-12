@@ -33,7 +33,7 @@ CLASS net/minecraft/class_3542 net/minecraft/util/StringIdentifiable
 		ARG 0 values
 	METHOD method_74546 ([Ljava/lang/Object;Ljava/util/function/Function;Ljava/lang/String;)Ljava/lang/Object;
 		ARG 2 name
-	CLASS 1
+	CLASS 1 1
 		METHOD keys (Lcom/mojang/serialization/DynamicOps;)Ljava/util/stream/Stream;
 			ARG 1 ops
 	CLASS class_7292 EnumCodec

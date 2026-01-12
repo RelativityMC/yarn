@@ -4,6 +4,6 @@ CLASS net/minecraft/class_9021 net/minecraft/scoreboard/number/FixedNumberFormat
 	METHOD <init> (Lnet/minecraft/class_2561;)V
 		ARG 1 text
 	METHOD comp_5121 text ()Lnet/minecraft/class_2561;
-	CLASS 1
+	CLASS 1 1
 		FIELD field_47562 CODEC Lcom/mojang/serialization/MapCodec;
 		FIELD field_48543 PACKET_CODEC Lnet/minecraft/class_9139;

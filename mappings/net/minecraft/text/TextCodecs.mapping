@@ -29,7 +29,7 @@ CLASS net/minecraft/class_8824 net/minecraft/text/TextCodecs
 		ARG 0 idMapper
 	METHOD method_74065 (Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
 		ARG 0 codec
-	CLASS 1
+	CLASS 1 1
 		METHOD decode (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
 			ARG 1 ops
 			ARG 2 value

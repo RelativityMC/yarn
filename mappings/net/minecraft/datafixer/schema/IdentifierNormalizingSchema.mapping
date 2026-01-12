@@ -10,7 +10,7 @@ CLASS net/minecraft/class_1220 net/minecraft/datafixer/schema/IdentifierNormaliz
 	METHOD method_5193 normalize (Ljava/lang/String;)Ljava/lang/String;
 		ARG 0 id
 	METHOD method_28295 getIdentifierType ()Lcom/mojang/datafixers/types/Type;
-	CLASS 1
+	CLASS 1 1
 		METHOD read (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
 			ARG 1 ops
 			ARG 2 input

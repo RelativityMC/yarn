@@ -28,7 +28,7 @@ CLASS net/minecraft/class_6032 net/minecraft/util/collection/WeightedList
 			ARG 0 codec
 		METHOD method_35100 getWeight ()I
 		METHOD method_35102 getShuffledOrder ()D
-		CLASS 1
+		CLASS 1 1
 			METHOD decode (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
 				ARG 1 ops
 				ARG 2 data

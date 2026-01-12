@@ -108,7 +108,7 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 		ARG 5 mouseY
 		ARG 6 interactable
 		ARG 7 shouldInsert
-	CLASS 1
+	CLASS 1 1
 		FIELD field_63866 styledCurrentLine Z
 	CLASS class_7731 RemovalQueuedMessage
 	CLASS class_9477 ChatState

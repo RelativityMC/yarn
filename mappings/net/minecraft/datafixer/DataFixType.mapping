@@ -34,7 +34,7 @@ CLASS net/minecraft/class_4284 net/minecraft/datafixer/DataFixType
 		ARG 1 baseCodec
 		ARG 2 dataFixer
 		ARG 3 currentDataVersion
-	CLASS 1
+	CLASS 1 1
 		METHOD decode (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
 			ARG 1 ops
 			ARG 2 input

@@ -97,7 +97,7 @@ CLASS net/minecraft/class_5225 net/minecraft/client/font/TextHandler
 		ARG 1 text
 		ARG 2 maxWidth
 		ARG 3 style
-	CLASS 1
+	CLASS 1 1
 		FIELD field_24219 collector Lnet/minecraft/class_5222;
 	CLASS class_5226 LineWrappingCollector
 		FIELD field_24220 parts Ljava/util/List;

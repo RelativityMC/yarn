@@ -45,7 +45,7 @@ CLASS net/minecraft/class_9044 net/minecraft/client/resource/server/ServerResour
 	METHOD method_55568 removeInactivePacks ()V
 	METHOD method_55569 enqueueDownloads ()Z
 	METHOD method_55570 applyDownloadedPacks ()V
-	CLASS 1
+	CLASS 1 1
 		METHOD method_55571 (Lnet/minecraft/class_9044$class_9049;)Lnet/minecraft/class_9041$class_9043;
 			ARG 0 pack
 	CLASS class_9045 Status

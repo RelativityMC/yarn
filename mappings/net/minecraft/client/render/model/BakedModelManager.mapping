@@ -80,7 +80,7 @@ CLASS net/minecraft/class_1092 net/minecraft/client/render/model/BakedModelManag
 		ARG 5 bakedModels
 	METHOD method_73040 (Lnet/minecraft/class_5599;)Lnet/minecraft/class_10418;
 		ARG 1 entityModels
-	CLASS 1
+	CLASS 1 1
 		FIELD field_55480 missingBlockSprite Lnet/minecraft/class_1058;
 		FIELD field_64470 missingItemSprite Lnet/minecraft/class_1058;
 	CLASS class_7779 BakingResult

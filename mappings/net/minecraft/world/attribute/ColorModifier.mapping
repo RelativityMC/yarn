@@ -5,7 +5,7 @@ CLASS net/minecraft/class_12216 net/minecraft/world/attribute/ColorModifier
 	FIELD field_63798 MULTIPLY_RGB Lnet/minecraft/class_12216;
 	FIELD field_64129 MULTIPLY_ARGB Lnet/minecraft/class_12216;
 	FIELD field_64354 BLEND_TO_GRAY Lnet/minecraft/class_12216;
-	CLASS 2
+	CLASS 2 2
 		METHOD method_76436 (FLnet/minecraft/class_12216$class_12318;Lnet/minecraft/class_12216$class_12318;)Lnet/minecraft/class_12216$class_12318;
 			ARG 0 t
 			ARG 1 a

@@ -33,7 +33,7 @@ CLASS net/minecraft/class_7138 net/minecraft/world/gen/noise/NoiseConfig
 	METHOD method_42372 getSurfaceBuilder ()Lnet/minecraft/class_6724;
 	METHOD method_42373 getAquiferRandomDeriver ()Lnet/minecraft/class_6574;
 	METHOD method_42374 getOreRandomDeriver ()Lnet/minecraft/class_6574;
-	CLASS 1
+	CLASS 1 1
 		FIELD field_40362 unwrapped Ljava/util/Map;
 		METHOD method_45512 unwrap (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
 			ARG 1 densityFunction

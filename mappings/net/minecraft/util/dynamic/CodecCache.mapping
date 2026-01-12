@@ -4,10 +4,10 @@ CLASS net/minecraft/class_9684 net/minecraft/util/dynamic/CodecCache
 		ARG 1 size
 	METHOD method_59856 wrap (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
 		ARG 1 codec
-	CLASS 1
+	CLASS 1 1
 		METHOD load (Ljava/lang/Object;)Ljava/lang/Object;
 			ARG 1 key
-	CLASS 2
+	CLASS 2 2
 		METHOD decode (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
 			ARG 1 ops
 			ARG 2 input

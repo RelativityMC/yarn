@@ -15,7 +15,7 @@ CLASS net/minecraft/class_9169 net/minecraft/entity/SpawnLocationTypes
 		ARG 0 world
 		ARG 1 pos
 		ARG 2 entityType
-	CLASS 1
+	CLASS 1 1
 		METHOD method_56557 isClearForSpawn (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;Lnet/minecraft/class_1299;)Z
 			ARG 1 world
 			ARG 2 pos

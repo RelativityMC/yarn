@@ -30,6 +30,6 @@ CLASS net/minecraft/class_11807 net/minecraft/server/dedicated/management/Manage
 	METHOD method_74477 stop (Z)V
 		ARG 1 shutdownEventLoop
 	METHOD method_74478 getPort ()I
-	CLASS 1
+	CLASS 1 1
 		METHOD initChannel (Lio/netty/channel/Channel;)V
 			ARG 1 channel

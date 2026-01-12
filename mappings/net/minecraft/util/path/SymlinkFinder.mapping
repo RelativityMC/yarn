@@ -13,7 +13,7 @@ CLASS net/minecraft/class_8580 net/minecraft/util/path/SymlinkFinder
 	METHOD method_52619 validateRecursively (Ljava/nio/file/Path;Ljava/util/List;)V
 		ARG 1 path
 		ARG 2 results
-	CLASS 1
+	CLASS 1 1
 		METHOD method_52246 validate (Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;)V
 			ARG 1 path
 			ARG 2 attributes

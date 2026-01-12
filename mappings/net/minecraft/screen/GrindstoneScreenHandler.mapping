@@ -37,7 +37,7 @@ CLASS net/minecraft/class_3803 net/minecraft/screen/GrindstoneScreenHandler
 	METHOD method_58074 combineItems (Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1799;
 		ARG 1 firstInput
 		ARG 2 secondInput
-	CLASS 4
+	CLASS 4 4
 		METHOD method_16696 getExperience (Lnet/minecraft/class_1799;)I
 			ARG 1 stack
 		METHOD method_17416 getExperience (Lnet/minecraft/class_1937;)I

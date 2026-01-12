@@ -15,7 +15,7 @@ CLASS net/minecraft/class_2479 net/minecraft/nbt/NbtByteArray
 		COMMENT
 		COMMENT @apiNote This does not copy the array, so modifications to the returned array
 		COMMENT also apply to this NBT byte array.
-	CLASS 1
+	CLASS 1 1
 		METHOD method_53886 readByteArray (Ljava/io/DataInput;Lnet/minecraft/class_2505;)[B
 			ARG 0 input
 			ARG 1 tracker

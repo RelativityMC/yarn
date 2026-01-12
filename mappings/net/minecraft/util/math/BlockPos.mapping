@@ -243,10 +243,10 @@ CLASS net/minecraft/class_2338 net/minecraft/util/math/BlockPos
 		ARG 0 start
 		ARG 1 end
 		ARG 2 velocity
-	CLASS 2
+	CLASS 2 2
 		FIELD field_48405 pos Lnet/minecraft/class_2338$class_2339;
 		FIELD field_48406 remaining I
-	CLASS 3
+	CLASS 3 3
 		FIELD field_23380 pos Lnet/minecraft/class_2338$class_2339;
 		FIELD field_48422 manhattanDistance I
 		FIELD field_48423 limitX I
@@ -254,10 +254,10 @@ CLASS net/minecraft/class_2338 net/minecraft/util/math/BlockPos
 		FIELD field_48425 dx I
 		FIELD field_48426 dy I
 		FIELD field_48427 swapZ Z
-	CLASS 4
+	CLASS 4 4
 		FIELD field_48434 pos Lnet/minecraft/class_2338$class_2339;
 		FIELD field_48435 index I
-	CLASS 5
+	CLASS 5 5
 		FIELD field_48440 directions [Lnet/minecraft/class_2350;
 		FIELD field_48441 pos Lnet/minecraft/class_2338$class_2339;
 		FIELD field_48442 maxDirectionChanges I
@@ -267,7 +267,7 @@ CLASS net/minecraft/class_2338 net/minecraft/util/math/BlockPos
 		FIELD field_48446 currentX I
 		FIELD field_48447 currentY I
 		FIELD field_48448 currentZ I
-	CLASS 6
+	CLASS 6 6
 		FIELD field_61950 pos Lnet/minecraft/class_2338$class_2339;
 		FIELD field_61951 deltaAxis1 I
 		FIELD field_61952 deltaAxis2 I

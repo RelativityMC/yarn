@@ -35,10 +35,10 @@ CLASS net/minecraft/class_6505 net/minecraft/util/profiling/jfr/JfrProfiler
 		ARG 0 clazz
 		ARG 1 recorder
 	METHOD method_75089 addPeriodicEvents ()V
-	CLASS 1
+	CLASS 1 1
 		METHOD recordingStateChanged (Ljdk/jfr/Recording;)V
 			ARG 1 recording
-	CLASS 2
+	CLASS 2 2
 		FIELD field_63279 listener Lnet/minecraft/class_6507;
 		METHOD recordingStateChanged (Ljdk/jfr/Recording;)V
 			ARG 1 recording

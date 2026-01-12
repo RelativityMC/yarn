@@ -21,5 +21,5 @@ CLASS net/minecraft/class_3915 net/minecraft/screen/Property
 	METHOD method_17407 get ()I
 	METHOD method_17408 hasChanged ()Z
 		COMMENT Returns true if the value of this property has changed since the last call to {@code hasChanged()}.
-	CLASS 3
+	CLASS 3 3
 		FIELD field_17312 value I

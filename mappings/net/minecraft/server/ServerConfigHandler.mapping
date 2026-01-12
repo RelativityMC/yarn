@@ -40,19 +40,19 @@ CLASS net/minecraft/class_3321 net/minecraft/server/ServerConfigHandler
 		ARG 0 minecraftServer
 	METHOD method_14552 (Ljava/lang/String;)Z
 		ARG 0 playerName
-	CLASS 1
+	CLASS 1 1
 		METHOD onProfileLookupFailed (Ljava/lang/String;Ljava/lang/Exception;)V
 			ARG 2 exception
-	CLASS 2
+	CLASS 2 2
 		METHOD onProfileLookupFailed (Ljava/lang/String;Ljava/lang/Exception;)V
 			ARG 2 exception
-	CLASS 3
+	CLASS 3 3
 		METHOD onProfileLookupFailed (Ljava/lang/String;Ljava/lang/Exception;)V
 			ARG 2 exception
-	CLASS 4
+	CLASS 4 4
 		METHOD onProfileLookupFailed (Ljava/lang/String;Ljava/lang/Exception;)V
 			ARG 2 exception
-	CLASS 5
+	CLASS 5 5
 		METHOD method_14553 convertPlayerFile (Ljava/io/File;Ljava/lang/String;Ljava/lang/String;)V
 			ARG 1 playerDataFolder
 			ARG 2 fileName

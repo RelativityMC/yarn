@@ -136,7 +136,7 @@ CLASS net/minecraft/class_10900 net/minecraft/nbt/SnbtParsing
 			ARG 1 suffix
 		METHOD method_68647 isTypeAllowed (Lnet/minecraft/class_10900$class_10909;)Z
 			ARG 1 type
-		CLASS 1
+		CLASS 1 1
 			FIELD field_58008 EMPTY_BUFFER Ljava/nio/ByteBuffer;
 	CLASS class_10902 Radix
 	CLASS class_10903 IntValue

@@ -17,7 +17,7 @@ CLASS net/minecraft/class_6759 net/minecraft/world/tick/Tick
 	METHOD method_67722 filter (Ljava/util/List;Lnet/minecraft/class_1923;)Ljava/util/List;
 		ARG 0 ticks
 		ARG 1 chunkPos
-	CLASS 1
+	CLASS 1 1
 		METHOD equals (Ljava/lang/Object;Ljava/lang/Object;)Z
 			ARG 1 first
 			ARG 2 second

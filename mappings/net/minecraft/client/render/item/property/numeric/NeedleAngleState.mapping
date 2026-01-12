@@ -18,11 +18,11 @@ CLASS net/minecraft/class_10480 net/minecraft/client/render/item/property/numeri
 	METHOD method_65662 createWobblyAngler (F)Lnet/minecraft/class_10480$class_10481;
 		ARG 0 speedMultiplier
 	METHOD method_65663 createInstantAngler ()Lnet/minecraft/class_10480$class_10481;
-	CLASS 1
+	CLASS 1 1
 		FIELD field_55403 angle F
 		FIELD field_55404 speed F
 		FIELD field_55405 lastUpdateTime J
-	CLASS 2
+	CLASS 2 2
 		FIELD field_55406 angle F
 	CLASS class_10481 Angler
 		METHOD method_65664 getAngle ()F

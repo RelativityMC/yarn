@@ -4,6 +4,6 @@ CLASS net/minecraft/class_7587 net/minecraft/client/util/Backoff
 	METHOD method_44644 exponential (I)Lnet/minecraft/class_7587;
 		ARG 0 maxSkippableCycles
 	METHOD method_44645 fail ()J
-	CLASS 2
+	CLASS 2 2
 		FIELD field_39716 LOGGER Lorg/slf4j/Logger;
 		FIELD field_39717 failureCount I

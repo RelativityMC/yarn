@@ -7,6 +7,6 @@ CLASS net/minecraft/class_9025 net/minecraft/scoreboard/number/StyledNumberForma
 	METHOD <init> (Lnet/minecraft/class_2583;)V
 		ARG 1 style
 	METHOD comp_5122 style ()Lnet/minecraft/class_2583;
-	CLASS 1
+	CLASS 1 1
 		FIELD field_47570 CODEC Lcom/mojang/serialization/MapCodec;
 		FIELD field_48546 PACKET_CODEC Lnet/minecraft/class_9139;

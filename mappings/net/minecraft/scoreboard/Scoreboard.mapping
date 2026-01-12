@@ -119,7 +119,7 @@ CLASS net/minecraft/class_269 net/minecraft/scoreboard/Scoreboard
 	METHOD method_75280 getPackedTeams ()Ljava/util/List;
 	METHOD method_75281 getPackedObjectives ()Ljava/util/List;
 	METHOD method_75282 getObjectivesBySlots ()Ljava/util/Map;
-	CLASS 1
+	CLASS 1 1
 		METHOD method_55433 setLocked (Z)V
 			ARG 1 locked
 		METHOD method_55434 update ()V

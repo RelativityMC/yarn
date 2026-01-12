@@ -46,5 +46,5 @@ CLASS net/minecraft/class_279 net/minecraft/client/gl/PostEffectProcessor
 		METHOD method_62241 singleton (Lnet/minecraft/class_2960;Lnet/minecraft/class_9925;)Lnet/minecraft/class_279$class_9961;
 			ARG 0 id
 			ARG 1 framebuffer
-		CLASS 1
+		CLASS 1 1
 			FIELD field_53110 framebuffer Lnet/minecraft/class_9925;

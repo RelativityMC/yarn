@@ -13,5 +13,5 @@ CLASS net/minecraft/class_4580 net/minecraft/command/StorageDataObject
 		ARG 0 argumentName
 	METHOD method_22842 of (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/class_4565;
 		ARG 0 context
-	CLASS 1
+	CLASS 1 1
 		FIELD field_20859 argumentName Ljava/lang/String;

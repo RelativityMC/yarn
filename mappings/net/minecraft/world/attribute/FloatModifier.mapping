@@ -11,7 +11,7 @@ CLASS net/minecraft/class_12218 net/minecraft/world/attribute/FloatModifier
 	METHOD method_75719 (Ljava/lang/Float;Ljava/lang/Float;)Ljava/lang/Float;
 		ARG 0 a
 		ARG 1 b
-	CLASS 1
+	CLASS 1 1
 		METHOD method_76439 (FLnet/minecraft/class_12220;Lnet/minecraft/class_12220;)Lnet/minecraft/class_12220;
 			ARG 0 t
 			ARG 1 a

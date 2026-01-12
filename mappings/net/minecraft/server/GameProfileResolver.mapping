@@ -11,10 +11,10 @@ CLASS net/minecraft/class_11755 net/minecraft/server/GameProfileResolver
 		METHOD <init> (Lcom/mojang/authlib/minecraft/MinecraftSessionService;Lnet/minecraft/class_11561;)V
 			ARG 1 sessionService
 			ARG 2 cache
-		CLASS 1
+		CLASS 1 1
 			METHOD load (Ljava/lang/Object;)Ljava/lang/Object;
 				ARG 1 id
-		CLASS 2
+		CLASS 2 2
 			METHOD load (Ljava/lang/Object;)Ljava/lang/Object;
 				ARG 1 name
 			METHOD method_73292 (Lnet/minecraft/class_11560;)Ljava/util/Optional;

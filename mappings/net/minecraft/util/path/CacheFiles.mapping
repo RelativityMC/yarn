@@ -7,7 +7,7 @@ CLASS net/minecraft/class_9055 net/minecraft/util/path/CacheFiles
 		ARG 1 maxRetained
 	METHOD method_55601 toCacheEntries (Ljava/util/List;)Ljava/util/List;
 		ARG 0 files
-	CLASS 1
+	CLASS 1 1
 		METHOD visitFile (Ljava/lang/Object;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
 			ARG 1 path
 			ARG 2 attributes

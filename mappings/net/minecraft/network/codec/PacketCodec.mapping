@@ -297,8 +297,8 @@ CLASS net/minecraft/class_9139 net/minecraft/network/codec/PacketCodec
 		ARG 18 codec10
 		ARG 19 from10
 		ARG 20 to
-	CLASS 11
-	CLASS 19
+	CLASS 11 11
+	CLASS 19 19
 		FIELD field_49712 underlying Ljava/util/function/Supplier;
 	CLASS class_9140 ResultFunction
 		METHOD method_1_62 apply (Lnet/minecraft/class_9139;)Lnet/minecraft/class_9139;

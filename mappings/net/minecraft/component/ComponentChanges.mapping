@@ -29,7 +29,7 @@ CLASS net/minecraft/class_9326 net/minecraft/component/ComponentChanges
 	METHOD method_58759 toAddedRemovedPair ()Lnet/minecraft/class_9326$class_9484;
 	METHOD method_68840 createPacketCodec (Lnet/minecraft/class_9326$class_10935;)Lnet/minecraft/class_9139;
 		ARG 0 packetCodecFunction
-	CLASS 3
+	CLASS 3 3
 		METHOD method_68843 encode (Lnet/minecraft/class_9129;Lnet/minecraft/class_9331;Ljava/lang/Object;)V
 			ARG 1 buf
 			ARG 2 type

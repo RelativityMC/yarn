@@ -10,7 +10,7 @@ CLASS net/minecraft/class_4869 net/minecraft/client/realms/CheckedGson
 		ARG 2 type
 	METHOD method_49573 toJson (Lcom/google/gson/JsonElement;)Ljava/lang/String;
 		ARG 1 json
-	CLASS 1
+	CLASS 1 1
 		METHOD shouldSkipClass (Ljava/lang/Class;)Z
 			ARG 1 clazz
 		METHOD shouldSkipField (Lcom/google/gson/FieldAttributes;)Z

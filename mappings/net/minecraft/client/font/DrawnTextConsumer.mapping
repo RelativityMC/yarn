@@ -82,7 +82,7 @@ CLASS net/minecraft/class_12225 net/minecraft/client/font/DrawnTextConsumer
 		ARG 5 top
 		ARG 6 bottom
 		ARG 7 transformation
-	CLASS 1
+	CLASS 1 1
 		METHOD method_75774 addGlyphInternal (Lnet/minecraft/class_12236;)V
 			ARG 1 glyph
 	CLASS class_12226 ClickHandler

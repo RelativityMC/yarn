@@ -42,7 +42,7 @@ CLASS net/minecraft/class_1726 net/minecraft/screen/LoomScreenHandler
 		ARG 1 index
 	METHOD method_57322 (Lnet/minecraft/class_6880;Lnet/minecraft/class_1767;Lnet/minecraft/class_9307;)Lnet/minecraft/class_9307;
 		ARG 2 component
-	CLASS 6
+	CLASS 6 6
 		METHOD method_17433 (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)V
 			ARG 1 world
 			ARG 2 pos

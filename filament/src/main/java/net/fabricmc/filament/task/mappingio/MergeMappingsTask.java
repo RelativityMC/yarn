@@ -2,10 +2,13 @@ package net.fabricmc.filament.task.mappingio;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
+
+import net.fabricmc.loom.util.Pair;
 
 import org.gradle.api.file.ConfigurableFileCollection;
 import org.gradle.api.tasks.InputFiles;
@@ -33,10 +36,15 @@ public abstract class MergeMappingsTask extends MappingOutputTask {
 
 		fixInnerClasses(mappingTree);
 
-		var nsCompleter = new MappingNsCompleter(writer, Map.of("named", "intermediary"), true);
+		MemoryMappingTree officialTree = new MemoryMappingTree();
+		var nsCompleter = new MappingNsCompleter(officialTree, Map.of("named", "intermediary"), true);
 		var dstReorder = new MappingDstNsReorder(nsCompleter, List.of("intermediary", "named"));
 		var sourceNsSwitch = new MappingSourceNsSwitch(dstReorder, "official");
 		mappingTree.accept(sourceNsSwitch);
+
+		inheritMappedNamesOfEnclosingClasses(officialTree);
+		cleanupMappingLeakageToOfficial(officialTree);
+		officialTree.accept(writer);
 	}
 
 	private void fixInnerClasses(MemoryMappingTree mappingTree) {
@@ -72,5 +80,45 @@ public abstract class MergeMappingsTask extends MappingOutputTask {
 		}
 
 		return sharedName;
+	}
+
+	/**
+	 * Searches the mapping tree for inner classes with no mapped name, whose enclosing classes have mapped names.
+	 * Currently, Yarn does not export mappings for these inner classes.
+	 */
+	private static void inheritMappedNamesOfEnclosingClasses(MemoryMappingTree tree) {
+		assert tree.getNamespaceId("intermediary") > MappingTree.SRC_NAMESPACE_ID;
+
+		// Create an index by intermediary names for faster lookups during the propagation
+		tree.setIndexByDstNames(true);
+
+		tree.propagateOuterClassNames("intermediary", List.of("named"), false);
+	}
+
+	/**
+	 * When merging mappings, intermediary names for methods can ended up leaking into the official namespace.
+	 * This is because mapping-io does not have class inheritance information when doing so.
+	 * Workaround this problem by deleting invalid mapping entries.
+	 */
+	private static void cleanupMappingLeakageToOfficial(MemoryMappingTree tree) {
+		int intermediaryId = tree.getNamespaceId("intermediary");
+		int officialId = tree.getNamespaceId("official");
+
+		List<Pair<String, String>> entriesToRemove = new ArrayList<>();
+
+		for (MappingTree.ClassMapping classMapping : tree.getClasses()) {
+			for (MappingTree.MethodMapping methodMapping : classMapping.getMethods()) {
+				String intermediary = methodMapping.getName(intermediaryId);
+				String official = methodMapping.getName(officialId);
+
+				if (intermediary != null && official != null && intermediary.startsWith("method_") && intermediary.equals(official)) {
+					entriesToRemove.add(new Pair<>(methodMapping.getSrcName(), methodMapping.getSrcDesc()));
+				}
+			}
+
+			for (Pair<String, String> entry : entriesToRemove) {
+				classMapping.removeMethod(entry.left(), entry.right());
+			}
+		}
 	}
 }

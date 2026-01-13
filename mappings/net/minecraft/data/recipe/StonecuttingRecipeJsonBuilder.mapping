@@ -1,7 +1,6 @@
 CLASS net/minecraft/class_3981 net/minecraft/data/recipe/StonecuttingRecipeJsonBuilder
-	FIELD field_17690 output Lnet/minecraft/class_1792;
+	FIELD field_17690 output Lnet/minecraft/class_1_107;
 	FIELD field_17691 input Lnet/minecraft/class_1856;
-	FIELD field_17692 count I
 	FIELD field_17694 group Ljava/lang/String;
 	FIELD field_40650 category Lnet/minecraft/class_7800;
 	FIELD field_46151 criteria Ljava/util/Map;

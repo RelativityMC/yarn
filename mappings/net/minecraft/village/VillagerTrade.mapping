@@ -3,44 +3,40 @@ CLASS net/minecraft/class_1_30 net/minecraft/village/VillagerTrade
 	FIELD field_1_227 additionalWants Ljava/util/Optional;
 	FIELD field_1_228 doubleTradePriceEnchantments Ljava/util/Optional;
 	FIELD field_1_229 givenItemModifiers Ljava/util/List;
-	FIELD field_1_230 gives Lnet/minecraft/class_1799;
+	FIELD field_1_230 gives Lnet/minecraft/class_1_107;
 	FIELD field_1_231 maxUses Lnet/minecraft/class_5658;
 	FIELD field_1_232 merchantPredicate Ljava/util/Optional;
 	FIELD field_1_233 reputationDiscount Lnet/minecraft/class_5658;
 	FIELD field_1_234 wants Lnet/minecraft/class_1_25;
 	FIELD field_1_235 xp Lnet/minecraft/class_5658;
-	METHOD <init> (Lnet/minecraft/class_1_25;Ljava/util/Optional;Lnet/minecraft/class_1799;IIFLjava/util/Optional;Ljava/util/List;)V
+	METHOD <init> (Lnet/minecraft/class_1_25;Ljava/util/Optional;Lnet/minecraft/class_1_107;IIFLjava/util/Optional;Ljava/util/List;)V
 		ARG 1 wants
 		ARG 2 additionalWants
-		ARG 3 gives
 		ARG 4 maxUses
 		ARG 5 xp
 		ARG 6 reputationDiscount
 		ARG 7 merchantPredicate
 		ARG 8 givenItemModifiers
-	METHOD <init> (Lnet/minecraft/class_1_25;Ljava/util/Optional;Lnet/minecraft/class_1799;IIFLjava/util/Optional;Ljava/util/List;Ljava/util/Optional;)V
+	METHOD <init> (Lnet/minecraft/class_1_25;Ljava/util/Optional;Lnet/minecraft/class_1_107;IIFLjava/util/Optional;Ljava/util/List;Ljava/util/Optional;)V
 		ARG 1 wants
 		ARG 2 additionalWants
-		ARG 3 gives
 		ARG 4 maxUses
 		ARG 5 xp
 		ARG 6 reputationDiscount
 		ARG 7 merchantPredicate
 		ARG 8 givenItemModifiers
 		ARG 9 doubleTradePriceEnchantments
-	METHOD <init> (Lnet/minecraft/class_1_25;Ljava/util/Optional;Lnet/minecraft/class_1799;Lnet/minecraft/class_5658;Lnet/minecraft/class_5658;Lnet/minecraft/class_5658;Ljava/util/Optional;Ljava/util/List;Ljava/util/Optional;)V
+	METHOD <init> (Lnet/minecraft/class_1_25;Ljava/util/Optional;Lnet/minecraft/class_1_107;Lnet/minecraft/class_5658;Lnet/minecraft/class_5658;Lnet/minecraft/class_5658;Ljava/util/Optional;Ljava/util/List;Ljava/util/Optional;)V
 		ARG 1 wants
 		ARG 2 additionalWants
-		ARG 3 gives
 		ARG 4 maxUses
 		ARG 5 reputationDiscount
 		ARG 6 xp
 		ARG 7 merchantPredicate
 		ARG 8 givenItemModifiers
 		ARG 9 doubleTradePriceEnchantments
-	METHOD <init> (Lnet/minecraft/class_1_25;Lnet/minecraft/class_1799;IIFLjava/util/Optional;Ljava/util/List;)V
+	METHOD <init> (Lnet/minecraft/class_1_25;Lnet/minecraft/class_1_107;IIFLjava/util/Optional;Ljava/util/List;)V
 		ARG 1 wants
-		ARG 2 gives
 		ARG 3 maxUses
 		ARG 4 xp
 		ARG 5 reputationDiscount

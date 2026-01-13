@@ -20,7 +20,6 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 	FIELD field_47129 tickManager Lnet/minecraft/class_8921;
 	FIELD field_53028 worldEventHandler Lnet/minecraft/class_9959;
 	FIELD field_53029 seaLevel I
-	FIELD field_54500 shouldTickTimeOfDay Z
 	FIELD field_55125 enderDragonParts Ljava/util/List;
 	FIELD field_60919 blockEntities Ljava/util/Set;
 	FIELD field_61021 QUITTING_MULTIPLAYER_TEXT Lnet/minecraft/class_2561;
@@ -101,10 +100,8 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 		ARG 1 chunkPos
 	METHOD method_23784 reloadColor ()V
 	METHOD method_23789 getLightningTicksLeft ()I
-	METHOD method_29089 setTime (JJZ)V
+	METHOD method_29089 setTime (J)V
 		ARG 1 time
-		ARG 3 timeOfDay
-		ARG 5 shouldTickTimeOfDay
 	METHOD method_29090 tickTime ()V
 	METHOD method_32121 (Lnet/minecraft/class_1923;Lnet/minecraft/class_6539;Lnet/minecraft/class_4700;)V
 		ARG 1 resolver
@@ -196,7 +193,6 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 	CLASS class_5271 Properties
 		FIELD field_24433 hardcore Z
 		FIELD field_24438 time J
-		FIELD field_24439 timeOfDay J
 		FIELD field_24440 raining Z
 		FIELD field_24441 difficulty Lnet/minecraft/class_1267;
 		FIELD field_24442 difficultyLocked Z
@@ -206,8 +202,6 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 			ARG 1 difficulty
 			ARG 2 hardcore
 			ARG 3 flatWorld
-		METHOD method_165 setTimeOfDay (J)V
-			ARG 1 timeOfDay
 		METHOD method_177 setTime (J)V
 			ARG 1 time
 		METHOD method_27875 setDifficulty (Lnet/minecraft/class_1267;)V

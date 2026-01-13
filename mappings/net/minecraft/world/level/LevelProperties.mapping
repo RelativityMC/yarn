@@ -11,7 +11,6 @@ CLASS net/minecraft/class_31 net/minecraft/world/level/LevelProperties
 	FIELD field_190 raining Z
 	FIELD field_191 scheduledEvents Lnet/minecraft/class_236;
 	FIELD field_192 rainTime I
-	FIELD field_198 timeOfDay J
 	FIELD field_17736 wanderingTraderSpawnDelay I
 	FIELD field_17737 wanderingTraderSpawnChance I
 	FIELD field_17738 wanderingTraderId Ljava/util/UUID;
@@ -34,33 +33,32 @@ CLASS net/minecraft/class_31 net/minecraft/world/level/LevelProperties
 		ARG 2 generatorOptions
 		ARG 3 specialProperty
 		ARG 4 lifecycle
-	METHOD <init> (Lnet/minecraft/class_2487;ZLnet/minecraft/class_5217$class_12064;JJIIIZIZZZLjava/util/Optional;IILjava/util/UUID;Ljava/util/Set;Ljava/util/Set;Lnet/minecraft/class_236;Lnet/minecraft/class_2487;Lnet/minecraft/class_2881$class_8576;Lnet/minecraft/class_1940;Lnet/minecraft/class_5285;Lnet/minecraft/class_31$class_7729;Lcom/mojang/serialization/Lifecycle;)V
+	METHOD <init> (Lnet/minecraft/class_2487;ZLnet/minecraft/class_5217$class_12064;JIIIZIZLnet/minecraft/class_1_108;ZZLjava/util/Optional;IILjava/util/UUID;Ljava/util/Set;Ljava/util/Set;Lnet/minecraft/class_236;Lnet/minecraft/class_2487;Lnet/minecraft/class_2881$class_8576;Lnet/minecraft/class_1940;Lnet/minecraft/class_5285;Lnet/minecraft/class_31$class_7729;Lcom/mojang/serialization/Lifecycle;)V
 		ARG 1 playerData
 		ARG 2 modded
 		ARG 3 spawnPoint
 		ARG 4 time
-		ARG 6 timeOfDay
-		ARG 8 version
-		ARG 9 clearWeatherTime
-		ARG 10 rainTime
-		ARG 11 raining
-		ARG 12 thunderTime
-		ARG 13 thundering
-		ARG 14 initialized
-		ARG 15 difficultyLocked
-		ARG 16 worldBorder
-		ARG 17 wanderingTraderSpawnDelay
-		ARG 18 wanderingTraderSpawnChance
-		ARG 19 wanderingTraderId
-		ARG 20 serverBrands
-		ARG 21 removedFeatures
-		ARG 22 scheduledEvents
-		ARG 23 customBossEvents
-		ARG 24 dragonFight
-		ARG 25 levelInfo
-		ARG 26 generatorOptions
-		ARG 27 specialProperty
-		ARG 28 lifecycle
+		ARG 6 version
+		ARG 7 clearWeatherTime
+		ARG 8 rainTime
+		ARG 9 raining
+		ARG 10 thunderTime
+		ARG 11 thundering
+		ARG 13 initialized
+		ARG 14 difficultyLocked
+		ARG 15 worldBorder
+		ARG 16 wanderingTraderSpawnDelay
+		ARG 17 wanderingTraderSpawnChance
+		ARG 18 wanderingTraderId
+		ARG 19 serverBrands
+		ARG 20 removedFeatures
+		ARG 21 scheduledEvents
+		ARG 22 customBossEvents
+		ARG 23 dragonFight
+		ARG 24 levelInfo
+		ARG 25 generatorOptions
+		ARG 26 specialProperty
+		ARG 27 lifecycle
 	METHOD method_158 updateProperties (Lnet/minecraft/class_5455;Lnet/minecraft/class_2487;Lnet/minecraft/class_2487;)V
 		ARG 1 registryManager
 		ARG 2 levelNbt

@@ -8,7 +8,6 @@ CLASS net/minecraft/class_9173 net/minecraft/client/network/ClientRegistries
 	METHOD method_56585 createRegistryManager (Lnet/minecraft/class_5912;Lnet/minecraft/class_5455$class_6890;Z)Lnet/minecraft/class_5455$class_6890;
 		ARG 1 resourceFactory
 		ARG 2 registryManager
-		ARG 3 local
 	METHOD method_56586 putTags (Ljava/util/Map;)V
 		ARG 1 tags
 	METHOD method_62155 createRegistryManager (Lnet/minecraft/class_5912;Lnet/minecraft/class_9173$class_9174;Z)Lnet/minecraft/class_5455;
@@ -19,9 +18,8 @@ CLASS net/minecraft/class_9173 net/minecraft/client/network/ClientRegistries
 		ARG 1 key
 		ARG 2 value
 	METHOD method_62157 loadTags (Lnet/minecraft/class_9173$class_9954;Lnet/minecraft/class_5455$class_6890;Z)V
-		ARG 1 tags
-		ARG 2 registryManager
-		ARG 3 local
+		ARG 0 tags
+		ARG 1 registryManager
 	METHOD method_62158 (Ljava/util/Map;Lnet/minecraft/class_5321;Ljava/util/List;)V
 		ARG 1 registryRef
 		ARG 2 entries

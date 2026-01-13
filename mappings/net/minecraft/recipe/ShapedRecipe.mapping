@@ -1,20 +1,18 @@
 CLASS net/minecraft/class_1869 net/minecraft/recipe/ShapedRecipe
-	FIELD field_9053 result Lnet/minecraft/class_1799;
+	FIELD field_9053 result Lnet/minecraft/class_1_107;
 	FIELD field_9056 group Ljava/lang/String;
 	FIELD field_40256 category Lnet/minecraft/class_7710;
 	FIELD field_42719 showNotification Z
 	FIELD field_47320 raw Lnet/minecraft/class_8957;
 	FIELD field_52601 ingredientPlacement Lnet/minecraft/class_9887;
-	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_7710;Lnet/minecraft/class_8957;Lnet/minecraft/class_1799;)V
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_7710;Lnet/minecraft/class_8957;Lnet/minecraft/class_1_107;)V
 		ARG 1 group
 		ARG 2 category
 		ARG 3 raw
-		ARG 4 result
-	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_7710;Lnet/minecraft/class_8957;Lnet/minecraft/class_1799;Z)V
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_7710;Lnet/minecraft/class_8957;Lnet/minecraft/class_1_107;Z)V
 		ARG 1 group
 		ARG 2 category
 		ARG 3 raw
-		ARG 4 result
 		ARG 5 showNotification
 	METHOD method_8150 getWidth ()I
 	METHOD method_8158 getHeight ()I
@@ -33,7 +31,7 @@ CLASS net/minecraft/class_1869 net/minecraft/recipe/ShapedRecipe
 			ARG 0 instance
 		METHOD method_55072 (Lnet/minecraft/class_1869;)Ljava/lang/Boolean;
 			ARG 0 recipe
-		METHOD method_55073 (Lnet/minecraft/class_1869;)Lnet/minecraft/class_1799;
+		METHOD method_55073 (Lnet/minecraft/class_1869;)Lnet/minecraft/class_1_107;
 			ARG 0 recipe
 		METHOD method_55074 (Lnet/minecraft/class_1869;)Lnet/minecraft/class_8957;
 			ARG 0 recipe

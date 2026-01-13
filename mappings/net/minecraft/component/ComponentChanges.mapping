@@ -16,8 +16,6 @@ CLASS net/minecraft/class_9326 net/minecraft/component/ComponentChanges
 		ARG 0 changes
 	METHOD method_57844 (Lnet/minecraft/class_9326;)Ljava/util/Map;
 		ARG 0 changes
-	METHOD method_57845 get (Lnet/minecraft/class_9331;)Ljava/util/Optional;
-		ARG 1 type
 	METHOD method_57846 entrySet ()Ljava/util/Set;
 	METHOD method_57847 size ()I
 	METHOD method_57848 isEmpty ()Z

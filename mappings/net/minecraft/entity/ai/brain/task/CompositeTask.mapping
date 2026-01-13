@@ -17,8 +17,6 @@ CLASS net/minecraft/class_4103 net/minecraft/entity/ai/brain/task/CompositeTask
 		ARG 4 task
 	METHOD method_46924 shouldStart (Lnet/minecraft/class_1309;)Z
 		ARG 1 entity
-	METHOD method_46925 (Lnet/minecraft/class_7893;)Z
-		ARG 0 task
 	METHOD method_46926 (Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;JLnet/minecraft/class_7893;)V
 		ARG 4 task
 	METHOD method_46927 (Lnet/minecraft/class_7893;)Z

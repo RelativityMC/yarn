@@ -14,15 +14,12 @@ CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 	FIELD field_64027 LIGHTNING Lnet/minecraft/class_1921;
 	FIELD field_64028 DRAGON_RAYS Lnet/minecraft/class_1921;
 	FIELD field_64029 DRAGON_RAYS_DEPTH Lnet/minecraft/class_1921;
-	FIELD field_64030 TRIPWIRE Lnet/minecraft/class_1921;
 	FIELD field_64031 END_PORTAL Lnet/minecraft/class_1921;
 	FIELD field_64032 END_GATEWAY Lnet/minecraft/class_1921;
 	FIELD field_64033 DEBUG_FILLED_BOX Lnet/minecraft/class_1921;
 	FIELD field_64034 DEBUG_POINT Lnet/minecraft/class_1921;
 	FIELD field_64035 DEBUG_QUADS Lnet/minecraft/class_1921;
 	FIELD field_64036 DEBUG_TRIANGLE_FAN Lnet/minecraft/class_1921;
-	FIELD field_64037 WEATHER_DEPTH Ljava/util/function/Function;
-	FIELD field_64038 WEATHER_NO_DEPTH Ljava/util/function/Function;
 	FIELD field_64039 BLOCK_SCREEN_EFFECT Ljava/util/function/Function;
 	FIELD field_64040 FIRE_SCREEN_EFFECT Ljava/util/function/Function;
 	FIELD field_64041 OUTLINE Ljava/util/function/BiFunction;
@@ -112,10 +109,6 @@ CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 	METHOD method_75969 entityCutoutNoCull (Lnet/minecraft/class_2960;Z)Lnet/minecraft/class_1921;
 		ARG 0 texture
 		ARG 1 affectsOutline
-	METHOD method_75970 createWeatherFactory (Lcom/mojang/blaze3d/pipeline/RenderPipeline;)Ljava/util/function/Function;
-		ARG 0 pipeline
-	METHOD method_75971 (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
-		ARG 1 texture
 	METHOD method_75972 cutout ()Lnet/minecraft/class_1921;
 	METHOD method_75973 armorDecalCutoutNoCull (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
@@ -162,9 +155,6 @@ CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 	METHOD method_75991 (Lnet/minecraft/class_2960;Ljava/lang/Boolean;)Lnet/minecraft/class_1921;
 		ARG 0 texture
 		ARG 1 cull
-	METHOD method_75992 weather (Lnet/minecraft/class_2960;Z)Lnet/minecraft/class_1921;
-		ARG 0 texture
-		ARG 1 depth
 	METHOD method_75993 glintTranslucent ()Lnet/minecraft/class_1921;
 	METHOD method_75994 entityCutoutNoCull (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
@@ -189,7 +179,6 @@ CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 	METHOD method_76007 dragonRaysDepth ()Lnet/minecraft/class_1921;
 	METHOD method_76008 entityNoOutline (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
-	METHOD method_76009 tripwire ()Lnet/minecraft/class_1921;
 	METHOD method_76010 entityShadow (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
 	METHOD method_76011 endPortal ()Lnet/minecraft/class_1921;

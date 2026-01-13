@@ -1022,10 +1022,6 @@ CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 		ARG 0 settings
 	METHOD method_63448 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
 		ARG 0 settings
-	METHOD method_63449 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
-		ARG 0 settings
-	METHOD method_63450 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
-		ARG 0 settings
 	METHOD method_63451 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
 		ARG 0 settings
 	METHOD method_63452 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
@@ -1037,10 +1033,6 @@ CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 	METHOD method_63455 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
 		ARG 0 settings
 	METHOD method_63456 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
-		ARG 0 settings
-	METHOD method_63457 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
-		ARG 0 settings
-	METHOD method_63458 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
 		ARG 0 settings
 	METHOD method_63459 (Lnet/minecraft/class_2680;)I
 		ARG 0 state

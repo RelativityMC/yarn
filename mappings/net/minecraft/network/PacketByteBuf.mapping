@@ -875,12 +875,6 @@ CLASS net/minecraft/class_2540 net/minecraft/network/PacketByteBuf
 		COMMENT @see #encode(DynamicOps, Codec, Object)
 		ARG 1 ops
 		ARG 2 codec
-	METHOD method_52955 writeVec3d (Lnet/minecraft/class_243;)V
-		COMMENT Writes a {@link Vec3d} to this buf. A {@link Vec3d} is represented
-		COMMENT by four {@code double}s.
-		COMMENT
-		COMMENT @see #readVec3d()
-		ARG 1 vec
 	METHOD method_52962 decode (Ljava/util/function/IntFunction;)Ljava/lang/Object;
 		COMMENT Reads a {@linkplain #readVarInt var int} representing an ID, then
 		COMMENT returns the value converted by {@code idToValue}.
@@ -896,11 +890,6 @@ CLASS net/minecraft/class_2540 net/minecraft/network/PacketByteBuf
 		ARG 1 valueToId
 			COMMENT a function that gets the value's integer ID
 		ARG 2 value
-	METHOD method_52996 readVec3d ()Lnet/minecraft/class_243;
-		COMMENT Reads a {@link Vec3d} from this buf. A {@link Vec3d} is represented
-		COMMENT by four {@code double}s.
-		COMMENT
-		COMMENT @see #writeVec3d(Vec3d)
 	METHOD method_53006 readRegistryRefKey ()Lnet/minecraft/class_5321;
 		COMMENT Reads a registry key referencing another registry key from this buf.
 		COMMENT Such key is represented by its {@linkplain #readIdentifier value as an identifier}.
@@ -955,14 +944,9 @@ CLASS net/minecraft/class_2540 net/minecraft/network/PacketByteBuf
 	METHOD method_56894 writeByteArray (Lio/netty/buffer/ByteBuf;[B)V
 		ARG 0 buf
 		ARG 1 array
-	METHOD method_62783 writeVec3d (Lio/netty/buffer/ByteBuf;Lnet/minecraft/class_243;)V
-		ARG 0 buf
-		ARG 1 vec
 	METHOD method_62784 writeSyncId (Lio/netty/buffer/ByteBuf;I)V
 		ARG 0 buf
 		ARG 1 syncId
-	METHOD method_62785 readVec3d (Lio/netty/buffer/ByteBuf;)Lnet/minecraft/class_243;
-		ARG 0 buf
 	METHOD method_62786 writeSyncId (I)V
 		ARG 1 syncId
 	METHOD method_62787 readSyncId (Lio/netty/buffer/ByteBuf;)I
@@ -993,15 +977,6 @@ CLASS net/minecraft/class_2540 net/minecraft/network/PacketByteBuf
 	METHOD method_70968 readEither (Lnet/minecraft/class_9141;Lnet/minecraft/class_9141;)Lcom/mojang/datafixers/util/Either;
 		ARG 1 leftDecoder
 		ARG 2 rightDecoder
-	METHOD method_73167 writeVelocity (Lnet/minecraft/class_243;)V
-		COMMENT Writes a {@link Vec3d} representing a velocity to this buf.
-		COMMENT
-		COMMENT @see #readVelocity()
-		ARG 1 velocity
-	METHOD method_73168 readVelocity ()Lnet/minecraft/class_243;
-		COMMENT Reads a {@link Vec3d} representing a velocity from this buf.
-		COMMENT
-		COMMENT @see #writeVelocity(Vec3d)
 	METHOD nioBuffer (II)Ljava/nio/ByteBuffer;
 		ARG 1 index
 		ARG 2 length

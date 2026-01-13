@@ -6,8 +6,7 @@ CLASS net/minecraft/class_7430 net/minecraft/item/GoatHornItem
 		ARG 0 world
 		ARG 1 player
 		ARG 2 instrument
-	METHOD method_43711 getInstrument (Lnet/minecraft/class_1799;Lnet/minecraft/class_7225$class_7874;)Ljava/util/Optional;
-		ARG 1 stack
-		ARG 2 registries
+	METHOD method_43711 getInstrument (Lnet/minecraft/class_1799;)Ljava/util/Optional;
+		ARG 0 stack
 	METHOD method_45432 (Lnet/minecraft/class_6880;)Ljava/lang/Integer;
 		ARG 0 instrument

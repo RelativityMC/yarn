@@ -5,6 +5,7 @@ CLASS net/minecraft/class_5219 net/minecraft/world/SaveProperties
 	METHOD method_150 getLevelName ()Ljava/lang/String;
 	METHOD method_151 populateCrashReport (Lnet/minecraft/class_129;)V
 		ARG 1 section
+	METHOD method_152 isHardcore ()Z
 	METHOD method_163 cloneWorldNbt (Lnet/minecraft/class_5455;Lnet/minecraft/class_2487;)Lnet/minecraft/class_2487;
 		ARG 1 registryManager
 		ARG 2 playerNbt
@@ -14,6 +15,8 @@ CLASS net/minecraft/class_5219 net/minecraft/world/SaveProperties
 	METHOD method_193 setGameMode (Lnet/minecraft/class_1934;)V
 		ARG 1 gameMode
 	METHOD method_194 areCommandsAllowed ()Z
+	METHOD method_197 isDifficultyLocked ()Z
+	METHOD method_207 getDifficulty ()Lnet/minecraft/class_1267;
 	METHOD method_208 setDifficulty (Lnet/minecraft/class_1267;)V
 		ARG 1 difficulty
 	METHOD method_210 getGameMode ()Lnet/minecraft/class_1934;

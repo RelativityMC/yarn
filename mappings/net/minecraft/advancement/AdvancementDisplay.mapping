@@ -4,15 +4,14 @@ CLASS net/minecraft/class_185 net/minecraft/advancement/AdvancementDisplay
 	FIELD field_1238 announceToChat Z
 	FIELD field_1239 showToast Z
 	FIELD field_1240 title Lnet/minecraft/class_2561;
-	FIELD field_1241 icon Lnet/minecraft/class_1799;
+	FIELD field_1241 icon Lnet/minecraft/class_1_107;
 	FIELD field_1242 description Lnet/minecraft/class_2561;
 	FIELD field_1243 background Ljava/util/Optional;
 	FIELD field_1244 y F
 	FIELD field_1245 x F
 	FIELD field_47190 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_48276 PACKET_CODEC Lnet/minecraft/class_9139;
-	METHOD <init> (Lnet/minecraft/class_1799;Lnet/minecraft/class_2561;Lnet/minecraft/class_2561;Ljava/util/Optional;Lnet/minecraft/class_189;ZZZ)V
-		ARG 1 icon
+	METHOD <init> (Lnet/minecraft/class_1_107;Lnet/minecraft/class_2561;Lnet/minecraft/class_2561;Ljava/util/Optional;Lnet/minecraft/class_189;ZZZ)V
 		ARG 2 title
 		ARG 3 description
 		ARG 4 background
@@ -34,7 +33,7 @@ CLASS net/minecraft/class_185 net/minecraft/advancement/AdvancementDisplay
 	METHOD method_819 getY ()F
 	METHOD method_820 fromPacket (Lnet/minecraft/class_9129;)Lnet/minecraft/class_185;
 		ARG 0 buf
-	METHOD method_821 getIcon ()Lnet/minecraft/class_1799;
+	METHOD method_821 getIcon ()Lnet/minecraft/class_1_107;
 	METHOD method_823 shouldShowToast ()Z
 	METHOD method_824 isHidden ()Z
 	METHOD method_54939 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

@@ -414,16 +414,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_5662 saveData (Lnet/minecraft/class_11372;)Z
 		ARG 1 view
 	METHOD method_5663 getRotationVecClient ()Lnet/minecraft/class_243;
-	METHOD method_5664 interactAt (Lnet/minecraft/class_1657;Lnet/minecraft/class_243;Lnet/minecraft/class_1268;)Lnet/minecraft/class_1269;
-		COMMENT Called when the player interacts with the entity at the specific position.
-		COMMENT
-		COMMENT <p>This should not be used in most cases; {@link #interact} should be used.
-		COMMENT This should be used if the interaction's result depends on which part of the
-		COMMENT entity was interacted at.
-		ARG 1 player
-		ARG 2 hitPos
-			COMMENT the interaction's position offset from the entity's position
-		ARG 3 hand
 	METHOD method_5665 setCustomName (Lnet/minecraft/class_2561;)V
 		COMMENT Sets the custom name of the entity to {@code name} (or {@code null} to
 		COMMENT remove the custom name).
@@ -495,7 +485,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		COMMENT @see #streamSelfAndPassengers
 		COMMENT @see #streamPassengersAndSelf
 		COMMENT @see #getPassengersDeep
-	METHOD method_5688 interact (Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;)Lnet/minecraft/class_1269;
+	METHOD method_5688 interact (Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;Lnet/minecraft/class_243;)Lnet/minecraft/class_1269;
 		COMMENT Called when a player interacts with this entity.
 		ARG 1 player
 			COMMENT the player

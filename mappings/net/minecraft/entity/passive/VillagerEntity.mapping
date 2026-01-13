@@ -9,7 +9,6 @@ CLASS net/minecraft/class_1646 net/minecraft/entity/passive/VillagerEntity
 	FIELD field_18535 gossipStartTime J
 	FIELD field_18536 experience I
 	FIELD field_18537 lastRestockTime J
-	FIELD field_18538 MEMORY_MODULES Lcom/google/common/collect/ImmutableList;
 	FIELD field_18539 SENSORS Lcom/google/common/collect/ImmutableList;
 	FIELD field_18851 POINTS_OF_INTEREST Ljava/util/Map;
 	FIELD field_19357 lastGossipDecayTime J
@@ -95,7 +94,6 @@ CLASS net/minecraft/class_1646 net/minecraft/entity/passive/VillagerEntity
 		ARG 1 worldTime
 	METHOD method_20821 clearDailyRestockCount ()V
 	METHOD method_20822 shouldRestock (Lnet/minecraft/class_3218;)Z
-		ARG 1 world
 	METHOD method_20823 needsRestock ()Z
 		COMMENT Returns whether this villager needs restock.
 		COMMENT

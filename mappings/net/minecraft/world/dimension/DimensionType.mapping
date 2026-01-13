@@ -10,7 +10,7 @@ CLASS net/minecraft/class_2874 net/minecraft/world/dimension/DimensionType
 	FIELD field_28136 MIN_HEIGHT I
 	FIELD field_51951 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_63812 NETWORK_CODEC Lcom/mojang/serialization/Codec;
-	METHOD <init> (ZZZDIIILnet/minecraft/class_6862;FLnet/minecraft/class_2874$class_7512;Lnet/minecraft/class_2874$class_12326;Lnet/minecraft/class_2874$class_12325;Lnet/minecraft/class_12199;Lnet/minecraft/class_6885;)V
+	METHOD <init> (ZZZDIIILnet/minecraft/class_6862;FLnet/minecraft/class_2874$class_7512;Lnet/minecraft/class_2874$class_12326;Lnet/minecraft/class_2874$class_12325;Lnet/minecraft/class_12199;Lnet/minecraft/class_6885;Ljava/util/Optional;)V
 		ARG 1 hasFixedTime
 		ARG 2 hasSkylight
 		ARG 3 hasCeiling

@@ -65,7 +65,7 @@ CLASS net/minecraft/class_1767 net/minecraft/util/DyeColor
 	METHOD method_65356 createColorMixingRecipeInput (Lnet/minecraft/class_1767;Lnet/minecraft/class_1767;)Lnet/minecraft/class_9694;
 		ARG 0 first
 		ARG 1 second
-	METHOD method_65357 (Lnet/minecraft/class_9694;Lnet/minecraft/class_3218;Lnet/minecraft/class_8786;)Lnet/minecraft/class_1799;
-		ARG 2 recipe
+	METHOD method_65357 (Lnet/minecraft/class_9694;Lnet/minecraft/class_8786;)Lnet/minecraft/class_1799;
+		ARG 1 recipe
 	METHOD method_67674 (Lnet/minecraft/class_1767;)Ljava/lang/Byte;
 		ARG 0 color

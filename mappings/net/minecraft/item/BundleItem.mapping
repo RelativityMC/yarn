@@ -23,11 +23,9 @@ CLASS net/minecraft/class_5537 net/minecraft/item/BundleItem
 		ARG 1 selectedStackIndex
 	METHOD method_61641 playInsertFailSound (Lnet/minecraft/class_1297;)V
 		ARG 0 entity
-	METHOD method_61642 hasSelectedStack (Lnet/minecraft/class_1799;)Z
-		ARG 0 stack
 	METHOD method_61643 getSelectedStackIndex (Lnet/minecraft/class_1799;)I
 		ARG 0 stack
-	METHOD method_61644 getSelectedStack (Lnet/minecraft/class_1799;)Lnet/minecraft/class_1799;
+	METHOD method_61644 getSelectedStack (Lnet/minecraft/class_1799;)Lnet/minecraft/class_1_107;
 		ARG 0 stack
 	METHOD method_61645 getNumberOfStacksShown (Lnet/minecraft/class_1799;)I
 		ARG 0 stack

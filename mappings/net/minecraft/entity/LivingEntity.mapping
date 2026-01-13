@@ -106,15 +106,13 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 wind
 		ARG 2 pos
 	METHOD method_1_785 resetImpulseDataIfGraceTimeReset ()V
-	METHOD method_5673 equipStack (Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;)V
+	METHOD method_5673 setEquipment (Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;)V
 		ARG 1 slot
 		ARG 2 stack
 	METHOD method_5679 isInvulnerableTo (Lnet/minecraft/class_3218;Lnet/minecraft/class_1282;)Z
 		ARG 1 world
 		ARG 2 source
 	METHOD method_5936 canPickUpLoot ()Z
-	METHOD method_5973 canTarget (Lnet/minecraft/class_1297;)Z
-		ARG 1 target
 	METHOD method_5996 getAttributeInstance (Lnet/minecraft/class_6880;)Lnet/minecraft/class_1324;
 		ARG 1 attribute
 	METHOD method_5997 attackLivingEntity (Lnet/minecraft/class_1309;)V
@@ -362,7 +360,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 2 oldStack
 		ARG 3 newStack
 	METHOD method_6117 getLastAttackedTime ()I
-	METHOD method_6118 getEquippedStack (Lnet/minecraft/class_1304;)Lnet/minecraft/class_1799;
+	METHOD method_6118 getEquipment (Lnet/minecraft/class_1304;)Lnet/minecraft/class_1799;
 		ARG 1 slot
 	METHOD method_6119 tickHandSwing ()V
 	METHOD method_6120 getBaseWaterMovementSpeedMultiplier ()F
@@ -859,7 +857,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 y
 	METHOD method_76444 getPiercedEntityCount (Ljava/util/function/Predicate;)I
 		ARG 1 predicate
-	METHOD method_76693 getAttackRange ()Lnet/minecraft/class_12392;
 	METHOD method_76694 getActiveOrMainHandStack ()Lnet/minecraft/class_1799;
 	METHOD method_76773 playKineticHitSound ()V
 	CLASS class_6823 FallSounds

@@ -49,19 +49,15 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 		COMMENT <p>This should never be mutated.
 		COMMENT
 		COMMENT @see ItemStack#isEmpty
-	FIELD field_8038 item Lnet/minecraft/class_1792;
+	FIELD field_8038 item Lnet/minecraft/class_6880;
 	FIELD field_24093 holder Lnet/minecraft/class_1297;
 	FIELD field_24671 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_40211 DISABLED_TEXT Lnet/minecraft/class_2561;
 	FIELD field_48349 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_49266 OPTIONAL_CODEC Lcom/mojang/serialization/Codec;
-	FIELD field_49267 REGISTRY_ENTRY_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_49268 OPTIONAL_PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_49269 OPTIONAL_LIST_PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_49270 components Lnet/minecraft/class_9335;
-	FIELD field_49747 UNCOUNTED_CODEC Lcom/mojang/serialization/Codec;
-	FIELD field_51397 VALIDATED_CODEC Lcom/mojang/serialization/Codec;
-	FIELD field_51398 VALIDATED_UNCOUNTED_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_55546 OPERATOR_WARNINGS Ljava/util/List;
 	FIELD field_55709 MAP_CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_56297 UNBREAKABLE_TEXT Lnet/minecraft/class_2561;
@@ -74,10 +70,6 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 	METHOD <init> (Lnet/minecraft/class_1935;I)V
 		ARG 1 item
 		ARG 2 count
-	METHOD <init> (Lnet/minecraft/class_1935;ILnet/minecraft/class_9335;)V
-		ARG 1 item
-		ARG 2 count
-		ARG 3 components
 	METHOD <init> (Lnet/minecraft/class_6880;)V
 		ARG 1 entry
 	METHOD <init> (Lnet/minecraft/class_6880;I)V
@@ -87,6 +79,9 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 		ARG 1 item
 		ARG 2 count
 		ARG 3 changes
+	METHOD <init> (Lnet/minecraft/class_6880;ILnet/minecraft/class_9335;)V
+		ARG 2 count
+		ARG 3 components
 	METHOD method_7909 getItem ()Lnet/minecraft/class_1792;
 		COMMENT {@return the item of this stack}
 		COMMENT
@@ -100,7 +95,6 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 		ARG 1 world
 		ARG 2 user
 		ARG 3 hand
-	METHOD method_7914 getMaxCount ()I
 	METHOD method_7917 inventoryTick (Lnet/minecraft/class_1937;Lnet/minecraft/class_1297;Lnet/minecraft/class_1304;)V
 		ARG 1 world
 		ARG 2 entity
@@ -517,16 +511,7 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 		ARG 1 type
 	METHOD method_57382 (Lnet/minecraft/class_1799;)Ljava/util/Optional;
 		ARG 0 stack
-	METHOD method_57383 (Lnet/minecraft/class_1799;Lnet/minecraft/class_3902;)Lnet/minecraft/class_1799;
-		ARG 1 v
 	METHOD method_57385 (Lnet/minecraft/class_1799;)Lnet/minecraft/class_9326;
-		ARG 0 stack
-	METHOD method_58092 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance
-	METHOD method_58093 (Lnet/minecraft/class_6880;Lnet/minecraft/class_9326;)Lnet/minecraft/class_1799;
-		ARG 0 item
-		ARG 1 components
-	METHOD method_58094 (Lnet/minecraft/class_1799;)Lnet/minecraft/class_9326;
 		ARG 0 stack
 	METHOD method_58407 takesDamageFrom (Lnet/minecraft/class_1282;)Z
 		ARG 1 source
@@ -615,8 +600,6 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 	METHOD method_74887 set (Lnet/minecraft/class_9336;)Ljava/lang/Object;
 		ARG 1 component
 	METHOD method_75218 getSwingAnimation ()Lnet/minecraft/class_12126;
-	METHOD method_75219 (Lnet/minecraft/class_1309;Lnet/minecraft/class_9791;)Ljava/util/Optional;
-		ARG 1 ref
 	METHOD method_75220 getDamageSource (Lnet/minecraft/class_1309;Ljava/util/function/Supplier;)Lnet/minecraft/class_1282;
 		ARG 1 attacker
 		ARG 2 fallbackSupplier

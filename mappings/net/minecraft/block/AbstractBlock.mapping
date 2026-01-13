@@ -270,7 +270,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 	FIELD field_54005 translationKey Ljava/lang/String;
 	METHOD <init> (Lnet/minecraft/class_4970$class_2251;)V
 		ARG 1 settings
-	METHOD method_8389 ()Lnet/minecraft/class_1792;
+	METHOD method_8389 asItem ()Lnet/minecraft/class_1792;
 		COMMENT {@return the block's corresponding item}
 		COMMENT
 		COMMENT <p>This is not affected by loot tables. Blocks without corresponding items,

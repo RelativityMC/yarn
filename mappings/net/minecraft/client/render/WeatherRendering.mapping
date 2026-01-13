@@ -41,10 +41,6 @@ CLASS net/minecraft/class_9976 net/minecraft/client/render/WeatherRendering
 		ARG 3 ticks
 		ARG 4 particlesMode
 		ARG 5 weatherRadius
-	METHOD method_62320 renderPrecipitation (Lnet/minecraft/class_4597;Lnet/minecraft/class_243;Lnet/minecraft/class_12077;)V
-		ARG 1 vertexConsumers
-		ARG 2 pos
-		ARG 3 state
 	METHOD method_62321 createSnowPiece (Lnet/minecraft/class_5819;IIIIIIF)Lnet/minecraft/class_9976$class_9977;
 		ARG 1 random
 		ARG 2 ticks

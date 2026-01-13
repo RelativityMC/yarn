@@ -52,7 +52,6 @@ CLASS net/minecraft/class_4520 net/minecraft/test/TestRunContext
 		ARG 1 state
 	CLASS 1 1
 		METHOD method_56232 onFinished (Lnet/minecraft/class_4517;)V
-			ARG 1 state
 		METHOD method_56233 (J)V
 			ARG 1 chunkPos
 		METHOD method_56234 (Lnet/minecraft/class_4514;Lnet/minecraft/class_9114;)V

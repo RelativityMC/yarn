@@ -86,7 +86,7 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 	METHOD method_7286 applyEnchantmentCosts (Lnet/minecraft/class_1799;I)V
 		ARG 1 enchantedItem
 		ARG 2 experienceLevels
-	METHOD method_7287 interact (Lnet/minecraft/class_1297;Lnet/minecraft/class_1268;)Lnet/minecraft/class_1269;
+	METHOD method_7287 interact (Lnet/minecraft/class_1297;Lnet/minecraft/class_1268;Lnet/minecraft/class_243;)Lnet/minecraft/class_1269;
 		ARG 1 entity
 		ARG 2 hand
 	METHOD method_7291 openHorseInventory (Lnet/minecraft/class_1496;Lnet/minecraft/class_1263;)V
@@ -372,11 +372,11 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 	METHOD method_76575 openNautilusInventory (Lnet/minecraft/class_12116;Lnet/minecraft/class_1263;)V
 		ARG 1 nautilus
 		ARG 2 inventory
-	METHOD method_76729 canAttackEntityIn (Lnet/minecraft/class_238;D)Z
+	METHOD method_76729 canAttackEntityIn (Lnet/minecraft/class_1799;Lnet/minecraft/class_238;D)Z
 		COMMENT {@return whether the player can attack entity whose bounding box
 		COMMENT is {@code box}}
-		ARG 1 box
-		ARG 2 additionalRange
+		ARG 2 box
+		ARG 3 additionalRange
 	CLASS class_1658 SleepFailureReason
 		COMMENT A reason why a player cannot start sleeping.
 		FIELD comp_5144 message Lnet/minecraft/class_2561;

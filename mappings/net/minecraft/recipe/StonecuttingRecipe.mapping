@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_3975 net/minecraft/recipe/StonecuttingRecipe
-	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_1856;Lnet/minecraft/class_1799;)V
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_1856;Lnet/minecraft/class_1_107;)V
 		ARG 1 group
 		ARG 2 ingredient
-		ARG 3 result
 	METHOD method_64725 createResultDisplay ()Lnet/minecraft/class_10302;

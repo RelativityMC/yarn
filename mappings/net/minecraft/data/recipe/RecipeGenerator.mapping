@@ -15,11 +15,10 @@ CLASS net/minecraft/class_2446 net/minecraft/data/recipe/RecipeGenerator
 		ARG 0 predicates
 	METHOD method_10426 conditionsFromItem (Lnet/minecraft/class_1935;)Lnet/minecraft/class_175;
 		ARG 1 item
-	METHOD method_17585 generateCookingRecipes (Ljava/lang/String;Lnet/minecraft/class_1865;Lnet/minecraft/class_1874$class_3958;I)V
+	METHOD method_17585 generateCookingRecipes (Ljava/lang/String;Lnet/minecraft/class_1874$class_3958;I)V
 		ARG 1 cooker
-		ARG 2 serializer
-		ARG 3 recipeFactory
-		ARG 4 cookingTime
+		ARG 2 recipeFactory
+		ARG 3 cookingTime
 	METHOD method_24475 offerPlanksRecipe2 (Lnet/minecraft/class_1935;Lnet/minecraft/class_6862;I)V
 		ARG 1 output
 		ARG 2 logTag
@@ -168,30 +167,14 @@ CLASS net/minecraft/class_2446 net/minecraft/data/recipe/RecipeGenerator
 	METHOD method_35914 conditionsFromItem (Lnet/minecraft/class_2096$class_2100;Lnet/minecraft/class_1935;)Lnet/minecraft/class_175;
 		ARG 1 count
 		ARG 2 item
-	METHOD method_36232 offerMultipleOptions (Lnet/minecraft/class_1865;Lnet/minecraft/class_1874$class_3958;Ljava/util/List;Lnet/minecraft/class_7800;Lnet/minecraft/class_1935;FILjava/lang/String;Ljava/lang/String;)V
-		ARG 1 serializer
-		ARG 2 recipeFactory
-		ARG 3 inputs
-		ARG 4 category
+	METHOD method_36232 offerMultipleOptions (Lnet/minecraft/class_1874$class_3958;Ljava/util/List;Lnet/minecraft/class_7800;Lnet/minecraft/class_7709;Lnet/minecraft/class_1935;FILjava/lang/String;Ljava/lang/String;)V
+		ARG 1 recipeFactory
+		ARG 2 inputs
 		ARG 5 output
 		ARG 6 experience
 		ARG 7 cookingTime
 		ARG 8 group
 		ARG 9 suffix
-	METHOD method_36233 offerSmelting (Ljava/util/List;Lnet/minecraft/class_7800;Lnet/minecraft/class_1935;FILjava/lang/String;)V
-		ARG 1 inputs
-		ARG 2 category
-		ARG 3 output
-		ARG 4 experience
-		ARG 5 cookingTime
-		ARG 6 group
-	METHOD method_36234 offerBlasting (Ljava/util/List;Lnet/minecraft/class_7800;Lnet/minecraft/class_1935;FILjava/lang/String;)V
-		ARG 1 inputs
-		ARG 2 category
-		ARG 3 output
-		ARG 4 experience
-		ARG 5 cookingTime
-		ARG 6 group
 	METHOD method_36325 offerReversibleCompactingRecipes (Lnet/minecraft/class_7800;Lnet/minecraft/class_1935;Lnet/minecraft/class_7800;Lnet/minecraft/class_1935;)V
 		COMMENT Offers two recipes to convert between a normal and compacted form of an item.
 		COMMENT
@@ -226,14 +209,13 @@ CLASS net/minecraft/class_2446 net/minecraft/data/recipe/RecipeGenerator
 		ARG 6 compactingGroup
 		ARG 7 reverseId
 		ARG 8 reverseGroup
-	METHOD method_36448 offerFoodCookingRecipe (Ljava/lang/String;Lnet/minecraft/class_1865;Lnet/minecraft/class_1874$class_3958;ILnet/minecraft/class_1935;Lnet/minecraft/class_1935;F)V
+	METHOD method_36448 offerFoodCookingRecipe (Ljava/lang/String;Lnet/minecraft/class_1874$class_3958;ILnet/minecraft/class_1935;Lnet/minecraft/class_1935;F)V
 		ARG 1 cooker
-		ARG 2 serializer
-		ARG 3 recipeFactory
-		ARG 4 cookingTime
-		ARG 5 input
-		ARG 6 output
-		ARG 7 experience
+		ARG 2 recipeFactory
+		ARG 3 cookingTime
+		ARG 4 input
+		ARG 5 output
+		ARG 6 experience
 	METHOD method_36449 offerReversibleCompactingRecipesWithReverseRecipeGroup (Lnet/minecraft/class_7800;Lnet/minecraft/class_1935;Lnet/minecraft/class_7800;Lnet/minecraft/class_1935;Ljava/lang/String;Ljava/lang/String;)V
 		ARG 1 reverseCategory
 		ARG 2 baseItem
@@ -322,9 +304,8 @@ CLASS net/minecraft/class_2446 net/minecraft/data/recipe/RecipeGenerator
 		ARG 3 undyed
 		ARG 4 group
 		ARG 5 category
-	METHOD method_62745 createShapeless (Lnet/minecraft/class_7800;Lnet/minecraft/class_1799;)Lnet/minecraft/class_2450;
+	METHOD method_62745 createShapeless (Lnet/minecraft/class_7800;Lnet/minecraft/class_1_107;)Lnet/minecraft/class_2450;
 		ARG 1 category
-		ARG 2 output
 	METHOD method_62746 createShaped (Lnet/minecraft/class_7800;Lnet/minecraft/class_1935;)Lnet/minecraft/class_2447;
 		ARG 1 category
 		ARG 2 output

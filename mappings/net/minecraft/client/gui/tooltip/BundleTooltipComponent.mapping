@@ -33,11 +33,11 @@ CLASS net/minecraft/class_5682 net/minecraft/client/gui/tooltip/BundleTooltipCom
 		ARG 5 seed
 		ARG 6 textRenderer
 		ARG 7 drawContext
-	METHOD method_62007 drawProgressBar (IILnet/minecraft/class_327;Lnet/minecraft/class_332;)V
-		ARG 1 x
-		ARG 2 y
-		ARG 3 textRenderer
-		ARG 4 drawContext
+	METHOD method_62007 drawProgressBar (IILnet/minecraft/class_327;Lnet/minecraft/class_332;Lorg/apache/commons/lang3/math/Fraction;)V
+		ARG 0 x
+		ARG 1 y
+		ARG 2 textRenderer
+		ARG 3 drawContext
 	METHOD method_62009 drawSelectedItemTooltip (Lnet/minecraft/class_327;Lnet/minecraft/class_332;III)V
 		ARG 1 textRenderer
 		ARG 2 drawContext
@@ -59,16 +59,16 @@ CLASS net/minecraft/class_5682 net/minecraft/client/gui/tooltip/BundleTooltipCom
 		ARG 2 textRenderer
 		ARG 3 drawContext
 	METHOD method_62014 drawEmptyTooltip (Lnet/minecraft/class_327;IIIILnet/minecraft/class_332;)V
-		ARG 1 textRenderer
-		ARG 2 x
-		ARG 3 y
-		ARG 4 width
-		ARG 5 height
-		ARG 6 context
+		ARG 0 textRenderer
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+		ARG 5 context
 	METHOD method_62015 getRowsHeight ()I
 	METHOD method_62016 getHeightOfEmpty (Lnet/minecraft/class_327;)I
 		ARG 0 textRenderer
-	METHOD method_62017 drawNonEmptyTooltip (Lnet/minecraft/class_327;IIIILnet/minecraft/class_332;)V
+	METHOD method_62017 drawNonEmptyTooltip (Lnet/minecraft/class_327;IIIILnet/minecraft/class_332;Lorg/apache/commons/lang3/math/Fraction;)V
 		ARG 1 textRenderer
 		ARG 2 x
 		ARG 3 y
@@ -78,8 +78,8 @@ CLASS net/minecraft/class_5682 net/minecraft/client/gui/tooltip/BundleTooltipCom
 	METHOD method_62018 getDescriptionHeight (Lnet/minecraft/class_327;)I
 		ARG 0 textRenderer
 	METHOD method_62019 getNumVisibleSlots ()I
-	METHOD method_62020 getProgressBarFill ()I
-	METHOD method_62021 getProgressBarLabel ()Lnet/minecraft/class_2561;
+	METHOD method_62020 getProgressBarFill (Lorg/apache/commons/lang3/math/Fraction;)I
+	METHOD method_62021 getProgressBarLabel (Lorg/apache/commons/lang3/math/Fraction;)Lnet/minecraft/class_2561;
 	METHOD method_63508 getXMargin (I)I
-		ARG 1 width
-	METHOD method_63509 getProgressBarFillTexture ()Lnet/minecraft/class_2960;
+		ARG 0 width
+	METHOD method_63509 getProgressBarFillTexture (Lorg/apache/commons/lang3/math/Fraction;)Lnet/minecraft/class_2960;

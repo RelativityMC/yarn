@@ -1,6 +1,4 @@
 CLASS net/minecraft/class_2761 net/minecraft/network/packet/s2c/play/WorldTimeUpdateS2CPacket
 	FIELD comp_3219 time J
-	FIELD comp_3220 timeOfDay J
 	FIELD field_47991 CODEC Lnet/minecraft/class_9139;
 	METHOD comp_3219 time ()J
-	METHOD comp_3220 timeOfDay ()J

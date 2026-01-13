@@ -245,17 +245,6 @@ CLASS net/minecraft/class_1937 net/minecraft/world/World
 	METHOD method_8524 markDirty (Lnet/minecraft/class_2338;)V
 		ARG 1 pos
 	METHOD method_8530 isDay ()Z
-	METHOD method_8532 getTimeOfDay ()J
-		COMMENT {@return the time of day}
-		COMMENT
-		COMMENT <p>Time of day is different to "time", which is incremented on every tick and
-		COMMENT cannot be modified; Time of day affects the day-night cycle, can be changed using
-		COMMENT {@link net.minecraft.server.command.TimeCommand /time command}, and can be frozen
-		COMMENT if {@link GameRules#DO_DAYLIGHT_CYCLE doDaylightCycle} gamerule is turned off.
-		COMMENT Time is used to track scheduled ticks and cannot be modified or frozen.
-		COMMENT
-		COMMENT @see WorldProperties#getTimeOfDay
-		COMMENT @see net.minecraft.server.world.ServerWorld#setTimeOfDay
 	METHOD method_8533 calculateAmbientDarkness ()V
 	METHOD method_8536 getRandomPosInChunk (IIII)Lnet/minecraft/class_2338;
 		ARG 1 x

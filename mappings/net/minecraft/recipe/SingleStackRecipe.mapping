@@ -2,15 +2,14 @@ CLASS net/minecraft/class_3972 net/minecraft/recipe/SingleStackRecipe
 	COMMENT A recipe that has only one input ingredient. It can be used by any type
 	COMMENT of recipe as long as its subclass implements the proper interface.
 	FIELD field_17642 ingredient Lnet/minecraft/class_1856;
-	FIELD field_17643 result Lnet/minecraft/class_1799;
+	FIELD field_17643 result Lnet/minecraft/class_1_107;
 	FIELD field_17645 group Ljava/lang/String;
 	FIELD field_52604 ingredientPlacement Lnet/minecraft/class_9887;
-	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_1856;Lnet/minecraft/class_1799;)V
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_1856;Lnet/minecraft/class_1_107;)V
 		ARG 1 group
 		ARG 2 ingredient
-		ARG 3 result
 	METHOD method_64720 ingredient ()Lnet/minecraft/class_1856;
-	METHOD method_64721 result ()Lnet/minecraft/class_1799;
+	METHOD method_64721 result ()Lnet/minecraft/class_1_107;
 	CLASS class_3973 Serializer
 		FIELD field_46107 codec Lcom/mojang/serialization/MapCodec;
 		FIELD field_48363 packetCodec Lnet/minecraft/class_9139;
@@ -19,7 +18,6 @@ CLASS net/minecraft/class_3972 net/minecraft/recipe/SingleStackRecipe
 		METHOD method_53774 (Lnet/minecraft/class_3972$class_3974;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 1 instance
 	CLASS class_3974 RecipeFactory
-		METHOD method_1_210 create (Ljava/lang/String;Lnet/minecraft/class_1856;Lnet/minecraft/class_1799;)Lnet/minecraft/class_3972;
+		METHOD method_1_210 create (Ljava/lang/String;Lnet/minecraft/class_1856;Lnet/minecraft/class_1_107;)Lnet/minecraft/class_3972;
 			ARG 1 group
 			ARG 2 ingredient
-			ARG 3 result

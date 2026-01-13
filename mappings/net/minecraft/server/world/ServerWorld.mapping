@@ -273,17 +273,6 @@ CLASS net/minecraft/class_3218 net/minecraft/server/world/ServerWorld
 			COMMENT whether a thunderstorm is ongoing
 	METHOD method_28125 isFlat ()Z
 	METHOD method_29198 getEnderDragonFight ()Lnet/minecraft/class_2881;
-	METHOD method_29199 setTimeOfDay (J)V
-		COMMENT Sets the time of day.
-		COMMENT
-		COMMENT <p>Time of day is different to "time", which is incremented on every tick and
-		COMMENT cannot be modified; Time of day affects the day-night cycle, can be changed using
-		COMMENT {@link net.minecraft.server.command.TimeCommand /time command}, and can be frozen
-		COMMENT if {@link net.minecraft.world.GameRules#DO_DAYLIGHT_CYCLE doDaylightCycle} gamerule is turned off.
-		COMMENT Time is used to track scheduled ticks and cannot be modified or frozen.
-		COMMENT
-		COMMENT @see net.minecraft.world.level.ServerWorldProperties#setTimeOfDay
-		ARG 1 timeOfDay
 	METHOD method_29202 tickSpawners (Z)V
 		ARG 1 spawnMonsters
 	METHOD method_29203 tickTime ()V
@@ -415,7 +404,6 @@ CLASS net/minecraft/class_3218 net/minecraft/server/world/ServerWorld
 	METHOD method_75001 areSpawnerBlocksEnabled ()Z
 	METHOD method_75002 isEnterableWithPortal (Lnet/minecraft/class_1937;)Z
 		ARG 1 destination
-	METHOD method_75003 getDay ()J
 	METHOD method_76058 canFireSpread (Lnet/minecraft/class_2338;)Z
 		ARG 1 pos
 	METHOD method_76332 getMoonSize (Lnet/minecraft/class_2338;)F

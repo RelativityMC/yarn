@@ -207,16 +207,3 @@ CLASS net/minecraft/class_3244 net/minecraft/server/network/ServerPlayNetworkHan
 		COMMENT {@link ServerPlayerEntity}, like {@link ServerPlayerEntity#kill}.
 	METHOD method_76688 markLoaded ()V
 	METHOD method_76689 markRespawned ()V
-	CLASS 1 1
-		METHOD method_33897 processInteract (Lnet/minecraft/class_1268;Lnet/minecraft/class_3244$class_5860;)V
-			ARG 1 hand
-			ARG 2 action
-		METHOD method_33898 (Lnet/minecraft/class_243;Lnet/minecraft/class_3222;Lnet/minecraft/class_1297;Lnet/minecraft/class_1268;)Lnet/minecraft/class_1269;
-			ARG 1 player
-			ARG 2 entity
-			ARG 3 handx
-	CLASS class_5860 Interaction
-		METHOD method_1_285 run (Lnet/minecraft/class_3222;Lnet/minecraft/class_1297;Lnet/minecraft/class_1268;)Lnet/minecraft/class_1269;
-			ARG 1 player
-			ARG 2 entity
-			ARG 3 hand

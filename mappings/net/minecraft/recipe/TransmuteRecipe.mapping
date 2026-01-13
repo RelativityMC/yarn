@@ -3,9 +3,9 @@ CLASS net/minecraft/class_10223 net/minecraft/recipe/TransmuteRecipe
 	FIELD field_54320 category Lnet/minecraft/class_7710;
 	FIELD field_54321 input Lnet/minecraft/class_1856;
 	FIELD field_54322 material Lnet/minecraft/class_1856;
-	FIELD field_54323 result Lnet/minecraft/class_10591;
+	FIELD field_54323 result Lnet/minecraft/class_1_107;
 	FIELD field_54324 ingredientPlacement Lnet/minecraft/class_9887;
-	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_7710;Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_10591;)V
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_7710;Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_1_107;)V
 		ARG 1 group
 		ARG 2 category
 		ARG 3 input
@@ -16,7 +16,7 @@ CLASS net/minecraft/class_10223 net/minecraft/recipe/TransmuteRecipe
 		FIELD field_54326 CODEC Lcom/mojang/serialization/MapCodec;
 		METHOD method_64299 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance
-		METHOD method_64300 (Lnet/minecraft/class_10223;)Lnet/minecraft/class_10591;
+		METHOD method_64300 (Lnet/minecraft/class_10223;)Lnet/minecraft/class_1_107;
 			ARG 0 recipe
 		METHOD method_64301 (Lnet/minecraft/class_10223;)Lnet/minecraft/class_1856;
 			ARG 0 recipe
@@ -26,7 +26,7 @@ CLASS net/minecraft/class_10223 net/minecraft/recipe/TransmuteRecipe
 			ARG 0 recipe
 		METHOD method_64304 (Lnet/minecraft/class_10223;)Ljava/lang/String;
 			ARG 0 recipe
-		METHOD method_64305 (Lnet/minecraft/class_10223;)Lnet/minecraft/class_10591;
+		METHOD method_64305 (Lnet/minecraft/class_10223;)Lnet/minecraft/class_1_107;
 			ARG 0 recipe
 		METHOD method_64306 (Lnet/minecraft/class_10223;)Lnet/minecraft/class_1856;
 			ARG 0 recipe

@@ -83,8 +83,7 @@ CLASS net/minecraft/class_161 net/minecraft/advancement/Advancement
 		METHOD method_707 create ()Lnet/minecraft/class_161$class_162;
 		METHOD method_708 parent (Lnet/minecraft/class_2960;)Lnet/minecraft/class_161$class_162;
 			ARG 1 parentId
-		METHOD method_20416 display (Lnet/minecraft/class_1799;Lnet/minecraft/class_2561;Lnet/minecraft/class_2561;Lnet/minecraft/class_2960;Lnet/minecraft/class_189;ZZZ)Lnet/minecraft/class_161$class_162;
-			ARG 1 icon
+		METHOD method_20416 display (Lnet/minecraft/class_1_107;Lnet/minecraft/class_2561;Lnet/minecraft/class_2561;Lnet/minecraft/class_2960;Lnet/minecraft/class_189;ZZZ)Lnet/minecraft/class_161$class_162;
 			ARG 2 title
 			ARG 3 description
 			ARG 4 background

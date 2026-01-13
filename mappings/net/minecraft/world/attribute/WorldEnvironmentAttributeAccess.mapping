@@ -24,7 +24,7 @@ CLASS net/minecraft/class_12205 net/minecraft/world/attribute/WorldEnvironmentAt
 	METHOD method_76401 addModifiersFromDimension (Lnet/minecraft/class_12205$class_12314;Lnet/minecraft/class_2874;)V
 		ARG 0 builder
 		ARG 1 dimensionType
-	METHOD method_76402 (Lnet/minecraft/class_12205$class_12314;Ljava/util/function/LongSupplier;Lnet/minecraft/class_6880;)V
+	METHOD method_76402 (Lnet/minecraft/class_12205$class_12314;Lnet/minecraft/class_1_98;Lnet/minecraft/class_6880;)V
 		ARG 2 attribute
 	METHOD method_76403 addModifiersFromBiomes (Lnet/minecraft/class_12205$class_12314;Lnet/minecraft/class_7225;Lnet/minecraft/class_4543;)V
 		ARG 0 builder
@@ -66,13 +66,11 @@ CLASS net/minecraft/class_12205 net/minecraft/world/attribute/WorldEnvironmentAt
 			ARG 1 attributes
 		METHOD method_76418 world (Lnet/minecraft/class_1937;)Lnet/minecraft/class_12205$class_12314;
 			ARG 1 world
-		METHOD method_76419 addModificationFromTimeline (Lnet/minecraft/class_6880;Lnet/minecraft/class_12197;Ljava/util/function/LongSupplier;)V
+		METHOD method_76419 addModificationFromTimeline (Lnet/minecraft/class_6880;Lnet/minecraft/class_12197;Lnet/minecraft/class_1_98;)V
 			ARG 1 timeline
 			ARG 2 attribute
-			ARG 3 timeSupplier
-		METHOD method_76420 addFromTimeline (Lnet/minecraft/class_6880;Ljava/util/function/LongSupplier;)Lnet/minecraft/class_12205$class_12314;
+		METHOD method_76420 addFromTimeline (Lnet/minecraft/class_6880;Lnet/minecraft/class_1_98;)Lnet/minecraft/class_12205$class_12314;
 			ARG 1 timeline
-			ARG 2 timeSupplier
 	CLASS class_12315 Entry
 		FIELD field_64323 attribute Lnet/minecraft/class_12197;
 		FIELD field_64324 defaultValue Ljava/lang/Object;

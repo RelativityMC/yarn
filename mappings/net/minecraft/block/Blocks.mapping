@@ -12,6 +12,10 @@ CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 	FIELD field_61904 COPPER_BARS Lnet/minecraft/class_11710;
 	FIELD field_61905 COPPER_CHAINS Lnet/minecraft/class_11710;
 	FIELD field_61906 COPPER_LANTERNS Lnet/minecraft/class_11710;
+	METHOD method_1_873 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_1_874 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
 	METHOD method_9492 register (Ljava/lang/String;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
 		ARG 0 id
 		ARG 1 settings

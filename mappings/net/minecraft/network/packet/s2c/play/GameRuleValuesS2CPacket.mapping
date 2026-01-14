@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_132 net/minecraft/network/packet/s2c/play/GameRuleValuesS2CPacket
+	FIELD field_1_1071 PACKET_CODEC Lnet/minecraft/class_9139;

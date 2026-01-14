@@ -15,6 +15,7 @@ CLASS net/minecraft/server/MinecraftServer
 	COMMENT
 	COMMENT @see net.minecraft.server.dedicated.MinecraftDedicatedServer
 	COMMENT @see net.minecraft.server.integrated.IntegratedServer
+	FIELD field_1_962 clocks Lnet/minecraft/class_1_109;
 	FIELD field_4543 onlineMode Z
 	FIELD field_4544 running Z
 	FIELD field_4546 LOGGER Lorg/slf4j/Logger;
@@ -98,13 +99,17 @@ CLASS net/minecraft/server/MinecraftServer
 	FIELD field_63648 activityNotifier Lnet/minecraft/class_12085;
 	FIELD field_63649 stopwatchPersistentState Lnet/minecraft/class_12110;
 	METHOD <init> (Ljava/lang/Thread;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_3283;Lnet/minecraft/class_6904;Ljava/net/Proxy;Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_7497;Lnet/minecraft/class_11545;)V
+		ARG 1 serverThread
 		ARG 2 session
 		ARG 3 dataPackManager
 		ARG 4 saveLoader
+		ARG 5 proxy
 		ARG 6 dataFixer
 		ARG 7 apiServices
 		ARG 8 chunkLoadProgress
 	METHOD method_1_402 checkLowDiskSpaceWarning ()V
+	METHOD method_1_847 getClocks ()Lnet/minecraft/class_1_109;
+	METHOD method_1_848 getOverworldGameRules ()Lnet/minecraft/class_1928;
 	METHOD method_3716 getKeyPair ()Ljava/security/KeyPair;
 	METHOD method_3718 isFlightEnabled ()Z
 	METHOD method_3723 save (ZZZ)Z
@@ -479,6 +484,8 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 1 useAllowlist
 	METHOD method_74055 getManagementListener ()Lnet/minecraft/class_11870;
 	METHOD method_74058 onGameRuleUpdated (Lnet/minecraft/class_12279;Ljava/lang/Object;)V
+		ARG 1 gameRule
+		ARG 2 value
 	METHOD method_74059 changeGameModeGlobally (Lnet/minecraft/class_1934;)I
 	METHOD method_74060 getAutosave ()Z
 	METHOD method_74061 setAutosave (Z)Z
@@ -494,6 +501,10 @@ CLASS net/minecraft/server/MinecraftServer
 	METHOD method_74995 getFunctionPermissions ()Lnet/minecraft/class_12096;
 	METHOD method_75524 getActivityNotifier ()Lnet/minecraft/class_12085;
 	METHOD method_75525 getStopwatchPersistentState ()Lnet/minecraft/class_12110;
+	METHOD method_76323 (Lnet/minecraft/class_2668;Lnet/minecraft/class_3222;)V
+		ARG 1 player
+	METHOD method_76324 (Ljava/lang/Object;Lnet/minecraft/class_3218;)V
+		ARG 1 world
 	METHOD method_76677 processPacketsAndTick (Z)V
 		ARG 1 sprint
 	CLASS 1

@@ -80,6 +80,7 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 		ARG 2 count
 		ARG 3 changes
 	METHOD <init> (Lnet/minecraft/class_6880;ILnet/minecraft/class_9335;)V
+		ARG 1 item
 		ARG 2 count
 		ARG 3 components
 	METHOD method_7909 getItem ()Lnet/minecraft/class_1792;
@@ -617,4 +618,4 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 	METHOD method_76590 emitUseGameEvent (Lnet/minecraft/class_1297;Lnet/minecraft/class_6880$class_6883;)V
 		ARG 1 user
 		ARG 2 gameEvent
-	CLASS 1 1
+	CLASS 1

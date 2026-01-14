@@ -18,6 +18,7 @@ CLASS net/minecraft/class_6880 net/minecraft/registry/entry/RegistryEntry
 	COMMENT @see RegistryEntry.Reference
 	COMMENT @see net.minecraft.registry.RegistryEntryLookup#getOrThrow
 	COMMENT @see net.minecraft.registry.RegistryEntryLookup#getOptional
+	METHOD method_1_816 areComponentsBound ()Z
 	METHOD method_40220 isIn (Lnet/minecraft/class_6862;)Z
 		COMMENT {@return whether this entry is in {@code tag}}
 		COMMENT
@@ -107,6 +108,7 @@ CLASS net/minecraft/class_6880 net/minecraft/registry/entry/RegistryEntry
 		COMMENT
 		COMMENT @see net.minecraft.registry.Registry#entryOf
 		COMMENT @see net.minecraft.registry.Registry#getEntry
+		FIELD field_1_918 components Lnet/minecraft/class_9323;
 		FIELD field_36450 tags Ljava/util/Set;
 		FIELD field_36451 referenceType Lnet/minecraft/class_6880$class_6883$class_6884;
 		FIELD field_36452 registryKey Lnet/minecraft/class_5321;
@@ -117,6 +119,8 @@ CLASS net/minecraft/class_6880 net/minecraft/registry/entry/RegistryEntry
 			ARG 2 owner
 			ARG 3 registryKey
 			ARG 4 value
+		METHOD method_1_818 bindComponents (Lnet/minecraft/class_9323;)V
+			ARG 1 components
 		METHOD method_40233 intrusive (Lnet/minecraft/class_7876;Ljava/lang/Object;)Lnet/minecraft/class_6880$class_6883;
 			COMMENT {@return a new intrusive registry entry}
 			COMMENT

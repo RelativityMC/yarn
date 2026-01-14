@@ -9,6 +9,10 @@ CLASS net/minecraft/class_11633 net/minecraft/client/gui/hud/debug/DebugHudProfi
 	FIELD field_63527 codec Lcom/mojang/serialization/Codec;
 	METHOD <init> (Ljava/io/File;Lcom/mojang/datafixers/DataFixer;)V
 		ARG 1 file
+	METHOD method_1_1119 updateProfileType (Lnet/minecraft/class_11636;)V
+		ARG 1 type
+	METHOD method_1_1120 setVisibilities (Ljava/util/Map;)V
+		ARG 1 visibilityMap
 	METHOD method_72765 readProfileFile ()V
 	METHOD method_72766 getVisibility (Lnet/minecraft/class_2960;)Lnet/minecraft/class_11635;
 		ARG 1 entryId

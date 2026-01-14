@@ -6,6 +6,9 @@ CLASS net/minecraft/class_1195 net/minecraft/datafixer/fix/LevelFlatGeneratorInf
 	FIELD field_5701 SPLIT_ON_COMMA Lcom/google/common/base/Splitter;
 	FIELD field_29904 SUPERFLAT_PRESET Ljava/lang/String;
 	FIELD field_29905 GENERATOR_OPTIONS_KEY Ljava/lang/String;
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Z)V
+		ARG 1 outputSchema
+		ARG 2 changesType
 	METHOD method_5090 fixGeneratorOptions (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
 		ARG 1 levelDynamic
 	METHOD method_5092 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;

@@ -14,6 +14,13 @@ CLASS net/minecraft/class_636 net/minecraft/client/network/ClientPlayerInteracti
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_634;)V
 		ARG 1 client
 		ARG 2 networkHandler
+	METHOD method_1_1044 interactWithEntity (Lnet/minecraft/class_1657;Lnet/minecraft/class_1297;Lnet/minecraft/class_3966;Lnet/minecraft/class_1268;)Lnet/minecraft/class_1269;
+		ARG 1 player
+		ARG 2 target
+		ARG 3 hitResult
+		ARG 4 hand
+	METHOD method_1_1045 spectate (Lnet/minecraft/class_1297;)V
+		ARG 1 entity
 	METHOD method_2895 hasRidingInventory ()Z
 	METHOD method_2896 interactBlock (Lnet/minecraft/class_746;Lnet/minecraft/class_1268;Lnet/minecraft/class_3965;)Lnet/minecraft/class_1269;
 		ARG 1 player
@@ -42,6 +49,7 @@ CLASS net/minecraft/class_636 net/minecraft/client/network/ClientPlayerInteracti
 		ARG 1 syncId
 		ARG 2 slotId
 		ARG 3 button
+		ARG 4 slotActionType
 		ARG 5 player
 	METHOD method_2907 setGameMode (Lnet/minecraft/class_1934;)V
 		ARG 1 gameMode

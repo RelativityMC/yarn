@@ -48,6 +48,28 @@ CLASS net/minecraft/class_3244 net/minecraft/server/network/ServerPlayNetworkHan
 		ARG 2 connection
 		ARG 3 player
 		ARG 4 clientData
+	METHOD method_1_1092 serializeGameRuleValue (Lnet/minecraft/class_1928;Ljava/util/Map;Lnet/minecraft/class_12279;)V
+		ARG 0 gameRules
+		ARG 1 mapOut
+		ARG 2 gameRule
+	METHOD method_1_1093 sendSetGameRuleFeedback (Lnet/minecraft/class_12279;Ljava/lang/Object;)V
+		ARG 1 gameRule
+		ARG 2 value
+	METHOD method_1_1094 (Ljava/util/Map;Lnet/minecraft/class_12279;Lnet/minecraft/class_1928;Lnet/minecraft/class_5321;)V
+		ARG 3 key
+	METHOD method_1_1095 (Lnet/minecraft/class_3324;Lnet/minecraft/class_3222;)Z
+		ARG 1 player
+	METHOD method_1_1096 (Lnet/minecraft/class_2561;Lnet/minecraft/class_3222;)V
+		ARG 1 player
+	METHOD method_1_1097 (Lnet/minecraft/class_1928;Ljava/util/Map;Lnet/minecraft/class_12279;)V
+		ARG 2 rule
+	METHOD method_1_1098 (Lnet/minecraft/class_1928;Lnet/minecraft/class_12279;Ljava/lang/Object;)V
+		ARG 3 value
+	METHOD method_1_1099 sendGameRuleValues ()V
+	METHOD method_1_1100 setGameRule (Lnet/minecraft/class_1928;Lnet/minecraft/class_12279;Ljava/lang/String;)V
+		ARG 1 gameRules
+		ARG 2 gameRule
+		ARG 3 value
 	METHOD method_14360 requestTeleport (Lnet/minecraft/class_10182;Ljava/util/Set;)V
 		ARG 1 pos
 		ARG 2 flags

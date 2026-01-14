@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_634 net/minecraft/client/network/ClientPlayNetworkHandler
+	FIELD field_1_1040 clocks Lnet/minecraft/class_1_100;
 	FIELD field_3687 random Lnet/minecraft/class_5819;
 	FIELD field_3691 commandSource Lnet/minecraft/class_637;
 	FIELD field_3692 dataQueryHandler Lnet/minecraft/class_300;
@@ -56,6 +57,7 @@ CLASS net/minecraft/class_634 net/minecraft/client/network/ClientPlayNetworkHand
 	FIELD field_64674 loaded Z
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_2535;Lnet/minecraft/class_8675;)V
 		ARG 1 client
+	METHOD method_1_1047 getClocks ()Lnet/minecraft/class_1_100;
 	METHOD method_2869 getAdvancementHandler ()Lnet/minecraft/class_632;
 	METHOD method_2870 updateLighting (IILnet/minecraft/class_3568;Lnet/minecraft/class_1944;Ljava/util/BitSet;Ljava/util/BitSet;Ljava/util/Iterator;Z)V
 		ARG 1 chunkX
@@ -207,10 +209,12 @@ CLASS net/minecraft/class_634 net/minecraft/client/network/ClientPlayNetworkHand
 	METHOD method_73471 getCaseInsensitivePlayerInfo (Ljava/lang/String;)Lnet/minecraft/class_640;
 		ARG 1 name
 	METHOD method_74750 getDebugDataStore ()Lnet/minecraft/class_12021;
+	METHOD method_75405 (Lnet/minecraft/class_310;Lnet/minecraft/class_12087;)Z
+		ARG 1 permission
 	METHOD method_76760 isLoaded ()Z
 	METHOD method_76761 setLoaded (Z)V
 		ARG 1 loaded
-	CLASS 1 1
+	CLASS 1
 		METHOD method_71930 (Lcom/mojang/brigadier/context/CommandContext;)I
 			ARG 0 context
 	CLASS class_11503 CommandRunResult

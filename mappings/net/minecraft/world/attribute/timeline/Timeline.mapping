@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_12329 net/minecraft/world/attribute/timeline/Timeline
+	FIELD field_1_972 clock Lnet/minecraft/class_6880;
+	FIELD field_1_973 timeMarkers Ljava/util/Map;
 	FIELD field_64397 REGISTRY_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_64398 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_64399 NETWORK_CODEC Lcom/mojang/serialization/Codec;
@@ -6,17 +8,38 @@ CLASS net/minecraft/class_12329 net/minecraft/world/attribute/timeline/Timeline
 	FIELD field_64401 periodTicks Ljava/util/Optional;
 	FIELD field_64402 tracks Ljava/util/Map;
 	METHOD <init> (Lnet/minecraft/class_6880;Ljava/util/Optional;Ljava/util/Map;Ljava/util/Map;)V
+		ARG 1 clock
+		ARG 2 periodTicks
 		ARG 3 entries
+		ARG 4 timeMarkers
+	METHOD method_1_856 getClock ()Lnet/minecraft/class_6880;
+	METHOD method_1_857 getDayCount (Lnet/minecraft/class_1_98;)I
+		ARG 1 clocks
+	METHOD method_1_858 (Lnet/minecraft/class_12329;)Lnet/minecraft/class_6880;
+		ARG 0 timeline
+	METHOD method_1_859 (Lnet/minecraft/class_12329;)Ljava/util/Map;
+		ARG 0 timeline
+	METHOD method_1_861 (Lcom/google/common/collect/Multimap;Ljava/util/Map;Lnet/minecraft/class_6880$class_6883;)V
+		ARG 2 entry
+	METHOD method_1_862 forEachTimeMarker (Ljava/util/function/BiConsumer;)V
+		ARG 1 callback
+	METHOD method_1_863 validate (Lnet/minecraft/class_2378;Ljava/util/Map;)V
+		ARG 0 registry
+		ARG 1 exceptionsOut
 	METHOD method_76478 builder (Lnet/minecraft/class_6880;)Lnet/minecraft/class_12329$class_12330;
+		ARG 0 clock
 	METHOD method_76479 getModification (Lnet/minecraft/class_12197;Lnet/minecraft/class_1_98;)Lnet/minecraft/class_12328;
 		ARG 1 attribute
+		ARG 2 clocks
 	METHOD method_76480 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
 	METHOD method_76481 getEffectiveTimeOfDay (Lnet/minecraft/class_1_98;)J
+		ARG 1 clocks
 	METHOD method_76482 retainSyncedAttributes (Lnet/minecraft/class_12329;)Lnet/minecraft/class_12329;
 		ARG 0 timeline
 	METHOD method_76484 getPeriod ()Ljava/util/Optional;
 	METHOD method_76485 getRawTimeOfDay (Lnet/minecraft/class_1_98;)J
+		ARG 1 clocks
 	METHOD method_76486 validate (Lnet/minecraft/class_12329;)Lcom/mojang/serialization/DataResult;
 		ARG 0 timeline
 	METHOD method_76487 getAttributes ()Ljava/util/Set;
@@ -24,9 +47,33 @@ CLASS net/minecraft/class_12329 net/minecraft/world/attribute/timeline/Timeline
 		ARG 0 timeline
 	METHOD method_76489 (Lnet/minecraft/class_12329;)Ljava/util/Optional;
 		ARG 0 timeline
+	CLASS class_1_97 TimeMarkerSpec
+		FIELD field_1_976 CODEC Lcom/mojang/serialization/Codec;
+		FIELD field_1_977 FULL_CODEC Lcom/mojang/serialization/Codec;
+		METHOD method_1_866 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+		METHOD method_1_867 (Lcom/mojang/datafixers/util/Either;)Lnet/minecraft/class_12329$class_1_97;
+			ARG 0 value
+		METHOD method_1_868 (Ljava/lang/Integer;)Lnet/minecraft/class_12329$class_1_97;
+			ARG 0 ticks
+		METHOD method_1_869 (Lnet/minecraft/class_12329$class_1_97;)Lnet/minecraft/class_12329$class_1_97;
+			ARG 0 spec
+		METHOD method_1_870 (Lnet/minecraft/class_12329$class_1_97;)Lcom/mojang/datafixers/util/Either;
+			ARG 0 spec
 	CLASS class_12330 Builder
+		FIELD field_1_974 clock Lnet/minecraft/class_6880;
+		FIELD field_1_975 timeMarkers Lcom/google/common/collect/ImmutableMap$Builder;
 		FIELD field_64403 periodTicks Ljava/util/Optional;
 		FIELD field_64404 entries Lcom/google/common/collect/ImmutableMap$Builder;
+		METHOD <init> (Lnet/minecraft/class_6880;)V
+			ARG 1 clock
+		METHOD method_1_864 timeMarker (Lnet/minecraft/class_5321;I)Lnet/minecraft/class_12329$class_12330;
+			ARG 1 key
+			ARG 2 ticks
+		METHOD method_1_865 timeMarker (Lnet/minecraft/class_5321;IZ)Lnet/minecraft/class_12329$class_12330;
+			ARG 1 key
+			ARG 2 ticks
+			ARG 3 showInCommands
 		METHOD method_76490 build ()Lnet/minecraft/class_12329;
 		METHOD method_76491 period (I)Lnet/minecraft/class_12329$class_12330;
 			ARG 1 periodTicks

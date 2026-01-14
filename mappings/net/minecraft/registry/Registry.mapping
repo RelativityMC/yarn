@@ -132,6 +132,7 @@ CLASS net/minecraft/class_2378 net/minecraft/registry/Registry
 	COMMENT }</pre>
 	METHOD keys (Lcom/mojang/serialization/DynamicOps;)Ljava/util/stream/Stream;
 		ARG 1 ops
+	METHOD method_1_819 getReverseComponentLookup ()Lnet/minecraft/class_1_111;
 	METHOD method_10220 stream ()Ljava/util/stream/Stream;
 		COMMENT {@return a stream of all values of this registry}
 	METHOD method_10221 getId (Ljava/lang/Object;)Lnet/minecraft/class_2960;
@@ -247,7 +248,7 @@ CLASS net/minecraft/class_2378 net/minecraft/registry/Registry
 	METHOD method_63535 get (Lnet/minecraft/class_2960;)Ljava/lang/Object;
 		COMMENT {@return the value that is assigned {@code id}, or {@code null} if there is none}
 		ARG 1 id
-	CLASS 1 1
+	CLASS 1
 		METHOD method_46773 (Lnet/minecraft/class_6880$class_6883;)Lnet/minecraft/class_6880;
 			ARG 0 entry
 	CLASS class_10106 PendingTagLoad

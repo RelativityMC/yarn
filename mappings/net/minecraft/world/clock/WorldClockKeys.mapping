@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_95 net/minecraft/world/clock/WorldClockKeys
+	METHOD method_1_852 bootstrap (Lnet/minecraft/class_7891;)V
+		ARG 0 registries
+	METHOD method_1_853 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 path

@@ -2,6 +2,8 @@ CLASS net/minecraft/class_7784 net/minecraft/data/DataOutput
 	FIELD field_40597 path Ljava/nio/file/Path;
 	METHOD <init> (Ljava/nio/file/Path;)V
 		ARG 1 path
+	METHOD method_1_820 getComponentResolver (Lnet/minecraft/class_5321;)Lnet/minecraft/class_7784$class_7489;
+		ARG 1 registryRef
 	METHOD method_45971 getPath ()Ljava/nio/file/Path;
 	METHOD method_45972 resolvePath (Lnet/minecraft/class_7784$class_7490;)Ljava/nio/file/Path;
 		ARG 1 outputType

@@ -22,6 +22,7 @@ CLASS net/minecraft/class_1792 net/minecraft/item/Item
 	COMMENT @see BlockItem
 	COMMENT @see ItemStack
 	COMMENT @see net.minecraft.inventory.Inventory
+	FIELD field_1_953 CODEC_REQUIRING_BOUND_COMPONENTS Lcom/mojang/serialization/Codec;
 	FIELD field_8001 BASE_ATTACK_SPEED_MODIFIER_ID Lnet/minecraft/class_2960;
 	FIELD field_8003 BLOCK_ITEMS Ljava/util/Map;
 	FIELD field_8006 BASE_ATTACK_DAMAGE_MODIFIER_ID Lnet/minecraft/class_2960;
@@ -38,6 +39,8 @@ CLASS net/minecraft/class_1792 net/minecraft/item/Item
 	FIELD field_56296 DEFAULT_BLOCKS_ATTACKS_MAX_USE_TIME I
 	METHOD <init> (Lnet/minecraft/class_1792$class_1793;)V
 		ARG 1 settings
+	METHOD method_1_821 (Lnet/minecraft/class_6880;)Lcom/mojang/serialization/DataResult;
+		ARG 0 item
 	METHOD method_7836 use (Lnet/minecraft/class_1937;Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;)Lnet/minecraft/class_1269;
 		COMMENT Called when the player uses (or starts using) the item.
 		COMMENT The use action, by default, is bound to the right mouse button.
@@ -327,6 +330,7 @@ CLASS net/minecraft/class_1792 net/minecraft/item/Item
 		COMMENT Item settings configure behaviors common to all items, such as the stack's max
 		COMMENT count. An instance of this must be passed to the constructor
 		COMMENT of {@link Item} (or most of its subclasses).
+		FIELD field_1_954 initializer Lnet/minecraft/class_1_117$class_1_119;
 		FIELD field_8018 recipeRemainder Lnet/minecraft/class_1_107;
 		FIELD field_40210 requiredFeatures Lnet/minecraft/class_7699;
 		FIELD field_54115 BLOCK_PREFIXED_TRANSLATION_KEY Lnet/minecraft/class_10162;
@@ -334,6 +338,36 @@ CLASS net/minecraft/class_1792 net/minecraft/item/Item
 		FIELD field_54117 registryKey Lnet/minecraft/class_5321;
 		FIELD field_54118 translationKey Lnet/minecraft/class_10162;
 		FIELD field_54119 modelId Lnet/minecraft/class_10162;
+		METHOD method_1_823 withComponent (Lnet/minecraft/class_9331;Ljava/lang/Object;)Lnet/minecraft/class_1792$class_1793;
+			ARG 1 type
+			ARG 2 value
+		METHOD method_1_824 recipeRemainder (Lnet/minecraft/class_1792;)Lnet/minecraft/class_1792$class_1793;
+			ARG 1 item
+		METHOD method_1_825 recipeRemainder (Lnet/minecraft/class_1_107;)Lnet/minecraft/class_1792$class_1793;
+			ARG 1 item
+		METHOD method_1_826 withComponent (Lnet/minecraft/class_9331;Lnet/minecraft/class_1_117$class_1_123;)Lnet/minecraft/class_1792$class_1793;
+			ARG 1 type
+		METHOD method_1_827 withComponent (Lnet/minecraft/class_9331;Lnet/minecraft/class_5321;)Lnet/minecraft/class_1792$class_1793;
+			ARG 1 type
+			ARG 2 key
+		METHOD method_1_828 createComponentInitializer (Lnet/minecraft/class_2561;Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_117$class_1_119;
+			ARG 1 name
+			ARG 2 model
+		METHOD method_1_829 getItemKey ()Lnet/minecraft/class_5321;
+		METHOD method_1_830 (Lnet/minecraft/class_9331;Lnet/minecraft/class_5321;Lnet/minecraft/class_9323$class_9324;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_5321;)V
+			ARG 2 builder
+			ARG 3 lookup
+			ARG 4 key
+		METHOD method_1_831 (Lnet/minecraft/class_2561;Lnet/minecraft/class_2960;Lnet/minecraft/class_9323$class_9324;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_5321;)V
+			ARG 2 builder
+			ARG 3 lookup
+			ARG 4 key
+		METHOD method_1_832 (Lnet/minecraft/class_9323;)V
+			ARG 0 components
+		METHOD method_1_834 (Lnet/minecraft/class_9323$class_9324;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_5321;)V
+			ARG 0 builder
+			ARG 1 lookup
+			ARG 2 key
 		METHOD method_7889 maxCount (I)Lnet/minecraft/class_1792$class_1793;
 			COMMENT Sets the maximum stack count of any ItemStack with an Item using this Settings instance.
 			COMMENT

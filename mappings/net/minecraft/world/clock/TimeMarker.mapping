@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_1_105 net/minecraft/world/clock/TimeMarker
+	METHOD method_1_948 getTimeUntilNextOccurrence (IJJ)J
+		ARG 0 periodTicks
+		ARG 1 wrappedQueryTicks
+		ARG 3 markerTicks
+	METHOD method_1_949 getNextOccurrence (J)J
+		ARG 1 ticks
+	METHOD method_1_950 getTimesElapsed (J)J
+		ARG 1 ticks
+	METHOD method_1_951 happensAt (J)Z
+		ARG 1 ticks

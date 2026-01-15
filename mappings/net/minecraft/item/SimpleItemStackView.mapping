@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_1_107 net/minecraft/item/SimpleItemInstance
+CLASS net/minecraft/class_1_107 net/minecraft/item/SimpleItemStackView
 	FIELD field_1_1003 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_1_1004 LOGGER Lorg/slf4j/Logger;
 	FIELD field_1_1005 MAP_CODEC Lcom/mojang/serialization/MapCodec;

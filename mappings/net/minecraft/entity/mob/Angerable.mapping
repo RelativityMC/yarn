@@ -2,6 +2,7 @@ CLASS net/minecraft/class_5354 net/minecraft/entity/mob/Angerable
 	FIELD field_30094 ANGRY_AT_KEY Ljava/lang/String;
 	FIELD field_63295 ANGER_END_TIME_KEY Ljava/lang/String;
 	FIELD field_63296 NO_ANGER_END_TIME J
+	METHOD method_1_837 getRawTarget ()Lnet/minecraft/class_1309;
 	METHOD method_5968 getTarget ()Lnet/minecraft/class_1309;
 	METHOD method_5980 setTarget (Lnet/minecraft/class_1309;)V
 		ARG 1 target

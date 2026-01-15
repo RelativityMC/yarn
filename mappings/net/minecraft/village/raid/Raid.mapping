@@ -44,6 +44,10 @@ CLASS net/minecraft/class_3765 net/minecraft/village/raid/Raid
 		ARG 11 status
 		ARG 12 center
 		ARG 13 heroesOfTheVillage
+	METHOD method_1_850 createOminousBannerComponents (Lnet/minecraft/class_7871;)Lnet/minecraft/class_9326;
+		ARG 0 bannerPatterns
+	METHOD method_1_851 createOminousBannerView (Lnet/minecraft/class_7871;)Lnet/minecraft/class_1_107;
+		ARG 0 bannerPatterns
 	METHOD method_16487 addToWave (Lnet/minecraft/class_3218;ILnet/minecraft/class_3763;Z)Z
 		ARG 1 world
 		ARG 2 wave

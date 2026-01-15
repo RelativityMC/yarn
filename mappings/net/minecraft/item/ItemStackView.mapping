@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_1_96 net/minecraft/item/ItemInstance
+CLASS net/minecraft/class_1_96 net/minecraft/item/ItemStackView
 	FIELD field_1_969 COMPONENTS_KEY Ljava/lang/String;
 	FIELD field_1_970 COUNT_KEY Ljava/lang/String;
 	FIELD field_1_971 ID_KEY Ljava/lang/String;

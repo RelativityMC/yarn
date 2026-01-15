@@ -11,6 +11,12 @@ CLASS net/minecraft/class_7733 net/minecraft/command/argument/RegistryEntryRefer
 	METHOD listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 context
 		ARG 2 builder
+	METHOD method_1_1023 getWorldClock (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880$class_6883;
+		ARG 0 context
+		ARG 1 name
+	METHOD method_1_1024 getTimeline (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880$class_6883;
+		ARG 0 context
+		ARG 1 name
 	METHOD method_45601 getEntityAttribute (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880$class_6883;
 		ARG 0 context
 		ARG 1 name

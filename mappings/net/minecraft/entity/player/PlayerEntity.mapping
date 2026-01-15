@@ -375,6 +375,7 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 	METHOD method_76729 canAttackEntityIn (Lnet/minecraft/class_1799;Lnet/minecraft/class_238;D)Z
 		COMMENT {@return whether the player can attack entity whose bounding box
 		COMMENT is {@code box}}
+		ARG 1 weapon
 		ARG 2 box
 		ARG 3 additionalRange
 	CLASS class_1658 SleepFailureReason

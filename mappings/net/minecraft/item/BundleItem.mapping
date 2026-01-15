@@ -6,6 +6,8 @@ CLASS net/minecraft/class_5537 net/minecraft/item/BundleItem
 	FIELD field_52578 MAX_TOOLTIP_STACKS_SHOWN_WHEN_TOO_MANY_TYPES I
 	FIELD field_52579 FULL_ITEM_BAR_COLOR I
 	FIELD field_54111 MAX_USE_TIME I
+	METHOD method_1_846 getAmountFilled (Lnet/minecraft/class_9276;)Lorg/apache/commons/lang3/math/Fraction;
+		ARG 0 contents
 	METHOD method_31561 getAmountFilled (Lnet/minecraft/class_1799;)F
 		ARG 0 stack
 	METHOD method_32757 dropFirstBundledStack (Lnet/minecraft/class_1799;Lnet/minecraft/class_1657;)Z

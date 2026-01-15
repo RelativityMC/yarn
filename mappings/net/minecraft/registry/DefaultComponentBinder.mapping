@@ -1,0 +1,76 @@
+CLASS net/minecraft/class_1_117 net/minecraft/registry/DefaultComponentBinder
+	FIELD field_1_1042 initializers Ljava/util/List;
+	METHOD method_1_1053 addInitializer (Lnet/minecraft/class_5321;Lnet/minecraft/class_1_117$class_1_119;)V
+		ARG 1 key
+		ARG 2 initializer
+	METHOD method_1_1054 insertBuilder (Ljava/util/Map;Lnet/minecraft/class_5321;Lnet/minecraft/class_9323$class_9324;)V
+		ARG 0 registryComponentInfosOut
+		ARG 1 registryKey
+		ARG 2 builder
+	METHOD method_1_1055 getComponentAssociations (Lnet/minecraft/class_7225$class_7874;)Ljava/util/List;
+		ARG 1 registries
+	METHOD method_1_1056 createAssociations (Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_1_117$class_1_121;)Lnet/minecraft/class_1_117$class_1_122;
+		ARG 0 registries
+		ARG 1 registryComponentInfo
+	METHOD method_1_1057 (Ljava/util/Map;Lnet/minecraft/class_5321;)V
+		ARG 1 registryKey
+	METHOD method_1_1058 (Ljava/util/Map;Lnet/minecraft/class_5321;Lnet/minecraft/class_9323$class_9324;)V
+		ARG 1 registryKey
+		ARG 2 builder
+	METHOD method_1_1059 (Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_1_117$class_1_121;)Lnet/minecraft/class_1_117$class_1_122;
+		ARG 1 registryComponentInfo
+	METHOD method_1_1060 (Lnet/minecraft/class_7225$class_7226;Ljava/util/List;Ljava/util/Set;Lnet/minecraft/class_5321;Lnet/minecraft/class_9323$class_9324;)V
+		ARG 3 key
+		ARG 4 builder
+	METHOD method_1_1061 (Ljava/util/Set;Lnet/minecraft/class_6880$class_6883;)Z
+		ARG 1 entry
+	METHOD method_1_1062 (Ljava/util/List;Lnet/minecraft/class_6880$class_6883;)V
+		ARG 1 entry
+	METHOD method_1_1064 initialize (Ljava/util/Map;Lnet/minecraft/class_5321;)V
+		ARG 0 registryComponentInfosOut
+		ARG 1 registryKey
+	METHOD method_1_1065 getComponentBuildersByRegistry (Lnet/minecraft/class_7225$class_7874;)Ljava/util/Map;
+		ARG 1 registries
+	CLASS 1 1
+		METHOD method_1_1066 (Ljava/util/function/BiConsumer;Lnet/minecraft/class_1_117$class_1_118;)V
+			ARG 1 assoc
+	CLASS class_1_118 Association
+		METHOD method_1_1067 apply ()V
+	CLASS class_1_119 ComponentInitializer
+		METHOD method_1_1068 thenSet (Lnet/minecraft/class_9331;Ljava/lang/Object;)Lnet/minecraft/class_1_117$class_1_119;
+			ARG 1 type
+			ARG 2 value
+		METHOD method_1_1069 then (Lnet/minecraft/class_1_117$class_1_119;)Lnet/minecraft/class_1_117$class_1_119;
+			ARG 1 second
+		METHOD method_1_1070 (Lnet/minecraft/class_9331;Ljava/lang/Object;Lnet/minecraft/class_9323$class_9324;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_5321;)V
+			ARG 2 builder
+			ARG 3 lookup
+			ARG 4 key
+		METHOD method_1_1071 (Lnet/minecraft/class_1_117$class_1_119;Lnet/minecraft/class_9323$class_9324;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_5321;)V
+			ARG 2 builder
+			ARG 3 lookup
+			ARG 4 key
+		METHOD method_1_1072 initialize (Lnet/minecraft/class_9323$class_9324;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_5321;)V
+			ARG 1 builder
+			ARG 2 registries
+			ARG 3 key
+	CLASS class_1_120 IdentifiedComponentInitializer
+		METHOD method_1_1073 initialize (Lnet/minecraft/class_9323$class_9324;Lnet/minecraft/class_7225$class_7874;)V
+			ARG 1 bulider
+			ARG 2 lookup
+	CLASS class_1_121 RegistryComponentInfo
+	CLASS class_1_122 ComponentAssociations
+		COMMENT Holds default components for each element in a given registry.
+		METHOD method_1_1074 apply ()V
+		METHOD method_1_1075 forEachEntry (Ljava/util/function/BiConsumer;)V
+			ARG 1 callback
+		METHOD method_1_1076 getRegistryKey ()Lnet/minecraft/class_5321;
+	CLASS class_1_123 RegistryDependentComponentFactory
+		METHOD method_1_1077 toInitializer (Lnet/minecraft/class_9331;)Lnet/minecraft/class_1_117$class_1_119;
+			ARG 1 type
+		METHOD method_1_1078 create (Lnet/minecraft/class_7225$class_7874;)Ljava/lang/Object;
+			ARG 1 lookup
+		METHOD method_1_1079 (Lnet/minecraft/class_9331;Lnet/minecraft/class_9323$class_9324;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_5321;)V
+			ARG 2 builder
+			ARG 3 lookup
+			ARG 4 key

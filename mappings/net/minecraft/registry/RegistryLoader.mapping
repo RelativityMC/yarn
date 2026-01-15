@@ -1,56 +1,49 @@
-CLASS net/minecraft/class_7655 net/minecraft/registry/RegistryLoader
-	FIELD field_39968 DYNAMIC_REGISTRIES Ljava/util/List;
-	FIELD field_39969 DIMENSION_REGISTRIES Ljava/util/List;
-	FIELD field_39970 LOGGER Lorg/slf4j/Logger;
-	FIELD field_48709 SYNCED_REGISTRIES Ljava/util/List;
-	FIELD field_53753 KEY_COMPARATOR Ljava/util/Comparator;
-	METHOD method_1_433 (Lnet/minecraft/class_7655$class_1_19;Ljava/util/Map;Lnet/minecraft/class_7655$class_7657;)Lnet/minecraft/class_1_102;
-		ARG 2 entry
-	METHOD method_1_437 load (Ljava/util/Map;Lnet/minecraft/class_5912;Ljava/util/List;Ljava/util/List;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 contents
-		ARG 1 resourceFactory
-		ARG 2 registries
-		ARG 3 additionalRegistries
-	METHOD method_1_438 load (Lnet/minecraft/class_7655$class_1_19;Ljava/util/List;Ljava/util/List;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 loaderFactory
-		ARG 1 registries
-		ARG 2 additionalRegistries
-		ARG 3 prepareExecutor
-	METHOD method_1_439 load (Lnet/minecraft/class_3300;Ljava/util/List;Ljava/util/List;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 resourceManager
-		ARG 1 registries
-		ARG 2 additionalRegistries
-	METHOD method_45126 writeAndCreateLoadingException (Ljava/util/Map;)Lnet/minecraft/class_148;
-		ARG 0 exceptions
-	METHOD method_46618 createInfo (Lnet/minecraft/class_7225$class_7226;)Lnet/minecraft/class_6903$class_7862;
-		ARG 0 registry
-	METHOD method_46619 createInfoGetter (Ljava/util/List;Ljava/util/List;)Lnet/minecraft/class_6903$class_7863;
-		ARG 0 registries
-		ARG 1 additionalRegistries
-	METHOD method_46622 (Ljava/util/Map;Lnet/minecraft/class_7225$class_7226;)V
-		ARG 1 registry
-	METHOD method_56517 (Ljava/util/Map;Lnet/minecraft/class_1_102;)V
+CLASS net/minecraft/class_1_102 net/minecraft/registry/RegistryLoader
+	FIELD field_1_983 cachedRegistryWrapper Lnet/minecraft/class_1_42;
+	FIELD field_1_984 entry Lnet/minecraft/class_7655$class_7657;
+	FIELD field_1_985 elementsRegistered Z
+	FIELD field_1_986 exceptionsByKey Ljava/util/Map;
+	FIELD field_1_987 registry Lnet/minecraft/class_2385;
+	FIELD field_1_988 cacheLock Ljava/lang/Object;
+	METHOD <init> (Lnet/minecraft/class_7655$class_7657;Lcom/mojang/serialization/Lifecycle;Ljava/util/Map;)V
 		ARG 1 entry
-	METHOD method_62804 (Ljava/io/PrintWriter;Ljava/util/Map$Entry;)V
-		ARG 1 entry
-	METHOD method_62805 (Ljava/lang/StringBuilder;Ljava/util/Map$Entry;)V
-		ARG 1 entry
-	METHOD method_62807 (Ljava/io/PrintWriter;Ljava/util/Map$Entry;)V
-		ARG 1 element
-	METHOD method_62808 (Ljava/util/Map$Entry;)Lnet/minecraft/class_2960;
-		ARG 0 entry
-	METHOD method_62809 writeLoadingError (Ljava/util/Map;)V
-		ARG 0 exceptions
-	METHOD method_62810 createLoadingException (Ljava/util/Map;)Lnet/minecraft/class_148;
-		ARG 0 exceptions
-	CLASS class_1_19 LoaderFactory
-		METHOD method_1_440 create (Lnet/minecraft/class_7655$class_7657;Ljava/util/Map;)Lnet/minecraft/class_1_102;
-			ARG 1 entry
-			ARG 2 exceptionsByKey
-	CLASS class_7657 Entry
-		METHOD <init> (Lnet/minecraft/class_5321;Lcom/mojang/serialization/Codec;)V
-			ARG 1 key
-			ARG 2 codec
-		METHOD method_54920 addToCloner (Ljava/util/function/BiConsumer;)V
-			ARG 1 callback
-	CLASS class_9841 ElementsAndTags
+		ARG 2 lifecycle
+		ARG 3 exceptionsByKey
+	METHOD method_1_453 load (Lnet/minecraft/class_6903$class_7863;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 infoGetter
+	METHOD method_1_888 createInfo ()Lnet/minecraft/class_6903$class_7862;
+	METHOD method_1_889 freeze (Ljava/util/Map;)Z
+		ARG 1 exceptionsOut
+	METHOD method_1_890 (Lnet/minecraft/class_1_102$class_1_21;)V
+		ARG 1 result
+	METHOD method_1_891 (Lnet/minecraft/class_1_102$class_1_21;Ljava/lang/Object;)V
+		ARG 2 value
+	METHOD method_1_892 (Lnet/minecraft/class_1_102$class_1_21;Ljava/lang/Exception;)V
+		ARG 2 exception
+	METHOD method_1_893 getRegistry ()Lnet/minecraft/class_2378;
+	METHOD method_1_894 addResults (Ljava/util/stream/Stream;)V
+		ARG 1 results
+	METHOD method_1_895 setEntries (Ljava/util/Map;)V
+		ARG 1 entries
+	METHOD method_1_896 getRegistryKey ()Lnet/minecraft/class_5321;
+	METHOD method_1_897 validate (Ljava/util/Map;)Ljava/util/Optional;
+		ARG 1 exceptionsOut
+	CLASS class_1_21 Result
+		METHOD method_1_444 parseFromPack (Lcom/mojang/serialization/Decoder;Lnet/minecraft/class_6903;Lnet/minecraft/class_5321;Lnet/minecraft/class_7654;Lnet/minecraft/class_5912;)Lcom/mojang/datafixers/util/Either;
+			ARG 0 decoder
+			ARG 1 jsonOps
+			ARG 2 key
+			ARG 3 resourceFinder
+			ARG 4 resourceFactory
+		METHOD method_1_445 (Lcom/mojang/serialization/Decoder;Lnet/minecraft/class_6903;Lnet/minecraft/class_5321;Lnet/minecraft/class_3298;)Lcom/mojang/datafixers/util/Either;
+			ARG 3 resource
+		METHOD method_1_447 parseFromServer (Lcom/mojang/serialization/Decoder;Lnet/minecraft/class_6903;Lnet/minecraft/class_5321;Lnet/minecraft/class_2520;)Lcom/mojang/datafixers/util/Either;
+			ARG 0 decoder
+			ARG 1 nbtOps
+			ARG 2 key
+			ARG 3 value
+		METHOD method_1_448 parseFromPack (Lcom/mojang/serialization/Decoder;Lnet/minecraft/class_6903;Lnet/minecraft/class_5321;Lnet/minecraft/class_3298;)Lcom/mojang/datafixers/util/Either;
+			ARG 0 decoder
+			ARG 1 jsonOps
+			ARG 2 key
+			ARG 3 resource

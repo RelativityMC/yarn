@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_130 net/minecraft/network/packet/c2s/play/SetGameRuleC2SPacket
+	FIELD field_1_1067 PACKET_CODEC Lnet/minecraft/class_9139;
+	CLASS class_1_131 Entry
+		FIELD field_1_1068 PACKET_CODEC Lnet/minecraft/class_9139;

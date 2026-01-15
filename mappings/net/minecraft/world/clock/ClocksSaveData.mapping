@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_108 net/minecraft/world/clock/ClocksSaveData
+	FIELD field_1_1007 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_1008 DEFAULT Lnet/minecraft/class_1_108;

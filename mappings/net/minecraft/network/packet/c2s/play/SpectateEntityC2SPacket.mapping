@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_133 net/minecraft/network/packet/c2s/play/SpectateEntityC2SPacket
+	FIELD field_1_1072 PACKET_CODEC Lnet/minecraft/class_9139;

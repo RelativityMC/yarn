@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_429 net/minecraft/client/gui/screen/option/OptionsScreen
+	FIELD field_1_1041 inGame Z
 	FIELD field_2501 parent Lnet/minecraft/class_437;
 	FIELD field_2502 settings Lnet/minecraft/class_315;
 	FIELD field_41345 SKIN_CUSTOMIZATION_TEXT Lnet/minecraft/class_2561;
@@ -18,6 +19,10 @@ CLASS net/minecraft/class_429 net/minecraft/client/gui/screen/option/OptionsScre
 	METHOD <init> (Lnet/minecraft/class_437;Lnet/minecraft/class_315;Z)V
 		ARG 1 parent
 		ARG 2 gameOptions
+		ARG 3 inGame
+	METHOD method_1_1049 createWorldOptionsButton ()Lnet/minecraft/class_8021;
+	METHOD method_1_1050 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
 	METHOD method_47623 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
 	METHOD method_47624 (Ljava/util/function/Supplier;Lnet/minecraft/class_4185;)V
@@ -27,6 +32,8 @@ CLASS net/minecraft/class_429 net/minecraft/client/gui/screen/option/OptionsScre
 		ARG 2 screenSupplier
 	METHOD method_47627 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
-	METHOD method_47628 createTopRightButton ()Lnet/minecraft/class_8021;
+	METHOD method_47628 createOnlineOptionsButton ()Lnet/minecraft/class_8021;
 	METHOD method_49626 refreshResourcePacks (Lnet/minecraft/class_3283;)V
 		ARG 1 resourcePackManager
+	METHOD method_60335 (Lnet/minecraft/class_429;Lnet/minecraft/class_339;)V
+		ARG 1 child

@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_126 net/minecraft/network/packet/c2s/play/AttackC2SPacket
+	FIELD field_1_1055 PACKET_CODEC Lnet/minecraft/class_9139;

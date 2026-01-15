@@ -1,0 +1,64 @@
+CLASS net/minecraft/class_1_109 net/minecraft/server/world/ServerClocks
+	FIELD field_1_1010 clocks Ljava/util/Map;
+	FIELD field_1_1011 server Lnet/minecraft/server/MinecraftServer;
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
+		ARG 1 server
+	METHOD method_1_966 advance (Lnet/minecraft/class_6880;I)V
+		ARG 1 key
+		ARG 2 ticks
+	METHOD method_1_967 getCommandVisibleMarkers (Lnet/minecraft/class_6880;)Ljava/util/stream/Stream;
+		ARG 1 key
+	METHOD method_1_968 createPacket ()Lnet/minecraft/class_2761;
+	METHOD method_1_969 getOverworldTime ()J
+	METHOD method_1_970 getEntry (Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_109$class_1_110;
+		ARG 1 key
+	METHOD method_1_971 isAtMarker (Lnet/minecraft/class_6880;Lnet/minecraft/class_5321;)Z
+		ARG 1 clockKey
+		ARG 2 markerKey
+	METHOD method_1_972 (ILnet/minecraft/class_1_109$class_1_110;)V
+		ARG 1 entry
+	METHOD method_1_973 (Ljava/util/Map$Entry;)Z
+		ARG 0 entry
+	METHOD method_1_975 (Lnet/minecraft/class_6880;Lnet/minecraft/class_1_93;)V
+		ARG 1 key
+		ARG 2 data
+	METHOD method_1_976 (Lnet/minecraft/class_6880$class_6883;)V
+		ARG 1 entry
+	METHOD method_1_977 (Lnet/minecraft/class_6880$class_6883;)V
+		ARG 1 entry
+	METHOD method_1_978 (ZLnet/minecraft/class_1_109$class_1_110;)V
+		ARG 1 entry
+	METHOD method_1_979 (JLnet/minecraft/class_1_109$class_1_110;)V
+		ARG 2 entry
+	METHOD method_1_980 (Lnet/minecraft/class_5321;Lorg/apache/commons/lang3/mutable/MutableBoolean;Lnet/minecraft/class_1_109$class_1_110;)V
+		ARG 2 entry
+	METHOD method_1_981 load (Lnet/minecraft/class_1_108;)V
+		ARG 1 data
+	METHOD method_1_982 updateClock (Lnet/minecraft/class_6880;Ljava/util/function/Consumer;)V
+		ARG 1 key
+		ARG 2 callback
+	METHOD method_1_983 toSaveData ()Lnet/minecraft/class_1_108;
+	METHOD method_1_984 addTimeMarker (Lnet/minecraft/class_5321;Lnet/minecraft/class_1_105;)V
+		ARG 1 key
+		ARG 2 value
+	METHOD method_1_985 setPaused (Lnet/minecraft/class_6880;Z)V
+		ARG 1 key
+		ARG 2 paused
+	METHOD method_1_986 setTotalTicks (Lnet/minecraft/class_6880;J)V
+		ARG 1 key
+		ARG 2 ticks
+	METHOD method_1_987 advanceToNextMarker (Lnet/minecraft/class_6880;Lnet/minecraft/class_5321;)Z
+		ARG 1 clockKey
+		ARG 2 markerKey
+	METHOD method_1_988 tick ()V
+	CLASS class_1_110 Entry
+		FIELD field_1_1012 paused Z
+		FIELD field_1_1013 timeMarkers Ljava/util/Map;
+		FIELD field_1_1014 totalTicks J
+		METHOD method_1_989 load (Lnet/minecraft/class_1_93;)V
+			ARG 1 data
+		METHOD method_1_990 toWorldClockData (Lnet/minecraft/server/MinecraftServer;)Lnet/minecraft/class_1_93;
+			COMMENT Respects the {@code minecraft:advance_time} game rule.
+			ARG 1 server
+		METHOD method_1_991 toSaveData ()Lnet/minecraft/class_1_93;
+		METHOD method_1_992 tick ()V

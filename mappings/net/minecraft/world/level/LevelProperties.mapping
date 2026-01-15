@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_31 net/minecraft/world/level/LevelProperties
+	FIELD field_1_1033 worldClocks Lnet/minecraft/class_1_108;
 	FIELD field_156 customBossEvents Lnet/minecraft/class_2487;
 	FIELD field_157 difficultyLocked Z
 	FIELD field_158 version I
@@ -59,6 +60,8 @@ CLASS net/minecraft/class_31 net/minecraft/world/level/LevelProperties
 		ARG 25 generatorOptions
 		ARG 26 specialProperty
 		ARG 27 lifecycle
+	METHOD method_1_1038 (Ljava/lang/String;)V
+		ARG 0 error
 	METHOD method_158 updateProperties (Lnet/minecraft/class_5455;Lnet/minecraft/class_2487;Lnet/minecraft/class_2487;)V
 		ARG 1 registryManager
 		ARG 2 levelNbt

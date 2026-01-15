@@ -3,6 +3,7 @@ CLASS net/minecraft/class_2370 net/minecraft/registry/SimpleRegistry
 	COMMENT subclass, {@link DefaultedRegistry}).
 	COMMENT
 	COMMENT @see Registry
+	FIELD field_1_958 reverseLookup Lnet/minecraft/class_1_111;
 	FIELD field_11107 idToEntry Ljava/util/Map;
 	FIELD field_25067 keyToEntry Ljava/util/Map;
 	FIELD field_26682 rawIdToEntry Lit/unimi/dsi/fastutil/objects/ObjectList;

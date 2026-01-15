@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_5235 net/minecraft/client/gui/screen/world/EditGameRulesScreen
+	FIELD field_1_1074 SEARCH Lnet/minecraft/class_2561;
+	FIELD field_1_1075 searchBox Lnet/minecraft/class_342;
 	FIELD field_24293 ruleSaver Ljava/util/function/Consumer;
 	FIELD field_24295 invalidRuleWidgets Ljava/util/Set;
 	FIELD field_24296 doneButton Lnet/minecraft/class_4185;
@@ -7,7 +9,16 @@ CLASS net/minecraft/class_5235 net/minecraft/client/gui/screen/world/EditGameRul
 	FIELD field_49560 layout Lnet/minecraft/class_8132;
 	FIELD field_49903 ruleListWidget Lnet/minecraft/class_5235$class_5241;
 	METHOD <init> (Lnet/minecraft/class_1928;Ljava/util/function/Consumer;)V
+		ARG 1 gameRules
 		ARG 2 ruleSaveConsumer
+	METHOD method_1_1147 save ()V
+	METHOD method_1_1148 discard ()V
+	METHOD method_1_1149 initializeSearchBox (Lnet/minecraft/class_8667;)V
+		ARG 1 layout
+	METHOD method_1_1150 onSearchBoxChanged (Ljava/lang/String;)V
+		ARG 1 contents
+	METHOD method_1_1151 initializeRulesWidget ()V
+	METHOD method_1_1152 onDone ()V
 	METHOD method_27619 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
 	METHOD method_27620 markInvalid (Lnet/minecraft/class_5235$class_5240;)V
@@ -15,6 +26,8 @@ CLASS net/minecraft/class_5235 net/minecraft/client/gui/screen/world/EditGameRul
 	METHOD method_27626 markValid (Lnet/minecraft/class_5235$class_5240;)V
 		ARG 1 ruleWidget
 	METHOD method_27632 updateDoneButton ()V
+	METHOD method_48682 (Lnet/minecraft/class_5235;Lnet/minecraft/class_339;)V
+		ARG 1 child
 	METHOD method_57770 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
 	CLASS class_5236 BooleanRuleWidget
@@ -53,6 +66,16 @@ CLASS net/minecraft/class_5235 net/minecraft/client/gui/screen/world/EditGameRul
 		METHOD <init> (Ljava/util/List;)V
 			ARG 1 description
 	CLASS class_5241 RuleListWidget
+		FIELD field_1_1076 gameRules Lnet/minecraft/class_1928;
+		METHOD <init> (Lnet/minecraft/class_5235;Lnet/minecraft/class_1928;)V
+			ARG 2 gameRules
+		METHOD method_1_1155 matchesSearch (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+			ARG 0 id
+			ARG 1 translated
+			ARG 2 category
+			ARG 3 search
+		METHOD method_1_1156 filterBySearch (Ljava/lang/String;)V
+			ARG 1 searchContents
 		CLASS 1 1
 			METHOD method_27639 (Lnet/minecraft/class_5198;)Ljava/util/Map;
 				ARG 0 category

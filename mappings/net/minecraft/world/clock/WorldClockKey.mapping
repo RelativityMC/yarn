@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_94 net/minecraft/world/clock/WorldClockKey
+	FIELD field_1_966 UNIT_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_967 PACKET_CODEC Lnet/minecraft/class_9139;

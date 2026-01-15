@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_1826 net/minecraft/item/SpawnEggItem
+	METHOD method_1_855 (Lnet/minecraft/class_1299;Lnet/minecraft/class_11580;)Z
+		ARG 1 entityData
 	METHOD method_8015 getEntityType (Lnet/minecraft/class_1799;)Lnet/minecraft/class_1299;
 		ARG 0 stack
 	METHOD method_8018 isOfSameEntityType (Lnet/minecraft/class_1799;Lnet/minecraft/class_1299;)Z

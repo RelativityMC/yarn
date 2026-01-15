@@ -132,6 +132,7 @@ CLASS net/minecraft/class_2378 net/minecraft/registry/Registry
 	COMMENT }</pre>
 	METHOD keys (Lcom/mojang/serialization/DynamicOps;)Ljava/util/stream/Stream;
 		ARG 1 ops
+	METHOD method_1_819 getReverseComponentLookup ()Lnet/minecraft/class_1_111;
 	METHOD method_10220 stream ()Ljava/util/stream/Stream;
 		COMMENT {@return a stream of all values of this registry}
 	METHOD method_10221 getId (Ljava/lang/Object;)Lnet/minecraft/class_2960;

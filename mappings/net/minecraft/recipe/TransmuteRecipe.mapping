@@ -11,6 +11,12 @@ CLASS net/minecraft/class_10223 net/minecraft/recipe/TransmuteRecipe
 		ARG 3 input
 		ARG 4 material
 		ARG 5 result
+	METHOD method_1_1029 transmute (Lnet/minecraft/class_1_107;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1799;
+		ARG 0 output
+		ARG 1 input
+	METHOD method_1_1030 isNoOpCraft (Lnet/minecraft/class_1_107;Lnet/minecraft/class_1799;)Z
+		ARG 0 output
+		ARG 1 input
 	CLASS class_10224 Serializer
 		FIELD field_54325 PACKET_CODEC Lnet/minecraft/class_9139;
 		FIELD field_54326 CODEC Lcom/mojang/serialization/MapCodec;

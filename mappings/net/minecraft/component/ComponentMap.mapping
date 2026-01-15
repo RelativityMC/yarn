@@ -22,7 +22,12 @@ CLASS net/minecraft/class_9323 net/minecraft/component/ComponentMap
 	METHOD method_60388 createCodecFromValueMap (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
 		ARG 0 typeToValueMapCodec
 	CLASS class_9324 Builder
+		FIELD field_1_1016 validator Ljava/util/function/Consumer;
 		FIELD field_49587 components Lit/unimi/dsi/fastutil/objects/Reference2ObjectMap;
+		METHOD method_1_994 validator (Ljava/util/function/Consumer;)Lnet/minecraft/class_9323$class_9324;
+			ARG 1 callback
+		METHOD method_1_995 (Lnet/minecraft/class_9323;)V
+			ARG 0 components
 		METHOD method_57838 build ()Lnet/minecraft/class_9323;
 		METHOD method_57839 addAll (Lnet/minecraft/class_9323;)Lnet/minecraft/class_9323$class_9324;
 			ARG 1 componentSet

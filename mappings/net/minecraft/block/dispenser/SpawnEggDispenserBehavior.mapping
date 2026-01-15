@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_115 net/minecraft/block/dispenser/SpawnEggDispenserBehavior
+	FIELD field_1_1028 INSTANCE Lnet/minecraft/class_1_115;

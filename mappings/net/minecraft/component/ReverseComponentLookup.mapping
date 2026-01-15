@@ -1,0 +1,27 @@
+CLASS net/minecraft/class_1_111 net/minecraft/component/ReverseComponentLookup
+	COMMENT Allows for searching registry entries by one of their associated components.
+	FIELD field_1_1021 mapsByType Ljava/util/Map;
+	FIELD field_1_1022 entries Ljava/lang/Iterable;
+	METHOD <init> (Ljava/lang/Iterable;)V
+		ARG 1 entries
+	METHOD method_1_1006 getAllWithComponent (Lnet/minecraft/class_9331;)Ljava/util/Collection;
+		ARG 1 type
+	METHOD method_1_1007 getMatching (Lnet/minecraft/class_9331;Ljava/lang/Object;)Ljava/util/Collection;
+		ARG 1 type
+		ARG 2 value
+	METHOD method_1_1008 getMatching (Lnet/minecraft/class_9331;Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+		ARG 1 type
+		ARG 2 predicate
+	METHOD method_1_1009 get (Lnet/minecraft/class_9331;)Lnet/minecraft/class_1_111$class_1_112;
+		ARG 1 type
+	METHOD method_1_1010 getOrCreate (Lnet/minecraft/class_9331;)Lnet/minecraft/class_1_111$class_1_112;
+		ARG 1 type
+	METHOD method_1_1011 create (Lnet/minecraft/class_9331;)Lnet/minecraft/class_1_111$class_1_112;
+		ARG 1 type
+	CLASS class_1_112 Entry
+		METHOD method_1_1012 entriesMatching (Ljava/lang/Object;)Ljava/util/Collection;
+			ARG 1 value
+		METHOD method_1_1013 entriesMatching (Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+			ARG 1 predicate
+		METHOD method_1_1014 (Ljava/util/function/Predicate;Ljava/util/Map$Entry;)Z
+			ARG 1 entry

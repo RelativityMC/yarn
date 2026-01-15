@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_1_100 net/minecraft/client/world/ClientClocks
+	FIELD field_1_978 clocks Ljava/util/Map;
+	FIELD field_1_979 ticks J
+	METHOD method_1_879 getOrCreate (Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_100$class_1_101;
+		ARG 1 key
+	METHOD method_1_880 update (JLjava/util/Map;)V
+		ARG 1 ticks
+		ARG 3 clockDataByKey
+	METHOD method_1_882 (Lnet/minecraft/class_6880;Lnet/minecraft/class_1_93;)V
+		ARG 1 key
+		ARG 2 data
+	METHOD method_1_883 setTicks (J)V
+		ARG 1 ticks
+	CLASS class_1_101 Entry
+		FIELD field_1_980 paused Z
+		FIELD field_1_981 ticks J

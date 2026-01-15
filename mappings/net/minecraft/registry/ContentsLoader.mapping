@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_1_20 net/minecraft/registry/ContentsLoader
 	FIELD field_1_126 registryContents Ljava/util/Map;
 	FIELD field_1_127 resourceFactory Lnet/minecraft/class_5912;
+	FIELD field_1_1020 EXPERIMENTAL_REGISTRY_INFO Lnet/minecraft/class_9248;
 	METHOD <init> (Lnet/minecraft/class_7655$class_7657;Lcom/mojang/serialization/Lifecycle;Ljava/util/Map;Ljava/util/Map;Lnet/minecraft/class_5912;)V
 		ARG 1 entry
 		ARG 2 lifecycle

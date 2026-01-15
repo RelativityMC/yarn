@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_1_103 net/minecraft/registry/RegistryValidator
+	FIELD field_1_989 PASSTHROUGH Lnet/minecraft/class_1_103;
+	FIELD field_1_990 NON_EMPTY Lnet/minecraft/class_1_103;
+	METHOD method_1_904 (Lnet/minecraft/class_2378;Ljava/util/Map;)V
+		ARG 0 registry
+		ARG 1 exceptionsOut
+	METHOD method_1_905 (Lnet/minecraft/class_2378;Ljava/util/Map;)V
+		ARG 0 registry
+		ARG 1 exceptionsOut
+	METHOD method_1_906 nonEmpty ()Lnet/minecraft/class_1_103;
+	METHOD method_1_907 passthrough ()Lnet/minecraft/class_1_103;
+	METHOD method_1_908 validate (Lnet/minecraft/class_2378;Ljava/util/Map;)V
+		ARG 1 registry
+		ARG 2 exceptionsOut

@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_5268 net/minecraft/world/level/ServerWorldProperties
+	METHOD method_1_1033 getWorldClocks ()Lnet/minecraft/class_1_108;
+	METHOD method_1_1034 setWorldClocks (Lnet/minecraft/class_1_108;)V
+		ARG 1 clocks
 	METHOD method_143 getScheduledEvents ()Lnet/minecraft/class_236;
 	METHOD method_145 getThunderTime ()I
 	METHOD method_146 getGameRules ()Lnet/minecraft/class_1928;

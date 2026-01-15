@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_106 net/minecraft/world/clock/TimeMarkers
+	FIELD field_1_1001 KEY Lnet/minecraft/class_5321;
+	METHOD method_1_957 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 path

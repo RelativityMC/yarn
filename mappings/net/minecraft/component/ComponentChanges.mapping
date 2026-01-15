@@ -9,6 +9,13 @@ CLASS net/minecraft/class_9326 net/minecraft/component/ComponentChanges
 		ARG 1 changedComponents
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
+	METHOD method_1_999 getOrFallback (Lnet/minecraft/class_9473;Lnet/minecraft/class_9331;)Ljava/lang/Object;
+		ARG 1 fallback
+		ARG 2 type
+	METHOD method_1_1000 getOrFallback (Lit/unimi/dsi/fastutil/objects/Reference2ObjectMap;Lnet/minecraft/class_9473;Lnet/minecraft/class_9331;)Ljava/lang/Object;
+		ARG 0 changedComponents
+		ARG 1 fallback
+		ARG 2 type
 	METHOD method_57841 builder ()Lnet/minecraft/class_9326$class_9327;
 	METHOD method_57842 toString (Lit/unimi/dsi/fastutil/objects/Reference2ObjectMap;)Ljava/lang/String;
 		ARG 0 changes
@@ -34,6 +41,8 @@ CLASS net/minecraft/class_9326 net/minecraft/component/ComponentChanges
 			ARG 3 value
 	CLASS class_9327 Builder
 		FIELD field_49593 changes Lit/unimi/dsi/fastutil/objects/Reference2ObjectMap;
+		METHOD method_1_1001 addAll (Ljava/lang/Iterable;)Lnet/minecraft/class_9326$class_9327;
+			ARG 1 components
 		METHOD method_57852 build ()Lnet/minecraft/class_9326;
 		METHOD method_57853 remove (Lnet/minecraft/class_9331;)Lnet/minecraft/class_9326$class_9327;
 			ARG 1 type

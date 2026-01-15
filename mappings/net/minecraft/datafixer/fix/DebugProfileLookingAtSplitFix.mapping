@@ -5,3 +5,16 @@ CLASS net/minecraft/class_1_65 net/minecraft/datafixer/fix/DebugProfileLookingAt
 		ARG 0 debugProfile
 	METHOD method_1_713 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
 		ARG 0 remainder
+	METHOD method_1_1121 (Ljava/lang/String;)Ljava/util/Optional;
+		ARG 0 type
+	METHOD method_1_1122 (Lcom/mojang/serialization/Dynamic;Ljava/util/Map;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 custom
+	METHOD method_1_1123 (Ljava/util/Map;Lcom/mojang/serialization/Dynamic;Lcom/mojang/serialization/Dynamic;)V
+		ARG 1 key
+		ARG 2 value
+	METHOD method_1_1124 (Ljava/util/Map;Lcom/mojang/serialization/Dynamic;Lcom/mojang/serialization/Dynamic;)V
+		ARG 2 key2
+	METHOD method_1_1126 getRenamedKey (Lcom/mojang/serialization/Dynamic;)Ljava/util/Optional;
+		ARG 0 key
+	METHOD method_1_1127 fixCustom (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 custom

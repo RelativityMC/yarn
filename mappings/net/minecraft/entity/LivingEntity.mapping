@@ -106,6 +106,8 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 wind
 		ARG 2 pos
 	METHOD method_1_785 resetImpulseDataIfGraceTimeReset ()V
+	METHOD method_1_884 getAttackRange (Lnet/minecraft/class_1799;)Lnet/minecraft/class_12392;
+		ARG 1 weapon
 	METHOD method_5673 setEquipment (Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;)V
 		ARG 1 slot
 		ARG 2 stack

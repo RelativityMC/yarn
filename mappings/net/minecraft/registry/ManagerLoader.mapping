@@ -1,0 +1,17 @@
+CLASS net/minecraft/class_1_124 net/minecraft/registry/ManagerLoader
+	FIELD field_1_1045 REGISTRY_ENTRY_INFO_FACTORY Ljava/util/function/Function;
+	FIELD field_1_1046 resourceManager Lnet/minecraft/class_3300;
+	METHOD <init> (Lnet/minecraft/class_7655$class_7657;Lcom/mojang/serialization/Lifecycle;Ljava/util/Map;Lnet/minecraft/class_3300;)V
+		ARG 1 entry
+		ARG 2 lifecycle
+		ARG 3 exceptionsByKey
+		ARG 4 resourceManager
+	METHOD method_1_1082 (Lnet/minecraft/class_6903$class_7863;Lnet/minecraft/class_7654;Ljava/util/concurrent/Executor;Ljava/util/Map;)Ljava/util/concurrent/CompletionStage;
+		ARG 4 resourcesById
+	METHOD method_1_1083 (Lnet/minecraft/class_7654;Lnet/minecraft/class_6903;Lnet/minecraft/class_2960;Lnet/minecraft/class_3298;)Lnet/minecraft/class_1_102$class_1_21;
+		ARG 3 id
+		ARG 4 resource
+	METHOD method_1_1085 (Ljava/util/Optional;)Lnet/minecraft/class_9248;
+		ARG 0 versionedId
+	METHOD method_1_1086 (Ljava/lang/Boolean;)Lcom/mojang/serialization/Lifecycle;
+		ARG 0 vanilla

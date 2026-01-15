@@ -248,7 +248,7 @@ CLASS net/minecraft/class_2378 net/minecraft/registry/Registry
 	METHOD method_63535 get (Lnet/minecraft/class_2960;)Ljava/lang/Object;
 		COMMENT {@return the value that is assigned {@code id}, or {@code null} if there is none}
 		ARG 1 id
-	CLASS 1
+	CLASS 1 1
 		METHOD method_46773 (Lnet/minecraft/class_6880$class_6883;)Lnet/minecraft/class_6880;
 			ARG 0 entry
 	CLASS class_10106 PendingTagLoad

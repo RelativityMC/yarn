@@ -214,7 +214,7 @@ CLASS net/minecraft/class_634 net/minecraft/client/network/ClientPlayNetworkHand
 	METHOD method_76760 isLoaded ()Z
 	METHOD method_76761 setLoaded (Z)V
 		ARG 1 loaded
-	CLASS 1
+	CLASS 1 1
 		METHOD method_71930 (Lcom/mojang/brigadier/context/CommandContext;)I
 			ARG 0 context
 	CLASS class_11503 CommandRunResult

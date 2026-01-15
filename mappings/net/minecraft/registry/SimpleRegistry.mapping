@@ -71,7 +71,7 @@ CLASS net/minecraft/class_2370 net/minecraft/registry/SimpleRegistry
 		ARG 1 key
 	METHOD method_62691 resetTagEntries ()V
 	METHOD method_62692 refreshTags ()V
-	CLASS 1
+	CLASS 1 1
 	CLASS class_10105 TagLookup
 		METHOD method_62697 ofUnbound ()Lnet/minecraft/class_2370$class_10105;
 		METHOD method_62698 getOptional (Lnet/minecraft/class_6862;)Ljava/util/Optional;

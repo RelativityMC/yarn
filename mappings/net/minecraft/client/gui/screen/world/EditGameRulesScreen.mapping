@@ -76,7 +76,7 @@ CLASS net/minecraft/class_5235 net/minecraft/client/gui/screen/world/EditGameRul
 			ARG 3 search
 		METHOD method_1_1156 filterBySearch (Ljava/lang/String;)V
 			ARG 1 searchContents
-		CLASS 1
+		CLASS 1 1
 			METHOD method_27639 (Lnet/minecraft/class_5198;)Ljava/util/Map;
 				ARG 0 category
 			METHOD method_27640 createRuleWidget (Lnet/minecraft/class_12279;Lnet/minecraft/class_5235$class_5238;)V

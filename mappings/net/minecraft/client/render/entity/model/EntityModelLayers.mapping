@@ -30,15 +30,10 @@ CLASS net/minecraft/class_5602 net/minecraft/client/render/entity/model/EntityMo
 	FIELD field_56079 CAMEL_SADDLE Lnet/minecraft/class_5601;
 	FIELD field_56080 CAMEL_BABY_SADDLE Lnet/minecraft/class_5601;
 	FIELD field_56081 DONKEY_SADDLE Lnet/minecraft/class_5601;
-	FIELD field_56082 DONKEY_BABY_SADDLE Lnet/minecraft/class_5601;
 	FIELD field_56083 MULE_SADDLE Lnet/minecraft/class_5601;
-	FIELD field_56084 MULE_BABY_SADDLE Lnet/minecraft/class_5601;
 	FIELD field_56085 HORSE_SADDLE Lnet/minecraft/class_5601;
-	FIELD field_56086 HORSE_BABY_SADDLE Lnet/minecraft/class_5601;
 	FIELD field_56087 SKELETON_HORSE_SADDLE Lnet/minecraft/class_5601;
-	FIELD field_56088 SKELETON_HORSE_BABY_SADDLE Lnet/minecraft/class_5601;
 	FIELD field_56089 ZOMBIE_HORSE_SADDLE Lnet/minecraft/class_5601;
-	FIELD field_56090 ZOMBIE_HORSE_BABY_SADDLE Lnet/minecraft/class_5601;
 	FIELD field_57102 SHEEP_WOOL_UNDERCOAT Lnet/minecraft/class_5601;
 	FIELD field_61684 BOGGED_EQUIPMENT Lnet/minecraft/class_11677;
 	FIELD field_61685 BREEZE_EYES Lnet/minecraft/class_5601;

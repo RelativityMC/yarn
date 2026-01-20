@@ -4,7 +4,6 @@ CLASS net/minecraft/class_3988 net/minecraft/entity/passive/MerchantEntity
 	FIELD field_17722 customer Lnet/minecraft/class_1657;
 	FIELD field_17723 inventory Lnet/minecraft/class_1277;
 	FIELD field_19295 HEAD_ROLLING_TIME_LEFT Lnet/minecraft/class_2940;
-	FIELD field_30600 INVENTORY_SIZE I
 	METHOD method_1_656 addTradesFromSetAllowingDuplicates (Lnet/minecraft/class_47;Lnet/minecraft/class_1916;Lnet/minecraft/class_6885;I)V
 		ARG 0 context
 		ARG 1 offers

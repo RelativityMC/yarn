@@ -19,19 +19,14 @@ CLASS net/minecraft/class_6054 net/minecraft/entity/passive/GoatBrain
 	FIELD field_33693 SCREAMING_RAM_COOLDOWN_RANGE Lnet/minecraft/class_6019;
 	METHOD method_35182 (Lnet/minecraft/class_1309;)Ljava/lang/Float;
 		ARG 0 goat
-	METHOD method_35183 create (Lnet/minecraft/class_4095;)Lnet/minecraft/class_4095;
-		ARG 0 brain
 	METHOD method_35184 resetLongJumpCooldown (Lnet/minecraft/class_6053;Lnet/minecraft/class_5819;)V
 		ARG 0 goat
 		ARG 1 random
-	METHOD method_35185 addCoreActivities (Lnet/minecraft/class_4095;)V
-		ARG 0 brain
+	METHOD method_35185 addCoreActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_35186 updateActivities (Lnet/minecraft/class_6053;)V
 		ARG 0 goat
-	METHOD method_35187 addIdleActivities (Lnet/minecraft/class_4095;)V
-		ARG 0 brain
-	METHOD method_35188 addLongJumpActivities (Lnet/minecraft/class_4095;)V
-		ARG 0 brain
+	METHOD method_35187 addIdleActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_35188 addLongJumpActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_36285 (Lnet/minecraft/class_1309;Lnet/minecraft/class_3218;)Z
 		ARG 0 target
 		ARG 1 world
@@ -39,15 +34,10 @@ CLASS net/minecraft/class_6054 net/minecraft/entity/passive/GoatBrain
 		ARG 0 goat
 	METHOD method_36287 (Lnet/minecraft/class_6053;)Lnet/minecraft/class_3414;
 		ARG 0 goat
-	METHOD method_36288 addRamActivities (Lnet/minecraft/class_4095;)V
-		ARG 0 brain
+	METHOD method_36288 addRamActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_36289 (Lnet/minecraft/class_6053;)D
 		ARG 0 goat
 	METHOD method_36290 (Lnet/minecraft/class_6053;)Lnet/minecraft/class_6019;
 		ARG 0 goat
 	METHOD method_36291 (Lnet/minecraft/class_6053;)Lnet/minecraft/class_3414;
-		ARG 0 goat
-	METHOD method_36553 (Lnet/minecraft/class_6053;)I
-		ARG 0 goat
-	METHOD method_43543 (Lnet/minecraft/class_6053;)Lnet/minecraft/class_3414;
 		ARG 0 goat

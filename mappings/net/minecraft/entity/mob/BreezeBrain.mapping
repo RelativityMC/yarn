@@ -1,22 +1,13 @@
 CLASS net/minecraft/class_8950 net/minecraft/entity/mob/BreezeBrain
-	FIELD field_47287 SENSORS Ljava/util/List;
 	FIELD field_52498 TIME_BEFORE_FORGETTING_TARGET I
-	METHOD method_55016 create (Lnet/minecraft/class_8949;Lnet/minecraft/class_4095;)Lnet/minecraft/class_4095;
+	METHOD method_55018 addCoreTasks ()Lnet/minecraft/class_1_137;
+	METHOD method_55019 addFightTasks (Lnet/minecraft/class_8949;)Lnet/minecraft/class_1_137;
 		ARG 0 breeze
-		ARG 1 brain
-	METHOD method_55018 addCoreTasks (Lnet/minecraft/class_4095;)V
-		ARG 0 brain
-	METHOD method_55019 addFightTasks (Lnet/minecraft/class_8949;Lnet/minecraft/class_4095;)V
-		ARG 0 breeze
-		ARG 1 brain
 	METHOD method_55748 updateActivities (Lnet/minecraft/class_8949;)V
 		ARG 0 breeze
 	METHOD method_55749 (Lnet/minecraft/class_3218;Lnet/minecraft/class_8949;)Ljava/util/Optional;
-		ARG 0 world
 		ARG 1 breeze
-	METHOD method_55750 addIdleTasks (Lnet/minecraft/class_4095;)V
-		ARG 0 brain
+	METHOD method_55750 addIdleTasks ()Lnet/minecraft/class_1_137;
 	METHOD method_64470 (Lnet/minecraft/class_3218;Lnet/minecraft/class_8949;)Ljava/util/Optional;
-		ARG 0 world
 		ARG 1 breeze
 	CLASS class_8951 SlideAroundTask

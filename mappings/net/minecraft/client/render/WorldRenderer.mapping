@@ -176,16 +176,11 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 1 frameGraphBuilder
 		ARG 2 camera
 		ARG 3 fogBuffer
-	METHOD method_62201 renderParticles (Lnet/minecraft/class_9909;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
-		ARG 1 frameGraphBuilder
-		ARG 2 fogBuffer
 	METHOD method_62202 renderMain (Lnet/minecraft/class_9909;Lnet/minecraft/class_4604;Lorg/joml/Matrix4f;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;ZLnet/minecraft/class_11658;Lnet/minecraft/class_9779;Lnet/minecraft/class_3695;)V
 		ARG 1 frameGraphBuilder
 		ARG 2 frustum
 		ARG 3 posMatrix
-		ARG 4 fogBuffer
 		ARG 5 renderBlockOutline
-		ARG 6 state
 		ARG 7 tickCounter
 		ARG 8 profiler
 	METHOD method_62203 renderWeather (Lnet/minecraft/class_9909;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V

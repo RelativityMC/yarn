@@ -2,7 +2,6 @@ CLASS net/minecraft/class_2404 net/minecraft/block/FluidBlock
 	FIELD field_11276 statesByLevel Ljava/util/List;
 	FIELD field_11278 LEVEL Lnet/minecraft/class_2758;
 	FIELD field_11279 fluid Lnet/minecraft/class_3609;
-	FIELD field_24412 COLLISION_SHAPE Lnet/minecraft/class_265;
 	FIELD field_34006 FLOW_DIRECTIONS Lcom/google/common/collect/ImmutableList;
 	FIELD field_46390 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_46391 FLUID_CODEC Lcom/mojang/serialization/Codec;

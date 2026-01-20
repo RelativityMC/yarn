@@ -1,7 +1,4 @@
 CLASS net/minecraft/class_11682 net/minecraft/client/render/command/CustomCommandRenderer
-	METHOD method_72999 render (Lnet/minecraft/class_11788;Lnet/minecraft/class_4597$class_4598;)V
-		ARG 1 queue
-		ARG 2 vertexConsumers
 	CLASS class_12047 Commands
 		FIELD field_62980 customCommands Ljava/util/Map;
 		FIELD field_62981 customRenderLayers Ljava/util/Set;

@@ -67,13 +67,10 @@ CLASS net/minecraft/class_7898 net/minecraft/entity/ai/brain/task/TaskTriggerer
 	METHOD method_47215 newContext ()Lnet/minecraft/class_7898$class_7900;
 	METHOD method_47216 of (Lnet/minecraft/class_7898$class_7904;)Lnet/minecraft/class_7898;
 		ARG 0 function
-	METHOD method_47217 runIf (Lnet/minecraft/class_7911;Lnet/minecraft/class_7911;)Lnet/minecraft/class_7894;
+	METHOD method_47217 runIf (Lnet/minecraft/class_7911;Lnet/minecraft/class_7894;)Lnet/minecraft/class_7894;
 		ARG 0 predicate
-		ARG 1 task
-	METHOD method_47218 (Lnet/minecraft/class_7911;Lnet/minecraft/class_7911;Lnet/minecraft/class_7898$class_7900;)Lcom/mojang/datafixers/kinds/App;
+	METHOD method_47218 (Lnet/minecraft/class_7911;Lnet/minecraft/class_7894;Lnet/minecraft/class_7898$class_7900;)Lcom/mojang/datafixers/kinds/App;
 		ARG 2 context
-	METHOD method_47219 (Lnet/minecraft/class_7911;Lcom/mojang/datafixers/util/Unit;)Lnet/minecraft/class_7911;
-		ARG 1 unit
 	METHOD method_47220 cast (Lcom/mojang/datafixers/kinds/App;)Lnet/minecraft/class_7898;
 		ARG 0 app
 	METHOD method_47221 predicate (Ljava/util/function/BiPredicate;)Lnet/minecraft/class_7894;

@@ -1,24 +1,14 @@
 CLASS net/minecraft/class_10280 net/minecraft/entity/mob/CreakingBrain
-	FIELD field_54585 SENSORS Lcom/google/common/collect/ImmutableList;
-	METHOD method_64632 createBrainProfile ()Lnet/minecraft/class_4095$class_5303;
 	METHOD method_64633 (Lnet/minecraft/class_3218;Lnet/minecraft/class_10275;)Ljava/util/Optional;
 		ARG 0 world
-		ARG 1 creaking
-	METHOD method_64634 addCoreTasks (Lnet/minecraft/class_4095;)V
-		ARG 0 brain
+	METHOD method_64634 addCoreTasks ()Lnet/minecraft/class_1_137;
 	METHOD method_64635 updateActivities (Lnet/minecraft/class_10275;)V
 		ARG 0 creaking
 	METHOD method_64636 (Lnet/minecraft/class_3218;Lnet/minecraft/class_10275;)Z
 		ARG 0 world
-		ARG 1 creaking
-	METHOD method_64637 addIdleTasks (Lnet/minecraft/class_4095;)V
-		ARG 0 brain
-	METHOD method_64638 addFightTasks (Lnet/minecraft/class_10275;Lnet/minecraft/class_4095;)V
+	METHOD method_64637 addIdleTasks ()Lnet/minecraft/class_1_137;
+	METHOD method_64638 addFightTasks (Lnet/minecraft/class_10275;)Lnet/minecraft/class_1_137;
 		ARG 0 creaking
-		ARG 1 brain
-	METHOD method_64639 create (Lnet/minecraft/class_10275;Lnet/minecraft/class_4095;)Lnet/minecraft/class_4095;
-		ARG 0 creaking
-		ARG 1 brain
 	METHOD method_66684 (Lnet/minecraft/class_1309;Ljava/util/List;)Ljava/lang/Boolean;
 		ARG 1 players
 	METHOD method_66685 (Lnet/minecraft/class_10275;Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;)Z

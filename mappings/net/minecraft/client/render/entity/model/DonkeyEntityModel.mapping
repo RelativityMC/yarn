@@ -6,10 +6,7 @@ CLASS net/minecraft/class_9945 net/minecraft/client/render/entity/model/DonkeyEn
 		ARG 0 root
 	METHOD method_62079 getTexturedModelData (F)Lnet/minecraft/class_5607;
 		ARG 0 scale
-	METHOD method_62080 getBabyTexturedModelData (F)Lnet/minecraft/class_5607;
+	METHOD method_66838 getSaddleTexturedModelData (F)Lnet/minecraft/class_5607;
 		ARG 0 scale
-	METHOD method_66838 getSaddleTexturedModelData (FZ)Lnet/minecraft/class_5607;
-		ARG 0 scale
-		ARG 1 baby
 	METHOD method_66839 (Lnet/minecraft/class_5609;)Lnet/minecraft/class_5609;
 		ARG 0 data

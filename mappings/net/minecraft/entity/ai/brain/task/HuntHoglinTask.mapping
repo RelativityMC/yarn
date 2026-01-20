@@ -15,5 +15,5 @@ CLASS net/minecraft/class_4826 net/minecraft/entity/ai/brain/task/HuntHoglinTask
 		ARG 0 piglin
 	METHOD method_47288 (Ljava/util/List;)V
 		ARG 0 piglin
-	METHOD method_47289 (Ljava/util/List;)Ljava/lang/Boolean;
+	METHOD method_47289 (Ljava/util/List;)Z
 		ARG 0 piglin

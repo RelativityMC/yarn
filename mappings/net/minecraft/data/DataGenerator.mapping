@@ -1,19 +1,11 @@
 CLASS net/minecraft/class_2403 net/minecraft/data/DataGenerator
 	FIELD field_11275 LOGGER Lorg/slf4j/Logger;
 	FIELD field_38909 runningProviders Ljava/util/Map;
-	FIELD field_38910 gameVersion Lnet/minecraft/class_6489;
-	FIELD field_38911 ignoreCache Z
-	FIELD field_40595 outputPath Ljava/nio/file/Path;
 	FIELD field_40596 output Lnet/minecraft/class_7784;
 	FIELD field_40826 providerNames Ljava/util/Set;
-	METHOD <init> (Ljava/nio/file/Path;Lnet/minecraft/class_6489;Z)V
+	METHOD <init> (Ljava/nio/file/Path;)V
 		ARG 1 outputPath
-		ARG 2 gameVersion
-		ARG 3 ignoreCache
 	METHOD method_10315 run ()V
-	METHOD method_46563 (Lnet/minecraft/class_2408;Lcom/google/common/base/Stopwatch;Ljava/lang/String;Lnet/minecraft/class_2405;)V
-		ARG 3 name
-		ARG 4 provider
 	METHOD method_46564 createVanillaPack (Z)Lnet/minecraft/class_2403$class_7856;
 		ARG 1 shouldRun
 	METHOD method_46565 createVanillaSubPack (ZLjava/lang/String;)Lnet/minecraft/class_2403$class_7856;

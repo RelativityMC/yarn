@@ -42,6 +42,10 @@ CLASS net/minecraft/class_1937 net/minecraft/world/World
 		ARG 7 seed
 		ARG 9 maxChainedNeighborUpdates
 	METHOD method_1_839 getClocks ()Lnet/minecraft/class_1_98;
+	METHOD method_1_840 getOverworldTime ()J
+		COMMENT {@return the current time in the {@code minecraft:overworld} clock}
+		COMMENT
+		COMMENT Used for calculating local difficulty.
 	METHOD method_8413 updateListeners (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;I)V
 		ARG 1 pos
 		ARG 2 oldState

@@ -143,7 +143,7 @@ CLASS net/minecraft/class_4095 net/minecraft/entity/ai/brain/Brain
 	METHOD method_49710 (Lnet/minecraft/class_4140;)V
 		ARG 1 type
 	METHOD method_74662 isEmpty ()Z
-	CLASS 1
+	CLASS 1 1
 		METHOD decode (Lcom/mojang/serialization/DynamicOps;Lcom/mojang/serialization/MapLike;)Lcom/mojang/serialization/DataResult;
 			ARG 1 ops
 			ARG 2 map

@@ -2,6 +2,7 @@ CLASS net/minecraft/class_7691 net/minecraft/entity/passive/CamelBrain
 	FIELD field_40152 WALK_SPEED F
 	FIELD field_40156 BREED_SPEED F
 	FIELD field_40157 WALK_TOWARD_ADULT_RANGE Lnet/minecraft/class_6019;
+	METHOD method_1_1184 getTaskLists ()Ljava/util/List;
 	METHOD method_45364 (Lnet/minecraft/class_1309;)Ljava/lang/Float;
 		ARG 0 entity
 	METHOD method_45366 updateActivities (Lnet/minecraft/class_7689;)V
@@ -9,8 +10,8 @@ CLASS net/minecraft/class_7691 net/minecraft/entity/passive/CamelBrain
 	METHOD method_45367 initialize (Lnet/minecraft/class_7689;Lnet/minecraft/class_5819;)V
 		ARG 0 camel
 		ARG 1 random
-	METHOD method_45369 addCoreActivities ()Lnet/minecraft/class_1_137;
-	METHOD method_45370 addIdleActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_45369 getCoreActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_45370 getIdleActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_52549 (Lnet/minecraft/class_1309;)Ljava/lang/Double;
 		ARG 0 entity
 	CLASS class_7692 CamelWalkTask

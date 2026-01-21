@@ -11,6 +11,7 @@ CLASS net/minecraft/class_7299 net/minecraft/entity/passive/AllayBrain
 		ARG 1 allay
 		ARG 2 stack
 		ARG 3 pos
+	METHOD method_1_1183 getTaskLists ()Ljava/util/List;
 	METHOD method_42657 getLookTarget (Lnet/minecraft/class_1309;)Ljava/util/Optional;
 		ARG 0 allay
 	METHOD method_42658 shouldGoTowardsNoteBlock (Lnet/minecraft/class_1309;Lnet/minecraft/class_4095;Lnet/minecraft/class_4208;)Z
@@ -24,10 +25,10 @@ CLASS net/minecraft/class_7299 net/minecraft/entity/passive/AllayBrain
 		ARG 0 allay
 	METHOD method_42662 getLikedLookTarget (Lnet/minecraft/class_1309;)Ljava/util/Optional;
 		ARG 0 allay
-	METHOD method_42663 addCoreActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_42663 getCoreActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_42664 (Lnet/minecraft/class_7298;)Z
 		ARG 0 allay
-	METHOD method_42666 addIdleActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_42666 getIdleActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_43092 (Lnet/minecraft/class_3222;)Lnet/minecraft/class_4115;
 		ARG 0 player
 	METHOD method_43093 getLikedPlayer (Lnet/minecraft/class_1309;)Ljava/util/Optional;

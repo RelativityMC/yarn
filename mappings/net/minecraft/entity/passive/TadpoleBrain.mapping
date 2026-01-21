@@ -1,7 +1,8 @@
 CLASS net/minecraft/class_7111 net/minecraft/entity/passive/TadpoleBrain
 	FIELD field_37500 FLEE_SPEED F
 	FIELD field_39409 TEMPT_SPEED F
+	METHOD method_1_1185 getTaskLists ()Ljava/util/List;
 	METHOD method_41401 updateActivities (Lnet/minecraft/class_7110;)V
 		ARG 0 tadpole
-	METHOD method_41402 addCoreActivities ()Lnet/minecraft/class_1_137;
-	METHOD method_41403 addIdleActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_41402 getCoreActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_41403 getIdleActivities ()Lnet/minecraft/class_1_137;

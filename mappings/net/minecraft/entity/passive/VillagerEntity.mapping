@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_1646 net/minecraft/entity/passive/VillagerEntity
+	FIELD field_1_625 VILLAGER_DATA_FINALIZED Lnet/minecraft/class_2940;
 	FIELD field_7445 VILLAGER_DATA Lnet/minecraft/class_2940;
 	FIELD field_18526 ITEM_FOOD_VALUES Ljava/util/Map;
 	FIELD field_18528 levelUpTimer I

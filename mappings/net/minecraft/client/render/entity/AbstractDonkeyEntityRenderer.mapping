@@ -1,6 +1,12 @@
 CLASS net/minecraft/class_9991 net/minecraft/client/render/entity/AbstractDonkeyEntityRenderer
+	FIELD field_1_1106 adultTexture Lnet/minecraft/class_2960;
+	FIELD field_1_1107 babyTexture Lnet/minecraft/class_2960;
 	METHOD <init> (Lnet/minecraft/class_5617$class_5618;Lnet/minecraft/class_10186$class_10190;Lnet/minecraft/class_5601;Lnet/minecraft/class_9991$class_10650;Lnet/minecraft/class_9991$class_10650;)V
 		ARG 1 context
+		ARG 2 saddleLayerType
+		ARG 3 saddleLayer
+		ARG 4 adult
+		ARG 5 baby
 	METHOD method_66848 (Lnet/minecraft/class_10013;)Lnet/minecraft/class_1799;
 		ARG 0 state
 	CLASS class_10650 Type

@@ -1,5 +1,15 @@
 CLASS net/minecraft/class_11683 net/minecraft/client/render/command/ModelCommandRenderer
 	FIELD field_61827 matrices Lnet/minecraft/class_4587;
+	METHOD method_1_1212 renderOpaque (Lnet/minecraft/class_11788;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_4618;Lnet/minecraft/class_4597$class_4598;)V
+		ARG 1 queue
+		ARG 2 vertexConsumers
+		ARG 3 outlineVertexConsumers
+		ARG 4 crumblingOverlayVertexConsumers
+	METHOD method_1_1213 renderBlended (Lnet/minecraft/class_11788;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_4618;Lnet/minecraft/class_4597$class_4598;)V
+		ARG 1 queue
+		ARG 2 vertexConsumers
+		ARG 3 outlineVertexConsumers
+		ARG 4 crumblingOverlayVertexConsumers
 	METHOD method_73000 render (Lnet/minecraft/class_11661$class_11670;Lnet/minecraft/class_1921;Lnet/minecraft/class_4588;Lnet/minecraft/class_4618;Lnet/minecraft/class_4597$class_4598;)V
 		ARG 1 model
 		ARG 2 renderLayer

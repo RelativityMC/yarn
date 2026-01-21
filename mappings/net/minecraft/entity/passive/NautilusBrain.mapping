@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_12118 net/minecraft/entity/passive/NautilusBrain
 	FIELD field_63356 ATTACK_TARGET_COOLDOWN Lnet/minecraft/class_6019;
 	FIELD field_63363 FIGHT_TARGET_PREDICATE Lnet/minecraft/class_4051;
+	METHOD method_1_1199 getTaskLists ()Ljava/util/List;
 	METHOD method_75168 findAttackTarget (Lnet/minecraft/class_3218;Lnet/minecraft/class_12116;)Ljava/util/Optional;
 		ARG 0 world
 		ARG 1 nautilus
@@ -25,8 +26,8 @@ CLASS net/minecraft/class_12118 net/minecraft/entity/passive/NautilusBrain
 		ARG 2 target
 	METHOD method_75178 (Lnet/minecraft/class_1309;)Ljava/lang/Double;
 		ARG 0 entity
-	METHOD method_75179 addCoreActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_75179 getCoreActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_75180 (Lnet/minecraft/class_1309;)Ljava/lang/Float;
 		ARG 0 entity
-	METHOD method_75181 addIdleActivities ()Lnet/minecraft/class_1_137;
-	METHOD method_75182 addFightActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_75181 getIdleActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_75182 getFightActivities ()Lnet/minecraft/class_1_137;

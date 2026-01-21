@@ -7,6 +7,7 @@ CLASS net/minecraft/class_11574 net/minecraft/entity/passive/CopperGolemBrain
 	FIELD field_61282 PLAY_SOUND_INTERACTION_TICKS I
 	FIELD field_61283 INPUT_CHEST_PREDICATE Ljava/util/function/Predicate;
 	FIELD field_61284 OUTPUT_CHEST_PREDICATE Ljava/util/function/Predicate;
+	METHOD method_1_1198 getTaskLists ()Ljava/util/List;
 	METHOD method_72480 (Lnet/minecraft/class_1314;)V
 		ARG 0 entity
 	METHOD method_72482 (Lnet/minecraft/class_11568$class_11572;)Z
@@ -21,9 +22,9 @@ CLASS net/minecraft/class_11574 net/minecraft/entity/passive/CopperGolemBrain
 	METHOD method_72486 (Lnet/minecraft/class_2680;)Z
 		ARG 0 state
 	METHOD method_72487 createInteractionCallbacks ()Ljava/util/Map;
-	METHOD method_72488 addCoreActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_72488 getCoreActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_72489 (Lnet/minecraft/class_2680;)Z
 		ARG 0 state
 	METHOD method_72490 createResetToIdleCallback ()Ljava/util/function/Consumer;
-	METHOD method_72491 addIdleActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_72491 getIdleActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_72492 createStoragePredicate ()Ljava/util/function/Predicate;

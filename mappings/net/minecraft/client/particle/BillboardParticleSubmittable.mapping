@@ -63,6 +63,7 @@ CLASS net/minecraft/class_11944 net/minecraft/client/particle/BillboardParticleS
 		ARG 12 minV
 		ARG 13 maxV
 		ARG 14 color
+		ARG 15 light
 	CLASS class_11945 Consumer
 		METHOD method_1_296 consume (FFFFFFFFFFFFII)V
 			ARG 1 x

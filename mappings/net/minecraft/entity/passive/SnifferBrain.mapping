@@ -2,12 +2,13 @@ CLASS net/minecraft/class_8155 net/minecraft/entity/passive/SnifferBrain
 	FIELD field_42675 LOGGER Lorg/slf4j/Logger;
 	FIELD field_42677 SNIFF_COOLDOWN_EXPIRY I
 	FIELD field_42679 FLEE_SPEED F
+	METHOD method_1_1197 getTaskLists ()Ljava/util/List;
 	METHOD method_49153 updateActivities (Lnet/minecraft/class_8153;)V
 		ARG 0 sniffer
-	METHOD method_49154 addCoreActivities ()Lnet/minecraft/class_1_137;
-	METHOD method_49155 addSniffActivities ()Lnet/minecraft/class_1_137;
-	METHOD method_49156 addDigActivities ()Lnet/minecraft/class_1_137;
-	METHOD method_49157 addIdleActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_49154 getCoreActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_49155 getSniffActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_49156 getDigActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_49157 getIdleActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_51160 (Lnet/minecraft/class_1309;)Ljava/lang/Float;
 		ARG 0 sniffer
 	METHOD method_51161 stopDiggingOrSniffing (Lnet/minecraft/class_8153;)Lnet/minecraft/class_8153;

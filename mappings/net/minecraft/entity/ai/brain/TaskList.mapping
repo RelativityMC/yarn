@@ -1,0 +1,30 @@
+CLASS net/minecraft/class_1_137 net/minecraft/entity/ai/brain/TaskList
+	METHOD method_1_1170 of (Lnet/minecraft/class_4168;ILcom/google/common/collect/ImmutableList;)Lnet/minecraft/class_1_137;
+		ARG 0 activityType
+		ARG 1 basePriority
+		ARG 2 tasks
+	METHOD method_1_1171 of (Lnet/minecraft/class_4168;ILcom/google/common/collect/ImmutableList;Ljava/util/Set;)Lnet/minecraft/class_1_137;
+		ARG 0 activityType
+		ARG 1 basePriority
+		ARG 2 tasks
+		ARG 3 conditions
+	METHOD method_1_1172 of (Lnet/minecraft/class_4168;ILcom/google/common/collect/ImmutableList;Lnet/minecraft/class_4140;)Lnet/minecraft/class_1_137;
+		ARG 0 activityType
+		ARG 1 basePriority
+		ARG 2 tasks
+		ARG 3 requiredMemoryModule
+	METHOD method_1_1173 of (Lnet/minecraft/class_4168;Lcom/google/common/collect/ImmutableList;)Lnet/minecraft/class_1_137;
+		ARG 0 activityType
+		ARG 1 behaviorPriorityPairs
+	METHOD method_1_1174 of (Lnet/minecraft/class_4168;Lcom/google/common/collect/ImmutableList;Ljava/util/Set;)Lnet/minecraft/class_1_137;
+		ARG 0 activityType
+		ARG 1 behaviorPriorityPairs
+		ARG 2 conditions
+	METHOD method_1_1175 of (Lnet/minecraft/class_4168;Lcom/google/common/collect/ImmutableList;Ljava/util/Set;Ljava/util/Set;)Lnet/minecraft/class_1_137;
+		ARG 0 activityType
+		ARG 1 behaviorPriorityPairs
+		ARG 2 conditions
+		ARG 3 memoriesToEraseWhenStopped
+	METHOD method_1_1176 createTaskPairs (ILcom/google/common/collect/ImmutableList;)Lcom/google/common/collect/ImmutableList;
+		ARG 0 basePriority
+		ARG 1 tasks

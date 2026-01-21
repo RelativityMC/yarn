@@ -1,9 +1,15 @@
 CLASS net/minecraft/class_4692 net/minecraft/test/TimedTask
-	FIELD field_21450 duration Ljava/lang/Long;
+	FIELD field_1_1099 minimumDuration Ljava/lang/Long;
+	FIELD field_21450 exactDuration Ljava/lang/Long;
 	FIELD field_21451 task Ljava/lang/Runnable;
 	METHOD <init> (Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Runnable;)V
-		ARG 1 duration
-	METHOD method_35941 create (JLjava/lang/Runnable;)Lnet/minecraft/class_4692;
+		ARG 1 exactDuration
+		ARG 2 minimumDuration
+		ARG 3 task
+	METHOD method_1_1182 withMinimumDuration (JLjava/lang/Runnable;)Lnet/minecraft/class_4692;
+		ARG 0 duration
+		ARG 2 task
+	METHOD method_35941 withExactDuration (JLjava/lang/Runnable;)Lnet/minecraft/class_4692;
 		ARG 0 duration
 		ARG 2 task
 	METHOD method_35942 create (Ljava/lang/Runnable;)Lnet/minecraft/class_4692;

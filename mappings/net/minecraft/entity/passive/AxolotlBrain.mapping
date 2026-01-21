@@ -52,6 +52,7 @@ CLASS net/minecraft/class_5768 net/minecraft/entity/passive/AxolotlBrain
 	FIELD field_30396 IDLE_SPEED F
 	FIELD field_30397 TARGET_APPROACHING_SPEED F
 	FIELD field_30398 ADULT_FOLLOWING_SPEED F
+	METHOD method_1_1196 getTaskLists ()Ljava/util/List;
 	METHOD method_33242 getTargetApproachingSpeed (Lnet/minecraft/class_1309;)F
 		COMMENT {@return the axolotl's speed when approaching the attack target}
 		ARG 0 entity
@@ -60,15 +61,15 @@ CLASS net/minecraft/class_5768 net/minecraft/entity/passive/AxolotlBrain
 	METHOD method_33245 getAdultFollowingSpeed (Lnet/minecraft/class_1309;)F
 		COMMENT {@return the axolotl's speed when a baby axolotl is following an adult}
 		ARG 0 entity
-	METHOD method_33246 addPlayDeadActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_33246 getPlayDeadActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_33247 getAttackTarget (Lnet/minecraft/class_3218;Lnet/minecraft/class_5762;)Ljava/util/Optional;
 		ARG 0 world
 		ARG 1 axolotl
 	METHOD method_33248 getTemptedSpeed (Lnet/minecraft/class_1309;)F
 		COMMENT {@return the axolotl's speed when the axolotl is being tempted}
 		ARG 0 entity
-	METHOD method_33249 addFightActivities ()Lnet/minecraft/class_1_137;
-	METHOD method_33251 addCoreActivities ()Lnet/minecraft/class_1_137;
-	METHOD method_33252 addIdleActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_33249 getFightActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_33251 getCoreActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_33252 getIdleActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_37457 canGoToLookTarget (Lnet/minecraft/class_1309;)Z
 		ARG 0 entity

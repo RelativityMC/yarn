@@ -4,6 +4,9 @@ CLASS net/minecraft/class_4693 net/minecraft/test/TimedTaskRunner
 	FIELD field_21459 tick I
 	METHOD <init> (Lnet/minecraft/class_4517;)V
 		ARG 1 gameTest
+	METHOD method_1_1187 createAndAddWithMinimumDuration (JLjava/lang/Runnable;)Lnet/minecraft/class_4693;
+		ARG 1 duration
+		ARG 3 task
 	METHOD method_23643 runSilently (I)V
 		ARG 1 tick
 	METHOD method_23644 runReported (I)V
@@ -16,7 +19,7 @@ CLASS net/minecraft/class_4693 net/minecraft/test/TimedTaskRunner
 	METHOD method_36077 expectMinDurationAndRun (ILjava/lang/Runnable;)Lnet/minecraft/class_4693;
 		ARG 1 minDuration
 		ARG 2 task
-	METHOD method_36078 createAndAdd (JLjava/lang/Runnable;)Lnet/minecraft/class_4693;
+	METHOD method_36078 createAndAddWithExactDuration (JLjava/lang/Runnable;)Lnet/minecraft/class_4693;
 		ARG 1 duration
 		ARG 3 task
 	METHOD method_36079 createAndAdd (Ljava/lang/Runnable;)Lnet/minecraft/class_4693;

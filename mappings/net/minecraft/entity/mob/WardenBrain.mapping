@@ -9,9 +9,13 @@ CLASS net/minecraft/class_7261 net/minecraft/entity/mob/WardenBrain
 	FIELD field_38179 DIG_DURATION I
 	FIELD field_38180 SNIFF_DURATION I
 	FIELD field_38182 RESET_DIG_COOLDOWN_TASK Lnet/minecraft/class_7893;
+	METHOD method_1_1193 getTaskLists (Lnet/minecraft/class_7260;)Ljava/util/List;
+		ARG 0 warden
+	METHOD method_1_1194 resetActivities (Lnet/minecraft/class_4095;)V
+		ARG 0 brain
 	METHOD method_42225 resetDigCooldown (Lnet/minecraft/class_1309;)V
 		ARG 0 warden
-	METHOD method_42227 addCoreActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_42227 getCoreActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_42229 isTargeting (Lnet/minecraft/class_7260;Lnet/minecraft/class_1309;)Z
 		ARG 0 warden
 		ARG 1 entity
@@ -20,23 +24,23 @@ CLASS net/minecraft/class_7261 net/minecraft/entity/mob/WardenBrain
 		ARG 1 pos
 	METHOD method_42232 (Lnet/minecraft/class_1309;Lnet/minecraft/class_1309;)Z
 		ARG 1 entityx
-	METHOD method_42233 addEmergeActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_42233 getEmergeActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_42235 removeDeadSuspect (Lnet/minecraft/class_3218;Lnet/minecraft/class_7260;Lnet/minecraft/class_1309;)V
 		ARG 0 world
 		ARG 1 warden
 		ARG 2 target
-	METHOD method_42236 addFightActivities (Lnet/minecraft/class_7260;)Lnet/minecraft/class_1_137;
+	METHOD method_42236 getFightActivities (Lnet/minecraft/class_7260;)Lnet/minecraft/class_1_137;
 		ARG 0 warden
-	METHOD method_42237 addDigActivities ()Lnet/minecraft/class_1_137;
-	METHOD method_42240 addIdleActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_42237 getDigActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_42240 getIdleActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_42241 (Lnet/minecraft/class_7260;Lnet/minecraft/class_1309;)Z
 		ARG 1 entity
-	METHOD method_42242 addInvestigateActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_42242 getInvestigateActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_42243 (Lnet/minecraft/class_7260;Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;)Z
 		ARG 1 world
 		ARG 2 target
-	METHOD method_42244 addSniffActivities ()Lnet/minecraft/class_1_137;
-	METHOD method_42245 addRoarActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_42244 getSniffActivities ()Lnet/minecraft/class_1_137;
+	METHOD method_42245 getRoarActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_47302 (Lnet/minecraft/class_7898$class_7900;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 context
 	METHOD method_47303 (Lnet/minecraft/class_7898$class_7900;Lnet/minecraft/class_7906;)Lnet/minecraft/class_7911;

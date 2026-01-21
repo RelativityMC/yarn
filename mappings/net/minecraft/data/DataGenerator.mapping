@@ -11,6 +11,21 @@ CLASS net/minecraft/class_2403 net/minecraft/data/DataGenerator
 	METHOD method_46565 createVanillaSubPack (ZLjava/lang/String;)Lnet/minecraft/class_2403$class_7856;
 		ARG 1 shouldRun
 		ARG 2 packName
+	CLASS class_1_135 Default
+		FIELD field_1_1081 force Z
+		FIELD field_1_1082 outputPath Ljava/nio/file/Path;
+		FIELD field_1_1083 version Lnet/minecraft/class_6489;
+		METHOD <init> (Ljava/nio/file/Path;Lnet/minecraft/class_6489;Z)V
+			ARG 1 outputPath
+			ARG 2 version
+			ARG 3 force
+		METHOD method_1_1161 (Lnet/minecraft/class_2408;Lcom/google/common/base/Stopwatch;Ljava/lang/String;Lnet/minecraft/class_2405;)V
+			ARG 3 name
+			ARG 4 provider
+	CLASS class_1_136 Uncached
+		METHOD method_1_1162 (Lcom/google/common/base/Stopwatch;Ljava/lang/String;Lnet/minecraft/class_2405;)V
+			ARG 1 name
+			ARG 2 provider
 	CLASS class_7856 Pack
 		FIELD field_40828 shouldRun Z
 		FIELD field_40829 packName Ljava/lang/String;

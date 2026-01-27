@@ -1257,38 +1257,6 @@ CLASS net/minecraft/class_1802 net/minecraft/item/Items
 		ARG 0 settings
 	METHOD method_63817 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
 		ARG 0 settings
-	METHOD method_63841 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 settings
-	METHOD method_63842 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 settings
-	METHOD method_63843 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 settings
-	METHOD method_63844 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 settings
-	METHOD method_63845 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 settings
-	METHOD method_63846 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 settings
-	METHOD method_63847 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 settings
-	METHOD method_63848 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 settings
-	METHOD method_63849 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 settings
-	METHOD method_63850 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 settings
-	METHOD method_63851 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 settings
-	METHOD method_63852 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 settings
-	METHOD method_63853 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 settings
-	METHOD method_63854 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 settings
-	METHOD method_63855 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 settings
-	METHOD method_63856 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 settings
 	METHOD method_63858 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
 		ARG 0 settings
 	METHOD method_63859 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;

@@ -6,7 +6,6 @@ CLASS net/minecraft/class_2454 net/minecraft/data/recipe/CookingRecipeJsonBuilde
 	FIELD field_11419 group Ljava/lang/String;
 	FIELD field_40647 category Lnet/minecraft/class_7800;
 	FIELD field_40648 cookingCategory Lnet/minecraft/class_7709;
-	FIELD field_46150 criteria Ljava/util/Map;
 	FIELD field_47504 recipeFactory Lnet/minecraft/class_1874$class_3958;
 	METHOD <init> (Lnet/minecraft/class_7800;Lnet/minecraft/class_7709;Lnet/minecraft/class_1_107;Lnet/minecraft/class_1856;FILnet/minecraft/class_1874$class_3958;)V
 		ARG 1 category
@@ -32,8 +31,6 @@ CLASS net/minecraft/class_2454 net/minecraft/data/recipe/CookingRecipeJsonBuilde
 		ARG 4 experience
 		ARG 5 cookingTime
 		ARG 6 recipeFactory
-	METHOD method_10471 validate (Lnet/minecraft/class_5321;)V
-		ARG 1 recipeKey
 	METHOD method_10473 createBlasting (Lnet/minecraft/class_1856;Lnet/minecraft/class_7800;Lnet/minecraft/class_7709;Lnet/minecraft/class_1935;FI)Lnet/minecraft/class_2454;
 		ARG 0 input
 		ARG 1 category

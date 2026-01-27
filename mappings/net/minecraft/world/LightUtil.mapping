@@ -16,7 +16,6 @@ CLASS net/minecraft/class_1_5 net/minecraft/world/LightUtil
 	FIELD field_1_24 FULL I
 	FIELD field_1_25 SKY I
 	FIELD field_1_26 MAX_COMPONENT I
-	FIELD field_1_27 NONE I
 	METHOD method_1_386 increaseBlockLight (IF)I
 		ARG 0 packed
 		ARG 1 fraction

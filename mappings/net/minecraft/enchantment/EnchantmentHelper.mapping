@@ -33,10 +33,9 @@ CLASS net/minecraft/class_1890 net/minecraft/enchantment/EnchantmentHelper
 		ARG 0 world
 		ARG 1 stack
 		ARG 2 user
-	METHOD method_8225 getLevel (Lnet/minecraft/class_6880;Lnet/minecraft/class_1799;)I
+	METHOD method_8225 getLevel (Lnet/minecraft/class_6880;Lnet/minecraft/class_1_96;)I
 		COMMENT Gets the level of an enchantment on an item stack.
 		ARG 0 enchantment
-		ARG 1 stack
 	METHOD method_8227 calculateRequiredExperienceLevel (Lnet/minecraft/class_5819;IILnet/minecraft/class_1799;)I
 		COMMENT {@return the required experience level for an enchanting option in the
 		COMMENT enchanting table's screen, or the enchantment screen}

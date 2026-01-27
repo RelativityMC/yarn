@@ -85,7 +85,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	FIELD field_55951 lastEquipmentStacks Ljava/util/Map;
 	FIELD field_56535 equipment Lnet/minecraft/class_10630;
 	FIELD field_59669 waypointConfig Lnet/minecraft/class_11208$class_11209;
-	FIELD field_60356 BRAIN Lcom/mojang/serialization/Dynamic;
 	FIELD field_60537 SLEEPING_POS_KEY Ljava/lang/String;
 	FIELD field_60538 EQUIPMENT_KEY Ljava/lang/String;
 	FIELD field_60539 BRAIN_KEY Ljava/lang/String;
@@ -436,8 +435,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 slipperiness
 	METHOD method_18808 getProjectileType (Lnet/minecraft/class_1799;)Lnet/minecraft/class_1799;
 		ARG 1 stack
-	METHOD method_18867 deserializeBrain (Lcom/mojang/serialization/Dynamic;)Lnet/minecraft/class_4095;
-		ARG 1 dynamic
+	METHOD method_18867 deserializeBrain (Lnet/minecraft/class_4095$class_1_142;)Lnet/minecraft/class_4095;
 	METHOD method_18868 getBrain ()Lnet/minecraft/class_4095;
 	METHOD method_20235 sendEquipmentBreakStatus (Lnet/minecraft/class_1792;Lnet/minecraft/class_1304;)V
 		ARG 1 item
@@ -514,7 +512,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_26827 createLivingAttributes ()Lnet/minecraft/class_5132$class_5133;
 	METHOD method_27071 shouldDropLoot (Lnet/minecraft/class_3218;)Z
 		ARG 1 world
-	METHOD method_28306 createBrainProfile ()Lnet/minecraft/class_4095$class_5303;
 	METHOD method_29242 updateLimbs (Z)V
 		ARG 1 flutter
 	METHOD method_29499 triggerItemPickedUpByEntityCriteria (Lnet/minecraft/class_1542;)V
@@ -664,10 +661,9 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 movementInput
 	METHOD method_61418 (DLnet/minecraft/class_243;)Lnet/minecraft/class_243;
 		ARG 2 pos
-	METHOD method_61419 forEachShearedItem (Lnet/minecraft/class_3218;Lnet/minecraft/class_5321;Lnet/minecraft/class_1799;Ljava/util/function/BiConsumer;)V
+	METHOD method_61419 forEachShearedItem (Lnet/minecraft/class_3218;Lnet/minecraft/class_5321;Lnet/minecraft/class_1_96;Ljava/util/function/BiConsumer;)V
 		ARG 1 world
 		ARG 2 lootTableKey
-		ARG 3 tool
 		ARG 4 lootConsumer
 	METHOD method_61420 getStackInArm (Lnet/minecraft/class_1306;)Lnet/minecraft/class_1799;
 		ARG 1 arm
@@ -718,7 +714,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 2 lootTableKey
 		ARG 3 lootContextParametersFactory
 		ARG 4 lootConsumer
-	METHOD method_64171 (Lnet/minecraft/class_1799;Lnet/minecraft/class_8567$class_8568;)Lnet/minecraft/class_8567;
+	METHOD method_64171 (Lnet/minecraft/class_1_96;Lnet/minecraft/class_8567$class_8568;)Lnet/minecraft/class_8567;
 		ARG 2 parameterSetBuilder
 	METHOD method_64172 (Lnet/minecraft/class_8567$class_8568;)Lnet/minecraft/class_8567;
 		ARG 1 parameterSetBuilder
@@ -794,17 +790,12 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 3 inLavaSpeed
 		ARG 4 regularSpeed
 	METHOD method_70673 isJumping ()Z
-	METHOD method_71374 (Lnet/minecraft/class_11372;Lcom/mojang/serialization/Dynamic;)V
-		ARG 1 brain
 	METHOD method_71375 (Lnet/minecraft/class_11372;Lnet/minecraft/class_2338;)V
 		ARG 1 pos
-	METHOD method_71377 (Lcom/mojang/serialization/Dynamic;)V
-		ARG 1 brain
-	METHOD method_72394 forEachBrushedItem (Lnet/minecraft/class_3218;Lnet/minecraft/class_5321;Lnet/minecraft/class_1297;Lnet/minecraft/class_1799;Ljava/util/function/BiConsumer;)Z
+	METHOD method_72394 forEachBrushedItem (Lnet/minecraft/class_3218;Lnet/minecraft/class_5321;Lnet/minecraft/class_1297;Lnet/minecraft/class_1_96;Ljava/util/function/BiConsumer;)Z
 		ARG 1 world
 		ARG 2 lootTableKey
 		ARG 3 interactingEntity
-		ARG 4 tool
 		ARG 5 lootConsumer
 	METHOD method_72395 dropLoot (Lnet/minecraft/class_3218;Lnet/minecraft/class_1282;ZLnet/minecraft/class_5321;)V
 		ARG 1 world
@@ -817,7 +808,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 3 causedByPlayer
 		ARG 4 lootTableKey
 		ARG 5 lootConsumer
-	METHOD method_72397 (Lnet/minecraft/class_1297;Lnet/minecraft/class_1799;Lnet/minecraft/class_8567$class_8568;)Lnet/minecraft/class_8567;
+	METHOD method_72397 (Lnet/minecraft/class_1297;Lnet/minecraft/class_1_96;Lnet/minecraft/class_8567$class_8568;)Lnet/minecraft/class_8567;
 		ARG 3 parameterSetBuilder
 	METHOD method_74092 shouldDrown ()Z
 	METHOD method_75118 isInPiercingCooldown (Lnet/minecraft/class_1297;I)Z

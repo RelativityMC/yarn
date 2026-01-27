@@ -1,10 +1,9 @@
 CLASS net/minecraft/class_4711 net/minecraft/advancement/criterion/ItemCriterion
 	METHOD method_23888 (Lnet/minecraft/class_47;Lnet/minecraft/class_4711$class_4712;)Z
 		ARG 1 conditions
-	METHOD method_23889 trigger (Lnet/minecraft/class_3222;Lnet/minecraft/class_2338;Lnet/minecraft/class_1799;)V
+	METHOD method_23889 trigger (Lnet/minecraft/class_3222;Lnet/minecraft/class_2338;Lnet/minecraft/class_1_96;)V
 		ARG 1 player
 		ARG 2 pos
-		ARG 3 stack
 	CLASS class_4712 Conditions
 		FIELD comp_2029 player Ljava/util/Optional;
 		FIELD field_47267 CODEC Lcom/mojang/serialization/Codec;

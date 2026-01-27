@@ -59,11 +59,10 @@ CLASS net/minecraft/class_3039 net/minecraft/server/command/LootCommand
 		ARG 2 constructor
 	METHOD method_13198 (Lnet/minecraft/class_3039$class_3041;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 1 context
-	METHOD method_13199 executeFish (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_6880;Lnet/minecraft/class_2338;Lnet/minecraft/class_1799;Lnet/minecraft/class_3039$class_3041;)I
+	METHOD method_13199 executeFish (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_6880;Lnet/minecraft/class_2338;Lnet/minecraft/class_1_96;Lnet/minecraft/class_3039$class_3041;)I
 		ARG 0 context
 		ARG 1 lootTable
 		ARG 2 pos
-		ARG 3 stack
 		ARG 4 constructor
 	METHOD method_13201 executeGive (Ljava/util/Collection;Ljava/util/List;Lnet/minecraft/class_3039$class_3040;)I
 		ARG 0 players
@@ -117,10 +116,9 @@ CLASS net/minecraft/class_3039 net/minecraft/server/command/LootCommand
 	METHOD method_13218 itemsMatch (Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;)Z
 		ARG 0 first
 		ARG 1 second
-	METHOD method_13219 executeMine (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_2338;Lnet/minecraft/class_1799;Lnet/minecraft/class_3039$class_3041;)I
+	METHOD method_13219 executeMine (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_2338;Lnet/minecraft/class_1_96;Lnet/minecraft/class_3039$class_3041;)I
 		ARG 0 context
 		ARG 1 pos
-		ARG 2 stack
 		ARG 3 constructor
 	METHOD method_13220 (Lcom/mojang/brigadier/context/CommandContext;Ljava/util/List;Lnet/minecraft/class_3039$class_3040;)I
 		ARG 0 context

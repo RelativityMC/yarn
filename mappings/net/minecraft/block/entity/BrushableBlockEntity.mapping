@@ -23,10 +23,9 @@ CLASS net/minecraft/class_8174 net/minecraft/block/entity/BrushableBlockEntity
 	METHOD method_49216 setLootTable (Lnet/minecraft/class_5321;J)V
 		ARG 1 lootTable
 		ARG 2 seed
-	METHOD method_49217 generateItem (Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;Lnet/minecraft/class_1799;)V
+	METHOD method_49217 generateItem (Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;Lnet/minecraft/class_1_96;)V
 		ARG 1 world
 		ARG 2 brusher
-		ARG 3 brush
 	METHOD method_49218 finishBrushing (Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;Lnet/minecraft/class_1799;)V
 		ARG 1 world
 		ARG 2 brusher

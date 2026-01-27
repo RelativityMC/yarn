@@ -1,8 +1,7 @@
 CLASS net/minecraft/class_9104 net/minecraft/advancement/criterion/AnyBlockUseCriterion
-	METHOD method_56049 trigger (Lnet/minecraft/class_3222;Lnet/minecraft/class_2338;Lnet/minecraft/class_1799;)V
+	METHOD method_56049 trigger (Lnet/minecraft/class_3222;Lnet/minecraft/class_2338;Lnet/minecraft/class_1_96;)V
 		ARG 1 player
 		ARG 2 pos
-		ARG 3 stack
 	METHOD method_56050 (Lnet/minecraft/class_47;Lnet/minecraft/class_9104$class_9105;)Z
 		ARG 1 conditions
 	CLASS class_9105 Conditions

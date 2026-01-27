@@ -30,7 +30,6 @@ CLASS net/minecraft/class_5762 net/minecraft/entity/passive/AxolotlEntity
 	COMMENT </tr>
 	COMMENT </table>
 	COMMENT </div>
-	FIELD field_28333 SENSORS Lcom/google/common/collect/ImmutableList;
 	FIELD field_28335 VARIANT Lnet/minecraft/class_2940;
 	FIELD field_28336 PLAYING_DEAD Lnet/minecraft/class_2940;
 	FIELD field_28337 FROM_BUCKET Lnet/minecraft/class_2940;

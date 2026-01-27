@@ -39,10 +39,5 @@ CLASS net/minecraft/class_5537 net/minecraft/item/BundleItem
 		ARG 0 stack
 		ARG 1 player
 		ARG 2 contents
-	METHOD method_64277 getBundle (Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
-		ARG 0 color
 	METHOD method_64502 onContentChanged (Lnet/minecraft/class_1657;)V
 		ARG 1 user
-	METHOD method_64974 (Lnet/minecraft/class_1792;)Lnet/minecraft/class_5537;
-		ARG 0 item
-	METHOD method_64975 getBundles ()Ljava/util/List;

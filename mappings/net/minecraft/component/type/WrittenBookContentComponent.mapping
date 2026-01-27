@@ -3,7 +3,6 @@ CLASS net/minecraft/class_9302 net/minecraft/component/type/WrittenBookContentCo
 	FIELD field_49375 MAX_SERIALIZED_PAGE_LENGTH I
 	FIELD field_49378 MAX_TITLE_LENGTH I
 	FIELD field_49379 MAX_GENERATION I
-	FIELD field_49380 UNCOPIABLE_GENERATION I
 	FIELD field_49381 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_49382 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_49383 PAGE_CODEC Lcom/mojang/serialization/Codec;

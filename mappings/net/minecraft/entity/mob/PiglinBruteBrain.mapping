@@ -24,15 +24,13 @@ CLASS net/minecraft/class_5420 net/minecraft/entity/mob/PiglinBruteBrain
 	METHOD method_30254 getIdleTasks ()Lnet/minecraft/class_4118;
 	METHOD method_30256 tick (Lnet/minecraft/class_5419;)V
 		ARG 0 piglinBrute
-	METHOD method_30257 getCoreActivities (Lnet/minecraft/class_5419;)Lnet/minecraft/class_1_137;
-		ARG 0 piglinBrute
+	METHOD method_30257 getCoreActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_30258 playSoundRandomly (Lnet/minecraft/class_5419;)V
 		ARG 0 piglinBrute
 	METHOD method_30259 (Lnet/minecraft/class_5419;Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;)Z
 		ARG 1 world
 		ARG 2 target
-	METHOD method_30260 getIdleActivities (Lnet/minecraft/class_5419;)Lnet/minecraft/class_1_137;
-		ARG 0 piglinBrute
+	METHOD method_30260 getIdleActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_30261 playSoundIfAngry (Lnet/minecraft/class_5419;)V
 		ARG 0 piglinBrute
 	METHOD method_30262 getFightActivities (Lnet/minecraft/class_5419;)Lnet/minecraft/class_1_137;

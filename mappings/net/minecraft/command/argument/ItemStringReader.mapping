@@ -11,12 +11,11 @@ CLASS net/minecraft/class_2291 net/minecraft/command/argument/ItemStringReader
 	FIELD field_50053 SUGGEST_DEFAULT Ljava/util/function/Function;
 	FIELD field_50054 itemRegistry Lnet/minecraft/class_7225$class_7226;
 	FIELD field_50055 ops Lnet/minecraft/class_6903;
-	FIELD field_51458 MALFORMED_ITEM_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_51831 EXCLAMATION_MARK C
 	FIELD field_57954 snbtReader Lnet/minecraft/class_2522;
 	METHOD <init> (Lnet/minecraft/class_7225$class_7874;)V
 		ARG 1 registries
-	METHOD method_9789 consume (Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/class_2291$class_7215;
+	METHOD method_9789 consume (Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/class_2290;
 		ARG 1 reader
 	METHOD method_9793 getSuggestions (Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 builder
@@ -32,15 +31,6 @@ CLASS net/minecraft/class_2291 net/minecraft/command/argument/ItemStringReader
 		ARG 0 id
 	METHOD method_58521 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 id
-	METHOD method_59768 (Lcom/mojang/brigadier/StringReader;Ljava/lang/String;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
-		ARG 1 error
-	METHOD method_59769 validate (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/class_6880;Lnet/minecraft/class_9326;)V
-		ARG 0 reader
-		ARG 1 item
-		ARG 2 components
-	METHOD method_59770 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
-		ARG 0 error
-	CLASS class_7215 ItemResult
 	CLASS class_9217 Reader
 		FIELD field_48971 reader Lcom/mojang/brigadier/StringReader;
 		FIELD field_48972 callbacks Lnet/minecraft/class_2291$class_9219;

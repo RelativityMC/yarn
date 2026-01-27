@@ -1,23 +1,13 @@
 CLASS net/minecraft/class_2290 net/minecraft/command/argument/ItemStackArgument
-	FIELD field_10796 item Lnet/minecraft/class_6880;
+	FIELD comp_1_116 components Lnet/minecraft/class_9326;
+	FIELD comp_1_117 item Lnet/minecraft/class_6880;
 	FIELD field_10797 OVERSTACKED_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
-	FIELD field_49570 components Lnet/minecraft/class_9326;
 	METHOD <init> (Lnet/minecraft/class_6880;Lnet/minecraft/class_9326;)V
 		ARG 1 item
 		ARG 2 components
-	METHOD method_9781 createStack (IZ)Lnet/minecraft/class_1799;
+	METHOD comp_1_117 getItem ()Lnet/minecraft/class_6880;
+	METHOD method_9781 createStack (I)Lnet/minecraft/class_1799;
 		ARG 1 amount
-		ARG 2 checkOverstack
-	METHOD method_9782 asString (Lnet/minecraft/class_7225$class_7874;)Ljava/lang/String;
-		ARG 1 registries
 	METHOD method_9784 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 item
 		ARG 1 maxCount
-	METHOD method_9785 getItem ()Lnet/minecraft/class_1792;
-	METHOD method_41967 getIdString ()Ljava/lang/String;
-	METHOD method_57800 (Lcom/mojang/serialization/DynamicOps;Ljava/util/Map$Entry;)Ljava/util/stream/Stream;
-		ARG 1 entry
-	METHOD method_57801 componentsAsString (Lnet/minecraft/class_7225$class_7874;)Ljava/lang/String;
-		ARG 1 registries
-	METHOD method_60378 (Lnet/minecraft/class_2960;Lnet/minecraft/class_2520;)Ljava/lang/String;
-		ARG 1 value

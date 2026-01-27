@@ -10,7 +10,6 @@ CLASS net/minecraft/class_1646 net/minecraft/entity/passive/VillagerEntity
 	FIELD field_18535 gossipStartTime J
 	FIELD field_18536 experience I
 	FIELD field_18537 lastRestockTime J
-	FIELD field_18539 SENSORS Lcom/google/common/collect/ImmutableList;
 	FIELD field_18851 POINTS_OF_INTEREST Ljava/util/Map;
 	FIELD field_19357 lastGossipDecayTime J
 	FIELD field_19427 restocksToday I

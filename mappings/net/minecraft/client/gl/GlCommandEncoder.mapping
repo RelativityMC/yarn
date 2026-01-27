@@ -38,14 +38,3 @@ CLASS net/minecraft/class_10860 net/minecraft/client/gl/GlCommandEncoder
 		ARG 5 validationSkippedUniforms
 	METHOD method_68356 setPipelineAndApplyState (Lcom/mojang/blaze3d/pipeline/RenderPipeline;)V
 		ARG 1 pipeline
-	METHOD method_68369 getBackend ()Lnet/minecraft/class_10865;
-	METHOD method_70805 validateColorAttachment (Lcom/mojang/blaze3d/textures/GpuTexture;)V
-		ARG 1 texture
-	METHOD method_70806 validate (Lcom/mojang/blaze3d/textures/GpuTexture;IIII)V
-		ARG 1 texture
-		ARG 2 regionX
-		ARG 3 regionY
-		ARG 4 regionWidth
-		ARG 5 regionHeight
-	METHOD method_70807 validateDepthAttachment (Lcom/mojang/blaze3d/textures/GpuTexture;)V
-		ARG 1 texture

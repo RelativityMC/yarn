@@ -30,14 +30,7 @@ CLASS net/minecraft/class_2574 net/minecraft/text/NbtTextContent
 	METHOD method_15880 (Lnet/minecraft/class_2561;Lnet/minecraft/class_5250;Lnet/minecraft/class_5250;)Lnet/minecraft/class_5250;
 		ARG 1 accumulator
 		ARG 2 current
-	METHOD method_36334 (Ljava/util/stream/Stream;Lnet/minecraft/class_5250;)Lnet/minecraft/class_5250;
-		ARG 1 text
-	METHOD method_36335 (Lnet/minecraft/class_5250;Lnet/minecraft/class_5250;Lnet/minecraft/class_5250;)Lnet/minecraft/class_5250;
-		ARG 1 accumulator
-		ARG 2 current
 	METHOD method_43484 getSeparator ()Ljava/util/Optional;
 	METHOD method_43485 getDataSource ()Lnet/minecraft/class_7419;
 	METHOD method_54230 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
-	METHOD method_68667 asString (Lnet/minecraft/class_2520;)Ljava/lang/String;
-		ARG 0 nbt

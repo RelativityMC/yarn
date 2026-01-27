@@ -123,7 +123,6 @@ CLASS net/minecraft/class_746 net/minecraft/client/network/ClientPlayerEntity
 	METHOD method_75409 isBlockedFromSprinting ()Z
 	METHOD method_75410 getActiveItemSpeedMultiplier ()F
 	METHOD method_75411 setPermissions (Lnet/minecraft/class_12096;)V
-		ARG 1 permissions
 	METHOD method_76762 getCrosshairTarget (FLnet/minecraft/class_1297;)Lnet/minecraft/class_239;
 		ARG 1 tickProgress
 		ARG 2 cameraEntity

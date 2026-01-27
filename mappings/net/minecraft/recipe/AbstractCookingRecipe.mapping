@@ -1,10 +1,7 @@
 CLASS net/minecraft/class_1874 net/minecraft/recipe/AbstractCookingRecipe
 	FIELD field_9057 experience F
 	FIELD field_9058 cookingTime I
-	FIELD field_40241 category Lnet/minecraft/class_7709;
-	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_7709;Lnet/minecraft/class_1856;Lnet/minecraft/class_1_107;FI)V
-		ARG 1 group
-		ARG 2 category
+	METHOD <init> (Lnet/minecraft/class_1860$class_1_145;Lnet/minecraft/class_1874$class_1_174;Lnet/minecraft/class_1856;Lnet/minecraft/class_1_107;FI)V
 		ARG 3 ingredient
 		ARG 5 experience
 		ARG 6 cookingTime
@@ -13,17 +10,7 @@ CLASS net/minecraft/class_1874 net/minecraft/recipe/AbstractCookingRecipe
 	METHOD method_45438 getCategory ()Lnet/minecraft/class_7709;
 	METHOD method_64663 getCookerItem ()Lnet/minecraft/class_1792;
 	CLASS class_3958 RecipeFactory
-		METHOD method_1_271 create (Ljava/lang/String;Lnet/minecraft/class_7709;Lnet/minecraft/class_1856;Lnet/minecraft/class_1_107;FI)Lnet/minecraft/class_1874;
-			ARG 1 group
-			ARG 2 category
+		METHOD method_1_271 create (Lnet/minecraft/class_1860$class_1_145;Lnet/minecraft/class_1874$class_1_174;Lnet/minecraft/class_1856;Lnet/minecraft/class_1_107;FI)Lnet/minecraft/class_1874;
 			ARG 3 ingredient
 			ARG 5 experience
 			ARG 6 cookingTime
-	CLASS class_10285 Serializer
-		FIELD field_54625 codec Lcom/mojang/serialization/MapCodec;
-		FIELD field_54626 packetCodec Lnet/minecraft/class_9139;
-		METHOD <init> (Lnet/minecraft/class_1874$class_3958;I)V
-			ARG 1 factory
-			ARG 2 defaultCookingTime
-		METHOD method_64665 (ILnet/minecraft/class_1874$class_3958;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 2 instance

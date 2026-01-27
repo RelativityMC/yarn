@@ -4,7 +4,6 @@ CLASS net/minecraft/class_2447 net/minecraft/data/recipe/ShapedRecipeJsonBuilder
 	FIELD field_11381 group Ljava/lang/String;
 	FIELD field_40645 category Lnet/minecraft/class_7800;
 	FIELD field_42956 showNotification Z
-	FIELD field_46149 criteria Ljava/util/Map;
 	FIELD field_53731 registryLookup Lnet/minecraft/class_7871;
 	METHOD <init> (Lnet/minecraft/class_7871;Lnet/minecraft/class_7800;Lnet/minecraft/class_1935;I)V
 		ARG 1 registryLookup
@@ -14,8 +13,6 @@ CLASS net/minecraft/class_2447 net/minecraft/data/recipe/ShapedRecipeJsonBuilder
 	METHOD method_10428 input (Ljava/lang/Character;Lnet/minecraft/class_1856;)Lnet/minecraft/class_2447;
 		ARG 1 c
 		ARG 2 ingredient
-	METHOD method_10432 validate (Lnet/minecraft/class_5321;)Lnet/minecraft/class_8957;
-		ARG 1 recipeKey
 	METHOD method_10433 input (Ljava/lang/Character;Lnet/minecraft/class_6862;)Lnet/minecraft/class_2447;
 		ARG 1 c
 		ARG 2 tag

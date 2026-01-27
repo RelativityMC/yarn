@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_7110 net/minecraft/entity/passive/TadpoleEntity
 	FIELD field_37496 MAX_TADPOLE_AGE I
-	FIELD field_37497 SENSORS Lcom/google/common/collect/ImmutableList;
 	FIELD field_37499 tadpoleAge I
 	FIELD field_39302 WIDTH F
 	FIELD field_39303 HEIGHT F

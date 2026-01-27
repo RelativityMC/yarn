@@ -1,44 +1,7 @@
 CLASS net/minecraft/class_10223 net/minecraft/recipe/TransmuteRecipe
-	FIELD field_54319 group Ljava/lang/String;
-	FIELD field_54320 category Lnet/minecraft/class_7710;
 	FIELD field_54321 input Lnet/minecraft/class_1856;
 	FIELD field_54322 material Lnet/minecraft/class_1856;
 	FIELD field_54323 result Lnet/minecraft/class_1_107;
-	FIELD field_54324 ingredientPlacement Lnet/minecraft/class_9887;
-	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_7710;Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_1_107;)V
-		ARG 1 group
-		ARG 2 category
-		ARG 3 input
+	METHOD <init> (Lnet/minecraft/class_1860$class_1_145;Lnet/minecraft/class_3955$class_1_155;Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_2096$class_2100;Lnet/minecraft/class_1_107;Z)V
 		ARG 4 material
-		ARG 5 result
-	METHOD method_1_1029 transmute (Lnet/minecraft/class_1_107;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1799;
-		ARG 0 output
-		ARG 1 input
-	METHOD method_1_1030 isNoOpCraft (Lnet/minecraft/class_1_107;Lnet/minecraft/class_1799;)Z
-		ARG 0 output
-		ARG 1 input
-	CLASS class_10224 Serializer
-		FIELD field_54325 PACKET_CODEC Lnet/minecraft/class_9139;
-		FIELD field_54326 CODEC Lcom/mojang/serialization/MapCodec;
-		METHOD method_64299 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 0 instance
-		METHOD method_64300 (Lnet/minecraft/class_10223;)Lnet/minecraft/class_1_107;
-			ARG 0 recipe
-		METHOD method_64301 (Lnet/minecraft/class_10223;)Lnet/minecraft/class_1856;
-			ARG 0 recipe
-		METHOD method_64302 (Lnet/minecraft/class_10223;)Lnet/minecraft/class_1856;
-			ARG 0 recipe
-		METHOD method_64303 (Lnet/minecraft/class_10223;)Lnet/minecraft/class_7710;
-			ARG 0 recipe
-		METHOD method_64304 (Lnet/minecraft/class_10223;)Ljava/lang/String;
-			ARG 0 recipe
-		METHOD method_64305 (Lnet/minecraft/class_10223;)Lnet/minecraft/class_1_107;
-			ARG 0 recipe
-		METHOD method_64306 (Lnet/minecraft/class_10223;)Lnet/minecraft/class_1856;
-			ARG 0 recipe
-		METHOD method_64307 (Lnet/minecraft/class_10223;)Lnet/minecraft/class_1856;
-			ARG 0 recipe
-		METHOD method_64308 (Lnet/minecraft/class_10223;)Lnet/minecraft/class_7710;
-			ARG 0 recipe
-		METHOD method_64309 (Lnet/minecraft/class_10223;)Ljava/lang/String;
-			ARG 0 recipe
+		ARG 6 result

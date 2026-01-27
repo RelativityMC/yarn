@@ -5,7 +5,7 @@ CLASS net/minecraft/class_1_129 net/minecraft/client/gui/screen/option/EditGameR
 	FIELD field_1_1064 loadingWidget Lnet/minecraft/class_8661;
 	FIELD field_1_1065 downloadedGameRules Z
 	FIELD field_1_1066 knownRules Ljava/util/List;
-	METHOD <init> (Lnet/minecraft/class_634;Ljava/util/function/Consumer;)V
+	METHOD <init> (Lnet/minecraft/class_634;Ljava/util/function/Consumer;Lnet/minecraft/class_437;)V
 		ARG 1 clientPlayNetworkHandler
 		ARG 2 ruleSaveConsumer
 	METHOD method_1_1130 addPacketEntry (Lnet/minecraft/class_12279;Ljava/lang/Object;Ljava/util/List;)V

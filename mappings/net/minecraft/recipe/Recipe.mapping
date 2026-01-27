@@ -50,7 +50,7 @@ CLASS net/minecraft/class_1860 net/minecraft/recipe/Recipe
 		COMMENT is ignored by the recipe book, it will be never displayed. In addition,
 		COMMENT it won't be restricted by the {@link net.minecraft.world.GameRules#DO_LIMITED_CRAFTING
 		COMMENT doLimitedCrafting} game rule.
-	METHOD method_8119 getSerializer ()Lnet/minecraft/class_1865;
+	METHOD method_8119 getSerializer ()Lnet/minecraft/class_1_157;
 		COMMENT {@return the serializer associated with this recipe}
 	METHOD method_17716 getType ()Lnet/minecraft/class_3956;
 		COMMENT {@return the type of this recipe}

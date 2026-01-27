@@ -81,10 +81,9 @@ CLASS net/minecraft/class_1887 net/minecraft/enchantment/Enchantment
 		ARG 1 level
 		ARG 2 entity
 		ARG 3 enchantmentActive
-	METHOD method_60017 createEnchantedItemLootContext (Lnet/minecraft/class_3218;ILnet/minecraft/class_1799;)Lnet/minecraft/class_47;
+	METHOD method_60017 createEnchantedItemLootContext (Lnet/minecraft/class_3218;ILnet/minecraft/class_1_96;)Lnet/minecraft/class_47;
 		ARG 0 world
 		ARG 1 level
-		ARG 2 stack
 	METHOD method_60018 modifyDamageProtection (Lnet/minecraft/class_3218;ILnet/minecraft/class_1799;Lnet/minecraft/class_1297;Lnet/minecraft/class_1282;Lorg/apache/commons/lang3/mutable/MutableFloat;)V
 		ARG 1 world
 		ARG 2 level
@@ -161,11 +160,10 @@ CLASS net/minecraft/class_1887 net/minecraft/enchantment/Enchantment
 		ARG 4 stack
 		ARG 5 user
 		ARG 6 value
-	METHOD method_60037 modifyValue (Lnet/minecraft/class_9331;Lnet/minecraft/class_3218;ILnet/minecraft/class_1799;Lorg/apache/commons/lang3/mutable/MutableFloat;)V
+	METHOD method_60037 modifyValue (Lnet/minecraft/class_9331;Lnet/minecraft/class_3218;ILnet/minecraft/class_1_96;Lorg/apache/commons/lang3/mutable/MutableFloat;)V
 		ARG 1 type
 		ARG 2 world
 		ARG 3 level
-		ARG 4 stack
 		ARG 5 value
 	METHOD method_60040 createEnchantedDamageLootContext (Lnet/minecraft/class_3218;ILnet/minecraft/class_1297;Lnet/minecraft/class_1282;)Lnet/minecraft/class_47;
 		ARG 0 world

@@ -2,21 +2,14 @@ CLASS net/minecraft/class_1_125 net/minecraft/client/gui/screen/option/WorldOpti
 	FIELD field_1_1048 EDIT_GAME_RULE_DISABLED_TOOLTIP Lnet/minecraft/class_7919;
 	FIELD field_1_1049 EDIT_GAME_RULE_BUTTON Lnet/minecraft/class_2561;
 	FIELD field_1_1050 WORLD_OPTIONS_TITLE Lnet/minecraft/class_2561;
-	FIELD field_1_1051 difficultyButton Lnet/minecraft/class_5676;
 	FIELD field_1_1052 parent Lnet/minecraft/class_437;
 	FIELD field_1_1053 layoutWidget Lnet/minecraft/class_8132;
-	FIELD field_1_1054 lockButton Lnet/minecraft/class_347;
 	METHOD <init> (Lnet/minecraft/class_437;)V
 		ARG 1 parent
-	METHOD method_1_1102 createDifficultyButton ()Lnet/minecraft/class_8021;
 	METHOD method_1_1103 createGameRulesButton ()Lnet/minecraft/class_4185;
-	METHOD method_1_1105 (Lnet/minecraft/class_4185;)V
-		ARG 1 button
 	METHOD method_1_1106 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
 	METHOD method_1_1108 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
 	METHOD method_1_1109 (Lnet/minecraft/class_1_125;Lnet/minecraft/class_339;)V
 		ARG 1 child
-	METHOD method_1_1110 onDifficultyLock (Z)V
-		ARG 1 confirmed

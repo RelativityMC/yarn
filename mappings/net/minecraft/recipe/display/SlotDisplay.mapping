@@ -53,8 +53,6 @@ CLASS net/minecraft/class_10302 net/minecraft/recipe/display/SlotDisplay
 		FIELD field_54695 SERIALIZER Lnet/minecraft/class_10302$class_10312;
 		METHOD method_65002 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance
-		METHOD method_65003 (Lnet/minecraft/class_1799;)Z
-			ARG 0 stack
 	CLASS class_10311 TagSlotDisplay
 		FIELD field_54696 CODEC Lcom/mojang/serialization/MapCodec;
 		FIELD field_54697 PACKET_CODEC Lnet/minecraft/class_9139;

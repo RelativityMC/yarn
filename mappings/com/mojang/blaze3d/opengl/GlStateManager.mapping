@@ -30,6 +30,14 @@ CLASS com/mojang/blaze3d/opengl/GlStateManager
 	METHOD _pixelStore (II)V
 		ARG 0 pname
 		ARG 1 param
+	METHOD _readPixels (IIIIIIJ)V
+		ARG 0 x
+		ARG 1 y
+		ARG 2 width
+		ARG 3 height
+		ARG 4 format
+		ARG 5 type
+		ARG 6 data
 	METHOD _texImage2D (IIIIIIIILjava/nio/ByteBuffer;)V
 		ARG 2 internalFormat
 	METHOD _texParameter (III)V

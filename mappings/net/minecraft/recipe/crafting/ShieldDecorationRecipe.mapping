@@ -1,0 +1,24 @@
+CLASS net/minecraft/class_1_178 net/minecraft/recipe/crafting/ShieldDecorationRecipe
+	FIELD field_1_1339 SERIALIZER Lnet/minecraft/class_1_157;
+	FIELD field_1_1340 PACKET_CODEC Lnet/minecraft/class_9139;
+	FIELD field_1_1341 banner Lnet/minecraft/class_1856;
+	FIELD field_1_1342 result Lnet/minecraft/class_1_107;
+	FIELD field_1_1343 target Lnet/minecraft/class_1856;
+	METHOD <init> (Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_1_107;)V
+		ARG 1 banner
+		ARG 2 target
+		ARG 3 result
+	METHOD method_1_1597 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_1598 (Lnet/minecraft/class_1_178;)Lnet/minecraft/class_1856;
+		ARG 0 reipe
+	METHOD method_1_1599 (Lnet/minecraft/class_1_178;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1600 (Lnet/minecraft/class_1_178;)Lnet/minecraft/class_1_107;
+		ARG 0 recipe
+	METHOD method_1_1601 (Lnet/minecraft/class_1_178;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1602 (Lnet/minecraft/class_1_178;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1603 (Lnet/minecraft/class_1_178;)Lnet/minecraft/class_1_107;
+		ARG 0 recipe

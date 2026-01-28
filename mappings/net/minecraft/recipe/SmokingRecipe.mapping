@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_3862 net/minecraft/recipe/SmokingRecipe
+	FIELD field_1_1190 SERIALIZER Lnet/minecraft/class_1_157;

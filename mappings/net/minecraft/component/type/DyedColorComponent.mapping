@@ -2,6 +2,9 @@ CLASS net/minecraft/class_9282 net/minecraft/component/type/DyedColorComponent
 	FIELD field_49312 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_49313 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_49314 DEFAULT_COLOR I
+	METHOD method_1_1402 calculateDyedColor (Lnet/minecraft/class_9282;Ljava/util/List;)Lnet/minecraft/class_9282;
+		ARG 0 component
+		ARG 1 dyes
 	METHOD method_57470 getColor (Lnet/minecraft/class_1799;I)I
 		ARG 0 stack
 		ARG 1 defaultColor

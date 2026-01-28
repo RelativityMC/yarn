@@ -1,11 +1,14 @@
 CLASS net/minecraft/class_3972 net/minecraft/recipe/SingleStackRecipe
 	COMMENT A recipe that has only one input ingredient. It can be used by any type
 	COMMENT of recipe as long as its subclass implements the proper interface.
+	FIELD field_1_1243 settings Lnet/minecraft/class_1860$class_1_145;
 	FIELD field_17642 ingredient Lnet/minecraft/class_1856;
 	FIELD field_17643 result Lnet/minecraft/class_1_107;
 	FIELD field_52604 ingredientPlacement Lnet/minecraft/class_9887;
 	METHOD <init> (Lnet/minecraft/class_1860$class_1_145;Lnet/minecraft/class_1856;Lnet/minecraft/class_1_107;)V
+		ARG 1 settings
 		ARG 2 ingredient
+		ARG 3 result
 	METHOD method_64720 ingredient ()Lnet/minecraft/class_1856;
 	METHOD method_64721 result ()Lnet/minecraft/class_1_107;
 	CLASS class_3974 RecipeFactory

@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_8062 net/minecraft/recipe/SmithingTrimRecipe
+	FIELD field_1_1288 SERIALIZER Lnet/minecraft/class_1_157;
 	FIELD field_42035 template Lnet/minecraft/class_1856;
 	FIELD field_42036 base Lnet/minecraft/class_1856;
 	FIELD field_42037 addition Lnet/minecraft/class_1856;

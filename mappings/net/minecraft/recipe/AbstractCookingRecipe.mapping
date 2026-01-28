@@ -1,16 +1,40 @@
 CLASS net/minecraft/class_1874 net/minecraft/recipe/AbstractCookingRecipe
+	FIELD field_1_1321 location Lnet/minecraft/class_1874$class_1_174;
 	FIELD field_9057 experience F
 	FIELD field_9058 cookingTime I
 	METHOD <init> (Lnet/minecraft/class_1860$class_1_145;Lnet/minecraft/class_1874$class_1_174;Lnet/minecraft/class_1856;Lnet/minecraft/class_1_107;FI)V
+		ARG 1 settings
+		ARG 2 location
 		ARG 3 ingredient
+		ARG 4 result
 		ARG 5 experience
 		ARG 6 cookingTime
+	METHOD method_1_1574 createCodec (Lnet/minecraft/class_1874$class_3958;I)Lcom/mojang/serialization/MapCodec;
+		ARG 0 factory
+		ARG 1 defaultCookingTime
+	METHOD method_1_1575 createPacketCodec (Lnet/minecraft/class_1874$class_3958;)Lnet/minecraft/class_9139;
+		ARG 0 factory
+	METHOD method_1_1576 (ILnet/minecraft/class_1874$class_3958;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 2 instance
+	METHOD method_1_1577 (Lnet/minecraft/class_1874;)Lnet/minecraft/class_1860$class_1_145;
+		ARG 0 recipe
+	METHOD method_1_1578 (Lnet/minecraft/class_1874;)Lnet/minecraft/class_1874$class_1_174;
+		ARG 0 recipe
+	METHOD method_1_1579 (Lnet/minecraft/class_1874;)Lnet/minecraft/class_1860$class_1_145;
+		ARG 0 recipe
+	METHOD method_1_1580 (Lnet/minecraft/class_1874;)Lnet/minecraft/class_1874$class_1_174;
+		ARG 0 recipe
 	METHOD method_8167 getCookingTime ()I
 	METHOD method_8171 getExperience ()F
 	METHOD method_45438 getCategory ()Lnet/minecraft/class_7709;
 	METHOD method_64663 getCookerItem ()Lnet/minecraft/class_1792;
+	CLASS class_1_174 RecipeBookLocation
+		FIELD field_1_1323 PACKET_CODEC Lnet/minecraft/class_9139;
 	CLASS class_3958 RecipeFactory
 		METHOD method_1_271 create (Lnet/minecraft/class_1860$class_1_145;Lnet/minecraft/class_1874$class_1_174;Lnet/minecraft/class_1856;Lnet/minecraft/class_1_107;FI)Lnet/minecraft/class_1874;
+			ARG 1 settings
+			ARG 2 location
 			ARG 3 ingredient
+			ARG 4 result
 			ARG 5 experience
 			ARG 6 cookingTime

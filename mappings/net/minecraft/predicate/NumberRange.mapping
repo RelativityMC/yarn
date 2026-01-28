@@ -1,6 +1,10 @@
 CLASS net/minecraft/class_2096 net/minecraft/predicate/NumberRange
 	FIELD field_9700 EXCEPTION_EMPTY Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_9701 EXCEPTION_SWAPPED Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
+	METHOD method_1_1403 (Lcom/google/common/collect/Range;Lnet/minecraft/class_2096;)Lcom/mojang/serialization/DataResult;
+		ARG 1 self
+	METHOD method_1_1405 validateWithin (Lnet/minecraft/class_2096;)Ljava/util/function/Function;
+		ARG 0 other
 	METHOD method_9041 isDummy ()Z
 	METHOD method_74106 getMin ()Ljava/util/Optional;
 	METHOD method_74107 getMax ()Ljava/util/Optional;
@@ -49,6 +53,7 @@ CLASS net/minecraft/class_2096 net/minecraft/predicate/NumberRange
 		METHOD method_53197 (Ljava/lang/Integer;)Ljava/lang/Long;
 			ARG 0 i
 	CLASS class_11893 Bounds
+		METHOD method_1_1406 toGuava ()Lcom/google/common/collect/Range;
 		METHOD method_74108 isAny ()Z
 		METHOD method_74109 createPacketCodec (Lnet/minecraft/class_9139;)Lnet/minecraft/class_9139;
 			ARG 0 valuePacketCodec
@@ -60,6 +65,8 @@ CLASS net/minecraft/class_2096 net/minecraft/predicate/NumberRange
 			ARG 2 exceptionSupplier
 		METHOD method_74113 createCodec (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
 			ARG 0 valueCodec
+		METHOD method_74114 (Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 1 instance
 		METHOD method_74115 (Lnet/minecraft/class_2096$class_11893;)Lcom/mojang/datafixers/util/Either;
 			ARG 0 bounds
 		METHOD method_74116 exactly (Ljava/lang/Number;)Lnet/minecraft/class_2096$class_11893;

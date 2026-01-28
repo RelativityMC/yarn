@@ -1,0 +1,35 @@
+CLASS net/minecraft/class_1_158 net/minecraft/recipe/crafting/BookCloningRecipe
+	FIELD field_1_1247 ALLOWED_GENERATIONS Lnet/minecraft/class_2096$class_2100;
+	FIELD field_1_1248 ALLOWED_GENERATIONS_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_1249 DEFAULT_ALLOWED_GENERATIONS Lnet/minecraft/class_2096$class_2100;
+	FIELD field_1_1251 SERIALIZER Lnet/minecraft/class_1_157;
+	FIELD field_1_1252 PACKET_CODEC Lnet/minecraft/class_9139;
+	FIELD field_1_1253 allowedGenerations Lnet/minecraft/class_2096$class_2100;
+	FIELD field_1_1254 material Lnet/minecraft/class_1856;
+	FIELD field_1_1255 result Lnet/minecraft/class_1_107;
+	FIELD field_1_1256 source Lnet/minecraft/class_1856;
+	METHOD <init> (Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_2096$class_2100;Lnet/minecraft/class_1_107;)V
+		ARG 1 source
+		ARG 2 material
+		ARG 3 allowedGenerations
+		ARG 4 result
+	METHOD method_1_1456 isGenerationAllowed (Lnet/minecraft/class_9302;)Z
+		ARG 1 component
+	METHOD method_1_1457 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_1458 (Lnet/minecraft/class_1_158;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1459 (Lnet/minecraft/class_1_158;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1460 (Lnet/minecraft/class_1_158;)Lnet/minecraft/class_2096$class_2100;
+		ARG 0 recipe
+	METHOD method_1_1461 (Lnet/minecraft/class_1_158;)Lnet/minecraft/class_1_107;
+		ARG 0 recipe
+	METHOD method_1_1462 (Lnet/minecraft/class_1_158;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1463 (Lnet/minecraft/class_1_158;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1464 (Lnet/minecraft/class_1_158;)Lnet/minecraft/class_2096$class_2100;
+		ARG 0 recipe
+	METHOD method_1_1465 (Lnet/minecraft/class_1_158;)Lnet/minecraft/class_1_107;
+		ARG 0 recipe

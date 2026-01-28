@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_3975 net/minecraft/recipe/StonecuttingRecipe
+	FIELD field_1_1258 SERIALIZER Lnet/minecraft/class_1_157;
 	METHOD <init> (Lnet/minecraft/class_1860$class_1_145;Lnet/minecraft/class_1856;Lnet/minecraft/class_1_107;)V
 		ARG 2 ingredient
 	METHOD method_64725 createResultDisplay ()Lnet/minecraft/class_10302;

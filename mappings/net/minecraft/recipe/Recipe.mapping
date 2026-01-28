@@ -65,3 +65,21 @@ CLASS net/minecraft/class_1860 net/minecraft/recipe/Recipe
 		COMMENT <p>Recipe displays are sent to the client and displayed in the recipe book.
 		COMMENT One recipe can have multiple displays.
 	METHOD method_64668 getRecipeBookCategory ()Lnet/minecraft/class_10355;
+	CLASS class_1_143 RecipeBookLocation
+		COMMENT Settings common to recipes that are shown in the recipe book.
+		METHOD method_1_1259 category ()Ljava/lang/Object;
+		METHOD method_1_1260 (Lcom/mojang/serialization/Codec;Ljava/lang/Object;Lnet/minecraft/class_1860$class_1_143$class_1_144;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 3 instance
+		METHOD method_1_1261 codec (Lcom/mojang/serialization/Codec;Ljava/lang/Object;Lnet/minecraft/class_1860$class_1_143$class_1_144;)Lcom/mojang/serialization/MapCodec;
+			ARG 0 categoryCodec
+			ARG 1 defaultCategory
+			ARG 2 factory
+		METHOD method_1_1262 packetCodec (Lnet/minecraft/class_9139;Lnet/minecraft/class_1860$class_1_143$class_1_144;)Lnet/minecraft/class_9139;
+			ARG 0 categoryCodec
+			ARG 1 factory
+		CLASS class_1_144 Factory
+	CLASS class_1_145 Settings
+		COMMENT Settings common to all recipes.
+		FIELD field_1_1155 PACKET_CODEC Lnet/minecraft/class_9139;
+		METHOD method_1_1263 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance

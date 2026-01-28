@@ -1,10 +1,16 @@
 CLASS net/minecraft/class_2447 net/minecraft/data/recipe/ShapedRecipeJsonBuilder
+	FIELD field_1_1017 output Lnet/minecraft/class_1_107;
+	FIELD field_1_1176 advancementBuilder Lnet/minecraft/class_1_180;
 	FIELD field_11376 inputs Ljava/util/Map;
 	FIELD field_11377 pattern Ljava/util/List;
 	FIELD field_11381 group Ljava/lang/String;
 	FIELD field_40645 category Lnet/minecraft/class_7800;
 	FIELD field_42956 showNotification Z
 	FIELD field_53731 registryLookup Lnet/minecraft/class_7871;
+	METHOD <init> (Lnet/minecraft/class_7871;Lnet/minecraft/class_7800;Lnet/minecraft/class_1_107;)V
+		ARG 1 registryLookup
+		ARG 2 category
+		ARG 3 output
 	METHOD <init> (Lnet/minecraft/class_7871;Lnet/minecraft/class_7800;Lnet/minecraft/class_1935;I)V
 		ARG 1 registryLookup
 		ARG 2 category

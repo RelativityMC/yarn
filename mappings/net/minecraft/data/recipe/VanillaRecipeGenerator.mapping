@@ -7,6 +7,16 @@ CLASS net/minecraft/class_7803 net/minecraft/data/recipe/VanillaRecipeGenerator
 	FIELD field_40657 LAPIS_ORES Lcom/google/common/collect/ImmutableList;
 	FIELD field_40658 REDSTONE_ORES Lcom/google/common/collect/ImmutableList;
 	FIELD field_40659 EMERALD_ORES Lcom/google/common/collect/ImmutableList;
+	METHOD <init> (Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_8790;)V
+		ARG 1 registries
+		ARG 2 exporter
+	METHOD method_1_1550 offerBundleDyeingRecipes ()V
+	METHOD method_1_1551 (Lnet/minecraft/class_1860$class_1_145;Lnet/minecraft/class_3955$class_1_155;)Lnet/minecraft/class_1860;
+		ARG 0 settings
+		ARG 1 location
+	METHOD method_1_1559 offerShulkerBoxDyeingRecipes ()V
+	METHOD method_51693 (Lcom/mojang/datafixers/util/Pair;)Lnet/minecraft/class_7803$class_8905;
+		ARG 0 pair
 	METHOD method_51694 streamSmithingTemplates ()Ljava/util/stream/Stream;
 	METHOD method_51695 (Lnet/minecraft/class_7803$class_8905;)V
 		ARG 1 template

@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_2446 net/minecraft/data/recipe/RecipeGenerator
+	FIELD field_1_1156 STONECUTTING_VARIANT_FACTORIES Ljava/util/Map;
 	FIELD field_28555 VARIANT_FACTORIES Ljava/util/Map;
 	FIELD field_48981 registries Lnet/minecraft/class_7225$class_7874;
 	FIELD field_53721 exporter Lnet/minecraft/class_8790;
@@ -38,6 +39,59 @@ CLASS net/minecraft/class_2446 net/minecraft/data/recipe/RecipeGenerator
 		ARG 1 category
 		ARG 2 output
 		ARG 3 input
+	METHOD method_1_1264 requireBreedingAnimals ()Lnet/minecraft/class_175;
+	METHOD method_1_1265 offerBundleDyeingRecipe (Lnet/minecraft/class_1792;Lnet/minecraft/class_1792;)V
+		ARG 1 dye
+		ARG 2 result
+	METHOD method_1_1266 offerArmorDyeingRecipe (Lnet/minecraft/class_1792;Ljava/lang/String;)V
+		ARG 1 armor
+		ARG 2 group
+	METHOD method_1_1267 offerShulkerBoxDyeingRecipe (Lnet/minecraft/class_1792;Lnet/minecraft/class_1792;)V
+		ARG 1 dye
+		ARG 2 result
+	METHOD method_1_1268 generateFamilyCraftingRecipes (Lnet/minecraft/class_5794;Lnet/minecraft/class_5794$class_5796;Lnet/minecraft/class_2248;Lnet/minecraft/class_1935;)V
+		ARG 1 family
+		ARG 2 variant
+		ARG 3 block
+		ARG 4 input
+	METHOD method_1_1269 generateFamilyStonecuttingRecipes (Lnet/minecraft/class_5794;Lnet/minecraft/class_5794$class_5796;Lnet/minecraft/class_2248;)V
+		ARG 1 family
+		ARG 2 variant
+		ARG 3 baseBlock
+	METHOD method_1_1271 (Lnet/minecraft/class_1792;Lnet/minecraft/class_1860$class_1_145;Lnet/minecraft/class_3955$class_1_155;)Lnet/minecraft/class_1860;
+		ARG 2 settings
+		ARG 3 location
+	METHOD method_1_1272 (Lnet/minecraft/class_5794;Lnet/minecraft/class_2248;Lnet/minecraft/class_5794$class_5796;Lnet/minecraft/class_2248;)V
+		ARG 3 variant
+		ARG 4 block
+	METHOD method_1_1273 (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)V
+		ARG 0 generator
+		ARG 1 output
+		ARG 2 input
+	METHOD method_1_1274 (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)V
+		ARG 0 generator
+		ARG 1 output
+		ARG 2 input
+	METHOD method_1_1275 (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)V
+		ARG 0 generator
+		ARG 1 output
+		ARG 2 input
+	METHOD method_1_1276 (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)V
+		ARG 0 generator
+		ARG 1 output
+		ARG 2 input
+	METHOD method_1_1277 (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)V
+		ARG 0 generator
+		ARG 1 output
+		ARG 2 input
+	METHOD method_1_1278 (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)V
+		ARG 0 generator
+		ARG 1 output
+		ARG 2 input
+	METHOD method_1_1279 (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)V
+		ARG 0 generator
+		ARG 1 output
+		ARG 2 input
 	METHOD method_10419 generate ()V
 	METHOD method_10420 conditionsFromTag (Lnet/minecraft/class_6862;)Lnet/minecraft/class_175;
 		ARG 1 tag
@@ -340,6 +394,7 @@ CLASS net/minecraft/class_2446 net/minecraft/data/recipe/RecipeGenerator
 		ARG 5 category
 	METHOD method_62745 createShapeless (Lnet/minecraft/class_7800;Lnet/minecraft/class_1_107;)Lnet/minecraft/class_2450;
 		ARG 1 category
+		ARG 2 output
 	METHOD method_62746 createShaped (Lnet/minecraft/class_7800;Lnet/minecraft/class_1935;)Lnet/minecraft/class_2447;
 		ARG 1 category
 		ARG 2 output
@@ -423,6 +478,11 @@ CLASS net/minecraft/class_2446 net/minecraft/data/recipe/RecipeGenerator
 	METHOD method_76679 offerWaxedChiseledCopperRecipe (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
 		ARG 1 output
 		ARG 2 input
+	CLASS class_1_146 StonecuttingBlockFamilyRecipeFactory
+		METHOD method_1_1280 create (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)V
+			ARG 1 generator
+			ARG 2 output
+			ARG 3 input
 	CLASS class_10113 BlockFamilyRecipeFactory
 		METHOD method_1_80 create (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)Lnet/minecraft/class_5797;
 			ARG 1 generator

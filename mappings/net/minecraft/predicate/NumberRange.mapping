@@ -90,7 +90,7 @@ CLASS net/minecraft/class_2096 net/minecraft/predicate/NumberRange
 			ARG 0 value
 		METHOD method_74126 getPoint ()Ljava/util/Optional;
 		METHOD method_74127 any ()Lnet/minecraft/class_2096$class_11893;
-		CLASS 1
+		CLASS 1 1
 			FIELD field_56289 MAX_PRESENT_FLAG I
 			FIELD field_56292 MIN_PRESENT_FLAG I
 			METHOD method_67183 (Lnet/minecraft/class_9139;Lio/netty/buffer/ByteBuf;Ljava/lang/Number;)V

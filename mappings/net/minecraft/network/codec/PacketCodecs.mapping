@@ -326,45 +326,45 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 		ARG 0 sizeTrackerSupplier
 	METHOD method_72187 lengthPrependedRegistry (I)Lnet/minecraft/class_9139$class_9140;
 		ARG 0 maxSize
-	CLASS 3
-	CLASS 4
-	CLASS 5
-	CLASS 9
-	CLASS 10
-	CLASS 17
+	CLASS 3 3
+	CLASS 4 4
+	CLASS 5 5
+	CLASS 9 9
+	CLASS 10 10
+	CLASS 17 17
 		METHOD method_71604 (Ljava/lang/Object;Ljava/lang/String;)Lio/netty/handler/codec/EncoderException;
 			ARG 1 error
 		METHOD method_71605 (Ljava/lang/Object;Ljava/lang/String;)Lio/netty/handler/codec/DecoderException;
 			ARG 1 error
-	CLASS 18
+	CLASS 18 18
 		METHOD method_71606 (Ljava/lang/Object;Ljava/lang/String;)Lio/netty/handler/codec/EncoderException;
 			ARG 1 error
 		METHOD method_71607 (Lnet/minecraft/class_2520;Ljava/lang/String;)Lio/netty/handler/codec/DecoderException;
 			ARG 1 error
-	CLASS 19
-	CLASS 22
-	CLASS 24
-	CLASS 25
+	CLASS 19 19
+	CLASS 22 22
+	CLASS 24 24
+	CLASS 25 25
 		METHOD method_72190 (Lnet/minecraft/class_9139;Lio/netty/buffer/ByteBuf;Lnet/minecraft/class_9139;Ljava/lang/Object;Ljava/lang/Object;)V
 			ARG 3 k
 			ARG 4 v
-	CLASS 26
+	CLASS 26 26
 		METHOD method_71582 (Lio/netty/buffer/ByteBuf;Lnet/minecraft/class_9139;Ljava/lang/Object;)V
 			ARG 2 right
 		METHOD method_71583 (Lio/netty/buffer/ByteBuf;Lnet/minecraft/class_9139;Ljava/lang/Object;)V
 			ARG 2 left
-	CLASS 28
-	CLASS 29
+	CLASS 28 28
+	CLASS 29 29
 		METHOD method_71590 getRegistryContents (Lnet/minecraft/class_9129;)Lnet/minecraft/class_2359;
 			ARG 1 buf
-	CLASS 30
+	CLASS 30 30
 		FIELD field_61045 DIRECT_ID I
 		METHOD method_72191 getRegistryContents (Lnet/minecraft/class_9129;)Lnet/minecraft/class_2359;
 			ARG 1 buf
-	CLASS 31
+	CLASS 31 31
 		FIELD field_61046 TAG I
 		FIELD field_61047 ELEMENT_CODEC Lnet/minecraft/class_9139;
-	CLASS 32
+	CLASS 32 32
 		METHOD method_71596 (Lio/netty/buffer/ByteBuf;Ljava/lang/String;)V
 			ARG 0 buf
 			ARG 1 signature

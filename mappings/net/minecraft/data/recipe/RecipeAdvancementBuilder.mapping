@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_180 net/minecraft/data/recipe/RecipeAdvancementBuilder
+	FIELD field_1_1346 criteriaByName Ljava/util/Map;
+	METHOD method_1_1606 createAdvancementEntry (Lnet/minecraft/class_8790;Lnet/minecraft/class_5321;Lnet/minecraft/class_7800;)Lnet/minecraft/class_8779;
+		ARG 1 exporter
+		ARG 2 key
+		ARG 3 category
+	METHOD method_1_1607 addCriterion (Ljava/lang/String;Lnet/minecraft/class_175;)V
+		ARG 1 name
+		ARG 2 criterion

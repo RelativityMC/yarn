@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_5793 net/minecraft/data/family/BlockFamilies
+	FIELD field_1_1139 END_STONE Lnet/minecraft/class_5794;
 	FIELD field_28480 POLISHED_DIORITE Lnet/minecraft/class_5794;
 	FIELD field_28481 GRANITE Lnet/minecraft/class_5794;
 	FIELD field_28482 POLISHED_GRANITE Lnet/minecraft/class_5794;
@@ -73,6 +74,8 @@ CLASS net/minecraft/class_5793 net/minecraft/data/family/BlockFamilies
 	FIELD field_47133 TUFF_BRICK Lnet/minecraft/class_5794;
 	FIELD field_54877 PALE_OAK Lnet/minecraft/class_5794;
 	FIELD field_55170 RESIN_BRICK Lnet/minecraft/class_5794;
+	METHOD method_1_1233 getFamily (Lnet/minecraft/class_2248;)Lnet/minecraft/class_5794;
+		ARG 0 block
 	METHOD method_33467 getFamilies ()Ljava/util/stream/Stream;
 	METHOD method_33468 register (Lnet/minecraft/class_2248;)Lnet/minecraft/class_5794$class_5795;
 		ARG 0 baseBlock

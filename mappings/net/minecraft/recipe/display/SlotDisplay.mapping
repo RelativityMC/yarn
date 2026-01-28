@@ -1,6 +1,25 @@
 CLASS net/minecraft/class_10302 net/minecraft/recipe/display/SlotDisplay
 	FIELD field_54671 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_54672 PACKET_CODEC Lnet/minecraft/class_9139;
+	METHOD method_1_1527 getSampleDyeingCombinations (Lnet/minecraft/class_10352;Lnet/minecraft/class_10358;Lnet/minecraft/class_10302;Lnet/minecraft/class_10302;Ljava/util/function/BinaryOperator;)Ljava/util/stream/Stream;
+		ARG 0 context
+		ARG 1 displayedItemFactory
+		ARG 2 target
+		ARG 3 dye
+		ARG 4 combiner
+	METHOD method_1_1528 getSampleSmithingCombinations (Lnet/minecraft/class_10352;Lnet/minecraft/class_10358;Lnet/minecraft/class_10302;Lnet/minecraft/class_10302;Lnet/minecraft/class_5819;Ljava/util/function/BinaryOperator;)Ljava/util/stream/Stream;
+		ARG 0 context
+		ARG 1 displayedItemFactory
+		ARG 2 base
+		ARG 3 material
+		ARG 4 random
+		ARG 5 combiner
+	METHOD method_1_1530 (Lnet/minecraft/class_1799;)Z
+		ARG 0 result
+	METHOD method_1_1531 (Ljava/util/List;Ljava/util/List;Ljava/util/function/BinaryOperator;I)Lnet/minecraft/class_1799;
+		ARG 3 index
+	METHOD method_1_1532 (Lnet/minecraft/class_1799;)Z
+		ARG 0 result
 	METHOD method_64736 serializer ()Lnet/minecraft/class_10302$class_10312;
 	METHOD method_64737 isEnabled (Lnet/minecraft/class_7699;)Z
 		ARG 1 features
@@ -11,6 +30,30 @@ CLASS net/minecraft/class_10302 net/minecraft/recipe/display/SlotDisplay
 		ARG 2 factory
 	METHOD method_64742 getFirst (Lnet/minecraft/class_10352;)Lnet/minecraft/class_1799;
 		ARG 1 context
+	CLASS class_1_165 DyedSlotDisplay
+		FIELD field_1_1294 PACKET_CODEC Lnet/minecraft/class_9139;
+		FIELD field_1_1295 SERIALIZER Lnet/minecraft/class_10302$class_10312;
+		METHOD method_1_1533 (Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1799;
+			ARG 0 target
+			ARG 1 dye
+		METHOD method_1_1534 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+	CLASS class_1_166 OnlyWithComponentSlotDisplay
+		FIELD field_1_1297 PACKET_CODEC Lnet/minecraft/class_9139;
+		FIELD field_1_1298 SERIALIZER Lnet/minecraft/class_10302$class_10312;
+		METHOD method_1_1536 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+	CLASS class_1_167 WithAnyPotionSlotDisplay
+		FIELD field_1_1300 PACKET_CODEC Lnet/minecraft/class_9139;
+		FIELD field_1_1301 SERIALIZER Lnet/minecraft/class_10302$class_10312;
+		METHOD method_1_1538 (Lnet/minecraft/class_7225$class_7874;)Ljava/util/Optional;
+			ARG 0 registries
+		METHOD method_1_1539 (Ljava/util/List;Lnet/minecraft/class_10358$class_10360;Lnet/minecraft/class_6880$class_6883;)Ljava/util/stream/Stream;
+			ARG 2 potionEntries
+		METHOD method_1_1540 (Lnet/minecraft/class_1844;Lnet/minecraft/class_10358$class_10360;Lnet/minecraft/class_1799;)Ljava/lang/Object;
+			ARG 2 item
+		METHOD method_1_1541 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
 	CLASS class_10303 AnyFuelSlotDisplay
 		FIELD field_54674 INSTANCE Lnet/minecraft/class_10302$class_10303;
 		FIELD field_54675 CODEC Lcom/mojang/serialization/MapCodec;
@@ -51,6 +94,9 @@ CLASS net/minecraft/class_10302 net/minecraft/recipe/display/SlotDisplay
 		FIELD field_54693 CODEC Lcom/mojang/serialization/MapCodec;
 		FIELD field_54694 PACKET_CODEC Lnet/minecraft/class_9139;
 		FIELD field_54695 SERIALIZER Lnet/minecraft/class_10302$class_10312;
+		METHOD method_1_1537 (Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1799;
+			ARG 1 base
+			ARG 2 material
 		METHOD method_65002 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance
 	CLASS class_10311 TagSlotDisplay

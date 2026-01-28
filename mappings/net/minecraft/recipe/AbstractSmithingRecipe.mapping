@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_173 net/minecraft/recipe/AbstractSmithingRecipe
+	FIELD field_1_1318 settings Lnet/minecraft/class_1860$class_1_145;
+	FIELD field_1_1319 ingredientPlacement Lnet/minecraft/class_9887;
+	METHOD <init> (Lnet/minecraft/class_1860$class_1_145;)V
+		ARG 1 settings
+	METHOD method_1_1572 createIngredientPlacement ()Lnet/minecraft/class_9887;

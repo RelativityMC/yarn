@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1_172 net/minecraft/recipe/crafting/GeneralCraftingRecipe
+	FIELD field_1_1315 location Lnet/minecraft/class_3955$class_1_155;
+	FIELD field_1_1316 settings Lnet/minecraft/class_1860$class_1_145;
+	FIELD field_1_1317 cachedIngredientPlacement Lnet/minecraft/class_9887;
+	METHOD <init> (Lnet/minecraft/class_1860$class_1_145;Lnet/minecraft/class_3955$class_1_155;)V
+		ARG 1 settings
+		ARG 2 location
+	METHOD method_1_1571 createIngredientPlacement ()Lnet/minecraft/class_9887;

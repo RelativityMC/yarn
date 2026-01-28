@@ -1,0 +1,44 @@
+CLASS net/minecraft/class_1_163 net/minecraft/recipe/crafting/FireworkStarCraftingRecipe
+	FIELD field_1_1272 SERIALIZER Lnet/minecraft/class_1_157;
+	FIELD field_1_1273 PACKET_CODEC Lnet/minecraft/class_9139;
+	FIELD field_1_1274 dye Lnet/minecraft/class_1856;
+	FIELD field_1_1275 fuel Lnet/minecraft/class_1856;
+	FIELD field_1_1276 result Lnet/minecraft/class_1_107;
+	FIELD field_1_1277 shapes Ljava/util/Map;
+	FIELD field_1_1278 trail Lnet/minecraft/class_1856;
+	FIELD field_1_1279 twinkle Lnet/minecraft/class_1856;
+	METHOD <init> (Ljava/util/Map;Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_1_107;)V
+		ARG 1 shapes
+		ARG 2 trail
+		ARG 3 twinkle
+		ARG 4 fuel
+		ARG 5 dye
+		ARG 6 result
+	METHOD method_1_1487 getShapeForItem (Lnet/minecraft/class_1799;)Lnet/minecraft/class_9283$class_1782;
+		ARG 1 stack
+	METHOD method_1_1488 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_1489 (Lnet/minecraft/class_1_163;)Ljava/util/Map;
+		ARG 0 recipe
+	METHOD method_1_1490 (Lnet/minecraft/class_1_163;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1491 (Lnet/minecraft/class_1_163;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1492 (Lnet/minecraft/class_1_163;)Lnet/minecraft/class_1_107;
+		ARG 0 recipe
+	METHOD method_1_1493 (Lnet/minecraft/class_1_163;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1494 (Lnet/minecraft/class_1_163;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1495 (Lnet/minecraft/class_1_163;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1496 (Lnet/minecraft/class_1_163;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1497 (Lnet/minecraft/class_1_163;)Lnet/minecraft/class_1_107;
+		ARG 0 recipe
+	METHOD method_1_1498 (Lnet/minecraft/class_1_163;)Ljava/util/Map;
+		ARG 0 recipe
+	METHOD method_1_1499 (Lnet/minecraft/class_1_163;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1500 (Lnet/minecraft/class_1_163;)Lnet/minecraft/class_1856;
+		ARG 0 recipe

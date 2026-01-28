@@ -1,0 +1,43 @@
+CLASS net/minecraft/class_1_149 com/mojang/blaze3d/systems/RenderPassBackend
+	METHOD method_1_1325 bindTexture (Ljava/lang/String;Lcom/mojang/blaze3d/textures/GpuTextureView;Lnet/minecraft/class_12137;)V
+		ARG 1 name
+		ARG 2 textureView
+		ARG 3 sampler
+	METHOD method_1_1326 disableScissor ()V
+	METHOD method_1_1327 draw (II)V
+		ARG 1 offset
+		ARG 2 count
+	METHOD method_1_1328 drawIndexed (IIII)V
+		ARG 1 baseVertex
+		ARG 2 firstIndex
+		ARG 3 count
+		ARG 4 instanceCount
+	METHOD method_1_1329 drawMultipleIndexed (Ljava/util/Collection;Lcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5595;Ljava/util/Collection;Ljava/lang/Object;)V
+		ARG 1 objects
+		ARG 2 buffer
+		ARG 3 indexType
+		ARG 4 validationSkippedUniforms
+		ARG 5 uniformArgument
+	METHOD method_1_1330 enableScissor (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+	METHOD method_1_1331 isClosed ()Z
+	METHOD method_1_1332 popDebugGroup ()V
+	METHOD method_1_1333 pushDebugGroup (Ljava/util/function/Supplier;)V
+		ARG 1 labelGetter
+	METHOD method_1_1334 setIndexBuffer (Lcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5595;)V
+		ARG 1 indexBuffer
+		ARG 2 indexType
+	METHOD method_1_1335 setPipeline (Lcom/mojang/blaze3d/pipeline/RenderPipeline;)V
+		ARG 1 pipeline
+	METHOD method_1_1336 setUniform (Ljava/lang/String;Lcom/mojang/blaze3d/buffers/GpuBuffer;)V
+		ARG 1 name
+		ARG 2 buffer
+	METHOD method_1_1337 setUniform (Ljava/lang/String;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
+		ARG 1 name
+		ARG 2 slice
+	METHOD method_1_1338 setVertexBuffer (ILcom/mojang/blaze3d/buffers/GpuBuffer;)V
+		ARG 1 index
+		ARG 2 buffer

@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_184 net/minecraft/datafixer/mapping/StonecutterRecipeMapping
+	FIELD field_1_1360 ADVANCEMENTS Lcom/google/common/collect/ImmutableMap;
+	FIELD field_1_1361 RECIPES Lcom/google/common/collect/ImmutableMap;

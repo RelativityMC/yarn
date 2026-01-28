@@ -1,0 +1,18 @@
+CLASS net/minecraft/class_1_175 net/minecraft/recipe/crafting/BannerDuplicationRecipe
+	FIELD field_1_1325 SERIALIZER Lnet/minecraft/class_1_157;
+	FIELD field_1_1326 PACKET_CODEC Lnet/minecraft/class_9139;
+	FIELD field_1_1327 banner Lnet/minecraft/class_1856;
+	FIELD field_1_1328 result Lnet/minecraft/class_1_107;
+	METHOD <init> (Lnet/minecraft/class_1856;Lnet/minecraft/class_1_107;)V
+		ARG 1 banner
+		ARG 2 result
+	METHOD method_1_1582 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_1583 (Lnet/minecraft/class_1_175;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1584 (Lnet/minecraft/class_1_175;)Lnet/minecraft/class_1_107;
+		ARG 0 recipe
+	METHOD method_1_1585 (Lnet/minecraft/class_1_175;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1586 (Lnet/minecraft/class_1_175;)Lnet/minecraft/class_1_107;
+		ARG 0 recipe

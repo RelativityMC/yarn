@@ -1,8 +1,0 @@
-CLASS net/minecraft/class_1869 net/minecraft/recipe/ShapedRecipe
-	FIELD field_9053 result Lnet/minecraft/class_1_107;
-	FIELD field_47320 raw Lnet/minecraft/class_8957;
-	METHOD method_8150 getWidth ()I
-	METHOD method_8158 getHeight ()I
-	METHOD method_61693 getIngredients ()Ljava/util/List;
-	METHOD method_64718 (Ljava/util/Optional;)Lnet/minecraft/class_10302;
-		ARG 0 ingredient

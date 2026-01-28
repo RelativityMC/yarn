@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_8076 net/minecraft/data/recipe/SmithingTrimRecipeJsonBuilder
+	FIELD field_1_1261 advancementBuilder Lnet/minecraft/class_1_180;
 	FIELD field_42097 category Lnet/minecraft/class_7800;
 	FIELD field_42098 template Lnet/minecraft/class_1856;
 	FIELD field_42099 base Lnet/minecraft/class_1856;

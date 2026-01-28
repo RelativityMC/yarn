@@ -1,0 +1,47 @@
+CLASS net/minecraft/class_1_162 net/minecraft/recipe/crafting/DecoratedPotRecipe
+	FIELD field_1_1264 SERIALIZER Lnet/minecraft/class_1_157;
+	FIELD field_1_1265 PACKET_CODEC Lnet/minecraft/class_9139;
+	FIELD field_1_1266 back Lnet/minecraft/class_1856;
+	FIELD field_1_1267 front Lnet/minecraft/class_1856;
+	FIELD field_1_1268 left Lnet/minecraft/class_1856;
+	FIELD field_1_1269 result Lnet/minecraft/class_1_107;
+	FIELD field_1_1270 right Lnet/minecraft/class_1856;
+	METHOD <init> (Lnet/minecraft/class_1856;Lnet/minecraft/class_1_107;)V
+		ARG 1 input
+		ARG 2 result
+	METHOD <init> (Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_1_107;)V
+		ARG 1 back
+		ARG 2 left
+		ARG 3 right
+		ARG 4 front
+		ARG 5 result
+	METHOD method_1_1470 getBack (Lnet/minecraft/class_9694;)Lnet/minecraft/class_1799;
+		ARG 0 input
+	METHOD method_1_1471 getFront (Lnet/minecraft/class_9694;)Lnet/minecraft/class_1799;
+		ARG 0 input
+	METHOD method_1_1472 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_1473 (Lnet/minecraft/class_1_162;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1474 (Lnet/minecraft/class_1_162;)Lnet/minecraft/class_1_107;
+		ARG 0 recipe
+	METHOD method_1_1475 (Lnet/minecraft/class_1_162;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1476 (Lnet/minecraft/class_1_162;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1477 (Lnet/minecraft/class_1_162;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1478 (Lnet/minecraft/class_1_162;)Lnet/minecraft/class_1_107;
+		ARG 0 recipe
+	METHOD method_1_1479 (Lnet/minecraft/class_1_162;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1480 (Lnet/minecraft/class_1_162;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1481 (Lnet/minecraft/class_1_162;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1482 (Lnet/minecraft/class_1_162;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1483 getLeft (Lnet/minecraft/class_9694;)Lnet/minecraft/class_1799;
+		ARG 0 input
+	METHOD method_1_1485 getRight (Lnet/minecraft/class_9694;)Lnet/minecraft/class_1799;
+		ARG 0 input

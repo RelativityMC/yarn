@@ -1,7 +1,0 @@
-CLASS net/minecraft/class_10223 net/minecraft/recipe/TransmuteRecipe
-	FIELD field_54321 input Lnet/minecraft/class_1856;
-	FIELD field_54322 material Lnet/minecraft/class_1856;
-	FIELD field_54323 result Lnet/minecraft/class_1_107;
-	METHOD <init> (Lnet/minecraft/class_1860$class_1_145;Lnet/minecraft/class_3955$class_1_155;Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_2096$class_2100;Lnet/minecraft/class_1_107;Z)V
-		ARG 4 material
-		ARG 6 result

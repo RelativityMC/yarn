@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_176 net/minecraft/recipe/CampfireCookingRecipe
+	FIELD field_1_1330 SERIALIZER Lnet/minecraft/class_1_157;
+	FIELD field_1_1331 PACKET_CODEC Lnet/minecraft/class_9139;

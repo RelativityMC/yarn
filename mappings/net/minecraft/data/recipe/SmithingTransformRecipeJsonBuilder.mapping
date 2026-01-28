@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_8074 net/minecraft/data/recipe/SmithingTransformRecipeJsonBuilder
+	FIELD field_1_1347 advancementBuilder Lnet/minecraft/class_1_180;
 	FIELD field_42090 template Lnet/minecraft/class_1856;
 	FIELD field_42091 base Lnet/minecraft/class_1856;
 	FIELD field_42092 addition Lnet/minecraft/class_1856;
@@ -9,6 +10,7 @@ CLASS net/minecraft/class_8074 net/minecraft/data/recipe/SmithingTransformRecipe
 		ARG 2 base
 		ARG 3 addition
 		ARG 4 category
+		ARG 5 result
 	METHOD method_48535 create (Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_7800;Lnet/minecraft/class_1792;)Lnet/minecraft/class_8074;
 		ARG 0 template
 		ARG 1 base

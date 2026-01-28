@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_1_153 net/minecraft/data/recipe/SpecialCraftingRecipeJsonBuilder
+	FIELD field_1_1187 advancementBuilder Lnet/minecraft/class_1_180;
+	FIELD field_1_1188 recipeSuppiler Ljava/util/function/Supplier;
+	METHOD <init> (Ljava/util/function/Supplier;)V
+		ARG 1 recipeSupplier
+	METHOD method_1_1375 offerTo (Lnet/minecraft/class_8790;Ljava/lang/String;)V
+		ARG 1 exporter
+		ARG 2 recipePath
+	METHOD method_1_1376 offerTo (Lnet/minecraft/class_8790;Lnet/minecraft/class_5321;)V
+		ARG 1 exporter
+		ARG 2 recipeKey
+	METHOD method_1_1377 create (Ljava/util/function/Supplier;)Lnet/minecraft/class_1_153;
+		ARG 0 recipeSupplier
+	METHOD method_1_1378 addCriterion (Ljava/lang/String;Lnet/minecraft/class_175;)Lnet/minecraft/class_1_153;
+		ARG 1 name
+		ARG 2 criterion

@@ -1,4 +1,48 @@
 CLASS com/mojang/blaze3d/systems/RenderPass
+	COMMENT Wraps a {@link com.mojang.blaze3d.systems.RenderPassBackend} to provide
+	COMMENT extra run-time checks.
+	METHOD <init> (Lnet/minecraft/class_1_149;Lnet/minecraft/class_1_147;)V
+		ARG 1 backend
+		ARG 2 device
+	METHOD bindTexture (Ljava/lang/String;Lcom/mojang/blaze3d/textures/GpuTextureView;Lnet/minecraft/class_12137;)V
+		ARG 1 name
+		ARG 2 textureView
+		ARG 3 sampler
+	METHOD draw (II)V
+		ARG 1 offset
+		ARG 2 count
+	METHOD drawIndexed (IIII)V
+		ARG 1 baseVertex
+		ARG 2 firstIndex
+		ARG 3 count
+		ARG 4 instanceCount
+	METHOD drawMultipleIndexed (Ljava/util/Collection;Lcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5595;Ljava/util/Collection;Ljava/lang/Object;)V
+		ARG 1 objects
+		ARG 2 buffer
+		ARG 3 indexType
+		ARG 4 validationSkippedUniforms
+		ARG 5 uniformArgument
+	METHOD enableScissor (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+	METHOD pushDebugGroup (Ljava/util/function/Supplier;)V
+		ARG 1 labelGetter
+	METHOD setIndexBuffer (Lcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5595;)V
+		ARG 1 indexBuffer
+		ARG 2 indexType
+	METHOD setPipeline (Lcom/mojang/blaze3d/pipeline/RenderPipeline;)V
+		ARG 1 pipeline
+	METHOD setUniform (Ljava/lang/String;Lcom/mojang/blaze3d/buffers/GpuBuffer;)V
+		ARG 1 name
+		ARG 2 buffer
+	METHOD setUniform (Ljava/lang/String;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
+		ARG 1 name
+		ARG 2 slice
+	METHOD setVertexBuffer (ILcom/mojang/blaze3d/buffers/GpuBuffer;)V
+		ARG 1 index
+		ARG 2 buffer
 	CLASS class_10884 RenderObject
 		METHOD <init> (ILcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5595;II)V
 			ARG 1 slot

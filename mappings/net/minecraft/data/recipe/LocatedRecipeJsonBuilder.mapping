@@ -1,0 +1,23 @@
+CLASS net/minecraft/class_1_169 net/minecraft/data/recipe/LocatedRecipeJsonBuilder
+	FIELD field_1_1304 advancementBuilder Lnet/minecraft/class_1_180;
+	FIELD field_1_1305 category Lnet/minecraft/class_7800;
+	FIELD field_1_1306 recipeFactory Lnet/minecraft/class_1_169$class_1_170;
+	FIELD field_1_1307 group Ljava/lang/String;
+	METHOD <init> (Lnet/minecraft/class_7800;Lnet/minecraft/class_1_169$class_1_170;)V
+		ARG 1 category
+		ARG 2 recipeFactory
+	METHOD method_1_1545 create (Lnet/minecraft/class_7800;Lnet/minecraft/class_1_169$class_1_170;)Lnet/minecraft/class_1_169;
+		ARG 0 category
+		ARG 1 recipeFactory
+	METHOD method_1_1546 group (Ljava/lang/String;)Lnet/minecraft/class_1_169;
+		ARG 1 group
+	METHOD method_1_1547 offerTo (Lnet/minecraft/class_8790;Ljava/lang/String;)V
+		ARG 1 exporter
+		ARG 2 recipePath
+	METHOD method_1_1548 offerTo (Lnet/minecraft/class_8790;Lnet/minecraft/class_5321;)V
+		ARG 1 exporter
+		ARG 2 recipeKey
+	METHOD method_1_1549 addCriterion (Ljava/lang/String;Lnet/minecraft/class_175;)Lnet/minecraft/class_1_169;
+		ARG 1 name
+		ARG 2 criterion
+	CLASS class_1_170 RecipeFactory

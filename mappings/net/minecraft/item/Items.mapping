@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_1802 net/minecraft/item/Items
+	FIELD field_1_1138 GOLDEN_DANDELION Lnet/minecraft/class_1792;
 	FIELD field_8043 ORANGE_TERRACOTTA Lnet/minecraft/class_1792;
 	FIELD field_8047 JUNGLE_PRESSURE_PLATE Lnet/minecraft/class_1792;
 	FIELD field_8048 SPRUCE_BUTTON Lnet/minecraft/class_1792;

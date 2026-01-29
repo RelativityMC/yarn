@@ -6,6 +6,7 @@ CLASS net/minecraft/class_5235 net/minecraft/client/gui/screen/world/EditGameRul
 	FIELD field_24296 doneButton Lnet/minecraft/class_4185;
 	FIELD field_24298 gameRules Lnet/minecraft/class_1928;
 	FIELD field_49558 TITLE Lnet/minecraft/class_2561;
+	FIELD field_49559 SEARCH_BOX_HEIGHT I
 	FIELD field_49560 layout Lnet/minecraft/class_8132;
 	FIELD field_49903 ruleListWidget Lnet/minecraft/class_5235$class_5241;
 	METHOD <init> (Lnet/minecraft/class_1928;Ljava/util/function/Consumer;)V
@@ -67,10 +68,26 @@ CLASS net/minecraft/class_5235 net/minecraft/client/gui/screen/world/EditGameRul
 			ARG 1 description
 	CLASS class_5241 RuleListWidget
 		FIELD field_1_1076 gameRules Lnet/minecraft/class_1928;
+		FIELD field_49561 ITEM_HEIGHT I
 		METHOD <init> (Lnet/minecraft/class_5235;Lnet/minecraft/class_1928;)V
 			ARG 2 gameRules
+		METHOD method_1_1153 (Ljava/util/Map$Entry;)V
+			ARG 1 categoryEntry
+		METHOD method_1_1154 (Ljava/util/Map$Entry;)V
+			ARG 1 ruleEntry
 		METHOD method_1_1156 filterBySearch (Ljava/lang/String;)V
 			ARG 1 searchContents
+		METHOD method_1_1636 (Ljava/lang/String;Lnet/minecraft/class_5250;)Ljava/lang/Boolean;
+			ARG 1 description
+		METHOD method_1_1637 searchMatches (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Optional;Ljava/lang/String;)Z
+			ARG 0 id
+			ARG 1 translated
+			ARG 2 category
+			ARG 3 description
+			ARG 4 searchContents
+		METHOD method_1_1638 matches (Ljava/lang/String;Ljava/lang/String;)Z
+			ARG 0 text
+			ARG 1 search
 		CLASS 1 1
 			METHOD method_27639 (Lnet/minecraft/class_5198;)Ljava/util/Map;
 				ARG 0 category

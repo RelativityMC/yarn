@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_9069 net/minecraft/entity/passive/ArmadilloEntity
+	FIELD field_1_1291 PROFILE Lnet/minecraft/class_4095$class_5303;
 	FIELD field_47785 STATE Lnet/minecraft/class_2940;
 	FIELD field_47786 currentStateTicks J
 	FIELD field_47787 nextScuteShedCooldown I
@@ -6,6 +7,8 @@ CLASS net/minecraft/class_9069 net/minecraft/entity/passive/ArmadilloEntity
 	FIELD field_49081 rollingAnimationState Lnet/minecraft/class_7094;
 	FIELD field_49082 scaredAnimationState Lnet/minecraft/class_7094;
 	FIELD field_49083 peeking Z
+	METHOD method_1_1526 (Lnet/minecraft/class_9069;)Ljava/util/List;
+		ARG 0 armadillo
 	METHOD method_55711 isRolledUp ()Z
 	METHOD method_55713 setState (Lnet/minecraft/class_9069$class_9070;)V
 		ARG 1 state

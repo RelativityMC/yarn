@@ -436,6 +436,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_18808 getProjectileType (Lnet/minecraft/class_1799;)Lnet/minecraft/class_1799;
 		ARG 1 stack
 	METHOD method_18867 deserializeBrain (Lnet/minecraft/class_4095$class_1_142;)Lnet/minecraft/class_4095;
+		ARG 1 state
 	METHOD method_18868 getBrain ()Lnet/minecraft/class_4095;
 	METHOD method_20235 sendEquipmentBreakStatus (Lnet/minecraft/class_1792;Lnet/minecraft/class_1304;)V
 		ARG 1 item
@@ -664,6 +665,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_61419 forEachShearedItem (Lnet/minecraft/class_3218;Lnet/minecraft/class_5321;Lnet/minecraft/class_1_96;Ljava/util/function/BiConsumer;)V
 		ARG 1 world
 		ARG 2 lootTableKey
+		ARG 3 tool
 		ARG 4 lootConsumer
 	METHOD method_61420 getStackInArm (Lnet/minecraft/class_1306;)Lnet/minecraft/class_1799;
 		ARG 1 arm
@@ -792,10 +794,13 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_70673 isJumping ()Z
 	METHOD method_71375 (Lnet/minecraft/class_11372;Lnet/minecraft/class_2338;)V
 		ARG 1 pos
+	METHOD method_71377 (Lnet/minecraft/class_4095$class_1_142;)V
+		ARG 1 state
 	METHOD method_72394 forEachBrushedItem (Lnet/minecraft/class_3218;Lnet/minecraft/class_5321;Lnet/minecraft/class_1297;Lnet/minecraft/class_1_96;Ljava/util/function/BiConsumer;)Z
 		ARG 1 world
 		ARG 2 lootTableKey
 		ARG 3 interactingEntity
+		ARG 4 tool
 		ARG 5 lootConsumer
 	METHOD method_72395 dropLoot (Lnet/minecraft/class_3218;Lnet/minecraft/class_1282;ZLnet/minecraft/class_5321;)V
 		ARG 1 world

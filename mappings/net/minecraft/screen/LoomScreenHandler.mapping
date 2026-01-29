@@ -23,6 +23,10 @@ CLASS net/minecraft/class_1726 net/minecraft/screen/LoomScreenHandler
 		ARG 1 syncId
 		ARG 2 playerInventory
 		ARG 3 context
+	METHOD method_1_1249 isDye (Lnet/minecraft/class_1799;)Z
+		ARG 0 stack
+	METHOD method_1_1250 isLoomPattern (Lnet/minecraft/class_1799;)Z
+		ARG 0 stack
 	METHOD method_7647 getSelectedPattern ()I
 	METHOD method_7648 updateOutputSlot (Lnet/minecraft/class_6880;)V
 		ARG 1 pattern

@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_5419 net/minecraft/entity/mob/PiglinBruteEntity
+	FIELD field_1_1292 PROFILE Lnet/minecraft/class_4095$class_5303;
 	FIELD field_30586 MAX_HEALTH I
 	FIELD field_30587 MOVEMENT_SPEED F
 	FIELD field_30588 ATTACK_DAMAGE I

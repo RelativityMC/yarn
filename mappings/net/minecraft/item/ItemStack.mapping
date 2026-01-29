@@ -83,6 +83,8 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 		ARG 1 item
 		ARG 2 count
 		ARG 3 components
+	METHOD method_1_842 validateContainedItemStackViews (Ljava/lang/Iterable;)Lcom/mojang/serialization/DataResult;
+		ARG 0 itemStackViews
 	METHOD method_7909 getItem ()Lnet/minecraft/class_1792;
 		COMMENT {@return the item of this stack}
 		COMMENT

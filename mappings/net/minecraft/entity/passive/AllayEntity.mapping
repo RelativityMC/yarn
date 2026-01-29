@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_7298 net/minecraft/entity/passive/AllayEntity
+	FIELD field_1_1167 PROFILE Lnet/minecraft/class_4095$class_5303;
 	FIELD field_38399 ITEM_PICKUP_RANGE_EXPANDER Lnet/minecraft/class_2382;
 	FIELD field_38401 gameEventHandler Lnet/minecraft/class_5715;
 	FIELD field_38402 inventory Lnet/minecraft/class_1277;
@@ -17,6 +18,8 @@ CLASS net/minecraft/class_7298 net/minecraft/entity/passive/AllayEntity
 	FIELD field_39474 lastSpinningAnimationTicks F
 	FIELD field_44596 vibrationListenerData Lnet/minecraft/class_8514$class_8515;
 	FIELD field_57621 DEFAULT_DUPLICATION_COOLDOWN I
+	METHOD method_1_1339 (Lnet/minecraft/class_7298;)Ljava/util/List;
+		ARG 0 allay
 	METHOD method_42654 isItemPickupCoolingDown ()Z
 	METHOD method_42655 createAllayAttributes ()Lnet/minecraft/class_5132$class_5133;
 	METHOD method_43396 isHoldingItem ()Z

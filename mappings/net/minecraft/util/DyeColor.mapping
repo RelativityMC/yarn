@@ -19,7 +19,7 @@ CLASS net/minecraft/class_1767 net/minecraft/util/DyeColor
 		ARG 6 mapColor
 		ARG 7 fireworkColor
 		ARG 8 signColor
-	METHOD method_1_1235 tryMix (Lnet/minecraft/class_3218;Lnet/minecraft/class_1767;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1767;
+	METHOD method_1_1235 mix (Lnet/minecraft/class_3218;Lnet/minecraft/class_1767;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1767;
 		ARG 0 world
 		ARG 1 color1
 		ARG 2 color2
@@ -62,7 +62,7 @@ CLASS net/minecraft/class_1767 net/minecraft/util/DyeColor
 		COMMENT {@return the color used for dyed signs as RGB integer}
 		COMMENT
 		COMMENT <p>The returned value is between {@code 0} and {@code 0xFFFFFF}.
-	METHOD method_65358 mix (Lnet/minecraft/class_3218;Lnet/minecraft/class_1767;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1767;
+	METHOD method_65358 mixOrChooseRandomly (Lnet/minecraft/class_3218;Lnet/minecraft/class_1767;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1767;
 		ARG 0 world
 		ARG 1 color1
 		ARG 2 color2

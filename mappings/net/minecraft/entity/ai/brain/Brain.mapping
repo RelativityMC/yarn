@@ -25,8 +25,31 @@ CLASS net/minecraft/class_4095 net/minecraft/entity/ai/brain/Brain
 		COMMENT The map from activities to the memories to forget after the activity is
 		COMMENT completed.
 	FIELD field_30096 ACTIVITY_REFRESH_COOLDOWN I
-	METHOD method_1_845 createBrainProfile (Ljava/util/Collection;)Lnet/minecraft/class_4095$class_5303;
+	METHOD <init> (Ljava/util/Collection;Ljava/util/Collection;Ljava/util/List;Lnet/minecraft/class_1_151;)V
+		ARG 1 memories
+		ARG 2 sensors
+		ARG 3 taskLists
+		ARG 4 memoryMap
+	METHOD method_1_845 createProfile (Ljava/util/Collection;)Lnet/minecraft/class_4095$class_5303;
 		ARG 0 sensors
+	METHOD method_1_1236 (Ljava/util/Map$Entry;)Z
+		ARG 0 enry
+	METHOD method_1_1237 (Ljava/util/Map$Entry;)Ljava/util/stream/Stream;
+		ARG 0 entry
+	METHOD method_1_1238 (Ljava/util/Map$Entry;Lnet/minecraft/class_4831;)Lnet/minecraft/class_1_151$class_1_152;
+		ARG 1 memory
+	METHOD method_1_1239 (Lnet/minecraft/class_1309;)Ljava/util/List;
+		ARG 0 entity
+	METHOD method_1_1240 createState ()Lnet/minecraft/class_4095$class_1_142;
+	METHOD method_1_1241 createProfile (Ljava/util/Collection;Ljava/util/Collection;Lnet/minecraft/class_4095$class_1_141;)Lnet/minecraft/class_4095$class_5303;
+		ARG 0 memories
+		ARG 1 sensors
+		ARG 2 taskListFactory
+	METHOD method_1_1242 createProfile (Ljava/util/Collection;Lnet/minecraft/class_4095$class_1_141;)Lnet/minecraft/class_4095$class_5303;
+		ARG 0 sensors
+		ARG 1 taskListFactory
+	METHOD method_1_1243 addMemory (Lnet/minecraft/class_1_151$class_1_152;)V
+		ARG 1 entry
 	METHOD method_18871 refreshActivities (Lnet/minecraft/class_12205;JLnet/minecraft/class_243;)V
 		ARG 1 attributeAccess
 		ARG 2 time
@@ -117,13 +140,23 @@ CLASS net/minecraft/class_4095 net/minecraft/entity/ai/brain/Brain
 	METHOD method_49710 (Lnet/minecraft/class_4140;)V
 		ARG 1 type
 	METHOD method_74662 isEmpty ()Z
+	CLASS class_1_141 TaskListsFactory
+		METHOD method_1_1244 create (Lnet/minecraft/class_1309;)Ljava/util/List;
+			ARG 1 entity
+	CLASS class_1_142 State
+		FIELD field_1_1147 EMPTY Lnet/minecraft/class_4095$class_1_142;
+		METHOD method_1_1245 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
 	CLASS class_5303 Profile
 		COMMENT A simple profile of a brain. Indicates what types of memory modules and
 		COMMENT sensors a brain can have.
-		FIELD field_1_1093 taskLists Lnet/minecraft/class_4095$class_1_141;
+		FIELD field_1_1093 taskListFactory Lnet/minecraft/class_4095$class_1_141;
 		FIELD field_24663 memoryModules Ljava/util/Collection;
 		FIELD field_24664 sensors Ljava/util/Collection;
 		METHOD <init> (Ljava/util/Collection;Ljava/util/Collection;Lnet/minecraft/class_4095$class_1_141;)V
 			ARG 1 memoryModules
 			ARG 2 sensors
+			ARG 3 taskListFactory
 		METHOD method_28335 deserialize (Lnet/minecraft/class_1309;Lnet/minecraft/class_4095$class_1_142;)Lnet/minecraft/class_4095;
+			ARG 1 entity
+			ARG 2 state

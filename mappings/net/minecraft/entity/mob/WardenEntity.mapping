@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_7260 net/minecraft/entity/mob/WardenEntity
+	FIELD field_1_1196 PROFILE Lnet/minecraft/class_4095$class_5303;
 	FIELD field_38135 emergingAnimationState Lnet/minecraft/class_7094;
 	FIELD field_38136 diggingAnimationState Lnet/minecraft/class_7094;
 	FIELD field_38137 attackingAnimationState Lnet/minecraft/class_7094;

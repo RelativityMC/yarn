@@ -29,14 +29,20 @@ CLASS net/minecraft/class_2609 net/minecraft/block/entity/AbstractFurnaceBlockEn
 		ARG 2 pos
 		ARG 3 state
 		ARG 4 recipeType
+	METHOD method_1_1632 consumeFuel (Lnet/minecraft/class_2371;Lnet/minecraft/class_1799;)V
+		ARG 0 inventory
+		ARG 1 fuelStack
 	METHOD method_11192 canAcceptRecipeOutput (Lnet/minecraft/class_2371;ILnet/minecraft/class_1799;)Z
 		ARG 0 inventory
 		ARG 1 maxCount
+		ARG 2 outputStack
 	METHOD method_11200 getFuelTime (Lnet/minecraft/class_9895;Lnet/minecraft/class_1799;)I
 		ARG 1 fuelRegistry
 		ARG 2 stack
 	METHOD method_11203 craftRecipe (Lnet/minecraft/class_2371;Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;)V
 		ARG 0 inventory
+		ARG 1 input
+		ARG 2 result
 	METHOD method_17029 getCookTime (Lnet/minecraft/class_3218;Lnet/minecraft/class_2609;)I
 		ARG 0 world
 		ARG 1 furnace

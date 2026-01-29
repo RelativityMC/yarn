@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_1296 net/minecraft/entity/passive/PassiveEntity
+	FIELD field_1_1148 AGE_LOCKED Lnet/minecraft/class_2940;
+	FIELD field_1_1149 AGE_LOCK_TOGGLE_DELAY I
+	FIELD field_1_1150 ageLockToggleDelay I
 	FIELD field_5947 happyTicksRemaining I
 	FIELD field_5948 forcedAge I
 	FIELD field_5949 CHILD Lnet/minecraft/class_2940;
@@ -7,6 +10,10 @@ CLASS net/minecraft/class_1296 net/minecraft/entity/passive/PassiveEntity
 	FIELD field_29970 HAPPY_TICKS I
 	FIELD field_57562 DEFAULT_AGE I
 	FIELD field_57563 DEFAULT_FORCED_AGE I
+	METHOD method_1_1246 canAge ()Z
+	METHOD method_1_1247 isAgeLocked ()Z
+	METHOD method_1_1248 setAgeLocked (Z)V
+		ARG 1 ageLocked
 	METHOD method_5613 createChild (Lnet/minecraft/class_3218;Lnet/minecraft/class_1296;)Lnet/minecraft/class_1296;
 		ARG 1 world
 		ARG 2 entity

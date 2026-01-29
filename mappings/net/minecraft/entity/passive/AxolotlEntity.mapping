@@ -30,6 +30,16 @@ CLASS net/minecraft/class_5762 net/minecraft/entity/passive/AxolotlEntity
 	COMMENT </tr>
 	COMMENT </table>
 	COMMENT </div>
+	FIELD field_1_1210 animationStates Lcom/google/common/collect/ImmutableList;
+		COMMENT A list of mutually exclusive animation states.
+	FIELD field_1_1211 BABY_DIMENSIONS Lnet/minecraft/class_4048;
+	FIELD field_1_1212 PROFILE Lnet/minecraft/class_4095$class_5303;
+	FIELD field_1_1213 idleState Lnet/minecraft/class_7094;
+	FIELD field_1_1214 idleInWaterState Lnet/minecraft/class_7094;
+	FIELD field_1_1215 idleOnGroundState Lnet/minecraft/class_7094;
+	FIELD field_1_1216 swimState Lnet/minecraft/class_7094;
+	FIELD field_1_1217 walkState Lnet/minecraft/class_7094;
+	FIELD field_1_1218 moveState Lnet/minecraft/class_7094;
 	FIELD field_28335 VARIANT Lnet/minecraft/class_2940;
 	FIELD field_28336 PLAYING_DEAD Lnet/minecraft/class_2940;
 	FIELD field_28337 FROM_BUCKET Lnet/minecraft/class_2940;
@@ -46,6 +56,11 @@ CLASS net/minecraft/class_5762 net/minecraft/entity/passive/AxolotlEntity
 	FIELD field_52480 onGroundFf Lnet/minecraft/class_9849;
 	FIELD field_52481 isMovingFf Lnet/minecraft/class_9849;
 	FIELD field_57622 DEFAULT_FROM_BUCKET Z
+	METHOD method_1_1411 (Lnet/minecraft/class_5762;)Ljava/util/List;
+		ARG 0 axolotl
+	METHOD method_1_1412 switchToAnimationState (Lnet/minecraft/class_7094;)V
+		ARG 1 animationState
+	METHOD method_1_1413 tickClientBaby ()V
 	METHOD method_33219 setVariant (Lnet/minecraft/class_5762$class_5767;)V
 		ARG 1 variant
 	METHOD method_33221 shouldBabyBeDifferent (Lnet/minecraft/class_5819;)Z
@@ -73,7 +88,7 @@ CLASS net/minecraft/class_5762 net/minecraft/entity/passive/AxolotlEntity
 		ARG 4 random
 	METHOD method_57305 (Lnet/minecraft/class_2487;)V
 		ARG 1 nbt
-	METHOD method_61479 tickClient ()V
+	METHOD method_61479 tickClientAdult ()V
 	METHOD method_68269 (Lnet/minecraft/class_2487;Ljava/lang/Long;)V
 		ARG 2 huntingCooldown
 	CLASS class_5763 AxolotlData

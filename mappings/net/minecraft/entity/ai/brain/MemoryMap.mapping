@@ -1,0 +1,25 @@
+CLASS net/minecraft/class_1_151 net/minecraft/entity/ai/brain/MemoryMap
+	FIELD field_1_1177 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_1178 EMPTY Lnet/minecraft/class_1_151;
+	FIELD field_1_1179 SERIALIZABLE_MEMORY_MODULE_TYPE_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_1180 memories Ljava/util/Map;
+	METHOD <init> (Ljava/util/Map;)V
+		ARG 1 memories
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other
+	METHOD method_1_1354 get (Lnet/minecraft/class_4140;)Lnet/minecraft/class_4831;
+		ARG 1 type
+	METHOD method_1_1355 (Ljava/util/Map$Entry;)Lnet/minecraft/class_1_151$class_1_152;
+		ARG 0 entry
+	METHOD method_1_1356 (Lnet/minecraft/class_4140;)Lcom/mojang/serialization/DataResult;
+		ARG 0 memoryModuleType
+	METHOD method_1_1358 (Lnet/minecraft/class_4140;)Lcom/mojang/serialization/Codec;
+		ARG 0 type
+	METHOD method_1_1359 (Lnet/minecraft/class_1_151;)Ljava/util/Map;
+		ARG 0 memoryMap
+	METHOD method_1_1360 from (Ljava/util/stream/Stream;)Lnet/minecraft/class_1_151;
+		ARG 0 entries
+	CLASS class_1_152 Entry
+		METHOD method_1_1361 of (Lnet/minecraft/class_4140;Lnet/minecraft/class_4831;)Lnet/minecraft/class_1_151$class_1_152;
+			ARG 0 type
+			ARG 1 value

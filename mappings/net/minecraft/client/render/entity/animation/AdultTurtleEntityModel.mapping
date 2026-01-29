@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_179 net/minecraft/client/render/entity/animation/AdultTurtleEntityModel
+	FIELD field_1_1344 EGG_BELLY Ljava/lang/String;
+	FIELD field_1_1345 eggBelly Lnet/minecraft/class_630;
+	METHOD method_1_1605 getTexturedModelData ()Lnet/minecraft/class_5607;

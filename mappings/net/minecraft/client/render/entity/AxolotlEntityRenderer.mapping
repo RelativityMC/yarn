@@ -2,3 +2,4 @@ CLASS net/minecraft/class_5774 net/minecraft/client/render/entity/AxolotlEntityR
 	FIELD field_28390 TEXTURES Ljava/util/Map;
 	METHOD method_33307 (Ljava/util/HashMap;)V
 		ARG 0 variants
+	CLASS class_1_161 TexturePair

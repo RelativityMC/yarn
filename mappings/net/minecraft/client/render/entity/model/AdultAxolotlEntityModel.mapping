@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_5772 net/minecraft/client/render/entity/model/AxolotlEntityModel
+CLASS net/minecraft/class_5772 net/minecraft/client/render/entity/model/AdultAxolotlEntityModel
 	COMMENT Represents the model of an {@linkplain AxolotlEntity}.
 	COMMENT
 	COMMENT <div class="fabric">
@@ -58,9 +58,11 @@ CLASS net/minecraft/class_5772 net/minecraft/client/render/entity/model/AxolotlE
 		ARG 1 animationProgress
 		ARG 2 headYaw
 	METHOD method_33295 setMovingInWaterAngles (FFF)V
+		ARG 1 age
 		ARG 2 headPitch
 	METHOD method_33296 getTexturedModelData ()Lnet/minecraft/class_5607;
 	METHOD method_33297 setStandingInWaterAngles (FF)V
+		ARG 1 age
 	METHOD method_33298 setPlayingDeadAngles (F)V
 		ARG 1 headYaw
 	METHOD method_33299 copyLegAngles (F)V

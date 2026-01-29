@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_5136 net/minecraft/entity/mob/ZoglinEntity
+	FIELD field_1_1157 PROFILE Lnet/minecraft/class_4095$class_5303;
 	FIELD field_23732 movementCooldownTicks I
 	FIELD field_23734 BABY Lnet/minecraft/class_2940;
 	FIELD field_30506 DEFAULT_KNOCKBACK_RESISTANCE F
@@ -10,6 +11,8 @@ CLASS net/minecraft/class_5136 net/minecraft/entity/mob/ZoglinEntity
 	FIELD field_30512 DEFAULT_MOVEMENT_SPEED F
 	FIELD field_57695 DEFAULT_IS_BABY Z
 	METHOD method_1_1167 getTaskLists ()Ljava/util/List;
+	METHOD method_1_1281 (Lnet/minecraft/class_5136;)Ljava/util/List;
+		ARG 0 zoglin
 	METHOD method_26928 getCoreTasks ()Lnet/minecraft/class_1_137;
 	METHOD method_26929 getIdleTasks ()Lnet/minecraft/class_1_137;
 	METHOD method_26930 getFightTasks ()Lnet/minecraft/class_1_137;

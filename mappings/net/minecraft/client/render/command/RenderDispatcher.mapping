@@ -29,5 +29,6 @@ CLASS net/minecraft/class_11684 net/minecraft/client/render/command/RenderDispat
 	METHOD method_1_1221 render ()V
 	METHOD method_1_1222 renderOpaque ()V
 	METHOD method_1_1223 renderTranslucent ()V
+	METHOD method_1_1631 renderTranslucentStage2 ()V
 	METHOD method_73003 getQueue ()Lnet/minecraft/class_11661;
 	METHOD method_74817 endLayeredCustoms ()V

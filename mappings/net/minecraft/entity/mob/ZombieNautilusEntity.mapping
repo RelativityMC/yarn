@@ -1,5 +1,8 @@
 CLASS net/minecraft/class_12119 net/minecraft/entity/mob/ZombieNautilusEntity
+	FIELD field_1_1348 PROFILE Lnet/minecraft/class_4095$class_5303;
 	FIELD field_64373 VARIANT Lnet/minecraft/class_2940;
+	METHOD method_1_1608 (Lnet/minecraft/class_12119;)Ljava/util/List;
+		ARG 0 zombieNautilus
 	METHOD method_75184 createZombieNautilusAttributes ()Lnet/minecraft/class_5132$class_5133;
 	METHOD method_76452 setVariant (Lnet/minecraft/class_6880;)V
 		ARG 1 variant

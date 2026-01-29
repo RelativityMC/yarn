@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_7689 net/minecraft/entity/passive/CamelEntity
+	FIELD field_1_1168 PROFILE Lnet/minecraft/class_4095$class_5303;
 	FIELD field_40136 SITTING_DIMENSIONS Lnet/minecraft/class_4048;
 	FIELD field_40137 dashCooldown I
 	FIELD field_40138 idleAnimationCooldown I
@@ -10,6 +11,8 @@ CLASS net/minecraft/class_7689 net/minecraft/entity/passive/CamelEntity
 	FIELD field_40145 dashingAnimationState Lnet/minecraft/class_7094;
 	FIELD field_40734 sittingAnimationState Lnet/minecraft/class_7094;
 	FIELD field_57624 DEFAULT_LAST_POSE_TICK J
+	METHOD method_1_1340 (Lnet/minecraft/class_7689;)Ljava/util/List;
+		ARG 0 camel
 	METHOD method_45344 setLastPoseTick (J)V
 		ARG 1 lastPoseTick
 	METHOD method_45346 getPassengerAttachmentY (ZFLnet/minecraft/class_4048;F)D

@@ -18,12 +18,18 @@ CLASS net/minecraft/class_8816 net/minecraft/client/gui/screen/PopupScreen
 		ARG 2 width
 		ARG 3 image
 		ARG 4 title
+		ARG 5 message
 		ARG 6 buttons
 		ARG 7 onClosed
+	METHOD method_1_1372 (Lnet/minecraft/class_2561;)V
+		ARG 1 text
 	METHOD method_54122 (Lnet/minecraft/class_8816$class_8818;Lnet/minecraft/class_4185;)V
 		ARG 2 button
+	METHOD method_54123 (Lnet/minecraft/class_8816;Lnet/minecraft/class_339;)V
+		ARG 1 child
 	METHOD method_54124 createButtonLayout ()Lnet/minecraft/class_8667;
 	CLASS class_8817 Builder
+		FIELD field_1_1185 message Ljava/util/List;
 		FIELD field_46568 backgroundScreen Lnet/minecraft/class_437;
 		FIELD field_46569 title Lnet/minecraft/class_2561;
 		FIELD field_46571 width I
@@ -33,6 +39,8 @@ CLASS net/minecraft/class_8816 net/minecraft/client/gui/screen/PopupScreen
 		METHOD <init> (Lnet/minecraft/class_437;Lnet/minecraft/class_2561;)V
 			ARG 1 backgroundScreen
 			ARG 2 title
+		METHOD method_1_1373 addMessage (Lnet/minecraft/class_2561;)Lnet/minecraft/class_8816$class_8817;
+			ARG 1 text
 		METHOD method_54125 build ()Lnet/minecraft/class_8816;
 		METHOD method_54126 width (I)Lnet/minecraft/class_8816$class_8817;
 			ARG 1 width

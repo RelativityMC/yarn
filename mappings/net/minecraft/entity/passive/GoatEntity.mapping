@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_6053 net/minecraft/entity/passive/GoatEntity
+	FIELD field_1_1160 PROFILE Lnet/minecraft/class_4095$class_5303;
 	FIELD field_30399 LONG_JUMPING_DIMENSIONS Lnet/minecraft/class_4048;
 	FIELD field_30402 FALL_DAMAGE_SUBTRACTOR I
 	FIELD field_30403 SCREAMING_CHANCE D
@@ -12,6 +13,8 @@ CLASS net/minecraft/class_6053 net/minecraft/entity/passive/GoatEntity
 	FIELD field_57626 DEFAULT_SCREAMING Z
 	FIELD field_57627 DEFAULT_LEFT_HORN Z
 	FIELD field_57628 DEFAULT_RIGHT_HORN Z
+	METHOD method_1_1311 (Lnet/minecraft/class_6053;)Ljava/util/List;
+		ARG 0 goat
 	METHOD method_35178 isScreaming ()Z
 	METHOD method_35179 createGoatAttributes ()Lnet/minecraft/class_5132$class_5133;
 	METHOD method_35180 getMilkingSound ()Lnet/minecraft/class_3414;

@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_10275 net/minecraft/entity/mob/CreakingEntity
+	FIELD field_1_1262 PROFILE Lnet/minecraft/class_4095$class_5303;
 	FIELD field_54568 attackAnimationState Lnet/minecraft/class_7094;
 	FIELD field_54570 invulnerableAnimationState Lnet/minecraft/class_7094;
 	FIELD field_54571 UNROOTED Lnet/minecraft/class_2940;

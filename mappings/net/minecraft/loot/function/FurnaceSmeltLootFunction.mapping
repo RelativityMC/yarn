@@ -1,8 +1,16 @@
 CLASS net/minecraft/class_165 net/minecraft/loot/function/FurnaceSmeltLootFunction
+	FIELD field_1_1377 useInputCount Z
 	FIELD field_1159 LOGGER Lorg/slf4j/Logger;
 	FIELD field_45855 CODEC Lcom/mojang/serialization/MapCodec;
 	METHOD <init> (Ljava/util/List;Z)V
 		ARG 1 conditions
+		ARG 2 useInputCount
+	METHOD method_1_1633 (ZLjava/util/List;)Lnet/minecraft/class_117;
+		ARG 1 conditions
+	METHOD method_1_1634 (Lnet/minecraft/class_165;)Ljava/lang/Boolean;
+		ARG 0 recipe
+	METHOD method_1_1635 builder (Z)Lnet/minecraft/class_120$class_121;
+		ARG 0 useInputCount
 	METHOD method_724 builder ()Lnet/minecraft/class_120$class_121;
 	METHOD method_53400 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance

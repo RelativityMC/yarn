@@ -1,9 +1,15 @@
 CLASS net/minecraft/class_3002 net/minecraft/entity/boss/CommandBossBar
+	FIELD field_1_1515 modificationCallback Ljava/lang/Runnable;
 	FIELD field_13440 playerUuids Ljava/util/Set;
 	FIELD field_13441 id Lnet/minecraft/class_2960;
 	FIELD field_13442 maxValue I
 	FIELD field_13443 value I
 	FIELD field_56602 DEFAULT_MAX_VALUE I
+	METHOD <init> (Ljava/util/UUID;Lnet/minecraft/class_2960;Lnet/minecraft/class_2561;Ljava/lang/Runnable;)V
+		ARG 1 uuid
+		ARG 2 id
+		ARG 3 name
+		ARG 4 modificationCallback
 	METHOD method_12954 setValue (I)V
 		ARG 1 value
 	METHOD method_12955 getValue ()I

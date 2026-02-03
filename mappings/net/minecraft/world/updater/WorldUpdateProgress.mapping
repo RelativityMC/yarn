@@ -36,3 +36,9 @@ CLASS net/minecraft/class_1_27 net/minecraft/world/updater/WorldUpdateProgress
 		ARG 1 progress
 	CLASS class_1_28 Dummy
 	CLASS class_1_29 Status
+	CLASS class_1_210 Type
+		FIELD field_1_1505 name Ljava/lang/String;
+		FIELD field_1_1506 text Lnet/minecraft/class_2561;
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 name
+		METHOD method_1_1801 asText ()Lnet/minecraft/class_2561;

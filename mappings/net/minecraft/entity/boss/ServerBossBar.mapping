@@ -6,6 +6,7 @@ CLASS net/minecraft/class_3213 net/minecraft/entity/boss/ServerBossBar
 		ARG 2 displayName
 		ARG 3 color
 		ARG 4 style
+	METHOD method_1_1714 markDirty ()V
 	METHOD method_14088 addPlayer (Lnet/minecraft/class_3222;)V
 		ARG 1 player
 	METHOD method_14089 removePlayer (Lnet/minecraft/class_3222;)V

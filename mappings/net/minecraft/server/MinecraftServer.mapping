@@ -16,6 +16,13 @@ CLASS net/minecraft/server/MinecraftServer
 	COMMENT @see net.minecraft.server.dedicated.MinecraftDedicatedServer
 	COMMENT @see net.minecraft.server.integrated.IntegratedServer
 	FIELD field_1_962 clocks Lnet/minecraft/class_1_109;
+	FIELD field_1_1399 SAFE_MODE_GAME_RULES Ljava/util/function/Supplier;
+	FIELD field_1_1401 gameRules Lnet/minecraft/class_1928;
+	FIELD field_1_1402 randomSequencesState Lnet/minecraft/class_8565;
+	FIELD field_1_1403 persistentStateManager Lnet/minecraft/class_26;
+	FIELD field_1_1404 timer Lnet/minecraft/class_236;
+	FIELD field_1_1405 weatherState Lnet/minecraft/class_1_216;
+	FIELD field_1_1406 worldGenSettings Lnet/minecraft/class_7726;
 	FIELD field_4543 onlineMode Z
 	FIELD field_4544 running Z
 	FIELD field_4546 LOGGER Lorg/slf4j/Logger;
@@ -108,6 +115,17 @@ CLASS net/minecraft/server/MinecraftServer
 	METHOD method_1_402 checkLowDiskSpaceWarning ()V
 	METHOD method_1_847 getClocks ()Lnet/minecraft/class_1_109;
 	METHOD method_1_848 getOverworldGameRules ()Lnet/minecraft/class_1928;
+	METHOD method_1_1665 getPersistentStateManager ()Lnet/minecraft/class_26;
+	METHOD method_1_1666 getGameRules ()Lnet/minecraft/class_1928;
+	METHOD method_1_1668 getRandomSequencesState ()Lnet/minecraft/class_8565;
+	METHOD method_1_1669 getScheduledEvents ()Lnet/minecraft/class_236;
+	METHOD method_1_1670 getWeatherState ()Lnet/minecraft/class_1_216;
+	METHOD method_1_1671 getWorldGenSettings ()Lnet/minecraft/class_7726;
+	METHOD method_1_1674 setWeatherState (IIZZ)V
+		ARG 1 clearWeatherTime
+		ARG 2 rainTime
+		ARG 3 raining
+		ARG 4 thundering
 	METHOD method_3716 getKeyPair ()Ljava/security/KeyPair;
 	METHOD method_3718 isFlightEnabled ()Z
 	METHOD method_3723 save (ZZZ)Z

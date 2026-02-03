@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_215 net/minecraft/datafixer/file/RegexMoveFileFixer
+	METHOD <init> (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 fromPattern
+		ARG 2 toPattern

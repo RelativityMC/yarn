@@ -1,0 +1,17 @@
+CLASS net/minecraft/class_1_248 net/minecraft/datafixer/file/FileFixers
+	METHOD method_1_1947 directories (Lnet/minecraft/class_1_206;Ljava/util/List;)Lnet/minecraft/class_1_234;
+		ARG 0 paths
+		ARG 1 fixers
+	METHOD method_1_1948 delete (Ljava/lang/String;)Lnet/minecraft/class_1_263;
+		ARG 0 path
+	METHOD method_1_1949 batchMove (Ljava/util/Map;Ljava/util/List;)Lnet/minecraft/class_1_214;
+		ARG 0 fromTo
+		ARG 1 fixers
+	METHOD method_1_1950 move (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/class_1_198;
+		ARG 0 from
+		ARG 1 to
+	METHOD method_1_1951 regexMove (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/class_1_215;
+		ARG 0 fromPattern
+		ARG 1 toPattern
+	METHOD method_1_1952 move (Ljava/lang/String;)Lnet/minecraft/class_1_198;
+		ARG 0 path

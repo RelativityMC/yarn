@@ -274,7 +274,6 @@ CLASS net/minecraft/class_1937 net/minecraft/world/World
 		ARG 10 explosionSourceType
 	METHOD method_8538 addDetailsToCrashReport (Lnet/minecraft/class_128;)Lnet/minecraft/class_129;
 		ARG 1 report
-	METHOD method_8543 initWeatherGradients ()V
 	METHOD method_8544 removeBlockEntity (Lnet/minecraft/class_2338;)V
 		ARG 1 pos
 	METHOD method_8546 isThundering ()Z

@@ -13,7 +13,6 @@ CLASS net/minecraft/class_3532 net/minecraft/util/math/MathHelper
 	FIELD field_15723 MULTIPLY_DE_BRUIJN_BIT_POSITION [I
 	FIELD field_15724 SQUARE_ROOT_OF_TWO F
 	FIELD field_15725 SINE_TABLE [F
-	FIELD field_15726 RANDOM Lnet/minecraft/class_5819;
 	FIELD field_15727 ARCSINE_TABLE [D
 		COMMENT Holds values of arcsin(x): {@code ARCSINE_TABLE[i]} is equal to
 		COMMENT {@code Math.arcsin(i / 256.0)}.
@@ -227,7 +226,6 @@ CLASS net/minecraft/class_3532 net/minecraft/util/math/MathHelper
 	METHOD method_15393 wrapDegrees (F)F
 		COMMENT Wraps an angle in degrees to the interval {@code [-180, 180)}.
 		ARG 0 degrees
-	METHOD method_15394 randomUuid ()Ljava/util/UUID;
 	METHOD method_15395 nextInt (Lnet/minecraft/class_5819;II)I
 		COMMENT {@return a random, uniformly distributed integer value in {@code
 		COMMENT [min, max]}} If the range is empty (i.e. {@code max < min}), it

@@ -2,10 +2,10 @@ CLASS net/minecraft/class_3213 net/minecraft/entity/boss/ServerBossBar
 	FIELD field_13912 visible Z
 	FIELD field_13913 players Ljava/util/Set;
 	FIELD field_13914 unmodifiablePlayers Ljava/util/Set;
-	METHOD <init> (Lnet/minecraft/class_2561;Lnet/minecraft/class_1259$class_1260;Lnet/minecraft/class_1259$class_1261;)V
-		ARG 1 displayName
-		ARG 2 color
-		ARG 3 style
+	METHOD <init> (Ljava/util/UUID;Lnet/minecraft/class_2561;Lnet/minecraft/class_1259$class_1260;Lnet/minecraft/class_1259$class_1261;)V
+		ARG 2 displayName
+		ARG 3 color
+		ARG 4 style
 	METHOD method_14088 addPlayer (Lnet/minecraft/class_3222;)V
 		ARG 1 player
 	METHOD method_14089 removePlayer (Lnet/minecraft/class_3222;)V

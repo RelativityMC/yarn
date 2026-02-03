@@ -11,19 +11,13 @@ CLASS net/minecraft/class_3321 net/minecraft/server/ServerConfigHandler
 	METHOD method_14535 parseDate (Ljava/lang/String;Ljava/util/Date;)Ljava/util/Date;
 		ARG 0 dateString
 		ARG 1 fallback
-	METHOD method_14536 getLevelPlayersFolder (Lnet/minecraft/server/MinecraftServer;)Ljava/io/File;
-		ARG 0 server
 	METHOD method_14538 lookupProfile (Lnet/minecraft/server/MinecraftServer;Ljava/util/Collection;Lcom/mojang/authlib/ProfileLookupCallback;)V
 		ARG 0 server
 		ARG 1 bannedPlayers
 		ARG 2 callback
 	METHOD method_14539 convertOperators (Lnet/minecraft/server/MinecraftServer;)Z
 		ARG 0 server
-	METHOD method_14540 checkSuccess (Lnet/minecraft/server/MinecraftServer;)Z
-		ARG 0 server
 	METHOD method_14541 checkListConversionSuccess ()Z
-	METHOD method_14542 checkPlayerConversionSuccess (Lnet/minecraft/server/MinecraftServer;)Z
-		ARG 0 server
 	METHOD method_14543 processSimpleListFile (Ljava/io/File;Ljava/util/Map;)Ljava/util/List;
 		ARG 0 file
 		ARG 1 valueMap

@@ -193,7 +193,6 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 	CLASS class_5271 Properties
 		FIELD field_24433 hardcore Z
 		FIELD field_24438 time J
-		FIELD field_24440 raining Z
 		FIELD field_24441 difficulty Lnet/minecraft/class_1267;
 		FIELD field_24442 difficultyLocked Z
 		FIELD field_24607 flatWorld Z

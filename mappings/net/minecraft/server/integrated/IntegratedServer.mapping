@@ -9,14 +9,14 @@ CLASS net/minecraft/class_1132 net/minecraft/server/integrated/IntegratedServer
 	FIELD field_34965 simulationDistance I
 	FIELD field_63623 gizmoEntries Ljava/util/List;
 	FIELD field_63624 gizmoCollector Lnet/minecraft/class_12185;
-	METHOD <init> (Ljava/lang/Thread;Lnet/minecraft/class_310;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_3283;Lnet/minecraft/class_6904;Lnet/minecraft/class_7497;Lnet/minecraft/class_11545;)V
+	METHOD <init> (Ljava/lang/Thread;Lnet/minecraft/class_310;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_3283;Lnet/minecraft/class_6904;Ljava/util/Optional;Lnet/minecraft/class_7497;Lnet/minecraft/class_11545;)V
 		ARG 1 serverThread
 		ARG 2 client
 		ARG 3 session
 		ARG 4 dataPackManager
 		ARG 5 saveLoader
-		ARG 6 apiServices
-		ARG 7 chunkLoadProgress
+		ARG 7 apiServices
+		ARG 8 chunkLoadProgress
 	METHOD method_4817 setLocalPlayerUuid (Ljava/util/UUID;)V
 		ARG 1 localPlayerUuid
 	METHOD method_36439 incrementTotalWorldTimeStat ()V

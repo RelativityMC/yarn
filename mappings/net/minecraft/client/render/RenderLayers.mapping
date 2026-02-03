@@ -40,7 +40,6 @@ CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 	FIELD field_64056 ENTITY_TRANSLUCENT_EMISSIVE Ljava/util/function/BiFunction;
 	FIELD field_64057 ENTITY_SMOOTH_CUTOUT Ljava/util/function/Function;
 	FIELD field_64058 BEACON_BEAM Ljava/util/function/BiFunction;
-	FIELD field_64059 ENTITY_DECAL Ljava/util/function/Function;
 	FIELD field_64060 ENTITY_NO_OUTLINE Ljava/util/function/Function;
 	FIELD field_64061 ENTITY_SHADOW Ljava/util/function/Function;
 	FIELD field_64062 ENTITY_ALPHA Ljava/util/function/Function;
@@ -74,17 +73,11 @@ CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 		ARG 0 texture
 	METHOD method_75953 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
-	METHOD method_75954 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
-		ARG 0 texture
 	METHOD method_75955 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
 	METHOD method_75956 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
-	METHOD method_75957 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
-		ARG 0 texture
 	METHOD method_75958 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
-		ARG 0 texture
-	METHOD method_75959 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
 	METHOD method_75960 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
@@ -171,14 +164,10 @@ CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 	METHOD method_76002 entityTranslucentEmissive (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
 	METHOD method_76003 lightning ()Lnet/minecraft/class_1921;
-	METHOD method_76004 entitySmoothCutout (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
-		ARG 0 texture
 	METHOD method_76005 dragonRays ()Lnet/minecraft/class_1921;
 	METHOD method_76006 entityDecal (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
 	METHOD method_76007 dragonRaysDepth ()Lnet/minecraft/class_1921;
-	METHOD method_76008 entityNoOutline (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
-		ARG 0 texture
 	METHOD method_76010 entityShadow (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
 	METHOD method_76011 endPortal ()Lnet/minecraft/class_1921;

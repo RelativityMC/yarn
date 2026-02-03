@@ -1,14 +1,10 @@
 CLASS net/minecraft/class_5219 net/minecraft/world/SaveProperties
 	FIELD field_31844 ANVIL_FORMAT_ID I
 	FIELD field_31845 MCREGION_FORMAT_ID I
-	METHOD method_146 getGameRules ()Lnet/minecraft/class_1928;
 	METHOD method_150 getLevelName ()Ljava/lang/String;
 	METHOD method_151 populateCrashReport (Lnet/minecraft/class_129;)V
 		ARG 1 section
 	METHOD method_152 isHardcore ()Z
-	METHOD method_163 cloneWorldNbt (Lnet/minecraft/class_5455;Lnet/minecraft/class_2487;)Lnet/minecraft/class_2487;
-		ARG 1 registryManager
-		ARG 2 playerNbt
 	METHOD method_168 getVersion ()I
 	METHOD method_186 setDifficultyLocked (Z)V
 		ARG 1 difficultyLocked
@@ -20,10 +16,7 @@ CLASS net/minecraft/class_5219 net/minecraft/world/SaveProperties
 	METHOD method_208 setDifficulty (Lnet/minecraft/class_1267;)V
 		ARG 1 difficulty
 	METHOD method_210 getGameMode ()Lnet/minecraft/class_1934;
-	METHOD method_221 setCustomBossEvents (Lnet/minecraft/class_2487;)V
-		ARG 1 customBossEvents
-	METHOD method_226 getPlayerData ()Lnet/minecraft/class_2487;
-	METHOD method_228 getCustomBossEvents ()Lnet/minecraft/class_2487;
+	METHOD method_226 getPlayerData ()Ljava/util/UUID;
 	METHOD method_24285 addServerBrand (Ljava/lang/String;Z)V
 		ARG 1 brand
 		ARG 2 modded
@@ -33,10 +26,6 @@ CLASS net/minecraft/class_5219 net/minecraft/world/SaveProperties
 	METHOD method_27440 getFormatName (I)Ljava/lang/String;
 		ARG 1 id
 	METHOD method_27859 getMainWorldProperties ()Lnet/minecraft/class_5268;
-	METHOD method_28057 getGeneratorOptions ()Lnet/minecraft/class_5285;
-	METHOD method_29036 getDragonFight ()Lnet/minecraft/class_2881$class_8576;
-	METHOD method_29037 setDragonFight (Lnet/minecraft/class_2881$class_8576;)V
-		ARG 1 dragonFight
 	METHOD method_29588 getLifecycle ()Lcom/mojang/serialization/Lifecycle;
 	METHOD method_29589 getDataConfiguration ()Lnet/minecraft/class_7712;
 	METHOD method_29590 updateLevelInfo (Lnet/minecraft/class_7712;)V

@@ -18,9 +18,6 @@ CLASS net/minecraft/class_4239 net/minecraft/util/path/PathUtil
 		ARG 0 path
 		ARG 1 name
 		ARG 2 extension
-	METHOD method_20200 isNormal (Ljava/nio/file/Path;)Z
-		COMMENT {@return whether {@code path} is already normalized}
-		ARG 0 path
 	METHOD method_20201 isAllowedName (Ljava/nio/file/Path;)Z
 		COMMENT {@return whether {@code path} does not contain reserved Windows file names}
 		COMMENT
@@ -28,10 +25,6 @@ CLASS net/minecraft/class_4239 net/minecraft/util/path/PathUtil
 		COMMENT the game is running is actually Windows. Note that this does not check for
 		COMMENT illegal characters or file permissions.
 		ARG 0 path
-	METHOD method_20202 getResourcePath (Ljava/nio/file/Path;Ljava/lang/String;Ljava/lang/String;)Ljava/nio/file/Path;
-		ARG 0 path
-		ARG 1 resourceName
-		ARG 2 extension
 	METHOD method_34675 getPosixFullPath (Ljava/lang/String;)Ljava/lang/String;
 		COMMENT {@return the full path of {@code path} with directory separator normalized
 		COMMENT to {@code /}}

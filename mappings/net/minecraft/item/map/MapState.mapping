@@ -52,9 +52,8 @@ CLASS net/minecraft/class_22 net/minecraft/item/map/MapState
 		ARG 2 player
 	METHOD method_101 getPlayerSyncData (Lnet/minecraft/class_1657;)Lnet/minecraft/class_22$class_23;
 		ARG 1 player
-	METHOD method_102 update (Lnet/minecraft/class_1657;Lnet/minecraft/class_1799;)V
+	METHOD method_102 update (Lnet/minecraft/class_1657;Lnet/minecraft/class_1799;Lnet/minecraft/class_1533;)V
 		ARG 1 player
-		ARG 2 stack
 	METHOD method_103 markDirty (II)V
 		ARG 1 x
 		ARG 2 z

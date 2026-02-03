@@ -1,9 +1,9 @@
 CLASS net/minecraft/class_10741 net/minecraft/world/PersistentStateType
-	FIELD comp_3641 id Ljava/lang/String;
+	FIELD comp_3641 id Lnet/minecraft/class_2960;
 	FIELD comp_3642 constructor Ljava/util/function/Supplier;
 	FIELD comp_3643 codec Lcom/mojang/serialization/Codec;
 	FIELD comp_3644 dataFixType Lnet/minecraft/class_4284;
-	METHOD comp_3641 id ()Ljava/lang/String;
+	METHOD comp_3641 id ()Lnet/minecraft/class_2960;
 	METHOD comp_3642 constructor ()Ljava/util/function/Supplier;
 	METHOD comp_3643 codec ()Lcom/mojang/serialization/Codec;
 	METHOD comp_3644 dataFixType ()Lnet/minecraft/class_4284;

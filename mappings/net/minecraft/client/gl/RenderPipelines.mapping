@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_10799 net/minecraft/client/gl/RenderPipelines
 	FIELD field_56812 BEACON_BEAM_TRANSLUCENT Lcom/mojang/blaze3d/pipeline/RenderPipeline;
-	FIELD field_56813 RENDERTYPE_ENTITY_ALPHA Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56814 RENDERTYPE_LEASH Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56815 RENDERTYPE_WATER_MASK Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56816 GLINT Lcom/mojang/blaze3d/pipeline/RenderPipeline;
@@ -77,14 +76,10 @@ CLASS net/minecraft/class_10799 net/minecraft/client/gl/RenderPipelines
 	FIELD field_56905 ENTITY_CUTOUT_NO_CULL_Z_OFFSET Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56906 ENTITY_TRANSLUCENT Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56907 ENTITY_TRANSLUCENT_EMISSIVE Lcom/mojang/blaze3d/pipeline/RenderPipeline;
-	FIELD field_56908 ENTITY_SMOOTH_CUTOUT Lcom/mojang/blaze3d/pipeline/RenderPipeline;
-	FIELD field_56909 ENTITY_NO_OUTLINE Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56910 BREEZE_WIND Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56911 ENTITY_ENERGY_SWIRL Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56912 ENTITY_EYES Lcom/mojang/blaze3d/pipeline/RenderPipeline;
-	FIELD field_56913 RENDERTYPE_ENTITY_DECAL Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56914 RENDERTYPE_ENTITY_SHADOW Lcom/mojang/blaze3d/pipeline/RenderPipeline;
-	FIELD field_56915 RENDERTYPE_ITEM_ENTITY_TRANSLUCENT_CULL Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56916 BEACON_BEAM_OPAQUE Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_57928 TRACY_BLIT Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_57929 WIREFRAME Lcom/mojang/blaze3d/pipeline/RenderPipeline;

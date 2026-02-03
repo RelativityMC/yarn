@@ -2,8 +2,7 @@ CLASS net/minecraft/class_4625 net/minecraft/world/gen/feature/HugeMushroomFeatu
 	METHOD method_23372 getCapSize (IIII)I
 		ARG 3 capSize
 		ARG 4 y
-	METHOD method_23374 canGenerate (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;ILnet/minecraft/class_2338$class_2339;Lnet/minecraft/class_4635;)Z
-		ARG 1 world
+	METHOD method_23374 canGenerate (Lnet/minecraft/class_5281;Lnet/minecraft/class_2338;ILnet/minecraft/class_2338$class_2339;Lnet/minecraft/class_4635;)Z
 		ARG 2 pos
 		ARG 3 height
 		ARG 4 mutablePos

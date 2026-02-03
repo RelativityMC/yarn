@@ -1,8 +1,6 @@
 CLASS net/minecraft/class_1_109 net/minecraft/server/world/ServerClocks
 	FIELD field_1_1010 clocks Ljava/util/Map;
 	FIELD field_1_1011 server Lnet/minecraft/server/MinecraftServer;
-	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
-		ARG 1 server
 	METHOD method_1_966 advance (Lnet/minecraft/class_6880;I)V
 		ARG 1 key
 		ARG 2 ticks
@@ -22,18 +20,12 @@ CLASS net/minecraft/class_1_109 net/minecraft/server/world/ServerClocks
 	METHOD method_1_975 (Lnet/minecraft/class_6880;Lnet/minecraft/class_1_93;)V
 		ARG 1 key
 		ARG 2 data
-	METHOD method_1_976 (Lnet/minecraft/class_6880$class_6883;)V
-		ARG 1 entry
-	METHOD method_1_977 (Lnet/minecraft/class_6880$class_6883;)V
-		ARG 1 entry
 	METHOD method_1_978 (ZLnet/minecraft/class_1_109$class_1_110;)V
 		ARG 1 entry
 	METHOD method_1_979 (JLnet/minecraft/class_1_109$class_1_110;)V
 		ARG 2 entry
 	METHOD method_1_980 (Lnet/minecraft/class_5321;Lorg/apache/commons/lang3/mutable/MutableBoolean;Lnet/minecraft/class_1_109$class_1_110;)V
 		ARG 2 entry
-	METHOD method_1_981 load (Lnet/minecraft/class_1_108;)V
-		ARG 1 data
 	METHOD method_1_982 updateClock (Lnet/minecraft/class_6880;Ljava/util/function/Consumer;)V
 		ARG 1 key
 		ARG 2 callback

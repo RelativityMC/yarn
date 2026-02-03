@@ -2,11 +2,7 @@ CLASS net/minecraft/class_4565 net/minecraft/command/DataCommandStorage
 	FIELD field_20747 storages Ljava/util/Map;
 	FIELD field_20748 stateManager Lnet/minecraft/class_26;
 	FIELD field_31834 COMMAND_STORAGE_PREFIX Ljava/lang/String;
-	METHOD <init> (Lnet/minecraft/class_26;)V
-		ARG 1 stateManager
 	METHOD method_22542 getIds ()Ljava/util/stream/Stream;
-	METHOD method_22543 getSaveKey (Ljava/lang/String;)Ljava/lang/String;
-		ARG 0 namespace
 	METHOD method_22545 (Ljava/util/Map$Entry;)Ljava/util/stream/Stream;
 		ARG 0 entry
 	METHOD method_22546 get (Lnet/minecraft/class_2960;)Lnet/minecraft/class_2487;

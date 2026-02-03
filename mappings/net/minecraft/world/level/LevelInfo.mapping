@@ -1,26 +1,19 @@
 CLASS net/minecraft/class_1940 net/minecraft/world/level/LevelInfo
-	FIELD field_9257 gameMode Lnet/minecraft/class_1934;
-	FIELD field_9261 allowCommands Z
-	FIELD field_9262 hardcore Z
-	FIELD field_24105 name Ljava/lang/String;
-	FIELD field_24106 difficulty Lnet/minecraft/class_1267;
-	FIELD field_24107 gameRules Lnet/minecraft/class_1928;
-	FIELD field_25403 dataConfiguration Lnet/minecraft/class_7712;
-	FIELD field_64165 LOGGER Lorg/slf4j/Logger;
-	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_1934;ZLnet/minecraft/class_1267;ZLnet/minecraft/class_1928;Lnet/minecraft/class_7712;)V
+	FIELD comp_1_131 allowCommands Z
+	FIELD comp_1_132 dataConfiguration Lnet/minecraft/class_7712;
+	FIELD comp_1_133 difficulty Lnet/minecraft/class_1940$class_1_191;
+	FIELD comp_1_134 gameMode Lnet/minecraft/class_1934;
+	FIELD comp_1_135 name Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_1934;Lnet/minecraft/class_1940$class_1_191;ZLnet/minecraft/class_7712;)V
 		ARG 1 name
 		ARG 2 gameMode
-		ARG 3 hardcore
-		ARG 4 difficulty
-		ARG 5 allowCommands
-		ARG 6 gameRules
-		ARG 7 dataConfiguration
-	METHOD method_8574 getGameMode ()Lnet/minecraft/class_1934;
-	METHOD method_8582 areCommandsAllowed ()Z
-	METHOD method_8583 isHardcore ()Z
-	METHOD method_27339 getLevelName ()Ljava/lang/String;
-	METHOD method_27340 getDifficulty ()Lnet/minecraft/class_1267;
-	METHOD method_27341 getGameRules ()Lnet/minecraft/class_1928;
+		ARG 4 allowCommands
+		ARG 5 dataConfiguration
+	METHOD comp_1_131 areCommandsAllowed ()Z
+	METHOD comp_1_132 getDataConfiguration ()Lnet/minecraft/class_7712;
+	METHOD comp_1_133 getDifficulty ()Lnet/minecraft/class_1940$class_1_191;
+	METHOD comp_1_134 getGameMode ()Lnet/minecraft/class_1934;
+	METHOD comp_1_135 getLevelName ()Ljava/lang/String;
 	METHOD method_28381 withDifficulty (Lnet/minecraft/class_1267;)Lnet/minecraft/class_1940;
 		ARG 1 difficulty
 	METHOD method_28382 withGameMode (Lnet/minecraft/class_1934;)Lnet/minecraft/class_1940;
@@ -28,9 +21,6 @@ CLASS net/minecraft/class_1940 net/minecraft/world/level/LevelInfo
 	METHOD method_28383 fromDynamic (Lcom/mojang/serialization/Dynamic;Lnet/minecraft/class_7712;)Lnet/minecraft/class_1940;
 		ARG 0 dynamic
 		ARG 1 dataConfiguration
-	METHOD method_28384 (Ljava/lang/Number;)Lnet/minecraft/class_1267;
-		ARG 0 difficulty
 	METHOD method_28385 withCopiedGameRules ()Lnet/minecraft/class_1940;
 	METHOD method_29557 withDataConfiguration (Lnet/minecraft/class_7712;)Lnet/minecraft/class_1940;
 		ARG 1 dataConfiguration
-	METHOD method_29558 getDataConfiguration ()Lnet/minecraft/class_7712;

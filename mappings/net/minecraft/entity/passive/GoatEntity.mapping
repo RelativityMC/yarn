@@ -30,8 +30,6 @@ CLASS net/minecraft/class_6053 net/minecraft/entity/passive/GoatEntity
 	METHOD method_43538 hasLeftHorn ()Z
 	METHOD method_43539 hasRightHorn ()Z
 	METHOD method_43540 dropHorn ()Z
-	METHOD method_43541 addHorns ()V
-	METHOD method_43542 removeHorns ()V
 	METHOD method_43690 getGoatHornStack ()Lnet/minecraft/class_1799;
 	METHOD method_61482 (Lnet/minecraft/class_6880;)Lnet/minecraft/class_1799;
 		ARG 0 instrument

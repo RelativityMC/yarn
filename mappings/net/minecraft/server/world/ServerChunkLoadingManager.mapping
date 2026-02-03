@@ -308,9 +308,6 @@ CLASS net/minecraft/class_3898 net/minecraft/server/world/ServerChunkLoadingMana
 		ARG 1 entity
 	METHOD method_75863 getContextNbt (Lnet/minecraft/class_5321;Ljava/util/Optional;)Lnet/minecraft/class_2487;
 		ARG 0 dimensionKey
-		ARG 1 chunkGeneratorKey
-	METHOD method_75865 (Lnet/minecraft/class_2487;Lnet/minecraft/class_5321;)V
-		ARG 1 generator
 	METHOD method_76056 isNonSpectatorWithinDistance (Lnet/minecraft/class_3222;Lnet/minecraft/class_243;I)Z
 		ARG 1 player
 		ARG 2 pos

@@ -46,24 +46,15 @@ CLASS net/minecraft/class_4495 net/minecraft/client/render/entity/model/BeeEntit
 	FIELD field_20509 middleLegs Lnet/minecraft/class_630;
 	FIELD field_20510 backLegs Lnet/minecraft/class_630;
 	FIELD field_20511 stinger Lnet/minecraft/class_630;
-	FIELD field_20512 leftAntenna Lnet/minecraft/class_630;
-	FIELD field_20513 rightAntenna Lnet/minecraft/class_630;
-	FIELD field_20514 bodyPitch F
 	FIELD field_32451 BONE Ljava/lang/String;
 		COMMENT The key of the bone model part, whose value is {@value}.
 		COMMENT
 		COMMENT <p>The bone is an invisible model part which is used to globally control the model.
 	FIELD field_32452 STINGER Ljava/lang/String;
 		COMMENT The key of the stinger model part, whose value is {@value}.
-	FIELD field_32453 LEFT_ANTENNA Ljava/lang/String;
-		COMMENT The key of the left antenna model part, whose value is {@value}.
-	FIELD field_32454 RIGHT_ANTENNA Ljava/lang/String;
-		COMMENT The key of the right antenna model part, whose value is {@value}.
 	FIELD field_32455 FRONT_LEGS Ljava/lang/String;
 		COMMENT The key of the front legs model part, whose value is {@value}.
 	FIELD field_32456 MIDDLE_LEGS Ljava/lang/String;
 		COMMENT The key of the middle legs model part, whose value is {@value}.
 	FIELD field_32457 BACK_LEGS Ljava/lang/String;
 		COMMENT The key of the back legs model part, whose value is {@value}.
-	FIELD field_52871 BABY_TRANSFORMER Lnet/minecraft/class_9953;
-	METHOD method_31981 getTexturedModelData ()Lnet/minecraft/class_5607;

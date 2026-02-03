@@ -17,10 +17,8 @@ CLASS net/minecraft/class_26 net/minecraft/world/PersistentStateManager
 	METHOD method_125 save ()V
 	METHOD method_17921 isCompressed (Ljava/io/PushbackInputStream;)Z
 		ARG 1 stream
-	METHOD method_17922 getFile (Ljava/lang/String;)Ljava/nio/file/Path;
-		ARG 1 id
-	METHOD method_17923 readNbt (Ljava/lang/String;Lnet/minecraft/class_4284;I)Lnet/minecraft/class_2487;
-		ARG 1 id
+	METHOD method_17922 getFile (Lnet/minecraft/class_2960;)Ljava/nio/file/Path;
+	METHOD method_17923 readNbt (Ljava/nio/file/Path;Lnet/minecraft/class_4284;I)Lnet/minecraft/class_2487;
 		ARG 2 dataFixTypes
 		ARG 3 currentSaveVersion
 	METHOD method_17924 getOrCreate (Lnet/minecraft/class_10741;)Lnet/minecraft/class_18;

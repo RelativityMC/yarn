@@ -1,9 +1,9 @@
 CLASS net/minecraft/class_4635 net/minecraft/world/gen/feature/HugeMushroomFeatureConfig
-	FIELD field_21230 capProvider Lnet/minecraft/class_4651;
-	FIELD field_21231 stemProvider Lnet/minecraft/class_4651;
-	FIELD field_21232 foliageRadius I
+	FIELD comp_1_189 capProvider Lnet/minecraft/class_4651;
+	FIELD comp_1_190 foliageRadius I
+	FIELD comp_1_191 stemProvider Lnet/minecraft/class_4651;
 	FIELD field_24885 CODEC Lcom/mojang/serialization/Codec;
-	METHOD <init> (Lnet/minecraft/class_4651;Lnet/minecraft/class_4651;I)V
+	METHOD <init> (Lnet/minecraft/class_4651;Lnet/minecraft/class_4651;ILnet/minecraft/class_6646;)V
 		ARG 1 capProvider
 		ARG 2 stemProvider
 		ARG 3 foliageRadius

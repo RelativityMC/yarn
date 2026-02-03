@@ -21,13 +21,10 @@ CLASS net/minecraft/class_524 net/minecraft/client/gui/screen/world/EditWorldScr
 		ARG 4 callback
 	METHOD method_2691 commit (Ljava/lang/String;)V
 		ARG 1 levelName
-	METHOD method_2701 backupLevel (Lnet/minecraft/class_32$class_5143;)Z
+	METHOD method_2701 backupLevel (Lnet/minecraft/class_32$class_5143;)Ljava/util/concurrent/CompletableFuture;
 		ARG 0 storageSession
-	METHOD method_54595 (Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_310;ZZ)V
-		ARG 3 backup
-		ARG 4 eraseCache
-	METHOD method_54596 (Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_4185;)V
-		ARG 2 button
+	METHOD method_54596 (Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_310;Lnet/minecraft/class_4185;)V
+		ARG 3 button
 	METHOD method_54598 (Lnet/minecraft/class_310;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_4185;)V
 		ARG 3 button
 	METHOD method_54599 create (Lnet/minecraft/class_310;Lnet/minecraft/class_32$class_5143;Lit/unimi/dsi/fastutil/booleans/BooleanConsumer;)Lnet/minecraft/class_524;

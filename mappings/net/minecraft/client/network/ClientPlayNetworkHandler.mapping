@@ -9,7 +9,6 @@ CLASS net/minecraft/class_634 net/minecraft/client/network/ClientPlayNetworkHand
 	FIELD field_3697 profile Lcom/mojang/authlib/GameProfile;
 	FIELD field_3699 world Lnet/minecraft/class_638;
 	FIELD field_3700 advancementHandler Lnet/minecraft/class_632;
-	FIELD field_16771 sessionId Ljava/util/UUID;
 	FIELD field_19144 chunkLoadDistance I
 	FIELD field_24321 worldProperties Lnet/minecraft/class_638$class_5271;
 	FIELD field_25063 combinedDynamicRegistries Lnet/minecraft/class_5455$class_6890;
@@ -84,7 +83,6 @@ CLASS net/minecraft/class_634 net/minecraft/client/network/ClientPlayNetworkHand
 	METHOD method_2880 getPlayerList ()Ljava/util/Collection;
 	METHOD method_2886 getCommandDispatcher ()Lcom/mojang/brigadier/CommandDispatcher;
 	METHOD method_2890 getWorld ()Lnet/minecraft/class_638;
-	METHOD method_16690 getSessionId ()Ljava/util/UUID;
 	METHOD method_19691 getActiveDeathProtector (Lnet/minecraft/class_1657;)Lnet/minecraft/class_1799;
 		ARG 0 player
 	METHOD method_29091 getRegistryManager ()Lnet/minecraft/class_5455$class_6890;

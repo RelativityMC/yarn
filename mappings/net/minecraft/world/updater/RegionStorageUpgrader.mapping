@@ -9,7 +9,6 @@ CLASS net/minecraft/class_1_43 net/minecraft/world/updater/RegionStorageUpgrader
 	FIELD field_1_653 world Lnet/minecraft/class_5321;
 	FIELD field_1_654 regions Ljava/util/List;
 	FIELD field_1_655 directoryName Ljava/lang/String;
-	FIELD field_1_656 updaterFactory Ljava/util/function/Supplier;
 	FIELD field_1_657 setNbtFuture Ljava/util/concurrent/CompletableFuture;
 	FIELD field_1_658 recreateRegionFiles Z
 	FIELD field_1_659 cumulativeRegionCount I
@@ -17,7 +16,7 @@ CLASS net/minecraft/class_1_43 net/minecraft/world/updater/RegionStorageUpgrader
 	FIELD field_1_661 fixersByVersion Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
 	FIELD field_1_662 type Ljava/lang/String;
 	FIELD field_1_663 progress Lnet/minecraft/class_1_27;
-	METHOD <init> (Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_4284;Ljava/lang/String;Ljava/lang/String;IZLnet/minecraft/class_1_27;ILnet/minecraft/class_2487;Ljava/util/function/Supplier;Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;)V
+	METHOD <init> (Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_4284;Ljava/lang/String;Ljava/lang/String;IZLnet/minecraft/class_1_27;ILnet/minecraft/class_2487;Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;)V
 		ARG 1 dataFixer
 		ARG 2 dataFixTypes
 		ARG 3 type
@@ -27,8 +26,7 @@ CLASS net/minecraft/class_1_43 net/minecraft/world/updater/RegionStorageUpgrader
 		ARG 7 progress
 		ARG 8 cumulativeRegionCount
 		ARG 9 context
-		ARG 10 updaterFactory
-		ARG 11 fixersByVersion
+		ARG 10 fixersByVersion
 	METHOD method_1_612 createVersionedChunkStorage (Lnet/minecraft/class_9240;Ljava/nio/file/Path;)Lnet/minecraft/class_3977;
 		ARG 1 key
 		ARG 2 directory
@@ -68,7 +66,6 @@ CLASS net/minecraft/class_1_43 net/minecraft/world/updater/RegionStorageUpgrader
 		FIELD field_1_666 dataFixer Lcom/mojang/datafixers/DataFixer;
 		FIELD field_1_667 fallbackVersion I
 		FIELD field_1_668 directoryName Ljava/lang/String;
-		FIELD field_1_669 updaterFactory Ljava/util/function/Supplier;
 		FIELD field_1_670 recreateRegionFiles Z
 		FIELD field_1_671 fixersByVersion Lit/unimi/dsi/fastutil/ints/Int2ObjectAVLTreeMap;
 		FIELD field_1_672 type Ljava/lang/String;
@@ -89,8 +86,6 @@ CLASS net/minecraft/class_1_43 net/minecraft/world/updater/RegionStorageUpgrader
 			ARG 1 fallbackVersion
 		METHOD method_1_631 directoryName (Ljava/lang/String;)Lnet/minecraft/class_1_43$class_1_44;
 			ARG 1 directoryName
-		METHOD method_1_632 updaterFactory (Ljava/util/function/Supplier;)Lnet/minecraft/class_1_43$class_1_44;
-			ARG 1 updaterFactory
 		METHOD method_1_633 recreateRegionFiles (Z)Lnet/minecraft/class_1_43$class_1_44;
 			ARG 1 recreateRegionFiles
 		METHOD method_1_634 fixersByVersion (Lit/unimi/dsi/fastutil/ints/Int2ObjectAVLTreeMap;)Lnet/minecraft/class_1_43$class_1_44;

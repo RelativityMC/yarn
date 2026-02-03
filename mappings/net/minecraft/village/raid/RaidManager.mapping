@@ -2,10 +2,9 @@ CLASS net/minecraft/class_3767 net/minecraft/village/raid/RaidManager
 	FIELD field_16637 currentTime I
 	FIELD field_16638 nextAvailableId I
 	FIELD field_16639 raids Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
-	FIELD field_30690 RAIDS Ljava/lang/String;
+	FIELD field_30690 RAIDS Lnet/minecraft/class_2960;
 	FIELD field_56442 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_56443 STATE_TYPE Lnet/minecraft/class_10741;
-	FIELD field_56444 END_STATE_TYPE Lnet/minecraft/class_10741;
 	METHOD <init> (Ljava/util/List;II)V
 		ARG 1 raids
 		ARG 2 nextAvailableId
@@ -36,8 +35,6 @@ CLASS net/minecraft/class_3767 net/minecraft/village/raid/RaidManager
 		ARG 1 raid
 	METHOD method_67379 (Lnet/minecraft/class_3767;)Ljava/lang/Integer;
 		ARG 0 raidManager
-	METHOD method_67380 getPersistentStateType (Lnet/minecraft/class_6880;)Lnet/minecraft/class_10741;
-		ARG 0 dimensionType
 	METHOD method_67381 (Lnet/minecraft/class_3767;)Ljava/lang/Integer;
 		ARG 0 raidManager
 	METHOD method_67382 (Lnet/minecraft/class_3767;)Ljava/util/List;

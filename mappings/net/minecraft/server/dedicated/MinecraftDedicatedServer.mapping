@@ -13,14 +13,14 @@ CLASS net/minecraft/class_3176 net/minecraft/server/dedicated/MinecraftDedicated
 	FIELD field_62278 lastManagementHeartbeatTime J
 	FIELD field_62279 managementServer Lnet/minecraft/class_11807;
 	FIELD field_62792 shouldPushTickTimeLog Z
-	METHOD <init> (Ljava/lang/Thread;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_3283;Lnet/minecraft/class_6904;Lnet/minecraft/class_3807;Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_7497;)V
+	METHOD <init> (Ljava/lang/Thread;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_3283;Lnet/minecraft/class_6904;Ljava/util/Optional;Lnet/minecraft/class_3807;Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_7497;)V
 		ARG 1 serverThread
 		ARG 2 session
 		ARG 3 dataPackManager
 		ARG 4 saveLoader
-		ARG 5 propertiesLoader
-		ARG 6 dataFixer
-		ARG 7 apiServices
+		ARG 6 propertiesLoader
+		ARG 7 dataFixer
+		ARG 8 apiServices
 	METHOD method_1_490 (Lnet/minecraft/class_12087$class_12089;Lnet/minecraft/class_3222;)Z
 		ARG 1 player
 	METHOD method_1_491 (Lnet/minecraft/class_3222;)V

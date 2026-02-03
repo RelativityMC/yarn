@@ -2,20 +2,12 @@ CLASS net/minecraft/class_3977 net/minecraft/world/storage/VersionedChunkStorage
 	FIELD field_17655 dataFixer Lcom/mojang/datafixers/DataFixer;
 	FIELD field_21494 worker Lnet/minecraft/class_4698;
 	FIELD field_63960 dataFixTypes Lnet/minecraft/class_4284;
-	FIELD field_63961 updaterFactory Ljava/util/function/Supplier;
 	METHOD <init> (Lnet/minecraft/class_9240;Ljava/nio/file/Path;Lcom/mojang/datafixers/DataFixer;ZLnet/minecraft/class_4284;)V
 		ARG 1 storageKey
 		ARG 2 directory
 		ARG 3 dataFixer
 		ARG 4 dsync
 		ARG 5 dataFixTypes
-	METHOD <init> (Lnet/minecraft/class_9240;Ljava/nio/file/Path;Lcom/mojang/datafixers/DataFixer;ZLnet/minecraft/class_4284;Ljava/util/function/Supplier;)V
-		ARG 1 storageKey
-		ARG 2 directory
-		ARG 3 dataFixer
-		ARG 4 dsync
-		ARG 5 dataFixTypes
-		ARG 6 updaterFactory
 	METHOD method_17907 updateChunkNbt (Lnet/minecraft/class_2487;ILnet/minecraft/class_2487;I)Lnet/minecraft/class_2487;
 		ARG 1 chunkNbt
 		ARG 2 fallbackVersion
@@ -47,5 +39,3 @@ CLASS net/minecraft/class_3977 net/minecraft/world/storage/VersionedChunkStorage
 		ARG 2 fallbackVersion
 	METHOD method_75897 completeAll (Z)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 sync
-	METHOD method_75898 markChunkDone (Lnet/minecraft/class_1923;)V
-		ARG 1 chunkPos

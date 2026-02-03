@@ -1,6 +1,4 @@
 CLASS net/minecraft/class_4525 net/minecraft/test/TestInstanceUtil
-	FIELD field_20579 testStructuresDirectoryName Ljava/nio/file/Path;
-	FIELD field_33173 TEST_STRUCTURES_DIRECTORY_NAME Ljava/lang/String;
 	METHOD method_22241 (Lnet/minecraft/class_1297;)Z
 		ARG 0 entity
 	METHOD method_22244 findContainingTestInstanceBlock (Lnet/minecraft/class_2338;ILnet/minecraft/class_3218;)Ljava/util/Optional;

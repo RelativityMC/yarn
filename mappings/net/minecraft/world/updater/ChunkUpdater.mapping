@@ -1,9 +1,0 @@
-CLASS net/minecraft/class_12242 net/minecraft/world/updater/ChunkUpdater
-	FIELD field_63959 PASSTHROUGH_FACTORY Ljava/util/function/Supplier;
-	METHOD method_1_264 update (Lnet/minecraft/class_2487;)Lnet/minecraft/class_2487;
-		ARG 1 chunkNbt
-	METHOD method_1_265 markChunkDone (Lnet/minecraft/class_1923;)V
-		ARG 1 chunkPos
-	METHOD method_1_266 outputVersion ()I
-	METHOD method_75893 (Lnet/minecraft/class_2487;)Lnet/minecraft/class_2487;
-		ARG 0 nbt

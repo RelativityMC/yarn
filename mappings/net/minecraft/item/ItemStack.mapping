@@ -50,7 +50,6 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 		COMMENT
 		COMMENT @see ItemStack#isEmpty
 	FIELD field_8038 item Lnet/minecraft/class_6880;
-	FIELD field_24093 holder Lnet/minecraft/class_1297;
 	FIELD field_24671 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_40211 DISABLED_TEXT Lnet/minecraft/class_2561;
 	FIELD field_48349 PACKET_CODEC Lnet/minecraft/class_9139;
@@ -149,12 +148,6 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 		COMMENT net.minecraft.component.DataComponentTypes#ENCHANTMENTS}.
 		COMMENT
 		COMMENT @see net.minecraft.enchantment.EnchantmentHelper#getEnchantments
-	METHOD method_7945 getFrame ()Lnet/minecraft/class_1533;
-		COMMENT {@return the item frame that holds the stack, or {@code null} if inapplicable}
-		COMMENT
-		COMMENT @see #isInFrame
-		COMMENT @see #setHolder
-		COMMENT @see #getHolder
 	METHOD method_7946 isStackable ()Z
 		COMMENT {@return whether the item stack can have item count above {@code 1}}
 		COMMENT
@@ -205,12 +198,6 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 	METHOD method_7958 hasGlint ()Z
 	METHOD method_7960 isEmpty ()Z
 		COMMENT {@return whether this item stack is empty}
-	METHOD method_7961 isInFrame ()Z
-		COMMENT {@return whether the item stack is in an item frame}
-		COMMENT
-		COMMENT @see #setHolder
-		COMMENT @see #getFrame
-		COMMENT @see #getHolder
 	METHOD method_7963 isDamageable ()Z
 		COMMENT {@return whether the item can be damaged (lose durability)}
 		COMMENT
@@ -318,22 +305,6 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 		COMMENT
 		COMMENT @see #isDamageable
 		COMMENT @see #getDamage
-	METHOD method_27319 getHolder ()Lnet/minecraft/class_1297;
-		COMMENT {@return the entity that holds the stack, or {@code null} if inapplicable}
-		COMMENT
-		COMMENT @see #isInFrame
-		COMMENT @see #getFrame
-		COMMENT @see #setHolder
-	METHOD method_27320 setHolder (Lnet/minecraft/class_1297;)V
-		COMMENT Sets the stack's holder to {@code holder}.
-		COMMENT
-		COMMENT <p>This is used by item frames and item entities, and does not need to be called
-		COMMENT for other entities.
-		COMMENT
-		COMMENT @see #isInFrame
-		COMMENT @see #getFrame
-		COMMENT @see #getHolder
-		ARG 1 holder
 	METHOD method_31575 onStackClicked (Lnet/minecraft/class_1735;Lnet/minecraft/class_5536;Lnet/minecraft/class_1657;)Z
 		ARG 1 slot
 		ARG 2 clickType

@@ -6,6 +6,7 @@ CLASS net/minecraft/class_3551 net/minecraft/datafixer/Schemas
 	METHOD method_15450 getFixer ()Lcom/mojang/datafixers/DataFixer;
 	METHOD method_15451 build (Lcom/mojang/datafixers/DataFixerBuilder;Lnet/minecraft/class_1_193$class_1_194;)V
 		ARG 0 builder
+		ARG 1 fileFixBuilder
 	METHOD method_15455 (Ljava/lang/String;)Ljava/lang/String;
 		ARG 0 id
 	METHOD method_15459 (Ljava/lang/String;)Ljava/lang/String;

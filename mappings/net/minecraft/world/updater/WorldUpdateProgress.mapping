@@ -8,6 +8,12 @@ CLASS net/minecraft/class_1_27 net/minecraft/world/updater/WorldUpdateProgress
 	FIELD field_1_217 status Lnet/minecraft/class_1_27$class_1_29;
 	FIELD field_1_218 totalChunkCount Ljava/util/concurrent/atomic/AtomicInteger;
 	FIELD field_1_220 progress F
+	FIELD field_1_1493 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_1494 lastLogTimeMs Ljava/util/concurrent/atomic/AtomicLong;
+	FIELD field_1_1495 fileFixProgress Lnet/minecraft/class_1_27$class_1_209;
+	FIELD field_1_1496 conversionProgress Lnet/minecraft/class_1_27$class_1_209;
+	FIELD field_1_1497 perStageProgress Lnet/minecraft/class_1_27$class_1_209;
+	FIELD field_1_1498 stage Lnet/minecraft/class_1_27$class_1_210;
 	METHOD method_1_492 addTotalChunkCount (I)V
 		ARG 1 count
 	METHOD method_1_494 getUpgradedChunkCount ()I
@@ -34,9 +40,31 @@ CLASS net/minecraft/class_1_27 net/minecraft/world/updater/WorldUpdateProgress
 		ARG 1 status
 	METHOD method_1_511 setProgress (F)V
 		ARG 1 progress
+	METHOD method_1_1785 incrementTotal (I)V
+		ARG 1 increment
+	METHOD method_1_1786 getFileFixProgress ()Lnet/minecraft/class_1_27$class_1_209;
+	METHOD method_1_1787 getConversionProgress ()Lnet/minecraft/class_1_27$class_1_209;
+	METHOD method_1_1788 getStage ()Lnet/minecraft/class_1_27$class_1_210;
+	METHOD method_1_1789 getPerStageProgress ()Lnet/minecraft/class_1_27$class_1_209;
+	METHOD method_1_1790 incrementConversionsDone ()V
+	METHOD method_1_1791 incrementConversionsDone (I)V
+		ARG 1 increment
+	METHOD method_1_1792 incrementFileFixDone ()V
+	METHOD method_1_1793 logProgress ()V
+	METHOD method_1_1794 setFileFixTotal (I)V
+		ARG 1 total
+	METHOD method_1_1795 setStage (Lnet/minecraft/class_1_27$class_1_210;)V
+		ARG 1 stage
 	CLASS class_1_28 Dummy
 	CLASS class_1_29 Status
-	CLASS class_1_210 Type
+	CLASS class_1_209 Ratio
+		FIELD field_1_1499 done Ljava/util/concurrent/atomic/AtomicInteger;
+		FIELD field_1_1500 total Ljava/util/concurrent/atomic/AtomicInteger;
+		METHOD method_1_1796 getDone ()I
+		METHOD method_1_1797 getProgress ()F
+		METHOD method_1_1798 reset ()V
+		METHOD method_1_1799 getTotal ()I
+	CLASS class_1_210 Stage
 		FIELD field_1_1505 name Ljava/lang/String;
 		FIELD field_1_1506 text Lnet/minecraft/class_2561;
 		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V

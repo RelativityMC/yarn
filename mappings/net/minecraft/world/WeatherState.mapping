@@ -1,0 +1,30 @@
+CLASS net/minecraft/class_1_216 net/minecraft/world/WeatherState
+	FIELD field_1_1527 TYPE Lnet/minecraft/class_10741;
+	FIELD field_1_1528 clearWeatherTime I
+	FIELD field_1_1529 rainTime I
+	FIELD field_1_1530 raining Z
+	FIELD field_1_1531 thunderTime I
+	FIELD field_1_1532 thundering Z
+	METHOD <init> (IIIZZ)V
+		ARG 1 clearWeatherTime
+		ARG 2 rainTime
+		ARG 3 thunderTime
+		ARG 4 raining
+		ARG 5 thundering
+	METHOD method_1_1823 getClearWeatherTime ()I
+	METHOD method_1_1824 getRainTime ()I
+	METHOD method_1_1825 getThunderTime ()I
+	METHOD method_1_1826 getRaining ()Z
+	METHOD method_1_1827 getThundering ()Z
+	METHOD method_1_1828 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_1829 setClearWeatherTime (I)V
+		ARG 1 clearWeatherTime
+	METHOD method_1_1830 setRainTime (I)V
+		ARG 1 rainTime
+	METHOD method_1_1831 setRaining (Z)V
+		ARG 1 raining
+	METHOD method_1_1832 setThunderTime (I)V
+		ARG 1 thunderTime
+	METHOD method_1_1833 setThundering (Z)V
+		ARG 1 thundering

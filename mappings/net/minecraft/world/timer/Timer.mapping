@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_236 net/minecraft/world/timer/Timer
+	FIELD field_1_1451 TYPE Lnet/minecraft/class_10741;
 	FIELD field_1311 eventCounter Lcom/google/common/primitives/UnsignedLong;
 	FIELD field_1312 eventsByName Lcom/google/common/collect/Table;
 	FIELD field_1313 events Ljava/util/Queue;

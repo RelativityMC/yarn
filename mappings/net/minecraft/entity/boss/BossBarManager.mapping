@@ -4,6 +4,8 @@ CLASS net/minecraft/class_3004 net/minecraft/entity/boss/BossBarManager
 	METHOD method_12968 getIds ()Ljava/util/Collection;
 	METHOD method_12969 getAll ()Ljava/util/Collection;
 	METHOD method_12970 add (Lnet/minecraft/class_5819;Lnet/minecraft/class_2960;Lnet/minecraft/class_2561;)Lnet/minecraft/class_3002;
+		ARG 1 random
+		ARG 2 id
 		ARG 3 displayName
 	METHOD method_12971 get (Lnet/minecraft/class_2960;)Lnet/minecraft/class_3002;
 		ARG 1 id

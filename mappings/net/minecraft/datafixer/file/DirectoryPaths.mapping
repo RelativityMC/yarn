@@ -1,0 +1,56 @@
+CLASS net/minecraft/class_1_206 net/minecraft/datafixer/file/DirectoryPaths
+	FIELD field_1_1480 DATA Lnet/minecraft/class_1_206;
+	FIELD field_1_1481 DIMENSIONS Lnet/minecraft/class_1_206;
+	FIELD field_1_1482 DIMENSION_DATA Lnet/minecraft/class_1_206;
+	FIELD field_1_1483 GENERATED Lnet/minecraft/class_1_206;
+	FIELD field_1_1484 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_1485 OLD_END Lnet/minecraft/class_1_206;
+	FIELD field_1_1486 OLD_NETHER Lnet/minecraft/class_1_206;
+	FIELD field_1_1488 SELF Lnet/minecraft/class_1_206;
+	FIELD field_1_1489 PLAYER_DATA Lnet/minecraft/class_1_206;
+	FIELD field_1_1490 REGION Lnet/minecraft/class_1_206;
+	METHOD method_1_1762 getSubDirectories (Ljava/nio/file/Path;)Ljava/util/List;
+		ARG 0 path
+	METHOD method_1_1763 findDimensionPaths (Ljava/nio/file/Path;)Ljava/util/List;
+		ARG 0 path
+	METHOD method_1_1764 ofDimensionData (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/class_1_206;
+		ARG 0 dimension
+		ARG 1 dataPath
+	METHOD method_1_1765 withRelative (Ljava/lang/String;)Lnet/minecraft/class_1_206;
+		ARG 1 path
+	METHOD method_1_1766 getDimensionPaths (Ljava/nio/file/Path;)Ljava/util/List;
+		ARG 0 saveDirectory
+	METHOD method_1_1767 get (Ljava/nio/file/Path;)Ljava/util/List;
+		ARG 1 path
+	METHOD method_1_1768 ofCombined ([Lnet/minecraft/class_1_206;)Lnet/minecraft/class_1_206;
+		ARG 1 directoriesPaths
+	METHOD method_1_1769 (Ljava/nio/file/Path;)Z
+		ARG 0 pathx
+	METHOD method_1_1770 (Ljava/nio/file/Path;)Z
+		ARG 0 pathx
+	METHOD method_1_1771 (Ljava/nio/file/Path;)Ljava/util/stream/Stream;
+		ARG 0 pathx
+	METHOD method_1_1772 (Ljava/lang/String;Ljava/lang/String;Ljava/nio/file/Path;)Ljava/util/List;
+		ARG 2 path
+	METHOD method_1_1773 (Ljava/lang/String;Ljava/nio/file/Path;)Ljava/util/List;
+		ARG 1 pathx
+	METHOD method_1_1774 ([Lnet/minecraft/class_1_206;Ljava/nio/file/Path;)Ljava/util/List;
+		ARG 1 path
+	METHOD method_1_1775 (Lnet/minecraft/class_1_206;Ljava/nio/file/Path;)Ljava/util/List;
+		ARG 2 path
+	METHOD method_1_1776 (Lnet/minecraft/class_1_206;Ljava/nio/file/Path;)Ljava/util/stream/Stream;
+		ARG 1 pathx
+	METHOD method_1_1777 (Ljava/nio/file/Path;)Ljava/util/List;
+		ARG 0 path
+	METHOD method_1_1778 (Ljava/nio/file/Path;)Ljava/util/List;
+		ARG 0 path
+	METHOD method_1_1779 (Ljava/nio/file/Path;)Ljava/util/List;
+		ARG 0 path
+	METHOD method_1_1780 (Ljava/nio/file/Path;)Ljava/util/List;
+		ARG 0 path
+	METHOD method_1_1781 (Ljava/nio/file/Path;)Ljava/util/List;
+		ARG 0 path
+	METHOD method_1_1782 (Ljava/nio/file/Path;)Ljava/util/List;
+		ARG 0 path
+	METHOD method_1_1783 compose (Lnet/minecraft/class_1_206;)Lnet/minecraft/class_1_206;
+		ARG 1 relativePaths

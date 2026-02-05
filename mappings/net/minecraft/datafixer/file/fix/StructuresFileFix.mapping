@@ -1,0 +1,13 @@
+CLASS net/minecraft/class_1_245 net/minecraft/datafixer/file/fix/StructuresFileFix
+	FIELD field_1_1606 THE_END Lnet/minecraft/class_5321;
+	FIELD field_1_1607 END_CITY Ljava/util/List;
+	FIELD field_1_1608 STRUCTURE_NAME_MAP Ljava/util/Map;
+	FIELD field_1_1609 THE_NETHER Lnet/minecraft/class_5321;
+	FIELD field_1_1610 FORTRESS Ljava/util/List;
+	FIELD field_1_1611 OVERWORLD Lnet/minecraft/class_5321;
+	METHOD method_1_1927 (Lcom/mojang/serialization/Dynamic;Ljava/util/List;Lnet/minecraft/class_1_27;)V
+		ARG 2 progress
+	METHOD method_1_1938 (Ljava/util/HashMap;)V
+		ARG 0 map
+	METHOD method_1_1943 (Lit/unimi/dsi/fastutil/longs/Long2ObjectMap;Lnet/minecraft/class_1_196;Lnet/minecraft/class_2487;Lnet/minecraft/class_1_27;)V
+		ARG 3 progress

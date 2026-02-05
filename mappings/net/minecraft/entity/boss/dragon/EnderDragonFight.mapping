@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_2881 net/minecraft/entity/boss/dragon/EnderDragonFight
+	FIELD field_1_1619 BOSS_BAR_NAME Lnet/minecraft/class_2561;
+	FIELD field_1_1620 TYPE Lnet/minecraft/class_10741;
 	FIELD field_13105 crystalCountTimer I
 	FIELD field_13106 endCrystalsAlive I
 	FIELD field_13107 dragonSeenTimer I
@@ -24,6 +26,41 @@ CLASS net/minecraft/class_2881 net/minecraft/entity/boss/dragon/EnderDragonFight
 	FIELD field_44876 showBossBarPredicate Ljava/util/function/Predicate;
 	FIELD field_44877 origin Lnet/minecraft/class_2338;
 	FIELD field_44878 skipChunksLoadedCheck Z
+	METHOD <init> (ZZZLjava/util/Optional;ILjava/util/Optional;Ljava/util/Optional;Ljava/util/List;Ljava/util/List;)V
+		ARG 1 doLegacyCheck
+		ARG 2 dragonKilled
+		ARG 3 previouslyKilled
+		ARG 4 dragonSpawnState
+		ARG 5 spawnStateTimer
+		ARG 6 dragonUuid
+		ARG 7 exitPortalLocation
+		ARG 8 gateways
+		ARG 9 crystals
+	METHOD method_1_1962 ofDefault ()Lnet/minecraft/class_2881;
+	METHOD method_1_1963 initWorld (Lnet/minecraft/class_3218;JLnet/minecraft/class_2338;)V
+		ARG 1 world
+		ARG 2 gatewaySeed
+		ARG 4 origin
+	METHOD method_1_1965 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_1966 (Lnet/minecraft/class_2881;)Ljava/lang/Boolean;
+		ARG 0 state
+	METHOD method_1_1967 (Lnet/minecraft/class_2881;)Ljava/lang/Boolean;
+		ARG 0 state
+	METHOD method_1_1968 (Lnet/minecraft/class_2881;)Ljava/lang/Boolean;
+		ARG 0 state
+	METHOD method_1_1969 (Lnet/minecraft/class_2881;)Ljava/util/Optional;
+		ARG 0 state
+	METHOD method_1_1970 (Lnet/minecraft/class_2881;)Ljava/lang/Integer;
+		ARG 0 state
+	METHOD method_1_1971 (Lnet/minecraft/class_2881;)Ljava/util/Optional;
+		ARG 0 state
+	METHOD method_1_1972 (Lnet/minecraft/class_2881;)Ljava/util/Optional;
+		ARG 0 state
+	METHOD method_1_1973 (Lnet/minecraft/class_2881;)Ljava/util/List;
+		ARG 0 state
+	METHOD method_1_1974 (Lnet/minecraft/class_2881;)Ljava/util/List;
+		ARG 0 state
 	METHOD method_12514 worldContainsEndPortal ()Z
 	METHOD method_12515 convertFromLegacy ()V
 	METHOD method_12516 generateEndGateway (Lnet/minecraft/class_2338;)V

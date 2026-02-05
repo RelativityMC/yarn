@@ -1,0 +1,35 @@
+CLASS net/minecraft/class_1_193
+	FIELD field_1_1427 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_1428 dataFixers Lcom/mojang/datafixers/DataFixerBuilder$Result;
+	FIELD field_1_1429 fixers Ljava/util/List;
+	FIELD field_1_1430 maxVersion I
+	METHOD <init> (Lcom/mojang/datafixers/DataFixerBuilder$Result;Ljava/util/List;I)V
+		ARG 1 dataFixers
+		ARG 2 fixers
+		ARG 3 maxVersion
+	METHOD method_1_1696 (Lnet/minecraft/class_1_27;IILjava/nio/file/Path;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 progress
+	METHOD method_1_1697 count (Ljava/util/List;Lnet/minecraft/class_1_27;)V
+		ARG 2 progress
+	METHOD method_1_1699 (Lnet/minecraft/class_32$class_5143;Lcom/mojang/serialization/Dynamic;Lnet/minecraft/class_1_27;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 storageSession
+		ARG 3 progress
+	METHOD method_1_1700 (Lnet/minecraft/class_32$class_5143;Lcom/mojang/serialization/Dynamic;Lnet/minecraft/class_1_27;I)Lcom/mojang/serialization/Dynamic;
+		ARG 1 storageSession
+		ARG 3 progress
+	CLASS class_1_194 Builder
+		FIELD field_1_1431 dataVersion I
+		FIELD field_1_1432 fixers Ljava/util/List;
+		FIELD field_1_1433 schemas Ljava/util/List;
+		FIELD field_1_1434 maxVersion I
+		METHOD <init> (I)V
+			ARG 1 dataVersion
+		METHOD method_1_1710 addFixer (Lnet/minecraft/class_1_187;)V
+			ARG 1 fix
+		METHOD method_1_1711 addSchema (Lcom/mojang/datafixers/DataFixerBuilder;ILjava/util/function/BiFunction;)Lcom/mojang/datafixers/schemas/Schema;
+			ARG 1 dataFixerBuilder
+			ARG 2 version
+			ARG 3 factory
+		METHOD method_1_1712 build (Lcom/mojang/datafixers/DataFixerBuilder$Result;)Lnet/minecraft/class_1_193;
+			ARG 1 dataFixers
+	CLASS class_1_195 FileSystemCapabilities

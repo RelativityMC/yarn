@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_4643 net/minecraft/world/gen/feature/TreeFeatureConfig
+	FIELD field_1_1675 CAN_REPLACE_BELOW_TRUNK Lnet/minecraft/class_6646;
+	FIELD field_1_1676 DEFAULT_BELOW_TRUNK_PROVIDER Lnet/minecraft/class_7400;
 	FIELD field_21288 trunkProvider Lnet/minecraft/class_4651;
 	FIELD field_21290 decorators Ljava/util/List;
 	FIELD field_24135 foliagePlacer Lnet/minecraft/class_4647;
@@ -18,6 +20,7 @@ CLASS net/minecraft/class_4643 net/minecraft/world/gen/feature/TreeFeatureConfig
 		ARG 6 minimumSize
 		ARG 7 decorators
 		ARG 8 ignoreVines
+		ARG 9 belowTrunkProvider
 	METHOD method_28811 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
 	METHOD method_28814 (Lnet/minecraft/class_4643;)Lnet/minecraft/class_5201;
@@ -46,12 +49,16 @@ CLASS net/minecraft/class_4643 net/minecraft/world/gen/feature/TreeFeatureConfig
 		FIELD field_24142 minimumSize Lnet/minecraft/class_5201;
 		FIELD field_24143 ignoreVines Z
 		FIELD field_29282 foliageProvider Lnet/minecraft/class_4651;
-		FIELD field_29283 dirtProvider Lnet/minecraft/class_7400;
+		FIELD field_29283 belowTrunkProvider Lnet/minecraft/class_7400;
 		FIELD field_38768 rootPlacer Ljava/util/Optional;
 		METHOD <init> (Lnet/minecraft/class_4651;Lnet/minecraft/class_5141;Lnet/minecraft/class_4651;Lnet/minecraft/class_4647;Ljava/util/Optional;Lnet/minecraft/class_5201;Lnet/minecraft/class_7400;)V
 			ARG 1 trunkProvider
 			ARG 2 trunkPlacer
 			ARG 3 foliageProvider
+			ARG 4 foliagePlacer
+			ARG 5 rootPlacer
+			ARG 6 minimumSize
+			ARG 7 belowTrunkProvider
 		METHOD <init> (Lnet/minecraft/class_4651;Lnet/minecraft/class_5141;Lnet/minecraft/class_4651;Lnet/minecraft/class_4647;Lnet/minecraft/class_5201;)V
 			ARG 1 trunkProvider
 			ARG 2 trunkPlacer
@@ -62,4 +69,5 @@ CLASS net/minecraft/class_4643 net/minecraft/world/gen/feature/TreeFeatureConfig
 		METHOD method_27374 ignoreVines ()Lnet/minecraft/class_4643$class_4644;
 		METHOD method_27376 decorators (Ljava/util/List;)Lnet/minecraft/class_4643$class_4644;
 			ARG 1 decorators
-		METHOD method_34346 dirtProvider (Lnet/minecraft/class_7400;)Lnet/minecraft/class_4643$class_4644;
+		METHOD method_34346 belowTrunkProvider (Lnet/minecraft/class_7400;)Lnet/minecraft/class_4643$class_4644;
+			ARG 1 belowTrunkProvider

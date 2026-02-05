@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1_267 net/minecraft/datafixer/fix/LevelSplitSavedDataPreparationFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD method_1_2028 fixDragonFight (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+	METHOD method_1_2029 fixTimer (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+	METHOD method_1_2030 fixWanderingTrader (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+	METHOD method_1_2031 fixWeather (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+	METHOD method_1_2032 fixWorldGenSettings (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;

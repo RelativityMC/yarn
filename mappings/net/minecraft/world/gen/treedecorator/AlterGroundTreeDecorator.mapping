@@ -1,6 +1,8 @@
 CLASS net/minecraft/class_4658 net/minecraft/world/gen/treedecorator/AlterGroundTreeDecorator
 	FIELD field_21316 provider Lnet/minecraft/class_7400;
 	FIELD field_24957 CODEC Lcom/mojang/serialization/MapCodec;
+	METHOD <init> (Lnet/minecraft/class_7400;)V
+		ARG 1 provider
 	METHOD method_23460 (ILnet/minecraft/class_2338;)Z
 		ARG 1 pos
 	METHOD method_23461 (Lnet/minecraft/class_4662$class_7402;Lnet/minecraft/class_2338;)V

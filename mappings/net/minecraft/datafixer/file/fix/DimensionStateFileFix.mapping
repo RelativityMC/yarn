@@ -1,0 +1,18 @@
+CLASS net/minecraft/class_1_255 net/minecraft/datafixer/file/fix/DimensionStateFileFix
+	FIELD field_1_1626 NIL_UUID Ljava/util/UUID;
+	FIELD field_1_1627 OVERWORLD Ljava/lang/String;
+	FIELD field_1_1628 THE_END Ljava/lang/String;
+	FIELD field_1_1629 THE_NETHER Ljava/lang/String;
+	FIELD field_1_1630 WORLD_BORDER_DATA_PATH Ljava/lang/String;
+	FIELD field_1_1631 WORLD_BORDER Ljava/lang/String;
+	METHOD method_1_1985 fixSingleplayerData (Lnet/minecraft/class_1_203;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+	METHOD method_1_1986 fixPersistentState (Lnet/minecraft/class_1_203;Lcom/mojang/serialization/Dynamic;Ljava/lang/String;)Lcom/mojang/serialization/Dynamic;
+		ARG 2 elementName
+	METHOD method_1_1987 fixWorldBorder (Lnet/minecraft/class_1_203;Lcom/mojang/serialization/Dynamic;D)V
+	METHOD method_1_1988 fixWorldBorders (Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 overworld
+		ARG 1 theNether
+		ARG 2 theEnd
+	METHOD method_1_1989 fixWorldGenSettings (Lnet/minecraft/class_1_203;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+	METHOD method_1_1993 (Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_27;)V
+		ARG 14 progress

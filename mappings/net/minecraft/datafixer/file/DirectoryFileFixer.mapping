@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_234 net/minecraft/datafixer/file/DirectoryFileFixer
+	FIELD comp_1_170 fileFixers Ljava/util/List;
+	FIELD comp_1_171 directories Lnet/minecraft/class_1_206;
+	METHOD comp_1_170 fileFixers ()Ljava/util/List;
+	METHOD comp_1_171 directories ()Lnet/minecraft/class_1_206;

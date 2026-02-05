@@ -1,0 +1,43 @@
+CLASS net/minecraft/class_1_273 net/minecraft/client/gui/screen/world/UpgradeWorldScreen
+	FIELD field_1_1672 SCANNING_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_1674 progress Lnet/minecraft/class_1_27;
+	METHOD <init> (Lnet/minecraft/class_1_27;)V
+		ARG 1 progress
+	METHOD method_1_2063 drawFileFixProgress (Lnet/minecraft/class_332;IIII)V
+		ARG 1 context
+		ARG 2 centerX
+		ARG 3 y
+		ARG 4 current
+		ARG 5 total
+	METHOD method_1_2064 drawConversionProgress (Lnet/minecraft/class_332;IIII)V
+		ARG 1 context
+		ARG 2 centerX
+		ARG 3 y
+		ARG 4 converted
+		ARG 5 total
+	METHOD method_1_2065 renderProgress (Lnet/minecraft/class_332;II)V
+		ARG 1 context
+		ARG 2 centerX
+		ARG 3 y
+	METHOD method_1_2066 drawProgressBar (Lnet/minecraft/class_332;IIF)V
+		ARG 1 context
+		ARG 2 centerX
+		ARG 3 y
+		ARG 4 progress
+	METHOD method_1_2067 drawScanningText (Lnet/minecraft/class_332;II)V
+		ARG 1 context
+		ARG 2 centerX
+		ARG 3 y
+	METHOD method_1_2068 drawTitle (Lnet/minecraft/class_332;II)V
+		ARG 1 context
+		ARG 2 centerX
+		ARG 3 y
+	METHOD method_1_2069 drawPercentage (Lnet/minecraft/class_332;IIF)V
+		ARG 1 context
+		ARG 2 centerX
+		ARG 3 y
+		ARG 4 percentage
+	METHOD method_1_2070 drawStageTitle (Lnet/minecraft/class_332;II)V
+		ARG 1 context
+		ARG 2 centerX
+		ARG 3 y

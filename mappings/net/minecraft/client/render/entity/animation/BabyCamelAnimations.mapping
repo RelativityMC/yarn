@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_258 net/minecraft/client/render/entity/animation/BabyCamelAnimations
+	FIELD field_1_1632 DASHING Lnet/minecraft/class_7184;
+	FIELD field_1_1633 IDLING Lnet/minecraft/class_7184;
+	FIELD field_1_1634 SITTING_TRANSITION Lnet/minecraft/class_7184;
+	FIELD field_1_1635 SITTING Lnet/minecraft/class_7184;
+	FIELD field_1_1636 STANDING_TRANSITION Lnet/minecraft/class_7184;
+	FIELD field_1_1637 WALKING Lnet/minecraft/class_7184;

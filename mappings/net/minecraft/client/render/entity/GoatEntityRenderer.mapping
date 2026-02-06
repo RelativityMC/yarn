@@ -1,2 +1,3 @@
 CLASS net/minecraft/class_6256 net/minecraft/client/render/entity/GoatEntityRenderer
+	FIELD field_1_1545 BABY_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_32923 TEXTURE Lnet/minecraft/class_2960;

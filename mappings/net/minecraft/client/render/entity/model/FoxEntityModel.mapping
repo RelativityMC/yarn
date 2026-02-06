@@ -47,3 +47,13 @@ CLASS net/minecraft/class_4041 net/minecraft/client/render/entity/model/FoxEntit
 	FIELD field_27416 leftHindLeg Lnet/minecraft/class_630;
 	FIELD field_27417 rightFrontLeg Lnet/minecraft/class_630;
 	FIELD field_27418 leftFrontLeg Lnet/minecraft/class_630;
+	METHOD method_1_1756 setSneakingAngles (Lnet/minecraft/class_10027;)V
+		ARG 1 state
+	METHOD method_1_1757 setChasingAngles (Lnet/minecraft/class_10027;)V
+		ARG 1 state
+	METHOD method_1_1758 setSittingAngles (Lnet/minecraft/class_10027;)V
+		ARG 1 state
+	METHOD method_1_1759 setSleepingAngles (Lnet/minecraft/class_10027;)V
+		ARG 1 state
+	METHOD method_1_1760 setWalkingAngles (Lnet/minecraft/class_10027;)V
+		ARG 1 state

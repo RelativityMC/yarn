@@ -22,3 +22,10 @@ CLASS net/minecraft/class_1_151 net/minecraft/entity/ai/brain/MemoryMap
 	CLASS class_1_152 Entry
 		METHOD method_1_1361 of (Lnet/minecraft/class_4140;Lnet/minecraft/class_1_231;)Lnet/minecraft/class_1_151$class_1_152;
 			ARG 0 type
+			ARG 1 value
+	CLASS class_1_211 Builder
+		FIELD field_1_1507 mapBuilder Lcom/google/common/collect/ImmutableMap$Builder;
+		METHOD method_1_1802 put (Lnet/minecraft/class_4140;Lnet/minecraft/class_1_231;)Lnet/minecraft/class_1_151$class_1_211;
+			ARG 1 type
+			ARG 2 value
+		METHOD method_1_1803 build ()Lnet/minecraft/class_1_151;

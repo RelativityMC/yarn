@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_34 net/minecraft/world/level/storage/LevelSummary
+	FIELD field_1_1510 UPGRADE_AND_PLAY_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_1511 requiresFileFixing Z
 	FIELD field_205 name Ljava/lang/String;
 	FIELD field_209 requiresConversion Z
 	FIELD field_23772 locked Z
@@ -13,10 +15,13 @@ CLASS net/minecraft/class_34 net/minecraft/world/level/storage/LevelSummary
 		ARG 2 versionInfo
 		ARG 3 name
 		ARG 4 requiresConversion
+		ARG 5 requiresFileFixing
+		ARG 6 locked
 		ARG 7 experimental
 		ARG 8 iconPath
 	METHOD compareTo (Ljava/lang/Object;)I
 		ARG 1 other
+	METHOD method_1_1808 requiresFileFixing ()Z
 	METHOD method_247 getGameMode ()Lnet/minecraft/class_1934;
 	METHOD method_248 getName ()Ljava/lang/String;
 	METHOD method_249 getLastPlayed ()J

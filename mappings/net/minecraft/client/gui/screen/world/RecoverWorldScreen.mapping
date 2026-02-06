@@ -28,5 +28,7 @@ CLASS net/minecraft/class_8897 net/minecraft/client/gui/screen/world/RecoverWorl
 		ARG 3 exception
 	METHOD method_54585 tryRestore (Lnet/minecraft/class_310;)V
 		ARG 1 client
+	METHOD method_54586 (Lnet/minecraft/class_310;Lnet/minecraft/class_4185;)V
+		ARG 2 button
 	METHOD method_54587 (Lnet/minecraft/class_4185;)V
 		ARG 1 button

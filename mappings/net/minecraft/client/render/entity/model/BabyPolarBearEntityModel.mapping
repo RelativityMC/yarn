@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_260 net/minecraft/client/render/entity/model/BabyPolarBearEntityModel
+	METHOD method_1_2006 getTexturedModelData ()Lnet/minecraft/class_5607;

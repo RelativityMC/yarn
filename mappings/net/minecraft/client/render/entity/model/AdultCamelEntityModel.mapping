@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_244 net/minecraft/client/render/entity/model/AdultCamelEntityModel
+	METHOD method_1_1925 getTexturedModelData ()Lnet/minecraft/class_5607;
+	METHOD method_1_1926 getModelData ()Lnet/minecraft/class_5609;

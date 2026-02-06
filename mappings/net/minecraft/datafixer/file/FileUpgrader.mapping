@@ -1,0 +1,68 @@
+CLASS net/minecraft/class_1_193 net/minecraft/datafixer/file/FileUpgrader
+	FIELD field_1_1426 FILE_REORGANIZATION_VERSION I
+		COMMENT This is between 26.1 Snapshot 5 and 26.1 Snapshot 6.
+	FIELD field_1_1427 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_1428 dataFixers Lcom/mojang/datafixers/DataFixerBuilder$Result;
+	FIELD field_1_1429 fileFixes Ljava/util/List;
+	FIELD field_1_1430 maxVersion I
+	METHOD <init> (Lcom/mojang/datafixers/DataFixerBuilder$Result;Ljava/util/List;I)V
+		ARG 1 dataFixers
+		ARG 2 fileFixes
+		ARG 3 maxVersion
+	METHOD method_1_1695 writeVersionInfo (Lcom/mojang/serialization/Dynamic;I)Lcom/mojang/serialization/Dynamic;
+		ARG 0 levelDat
+		ARG 1 newVersion
+	METHOD method_1_1696 startUpgrading (Lnet/minecraft/class_1_27;IILjava/nio/file/Path;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 progress
+		ARG 2 oldVersion
+		ARG 3 newVersion
+		ARG 4 directory
+	METHOD method_1_1697 count (Ljava/util/List;Lnet/minecraft/class_1_27;)V
+		ARG 1 fileFixes
+		ARG 2 progress
+	METHOD method_1_1698 getCapabilities (Ljava/nio/file/Path;)Lnet/minecraft/class_1_193$class_1_195;
+		ARG 0 path
+	METHOD method_1_1699 upgradeFileStructure (Lnet/minecraft/class_32$class_5143;Lcom/mojang/serialization/Dynamic;Lnet/minecraft/class_1_27;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 storageSession
+		ARG 2 levelProperties
+		ARG 3 progress
+	METHOD method_1_1700 upgradeFileStructure (Lnet/minecraft/class_32$class_5143;Lcom/mojang/serialization/Dynamic;Lnet/minecraft/class_1_27;I)Lcom/mojang/serialization/Dynamic;
+		ARG 1 storageSession
+		ARG 2 levelProperties
+		ARG 3 progress
+		ARG 4 newVersion
+	METHOD method_1_1701 getFileFixes (II)Ljava/util/List;
+		ARG 1 oldVersion
+		ARG 2 newVersion
+	METHOD method_1_1702 (IILnet/minecraft/class_1_187;)Z
+		ARG 2 fixer
+	METHOD method_1_1704 requiresFileFixing (I)Z
+		ARG 1 version
+	METHOD method_1_1705 isAtomicMoveSupported (Ljava/nio/file/Path;)Z
+		ARG 0 path
+	METHOD method_1_1706 areHardLinksSupported (Ljava/nio/file/Path;)Z
+		ARG 0 path
+	METHOD method_1_1707 fixFilesInWorld (Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_1_270;)V
+		ARG 0 session
+		ARG 1 fileSystem
+	METHOD method_1_1708 adjustVersion (I)I
+		ARG 0 version
+	METHOD method_1_1709 fixLevelDat (Ljava/nio/file/Path;I)Lcom/mojang/serialization/Dynamic;
+		ARG 1 directory
+		ARG 2 newVersion
+	CLASS class_1_194 Builder
+		FIELD field_1_1431 dataVersion I
+		FIELD field_1_1432 fixers Ljava/util/List;
+		FIELD field_1_1433 schemas Ljava/util/List;
+		FIELD field_1_1434 maxVersion I
+		METHOD <init> (I)V
+			ARG 1 dataVersion
+		METHOD method_1_1710 addFixer (Lnet/minecraft/class_1_187;)V
+			ARG 1 fix
+		METHOD method_1_1711 addSchema (Lcom/mojang/datafixers/DataFixerBuilder;ILjava/util/function/BiFunction;)Lcom/mojang/datafixers/schemas/Schema;
+			ARG 1 dataFixerBuilder
+			ARG 2 version
+			ARG 3 factory
+		METHOD method_1_1712 build (Lcom/mojang/datafixers/DataFixerBuilder$Result;)Lnet/minecraft/class_1_193;
+			ARG 1 dataFixers
+	CLASS class_1_195 FileSystemCapabilities

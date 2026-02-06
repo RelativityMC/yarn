@@ -1,6 +1,11 @@
 CLASS net/minecraft/class_3551 net/minecraft/datafixer/Schemas
+	FIELD field_1_1407 FIXER Lcom/mojang/datafixers/DataFixerBuilder$Result;
+	FIELD field_1_1408 FILE_UPGRADER Lnet/minecraft/class_1_193;
 	FIELD field_15775 EMPTY_IDENTIFIER_NORMALIZE Ljava/util/function/BiFunction;
 	FIELD field_15776 EMPTY Ljava/util/function/BiFunction;
+	FIELD field_38844 EARLIEST_VERSION_WITH_CURRENT_TERRAIN_GENERATION I
+		COMMENT Versions before this always need blending. Later versions might need blending
+		COMMENT for chunks that have a {@code blending_data} tag in their NBT data.
 	METHOD method_15449 (Ljava/lang/String;)Ljava/lang/String;
 		ARG 0 id
 	METHOD method_15450 getFixer ()Lcom/mojang/datafixers/DataFixer;
@@ -11,7 +16,7 @@ CLASS net/minecraft/class_3551 net/minecraft/datafixer/Schemas
 		ARG 0 id
 	METHOD method_15459 (Ljava/lang/String;)Ljava/lang/String;
 		ARG 0 id
-	METHOD method_15471 create ()Lnet/minecraft/class_1_193;
+	METHOD method_15471 getFileUpgrader ()Lnet/minecraft/class_1_193;
 	METHOD method_30068 replacing (Ljava/lang/String;Ljava/lang/String;)Ljava/util/function/UnaryOperator;
 		ARG 0 old
 		ARG 1 current

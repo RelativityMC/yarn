@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_31 net/minecraft/world/level/LevelProperties
+	FIELD field_1_1559 SINGLEPLAYER_UUID Ljava/lang/String;
+	FIELD field_1_1560 singleplayerUuid Ljava/util/UUID;
 	FIELD field_158 version I
 	FIELD field_185 initialized Z
 	FIELD field_189 time J
@@ -14,6 +16,7 @@ CLASS net/minecraft/class_31 net/minecraft/world/level/LevelProperties
 	FIELD field_46838 LEVEL_NAME_KEY Ljava/lang/String;
 	FIELD field_63052 spawnPoint Lnet/minecraft/class_5217$class_12064;
 	METHOD <init> (Ljava/util/UUID;ZLnet/minecraft/class_5217$class_12064;JIZLjava/util/Set;Ljava/util/Set;Lnet/minecraft/class_1940;Lnet/minecraft/class_31$class_7729;Lcom/mojang/serialization/Lifecycle;)V
+		ARG 1 singleplayerUuid
 		ARG 2 modded
 		ARG 3 spawnPoint
 		ARG 4 time
@@ -28,6 +31,22 @@ CLASS net/minecraft/class_31 net/minecraft/world/level/LevelProperties
 		ARG 1 levelInfo
 		ARG 2 specialProperty
 		ARG 3 lifecycle
+	METHOD method_1_1849 fromDynamic (Lcom/mojang/serialization/Dynamic;Lnet/minecraft/class_1940;Lnet/minecraft/class_31$class_7729;Lcom/mojang/serialization/Lifecycle;)Lnet/minecraft/class_31;
+		ARG 0 data
+		ARG 1 levelInfo
+		ARG 2 specialProperty
+		ARG 3 lifecycle
+	METHOD method_1_1850 writeNbt (Lnet/minecraft/class_2487;Ljava/util/UUID;)V
+		ARG 1 tagOut
+		ARG 2 singleplayerUuid
+	METHOD method_1_1851 writeLastPlayed (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 dynamic
+	METHOD method_1_1852 writeLastPlayed (Lnet/minecraft/class_2487;)V
+		ARG 0 tagOut
+	METHOD method_1_1853 writeVersionInfo (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 dynamic
+	METHOD method_1_1854 writeVersionInfo (Lnet/minecraft/class_2487;)V
+		ARG 0 tagOut
 	METHOD method_29032 (Lcom/mojang/serialization/Dynamic;)Ljava/util/stream/Stream;
 		ARG 0 removedFeatures
 	METHOD method_49901 (Lcom/mojang/serialization/Dynamic;)Ljava/util/stream/Stream;

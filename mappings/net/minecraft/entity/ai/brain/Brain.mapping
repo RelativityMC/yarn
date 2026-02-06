@@ -30,6 +30,7 @@ CLASS net/minecraft/class_4095 net/minecraft/entity/ai/brain/Brain
 		ARG 2 sensors
 		ARG 3 taskLists
 		ARG 4 memoryMap
+		ARG 5 random
 	METHOD method_1_845 createProfile (Ljava/util/Collection;)Lnet/minecraft/class_4095$class_5303;
 		ARG 0 sensors
 	METHOD method_1_1239 (Lnet/minecraft/class_1309;)Ljava/util/List;
@@ -43,6 +44,23 @@ CLASS net/minecraft/class_4095 net/minecraft/entity/ai/brain/Brain
 		ARG 0 sensors
 		ARG 1 taskListFactory
 	METHOD method_1_1243 addMemory (Lnet/minecraft/class_1_151$class_1_152;)V
+		ARG 1 entry
+	METHOD method_1_1654 callMemoryConsumer (Lnet/minecraft/class_4095$class_1_188;Lnet/minecraft/class_4140;Lnet/minecraft/class_4831;)V
+		ARG 0 callback
+		ARG 1 type
+		ARG 2 memory
+	METHOD method_1_1655 forEachMemory (Lnet/minecraft/class_4095$class_1_188;)V
+		ARG 1 callback
+	METHOD method_1_1656 getMemoryOrThrow (Lnet/minecraft/class_4140;)Lnet/minecraft/class_4831;
+		ARG 1 type
+	METHOD method_1_1657 getMemory (Lnet/minecraft/class_4140;)Lnet/minecraft/class_4831;
+		ARG 1 type
+	METHOD method_1_1658 (Lnet/minecraft/class_4095$class_1_188;Lnet/minecraft/class_4140;Lnet/minecraft/class_4831;)V
+		ARG 1 type
+		ARG 2 memory
+	METHOD method_1_1659 initializeMemory (Lnet/minecraft/class_4140;)V
+		ARG 1 type
+	METHOD method_1_1660 setMemory (Lnet/minecraft/class_4140;Ljava/lang/Object;J)V
 	METHOD method_18871 refreshActivities (Lnet/minecraft/class_12205;JLnet/minecraft/class_243;)V
 		ARG 1 attributeAccess
 		ARG 2 time
@@ -134,6 +152,16 @@ CLASS net/minecraft/class_4095 net/minecraft/entity/ai/brain/Brain
 		FIELD field_1_1147 EMPTY Lnet/minecraft/class_4095$class_1_142;
 		METHOD method_1_1245 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance
+	CLASS class_1_188 MemoryConsumer
+		METHOD method_1_1661 accept (Lnet/minecraft/class_4140;Ljava/lang/Object;)V
+			ARG 1 type
+			ARG 2 value
+		METHOD method_1_1662 accept (Lnet/minecraft/class_4140;Ljava/lang/Object;J)V
+			ARG 1 type
+			ARG 2 value
+			ARG 3 expiry
+		METHOD method_1_1663 accept (Lnet/minecraft/class_4140;)V
+			ARG 1 type
 	CLASS class_5303 Profile
 		COMMENT A simple profile of a brain. Indicates what types of memory modules and
 		COMMENT sensors a brain can have.

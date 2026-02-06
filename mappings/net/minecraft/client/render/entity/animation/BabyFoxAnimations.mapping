@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_254 net/minecraft/client/render/entity/animation/BabyFoxAnimations
+	FIELD field_1_1625 WALK Lnet/minecraft/class_7184;

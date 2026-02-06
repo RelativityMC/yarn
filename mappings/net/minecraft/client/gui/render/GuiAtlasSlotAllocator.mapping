@@ -1,0 +1,41 @@
+CLASS net/minecraft/class_1_235 net/minecraft/client/gui/render/GuiAtlasSlotAllocator
+	FIELD field_1_1583 occupied Ljava/util/BitSet;
+	FIELD field_1_1584 slots Ljava/util/List;
+	FIELD field_1_1585 occupiedSlots Ljava/util/Map;
+	FIELD field_1_1586 width I
+	METHOD <init> (II)V
+		ARG 1 width
+		ARG 2 height
+	METHOD method_1_1893 removeAnimated ()V
+	METHOD method_1_1894 getVacantSlotCount ()I
+	METHOD method_1_1895 removeIf (Ljava/util/function/BiPredicate;)V
+		ARG 1 removalPredicate
+	METHOD method_1_1896 getOrCreateSlot (Ljava/lang/Object;Z)Lnet/minecraft/class_1_235$class_1_236;
+		ARG 1 key
+		ARG 2 animated
+	METHOD method_1_1897 canFitKeys (Ljava/util/Set;)Z
+		ARG 1 keys
+	METHOD method_1_1898 (Ljava/lang/Object;Lnet/minecraft/class_1_235$class_1_236;)Z
+		ARG 0 key
+		ARG 1 slot
+	METHOD method_1_1899 (Ljava/util/function/BiPredicate;Ljava/util/Map$Entry;)Z
+		ARG 2 entry
+	METHOD method_1_1900 (Lorg/apache/commons/lang3/mutable/MutableInt;Ljava/util/Set;Ljava/lang/Object;Lnet/minecraft/class_1_235$class_1_236;)Z
+		ARG 2 key
+		ARG 3 slot
+	METHOD method_1_1901 tryEvictToFitKeys (Ljava/util/Set;)Z
+		ARG 1 keys
+	METHOD method_1_1902 getOccupiedKeys ()Ljava/util/Set;
+	CLASS class_1_236 Slot
+		FIELD field_1_1587 animated Z
+		FIELD field_1_1588 status Lnet/minecraft/class_1_235$class_1_237;
+		FIELD field_1_1589 empty Z
+		FIELD field_1_1590 x I
+		FIELD field_1_1591 y I
+		METHOD <init> (II)V
+			ARG 1 x
+			ARG 2 y
+		METHOD method_1_1903 getStatus ()Lnet/minecraft/class_1_235$class_1_237;
+		METHOD method_1_1904 getX ()I
+		METHOD method_1_1905 getY ()I
+	CLASS class_1_237 Status

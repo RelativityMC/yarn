@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_7367 net/minecraft/resource/InputSupplier
 	METHOD method_1_176 create (Ljava/nio/file/Path;)Lnet/minecraft/class_7367;
+		ARG 0 file
 	METHOD method_1_177 create (Ljava/util/zip/ZipFile;Ljava/util/zip/ZipEntry;)Lnet/minecraft/class_7367;
 		ARG 0 zipFile
 		ARG 1 zipEntry

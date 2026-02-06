@@ -1,0 +1,17 @@
+CLASS net/minecraft/class_1_227 net/minecraft/datafixer/file/nbt/NbtFileFixerFactories
+	FIELD field_1_1569 LEVEL Lnet/minecraft/class_1_222;
+	FIELD field_1_1570 PLAYER Lnet/minecraft/class_1_222;
+	METHOD method_1_1857 chunk (Lnet/minecraft/class_4284;Lnet/minecraft/class_9240;)Lnet/minecraft/class_1_222;
+		ARG 0 type
+		ARG 1 storageKey
+	METHOD method_1_1858 (Lnet/minecraft/class_9240;Lnet/minecraft/class_4284;Ljava/nio/file/Path;I)Lnet/minecraft/class_1_196;
+		ARG 2 filePath
+		ARG 3 targetVersion
+	METHOD method_1_1859 (Lcom/mojang/datafixers/DSL$TypeReference;Lnet/minecraft/class_1_212$class_1_213;Ljava/nio/file/Path;I)Lnet/minecraft/class_1_207;
+		ARG 2 filePath
+		ARG 3 targetVersion
+	METHOD method_1_1860 dataTag (Lcom/mojang/datafixers/DSL$TypeReference;)Lnet/minecraft/class_1_222;
+		ARG 0 type
+	METHOD method_1_1861 dataTag (Lcom/mojang/datafixers/DSL$TypeReference;Lnet/minecraft/class_1_212$class_1_213;)Lnet/minecraft/class_1_222;
+		ARG 0 type
+		ARG 1 importance

@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_225 net/minecraft/client/render/entity/model/AdultBeeEntityModel
+	FIELD field_1_1562 LEFT_ANTENNA Ljava/lang/String;
+	FIELD field_1_1563 RIGHT_ANTENNA Ljava/lang/String;
+	FIELD field_1_1564 leftAntenna Lnet/minecraft/class_630;
+	FIELD field_1_1565 rightAntenna Lnet/minecraft/class_630;
+	METHOD method_1_1855 getTexturedModelData ()Lnet/minecraft/class_5607;

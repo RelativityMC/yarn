@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_264 net/minecraft/client/render/entity/animation/BabyArmadilloAnimations
+	FIELD field_1_1644 SCARED Lnet/minecraft/class_7184;
+	FIELD field_1_1645 UNROLLING Lnet/minecraft/class_7184;
+	FIELD field_1_1646 ROLLING Lnet/minecraft/class_7184;
+	FIELD field_1_1647 WALKING Lnet/minecraft/class_7184;

@@ -1,4 +1,8 @@
 CLASS net/minecraft/class_4505 net/minecraft/client/render/entity/BeeEntityRenderer
+	FIELD field_1_1534 ANGRY_BABY_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_1535 ANGRY_NECTAR_BABY_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_1536 PASSIVE_BABY_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_1537 NECTAR_BABY_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_20524 ANGRY_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_20525 ANGRY_NECTAR_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_20526 PASSIVE_TEXTURE Lnet/minecraft/class_2960;

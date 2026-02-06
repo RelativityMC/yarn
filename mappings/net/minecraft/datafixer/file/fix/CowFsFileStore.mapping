@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_1_266 net/minecraft/datafixer/file/fix/CowFsFileStore
+	FIELD field_1_1648 filesystem Lnet/minecraft/class_1_270;
+	FIELD field_1_1649 fileName Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_1_270;)V
+		ARG 1 fileName
+		ARG 2 fileSystem
+	METHOD getAttribute (Ljava/lang/String;)Ljava/lang/Object;
+		ARG 1 name
+	METHOD getFileStoreAttributeView (Ljava/lang/Class;)Ljava/nio/file/attribute/FileStoreAttributeView;
+		ARG 1 type
+	METHOD supportsFileAttributeView (Ljava/lang/Class;)Z
+		ARG 1 type
+	METHOD supportsFileAttributeView (Ljava/lang/String;)Z
+		ARG 1 name

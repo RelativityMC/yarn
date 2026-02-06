@@ -1,4 +1,17 @@
 CLASS net/minecraft/class_7763 net/minecraft/client/render/entity/CamelEntityRenderer
+	FIELD field_1_1552 TEXTURE_BABY Lnet/minecraft/class_2960;
 	FIELD field_40529 TEXTURE Lnet/minecraft/class_2960;
+	METHOD method_1_1844 createSaddleFeatureRenderer (Lnet/minecraft/class_5617$class_5618;Lnet/minecraft/class_927;Lnet/minecraft/class_10186$class_10190;Lnet/minecraft/class_5601;)Lnet/minecraft/class_10652;
+		ARG 0 context
+		ARG 1 mobRenderer
+		ARG 2 layerType
+		ARG 3 layer
+	METHOD method_1_1845 updateCamelRenderState (Lnet/minecraft/class_7689;Lnet/minecraft/class_10007;F)V
+		ARG 0 camel
+		ARG 1 state
+		ARG 2 tickProgress
+	METHOD method_1_1846 calculateJumpCooldown (Lnet/minecraft/class_7689;F)F
+		ARG 0 camel
+		ARG 1 tickProgress
 	METHOD method_76301 (Lnet/minecraft/class_10007;)Lnet/minecraft/class_1799;
 		ARG 0 state

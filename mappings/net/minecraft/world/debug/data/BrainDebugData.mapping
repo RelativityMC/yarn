@@ -32,7 +32,15 @@ CLASS net/minecraft/class_12006 net/minecraft/world/debug/data/BrainDebugData
 		ARG 2 gossips
 	METHOD method_74560 write (Lnet/minecraft/class_2540;)V
 		ARG 1 buf
+	METHOD method_74561 (Lnet/minecraft/class_2540;Lnet/minecraft/class_12006;)V
+		ARG 0 buf
+		ARG 1 value
 	METHOD method_74562 (Lnet/minecraft/class_3218;Ljava/lang/Object;)Ljava/lang/String;
 		ARG 1 v
 	METHOD method_74563 potentialPoiContains (Lnet/minecraft/class_2338;)Z
 		ARG 1 pos
+	CLASS 1 1
+		METHOD method_1_1688 accept (Lnet/minecraft/class_4140;Ljava/util/Optional;Ljava/util/OptionalLong;)V
+			ARG 1 type
+			ARG 2 value
+			ARG 3 expiry

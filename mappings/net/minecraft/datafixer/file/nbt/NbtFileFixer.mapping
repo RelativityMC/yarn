@@ -1,0 +1,21 @@
+CLASS net/minecraft/class_1_212 net/minecraft/datafixer/file/nbt/NbtFileFixer
+	FIELD field_1_1516 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_1517 importance Lnet/minecraft/class_1_212$class_1_213;
+	FIELD field_1_1518 filePath Ljava/nio/file/Path;
+	METHOD <init> (Ljava/nio/file/Path;Lnet/minecraft/class_1_212$class_1_213;)V
+		ARG 1 filePath
+		ARG 2 importance
+	METHOD method_1_1809 getFilePath ()Ljava/nio/file/Path;
+	METHOD method_1_1810 getFixedNbt ()Ljava/util/Optional;
+	METHOD method_1_1811 readFileNbt ()Ljava/util/Optional;
+	METHOD method_1_1812 writeNbt (Lcom/mojang/serialization/Dynamic;)V
+		ARG 1 contents
+	METHOD method_1_1813 writeFileNbt (Lcom/mojang/serialization/Dynamic;)V
+		ARG 1 contents
+	CLASS class_1_213 Importance
+		FIELD field_1_1523 logCallback Ljava/util/function/BiConsumer;
+		METHOD <init> (Ljava/lang/String;ILjava/util/function/BiConsumer;)V
+			ARG 3 logCallback
+		METHOD method_1_1815 log (Ljava/lang/String;Ljava/nio/file/Path;)V
+			ARG 1 message
+			ARG 2 path

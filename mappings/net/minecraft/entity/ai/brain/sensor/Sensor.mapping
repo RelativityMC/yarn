@@ -16,6 +16,8 @@ CLASS net/minecraft/class_4148 net/minecraft/entity/ai/brain/sensor/Sensor
 	FIELD field_34051 ATTACKABLE_TARGET_PREDICATE_IGNORE_VISIBILITY_OR_DISTANCE_SCALING Lnet/minecraft/class_4051;
 	METHOD <init> (I)V
 		ARG 1 senseInterval
+	METHOD method_1_1753 initializeLastSenseTime (Lnet/minecraft/class_5819;)V
+		ARG 1 random
 	METHOD method_19099 getOutputMemoryModules ()Ljava/util/Set;
 	METHOD method_19100 tick (Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;)V
 		ARG 1 world

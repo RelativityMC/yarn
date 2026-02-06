@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_1_249 net/minecraft/village/WanderingTraderPersistentState
+	FIELD field_1_1615 TYPE Lnet/minecraft/class_10741;
+	FIELD field_1_1616 spawnChance I
+	FIELD field_1_1617 spawnDelay I
+	METHOD <init> (II)V
+		ARG 1 spawnDelay
+		ARG 2 spawnChance
+	METHOD method_1_1953 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_1954 (Lnet/minecraft/class_1_249;)Ljava/lang/Integer;
+		ARG 0 state
+	METHOD method_1_1955 (Lnet/minecraft/class_1_249;)Ljava/lang/Integer;
+		ARG 0 state
+	METHOD method_1_1956 setSpawnChance (I)V
+		ARG 1 spawnChance
+	METHOD method_1_1957 setSpawnDelay (I)V
+		ARG 1 spawnDelay
+	METHOD method_1_1958 getSpawnChance ()I
+	METHOD method_1_1959 getSpawnDelay ()I

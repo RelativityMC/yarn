@@ -1,9 +1,21 @@
 CLASS net/minecraft/class_4831 net/minecraft/entity/ai/brain/Memory
+	FIELD field_1_1524 UNTIMED J
 	FIELD field_22330 value Ljava/lang/Object;
 	FIELD field_22331 expiry J
 	METHOD <init> (Ljava/lang/Object;J)V
 		ARG 1 value
 		ARG 2 expiry
+	METHOD method_1_1816 reset ()V
+	METHOD method_1_1817 empty ()Lnet/minecraft/class_4831;
+	METHOD method_1_1818 hasValue ()Z
+	METHOD method_1_1819 set (Ljava/lang/Object;)V
+		ARG 1 value
+	METHOD method_1_1820 set (Ljava/lang/Object;J)V
+		ARG 1 value
+		ARG 2 expiry
+	METHOD method_1_1821 callMemoryConsumer (Lnet/minecraft/class_4140;Lnet/minecraft/class_4095$class_1_188;)V
+		ARG 1 type
+		ARG 2 memoryConsumer
 	METHOD method_24634 isExpired ()Z
 	METHOD method_24637 getValue ()Ljava/lang/Object;
 	METHOD method_24913 tick ()V

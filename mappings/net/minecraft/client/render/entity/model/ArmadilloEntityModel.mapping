@@ -12,3 +12,9 @@ CLASS net/minecraft/class_9082 net/minecraft/client/render/entity/model/Armadill
 	FIELD field_60877 unrollingAnimation Lnet/minecraft/class_11509;
 	FIELD field_60878 rollingAnimation Lnet/minecraft/class_11509;
 	FIELD field_60879 scaredAnimation Lnet/minecraft/class_11509;
+	METHOD <init> (Lnet/minecraft/class_630;Lnet/minecraft/class_7184;Lnet/minecraft/class_7184;Lnet/minecraft/class_7184;Lnet/minecraft/class_7184;)V
+		ARG 1 root
+		ARG 2 walking
+		ARG 3 unrolling
+		ARG 4 rolling
+		ARG 5 scared

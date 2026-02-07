@@ -1,0 +1,39 @@
+CLASS net/minecraft/class_1_261 net/minecraft/datafixer/file/cowfs/CowFsPath
+	FIELD field_1_1639 fileSystem Lnet/minecraft/class_1_270;
+	FIELD field_1_1640 absolute Z
+	FIELD field_1_1641 underlying Ljava/nio/file/Path;
+	METHOD <init> (Ljava/nio/file/Path;Lnet/minecraft/class_1_270;Z)V
+		ARG 1 underlying
+		ARG 2 fileSystem
+		ARG 3 absolute
+	METHOD compareTo (Ljava/lang/Object;)I
+		ARG 1 other
+	METHOD endsWith (Ljava/nio/file/Path;)Z
+		ARG 1 other
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other
+	METHOD getName (I)Ljava/nio/file/Path;
+		ARG 1 index
+	METHOD method_1_2007 assertInCowFs (Ljava/nio/file/Path;)Lnet/minecraft/class_1_261;
+		ARG 0 other
+	METHOD method_1_2011 isEmpty ()Z
+	METHOD method_1_2013 getPath (Lnet/minecraft/class_1_270;Ljava/lang/String;[Ljava/lang/String;)Lnet/minecraft/class_1_261;
+		ARG 0 fileSystem
+		ARG 1 first
+		ARG 2 more
+	METHOD relativize (Ljava/nio/file/Path;)Ljava/nio/file/Path;
+		ARG 1 other
+	METHOD resolve (Ljava/lang/String;)Ljava/nio/file/Path;
+		ARG 1 other
+	METHOD resolve (Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
+		ARG 1 first
+		ARG 2 more
+	METHOD resolve (Ljava/nio/file/Path;)Ljava/nio/file/Path;
+		ARG 1 other
+	METHOD startsWith (Ljava/nio/file/Path;)Z
+		ARG 1 other
+	METHOD subpath (II)Ljava/nio/file/Path;
+		ARG 1 beginIndex
+		ARG 2 endIndex
+	METHOD toRealPath ([Ljava/nio/file/LinkOption;)Ljava/nio/file/Path;
+		ARG 1 linkOptions

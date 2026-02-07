@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_1_222 net/minecraft/datafixer/file/nbt/NbtFileFixerFactory
+	FIELD field_1_1555 factory Lnet/minecraft/class_1_222$class_1_223;
+	METHOD <init> (Lnet/minecraft/class_1_222$class_1_223;)V
+		ARG 1 factory
+	METHOD method_1_1847 create (Ljava/nio/file/Path;I)Ljava/lang/AutoCloseable;
+		ARG 1 filePath
+		ARG 2 targetVersion
+	CLASS class_1_223 Func
+		METHOD method_1_1848 create (Ljava/nio/file/Path;I)Ljava/lang/Object;
+			ARG 1 filePath
+			ARG 2 targetVersion

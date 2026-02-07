@@ -6,6 +6,7 @@ CLASS net/minecraft/class_1_206 net/minecraft/datafixer/file/DirectoryPaths
 	FIELD field_1_1484 LOGGER Lorg/slf4j/Logger;
 	FIELD field_1_1485 OLD_END Lnet/minecraft/class_1_206;
 	FIELD field_1_1486 OLD_NETHER Lnet/minecraft/class_1_206;
+	FIELD field_1_1487 OLD_OVERWORLD Lnet/minecraft/class_1_206;
 	FIELD field_1_1488 SELF Lnet/minecraft/class_1_206;
 	FIELD field_1_1489 PLAYER_DATA Lnet/minecraft/class_1_206;
 	FIELD field_1_1490 REGION Lnet/minecraft/class_1_206;

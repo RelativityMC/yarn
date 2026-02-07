@@ -19,6 +19,10 @@ CLASS net/minecraft/class_156 net/minecraft/util/Util
 	FIELD field_46764 BACKUP_ATTEMPTS I
 	FIELD field_47571 DOWNLOAD_WORKER_EXECUTOR Lnet/minecraft/class_10207;
 	FIELD field_52196 SUPPORTED_URI_PROTOCOLS Ljava/util/Set;
+	METHOD method_1_1640 attemptRename (Ljava/nio/file/Path;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Z
+		ARG 0 from
+		ARG 1 to
+		ARG 2 copyOptions
 	METHOD method_645 previous (Ljava/lang/Iterable;Ljava/lang/Object;)Ljava/lang/Object;
 		COMMENT {@return the item preceding {@code object} in {@code iterable}}
 		COMMENT
@@ -219,6 +223,7 @@ CLASS net/minecraft/class_156 net/minecraft/util/Util
 	METHOD method_30625 renameTask (Ljava/nio/file/Path;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/util/function/BooleanSupplier;
 		ARG 0 src
 		ARG 1 dest
+		ARG 2 copyOptions
 	METHOD method_30626 backupAndReplace (Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;)V
 		COMMENT Copies {@code current} to {@code backup} and then replaces {@code current} with {@code newPath}.
 		ARG 0 current

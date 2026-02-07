@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_1_282 net/minecraft/structure/StructureTemplateProvider
+	FIELD field_1_1679 blockLookup Lnet/minecraft/class_7871;
+	FIELD field_1_1680 dataFixer Lcom/mojang/datafixers/DataFixer;
+	METHOD <init> (Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_7871;)V
+		ARG 1 dataFixer
+		ARG 2 blockLookup
+	METHOD method_1_2073 streamTemplates ()Ljava/util/stream/Stream;
+	METHOD method_1_2074 load (Lnet/minecraft/class_2960;)Ljava/util/Optional;
+		ARG 1 id
+	METHOD method_1_2075 readStructureTemplateOrEmpty (Lnet/minecraft/class_7367;ZLjava/util/function/Consumer;)Ljava/util/Optional;
+		ARG 1 inputSupplier
+		ARG 2 snbt
+		ARG 3 exceptionHandler
+	METHOD method_1_2076 readCompressedNbt (Ljava/io/InputStream;)Lnet/minecraft/class_2487;
+		ARG 0 inputStream
+	METHOD method_1_2077 parseStructureTemplate (Lnet/minecraft/class_2487;)Lnet/minecraft/class_3499;
+		ARG 1 contents
+	METHOD method_1_2078 readSnbt (Ljava/io/InputStream;)Lnet/minecraft/class_2487;
+		ARG 0 inputStream

@@ -1,5 +1,8 @@
 CLASS net/minecraft/class_1_48 net/minecraft/world/upgrade/WorldUpdateDescriber
 	FIELD field_1_681 dataFixTypeDescriptions Ljava/util/Map;
+	FIELD field_1_1603 STAGE_COUNTING Lnet/minecraft/class_2561;
+	FIELD field_1_1604 STAGE_FAILED Lnet/minecraft/class_2561;
+	FIELD field_1_1605 STAGE_UPGRADING Lnet/minecraft/class_2561;
 	METHOD method_1_648 (Ljava/util/EnumMap;)V
 		ARG 0 map
 	METHOD method_1_649 getStatusText (Lnet/minecraft/class_1_27;)Lnet/minecraft/class_2561;
@@ -7,3 +10,5 @@ CLASS net/minecraft/class_1_48 net/minecraft/world/upgrade/WorldUpdateDescriber
 	CLASS class_1_49 Description
 		METHOD method_1_650 getTextForStatus (Lnet/minecraft/class_1_27$class_1_29;)Lnet/minecraft/class_2561;
 			ARG 1 status
+		METHOD method_1_1922 of (Ljava/lang/String;)Lnet/minecraft/class_1_48$class_1_49;
+			ARG 0 name

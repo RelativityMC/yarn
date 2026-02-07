@@ -1,5 +1,12 @@
 CLASS net/minecraft/class_4042 net/minecraft/client/render/entity/FoxEntityRenderer
+	FIELD field_1_1538 BABY_SLEEPING_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_1539 BABY_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_1540 BABY_SLEEPING_SNOW_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_1541 BABY_SNOW_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_1542 TEXTURES_BY_VARIANT Ljava/util/EnumMap;
 	FIELD field_18026 TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_18027 SLEEPING_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_18028 SNOW_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_18029 SLEEPING_SNOW_TEXTURE Lnet/minecraft/class_2960;
+	CLASS class_1_217 TexturePair
+	CLASS class_1_218 TextureSet

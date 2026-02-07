@@ -36,6 +36,7 @@ CLASS net/minecraft/class_2881 net/minecraft/entity/boss/dragon/EnderDragonFight
 		ARG 7 exitPortalLocation
 		ARG 8 gateways
 		ARG 9 crystals
+	METHOD method_1_1961 abortRespawnSequence ()V
 	METHOD method_1_1962 ofDefault ()Lnet/minecraft/class_2881;
 	METHOD method_1_1963 initWorld (Lnet/minecraft/class_3218;JLnet/minecraft/class_2338;)V
 		ARG 1 world

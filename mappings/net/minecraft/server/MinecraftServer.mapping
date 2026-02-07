@@ -117,6 +117,8 @@ CLASS net/minecraft/server/MinecraftServer
 	METHOD method_1_848 getOverworldGameRules ()Lnet/minecraft/class_1928;
 	METHOD method_1_1665 getPersistentStateManager ()Lnet/minecraft/class_26;
 	METHOD method_1_1666 getGameRules ()Lnet/minecraft/class_1928;
+	METHOD method_1_1667 getRandomSequence (Lnet/minecraft/class_2960;)Lnet/minecraft/class_5819;
+		ARG 1 id
 	METHOD method_1_1668 getRandomSequencesState ()Lnet/minecraft/class_8565;
 	METHOD method_1_1669 getScheduledEvents ()Lnet/minecraft/class_236;
 	METHOD method_1_1670 getWeatherState ()Lnet/minecraft/class_1_216;

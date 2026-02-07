@@ -6,13 +6,29 @@ CLASS net/minecraft/class_1_255 net/minecraft/datafixer/file/fix/DimensionStateF
 	FIELD field_1_1630 WORLD_BORDER_DATA_PATH Ljava/lang/String;
 	FIELD field_1_1631 WORLD_BORDER Ljava/lang/String;
 	METHOD method_1_1985 fixSingleplayerData (Lnet/minecraft/class_1_203;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 fixer
+		ARG 2 levelData
 	METHOD method_1_1986 fixPersistentState (Lnet/minecraft/class_1_203;Lcom/mojang/serialization/Dynamic;Ljava/lang/String;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 fixer
+		ARG 1 levelData
 		ARG 2 elementName
 	METHOD method_1_1987 fixWorldBorder (Lnet/minecraft/class_1_203;Lcom/mojang/serialization/Dynamic;D)V
+		ARG 0 dimension
+		ARG 1 levelData
+		ARG 2 scale
 	METHOD method_1_1988 fixWorldBorders (Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
 		ARG 0 overworld
 		ARG 1 theNether
 		ARG 2 theEnd
+		ARG 3 levelData
 	METHOD method_1_1989 fixWorldGenSettings (Lnet/minecraft/class_1_203;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 fixer
+		ARG 2 levelData
+	METHOD method_1_1990 (DLcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 2 centerX
+	METHOD method_1_1991 (DLcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 2 centerZ
+	METHOD method_1_1992 (Lnet/minecraft/class_1_233;)Lnet/minecraft/class_1_228$class_1_230;
+		ARG 1 tracker
 	METHOD method_1_1993 (Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_27;)V
 		ARG 14 progress

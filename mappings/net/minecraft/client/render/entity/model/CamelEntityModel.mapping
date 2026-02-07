@@ -8,6 +8,14 @@ CLASS net/minecraft/class_7751 net/minecraft/client/render/entity/model/CamelEnt
 	FIELD field_60891 standingTransitionAnimation Lnet/minecraft/class_11509;
 	FIELD field_60892 idlingAnimation Lnet/minecraft/class_11509;
 	FIELD field_60893 dashingAnimation Lnet/minecraft/class_11509;
+	METHOD <init> (Lnet/minecraft/class_630;Lnet/minecraft/class_7184;Lnet/minecraft/class_7184;Lnet/minecraft/class_7184;Lnet/minecraft/class_7184;Lnet/minecraft/class_7184;Lnet/minecraft/class_7184;)V
+		ARG 1 root
+		ARG 2 walking
+		ARG 3 sittingTransition
+		ARG 4 sitting
+		ARG 5 standingTransition
+		ARG 6 idling
+		ARG 7 dashing
 	METHOD method_45705 setHeadAngles (Lnet/minecraft/class_10007;FF)V
 		ARG 1 state
 		ARG 2 headYaw

@@ -19,6 +19,16 @@ CLASS net/minecraft/class_524 net/minecraft/client/gui/screen/world/EditWorldScr
 		ARG 2 session
 		ARG 3 levelName
 		ARG 4 callback
+	METHOD method_1_2020 backupLevelIfRequested (ZLnet/minecraft/class_32$class_5143;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 backup
+		ARG 1 session
+	METHOD method_1_2022 (Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_310;Ljava/lang/Long;)Ljava/lang/Boolean;
+		ARG 2 sizeBytes
+	METHOD method_1_2023 (Lnet/minecraft/class_310;Ljava/lang/Throwable;)Ljava/lang/Boolean;
+		ARG 1 ex
+	METHOD method_1_2024 (Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_310;ZZ)V
+		ARG 3 backup
+		ARG 4 eraseCache
 	METHOD method_2691 commit (Ljava/lang/String;)V
 		ARG 1 levelName
 	METHOD method_2701 backupLevel (Lnet/minecraft/class_32$class_5143;)Ljava/util/concurrent/CompletableFuture;
@@ -39,6 +49,8 @@ CLASS net/minecraft/class_524 net/minecraft/client/gui/screen/world/EditWorldScr
 		ARG 1 name
 	METHOD method_54603 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
+	METHOD method_54604 (Lnet/minecraft/class_524;Lnet/minecraft/class_339;)V
+		ARG 1 child
 	METHOD method_54605 (Ljava/nio/file/Path;)Z
 		ARG 0 iconFile
 	METHOD method_54606 (Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_4185;)V

@@ -1,0 +1,13 @@
+CLASS net/minecraft/class_1_233 net/minecraft/datafixer/file/FileAccessTracker
+	FIELD field_1_1579 requestedAccesses Ljava/util/List;
+	FIELD field_1_1580 pathScope Ljava/lang/ScopedValue;
+	FIELD field_1_1581 version I
+	FIELD field_1_1582 initialized Z
+	METHOD <init> (I)V
+		ARG 1 version
+	METHOD method_1_1879 getPathScope ()Ljava/lang/ScopedValue;
+	METHOD method_1_1880 getVersion ()I
+	METHOD method_1_1881 setInitialized ()V
+	METHOD method_1_1882 request (Lnet/minecraft/class_1_222;Lnet/minecraft/class_1_206;)Lnet/minecraft/class_1_203;
+		ARG 1 fileFixerFactory
+		ARG 2 paths

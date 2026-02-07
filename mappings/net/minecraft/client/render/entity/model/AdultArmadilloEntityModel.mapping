@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_262 net/minecraft/client/render/entity/model/AdultArmadilloEntityModel
+	METHOD method_1_2027 getTexturedModelData ()Lnet/minecraft/class_5607;

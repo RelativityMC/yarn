@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_1_219 net/minecraft/datafixer/file/cowfs/CowFile
+	FIELD field_1_1546 parent Lnet/minecraft/class_1_253;
+	FIELD field_1_1547 path Lnet/minecraft/class_1_261;
+	METHOD <init> (Lnet/minecraft/class_1_261;)V
+		ARG 1 path
+	METHOD method_1_1837 getName ()Ljava/lang/String;
+	METHOD method_1_1838 getPath ()Lnet/minecraft/class_1_261;
+	METHOD method_1_1839 setParent (Lnet/minecraft/class_1_253;)V
+		ARG 1 parent
+	METHOD method_1_1840 setPath (Lnet/minecraft/class_1_261;)V
+		ARG 1 path

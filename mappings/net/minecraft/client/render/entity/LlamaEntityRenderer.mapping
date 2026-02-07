@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_921 net/minecraft/client/render/entity/LlamaEntityRenderer
+	FIELD field_1_1553 BABY_TEXTURES_BY_VARIANT Ljava/util/Map;
+	FIELD field_1_1554 ADULT_TEXTURES_BY_VARIANT Ljava/util/Map;
 	METHOD <init> (Lnet/minecraft/class_5617$class_5618;Lnet/minecraft/class_5601;Lnet/minecraft/class_5601;)V
 		ARG 1 context
 		ARG 2 layer

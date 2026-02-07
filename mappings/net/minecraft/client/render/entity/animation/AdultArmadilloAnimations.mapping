@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_9079 net/minecraft/client/render/entity/animation/ArmadilloAnimations
+CLASS net/minecraft/class_9079 net/minecraft/client/render/entity/animation/AdultArmadilloAnimations
 	FIELD field_47844 WALKING Lnet/minecraft/class_7184;
 	FIELD field_49108 ROLLING Lnet/minecraft/class_7184;
 	FIELD field_49109 SCARED Lnet/minecraft/class_7184;

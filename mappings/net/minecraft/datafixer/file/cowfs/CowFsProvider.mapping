@@ -1,0 +1,81 @@
+CLASS net/minecraft/class_1_268 net/minecraft/datafixer/file/cowfs/CowFsProvider
+	FIELD field_1_1650 ATTRIBUTES Ljava/nio/file/attribute/BasicFileAttributeView;
+	FIELD field_1_1651 SCHEME Ljava/lang/String;
+	FIELD field_1_1652 fileSystem Lnet/minecraft/class_1_270;
+	METHOD <init> (Lnet/minecraft/class_1_270;)V
+		ARG 1 fileSystem
+	METHOD checkAccess (Ljava/nio/file/Path;[Ljava/nio/file/AccessMode;)V
+		ARG 1 path
+		ARG 2 modes
+	METHOD copy (Ljava/nio/file/Path;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)V
+		ARG 1 source
+		ARG 2 target
+		ARG 3 options
+	METHOD createDirectory (Ljava/nio/file/Path;[Ljava/nio/file/attribute/FileAttribute;)V
+		ARG 1 dir
+		ARG 2 attrs
+	METHOD delete (Ljava/nio/file/Path;)V
+		ARG 1 file
+	METHOD getFileAttributeView (Ljava/nio/file/Path;Ljava/lang/Class;[Ljava/nio/file/LinkOption;)Ljava/nio/file/attribute/FileAttributeView;
+		ARG 1 path
+		ARG 2 type
+		ARG 3 options
+	METHOD getFileSystem (Ljava/net/URI;)Ljava/nio/file/FileSystem;
+		ARG 1 uri
+	METHOD getPath (Ljava/net/URI;)Ljava/nio/file/Path;
+		ARG 1 uri
+	METHOD method_1_2038 toRealPath (Lnet/minecraft/class_1_261;)Lnet/minecraft/class_1_261;
+		ARG 1 path
+	METHOD method_1_2039 newChannel (Ljava/nio/file/Path;Ljava/util/Set;[Ljava/nio/file/attribute/FileAttribute;Lnet/minecraft/class_1_268$class_1_269;)Ljava/lang/Object;
+		ARG 1 path
+		ARG 2 options
+		ARG 3 attrs
+		ARG 4 channelFactory
+	METHOD method_1_2040 hasWriteOptions (Ljava/util/Set;)Z
+		ARG 0 options
+	METHOD move (Ljava/nio/file/Path;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)V
+		ARG 1 source
+		ARG 2 target
+		ARG 3 options
+	METHOD newByteChannel (Ljava/nio/file/Path;Ljava/util/Set;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/channels/SeekableByteChannel;
+		ARG 1 path
+		ARG 2 options
+		ARG 3 attrs
+	METHOD newDirectoryStream (Ljava/nio/file/Path;Ljava/nio/file/DirectoryStream$Filter;)Ljava/nio/file/DirectoryStream;
+		ARG 1 dir
+		ARG 2 filter
+	METHOD newFileChannel (Ljava/nio/file/Path;Ljava/util/Set;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/channels/FileChannel;
+		ARG 1 path
+		ARG 2 options
+		ARG 3 attrs
+	METHOD newFileSystem (Ljava/net/URI;Ljava/util/Map;)Ljava/nio/file/FileSystem;
+		ARG 1 uri
+		ARG 2 env
+	METHOD readAttributes (Ljava/nio/file/Path;Ljava/lang/Class;[Ljava/nio/file/LinkOption;)Ljava/nio/file/attribute/BasicFileAttributes;
+		ARG 1 path
+		ARG 2 type
+		ARG 3 options
+	METHOD readAttributes (Ljava/nio/file/Path;Ljava/lang/String;[Ljava/nio/file/LinkOption;)Ljava/util/Map;
+		ARG 1 path
+		ARG 2 attribute
+		ARG 3 options
+	METHOD setAttribute (Ljava/nio/file/Path;Ljava/lang/String;Ljava/lang/Object;[Ljava/nio/file/LinkOption;)V
+		ARG 1 path
+		ARG 2 attributes
+		ARG 3 value
+		ARG 4 options
+	CLASS 1 1
+		METHOD setTimes (Ljava/nio/file/attribute/FileTime;Ljava/nio/file/attribute/FileTime;Ljava/nio/file/attribute/FileTime;)V
+			ARG 1 lastModifiedTime
+			ARG 2 lastAccessTime
+			ARG 3 createTime
+	CLASS 3 3
+		METHOD setTimes (Ljava/nio/file/attribute/FileTime;Ljava/nio/file/attribute/FileTime;Ljava/nio/file/attribute/FileTime;)V
+			ARG 1 lastModifiedTime
+			ARG 2 lastAccessTime
+			ARG 3 createTime
+	CLASS class_1_269 ChannelFactory
+		METHOD method_1_2041 create (Ljava/nio/file/Path;Ljava/util/Set;[Ljava/nio/file/attribute/FileAttribute;)Ljava/lang/Object;
+			ARG 1 path
+			ARG 2 options
+			ARG 3 attrs

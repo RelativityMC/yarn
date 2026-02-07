@@ -58,3 +58,5 @@ CLASS net/minecraft/class_4495 net/minecraft/client/render/entity/model/BeeEntit
 		COMMENT The key of the middle legs model part, whose value is {@value}.
 	FIELD field_32457 BACK_LEGS Ljava/lang/String;
 		COMMENT The key of the back legs model part, whose value is {@value}.
+	METHOD method_1_1755 updateAngles (FF)V
+		ARG 2 age

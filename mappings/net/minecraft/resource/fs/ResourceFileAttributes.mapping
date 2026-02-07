@@ -1,2 +1,4 @@
 CLASS net/minecraft/class_7666 net/minecraft/resource/fs/ResourceFileAttributes
+	FIELD field_1_1409 DIRECTORY Ljava/nio/file/attribute/BasicFileAttributes;
+	FIELD field_1_1410 REGULAR_FILE Ljava/nio/file/attribute/BasicFileAttributes;
 	FIELD field_40011 EPOCH Ljava/nio/file/attribute/FileTime;

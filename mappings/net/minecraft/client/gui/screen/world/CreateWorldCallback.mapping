@@ -2,4 +2,6 @@ CLASS net/minecraft/class_10241 net/minecraft/client/gui/screen/world/CreateWorl
 	METHOD method_1_321 create (Lnet/minecraft/class_525;Lnet/minecraft/class_7780;Lnet/minecraft/class_8895$class_1_251;Ljava/util/Optional;Ljava/nio/file/Path;)Z
 		ARG 1 screen
 		ARG 2 dynamicRegistries
+		ARG 3 saveProperties
+		ARG 4 gameRules
 		ARG 5 dataPackTempDir

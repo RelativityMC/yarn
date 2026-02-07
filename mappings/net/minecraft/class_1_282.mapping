@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_1_282
-	METHOD method_1_2074 (Lnet/minecraft/class_2960;)Ljava/util/Optional;
-		ARG 1 id

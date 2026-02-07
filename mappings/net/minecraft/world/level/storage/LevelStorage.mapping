@@ -13,8 +13,16 @@ CLASS net/minecraft/class_32 net/minecraft/world/level/storage/LevelStorage
 		ARG 2 backupsDirectory
 		ARG 3 symlinkFinder
 		ARG 4 dataFixer
-	METHOD method_1_1884 (Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_10741;)Lcom/mojang/serialization/DataResult;
+	METHOD method_1_1883 (Ljava/lang/String;)Lnet/minecraft/class_33;
+		ARG 0 message
+	METHOD method_1_1884 readPersistentState (Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_10741;)Lcom/mojang/serialization/DataResult;
+		ARG 0 session
+		ARG 1 registries
 		ARG 2 type
+	METHOD method_1_1885 writeGameRulesFile (Lnet/minecraft/class_5219;Ljava/nio/file/Path;Lnet/minecraft/class_1928;)V
+		ARG 0 saveProperties
+		ARG 1 saveDir
+		ARG 2 gameRules
 	METHOD method_230 levelExists (Ljava/lang/String;)Z
 		ARG 1 name
 	METHOD method_235 getLevelList ()Lnet/minecraft/class_32$class_7410;
@@ -141,14 +149,14 @@ CLASS net/minecraft/class_32 net/minecraft/world/level/storage/LevelStorage
 		METHOD method_54548 tryRestoreBackup ()Z
 		METHOD method_57628 getUsableSpace ()J
 		METHOD method_57629 shouldShowLowDiskSpaceWarning ()Z
-		CLASS 1 1
+		CLASS 1
 			METHOD postVisitDirectory (Ljava/lang/Object;Ljava/io/IOException;)Ljava/nio/file/FileVisitResult;
 				ARG 1 path
 				ARG 2 exception
 			METHOD visitFile (Ljava/lang/Object;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
 				ARG 1 path
 				ARG 2 attributes
-		CLASS 2 2
+		CLASS 2
 			METHOD visitFile (Ljava/lang/Object;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
 				ARG 1 path
 				ARG 2 attributes

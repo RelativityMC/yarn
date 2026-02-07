@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
+	FIELD field_1_1578 ENTITY_CUTOUT_DISSOLVE Ljava/util/function/BiFunction;
 	FIELD field_64015 GLINT_TRANSLUCENT Lnet/minecraft/class_1921;
 	FIELD field_64016 GLINT Lnet/minecraft/class_1921;
 	FIELD field_64017 ENTITY_GLINT Lnet/minecraft/class_1921;
@@ -49,6 +50,18 @@ CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 	FIELD field_64066 ARMOR_ENTITY_GLINT Lnet/minecraft/class_1921;
 	FIELD field_64462 BLOCK_SAMPLER Ljava/util/function/Supplier;
 	FIELD field_64592 LINES_TRANSLUCENT Lnet/minecraft/class_1921;
+	METHOD method_1_1874 entityCutoutDissolve (Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+		ARG 0 texture
+		ARG 1 dissolveMaskTexture
+	METHOD method_1_1875 entitySmoothCutout (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+		ARG 0 texture
+	METHOD method_1_1876 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+		ARG 0 texture
+	METHOD method_1_1877 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+		ARG 0 texture
+	METHOD method_1_1878 (Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+		ARG 0 texture
+		ARG 1 dissolveMaskTexture
 	METHOD method_75942 blockScreenEffect (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
 	METHOD method_75943 fireScreenEffect (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;

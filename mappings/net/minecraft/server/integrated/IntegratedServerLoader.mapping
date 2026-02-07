@@ -6,10 +6,22 @@ CLASS net/minecraft/class_7196 net/minecraft/server/integrated/IntegratedServerL
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_32;)V
 		ARG 1 client
 		ARG 2 storage
+	METHOD method_1_1995 backupThenUpgradeWorld (Lnet/minecraft/class_32$class_5143;Lcom/mojang/serialization/Dynamic;Ljava/lang/Runnable;Z)V
+		ARG 1 session
+		ARG 2 levelProperties
+		ARG 3 onCancel
+		ARG 4 backup
+	METHOD method_1_2003 (Lnet/minecraft/class_32$class_5143;Lcom/mojang/serialization/Dynamic;Ljava/lang/Runnable;Z)V
+		ARG 4 confirmed
+	METHOD method_1_2004 upgradeWorld (Lnet/minecraft/class_32$class_5143;Lcom/mojang/serialization/Dynamic;Ljava/lang/Runnable;)V
+		ARG 1 session
+		ARG 2 levelProperties
+		ARG 3 onCancel
 	METHOD method_41889 startNewWorld (Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_5350;Lnet/minecraft/class_7780;Lnet/minecraft/class_8895$class_1_251;Ljava/util/Optional;)V
 		ARG 1 session
 		ARG 2 dataPackContents
 		ARG 3 dynamicRegistryManager
+		ARG 4 saveProperties
 		ARG 5 gameRules
 	METHOD method_41892 tryLoad (Lnet/minecraft/class_310;Lnet/minecraft/class_525;Lcom/mojang/serialization/Lifecycle;Ljava/lang/Runnable;Z)V
 		ARG 0 client
@@ -26,7 +38,9 @@ CLASS net/minecraft/class_7196 net/minecraft/server/integrated/IntegratedServerL
 		ARG 4 dimensionsRegistrySupplier
 		ARG 5 screen
 	METHOD method_41898 showBackupPromptScreen (Lnet/minecraft/class_32$class_5143;ZLjava/lang/Runnable;Ljava/lang/Runnable;)V
+		ARG 1 session
 		ARG 2 customized
+		ARG 3 postAction
 		ARG 4 onCancel
 	METHOD method_41901 createSession (Ljava/lang/String;)Lnet/minecraft/class_32$class_5143;
 		ARG 1 levelName
@@ -47,6 +61,8 @@ CLASS net/minecraft/class_7196 net/minecraft/server/integrated/IntegratedServerL
 	METHOD method_54609 (Lnet/minecraft/class_32$class_5143;Lcom/mojang/serialization/Dynamic;Lnet/minecraft/class_7237$class_7660;)Lnet/minecraft/class_7237$class_7661;
 		ARG 2 context
 	METHOD method_54610 load (Lnet/minecraft/class_32$class_5143;Lcom/mojang/serialization/Dynamic;ZLnet/minecraft/class_3283;)Lnet/minecraft/class_6904;
+		ARG 1 session
+		ARG 2 levelProperties
 		ARG 3 safeMode
 		ARG 4 dataPackManager
 	METHOD method_54617 (Lnet/minecraft/class_32$class_5143;Ljava/lang/Runnable;ZZ)V

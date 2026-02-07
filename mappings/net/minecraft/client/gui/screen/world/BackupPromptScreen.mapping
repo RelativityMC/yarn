@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_405 net/minecraft/client/gui/screen/world/BackupPromptScreen
+	FIELD field_1_1576 required Z
 	FIELD field_2364 subtitle Lnet/minecraft/class_2561;
 	FIELD field_2365 wrappedText Lnet/minecraft/class_5489;
 	FIELD field_19232 showEraseCacheCheckbox Z
@@ -15,12 +16,14 @@ CLASS net/minecraft/class_405 net/minecraft/client/gui/screen/world/BackupPrompt
 		ARG 4 subtitle
 		ARG 5 firstButtonText
 		ARG 6 showEraseCacheCheckbox
+		ARG 7 required
 	METHOD <init> (Ljava/lang/Runnable;Lnet/minecraft/class_405$class_406;Lnet/minecraft/class_2561;Lnet/minecraft/class_2561;ZZ)V
 		ARG 1 onCancel
 		ARG 2 callback
 		ARG 3 title
 		ARG 4 subtitle
 		ARG 5 showEraseCacheCheckbox
+		ARG 6 required
 	METHOD method_19791 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
 	METHOD method_19792 (Lnet/minecraft/class_4185;)V

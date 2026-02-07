@@ -24,5 +24,7 @@ CLASS net/minecraft/server/Main
 		ARG 0 path
 	METHOD method_74054 createWorld (Lnet/minecraft/class_3807;Lnet/minecraft/class_7237$class_7660;Lnet/minecraft/class_2378;ZZ)Lnet/minecraft/class_7237$class_7661;
 		ARG 0 savePropertiesLoader
+		ARG 1 context
+		ARG 2 dimensionOptions
 		ARG 3 demo
 		ARG 4 bonusChest

@@ -1,4 +1,10 @@
 CLASS net/minecraft/class_3485 net/minecraft/structure/StructureTemplateManager
+	FIELD field_1_1681 STRUCTURE_NBT_TEST_RESOURCE_FINDER Lnet/minecraft/class_7654;
+	FIELD field_1_1682 STRUCTURE_SNBT_TEST_RESOURCE_FINDER Lnet/minecraft/class_7654;
+	FIELD field_1_1683 STRUCTURE_SNBT_RESOURCE_FINDER Lnet/minecraft/class_7654;
+	FIELD field_1_1684 primaryProvider Lnet/minecraft/class_1_288;
+	FIELD field_1_1685 testResourceTree Lnet/minecraft/class_1_286;
+	FIELD field_1_1686 generatedResourceTree Lnet/minecraft/class_1_286;
 	FIELD field_15513 templates Ljava/util/Map;
 	FIELD field_15514 LOGGER Lorg/slf4j/Logger;
 	FIELD field_31684 STRUCTURE_DIRECTORY Ljava/lang/String;
@@ -11,6 +17,12 @@ CLASS net/minecraft/class_3485 net/minecraft/structure/StructureTemplateManager
 		ARG 2 session
 		ARG 3 dataFixer
 		ARG 4 blockLookup
+	METHOD method_1_2079 saveTemplate (Ljava/nio/file/Path;Lnet/minecraft/class_3499;Z)Z
+		ARG 0 target
+		ARG 1 template
+		ARG 2 snbt
+	METHOD method_1_2080 getTestResourceTree ()Lnet/minecraft/class_1_286;
+	METHOD method_1_2081 getGeneratedResourceTree ()Lnet/minecraft/class_1_286;
 	METHOD method_15087 unloadTemplate (Lnet/minecraft/class_2960;)V
 		ARG 1 id
 	METHOD method_15091 getTemplateOrBlank (Lnet/minecraft/class_2960;)Lnet/minecraft/class_3499;

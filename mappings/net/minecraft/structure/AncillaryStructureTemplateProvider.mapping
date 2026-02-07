@@ -1,0 +1,23 @@
+CLASS net/minecraft/class_1_287 net/minecraft/structure/AncillaryStructureTemplateProvider
+	FIELD field_1_1688 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_1689 resourceFinder Lnet/minecraft/class_7654;
+	FIELD field_1_1690 snbt Z
+	FIELD field_1_1691 resourceDir Ljava/nio/file/Path;
+	METHOD <init> (Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_7871;Ljava/nio/file/Path;Lnet/minecraft/class_3264;Lnet/minecraft/class_7654;Z)V
+		ARG 1 dataFixer
+		ARG 2 blockLookup
+		ARG 3 root
+		ARG 4 resourceType
+		ARG 5 resourceFinder
+		ARG 6 snbt
+	METHOD <init> (Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_7871;Ljava/nio/file/Path;Lnet/minecraft/class_7654;Z)V
+		ARG 1 dataFixer
+		ARG 2 blockLookup
+		ARG 3 resourceDir
+		ARG 4 resourceFinder
+		ARG 5 snbt
+	METHOD method_1_2089 (Ljava/util/stream/Stream$Builder;Lnet/minecraft/class_2960;Lnet/minecraft/class_7367;)V
+		ARG 2 id
+		ARG 3 input
+	METHOD method_1_2090 (Lnet/minecraft/class_2960;Ljava/lang/Throwable;)V
+		ARG 2 ex

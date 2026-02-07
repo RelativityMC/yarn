@@ -1,5 +1,7 @@
 CLASS net/minecraft/class_4538 net/minecraft/world/WorldView
 	COMMENT Represents a scoped, read-only view of a world like structure that contains biomes, chunks and is bound to a dimension.
+	METHOD method_1_1680 getSkyLightLevel (Lnet/minecraft/class_2338;)I
+		ARG 1 pos
 	METHOD method_8392 getChunk (II)Lnet/minecraft/class_2791;
 		COMMENT {@return the chunk with position {@code chunkX} and {@code chunkZ}}
 		ARG 1 chunkX

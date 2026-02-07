@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_1_193 net/minecraft/datafixer/file/FileUpgrader
+	COMMENT A file upgrader is responsible for upgrading the file structure of world
+	COMMENT saves. This is instantiated in {@link net.minecraft.datafixer.Schemas},
+	COMMENT and this instance can be obtained using {@link net.minecraft.datafixer.Schemas#getFileUpgrader()}.
 	FIELD field_1_1426 FILE_REORGANIZATION_VERSION I
 		COMMENT This is between 26.1 Snapshot 5 and 26.1 Snapshot 6.
 	FIELD field_1_1427 LOGGER Lorg/slf4j/Logger;

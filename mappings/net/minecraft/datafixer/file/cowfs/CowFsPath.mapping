@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_1_261 net/minecraft/datafixer/file/cowfs/CowFsPath
+	COMMENT A path to a file within a {@link CowFs}.
 	FIELD field_1_1639 fileSystem Lnet/minecraft/class_1_270;
 	FIELD field_1_1640 absolute Z
 	FIELD field_1_1641 underlying Ljava/nio/file/Path;

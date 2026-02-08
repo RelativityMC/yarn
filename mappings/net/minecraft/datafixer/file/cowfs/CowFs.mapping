@@ -1,4 +1,21 @@
 CLASS net/minecraft/class_1_270 net/minecraft/datafixer/file/cowfs/CowFs
+	COMMENT A {@code CowFs} wraps the system’s file system to provide copy-on-write
+	COMMENT semantics. An instance of this class starts out mirroring an existing
+	COMMENT directory, and each regular file in this file system refers to the path
+	COMMENT of a file on the underlying file system. When a write is requested to a
+	COMMENT file on the {@code CowFs}, the underlying file is copied to a file in a
+	COMMENT temporary directory. When a new file is created on the {@code CowFs},
+	COMMENT it is backed by a new file in the temporary directory.
+	COMMENT
+	COMMENT {@link CowFsPath} is a subclass of {@link Path} for a file or directory
+	COMMENT within a {@code CowFs}.
+	COMMENT
+	COMMENT Either {@link #createHardLinks} or {@link #copyLinks} can be used to
+	COMMENT transfer the file tree represented by a {@code CowFs} to a new directory.
+	COMMENT The former relies on support for hard links, while the latter does not.
+	COMMENT
+	COMMENT {@code CowFs} is used for upgrading a world save’s file structure.
+	COMMENT
 	COMMENT Moo.
 	FIELD field_1_1655 SUPPORTED_ATTRIBUTES Ljava/util/Set;
 	FIELD field_1_1656 LOGGER Lorg/slf4j/Logger;
@@ -11,7 +28,7 @@ CLASS net/minecraft/class_1_270 net/minecraft/datafixer/file/cowfs/CowFs
 	FIELD field_1_1663 tempPath Ljava/nio/file/Path;
 	FIELD field_1_1664 counter Ljava/util/concurrent/atomic/AtomicInteger;
 	METHOD <init> (Ljava/lang/String;Ljava/nio/file/Path;Ljava/nio/file/Path;)V
-		ARG 1 fileName
+		ARG 1 storeName
 		ARG 2 root
 		ARG 3 tempPath
 	METHOD getPath (Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
@@ -29,8 +46,13 @@ CLASS net/minecraft/class_1_270 net/minecraft/datafixer/file/cowfs/CowFs
 		ARG 2 dir
 		ARG 3 linksOut
 	METHOD method_1_2047 create (Ljava/lang/String;Ljava/nio/file/Path;)Lnet/minecraft/class_1_270;
-		ARG 0 fileName
+		COMMENT Creates a new {@code CowFs}.
+		COMMENT
+		COMMENT @throws CannotOverwriteException if a file or directory named {@code file_fix_tmp} exists within {@code root}
+		ARG 0 storeName
+			COMMENT the name used for the {@link CowFsFileStore} associated with this file system
 		ARG 1 root
+			COMMENT the path of the directory to mirror
 	METHOD method_1_2048 getPathInsideTempDir ()Ljava/nio/file/Path;
 	METHOD method_1_2049 getRootDir ()Lnet/minecraft/class_1_253;
 	METHOD method_1_2051 createHardLinks (Ljava/nio/file/Path;)V

@@ -297,7 +297,6 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 	METHOD method_64179 isEquipped (Lnet/minecraft/class_1792;)Z
 		ARG 1 item
 	METHOD method_64271 canDropItems ()Z
-	METHOD method_64398 sendMessage (Lnet/minecraft/class_2561;)V
 	METHOD method_64400 tickHunger ()V
 	METHOD method_66324 shouldSkipBlockDrops ()Z
 	METHOD method_66325 getExpectedPose ()Lnet/minecraft/class_4050;

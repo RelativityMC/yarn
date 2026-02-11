@@ -9,7 +9,6 @@ CLASS net/minecraft/class_4603 net/minecraft/client/gui/hud/InGameOverlayRendere
 	FIELD field_61744 spriteHolder Lnet/minecraft/class_11701;
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_11701;Lnet/minecraft/class_4597;)V
 		ARG 1 client
-		ARG 2 spriteHolder
 		ARG 3 vertexConsumers
 	METHOD method_23067 renderOverlays (ZFLnet/minecraft/class_11659;)V
 		ARG 1 sleeping

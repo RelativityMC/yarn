@@ -25,11 +25,10 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 		ARG 1 scroll
 	METHOD method_1803 addToMessageHistory (Ljava/lang/String;)V
 		ARG 1 message
-	METHOD method_1805 render (Lnet/minecraft/class_338$class_12233;IIZ)V
+	METHOD method_1805 render (Lnet/minecraft/class_338$class_12233;IILnet/minecraft/class_338$class_1_313;)V
 		ARG 1 drawer
 		ARG 2 windowHeight
 		ARG 3 currentTick
-		ARG 4 expanded
 	METHOD method_1806 getWidth (D)I
 		ARG 0 widthOption
 	METHOD method_1808 clear (Z)V
@@ -48,13 +47,11 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 		ARG 0 heightOption
 	METHOD method_1819 isChatFocused ()Z
 	METHOD method_1820 resetScroll ()V
-	METHOD method_23677 isChatHidden ()Z
 	METHOD method_41831 getDefaultUnfocusedHeight ()D
 	METHOD method_44752 getLineHeight ()I
-	METHOD method_44811 addMessage (Lnet/minecraft/class_2561;Lnet/minecraft/class_7469;Lnet/minecraft/class_7591;)V
+	METHOD method_44811 addMessage (Lnet/minecraft/class_2561;Lnet/minecraft/class_7469;Lnet/minecraft/class_1_327;Lnet/minecraft/class_7591;)V
 		ARG 1 message
 		ARG 2 signatureData
-		ARG 3 indicator
 	METHOD method_44812 removeMessage (Lnet/minecraft/class_7469;)V
 		ARG 1 signature
 	METHOD method_44813 refresh ()V
@@ -64,7 +61,7 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 	METHOD method_45585 (ILnet/minecraft/class_338$class_7731;)Z
 		ARG 2 message
 	METHOD method_45586 createRemovalMarker (Lnet/minecraft/class_303;)Lnet/minecraft/class_303;
-		ARG 1 original
+		ARG 0 original
 	METHOD method_45587 queueForRemoval (Lnet/minecraft/class_7469;)Lnet/minecraft/class_338$class_7731;
 		ARG 1 signature
 	METHOD method_45589 tickRemovalQueue ()V
@@ -77,12 +74,11 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 		COMMENT {@return the number of lines accepted by {@code lineConsumer}}
 		ARG 1 opacityRule
 		ARG 2 lineConsumer
-	METHOD method_73201 createScreen (Lnet/minecraft/class_338$class_11732;Lnet/minecraft/class_408$class_11738;)Lnet/minecraft/class_408;
+	METHOD method_73201 createScreen (Lnet/minecraft/class_338$class_11732;Lnet/minecraft/class_1_317;Lnet/minecraft/class_408$class_11738;)Lnet/minecraft/class_408;
 		ARG 1 method
-		ARG 2 factory
-	METHOD method_73202 setClientScreen (Lnet/minecraft/class_338$class_11732;Lnet/minecraft/class_408$class_11738;)V
+		ARG 3 factory
+	METHOD method_73202 setClientScreen (Lnet/minecraft/class_338$class_11732;Lnet/minecraft/class_1_317;Lnet/minecraft/class_408$class_11738;)V
 		ARG 1 method
-		ARG 2 factory
 	METHOD method_73203 saveDraft (Ljava/lang/String;)V
 		ARG 1 text
 	METHOD method_73204 discardDraft ()V
@@ -92,21 +88,18 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 	METHOD method_75801 (FLorg/joml/Matrix3x2f;)V
 		ARG 1 pose
 	METHOD method_75802 (IILnet/minecraft/class_338$class_12233;IFLnet/minecraft/class_303$class_7590;IF)V
-		ARG 5 line
 		ARG 6 y
 		ARG 7 opacity
-	METHOD method_75803 render (Lnet/minecraft/class_12225;IIZ)V
+	METHOD method_75803 render (Lnet/minecraft/class_12225;IILnet/minecraft/class_338$class_1_313;)V
 		ARG 1 textConsumer
 		ARG 2 windowHeight
 		ARG 3 currentTick
-		ARG 4 expanded
-	METHOD method_75804 render (Lnet/minecraft/class_332;Lnet/minecraft/class_327;IIIZZ)V
+	METHOD method_75804 render (Lnet/minecraft/class_332;Lnet/minecraft/class_327;IIILnet/minecraft/class_338$class_1_313;Z)V
 		ARG 1 context
 		ARG 2 textRenderer
 		ARG 3 currentTick
 		ARG 4 mouseX
 		ARG 5 mouseY
-		ARG 6 interactable
 		ARG 7 shouldInsert
 	CLASS 1 1
 		FIELD field_63866 styledCurrentLine Z
@@ -147,8 +140,6 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 			ARG 0 currentTick
 		METHOD method_75805 (ILnet/minecraft/class_303$class_7590;)F
 			ARG 1 line
-		METHOD method_75806 (Lnet/minecraft/class_303$class_7590;)F
-			ARG 0 line
 	CLASS class_12233 Backend
 		METHOD method_75807 text (IFLnet/minecraft/class_5481;)Z
 			ARG 1 y

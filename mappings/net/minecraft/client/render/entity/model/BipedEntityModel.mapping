@@ -41,8 +41,6 @@ CLASS net/minecraft/class_572 net/minecraft/client/render/entity/model/BipedEnti
 	FIELD field_32504 SPYGLASS_ARM_PITCH_OFFSET F
 	FIELD field_32507 SPYGLASS_SNEAKING_ARM_PITCH_OFFSET F
 	FIELD field_52918 BABY_TRANSFORMER Lnet/minecraft/class_9953;
-	METHOD method_2805 setVisible (Z)V
-		ARG 1 visible
 	METHOD method_2808 getArm (Lnet/minecraft/class_1306;)Lnet/minecraft/class_630;
 		ARG 1 arm
 	METHOD method_29353 animateArms (Lnet/minecraft/class_10034;)V
@@ -59,10 +57,10 @@ CLASS net/minecraft/class_572 net/minecraft/client/render/entity/model/BipedEnti
 		ARG 2 rightArm
 	METHOD method_72851 createEquipmentModelData (Lnet/minecraft/class_5605;)Lnet/minecraft/class_5609;
 		ARG 0 dilation
-	METHOD method_72853 createEquipmentModelData (Ljava/util/function/Function;Lnet/minecraft/class_5605;Lnet/minecraft/class_5605;)Lnet/minecraft/class_11677;
+	METHOD method_72853 createEquipmentModelData (Ljava/util/function/Function;Ljava/util/Map;Lnet/minecraft/class_5605;Lnet/minecraft/class_5605;)Lnet/minecraft/class_11677;
 		ARG 0 toModelData
-		ARG 1 hatDilation
-		ARG 2 armorDilation
+		ARG 2 hatDilation
+		ARG 3 armorDilation
 	METHOD method_72854 createEquipmentModelData (Lnet/minecraft/class_5605;Lnet/minecraft/class_5605;)Lnet/minecraft/class_11677;
 		ARG 0 hatDilation
 		ARG 1 armorDilation

@@ -5,21 +5,19 @@ CLASS net/minecraft/class_778 net/minecraft/client/render/block/BlockModelRender
 	FIELD field_32784 BRIGHTNESS_CACHE_MAX_SIZE I
 	METHOD <init> (Lnet/minecraft/class_324;)V
 		ARG 1 colors
-	METHOD method_3361 renderSmooth (Lnet/minecraft/class_1920;Ljava/util/List;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_4587;Lnet/minecraft/class_4588;ZI)V
+	METHOD method_3361 renderSmooth (Lnet/minecraft/class_1920;Ljava/util/List;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_4587;Lnet/minecraft/class_1_319;ZI)V
 		ARG 1 world
 		ARG 2 parts
 		ARG 3 state
 		ARG 4 pos
 		ARG 5 matrices
-		ARG 6 vertexConsumer
 		ARG 7 cull
 		ARG 8 overlay
-	METHOD method_3363 renderQuadsSmooth (Lnet/minecraft/class_1920;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_4587;Lnet/minecraft/class_4588;Ljava/util/List;Lnet/minecraft/class_778$class_780;I)V
+	METHOD method_3363 renderQuadsSmooth (Lnet/minecraft/class_1920;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_4587;Lnet/minecraft/class_1_319;Ljava/util/List;Lnet/minecraft/class_778$class_780;I)V
 		ARG 1 world
 		ARG 2 state
 		ARG 3 pos
 		ARG 4 matrices
-		ARG 5 vertexConsumer
 		ARG 6 quads
 		ARG 7 ambientOcclusionCalculator
 		ARG 8 overlay
@@ -29,25 +27,16 @@ CLASS net/minecraft/class_778 net/minecraft/client/render/block/BlockModelRender
 		ARG 2 pos
 		ARG 3 quad
 		ARG 4 cache
-	METHOD method_3365 renderQuads (Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;FFFLjava/util/List;II)V
+	METHOD method_3365 renderQuads (Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_1_319;ILjava/util/List;Lnet/minecraft/class_1_308;I)V
 		ARG 0 entry
-		ARG 1 vertexConsumer
-		ARG 2 red
-		ARG 3 green
-		ARG 4 blue
-		ARG 5 quads
-		ARG 6 light
-		ARG 7 overlay
-	METHOD method_3367 render (Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;Lnet/minecraft/class_1087;FFFII)V
+		ARG 3 quads
+		ARG 5 overlay
+	METHOD method_3367 render (Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_1_319;Lnet/minecraft/class_1087;III)V
 		ARG 0 entry
-		ARG 1 vertexConsumer
 		ARG 2 model
-		ARG 3 red
-		ARG 4 green
-		ARG 5 blue
-		ARG 6 light
-		ARG 7 overlay
-	METHOD method_3370 renderQuadsFlat (Lnet/minecraft/class_1920;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;IIZLnet/minecraft/class_4587;Lnet/minecraft/class_4588;Ljava/util/List;Lnet/minecraft/class_778$class_10931;)V
+		ARG 4 light
+		ARG 5 overlay
+	METHOD method_3370 renderQuadsFlat (Lnet/minecraft/class_1920;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;IIZLnet/minecraft/class_4587;Lnet/minecraft/class_1_319;Ljava/util/List;Lnet/minecraft/class_778$class_10931;)V
 		ARG 1 world
 		ARG 2 state
 		ARG 3 pos
@@ -55,34 +44,30 @@ CLASS net/minecraft/class_778 net/minecraft/client/render/block/BlockModelRender
 		ARG 5 overlay
 		ARG 6 useWorldLight
 		ARG 7 matrices
-		ARG 8 vertexConsumer
 		ARG 9 quads
 		ARG 10 lightmap
-	METHOD method_3373 renderFlat (Lnet/minecraft/class_1920;Ljava/util/List;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_4587;Lnet/minecraft/class_4588;ZI)V
+	METHOD method_3373 renderFlat (Lnet/minecraft/class_1920;Ljava/util/List;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_4587;Lnet/minecraft/class_1_319;ZI)V
 		ARG 1 world
 		ARG 2 parts
 		ARG 3 state
 		ARG 4 pos
 		ARG 5 matrices
-		ARG 6 vertexConsumer
 		ARG 7 cull
 		ARG 8 overlay
-	METHOD method_3374 render (Lnet/minecraft/class_1920;Ljava/util/List;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_4587;Lnet/minecraft/class_4588;ZI)V
+	METHOD method_3374 render (Lnet/minecraft/class_1920;Ljava/util/List;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_4587;Lnet/minecraft/class_1_319;ZI)V
 		ARG 1 world
 		ARG 2 parts
 		ARG 3 state
 		ARG 4 pos
 		ARG 5 matrices
-		ARG 6 vertexConsumer
 		ARG 7 cull
 		ARG 8 overlay
 	METHOD method_20544 enableBrightnessCache ()V
 	METHOD method_20545 disableBrightnessCache ()V
-	METHOD method_23073 renderQuad (Lnet/minecraft/class_1920;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_4588;Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_777;Lnet/minecraft/class_778$class_10931;I)V
+	METHOD method_23073 renderQuad (Lnet/minecraft/class_1920;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_1_319;Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_777;Lnet/minecraft/class_778$class_10931;I)V
 		ARG 1 world
 		ARG 2 state
 		ARG 3 pos
-		ARG 4 vertexConsumer
 		ARG 5 matrixEntry
 		ARG 6 quad
 		ARG 7 lightmap
@@ -160,8 +145,8 @@ CLASS net/minecraft/class_778 net/minecraft/client/render/block/BlockModelRender
 		FIELD field_58159 pos Lnet/minecraft/class_2338$class_2339;
 		FIELD field_58160 isExtremalFace Z
 		FIELD field_58161 isPartialFace Z
-		FIELD field_58162 fs [F
-		FIELD field_58163 is [I
+		FIELD field_58162 fs Lnet/minecraft/class_1_304$class_1_305;
+		FIELD field_58163 is Lnet/minecraft/class_1_308$class_1_309;
 		FIELD field_58164 lastTintIndex I
 		FIELD field_58165 colorOfLastTintIndex I
 		FIELD field_58166 brightnessCache Lnet/minecraft/class_778$class_4303;

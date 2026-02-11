@@ -4,10 +4,10 @@ CLASS net/minecraft/class_758 net/minecraft/client/render/fog/FogRenderer
 	FIELD field_60097 emptyBuffer Lcom/mojang/blaze3d/buffers/GpuBuffer;
 	FIELD field_60098 fogBuffer Lnet/minecraft/class_11285;
 	FIELD field_60586 FOG_MODIFIERS Ljava/util/List;
-	METHOD method_3211 applyFog (Lnet/minecraft/class_4184;ILnet/minecraft/class_9779;FLnet/minecraft/class_638;)Lorg/joml/Vector4f;
+	METHOD method_3211 applyFog (Lnet/minecraft/class_4184;ILnet/minecraft/class_9779;FLnet/minecraft/class_638;)Lnet/minecraft/class_7285;
 		ARG 1 camera
 		ARG 2 viewDistance
-	METHOD method_62185 getFogColor (Lnet/minecraft/class_4184;FLnet/minecraft/class_638;IF)Lorg/joml/Vector4f;
+	METHOD method_62185 getFogColor (Lnet/minecraft/class_4184;FLnet/minecraft/class_638;IFLorg/joml/Vector4f;)V
 		ARG 1 camera
 		ARG 2 tickProgress
 		ARG 3 world

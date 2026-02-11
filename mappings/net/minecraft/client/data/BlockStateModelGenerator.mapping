@@ -251,9 +251,8 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 	METHOD method_25657 registerSunflower ()V
 	METHOD method_25658 registerDoor (Lnet/minecraft/class_2248;)V
 		ARG 1 doorBlock
-	METHOD method_25660 registerBuiltinWithParticle (Lnet/minecraft/class_2248;Lnet/minecraft/class_2960;)V
+	METHOD method_25660 registerBuiltinWithParticle (Lnet/minecraft/class_2248;Lnet/minecraft/class_1_314;)V
 		ARG 1 block
-		ARG 2 particleSource
 	METHOD method_25661 createFenceBlockState (Lnet/minecraft/class_2248;Lnet/minecraft/class_807;Lnet/minecraft/class_807;)Lnet/minecraft/class_4917;
 		ARG 0 fenceBlock
 		ARG 1 postModel
@@ -396,22 +395,18 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 0 tick
 		ARG 1 locked
 		ARG 2 on
-	METHOD method_34624 (Lnet/minecraft/class_4944;Lnet/minecraft/class_2960;)Lnet/minecraft/class_4944;
-		ARG 1 id
-	METHOD method_34626 (Lnet/minecraft/class_2960;Lnet/minecraft/class_4944;)V
+	METHOD method_34626 (Lnet/minecraft/class_1_314;Lnet/minecraft/class_4944;)V
 		ARG 1 textures
 	METHOD method_34631 createDeepslateState (Lnet/minecraft/class_2248;Lnet/minecraft/class_813;Lnet/minecraft/class_4944;Ljava/util/function/BiConsumer;)Lnet/minecraft/class_4917;
 		ARG 0 block
 		ARG 1 variant
 		ARG 2 textures
 		ARG 3 modelCollector
-	METHOD method_34637 (Lnet/minecraft/class_4944;Lnet/minecraft/class_2960;)Lnet/minecraft/class_4944;
-		ARG 1 id
-	METHOD method_34639 (Lnet/minecraft/class_2960;Lnet/minecraft/class_4944;)V
+	METHOD method_34639 (Lnet/minecraft/class_1_314;Lnet/minecraft/class_4944;)V
 		ARG 1 textures
-	METHOD method_34645 (Lnet/minecraft/class_2960;Lnet/minecraft/class_4944;)V
+	METHOD method_34645 (Lnet/minecraft/class_1_314;Lnet/minecraft/class_4944;)V
 		ARG 1 textures
-	METHOD method_34650 (Lnet/minecraft/class_2960;Lnet/minecraft/class_4944;)V
+	METHOD method_34650 (Lnet/minecraft/class_1_314;Lnet/minecraft/class_4944;)V
 		ARG 1 textureMap
 	METHOD method_34852 registerLightningRod (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
 		ARG 1 unwaxed

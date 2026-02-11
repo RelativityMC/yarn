@@ -37,7 +37,7 @@ CLASS net/minecraft/class_7764 net/minecraft/client/texture/SpriteContents
 		ARG 4 metadata
 	METHOD method_45813 (Lit/unimi/dsi/fastutil/ints/IntSet;I)Z
 		ARG 0 frameIndex
-	METHOD method_45817 getDistinctFrameCount ()Ljava/util/stream/IntStream;
+	METHOD method_45817 getDistinctFrameCount ()Lit/unimi/dsi/fastutil/ints/IntList;
 	METHOD method_45818 createAnimator (Lcom/mojang/blaze3d/buffers/GpuBufferSlice;I)Lnet/minecraft/class_7764$class_12298;
 		ARG 1 bufferSlice
 		ARG 2 animationInfoSize
@@ -57,9 +57,7 @@ CLASS net/minecraft/class_7764 net/minecraft/client/texture/SpriteContents
 			ARG 4 interpolated
 		METHOD method_33446 getFrameX (I)I
 			ARG 1 frame
-		METHOD method_33449 (Lnet/minecraft/class_7764$class_5791;)I
-			ARG 0 frame
-		METHOD method_33450 getDistinctFrameCount ()Ljava/util/stream/IntStream;
+		METHOD method_33450 getDistinctFrameCount ()Lit/unimi/dsi/fastutil/ints/IntList;
 		METHOD method_33451 getFrameY (I)I
 			ARG 1 frame
 		METHOD method_76305 createAnimator (Lcom/mojang/blaze3d/buffers/GpuBufferSlice;I)Lnet/minecraft/class_7764$class_12298;

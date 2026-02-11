@@ -6,7 +6,7 @@ CLASS net/minecraft/class_10529 net/minecraft/client/render/block/entity/Abstrac
 	METHOD <init> (Lnet/minecraft/class_5614$class_5615;)V
 		ARG 1 context
 	METHOD method_45790 getTextOffset ()Lnet/minecraft/class_243;
-	METHOD method_45792 getTextureId (Lnet/minecraft/class_4719;)Lnet/minecraft/class_4730;
+	METHOD method_45792 getTextureId (Lnet/minecraft/class_4719;)Lnet/minecraft/class_1_310;
 		ARG 1 woodType
 	METHOD method_51272 getSignScale ()F
 	METHOD method_51273 getTextScale ()F

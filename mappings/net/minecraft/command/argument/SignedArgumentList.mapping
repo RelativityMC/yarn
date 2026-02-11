@@ -5,9 +5,6 @@ CLASS net/minecraft/class_7644 net/minecraft/command/argument/SignedArgumentList
 	METHOD method_45043 of (Lcom/mojang/brigadier/ParseResults;)Lnet/minecraft/class_7644;
 		COMMENT {@return a new instance of this list from {@code parseResults}}
 		ARG 0 parseResults
-	METHOD method_45044 collectDecoratableArguments (Ljava/lang/String;Lcom/mojang/brigadier/context/CommandContextBuilder;)Ljava/util/List;
-		ARG 0 argumentName
-		ARG 1 builder
 	METHOD method_58774 isNotEmpty (Lcom/mojang/brigadier/ParseResults;)Z
 		ARG 0 parseResults
 	METHOD method_58775 get (Ljava/lang/String;)Lnet/minecraft/class_7644$class_7645;

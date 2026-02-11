@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
-	FIELD field_4443 uploadQueue Ljava/util/Queue;
-	FIELD field_18766 cameraPosition Lnet/minecraft/class_243;
+	FIELD field_18766 cameraPosition Ljava/util/concurrent/atomic/AtomicReference;
 	FIELD field_20828 buffers Lnet/minecraft/class_750;
 	FIELD field_20830 executor Lnet/minecraft/class_10207;
 	FIELD field_20831 world Lnet/minecraft/class_638;
@@ -9,9 +8,6 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 	FIELD field_46908 stopped Z
 	FIELD field_52171 sectionBuilder Lnet/minecraft/class_9810;
 	FIELD field_53957 scheduler Lnet/minecraft/class_10160;
-	FIELD field_54167 consecutiveExecutor Lnet/minecraft/class_10176;
-	FIELD field_61028 uploadExecutor Ljava/util/concurrent/Executor;
-	FIELD field_61029 renderQueue Ljava/util/Queue;
 	METHOD <init> (Lnet/minecraft/class_638;Lnet/minecraft/class_761;Lnet/minecraft/class_10207;Lnet/minecraft/class_4599;Lnet/minecraft/class_776;Lnet/minecraft/class_824;)V
 		ARG 1 world
 		ARG 2 worldRenderer
@@ -29,17 +25,9 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 		ARG 1 cameraPosition
 	METHOD method_22752 setWorld (Lnet/minecraft/class_638;)V
 		ARG 1 world
-	METHOD method_22755 (Lnet/minecraft/class_846$class_851$class_4577;Lnet/minecraft/class_750;Lnet/minecraft/class_846$class_4690;Ljava/lang/Throwable;)V
-		ARG 3 result
-		ARG 4 throwable
 	METHOD method_22756 send (Lnet/minecraft/class_846$class_851$class_4577;)V
-		ARG 1 task
-	METHOD method_22761 upload ()V
 	METHOD method_22763 scheduleRunTasks ()V
-	METHOD method_34846 getChunksToUpload ()I
 	METHOD method_34847 getFreeBufferCount ()I
-	METHOD method_38555 (Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletionStage;
-		ARG 0 future
 	METHOD method_72045 cancelAllTasks ()V
 	METHOD method_72046 getScheduledTaskCount ()I
 	CLASS class_851 BuiltChunk
@@ -76,7 +64,7 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 		METHOD method_22781 rebuild (Lnet/minecraft/class_6850;)V
 			ARG 1 builder
 		METHOD method_40051 getBoundingBox ()Lnet/minecraft/class_238;
-		METHOD method_60909 getVertexSorter (Lnet/minecraft/class_4076;)Lnet/minecraft/class_8251;
+		METHOD method_60909 getVertexSorter (Lnet/minecraft/class_4076;Lnet/minecraft/class_243;)Lnet/minecraft/class_8251;
 			ARG 1 sectionPos
 		METHOD method_62973 setSectionPos (J)V
 			ARG 1 sectionPos
@@ -85,18 +73,8 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 		METHOD method_62975 getSectionPos ()J
 		METHOD method_64065 hasTranslucentLayer ()Z
 		METHOD method_64066 isCurrentlySorting ()Z
-		METHOD method_68531 uploadIndices (Lnet/minecraft/class_11516;Lnet/minecraft/class_9799$class_9800;Lnet/minecraft/class_11515;)Ljava/util/concurrent/CompletableFuture;
+		METHOD method_72049 setCurrentRenderData (Lnet/minecraft/class_11517;)Lnet/minecraft/class_11517;
 			ARG 1 data
-			ARG 2 buffer
-			ARG 3 layer
-		METHOD method_72048 (Lnet/minecraft/class_11516;Lnet/minecraft/class_11515;Lnet/minecraft/class_9801;)V
-			ARG 2 layer
-			ARG 3 buffer
-		METHOD method_72049 setCurrentRenderData (Lnet/minecraft/class_11517;)V
-			ARG 1 data
-		METHOD method_72050 uploadLayer (Ljava/util/Map;Lnet/minecraft/class_11516;)Ljava/util/concurrent/CompletableFuture;
-			ARG 1 buffersByLayer
-			ARG 2 renderData
 		METHOD method_72052 getCurrentRenderData ()Lnet/minecraft/class_11517;
 		CLASS class_4577 Task
 			FIELD field_20836 cancelled Ljava/util/concurrent/atomic/AtomicBoolean;
@@ -105,11 +83,12 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 			METHOD <init> (Lnet/minecraft/class_846$class_851;Z)V
 				ARG 2 prioritized
 			METHOD method_22782 cancel ()V
-			METHOD method_22783 run (Lnet/minecraft/class_750;)Ljava/util/concurrent/CompletableFuture;
+			METHOD method_22783 run (Lnet/minecraft/class_750;)Lnet/minecraft/class_846$class_851$class_4577$class_4690;
 				ARG 1 buffers
 			METHOD method_38556 getName ()Ljava/lang/String;
 			METHOD method_62976 isPrioritized ()Z
 			METHOD method_62977 getOrigin ()Lnet/minecraft/class_2338;
+			CLASS class_4690 Result
 		CLASS class_4578 RebuildTask
 			FIELD field_20838 region Lnet/minecraft/class_853;
 			METHOD <init> (Lnet/minecraft/class_846$class_851;Lnet/minecraft/class_853;Z)V
@@ -119,4 +98,3 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 			FIELD field_60950 renderData Lnet/minecraft/class_11516;
 			METHOD <init> (Lnet/minecraft/class_846$class_851;Lnet/minecraft/class_11516;)V
 				ARG 2 data
-	CLASS class_4690 Result

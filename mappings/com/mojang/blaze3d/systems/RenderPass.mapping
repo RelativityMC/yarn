@@ -44,7 +44,7 @@ CLASS com/mojang/blaze3d/systems/RenderPass
 		ARG 1 index
 		ARG 2 buffer
 	CLASS class_10884 RenderObject
-		METHOD <init> (ILcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5595;II)V
+		METHOD <init> (ILcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5595;III)V
 			ARG 1 slot
 			ARG 2 vertexBuffer
 			ARG 3 indexBuffer

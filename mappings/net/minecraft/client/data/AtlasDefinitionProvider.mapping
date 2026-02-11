@@ -14,8 +14,7 @@ CLASS net/minecraft/class_10718 net/minecraft/client/data/AtlasDefinitionProvide
 		ARG 0 spriteMapper
 	METHOD method_67249 (Lnet/minecraft/class_10186$class_10190;Ljava/lang/String;)Ljava/lang/String;
 		ARG 1 trimPatternPath
-	METHOD method_67250 createSingleAtlasSource (Lnet/minecraft/class_4730;)Lnet/minecraft/class_7948;
-		ARG 0 spriteId
+	METHOD method_67250 createSingleAtlasSource (Lnet/minecraft/class_1_310;)Lnet/minecraft/class_7948;
 	METHOD method_67251 createAtlasSources (Ljava/lang/String;)Ljava/util/List;
 		ARG 0 directorySource
 	METHOD method_67252 runForAtlas (Lnet/minecraft/class_7403;Lnet/minecraft/class_2960;Ljava/util/List;)Ljava/util/concurrent/CompletableFuture;

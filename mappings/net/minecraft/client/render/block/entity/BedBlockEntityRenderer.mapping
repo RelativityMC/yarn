@@ -7,26 +7,23 @@ CLASS net/minecraft/class_825 net/minecraft/client/render/block/entity/BedBlockE
 	METHOD <init> (Lnet/minecraft/class_10515$class_11695;)V
 		ARG 1 context
 	METHOD <init> (Lnet/minecraft/class_11701;Lnet/minecraft/class_5599;)V
-		ARG 1 materials
 		ARG 2 entityModelSet
-	METHOD method_3558 renderPart (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;Lnet/minecraft/class_3879$class_9948;Lnet/minecraft/class_2350;Lnet/minecraft/class_4730;IIZLnet/minecraft/class_11683$class_11792;I)V
+	METHOD method_3558 renderPart (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;Lnet/minecraft/class_3879$class_9948;Lnet/minecraft/class_2350;Lnet/minecraft/class_1_310;IIZLnet/minecraft/class_11683$class_11792;I)V
 		ARG 1 matrices
 		ARG 2 queue
 		ARG 3 model
 		ARG 4 direction
-		ARG 5 spriteId
 		ARG 6 light
 		ARG 7 overlay
 		ARG 8 isFoot
 		ARG 9 crumblingOverlay
 	METHOD method_32136 getHeadTexturedModelData ()Lnet/minecraft/class_5607;
 	METHOD method_32137 getFootTexturedModelData ()Lnet/minecraft/class_5607;
-	METHOD method_65557 renderAsItem (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;IILnet/minecraft/class_4730;I)V
+	METHOD method_65557 renderAsItem (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;IILnet/minecraft/class_1_310;I)V
 		ARG 1 matrices
 		ARG 2 queue
 		ARG 3 light
 		ARG 4 overlay
-		ARG 5 textureId
 	METHOD method_72159 setTransforms (Lnet/minecraft/class_4587;ZLnet/minecraft/class_2350;)V
 		ARG 0 matrices
 		ARG 1 isFoot

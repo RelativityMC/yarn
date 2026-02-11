@@ -27,10 +27,8 @@ CLASS net/minecraft/class_11661 net/minecraft/client/render/command/OrderedRende
 		METHOD comp_4493 renderState ()Lnet/minecraft/class_10017;
 	CLASS class_11668 ItemCommand
 		FIELD comp_4498 positionMatrix Lnet/minecraft/class_4587$class_4665;
-		FIELD comp_4641 renderLayer Lnet/minecraft/class_1921;
 		FIELD comp_4642 glintType Lnet/minecraft/class_10444$class_10445;
 		METHOD comp_4498 positionMatrix ()Lnet/minecraft/class_4587$class_4665;
-		METHOD comp_4641 renderLayer ()Lnet/minecraft/class_1921;
 		METHOD comp_4642 glintType ()Lnet/minecraft/class_10444$class_10445;
 	CLASS class_11669 LeashCommand
 		FIELD comp_4502 matricesEntry Lorg/joml/Matrix4f;

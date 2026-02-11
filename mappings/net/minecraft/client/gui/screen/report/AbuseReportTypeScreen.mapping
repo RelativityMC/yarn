@@ -8,7 +8,7 @@ CLASS net/minecraft/class_8770 net/minecraft/client/gui/screen/report/AbuseRepor
 	FIELD field_46048 context Lnet/minecraft/class_7574;
 	FIELD field_46049 selectedPlayer Lnet/minecraft/class_5519;
 	FIELD field_46050 layout Lnet/minecraft/class_8667;
-	METHOD <init> (Lnet/minecraft/class_437;Lnet/minecraft/class_7574;Lnet/minecraft/class_5519;)V
+	METHOD <init> (Lnet/minecraft/class_437;Lnet/minecraft/class_7574;Lnet/minecraft/class_5519;Z)V
 		ARG 1 parent
 		ARG 2 context
 		ARG 3 selectedPlayer

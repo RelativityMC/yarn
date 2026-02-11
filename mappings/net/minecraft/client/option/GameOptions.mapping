@@ -431,8 +431,6 @@ CLASS net/minecraft/class_315 net/minecraft/client/option/GameOptions
 	METHOD method_42454 getFovEffectScale ()Lnet/minecraft/class_7172;
 	METHOD method_42455 (Lnet/minecraft/class_1306;)V
 		ARG 0 value
-	METHOD method_42456 (Lnet/minecraft/class_1659;)V
-		ARG 0 value
 	METHOD method_42458 (Lnet/minecraft/class_4061;)V
 		ARG 0 value
 	METHOD method_42463 (Lnet/minecraft/class_4065;)V

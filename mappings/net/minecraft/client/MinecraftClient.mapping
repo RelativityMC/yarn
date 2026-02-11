@@ -62,7 +62,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_1714 musicTracker Lnet/minecraft/class_1142;
 	FIELD field_1715 resourcePackManager Lnet/minecraft/class_3283;
 	FIELD field_1717 languageManager Lnet/minecraft/class_1076;
-	FIELD field_1719 cameraEntity Lnet/minecraft/class_1297;
 	FIELD field_1720 versionType Ljava/lang/String;
 	FIELD field_1721 isDemo Z
 	FIELD field_1724 player Lnet/minecraft/class_746;
@@ -87,7 +86,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		COMMENT This is only used when connecting to the integrated server.
 		COMMENT
 		COMMENT @see net.minecraft.client.gui.screen.multiplayer.ConnectScreen
-	FIELD field_1747 crashReportSupplier Ljava/util/function/Supplier;
 	FIELD field_1748 levelStorage Lnet/minecraft/class_32;
 	FIELD field_1749 ALT_TEXT_RENDERER_ID Lnet/minecraft/class_2960;
 	FIELD field_1750 lastMetricsSampleTime J
@@ -198,7 +196,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_1487 getNetworkProxy ()Ljava/net/Proxy;
 	METHOD method_1490 stop ()V
 	METHOD method_1493 isPaused ()Z
-	METHOD method_1494 setCrashReportSupplierAndAddDetails (Lnet/minecraft/class_128;)V
+	METHOD method_1494 (Lnet/minecraft/class_128;)V
 		ARG 1 crashReport
 	METHOD method_1496 isIntegratedServerRunning ()Z
 	METHOD method_1498 isHudEnabled ()Z
@@ -359,7 +357,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_31974 getLoadedEntityModels ()Lnet/minecraft/class_5599;
 	METHOD method_31975 getBlockEntityRenderDispatcher ()Lnet/minecraft/class_824;
 	METHOD method_33883 shouldFilterText ()Z
-	METHOD method_33884 getChatRestriction ()Lnet/minecraft/class_310$class_5859;
+	METHOD method_33884 getChatRestriction ()Lnet/minecraft/class_1_317;
 	METHOD method_34745 toggleDebugProfiler (Ljava/util/function/Consumer;)Z
 		ARG 1 chatMessageSender
 	METHOD method_34746 (Ljava/util/function/Consumer;Lnet/minecraft/class_3696;)V
@@ -406,11 +404,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_41733 forceStopRecorder ()V
 	METHOD method_41734 getGpuUtilizationPercentage ()D
 	METHOD method_41735 createIntegratedServerLoader ()Lnet/minecraft/class_7196;
-	METHOD method_43587 setCrashReportSupplier (Lnet/minecraft/class_128;)V
-		ARG 1 crashReport
 	METHOD method_43590 getProfileKeys ()Lnet/minecraft/class_7853;
-	METHOD method_44352 (Z)V
-		ARG 1 confirmed
 	METHOD method_44376 ensureAbuseReportContext (Lnet/minecraft/class_7569;)V
 		COMMENT Recreates and resets {@link #abuseReportContext} if {@code environment} has
 		COMMENT changed.
@@ -472,7 +466,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_54117 addUptimesToCrashReport (Lnet/minecraft/class_129;)V
 		ARG 1 section
 	METHOD method_54578 getLauncherBrand ()Ljava/lang/String;
-	METHOD method_54579 printCrashReport ()V
 	METHOD method_54580 printCrashReport (Lnet/minecraft/class_128;)V
 		ARG 1 crashReport
 	METHOD method_54785 getTargetMillisPerTick (F)F
@@ -531,15 +524,4 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 1 stopSounds
 	CLASS 1 1
 		FIELD field_52756 closed Z
-	CLASS class_5859 ChatRestriction
-		COMMENT Represents the restrictions on chat on a Minecraft client.
-		COMMENT
-		COMMENT @see MinecraftClient#getChatRestriction()
-		FIELD field_28944 description Lnet/minecraft/class_2561;
-		FIELD field_39456 MORE_INFO_TEXT Lnet/minecraft/class_2561;
-		METHOD <init> (Ljava/lang/String;ILnet/minecraft/class_2561;)V
-			ARG 3 description
-		METHOD method_33885 getDescription ()Lnet/minecraft/class_2561;
-		METHOD method_33886 allowsChat (Z)Z
-			ARG 1 singlePlayer
 	CLASS class_8764 LoadingContext

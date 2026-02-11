@@ -3,12 +3,11 @@ CLASS net/minecraft/class_834 net/minecraft/client/render/block/entity/ShulkerBo
 	FIELD field_61794 materials Lnet/minecraft/class_11701;
 	METHOD <init> (Lnet/minecraft/class_5599;Lnet/minecraft/class_11701;)V
 		ARG 1 models
-		ARG 2 materials
 	METHOD <init> (Lnet/minecraft/class_5614$class_5615;)V
 		ARG 1 ctx
 	METHOD <init> (Lnet/minecraft/class_10515$class_11695;)V
 		ARG 1 context
-	METHOD method_65562 render (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;IILnet/minecraft/class_2350;FLnet/minecraft/class_11683$class_11792;Lnet/minecraft/class_4730;I)V
+	METHOD method_65562 render (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;IILnet/minecraft/class_2350;FLnet/minecraft/class_11683$class_11792;Lnet/minecraft/class_1_310;I)V
 		ARG 1 matrices
 		ARG 2 queue
 		ARG 3 light
@@ -16,7 +15,6 @@ CLASS net/minecraft/class_834 net/minecraft/client/render/block/entity/ShulkerBo
 		ARG 5 facing
 		ARG 6 openness
 		ARG 7 crumblingOverlay
-		ARG 8 spriteId
 	METHOD method_72162 setTransforms (Lnet/minecraft/class_4587;Lnet/minecraft/class_2350;F)V
 		ARG 1 matrices
 		ARG 2 facing

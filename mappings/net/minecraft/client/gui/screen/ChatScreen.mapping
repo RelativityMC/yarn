@@ -14,7 +14,7 @@ CLASS net/minecraft/class_408 net/minecraft/client/gui/screen/ChatScreen
 	FIELD field_33953 USAGE_TEXT Lnet/minecraft/class_2561;
 	FIELD field_62013 draft Z
 	FIELD field_62014 closeReason Lnet/minecraft/class_408$class_11739;
-	METHOD <init> (Ljava/lang/String;Z)V
+	METHOD <init> (Ljava/lang/String;ZLnet/minecraft/class_1_317;)V
 		ARG 1 text
 		ARG 2 draft
 	METHOD method_2114 setChatFromHistory (I)V
@@ -36,7 +36,5 @@ CLASS net/minecraft/class_408 net/minecraft/client/gui/screen/ChatScreen
 		ARG 2 insert
 	METHOD method_76757 shouldInsert ()Z
 	CLASS class_11738 Factory
-		METHOD method_1_113 create (Ljava/lang/String;Z)Lnet/minecraft/class_408;
-			ARG 1 string
-			ARG 2 draft
+		METHOD method_1_113 create (Ljava/lang/String;ZLnet/minecraft/class_1_317;)Lnet/minecraft/class_408;
 	CLASS class_11739 CloseReason

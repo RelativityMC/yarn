@@ -6,20 +6,20 @@ CLASS net/minecraft/class_4722 net/minecraft/client/render/TexturedRenderLayers
 	FIELD field_21707 SHIELD_PATTERNS_ATLAS_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_21708 SIGNS_ATLAS_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_21709 CHEST_ATLAS_TEXTURE Lnet/minecraft/class_2960;
-	FIELD field_21710 SHULKER_TEXTURE_ID Lnet/minecraft/class_4730;
+	FIELD field_21710 SHULKER_TEXTURE_ID Lnet/minecraft/class_1_310;
 	FIELD field_21711 COLORED_SHULKER_BOXES_TEXTURES Ljava/util/List;
 	FIELD field_21712 SIGN_TYPE_TEXTURES Ljava/util/Map;
-	FIELD field_21713 BED_TEXTURES [Lnet/minecraft/class_4730;
-	FIELD field_21714 TRAPPED_CHEST Lnet/minecraft/class_4730;
-	FIELD field_21715 TRAPPED_CHEST_LEFT Lnet/minecraft/class_4730;
-	FIELD field_21716 TRAPPED_CHEST_RIGHT Lnet/minecraft/class_4730;
-	FIELD field_21717 CHRISTMAS_CHEST Lnet/minecraft/class_4730;
-	FIELD field_21718 CHRISTMAS_CHEST_LEFT Lnet/minecraft/class_4730;
-	FIELD field_21719 CHRISTMAS_CHEST_RIGHT Lnet/minecraft/class_4730;
-	FIELD field_21720 CHEST Lnet/minecraft/class_4730;
-	FIELD field_21721 CHEST_LEFT Lnet/minecraft/class_4730;
-	FIELD field_21722 CHEST_RIGHT Lnet/minecraft/class_4730;
-	FIELD field_21723 ENDER_CHEST Lnet/minecraft/class_4730;
+	FIELD field_21713 BED_TEXTURES [Lnet/minecraft/class_1_310;
+	FIELD field_21714 TRAPPED_CHEST Lnet/minecraft/class_1_310;
+	FIELD field_21715 TRAPPED_CHEST_LEFT Lnet/minecraft/class_1_310;
+	FIELD field_21716 TRAPPED_CHEST_RIGHT Lnet/minecraft/class_1_310;
+	FIELD field_21717 CHRISTMAS_CHEST Lnet/minecraft/class_1_310;
+	FIELD field_21718 CHRISTMAS_CHEST_LEFT Lnet/minecraft/class_1_310;
+	FIELD field_21719 CHRISTMAS_CHEST_RIGHT Lnet/minecraft/class_1_310;
+	FIELD field_21720 CHEST Lnet/minecraft/class_1_310;
+	FIELD field_21721 CHEST_LEFT Lnet/minecraft/class_1_310;
+	FIELD field_21722 CHEST_RIGHT Lnet/minecraft/class_1_310;
+	FIELD field_21723 ENDER_CHEST Lnet/minecraft/class_1_310;
 	FIELD field_21729 CHEST_RENDER_LAYER Lnet/minecraft/class_1921;
 	FIELD field_28252 BANNER_PATTERN_TEXTURES Ljava/util/Map;
 	FIELD field_28253 SHIELD_PATTERN_TEXTURES Ljava/util/Map;
@@ -29,10 +29,10 @@ CLASS net/minecraft/class_4722 net/minecraft/client/render/TexturedRenderLayers
 	FIELD field_42910 DECORATED_POT_ATLAS_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_42911 DECORATED_POT_PATTERN_TEXTURES Ljava/util/Map;
 	FIELD field_46070 ARMOR_TRIMS_DECAL_RENDER_LAYER Lnet/minecraft/class_1921;
-	FIELD field_49769 BANNER_BASE Lnet/minecraft/class_4730;
-	FIELD field_49770 SHIELD_BASE Lnet/minecraft/class_4730;
-	FIELD field_51914 DECORATED_POT_BASE Lnet/minecraft/class_4730;
-	FIELD field_51915 DECORATED_POT_SIDE Lnet/minecraft/class_4730;
+	FIELD field_49769 BANNER_BASE Lnet/minecraft/class_1_310;
+	FIELD field_49770 SHIELD_BASE Lnet/minecraft/class_1_310;
+	FIELD field_51914 DECORATED_POT_BASE Lnet/minecraft/class_1_310;
+	FIELD field_51915 DECORATED_POT_SIDE Lnet/minecraft/class_1_310;
 	FIELD field_56355 ITEM_SPRITE_MAPPER Lnet/minecraft/class_10721;
 	FIELD field_56356 BLOCK_SPRITE_MAPPER Lnet/minecraft/class_10721;
 	FIELD field_56357 BANNER_PATTERN_SPRITE_MAPPER Lnet/minecraft/class_10721;
@@ -43,18 +43,18 @@ CLASS net/minecraft/class_4722 net/minecraft/client/render/TexturedRenderLayers
 	FIELD field_56362 SHULKER_SPRITE_MAPPER Lnet/minecraft/class_10721;
 	FIELD field_56363 SIGN_SPRITE_MAPPER Lnet/minecraft/class_10721;
 	FIELD field_56364 HANGING_SIGN_SPRITE_MAPPER Lnet/minecraft/class_10721;
-	FIELD field_61745 COPPER_CHEST Lnet/minecraft/class_4730;
-	FIELD field_61746 COPPER_CHEST_LEFT Lnet/minecraft/class_4730;
-	FIELD field_61747 COPPER_CHEST_RIGHT Lnet/minecraft/class_4730;
-	FIELD field_61748 EXPOSED_COPPER_CHEST Lnet/minecraft/class_4730;
-	FIELD field_61749 EXPOSED_COPPER_CHEST_LEFT Lnet/minecraft/class_4730;
-	FIELD field_61750 EXPOSED_COPPER_CHEST_RIGHT Lnet/minecraft/class_4730;
-	FIELD field_61751 WEATHERED_COPPER_CHEST Lnet/minecraft/class_4730;
-	FIELD field_61752 WEATHERED_COPPER_CHEST_LEFT Lnet/minecraft/class_4730;
-	FIELD field_61753 WEATHERED_COPPER_CHEST_RIGHT Lnet/minecraft/class_4730;
-	FIELD field_61754 OXIDIZED_COPPER_CHEST Lnet/minecraft/class_4730;
-	FIELD field_61755 OXIDIZED_COPPER_CHEST_LEFT Lnet/minecraft/class_4730;
-	FIELD field_61756 OXIDIZED_COPPER_CHEST_RIGHT Lnet/minecraft/class_4730;
+	FIELD field_61745 COPPER_CHEST Lnet/minecraft/class_1_310;
+	FIELD field_61746 COPPER_CHEST_LEFT Lnet/minecraft/class_1_310;
+	FIELD field_61747 COPPER_CHEST_RIGHT Lnet/minecraft/class_1_310;
+	FIELD field_61748 EXPOSED_COPPER_CHEST Lnet/minecraft/class_1_310;
+	FIELD field_61749 EXPOSED_COPPER_CHEST_LEFT Lnet/minecraft/class_1_310;
+	FIELD field_61750 EXPOSED_COPPER_CHEST_RIGHT Lnet/minecraft/class_1_310;
+	FIELD field_61751 WEATHERED_COPPER_CHEST Lnet/minecraft/class_1_310;
+	FIELD field_61752 WEATHERED_COPPER_CHEST_LEFT Lnet/minecraft/class_1_310;
+	FIELD field_61753 WEATHERED_COPPER_CHEST_RIGHT Lnet/minecraft/class_1_310;
+	FIELD field_61754 OXIDIZED_COPPER_CHEST Lnet/minecraft/class_1_310;
+	FIELD field_61755 OXIDIZED_COPPER_CHEST_LEFT Lnet/minecraft/class_1_310;
+	FIELD field_61756 OXIDIZED_COPPER_CHEST_RIGHT Lnet/minecraft/class_1_310;
 	FIELD field_61757 GUI_ATLAS_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_61758 MAP_DECORATIONS_ATLAS_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_61759 PAINTINGS_ATLAS_TEXTURE Lnet/minecraft/class_2960;
@@ -62,45 +62,45 @@ CLASS net/minecraft/class_4722 net/minecraft/client/render/TexturedRenderLayers
 	FIELD field_63577 CELESTIALS_ATLAS_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_64451 BLOCK_TRANSLUCENT_CULL Lnet/minecraft/class_1921;
 	FIELD field_64452 ITEM_TRANSLUCENT_CULL Lnet/minecraft/class_1921;
-	METHOD method_24062 getChestTextureId (Lnet/minecraft/class_11959$class_11960;Lnet/minecraft/class_2745;)Lnet/minecraft/class_4730;
+	METHOD method_24062 getChestTextureId (Lnet/minecraft/class_11959$class_11960;Lnet/minecraft/class_2745;)Lnet/minecraft/class_1_310;
 		ARG 0 variant
 		ARG 1 type
-	METHOD method_24063 getChestTextureId (Lnet/minecraft/class_2745;Lnet/minecraft/class_4730;Lnet/minecraft/class_4730;Lnet/minecraft/class_4730;)Lnet/minecraft/class_4730;
+	METHOD method_24063 getChestTextureId (Lnet/minecraft/class_2745;Lnet/minecraft/class_1_310;Lnet/minecraft/class_1_310;Lnet/minecraft/class_1_310;)Lnet/minecraft/class_1_310;
 		ARG 0 type
 		ARG 1 single
 		ARG 2 left
 		ARG 3 right
-	METHOD method_24064 createSignTextureId (Lnet/minecraft/class_4719;)Lnet/minecraft/class_4730;
+	METHOD method_24064 createSignTextureId (Lnet/minecraft/class_4719;)Lnet/minecraft/class_1_310;
 		ARG 0 type
 	METHOD method_24072 getChest ()Lnet/minecraft/class_1921;
 	METHOD method_24074 getEntityCutout ()Lnet/minecraft/class_1921;
 	METHOD method_29382 getItemTranslucentCull ()Lnet/minecraft/class_1921;
-	METHOD method_33081 getBannerPatternTextureId (Lnet/minecraft/class_6880;)Lnet/minecraft/class_4730;
+	METHOD method_33081 getBannerPatternTextureId (Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_310;
 		ARG 0 pattern
-	METHOD method_33082 getSignTextureId (Lnet/minecraft/class_4719;)Lnet/minecraft/class_4730;
+	METHOD method_33082 getSignTextureId (Lnet/minecraft/class_4719;)Lnet/minecraft/class_1_310;
 		ARG 0 signType
-	METHOD method_33083 getShieldPatternTextureId (Lnet/minecraft/class_6880;)Lnet/minecraft/class_4730;
+	METHOD method_33083 getShieldPatternTextureId (Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_310;
 		ARG 0 pattern
-	METHOD method_45781 getHangingSignTextureId (Lnet/minecraft/class_4719;)Lnet/minecraft/class_4730;
+	METHOD method_45781 getHangingSignTextureId (Lnet/minecraft/class_4719;)Lnet/minecraft/class_1_310;
 		ARG 0 signType
-	METHOD method_45782 createHangingSignTextureId (Lnet/minecraft/class_4719;)Lnet/minecraft/class_4730;
+	METHOD method_45782 createHangingSignTextureId (Lnet/minecraft/class_4719;)Lnet/minecraft/class_1_310;
 		ARG 0 type
 	METHOD method_48480 getArmorTrims (Z)Lnet/minecraft/class_1921;
 		ARG 0 decal
-	METHOD method_49341 getDecoratedPotPatternTextureId (Lnet/minecraft/class_5321;)Lnet/minecraft/class_4730;
+	METHOD method_49341 getDecoratedPotPatternTextureId (Lnet/minecraft/class_5321;)Lnet/minecraft/class_1_310;
 		ARG 0 potPatternKey
-	METHOD method_60576 (Lnet/minecraft/class_6880$class_6883;)Lnet/minecraft/class_4730;
+	METHOD method_60576 (Lnet/minecraft/class_6880$class_6883;)Lnet/minecraft/class_1_310;
 		ARG 0 pattern
-	METHOD method_65527 getBedTextureId (Lnet/minecraft/class_1767;)Lnet/minecraft/class_4730;
+	METHOD method_65527 getBedTextureId (Lnet/minecraft/class_1767;)Lnet/minecraft/class_1_310;
 		ARG 0 color
 	METHOD method_65529 createColorId (Lnet/minecraft/class_1767;)Lnet/minecraft/class_2960;
 		ARG 0 color
-	METHOD method_65531 createBedTextureId (Lnet/minecraft/class_1767;)Lnet/minecraft/class_4730;
+	METHOD method_65531 createBedTextureId (Lnet/minecraft/class_1767;)Lnet/minecraft/class_1_310;
 		ARG 0 color
-	METHOD method_65532 getShulkerBoxTextureId (Lnet/minecraft/class_1767;)Lnet/minecraft/class_4730;
+	METHOD method_65532 getShulkerBoxTextureId (Lnet/minecraft/class_1767;)Lnet/minecraft/class_1_310;
 		ARG 0 color
 	METHOD method_65533 createShulkerId (Lnet/minecraft/class_1767;)Lnet/minecraft/class_2960;
 		ARG 0 color
-	METHOD method_65534 createShulkerBoxTextureId (Lnet/minecraft/class_1767;)Lnet/minecraft/class_4730;
+	METHOD method_65534 createShulkerBoxTextureId (Lnet/minecraft/class_1767;)Lnet/minecraft/class_1_310;
 		ARG 0 color
 	METHOD method_76545 getBlockTranslucentCull ()Lnet/minecraft/class_1921;

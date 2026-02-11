@@ -6,7 +6,7 @@ CLASS net/minecraft/class_11517 net/minecraft/client/render/chunk/AbstractChunkR
 	METHOD method_72028 containsLayer (Lnet/minecraft/class_11515;)Z
 		ARG 1 layer
 	METHOD method_72033 getBlockEntities ()Ljava/util/List;
-	METHOD method_72034 getBuffersForLayer (Lnet/minecraft/class_11515;)Lnet/minecraft/class_10896;
+	METHOD method_72034 getBuffersForLayer (Lnet/minecraft/class_11515;)Lnet/minecraft/class_11517$class_1_311;
 		ARG 1 layer
 	METHOD method_72036 hasPosition (Lnet/minecraft/class_10196;)Z
 		ARG 1 pos

@@ -6,7 +6,7 @@ CLASS net/minecraft/class_773 net/minecraft/client/render/block/BlockModels
 	METHOD method_3333 getModelManager ()Lnet/minecraft/class_1092;
 	METHOD method_3335 getModel (Lnet/minecraft/class_2680;)Lnet/minecraft/class_1087;
 		ARG 1 state
-	METHOD method_3339 getModelParticleSprite (Lnet/minecraft/class_2680;)Lnet/minecraft/class_1058;
+	METHOD method_3339 getModelParticleSprite (Lnet/minecraft/class_2680;)Lnet/minecraft/class_1_314$class_1_315;
 		ARG 1 state
 	METHOD method_45784 setModels (Ljava/util/Map;)V
 		ARG 1 models

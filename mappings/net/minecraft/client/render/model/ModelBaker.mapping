@@ -1,15 +1,12 @@
 CLASS net/minecraft/class_1088 net/minecraft/client/render/model/ModelBaker
-	FIELD field_5370 FIRE_1 Lnet/minecraft/class_4730;
+	FIELD field_5370 FIRE_1 Lnet/minecraft/class_1_310;
 	FIELD field_5380 LOGGER Lorg/slf4j/Logger;
-	FIELD field_5381 LAVA_FLOW Lnet/minecraft/class_4730;
-	FIELD field_5388 WATER_OVERLAY Lnet/minecraft/class_4730;
-	FIELD field_5391 WATER_FLOW Lnet/minecraft/class_4730;
-	FIELD field_5397 FIRE_0 Lnet/minecraft/class_4730;
-	FIELD field_20847 BANNER_BASE Lnet/minecraft/class_4730;
+	FIELD field_5381 LAVA_FLOW Lnet/minecraft/class_1_310;
+	FIELD field_5388 WATER_OVERLAY Lnet/minecraft/class_1_310;
+	FIELD field_5391 WATER_FLOW Lnet/minecraft/class_1_310;
+	FIELD field_5397 FIRE_0 Lnet/minecraft/class_1_310;
 	FIELD field_20848 BLOCK_DESTRUCTION_STAGES Ljava/util/List;
 	FIELD field_21020 BLOCK_DESTRUCTION_STAGE_TEXTURES Ljava/util/List;
-	FIELD field_21557 SHIELD_BASE Lnet/minecraft/class_4730;
-	FIELD field_21558 SHIELD_BASE_NO_PATTERN Lnet/minecraft/class_4730;
 	FIELD field_21772 BLOCK_DESTRUCTION_RENDER_LAYERS Ljava/util/List;
 	FIELD field_32983 MAX_BLOCK_DESTRUCTION_STAGE I
 	FIELD field_52275 missingModel Lnet/minecraft/class_10819;
@@ -19,11 +16,10 @@ CLASS net/minecraft/class_1088 net/minecraft/client/render/model/ModelBaker
 	FIELD field_56986 simpleModels Ljava/util/Map;
 	FIELD field_61869 spriteHolder Lnet/minecraft/class_11701;
 	FIELD field_62265 skinCache Lnet/minecraft/class_11786;
-	FIELD field_64594 LAVA_STILL Lnet/minecraft/class_4730;
-	FIELD field_64595 WATER_STILL Lnet/minecraft/class_4730;
+	FIELD field_64594 LAVA_STILL Lnet/minecraft/class_1_310;
+	FIELD field_64595 WATER_STILL Lnet/minecraft/class_1_310;
 	METHOD <init> (Lnet/minecraft/class_5599;Lnet/minecraft/class_11701;Lnet/minecraft/class_11786;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Lnet/minecraft/class_10819;)V
 		ARG 1 entityModels
-		ARG 2 spriteHolder
 		ARG 3 skinCache
 		ARG 4 blockModels
 		ARG 5 itemAssets
@@ -34,7 +30,6 @@ CLASS net/minecraft/class_1088 net/minecraft/client/render/model/ModelBaker
 	METHOD method_23216 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_2960;
 		ARG 0 id
 	METHOD method_45876 bake (Lnet/minecraft/class_9826;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
-		ARG 1 spriteGetter
 		ARG 2 executor
 	METHOD method_60912 (Ljava/lang/String;)Ljava/lang/String;
 		ARG 0 path
@@ -57,8 +52,6 @@ CLASS net/minecraft/class_1088 net/minecraft/client/render/model/ModelBaker
 		FIELD field_64597 interner Lnet/minecraft/class_7775$class_12356;
 		FIELD field_64598 blockItemModels Lnet/minecraft/class_1088$class_10812;
 		METHOD <init> (Lnet/minecraft/class_1088;Lnet/minecraft/class_9826;Lnet/minecraft/class_7775$class_12356;Lnet/minecraft/class_1088$class_10812;)V
-			ARG 2 spriteGetter
-			ARG 3 interner
 			ARG 4 blockItemModels
 		METHOD method_68550 (Lnet/minecraft/class_7775$class_10897;)Ljava/lang/Object;
 			ARG 1 key

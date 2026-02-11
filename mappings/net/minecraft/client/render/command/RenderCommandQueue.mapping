@@ -14,7 +14,7 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 1 matrices
 		ARG 2 shadowRadius
 		ARG 3 shadowPieces
-	METHOD method_73480 submitItem (Lnet/minecraft/class_4587;Lnet/minecraft/class_811;III[ILjava/util/List;Lnet/minecraft/class_1921;Lnet/minecraft/class_10444$class_10445;)V
+	METHOD method_73480 submitItem (Lnet/minecraft/class_4587;Lnet/minecraft/class_811;III[ILjava/util/List;Lnet/minecraft/class_10444$class_10445;)V
 		ARG 1 matrices
 		ARG 2 displayContext
 		ARG 3 light
@@ -22,8 +22,7 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 5 outlineColors
 		ARG 6 tintLayers
 		ARG 7 quads
-		ARG 8 renderLayer
-		ARG 9 glintType
+		ARG 8 glintType
 	METHOD method_73481 submitBlock (Lnet/minecraft/class_4587;Lnet/minecraft/class_2680;III)V
 		ARG 1 matrices
 		ARG 2 state
@@ -43,16 +42,11 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 1 matrices
 		ARG 2 renderLayer
 		ARG 3 customRenderer
-	METHOD method_73484 submitBlockStateModel (Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;Lnet/minecraft/class_1087;FFFIII)V
+	METHOD method_73484 submitBlockStateModel (Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;Lnet/minecraft/class_1087;IIII)V
 		ARG 1 matrices
 		ARG 2 renderLayer
 		ARG 3 model
-		ARG 4 r
-		ARG 5 g
-		ARG 6 b
 		ARG 7 light
-		ARG 8 overlay
-		ARG 9 outlineColor
 	METHOD method_73485 submitMovingBlock (Lnet/minecraft/class_4587;Lnet/minecraft/class_11791;)V
 		ARG 1 matrices
 		ARG 2 state

@@ -184,7 +184,7 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 	METHOD method_7350 resetTicksSince ()V
 	METHOD method_7351 getBlockBreakingSpeed (Lnet/minecraft/class_2680;)F
 		ARG 1 block
-	METHOD method_7353 sendMessage (Lnet/minecraft/class_2561;Z)V
+	METHOD method_7353 sendMessage (Lnet/minecraft/class_2561;)V
 		COMMENT Adds a message to this player's HUD.
 		COMMENT
 		COMMENT <p>If it's called on {@link net.minecraft.server.network.ServerPlayerEntity
@@ -197,9 +197,6 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 		COMMENT @see net.minecraft.client.network.ClientPlayerEntity#sendMessage(Text, boolean)
 		COMMENT @see net.minecraft.client.gui.hud.ChatHud#addMessage(Text)
 		COMMENT @see net.minecraft.client.gui.hud.InGameHud#setOverlayMessage
-		ARG 1 message
-			COMMENT the message to add
-		ARG 2 overlay
 	METHOD method_7355 sendAbilitiesUpdate ()V
 	METHOD method_7357 getItemCooldownManager ()Lnet/minecraft/class_1796;
 	METHOD method_7358 wakeUp (ZZ)V
@@ -300,6 +297,7 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 	METHOD method_64179 isEquipped (Lnet/minecraft/class_1792;)Z
 		ARG 1 item
 	METHOD method_64271 canDropItems ()Z
+	METHOD method_64398 sendMessage (Lnet/minecraft/class_2561;)V
 	METHOD method_64400 tickHunger ()V
 	METHOD method_66324 shouldSkipBlockDrops ()Z
 	METHOD method_66325 getExpectedPose ()Lnet/minecraft/class_4050;

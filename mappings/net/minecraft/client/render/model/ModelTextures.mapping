@@ -4,13 +4,12 @@ CLASS net/minecraft/class_10419 net/minecraft/client/render/model/ModelTextures
 	FIELD field_55277 textures Ljava/util/Map;
 	METHOD <init> (Ljava/util/Map;)V
 		ARG 1 textures
-	METHOD method_65543 add (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/class_10419$class_10420$class_10421;)V
+	METHOD method_65543 add (Ljava/lang/String;Lcom/google/gson/JsonElement;Lnet/minecraft/class_10419$class_10420$class_10421;)V
 		ARG 0 textureId
-		ARG 1 spriteId
 		ARG 2 builder
 	METHOD method_65544 fromJson (Lcom/google/gson/JsonObject;)Lnet/minecraft/class_10419$class_10420;
 		ARG 0 json
-	METHOD method_65545 get (Ljava/lang/String;)Lnet/minecraft/class_4730;
+	METHOD method_65545 get (Ljava/lang/String;)Lnet/minecraft/class_1_314;
 		ARG 1 textureId
 	METHOD method_65546 isTextureReference (Ljava/lang/String;)Z
 		ARG 0 textureId
@@ -19,7 +18,7 @@ CLASS net/minecraft/class_10419 net/minecraft/client/render/model/ModelTextures
 		CLASS class_10421 Builder
 			FIELD field_55279 entries Ljava/util/Map;
 			METHOD method_65547 build ()Lnet/minecraft/class_10419$class_10420;
-			METHOD method_65548 addSprite (Ljava/lang/String;Lnet/minecraft/class_4730;)Lnet/minecraft/class_10419$class_10420$class_10421;
+			METHOD method_65548 addSprite (Ljava/lang/String;Lnet/minecraft/class_1_314;)Lnet/minecraft/class_10419$class_10420$class_10421;
 				ARG 1 textureId
 				ARG 2 spriteId
 			METHOD method_65549 addTextureReference (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/class_10419$class_10420$class_10421;

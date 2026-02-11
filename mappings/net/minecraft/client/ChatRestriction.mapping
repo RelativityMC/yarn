@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_5859 net/minecraft/client/ChatRestriction
+	COMMENT Represents the restrictions on chat on a Minecraft client.
+	COMMENT
+	COMMENT @see MinecraftClient#getChatRestriction()
+	FIELD field_28944 description Lnet/minecraft/class_2561;
+	METHOD method_33885 getDescription ()Lnet/minecraft/class_2561;

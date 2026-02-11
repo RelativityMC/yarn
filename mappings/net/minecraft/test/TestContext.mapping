@@ -47,7 +47,7 @@ CLASS net/minecraft/class_4516 net/minecraft/test/TestContext
 		ARG 4 z
 	METHOD method_35954 (Lnet/minecraft/class_1297;Lnet/minecraft/class_1297;)Z
 		ARG 1 e
-	METHOD method_35955 expectEntityAt (Lnet/minecraft/class_1297;Lnet/minecraft/class_2338;)V
+	METHOD method_35955 expectEntityAt (Lnet/minecraft/class_1297;Lnet/minecraft/class_2338;D)V
 		ARG 1 entity
 		ARG 2 pos
 	METHOD method_35957 testEntityProperty (Lnet/minecraft/class_1297;Ljava/util/function/Function;Ljava/lang/Object;Lnet/minecraft/class_2561;)V

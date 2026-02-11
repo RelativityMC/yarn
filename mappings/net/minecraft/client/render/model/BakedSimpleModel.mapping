@@ -2,7 +2,7 @@ CLASS net/minecraft/class_10819 net/minecraft/client/render/model/BakedSimpleMod
 	FIELD field_57023 DEFAULT_AMBIENT_OCCLUSION Z
 	FIELD field_57024 DEFAULT_GUI_LIGHT Lnet/minecraft/class_1100$class_4751;
 	METHOD method_68031 getModel ()Lnet/minecraft/class_1100;
-	METHOD method_68033 getParticleTexture (Lnet/minecraft/class_10419;Lnet/minecraft/class_7775;)Lnet/minecraft/class_1058;
+	METHOD method_68033 getParticleTexture (Lnet/minecraft/class_10419;Lnet/minecraft/class_7775;)Lnet/minecraft/class_1_314$class_1_315;
 		ARG 1 textures
 		ARG 2 baker
 	METHOD method_68034 bakeGeometry (Lnet/minecraft/class_10419;Lnet/minecraft/class_7775;Lnet/minecraft/class_3665;)Lnet/minecraft/class_10817;
@@ -15,7 +15,7 @@ CLASS net/minecraft/class_10819 net/minecraft/client/render/model/BakedSimpleMod
 	METHOD method_68043 getTransformations ()Lnet/minecraft/class_809;
 	METHOD method_68044 getGeometry ()Lnet/minecraft/class_10820;
 	METHOD method_68045 getTextures ()Lnet/minecraft/class_10419;
-	METHOD method_68054 getParticleTexture (Lnet/minecraft/class_10419;Lnet/minecraft/class_7775;Lnet/minecraft/class_10813;)Lnet/minecraft/class_1058;
+	METHOD method_68054 getParticleTexture (Lnet/minecraft/class_10419;Lnet/minecraft/class_7775;Lnet/minecraft/class_10813;)Lnet/minecraft/class_1_314$class_1_315;
 		ARG 0 textures
 		ARG 1 baker
 		ARG 2 model

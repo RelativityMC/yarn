@@ -611,7 +611,7 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 5 invert
 	METHOD method_72740 getScaling (Lnet/minecraft/class_1058;)Lnet/minecraft/class_8690;
 		ARG 0 sprite
-	METHOD method_72741 getSprite (Lnet/minecraft/class_4730;)Lnet/minecraft/class_1058;
+	METHOD method_72741 getSprite (Lnet/minecraft/class_1_310;)Lnet/minecraft/class_1058;
 		ARG 1 id
 	METHOD method_73198 drawStrokedRectangle (IIIII)V
 		ARG 1 x

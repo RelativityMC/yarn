@@ -30,8 +30,7 @@ CLASS net/minecraft/class_11697 net/minecraft/client/texture/AtlasManager
 		ARG 2 entry
 	METHOD method_76671 logDuplicates (Lnet/minecraft/class_11697$class_11700;)V
 		ARG 1 stitch
-	METHOD method_76672 (Ljava/util/Map;Lnet/minecraft/class_4730;Lnet/minecraft/class_1058;)V
-		ARG 1 id
+	METHOD method_76672 (Ljava/util/Map;Lnet/minecraft/class_1_310;Lnet/minecraft/class_1058;)V
 		ARG 2 sprite
 	CLASS class_7772 Entry
 		FIELD comp_4557 metadata Lnet/minecraft/class_11697$class_11698;

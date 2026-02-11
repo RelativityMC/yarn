@@ -76,35 +76,6 @@ CLASS net/minecraft/class_4588 net/minecraft/client/render/VertexConsumer
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_22919 quad (Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_777;FFFFII)V
-		COMMENT Specifies the vertex elements from {@code quad} and starts consuming
-		COMMENT the next vertex.
-		COMMENT
-		COMMENT @throws IllegalStateException if a color has been set in {@link
-		COMMENT #fixedColor}.
-		ARG 1 matrixEntry
-		ARG 2 quad
-		ARG 3 red
-		ARG 4 green
-		ARG 5 blue
-		ARG 6 alpha
-		ARG 7 light
-		ARG 8 overlay
-	METHOD method_22920 quad (Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_777;[FFFFF[II)V
-		COMMENT Specifies the vertex elements from {@code quad} and starts consuming
-		COMMENT the next vertex.
-		COMMENT
-		COMMENT @throws IllegalStateException if a color has been set in {@link
-		COMMENT #fixedColor}.
-		ARG 1 matrixEntry
-		ARG 2 quad
-		ARG 3 brightnesses
-		ARG 4 red
-		ARG 5 green
-		ARG 6 blue
-		ARG 7 alpha
-		ARG 8 lights
-		ARG 9 overlay
 	METHOD method_22921 light (II)Lnet/minecraft/class_4588;
 		COMMENT Specifies the {@linkplain VertexFormats#LIGHT_ELEMENT
 		COMMENT light element} of the current vertex.

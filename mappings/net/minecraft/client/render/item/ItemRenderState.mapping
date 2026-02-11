@@ -8,7 +8,7 @@ CLASS net/minecraft/class_10444 net/minecraft/client/render/item/ItemRenderState
 	METHOD method_65601 newLayer ()Lnet/minecraft/class_10444$class_10446;
 	METHOD method_65602 addLayers (I)V
 		ARG 1 add
-	METHOD method_65603 getParticleSprite (Lnet/minecraft/class_5819;)Lnet/minecraft/class_1058;
+	METHOD method_65603 getParticleSprite (Lnet/minecraft/class_5819;)Lnet/minecraft/class_1_314$class_1_315;
 		ARG 1 random
 	METHOD method_65604 render (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;III)V
 		ARG 1 matrices
@@ -30,7 +30,6 @@ CLASS net/minecraft/class_10444 net/minecraft/client/render/item/ItemRenderState
 	METHOD method_72174 isOversizedInGui ()Z
 	CLASS class_10445 Glint
 	CLASS class_10446 LayerRenderState
-		FIELD field_55347 renderLayer Lnet/minecraft/class_1921;
 		FIELD field_55348 glint Lnet/minecraft/class_10444$class_10445;
 		FIELD field_55349 tints [I
 		FIELD field_55350 specialModelType Lnet/minecraft/class_10515;
@@ -39,7 +38,6 @@ CLASS net/minecraft/class_10444 net/minecraft/client/render/item/ItemRenderState
 		FIELD field_56963 EMPTY [Lorg/joml/Vector3fc;
 		FIELD field_56964 quads Ljava/util/List;
 		FIELD field_56965 useLight Z
-		FIELD field_56966 particle Lnet/minecraft/class_1058;
 		FIELD field_56967 transform Lnet/minecraft/class_804;
 		FIELD field_56968 vertices Ljava/util/function/Supplier;
 		METHOD method_65612 clear ()V
@@ -56,12 +54,8 @@ CLASS net/minecraft/class_10444 net/minecraft/client/render/item/ItemRenderState
 		METHOD method_65617 setSpecialModel (Lnet/minecraft/class_10515;Ljava/lang/Object;)V
 			ARG 1 specialModelType
 			ARG 2 data
-		METHOD method_67992 setRenderLayer (Lnet/minecraft/class_1921;)V
-			ARG 1 layer
 		METHOD method_67993 setTransform (Lnet/minecraft/class_804;)V
 			ARG 1 transform
-		METHOD method_67994 setParticle (Lnet/minecraft/class_1058;)V
-			ARG 1 particle
 		METHOD method_67995 setVertices (Ljava/util/function/Supplier;)V
 			ARG 1 vertices
 		METHOD method_67996 setUseLight (Z)V

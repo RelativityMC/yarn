@@ -19,7 +19,6 @@ CLASS net/minecraft/class_1_270 net/minecraft/datafixer/file/cowfs/CowFs
 	COMMENT Moo.
 	FIELD field_1_1655 SUPPORTED_ATTRIBUTES Ljava/util/Set;
 	FIELD field_1_1656 LOGGER Lorg/slf4j/Logger;
-	FIELD field_1_1657 TEMP_DIR_NAME Ljava/lang/String;
 	FIELD field_1_1658 root Ljava/nio/file/Path;
 	FIELD field_1_1659 rootDir Lnet/minecraft/class_1_253;
 	FIELD field_1_1660 provider Lnet/minecraft/class_1_268;
@@ -27,7 +26,7 @@ CLASS net/minecraft/class_1_270 net/minecraft/datafixer/file/cowfs/CowFs
 	FIELD field_1_1662 fileStore Lnet/minecraft/class_1_266;
 	FIELD field_1_1663 tempPath Ljava/nio/file/Path;
 	FIELD field_1_1664 counter Ljava/util/concurrent/atomic/AtomicInteger;
-	METHOD <init> (Ljava/lang/String;Ljava/nio/file/Path;Ljava/nio/file/Path;)V
+	METHOD <init> (Ljava/lang/String;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/PathMatcher;)V
 		ARG 1 storeName
 		ARG 2 root
 		ARG 3 tempPath
@@ -38,33 +37,24 @@ CLASS net/minecraft/class_1_270 net/minecraft/datafixer/file/cowfs/CowFs
 	METHOD method_1_2043 getRootPath ()Ljava/nio/file/Path;
 	METHOD method_1_2044 createRootDirectory (Ljava/nio/file/Path;)Lnet/minecraft/class_1_253;
 		ARG 1 root
-	METHOD method_1_2045 enumerateLinks (Ljava/nio/file/Path;Lnet/minecraft/class_1_253;)Ljava/util/List;
+	METHOD method_1_2045 enumerateLinks (Ljava/nio/file/Path;)Lnet/minecraft/class_1_270$class_1_271;
 		ARG 1 outputPath
-		ARG 2 rootDir
-	METHOD method_1_2046 enumerateLinks (Ljava/nio/file/Path;Lnet/minecraft/class_1_253;Ljava/util/List;)V
+	METHOD method_1_2046 enumerateLinks (Ljava/nio/file/Path;Lnet/minecraft/class_1_253;Lnet/minecraft/class_1_270$class_1_271;)V
 		ARG 1 outputPath
 		ARG 2 dir
-		ARG 3 linksOut
-	METHOD method_1_2047 create (Ljava/lang/String;Ljava/nio/file/Path;)Lnet/minecraft/class_1_270;
+	METHOD method_1_2047 create (Ljava/lang/String;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/PathMatcher;)Lnet/minecraft/class_1_270;
 		COMMENT Creates a new {@code CowFs}.
 		COMMENT
 		COMMENT @throws CannotOverwriteException if a file or directory named {@code file_fix_tmp} exists within {@code root}
 		ARG 0 storeName
 			COMMENT the name used for the {@link CowFsFileStore} associated with this file system
-		ARG 1 root
-			COMMENT the path of the directory to mirror
 	METHOD method_1_2048 getPathInsideTempDir ()Ljava/nio/file/Path;
 	METHOD method_1_2049 getRootDir ()Lnet/minecraft/class_1_253;
-	METHOD method_1_2051 createHardLinks (Ljava/nio/file/Path;)V
-		ARG 1 outputPath
-	METHOD method_1_2052 copyLinks (Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)V
-		ARG 1 outputPath
-		ARG 2 copyOptions
+	METHOD method_1_2051 createHardLinks (Ljava/util/List;)V
 	METHOD method_1_2054 recreateRootDirectory ()V
 	METHOD method_1_2055 getRoot ()Lnet/minecraft/class_1_261;
 	METHOD method_1_2056 getFileStore ()Lnet/minecraft/class_1_266;
 	METHOD method_1_2057 getTempPath ()Ljava/nio/file/Path;
-	METHOD provider getProvider ()Ljava/nio/file/spi/FileSystemProvider;
 	CLASS 1 1
 		METHOD method_1_2058 checkFile (Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;)V
 			ARG 0 path

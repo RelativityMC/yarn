@@ -1,3 +1,4 @@
 CLASS net/minecraft/class_11701 net/minecraft/client/texture/SpriteHolder
+	COMMENT Indexes sprites by their {@link SpriteIdentifier}.
 	METHOD method_73030 getSprite (Lnet/minecraft/class_1_310;)Lnet/minecraft/class_1058;
 		ARG 1 id

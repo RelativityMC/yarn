@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
+	FIELD field_1_1971 geometryByBlockRenderLayer Ljava/util/Map;
+	FIELD field_1_1972 lock Ljava/util/concurrent/locks/ReentrantLock;
 	FIELD field_18766 cameraPosition Ljava/util/concurrent/atomic/AtomicReference;
 	FIELD field_20828 buffers Lnet/minecraft/class_750;
 	FIELD field_20830 executor Lnet/minecraft/class_10207;
@@ -15,6 +17,14 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 		ARG 4 bufferBuilderStorage
 		ARG 5 blockRenderManager
 		ARG 6 blockEntityRenderDispatcher
+	METHOD method_1_2401 getOffsetGeometryBuffers (Lnet/minecraft/class_11517;Lnet/minecraft/class_11515;)Lnet/minecraft/class_846$class_1_342;
+		ARG 1 renderData
+		ARG 2 blockRenderLayer
+	METHOD method_1_2402 (Lcom/mojang/blaze3d/systems/GpuDevice;Lnet/minecraft/class_11541;Lnet/minecraft/class_11515;)Lnet/minecraft/class_846$class_1_343;
+		ARG 2 blockRenderLayer
+	METHOD method_1_2403 lock ()V
+	METHOD method_1_2404 unlock ()V
+	METHOD method_1_2405 uploadGlobalBuffers ()V
 	METHOD method_3619 stop ()V
 	METHOD method_3622 getDebugString ()Ljava/lang/String;
 	METHOD method_3627 rebuild (Lnet/minecraft/class_846$class_851;Lnet/minecraft/class_6850;)V
@@ -30,6 +40,8 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 	METHOD method_34847 getFreeBufferCount ()I
 	METHOD method_72045 cancelAllTasks ()V
 	METHOD method_72046 getScheduledTaskCount ()I
+	CLASS class_1_342 OffsetGeometryBuffers
+	CLASS class_1_343 GeometryBuffers
 	CLASS class_851 BuiltChunk
 		FIELD field_4458 boundingBox Lnet/minecraft/class_238;
 		FIELD field_4461 sortTask Lnet/minecraft/class_846$class_851$class_4579;
@@ -41,9 +53,32 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 		FIELD field_32832 CHUNK_SIZE I
 		FIELD field_53958 sectionPos J
 		FIELD field_60949 currentRenderData Ljava/util/concurrent/atomic/AtomicReference;
+		FIELD field_64231 appearanceTimeMs J
+		FIELD field_64453 fadeInTimeMs J
+		FIELD field_64454 unloaded Z
 		METHOD <init> (Lnet/minecraft/class_846;IJ)V
 			ARG 2 index
 			ARG 3 sectionPos
+		METHOD method_1_2406 (Lnet/minecraft/class_11515;Lnet/minecraft/class_11516;Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)Z
+			ARG 1 blockRenderLayer
+			ARG 2 chunkRenderData
+			ARG 3 vertex
+			ARG 4 index
+		METHOD method_1_2407 (Lnet/minecraft/class_11516;)V
+			ARG 1 data
+		METHOD method_1_2408 (Lnet/minecraft/class_11517;Lnet/minecraft/class_11515;Z)V
+			ARG 1 data
+			ARG 2 blockRenderLayer
+			ARG 3 noVertex
+		METHOD method_1_2409 (Lnet/minecraft/class_11515;Lnet/minecraft/class_11517;)V
+			ARG 2 data
+		METHOD method_1_2410 (Lnet/minecraft/class_11515;ZLnet/minecraft/class_11517;)V
+			ARG 3 data
+		METHOD method_1_2411 dispose (Lnet/minecraft/class_11517;)V
+			ARG 1 data
+		METHOD method_1_2412 (Lnet/minecraft/class_11517;Lnet/minecraft/class_11515;)V
+			ARG 1 data
+			ARG 2 blockRenderLayer
 		METHOD method_3651 isChunkNonEmpty (J)Z
 			ARG 1 sectionPos
 		METHOD method_3654 scheduleRebuild (Z)V
@@ -66,6 +101,7 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 		METHOD method_40051 getBoundingBox ()Lnet/minecraft/class_238;
 		METHOD method_60909 getVertexSorter (Lnet/minecraft/class_4076;Lnet/minecraft/class_243;)Lnet/minecraft/class_8251;
 			ARG 1 sectionPos
+			ARG 2 cameraPos
 		METHOD method_62973 setSectionPos (J)V
 			ARG 1 sectionPos
 		METHOD method_62974 getOffsetSectionPos (Lnet/minecraft/class_2350;)J
@@ -76,6 +112,13 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 		METHOD method_72049 setCurrentRenderData (Lnet/minecraft/class_11517;)Lnet/minecraft/class_11517;
 			ARG 1 data
 		METHOD method_72052 getCurrentRenderData ()Lnet/minecraft/class_11517;
+		METHOD method_76298 getOpacity (J)F
+			ARG 1 timeMs
+		METHOD method_76546 wasUnloaded ()Z
+		METHOD method_76547 setUnloaded (Z)V
+			ARG 1 unloaded
+		METHOD method_76548 setFadeInTime (J)V
+			ARG 1 fadeInTimeMs
 		CLASS class_4577 Task
 			FIELD field_20836 cancelled Ljava/util/concurrent/atomic/AtomicBoolean;
 			FIELD field_53959 prioritized Z

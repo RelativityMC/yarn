@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_1_195 net/minecraft/datafixer/file/FileSystemCapabilities
+	METHOD method_1_2283 getOptionsForMove ()[Ljava/nio/file/CopyOption;

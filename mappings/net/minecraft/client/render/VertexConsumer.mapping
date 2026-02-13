@@ -4,6 +4,13 @@ CLASS net/minecraft/class_4588 net/minecraft/client/render/VertexConsumer
 	COMMENT
 	COMMENT <p>The vertex elements must be specified in the same order as defined in
 	COMMENT the format the vertices being consumed are in.
+	METHOD method_1_2197 quad (Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_777;Lnet/minecraft/class_1_304;ILnet/minecraft/class_1_308;I)V
+		ARG 1 matrix
+		ARG 2 quad
+		ARG 3 brightnessScaling
+		ARG 4 color
+		ARG 5 lighting
+		ARG 6 overlay
 	METHOD method_1336 color (IIII)Lnet/minecraft/class_4588;
 		COMMENT Specifies the {@linkplain VertexFormats#COLOR_ELEMENT
 		COMMENT color element} of the current vertex.

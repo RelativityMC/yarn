@@ -14,10 +14,14 @@ CLASS net/minecraft/class_10895 net/minecraft/client/render/model/MultipartBlock
 			ARG 1 selector
 		CLASS class_9981 EqualityGroup
 	CLASS class_1095 MultipartBakedModel
+		FIELD field_1_2010 hasTranslucency Z
+		FIELD field_1_2011 texture Lnet/minecraft/class_1_314$class_1_315;
 		FIELD field_5427 selectors Ljava/util/List;
 		FIELD field_57951 map Ljava/util/Map;
 		METHOD <init> (Ljava/util/List;)V
 			ARG 1 selectors
+		METHOD method_1_2443 hasTranslucency (Ljava/util/List;)Z
+			ARG 0 selectors
 		METHOD method_64095 getFirst (Ljava/util/List;)Lnet/minecraft/class_1087;
 			ARG 0 selectors
 		METHOD method_68528 build (Lnet/minecraft/class_2680;)Ljava/util/List;

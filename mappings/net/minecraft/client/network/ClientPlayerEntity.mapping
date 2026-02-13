@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_746 net/minecraft/client/network/ClientPlayerEntity
 	COMMENT Represents the client's own player entity.
+	FIELD field_1_1780 chatRestrictions Lnet/minecraft/class_1_317;
 	FIELD field_3913 input Lnet/minecraft/class_744;
 	FIELD field_3914 lastRenderPitch F
 	FIELD field_3915 usingItem Z
@@ -49,6 +50,7 @@ CLASS net/minecraft/class_746 net/minecraft/client/network/ClientPlayerEntity
 		ARG 5 recipeBook
 		ARG 6 lastPlayerInput
 		ARG 7 lastSprinting
+	METHOD method_1_2187 getChatRestrictions ()Lnet/minecraft/class_1_317;
 	METHOD method_3130 getRecipeBook ()Lnet/minecraft/class_299;
 	METHOD method_3132 openRidingInventory ()V
 	METHOD method_3133 startRidingJump ()V

@@ -32,6 +32,8 @@ CLASS net/minecraft/class_1092 net/minecraft/client/render/model/BakedModelManag
 		ARG 4 entityModels
 		ARG 5 blockEntityModels
 		ARG 6 executor
+	METHOD method_45886 (Lnet/minecraft/class_2960;)Ljava/lang/String;
+		ARG 0 id
 	METHOD method_45897 (Ljava/util/List;)Ljava/util/Map;
 		ARG 0 models
 	METHOD method_45899 (Ljava/util/concurrent/Executor;Ljava/util/Map;)Ljava/util/concurrent/CompletionStage;
@@ -63,6 +65,7 @@ CLASS net/minecraft/class_1092 net/minecraft/client/render/model/BakedModelManag
 		ARG 11 v
 	METHOD method_65754 (Ljava/lang/String;Ljava/util/Collection;)V
 		ARG 0 modelName
+		ARG 1 texture
 	METHOD method_65755 (Lnet/minecraft/class_2960;)Ljava/lang/String;
 		ARG 0 id
 	METHOD method_65756 getBlockEntityModelsSupplier ()Lnet/minecraft/class_10418;
@@ -77,6 +80,13 @@ CLASS net/minecraft/class_1092 net/minecraft/client/render/model/BakedModelManag
 	METHOD method_73040 (Lnet/minecraft/class_5599;)Lnet/minecraft/class_10418;
 		ARG 1 entityModels
 	CLASS 1 1
+		FIELD field_1_1862 cache Ljava/util/Map;
+		FIELD field_1_1863 bakeFactory Ljava/util/function/Function;
 		FIELD field_55480 missingBlockSprite Lnet/minecraft/class_1_314$class_1_315;
+		METHOD method_1_2281 bake (Lnet/minecraft/class_1_314;)Lnet/minecraft/class_1_314$class_1_315;
+			ARG 1 texture
+		METHOD method_1_2282 bake (Lnet/minecraft/class_1_314;Lnet/minecraft/class_7766$class_7767;)Lnet/minecraft/class_1_314$class_1_315;
+			ARG 1 texture
+			ARG 2 stitchResult
 	CLASS class_7779 BakingResult
 	CLASS class_10816 Models

@@ -8,6 +8,17 @@ CLASS net/minecraft/class_776 net/minecraft/client/render/block/BlockRenderManag
 	FIELD field_61777 spriteHolder Lnet/minecraft/class_11701;
 	METHOD <init> (Lnet/minecraft/class_773;Lnet/minecraft/class_11701;Lnet/minecraft/class_324;)V
 		ARG 1 models
+		ARG 2 spriteHolder
+		ARG 3 blockColors
+	METHOD method_1_2382 consumeIntoVertexConsumers (Lnet/minecraft/class_4597;)Lnet/minecraft/class_1_319;
+		ARG 0 vertexConsumers
+	METHOD method_1_2383 (Lnet/minecraft/class_4597;Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_777;Lnet/minecraft/class_1_304;ILnet/minecraft/class_1_308;I)V
+		ARG 1 matrix
+		ARG 2 quad
+		ARG 3 brightnessScaling
+		ARG 4 color
+		ARG 5 lighting
+		ARG 6 overlay
 	METHOD method_3349 getModel (Lnet/minecraft/class_2680;)Lnet/minecraft/class_1087;
 		ARG 1 state
 	METHOD method_3350 getModelRenderer ()Lnet/minecraft/class_778;
@@ -29,6 +40,7 @@ CLASS net/minecraft/class_776 net/minecraft/client/render/block/BlockRenderManag
 		ARG 2 pos
 		ARG 3 world
 		ARG 4 matrices
+		ARG 5 quadConsumer
 		ARG 6 cull
 		ARG 7 parts
 	METHOD method_23071 renderDamage (Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_1920;Lnet/minecraft/class_4587;Lnet/minecraft/class_1_319;)V
@@ -36,3 +48,4 @@ CLASS net/minecraft/class_776 net/minecraft/client/render/block/BlockRenderManag
 		ARG 2 pos
 		ARG 3 world
 		ARG 4 matrices
+		ARG 5 quadConsumer

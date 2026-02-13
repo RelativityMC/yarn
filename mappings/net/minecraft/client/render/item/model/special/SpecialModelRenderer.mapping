@@ -7,6 +7,7 @@ CLASS net/minecraft/class_10515 net/minecraft/client/render/item/model/special/S
 		ARG 5 light
 		ARG 6 overlay
 		ARG 7 glint
+		ARG 8 outlineColor
 	METHOD method_65695 getData (Lnet/minecraft/class_1799;)Ljava/lang/Object;
 		ARG 1 stack
 	METHOD method_72175 collectVertices (Ljava/util/function/Consumer;)V

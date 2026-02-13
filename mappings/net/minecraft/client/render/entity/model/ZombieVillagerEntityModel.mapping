@@ -9,4 +9,4 @@ CLASS net/minecraft/class_619 net/minecraft/client/render/entity/model/ZombieVil
 		ARG 0 modelData
 	METHOD method_72882 (Lnet/minecraft/class_5609;)Lnet/minecraft/class_5609;
 		ARG 0 data
-	METHOD method_72883 getTexturedModelDataWithoutHead ()Lnet/minecraft/class_5607;
+	METHOD method_72883 getNoHatTexturedModelData ()Lnet/minecraft/class_5607;

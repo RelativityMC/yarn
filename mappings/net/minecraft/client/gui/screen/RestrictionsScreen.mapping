@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_350 net/minecraft/client/gui/screen/RestrictionsScreen
+	FIELD field_1_2005 TITLE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_2007 restrictions Lnet/minecraft/class_1_317;
+	FIELD field_1_2009 parent Lnet/minecraft/class_437;
+	METHOD <init> (Lnet/minecraft/class_437;Lnet/minecraft/class_1_317;)V
+		ARG 1 screen
+		ARG 2 restrictions

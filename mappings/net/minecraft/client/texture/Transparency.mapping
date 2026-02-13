@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_1_303 net/minecraft/client/texture/Transparency
+	FIELD field_1_1782 OPAQUE Lnet/minecraft/class_1_303;
+	FIELD field_1_1783 TRANSLUCENT Lnet/minecraft/class_1_303;
+	FIELD field_1_1784 TRANSPARENT Lnet/minecraft/class_1_303;
+	FIELD field_1_1785 TRANSLUCENT_AND_TRANSPARENT Lnet/minecraft/class_1_303;
+	METHOD method_1_2189 isOpaque ()Z
+	METHOD method_1_2190 of (ZZ)Lnet/minecraft/class_1_303;
+		ARG 0 transparent
+		ARG 1 translucent
+	METHOD method_1_2191 or (Lnet/minecraft/class_1_303;)Lnet/minecraft/class_1_303;
+		ARG 1 other

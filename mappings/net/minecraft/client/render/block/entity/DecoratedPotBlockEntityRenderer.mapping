@@ -30,4 +30,6 @@ CLASS net/minecraft/class_8188 net/minecraft/client/render/block/entity/Decorate
 		ARG 3 light
 		ARG 4 overlay
 		ARG 5 sherds
+		ARG 6 outlineColor
 	METHOD method_72161 collectVertices (Ljava/util/function/Consumer;)V
+		ARG 1 callback

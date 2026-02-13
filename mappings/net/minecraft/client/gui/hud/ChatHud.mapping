@@ -3,6 +3,9 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 	COMMENT join/leave messages.
 	COMMENT
 	COMMENT @see net.minecraft.client.gui.screen.ChatScreen
+	FIELD field_1_1852 GO_TO_RESTRICTIONS_SCREEN_ID Lnet/minecraft/class_2960;
+	FIELD field_1_1853 RESTRICTED_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_1854 messageAllowedPredicate Ljava/util/function/Predicate;
 	FIELD field_2061 messages Ljava/util/List;
 	FIELD field_2062 client Lnet/minecraft/class_310;
 	FIELD field_2063 messageHistory Lnet/minecraft/class_8623;
@@ -21,6 +24,16 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 	FIELD field_63865 CHAT_QUEUE_STYLE Lnet/minecraft/class_2583;
 	METHOD <init> (Lnet/minecraft/class_310;)V
 		ARG 1 client
+	METHOD method_1_2273 addPlayerMessage (Lnet/minecraft/class_2561;Lnet/minecraft/class_7469;Lnet/minecraft/class_7591;)V
+		ARG 1 message
+		ARG 2 signatureData
+		ARG 3 indicator
+	METHOD method_1_2274 addServerSystemMessage (Lnet/minecraft/class_2561;)V
+		ARG 1 message
+	METHOD method_1_2275 (Lnet/minecraft/class_303;)Z
+		ARG 0 line
+	METHOD method_1_2276 setMessageAllowedPredicate (Ljava/util/function/Predicate;)V
+		ARG 1 messageAllowedPredicate
 	METHOD method_1802 scroll (I)V
 		ARG 1 scroll
 	METHOD method_1803 addToMessageHistory (Ljava/lang/String;)V
@@ -29,6 +42,7 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 		ARG 1 drawer
 		ARG 2 windowHeight
 		ARG 3 currentTick
+		ARG 4 mode
 	METHOD method_1806 getWidth (D)I
 		ARG 0 widthOption
 	METHOD method_1808 clear (Z)V
@@ -36,7 +50,7 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 	METHOD method_1809 getMessageHistory ()Lnet/minecraft/class_8623;
 	METHOD method_1810 getHeight ()I
 	METHOD method_1811 getWidth ()I
-	METHOD method_1812 addMessage (Lnet/minecraft/class_2561;)V
+	METHOD method_1812 addClientSystemMessage (Lnet/minecraft/class_2561;)V
 		ARG 1 message
 	METHOD method_1813 getVisibleLineCount ()I
 	METHOD method_1814 getChatScale ()D
@@ -52,6 +66,8 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 	METHOD method_44811 addMessage (Lnet/minecraft/class_2561;Lnet/minecraft/class_7469;Lnet/minecraft/class_1_327;Lnet/minecraft/class_7591;)V
 		ARG 1 message
 		ARG 2 signatureData
+		ARG 3 source
+		ARG 4 indicator
 	METHOD method_44812 removeMessage (Lnet/minecraft/class_7469;)V
 		ARG 1 signature
 	METHOD method_44813 refresh ()V
@@ -76,9 +92,12 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 		ARG 2 lineConsumer
 	METHOD method_73201 createScreen (Lnet/minecraft/class_338$class_11732;Lnet/minecraft/class_1_317;Lnet/minecraft/class_408$class_11738;)Lnet/minecraft/class_408;
 		ARG 1 method
+		ARG 2 restrictions
 		ARG 3 factory
 	METHOD method_73202 setClientScreen (Lnet/minecraft/class_338$class_11732;Lnet/minecraft/class_1_317;Lnet/minecraft/class_408$class_11738;)V
 		ARG 1 method
+		ARG 2 restrictions
+		ARG 3 factory
 	METHOD method_73203 saveDraft (Ljava/lang/String;)V
 		ARG 1 text
 	METHOD method_73204 discardDraft ()V
@@ -94,6 +113,7 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 		ARG 1 textConsumer
 		ARG 2 windowHeight
 		ARG 3 currentTick
+		ARG 4 mode
 	METHOD method_75804 render (Lnet/minecraft/class_332;Lnet/minecraft/class_327;IIILnet/minecraft/class_338$class_1_313;Z)V
 		ARG 1 context
 		ARG 2 textRenderer
@@ -103,6 +123,12 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 		ARG 7 shouldInsert
 	CLASS 1 1
 		FIELD field_63866 styledCurrentLine Z
+	CLASS class_1_313 Mode
+		FIELD field_1_1859 foreground Z
+		FIELD field_1_1860 restricted Z
+		METHOD <init> (Ljava/lang/String;IZZ)V
+			ARG 3 foreground
+			ARG 4 restricted
 	CLASS class_7731 RemovalQueuedMessage
 	CLASS class_9477 ChatState
 		FIELD field_50218 messages Ljava/util/List;
@@ -140,6 +166,8 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 			ARG 0 currentTick
 		METHOD method_75805 (ILnet/minecraft/class_303$class_7590;)F
 			ARG 1 line
+		METHOD method_75806 (Lnet/minecraft/class_303$class_7590;)F
+			ARG 0 currentTick
 	CLASS class_12233 Backend
 		METHOD method_75807 text (IFLnet/minecraft/class_5481;)Z
 			ARG 1 y

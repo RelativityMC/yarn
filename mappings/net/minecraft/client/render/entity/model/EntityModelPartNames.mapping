@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_6230 net/minecraft/client/render/entity/model/EntityModelPartNames
 	COMMENT Contains common model part names used in {@linkplain EntityModel entity models}.
+	FIELD field_1_1805 WAIST Ljava/lang/String;
 	FIELD field_32583 RIGHT_FRONT_FOOT Ljava/lang/String;
 		COMMENT The key of a right front foot model part, whose value is {@value}.
 	FIELD field_32584 LEFT_HIND_LEG_TIP Ljava/lang/String;

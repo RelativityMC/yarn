@@ -8,6 +8,10 @@ CLASS net/minecraft/class_1_193 net/minecraft/datafixer/file/FileUpgrader
 	FIELD field_1_1428 dataFixers Lcom/mojang/datafixers/DataFixerBuilder$Result;
 	FIELD field_1_1429 fileFixes Ljava/util/List;
 	FIELD field_1_1430 maxVersion I
+	FIELD field_1_1807 FILEFIX Ljava/lang/String;
+	FIELD field_1_1808 GSON Lcom/google/gson/Gson;
+	FIELD field_1_1809 NEW_WORLD Ljava/lang/String;
+	FIELD field_1_1810 UPGRADE_FILE_NAME Ljava/lang/String;
 	METHOD <init> (Lcom/mojang/datafixers/DataFixerBuilder$Result;Ljava/util/List;I)V
 		ARG 1 dataFixers
 		ARG 2 fileFixes
@@ -47,11 +51,48 @@ CLASS net/minecraft/class_1_193 net/minecraft/datafixer/file/FileUpgrader
 		ARG 0 path
 	METHOD method_1_1707 fixFilesInWorld (Lnet/minecraft/class_32$class_5143;Ljava/util/List;Ljava/nio/file/Path;Ljava/nio/file/Path;)V
 		ARG 0 session
+		ARG 1 moves
+		ARG 2 filefixDir
+		ARG 3 newWorldDir
 	METHOD method_1_1708 adjustVersion (I)I
 		ARG 0 version
 	METHOD method_1_1709 fixLevelDat (Ljava/nio/file/Path;I)V
 		ARG 1 directory
 		ARG 2 newVersion
+	METHOD method_1_2212 upgrade (Lnet/minecraft/class_1_27;IILjava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;)Ljava/util/List;
+		ARG 1 progress
+		ARG 2 oldVersion
+		ARG 3 newVersion
+		ARG 4 storageSessionDir
+		ARG 5 filefixDir
+		ARG 6 newWorldDir
+	METHOD method_1_2213 cleanUpOldWorldDirectoryOrLogError (Ljava/nio/file/Path;)V
+		ARG 0 dir
+	METHOD method_1_2214 cleanUpOldWorldDirectory (Ljava/nio/file/Path;)V
+		ARG 0 dir
+	METHOD method_1_2215 getMovesInUpdateProgress (Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;)Ljava/util/List;
+		ARG 0 storageSessionDir
+		ARG 1 newWorldDir
+		ARG 2 upgradeProgressFile
+	METHOD method_1_2216 enumerateFileMoves (Lnet/minecraft/class_1_27;ILjava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;I)Ljava/util/List;
+		ARG 1 progress
+		ARG 2 newVersion
+		ARG 3 storageSessionDir
+		ARG 4 newWorldDir
+		ARG 5 filefixDir
+		ARG 6 oldVersion
+	METHOD method_1_2217 saveMovesToUpdateProgress (Ljava/util/List;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;)V
+		ARG 0 moves
+		ARG 1 storageSessionDir
+		ARG 2 newWorldDir
+		ARG 3 upgradeProgressFile
+	CLASS 1 1
+		METHOD postVisitDirectory (Ljava/lang/Object;Ljava/io/IOException;)Ljava/nio/file/FileVisitResult;
+			ARG 1 dir
+			ARG 2 exception
+		METHOD visitFile (Ljava/lang/Object;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
+			ARG 1 file
+			ARG 2 attrs
 	CLASS class_1_194 Builder
 		FIELD field_1_1431 dataVersion I
 		FIELD field_1_1432 fixers Ljava/util/List;
@@ -67,3 +108,9 @@ CLASS net/minecraft/class_1_193 net/minecraft/datafixer/file/FileUpgrader
 			ARG 3 factory
 		METHOD method_1_1712 build (Lcom/mojang/datafixers/DataFixerBuilder$Result;)Lnet/minecraft/class_1_193;
 			ARG 1 dataFixers
+	CLASS class_1_306 MoveList
+		METHOD method_1_2220 createCodec (Ljava/nio/file/Path;Ljava/nio/file/Path;)Lcom/mojang/serialization/Codec;
+			ARG 0 srcRoot
+			ARG 1 destRoot
+		METHOD method_1_2221 (Ljava/nio/file/Path;Ljava/nio/file/Path;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 2 instance

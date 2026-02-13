@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_333 net/minecraft/datafixer/file/FileMoveException
+	FIELD field_1_1956 newName Ljava/lang/String;
+	METHOD <init> (Ljava/lang/Exception;Ljava/lang/String;Lnet/minecraft/class_1_195;)V
+		ARG 1 cause
+		ARG 2 newName
+		ARG 3 fsCapabilities
+	METHOD method_1_2376 getNewName ()Ljava/lang/String;

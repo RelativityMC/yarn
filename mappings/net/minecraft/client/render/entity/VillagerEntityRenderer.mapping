@@ -1,3 +1,4 @@
 CLASS net/minecraft/class_963 net/minecraft/client/render/entity/VillagerEntityRenderer
+	FIELD field_1_1894 BABY_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_4807 TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_53204 HEAD_TRANSFORMATION Lnet/minecraft/class_976$class_9994;

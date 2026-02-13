@@ -24,6 +24,12 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 		ARG 4 useStb
 		ARG 5 pointer
 	METHOD method_1_415 isClosed ()Z
+	METHOD method_1_2144 getTransparency ()Lnet/minecraft/class_1_303;
+	METHOD method_1_2145 getRegionTransparency (IIII)Lnet/minecraft/class_1_303;
+		ARG 1 left
+		ARG 2 top
+		ARG 3 right
+		ARG 4 bottom
 	METHOD method_4300 resizeSubRectTo (IIIILnet/minecraft/class_1011;)V
 		ARG 1 x
 		ARG 2 y

@@ -1,0 +1,23 @@
+CLASS net/minecraft/class_1_308 net/minecraft/client/render/QuadLighting
+	FIELD field_1_1828 light0 I
+	FIELD field_1_1829 light1 I
+	FIELD field_1_1830 light2 I
+	FIELD field_1_1831 light3 I
+	METHOD <init> (IIII)V
+		ARG 1 light0
+		ARG 2 light1
+		ARG 3 light2
+		ARG 4 light3
+	METHOD method_1_2241 getWithEmission (II)I
+		ARG 1 index
+		ARG 2 emission
+	METHOD method_1_2242 flat (I)Lnet/minecraft/class_1_308;
+		ARG 0 light
+	METHOD method_1_2243 get (I)I
+		ARG 1 index
+	CLASS class_1_309 Mutable
+		METHOD method_1_2244 set (II)V
+			ARG 1 index
+			ARG 2 light
+		METHOD method_1_2245 set (I)V
+			ARG 1 light

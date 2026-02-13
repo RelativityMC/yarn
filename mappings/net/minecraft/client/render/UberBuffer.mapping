@@ -1,0 +1,82 @@
+CLASS net/minecraft/class_1_296 net/minecraft/client/render/UberBuffer
+	FIELD field_1_1763 vertexSize I
+	FIELD field_1_1764 allocationsByData Ljava/util/Map;
+	FIELD field_1_1765 label Ljava/lang/String;
+	FIELD field_1_1766 buffers Ljava/util/List;
+	FIELD field_1_1767 closedData Lit/unimi/dsi/fastutil/objects/ObjectOpenHashSet;
+	FIELD field_1_1768 stagedAllocations Lit/unimi/dsi/fastutil/objects/Object2ObjectOpenHashMap;
+	FIELD field_1_1769 staging Lnet/minecraft/class_1_296$class_1_299;
+	FIELD field_1_1770 bytesStaged I
+	METHOD <init> (Ljava/lang/String;IIILcom/mojang/blaze3d/systems/GpuDevice;ILnet/minecraft/class_11541;)V
+		ARG 1 name
+		ARG 2 usage
+		ARG 3 heapSize
+		ARG 4 vertexSize
+		ARG 5 device
+		ARG 6 stagingBufferSize
+		ARG 7 deviceInfo
+	METHOD method_1_2172 stageRemainder (Ljava/lang/Object;Lnet/minecraft/class_1_296$class_1_302;Ljava/nio/ByteBuffer;)Z
+		ARG 1 data
+		ARG 2 uploadCallback
+		ARG 3 source
+	METHOD method_1_2173 freeAllocation (Ljava/lang/Object;)V
+		ARG 1 data
+	METHOD method_1_2174 get (Ljava/lang/Object;)Lnet/minecraft/class_1_291$class_1_292;
+		ARG 1 data
+	METHOD method_1_2175 getBufferOfAllocation (Lnet/minecraft/class_1_291$class_1_292;)Lcom/mojang/blaze3d/buffers/GpuBuffer;
+		ARG 1 allocation
+	METHOD method_1_2176 logState ()V
+	METHOD method_1_2177 dispose (Ljava/lang/Object;)V
+		ARG 1 data
+	METHOD method_1_2178 upload (Lcom/mojang/blaze3d/systems/GpuDevice;Lcom/mojang/blaze3d/systems/CommandEncoder;)Z
+		ARG 1 device
+		ARG 2 encoder
+	CLASS class_1_297 StagedAllocation
+		FIELD field_1_1771 uploadCallback Lnet/minecraft/class_1_296$class_1_302;
+		FIELD field_1_1772 offset J
+		FIELD field_1_1773 size J
+		METHOD <init> (Lnet/minecraft/class_1_296$class_1_302;JJ)V
+			ARG 1 uploadCallback
+			ARG 2 offset
+			ARG 4 size
+	CLASS class_1_298 Heap
+		FIELD field_1_1774 buffer Lcom/mojang/blaze3d/buffers/GpuBuffer;
+		METHOD <init> (JLcom/mojang/blaze3d/systems/GpuDevice;ILjava/lang/String;)V
+			ARG 1 size
+			ARG 3 device
+			ARG 4 usage
+			ARG 5 label
+	CLASS class_1_299 StagingBuffer
+		METHOD method_1_2180 reset (Lcom/mojang/blaze3d/systems/CommandEncoder;)V
+			ARG 1 encoder
+		METHOD method_1_2181 copy (Lcom/mojang/blaze3d/systems/CommandEncoder;Lcom/mojang/blaze3d/buffers/GpuBuffer;JJJ)V
+			ARG 1 encoder
+			ARG 2 to
+			ARG 3 toStart
+			ARG 5 fromStart
+			ARG 7 length
+		METHOD method_1_2182 create (Ljava/lang/String;Lcom/mojang/blaze3d/systems/GpuDevice;ILnet/minecraft/class_11541;)Lnet/minecraft/class_1_296$class_1_299;
+			ARG 0 label
+			ARG 1 device
+			ARG 2 size
+			ARG 3 deviceInfo
+		METHOD method_1_2183 close ()V
+		METHOD method_1_2184 getData ()Ljava/nio/ByteBuffer;
+		CLASS class_1_300 Direct
+			FIELD field_1_1775 buffer Ljava/nio/ByteBuffer;
+			METHOD <init> (Ljava/lang/String;Lcom/mojang/blaze3d/systems/GpuDevice;I)V
+				ARG 1 label
+				ARG 2 device
+				ARG 3 size
+		CLASS class_1_301 Ring
+			FIELD field_1_1776 subData Ljava/nio/ByteBuffer;
+			FIELD field_1_1777 sub Lcom/mojang/blaze3d/buffers/GpuBuffer;
+			FIELD field_1_1778 subView Lcom/mojang/blaze3d/buffers/GpuBuffer$MappedView;
+			FIELD field_1_1779 ringBuffer Lnet/minecraft/class_11285;
+			METHOD <init> (Ljava/lang/String;Lcom/mojang/blaze3d/systems/GpuDevice;I)V
+				ARG 1 label
+				ARG 2 device
+				ARG 3 size
+	CLASS class_1_302 DataConsumer
+		METHOD method_1_2186 accept (Ljava/lang/Object;)V
+			ARG 1 data

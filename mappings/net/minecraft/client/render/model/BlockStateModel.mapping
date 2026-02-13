@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_1087 net/minecraft/client/render/model/BlockStateModel
+	METHOD method_1_2384 hasTranslucency ()Z
+	METHOD method_1_2385 getTexture ()Lnet/minecraft/class_1_314$class_1_315;
 	METHOD method_68512 getParts (Lnet/minecraft/class_5819;)Ljava/util/List;
 		ARG 1 random
 	METHOD method_68513 addParts (Lnet/minecraft/class_5819;Ljava/util/List;)V

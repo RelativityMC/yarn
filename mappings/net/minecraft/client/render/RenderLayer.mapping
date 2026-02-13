@@ -18,6 +18,7 @@ CLASS net/minecraft/class_1921 net/minecraft/client/render/RenderLayer
 		ARG 1 name
 		ARG 2 renderSetup
 	METHOD method_1_1195 hasBlend ()Z
+	METHOD method_1_2313 getOutputTarget ()Lnet/minecraft/class_12246;
 	METHOD method_22722 getExpectedBufferSize ()I
 	METHOD method_23031 getVertexFormat ()Lcom/mojang/blaze3d/vertex/VertexFormat;
 	METHOD method_23033 getDrawMode ()Lcom/mojang/blaze3d/vertex/VertexFormat$class_5596;

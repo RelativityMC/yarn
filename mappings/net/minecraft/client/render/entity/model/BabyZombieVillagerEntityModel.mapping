@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_351 net/minecraft/client/render/entity/model/BabyZombieVillagerEntityModel
+	METHOD method_1_2439 getTexturedModelData ()Lnet/minecraft/class_5607;
+	METHOD method_1_2440 getNoHatTexturedModelData ()Lnet/minecraft/class_5607;
+	METHOD method_1_2441 (Lnet/minecraft/class_5609;)Lnet/minecraft/class_5609;
+		ARG 0 part

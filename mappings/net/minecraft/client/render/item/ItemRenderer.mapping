@@ -2,23 +2,36 @@ CLASS net/minecraft/class_918 net/minecraft/client/render/item/ItemRenderer
 	FIELD field_43086 ENTITY_ENCHANTMENT_GLINT Lnet/minecraft/class_2960;
 	FIELD field_43087 ITEM_ENCHANTMENT_GLINT Lnet/minecraft/class_2960;
 	FIELD field_55295 NO_TINT I
+	METHOD method_1_2278 getTransformationMatrix (Lnet/minecraft/class_811;Lnet/minecraft/class_4587$class_4665;)Lnet/minecraft/class_4587$class_4665;
+		ARG 0 context
+		ARG 1 currentMatrix
+	METHOD method_1_2279 getGlintRenderLayer (Lnet/minecraft/class_1921;Z)Lnet/minecraft/class_1921;
+		ARG 0 baseRenderLayer
+		ARG 1 solid
+	METHOD method_1_2280 getTint ([ILnet/minecraft/class_777;)I
+		ARG 0 tints
+		ARG 1 quad
 	METHOD method_23181 getItemGlintConsumer (Lnet/minecraft/class_4597;Lnet/minecraft/class_1921;ZZ)Lnet/minecraft/class_4588;
 		ARG 0 vertexConsumers
 		ARG 1 layer
 		ARG 2 solid
 		ARG 3 glint
 	METHOD method_62476 renderItem (Lnet/minecraft/class_811;Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;II[ILjava/util/List;Lnet/minecraft/class_10444$class_10445;)V
+		ARG 0 context
+		ARG 1 matrices
 		ARG 2 vertexConsumers
 		ARG 3 light
 		ARG 4 overlay
 		ARG 5 tints
 		ARG 6 quads
+		ARG 7 glint
 	METHOD method_65569 getTint ([II)I
 		ARG 0 tints
 		ARG 1 index
 	METHOD method_71138 getSpecialItemGlintConsumer (Lnet/minecraft/class_4597;Lnet/minecraft/class_1921;Lnet/minecraft/class_4587$class_4665;)Lnet/minecraft/class_4588;
 		ARG 0 consumers
 		ARG 1 layer
+		ARG 2 matrix
 	METHOD method_71139 useTransparentGlint (Lnet/minecraft/class_1921;)Z
 		ARG 0 renderLayer
 	METHOD method_72988 getGlintRenderLayers (Lnet/minecraft/class_1921;ZZ)Ljava/util/List;

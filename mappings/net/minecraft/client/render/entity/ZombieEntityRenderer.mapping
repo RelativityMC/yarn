@@ -3,3 +3,5 @@ CLASS net/minecraft/class_3886 net/minecraft/client/render/entity/ZombieEntityRe
 		ARG 1 ctx
 		ARG 2 layer
 		ARG 3 legsArmorLayer
+		ARG 4 adultEquipment
+		ARG 5 babyEquipment

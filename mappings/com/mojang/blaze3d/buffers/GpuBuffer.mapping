@@ -2,4 +2,7 @@ CLASS com/mojang/blaze3d/buffers/GpuBuffer
 	METHOD <init> (IJ)V
 		ARG 1 size
 		ARG 2 usage
+	METHOD slice (JJ)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+		ARG 1 start
+		ARG 3 length
 	CLASS class_12113 Usage

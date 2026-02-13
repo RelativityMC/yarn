@@ -1,4 +1,13 @@
 CLASS net/minecraft/class_12075 net/minecraft/client/render/state/CameraRenderState
+	FIELD field_1_1895 frustum Lnet/minecraft/class_4604;
+	FIELD field_1_1896 farPlaneDistance F
+	FIELD field_1_1897 focusedEntity Lnet/minecraft/class_1_344;
+	FIELD field_1_1898 fogData Lnet/minecraft/class_7285;
+	FIELD field_1_1899 submersionType Lnet/minecraft/class_5636;
+	FIELD field_1_1902 projectionMatrix Lorg/joml/Matrix4f;
+	FIELD field_1_1903 rotationMatrix Lorg/joml/Matrix4f;
+	FIELD field_1_1904 pitch F
+	FIELD field_1_1905 yaw F
 	FIELD field_63077 blockPos Lnet/minecraft/class_2338;
 	FIELD field_63078 pos Lnet/minecraft/class_243;
 	FIELD field_63079 initialized Z

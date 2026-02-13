@@ -1,7 +1,31 @@
 CLASS net/minecraft/class_3417 net/minecraft/sound/SoundEvents
+	FIELD field_1_1718 CAT_SOUNDS Ljava/util/Map;
+	FIELD field_1_1719 CHICKEN_SOUNDS Ljava/util/Map;
+	FIELD field_1_1721 COW_SOUNDS Ljava/util/Map;
+	FIELD field_1_1726 PIG_SOUNDS Ljava/util/Map;
 	FIELD field_39027 GOAT_HORN_SOUND_COUNT I
 	FIELD field_39028 GOAT_HORN_SOUNDS Lcom/google/common/collect/ImmutableList;
 	FIELD field_57074 WOLF_SOUNDS Ljava/util/Map;
+	METHOD method_1_2127 (Lnet/minecraft/class_1_338$class_1_339;)Lnet/minecraft/class_1_338$class_1_339;
+		ARG 0 type
+	METHOD method_1_2128 (Lnet/minecraft/class_1_338$class_1_339;)Lnet/minecraft/class_1_334;
+		ARG 0 type
+	METHOD method_1_2129 (Lnet/minecraft/class_1_348$class_1_349;)Lnet/minecraft/class_1_348$class_1_349;
+		ARG 0 type
+	METHOD method_1_2130 (Lnet/minecraft/class_1_348$class_1_349;)Lnet/minecraft/class_1_346;
+		ARG 0 type
+	METHOD method_1_2131 (Lnet/minecraft/class_1_328$class_1_329;)Lnet/minecraft/class_1_328$class_1_329;
+		ARG 0 type
+	METHOD method_1_2132 (Lnet/minecraft/class_1_328$class_1_329;)Lnet/minecraft/class_1_323;
+		ARG 0 type
+	METHOD method_1_2133 (Lnet/minecraft/class_1_330$class_1_331;)Lnet/minecraft/class_1_330$class_1_331;
+		ARG 0 type
+	METHOD method_1_2134 (Lnet/minecraft/class_1_330$class_1_331;)Lnet/minecraft/class_1_324;
+		ARG 0 type
+	METHOD method_1_2135 createCatSoundMap ()Ljava/util/Map;
+	METHOD method_1_2136 createChickenSoundMap ()Ljava/util/Map;
+	METHOD method_1_2137 createCowSoundMap ()Ljava/util/Map;
+	METHOD method_1_2138 createPigSoundMap ()Ljava/util/Map;
 	METHOD method_14838 register (Ljava/lang/String;)Lnet/minecraft/class_3414;
 		ARG 0 id
 	METHOD method_43045 register (Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;F)Lnet/minecraft/class_6880;

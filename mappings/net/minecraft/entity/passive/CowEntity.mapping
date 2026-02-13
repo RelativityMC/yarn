@@ -1,5 +1,13 @@
 CLASS net/minecraft/class_10730 net/minecraft/entity/passive/CowEntity
+	FIELD field_1_1811 SOUND_VARIANT Lnet/minecraft/class_2940;
 	FIELD field_56424 VARIANT Lnet/minecraft/class_2940;
+	METHOD method_1_2222 getSoundVariant ()Lnet/minecraft/class_6880;
+	METHOD method_1_2223 (Lnet/minecraft/class_11372;Lnet/minecraft/class_5321;)V
+		ARG 1 variant
+	METHOD method_1_2224 (Lnet/minecraft/class_5321;)Ljava/util/Optional;
+		ARG 1 variant
+	METHOD method_1_2225 setSoundVariant (Lnet/minecraft/class_6880;)V
+		ARG 1 soundVariant
 	METHOD method_67348 setVariant (Lnet/minecraft/class_6880;)V
 		ARG 1 variant
 	METHOD method_67349 getVariant ()Lnet/minecraft/class_6880;

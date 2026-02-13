@@ -2087,7 +2087,8 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_59921 collectStepHeights (Lnet/minecraft/class_238;Ljava/util/List;FF)[F
 		ARG 0 collisionBox
 		ARG 1 collisions
-		ARG 3 stepHeight
+		ARG 2 stepHeight
+		ARG 3 movementY
 	METHOD method_59922 getRandom ()Lnet/minecraft/class_5819;
 	METHOD method_59958 getWeaponStack ()Lnet/minecraft/class_1799;
 	METHOD method_60478 getMovement ()Lnet/minecraft/class_243;

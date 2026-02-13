@@ -179,7 +179,7 @@ CLASS net/minecraft/server/MinecraftServer
 	METHOD method_3740 getCommandFunctionManager ()Lnet/minecraft/class_2991;
 	METHOD method_3742 addServerGuiTickable (Ljava/lang/Runnable;)V
 		ARG 1 tickable
-	METHOD method_3744 setCrashReport (Lnet/minecraft/class_128;)V
+	METHOD method_3744 handleCrashReport (Lnet/minecraft/class_128;)V
 		ARG 1 report
 	METHOD method_3747 stop (Z)V
 		COMMENT Stops this server.

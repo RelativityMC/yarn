@@ -1,0 +1,23 @@
+CLASS net/minecraft/class_1_330 net/minecraft/entity/passive/PigSoundVariants
+	FIELD field_1_1938 BIG Lnet/minecraft/class_5321;
+	FIELD field_1_1939 CLASSIC Lnet/minecraft/class_5321;
+	FIELD field_1_1940 MINI Lnet/minecraft/class_5321;
+	METHOD method_1_2358 bootstrap (Lnet/minecraft/class_7891;)V
+		ARG 0 registry
+	METHOD method_1_2359 of (Lnet/minecraft/class_1_330$class_1_331;)Lnet/minecraft/class_5321;
+		ARG 0 type
+	METHOD method_1_2360 select (Lnet/minecraft/class_5455;Lnet/minecraft/class_5819;)Lnet/minecraft/class_6880;
+		ARG 0 registries
+		ARG 1 random
+	METHOD method_1_2361 register (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_1_330$class_1_331;)V
+		ARG 0 registry
+		ARG 1 key
+		ARG 2 type
+	CLASS class_1_331 Type
+		FIELD field_1_1945 id Ljava/lang/String;
+		FIELD field_1_1946 suffix Ljava/lang/String;
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+			ARG 3 id
+			ARG 4 suffix
+		METHOD method_1_2363 id ()Ljava/lang/String;
+		METHOD method_1_2364 getSoundEventSuffix ()Ljava/lang/String;

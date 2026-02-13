@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_1_316 net/minecraft/datafixer/file/FileUpgradeException
+	FIELD field_1_1869 moves Ljava/util/List;
+	METHOD <init> (Ljava/lang/Exception;)V
+		ARG 1 cause
+	METHOD <init> (Ljava/lang/Exception;Ljava/util/List;Lnet/minecraft/class_1_195;)V
+		ARG 1 cause
+		ARG 2 moves
+		ARG 3 fsCapabilities
+	METHOD method_1_2296 getMoves ()Ljava/util/List;
+		COMMENT {@return the list of moves that failed to revert}

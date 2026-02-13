@@ -37,10 +37,12 @@ CLASS net/minecraft/class_759 net/minecraft/client/render/item/HeldItemRenderer
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_898;Lnet/minecraft/class_10442;)V
 		ARG 1 client
 		ARG 2 entityRenderDispatcher
+		ARG 3 itemModelManager
 	METHOD method_3215 resetEquipProgress (Lnet/minecraft/class_1268;)V
 		ARG 1 hand
 	METHOD method_3216 renderArm (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;ILnet/minecraft/class_1306;)V
 		ARG 1 matrices
+		ARG 2 queue
 		ARG 3 light
 		ARG 4 arm
 	METHOD method_3217 applySwingOffset (Lnet/minecraft/class_4587;Lnet/minecraft/class_1306;F)V
@@ -63,6 +65,7 @@ CLASS net/minecraft/class_759 net/minecraft/client/render/item/HeldItemRenderer
 	METHOD method_3220 updateHeldItems ()V
 	METHOD method_3222 renderMapInOneHand (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;IFLnet/minecraft/class_1306;FLnet/minecraft/class_1799;)V
 		ARG 1 matrices
+		ARG 2 queue
 		ARG 3 light
 		ARG 4 equipProgress
 		ARG 5 arm
@@ -88,9 +91,11 @@ CLASS net/minecraft/class_759 net/minecraft/client/render/item/HeldItemRenderer
 		ARG 6 item
 		ARG 7 equipProgress
 		ARG 8 matrices
+		ARG 9 queue
 		ARG 10 light
 	METHOD method_3231 renderMapInBothHands (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;IFFF)V
 		ARG 1 matrices
+		ARG 2 queue
 		ARG 3 light
 		ARG 4 pitch
 		ARG 5 equipProgress
@@ -100,10 +105,12 @@ CLASS net/minecraft/class_759 net/minecraft/client/render/item/HeldItemRenderer
 		ARG 2 stack
 		ARG 3 renderMode
 		ARG 4 matrices
+		ARG 5 queue
 		ARG 6 light
 	METHOD method_22976 renderItem (FLnet/minecraft/class_4587;Lnet/minecraft/class_11659;Lnet/minecraft/class_746;I)V
 		ARG 1 tickProgress
 		ARG 2 matrices
+		ARG 3 queue
 		ARG 4 player
 		ARG 5 light
 	METHOD method_33302 isChargedCrossbow (Lnet/minecraft/class_1799;)Z
@@ -116,8 +123,13 @@ CLASS net/minecraft/class_759 net/minecraft/client/render/item/HeldItemRenderer
 		ARG 1 matrices
 		ARG 2 tickProgress
 		ARG 3 arm
+		ARG 4 player
 	METHOD method_65816 swingArm (FLnet/minecraft/class_4587;ILnet/minecraft/class_1306;)V
 		ARG 1 swingProgress
+		ARG 2 matrices
+		ARG 3 side
+			COMMENT {@code 1} for the right arm; {@code 1} for the left arm
+		ARG 4 arm
 	METHOD method_65910 shouldSkipHandAnimationOnSwap (Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;)Z
 		ARG 1 from
 		ARG 2 to

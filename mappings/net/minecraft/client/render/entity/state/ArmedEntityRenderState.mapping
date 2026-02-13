@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_10426 net/minecraft/client/render/entity/state/ArmedEntityRenderState
+	FIELD field_1_1069 preferredArm Lnet/minecraft/class_1306;
 	FIELD field_55303 mainArm Lnet/minecraft/class_1306;
 	FIELD field_55304 rightArmPose Lnet/minecraft/class_572$class_573;
 	FIELD field_55305 rightHandItemState Lnet/minecraft/class_10444;

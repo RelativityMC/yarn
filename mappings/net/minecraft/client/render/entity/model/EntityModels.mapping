@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_5600 net/minecraft/client/render/entity/model/EntityModels
+	FIELD field_1_1845 BABY_HAT_DILATION Lnet/minecraft/class_5605;
+	FIELD field_1_1846 BABY_ARMOR_DILATION Lnet/minecraft/class_5605;
+	FIELD field_1_1847 BABY_PIGLIN_MODEL_TRANSFORM Lnet/minecraft/class_5603;
 	FIELD field_27543 FISH_PATTERN_DILATION Lnet/minecraft/class_5605;
 	FIELD field_27544 ARMOR_DILATION Lnet/minecraft/class_5605;
 	FIELD field_27545 HAT_DILATION Lnet/minecraft/class_5605;

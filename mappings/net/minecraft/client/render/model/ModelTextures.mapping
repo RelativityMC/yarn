@@ -6,6 +6,7 @@ CLASS net/minecraft/class_10419 net/minecraft/client/render/model/ModelTextures
 		ARG 1 textures
 	METHOD method_65543 add (Ljava/lang/String;Lcom/google/gson/JsonElement;Lnet/minecraft/class_10419$class_10420$class_10421;)V
 		ARG 0 textureId
+		ARG 1 textureJson
 		ARG 2 builder
 	METHOD method_65544 fromJson (Lcom/google/gson/JsonObject;)Lnet/minecraft/class_10419$class_10420;
 		ARG 0 json

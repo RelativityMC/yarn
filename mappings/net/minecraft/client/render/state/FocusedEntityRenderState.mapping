@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_1_344 net/minecraft/client/render/state/FocusedEntityRenderState
+	FIELD field_1_1976 reverseDistanceMoved F
+	FIELD field_1_1977 movement F
+	FIELD field_1_1978 deathTime F
+	FIELD field_1_1979 visionImpaired Z
+	FIELD field_1_1980 damageTiltYaw F
+	FIELD field_1_1981 maxHurtTime I
+	FIELD field_1_1982 hurtTime F
+	FIELD field_1_1983 dead Z
+	FIELD field_1_1984 focusedOnLivingEntity Z
+	FIELD field_1_1985 focusedOnPlayer Z
+	FIELD field_1_1986 sleeping Z

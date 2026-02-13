@@ -30,6 +30,8 @@ CLASS net/minecraft/class_572 net/minecraft/client/render/entity/model/BipedEnti
 	COMMENT </tr>
 	COMMENT </table>
 	COMMENT </div>
+	FIELD field_1_1791 PARTS_BY_SLOT_ADULT Ljava/util/Map;
+	FIELD field_1_1792 PARTS_BY_SLOT_BABY Ljava/util/Map;
 	FIELD field_3391 body Lnet/minecraft/class_630;
 	FIELD field_3392 rightLeg Lnet/minecraft/class_630;
 	FIELD field_3394 hat Lnet/minecraft/class_630;
@@ -41,6 +43,17 @@ CLASS net/minecraft/class_572 net/minecraft/client/render/entity/model/BipedEnti
 	FIELD field_32504 SPYGLASS_ARM_PITCH_OFFSET F
 	FIELD field_32507 SPYGLASS_SNEAKING_ARM_PITCH_OFFSET F
 	FIELD field_52918 BABY_TRANSFORMER Lnet/minecraft/class_9953;
+	METHOD method_1_2198 getModelData (Lnet/minecraft/class_5605;Lnet/minecraft/class_5603;)Lnet/minecraft/class_5609;
+		ARG 0 dilation
+		ARG 1 modelTransform
+	METHOD method_1_2199 createBabyEquipmentModelData (Lnet/minecraft/class_5605;Lnet/minecraft/class_5605;Lnet/minecraft/class_5603;)Lnet/minecraft/class_11677;
+		ARG 0 hatDilation
+		ARG 1 armorDilation
+		ARG 2 modelTransform
+	METHOD method_1_2200 (Lnet/minecraft/class_5603;Lnet/minecraft/class_5605;)Lnet/minecraft/class_5609;
+		ARG 1 dilation
+	METHOD method_2807 getArmRollProgress (F)F
+		ARG 1 perquattuordecimage
 	METHOD method_2808 getArm (Lnet/minecraft/class_1306;)Lnet/minecraft/class_630;
 		ARG 1 arm
 	METHOD method_29353 animateArms (Lnet/minecraft/class_10034;)V
@@ -59,9 +72,10 @@ CLASS net/minecraft/class_572 net/minecraft/client/render/entity/model/BipedEnti
 		ARG 0 dilation
 	METHOD method_72853 createEquipmentModelData (Ljava/util/function/Function;Ljava/util/Map;Lnet/minecraft/class_5605;Lnet/minecraft/class_5605;)Lnet/minecraft/class_11677;
 		ARG 0 toModelData
+		ARG 1 partsBySlot
 		ARG 2 hatDilation
 		ARG 3 armorDilation
-	METHOD method_72854 createEquipmentModelData (Lnet/minecraft/class_5605;Lnet/minecraft/class_5605;)Lnet/minecraft/class_11677;
+	METHOD method_72854 createAdultEquipmentModelData (Lnet/minecraft/class_5605;Lnet/minecraft/class_5605;)Lnet/minecraft/class_11677;
 		ARG 0 hatDilation
 		ARG 1 armorDilation
 	CLASS class_573 ArmPose
@@ -71,3 +85,9 @@ CLASS net/minecraft/class_572 net/minecraft/client/render/entity/model/BipedEnti
 			ARG 2 id
 			ARG 3 twoHanded
 		METHOD method_30156 isTwoHanded ()Z
+		METHOD method_75382 applyTransformation (Lnet/minecraft/class_10426;Lnet/minecraft/class_4587;FLnet/minecraft/class_1306;Lnet/minecraft/class_1799;)V
+			ARG 1 state
+			ARG 2 matrices
+			ARG 3 useTime
+			ARG 4 arm
+			ARG 5 stack

@@ -1,0 +1,18 @@
+CLASS net/minecraft/class_1_289 net/minecraft/command/ArgumentIteration
+	METHOD method_1_2140 invoke (Lcom/mojang/brigadier/context/CommandContextBuilder;Lnet/minecraft/class_1_289$class_1_290;Lcom/mojang/brigadier/tree/ArgumentCommandNode;Lcom/mojang/brigadier/context/ParsedArgument;)V
+		ARG 0 builder
+		ARG 1 callback
+		ARG 2 node
+		ARG 3 parsedArgument
+	METHOD method_1_2141 forEachArguent (Lcom/mojang/brigadier/ParseResults;Lnet/minecraft/class_1_289$class_1_290;Z)V
+		ARG 0 parseResults
+		ARG 1 callback
+		ARG 2 shallow
+	METHOD method_1_2142 forEachArgument (Lcom/mojang/brigadier/context/CommandContextBuilder;Lnet/minecraft/class_1_289$class_1_290;)V
+		ARG 0 builder
+		ARG 1 callback
+	CLASS class_1_290 ArgumentConsumer
+		METHOD method_1_2143 accept (Lcom/mojang/brigadier/context/CommandContextBuilder;Lcom/mojang/brigadier/tree/ArgumentCommandNode;Lcom/mojang/brigadier/context/ParsedArgument;)V
+			ARG 1 builder
+			ARG 2 node
+			ARG 3 parsedArgument

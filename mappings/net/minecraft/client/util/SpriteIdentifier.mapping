@@ -1,0 +1,13 @@
+CLASS net/minecraft/class_1_310 net/minecraft/client/util/SpriteIdentifier
+	METHOD method_1_2258 getVertexConsumer (Lnet/minecraft/class_11701;Lnet/minecraft/class_4597;Ljava/util/function/Function;)Lnet/minecraft/class_4588;
+		ARG 1 spriteHolder
+		ARG 2 vertexConsumers
+		ARG 3 layerFunction
+	METHOD method_1_2259 getVertexConsumer (Lnet/minecraft/class_11701;Lnet/minecraft/class_4597;Ljava/util/function/Function;ZZ)Lnet/minecraft/class_4588;
+		ARG 1 spriteHolder
+		ARG 2 vertexConsumers
+		ARG 3 layerFunction
+		ARG 4 solid
+		ARG 5 glint
+	METHOD method_1_2260 getRenderLayer (Ljava/util/function/Function;)Lnet/minecraft/class_1921;
+		ARG 1 layerFunction

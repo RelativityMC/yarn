@@ -1,0 +1,118 @@
+CLASS net/minecraft/class_1_291 net/minecraft/client/render/AllocationManager
+	COMMENT Manages allocations into some piece of memory.
+	COMMENT <p>
+	COMMENT This class itself does not hold any actual memory to be allocated; instead,
+	COMMENT it provides instances of {@link AllocationManager$Index} on allocation,
+	COMMENT which can be used to index some other piece of memory held by the caller.
+	COMMENT In addition, the total amount of memory that an instance of this class can
+	COMMENT ‘allocate’ at once is fixed upon instantiation.
+	FIELD field_1_1741 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_1742 MAX_ALLOCATION_SIZE J
+	FIELD field_1_1746 firstLevelAvailability I
+		COMMENT Bit {@code i} is set if there is any free block for the primary index {@code i}.
+	FIELD field_1_1747 freeHeadsByIndices [Lnet/minecraft/class_1_291$class_1_293;
+		COMMENT One entry for every combination of first- and second-level indices. The
+		COMMENT index for an entry lies at {@code 8 * firstLevelIndex + secondLevelIndex}.
+	FIELD field_1_1748 secondLevelAvailabilities [I
+		COMMENT One entry for every first-level index. Bit {@code i} is set if there is
+		COMMENT a free block for the secondary index {@code i}.
+	FIELD field_1_1749 size J
+	METHOD <init> (Lnet/minecraft/class_1_291$class_1_294;)V
+		ARG 1 parentAllocationInfo
+	METHOD method_1_2146 roundDownToAlignment (JJ)J
+		ARG 0 size
+		ARG 2 align
+	METHOD method_1_2147 roundToNearestAlignment (JJ)J
+		ARG 0 size
+		ARG 2 align
+	METHOD method_1_2148 allocate (JI)Lnet/minecraft/class_1_291$class_1_292;
+		ARG 1 size
+		ARG 3 vertexSize
+	METHOD method_1_2149 getLowestAvailableIndex (I)I
+		ARG 0 availabilityFlags
+	METHOD method_1_2150 floorLog2 (J)I
+		ARG 0 size
+	METHOD method_1_2151 free (Lnet/minecraft/class_1_291$class_1_292;)V
+		ARG 1 allocation
+	METHOD method_1_2152 getFreeHead (II)Lnet/minecraft/class_1_291$class_1_293;
+		ARG 1 firstLevelIndex
+		ARG 2 secondLevelIndex
+	METHOD method_1_2153 getIndexForSizeRaw (J)Lnet/minecraft/class_1_291$class_1_295;
+		ARG 1 size
+	METHOD method_1_2154 addBlockToFreeList (Lnet/minecraft/class_1_291$class_1_293;)V
+		ARG 1 block
+	METHOD method_1_2155 isEmpty ()Z
+		COMMENT {@return {@code true} if there are no unfreed allocations}
+	METHOD method_1_2156 getIndexForSize (J)Lnet/minecraft/class_1_291$class_1_295;
+		ARG 1 size
+	METHOD method_1_2157 coalesceRight (Lnet/minecraft/class_1_291$class_1_293;)V
+		COMMENT Coalesces {@code block} with its right neighbor if possible.
+		ARG 1 block
+	METHOD method_1_2158 coalesceLeft (Lnet/minecraft/class_1_291$class_1_293;)V
+		COMMENT Coalesces {@code block} with its left neighbor if possible.
+		ARG 1 block
+	METHOD method_1_2159 logState (Ljava/lang/String;)V
+		ARG 1 name
+	METHOD method_1_2160 takeBlockFromFreeList (Lnet/minecraft/class_1_291$class_1_293;II)V
+		ARG 1 block
+		ARG 2 firstLevelIndex
+		ARG 3 secondLevelIndex
+	METHOD method_1_2161 setFreeHead (IILnet/minecraft/class_1_291$class_1_293;)V
+		ARG 1 firstLevelIndex
+		ARG 2 secondLevelIndex
+		ARG 3 block
+	METHOD method_1_2162 trySplitBlock (Lnet/minecraft/class_1_291$class_1_293;J)V
+		COMMENT Splits {@code block} if it’s much larger than needed.
+		ARG 1 block
+		ARG 2 minSize
+	CLASS class_1_292 Allocation
+		FIELD field_1_1750 block Lnet/minecraft/class_1_291$class_1_293;
+		FIELD field_1_1751 freed Z
+		FIELD field_1_1752 offset J
+			COMMENT This is the offset into the whole parent allocation, not into the block!
+		METHOD <init> (Lnet/minecraft/class_1_291$class_1_293;J)V
+			ARG 1 block
+			ARG 2 offset
+		METHOD method_1_2163 getParentInfo ()Lnet/minecraft/class_1_291$class_1_294;
+		METHOD method_1_2164 getOffset ()J
+		METHOD method_1_2165 getBlockSize ()J
+		METHOD method_1_2166 isFreed ()Z
+	CLASS class_1_293 Block
+		FIELD field_1_1753 USED I
+		FIELD field_1_1754 parentAllocationInfo Lnet/minecraft/class_1_291$class_1_294;
+		FIELD field_1_1755 next Lnet/minecraft/class_1_291$class_1_293;
+		FIELD field_1_1756 right Lnet/minecraft/class_1_291$class_1_293;
+		FIELD field_1_1757 offset J
+		FIELD field_1_1758 prev Lnet/minecraft/class_1_291$class_1_293;
+		FIELD field_1_1759 left Lnet/minecraft/class_1_291$class_1_293;
+		FIELD field_1_1760 flags J
+			COMMENT The size of this block (must be a multiple of 2), bitwise-or’ed with 1 if
+			COMMENT this block is currently allocated.
+		METHOD <init> (JLnet/minecraft/class_1_291$class_1_294;JLnet/minecraft/class_1_291$class_1_293;Lnet/minecraft/class_1_291$class_1_293;Lnet/minecraft/class_1_291$class_1_293;Lnet/minecraft/class_1_291$class_1_293;)V
+			ARG 1 size
+			ARG 3 parentAllocationInfo
+			ARG 4 offset
+			ARG 6 next
+			ARG 7 prev
+			ARG 8 right
+			ARG 9 left
+		METHOD method_1_2167 getSize ()J
+		METHOD method_1_2168 isFree ()Z
+		METHOD method_1_2169 setFree ()V
+		METHOD method_1_2170 setSize (J)V
+			ARG 1 size
+		METHOD method_1_2171 setUsed ()V
+	CLASS class_1_294 ParentAllocationInfo
+		COMMENT Contains information about the parent allocation. This can be subclassed
+		COMMENT to add more information.
+		FIELD field_1_1761 size J
+		METHOD <init> (J)V
+			ARG 1 size
+	CLASS class_1_295 Index
+		FIELD comp_1_193 I
+			COMMENT {@code 0} for allocations less than 256 bytes; {@code 1} for allocations with
+			COMMENT size between 256 and 511 bytes. The size threshold doubles for each
+			COMMENT subsequent first-level index.
+		FIELD comp_1_194 I
+			COMMENT A value in [0, 8). The size range for each first-level index is divided into
+			COMMENT eight equal parts, each assigned a successive second-level index.

@@ -1,4 +1,9 @@
 CLASS net/minecraft/class_12099 net/minecraft/command/DefaultPermissions
+	FIELD field_1_1833 DEFAULT_PERMISSIONS Ljava/util/Set;
+	FIELD field_1_1834 RECEIVE_PLAYER_MESSAGES Lnet/minecraft/class_12087;
+	FIELD field_1_1835 RECEIVE_SYSTEM_MESSAGES Lnet/minecraft/class_12087;
+	FIELD field_1_1836 SEND_COMMANDS Lnet/minecraft/class_12087;
+	FIELD field_1_1837 SEND_MESSAGES Lnet/minecraft/class_12087;
 	FIELD field_63209 MODERATORS Lnet/minecraft/class_12087;
 	FIELD field_63210 GAMEMASTERS Lnet/minecraft/class_12087;
 	FIELD field_63211 ADMINS Lnet/minecraft/class_12087;

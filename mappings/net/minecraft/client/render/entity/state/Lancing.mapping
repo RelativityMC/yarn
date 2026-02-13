@@ -1,7 +1,40 @@
 CLASS net/minecraft/class_12152 net/minecraft/client/render/entity/state/Lancing
+	METHOD method_75390 clampedLerp (FFF)F
+		ARG 0 value
+		ARG 1 start
+		ARG 2 end
+	METHOD method_75391 applyStabbingTransformation (FLnet/minecraft/class_4587;ILnet/minecraft/class_1306;)V
+		ARG 0 swingProgress
+		ARG 1 matrices
+		ARG 2 side
+		ARG 3 arm
+	METHOD method_75392 applyChargingTransformation (Lnet/minecraft/class_10426;Lnet/minecraft/class_4587;FLnet/minecraft/class_1306;Lnet/minecraft/class_1799;)V
+		ARG 0 state
+		ARG 1 matrices
+		ARG 2 useTime
+		ARG 3 arm
+		ARG 4 stack
+	METHOD method_75393 setStabbingAngles (Lnet/minecraft/class_572;Lnet/minecraft/class_10034;)V
+		ARG 0 model
+		ARG 1 state
 	METHOD method_75394 positionArmForSpear (Lnet/minecraft/class_630;Lnet/minecraft/class_630;ZLnet/minecraft/class_1799;Lnet/minecraft/class_10034;)V
 		ARG 0 arm
 		ARG 1 head
 		ARG 2 right
 		ARG 3 itemStack
 		ARG 4 state
+	METHOD method_75395 applyStabbingTransformation (Lnet/minecraft/class_10426;Lnet/minecraft/class_4587;)V
+		ARG 0 state
+		ARG 1 matrices
+	METHOD method_75396 applyChargingTransformation (FLnet/minecraft/class_4587;FLnet/minecraft/class_1306;Lnet/minecraft/class_1799;)V
+		ARG 0 timeSinceLastKineticAttack
+		ARG 1 matrices
+		ARG 2 useTime
+		ARG 3 arm
+		ARG 4 stack
+	METHOD method_75916 getRecoilDistance (F)F
+		ARG 0 timeSinceLastKineticAttack
+	CLASS class_12153 RenderState
+		METHOD method_75397 of (Lnet/minecraft/class_12123;F)Lnet/minecraft/class_12152$class_12153;
+			ARG 0 kineticWeaponComponent
+			ARG 1 useTime

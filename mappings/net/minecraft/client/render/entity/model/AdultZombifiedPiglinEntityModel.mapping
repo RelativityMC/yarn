@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_354 net/minecraft/client/render/entity/model/AdultZombifiedPiglinEntityModel
+	METHOD method_1_2448 getTexturedModelData ()Lnet/minecraft/class_5607;

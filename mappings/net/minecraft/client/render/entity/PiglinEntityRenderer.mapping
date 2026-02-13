@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_4842 net/minecraft/client/render/entity/PiglinEntityRenderer
+	FIELD field_1_1875 BABY_PIGLIN_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_53195 HEAD_TRANSFORMATION Lnet/minecraft/class_976$class_9994;
 	FIELD field_53196 PIGLIN_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_53197 PIGLIN_BRUTE_TEXTURE Lnet/minecraft/class_2960;

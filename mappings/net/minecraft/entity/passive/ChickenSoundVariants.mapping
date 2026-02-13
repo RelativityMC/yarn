@@ -1,0 +1,22 @@
+CLASS net/minecraft/class_1_348 net/minecraft/entity/passive/ChickenSoundVariants
+	FIELD field_1_1998 CLASSIC Lnet/minecraft/class_5321;
+	FIELD field_1_1999 PICKY Lnet/minecraft/class_5321;
+	METHOD method_1_2426 bootstrap (Lnet/minecraft/class_7891;)V
+		ARG 0 registry
+	METHOD method_1_2427 of (Lnet/minecraft/class_1_348$class_1_349;)Lnet/minecraft/class_5321;
+		ARG 0 type
+	METHOD method_1_2428 select (Lnet/minecraft/class_5455;Lnet/minecraft/class_5819;)Lnet/minecraft/class_6880;
+		ARG 0 registries
+		ARG 1 random
+	METHOD method_1_2429 register (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_1_348$class_1_349;)V
+		ARG 0 registry
+		ARG 1 key
+		ARG 2 type
+	CLASS class_1_349 Type
+		FIELD field_1_2003 id Ljava/lang/String;
+		FIELD field_1_2004 suffix Ljava/lang/String;
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+			ARG 3 id
+			ARG 4 suffix
+		METHOD method_1_2431 getId ()Ljava/lang/String;
+		METHOD method_1_2432 getSoundEventSuffix ()Ljava/lang/String;

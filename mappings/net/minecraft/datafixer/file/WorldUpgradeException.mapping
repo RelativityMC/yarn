@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_307 net/minecraft/datafixer/file/WorldUpgradeException
+	FIELD field_1_1827 fsCapabilities Lnet/minecraft/class_1_195;
+	METHOD <init> (Ljava/lang/Exception;Lnet/minecraft/class_1_195;)V
+		ARG 1 cause
+		ARG 2 fsCapabilities
+	METHOD method_1_2239 getCrashReport ()Lnet/minecraft/class_128;
+	METHOD method_1_2240 toCrashException ()Lnet/minecraft/class_148;

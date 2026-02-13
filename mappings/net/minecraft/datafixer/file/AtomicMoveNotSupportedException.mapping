@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_352 net/minecraft/datafixer/file/AtomicMoveNotSupportedException
+	METHOD <init> (Lnet/minecraft/class_1_195;)V
+		ARG 1 fsCapabilities

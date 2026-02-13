@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_968 net/minecraft/client/render/entity/ZombieBaseEntityRenderer
+	FIELD field_1_1974 TEXTURE_BABY Lnet/minecraft/class_2960;
 	FIELD field_4819 TEXTURE Lnet/minecraft/class_2960;
 	METHOD <init> (Lnet/minecraft/class_5617$class_5618;Lnet/minecraft/class_623;Lnet/minecraft/class_623;Lnet/minecraft/class_11677;Lnet/minecraft/class_11677;)V
 		ARG 1 context

@@ -1,0 +1,24 @@
+CLASS net/minecraft/class_1_317 net/minecraft/client/chat/ChatRestrictions
+	FIELD field_1_1870 UNRESTRICTED Lnet/minecraft/class_1_317;
+	FIELD field_1_1871 permissions Lnet/minecraft/class_12096;
+	FIELD field_1_1872 restrictions Ljava/util/Set;
+	FIELD field_1_1873 messageAllowedPredicate Ljava/util/function/Predicate;
+	METHOD <init> (Ljava/util/Set;)V
+		ARG 1 restrictions
+	METHOD method_1_2297 canReceivePlayerMessages ()Z
+	METHOD method_1_2298 canReceiveSystemMessages ()Z
+	METHOD method_1_2299 canSendCommands ()Z
+	METHOD method_1_2300 canSendMessages ()Z
+	METHOD method_1_2301 isRestricted ()Z
+	METHOD method_1_2302 (Lcom/google/common/collect/ImmutableSet;Lnet/minecraft/class_303;)Z
+		ARG 1 line
+	METHOD method_1_2303 getPermissions ()Lnet/minecraft/class_12096;
+	METHOD method_1_2304 getRestrictions ()Ljava/util/stream/Stream;
+	METHOD method_1_2305 createMessageAllowedPredicate (Lnet/minecraft/class_1_317;)Ljava/util/function/Predicate;
+		ARG 0 restrictions
+	METHOD method_1_2306 getMessageAllowedPredicate ()Ljava/util/function/Predicate;
+	CLASS class_1_318 Builder
+		FIELD field_1_1874 restrictions Ljava/util/Set;
+		METHOD method_1_2307 addRestriction (Lnet/minecraft/class_5859;)Lnet/minecraft/class_1_317$class_1_318;
+			ARG 1 restriction
+		METHOD method_1_2308 build ()Lnet/minecraft/class_1_317;

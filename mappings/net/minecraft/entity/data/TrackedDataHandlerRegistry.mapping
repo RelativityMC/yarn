@@ -1,4 +1,8 @@
 CLASS net/minecraft/class_2943 net/minecraft/entity/data/TrackedDataHandlerRegistry
+	FIELD field_1_1876 CAT_SOUND_VARIANT Lnet/minecraft/class_2941;
+	FIELD field_1_1877 CHICKEN_SOUND_VARIANT Lnet/minecraft/class_2941;
+	FIELD field_1_1878 COW_SOUND_VARIANT Lnet/minecraft/class_2941;
+	FIELD field_1_1879 PIG_SOUND_VARIANT Lnet/minecraft/class_2941;
 	FIELD field_13312 BLOCK_STATE Lnet/minecraft/class_2941;
 	FIELD field_13314 PARTICLE Lnet/minecraft/class_2941;
 	FIELD field_13315 OPTIONAL_BLOCK_POS Lnet/minecraft/class_2941;

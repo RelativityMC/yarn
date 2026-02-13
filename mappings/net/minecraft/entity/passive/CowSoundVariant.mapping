@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_323 net/minecraft/entity/passive/CowSoundVariant
+	FIELD field_1_1908 ENTRY_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_1910 NETWORK_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_1911 PACKET_CODEC Lnet/minecraft/class_9139;
+	METHOD method_1_2340 createCodec ()Lcom/mojang/serialization/Codec;
+	METHOD method_1_2341 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

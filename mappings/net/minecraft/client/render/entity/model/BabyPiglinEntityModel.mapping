@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_336 net/minecraft/client/render/entity/model/BabyPiglinEntityModel
+	METHOD method_1_2380 getTexturedModelData ()Lnet/minecraft/class_5607;

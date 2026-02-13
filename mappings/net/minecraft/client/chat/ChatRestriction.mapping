@@ -1,0 +1,28 @@
+CLASS net/minecraft/class_5859 net/minecraft/client/chat/ChatRestriction
+	COMMENT Represents the restrictions on chat on a Minecraft client.
+	COMMENT
+	COMMENT @see MinecraftClient#getChatRestriction()
+	FIELD field_1_1891 action Ljava/util/Optional;
+	FIELD field_28944 description Lnet/minecraft/class_2561;
+	METHOD <init> (Ljava/lang/String;ILnet/minecraft/class_2561;Ljava/util/Optional;)V
+		ARG 3 description
+		ARG 4 action
+	METHOD method_1_2328 getAction ()Ljava/util/Optional;
+	METHOD method_1_2329 removeCommandPermissions (Ljava/util/Set;)V
+		ARG 0 permissions
+	METHOD method_1_2330 removeMessagePermissions (Ljava/util/Set;)V
+		ARG 0 permissions
+	METHOD method_1_2331 removePermissions (Ljava/util/Set;)V
+		ARG 1 permissions
+	METHOD method_33885 getDescription ()Lnet/minecraft/class_2561;
+	CLASS class_1_321 Action
+		FIELD comp_1_213 screenCallback Ljava/util/function/BiConsumer;
+		FIELD field_1_1892 DISABLED_BY_PROFILE Lnet/minecraft/class_5859$class_1_321;
+		FIELD field_1_1893 CHAT_DISABLED_BY_OPTIONS Lnet/minecraft/class_5859$class_1_321;
+		METHOD comp_1_213 screenCallback ()Ljava/util/function/BiConsumer;
+		METHOD method_1_2332 (Lnet/minecraft/class_310;Lnet/minecraft/class_437;)V
+			ARG 0 client
+			ARG 1 screen
+		METHOD method_1_2333 (Lnet/minecraft/class_310;Lnet/minecraft/class_437;)V
+			ARG 0 client
+			ARG 1 screen

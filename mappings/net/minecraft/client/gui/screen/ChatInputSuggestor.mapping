@@ -41,8 +41,9 @@ CLASS net/minecraft/class_4717 net/minecraft/client/gui/screen/ChatInputSuggesto
 		ARG 9 chatScreenSized
 		ARG 10 color
 	METHOD method_1_2345 isAllowedToSend ()Z
-	METHOD method_1_2346 (Lcom/mojang/brigadier/ParseResults;)Z
+	METHOD method_1_2346 containsMessageArgument (Lcom/mojang/brigadier/ParseResults;)Z
 		ARG 0 parse
+	METHOD method_1_2347 calculateWidth ()V
 	METHOD method_1_2348 setSendPermissions (ZZ)V
 		ARG 1 canSendMessages
 		ARG 2 canSendCommands
@@ -63,6 +64,8 @@ CLASS net/minecraft/class_4717 net/minecraft/client/gui/screen/ChatInputSuggesto
 		ARG 1 original
 		ARG 2 firstCharacterIndex
 	METHOD method_23929 showUsages (Lcom/mojang/brigadier/context/SuggestionContext;Lnet/minecraft/class_2583;)Ljava/util/List;
+		ARG 1 suggestionContext
+		ARG 2 style
 	METHOD method_23930 getStartOfCurrentWord (Ljava/lang/String;)I
 		ARG 0 input
 	METHOD method_23931 provideRenderText (Ljava/lang/String;I)Lnet/minecraft/class_5481;
@@ -75,6 +78,10 @@ CLASS net/minecraft/class_4717 net/minecraft/client/gui/screen/ChatInputSuggesto
 		ARG 0 original
 		ARG 1 suggestion
 	METHOD method_23937 showCommandSuggestions (Lcom/mojang/brigadier/ParseResults;Lcom/mojang/brigadier/suggestion/Suggestions;)V
+		ARG 1 parseResults
+		ARG 2 suggestions
+	METHOD method_23939 (Lcom/mojang/brigadier/suggestion/Suggestions;)V
+		ARG 1 suggestions
 	METHOD method_23958 getNarration ()Lnet/minecraft/class_2561;
 	METHOD method_30104 sortSuggestions (Lcom/mojang/brigadier/suggestion/Suggestions;)Ljava/util/List;
 		ARG 1 suggestions
@@ -91,6 +98,8 @@ CLASS net/minecraft/class_4717 net/minecraft/client/gui/screen/ChatInputSuggesto
 	METHOD method_53868 getSuggestionUsageNarrationText ()Lnet/minecraft/class_2561;
 	METHOD method_53869 setCanLeave (Z)V
 		ARG 1 canLeave
+	CLASS class_1_326 MessageDetector
+		FIELD field_1_1926 message Z
 	CLASS class_464 SuggestionWindow
 		FIELD field_2765 completed Z
 		FIELD field_2766 selection I

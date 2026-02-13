@@ -1,5 +1,21 @@
 CLASS net/minecraft/class_796 net/minecraft/client/render/model/BakedQuadFactory
 	FIELD field_60150 CENTER Lorg/joml/Vector3fc;
+	METHOD method_1_2317 bake (Lnet/minecraft/class_7775$class_12356;Lorg/joml/Vector3fc;Lorg/joml/Vector3fc;Lnet/minecraft/class_783$class_10800;Lnet/minecraft/class_10821;ILnet/minecraft/class_777$class_1_320;Lnet/minecraft/class_2350;Lnet/minecraft/class_3665;Lnet/minecraft/class_789;ZI)Lnet/minecraft/class_777;
+		ARG 0 interner
+		ARG 1 from
+		ARG 2 to
+		ARG 3 uv
+		ARG 4 faceRotation
+		ARG 5 tintIndex
+		ARG 6 spriteInfo
+		ARG 7 direction
+		ARG 8 settings
+		ARG 9 rotation
+		ARG 10 shade
+		ARG 11 lightEmission
+	METHOD method_1_2318 getRegionTransparency (Lnet/minecraft/class_1_314$class_1_315;Lnet/minecraft/class_783$class_10800;)Lnet/minecraft/class_1_303;
+		ARG 0 texture
+		ARG 1 uv
 	METHOD method_3461 packVertexData (ILnet/minecraft/class_753;Lnet/minecraft/class_783$class_10800;Lnet/minecraft/class_10821;Lorg/joml/Matrix4fc;Lorg/joml/Vector3fc;Lorg/joml/Vector3fc;Lnet/minecraft/class_777$class_1_320;Lnet/minecraft/class_4590;Lnet/minecraft/class_789;[Lorg/joml/Vector3fc;[JLnet/minecraft/class_7775$class_12356;)V
 		ARG 0 corner
 		ARG 1 cubeFace
@@ -8,28 +24,54 @@ CLASS net/minecraft/class_796 net/minecraft/client/render/model/BakedQuadFactory
 		ARG 4 matrix
 		ARG 5 from
 		ARG 6 to
+		ARG 7 spriteInfo
 		ARG 8 affineTransformation
 		ARG 9 rotation
 		ARG 10 positions
 		ARG 11 packedUvs
+		ARG 12 interner
 	METHOD method_3462 encodeDirection ([Lorg/joml/Vector3fc;[JLnet/minecraft/class_2350;)V
+		ARG 0 positions
+		ARG 1 packedUvs
+		ARG 2 direction
 	METHOD method_3464 transformVertex (Lorg/joml/Vector3f;Lorg/joml/Vector3fc;Lorg/joml/Matrix4fc;)V
 		ARG 0 vertex
+		ARG 1 origin
+		ARG 2 transform
 	METHOD method_3467 decodeDirection ([Lorg/joml/Vector3fc;)Lnet/minecraft/class_2350;
 		ARG 0 vecs
 	METHOD method_3468 bake (Lnet/minecraft/class_7775;Lorg/joml/Vector3fc;Lorg/joml/Vector3fc;Lnet/minecraft/class_783;Lnet/minecraft/class_1_314$class_1_315;Lnet/minecraft/class_2350;Lnet/minecraft/class_3665;Lnet/minecraft/class_789;ZI)Lnet/minecraft/class_777;
+		ARG 0 baker
 		ARG 1 from
 		ARG 2 to
 		ARG 3 face
+		ARG 4 texture
 		ARG 5 direction
+		ARG 6 settings
 		ARG 7 rotation
 		ARG 8 shade
 		ARG 9 lightEmission
 	METHOD method_67919 setCenterBack (F)F
+		ARG 0 texcoord
 	METHOD method_67921 setDefaultUV (Lorg/joml/Vector3fc;Lorg/joml/Vector3fc;Lnet/minecraft/class_2350;)Lnet/minecraft/class_783$class_10800;
 		ARG 0 from
 		ARG 1 to
 		ARG 2 facing
 	METHOD method_67924 setCenterForward (F)F
+		ARG 0 texcoord
 	METHOD method_76653 getDirection (Lorg/joml/Vector3f;)Lnet/minecraft/class_2350;
 		ARG 0 vec
+	METHOD method_76654 swapPackedUvs ([JII)V
+		ARG 0 packedUvs
+		ARG 1 i
+		ARG 2 j
+	METHOD method_76655 findVertexToSwap ([Lorg/joml/Vector3fc;IFFF)I
+		ARG 0 positions
+		ARG 1 cornerIndex
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_76656 swapPositions ([Lorg/joml/Vector3fc;II)V
+		ARG 0 positions
+		ARG 1 i
+		ARG 2 j

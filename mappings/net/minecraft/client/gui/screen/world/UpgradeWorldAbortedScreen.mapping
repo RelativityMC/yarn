@@ -1,0 +1,13 @@
+CLASS net/minecraft/class_1_332 net/minecraft/client/gui/screen/world/UpgradeWorldAbortedScreen
+	FIELD field_1_1947 backButton Lnet/minecraft/class_4185;
+	FIELD field_1_1948 onClose Ljava/lang/Runnable;
+	FIELD field_1_1949 layout Lnet/minecraft/class_8667;
+	FIELD field_1_1950 message Lnet/minecraft/class_2561;
+	FIELD field_1_1951 reportBugButton Lnet/minecraft/class_4185;
+	METHOD <init> (Ljava/lang/Runnable;Lnet/minecraft/class_2561;)V
+		ARG 1 onClose
+		ARG 2 message
+	METHOD method_1_2365 addButtons (Lnet/minecraft/class_8667;)V
+		ARG 1 buttonLayout
+	METHOD method_1_2366 (Lnet/minecraft/class_4185;)V
+		ARG 1 button

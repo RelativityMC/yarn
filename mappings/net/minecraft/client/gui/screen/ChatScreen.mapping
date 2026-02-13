@@ -48,4 +48,7 @@ CLASS net/minecraft/class_408 net/minecraft/client/gui/screen/ChatScreen
 	METHOD method_76757 shouldInsert ()Z
 	CLASS class_11738 Factory
 		METHOD method_1_113 create (Ljava/lang/String;ZLnet/minecraft/class_1_317;)Lnet/minecraft/class_408;
+			ARG 1 message
+			ARG 2 draft
+			ARG 3 restrictions
 	CLASS class_11739 CloseReason

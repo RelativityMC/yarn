@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_11278 net/minecraft/client/render/ProjectionMatrixBuffer
+	FIELD field_1_1882 projection Lnet/minecraft/class_11279;
+	FIELD field_1_1883 lastUpdatedAt J
+	FIELD field_1_1884 matrix Lorg/joml/Matrix4f;
+	FIELD field_60059 buffer Lcom/mojang/blaze3d/buffers/GpuBuffer;
+	FIELD field_60060 slice Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+	METHOD <init> (Ljava/lang/String;)V
+		ARG 1 name
+	METHOD method_1_2315 set (Lorg/joml/Matrix4f;)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+		ARG 1 matrix
+	METHOD method_1_2316 uploadMatrix (Lorg/joml/Matrix4f;)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+		ARG 1 matrix
+	METHOD method_71092 set (Lnet/minecraft/class_11279;)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+		ARG 1 projection

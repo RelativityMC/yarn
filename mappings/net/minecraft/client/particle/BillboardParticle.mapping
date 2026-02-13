@@ -78,7 +78,11 @@ CLASS net/minecraft/class_3940 net/minecraft/client/particle/BillboardParticle
 			ARG 1 camera
 			ARG 2 tickProgress
 	CLASS class_11941 RenderType
+		FIELD field_1_1848 ITEM_ATLAS_OPAQUE Lnet/minecraft/class_3940$class_11941;
+		FIELD field_1_1849 BLOCK_ATLAS_OPAQUE Lnet/minecraft/class_3940$class_11941;
 		FIELD field_62639 BLOCK_ATLAS_TRANSLUCENT Lnet/minecraft/class_3940$class_11941;
 		FIELD field_62640 PARTICLE_ATLAS_OPAQUE Lnet/minecraft/class_3940$class_11941;
 		FIELD field_62641 PARTICLE_ATLAS_TRANSLUCENT Lnet/minecraft/class_3940$class_11941;
 		FIELD field_64447 ITEM_ATLAS_TRANSLUCENT Lnet/minecraft/class_3940$class_11941;
+		METHOD method_1_2272 forSprite (Lnet/minecraft/class_1058;)Lnet/minecraft/class_3940$class_11941;
+			ARG 0 sprite

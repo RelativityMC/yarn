@@ -491,6 +491,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 			COMMENT the player
 		ARG 2 hand
 			COMMENT the hand the player used to interact with this entity
+		ARG 3 hitPos
 	METHOD method_5692 updateMovementInFluid (Lnet/minecraft/class_6862;D)Z
 		ARG 1 tag
 		ARG 2 speed
@@ -2222,7 +2223,9 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_66233 getInterpolator ()Lnet/minecraft/class_10584;
 	METHOD method_66245 isInterpolating ()Z
 	METHOD method_66246 updateTrackedPositionAndAngles (Lnet/minecraft/class_243;FF)V
-		ARG 1 pos
+		ARG 1 position
+		ARG 2 yaw
+		ARG 3 tch
 	METHOD method_66247 isLogicalSideForUpdatingMovement ()Z
 	METHOD method_66248 isControlledByMainPlayer ()Z
 	METHOD method_66249 canMoveVoluntarily ()Z
@@ -2315,9 +2318,19 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 2 pos
 		ARG 3 blockCollision
 		ARG 4 fluidCollision
+	METHOD method_73091 (Ljava/lang/Float;)V
+		ARG 1 pitch
 	METHOD method_73092 updateTrackedPositionAndAngles (Ljava/util/Optional;Ljava/util/Optional;Ljava/util/Optional;)V
+		ARG 1 position
+		ARG 2 yaw
+		ARG 3 itch
+	METHOD method_73093 (Ljava/lang/Float;)V
+		ARG 1 yaw
 	METHOD method_73094 updateTrackedAngles (FF)V
+		ARG 1 yaw
+		ARG 2 itch
 	METHOD method_73095 updateTrackedPosition (Lnet/minecraft/class_243;)V
+		ARG 1 position
 	METHOD method_73187 isInteractable ()Z
 	METHOD method_74016 isPartlyTouchingWater ()Z
 		COMMENT {@return whether this entity's hitbox is touching, but not fully submerged in, water}

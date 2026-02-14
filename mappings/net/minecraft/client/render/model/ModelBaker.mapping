@@ -20,6 +20,7 @@ CLASS net/minecraft/class_1088 net/minecraft/client/render/model/ModelBaker
 	FIELD field_64595 WATER_STILL Lnet/minecraft/class_1_310;
 	METHOD <init> (Lnet/minecraft/class_5599;Lnet/minecraft/class_11701;Lnet/minecraft/class_11786;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;Lnet/minecraft/class_10819;)V
 		ARG 1 entityModels
+		ARG 2 spriteHolder
 		ARG 3 skinCache
 		ARG 4 blockModels
 		ARG 5 itemAssets
@@ -30,6 +31,7 @@ CLASS net/minecraft/class_1088 net/minecraft/client/render/model/ModelBaker
 	METHOD method_23216 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_2960;
 		ARG 0 id
 	METHOD method_45876 bake (Lnet/minecraft/class_9826;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 spriteGetter
 		ARG 2 executor
 	METHOD method_60912 (Ljava/lang/String;)Ljava/lang/String;
 		ARG 0 path
@@ -52,6 +54,8 @@ CLASS net/minecraft/class_1088 net/minecraft/client/render/model/ModelBaker
 		FIELD field_64597 interner Lnet/minecraft/class_7775$class_12356;
 		FIELD field_64598 blockItemModels Lnet/minecraft/class_1088$class_10812;
 		METHOD <init> (Lnet/minecraft/class_1088;Lnet/minecraft/class_9826;Lnet/minecraft/class_7775$class_12356;Lnet/minecraft/class_1088$class_10812;)V
+			ARG 2 spriteGetter
+			ARG 3 interner
 			ARG 4 blockItemModels
 		METHOD method_68550 (Lnet/minecraft/class_7775$class_10897;)Ljava/lang/Object;
 			ARG 1 key
@@ -59,5 +63,8 @@ CLASS net/minecraft/class_1088 net/minecraft/client/render/model/ModelBaker
 	CLASS class_10812 BlockItemModels
 		METHOD method_68021 bake (Lnet/minecraft/class_10819;Lnet/minecraft/class_9826;Lnet/minecraft/class_7775$class_12356;)Lnet/minecraft/class_1088$class_10812;
 			ARG 0 model
+			ARG 1 spriteGetter
+			ARG 2 interner
 	CLASS class_12357 Vec3fInternerImpl
-		FIELD field_64599 INTERNER Lcom/google/common/collect/Interner;
+		FIELD field_1_1850 SPRITE_INFO_INTERNER Lcom/google/common/collect/Interner;
+		FIELD field_64599 VEC3F_INTERNER Lcom/google/common/collect/Interner;

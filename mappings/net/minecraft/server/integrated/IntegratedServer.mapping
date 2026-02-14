@@ -15,6 +15,7 @@ CLASS net/minecraft/class_1132 net/minecraft/server/integrated/IntegratedServer
 		ARG 3 session
 		ARG 4 dataPackManager
 		ARG 5 saveLoader
+		ARG 6 gameRules
 		ARG 7 apiServices
 		ARG 8 chunkLoadProgress
 	METHOD method_4817 setLocalPlayerUuid (Ljava/util/UUID;)V

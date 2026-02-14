@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_7285 net/minecraft/client/render/fog/FogData
+	FIELD field_1_1806 color Lorg/joml/Vector4f;
 	FIELD field_60099 skyEnd F
 	FIELD field_60100 cloudEnd F
 	FIELD field_60582 environmentalStart F

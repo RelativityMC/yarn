@@ -1,2 +1,10 @@
 CLASS net/minecraft/class_11398 net/minecraft/client/render/fog/AtmosphericFogModifier
 	FIELD field_60589 fogMultiplier F
+	METHOD method_76304 adjustFogMultiplier (Lnet/minecraft/class_4184;Lnet/minecraft/class_638;Lnet/minecraft/class_9779;)V
+		ARG 1 camera
+		ARG 2 world
+		ARG 3 renderTickCounter
+	METHOD method_76556 adjustFogColorFromWeather (IFF)I
+		ARG 0 color
+		ARG 1 rainGradient
+		ARG 2 thunderGradient

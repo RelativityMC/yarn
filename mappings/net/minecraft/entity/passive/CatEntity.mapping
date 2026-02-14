@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_1451 net/minecraft/entity/passive/CatEntity
 	COMMENT Meow.
+	FIELD field_1_1840 SOUND_VARIANT Lnet/minecraft/class_2940;
 	FIELD field_6808 fleeGoal Lnet/minecraft/class_1451$class_3698;
 	FIELD field_6810 temptGoal Lnet/minecraft/class_1391;
 	FIELD field_6811 CAT_VARIANT Lnet/minecraft/class_2940;
@@ -18,6 +19,14 @@ CLASS net/minecraft/class_1451 net/minecraft/entity/passive/CatEntity
 	FIELD field_49979 DEFAULT_VARIANT Lnet/minecraft/class_5321;
 	FIELD field_52466 nearSleepingPlayer Z
 	FIELD field_56650 DEFAULT_COLLAR_COLOR Lnet/minecraft/class_1767;
+	METHOD method_1_2251 getSoundSubvariant ()Lnet/minecraft/class_1_334$class_1_335;
+	METHOD method_1_2252 getSoundVariant ()Lnet/minecraft/class_6880;
+	METHOD method_1_2253 (Lnet/minecraft/class_11372;Lnet/minecraft/class_5321;)V
+		ARG 1 soundVariant
+	METHOD method_1_2254 (Lnet/minecraft/class_5321;)Ljava/util/Optional;
+		ARG 1 soundVariant
+	METHOD method_1_2255 setSoundVariant (Lnet/minecraft/class_6880;)V
+		ARG 1 soundVariant
 	METHOD method_6175 onTamedChanged ()V
 	METHOD method_16082 getSleepAnimationProgress (F)F
 		ARG 1 tickProgress

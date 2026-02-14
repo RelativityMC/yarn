@@ -1,6 +1,10 @@
 CLASS net/minecraft/class_11400 net/minecraft/client/render/fog/FogModifier
 	METHOD method_42591 applyStartEndModifier (Lnet/minecraft/class_7285;Lnet/minecraft/class_4184;Lnet/minecraft/class_638;FLnet/minecraft/class_9779;)V
 		ARG 1 data
+		ARG 2 camera
+		ARG 3 world
+		ARG 4 viewDistanceBlocks
+		ARG 5 renderTickCounter
 	METHOD method_42592 applyDarknessModifier (Lnet/minecraft/class_1309;FF)F
 		ARG 1 cameraEntity
 		ARG 2 darkness

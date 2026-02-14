@@ -1,20 +1,53 @@
 CLASS net/minecraft/class_801 net/minecraft/client/render/model/json/GeneratedItemModel
 	FIELD field_4270 LAYERS Ljava/util/List;
+	FIELD field_32806 Z_FROM F
+	FIELD field_32807 Z_TO F
 	FIELD field_55273 GENERATED Lnet/minecraft/class_2960;
 	FIELD field_55274 TEXTURES Lnet/minecraft/class_10419$class_10420;
 	FIELD field_56930 FACING_SOUTH_UV Lnet/minecraft/class_783$class_10800;
 	FIELD field_56931 FACING_NORTH_UV Lnet/minecraft/class_783$class_10800;
-	METHOD method_3476 buildCube (Lnet/minecraft/class_801$class_803;Ljava/util/Set;Lnet/minecraft/class_7764;IIIII)V
+	METHOD method_1_2413 addGeometry (Lnet/minecraft/class_10817$class_10818;Lnet/minecraft/class_7775$class_12356;Lnet/minecraft/class_3665;ILnet/minecraft/class_777$class_1_320;)V
+		ARG 0 builder
+		ARG 1 interner
+		ARG 2 settings
+		ARG 3 layerIndex
+		ARG 4 spriteInfo
+	METHOD method_1_2414 addEdgeGeometry (Lnet/minecraft/class_10817$class_10818;Lnet/minecraft/class_7775$class_12356;Lnet/minecraft/class_3665;Lnet/minecraft/class_777$class_1_320;I)V
+		ARG 0 builder
+		ARG 1 interner
+		ARG 2 settings
+		ARG 3 spriteInfo
+		ARG 4 layerIndex
+	METHOD method_3476 getEdgePixels (Lnet/minecraft/class_801$class_803;Ljava/util/Set;Lnet/minecraft/class_7764;IIIII)V
+		ARG 0 side
+		ARG 1 edgePixelsOut
+		ARG 2 spriteContents
+		ARG 3 frame
+		ARG 4 x
+		ARG 5 y
+		ARG 6 width
+		ARG 7 height
 	METHOD method_3477 isPixelTransparent (Lnet/minecraft/class_7764;IIIII)Z
-	METHOD method_3478 getFrames (Lnet/minecraft/class_7764;)Ljava/util/Collection;
+		ARG 0 spriteContents
+		ARG 1 frame
+		ARG 2 x
+		ARG 3 y
+		ARG 4 width
+		ARG 5 height
+	METHOD method_3478 getEdgePixels (Lnet/minecraft/class_7764;)Ljava/util/Collection;
+		ARG 0 spriteContents
 	METHOD method_3479 bakeGeometry (Lnet/minecraft/class_10419;Lnet/minecraft/class_7775;Lnet/minecraft/class_3665;Lnet/minecraft/class_10813;)Lnet/minecraft/class_10817;
 		ARG 0 textures
 		ARG 1 baker
 		ARG 2 settings
 		ARG 3 model
+	METHOD method_76297 (IILnet/minecraft/class_7764;Ljava/util/Set;I)V
+		ARG 4 frame
+	CLASS class_1_345 Settings
 	CLASS class_803 Side
 		FIELD field_4276 direction Lnet/minecraft/class_2350;
 		METHOD <init> (Ljava/lang/String;ILnet/minecraft/class_2350;)V
 			ARG 3 direction
 		METHOD method_3488 getDirection ()Lnet/minecraft/class_2350;
 		METHOD method_3491 isVertical ()Z
+	CLASS class_12295 EdgePixel

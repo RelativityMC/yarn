@@ -4,6 +4,8 @@ CLASS net/minecraft/class_12075 net/minecraft/client/render/state/CameraRenderSt
 	FIELD field_1_1897 focusedEntity Lnet/minecraft/class_1_344;
 	FIELD field_1_1898 fogData Lnet/minecraft/class_7285;
 	FIELD field_1_1899 submersionType Lnet/minecraft/class_5636;
+	FIELD field_1_1900 hudFov F
+	FIELD field_1_1901 panoramaMode Z
 	FIELD field_1_1902 projectionMatrix Lorg/joml/Matrix4f;
 	FIELD field_1_1903 rotationMatrix Lorg/joml/Matrix4f;
 	FIELD field_1_1904 pitch F

@@ -1,6 +1,15 @@
 CLASS net/minecraft/class_3004 net/minecraft/entity/boss/BossBarManager
+	FIELD field_1_1543 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_1544 TYPE Lnet/minecraft/class_10741;
 	FIELD field_13447 commandBossBars Ljava/util/Map;
-	FIELD field_56605 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_56605 REPR_CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_1_1834 (Ljava/util/Map;)Lnet/minecraft/class_3004;
+		ARG 0 contents
+	METHOD method_1_1835 (Lnet/minecraft/class_3004;Lnet/minecraft/class_2960;Lnet/minecraft/class_3002$class_10765;)V
+		ARG 1 id
+		ARG 2 bar
+	METHOD method_1_1836 (Lnet/minecraft/class_3004;)Ljava/util/Map;
+		ARG 0 manager
 	METHOD method_12968 getIds ()Ljava/util/Collection;
 	METHOD method_12969 getAll ()Ljava/util/Collection;
 	METHOD method_12970 add (Lnet/minecraft/class_5819;Lnet/minecraft/class_2960;Lnet/minecraft/class_2561;)Lnet/minecraft/class_3002;

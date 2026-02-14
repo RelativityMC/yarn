@@ -1,11 +1,23 @@
 CLASS net/minecraft/class_4184 net/minecraft/client/render/Camera
-	FIELD field_1_1696 FLAG_UPDATE_ROTATION_MATRIX I
+	FIELD field_1_1695 DEFAULT_HUD_FOV F
+	FIELD field_1_1696 FLAG_ROTATION_MATRIX_DIRTY I
+	FIELD field_1_1697 FLAG_PROJECTION_MATRIX_DIRTY I
+	FIELD field_1_1698 NEAR_PLANE_DISTANCE F
 	FIELD field_1_1699 rotationMatrix Lorg/joml/Matrix4f;
+	FIELD field_1_1700 projectionMatrix Lorg/joml/Matrix4f;
+	FIELD field_1_1701 captureFrustumRequested Z
+	FIELD field_1_1702 capturedFrustum Lnet/minecraft/class_4604;
 	FIELD field_1_1703 frustum Lnet/minecraft/class_4604;
 	FIELD field_1_1704 farPlaneDistance F
-	FIELD field_1_1705 lastTickPRogress F
-	FIELD field_1_1710 flags I
+	FIELD field_1_1705 fov F
+	FIELD field_1_1706 fovMultiplier F
+	FIELD field_1_1707 hudFov F
+	FIELD field_1_1708 panoramaMode Z
+	FIELD field_1_1709 projectionMatrixLastQueriedAt J
+	FIELD field_1_1710 updateFlags I
 	FIELD field_1_1711 client Lnet/minecraft/class_310;
+	FIELD field_1_1712 lastFovMultiplier F
+	FIELD field_1_1713 panoramaHorizontalPlane Lorg/joml/Vector3f;
 	FIELD field_1_1714 projection Lnet/minecraft/class_11279;
 	FIELD field_18709 ready Z
 	FIELD field_18710 area Lnet/minecraft/class_1937;
@@ -28,20 +40,33 @@ CLASS net/minecraft/class_4184 net/minecraft/client/render/Camera
 	FIELD field_63830 environmentAttributeInterpolator Lnet/minecraft/class_12202;
 	METHOD method_1_2094 setPositionAndRotation (F)V
 		ARG 1 tickProgress
-	METHOD method_1_2095 (F)F
+	METHOD method_1_2095 getFov (F)F
 		ARG 1 tickProgress
-	METHOD method_1_2096 (F)F
+	METHOD method_1_2096 getHudFov (F)F
 		ARG 1 tickProgress
+	METHOD method_1_2097 captureFrustum ()V
+	METHOD method_1_2098 getPerspectiveMatrix ()Lorg/joml/Matrix4f;
+	METHOD method_1_2099 revokePanoramaMode ()V
+	METHOD method_1_2100 setPanoramaMode ()V
 	METHOD method_1_2101 updateRenderState (Lnet/minecraft/class_12075;F)V
 		ARG 1 renderState
 		ARG 2 tickProgress
+	METHOD method_1_2102 getCapturedFrustum ()Lnet/minecraft/class_4604;
 	METHOD method_1_2103 getFrustum ()Lnet/minecraft/class_4604;
 	METHOD method_1_2104 getRotationMatrix (Lorg/joml/Matrix4f;)Lorg/joml/Matrix4f;
 		ARG 1 matrixOut
-	METHOD method_1_2105 (Lorg/joml/Matrix4f;)Lorg/joml/Matrix4f;
+	METHOD method_1_2105 getProjectionMatrix (Lorg/joml/Matrix4f;)Lorg/joml/Matrix4f;
 		ARG 1 matrixOut
-	METHOD method_1_2108 (FF)F
+	METHOD method_1_2106 isInPanoramaMode ()Z
+	METHOD method_1_2107 killFrustum ()V
+	METHOD method_1_2108 applyFovEffects (FF)F
 		ARG 1 tickProgress
+		ARG 2 fov
+	METHOD method_1_2109 getPanoramaHorizontalPlane ()Lorg/joml/Vector3fc;
+	METHOD method_1_2110 updateFrustum (Lorg/joml/Matrix4f;Lorg/joml/Matrix4f;Lnet/minecraft/class_243;)V
+		ARG 1 rotationMatrix
+		ARG 2 projectionMatrix
+		ARG 3 pos
 	METHOD method_1_2111 setFocusedEntity (Lnet/minecraft/class_1297;)V
 		ARG 1 focusedEntity
 	METHOD method_1_2112 setArea (Lnet/minecraft/class_638;)V
@@ -58,7 +83,8 @@ CLASS net/minecraft/class_4184 net/minecraft/client/render/Camera
 		ARG 3 fov
 		ARG 4 width
 		ARG 5 height
-	METHOD method_1_2116 (Lnet/minecraft/class_9779;)V
+	METHOD method_1_2115 updateFovMultiplier ()V
+	METHOD method_1_2116 tick (Lnet/minecraft/class_9779;)V
 		ARG 1 renderTickCounter
 	METHOD method_19317 updateEyeHeight ()V
 	METHOD method_19318 clipToSpace (F)F
@@ -93,7 +119,7 @@ CLASS net/minecraft/class_4184 net/minecraft/client/render/Camera
 		COMMENT
 		COMMENT @see GameRenderer#CAMERA_DEPTH
 		ARG 1 fov
-	METHOD method_55437 getLastTickProgress ()F
+	METHOD method_55437 getFov ()F
 	METHOD method_75756 getEnvironmentAttributeInterpolator ()Lnet/minecraft/class_12202;
 	CLASS class_6355 Projection
 		COMMENT A projection of a camera. It is a 2-D rectangle in a 3-D volume.

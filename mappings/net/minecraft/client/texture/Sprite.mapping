@@ -16,6 +16,7 @@ CLASS net/minecraft/class_1058 net/minecraft/client/texture/Sprite
 		ARG 5 x
 		ARG 6 y
 		ARG 7 padding
+	METHOD method_1_2375 getTransparency ()Lnet/minecraft/class_1_303;
 	METHOD method_4570 getFrameV (F)F
 		ARG 1 frame
 	METHOD method_4575 getMaxV ()F

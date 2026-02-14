@@ -189,6 +189,10 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_1_368 addLowDiskSpaceWarning ()V
 	METHOD method_1_2117 isOtherPlayer (Ljava/util/UUID;)Z
 		ARG 1 sender
+	METHOD method_1_2118 printCrashReport (Lnet/minecraft/class_310;Ljava/io/File;Lnet/minecraft/class_128;)I
+		ARG 0 client
+		ARG 1 runDirectory
+		ARG 2 crashReport
 	METHOD method_1478 getResourceManager ()Lnet/minecraft/class_3300;
 	METHOD method_1479 getResourcePackDir ()Ljava/nio/file/Path;
 	METHOD method_1480 getItemRenderer ()Lnet/minecraft/class_918;
@@ -252,7 +256,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_1560 getCameraEntity ()Lnet/minecraft/class_1297;
 	METHOD method_1561 getEntityRenderDispatcher ()Lnet/minecraft/class_898;
 	METHOD method_1562 getNetworkHandler ()Lnet/minecraft/class_634;
-	METHOD method_1565 printCrashReport (Lnet/minecraft/class_310;Ljava/io/File;Lnet/minecraft/class_128;)V
+	METHOD method_1565 printCrashReportAndExit (Lnet/minecraft/class_310;Ljava/io/File;Lnet/minecraft/class_128;)V
 		ARG 0 client
 		ARG 1 runDirectory
 		ARG 2 crashReport
@@ -342,6 +346,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 1 session
 		ARG 2 dataPackManager
 		ARG 3 saveLoader
+		ARG 4 gameRules
 		ARG 5 newWorld
 	METHOD method_29611 usesImprovedTransparency ()Z
 	METHOD method_29970 setScreenAndRender (Lnet/minecraft/class_437;)V
@@ -478,7 +483,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_60320 (Lnet/minecraft/class_1078;)V
 		ARG 1 translationStorage
 	METHOD method_60647 shouldTick ()Z
-	METHOD method_61962 saveCrashReport (Ljava/io/File;Lnet/minecraft/class_128;)I
+	METHOD method_61962 printCrashReport (Ljava/io/File;Lnet/minecraft/class_128;)I
 		ARG 0 runDir
 		ARG 1 crashReport
 	METHOD method_61963 getMapTextureManager ()Lnet/minecraft/class_10093;

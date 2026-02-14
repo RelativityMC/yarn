@@ -3,6 +3,7 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	FIELD field_1_118 lightmapRenderState Lnet/minecraft/class_1_50;
 	FIELD field_1_119 uiLightmapTexture Lnet/minecraft/class_1_14;
 	FIELD field_1_120 renderingUi Z
+	FIELD field_1_1813 hudProjection Lnet/minecraft/class_11279;
 	FIELD field_3993 LOGGER Lorg/slf4j/Logger;
 	FIELD field_3994 random Lnet/minecraft/class_5819;
 	FIELD field_3997 lastSkyDarkness F

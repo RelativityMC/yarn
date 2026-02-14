@@ -12,8 +12,10 @@ CLASS net/minecraft/class_10444 net/minecraft/client/render/item/ItemRenderState
 		ARG 1 random
 	METHOD method_65604 render (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;III)V
 		ARG 1 matrices
+		ARG 2 queue
 		ARG 3 light
 		ARG 4 overlay
+		ARG 5 outlineColor
 	METHOD method_65605 clear ()V
 	METHOD method_65606 isEmpty ()Z
 	METHOD method_65608 isSideLit ()Z
@@ -30,6 +32,7 @@ CLASS net/minecraft/class_10444 net/minecraft/client/render/item/ItemRenderState
 	METHOD method_72174 isOversizedInGui ()Z
 	CLASS class_10445 Glint
 	CLASS class_10446 LayerRenderState
+		FIELD field_1_1954 texture Lnet/minecraft/class_1_314$class_1_315;
 		FIELD field_55348 glint Lnet/minecraft/class_10444$class_10445;
 		FIELD field_55349 tints [I
 		FIELD field_55350 specialModelType Lnet/minecraft/class_10515;
@@ -40,13 +43,17 @@ CLASS net/minecraft/class_10444 net/minecraft/client/render/item/ItemRenderState
 		FIELD field_56965 useLight Z
 		FIELD field_56967 transform Lnet/minecraft/class_804;
 		FIELD field_56968 vertices Ljava/util/function/Supplier;
+		METHOD method_1_2374 setTexture (Lnet/minecraft/class_1_314$class_1_315;)V
+			ARG 1 texture
 		METHOD method_65612 clear ()V
 		METHOD method_65613 initTints (I)[I
 			ARG 1 maxIndex
 		METHOD method_65614 render (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;III)V
 			ARG 1 matrices
+			ARG 2 queue
 			ARG 3 light
 			ARG 4 overlay
+			ARG 5 outlineColor
 		METHOD method_65615 setGlint (Lnet/minecraft/class_10444$class_10445;)V
 			ARG 1 glint
 		METHOD method_65616 eraseType (Lnet/minecraft/class_10515;)Lnet/minecraft/class_10515;

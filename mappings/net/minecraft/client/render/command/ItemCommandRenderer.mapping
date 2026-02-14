@@ -8,3 +8,5 @@ CLASS net/minecraft/class_11687 net/minecraft/client/render/command/ItemCommandR
 		ARG 1 queue
 		ARG 2 veertexConsumers
 		ARG 3 outlineVertexConsumers
+	METHOD method_1_2386 hasBlend (Lnet/minecraft/class_11661$class_11668;)Z
+		ARG 0 command

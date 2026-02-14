@@ -57,6 +57,8 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 3 tickProgress
 	METHOD method_1_2233 createSectionRenderState (Lorg/joml/Matrix4fc;)Lnet/minecraft/class_11532;
 		ARG 1 rotationMatrix
+	METHOD method_1_2234 prepareForRender (Lnet/minecraft/class_4184;)V
+		ARG 1 camera
 	METHOD method_3242 onResized (II)V
 		ARG 1 width
 		ARG 2 height
@@ -116,10 +118,12 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 1 allocator
 		ARG 2 tickCounter
 		ARG 3 renderBlockOutline
+		ARG 4 cameraRenderState
 		ARG 5 positionMatrix
 		ARG 6 fogBuffer
 		ARG 7 fogColor
 		ARG 8 renderSky
+		ARG 9 sectionRenderState
 	METHOD method_22712 drawBlockOutline (Lnet/minecraft/class_4587;Lnet/minecraft/class_4588;DDDLnet/minecraft/class_12074;IF)V
 		ARG 1 matrices
 		ARG 2 vertexConsumer
@@ -168,6 +172,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 4 matrix
 	METHOD method_62200 renderSky (Lnet/minecraft/class_9909;Lnet/minecraft/class_12075;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
 		ARG 1 frameGraphBuilder
+		ARG 2 cameraRenderState
 		ARG 3 fogBuffer
 	METHOD method_62202 renderMain (Lnet/minecraft/class_9909;Lnet/minecraft/class_4604;Lorg/joml/Matrix4f;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;ZLnet/minecraft/class_11658;Lnet/minecraft/class_9779;Lnet/minecraft/class_3695;Lnet/minecraft/class_11532;)V
 		ARG 1 frameGraphBuilder

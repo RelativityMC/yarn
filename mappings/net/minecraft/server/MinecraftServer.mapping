@@ -17,6 +17,7 @@ CLASS net/minecraft/server/MinecraftServer
 	COMMENT @see net.minecraft.server.integrated.IntegratedServer
 	FIELD field_1_962 clocks Lnet/minecraft/class_1_109;
 	FIELD field_1_1399 SAFE_MODE_GAME_RULES Ljava/util/function/Supplier;
+	FIELD field_1_1400 OLD_DIMENSION_DIR_NAMES Ljava/util/Map;
 	FIELD field_1_1401 gameRules Lnet/minecraft/class_1928;
 	FIELD field_1_1402 randomSequencesState Lnet/minecraft/class_8565;
 	FIELD field_1_1403 persistentStateManager Lnet/minecraft/class_26;
@@ -109,8 +110,12 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 2 session
 		ARG 3 dataPackManager
 		ARG 4 saveLoader
+		ARG 5 gameRules
+		ARG 6 proxy
+		ARG 7 dataFixer
 		ARG 8 apiServices
 		ARG 9 chunkLoadProgress
+		ARG 10 throwOnCrashReport
 	METHOD method_1_402 checkLowDiskSpaceWarning ()V
 	METHOD method_1_847 getClocks ()Lnet/minecraft/class_1_109;
 	METHOD method_1_848 getOverworldGameRules ()Lnet/minecraft/class_1928;
@@ -122,6 +127,8 @@ CLASS net/minecraft/server/MinecraftServer
 	METHOD method_1_1669 getScheduledEvents ()Lnet/minecraft/class_236;
 	METHOD method_1_1670 getWeatherState ()Lnet/minecraft/class_1_216;
 	METHOD method_1_1671 getWorldGenSettings ()Lnet/minecraft/class_7726;
+	METHOD method_1_1672 (Lnet/minecraft/class_1928;)V
+		ARG 1 gameRules
 	METHOD method_1_1674 setWeatherState (IIZZ)V
 		ARG 1 clearWeatherTime
 		ARG 2 rainTime
@@ -172,7 +179,7 @@ CLASS net/minecraft/server/MinecraftServer
 	METHOD method_3740 getCommandFunctionManager ()Lnet/minecraft/class_2991;
 	METHOD method_3742 addServerGuiTickable (Ljava/lang/Runnable;)V
 		ARG 1 tickable
-	METHOD method_3744 setCrashReport (Lnet/minecraft/class_128;)V
+	METHOD method_3744 handleCrashReport (Lnet/minecraft/class_128;)V
 		ARG 1 report
 	METHOD method_3747 stop (Z)V
 		COMMENT Stops this server.
@@ -501,6 +508,7 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 1 gameRule
 		ARG 2 value
 	METHOD method_74059 changeGameModeGlobally (Lnet/minecraft/class_1934;)I
+		ARG 1 gameMode
 	METHOD method_74060 getAutosave ()Z
 	METHOD method_74061 setAutosave (Z)Z
 		ARG 1 autosave

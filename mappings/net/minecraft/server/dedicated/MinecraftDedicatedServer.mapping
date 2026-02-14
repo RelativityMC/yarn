@@ -18,6 +18,7 @@ CLASS net/minecraft/class_3176 net/minecraft/server/dedicated/MinecraftDedicated
 		ARG 2 session
 		ARG 3 dataPackManager
 		ARG 4 saveLoader
+		ARG 5 gameRules
 		ARG 6 propertiesLoader
 		ARG 7 dataFixer
 		ARG 8 apiServices

@@ -29,6 +29,7 @@ CLASS net/minecraft/class_1_296 net/minecraft/client/render/UberBuffer
 	METHOD method_1_2177 dispose (Ljava/lang/Object;)V
 		ARG 1 data
 	METHOD method_1_2178 upload (Lcom/mojang/blaze3d/systems/GpuDevice;Lcom/mojang/blaze3d/systems/CommandEncoder;)Z
+		COMMENT {@return whether any heaps were created or destroyed}
 		ARG 1 device
 		ARG 2 encoder
 	CLASS class_1_297 StagedAllocation

@@ -36,6 +36,7 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 	METHOD method_22752 setWorld (Lnet/minecraft/class_638;)V
 		ARG 1 world
 	METHOD method_22756 send (Lnet/minecraft/class_846$class_851$class_4577;)V
+		ARG 1 task
 	METHOD method_22763 scheduleRunTasks ()V
 	METHOD method_34847 getFreeBufferCount ()I
 	METHOD method_72045 cancelAllTasks ()V
@@ -59,14 +60,14 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 		METHOD <init> (Lnet/minecraft/class_846;IJ)V
 			ARG 2 index
 			ARG 3 sectionPos
-		METHOD method_1_2406 (Lnet/minecraft/class_11515;Lnet/minecraft/class_11516;Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)Z
+		METHOD method_1_2406 stageChunkGeometry (Lnet/minecraft/class_11515;Lnet/minecraft/class_11516;Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)Z
 			ARG 1 blockRenderLayer
 			ARG 2 chunkRenderData
 			ARG 3 vertex
 			ARG 4 index
-		METHOD method_1_2407 (Lnet/minecraft/class_11516;)V
+		METHOD method_1_2407 disposeIfAllBuffersUploaded (Lnet/minecraft/class_11516;)V
 			ARG 1 data
-		METHOD method_1_2408 (Lnet/minecraft/class_11517;Lnet/minecraft/class_11515;Z)V
+		METHOD method_1_2408 onIndexBufferUploaded (Lnet/minecraft/class_11517;Lnet/minecraft/class_11515;Z)V
 			ARG 1 data
 			ARG 2 blockRenderLayer
 			ARG 3 noVertex
@@ -76,7 +77,7 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 			ARG 3 data
 		METHOD method_1_2411 dispose (Lnet/minecraft/class_11517;)V
 			ARG 1 data
-		METHOD method_1_2412 (Lnet/minecraft/class_11517;Lnet/minecraft/class_11515;)V
+		METHOD method_1_2412 onVertexBufferUploaded (Lnet/minecraft/class_11517;Lnet/minecraft/class_11515;)V
 			ARG 1 data
 			ARG 2 blockRenderLayer
 		METHOD method_3651 isChunkNonEmpty (J)Z

@@ -2,16 +2,13 @@ CLASS net/minecraft/class_7529 net/minecraft/client/gui/widget/EditBoxWidget
 	COMMENT A widget of {@link EditBox}, a multiline edit box with support for
 	COMMENT basic keyboard shortcuts. This class implements the rendering and scrolling
 	COMMENT for the edit box.
-	FIELD field_39502 CURSOR_PADDING I
 	FIELD field_39503 CURSOR_COLOR I
-	FIELD field_39504 UNDERSCORE Ljava/lang/String;
 	FIELD field_39506 UNFOCUSED_BOX_TEXT_COLOR I
 	FIELD field_39507 textRenderer Lnet/minecraft/class_327;
 	FIELD field_39508 placeholder Lnet/minecraft/class_2561;
 		COMMENT The placeholder text that gets rendered when the edit box is empty. This does not
 		COMMENT get returned from {@link #getText}; an empty string will be returned in such cases.
 	FIELD field_39509 editBox Lnet/minecraft/class_7530;
-	FIELD field_45363 CURSOR_BLINK_INTERVAL I
 	FIELD field_45364 lastSwitchFocusTime J
 	FIELD field_60439 textColor I
 	FIELD field_60440 textShadow Z

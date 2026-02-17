@@ -1,7 +1,5 @@
 CLASS net/minecraft/class_3675 net/minecraft/client/util/InputUtil
 	FIELD field_16237 UNKNOWN_KEY Lnet/minecraft/class_3675$class_306;
-	FIELD field_20333 GLFW_RAW_MOUSE_MOTION_SUPPORTED_HANDLE Ljava/lang/invoke/MethodHandle;
-	FIELD field_20334 GLFW_RAW_MOUSE_MOTION I
 	FIELD field_31906 GLFW_KEY_Q I
 	FIELD field_31907 GLFW_KEY_R I
 	FIELD field_31908 GLFW_KEY_S I
@@ -147,10 +145,9 @@ CLASS net/minecraft/class_3675 net/minecraft/client/util/InputUtil
 		ARG 4 y
 	METHOD method_15985 fromKeyCode (Lnet/minecraft/class_11908;)Lnet/minecraft/class_3675$class_306;
 		ARG 0 key
-	METHOD method_15986 setKeyboardCallbacks (Lnet/minecraft/class_1041;Lorg/lwjgl/glfw/GLFWKeyCallbackI;Lorg/lwjgl/glfw/GLFWCharModsCallbackI;)V
+	METHOD method_15986 setKeyboardCallbacks (Lnet/minecraft/class_1041;Lorg/lwjgl/glfw/GLFWKeyCallbackI;Lorg/lwjgl/glfw/GLFWCharCallbackI;Lorg/lwjgl/glfw/GLFWPreeditCallbackI;)V
 		ARG 0 window
 		ARG 1 keyCallback
-		ARG 2 charModsCallback
 	METHOD method_15987 isKeyPressed (Lnet/minecraft/class_1041;I)Z
 		ARG 0 window
 		ARG 1 code

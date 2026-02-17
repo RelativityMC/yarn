@@ -4,8 +4,6 @@ CLASS net/minecraft/class_5699 net/minecraft/util/dynamic/Codecs
 	COMMENT <p>It has a few methods to create checkers for {@code Codec.flatXmap} to add
 	COMMENT extra value validation to encoding and decoding. See the implementation of
 	COMMENT {@link #nonEmptyList(Codec)}.
-	FIELD field_1_1716 PATH Lcom/mojang/serialization/Codec;
-	FIELD field_1_1717 RELATIVE_PATH Lcom/mojang/serialization/Codec;
 	FIELD field_33441 NON_NEGATIVE_INT Lcom/mojang/serialization/Codec;
 	FIELD field_33442 POSITIVE_INT Lcom/mojang/serialization/Codec;
 	FIELD field_34387 POSITIVE_FLOAT Lcom/mojang/serialization/Codec;
@@ -56,12 +54,6 @@ CLASS net/minecraft/class_5699 net/minecraft/util/dynamic/Codecs
 	FIELD field_64619 MAX_PROFILE_PROPERTY_SIGNATURE_LENGTH I
 	FIELD field_64620 MAX_PROFILE_PROPERTIES_LENGTH I
 	METHOD method_1_2120 relativePathTo (Ljava/nio/file/Path;)Lcom/mojang/serialization/Codec;
-		ARG 0 path
-	METHOD method_1_2121 (Ljava/lang/String;)Ljava/nio/file/Path;
-		ARG 0 str
-	METHOD method_1_2122 (Ljava/nio/file/Path;)Ljava/lang/String;
-		ARG 0 path
-	METHOD method_1_2123 (Ljava/nio/file/Path;)Lcom/mojang/serialization/DataResult;
 		ARG 0 path
 	METHOD method_36241 rangedInt (IILjava/util/function/Function;)Lcom/mojang/serialization/Codec;
 		ARG 0 min

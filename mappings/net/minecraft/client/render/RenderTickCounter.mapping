@@ -26,9 +26,6 @@ CLASS net/minecraft/class_9779 net/minecraft/client/render/RenderTickCounter
 			ARG 4 targetMillisPerTick
 		METHOD method_60639 beginRenderTick (J)I
 			ARG 1 timeMillis
-		METHOD method_60640 beginRenderTick (JZ)I
-			ARG 1 timeMillis
-			ARG 3 tick
 		METHOD method_60641 setTimeMillis (J)V
 			ARG 1 timeMillis
 		METHOD method_60642 tick (Z)V

@@ -14,3 +14,4 @@ CLASS net/minecraft/class_11890 net/minecraft/entity/PlayerLikeEntity
 		ARG 1 arm
 	METHOD method_74091 isModelPartVisible (Lnet/minecraft/class_1664;)Z
 		ARG 1 part
+	METHOD method_74104 getMannequinProfile ()Lnet/minecraft/class_9296;

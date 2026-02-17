@@ -13,8 +13,6 @@ CLASS net/minecraft/class_32 net/minecraft/world/level/storage/LevelStorage
 		ARG 2 backupsDirectory
 		ARG 3 symlinkFinder
 		ARG 4 dataFixer
-	METHOD method_1_1883 (Ljava/lang/String;)Lnet/minecraft/class_33;
-		ARG 0 message
 	METHOD method_1_1884 readPersistentState (Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_10741;)Lcom/mojang/serialization/DataResult;
 		ARG 0 session
 		ARG 1 registries

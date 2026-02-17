@@ -49,10 +49,9 @@ CLASS net/minecraft/class_309 net/minecraft/client/Keyboard
 		ARG 1 state
 		ARG 2 pos
 		ARG 3 nbt
-	METHOD method_22675 (JII)V
+	METHOD method_22675 (JI)V
 		ARG 1 window
 		ARG 3 codePoint
-		ARG 4 modifiers
 	METHOD method_22676 (JIIII)V
 		ARG 1 handle
 		ARG 3 key

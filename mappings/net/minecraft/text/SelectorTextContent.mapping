@@ -1,10 +1,10 @@
 CLASS net/minecraft/class_2579 net/minecraft/text/SelectorTextContent
-	FIELD comp_3080 selector Lnet/minecraft/class_10104;
+	FIELD comp_3080 selector Lnet/minecraft/class_1_356;
 	FIELD comp_3081 separator Ljava/util/Optional;
 	FIELD field_46629 CODEC Lcom/mojang/serialization/MapCodec;
-	METHOD <init> (Lnet/minecraft/class_10104;Ljava/util/Optional;)V
+	METHOD <init> (Lnet/minecraft/class_1_356;Ljava/util/Optional;)V
 		ARG 2 separator
-	METHOD comp_3080 selector ()Lnet/minecraft/class_10104;
+	METHOD comp_3080 selector ()Lnet/minecraft/class_1_356;
 	METHOD comp_3081 separator ()Ljava/util/Optional;
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o

@@ -90,14 +90,12 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 		COMMENT {@return the number of lines accepted by {@code lineConsumer}}
 		ARG 1 opacityRule
 		ARG 2 lineConsumer
-	METHOD method_73201 createScreen (Lnet/minecraft/class_338$class_11732;Lnet/minecraft/class_1_317;Lnet/minecraft/class_408$class_11738;)Lnet/minecraft/class_408;
+	METHOD method_73201 createScreen (Lnet/minecraft/class_338$class_11732;Lnet/minecraft/class_408$class_11738;)Lnet/minecraft/class_408;
 		ARG 1 method
-		ARG 2 restrictions
-		ARG 3 factory
-	METHOD method_73202 setClientScreen (Lnet/minecraft/class_338$class_11732;Lnet/minecraft/class_1_317;Lnet/minecraft/class_408$class_11738;)V
+		ARG 2 factory
+	METHOD method_73202 setClientScreen (Lnet/minecraft/class_338$class_11732;Lnet/minecraft/class_408$class_11738;)V
 		ARG 1 method
-		ARG 2 restrictions
-		ARG 3 factory
+		ARG 2 factory
 	METHOD method_73203 saveDraft (Ljava/lang/String;)V
 		ARG 1 text
 	METHOD method_73204 discardDraft ()V

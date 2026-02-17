@@ -91,7 +91,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	FIELD field_5960 noClip Z
 	FIELD field_5961 type Lnet/minecraft/class_1299;
 	FIELD field_5962 SILENT Lnet/minecraft/class_2940;
-	FIELD field_5964 fluidHeight Lit/unimi/dsi/fastutil/objects/Object2DoubleMap;
 	FIELD field_5965 pitch F
 	FIELD field_5969 lastZ D
 	FIELD field_5971 lastRenderY D
@@ -161,7 +160,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		COMMENT {@link FallingBlockEntity}, and {@link LivingEntity}.
 		COMMENT Intersection with {@link net.minecraft.entity.decoration.ArmorStandEntity} is checked if
 		COMMENT it is not a {@link net.minecraft.entity.decoration.ArmorStandEntity#isMarker marker}.
-	FIELD field_25599 submergedFluidTag Ljava/util/Set;
 	FIELD field_26994 lastChimeAge I
 	FIELD field_26995 removalReason Lnet/minecraft/class_1297$class_5529;
 	FIELD field_26996 changeListener Lnet/minecraft/class_5569;
@@ -283,7 +281,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 1 passenger
 	METHOD method_5629 doesNotCollide (Lnet/minecraft/class_238;)Z
 		ARG 1 box
-	METHOD method_5630 updateSubmergedInWaterState ()V
 	METHOD method_5631 getRotationVector (FF)Lnet/minecraft/class_243;
 		ARG 1 pitch
 		ARG 2 yaw
@@ -492,9 +489,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 2 hand
 			COMMENT the hand the player used to interact with this entity
 		ARG 3 hitPos
-	METHOD method_5692 updateMovementInFluid (Lnet/minecraft/class_6862;D)Z
-		ARG 1 tag
-		ARG 2 speed
 	METHOD method_5693 initDataTracker (Lnet/minecraft/class_2945$class_9222;)V
 		COMMENT Initializes data tracker.
 		COMMENT
@@ -601,7 +595,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_5712 playStepSound (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
 		ARG 1 pos
 		ARG 2 state
-	METHOD method_5713 checkWaterState ()V
 	METHOD method_5715 isSneaking ()Z
 		COMMENT {@return whether the entity is sneaking}
 		COMMENT
@@ -2334,6 +2327,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_73187 isInteractable ()Z
 	METHOD method_74016 isPartlyTouchingWater ()Z
 		COMMENT {@return whether this entity's hitbox is touching, but not fully submerged in, water}
+	METHOD method_74193 getMannequinName ()Lnet/minecraft/class_2561;
 	METHOD method_74656 findCollisions (Lnet/minecraft/class_1297;Lnet/minecraft/class_1937;Lnet/minecraft/class_238;)Ljava/util/List;
 		ARG 0 entity
 		ARG 1 world

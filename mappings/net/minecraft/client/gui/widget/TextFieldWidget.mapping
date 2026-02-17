@@ -14,7 +14,6 @@ CLASS net/minecraft/class_342 net/minecraft/client/gui/widget/TextFieldWidget
 	FIELD field_2106 suggestion Ljava/lang/String;
 	FIELD field_2108 maxLength I
 	FIELD field_32196 DEFAULT_EDITABLE_COLOR I
-	FIELD field_32199 HORIZONTAL_CURSOR Ljava/lang/String;
 	FIELD field_41100 placeholder Lnet/minecraft/class_2561;
 	FIELD field_45352 lastSwitchFocusTime J
 	FIELD field_45914 TEXTURES Lnet/minecraft/class_8666;

@@ -26,9 +26,6 @@ CLASS net/minecraft/class_1140 net/minecraft/client/sound/SoundSystem
 	FIELD field_33024 MAX_VOLUME F
 	FIELD field_34827 OPENAL_SOFT_ON Ljava/lang/String;
 	FIELD field_34828 OPENAL_SOFT_ON_LENGTH I
-	FIELD field_34966 MIN_TIME_INTERVAL_TO_RELOAD_SOUNDS J
-	FIELD field_34967 lastSoundDeviceCheckTime J
-	FIELD field_35083 deviceChangeStatus Ljava/util/concurrent/atomic/AtomicReference;
 	FIELD field_64473 volumes Lit/unimi/dsi/fastutil/objects/Object2FloatMap;
 	METHOD <init> (Lnet/minecraft/class_1144;Lnet/minecraft/class_315;Lnet/minecraft/class_5912;)V
 		ARG 1 soundManager
@@ -111,5 +108,4 @@ CLASS net/minecraft/class_1140 net/minecraft/client/sound/SoundSystem
 		ARG 3 manager
 	METHOD method_76568 (Lit/unimi/dsi/fastutil/objects/Object2FloatOpenHashMap;)V
 		ARG 0 map
-	CLASS class_6665 DeviceChangeStatus
 	CLASS class_11518 PlayResult

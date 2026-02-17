@@ -11,8 +11,8 @@ CLASS net/minecraft/class_1_350 net/minecraft/client/gui/screen/RestrictionsScre
 		ARG 0 restrictions
 		ARG 1 permission
 		ARG 2 name
-	METHOD method_1_2434 (Lnet/minecraft/class_8667;ILnet/minecraft/class_5859;)V
-		ARG 3 restriction
+	METHOD method_1_2434 (Lnet/minecraft/class_8667;Lnet/minecraft/class_5859;)V
+		ARG 2 restriction
 	METHOD method_1_2435 (Lnet/minecraft/class_8667;Lnet/minecraft/class_5859$class_1_321;)V
 		ARG 2 action
 	METHOD method_1_2436 (Lnet/minecraft/class_5859$class_1_321;Lnet/minecraft/class_4185;)V

@@ -8,7 +8,7 @@ CLASS net/minecraft/class_5556 net/minecraft/block/LeveledCauldronBlock
 	FIELD field_46383 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_46384 precipitation Lnet/minecraft/class_1959$class_1963;
 	FIELD field_60561 INSIDE_COLLISION_SHAPE_BY_LEVEL [Lnet/minecraft/class_265;
-	METHOD <init> (Lnet/minecraft/class_1959$class_1963;Lnet/minecraft/class_5620$class_8821;Lnet/minecraft/class_4970$class_2251;)V
+	METHOD <init> (Lnet/minecraft/class_1959$class_1963;Lnet/minecraft/class_1_368$class_1_369;Lnet/minecraft/class_4970$class_2251;)V
 		COMMENT Constructs a leveled cauldron block.
 		ARG 1 precipitation
 		ARG 2 behaviorMap
@@ -23,7 +23,7 @@ CLASS net/minecraft/class_5556 net/minecraft/block/LeveledCauldronBlock
 		ARG 3 pos
 	METHOD method_54024 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
-	METHOD method_54025 (Lnet/minecraft/class_5556;)Lnet/minecraft/class_5620$class_8821;
+	METHOD method_54025 (Lnet/minecraft/class_5556;)Lnet/minecraft/class_1_368$class_1_369;
 		ARG 0 block
 	METHOD method_54026 (Lnet/minecraft/class_5556;)Lnet/minecraft/class_1959$class_1963;
 		ARG 0 block

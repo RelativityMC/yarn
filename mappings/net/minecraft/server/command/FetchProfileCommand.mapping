@@ -4,10 +4,6 @@ CLASS net/minecraft/class_11753 net/minecraft/server/command/FetchProfileCommand
 	METHOD method_73263 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_73264 sendResult (Lnet/minecraft/class_2168;Lcom/mojang/authlib/GameProfile;Ljava/lang/String;Lnet/minecraft/class_2561;)V
-		ARG 0 source
-		ARG 1 profile
-		ARG 2 successText
-		ARG 3 inputText
 	METHOD method_73266 executeName (Lnet/minecraft/class_2168;Ljava/lang/String;)I
 		ARG 0 source
 		ARG 1 name

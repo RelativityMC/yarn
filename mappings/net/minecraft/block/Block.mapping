@@ -308,7 +308,7 @@ CLASS net/minecraft/class_2248 net/minecraft/block/Block
 		ARG 3 state
 		ARG 4 entity
 	METHOD method_9595 getStateManager ()Lnet/minecraft/class_2689;
-	METHOD method_9596 (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;Lnet/minecraft/class_1799;)V
+	METHOD method_9596 (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_1799;)V
 		ARG 2 stack
 	METHOD method_9605 getPlacementState (Lnet/minecraft/class_1750;)Lnet/minecraft/class_2680;
 		ARG 1 ctx

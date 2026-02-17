@@ -183,9 +183,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_64524 gizmos Ljava/util/List;
 	METHOD <init> (Lnet/minecraft/class_542;)V
 		ARG 1 args
-	METHOD method_1_367 render (ZZ)V
-		ARG 1 updateGlTimer
-		ARG 2 tick
+	METHOD method_1_367 render (Z)V
 	METHOD method_1_368 addLowDiskSpaceWarning ()V
 	METHOD method_1_2117 isOtherPlayer (Ljava/util/UUID;)Z
 		ARG 1 sender

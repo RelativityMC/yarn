@@ -45,15 +45,10 @@ CLASS net/minecraft/class_4791 net/minecraft/client/render/entity/model/HoglinEn
 	FIELD field_22227 head Lnet/minecraft/class_630;
 	FIELD field_22228 rightEar Lnet/minecraft/class_630;
 	FIELD field_22229 leftEar Lnet/minecraft/class_630;
-	FIELD field_22230 body Lnet/minecraft/class_630;
-	FIELD field_25484 mane Lnet/minecraft/class_630;
 	FIELD field_27421 rightFrontLeg Lnet/minecraft/class_630;
 	FIELD field_27422 leftFrontLeg Lnet/minecraft/class_630;
 	FIELD field_27423 rightHindLeg Lnet/minecraft/class_630;
 	FIELD field_27424 leftHindLeg Lnet/minecraft/class_630;
 	FIELD field_32484 HEAD_PITCH_START F
 	FIELD field_32485 HEAD_PITCH_END F
-	FIELD field_52916 BABY_TRANSFORMER Lnet/minecraft/class_9953;
 	METHOD method_32009 getTexturedModelData ()Lnet/minecraft/class_5607;
-	METHOD method_62091 getBabyTexturedModelData ()Lnet/minecraft/class_5607;
-	METHOD method_62092 getModelData ()Lnet/minecraft/class_5609;

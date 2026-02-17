@@ -34,7 +34,6 @@ CLASS net/minecraft/class_11891 net/minecraft/entity/decoration/MannequinEntity
 		ARG 0 bitFlag
 	METHOD method_74103 (Ljava/util/List;)Ljava/lang/Byte;
 		ARG 0 parts
-	METHOD method_74104 getMannequinProfile ()Lnet/minecraft/class_9296;
 	METHOD method_74669 create (Lnet/minecraft/class_1299;Lnet/minecraft/class_1937;)Lnet/minecraft/class_11891;
 		ARG 0 type
 		ARG 1 world

@@ -7,7 +7,6 @@ CLASS net/minecraft/class_408 net/minecraft/client/gui/screen/ChatScreen
 	COMMENT @see net.minecraft.client.gui.hud.ChatHud
 	FIELD field_1_1817 RESTRICTED_NARRATION Lnet/minecraft/class_2561;
 	FIELD field_1_1818 SUGGESTION_COLOR I
-	FIELD field_1_1819 restrictions Lnet/minecraft/class_1_317;
 	FIELD field_1_1820 closeOnSend Z
 	FIELD field_1_1821 mode Lnet/minecraft/class_338$class_1_313;
 	FIELD field_2382 chatField Lnet/minecraft/class_342;
@@ -19,15 +18,13 @@ CLASS net/minecraft/class_408 net/minecraft/client/gui/screen/ChatScreen
 	FIELD field_33953 USAGE_TEXT Lnet/minecraft/class_2561;
 	FIELD field_62013 draft Z
 	FIELD field_62014 closeReason Lnet/minecraft/class_408$class_11739;
-	METHOD <init> (Ljava/lang/String;ZLnet/minecraft/class_1_317;)V
+	METHOD <init> (Ljava/lang/String;Z)V
 		ARG 1 text
 		ARG 2 draft
-		ARG 3 restrictions
-	METHOD <init> (Ljava/lang/String;ZLnet/minecraft/class_1_317;Z)V
+	METHOD <init> (Ljava/lang/String;ZZ)V
 		ARG 1 text
 		ARG 2 draft
-		ARG 3 restrictions
-		ARG 4 closeOnSend
+		ARG 3 closeOnSend
 	METHOD method_2114 setChatFromHistory (I)V
 		ARG 1 offset
 	METHOD method_23945 onChatFieldUpdate (Ljava/lang/String;)V
@@ -47,8 +44,5 @@ CLASS net/minecraft/class_408 net/minecraft/client/gui/screen/ChatScreen
 		ARG 2 insert
 	METHOD method_76757 shouldInsert ()Z
 	CLASS class_11738 Factory
-		METHOD method_1_113 create (Ljava/lang/String;ZLnet/minecraft/class_1_317;)Lnet/minecraft/class_408;
-			ARG 1 message
-			ARG 2 draft
-			ARG 3 restrictions
+		METHOD method_1_113 create (Ljava/lang/String;Z)Lnet/minecraft/class_408;
 	CLASS class_11739 CloseReason

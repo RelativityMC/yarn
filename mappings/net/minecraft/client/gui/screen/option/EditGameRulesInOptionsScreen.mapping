@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_1_129 net/minecraft/client/gui/screen/option/EditGameRulesInOptionsScreen
 	FIELD field_1_1061 DOWNLOADING_GAME_RULES Lnet/minecraft/class_2561;
 	FIELD field_1_1062 clientPlayNetworkHandler Lnet/minecraft/class_634;
-	FIELD field_1_1063 settings Ljava/util/Map;
+	FIELD field_1_1063 settings Lnet/minecraft/class_12280;
 	FIELD field_1_1064 loadingWidget Lnet/minecraft/class_8661;
 	FIELD field_1_1065 downloadedGameRules Z
 	FIELD field_1_1066 knownRules Ljava/util/List;
@@ -10,17 +10,10 @@ CLASS net/minecraft/class_1_129 net/minecraft/client/gui/screen/option/EditGameR
 		ARG 1 clientPlayNetworkHandler
 		ARG 2 ruleSaveConsumer
 		ARG 3 previous
-	METHOD method_1_1130 addPacketEntry (Lnet/minecraft/class_12279;Ljava/lang/Object;Ljava/util/List;)V
+	METHOD method_1_1130 addPacketEntry (Lnet/minecraft/class_12279;Ljava/util/List;)V
 		ARG 1 rule
-		ARG 2 value
-		ARG 3 entriesOut
-	METHOD method_1_1131 castAndAddPacketEntry (Lnet/minecraft/class_12279;Ljava/lang/Object;Ljava/util/List;)V
-		ARG 1 rule
-		ARG 2 value
-		ARG 3 entriesOut
-	METHOD method_1_1132 isModified (Lnet/minecraft/class_12279;Ljava/lang/Object;)Z
-		ARG 1 rule
-		ARG 2 value
+		ARG 2 entriesOut
+	METHOD method_1_1132 isModified (Lnet/minecraft/class_12279;)Z
 	METHOD method_1_1133 hasUnsavedChanges ()Z
 	METHOD method_1_1134 setRuleValue (Lnet/minecraft/class_12279;Ljava/lang/String;)V
 		ARG 1 gameRule
@@ -31,9 +24,8 @@ CLASS net/minecraft/class_1_129 net/minecraft/client/gui/screen/option/EditGameR
 		ARG 2 value
 	METHOD method_1_1137 (Z)V
 		ARG 1 confirmed
-	METHOD method_1_1138 (Ljava/util/List;Lnet/minecraft/class_12279;Ljava/lang/Object;)V
+	METHOD method_1_1138 (Ljava/util/List;Lnet/minecraft/class_12279;)V
 		ARG 2 rule
-		ARG 3 value
 	METHOD method_1_1139 (Lnet/minecraft/class_5321;Ljava/lang/String;)V
 		ARG 1 key
 		ARG 2 value

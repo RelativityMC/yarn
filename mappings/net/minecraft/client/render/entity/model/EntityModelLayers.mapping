@@ -24,7 +24,6 @@ CLASS net/minecraft/class_5602 net/minecraft/client/render/entity/model/EntityMo
 	FIELD field_52980 PLAYER_CAPE Lnet/minecraft/class_5601;
 	FIELD field_52984 LLAMA_BABY_DECOR Lnet/minecraft/class_5601;
 	FIELD field_52996 SHEEP_BABY_WOOL Lnet/minecraft/class_5601;
-	FIELD field_55120 STRIDER_BABY_SADDLE Lnet/minecraft/class_5601;
 	FIELD field_55122 STANDING_BANNER_FLAG Lnet/minecraft/class_5601;
 	FIELD field_55124 WALL_BANNER_FLAG Lnet/minecraft/class_5601;
 	FIELD field_56079 CAMEL_SADDLE Lnet/minecraft/class_5601;

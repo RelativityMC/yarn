@@ -619,7 +619,7 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 3 width
 		ARG 4 height
 		ARG 5 color
-	METHOD method_73199 drawDeferredElements ()V
+	METHOD method_73199 drawDeferredElements (IIF)V
 	METHOD method_74036 applyCursorTo (Lnet/minecraft/class_1041;)V
 		ARG 1 window
 	METHOD method_74037 setCursor (Lnet/minecraft/class_11875;)V

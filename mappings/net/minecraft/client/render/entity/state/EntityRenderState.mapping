@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_10017 net/minecraft/client/render/entity/state/EntityRenderState
+	FIELD field_1_2127 mannequinName Lnet/minecraft/class_2561;
 	FIELD field_53325 x D
 	FIELD field_53326 y D
 	FIELD field_53327 z D

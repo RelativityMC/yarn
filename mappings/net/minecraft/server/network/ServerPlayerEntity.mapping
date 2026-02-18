@@ -73,6 +73,9 @@ CLASS net/minecraft/class_3222 net/minecraft/server/network/ServerPlayerEntity
 		ARG 2 world
 		ARG 3 profile
 		ARG 4 clientOptions
+	METHOD method_1_2489 sendBuildLimitMessage (ZI)V
+		ARG 1 tooHigh
+		ARG 2 limit
 	METHOD method_7336 changeGameMode (Lnet/minecraft/class_1934;)Z
 		ARG 1 gameMode
 	METHOD method_14203 copyFrom (Lnet/minecraft/class_3222;Z)V

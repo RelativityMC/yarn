@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_7743 net/minecraft/client/gui/screen/ingame/AbstractSignEditScreen
+	FIELD field_1_2129 lastSwitchFocusTime J
+	FIELD field_1_2130 cursorPos Lorg/joml/Vector2f;
+	FIELD field_1_2131 preEditWidget Lnet/minecraft/class_1_374;
 	FIELD field_40424 blockEntity Lnet/minecraft/class_2625;
 	FIELD field_40425 messages [Ljava/lang/String;
 	FIELD field_40426 signType Lnet/minecraft/class_4719;
@@ -16,6 +19,8 @@ CLASS net/minecraft/class_7743 net/minecraft/client/gui/screen/ingame/AbstractSi
 		ARG 3 filtered
 		ARG 4 title
 	METHOD method_45655 renderSignText (Lnet/minecraft/class_332;Lorg/joml/Vector2f;)V
+		ARG 1 context
+		ARG 2 cursorPosOut
 	METHOD method_45656 renderSignBackground (Lnet/minecraft/class_332;)V
 		ARG 1 context
 	METHOD method_45657 (Lnet/minecraft/class_4185;)V

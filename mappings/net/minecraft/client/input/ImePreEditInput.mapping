@@ -1,0 +1,18 @@
+CLASS net/minecraft/class_1_359 net/minecraft/client/input/ImePreEditInput
+	METHOD <init> (Ljava/lang/String;ILjava/util/List;I)V
+		ARG 1 fullText
+		ARG 2 caretPosition
+		ARG 3 blocks
+		ARG 4 focusedBlock
+	METHOD method_1_2486 fromNative (IJIJII)Lnet/minecraft/class_1_359;
+		ARG 0 preEditCount
+		ARG 1 preEditStringPtr
+		ARG 3 blockCount
+		ARG 4 blockSizesPtr
+		ARG 6 focusedBlock
+		ARG 7 caret
+	METHOD method_1_2487 readIntsFromMemory (IJ)[I
+		ARG 0 count
+		ARG 1 address
+	METHOD method_1_2488 toText (Lnet/minecraft/class_2583;)Lnet/minecraft/class_5250;
+		ARG 1 focusedStyle

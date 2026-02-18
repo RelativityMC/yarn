@@ -9,6 +9,17 @@ CLASS net/minecraft/class_309 net/minecraft/client/Keyboard
 	FIELD field_60432 LOGGER Lorg/slf4j/Logger;
 	METHOD <init> (Lnet/minecraft/class_310;)V
 		ARG 1 client
+	METHOD method_1_2480 (JIJIJII)V
+		ARG 1 window
+		ARG 3 preEditCount
+		ARG 4 preEditStringPtr
+		ARG 6 blockCount
+		ARG 7 blockSizesPtr
+		ARG 9 focusedBlock
+		ARG 10 caret
+	METHOD method_1_2482 onImePreEdit (JLnet/minecraft/class_1_359;)V
+		ARG 1 window
+		ARG 3 preEdit
 	METHOD method_1455 setClipboard (Ljava/lang/String;)V
 		ARG 1 clipboard
 	METHOD method_1456 debugError (Lnet/minecraft/class_2561;)V

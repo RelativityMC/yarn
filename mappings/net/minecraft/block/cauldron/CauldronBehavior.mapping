@@ -1,199 +1,27 @@
-CLASS net/minecraft/class_5620 net/minecraft/block/cauldron/CauldronBehavior
-	COMMENT Cauldron behaviors control what happens when a player interacts with
-	COMMENT cauldrons using a specific item.
-	COMMENT
-	COMMENT <p>To register new cauldron behaviors, you can add them to the corresponding
-	COMMENT maps based on the cauldron type.
-	COMMENT <div class="fabric"><table>
-	COMMENT <caption>Behavior maps by cauldron type</caption>
-	COMMENT <thead><tr>
-	COMMENT     <th>Type</th>
-	COMMENT     <th>Block</th>
-	COMMENT     <th>Behavior map</th>
-	COMMENT </tr></thead>
-	COMMENT <tbody>
-	COMMENT     <tr>
-	COMMENT         <td>Empty</td>
-	COMMENT         <td>{@link net.minecraft.block.Blocks#CAULDRON minecraft:cauldron}</td>
-	COMMENT         <td>{@link #EMPTY_CAULDRON_BEHAVIOR}</td>
-	COMMENT     </tr>
-	COMMENT     <tr>
-	COMMENT         <td>Water</td>
-	COMMENT         <td>{@link net.minecraft.block.Blocks#WATER_CAULDRON minecraft:water_cauldron}</td>
-	COMMENT         <td>{@link #WATER_CAULDRON_BEHAVIOR}</td>
-	COMMENT     </tr>
-	COMMENT     <tr>
-	COMMENT         <td>Lava</td>
-	COMMENT         <td>{@link net.minecraft.block.Blocks#LAVA_CAULDRON minecraft:lava_cauldron}</td>
-	COMMENT         <td>{@link #LAVA_CAULDRON_BEHAVIOR}</td>
-	COMMENT     </tr>
-	COMMENT     <tr>
-	COMMENT         <td>Powder snow</td>
-	COMMENT         <td>{@link net.minecraft.block.Blocks#POWDER_SNOW_CAULDRON minecraft:powder_snow_cauldron}</td>
-	COMMENT         <td>{@link #POWDER_SNOW_CAULDRON_BEHAVIOR}</td>
-	COMMENT     </tr>
-	COMMENT </tbody>
-	COMMENT </table></div>
-	FIELD field_27775 EMPTY_CAULDRON_BEHAVIOR Lnet/minecraft/class_1_368$class_1_369;
-		COMMENT The cauldron behaviors for empty cauldrons.
-		COMMENT
-		COMMENT @see #createMap
-	FIELD field_27776 WATER_CAULDRON_BEHAVIOR Lnet/minecraft/class_1_368$class_1_369;
-		COMMENT The cauldron behaviors for water cauldrons.
-		COMMENT
-		COMMENT @see #createMap
-	FIELD field_27777 LAVA_CAULDRON_BEHAVIOR Lnet/minecraft/class_1_368$class_1_369;
-		COMMENT The cauldron behaviors for lava cauldrons.
-		COMMENT
-		COMMENT @see #createMap
-	FIELD field_28011 POWDER_SNOW_CAULDRON_BEHAVIOR Lnet/minecraft/class_1_368$class_1_369;
-		COMMENT The cauldron behaviors for powder snow cauldrons.
-		COMMENT
-		COMMENT @see #createMap
-	FIELD field_46590 CODEC Lcom/mojang/serialization/Codec;
-	METHOD method_32206 createMap (Ljava/lang/String;)Lnet/minecraft/class_1_368$class_1_369;
-		COMMENT Creates a mutable map from {@linkplain Item items} to their
-		COMMENT corresponding cauldron behaviors.
-		COMMENT
-		COMMENT <p>The default return value in the map is a cauldron behavior
-		COMMENT that returns {@link ActionResult#PASS_TO_DEFAULT_BLOCK_ACTION} for all items.
-		COMMENT
-		COMMENT @return the created map
-		ARG 0 name
-	METHOD method_32207 fillCauldron (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;Lnet/minecraft/class_1799;Lnet/minecraft/class_2680;Lnet/minecraft/class_3414;)Lnet/minecraft/class_1269;
-		COMMENT Fills a cauldron from a bucket stack.
-		COMMENT
-		COMMENT <p>The filled bucket stack will be replaced by an empty bucket in the player's
-		COMMENT inventory.
-		COMMENT
-		COMMENT @return a {@linkplain ActionResult#isAccepted successful} action result
-		ARG 0 world
-			COMMENT the world where the cauldron is located
-		ARG 1 pos
-			COMMENT the cauldron's position
-		ARG 2 player
-			COMMENT the interacting player
-		ARG 3 hand
-			COMMENT the hand interacting with the cauldron
-		ARG 4 stack
-			COMMENT the filled bucket stack in the player's hand
-		ARG 5 state
-			COMMENT the filled cauldron state
-		ARG 6 soundEvent
-			COMMENT the sound produced by filling
-	METHOD method_32210 emptyCauldron (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;Ljava/util/function/Predicate;Lnet/minecraft/class_3414;)Lnet/minecraft/class_1269;
-		COMMENT Empties a cauldron if it's full.
-		COMMENT
-		COMMENT @return a {@linkplain ActionResult#isAccepted successful} action result if emptied, {@link ActionResult#PASS_TO_DEFAULT_BLOCK_ACTION} otherwise
-		ARG 0 state
-			COMMENT the cauldron block state
-		ARG 1 world
-			COMMENT the world where the cauldron is located
-		ARG 2 pos
-			COMMENT the cauldron's position
-		ARG 3 player
-			COMMENT the interacting player
-		ARG 4 hand
-			COMMENT the hand interacting with the cauldron
-		ARG 5 stack
-			COMMENT the stack in the player's hand
-		ARG 6 output
-			COMMENT the item stack that replaces the interaction stack when the cauldron is emptied
-		ARG 7 fullPredicate
-			COMMENT a predicate used to check if the cauldron can be emptied into the output stack
-		ARG 8 soundEvent
-			COMMENT the sound produced by emptying
-	METHOD method_32212 registerBehavior ()V
-		COMMENT Registers the vanilla cauldron behaviors.
-	METHOD method_32213 (Lnet/minecraft/class_2680;)Z
-		ARG 0 statex
-	METHOD method_32218 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1269;
+CLASS net/minecraft/class_1_368 net/minecraft/block/cauldron/CauldronBehavior
+	FIELD field_1_2079 NONE Lnet/minecraft/class_1_368;
+	METHOD method_1_2516 interact (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1269;
+		ARG 1 state
+		ARG 2 world
+		ARG 3 pos
+		ARG 4 player
+		ARG 5 hand
+		ARG 6 stack
+	METHOD method_1_2517 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1269;
 		ARG 0 state
 		ARG 1 world
 		ARG 2 pos
 		ARG 3 player
 		ARG 4 hand
 		ARG 5 stack
-	METHOD method_32219 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1269;
-		ARG 0 state
-		ARG 1 world
-		ARG 2 pos
-		ARG 3 player
-		ARG 4 hand
-		ARG 5 stack
-	METHOD method_32220 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1269;
-		ARG 0 state
-		ARG 1 world
-		ARG 2 pos
-		ARG 3 player
-		ARG 4 hand
-		ARG 5 stack
-	METHOD method_32221 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1269;
-		ARG 0 state
-		ARG 1 world
-		ARG 2 pos
-		ARG 3 player
-		ARG 4 hand
-		ARG 5 stack
-	METHOD method_32222 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1269;
-		ARG 1 world
-		ARG 2 pos
-		ARG 3 player
-		ARG 4 hand
-		ARG 5 stack
-	METHOD method_32696 (Lnet/minecraft/class_2680;)Z
-		ARG 0 statex
-	METHOD method_32698 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1269;
-		ARG 0 state
-		ARG 1 world
-		ARG 2 pos
-		ARG 3 player
-		ARG 4 hand
-		ARG 5 stack
-	METHOD method_34850 registerBucketBehavior (Lnet/minecraft/class_1_368$class_1_369;)V
-		COMMENT Registers the behavior for filled buckets in the specified behavior map.
-	METHOD method_62705 isUnderwater (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)Z
-		ARG 0 world
-		ARG 1 pos
-	METHOD method_62706 tryFillWithWater (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1269;
-		ARG 0 state
-		ARG 1 world
-		ARG 2 pos
-		ARG 3 player
-		ARG 4 hand
-		ARG 5 stack
-	METHOD method_62707 tryFillWithLava (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1269;
-		ARG 0 state
-		ARG 1 world
-		ARG 2 pos
-		ARG 3 player
-		ARG 4 hand
-		ARG 5 stack
-	METHOD method_62708 tryFillWithPowderSnow (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1269;
-		ARG 0 state
-		ARG 1 world
-		ARG 2 pos
-		ARG 3 player
-		ARG 4 hand
-		ARG 5 stack
-	METHOD method_62709 cleanShulkerBox (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1269;
-		ARG 0 state
-		ARG 1 world
-		ARG 2 pos
-		ARG 3 player
-		ARG 4 hand
-		ARG 5 stack
-	METHOD method_62710 cleanBanner (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1269;
-		ARG 0 state
-		ARG 1 world
-		ARG 2 pos
-		ARG 3 player
-		ARG 4 hand
-		ARG 5 stack
-	METHOD method_62711 cleanArmor (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1269;
-		ARG 0 state
-		ARG 1 world
-		ARG 2 pos
-		ARG 3 player
-		ARG 4 hand
-		ARG 5 stack
+	CLASS class_1_369 Map
+		FIELD field_1_2080 behaviorsByItem Ljava/util/Map;
+		FIELD field_1_2081 behaviorsByTag Ljava/util/Map;
+		METHOD method_1_2518 get (Lnet/minecraft/class_1799;)Lnet/minecraft/class_1_368;
+			ARG 1 stack
+		METHOD method_1_2519 add (Lnet/minecraft/class_6862;Lnet/minecraft/class_1_368;)V
+			ARG 1 itemTag
+			ARG 2 behavior
+		METHOD method_1_2520 add (Lnet/minecraft/class_1792;Lnet/minecraft/class_1_368;)V
+			ARG 1 item
+			ARG 2 behavior

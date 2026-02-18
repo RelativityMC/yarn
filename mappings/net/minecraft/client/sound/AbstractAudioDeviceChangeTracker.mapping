@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_366 net/minecraft/client/sound/AbstractAudioDeviceChangeTracker
+	FIELD field_1_2073 audioDeviceInfo Lnet/minecraft/class_1_355;
+	FIELD field_1_2074 currentlyFinding Ljava/util/concurrent/atomic/AtomicBoolean;
+	METHOD <init> (Lnet/minecraft/class_1_355;)V
+		ARG 1 audioDeviceInfo
+	METHOD method_1_2507 reset ()V
+	METHOD method_1_2508 isChanged ()Z

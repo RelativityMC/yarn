@@ -34,7 +34,22 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 		ARG 2 settings
 		ARG 3 fullscreenVideoMode
 		ARG 4 title
+		ARG 5 backends
+		ARG 6 shaderSourceGetter
+		ARG 7 debugOptions
 	METHOD method_1_385 initializeFirstSupported ([Lnet/minecraft/class_1_11;IILjava/lang/String;JLnet/minecraft/class_12289;Lnet/minecraft/class_1_16;)Lnet/minecraft/class_1_17;
+		ARG 1 backends
+		ARG 2 width
+		ARG 3 height
+		ARG 4 title
+		ARG 5 handle
+		ARG 7 shaderSourceGetter
+		ARG 8 debugOptions
+	METHOD method_1_2467 setPreEditCursorRectangle (IIII)V
+		ARG 1 left
+		ARG 2 top
+		ARG 3 right
+		ARG 4 bottom
 	METHOD method_4474 setPhase (Ljava/lang/String;)V
 		ARG 1 phase
 	METHOD method_4475 applyFullscreenVideoMode ()V
@@ -126,3 +141,5 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 		ARG 1 allowCursorChanges
 	METHOD method_75291 getMinimumLineWidth ()F
 	CLASS class_4716 GlErroredException
+		METHOD <init> (Ljava/lang/String;)V
+			ARG 1 message

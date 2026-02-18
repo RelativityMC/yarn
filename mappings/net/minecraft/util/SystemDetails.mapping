@@ -9,6 +9,8 @@ CLASS net/minecraft/class_6396 net/minecraft/util/SystemDetails
 	FIELD field_33856 JAVA_VERSION Ljava/lang/String;
 	FIELD field_33857 JVM_VERSION Ljava/lang/String;
 	FIELD field_33858 sections Ljava/util/Map;
+	METHOD method_1_2451 formatMemoryUsageDetails (Ljava/lang/management/MemoryUsage;)Ljava/lang/String;
+		ARG 0 memoryUsage
 	METHOD method_37120 collect ()Ljava/lang/String;
 		COMMENT {@return a string representation of the system details}
 		COMMENT

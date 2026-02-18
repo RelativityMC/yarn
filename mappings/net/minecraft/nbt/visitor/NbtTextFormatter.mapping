@@ -1,6 +1,8 @@
 CLASS net/minecraft/class_5628 net/minecraft/nbt/visitor/NbtTextFormatter
 	COMMENT Formats an NBT element into a colored, multiline {@link Text} representation suitable for human-readable
 	COMMENT displays.
+	FIELD field_1_2040 sortKeys Z
+	FIELD field_1_2041 styler Lnet/minecraft/class_5628$class_1_363;
 	FIELD field_27831 LOGGER Lorg/slf4j/Logger;
 	FIELD field_27837 SIMPLE_NAME Ljava/util/regex/Pattern;
 	FIELD field_27840 prefix Ljava/lang/String;
@@ -11,6 +13,20 @@ CLASS net/minecraft/class_5628 net/minecraft/nbt/visitor/NbtTextFormatter
 	FIELD field_51499 indentationLevel I
 	METHOD <init> (Ljava/lang/String;)V
 		ARG 1 prefix
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_5628$class_1_363;)V
+		ARG 1 prefix
+		ARG 2 styler
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_5628$class_1_363;Z)V
+		ARG 1 prefix
+		ARG 2 styler
+		ARG 3 sortKeys
+	METHOD method_1_2496 output (Ljava/lang/String;Lnet/minecraft/class_2583;)Lnet/minecraft/class_5628;
+		ARG 1 string
+		ARG 2 style
+	METHOD method_1_2497 output (Lnet/minecraft/class_5628$class_1_364;)Lnet/minecraft/class_5628;
+		ARG 1 token
+	METHOD method_1_2498 output (Lnet/minecraft/class_2561;)Lnet/minecraft/class_5628;
+		ARG 1 text
 	METHOD method_32304 escapeName (Ljava/lang/String;)Lnet/minecraft/class_2561;
 		ARG 1 name
 	METHOD method_32305 apply (Lnet/minecraft/class_2520;)Lnet/minecraft/class_2561;
@@ -21,3 +37,26 @@ CLASS net/minecraft/class_5628 net/minecraft/nbt/visitor/NbtTextFormatter
 		ARG 2 indent
 	METHOD method_68663 shouldIndent (Lnet/minecraft/class_2499;)Z
 		ARG 0 list
+	CLASS class_1_361 PlainStyler
+		FIELD field_1_2042 INSTANCE Lnet/minecraft/class_5628$class_1_363;
+		FIELD field_1_2043 tokenTexts Ljava/util/Map;
+	CLASS class_1_362 HighlightedStyler
+		FIELD field_1_2044 INSTANCE Lnet/minecraft/class_5628$class_1_363;
+		FIELD field_1_2045 NAME_STYLE Lnet/minecraft/class_2583;
+		FIELD field_1_2046 NUMBER_STYLE Lnet/minecraft/class_2583;
+		FIELD field_1_2047 AFFIX_STYLE Lnet/minecraft/class_2583;
+		FIELD field_1_2048 STRING_STYLE Lnet/minecraft/class_2583;
+		FIELD field_1_2049 styledTokens Ljava/util/Map;
+		METHOD method_1_2499 setTokenStyle (Lnet/minecraft/class_5628$class_1_364;Lnet/minecraft/class_2583;)V
+			ARG 1 token
+			ARG 2 style
+	CLASS class_1_363 Styler
+		METHOD method_1_2500 getNameStyle ()Lnet/minecraft/class_2583;
+		METHOD method_1_2501 getNumberStyle ()Lnet/minecraft/class_2583;
+		METHOD method_1_2502 getStringStyle ()Lnet/minecraft/class_2583;
+		METHOD method_1_2503 getStyledText (Lnet/minecraft/class_5628$class_1_364;)Lnet/minecraft/class_2561;
+			ARG 1 token
+	CLASS class_1_364 Token
+		FIELD field_1_2067 value Ljava/lang/String;
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 value

@@ -1,5 +1,7 @@
 CLASS net/minecraft/class_5539 net/minecraft/world/HeightLimitView
 	COMMENT A view with a height limit specification.
+	METHOD method_1_2506 isInHeightLimit (Lnet/minecraft/class_2338;)Z
+		ARG 1 pos
 	METHOD method_31597 getTopSectionCoord ()I
 		COMMENT Returns the top section coordinate, exclusive, of this view.
 		COMMENT

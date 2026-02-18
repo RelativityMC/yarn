@@ -51,4 +51,6 @@ CLASS net/minecraft/class_4791 net/minecraft/client/render/entity/model/HoglinEn
 	FIELD field_27424 leftHindLeg Lnet/minecraft/class_630;
 	FIELD field_32484 HEAD_PITCH_START F
 	FIELD field_32485 HEAD_PITCH_END F
+	METHOD method_1_2550 setAngles (F)V
+		ARG 1 headRaise
 	METHOD method_32009 getTexturedModelData ()Lnet/minecraft/class_5607;

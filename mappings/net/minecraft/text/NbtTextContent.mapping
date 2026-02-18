@@ -13,6 +13,8 @@ CLASS net/minecraft/class_2574 net/minecraft/text/NbtTextContent
 	METHOD comp_1_269 getSeparator ()Ljava/util/Optional;
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
+	METHOD method_1_2522 (Lnet/minecraft/class_2574;)Lcom/mojang/serialization/DataResult;
+		ARG 0 content
 	METHOD method_10917 (Lnet/minecraft/class_6903;Lnet/minecraft/class_2168;Lnet/minecraft/class_1297;ILnet/minecraft/class_2520;)Ljava/util/stream/Stream;
 		ARG 4 nbt
 	METHOD method_10918 (Lnet/minecraft/class_2487;)Ljava/util/stream/Stream;

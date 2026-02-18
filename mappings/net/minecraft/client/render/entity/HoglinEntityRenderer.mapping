@@ -1,2 +1,3 @@
 CLASS net/minecraft/class_4798 net/minecraft/client/render/entity/HoglinEntityRenderer
+	FIELD field_1_2096 BABY_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_22244 TEXTURE Lnet/minecraft/class_2960;

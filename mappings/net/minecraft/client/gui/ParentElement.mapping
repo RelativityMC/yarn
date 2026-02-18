@@ -24,6 +24,7 @@ CLASS net/minecraft/class_4069 net/minecraft/client/gui/ParentElement
 		ARG 1 focus
 		ARG 2 direction
 		ARG 3 focused
+		ARG 4 arrow
 	METHOD method_48219 (Lnet/minecraft/class_8028;Lnet/minecraft/class_364;)Ljava/lang/Integer;
 		ARG 1 element
 	METHOD method_48220 computeInitialChildPath (Lnet/minecraft/class_8030;Lnet/minecraft/class_8028;Lnet/minecraft/class_364;Lnet/minecraft/class_8023;)Lnet/minecraft/class_8016;

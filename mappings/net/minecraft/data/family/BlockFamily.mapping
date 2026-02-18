@@ -26,6 +26,8 @@ CLASS net/minecraft/class_5794 net/minecraft/data/family/BlockFamily
 		METHOD method_1_836 tiles (Lnet/minecraft/class_2248;)Lnet/minecraft/class_5794$class_5795;
 			ARG 1 block
 		METHOD method_1_1232 generateStonecuttingRecipes ()Lnet/minecraft/class_5794$class_5795;
+		METHOD method_1_2455 cobbled (Lnet/minecraft/class_2248;)Lnet/minecraft/class_5794$class_5795;
+			ARG 1 block
 		METHOD method_33481 build ()Lnet/minecraft/class_5794;
 		METHOD method_33482 button (Lnet/minecraft/class_2248;)Lnet/minecraft/class_5794$class_5795;
 			ARG 1 block

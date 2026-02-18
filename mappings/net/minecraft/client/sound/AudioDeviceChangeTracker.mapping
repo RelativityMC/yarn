@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_360 net/minecraft/client/sound/AudioDeviceChangeTracker
+	METHOD method_1_2491 getAudioDeviceInfo ()Lnet/minecraft/class_1_355;
+	METHOD method_1_2492 onLost ()V
+	METHOD method_1_2493 refresh ()V

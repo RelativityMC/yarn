@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_376 net/minecraft/client/render/entity/model/SniffletEntityModel
+	FIELD field_1_2118 LOWER_BEAK Ljava/lang/String;
+	FIELD field_1_2119 babyGrowthAnimation Lnet/minecraft/class_11509;
+	METHOD method_1_2552 getTexturedModelData ()Lnet/minecraft/class_5607;

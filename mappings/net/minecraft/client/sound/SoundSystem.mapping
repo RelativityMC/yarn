@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_1140 net/minecraft/client/sound/SoundSystem
+	FIELD field_1_2038 changeTracker Lnet/minecraft/class_1_360;
+	FIELD field_1_2039 audioDeviceInfo Lnet/minecraft/class_1_355;
 	FIELD field_5550 ticks I
 	FIELD field_5551 preloadedSounds Ljava/util/List;
 	FIELD field_5552 soundManager Lnet/minecraft/class_1144;

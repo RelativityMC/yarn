@@ -1,0 +1,18 @@
+CLASS net/minecraft/class_1_358 net/minecraft/client/util/Dialogs
+	FIELD field_1_2026 DEFAULT_CANCEL I
+	FIELD field_1_2027 DEFAULT_NO I
+	FIELD field_1_2028 DEFAULT_OK I
+	FIELD field_1_2029 DIALOG_TITLE Ljava/lang/String;
+	FIELD field_1_2030 ICON_ERROR Ljava/lang/String;
+	FIELD field_1_2031 ICON_INFO Ljava/lang/String;
+	FIELD field_1_2032 ICON_QUESTION Ljava/lang/String;
+	FIELD field_1_2033 ICON_WARNING Ljava/lang/String;
+	FIELD field_1_2034 TYPE_OK Ljava/lang/String;
+	FIELD field_1_2035 TYPE_OKCANCEL Ljava/lang/String;
+	FIELD field_1_2036 TYPE_YESNO Ljava/lang/String;
+	FIELD field_1_2037 TYPE_YESNOCANCEL Ljava/lang/String;
+	METHOD method_1_2484 showMessageBox (Ljava/lang/String;)V
+		ARG 0 message
+	METHOD method_1_2485 promptYesOrNo (Ljava/lang/String;)Z
+		COMMENT {@return {@code true} if “Yes” was chosen}
+		ARG 0 message

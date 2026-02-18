@@ -1,9 +1,29 @@
 CLASS net/minecraft/class_11753 net/minecraft/server/command/FetchProfileCommand
+	FIELD field_1_2084 NO_PROFILE_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
+	METHOD method_1_2526 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD method_1_2527 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 displayName
+	METHOD method_1_2528 executePlayer (Lnet/minecraft/class_2168;Lnet/minecraft/class_11890;)V
+		ARG 0 source
+		ARG 1 player
+	METHOD method_1_2529 executeEntity (Lnet/minecraft/class_2168;Lnet/minecraft/class_1297;)I
+		ARG 0 source
+		ARG 1 entity
+	METHOD method_1_2530 execute (Lnet/minecraft/class_2168;Ljava/lang/String;Lnet/minecraft/class_2561;Lnet/minecraft/class_9296;)V
+		ARG 0 source
+		ARG 1 successKey
+		ARG 2 displayName
+		ARG 3 profile
 	METHOD method_73262 register (Lcom/mojang/brigadier/CommandDispatcher;)V
 		ARG 0 dispatcher
 	METHOD method_73263 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_73264 sendResult (Lnet/minecraft/class_2168;Lcom/mojang/authlib/GameProfile;Ljava/lang/String;Lnet/minecraft/class_2561;)V
+		ARG 0 source
+		ARG 1 profile
+		ARG 2 successKey
+		ARG 3 displayName
 	METHOD method_73266 executeName (Lnet/minecraft/class_2168;Ljava/lang/String;)I
 		ARG 0 source
 		ARG 1 name

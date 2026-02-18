@@ -1,3 +1,9 @@
 CLASS net/minecraft/class_1_11 net/minecraft/client/window/WindowBackend
 	METHOD method_1_404 initialize (IILjava/lang/String;JLnet/minecraft/class_12289;Lnet/minecraft/class_1_16;)Lnet/minecraft/class_1_17;
+		ARG 1 width
+		ARG 2 height
+		ARG 3 title
+		ARG 4 handle
+		ARG 6 shaderSourceGetter
+		ARG 7 debugOptions
 	METHOD method_1_405 getName ()Ljava/lang/String;

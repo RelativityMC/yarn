@@ -2,6 +2,7 @@ CLASS net/minecraft/class_7529 net/minecraft/client/gui/widget/EditBoxWidget
 	COMMENT A widget of {@link EditBox}, a multiline edit box with support for
 	COMMENT basic keyboard shortcuts. This class implements the rendering and scrolling
 	COMMENT for the edit box.
+	FIELD field_1_2098 preEditWidget Lnet/minecraft/class_1_374;
 	FIELD field_39503 CURSOR_COLOR I
 	FIELD field_39506 UNFOCUSED_BOX_TEXT_COLOR I
 	FIELD field_39507 textRenderer Lnet/minecraft/class_327;

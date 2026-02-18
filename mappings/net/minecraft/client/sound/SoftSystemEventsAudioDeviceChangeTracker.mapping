@@ -1,0 +1,20 @@
+CLASS net/minecraft/class_1_367 net/minecraft/client/sound/SoftSystemEventsAudioDeviceChangeTracker
+	FIELD field_1_2075 HEX_FORMATTER Ljava/util/HexFormat;
+	FIELD field_1_2076 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_2077 events [I
+	FIELD field_1_2078 changed Z
+	METHOD method_1_2510 create (Lnet/minecraft/class_1_355;)Lnet/minecraft/class_1_367;
+		ARG 0 audioDeviceInfo
+	METHOD method_1_2511 getEventCallback ()Lorg/lwjgl/openal/SOFTSystemEventProcI;
+	METHOD method_1_2512 describeDeviceType (I)Ljava/lang/String;
+		ARG 0 deviceType
+	METHOD method_1_2513 supportsAllEvents ()Z
+	METHOD method_1_2514 isEventSupported (I)Z
+		ARG 0 eventType
+	METHOD method_1_2515 (IIJIJJ)V
+		ARG 1 eventType
+		ARG 2 deviceType
+		ARG 3 device
+		ARG 5 length
+		ARG 6 message
+		ARG 8 userParam

@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1_380 net/minecraft/client/gui/hud/debug/DetailedMemoryDebugHudEntry
+	FIELD field_1_2132 SECTION_ID Lnet/minecraft/class_2960;
+	FIELD field_1_2133 memoryMXBean Ljava/lang/management/MemoryMXBean;
+	METHOD method_1_2562 toMegabytes (J)J
+		ARG 0 bytes
+	METHOD method_1_2563 formatLine (Ljava/lang/management/MemoryUsage;Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 memoryUsage
+		ARG 1 label

@@ -148,6 +148,8 @@ CLASS net/minecraft/class_3675 net/minecraft/client/util/InputUtil
 	METHOD method_15986 setKeyboardCallbacks (Lnet/minecraft/class_1041;Lorg/lwjgl/glfw/GLFWKeyCallbackI;Lorg/lwjgl/glfw/GLFWCharCallbackI;Lorg/lwjgl/glfw/GLFWPreeditCallbackI;)V
 		ARG 0 window
 		ARG 1 keyCallback
+		ARG 2 charCallback
+		ARG 3 preEditCallback
 	METHOD method_15987 isKeyPressed (Lnet/minecraft/class_1041;I)Z
 		ARG 0 window
 		ARG 1 code

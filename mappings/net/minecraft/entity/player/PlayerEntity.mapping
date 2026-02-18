@@ -37,6 +37,8 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 	METHOD <init> (Lnet/minecraft/class_1937;Lcom/mojang/authlib/GameProfile;)V
 		ARG 1 world
 		ARG 2 profile
+	METHOD method_1_2490 permissionAsString (Lnet/minecraft/class_12096;)Ljava/lang/String;
+		ARG 0 premissions
 	METHOD method_7254 unlockRecipes (Ljava/util/Collection;)I
 		ARG 1 recipes
 	METHOD method_7255 addExperience (I)V
@@ -185,19 +187,8 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 	METHOD method_7350 resetTicksSince ()V
 	METHOD method_7351 getBlockBreakingSpeed (Lnet/minecraft/class_2680;)F
 		ARG 1 block
-	METHOD method_7353 sendMessage (Lnet/minecraft/class_2561;)V
-		COMMENT Adds a message to this player's HUD.
-		COMMENT
-		COMMENT <p>If it's called on {@link net.minecraft.server.network.ServerPlayerEntity
-		COMMENT ServerPlayerEntity}, it sends a message to the client corresponding to
-		COMMENT this player so that the client can add a message to their HUD. If it's
-		COMMENT called on {@link net.minecraft.client.network.ClientPlayerEntity
-		COMMENT ClientPlayerEntity}, it just adds a message to their HUD.
-		COMMENT
-		COMMENT @see net.minecraft.server.network.ServerPlayerEntity#sendMessage(Text, boolean)
-		COMMENT @see net.minecraft.client.network.ClientPlayerEntity#sendMessage(Text, boolean)
-		COMMENT @see net.minecraft.client.gui.hud.ChatHud#addMessage(Text)
-		COMMENT @see net.minecraft.client.gui.hud.InGameHud#setOverlayMessage
+	METHOD method_7353 sendOverlayMessage (Lnet/minecraft/class_2561;)V
+		ARG 1 message
 	METHOD method_7355 sendAbilitiesUpdate ()V
 	METHOD method_7357 getItemCooldownManager ()Lnet/minecraft/class_1796;
 	METHOD method_7358 wakeUp (ZZ)V
@@ -298,6 +289,8 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 	METHOD method_64179 isEquipped (Lnet/minecraft/class_1792;)Z
 		ARG 1 item
 	METHOD method_64271 canDropItems ()Z
+	METHOD method_64398 sendMessage (Lnet/minecraft/class_2561;)V
+		ARG 1 message
 	METHOD method_64400 tickHunger ()V
 	METHOD method_66324 shouldSkipBlockDrops ()Z
 	METHOD method_66325 getExpectedPose ()Lnet/minecraft/class_4050;

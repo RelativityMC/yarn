@@ -23,6 +23,8 @@ CLASS net/minecraft/class_8813 net/minecraft/block/SaplingGenerator
 		ARG 2 megaVariant
 		ARG 3 regularVariant
 		ARG 4 beesVariant
+	METHOD method_1_2541 getBaseTrunkHeight (Lnet/minecraft/class_3218;)Ljava/util/OptionalInt;
+		ARG 1 world
 	METHOD method_54085 generate (Lnet/minecraft/class_3218;Lnet/minecraft/class_2794;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_5819;)Z
 		ARG 1 world
 		ARG 2 chunkGenerator

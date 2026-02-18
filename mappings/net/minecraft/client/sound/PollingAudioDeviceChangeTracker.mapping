@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_365 net/minecraft/client/sound/PollingAudioDeviceChangeTracker
+	FIELD field_1_2069 POLLING_INTERVAL_MS J
+	FIELD field_1_2070 lastPollingTime J

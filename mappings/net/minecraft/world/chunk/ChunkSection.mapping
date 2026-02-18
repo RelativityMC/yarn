@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_2826 net/minecraft/world/chunk/ChunkSection
+	FIELD field_1_2090 fluidCount S
 	FIELD field_12877 nonEmptyBlockCount S
 	FIELD field_12878 blockStateContainer Lnet/minecraft/class_2841;
 	FIELD field_12881 nonEmptyFluidCount S
@@ -11,6 +12,7 @@ CLASS net/minecraft/class_2826 net/minecraft/world/chunk/ChunkSection
 		ARG 2 biomeContainer
 	METHOD <init> (Lnet/minecraft/class_11897;)V
 		ARG 1 palettesFactory
+	METHOD method_1_2542 hasFluids ()Z
 	METHOD method_12253 calculateCounts ()V
 	METHOD method_12254 getBlockState (III)Lnet/minecraft/class_2680;
 		ARG 1 x
@@ -60,6 +62,7 @@ CLASS net/minecraft/class_2826 net/minecraft/world/chunk/ChunkSection
 		ARG 1 buf
 	METHOD method_61771 copy ()Lnet/minecraft/class_2826;
 	CLASS class_6869 BlockStateCounter
+		FIELD field_1_2091 fluidCount I
 		FIELD field_36408 nonEmptyBlockCount I
 		FIELD field_36409 randomTickableBlockCount I
 		FIELD field_36410 nonEmptyFluidCount I

@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_4225 net/minecraft/client/sound/SoundEngine
+	FIELD field_1_2018 DEFAULT_DEVICE_SPECIFIER Ljava/lang/String;
 	FIELD field_18897 LOGGER Lorg/slf4j/Logger;
 	FIELD field_18898 devicePointer J
 	FIELD field_18899 contextPointer J
@@ -8,7 +9,12 @@ CLASS net/minecraft/class_4225 net/minecraft/client/sound/SoundEngine
 	FIELD field_19185 staticSources Lnet/minecraft/class_4225$class_4276;
 	FIELD field_34946 disconnectExtensionPresent Z
 	FIELD field_34947 deviceSpecifier Ljava/lang/String;
+	METHOD method_1_2463 createChangeTracker ()Lnet/minecraft/class_1_360;
+	METHOD method_1_2464 getDeviceSpecifier (J)Ljava/lang/String;
+		ARG 0 deviceHandle
 	METHOD method_19661 init (Ljava/lang/String;Lnet/minecraft/class_1_355;Z)V
+		ARG 1 soundDevice
+		ARG 2 audioDeviceInfo
 		ARG 3 directionalAudio
 	METHOD method_19662 release (Lnet/minecraft/class_4224;)V
 		ARG 1 source
@@ -22,6 +28,7 @@ CLASS net/minecraft/class_4225 net/minecraft/client/sound/SoundEngine
 	METHOD method_20297 getMonoSourceCount ()I
 	METHOD method_38501 openDeviceOrFallback (Ljava/lang/String;Ljava/lang/String;)J
 		ARG 0 deviceSpecifier
+		ARG 1 fallback
 	METHOD method_38722 getCurrentDeviceName ()Ljava/lang/String;
 	METHOD method_38724 isDeviceUnavailable ()Z
 	METHOD method_66510 createAttributes (Lorg/lwjgl/system/MemoryStack;Z)Ljava/nio/IntBuffer;

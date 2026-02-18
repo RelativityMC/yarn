@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_342 net/minecraft/client/gui/widget/TextFieldWidget
+	FIELD field_1_2068 preEditWidget Lnet/minecraft/class_1_374;
 	FIELD field_2088 changedListener Ljava/util/function/Consumer;
 	FIELD field_2092 text Ljava/lang/String;
 	FIELD field_2094 editable Z

@@ -1,2 +1,3 @@
 CLASS net/minecraft/class_8190 net/minecraft/client/render/entity/SnifferEntityRenderer
+	FIELD field_1_2099 SNIFFLET_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_42930 TEXTURE Lnet/minecraft/class_2960;

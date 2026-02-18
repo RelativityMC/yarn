@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
+	FIELD field_1_2025 preEditWidget Lnet/minecraft/class_4068;
 	FIELD field_44655 BACKGROUND_MARGIN I
 	FIELD field_44656 client Lnet/minecraft/class_310;
 	FIELD field_44657 matrices Lorg/joml/Matrix3x2fStack;
@@ -45,6 +46,8 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 6 y
 		ARG 7 focused
 		ARG 8 texture
+	METHOD method_1_2483 setPreEditWidget (Lnet/minecraft/class_4068;)V
+		ARG 1 widget
 	METHOD method_25290 drawTexture (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/class_2960;IIFFIIII)V
 		COMMENT Draws a textured rectangle from a region in a texture.
 		COMMENT
@@ -620,6 +623,9 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 4 height
 		ARG 5 color
 	METHOD method_73199 drawDeferredElements (IIF)V
+		ARG 1 mouseX
+		ARG 2 mouseY
+		ARG 3 deltaTicks
 	METHOD method_74036 applyCursorTo (Lnet/minecraft/class_1041;)V
 		ARG 1 window
 	METHOD method_74037 setCursor (Lnet/minecraft/class_11875;)V

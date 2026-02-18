@@ -4,6 +4,8 @@ CLASS net/minecraft/class_364 net/minecraft/client/gui/Element
 	COMMENT
 	COMMENT Mouse coordinate is bounded by the size of the window in
 	COMMENT pixels.
+	METHOD method_1_2559 preEdit (Lnet/minecraft/class_1_359;)Z
+		ARG 1 input
 	METHOD method_16014 mouseMoved (DD)V
 		COMMENT Callback for when a mouse move event has been captured.
 		COMMENT

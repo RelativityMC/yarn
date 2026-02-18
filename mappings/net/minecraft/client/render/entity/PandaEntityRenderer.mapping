@@ -1,3 +1,9 @@
 CLASS net/minecraft/class_931 net/minecraft/client/render/entity/PandaEntityRenderer
+	FIELD field_1_2092 BABY_TEXTURES Ljava/util/Map;
 	FIELD field_17595 TEXTURES Ljava/util/Map;
 	METHOD method_4086 getAngle (FFIFF)F
+		ARG 1 start
+		ARG 2 end
+		ARG 3 ticks
+		ARG 4 fractionalTicks
+		ARG 5 duration

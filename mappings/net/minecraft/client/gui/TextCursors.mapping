@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_1_372 net/minecraft/client/gui/TextCursors
+	FIELD field_1_2093 TRAILING_CURSOR Ljava/lang/String;
+	FIELD field_1_2094 MEDIAL_BLINK_INTERVAL_MS I
+	FIELD field_1_2095 CURSOR_WIDTH I
+	METHOD method_1_2543 drawTrailingCursor (Lnet/minecraft/class_332;Lnet/minecraft/class_327;IIIZ)V
+		ARG 0 context
+		ARG 1 textRenderer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 color
+		ARG 5 shadow
+	METHOD method_1_2544 drawMedialCursor (Lnet/minecraft/class_332;IIII)V
+		ARG 0 context
+		ARG 1 x
+		ARG 2 y
+		ARG 3 color
+		ARG 4 height
+	METHOD method_1_2545 shouldShowMedialCursor (J)Z
+		ARG 0 deltaMs

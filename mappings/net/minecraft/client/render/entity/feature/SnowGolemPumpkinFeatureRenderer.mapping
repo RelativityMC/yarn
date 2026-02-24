@@ -1,5 +1,1 @@
 CLASS net/minecraft/class_996 net/minecraft/client/render/entity/feature/SnowGolemPumpkinFeatureRenderer
-	FIELD field_38905 blockRenderManager Lnet/minecraft/class_776;
-	METHOD <init> (Lnet/minecraft/class_3883;Lnet/minecraft/class_776;)V
-		ARG 1 context
-		ARG 2 blockRenderManager

@@ -10,14 +10,13 @@ CLASS net/minecraft/class_5614 net/minecraft/client/render/block/entity/BlockEnt
 		FIELD comp_4539 loadedEntityModels Lnet/minecraft/class_5599;
 		FIELD comp_4540 textRenderer Lnet/minecraft/class_327;
 		FIELD comp_4541 spriteHolder Lnet/minecraft/class_11701;
-		METHOD <init> (Lnet/minecraft/class_824;Lnet/minecraft/class_776;Lnet/minecraft/class_10442;Lnet/minecraft/class_918;Lnet/minecraft/class_898;Lnet/minecraft/class_5599;Lnet/minecraft/class_327;Lnet/minecraft/class_11701;Lnet/minecraft/class_11786;)V
+		METHOD <init> (Lnet/minecraft/class_824;Lnet/minecraft/class_776;Lnet/minecraft/class_1_394;Lnet/minecraft/class_10442;Lnet/minecraft/class_918;Lnet/minecraft/class_898;Lnet/minecraft/class_5599;Lnet/minecraft/class_327;Lnet/minecraft/class_11701;Lnet/minecraft/class_11786;)V
 			ARG 1 renderDispatcher
 			ARG 2 renderManager
-			ARG 3 itemModelManager
-			ARG 4 itemRenderer
-			ARG 5 entityRenderDispatcher
-			ARG 6 layerRenderDispatcher
-			ARG 7 textRenderer
+			ARG 5 itemRenderer
+			ARG 6 entityRenderDispatcher
+			ARG 7 layerRenderDispatcher
+			ARG 8 textRenderer
 		METHOD comp_4534 renderDispatcher ()Lnet/minecraft/class_824;
 		METHOD comp_4535 renderManager ()Lnet/minecraft/class_776;
 		METHOD comp_4536 itemModelManager ()Lnet/minecraft/class_10442;

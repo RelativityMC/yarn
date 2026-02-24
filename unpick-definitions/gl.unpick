@@ -343,7 +343,7 @@ group int gl_buffer_mask
 
 # Target definition
 
-target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/platform/DepthTestFunction;)I
+target_method com.mojang.blaze3d.opengl.GlConst toGl (Lnet/minecraft/class_1_381;)I
 	return gl_depth_test_function
 
 target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/platform/PolygonMode;)I

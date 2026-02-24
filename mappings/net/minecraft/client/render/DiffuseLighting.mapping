@@ -14,6 +14,6 @@ CLASS net/minecraft/class_308 net/minecraft/client/render/DiffuseLighting
 		ARG 1 type
 		ARG 2 light0Diffusion
 		ARG 3 light1Diffusion
-	METHOD method_71036 updateLevelBuffer (Lnet/minecraft/class_2874$class_12325;)V
+	METHOD method_71036 updateLevelBuffer (Lnet/minecraft/class_1_383$class_12325;)V
 		ARG 1 cardinalLightType
 	CLASS class_11274 Type

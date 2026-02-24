@@ -145,7 +145,7 @@ CLASS net/minecraft/class_3675 net/minecraft/client/util/InputUtil
 		ARG 4 y
 	METHOD method_15985 fromKeyCode (Lnet/minecraft/class_11908;)Lnet/minecraft/class_3675$class_306;
 		ARG 0 key
-	METHOD method_15986 setKeyboardCallbacks (Lnet/minecraft/class_1041;Lorg/lwjgl/glfw/GLFWKeyCallbackI;Lorg/lwjgl/glfw/GLFWCharCallbackI;Lorg/lwjgl/glfw/GLFWPreeditCallbackI;)V
+	METHOD method_15986 setKeyboardCallbacks (Lnet/minecraft/class_1041;Lorg/lwjgl/glfw/GLFWKeyCallbackI;Lorg/lwjgl/glfw/GLFWCharCallbackI;Lorg/lwjgl/glfw/GLFWPreeditCallbackI;Lorg/lwjgl/glfw/GLFWIMEStatusCallbackI;)V
 		ARG 0 window
 		ARG 1 keyCallback
 		ARG 2 charCallback

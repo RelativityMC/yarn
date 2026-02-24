@@ -78,11 +78,6 @@ CLASS com/mojang/blaze3d/opengl/GlStateManager
 	CLASS class_1021 LogicOpState
 		FIELD field_5058 capState Lcom/mojang/blaze3d/opengl/GlStateManager$class_1018;
 		FIELD field_5059 op I
-	CLASS class_1022 ColorMask
-		FIELD field_5060 alpha Z
-		FIELD field_5061 blue Z
-		FIELD field_5062 green Z
-		FIELD field_5063 red Z
 	CLASS class_1025 CullFaceState
 		FIELD field_5072 capState Lcom/mojang/blaze3d/opengl/GlStateManager$class_1018;
 	CLASS class_1026 DepthTestState

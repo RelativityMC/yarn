@@ -1,8 +1,2 @@
 CLASS net/minecraft/class_1_319 net/minecraft/client/render/QuadConsumer
-	METHOD method_1_2309 accept (Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_777;Lnet/minecraft/class_1_304;ILnet/minecraft/class_1_308;I)V
-		ARG 1 matrix
-		ARG 2 quad
-		ARG 3 brightnessScaling
-		ARG 4 color
-		ARG 5 lighting
-		ARG 6 overlay
+	METHOD method_1_2309 accept (FFFLnet/minecraft/class_777;Lnet/minecraft/class_1_382;)V

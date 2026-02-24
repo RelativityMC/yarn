@@ -8,5 +8,4 @@ CLASS net/minecraft/class_1_76 net/minecraft/client/render/entity/model/RabbitEn
 		COMMENT Used when a rabbit has just been released from a leash.
 	METHOD <init> (Lnet/minecraft/class_630;Lnet/minecraft/class_7184;Lnet/minecraft/class_7184;)V
 		ARG 1 root
-		ARG 2 jump
 		ARG 3 look

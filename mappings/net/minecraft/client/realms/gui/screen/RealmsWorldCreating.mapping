@@ -16,7 +16,5 @@ CLASS net/minecraft/class_10231 net/minecraft/client/realms/gui/screen/RealmsWor
 	METHOD method_64336 (Lnet/minecraft/class_310;Lnet/minecraft/class_437;Lnet/minecraft/class_437;Lnet/minecraft/class_4877;Lnet/minecraft/class_4445;Ljava/lang/Object;Ljava/lang/Throwable;)Ljava/lang/Object;
 		ARG 5 v
 		ARG 6 throwable
-	METHOD method_64337 saveTempWorld (Lnet/minecraft/class_5219;Ljava/util/Optional;Ljava/nio/file/Path;)Ljava/nio/file/Path;
-		ARG 0 saveProperties
-		ARG 1 gameRules
-		ARG 2 dataPackTempDir
+	METHOD method_64337 saveTempWorld (Lnet/minecraft/class_5455;Lnet/minecraft/class_8895$class_1_251;Ljava/util/Optional;Ljava/nio/file/Path;)Ljava/nio/file/Path;
+		ARG 3 dataPackTempDir

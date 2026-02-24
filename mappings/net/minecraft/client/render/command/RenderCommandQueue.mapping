@@ -23,12 +23,6 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 6 tintLayers
 		ARG 7 quads
 		ARG 8 glintType
-	METHOD method_73481 submitBlock (Lnet/minecraft/class_4587;Lnet/minecraft/class_2680;III)V
-		ARG 1 matrices
-		ARG 2 state
-		ARG 3 light
-		ARG 4 overlay
-		ARG 5 outlineColor
 	METHOD method_73482 submitLabel (Lnet/minecraft/class_4587;Lnet/minecraft/class_243;ILnet/minecraft/class_2561;ZIDLnet/minecraft/class_12075;)V
 		ARG 1 matrices
 		ARG 2 nameLabelPos
@@ -42,11 +36,10 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 1 matrices
 		ARG 2 renderLayer
 		ARG 3 customRenderer
-	METHOD method_73484 submitBlockStateModel (Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;Lnet/minecraft/class_1087;IIII)V
+	METHOD method_73484 submitBlockStateModel (Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;Lnet/minecraft/class_1087;[IIII)V
 		ARG 1 matrices
 		ARG 2 renderLayer
 		ARG 3 model
-		ARG 4 tintColor
 		ARG 5 lightCoords
 		ARG 6 overlayCoords
 		ARG 7 light

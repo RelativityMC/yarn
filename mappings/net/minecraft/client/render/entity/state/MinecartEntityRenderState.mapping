@@ -7,7 +7,7 @@ CLASS net/minecraft/class_10045 net/minecraft/client/render/entity/state/Minecar
 	FIELD field_53484 damageWobbleTicks F
 	FIELD field_53485 damageWobbleStrength F
 	FIELD field_53486 blockOffset I
-	FIELD field_53487 containedBlock Lnet/minecraft/class_2680;
+	FIELD field_53487 containedBlock Lnet/minecraft/class_1_395;
 	FIELD field_53488 usesExperimentalController Z
 	FIELD field_53489 lerpedPos Lnet/minecraft/class_243;
 	FIELD field_53490 presentPos Lnet/minecraft/class_243;

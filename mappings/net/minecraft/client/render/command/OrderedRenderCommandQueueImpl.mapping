@@ -12,9 +12,6 @@ CLASS net/minecraft/class_11661 net/minecraft/client/render/command/OrderedRende
 		FIELD comp_4477 renderLayer Lnet/minecraft/class_1921;
 		METHOD comp_4476 matricesEntry ()Lnet/minecraft/class_4587$class_4665;
 		METHOD comp_4477 renderLayer ()Lnet/minecraft/class_1921;
-	CLASS class_11663 BlockCommand
-		FIELD comp_4484 matricesEntry Lnet/minecraft/class_4587$class_4665;
-		METHOD comp_4484 matricesEntry ()Lnet/minecraft/class_4587$class_4665;
 	CLASS class_11664 CustomCommand
 		FIELD comp_4488 matricesEntry Lnet/minecraft/class_4587$class_4665;
 		FIELD comp_4489 customRenderer Lnet/minecraft/class_11659$class_11660;

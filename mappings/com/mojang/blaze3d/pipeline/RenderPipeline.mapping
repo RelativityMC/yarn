@@ -4,24 +4,8 @@ CLASS com/mojang/blaze3d/pipeline/RenderPipeline
 			ARG 1 samplers
 		METHOD lambda$withSnippet$1 (Ljava/util/List;)V
 			ARG 1 uniforms
-		METHOD withBlend (Lcom/mojang/blaze3d/pipeline/BlendFunction;)Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;
-			ARG 1 blendFunction
-		METHOD withColorLogic (Lcom/mojang/blaze3d/platform/LogicOp;)Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;
-			ARG 1 colorLogic
-		METHOD withColorWrite (Z)Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;
-			ARG 1 writeColor
-		METHOD withColorWrite (ZZ)Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;
-			ARG 1 writeColor
-			ARG 2 writeAlpha
 		METHOD withCull (Z)Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;
 			ARG 1 cull
-		METHOD withDepthBias (FF)Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;
-			ARG 1 depthBiasScaleFactor
-			ARG 2 depthBiasConstant
-		METHOD withDepthTestFunction (Lcom/mojang/blaze3d/platform/DepthTestFunction;)Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;
-			ARG 1 depthTestFunction
-		METHOD withDepthWrite (Z)Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;
-			ARG 1 writeDepth
 		METHOD withFragmentShader (Ljava/lang/String;)Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;
 			ARG 1 fragmentShader
 		METHOD withFragmentShader (Lnet/minecraft/class_2960;)Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;

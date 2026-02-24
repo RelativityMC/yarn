@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_1092 net/minecraft/client/render/model/BakedModelManager
-	FIELD field_5410 blockModelCache Lnet/minecraft/class_773;
 	FIELD field_20277 colorMap Lnet/minecraft/class_324;
 	FIELD field_40573 LOGGER Lorg/slf4j/Logger;
 	FIELD field_53676 MODELS_FINDER Lnet/minecraft/class_7654;
@@ -15,7 +14,6 @@ CLASS net/minecraft/class_1092 net/minecraft/client/render/model/BakedModelManag
 		ARG 1 colorMap
 		ARG 2 atlasManager
 		ARG 3 skinCache
-	METHOD method_4743 getBlockModels ()Lnet/minecraft/class_773;
 	METHOD method_18179 upload (Lnet/minecraft/class_1092$class_7779;)V
 		ARG 1 bakingResult
 	METHOD method_21611 shouldRerender (Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;)Z
@@ -74,7 +72,6 @@ CLASS net/minecraft/class_1092 net/minecraft/client/render/model/BakedModelManag
 		ARG 1 asset
 	METHOD method_65934 getItemProperties (Lnet/minecraft/class_2960;)Lnet/minecraft/class_10434$class_10543;
 		ARG 1 id
-	METHOD method_68046 getMissingModel ()Lnet/minecraft/class_1087;
 	METHOD method_68047 (Lcom/google/common/collect/Multimap;Lcom/google/common/collect/Multimap;Lit/unimi/dsi/fastutil/objects/Object2IntMap;Lnet/minecraft/class_5599;Lnet/minecraft/class_10418;Lnet/minecraft/class_1088$class_10524;)Lnet/minecraft/class_1092$class_7779;
 		ARG 5 bakedModels
 	METHOD method_73040 (Lnet/minecraft/class_5599;)Lnet/minecraft/class_10418;

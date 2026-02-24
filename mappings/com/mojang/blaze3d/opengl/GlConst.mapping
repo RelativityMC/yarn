@@ -1,6 +1,4 @@
 CLASS com/mojang/blaze3d/opengl/GlConst
-	METHOD toGl (Lcom/mojang/blaze3d/platform/DepthTestFunction;)I
-		ARG 0 function
 	METHOD toGl (Lcom/mojang/blaze3d/platform/DestFactor;)I
 		ARG 0 factor
 	METHOD toGl (Lcom/mojang/blaze3d/platform/SourceFactor;)I

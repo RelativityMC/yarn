@@ -7,7 +7,7 @@ CLASS net/minecraft/class_898 net/minecraft/client/render/entity/EntityRenderMan
 	FIELD field_4692 gameOptions Lnet/minecraft/class_315;
 	FIELD field_4696 renderers Ljava/util/Map;
 	FIELD field_27760 entityModelsGetter Ljava/util/function/Supplier;
-	FIELD field_38886 blockRenderManager Lnet/minecraft/class_776;
+	FIELD field_38886 blockRenderManager Lnet/minecraft/class_1_394;
 	FIELD field_38887 heldItemRenderer Lnet/minecraft/class_759;
 	FIELD field_53188 mapRenderer Lnet/minecraft/class_330;
 	FIELD field_55289 itemModelManager Lnet/minecraft/class_10442;
@@ -15,12 +15,10 @@ CLASS net/minecraft/class_898 net/minecraft/client/render/entity/EntityRenderMan
 	FIELD field_61796 atlasManager Lnet/minecraft/class_11697;
 	FIELD field_62254 skinCache Lnet/minecraft/class_11786;
 	FIELD field_62757 mannequinRenderers Ljava/util/Map;
-	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_1060;Lnet/minecraft/class_10442;Lnet/minecraft/class_330;Lnet/minecraft/class_776;Lnet/minecraft/class_11697;Lnet/minecraft/class_327;Lnet/minecraft/class_315;Ljava/util/function/Supplier;Lnet/minecraft/class_10201;Lnet/minecraft/class_11786;)V
+	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_1060;Lnet/minecraft/class_1_394;Lnet/minecraft/class_10442;Lnet/minecraft/class_330;Lnet/minecraft/class_11697;Lnet/minecraft/class_327;Lnet/minecraft/class_315;Ljava/util/function/Supplier;Lnet/minecraft/class_10201;Lnet/minecraft/class_11786;)V
 		ARG 1 client
 		ARG 2 textureManager
-		ARG 3 itemModelManager
-		ARG 4 mapRenderer
-		ARG 5 blockRenderManager
+		ARG 5 mapRenderer
 		ARG 6 atlasManager
 		ARG 7 textRenderer
 		ARG 8 gameOptions

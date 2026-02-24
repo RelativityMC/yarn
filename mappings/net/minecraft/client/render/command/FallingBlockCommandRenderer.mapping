@@ -1,16 +1,9 @@
 CLASS net/minecraft/class_11681 net/minecraft/client/render/command/FallingBlockCommandRenderer
-	FIELD field_61826 matrices Lnet/minecraft/class_4587;
 	METHOD method_1_1207 renderBlockStateModels (Lnet/minecraft/class_11788;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_4618;Z)V
 		ARG 1 queue
 		ARG 2 vertexConsumers
 		ARG 3 outlineVertexConsumers
 		ARG 4 blended
-	METHOD method_1_1208 renderBlocks (Lnet/minecraft/class_11788;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_776;Lnet/minecraft/class_4618;Z)V
-		ARG 1 queue
-		ARG 2 vertexConsumers
-		ARG 3 blockRenderManager
-		ARG 4 outlineVertexConsumers
-		ARG 5 blended
 	METHOD method_1_1209 renderMovingBlocks (Lnet/minecraft/class_11788;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_776;Z)V
 		ARG 1 queue
 		ARG 2 vertexConsumers

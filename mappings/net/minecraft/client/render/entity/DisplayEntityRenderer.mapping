@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_8138 net/minecraft/client/render/entity/DisplayEntityRenderer
+	FIELD field_1_2187 blockModelManager Lnet/minecraft/class_1_394;
 	FIELD field_42525 renderDispatcher Lnet/minecraft/class_898;
 	METHOD method_49052 render (Lnet/minecraft/class_10011;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;IF)V
 		ARG 1 state

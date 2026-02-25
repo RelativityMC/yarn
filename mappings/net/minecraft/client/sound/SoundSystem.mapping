@@ -33,6 +33,8 @@ CLASS net/minecraft/class_1140 net/minecraft/client/sound/SoundSystem
 		ARG 1 soundManager
 		ARG 2 options
 		ARG 3 resourceFactory
+	METHOD method_1_2593 forLoadedSounds (Lnet/minecraft/class_4237$class_1_387;)V
+		ARG 1 callback
 	METHOD method_4835 isPlaying (Lnet/minecraft/class_1113;)Z
 		ARG 1 sound
 	METHOD method_4837 reloadSounds ()V

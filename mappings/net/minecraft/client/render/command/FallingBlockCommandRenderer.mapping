@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_11681 net/minecraft/client/render/command/FallingBlockCommandRenderer
+	FIELD field_1_2228 DIRECTIONS [Lnet/minecraft/class_2350;
+	FIELD field_1_2229 RANDOM_SEED J
+	FIELD field_1_2230 random Lnet/minecraft/class_5819;
 	METHOD method_1_1207 renderBlockStateModels (Lnet/minecraft/class_11788;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_4618;Z)V
 		ARG 1 queue
 		ARG 2 vertexConsumers
@@ -19,3 +22,38 @@ CLASS net/minecraft/class_11681 net/minecraft/client/render/command/FallingBlock
 		ARG 2 vertexConsumers
 		ARG 3 blockRenderManager
 		ARG 4 outlineVertexConsumers
+	METHOD method_1_2644 (Lnet/minecraft/class_4587;Lnet/minecraft/class_4597$class_4598;FFFLnet/minecraft/class_777;Lnet/minecraft/class_1_382;)V
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 bakedQuad
+		ARG 6 shading
+	METHOD method_1_2645 (Lnet/minecraft/class_4587;Lnet/minecraft/class_4597$class_4598;FFFLnet/minecraft/class_777;Lnet/minecraft/class_1_382;)V
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 bakedQuad
+		ARG 6 shading
+	METHOD method_1_2646 renderQuad (Lnet/minecraft/class_4587;Lnet/minecraft/class_4597$class_4598;FFFLnet/minecraft/class_777;Lnet/minecraft/class_1_382;Lnet/minecraft/class_11515;)V
+		ARG 0 matrices
+		ARG 1 vertexConsumers
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 bakedQuad
+		ARG 6 shading
+		ARG 7 layer
+	METHOD method_1_2647 renderBlockStateModelPart (Lnet/minecraft/class_10889;Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_1_382;[ILnet/minecraft/class_4588;Lnet/minecraft/class_4588;)V
+		ARG 0 modelPart
+		ARG 1 matrix
+		ARG 2 shading
+		ARG 3 tintLayers
+		ARG 4 vertexConsumer
+		ARG 5 outlineVertexConsumer
+	METHOD method_1_2648 renderBlockStateModelQuad (Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_777;Lnet/minecraft/class_1_382;[ILnet/minecraft/class_4588;Lnet/minecraft/class_4588;)V
+		ARG 0 matrix
+		ARG 1 quad
+		ARG 2 shading
+		ARG 3 tintLayers
+		ARG 4 vertexConsumer
+		ARG 5 outlineVertexConsumer

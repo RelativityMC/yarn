@@ -50,6 +50,12 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 		ARG 2 top
 		ARG 3 right
 		ARG 4 bottom
+	METHOD method_1_2572 setImeEnabled (Z)V
+		ARG 1 enabled
+	METHOD method_1_2573 enableIme ()V
+	METHOD method_1_2574 disableIme ()V
+	METHOD method_1_2575 setImeEnabledImpl (Z)V
+		ARG 1 enabled
 	METHOD method_4474 setPhase (Ljava/lang/String;)V
 		ARG 1 phase
 	METHOD method_4475 applyFullscreenVideoMode ()V

@@ -1,4 +1,6 @@
 CLASS com/mojang/blaze3d/opengl/GlStateManager
+	METHOD _activeTexture (I)V
+		ARG 0 texture
 	METHOD _bindTexture (I)V
 		ARG 0 texture
 	METHOD _blendFuncSeparate (IIII)V
@@ -6,8 +8,16 @@ CLASS com/mojang/blaze3d/opengl/GlStateManager
 		ARG 1 dstFactorRgb
 		ARG 2 srcFactorAlpha
 		ARG 3 dstFactorAlpha
+	METHOD _clear (I)V
+		ARG 0 mask
+	METHOD _colorMask (I)V
+		ARG 0 writeMask
 	METHOD _deleteTexture (I)V
 		ARG 0 texture
+	METHOD _depthFunc (I)V
+		ARG 0 func
+	METHOD _depthMask (Z)V
+		ARG 0 mask
 	METHOD _drawElements (IIIJ)V
 		ARG 1 type
 		ARG 2 count
@@ -27,9 +37,14 @@ CLASS com/mojang/blaze3d/opengl/GlStateManager
 		ARG 3 range
 	METHOD _glUniform1i (II)V
 		ARG 1 value
+	METHOD _logicOp (I)V
+		ARG 0 op
 	METHOD _pixelStore (II)V
 		ARG 0 pname
 		ARG 1 param
+	METHOD _polygonOffset (FF)V
+		ARG 0 factor
+		ARG 1 units
 	METHOD _readPixels (IIIIIIJ)V
 		ARG 0 x
 		ARG 1 y
@@ -38,6 +53,11 @@ CLASS com/mojang/blaze3d/opengl/GlStateManager
 		ARG 4 format
 		ARG 5 type
 		ARG 6 data
+	METHOD _scissorBox (IIII)V
+		ARG 0 x
+		ARG 1 y
+		ARG 2 width
+		ARG 3 height
 	METHOD _texImage2D (IIIIIIIILjava/nio/ByteBuffer;)V
 		ARG 2 internalFormat
 	METHOD _texParameter (III)V

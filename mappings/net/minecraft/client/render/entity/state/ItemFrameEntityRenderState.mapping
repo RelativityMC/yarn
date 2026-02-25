@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_10040 net/minecraft/client/render/entity/state/ItemFrameEntityRenderState
+	FIELD field_1_2240 frame Lnet/minecraft/class_1_395;
 	FIELD field_53438 facing Lnet/minecraft/class_2350;
 	FIELD field_53440 rotation I
 	FIELD field_53441 glow Z

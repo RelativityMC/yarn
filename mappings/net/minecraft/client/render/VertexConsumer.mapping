@@ -7,6 +7,13 @@ CLASS net/minecraft/class_4588 net/minecraft/client/render/VertexConsumer
 	METHOD method_1_2197 quad (Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_777;Lnet/minecraft/class_1_382;)V
 		ARG 1 matrix
 		ARG 2 quad
+		ARG 3 shading
+	METHOD method_1_2594 quad (FFFLnet/minecraft/class_777;Lnet/minecraft/class_1_382;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 quad
+		ARG 5 shading
 	METHOD method_1336 color (IIII)Lnet/minecraft/class_4588;
 		COMMENT Specifies the {@linkplain VertexFormats#COLOR_ELEMENT
 		COMMENT color element} of the current vertex.

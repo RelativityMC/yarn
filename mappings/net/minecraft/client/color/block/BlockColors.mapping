@@ -6,22 +6,27 @@ CLASS net/minecraft/class_324 net/minecraft/client/color/block/BlockColors
 	FIELD field_55228 LILY_PAD I
 	METHOD method_1684 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1_393;Lnet/minecraft/class_2338;I)I
 		ARG 0 state
+		ARG 1 blockRenderView
 		ARG 2 pos
 		ARG 3 tintIndex
 	METHOD method_1685 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1_393;Lnet/minecraft/class_2338;I)I
 		ARG 0 state
+		ARG 1 blockRenderView
 		ARG 2 pos
 		ARG 3 tintIndex
 	METHOD method_1686 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1_393;Lnet/minecraft/class_2338;I)I
 		ARG 0 state
+		ARG 1 blockRenderView
 		ARG 2 pos
 		ARG 3 tintIndex
 	METHOD method_1687 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1_393;Lnet/minecraft/class_2338;I)I
 		ARG 0 state
+		ARG 1 blockRenderView
 		ARG 2 pos
 		ARG 3 tintIndex
 	METHOD method_1688 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1_393;Lnet/minecraft/class_2338;I)I
 		ARG 0 state
+		ARG 1 blockRenderView
 		ARG 2 pos
 		ARG 3 tintIndex
 	METHOD method_1689 create ()Lnet/minecraft/class_324;
@@ -38,22 +43,27 @@ CLASS net/minecraft/class_324 net/minecraft/client/color/block/BlockColors
 		ARG 3 pos
 	METHOD method_1692 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1_393;Lnet/minecraft/class_2338;I)I
 		ARG 0 state
+		ARG 1 blockRenderView
 		ARG 2 pos
 		ARG 3 tintIndex
 	METHOD method_1693 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1_393;Lnet/minecraft/class_2338;I)I
 		ARG 0 state
+		ARG 1 blockRenderView
 		ARG 2 pos
 		ARG 3 tintIndex
 	METHOD method_1695 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1_393;Lnet/minecraft/class_2338;I)I
 		ARG 0 state
+		ARG 1 blockRenderView
 		ARG 2 pos
 		ARG 3 tintIndex
 	METHOD method_1696 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1_393;Lnet/minecraft/class_2338;I)I
 		ARG 0 state
+		ARG 1 blockRenderView
 		ARG 2 pos
 		ARG 3 tintIndex
 	METHOD method_1697 getColor (Lnet/minecraft/class_2680;Lnet/minecraft/class_1_393;Lnet/minecraft/class_2338;I)I
 		ARG 1 state
+		ARG 2 blockRenderView
 		ARG 3 pos
 		ARG 4 tintIndex
 	METHOD method_21592 getProperties (Lnet/minecraft/class_2248;)Ljava/util/Set;
@@ -66,17 +76,21 @@ CLASS net/minecraft/class_324 net/minecraft/client/color/block/BlockColors
 		ARG 2 blocks
 	METHOD method_49295 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1_393;Lnet/minecraft/class_2338;I)I
 		ARG 0 state
+		ARG 1 blockRenderView
 		ARG 2 pos
 		ARG 3 tintIndex
 	METHOD method_67245 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1_393;Lnet/minecraft/class_2338;I)I
 		ARG 0 state
+		ARG 1 blockRenderView
 		ARG 2 pos
 		ARG 3 tintIndex
 	METHOD method_68158 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1_393;Lnet/minecraft/class_2338;I)I
 		ARG 0 state
+		ARG 1 blockRenderView
 		ARG 2 pos
 		ARG 3 tintIndex
 	METHOD method_68159 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1_393;Lnet/minecraft/class_2338;I)I
 		ARG 0 state
+		ARG 1 blockRenderView
 		ARG 2 pos
 		ARG 3 tintIndex

@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_386 com/mojang/blaze3d/pipeline/DepthStencilState
+	FIELD field_1_2174 ENABLE_DEPTH Lnet/minecraft/class_1_386;
+	METHOD <init> (Lnet/minecraft/class_1_381;Z)V
+		ARG 1 depthTest
+		ARG 2 writeDepth

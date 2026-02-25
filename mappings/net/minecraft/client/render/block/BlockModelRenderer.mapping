@@ -1,3 +1,67 @@
 CLASS net/minecraft/class_778 net/minecraft/client/render/block/BlockModelRenderer
+	FIELD field_1_2202 ao Z
+	FIELD field_1_2203 chunked Z
+	FIELD field_1_2204 aoCalculator Lnet/minecraft/class_1_392;
+	FIELD field_1_2205 modelParts Ljava/util/List;
+	FIELD field_1_2206 shading Lnet/minecraft/class_1_382;
+	FIELD field_1_2207 random Lnet/minecraft/class_5819;
+	FIELD field_1_2208 neighborPos Lnet/minecraft/class_2338$class_2339;
+	FIELD field_1_2209 lastTintIndex I
+	FIELD field_1_2210 colorOfLastTintIndex I
+	FIELD field_1_2211 tintedShading Lnet/minecraft/class_1_382;
 	FIELD field_4178 colors Lnet/minecraft/class_324;
 	FIELD field_27743 DIRECTIONS [Lnet/minecraft/class_2350;
+	METHOD <init> (ZZLnet/minecraft/class_324;)V
+		ARG 1 ao
+		ARG 2 chunked
+		ARG 3 colors
+	METHOD method_1_2627 forceSolid (ZLnet/minecraft/class_2680;)Z
+		ARG 0 cutoutLeaves
+		ARG 1 state
+	METHOD method_1_2628 getTintColor (Lnet/minecraft/class_1_393;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;I)I
+		ARG 1 blockRenderView
+		ARG 2 state
+		ARG 3 pos
+		ARG 4 tintIndex
+	METHOD method_1_2629 renderQuad (Lnet/minecraft/class_1_319;FFFLnet/minecraft/class_1_393;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_777;)V
+		ARG 1 callback
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 blockRenderView
+		ARG 6 state
+		ARG 7 pos
+		ARG 8 quad
+	METHOD method_1_2630 shouldDrawSide (Lnet/minecraft/class_1_393;Lnet/minecraft/class_2680;Lnet/minecraft/class_2350;Lnet/minecraft/class_2338;)Z
+		ARG 1 blockRenderView
+		ARG 2 state
+		ARG 3 direction
+		ARG 4 neighborPos
+	METHOD method_1_2631 renderModelPartsWithAo (Lnet/minecraft/class_1_319;FFFLjava/util/List;Lnet/minecraft/class_1_393;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;)V
+		ARG 1 callback
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 modelParts
+		ARG 6 blockRenderView
+		ARG 7 state
+		ARG 8 pos
+	METHOD method_1_2632 renderModel (Lnet/minecraft/class_1_319;FFFLnet/minecraft/class_1_393;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_1087;J)V
+		ARG 1 callback
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 blockRenderView
+		ARG 6 pos
+		ARG 7 state
+		ARG 8 model
+		ARG 9 seed
+	METHOD method_1_2633 renderModelPartsWithoutAo (Lnet/minecraft/class_1_319;FFFLjava/util/List;Lnet/minecraft/class_1_393;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;)V
+		ARG 1 callback
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 modelParts
+		ARG 6 blockRenderView
+		ARG 7 state
+		ARG 8 pos

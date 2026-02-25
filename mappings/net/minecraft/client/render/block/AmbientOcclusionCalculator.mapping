@@ -1,0 +1,87 @@
+CLASS net/minecraft/class_1_392 net/minecraft/client/render/block/AmbientOcclusionCalculator
+	FIELD field_1_2188 BRIGHTNESS_CACHE Ljava/lang/ThreadLocal;
+	FIELD field_1_2191 brightnessCache Lnet/minecraft/class_1_392$class_4303;
+	FIELD field_1_2192 isExtremalFace Z
+	FIELD field_1_2193 isPartialFace Z
+	FIELD field_1_2194 weightsByNeighborOrientation [F
+	FIELD field_1_2195 workingPos Lnet/minecraft/class_2338$class_2339;
+	METHOD method_1_2613 disableBrightnessCache ()V
+	METHOD method_1_2614 enableBrightnessCache ()V
+	METHOD method_1_2615 getLightmapCoordinates (Lnet/minecraft/class_2680;Lnet/minecraft/class_1_393;Lnet/minecraft/class_2338;)I
+		ARG 1 state
+		ARG 2 blockRenderView
+		ARG 3 pos
+	METHOD method_1_2616 shadeSmooth (Lnet/minecraft/class_1_393;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_777;Lnet/minecraft/class_1_382;)V
+		ARG 1 blockRenderView
+		ARG 2 state
+		ARG 3 pos
+		ARG 4 bakedQuad
+		ARG 5 shadingOut
+	METHOD method_1_2617 shadeFlat (Lnet/minecraft/class_1_393;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;ILnet/minecraft/class_777;Lnet/minecraft/class_1_382;)V
+		ARG 1 blockRenderView
+		ARG 2 state
+		ARG 3 pos
+		ARG 4 light
+		ARG 5 quad
+		ARG 6 shadingOut
+	METHOD method_1_2618 getQuadDimensions (Lnet/minecraft/class_1_393;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_777;Z)V
+		ARG 1 blockRenderView
+		ARG 2 state
+		ARG 3 pos
+		ARG 4 bakedQuad
+		ARG 5 ao
+	CLASS class_779 NeighborData
+		FIELD field_4189 nonCubicWeight Z
+		FIELD field_4190 VALUES [Lnet/minecraft/class_1_392$class_779;
+		FIELD field_4191 faces [Lnet/minecraft/class_2350;
+		METHOD <init> (Ljava/lang/String;I[Lnet/minecraft/class_2350;FZ[Lnet/minecraft/class_1_392$class_782;[Lnet/minecraft/class_1_392$class_782;[Lnet/minecraft/class_1_392$class_782;[Lnet/minecraft/class_1_392$class_782;)V
+			ARG 3 faces
+			ARG 5 nonCubicWeight
+		METHOD method_3378 getData (Lnet/minecraft/class_2350;)Lnet/minecraft/class_1_392$class_779;
+			ARG 0 direction
+		METHOD method_3383 ([Lnet/minecraft/class_1_392$class_779;)V
+			ARG 0 values
+	CLASS class_781 Translation
+		FIELD field_4198 thirdCorner I
+		FIELD field_4201 secondCorner I
+		FIELD field_4202 VALUES [Lnet/minecraft/class_1_392$class_781;
+		FIELD field_4203 firstCorner I
+		FIELD field_4209 fourthCorner I
+		METHOD <init> (Ljava/lang/String;IIIII)V
+			ARG 3 firstCorner
+			ARG 4 secondCorner
+			ARG 5 thirdCorner
+			ARG 6 fourthCorner
+		METHOD method_3390 ([Lnet/minecraft/class_1_392$class_781;)V
+			ARG 0 values
+		METHOD method_3394 getTranslations (Lnet/minecraft/class_2350;)Lnet/minecraft/class_1_392$class_781;
+			ARG 0 direction
+	CLASS class_782 NeighborOrientation
+		FIELD field_58167 SIZE I
+		FIELD field_58168 index I
+		METHOD <init> (Ljava/lang/String;II)V
+			ARG 3 index
+	CLASS class_4303 BrightnessCache
+		FIELD field_19320 enabled Z
+		FIELD field_19321 lightmapCoordinateCache Lit/unimi/dsi/fastutil/longs/Long2IntLinkedOpenHashMap;
+		FIELD field_19322 aoCache Lit/unimi/dsi/fastutil/longs/Long2FloatLinkedOpenHashMap;
+		FIELD field_58201 brightnessGetter Lnet/minecraft/class_761$class_10948;
+		METHOD method_1_2621 (Lnet/minecraft/class_1920;Lnet/minecraft/class_2338;)I
+			ARG 1 world
+			ARG 2 pos
+		METHOD method_20548 enable ()V
+		METHOD method_20549 getLightmapCoordinates (Lnet/minecraft/class_2680;Lnet/minecraft/class_1_393;Lnet/minecraft/class_2338;)I
+			ARG 1 state
+			ARG 2 blockRenderView
+			ARG 3 pos
+		METHOD method_20550 disable ()V
+		METHOD method_20551 getAmbientOcclusionLightLevel (Lnet/minecraft/class_2680;Lnet/minecraft/class_1_393;Lnet/minecraft/class_2338;)F
+			ARG 1 state
+			ARG 2 blockRenderView
+			ARG 3 pos
+		CLASS 1 1
+			METHOD rehash (I)V
+				ARG 1 newN
+		CLASS 2 2
+			METHOD rehash (I)V
+				ARG 1 newN

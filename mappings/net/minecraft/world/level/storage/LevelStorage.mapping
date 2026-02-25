@@ -21,6 +21,18 @@ CLASS net/minecraft/class_32 net/minecraft/world/level/storage/LevelStorage
 		ARG 0 saveProperties
 		ARG 1 saveDir
 		ARG 2 gameRules
+	METHOD method_1_2548 (Lnet/minecraft/class_2378;Lcom/mojang/serialization/DataResult$Error;)Lnet/minecraft/class_7726;
+		ARG 1 error
+	METHOD method_1_2611 writeDataFile (Ljava/nio/file/Path;Lcom/mojang/serialization/DynamicOps;Lnet/minecraft/class_10741;Lcom/mojang/serialization/Codec;Ljava/lang/Object;)V
+		ARG 0 saveDir
+		ARG 1 nbtOps
+		ARG 2 persistentStateType
+		ARG 3 codec
+		ARG 4 value
+	METHOD method_1_2612 writeWorldGenSettingsFile (Lnet/minecraft/class_5455;Ljava/nio/file/Path;Lnet/minecraft/class_7726;)V
+		ARG 0 dynamicRegistryManager
+		ARG 1 saveDir
+		ARG 2 worldGenSettings
 	METHOD method_230 levelExists (Ljava/lang/String;)Z
 		ARG 1 name
 	METHOD method_235 getLevelList ()Lnet/minecraft/class_32$class_7410;

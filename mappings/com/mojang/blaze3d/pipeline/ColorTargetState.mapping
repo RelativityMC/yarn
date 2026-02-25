@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_1_384 com/mojang/blaze3d/pipeline/ColorTargetState
+	FIELD field_1_2165 DEFAULT Lnet/minecraft/class_1_384;
+	FIELD field_1_2166 WRITE_ALL I
+	FIELD field_1_2167 WRITE_ALPHA I
+	FIELD field_1_2168 WRITE_BLUE I
+	FIELD field_1_2169 WRITE_RGB I
+	FIELD field_1_2170 WRITE_GREEN I
+	FIELD field_1_2171 WRITE_NONE I
+	FIELD field_1_2172 WRITE_RED I
+	METHOD <init> (Lcom/mojang/blaze3d/pipeline/BlendFunction;)V
+		ARG 1 blendFunction
+	METHOD method_1_2598 writesAlpha ()Z
+	METHOD method_1_2599 writesBlue ()Z
+	METHOD method_1_2600 writesGreen ()Z
+	METHOD method_1_2601 writesRed ()Z
+	CLASS class_1_385 WriteMask

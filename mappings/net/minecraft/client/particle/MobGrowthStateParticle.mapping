@@ -1,0 +1,13 @@
+CLASS net/minecraft/class_1_389 net/minecraft/client/particle/MobGrowthStateParticle
+	METHOD <init> (Lnet/minecraft/class_638;DDDDDDLnet/minecraft/class_1058;Z)V
+		ARG 1 world
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 velocityX
+		ARG 10 velocityY
+		ARG 12 velocityZ
+		ARG 14 sprite
+		ARG 15 resume
+	CLASS class_1_390 PauseFactory
+	CLASS class_1_391 ResumeFactory

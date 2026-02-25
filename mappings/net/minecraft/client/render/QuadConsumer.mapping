@@ -1,2 +1,7 @@
 CLASS net/minecraft/class_1_319 net/minecraft/client/render/QuadConsumer
 	METHOD method_1_2309 accept (FFFLnet/minecraft/class_777;Lnet/minecraft/class_1_382;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 bakedQuad
+		ARG 5 shading

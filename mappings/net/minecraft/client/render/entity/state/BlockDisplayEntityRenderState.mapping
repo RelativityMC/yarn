@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_10003 net/minecraft/client/render/entity/state/BlockDisplayEntityRenderState
+	FIELD field_1_2244 block Lnet/minecraft/class_1_395;

@@ -17,4 +17,7 @@ CLASS net/minecraft/class_10231 net/minecraft/client/realms/gui/screen/RealmsWor
 		ARG 5 v
 		ARG 6 throwable
 	METHOD method_64337 saveTempWorld (Lnet/minecraft/class_5455;Lnet/minecraft/class_8895$class_1_251;Ljava/util/Optional;Ljava/nio/file/Path;)Ljava/nio/file/Path;
+		ARG 0 dynamicRegistryManager
+		ARG 1 propertiesAndSettings
+		ARG 2 gameRules
 		ARG 3 dataPackTempDir

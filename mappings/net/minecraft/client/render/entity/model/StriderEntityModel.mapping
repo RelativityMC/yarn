@@ -6,3 +6,10 @@ CLASS net/minecraft/class_1_377 net/minecraft/client/render/entity/model/Strider
 		ARG 1 limbSwingAnimationProgress
 		ARG 2 limbSwingAmplitude
 		ARG 3 age
+	METHOD method_1_2634 updateBristleAngles (FFLnet/minecraft/class_630;Lnet/minecraft/class_630;Lnet/minecraft/class_630;Ljava/util/function/BiConsumer;)V
+		ARG 1 age
+		ARG 2 limbSwing
+		ARG 3 topBristle
+		ARG 4 middleBristle
+		ARG 5 bottomBristle
+		ARG 6 bristleUpdater

@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_1920 net/minecraft/world/BlockRenderView
+CLASS net/minecraft/class_1920 net/minecraft/world/BlockLightingView
 	METHOD method_8311 isSkyVisible (Lnet/minecraft/class_2338;)Z
 		COMMENT {@return if the sky is visible at {@code pos}}
 		COMMENT

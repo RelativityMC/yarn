@@ -9,6 +9,7 @@ CLASS net/minecraft/class_11515 net/minecraft/client/render/BlockRenderLayer
 		ARG 5 translucent
 	METHOD method_1_2334 forTransparency (Lnet/minecraft/class_1_303;)Lnet/minecraft/class_11515;
 		ARG 0 transparency
+	METHOD method_1_2622 getVertexFormat ()Lcom/mojang/blaze3d/vertex/VertexFormat;
 	METHOD method_72020 getPipeline ()Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	METHOD method_72021 getBufferSize ()I
 	METHOD method_72022 getName ()Ljava/lang/String;

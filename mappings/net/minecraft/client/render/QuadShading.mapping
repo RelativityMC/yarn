@@ -1,0 +1,36 @@
+CLASS net/minecraft/class_1_382 net/minecraft/client/render/QuadShading
+	FIELD field_1_2149 color0 I
+	FIELD field_1_2150 color1 I
+	FIELD field_1_2151 color2 I
+	FIELD field_1_2152 color3 I
+	FIELD field_1_2153 light0 I
+	FIELD field_1_2154 light1 I
+	FIELD field_1_2155 light2 I
+	FIELD field_1_2156 light3 I
+	FIELD field_1_2157 overlayTexture I
+	METHOD method_1_2581 copyFrom (Lnet/minecraft/class_1_382;)V
+		ARG 1 other
+	METHOD method_1_2582 getColor (I)I
+		ARG 1 index
+	METHOD method_1_2583 getLight (I)I
+		ARG 1 index
+	METHOD method_1_2584 getLight (II)I
+		ARG 1 index
+		ARG 2 emission
+	METHOD method_1_2585 mixColors (I)V
+		ARG 1 color
+	METHOD method_1_2586 getOverlayTexture ()I
+	METHOD method_1_2587 scaleColors (F)V
+		ARG 1 scale
+	METHOD method_1_2588 setColor (I)V
+		ARG 1 color
+	METHOD method_1_2589 setColor (II)V
+		ARG 1 index
+		ARG 2 color
+	METHOD method_1_2590 setLight (I)V
+		ARG 1 light
+	METHOD method_1_2591 setLight (II)V
+		ARG 1 index
+		ARG 2 light
+	METHOD method_1_2592 setOverlayTexture (I)V
+		ARG 1 overlayTexture

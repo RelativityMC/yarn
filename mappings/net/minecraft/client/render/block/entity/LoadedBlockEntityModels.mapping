@@ -3,5 +3,7 @@ CLASS net/minecraft/class_10418 net/minecraft/client/render/block/entity/LoadedB
 	FIELD field_55270 renderers Ljava/util/Map;
 	METHOD <init> (Ljava/util/Map;)V
 		ARG 1 renderers
+	METHOD method_1_2635 getSpecialModelRenderer (Lnet/minecraft/class_2248;)Lnet/minecraft/class_10515;
+		ARG 1 block
 	METHOD method_65536 fromModels (Lnet/minecraft/class_10515$class_11695;)Lnet/minecraft/class_10418;
 		ARG 0 context

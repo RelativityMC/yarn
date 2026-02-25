@@ -16,6 +16,7 @@ CLASS net/minecraft/class_12279 net/minecraft/world/rule/GameRule
 		ARG 6 commandResultSupplier
 		ARG 7 defaultValue
 		ARG 8 requiredFeatures
+	METHOD method_1_2505 getIdOrFallback ()Lnet/minecraft/class_2960;
 	METHOD method_76144 toShortString ()Ljava/lang/String;
 	METHOD method_76145 accept (Lnet/minecraft/class_4311;)V
 		ARG 1 visitor

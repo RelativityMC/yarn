@@ -3,6 +3,11 @@ CLASS net/minecraft/class_4237 net/minecraft/client/sound/SoundLoader
 	FIELD field_18944 loadedSounds Ljava/util/Map;
 	METHOD <init> (Lnet/minecraft/class_5912;)V
 		ARG 1 resourceFactory
+	METHOD method_1_2602 forLoadedSounds (Lnet/minecraft/class_4237$class_1_387;)V
+		ARG 1 callback
+	METHOD method_1_2603 (Lnet/minecraft/class_4237$class_1_387;Lnet/minecraft/class_2960;Ljava/util/concurrent/CompletableFuture;)V
+		ARG 1 id
+		ARG 2 future
 	METHOD method_19738 close ()V
 	METHOD method_19740 (Lnet/minecraft/class_1111;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 sound
@@ -17,3 +22,13 @@ CLASS net/minecraft/class_4237 net/minecraft/client/sound/SoundLoader
 		ARG 2 repeatInstantly
 	METHOD method_19746 (Lnet/minecraft/class_2960;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 id2
+	CLASS class_1_387 StatisticsConsumer
+		METHOD method_1_2604 accept (Lnet/minecraft/class_2960;ILjavax/sound/sampled/AudioFormat;)V
+			ARG 1 id
+			ARG 2 size
+			ARG 3 format
+		CLASS class_1_388 Ledger
+			FIELD field_1_2175 bufferCount I
+			FIELD field_1_2176 totalBufferSize J
+			METHOD method_1_2605 getBufferCount ()I
+			METHOD method_1_2606 getTotalBufferSize ()J

@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_10429 net/minecraft/client/render/entity/state/SnowGolemEntityRenderState
+	FIELD field_1_2241 head Lnet/minecraft/class_1_395;

@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_1928 net/minecraft/world/rule/GameRules
+	FIELD field_1_2071 LOGGER Lorg/slf4j/Logger;
 	FIELD field_9196 rules Lnet/minecraft/class_12280;
 	FIELD field_19388 Lnet/minecraft/class_12279;
 		COMMENT A {@linkplain Rule game rule} which regulates whether mobs can modify the world.
@@ -41,6 +42,8 @@ CLASS net/minecraft/class_1928 net/minecraft/world/rule/GameRules
 	METHOD <init> (Lnet/minecraft/class_7699;Lnet/minecraft/class_12280;)V
 		ARG 1 enabledFeatures
 		ARG 2 rules
+	METHOD method_1_1754 (Lnet/minecraft/class_7699;Lnet/minecraft/class_12280;Lnet/minecraft/class_12279;)V
+		ARG 2 rule
 	METHOD method_8359 register (Ljava/lang/String;Lnet/minecraft/class_5198;Lnet/minecraft/class_11845;Lcom/mojang/brigadier/arguments/ArgumentType;Lcom/mojang/serialization/Codec;Ljava/lang/Object;Lnet/minecraft/class_7699;Lnet/minecraft/class_1928$class_5199;Ljava/util/function/ToIntFunction;)Lnet/minecraft/class_12279;
 		ARG 0 name
 		ARG 1 category
@@ -80,6 +83,8 @@ CLASS net/minecraft/class_1928 net/minecraft/world/rule/GameRules
 		ARG 3 rule
 	METHOD method_76190 (Lnet/minecraft/class_4311;Lnet/minecraft/class_12279;)V
 		ARG 1 rule
+	METHOD method_76191 (Lnet/minecraft/class_1928;)Lnet/minecraft/class_12280;
+		ARG 0 gameRules
 	METHOD method_76192 copyFrom (Lnet/minecraft/class_1928;Lnet/minecraft/server/MinecraftServer;)V
 		ARG 1 rules
 		ARG 2 server

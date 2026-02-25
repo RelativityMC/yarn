@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_4231 net/minecraft/client/sound/StaticSound
+	FIELD field_1_2138 size I
 	FIELD field_18916 sample Ljava/nio/ByteBuffer;
 	FIELD field_18917 format Ljavax/sound/sampled/AudioFormat;
 	FIELD field_18918 hasBuffer Z
@@ -6,6 +7,9 @@ CLASS net/minecraft/class_4231 net/minecraft/client/sound/StaticSound
 	METHOD <init> (Ljava/nio/ByteBuffer;Ljavax/sound/sampled/AudioFormat;)V
 		ARG 1 sample
 		ARG 2 format
+	METHOD method_1_2576 getFormat ()Ljavax/sound/sampled/AudioFormat;
+	METHOD method_1_2577 isPresent ()Z
+	METHOD method_1_2578 getSize ()I
 	METHOD method_19686 getStreamBufferPointer ()Ljava/util/OptionalInt;
 	METHOD method_19687 close ()V
 	METHOD method_19688 takeStreamBufferPointer ()Ljava/util/OptionalInt;

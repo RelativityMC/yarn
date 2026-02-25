@@ -40,6 +40,7 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 1 matrices
 		ARG 2 renderLayer
 		ARG 3 model
+		ARG 4 tintLayers
 		ARG 5 lightCoords
 		ARG 6 overlayCoords
 		ARG 7 light

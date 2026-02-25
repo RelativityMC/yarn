@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_1_394 net/minecraft/client/render/block/BlockModelManager
+	FIELD field_1_2199 blockColors Lnet/minecraft/class_324;
+	FIELD field_1_2200 bakedModelManager Lnet/minecraft/class_1092;
+	METHOD <init> (Lnet/minecraft/class_1092;Lnet/minecraft/class_324;)V
+		ARG 1 bakedModelManager
+		ARG 2 blockColors
+	METHOD method_1_2624 setBlockRenderState (Lnet/minecraft/class_1_395;Lnet/minecraft/class_2680;)V
+		ARG 1 renderStateOut
+		ARG 2 state
+	METHOD method_1_2625 setItemFrameBlockRenderState (Lnet/minecraft/class_1_395;ZZ)V
+		ARG 1 renderStateOut
+		ARG 2 hasGlow
+		ARG 3 hasMap
+	METHOD method_1_2626 setTints (Lnet/minecraft/class_1_395;Lnet/minecraft/class_2680;)V
+		ARG 1 renderStateOut
+		ARG 2 state

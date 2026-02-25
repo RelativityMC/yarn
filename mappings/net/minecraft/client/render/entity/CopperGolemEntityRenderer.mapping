@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_11678 net/minecraft/client/render/entity/CopperGolemEntityRenderer
+	FIELD field_1_2218 blockModelManager Lnet/minecraft/class_1_394;
 	METHOD method_72967 (Lnet/minecraft/class_11679;F)F
 		ARG 0 state
 		ARG 1 tickProgress

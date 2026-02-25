@@ -1,5 +1,0 @@
-CLASS net/minecraft/class_1_383
-	CLASS class_12325 CardinalLightType
-		FIELD field_64383 name Ljava/lang/String;
-		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lnet/minecraft/class_1_383;)V
-			ARG 3 name

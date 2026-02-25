@@ -19,6 +19,8 @@ CLASS net/minecraft/class_5819 net/minecraft/util/math/random/Random
 	COMMENT the Java random number generator algorithm.
 	COMMENT
 	COMMENT @see java.util.random
+	METHOD method_1_2569 createLocal (J)Lnet/minecraft/class_5819;
+		ARG 0 seed
 	METHOD method_33650 skip (I)V
 		ARG 1 count
 	METHOD method_38420 split ()Lnet/minecraft/class_5819;

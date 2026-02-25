@@ -1,3 +1,4 @@
 CLASS net/minecraft/class_894 net/minecraft/client/render/entity/EndermanEntityRenderer
+	FIELD field_1_2197 blockModelManager Lnet/minecraft/class_1_394;
 	FIELD field_4666 TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_4667 random Lnet/minecraft/class_5819;

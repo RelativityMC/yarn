@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_1_383 net/minecraft/world/dimension/CardinalLighting
+	FIELD field_1_2160 DEFAULT Lnet/minecraft/class_1_383;
+	FIELD field_1_2161 NETHER Lnet/minecraft/class_1_383;
+	METHOD method_1_2596 get (Lnet/minecraft/class_2350;)F
+		ARG 1 direction
+	CLASS class_12325 Type
+		FIELD field_1_2163 lighting Lnet/minecraft/class_1_383;
+		FIELD field_64383 name Ljava/lang/String;
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lnet/minecraft/class_1_383;)V
+			ARG 3 name
+			ARG 4 lighting
+		METHOD method_1_2597 getLighting ()Lnet/minecraft/class_1_383;

@@ -6,7 +6,7 @@ CLASS net/minecraft/class_5617 net/minecraft/client/render/entity/EntityRenderer
 		FIELD field_27764 resourceManager Lnet/minecraft/class_3300;
 		FIELD field_27765 entityModels Lnet/minecraft/class_5599;
 		FIELD field_27766 textRenderer Lnet/minecraft/class_327;
-		FIELD field_38888 blockRenderManager Lnet/minecraft/class_1_394;
+		FIELD field_38888 blockModelManager Lnet/minecraft/class_1_394;
 		FIELD field_53190 mapRenderer Lnet/minecraft/class_330;
 		FIELD field_54174 equipmentModelLoader Lnet/minecraft/class_10201;
 		FIELD field_54175 equipmentRenderer Lnet/minecraft/class_10197;
@@ -15,6 +15,9 @@ CLASS net/minecraft/class_5617 net/minecraft/client/render/entity/EntityRenderer
 		FIELD field_62255 playerSkinCache Lnet/minecraft/class_11786;
 		METHOD <init> (Lnet/minecraft/class_898;Lnet/minecraft/class_1_394;Lnet/minecraft/class_10442;Lnet/minecraft/class_330;Lnet/minecraft/class_3300;Lnet/minecraft/class_5599;Lnet/minecraft/class_10201;Lnet/minecraft/class_11697;Lnet/minecraft/class_327;Lnet/minecraft/class_11786;)V
 			ARG 1 renderDispatcher
+			ARG 2 blockModelManager
+			ARG 3 itemModelManager
+			ARG 4 mapRenderer
 			ARG 5 resourceManager
 			ARG 6 entityModels
 			ARG 7 equipmentModelLoader
@@ -27,7 +30,7 @@ CLASS net/minecraft/class_5617 net/minecraft/client/render/entity/EntityRenderer
 		METHOD method_32169 getResourceManager ()Lnet/minecraft/class_3300;
 		METHOD method_32170 getEntityModels ()Lnet/minecraft/class_5599;
 		METHOD method_32171 getTextRenderer ()Lnet/minecraft/class_327;
-		METHOD method_43337 getBlockRenderManager ()Lnet/minecraft/class_1_394;
+		METHOD method_43337 getBlockModelManager ()Lnet/minecraft/class_1_394;
 		METHOD method_62427 getMapRenderer ()Lnet/minecraft/class_330;
 		METHOD method_64071 getEquipmentModelLoader ()Lnet/minecraft/class_10201;
 		METHOD method_64072 getEquipmentRenderer ()Lnet/minecraft/class_10197;

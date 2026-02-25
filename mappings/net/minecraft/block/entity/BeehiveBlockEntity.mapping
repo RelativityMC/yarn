@@ -68,6 +68,9 @@ CLASS net/minecraft/class_4482 net/minecraft/block/entity/BeehiveBlockEntity
 		FIELD field_49411 CODEC Lcom/mojang/serialization/Codec;
 		FIELD field_49412 LIST_CODEC Lcom/mojang/serialization/Codec;
 		FIELD field_49413 PACKET_CODEC Lnet/minecraft/class_9139;
+		METHOD method_1_2558 tickBreedingAge (ILnet/minecraft/class_4466;)V
+			ARG 0 ticksInHive
+			ARG 1 bee
 		METHOD method_57584 create (I)Lnet/minecraft/class_4482$class_9309;
 			ARG 0 ticksInHive
 		METHOD method_57585 tickEntity (ILnet/minecraft/class_4466;)V

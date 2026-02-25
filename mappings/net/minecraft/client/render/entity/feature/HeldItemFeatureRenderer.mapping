@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_989 net/minecraft/client/render/entity/feature/HeldItemFeatureRenderer
+	METHOD method_1_2653 isBaby (Lnet/minecraft/class_10426;)Z
+		ARG 1 state
 	METHOD method_4192 renderItem (Lnet/minecraft/class_10426;Lnet/minecraft/class_10444;Lnet/minecraft/class_1799;Lnet/minecraft/class_1306;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;I)V
 		ARG 1 entityState
 		ARG 2 itemState

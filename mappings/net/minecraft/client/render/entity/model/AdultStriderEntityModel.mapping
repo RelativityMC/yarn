@@ -17,4 +17,10 @@ CLASS net/minecraft/class_4997 net/minecraft/client/render/entity/model/AdultStr
 		COMMENT The key of the left middle bristle model part, whose value is {@value}.
 	FIELD field_32569 LEFT_BOTTOM_BRISTLE Ljava/lang/String;
 		COMMENT The key of the left bottom bristle model part, whose value is {@value}.
+	METHOD method_1_2654 (Lnet/minecraft/class_630;Ljava/lang/Float;)V
+		ARG 0 bristle
+		ARG 1 dt
+	METHOD method_1_2655 (Lnet/minecraft/class_630;Ljava/lang/Float;)V
+		ARG 0 bristle
+		ARG 1 dt
 	METHOD method_32058 getTexturedModelData ()Lnet/minecraft/class_5607;

@@ -5,7 +5,7 @@ CLASS net/minecraft/class_5801 net/minecraft/block/BigDripleafBlock
 	FIELD field_46277 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_55736 SHAPES_BY_TILT Ljava/util/Map;
 	FIELD field_55737 shapeFunction Ljava/util/function/Function;
-	METHOD method_1_2525 canGrowInto_ (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;)Z
+	METHOD method_1_2525 canGrowIntoImpl (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;)Z
 		ARG 0 world
 		ARG 1 pos
 	METHOD method_33601 playTiltSound (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_3414;)V

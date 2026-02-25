@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
+	FIELD field_1_2164 wasChunkCullingEnabled Z
 	FIELD field_4058 blockBreakingInfos Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
 	FIELD field_4062 viewDistance I
 	FIELD field_4064 lastCameraYaw D
@@ -230,6 +231,9 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_65201 scheduleNeighborUpdates (Lnet/minecraft/class_1923;)V
 		ARG 1 chunkPos
 	METHOD method_71118 rotate ()V
+	METHOD method_72156 (I[Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Lcom/mojang/blaze3d/systems/RenderPass$class_10885;)V
+		ARG 1 chunkSectionBuffers
+		ARG 2 uploader
 	METHOD method_72914 getAndUpdateRenderState (Lnet/minecraft/class_1297;F)Lnet/minecraft/class_10017;
 		ARG 1 entity
 		ARG 2 tickProgress

@@ -3,6 +3,8 @@ CLASS net/minecraft/class_9848 net/minecraft/util/math/ColorHelper
 	FIELD field_63677 LINEAR_TO_SRGB_LUT_LENGTH I
 	FIELD field_63678 SRGB_TO_LINEAR [S
 	FIELD field_63679 LINEAR_TO_SRGB [B
+	METHOD method_1_2566 gray (F)I
+		ARG 0 value
 	METHOD method_61317 getWhite (F)I
 		ARG 0 alpha
 	METHOD method_61318 fromFloats (FFFF)I

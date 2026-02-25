@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_926 net/minecraft/client/render/entity/MooshroomEntityRenderer
+	FIELD field_1_2219 blockModelManager Lnet/minecraft/class_1_394;
 	FIELD field_4748 TEXTURES Ljava/util/Map;
 	METHOD method_18657 (Ljava/util/HashMap;)V
 		ARG 0 map
+	CLASS class_1_86 BabyModelPair

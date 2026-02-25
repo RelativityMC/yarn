@@ -1,2 +1,3 @@
 CLASS net/minecraft/class_913 net/minecraft/client/render/entity/IronGolemEntityRenderer
+	FIELD field_1_2212 blockModelManager Lnet/minecraft/class_1_394;
 	FIELD field_4717 TEXTURE Lnet/minecraft/class_2960;

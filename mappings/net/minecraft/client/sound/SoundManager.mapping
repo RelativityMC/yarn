@@ -13,6 +13,8 @@ CLASS net/minecraft/class_1144 net/minecraft/client/sound/SoundManager
 	FIELD field_52173 EMPTY_ID Lnet/minecraft/class_2960;
 	METHOD <init> (Lnet/minecraft/class_315;)V
 		ARG 1 gameOptions
+	METHOD method_1_2595 forLoadedSounds (Lnet/minecraft/class_4237$class_1_387;)V
+		ARG 1 callback
 	METHOD method_4864 getKeys ()Ljava/util/Collection;
 	METHOD method_4866 unregisterListener (Lnet/minecraft/class_1145;)V
 		ARG 1 listener

@@ -1,8 +1,8 @@
 CLASS net/minecraft/class_2826 net/minecraft/world/chunk/ChunkSection
-	FIELD field_1_2090 fluidCount S
+	FIELD field_1_2090 nonEmptyFluidCount S
 	FIELD field_12877 nonEmptyBlockCount S
 	FIELD field_12878 blockStateContainer Lnet/minecraft/class_2841;
-	FIELD field_12881 nonEmptyFluidCount S
+	FIELD field_12881 randomTickableFluidCount S
 	FIELD field_12882 randomTickableBlockCount S
 	FIELD field_34556 biomeContainer Lnet/minecraft/class_7522;
 	METHOD <init> (Lnet/minecraft/class_2826;)V

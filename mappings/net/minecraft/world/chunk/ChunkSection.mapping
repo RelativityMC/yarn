@@ -62,7 +62,7 @@ CLASS net/minecraft/class_2826 net/minecraft/world/chunk/ChunkSection
 		ARG 1 buf
 	METHOD method_61771 copy ()Lnet/minecraft/class_2826;
 	CLASS class_6869 BlockStateCounter
-		FIELD field_1_2091 fluidCount I
+		FIELD field_1_2091 nonEmptyFluidCount I
 		FIELD field_36408 nonEmptyBlockCount I
 		FIELD field_36409 randomTickableBlockCount I
-		FIELD field_36410 nonEmptyFluidCount I
+		FIELD field_36410 randomTickableFluidCount I

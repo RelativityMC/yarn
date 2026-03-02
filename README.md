@@ -1,3 +1,34 @@
+# Modern Yarn
+
+Modern Yarn is a fork of Yarn that adds support for [post-obfuscation](https://www.minecraft.net/en-us/article/removing-obfuscation-in-java-edition) versions of Minecraft, after the Fabric project [announced that Yarn would no longer be updated to newer versions](https://fabricmc.net/2025/10/31/obfuscation.html).
+
+## Using Modern Yarn in your project
+
+```gradle
+plugins {
+    id 'net.fabricmc.fabric-loom-remap' version '1.15-SNAPSHOT'
+}
+
+repositories {
+    maven {
+        url = "https://repo.codemc.io/repository/relativitymc/"
+    }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings "org.relativitymc:modern-yarn:${project.yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+}
+
+loom {
+    useIntermediateMappings = true
+    intermediaryUrl = 'https://repo.codemc.io/repository/relativitymc/org/relativitymc/intermediary/%1$s/intermediary-%1$s-v2.jar'
+}
+```
+
+If you want to write NeoForge mods using Modern Yarn, consider using [Neo Loom](https://github.com/RelativityMC/neo-loom) (`org.relativitymc.neo-loom-remap`).
+
 # Yarn
 
 Yarn is a set of open, unencumbered Minecraft mappings, free for everyone to use under the Creative Commons Zero license. The intention is to let 

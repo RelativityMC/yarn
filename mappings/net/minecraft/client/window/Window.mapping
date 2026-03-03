@@ -29,22 +29,11 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	FIELD field_55579 zeroWidthOrHeight Z
 	FIELD field_62447 allowCursorChanges Z
 	FIELD field_62448 cursor Lnet/minecraft/class_11875;
-	METHOD <init> (Lnet/minecraft/class_3678;Lnet/minecraft/class_543;Ljava/lang/String;Ljava/lang/String;[Lnet/minecraft/class_1_11;Lnet/minecraft/class_12289;Lnet/minecraft/class_1_16;)V
+	METHOD <init> (Lnet/minecraft/class_3678;Lnet/minecraft/class_543;Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/class_1_11;)V
 		ARG 1 eventHandler
 		ARG 2 settings
 		ARG 3 fullscreenVideoMode
 		ARG 4 title
-		ARG 5 backends
-		ARG 6 shaderSourceGetter
-		ARG 7 debugOptions
-	METHOD method_1_385 initializeFirstSupported ([Lnet/minecraft/class_1_11;IILjava/lang/String;JLnet/minecraft/class_12289;Lnet/minecraft/class_1_16;)Lnet/minecraft/class_1_17;
-		ARG 1 backends
-		ARG 2 width
-		ARG 3 height
-		ARG 4 title
-		ARG 5 handle
-		ARG 7 shaderSourceGetter
-		ARG 8 debugOptions
 	METHOD method_1_2467 setPreEditCursorRectangle (IIII)V
 		ARG 1 left
 		ARG 2 top
@@ -74,9 +63,8 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 		ARG 1 error
 		ARG 2 description
 	METHOD method_4483 updateFramebufferSize ()V
-	METHOD method_4485 updateFullscreen (ZLnet/minecraft/class_10219;)V
+	METHOD method_4485 updateFullscreen (Z)V
 		ARG 1 vsync
-		ARG 2 capturer
 	METHOD method_4486 getScaledWidth ()I
 	METHOD method_4488 onWindowSizeChanged (JII)V
 		ARG 1 window
@@ -114,8 +102,6 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	METHOD method_4513 logOnGlError ()V
 	METHOD method_15997 setScaleFactor (I)V
 		ARG 1 scaleFactor
-	METHOD method_15998 swapBuffers (Lnet/minecraft/class_10219;)V
-		ARG 1 capturer
 	METHOD method_20831 getMonitor ()Lnet/minecraft/class_313;
 	METHOD method_21668 setRawMouseMotion (Z)V
 		ARG 1 rawMouseMotion

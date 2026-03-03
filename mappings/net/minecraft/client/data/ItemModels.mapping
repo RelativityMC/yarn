@@ -4,9 +4,6 @@ CLASS net/minecraft/class_10410 net/minecraft/client/data/ItemModels
 		ARG 0 value
 	METHOD method_65481 basic (Lnet/minecraft/class_2960;)Lnet/minecraft/class_10439$class_10441;
 		ARG 0 model
-	METHOD method_65482 special (Lnet/minecraft/class_2960;Lnet/minecraft/class_10515$class_10516;)Lnet/minecraft/class_10439$class_10441;
-		ARG 0 base
-		ARG 1 specialModel
 	METHOD method_65483 tinted (Lnet/minecraft/class_2960;[Lnet/minecraft/class_10401;)Lnet/minecraft/class_10439$class_10441;
 		ARG 0 model
 		ARG 1 tints

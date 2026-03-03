@@ -63,10 +63,6 @@ CLASS net/minecraft/class_6954 net/minecraft/world/gen/densityfunction/DensityFu
 		ARG 1 noiseParametersLookup
 	METHOD method_41207 applyBlendDensity (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
 		ARG 0 density
-	METHOD method_41211 createMultiNoiseDependentNoiseRouter (Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6953;
-		ARG 0 densityFunctionLookup
-		ARG 1 noiseParametersLookup
-		ARG 2 density
 	METHOD method_41546 getPeaksValleysNoise (F)F
 		ARG 0 weirdness
 	METHOD method_41547 createRidgesFoldedOverworldFunction (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
@@ -85,12 +81,11 @@ CLASS net/minecraft/class_6954 net/minecraft/world/gen/densityfunction/DensityFu
 		ARG 8 depthKey
 		ARG 9 slopedCheeseKey
 		ARG 10 amplified
-	METHOD method_41549 createCavesNoiseRouter (Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;)Lnet/minecraft/class_6953;
+	METHOD method_41549 createCavesNoiseRouter (Lnet/minecraft/class_7871;)Lnet/minecraft/class_6953;
 		COMMENT Creates the {@link NoiseRouter} for the caves world type.
 		COMMENT
 		COMMENT @return the created {@code NoiseRouter}
 		ARG 0 densityFunctionLookup
-		ARG 1 noiseParametersLookup
 	METHOD method_41550 (Lnet/minecraft/class_6955$class_6354;)I
 		ARG 0 veinType
 	METHOD method_41551 registerAndGetHolder (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;

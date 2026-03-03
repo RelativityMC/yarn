@@ -1,8 +1,6 @@
 CLASS net/minecraft/class_1_395 net/minecraft/client/render/block/BlockRenderState
-	FIELD field_1_2220 block Lnet/minecraft/class_2248;
-	FIELD field_1_2221 model Lnet/minecraft/class_1087;
 	FIELD field_1_2222 specialRenderer Lnet/minecraft/class_10515;
-	FIELD field_1_2223 tintLayers [I
+	FIELD field_1_2223 tintLayers Lit/unimi/dsi/fastutil/ints/IntList;
 	METHOD method_1_2637 reset ()V
 	METHOD method_1_2638 isEmpty ()Z
 	METHOD method_1_2639 render (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;III)V

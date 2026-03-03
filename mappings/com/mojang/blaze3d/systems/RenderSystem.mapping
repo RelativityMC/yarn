@@ -11,8 +11,6 @@ CLASS com/mojang/blaze3d/systems/RenderSystem
 	METHOD lambda$static$1 (Lit/unimi/dsi/fastutil/ints/IntConsumer;I)V
 		ARG 0 indexConsumer
 		ARG 1 firstVertexIndex
-	METHOD limitDisplayFPS (I)V
-		ARG 0 fps
 	METHOD setErrorCallback (Lorg/lwjgl/glfw/GLFWErrorCallbackI;)V
 		ARG 0 callback
 	METHOD setGlobalSettingsUniform (Lcom/mojang/blaze3d/buffers/GpuBuffer;)V

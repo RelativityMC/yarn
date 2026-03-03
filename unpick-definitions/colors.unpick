@@ -5,7 +5,6 @@ group int argb_color
 	@format hex
 	net.minecraft.util.Colors.*
 	net.minecraft.client.realms.gui.screen.RealmsScreen.DARK_GRAY
-	net.minecraft.client.realms.gui.screen.RealmsScreen.GRAY
 	net.minecraft.client.realms.gui.screen.RealmsScreen.GREEN
 	net.minecraft.client.realms.gui.screen.RealmsScreen.BLUE
 	net.minecraft.client.realms.gui.screen.RealmsScreen.PURPLE

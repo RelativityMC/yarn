@@ -34,7 +34,7 @@ CLASS net/minecraft/class_10444 net/minecraft/client/render/item/ItemRenderState
 	CLASS class_10446 LayerRenderState
 		FIELD field_1_1954 texture Lnet/minecraft/class_1_314$class_1_315;
 		FIELD field_55348 glint Lnet/minecraft/class_10444$class_10445;
-		FIELD field_55349 tints [I
+		FIELD field_55349 tints Lit/unimi/dsi/fastutil/ints/IntList;
 		FIELD field_55350 specialModelType Lnet/minecraft/class_10515;
 		FIELD field_55351 data Ljava/lang/Object;
 		FIELD field_56962 DEFAULT Ljava/util/function/Supplier;
@@ -46,8 +46,7 @@ CLASS net/minecraft/class_10444 net/minecraft/client/render/item/ItemRenderState
 		METHOD method_1_2374 setTexture (Lnet/minecraft/class_1_314$class_1_315;)V
 			ARG 1 texture
 		METHOD method_65612 clear ()V
-		METHOD method_65613 initTints (I)[I
-			ARG 1 maxIndex
+		METHOD method_65613 initTints ()Lit/unimi/dsi/fastutil/ints/IntList;
 		METHOD method_65614 render (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;III)V
 			ARG 1 matrices
 			ARG 2 queue

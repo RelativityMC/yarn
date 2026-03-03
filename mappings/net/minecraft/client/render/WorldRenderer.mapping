@@ -39,18 +39,16 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	FIELD field_61737 worldRenderState Lnet/minecraft/class_11658;
 	FIELD field_61738 entityRenderCommandQueue Lnet/minecraft/class_11661;
 	FIELD field_61739 entityRenderDispatcher Lnet/minecraft/class_11684;
-	FIELD field_62647 particleBatch Lnet/minecraft/class_11943;
 	FIELD field_63067 debugRenderer Lnet/minecraft/class_863;
 	FIELD field_63068 gameTestDebugRenderer Lnet/minecraft/class_4503;
 	FIELD field_63574 gizmoCollector Lnet/minecraft/class_12185;
 	FIELD field_64218 terrainSampler Lnet/minecraft/class_12137;
 	FIELD field_64566 gizmos Lnet/minecraft/class_761$class_12351;
-	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_898;Lnet/minecraft/class_824;Lnet/minecraft/class_4599;Lnet/minecraft/class_11658;Lnet/minecraft/class_11684;)V
+	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_898;Lnet/minecraft/class_824;Lnet/minecraft/class_4599;Lnet/minecraft/class_1_405;Lnet/minecraft/class_11684;)V
 		ARG 1 client
 		ARG 2 entityRenderManager
 		ARG 3 blockEntityRenderManager
 		ARG 4 bufferBuilders
-		ARG 5 worldRenderState
 		ARG 6 entityRenderDispatcher
 	METHOD method_1_2231 fillRenderStatesFromWorld (Lnet/minecraft/class_9779;Lnet/minecraft/class_4184;F)V
 		ARG 1 renderTickCounter
@@ -188,9 +186,8 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_62203 renderWeather (Lnet/minecraft/class_9909;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
 		ARG 1 frameGraphBuilder
 		ARG 2 fogBuffer
-	METHOD method_62204 renderClouds (Lnet/minecraft/class_9909;Lnet/minecraft/class_4063;Lnet/minecraft/class_243;JFIF)V
+	METHOD method_62204 renderClouds (Lnet/minecraft/class_9909;Lnet/minecraft/class_4063;Lnet/minecraft/class_243;JFIFI)V
 		ARG 1 frameGraphBuilder
-		ARG 2 mode
 		ARG 3 cameraPos
 		ARG 4 time
 		ARG 6 tickProgress

@@ -186,7 +186,7 @@ CLASS net/minecraft/class_4019 net/minecraft/entity/passive/FoxEntity
 		FIELD field_17998 INDEX_MAPPER Ljava/util/function/IntFunction;
 		FIELD field_18000 index I
 		FIELD field_18001 id Ljava/lang/String;
-		FIELD field_41548 CODEC Lnet/minecraft/class_3542$class_7292;
+		FIELD field_41548 CODEC Lcom/mojang/serialization/Codec;
 		FIELD field_55960 PACKET_CODEC Lnet/minecraft/class_9139;
 		FIELD field_57610 DEFAULT Lnet/minecraft/class_4019$class_4039;
 		METHOD <init> (Ljava/lang/String;IILjava/lang/String;)V

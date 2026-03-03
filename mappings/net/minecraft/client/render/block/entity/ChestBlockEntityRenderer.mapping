@@ -8,5 +8,5 @@ CLASS net/minecraft/class_826 net/minecraft/client/render/block/entity/ChestBloc
 		ARG 1 context
 	METHOD method_65559 isAroundChristmas ()Z
 	METHOD method_74366 getVariant (Lnet/minecraft/class_2586;Z)Lnet/minecraft/class_11959$class_11960;
-		ARG 1 blockEntity
-		ARG 2 christmas
+		ARG 0 blockEntity
+		ARG 1 christmas

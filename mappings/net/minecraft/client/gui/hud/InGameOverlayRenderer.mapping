@@ -10,10 +10,10 @@ CLASS net/minecraft/class_4603 net/minecraft/client/gui/hud/InGameOverlayRendere
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_11701;Lnet/minecraft/class_4597;)V
 		ARG 1 client
 		ARG 3 vertexConsumers
-	METHOD method_23067 renderOverlays (ZFLnet/minecraft/class_11659;)V
-		ARG 1 sleeping
-		ARG 2 tickProgress
-		ARG 3 queue
+	METHOD method_23067 renderOverlays (ZZFLnet/minecraft/class_11659;Z)V
+		ARG 2 sleeping
+		ARG 3 tickProgress
+		ARG 4 queue
 	METHOD method_23068 renderInWallOverlay (Lnet/minecraft/class_1058;Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;)V
 		ARG 0 sprite
 		ARG 1 matrices

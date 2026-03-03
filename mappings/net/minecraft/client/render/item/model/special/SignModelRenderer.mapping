@@ -6,7 +6,5 @@ CLASS net/minecraft/class_10535 net/minecraft/client/render/item/model/special/S
 		ARG 2 model
 	CLASS class_10536 Unbaked
 		FIELD field_55528 CODEC Lcom/mojang/serialization/MapCodec;
-		METHOD <init> (Lnet/minecraft/class_4719;)V
-			ARG 1 woodType
 		METHOD method_65853 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance

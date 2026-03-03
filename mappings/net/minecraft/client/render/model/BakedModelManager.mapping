@@ -5,7 +5,6 @@ CLASS net/minecraft/class_1092 net/minecraft/client/render/model/BakedModelManag
 	FIELD field_53676 MODELS_FINDER Lnet/minecraft/class_7654;
 	FIELD field_55472 bakedItemModels Ljava/util/Map;
 	FIELD field_55473 entityModels Lnet/minecraft/class_5599;
-	FIELD field_55474 blockEntityModels Lnet/minecraft/class_10418;
 	FIELD field_55476 modelGroups Lit/unimi/dsi/fastutil/objects/Object2IntMap;
 	FIELD field_55573 itemProperties Ljava/util/Map;
 	FIELD field_57008 missingModels Lnet/minecraft/class_1088$class_10812;
@@ -24,13 +23,12 @@ CLASS net/minecraft/class_1092 net/minecraft/client/render/model/BakedModelManag
 	METHOD method_45881 reloadModels (Lnet/minecraft/class_3300;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
 		ARG 0 resourceManager
 		ARG 1 executor
-	METHOD method_45883 bake (Lnet/minecraft/class_7766$class_7767;Lnet/minecraft/class_7766$class_7767;Lnet/minecraft/class_1088;Lit/unimi/dsi/fastutil/objects/Object2IntMap;Lnet/minecraft/class_5599;Lnet/minecraft/class_10418;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
+	METHOD method_45883 bake (Lnet/minecraft/class_7766$class_7767;Lnet/minecraft/class_7766$class_7767;Lnet/minecraft/class_1088;Lnet/minecraft/class_1_415;Lit/unimi/dsi/fastutil/objects/Object2IntMap;Lnet/minecraft/class_5599;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
 		ARG 0 blocksResult
 		ARG 1 itemsResult
 		ARG 2 baker
-		ARG 3 groups
-		ARG 4 entityModels
-		ARG 5 blockEntityModels
+		ARG 4 groups
+		ARG 5 entityModels
 		ARG 6 executor
 	METHOD method_45886 (Lnet/minecraft/class_2960;)Ljava/lang/String;
 		ARG 0 id
@@ -49,8 +47,6 @@ CLASS net/minecraft/class_1092 net/minecraft/client/render/model/BakedModelManag
 		ARG 2 result
 	METHOD method_65746 getItemModel (Lnet/minecraft/class_2960;)Lnet/minecraft/class_10439;
 		ARG 1 id
-	METHOD method_65747 (Ljava/util/concurrent/CompletableFuture;Ljava/util/concurrent/CompletableFuture;Ljava/util/concurrent/CompletableFuture;Ljava/lang/Void;)Lnet/minecraft/class_1092$class_10816;
-		ARG 3 async
 	METHOD method_65748 (Ljava/lang/String;)Ljava/lang/String;
 		ARG 0 textureId
 	METHOD method_65749 (Ljava/lang/String;Ljava/util/Collection;)V
@@ -61,23 +57,18 @@ CLASS net/minecraft/class_1092 net/minecraft/client/render/model/BakedModelManag
 		ARG 1 missingModel
 	METHOD method_65752 (Ljava/util/Map;Lnet/minecraft/class_1087;Lnet/minecraft/class_2680;)V
 		ARG 2 state
-	METHOD method_65753 (Ljava/util/concurrent/CompletableFuture;Ljava/util/concurrent/CompletableFuture;Ljava/util/concurrent/CompletableFuture;Ljava/util/concurrent/CompletableFuture;Ljava/util/concurrent/CompletableFuture;Ljava/util/concurrent/CompletableFuture;Ljava/util/concurrent/CompletableFuture;Ljava/util/concurrent/CompletableFuture;Ljava/util/concurrent/CompletableFuture;Ljava/util/concurrent/Executor;Ljava/lang/Void;)Ljava/util/concurrent/CompletionStage;
-		ARG 11 v
 	METHOD method_65754 (Ljava/lang/String;Ljava/util/Collection;)V
 		ARG 0 modelName
 		ARG 1 texture
 	METHOD method_65755 (Lnet/minecraft/class_2960;)Ljava/lang/String;
 		ARG 0 id
-	METHOD method_65756 getBlockEntityModelsSupplier ()Lnet/minecraft/class_10418;
 	METHOD method_65757 getEntityModelsSupplier ()Ljava/util/function/Supplier;
 	METHOD method_65933 (Lnet/minecraft/class_10097;Lnet/minecraft/class_10434;)V
 		ARG 1 asset
 	METHOD method_65934 getItemProperties (Lnet/minecraft/class_2960;)Lnet/minecraft/class_10434$class_10543;
 		ARG 1 id
-	METHOD method_68047 (Lcom/google/common/collect/Multimap;Lcom/google/common/collect/Multimap;Lit/unimi/dsi/fastutil/objects/Object2IntMap;Lnet/minecraft/class_5599;Lnet/minecraft/class_10418;Lnet/minecraft/class_1088$class_10524;)Lnet/minecraft/class_1092$class_7779;
-		ARG 5 bakedModels
-	METHOD method_73040 (Lnet/minecraft/class_5599;)Lnet/minecraft/class_10418;
-		ARG 1 entityModels
+	METHOD method_68047 (Lcom/google/common/collect/Multimap;Lcom/google/common/collect/Multimap;Lit/unimi/dsi/fastutil/objects/Object2IntMap;Lnet/minecraft/class_5599;Lnet/minecraft/class_1088$class_10524;Ljava/util/Map;)Lnet/minecraft/class_1092$class_7779;
+		ARG 4 bakedModels
 	CLASS 1 1
 		FIELD field_1_1862 cache Ljava/util/Map;
 		FIELD field_1_1863 bakeFactory Ljava/util/function/Function;

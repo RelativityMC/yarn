@@ -2,4 +2,5 @@ CLASS net/minecraft/class_2824 net/minecraft/network/packet/c2s/play/PlayerInter
 	FIELD comp_1_92 entityId I
 	FIELD comp_1_95 playerSneaking Z
 	FIELD field_48195 CODEC Lnet/minecraft/class_9139;
-	METHOD comp_1_95 isPlayerSneaking ()Z
+	METHOD comp_1_92 entityId ()I
+	METHOD comp_1_95 playerSneaking ()Z

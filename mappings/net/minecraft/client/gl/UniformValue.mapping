@@ -16,7 +16,7 @@ CLASS net/minecraft/class_11287 net/minecraft/client/gl/UniformValue
 	CLASS class_11291 Matrix4fValue
 		FIELD field_60134 CODEC Lcom/mojang/serialization/Codec;
 	CLASS class_11292 Type
-		FIELD field_60142 CODEC Lnet/minecraft/class_3542$class_7292;
+		FIELD field_60142 CODEC Lcom/mojang/serialization/Codec;
 		FIELD field_60143 name Ljava/lang/String;
 		FIELD field_60144 mapCodec Lcom/mojang/serialization/MapCodec;
 		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lcom/mojang/serialization/Codec;)V

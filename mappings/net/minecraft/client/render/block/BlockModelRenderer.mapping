@@ -8,7 +8,6 @@ CLASS net/minecraft/class_778 net/minecraft/client/render/block/BlockModelRender
 	FIELD field_1_2208 neighborPos Lnet/minecraft/class_2338$class_2339;
 	FIELD field_1_2209 lastTintIndex I
 	FIELD field_1_2210 colorOfLastTintIndex I
-	FIELD field_1_2211 tintedShading Lnet/minecraft/class_1_382;
 	FIELD field_4178 colors Lnet/minecraft/class_324;
 	FIELD field_27743 DIRECTIONS [Lnet/minecraft/class_2350;
 	METHOD <init> (ZZLnet/minecraft/class_324;)V

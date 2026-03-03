@@ -1,16 +1,17 @@
 CLASS net/minecraft/class_2574 net/minecraft/text/NbtTextContent
 	FIELD comp_1_265 dataSource Lnet/minecraft/class_7419;
 	FIELD comp_1_266 interpret Z
+	FIELD comp_1_267 getPath Lnet/minecraft/class_1_356;
 	FIELD comp_1_269 separator Ljava/util/Optional;
 	FIELD field_11777 LOGGER Lorg/slf4j/Logger;
 	FIELD field_46621 CODEC Lcom/mojang/serialization/MapCodec;
 	METHOD <init> (Lnet/minecraft/class_1_356;ZZLjava/util/Optional;Lnet/minecraft/class_7419;)V
 		ARG 4 separator
 		ARG 5 dataSource
-	METHOD comp_1_265 getDataSource ()Lnet/minecraft/class_7419;
-	METHOD comp_1_266 shouldInterpret ()Z
+	METHOD comp_1_265 dataSource ()Lnet/minecraft/class_7419;
+	METHOD comp_1_266 interpret ()Z
 	METHOD comp_1_267 getPath ()Lnet/minecraft/class_1_356;
-	METHOD comp_1_269 getSeparator ()Ljava/util/Optional;
+	METHOD comp_1_269 separator ()Ljava/util/Optional;
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
 	METHOD method_1_2522 (Lnet/minecraft/class_2574;)Lcom/mojang/serialization/DataResult;

@@ -14,13 +14,12 @@ CLASS net/minecraft/class_9955 net/minecraft/client/render/CloudRenderer
 	METHOD method_62166 scheduleTerrainUpdate ()V
 	METHOD method_62167 isEmpty (I)Z
 		ARG 0 color
-	METHOD method_62168 renderClouds (ILnet/minecraft/class_4063;FLnet/minecraft/class_243;JF)V
+	METHOD method_62168 renderClouds (ILnet/minecraft/class_4063;FILnet/minecraft/class_243;JF)V
 		ARG 1 color
-		ARG 2 mode
 		ARG 3 cloudHeight
-		ARG 4 cameraPos
-		ARG 5 time
-		ARG 7 tickProgress
+		ARG 5 cameraPos
+		ARG 6 time
+		ARG 8 tickProgress
 	METHOD method_62169 packCloudCell (IZZZZ)J
 		ARG 0 color
 		ARG 1 borderNorth

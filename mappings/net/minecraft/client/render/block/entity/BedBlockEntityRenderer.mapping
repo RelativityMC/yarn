@@ -8,27 +8,14 @@ CLASS net/minecraft/class_825 net/minecraft/client/render/block/entity/BedBlockE
 		ARG 1 context
 	METHOD <init> (Lnet/minecraft/class_11701;Lnet/minecraft/class_5599;)V
 		ARG 2 entityModelSet
-	METHOD method_3558 renderPart (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;Lnet/minecraft/class_3879$class_9948;Lnet/minecraft/class_2350;Lnet/minecraft/class_1_310;IIZLnet/minecraft/class_11683$class_11792;I)V
-		ARG 1 matrices
-		ARG 2 queue
-		ARG 3 model
-		ARG 4 direction
-		ARG 6 light
-		ARG 7 overlay
-		ARG 8 isFoot
-		ARG 9 crumblingOverlay
+	METHOD method_3558 renderPart (Lnet/minecraft/class_2742;Lnet/minecraft/class_1_310;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;IILnet/minecraft/class_11683$class_11792;I)V
+		ARG 4 queue
+		ARG 5 light
+		ARG 6 overlay
+		ARG 7 crumblingOverlay
 	METHOD method_32136 getHeadTexturedModelData ()Lnet/minecraft/class_5607;
 	METHOD method_32137 getFootTexturedModelData ()Lnet/minecraft/class_5607;
-	METHOD method_65557 renderAsItem (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;IILnet/minecraft/class_1_310;I)V
-		ARG 1 matrices
-		ARG 2 queue
-		ARG 3 light
-		ARG 4 overlay
-	METHOD method_72159 setTransforms (Lnet/minecraft/class_4587;ZLnet/minecraft/class_2350;)V
-		ARG 0 matrices
-		ARG 1 isFoot
-		ARG 2 direction
-	METHOD method_72160 collectVertices (Ljava/util/function/Consumer;)V
+	METHOD method_72160 collectVertices (Lnet/minecraft/class_2742;Ljava/util/function/Consumer;)V
 	METHOD method_74343 (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;)Z
 		ARG 0 world
 		ARG 1 pos

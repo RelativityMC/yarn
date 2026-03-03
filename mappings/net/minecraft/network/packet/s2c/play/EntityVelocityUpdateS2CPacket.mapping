@@ -12,5 +12,5 @@ CLASS net/minecraft/class_2743 net/minecraft/network/packet/s2c/play/EntityVeloc
 		ARG 2 velocity
 	METHOD <init> (Lnet/minecraft/class_1297;)V
 		ARG 1 entity
-	METHOD comp_1_101 getEntityId ()I
-	METHOD comp_1_102 getVelocity ()Lnet/minecraft/class_243;
+	METHOD comp_1_101 entityId ()I
+	METHOD comp_1_102 velocity ()Lnet/minecraft/class_243;

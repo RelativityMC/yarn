@@ -9,11 +9,11 @@ CLASS net/minecraft/class_1940 net/minecraft/world/level/LevelInfo
 		ARG 2 gameMode
 		ARG 4 allowCommands
 		ARG 5 dataConfiguration
-	METHOD comp_1_131 areCommandsAllowed ()Z
-	METHOD comp_1_132 getDataConfiguration ()Lnet/minecraft/class_7712;
-	METHOD comp_1_133 getDifficulty ()Lnet/minecraft/class_1940$class_1_191;
-	METHOD comp_1_134 getGameMode ()Lnet/minecraft/class_1934;
-	METHOD comp_1_135 getLevelName ()Ljava/lang/String;
+	METHOD comp_1_131 allowCommands ()Z
+	METHOD comp_1_132 dataConfiguration ()Lnet/minecraft/class_7712;
+	METHOD comp_1_133 difficulty ()Lnet/minecraft/class_1940$class_1_191;
+	METHOD comp_1_134 gameMode ()Lnet/minecraft/class_1934;
+	METHOD comp_1_135 name ()Ljava/lang/String;
 	METHOD method_1_1689 withDifficultyLock (Z)Lnet/minecraft/class_1940;
 		ARG 1 locked
 	METHOD method_28381 withDifficulty (Lnet/minecraft/class_1267;)Lnet/minecraft/class_1940;

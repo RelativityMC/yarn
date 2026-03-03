@@ -51,8 +51,6 @@ CLASS net/minecraft/class_557 net/minecraft/client/render/entity/model/BookModel
 		FIELD comp_4756 pageTurnAmount F
 		FIELD comp_4757 leftFlipAmount F
 		FIELD comp_4758 rightFlipAmount F
-		FIELD comp_4759 pageTurnSpeed F
 		METHOD comp_4756 pageTurnAmount ()F
 		METHOD comp_4757 leftFlipAmount ()F
 		METHOD comp_4758 rightFlipAmount ()F
-		METHOD comp_4759 pageTurnSpeed ()F

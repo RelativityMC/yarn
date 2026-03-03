@@ -13,7 +13,5 @@ CLASS net/minecraft/class_549 net/minecraft/client/render/entity/model/AbstractH
 	FIELD field_32489 ANGRY_ANIMATION_BODY_PITCH_MULTIPLIER F
 	FIELD field_32490 HEAD_TAIL_BASE_PITCH F
 	FIELD field_32491 ANGRY_ANIMATION_HIND_LEG_PITCH_MULTIPLIER F
-	METHOD method_1_1219 getBabyModelData (Lnet/minecraft/class_5605;)Lnet/minecraft/class_5609;
-		ARG 0 dilation
 	METHOD method_32010 getAdultModelData (Lnet/minecraft/class_5605;)Lnet/minecraft/class_5609;
 		ARG 0 dilation

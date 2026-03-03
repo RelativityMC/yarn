@@ -1,12 +1,6 @@
 CLASS net/minecraft/class_10517 net/minecraft/client/render/item/model/special/SpecialModelTypes
 	FIELD field_55452 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_55453 ID_MAPPER Lnet/minecraft/class_5699$class_10388;
-	FIELD field_55454 BLOCK_TO_MODEL_TYPE Ljava/util/Map;
-	FIELD field_55455 CHRISTMAS_CHEST Lnet/minecraft/class_10502$class_10503;
 	METHOD method_65712 bootstrap ()V
 	METHOD method_65713 (Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
 		ARG 0 codec
-	METHOD method_65714 buildBlockToModelTypeMap (Lnet/minecraft/class_10515$class_11695;)Ljava/util/Map;
-	METHOD method_65715 (Lnet/minecraft/class_10515$class_11695;Lcom/google/common/collect/ImmutableMap$Builder;Lnet/minecraft/class_2248;Lnet/minecraft/class_10515$class_10516;)V
-		ARG 2 block
-		ARG 3 modelType

@@ -1,13 +1,11 @@
 CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	FIELD field_1_117 lightmapTexture Lnet/minecraft/class_1_12;
-	FIELD field_1_118 lightmapRenderState Lnet/minecraft/class_1_50;
 	FIELD field_1_119 uiLightmapTexture Lnet/minecraft/class_1_14;
 	FIELD field_1_120 renderingUi Z
 	FIELD field_1_1813 hudProjection Lnet/minecraft/class_11279;
 	FIELD field_3993 LOGGER Lorg/slf4j/Logger;
 	FIELD field_3994 random Lnet/minecraft/class_5819;
 	FIELD field_3997 lastSkyDarkness F
-	FIELD field_3998 lastWindowFocusedTime J
 	FIELD field_4002 skyDarkness F
 	FIELD field_4009 blockOutlineEnabled Z
 	FIELD field_4012 firstPersonRenderer Lnet/minecraft/class_759;
@@ -25,16 +23,13 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	FIELD field_55871 nauseaEffectTime F
 	FIELD field_55872 nauseaEffectSpeed F
 	FIELD field_59965 guiRenderer Lnet/minecraft/class_11228;
-	FIELD field_59966 guiState Lnet/minecraft/class_11246;
 	FIELD field_59967 overlayRenderer Lnet/minecraft/class_4603;
 	FIELD field_60103 diffuseLighting Lnet/minecraft/class_308;
 	FIELD field_60104 globalSettings Lnet/minecraft/class_11284;
 	FIELD field_60105 worldProjectionMatrix Lnet/minecraft/class_11278;
 	FIELD field_60106 hudProjectionMatrix Lnet/minecraft/class_11278;
-	FIELD field_60579 panoramaRenderer Lnet/minecraft/class_751;
 	FIELD field_60580 rotatingPanoramaRenderer Lnet/minecraft/class_766;
 	FIELD field_60793 fogRenderer Lnet/minecraft/class_758;
-	FIELD field_61732 worldRenderState Lnet/minecraft/class_11658;
 	FIELD field_61733 orderedRenderCommandQueue Lnet/minecraft/class_11661;
 	FIELD field_61734 entityRenderDispatcher Lnet/minecraft/class_11684;
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_759;Lnet/minecraft/class_4599;Lnet/minecraft/class_776;)V
@@ -67,11 +62,6 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 		ARG 1 renderTickCounter
 	METHOD method_3189 showFloatingItem (Lnet/minecraft/class_1799;)V
 		ARG 1 floatingItem
-	METHOD method_3190 updateCrosshairTarget (F)V
-		ARG 1 tickProgress
-	METHOD method_3192 render (Lnet/minecraft/class_9779;Z)V
-		ARG 1 tickCounter
-		ARG 2 tick
 	METHOD method_3195 getSkyDarkness (F)F
 		ARG 1 tickProgress
 	METHOD method_3198 tiltViewWhenHurt (Lnet/minecraft/class_12075;Lnet/minecraft/class_4587;)V
@@ -106,11 +96,9 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	METHOD method_71649 getRotatingPanoramaRenderer ()Lnet/minecraft/class_766;
 	METHOD method_72910 getEntityRenderCommandQueue ()Lnet/minecraft/class_11661;
 	METHOD method_72911 getEntityRenderDispatcher ()Lnet/minecraft/class_11684;
-	METHOD method_72912 getEntityRenderStates ()Lnet/minecraft/class_11658;
+	METHOD method_72912 getEntityRenderStates ()Lnet/minecraft/class_1_405;
 	METHOD method_74920 updateCameraState (Lnet/minecraft/class_9779;FF)V
 		ARG 1 renderTickCounter
-	METHOD method_75836 (Lnet/minecraft/class_11247;)V
-		ARG 1 text
 	METHOD method_75837 renderActiveTextAreas ()V
 	CLASS 1 1
 		FIELD field_63914 index I

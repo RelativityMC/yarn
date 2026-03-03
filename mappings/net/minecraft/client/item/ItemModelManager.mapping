@@ -1,6 +1,4 @@
 CLASS net/minecraft/class_10442 net/minecraft/client/item/ItemModelManager
-	FIELD field_55334 modelGetter Ljava/util/function/Function;
-	FIELD field_55553 propertiesGetter Ljava/util/function/Function;
 	METHOD <init> (Lnet/minecraft/class_1092;)V
 		ARG 1 bakedModelManager
 	METHOD method_65595 updateForNonLivingEntity (Lnet/minecraft/class_10444;Lnet/minecraft/class_1799;Lnet/minecraft/class_811;Lnet/minecraft/class_1297;)V

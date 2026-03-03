@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_11520 net/minecraft/dialog/AfterAction
 	FIELD field_60965 INDEX_MAPPER Ljava/util/function/IntFunction;
-	FIELD field_60966 CODEC Lnet/minecraft/class_3542$class_7292;
+	FIELD field_60966 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_60967 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_60968 index I
 	FIELD field_60969 id Ljava/lang/String;

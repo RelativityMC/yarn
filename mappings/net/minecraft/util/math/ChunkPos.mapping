@@ -13,6 +13,8 @@ CLASS net/minecraft/class_1923 net/minecraft/util/math/ChunkPos
 	FIELD field_54242 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_54975 MAX_COORDINATE I
 	FIELD field_54976 CHUNK_GENERATION_STEPS_MARGIN I
+	METHOD comp_1_44 x ()I
+	METHOD comp_1_45 z ()I
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
 	METHOD method_1_778 fromBlockPos (Lnet/minecraft/class_2338;)Lnet/minecraft/class_1923;

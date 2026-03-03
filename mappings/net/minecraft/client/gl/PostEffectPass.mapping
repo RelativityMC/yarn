@@ -30,6 +30,7 @@ CLASS net/minecraft/class_283 net/minecraft/client/gl/PostEffectPass
 		METHOD method_71128 getTexture (Ljava/util/Map;)Lcom/mojang/blaze3d/textures/GpuTextureView;
 			ARG 1 internalTargets
 	CLASS class_9972 TargetSampler
+		FIELD comp_3038 comp_3034 Ljava/lang/String;
 		METHOD method_62262 getTarget (Ljava/util/Map;)Lnet/minecraft/class_9925;
 			ARG 1 internalTargets
 	CLASS class_9973 TextureSampler

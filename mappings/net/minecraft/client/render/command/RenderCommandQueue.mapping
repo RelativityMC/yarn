@@ -36,10 +36,9 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 1 matrices
 		ARG 2 renderLayer
 		ARG 3 customRenderer
-	METHOD method_73484 submitBlockStateModel (Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;Lnet/minecraft/class_1087;[IIII)V
+	METHOD method_73484 submitBlockStateModel (Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;Ljava/util/List;[IIII)V
 		ARG 1 matrices
 		ARG 2 renderLayer
-		ARG 3 model
 		ARG 4 tintLayers
 		ARG 5 lightCoords
 		ARG 6 overlayCoords

@@ -1,7 +1,6 @@
 CLASS net/minecraft/class_7723 net/minecraft/world/dimension/DimensionOptionsRegistryHolder
 	FIELD field_40363 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_40364 VANILLA_KEYS Ljava/util/Set;
-	FIELD field_40365 VANILLA_KEY_COUNT I
 	METHOD <init> (Lnet/minecraft/class_2378;)V
 		ARG 1 dimensionOptionsRegistry
 	METHOD method_45513 getChunkGenerator ()Lnet/minecraft/class_2794;
@@ -33,8 +32,7 @@ CLASS net/minecraft/class_7723 net/minecraft/world/dimension/DimensionOptionsReg
 		ARG 1 entry
 	METHOD method_45524 (Ljava/util/List;Lnet/minecraft/class_5321;Lnet/minecraft/class_5363;)V
 		ARG 2 dimensionOptions
-	METHOD method_45525 streamAll (Ljava/util/stream/Stream;)Ljava/util/stream/Stream;
-		ARG 0 otherKeys
+	METHOD method_45525 streamAll (Ljava/util/Set;)Ljava/util/stream/Stream;
 	METHOD method_45526 getWorldKeys ()Lcom/google/common/collect/ImmutableSet;
 	METHOD method_45528 isVanilla (Lnet/minecraft/class_5321;Lnet/minecraft/class_5363;)Z
 		ARG 0 key

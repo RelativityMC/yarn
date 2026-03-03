@@ -551,9 +551,8 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 1 block
 		ARG 2 texturedModelFactory
 		ARG 3 tintColor
-	METHOD method_65409 registerSpecialItemModel (Lnet/minecraft/class_2248;Lnet/minecraft/class_10515$class_10516;)V
+	METHOD method_65409 registerSpecialItemModel (Lnet/minecraft/class_2248;Ljava/util/Optional;Lnet/minecraft/class_10515$class_10516;)V
 		ARG 1 block
-		ARG 2 specialModel
 	METHOD method_65410 registerSkulls ()V
 	METHOD method_65411 registerBanners ()V
 	METHOD method_65412 registerChests ()V

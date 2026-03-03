@@ -65,7 +65,7 @@ CLASS net/minecraft/class_340 net/minecraft/client/gui/hud/DebugHud
 		ARG 2 type
 	METHOD method_56829 shouldRenderTickCharts ()Z
 	METHOD method_61981 getPieChart ()Lnet/minecraft/class_9931;
-	METHOD method_67545 renderDebugCrosshair (Lnet/minecraft/class_12075;)V
+	METHOD method_67545 renderDebugCrosshair (Lnet/minecraft/class_12075;I)V
 	CLASS 1 1
 		METHOD method_72742 (Lnet/minecraft/class_2960;)Ljava/util/Collection;
 			ARG 0 sectionLines

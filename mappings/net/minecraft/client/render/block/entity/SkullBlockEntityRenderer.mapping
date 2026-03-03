@@ -19,14 +19,12 @@ CLASS net/minecraft/class_836 net/minecraft/client/render/block/entity/SkullBloc
 		ARG 1 type
 	METHOD method_72165 getTranslucentRenderLayer (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
-	METHOD method_72958 render (Lnet/minecraft/class_2350;FFLnet/minecraft/class_4587;Lnet/minecraft/class_11659;ILnet/minecraft/class_5598;Lnet/minecraft/class_1921;ILnet/minecraft/class_11683$class_11792;)V
-		ARG 0 facing
-		ARG 1 yaw
-		ARG 2 poweredTicks
-		ARG 3 matrices
-		ARG 4 queue
-		ARG 5 light
-		ARG 6 model
-		ARG 7 renderLayer
-		ARG 8 outlineColor
-		ARG 9 crumblingOverlay
+	METHOD method_72958 render (FLnet/minecraft/class_4587;Lnet/minecraft/class_11659;ILnet/minecraft/class_5598;Lnet/minecraft/class_1921;ILnet/minecraft/class_11683$class_11792;)V
+		ARG 0 poweredTicks
+		ARG 1 matrices
+		ARG 2 queue
+		ARG 3 light
+		ARG 4 model
+		ARG 5 renderLayer
+		ARG 6 outlineColor
+		ARG 7 crumblingOverlay

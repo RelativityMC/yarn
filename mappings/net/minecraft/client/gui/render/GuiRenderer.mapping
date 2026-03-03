@@ -53,7 +53,6 @@ CLASS net/minecraft/class_11228 net/minecraft/client/gui/render/GuiRenderer
 		ARG 1 elementState
 		ARG 2 windowScaleFactor
 	METHOD method_70890 render (Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
-		ARG 1 fogBuffer
 	METHOD method_70891 prepareTextElements ()V
 	METHOD method_70892 prepareItemElements ()V
 	METHOD method_70893 prepareSpecialElements ()V

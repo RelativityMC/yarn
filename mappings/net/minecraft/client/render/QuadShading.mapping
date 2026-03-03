@@ -8,8 +8,6 @@ CLASS net/minecraft/class_1_382 net/minecraft/client/render/QuadShading
 	FIELD field_1_2155 light2 I
 	FIELD field_1_2156 light3 I
 	FIELD field_1_2157 overlayTexture I
-	METHOD method_1_2581 copyFrom (Lnet/minecraft/class_1_382;)V
-		ARG 1 other
 	METHOD method_1_2582 getColor (I)I
 		ARG 1 index
 	METHOD method_1_2583 getLight (I)I

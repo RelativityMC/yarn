@@ -22,8 +22,8 @@ CLASS net/minecraft/class_10448 net/minecraft/client/render/item/model/RangeDisp
 		FIELD field_55361 CODEC Lcom/mojang/serialization/MapCodec;
 		METHOD method_65624 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance
-		METHOD method_65625 (Lnet/minecraft/class_10439$class_10440;Lnet/minecraft/class_10439$class_10441;)Lnet/minecraft/class_10439;
-			ARG 1 model
+		METHOD method_65625 (Lnet/minecraft/class_10439$class_10440;Lorg/joml/Matrix4fc;Lnet/minecraft/class_10439$class_10441;)Lnet/minecraft/class_10439;
+			ARG 2 model
 		METHOD method_65626 (Lnet/minecraft/class_10526$class_10103;Lnet/minecraft/class_10439$class_10441;)V
 			ARG 1 model
 		METHOD method_65627 (Lnet/minecraft/class_10526$class_10103;Lnet/minecraft/class_10448$class_10449;)V

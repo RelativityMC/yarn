@@ -4,8 +4,6 @@ CLASS net/minecraft/class_11693 net/minecraft/client/render/item/model/special/C
 	METHOD <init> (Lnet/minecraft/class_11783;Lnet/minecraft/class_2960;)V
 		ARG 1 model
 		ARG 2 texture
-	METHOD method_73018 setAngles (Lnet/minecraft/class_4587;)V
-		ARG 0 matrices
 	CLASS class_11694 Unbaked
 		FIELD field_61856 CODEC Lcom/mojang/serialization/MapCodec;
 		METHOD <init> (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_11583$class_11584;)V

@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_10455 net/minecraft/client/render/item/model/SpecialItemModel
 	FIELD field_55366 specialModelType Lnet/minecraft/class_10515;
 	FIELD field_56973 settings Lnet/minecraft/class_10809;
-	METHOD <init> (Lnet/minecraft/class_10515;Lnet/minecraft/class_10809;)V
+	METHOD <init> (Lnet/minecraft/class_10515;Lnet/minecraft/class_10809;Lorg/joml/Matrix4fc;)V
 		ARG 1 specialModelType
 		ARG 2 settings
 	CLASS class_10456 Unbaked

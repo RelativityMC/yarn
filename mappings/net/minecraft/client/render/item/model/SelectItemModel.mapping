@@ -13,15 +13,15 @@ CLASS net/minecraft/class_10451 net/minecraft/client/render/item/model/SelectIte
 		FIELD field_55364 CODEC Lcom/mojang/serialization/MapCodec;
 		METHOD method_65630 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance
-		METHOD method_65631 (Lnet/minecraft/class_10439$class_10440;Lnet/minecraft/class_10439$class_10441;)Lnet/minecraft/class_10439;
-			ARG 1 model
+		METHOD method_65631 (Lnet/minecraft/class_10439$class_10440;Lorg/joml/Matrix4fc;Lnet/minecraft/class_10439$class_10441;)Lnet/minecraft/class_10439;
+			ARG 2 model
 		METHOD method_65632 (Lnet/minecraft/class_10526$class_10103;Lnet/minecraft/class_10439$class_10441;)V
 			ARG 1 model
 	CLASS class_10454 UnbakedSwitch
 		FIELD field_55365 CODEC Lcom/mojang/serialization/MapCodec;
-		METHOD method_65633 bake (Lnet/minecraft/class_10439$class_10440;Lnet/minecraft/class_10439;)Lnet/minecraft/class_10439;
+		METHOD method_65633 bake (Lnet/minecraft/class_10439$class_10440;Lorg/joml/Matrix4fc;Lnet/minecraft/class_10439;)Lnet/minecraft/class_10439;
 			ARG 1 context
-			ARG 2 fallback
+			ARG 3 fallback
 		METHOD method_65634 (Lnet/minecraft/class_10451$class_10454;)Lnet/minecraft/class_10494$class_10495;
 			ARG 0 unbakedSwitch
 		METHOD method_65635 resolveCases (Lnet/minecraft/class_10526$class_10103;)V
@@ -41,7 +41,6 @@ CLASS net/minecraft/class_10451 net/minecraft/client/render/item/model/SelectIte
 			ARG 2 swappedValue
 		METHOD method_67285 (Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;Ljava/lang/Object;Lnet/minecraft/class_638;)Lnet/minecraft/class_10439;
 			ARG 1 value
-			ARG 2 world
 	CLASS class_10722 ModelSelector
 		METHOD method_1_206 get (Ljava/lang/Object;Lnet/minecraft/class_638;)Lnet/minecraft/class_10439;
 			ARG 1 propertyValue

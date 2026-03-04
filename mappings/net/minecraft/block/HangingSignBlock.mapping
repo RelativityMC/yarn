@@ -4,6 +4,8 @@ CLASS net/minecraft/class_7713 net/minecraft/block/HangingSignBlock
 	FIELD field_40303 DEFAULT_SHAPE Lnet/minecraft/class_265;
 	FIELD field_46308 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_55745 SHAPES_BY_ROTATION Ljava/util/Map;
+	METHOD method_1_2810 getAttachment (Z)Lnet/minecraft/class_1_402$class_10381;
+		ARG 0 attached
 	METHOD method_50002 shouldTryAttaching (Lnet/minecraft/class_1657;Lnet/minecraft/class_3965;Lnet/minecraft/class_2625;Lnet/minecraft/class_1799;)Z
 		ARG 1 player
 		ARG 2 hitResult

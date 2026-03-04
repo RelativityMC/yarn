@@ -1,7 +1,0 @@
-CLASS net/minecraft/class_1_417
-	METHOD method_1_2746 (Lnet/minecraft/class_324;)Ljava/util/Map;
-		ARG 0 blockColors
-	METHOD method_1_2757 (Lnet/minecraft/class_1_417$class_1_418;Lnet/minecraft/class_2484$class_2486;Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
-		ARG 1 skullType
-		ARG 2 block
-		ARG 3 wallBlock

@@ -1,0 +1,41 @@
+CLASS net/minecraft/class_1_417 net/minecraft/client/render/block/model/CustomBlockModels
+	METHOD method_1_2742 compound (Lnet/minecraft/class_1_411$class_1_413;Lnet/minecraft/class_324;Lnet/minecraft/class_2680;)Lnet/minecraft/class_1_437$class_1_438;
+		ARG 0 custom
+		ARG 1 blockColors
+		ARG 2 state
+	METHOD method_1_2746 createCustomBlockModels (Lnet/minecraft/class_324;)Ljava/util/Map;
+		ARG 0 blockColors
+	METHOD method_1_2747 simple (Lnet/minecraft/class_324;Lnet/minecraft/class_2680;)Lnet/minecraft/class_1_445$class_1_446;
+		ARG 0 blockColors
+		ARG 1 state
+	METHOD method_1_2757 (Lnet/minecraft/class_1_417$class_1_418;Lnet/minecraft/class_2484$class_2486;Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
+		ARG 1 skullType
+		ARG 2 block
+		ARG 3 wallBlock
+	METHOD method_1_2791 (Lnet/minecraft/class_2769;Ljava/util/function/Function;)Lnet/minecraft/class_1_417$class_1_420;
+		ARG 0 property
+	CLASS class_1_418 Builder
+		FIELD field_1_2322 blockColors Lnet/minecraft/class_324;
+		FIELD field_1_2323 unbakedModels Ljava/util/Map;
+		METHOD <init> (Lnet/minecraft/class_324;)V
+			ARG 1 blockColors
+		METHOD method_1_2793 build ()Ljava/util/Map;
+		METHOD method_1_2794 (Lnet/minecraft/class_1_411$class_1_413;Lnet/minecraft/class_2680;)Lnet/minecraft/class_1_411$class_1_413;
+			ARG 1 state
+		METHOD method_1_2795 add (Lnet/minecraft/class_1_417$class_1_419;Lnet/minecraft/class_2248;)V
+			ARG 1 getter
+			ARG 2 block
+		METHOD method_1_2796 add (Lnet/minecraft/class_1_417$class_1_419;Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
+			ARG 1 getter
+			ARG 2 block1
+			ARG 3 block2
+		METHOD method_1_2797 addCompound (Lnet/minecraft/class_1_411$class_1_413;Lnet/minecraft/class_2248;)V
+			ARG 1 modelFactory
+			ARG 2 block
+	CLASS class_1_419 ModelFactory
+		METHOD method_1_2798 create (Lnet/minecraft/class_324;Lnet/minecraft/class_2680;)Lnet/minecraft/class_1_411$class_1_413;
+			ARG 1 blockColors
+			ARG 2 state
+	CLASS class_1_420 CompoundModelFactory
+		METHOD method_1_2799 createsimple (Lnet/minecraft/class_2680;)Lnet/minecraft/class_1_411$class_1_413;
+			ARG 1 state

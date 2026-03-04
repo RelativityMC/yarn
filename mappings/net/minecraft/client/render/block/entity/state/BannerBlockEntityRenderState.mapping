@@ -1,3 +1,6 @@
 CLASS net/minecraft/class_11949 net/minecraft/client/render/block/entity/state/BannerBlockEntityRenderState
+	FIELD field_1_2420 attachmentType Lnet/minecraft/class_2215$class_1_398;
+	FIELD field_1_2421 patterns Lnet/minecraft/class_9307;
+	FIELD field_1_2422 transformation Lnet/minecraft/class_4590;
 	FIELD field_62660 dyeColor Lnet/minecraft/class_1767;
 	FIELD field_62662 pitch F

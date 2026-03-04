@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_1_431 net/minecraft/client/render/item/model/special/EnchantingTableBookModelRenderer
+	FIELD field_1_2378 bookModel Lnet/minecraft/class_557;
+	FIELD field_1_2379 spriteHolder Lnet/minecraft/class_11701;
+	FIELD field_1_2380 bookModelState Lnet/minecraft/class_557$class_11650;
+	METHOD <init> (Lnet/minecraft/class_11701;Lnet/minecraft/class_557;Lnet/minecraft/class_557$class_11650;)V
+		ARG 1 spriteHolder
+		ARG 2 bookModel
+		ARG 3 bookModelState
+	CLASS class_1_432 Unbaked
+		METHOD method_1_2826 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance

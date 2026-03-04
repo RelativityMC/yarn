@@ -6,4 +6,4 @@ CLASS net/minecraft/class_1_442 net/minecraft/client/render/block/model/Conditio
 		ARG 1 predicate
 		ARG 2 onTrue
 		ARG 3 onFalse
-	CLASS class_1_443 Factory
+	CLASS class_1_443 Unbaked

@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_11971 net/minecraft/client/render/block/entity/state/AbstractSignBlockEntityRenderState
+	FIELD field_1_2411 transformations Lnet/minecraft/class_11971$class_1_444;
+	FIELD field_1_2412 woodType Lnet/minecraft/class_4719;
+	FIELD field_62739 frontText Lnet/minecraft/class_8242;
+	FIELD field_62740 backText Lnet/minecraft/class_8242;
+	FIELD field_62741 textLineHeight I
+	FIELD field_62742 maxTextWidth I
+	FIELD field_62743 filterText Z
+	FIELD field_62744 renderTextOutline Z
+	CLASS class_1_444 Transformations
+		FIELD field_1_2413 IDENTITY Lnet/minecraft/class_11971$class_1_444;

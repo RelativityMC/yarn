@@ -4,4 +4,4 @@ CLASS net/minecraft/class_1_449 net/minecraft/client/render/block/model/SpecialB
 	METHOD <init> (Lnet/minecraft/class_10515;Lorg/joml/Matrix4fc;)V
 		ARG 1 specialRenderer
 		ARG 2 transformation
-	CLASS class_1_450 Factory
+	CLASS class_1_450 Unbaked

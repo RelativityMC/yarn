@@ -45,6 +45,8 @@ CLASS net/minecraft/class_10444 net/minecraft/client/render/item/ItemRenderState
 		FIELD field_56968 vertices Ljava/util/function/Supplier;
 		METHOD method_1_2374 setTexture (Lnet/minecraft/class_1_314$class_1_315;)V
 			ARG 1 texture
+		METHOD method_1_2807 (Lnet/minecraft/class_4587$class_4665;)V
+			ARG 1 matrix
 		METHOD method_65612 clear ()V
 		METHOD method_65613 initTints ()Lit/unimi/dsi/fastutil/ints/IntList;
 		METHOD method_65614 render (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;III)V

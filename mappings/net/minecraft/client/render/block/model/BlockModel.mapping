@@ -6,6 +6,7 @@ CLASS net/minecraft/class_1_411 net/minecraft/client/render/block/model/BlockMod
 		ARG 4 seed
 	CLASS class_1_412 BakeContext
 		FIELD comp_1_303 spriteHolder Lnet/minecraft/class_11701;
-	CLASS class_1_413 Factory
+	CLASS class_1_413 Unbaked
 		METHOD method_1_2727 create (Lnet/minecraft/class_1_411$class_1_412;Lorg/joml/Matrix4fc;)Lnet/minecraft/class_1_411;
 			ARG 1 context
+			ARG 2 transformation

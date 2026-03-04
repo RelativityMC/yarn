@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_453 net/minecraft/client/render/block/entity/state/HangingSignBlockEntityRenderState
+	FIELD field_1_2428 attachmentType Lnet/minecraft/class_1_402$class_10381;

@@ -8,7 +8,7 @@ CLASS net/minecraft/class_1_406 net/minecraft/client/render/block/model/Dispatch
 		METHOD method_1_2723 get (Ljava/lang/Object;)Lnet/minecraft/class_1_411;
 			ARG 1 value
 	CLASS class_1_408 Case
-	CLASS class_1_409 Factory
+	CLASS class_1_409 Unbaked
 		METHOD method_1_2724 (Lnet/minecraft/class_1_411$class_1_412;Lorg/joml/Matrix4fc;Lnet/minecraft/class_1_411$class_1_413;)Lnet/minecraft/class_1_411;
 			ARG 2 fallback
 	CLASS class_1_410 Switch

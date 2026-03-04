@@ -17,6 +17,8 @@ CLASS net/minecraft/class_1092 net/minecraft/client/render/model/BakedModelManag
 		ARG 3 skinCache
 	METHOD method_1_2607 getBlockStateModels ()Lnet/minecraft/class_773;
 	METHOD method_1_2714 getBlockModels ()Lnet/minecraft/class_1_404;
+	METHOD method_1_2715 (Lnet/minecraft/class_1_415;Ljava/util/concurrent/Executor;Lnet/minecraft/class_1088$class_10524;)Ljava/util/concurrent/CompletionStage;
+		ARG 2 blockModelLoader
 	METHOD method_18179 upload (Lnet/minecraft/class_1092$class_7779;)V
 		ARG 1 bakingResult
 	METHOD method_21611 shouldRerender (Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;)Z
@@ -29,6 +31,7 @@ CLASS net/minecraft/class_1092 net/minecraft/client/render/model/BakedModelManag
 		ARG 0 blocksResult
 		ARG 1 itemsResult
 		ARG 2 baker
+		ARG 3 blockModelLoader
 		ARG 4 groups
 		ARG 5 entityModels
 		ARG 6 executor

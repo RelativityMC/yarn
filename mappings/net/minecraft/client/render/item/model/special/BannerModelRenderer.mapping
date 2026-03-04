@@ -1,9 +1,11 @@
 CLASS net/minecraft/class_10498 net/minecraft/client/render/item/model/special/BannerModelRenderer
+	FIELD field_1_2387 attachmentType Lnet/minecraft/class_2215$class_1_398;
 	FIELD field_55423 blockEntityRenderer Lnet/minecraft/class_823;
 	FIELD field_55424 baseColor Lnet/minecraft/class_1767;
 	METHOD <init> (Lnet/minecraft/class_1767;Lnet/minecraft/class_823;Lnet/minecraft/class_2215$class_1_398;)V
 		ARG 1 baseColor
 		ARG 2 blockEntityRenderer
+		ARG 3 attachmentType
 	CLASS class_10499 Unbaked
 		FIELD field_55425 CODEC Lcom/mojang/serialization/MapCodec;
 		METHOD method_65697 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

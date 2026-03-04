@@ -9,4 +9,4 @@ CLASS net/minecraft/class_1_445 net/minecraft/client/render/block/model/SimpleBl
 	METHOD method_1_2883 addTintLayersToState (Lnet/minecraft/class_1_395;Lnet/minecraft/class_2680;)V
 		ARG 1 renderStateOut
 		ARG 2 state
-	CLASS class_1_446 Factory
+	CLASS class_1_446 Unbaked

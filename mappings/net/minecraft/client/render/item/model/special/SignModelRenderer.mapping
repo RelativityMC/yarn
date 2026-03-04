@@ -3,8 +3,13 @@ CLASS net/minecraft/class_10535 net/minecraft/client/render/item/model/special/S
 	FIELD field_55527 texture Lnet/minecraft/class_1_310;
 	FIELD field_61859 spriteHolder Lnet/minecraft/class_11701;
 	METHOD <init> (Lnet/minecraft/class_11701;Lnet/minecraft/class_3879$class_9948;Lnet/minecraft/class_1_310;)V
+		ARG 1 spriteHolder
 		ARG 2 model
+		ARG 3 texture
 	CLASS class_10536 Unbaked
 		FIELD field_55528 CODEC Lcom/mojang/serialization/MapCodec;
+		METHOD <init> (Lnet/minecraft/class_4719;Lnet/minecraft/class_1_399$class_1_400;)V
+			ARG 1 woodType
+			ARG 2 attachmentType
 		METHOD method_65853 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance

@@ -38,6 +38,7 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 		ARG 8 debugWorld
 		ARG 9 seed
 		ARG 11 seaLevel
+	METHOD method_1_2685 runLightUpdates ()V
 	METHOD method_2932 addParticle (DDDDDLnet/minecraft/class_2394;)V
 		ARG 1 minX
 		ARG 3 maxX
@@ -181,7 +182,17 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 		ARG 1 pos
 		ARG 2 direction
 	METHOD method_74918 getParticlesMode (Z)Lnet/minecraft/class_4066;
+		ARG 1 canSpawnOnMinimal
 	METHOD method_74919 addParticle (Lnet/minecraft/class_2394;ZZDDDDDD)V
+		ARG 1 particleEffect
+		ARG 2 force
+		ARG 3 canSpawnOnMinimal
+		ARG 4 x
+		ARG 6 y
+		ARG 8 z
+		ARG 10 velocityX
+		ARG 12 velocityY
+		ARG 14 velocityZ
 	METHOD method_76540 (ILjava/lang/Integer;I)Ljava/lang/Integer;
 		ARG 2 color
 		ARG 3 time

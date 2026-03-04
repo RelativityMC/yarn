@@ -1,0 +1,18 @@
+CLASS net/minecraft/class_1_403 net/minecraft/client/color/block/BlockColorProviders
+	METHOD method_1_2699 constant (I)Lnet/minecraft/class_1_401;
+		ARG 0 color
+	METHOD method_1_2700 (II)Lnet/minecraft/class_1_401;
+		ARG 0 color1
+		ARG 1 color2
+	METHOD method_1_2701 tallFoliage ()Lnet/minecraft/class_1_401;
+	METHOD method_1_2702 leafLitter ()Lnet/minecraft/class_1_401;
+	METHOD method_1_2703 leaves ()Lnet/minecraft/class_1_401;
+	METHOD method_1_2704 shortFoliage ()Lnet/minecraft/class_1_401;
+	METHOD method_1_2705 grassBlock ()Lnet/minecraft/class_1_401;
+	METHOD method_1_2706 (ILnet/minecraft/class_2680;)I
+		ARG 1 state
+	METHOD method_1_2707 redstoneWire ()Lnet/minecraft/class_1_401;
+	METHOD method_1_2708 gourdStem ()Lnet/minecraft/class_1_401;
+	METHOD method_1_2709 sugarCane ()Lnet/minecraft/class_1_401;
+	METHOD method_1_2710 waterCauldron ()Lnet/minecraft/class_1_401;
+	METHOD method_1_2711 water ()Lnet/minecraft/class_1_401;

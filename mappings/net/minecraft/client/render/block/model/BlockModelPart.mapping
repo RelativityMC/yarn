@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_10889 net/minecraft/client/render/model/BlockModelPart
+CLASS net/minecraft/class_10889 net/minecraft/client/render/block/model/BlockModelPart
 	METHOD comp_3751 useAmbientOcclusion ()Z
 	METHOD method_68509 getQuads (Lnet/minecraft/class_2350;)Ljava/util/List;
 		ARG 1 side

@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_405 net/minecraft/client/render/GameRenderState
+	FIELD field_1_2297 gui Lnet/minecraft/class_11246;
+	FIELD field_1_2298 world Lnet/minecraft/class_11658;
+	FIELD field_1_2299 lightmap Lnet/minecraft/class_1_50;
+	FIELD field_1_2300 options Lnet/minecraft/class_1_421;
+	FIELD field_1_2301 window Lnet/minecraft/class_1_416;

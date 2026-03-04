@@ -1,6 +1,12 @@
 CLASS net/minecraft/class_1_395 net/minecraft/client/render/block/BlockRenderState
 	FIELD field_1_2222 specialRenderer Lnet/minecraft/class_10515;
 	FIELD field_1_2223 tintLayers Lit/unimi/dsi/fastutil/ints/IntList;
+	FIELD field_1_2364 NO_TINT_LAYERS [I
+	FIELD field_1_2365 modelParts Ljava/util/List;
+	FIELD field_1_2366 random Lnet/minecraft/class_5819;
+	FIELD field_1_2367 renderLayer Lnet/minecraft/class_1921;
+	FIELD field_1_2368 specialRendererTransformation Lorg/joml/Matrix4fc;
+	FIELD field_1_2369 modelTransformation Lorg/joml/Matrix4fc;
 	METHOD method_1_2637 reset ()V
 	METHOD method_1_2638 isEmpty ()Z
 	METHOD method_1_2639 render (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;III)V
@@ -21,3 +27,28 @@ CLASS net/minecraft/class_1_395 net/minecraft/client/render/block/BlockRenderSta
 		ARG 3 lightCoords
 		ARG 4 overlayCoords
 		ARG 5 light
+	METHOD method_1_2817 censorIdentity (Lorg/joml/Matrix4fc;)Lorg/joml/Matrix4fc;
+		ARG 0 matrix
+	METHOD method_1_2818 setSeed (J)Lnet/minecraft/class_5819;
+		ARG 1 seed
+	METHOD method_1_2819 startModel (Lorg/joml/Matrix4fc;Z)Ljava/util/List;
+		ARG 1 modelTransformation
+		ARG 2 hasTranslucency
+	METHOD method_1_2820 setSpecialRenderer (Lnet/minecraft/class_10515;Lorg/joml/Matrix4fc;)V
+		ARG 1 specialRenderer
+		ARG 2 specialRendererTransformation
+	METHOD method_1_2821 renderModel (Lnet/minecraft/class_1921;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;III)V
+		ARG 1 layer
+		ARG 2 matrices
+		ARG 3 queue
+		ARG 4 lightCoords
+		ARG 5 overlayCoords
+		ARG 6 light
+	METHOD method_1_2822 renderSpecial (Lnet/minecraft/class_10515;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;III)V
+		ARG 0 renderer
+		ARG 1 matrices
+		ARG 2 queue
+		ARG 3 light
+		ARG 4 overlay
+		ARG 5 outlineColor
+	METHOD method_1_2823 getTintLayers ()Lit/unimi/dsi/fastutil/ints/IntList;

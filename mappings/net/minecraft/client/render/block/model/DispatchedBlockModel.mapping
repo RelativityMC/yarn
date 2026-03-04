@@ -1,0 +1,17 @@
+CLASS net/minecraft/class_1_406 net/minecraft/client/render/block/model/DispatchedBlockModel
+	FIELD field_1_2302 lookup Lnet/minecraft/class_1_406$class_1_407;
+	FIELD field_1_2303 property Lnet/minecraft/class_1_461;
+	METHOD <init> (Lnet/minecraft/class_1_461;Lnet/minecraft/class_1_406$class_1_407;)V
+		ARG 1 property
+		ARG 2 lookup
+	CLASS class_1_407 Lookup
+		METHOD method_1_2723 get (Ljava/lang/Object;)Lnet/minecraft/class_1_411;
+			ARG 1 value
+	CLASS class_1_408 Case
+	CLASS class_1_409 Factory
+		METHOD method_1_2724 (Lnet/minecraft/class_1_411$class_1_412;Lorg/joml/Matrix4fc;Lnet/minecraft/class_1_411$class_1_413;)Lnet/minecraft/class_1_411;
+			ARG 2 fallback
+	CLASS class_1_410 Switch
+		METHOD method_1_2725 createRenderer (Lnet/minecraft/class_1_411$class_1_412;Lorg/joml/Matrix4fc;Lnet/minecraft/class_1_411;)Lnet/minecraft/class_1_411;
+			ARG 1 context
+			ARG 3 fallback

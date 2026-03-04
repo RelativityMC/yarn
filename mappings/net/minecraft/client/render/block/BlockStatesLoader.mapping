@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_9824 net/minecraft/client/render/model/BlockStatesLoader
+CLASS net/minecraft/class_9824 net/minecraft/client/render/block/BlockStatesLoader
 	FIELD field_52261 LOGGER Lorg/slf4j/Logger;
 	FIELD field_55458 FINDER Lnet/minecraft/class_7654;
 	METHOD method_62627 combine (Lnet/minecraft/class_2960;Lnet/minecraft/class_2689;Ljava/util/List;)Lnet/minecraft/class_9824$class_10095;

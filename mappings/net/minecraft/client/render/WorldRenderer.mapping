@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	FIELD field_1_2164 wasChunkCullingEnabled Z
+	FIELD field_1_2266 optionsRenderState Lnet/minecraft/class_1_421;
 	FIELD field_4058 blockBreakingInfos Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
 	FIELD field_4062 viewDistance I
 	FIELD field_4064 lastCameraYaw D
@@ -49,6 +50,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 2 entityRenderManager
 		ARG 3 blockEntityRenderManager
 		ARG 4 bufferBuilders
+		ARG 5 gameRenderState
 		ARG 6 entityRenderDispatcher
 	METHOD method_1_2231 fillRenderStatesFromWorld (Lnet/minecraft/class_9779;Lnet/minecraft/class_4184;F)V
 		ARG 1 renderTickCounter
@@ -188,11 +190,13 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 2 fogBuffer
 	METHOD method_62204 renderClouds (Lnet/minecraft/class_9909;Lnet/minecraft/class_4063;Lnet/minecraft/class_243;JFIFI)V
 		ARG 1 frameGraphBuilder
+		ARG 2 cloudRenderMode
 		ARG 3 cameraPos
 		ARG 4 time
 		ARG 6 tickProgress
 		ARG 7 color
 		ARG 8 cloudHeight
+		ARG 9 cloudRenderDistance
 	METHOD method_62206 renderBlockDamage (Lnet/minecraft/class_4587;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_11658;)V
 		ARG 1 matrices
 		ARG 2 immediate

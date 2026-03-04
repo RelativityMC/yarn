@@ -3,6 +3,7 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	FIELD field_1_119 uiLightmapTexture Lnet/minecraft/class_1_14;
 	FIELD field_1_120 renderingUi Z
 	FIELD field_1_1813 hudProjection Lnet/minecraft/class_11279;
+	FIELD field_1_2263 renderState Lnet/minecraft/class_1_405;
 	FIELD field_3993 LOGGER Lorg/slf4j/Logger;
 	FIELD field_3994 random Lnet/minecraft/class_5819;
 	FIELD field_3997 lastSkyDarkness F
@@ -39,6 +40,23 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 		ARG 4 blockRenderManager
 	METHOD method_1_430 getWorldLightmapTextureView ()Lcom/mojang/blaze3d/textures/GpuTextureView;
 	METHOD method_1_431 getLightmapTextureView ()Lcom/mojang/blaze3d/textures/GpuTextureView;
+	METHOD method_1_2674 renderGui (Lnet/minecraft/class_9779;Z)V
+		ARG 1 renderTickCounter
+		ARG 2 tick
+	METHOD method_1_2675 renderGuiInternal (Lnet/minecraft/class_9779;ZZ)V
+		ARG 1 renderTickCounter
+		ARG 2 tick
+		ARG 3 finishedLoading
+	METHOD method_1_2676 updateOptionsRenderState ()V
+	METHOD method_1_2677 updateWindowRenderState ()V
+	METHOD method_1_2678 registerPanoramaTextures (Lnet/minecraft/class_1060;)V
+		ARG 1 textureManager
+	METHOD method_1_2679 render (Lnet/minecraft/class_9779;Z)V
+		ARG 1 renderTickCounter
+		ARG 2 tick
+	METHOD method_1_2680 tickCamera (Lnet/minecraft/class_9779;Z)V
+		ARG 1 renderTickCounter
+		ARG 2 tick
 	METHOD method_3167 onCameraEntitySet (Lnet/minecraft/class_1297;)V
 		ARG 1 entity
 	METHOD method_3169 onResized (II)V
@@ -96,9 +114,13 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	METHOD method_71649 getRotatingPanoramaRenderer ()Lnet/minecraft/class_766;
 	METHOD method_72910 getEntityRenderCommandQueue ()Lnet/minecraft/class_11661;
 	METHOD method_72911 getEntityRenderDispatcher ()Lnet/minecraft/class_11684;
-	METHOD method_72912 getEntityRenderStates ()Lnet/minecraft/class_1_405;
+	METHOD method_72912 getRenderState ()Lnet/minecraft/class_1_405;
 	METHOD method_74920 updateCameraState (Lnet/minecraft/class_9779;FF)V
 		ARG 1 renderTickCounter
+		ARG 2 skyTickProgress
+		ARG 3 cameraTickProgress
+	METHOD method_75836 (Lnet/minecraft/class_11246;Lnet/minecraft/class_11247;)V
+		ARG 2 element
 	METHOD method_75837 renderActiveTextAreas ()V
 	CLASS 1 1
 		FIELD field_63914 index I

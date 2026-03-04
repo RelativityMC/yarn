@@ -13,5 +13,23 @@ CLASS net/minecraft/class_549 net/minecraft/client/render/entity/model/AbstractH
 	FIELD field_32489 ANGRY_ANIMATION_BODY_PITCH_MULTIPLIER F
 	FIELD field_32490 HEAD_TAIL_BASE_PITCH F
 	FIELD field_32491 ANGRY_ANIMATION_HIND_LEG_PITCH_MULTIPLIER F
+	METHOD <init> (Lnet/minecraft/class_630;Lnet/minecraft/class_630;Lnet/minecraft/class_630;Lnet/minecraft/class_630;Lnet/minecraft/class_630;Lnet/minecraft/class_630;Lnet/minecraft/class_630;)V
+		ARG 1 root
+		ARG 2 head
+		ARG 3 rightHindLeg
+		ARG 4 rightFrontLeg
+		ARG 5 leftHindLeg
+		ARG 6 leftFrontLeg
+		ARG 7 tail
+	METHOD method_1_2835 setHeadAngles (FF)V
+		ARG 1 eatingGrassAnimationProgress
+		ARG 2 angryAnimationProgress
+	METHOD method_1_2836 getAngerHindLegPitch ()F
+	METHOD method_1_2837 getAngerFrontLegPitch ()F
+	METHOD method_1_2838 getAngerFrontLegYOffset ()F
+	METHOD method_1_2839 getAngerFrontLegZOffset ()F
+	METHOD method_1_2840 getBaseTailPitch ()F
+	METHOD method_1_2841 setHindLegPositions (F)V
+		ARG 1 angryAnimationProgress
 	METHOD method_32010 getAdultModelData (Lnet/minecraft/class_5605;)Lnet/minecraft/class_5609;
 		ARG 0 dilation

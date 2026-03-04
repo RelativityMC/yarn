@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_1_401 net/minecraft/client/color/block/BlockColorProvider
+	METHOD method_1_2690 get (Lnet/minecraft/class_2680;)I
+		ARG 1 state
+	METHOD method_1_2691 getParticleColor (Lnet/minecraft/class_2680;Lnet/minecraft/class_1_393;Lnet/minecraft/class_2338;)I
+		ARG 1 state
+		ARG 2 world
+		ARG 3 pos
+	METHOD method_1_2692 get (Lnet/minecraft/class_2680;Lnet/minecraft/class_1_393;Lnet/minecraft/class_2338;)I
+		ARG 1 state
+		ARG 2 world
+		ARG 3 pos
+	METHOD method_1_2693 getProperties ()Ljava/util/Set;

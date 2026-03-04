@@ -1,0 +1,17 @@
+CLASS net/minecraft/class_1_415
+	FIELD field_1_2307 NO_TRANSFORMATION Lorg/joml/Matrix4f;
+	FIELD field_1_2308 loadedEntityModels Lnet/minecraft/class_5599;
+	FIELD field_1_2309 playerSkinCache Lnet/minecraft/class_11786;
+	FIELD field_1_2310 spriteHolder Lnet/minecraft/class_11701;
+	FIELD field_1_2311 blockRendererFactories Ljava/util/Map;
+	METHOD <init> (Ljava/util/Map;Lnet/minecraft/class_5599;Lnet/minecraft/class_11701;Lnet/minecraft/class_11786;)V
+		ARG 1 blockRendererFactories
+		ARG 2 loadedEntityModels
+		ARG 3 spriteHolder
+		ARG 4 playerSkinCache
+	METHOD method_1_2735 (Ljava/util/function/Function;Lnet/minecraft/class_1087;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 modelGetter
+		ARG 2 model
+	METHOD method_1_2737 (Lcom/google/common/collect/ImmutableMap$Builder;Lnet/minecraft/class_1_411$class_1_412;Lnet/minecraft/class_2680;Lnet/minecraft/class_1_411$class_1_413;)V
+		ARG 2 state
+		ARG 3 factory

@@ -1,4 +1,25 @@
 CLASS net/minecraft/class_10410 net/minecraft/client/data/ItemModels
+	METHOD method_1_2730 condition (Lnet/minecraft/class_4590;Lnet/minecraft/class_10460;Lnet/minecraft/class_10439$class_10441;Lnet/minecraft/class_10439$class_10441;)Lnet/minecraft/class_10439$class_10441;
+		ARG 0 transformation
+		ARG 1 property
+		ARG 2 onTrue
+		ARG 3 onFalse
+	METHOD method_1_2731 condition (Ljava/util/Optional;Lnet/minecraft/class_10460;Lnet/minecraft/class_10439$class_10441;Lnet/minecraft/class_10439$class_10441;)Lnet/minecraft/class_10439$class_10441;
+		ARG 0 transformation
+		ARG 1 property
+		ARG 2 onTrue
+		ARG 3 onFalse
+	METHOD method_1_2732 special (Lnet/minecraft/class_2960;Lnet/minecraft/class_4590;Lnet/minecraft/class_10515$class_10516;)Lnet/minecraft/class_10439$class_10441;
+		ARG 0 base
+		ARG 1 transformation
+		ARG 2 specialModel
+	METHOD method_1_2733 special (Lnet/minecraft/class_2960;Ljava/util/Optional;Lnet/minecraft/class_10515$class_10516;)Lnet/minecraft/class_10439$class_10441;
+		ARG 0 base
+		ARG 1 transformation
+		ARG 2 specialModel
+	METHOD method_1_2734 special (Lnet/minecraft/class_2960;Lnet/minecraft/class_10515$class_10516;)Lnet/minecraft/class_10439$class_10441;
+		ARG 0 base
+		ARG 1 specialModel
 	METHOD method_65479 usingItemProperty ()Lnet/minecraft/class_10460;
 	METHOD method_65480 constantTintSource (I)Lnet/minecraft/class_10401;
 		ARG 0 value
@@ -11,6 +32,8 @@ CLASS net/minecraft/class_10410 net/minecraft/client/data/ItemModels
 		ARG 0 property
 		ARG 1 fallback
 		ARG 2 valuesToModels
+	METHOD method_65485 (Lnet/minecraft/class_2769;Ljava/util/Map$Entry;)Lnet/minecraft/class_10451$class_10452;
+		ARG 1 entry
 	METHOD method_65486 rangeDispatchEntry (Lnet/minecraft/class_10439$class_10441;F)Lnet/minecraft/class_10448$class_10449;
 		ARG 0 model
 		ARG 1 threshold

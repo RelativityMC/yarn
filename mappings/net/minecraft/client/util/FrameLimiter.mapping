@@ -1,1 +1,11 @@
 CLASS net/minecraft/class_1_397 net/minecraft/client/util/FrameLimiter
+	FIELD field_1_2253 MAX_EXPECTED_SLEEP_LATENCY J
+	FIELD field_1_2254 EXPECTED_SLEEP_LATENCY_UPDATE_SKIP_THRESHOLD J
+	FIELD field_1_2255 NANOS_PER_SEC J
+	FIELD field_1_2256 MOVING_AVERAGE_RETENTION D
+	FIELD field_1_2257 REMAINDER_MARGIN_FOR_SLEEP J
+	FIELD field_1_2258 expectedSleepLatency J
+	FIELD field_1_2259 lastFrameTime J
+	FIELD field_1_2260 lastMaxFps I
+	METHOD method_1_2672 waitForNextFrame (I)V
+		ARG 0 maxFps

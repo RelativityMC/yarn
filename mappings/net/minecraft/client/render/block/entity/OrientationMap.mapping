@@ -11,4 +11,4 @@ CLASS net/minecraft/class_1_452 net/minecraft/client/render/block/entity/Orienta
 	METHOD method_1_2889 getFloor (I)Ljava/lang/Object;
 		ARG 1 orientation
 	METHOD method_1_2890 getWall (Lnet/minecraft/class_2350;)Ljava/lang/Object;
-		ARG 1 direction
+		ARG 1 facing

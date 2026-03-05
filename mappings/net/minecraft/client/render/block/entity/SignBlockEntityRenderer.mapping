@@ -20,7 +20,7 @@ CLASS net/minecraft/class_1_440 net/minecraft/client/render/block/entity/SignBlo
 		ARG 0 attachment
 		ARG 1 rotationDegrees
 	METHOD method_1_2871 getWallTransformations (Lnet/minecraft/class_2350;)Lnet/minecraft/class_11971$class_1_444;
-		ARG 0 direction
+		ARG 0 facing
 	METHOD method_1_2874 (Lnet/minecraft/class_4719;)Lnet/minecraft/class_4719;
 		ARG 0 woodType
 	METHOD method_1_2875 (Lnet/minecraft/class_5614$class_5615;Lnet/minecraft/class_4719;)Lnet/minecraft/class_1_440$class_1_441;

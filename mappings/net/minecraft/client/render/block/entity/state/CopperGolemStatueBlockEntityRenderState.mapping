@@ -1,3 +1,4 @@
 CLASS net/minecraft/class_11962 net/minecraft/client/render/block/entity/state/CopperGolemStatueBlockEntityRenderState
+	FIELD field_1_2439 oxidationLevel Lnet/minecraft/class_5955$class_5811;
 	FIELD field_62711 pose Lnet/minecraft/class_11583$class_11584;
 	FIELD field_62712 facing Lnet/minecraft/class_2350;

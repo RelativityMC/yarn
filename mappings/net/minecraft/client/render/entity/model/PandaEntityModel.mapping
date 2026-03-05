@@ -1,2 +1,4 @@
 CLASS net/minecraft/class_586 net/minecraft/client/render/entity/model/PandaEntityModel
+	METHOD method_1_2718 setSittingAngles (Lnet/minecraft/class_10050;)V
+		ARG 1 state
 	METHOD method_32022 getTexturedModelData ()Lnet/minecraft/class_5607;

@@ -6,6 +6,8 @@ CLASS net/minecraft/class_6954 net/minecraft/world/gen/densityfunction/DensityFu
 	FIELD field_61477 WORLD_BOTTOM_OFFSET D
 	FIELD field_61478 WORLD_TOP_OFFSET D
 	FIELD field_61479 BOTTOM_RELATIVE_SLIDE_MAX_Y I
+	METHOD method_1_2720 createVeinGapRouter (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6953;
+		ARG 0 function
 	METHOD method_40539 verticalRangeChoice (Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;III)Lnet/minecraft/class_6910;
 		ARG 0 y
 		ARG 1 whenInRange

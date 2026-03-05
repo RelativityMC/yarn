@@ -241,6 +241,8 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_1_2465 getFluidCollisionBox ()Lnet/minecraft/class_238;
 	METHOD method_1_2466 adjustFluidCollisionBoxOfPassenger (Lnet/minecraft/class_238;)Lnet/minecraft/class_238;
 		ARG 1 passengerBox
+	METHOD method_1_2570 getRandomYAroundFeet (D)D
+		ARG 1 heightScale
 	METHOD method_5622 onBlockCollision (Lnet/minecraft/class_2680;)V
 		COMMENT Called when this entity's collision box intersects {@code state}.
 		COMMENT

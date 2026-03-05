@@ -9,6 +9,10 @@ CLASS net/minecraft/class_10439 net/minecraft/client/render/item/model/ItemModel
 		ARG 7 seed
 	CLASS class_10440 BakeContext
 		FIELD comp_4551 spriteHolder Lnet/minecraft/class_11701;
+		METHOD method_1_2686 missingModel (Lorg/joml/Matrix4fc;)Lnet/minecraft/class_10447;
+			ARG 1 transform
 	CLASS class_10441 Unbaked
 		METHOD method_65585 getCodec ()Lcom/mojang/serialization/MapCodec;
 		METHOD method_65587 bake (Lnet/minecraft/class_10439$class_10440;Lorg/joml/Matrix4fc;)Lnet/minecraft/class_10439;
+			ARG 1 context
+			ARG 2 transform

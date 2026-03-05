@@ -39,7 +39,7 @@ CLASS net/minecraft/class_7837 net/minecraft/util/math/MatrixUtil
 			COMMENT the matrix for which the eigenvalues will be calculated. When this method
 			COMMENT returns, this will hold an approximately diagonal matrix; if the original
 			COMMENT matrix is A′A, then this will become the matrix Σ², where A has the SVD
-			COMMENT UΣV′.
+			COMMENT UΣV′
 		ARG 1 numJacobiIterations
 			COMMENT the number of iterations to apply
 	METHOD method_49742 conjugate (Lorg/joml/Matrix3f;Lorg/joml/Matrix3f;)V

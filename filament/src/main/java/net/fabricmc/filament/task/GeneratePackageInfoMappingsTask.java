@@ -45,7 +45,7 @@ public class GeneratePackageInfoMappingsTask extends DefaultTask {
 
 	@TaskAction
 	public void run() throws IOException {
-		getProject().getLogger().lifecycle("Scanning {} for package-info classes", inputJar.get().getAsFile());
+		getLogger().lifecycle("Scanning {} for package-info classes", inputJar.get().getAsFile());
 
 		FileUtil.deleteDirectory(outputDir.get().getAsFile());
 

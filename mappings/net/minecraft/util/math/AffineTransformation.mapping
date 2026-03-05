@@ -6,6 +6,9 @@ CLASS net/minecraft/class_4590 net/minecraft/util/math/AffineTransformation
 	COMMENT transformation, meaning "translation rotation scale rotation".
 	COMMENT
 	COMMENT <p>This class is immutable; its matrix is lazily decomposed upon demand.
+	FIELD field_1_2246 NO_SCALING Lorg/joml/Vector3fc;
+	FIELD field_1_2247 NO_ROTATION Lorg/joml/Quaternionfc;
+	FIELD field_1_2248 NO_TRANSLATION Lorg/joml/Vector3fc;
 	FIELD field_20900 matrix Lorg/joml/Matrix4fc;
 	FIELD field_20901 initialized Z
 	FIELD field_20902 translation Lorg/joml/Vector3fc;
@@ -15,6 +18,8 @@ CLASS net/minecraft/class_4590 net/minecraft/util/math/AffineTransformation
 	FIELD field_20906 IDENTITY Lnet/minecraft/class_4590;
 	FIELD field_42532 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_42533 ANY_CODEC Lcom/mojang/serialization/Codec;
+	METHOD <init> (Lorg/joml/Matrix4fc;)V
+		ARG 1 matrix
 	METHOD <init> (Lorg/joml/Vector3fc;Lorg/joml/Quaternionfc;Lorg/joml/Vector3fc;Lorg/joml/Quaternionfc;)V
 		ARG 1 translation
 		ARG 2 leftRotation
@@ -22,6 +27,9 @@ CLASS net/minecraft/class_4590 net/minecraft/util/math/AffineTransformation
 		ARG 4 rightRotation
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
+	METHOD method_1_2657 of (Lorg/joml/Matrix4fc;Ljava/util/Optional;)Lorg/joml/Matrix4fc;
+		ARG 0 matrix
+		ARG 1 before
 	METHOD method_22933 multiply (Lnet/minecraft/class_4590;)Lnet/minecraft/class_4590;
 		ARG 1 other
 	METHOD method_22934 setup (Lorg/joml/Vector3fc;Lorg/joml/Quaternionfc;Lorg/joml/Vector3fc;Lorg/joml/Quaternionfc;)Lorg/joml/Matrix4f;

@@ -54,3 +54,8 @@ CLASS net/minecraft/class_557 net/minecraft/client/render/entity/model/BookModel
 		METHOD comp_4756 pageTurnAmount ()F
 		METHOD comp_4757 leftFlipAmount ()F
 		METHOD comp_4758 rightFlipAmount ()F
+		METHOD method_1_2694 of (FFFF)Lnet/minecraft/class_557$class_11650;
+			ARG 0 ticks
+			ARG 1 leftFlipAmount
+			ARG 2 rightFlipAmount
+			ARG 3 open

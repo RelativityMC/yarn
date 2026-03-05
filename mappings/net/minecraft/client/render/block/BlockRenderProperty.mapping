@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_461 net/minecraft/client/render/block/BlockRenderProperty
+	METHOD method_1_2908 get (Lnet/minecraft/class_2680;Lnet/minecraft/class_1_436;)Ljava/lang/Object;
+		ARG 1 state
+		ARG 2 entityRenderId

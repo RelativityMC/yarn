@@ -5,7 +5,7 @@ CLASS net/minecraft/class_10529 net/minecraft/client/render/block/entity/Abstrac
 	FIELD field_61778 spriteHolder Lnet/minecraft/class_11701;
 	METHOD <init> (Lnet/minecraft/class_5614$class_5615;)V
 		ARG 1 context
-	METHOD method_45792 (Lnet/minecraft/class_4719;)Lnet/minecraft/class_1_310;
+	METHOD method_45792 getTextureId (Lnet/minecraft/class_4719;)Lnet/minecraft/class_1_310;
 		ARG 1 woodType
 	METHOD method_65819 (Lnet/minecraft/class_11971;Lnet/minecraft/class_2561;)Lnet/minecraft/class_5481;
 		ARG 2 textx
@@ -13,9 +13,11 @@ CLASS net/minecraft/class_10529 net/minecraft/client/render/block/entity/Abstrac
 		ARG 1 renderState
 		ARG 2 matrices
 		ARG 3 crumblingOverlay
+		ARG 4 queue
 	METHOD method_65822 getTextColor (Lnet/minecraft/class_8242;)I
 		ARG 0 text
 	METHOD method_65823 getModel (Lnet/minecraft/class_11971;)Lnet/minecraft/class_3879$class_9948;
+		ARG 1 state
 	METHOD method_65825 renderSign (Lnet/minecraft/class_4587;ILnet/minecraft/class_4719;Lnet/minecraft/class_3879$class_9948;Lnet/minecraft/class_11683$class_11792;Lnet/minecraft/class_11659;)V
 		ARG 1 matrices
 		ARG 2 lightmapCoords
@@ -29,3 +31,4 @@ CLASS net/minecraft/class_10529 net/minecraft/client/render/block/entity/Abstrac
 		ARG 1 renderState
 		ARG 2 matrices
 		ARG 3 queue
+		ARG 4 text

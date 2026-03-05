@@ -1,10 +1,15 @@
 CLASS net/minecraft/class_9931 net/minecraft/client/gui/hud/debug/chart/PieChart
+	FIELD field_1_2405 PERCENTAGE_FORMAT Ljava/text/DecimalFormat;
 	FIELD field_52776 textRenderer Lnet/minecraft/class_327;
 	FIELD field_52777 profileResult Lnet/minecraft/class_3696;
 	FIELD field_52778 currentPath Ljava/lang/String;
 	FIELD field_52779 bottomMargin I
 	METHOD <init> (Lnet/minecraft/class_327;)V
 		ARG 1 textRenderer
+	METHOD method_1_2880 wrapName (Ljava/lang/String;II)Ljava/util/List;
+		ARG 1 name
+		ARG 2 maxWidthForFirstComponent
+		ARG 3 maxWidth
 	METHOD method_61984 setBottomMargin (I)V
 		ARG 1 bottomMargin
 	METHOD method_61985 setProfileResult (Lnet/minecraft/class_3696;)V

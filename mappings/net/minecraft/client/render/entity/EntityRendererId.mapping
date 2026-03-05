@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_436 net/minecraft/client/render/entity/EntityRendererId
+	METHOD method_1_2849 create ()Lnet/minecraft/class_1_436;

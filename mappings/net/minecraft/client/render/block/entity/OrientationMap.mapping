@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_1_452 net/minecraft/client/render/block/entity/OrientationMap
+	COMMENT Holds values for each orientation of a block that can either be mounted
+	COMMENT on a wall in a cardinal direction or be rotated in a number of orientations
+	COMMENT on a floor.
+	FIELD field_1_2426 floor [Ljava/lang/Object;
+	FIELD field_1_2427 wall Ljava/util/Map;
+	METHOD <init> (Ljava/util/function/Function;Ljava/util/function/IntFunction;I)V
+		ARG 1 wall
+		ARG 2 floor
+		ARG 3 numRotations
+	METHOD method_1_2889 getFloor (I)Ljava/lang/Object;
+		ARG 1 orientation
+	METHOD method_1_2890 getWall (Lnet/minecraft/class_2350;)Ljava/lang/Object;
+		ARG 1 facing

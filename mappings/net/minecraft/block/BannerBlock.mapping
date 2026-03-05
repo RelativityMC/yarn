@@ -4,3 +4,7 @@ CLASS net/minecraft/class_2215 net/minecraft/block/BannerBlock
 	FIELD field_46264 CODEC Lcom/mojang/serialization/MapCodec;
 	METHOD method_53977 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
+	CLASS class_1_398 AttachmentType
+		FIELD field_1_2273 id Ljava/lang/String;
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 id

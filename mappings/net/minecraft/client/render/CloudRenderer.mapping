@@ -16,7 +16,9 @@ CLASS net/minecraft/class_9955 net/minecraft/client/render/CloudRenderer
 		ARG 0 color
 	METHOD method_62168 renderClouds (ILnet/minecraft/class_4063;FILnet/minecraft/class_243;JF)V
 		ARG 1 color
+		ARG 2 cloudRenderMode
 		ARG 3 cloudHeight
+		ARG 4 cloudRenderDistance
 		ARG 5 cameraPos
 		ARG 6 time
 		ARG 8 tickProgress

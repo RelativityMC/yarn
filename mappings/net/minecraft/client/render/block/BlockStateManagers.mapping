@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_10811 net/minecraft/client/render/model/BlockStateManagers
+CLASS net/minecraft/class_10811 net/minecraft/client/render/block/BlockStateManagers
 	FIELD field_56981 ITEM_FRAME Lnet/minecraft/class_2689;
 	FIELD field_56982 GLOW_ITEM_FRAME Lnet/minecraft/class_2689;
 	FIELD field_56983 GLOW_ITEM_FRAME_ID Lnet/minecraft/class_2960;

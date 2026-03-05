@@ -1,5 +1,0 @@
-CLASS net/minecraft/class_1_402
-	CLASS class_10381 AttachmentType
-		FIELD field_55161 id Ljava/lang/String;
-		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
-			ARG 3 id

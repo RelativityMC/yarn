@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_11959 net/minecraft/client/render/block/entity/state/ChestBlockEntityRenderState
+	FIELD field_1_2417 direction Lnet/minecraft/class_2350;
 	FIELD field_62693 chestType Lnet/minecraft/class_2745;
 	FIELD field_62694 lidAnimationProgress F
 	FIELD field_62696 variant Lnet/minecraft/class_11959$class_11960;

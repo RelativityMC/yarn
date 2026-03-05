@@ -1,0 +1,13 @@
+CLASS net/minecraft/class_1_404 net/minecraft/client/render/block/model/BlockModels
+	FIELD field_1_2290 NO_TRANSFORMATION Lorg/joml/Matrix4f;
+	FIELD field_1_2291 blockColors Lnet/minecraft/class_324;
+	FIELD field_1_2292 models Ljava/util/Map;
+	FIELD field_1_2293 blockStateModels Lnet/minecraft/class_773;
+	METHOD <init> (Lnet/minecraft/class_773;Ljava/util/Map;Lnet/minecraft/class_324;)V
+		ARG 1 blockStateModels
+		ARG 2 models
+		ARG 3 blockColors
+	METHOD method_1_2712 compute (Lnet/minecraft/class_2680;)Lnet/minecraft/class_1_411;
+		ARG 1 state
+	METHOD method_1_2713 get (Lnet/minecraft/class_2680;)Lnet/minecraft/class_1_411;
+		ARG 1 state

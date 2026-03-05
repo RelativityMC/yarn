@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_423 net/minecraft/client/render/entity/model/BabyHorseEntityModel
+	METHOD method_1_2804 getModelData (Lnet/minecraft/class_5605;)Lnet/minecraft/class_5609;
+		ARG 0 dilation

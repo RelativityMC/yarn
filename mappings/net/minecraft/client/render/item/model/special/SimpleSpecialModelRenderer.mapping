@@ -7,3 +7,4 @@ CLASS net/minecraft/class_10508 net/minecraft/client/render/item/model/special/S
 		ARG 5 overlay
 		ARG 6 glint
 		ARG 7 outlineColor
+	CLASS class_1_447 Unbaked

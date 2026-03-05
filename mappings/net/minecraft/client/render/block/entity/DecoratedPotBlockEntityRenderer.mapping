@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_8188 net/minecraft/client/render/block/entity/DecoratedPotBlockEntityRenderer
+	FIELD field_1_2398 TRANSFORMATIONS Ljava/util/Map;
 	FIELD field_42913 NECK Ljava/lang/String;
 	FIELD field_42914 FRONT Ljava/lang/String;
 	FIELD field_42915 BACK Ljava/lang/String;
@@ -13,13 +14,19 @@ CLASS net/minecraft/class_8188 net/minecraft/client/render/block/entity/Decorate
 	FIELD field_42924 right Lnet/minecraft/class_630;
 	FIELD field_42925 top Lnet/minecraft/class_630;
 	FIELD field_42926 bottom Lnet/minecraft/class_630;
+	FIELD field_46728 WOBBLE_AMPLIFIER F
 	FIELD field_61787 materials Lnet/minecraft/class_11701;
 	METHOD <init> (Lnet/minecraft/class_5599;Lnet/minecraft/class_11701;)V
 		ARG 1 entityModelSet
+		ARG 2 materials
 	METHOD <init> (Lnet/minecraft/class_5614$class_5615;)V
 		ARG 1 context
 	METHOD <init> (Lnet/minecraft/class_10515$class_11695;)V
 		ARG 1 context
+	METHOD method_1_2862 computeTransformation (Lnet/minecraft/class_2350;)Lnet/minecraft/class_4590;
+		ARG 0 facing
+	METHOD method_1_2863 getTransformation (Lnet/minecraft/class_2350;)Lnet/minecraft/class_4590;
+		ARG 0 facing
 	METHOD method_49343 getTextureIdFromSherd (Ljava/util/Optional;)Lnet/minecraft/class_1_310;
 		ARG 0 sherd
 	METHOD method_49346 getTopBottomNeckTexturedModelData ()Lnet/minecraft/class_5607;

@@ -8,6 +8,10 @@ CLASS net/minecraft/class_778 net/minecraft/client/render/block/BlockModelRender
 	FIELD field_1_2208 neighborPos Lnet/minecraft/class_2338$class_2339;
 	FIELD field_1_2209 lastTintIndex I
 	FIELD field_1_2210 colorOfLastTintIndex I
+	FIELD field_1_2324 tintColors Lit/unimi/dsi/fastutil/ints/IntList;
+	FIELD field_1_2325 initializedColors Z
+	FIELD field_1_2326 colorProviders Ljava/util/List;
+		COMMENT Has {@code null} for indices where {@link #tintColors} holds a meaningful value.
 	FIELD field_4178 colors Lnet/minecraft/class_324;
 	FIELD field_27743 DIRECTIONS [Lnet/minecraft/class_2350;
 	METHOD <init> (ZZLnet/minecraft/class_324;)V
@@ -64,3 +68,11 @@ CLASS net/minecraft/class_778 net/minecraft/client/render/block/BlockModelRender
 		ARG 6 blockRenderView
 		ARG 7 state
 		ARG 8 pos
+	METHOD method_1_2800 computeTintColor (Lnet/minecraft/class_1_393;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;I)I
+		ARG 1 world
+		ARG 2 state
+		ARG 3 pos
+		ARG 4 tintIndex
+	METHOD method_1_2801 initializeColors (Lnet/minecraft/class_2680;)V
+		ARG 1 state
+	METHOD method_1_2802 resetColors ()V

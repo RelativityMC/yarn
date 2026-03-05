@@ -1,9 +1,12 @@
 CLASS net/minecraft/class_1_394 net/minecraft/client/render/block/BlockModelManager
 	FIELD field_1_2200 bakedModelManager Lnet/minecraft/class_1092;
+	FIELD field_1_2321 DEFAULT_SEED J
 	METHOD <init> (Lnet/minecraft/class_1092;)V
 		ARG 1 bakedModelManager
 	METHOD method_1_2624 setBlockRenderState (Lnet/minecraft/class_1_395;Lnet/minecraft/class_2680;Lnet/minecraft/class_1_436;)V
 		ARG 1 renderStateOut
+		ARG 2 state
+		ARG 3 rendererId
 	METHOD method_1_2625 setItemFrameBlockRenderState (Lnet/minecraft/class_1_395;ZZ)V
 		ARG 1 renderStateOut
 		ARG 2 hasGlow

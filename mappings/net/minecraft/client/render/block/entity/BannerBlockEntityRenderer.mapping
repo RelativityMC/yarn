@@ -1,9 +1,13 @@
 CLASS net/minecraft/class_823 net/minecraft/client/render/block/entity/BannerBlockEntityRenderer
+	FIELD field_1_2356 SCALING Lorg/joml/Vector3fc;
+	FIELD field_1_2357 TRANSLATION Lorg/joml/Vector3fc;
+	FIELD field_1_2358 TRANSFORMATIONS Lnet/minecraft/class_1_452;
 	FIELD field_32819 ROTATIONS I
 	FIELD field_55154 standingModel Lnet/minecraft/class_10378;
 	FIELD field_55155 wallModel Lnet/minecraft/class_10378;
 	FIELD field_55156 standingFlagModel Lnet/minecraft/class_10377;
 	FIELD field_55157 wallFlagModel Lnet/minecraft/class_10377;
+	FIELD field_55282 SCALE_FACTOR F
 	FIELD field_61779 materials Lnet/minecraft/class_11701;
 	METHOD <init> (Lnet/minecraft/class_5599;Lnet/minecraft/class_11701;)V
 		ARG 1 models
@@ -14,6 +18,16 @@ CLASS net/minecraft/class_823 net/minecraft/client/render/block/entity/BannerBlo
 		ARG 1 context
 	METHOD method_1_1960 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 id
+	METHOD method_1_2811 getModel (Lnet/minecraft/class_2215$class_1_398;)Lnet/minecraft/class_10378;
+		ARG 1 attachmentType
+	METHOD method_1_2812 getGroundTransformation (I)Lnet/minecraft/class_4590;
+		ARG 0 rotation
+	METHOD method_1_2813 getWallTransformation (Lnet/minecraft/class_2350;)Lnet/minecraft/class_4590;
+		ARG 0 direction
+	METHOD method_1_2814 getFlagModel (Lnet/minecraft/class_2215$class_1_398;)Lnet/minecraft/class_10377;
+		ARG 1 attachmentType
+	METHOD method_1_2815 getTransformation (F)Lnet/minecraft/class_4590;
+		ARG 0 rotationDegrees
 	METHOD method_23802 renderCanvas (Lnet/minecraft/class_11701;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;IILnet/minecraft/class_3879;Ljava/lang/Object;ZLnet/minecraft/class_1767;Lnet/minecraft/class_9307;Lnet/minecraft/class_11683$class_11792;)V
 		ARG 0 materials
 		ARG 1 matrices
@@ -51,6 +65,7 @@ CLASS net/minecraft/class_823 net/minecraft/client/render/block/entity/BannerBlo
 		ARG 10 crumblingOverlay
 		ARG 11 outlineColor
 	METHOD method_65556 renderAsItem (Lnet/minecraft/class_2215$class_1_398;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;IILnet/minecraft/class_1767;Lnet/minecraft/class_9307;I)V
+		ARG 1 attachmentType
 		ARG 2 matrices
 		ARG 3 queue
 		ARG 4 light

@@ -1,0 +1,45 @@
+CLASS net/minecraft/class_1_440 net/minecraft/client/render/block/entity/SignBlockEntityRenderer
+	FIELD field_1_2400 TEXT_OFFSET Lorg/joml/Vector3fc;
+	FIELD field_1_2401 TRANSFORMATIONS Lnet/minecraft/class_1_452;
+	FIELD field_1_2402 models Ljava/util/Map;
+	METHOD method_1_2864 getBaseTransformation (FLnet/minecraft/class_1_399$class_1_400;)Lorg/joml/Matrix4f;
+		ARG 0 rotationDegrees
+		ARG 1 attachmentType
+	METHOD method_1_2865 getBodyTransformation (Lnet/minecraft/class_1_399$class_1_400;F)Lnet/minecraft/class_4590;
+		ARG 0 attachmentType
+		ARG 1 rotationDegrees
+	METHOD method_1_2866 getGroundTransformations (I)Lnet/minecraft/class_11971$class_1_444;
+		ARG 0 rotation
+	METHOD method_1_2868 getTexturedModelData (Z)Lnet/minecraft/class_5607;
+		ARG 0 hasStick
+	METHOD method_1_2869 create (Lnet/minecraft/class_5599;Lnet/minecraft/class_4719;Lnet/minecraft/class_1_399$class_1_400;)Lnet/minecraft/class_3879$class_9948;
+		ARG 0 loadedEntityModels
+		ARG 1 woodType
+		ARG 2 attachmentType
+	METHOD method_1_2870 getTransformations (Lnet/minecraft/class_1_399$class_1_400;F)Lnet/minecraft/class_11971$class_1_444;
+		ARG 0 attachment
+		ARG 1 rotationDegrees
+	METHOD method_1_2871 getWallTransformations (Lnet/minecraft/class_2350;)Lnet/minecraft/class_11971$class_1_444;
+		ARG 0 facing
+	METHOD method_1_2874 (Lnet/minecraft/class_4719;)Lnet/minecraft/class_4719;
+		ARG 0 woodType
+	METHOD method_1_2875 (Lnet/minecraft/class_5614$class_5615;Lnet/minecraft/class_4719;)Lnet/minecraft/class_1_440$class_1_441;
+		ARG 1 woodType
+	METHOD method_1_2876 renderAsItem (Lnet/minecraft/class_11701;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;IILnet/minecraft/class_3879$class_9948;Lnet/minecraft/class_1_310;)V
+		ARG 0 spriteHolder
+		ARG 1 matrices
+		ARG 2 queue
+		ARG 3 light
+		ARG 4 overlay
+		ARG 5 model
+		ARG 6 spriteId
+	METHOD method_1_2877 getTextTransformation (Lnet/minecraft/class_1_399$class_1_400;FZ)Lnet/minecraft/class_4590;
+		ARG 0 attachmentType
+		ARG 1 rotationDegrees
+		ARG 2 front
+	CLASS class_1_441 Models
+		METHOD method_1_2878 create (Lnet/minecraft/class_5614$class_5615;Lnet/minecraft/class_4719;)Lnet/minecraft/class_1_440$class_1_441;
+			ARG 0 context
+			ARG 1 woodType
+		METHOD method_1_2879 get (Lnet/minecraft/class_1_399$class_1_400;)Lnet/minecraft/class_3879$class_9948;
+			ARG 1 attachmentType

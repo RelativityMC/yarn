@@ -1,6 +1,11 @@
 CLASS net/minecraft/class_10442 net/minecraft/client/item/ItemModelManager
+	FIELD field_1_2305 bakedModelManager Lnet/minecraft/class_1092;
 	METHOD <init> (Lnet/minecraft/class_1092;)V
 		ARG 1 bakedModelManager
+	METHOD method_1_2728 getItemModel (Lnet/minecraft/class_2960;)Lnet/minecraft/class_10439;
+		ARG 1 id
+	METHOD method_1_2729 getItemProperties (Lnet/minecraft/class_2960;)Lnet/minecraft/class_10434$class_10543;
+		ARG 1 id
 	METHOD method_65595 updateForNonLivingEntity (Lnet/minecraft/class_10444;Lnet/minecraft/class_1799;Lnet/minecraft/class_811;Lnet/minecraft/class_1297;)V
 		ARG 1 renderState
 		ARG 2 stack

@@ -60,6 +60,8 @@ CLASS net/minecraft/class_1088 net/minecraft/client/render/model/ModelBaker
 		METHOD method_68550 (Lnet/minecraft/class_7775$class_10897;)Ljava/lang/Object;
 			ARG 1 key
 	CLASS class_10524 BakedModels
+		METHOD method_1_2695 get (Lnet/minecraft/class_2680;)Lnet/minecraft/class_1087;
+			ARG 1 state
 	CLASS class_10812 BlockItemModels
 		METHOD method_68021 bake (Lnet/minecraft/class_10819;Lnet/minecraft/class_9826;Lnet/minecraft/class_7775$class_12356;)Lnet/minecraft/class_1088$class_10812;
 			ARG 0 model

@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_442 net/minecraft/client/render/block/model/ConditionalBlockModel
+	FIELD field_1_2408 onFalse Lnet/minecraft/class_1_411;
+	FIELD field_1_2409 onTrue Lnet/minecraft/class_1_411;
+	FIELD field_1_2410 property Lnet/minecraft/class_1_462;
+	METHOD <init> (Lnet/minecraft/class_1_462;Lnet/minecraft/class_1_411;Lnet/minecraft/class_1_411;)V
+		ARG 1 predicate
+		ARG 2 onTrue
+		ARG 3 onFalse
+	CLASS class_1_443 Unbaked

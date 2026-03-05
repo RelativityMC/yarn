@@ -1,9 +1,12 @@
 CLASS net/minecraft/class_10455 net/minecraft/client/render/item/model/SpecialItemModel
+	FIELD field_1_2330 modelTransform Lorg/joml/Matrix4fc;
 	FIELD field_55366 specialModelType Lnet/minecraft/class_10515;
 	FIELD field_56973 settings Lnet/minecraft/class_10809;
+	FIELD field_64591 vertices Ljava/util/function/Supplier;
 	METHOD <init> (Lnet/minecraft/class_10515;Lnet/minecraft/class_10809;Lorg/joml/Matrix4fc;)V
 		ARG 1 specialModelType
 		ARG 2 settings
+		ARG 3 modelTransform
 	CLASS class_10456 Unbaked
 		FIELD field_55368 CODEC Lcom/mojang/serialization/MapCodec;
 		METHOD method_65636 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

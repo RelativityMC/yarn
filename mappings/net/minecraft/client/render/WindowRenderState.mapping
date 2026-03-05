@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_416 net/minecraft/client/render/WindowRenderState
+	FIELD field_1_2315 minimumLineWidth F
+	FIELD field_1_2316 scaleFactor I
+	FIELD field_1_2317 height I
+	FIELD field_1_2318 hasZeroWidthOrHeight Z
+	FIELD field_1_2319 resized Z
+	FIELD field_1_2320 width I

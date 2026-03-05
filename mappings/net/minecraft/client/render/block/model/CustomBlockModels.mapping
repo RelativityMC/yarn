@@ -1,0 +1,151 @@
+CLASS net/minecraft/class_1_417 net/minecraft/client/render/block/model/CustomBlockModels
+	METHOD method_1_2741 addCustomModels (Lnet/minecraft/class_1_417$class_1_418;)V
+		ARG 0 builder
+	METHOD method_1_2742 compound (Lnet/minecraft/class_1_411$class_1_413;Lnet/minecraft/class_324;Lnet/minecraft/class_2680;)Lnet/minecraft/class_1_437$class_1_438;
+		ARG 0 custom
+		ARG 1 blockColors
+		ARG 2 state
+	METHOD method_1_2743 groundBanner (Lnet/minecraft/class_1767;)Lnet/minecraft/class_1_417$class_1_420;
+		ARG 0 color
+	METHOD method_1_2744 addBannerModels (Lnet/minecraft/class_1_417$class_1_418;Lnet/minecraft/class_1767;Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
+		ARG 0 builder
+		ARG 1 color
+		ARG 2 banner
+		ARG 3 wallBanner
+	METHOD method_1_2745 bed (Lnet/minecraft/class_1767;)Lnet/minecraft/class_1_417$class_1_420;
+		ARG 0 color
+	METHOD method_1_2746 createCustomBlockModels (Lnet/minecraft/class_324;)Ljava/util/Map;
+		ARG 0 blockColors
+	METHOD method_1_2747 simple (Lnet/minecraft/class_324;Lnet/minecraft/class_2680;)Lnet/minecraft/class_1_445$class_1_446;
+		ARG 0 blockColors
+		ARG 1 state
+	METHOD method_1_2748 hangingSign (Lnet/minecraft/class_4719;)Lnet/minecraft/class_1_417$class_1_420;
+		ARG 0 woodType
+	METHOD method_1_2749 mergeableChest (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_417$class_1_420;
+		ARG 0 texture
+	METHOD method_1_2750 baseChest (Lnet/minecraft/class_2960;Lnet/minecraft/class_2745;Lnet/minecraft/class_2350;)Lnet/minecraft/class_1_411$class_1_413;
+		ARG 0 texture
+		ARG 1 chestType
+		ARG 2 facing
+	METHOD method_1_2751 copperGolemStatue (Lnet/minecraft/class_5955$class_5811;)Lnet/minecraft/class_1_417$class_1_420;
+		ARG 0 oxidationLevel
+	METHOD method_1_2752 decoratedPot ()Lnet/minecraft/class_1_417$class_1_420;
+	METHOD method_1_2753 dyedShulkerBox (Lnet/minecraft/class_1767;)Lnet/minecraft/class_1_417$class_1_420;
+		ARG 0 color
+	METHOD method_1_2754 enchantingTable ()Lnet/minecraft/class_1_411$class_1_413;
+	METHOD method_1_2755 flowerbed (Lnet/minecraft/class_324;Lnet/minecraft/class_2680;)Lnet/minecraft/class_1_406$class_1_409;
+		ARG 0 blockColors
+		ARG 1 state
+	METHOD method_1_2756 groundSkull (Lnet/minecraft/class_2484$class_2486;)Lnet/minecraft/class_1_417$class_1_420;
+		ARG 0 type
+	METHOD method_1_2757 addSkullModels (Lnet/minecraft/class_1_417$class_1_418;Lnet/minecraft/class_2484$class_2486;Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
+		ARG 0 builder
+		ARG 1 skullType
+		ARG 2 block
+		ARG 3 wallBlock
+	METHOD method_1_2758 wallSkull (Lnet/minecraft/class_2484$class_2486;)Lnet/minecraft/class_1_417$class_1_420;
+		ARG 0 type
+	METHOD method_1_2759 groundPlayerHead ()Lnet/minecraft/class_1_417$class_1_420;
+	METHOD method_1_2760 wallPlayerHead ()Lnet/minecraft/class_1_417$class_1_420;
+	METHOD method_1_2761 shulkerBox ()Lnet/minecraft/class_1_417$class_1_420;
+	METHOD method_1_2762 addSignModels (Lnet/minecraft/class_1_417$class_1_418;Lnet/minecraft/class_4719;Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
+		ARG 0 builder
+		ARG 1 woodType
+		ARG 2 sign
+		ARG 3 wallSign
+		ARG 4 hangingSign
+		ARG 5 wallHangingSign
+	METHOD method_1_2763 singleChest (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_417$class_1_420;
+		ARG 0 texture
+	METHOD method_1_2764 sign (Lnet/minecraft/class_4719;)Lnet/minecraft/class_1_417$class_1_420;
+		ARG 0 woodType
+	METHOD method_1_2765 wallBanner (Lnet/minecraft/class_1767;)Lnet/minecraft/class_1_417$class_1_420;
+		ARG 0 color
+	METHOD method_1_2766 wallHangingSign (Lnet/minecraft/class_4719;)Lnet/minecraft/class_1_417$class_1_420;
+		ARG 0 woodType
+	METHOD method_1_2767 wallSign (Lnet/minecraft/class_4719;)Lnet/minecraft/class_1_417$class_1_420;
+		ARG 0 woodType
+	METHOD method_1_2768 christianChest (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_417$class_1_420;
+		ARG 0 texture
+	METHOD method_1_2769 (Lnet/minecraft/class_1767;Ljava/lang/Integer;)Lnet/minecraft/class_1_411$class_1_413;
+		ARG 1 rotation
+	METHOD method_1_2770 (Lnet/minecraft/class_1767;Lnet/minecraft/class_2350;Lnet/minecraft/class_2742;)Lnet/minecraft/class_1_411$class_1_413;
+		ARG 1 facing
+		ARG 2 part
+	METHOD method_1_2771 (Lnet/minecraft/class_4719;Ljava/lang/Integer;Ljava/lang/Boolean;)Lnet/minecraft/class_1_411$class_1_413;
+		ARG 1 rotation
+		ARG 2 attached
+	METHOD method_1_2772 (Lnet/minecraft/class_2960;Lnet/minecraft/class_2350;Lnet/minecraft/class_2745;)Lnet/minecraft/class_1_411$class_1_413;
+		ARG 1 facing
+		ARG 2 type
+	METHOD method_1_2773 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_2350;Lnet/minecraft/class_11583$class_11584;)Lnet/minecraft/class_1_411$class_1_413;
+		ARG 1 facing
+		ARG 2 pose
+	METHOD method_1_2774 (Lnet/minecraft/class_2350;)Lnet/minecraft/class_1_411$class_1_413;
+		ARG 0 facing
+	METHOD method_1_2775 (Lnet/minecraft/class_1767;Lnet/minecraft/class_2350;)Lnet/minecraft/class_1_411$class_1_413;
+		ARG 1 facing
+	METHOD method_1_2776 (Lnet/minecraft/class_2484$class_2486;Ljava/lang/Integer;)Lnet/minecraft/class_1_411$class_1_413;
+		ARG 1 rotation
+	METHOD method_1_2777 (Lnet/minecraft/class_2484$class_2486;Lnet/minecraft/class_2350;)Lnet/minecraft/class_1_411$class_1_413;
+		ARG 1 facing
+	METHOD method_1_2778 (Ljava/lang/Integer;)Lnet/minecraft/class_1_411$class_1_413;
+		ARG 0 rotation
+	METHOD method_1_2779 (Lnet/minecraft/class_2350;)Lnet/minecraft/class_1_411$class_1_413;
+		ARG 0 facing
+	METHOD method_1_2780 (Lnet/minecraft/class_2350;)Lnet/minecraft/class_1_411$class_1_413;
+		ARG 0 facing
+	METHOD method_1_2781 (Lnet/minecraft/class_2960;Lnet/minecraft/class_2350;)Lnet/minecraft/class_1_411$class_1_413;
+		ARG 1 facing
+	METHOD method_1_2782 (Lnet/minecraft/class_4719;Ljava/lang/Integer;)Lnet/minecraft/class_1_411$class_1_413;
+		ARG 1 rotation
+	METHOD method_1_2783 (Lnet/minecraft/class_1767;Lnet/minecraft/class_2350;)Lnet/minecraft/class_1_411$class_1_413;
+		ARG 1 direction
+	METHOD method_1_2784 (Lnet/minecraft/class_4719;Lnet/minecraft/class_2350;)Lnet/minecraft/class_1_411$class_1_413;
+		ARG 1 facing
+	METHOD method_1_2785 (Lnet/minecraft/class_4719;Lnet/minecraft/class_2350;)Lnet/minecraft/class_1_411$class_1_413;
+		ARG 1 facing
+	METHOD method_1_2786 (Lnet/minecraft/class_2960;Lnet/minecraft/class_2350;Lnet/minecraft/class_2745;)Lnet/minecraft/class_1_411$class_1_413;
+		ARG 1 facing
+		ARG 2 type
+	METHOD method_1_2787 (Lnet/minecraft/class_2769;Ljava/util/function/Function;Lnet/minecraft/class_2680;)Lnet/minecraft/class_1_411$class_1_413;
+		ARG 2 state
+	METHOD method_1_2788 (Lnet/minecraft/class_2769;Lnet/minecraft/class_2769;Ljava/util/function/BiFunction;Lnet/minecraft/class_2680;)Lnet/minecraft/class_1_411$class_1_413;
+		ARG 3 state
+	METHOD method_1_2789 special (Lnet/minecraft/class_10515$class_10516;)Lnet/minecraft/class_1_411$class_1_413;
+		ARG 0 modelRenderer
+	METHOD method_1_2790 special (Lnet/minecraft/class_10515$class_10516;Lnet/minecraft/class_4590;)Lnet/minecraft/class_1_411$class_1_413;
+		ARG 0 modelRenderer
+		ARG 1 transformation
+	METHOD method_1_2791 propertyBased (Lnet/minecraft/class_2769;Ljava/util/function/Function;)Lnet/minecraft/class_1_417$class_1_420;
+		ARG 0 property
+		ARG 1 factory
+	METHOD method_1_2792 propertyBased (Lnet/minecraft/class_2769;Lnet/minecraft/class_2769;Ljava/util/function/BiFunction;)Lnet/minecraft/class_1_417$class_1_420;
+		ARG 0 property1
+		ARG 1 property2
+		ARG 2 factory
+	CLASS class_1_418 Builder
+		FIELD field_1_2322 blockColors Lnet/minecraft/class_324;
+		FIELD field_1_2323 unbakedModels Ljava/util/Map;
+		METHOD <init> (Lnet/minecraft/class_324;)V
+			ARG 1 blockColors
+		METHOD method_1_2793 build ()Ljava/util/Map;
+		METHOD method_1_2794 (Lnet/minecraft/class_1_411$class_1_413;Lnet/minecraft/class_2680;)Lnet/minecraft/class_1_411$class_1_413;
+			ARG 1 state
+		METHOD method_1_2795 add (Lnet/minecraft/class_1_417$class_1_419;Lnet/minecraft/class_2248;)V
+			ARG 1 getter
+			ARG 2 block
+		METHOD method_1_2796 add (Lnet/minecraft/class_1_417$class_1_419;Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
+			ARG 1 getter
+			ARG 2 block1
+			ARG 3 block2
+		METHOD method_1_2797 addCompound (Lnet/minecraft/class_1_411$class_1_413;Lnet/minecraft/class_2248;)V
+			ARG 1 modelFactory
+			ARG 2 block
+	CLASS class_1_419 ModelFactory
+		METHOD method_1_2798 create (Lnet/minecraft/class_324;Lnet/minecraft/class_2680;)Lnet/minecraft/class_1_411$class_1_413;
+			ARG 1 blockColors
+			ARG 2 state
+	CLASS class_1_420 CompoundModelFactory
+		METHOD method_1_2799 createSimple (Lnet/minecraft/class_2680;)Lnet/minecraft/class_1_411$class_1_413;
+			ARG 1 state

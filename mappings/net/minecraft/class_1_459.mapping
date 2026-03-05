@@ -1,5 +1,0 @@
-CLASS net/minecraft/class_1_459
-	CLASS class_7401 Rule
-		FIELD field_38871 CODEC Lcom/mojang/serialization/Codec;
-		METHOD method_43315 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 0 instance

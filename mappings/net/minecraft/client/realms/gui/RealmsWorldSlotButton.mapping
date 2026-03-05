@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_4367 net/minecraft/client/realms/gui/RealmsWorldSlotButton
+	FIELD field_1_2287 nameWidget Lnet/minecraft/class_7842;
 	FIELD field_19675 slotIndex I
 	FIELD field_19677 state Lnet/minecraft/class_4367$class_4370;
 	FIELD field_22681 SLOT_FRAME Lnet/minecraft/class_2960;
@@ -17,9 +18,13 @@ CLASS net/minecraft/class_4367 net/minecraft/client/realms/gui/RealmsWorldSlotBu
 		ARG 5 slotIndex
 		ARG 6 server
 		ARG 7 onPress
+	METHOD method_1_2698 setServerAndMessage (Lnet/minecraft/class_4877;)V
+		ARG 1 server
 	METHOD method_25099 getState ()Lnet/minecraft/class_4367$class_4370;
 	METHOD method_27455 getAction (ZZZ)Lnet/minecraft/class_4367$class_4368;
-		ARG 1 active
+		ARG 0 active
+		ARG 1 empty
+		ARG 2 expired
 	METHOD method_54571 setServer (Lnet/minecraft/class_4877;)Lnet/minecraft/class_4367$class_4370;
 		ARG 1 server
 	METHOD method_54572 updateTooltip (Lnet/minecraft/class_4367$class_4370;Ljava/lang/String;)V

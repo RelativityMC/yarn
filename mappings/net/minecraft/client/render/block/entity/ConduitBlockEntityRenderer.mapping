@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_829 net/minecraft/client/render/block/entity/ConduitBlockEntityRenderer
+	FIELD field_1_2371 TRANSFORM Lnet/minecraft/class_4590;
 	FIELD field_4371 WIND_VERTICAL_TEXTURE Lnet/minecraft/class_1_310;
 	FIELD field_4373 WIND_TEXTURE Lnet/minecraft/class_1_310;
 	FIELD field_4377 BASE_TEXTURE Lnet/minecraft/class_1_310;

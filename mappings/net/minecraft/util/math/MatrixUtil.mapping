@@ -3,14 +3,16 @@ CLASS net/minecraft/class_7837 net/minecraft/util/math/MatrixUtil
 	FIELD field_43146 SIN_COS_PI_OVER_8 Lnet/minecraft/class_8218;
 	METHOD method_46410 qrGivensQuaternion (FF)Lnet/minecraft/class_8218;
 		COMMENT Computes the Givens quaternion for a QR factorization.
-		COMMENT See Algorithm 4 of <a href="https://pages.cs.wisc.edu/~sifakis/papers/SVD_TR1690.pdf">
-		COMMENT https://pages.cs.wisc.edu/~sifakis/papers/SVD_TR1690.pdf</a>.
+		COMMENT This is identical to Algorithm 4 of
+		COMMENT <a href="https://pages.cs.wisc.edu/~sifakis/papers/SVD_TR1690.pdf">(McAdams et al., 2011)</a>,
+		COMMENT except that only the {@code c_h} and {@code s_h} components are returned as
+		COMMENT a {@link GivensPair}.
 		ARG 0 a1
 		ARG 1 a2
 	METHOD method_46411 approximateGivensQuaternion (FFF)Lnet/minecraft/class_8218;
 		COMMENT Computes the approximate Givens rotation factors {@code (c, s) = (cos(phi), sin(phi))} for a 2×2 matrix.
-		COMMENT See Algorithm 4 of <a href="https://pages.cs.wisc.edu/~sifakis/papers/SVD_TR1690.pdf">
-		COMMENT https://pages.cs.wisc.edu/~sifakis/papers/SVD_TR1690.pdf</a>.
+		COMMENT See Algorithm 2 of
+		COMMENT <a href="https://pages.cs.wisc.edu/~sifakis/papers/SVD_TR1690.pdf">(McAdams et al., 2011)</a>.
 		ARG 0 a11
 			COMMENT the top-left element of the matrix
 		ARG 1 a12
@@ -19,17 +21,27 @@ CLASS net/minecraft/class_7837 net/minecraft/util/math/MatrixUtil
 			COMMENT the bottom-right element of the matrix
 	METHOD method_46412 svdDecompose (Lorg/joml/Matrix3f;)Lorg/apache/commons/lang3/tuple/Triple;
 		COMMENT Performs an approximate singular value decomposition on a 3×3 matrix.
-		COMMENT See Algorithm 4 of <a href="https://pages.cs.wisc.edu/~sifakis/papers/SVD_TR1690.pdf">
-		COMMENT https://pages.cs.wisc.edu/~sifakis/papers/SVD_TR1690.pdf</a>.
+		COMMENT See Algorithm 4 of <a href="https://pages.cs.wisc.edu/~sifakis/papers/SVD_TR1690.pdf">(McAdams et al., 2011)</a>.
 		ARG 0 A
 	METHOD method_46414 scale (Lorg/joml/Matrix4f;F)Lorg/joml/Matrix4f;
 		ARG 0 matrix
 		ARG 1 scalar
 	METHOD method_46415 applyJacobiIteration (Lorg/joml/Matrix3f;Lorg/joml/Matrix3f;Lorg/joml/Quaternionf;Lorg/joml/Quaternionf;)V
 		ARG 0 AtA
+		ARG 1 tempMat
+		ARG 2 tempQuat
+		ARG 3 V
 	METHOD method_49741 applyJacobiIterations (Lorg/joml/Matrix3f;I)Lorg/joml/Quaternionf;
+		COMMENT Computes the eigenvalues of {@code AtA} using Jacobi iteration.
+		COMMENT
+		COMMENT {@return the quaternion associated with the V matrix}
 		ARG 0 AtA
+			COMMENT the matrix for which the eigenvalues will be calculated. When this method
+			COMMENT returns, this will hold an approximately diagonal matrix; if the original
+			COMMENT matrix is A′A, then this will become the matrix Σ², where A has the SVD
+			COMMENT UΣV′
 		ARG 1 numJacobiIterations
+			COMMENT the number of iterations to apply
 	METHOD method_49742 conjugate (Lorg/joml/Matrix3f;Lorg/joml/Matrix3f;)V
 		COMMENT Stores A′XA into X, clobbering A.
 		ARG 0 X

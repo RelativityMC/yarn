@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_399 net/minecraft/block/FixedSign
+	METHOD method_1_2687 getAttachment (Lnet/minecraft/class_2680;)Lnet/minecraft/class_1_399$class_1_400;
+		ARG 1 state
+	METHOD method_1_2688 getAttachmentType (Lnet/minecraft/class_2680;)Lnet/minecraft/class_1_399$class_1_400;
+		ARG 0 state
+	CLASS class_1_400 AttachmentType
+		FIELD field_1_2280 id Ljava/lang/String;
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 id

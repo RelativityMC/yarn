@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_11972 net/minecraft/client/render/block/entity/state/SkullBlockEntityRenderState
+	FIELD field_1_2425 transformation Lnet/minecraft/class_4590;
 	FIELD field_62745 poweredTicks F
 	FIELD field_62748 skullType Lnet/minecraft/class_2484$class_2485;
 	FIELD field_62749 renderLayer Lnet/minecraft/class_1921;

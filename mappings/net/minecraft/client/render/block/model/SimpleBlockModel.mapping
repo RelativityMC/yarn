@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_1_445 net/minecraft/client/render/block/model/SimpleBlockModel
+	FIELD field_1_2414 model Lnet/minecraft/class_1087;
+	FIELD field_1_2415 colorProviders Ljava/util/List;
+	FIELD field_1_2416 transformation Lorg/joml/Matrix4fc;
+	METHOD <init> (Lnet/minecraft/class_1087;Ljava/util/List;Lorg/joml/Matrix4fc;)V
+		ARG 1 model
+		ARG 2 colorProviders
+		ARG 3 transformation
+	METHOD method_1_2883 addTintLayersToState (Lnet/minecraft/class_1_395;Lnet/minecraft/class_2680;)V
+		ARG 1 renderStateOut
+		ARG 2 state
+	CLASS class_1_446 Unbaked

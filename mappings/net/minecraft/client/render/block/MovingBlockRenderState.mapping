@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_11791 net/minecraft/client/render/block/MovingBlockRenderState
+	FIELD field_1_2226 cardinalLighting Lnet/minecraft/class_1_383;
+	FIELD field_1_2227 lightingProvider Lnet/minecraft/class_3568;
 	FIELD field_62245 fallingBlockPos Lnet/minecraft/class_2338;
 	FIELD field_62246 entityBlockPos Lnet/minecraft/class_2338;
 	FIELD field_62247 blockState Lnet/minecraft/class_2680;

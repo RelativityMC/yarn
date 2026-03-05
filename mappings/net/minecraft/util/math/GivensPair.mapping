@@ -7,10 +7,16 @@ CLASS net/minecraft/class_8218 net/minecraft/util/math/GivensPair
 		ARG 0 a
 		ARG 1 b
 	METHOD method_49728 setRotationX (Lorg/joml/Matrix3f;)Lorg/joml/Matrix3f;
+		ARG 1 matrixOut
 	METHOD method_49729 setXRotation (Lorg/joml/Quaternionf;)Lorg/joml/Quaternionf;
+		ARG 1 qOut
 	METHOD method_49730 cosDouble ()F
 	METHOD method_49731 setRotationY (Lorg/joml/Matrix3f;)Lorg/joml/Matrix3f;
+		ARG 1 matrixOut
 	METHOD method_49732 setYRotation (Lorg/joml/Quaternionf;)Lorg/joml/Quaternionf;
+		ARG 1 qOut
 	METHOD method_49733 sinDouble ()F
 	METHOD method_49734 setRotationZ (Lorg/joml/Matrix3f;)Lorg/joml/Matrix3f;
+		ARG 1 matrixOut
 	METHOD method_49735 setZRotation (Lorg/joml/Quaternionf;)Lorg/joml/Quaternionf;
+		ARG 1 qOut

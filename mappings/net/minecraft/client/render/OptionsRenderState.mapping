@@ -1,0 +1,22 @@
+CLASS net/minecraft/class_1_421 net/minecraft/client/render/OptionsRenderState
+	FIELD field_1_2331 ao Z
+	FIELD field_1_2332 backgroundForChatOnly Z
+	FIELD field_1_2333 bobView Z
+	FIELD field_1_2334 perspective Lnet/minecraft/class_5498;
+	FIELD field_1_2335 cloudRenderDistance I
+	FIELD field_1_2336 cloudRenderMode Lnet/minecraft/class_4063;
+	FIELD field_1_2337 cutoutLeaves Z
+	FIELD field_1_2338 damageTiltStrength D
+	FIELD field_1_2339 glintSpeed D
+	FIELD field_1_2340 glintStrength D
+	FIELD field_1_2341 hudHidden Z
+	FIELD field_1_2342 improvedTransparency Z
+	FIELD field_1_2343 effectiveAnisotropy I
+	FIELD field_1_2344 menuBackgroundBlurriness I
+	FIELD field_1_2345 panoramaSpeed D
+	FIELD field_1_2346 clampedViewDistance I
+	FIELD field_1_2347 distortionEffectScale F
+	FIELD field_1_2348 textBackgroundOpacity F
+	FIELD field_1_2349 textureFilteringMode Lnet/minecraft/class_12393;
+	METHOD method_1_2803 getBackgroundOpacity (F)F
+		ARG 1 opacity

@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1_429 net/minecraft/client/render/item/model/special/BellModelRenderer
+	FIELD field_1_2374 state Lnet/minecraft/class_9943$class_11649;
+	FIELD field_1_2375 model Lnet/minecraft/class_9943;
+	FIELD field_1_2376 spriteHolder Lnet/minecraft/class_11701;
+	METHOD <init> (Lnet/minecraft/class_11701;Lnet/minecraft/class_9943;)V
+		ARG 1 spriteHolder
+		ARG 2 model
+	CLASS class_1_430 Unbaked

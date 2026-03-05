@@ -50,6 +50,7 @@ CLASS net/minecraft/class_4184 net/minecraft/client/render/Camera
 	METHOD method_1_2100 setPanoramaMode ()V
 	METHOD method_1_2101 updateRenderState (Lnet/minecraft/class_12075;F)V
 		ARG 1 renderState
+		ARG 2 tickProgress
 	METHOD method_1_2102 getCapturedFrustum ()Lnet/minecraft/class_4604;
 	METHOD method_1_2103 getFrustum ()Lnet/minecraft/class_4604;
 	METHOD method_1_2104 getRotationMatrix (Lorg/joml/Matrix4f;)Lorg/joml/Matrix4f;
@@ -84,6 +85,8 @@ CLASS net/minecraft/class_4184 net/minecraft/client/render/Camera
 		ARG 5 height
 	METHOD method_1_2115 updateFovMultiplier ()V
 	METHOD method_1_2116 tick (Lnet/minecraft/class_9779;)V
+		ARG 1 renderTickCounter
+	METHOD method_1_2452 getTickProgressForFocusedEntity (Lnet/minecraft/class_9779;)F
 		ARG 1 renderTickCounter
 	METHOD method_19317 updateEyeHeight ()V
 	METHOD method_19318 clipToSpace (F)F

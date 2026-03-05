@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_437 net/minecraft/client/render/block/model/CompoundBlockModel
+	FIELD field_1_2392 custom Lnet/minecraft/class_1_411;
+	FIELD field_1_2393 normal Lnet/minecraft/class_1_411;
+	METHOD <init> (Lnet/minecraft/class_1_411;Lnet/minecraft/class_1_411;)V
+		ARG 1 normal
+		ARG 2 custom
+	CLASS class_1_438 Unbaked

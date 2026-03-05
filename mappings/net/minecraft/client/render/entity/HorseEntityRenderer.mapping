@@ -4,3 +4,4 @@ CLASS net/minecraft/class_910 net/minecraft/client/render/entity/HorseEntityRend
 		ARG 0 state
 	METHOD method_66851 (Lnet/minecraft/class_10033;)Lnet/minecraft/class_1799;
 		ARG 0 state
+	CLASS class_1_138 TexturePair

@@ -1,9 +1,8 @@
 CLASS net/minecraft/class_11688 net/minecraft/client/render/command/LeashCommandRenderer
 	FIELD field_61845 LEASH_SEGMENTS I
 	FIELD field_61846 LEASH_WIDTH F
-	METHOD method_73011 render (Lnet/minecraft/class_4588;Lorg/joml/Matrix4f;FFFFFFIZLnet/minecraft/class_10017$class_10018;)V
+	METHOD method_73011 render (Lnet/minecraft/class_4588;Lorg/joml/Matrix4fc;FFFFFFIZLnet/minecraft/class_10017$class_10018;)V
 		ARG 0 vertexConsumer
-		ARG 1 matrix
 		ARG 2 offsetX
 		ARG 3 offsetY
 		ARG 4 offsetZ

@@ -28,9 +28,6 @@ CLASS net/minecraft/class_2512 net/minecraft/nbt/NbtHelper
 		ARG 2 key
 		ARG 3 properties
 		ARG 4 root
-	METHOD method_10685 nameValue (Lnet/minecraft/class_2769;Ljava/lang/Comparable;)Ljava/lang/String;
-		ARG 0 property
-		ARG 1 value
 	METHOD method_10686 fromBlockState (Lnet/minecraft/class_2680;)Lnet/minecraft/class_2487;
 		COMMENT {@return the serialized block state}
 		COMMENT
@@ -142,16 +139,6 @@ CLASS net/minecraft/class_2512 net/minecraft/nbt/NbtHelper
 		ARG 1 withArrayContents
 			COMMENT whether to include contents of {@link NbtByteArray}, {@link NbtIntArray},
 			COMMENT and {@link NbtLongArray}
-	METHOD method_36118 toFormattedString (Lnet/minecraft/class_2520;)Ljava/lang/String;
-		COMMENT {@return the human-readable, non-deserializable representation of {@code nbt}}
-		COMMENT
-		COMMENT <p>This does not include contents of {@link NbtByteArray}, {@link NbtIntArray},
-		COMMENT and {@link NbtLongArray}. To include them, call
-		COMMENT {@link #toFormattedString(NbtElement, boolean)} with {@code withArrayContents}
-		COMMENT parameter set to true.
-		COMMENT
-		COMMENT @see #toFormattedString(NbtElement, boolean)
-		ARG 0 nbt
 	METHOD method_48308 putDataVersion (Lnet/minecraft/class_2487;I)Lnet/minecraft/class_2487;
 		ARG 0 nbt
 		ARG 1 dataVersion

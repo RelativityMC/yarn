@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_6019 net/minecraft/util/math/intprovider/UniformIntProvider
+	FIELD comp_1_348 max I
+	FIELD comp_1_349 min I
 	FIELD field_29949 CODEC Lcom/mojang/serialization/MapCodec;
-	FIELD field_29950 min I
-	FIELD field_29951 max I
 	METHOD <init> (II)V
 		ARG 1 min
 		ARG 2 max
@@ -14,7 +14,3 @@ CLASS net/minecraft/class_6019 net/minecraft/util/math/intprovider/UniformIntPro
 			COMMENT the minimum value, inclusive
 		ARG 1 max
 			COMMENT the maximum value, inclusive
-	METHOD method_35018 (Lnet/minecraft/class_6019;)Ljava/lang/Integer;
-		ARG 0 provider
-	METHOD method_35019 (Lnet/minecraft/class_6019;)Ljava/lang/Integer;
-		ARG 0 provider

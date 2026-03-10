@@ -2,20 +2,16 @@ CLASS net/minecraft/class_824 net/minecraft/client/render/block/entity/BlockEnti
 	FIELD field_4342 textRenderer Lnet/minecraft/class_327;
 	FIELD field_4345 renderers Ljava/util/Map;
 	FIELD field_27746 entityModelsGetter Ljava/util/function/Supplier;
-	FIELD field_27747 blockRenderManager Lnet/minecraft/class_776;
-	FIELD field_38880 itemRenderer Lnet/minecraft/class_918;
 	FIELD field_38881 entityRenderDispatcher Lnet/minecraft/class_898;
 	FIELD field_55283 itemModelManager Lnet/minecraft/class_10442;
 	FIELD field_61783 spriteHolder Lnet/minecraft/class_11701;
 	FIELD field_62250 playerSkinCache Lnet/minecraft/class_11786;
 	FIELD field_63069 cameraPos Lnet/minecraft/class_243;
-	METHOD <init> (Lnet/minecraft/class_327;Ljava/util/function/Supplier;Lnet/minecraft/class_776;Lnet/minecraft/class_1_394;Lnet/minecraft/class_10442;Lnet/minecraft/class_918;Lnet/minecraft/class_898;Lnet/minecraft/class_11701;Lnet/minecraft/class_11786;)V
+	METHOD <init> (Lnet/minecraft/class_327;Ljava/util/function/Supplier;Lnet/minecraft/class_1_394;Lnet/minecraft/class_10442;Lnet/minecraft/class_898;Lnet/minecraft/class_11701;Lnet/minecraft/class_11786;)V
 		ARG 1 textRenderer
 		ARG 2 entityModelsGetter
-		ARG 3 blockRenderManager
-		ARG 6 itemRenderer
-		ARG 7 entityRenderDispatcher
-		ARG 9 playerSkinCache
+		ARG 5 entityRenderDispatcher
+		ARG 7 playerSkinCache
 	METHOD method_3549 configure (Lnet/minecraft/class_243;)V
 	METHOD method_3550 get (Lnet/minecraft/class_2586;)Lnet/minecraft/class_827;
 		ARG 1 blockEntity

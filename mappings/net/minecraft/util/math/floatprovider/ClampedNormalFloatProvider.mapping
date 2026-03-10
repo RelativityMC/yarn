@@ -1,9 +1,9 @@
 CLASS net/minecraft/class_5861 net/minecraft/util/math/floatprovider/ClampedNormalFloatProvider
+	FIELD comp_1_383 deviation F
+	FIELD comp_1_384 max F
+	FIELD comp_1_385 mean F
+	FIELD comp_1_386 min F
 	FIELD field_28998 CODEC Lcom/mojang/serialization/MapCodec;
-	FIELD field_28999 mean F
-	FIELD field_29000 deviation F
-	FIELD field_29001 min F
-	FIELD field_29002 max F
 	METHOD <init> (FFFF)V
 		ARG 1 mean
 		ARG 2 deviation
@@ -24,11 +24,3 @@ CLASS net/minecraft/class_5861 net/minecraft/util/math/floatprovider/ClampedNorm
 		ARG 2 deviation
 		ARG 3 min
 		ARG 4 max
-	METHOD method_33904 (Lnet/minecraft/class_5861;)Ljava/lang/Float;
-		ARG 0 provider
-	METHOD method_33905 (Lnet/minecraft/class_5861;)Ljava/lang/Float;
-		ARG 0 provider
-	METHOD method_33906 (Lnet/minecraft/class_5861;)Ljava/lang/Float;
-		ARG 0 provider
-	METHOD method_33907 (Lnet/minecraft/class_5861;)Ljava/lang/Float;
-		ARG 0 provider

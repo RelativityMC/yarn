@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_919 net/minecraft/client/render/entity/LightningEntityRenderer
-	METHOD method_23183 drawBranch (Lorg/joml/Matrix4f;Lnet/minecraft/class_4588;FFIFFFFFFFZZZZ)V
-		ARG 0 matrix
+	METHOD method_23183 drawBranch (Lorg/joml/Matrix4fc;Lnet/minecraft/class_4588;FFIFFFFFFFZZZZ)V
 		ARG 1 buffer
 		ARG 2 x1
 		ARG 3 z1

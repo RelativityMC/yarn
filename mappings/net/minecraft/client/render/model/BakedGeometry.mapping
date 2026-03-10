@@ -9,7 +9,6 @@ CLASS net/minecraft/class_10817 net/minecraft/client/render/model/BakedGeometry
 	FIELD field_57019 upQuads Ljava/util/List;
 	FIELD field_57020 downQuads Ljava/util/List;
 	METHOD <init> (Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
-		ARG 1 allQuads
 		ARG 2 sidelessQuads
 		ARG 3 northQuads
 		ARG 4 southQuads

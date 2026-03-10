@@ -11,17 +11,17 @@ CLASS net/minecraft/class_928 net/minecraft/client/render/entity/PaintingEntityR
 		ARG 7 front
 		ARG 8 back
 	METHOD method_23188 vertex (Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;FFFFFIIII)V
-		ARG 1 matrix
-		ARG 2 vertexConsumer
-		ARG 3 x
-		ARG 4 y
-		ARG 5 u
-		ARG 6 v
-		ARG 7 z
-		ARG 8 normalX
-		ARG 9 normalY
-		ARG 10 normalZ
-		ARG 11 light
+		ARG 0 matrix
+		ARG 1 vertexConsumer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 u
+		ARG 5 v
+		ARG 6 z
+		ARG 7 normalX
+		ARG 8 normalY
+		ARG 9 normalZ
+		ARG 10 light
 	METHOD method_72990 (IILnet/minecraft/class_1058;[ILnet/minecraft/class_1058;Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;)V
-		ARG 6 matricesEntry
-		ARG 7 vertexConsumer
+		ARG 5 matricesEntry
+		ARG 6 vertexConsumer

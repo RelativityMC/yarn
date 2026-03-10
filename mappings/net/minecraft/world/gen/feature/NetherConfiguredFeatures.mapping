@@ -14,7 +14,6 @@ CLASS net/minecraft/class_6805 net/minecraft/world/gen/feature/NetherConfiguredF
 	FIELD field_35831 TWISTING_VINES Lnet/minecraft/class_5321;
 	FIELD field_35832 TWISTING_VINES_BONEMEAL Lnet/minecraft/class_5321;
 	FIELD field_35833 WEEPING_VINES Lnet/minecraft/class_5321;
-	FIELD field_35834 PATCH_CRIMSON_ROOTS Lnet/minecraft/class_5321;
 	FIELD field_35835 BASALT_PILLAR Lnet/minecraft/class_5321;
 	FIELD field_35836 SPRING_LAVA_NETHER Lnet/minecraft/class_5321;
 	FIELD field_35837 SPRING_NETHER_CLOSED Lnet/minecraft/class_5321;

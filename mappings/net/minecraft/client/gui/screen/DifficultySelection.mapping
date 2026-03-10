@@ -1,14 +1,13 @@
 CLASS net/minecraft/class_1_181 net/minecraft/client/gui/screen/DifficultySelection
-	METHOD method_1_1620 createDifficultySelector (Lnet/minecraft/class_310;Lnet/minecraft/class_437;)Lnet/minecraft/class_8021;
+	METHOD method_1_1620 createDifficultySelector (Lnet/minecraft/class_310;Lnet/minecraft/class_1937;Lnet/minecraft/class_437;)Lnet/minecraft/class_1_181;
 		ARG 0 client
-		ARG 1 screen
-	METHOD method_1_1621 isDifficultyLocked (Lnet/minecraft/class_310;)Z
-		ARG 0 client
+		ARG 2 screen
+	METHOD method_1_1621 isDifficultyLocked (Lnet/minecraft/class_1937;)Z
 	METHOD method_1_1622 (Lnet/minecraft/class_310;Lnet/minecraft/class_5676;Lnet/minecraft/class_1267;)V
 		ARG 1 button
 		ARG 2 value
-	METHOD method_1_1623 (Lnet/minecraft/class_310;Lnet/minecraft/class_437;Lnet/minecraft/class_5676;Lnet/minecraft/class_4185;)V
-		ARG 3 button
+	METHOD method_1_1623 (Lnet/minecraft/class_310;Lnet/minecraft/class_437;Lnet/minecraft/class_5676;Lnet/minecraft/class_1937;Lnet/minecraft/class_4185;)V
+		ARG 4 button
 	METHOD method_1_1624 (Lnet/minecraft/class_310;Lnet/minecraft/class_437;Lnet/minecraft/class_5676;Lnet/minecraft/class_4185;Z)V
 		ARG 4 confirmed
 	METHOD method_1_1625 onConfirmationChosen (ZLnet/minecraft/class_310;Lnet/minecraft/class_437;Lnet/minecraft/class_5676;Lnet/minecraft/class_347;)V

@@ -35,7 +35,7 @@ CLASS net/minecraft/class_327 net/minecraft/client/font/TextRenderer
 		COMMENT @return a list of ordered text which has been wrapped
 		ARG 1 text
 		ARG 2 width
-	METHOD method_22942 draw (Lnet/minecraft/class_5481;FFIZLorg/joml/Matrix4f;Lnet/minecraft/class_4597;Lnet/minecraft/class_327$class_6415;II)V
+	METHOD method_22942 draw (Lnet/minecraft/class_5481;FFIZLorg/joml/Matrix4fc;Lnet/minecraft/class_4597;Lnet/minecraft/class_327$class_6415;II)V
 		ARG 1 text
 		ARG 2 x
 		ARG 3 y
@@ -50,7 +50,7 @@ CLASS net/minecraft/class_327 net/minecraft/client/font/TextRenderer
 	METHOD method_27516 (ILnet/minecraft/class_2583;)F
 		ARG 1 codePoint
 		ARG 2 style
-	METHOD method_27521 draw (Ljava/lang/String;FFIZLorg/joml/Matrix4f;Lnet/minecraft/class_4597;Lnet/minecraft/class_327$class_6415;II)V
+	METHOD method_27521 draw (Ljava/lang/String;FFIZLorg/joml/Matrix4fc;Lnet/minecraft/class_4597;Lnet/minecraft/class_327$class_6415;II)V
 		ARG 1 string
 		ARG 2 x
 		ARG 3 y
@@ -62,7 +62,7 @@ CLASS net/minecraft/class_327 net/minecraft/client/font/TextRenderer
 		ARG 8 layerType
 		ARG 9 backgroundColor
 		ARG 10 light
-	METHOD method_27522 draw (Lnet/minecraft/class_2561;FFIZLorg/joml/Matrix4f;Lnet/minecraft/class_4597;Lnet/minecraft/class_327$class_6415;II)V
+	METHOD method_27522 draw (Lnet/minecraft/class_2561;FFIZLorg/joml/Matrix4fc;Lnet/minecraft/class_4597;Lnet/minecraft/class_327$class_6415;II)V
 		ARG 1 text
 		ARG 2 x
 		ARG 3 y
@@ -96,7 +96,7 @@ CLASS net/minecraft/class_327 net/minecraft/client/font/TextRenderer
 	METHOD method_30880 getWidth (Lnet/minecraft/class_5481;)I
 		COMMENT Gets the width of some text when rendered.
 		ARG 1 text
-	METHOD method_37296 drawWithOutline (Lnet/minecraft/class_5481;FFIILorg/joml/Matrix4f;Lnet/minecraft/class_4597;I)V
+	METHOD method_37296 drawWithOutline (Lnet/minecraft/class_5481;FFIILorg/joml/Matrix4fc;Lnet/minecraft/class_4597;I)V
 		ARG 1 text
 		ARG 2 x
 		ARG 3 y
@@ -201,7 +201,7 @@ CLASS net/minecraft/class_327 net/minecraft/client/font/TextRenderer
 			ARG 1 glyph
 		METHOD method_71798 drawRectangle (Lnet/minecraft/class_11767;)V
 			ARG 1 rect
-		METHOD method_71799 drawing (Lnet/minecraft/class_4597;Lorg/joml/Matrix4f;Lnet/minecraft/class_327$class_6415;I)Lnet/minecraft/class_327$class_11464;
+		METHOD method_71799 drawing (Lnet/minecraft/class_4597;Lorg/joml/Matrix4fc;Lnet/minecraft/class_327$class_6415;I)Lnet/minecraft/class_327$class_11464;
 			ARG 0 vertexConsumers
 			ARG 1 matrix
 			ARG 2 layerType

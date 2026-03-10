@@ -42,10 +42,6 @@ CLASS net/minecraft/class_2259 net/minecraft/command/argument/BlockArgumentParse
 	METHOD method_9662 suggestPropertyValues (Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Lnet/minecraft/class_2769;)Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;
 		ARG 0 builder
 		ARG 1 property
-	METHOD method_9663 stringifyProperty (Ljava/lang/StringBuilder;Lnet/minecraft/class_2769;Ljava/lang/Comparable;)V
-		ARG 0 builder
-		ARG 1 property
-		ARG 2 value
 	METHOD method_9665 suggestBlockProperties (Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 builder
 	METHOD method_9666 getSuggestions (Lnet/minecraft/class_7225;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;ZZ)Ljava/util/concurrent/CompletableFuture;

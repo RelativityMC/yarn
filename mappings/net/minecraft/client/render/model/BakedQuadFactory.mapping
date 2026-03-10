@@ -1,18 +1,14 @@
 CLASS net/minecraft/class_796 net/minecraft/client/render/model/BakedQuadFactory
 	FIELD field_60150 CENTER Lorg/joml/Vector3fc;
-	METHOD method_1_2317 bake (Lnet/minecraft/class_7775$class_12356;Lorg/joml/Vector3fc;Lorg/joml/Vector3fc;Lnet/minecraft/class_783$class_10800;Lnet/minecraft/class_10821;ILnet/minecraft/class_777$class_1_320;Lnet/minecraft/class_2350;Lnet/minecraft/class_3665;Lnet/minecraft/class_789;ZI)Lnet/minecraft/class_777;
+	METHOD method_1_2317 bake (Lnet/minecraft/class_7775$class_12356;Lorg/joml/Vector3fc;Lorg/joml/Vector3fc;Lnet/minecraft/class_783$class_10800;Lnet/minecraft/class_10821;Lnet/minecraft/class_777$class_1_320;Lnet/minecraft/class_2350;Lnet/minecraft/class_3665;Lnet/minecraft/class_789;)Lnet/minecraft/class_777;
 		ARG 0 interner
 		ARG 1 from
 		ARG 2 to
 		ARG 3 uv
 		ARG 4 faceRotation
-		ARG 5 tintIndex
-		ARG 6 spriteInfo
-		ARG 7 direction
-		ARG 8 settings
-		ARG 9 rotation
-		ARG 10 shade
-		ARG 11 lightEmission
+		ARG 6 direction
+		ARG 7 settings
+		ARG 8 rotation
 	METHOD method_1_2318 getRegionTransparency (Lnet/minecraft/class_1_314$class_1_315;Lnet/minecraft/class_783$class_10800;)Lnet/minecraft/class_1_303;
 		ARG 0 texture
 		ARG 1 uv
@@ -24,7 +20,6 @@ CLASS net/minecraft/class_796 net/minecraft/client/render/model/BakedQuadFactory
 		ARG 4 matrix
 		ARG 5 from
 		ARG 6 to
-		ARG 7 spriteInfo
 		ARG 8 affineTransformation
 		ARG 9 rotation
 		ARG 10 positions

@@ -1,6 +1,4 @@
 CLASS net/minecraft/class_12073 net/minecraft/client/render/state/BreakingBlockRenderState
-	FIELD field_63076 breakProgress I
-	METHOD <init> (Lnet/minecraft/class_638;Lnet/minecraft/class_2338;I)V
-		ARG 1 world
-		ARG 2 entityBlockPos
+	FIELD comp_1_402 breakProgress I
+	METHOD <init> (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;I)V
 		ARG 3 breakProgress

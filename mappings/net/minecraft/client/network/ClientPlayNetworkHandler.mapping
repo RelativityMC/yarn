@@ -164,9 +164,9 @@ CLASS net/minecraft/class_634 net/minecraft/client/network/ClientPlayNetworkHand
 		ARG 2 serialized
 	METHOD method_62149 syncOptions (Lnet/minecraft/class_8791;)V
 		ARG 1 syncedOptions
-	METHOD method_62150 (ZLjava/util/List;Lnet/minecraft/class_5321;Lnet/minecraft/class_6864$class_5748;)V
-		ARG 3 registryRef
-		ARG 4 serialized
+	METHOD method_62150 (Ljava/util/List;Lnet/minecraft/class_5321;Lnet/minecraft/class_6864$class_5748;)V
+		ARG 2 registryRef
+		ARG 3 serialized
 	METHOD method_62151 fetchProfileKey ()V
 	METHOD method_64896 (I)V
 		ARG 1 id

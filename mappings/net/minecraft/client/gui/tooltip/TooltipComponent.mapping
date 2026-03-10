@@ -8,7 +8,6 @@ CLASS net/minecraft/class_5684 net/minecraft/client/gui/tooltip/TooltipComponent
 	METHOD method_32664 getWidth (Lnet/minecraft/class_327;)I
 		ARG 1 textRenderer
 	METHOD method_32665 drawText (Lnet/minecraft/class_332;Lnet/minecraft/class_327;II)V
-		ARG 1 context
 		ARG 2 textRenderer
 		ARG 3 x
 		ARG 4 y

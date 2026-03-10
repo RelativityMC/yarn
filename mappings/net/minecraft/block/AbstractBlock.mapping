@@ -888,7 +888,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		FIELD field_23182 solidBlockPredicate Lnet/minecraft/class_4970$class_4973;
 		FIELD field_23183 suffocationPredicate Lnet/minecraft/class_4970$class_4973;
 		FIELD field_23184 blockVisionPredicate Lnet/minecraft/class_4970$class_4973;
-		FIELD field_23185 postProcessPredicate Lnet/minecraft/class_4970$class_4973;
+		FIELD field_23185 postProcessPredicate Lnet/minecraft/class_4970$class_1_474;
 		FIELD field_23186 emissiveLightingPredicate Lnet/minecraft/class_4970$class_4973;
 		FIELD field_25185 toolRequired Z
 		FIELD field_40341 blockBreakParticles Z
@@ -946,10 +946,6 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 			ARG 1 predicate
 		METHOD method_26237 (Lnet/minecraft/class_2680;)I
 			ARG 0 state
-		METHOD method_26238 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z
-			ARG 0 state
-			ARG 1 world
-			ARG 2 pos
 		METHOD method_26239 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_1299;)Z
 			ARG 0 state
 			ARG 1 world
@@ -958,22 +954,13 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		METHOD method_26243 suffocates (Lnet/minecraft/class_4970$class_4973;)Lnet/minecraft/class_4970$class_2251;
 			COMMENT Specifies logic that calculates whether an entity should suffocate if inside of a block.
 			ARG 1 predicate
-		METHOD method_26244 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z
-			ARG 0 state
-			ARG 1 world
-			ARG 2 pos
 		METHOD method_26245 blockVision (Lnet/minecraft/class_4970$class_4973;)Lnet/minecraft/class_4970$class_2251;
 			ARG 1 predicate
 		METHOD method_26246 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z
 			ARG 0 state
 			ARG 1 world
 			ARG 2 pos
-		METHOD method_26247 postProcess (Lnet/minecraft/class_4970$class_4973;)Lnet/minecraft/class_4970$class_2251;
-			ARG 1 predicate
-		METHOD method_26248 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z
-			ARG 0 state
-			ARG 1 world
-			ARG 2 pos
+		METHOD method_26247 postProcess (Lnet/minecraft/class_4970$class_1_474;)Lnet/minecraft/class_4970$class_2251;
 		METHOD method_26249 emissiveLighting (Lnet/minecraft/class_4970$class_4973;)Lnet/minecraft/class_4970$class_2251;
 			ARG 1 predicate
 		METHOD method_26250 air ()Lnet/minecraft/class_4970$class_2251;
@@ -1040,7 +1027,6 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		FIELD field_23174 solidBlockPredicate Lnet/minecraft/class_4970$class_4973;
 		FIELD field_23175 suffocationPredicate Lnet/minecraft/class_4970$class_4973;
 		FIELD field_23176 blockVisionPredicate Lnet/minecraft/class_4970$class_4973;
-		FIELD field_23177 postProcessPredicate Lnet/minecraft/class_4970$class_4973;
 		FIELD field_23178 emissiveLightingPredicate Lnet/minecraft/class_4970$class_4973;
 		FIELD field_25184 toolRequired Z
 		FIELD field_40338 blockBreakParticles Z
@@ -1061,10 +1047,8 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		FIELD field_52644 DIRECTIONS [Lnet/minecraft/class_2350;
 		FIELD field_52645 EMPTY_CULLING_FACES [Lnet/minecraft/class_265;
 		FIELD field_52646 FULL_CULLING_FACES [Lnet/minecraft/class_265;
-		METHOD <init> (Lnet/minecraft/class_2248;Lit/unimi/dsi/fastutil/objects/Reference2ObjectArrayMap;Lcom/mojang/serialization/MapCodec;)V
+		METHOD <init> (Lnet/minecraft/class_2248;[Lnet/minecraft/class_2769;[Ljava/lang/Comparable;)V
 			ARG 1 block
-			ARG 2 propertyMap
-			ARG 3 codec
 		METHOD method_26165 calcBlockBreakingDelta (Lnet/minecraft/class_1657;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)F
 			ARG 1 player
 			ARG 2 world
@@ -1256,9 +1240,6 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 			ARG 1 world
 			ARG 2 pos
 		METHOD method_26231 getSoundGroup ()Lnet/minecraft/class_2498;
-		METHOD method_26232 shouldPostProcess (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z
-			ARG 1 world
-			ARG 2 pos
 		METHOD method_26233 asBlockState ()Lnet/minecraft/class_2680;
 		METHOD method_26234 isFullCube (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z
 			ARG 1 world

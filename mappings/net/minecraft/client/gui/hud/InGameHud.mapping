@@ -289,7 +289,3 @@ CLASS net/minecraft/class_329 net/minecraft/client/gui/hud/InGameHud
 			ARG 3 blinking
 	CLASS class_9016 SidebarEntry
 	CLASS class_11220 BarType
-	CLASS class_11221 Renderable
-		METHOD method_71044 render (Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V
-			ARG 1 context
-			ARG 2 tickCounter

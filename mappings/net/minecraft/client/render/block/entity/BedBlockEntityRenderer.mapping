@@ -18,9 +18,6 @@ CLASS net/minecraft/class_825 net/minecraft/client/render/block/entity/BedBlockE
 		ARG 0 facing
 	METHOD method_3558 renderPart (Lnet/minecraft/class_2742;Lnet/minecraft/class_1_310;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;IILnet/minecraft/class_11683$class_11792;I)V
 		ARG 1 part
-		ARG 2 texture
-		ARG 3 matrices
-		ARG 4 queue
 		ARG 5 light
 		ARG 6 overlay
 		ARG 7 crumblingOverlay

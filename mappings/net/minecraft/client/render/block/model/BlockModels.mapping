@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_1_404 net/minecraft/client/render/block/model/BlockModels
-	FIELD field_1_2290 NO_TRANSFORMATION Lorg/joml/Matrix4f;
+	FIELD field_1_2290 NO_TRANSFORMATION Lorg/joml/Matrix4fc;
 	FIELD field_1_2291 blockColors Lnet/minecraft/class_324;
 	FIELD field_1_2292 models Ljava/util/Map;
 	FIELD field_1_2293 blockStateModels Lnet/minecraft/class_773;

@@ -85,11 +85,6 @@ CLASS net/minecraft/class_465 net/minecraft/client/gui/screen/ingame/HandledScre
 		ARG 1 context
 		ARG 2 mouseX
 		ARG 3 mouseY
-	METHOD method_2389 drawBackground (Lnet/minecraft/class_332;FII)V
-		ARG 1 context
-		ARG 2 deltaTicks
-		ARG 3 mouseX
-		ARG 4 mouseY
 	METHOD method_30107 onMouseClick (Lnet/minecraft/class_11909;)V
 	METHOD method_37432 handledScreenTick ()V
 	METHOD method_44339 endTouchDrag ()V

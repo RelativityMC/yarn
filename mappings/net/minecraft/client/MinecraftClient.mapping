@@ -81,7 +81,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_1738 currentFps I
 	FIELD field_1739 networkProxy Ljava/net/Proxy;
 	FIELD field_1740 DEFAULT_FONT_ID Lnet/minecraft/class_2960;
-	FIELD field_1742 itemRenderer Lnet/minecraft/class_918;
 	FIELD field_1745 resourceManager Lnet/minecraft/class_3304;
 	FIELD field_1746 integratedServerConnection Lnet/minecraft/class_2535;
 		COMMENT The client connection to the integrated server.
@@ -100,7 +99,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		COMMENT For changing the screen, use {@link MinecraftClient#setScreen(Screen)}.
 		COMMENT
 		COMMENT @see MinecraftClient#setScreen(Screen)
-	FIELD field_1756 blockRenderManager Lnet/minecraft/class_776;
 	FIELD field_1757 resourcePackDir Ljava/nio/file/Path;
 	FIELD field_1758 tutorialManager Lnet/minecraft/class_1156;
 	FIELD field_1759 integratedServerRunning Z
@@ -200,7 +198,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 1 tickProgress
 	METHOD method_1478 getResourceManager ()Lnet/minecraft/class_3300;
 	METHOD method_1479 getResourcePackDir ()Ljava/nio/file/Path;
-	METHOD method_1480 getItemRenderer ()Lnet/minecraft/class_918;
 	METHOD method_1481 joinWorld (Lnet/minecraft/class_638;)V
 		ARG 1 world
 	METHOD method_1483 getSoundManager ()Lnet/minecraft/class_1144;
@@ -248,7 +245,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_1531 getTextureManager ()Lnet/minecraft/class_1060;
 	METHOD method_1536 doAttack ()Z
 	METHOD method_1538 getMusicTracker ()Lnet/minecraft/class_1142;
-	METHOD method_1541 getBlockRenderManager ()Lnet/minecraft/class_776;
 	METHOD method_1542 isInSingleplayer ()Z
 	METHOD method_1543 getDataFixer ()Lcom/mojang/datafixers/DataFixer;
 	METHOD method_1544 getMusicInstance ()Lnet/minecraft/class_5195;

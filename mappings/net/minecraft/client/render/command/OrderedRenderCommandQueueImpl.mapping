@@ -34,16 +34,16 @@ CLASS net/minecraft/class_11661 net/minecraft/client/render/command/OrderedRende
 		FIELD comp_4504 matricesEntry Lnet/minecraft/class_4587$class_4665;
 		METHOD comp_4504 matricesEntry ()Lnet/minecraft/class_4587$class_4665;
 	CLASS class_11672 LabelCommand
-		FIELD comp_4514 matricesEntry Lorg/joml/Matrix4f;
-		METHOD comp_4514 matricesEntry ()Lorg/joml/Matrix4f;
+		FIELD comp_4514 matricesEntry Lorg/joml/Matrix4fc;
+		METHOD comp_4514 matricesEntry ()Lorg/joml/Matrix4fc;
 	CLASS class_11673 ShadowPiecesCommand
-		FIELD comp_4522 matricesEntry Lorg/joml/Matrix4f;
-		METHOD comp_4522 matricesEntry ()Lorg/joml/Matrix4f;
+		FIELD comp_4522 matricesEntry Lorg/joml/Matrix4fc;
+		METHOD comp_4522 matricesEntry ()Lorg/joml/Matrix4fc;
 	CLASS class_11674 TextCommand
-		FIELD comp_4525 matricesEntry Lorg/joml/Matrix4f;
+		FIELD comp_4525 matricesEntry Lorg/joml/Matrix4fc;
 		FIELD comp_4528 text Lnet/minecraft/class_5481;
 		FIELD comp_4530 layerType Lnet/minecraft/class_327$class_6415;
-		METHOD comp_4525 matricesEntry ()Lorg/joml/Matrix4f;
+		METHOD comp_4525 matricesEntry ()Lorg/joml/Matrix4fc;
 		METHOD comp_4528 text ()Lnet/minecraft/class_5481;
 		METHOD comp_4530 layerType ()Lnet/minecraft/class_327$class_6415;
 	CLASS class_11744 BlendedModelCommand
@@ -55,5 +55,5 @@ CLASS net/minecraft/class_11661 net/minecraft/client/render/command/OrderedRende
 		METHOD comp_4643 matricesEntry ()Lnet/minecraft/class_4587$class_4665;
 		METHOD comp_4649 hasGlint ()Z
 	CLASS class_11790 MovingBlockCommand
-		FIELD comp_4652 matricesEntry Lorg/joml/Matrix4f;
-		METHOD comp_4652 matricesEntry ()Lorg/joml/Matrix4f;
+		FIELD comp_4652 matricesEntry Lorg/joml/Matrix4fc;
+		METHOD comp_4652 matricesEntry ()Lorg/joml/Matrix4fc;

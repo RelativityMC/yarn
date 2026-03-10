@@ -5,7 +5,6 @@ CLASS net/minecraft/class_895 net/minecraft/client/render/entity/EnderDragonEnti
 	FIELD field_21006 EYE_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_21007 HALF_SQRT_3 F
 	FIELD field_21008 model Lnet/minecraft/class_625;
-	FIELD field_21737 DRAGON_CUTOUT Lnet/minecraft/class_1921;
 	FIELD field_21738 DRAGON_DECAL Lnet/minecraft/class_1921;
 	FIELD field_21739 DRAGON_EYES Lnet/minecraft/class_1921;
 	FIELD field_21740 CRYSTAL_BEAM_LAYER Lnet/minecraft/class_1921;

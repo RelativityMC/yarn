@@ -72,8 +72,8 @@ CLASS net/minecraft/class_1092 net/minecraft/client/render/model/BakedModelManag
 		ARG 1 asset
 	METHOD method_65934 getItemProperties (Lnet/minecraft/class_2960;)Lnet/minecraft/class_10434$class_10543;
 		ARG 1 id
-	METHOD method_68047 (Lcom/google/common/collect/Multimap;Lcom/google/common/collect/Multimap;Lit/unimi/dsi/fastutil/objects/Object2IntMap;Lnet/minecraft/class_5599;Lnet/minecraft/class_1088$class_10524;Ljava/util/Map;)Lnet/minecraft/class_1092$class_7779;
-		ARG 4 bakedModels
+	METHOD method_68047 (Lnet/minecraft/class_9826;Lcom/google/common/collect/Multimap;Lcom/google/common/collect/Multimap;Lit/unimi/dsi/fastutil/objects/Object2IntMap;Lnet/minecraft/class_5599;Lnet/minecraft/class_1088$class_10524;Ljava/util/Map;)Lnet/minecraft/class_1092$class_7779;
+		ARG 5 bakedModels
 	CLASS 1 1
 		FIELD field_1_1862 cache Ljava/util/Map;
 		FIELD field_1_1863 bakeFactory Ljava/util/function/Function;

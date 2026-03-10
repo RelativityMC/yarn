@@ -8,23 +8,12 @@ CLASS net/minecraft/class_918 net/minecraft/client/render/item/ItemRenderer
 	METHOD method_1_2279 getGlintRenderLayer (Lnet/minecraft/class_1921;Z)Lnet/minecraft/class_1921;
 		ARG 0 baseRenderLayer
 		ARG 1 solid
-	METHOD method_1_2280 getTint ([ILnet/minecraft/class_777;)I
-		ARG 0 tints
-		ARG 1 quad
 	METHOD method_23181 getItemGlintConsumer (Lnet/minecraft/class_4597;Lnet/minecraft/class_1921;ZZ)Lnet/minecraft/class_4588;
 		ARG 0 vertexConsumers
 		ARG 1 layer
 		ARG 2 solid
 		ARG 3 glint
-	METHOD method_62476 renderItem (Lnet/minecraft/class_811;Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;II[ILjava/util/List;Lnet/minecraft/class_10444$class_10445;)V
-		ARG 0 context
-		ARG 1 matrices
-		ARG 2 vertexConsumers
-		ARG 3 light
-		ARG 4 overlay
-		ARG 5 tints
-		ARG 6 quads
-		ARG 7 glint
+	METHOD method_62476 renderItem (Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_4618;Lnet/minecraft/class_11661$class_11668;)V
 	METHOD method_65569 getTint ([II)I
 		ARG 0 tints
 		ARG 1 index
@@ -34,7 +23,3 @@ CLASS net/minecraft/class_918 net/minecraft/client/render/item/ItemRenderer
 		ARG 2 matrix
 	METHOD method_71139 useTransparentGlint (Lnet/minecraft/class_1921;)Z
 		ARG 0 renderLayer
-	METHOD method_72988 getGlintRenderLayers (Lnet/minecraft/class_1921;ZZ)Ljava/util/List;
-		ARG 0 renderLayer
-		ARG 1 solid
-		ARG 2 glint

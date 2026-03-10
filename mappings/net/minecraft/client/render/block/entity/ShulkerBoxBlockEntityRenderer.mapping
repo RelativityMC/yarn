@@ -30,7 +30,6 @@ CLASS net/minecraft/class_834 net/minecraft/client/render/block/entity/ShulkerBo
 		ARG 4 overlay
 		ARG 5 openness
 		ARG 6 crumblingOverlay
-		ARG 7 texture
 		ARG 8 outlineColor
 	METHOD method_72163 collectVertices (FLjava/util/function/Consumer;)V
 		ARG 1 openness

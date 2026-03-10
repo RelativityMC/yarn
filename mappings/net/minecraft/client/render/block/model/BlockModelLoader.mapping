@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_1_415 net/minecraft/client/render/block/model/BlockModelLoader
-	FIELD field_1_2307 NO_TRANSFORMATION Lorg/joml/Matrix4f;
+	FIELD field_1_2307 NO_TRANSFORMATION Lorg/joml/Matrix4fc;
 	FIELD field_1_2308 loadedEntityModels Lnet/minecraft/class_5599;
 	FIELD field_1_2309 playerSkinCache Lnet/minecraft/class_11786;
 	FIELD field_1_2310 spriteHolder Lnet/minecraft/class_11701;

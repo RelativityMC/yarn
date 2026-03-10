@@ -25,8 +25,7 @@ CLASS net/minecraft/class_1_55 net/minecraft/client/gui/hud/debug/LookingAtBlock
 		METHOD method_1_697 getState (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)Lnet/minecraft/class_2688;
 			ARG 1 world
 			ARG 2 pos
-		METHOD method_1_698 propertyEntryToString (Ljava/util/Map$Entry;)Ljava/lang/String;
-			ARG 0 entry
+		METHOD method_1_698 propertyEntryToString (Lnet/minecraft/class_2769$class_4933;)Ljava/lang/String;
 	CLASS class_1_59 Tags
 		METHOD method_1_699 getState (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)Lnet/minecraft/class_1_2;
 			ARG 1 world

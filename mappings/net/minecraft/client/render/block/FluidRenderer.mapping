@@ -1,15 +1,5 @@
 CLASS net/minecraft/class_775 net/minecraft/client/render/block/FluidRenderer
-	FIELD field_1_2215 blockRenderLayersByFluid Ljava/util/Map;
-	FIELD field_4164 waterOverlaySprite Lnet/minecraft/class_1058;
 	FIELD field_32781 FLUID_HEIGHT F
-	FIELD field_64568 lavaStillSprite Lnet/minecraft/class_1058;
-	FIELD field_64569 lavaFlowSprite Lnet/minecraft/class_1058;
-	FIELD field_64570 waterStillSprite Lnet/minecraft/class_1058;
-	FIELD field_64571 waterFlowSprite Lnet/minecraft/class_1058;
-	METHOD <init> (Lnet/minecraft/class_11701;)V
-		ARG 1 spriteHolder
-	METHOD method_1_2636 getFluidLayer (Lnet/minecraft/class_3610;)Lnet/minecraft/class_11515;
-		ARG 1 fluidState
 	METHOD method_3343 getLight (Lnet/minecraft/class_1_393;Lnet/minecraft/class_2338;)I
 		ARG 1 blockRenderView
 		ARG 2 pos
@@ -17,10 +7,9 @@ CLASS net/minecraft/class_775 net/minecraft/client/render/block/FluidRenderer
 		ARG 0 side
 		ARG 1 height
 		ARG 2 state
-	METHOD method_3347 render (Lnet/minecraft/class_1_393;Lnet/minecraft/class_2338;Lnet/minecraft/class_4588;Lnet/minecraft/class_2680;Lnet/minecraft/class_3610;)V
+	METHOD method_3347 render (Lnet/minecraft/class_1_393;Lnet/minecraft/class_2338;Lnet/minecraft/class_775$class_1_473;Lnet/minecraft/class_2680;Lnet/minecraft/class_3610;)V
 		ARG 1 blockRenderView
 		ARG 2 pos
-		ARG 3 vertexConsumer
 		ARG 4 blockState
 		ARG 5 fluidState
 	METHOD method_3348 isSameFluid (Lnet/minecraft/class_3610;Lnet/minecraft/class_3610;)Z

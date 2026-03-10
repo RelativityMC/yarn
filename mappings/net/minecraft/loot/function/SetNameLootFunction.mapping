@@ -9,8 +9,8 @@ CLASS net/minecraft/class_3670 net/minecraft/loot/function/SetNameLootFunction
 		ARG 2 name
 		ARG 3 entity
 		ARG 4 target
-	METHOD method_16189 (Lnet/minecraft/class_2168;Lnet/minecraft/class_1297;Lnet/minecraft/class_2561;)Lnet/minecraft/class_2561;
-		ARG 2 textComponent
+	METHOD method_16189 (Lnet/minecraft/class_1_466;Lnet/minecraft/class_2561;)Lnet/minecraft/class_2561;
+		ARG 1 textComponent
 	METHOD method_16190 applySourceEntity (Lnet/minecraft/class_47;Lnet/minecraft/class_47$class_50;)Ljava/util/function/UnaryOperator;
 		ARG 0 context
 		ARG 1 sourceEntity

@@ -190,10 +190,6 @@ CLASS net/minecraft/class_7923 net/minecraft/registry/Registries
 		ARG 0 registry
 	METHOD method_47507 (Lnet/minecraft/class_2378;)Ljava/lang/Object;
 		ARG 0 registry
-	METHOD method_47508 (Lnet/minecraft/class_2378;)Ljava/lang/Object;
-		ARG 0 registry
-	METHOD method_47509 (Lnet/minecraft/class_2378;)Ljava/lang/Object;
-		ARG 0 registry
 	METHOD method_49927 (Lnet/minecraft/class_2378;)Ljava/lang/Object;
 		ARG 0 registry
 	METHOD method_53495 createIntrusive (Lnet/minecraft/class_5321;Lnet/minecraft/class_7923$class_6889;)Lnet/minecraft/class_2378;

@@ -33,11 +33,10 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	FIELD field_60793 fogRenderer Lnet/minecraft/class_758;
 	FIELD field_61733 orderedRenderCommandQueue Lnet/minecraft/class_11661;
 	FIELD field_61734 entityRenderDispatcher Lnet/minecraft/class_11684;
-	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_759;Lnet/minecraft/class_4599;Lnet/minecraft/class_776;)V
+	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_759;Lnet/minecraft/class_4599;Lnet/minecraft/class_1092;)V
 		ARG 1 client
 		ARG 2 firstPersonHeldItemRenderer
 		ARG 3 buffers
-		ARG 4 blockRenderManager
 	METHOD method_1_430 getWorldLightmapTextureView ()Lcom/mojang/blaze3d/textures/GpuTextureView;
 	METHOD method_1_431 getLightmapTextureView ()Lcom/mojang/blaze3d/textures/GpuTextureView;
 	METHOD method_1_2674 renderGui (Lnet/minecraft/class_9779;Z)V
@@ -62,10 +61,9 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	METHOD method_3169 onResized (II)V
 		ARG 1 width
 		ARG 2 height
-	METHOD method_3172 renderHand (Lnet/minecraft/class_12075;FLorg/joml/Matrix4f;)V
+	METHOD method_3172 renderHand (Lnet/minecraft/class_12075;FLorg/joml/Matrix4fc;)V
 		ARG 1 cameraRenderState
 		ARG 2 tickProgress
-		ARG 3 positionMatrix
 	METHOD method_3174 getNightVisionStrength (Lnet/minecraft/class_1309;F)F
 		ARG 0 entity
 		ARG 1 tickProgress

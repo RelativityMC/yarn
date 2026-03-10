@@ -1,13 +1,12 @@
 CLASS net/minecraft/class_10515 net/minecraft/client/render/item/model/special/SpecialModelRenderer
-	METHOD method_65694 render (Ljava/lang/Object;Lnet/minecraft/class_811;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;IIZI)V
+	METHOD method_65694 render (Ljava/lang/Object;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;IIZI)V
 		ARG 1 data
-		ARG 2 displayContext
-		ARG 3 matrices
-		ARG 4 queue
+		ARG 2 matrices
+		ARG 3 queue
+		ARG 4 overlay
 		ARG 5 light
-		ARG 6 overlay
-		ARG 7 glint
-		ARG 8 outlineColor
+		ARG 6 glint
+		ARG 7 outlineColor
 	METHOD method_65695 getData (Lnet/minecraft/class_1799;)Ljava/lang/Object;
 		ARG 1 stack
 	METHOD method_72175 collectVertices (Ljava/util/function/Consumer;)V
@@ -17,6 +16,6 @@ CLASS net/minecraft/class_10515 net/minecraft/client/render/item/model/special/S
 		METHOD method_65698 bake (Lnet/minecraft/class_10515$class_11695;)Lnet/minecraft/class_10515;
 			ARG 1 context
 	CLASS class_11695 BakeContext
-		METHOD comp_3391 entityModelSet ()Lnet/minecraft/class_5599;
-		METHOD comp_4551 spriteHolder ()Lnet/minecraft/class_11701;
-		METHOD comp_4658 playerSkinRenderCache ()Lnet/minecraft/class_11786;
+		METHOD comp_1_299 entityModelSet ()Lnet/minecraft/class_5599;
+		METHOD comp_1_302 playerSkinRenderCache ()Lnet/minecraft/class_11786;
+		METHOD comp_1_303 spriteHolder ()Lnet/minecraft/class_11701;

@@ -1,9 +1,6 @@
 CLASS net/minecraft/class_826 net/minecraft/client/render/block/entity/ChestBlockEntityRenderer
 	FIELD field_1_2352 TRANSFORMATIONS Ljava/util/Map;
 	FIELD field_4365 christmas Z
-	FIELD field_53165 singleChest Lnet/minecraft/class_9944;
-	FIELD field_53166 doubleChestLeft Lnet/minecraft/class_9944;
-	FIELD field_53167 doubleChestRight Lnet/minecraft/class_9944;
 	FIELD field_61784 materials Lnet/minecraft/class_11701;
 	METHOD <init> (Lnet/minecraft/class_5614$class_5615;)V
 		ARG 1 context

@@ -13,6 +13,11 @@ CLASS net/minecraft/class_2512 net/minecraft/nbt/NbtHelper
 	FIELD field_57978 BLOCK_KEY_CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_1_1641 getDataVersion (Lcom/mojang/serialization/Dynamic;)I
 		ARG 0 dynamic
+	METHOD method_1_2912 (Lnet/minecraft/class_2487;Lnet/minecraft/class_2769$class_4933;)V
+		ARG 1 value
+	METHOD method_1_2913 putProperties (Lnet/minecraft/class_2688;Lnet/minecraft/class_2487;)V
+		ARG 0 state
+		ARG 1 tagOut
 	METHOD method_10681 toBlockState (Lnet/minecraft/class_7871;Lnet/minecraft/class_2487;)Lnet/minecraft/class_2680;
 		COMMENT {@return the block state from the {@code nbt}}
 		COMMENT

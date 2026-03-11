@@ -3,6 +3,7 @@ CLASS net/minecraft/class_12210 net/minecraft/util/math/Interpolator
 		ARG 1 t
 		ARG 2 a
 		ARG 3 b
+	METHOD method_1_2943 ofInt ()Lnet/minecraft/class_12210;
 	METHOD method_75706 ofFloat ()Lnet/minecraft/class_12210;
 	METHOD method_75707 threshold (F)Lnet/minecraft/class_12210;
 		ARG 0 threshold

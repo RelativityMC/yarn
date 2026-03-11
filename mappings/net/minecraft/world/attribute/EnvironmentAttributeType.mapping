@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_12192 net/minecraft/world/attribute/EnvironmentAttributeType
+	METHOD method_1_2944 toFloatOrThrow (Ljava/lang/Object;)F
+		ARG 1 value
 	METHOD method_75630 validate (Lnet/minecraft/class_12212;)V
 		ARG 1 modifier
 	METHOD method_75631 discrete (Lcom/mojang/serialization/Codec;)Lnet/minecraft/class_12192;
@@ -15,5 +17,6 @@ CLASS net/minecraft/class_12192 net/minecraft/world/attribute/EnvironmentAttribu
 		ARG 1 modifierLibrary
 		ARG 2 spatialLerp
 		ARG 3 partialTickLerp
+		ARG 4 toFloat
 	METHOD method_75635 createModifierCodec (Ljava/util/Map;)Lcom/mojang/serialization/Codec;
 		ARG 0 modifierLibrary

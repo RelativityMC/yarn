@@ -4,6 +4,7 @@ CLASS net/minecraft/class_7417 net/minecraft/text/TextContent
 	METHOD method_10890 parse (Lnet/minecraft/class_1_466;I)Lnet/minecraft/class_5250;
 		COMMENT Parses this content into a basic mutable text without custom style or
 		COMMENT siblings. The resulting text may or may not have this content.
+		ARG 1 context
 		ARG 2 depth
 	METHOD method_27659 visit (Lnet/minecraft/class_5348$class_5245;)Ljava/util/Optional;
 		COMMENT Visits this content. Returns a value if the visitor terminates amid

@@ -55,13 +55,20 @@ CLASS net/minecraft/class_1_109 net/minecraft/server/world/ServerClocks
 		ARG 1 clockKey
 	METHOD method_1_1751 (Lnet/minecraft/class_6880$class_6883;)V
 		ARG 1 timeline
+	METHOD method_1_2954 (FLnet/minecraft/class_1_109$class_1_110;)V
+		ARG 1 entry
+	METHOD method_1_2955 setRate (Lnet/minecraft/class_6880;F)V
+		ARG 1 key
+		ARG 2 rate
 	CLASS class_1_110 Entry
 		FIELD field_1_1012 paused Z
 		FIELD field_1_1013 timeMarkers Ljava/util/Map;
 		FIELD field_1_1014 totalTicks J
+		FIELD field_1_2464 partialTick F
+		FIELD field_1_2465 rate F
 		METHOD method_1_989 load (Lnet/minecraft/class_1_93;)V
 			ARG 1 data
-		METHOD method_1_990 toWorldClockData (Lnet/minecraft/server/MinecraftServer;)Lnet/minecraft/class_1_465;
+		METHOD method_1_990 toClockUpdate (Lnet/minecraft/server/MinecraftServer;)Lnet/minecraft/class_1_465;
 			COMMENT Respects the {@code minecraft:advance_time} game rule.
 			ARG 1 server
 		METHOD method_1_991 toSaveData ()Lnet/minecraft/class_1_93;

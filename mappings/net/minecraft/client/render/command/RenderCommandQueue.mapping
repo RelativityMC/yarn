@@ -1,4 +1,29 @@
 CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderCommandQueue
+	METHOD method_1_3047 submitFallingBlock (Lnet/minecraft/class_4587;Lnet/minecraft/class_1087;JI)V
+		ARG 1 matrices
+		ARG 2 model
+		ARG 3 seed
+		ARG 5 progress
+	METHOD method_1_3048 submitModel (Lnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_4587;IIILnet/minecraft/class_1_310;Lnet/minecraft/class_11701;ILnet/minecraft/class_11683$class_11792;)V
+		ARG 1 model
+		ARG 2 state
+		ARG 3 matrices
+		ARG 4 light
+		ARG 5 overlay
+		ARG 6 tintedColor
+		ARG 7 spriteId
+		ARG 8 spriteHolder
+		ARG 9 outlineColor
+		ARG 10 crumblingOverlay
+	METHOD method_1_3049 submitModel (Lnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_4587;Lnet/minecraft/class_2960;IIILnet/minecraft/class_11683$class_11792;)V
+		ARG 1 model
+		ARG 2 state
+		ARG 3 matrices
+		ARG 4 layerId
+		ARG 5 light
+		ARG 6 overlay
+		ARG 7 outlineColor
+		ARG 8 crumblingOverlay
 	METHOD method_73478 submitText (Lnet/minecraft/class_4587;FFLnet/minecraft/class_5481;ZLnet/minecraft/class_327$class_6415;IIII)V
 		ARG 1 matrices
 		ARG 2 x

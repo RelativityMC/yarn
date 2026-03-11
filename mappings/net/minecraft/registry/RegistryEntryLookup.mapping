@@ -13,6 +13,14 @@ CLASS net/minecraft/class_7871 net/minecraft/registry/RegistryEntryLookup
 	METHOD method_73043 (Lnet/minecraft/class_5819;Lnet/minecraft/class_6885$class_6888;)Ljava/util/Optional;
 		ARG 1 entryList
 	CLASS class_7872 RegistryLookup
+		METHOD method_1_2929 getOptionalTagEntry (Lnet/minecraft/class_6862;)Ljava/util/Optional;
+			ARG 1 tagKey
+		METHOD method_1_2930 getTagEntryOrThrow (Lnet/minecraft/class_6862;)Lnet/minecraft/class_6885$class_6888;
+			ARG 1 tagKey
+		METHOD method_1_2931 (Lnet/minecraft/class_6862;Lnet/minecraft/class_7871;)Ljava/util/Optional;
+			ARG 1 registry
+		METHOD method_1_2932 (Lnet/minecraft/class_6862;Lnet/minecraft/class_7871;)Ljava/util/Optional;
+			ARG 1 registry
 		METHOD method_46751 getOrThrow (Lnet/minecraft/class_5321;)Lnet/minecraft/class_7871;
 			ARG 1 registryRef
 		METHOD method_46759 getOptional (Lnet/minecraft/class_5321;)Ljava/util/Optional;

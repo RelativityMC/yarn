@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_486 net/minecraft/client/gui/DifficultyChangeListener
+	METHOD method_1_3069 onDifficultyChange ()V

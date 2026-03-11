@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_1_487 net/minecraft/loot/condition/EnvironmentAttributeCheckLootCondition
+	FIELD field_1_2564 CODEC Lcom/mojang/serialization/MapCodec;
+	METHOD method_1_3083 createCodecFromAttribute (Lnet/minecraft/class_12197;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 attribute
+	METHOD method_1_3084 builder (Lnet/minecraft/class_12197;Ljava/lang/Object;)Lnet/minecraft/class_5341$class_210;
+		ARG 0 attribute
+		ARG 1 value
+	METHOD method_1_3085 (Lnet/minecraft/class_12197;Ljava/lang/Object;)Lnet/minecraft/class_1_487;
+		ARG 1 value
+	METHOD test (Ljava/lang/Object;)Z
+		ARG 1 context

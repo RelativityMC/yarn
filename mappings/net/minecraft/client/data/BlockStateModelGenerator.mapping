@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerator
+	FIELD field_1_2306 SKULL_TRANSFORMATION Lnet/minecraft/class_4590;
 	FIELD field_22830 blockStateCollector Ljava/util/function/Consumer;
 	FIELD field_22831 modelCollector Ljava/util/function/BiConsumer;
 	FIELD field_28548 CONNECTION_VARIANT_FUNCTIONS Ljava/util/Map;
@@ -36,6 +37,13 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 1 blockStateCollector
 		ARG 2 itemModelOutput
 		ARG 3 modelCollector
+	METHOD method_1_2322 (Lnet/minecraft/class_4944;)V
+		ARG 0 textureMap
+	METHOD method_1_3013 registerChest (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;Lnet/minecraft/class_1_477;Z)V
+		ARG 1 block
+		ARG 2 articleSource
+		ARG 3 texture
+		ARG 4 christmas
 	METHOD method_25508 registerChorusPlant ()V
 	METHOD method_25509 registerComposter ()V
 	METHOD method_25510 registerDaylightDetector ()V
@@ -130,6 +138,7 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 3 snowyVariant
 	METHOD method_25561 registerPiston (Lnet/minecraft/class_2248;Lnet/minecraft/class_807;Lnet/minecraft/class_4944;)V
 		ARG 1 piston
+		ARG 2 submodelVariant
 		ARG 3 textures
 	METHOD method_25565 createBooleanModelMap (Lnet/minecraft/class_2746;Lnet/minecraft/class_807;Lnet/minecraft/class_807;)Lnet/minecraft/class_4926;
 		ARG 0 property
@@ -253,6 +262,7 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 1 doorBlock
 	METHOD method_25660 registerBuiltinWithParticle (Lnet/minecraft/class_2248;Lnet/minecraft/class_1_314;)V
 		ARG 1 block
+		ARG 2 particleTexture
 	METHOD method_25661 createFenceBlockState (Lnet/minecraft/class_2248;Lnet/minecraft/class_807;Lnet/minecraft/class_807;)Lnet/minecraft/class_4917;
 		ARG 0 fenceBlock
 		ARG 1 postModel
@@ -395,6 +405,8 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 0 tick
 		ARG 1 locked
 		ARG 2 on
+	METHOD method_34624 (Lnet/minecraft/class_4944;Lnet/minecraft/class_1_314;)Lnet/minecraft/class_4944;
+		ARG 1 texture
 	METHOD method_34626 (Lnet/minecraft/class_1_314;Lnet/minecraft/class_4944;)V
 		ARG 1 textures
 	METHOD method_34631 createDeepslateState (Lnet/minecraft/class_2248;Lnet/minecraft/class_813;Lnet/minecraft/class_4944;Ljava/util/function/BiConsumer;)Lnet/minecraft/class_4917;
@@ -402,6 +414,8 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 1 variant
 		ARG 2 textures
 		ARG 3 modelCollector
+	METHOD method_34637 (Lnet/minecraft/class_4944;Lnet/minecraft/class_1_314;)Lnet/minecraft/class_4944;
+		ARG 1 texture
 	METHOD method_34639 (Lnet/minecraft/class_1_314;Lnet/minecraft/class_4944;)V
 		ARG 1 textures
 	METHOD method_34645 (Lnet/minecraft/class_1_314;Lnet/minecraft/class_4944;)V
@@ -553,6 +567,8 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 3 tintColor
 	METHOD method_65409 registerSpecialItemModel (Lnet/minecraft/class_2248;Ljava/util/Optional;Lnet/minecraft/class_10515$class_10516;)V
 		ARG 1 block
+		ARG 2 transformation
+		ARG 3 model
 	METHOD method_65410 registerSkulls ()V
 	METHOD method_65411 registerBanners ()V
 	METHOD method_65412 registerChests ()V
@@ -656,6 +672,8 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 	METHOD method_67826 (Ljava/lang/Integer;Ljava/lang/Integer;)Lnet/minecraft/class_807;
 		ARG 1 eggs
 		ARG 2 hatch
+	METHOD method_67827 (Ljava/lang/String;I)Lnet/minecraft/class_6010;
+		ARG 1 variant
 	METHOD method_67828 (Ljava/util/Map;Lnet/minecraft/class_10641;)Lnet/minecraft/class_807;
 		ARG 1 mode
 	METHOD method_67829 (Ljava/util/function/Function;Lnet/minecraft/class_2688;Lcom/google/common/collect/ImmutableMap$Builder;Lnet/minecraft/class_2350;Lnet/minecraft/class_10804;)V
@@ -714,6 +732,7 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 1 hydration
 	METHOD method_72719 registerShelf (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
 		ARG 1 block
+		ARG 2 strippedLog
 	METHOD method_72720 registerCopperGolemStatue (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;Lnet/minecraft/class_5955$class_5811;)V
 		ARG 1 block
 		ARG 2 particleBlock
@@ -777,6 +796,8 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		FIELD field_47134 children Ljava/util/Set;
 		METHOD <init> (Lnet/minecraft/class_4910;Lnet/minecraft/class_4944;)V
 			ARG 2 textures
+		METHOD method_1_1046 (Lnet/minecraft/class_2248;Lnet/minecraft/class_5794;)Z
+			ARG 1 family
 		METHOD method_25716 button (Lnet/minecraft/class_2248;)Lnet/minecraft/class_4910$class_4912;
 			ARG 1 buttonBlock
 		METHOD method_25717 sign (Lnet/minecraft/class_2248;)Lnet/minecraft/class_4910$class_4912;

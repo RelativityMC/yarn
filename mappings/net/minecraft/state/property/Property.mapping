@@ -55,3 +55,4 @@ CLASS net/minecraft/class_2769 net/minecraft/state/property/Property
 		METHOD comp_71 value ()Ljava/lang/Comparable;
 		METHOD equals (Ljava/lang/Object;)Z
 			ARG 1 o
+		METHOD method_1_3056 getValueString ()Ljava/lang/String;

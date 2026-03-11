@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_11788 net/minecraft/client/render/command/BatchingRenderCommandQueue
+	FIELD field_1_2482 fallingBlockCommands Ljava/util/List;
 	FIELD field_62224 shadowPiecesCommands Ljava/util/List;
 	FIELD field_62225 fireCommands Ljava/util/List;
 	FIELD field_62228 textCommands Ljava/util/List;
@@ -15,6 +16,7 @@ CLASS net/minecraft/class_11788 net/minecraft/client/render/command/BatchingRend
 	FIELD field_62964 modelCommands Lnet/minecraft/class_11683$class_12048;
 	METHOD <init> (Lnet/minecraft/class_11661;)V
 		ARG 1 orderedQueueImpl
+	METHOD method_1_2999 getFallingBlockCommands ()Ljava/util/List;
 	METHOD method_73505 getShadowPiecesCommands ()Ljava/util/List;
 	METHOD method_73507 getFireCommands ()Ljava/util/List;
 	METHOD method_73513 getTextCommands ()Ljava/util/List;

@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_477 net/minecraft/client/render/item/model/special/ChestTextureSet
+	METHOD method_1_3031 map (Ljava/util/function/Function;)Lnet/minecraft/class_1_477;
+		ARG 1 function
+	METHOD method_1_3032 get (Lnet/minecraft/class_2745;)Ljava/lang/Object;
+		ARG 1 chestType

@@ -9,6 +9,9 @@ CLASS net/minecraft/class_8674 net/minecraft/client/network/ClientConfigurationN
 	FIELD field_61721 chunkLoadProgress Lnet/minecraft/class_11653;
 	FIELD field_62595 receivedCodeOfConduct Z
 	FIELD field_63065 CODE_OF_CONDUCT_DISCONNECT_REASON Lnet/minecraft/class_2561;
+	METHOD method_1_3081 filterRegistries (Lnet/minecraft/class_5455$class_6890;Ljava/util/stream/Stream;)Lnet/minecraft/class_5455$class_6890;
+		ARG 0 registryManager
+		ARG 1 registryKeys
 	METHOD method_52797 handleCustomPayload (Lnet/minecraft/class_8710;)V
 		ARG 1 payload
 	METHOD method_57043 (Lnet/minecraft/class_5912;)Lnet/minecraft/class_5455$class_6890;

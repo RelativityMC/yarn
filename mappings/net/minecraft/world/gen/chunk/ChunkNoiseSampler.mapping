@@ -4,6 +4,7 @@ CLASS net/minecraft/class_6568 net/minecraft/world/gen/chunk/ChunkNoiseSampler
 	COMMENT and the block state samplers.
 	COMMENT
 	COMMENT <p>An instance of this is created for every chunk.
+	FIELD field_1_2468 finalSamplerAfterBeardifier Lnet/minecraft/class_6910;
 	FIELD field_34598 verticalCellCount I
 	FIELD field_34599 horizontalCellCount I
 	FIELD field_34600 minimumCellY I
@@ -54,6 +55,7 @@ CLASS net/minecraft/class_6568 net/minecraft/world/gen/chunk/ChunkNoiseSampler
 		ARG 7 chunkGeneratorSettings
 		ARG 8 fluidLevelSampler
 		ARG 9 blender
+	METHOD method_1_2958 sampleDensity ()D
 	METHOD method_38336 sampleStartDensity ()V
 		COMMENT Samples the density values for all cells in the chunk with the first X coordinate.
 		COMMENT This is done for every {@code interpolated} function. The resulting density values

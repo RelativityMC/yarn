@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 	COMMENT Contains all the minecraft blocks.
+	FIELD field_10566 DIRT Lnet/minecraft/class_2248;
 	FIELD field_23985 IRON_CHAIN Lnet/minecraft/class_2248;
 	FIELD field_46282 PUMPKIN Lnet/minecraft/class_2248;
 	FIELD field_46283 MELON Lnet/minecraft/class_2248;
@@ -16,8 +17,34 @@ CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 		ARG 0 settings
 	METHOD method_1_874 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
 		ARG 0 settings
+	METHOD method_1_875 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_1_876 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_1_877 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_1_878 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_1_1251 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
 	METHOD method_1_1252 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
 		ARG 0 settings
+	METHOD method_1_1253 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_1_1254 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_1_1255 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_1_1256 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_1_2936 getAbovePosition (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Lnet/minecraft/class_2338;
+		ARG 0 state
+		ARG 1 world
+		ARG 2 pos
+	METHOD method_1_2937 getSelfPosition (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Lnet/minecraft/class_2338;
+		ARG 0 state
+		ARG 1 world
+		ARG 2 pos
 	METHOD method_9492 register (Ljava/lang/String;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
 		ARG 0 id
 		ARG 1 settings

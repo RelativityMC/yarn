@@ -228,12 +228,16 @@ CLASS net/minecraft/class_238 net/minecraft/util/math/Box
 	METHOD method_71490 squaredMagnitude (Lnet/minecraft/class_238;)D
 		ARG 1 other
 	CLASS class_10782 Builder
+		COMMENT Used to build a {@link Box} that contains a given set of points.
+		FIELD field_1_2446 defined Z
 		FIELD field_56689 minX F
 		FIELD field_56690 minY F
 		FIELD field_56691 minZ F
 		FIELD field_56692 maxX F
 		FIELD field_56693 maxY F
 		FIELD field_56694 maxZ F
+		METHOD method_1_2915 isDefined ()Z
+			COMMENT {@return whether at least one point has been passed to {@link #encompass}}
 		METHOD method_67708 build ()Lnet/minecraft/class_238;
 		METHOD method_67709 encompass (Lorg/joml/Vector3fc;)V
 			ARG 1 vec

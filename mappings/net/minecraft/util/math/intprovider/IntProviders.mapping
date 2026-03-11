@@ -1,0 +1,28 @@
+CLASS net/minecraft/class_1_469 net/minecraft/util/math/intprovider/IntProviders
+	FIELD field_1_2469 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_2470 BASE_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_2471 NONNEGATIVE Lcom/mojang/serialization/Codec;
+	FIELD field_1_2472 POSITIVE Lcom/mojang/serialization/Codec;
+	METHOD method_1_2961 register (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 registry
+	METHOD method_1_2962 range (II)Lcom/mojang/serialization/Codec;
+		ARG 0 min
+		ARG 1 max
+	METHOD method_1_2963 (Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 codec
+	METHOD method_1_2964 (Lcom/mojang/datafixers/util/Either;)Lnet/minecraft/class_6017;
+		ARG 0 either
+	METHOD method_1_2965 (Lnet/minecraft/class_6017;)Lnet/minecraft/class_6017;
+		ARG 0 provider
+	METHOD method_1_2966 (Lnet/minecraft/class_6017;)Lcom/mojang/datafixers/util/Either;
+		ARG 0 provider
+	METHOD method_1_2969 (IILnet/minecraft/class_6017;)Lcom/mojang/serialization/DataResult;
+		ARG 2 provider
+	METHOD method_1_2970 validateRange (IILnet/minecraft/class_6017;)Lcom/mojang/serialization/DataResult;
+		ARG 0 min
+		ARG 1 max
+		ARG 2 provider
+	METHOD method_1_2971 validated (IILcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
+		ARG 0 min
+		ARG 1 max
+		ARG 2 codec

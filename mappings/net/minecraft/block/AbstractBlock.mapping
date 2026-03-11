@@ -439,6 +439,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		ARG 3 pos
 		ARG 4 entity
 		ARG 5 handler
+		ARG 6 substantial
 	METHOD method_9549 getCollisionShape (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_3726;)Lnet/minecraft/class_265;
 		COMMENT @see AbstractBlockState#getCollisionShape(BlockView, BlockPos, ShapeContext)
 		ARG 1 state
@@ -869,6 +870,11 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		ARG 4 moved
 	METHOD method_72600 keepBlockEntityWhenReplacedWith (Lnet/minecraft/class_2680;)Z
 		ARG 1 state
+	CLASS class_1_474 PostProcessPredicate
+		METHOD method_1_3010 getPos (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Lnet/minecraft/class_2338;
+			ARG 1 state
+			ARG 2 world
+			ARG 3 pos
 	CLASS class_2250 OffsetType
 	CLASS class_2251 Settings
 		FIELD field_10660 resistance F
@@ -961,6 +967,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 			ARG 1 world
 			ARG 2 pos
 		METHOD method_26247 postProcess (Lnet/minecraft/class_4970$class_1_474;)Lnet/minecraft/class_4970$class_2251;
+			ARG 1 postProcessPredicate
 		METHOD method_26249 emissiveLighting (Lnet/minecraft/class_4970$class_4973;)Lnet/minecraft/class_4970$class_2251;
 			ARG 1 predicate
 		METHOD method_26250 air ()Lnet/minecraft/class_4970$class_2251;
@@ -1017,6 +1024,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		METHOD method_63505 getLootTableKey ()Ljava/util/Optional;
 		METHOD method_63506 getTranslationKey ()Ljava/lang/String;
 	CLASS class_4971 AbstractBlockState
+		FIELD field_1_2487 postProcessPredicate Lnet/minecraft/class_4970$class_1_474;
 		FIELD field_23166 shapeCache Lnet/minecraft/class_4970$class_4971$class_3752;
 		FIELD field_23167 luminance I
 		FIELD field_23168 hasSidedTransparency Z
@@ -1049,6 +1057,11 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		FIELD field_52646 FULL_CULLING_FACES [Lnet/minecraft/class_265;
 		METHOD <init> (Lnet/minecraft/class_2248;[Lnet/minecraft/class_2769;[Ljava/lang/Comparable;)V
 			ARG 1 block
+			ARG 2 properties
+			ARG 3 values
+		METHOD method_1_3009 getPostProcessPos (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Lnet/minecraft/class_2338;
+			ARG 1 world
+			ARG 2 pos
 		METHOD method_26165 calcBlockBreakingDelta (Lnet/minecraft/class_1657;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)F
 			ARG 1 player
 			ARG 2 world
@@ -1085,6 +1098,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		METHOD method_26176 getComparatorOutput (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;)I
 			ARG 1 world
 			ARG 2 pos
+			ARG 3 direction
 		METHOD method_26177 onSyncedBlockEvent (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;II)Z
 			ARG 1 world
 			ARG 2 pos
@@ -1094,6 +1108,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 			ARG 1 world
 			ARG 2 pos
 			ARG 3 entity
+			ARG 4 collisionHandler
 		METHOD method_26179 onBlockBreakStart (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1657;)V
 			ARG 1 world
 			ARG 2 pos
@@ -1294,7 +1309,9 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		METHOD method_61766 ([Lnet/minecraft/class_265;)V
 			ARG 0 direction
 		METHOD method_64025 getInsideCollisionShape (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_1297;)Lnet/minecraft/class_265;
+			ARG 1 world
 			ARG 2 pos
+			ARG 3 entity
 		METHOD method_65171 getPickStack (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;Z)Lnet/minecraft/class_1799;
 			ARG 1 world
 			ARG 2 pos

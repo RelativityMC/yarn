@@ -1,5 +1,8 @@
 CLASS net/minecraft/class_12204 net/minecraft/world/attribute/EnvironmentAttributeAccess
 	FIELD field_63738 DEFAULT Lnet/minecraft/class_12204;
+	METHOD method_1_3051 getAttributeValue (Lnet/minecraft/class_47;Lnet/minecraft/class_12197;)Ljava/lang/Object;
+		ARG 1 context
+		ARG 2 attribute
 	METHOD method_75694 getAttributeValue (Lnet/minecraft/class_12197;)Ljava/lang/Object;
 		ARG 1 attribute
 	METHOD method_75695 getAttributeValue (Lnet/minecraft/class_12197;Lnet/minecraft/class_243;)Ljava/lang/Object;

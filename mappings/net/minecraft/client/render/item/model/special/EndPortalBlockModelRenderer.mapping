@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_1_483 net/minecraft/client/render/item/model/special/EndPortalBlockModelRenderer
+	FIELD field_1_2543 renderLayer Lnet/minecraft/class_1921;
+	METHOD <init> (Lnet/minecraft/class_1921;)V
+		ARG 1 renderLayer
+	CLASS class_1_484 Type
+		FIELD field_1_2548 id Ljava/lang/String;
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 id
+	CLASS class_1_485 Unbaked
+		METHOD method_1_3063 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance

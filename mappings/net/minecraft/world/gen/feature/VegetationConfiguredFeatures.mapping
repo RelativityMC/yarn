@@ -1,4 +1,25 @@
 CLASS net/minecraft/class_6809 net/minecraft/world/gen/feature/VegetationConfiguredFeatures
+	FIELD field_1_2512 BERRY_BUSH Lnet/minecraft/class_5321;
+	FIELD field_1_2513 BROWN_MUSHROOM Lnet/minecraft/class_5321;
+	FIELD field_1_2514 BUSH Lnet/minecraft/class_5321;
+	FIELD field_1_2515 CACTUS Lnet/minecraft/class_5321;
+	FIELD field_1_2516 DEAD_BUSH Lnet/minecraft/class_5321;
+	FIELD field_1_2517 DRY_GRASS Lnet/minecraft/class_5321;
+	FIELD field_1_2518 FIREFLY_BUSH Lnet/minecraft/class_5321;
+	FIELD field_1_2519 GRASS Lnet/minecraft/class_5321;
+	FIELD field_1_2520 GRASS_JUNGLE Lnet/minecraft/class_5321;
+	FIELD field_1_2521 LARGE_FERN Lnet/minecraft/class_5321;
+	FIELD field_1_2522 LEAF_LITTER Lnet/minecraft/class_5321;
+	FIELD field_1_2523 MELON Lnet/minecraft/class_5321;
+	FIELD field_1_2524 PALE_FOREST_FLOWER Lnet/minecraft/class_5321;
+	FIELD field_1_2525 PUMPKIN Lnet/minecraft/class_5321;
+	FIELD field_1_2526 RED_MUSHROOM Lnet/minecraft/class_5321;
+	FIELD field_1_2527 SUGAR_CANE Lnet/minecraft/class_5321;
+	FIELD field_1_2528 SUNFLOWER Lnet/minecraft/class_5321;
+	FIELD field_1_2529 TAIGA_GRASS Lnet/minecraft/class_5321;
+	FIELD field_1_2530 TALL_GRASS Lnet/minecraft/class_5321;
+	FIELD field_1_2531 WATERLILY Lnet/minecraft/class_5321;
+	FIELD field_1_2532 WILDFLOWER Lnet/minecraft/class_5321;
 	FIELD field_35925 TREES_FLOWER_FOREST Lnet/minecraft/class_5321;
 	FIELD field_35926 MEADOW_TREES Lnet/minecraft/class_5321;
 	FIELD field_35927 TREES_TAIGA Lnet/minecraft/class_5321;

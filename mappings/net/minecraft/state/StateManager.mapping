@@ -1,4 +1,12 @@
 CLASS net/minecraft/class_2689 net/minecraft/state/StateManager
+	COMMENT For an object that supports states (namely, blocks and fluids), holds
+	COMMENT information about these states.
+	COMMENT
+	COMMENT Blocks and fluids contain an instance of this class for themselves.
+	FIELD field_1_2490 NO_PROPERTIES [Lnet/minecraft/class_2769;
+	FIELD field_1_2491 NO_STATES [[Lnet/minecraft/class_2688;
+	FIELD field_1_2492 NO_VALUES [Ljava/lang/Comparable;
+	FIELD field_1_2493 propertiesCodec Lcom/mojang/serialization/MapCodec;
 	FIELD field_12314 VALID_NAME_PATTERN Ljava/util/regex/Pattern;
 	FIELD field_12315 states Lcom/google/common/collect/ImmutableList;
 	FIELD field_12316 properties Lcom/google/common/collect/ImmutableSortedMap;
@@ -8,6 +16,31 @@ CLASS net/minecraft/class_2689 net/minecraft/state/StateManager
 		ARG 2 owner
 		ARG 3 factory
 		ARG 4 propertiesMap
+	METHOD method_1_3017 createPropertiesCodec (Ljava/lang/Object;Ljava/util/function/Function;Ljava/util/Map;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 owner
+		ARG 1 defaultStateGetter
+		ARG 2 properties
+	METHOD method_1_3018 createStateList (Ljava/lang/Object;Lnet/minecraft/class_2689$class_2691;Ljava/util/Map;)Lcom/google/common/collect/ImmutableList;
+		ARG 0 owner
+		ARG 1 factory
+		ARG 2 properties
+	METHOD method_1_3019 createSingletonStateList (Ljava/lang/Object;Lnet/minecraft/class_2689$class_2691;Ljava/util/Map;)Lcom/google/common/collect/ImmutableList;
+		ARG 0 owner
+		ARG 1 factory
+		ARG 2 properties
+	METHOD method_1_3020 createSingletonStateList (Ljava/lang/Object;Lnet/minecraft/class_2689$class_2691;Lnet/minecraft/class_2769;)Lcom/google/common/collect/ImmutableList;
+		ARG 0 owner
+		ARG 1 properties
+		ARG 2 property
+	METHOD method_1_3021 createEmptyStateList (Ljava/lang/Object;Lnet/minecraft/class_2689$class_2691;)Lcom/google/common/collect/ImmutableList;
+		ARG 0 owner
+		ARG 1 defaultStateGetter
+	METHOD method_1_3022 getEmptyWithMap ()[[Lnet/minecraft/class_2688;
+	METHOD method_1_3023 isEmpty ()Z
+	METHOD method_1_3025 (Lnet/minecraft/class_2689$class_1_475;[Lnet/minecraft/class_2769;Ljava/util/List;Lnet/minecraft/class_2688;)V
+		ARG 2 values
+		ARG 3 state
+	METHOD method_1_3026 getPropertiesCodec ()Lcom/mojang/serialization/MapCodec;
 	METHOD method_11659 getProperties ()Ljava/util/Collection;
 	METHOD method_11660 getOwner ()Ljava/lang/Object;
 	METHOD method_11662 getStates ()Lcom/google/common/collect/ImmutableList;
@@ -23,6 +56,19 @@ CLASS net/minecraft/class_2689 net/minecraft/state/StateManager
 		ARG 1 defaultStateGetter
 		ARG 2 key
 		ARG 3 property
+	CLASS class_1_475 StateCache
+		METHOD method_1_3027 computeDerivedStatesArray (Ljava/util/List;Lnet/minecraft/class_2769;I)[Lnet/minecraft/class_2688;
+			ARG 1 values
+			ARG 2 property
+			ARG 3 propertyIndex
+		METHOD method_1_3028 getWithMap ([Lnet/minecraft/class_2769;Ljava/util/List;)[[Lnet/minecraft/class_2688;
+			ARG 1 properties
+			ARG 2 values
+		METHOD method_1_3029 getOrComputeDerivedStatesArray (Ljava/util/List;Lnet/minecraft/class_2769;I)[Lnet/minecraft/class_2688;
+			ARG 1 values
+			ARG 2 property
+			ARG 3 propertyIndex
+		CLASS class_1_476 Hole
 	CLASS class_2690 Builder
 		FIELD field_12318 owner Ljava/lang/Object;
 		FIELD field_12319 namedProperties Ljava/util/Map;
@@ -37,3 +83,6 @@ CLASS net/minecraft/class_2689 net/minecraft/state/StateManager
 			ARG 1 property
 	CLASS class_2691 Factory
 		METHOD method_1_254 create (Ljava/lang/Object;[Lnet/minecraft/class_2769;[Ljava/lang/Comparable;)Ljava/lang/Object;
+			ARG 1 owner
+			ARG 2 properties
+			ARG 3 values

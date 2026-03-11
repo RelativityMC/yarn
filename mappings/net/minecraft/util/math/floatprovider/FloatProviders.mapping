@@ -1,0 +1,18 @@
+CLASS net/minecraft/class_1_472 net/minecraft/util/math/floatprovider/FloatProviders
+	FIELD field_1_2474 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_2475 BASE_CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_1_2980 register (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 registries
+	METHOD method_1_2981 range (FF)Lcom/mojang/serialization/Codec;
+		ARG 0 min
+		ARG 1 max
+	METHOD method_1_2982 (FFLnet/minecraft/class_5863;)Lcom/mojang/serialization/DataResult;
+		ARG 2 provider
+	METHOD method_1_2985 (Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 codec
+	METHOD method_1_2986 (Lcom/mojang/datafixers/util/Either;)Lnet/minecraft/class_5863;
+		ARG 0 either
+	METHOD method_1_2987 (Lnet/minecraft/class_5863;)Lnet/minecraft/class_5863;
+		ARG 0 provider
+	METHOD method_1_2988 (Lnet/minecraft/class_5863;)Lcom/mojang/datafixers/util/Either;
+		ARG 0 provider

@@ -1,8 +1,29 @@
 CLASS net/minecraft/class_2688 net/minecraft/state/State
+	FIELD field_1_2480 properties [Lnet/minecraft/class_2769;
+	FIELD field_1_2481 values [Ljava/lang/Comparable;
 	FIELD field_24739 owner Ljava/lang/Object;
 	FIELD field_24741 withMap [[Ljava/lang/Object;
 	FIELD field_31385 NAME Ljava/lang/String;
 	FIELD field_31386 PROPERTIES Ljava/lang/String;
+	METHOD <init> (Ljava/lang/Object;[Lnet/minecraft/class_2769;[Ljava/lang/Comparable;)V
+		ARG 1 owner
+		ARG 2 properties
+		ARG 3 values
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other
+	METHOD method_1_2992 propertyValue (Lnet/minecraft/class_2769;Ljava/lang/Comparable;)Lnet/minecraft/class_2769$class_4933;
+		ARG 0 property
+		ARG 1 value
+	METHOD method_1_2993 propertyValues ()Ljava/util/stream/Stream;
+	METHOD method_1_2994 setWithMap ([[Ljava/lang/Object;)V
+		ARG 1 withMap
+	METHOD method_1_2995 hasNoProperties ()Z
+	METHOD method_1_2996 (Ljava/util/function/Function;Ljava/util/function/Function;Ljava/lang/Object;)Lcom/mojang/serialization/MapCodec;
+		ARG 2 state
+	METHOD method_1_2997 (I)Lnet/minecraft/class_2769$class_4933;
+		ARG 1 i
+	METHOD method_1_2998 indexOfProperty (Lnet/minecraft/class_2769;)I
+		ARG 1 property
 	METHOD method_11654 get (Lnet/minecraft/class_2769;)Ljava/lang/Comparable;
 		ARG 1 property
 	METHOD method_11657 with (Lnet/minecraft/class_2769;Ljava/lang/Comparable;)Ljava/lang/Object;
@@ -14,6 +35,8 @@ CLASS net/minecraft/class_2688 net/minecraft/state/State
 		ARG 1 property
 	METHOD method_28494 createCodec (Lcom/mojang/serialization/Codec;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;
 		ARG 0 codec
+		ARG 1 defaultStateGetter
+		ARG 2 stateManagerGetter
 	METHOD method_28495 getNext (Ljava/util/List;Ljava/lang/Object;)Ljava/lang/Object;
 		ARG 0 values
 		ARG 1 value
@@ -34,4 +57,5 @@ CLASS net/minecraft/class_2688 net/minecraft/state/State
 		ARG 1 property
 	METHOD method_64216 with (Lnet/minecraft/class_2769;ILjava/lang/Comparable;)Ljava/lang/Object;
 		ARG 1 property
+		ARG 2 propertyIndex
 		ARG 3 newValue

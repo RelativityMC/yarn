@@ -52,6 +52,7 @@ CLASS net/minecraft/class_4946 net/minecraft/client/data/TexturedModel
 	METHOD method_25919 (Ljava/util/function/Function;Lnet/minecraft/class_4942;Lnet/minecraft/class_2248;)Lnet/minecraft/class_4946;
 		ARG 2 block
 	METHOD method_25920 getCubeAll (Lnet/minecraft/class_1_314;)Lnet/minecraft/class_4946;
+		ARG 0 texture
 	METHOD method_25921 getTextures ()Lnet/minecraft/class_4944;
 	CLASS class_4947 Factory
 		METHOD method_1_235 get (Lnet/minecraft/class_2248;)Lnet/minecraft/class_4946;

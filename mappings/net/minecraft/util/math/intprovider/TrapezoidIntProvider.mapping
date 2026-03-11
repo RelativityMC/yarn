@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_1_470 net/minecraft/util/math/intprovider/TrapezoidIntProvider
+	FIELD field_1_2473 CODEC Lcom/mojang/serialization/MapCodec;
+	METHOD method_1_2972 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_2973 (Lnet/minecraft/class_1_470;)Lcom/mojang/serialization/DataResult;
+		ARG 0 provider
+	METHOD method_1_2976 of (III)Lnet/minecraft/class_1_470;
+		ARG 0 minInclusive
+		ARG 1 maxInclusive
+		ARG 2 plateau
+	METHOD method_1_2977 triangular (I)Lnet/minecraft/class_6017;
+		ARG 0 spread

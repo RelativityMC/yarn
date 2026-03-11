@@ -1,0 +1,13 @@
+CLASS net/minecraft/class_1_479 net/minecraft/world/attribute/IntModifier
+	FIELD field_1_2503 ADD Lnet/minecraft/class_1_479;
+	FIELD field_1_2504 MAXIMUM Lnet/minecraft/class_1_479;
+	FIELD field_1_2505 MINIMUM Lnet/minecraft/class_1_479;
+	FIELD field_1_2506 MULTIPLY Lnet/minecraft/class_1_479;
+	FIELD field_1_2507 SUBTRACT Lnet/minecraft/class_1_479;
+	METHOD method_1_3040 (Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+		ARG 0 a
+		ARG 1 b
+	METHOD method_1_3041 (Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+		ARG 0 a
+		ARG 1 b
+	CLASS class_1_480 Binary

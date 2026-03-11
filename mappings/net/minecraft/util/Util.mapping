@@ -16,6 +16,7 @@ CLASS net/minecraft/class_156 net/minecraft/util/Util
 		COMMENT A locale-independent datetime formatter that uses {@code yyyy-MM-dd_HH.mm.ss}
 		COMMENT as the format string. Example: {@code 2022-01-01_00.00.00}
 	FIELD field_45714 NANOS_PER_MILLI J
+	FIELD field_46220 INDEXOF_MAP_THRESHOLD I
 	FIELD field_46764 BACKUP_ATTEMPTS I
 	FIELD field_47571 DOWNLOAD_WORKER_EXECUTOR Lnet/minecraft/class_10207;
 	FIELD field_52196 SUPPORTED_URI_PROTOCOLS Ljava/util/Set;
@@ -23,6 +24,11 @@ CLASS net/minecraft/class_156 net/minecraft/util/Util
 		ARG 0 from
 		ARG 1 to
 		ARG 2 copyOptions
+	METHOD method_1_2910 allExcept (Ljava/lang/Enum;)Ljava/util/Set;
+		ARG 0 except
+	METHOD method_1_2911 withAppended (Ljava/util/List;[Ljava/lang/Object;)Ljava/util/List;
+		ARG 0 list
+		ARG 1 valuesToAppend
 	METHOD method_645 previous (Ljava/lang/Iterable;Ljava/lang/Object;)Ljava/lang/Object;
 		COMMENT {@return the item preceding {@code object} in {@code iterable}}
 		COMMENT
@@ -367,9 +373,6 @@ CLASS net/minecraft/class_156 net/minecraft/util/Util
 		COMMENT {@return a function that, when given a value in {@code values}, returns the last
 		COMMENT index of the value in the list}
 		COMMENT
-		COMMENT @implNote Unlike {@link java.util.List#lastIndexOf}, the returned function will
-		COMMENT return {@code 0} when given values not in the passed list.
-		COMMENT
 		COMMENT @see #lastIdentityIndexGetter
 		ARG 0 values
 	METHOD method_44893 getFormattedCurrentTime ()Ljava/lang/String;
@@ -382,9 +385,6 @@ CLASS net/minecraft/class_156 net/minecraft/util/Util
 	METHOD method_53909 lastIdentityIndexGetter (Ljava/util/List;)Ljava/util/function/ToIntFunction;
 		COMMENT {@return a function that, when given a value in {@code values}, returns the last
 		COMMENT index of the value in the list using identity comparison}
-		COMMENT
-		COMMENT @implNote Unlike {@link java.util.List#lastIndexOf}, the returned function will
-		COMMENT return {@code 0} when given values not in the passed list.
 		COMMENT
 		COMMENT @see #lastIndexGetter
 		ARG 0 values

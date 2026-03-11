@@ -6,6 +6,8 @@ CLASS net/minecraft/class_10799 net/minecraft/client/gl/RenderPipelines
 	FIELD field_1_1477 ITEM_CUTOUT Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_1_1478 ITEM_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
 	FIELD field_1_1479 ITEM_TRANSLUCENT Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	FIELD field_1_2466 BANNER_PATTERN Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	FIELD field_1_2467 TRANSLUCENT_BLOCK Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56812 BEACON_BEAM_TRANSLUCENT Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56814 RENDERTYPE_LEASH Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56815 RENDERTYPE_WATER_MASK Lcom/mojang/blaze3d/pipeline/RenderPipeline;

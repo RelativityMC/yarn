@@ -6,6 +6,7 @@ CLASS net/minecraft/class_12160 net/minecraft/client/render/gizmo/GizmoDrawerImp
 		ARG 1 matrices
 		ARG 2 vertexConsumers
 		ARG 3 cameraRenderState
+		ARG 4 matrix
 	METHOD method_76659 isEmpty ()Z
 	METHOD method_76660 getDivision (I)Lnet/minecraft/class_12160$class_12355;
 		ARG 1 color
@@ -25,6 +26,7 @@ CLASS net/minecraft/class_12160 net/minecraft/client/render/gizmo/GizmoDrawerImp
 			ARG 1 matrices
 			ARG 2 vertexConsumers
 			ARG 3 cameraRenderState
+			ARG 4 matrix
 		METHOD method_76663 drawTriangleFans (Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;Lnet/minecraft/class_12075;)V
 			ARG 1 matrices
 			ARG 2 vertexConsumers
@@ -33,6 +35,7 @@ CLASS net/minecraft/class_12160 net/minecraft/client/render/gizmo/GizmoDrawerImp
 			ARG 1 matrices
 			ARG 2 vertexConsumers
 			ARG 3 cameraRenderState
+			ARG 4 matrix
 		METHOD method_76665 drawQuads (Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;Lnet/minecraft/class_12075;)V
 			ARG 1 matrices
 			ARG 2 vertexConsumers

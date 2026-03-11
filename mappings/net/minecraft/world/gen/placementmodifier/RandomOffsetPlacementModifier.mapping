@@ -5,6 +5,9 @@ CLASS net/minecraft/class_6732 net/minecraft/world/gen/placementmodifier/RandomO
 	METHOD <init> (Lnet/minecraft/class_6017;Lnet/minecraft/class_6017;)V
 		ARG 1 xzSpread
 		ARG 2 ySpread
+	METHOD method_1_3072 of (II)Lnet/minecraft/class_6732;
+		ARG 0 spreadXz
+		ARG 1 spreadY
 	METHOD method_39179 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
 	METHOD method_39180 (Lnet/minecraft/class_6732;)Lnet/minecraft/class_6017;

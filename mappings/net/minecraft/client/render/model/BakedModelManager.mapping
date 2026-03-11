@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_1092 net/minecraft/client/render/model/BakedModelManager
 	FIELD field_1_2180 blockStateModels Lnet/minecraft/class_773;
 	FIELD field_1_2294 blockModels Lnet/minecraft/class_1_404;
+	FIELD field_1_2477 fluidModels Lnet/minecraft/class_1_478;
 	FIELD field_20277 colorMap Lnet/minecraft/class_324;
 	FIELD field_40573 LOGGER Lorg/slf4j/Logger;
 	FIELD field_53676 MODELS_FINDER Lnet/minecraft/class_7654;
@@ -19,6 +20,7 @@ CLASS net/minecraft/class_1092 net/minecraft/client/render/model/BakedModelManag
 	METHOD method_1_2714 getBlockModels ()Lnet/minecraft/class_1_404;
 	METHOD method_1_2715 (Lnet/minecraft/class_1_415;Ljava/util/concurrent/Executor;Lnet/minecraft/class_1088$class_10524;)Ljava/util/concurrent/CompletionStage;
 		ARG 2 blockModelLoader
+	METHOD method_1_2991 getFluidModels ()Lnet/minecraft/class_1_478;
 	METHOD method_18179 upload (Lnet/minecraft/class_1092$class_7779;)V
 		ARG 1 bakingResult
 	METHOD method_21611 shouldRerender (Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;)Z
@@ -74,6 +76,7 @@ CLASS net/minecraft/class_1092 net/minecraft/client/render/model/BakedModelManag
 		ARG 1 id
 	METHOD method_68047 (Lnet/minecraft/class_9826;Lcom/google/common/collect/Multimap;Lcom/google/common/collect/Multimap;Lit/unimi/dsi/fastutil/objects/Object2IntMap;Lnet/minecraft/class_5599;Lnet/minecraft/class_1088$class_10524;Ljava/util/Map;)Lnet/minecraft/class_1092$class_7779;
 		ARG 5 bakedModels
+		ARG 6 blockModels
 	CLASS 1 1
 		FIELD field_1_1862 cache Ljava/util/Map;
 		FIELD field_1_1863 bakeFactory Ljava/util/function/Function;

@@ -9,6 +9,9 @@ CLASS net/minecraft/class_2561 net/minecraft/text/Text
 	COMMENT refer to {@link MutableText}.
 	COMMENT
 	COMMENT @see MutableText
+	METHOD method_1_2935 object (Lnet/minecraft/class_11724;Lnet/minecraft/class_2561;)Lnet/minecraft/class_5250;
+		ARG 0 object
+		ARG 1 fallback
 	METHOD method_10851 getContent ()Lnet/minecraft/class_7417;
 		COMMENT {@return the content of the text}
 	METHOD method_10855 getSiblings ()Ljava/util/List;
@@ -44,7 +47,9 @@ CLASS net/minecraft/class_2561 net/minecraft/text/Text
 		ARG 0 selector
 		ARG 1 separator
 	METHOD method_43468 nbt (Lnet/minecraft/class_1_356;ZZLjava/util/Optional;Lnet/minecraft/class_7419;)Lnet/minecraft/class_5250;
+		ARG 0 path
 		ARG 1 interpret
+		ARG 2 plain
 		ARG 3 separator
 		ARG 4 dataSource
 	METHOD method_43469 translatable (Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/class_5250;

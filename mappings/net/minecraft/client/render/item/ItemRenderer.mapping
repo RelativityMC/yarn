@@ -1,19 +1,39 @@
 CLASS net/minecraft/class_918 net/minecraft/client/render/item/ItemRenderer
+	FIELD field_1_2537 shading Lnet/minecraft/class_1_382;
 	FIELD field_43086 ENTITY_ENCHANTMENT_GLINT Lnet/minecraft/class_2960;
 	FIELD field_43087 ITEM_ENCHANTMENT_GLINT Lnet/minecraft/class_2960;
 	FIELD field_55295 NO_TINT I
+	FIELD field_60154 GUI_SCALE F
+	FIELD field_60155 FIRST_PERSON_SCALE F
+	FIELD field_60156 GLINT_TEXTURE_SCALE F
 	METHOD method_1_2278 getTransformationMatrix (Lnet/minecraft/class_811;Lnet/minecraft/class_4587$class_4665;)Lnet/minecraft/class_4587$class_4665;
 		ARG 0 context
 		ARG 1 currentMatrix
 	METHOD method_1_2279 getGlintRenderLayer (Lnet/minecraft/class_1921;Z)Lnet/minecraft/class_1921;
 		ARG 0 baseRenderLayer
 		ARG 1 solid
+	METHOD method_1_3052 getTint ([ILnet/minecraft/class_777$class_1_320;)I
+		ARG 0 tints
+		ARG 1 spriteInfo
+	METHOD method_1_3053 hasBlend (Lnet/minecraft/class_11661$class_11668;)Z
+		ARG 0 itemCommand
+	METHOD method_1_3054 renderOpaque (Lnet/minecraft/class_11788;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_4618;)V
+		ARG 1 queue
+		ARG 2 vertexConsumer
+		ARG 3 outlineVertexConsumers
+	METHOD method_1_3055 renderBlended (Lnet/minecraft/class_11788;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_4618;)V
+		ARG 1 queue
+		ARG 2 vertexConsumer
+		ARG 3 outlineVertexConsumers
 	METHOD method_23181 getItemGlintConsumer (Lnet/minecraft/class_4597;Lnet/minecraft/class_1921;ZZ)Lnet/minecraft/class_4588;
 		ARG 0 vertexConsumers
 		ARG 1 layer
 		ARG 2 solid
 		ARG 3 glint
 	METHOD method_62476 renderItem (Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_4618;Lnet/minecraft/class_11661$class_11668;)V
+		ARG 1 vertexConsumer
+		ARG 2 outlineVertexConsumers
+		ARG 3 queue
 	METHOD method_65569 getTint ([II)I
 		ARG 0 tints
 		ARG 1 index

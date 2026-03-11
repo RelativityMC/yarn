@@ -1,3 +1,25 @@
 CLASS net/minecraft/class_840 net/minecraft/client/render/block/entity/AbstractEndPortalBlockEntityRenderer
+	FIELD field_1_2559 DIRECTIONS Ljava/util/List;
+	FIELD field_1_2560 FACES_BY_DIRECTION Ljava/util/Map;
+	FIELD field_1_2561 FROM Lorg/joml/Vector3fc;
+	FIELD field_1_2562 TO Lorg/joml/Vector3fc;
 	FIELD field_4406 SKY_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_4407 PORTAL_TEXTURE Lnet/minecraft/class_2960;
+	METHOD method_1_3074 forEachFace (Ljava/util/function/Consumer;)V
+		ARG 0 callback
+	METHOD method_1_3075 (Ljava/util/function/Consumer;Ljava/util/List;)V
+		ARG 1 vertices
+	METHOD method_1_3076 (Lnet/minecraft/class_2350;)Ljava/util/List;
+		ARG 0 direction
+	METHOD method_1_3077 (Ljava/util/Collection;Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;)V
+		ARG 1 matricesEntry
+		ARG 2 vertexConsumer
+	METHOD method_1_3078 render (Ljava/util/Collection;Lnet/minecraft/class_1921;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;)V
+		ARG 0 visibleDirections
+		ARG 1 renderLayer
+		ARG 2 matrices
+		ARG 3 queue
+	METHOD method_1_3079 render (Lnet/minecraft/class_1921;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;)V
+		ARG 0 renderLayer
+		ARG 1 matrices
+		ARG 2 queue

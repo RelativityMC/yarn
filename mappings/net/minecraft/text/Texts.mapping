@@ -2,7 +2,11 @@ CLASS net/minecraft/class_2564 net/minecraft/text/Texts
 	FIELD field_33536 DEFAULT_SEPARATOR Ljava/lang/String;
 	FIELD field_33537 GRAY_DEFAULT_SEPARATOR_TEXT Lnet/minecraft/class_2561;
 	FIELD field_33538 DEFAULT_SEPARATOR_TEXT Lnet/minecraft/class_2561;
+	METHOD method_1_2939 parse (Lnet/minecraft/class_1_466;Lnet/minecraft/class_2561;)Lnet/minecraft/class_5250;
+		ARG 0 context
+		ARG 1 text
 	METHOD method_10881 parse (Lnet/minecraft/class_1_466;Lnet/minecraft/class_2561;I)Lnet/minecraft/class_5250;
+		ARG 0 context
 		ARG 1 text
 		ARG 2 depth
 	METHOD method_10883 toText (Lcom/mojang/brigadier/Message;)Lnet/minecraft/class_2561;
@@ -23,9 +27,11 @@ CLASS net/minecraft/class_2564 net/minecraft/text/Texts
 		ARG 0 text
 		ARG 1 style
 	METHOD method_27663 parseStyle (Lnet/minecraft/class_1_466;Lnet/minecraft/class_2583;I)Lnet/minecraft/class_2583;
+		ARG 0 context
 		ARG 1 style
 		ARG 2 depth
 	METHOD method_36330 parse (Lnet/minecraft/class_1_466;Ljava/util/Optional;I)Ljava/util/Optional;
+		ARG 0 context
 		ARG 1 text
 		ARG 2 depth
 	METHOD method_36331 join (Ljava/util/Collection;Ljava/util/Optional;Ljava/util/function/Function;)Lnet/minecraft/class_5250;

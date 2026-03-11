@@ -2,6 +2,7 @@ CLASS net/minecraft/class_3149 net/minecraft/server/command/TimeCommand
 	FIELD field_1_991 NO_DEFAULT_CLOCK_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_1_992 NO_TIME_MARKER_FOUND_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
 	FIELD field_1_993 WRONG_TIMELINE_FOR_CLOCK_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
+	FIELD field_1_2457 MAX_CLOCK_RATE I
 	METHOD method_1_909 createClockSubcommands (Lnet/minecraft/class_7157;Lcom/mojang/brigadier/builder/ArgumentBuilder;Lnet/minecraft/class_3149$class_1_104;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
 		ARG 0 commandRegistryAccess
 		ARG 1 root
@@ -84,6 +85,12 @@ CLASS net/minecraft/class_3149 net/minecraft/server/command/TimeCommand
 		ARG 2 clock
 	METHOD method_1_946 coerceTicksToInt (J)I
 		ARG 0 ticks
+	METHOD method_1_2940 (Lnet/minecraft/class_3149$class_1_104;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 1 context
+	METHOD method_1_2942 setClockRate (Lnet/minecraft/class_2168;Lnet/minecraft/class_6880;F)I
+		ARG 0 source
+		ARG 1 clock
+		ARG 2 rate
 	METHOD method_13794 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_13796 executeQuery (Lnet/minecraft/class_2168;)I

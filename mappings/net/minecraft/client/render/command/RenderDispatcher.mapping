@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_11684 net/minecraft/client/render/command/RenderDispatcher
+	FIELD field_1_2397 gameRenderState Lnet/minecraft/class_1_405;
+	FIELD field_1_2553 bakedModelManager Lnet/minecraft/class_1092;
 	FIELD field_61828 queue Lnet/minecraft/class_11661;
 	FIELD field_61830 vertexConsumers Lnet/minecraft/class_4597$class_4598;
 	FIELD field_61831 atlasManager Lnet/minecraft/class_11697;
@@ -18,11 +20,13 @@ CLASS net/minecraft/class_11684 net/minecraft/client/render/command/RenderDispat
 	FIELD field_62759 layeredCustomCommandRenderer Lnet/minecraft/class_11977;
 	METHOD <init> (Lnet/minecraft/class_11661;Lnet/minecraft/class_1092;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_11697;Lnet/minecraft/class_4618;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_327;Lnet/minecraft/class_1_405;)V
 		ARG 1 queue
+		ARG 2 bakedModelManager
 		ARG 3 vertexConsumers
 		ARG 4 atlasManager
 		ARG 5 outlineVertexConsumers
 		ARG 6 crumblingOverlayVertexConsumers
 		ARG 7 textRenderer
+		ARG 8 gameRenderState
 	METHOD method_1_1220 clearQueue ()V
 	METHOD method_1_1221 render ()V
 	METHOD method_1_1222 renderOpaque ()V

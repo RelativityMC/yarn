@@ -1,11 +1,12 @@
 CLASS net/minecraft/class_3879 net/minecraft/client/model/Model
 	COMMENT Represents a dynamic model which has its own render layers and custom rendering.
-	FIELD field_21343 layerFactory Ljava/util/function/Function;
+	FIELD field_21343 layerFunction Ljava/util/function/Function;
 	FIELD field_54013 parts Ljava/util/List;
 	FIELD field_54014 root Lnet/minecraft/class_630;
 	METHOD <init> (Lnet/minecraft/class_630;Ljava/util/function/Function;)V
 		ARG 1 root
-		ARG 2 layerFactory
+		ARG 2 layerFunction
+	METHOD method_1_2934 getLayerFunction ()Ljava/util/function/Function;
 	METHOD method_2819 setAngles (Ljava/lang/Object;)V
 		ARG 1 state
 	METHOD method_23500 getLayer (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;

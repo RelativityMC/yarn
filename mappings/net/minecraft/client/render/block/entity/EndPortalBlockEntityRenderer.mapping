@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_11948 net/minecraft/client/render/block/entity/EndPortalBlockEntityRenderer
+	FIELD field_1_2556 BLOCK_TRANSFORMATION Lnet/minecraft/class_4590;

@@ -1,3 +1,4 @@
 CLASS net/minecraft/class_5863 net/minecraft/util/math/floatprovider/FloatProvider
 	METHOD comp_1_370 getMax ()F
 	METHOD comp_1_371 getMin ()F
+	METHOD method_1_2979 getCodec ()Lcom/mojang/serialization/MapCodec;

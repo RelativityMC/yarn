@@ -1,5 +1,9 @@
 CLASS net/minecraft/class_777 net/minecraft/client/render/model/BakedQuad
 	FIELD comp_3723 face Lnet/minecraft/class_2350;
+	FIELD field_1_2510 FLAG_ANIMATED I
+		COMMENT Indicates that this quad contains an animated sprite.
+	FIELD field_1_2511 FLAG_TRANSLUCENT I
+		COMMENT Indicates that this quad is drawn with translucency.
 	FIELD field_64572 NUM_VERTICES I
 	METHOD comp_3723 face ()Lnet/minecraft/class_2350;
 	METHOD method_76648 getPosition (I)Lorg/joml/Vector3fc;
@@ -10,3 +14,14 @@ CLASS net/minecraft/class_777 net/minecraft/client/render/model/BakedQuad
 		METHOD method_1_2310 of (Lnet/minecraft/class_1_314$class_1_315;Lnet/minecraft/class_1_303;IZI)Lnet/minecraft/class_777$class_1_320;
 			ARG 0 sprite
 			ARG 1 transparency
+			ARG 2 tintIndex
+			ARG 3 shade
+			ARG 4 lightEmission
+		METHOD method_1_3043 getFlags ()I
+		METHOD method_1_3044 hasTint ()Z
+	CLASS class_1_481 Flag
+		COMMENT Indicates that the annotated value should be interpreted as render flags
+		COMMENT for a {@link BakedQuad}.
+		COMMENT
+		COMMENT @see #FLAG_TRANSLUCENT
+		COMMENT @see #FLAG_ANIMATED

@@ -20,6 +20,19 @@ CLASS net/minecraft/class_10410 net/minecraft/client/data/ItemModels
 	METHOD method_1_2734 special (Lnet/minecraft/class_2960;Lnet/minecraft/class_10515$class_10516;)Lnet/minecraft/class_10439$class_10441;
 		ARG 0 base
 		ARG 1 specialModel
+	METHOD method_1_3014 generateCases (Lnet/minecraft/class_2769;Ljava/util/Map;)Ljava/util/List;
+		ARG 0 property
+		ARG 1 valuesToModels
+	METHOD method_1_3015 select (Lnet/minecraft/class_4590;Lnet/minecraft/class_10494;Lnet/minecraft/class_10439$class_10441;Ljava/util/List;)Lnet/minecraft/class_10439$class_10441;
+		ARG 0 transformation
+		ARG 1 property
+		ARG 2 fallback
+		ARG 3 cases
+	METHOD method_1_3016 select (Lnet/minecraft/class_4590;Lnet/minecraft/class_2769;Lnet/minecraft/class_10439$class_10441;Ljava/util/Map;)Lnet/minecraft/class_10439$class_10441;
+		ARG 0 transformation
+		ARG 1 property
+		ARG 2 fallback
+		ARG 3 valuesToModels
 	METHOD method_65479 usingItemProperty ()Lnet/minecraft/class_10460;
 	METHOD method_65480 constantTintSource (I)Lnet/minecraft/class_10401;
 		ARG 0 value

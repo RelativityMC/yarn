@@ -1,8 +1,11 @@
 CLASS net/minecraft/class_1097 net/minecraft/client/render/model/WeightedBlockStateModel
 	FIELD field_1_1907 texture Lnet/minecraft/class_1_314$class_1_315;
+	FIELD field_1_2552 flags I
 	FIELD field_5434 models Lnet/minecraft/class_6012;
 	METHOD <init> (Lnet/minecraft/class_6012;)V
 		ARG 1 models
+	METHOD method_1_3068 computeFlags (Lnet/minecraft/class_6012;)I
+		ARG 0 models
 	CLASS class_10898 Unbaked
 		METHOD method_68551 (Lnet/minecraft/class_7775;Lnet/minecraft/class_1087$class_10892;)Lnet/minecraft/class_1087;
 			ARG 1 model

@@ -40,7 +40,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	COMMENT @see net.minecraft.server.integrated.IntegratedServer
 	COMMENT @see net.minecraft.client.render.GameRenderer
 	FIELD field_1_2136 blockModelManager Lnet/minecraft/class_1_394;
-	FIELD field_1_2137 imeStatusChanged Z
 	FIELD field_1_2249 lastWindowFocusTime J
 	FIELD field_1687 world Lnet/minecraft/class_638;
 		COMMENT Represents the world the client is currently viewing.
@@ -192,7 +191,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 0 client
 		ARG 1 runDirectory
 		ARG 2 crashReport
-	METHOD method_1_2568 onImeStatusChange ()V
 	METHOD method_1_2659 updateFocusState ()V
 	METHOD method_1_2660 updateCrosshairTarget (F)V
 		ARG 1 tickProgress

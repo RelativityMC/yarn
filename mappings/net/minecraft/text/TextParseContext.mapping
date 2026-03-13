@@ -3,3 +3,26 @@ CLASS net/minecraft/class_1_466 net/minecraft/text/TextParseContext
 	METHOD comp_1_411 getCommandSource ()Lnet/minecraft/class_2168;
 	METHOD method_1_2945 of (Lnet/minecraft/class_2168;)Lnet/minecraft/class_1_466;
 		ARG 0 commandSource
+	METHOD method_1_3117 builder ()Lnet/minecraft/class_1_466$class_1_491;
+	METHOD method_1_3118 validate (Lnet/minecraft/class_11724;)Lnet/minecraft/class_11724;
+		ARG 1 objectContents
+	CLASS class_1_491 Builder
+		FIELD field_1_2579 defaultScoreboardEntity Lnet/minecraft/class_1297;
+		FIELD field_1_2580 depthLimitBehavior Lnet/minecraft/class_1_466$class_1_492;
+		FIELD field_1_2581 depthLimit I
+		FIELD field_1_2582 objectInfoValidator Ljava/util/function/Predicate;
+		FIELD field_1_2583 source Lnet/minecraft/class_2168;
+		METHOD method_1_3119 build ()Lnet/minecraft/class_1_466;
+		METHOD method_1_3120 (Lnet/minecraft/class_11724;)Z
+			ARG 0 depthLimit
+		METHOD method_1_3121 depthLimit (I)Lnet/minecraft/class_1_466$class_1_491;
+			ARG 1 depthLimit
+		METHOD method_1_3122 depthLimitBehavior (Lnet/minecraft/class_1_466$class_1_492;)Lnet/minecraft/class_1_466$class_1_491;
+			ARG 1 depthLimitBehavior
+		METHOD method_1_3123 defaultScoreboardEntity (Lnet/minecraft/class_1297;)Lnet/minecraft/class_1_466$class_1_491;
+			ARG 1 entity
+		METHOD method_1_3124 objectInfoValidator (Ljava/util/function/Predicate;)Lnet/minecraft/class_1_466$class_1_491;
+			ARG 1 objectInfoValidator
+		METHOD method_1_3125 source (Lnet/minecraft/class_2168;)Lnet/minecraft/class_1_466$class_1_491;
+			ARG 1 source
+	CLASS class_1_492 DepthLimitBehavior

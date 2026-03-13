@@ -41,6 +41,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	COMMENT @see net.minecraft.client.render.GameRenderer
 	FIELD field_1_2136 blockModelManager Lnet/minecraft/class_1_394;
 	FIELD field_1_2249 lastWindowFocusTime J
+	FIELD field_1_2571 imeStatusController Lnet/minecraft/class_1_490;
 	FIELD field_1687 world Lnet/minecraft/class_638;
 		COMMENT Represents the world the client is currently viewing.
 		COMMENT This field is not null when in game.
@@ -194,6 +195,10 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_1_2659 updateFocusState ()V
 	METHOD method_1_2660 updateCrosshairTarget (F)V
 		ARG 1 tickProgress
+	METHOD method_1_3096 startEditingTextWidget (Lnet/minecraft/class_364;Z)V
+		ARG 1 element
+		ARG 2 focused
+	METHOD method_1_3097 getImeStatusController ()Lnet/minecraft/class_1_490;
 	METHOD method_1478 getResourceManager ()Lnet/minecraft/class_3300;
 	METHOD method_1479 getResourcePackDir ()Ljava/nio/file/Path;
 	METHOD method_1481 joinWorld (Lnet/minecraft/class_638;)V

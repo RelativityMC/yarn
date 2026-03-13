@@ -7,6 +7,12 @@ CLASS net/minecraft/class_6012 net/minecraft/util/collection/Pool
 		ARG 1 entries
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
+	METHOD method_1_3102 codecFromWeighted (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
+		ARG 0 weightedCodec
+	METHOD method_1_3103 nonEmptyCodecFromWeighted (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
+		ARG 0 weightedCodec
+	METHOD method_1_3104 (Lnet/minecraft/class_6012;)Lcom/mojang/serialization/DataResult;
+		ARG 0 entry
 	METHOD method_34988 of (Ljava/util/List;)Lnet/minecraft/class_6012;
 		ARG 0 entries
 	METHOD method_34989 of ([Lnet/minecraft/class_6010;)Lnet/minecraft/class_6012;

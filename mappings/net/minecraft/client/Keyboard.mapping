@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_309 net/minecraft/client/Keyboard
+	FIELD field_1_2572 preEditInput Lnet/minecraft/class_1_359;
 	FIELD field_1678 client Lnet/minecraft/class_310;
 	FIELD field_1679 switchF3State Z
 	FIELD field_1680 debugCrashElapsedTime J
@@ -22,6 +23,11 @@ CLASS net/minecraft/class_309 net/minecraft/client/Keyboard
 		ARG 3 preEdit
 	METHOD method_1_2579 (J)V
 		ARG 1 window
+	METHOD method_1_3100 handleCurrentPreEdit (Lnet/minecraft/class_364;)V
+		ARG 1 element
+	METHOD method_1_3101 onImePreEdit (Lnet/minecraft/class_364;Lnet/minecraft/class_1_359;)V
+		ARG 0 element
+		ARG 1 preEdit
 	METHOD method_1455 setClipboard (Ljava/lang/String;)V
 		ARG 1 clipboard
 	METHOD method_1456 debugError (Lnet/minecraft/class_2561;)V

@@ -122,6 +122,9 @@ CLASS net/minecraft/class_1_417 net/minecraft/client/render/block/model/CustomBl
 		ARG 0 property1
 		ARG 1 property2
 		ARG 2 factory
+	METHOD method_1_3033 addAirModel (Lnet/minecraft/class_1_417$class_1_418;Lnet/minecraft/class_2248;)V
+		ARG 0 builder
+		ARG 1 block
 	CLASS class_1_418 Builder
 		FIELD field_1_2322 blockColors Lnet/minecraft/class_324;
 		FIELD field_1_2323 unbakedModels Ljava/util/Map;

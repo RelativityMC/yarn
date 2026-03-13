@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_3572 net/minecraft/world/chunk/light/ChunkSkyLightProvider
+	FIELD field_44746 tempPos Lnet/minecraft/class_2338$class_2339;
 	FIELD field_44747 defaultSkyLight Lnet/minecraft/class_8528;
 	METHOD <init> (Lnet/minecraft/class_2823;)V
 		ARG 1 chunkProvider
@@ -14,10 +15,14 @@ CLASS net/minecraft/class_3572 net/minecraft/world/chunk/light/ChunkSkyLightProv
 	METHOD method_51586 (IIII)V
 		ARG 1 x
 		ARG 2 z
+		ARG 3 skyLightY
+		ARG 4 minY
 	METHOD method_51587 (JLnet/minecraft/class_2350;IZI)V
 		ARG 1 blockPos
 		ARG 3 direction
 		ARG 4 lightLevel
+		ARG 5 increase
+		ARG 6 numSectionsBelow
 	METHOD method_51588 exitsChunkXZ (Lnet/minecraft/class_2350;II)Z
 		ARG 0 direction
 		ARG 1 localX
@@ -25,8 +30,14 @@ CLASS net/minecraft/class_3572 net/minecraft/world/chunk/light/ChunkSkyLightProv
 	METHOD method_51589 getSkyLight (II)Lnet/minecraft/class_8528;
 		ARG 1 chunkX
 		ARG 2 chunkZ
+	METHOD method_51590 (III)V
+		ARG 1 x
+		ARG 2 z
+		ARG 3 skyLightY
 	METHOD method_51591 (IIII)V
 		ARG 1 x
 		ARG 2 z
+		ARG 3 skyLightY
+		ARG 4 minY
 	METHOD method_51592 getNumberOfSectionsBelowPos (J)I
 		ARG 1 blockPos

@@ -4,7 +4,10 @@ CLASS net/minecraft/class_3558 net/minecraft/world/chunk/light/ChunkLightProvide
 	FIELD field_16513 DIRECTIONS [Lnet/minecraft/class_2350;
 	FIELD field_17397 cachedChunkPositions [J
 	FIELD field_17398 cachedChunks [Lnet/minecraft/class_8527;
+	FIELD field_31709 CHUNK_CACHE_SIZE I
 	FIELD field_44733 blockPositionsToCheck Lit/unimi/dsi/fastutil/longs/LongOpenHashSet;
+	FIELD field_44734 queuedLightDecreases Lit/unimi/dsi/fastutil/longs/LongArrayFIFOQueue;
+	FIELD field_44735 queuedLightIncreases Lit/unimi/dsi/fastutil/longs/LongArrayFIFOQueue;
 	METHOD <init> (Lnet/minecraft/class_2823;Lnet/minecraft/class_3560;)V
 		ARG 1 chunkProvider
 		ARG 2 lightStorage
@@ -56,18 +59,21 @@ CLASS net/minecraft/class_3558 net/minecraft/world/chunk/light/ChunkLightProvide
 	METHOD method_51566 queueLightIncrease (JJ)V
 		ARG 1 blockPos
 		ARG 3 flags
+	METHOD method_51567 processLightIncreases ()I
 	METHOD method_51568 getStatus (J)Lnet/minecraft/class_3560$class_8530;
 		ARG 1 sectionPos
+	METHOD method_51570 processLightDecreases ()I
 	CLASS class_8531 PackedInfo
-		COMMENT Methods for manipulating a set of bitflags with yet unknown functionality.
+		COMMENT Methods for manipulating a set of bitflags pertaining to light updates.
 		COMMENT
 		COMMENT <ul>
-		COMMENT <li>Bits 0 – 3 stores the light level.</li>
-		COMMENT <li>Bits 4 – 9 store a flag for each of the six directions.</li>
+		COMMENT <li>Bits 0 – 3 store the light level.</li>
+		COMMENT <li>Bits 4 – 9 store flags indicating whether a light update should propagate in each direction.</li>
 		COMMENT <li>Bit 10 stores whether the block at this position is trivial for lighting — if its opacity is not directionally dependent.</li>
 		COMMENT <li>Bit 11 stores a flag for forcibly setting the light level.</li>
 		COMMENT </ul>
 		FIELD field_44737 DIRECTION_BIT_OFFSET I
+		FIELD field_44738 DIRECTION_COUNT I
 		FIELD field_44739 LIGHT_LEVEL_MASK J
 		FIELD field_44740 DIRECTION_BIT_MASK J
 		FIELD field_44741 TRIVIAL_FLAG J

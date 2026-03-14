@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_2708 net/minecraft/network/packet/s2c/play/PlayerPositionLookS2CPacket
+CLASS net/minecraft/class_2708 net/minecraft/network/packet/s2c/play/PlayerPositionS2CPacket
 	FIELD comp_3133 teleportId I
 	FIELD field_47957 CODEC Lnet/minecraft/class_9139;
 	METHOD comp_3133 teleportId ()I

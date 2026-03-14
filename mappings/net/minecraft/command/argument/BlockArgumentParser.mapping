@@ -81,6 +81,9 @@ CLASS net/minecraft/class_2259 net/minecraft/command/argument/BlockArgumentParse
 		ARG 1 builder
 	METHOD method_9685 stringifyBlockState (Lnet/minecraft/class_2680;)Ljava/lang/String;
 		ARG 0 state
+	METHOD method_9686 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 block
+		ARG 1 property
 	METHOD method_9687 suggestSnbt (Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 builder
 	METHOD method_9689 suggestCommaOrEnd (Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
@@ -115,5 +118,9 @@ CLASS net/minecraft/class_2259 net/minecraft/command/argument/BlockArgumentParse
 		ARG 2 allowSnbt
 	METHOD method_41963 suggestBlockId (Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 builder
+	CLASS 1 1
+		FIELD field_1_2533 subsequent Z
+		METHOD accept (Ljava/lang/Object;)V
+			ARG 1 value
 	CLASS class_7211 BlockResult
 	CLASS class_7212 TagResult

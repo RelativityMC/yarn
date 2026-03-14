@@ -1,6 +1,14 @@
 CLASS com/mojang/blaze3d/platform/GLX
+	METHOD _getRefreshRate (Lnet/minecraft/class_1041;)I
+		ARG 0 window
+	METHOD _initGlfw (Lnet/minecraft/class_1_489;)Ljava/util/function/LongSupplier;
+		ARG 0 settings
 	METHOD _setGlfwErrorCallback (Lorg/lwjgl/glfw/GLFWErrorCallbackI;)V
 		ARG 0 callback
+	METHOD _shouldClose (Lnet/minecraft/class_1041;)Z
+		ARG 0 window
+	METHOD glfwBool (Z)I
+		ARG 0 bool
 	METHOD lambda$_initGlfw$0 (Ljava/lang/Integer;Ljava/lang/String;)V
 		ARG 0 code
 		ARG 1 message

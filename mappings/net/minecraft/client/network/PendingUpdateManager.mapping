@@ -1,7 +1,9 @@
 CLASS net/minecraft/class_7202 net/minecraft/client/network/PendingUpdateManager
+	FIELD field_1_2590 sequenceAtLastTeleport I
 	FIELD field_37953 blockPosToPendingUpdate Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;
 	FIELD field_37954 sequence I
 	FIELD field_37955 pendingSequence Z
+	METHOD method_1_3134 onTeleport ()V
 	METHOD method_41937 incrementSequence ()Lnet/minecraft/class_7202;
 	METHOD method_41938 processPendingUpdates (ILnet/minecraft/class_638;)V
 		ARG 1 maxProcessableSequence

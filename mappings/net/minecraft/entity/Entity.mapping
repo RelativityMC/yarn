@@ -243,6 +243,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 1 passengerBox
 	METHOD method_1_2570 getRandomYAroundFeet (D)D
 		ARG 1 heightScale
+	METHOD method_1_3098 tickCurrentlyCheckedCollisions ()V
 	METHOD method_5622 onBlockCollision (Lnet/minecraft/class_2680;)V
 		COMMENT Called when this entity's collision box intersects {@code state}.
 		COMMENT

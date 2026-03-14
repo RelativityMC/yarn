@@ -1,5 +1,9 @@
 CLASS net/minecraft/class_341 net/minecraft/client/util/ChatMessages
 	FIELD field_25263 SPACES Lnet/minecraft/class_5481;
+	METHOD method_1_3133 truncate (Lnet/minecraft/class_2561;Lnet/minecraft/class_327;I)Lnet/minecraft/class_5481;
+		ARG 0 text
+		ARG 1 textRenderer
+		ARG 2 width
 	METHOD method_1849 getRenderedChatMessage (Ljava/lang/String;)Ljava/lang/String;
 		ARG 0 message
 	METHOD method_1850 breakRenderedChatMessageLines (Lnet/minecraft/class_5348;ILnet/minecraft/class_327;)Ljava/util/List;

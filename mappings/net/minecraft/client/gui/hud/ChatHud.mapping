@@ -6,6 +6,7 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 	FIELD field_1_1852 GO_TO_RESTRICTIONS_SCREEN_ID Lnet/minecraft/class_2960;
 	FIELD field_1_1853 RESTRICTED_TEXT Lnet/minecraft/class_2561;
 	FIELD field_1_1854 messageAllowedPredicate Ljava/util/function/Predicate;
+	FIELD field_1_2588 RESTRICTED_TEXT_WITH_TOOLTIP Lnet/minecraft/class_2561;
 	FIELD field_2061 messages Ljava/util/List;
 	FIELD field_2062 client Lnet/minecraft/class_310;
 	FIELD field_2063 messageHistory Lnet/minecraft/class_8623;

@@ -5,6 +5,7 @@ CLASS net/minecraft/class_10000 net/minecraft/client/render/entity/state/Axolotl
 	FIELD field_1_1366 swimState Lnet/minecraft/class_7094;
 	FIELD field_1_1367 walkState Lnet/minecraft/class_7094;
 	FIELD field_1_1368 moveState Lnet/minecraft/class_7094;
+	FIELD field_1_1638 playingDeadState Lnet/minecraft/class_7094;
 	FIELD field_53260 variant Lnet/minecraft/class_5762$class_5767;
 	FIELD field_53261 playingDeadValue F
 	FIELD field_53262 isMovingValue F

@@ -53,17 +53,20 @@ CLASS net/minecraft/class_5772 net/minecraft/client/render/entity/model/AdultAxo
 		COMMENT Represents the pitch value {@value} used for the legs of the axolotl when it is moving in water.
 	METHOD method_33291 setStandingOnGroundAngles (FF)V
 		ARG 1 animationProgress
-		ARG 2 headYaw
+		ARG 2 onGroundStationaryValue
 	METHOD method_33294 setMovingOnGroundAngles (FF)V
 		ARG 1 animationProgress
-		ARG 2 headYaw
+		ARG 2 onGroundMovingValue
 	METHOD method_33295 setMovingInWaterAngles (FFF)V
 		ARG 1 age
 		ARG 2 headPitch
+		ARG 3 inWaterMovingValue
 	METHOD method_33296 getTexturedModelData ()Lnet/minecraft/class_5607;
 	METHOD method_33297 setStandingInWaterAngles (FF)V
 		ARG 1 age
+		ARG 2 inWaterStationaryValue
 	METHOD method_33298 setPlayingDeadAngles (F)V
 		ARG 1 headYaw
 	METHOD method_33299 copyLegAngles (F)V
 		COMMENT Copies and mirrors the left leg angles to the right leg angles.
+		ARG 1 offset

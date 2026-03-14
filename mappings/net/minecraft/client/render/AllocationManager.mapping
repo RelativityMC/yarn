@@ -6,8 +6,13 @@ CLASS net/minecraft/class_1_291 net/minecraft/client/render/AllocationManager
 	COMMENT which can be used to index some other piece of memory held by the caller.
 	COMMENT In addition, the total amount of memory that an instance of this class can
 	COMMENT ‘allocate’ at once is fixed upon instantiation.
+	FIELD field_1_1738 ALLOCATION_ALIGNMENT I
+	FIELD field_1_1739 FIRST_LEVEL_INDEX_COUNT I
+	FIELD field_1_1740 SECOND_LEVEL_INDEX_COUNT I
 	FIELD field_1_1741 LOGGER Lorg/slf4j/Logger;
 	FIELD field_1_1742 MAX_ALLOCATION_SIZE J
+	FIELD field_1_1744 SECOND_LEVEL_INDEX_BITS I
+	FIELD field_1_1745 FIRST_LEVEL_INITIAL_SIZE_THRESHOLD I
 	FIELD field_1_1746 firstLevelAvailability I
 		COMMENT Bit {@code i} is set if there is any free block for the primary index {@code i}.
 	FIELD field_1_1747 freeHeadsByIndices [Lnet/minecraft/class_1_291$class_1_293;

@@ -5,3 +5,4 @@ CLASS net/minecraft/class_1_185 net/minecraft/client/render/entity/animation/Bab
 	FIELD field_1_1373 IDLE_ON_GROUND Lnet/minecraft/class_7184;
 	FIELD field_1_1374 IDLE_IN_WATER Lnet/minecraft/class_7184;
 	FIELD field_1_1375 WALK Lnet/minecraft/class_7184;
+	FIELD field_1_1643 PLAY_DEAD Lnet/minecraft/class_7184;

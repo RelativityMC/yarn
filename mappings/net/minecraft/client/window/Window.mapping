@@ -53,6 +53,8 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	METHOD method_1_2664 changedSize ()Z
 	METHOD method_1_2665 clearChangedSizeStatus ()V
 	METHOD method_1_2666 updateFullscreenIfNeeded ()V
+	METHOD method_1_3099 clampToPositive (I)I
+		ARG 0 x
 	METHOD method_4474 setPhase (Ljava/lang/String;)V
 		ARG 1 phase
 	METHOD method_4475 applyFullscreenVideoMode ()V

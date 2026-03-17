@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_6017 net/minecraft/util/math/intprovider/IntProvider
-	METHOD comp_1_348 getMax ()I
-	METHOD comp_1_349 getMin ()I
+	METHOD comp_1_345 getMax ()I
+	METHOD comp_1_346 getMin ()I
 	METHOD method_1_2957 getCodec ()Lcom/mojang/serialization/MapCodec;
 	METHOD method_35008 get (Lnet/minecraft/class_5819;)I
 		ARG 1 random

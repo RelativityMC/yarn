@@ -28,6 +28,7 @@ CLASS net/minecraft/class_1642 net/minecraft/entity/mob/ZombieEntity
 		ARG 1 canBreakDoors
 	METHOD method_7205 applyAttributeModifiers (FLnet/minecraft/class_3730;)V
 		ARG 1 chanceMultiplier
+		ARG 2 spawnReason
 	METHOD method_7206 isConvertingInWater ()Z
 	METHOD method_7207 getStepSound ()Lnet/minecraft/class_3414;
 	METHOD method_7208 initCustomGoals ()V

@@ -48,7 +48,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_1689 framebuffer Lnet/minecraft/class_276;
 	FIELD field_1690 options Lnet/minecraft/class_315;
 	FIELD field_1692 targetedEntity Lnet/minecraft/class_1297;
-	FIELD field_1695 windowFocused Z
 	FIELD field_1696 thread Ljava/lang/Thread;
 	FIELD field_1697 runDirectory Ljava/io/File;
 		COMMENT The directory that stores options, worlds, resource packs, logs, etc.

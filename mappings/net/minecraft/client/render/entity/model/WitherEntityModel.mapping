@@ -43,6 +43,7 @@ CLASS net/minecraft/class_621 net/minecraft/client/render/entity/model/WitherEnt
 	FIELD field_32575 RIBCAGE_PITCH_OFFSET F
 	FIELD field_32576 TAIL_PITCH_OFFSET F
 	METHOD method_32066 rotateHead (Lnet/minecraft/class_10083;Lnet/minecraft/class_630;I)V
+		ARG 0 state
 		ARG 1 head
 		ARG 2 sigma
 	METHOD method_32067 getTexturedModelData (Lnet/minecraft/class_5605;)Lnet/minecraft/class_5607;

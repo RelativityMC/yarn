@@ -1,1 +1,5 @@
 CLASS net/minecraft/class_1_80 net/minecraft/client/render/entity/model/ChickenEntityModel
+	FIELD field_1_890 leftLeg Lnet/minecraft/class_630;
+	FIELD field_1_891 leftWing Lnet/minecraft/class_630;
+	FIELD field_1_892 rightLeg Lnet/minecraft/class_630;
+	FIELD field_1_893 rightWing Lnet/minecraft/class_630;

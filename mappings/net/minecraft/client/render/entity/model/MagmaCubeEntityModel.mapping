@@ -4,3 +4,5 @@ CLASS net/minecraft/class_576 net/minecraft/client/render/entity/model/MagmaCube
 	METHOD method_32014 getTexturedModelData ()Lnet/minecraft/class_5607;
 	METHOD method_32015 getSliceName (I)Ljava/lang/String;
 		ARG 0 index
+	METHOD method_63511 (Lnet/minecraft/class_630;I)Lnet/minecraft/class_630;
+		ARG 1 index

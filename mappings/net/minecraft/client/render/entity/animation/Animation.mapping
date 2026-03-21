@@ -8,6 +8,8 @@ CLASS net/minecraft/class_11509 net/minecraft/client/render/entity/animation/Ani
 	METHOD method_71981 applyWalking (FFFF)V
 		ARG 1 limbSwingAnimationProgress
 		ARG 2 limbSwingAmplitude
+		ARG 3 frequency
+		ARG 4 scale
 	METHOD method_71982 (FFLnet/minecraft/class_7094;)V
 		ARG 3 state
 	METHOD method_71983 getRunningSeconds (J)F

@@ -38,3 +38,5 @@ CLASS net/minecraft/class_617 net/minecraft/client/render/entity/model/VexEntity
 		ARG 1 matrices
 		ARG 2 mainHand
 	METHOD method_48293 setChargingArmAngles (ZZF)V
+		ARG 1 hasItemInRightHand
+		ARG 2 hasItemInLeftHand

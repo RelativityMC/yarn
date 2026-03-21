@@ -9,3 +9,7 @@ CLASS net/minecraft/class_604 net/minecraft/client/render/entity/model/Silverfis
 		ARG 0 index
 	METHOD method_32045 getSegmentName (I)Ljava/lang/String;
 		ARG 0 index
+	METHOD method_63515 (Lnet/minecraft/class_630;I)Lnet/minecraft/class_630;
+		ARG 1 index
+	METHOD method_63516 (Lnet/minecraft/class_630;I)Lnet/minecraft/class_630;
+		ARG 1 index

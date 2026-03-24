@@ -1,11 +1,35 @@
 CLASS net/minecraft/class_8060 net/minecraft/recipe/SmithingTransformRecipe
 	FIELD field_1_1350 SERIALIZER Lnet/minecraft/class_1_157;
+	FIELD field_1_1351 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_42030 template Ljava/util/Optional;
 	FIELD field_42031 base Lnet/minecraft/class_1856;
 	FIELD field_42032 addition Ljava/util/Optional;
 	FIELD field_42033 result Lnet/minecraft/class_1_107;
 	METHOD <init> (Lnet/minecraft/class_1860$class_1_145;Ljava/util/Optional;Lnet/minecraft/class_1856;Ljava/util/Optional;Lnet/minecraft/class_1_107;)V
+		ARG 1 settings
 		ARG 2 template
 		ARG 3 base
 		ARG 4 addition
 		ARG 5 result
+	METHOD method_1_1609 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_1610 (Lnet/minecraft/class_8060;)Lnet/minecraft/class_1860$class_1_145;
+		ARG 0 recipe
+	METHOD method_1_1611 (Lnet/minecraft/class_8060;)Lnet/minecraft/class_1_107;
+		ARG 0 recipe
+	METHOD method_1_1612 (Lnet/minecraft/class_8060;)Ljava/util/Optional;
+		ARG 0 recipe
+	METHOD method_1_1613 (Lnet/minecraft/class_8060;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1614 (Lnet/minecraft/class_8060;)Ljava/util/Optional;
+		ARG 0 recipe
+	METHOD method_1_1615 (Lnet/minecraft/class_8060;)Lnet/minecraft/class_1_107;
+		ARG 0 recipe
+	METHOD method_1_1616 (Lnet/minecraft/class_8060;)Lnet/minecraft/class_1860$class_1_145;
+		ARG 0 recipe
+	METHOD method_1_1617 (Lnet/minecraft/class_8060;)Ljava/util/Optional;
+		ARG 0 recipe
+	METHOD method_1_1618 (Lnet/minecraft/class_8060;)Lnet/minecraft/class_1856;
+		ARG 0 recipe
+	METHOD method_1_1619 (Lnet/minecraft/class_8060;)Ljava/util/Optional;
+		ARG 0 recipe

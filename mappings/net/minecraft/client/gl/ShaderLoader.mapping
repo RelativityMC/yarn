@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_10151 net/minecraft/client/gl/ShaderLoader
+	FIELD field_1_1822 projectionMatrix Lnet/minecraft/class_11279;
 	FIELD field_53934 SHADERS_PATH Ljava/lang/String;
 	FIELD field_53935 INCLUDE_PATH Ljava/lang/String;
 	FIELD field_53937 LOGGER Lorg/slf4j/Logger;
@@ -6,7 +7,7 @@ CLASS net/minecraft/class_10151 net/minecraft/client/gl/ShaderLoader
 	FIELD field_53940 textureManager Lnet/minecraft/class_1060;
 	FIELD field_54019 onError Ljava/util/function/Consumer;
 	FIELD field_54020 cache Lnet/minecraft/class_10151$class_10170;
-	FIELD field_60129 projectionMatrix Lnet/minecraft/class_11278;
+	FIELD field_60129 projectionBuffer Lnet/minecraft/class_11278;
 	METHOD <init> (Lnet/minecraft/class_1060;Ljava/util/function/Consumer;)V
 		ARG 1 textureManager
 		ARG 2 onError
@@ -40,6 +41,8 @@ CLASS net/minecraft/class_10151 net/minecraft/client/gl/ShaderLoader
 		METHOD method_62957 (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 			ARG 1 path
 	CLASS class_10152 LoadException
+		METHOD <init> (Ljava/lang/String;)V
+			ARG 1 message
 	CLASS class_10153 Definitions
 		FIELD field_53948 EMPTY Lnet/minecraft/class_10151$class_10153;
 	CLASS class_10155 ShaderSourceKey

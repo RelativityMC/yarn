@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_925 net/minecraft/client/render/entity/AbstractMinecartEntityRenderer
 	FIELD field_1_2238 blockModelManager Lnet/minecraft/class_1_394;
+	FIELD field_1_2396 ID Lnet/minecraft/class_1_436;
 	FIELD field_4746 TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_4747 model Lnet/minecraft/class_580;
 	FIELD field_56953 BLOCK_SCALE F

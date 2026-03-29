@@ -1,2 +1,3 @@
 CLASS net/minecraft/class_956 net/minecraft/client/render/entity/TntEntityRenderer
 	FIELD field_1_2179 blockModelManager Lnet/minecraft/class_1_394;
+	FIELD field_1_2284 ID Lnet/minecraft/class_1_436;

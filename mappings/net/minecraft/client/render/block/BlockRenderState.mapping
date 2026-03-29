@@ -14,7 +14,7 @@ CLASS net/minecraft/class_1_395 net/minecraft/client/render/block/BlockRenderSta
 		ARG 2 queue
 		ARG 3 lightCoords
 		ARG 4 overlayCoords
-		ARG 5 light
+		ARG 5 outlineColor
 	METHOD method_1_2640 renderOutlineNoCull (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;III)V
 		ARG 1 matrices
 		ARG 2 queue

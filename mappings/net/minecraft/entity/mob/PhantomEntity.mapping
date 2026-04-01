@@ -9,9 +9,8 @@ CLASS net/minecraft/class_1593 net/minecraft/entity/mob/PhantomEntity
 		ARG 1 size
 	METHOD method_7097 onSizeChanged ()V
 	METHOD method_33588 getWingFlapTickOffset ()I
-	METHOD method_64463 testTargetPredicate (Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;Lnet/minecraft/class_4051;)Z
+	METHOD method_64463 testTargetPredicate (Lnet/minecraft/class_3218;Lnet/minecraft/class_1297;Lnet/minecraft/class_4051;)Z
 		ARG 1 world
-		ARG 2 target
 		ARG 3 predicate
 	CLASS class_1594 PhantomMovementType
 	CLASS class_1595 FindTargetGoal

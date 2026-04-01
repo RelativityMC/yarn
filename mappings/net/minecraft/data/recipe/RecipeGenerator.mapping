@@ -6,7 +6,6 @@ CLASS net/minecraft/class_2446 net/minecraft/data/recipe/RecipeGenerator
 	FIELD field_53722 itemLookup Lnet/minecraft/class_7871;
 	METHOD <init> (Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_8790;)V
 		ARG 1 registries
-		ARG 2 exporter
 	METHOD method_1_898 getBricksRecipe (Lnet/minecraft/class_7800;Lnet/minecraft/class_1935;Lnet/minecraft/class_1856;)Lnet/minecraft/class_5797;
 		ARG 1 category
 		ARG 2 output
@@ -39,7 +38,6 @@ CLASS net/minecraft/class_2446 net/minecraft/data/recipe/RecipeGenerator
 		ARG 1 category
 		ARG 2 output
 		ARG 3 input
-	METHOD method_1_1264 requireBreedingAnimals ()Lnet/minecraft/class_175;
 	METHOD method_1_1265 offerBundleDyeingRecipe (Lnet/minecraft/class_1792;Lnet/minecraft/class_1792;)V
 		ARG 1 dye
 		ARG 2 result
@@ -93,14 +91,8 @@ CLASS net/minecraft/class_2446 net/minecraft/data/recipe/RecipeGenerator
 		ARG 1 output
 		ARG 2 input
 	METHOD method_10419 generate ()V
-	METHOD method_10420 conditionsFromTag (Lnet/minecraft/class_6862;)Lnet/minecraft/class_175;
-		ARG 1 tag
 	METHOD method_10422 requireEnteringFluid (Lnet/minecraft/class_2248;)Lnet/minecraft/class_175;
 		ARG 0 block
-	METHOD method_10423 conditionsFromItemPredicates ([Lnet/minecraft/class_2073;)Lnet/minecraft/class_175;
-		ARG 0 predicates
-	METHOD method_10426 conditionsFromItem (Lnet/minecraft/class_1935;)Lnet/minecraft/class_175;
-		ARG 1 item
 	METHOD method_17585 generateCookingRecipes (Ljava/lang/String;Lnet/minecraft/class_1874$class_3958;I)V
 		ARG 1 cooker
 		ARG 2 recipeFactory
@@ -250,9 +242,6 @@ CLASS net/minecraft/class_2446 net/minecraft/data/recipe/RecipeGenerator
 		ARG 2 input
 	METHOD method_34854 offerWaxingRecipes (Lnet/minecraft/class_7699;)V
 		ARG 1 enabledFeatures
-	METHOD method_35914 conditionsFromItem (Lnet/minecraft/class_2096$class_2100;Lnet/minecraft/class_1935;)Lnet/minecraft/class_175;
-		ARG 1 count
-		ARG 2 item
 	METHOD method_36232 offerMultipleOptions (Lnet/minecraft/class_1874$class_3958;Ljava/util/List;Lnet/minecraft/class_7800;Lnet/minecraft/class_7709;Lnet/minecraft/class_1935;FILjava/lang/String;Ljava/lang/String;)V
 		ARG 1 recipeFactory
 		ARG 2 inputs
@@ -362,8 +351,6 @@ CLASS net/minecraft/class_2446 net/minecraft/data/recipe/RecipeGenerator
 		ARG 2 dyeables
 		ARG 3 group
 		ARG 4 category
-	METHOD method_53499 conditionsFromPredicates ([Lnet/minecraft/class_2073$class_2074;)Lnet/minecraft/class_175;
-		ARG 0 predicates
 	METHOD method_54829 offerGrateRecipe (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
 		ARG 1 output
 		ARG 2 input

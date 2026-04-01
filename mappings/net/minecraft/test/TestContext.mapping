@@ -17,9 +17,6 @@ CLASS net/minecraft/class_4516 net/minecraft/test/TestContext
 	METHOD method_1_2262 expectEntityAt (Lnet/minecraft/class_1297;Lnet/minecraft/class_2338;)V
 		ARG 1 entity
 		ARG 2 blockPos
-	METHOD method_1_2263 removeItemsNear (Lnet/minecraft/class_2338;D)V
-		ARG 1 blockPos
-		ARG 2 range
 	METHOD method_1_2264 discardEntity (Lnet/minecraft/class_1297;)V
 		ARG 1 entity
 	METHOD method_1_2265 setEntityPos (Lnet/minecraft/class_1308;Lnet/minecraft/class_2338;)V
@@ -122,20 +119,6 @@ CLASS net/minecraft/class_4516 net/minecraft/test/TestContext
 		ARG 1 entity
 		ARG 2 pos
 		ARG 3 speed
-	METHOD method_35968 spawnItem (Lnet/minecraft/class_1792;FFF)Lnet/minecraft/class_1542;
-		ARG 1 item
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z
-	METHOD method_35969 expectItemAt (Lnet/minecraft/class_1792;Lnet/minecraft/class_2338;D)V
-		ARG 1 item
-		ARG 2 pos
-		ARG 3 radius
-	METHOD method_35970 expectItemsAt (Lnet/minecraft/class_1792;Lnet/minecraft/class_2338;DI)V
-		ARG 1 item
-		ARG 2 pos
-		ARG 3 radius
-		ARG 5 amount
 	METHOD method_35971 expectBlock (Lnet/minecraft/class_2248;III)V
 		ARG 1 block
 		ARG 2 x
@@ -267,8 +250,6 @@ CLASS net/minecraft/class_4516 net/minecraft/test/TestContext
 		ARG 1 runnable
 	METHOD method_36019 (Ljava/lang/Runnable;J)V
 		ARG 2 tick
-	METHOD method_36021 createMockPlayer (Lnet/minecraft/class_1934;)Lnet/minecraft/class_1657;
-		ARG 1 gameMode
 	METHOD method_36022 expectEntityAt (Lnet/minecraft/class_1299;III)V
 		ARG 1 type
 		ARG 2 x
@@ -342,10 +323,6 @@ CLASS net/minecraft/class_4516 net/minecraft/test/TestContext
 		ARG 1 heightmap
 		ARG 2 x
 		ARG 3 z
-	METHOD method_42762 dontExpectItemAt (Lnet/minecraft/class_1792;Lnet/minecraft/class_2338;D)V
-		ARG 1 item
-		ARG 2 pos
-		ARG 3 radius
 	METHOD method_44335 getEntitiesAround (Lnet/minecraft/class_1299;Lnet/minecraft/class_2338;D)Ljava/util/List;
 		ARG 1 type
 		ARG 2 pos
@@ -358,9 +335,6 @@ CLASS net/minecraft/class_4516 net/minecraft/test/TestContext
 	METHOD method_46224 expectEntityInside (Lnet/minecraft/class_1299;Lnet/minecraft/class_238;)V
 		ARG 1 type
 		ARG 2 box
-	METHOD method_46225 spawnItem (Lnet/minecraft/class_1792;Lnet/minecraft/class_2338;)Lnet/minecraft/class_1542;
-		ARG 1 item
-		ARG 2 pos
 	METHOD method_46226 assertTrue (ZLnet/minecraft/class_2561;)V
 		ARG 1 condition
 		ARG 2 message
@@ -406,10 +380,6 @@ CLASS net/minecraft/class_4516 net/minecraft/test/TestContext
 		ARG 1 entity
 		ARG 2 effect
 		ARG 3 amplifier
-	METHOD method_54143 expectItem (Lnet/minecraft/class_1792;)V
-		ARG 1 item
-	METHOD method_54144 dontExpectItem (Lnet/minecraft/class_1792;)V
-		ARG 1 item
 	METHOD method_55323 expectEntities (Lnet/minecraft/class_1299;I)V
 		ARG 1 type
 		ARG 2 amount
@@ -452,9 +422,6 @@ CLASS net/minecraft/class_4516 net/minecraft/test/TestContext
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_57100 spawnItem (Lnet/minecraft/class_1792;Lnet/minecraft/class_243;)Lnet/minecraft/class_1542;
-		ARG 1 item
-		ARG 2 pos
 	METHOD method_59872 dontExpectEntityBetween (Lnet/minecraft/class_1299;Lnet/minecraft/class_238;)V
 		ARG 1 type
 		ARG 2 box
@@ -538,14 +505,6 @@ CLASS net/minecraft/class_4516 net/minecraft/test/TestContext
 		ARG 2 block
 		ARG 3 facing
 	METHOD method_73074 getDirection ()Lnet/minecraft/class_2350;
-	METHOD method_74443 (Lnet/minecraft/class_1792;Lnet/minecraft/class_1542;)Z
-		ARG 1 entity
-	METHOD method_74444 (Lnet/minecraft/class_1792;Lnet/minecraft/class_1542;)Z
-		ARG 1 entity
-	METHOD method_74445 (Lnet/minecraft/class_1792;Lnet/minecraft/class_1542;)Z
-		ARG 1 entity
-	METHOD method_74446 (Lnet/minecraft/class_1792;Lnet/minecraft/class_1542;)Z
-		ARG 1 entity
 	METHOD method_75527 spawnEntity (Lnet/minecraft/class_1299;IIILnet/minecraft/class_3730;)Lnet/minecraft/class_1308;
 		ARG 1 type
 		ARG 2 x

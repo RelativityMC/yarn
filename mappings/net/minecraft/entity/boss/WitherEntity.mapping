@@ -17,8 +17,7 @@ CLASS net/minecraft/class_1528 net/minecraft/entity/boss/WitherEntity
 	FIELD field_30441 ON_SUMMONED_INVUL_TIMER I
 	FIELD field_57643 DEFAULT_INVUL_TIMER I
 	METHOD method_6872 isArmored ()Z
-	METHOD method_6873 (Lnet/minecraft/class_1309;Lnet/minecraft/class_3218;)Z
-		ARG 0 entity
+	METHOD method_6873 (Lnet/minecraft/class_1297;Lnet/minecraft/class_3218;)Z
 		ARG 1 world
 	METHOD method_6874 getHeadX (I)D
 		ARG 1 headIndex
@@ -33,9 +32,8 @@ CLASS net/minecraft/class_1528 net/minecraft/entity/boss/WitherEntity
 		ARG 4 targetY
 		ARG 6 targetZ
 		ARG 8 charged
-	METHOD method_6878 shootSkullAt (ILnet/minecraft/class_1309;)V
+	METHOD method_6878 shootSkullAt (ILnet/minecraft/class_1297;)V
 		ARG 1 headIndex
-		ARG 2 target
 	METHOD method_6880 getHeadY (I)D
 		ARG 1 headIndex
 	METHOD method_6881 getHeadZ (I)D

@@ -8,8 +8,7 @@ CLASS net/minecraft/class_1454 net/minecraft/entity/passive/PufferfishEntity
 	FIELD field_30355 FULLY_PUFFED I
 	FIELD field_33692 BLOW_UP_TARGET_PREDICATE Lnet/minecraft/class_4051;
 	FIELD field_57615 DEFAULT_PUFF_STATE I
-	METHOD method_6591 (Lnet/minecraft/class_1309;Lnet/minecraft/class_3218;)Z
-		ARG 0 entity
+	METHOD method_6591 (Lnet/minecraft/class_1297;Lnet/minecraft/class_3218;)Z
 		ARG 1 world
 	METHOD method_6592 getScaleForPuffState (I)F
 		ARG 0 puffState

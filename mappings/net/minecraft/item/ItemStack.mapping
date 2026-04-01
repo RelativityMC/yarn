@@ -110,9 +110,8 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 		COMMENT @see #isDamageable
 		COMMENT @see #isDamaged
 		COMMENT @see #setDamage
-	METHOD method_7920 useOnEntity (Lnet/minecraft/class_1657;Lnet/minecraft/class_1309;Lnet/minecraft/class_1268;)Lnet/minecraft/class_1269;
+	METHOD method_7920 useOnEntity (Lnet/minecraft/class_1657;Lnet/minecraft/class_1_500;Lnet/minecraft/class_1268;)Lnet/minecraft/class_1269;
 		ARG 1 user
-		ARG 2 entity
 		ARG 3 hand
 	METHOD method_7923 isEnchantable ()Z
 		COMMENT {@return whether this item stack can be enchanted with an enchanting table}
@@ -332,8 +331,6 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 	METHOD method_31580 getItemBarColor ()I
 		COMMENT {@return the color of the filled section of the durability bar}
 	METHOD method_32347 getTooltipData ()Ljava/util/Optional;
-	METHOD method_33262 onItemEntityDestroyed (Lnet/minecraft/class_1542;)V
-		ARG 1 entity
 	METHOD method_41407 itemMatches (Ljava/util/function/Predicate;)Z
 		COMMENT {@return whether the item's registry entry passes the {@code predicate}}
 		COMMENT

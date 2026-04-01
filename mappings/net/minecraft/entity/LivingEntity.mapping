@@ -125,7 +125,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_6000 enterCombat ()V
 	METHOD method_6002 getDeathSound ()Lnet/minecraft/class_3414;
 	METHOD method_6003 getGlidingTicks ()I
-	METHOD method_6005 takeKnockback (DDD)V
+	METHOD method_6005 (DDD)V
 		ARG 1 strength
 		ARG 3 x
 		ARG 5 z
@@ -269,7 +269,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_6078 onDeath (Lnet/minecraft/class_1282;)V
 		ARG 1 damageSource
 	METHOD method_6079 getOffHandStack ()Lnet/minecraft/class_1799;
-	METHOD method_6081 getRecentDamageSource ()Lnet/minecraft/class_1282;
 	METHOD method_6082 teleport (DDDZ)Z
 		ARG 1 x
 		ARG 3 y
@@ -362,7 +361,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 2 oldStack
 		ARG 3 newStack
 	METHOD method_6117 getLastAttackedTime ()I
-	METHOD method_6118 getEquipment (Lnet/minecraft/class_1304;)Lnet/minecraft/class_1799;
+	METHOD method_6118 (Lnet/minecraft/class_1304;)Lnet/minecraft/class_1799;
 		ARG 1 slot
 	METHOD method_6119 tickHandSwing ()V
 	METHOD method_6120 getBaseWaterMovementSpeedMultiplier ()F
@@ -390,10 +389,9 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 source
 		ARG 2 amount
 	METHOD method_7292 getLuck ()F
-	METHOD method_7329 dropItem (Lnet/minecraft/class_1799;ZZ)Lnet/minecraft/class_1542;
+	METHOD method_7329 dropItem (Lnet/minecraft/class_1799;Z)V
 		ARG 1 stack
-		ARG 2 dropAtSelf
-		ARG 3 retainOwnership
+		ARG 2 retainOwnership
 	METHOD method_16077 dropLoot (Lnet/minecraft/class_3218;Lnet/minecraft/class_1282;Z)V
 		ARG 1 world
 		ARG 2 damageSource
@@ -406,12 +404,10 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_16826 setDespawnCounter (I)V
 		ARG 1 despawnCounter
 	METHOD method_17825 getScaleFactor ()F
-	METHOD method_18390 getAttackDistanceScalingFactor (Lnet/minecraft/class_1297;)D
+	METHOD method_18390 (Lnet/minecraft/class_1297;)D
 		ARG 1 entity
 	METHOD method_18392 setPositionInBed (Lnet/minecraft/class_2338;)V
 		ARG 1 pos
-	METHOD method_18395 canTarget (Lnet/minecraft/class_1309;)Z
-		ARG 1 target
 	METHOD method_18396 getArmorVisibility ()F
 	METHOD method_18398 getSleepingPosition ()Ljava/util/Optional;
 	METHOD method_18399 clearSleepingPosition ()V
@@ -438,7 +434,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_18867 deserializeBrain (Lnet/minecraft/class_4095$class_1_142;)Lnet/minecraft/class_4095;
 		ARG 1 state
 	METHOD method_18868 getBrain ()Lnet/minecraft/class_4095;
-	METHOD method_20235 sendEquipmentBreakStatus (Lnet/minecraft/class_1792;Lnet/minecraft/class_1304;)V
+	METHOD method_20235 (Lnet/minecraft/class_1792;Lnet/minecraft/class_1304;)V
 		ARG 1 item
 		ARG 2 slot
 	METHOD method_20237 getEquipmentBreakStatus (Lnet/minecraft/class_1304;)B
@@ -515,12 +511,11 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 world
 	METHOD method_29242 updateLimbs (Z)V
 		ARG 1 flutter
-	METHOD method_29499 triggerItemPickedUpByEntityCriteria (Lnet/minecraft/class_1542;)V
+	METHOD method_29499 triggerItemPickedUpByEntityCriteria (Lnet/minecraft/class_1_525;)V
 		COMMENT Called to trigger advancement criteria when an entity picks up an item
 		COMMENT thrown by a player.
 		ARG 1 item
 	METHOD method_29503 hurtByWater ()Z
-	METHOD method_29504 isDead ()Z
 	METHOD method_29505 setAttacking (Lnet/minecraft/class_10583;I)V
 		ARG 1 attackingPlayer
 		ARG 2 playerHitTimer
@@ -552,13 +547,11 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_32325 addPowderSnowSlowIfNeeded ()V
 	METHOD method_32326 getPreferredEquipmentSlot (Lnet/minecraft/class_1799;)Lnet/minecraft/class_1304;
 		ARG 1 stack
-	METHOD method_33190 canTakeDamage ()Z
 	METHOD method_35053 hasNoDrag ()Z
 	METHOD method_35054 setNoDrag (Z)V
 		ARG 1 noDrag
 	METHOD method_36362 updateGlowing ()V
 	METHOD method_36549 addDeathParticles ()V
-	METHOD method_36608 isPartOfGame ()Z
 	METHOD method_36977 damageHelmet (Lnet/minecraft/class_1282;F)V
 		ARG 1 source
 		ARG 2 amount
@@ -620,7 +613,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_52543 updateAttributes ()V
 	METHOD method_52544 setAbsorptionAmountUnclamped (F)V
 		ARG 1 absorptionAmount
-	METHOD method_53510 getHitbox ()Lnet/minecraft/class_238;
+	METHOD method_53510 ()Lnet/minecraft/class_238;
 		COMMENT Gets the area in which this entity can be attacked by mobs whose attack box overlaps it.
 		COMMENT
 		COMMENT @see net.minecraft.entity.mob.MobEntity#getAttackBox
@@ -774,10 +767,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 world
 		ARG 2 source
 		ARG 3 amount
-	METHOD method_67517 createItemEntity (Lnet/minecraft/class_1799;ZZ)Lnet/minecraft/class_1542;
-		ARG 1 stack
-		ARG 2 atSelf
-		ARG 3 retainOwnership
 	METHOD method_67518 createEquipment ()Lnet/minecraft/class_10630;
 	METHOD method_67650 (Lnet/minecraft/class_2338;)V
 		ARG 1 pos

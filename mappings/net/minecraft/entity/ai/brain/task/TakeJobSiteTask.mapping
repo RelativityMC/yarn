@@ -11,8 +11,6 @@ CLASS net/minecraft/class_5327 net/minecraft/entity/ai/brain/task/TakeJobSiteTas
 		ARG 0 speed
 	METHOD method_47208 (FLnet/minecraft/class_7898$class_7900;)Lcom/mojang/datafixers/kinds/App;
 		ARG 1 context
-	METHOD method_47209 (Lnet/minecraft/class_1309;)Lnet/minecraft/class_1646;
-		ARG 0 villager
 	METHOD method_47210 (Lnet/minecraft/class_7898$class_7900;FLnet/minecraft/class_7906;Lnet/minecraft/class_7906;Lnet/minecraft/class_7906;Lnet/minecraft/class_7906;Lnet/minecraft/class_7906;)Lnet/minecraft/class_7911;
 		ARG 2 potentialJobSite
 		ARG 3 jobSite
@@ -25,7 +23,5 @@ CLASS net/minecraft/class_5327 net/minecraft/entity/ai/brain/task/TakeJobSiteTas
 		ARG 8 time
 	METHOD method_47212 (Lnet/minecraft/class_7906;Lnet/minecraft/class_7906;Lnet/minecraft/class_7906;Lnet/minecraft/class_2338;FLnet/minecraft/class_3218;Lnet/minecraft/class_1646;)V
 		ARG 6 villager
-	METHOD method_47213 (Lnet/minecraft/class_1646;Lnet/minecraft/class_1309;)Z
-		ARG 1 mob
 	METHOD method_47214 (Ljava/util/Optional;Lnet/minecraft/class_2338;Lnet/minecraft/class_1646;)Z
 		ARG 2 villager

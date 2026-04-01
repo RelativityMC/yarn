@@ -1,7 +1,6 @@
 CLASS net/minecraft/class_507 net/minecraft/client/gui/screen/recipebook/RecipeBookWidget
 	FIELD field_3086 recipesArea Lnet/minecraft/class_513;
 	FIELD field_3087 searching Z
-	FIELD field_3088 toggleCraftableButton Lnet/minecraft/class_5676;
 	FIELD field_3089 searchField Lnet/minecraft/class_342;
 	FIELD field_3090 recipeFinder Lnet/minecraft/class_9875;
 	FIELD field_3091 client Lnet/minecraft/class_310;
@@ -111,16 +110,8 @@ CLASS net/minecraft/class_507 net/minecraft/client/gui/screen/recipebook/RecipeB
 	METHOD method_76629 getBookButtonTextures ()Lnet/minecraft/class_8666;
 	METHOD method_76630 onTabSelected (Lnet/minecraft/class_4185;)V
 		ARG 1 button
-	METHOD method_76631 (Lnet/minecraft/class_5676;Ljava/lang/Boolean;)V
-		ARG 1 button
-		ARG 2 value
 	METHOD method_76632 setCurrentTab (Lnet/minecraft/class_512;)V
 		ARG 1 currentTab
-	METHOD method_76633 (Ljava/lang/Boolean;)Lnet/minecraft/class_7919;
-		ARG 1 value
-	METHOD method_76634 (Lnet/minecraft/class_5676;Ljava/lang/Boolean;)Lnet/minecraft/class_2960;
-		ARG 1 button
-		ARG 2 value
 	CLASS class_10329 Tab
 		METHOD <init> (Lnet/minecraft/class_1792;Lnet/minecraft/class_1792;Lnet/minecraft/class_10355;)V
 			ARG 1 primaryIcon

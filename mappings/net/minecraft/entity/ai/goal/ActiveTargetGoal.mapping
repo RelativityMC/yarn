@@ -6,7 +6,7 @@ CLASS net/minecraft/class_1400 net/minecraft/entity/ai/goal/ActiveTargetGoal
 		COMMENT between each search (as in a poisson distribution).
 	FIELD field_6642 targetPredicate Lnet/minecraft/class_4051;
 	FIELD field_6643 targetClass Ljava/lang/Class;
-	FIELD field_6644 targetEntity Lnet/minecraft/class_1309;
+	FIELD field_6644 targetEntity Lnet/minecraft/class_1297;
 	FIELD field_36304 DEFAULT_RECIPROCAL_CHANCE I
 	METHOD <init> (Lnet/minecraft/class_1308;Ljava/lang/Class;IZZLnet/minecraft/class_4051$class_10254;)V
 		ARG 1 mob
@@ -32,6 +32,5 @@ CLASS net/minecraft/class_1400 net/minecraft/entity/ai/goal/ActiveTargetGoal
 	METHOD method_6321 getSearchBox (D)Lnet/minecraft/class_238;
 		ARG 1 distance
 	METHOD method_18415 findClosestTarget ()V
-	METHOD method_24632 setTargetEntity (Lnet/minecraft/class_1309;)V
-		ARG 1 targetEntity
+	METHOD method_24632 setTargetEntity (Lnet/minecraft/class_1297;)V
 	METHOD method_61438 getAndUpdateTargetPredicate ()Lnet/minecraft/class_4051;

@@ -53,8 +53,7 @@ CLASS net/minecraft/class_7260 net/minecraft/entity/mob/WardenEntity
 	METHOD method_42223 getTendrilAlpha (F)F
 		ARG 1 tickProgress
 	METHOD method_43113 isDiggingOrEmerging ()Z
-	METHOD method_43274 updateAttackTarget (Lnet/minecraft/class_1309;)V
-		ARG 1 target
+	METHOD method_43274 updateAttackTarget (Lnet/minecraft/class_1297;)V
 	METHOD method_43999 getAngerAtTarget ()I
 	CLASS class_8507 VibrationCallback
 		FIELD field_44601 RANGE I

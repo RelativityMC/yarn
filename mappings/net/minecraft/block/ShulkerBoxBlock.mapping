@@ -8,11 +8,6 @@ CLASS net/minecraft/class_2480 net/minecraft/block/ShulkerBoxBlock
 		ARG 1 color
 		ARG 2 settings
 	METHOD method_10528 getColor ()Lnet/minecraft/class_1767;
-	METHOD method_33383 canOpen (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2627;)Z
-		ARG 0 state
-		ARG 1 world
-		ARG 2 pos
-		ARG 3 entity
 	METHOD method_54040 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
 	METHOD method_54041 (Lnet/minecraft/class_2480;)Ljava/util/Optional;

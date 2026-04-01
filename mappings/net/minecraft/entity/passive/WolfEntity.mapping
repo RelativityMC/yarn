@@ -35,8 +35,7 @@ CLASS net/minecraft/class_1493 net/minecraft/entity/passive/WolfEntity
 	METHOD method_6714 getTailAngle ()F
 	METHOD method_6719 getBegAnimationProgress (F)F
 		ARG 1 tickProgress
-	METHOD method_18444 (Lnet/minecraft/class_1309;Lnet/minecraft/class_3218;)Z
-		ARG 0 entity
+	METHOD method_18444 (Lnet/minecraft/class_1297;Lnet/minecraft/class_3218;)Z
 		ARG 1 world
 	METHOD method_26897 createWolfAttributes ()Lnet/minecraft/class_5132$class_5133;
 	METHOD method_31167 resetShake ()V

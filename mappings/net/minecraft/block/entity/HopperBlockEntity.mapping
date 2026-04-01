@@ -41,7 +41,7 @@ CLASS net/minecraft/class_2614 net/minecraft/block/entity/HopperBlockEntity
 		ARG 0 world
 		ARG 1 pos
 		ARG 2 blockEntity
-	METHOD method_11247 extract (Lnet/minecraft/class_1263;Lnet/minecraft/class_1542;)Z
+	METHOD method_11247 extract (Lnet/minecraft/class_1263;Lnet/minecraft/class_1_525;)Z
 		ARG 0 inventory
 		ARG 1 itemEntity
 	METHOD method_11248 getInputInventory (Lnet/minecraft/class_1937;Lnet/minecraft/class_2615;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Lnet/minecraft/class_1263;

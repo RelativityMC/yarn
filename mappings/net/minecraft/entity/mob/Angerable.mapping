@@ -2,15 +2,13 @@ CLASS net/minecraft/class_5354 net/minecraft/entity/mob/Angerable
 	FIELD field_30094 ANGRY_AT_KEY Ljava/lang/String;
 	FIELD field_63295 ANGER_END_TIME_KEY Ljava/lang/String;
 	FIELD field_63296 NO_ANGER_END_TIME J
-	METHOD method_1_837 getRawTarget ()Lnet/minecraft/class_1309;
-	METHOD method_5968 getTarget ()Lnet/minecraft/class_1309;
-	METHOD method_5980 setTarget (Lnet/minecraft/class_1309;)V
-		ARG 1 target
+	METHOD method_1_837 getRawTarget ()Lnet/minecraft/class_1297;
+	METHOD method_5968 getTarget ()Lnet/minecraft/class_1297;
+	METHOD method_5980 setTarget (Lnet/minecraft/class_1297;)V
 	METHOD method_6015 setAttacker (Lnet/minecraft/class_1309;)V
 		ARG 1 attacker
 	METHOD method_6065 getAttacker ()Lnet/minecraft/class_1309;
-	METHOD method_18395 canTarget (Lnet/minecraft/class_1309;)Z
-		ARG 1 target
+	METHOD method_18395 canTarget (Lnet/minecraft/class_1297;)Z
 	METHOD method_29508 getAngryAt ()Lnet/minecraft/class_10583;
 	METHOD method_29509 chooseRandomAngerTime ()V
 	METHOD method_29510 tickAngerLogic (Lnet/minecraft/class_3218;Z)V
@@ -23,8 +21,7 @@ CLASS net/minecraft/class_5354 net/minecraft/entity/mob/Angerable
 		ARG 2 view
 	METHOD method_29513 setAngryAt (Lnet/minecraft/class_10583;)V
 		ARG 1 angryAt
-	METHOD method_29515 shouldAngerAt (Lnet/minecraft/class_1309;Lnet/minecraft/class_3218;)Z
-		ARG 1 target
+	METHOD method_29515 shouldAngerAt (Lnet/minecraft/class_1297;Lnet/minecraft/class_3218;)Z
 		ARG 2 world
 	METHOD method_29516 forgive (Lnet/minecraft/class_3218;Lnet/minecraft/class_1657;)V
 		ARG 1 world
@@ -41,5 +38,4 @@ CLASS net/minecraft/class_5354 net/minecraft/entity/mob/Angerable
 		ARG 1 durationInTicks
 	METHOD method_75132 setAngerEndTime (J)V
 		ARG 1 angerEndTime
-	METHOD method_75880 canAngerAt (Lnet/minecraft/class_1309;)Z
-		ARG 0 target
+	METHOD method_75880 canAngerAt (Lnet/minecraft/class_1297;)Z

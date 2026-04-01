@@ -45,15 +45,14 @@ CLASS net/minecraft/class_6852 net/minecraft/server/command/PlaceCommand
 		ARG 0 context
 	METHOD method_43918 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
-	METHOD method_43919 executePlaceTemplate (Lnet/minecraft/class_2168;Lnet/minecraft/class_2960;Lnet/minecraft/class_2338;Lnet/minecraft/class_2470;Lnet/minecraft/class_2415;FIZ)I
-		ARG 0 source
-		ARG 1 id
-		ARG 2 pos
-		ARG 3 rotation
-		ARG 4 mirror
-		ARG 5 integrity
-		ARG 6 seed
-		ARG 7 strict
+	METHOD method_43919 executePlaceTemplate (Lnet/minecraft/class_2960;Lnet/minecraft/class_2338;Lnet/minecraft/class_2470;Lnet/minecraft/class_2415;FIZLnet/minecraft/class_3218;)V
+		ARG 0 id
+		ARG 1 pos
+		ARG 2 rotation
+		ARG 3 mirror
+		ARG 4 integrity
+		ARG 5 seed
+		ARG 6 strict
 	METHOD method_43920 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 id
 	METHOD method_43921 (Lcom/mojang/brigadier/context/CommandContext;)I

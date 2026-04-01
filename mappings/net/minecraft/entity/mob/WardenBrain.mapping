@@ -22,13 +22,10 @@ CLASS net/minecraft/class_7261 net/minecraft/entity/mob/WardenBrain
 	METHOD method_42231 lookAtDisturbance (Lnet/minecraft/class_7260;Lnet/minecraft/class_2338;)V
 		ARG 0 warden
 		ARG 1 pos
-	METHOD method_42232 (Lnet/minecraft/class_1309;Lnet/minecraft/class_1309;)Z
-		ARG 1 entityx
 	METHOD method_42233 getEmergeActivities ()Lnet/minecraft/class_1_137;
-	METHOD method_42235 removeDeadSuspect (Lnet/minecraft/class_3218;Lnet/minecraft/class_7260;Lnet/minecraft/class_1309;)V
+	METHOD method_42235 removeDeadSuspect (Lnet/minecraft/class_3218;Lnet/minecraft/class_7260;Lnet/minecraft/class_1297;)V
 		ARG 0 world
 		ARG 1 warden
-		ARG 2 target
 	METHOD method_42236 getFightActivities (Lnet/minecraft/class_7260;)Lnet/minecraft/class_1_137;
 		ARG 0 warden
 	METHOD method_42237 getDigActivities ()Lnet/minecraft/class_1_137;
@@ -36,9 +33,8 @@ CLASS net/minecraft/class_7261 net/minecraft/entity/mob/WardenBrain
 	METHOD method_42241 (Lnet/minecraft/class_7260;Lnet/minecraft/class_1309;)Z
 		ARG 1 entity
 	METHOD method_42242 getInvestigateActivities ()Lnet/minecraft/class_1_137;
-	METHOD method_42243 (Lnet/minecraft/class_7260;Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;)Z
+	METHOD method_42243 (Lnet/minecraft/class_7260;Lnet/minecraft/class_3218;Lnet/minecraft/class_1297;)Z
 		ARG 1 world
-		ARG 2 target
 	METHOD method_42244 getSniffActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_42245 getRoarActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_47302 (Lnet/minecraft/class_7898$class_7900;)Lcom/mojang/datafixers/kinds/App;

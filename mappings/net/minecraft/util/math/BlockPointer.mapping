@@ -1,4 +1,0 @@
-CLASS net/minecraft/class_2342 net/minecraft/util/math/BlockPointer
-	FIELD comp_1967 world Lnet/minecraft/class_3218;
-	METHOD comp_1967 world ()Lnet/minecraft/class_3218;
-	METHOD method_53906 centerPos ()Lnet/minecraft/class_243;

@@ -30,18 +30,15 @@ CLASS net/minecraft/class_4019 net/minecraft/entity/passive/FoxEntity
 	FIELD field_57609 DEFAULT_CROUCHING Z
 	METHOD method_18253 (Lnet/minecraft/class_1297;)Z
 		ARG 0 entity
-	METHOD method_18254 (Lnet/minecraft/class_1309;Lnet/minecraft/class_3218;)Z
-		ARG 0 entity
+	METHOD method_18254 (Lnet/minecraft/class_1297;Lnet/minecraft/class_3218;)Z
 		ARG 1 world
-	METHOD method_18257 canJumpChase (Lnet/minecraft/class_4019;Lnet/minecraft/class_1309;)Z
+	METHOD method_18257 canJumpChase (Lnet/minecraft/class_4019;Lnet/minecraft/class_1297;)Z
 		ARG 0 fox
-		ARG 1 chasedEntity
 	METHOD method_18261 (Lnet/minecraft/class_1297;)Z
 		ARG 0 entity
-	METHOD method_18262 (Lnet/minecraft/class_1309;Lnet/minecraft/class_3218;)Z
-		ARG 0 entity
+	METHOD method_18262 (Lnet/minecraft/class_1297;Lnet/minecraft/class_3218;)Z
 		ARG 1 world
-	METHOD method_18265 (Lnet/minecraft/class_1542;)Z
+	METHOD method_18265 (Lnet/minecraft/class_1_525;)Z
 		ARG 0 item
 	METHOD method_18267 (Lnet/minecraft/class_1297;)Z
 		ARG 0 entity
@@ -84,17 +81,10 @@ CLASS net/minecraft/class_4019 net/minecraft/entity/passive/FoxEntity
 		ARG 1 sleeping
 	METHOD method_18428 canTrust (Lnet/minecraft/class_1309;)Z
 		ARG 1 entity
-	METHOD method_18429 (Lnet/minecraft/class_1309;Lnet/minecraft/class_3218;)Z
-		ARG 1 entity
+	METHOD method_18429 (Lnet/minecraft/class_1297;Lnet/minecraft/class_3218;)Z
 		ARG 2 world
 	METHOD method_18430 canEat (Lnet/minecraft/class_1799;)Z
 		ARG 1 stack
-	METHOD method_18431 (Lnet/minecraft/class_1309;)Z
-		ARG 1 entity
-	METHOD method_20451 (Lnet/minecraft/class_1309;)Z
-		ARG 1 entity
-	METHOD method_24347 (Lnet/minecraft/class_1309;)Z
-		ARG 1 entity
 	METHOD method_26885 createFoxAttributes ()Lnet/minecraft/class_5132$class_5133;
 	METHOD method_39449 canSpawn (Lnet/minecraft/class_1299;Lnet/minecraft/class_1936;Lnet/minecraft/class_3730;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)Z
 		ARG 0 type

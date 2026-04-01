@@ -11,11 +11,9 @@ CLASS net/minecraft/class_10280 net/minecraft/entity/mob/CreakingBrain
 	METHOD method_64637 getIdleTasks ()Lnet/minecraft/class_1_137;
 	METHOD method_64638 getFightTasks (Lnet/minecraft/class_10275;)Lnet/minecraft/class_1_137;
 		ARG 0 creaking
-	METHOD method_66684 (Lnet/minecraft/class_1309;Ljava/util/List;)Ljava/lang/Boolean;
+	METHOD method_66684 (Lnet/minecraft/class_1297;Ljava/util/List;)Ljava/lang/Boolean;
 		ARG 1 players
-	METHOD method_66685 (Lnet/minecraft/class_10275;Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;)Z
+	METHOD method_66685 (Lnet/minecraft/class_10275;Lnet/minecraft/class_3218;Lnet/minecraft/class_1297;)Z
 		ARG 1 world
-		ARG 2 target
-	METHOD method_66686 canTarget (Lnet/minecraft/class_10275;Lnet/minecraft/class_1309;)Z
+	METHOD method_66686 canTarget (Lnet/minecraft/class_10275;Lnet/minecraft/class_1297;)Z
 		ARG 0 creaking
-		ARG 1 target

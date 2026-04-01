@@ -16,8 +16,7 @@ CLASS net/minecraft/class_1481 net/minecraft/entity/passive/TurtleEntity
 		ARG 1 hasEgg
 	METHOD method_6683 setHomePos (Lnet/minecraft/class_2338;)V
 		ARG 1 pos
-	METHOD method_6688 (Lnet/minecraft/class_1309;Lnet/minecraft/class_3218;)Z
-		ARG 0 entity
+	METHOD method_6688 (Lnet/minecraft/class_1297;Lnet/minecraft/class_3218;)Z
 		ARG 1 world
 	METHOD method_6695 isDiggingSand ()Z
 	METHOD method_20671 canSpawn (Lnet/minecraft/class_1299;Lnet/minecraft/class_1936;Lnet/minecraft/class_3730;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)Z

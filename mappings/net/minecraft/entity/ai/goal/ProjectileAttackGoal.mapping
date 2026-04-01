@@ -2,7 +2,7 @@ CLASS net/minecraft/class_1381 net/minecraft/entity/ai/goal/ProjectileAttackGoal
 	FIELD field_6577 maxIntervalTicks I
 	FIELD field_6578 minIntervalTicks I
 	FIELD field_6579 seenTargetTicks I
-	FIELD field_6580 target Lnet/minecraft/class_1309;
+	FIELD field_6580 target Lnet/minecraft/class_1297;
 	FIELD field_6581 updateCountdownTicks I
 	FIELD field_6582 owner Lnet/minecraft/class_1603;
 	FIELD field_6583 mob Lnet/minecraft/class_1308;

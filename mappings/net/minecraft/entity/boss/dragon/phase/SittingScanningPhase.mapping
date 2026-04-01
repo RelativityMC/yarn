@@ -6,6 +6,5 @@ CLASS net/minecraft/class_1522 net/minecraft/entity/boss/dragon/phase/SittingSca
 	FIELD field_30437 MAX_HEIGHT_CLOSE_PLAYER_RANGE I
 	FIELD field_30438 MAX_HORIZONTAL_CLOSE_PLAYER_RANGE I
 	FIELD field_30439 MAX_PLAYER_RANGE I
-	METHOD method_18447 (Lnet/minecraft/class_1510;Lnet/minecraft/class_1309;Lnet/minecraft/class_3218;)Z
-		ARG 1 player
+	METHOD method_18447 (Lnet/minecraft/class_1510;Lnet/minecraft/class_1297;Lnet/minecraft/class_3218;)Z
 		ARG 2 world

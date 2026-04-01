@@ -1,7 +1,5 @@
 CLASS net/minecraft/class_10245 net/minecraft/world/EntityLookupView
 	METHOD method_8410 toServerWorld ()Lnet/minecraft/class_3218;
-	METHOD method_64386 (Lnet/minecraft/class_1309;)Z
-		ARG 0 entity
 	METHOD method_64387 getClosestPlayer (Lnet/minecraft/class_4051;DDD)Lnet/minecraft/class_1657;
 		ARG 1 targetPredicate
 		ARG 2 x
@@ -20,7 +18,7 @@ CLASS net/minecraft/class_10245 net/minecraft/world/EntityLookupView
 		ARG 1 targetPredicate
 		ARG 2 entity
 		ARG 3 box
-	METHOD method_64391 getClosestEntity (Ljava/lang/Class;Lnet/minecraft/class_4051;Lnet/minecraft/class_1309;DDDLnet/minecraft/class_238;)Lnet/minecraft/class_1309;
+	METHOD method_64391 getClosestEntity (Ljava/lang/Class;Lnet/minecraft/class_4051;Lnet/minecraft/class_1309;DDDLnet/minecraft/class_238;)Lnet/minecraft/class_1297;
 		ARG 1 clazz
 		ARG 2 targetPredicate
 		ARG 3 entity
@@ -33,15 +31,13 @@ CLASS net/minecraft/class_10245 net/minecraft/world/EntityLookupView
 		ARG 2 targetPredicate
 		ARG 3 entity
 		ARG 4 box
-	METHOD method_64393 getClosestEntity (Ljava/util/List;Lnet/minecraft/class_4051;Lnet/minecraft/class_1309;DDD)Lnet/minecraft/class_1309;
+	METHOD method_64393 getClosestEntity (Ljava/util/List;Lnet/minecraft/class_4051;Lnet/minecraft/class_1309;DDD)Lnet/minecraft/class_1297;
 		ARG 1 entities
 		ARG 2 targetPredicate
 		ARG 3 entity
 		ARG 4 x
 		ARG 6 y
 		ARG 8 z
-	METHOD method_64394 (Lnet/minecraft/class_1309;)Z
-		ARG 0 potentialEntity
 	METHOD method_73181 (Lnet/minecraft/class_6862;Lnet/minecraft/class_1309;)Z
 		ARG 1 predicate
 	METHOD method_73182 getClosestEntity (Lnet/minecraft/class_6862;Lnet/minecraft/class_4051;Lnet/minecraft/class_1309;DDDLnet/minecraft/class_238;)Lnet/minecraft/class_1309;

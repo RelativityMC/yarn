@@ -151,8 +151,8 @@ CLASS net/minecraft/class_2248 net/minecraft/block/Block
 		ARG 8 maxY
 		ARG 10 maxZ
 	METHOD method_9543 hasDynamicBounds ()Z
-	METHOD method_9544 (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1799;)V
-		ARG 2 stack
+	METHOD method_9544 (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_1297;Lnet/minecraft/class_1799;)V
+		ARG 4 stack
 	METHOD method_9554 onLandedUpon (Lnet/minecraft/class_1937;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_1297;D)V
 		COMMENT Called when the entity lands on the block.
 		COMMENT
@@ -290,8 +290,8 @@ CLASS net/minecraft/class_2248 net/minecraft/block/Block
 		ARG 1 world
 		ARG 2 pos
 		ARG 3 explosion
-	METHOD method_9587 (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1799;)V
-		ARG 2 stack
+	METHOD method_9587 (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_1799;)V
+		ARG 3 stack
 	METHOD method_9590 setDefaultState (Lnet/minecraft/class_2680;)V
 		COMMENT Sets the default state of the block. This should be called inside
 		COMMENT the block's constructor to override the default state chosen by the
@@ -308,8 +308,8 @@ CLASS net/minecraft/class_2248 net/minecraft/block/Block
 		ARG 3 state
 		ARG 4 entity
 	METHOD method_9595 getStateManager ()Lnet/minecraft/class_2689;
-	METHOD method_9596 (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_1799;)V
-		ARG 2 stack
+	METHOD method_9596 (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_1799;)V
+		ARG 3 stack
 	METHOD method_9605 getPlacementState (Lnet/minecraft/class_1750;)Lnet/minecraft/class_2680;
 		ARG 1 ctx
 	METHOD method_9607 shouldDrawSide (Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;Lnet/minecraft/class_2350;)Z

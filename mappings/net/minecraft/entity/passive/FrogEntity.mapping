@@ -15,8 +15,7 @@ CLASS net/minecraft/class_7102 net/minecraft/entity/passive/FrogEntity
 		ARG 1 variant
 	METHOD method_41354 getVariant ()Lnet/minecraft/class_6880;
 	METHOD method_41355 createFrogAttributes ()Lnet/minecraft/class_5132$class_5133;
-	METHOD method_41358 isValidFrogFood (Lnet/minecraft/class_1309;)Z
-		ARG 0 entity
+	METHOD method_41358 isValidFrogFood (Lnet/minecraft/class_1297;)Z
 	METHOD method_41359 clearFrogTarget ()V
 	METHOD method_41360 getFrogTarget ()Ljava/util/Optional;
 	METHOD method_43398 canSpawn (Lnet/minecraft/class_1299;Lnet/minecraft/class_1936;Lnet/minecraft/class_3730;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)Z

@@ -21,8 +21,7 @@ CLASS net/minecraft/class_1887 net/minecraft/enchantment/Enchantment
 	METHOD method_8182 getMinPower (I)I
 		ARG 1 level
 	METHOD method_8183 getMaxLevel ()I
-	METHOD method_8185 getEquipment (Lnet/minecraft/class_1309;)Ljava/util/Map;
-		ARG 1 entity
+	METHOD method_8185 getEquipment (Lnet/minecraft/class_1297;)Ljava/util/Map;
 	METHOD method_8187 getMinLevel ()I
 	METHOD method_8189 onTargetDamaged (Lnet/minecraft/class_3218;ILnet/minecraft/class_9699;Lnet/minecraft/class_9703;Lnet/minecraft/class_1297;Lnet/minecraft/class_1282;)V
 		ARG 1 world

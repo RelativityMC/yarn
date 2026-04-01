@@ -14,8 +14,7 @@ CLASS net/minecraft/class_1321 net/minecraft/entity/passive/TameableEntity
 		ARG 5 defaultHealing
 	METHOD method_6170 setTamedBy (Lnet/minecraft/class_1657;)V
 		ARG 1 player
-	METHOD method_6171 isOwner (Lnet/minecraft/class_1309;)Z
-		ARG 1 entity
+	METHOD method_6171 isOwner (Lnet/minecraft/class_1297;)Z
 	METHOD method_6172 isInSittingPose ()Z
 	METHOD method_6173 setTamed (ZZ)V
 		ARG 1 tamed

@@ -90,7 +90,7 @@ CLASS net/minecraft/class_1440 net/minecraft/entity/passive/PandaEntity
 	METHOD method_35173 isBrown ()Z
 	METHOD method_58371 (Lnet/minecraft/class_1799;)Z
 		ARG 0 stack
-	METHOD method_64177 canEatFromGround (Lnet/minecraft/class_1542;)Z
+	METHOD method_64177 canEatFromGround (Lnet/minecraft/class_1_525;)Z
 		ARG 0 itemEntity
 	CLASS class_1441 PandaFleeGoal
 		FIELD field_6782 panda Lnet/minecraft/class_1440;

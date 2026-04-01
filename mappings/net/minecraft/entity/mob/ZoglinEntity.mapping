@@ -11,8 +11,6 @@ CLASS net/minecraft/class_5136 net/minecraft/entity/mob/ZoglinEntity
 	FIELD field_30512 DEFAULT_MOVEMENT_SPEED F
 	FIELD field_57695 DEFAULT_IS_BABY Z
 	METHOD method_1_1167 getTaskLists ()Ljava/util/List;
-	METHOD method_1_1168 (Lnet/minecraft/class_3218;Lnet/minecraft/class_1308;Lnet/minecraft/class_1309;)Z
-		ARG 2 candidate
 	METHOD method_1_1281 (Lnet/minecraft/class_5136;)Ljava/util/List;
 		ARG 0 zoglin
 	METHOD method_26928 getCoreTasks ()Lnet/minecraft/class_1_137;
@@ -24,6 +22,5 @@ CLASS net/minecraft/class_5136 net/minecraft/entity/mob/ZoglinEntity
 		ARG 0 world
 		ARG 1 entity
 	METHOD method_26937 createZoglinAttributes ()Lnet/minecraft/class_5132$class_5133;
-	METHOD method_26938 setAttackTarget (Lnet/minecraft/class_1309;)V
-		ARG 1 entity
+	METHOD method_26938 setAttackTarget (Lnet/minecraft/class_1297;)V
 	METHOD method_26939 isAdult ()Z

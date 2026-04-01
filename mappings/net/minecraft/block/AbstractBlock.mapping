@@ -1222,9 +1222,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 			ARG 2 pos
 		METHOD method_26213 getLuminance ()I
 			COMMENT {@return the light level emitted by this block state}
-		METHOD method_26214 getHardness (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)F
-			ARG 1 world
-			ARG 2 pos
+		METHOD method_26214 getHardness ()F
 		METHOD method_26215 isAir ()Z
 		METHOD method_26216 isOpaqueFullCube ()Z
 		METHOD method_26217 getRenderType ()Lnet/minecraft/class_2464;

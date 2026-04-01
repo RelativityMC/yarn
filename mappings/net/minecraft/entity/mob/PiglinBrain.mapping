@@ -18,19 +18,16 @@ CLASS net/minecraft/class_4838 net/minecraft/entity/mob/PiglinBrain
 		ARG 0 piglin
 	METHOD method_24717 makeRandomFollowTask ()Lnet/minecraft/class_4118;
 	METHOD method_24718 makeRandomWanderTask ()Lnet/minecraft/class_4118;
-	METHOD method_24720 (Lnet/minecraft/class_1309;Lnet/minecraft/class_1309;)Z
-		ARG 1 preferredTarget
 	METHOD method_24722 tickActivities (Lnet/minecraft/class_4836;)V
 		ARG 0 piglin
 	METHOD method_24723 canRide (Lnet/minecraft/class_4836;Lnet/minecraft/class_1297;)Z
 		ARG 0 piglin
 		ARG 1 ridden
-	METHOD method_24724 onAttacked (Lnet/minecraft/class_3218;Lnet/minecraft/class_4836;Lnet/minecraft/class_1309;)V
+	METHOD method_24724 onAttacked (Lnet/minecraft/class_3218;Lnet/minecraft/class_4836;Lnet/minecraft/class_1297;)V
 		ARG 0 world
 		ARG 1 piglin
-		ARG 2 attacker
 	METHOD method_24725 getCoreActivities ()Lnet/minecraft/class_1_137;
-	METHOD method_24726 loot (Lnet/minecraft/class_3218;Lnet/minecraft/class_4836;Lnet/minecraft/class_1542;)V
+	METHOD method_24726 loot (Lnet/minecraft/class_3218;Lnet/minecraft/class_4836;Lnet/minecraft/class_1_525;)V
 		ARG 0 world
 		ARG 1 piglin
 		ARG 2 itemEntity
@@ -65,16 +62,15 @@ CLASS net/minecraft/class_4838 net/minecraft/entity/mob/PiglinBrain
 	METHOD method_24738 makeGoToSoulFireTask ()Lnet/minecraft/class_7893;
 	METHOD method_24739 isGoldHoldingPlayer (Lnet/minecraft/class_1309;)Z
 		ARG 0 target
-	METHOD method_24740 (Lnet/minecraft/class_1309;Lnet/minecraft/class_3218;Lnet/minecraft/class_5418;)V
+	METHOD method_24740 (Lnet/minecraft/class_1297;Lnet/minecraft/class_3218;Lnet/minecraft/class_5418;)V
 		ARG 2 nearbyPiglin
 	METHOD method_24741 consumeOffHandItem (Lnet/minecraft/class_3218;Lnet/minecraft/class_4836;Z)V
 		ARG 0 world
 		ARG 1 piglin
 		ARG 2 barter
-	METHOD method_24742 angerAtCloserTargets (Lnet/minecraft/class_3218;Lnet/minecraft/class_5418;Lnet/minecraft/class_1309;)V
+	METHOD method_24742 angerAtCloserTargets (Lnet/minecraft/class_3218;Lnet/minecraft/class_5418;Lnet/minecraft/class_1297;)V
 		ARG 0 world
 		ARG 1 piglin
-		ARG 2 target
 	METHOD method_24743 getIdleActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_24745 (ZLnet/minecraft/class_1657;Lnet/minecraft/class_4836;)Z
 		ARG 2 piglin
@@ -83,60 +79,52 @@ CLASS net/minecraft/class_4838 net/minecraft/entity/mob/PiglinBrain
 	METHOD method_24747 makeFleeFromZombifiedPiglinTask ()Lnet/minecraft/class_7893;
 	METHOD method_24748 isHoldingCrossbow (Lnet/minecraft/class_1309;)Z
 		ARG 0 piglin
-	METHOD method_24750 becomeAngryWith (Lnet/minecraft/class_3218;Lnet/minecraft/class_5418;Lnet/minecraft/class_1309;)V
+	METHOD method_24750 becomeAngryWith (Lnet/minecraft/class_3218;Lnet/minecraft/class_5418;Lnet/minecraft/class_1297;)V
 		ARG 0 world
 		ARG 1 piglin
-		ARG 2 target
 	METHOD method_24751 getFightActivities (Lnet/minecraft/class_4836;)Lnet/minecraft/class_1_137;
 		ARG 0 piglin
 	METHOD method_24752 isFood (Lnet/minecraft/class_1799;)Z
 		ARG 0 stack
 	METHOD method_24753 setAdmiringItem (Lnet/minecraft/class_1309;)V
 		ARG 0 entity
-	METHOD method_24755 isPreferredAttackTarget (Lnet/minecraft/class_3218;Lnet/minecraft/class_4836;Lnet/minecraft/class_1309;)Z
+	METHOD method_24755 isPreferredAttackTarget (Lnet/minecraft/class_3218;Lnet/minecraft/class_4836;Lnet/minecraft/class_1297;)Z
 		ARG 0 world
 		ARG 1 piglin
-		ARG 2 target
 	METHOD method_24756 getCelebrateActivities ()Lnet/minecraft/class_1_137;
-	METHOD method_24759 tryRevenge (Lnet/minecraft/class_3218;Lnet/minecraft/class_5418;Lnet/minecraft/class_1309;)V
+	METHOD method_24759 tryRevenge (Lnet/minecraft/class_3218;Lnet/minecraft/class_5418;Lnet/minecraft/class_1297;)V
 		ARG 0 world
 		ARG 1 piglin
-		ARG 2 target
 	METHOD method_24760 getAdmireItemActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_24761 hasPlayerHoldingWantedItemNearby (Lnet/minecraft/class_1309;)Z
 		ARG 0 entity
 	METHOD method_24762 rememberHunting (Lnet/minecraft/class_5418;)V
 		ARG 0 piglin
-	METHOD method_24763 angerAtIfCloser (Lnet/minecraft/class_3218;Lnet/minecraft/class_5418;Lnet/minecraft/class_1309;)V
+	METHOD method_24763 angerAtIfCloser (Lnet/minecraft/class_3218;Lnet/minecraft/class_5418;Lnet/minecraft/class_1297;)V
 		ARG 0 world
 		ARG 1 piglin
-		ARG 2 target
 	METHOD method_24764 getAvoidActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_24765 canWander (Lnet/minecraft/class_1309;)Z
 		ARG 0 piglin
 	METHOD method_24766 hasIdleActivity (Lnet/minecraft/class_5418;)Z
 		ARG 0 piglin
-	METHOD method_24767 groupRunAwayFrom (Lnet/minecraft/class_4836;Lnet/minecraft/class_1309;)V
+	METHOD method_24767 groupRunAwayFrom (Lnet/minecraft/class_4836;Lnet/minecraft/class_1297;)V
 		ARG 0 piglin
-		ARG 1 target
 	METHOD method_24768 getRideActivities ()Lnet/minecraft/class_1_137;
 	METHOD method_24769 hasBeenHurt (Lnet/minecraft/class_1309;)Z
 		ARG 0 piglin
-	METHOD method_24771 runAwayFromClosestTarget (Lnet/minecraft/class_4836;Lnet/minecraft/class_1309;)V
+	METHOD method_24771 runAwayFromClosestTarget (Lnet/minecraft/class_4836;Lnet/minecraft/class_1297;)V
 		ARG 0 piglin
-		ARG 1 target
 	METHOD method_24772 doBarter (Lnet/minecraft/class_4836;Ljava/util/List;)V
 		ARG 0 piglin
 		ARG 1 items
-	METHOD method_24773 runAwayFrom (Lnet/minecraft/class_4836;Lnet/minecraft/class_1309;)V
+	METHOD method_24773 runAwayFrom (Lnet/minecraft/class_4836;Lnet/minecraft/class_1297;)V
 		ARG 0 piglin
-		ARG 1 target
 	METHOD method_24774 dropBarteredItem (Lnet/minecraft/class_4836;Ljava/util/List;)V
 		ARG 0 piglin
 		ARG 1 items
-	METHOD method_24775 (Lnet/minecraft/class_4836;Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;)Z
+	METHOD method_24775 (Lnet/minecraft/class_4836;Lnet/minecraft/class_3218;Lnet/minecraft/class_1297;)Z
 		ARG 1 world
-		ARG 2 target
 	METHOD method_24776 getBarteredItem (Lnet/minecraft/class_4836;)Ljava/util/List;
 		ARG 0 piglin
 	METHOD method_24777 getPreferredTarget (Lnet/minecraft/class_3218;Lnet/minecraft/class_4836;)Ljava/util/Optional;
@@ -164,7 +152,7 @@ CLASS net/minecraft/class_4838 net/minecraft/entity/mob/PiglinBrain
 		ARG 0 entity
 	METHOD method_24791 hasSoulFireNearby (Lnet/minecraft/class_4836;)Z
 		ARG 0 piglin
-	METHOD method_24848 getItemFromStack (Lnet/minecraft/class_1542;)Lnet/minecraft/class_1799;
+	METHOD method_24848 getItemFromStack (Lnet/minecraft/class_1_525;)Lnet/minecraft/class_1799;
 		ARG 0 stack
 	METHOD method_24849 barterItem (Lnet/minecraft/class_4836;Lnet/minecraft/class_1799;)V
 		ARG 0 piglin
@@ -183,15 +171,12 @@ CLASS net/minecraft/class_4838 net/minecraft/entity/mob/PiglinBrain
 		ARG 1 nearbyItems
 	METHOD method_29275 (Lnet/minecraft/class_4836;)Z
 		ARG 0 piglin
-	METHOD method_29276 isHuntingTarget (Lnet/minecraft/class_1309;Lnet/minecraft/class_1309;)Z
+	METHOD method_29276 isHuntingTarget (Lnet/minecraft/class_1309;Lnet/minecraft/class_1297;)Z
 		ARG 0 piglin
-		ARG 1 target
 	METHOD method_29277 canRideHoglin (Lnet/minecraft/class_4836;)Z
 		ARG 0 piglin
 	METHOD method_29534 isZombified (Lnet/minecraft/class_1297;)Z
 		ARG 0 entity
-	METHOD method_29535 (Lnet/minecraft/class_1309;Lnet/minecraft/class_4095;Lnet/minecraft/class_1309;)V
-		ARG 2 avoiding
 	METHOD method_29536 getAvoiding (Lnet/minecraft/class_4836;)Ljava/util/Optional;
 		ARG 0 piglin
 	METHOD method_29537 getNearestZombifiedPiglin (Lnet/minecraft/class_4836;)Z
@@ -205,10 +190,9 @@ CLASS net/minecraft/class_4838 net/minecraft/entity/mob/PiglinBrain
 	METHOD method_29945 angerNearbyPiglins (Lnet/minecraft/class_3218;Lnet/minecraft/class_5418;)V
 		ARG 0 world
 		ARG 1 piglin
-	METHOD method_29946 becomeAngryWithPlayer (Lnet/minecraft/class_3218;Lnet/minecraft/class_5418;Lnet/minecraft/class_1309;)V
+	METHOD method_29946 becomeAngryWithPlayer (Lnet/minecraft/class_3218;Lnet/minecraft/class_5418;Lnet/minecraft/class_1297;)V
 		ARG 0 world
 		ARG 1 piglin
-		ARG 2 target
 	METHOD method_29947 getNearestDetectedPlayer (Lnet/minecraft/class_5418;)Ljava/util/Optional;
 		ARG 0 piglin
 	METHOD method_30087 getSound (Lnet/minecraft/class_4836;Lnet/minecraft/class_4168;)Lnet/minecraft/class_3414;

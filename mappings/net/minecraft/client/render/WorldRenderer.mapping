@@ -256,7 +256,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 2 frustum
 		ARG 3 spectator
 	METHOD method_74921 updateBlockBreakingProgress ()V
-	METHOD method_74922 fillBlockBreakingProgressRenderState (Lnet/minecraft/class_4184;Lnet/minecraft/class_11658;)V
+	METHOD method_74922 fillBlockBreakingProgressRenderState (Lnet/minecraft/class_4184;Lnet/minecraft/class_11658;F)V
 		ARG 1 camera
 		ARG 2 renderStates
 	METHOD method_74923 fillEntityOutlineRenderStates (Lnet/minecraft/class_4184;Lnet/minecraft/class_11658;)V

@@ -58,8 +58,7 @@ CLASS net/minecraft/class_1496 net/minecraft/entity/passive/AbstractHorseEntity
 		ARG 1 tickProgress
 	METHOD method_6740 setEatingGrass (Z)V
 		ARG 1 eatingGrass
-	METHOD method_6741 (Lnet/minecraft/class_1309;Lnet/minecraft/class_3218;)Z
-		ARG 0 entity
+	METHOD method_6741 (Lnet/minecraft/class_1297;Lnet/minecraft/class_3218;)Z
 		ARG 1 world
 	METHOD method_6742 receiveFood (Lnet/minecraft/class_1657;Lnet/minecraft/class_1799;)Z
 		ARG 1 player

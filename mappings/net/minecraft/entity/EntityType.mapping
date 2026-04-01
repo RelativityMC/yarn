@@ -20,22 +20,21 @@ CLASS net/minecraft/class_1299 net/minecraft/entity/EntityType
 	FIELD field_57582 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_61222 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_61223 allowedInPeaceful Z
-	METHOD <init> (Lnet/minecraft/class_1299$class_4049;Lnet/minecraft/class_1311;ZZZZLcom/google/common/collect/ImmutableSet;Lnet/minecraft/class_4048;FIILjava/lang/String;Ljava/util/Optional;Lnet/minecraft/class_7699;Z)V
-		ARG 1 factory
-		ARG 2 spawnGroup
-		ARG 3 saveable
-		ARG 4 summonable
-		ARG 5 fireImmune
-		ARG 6 spawnableFarFromPlayer
-		ARG 7 canSpawnInside
-		ARG 8 dimensions
-		ARG 9 spawnBoxScale
-		ARG 10 maxTrackDistance
-		ARG 11 trackTickInterval
-		ARG 12 translationKey
-		ARG 13 lootTable
-		ARG 14 requiredFeatures
-		ARG 15 allowedInPeaceful
+	METHOD <init> (Ljava/lang/Class;Lnet/minecraft/class_1299$class_4049;Lnet/minecraft/class_1311;ZZZZLcom/google/common/collect/ImmutableSet;Lnet/minecraft/class_4048;FIILjava/lang/String;Ljava/util/Optional;Lnet/minecraft/class_7699;Z)V
+		ARG 3 spawnGroup
+		ARG 4 saveable
+		ARG 5 summonable
+		ARG 6 fireImmune
+		ARG 7 spawnableFarFromPlayer
+		ARG 8 canSpawnInside
+		ARG 9 dimensions
+		ARG 10 spawnBoxScale
+		ARG 11 maxTrackDistance
+		ARG 12 trackTickInterval
+		ARG 13 translationKey
+		ARG 14 lootTable
+		ARG 15 requiredFeatures
+		ARG 16 allowedInPeaceful
 	METHOD method_5881 loadFromEntityNbt (Lnet/minecraft/class_1937;Lnet/minecraft/class_1309;Lnet/minecraft/class_1297;Lnet/minecraft/class_11580;)V
 		ARG 0 world
 		ARG 1 spawner
@@ -249,9 +248,8 @@ CLASS net/minecraft/class_1299 net/minecraft/entity/EntityType
 		FIELD field_53972 lootTable Lnet/minecraft/class_10162;
 		FIELD field_53973 translationKey Lnet/minecraft/class_10162;
 		FIELD field_61224 allowedInPeaceful Z
-		METHOD <init> (Lnet/minecraft/class_1299$class_4049;Lnet/minecraft/class_1311;)V
-			ARG 1 factory
-			ARG 2 spawnGroup
+		METHOD <init> (Ljava/lang/Class;Lnet/minecraft/class_1299$class_4049;Lnet/minecraft/class_1311;)V
+			ARG 3 spawnGroup
 		METHOD method_5900 (Lnet/minecraft/class_1299;Lnet/minecraft/class_1937;)Lnet/minecraft/class_1297;
 			ARG 0 type
 			ARG 1 world

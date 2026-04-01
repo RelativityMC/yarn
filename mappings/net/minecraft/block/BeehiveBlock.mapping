@@ -42,6 +42,6 @@ CLASS net/minecraft/class_4481 net/minecraft/block/BeehiveBlock
 	METHOD method_23894 hasBees (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)Z
 		ARG 1 world
 		ARG 2 pos
-	METHOD method_72545 (Lnet/minecraft/class_2338;Lnet/minecraft/class_3218;Lnet/minecraft/class_1799;)V
-		ARG 1 worldx
-		ARG 2 stack
+	METHOD method_72545 (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_3218;Lnet/minecraft/class_1799;)V
+		ARG 2 worldx
+		ARG 3 stack

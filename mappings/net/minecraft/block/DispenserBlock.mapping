@@ -9,7 +9,7 @@ CLASS net/minecraft/class_2315 net/minecraft/block/DispenserBlock
 	METHOD method_10009 registerBehavior (Lnet/minecraft/class_1935;Lnet/minecraft/class_2357;)V
 		ARG 0 provider
 		ARG 1 behavior
-	METHOD method_10010 getOutputLocation (Lnet/minecraft/class_2342;DLnet/minecraft/class_243;)Lnet/minecraft/class_2374;
+	METHOD method_10010 getOutputLocation (Lnet/minecraft/class_1_510;DLnet/minecraft/class_243;)Lnet/minecraft/class_2374;
 		ARG 0 pointer
 		ARG 1 facingOffset
 		ARG 3 constantOffset
@@ -22,7 +22,7 @@ CLASS net/minecraft/class_2315 net/minecraft/block/DispenserBlock
 		ARG 3 pos
 	METHOD method_58681 registerProjectileBehavior (Lnet/minecraft/class_1935;)V
 		ARG 0 projectile
-	METHOD method_58682 getOutputLocation (Lnet/minecraft/class_2342;)Lnet/minecraft/class_2374;
+	METHOD method_58682 getOutputLocation (Lnet/minecraft/class_1_510;)Lnet/minecraft/class_2374;
 		ARG 0 pointer
 	METHOD method_64021 getBehaviorForItem (Lnet/minecraft/class_1799;)Lnet/minecraft/class_2357;
 		ARG 0 stack

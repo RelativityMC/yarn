@@ -25,7 +25,7 @@ CLASS net/minecraft/class_8813 net/minecraft/block/SaplingGenerator
 		ARG 4 beesVariant
 	METHOD method_1_2541 getBaseTrunkHeight (Lnet/minecraft/class_3218;)Ljava/util/OptionalInt;
 		ARG 1 world
-	METHOD method_54085 generate (Lnet/minecraft/class_3218;Lnet/minecraft/class_2794;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_5819;)Z
+	METHOD method_54085 generate (Lnet/minecraft/class_3218;Lnet/minecraft/class_2794;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_5819;)Lnet/minecraft/class_8813$class_1_524;
 		ARG 1 world
 		ARG 2 chunkGenerator
 		ARG 3 pos
@@ -42,8 +42,8 @@ CLASS net/minecraft/class_8813 net/minecraft/block/SaplingGenerator
 	METHOD method_54089 (Lnet/minecraft/class_8813;)Ljava/lang/String;
 		ARG 0 generator
 	METHOD method_54090 canGenerateLargeTree (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;II)Z
-		ARG 0 state
-		ARG 1 world
-		ARG 2 pos
-		ARG 3 x
-		ARG 4 z
+		ARG 1 state
+		ARG 2 world
+		ARG 3 pos
+		ARG 4 x
+		ARG 5 z

@@ -284,7 +284,7 @@ CLASS net/minecraft/class_1792 net/minecraft/item/Item
 		ARG 1 stack
 	METHOD method_32346 getTooltipData (Lnet/minecraft/class_1799;)Ljava/util/Optional;
 		ARG 1 stack
-	METHOD method_33261 onItemEntityDestroyed (Lnet/minecraft/class_1542;)V
+	METHOD method_33261 onItemEntityDestroyed (Lnet/minecraft/class_1_525;)V
 		COMMENT Called on the server when an {@link ItemEntity} holding this item gets destroyed.
 		COMMENT This can happen due to fire, lava, cactus, explosion, etc. Items that can hold
 		COMMENT other items should override this to drop its contents.

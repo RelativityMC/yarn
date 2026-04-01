@@ -529,7 +529,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		COMMENT
 		COMMENT @see World#canPlayerModifyAt
 		ARG 1 attacker
-	METHOD method_5699 dropStack (Lnet/minecraft/class_3218;Lnet/minecraft/class_1799;F)Lnet/minecraft/class_1542;
+	METHOD method_5699 dropStack (Lnet/minecraft/class_3218;Lnet/minecraft/class_1799;F)Ljava/util/Collection;
 		COMMENT Drops {@code stack} at the entity's position with the given Y offset.
 		COMMENT
 		COMMENT @return the spawned item entity, or {@code null} if the stack is empty or if called
@@ -572,7 +572,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 1 predicate
 	METHOD method_5705 getYaw (F)F
 		ARG 1 tickProgress
-	METHOD method_5706 dropItem (Lnet/minecraft/class_3218;Lnet/minecraft/class_1935;)Lnet/minecraft/class_1542;
+	METHOD method_5706 dropItem (Lnet/minecraft/class_3218;Lnet/minecraft/class_1935;)Ljava/util/Collection;
 		COMMENT Drops one {@code item} at the entity's position.
 		COMMENT
 		COMMENT @return the spawned item entity, or {@code null} if called on the client
@@ -868,7 +868,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 4 blockState
 		ARG 5 fluidState
 		ARG 6 max
-	METHOD method_5775 dropStack (Lnet/minecraft/class_3218;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1542;
+	METHOD method_5775 dropStack (Lnet/minecraft/class_3218;Lnet/minecraft/class_1799;)Ljava/util/Collection;
 		COMMENT Drops {@code stack} at the entity's position.
 		COMMENT
 		COMMENT @return the spawned item entity, or {@code null} if the stack is empty or if called
@@ -1350,7 +1350,9 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		COMMENT
 		COMMENT @see #discard
 	METHOD method_5991 getLootTableKey ()Ljava/util/Optional;
+	METHOD method_6005 takeKnockback (DDD)V
 	METHOD method_6034 canActVoluntarily ()Z
+	METHOD method_6118 getEquipment (Lnet/minecraft/class_1304;)Lnet/minecraft/class_1799;
 	METHOD method_7325 isSpectator ()Z
 		COMMENT {@return whether the entity is a spectator}
 		COMMENT
@@ -1433,6 +1435,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		COMMENT when the player is in a 1 block tall tunnel).
 		COMMENT
 		COMMENT @see #isCrawling
+	METHOD method_20235 sendEquipmentBreakStatus (Lnet/minecraft/class_1792;Lnet/minecraft/class_1304;)V
 	METHOD method_20448 isCrawling ()Z
 		COMMENT {@return whether the entity is crawling}
 		COMMENT
@@ -2296,10 +2299,8 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_70988 detachAllHeldLeashes (Lnet/minecraft/class_1657;)Z
 		ARG 1 player
 	METHOD method_71370 getErrorReporterContext ()Lnet/minecraft/class_8942$class_11336;
-	METHOD method_71764 dropStack (Lnet/minecraft/class_3218;Lnet/minecraft/class_1799;Lnet/minecraft/class_243;)Lnet/minecraft/class_1542;
-		ARG 1 world
+	METHOD method_71764 dropStack (Lnet/minecraft/class_3218;Lnet/minecraft/class_1799;Lnet/minecraft/class_243;)Ljava/util/Collection;
 		ARG 2 stack
-		ARG 3 offset
 	METHOD method_71765 shearEquipment (Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;Lnet/minecraft/class_1799;Lnet/minecraft/class_1308;)Z
 		ARG 1 player
 		ARG 2 hand

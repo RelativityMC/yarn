@@ -18,7 +18,6 @@ CLASS net/minecraft/class_465 net/minecraft/client/gui/screen/ingame/HandledScre
 	FIELD field_2798 cancelNextRelease Z
 	FIELD field_2799 lastClickedSlot Lnet/minecraft/class_1735;
 	FIELD field_2800 y I
-	FIELD field_2801 BACKGROUND_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_2803 draggedStackRemainder I
 	FIELD field_25267 titleX I
 	FIELD field_25268 titleY I

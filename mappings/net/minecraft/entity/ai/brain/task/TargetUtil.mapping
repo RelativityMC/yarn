@@ -18,9 +18,8 @@ CLASS net/minecraft/class_4215 net/minecraft/entity/ai/brain/task/TargetUtil
 		ARG 1 second
 	METHOD method_19553 (Lnet/minecraft/class_4095;Lnet/minecraft/class_1309;)Z
 		ARG 1 target
-	METHOD method_19554 lookAt (Lnet/minecraft/class_1309;Lnet/minecraft/class_1309;)V
+	METHOD method_19554 lookAt (Lnet/minecraft/class_1309;Lnet/minecraft/class_1297;)V
 		ARG 0 entity
-		ARG 1 target
 	METHOD method_19555 walkTowardsEachOther (Lnet/minecraft/class_1309;Lnet/minecraft/class_1309;FI)V
 		ARG 0 first
 		ARG 1 second
@@ -41,18 +40,14 @@ CLASS net/minecraft/class_4215 net/minecraft/entity/ai/brain/task/TargetUtil
 		ARG 1 target
 		ARG 2 speed
 		ARG 3 completionRange
-	METHOD method_24558 isNewTargetTooFar (Lnet/minecraft/class_1309;Lnet/minecraft/class_1309;D)Z
+	METHOD method_24558 isNewTargetTooFar (Lnet/minecraft/class_1309;Lnet/minecraft/class_1297;D)Z
 		COMMENT Checks if an entity can be a new attack target for the source entity.
 		ARG 0 source
 			COMMENT the source entity
-		ARG 1 target
-			COMMENT the attack target candidate
 		ARG 2 extraDistance
 			COMMENT the max distance this new target can be farther compared to the existing target
-	METHOD method_24559 getCloserEntity (Lnet/minecraft/class_1309;Lnet/minecraft/class_1309;Lnet/minecraft/class_1309;)Lnet/minecraft/class_1309;
+	METHOD method_24559 getCloserEntity (Lnet/minecraft/class_1309;Lnet/minecraft/class_1297;Lnet/minecraft/class_1297;)Lnet/minecraft/class_1297;
 		ARG 0 source
-		ARG 1 first
-		ARG 2 second
 	METHOD method_24560 getEntity (Lnet/minecraft/class_1309;Lnet/minecraft/class_4140;)Ljava/util/Optional;
 		ARG 0 entity
 		ARG 1 uuidMemoryModule
@@ -61,25 +56,20 @@ CLASS net/minecraft/class_4215 net/minecraft/entity/ai/brain/task/TargetUtil
 		ARG 1 target
 		ARG 2 speed
 		ARG 3 completionRange
-	METHOD method_24562 getCloserEntity (Lnet/minecraft/class_1309;Ljava/util/Optional;Lnet/minecraft/class_1309;)Lnet/minecraft/class_1309;
+	METHOD method_24562 getCloserEntity (Lnet/minecraft/class_1309;Ljava/util/Optional;Lnet/minecraft/class_1297;)Lnet/minecraft/class_1297;
 		ARG 0 source
 		ARG 1 first
-		ARG 2 second
 	METHOD method_24563 (Lnet/minecraft/class_1309;Ljava/util/UUID;)Lnet/minecraft/class_1297;
 		ARG 1 uuid
 	METHOD method_24564 canSee (Lnet/minecraft/class_4095;Lnet/minecraft/class_4140;Ljava/util/function/Predicate;)Z
 		ARG 0 brain
 		ARG 1 memoryType
 		ARG 2 filter
-	METHOD method_24565 isVisibleInMemory (Lnet/minecraft/class_1309;Lnet/minecraft/class_1309;)Z
+	METHOD method_24565 isVisibleInMemory (Lnet/minecraft/class_1309;Lnet/minecraft/class_1297;)Z
 		ARG 0 source
-		ARG 1 target
-	METHOD method_25940 isTargetWithinAttackRange (Lnet/minecraft/class_1308;Lnet/minecraft/class_1309;I)Z
+	METHOD method_25940 isTargetWithinAttackRange (Lnet/minecraft/class_1308;Lnet/minecraft/class_1297;I)Z
 		ARG 0 mob
-		ARG 1 target
 		ARG 2 rangedWeaponReachReduction
-	METHOD method_31500 (Lnet/minecraft/class_1297;)Lnet/minecraft/class_1309;
-		ARG 0 target
 	METHOD method_33193 find (Lnet/minecraft/class_1314;II)Lnet/minecraft/class_243;
 		ARG 0 entity
 		ARG 1 horizontalRange

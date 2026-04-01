@@ -1,14 +1,13 @@
 CLASS net/minecraft/class_1811 net/minecraft/item/RangedWeaponItem
 	FIELD field_18281 BOW_PROJECTILES Ljava/util/function/Predicate;
 	FIELD field_18282 CROSSBOW_HELD_PROJECTILES Ljava/util/function/Predicate;
-	METHOD method_7763 shoot (Lnet/minecraft/class_1309;Lnet/minecraft/class_1676;IFFFLnet/minecraft/class_1309;)V
+	METHOD method_7763 shoot (Lnet/minecraft/class_1309;Lnet/minecraft/class_1676;IFFFLnet/minecraft/class_1297;)V
 		ARG 1 shooter
 		ARG 2 projectile
 		ARG 3 index
 		ARG 4 speed
 		ARG 5 divergence
 		ARG 6 yaw
-		ARG 7 target
 	METHOD method_18815 getHeldProjectile (Lnet/minecraft/class_1309;Ljava/util/function/Predicate;)Lnet/minecraft/class_1799;
 		ARG 0 entity
 		ARG 1 predicate
@@ -36,7 +35,7 @@ CLASS net/minecraft/class_1811 net/minecraft/item/RangedWeaponItem
 		ARG 1 projectileStack
 		ARG 2 shooter
 		ARG 3 multishot
-	METHOD method_57393 shootAll (Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;Lnet/minecraft/class_1268;Lnet/minecraft/class_1799;Ljava/util/List;FFZLnet/minecraft/class_1309;)V
+	METHOD method_57393 shootAll (Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;Lnet/minecraft/class_1268;Lnet/minecraft/class_1799;Ljava/util/List;FFZLnet/minecraft/class_1297;)V
 		ARG 1 world
 		ARG 2 shooter
 		ARG 3 hand
@@ -45,6 +44,5 @@ CLASS net/minecraft/class_1811 net/minecraft/item/RangedWeaponItem
 		ARG 6 speed
 		ARG 7 divergence
 		ARG 8 critical
-		ARG 9 target
-	METHOD method_61659 (Lnet/minecraft/class_1309;IFFFLnet/minecraft/class_1309;Lnet/minecraft/class_1676;)V
+	METHOD method_61659 (Lnet/minecraft/class_1309;IFFFLnet/minecraft/class_1297;Lnet/minecraft/class_1676;)V
 		ARG 7 projectile

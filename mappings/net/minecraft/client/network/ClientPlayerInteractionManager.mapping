@@ -117,8 +117,7 @@ CLASS net/minecraft/class_636 net/minecraft/client/network/ClientPlayerInteracti
 		ARG 1 slot
 		ARG 2 screenHandlerId
 		ARG 3 newState
-	METHOD method_65193 pickItemFromBlock (Lnet/minecraft/class_2338;Z)V
-		ARG 1 pos
+	METHOD method_65193 pickItemFromBlock (Lnet/minecraft/class_3965;Z)V
 		ARG 2 includeData
 	METHOD method_75407 attackWithPiercingWeapon (Lnet/minecraft/class_12125;)V
 		ARG 1 piercingWeaponComponent

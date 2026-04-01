@@ -22,8 +22,7 @@ CLASS net/minecraft/class_1621 net/minecraft/entity/mob/SlimeEntity
 		ARG 2 heal
 	METHOD method_7162 getParticles ()Lnet/minecraft/class_2394;
 	METHOD method_7163 canAttack ()Z
-	METHOD method_18451 (Lnet/minecraft/class_1309;Lnet/minecraft/class_3218;)Z
-		ARG 1 target
+	METHOD method_18451 (Lnet/minecraft/class_1297;Lnet/minecraft/class_3218;)Z
 		ARG 2 world
 	METHOD method_20685 canSpawn (Lnet/minecraft/class_1299;Lnet/minecraft/class_1936;Lnet/minecraft/class_3730;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)Z
 		ARG 0 type

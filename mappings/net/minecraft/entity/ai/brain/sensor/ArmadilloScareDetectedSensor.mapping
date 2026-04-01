@@ -11,8 +11,6 @@ CLASS net/minecraft/class_9068 net/minecraft/entity/ai/brain/sensor/ArmadilloSca
 		ARG 5 expiry
 	METHOD method_55702 tryDetectThreat (Lnet/minecraft/class_1309;)V
 		ARG 1 entity
-	METHOD method_55703 (Lnet/minecraft/class_1309;Lnet/minecraft/class_1309;)Z
-		ARG 2 threat
 	METHOD method_55704 onDetected (Lnet/minecraft/class_1309;)V
 		ARG 1 entity
 	METHOD method_55705 clear (Lnet/minecraft/class_1309;)V

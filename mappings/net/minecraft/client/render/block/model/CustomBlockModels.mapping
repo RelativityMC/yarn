@@ -67,9 +67,6 @@ CLASS net/minecraft/class_1_417 net/minecraft/client/render/block/model/CustomBl
 	METHOD method_1_2768 christianChest (Lnet/minecraft/class_1_477;)Lnet/minecraft/class_1_417$class_1_420;
 	METHOD method_1_2769 (Lnet/minecraft/class_1767;Ljava/lang/Integer;)Lnet/minecraft/class_1_411$class_1_413;
 		ARG 1 rotation
-	METHOD method_1_2770 (Lnet/minecraft/class_1767;Lnet/minecraft/class_2350;Lnet/minecraft/class_2742;)Lnet/minecraft/class_1_411$class_1_413;
-		ARG 1 facing
-		ARG 2 part
 	METHOD method_1_2771 (Lnet/minecraft/class_4719;Ljava/lang/Integer;Ljava/lang/Boolean;)Lnet/minecraft/class_1_411$class_1_413;
 		ARG 1 rotation
 		ARG 2 attached

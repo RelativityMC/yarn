@@ -16,7 +16,7 @@ CLASS net/minecraft/class_3763 net/minecraft/entity/raid/RaiderEntity
 		ARG 1 ableToJoinRaid
 	METHOD method_16481 canJoinRaid ()Z
 	METHOD method_16482 hasActiveRaid ()Z
-	METHOD method_16483 (Lnet/minecraft/class_1542;)Z
+	METHOD method_16483 (Lnet/minecraft/class_1_525;)Z
 		ARG 0 itemEntity
 	METHOD method_16484 addBonusForWave (Lnet/minecraft/class_3218;IZ)V
 		ARG 1 world
@@ -40,7 +40,7 @@ CLASS net/minecraft/class_3763 net/minecraft/entity/raid/RaiderEntity
 		FIELD field_16603 actor Lnet/minecraft/class_3763;
 		FIELD field_52513 bannerItemCache Lit/unimi/dsi/fastutil/ints/Int2LongOpenHashMap;
 		FIELD field_52514 path Lnet/minecraft/class_11;
-		FIELD field_52515 bannerItemEntity Lnet/minecraft/class_1542;
+		FIELD field_52515 bannerItemEntity Lnet/minecraft/class_1_525;
 		METHOD <init> (Lnet/minecraft/class_3763;Lnet/minecraft/class_3763;)V
 			ARG 2 actor
 		METHOD method_61559 shouldStop ()Z

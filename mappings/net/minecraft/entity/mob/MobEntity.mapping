@@ -12,7 +12,7 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 	FIELD field_6194 experiencePoints I
 	FIELD field_6196 pathfindingPenalties Ljava/util/Map;
 	FIELD field_6198 lootTable Ljava/util/Optional;
-	FIELD field_6199 target Lnet/minecraft/class_1309;
+	FIELD field_6199 target Lnet/minecraft/class_1297;
 	FIELD field_6200 persistent Z
 	FIELD field_6201 goalSelector Lnet/minecraft/class_1355;
 		COMMENT Contains actions the entity can perform. These may consume, for example, the target
@@ -62,9 +62,8 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 	FIELD field_60548 NO_AI_KEY Ljava/lang/String;
 	FIELD field_62909 ARMOR_UPGRADE_CHANCE F
 	FIELD field_62910 ARMOR_UPGRADE_ROLLS F
-	METHOD method_1_370 filterTarget (Lnet/minecraft/class_1309;)Lnet/minecraft/class_1309;
-		ARG 1 target
-	METHOD method_1_837 getRawTarget ()Lnet/minecraft/class_1309;
+	METHOD method_1_370 filterTarget (Lnet/minecraft/class_1297;)Lnet/minecraft/class_1297;
+	METHOD method_1_837 getRawTarget ()Lnet/minecraft/class_1297;
 		COMMENT {@return this entity’s target, even if it is untargetable (e.g. due to being
 		COMMENT in creative or spectator mode)}
 	METHOD method_5930 setForwardSpeed (F)V
@@ -91,7 +90,7 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 	METHOD method_5948 getEquipmentForSlot (Lnet/minecraft/class_1304;I)Lnet/minecraft/class_1792;
 		ARG 0 equipmentSlot
 		ARG 1 equipmentLevel
-	METHOD method_5949 loot (Lnet/minecraft/class_3218;Lnet/minecraft/class_1542;)V
+	METHOD method_5949 loot (Lnet/minecraft/class_3218;Lnet/minecraft/class_1_525;)V
 		ARG 1 world
 		ARG 2 itemEntity
 	METHOD method_5951 lookAtEntity (Lnet/minecraft/class_1297;FF)V
@@ -149,8 +148,7 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 	METHOD method_5979 canSpawn (Lnet/minecraft/class_1936;Lnet/minecraft/class_3730;)Z
 		ARG 1 world
 		ARG 2 spawnReason
-	METHOD method_5980 setTarget (Lnet/minecraft/class_1309;)V
-		ARG 1 target
+	METHOD method_5980 setTarget (Lnet/minecraft/class_1297;)V
 	METHOD method_5983 onEatingGrass ()V
 	METHOD method_5984 updateEnchantments (Lnet/minecraft/class_5425;Lnet/minecraft/class_5819;Lnet/minecraft/class_1266;)V
 		ARG 1 world
@@ -250,8 +248,7 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 		ARG 3 localDifficulty
 	METHOD method_35055 clearPositionTarget ()V
 	METHOD method_35056 clearGoalsAndTasks ()V
-	METHOD method_42150 isInAttackRange (Lnet/minecraft/class_1309;)Z
-		ARG 1 entity
+	METHOD method_42150 isInAttackRange (Lnet/minecraft/class_1297;)Z
 	METHOD method_42646 getItemPickUpRangeExpander ()Lnet/minecraft/class_2382;
 	METHOD method_47824 (Lnet/minecraft/class_1352;)Z
 		ARG 0 goal
@@ -274,7 +271,7 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 		ARG 1 equipmentTable
 	METHOD method_58635 createEquipmentLootParameters (Lnet/minecraft/class_3218;)Lnet/minecraft/class_8567;
 		ARG 1 world
-	METHOD method_59664 getTargetInBrain ()Lnet/minecraft/class_1309;
+	METHOD method_59664 getTargetInBrain ()Lnet/minecraft/class_1297;
 	METHOD method_59665 setEquipmentFromTable (Lnet/minecraft/class_5321;Ljava/util/Map;)V
 		ARG 1 lootTable
 		ARG 2 slotDropChances

@@ -6,8 +6,7 @@ CLASS net/minecraft/class_907 net/minecraft/client/render/entity/GuardianEntityR
 		ARG 1 ctx
 		ARG 2 shadowRadius
 		ARG 3 layer
-	METHOD method_3979 fromLerpedPosition (Lnet/minecraft/class_1309;DF)Lnet/minecraft/class_243;
-		ARG 1 entity
+	METHOD method_3979 fromLerpedPosition (Lnet/minecraft/class_1297;DF)Lnet/minecraft/class_243;
 		ARG 2 yOffset
 		ARG 4 delta
 	METHOD method_23173 vertex (Lnet/minecraft/class_4588;Lnet/minecraft/class_4587$class_4665;FFFIIIFF)V

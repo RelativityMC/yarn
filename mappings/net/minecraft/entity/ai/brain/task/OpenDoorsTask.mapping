@@ -17,10 +17,6 @@ CLASS net/minecraft/class_4107 net/minecraft/entity/ai/brain/task/OpenDoorsTask
 		ARG 0 world
 		ARG 1 entity
 		ARG 2 doorPos
-	METHOD method_30764 (Lnet/minecraft/class_1309;Lnet/minecraft/class_1309;)Z
-		ARG 1 mob
-	METHOD method_30765 (Lnet/minecraft/class_2338;Lnet/minecraft/class_1309;)Z
-		ARG 1 mob
 	METHOD method_30766 hasReached (Lnet/minecraft/class_4095;Lnet/minecraft/class_2338;)Z
 		ARG 0 brain
 		ARG 1 pos
@@ -42,8 +38,6 @@ CLASS net/minecraft/class_4107 net/minecraft/entity/ai/brain/task/OpenDoorsTask
 		ARG 1 doors
 		ARG 2 world
 		ARG 3 pos
-	METHOD method_46970 (Lnet/minecraft/class_2338;Lnet/minecraft/class_1309;)Z
-		ARG 1 mob
 	METHOD method_46971 (Lnet/minecraft/class_4208;Ljava/util/Set;)Ljava/util/Set;
 		ARG 1 doorSet
 	METHOD method_46972 (Lorg/apache/commons/lang3/mutable/MutableObject;Lorg/apache/commons/lang3/mutable/MutableInt;Lnet/minecraft/class_7898$class_7900;)Lcom/mojang/datafixers/kinds/App;

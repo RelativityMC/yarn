@@ -4,12 +4,10 @@ CLASS net/minecraft/class_1890 net/minecraft/enchantment/EnchantmentHelper
 		COMMENT {@code existing} enchantments}
 		ARG 0 existing
 		ARG 1 candidate
-	METHOD method_8203 getEquipmentLevel (Lnet/minecraft/class_6880;Lnet/minecraft/class_1309;)I
+	METHOD method_8203 getEquipmentLevel (Lnet/minecraft/class_6880;Lnet/minecraft/class_1297;)I
 		COMMENT {@return the highest level of the passed enchantment in the enchantment's
 		COMMENT applicable equipment slots' item stacks}
 		ARG 0 enchantment
-		ARG 1 entity
-			COMMENT the entity whose equipment slots are checked
 	METHOD method_8204 chooseEquipmentWith (Lnet/minecraft/class_9331;Lnet/minecraft/class_1309;Ljava/util/function/Predicate;)Ljava/util/Optional;
 		COMMENT {@return a pair of an equipment slot and the item stack in the supplied
 		COMMENT entity's slot} It indicates the item stack has the enchantment supplied.
@@ -19,8 +17,7 @@ CLASS net/minecraft/class_1890 net/minecraft/enchantment/EnchantmentHelper
 		ARG 0 componentType
 		ARG 1 entity
 		ARG 2 stackPredicate
-	METHOD method_8209 forEachEnchantment (Lnet/minecraft/class_1309;Lnet/minecraft/class_1890$class_9702;)V
-		ARG 0 entity
+	METHOD method_8209 forEachEnchantment (Lnet/minecraft/class_1297;Lnet/minecraft/class_1890$class_9702;)V
 		ARG 1 contextAwareConsumer
 	METHOD method_8219 getProtectionAmount (Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;Lnet/minecraft/class_1282;)F
 		ARG 0 world
@@ -108,12 +105,11 @@ CLASS net/minecraft/class_1890 net/minecraft/enchantment/EnchantmentHelper
 		ARG 0 world
 		ARG 1 user
 		ARG 2 damageSource
-	METHOD method_60113 getEquipmentDropChance (Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;Lnet/minecraft/class_1282;F)F
+	METHOD method_60113 getEquipmentDropChance (Lnet/minecraft/class_3218;Lnet/minecraft/class_1297;Lnet/minecraft/class_1282;F)F
 		ARG 0 world
-		ARG 1 attacker
 		ARG 2 damageSource
 		ARG 3 baseEquipmentDropChance
-	METHOD method_60114 (Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;Lnet/minecraft/class_1282;Lorg/apache/commons/lang3/mutable/MutableFloat;Lnet/minecraft/class_5819;Lnet/minecraft/class_6880;ILnet/minecraft/class_9699;)V
+	METHOD method_60114 (Lnet/minecraft/class_3218;Lnet/minecraft/class_1297;Lnet/minecraft/class_1282;Lorg/apache/commons/lang3/mutable/MutableFloat;Lnet/minecraft/class_5819;Lnet/minecraft/class_6880;ILnet/minecraft/class_9699;)V
 		ARG 5 enchantment
 		ARG 6 level
 		ARG 7 context
@@ -218,10 +214,9 @@ CLASS net/minecraft/class_1890 net/minecraft/enchantment/EnchantmentHelper
 	METHOD method_60138 hasAnyEnchantmentsIn (Lnet/minecraft/class_1799;Lnet/minecraft/class_6862;)Z
 		ARG 0 stack
 		ARG 1 tag
-	METHOD method_60139 forEachEnchantment (Lnet/minecraft/class_1799;Lnet/minecraft/class_1304;Lnet/minecraft/class_1309;Lnet/minecraft/class_1890$class_9702;)V
+	METHOD method_60139 forEachEnchantment (Lnet/minecraft/class_1799;Lnet/minecraft/class_1304;Lnet/minecraft/class_1297;Lnet/minecraft/class_1890$class_9702;)V
 		ARG 0 stack
 		ARG 1 slot
-		ARG 2 entity
 		ARG 3 contextAwareConsumer
 	METHOD method_60140 applyAttributeModifiers (Lnet/minecraft/class_1799;Lnet/minecraft/class_1304;Ljava/util/function/BiConsumer;)V
 		ARG 0 stack
@@ -257,7 +252,7 @@ CLASS net/minecraft/class_1890 net/minecraft/enchantment/EnchantmentHelper
 	METHOD method_60154 onTick (Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;)V
 		ARG 0 world
 		ARG 1 user
-	METHOD method_60155 (Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;Lnet/minecraft/class_1282;Lorg/apache/commons/lang3/mutable/MutableFloat;Lnet/minecraft/class_5819;Lnet/minecraft/class_6880;ILnet/minecraft/class_9699;)V
+	METHOD method_60155 (Lnet/minecraft/class_3218;Lnet/minecraft/class_1297;Lnet/minecraft/class_1282;Lorg/apache/commons/lang3/mutable/MutableFloat;Lnet/minecraft/class_5819;Lnet/minecraft/class_6880;ILnet/minecraft/class_9699;)V
 		ARG 5 enchantment
 		ARG 6 level
 		ARG 7 context

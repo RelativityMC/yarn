@@ -17,9 +17,6 @@ CLASS net/minecraft/class_1438 net/minecraft/entity/passive/MooshroomEntity
 	METHOD method_47846 setVariant (Lnet/minecraft/class_1438$class_4053;)V
 		ARG 1 variant
 	METHOD method_47847 getVariant ()Lnet/minecraft/class_1438$class_4053;
-	METHOD method_61469 (Lnet/minecraft/class_3218;Lnet/minecraft/class_1799;)V
-		ARG 1 worldx
-		ARG 2 stack
 	METHOD method_63648 (Lnet/minecraft/class_3218;Lnet/minecraft/class_1799;Lnet/minecraft/class_10730;)V
 		ARG 3 cow
 	CLASS class_4053 Variant

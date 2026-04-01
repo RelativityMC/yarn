@@ -6,8 +6,6 @@ CLASS net/minecraft/class_1628 net/minecraft/entity/mob/SpiderEntity
 		ARG 1 climbing
 	METHOD method_7167 isClimbingWall ()Z
 	METHOD method_26923 createSpiderAttributes ()Lnet/minecraft/class_5132$class_5133;
-	METHOD method_56086 (Lnet/minecraft/class_1309;)Z
-		ARG 0 entity
 	CLASS class_1629 AttackGoal
 		METHOD <init> (Lnet/minecraft/class_1628;)V
 			ARG 1 spider

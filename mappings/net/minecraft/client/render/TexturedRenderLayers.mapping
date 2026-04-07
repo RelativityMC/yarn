@@ -1,10 +1,8 @@
 CLASS net/minecraft/class_4722 net/minecraft/client/render/TexturedRenderLayers
-	FIELD field_1_1398 ITEM_ENTITY_TRANSLUCENT_CULL Lnet/minecraft/class_1921;
 	FIELD field_1_1728 BANNER_BANNER_BASE Lnet/minecraft/class_1_310;
 	FIELD field_1_1729 ITEM_TRANSPARENT_CULL Lnet/minecraft/class_1921;
 	FIELD field_1_1730 SHIELD_SHIELD_BASE Lnet/minecraft/class_1_310;
 	FIELD field_1_1731 SHIELD_SHIELD_BASE_NOPATTERN Lnet/minecraft/class_1_310;
-	FIELD field_21701 BLOCK_TRANSPARENT_CULL Lnet/minecraft/class_1921;
 	FIELD field_21704 SHULKER_BOXES_ATLAS_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_21705 BEDS_ATLAS_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_21706 BANNER_PATTERNS_ATLAS_TEXTURE Lnet/minecraft/class_2960;
@@ -46,7 +44,6 @@ CLASS net/minecraft/class_4722 net/minecraft/client/render/TexturedRenderLayers
 	FIELD field_63577 CELESTIALS_ATLAS_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_64451 BLOCK_TRANSLUCENT_CULL Lnet/minecraft/class_1921;
 	FIELD field_64452 ITEM_TRANSLUCENT_CULL Lnet/minecraft/class_1921;
-	METHOD method_1_1664 getItemEntityTranslucentCull ()Lnet/minecraft/class_1921;
 	METHOD method_1_2139 getItemTransparentCull ()Lnet/minecraft/class_1921;
 	METHOD method_24062 getChestTextureId (Lnet/minecraft/class_11959$class_11960;Lnet/minecraft/class_2745;)Lnet/minecraft/class_1_310;
 		ARG 0 variant
@@ -54,7 +51,6 @@ CLASS net/minecraft/class_4722 net/minecraft/client/render/TexturedRenderLayers
 	METHOD method_24064 createSignTextureId (Lnet/minecraft/class_4719;)Lnet/minecraft/class_1_310;
 		ARG 0 type
 	METHOD method_24072 getChest ()Lnet/minecraft/class_1921;
-	METHOD method_24074 getEntityCutout ()Lnet/minecraft/class_1921;
 	METHOD method_29382 getItemTranslucentCull ()Lnet/minecraft/class_1921;
 	METHOD method_33081 getBannerPatternTextureId (Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_310;
 		ARG 0 pattern

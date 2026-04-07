@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_5725 net/minecraft/world/gen/feature/DripstoneClusterFeature
-	METHOD method_32997 dripstoneChance (IIIILnet/minecraft/class_5731;)D
+	METHOD method_32997 dripstoneChance (IIIILnet/minecraft/class_1_773;)D
 		ARG 1 radiusX
 		ARG 2 radiusZ
 		ARG 3 localX
@@ -8,15 +8,15 @@ CLASS net/minecraft/class_5725 net/minecraft/world/gen/feature/DripstoneClusterF
 	METHOD method_32998 isStoneOrWater (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;)Z
 		ARG 1 world
 		ARG 2 pos
-	METHOD method_33000 canWaterSpawn (Lnet/minecraft/class_5281;Lnet/minecraft/class_2338;)Z
+	METHOD method_33000 canWaterSpawn (Lnet/minecraft/class_5281;Lnet/minecraft/class_2338;Lnet/minecraft/class_1_773;)Z
 		ARG 1 world
 		ARG 2 pos
-	METHOD method_33001 placeDripstoneBlocks (Lnet/minecraft/class_5281;Lnet/minecraft/class_2338;ILnet/minecraft/class_2350;)V
+	METHOD method_33001 placeDripstoneBlocks (Lnet/minecraft/class_5281;Lnet/minecraft/class_2338;ILnet/minecraft/class_2350;Lnet/minecraft/class_1_773;)V
 		ARG 1 world
 		ARG 2 pos
 		ARG 3 height
 		ARG 4 direction
-	METHOD method_33002 generate (Lnet/minecraft/class_5281;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338;IIFDIFLnet/minecraft/class_5731;)V
+	METHOD method_33002 generate (Lnet/minecraft/class_5281;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338;IIFDIFLnet/minecraft/class_1_773;)V
 		ARG 1 world
 		ARG 2 random
 		ARG 3 pos
@@ -33,7 +33,7 @@ CLASS net/minecraft/class_5725 net/minecraft/world/gen/feature/DripstoneClusterF
 		ARG 2 max
 		ARG 3 mean
 		ARG 4 deviation
-	METHOD method_33004 getHeight (Lnet/minecraft/class_5819;IIFILnet/minecraft/class_5731;)I
+	METHOD method_33004 getHeight (Lnet/minecraft/class_5819;IIFILnet/minecraft/class_1_773;)I
 		ARG 1 random
 		ARG 2 localX
 		ARG 3 localZ

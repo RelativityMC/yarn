@@ -28,17 +28,17 @@ CLASS net/minecraft/class_6498 net/minecraft/util/WinNativeModuleUtil
 		ARG 1 path
 		ARG 2 lengthPointer
 	CLASS class_6499 NativeModule
-		FIELD field_34396 path Ljava/lang/String;
-		FIELD field_34397 info Ljava/util/Optional;
+		FIELD comp_1_484 path Ljava/lang/String;
+		FIELD comp_1_485 info Ljava/util/Optional;
 		METHOD <init> (Ljava/lang/String;Ljava/util/Optional;)V
 			ARG 1 path
 			ARG 2 info
 		METHOD method_37971 (Lnet/minecraft/class_6498$class_6500;)Ljava/lang/String;
 			ARG 1 info
 	CLASS class_6500 NativeModuleInfo
-		FIELD field_34398 fileDescription Ljava/lang/String;
-		FIELD field_34399 fileVersion Ljava/lang/String;
-		FIELD field_34400 companyName Ljava/lang/String;
+		FIELD comp_1_486 companyName Ljava/lang/String;
+		FIELD comp_1_487 fileDescription Ljava/lang/String;
+		FIELD comp_1_488 fileVersion Ljava/lang/String;
 		METHOD <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 			ARG 1 fileDescription
 			ARG 2 fileVersion

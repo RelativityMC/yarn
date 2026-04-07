@@ -43,10 +43,6 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	METHOD method_1_2674 renderGui (Lnet/minecraft/class_9779;Z)V
 		ARG 1 renderTickCounter
 		ARG 2 tick
-	METHOD method_1_2675 renderGuiInternal (Lnet/minecraft/class_9779;ZZ)V
-		ARG 1 renderTickCounter
-		ARG 2 tick
-		ARG 3 finishedLoading
 	METHOD method_1_2676 updateOptionsRenderState ()V
 	METHOD method_1_2677 updateWindowRenderState ()V
 	METHOD method_1_2678 registerPanoramaTextures (Lnet/minecraft/class_1060;)V
@@ -119,11 +115,3 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 		ARG 1 renderTickCounter
 		ARG 2 skyTickProgress
 		ARG 3 cameraTickProgress
-	METHOD method_75836 (Lnet/minecraft/class_11246;Lnet/minecraft/class_11247;)V
-		ARG 2 element
-	METHOD method_75837 renderActiveTextAreas ()V
-	CLASS 1 1
-		FIELD field_63914 index I
-		METHOD method_75838 addGlyph (Lnet/minecraft/class_12236;Z)V
-			ARG 1 glyph
-			ARG 2 empty

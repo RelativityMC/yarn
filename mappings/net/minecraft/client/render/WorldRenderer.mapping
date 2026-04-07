@@ -125,15 +125,10 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 7 fogColor
 		ARG 8 renderSky
 		ARG 9 sectionRenderState
-	METHOD method_22712 drawBlockOutline (Lnet/minecraft/class_4587;Lnet/minecraft/class_4588;DDDLnet/minecraft/class_12074;IF)V
-		ARG 1 matrices
-		ARG 2 vertexConsumer
-		ARG 3 x
-		ARG 5 y
-		ARG 7 z
-		ARG 9 state
-		ARG 10 color
-		ARG 11 lineWidth
+	METHOD method_22712 drawBlockOutline (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;Lnet/minecraft/class_1921;Lnet/minecraft/class_12074;IFZ)V
+		ARG 4 state
+		ARG 5 color
+		ARG 6 lineWidth
 	METHOD method_22979 checkEmpty (Lnet/minecraft/class_4587;)V
 		ARG 1 matrices
 	METHOD method_22987 removeBlockBreakingInfo (Lnet/minecraft/class_3191;)V
@@ -205,11 +200,9 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 1 matrices
 		ARG 2 renderStates
 		ARG 3 queue
-	METHOD method_62210 renderTargetBlockOutline (Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_4587;ZLnet/minecraft/class_11658;)V
-		ARG 1 immediate
-		ARG 2 matrices
-		ARG 3 renderBlockOutline
-		ARG 4 renderStates
+	METHOD method_62210 renderTargetBlockOutline (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;Lnet/minecraft/class_11658;)V
+		ARG 1 matrices
+		ARG 3 renderStates
 	METHOD method_62219 scheduleChunkRenders (IIIIII)V
 		ARG 1 minX
 		ARG 2 minY

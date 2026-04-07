@@ -43,10 +43,6 @@ CLASS net/minecraft/class_4410 net/minecraft/client/realms/gui/screen/RealmsCrea
 		ARG 3 slot
 		ARG 4 title
 		ARG 5 subtitle
-	METHOD method_25211 (Lnet/minecraft/class_4185;)V
-		ARG 1 button
-	METHOD method_25212 (Lnet/minecraft/class_4185;)V
-		ARG 1 button
 	METHOD method_25213 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
 	METHOD method_32488 onSelectWorldTemplate (Lnet/minecraft/class_4890;)V
@@ -63,16 +59,10 @@ CLASS net/minecraft/class_4410 net/minecraft/client/realms/gui/screen/RealmsCrea
 		ARG 1 serverData
 		ARG 2 creationTask
 		ARG 3 callback
-	METHOD method_53804 (Lnet/minecraft/class_4185;)V
-		ARG 1 button
 	METHOD method_53805 resetWorld (Lnet/minecraft/class_437;Lnet/minecraft/class_4877;Ljava/lang/Runnable;)Lnet/minecraft/class_4410;
 		ARG 0 parent
 		ARG 1 serverData
 		ARG 2 callback
-	METHOD method_53806 (Lnet/minecraft/class_4185;)V
-		ARG 1 button
-	METHOD method_53807 (Lnet/minecraft/class_4185;)V
-		ARG 1 button
 	METHOD method_54380 runTasks (Lnet/minecraft/class_4358;)V
 		ARG 1 task
 	CLASS class_4411 FrameButton

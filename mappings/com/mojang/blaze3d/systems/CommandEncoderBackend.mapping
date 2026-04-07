@@ -59,16 +59,10 @@ CLASS net/minecraft/class_1_154 com/mojang/blaze3d/systems/CommandEncoderBackend
 		ARG 3 clearColor
 		ARG 4 depthAttachment
 		ARG 5 clearDepth
-	METHOD method_1_1392 isRenderPassOpen ()Z
 	METHOD method_1_1393 mapBuffer (Lcom/mojang/blaze3d/buffers/GpuBufferSlice;ZZ)Lcom/mojang/blaze3d/buffers/GpuBuffer$MappedView;
 		ARG 1 slice
 		ARG 2 read
 		ARG 3 write
-	METHOD method_1_1394 presentTexture (Lcom/mojang/blaze3d/textures/GpuTextureView;)V
-		ARG 1 texture
-	METHOD method_1_1395 timerQueryBegin ()Lcom/mojang/blaze3d/systems/GpuQuery;
-	METHOD method_1_1396 timerQueryEnd (Lcom/mojang/blaze3d/systems/GpuQuery;)V
-		ARG 1 timerQuery
 	METHOD method_1_1397 writeToBuffer (Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Ljava/nio/ByteBuffer;)V
 		ARG 1 slice
 		ARG 2 source
@@ -93,3 +87,4 @@ CLASS net/minecraft/class_1_154 com/mojang/blaze3d/systems/CommandEncoderBackend
 		ARG 7 offsetY
 		ARG 8 width
 		ARG 9 height
+	METHOD method_68346 closePass ()V

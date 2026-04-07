@@ -59,7 +59,6 @@ CLASS net/minecraft/class_1463 net/minecraft/entity/passive/RabbitEntity
 			ARG 1 variant
 	CLASS class_1468 RabbitMoveControl
 		FIELD field_6858 rabbitSpeed D
-		FIELD field_6859 rabbit Lnet/minecraft/class_1463;
 		METHOD <init> (Lnet/minecraft/class_1463;)V
 			ARG 1 owner
 	CLASS class_1469 EscapeDangerGoal

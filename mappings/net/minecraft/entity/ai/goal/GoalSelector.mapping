@@ -30,7 +30,6 @@ CLASS net/minecraft/class_1355 net/minecraft/entity/ai/goal/GoalSelector
 	METHOD method_6280 remove (Lnet/minecraft/class_1352;)V
 		ARG 1 goal
 	METHOD method_35113 clear (Ljava/util/function/Predicate;)V
-		ARG 1 predicate
 	METHOD method_35115 getGoals ()Ljava/util/Set;
 	METHOD method_38063 usesAny (Lnet/minecraft/class_4135;Ljava/util/EnumSet;)Z
 		ARG 0 goal

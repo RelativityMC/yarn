@@ -69,14 +69,12 @@ CLASS net/minecraft/class_6954 net/minecraft/world/gen/densityfunction/DensityFu
 		ARG 0 weirdness
 	METHOD method_41547 createRidgesFoldedOverworldFunction (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
 		ARG 0 input
-	METHOD method_41548 registerSlopedCheeseFunction (Lnet/minecraft/class_7891;Lnet/minecraft/class_7871;Lnet/minecraft/class_6910;Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;Lnet/minecraft/class_5321;Lnet/minecraft/class_5321;Lnet/minecraft/class_5321;Lnet/minecraft/class_5321;Lnet/minecraft/class_5321;Z)V
+	METHOD method_41548 registerSlopedCheeseFunction (Lnet/minecraft/class_7891;Lnet/minecraft/class_7871;Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;Lnet/minecraft/class_5321;Lnet/minecraft/class_5321;Lnet/minecraft/class_5321;Lnet/minecraft/class_5321;Lnet/minecraft/class_5321;Z)V
 		COMMENT Creates and registers the {@code sloped_cheese} density function.
 		COMMENT This is used for the normal, large biomes and amplified world types.
 		ARG 0 densityFunctionRegisterable
 		ARG 1 densityFunctionLookup
 		ARG 2 jaggedNoise
-		ARG 3 continents
-		ARG 4 erosion
 		ARG 5 offsetKey
 		ARG 6 factorKey
 		ARG 7 jaggednessKey

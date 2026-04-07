@@ -34,9 +34,9 @@ CLASS net/minecraft/class_4184 net/minecraft/client/render/Camera
 	FIELD field_18722 lastCameraY F
 	FIELD field_21518 rotation Lorg/joml/Quaternionf;
 	FIELD field_47841 BASE_CAMERA_DISTANCE F
-	FIELD field_52123 HORIZONTAL Lorg/joml/Vector3f;
-	FIELD field_52124 VERTICAL Lorg/joml/Vector3f;
-	FIELD field_52125 DIAGONAL Lorg/joml/Vector3f;
+	FIELD field_52123 HORIZONTAL Lorg/joml/Vector3fc;
+	FIELD field_52124 VERTICAL Lorg/joml/Vector3fc;
+	FIELD field_52125 DIAGONAL Lorg/joml/Vector3fc;
 	FIELD field_63830 environmentAttributeInterpolator Lnet/minecraft/class_12202;
 	METHOD method_1_2094 setPositionAndRotation (F)V
 		ARG 1 tickProgress

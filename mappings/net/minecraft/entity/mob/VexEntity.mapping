@@ -27,6 +27,4 @@ CLASS net/minecraft/class_1634 net/minecraft/entity/mob/VexEntity
 		METHOD <init> (Lnet/minecraft/class_1634;Lnet/minecraft/class_1314;)V
 			ARG 2 mob
 	CLASS class_1637 VexMoveControl
-		METHOD <init> (Lnet/minecraft/class_1634;Lnet/minecraft/class_1634;)V
-			ARG 2 owner
 	CLASS class_1638 LookAtTargetGoal

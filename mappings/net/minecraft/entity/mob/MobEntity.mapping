@@ -268,8 +268,6 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 	METHOD method_56080 clampHeadYaw ()V
 	METHOD method_56676 getBodyArmor ()Lnet/minecraft/class_1799;
 	METHOD method_56677 isWearingBodyArmor ()Z
-	METHOD method_56678 equipBodyArmor (Lnet/minecraft/class_1799;)V
-		ARG 1 stack
 	METHOD method_58634 setEquipmentFromTable (Lnet/minecraft/class_9652;)V
 		ARG 1 equipmentTable
 	METHOD method_58635 createEquipmentLootParameters (Lnet/minecraft/class_3218;)Lnet/minecraft/class_8567;

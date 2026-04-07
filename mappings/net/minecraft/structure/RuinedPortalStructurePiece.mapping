@@ -1,18 +1,16 @@
 CLASS net/minecraft/class_5189 net/minecraft/structure/RuinedPortalStructurePiece
 	FIELD field_24021 verticalPlacement Lnet/minecraft/class_5189$class_5191;
 	FIELD field_24022 properties Lnet/minecraft/class_5189$class_5190;
-	METHOD <init> (Lnet/minecraft/class_3485;Lnet/minecraft/class_2338;Lnet/minecraft/class_5189$class_5191;Lnet/minecraft/class_5189$class_5190;Lnet/minecraft/class_2960;Lnet/minecraft/class_3499;Lnet/minecraft/class_2470;Lnet/minecraft/class_2415;Lnet/minecraft/class_2338;)V
-		ARG 1 manager
-		ARG 2 pos
-		ARG 3 verticalPlacement
-		ARG 4 properties
-		ARG 5 id
-		ARG 6 template
-		ARG 7 rotation
-		ARG 8 mirror
-	METHOD <init> (Lnet/minecraft/class_3485;Lnet/minecraft/class_2487;)V
-		ARG 1 manager
+	METHOD <init> (Lnet/minecraft/class_6625;Lnet/minecraft/class_2487;)V
 		ARG 2 nbt
+	METHOD <init> (Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_3485;Lnet/minecraft/class_2338;Lnet/minecraft/class_5189$class_5191;Lnet/minecraft/class_5189$class_5190;Lnet/minecraft/class_2960;Lnet/minecraft/class_3499;Lnet/minecraft/class_2470;Lnet/minecraft/class_2415;Lnet/minecraft/class_2338;)V
+		ARG 2 manager
+		ARG 3 pos
+		ARG 4 verticalPlacement
+		ARG 5 properties
+		ARG 6 id
+		ARG 7 template
+		ARG 8 rotation
 	METHOD method_27237 getBaseHeight (Lnet/minecraft/class_1936;IILnet/minecraft/class_5189$class_5191;)I
 		ARG 0 world
 		ARG 1 x
@@ -57,25 +55,25 @@ CLASS net/minecraft/class_5189 net/minecraft/structure/RuinedPortalStructurePiec
 		ARG 3 pos
 	METHOD method_27250 (Lnet/minecraft/class_5819;Lnet/minecraft/class_5281;Lnet/minecraft/class_2338;)V
 		ARG 3 pos
-	METHOD method_35449 createPlacementData (Lnet/minecraft/class_3485;Lnet/minecraft/class_2487;Lnet/minecraft/class_2960;)Lnet/minecraft/class_3492;
-		ARG 0 manager
-		ARG 1 nbt
-		ARG 2 id
-	METHOD method_35450 createPlacementData (Lnet/minecraft/class_2415;Lnet/minecraft/class_2470;Lnet/minecraft/class_5189$class_5191;Lnet/minecraft/class_2338;Lnet/minecraft/class_5189$class_5190;)Lnet/minecraft/class_3492;
-		ARG 0 mirror
-		ARG 1 rotation
-		ARG 2 verticalPlacement
-		ARG 3 pos
-		ARG 4 properties
-	METHOD method_35451 (Lnet/minecraft/class_3485;Lnet/minecraft/class_2487;Lnet/minecraft/class_2960;)Lnet/minecraft/class_3492;
+	METHOD method_35449 createPlacementData (Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_3485;Lnet/minecraft/class_2487;Lnet/minecraft/class_2960;)Lnet/minecraft/class_3492;
+		ARG 1 manager
+		ARG 2 nbt
+		ARG 3 id
+	METHOD method_35450 createPlacementData (Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_2415;Lnet/minecraft/class_2470;Lnet/minecraft/class_5189$class_5191;Lnet/minecraft/class_2338;Lnet/minecraft/class_5189$class_5190;)Lnet/minecraft/class_3492;
+		ARG 1 mirror
+		ARG 2 rotation
+		ARG 3 verticalPlacement
+		ARG 4 pos
+		ARG 5 properties
+	METHOD method_35451 (Lnet/minecraft/class_6625;Lnet/minecraft/class_2487;Lnet/minecraft/class_2960;)Lnet/minecraft/class_3492;
 		ARG 2 id
 	CLASS class_5190 Properties
-		FIELD field_24023 cold Z
-		FIELD field_24024 mossiness F
-		FIELD field_24025 airPocket Z
-		FIELD field_24026 overgrown Z
-		FIELD field_24027 vines Z
-		FIELD field_24028 replaceWithBlackstone Z
+		FIELD comp_1_589 airPocket Z
+		FIELD comp_1_590 cold Z
+		FIELD comp_1_591 mossiness F
+		FIELD comp_1_592 overgrown Z
+		FIELD comp_1_593 replaceWithBlackstone Z
+		FIELD comp_1_594 vines Z
 		FIELD field_24993 CODEC Lcom/mojang/serialization/Codec;
 		METHOD <init> (ZFZZZZ)V
 			ARG 1 cold

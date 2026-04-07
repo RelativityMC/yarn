@@ -115,26 +115,12 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 6 sprite
 		ARG 7 tintedColor
 		ARG 8 crumblingOverlay
-	METHOD method_73493 submitModelPart (Lnet/minecraft/class_630;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;IILnet/minecraft/class_1058;ZZ)V
-		ARG 1 part
+	METHOD method_73493 submitModelPart (Lnet/minecraft/class_630;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;IILnet/minecraft/class_1058;ILnet/minecraft/class_11683$class_11792;I)V
 		ARG 2 matrices
 		ARG 3 renderLayer
 		ARG 4 light
 		ARG 5 overlay
 		ARG 6 sprite
-		ARG 7 sheeted
-		ARG 8 hasGlint
-	METHOD method_73494 submitModelPart (Lnet/minecraft/class_630;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;IILnet/minecraft/class_1058;ZZILnet/minecraft/class_11683$class_11792;I)V
-		ARG 1 part
-		ARG 2 matrices
-		ARG 3 renderLayer
-		ARG 4 light
-		ARG 5 overlay
-		ARG 6 sprite
-		ARG 7 sheeted
-		ARG 8 hasGlint
-		ARG 9 tintedColor
-		ARG 10 crumblingOverlay
-		ARG 11 outlineColor
+	METHOD method_73494 submitModelPart (Lnet/minecraft/class_4587;Lnet/minecraft/class_265;Lnet/minecraft/class_1921;IFZ)V
 	METHOD method_74315 submitCustom (Lnet/minecraft/class_11659$class_11947;)V
 		ARG 1 customRenderer

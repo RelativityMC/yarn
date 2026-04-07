@@ -5,7 +5,6 @@ CLASS net/minecraft/class_1422 net/minecraft/entity/passive/FishEntity
 	METHOD method_6457 getFlopSound ()Lnet/minecraft/class_3414;
 	METHOD method_26879 createFishAttributes ()Lnet/minecraft/class_5132$class_5133;
 	CLASS class_1423 FishMoveControl
-		FIELD field_6731 fish Lnet/minecraft/class_1422;
 		METHOD <init> (Lnet/minecraft/class_1422;)V
 			ARG 1 owner
 	CLASS class_1424 SwimToRandomPlaceGoal

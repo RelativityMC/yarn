@@ -3,7 +3,3 @@ CLASS net/minecraft/class_3828 net/minecraft/structure/processor/StructureProces
 	FIELD field_25876 PROCESSORS_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_25877 REGISTRY_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_26663 LIST_CODEC Lcom/mojang/serialization/Codec;
-	METHOD method_1_358 getCodec ()Lcom/mojang/serialization/MapCodec;
-	METHOD method_16822 register (Ljava/lang/String;Lcom/mojang/serialization/MapCodec;)Lnet/minecraft/class_3828;
-		ARG 0 id
-		ARG 1 codec

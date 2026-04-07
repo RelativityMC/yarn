@@ -1,38 +1,31 @@
 CLASS net/minecraft/class_6765 net/minecraft/world/biome/source/util/VanillaTerrainParametersCreator
-	FIELD field_38028 IDENTITY Lnet/minecraft/class_6501;
-	FIELD field_38029 OFFSET_AMPLIFIER Lnet/minecraft/class_6501;
-	FIELD field_38030 FACTOR_AMPLIFIER Lnet/minecraft/class_6501;
-	FIELD field_38031 JAGGEDNESS_AMPLIFIER Lnet/minecraft/class_6501;
+	FIELD field_38028 IDENTITY Lit/unimi/dsi/fastutil/floats/Float2FloatFunction;
+	FIELD field_38029 OFFSET_AMPLIFIER Lit/unimi/dsi/fastutil/floats/Float2FloatFunction;
+	FIELD field_38030 FACTOR_AMPLIFIER Lit/unimi/dsi/fastutil/floats/Float2FloatFunction;
+	FIELD field_38031 JAGGEDNESS_AMPLIFIER Lit/unimi/dsi/fastutil/floats/Float2FloatFunction;
 	METHOD method_42046 getOffsetValue (FFF)F
-	METHOD method_42048 (Lnet/minecraft/class_6501;FFFFFFLnet/minecraft/class_6501;)Lnet/minecraft/class_6492;
+	METHOD method_42048 (Lnet/minecraft/class_6501;FFFFFFLit/unimi/dsi/fastutil/floats/Float2FloatFunction;)Lnet/minecraft/class_6492;
 		ARG 0 ridgesFolded
 		ARG 1 continentalness
-		ARG 7 amplifier
-	METHOD method_42049 (Lnet/minecraft/class_6501;FLnet/minecraft/class_6501;)Lnet/minecraft/class_6492;
+	METHOD method_42049 (Lnet/minecraft/class_6501;FLit/unimi/dsi/fastutil/floats/Float2FloatFunction;)Lnet/minecraft/class_6492;
 		ARG 0 ridges
-		ARG 2 amplifier
-	METHOD method_42050 (Lnet/minecraft/class_6501;FZLnet/minecraft/class_6501;)Lnet/minecraft/class_6492;
+	METHOD method_42050 (Lnet/minecraft/class_6501;FZLit/unimi/dsi/fastutil/floats/Float2FloatFunction;)Lnet/minecraft/class_6492;
 		ARG 0 ridgesFolded
-		ARG 3 amplifier
-	METHOD method_42051 createContinentalOffsetSpline (Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;FFFFFFZZLnet/minecraft/class_6501;)Lnet/minecraft/class_6492;
+	METHOD method_42051 createContinentalOffsetSpline (Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;FFFFFFZZLit/unimi/dsi/fastutil/floats/Float2FloatFunction;)Lnet/minecraft/class_6492;
 		ARG 0 erosion
 		ARG 1 ridgesFolded
 		ARG 2 continentalness
-		ARG 10 amplifier
-	METHOD method_42052 (Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;FFLnet/minecraft/class_6501;)Lnet/minecraft/class_6492;
+	METHOD method_42052 (Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;FFLit/unimi/dsi/fastutil/floats/Float2FloatFunction;)Lnet/minecraft/class_6492;
 		ARG 0 ridges
 		ARG 1 ridgesFolded
-		ARG 4 amplifier
-	METHOD method_42053 (Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;FFFFLnet/minecraft/class_6501;)Lnet/minecraft/class_6492;
+	METHOD method_42053 (Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;FFFFLit/unimi/dsi/fastutil/floats/Float2FloatFunction;)Lnet/minecraft/class_6492;
 		ARG 0 erosion
 		ARG 1 ridges
 		ARG 2 ridgesFolded
-		ARG 7 amplifier
-	METHOD method_42054 (Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;FZLnet/minecraft/class_6501;)Lnet/minecraft/class_6492;
+	METHOD method_42054 (Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;FZLit/unimi/dsi/fastutil/floats/Float2FloatFunction;)Lnet/minecraft/class_6492;
 		ARG 0 erosion
 		ARG 1 ridges
 		ARG 2 ridgesFolded
-		ARG 5 amplifier
 	METHOD method_42055 createFactorSpline (Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;Lnet/minecraft/class_6501;Z)Lnet/minecraft/class_6492;
 		COMMENT Creates the spline for terrain factor.
 		COMMENT

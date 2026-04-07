@@ -9,7 +9,6 @@ CLASS net/minecraft/class_1_421 net/minecraft/client/render/OptionsRenderState
 	FIELD field_1_2338 damageTiltStrength D
 	FIELD field_1_2339 glintSpeed D
 	FIELD field_1_2340 glintStrength D
-	FIELD field_1_2341 hudHidden Z
 	FIELD field_1_2342 improvedTransparency Z
 	FIELD field_1_2343 effectiveAnisotropy I
 	FIELD field_1_2344 menuBackgroundBlurriness I

@@ -98,7 +98,6 @@ CLASS net/minecraft/class_4466 net/minecraft/entity/passive/BeeEntity
 	METHOD method_26880 createBeeAttributes ()Lnet/minecraft/class_5132$class_5133;
 	METHOD method_35161 getMoveGoalTicks ()I
 	METHOD method_35162 getPossibleHives ()Ljava/util/List;
-	METHOD method_35163 getGoalSelector ()Lnet/minecraft/class_1355;
 	METHOD method_57301 setHivePos (Lnet/minecraft/class_2338;)V
 		ARG 1 pos
 	METHOD method_58363 (Lnet/minecraft/class_1799;)Z

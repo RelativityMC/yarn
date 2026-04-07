@@ -12,13 +12,13 @@ CLASS net/minecraft/class_1767 net/minecraft/util/DyeColor
 	FIELD field_41600 CODEC Lnet/minecraft/class_3542$class_7292;
 	FIELD field_49259 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_56666 INDEX_CODEC Lcom/mojang/serialization/Codec;
-	METHOD <init> (Ljava/lang/String;IILjava/lang/String;ILnet/minecraft/class_3620;II)V
+	METHOD <init> (Ljava/lang/String;IILjava/lang/String;ILnet/minecraft/class_3620;Lnet/minecraft/class_3620;II)V
 		ARG 3 index
 		ARG 4 id
 		ARG 5 entityColor
 		ARG 6 mapColor
-		ARG 7 fireworkColor
-		ARG 8 signColor
+		ARG 8 fireworkColor
+		ARG 9 signColor
 	METHOD method_1_1235 mix (Lnet/minecraft/class_3218;Lnet/minecraft/class_1767;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1767;
 		ARG 0 world
 		ARG 1 color1

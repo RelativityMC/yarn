@@ -6,7 +6,7 @@ CLASS net/minecraft/class_10868 net/minecraft/client/texture/GlTexture
 	FIELD field_64515 UNINITIALIZED I
 	FIELD field_64516 framebufferId I
 	FIELD field_64517 depthGlId I
-	METHOD <init> (ILjava/lang/String;Lcom/mojang/blaze3d/textures/TextureFormat;IIIII)V
+	METHOD <init> (ILjava/lang/String;Lnet/minecraft/class_1_658;IIIII)V
 		ARG 1 usage
 		ARG 2 label
 		ARG 3 format

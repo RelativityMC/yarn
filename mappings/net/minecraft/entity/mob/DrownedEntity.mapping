@@ -42,7 +42,6 @@ CLASS net/minecraft/class_1551 net/minecraft/entity/mob/DrownedEntity
 			ARG 2 speed
 		METHOD method_7021 getWanderTarget ()Lnet/minecraft/class_243;
 	CLASS class_1556 DrownedMoveControl
-		FIELD field_7244 drowned Lnet/minecraft/class_1551;
 		METHOD <init> (Lnet/minecraft/class_1551;)V
 			ARG 1 drowned
 	CLASS class_1557 TargetAboveWaterGoal

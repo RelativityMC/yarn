@@ -73,8 +73,6 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 		ARG 1 error
 		ARG 2 description
 	METHOD method_4483 updateFramebufferSize ()V
-	METHOD method_4485 updateFullscreen (Z)V
-		ARG 1 vsync
 	METHOD method_4486 getScaledWidth ()I
 	METHOD method_4488 onWindowSizeChanged (JII)V
 		ARG 1 window
@@ -91,8 +89,6 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 		ARG 1 window
 		ARG 3 focused
 	METHOD method_4495 getScaleFactor ()I
-	METHOD method_4497 setVsync (Z)V
-		ARG 1 vsync
 	METHOD method_4498 isFullscreen ()Z
 	METHOD method_4499 getX ()I
 	METHOD method_4500 toggleFullscreen ()V

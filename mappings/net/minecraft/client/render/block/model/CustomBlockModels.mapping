@@ -7,11 +7,9 @@ CLASS net/minecraft/class_1_417 net/minecraft/client/render/block/model/CustomBl
 		ARG 2 state
 	METHOD method_1_2743 groundBanner (Lnet/minecraft/class_1767;)Lnet/minecraft/class_1_417$class_1_420;
 		ARG 0 color
-	METHOD method_1_2744 addBannerModels (Lnet/minecraft/class_1_417$class_1_418;Lnet/minecraft/class_1767;Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
+	METHOD method_1_2744 addBannerModels (Lnet/minecraft/class_1_417$class_1_418;Lnet/minecraft/class_1767;)V
 		ARG 0 builder
 		ARG 1 color
-		ARG 2 banner
-		ARG 3 wallBanner
 	METHOD method_1_2745 bed (Lnet/minecraft/class_1767;)Lnet/minecraft/class_1_417$class_1_420;
 		ARG 0 color
 	METHOD method_1_2746 createCustomBlockModels (Lnet/minecraft/class_324;)Ljava/util/Map;

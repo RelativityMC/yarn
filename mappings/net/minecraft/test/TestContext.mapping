@@ -105,7 +105,7 @@ CLASS net/minecraft/class_4516 net/minecraft/test/TestContext
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_35963 spawnEntity (Lnet/minecraft/class_1299;Lnet/minecraft/class_243;Lnet/minecraft/class_3730;)Lnet/minecraft/class_1297;
+	METHOD method_35963 spawnEntity (Lnet/minecraft/class_1299;Lnet/minecraft/class_243;Lnet/minecraft/class_3730;Lnet/minecraft/class_2470;)Lnet/minecraft/class_1297;
 		ARG 1 type
 		ARG 2 pos
 		ARG 3 reason

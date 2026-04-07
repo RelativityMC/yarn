@@ -50,11 +50,6 @@ CLASS net/minecraft/class_11661 net/minecraft/client/render/command/OrderedRende
 	CLASS class_11744 BlendedModelCommand
 		FIELD comp_4615 model Lnet/minecraft/class_11661$class_11670;
 		METHOD comp_4615 model ()Lnet/minecraft/class_11661$class_11670;
-	CLASS class_11789 ModelPartCommand
-		FIELD comp_4643 matricesEntry Lnet/minecraft/class_4587$class_4665;
-		FIELD comp_4649 hasGlint Z
-		METHOD comp_4643 matricesEntry ()Lnet/minecraft/class_4587$class_4665;
-		METHOD comp_4649 hasGlint ()Z
 	CLASS class_11790 MovingBlockCommand
 		FIELD comp_4652 matricesEntry Lorg/joml/Matrix4fc;
 		METHOD comp_4652 matricesEntry ()Lorg/joml/Matrix4fc;

@@ -2136,6 +2136,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 1 tickProgress
 	METHOD method_61416 isInSameTeam (Lnet/minecraft/class_1297;)Z
 		ARG 1 other
+	METHOD method_61426 getEffectiveGravity ()D
 	METHOD method_63612 collides (Lnet/minecraft/class_243;Lnet/minecraft/class_243;Ljava/util/List;)Z
 		ARG 1 oldPos
 		ARG 2 newPos
@@ -2300,11 +2301,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 1 world
 		ARG 2 stack
 		ARG 3 offset
-	METHOD method_71765 shearEquipment (Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;Lnet/minecraft/class_1799;Lnet/minecraft/class_1308;)Z
-		ARG 1 player
-		ARG 2 hand
-		ARG 3 shears
-		ARG 4 entity
 	METHOD method_71965 clearQueuedCollisionChecks ()V
 	METHOD method_71966 addQueuedCollisionChecks (Lnet/minecraft/class_1297$class_10365;)V
 		ARG 1 queuedCollisionCheck

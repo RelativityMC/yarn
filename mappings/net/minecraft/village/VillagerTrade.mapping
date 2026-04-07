@@ -17,7 +17,7 @@ CLASS net/minecraft/class_1_30 net/minecraft/village/VillagerTrade
 		ARG 6 reputationDiscount
 		ARG 7 merchantPredicate
 		ARG 8 givenItemModifiers
-	METHOD <init> (Lnet/minecraft/class_1_25;Ljava/util/Optional;Lnet/minecraft/class_1_107;IIFLjava/util/Optional;Ljava/util/List;Ljava/util/Optional;)V
+	METHOD <init> (Lnet/minecraft/class_1_25;Ljava/util/Optional;Lnet/minecraft/class_1_107;IIFLjava/util/Optional;Ljava/util/List;Lnet/minecraft/class_6885;)V
 		ARG 1 wants
 		ARG 2 additionalWants
 		ARG 4 maxUses
@@ -25,7 +25,6 @@ CLASS net/minecraft/class_1_30 net/minecraft/village/VillagerTrade
 		ARG 6 reputationDiscount
 		ARG 7 merchantPredicate
 		ARG 8 givenItemModifiers
-		ARG 9 doubleTradePriceEnchantments
 	METHOD <init> (Lnet/minecraft/class_1_25;Ljava/util/Optional;Lnet/minecraft/class_1_107;Lnet/minecraft/class_5658;Lnet/minecraft/class_5658;Lnet/minecraft/class_5658;Ljava/util/Optional;Ljava/util/List;Ljava/util/Optional;)V
 		ARG 1 wants
 		ARG 2 additionalWants

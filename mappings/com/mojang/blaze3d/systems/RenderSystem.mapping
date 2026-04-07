@@ -6,8 +6,6 @@ CLASS com/mojang/blaze3d/systems/RenderSystem
 		ARG 1 y
 		ARG 2 width
 		ARG 3 height
-	METHOD flipFrame (Lnet/minecraft/class_10219;)V
-		ARG 0 capturer
 	METHOD getSequentialBuffer (Lcom/mojang/blaze3d/vertex/VertexFormat$class_5596;)Lcom/mojang/blaze3d/systems/RenderSystem$class_5590;
 		ARG 0 drawMode
 	METHOD initBackendSystem (Lnet/minecraft/class_1_489;)Lnet/minecraft/class_7576$class_7577;

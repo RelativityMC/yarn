@@ -18,9 +18,6 @@ CLASS net/minecraft/class_340 net/minecraft/client/gui/hud/DebugHud
 	FIELD field_45995 packetSizeLog Lnet/minecraft/class_9191;
 	FIELD field_48931 receivedDebugSamples Ljava/util/Map;
 	FIELD field_52772 pieChart Lnet/minecraft/class_9931;
-	FIELD field_56578 debugCrosshairBuffer Lcom/mojang/blaze3d/buffers/GpuBuffer;
-	FIELD field_57921 debugCrosshairIndexBuffer Lcom/mojang/blaze3d/systems/RenderSystem$class_5590;
-	FIELD field_59832 DEBUG_CROSSHAIR_SCALE F
 	METHOD <init> (Lnet/minecraft/class_310;)V
 		ARG 1 client
 	METHOD method_1_644 getChartLabel (Lnet/minecraft/class_304;Lnet/minecraft/class_304;Ljava/lang/String;Z)Ljava/lang/String;
@@ -65,7 +62,6 @@ CLASS net/minecraft/class_340 net/minecraft/client/gui/hud/DebugHud
 		ARG 2 type
 	METHOD method_56829 shouldRenderTickCharts ()Z
 	METHOD method_61981 getPieChart ()Lnet/minecraft/class_9931;
-	METHOD method_67545 renderDebugCrosshair (Lnet/minecraft/class_12075;I)V
 	CLASS 1 1
 		METHOD method_72742 (Lnet/minecraft/class_2960;)Ljava/util/Collection;
 			ARG 0 sectionLines

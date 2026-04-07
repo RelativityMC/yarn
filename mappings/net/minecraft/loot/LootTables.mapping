@@ -18,14 +18,10 @@ CLASS net/minecraft/class_39 net/minecraft/loot/LootTables
 	FIELD field_17108 VILLAGE_FLETCHER_CHEST Lnet/minecraft/class_5321;
 	FIELD field_17109 VILLAGE_TEMPLE_CHEST Lnet/minecraft/class_5321;
 	FIELD field_18007 VILLAGE_FISHER_CHEST Lnet/minecraft/class_5321;
-	FIELD field_52692 SHEEP_DROPS_FROM_DYE_COLOR Ljava/util/Map;
-	FIELD field_52693 SHEEP_SHEARING_FROM_DYE_COLOR Ljava/util/Map;
+	FIELD field_52692 SHEEP_DROPS_FROM_DYE_COLOR Lnet/minecraft/class_1_727;
+	FIELD field_52693 SHEEP_SHEARING_FROM_DYE_COLOR Lnet/minecraft/class_1_727;
 	METHOD method_269 register (Ljava/lang/String;)Lnet/minecraft/class_5321;
 		ARG 0 id
 	METHOD method_270 getAll ()Ljava/util/Set;
 	METHOD method_271 registerLootTable (Lnet/minecraft/class_5321;)Lnet/minecraft/class_5321;
 		ARG 0 key
-	METHOD method_61883 registerAllDyeColors (Ljava/lang/String;)Ljava/util/Map;
-		ARG 0 prefix
-	METHOD method_66490 (Ljava/lang/String;Lnet/minecraft/class_1767;)Lnet/minecraft/class_5321;
-		ARG 1 color

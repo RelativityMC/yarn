@@ -149,9 +149,8 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 1 fence
 		ARG 2 aboveFenceModel
 		ARG 3 belowFenceModel
-	METHOD method_25576 registerRandomHorizontalRotations (Lnet/minecraft/class_4946$class_4947;[Lnet/minecraft/class_2248;)V
+	METHOD method_25576 registerRandomHorizontalRotations (Lnet/minecraft/class_4946$class_4947;Ljava/util/List;)V
 		ARG 1 modelFactory
-		ARG 2 blocks
 	METHOD method_25581 getTurtleEggModel (II)Lnet/minecraft/class_813;
 		ARG 1 eggs
 		ARG 2 cracks
@@ -192,9 +191,8 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 6 topLeftOpenModel
 		ARG 7 topRightClosedModel
 		ARG 8 topRightOpenModel
-	METHOD method_25614 registerSouthDefaultHorizontalFacing (Lnet/minecraft/class_4946$class_4947;[Lnet/minecraft/class_2248;)V
+	METHOD method_25614 registerSouthDefaultHorizontalFacing (Lnet/minecraft/class_4946$class_4947;Ljava/util/List;)V
 		ARG 1 modelFactory
-		ARG 2 blocks
 	METHOD method_25619 registerMirrorable (Lnet/minecraft/class_2248;)V
 		ARG 1 block
 	METHOD method_25620 registerGourd (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
@@ -374,7 +372,6 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 	METHOD method_32802 registerPointedDripstone ()V
 	METHOD method_32803 getDripstoneVariant (Lnet/minecraft/class_2350;Lnet/minecraft/class_5691;)Lnet/minecraft/class_807;
 		ARG 1 direction
-		ARG 2 thickness
 	METHOD method_33128 registerSculkSensor ()V
 	METHOD method_33504 registerPetrifiedOakSlab ()V
 	METHOD method_33520 registerMultifaceBlock (Lnet/minecraft/class_2248;)V
@@ -548,10 +545,8 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 2 particleSource
 		ARG 3 texture
 		ARG 4 christmas
-	METHOD method_65405 registerBanner (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)V
-		ARG 1 block
-		ARG 2 wallBlock
-		ARG 3 color
+	METHOD method_65405 registerBanner (Lnet/minecraft/class_1767;)V
+		ARG 1 color
 	METHOD method_65406 registerSkull (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;Lnet/minecraft/class_2484$class_2485;Lnet/minecraft/class_2960;)V
 		ARG 1 block
 		ARG 2 wallBlock
@@ -570,17 +565,13 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 2 transformation
 		ARG 3 model
 	METHOD method_65410 registerSkulls ()V
-	METHOD method_65411 registerBanners ()V
 	METHOD method_65412 registerChests ()V
-	METHOD method_65413 registerBeds ()V
 	METHOD method_65414 uploadTwoLayerBlockItemModel (Lnet/minecraft/class_1792;Lnet/minecraft/class_2248;Ljava/lang/String;)Lnet/minecraft/class_2960;
 		ARG 1 item
 		ARG 2 block
 		ARG 3 layer1Suffix
-	METHOD method_65415 registerBed (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)V
-		ARG 1 block
-		ARG 2 particleSource
-		ARG 3 color
+	METHOD method_65415 registerBed (Lnet/minecraft/class_1767;)V
+		ARG 1 color
 	METHOD method_65416 registerTwoLayerItemModel (Lnet/minecraft/class_2248;Ljava/lang/String;)V
 		ARG 1 block
 		ARG 2 layer1Suffix

@@ -30,7 +30,6 @@ CLASS net/minecraft/class_1571 net/minecraft/entity/mob/GhastEntity
 			ARG 1 ghast
 	CLASS class_1573 GhastMoveControl
 		FIELD field_7276 collisionCheckCooldown I
-		FIELD field_59704 ghast Lnet/minecraft/class_1308;
 		FIELD field_59705 happy Z
 		FIELD field_60554 shouldStayStill Ljava/util/function/BooleanSupplier;
 		METHOD <init> (Lnet/minecraft/class_1308;ZLjava/util/function/BooleanSupplier;)V

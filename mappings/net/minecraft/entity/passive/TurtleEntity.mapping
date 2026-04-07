@@ -54,7 +54,6 @@ CLASS net/minecraft/class_1481 net/minecraft/entity/passive/TurtleEntity
 			ARG 1 turtle
 			ARG 2 speed
 	CLASS class_1486 TurtleMoveControl
-		FIELD field_6933 turtle Lnet/minecraft/class_1481;
 		METHOD <init> (Lnet/minecraft/class_1481;)V
 			ARG 1 turtle
 		METHOD method_6700 updateVelocity ()V

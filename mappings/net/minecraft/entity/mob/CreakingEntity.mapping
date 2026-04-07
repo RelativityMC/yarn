@@ -49,8 +49,8 @@ CLASS net/minecraft/class_10275 net/minecraft/entity/mob/CreakingEntity
 		METHOD <init> (Lnet/minecraft/class_10275;Lnet/minecraft/class_10275;)V
 			ARG 2 creaking
 	CLASS class_10279 CreakingMoveControl
-		METHOD <init> (Lnet/minecraft/class_10275;Lnet/minecraft/class_10275;)V
-			ARG 2 creaking
+		METHOD <init> (Lnet/minecraft/class_10275;)V
+			ARG 1 creaking
 	CLASS class_10282 CreakingNavigation
 		METHOD <init> (Lnet/minecraft/class_10275;Lnet/minecraft/class_10275;Lnet/minecraft/class_1937;)V
 			ARG 2 creaking

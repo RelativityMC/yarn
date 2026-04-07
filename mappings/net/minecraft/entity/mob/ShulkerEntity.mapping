@@ -8,7 +8,7 @@ CLASS net/minecraft/class_1606 net/minecraft/entity/mob/ShulkerEntity
 	FIELD field_7344 ATTACHED_FACE Lnet/minecraft/class_2940;
 	FIELD field_7345 lastAttachedBlock Lnet/minecraft/class_2338;
 	FIELD field_7346 PEEK_AMOUNT Lnet/minecraft/class_2940;
-	FIELD field_33765 SOUTH_VECTOR Lorg/joml/Vector3f;
+	FIELD field_33765 SOUTH_VECTOR Lorg/joml/Vector3fc;
 	FIELD field_57689 DEFAULT_PEEK B
 	FIELD field_57690 DEFAULT_ATTACHED_FACE Lnet/minecraft/class_2350;
 	METHOD method_7115 getPeekAmount ()I

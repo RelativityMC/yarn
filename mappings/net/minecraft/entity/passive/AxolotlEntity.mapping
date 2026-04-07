@@ -103,7 +103,6 @@ CLASS net/minecraft/class_5762 net/minecraft/entity/passive/AxolotlEntity
 			ARG 2 axolotl
 			ARG 3 yawAdjustThreshold
 	CLASS class_5765 AxolotlMoveControl
-		FIELD field_28340 axolotl Lnet/minecraft/class_5762;
 		METHOD <init> (Lnet/minecraft/class_5762;)V
 			ARG 1 axolotl
 	CLASS class_5767 Variant

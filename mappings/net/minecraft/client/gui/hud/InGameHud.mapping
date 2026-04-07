@@ -68,7 +68,7 @@ CLASS net/minecraft/class_329 net/minecraft/client/gui/hud/InGameHud
 	FIELD field_54913 AIR_EMPTY_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_54918 SUBMERGED_IN_WATER_AIR_BUBBLE_DELAY I
 	FIELD field_54919 lastBurstBubble I
-	FIELD field_59817 currentBar Lorg/apache/commons/lang3/tuple/Pair;
+	FIELD field_59817 currentBar Lcom/mojang/datafixers/util/Pair;
 	FIELD field_59818 bars Ljava/util/Map;
 	FIELD field_61530 deferredSubtitleRenderer Ljava/lang/Runnable;
 	METHOD <init> (Lnet/minecraft/class_310;)V

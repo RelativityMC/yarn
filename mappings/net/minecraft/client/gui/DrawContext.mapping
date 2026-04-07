@@ -539,8 +539,7 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 5 y1
 		ARG 6 x2
 		ARG 7 y2
-	METHOD method_70854 addPlayerSkin (Lnet/minecraft/class_591;Lnet/minecraft/class_2960;FFFFIIII)V
-		ARG 1 playerModel
+	METHOD method_70854 addPlayerSkin (Lnet/minecraft/class_3879$class_9948;Lnet/minecraft/class_2960;FFFFIIII)V
 		ARG 2 texture
 		ARG 3 scale
 		ARG 4 xRotation
@@ -558,12 +557,9 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 5 y1
 		ARG 6 x2
 		ARG 7 y2
-	METHOD method_70856 addEntity (Lnet/minecraft/class_10017;FLorg/joml/Vector3f;Lorg/joml/Quaternionf;Lorg/joml/Quaternionf;IIII)V
+	METHOD method_70856 addEntity (Lnet/minecraft/class_10017;FLorg/joml/Vector3fc;Lorg/joml/Quaternionfc;Lorg/joml/Quaternionfc;IIII)V
 		ARG 1 entityState
 		ARG 2 scale
-		ARG 3 translation
-		ARG 4 rotation
-		ARG 5 overrideCameraAngle
 		ARG 6 x1
 		ARG 7 y1
 		ARG 8 x2

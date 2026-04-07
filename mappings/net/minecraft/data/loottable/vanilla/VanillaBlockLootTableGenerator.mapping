@@ -3,12 +3,6 @@ CLASS net/minecraft/class_2430 net/minecraft/data/loottable/vanilla/VanillaBlock
 	FIELD field_11340 EXPLOSION_IMMUNE Ljava/util/Set;
 	METHOD <init> (Lnet/minecraft/class_7225$class_7874;)V
 		ARG 1 registries
-	METHOD method_16232 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_16233 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_16235 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
 	METHOD method_16237 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_16241 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
@@ -19,8 +13,6 @@ CLASS net/minecraft/class_2430 net/minecraft/data/loottable/vanilla/VanillaBlock
 		ARG 1 block
 	METHOD method_16245 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
-	METHOD method_16246 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
 	METHOD method_16250 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_16251 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
@@ -29,21 +21,11 @@ CLASS net/minecraft/class_2430 net/minecraft/data/loottable/vanilla/VanillaBlock
 		ARG 1 block
 	METHOD method_16254 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
-	METHOD method_16255 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_16263 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
 	METHOD method_16264 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_16266 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
-	METHOD method_16268 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
 	METHOD method_16269 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_16270 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_16273 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_16275 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
@@ -57,15 +39,9 @@ CLASS net/minecraft/class_2430 net/minecraft/data/loottable/vanilla/VanillaBlock
 		ARG 1 block
 	METHOD method_16284 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
-	METHOD method_16286 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
 	METHOD method_16290 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
-	METHOD method_16292 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
 	METHOD method_16295 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_16296 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_16300 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
@@ -73,27 +49,19 @@ CLASS net/minecraft/class_2430 net/minecraft/data/loottable/vanilla/VanillaBlock
 		ARG 1 block
 	METHOD method_16303 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
-	METHOD method_16306 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
 	METHOD method_16307 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_16310 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_16311 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
-	METHOD method_16312 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
 	METHOD method_16314 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_16316 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_16317 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_16324 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_16325 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_16326 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_16327 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
@@ -161,85 +129,19 @@ CLASS net/minecraft/class_2430 net/minecraft/data/loottable/vanilla/VanillaBlock
 		ARG 1 layers
 	METHOD method_43815 (Lnet/minecraft/class_2248;Ljava/lang/Integer;)Lnet/minecraft/class_117$class_118;
 		ARG 1 pickles
-	METHOD method_46040 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46041 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46042 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46043 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46044 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46045 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46046 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46047 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46048 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46049 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46050 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
 	METHOD method_46051 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_46052 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
-	METHOD method_46053 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46054 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46055 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
 	METHOD method_46065 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46066 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_46067 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_46068 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
-	METHOD method_46069 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
 	METHOD method_46093 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_46094 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46095 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46096 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46097 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46098 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46099 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46100 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46101 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46102 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46104 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46106 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46107 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46109 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46111 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46112 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46113 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46114 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46115 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_46117 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
@@ -251,71 +153,15 @@ CLASS net/minecraft/class_2430 net/minecraft/data/loottable/vanilla/VanillaBlock
 		ARG 1 block
 	METHOD method_46122 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
-	METHOD method_46123 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46156 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46158 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
 	METHOD method_46160 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46162 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46164 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46165 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46166 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46167 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46168 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_46169 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_46170 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
-	METHOD method_46171 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46172 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
 	METHOD method_46173 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_46174 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46175 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46176 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46177 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46178 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46179 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46180 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46181 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46182 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_46183 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_49366 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_49367 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_49368 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_49369 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_49370 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_49371 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_49372 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_49373 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_49928 (Ljava/lang/Integer;)Lnet/minecraft/class_79$class_80;
 		ARG 0 age
@@ -355,8 +201,6 @@ CLASS net/minecraft/class_2430 net/minecraft/data/loottable/vanilla/VanillaBlock
 		ARG 1 block
 	METHOD method_49954 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
-	METHOD method_49956 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
 	METHOD method_49957 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_49958 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
@@ -389,10 +233,6 @@ CLASS net/minecraft/class_2430 net/minecraft/data/loottable/vanilla/VanillaBlock
 		ARG 1 block
 	METHOD method_49979 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
-	METHOD method_49981 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_49982 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
 	METHOD method_49983 pitcherCropDrops ()Lnet/minecraft/class_52$class_53;
 	METHOD method_49984 decoratedPotDrops (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
@@ -411,8 +251,6 @@ CLASS net/minecraft/class_2430 net/minecraft/data/loottable/vanilla/VanillaBlock
 	METHOD method_60402 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_60403 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_60404 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_60405 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
@@ -456,10 +294,6 @@ CLASS net/minecraft/class_2430 net/minecraft/data/loottable/vanilla/VanillaBlock
 		ARG 1 block
 	METHOD method_65272 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
-	METHOD method_65273 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_65274 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
 	METHOD method_65275 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_65276 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
@@ -490,23 +324,5 @@ CLASS net/minecraft/class_2430 net/minecraft/data/loottable/vanilla/VanillaBlock
 		ARG 2 block
 	METHOD method_65290 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
-	METHOD method_66555 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
 	METHOD method_73065 skullDrops (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 skull
-	METHOD method_74434 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_74435 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_74436 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_74437 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_74438 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_74439 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_74440 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
-	METHOD method_74441 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block

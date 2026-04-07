@@ -349,19 +349,10 @@ target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/pipeli
 target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/platform/PolygonMode;)I
 	return gl_polygon_mode
 
-target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/platform/DestFactor;)I
-	return gl_blend_func_factor
-target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/platform/SourceFactor;)I
-	return gl_blend_func_factor
-
 target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/vertex/VertexFormat$DrawMode;)I
 	return gl_draw_mode
 
 target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/vertex/VertexFormat$IndexType;)I
-	return gl_type
-target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/vertex/VertexFormatElement$Type;)I
-	return gl_type
-target_method com.mojang.blaze3d.opengl.GlConst toGlType (Lcom/mojang/blaze3d/textures/TextureFormat;)I
 	return gl_type
 
 target_method com.mojang.blaze3d.opengl.GlConst toGl (Lnet/minecraft/client/texture/NativeImage$Format;)I
@@ -369,11 +360,6 @@ target_method com.mojang.blaze3d.opengl.GlConst toGl (Lnet/minecraft/client/text
 
 target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/textures/AddressMode;)I
 	return gl_address_mode
-
-target_method com.mojang.blaze3d.opengl.GlConst toGlInternalId (Lcom/mojang/blaze3d/textures/TextureFormat;)I
-	return gl_tex_format
-target_method com.mojang.blaze3d.opengl.GlConst toGlExternalId (Lcom/mojang/blaze3d/textures/TextureFormat;)I
-	return gl_tex_format
 
 target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/shaders/ShaderType;)I
 	return gl_program_type

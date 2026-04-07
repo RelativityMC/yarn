@@ -11,7 +11,6 @@ CLASS net/minecraft/class_1255 net/minecraft/util/thread/ThreadExecutor
 		ARG 2 throwOnCrashReport
 	METHOD execute (Ljava/lang/Runnable;)V
 		ARG 1 runnable
-	METHOD method_1_2246 hasCrashReport ()Z
 	METHOD method_1_2249 addCrashReport (Lnet/minecraft/class_128;)V
 		ARG 0 crashReport
 	METHOD method_1_2250 checkForCrashReport ()V

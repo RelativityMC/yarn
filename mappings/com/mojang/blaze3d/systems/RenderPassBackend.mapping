@@ -23,7 +23,6 @@ CLASS net/minecraft/class_1_149 com/mojang/blaze3d/systems/RenderPassBackend
 		ARG 2 y
 		ARG 3 width
 		ARG 4 height
-	METHOD method_1_1331 isClosed ()Z
 	METHOD method_1_1332 popDebugGroup ()V
 	METHOD method_1_1333 pushDebugGroup (Ljava/util/function/Supplier;)V
 		ARG 1 labelGetter

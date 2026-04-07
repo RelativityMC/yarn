@@ -29,7 +29,7 @@ CLASS net/minecraft/class_7743 net/minecraft/client/gui/screen/ingame/AbstractSi
 		ARG 1 textLine
 	METHOD method_45659 renderSign (Lnet/minecraft/class_332;)V
 		ARG 1 context
-	METHOD method_45661 getTextScale ()Lorg/joml/Vector3f;
+	METHOD method_45661 getTextScale ()Lorg/joml/Vector3fc;
 	METHOD method_45662 finishEditing ()V
 	METHOD method_49912 canEdit ()Z
 	METHOD method_49913 setCurrentRowMessage (Ljava/lang/String;)V

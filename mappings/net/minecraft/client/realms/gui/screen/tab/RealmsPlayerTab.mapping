@@ -12,8 +12,6 @@ CLASS net/minecraft/class_4406 net/minecraft/client/realms/gui/screen/tab/Realms
 		ARG 2 client
 		ARG 3 serverData
 	METHOD method_71219 getPlayerListHeight ()I
-	METHOD method_71220 (Lnet/minecraft/class_310;Lnet/minecraft/class_4388;Lnet/minecraft/class_4877;Lnet/minecraft/class_4185;)V
-		ARG 3 button
 	CLASS class_4407 InvitedObjectSelectionList
 		METHOD <init> (Lnet/minecraft/class_4406;II)V
 			ARG 2 width

@@ -20,5 +20,5 @@ CLASS net/minecraft/class_9456 net/minecraft/entity/effect/OozingStatusEffect
 			ARG 0 entity
 		METHOD method_60605 (Lnet/minecraft/class_1309;I)I
 			ARG 1 limit
-		METHOD method_60606 (Lnet/minecraft/class_1309;Lnet/minecraft/class_1621;)Z
+		METHOD method_60606 (Lnet/minecraft/class_1309;Lnet/minecraft/class_1_733;)Z
 			ARG 1 slime

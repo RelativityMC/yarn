@@ -10,14 +10,14 @@ CLASS net/minecraft/class_4367 net/minecraft/client/realms/gui/RealmsWorldSlotBu
 	FIELD field_26469 MINIGAME_TOOLTIP Lnet/minecraft/class_2561;
 	FIELD field_26470 TOOLTIP Lnet/minecraft/class_2561;
 	FIELD field_44894 MINIGAME_SLOT_NAME Lnet/minecraft/class_2561;
-	METHOD <init> (IIIIILnet/minecraft/class_4877;Lnet/minecraft/class_4185$class_4241;)V
-		ARG 1 x
-		ARG 2 y
-		ARG 3 width
-		ARG 4 height
-		ARG 5 slotIndex
-		ARG 6 server
-		ARG 7 onPress
+	METHOD <init> (Lnet/minecraft/class_4388;IIIIILnet/minecraft/class_4877;Lnet/minecraft/class_4185$class_4241;)V
+		ARG 2 x
+		ARG 3 y
+		ARG 4 width
+		ARG 5 height
+		ARG 6 slotIndex
+		ARG 7 server
+		ARG 8 onPress
 	METHOD method_1_2698 setServerAndMessage (Lnet/minecraft/class_4877;)V
 		ARG 1 server
 	METHOD method_25099 getState ()Lnet/minecraft/class_4367$class_4370;

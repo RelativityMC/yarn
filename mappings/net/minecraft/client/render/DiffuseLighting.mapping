@@ -1,19 +1,17 @@
 CLASS net/minecraft/class_308 net/minecraft/client/render/DiffuseLighting
-	FIELD field_24426 DEFAULT_DIFFUSION_LIGHT_0 Lorg/joml/Vector3f;
-	FIELD field_24427 DEFAULT_DIFFUSION_LIGHT_1 Lorg/joml/Vector3f;
-	FIELD field_24428 DARKENED_DIFFUSION_LIGHT_0 Lorg/joml/Vector3f;
-	FIELD field_24429 DARKENED_DIFFUSION_LIGHT_1 Lorg/joml/Vector3f;
-	FIELD field_29567 INVENTORY_DIFFUSION_LIGHT_0 Lorg/joml/Vector3f;
-	FIELD field_29568 INVENTORY_DIFFUSION_LIGHT_1 Lorg/joml/Vector3f;
+	FIELD field_24426 DEFAULT_DIFFUSION_LIGHT_0 Lorg/joml/Vector3fc;
+	FIELD field_24427 DEFAULT_DIFFUSION_LIGHT_1 Lorg/joml/Vector3fc;
+	FIELD field_24428 DARKENED_DIFFUSION_LIGHT_0 Lorg/joml/Vector3fc;
+	FIELD field_24429 DARKENED_DIFFUSION_LIGHT_1 Lorg/joml/Vector3fc;
+	FIELD field_29567 INVENTORY_DIFFUSION_LIGHT_0 Lorg/joml/Vector3fc;
+	FIELD field_29568 INVENTORY_DIFFUSION_LIGHT_1 Lorg/joml/Vector3fc;
 	FIELD field_60022 UBO_SIZE I
 	FIELD field_60023 buffer Lcom/mojang/blaze3d/buffers/GpuBuffer;
 	FIELD field_60024 roundedUboSize J
 	METHOD method_71034 setShaderLights (Lnet/minecraft/class_308$class_11274;)V
 		ARG 1 type
-	METHOD method_71035 updateBuffer (Lnet/minecraft/class_308$class_11274;Lorg/joml/Vector3f;Lorg/joml/Vector3f;)V
+	METHOD method_71035 updateBuffer (Lnet/minecraft/class_308$class_11274;Lorg/joml/Vector3fc;Lorg/joml/Vector3fc;)V
 		ARG 1 type
-		ARG 2 light0Diffusion
-		ARG 3 light1Diffusion
 	METHOD method_71036 updateLevelBuffer (Lnet/minecraft/class_1_383$class_12325;)V
 		ARG 1 cardinalLightType
 	CLASS class_11274 Type

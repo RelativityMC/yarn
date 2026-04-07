@@ -53,9 +53,8 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		COMMENT The directory that stores options, worlds, resource packs, logs, etc.
 	FIELD field_1698 running Z
 	FIELD field_1700 instance Lnet/minecraft/class_310;
-	FIELD field_1702 toastManager Lnet/minecraft/class_374;
 	FIELD field_1704 window Lnet/minecraft/class_1041;
-	FIELD field_1705 inGameHud Lnet/minecraft/class_329;
+	FIELD field_1705 inGameHud Lnet/minecraft/class_1_659;
 	FIELD field_1707 skinProvider Lnet/minecraft/class_1071;
 	FIELD field_1708 fontManager Lnet/minecraft/class_378;
 	FIELD field_1711 gameVersion Ljava/lang/String;
@@ -87,17 +86,10 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		COMMENT
 		COMMENT @see net.minecraft.client.gui.screen.multiplayer.ConnectScreen
 	FIELD field_1748 levelStorage Lnet/minecraft/class_32;
-	FIELD field_1749 ALT_TEXT_RENDERER_ID Lnet/minecraft/class_2960;
 	FIELD field_1750 lastMetricsSampleTime J
 	FIELD field_1751 blockColors Lnet/minecraft/class_324;
 	FIELD field_1752 itemUseCooldown I
 		COMMENT The cooldown for using items when {@linkplain net.minecraft.client.option.GameOptions#useKey the item use button} is held down.
-	FIELD field_1755 currentScreen Lnet/minecraft/class_437;
-		COMMENT The Minecraft client's currently open screen.
-		COMMENT This field should only be used to get the current screen.
-		COMMENT For changing the screen, use {@link MinecraftClient#setScreen(Screen)}.
-		COMMENT
-		COMMENT @see MinecraftClient#setScreen(Screen)
 	FIELD field_1757 resourcePackDir Ljava/nio/file/Path;
 	FIELD field_1758 tutorialManager Lnet/minecraft/class_1156;
 	FIELD field_1759 integratedServerRunning Z
@@ -113,20 +105,15 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_1772 textRenderer Lnet/minecraft/class_327;
 	FIELD field_1773 gameRenderer Lnet/minecraft/class_757;
 	FIELD field_1774 keyboard Lnet/minecraft/class_309;
-	FIELD field_17763 splashTextLoader Lnet/minecraft/class_4008;
 	FIELD field_18009 COMPLETED_UNIT_FUTURE Ljava/util/concurrent/CompletableFuture;
 	FIELD field_18174 resourceReloadFuture Ljava/util/concurrent/CompletableFuture;
-	FIELD field_18175 overlay Lnet/minecraft/class_4071;
 	FIELD field_20909 bufferBuilders Lnet/minecraft/class_4599;
 	FIELD field_22224 trackingTick I
 	FIELD field_22225 tickTimeTracker Lnet/minecraft/class_4757;
-	FIELD field_24211 UNICODE_FONT_ID Lnet/minecraft/class_2960;
 	FIELD field_25033 multiplayerEnabled Z
 	FIELD field_25034 onlineChatEnabled Z
 	FIELD field_25671 videoWarningManager Lnet/minecraft/class_5407;
-	FIELD field_26841 SOCIAL_INTERACTIONS_NOT_AVAILABLE Lnet/minecraft/class_2561;
 	FIELD field_26842 socialInteractionsManager Lnet/minecraft/class_5520;
-	FIELD field_26843 socialInteractionsToast Lnet/minecraft/class_372;
 	FIELD field_26902 userApiService Lcom/mojang/authlib/minecraft/UserApiService;
 	FIELD field_27388 blockEntityRenderManager Lnet/minecraft/class_824;
 	FIELD field_29569 recorder Lnet/minecraft/class_5962;
@@ -140,12 +127,10 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_36434 regionalComplianciesManager Lnet/minecraft/class_6877;
 	FIELD field_37855 metricsSampleDuration J
 	FIELD field_37856 gpuUtilizationPercentage D
-	FIELD field_37857 currentGlTimerQuery Lnet/minecraft/class_7168$class_7169;
 	FIELD field_39068 profileKeys Lnet/minecraft/class_7853;
 	FIELD field_39492 abuseReportContext Lnet/minecraft/class_7574;
 	FIELD field_39718 realmsPeriodicCheckers Lnet/minecraft/class_7578;
 	FIELD field_39769 narratorManager Lnet/minecraft/class_333;
-	FIELD field_39770 messageHandler Lnet/minecraft/class_7594;
 	FIELD field_39924 advanceValidatingTextRenderer Lnet/minecraft/class_327;
 	FIELD field_40380 defaultResourcePack Lnet/minecraft/class_3268;
 	FIELD field_40381 serverResourcePackLoader Lnet/minecraft/class_1066;
@@ -153,12 +138,10 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_41332 renderTime J
 	FIELD field_41782 navigationType Lnet/minecraft/class_8015;
 	FIELD field_44539 quickPlayLogger Lnet/minecraft/class_8497;
-	FIELD field_45294 commandHistoryManager Lnet/minecraft/class_8657;
 	FIELD field_45295 symlinkFinder Lnet/minecraft/class_8580;
 	FIELD field_45899 gameProfileFuture Ljava/util/concurrent/CompletableFuture;
 	FIELD field_45900 finishedLoading Z
 	FIELD field_46550 UNIVERSE J
-	FIELD field_46551 disconnecting Z
 	FIELD field_46552 startTime J
 	FIELD field_46553 uptimeInTicks J
 	FIELD field_47680 userPropertiesFuture Ljava/util/concurrent/CompletableFuture;
@@ -169,8 +152,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_53831 shaderLoader Lnet/minecraft/class_10151;
 	FIELD field_54267 tracyFrameCapturer Lnet/minecraft/class_10219;
 	FIELD field_55226 itemModelManager Lnet/minecraft/class_10442;
-	FIELD field_60302 waypointStyleAssetManager Lnet/minecraft/class_11327;
-	FIELD field_60984 SAVING_LEVEL_TEXT Lnet/minecraft/class_2561;
 	FIELD field_61502 atlasManager Lnet/minecraft/class_11697;
 	FIELD field_61503 offlineDeveloperMode Z
 	FIELD field_61504 debugHudEntryList Lnet/minecraft/class_11633;
@@ -187,7 +168,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_1_368 addLowDiskSpaceWarning ()V
 	METHOD method_1_2117 isOtherPlayer (Ljava/util/UUID;)Z
 		ARG 1 sender
-	METHOD method_1_2118 printCrashReport (Lnet/minecraft/class_310;Ljava/io/File;Lnet/minecraft/class_128;)I
+	METHOD method_1_2118 printCrashReport (Lnet/minecraft/class_310;Ljava/io/File;Lnet/minecraft/class_128;I)I
 		ARG 0 client
 		ARG 1 runDirectory
 		ARG 2 crashReport
@@ -209,25 +190,12 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_1494 (Lnet/minecraft/class_128;)V
 		ARG 1 crashReport
 	METHOD method_1496 isIntegratedServerRunning ()Z
-	METHOD method_1498 isHudEnabled ()Z
 	METHOD method_1504 setCameraEntity (Lnet/minecraft/class_1297;)V
 		ARG 1 entity
 	METHOD method_1505 getBlockColors ()Lnet/minecraft/class_324;
 	METHOD method_1506 handleGlErrorByDisableVsync (IJ)V
 		ARG 1 error
 		ARG 2 description
-	METHOD method_1507 setScreen (Lnet/minecraft/class_437;)V
-		COMMENT Sets the current screen to a new screen.
-		COMMENT
-		COMMENT <p>If the screen being opened is {@code null}:
-		COMMENT <ul>
-		COMMENT <li>if the client is not in game, the title screen will be opened</li>
-		COMMENT <li>if the {@linkplain #player} is dead, the death screen will be opened</li>
-		COMMENT </ul>
-		COMMENT
-		COMMENT <p>If there is an open screen when the current screen is changed, {@link Screen#removed()}
-		COMMENT will be called on it to notify it of the closing.
-		ARG 1 screen
 	METHOD method_1508 handleInputEvents ()V
 	METHOD method_1510 (Lnet/minecraft/class_2561;)V
 		ARG 0 status
@@ -259,11 +227,10 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_1560 getCameraEntity ()Lnet/minecraft/class_1297;
 	METHOD method_1561 getEntityRenderDispatcher ()Lnet/minecraft/class_898;
 	METHOD method_1562 getNetworkHandler ()Lnet/minecraft/class_634;
-	METHOD method_1565 printCrashReportAndExit (Lnet/minecraft/class_310;Ljava/io/File;Lnet/minecraft/class_128;)V
+	METHOD method_1565 printCrashReportAndExit (Lnet/minecraft/class_310;Ljava/io/File;Lnet/minecraft/class_128;I)V
 		ARG 0 client
 		ARG 1 runDirectory
 		ARG 2 crashReport
-	METHOD method_1566 getToastManager ()Lnet/minecraft/class_374;
 	METHOD method_1569 isWindowFocused ()Z
 	METHOD method_1571 getCreativeHotbarStorage ()Lnet/minecraft/class_302;
 	METHOD method_1573 forcesUnicodeFont ()Z
@@ -282,7 +249,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 1 breaking
 	METHOD method_1592 scheduleStop ()V
 	METHOD method_17044 checkGameData ()V
-	METHOD method_18095 getSplashTextLoader ()Lnet/minecraft/class_4008;
 	METHOD method_18096 disconnect (Lnet/minecraft/class_437;ZZ)V
 		ARG 1 disconnectionScreen
 		ARG 2 transferring
@@ -290,9 +256,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_18097 setWorld (Lnet/minecraft/class_638;Z)V
 		ARG 1 world
 		ARG 2 stopSounds
-	METHOD method_18502 setOverlay (Lnet/minecraft/class_4071;)V
-		ARG 1 overlay
-	METHOD method_18506 getOverlay ()Lnet/minecraft/class_4071;
 	METHOD method_18507 (Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletionStage;
 		ARG 0 future
 	METHOD method_20539 openGameMenu (Z)V
@@ -316,10 +279,10 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_22940 getBufferBuilders ()Lnet/minecraft/class_4599;
 	METHOD method_24041 setMipmapLevels (I)V
 		ARG 1 mipmapLevels
-	METHOD method_24226 handleResourceReloadException (Ljava/lang/Throwable;Lnet/minecraft/class_310$class_8764;)V
+	METHOD method_24226 handleResourceReloadException (Ljava/lang/Throwable;Lnet/minecraft/class_8764;)V
 		ARG 1 throwable
 		ARG 2 loadingContext
-	METHOD method_24228 (ZLnet/minecraft/class_310$class_8764;Ljava/util/concurrent/CompletableFuture;Ljava/util/Optional;)V
+	METHOD method_24228 (ZLnet/minecraft/class_8764;Ljava/util/concurrent/CompletableFuture;Ljava/util/Optional;)V
 		ARG 4 error
 	METHOD method_24287 getWindowTitle ()Ljava/lang/String;
 	METHOD method_24288 updateWindowTitle ()V
@@ -333,8 +296,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_27022 hasOutline (Lnet/minecraft/class_1297;)Z
 		COMMENT Checks if the provided {@code entity} should display an outline around its model.
 		ARG 1 entity
-	METHOD method_29041 openChatScreen (Lnet/minecraft/class_338$class_11732;)V
-		ARG 1 method
 	METHOD method_29042 shouldBlockMessages (Ljava/util/UUID;)Z
 		COMMENT Checks if the client should block messages from the {@code sender}.
 		COMMENT
@@ -354,7 +315,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_29970 setScreenAndRender (Lnet/minecraft/class_437;)V
 		ARG 1 screen
 	METHOD method_30049 getVideoWarningManager ()Lnet/minecraft/class_5407;
-	METHOD method_31186 onResourceReloadFailure (Ljava/lang/Throwable;Lnet/minecraft/class_2561;Lnet/minecraft/class_310$class_8764;)V
+	METHOD method_31186 onResourceReloadFailure (Ljava/lang/Throwable;Lnet/minecraft/class_2561;Lnet/minecraft/class_8764;)V
 		ARG 1 exception
 		ARG 2 resourceName
 		ARG 3 loadingContext
@@ -382,7 +343,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_35704 (Ljava/io/File;Lnet/minecraft/class_2583;)Lnet/minecraft/class_2583;
 		ARG 1 style
 	METHOD method_35706 isRealmsEnabled ()Z
-	METHOD method_36561 reloadResources (ZLnet/minecraft/class_310$class_8764;)Ljava/util/concurrent/CompletableFuture;
+	METHOD method_36561 reloadResources (ZLnet/minecraft/class_8764;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 force
 		ARG 2 loadingContext
 	METHOD method_37274 addSystemDetailsToCrashReport (Lnet/minecraft/class_6396;Lnet/minecraft/class_310;Lnet/minecraft/class_1076;Ljava/lang/String;Lnet/minecraft/class_315;)Lnet/minecraft/class_6396;
@@ -422,7 +383,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_44646 getRealmsPeriodicCheckers ()Lnet/minecraft/class_7578;
 	METHOD method_44647 getMultiplayerBanDetails ()Lcom/mojang/authlib/minecraft/BanDetails;
 	METHOD method_44713 getNarratorManager ()Lnet/minecraft/class_333;
-	METHOD method_44714 getMessageHandler ()Lnet/minecraft/class_7594;
 	METHOD method_45573 getDefaultResourcePack ()Lnet/minecraft/class_3268;
 	METHOD method_47392 isConnectedToLocalServer ()Z
 	METHOD method_47595 isOptionalTelemetryEnabledByApi ()Z
@@ -436,40 +396,27 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_48186 getNavigationType ()Lnet/minecraft/class_8015;
 	METHOD method_49292 showResourceReloadFailureToast (Lnet/minecraft/class_2561;)V
 		ARG 1 description
-	METHOD method_49293 (ZLnet/minecraft/class_310$class_8764;Ljava/lang/Throwable;)V
+	METHOD method_49293 (ZLnet/minecraft/class_8764;Ljava/lang/Throwable;)V
 		ARG 3 throwable
 	METHOD method_49294 onForcedResourceReloadFailure ()V
 	METHOD method_51253 getQuickPlayLogger ()Lnet/minecraft/class_8497;
-	METHOD method_51736 collectLoadTimes (Lnet/minecraft/class_310$class_8764;)V
+	METHOD method_51736 collectLoadTimes (Lnet/minecraft/class_8764;)V
 		ARG 1 loadingContext
-	METHOD method_52700 getCommandHistoryManager ()Lnet/minecraft/class_8657;
 	METHOD method_52701 uuidEquals (Ljava/util/UUID;)Z
 		ARG 1 uuid
 	METHOD method_52702 getSymlinkFinder ()Lnet/minecraft/class_8580;
 	METHOD method_52703 enterReconfiguration (Lnet/minecraft/class_437;)V
 		ARG 1 reconfigurationScreen
 	METHOD method_53462 getGameProfile ()Lcom/mojang/authlib/GameProfile;
-	METHOD method_53465 onFinishedLoading (Lnet/minecraft/class_310$class_8764;)V
+	METHOD method_53465 onFinishedLoading (Lnet/minecraft/class_8764;)V
 		ARG 1 loadingContext
 	METHOD method_53466 isFinishedLoading ()Z
 	METHOD method_53518 isUsernameBanned ()Z
-	METHOD method_53519 (Lcom/mojang/authlib/GameProfile;Ljava/lang/Runnable;)Lnet/minecraft/class_437;
-		ARG 1 onClose
-	METHOD method_53520 (Lcom/mojang/authlib/minecraft/BanDetails;Ljava/lang/Runnable;)Lnet/minecraft/class_437;
-		ARG 1 onClose
-	METHOD method_53521 (Lnet/minecraft/class_310$class_8764;Ljava/lang/Throwable;)V
+	METHOD method_53521 (Lnet/minecraft/class_8764;Ljava/lang/Throwable;)V
 		ARG 2 throwable
-	METHOD method_53522 (Lnet/minecraft/class_310$class_8764;Ljava/util/Optional;)V
+	METHOD method_53522 (Lnet/minecraft/class_8764;Ljava/util/Optional;)V
 		ARG 2 error
-	METHOD method_53523 (Ljava/lang/Runnable;)Lnet/minecraft/class_437;
-		ARG 1 onClose
-	METHOD method_53524 (Ljava/lang/Runnable;Z)V
-		ARG 1 confirmed
-	METHOD method_53525 createInitScreens (Ljava/util/List;)Z
-		ARG 1 list
 	METHOD method_53526 getDebugHud ()Lnet/minecraft/class_340;
-	METHOD method_53527 onInitFinished (Lnet/minecraft/class_310$class_8764;)Ljava/lang/Runnable;
-		ARG 1 loadingContext
 	METHOD method_54116 formatSeconds (D)Ljava/lang/String;
 		ARG 0 seconds
 	METHOD method_54117 addUptimesToCrashReport (Lnet/minecraft/class_129;)V
@@ -485,7 +432,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_60320 (Lnet/minecraft/class_1078;)V
 		ARG 1 translationStorage
 	METHOD method_60647 shouldTick ()Z
-	METHOD method_61962 printCrashReport (Ljava/io/File;Lnet/minecraft/class_128;)I
+	METHOD method_61962 printCrashReport (Ljava/io/File;Lnet/minecraft/class_128;I)I
 		ARG 0 runDir
 		ARG 1 crashReport
 	METHOD method_61963 getMapTextureManager ()Lnet/minecraft/class_10093;
@@ -501,7 +448,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_68467 (Lnet/minecraft/class_2960;Lcom/mojang/blaze3d/shaders/ShaderType;)Ljava/lang/String;
 		ARG 1 id
 		ARG 2 type
-	METHOD method_71267 getWaypointStyleAssetManager ()Lnet/minecraft/class_11327;
 	METHOD method_72096 (Lnet/minecraft/class_6880;)V
 		ARG 1 dialog
 	METHOD method_72097 (Lnet/minecraft/class_2378;Lnet/minecraft/class_6885$class_6888;)Ljava/util/Optional;
@@ -533,4 +479,3 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 1 stopSounds
 	CLASS 1 1
 		FIELD field_52756 closed Z
-	CLASS class_8764 LoadingContext

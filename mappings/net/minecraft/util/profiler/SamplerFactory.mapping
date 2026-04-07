@@ -6,7 +6,3 @@ CLASS net/minecraft/class_6401 net/minecraft/util/profiler/SamplerFactory
 		ARG 0 profilerSupplier
 		ARG 1 id
 		ARG 2 type
-	METHOD method_37197 (Ljava/util/function/Supplier;Lorg/apache/commons/lang3/tuple/Pair;)Lnet/minecraft/class_5965;
-		ARG 1 target
-	METHOD method_37198 (Lorg/apache/commons/lang3/tuple/Pair;)Z
-		ARG 1 target

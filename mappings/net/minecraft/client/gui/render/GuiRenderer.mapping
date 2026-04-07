@@ -56,8 +56,7 @@ CLASS net/minecraft/class_11228 net/minecraft/client/gui/render/GuiRenderer
 	METHOD method_70888 prepareSpecialElement (Lnet/minecraft/class_11256;I)V
 		ARG 1 elementState
 		ARG 2 windowScaleFactor
-	METHOD method_70890 render (Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
-		ARG 1 fogBuffer
+	METHOD method_70890 render ()V
 	METHOD method_70891 prepareTextElements ()V
 	METHOD method_70892 prepareItemElements ()V
 	METHOD method_70893 prepareSpecialElements ()V
@@ -76,18 +75,16 @@ CLASS net/minecraft/class_11228 net/minecraft/client/gui/render/GuiRenderer
 		ARG 1 state
 	METHOD method_71288 prepareSimpleElements (Lnet/minecraft/class_11246$class_11325;)V
 		ARG 1 filter
-	METHOD method_71289 render (Ljava/util/function/Supplier;Lnet/minecraft/class_276;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Lcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5595;II)V
+	METHOD method_71289 render (Ljava/util/function/Supplier;Lnet/minecraft/class_276;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Lcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5595;II)V
 		ARG 1 nameSupplier
 		ARG 2 framebuffer
-		ARG 3 fogBuffer
-		ARG 4 dynamicTransformsBuffer
-		ARG 5 buffer
-		ARG 6 indexType
-		ARG 7 from
-		ARG 8 to
+		ARG 3 dynamicTransformsBuffer
+		ARG 4 buffer
+		ARG 5 indexType
+		ARG 6 from
+		ARG 7 to
 	METHOD method_71290 prepare ()V
-	METHOD method_71291 renderPreparedDraws (Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
-		ARG 1 fogBuffer
+	METHOD method_71291 renderPreparedDraws ()V
 	METHOD method_71292 finishPreparation ()V
 	METHOD method_71293 initVertexBuffers ()V
 	METHOD method_71294 collectVertexSizes ()Lit/unimi/dsi/fastutil/objects/Object2IntMap;

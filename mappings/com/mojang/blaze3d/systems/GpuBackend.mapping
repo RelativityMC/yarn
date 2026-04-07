@@ -17,7 +17,7 @@ CLASS net/minecraft/class_1_147 com/mojang/blaze3d/systems/GpuBackend
 		ARG 4 magFilterMode
 		ARG 5 maxAnisotropy
 		ARG 6 maxLevelOfDetail
-	METHOD method_1_1290 createTexture (Ljava/lang/String;ILcom/mojang/blaze3d/textures/TextureFormat;IIII)Lcom/mojang/blaze3d/textures/GpuTexture;
+	METHOD method_1_1290 createTexture (Ljava/lang/String;ILnet/minecraft/class_1_658;IIII)Lcom/mojang/blaze3d/textures/GpuTexture;
 		ARG 1 label
 		ARG 2 usage
 		ARG 3 format
@@ -25,7 +25,7 @@ CLASS net/minecraft/class_1_147 com/mojang/blaze3d/systems/GpuBackend
 		ARG 5 height
 		ARG 6 depthOrLayers
 		ARG 7 mipLevels
-	METHOD method_1_1291 createTexture (Ljava/util/function/Supplier;ILcom/mojang/blaze3d/textures/TextureFormat;IIII)Lcom/mojang/blaze3d/textures/GpuTexture;
+	METHOD method_1_1291 createTexture (Ljava/util/function/Supplier;ILnet/minecraft/class_1_658;IIII)Lcom/mojang/blaze3d/textures/GpuTexture;
 		ARG 1 labelGetter
 		ARG 2 usage
 		ARG 3 format
@@ -39,21 +39,8 @@ CLASS net/minecraft/class_1_147 com/mojang/blaze3d/systems/GpuBackend
 		ARG 1 texture
 		ARG 2 baseMipLevel
 		ARG 3 mipLevels
-	METHOD method_1_1294 getBackendName ()Ljava/lang/String;
-	METHOD method_1_1295 getEnabledExtensions ()Ljava/util/List;
-	METHOD method_1_1296 getImplementationInformation ()Ljava/lang/String;
 	METHOD method_1_1297 getLastDebugMessages ()Ljava/util/List;
-	METHOD method_1_1298 getMaxSupportedAnisotropy ()I
-	METHOD method_1_1299 getMaxTextureSize ()I
-	METHOD method_1_1300 getRenderer ()Ljava/lang/String;
-	METHOD method_1_1301 getUniformOffsetAlignment ()I
-	METHOD method_1_1302 getVendor ()Ljava/lang/String;
-	METHOD method_1_1303 getVersion ()Ljava/lang/String;
 	METHOD method_1_1304 isDebuggingEnabled ()Z
-	METHOD method_1_1305 isZZeroToOne ()Z
 	METHOD method_1_1306 precompilePipeline (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/class_12289;)Lcom/mojang/blaze3d/pipeline/CompiledRenderPipeline;
 		ARG 1 pipeline
 		ARG 2 sourceGetter
-	METHOD method_1_1307 presentFrame ()V
-	METHOD method_1_1308 setVsync (Z)V
-		ARG 1 vsync

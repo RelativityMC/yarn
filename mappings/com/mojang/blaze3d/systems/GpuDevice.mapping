@@ -18,7 +18,7 @@ CLASS com/mojang/blaze3d/systems/GpuDevice
 		ARG 4 filterModeV
 		ARG 5 maxAnisotropy
 		ARG 6 maxLevelOfDetail
-	METHOD createTexture (Ljava/lang/String;ILcom/mojang/blaze3d/textures/TextureFormat;IIII)Lcom/mojang/blaze3d/textures/GpuTexture;
+	METHOD createTexture (Ljava/lang/String;ILnet/minecraft/class_1_658;IIII)Lcom/mojang/blaze3d/textures/GpuTexture;
 		ARG 1 label
 		ARG 2 usage
 		ARG 3 format
@@ -26,7 +26,7 @@ CLASS com/mojang/blaze3d/systems/GpuDevice
 		ARG 5 height
 		ARG 6 depthOrLayers
 		ARG 7 mipLevels
-	METHOD createTexture (Ljava/util/function/Supplier;ILcom/mojang/blaze3d/textures/TextureFormat;IIII)Lcom/mojang/blaze3d/textures/GpuTexture;
+	METHOD createTexture (Ljava/util/function/Supplier;ILnet/minecraft/class_1_658;IIII)Lcom/mojang/blaze3d/textures/GpuTexture;
 		ARG 1 labelGetter
 		ARG 2 usage
 		ARG 3 format
@@ -45,8 +45,6 @@ CLASS com/mojang/blaze3d/systems/GpuDevice
 	METHOD precompilePipeline (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/class_12289;)Lcom/mojang/blaze3d/pipeline/CompiledRenderPipeline;
 		ARG 1 pipeline
 		ARG 2 sourceGetter
-	METHOD setVsync (Z)V
-		ARG 1 vsync
 	METHOD verifyTextureCreationArgs (IIIII)V
 		ARG 1 usage
 		ARG 2 width

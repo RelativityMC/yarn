@@ -536,7 +536,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_30127 swapHandStacks ()V
 	METHOD method_30128 sendEquipmentChanges ()V
 		COMMENT Sends equipment changes to nearby players.
-	METHOD method_30129 getEquipmentChanges ()Ljava/util/Map;
+	METHOD method_30129 getEquipmentChanges (Ljava/util/Map;)Ljava/util/Map;
 		COMMENT {@return the difference between the last sent equipment set and the
 		COMMENT current one}
 	METHOD method_31079 positionInPortal (Lnet/minecraft/class_243;)Lnet/minecraft/class_243;
@@ -682,7 +682,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_61424 checkGlidingCollision (DD)V
 		ARG 1 oldSpeed
 		ARG 3 newSpeed
-	METHOD method_61426 getEffectiveGravity ()D
 	METHOD method_61427 (Lnet/minecraft/class_1304;)Lit/unimi/dsi/fastutil/objects/Reference2ObjectMap;
 		ARG 0 slotx
 	METHOD method_61428 travelMidAir (Lnet/minecraft/class_243;)V

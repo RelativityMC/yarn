@@ -15,7 +15,6 @@ CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 	FIELD field_64026 TEXT_INTENSITY_SEE_THROUGH Ljava/util/function/Function;
 	FIELD field_64027 LIGHTNING Lnet/minecraft/class_1921;
 	FIELD field_64028 DRAGON_RAYS Lnet/minecraft/class_1921;
-	FIELD field_64029 DRAGON_RAYS_DEPTH Lnet/minecraft/class_1921;
 	FIELD field_64031 END_PORTAL Lnet/minecraft/class_1921;
 	FIELD field_64032 END_GATEWAY Lnet/minecraft/class_1921;
 	FIELD field_64033 DEBUG_FILLED_BOX Lnet/minecraft/class_1921;
@@ -187,7 +186,6 @@ CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 	METHOD method_76005 dragonRays ()Lnet/minecraft/class_1921;
 	METHOD method_76006 entityDecal (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
-	METHOD method_76007 dragonRaysDepth ()Lnet/minecraft/class_1921;
 	METHOD method_76010 entityShadow (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
 	METHOD method_76011 endPortal ()Lnet/minecraft/class_1921;

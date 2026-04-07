@@ -1,9 +1,8 @@
 CLASS com/mojang/blaze3d/systems/CommandEncoder
 	COMMENT Wraps a {@link com.mojang.blaze3d.systems.BaseCommandEncoder} to provide
 	COMMENT extra run-time checks.
-	METHOD <init> (Lnet/minecraft/class_1_147;Lnet/minecraft/class_1_154;)V
-		ARG 1 device
-		ARG 2 backend
+	METHOD <init> (Lnet/minecraft/class_1_708;Lnet/minecraft/class_1_147;Lnet/minecraft/class_1_154;)V
+		ARG 3 backend
 	METHOD clearColorAndDepthTextures (Lcom/mojang/blaze3d/textures/GpuTexture;ILcom/mojang/blaze3d/textures/GpuTexture;D)V
 		ARG 1 colorAttachment
 		ARG 2 color
@@ -71,10 +70,6 @@ CLASS com/mojang/blaze3d/systems/CommandEncoder
 		ARG 1 slice
 		ARG 2 read
 		ARG 3 write
-	METHOD presentTexture (Lcom/mojang/blaze3d/textures/GpuTextureView;)V
-		ARG 1 texture
-	METHOD timerQueryEnd (Lcom/mojang/blaze3d/systems/GpuQuery;)V
-		ARG 1 timerQuery
 	METHOD verifyColorTexture (Lcom/mojang/blaze3d/textures/GpuTexture;)V
 		ARG 1 texture
 	METHOD verifyDepthTexture (Lcom/mojang/blaze3d/textures/GpuTexture;)V

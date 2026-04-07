@@ -40,5 +40,3 @@ CLASS net/minecraft/class_11187 net/minecraft/entity/passive/HappyGhastEntity
 	CLASS class_11189 HappyGhastBodyControl
 	CLASS class_11190 HappyGhastSwimGoal
 	CLASS class_11191 HappyGhastLookControl
-		METHOD method_70704 getYawToSubtract (F)F
-			ARG 0 yaw

@@ -21,5 +21,3 @@ CLASS net/minecraft/class_5193 net/minecraft/structure/processor/BlockAgeStructu
 	METHOD method_27262 processWalls (Lnet/minecraft/class_2680;Lnet/minecraft/class_5819;)Lnet/minecraft/class_2680;
 	METHOD method_27263 processObsidian (Lnet/minecraft/class_5819;)Lnet/minecraft/class_2680;
 		ARG 1 random
-	METHOD method_28967 (Lnet/minecraft/class_5193;)Ljava/lang/Float;
-		ARG 0 processor

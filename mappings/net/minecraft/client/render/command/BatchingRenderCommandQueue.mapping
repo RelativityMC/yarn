@@ -7,7 +7,7 @@ CLASS net/minecraft/class_11788 net/minecraft/client/render/command/BatchingRend
 	FIELD field_62232 movingBlockCommands Ljava/util/List;
 	FIELD field_62233 blockStateModelCommands Ljava/util/List;
 	FIELD field_62234 itemCommands Ljava/util/List;
-	FIELD field_62238 modelPartCommands Lnet/minecraft/class_11793$class_12049;
+	FIELD field_62238 modelPartCommands Ljava/util/List;
 	FIELD field_62240 customCommands Lnet/minecraft/class_11682$class_12047;
 	FIELD field_62242 orderedQueueImpl Lnet/minecraft/class_11661;
 	FIELD field_62243 hasCommands Z
@@ -23,7 +23,7 @@ CLASS net/minecraft/class_11788 net/minecraft/client/render/command/BatchingRend
 	METHOD method_73517 getLeashCommands ()Ljava/util/List;
 	METHOD method_73519 getMovingBlockCommands ()Ljava/util/List;
 	METHOD method_73520 getBlockStateModelCommands ()Ljava/util/List;
-	METHOD method_73521 getModelPartCommands ()Lnet/minecraft/class_11793$class_12049;
+	METHOD method_73521 getModelPartCommands ()Ljava/util/List;
 	METHOD method_73522 getItemCommands ()Ljava/util/List;
 	METHOD method_73525 getCustomCommands ()Lnet/minecraft/class_11682$class_12047;
 	METHOD method_73526 hasCommands ()Z

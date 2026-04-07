@@ -30,15 +30,14 @@ CLASS net/minecraft/class_542 net/minecraft/client/RunArgs
 		FIELD field_54272 tracyEnabled Z
 		FIELD field_57923 renderDebugLabels Z
 		FIELD field_61660 offlineDeveloperMode Z
-		METHOD <init> (ZLjava/lang/String;Ljava/lang/String;ZZZZZ)V
+		METHOD <init> (ZLjava/lang/String;Ljava/lang/String;ZZZZZZ)V
 			ARG 1 demo
 			ARG 2 version
 			ARG 3 versionType
 			ARG 4 multiplayerDisabled
 			ARG 5 onlineChatDisabled
 			ARG 6 tracyEnabled
-			ARG 7 renderDebugLabels
-			ARG 8 offlineDeveloperMode
+			ARG 9 offlineDeveloperMode
 	CLASS class_547 Network
 		FIELD field_3296 netProxy Ljava/net/Proxy;
 		FIELD field_3299 session Lnet/minecraft/class_320;

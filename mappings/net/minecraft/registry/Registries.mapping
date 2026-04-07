@@ -160,8 +160,6 @@ CLASS net/minecraft/class_7923 net/minecraft/registry/Registries
 	METHOD method_47491 freezeRegistries ()V
 	METHOD method_47492 (Lnet/minecraft/class_2378;)Ljava/lang/Object;
 		ARG 0 registry
-	METHOD method_47493 (Lnet/minecraft/class_2378;)Ljava/lang/Object;
-		ARG 0 registry
 	METHOD method_47494 (Lnet/minecraft/class_2378;)Ljava/lang/Object;
 		ARG 0 registry
 	METHOD method_47495 (Lnet/minecraft/class_2378;)Ljava/lang/Object;

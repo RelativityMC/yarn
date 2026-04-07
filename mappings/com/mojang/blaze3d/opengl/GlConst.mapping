@@ -1,15 +1,5 @@
 CLASS com/mojang/blaze3d/opengl/GlConst
-	METHOD toGl (Lcom/mojang/blaze3d/platform/DestFactor;)I
-		ARG 0 factor
-	METHOD toGl (Lcom/mojang/blaze3d/platform/SourceFactor;)I
-		ARG 0 factor
 	METHOD toGl (Lcom/mojang/blaze3d/vertex/VertexFormat$class_5595;)I
 		ARG 0 type
 	METHOD toGl (Lcom/mojang/blaze3d/vertex/VertexFormat$class_5596;)I
 		ARG 0 drawMode
-	METHOD toGlExternalId (Lcom/mojang/blaze3d/textures/TextureFormat;)I
-		ARG 0 format
-	METHOD toGlInternalId (Lcom/mojang/blaze3d/textures/TextureFormat;)I
-		ARG 0 format
-	METHOD toGlType (Lcom/mojang/blaze3d/textures/TextureFormat;)I
-		ARG 0 format

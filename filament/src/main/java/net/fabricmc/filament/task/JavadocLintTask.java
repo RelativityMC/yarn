@@ -29,8 +29,11 @@ import org.gradle.api.file.FileType;
 import org.gradle.api.logging.Logger;
 import org.gradle.api.logging.Logging;
 import org.gradle.api.tasks.InputDirectory;
+import org.gradle.api.tasks.PathSensitive;
+import org.gradle.api.tasks.PathSensitivity;
 import org.gradle.api.tasks.TaskAction;
 import org.gradle.work.ChangeType;
+import org.gradle.work.DisableCachingByDefault;
 import org.gradle.work.FileChange;
 import org.gradle.work.Incremental;
 import org.gradle.work.InputChanges;
@@ -41,12 +44,14 @@ import org.gradle.workers.WorkerExecutor;
 
 import net.fabricmc.filament.util.FileUtil;
 
+@DisableCachingByDefault
 public abstract class JavadocLintTask extends DefaultTask {
 	private static final Pattern PARAM_DOC_LINE = Pattern.compile("^@param\\s+[^<].*$");
 	private final DirectoryProperty mappingDirectory = getProject().getObjects().directoryProperty();
 
 	@Incremental
 	@InputDirectory
+	@PathSensitive(PathSensitivity.NONE)
 	public DirectoryProperty getMappingDirectory() {
 		return mappingDirectory;
 	}

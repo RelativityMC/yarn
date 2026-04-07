@@ -31,7 +31,10 @@ import org.gradle.api.tasks.Input;
 import org.gradle.api.tasks.InputFile;
 import org.gradle.api.tasks.InputFiles;
 import org.gradle.api.tasks.OutputFile;
+import org.gradle.api.tasks.PathSensitive;
+import org.gradle.api.tasks.PathSensitivity;
 import org.gradle.api.tasks.TaskAction;
+import org.gradle.work.DisableCachingByDefault;
 import org.gradle.workers.WorkAction;
 import org.gradle.workers.WorkParameters;
 import org.gradle.workers.WorkQueue;
@@ -49,17 +52,21 @@ import net.fabricmc.mappingio.MappingReader;
 import net.fabricmc.mappingio.tree.MappingTree;
 import net.fabricmc.mappingio.tree.MemoryMappingTree;
 
+@DisableCachingByDefault
 public abstract class RemapUnpickDefinitionsTask extends DefaultTask {
 	@InputFile
+	@PathSensitive(PathSensitivity.NONE)
 	public abstract RegularFileProperty getInput();
 
 	@InputFiles
+	@PathSensitive(PathSensitivity.NONE)
 	public abstract ConfigurableFileCollection getClasspath();
 
 	@Input
 	public abstract Property<String> getClasspathNamespace();
 
 	@InputFile
+	@PathSensitive(PathSensitivity.NONE)
 	public abstract RegularFileProperty getMappings();
 
 	@Input

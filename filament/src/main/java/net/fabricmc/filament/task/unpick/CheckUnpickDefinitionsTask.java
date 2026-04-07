@@ -23,7 +23,10 @@ import org.gradle.api.file.ConfigurableFileCollection;
 import org.gradle.api.file.DirectoryProperty;
 import org.gradle.api.tasks.InputDirectory;
 import org.gradle.api.tasks.InputFiles;
+import org.gradle.api.tasks.PathSensitive;
+import org.gradle.api.tasks.PathSensitivity;
 import org.gradle.api.tasks.TaskAction;
+import org.gradle.work.DisableCachingByDefault;
 import org.gradle.workers.WorkAction;
 import org.gradle.workers.WorkParameters;
 import org.gradle.workers.WorkQueue;
@@ -33,14 +36,17 @@ import org.slf4j.LoggerFactory;
 
 import net.fabricmc.loom.util.FileSystemUtil;
 
+@DisableCachingByDefault
 public abstract class CheckUnpickDefinitionsTask extends DefaultTask {
 	private static final Logger LOGGER = LoggerFactory.getLogger(CheckUnpickDefinitionsTask.class);
 	private static final int CURRENT_UNPICK_VERSION = 4;
 
 	@InputDirectory
+	@PathSensitive(PathSensitivity.NONE)
 	public abstract DirectoryProperty getInput();
 
 	@InputFiles
+	@PathSensitive(PathSensitivity.NONE)
 	public abstract ConfigurableFileCollection getClasspath();
 
 	@Inject

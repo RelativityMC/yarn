@@ -6,12 +6,14 @@ import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 
 import org.gradle.api.tasks.TaskAction;
+import org.gradle.work.DisableCachingByDefault;
 
 import net.fabricmc.filament.task.base.FilamentTask;
 import net.fabricmc.filament.task.base.WithFileInput;
 import net.fabricmc.filament.task.base.WithFileOutput;
 import net.fabricmc.loom.util.FileSystemUtil;
 
+@DisableCachingByDefault
 public abstract class ExtractBundledServerTask extends FilamentTask implements WithFileOutput, WithFileInput {
 	@TaskAction
 	public void run() throws IOException {

@@ -3,11 +3,14 @@ package net.fabricmc.filament.task.mappingio;
 import java.io.IOException;
 import java.util.Map;
 
+import org.gradle.work.DisableCachingByDefault;
+
 import net.fabricmc.filament.task.base.WithFileInput;
 import net.fabricmc.mappingio.MappingReader;
 import net.fabricmc.mappingio.MappingWriter;
 import net.fabricmc.mappingio.adapter.MappingNsCompleter;
 
+@DisableCachingByDefault
 public abstract class CompleteMappingsTask extends MappingOutputTask implements WithFileInput {
 	@Override
 	void run(MappingWriter writer) throws IOException {

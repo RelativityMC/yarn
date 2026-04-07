@@ -4,9 +4,11 @@ import javax.inject.Inject;
 
 import org.gradle.api.DefaultTask;
 import org.gradle.api.tasks.Internal;
+import org.gradle.work.DisableCachingByDefault;
 
 import net.fabricmc.filament.FilamentExtension;
 
+@DisableCachingByDefault
 public abstract class FilamentTask extends DefaultTask {
 	@Inject
 	public FilamentTask() {

@@ -8,6 +8,7 @@ import org.gradle.api.file.RegularFileProperty;
 import org.gradle.api.provider.Property;
 import org.gradle.api.tasks.Input;
 import org.gradle.api.tasks.TaskAction;
+import org.gradle.work.DisableCachingByDefault;
 import org.gradle.workers.WorkAction;
 import org.gradle.workers.WorkParameters;
 import org.gradle.workers.WorkQueue;
@@ -18,6 +19,7 @@ import net.fabricmc.filament.task.base.WithFileOutput;
 import net.fabricmc.loom.util.download.Download;
 import net.fabricmc.loom.util.download.DownloadException;
 
+@DisableCachingByDefault
 public abstract class DownloadTask extends FilamentTask implements WithFileOutput {
 	@Input
 	public abstract Property<String> getUrl();

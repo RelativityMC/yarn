@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Set;
 
 import org.gradle.api.tasks.TaskAction;
+import org.gradle.work.DisableCachingByDefault;
 import org.jetbrains.annotations.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,6 +19,7 @@ import net.fabricmc.mappingio.MappedElementKind;
 import net.fabricmc.mappingio.MappingReader;
 import net.fabricmc.mappingio.MappingVisitor;
 
+@DisableCachingByDefault
 public abstract class CheckMergedMappingsTask extends FilamentTask implements WithFileInput {
 	private static final Logger LOGGER = LoggerFactory.getLogger(CheckMergedMappingsTask.class);
 

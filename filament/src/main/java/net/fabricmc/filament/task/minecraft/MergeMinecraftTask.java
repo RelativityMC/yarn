@@ -4,16 +4,22 @@ import java.io.IOException;
 
 import org.gradle.api.file.RegularFileProperty;
 import org.gradle.api.tasks.InputFile;
+import org.gradle.api.tasks.PathSensitive;
+import org.gradle.api.tasks.PathSensitivity;
 import org.gradle.api.tasks.TaskAction;
+import org.gradle.work.DisableCachingByDefault;
 
 import net.fabricmc.filament.task.base.FileOutputTask;
 import net.fabricmc.loom.configuration.providers.minecraft.MinecraftJarMerger;
 
+@DisableCachingByDefault
 public abstract class MergeMinecraftTask extends FileOutputTask {
 	@InputFile
+	@PathSensitive(PathSensitivity.NONE)
 	public abstract RegularFileProperty getClientJar();
 
 	@InputFile
+	@PathSensitive(PathSensitivity.NONE)
 	public abstract RegularFileProperty getServerJar();
 
 	@TaskAction

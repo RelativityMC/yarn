@@ -19,7 +19,10 @@ import org.gradle.api.provider.Provider;
 import org.gradle.api.tasks.Classpath;
 import org.gradle.api.tasks.Input;
 import org.gradle.api.tasks.InputFile;
+import org.gradle.api.tasks.PathSensitive;
+import org.gradle.api.tasks.PathSensitivity;
 import org.gradle.api.tasks.TaskAction;
+import org.gradle.work.DisableCachingByDefault;
 import org.gradle.workers.WorkAction;
 import org.gradle.workers.WorkParameters;
 import org.gradle.workers.WorkQueue;
@@ -31,7 +34,9 @@ import net.fabricmc.tinyremapper.OutputConsumerPath;
 import net.fabricmc.tinyremapper.TinyRemapper;
 import net.fabricmc.tinyremapper.TinyUtils;
 
+@DisableCachingByDefault
 public abstract class MapJarTask extends DefaultTask implements WithFileOutput, WithFileInput {
+	@PathSensitive(PathSensitivity.NONE)
 	@InputFile public abstract RegularFileProperty getMappings();
 	@Classpath public abstract ConfigurableFileCollection getClasspath();
 	@Input public abstract Property<String> getFrom();

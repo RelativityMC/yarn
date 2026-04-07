@@ -16,19 +16,24 @@ import org.gradle.api.provider.Property;
 import org.gradle.api.tasks.Input;
 import org.gradle.api.tasks.InputFile;
 import org.gradle.api.tasks.OutputDirectory;
+import org.gradle.api.tasks.PathSensitive;
+import org.gradle.api.tasks.PathSensitivity;
 import org.gradle.api.tasks.TaskAction;
+import org.gradle.work.DisableCachingByDefault;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.ClassNode;
 
 import net.fabricmc.filament.util.FileUtil;
 
+@DisableCachingByDefault
 public class GeneratePackageInfoMappingsTask extends DefaultTask {
 	private final RegularFileProperty inputJar = getProject().getObjects().fileProperty();
 	private final Property<String> packageName = getProject().getObjects().property(String.class);
 	private final DirectoryProperty outputDir = getProject().getObjects().directoryProperty();
 
 	@InputFile
+	@PathSensitive(PathSensitivity.NONE)
 	public RegularFileProperty getInputJar() {
 		return inputJar;
 	}

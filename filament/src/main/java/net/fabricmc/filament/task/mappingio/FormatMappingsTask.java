@@ -7,7 +7,10 @@ import java.util.Objects;
 import org.gradle.api.file.DirectoryProperty;
 import org.gradle.api.tasks.InputDirectory;
 import org.gradle.api.tasks.OutputDirectory;
+import org.gradle.api.tasks.PathSensitive;
+import org.gradle.api.tasks.PathSensitivity;
 import org.gradle.api.tasks.TaskAction;
+import org.gradle.work.DisableCachingByDefault;
 
 import net.fabricmc.filament.task.base.FilamentTask;
 import net.fabricmc.mappingio.MappingReader;
@@ -16,8 +19,10 @@ import net.fabricmc.mappingio.format.MappingFormat;
 import net.fabricmc.mappingio.tree.MemoryMappingTree;
 import net.fabricmc.mappingio.tree.VisitOrder;
 
+@DisableCachingByDefault
 public abstract class FormatMappingsTask extends FilamentTask {
 	@InputDirectory
+	@PathSensitive(PathSensitivity.NONE)
 	public abstract DirectoryProperty getInput();
 
 	@OutputDirectory

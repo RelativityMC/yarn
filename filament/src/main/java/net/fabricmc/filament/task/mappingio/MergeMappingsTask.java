@@ -10,6 +10,9 @@ import java.util.regex.Pattern;
 
 import org.gradle.api.file.ConfigurableFileCollection;
 import org.gradle.api.tasks.InputFiles;
+import org.gradle.api.tasks.PathSensitive;
+import org.gradle.api.tasks.PathSensitivity;
+import org.gradle.work.DisableCachingByDefault;
 
 import net.fabricmc.mappingio.MappingReader;
 import net.fabricmc.mappingio.MappingWriter;
@@ -20,8 +23,10 @@ import net.fabricmc.mappingio.tree.MappingTree;
 import net.fabricmc.mappingio.tree.MemoryMappingTree;
 import net.fabricmc.loom.util.Pair;
 
+@DisableCachingByDefault
 public abstract class MergeMappingsTask extends MappingOutputTask {
 	@InputFiles
+	@PathSensitive(PathSensitivity.NONE)
 	public abstract ConfigurableFileCollection getMappingInputs();
 
 	@Override

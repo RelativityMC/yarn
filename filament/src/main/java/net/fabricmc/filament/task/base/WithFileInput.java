@@ -6,9 +6,12 @@ import java.nio.file.Path;
 import org.gradle.api.file.RegularFileProperty;
 import org.gradle.api.tasks.InputFile;
 import org.gradle.api.tasks.Internal;
+import org.gradle.api.tasks.PathSensitive;
+import org.gradle.api.tasks.PathSensitivity;
 
 public interface WithFileInput {
 	@InputFile
+	@PathSensitive(PathSensitivity.NONE)
 	RegularFileProperty getInput();
 
 	@Internal

@@ -9,6 +9,7 @@ import org.gradle.api.provider.ListProperty;
 import org.gradle.api.provider.Property;
 import org.gradle.api.tasks.Internal;
 import org.gradle.api.tasks.TaskAction;
+import org.gradle.work.DisableCachingByDefault;
 import org.gradle.workers.WorkAction;
 import org.gradle.workers.WorkParameters;
 import org.gradle.workers.WorkQueue;
@@ -16,6 +17,7 @@ import org.gradle.workers.WorkerExecutor;
 
 import net.fabricmc.filament.task.base.FilamentTask;
 
+@DisableCachingByDefault
 public abstract class EnigmaCommandTask extends FilamentTask {
 	@Internal
 	public abstract Class<? extends Command> getCommandClass();

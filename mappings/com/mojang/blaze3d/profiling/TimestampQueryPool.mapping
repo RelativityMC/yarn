@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_685 com/mojang/blaze3d/profiling/TimestampQueryPool
+	METHOD method_1_4139 getQueryResult (I)Ljava/util/OptionalLong;
+		ARG 1 index
+	METHOD method_1_4140 getQueryResults (II)[Ljava/util/OptionalLong;
+		ARG 1 start
+		ARG 2 count
+	METHOD method_1_4141 getCount ()I

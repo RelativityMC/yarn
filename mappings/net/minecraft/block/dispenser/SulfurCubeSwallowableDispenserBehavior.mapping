@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_765 net/minecraft/block/dispenser/SulfurCubeSwallowableDispenserBehavior
+	FIELD field_1_3821 INSTANCE Lnet/minecraft/class_1_765;
+	METHOD method_1_4628 tryEquipSulfurCube (Lnet/minecraft/class_2342;Lnet/minecraft/class_1799;)Z
+		ARG 0 pointer
+		ARG 1 stack

@@ -16,6 +16,7 @@ CLASS net/minecraft/class_4466 net/minecraft/entity/passive/BeeEntity
 	FIELD field_21646 moveToFlowerGoal Lnet/minecraft/class_4466$class_4473;
 	FIELD field_25363 ANGER_TIME_RANGE Lnet/minecraft/class_6019;
 	FIELD field_25364 angryAt Lnet/minecraft/class_10583;
+	FIELD field_28638 WING_FLAP_PERIOD I
 	FIELD field_30272 CROPS_GROWN_SINCE_POLLINATION_KEY Ljava/lang/String;
 	FIELD field_30273 CANNOT_ENTER_HIVE_TICKS_KEY Ljava/lang/String;
 	FIELD field_30276 TICKS_SINCE_POLLINATION_KEY Ljava/lang/String;
@@ -44,6 +45,7 @@ CLASS net/minecraft/class_4466 net/minecraft/entity/passive/BeeEntity
 	FIELD field_57603 DEFAULT_CANNOT_ENTER_HIVE_TICKS I
 	FIELD field_57604 DEFAULT_CROPS_GROWN_SINCE_POLLINATION I
 	FIELD field_63320 ANGER_END_TIME Lnet/minecraft/class_2940;
+	METHOD method_1_4181 isFlying ()Z
 	METHOD method_21769 addParticle (Lnet/minecraft/class_1937;DDDDDLnet/minecraft/class_2394;)V
 		ARG 1 world
 		ARG 2 lastX

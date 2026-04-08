@@ -1,0 +1,25 @@
+CLASS net/minecraft/class_1_715 net/minecraft/client/vulkan/VkCommandEncoderBackend
+	FIELD field_1_3658 commandBufferDisposer Lnet/minecraft/class_1_699;
+	FIELD field_1_3661 commandBuffer Lorg/lwjgl/vulkan/VkCommandBuffer;
+	FIELD field_1_3664 objectDisposer Lnet/minecraft/class_1_699;
+	FIELD field_1_3665 device Lnet/minecraft/class_1_679;
+	FIELD field_1_3666 submission Lnet/minecraft/class_1_674$class_1_675;
+	METHOD <init> (Lnet/minecraft/class_1_679;)V
+		ARG 1 device
+	METHOD method_1_4261 getCommandBufferImpl ()Lorg/lwjgl/vulkan/VkCommandBuffer;
+	METHOD method_1_4263 endCommandBuffer ()V
+	METHOD method_1_4264 addCommandBuffer (Lorg/lwjgl/vulkan/VkCommandBuffer;)V
+		ARG 1 commandBuffer
+	METHOD method_1_4265 getTimestampNow ()J
+	METHOD method_1_4270 close (Lnet/minecraft/class_1_669;)V
+	METHOD method_1_4273 addSignal (JJJ)V
+		ARG 1 vkSemaphore
+		ARG 3 value
+		ARG 5 stageMask
+	METHOD method_1_4274 getCommandBuffer ()Lorg/lwjgl/vulkan/VkCommandBuffer;
+	METHOD method_1_4275 addWait (JJJ)V
+		ARG 1 vkSemaphore
+		ARG 3 value
+		ARG 5 stageMask
+	CLASS 1 1
+		FIELD field_1_3668 buffer Lorg/lwjgl/PointerBuffer;

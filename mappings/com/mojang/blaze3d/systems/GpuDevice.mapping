@@ -18,6 +18,8 @@ CLASS com/mojang/blaze3d/systems/GpuDevice
 		ARG 4 filterModeV
 		ARG 5 maxAnisotropy
 		ARG 6 maxLevelOfDetail
+	METHOD createSurface (J)Lnet/minecraft/class_1_665;
+		ARG 1 window
 	METHOD createTexture (Ljava/lang/String;ILnet/minecraft/class_1_658;IIII)Lcom/mojang/blaze3d/textures/GpuTexture;
 		ARG 1 label
 		ARG 2 usage
@@ -40,6 +42,8 @@ CLASS com/mojang/blaze3d/systems/GpuDevice
 		ARG 1 texture
 		ARG 2 baseMipLevel
 		ARG 3 mipLevels
+	METHOD createTimestampQueryPool (I)Lnet/minecraft/class_1_685;
+		ARG 1 size
 	METHOD precompilePipeline (Lcom/mojang/blaze3d/pipeline/RenderPipeline;)Lcom/mojang/blaze3d/pipeline/CompiledRenderPipeline;
 		ARG 1 pipeline
 	METHOD precompilePipeline (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/class_12289;)Lcom/mojang/blaze3d/pipeline/CompiledRenderPipeline;

@@ -80,6 +80,9 @@ CLASS com/mojang/blaze3d/systems/CommandEncoder
 		ARG 3 regionY
 		ARG 4 regionWidth
 		ARG 5 regionHeight
+	METHOD writeTimestamp (Lnet/minecraft/class_1_685;I)V
+		ARG 1 timestampQueryPool
+		ARG 2 index
 	METHOD writeToBuffer (Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Ljava/nio/ByteBuffer;)V
 		ARG 1 slice
 		ARG 2 source

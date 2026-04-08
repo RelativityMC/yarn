@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1_658 com/mojang/blaze3d/textures/TexelFormat
+	FIELD field_1_3259 size I
+	METHOD <init> (Ljava/lang/String;II)V
+		ARG 3 size
+	METHOD method_1_3886 isColor ()Z
+	METHOD method_1_3887 hasDepth ()Z
+	METHOD method_1_3888 hasStencil ()Z
+	METHOD method_1_3889 getSize ()I

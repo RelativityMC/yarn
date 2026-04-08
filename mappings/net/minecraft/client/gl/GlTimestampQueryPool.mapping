@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_663 net/minecraft/client/gl/GlTimestampQueryPool
+	FIELD field_1_3399 closed Z
+	FIELD field_1_3400 queries [I
+	METHOD <init> (I)V
+		ARG 1 count
+	METHOD method_1_3988 writeTimestamp (I)V
+		ARG 1 index

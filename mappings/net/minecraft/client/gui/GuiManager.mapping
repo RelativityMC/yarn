@@ -1,0 +1,69 @@
+CLASS net/minecraft/class_1_659 net/minecraft/client/gui/GuiManager
+	FIELD field_1_3262 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_3263 SAVING_LEVEL_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_3264 SOCIAL_INTERACTIONS_NOT_AVAILABLE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_3265 messageHandler Lnet/minecraft/class_7594;
+	FIELD field_1_3266 disconnecting Z
+	FIELD field_1_3267 guiRenderState Lnet/minecraft/class_11246;
+	FIELD field_1_3268 inGameHud Lnet/minecraft/class_329;
+	FIELD field_1_3269 client Lnet/minecraft/class_310;
+	FIELD field_1_3270 overlay Lnet/minecraft/class_4071;
+	FIELD field_1_3271 currentScreen Lnet/minecraft/class_437;
+	FIELD field_1_3272 tutorialToast Lnet/minecraft/class_372;
+	FIELD field_1_3273 splashTextSupplier Lnet/minecraft/class_4008;
+	FIELD field_1_3274 toastManager Lnet/minecraft/class_374;
+	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_329;Lnet/minecraft/class_11246;)V
+		ARG 1 client
+		ARG 2 hud
+		ARG 3 guiRenderState
+	METHOD method_1_3896 getStartupScreenFactories (Ljava/util/List;)Z
+		ARG 1 factoriesOut
+	METHOD method_1_3897 showSocialInteractionsTutorialToast ()V
+	METHOD method_1_3898 getGameStartTask (Lnet/minecraft/class_8764;)Ljava/lang/Runnable;
+		ARG 1 loadingContext
+	METHOD method_1_3899 canCurrentScreenBeInterrupted ()Z
+	METHOD method_1_3900 getMessageHandler ()Lnet/minecraft/class_7594;
+	METHOD method_1_3901 render (Lnet/minecraft/class_9779;ZZ)V
+		ARG 1 tickCounter
+		ARG 2 renderHud
+		ARG 3 finishedLoading
+	METHOD method_1_3902 handleKeyInput ()V
+	METHOD method_1_3903 isPaused ()Z
+	METHOD method_1_3904 (Ljava/lang/Runnable;)Lnet/minecraft/class_437;
+		ARG 1 closeAction
+	METHOD method_1_3905 (Lcom/mojang/authlib/minecraft/BanDetails;Ljava/lang/Runnable;)Lnet/minecraft/class_437;
+		ARG 1 closeAction
+	METHOD method_1_3906 (Ljava/lang/Runnable;Z)V
+		ARG 1 yes
+	METHOD method_1_3907 (Lcom/mojang/authlib/GameProfile;Ljava/lang/Runnable;)Lnet/minecraft/class_437;
+		ARG 1 closeAction
+	METHOD method_1_3912 (Lnet/minecraft/class_11247;)V
+		ARG 1 textElem
+	METHOD method_1_3914 openChatForCommand (Lnet/minecraft/class_338$class_11732;Ljava/lang/String;)V
+		ARG 1 chatMethod
+		ARG 2 command
+	METHOD method_1_3915 openChat (Lnet/minecraft/class_338$class_11732;)V
+		ARG 1 chatMethod
+	METHOD method_1_3916 getOverlay ()Lnet/minecraft/class_4071;
+	METHOD method_1_3917 registerReloaders (Lnet/minecraft/class_3304;)V
+		ARG 1 resourceManager
+	METHOD method_1_3918 renderActiveTextAreas ()V
+	METHOD method_1_3919 getCurrentScreen ()Lnet/minecraft/class_437;
+	METHOD method_1_3920 setDisconnecting (Z)V
+		ARG 1 disconnecting
+	METHOD method_1_3921 setOverlay (Lnet/minecraft/class_4071;)V
+		ARG 1 overlay
+	METHOD method_1_3922 showGameMenuScreen (ZZ)V
+		ARG 1 pauseOnly
+		ARG 2 singleplayer
+	METHOD method_1_3923 setScreen (Lnet/minecraft/class_437;)V
+		ARG 1 screen
+	METHOD method_1_3924 getSplashTextSupplier ()Lnet/minecraft/class_4008;
+	METHOD method_1_3925 tick ()V
+	METHOD method_1_3926 getToastManager ()Lnet/minecraft/class_374;
+	METHOD method_1_3927 updateElements ()V
+	CLASS 1 1
+		FIELD field_1_3275 index I
+		METHOD method_1_3928 draw (Lnet/minecraft/class_12236;Z)V
+			ARG 1 rect
+			ARG 2 empty

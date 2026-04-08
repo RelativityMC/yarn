@@ -1,4 +1,9 @@
 CLASS net/minecraft/class_10245 net/minecraft/world/EntityLookupView
+	METHOD method_1_4255 getClosestEntity (Ljava/util/List;DDD)Lnet/minecraft/class_1297;
+		ARG 1 entities
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
 	METHOD method_8410 toServerWorld ()Lnet/minecraft/class_3218;
 	METHOD method_64386 (Lnet/minecraft/class_1309;)Z
 		ARG 0 entity

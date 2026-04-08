@@ -1,0 +1,18 @@
+CLASS net/minecraft/class_1_665 com/mojang/blaze3d/systems/GpuSurface
+	FIELD field_1_3401 backend Lnet/minecraft/class_1_713;
+	FIELD field_1_3402 settings Ljava/util/Optional;
+	FIELD field_1_3403 blitted Z
+	FIELD field_1_3404 acquired Z
+	METHOD <init> (Lnet/minecraft/class_1_713;)V
+		ARG 1 backend
+	METHOD method_1_3989 acquire ()V
+	METHOD method_1_3990 blit (Lcom/mojang/blaze3d/systems/CommandEncoder;Lcom/mojang/blaze3d/textures/GpuTextureView;)V
+		ARG 1 encoder
+		ARG 2 textureView
+	METHOD method_1_3991 configure (Lnet/minecraft/class_1_665$class_1_666;)V
+		ARG 1 settings
+	METHOD method_1_3992 getSettings ()Ljava/util/Optional;
+	METHOD method_1_3993 isAcquired ()Z
+	METHOD method_1_3994 needsReconfigure ()Z
+	METHOD method_1_3995 present ()V
+	CLASS class_1_666 Settings

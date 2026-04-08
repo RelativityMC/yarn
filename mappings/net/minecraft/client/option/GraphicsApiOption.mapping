@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1_698 net/minecraft/client/option/GraphicsApiOption
+	FIELD field_1_3569 text Lnet/minecraft/class_2561;
+	FIELD field_1_3570 id Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+		ARG 3 id
+		ARG 4 translationKey
+	METHOD method_1_4178 getText ()Lnet/minecraft/class_2561;
+	METHOD method_1_4179 getPreferredBackendOrder ()[Lnet/minecraft/class_1_11;

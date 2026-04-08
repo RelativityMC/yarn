@@ -67,6 +67,17 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 	METHOD method_1_837 getRawTarget ()Lnet/minecraft/class_1309;
 		COMMENT {@return this entity’s target, even if it is untargetable (e.g. due to being
 		COMMENT in creative or spectator mode)}
+	METHOD method_1_3953 tryRemoveEquipmentByShearing (Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;Lnet/minecraft/class_1799;)Z
+		ARG 1 player
+		ARG 2 hand
+		ARG 3 shears
+	METHOD method_1_3954 getGoalSelector ()Lnet/minecraft/class_1355;
+	METHOD method_1_3955 removeEquipmentByShearing (Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;Lnet/minecraft/class_1799;Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;)V
+		ARG 1 player
+		ARG 2 hand
+		ARG 3 shears
+		ARG 4 slot
+		ARG 5 equipment
 	METHOD method_5930 setForwardSpeed (F)V
 		ARG 1 forwardSpeed
 	METHOD method_5937 setLeftHanded (Z)V

@@ -21,7 +21,7 @@ CLASS net/minecraft/class_1_490 net/minecraft/client/input/ImeStatusController
 		ARG 3 right
 		ARG 4 bottom
 	METHOD method_1_3112 startEditing ()V
-	METHOD method_1_3113 stopEditign ()V
+	METHOD method_1_3113 stopEditing ()V
 	METHOD method_1_3114 tick ()V
 	METHOD method_1_3115 updateActiveStatus ()V
 	METHOD method_1_3116 disable ()V

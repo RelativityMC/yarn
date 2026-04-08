@@ -1,0 +1,54 @@
+CLASS net/minecraft/class_1_686 net/minecraft/client/render/StagingBuffer
+	FIELD field_1_3522 nextOffset I
+	FIELD field_1_3523 numActiveSlices I
+	METHOD method_1_2180 reset (Lcom/mojang/blaze3d/systems/CommandEncoder;)V
+		ARG 1 commandEncoder
+	METHOD method_1_2181 copyTo (Lcom/mojang/blaze3d/systems/CommandEncoder;Lcom/mojang/blaze3d/buffers/GpuBuffer;JJJ)V
+		ARG 1 commandEncoder
+		ARG 2 buffer
+		ARG 3 toStart
+		ARG 5 fromStart
+		ARG 7 size
+	METHOD method_1_2184 getData ()Ljava/nio/ByteBuffer;
+	METHOD method_1_4144 create (Ljava/lang/String;Lcom/mojang/blaze3d/systems/GpuDevice;ILnet/minecraft/class_11541;)Lnet/minecraft/class_1_686;
+		ARG 0 name
+		ARG 1 devices
+		ARG 2 bufferSize
+		ARG 3 devicesInfo
+	METHOD method_1_4145 uploader (Lcom/mojang/blaze3d/systems/CommandEncoder;)Lnet/minecraft/class_1_686$class_1_688;
+		ARG 1 commandEncoder
+	METHOD method_1_4146 copyFrom (Ljava/nio/ByteBuffer;)Lnet/minecraft/class_1_686$class_1_687;
+		ARG 1 byteBuffer
+	METHOD method_1_4147 resetIfEmpty (Lcom/mojang/blaze3d/systems/CommandEncoder;)V
+		ARG 1 commandEncoder
+	CLASS class_1_300 Direct
+		FIELD field_1_1775 buffer Ljava/nio/ByteBuffer;
+		METHOD <init> (I)V
+			ARG 1 size
+	CLASS class_1_301 Ring
+		FIELD field_1_1776 subData Ljava/nio/ByteBuffer;
+		FIELD field_1_1777 sub Lcom/mojang/blaze3d/buffers/GpuBuffer;
+		FIELD field_1_1778 subView Lcom/mojang/blaze3d/buffers/GpuBuffer$MappedView;
+		FIELD field_1_1779 ringBuffer Lnet/minecraft/class_11285;
+		METHOD <init> (Ljava/lang/String;Lcom/mojang/blaze3d/systems/GpuDevice;I)V
+			ARG 1 name
+			ARG 2 device
+			ARG 3 size
+	CLASS class_1_687 Slice
+		FIELD field_1_3524 closed Z
+		FIELD field_1_3525 offset I
+		FIELD field_1_3526 size I
+		METHOD <init> (Lnet/minecraft/class_1_686;II)V
+			ARG 2 offset
+			ARG 3 size
+		METHOD method_1_4148 assertValidChildOf (Lnet/minecraft/class_1_686;)V
+			ARG 1 parent
+		METHOD method_1_4149 getSize ()J
+	CLASS class_1_688 Uploader
+		FIELD field_1_3528 commandEncoder Lcom/mojang/blaze3d/systems/CommandEncoder;
+		METHOD <init> (Lnet/minecraft/class_1_686;Lcom/mojang/blaze3d/systems/CommandEncoder;)V
+			ARG 2 commandEncoder
+		METHOD method_1_4151 copyFromSlice (Lnet/minecraft/class_1_686$class_1_687;Lcom/mojang/blaze3d/buffers/GpuBuffer;J)V
+			ARG 1 slice
+			ARG 2 buffer
+			ARG 3 toStart

@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_746 net/minecraft/client/particle/NoxiousGasCloudParticle
+	FIELD field_1_3776 PARTICLE_SPAWN_PERIOD I
+	METHOD method_1_4501 offsetPos (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)Lnet/minecraft/class_243;
+		ARG 0 world
+		ARG 1 pos
+	METHOD method_1_4502 addVisibleParticle (Lnet/minecraft/class_1937;Lnet/minecraft/class_243;)V
+		ARG 0 world
+		ARG 1 pos
+	CLASS class_1_747 Factory

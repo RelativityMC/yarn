@@ -9,6 +9,7 @@ CLASS net/minecraft/class_1453 net/minecraft/entity/passive/ParrotEntity
 	FIELD field_6826 VARIANT Lnet/minecraft/class_2940;
 	FIELD field_6827 lastMaxWingDeviation F
 	FIELD field_6829 lastFlapProgress F
+	FIELD field_28640 wingFlappingThresholdSpeed F
 	METHOD method_6578 flapWings ()V
 	METHOD method_6579 (Ljava/util/HashMap;)V
 		ARG 0 map

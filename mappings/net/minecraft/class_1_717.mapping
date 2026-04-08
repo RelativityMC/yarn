@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_1_717
+	FIELD field_1_3679 queueFamilyPriorities Lit/unimi/dsi/fastutil/ints/Int2IntMap;
+	FIELD field_1_3681 extensionProperties Lorg/lwjgl/vulkan/VkExtensionProperties$Buffer;
+	FIELD field_1_3682 driverProperties Lorg/lwjgl/vulkan/VkPhysicalDeviceDriverProperties;
+	FIELD field_1_3683 physicalDeviceFeatures Lorg/lwjgl/vulkan/VkPhysicalDeviceFeatures2;
+	FIELD field_1_3684 physicalDevice Lorg/lwjgl/vulkan/VkPhysicalDevice;
+	FIELD field_1_3685 physicalDeviceProperties Lorg/lwjgl/vulkan/VkPhysicalDeviceProperties2;
+	METHOD <init> (Lorg/lwjgl/vulkan/VkPhysicalDevice;)V
+		ARG 1 physicalDevice
+	METHOD method_1_4281 getDeviceName ()Ljava/lang/String;
+	METHOD method_1_4286 supportsExtension (Ljava/lang/String;)Z
+		ARG 1 extensionName
+	METHOD method_1_4287 (Ljava/lang/String;Lorg/lwjgl/vulkan/VkExtensionProperties;)Z
+		ARG 1 extension
+	METHOD method_1_4288 getQueueFamilyPriorities ()Lit/unimi/dsi/fastutil/ints/Int2IntMap;
+	METHOD method_1_4290 getVendorId ()Ljava/lang/String;
+	METHOD method_1_4291 getPhysicalDevice ()Lorg/lwjgl/vulkan/VkPhysicalDevice;
+	METHOD method_1_4292 getDriverProperties ()Lorg/lwjgl/vulkan/VkPhysicalDeviceDriverProperties;
+	METHOD method_1_4293 getDeviceProperties ()Lorg/lwjgl/vulkan/VkPhysicalDeviceProperties;

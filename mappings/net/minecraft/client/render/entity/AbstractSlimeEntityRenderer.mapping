@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_762 net/minecraft/client/render/entity/AbstractSlimeEntityRenderer
+	METHOD <init> (Lnet/minecraft/class_5617$class_5618;Lnet/minecraft/class_583;)V
+		ARG 1 ctx
+		ARG 2 model
+	METHOD method_1_4618 scaleAccordingToSize (Lnet/minecraft/class_10067;Lnet/minecraft/class_4587;)V
+		ARG 1 state
+		ARG 2 matrices
+	METHOD method_1_4619 shrinkSlightly (Lnet/minecraft/class_4587;)V
+		ARG 1 matrices

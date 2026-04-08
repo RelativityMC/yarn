@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_753 net/minecraft/client/vulkan/SpirvShader
+	METHOD method_1_4553 create (Ljava/lang/String;Ljava/nio/ByteBuffer;)Lnet/minecraft/class_1_753;
+		ARG 0 name
+		ARG 1 spirv
+	METHOD method_1_4554 (Lnet/minecraft/class_1_679;)J
+		ARG 1 backend
+	METHOD method_1_4561 reportSpvcError (ILjava/lang/String;)V
+		ARG 0 code
+		ARG 1 message

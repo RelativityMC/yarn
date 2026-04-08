@@ -13,6 +13,7 @@ CLASS net/minecraft/class_1299 net/minecraft/entity/EntityType
 	FIELD field_24085 maxTrackDistance I
 	FIELD field_24086 trackTickInterval I
 	FIELD field_25355 canSpawnInside Lcom/google/common/collect/ImmutableSet;
+	FIELD field_30054 EQUINE_AND_HOGLIN_WIDTH F
 	FIELD field_36398 registryEntry Lnet/minecraft/class_6880$class_6883;
 	FIELD field_40115 requiredFeatures Lnet/minecraft/class_7699;
 	FIELD field_50125 spawnBoxScale F

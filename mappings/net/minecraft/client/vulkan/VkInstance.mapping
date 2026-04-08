@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_1_691 net/minecraft/client/vulkan/VkInstance
+	FIELD field_1_3545 APPLICATION_NAME Ljava/lang/String;
+	FIELD field_1_3546 APPLICATION_VERSION I
+	FIELD field_1_3547 ENGINE_NAME Ljava/lang/String;
+	FIELD field_1_3548 ENGINE_VERSION I
+	FIELD field_1_3549 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_3550 debugBackend Lnet/minecraft/class_1_671;
+	FIELD field_1_3551 enabledExtensions Ljava/util/Set;
+	FIELD field_1_3552 instance Lorg/lwjgl/vulkan/VkInstance;
+	METHOD <init> (IZZ)V
+		ARG 1 logLevel
+		ARG 2 useLabels
+		ARG 3 enableValidationLayer
+	METHOD method_1_4167 destroy ()V
+	METHOD method_1_4168 getDebugBackend ()Lnet/minecraft/class_1_671;
+	METHOD method_1_4169 getEnabledExtensions ()Ljava/util/Set;
+	METHOD method_1_4170 getInstanceExtensionProperties ()Ljava/util/Set;
+	METHOD method_1_4171 getLayerProperties ()Ljava/util/List;
+	METHOD method_1_4172 getInstance ()Lorg/lwjgl/vulkan/VkInstance;

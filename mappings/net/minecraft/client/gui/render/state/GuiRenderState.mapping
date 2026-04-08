@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_11246 net/minecraft/client/gui/render/state/GuiRenderState
 	FIELD field_1_2350 clearColor I
 	FIELD field_1_2351 panorama Lnet/minecraft/class_1_435;
+	FIELD field_1_3796 hideGui Z
 	FIELD field_60043 rootLayers Ljava/util/List;
 	FIELD field_60044 currentLayer Lnet/minecraft/class_11246$class_11276;
 	FIELD field_60046 itemModelKeys Ljava/util/Set;

@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_4603 net/minecraft/client/gui/hud/InGameOverlayRenderer
 	FIELD field_20986 UNDERWATER_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_59969 FLOATING_ITEM_LIFESPAN I
 	FIELD field_59970 client Lnet/minecraft/class_310;
 	FIELD field_59972 floatingItem Lnet/minecraft/class_1799;
 	FIELD field_59973 floatingItemTimer I
@@ -8,14 +9,61 @@ CLASS net/minecraft/class_4603 net/minecraft/client/gui/hud/InGameOverlayRendere
 	FIELD field_61744 spriteHolder Lnet/minecraft/class_11701;
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_11701;)V
 		ARG 1 client
+		ARG 2 spriteHolder
+	METHOD method_1_4449 renderFireOverlayPart (Lnet/minecraft/class_1058;Lnet/minecraft/class_4588;Lorg/joml/Matrix4f;)V
+		ARG 0 sprite
+		ARG 1 vertexConsumer
+		ARG 2 matrix
+	METHOD method_1_4450 drawRectangle (Lnet/minecraft/class_4588;Lorg/joml/Matrix4f;FFFFFFFFFI)V
+		ARG 0 vertexConsumer
+		ARG 1 positionMatrix
+		ARG 2 x1
+		ARG 3 y1
+		ARG 4 x2
+		ARG 5 y2
+		ARG 6 z
+		ARG 7 u1
+		ARG 8 v1
+		ARG 9 u2
+		ARG 10 v2
+		ARG 11 color
+	METHOD method_1_4451 renderSprite (Lnet/minecraft/class_4588;Lorg/joml/Matrix4f;Lnet/minecraft/class_1058;FFFFFI)V
+		ARG 0 vertexConsumer
+		ARG 1 positionMatrix
+		ARG 2 sprite
+		ARG 3 x1
+		ARG 4 y1
+		ARG 5 x2
+		ARG 6 y2
+		ARG 7 z
+		ARG 8 color
+	METHOD method_1_4452 (Lnet/minecraft/class_1058;ILnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;)V
+		ARG 2 matricesEntry
+		ARG 3 vertexConsumer
+	METHOD method_1_4453 (Lnet/minecraft/class_1058;Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;)V
+		ARG 1 matricesEntry
+		ARG 2 vertexConsumer
+	METHOD method_1_4454 (FFILnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;)V
+		ARG 3 matricesEntry
+		ARG 4 vertexConsumer
+	METHOD method_1_4455 renderOverlay (Lnet/minecraft/class_1058;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;I)V
+		ARG 0 sprite
+		ARG 1 matrices
+		ARG 2 queue
+		ARG 3 color
 	METHOD method_23067 renderOverlays (ZZFLnet/minecraft/class_11659;Z)V
+		ARG 1 firstPerson
 		ARG 2 sleeping
 		ARG 3 tickProgress
 		ARG 4 queue
+		ARG 5 hideGui
 	METHOD method_23069 renderUnderwaterOverlay (Lnet/minecraft/class_310;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;)V
 		ARG 0 client
+		ARG 1 matrices
+		ARG 2 queue
 	METHOD method_23070 renderFireOverlay (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;Lnet/minecraft/class_1058;)V
 		ARG 0 matrices
+		ARG 1 queue
 		ARG 2 sprite
 	METHOD method_24225 getInWallBlockState (Lnet/minecraft/class_1657;)Lnet/minecraft/class_2680;
 		ARG 0 player

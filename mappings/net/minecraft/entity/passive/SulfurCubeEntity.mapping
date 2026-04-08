@@ -1,0 +1,52 @@
+CLASS net/minecraft/class_1_748 net/minecraft/entity/passive/SulfurCubeEntity
+	FIELD field_1_3777 SWALLOWABLE_PREDICATE Ljava/util/function/Predicate;
+	FIELD field_1_3780 FROM_BUCKET Lnet/minecraft/class_2940;
+	FIELD field_1_3789 buoyant Z
+	FIELD field_1_3790 pickupTimer I
+	METHOD method_1_4504 applyImpulse (FLnet/minecraft/class_243;)V
+		ARG 1 damage
+		ARG 2 vec
+	METHOD method_1_4505 canSpawn (Lnet/minecraft/class_1299;Lnet/minecraft/class_1936;Lnet/minecraft/class_3730;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)Z
+	METHOD method_1_4506 addAttributes ()Lnet/minecraft/class_5132$class_5133;
+	METHOD method_1_4507 tryEquip (Lnet/minecraft/class_1799;)Z
+		ARG 1 stack
+	METHOD method_1_4508 getAbsorbSound ()Lnet/minecraft/class_3414;
+	METHOD method_1_4509 getEjectSound ()Lnet/minecraft/class_3414;
+	METHOD method_1_4510 getHitSound ()Lnet/minecraft/class_3414;
+	METHOD method_1_4511 getPushSound ()Lnet/minecraft/class_3414;
+	METHOD method_1_4512 getContentComponent (Lnet/minecraft/class_1799;)Lnet/minecraft/class_1_745;
+		ARG 0 stack
+	METHOD method_1_4513 containsBlock ()Z
+	METHOD method_1_4514 canEat (Lnet/minecraft/class_1799;)Z
+		ARG 1 stack
+	METHOD method_1_4515 canSwallow (Lnet/minecraft/class_1799;)Z
+		ARG 0 stack
+	METHOD method_1_4516 (Lnet/minecraft/class_1799;)Z
+		ARG 1 stack
+	METHOD method_1_4517 (Lnet/minecraft/class_1352;)Z
+		ARG 0 goal
+	METHOD method_1_4518 (Lnet/minecraft/class_1799;Lnet/minecraft/class_1_719;)Z
+		ARG 1 archetype
+	METHOD method_1_4519 (Lnet/minecraft/class_2487;)V
+		ARG 1 tag
+	METHOD method_1_4520 (Lnet/minecraft/class_1542;)Z
+		ARG 0 item
+	METHOD method_1_4521 getApplicableArchetypes (Lnet/minecraft/class_1799;)Ljava/util/List;
+		ARG 1 containedBlock
+	METHOD method_1_4522 applyImpulse (Lnet/minecraft/class_1657;F)V
+		ARG 1 attacker
+		ARG 2 damage
+	METHOD method_1_4523 onPlayerCollisionWithContainedBlock (Lnet/minecraft/class_1657;)V
+		ARG 1 player
+	METHOD method_1_4524 setContentComponent (Lnet/minecraft/class_1_745;)V
+		ARG 1 content
+	CLASS class_1_749 SulfurCubeLookControl
+	CLASS class_1_750 SulfurCubeMoveControl
+		METHOD <init> (Lnet/minecraft/class_1_748;)V
+			ARG 1 sulfurCube
+	CLASS class_1_751 SeekDroppedBlockGoal
+		FIELD field_1_3792 sulfurCube Lnet/minecraft/class_1_748;
+		FIELD field_1_3793 targetItem Lnet/minecraft/class_1542;
+		METHOD <init> (Lnet/minecraft/class_1_748;Lnet/minecraft/class_1_748;)V
+			ARG 2 sulfurCube
+	CLASS class_1_752 SulfurCubeTemptGoal

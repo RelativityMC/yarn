@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_702 net/minecraft/client/vulkan/VkSurfaceBackend
+	FIELD field_1_3605 needsReconfigure Z
+	METHOD <init> (Lnet/minecraft/class_1_679;J)V
+		ARG 2 window

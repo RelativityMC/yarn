@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_669 net/minecraft/client/vulkan/DeferredDisposable
+	COMMENT Implemented by various classes in the Vulkan backend to decouple closing from
+	COMMENT actually destroying an object (by calling the appropriate API function).
+	METHOD method_1_4001 destroy ()V

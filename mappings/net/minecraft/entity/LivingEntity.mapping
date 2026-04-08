@@ -108,6 +108,10 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_1_884 getAttackRange (Lnet/minecraft/class_1799;)Lnet/minecraft/class_12392;
 		ARG 1 weapon
 	METHOD method_1_1166 getFluidWalkingShape ()Lnet/minecraft/class_265;
+	METHOD method_1_4165 adjustSlipperinessByFriction (FF)F
+		ARG 0 slipperiness
+		ARG 1 frictionModifier
+	METHOD method_1_4166 setDead ()V
 	METHOD method_5673 setEquipment (Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;)V
 		ARG 1 slot
 		ARG 2 stack
@@ -261,6 +265,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 world
 		ARG 2 source
 		ARG 3 amount
+		ARG 10 unabsorbedAmount
 	METHOD method_6075 stopUsingItem ()V
 	METHOD method_6076 tickActiveItemStack ()V
 	METHOD method_6077 canEnterTrapdoor (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Z
@@ -539,6 +544,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_30129 getEquipmentChanges (Ljava/util/Map;)Ljava/util/Map;
 		COMMENT {@return the difference between the last sent equipment set and the
 		COMMENT current one}
+		ARG 1 lastEquipmentStacks
 	METHOD method_31079 positionInPortal (Lnet/minecraft/class_243;)Lnet/minecraft/class_243;
 		ARG 0 pos
 	METHOD method_32321 getStackReference (Lnet/minecraft/class_1309;Lnet/minecraft/class_1304;)Lnet/minecraft/class_5630;

@@ -1,5 +1,31 @@
 CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 	COMMENT Contains all the minecraft blocks.
+	FIELD field_1_3452 BANNERS Lnet/minecraft/class_1_727;
+	FIELD field_1_3453 BEDS Lnet/minecraft/class_1_727;
+	FIELD field_1_3454 CARPETS Lnet/minecraft/class_1_727;
+	FIELD field_1_3456 CHISELED_COPPERS Lnet/minecraft/class_1_758;
+	FIELD field_1_3466 CONCRETES Lnet/minecraft/class_1_727;
+	FIELD field_1_3467 CONCRETE_POWDERS Lnet/minecraft/class_1_727;
+	FIELD field_1_3468 COPPER_BLOCKS Lnet/minecraft/class_1_758;
+	FIELD field_1_3469 COPPER_BULBS Lnet/minecraft/class_1_758;
+	FIELD field_1_3470 COPPER_CHESTS Lnet/minecraft/class_1_758;
+	FIELD field_1_3471 COPPER_DOORS Lnet/minecraft/class_1_758;
+	FIELD field_1_3472 COPPER_GOLEM_STATUES Lnet/minecraft/class_1_758;
+	FIELD field_1_3473 COPPER_GRATES Lnet/minecraft/class_1_758;
+	FIELD field_1_3474 COPPER_TRAPDOORS Lnet/minecraft/class_1_758;
+	FIELD field_1_3475 CUT_COPPERS Lnet/minecraft/class_1_758;
+	FIELD field_1_3476 CUT_COPPER_SLABS Lnet/minecraft/class_1_758;
+	FIELD field_1_3477 CUT_COPPER_STAIRS Lnet/minecraft/class_1_758;
+	FIELD field_1_3478 DYED_CANDLES Lnet/minecraft/class_1_727;
+	FIELD field_1_3479 DYED_CANDLE_CAKES Lnet/minecraft/class_1_727;
+	FIELD field_1_3480 DYED_SHULKER_BOXES Lnet/minecraft/class_1_727;
+	FIELD field_1_3481 TERRACOTTAS Lnet/minecraft/class_1_727;
+	FIELD field_1_3482 GLAZED_TERRACOTTAS Lnet/minecraft/class_1_727;
+	FIELD field_1_3483 LIGHTNING_RODS Lnet/minecraft/class_1_758;
+	FIELD field_1_3493 STAINED_GLASSES Lnet/minecraft/class_1_727;
+	FIELD field_1_3494 STAINED_GLASS_PANES Lnet/minecraft/class_1_727;
+	FIELD field_1_3503 WALL_BANNERS Lnet/minecraft/class_1_727;
+	FIELD field_1_3504 WOOLS Lnet/minecraft/class_1_727;
 	FIELD field_10566 DIRT Lnet/minecraft/class_2248;
 	FIELD field_23985 IRON_CHAIN Lnet/minecraft/class_2248;
 	FIELD field_46282 PUMPKIN Lnet/minecraft/class_2248;
@@ -29,6 +55,164 @@ CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 		ARG 0 state
 		ARG 1 world
 		ARG 2 pos
+	METHOD method_1_4073 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 color
+	METHOD method_1_4074 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2389;
+		ARG 0 oxidationLevel
+		ARG 1 settings
+	METHOD method_1_4075 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_5172;
+		ARG 0 oxidationLevel
+		ARG 1 settings
+	METHOD method_1_4076 (Lnet/minecraft/class_1767;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 color
+		ARG 1 settings
+	METHOD method_1_4077 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 color
+	METHOD method_1_4078 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 color
+	METHOD method_1_4079 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 color
+	METHOD method_1_4080 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 color
+	METHOD method_1_4081 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 color
+	METHOD method_1_4082 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 color
+	METHOD method_1_4083 (Lnet/minecraft/class_1767;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2366;
+		ARG 0 color
+		ARG 1 settings
+	METHOD method_1_4084 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 color
+	METHOD method_1_4085 (Lnet/minecraft/class_1767;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 color
+		ARG 1 settings
+	METHOD method_1_4086 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 color
+	METHOD method_1_4087 (Lnet/minecraft/class_1767;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2292;
+		ARG 0 color
+		ARG 1 settings
+	METHOD method_1_4088 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 color
+	METHOD method_1_4089 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_3749;
+		ARG 0 oxidationLevel
+		ARG 1 settings
+	METHOD method_1_4090 (Lnet/minecraft/class_1767;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_5544;
+		ARG 0 color
+		ARG 1 settings
+	METHOD method_1_4091 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 color
+	METHOD method_1_4092 (Lnet/minecraft/class_1767;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_5545;
+		ARG 0 color
+		ARG 1 settings
+	METHOD method_1_4093 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 color
+	METHOD method_1_4094 (Lnet/minecraft/class_2680;)I
+		ARG 0 state
+	METHOD method_1_4095 (Lnet/minecraft/class_2680;)I
+		ARG 0 state
+	METHOD method_1_4096 (Lnet/minecraft/class_5955$class_5811;Ljava/lang/Boolean;)Ljava/lang/String;
+		ARG 0 oxidationLevel
+		ARG 1 waxed
+	METHOD method_1_4097 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 oxidationLevel
+		ARG 1 settings
+	METHOD method_1_4098 (Lnet/minecraft/class_5955$class_5811;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 oxidationLevel
+	METHOD method_1_4099 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_1_4100 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_1_4101 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 oxidationLevel
+		ARG 1 settings
+	METHOD method_1_4102 (Lnet/minecraft/class_5955$class_5811;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 oxidationLevel
+	METHOD method_1_4103 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 oxidationLevel
+		ARG 1 settings
+	METHOD method_1_4104 (Lnet/minecraft/class_5955$class_5811;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 oxidationLevel
+	METHOD method_1_4105 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2510;
+		ARG 0 oxidationLevel
+		ARG 1 settings
+	METHOD method_1_4106 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_5814;
+		ARG 0 oxidationLevel
+		ARG 1 settings
+	METHOD method_1_4107 (Lnet/minecraft/class_5955$class_5811;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 oxidationLevel
+	METHOD method_1_4108 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2482;
+		ARG 0 oxidationLevel
+		ARG 1 settings
+	METHOD method_1_4109 (Lnet/minecraft/class_5955$class_5811;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 oxidationLevel
+	METHOD method_1_4110 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2323;
+		ARG 0 oxidationLevel
+		ARG 1 settings
+	METHOD method_1_4111 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_8925;
+		ARG 0 oxidationLevel
+		ARG 1 settings
+	METHOD method_1_4112 (Lnet/minecraft/class_5955$class_5811;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 oxidationLevel
+	METHOD method_1_4113 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_2680;)Lnet/minecraft/class_3620;
+		ARG 1 state
+	METHOD method_1_4114 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2533;
+		ARG 0 oxidationLevel
+		ARG 1 settings
+	METHOD method_1_4115 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_8927;
+		ARG 0 oxidationLevel
+		ARG 1 settings
+	METHOD method_1_4116 (Lnet/minecraft/class_5955$class_5811;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 oxidationLevel
+	METHOD method_1_4117 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_2680;)Lnet/minecraft/class_3620;
+		ARG 1 state
+	METHOD method_1_4118 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_9009;
+		ARG 0 oxidationLevel
+		ARG 1 settings
+	METHOD method_1_4119 (Lnet/minecraft/class_5955$class_5811;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 oxidationLevel
+	METHOD method_1_4120 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_2680;)Lnet/minecraft/class_3620;
+		ARG 1 state
+	METHOD method_1_4121 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_8922;
+		ARG 0 oxidationLevel
+		ARG 1 settings
+	METHOD method_1_4122 (Lnet/minecraft/class_5955$class_5811;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 oxidationLevel
+	METHOD method_1_4123 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_2680;)Lnet/minecraft/class_3620;
+		ARG 1 state
+	METHOD method_1_4124 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_11582;
+		ARG 0 oxidationLevel
+		ARG 1 settings
+	METHOD method_1_4125 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_11592;
+		ARG 0 oxidationLevel
+		ARG 1 settings
+	METHOD method_1_4126 (Lnet/minecraft/class_5955$class_5811;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 oxidationLevel
+	METHOD method_1_4127 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_2680;)Lnet/minecraft/class_3620;
+		ARG 1 state
+	METHOD method_1_4128 (Lnet/minecraft/class_5955$class_5811;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 oxidationLevel
+	METHOD method_1_4129 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 color
+	METHOD method_1_4130 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_2680;)Lnet/minecraft/class_3620;
+		ARG 1 state
+	METHOD method_1_4131 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_5554;
+		ARG 0 oxidationLevel
+		ARG 1 settings
+	METHOD method_1_4132 (Lnet/minecraft/class_5955$class_5811;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 oxidationLevel
+	METHOD method_1_4133 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_2680;)Lnet/minecraft/class_3620;
+		ARG 1 state
+	METHOD method_1_4134 (Lnet/minecraft/class_1767;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 color
+		ARG 1 settings
+	METHOD method_1_4135 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_4970$class_2251;
+		ARG 0 color
+	METHOD method_1_4136 registerSlabBlock (Ljava/lang/String;Lnet/minecraft/class_2248;)Lnet/minecraft/class_2248;
+		ARG 0 id
+		ARG 1 base
+	METHOD method_1_4137 registerWallBlock (Ljava/lang/String;Lnet/minecraft/class_2248;)Lnet/minecraft/class_2248;
+		ARG 0 id
+		ARG 1 base
 	METHOD method_9492 register (Ljava/lang/String;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
 		ARG 0 id
 		ARG 1 settings

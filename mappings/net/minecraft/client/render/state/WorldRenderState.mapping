@@ -4,6 +4,7 @@ CLASS net/minecraft/class_11658 net/minecraft/client/render/state/WorldRenderSta
 	FIELD field_1_1887 cloudHeight F
 	FIELD field_1_2383 section Lnet/minecraft/class_11532;
 	FIELD field_1_2384 particles Lnet/minecraft/class_11943;
+	FIELD field_1_3809 show3dCrosshair Z
 	FIELD field_61735 entityRenderStates Ljava/util/List;
 	FIELD field_61736 hasOutline Z
 	FIELD field_62646 blockEntityRenderStates Ljava/util/List;

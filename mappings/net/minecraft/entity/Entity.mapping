@@ -244,6 +244,15 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_1_2570 getRandomYAroundFeet (D)D
 		ARG 1 heightScale
 	METHOD method_1_3098 tickCurrentlyCheckedCollisions ()V
+	METHOD method_1_3982 getGroundBounciness (Lnet/minecraft/class_2248;)D
+		ARG 1 block
+	METHOD method_1_3983 getBounciness ()D
+	METHOD method_1_3984 flutters ()Z
+	METHOD method_1_3985 processBounces (Lnet/minecraft/class_2680;ZZLnet/minecraft/class_243;)V
+		ARG 1 landingBlockState
+		ARG 2 changedX
+		ARG 3 changedZ
+		ARG 4 movement
 	METHOD method_5622 onBlockCollision (Lnet/minecraft/class_2680;)V
 		COMMENT Called when this entity's collision box intersects {@code state}.
 		COMMENT

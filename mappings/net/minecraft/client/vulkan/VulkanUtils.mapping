@@ -1,0 +1,31 @@
+CLASS net/minecraft/class_1_678 net/minecraft/client/vulkan/VulkanUtils
+	METHOD method_1_4033 reportError (ILjava/lang/String;)V
+		ARG 0 code
+		ARG 1 message
+	METHOD method_1_4034 containsAll (II)Z
+		ARG 0 actual
+		ARG 1 required
+	METHOD method_1_4035 containsAll (JJ)Z
+		ARG 0 actual
+		ARG 2 required
+	METHOD method_1_4036 hasAnyOf (II)Z
+		ARG 0 actual
+		ARG 1 required
+	METHOD method_1_4037 hasAnyOf (JJ)Z
+		ARG 0 actual
+		ARG 2 required
+	METHOD method_1_4038 isDisjointFrom (II)Z
+		ARG 0 actual
+		ARG 1 required
+	METHOD method_1_4039 isDisjointFrom (JJ)Z
+		ARG 0 actual
+		ARG 2 required
+	METHOD method_1_4040 setClearColor (Lorg/lwjgl/vulkan/VkClearColorValue;I)Lorg/lwjgl/vulkan/VkClearColorValue;
+		ARG 0 clearColorValue
+		ARG 1 color
+	METHOD method_1_4041 describe (I)Ljava/lang/String;
+		ARG 0 code
+	METHOD method_1_4042 reportWindowError (ILjava/lang/String;Lnet/minecraft/class_1_739$class_1_740;)V
+		ARG 0 code
+		ARG 1 message
+		ARG 2 condition

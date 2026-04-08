@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1_735 net/minecraft/block/PotentSulfurBlock
+	FIELD field_1_3728 EFFECT_HEIGHT I
+	METHOD method_1_4444 addBubbleParticles (Lnet/minecraft/class_1937;Lnet/minecraft/class_5819;DDD)V
+		ARG 0 world
+		ARG 1 random
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z

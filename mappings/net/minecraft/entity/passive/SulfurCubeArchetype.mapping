@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_1_719 net/minecraft/entity/passive/SulfurCubeArchetype
+	METHOD method_1_4341 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	CLASS class_1_720 AttributeEntry
+		METHOD method_1_4342 add (Lnet/minecraft/class_6880;DLnet/minecraft/class_5321;)Lnet/minecraft/class_1_719$class_1_720;
+			ARG 0 attribute
+			ARG 1 amount
+			ARG 3 archetype
+		METHOD method_1_4343 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+		METHOD method_1_4344 mul (Lnet/minecraft/class_6880;DLnet/minecraft/class_5321;)Lnet/minecraft/class_1_719$class_1_720;
+			ARG 0 attribute
+			ARG 1 amount
+			ARG 3 archetype

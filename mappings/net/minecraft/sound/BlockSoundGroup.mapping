@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_2498 net/minecraft/sound/BlockSoundGroup
+	FIELD field_1_3571 CINNABAR Lnet/minecraft/class_2498;
+	FIELD field_1_3572 POTENT_SULFUR Lnet/minecraft/class_2498;
+	FIELD field_1_3573 SULFUR Lnet/minecraft/class_2498;
 	FIELD field_11526 SAND Lnet/minecraft/class_2498;
 	FIELD field_11527 stepSound Lnet/minecraft/class_3414;
 	FIELD field_11528 CORAL Lnet/minecraft/class_2498;

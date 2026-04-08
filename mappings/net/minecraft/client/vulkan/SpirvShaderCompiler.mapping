@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_1_709 net/minecraft/client/vulkan/SpirvShaderCompiler
+	FIELD field_1_3639 defines Lnet/minecraft/class_10149;
+	FIELD field_1_3640 compiler J
+	FIELD field_1_3641 compileOptions J
+	METHOD method_1_4229 (Lnet/minecraft/class_1_679;Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/class_1_753;Lnet/minecraft/class_1_753;Ljava/util/List;)Lnet/minecraft/class_1_709$class_1_710;
+		ARG 1 backend
+		ARG 2 pipeline
+	METHOD method_1_4230 compile (Ljava/lang/String;Ljava/lang/String;Lcom/mojang/blaze3d/shaders/ShaderType;)Lnet/minecraft/class_1_753;
+		ARG 1 name
+		ARG 2 source
+		ARG 3 shaderType

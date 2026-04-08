@@ -42,6 +42,9 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_1_2136 blockModelManager Lnet/minecraft/class_1_394;
 	FIELD field_1_2249 lastWindowFocusTime J
 	FIELD field_1_2571 imeStatusController Lnet/minecraft/class_1_490;
+	FIELD field_1_3291 gpuTimestampProfiler Lnet/minecraft/class_1_667;
+	FIELD field_1_3292 gpuSurface Lnet/minecraft/class_1_665;
+	FIELD field_1_3293 updateSurface Z
 	FIELD field_1687 world Lnet/minecraft/class_638;
 		COMMENT Represents the world the client is currently viewing.
 		COMMENT This field is not null when in game.
@@ -54,7 +57,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_1698 running Z
 	FIELD field_1700 instance Lnet/minecraft/class_310;
 	FIELD field_1704 window Lnet/minecraft/class_1041;
-	FIELD field_1705 inGameHud Lnet/minecraft/class_1_659;
+	FIELD field_1705 guiManager Lnet/minecraft/class_1_659;
 	FIELD field_1707 skinProvider Lnet/minecraft/class_1071;
 	FIELD field_1708 fontManager Lnet/minecraft/class_378;
 	FIELD field_1711 gameVersion Ljava/lang/String;
@@ -172,6 +175,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 0 client
 		ARG 1 runDirectory
 		ARG 2 crashReport
+		ARG 3 exitCode
 	METHOD method_1_2659 updateFocusState ()V
 	METHOD method_1_2660 updateCrosshairTarget (F)V
 		ARG 1 tickProgress
@@ -179,6 +183,12 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 1 element
 		ARG 2 focused
 	METHOD method_1_3097 getImeStatusController ()Lnet/minecraft/class_1_490;
+	METHOD method_1_3935 getYggdrasilGameProfileResult ()Lcom/mojang/authlib/yggdrasil/ProfileResult;
+	METHOD method_1_3936 markSurfaceForUpdate ()V
+	METHOD method_1_3939 printCrashReport (Ljava/io/File;Lnet/minecraft/class_128;)V
+		ARG 0 runDir
+		ARG 1 crashReport
+	METHOD method_1_3940 getGpuSurface ()Lnet/minecraft/class_1_665;
 	METHOD method_1478 getResourceManager ()Lnet/minecraft/class_3300;
 	METHOD method_1479 getResourcePackDir ()Ljava/nio/file/Path;
 	METHOD method_1481 joinWorld (Lnet/minecraft/class_638;)V
@@ -231,6 +241,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 0 client
 		ARG 1 runDirectory
 		ARG 2 crashReport
+		ARG 3 exitCode
 	METHOD method_1569 isWindowFocused ()Z
 	METHOD method_1571 getCreativeHotbarStorage ()Lnet/minecraft/class_302;
 	METHOD method_1573 forcesUnicodeFont ()Z
@@ -435,6 +446,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_61962 printCrashReport (Ljava/io/File;Lnet/minecraft/class_128;I)I
 		ARG 0 runDir
 		ARG 1 crashReport
+		ARG 2 exitCode
 	METHOD method_61963 getMapTextureManager ()Lnet/minecraft/class_10093;
 	METHOD method_61964 getInactivityFpsLimiter ()Lnet/minecraft/class_9919;
 	METHOD method_61965 getMapRenderer ()Lnet/minecraft/class_330;
@@ -462,7 +474,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 1 reasonText
 	METHOD method_73361 getApiServices ()Lnet/minecraft/class_7497;
 	METHOD method_73362 getPlayerSkinCache ()Lnet/minecraft/class_11786;
-	METHOD method_73363 canCurrentScreenInterruptOtherScreen ()Z
+	METHOD method_73363 canCurrentScreenBeInterrupted ()Z
 	METHOD method_74186 getPacketApplyBatcher ()Lnet/minecraft/class_11980;
 	METHOD method_74187 isShiftPressed ()Z
 	METHOD method_74188 isCtrlPressed ()Z

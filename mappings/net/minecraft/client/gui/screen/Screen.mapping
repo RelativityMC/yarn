@@ -27,6 +27,10 @@ CLASS net/minecraft/class_437 net/minecraft/client/gui/screen/Screen
 	FIELD field_49897 INWORLD_HEADER_SEPARATOR_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_49898 INWORLD_FOOTER_SEPARATOR_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_52252 narratorToggleButton Lnet/minecraft/class_5676;
+	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_327;Lnet/minecraft/class_2561;)V
+		ARG 1 client
+		ARG 2 textRenderer
+		ARG 3 title
 	METHOD <init> (Lnet/minecraft/class_2561;)V
 		ARG 1 title
 	METHOD method_25393 tick ()V
@@ -186,7 +190,7 @@ CLASS net/minecraft/class_437 net/minecraft/client/gui/screen/Screen
 		ARG 1 startTimeMs
 	METHOD method_73150 deferSubtitles ()Z
 	METHOD method_73217 keepOpenThroughPortal ()Z
-	METHOD method_73339 canInterruptOtherScreen ()Z
+	METHOD method_73339 canBeInterruptedByOtherScreen ()Z
 	CLASS class_6390 SelectedElementNarrationData
 		FIELD comp_4463 selectable Lnet/minecraft/class_6379;
 		FIELD comp_4464 index I

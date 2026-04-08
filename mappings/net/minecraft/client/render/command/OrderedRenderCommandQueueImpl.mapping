@@ -8,6 +8,7 @@ CLASS net/minecraft/class_11661 net/minecraft/client/render/command/OrderedRende
 	METHOD method_73533 (I)Lnet/minecraft/class_11788;
 		ARG 1 orderx
 	CLASS class_1_471 FallingBlockCommand
+	CLASS class_1_725 ModelPartCommand
 	CLASS class_11662 BlockStateModelCommand
 		FIELD comp_4476 matricesEntry Lnet/minecraft/class_4587$class_4665;
 		FIELD comp_4477 renderLayer Lnet/minecraft/class_1921;

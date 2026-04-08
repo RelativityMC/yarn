@@ -1,0 +1,15 @@
+CLASS net/minecraft/class_1_667 net/minecraft/client/util/GpuTimestampProfiler
+	FIELD field_1_3405 MAX_SAVED_RESULTS I
+	FIELD field_1_3406 commandEncoder Lcom/mojang/blaze3d/systems/CommandEncoder;
+	FIELD field_1_3407 index I
+	FIELD field_1_3408 timestampQueryPool Lnet/minecraft/class_1_685;
+		COMMENT Stores {@code 2 * MAX_SAVED_RESULTS} entries, with the even indices holding
+		COMMENT timestamps corresponding to {@link #beginProfile} and odd indices holding
+		COMMENT timestamps corresponding to {@link #endProfile}.
+	FIELD field_1_3409 recordedDurations [J
+	FIELD field_1_3410 state Lnet/minecraft/class_1_667$class_1_668;
+	METHOD method_1_3996 beginProfile ()V
+	METHOD method_1_3997 endProfile ()V
+	METHOD method_1_3998 getAverageDuration ()J
+	METHOD method_1_3999 awaitResults ()Lnet/minecraft/class_1_667$class_1_668;
+	CLASS class_1_668 State

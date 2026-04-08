@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_9 net/minecraft/client/window/GlWindowBackend
+	FIELD field_1_29 GL_MAJOR_VERSION I
+	FIELD field_1_30 GL_MINOR_VERSION I

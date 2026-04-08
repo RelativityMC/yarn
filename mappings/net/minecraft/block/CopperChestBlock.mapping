@@ -7,6 +7,9 @@ CLASS net/minecraft/class_11582 net/minecraft/block/CopperChestBlock
 		ARG 2 openSound
 		ARG 3 closeSound
 		ARG 4 settings
+	METHOD method_1_4423 getSoundEvent (Lnet/minecraft/class_5955$class_5811;Z)Lnet/minecraft/class_3414;
+		ARG 0 oxidationLevel
+		ARG 1 open
 	METHOD method_72596 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
 	METHOD method_72597 fromCopperBlock (Lnet/minecraft/class_2248;Lnet/minecraft/class_2350;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)Lnet/minecraft/class_2680;

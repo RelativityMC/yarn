@@ -1,0 +1,22 @@
+CLASS net/minecraft/class_1_674
+	METHOD <init> (Lnet/minecraft/class_1_679;II)V
+		ARG 1 device
+		ARG 2 start
+		ARG 3 end
+	METHOD method_1_4027 submission ()Lnet/minecraft/class_1_674$class_1_675;
+	METHOD method_1_4028 (Lnet/minecraft/class_1_679;II)J
+		ARG 0 device
+		ARG 1 start
+		ARG 2 end
+	CLASS class_1_675 Submission
+		FIELD field_1_3430 closed Z
+		METHOD method_1_4030 addCommandBuffer (Lorg/lwjgl/vulkan/VkCommandBuffer;)V
+			ARG 1 commandBuffer
+		METHOD method_1_4031 addSignal (JJJ)V
+			ARG 1 vkSemaphore
+			ARG 3 value
+			ARG 5 stageMask
+		METHOD method_1_4032 addWait (JJJ)V
+			ARG 1 vkSemaphore
+			ARG 3 value
+			ARG 5 stageMask

@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_8032 net/minecraft/client/gui/screen/AccessibilityOnboardingScreen
+	FIELD field_1_2128 titleWidget Lnet/minecraft/class_8019;
 	FIELD field_41837 NARRATOR_PROMPT Lnet/minecraft/class_2561;
 	FIELD field_41841 logoDrawer Lnet/minecraft/class_8020;
 	FIELD field_41842 gameOptions Lnet/minecraft/class_315;
@@ -11,6 +12,8 @@ CLASS net/minecraft/class_8032 net/minecraft/client/gui/screen/AccessibilityOnbo
 	FIELD field_60456 fadeTime F
 	FIELD field_60457 fading Z
 	FIELD field_60458 closeTime F
+	FIELD field_60459 MS_PER_SEC F
+	FIELD field_63528 TITLE_WIDTH I
 	METHOD <init> (Lnet/minecraft/class_315;Ljava/lang/Runnable;)V
 		ARG 1 gameOptions
 		ARG 2 onClose

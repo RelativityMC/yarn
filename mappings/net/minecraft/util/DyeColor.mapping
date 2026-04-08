@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_1767 net/minecraft/util/DyeColor
 	COMMENT An enum representing 16 dye colors.
 	FIELD field_1_22 VALUES Ljava/util/List;
+	FIELD field_1_3389 terracottaMapColor Lnet/minecraft/class_3620;
 	FIELD field_7943 entityColor I
 	FIELD field_7948 id Ljava/lang/String;
 	FIELD field_7950 BY_FIREWORK_COLOR Lit/unimi/dsi/fastutil/ints/Int2ObjectOpenHashMap;
@@ -17,12 +18,14 @@ CLASS net/minecraft/class_1767 net/minecraft/util/DyeColor
 		ARG 4 id
 		ARG 5 entityColor
 		ARG 6 mapColor
+		ARG 7 terracottaMapColor
 		ARG 8 fireworkColor
 		ARG 9 signColor
 	METHOD method_1_1235 mix (Lnet/minecraft/class_3218;Lnet/minecraft/class_1767;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1767;
 		ARG 0 world
 		ARG 1 color1
 		ARG 2 color2
+	METHOD method_1_3986 terracottaMapColor ()Lnet/minecraft/class_3620;
 	METHOD method_7786 byFireworkColor (I)Lnet/minecraft/class_1767;
 		COMMENT {@return the dye color whose firework color is {@code color}, or {@code null}
 		COMMENT if there is no such color}

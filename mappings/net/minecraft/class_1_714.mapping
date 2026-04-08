@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_714
+	METHOD <init> (Lnet/minecraft/class_1_730;Ljava/lang/String;J)V
+		ARG 1 struct
+		ARG 2 name
+		ARG 3 offset

@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_704 net/minecraft/client/vulkan/VkRenderPassBackend
+	FIELD field_1_3614 IS_DEVELOPMENT Z
+	FIELD field_1_3615 shaderParamsDirty Z
+	FIELD field_1_3617 device Lnet/minecraft/class_1_679;
+	FIELD field_1_3620 height I
+	FIELD field_1_3621 width I
+	FIELD field_1_3627 uniforms Ljava/util/HashMap;
+	METHOD <init> (Lnet/minecraft/class_1_679;Ljava/util/function/Consumer;Lorg/lwjgl/vulkan/VkCommandBuffer;Ljava/util/function/Supplier;IIZ)V
+		ARG 1 device

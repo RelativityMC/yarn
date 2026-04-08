@@ -1,0 +1,37 @@
+CLASS net/minecraft/class_1_726 net/minecraft/entity/passive/SulfurCubeArchetypes
+	FIELD field_1_3695 BOUNCY Lnet/minecraft/class_5321;
+	FIELD field_1_3696 FAST_FLAT Lnet/minecraft/class_5321;
+	FIELD field_1_3697 FAST_SLIDING Lnet/minecraft/class_5321;
+	FIELD field_1_3698 HIGH_RESISTANCE Lnet/minecraft/class_5321;
+	FIELD field_1_3699 LIGHT Lnet/minecraft/class_5321;
+	FIELD field_1_3700 REGULAR Lnet/minecraft/class_5321;
+	FIELD field_1_3701 SLOW_FLAT Lnet/minecraft/class_5321;
+	FIELD field_1_3702 SLOW_SLIDING Lnet/minecraft/class_5321;
+	FIELD field_1_3703 STICKY Lnet/minecraft/class_5321;
+	METHOD method_1_4354 add (Lnet/minecraft/class_6880;D)Ljava/util/function/Function;
+		ARG 0 attribute
+		ARG 1 value
+	METHOD method_1_4355 attributes (FFFF)Ljava/util/List;
+		ARG 0 knockbackResistancePenalty
+		ARG 1 bouncinessBonus
+		ARG 2 frictionMulti
+		ARG 3 airDragMulti
+	METHOD method_1_4356 bootstrap (Lnet/minecraft/class_7891;)V
+		ARG 0 registry
+	METHOD method_1_4357 of (Lnet/minecraft/class_2960;)Lnet/minecraft/class_5321;
+		ARG 0 id
+	METHOD method_1_4358 (Lnet/minecraft/class_6880;DLnet/minecraft/class_5321;)Lnet/minecraft/class_1_719$class_1_720;
+		ARG 3 key
+	METHOD method_1_4359 (Lnet/minecraft/class_6880;DLnet/minecraft/class_5321;)Lnet/minecraft/class_1_719$class_1_720;
+		ARG 3 key
+	METHOD method_1_4360 (Lnet/minecraft/class_5321;Ljava/util/function/Function;)Lnet/minecraft/class_1_719$class_1_720;
+		ARG 1 attribute
+	METHOD method_1_4361 mul (Lnet/minecraft/class_6880;D)Ljava/util/function/Function;
+		ARG 0 attribute
+		ARG 1 value
+	METHOD method_1_4362 register (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_6862;Ljava/util/List;Z)V
+		ARG 0 registry
+		ARG 1 key
+		ARG 2 itemTag
+		ARG 3 attributes
+		ARG 4 buoyant

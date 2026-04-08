@@ -219,6 +219,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 	COMMENT <li>Called before {@link #onStateReplaced onStateReplaced} in this case.</li>
 	COMMENT <li>Called before {@link #getDroppedStacks getDroppedStacks} in this case.</li>
 	COMMENT </ol>
+	FIELD field_1_3773 bounciness F
 	FIELD field_23154 dynamicBounds Z
 		COMMENT Whether this block's collision shape can change.
 		COMMENT
@@ -877,6 +878,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 			ARG 3 pos
 	CLASS class_2250 OffsetType
 	CLASS class_2251 Settings
+		FIELD field_1_3774 bounciness F
 		FIELD field_10660 resistance F
 		FIELD field_10661 randomTicks Z
 		FIELD field_10662 mapColorProvider Ljava/util/function/Function;
@@ -911,6 +913,8 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		FIELD field_54006 registryKey Lnet/minecraft/class_5321;
 		FIELD field_54007 lootTable Lnet/minecraft/class_10162;
 		FIELD field_54008 translationKey Lnet/minecraft/class_10162;
+		METHOD method_1_4491 bounciness (F)Lnet/minecraft/class_4970$class_2251;
+			ARG 1 bounciness
 		METHOD method_9618 breakInstantly ()Lnet/minecraft/class_4970$class_2251;
 			COMMENT Specifies that a block is broken instantly.
 		METHOD method_9624 dynamicBounds ()Lnet/minecraft/class_4970$class_2251;

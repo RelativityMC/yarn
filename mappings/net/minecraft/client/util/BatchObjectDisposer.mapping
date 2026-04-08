@@ -1,0 +1,20 @@
+CLASS net/minecraft/class_1_699 net/minecraft/client/util/BatchObjectDisposer
+	FIELD field_1_3575 index I
+	FIELD field_1_3576 disposer Lnet/minecraft/class_1_699$class_1_700;
+	FIELD field_1_3577 bins Lit/unimi/dsi/fastutil/objects/ReferenceList;
+	METHOD <init> (ILnet/minecraft/class_1_699$class_1_700;)V
+		ARG 1 count
+		ARG 2 disposer
+	METHOD method_1_4199 add (Ljava/lang/Object;)V
+		ARG 1 object
+	METHOD method_1_4200 disposeCurrentBin ()Z
+	CLASS class_1_700 DisposalAction
+		COMMENT Collects objects to be destroyed.
+		COMMENT
+		COMMENT This can be used to store a buffer of pointers to objects to destroy with
+		COMMENT one API call if the API in question allows for this.
+		METHOD method_1_4201 prepare (I)V
+			ARG 1 objectCount
+		METHOD method_1_4202 accept (Ljava/lang/Object;)V
+			ARG 1 object
+		METHOD method_1_4203 free ()V

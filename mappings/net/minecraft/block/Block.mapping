@@ -67,6 +67,7 @@ CLASS net/minecraft/class_2248 net/minecraft/block/Block
 	FIELD field_56561 SKIP_BLOCK_ADDED_CALLBACK I
 		COMMENT Skips {@link AbstractBlock#onBlockAdded}.
 		COMMENT Used when placing structures.
+	METHOD method_1_4045 getBounciness ()F
 	METHOD method_9496 randomDisplayTick (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)V
 		COMMENT Called randomly on the client. Blocks may override this to spawn particles.
 		COMMENT Unlike {@link AbstractBlock#randomTick} this is not affected by a game rule.
@@ -311,6 +312,7 @@ CLASS net/minecraft/class_2248 net/minecraft/block/Block
 		ARG 2 pos
 		ARG 3 blockEntity
 		ARG 4 entity
+		ARG 5 tool
 	METHOD method_9610 dropStacks (Lnet/minecraft/class_2680;Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;Lnet/minecraft/class_2586;)V
 		ARG 0 state
 		ARG 1 world
@@ -453,6 +455,7 @@ CLASS net/minecraft/class_2248 net/minecraft/block/Block
 		ARG 1 lootTable
 		ARG 2 state
 		ARG 3 blockEntity
+		ARG 4 tool
 		ARG 5 interactingEntity
 		ARG 6 lootConsumer
 	METHOD method_72547 generateLoot (Lnet/minecraft/class_3218;Lnet/minecraft/class_5321;Ljava/util/function/Function;Ljava/util/function/BiConsumer;)Z

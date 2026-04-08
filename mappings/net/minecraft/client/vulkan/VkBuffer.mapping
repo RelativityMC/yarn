@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1_694 net/minecraft/client/vulkan/VkBuffer
+	FIELD field_1_3554 closed Z
+	FIELD field_1_3555 device Lnet/minecraft/class_1_679;
+	METHOD <init> (Lnet/minecraft/class_1_679;Ljava/util/function/Supplier;IJZ)V
+		ARG 1 device
+		ARG 2 labelGetter
+		ARG 3 usage
+		ARG 4 size

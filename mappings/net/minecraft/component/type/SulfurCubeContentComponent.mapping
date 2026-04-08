@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_745 net/minecraft/component/type/SulfurCubeContentComponent
+	FIELD field_1_3771 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_3772 PACKET_CODEC Lnet/minecraft/class_9139;
+	METHOD method_1_4490 of (Lnet/minecraft/class_1799;)Lnet/minecraft/class_1_745;
+		ARG 0 contents

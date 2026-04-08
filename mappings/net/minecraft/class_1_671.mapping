@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_1_671
+	METHOD method_1_4015 (Lorg/lwjgl/vulkan/VkInstanceCreateInfo;Lorg/lwjgl/system/MemoryStack;)V
+		ARG 2 memoryStack
+	METHOD method_1_4016 create (IZLjava/util/Set;Ljava/util/Set;)Lnet/minecraft/class_1_671;
+		ARG 0 logLevel
+		ARG 1 useLabels
+		ARG 2 instanceExtensionProperties
+		ARG 3 enabledExtensions
+	CLASS class_1_672 NoDebug
+	CLASS class_1_673 Debug
+		FIELD field_1_3423 FLAGS_BY_LOG_LEVEL [I
+		FIELD field_1_3428 logLevelFlags I
+		FIELD field_1_3429 useLabels Z
+		METHOD <init> (IZ)V
+			ARG 1 logLevel
+			ARG 2 useLabels

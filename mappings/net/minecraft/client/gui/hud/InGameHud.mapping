@@ -3,6 +3,8 @@ CLASS net/minecraft/class_329 net/minecraft/client/gui/hud/InGameHud
 	COMMENT
 	COMMENT <p>The current instance used by the client can be obtained by {@link
 	COMMENT MinecraftClient#inGameHud MinecraftClient.getInstance().inGameHud}.
+	FIELD field_1_3278 hideGui Z
+	FIELD field_1_3279 waypointStyleAssetManager Lnet/minecraft/class_11327;
 	FIELD field_2012 lastHealthCheckTime J
 	FIELD field_2013 vignetteDarkness F
 	FIELD field_2014 lastHealthValue I
@@ -73,6 +75,11 @@ CLASS net/minecraft/class_329 net/minecraft/client/gui/hud/InGameHud
 	FIELD field_61530 deferredSubtitleRenderer Ljava/lang/Runnable;
 	METHOD <init> (Lnet/minecraft/class_310;)V
 		ARG 1 client
+	METHOD method_1_3929 getWaypointStyleAssetManager ()Lnet/minecraft/class_11327;
+	METHOD method_1_3930 isGuiHidden ()Z
+	METHOD method_1_3931 registerReloaders (Lnet/minecraft/class_3304;)V
+		ARG 1 resourceManager
+	METHOD method_1_3932 toggleGui ()V
 	METHOD method_1731 updateVignetteDarkness (Lnet/minecraft/class_1297;)V
 		ARG 1 entity
 	METHOD method_1732 setRecordPlayingOverlay (Lnet/minecraft/class_2561;)V
@@ -219,6 +226,7 @@ CLASS net/minecraft/class_329 net/minecraft/client/gui/hud/InGameHud
 		ARG 0 context
 		ARG 1 player
 		ARG 2 y
+		ARG 3 healthBarLineHeight
 		ARG 4 healthBarLines
 		ARG 5 x
 	METHOD method_61980 renderNauseaOverlay (Lnet/minecraft/class_332;F)V

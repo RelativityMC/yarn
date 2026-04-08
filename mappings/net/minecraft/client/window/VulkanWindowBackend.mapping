@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_689 net/minecraft/client/window/VulkanWindowBackend
+	FIELD field_1_3534 LOGGER Lorg/slf4j/Logger;

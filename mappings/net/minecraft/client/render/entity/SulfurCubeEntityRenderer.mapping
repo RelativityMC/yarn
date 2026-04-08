@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_754 net/minecraft/client/render/entity/SulfurCubeEntityRenderer
+	FIELD field_1_3800 ID Lnet/minecraft/class_1_436;
+	FIELD field_1_3801 OUTER_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_3802 blockModelManager Lnet/minecraft/class_1_394;

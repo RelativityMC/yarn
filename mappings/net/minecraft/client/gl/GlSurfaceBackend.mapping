@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_661 net/minecraft/client/gl/GlSurfaceBackend
+	FIELD field_1_3391 window J
+	METHOD <init> (J)V
+		ARG 1 window

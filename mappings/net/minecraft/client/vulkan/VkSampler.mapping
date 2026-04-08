@@ -1,1 +1,19 @@
 CLASS net/minecraft/class_1_701 net/minecraft/client/vulkan/VkSampler
+	FIELD field_1_3578 addressModeU Lcom/mojang/blaze3d/textures/AddressMode;
+	FIELD field_1_3579 addressModeV Lcom/mojang/blaze3d/textures/AddressMode;
+	FIELD field_1_3580 closed Z
+	FIELD field_1_3581 device Lnet/minecraft/class_1_679;
+	FIELD field_1_3582 magFilterMode Lcom/mojang/blaze3d/textures/FilterMode;
+	FIELD field_1_3583 maxAnisotropy I
+	FIELD field_1_3584 maxLod Ljava/util/OptionalDouble;
+	FIELD field_1_3585 minFilterMode Lcom/mojang/blaze3d/textures/FilterMode;
+	FIELD field_1_3586 sampler J
+	METHOD <init> (Lnet/minecraft/class_1_679;Lcom/mojang/blaze3d/textures/AddressMode;Lcom/mojang/blaze3d/textures/AddressMode;Lcom/mojang/blaze3d/textures/FilterMode;Lcom/mojang/blaze3d/textures/FilterMode;ILjava/util/OptionalDouble;)V
+		ARG 1 device
+		ARG 2 addressModeU
+		ARG 3 addressModeV
+		ARG 4 minFilterMode
+		ARG 5 magFilterMode
+		ARG 6 maxAnisotropy
+		ARG 7 maxLod
+	METHOD method_1_4204 getRawSampler ()J

@@ -1,5 +1,7 @@
 CLASS net/minecraft/class_1_715 net/minecraft/client/vulkan/VkCommandEncoderBackend
+	FIELD field_1_3658 commandBufferDisposer Lnet/minecraft/class_1_699;
 	FIELD field_1_3661 commandBuffer Lorg/lwjgl/vulkan/VkCommandBuffer;
+	FIELD field_1_3664 objectDisposer Lnet/minecraft/class_1_699;
 	FIELD field_1_3665 device Lnet/minecraft/class_1_679;
 	FIELD field_1_3666 submission Lnet/minecraft/class_1_674$class_1_675;
 	METHOD <init> (Lnet/minecraft/class_1_679;)V

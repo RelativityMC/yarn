@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_669 net/minecraft/client/vulkan/DeferredDisposable
+	METHOD method_1_4001 destroy ()V

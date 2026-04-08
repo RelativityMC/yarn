@@ -1,15 +1,17 @@
-CLASS net/minecraft/class_1_674
+CLASS net/minecraft/class_1_674 net/minecraft/client/vulkan/VkQueue
 	METHOD <init> (Lnet/minecraft/class_1_679;II)V
 		ARG 1 device
-		ARG 2 start
-		ARG 3 end
+		ARG 2 queueIndex
+		ARG 3 queueFamilyIndex
 	METHOD method_1_4027 submission ()Lnet/minecraft/class_1_674$class_1_675;
-	METHOD method_1_4028 (Lnet/minecraft/class_1_679;II)J
+	METHOD method_1_4028 getDeviceQueue (Lnet/minecraft/class_1_679;II)J
 		ARG 0 device
-		ARG 1 start
-		ARG 2 end
+		ARG 1 queueIndex
+		ARG 2 queueFamilyIndex
+	METHOD method_1_4029 waitIdle ()V
 	CLASS class_1_675 Submission
 		FIELD field_1_3430 closed Z
+		FIELD field_1_3431 frames Lit/unimi/dsi/fastutil/objects/ReferenceArrayList;
 		METHOD method_1_4030 addCommandBuffer (Lorg/lwjgl/vulkan/VkCommandBuffer;)V
 			ARG 1 commandBuffer
 		METHOD method_1_4031 addSignal (JJJ)V
@@ -20,3 +22,5 @@ CLASS net/minecraft/class_1_674
 			ARG 1 vkSemaphore
 			ARG 3 value
 			ARG 5 stageMask
+		CLASS class_1_676 SemaphoreInfo
+		CLASS class_1_677 Frame

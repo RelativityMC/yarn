@@ -1,0 +1,52 @@
+CLASS net/minecraft/class_1_671 net/minecraft/client/vulkan/DebugBackend
+	METHOD method_1_4014 beginLabelRegion (Lorg/lwjgl/vulkan/VkCommandBuffer;Ljava/util/function/Supplier;)V
+		ARG 1 commandBuffer
+		ARG 2 labelSupplier
+	METHOD method_1_4015 setInstanceCreationOptions (Lorg/lwjgl/vulkan/VkInstanceCreateInfo;Lorg/lwjgl/system/MemoryStack;)V
+		ARG 1 instanceCreateInfo
+		ARG 2 memoryStack
+	METHOD method_1_4016 create (IZLjava/util/Set;Ljava/util/Set;)Lnet/minecraft/class_1_671;
+		ARG 0 logLevel
+		ARG 1 useLabels
+		ARG 2 instanceExtensionProperties
+		ARG 3 enabledExtensions
+	METHOD method_1_4017 destroyDebugUtilsMessenger (Lorg/lwjgl/vulkan/VkInstance;)V
+		ARG 1 instance
+	METHOD method_1_4018 isDebug ()Z
+	METHOD method_1_4019 endLabelRegion (Lorg/lwjgl/vulkan/VkCommandBuffer;)V
+		ARG 1 commandBuffer
+	METHOD method_1_4020 setObjectLabel (Lorg/lwjgl/vulkan/VkDevice;IJLjava/lang/String;)V
+		ARG 1 device
+		ARG 2 type
+		ARG 3 handle
+		ARG 5 label
+	METHOD method_1_4021 setObjectLabel (Lorg/lwjgl/vulkan/VkDevice;IJLjava/util/function/Supplier;)V
+		ARG 1 device
+		ARG 2 type
+		ARG 3 handle
+		ARG 5 labelSupplier
+	METHOD method_1_4022 createDebugUtilsMessenger (Lorg/lwjgl/vulkan/VkInstance;)V
+		ARG 1 instance
+	CLASS class_1_672 NoDebug
+	CLASS class_1_673 Debug
+		FIELD field_1_3423 FLAGS_BY_LOG_LEVEL [I
+		FIELD field_1_3424 LOGGER Lorg/slf4j/Logger;
+		FIELD field_1_3425 MESSAGE_TYPE_FLAGS I
+		FIELD field_1_3426 STACK_WALKER Ljava/lang/StackWalker;
+		FIELD field_1_3427 debugUtilsMessenger J
+		FIELD field_1_3428 logLevelFlags I
+		FIELD field_1_3429 useLabels Z
+		METHOD <init> (IZ)V
+			ARG 1 logLevel
+			ARG 2 useLabels
+		METHOD method_1_4023 (Ljava/util/stream/Stream;)Ljava/lang/String;
+			ARG 0 stackFrames
+		METHOD method_1_4024 (Ljava/lang/StackWalker$StackFrame;)Z
+			ARG 0 stackFrame
+		METHOD method_1_4025 (Ljava/lang/StackWalker$StackFrame;)Ljava/lang/String;
+			ARG 0 stackFrame
+		METHOD method_1_4026 debugMessengerCallback (IIJJ)I
+			ARG 1 messageSeverity
+			ARG 2 messageTypes
+			ARG 3 pCallbackData
+			ARG 5 pUserData

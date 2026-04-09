@@ -11,11 +11,13 @@ CLASS net/minecraft/class_5725 net/minecraft/world/gen/feature/SpeleothemCluster
 	METHOD method_33000 canWaterSpawn (Lnet/minecraft/class_5281;Lnet/minecraft/class_2338;Lnet/minecraft/class_1_773;)Z
 		ARG 1 world
 		ARG 2 pos
+		ARG 3 config
 	METHOD method_33001 placeDripstoneBlocks (Lnet/minecraft/class_5281;Lnet/minecraft/class_2338;ILnet/minecraft/class_2350;Lnet/minecraft/class_1_773;)V
 		ARG 1 world
 		ARG 2 pos
 		ARG 3 height
 		ARG 4 direction
+		ARG 5 config
 	METHOD method_33002 generate (Lnet/minecraft/class_5281;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338;IIFDIFLnet/minecraft/class_1_773;)V
 		ARG 1 world
 		ARG 2 random

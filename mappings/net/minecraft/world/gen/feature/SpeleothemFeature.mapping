@@ -8,3 +8,4 @@ CLASS net/minecraft/class_5730 net/minecraft/world/gen/feature/SpeleothemFeature
 		ARG 0 world
 		ARG 1 pos
 		ARG 2 random
+		ARG 3 config

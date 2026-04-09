@@ -1,7 +1,10 @@
 CLASS net/minecraft/class_5727 net/minecraft/world/gen/feature/LargeDripstoneFeature
+	METHOD method_1_4629 (Lnet/minecraft/class_5732;Lnet/minecraft/class_2680;)Z
+		ARG 1 block
 	METHOD method_33016 createGenerator (Lnet/minecraft/class_2338;ZLnet/minecraft/class_5819;ILnet/minecraft/class_5863;Lnet/minecraft/class_5863;)Lnet/minecraft/class_5727$class_5728;
 		ARG 0 pos
 		ARG 1 isStalagmite
+		ARG 2 random
 		ARG 3 scale
 		ARG 4 bluntness
 		ARG 5 heightScale
@@ -24,7 +27,7 @@ CLASS net/minecraft/class_5727 net/minecraft/world/gen/feature/LargeDripstoneFea
 			ARG 6 heightScale
 		METHOD method_33017 getBaseScale ()I
 		METHOD method_33018 scale (F)I
-			ARG 1 height
+			ARG 1 radius
 		METHOD method_33019 canGenerate (Lnet/minecraft/class_5281;Lnet/minecraft/class_5727$class_5729;)Z
 			ARG 1 world
 			ARG 2 wind

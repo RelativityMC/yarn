@@ -1,15 +1,15 @@
 unpick v4
 
 group int blaze3d_gpu_buffer_flags
-    @flags
-    com.mojang.blaze3d.buffers.GpuBuffer.USAGE_MAP_READ
-    com.mojang.blaze3d.buffers.GpuBuffer.USAGE_MAP_WRITE
-    com.mojang.blaze3d.buffers.GpuBuffer.USAGE_HINT_CLIENT_STORAGE
-    com.mojang.blaze3d.buffers.GpuBuffer.USAGE_COPY_DST
-    com.mojang.blaze3d.buffers.GpuBuffer.USAGE_COPY_SRC
-    com.mojang.blaze3d.buffers.GpuBuffer.USAGE_VERTEX
-    com.mojang.blaze3d.buffers.GpuBuffer.USAGE_INDEX
-    com.mojang.blaze3d.buffers.GpuBuffer.USAGE_UNIFORM
-    com.mojang.blaze3d.buffers.GpuBuffer.USAGE_UNIFORM_TEXEL_BUFFER
+	@flags
+	com.mojang.blaze3d.buffers.GpuBuffer.USAGE_MAP_READ
+	com.mojang.blaze3d.buffers.GpuBuffer.USAGE_MAP_WRITE
+	com.mojang.blaze3d.buffers.GpuBuffer.USAGE_HINT_CLIENT_STORAGE
+	com.mojang.blaze3d.buffers.GpuBuffer.USAGE_COPY_DST
+	com.mojang.blaze3d.buffers.GpuBuffer.USAGE_COPY_SRC
+	com.mojang.blaze3d.buffers.GpuBuffer.USAGE_VERTEX
+	com.mojang.blaze3d.buffers.GpuBuffer.USAGE_INDEX
+	com.mojang.blaze3d.buffers.GpuBuffer.USAGE_UNIFORM
+	com.mojang.blaze3d.buffers.GpuBuffer.USAGE_UNIFORM_TEXEL_BUFFER
 
 target_annotation com.mojang.blaze3d.buffers.GpuBuffer$Usage blaze3d_gpu_buffer_flags

@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_1_708 com/mojang/blaze3d/profiling/GpuProfiler
+	FIELD field_1_3635 tracyGpuContext Lcom/mojang/jtracy/GpuContext;
 	FIELD field_1_3637 timestampQueryPool Lnet/minecraft/class_1_685;
 	METHOD <init> (Lcom/mojang/blaze3d/systems/GpuDevice;)V
 		ARG 1 device
+	METHOD method_1_4223 close ()V

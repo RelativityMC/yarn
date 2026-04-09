@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1_696 net/minecraft/client/vulkan/VulkanTimestampQueryPool
+	FIELD field_1_3561 device Lnet/minecraft/class_1_679;
+	FIELD field_1_3562 count I
+	FIELD field_1_3563 ptr J
+	METHOD <init> (Lnet/minecraft/class_1_679;I)V
+		ARG 1 device
+		ARG 2 count
+	METHOD method_1_4176 getPointer ()J

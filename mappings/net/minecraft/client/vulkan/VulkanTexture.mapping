@@ -1,0 +1,18 @@
+CLASS net/minecraft/class_1_703 net/minecraft/client/vulkan/VulkanTexture
+	FIELD field_1_3608 closed Z
+	FIELD field_1_3609 device Lnet/minecraft/class_1_679;
+	FIELD field_1_3610 refcount I
+	FIELD field_1_3611 rawImage J
+	FIELD field_1_3612 rawVmaAllocation J
+	METHOD <init> (Lnet/minecraft/class_1_679;ILjava/lang/String;Lnet/minecraft/class_1_658;IIII)V
+		ARG 1 device
+		ARG 2 usage
+		ARG 3 label
+		ARG 4 format
+		ARG 5 width
+		ARG 6 height
+		ARG 7 depthOrLayers
+		ARG 8 mipLevels
+	METHOD method_1_4209 incrementRefcount ()V
+	METHOD method_1_4210 decrementRefcount ()V
+	METHOD method_1_4211 getRawImage ()J

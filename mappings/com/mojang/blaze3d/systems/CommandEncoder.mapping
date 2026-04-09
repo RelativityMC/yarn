@@ -2,6 +2,8 @@ CLASS com/mojang/blaze3d/systems/CommandEncoder
 	COMMENT Wraps a {@link com.mojang.blaze3d.systems.BaseCommandEncoder} to provide
 	COMMENT extra run-time checks.
 	METHOD <init> (Lnet/minecraft/class_1_708;Lnet/minecraft/class_1_147;Lnet/minecraft/class_1_154;)V
+		ARG 1 profiler
+		ARG 2 device
 		ARG 3 backend
 	METHOD clearColorAndDepthTextures (Lcom/mojang/blaze3d/textures/GpuTexture;ILcom/mojang/blaze3d/textures/GpuTexture;D)V
 		ARG 1 colorAttachment

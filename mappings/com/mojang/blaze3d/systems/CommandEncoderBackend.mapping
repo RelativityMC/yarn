@@ -87,6 +87,7 @@ CLASS net/minecraft/class_1_154 com/mojang/blaze3d/systems/CommandEncoderBackend
 		ARG 7 offsetY
 		ARG 8 width
 		ARG 9 height
+	METHOD method_1_4410 submit ()V
 	METHOD method_1_4411 writeTimestamp (Lnet/minecraft/class_1_685;I)V
 		ARG 1 timestampQueryPool
 		ARG 2 index

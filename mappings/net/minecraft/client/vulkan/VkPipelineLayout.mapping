@@ -1,8 +1,0 @@
-CLASS net/minecraft/class_1_721 net/minecraft/client/vulkan/VkPipelineLayout
-	FIELD field_1_3689 EMPTY Lnet/minecraft/class_1_721;
-	METHOD method_1_4345 create (Lnet/minecraft/class_1_679;Ljava/util/List;Ljava/lang/String;)Lnet/minecraft/class_1_721;
-		ARG 0 device
-		ARG 1 entries
-		ARG 2 name
-	CLASS class_1_722 Entry
-	CLASS class_1_723 Type

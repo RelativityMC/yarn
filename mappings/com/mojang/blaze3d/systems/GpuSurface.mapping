@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_1_665 com/mojang/blaze3d/systems/GpuSurface
+	COMMENT Wraps a {@link com.mojang.blaze3d.systems.GpuSurfaceBackend} to provide extra
+	COMMENT run-time checks.
 	FIELD field_1_3401 backend Lnet/minecraft/class_1_713;
 	FIELD field_1_3402 settings Ljava/util/Optional;
 	FIELD field_1_3403 blitted Z

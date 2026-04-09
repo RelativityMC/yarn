@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_1_739 net/minecraft/client/window/WindowException
+	FIELD field_1_3744 missingFeatures Ljava/util/List;
 	FIELD field_1_3745 condition Lnet/minecraft/class_1_739$class_1_740;
 	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_1_739$class_1_740;)V
 		ARG 1 message
@@ -6,6 +7,8 @@ CLASS net/minecraft/class_1_739 net/minecraft/client/window/WindowException
 	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_1_739$class_1_740;Ljava/util/List;)V
 		ARG 1 message
 		ARG 2 condition
+		ARG 3 missingFeatures
+	METHOD method_1_4457 getMissingFeatures ()Ljava/util/List;
 	METHOD method_1_4458 getCondition ()Lnet/minecraft/class_1_739$class_1_740;
 	CLASS class_1_740 Condition
 		FIELD field_1_3756 id Ljava/lang/String;

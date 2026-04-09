@@ -1,0 +1,20 @@
+CLASS net/minecraft/class_1_694 net/minecraft/client/vulkan/VulkanBuffer
+	FIELD field_1_3554 closed Z
+	FIELD field_1_3555 device Lnet/minecraft/class_1_679;
+	FIELD field_1_3556 rawBuffer J
+	FIELD field_1_3557 vmaAllocation J
+	METHOD <init> (Lnet/minecraft/class_1_679;Ljava/util/function/Supplier;IJZ)V
+		ARG 1 device
+		ARG 2 labelGetter
+		ARG 3 usage
+		ARG 4 size
+		ARG 6 alwaysHostVisible
+	METHOD method_1_4174 map (JJ)Lcom/mojang/blaze3d/buffers/GpuBuffer$MappedView;
+		ARG 1 offset
+		ARG 3 size
+	METHOD method_1_4175 getRawBuffer ()J
+	CLASS class_1_695 VulkanMappedView
+		FIELD field_1_3558 closed Z
+		FIELD field_1_3559 buffer Ljava/nio/ByteBuffer;
+		METHOD <init> (Lnet/minecraft/class_1_694;Ljava/nio/ByteBuffer;)V
+			ARG 2 buffer

@@ -1,4 +1,11 @@
 CLASS net/minecraft/class_1_31 net/minecraft/village/VillagerTrades
+	FIELD field_1_3704 MASON_4_EMERALD_GLAZED_TERRACOTTAS Lnet/minecraft/class_1_727;
+	FIELD field_1_3705 MASON_4_EMERALD_TERRACOTTAS Lnet/minecraft/class_1_727;
+	FIELD field_1_3706 SHEPHERD_2_EMERALD_CARPETS Lnet/minecraft/class_1_727;
+	FIELD field_1_3707 SHEPHERD_2_EMERALD_WOOLS Lnet/minecraft/class_1_727;
+	FIELD field_1_3708 SHEPHERD_3_EMERALD_BEDS Lnet/minecraft/class_1_727;
+	FIELD field_1_3709 SHEPHERD_4_EMERALD_BANNERS Lnet/minecraft/class_1_727;
+	FIELD field_1_3710 WANDERING_TRADER_EMERALD_DYES Lnet/minecraft/class_1_727;
 	METHOD method_1_530 randomDyesFunction ()Lnet/minecraft/class_117;
 	METHOD method_1_531 bootstrap (Lnet/minecraft/class_7891;)Lnet/minecraft/class_6880;
 		ARG 0 registries
@@ -12,6 +19,7 @@ CLASS net/minecraft/class_1_31 net/minecraft/village/VillagerTrades
 		ARG 2 level
 	METHOD method_1_535 enchantEquipmentFunction (Lnet/minecraft/class_7871;Lnet/minecraft/class_6885;Lnet/minecraft/class_1792;)Ljava/util/List;
 		ARG 0 itemRegistry
+		ARG 1 allowedEnchantments
 		ARG 2 item
 	METHOD method_1_536 setEnchantmentFunction (Lnet/minecraft/class_7871;Lnet/minecraft/class_6880;ILnet/minecraft/class_1792;)Ljava/util/List;
 		ARG 0 itemRegistry
@@ -42,7 +50,9 @@ CLASS net/minecraft/class_1_31 net/minecraft/village/VillagerTrades
 		ARG 0 registries
 	METHOD method_1_555 bootstrapWanderingTraderFlowerSales (Lnet/minecraft/class_7891;)V
 		ARG 0 registries
-	METHOD method_1_558 bootstrapShepherdWoolSales (Lnet/minecraft/class_1792;I)Lnet/minecraft/class_1_30;
+	METHOD method_1_558 shepherdDyePurchase (Lnet/minecraft/class_1792;I)Lnet/minecraft/class_1_30;
+		ARG 0 item
+		ARG 1 xp
 	METHOD method_1_560 register (Ljava/lang/String;)Lnet/minecraft/class_5321;
 		ARG 0 path
 	METHOD method_1_561 villagerTypes (Lnet/minecraft/class_7871;Ljava/util/List;)Lnet/minecraft/class_6885;
@@ -53,3 +63,76 @@ CLASS net/minecraft/class_1_31 net/minecraft/village/VillagerTrades
 		ARG 1 villagerType
 	METHOD method_1_563 villagerTypesCondition (Lnet/minecraft/class_6885;)Ljava/util/Optional;
 		ARG 0 villagerTypes
+	METHOD method_1_4364 cartographerLevel2ExplorerMapSale (Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;Lnet/minecraft/class_6862;Lnet/minecraft/class_6880;Ljava/lang/String;Ljava/util/List;)Lnet/minecraft/class_1_30;
+		ARG 0 items
+		ARG 1 villagerTypes
+		ARG 2 structureTag
+		ARG 3 decoration
+		ARG 4 name
+		ARG 5 allowedVillagerTypes
+	METHOD method_1_4365 cartographerBannerSale (Lnet/minecraft/class_7871;Lnet/minecraft/class_1792;Ljava/util/List;)Lnet/minecraft/class_1_30;
+		ARG 0 villagerTypes
+		ARG 1 banner
+		ARG 2 allowedVillagerTypes
+	METHOD method_1_4366 fishermanBoatPurchase (Lnet/minecraft/class_7871;Lnet/minecraft/class_1792;Ljava/util/List;)Lnet/minecraft/class_1_30;
+		ARG 0 registries
+		ARG 1 boat
+		ARG 2 allowedVillagerTypes
+	METHOD method_1_4367 masonLevel3BlockPurchase (Lnet/minecraft/class_1792;)Lnet/minecraft/class_1_30;
+		ARG 0 item
+	METHOD method_1_4368 masonLevel3BlockSale (Lnet/minecraft/class_1792;)Lnet/minecraft/class_1_30;
+		ARG 0 item
+	METHOD method_1_4369 shepherdWoolPurchase (Lnet/minecraft/class_1792;)Lnet/minecraft/class_1_30;
+		ARG 0 wool
+	METHOD method_1_4370 wanderingTraderCoralSale (Lnet/minecraft/class_1792;)Lnet/minecraft/class_1_30;
+		ARG 0 coralBlock
+	METHOD method_1_4371 wanderingTraderFlowerSale (Lnet/minecraft/class_1792;I)Lnet/minecraft/class_1_30;
+		ARG 0 flower
+		ARG 1 quantity
+	METHOD method_1_4372 wanderingTraderLogSale (Lnet/minecraft/class_1792;)Lnet/minecraft/class_1_30;
+		ARG 0 log
+	METHOD method_1_4373 wanderingTraderSaplingSale (Lnet/minecraft/class_1792;)Lnet/minecraft/class_1_30;
+		ARG 0 sapling
+	METHOD method_1_4374 wanderingTraderSeedSale (Lnet/minecraft/class_1792;)Lnet/minecraft/class_1_30;
+		ARG 0 seeds
+	METHOD method_1_4375 enchantedBookFunctions (Lnet/minecraft/class_7871;Lnet/minecraft/class_6885;)Ljava/util/List;
+		ARG 0 items
+		ARG 1 allowedEnchantments
+	METHOD method_1_4376 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_5321;
+		ARG 0 color
+	METHOD method_1_4377 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_5321;
+		ARG 0 color
+	METHOD method_1_4378 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_5321;
+		ARG 0 color
+	METHOD method_1_4379 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_5321;
+		ARG 0 color
+	METHOD method_1_4380 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_5321;
+		ARG 0 color
+	METHOD method_1_4381 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_5321;
+		ARG 0 color
+	METHOD method_1_4382 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_5321;
+		ARG 0 color
+	METHOD method_1_4383 bootstrapCartographerLevel2ExplorerMaps (Lnet/minecraft/class_7891;Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;)V
+		ARG 0 registries
+		ARG 1 items
+		ARG 2 villagerTypes
+	METHOD method_1_4384 bootstrapShepherdCarpetSales (Lnet/minecraft/class_7891;)V
+		ARG 0 registries
+	METHOD method_1_4385 bootstrapMasonColoredBlockSales (Lnet/minecraft/class_7891;)V
+		ARG 0 registries
+	METHOD method_1_4386 bootstrapMasonLevel3BlockSales (Lnet/minecraft/class_7891;)V
+		ARG 0 registries
+	METHOD method_1_4387 bootstrapMasonLevel3BlockPurchases (Lnet/minecraft/class_7891;)V
+		ARG 0 registries
+	METHOD method_1_4388 bootstrapShepherdLevel1WoolPurchases (Lnet/minecraft/class_7891;)V
+		ARG 0 registries
+	METHOD method_1_4389 bootstrapWanderingTraderSaplingSales (Lnet/minecraft/class_7891;)V
+		ARG 0 registries
+	METHOD method_1_4390 bootstrapWanderingTraderSeedSales (Lnet/minecraft/class_7891;)V
+		ARG 0 registries
+	METHOD method_1_4391 bootstrapMasonColoredBlockSales (Lnet/minecraft/class_7891;Lnet/minecraft/class_1_727;Lnet/minecraft/class_1_727;)V
+		ARG 0 registries
+		ARG 1 trades
+		ARG 2 items
+	METHOD method_1_4392 bootstrapShepherdWoolSales (Lnet/minecraft/class_7891;)V
+		ARG 0 registries

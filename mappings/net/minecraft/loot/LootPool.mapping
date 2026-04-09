@@ -40,6 +40,8 @@ CLASS net/minecraft/class_55 net/minecraft/loot/LootPool
 		FIELD field_961 functions Lcom/google/common/collect/ImmutableList$Builder;
 		FIELD field_962 bonusRollsRange Lnet/minecraft/class_5658;
 		FIELD field_963 conditions Lcom/google/common/collect/ImmutableList$Builder;
+		METHOD method_1_4409 with (Ljava/util/List;)Lnet/minecraft/class_55$class_56;
+			ARG 1 entries
 		METHOD method_351 with (Lnet/minecraft/class_79$class_80;)Lnet/minecraft/class_55$class_56;
 			ARG 1 entry
 		METHOD method_352 rolls (Lnet/minecraft/class_5658;)Lnet/minecraft/class_55$class_56;

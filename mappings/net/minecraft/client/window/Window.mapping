@@ -71,7 +71,7 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	METHOD method_4479 updateWindowRegion ()V
 	METHOD method_4480 getWidth ()I
 	METHOD method_4481 throwOnGlError ()V
-	METHOD method_4482 logGlError (IJ)V
+	METHOD method_4482 logGlfwError (IJ)V
 		ARG 1 error
 		ARG 2 description
 	METHOD method_4483 updateFramebufferSize ()V
@@ -94,7 +94,7 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	METHOD method_4498 isFullscreen ()Z
 	METHOD method_4499 getX ()I
 	METHOD method_4500 toggleFullscreen ()V
-	METHOD method_4501 throwGlError (IJ)V
+	METHOD method_4501 throwGlfwError (IJ)V
 		ARG 0 error
 		ARG 1 description
 	METHOD method_4502 getScaledHeight ()I
@@ -107,7 +107,7 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	METHOD method_4506 getFramebufferHeight ()I
 	METHOD method_4507 getHeight ()I
 	METHOD method_4511 getFullscreenVideoMode ()Ljava/util/Optional;
-	METHOD method_4513 logOnGlError ()V
+	METHOD method_4513 logOnGlfwError ()V
 	METHOD method_15997 setScaleFactor (I)V
 		ARG 1 scaleFactor
 	METHOD method_20831 getMonitor ()Lnet/minecraft/class_313;
@@ -140,6 +140,6 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	METHOD method_74030 setAllowCursorChanges (Z)V
 		ARG 1 allowCursorChanges
 	METHOD method_75291 getMinimumLineWidth ()F
-	CLASS class_4716 GlErroredException
+	CLASS class_4716 GlfwErroredException
 		METHOD <init> (Ljava/lang/String;)V
 			ARG 1 message

@@ -19,7 +19,7 @@ CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 	FIELD field_1_3478 DYED_CANDLES Lnet/minecraft/class_1_727;
 	FIELD field_1_3479 DYED_CANDLE_CAKES Lnet/minecraft/class_1_727;
 	FIELD field_1_3480 DYED_SHULKER_BOXES Lnet/minecraft/class_1_727;
-	FIELD field_1_3481 TERRACOTTAS Lnet/minecraft/class_1_727;
+	FIELD field_1_3481 DYED_TERRACOTTAS Lnet/minecraft/class_1_727;
 	FIELD field_1_3482 GLAZED_TERRACOTTAS Lnet/minecraft/class_1_727;
 	FIELD field_1_3483 LIGHTNING_RODS Lnet/minecraft/class_1_758;
 	FIELD field_1_3493 STAINED_GLASSES Lnet/minecraft/class_1_727;

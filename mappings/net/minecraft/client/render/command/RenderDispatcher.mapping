@@ -19,6 +19,7 @@ CLASS net/minecraft/class_11684 net/minecraft/client/render/command/RenderDispat
 	FIELD field_62260 modelPartCommandRenderer Lnet/minecraft/class_9974;
 	FIELD field_62759 layeredCustomCommandRenderer Lnet/minecraft/class_11977;
 	METHOD <init> (Lnet/minecraft/class_11661;Lnet/minecraft/class_1092;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_11697;Lnet/minecraft/class_4618;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_327;Lnet/minecraft/class_1_405;)V
+		ARG 1 queue
 		ARG 2 bakedModelManager
 		ARG 3 vertexConsumers
 		ARG 4 atlasManager

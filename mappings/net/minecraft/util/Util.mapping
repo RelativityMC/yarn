@@ -29,6 +29,8 @@ CLASS net/minecraft/class_156 net/minecraft/util/Util
 	METHOD method_1_2911 withAppended (Ljava/util/List;[Ljava/lang/Object;)Ljava/util/List;
 		ARG 0 list
 		ARG 1 valuesToAppend
+	METHOD method_1_3882 join ([Ljava/util/List;)Ljava/util/List;
+		ARG 0 lists
 	METHOD method_645 previous (Ljava/lang/Iterable;Ljava/lang/Object;)Ljava/lang/Object;
 		COMMENT {@return the item preceding {@code object} in {@code iterable}}
 		COMMENT

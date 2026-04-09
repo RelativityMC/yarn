@@ -1,3 +1,4 @@
 CLASS net/minecraft/class_3678 net/minecraft/client/window/WindowEventHandler
-	METHOD method_15993 onResolutionChanged ()V
+	METHOD method_1_4256 onWindowSizeChanged ()V
+	METHOD method_15993 onScaleFactorChanged ()V
 	METHOD method_30133 onCursorEnterChanged ()V

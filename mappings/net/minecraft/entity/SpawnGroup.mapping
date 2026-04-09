@@ -6,6 +6,7 @@ CLASS net/minecraft/class_1311 net/minecraft/entity/SpawnGroup
 	COMMENT
 	COMMENT @see EntityType#getSpawnGroup()
 	COMMENT @see net.minecraft.world.SpawnHelper
+	FIELD field_1_3450 abbreviation Ljava/lang/String;
 	FIELD field_6295 rare Z
 	FIELD field_6297 capacity I
 	FIELD field_6298 peaceful Z
@@ -17,10 +18,15 @@ CLASS net/minecraft/class_1311 net/minecraft/entity/SpawnGroup
 		COMMENT {@linkplain #getName() name} string.
 	METHOD <init> (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;IZZI)V
 		ARG 3 name
+		ARG 4 abbreviation
 		ARG 5 spawnCap
 		ARG 6 peaceful
 		ARG 7 rare
 		ARG 8 immediateDespawnRange
+	METHOD method_1_4060 getAbbreviation ()Ljava/lang/String;
+		COMMENT Returns the abbreviation for this spawn group.
+		COMMENT <p>
+		COMMENT These are used in the debug screen and consist of uppercase letters.
 	METHOD method_6133 getName ()Ljava/lang/String;
 		COMMENT Returns the name of this spawn group.
 		COMMENT

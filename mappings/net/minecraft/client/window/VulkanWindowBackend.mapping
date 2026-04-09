@@ -1,7 +1,23 @@
 CLASS net/minecraft/class_1_689 net/minecraft/client/window/VulkanWindowBackend
 	FIELD field_1_3533 PHYSICAL_DEVICE_DYNAMIC_RENDERING_FEATURES Lnet/minecraft/class_1_730;
 	FIELD field_1_3534 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_3535 REQUIRED_EXTENSIONS Ljava/util/Set;
 	FIELD field_1_3536 REQUIRED_FEATURES Ljava/util/Set;
 	FIELD field_1_3537 PHYSICAL_DEVICE_SYNCHRONIZATION_2_FEATURES Lnet/minecraft/class_1_730;
 	FIELD field_1_3538 PHYSICAL_DEVICE_FEATURES_2 Lnet/minecraft/class_1_730;
 	FIELD field_1_3539 PHYSICAL_DEVICE_VULKAN_1_2_FEATURES Lnet/minecraft/class_1_730;
+	METHOD method_1_4154 createDevice (Ljava/util/Collection;Lnet/minecraft/class_1_717;)Lorg/lwjgl/vulkan/VkDevice;
+		ARG 1 enabledExtensions
+		ARG 2 physicalDevice
+	METHOD method_1_4155 createVmaAllocator (Lorg/lwjgl/vulkan/VkDevice;)J
+		ARG 1 device
+	METHOD method_1_4156 getSuitablePhysicalDevice (Lnet/minecraft/class_1_691;)Lnet/minecraft/class_1_717;
+		ARG 1 instance
+	METHOD method_1_4157 getPhysicalDeviceName (Lorg/lwjgl/vulkan/VkPhysicalDevice;)Ljava/lang/String;
+		ARG 1 physicalDevice
+	METHOD method_1_4158 isDiscreteGpu (Lorg/lwjgl/vulkan/VkPhysicalDevice;)Z
+		ARG 1 physicalDevice
+	METHOD method_1_4159 isPhysicalDeviceSuitable (Lorg/lwjgl/vulkan/VkPhysicalDevice;)Z
+		ARG 1 physicalDevice
+	METHOD method_1_4160 reportMissingCapabilities (Lorg/lwjgl/vulkan/VkPhysicalDevice;)V
+		ARG 1 physicalDevice

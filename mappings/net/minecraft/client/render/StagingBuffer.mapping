@@ -48,6 +48,8 @@ CLASS net/minecraft/class_1_686 net/minecraft/client/render/StagingBuffer
 		FIELD field_1_3528 commandEncoder Lcom/mojang/blaze3d/systems/CommandEncoder;
 		METHOD <init> (Lnet/minecraft/class_1_686;Lcom/mojang/blaze3d/systems/CommandEncoder;)V
 			ARG 2 commandEncoder
+		METHOD method_1_4150 assertStagingBufferMatches (Lnet/minecraft/class_1_686;)V
+			ARG 1 buffer
 		METHOD method_1_4151 copyFromSlice (Lnet/minecraft/class_1_686$class_1_687;Lcom/mojang/blaze3d/buffers/GpuBuffer;J)V
 			ARG 1 slice
 			ARG 2 buffer

@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_370 net/minecraft/client/toast/SystemToast
+	FIELD field_1_3795 TEXT_X I
 	FIELD field_2213 type Lnet/minecraft/class_370$class_9037;
 	FIELD field_2214 justUpdated Z
 	FIELD field_2215 title Ljava/util/List;
@@ -14,6 +15,19 @@ CLASS net/minecraft/class_370 net/minecraft/client/toast/SystemToast
 	METHOD <init> (Lnet/minecraft/class_370$class_9037;Lnet/minecraft/class_2561;Lnet/minecraft/class_2561;)V
 		ARG 1 type
 		ARG 2 title
+		ARG 3 desc
+	METHOD method_1_4525 drawText (Lnet/minecraft/class_332;Lnet/minecraft/class_327;Ljava/util/List;II)V
+		ARG 1 context
+		ARG 2 textRenderer
+		ARG 3 lines
+		ARG 4 y
+		ARG 5 color
+	METHOD method_1_4526 updateWidth ()V
+	METHOD method_1_4527 wrap (Lnet/minecraft/class_2561;)Ljava/util/List;
+		ARG 0 text
+	METHOD method_1_4528 doSetContent (Lnet/minecraft/class_2561;Lnet/minecraft/class_2561;)V
+		ARG 1 title
+		ARG 2 desc
 	METHOD method_1990 show (Lnet/minecraft/class_374;Lnet/minecraft/class_370$class_9037;Lnet/minecraft/class_2561;Lnet/minecraft/class_2561;)V
 		ARG 0 manager
 		ARG 1 type
@@ -34,6 +48,7 @@ CLASS net/minecraft/class_370 net/minecraft/client/toast/SystemToast
 		ARG 0 client
 		ARG 1 worldName
 	METHOD method_29626 getTextAsList (Lnet/minecraft/class_2561;)Ljava/util/List;
+		ARG 0 text
 	METHOD method_29627 addPackCopyFailure (Lnet/minecraft/class_310;Ljava/lang/String;)V
 		ARG 0 client
 		ARG 1 directory

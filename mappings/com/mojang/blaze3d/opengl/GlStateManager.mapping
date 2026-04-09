@@ -81,6 +81,8 @@ CLASS com/mojang/blaze3d/opengl/GlStateManager
 	METHOD lambda$static$0 (I)Lcom/mojang/blaze3d/opengl/GlStateManager$class_1039;
 		ARG 0 index
 	CLASS class_1017 BlendFuncState
+		FIELD field_1_3543 opAlpha I
+		FIELD field_1_3544 opRgb I
 		FIELD field_5045 capState Lcom/mojang/blaze3d/opengl/GlStateManager$class_1018;
 		FIELD field_5046 dstFactorAlpha I
 		FIELD field_5047 srcFactorAlpha I

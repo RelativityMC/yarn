@@ -1,8 +1,0 @@
-CLASS net/minecraft/class_9974 net/minecraft/client/render/VertexRendering
-	METHOD method_62299 (Lorg/joml/Vector3f;Lnet/minecraft/class_4588;Lnet/minecraft/class_4587$class_4665;IFDDDDDD)V
-		ARG 5 minX
-		ARG 7 minY
-		ARG 9 minZ
-		ARG 11 maxX
-		ARG 13 maxY
-		ARG 15 maxZ

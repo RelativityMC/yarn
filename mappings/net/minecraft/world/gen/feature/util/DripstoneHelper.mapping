@@ -1,6 +1,20 @@
 CLASS net/minecraft/class_5726 net/minecraft/world/gen/feature/util/DripstoneHelper
+	METHOD method_1_4611 canSupportSpeleothem (Lnet/minecraft/class_2680;Lnet/minecraft/class_2248;Lnet/minecraft/class_6885;)Z
+		ARG 0 state
+		ARG 1 baseBlock
+		ARG 2 replaceableBlock
+	METHOD method_1_4612 canSupportLargeDripstone (Lnet/minecraft/class_2680;Lnet/minecraft/class_2248;Lnet/minecraft/class_6885;)Z
+		ARG 0 state
+		ARG 1 baseBlock
+		ARG 2 replaceableBlocks
+	METHOD method_1_4613 generateDripstoneBlock (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;Lnet/minecraft/class_2248;Lnet/minecraft/class_6885;)Z
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 baseBlock
+		ARG 3 replaceableBlocks
 	METHOD method_33005 scaleHeightFromRadius (DDDD)D
 		ARG 0 radius
+		ARG 2 scale
 		ARG 4 heightScale
 		ARG 6 bluntness
 	METHOD method_33006 canGenerate (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;)Z
@@ -12,20 +26,25 @@ CLASS net/minecraft/class_5726 net/minecraft/world/gen/feature/util/DripstoneHel
 		ARG 0 world
 		ARG 1 pos
 		ARG 2 height
-	METHOD method_33010 generatePointedDripstone (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;IZLnet/minecraft/class_2248;Lnet/minecraft/class_2248;Lnet/minecraft/class_6885;)V
+	METHOD method_33010 generateSpeleothem (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;IZLnet/minecraft/class_2248;Lnet/minecraft/class_2248;Lnet/minecraft/class_6885;)V
 		ARG 0 world
 		ARG 1 pos
 		ARG 2 direction
 		ARG 3 height
 		ARG 4 merge
+		ARG 5 baseBlock
+		ARG 6 pointedBlock
+		ARG 7 replaceableBlocks
 	METHOD method_33012 getDripstoneThickness (Lnet/minecraft/class_2350;IZLjava/util/function/Consumer;Lnet/minecraft/class_2248;)V
 		ARG 0 direction
 		ARG 1 height
 		ARG 2 merge
 		ARG 3 callback
+		ARG 4 block
 	METHOD method_33013 getState (Lnet/minecraft/class_2350;Lnet/minecraft/class_5691;Lnet/minecraft/class_2248;)Lnet/minecraft/class_2680;
 		ARG 0 direction
 		ARG 1 thickness
+		ARG 2 block
 	METHOD method_33014 canGenerate (Lnet/minecraft/class_2680;)Z
 		ARG 0 state
 	METHOD method_33388 canGenerateOrLava (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;)Z

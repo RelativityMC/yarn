@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_1_716 net/minecraft/client/vulkan/VulkanTextureView
+	FIELD field_1_3674 closed Z
+	FIELD field_1_3675 device Lnet/minecraft/class_1_679;
+	FIELD field_1_3676 rawImageView J
+	METHOD <init> (Lnet/minecraft/class_1_679;Lnet/minecraft/class_1_703;II)V
+		ARG 1 device
+		ARG 2 texture
+		ARG 3 baseMipLevel
+		ARG 4 mipLevel
+	METHOD method_1_4279 getRawImageView ()J

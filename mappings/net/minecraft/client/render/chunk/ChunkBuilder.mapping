@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 	FIELD field_1_1971 geometryByBlockRenderLayer Ljava/util/Map;
 	FIELD field_1_1972 lock Ljava/util/concurrent/locks/ReentrantLock;
+	FIELD field_1_3813 chunkStagingBuffer Lnet/minecraft/class_1_686;
 	FIELD field_18766 cameraPosition Ljava/util/concurrent/atomic/AtomicReference;
 	FIELD field_20828 buffers Lnet/minecraft/class_750;
 	FIELD field_20830 executor Lnet/minecraft/class_10207;
@@ -15,12 +16,15 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 		ARG 2 worldRenderer
 		ARG 3 executor
 		ARG 4 bufferBuilderStorage
+		ARG 5 sectionBuilder
 	METHOD method_1_2401 getOffsetGeometryBuffers (Lnet/minecraft/class_11517;Lnet/minecraft/class_11515;)Lnet/minecraft/class_846$class_1_342;
 		ARG 1 renderData
 		ARG 2 blockRenderLayer
 	METHOD method_1_2403 lock ()V
 	METHOD method_1_2404 unlock ()V
 	METHOD method_1_2405 uploadGlobalBuffers ()V
+	METHOD method_1_4615 (Lnet/minecraft/class_11515;)Lnet/minecraft/class_846$class_1_343;
+		ARG 1 blockRenderLayer
 	METHOD method_3619 stop ()V
 	METHOD method_3622 getDebugString ()Ljava/lang/String;
 	METHOD method_3627 rebuild (Lnet/minecraft/class_846$class_851;Lnet/minecraft/class_6850;)V
@@ -31,6 +35,7 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 		ARG 1 cameraPosition
 	METHOD method_22752 setWorld (Lnet/minecraft/class_638;Lnet/minecraft/class_9810;)V
 		ARG 1 world
+		ARG 2 sectionBuilder
 	METHOD method_22756 send (Lnet/minecraft/class_846$class_851$class_4577;)V
 		ARG 1 task
 	METHOD method_22763 scheduleRunTasks ()V
@@ -64,11 +69,17 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 		METHOD method_1_2407 disposeIfAllBuffersUploaded (Lnet/minecraft/class_11516;)V
 			ARG 1 data
 		METHOD method_1_2408 onIndexBufferUploaded (Lnet/minecraft/class_11516;Lnet/minecraft/class_11515;Z)V
+			ARG 1 data
 			ARG 2 blockRenderLayer
 			ARG 3 noVertex
+		METHOD method_1_2409 (Lnet/minecraft/class_11515;Lnet/minecraft/class_11516;)V
+			ARG 2 data
+		METHOD method_1_2410 (Lnet/minecraft/class_11515;ZLnet/minecraft/class_11516;)V
+			ARG 3 data
 		METHOD method_1_2411 dispose (Lnet/minecraft/class_11517;)V
 			ARG 1 data
 		METHOD method_1_2412 onVertexBufferUploaded (Lnet/minecraft/class_11516;Lnet/minecraft/class_11515;)V
+			ARG 1 data
 			ARG 2 blockRenderLayer
 		METHOD method_3651 isChunkNonEmpty (J)Z
 			ARG 1 sectionPos

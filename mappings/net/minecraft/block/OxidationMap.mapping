@@ -28,7 +28,7 @@ CLASS net/minecraft/class_1_758 net/minecraft/block/OxidationMap
 		ARG 2 waxedBlockFactory
 		ARG 3 weatheringBlockFactory
 		ARG 4 settingsFactory
-	METHOD method_1_4600 ofItems (Lnet/minecraft/class_1_758;Ljava/util/function/Function;)Lnet/minecraft/class_1_758;
+	METHOD method_1_4600 ofBlockItems (Lnet/minecraft/class_1_758;Ljava/util/function/Function;)Lnet/minecraft/class_1_758;
 		ARG 0 block
 		ARG 1 itemFactory
 	METHOD method_1_4601 ofBlock (Lnet/minecraft/class_5955$class_5811;Ljava/lang/Boolean;Ljava/util/function/BiFunction;Lorg/apache/commons/lang3/function/TriFunction;Ljava/util/function/BiFunction;Ljava/util/function/BiFunction;Ljava/util/function/Function;)Lnet/minecraft/class_2248;

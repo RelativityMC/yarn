@@ -1,5 +1,60 @@
 CLASS net/minecraft/class_1802 net/minecraft/item/Items
 	FIELD field_1_1138 GOLDEN_DANDELION Lnet/minecraft/class_1792;
+	FIELD field_1_3295 BANNERS Lnet/minecraft/class_1_727;
+	FIELD field_1_3296 BEDS Lnet/minecraft/class_1_727;
+	FIELD field_1_3297 CARPETS Lnet/minecraft/class_1_727;
+	FIELD field_1_3298 CHISELED_CINNABAR Lnet/minecraft/class_1792;
+	FIELD field_1_3299 CHISELED_COPPERS Lnet/minecraft/class_1_758;
+	FIELD field_1_3300 CHISELED_SULFUR Lnet/minecraft/class_1792;
+	FIELD field_1_3301 CINNABAR Lnet/minecraft/class_1792;
+	FIELD field_1_3302 CINNABAR_BRICKS Lnet/minecraft/class_1792;
+	FIELD field_1_3303 CINNABAR_BRICK_SLAB Lnet/minecraft/class_1792;
+	FIELD field_1_3304 CINNABAR_BRICK_STAIRS Lnet/minecraft/class_1792;
+	FIELD field_1_3305 CINNABAR_BRICK_WALL Lnet/minecraft/class_1792;
+	FIELD field_1_3306 CINNABAR_SLAB Lnet/minecraft/class_1792;
+	FIELD field_1_3307 CINNABAR_STAIRS Lnet/minecraft/class_1792;
+	FIELD field_1_3308 CINNABAR_WALL Lnet/minecraft/class_1792;
+	FIELD field_1_3309 CONCRETES Lnet/minecraft/class_1_727;
+	FIELD field_1_3310 CONCRETE_POWDERS Lnet/minecraft/class_1_727;
+	FIELD field_1_3311 COPPER_BLOCKS Lnet/minecraft/class_1_758;
+	FIELD field_1_3312 COPPER_BULBS Lnet/minecraft/class_1_758;
+	FIELD field_1_3313 COPPER_CHESTS Lnet/minecraft/class_1_758;
+	FIELD field_1_3314 COPPER_DOORS Lnet/minecraft/class_1_758;
+	FIELD field_1_3315 COPPER_GOLEM_STATUES Lnet/minecraft/class_1_758;
+	FIELD field_1_3316 COPPER_GRATES Lnet/minecraft/class_1_758;
+	FIELD field_1_3317 COPPER_TRAPDOORS Lnet/minecraft/class_1_758;
+	FIELD field_1_3318 CUT_COPPERS Lnet/minecraft/class_1_758;
+	FIELD field_1_3319 CUT_COPPER_SLABS Lnet/minecraft/class_1_758;
+	FIELD field_1_3320 CUT_COPPER_STAIRS Lnet/minecraft/class_1_758;
+	FIELD field_1_3321 BUNDLE Lnet/minecraft/class_1_727;
+	FIELD field_1_3322 DYED_CANDLES Lnet/minecraft/class_1_727;
+	FIELD field_1_3323 DYED_SHULKER_BOXES Lnet/minecraft/class_1_727;
+	FIELD field_1_3324 DYED_TERRACOTTAS Lnet/minecraft/class_1_727;
+	FIELD field_1_3325 DYES Lnet/minecraft/class_1_727;
+	FIELD field_1_3326 GLAZED_TERRACOTTAS Lnet/minecraft/class_1_727;
+	FIELD field_1_3327 HARNESSES Lnet/minecraft/class_1_727;
+	FIELD field_1_3328 LIGHTNING_RODS Lnet/minecraft/class_1_758;
+	FIELD field_1_3329 POLISHED_CINNABAR Lnet/minecraft/class_1792;
+	FIELD field_1_3330 POLISHED_CINNABAR_SLAB Lnet/minecraft/class_1792;
+	FIELD field_1_3331 POLISHED_CINNABAR_STAIRS Lnet/minecraft/class_1792;
+	FIELD field_1_3332 POLISHED_CINNABAR_WALL Lnet/minecraft/class_1792;
+	FIELD field_1_3333 POLISHED_SULFUR Lnet/minecraft/class_1792;
+	FIELD field_1_3334 POLISHED_SULFUR_SLAB Lnet/minecraft/class_1792;
+	FIELD field_1_3335 POLISHED_SULFUR_STAIRS Lnet/minecraft/class_1792;
+	FIELD field_1_3336 POLISHED_SULFUR_WALL Lnet/minecraft/class_1792;
+	FIELD field_1_3337 POTENT_SULFUR Lnet/minecraft/class_1792;
+	FIELD field_1_3338 STAINED_GLASSES Lnet/minecraft/class_1_727;
+	FIELD field_1_3339 STAINED_GLASS_PANES Lnet/minecraft/class_1_727;
+	FIELD field_1_3340 SULFUR Lnet/minecraft/class_1792;
+	FIELD field_1_3341 SULFUR_BRICKS Lnet/minecraft/class_1792;
+	FIELD field_1_3342 SULFUR_BRICK_SLAB Lnet/minecraft/class_1792;
+	FIELD field_1_3343 SULFUR_BRICK_STAIRS Lnet/minecraft/class_1792;
+	FIELD field_1_3344 SULFUR_BRICK_WALL Lnet/minecraft/class_1792;
+	FIELD field_1_3346 SULFUR_CUBE_SPAWN_EGG Lnet/minecraft/class_1792;
+	FIELD field_1_3347 SULFUR_SLAB Lnet/minecraft/class_1792;
+	FIELD field_1_3348 SULFUR_STAIRS Lnet/minecraft/class_1792;
+	FIELD field_1_3349 SULFUR_WALL Lnet/minecraft/class_1792;
+	FIELD field_1_3350 WOOLS Lnet/minecraft/class_1_727;
 	FIELD field_8047 JUNGLE_PRESSURE_PLATE Lnet/minecraft/class_1792;
 	FIELD field_8048 SPRUCE_BUTTON Lnet/minecraft/class_1792;
 	FIELD field_8051 DEAD_BUBBLE_CORAL Lnet/minecraft/class_1792;
@@ -790,6 +845,91 @@ CLASS net/minecraft/class_1802 net/minecraft/item/Items
 	FIELD field_63383 ZOMBIE_NAUTILUS_SPAWN_EGG Lnet/minecraft/class_1792;
 	FIELD field_64145 CAMEL_HUSK_SPAWN_EGG Lnet/minecraft/class_1792;
 	FIELD field_64146 PARCHED_SPAWN_EGG Lnet/minecraft/class_1792;
+	METHOD method_1_838 (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_10710;
+		ARG 0 registries
+	METHOD method_1_2917 (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_10215;
+		ARG 0 registries
+	METHOD method_1_2918 (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_10707;
+		ARG 0 registries
+	METHOD method_1_2919 (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_6885;
+		ARG 0 registries
+	METHOD method_1_2920 (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_6885;
+		ARG 0 registries
+	METHOD method_1_2921 (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_6885;
+		ARG 0 registries
+	METHOD method_1_2922 (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_6885;
+		ARG 0 registries
+	METHOD method_1_2923 (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_6885;
+		ARG 0 registries
+	METHOD method_1_2924 (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_6885;
+		ARG 0 registries
+	METHOD method_1_2925 (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_6885;
+		ARG 0 registries
+	METHOD method_1_2926 (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_6885;
+		ARG 0 registries
+	METHOD method_1_2927 (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_6885;
+		ARG 0 registries
+	METHOD method_1_2928 (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_6885;
+		ARG 0 registries
+	METHOD method_1_3956 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
+		ARG 0 block
+		ARG 1 color
+	METHOD method_1_3957 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
+		ARG 0 settings
+	METHOD method_1_3958 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
+		ARG 0 settings
+	METHOD method_1_3959 (Ljava/lang/String;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
+		ARG 0 path
+		ARG 1 color
+	METHOD method_1_3960 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
+		ARG 0 color
+	METHOD method_1_3961 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
+		ARG 0 block
+		ARG 1 color
+	METHOD method_1_3962 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
+		ARG 0 block
+		ARG 1 color
+	METHOD method_1_3963 (Lnet/minecraft/class_1767;Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
+		ARG 1 block_
+		ARG 2 settings
+	METHOD method_1_3964 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
+		ARG 0 settings
+	METHOD method_1_3965 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
+		ARG 0 block
+		ARG 1 item
+	METHOD method_1_3966 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_1792;
+		ARG 0 block
+	METHOD method_1_3967 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
+		ARG 0 block
+		ARG 1 color
+	METHOD method_1_3968 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
+		ARG 0 block
+		ARG 1 color
+	METHOD method_1_3969 (Lnet/minecraft/class_1767;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
+		ARG 1 settings
+	METHOD method_1_3970 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
+		ARG 0 block
+		ARG 1 color
+	METHOD method_1_3971 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
+		ARG 0 block
+		ARG 1 color
+	METHOD method_1_3972 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
+		ARG 0 block
+		ARG 1 color
+	METHOD method_1_3973 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
+		ARG 0 block
+		ARG 1 color
+	METHOD method_1_3974 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
+		ARG 0 block
+		ARG 1 color
+	METHOD method_1_3975 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
+		ARG 0 block
+		ARG 1 color
+	METHOD method_1_3976 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_1792;
+		ARG 0 block
+	METHOD method_1_3977 (Ljava/lang/String;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
+		ARG 0 path
+		ARG 1 color
 	METHOD method_7989 register (Lnet/minecraft/class_2248;)Lnet/minecraft/class_1792;
 		ARG 0 block
 	METHOD method_7990 register (Ljava/lang/String;)Lnet/minecraft/class_1792;

@@ -1,3 +1,29 @@
 CLASS net/minecraft/class_1_63 net/minecraft/village/RebalancedVillagerTrades
 	METHOD method_1_704 bootstrap (Lnet/minecraft/class_7891;)Lnet/minecraft/class_6880;
 		ARG 0 registries
+	METHOD method_1_4622 level1EnchantedBookSale (Lnet/minecraft/class_7871;Lnet/minecraft/class_6885;Lnet/minecraft/class_6885;Lnet/minecraft/class_6885;)Lnet/minecraft/class_1_30;
+		ARG 0 items
+		ARG 1 doubleTradePriceEnchantments
+		ARG 2 allowedVillagerTypes
+		ARG 3 allowedEnchantments
+	METHOD method_1_4623 level2EnchantedBookSale (Lnet/minecraft/class_7871;Lnet/minecraft/class_6885;Lnet/minecraft/class_6885;Lnet/minecraft/class_6885;)Lnet/minecraft/class_1_30;
+		ARG 0 items
+		ARG 1 doubleTradePriceEnchantments
+		ARG 2 allowedVillagerTypes
+		ARG 3 allowedEnchantments
+	METHOD method_1_4624 level3EnchantedBookSale (Lnet/minecraft/class_7871;Lnet/minecraft/class_6885;Lnet/minecraft/class_6885;Lnet/minecraft/class_6885;)Lnet/minecraft/class_1_30;
+		ARG 0 items
+		ARG 1 doubleTradePriceEnchantments
+		ARG 2 allowedVillagerTypes
+		ARG 3 allowedEnchantments
+	METHOD method_1_4625 level5EnchantedBookSale (Lnet/minecraft/class_7871;Lnet/minecraft/class_6885;Lnet/minecraft/class_6885;Lnet/minecraft/class_6880;I)Lnet/minecraft/class_1_30;
+		ARG 0 items
+		ARG 1 doubleTradePriceEnchantments
+		ARG 2 allowedVillagerTypes
+		ARG 3 enchantment
+		ARG 4 level
+	METHOD method_1_4626 level5EnchantedBookSale (Lnet/minecraft/class_7871;Lnet/minecraft/class_6885;Lnet/minecraft/class_6885;Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_30;
+		ARG 0 item
+		ARG 1 doubleTradePriceEnchantments
+		ARG 2 allowedVillagerTypes
+		ARG 3 enchantment

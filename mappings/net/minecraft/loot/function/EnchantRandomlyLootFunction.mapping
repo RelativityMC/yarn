@@ -31,6 +31,9 @@ CLASS net/minecraft/class_109 net/minecraft/loot/function/EnchantRandomlyLootFun
 		FIELD field_51794 options Ljava/util/Optional;
 		FIELD field_51795 onlyCompatible Z
 		METHOD method_1_762 includeAdditionalCostComponent ()Lnet/minecraft/class_109$class_4954;
+		METHOD method_1_763 options2 (Lnet/minecraft/class_6885;)Lnet/minecraft/class_109$class_4954;
+			COMMENT Mojang, what the {@code ResourceLocation} is this?
+			ARG 1 options
 		METHOD method_25992 option (Lnet/minecraft/class_6880;)Lnet/minecraft/class_109$class_4954;
 			ARG 1 enchantment
 		METHOD method_60293 options (Lnet/minecraft/class_6885;)Lnet/minecraft/class_109$class_4954;

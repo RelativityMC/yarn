@@ -23,6 +23,7 @@ CLASS net/minecraft/class_12301 net/minecraft/world/attribute/timeline/EasingTyp
 	CLASS class_12302 CubicBezier
 		COMMENT A cubic Bézier curve used for interpolation. The first and last control points
 		COMMENT are fixed at (0, 0) and at (1, 1).
+		FIELD field_1_3287 MAX_ADJUSTMENT_PER_NEWTON_ITERATION F
 		FIELD field_64302 MAX_NEWTON_ITERATIONS I
 		FIELD field_64303 controlPoints Lnet/minecraft/class_12301$class_12304;
 		FIELD field_64304 xParams Lnet/minecraft/class_12301$class_12302$class_12303;
@@ -31,6 +32,11 @@ CLASS net/minecraft/class_12301 net/minecraft/world/attribute/timeline/EasingTyp
 			ARG 1 controlPoints
 		METHOD equals (Ljava/lang/Object;)Z
 			ARG 1 other
+		METHOD method_1_3933 getParameterOfX (F)F
+			ARG 1 x
+		METHOD method_1_3934 getParameterOfXByBinarySearch (FF)F
+			ARG 1 x
+			ARG 2 t
 		METHOD method_76362 (Lnet/minecraft/class_12301$class_12302;)Lnet/minecraft/class_12301$class_12304;
 			ARG 0 easing
 		METHOD method_76363 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

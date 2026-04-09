@@ -15,5 +15,13 @@ CLASS net/minecraft/class_5585 net/minecraft/world/gen/feature/GeodeLayerConfig
 		ARG 4 middleLayerProvider
 		ARG 5 outerLayerProvider
 		ARG 6 innerBlocks
+	METHOD comp_1_565 alternateInnerLayerProvider ()Lnet/minecraft/class_4651;
+	METHOD comp_1_566 cannotReplace ()Lnet/minecraft/class_6885;
+	METHOD comp_1_567 fillingProvider ()Lnet/minecraft/class_4651;
+	METHOD comp_1_568 innerLayerProvider ()Lnet/minecraft/class_4651;
+	METHOD comp_1_569 innerBlocks ()Ljava/util/List;
+	METHOD comp_1_570 invalidBlocks ()Lnet/minecraft/class_6885;
+	METHOD comp_1_571 middleLayerProvider ()Lnet/minecraft/class_4651;
+	METHOD comp_1_572 outerLayerProvider ()Lnet/minecraft/class_4651;
 	METHOD method_31887 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance

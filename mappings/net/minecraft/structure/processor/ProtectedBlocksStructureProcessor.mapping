@@ -1,2 +1,3 @@
 CLASS net/minecraft/class_6378 net/minecraft/structure/processor/ProtectedBlocksStructureProcessor
 	FIELD comp_1_617 protectedBlocksTag Lnet/minecraft/class_6885;
+	METHOD comp_1_617 protectedBlocksTag ()Lnet/minecraft/class_6885;

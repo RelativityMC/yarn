@@ -20,5 +20,15 @@ CLASS net/minecraft/class_5927 net/minecraft/world/gen/feature/VegetationPatchFe
 		ARG 8 vegetationChance
 		ARG 9 horizontalRadius
 		ARG 10 extraEdgeColumnChance
+	METHOD comp_1_621 depth ()Lnet/minecraft/class_6017;
+	METHOD comp_1_622 extraBottomBlockChance ()F
+	METHOD comp_1_623 extraEdgeColumnChance ()F
+	METHOD comp_1_624 groundState ()Lnet/minecraft/class_4651;
+	METHOD comp_1_625 replaceable ()Lnet/minecraft/class_6885;
+	METHOD comp_1_626 surface ()Lnet/minecraft/class_5932;
+	METHOD comp_1_627 vegetationChance ()F
+	METHOD comp_1_628 vegetationFeature ()Lnet/minecraft/class_6880;
+	METHOD comp_1_629 verticalRange ()I
+	METHOD comp_1_630 horizontalRadius ()Lnet/minecraft/class_6017;
 	METHOD method_34348 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance

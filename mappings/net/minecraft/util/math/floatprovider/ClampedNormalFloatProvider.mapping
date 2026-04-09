@@ -1,14 +1,16 @@
 CLASS net/minecraft/class_5861 net/minecraft/util/math/floatprovider/ClampedNormalFloatProvider
+	FIELD comp_1_370 max F
+	FIELD comp_1_371 min F
 	FIELD comp_1_383 deviation F
-	FIELD comp_1_384 max F
 	FIELD comp_1_385 mean F
-	FIELD comp_1_386 min F
 	FIELD field_28998 CODEC Lcom/mojang/serialization/MapCodec;
 	METHOD <init> (FFFF)V
 		ARG 1 mean
 		ARG 2 deviation
 		ARG 3 min
 		ARG 4 max
+	METHOD comp_1_383 deviation ()F
+	METHOD comp_1_385 mean ()F
 	METHOD method_33900 create (FFFF)Lnet/minecraft/class_5861;
 		ARG 0 mean
 		ARG 1 deviation

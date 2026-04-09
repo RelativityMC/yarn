@@ -2,3 +2,4 @@ CLASS net/minecraft/class_12073 net/minecraft/client/render/state/BreakingBlockR
 	FIELD comp_1_402 breakProgress I
 	METHOD <init> (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;I)V
 		ARG 3 breakProgress
+	METHOD comp_1_402 breakProgress ()I

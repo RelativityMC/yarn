@@ -257,7 +257,7 @@ CLASS net/minecraft/class_2338 net/minecraft/util/math/BlockPos
 	CLASS 4 4
 		FIELD field_48434 pos Lnet/minecraft/class_2338$class_2339;
 		FIELD field_48435 index I
-	CLASS 5 5
+	CLASS 6 6
 		FIELD field_48440 directions [Lnet/minecraft/class_2350;
 		FIELD field_48441 pos Lnet/minecraft/class_2338$class_2339;
 		FIELD field_48442 maxDirectionChanges I
@@ -267,7 +267,7 @@ CLASS net/minecraft/class_2338 net/minecraft/util/math/BlockPos
 		FIELD field_48446 currentX I
 		FIELD field_48447 currentY I
 		FIELD field_48448 currentZ I
-	CLASS 6 6
+	CLASS 7 7
 		FIELD field_61950 pos Lnet/minecraft/class_2338$class_2339;
 		FIELD field_61951 deltaAxis1 I
 		FIELD field_61952 deltaAxis2 I

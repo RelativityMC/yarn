@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_6333 net/minecraft/util/math/intprovider/BiasedToBottomIntProvider
-	FIELD comp_1_381 max I
-	FIELD comp_1_382 min I
+	FIELD comp_1_345 max I
+	FIELD comp_1_346 min I
 	FIELD field_33443 CODEC Lcom/mojang/serialization/MapCodec;
 	METHOD <init> (II)V
 		ARG 1 min

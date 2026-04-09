@@ -26,5 +26,18 @@ CLASS net/minecraft/class_5926 net/minecraft/world/gen/feature/RootSystemFeature
 		ARG 11 hangingRootPlacementAttempts
 		ARG 12 allowedVerticalWaterForTree
 		ARG 13 predicate
+	METHOD comp_1_597 predicate ()Lnet/minecraft/class_6646;
+	METHOD comp_1_598 allowedVerticalWaterForTree ()I
+	METHOD comp_1_599 hangingRootPlacementAttempts ()I
+	METHOD comp_1_600 hangingRootRadius ()I
+	METHOD comp_1_601 hangingRootStateProvider ()Lnet/minecraft/class_4651;
+	METHOD comp_1_602 hangingRootVerticalSpan ()I
+	METHOD comp_1_603 requiredVerticalSpaceForTree ()I
+	METHOD comp_1_604 maxRootColumnHeight ()I
+	METHOD comp_1_605 rootPlacementAttempts ()I
+	METHOD comp_1_606 rootRadius ()I
+	METHOD comp_1_607 rootReplaceable ()Lnet/minecraft/class_6885;
+	METHOD comp_1_608 rootStateProvider ()Lnet/minecraft/class_4651;
+	METHOD comp_1_609 feature ()Lnet/minecraft/class_6880;
 	METHOD method_34332 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance

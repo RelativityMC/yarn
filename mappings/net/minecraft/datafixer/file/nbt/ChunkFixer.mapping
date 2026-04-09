@@ -6,15 +6,7 @@ CLASS net/minecraft/class_1_196 net/minecraft/datafixer/file/nbt/ChunkFixer
 		ARG 2 directory
 		ARG 3 datafixType
 		ARG 4 targetVersion
-	METHOD method_1_1715 (Lnet/minecraft/class_2487;Ljava/util/function/UnaryOperator;Ljava/util/Optional;)Ljava/util/Optional;
-		ARG 3 chunkNbt
-	METHOD method_1_1716 (Lnet/minecraft/class_2487;Lnet/minecraft/class_2487;)Lnet/minecraft/class_2487;
-		ARG 2 chunkNbt
-	METHOD method_1_1717 (Lnet/minecraft/class_1923;Ljava/util/Optional;)Ljava/util/concurrent/CompletionStage;
-		ARG 2 chunkNbt
-	METHOD method_1_1718 (Lnet/minecraft/class_1923;Lnet/minecraft/class_2487;)Ljava/util/concurrent/CompletableFuture;
-		ARG 2 chunkNbt
-	METHOD method_1_1719 update (Lnet/minecraft/class_1923;Lnet/minecraft/class_2487;Ljava/util/function/UnaryOperator;)V
+	METHOD method_1_1719 update (Lnet/minecraft/class_1923;Lnet/minecraft/class_2487;Ljava/util/function/UnaryOperator;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 chunkPos
 		ARG 2 context
 		ARG 3 f

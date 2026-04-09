@@ -36,6 +36,7 @@ CLASS net/minecraft/class_1_296 net/minecraft/client/render/UberBuffer
 		ARG 1 allocation
 	CLASS class_1_297 StagedAllocation
 		FIELD comp_1_498 uploadCallback Lnet/minecraft/class_1_296$class_1_302;
+		METHOD comp_1_498 uploadCallback ()Lnet/minecraft/class_1_296$class_1_302;
 	CLASS class_1_298 Heap
 		FIELD field_1_1774 buffer Lcom/mojang/blaze3d/buffers/GpuBuffer;
 		METHOD <init> (JLcom/mojang/blaze3d/systems/GpuDevice;ILjava/lang/String;)V

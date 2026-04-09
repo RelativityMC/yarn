@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_1_466 net/minecraft/text/TextParseContext
+	FIELD comp_1_407 getEntity Lnet/minecraft/class_1297;
+	FIELD comp_1_411 getCommandSource Lnet/minecraft/class_2168;
 	METHOD comp_1_407 getEntity ()Lnet/minecraft/class_1297;
 	METHOD comp_1_411 getCommandSource ()Lnet/minecraft/class_2168;
 	METHOD method_1_2945 of (Lnet/minecraft/class_2168;)Lnet/minecraft/class_1_466;

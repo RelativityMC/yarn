@@ -8,9 +8,8 @@ CLASS com/mojang/blaze3d/systems/RenderSystem
 		ARG 3 height
 	METHOD getSequentialBuffer (Lcom/mojang/blaze3d/vertex/VertexFormat$class_5596;)Lcom/mojang/blaze3d/systems/RenderSystem$class_5590;
 		ARG 0 drawMode
-	METHOD initBackendSystem (Lnet/minecraft/class_1_489;)Lnet/minecraft/class_7576$class_7577;
+	METHOD initBackendSystem ()Lnet/minecraft/class_7576$class_7577;
 		COMMENT {@return a {@link TimeSupplier} that retrieves elapsed time from the backend}
-		ARG 0 settings
 	METHOD initRenderer (Lcom/mojang/blaze3d/systems/GpuDevice;)V
 		ARG 0 device
 	METHOD lambda$static$0 (Lit/unimi/dsi/fastutil/ints/IntConsumer;I)V

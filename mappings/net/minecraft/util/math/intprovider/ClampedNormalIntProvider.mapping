@@ -9,6 +9,8 @@ CLASS net/minecraft/class_6728 net/minecraft/util/math/intprovider/ClampedNormal
 		ARG 2 deviation
 		ARG 3 min
 		ARG 4 max
+	METHOD comp_1_376 deviation ()F
+	METHOD comp_1_378 mean ()F
 	METHOD method_39156 of (FFII)Lnet/minecraft/class_6728;
 		ARG 0 mean
 		ARG 1 deviation

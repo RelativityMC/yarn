@@ -42,7 +42,6 @@ CLASS net/minecraft/class_10865 net/minecraft/client/gl/GlBackend
 		ARG 2 sourceGetter
 	METHOD method_68401 getBufferManager ()Lnet/minecraft/class_10874;
 	METHOD method_68402 getVertexBufferManager ()Lnet/minecraft/class_10869;
-	METHOD method_68403 determineMaxTextureSize ()I
 	METHOD method_71032 getGpuBufferManager ()Lnet/minecraft/class_11266;
 	METHOD method_72699 applyAmdCleanupHack ()V
 	METHOD method_76229 compileProgram (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/class_12289;)Lnet/minecraft/class_5944;

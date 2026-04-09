@@ -1,31 +1,24 @@
 CLASS net/minecraft/class_1_702 net/minecraft/client/vulkan/VulkanSurfaceBackend
-	FIELD field_1_3588 NO_VSYNC_PREFERRED_PRESENT_MODES [I
 	FIELD field_1_3589 NOT_ACQUIRED I
-	FIELD field_1_3590 VSYNC_PREFERRED_PRESENT_MODES [I
 	FIELD field_1_3591 frameSemaphores [J
 	FIELD field_1_3592 currentFrameSemaphoreIndex I
 	FIELD field_1_3593 acquiredSwapchainImageIndex I
 	FIELD field_1_3594 device Lnet/minecraft/class_1_679;
 	FIELD field_1_3595 nextAcquireException Lnet/minecraft/class_1_707;
-	FIELD field_1_3596 noVsyncPresentMode I
 	FIELD field_1_3597 graphicsAndComputeQueue Lorg/lwjgl/vulkan/VkQueue;
 	FIELD field_1_3598 swapchainImageSemaphores [J
 	FIELD field_1_3599 rawSurface J
 	FIELD field_1_3600 height I
-	FIELD field_1_3601 surfaceFormat I
 	FIELD field_1_3602 swapchainImages Lit/unimi/dsi/fastutil/longs/LongList;
 	FIELD field_1_3603 swapchain J
 	FIELD field_1_3604 swapchainOutdated Z
 	FIELD field_1_3605 needsReconfigure Z
 	FIELD field_1_3606 width I
-	FIELD field_1_3607 vsyncPresentMode I
 	METHOD <init> (Lnet/minecraft/class_1_679;J)V
 		ARG 1 device
 		ARG 2 window
 	METHOD method_1_4205 freeCurrentSwapchain ()V
-	METHOD method_1_4206 selectPresentMode ([ILjava/nio/IntBuffer;)I
-		ARG 1 preferredPresentModes
-		ARG 2 supportedPresentModes
+	METHOD method_1_4206 selectPresentMode (Ljava/nio/IntBuffer;)Ljava/util/Set;
 	METHOD method_1_4207 findCompatibleSurfaceFormat (Lorg/lwjgl/vulkan/VkSurfaceFormatKHR$Buffer;)Lorg/lwjgl/vulkan/VkSurfaceFormatKHR;
 		ARG 1 surfaceFormats
 	METHOD method_1_4208 reportSurfaceError (ILjava/lang/String;)V

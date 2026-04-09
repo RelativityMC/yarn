@@ -4,6 +4,6 @@ CLASS net/minecraft/class_6016 net/minecraft/util/math/intprovider/ConstantIntPr
 	FIELD field_29943 CODEC Lcom/mojang/serialization/MapCodec;
 	METHOD <init> (I)V
 		ARG 1 value
-	METHOD comp_1_350 getValue ()I
+	METHOD comp_1_350 value ()I
 	METHOD method_34998 create (I)Lnet/minecraft/class_6016;
 		ARG 0 value

@@ -10,11 +10,10 @@ CLASS net/minecraft/class_1_686 net/minecraft/client/render/StagingBuffer
 		ARG 5 fromStart
 		ARG 7 size
 	METHOD method_1_2184 getData ()Ljava/nio/ByteBuffer;
-	METHOD method_1_4144 create (Ljava/lang/String;Lcom/mojang/blaze3d/systems/GpuDevice;ILnet/minecraft/class_11541;)Lnet/minecraft/class_1_686;
+	METHOD method_1_4144 create (Ljava/lang/String;Lcom/mojang/blaze3d/systems/GpuDevice;I)Lnet/minecraft/class_1_686;
 		ARG 0 name
 		ARG 1 devices
 		ARG 2 bufferSize
-		ARG 3 devicesInfo
 	METHOD method_1_4145 uploader (Lcom/mojang/blaze3d/systems/CommandEncoder;)Lnet/minecraft/class_1_686$class_1_688;
 		ARG 1 commandEncoder
 	METHOD method_1_4146 copyFrom (Ljava/nio/ByteBuffer;)Lnet/minecraft/class_1_686$class_1_687;

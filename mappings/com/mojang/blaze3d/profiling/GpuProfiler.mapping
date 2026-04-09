@@ -1,6 +1,16 @@
 CLASS net/minecraft/class_1_708 com/mojang/blaze3d/profiling/GpuProfiler
+	FIELD field_1_3634 NUM_TIMESTAMPS_IN_POOL I
 	FIELD field_1_3635 tracyGpuContext Lcom/mojang/jtracy/GpuContext;
+	FIELD field_1_3636 nextTimestampIndex I
 	FIELD field_1_3637 timestampQueryPool Lnet/minecraft/class_1_685;
+	FIELD field_1_3638 lastSubmitTimestampIndex I
 	METHOD <init> (Lcom/mojang/blaze3d/systems/GpuDevice;)V
 		ARG 1 device
 	METHOD method_1_4223 close ()V
+	METHOD method_1_4224 submitQueryTimestamps ()V
+	METHOD method_1_4225 nextTimestampIndex ()I
+	METHOD method_1_4226 endZone (Lcom/mojang/blaze3d/systems/CommandEncoder;)V
+		ARG 1 encoder
+	METHOD method_1_4227 beginZone (Lcom/mojang/blaze3d/systems/CommandEncoder;Ljava/lang/String;)V
+		ARG 1 encoder
+		ARG 2 name

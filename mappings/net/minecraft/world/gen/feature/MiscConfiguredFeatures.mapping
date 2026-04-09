@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_6804 net/minecraft/world/gen/feature/MiscConfiguredFeatures
+	FIELD field_1_3810 SULFUR_POOL Lnet/minecraft/class_5321;
+	FIELD field_1_3811 SULFUR_SPRING Lnet/minecraft/class_5321;
 	FIELD field_35800 ICE_SPIKE Lnet/minecraft/class_5321;
 	FIELD field_35801 ICE_PATCH Lnet/minecraft/class_5321;
 	FIELD field_35802 FOREST_ROCK Lnet/minecraft/class_5321;

@@ -21,6 +21,10 @@ CLASS net/minecraft/class_2591 net/minecraft/block/entity/BlockEntityType
 	METHOD <init> (Lnet/minecraft/class_2591$class_5559;Ljava/util/Set;)V
 		ARG 1 factory
 		ARG 2 blocks
+	METHOD method_1_4552 create (Ljava/lang/String;Lnet/minecraft/class_2591$class_5559;Ljava/util/List;)Lnet/minecraft/class_2591;
+		ARG 0 id
+		ARG 1 factory
+		ARG 2 blocks
 	METHOD method_11030 create (Ljava/lang/String;Lnet/minecraft/class_2591$class_5559;[Lnet/minecraft/class_2248;)Lnet/minecraft/class_2591;
 		ARG 0 id
 		ARG 1 factory

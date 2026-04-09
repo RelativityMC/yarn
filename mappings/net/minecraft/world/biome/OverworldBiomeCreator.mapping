@@ -2,6 +2,9 @@ CLASS net/minecraft/class_5478 net/minecraft/world/biome/OverworldBiomeCreator
 	FIELD field_35340 DEFAULT_WATER_COLOR I
 	FIELD field_51968 SWAMP_SKELETON_WEIGHT I
 	FIELD field_57111 DEFAULT_DRY_FOLIAGE_COLOR I
+	METHOD method_1_4442 createSulfurCaves (Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;)Lnet/minecraft/class_1959;
+		ARG 0 featureLookup
+		ARG 1 carverLookup
 	METHOD method_30683 createJungle (Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;)Lnet/minecraft/class_1959;
 		ARG 0 featureLookup
 		ARG 1 carverLookup

@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_3864 net/minecraft/world/gen/feature/DefaultBiomeFeatures
+	METHOD method_1_4420 addSulfurCavesDecoration (Lnet/minecraft/class_5485$class_5495;)V
+		ARG 0 builder
 	METHOD method_16957 addWindsweptHillsTrees (Lnet/minecraft/class_5485$class_5495;)V
 		ARG 0 builder
 	METHOD method_16958 addWindsweptForestTrees (Lnet/minecraft/class_5485$class_5495;)V

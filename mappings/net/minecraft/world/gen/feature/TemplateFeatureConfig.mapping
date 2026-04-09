@@ -1,1 +1,8 @@
 CLASS net/minecraft/class_1_770 net/minecraft/world/gen/feature/TemplateFeatureConfig
+	METHOD method_1_4651 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	CLASS class_1_771 RotatableTemplate
+		METHOD method_1_4652 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+		METHOD method_1_4653 free (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_770$class_1_771;
+			ARG 0 id

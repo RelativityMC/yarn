@@ -400,6 +400,15 @@ group int gl_buffer_mask
 
 # Target definition
 
+group int
+	@scope method com.mojang.blaze3d.opengl.GlConst <clinit> ()V
+	org.lwjgl.opengl.GL13.GL_TEXTURE_CUBE_MAP_POSITIVE_X
+	org.lwjgl.opengl.GL13.GL_TEXTURE_CUBE_MAP_NEGATIVE_X
+	org.lwjgl.opengl.GL13.GL_TEXTURE_CUBE_MAP_POSITIVE_Y
+	org.lwjgl.opengl.GL13.GL_TEXTURE_CUBE_MAP_NEGATIVE_Y
+	org.lwjgl.opengl.GL13.GL_TEXTURE_CUBE_MAP_POSITIVE_Z
+	org.lwjgl.opengl.GL13.GL_TEXTURE_CUBE_MAP_NEGATIVE_Z
+
 target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/pipeline/DepthTest;)I
 	return gl_depth_test_function
 

@@ -57,6 +57,7 @@ group int gl_filter
 group int gl_tex_target
 	com.mojang.blaze3d.opengl.GlConst.GL_TEXTURE_2D
 	com.mojang.blaze3d.opengl.GlConst.GL_PROXY_TEXTURE_2D
+	org.lwjgl.opengl.GL13.GL_TEXTURE_CUBE_MAP
 
 group int gl_tex_parameter_pname
 	com.mojang.blaze3d.opengl.GlConst.GL_TEXTURE_MAG_FILTER
@@ -250,6 +251,8 @@ group int gl_enable_state
 	org.lwjgl.opengl.GL11.GL_POLYGON_OFFSET_LINE
 	org.lwjgl.opengl.GL11.GL_COLOR_LOGIC_OP
 	org.lwjgl.opengl.GL11.GL_SCISSOR_TEST
+	org.lwjgl.opengl.GL32.GL_TEXTURE_CUBE_MAP_SEAMLESS
+	org.lwjgl.opengl.GL32.GL_PROGRAM_POINT_SIZE
 	org.lwjgl.opengl.GL43.GL_DEBUG_OUTPUT
 	org.lwjgl.opengl.GL43.GL_DEBUG_OUTPUT_SYNCHRONOUS
 
@@ -379,6 +382,21 @@ group int gl_clear_flags
 	org.lwjgl.opengl.GL11.GL_COLOR_BUFFER_BIT
 	org.lwjgl.opengl.GL11.GL_DEPTH_BUFFER_BIT
 	org.lwjgl.opengl.GL11.GL_STENCIL_BUFFER_BIT
+
+group int gl_get_pname
+	org.lwjgl.opengl.GL46.GL_MAX_TEXTURE_MAX_ANISOTROPY
+
+group int gl_clip_control_origin
+	org.lwjgl.opengl.GL20.GL_LOWER_LEFT
+	org.lwjgl.opengl.GL20.GL_UPPER_LEFT
+
+group int gl_clip_control_depth
+	org.lwjgl.opengl.GL45.GL_NEGATIVE_ONE_TO_ONE
+	org.lwjgl.opengl.GL45.GL_ZERO_TO_ONE
+
+group int gl_buffer_binding_target
+	org.lwjgl.opengl.GL31.GL_COPY_READ_BUFFER
+	org.lwjgl.opengl.GL31.GL_COPY_WRITE_BUFFER
 
 # TextureUtil
 group int gl_pixel_store_pname
@@ -645,5 +663,19 @@ target_method com.mojang.blaze3d.opengl.GlStateManager glCreateShader (I)I
 target_method com.mojang.blaze3d.opengl.GlStateManager _clear (I)V
 	param 0 gl_clear_flags
 
+target_method com.mojang.blaze3d.opengl.GlStateManager _activeTexture (I)V
+	param 0 gl_texture
+
 target_field com.mojang.blaze3d.opengl.GlStateManager$DepthTestState func I gl_depth_test_function
 target_field com.mojang.blaze3d.opengl.GlStateManager$LogicOpState op I gl_logic_op
+
+target_method org.lwjgl.opengl.GL11 glGetFloat (I)F
+	param 0 gl_get_pname
+
+target_method org.lwjgl.opengl.ARBClipControl glClipControl (II)V
+	param 0 gl_clip_control_origin
+	param 1 gl_clip_control_depth
+
+target_method org.lwjgl.opengl.GL31 glCopyBufferSubData (IIJJJ)V
+	param 0 gl_buffer_binding_target
+	param 1 gl_buffer_binding_target

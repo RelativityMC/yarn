@@ -274,6 +274,9 @@ target_method net.minecraft.client.vulkan.VulkanConst toVkTextureFormat (Lcom/mo
 target_method org.lwjgl.vulkan.VkImageCreateInfo format (I)Lorg/lwjgl/vulkan/VkImageCreateInfo;
 	param 0 vk_format
 
+target_method org.lwjgl.vulkan.VkCommandBufferInheritanceRenderingInfo depthAttachmentFormat (I)Lorg/lwjgl/vulkan/VkCommandBufferInheritanceRenderingInfo;
+	param 0 vk_format
+
 # https://docs.vulkan.org/refpages/latest/refpages/source/VkSampleCountFlagBits.html
 group int vk_sample_count_flag_bits
 	@flags
@@ -286,6 +289,9 @@ group int vk_sample_count_flag_bits
 	org.lwjgl.vulkan.VK10.VK_SAMPLE_COUNT_64_BIT
 
 target_method org.lwjgl.vulkan.VkImageCreateInfo samples (I)Lorg/lwjgl/vulkan/VkImageCreateInfo;
+	param 0 vk_sample_count_flag_bits
+
+target_method org.lwjgl.vulkan.VkCommandBufferInheritanceRenderingInfo rasterizationSamples (I)Lorg/lwjgl/vulkan/VkCommandBufferInheritanceRenderingInfo;
 	param 0 vk_sample_count_flag_bits
 
 # https://docs.vulkan.org/refpages/latest/refpages/source/VkImageTiling.html
@@ -355,6 +361,18 @@ target_method org.lwjgl.vulkan.VkImageMemoryBarrier$Buffer oldLayout (I)Lorg/lwj
 target_method org.lwjgl.vulkan.VkImageMemoryBarrier$Buffer newLayout (I)Lorg/lwjgl/vulkan/VkImageMemoryBarrier$Buffer;
 	param 0 vk_image_layout
 
+target_method org.lwjgl.vulkan.VkRenderingAttachmentInfo$Buffer imageLayout (I)Lorg/lwjgl/vulkan/VkRenderingAttachmentInfo$Buffer;
+	param 0 vk_image_layout
+
+target_method org.lwjgl.vulkan.VkRenderingAttachmentInfo imageLayout (I)Lorg/lwjgl/vulkan/VkRenderingAttachmentInfo;
+	param 0 vk_image_layout
+
+target_method org.lwjgl.vulkan.VkRenderingAttachmentInfo$Buffer resolveImageLayout (I)Lorg/lwjgl/vulkan/VkRenderingAttachmentInfo$Buffer;
+	param 0 vk_image_layout
+
+target_method org.lwjgl.vulkan.VkRenderingAttachmentInfo resolveImageLayout (I)Lorg/lwjgl/vulkan/VkRenderingAttachmentInfo;
+	param 0 vk_image_layout
+
 # https://docs.vulkan.org/refpages/latest/refpages/source/VkMemoryPropertyFlagBits.html
 group int vk_memory_property_flag_bits
 	@flags
@@ -419,6 +437,12 @@ target_method org.lwjgl.vulkan.VkImageSubresourceLayers aspectMask (I)Lorg/lwjgl
 
 target_method net.minecraft.client.vulkan.VulkanConst getVkAspectMask (Lcom/mojang/blaze3d/textures/TexelFormat;)I
 	return vk_image_aspect_flag_bits
+
+target_method org.lwjgl.vulkan.VkClearAttachment$Buffer aspectMask (I)Lorg/lwjgl/vulkan/VkClearAttachment$Buffer;
+	param 0 vk_image_aspect_flag_bits
+
+target_method org.lwjgl.vulkan.VkClearAttachment aspectMask (I)Lorg/lwjgl/vulkan/VkClearAttachment;
+	param 0 vk_image_aspect_flag_bits
 
 # https://docs.vulkan.org/refpages/latest/refpages/source/VkPipelineStageFlagBits.html
 group int vk_pipeline_stage_flag_bits
@@ -530,6 +554,154 @@ group int vk_command_pool_create_flag_bits
 target_method org.lwjgl.vulkan.VkCommandPoolCreateInfo flags (I)Lorg/lwjgl/vulkan/VkCommandPoolCreateInfo;
 	param 0 vk_command_pool_create_flag_bits
 
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkCommandBufferLevel.html
+group int vk_command_buffer_level
+	org.lwjgl.vulkan.VK10.VK_COMMAND_BUFFER_LEVEL_PRIMARY
+	org.lwjgl.vulkan.VK10.VK_COMMAND_BUFFER_LEVEL_SECONDARY
+
+target_method org.lwjgl.vulkan.VkCommandBufferAllocateInfo level (I)Lorg/lwjgl/vulkan/VkCommandBufferAllocateInfo;
+	param 0 vk_command_buffer_level
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkRenderingFlagBits.html
+group int vk_rendering_flag_bits
+	@flags
+	org.lwjgl.vulkan.VK13.VK_RENDERING_CONTENTS_SECONDARY_COMMAND_BUFFERS_BIT
+	org.lwjgl.vulkan.VK13.VK_RENDERING_SUSPENDING_BIT
+	org.lwjgl.vulkan.VK13.VK_RENDERING_RESUMING_BIT
+
+target_method org.lwjgl.vulkan.VkCommandBufferInheritanceRenderingInfo flags (I)Lorg/lwjgl/vulkan/VkCommandBufferInheritanceRenderingInfo;
+	param 0 vk_rendering_flag_bits
+
+target_method org.lwjgl.vulkan.VkRenderingInfo flags (I)Lorg/lwjgl/vulkan/VkRenderingInfo;
+	param 0 vk_rendering_flag_bits
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkCommandBufferUsageFlagBits.html
+group int vk_command_buffer_usage_flag_bits
+	@flags
+	org.lwjgl.vulkan.VK10.VK_COMMAND_BUFFER_USAGE_ONE_TIME_SUBMIT_BIT
+	org.lwjgl.vulkan.VK10.VK_COMMAND_BUFFER_USAGE_RENDER_PASS_CONTINUE_BIT
+	org.lwjgl.vulkan.VK10.VK_COMMAND_BUFFER_USAGE_SIMULTANEOUS_USE_BIT
+
+target_method org.lwjgl.vulkan.VkCommandBufferBeginInfo flags (I)Lorg/lwjgl/vulkan/VkCommandBufferBeginInfo;
+	param 0 vk_command_buffer_usage_flag_bits
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkPipelineStageFlagBits2.html
+group long vk_pipeline_stage_flag_bits2
+	@flags
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_NONE
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_TOP_OF_PIPE_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_DRAW_INDIRECT_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_VERTEX_INPUT_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_VERTEX_SHADER_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_TESSELLATION_CONTROL_SHADER_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_TESSELLATION_EVALUATION_SHADER_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_GEOMETRY_SHADER_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_FRAGMENT_SHADER_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_EARLY_FRAGMENT_TESTS_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_LATE_FRAGMENT_TESTS_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_COLOR_ATTACHMENT_OUTPUT_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_COMPUTE_SHADER_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_ALL_TRANSFER_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_BOTTOM_OF_PIPE_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_HOST_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_ALL_GRAPHICS_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_COPY_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_RESOLVE_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_BLIT_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_CLEAR_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_INDEX_INPUT_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_VERTEX_ATTRIBUTE_INPUT_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_STAGE_2_PRE_RASTERIZATION_SHADERS_BIT
+
+target_method org.lwjgl.vulkan.VkMemoryBarrier2$Buffer srcStageMask (J)Lorg/lwjgl/vulkan/VkMemoryBarrier2$Buffer;
+	param 0 vk_pipeline_stage_flag_bits2
+
+target_method org.lwjgl.vulkan.VkMemoryBarrier2$Buffer dstStageMask (J)Lorg/lwjgl/vulkan/VkMemoryBarrier2$Buffer;
+	param 0 vk_pipeline_stage_flag_bits2
+
+target_method org.lwjgl.vulkan.VkSemaphoreSubmitInfo$Buffer stageMask (J)Lorg/lwjgl/vulkan/VkSemaphoreSubmitInfo$Buffer;
+	param 0 vk_pipeline_stage_flag_bits2
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkAccessFlagBits2.html
+group long vk_access_flag_bits2
+	@flags
+	org.lwjgl.vulkan.VK13.VK_ACCESS_2_NONE
+	org.lwjgl.vulkan.VK13.VK_ACCESS_2_INDIRECT_COMMAND_READ_BIT
+	org.lwjgl.vulkan.VK13.VK_ACCESS_2_INDEX_READ_BIT
+	org.lwjgl.vulkan.VK13.VK_ACCESS_2_VERTEX_ATTRIBUTE_READ_BIT
+	org.lwjgl.vulkan.VK13.VK_ACCESS_2_UNIFORM_READ_BIT
+	org.lwjgl.vulkan.VK13.VK_ACCESS_2_INPUT_ATTACHMENT_READ_BIT
+	org.lwjgl.vulkan.VK13.VK_ACCESS_2_SHADER_READ_BIT
+	org.lwjgl.vulkan.VK13.VK_ACCESS_2_SHADER_WRITE_BIT
+	org.lwjgl.vulkan.VK13.VK_ACCESS_2_COLOR_ATTACHMENT_READ_BIT
+	org.lwjgl.vulkan.VK13.VK_ACCESS_2_COLOR_ATTACHMENT_WRITE_BIT
+	org.lwjgl.vulkan.VK13.VK_ACCESS_2_DEPTH_STENCIL_ATTACHMENT_READ_BIT
+	org.lwjgl.vulkan.VK13.VK_ACCESS_2_DEPTH_STENCIL_ATTACHMENT_WRITE_BIT
+	org.lwjgl.vulkan.VK13.VK_ACCESS_2_TRANSFER_READ_BIT
+	org.lwjgl.vulkan.VK13.VK_ACCESS_2_TRANSFER_WRITE_BIT
+	org.lwjgl.vulkan.VK13.VK_ACCESS_2_HOST_READ_BIT
+	org.lwjgl.vulkan.VK13.VK_ACCESS_2_HOST_WRITE_BIT
+	org.lwjgl.vulkan.VK13.VK_ACCESS_2_MEMORY_READ_BIT
+	org.lwjgl.vulkan.VK13.VK_ACCESS_2_MEMORY_WRITE_BIT
+	org.lwjgl.vulkan.VK13.VK_ACCESS_2_SHADER_SAMPLED_READ_BIT
+	org.lwjgl.vulkan.VK13.VK_ACCESS_2_SHADER_STORAGE_READ_BIT
+	org.lwjgl.vulkan.VK13.VK_ACCESS_2_SHADER_STORAGE_WRITE_BIT
+
+target_method org.lwjgl.vulkan.VkMemoryBarrier2$Buffer srcAccessMask (J)Lorg/lwjgl/vulkan/VkMemoryBarrier2$Buffer;
+	param 0 vk_access_flag_bits2
+
+target_method org.lwjgl.vulkan.VkMemoryBarrier2$Buffer dstAccessMask (J)Lorg/lwjgl/vulkan/VkMemoryBarrier2$Buffer;
+	param 0 vk_access_flag_bits2
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkResolveModeFlagBits.html
+group int vk_resolve_mode_flag_bits
+	@flags
+	org.lwjgl.vulkan.VK12.VK_RESOLVE_MODE_NONE
+	org.lwjgl.vulkan.VK12.VK_RESOLVE_MODE_SAMPLE_ZERO_BIT
+	org.lwjgl.vulkan.VK12.VK_RESOLVE_MODE_AVERAGE_BIT
+	org.lwjgl.vulkan.VK12.VK_RESOLVE_MODE_MIN_BIT
+	org.lwjgl.vulkan.VK12.VK_RESOLVE_MODE_MAX_BIT
+
+target_method org.lwjgl.vulkan.VkRenderingAttachmentInfo$Buffer resolveMode (I)Lorg/lwjgl/vulkan/VkRenderingAttachmentInfo$Buffer;
+	param 0 vk_resolve_mode_flag_bits
+
+target_method org.lwjgl.vulkan.VkRenderingAttachmentInfo resolveMode (I)Lorg/lwjgl/vulkan/VkRenderingAttachmentInfo;
+	param 0 vk_resolve_mode_flag_bits
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkAttachmentLoadOp.html
+group int vk_attachment_load_op
+	org.lwjgl.vulkan.VK10.VK_ATTACHMENT_LOAD_OP_LOAD
+	org.lwjgl.vulkan.VK10.VK_ATTACHMENT_LOAD_OP_CLEAR
+	org.lwjgl.vulkan.VK10.VK_ATTACHMENT_LOAD_OP_DONT_CARE
+	org.lwjgl.vulkan.VK14.VK_ATTACHMENT_LOAD_OP_NONE
+
+target_method org.lwjgl.vulkan.VkRenderingAttachmentInfo$Buffer loadOp (I)Lorg/lwjgl/vulkan/VkRenderingAttachmentInfo$Buffer;
+	param 0 vk_attachment_load_op
+
+target_method org.lwjgl.vulkan.VkRenderingAttachmentInfo loadOp (I)Lorg/lwjgl/vulkan/VkRenderingAttachmentInfo;
+	param 0 vk_attachment_load_op
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkAttachmentStoreOp.html
+group int vk_attachment_store_op
+	org.lwjgl.vulkan.VK10.VK_ATTACHMENT_STORE_OP_STORE
+	org.lwjgl.vulkan.VK10.VK_ATTACHMENT_STORE_OP_DONT_CARE
+	org.lwjgl.vulkan.VK13.VK_ATTACHMENT_STORE_OP_NONE
+
+target_method org.lwjgl.vulkan.VkRenderingAttachmentInfo$Buffer storeOp (I)Lorg/lwjgl/vulkan/VkRenderingAttachmentInfo$Buffer;
+	param 0 vk_attachment_store_op
+
+target_method org.lwjgl.vulkan.VkRenderingAttachmentInfo storeOp (I)Lorg/lwjgl/vulkan/VkRenderingAttachmentInfo;
+	param 0 vk_attachment_store_op
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkQueryResultFlagBits.html
+group int vk_query_result_flag_bits
+	@flags
+	org.lwjgl.vulkan.VK10.VK_QUERY_RESULT_64_BIT
+	org.lwjgl.vulkan.VK10.VK_QUERY_RESULT_WAIT_BIT
+	org.lwjgl.vulkan.VK10.VK_QUERY_RESULT_WITH_AVAILABILITY_BIT
+	org.lwjgl.vulkan.VK10.VK_QUERY_RESULT_PARTIAL_BIT
+
 # ========================================
 # Target definition for actual usages
 # ========================================
@@ -544,3 +716,38 @@ target_method net.minecraft.client.vulkan.DebugBackend setObjectLabel (Lorg/lwjg
 
 target_method net.minecraft.client.vulkan.DebugBackend setObjectLabel (Lorg/lwjgl/vulkan/VkDevice;IJLjava/util/function/Supplier;)V
 	param 1 vk_object_type
+
+target_method net.minecraft.client.vulkan.VulkanCommandEncoderBackend beginCommandBuffer (Ljava/nio/IntBuffer;I)Lorg/lwjgl/vulkan/VkCommandBuffer;
+	param 1 vk_format
+
+target_field net.minecraft.client.vulkan.VulkanQueue$Submission$SemaphoreInfo stageMask J vk_pipeline_stage_flag_bits2
+
+target_method net.minecraft.client.vulkan.VulkanQueue$Submission addWait (JJJ)V
+	param 2 vk_pipeline_stage_flag_bits2
+
+target_method net.minecraft.client.vulkan.VulkanQueue$Submission addSignal (JJJ)V
+	param 2 vk_pipeline_stage_flag_bits2
+
+target_method net.minecraft.client.vulkan.VulkanCommandEncoderBackend addWait (JJJ)V
+	param 2 vk_pipeline_stage_flag_bits2
+
+target_method net.minecraft.client.vulkan.VulkanCommandEncoderBackend addSignal (JJJ)V
+	param 2 vk_pipeline_stage_flag_bits2
+
+target_method org.lwjgl.vulkan.VK10 vkCmdClearColorImage (Lorg/lwjgl/vulkan/VkCommandBuffer;JILorg/lwjgl/vulkan/VkClearColorValue;Lorg/lwjgl/vulkan/VkImageSubresourceRange;)V
+	param 2 vk_image_layout
+
+target_method org.lwjgl.vulkan.VK10 vkCmdClearColorImage (Lorg/lwjgl/vulkan/VkCommandBuffer;JILorg/lwjgl/vulkan/VkClearColorValue;Lorg/lwjgl/vulkan/VkImageSubresourceRange$Buffer;)V
+	param 2 vk_image_layout
+
+target_method org.lwjgl.vulkan.VK10 vkCmdClearDepthStencilImage (Lorg/lwjgl/vulkan/VkCommandBuffer;JILorg/lwjgl/vulkan/VkClearDepthStencilValue;Lorg/lwjgl/vulkan/VkImageSubresourceRange;)V
+	param 2 vk_image_layout
+
+target_method org.lwjgl.vulkan.VK10 vkCmdClearDepthStencilImage (Lorg/lwjgl/vulkan/VkCommandBuffer;JILorg/lwjgl/vulkan/VkClearDepthStencilValue;Lorg/lwjgl/vulkan/VkImageSubresourceRange$Buffer;)V
+	param 2 vk_image_layout
+
+target_method org.lwjgl.vulkan.KHRSynchronization2 vkCmdWriteTimestamp2KHR (Lorg/lwjgl/vulkan/VkCommandBuffer;JJI)V
+	param 1 vk_pipeline_stage_flag_bits2
+
+target_method org.lwjgl.vulkan.VK10 vkGetQueryPoolResults (Lorg/lwjgl/vulkan/VkDevice;JIILjava/nio/LongBuffer;JI)I
+	param 6 vk_query_result_flag_bits

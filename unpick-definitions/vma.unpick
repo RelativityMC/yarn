@@ -1,0 +1,40 @@
+unpick v4
+
+# https://gpuopen-librariesandsdks.github.io/VulkanMemoryAllocator/html/group__group__alloc.html#gad9889c10c798b040d59c92f257cae597
+group int vma_allocation_create_flag_bits
+	@flags
+	org.lwjgl.util.vma.Vma.VMA_ALLOCATION_CREATE_DEDICATED_MEMORY_BIT
+	org.lwjgl.util.vma.Vma.VMA_ALLOCATION_CREATE_NEVER_ALLOCATE_BIT
+	org.lwjgl.util.vma.Vma.VMA_ALLOCATION_CREATE_MAPPED_BIT
+	org.lwjgl.util.vma.Vma.VMA_ALLOCATION_CREATE_USER_DATA_COPY_STRING_BIT
+	org.lwjgl.util.vma.Vma.VMA_ALLOCATION_CREATE_UPPER_ADDRESS_BIT
+	org.lwjgl.util.vma.Vma.VMA_ALLOCATION_CREATE_DONT_BIND_BIT
+	org.lwjgl.util.vma.Vma.VMA_ALLOCATION_CREATE_WITHIN_BUDGET_BIT
+	org.lwjgl.util.vma.Vma.VMA_ALLOCATION_CREATE_CAN_ALIAS_BIT
+	org.lwjgl.util.vma.Vma.VMA_ALLOCATION_CREATE_HOST_ACCESS_SEQUENTIAL_WRITE_BIT
+	org.lwjgl.util.vma.Vma.VMA_ALLOCATION_CREATE_HOST_ACCESS_RANDOM_BIT
+	org.lwjgl.util.vma.Vma.VMA_ALLOCATION_CREATE_HOST_ACCESS_ALLOW_TRANSFER_INSTEAD_BIT
+	org.lwjgl.util.vma.Vma.VMA_ALLOCATION_CREATE_STRATEGY_MIN_MEMORY_BIT
+	org.lwjgl.util.vma.Vma.VMA_ALLOCATION_CREATE_STRATEGY_MIN_TIME_BIT
+	org.lwjgl.util.vma.Vma.VMA_ALLOCATION_CREATE_STRATEGY_MIN_OFFSET_BIT
+	org.lwjgl.util.vma.Vma.VMA_ALLOCATION_CREATE_STRATEGY_MASK
+
+target_method org.lwjgl.util.vma.VmaAllocationCreateInfo flags (I)Lorg/lwjgl/util/vma/VmaAllocationCreateInfo;
+	param 0 vma_allocation_create_flag_bits
+
+# https://gpuopen-librariesandsdks.github.io/VulkanMemoryAllocator/html/group__group__alloc.html#gaa5846affa1e9da3800e3e78fae2305cc
+group int vma_memory_usage
+	@flags
+	org.lwjgl.util.vma.Vma.VMA_MEMORY_USAGE_UNKNOWN
+	org.lwjgl.util.vma.Vma.VMA_MEMORY_USAGE_GPU_ONLY
+	org.lwjgl.util.vma.Vma.VMA_MEMORY_USAGE_CPU_ONLY
+	org.lwjgl.util.vma.Vma.VMA_MEMORY_USAGE_CPU_TO_GPU
+	org.lwjgl.util.vma.Vma.VMA_MEMORY_USAGE_GPU_TO_CPU
+	org.lwjgl.util.vma.Vma.VMA_MEMORY_USAGE_CPU_COPY
+	org.lwjgl.util.vma.Vma.VMA_MEMORY_USAGE_GPU_LAZILY_ALLOCATED
+	org.lwjgl.util.vma.Vma.VMA_MEMORY_USAGE_AUTO
+	org.lwjgl.util.vma.Vma.VMA_MEMORY_USAGE_AUTO_PREFER_DEVICE
+	org.lwjgl.util.vma.Vma.VMA_MEMORY_USAGE_AUTO_PREFER_HOST
+
+target_method org.lwjgl.util.vma.VmaAllocationCreateInfo usage (I)Lorg/lwjgl/util/vma/VmaAllocationCreateInfo;
+	param 0 vma_memory_usage

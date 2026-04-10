@@ -322,6 +322,9 @@ group int vk_sharing_mode
 target_method org.lwjgl.vulkan.VkImageCreateInfo sharingMode (I)Lorg/lwjgl/vulkan/VkImageCreateInfo;
 	param 0 vk_sharing_mode
 
+target_method org.lwjgl.vulkan.VkBufferCreateInfo sharingMode (I)Lorg/lwjgl/vulkan/VkBufferCreateInfo;
+	param 0 vk_sharing_mode
+
 # https://docs.vulkan.org/refpages/latest/refpages/source/VkImageLayout.html
 group int vk_image_layout
 	org.lwjgl.vulkan.VK10.VK_IMAGE_LAYOUT_UNDEFINED
@@ -471,9 +474,41 @@ group int vk_object_type
 target_method org.lwjgl.vulkan.VkDebugUtilsObjectNameInfoEXT objectType (I)Lorg/lwjgl/vulkan/VkDebugUtilsObjectNameInfoEXT;
 	param 0 vk_object_type
 
-# =============================
-# Target definition
-# =============================
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkBufferCreateFlagBits.html
+group int vk_buffer_create_flag_bits
+	@flags
+	org.lwjgl.vulkan.VK10.VK_BUFFER_CREATE_SPARSE_BINDING_BIT
+	org.lwjgl.vulkan.VK10.VK_BUFFER_CREATE_SPARSE_RESIDENCY_BIT
+	org.lwjgl.vulkan.VK10.VK_BUFFER_CREATE_SPARSE_ALIASED_BIT
+	org.lwjgl.vulkan.VK11.VK_BUFFER_CREATE_PROTECTED_BIT
+	org.lwjgl.vulkan.VK12.VK_BUFFER_CREATE_DEVICE_ADDRESS_CAPTURE_REPLAY_BIT
+
+target_method org.lwjgl.vulkan.VkBufferCreateInfo flags (I)Lorg/lwjgl/vulkan/VkBufferCreateInfo;
+	param 0 vk_buffer_create_flag_bits
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkBufferUsageFlagBits.html
+group int vk_buffer_usage_flag_bits
+	@flags
+	org.lwjgl.vulkan.VK10.VK_BUFFER_USAGE_TRANSFER_SRC_BIT
+	org.lwjgl.vulkan.VK10.VK_BUFFER_USAGE_TRANSFER_DST_BIT
+	org.lwjgl.vulkan.VK10.VK_BUFFER_USAGE_UNIFORM_TEXEL_BUFFER_BIT
+	org.lwjgl.vulkan.VK10.VK_BUFFER_USAGE_STORAGE_TEXEL_BUFFER_BIT
+	org.lwjgl.vulkan.VK10.VK_BUFFER_USAGE_UNIFORM_BUFFER_BIT
+	org.lwjgl.vulkan.VK10.VK_BUFFER_USAGE_STORAGE_BUFFER_BIT
+	org.lwjgl.vulkan.VK10.VK_BUFFER_USAGE_INDEX_BUFFER_BIT
+	org.lwjgl.vulkan.VK10.VK_BUFFER_USAGE_VERTEX_BUFFER_BIT
+	org.lwjgl.vulkan.VK10.VK_BUFFER_USAGE_INDIRECT_BUFFER_BIT
+	org.lwjgl.vulkan.VK12.VK_BUFFER_USAGE_SHADER_DEVICE_ADDRESS_BIT
+
+target_method org.lwjgl.vulkan.VkBufferCreateInfo usage (I)Lorg/lwjgl/vulkan/VkBufferCreateInfo;
+	param 0 vk_buffer_usage_flag_bits
+
+target_method net.minecraft.client.vulkan.VulkanConst toVkBufferUsage (I)I
+	return vk_buffer_usage_flag_bits
+
+# ========================================
+# Target definition for actual usages
+# ========================================
 
 target_method org.lwjgl.vulkan.VK10 vkCmdPipelineBarrier (Lorg/lwjgl/vulkan/VkCommandBuffer;IIILorg/lwjgl/vulkan/VkMemoryBarrier$Buffer;Lorg/lwjgl/vulkan/VkBufferMemoryBarrier$Buffer;Lorg/lwjgl/vulkan/VkImageMemoryBarrier$Buffer;)V
 	param 1 vk_pipeline_stage_flag_bits

@@ -277,6 +277,12 @@ target_method org.lwjgl.vulkan.VkImageCreateInfo format (I)Lorg/lwjgl/vulkan/VkI
 target_method org.lwjgl.vulkan.VkCommandBufferInheritanceRenderingInfo depthAttachmentFormat (I)Lorg/lwjgl/vulkan/VkCommandBufferInheritanceRenderingInfo;
 	param 0 vk_format
 
+target_method org.lwjgl.vulkan.VkSurfaceFormatKHR format ()I
+	return vk_format
+
+target_method org.lwjgl.vulkan.VkSwapchainCreateInfoKHR imageFormat (I)Lorg/lwjgl/vulkan/VkSwapchainCreateInfoKHR;
+	param 0 vk_format
+
 # https://docs.vulkan.org/refpages/latest/refpages/source/VkSampleCountFlagBits.html
 group int vk_sample_count_flag_bits
 	@flags
@@ -320,6 +326,9 @@ target_method org.lwjgl.vulkan.VkImageCreateInfo usage (I)Lorg/lwjgl/vulkan/VkIm
 target_method net.minecraft.client.vulkan.VulkanConst toVkTextureUsage (ILcom/mojang/blaze3d/textures/TexelFormat;)I
 	return vk_image_usage_flag_bits
 
+target_method org.lwjgl.vulkan.VkSwapchainCreateInfoKHR imageUsage (I)Lorg/lwjgl/vulkan/VkSwapchainCreateInfoKHR;
+	param 0 vk_image_usage_flag_bits
+
 # https://docs.vulkan.org/refpages/latest/refpages/source/VkSharingMode.html
 group int vk_sharing_mode
 	org.lwjgl.vulkan.VK10.VK_SHARING_MODE_EXCLUSIVE
@@ -329,6 +338,9 @@ target_method org.lwjgl.vulkan.VkImageCreateInfo sharingMode (I)Lorg/lwjgl/vulka
 	param 0 vk_sharing_mode
 
 target_method org.lwjgl.vulkan.VkBufferCreateInfo sharingMode (I)Lorg/lwjgl/vulkan/VkBufferCreateInfo;
+	param 0 vk_sharing_mode
+
+target_method org.lwjgl.vulkan.VkSwapchainCreateInfoKHR imageSharingMode (I)Lorg/lwjgl/vulkan/VkSwapchainCreateInfoKHR;
 	param 0 vk_sharing_mode
 
 # https://docs.vulkan.org/refpages/latest/refpages/source/VkImageLayout.html
@@ -701,6 +713,79 @@ group int vk_query_result_flag_bits
 	org.lwjgl.vulkan.VK10.VK_QUERY_RESULT_WAIT_BIT
 	org.lwjgl.vulkan.VK10.VK_QUERY_RESULT_WITH_AVAILABILITY_BIT
 	org.lwjgl.vulkan.VK10.VK_QUERY_RESULT_PARTIAL_BIT
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkColorSpaceKHR.html
+group int vk_color_space_khr
+	org.lwjgl.vulkan.KHRSurface.VK_COLOR_SPACE_SRGB_NONLINEAR_KHR
+	org.lwjgl.vulkan.EXTSwapchainColorspace.VK_COLOR_SPACE_DISPLAY_P3_NONLINEAR_EXT
+	org.lwjgl.vulkan.EXTSwapchainColorspace.VK_COLOR_SPACE_EXTENDED_SRGB_LINEAR_EXT
+	org.lwjgl.vulkan.EXTSwapchainColorspace.VK_COLOR_SPACE_DISPLAY_P3_LINEAR_EXT
+	org.lwjgl.vulkan.EXTSwapchainColorspace.VK_COLOR_SPACE_DCI_P3_NONLINEAR_EXT
+	org.lwjgl.vulkan.EXTSwapchainColorspace.VK_COLOR_SPACE_BT709_LINEAR_EXT
+	org.lwjgl.vulkan.EXTSwapchainColorspace.VK_COLOR_SPACE_BT709_NONLINEAR_EXT
+	org.lwjgl.vulkan.EXTSwapchainColorspace.VK_COLOR_SPACE_BT2020_LINEAR_EXT
+	org.lwjgl.vulkan.EXTSwapchainColorspace.VK_COLOR_SPACE_HDR10_ST2084_EXT
+	org.lwjgl.vulkan.EXTSwapchainColorspace.VK_COLOR_SPACE_DOLBYVISION_EXT
+	org.lwjgl.vulkan.EXTSwapchainColorspace.VK_COLOR_SPACE_HDR10_HLG_EXT
+	org.lwjgl.vulkan.EXTSwapchainColorspace.VK_COLOR_SPACE_ADOBERGB_LINEAR_EXT
+	org.lwjgl.vulkan.EXTSwapchainColorspace.VK_COLOR_SPACE_ADOBERGB_NONLINEAR_EXT
+	org.lwjgl.vulkan.EXTSwapchainColorspace.VK_COLOR_SPACE_PASS_THROUGH_EXT
+	org.lwjgl.vulkan.EXTSwapchainColorspace.VK_COLOR_SPACE_EXTENDED_SRGB_NONLINEAR_EXT
+
+target_method org.lwjgl.vulkan.VkSurfaceFormatKHR colorSpace ()I
+	return vk_color_space_khr
+
+target_method org.lwjgl.vulkan.VkSwapchainCreateInfoKHR imageColorSpace (I)Lorg/lwjgl/vulkan/VkSwapchainCreateInfoKHR;
+	param 0 vk_color_space_khr
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkSwapchainCreateFlagBitsKHR.html
+group int vk_swapchain_create_flag_bits_khr
+	@flags
+	org.lwjgl.vulkan.KHRSwapchain.VK_SWAPCHAIN_CREATE_SPLIT_INSTANCE_BIND_REGIONS_BIT_KHR
+	org.lwjgl.vulkan.KHRSwapchain.VK_SWAPCHAIN_CREATE_PROTECTED_BIT_KHR
+
+target_method org.lwjgl.vulkan.VkSwapchainCreateInfoKHR flags (I)Lorg/lwjgl/vulkan/VkSwapchainCreateInfoKHR;
+	param 0 vk_swapchain_create_flag_bits_khr
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkSurfaceTransformFlagBitsKHR.html
+group int vk_surface_transform_flag_bits_khr
+	@flags
+	org.lwjgl.vulkan.KHRSurface.VK_SURFACE_TRANSFORM_IDENTITY_BIT_KHR
+	org.lwjgl.vulkan.KHRSurface.VK_SURFACE_TRANSFORM_ROTATE_90_BIT_KHR
+	org.lwjgl.vulkan.KHRSurface.VK_SURFACE_TRANSFORM_ROTATE_180_BIT_KHR
+	org.lwjgl.vulkan.KHRSurface.VK_SURFACE_TRANSFORM_ROTATE_270_BIT_KHR
+	org.lwjgl.vulkan.KHRSurface.VK_SURFACE_TRANSFORM_HORIZONTAL_MIRROR_BIT_KHR
+	org.lwjgl.vulkan.KHRSurface.VK_SURFACE_TRANSFORM_HORIZONTAL_MIRROR_ROTATE_90_BIT_KHR
+	org.lwjgl.vulkan.KHRSurface.VK_SURFACE_TRANSFORM_HORIZONTAL_MIRROR_ROTATE_180_BIT_KHR
+	org.lwjgl.vulkan.KHRSurface.VK_SURFACE_TRANSFORM_HORIZONTAL_MIRROR_ROTATE_270_BIT_KHR
+	org.lwjgl.vulkan.KHRSurface.VK_SURFACE_TRANSFORM_INHERIT_BIT_KHR
+
+target_method org.lwjgl.vulkan.VkSwapchainCreateInfoKHR preTransform (I)Lorg/lwjgl/vulkan/VkSwapchainCreateInfoKHR;
+	param 0 vk_surface_transform_flag_bits_khr
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkCompositeAlphaFlagBitsKHR.html
+group int vk_composite_alpha_flag_bits_khr
+	@flags
+	org.lwjgl.vulkan.KHRSurface.VK_COMPOSITE_ALPHA_OPAQUE_BIT_KHR
+	org.lwjgl.vulkan.KHRSurface.VK_COMPOSITE_ALPHA_PRE_MULTIPLIED_BIT_KHR
+	org.lwjgl.vulkan.KHRSurface.VK_COMPOSITE_ALPHA_POST_MULTIPLIED_BIT_KHR
+	org.lwjgl.vulkan.KHRSurface.VK_COMPOSITE_ALPHA_INHERIT_BIT_KHR
+
+target_method org.lwjgl.vulkan.VkSwapchainCreateInfoKHR compositeAlpha (I)Lorg/lwjgl/vulkan/VkSwapchainCreateInfoKHR;
+	param 0 vk_composite_alpha_flag_bits_khr
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkPresentModeKHR.html
+group int vk_present_mode_khr
+	org.lwjgl.vulkan.KHRSurface.VK_PRESENT_MODE_IMMEDIATE_KHR
+	org.lwjgl.vulkan.KHRSurface.VK_PRESENT_MODE_MAILBOX_KHR
+	org.lwjgl.vulkan.KHRSurface.VK_PRESENT_MODE_FIFO_KHR
+	org.lwjgl.vulkan.KHRSurface.VK_PRESENT_MODE_FIFO_RELAXED_KHR
+
+target_method org.lwjgl.vulkan.VkSwapchainCreateInfoKHR presentMode (I)Lorg/lwjgl/vulkan/VkSwapchainCreateInfoKHR;
+	param 0 vk_present_mode_khr
+
+target_method net.minecraft.client.vulkan.VulkanConst getVkPresentMode (Lcom/mojang/blaze3d/systems/GpuSurface$PresentMode;)I
+	return vk_present_mode_khr
 
 # ========================================
 # Target definition for actual usages

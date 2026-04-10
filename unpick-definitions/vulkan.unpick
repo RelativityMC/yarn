@@ -363,6 +363,7 @@ group int vk_image_layout
 	org.lwjgl.vulkan.VK13.VK_IMAGE_LAYOUT_READ_ONLY_OPTIMAL
 	org.lwjgl.vulkan.VK13.VK_IMAGE_LAYOUT_ATTACHMENT_OPTIMAL
 	org.lwjgl.vulkan.VK14.VK_IMAGE_LAYOUT_RENDERING_LOCAL_READ
+	org.lwjgl.vulkan.KHRSwapchain.VK_IMAGE_LAYOUT_PRESENT_SRC_KHR
 
 target_method org.lwjgl.vulkan.VkImageCreateInfo initialLayout (I)Lorg/lwjgl/vulkan/VkImageCreateInfo;
 	param 0 vk_image_layout
@@ -383,6 +384,12 @@ target_method org.lwjgl.vulkan.VkRenderingAttachmentInfo$Buffer resolveImageLayo
 	param 0 vk_image_layout
 
 target_method org.lwjgl.vulkan.VkRenderingAttachmentInfo resolveImageLayout (I)Lorg/lwjgl/vulkan/VkRenderingAttachmentInfo;
+	param 0 vk_image_layout
+
+target_method org.lwjgl.vulkan.VkImageMemoryBarrier2$Buffer oldLayout (I)Lorg/lwjgl/vulkan/VkImageMemoryBarrier2$Buffer;
+	param 0 vk_image_layout
+
+target_method org.lwjgl.vulkan.VkImageMemoryBarrier2$Buffer newLayout (I)Lorg/lwjgl/vulkan/VkImageMemoryBarrier2$Buffer;
 	param 0 vk_image_layout
 
 # https://docs.vulkan.org/refpages/latest/refpages/source/VkMemoryPropertyFlagBits.html
@@ -635,6 +642,12 @@ target_method org.lwjgl.vulkan.VkMemoryBarrier2$Buffer dstStageMask (J)Lorg/lwjg
 target_method org.lwjgl.vulkan.VkSemaphoreSubmitInfo$Buffer stageMask (J)Lorg/lwjgl/vulkan/VkSemaphoreSubmitInfo$Buffer;
 	param 0 vk_pipeline_stage_flag_bits2
 
+target_method org.lwjgl.vulkan.VkImageMemoryBarrier2$Buffer srcStageMask (J)Lorg/lwjgl/vulkan/VkImageMemoryBarrier2$Buffer;
+	param 0 vk_pipeline_stage_flag_bits2
+
+target_method org.lwjgl.vulkan.VkImageMemoryBarrier2$Buffer dstStageMask (J)Lorg/lwjgl/vulkan/VkImageMemoryBarrier2$Buffer;
+	param 0 vk_pipeline_stage_flag_bits2
+
 # https://docs.vulkan.org/refpages/latest/refpages/source/VkAccessFlagBits2.html
 group long vk_access_flag_bits2
 	@flags
@@ -664,6 +677,12 @@ target_method org.lwjgl.vulkan.VkMemoryBarrier2$Buffer srcAccessMask (J)Lorg/lwj
 	param 0 vk_access_flag_bits2
 
 target_method org.lwjgl.vulkan.VkMemoryBarrier2$Buffer dstAccessMask (J)Lorg/lwjgl/vulkan/VkMemoryBarrier2$Buffer;
+	param 0 vk_access_flag_bits2
+
+target_method org.lwjgl.vulkan.VkImageMemoryBarrier2$Buffer srcAccessMask (J)Lorg/lwjgl/vulkan/VkImageMemoryBarrier2$Buffer;
+	param 0 vk_access_flag_bits2
+
+target_method org.lwjgl.vulkan.VkImageMemoryBarrier2$Buffer dstAccessMask (J)Lorg/lwjgl/vulkan/VkImageMemoryBarrier2$Buffer;
 	param 0 vk_access_flag_bits2
 
 # https://docs.vulkan.org/refpages/latest/refpages/source/VkResolveModeFlagBits.html
@@ -786,6 +805,45 @@ target_method org.lwjgl.vulkan.VkSwapchainCreateInfoKHR presentMode (I)Lorg/lwjg
 
 target_method net.minecraft.client.vulkan.VulkanConst getVkPresentMode (Lcom/mojang/blaze3d/systems/GpuSurface$PresentMode;)I
 	return vk_present_mode_khr
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkResult.html
+group int vk_result
+	org.lwjgl.vulkan.VK10.VK_SUCCESS
+    org.lwjgl.vulkan.VK10.VK_NOT_READY
+    org.lwjgl.vulkan.VK10.VK_TIMEOUT
+    org.lwjgl.vulkan.VK10.VK_EVENT_SET
+    org.lwjgl.vulkan.VK10.VK_EVENT_RESET
+    org.lwjgl.vulkan.VK10.VK_INCOMPLETE
+    org.lwjgl.vulkan.VK10.VK_ERROR_OUT_OF_HOST_MEMORY
+    org.lwjgl.vulkan.VK10.VK_ERROR_OUT_OF_DEVICE_MEMORY
+    org.lwjgl.vulkan.VK10.VK_ERROR_INITIALIZATION_FAILED
+    org.lwjgl.vulkan.VK10.VK_ERROR_DEVICE_LOST
+    org.lwjgl.vulkan.VK10.VK_ERROR_MEMORY_MAP_FAILED
+    org.lwjgl.vulkan.VK10.VK_ERROR_LAYER_NOT_PRESENT
+    org.lwjgl.vulkan.VK10.VK_ERROR_EXTENSION_NOT_PRESENT
+    org.lwjgl.vulkan.VK10.VK_ERROR_FEATURE_NOT_PRESENT
+    org.lwjgl.vulkan.VK10.VK_ERROR_INCOMPATIBLE_DRIVER
+    org.lwjgl.vulkan.VK10.VK_ERROR_TOO_MANY_OBJECTS
+    org.lwjgl.vulkan.VK10.VK_ERROR_FORMAT_NOT_SUPPORTED
+    org.lwjgl.vulkan.VK10.VK_ERROR_FRAGMENTED_POOL
+    org.lwjgl.vulkan.VK10.VK_ERROR_UNKNOWN
+    org.lwjgl.vulkan.VK10.VK_ERROR_VALIDATION_FAILED
+    org.lwjgl.vulkan.VK11.VK_ERROR_OUT_OF_POOL_MEMORY
+    org.lwjgl.vulkan.VK11.VK_ERROR_INVALID_EXTERNAL_HANDLE
+    org.lwjgl.vulkan.VK12.VK_ERROR_INVALID_OPAQUE_CAPTURE_ADDRESS
+    org.lwjgl.vulkan.VK12.VK_ERROR_FRAGMENTATION
+    org.lwjgl.vulkan.VK13.VK_PIPELINE_COMPILE_REQUIRED
+    org.lwjgl.vulkan.VK14.VK_ERROR_NOT_PERMITTED
+    org.lwjgl.vulkan.KHRSurface.VK_ERROR_SURFACE_LOST_KHR
+    org.lwjgl.vulkan.KHRSurface.VK_ERROR_NATIVE_WINDOW_IN_USE_KHR
+    org.lwjgl.vulkan.KHRSwapchain.VK_SUBOPTIMAL_KHR
+    org.lwjgl.vulkan.KHRSwapchain.VK_ERROR_OUT_OF_DATE_KHR
+
+target_method org.lwjgl.vulkan.KHRSwapchain vkAcquireNextImageKHR (Lorg/lwjgl/vulkan/VkDevice;JJJJLjava/nio/IntBuffer;)I
+	return vk_result
+
+target_method org.lwjgl.vulkan.KHRSwapchain vkQueuePresentKHR (Lorg/lwjgl/vulkan/VkQueue;Lorg/lwjgl/vulkan/VkPresentInfoKHR;)I
+	return vk_result
 
 # ========================================
 # Target definition for actual usages

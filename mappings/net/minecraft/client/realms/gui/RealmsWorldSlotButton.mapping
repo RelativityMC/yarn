@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_4367 net/minecraft/client/realms/gui/RealmsWorldSlotButton
 	FIELD field_1_2287 nameWidget Lnet/minecraft/class_7842;
+	FIELD field_1_3718 screen Lnet/minecraft/class_4388;
 	FIELD field_19675 slotIndex I
 	FIELD field_19677 state Lnet/minecraft/class_4367$class_4370;
 	FIELD field_22681 SLOT_FRAME Lnet/minecraft/class_2960;
@@ -11,6 +12,7 @@ CLASS net/minecraft/class_4367 net/minecraft/client/realms/gui/RealmsWorldSlotBu
 	FIELD field_26470 TOOLTIP Lnet/minecraft/class_2561;
 	FIELD field_44894 MINIGAME_SLOT_NAME Lnet/minecraft/class_2561;
 	METHOD <init> (Lnet/minecraft/class_4388;IIIIILnet/minecraft/class_4877;Lnet/minecraft/class_4185$class_4241;)V
+		ARG 1 screen
 		ARG 2 x
 		ARG 3 y
 		ARG 4 width

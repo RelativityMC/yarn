@@ -10,10 +10,12 @@ CLASS net/minecraft/class_1621 net/minecraft/entity/mob/AbstractSlimeEntity
 	METHOD method_1_4583 addGoals ()V
 	METHOD method_1_4584 addTargets ()V
 	METHOD method_1_4586 sampleFecundity ()I
+	METHOD method_1_4587 (IFFLnet/minecraft/class_1621;)V
+		ARG 4 offspring
 	METHOD method_1_4588 setInitialSize (Lnet/minecraft/class_5425;Lnet/minecraft/class_1266;)V
 		ARG 1 world
 		ARG 2 difficulty
-	METHOD method_1_4589 (Lnet/minecraft/class_1621;IFF)V
+	METHOD method_1_4589 initializeSplitOffspring (Lnet/minecraft/class_1621;IFF)V
 		ARG 1 slime
 		ARG 2 size
 		ARG 3 dx

@@ -9,6 +9,7 @@ CLASS net/minecraft/class_243 net/minecraft/util/math/Vec3d
 	COMMENT
 	COMMENT @see Vec3i
 	COMMENT @see org.joml.Vector3f
+	FIELD field_1_955 VELOCITY_PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_1350 z D
 		COMMENT The Z coordinate of this vector.
 	FIELD field_1351 y D

@@ -14,6 +14,8 @@ CLASS net/minecraft/class_4286 net/minecraft/client/gui/widget/CheckboxWidget
 		ARG 5 textRenderer
 		ARG 6 checked
 		ARG 7 callback
+	METHOD method_1_4250 isMessageTooLong (Lnet/minecraft/class_327;)Z
+		ARG 1 textRenderer
 	METHOD method_20372 isChecked ()Z
 	METHOD method_54786 getCheckboxSize (Lnet/minecraft/class_327;)I
 		ARG 0 textRenderer

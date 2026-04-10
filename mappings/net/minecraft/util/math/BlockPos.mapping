@@ -20,6 +20,11 @@ CLASS net/minecraft/class_2338 net/minecraft/util/math/BlockPos
 	FIELD field_54979 MAX_XZ I
 	METHOD <init> (Lnet/minecraft/class_2382;)V
 		ARG 1 pos
+	METHOD method_1_4673 iterateInCrossColumn (IIII)Ljava/lang/Iterable;
+		ARG 0 startX
+		ARG 1 startY
+		ARG 2 startZ
+		ARG 3 targetY
 	METHOD method_10060 offset (JLnet/minecraft/class_2350;)J
 		ARG 0 value
 		ARG 2 direction
@@ -257,6 +262,9 @@ CLASS net/minecraft/class_2338 net/minecraft/util/math/BlockPos
 	CLASS 4 4
 		FIELD field_48434 pos Lnet/minecraft/class_2338$class_2339;
 		FIELD field_48435 index I
+	CLASS 5 5
+		FIELD field_1_3832 mutable Lnet/minecraft/class_2338$class_2339;
+		FIELD field_1_3833 index I
 	CLASS 6 6
 		FIELD field_48440 directions [Lnet/minecraft/class_2350;
 		FIELD field_48441 pos Lnet/minecraft/class_2338$class_2339;
@@ -282,6 +290,7 @@ CLASS net/minecraft/class_2338 net/minecraft/util/math/BlockPos
 		FIELD field_61961 axis3x I
 		FIELD field_61962 axis3y I
 		FIELD field_61963 axis3z I
+	CLASS class_1_657 QueuedPos
 	CLASS class_2339 Mutable
 		METHOD <init> (DDD)V
 			ARG 1 x

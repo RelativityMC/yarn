@@ -33,6 +33,16 @@ CLASS net/minecraft/class_287 net/minecraft/client/render/BufferBuilder
 		ARG 1 allocator
 		ARG 2 drawMode
 		ARG 3 vertexFormat
+	METHOD method_1_4142 normal (JFFF)V
+		ARG 0 offset
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1_4143 vertex (JFFF)V
+		ARG 0 offset
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_60794 endNullable ()Lnet/minecraft/class_9801;
 	METHOD method_60795 floatToByte (F)B
 		ARG 0 f

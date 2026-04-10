@@ -1,0 +1,25 @@
+CLASS net/minecraft/class_11541 net/minecraft/client/gl/GlDeviceInfo
+	FIELD field_1_3852 LOGGER Lorg/slf4j/Logger;
+	FIELD field_61072 alwaysCreateFreshImmediateBuffer Z
+	FIELD field_61073 OTHER_INTEL_DEVICES Ljava/util/List;
+	FIELD field_61074 ATOM_DEVICES Ljava/util/List;
+	FIELD field_61075 CELERON_DEVICES Ljava/util/List;
+	FIELD field_61076 PENTIUM_DEVICES Ljava/util/List;
+	FIELD field_63062 writeToBufferIsSlow Z
+	FIELD field_64657 anisotropyHasKnownIssue Z
+	METHOD <init> (Ljava/lang/String;)V
+		ARG 1 glRenderer
+	METHOD method_1_4679 getGpuDeviceInfo (Lorg/lwjgl/opengl/GLCapabilities;ILjava/util/Set;)Lnet/minecraft/class_1_664;
+		ARG 1 capabilities
+		ARG 2 maxAnisotropy
+		ARG 3 underlyingExtensions
+	METHOD method_1_4680 getMaxTextureSize ()I
+	METHOD method_72242 alwaysCreateFreshImmediateBuffer ()Z
+	METHOD method_72244 requiresRecreateOnUploadToBuffer (Ljava/lang/String;)Z
+		ARG 0 glRenderer
+	METHOD method_74912 writeToBufferIsSlow ()Z
+	METHOD method_74913 shouldDisableArbDirectAccess (Ljava/lang/String;)Z
+		ARG 0 glRenderer
+	METHOD method_76745 anisotropyHasKnownIssues ()Z
+	METHOD method_76746 shouldUseRgssOnFabulous (Ljava/lang/String;)Z
+		ARG 0 glRenderer

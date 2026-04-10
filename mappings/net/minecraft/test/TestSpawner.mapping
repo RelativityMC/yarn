@@ -1,0 +1,20 @@
+CLASS net/minecraft/class_1_777 net/minecraft/test/TestSpawner
+	FIELD field_1_3857 type Lnet/minecraft/class_1299;
+	FIELD field_1_3858 pos Lnet/minecraft/class_243;
+	FIELD field_1_3859 persistent Z
+	FIELD field_1_3860 rotation Lnet/minecraft/class_2470;
+	FIELD field_1_3861 spawnReason Lnet/minecraft/class_3730;
+	FIELD field_1_3862 testContext Lnet/minecraft/class_4516;
+	METHOD <init> (Lnet/minecraft/class_4516;Lnet/minecraft/class_1299;Lnet/minecraft/class_243;)V
+		ARG 1 testContext
+		ARG 2 type
+		ARG 3 pos
+	METHOD method_1_4697 setPersistent (Z)Lnet/minecraft/class_1_777;
+		ARG 1 persistent
+	METHOD method_1_4698 setRotation (Lnet/minecraft/class_2470;)Lnet/minecraft/class_1_777;
+		ARG 1 rotation
+	METHOD method_1_4699 spawn ()Lnet/minecraft/class_1297;
+	METHOD method_1_4700 spawn (I)Ljava/util/List;
+		ARG 1 count
+	METHOD method_1_4701 setSpawnReason (Lnet/minecraft/class_3730;)Lnet/minecraft/class_1_777;
+		ARG 1 spawnReason

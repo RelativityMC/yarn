@@ -9,6 +9,7 @@ CLASS net/minecraft/class_1481 net/minecraft/entity/passive/TurtleEntity
 	FIELD field_56656 travelPos Lnet/minecraft/class_2338;
 	FIELD field_56657 landBound Z
 	FIELD field_57620 DEFAULT_HAS_EGG Z
+	METHOD method_1_4363 getHomePos ()Lnet/minecraft/class_2338;
 	METHOD method_6676 setDiggingSand (Z)V
 		ARG 1 diggingSand
 	METHOD method_6679 hasEgg ()Z

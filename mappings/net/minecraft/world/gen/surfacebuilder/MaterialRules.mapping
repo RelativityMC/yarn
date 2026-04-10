@@ -87,6 +87,8 @@ CLASS net/minecraft/class_6686 net/minecraft/world/gen/surfacebuilder/MaterialRu
 			ARG 1 context
 		METHOD equals (Ljava/lang/Object;)Z
 			ARG 1 o
+		METHOD method_40159 (Lnet/minecraft/class_6686$class_6689;)Ljava/util/List;
+			ARG 0 condition
 		CLASS class_6690 BiomePredicate
 	CLASS class_6691 BlockMaterialRule
 		FIELD field_35231 CODEC Lnet/minecraft/class_7243;
@@ -101,6 +103,8 @@ CLASS net/minecraft/class_6686 net/minecraft/world/gen/surfacebuilder/MaterialRu
 		METHOD method_39064 codec ()Lnet/minecraft/class_7243;
 		METHOD method_39070 registerAndGetDefault (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
 			ARG 0 registry
+		METHOD method_42378 (Lnet/minecraft/class_6686$class_6693;)Lcom/mojang/serialization/MapCodec;
+			ARG 0 condition
 	CLASS class_6694 MaterialRuleContext
 		FIELD field_35233 surfaceBuilder Lnet/minecraft/class_6724;
 		FIELD field_35234 biomeTemperaturePredicate Lnet/minecraft/class_6686$class_6692;
@@ -200,6 +204,8 @@ CLASS net/minecraft/class_6686 net/minecraft/world/gen/surfacebuilder/MaterialRu
 		METHOD method_39061 codec ()Lnet/minecraft/class_7243;
 		METHOD method_39085 registerAndGetDefault (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
 			ARG 0 registry
+		METHOD method_42379 (Lnet/minecraft/class_6686$class_6708;)Lcom/mojang/serialization/MapCodec;
+			ARG 0 rule
 	CLASS class_6709 SequenceBlockStateRule
 		COMMENT Applies the given block state rules in sequence, and returns the first result that
 		COMMENT isn't {@code null}. Returns {@code null} if none of the passed rules match.

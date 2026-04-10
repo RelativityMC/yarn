@@ -46,5 +46,17 @@ CLASS net/minecraft/class_1_715 net/minecraft/client/vulkan/VulkanCommandEncoder
 		ARG 1 vkSemaphore
 		ARG 3 value
 		ARG 5 stageMask
+	METHOD method_1_4276 writeToTexture (Lnet/minecraft/class_1_703;Lnet/minecraft/class_1_694;JIIIIIIII)V
+		ARG 1 target
+		ARG 2 source
+		ARG 3 sourceOffset
+		ARG 5 mipLevel
+		ARG 6 depth
+		ARG 7 offsetX
+		ARG 8 offsetY
+		ARG 9 width
+		ARG 10 height
+		ARG 11 sourceWidth
+		ARG 12 sourceHeight
 	CLASS 1 1
 		FIELD field_1_3668 buffer Lorg/lwjgl/PointerBuffer;

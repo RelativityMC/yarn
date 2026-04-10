@@ -14,11 +14,14 @@ CLASS net/minecraft/class_1_702 net/minecraft/client/vulkan/VulkanSurfaceBackend
 	FIELD field_1_3604 swapchainOutdated Z
 	FIELD field_1_3605 needsReconfigure Z
 	FIELD field_1_3606 width I
+	FIELD field_1_3853 supportedPresentModes Ljava/util/Set;
+	FIELD field_1_3854 surfaceFormat I
 	METHOD <init> (Lnet/minecraft/class_1_679;J)V
 		ARG 1 device
 		ARG 2 window
 	METHOD method_1_4205 freeCurrentSwapchain ()V
-	METHOD method_1_4206 selectPresentMode (Ljava/nio/IntBuffer;)Ljava/util/Set;
+	METHOD method_1_4206 decodeSupportedPresentModes (Ljava/nio/IntBuffer;)Ljava/util/Set;
+		ARG 1 rawPresentModes
 	METHOD method_1_4207 findCompatibleSurfaceFormat (Lorg/lwjgl/vulkan/VkSurfaceFormatKHR$Buffer;)Lorg/lwjgl/vulkan/VkSurfaceFormatKHR;
 		ARG 1 surfaceFormats
 	METHOD method_1_4208 reportSurfaceError (ILjava/lang/String;)V

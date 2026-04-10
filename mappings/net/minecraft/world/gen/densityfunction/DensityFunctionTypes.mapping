@@ -197,6 +197,8 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 			FIELD field_37089 codec Lnet/minecraft/class_7243;
 			METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
 				ARG 3 name
+			METHOD method_41082 (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6916$class_7052;
+				ARG 1 f
 	CLASS class_6929 LinearOperation
 		CLASS class_6930 SpecificType
 	CLASS class_6931 Noise
@@ -267,10 +269,20 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 			FIELD field_37112 name Ljava/lang/String;
 			METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
 				ARG 3 name
+			METHOD method_41098 (Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6916$class_7055;
+				ARG 1 first
+				ARG 2 second
 	CLASS class_7076 Spline
+		FIELD field_1_3760 function Lnet/minecraft/class_6501;
+		FIELD field_1_3761 spline Lnet/minecraft/class_6492;
 		FIELD field_37255 CODEC_HOLDER Lnet/minecraft/class_7243;
 		FIELD field_37256 SPLINE_FUNCTION_CODEC Lcom/mojang/serialization/MapCodec;
 		FIELD field_37678 SPLINE_CODEC Lcom/mojang/serialization/Codec;
+		METHOD <init> (Lnet/minecraft/class_6492;)V
+			ARG 1 spline
+		METHOD equals (Ljava/lang/Object;)Z
+			ARG 1 other
+		METHOD method_1_4461 getSpline ()Lnet/minecraft/class_6492;
 		METHOD method_41197 (Lnet/minecraft/class_6910$class_6915;Lnet/minecraft/class_6916$class_7076$class_7135;)Lnet/minecraft/class_6916$class_7076$class_7135;
 			ARG 1 densityFunctionWrapper
 		CLASS class_7135 DensityFunctionWrapper

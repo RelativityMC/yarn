@@ -1,1 +1,5 @@
 CLASS net/minecraft/class_1_761 net/minecraft/world/gen/feature/TemplateFeature
+	METHOD method_1_4614 getCenteringComponent (Lnet/minecraft/class_2470;Lnet/minecraft/class_2350$class_2351;Lnet/minecraft/class_3499;)Lnet/minecraft/class_2382;
+		ARG 1 rotation
+		ARG 2 axis
+		ARG 3 template

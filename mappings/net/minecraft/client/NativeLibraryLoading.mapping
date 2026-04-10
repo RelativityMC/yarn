@@ -25,6 +25,10 @@ CLASS net/minecraft/class_1_741 net/minecraft/client/NativeLibraryLoading
 	METHOD method_1_4480 getStdoutSupplier ()Ljava/util/function/Supplier;
 	METHOD method_1_4481 createFileLock (Ljava/nio/channels/FileChannel;)Ljava/nio/channels/FileLock;
 		ARG 0 channel
+	METHOD method_1_4693 loadShaderc ()V
+	METHOD method_1_4694 loadSpvc ()V
+	METHOD method_1_4695 loadVma ()V
+	METHOD method_1_4696 loadVulkan ()V
 	CLASS class_1_742 ToggledRecordingPrintStream
 		FIELD field_1_3764 byteOutput Lnet/minecraft/class_1_741$class_1_743;
 		METHOD <init> (Ljava/io/OutputStream;)V

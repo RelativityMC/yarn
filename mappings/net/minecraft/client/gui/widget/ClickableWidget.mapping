@@ -20,6 +20,10 @@ CLASS net/minecraft/class_339 net/minecraft/client/gui/widget/ClickableWidget
 		ARG 3 width
 		ARG 4 height
 		ARG 5 message
+	METHOD method_1_4445 renderWidgetTooltip (Lnet/minecraft/class_332;II)V
+		ARG 1 context
+		ARG 2 mouseX
+		ARG 3 mouseY
 	METHOD method_25348 onClick (Lnet/minecraft/class_11909;Z)V
 		ARG 1 click
 		ARG 2 doubled

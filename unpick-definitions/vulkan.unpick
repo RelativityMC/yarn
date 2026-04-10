@@ -414,6 +414,12 @@ group int vk_image_aspect_flag_bits
 target_method org.lwjgl.vulkan.VkImageSubresourceRange aspectMask (I)Lorg/lwjgl/vulkan/VkImageSubresourceRange;
 	param 0 vk_image_aspect_flag_bits
 
+target_method org.lwjgl.vulkan.VkImageSubresourceLayers aspectMask (I)Lorg/lwjgl/vulkan/VkImageSubresourceLayers;
+	param 0 vk_image_aspect_flag_bits
+
+target_method net.minecraft.client.vulkan.VulkanConst getVkAspectMask (Lcom/mojang/blaze3d/textures/TexelFormat;)I
+	return vk_image_aspect_flag_bits
+
 # https://docs.vulkan.org/refpages/latest/refpages/source/VkPipelineStageFlagBits.html
 group int vk_pipeline_stage_flag_bits
 	@flags
@@ -505,6 +511,24 @@ target_method org.lwjgl.vulkan.VkBufferCreateInfo usage (I)Lorg/lwjgl/vulkan/VkB
 
 target_method net.minecraft.client.vulkan.VulkanConst toVkBufferUsage (I)I
 	return vk_buffer_usage_flag_bits
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkSemaphoreType.html
+group int vk_semaphore_type
+	org.lwjgl.vulkan.VK12.VK_SEMAPHORE_TYPE_BINARY
+	org.lwjgl.vulkan.VK12.VK_SEMAPHORE_TYPE_TIMELINE
+
+target_method org.lwjgl.vulkan.VkSemaphoreTypeCreateInfo semaphoreType (I)Lorg/lwjgl/vulkan/VkSemaphoreTypeCreateInfo;
+	param 0 vk_semaphore_type
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkCommandPoolCreateFlagBits.html
+group int vk_command_pool_create_flag_bits
+	@flags
+	org.lwjgl.vulkan.VK10.VK_COMMAND_POOL_CREATE_TRANSIENT_BIT
+	org.lwjgl.vulkan.VK10.VK_COMMAND_POOL_CREATE_RESET_COMMAND_BUFFER_BIT
+	org.lwjgl.vulkan.VK11.VK_COMMAND_POOL_CREATE_PROTECTED_BIT
+
+target_method org.lwjgl.vulkan.VkCommandPoolCreateInfo flags (I)Lorg/lwjgl/vulkan/VkCommandPoolCreateInfo;
+	param 0 vk_command_pool_create_flag_bits
 
 # ========================================
 # Target definition for actual usages

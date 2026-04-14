@@ -46,7 +46,8 @@ public record NameProposalConfig(FieldNameProvider fieldNameProvider) {
 								|| owner.equals("net/minecraft/class_1_786")
 								|| owner.equals("net/minecraft/class_1_789")
 								|| owner.equals("net/minecraft/class_1_793")
-								|| owner.equals("net/minecraft/class_1_819");
+								|| owner.equals("net/minecraft/class_1_819")
+								|| owner.equals("net/minecraft/class_3612");
 					}),
 					List.of(
 							new StaticFieldPredicate(true),

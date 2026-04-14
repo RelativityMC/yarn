@@ -1,5 +1,5 @@
-CLASS net/minecraft/class_3612 net/minecraft/fluid/Fluids
-	FIELD field_15907 FLOWING_LAVA Lnet/minecraft/class_5321;
-	FIELD field_15908 LAVA Lnet/minecraft/class_5321;
-	FIELD field_15909 FLOWING_WATER Lnet/minecraft/class_5321;
-	FIELD field_15910 WATER Lnet/minecraft/class_5321;
+CLASS net/minecraft/class_1_792 net/minecraft/fluid/Fluids
+	FIELD field_1_5606 FLOWING_LAVA Lnet/minecraft/class_3609;
+	FIELD field_1_5607 FLOWING_WATER Lnet/minecraft/class_3609;
+	FIELD field_1_5608 LAVA Lnet/minecraft/class_3609;
+	FIELD field_1_5609 WATER Lnet/minecraft/class_3609;

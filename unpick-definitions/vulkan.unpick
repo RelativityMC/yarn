@@ -957,6 +957,9 @@ target_method org.lwjgl.vulkan.VkPipelineDepthStencilStateCreateInfo depthCompar
 target_method net.minecraft.client.vulkan.VulkanConst toVkDepthTest (Lcom/mojang/blaze3d/pipeline/DepthTest;)I
 	return vk_compare_op
 
+target_method org.lwjgl.vulkan.VkSamplerCreateInfo compareOp (I)Lorg/lwjgl/vulkan/VkSamplerCreateInfo;
+	param 0 vk_compare_op
+
 # https://docs.vulkan.org/refpages/latest/refpages/source/VkBlendFactor.html
 group int vk_blend_factor
 	org.lwjgl.vulkan.VK10.VK_BLEND_FACTOR_ZERO
@@ -1070,6 +1073,60 @@ target_method org.lwjgl.vulkan.VkPipelineColorBlendAttachmentState$Buffer colorW
 
 target_method net.minecraft.client.vulkan.VulkanConst getVkColorWriteMask (Lcom/mojang/blaze3d/pipeline/ColorTargetState;)I
 	return vk_color_component_flag_bits
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkFilter.html
+group int vk_filter
+	org.lwjgl.vulkan.VK10.VK_FILTER_NEAREST
+	org.lwjgl.vulkan.VK10.VK_FILTER_LINEAR
+
+target_method org.lwjgl.vulkan.VkSamplerCreateInfo magFilter (I)Lorg/lwjgl/vulkan/VkSamplerCreateInfo;
+	param 0 vk_filter
+
+target_method org.lwjgl.vulkan.VkSamplerCreateInfo minFilter (I)Lorg/lwjgl/vulkan/VkSamplerCreateInfo;
+	param 0 vk_filter
+
+target_method net.minecraft.client.vulkan.VulkanConst toVkFilterMode (Lcom/mojang/blaze3d/textures/FilterMode;)I
+	return vk_filter
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkSamplerMipmapMode.html
+group int vk_sampler_mipmap_mode
+	org.lwjgl.vulkan.VK10.VK_SAMPLER_MIPMAP_MODE_NEAREST
+	org.lwjgl.vulkan.VK10.VK_SAMPLER_MIPMAP_MODE_LINEAR
+
+target_method org.lwjgl.vulkan.VkSamplerCreateInfo mipmapMode (I)Lorg/lwjgl/vulkan/VkSamplerCreateInfo;
+	param 0 vk_sampler_mipmap_mode
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkSamplerAddressMode.html
+group int vk_sampler_address_mode
+	org.lwjgl.vulkan.VK10.VK_SAMPLER_ADDRESS_MODE_REPEAT
+	org.lwjgl.vulkan.VK10.VK_SAMPLER_ADDRESS_MODE_MIRRORED_REPEAT
+	org.lwjgl.vulkan.VK10.VK_SAMPLER_ADDRESS_MODE_CLAMP_TO_EDGE
+	org.lwjgl.vulkan.VK10.VK_SAMPLER_ADDRESS_MODE_CLAMP_TO_BORDER
+	org.lwjgl.vulkan.VK12.VK_SAMPLER_ADDRESS_MODE_MIRROR_CLAMP_TO_EDGE
+
+target_method org.lwjgl.vulkan.VkSamplerCreateInfo addressModeU (I)Lorg/lwjgl/vulkan/VkSamplerCreateInfo;
+	param 0 vk_sampler_address_mode
+
+target_method org.lwjgl.vulkan.VkSamplerCreateInfo addressModeV (I)Lorg/lwjgl/vulkan/VkSamplerCreateInfo;
+	param 0 vk_sampler_address_mode
+
+target_method org.lwjgl.vulkan.VkSamplerCreateInfo addressModeW (I)Lorg/lwjgl/vulkan/VkSamplerCreateInfo;
+	param 0 vk_sampler_address_mode
+
+target_method net.minecraft.client.vulkan.VulkanConst toVkAddressMode (Lcom/mojang/blaze3d/textures/AddressMode;)I
+	return vk_sampler_address_mode
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkBorderColor.html
+group int vk_border_color
+	org.lwjgl.vulkan.VK10.VK_BORDER_COLOR_FLOAT_TRANSPARENT_BLACK
+	org.lwjgl.vulkan.VK10.VK_BORDER_COLOR_INT_TRANSPARENT_BLACK
+	org.lwjgl.vulkan.VK10.VK_BORDER_COLOR_FLOAT_OPAQUE_BLACK
+	org.lwjgl.vulkan.VK10.VK_BORDER_COLOR_INT_OPAQUE_BLACK
+	org.lwjgl.vulkan.VK10.VK_BORDER_COLOR_FLOAT_OPAQUE_WHITE
+	org.lwjgl.vulkan.VK10.VK_BORDER_COLOR_INT_OPAQUE_WHITE
+
+target_method org.lwjgl.vulkan.VkSamplerCreateInfo borderColor (I)Lorg/lwjgl/vulkan/VkSamplerCreateInfo;
+	param 0 vk_border_color
 
 # ========================================
 # Target definition for actual usages

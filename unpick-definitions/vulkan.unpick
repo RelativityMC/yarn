@@ -1128,6 +1128,39 @@ group int vk_border_color
 target_method org.lwjgl.vulkan.VkSamplerCreateInfo borderColor (I)Lorg/lwjgl/vulkan/VkSamplerCreateInfo;
 	param 0 vk_border_color
 
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkDebugUtilsMessageSeverityFlagBitsEXT.html
+group int vk_debug_utils_message_severity_flag_bits_ext
+	@flags
+	org.lwjgl.vulkan.EXTDebugUtils.VK_DEBUG_UTILS_MESSAGE_SEVERITY_VERBOSE_BIT_EXT
+	org.lwjgl.vulkan.EXTDebugUtils.VK_DEBUG_UTILS_MESSAGE_SEVERITY_INFO_BIT_EXT
+	org.lwjgl.vulkan.EXTDebugUtils.VK_DEBUG_UTILS_MESSAGE_SEVERITY_WARNING_BIT_EXT
+	org.lwjgl.vulkan.EXTDebugUtils.VK_DEBUG_UTILS_MESSAGE_SEVERITY_ERROR_BIT_EXT
+
+# TODO net.minecraft.client.vulkan.DebugBackend$Debug <clinit> not unpicked due to unpick limitations
+
+target_method org.lwjgl.vulkan.VkDebugUtilsMessengerCreateInfoEXT messageSeverity (I)Lorg/lwjgl/vulkan/VkDebugUtilsMessengerCreateInfoEXT;
+	param 0 vk_debug_utils_message_severity_flag_bits_ext
+
+target_field net.minecraft.client.vulkan.DebugBackend$Debug logLevelFlags I vk_debug_utils_message_severity_flag_bits_ext
+
+target_method net.minecraft.client.vulkan.DebugBackend$Debug debugMessengerCallback (IIJJ)I
+	param 0 vk_debug_utils_message_severity_flag_bits_ext
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkDebugUtilsMessageTypeFlagBitsEXT.html
+group int vk_debug_utils_message_type_flag_bits_ext
+	@flags
+	org.lwjgl.vulkan.EXTDebugUtils.VK_DEBUG_UTILS_MESSAGE_TYPE_GENERAL_BIT_EXT
+	org.lwjgl.vulkan.EXTDebugUtils.VK_DEBUG_UTILS_MESSAGE_TYPE_VALIDATION_BIT_EXT
+	org.lwjgl.vulkan.EXTDebugUtils.VK_DEBUG_UTILS_MESSAGE_TYPE_PERFORMANCE_BIT_EXT
+
+target_field net.minecraft.client.vulkan.DebugBackend$Debug MESSAGE_TYPE_FLAGS I vk_debug_utils_message_type_flag_bits_ext
+
+target_method org.lwjgl.vulkan.VkDebugUtilsMessengerCreateInfoEXT messageType (I)Lorg/lwjgl/vulkan/VkDebugUtilsMessengerCreateInfoEXT;
+	param 0 vk_debug_utils_message_type_flag_bits_ext
+
+target_method net.minecraft.client.vulkan.DebugBackend$Debug debugMessengerCallback (IIJJ)I
+	param 1 vk_debug_utils_message_type_flag_bits_ext
+
 # ========================================
 # Target definition for actual usages
 # ========================================

@@ -16,15 +16,20 @@
 
 package net.fabricmc.filament.nameproposal.field;
 
+import java.util.Map;
+
 import org.objectweb.asm.tree.FieldInsnNode;
 import org.objectweb.asm.tree.MethodInsnNode;
+
+import net.fabricmc.filament.nameproposal.MappingEntry;
 
 public record FieldData(
 		FieldInsnNode fieldNode,
 		MethodInsnNode methodNode,
 		Object[] args,
 		boolean isStatic,
-		boolean isEnum
+		boolean isEnum,
+		Map<MappingEntry, String> proposedFieldNames
 ) {
 	public String owner() {
 		return this.fieldNode.owner;

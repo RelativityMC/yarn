@@ -21,6 +21,7 @@ import java.util.List;
 import net.fabricmc.filament.nameproposal.field.nameprovider.ConditionalFieldNameProvider;
 import net.fabricmc.filament.nameproposal.field.nameprovider.ConstantFieldNameProvider;
 import net.fabricmc.filament.nameproposal.field.nameprovider.FieldNameProvider;
+import net.fabricmc.filament.nameproposal.field.nameprovider.RecursiveArgumentFieldNameProvider;
 import net.fabricmc.filament.nameproposal.field.nameprovider.SequenceFieldNameProvider;
 import net.fabricmc.filament.nameproposal.field.nameprovider.StringArgumentFieldNameProvider;
 import net.fabricmc.filament.nameproposal.field.predicate.DescriptorFieldPredicate;
@@ -31,6 +32,15 @@ public record NameProposalConfig(FieldNameProvider fieldNameProvider) {
 	public static final NameProposalConfig DEFAULT = new NameProposalConfig(new SequenceFieldNameProvider(List.of(
 			new ConditionalFieldNameProvider(
 					StringArgumentFieldNameProvider.INSTANCE,
+					List.of(
+							new StaticFieldPredicate(true),
+							InternalInitFieldPredicate.INSTANCE
+					)
+			),
+			new ConditionalFieldNameProvider(
+					new RecursiveArgumentFieldNameProvider(owner -> {
+						return owner.equals("net/minecraft/class_1_786");
+					}),
 					List.of(
 							new StaticFieldPredicate(true),
 							InternalInitFieldPredicate.INSTANCE

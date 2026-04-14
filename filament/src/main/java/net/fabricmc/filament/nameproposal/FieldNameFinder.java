@@ -18,6 +18,7 @@ package net.fabricmc.filament.nameproposal;
 
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -47,25 +48,39 @@ public class FieldNameFinder {
 
 		Analyzer<SourceValue> analyzer = new Analyzer<>(new SourceInterpreter());
 		Map<MappingEntry, String> fieldNames = new HashMap<>();
+		Set<MappingEntry> attemptedProposals = new HashSet<>();
+		Map<String, ConflictChecker<FieldData>> conflictCheckers = new HashMap<>();
+		int passes = 0;
 
-		for (Map.Entry<String, List<MethodNode>> entry : classes.entrySet()) {
-			String owner = entry.getKey();
-			Set<String> enumFields = allEnumFields.getOrDefault(owner, Collections.emptySet());
+		while (true) {
+			System.out.println(String.format("Name proposal running (pass %d)", ++passes));
 
-			String[] parts = owner.split("/");
-			String shortOwner = parts.length > 0 ? parts[parts.length - 1] : owner;
+			boolean proposedAnyNames = false;
 
-			ConflictChecker<FieldData> checker = new ConflictChecker<>(shortOwner + " field");
+			for (Map.Entry<String, List<MethodNode>> entry : classes.entrySet()) {
+				String owner = entry.getKey();
+				Set<String> enumFields = allEnumFields.getOrDefault(owner, Collections.emptySet());
 
-			for (MethodNode mn : entry.getValue()) {
-				findMethodNames(nameProvider, analyzer, fieldNames, owner, enumFields, checker, mn);
+				ConflictChecker<FieldData> checker = conflictCheckers.computeIfAbsent(owner, owner1 -> {
+					String[] parts = owner1.split("/");
+					String shortOwner = parts.length > 0 ? parts[parts.length - 1] : owner1;
+					return new ConflictChecker<>(shortOwner + " field");
+				});
+
+				for (MethodNode mn : entry.getValue()) {
+					proposedAnyNames |= findMethodNames(nameProvider, analyzer, fieldNames, attemptedProposals, owner, enumFields, checker, mn);
+				}
 			}
+
+			if (!proposedAnyNames) break;
 		}
 
 		return fieldNames;
 	}
 
-	private void findMethodNames(FieldNameProvider nameProvider, Analyzer<SourceValue> analyzer, Map<MappingEntry, String> fieldNames, String owner, Set<String> enumFields, ConflictChecker<FieldData> checker, MethodNode mn) {
+	private boolean findMethodNames(FieldNameProvider nameProvider, Analyzer<SourceValue> analyzer, Map<MappingEntry, String> fieldNames, Set<MappingEntry> attemptedProposals, String owner, Set<String> enumFields, ConflictChecker<FieldData> checker, MethodNode mn) {
+		boolean proposedAnyNames = false;
+
 		Frame<SourceValue>[] frames;
 
 		try {
@@ -83,6 +98,9 @@ public class FieldNameFinder {
 			if (instr2.getOpcode() != Opcodes.PUTSTATIC) continue;
 			FieldInsnNode fieldNode = (FieldInsnNode) instr2;
 
+			MappingEntry mappingEntry = new MappingEntry(fieldNode.owner, fieldNode.name, fieldNode.desc);
+			if (attemptedProposals.contains(mappingEntry)) continue;
+
 			if (instr1.getOpcode() != Opcodes.INVOKESTATIC && instr1.getOpcode() != Opcodes.INVOKESPECIAL) continue;
 			if (!(instr1 instanceof MethodInsnNode methodNode)) continue;
 
@@ -95,24 +113,31 @@ public class FieldNameFinder {
 				for (AbstractInsnNode ci : sv.insns) {
 					if (ci instanceof LdcInsnNode node && node.cst instanceof String arg) {
 						args[j] = arg;
+					} else {
+						args[j] = ci;
 					}
 				}
 			}
 
 			boolean isEnum = enumFields.contains(fieldNode.desc + fieldNode.name);
-			var field = new FieldData(fieldNode, methodNode, args, true, isEnum);
+			var field = new FieldData(fieldNode, methodNode, args, true, isEnum, fieldNames);
 			var name = nameProvider.getName(field);
 
 			if (name != null) {
+				attemptedProposals.add(mappingEntry);
+
 				if (checker.add(name, field)) {
 					if (name.equals(((FieldInsnNode) instr2).name)) {
 						// No need to map names that are already named what we want to name it.
 						continue;
 					}
 
-					fieldNames.put(new MappingEntry(fieldNode.owner, fieldNode.name, fieldNode.desc), name);
+					fieldNames.put(mappingEntry, name);
+					proposedAnyNames |= true;
 				}
 			}
 		}
+
+		return proposedAnyNames;
 	}
 }

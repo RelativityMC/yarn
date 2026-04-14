@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_797
+	CLASS class_1_799
+		METHOD method_62973 setSectionPos (J)V
+		METHOD method_62975 getSectionPos ()J

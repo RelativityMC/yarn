@@ -871,90 +871,42 @@ CLASS net/minecraft/class_1802 net/minecraft/item/Items
 		ARG 0 registries
 	METHOD method_1_2928 (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_6885;
 		ARG 0 registries
-	METHOD method_1_3956 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 color
 	METHOD method_1_3957 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
 		ARG 0 settings
 	METHOD method_1_3958 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
 		ARG 0 settings
-	METHOD method_1_3959 (Ljava/lang/String;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
-		ARG 0 path
+	METHOD method_1_3959 (Lnet/minecraft/class_5321;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
 		ARG 1 color
-	METHOD method_1_3960 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
-		ARG 0 color
-	METHOD method_1_3961 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 color
-	METHOD method_1_3962 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 color
+	METHOD method_1_3962 (Lnet/minecraft/class_1_784;Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
+		ARG 2 color
 	METHOD method_1_3963 (Lnet/minecraft/class_1767;Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
 		ARG 1 block_
 		ARG 2 settings
 	METHOD method_1_3964 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
 		ARG 0 settings
-	METHOD method_1_3965 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 item
-	METHOD method_1_3966 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_1792;
-		ARG 0 block
-	METHOD method_1_3967 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 color
-	METHOD method_1_3968 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 color
+	METHOD method_1_3968 (Lnet/minecraft/class_1_784;Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
+		ARG 2 color
 	METHOD method_1_3969 (Lnet/minecraft/class_1767;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
 		ARG 1 settings
-	METHOD method_1_3970 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
-		ARG 0 block
+	METHOD method_1_3977 (Lnet/minecraft/class_5321;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
 		ARG 1 color
-	METHOD method_1_3971 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 color
-	METHOD method_1_3972 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 color
-	METHOD method_1_3973 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 color
-	METHOD method_1_3974 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 color
-	METHOD method_1_3975 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 color
-	METHOD method_1_3976 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_1792;
-		ARG 0 block
-	METHOD method_1_3977 (Ljava/lang/String;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
-		ARG 0 path
-		ARG 1 color
-	METHOD method_7989 register (Lnet/minecraft/class_2248;)Lnet/minecraft/class_1792;
-		ARG 0 block
-	METHOD method_7990 register (Ljava/lang/String;)Lnet/minecraft/class_1792;
-		ARG 0 id
-	METHOD method_7991 register (Ljava/lang/String;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 id
+	METHOD method_7989 register (Lnet/minecraft/class_1_784;Lnet/minecraft/class_2248;)Lnet/minecraft/class_1792;
+	METHOD method_7990 register (Lnet/minecraft/class_5321;)Lnet/minecraft/class_1792;
+	METHOD method_7991 register (Lnet/minecraft/class_5321;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
 		ARG 1 settings
-	METHOD method_7992 register (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 settings
-	METHOD method_7993 register (Lnet/minecraft/class_2248;Ljava/util/function/BiFunction;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 factory
-	METHOD method_35220 register (Lnet/minecraft/class_2248;[Lnet/minecraft/class_2248;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 blocks
+	METHOD method_7992 register (Lnet/minecraft/class_1_784;Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
+		ARG 2 settings
+	METHOD method_7993 register (Lnet/minecraft/class_1_784;Lnet/minecraft/class_2248;Ljava/util/function/BiFunction;)Lnet/minecraft/class_1792;
+		ARG 2 factory
+	METHOD method_35220 register (Lnet/minecraft/class_1_784;Lnet/minecraft/class_2248;[Lnet/minecraft/class_2248;)Lnet/minecraft/class_1792;
+		ARG 2 blocks
 	METHOD method_51348 register (Lnet/minecraft/class_5321;Ljava/util/function/Function;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 key
 		ARG 1 factory
 		ARG 2 settings
 	METHOD method_58095 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
 		ARG 0 settings
-	METHOD method_58096 register (Lnet/minecraft/class_2248;Ljava/util/function/UnaryOperator;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 settingsOperator
+	METHOD method_58096 register (Lnet/minecraft/class_1_784;Lnet/minecraft/class_2248;Ljava/util/function/UnaryOperator;)Lnet/minecraft/class_1792;
+		ARG 2 settingsOperator
 	METHOD method_58097 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
 		ARG 0 settings
 	METHOD method_58098 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
@@ -1053,20 +1005,14 @@ CLASS net/minecraft/class_1802 net/minecraft/item/Items
 	METHOD method_63745 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
 		ARG 0 block
 		ARG 1 settings
-	METHOD method_63746 keyOf (Lnet/minecraft/class_5321;)Lnet/minecraft/class_5321;
-		ARG 0 blockKey
 	METHOD method_63747 register (Lnet/minecraft/class_5321;Ljava/util/function/Function;)Lnet/minecraft/class_1792;
-		ARG 0 key
 		ARG 1 factory
-	METHOD method_63748 register (Lnet/minecraft/class_2248;Ljava/util/function/BiFunction;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 block
+	METHOD method_63748 register (Lnet/minecraft/class_1_784;Lnet/minecraft/class_2248;Ljava/util/function/BiFunction;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
+		ARG 2 factory
+		ARG 3 settings
+	METHOD method_63749 register (Lnet/minecraft/class_1_784;Ljava/util/function/Function;)Lnet/minecraft/class_1792;
 		ARG 1 factory
-		ARG 2 settings
-	METHOD method_63749 register (Ljava/lang/String;Ljava/util/function/Function;)Lnet/minecraft/class_1792;
-		ARG 0 id
-		ARG 1 factory
-	METHOD method_63750 register (Ljava/lang/String;Ljava/util/function/Function;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 id
+	METHOD method_63750 register (Lnet/minecraft/class_1_784;Ljava/util/function/Function;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
 		ARG 1 factory
 		ARG 2 settings
 	METHOD method_63751 (Ljava/util/function/BiFunction;Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
@@ -1102,8 +1048,6 @@ CLASS net/minecraft/class_1802 net/minecraft/item/Items
 		ARG 0 block
 	METHOD method_63813 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
 		ARG 1 settings
-	METHOD method_63814 keyOf (Ljava/lang/String;)Lnet/minecraft/class_5321;
-		ARG 0 id
 	METHOD method_63815 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
 		ARG 0 settings
 	METHOD method_63816 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
@@ -1293,5 +1237,4 @@ CLASS net/minecraft/class_1802 net/minecraft/item/Items
 	METHOD method_73100 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
 		ARG 0 block
 		ARG 1 settings
-	METHOD method_76591 registerSpawnEgg (Lnet/minecraft/class_1299;)Lnet/minecraft/class_1792;
-		ARG 0 type
+	METHOD method_76591 registerSpawnEgg (Lnet/minecraft/class_5321;Lnet/minecraft/class_1299;)Lnet/minecraft/class_1792;

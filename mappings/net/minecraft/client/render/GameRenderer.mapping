@@ -34,11 +34,10 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	FIELD field_60793 fogRenderer Lnet/minecraft/class_758;
 	FIELD field_61733 orderedRenderCommandQueue Lnet/minecraft/class_11661;
 	FIELD field_61734 entityRenderDispatcher Lnet/minecraft/class_11684;
-	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_759;Lnet/minecraft/class_4599;Lnet/minecraft/class_1092;)V
+	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_759;Lnet/minecraft/class_1092;)V
 		ARG 1 client
 		ARG 2 firstPersonHeldItemRenderer
-		ARG 3 buffers
-		ARG 4 bakedModelManager
+		ARG 3 bakedModelManager
 	METHOD method_1_430 getWorldLightmapTextureView ()Lcom/mojang/blaze3d/textures/GpuTextureView;
 	METHOD method_1_431 getLightmapTextureView ()Lcom/mojang/blaze3d/textures/GpuTextureView;
 	METHOD method_1_2674 renderGui (Lnet/minecraft/class_9779;Z)V
@@ -51,9 +50,8 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	METHOD method_1_2679 render (Lnet/minecraft/class_9779;Z)V
 		ARG 1 renderTickCounter
 		ARG 2 tick
-	METHOD method_1_2680 tickCamera (Lnet/minecraft/class_9779;Z)V
+	METHOD method_1_2680 tickCamera (Lnet/minecraft/class_9779;)V
 		ARG 1 renderTickCounter
-		ARG 2 tick
 	METHOD method_3167 onCameraEntitySet (Lnet/minecraft/class_1297;)V
 		ARG 1 entity
 	METHOD method_3169 onResized (II)V
@@ -90,7 +88,6 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 		ARG 1 factory
 	METHOD method_35769 setBlockOutlineEnabled (Z)V
 		ARG 1 blockOutlineEnabled
-	METHOD method_35772 getClient ()Lnet/minecraft/class_310;
 	METHOD method_37473 updateWorldIcon ()V
 	METHOD method_37474 (Ljava/nio/file/Path;)V
 		ARG 1 path
@@ -106,7 +103,6 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 		ARG 2 type
 	METHOD method_71112 setWorld (Lnet/minecraft/class_638;)V
 		ARG 1 world
-	METHOD method_71113 getGlobalSettings ()Lnet/minecraft/class_11284;
 	METHOD method_71114 getDiffuseLighting ()Lnet/minecraft/class_308;
 	METHOD method_71649 getRotatingPanoramaRenderer ()Lnet/minecraft/class_766;
 	METHOD method_72910 getEntityRenderCommandQueue ()Lnet/minecraft/class_11661;

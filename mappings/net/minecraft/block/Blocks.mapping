@@ -110,9 +110,6 @@ CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 		ARG 0 state
 	METHOD method_1_4095 (Lnet/minecraft/class_2680;)I
 		ARG 0 state
-	METHOD method_1_4096 (Lnet/minecraft/class_5955$class_5811;Ljava/lang/Boolean;)Ljava/lang/String;
-		ARG 0 oxidationLevel
-		ARG 1 waxed
 	METHOD method_1_4097 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
 		ARG 0 oxidationLevel
 		ARG 1 settings
@@ -207,14 +204,11 @@ CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 		ARG 1 settings
 	METHOD method_1_4135 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_4970$class_2251;
 		ARG 0 color
-	METHOD method_1_4136 registerSlabBlock (Ljava/lang/String;Lnet/minecraft/class_2248;)Lnet/minecraft/class_2248;
-		ARG 0 id
+	METHOD method_1_4136 registerSlabBlock (Lnet/minecraft/class_1_784;Lnet/minecraft/class_2248;)Lnet/minecraft/class_2248;
 		ARG 1 base
-	METHOD method_1_4137 registerWallBlock (Ljava/lang/String;Lnet/minecraft/class_2248;)Lnet/minecraft/class_2248;
-		ARG 0 id
+	METHOD method_1_4137 registerWallBlock (Lnet/minecraft/class_1_784;Lnet/minecraft/class_2248;)Lnet/minecraft/class_2248;
 		ARG 1 base
-	METHOD method_9492 register (Ljava/lang/String;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
-		ARG 0 id
+	METHOD method_9492 register (Lnet/minecraft/class_1_784;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
 		ARG 1 settings
 	METHOD method_24419 (Lnet/minecraft/class_2680;)I
 		ARG 0 state
@@ -318,10 +312,8 @@ CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 		ARG 0 state
 	METHOD method_32894 (Lnet/minecraft/class_2680;)I
 		ARG 0 state
-	METHOD method_32895 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z
+	METHOD method_32895 (Lnet/minecraft/class_2680;)Z
 		ARG 0 state
-		ARG 1 world
-		ARG 2 pos
 	METHOD method_33357 (Lnet/minecraft/class_2680;)I
 		ARG 0 state
 	METHOD method_36458 (Lnet/minecraft/class_2680;)I
@@ -344,8 +336,7 @@ CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 		ARG 2 pos
 	METHOD method_55132 (Lnet/minecraft/class_2680;)I
 		ARG 0 state
-	METHOD method_55133 registerOldStairsBlock (Ljava/lang/String;Lnet/minecraft/class_2248;)Lnet/minecraft/class_2248;
-		ARG 0 id
+	METHOD method_55133 registerOldStairsBlock (Lnet/minecraft/class_1_784;Lnet/minecraft/class_2248;)Lnet/minecraft/class_2248;
 		ARG 1 base
 	METHOD method_56717 (Lnet/minecraft/class_2680;)I
 		ARG 0 state
@@ -394,10 +385,7 @@ CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 		ARG 2 sounds
 	METHOD method_63062 (Lnet/minecraft/class_3620;Lnet/minecraft/class_3620;Lnet/minecraft/class_2680;)Lnet/minecraft/class_3620;
 		ARG 2 state
-	METHOD method_63063 keyOf (Ljava/lang/String;)Lnet/minecraft/class_5321;
-		ARG 0 id
-	METHOD method_63064 register (Ljava/lang/String;Ljava/util/function/Function;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
-		ARG 0 id
+	METHOD method_63064 register (Lnet/minecraft/class_1_784;Ljava/util/function/Function;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
 		ARG 1 factory
 		ARG 2 settings
 	METHOD method_63065 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
@@ -479,8 +467,7 @@ CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 		ARG 0 settings
 	METHOD method_63121 createNetherStemSettings (Lnet/minecraft/class_3620;)Lnet/minecraft/class_4970$class_2251;
 		ARG 0 mapColor
-	METHOD method_63123 registerStairsBlock (Ljava/lang/String;Lnet/minecraft/class_2248;)Lnet/minecraft/class_2248;
-		ARG 0 id
+	METHOD method_63123 registerStairsBlock (Lnet/minecraft/class_1_784;Lnet/minecraft/class_2248;)Lnet/minecraft/class_2248;
 		ARG 1 base
 	METHOD method_63144 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
 		ARG 0 settings

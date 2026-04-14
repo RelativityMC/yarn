@@ -1,5 +1,2 @@
 CLASS net/minecraft/class_7641 net/minecraft/datafixer/fix/ItemRemoveBlockEntityTagFix
 	FIELD field_39900 itemIds Ljava/util/Set;
-	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Ljava/util/Set;)V
-		ARG 1 outputSchema
-		ARG 2 itemIds

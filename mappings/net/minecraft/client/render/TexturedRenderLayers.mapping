@@ -21,7 +21,6 @@ CLASS net/minecraft/class_4722 net/minecraft/client/render/TexturedRenderLayers
 	FIELD field_42070 ARMOR_TRIMS_RENDER_LAYER Lnet/minecraft/class_1921;
 	FIELD field_42071 ARMOR_TRIMS_ATLAS_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_42910 DECORATED_POT_ATLAS_TEXTURE Lnet/minecraft/class_2960;
-	FIELD field_42911 DECORATED_POT_PATTERN_TEXTURES Ljava/util/Map;
 	FIELD field_46070 ARMOR_TRIMS_DECAL_RENDER_LAYER Lnet/minecraft/class_1921;
 	FIELD field_49769 BANNER_BASE Lnet/minecraft/class_1_310;
 	FIELD field_49770 SHIELD_BASE Lnet/minecraft/class_1_310;
@@ -64,10 +63,6 @@ CLASS net/minecraft/class_4722 net/minecraft/client/render/TexturedRenderLayers
 		ARG 0 type
 	METHOD method_48480 getArmorTrims (Z)Lnet/minecraft/class_1921;
 		ARG 0 decal
-	METHOD method_49341 getDecoratedPotPatternTextureId (Lnet/minecraft/class_5321;)Lnet/minecraft/class_1_310;
-		ARG 0 potPatternKey
-	METHOD method_60576 (Lnet/minecraft/class_6880$class_6883;)Lnet/minecraft/class_1_310;
-		ARG 0 pattern
 	METHOD method_65527 getBedTextureId (Lnet/minecraft/class_1767;)Lnet/minecraft/class_1_310;
 		ARG 0 color
 	METHOD method_65529 createColorId (Lnet/minecraft/class_1767;)Lnet/minecraft/class_2960;

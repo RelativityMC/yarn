@@ -1,8 +1,8 @@
 CLASS net/minecraft/class_11682 net/minecraft/client/render/command/CustomCommandRenderer
-	METHOD method_1_1214 renderOpaque (Lnet/minecraft/class_11788;Lnet/minecraft/class_4597$class_4598;)V
+	METHOD method_1_1214 renderOpaque (Lnet/minecraft/class_11788;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_4618;)V
 		ARG 1 queue
 		ARG 2 vertexConsumers
-	METHOD method_1_1215 renderBlended (Lnet/minecraft/class_11788;Lnet/minecraft/class_4597$class_4598;)V
+	METHOD method_1_1215 renderBlended (Lnet/minecraft/class_11788;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_4618;)V
 		ARG 1 queue
 		ARG 2 vertexConsumers
 	CLASS class_12047 Commands
@@ -13,10 +13,10 @@ CLASS net/minecraft/class_11682 net/minecraft/client/render/command/CustomComman
 		METHOD method_1_1217 (Lnet/minecraft/class_1921;)Z
 			ARG 1 renderLayer
 		METHOD method_74812 clear ()V
-		METHOD method_74813 add (Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;Lnet/minecraft/class_11659$class_11660;)V
+		METHOD method_74813 add (Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;ILnet/minecraft/class_11659$class_11660;)V
 			ARG 1 matrices
 			ARG 2 renderLayer
-			ARG 3 custom
+			ARG 4 custom
 		METHOD method_74814 (Lnet/minecraft/class_1921;)Z
 			ARG 1 renderLayer
 		METHOD method_74815 nextFrame ()V

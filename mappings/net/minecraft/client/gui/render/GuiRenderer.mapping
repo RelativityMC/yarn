@@ -6,19 +6,15 @@ CLASS net/minecraft/class_11228 net/minecraft/client/gui/render/GuiRenderer
 	FIELD field_59912 SIMPLE_ELEMENT_COMPARATOR Ljava/util/Comparator;
 	FIELD field_59914 state Lnet/minecraft/class_11246;
 	FIELD field_59915 draws Ljava/util/List;
-	FIELD field_59916 allocator Lnet/minecraft/class_9799;
 	FIELD field_59917 vertexConsumers Lnet/minecraft/class_4597$class_4598;
 	FIELD field_59918 specialElementRenderers Ljava/util/Map;
 	FIELD field_59924 windowScaleFactor I
 	FIELD field_60034 scissorArea Lnet/minecraft/class_8030;
 	FIELD field_60035 pipeline Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_60036 textureSetup Lnet/minecraft/class_11231;
-	FIELD field_60037 buffer Lnet/minecraft/class_287;
 	FIELD field_60038 SCISSOR_AREA_COMPARATOR Ljava/util/Comparator;
 	FIELD field_60039 TEXTURE_SETUP_COMPARATOR Ljava/util/Comparator;
 	FIELD field_60040 guiProjectionBuffer Lnet/minecraft/class_11278;
-	FIELD field_60310 preparations Ljava/util/List;
-	FIELD field_60311 bufferByVertexFormat Ljava/util/Map;
 	FIELD field_60312 blurLayer I
 	FIELD field_60988 oversizedItems Ljava/util/Map;
 	FIELD field_62147 commandQueue Lnet/minecraft/class_11659;
@@ -40,19 +36,15 @@ CLASS net/minecraft/class_11228 net/minecraft/client/gui/render/GuiRenderer
 	METHOD method_70880 createItemAtlas (Ljava/util/Set;I)Lnet/minecraft/class_1_201;
 		ARG 1 itemModelKeys
 		ARG 2 itemSpriteSize
-	METHOD method_70882 startBuffer (Lcom/mojang/blaze3d/pipeline/RenderPipeline;)Lnet/minecraft/class_287;
-		ARG 1 pipeline
 	METHOD method_70884 enableScissor (Lnet/minecraft/class_8030;Lcom/mojang/blaze3d/systems/RenderPass;)V
 		ARG 1 scissorArea
 		ARG 2 pass
 	METHOD method_70885 scissorChanged (Lnet/minecraft/class_8030;Lnet/minecraft/class_8030;)Z
 		ARG 1 oldScissorArea
 		ARG 2 newScissorArea
-	METHOD method_70886 render (Lnet/minecraft/class_11228$class_11230;Lcom/mojang/blaze3d/systems/RenderPass;Lcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5595;)V
+	METHOD method_70886 render (Lnet/minecraft/class_11228$class_11230;Lcom/mojang/blaze3d/systems/RenderPass;)V
 		ARG 1 draw
 		ARG 2 pass
-		ARG 3 indexBuffer
-		ARG 4 indexType
 	METHOD method_70888 prepareSpecialElement (Lnet/minecraft/class_11256;I)V
 		ARG 1 elementState
 		ARG 2 windowScaleFactor
@@ -66,28 +58,18 @@ CLASS net/minecraft/class_11228 net/minecraft/client/gui/render/GuiRenderer
 		ARG 2 state
 	METHOD method_71058 (Lnet/minecraft/class_11247;)V
 		ARG 1 state
-	METHOD method_71286 endBuffer (Lnet/minecraft/class_287;Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/class_11231;Lnet/minecraft/class_8030;)V
-		ARG 1 builder
-		ARG 2 pipeline
-		ARG 3 textureSetup
-		ARG 4 scissorArea
 	METHOD method_71287 prepareSimpleElement (Lnet/minecraft/class_11244;)V
 		ARG 1 state
 	METHOD method_71288 prepareSimpleElements (Lnet/minecraft/class_11246$class_11325;)V
 		ARG 1 filter
-	METHOD method_71289 render (Ljava/util/function/Supplier;Lnet/minecraft/class_276;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Lcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5595;II)V
+	METHOD method_71289 render (Ljava/util/function/Supplier;Lnet/minecraft/class_276;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;II)V
 		ARG 1 nameSupplier
 		ARG 2 framebuffer
 		ARG 3 dynamicTransformsBuffer
-		ARG 4 buffer
-		ARG 5 indexType
-		ARG 6 from
-		ARG 7 to
+		ARG 4 from
+		ARG 5 to
 	METHOD method_71290 prepare ()V
 	METHOD method_71291 renderPreparedDraws ()V
-	METHOD method_71292 finishPreparation ()V
-	METHOD method_71293 initVertexBuffers ()V
-	METHOD method_71294 collectVertexSizes ()Lit/unimi/dsi/fastutil/objects/Object2IntMap;
 	METHOD method_72107 (ILnet/minecraft/class_11245;)V
 		ARG 2 elem
 	METHOD method_72109 clearOversizedItems ()V
@@ -95,4 +77,3 @@ CLASS net/minecraft/class_11228 net/minecraft/client/gui/render/GuiRenderer
 		METHOD method_73409 draw (Lnet/minecraft/class_11767;)V
 			ARG 1 drawable
 	CLASS class_11230 Draw
-	CLASS class_11324 Preparation

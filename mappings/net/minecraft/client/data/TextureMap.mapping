@@ -145,8 +145,6 @@ CLASS net/minecraft/class_4944 net/minecraft/client/data/TextureMap
 		ARG 0 canSummon
 	METHOD method_46198 (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 		ARG 1 path
-	METHOD method_46199 (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-		ARG 1 path
 	METHOD method_46200 textureSideTop (Lnet/minecraft/class_2248;)Lnet/minecraft/class_4944;
 		ARG 0 block
 	METHOD method_46201 textureParticle (Lnet/minecraft/class_2248;)Lnet/minecraft/class_4944;

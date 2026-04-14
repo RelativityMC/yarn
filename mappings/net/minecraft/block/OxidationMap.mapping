@@ -1,73 +1,12 @@
 CLASS net/minecraft/class_1_758 net/minecraft/block/OxidationMap
-	METHOD method_1_4591 values ()Lcom/google/common/collect/ImmutableList;
+	METHOD method_1_4591 values ()Ljava/util/List;
 	METHOD method_1_4592 ofBlockFamilies (Ljava/util/function/BiFunction;Ljava/util/function/BiFunction;)Lnet/minecraft/class_1_758;
 		ARG 0 waxedFactory
 		ARG 1 weatheringFactory
 	METHOD method_1_4593 forEach (Ljava/util/function/Consumer;)V
 		ARG 1 callback
-	METHOD method_1_4594 (Ljava/lang/String;Lnet/minecraft/class_5955$class_5811;Ljava/lang/Boolean;)Ljava/lang/String;
-		ARG 1 oxidationLevel
-		ARG 2 waxed
-	METHOD method_1_4595 (Ljava/lang/Boolean;Ljava/util/function/BiFunction;Ljava/util/function/BiFunction;Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
-		ARG 4 settings
-	METHOD method_1_4596 get (Lnet/minecraft/class_5955$class_5811;Z)Ljava/lang/Object;
-		ARG 1 oxidationLevel
-		ARG 2 waxed
-	METHOD method_1_4597 getPrefix (Lnet/minecraft/class_5955$class_5811;Z)Ljava/lang/String;
-		ARG 0 oxidationLevel
-		ARG 1 waxed
-	METHOD method_1_4598 ofBlocks (Ljava/lang/String;Lorg/apache/commons/lang3/function/TriFunction;Ljava/util/function/BiFunction;Ljava/util/function/BiFunction;Ljava/util/function/Function;)Lnet/minecraft/class_1_758;
-		ARG 0 suffix
+	METHOD method_1_4598 ofBlocks (Lnet/minecraft/class_1_758;Lorg/apache/commons/lang3/function/TriFunction;Ljava/util/function/BiFunction;Ljava/util/function/BiFunction;Ljava/util/function/Function;)Lnet/minecraft/class_1_758;
 		ARG 1 registrar
-		ARG 2 waxedBlockFactory
-		ARG 3 weatheringBlockFactory
 		ARG 4 settingsFactory
-	METHOD method_1_4599 ofBlocks (Ljava/util/function/BiFunction;Lorg/apache/commons/lang3/function/TriFunction;Ljava/util/function/BiFunction;Ljava/util/function/BiFunction;Ljava/util/function/Function;)Lnet/minecraft/class_1_758;
-		ARG 0 suffixFactory
-		ARG 1 registrar
-		ARG 2 waxedBlockFactory
-		ARG 3 weatheringBlockFactory
-		ARG 4 settingsFactory
-	METHOD method_1_4600 ofBlockItems (Lnet/minecraft/class_1_758;Ljava/util/function/Function;)Lnet/minecraft/class_1_758;
-		ARG 0 block
-		ARG 1 itemFactory
-	METHOD method_1_4601 ofBlock (Lnet/minecraft/class_5955$class_5811;Ljava/lang/Boolean;Ljava/util/function/BiFunction;Lorg/apache/commons/lang3/function/TriFunction;Ljava/util/function/BiFunction;Ljava/util/function/BiFunction;Ljava/util/function/Function;)Lnet/minecraft/class_2248;
-		ARG 0 oxidationLevel
-		ARG 1 waxed
-		ARG 2 suffixFactory
-		ARG 3 registrar
-		ARG 4 waxedBlockFactory
-		ARG 5 weatheringBlockFactory
-		ARG 6 settingsFactory
-	METHOD method_1_4602 filter (Ljava/util/function/BiPredicate;)Ljava/util/Collection;
-		ARG 1 predicate
-	METHOD method_1_4603 waxingMap ()Lcom/google/common/collect/ImmutableBiMap;
-	METHOD method_1_4604 weatheringMap ()Lcom/google/common/collect/ImmutableBiMap;
-	METHOD method_1_4605 forEachZipped (Ljava/util/function/BiConsumer;Lnet/minecraft/class_1_758;Lnet/minecraft/class_1_758;)V
-		ARG 0 callback
-		ARG 1 first
-		ARG 2 second
-	METHOD method_1_4606 forEachZipped (Lnet/minecraft/class_1_758$class_1_759;Lnet/minecraft/class_1_758;Lnet/minecraft/class_1_758;Lnet/minecraft/class_1_758;Lnet/minecraft/class_1_758;)V
-		ARG 0 callback
-		ARG 1 first
-		ARG 2 second
-		ARG 3 third
-		ARG 4 fourth
-	METHOD method_1_4607 forEachZipped (Lorg/apache/commons/lang3/function/TriConsumer;Lnet/minecraft/class_1_758;Lnet/minecraft/class_1_758;Lnet/minecraft/class_1_758;)V
-		ARG 0 callback
-		ARG 1 first
-		ARG 2 second
-		ARG 3 third
-	CLASS class_1_759 QuadConsumer
-		METHOD method_1_4608 accept (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-			ARG 1 first
-			ARG 2 second
-			ARG 3 third
-			ARG 4 fourth
-		METHOD method_1_4609 then (Lnet/minecraft/class_1_758$class_1_759;)Lnet/minecraft/class_1_758$class_1_759;
-			ARG 1 after
-		METHOD method_1_4610 (Lnet/minecraft/class_1_758$class_1_759;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-			ARG 2 first
-			ARG 3 second
-			ARG 4 third
-			ARG 5 fourth
+	METHOD method_1_4600 ofBlockItems (Lnet/minecraft/class_1_758;Lnet/minecraft/class_1_758;Ljava/util/function/BiFunction;)Lnet/minecraft/class_1_758;
+		ARG 1 block

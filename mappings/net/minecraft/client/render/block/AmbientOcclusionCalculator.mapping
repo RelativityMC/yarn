@@ -65,7 +65,7 @@ CLASS net/minecraft/class_1_392 net/minecraft/client/render/block/AmbientOcclusi
 		FIELD field_19320 enabled Z
 		FIELD field_19321 lightmapCoordinateCache Lit/unimi/dsi/fastutil/longs/Long2IntLinkedOpenHashMap;
 		FIELD field_19322 aoCache Lit/unimi/dsi/fastutil/longs/Long2FloatLinkedOpenHashMap;
-		FIELD field_58201 brightnessGetter Lnet/minecraft/class_761$class_10948;
+		FIELD field_58201 brightnessGetter Lnet/minecraft/class_1_5$class_10948;
 		METHOD method_1_2621 (Lnet/minecraft/class_1920;Lnet/minecraft/class_2338;)I
 			ARG 1 world
 			ARG 2 pos

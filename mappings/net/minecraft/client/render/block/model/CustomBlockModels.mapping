@@ -7,11 +7,6 @@ CLASS net/minecraft/class_1_417 net/minecraft/client/render/block/model/CustomBl
 		ARG 2 state
 	METHOD method_1_2743 groundBanner (Lnet/minecraft/class_1767;)Lnet/minecraft/class_1_417$class_1_420;
 		ARG 0 color
-	METHOD method_1_2744 addBannerModels (Lnet/minecraft/class_1_417$class_1_418;Lnet/minecraft/class_1767;)V
-		ARG 0 builder
-		ARG 1 color
-	METHOD method_1_2745 bed (Lnet/minecraft/class_1767;)Lnet/minecraft/class_1_417$class_1_420;
-		ARG 0 color
 	METHOD method_1_2746 createCustomBlockModels (Lnet/minecraft/class_324;)Ljava/util/Map;
 		ARG 0 blockColors
 	METHOD method_1_2747 simple (Lnet/minecraft/class_324;Lnet/minecraft/class_2680;)Lnet/minecraft/class_1_445$class_1_446;
@@ -65,9 +60,6 @@ CLASS net/minecraft/class_1_417 net/minecraft/client/render/block/model/CustomBl
 	METHOD method_1_2768 christianChest (Lnet/minecraft/class_1_477;)Lnet/minecraft/class_1_417$class_1_420;
 	METHOD method_1_2769 (Lnet/minecraft/class_1767;Ljava/lang/Integer;)Lnet/minecraft/class_1_411$class_1_413;
 		ARG 1 rotation
-	METHOD method_1_2770 (Lnet/minecraft/class_1767;Lnet/minecraft/class_2350;Lnet/minecraft/class_2742;)Lnet/minecraft/class_1_411$class_1_413;
-		ARG 1 facing
-		ARG 2 part
 	METHOD method_1_2771 (Lnet/minecraft/class_4719;Ljava/lang/Integer;Ljava/lang/Boolean;)Lnet/minecraft/class_1_411$class_1_413;
 		ARG 1 rotation
 		ARG 2 attached

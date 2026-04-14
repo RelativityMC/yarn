@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_8803 net/minecraft/block/BlockKeys
-	METHOD method_53910 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
-		ARG 0 id

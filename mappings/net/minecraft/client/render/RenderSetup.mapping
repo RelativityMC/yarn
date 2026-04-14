@@ -8,9 +8,8 @@ CLASS net/minecraft/class_12247 net/minecraft/client/render/RenderSetup
 	FIELD field_63992 useOverlay Z
 	FIELD field_63993 hasCrumbling Z
 	FIELD field_63994 translucent Z
-	FIELD field_63995 expectedBufferSize I
 	FIELD field_63996 layeringTransform Lnet/minecraft/class_12245;
-	METHOD <init> (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Ljava/util/Map;ZZLnet/minecraft/class_12245;Lnet/minecraft/class_12246;Lnet/minecraft/class_12250;Lnet/minecraft/class_12247$class_4750;ZZI)V
+	METHOD <init> (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Ljava/util/Map;ZZLnet/minecraft/class_12245;Lnet/minecraft/class_12246;Lnet/minecraft/class_12250;Lnet/minecraft/class_12247$class_4750;ZZ)V
 		ARG 1 pipeline
 		ARG 2 textures
 		ARG 3 useLightmap
@@ -21,7 +20,6 @@ CLASS net/minecraft/class_12247 net/minecraft/client/render/RenderSetup
 		ARG 8 outlineMode
 		ARG 9 hasCrumbling
 		ARG 10 translucent
-		ARG 11 expectedBufferSize
 	METHOD method_75926 resolveTextures ()Ljava/util/Map;
 	METHOD method_75927 builder (Lcom/mojang/blaze3d/pipeline/RenderPipeline;)Lnet/minecraft/class_12247$class_12248;
 	CLASS class_4750 OutlineMode
@@ -37,14 +35,11 @@ CLASS net/minecraft/class_12247 net/minecraft/client/render/RenderSetup
 		FIELD field_64002 textureTransform Lnet/minecraft/class_12250;
 		FIELD field_64003 hasCrumbling Z
 		FIELD field_64004 translucent Z
-		FIELD field_64005 expectedBufferSize I
 		FIELD field_64006 outlineMode Lnet/minecraft/class_12247$class_4750;
 		FIELD field_64007 textures Ljava/util/Map;
 		METHOD <init> (Lcom/mojang/blaze3d/pipeline/RenderPipeline;)V
 			ARG 1 pipeline
 		METHOD method_75928 useLightmap ()Lnet/minecraft/class_12247$class_12248;
-		METHOD method_75929 expectedBufferSize (I)Lnet/minecraft/class_12247$class_12248;
-			ARG 1 expectedBufferSize
 		METHOD method_75930 layeringTransform (Lnet/minecraft/class_12245;)Lnet/minecraft/class_12247$class_12248;
 			ARG 1 layeringTransform
 		METHOD method_75931 outputTarget (Lnet/minecraft/class_12246;)Lnet/minecraft/class_12247$class_12248;

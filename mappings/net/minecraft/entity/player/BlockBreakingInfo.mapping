@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_3191 net/minecraft/entity/player/BlockBreakingInfo
-	FIELD field_13857 lastUpdateTick I
+	FIELD field_13857 lastUpdateTick J
 	FIELD field_13858 stage I
 	FIELD field_13859 actorNetworkId I
 	FIELD field_13860 pos Lnet/minecraft/class_2338;
@@ -13,8 +13,7 @@ CLASS net/minecraft/class_3191 net/minecraft/entity/player/BlockBreakingInfo
 	METHOD method_13987 setStage (I)V
 		ARG 1 stage
 	METHOD method_13988 getStage ()I
-	METHOD method_13989 setLastUpdateTick (I)V
-		ARG 1 lastUpdateTick
-	METHOD method_13990 getLastUpdateTick ()I
+	METHOD method_13989 setLastUpdateTick (J)V
+	METHOD method_13990 getLastUpdateTick ()J
 	METHOD method_13991 getPos ()Lnet/minecraft/class_2338;
 	METHOD method_34868 getActorId ()I

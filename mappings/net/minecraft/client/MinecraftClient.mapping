@@ -49,7 +49,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_1687 world Lnet/minecraft/class_638;
 		COMMENT Represents the world the client is currently viewing.
 		COMMENT This field is not null when in game.
-	FIELD field_1689 framebuffer Lnet/minecraft/class_276;
 	FIELD field_1690 options Lnet/minecraft/class_315;
 	FIELD field_1692 targetedEntity Lnet/minecraft/class_1297;
 	FIELD field_1696 thread Ljava/lang/Thread;
@@ -111,7 +110,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_1774 keyboard Lnet/minecraft/class_309;
 	FIELD field_18009 COMPLETED_UNIT_FUTURE Ljava/util/concurrent/CompletableFuture;
 	FIELD field_18174 resourceReloadFuture Ljava/util/concurrent/CompletableFuture;
-	FIELD field_20909 bufferBuilders Lnet/minecraft/class_4599;
 	FIELD field_22224 trackingTick I
 	FIELD field_22225 tickTimeTracker Lnet/minecraft/class_4757;
 	FIELD field_25033 multiplayerEnabled Z
@@ -218,7 +216,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_1519 cleanUpAfterCrash ()V
 	METHOD method_1520 getResourcePackManager ()Lnet/minecraft/class_3283;
 	METHOD method_1521 reloadResources ()Ljava/util/concurrent/CompletableFuture;
-	METHOD method_1522 getFramebuffer ()Lnet/minecraft/class_276;
 	METHOD method_1523 frame (Z)V
 		ARG 1 tick
 	METHOD method_1526 getLanguageManager ()Lnet/minecraft/class_1076;
@@ -288,7 +285,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 3 options
 		ARG 4 report
 	METHOD method_22683 getWindow ()Lnet/minecraft/class_1041;
-	METHOD method_22940 getBufferBuilders ()Lnet/minecraft/class_4599;
 	METHOD method_24041 setMipmapLevels (I)V
 		ARG 1 mipmapLevels
 	METHOD method_24226 handleResourceReloadException (Ljava/lang/Throwable;Lnet/minecraft/class_8764;)V
@@ -323,7 +319,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 3 saveLoader
 		ARG 4 gameRules
 		ARG 5 newWorld
-	METHOD method_29611 usesImprovedTransparency ()Z
 	METHOD method_29970 setScreenAndRender (Lnet/minecraft/class_437;)V
 		ARG 1 screen
 	METHOD method_30049 getVideoWarningManager ()Lnet/minecraft/class_5407;

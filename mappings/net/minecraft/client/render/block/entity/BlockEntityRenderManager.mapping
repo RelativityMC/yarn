@@ -20,7 +20,7 @@ CLASS net/minecraft/class_824 net/minecraft/client/render/block/entity/BlockEnti
 		ARG 2 matrices
 		ARG 3 queue
 		ARG 4 cameraRenderState
-	METHOD method_74348 getRenderState (Lnet/minecraft/class_2586;FLnet/minecraft/class_11683$class_11792;)Lnet/minecraft/class_11954;
+	METHOD method_74348 getRenderState (Lnet/minecraft/class_2586;FLnet/minecraft/class_11683$class_11792;Z)Lnet/minecraft/class_11954;
 		ARG 1 blockEntity
 		ARG 2 tickProgress
 		ARG 3 crumblingOverlay

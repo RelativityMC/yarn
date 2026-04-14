@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_805
+	METHOD method_36371 canGrow (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;)Z

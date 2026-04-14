@@ -1,7 +1,4 @@
 CLASS net/minecraft/class_8173 net/minecraft/block/DecoratedPotPatterns
-	FIELD field_42798 SHERD_TO_PATTERN Ljava/util/Map;
-	METHOD method_49206 fromSherd (Lnet/minecraft/class_1792;)Lnet/minecraft/class_5321;
-		ARG 0 sherd
 	METHOD method_49207 registerAndGetDefault (Lnet/minecraft/class_2378;)Lnet/minecraft/class_9766;
 		ARG 0 registry
 	METHOD method_49208 of (Ljava/lang/String;)Lnet/minecraft/class_5321;

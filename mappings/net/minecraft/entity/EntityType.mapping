@@ -13,11 +13,9 @@ CLASS net/minecraft/class_1299 net/minecraft/entity/EntityType
 	FIELD field_24085 maxTrackDistance I
 	FIELD field_24086 trackTickInterval I
 	FIELD field_25355 canSpawnInside Lcom/google/common/collect/ImmutableSet;
-	FIELD field_30054 EQUINE_AND_HOGLIN_WIDTH F
 	FIELD field_36398 registryEntry Lnet/minecraft/class_6880$class_6883;
 	FIELD field_40115 requiredFeatures Lnet/minecraft/class_7699;
 	FIELD field_50125 spawnBoxScale F
-	FIELD field_55544 POTENTIALLY_EXECUTES_COMMANDS Ljava/util/Set;
 	FIELD field_57582 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_61222 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_61223 allowedInPeaceful Z
@@ -74,13 +72,8 @@ CLASS net/minecraft/class_1299 net/minecraft/entity/EntityType
 		ARG 5 spawnReason
 		ARG 6 alignPosition
 		ARG 7 invertY
-	METHOD method_5895 register (Ljava/lang/String;Lnet/minecraft/class_1299$class_1300;)Lnet/minecraft/class_1299;
-		ARG 0 id
-		ARG 1 type
 	METHOD method_5896 isSummonable ()Z
 	METHOD method_5897 getName ()Lnet/minecraft/class_2561;
-	METHOD method_5898 get (Ljava/lang/String;)Ljava/util/Optional;
-		ARG 0 id
 	METHOD method_5899 spawn (Lnet/minecraft/class_3218;Ljava/util/function/Consumer;Lnet/minecraft/class_2338;Lnet/minecraft/class_3730;ZZ)Lnet/minecraft/class_1297;
 		ARG 1 world
 		ARG 2 afterConsumer
@@ -159,31 +152,6 @@ CLASS net/minecraft/class_1299 net/minecraft/entity/EntityType
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD method_63002 register (Lnet/minecraft/class_5321;Lnet/minecraft/class_1299$class_1300;)Lnet/minecraft/class_1299;
-		ARG 0 key
-		ARG 1 type
-	METHOD method_63003 keyOf (Ljava/lang/String;)Lnet/minecraft/class_5321;
-		ARG 0 id
-	METHOD method_64432 getBoatFactory (Ljava/util/function/Supplier;)Lnet/minecraft/class_1299$class_4049;
-		ARG 0 itemSupplier
-	METHOD method_64433 (Ljava/util/function/Supplier;Lnet/minecraft/class_1299;Lnet/minecraft/class_1937;)Lnet/minecraft/class_10257;
-		ARG 1 type
-		ARG 2 world
-	METHOD method_64434 getChestBoatFactory (Ljava/util/function/Supplier;)Lnet/minecraft/class_1299$class_4049;
-		ARG 0 itemSupplier
-	METHOD method_64435 (Ljava/util/function/Supplier;Lnet/minecraft/class_1299;Lnet/minecraft/class_1937;)Lnet/minecraft/class_10258;
-		ARG 1 type
-		ARG 2 world
-	METHOD method_64436 getRaftFactory (Ljava/util/function/Supplier;)Lnet/minecraft/class_1299$class_4049;
-		ARG 0 itemSupplier
-	METHOD method_64437 (Ljava/util/function/Supplier;Lnet/minecraft/class_1299;Lnet/minecraft/class_1937;)Lnet/minecraft/class_7264;
-		ARG 1 type
-		ARG 2 world
-	METHOD method_64438 getChestRaftFactory (Ljava/util/function/Supplier;)Lnet/minecraft/class_1299$class_4049;
-		ARG 0 itemSupplier
-	METHOD method_64439 (Ljava/util/function/Supplier;Lnet/minecraft/class_1299;Lnet/minecraft/class_1937;)Lnet/minecraft/class_1690;
-		ARG 1 type
-		ARG 2 world
 	METHOD method_65893 canPotentiallyExecuteCommands ()Z
 	METHOD method_66662 (Lnet/minecraft/class_1799;Lnet/minecraft/class_1297;)V
 		ARG 1 entity

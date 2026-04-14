@@ -1,6 +1,3 @@
 CLASS net/minecraft/class_7378 net/minecraft/predicate/entity/EntitySubPredicateTypes
-	METHOD method_58156 register (Ljava/lang/String;Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
-		ARG 0 id
-		ARG 1 codec
-	METHOD method_58157 getDefault (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
+	METHOD method_58157 getDefault (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/Codec;
 		ARG 0 registry

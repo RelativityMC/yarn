@@ -269,8 +269,6 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		COMMENT
 		COMMENT @see net.minecraft.resource.featuretoggle.FeatureFlags
 	FIELD field_54005 translationKey Ljava/lang/String;
-	METHOD <init> (Lnet/minecraft/class_4970$class_2251;)V
-		ARG 1 settings
 	METHOD method_8389 asItem ()Lnet/minecraft/class_1792;
 		COMMENT {@return the block's corresponding item}
 		COMMENT
@@ -897,7 +895,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		FIELD field_23183 suffocationPredicate Lnet/minecraft/class_4970$class_4973;
 		FIELD field_23184 blockVisionPredicate Lnet/minecraft/class_4970$class_4973;
 		FIELD field_23185 postProcessPredicate Lnet/minecraft/class_4970$class_1_474;
-		FIELD field_23186 emissiveLightingPredicate Lnet/minecraft/class_4970$class_4973;
+		FIELD field_23186 emissiveLightingPredicate Ljava/util/function/Predicate;
 		FIELD field_25185 toolRequired Z
 		FIELD field_40341 blockBreakParticles Z
 		FIELD field_40342 requiredFeatures Lnet/minecraft/class_7699;
@@ -972,8 +970,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 			ARG 2 pos
 		METHOD method_26247 postProcess (Lnet/minecraft/class_4970$class_1_474;)Lnet/minecraft/class_4970$class_2251;
 			ARG 1 postProcessPredicate
-		METHOD method_26249 emissiveLighting (Lnet/minecraft/class_4970$class_4973;)Lnet/minecraft/class_4970$class_2251;
-			ARG 1 predicate
+		METHOD method_26249 emissiveLighting (Ljava/util/function/Predicate;)Lnet/minecraft/class_4970$class_2251;
 		METHOD method_26250 air ()Lnet/minecraft/class_4970$class_2251;
 		METHOD method_29292 requiresTool ()Lnet/minecraft/class_4970$class_2251;
 		METHOD method_31710 mapColor (Lnet/minecraft/class_3620;)Lnet/minecraft/class_4970$class_2251;
@@ -1039,7 +1036,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		FIELD field_23174 solidBlockPredicate Lnet/minecraft/class_4970$class_4973;
 		FIELD field_23175 suffocationPredicate Lnet/minecraft/class_4970$class_4973;
 		FIELD field_23176 blockVisionPredicate Lnet/minecraft/class_4970$class_4973;
-		FIELD field_23178 emissiveLightingPredicate Lnet/minecraft/class_4970$class_4973;
+		FIELD field_23178 emissiveLightingPredicate Ljava/util/function/Predicate;
 		FIELD field_25184 toolRequired Z
 		FIELD field_40338 blockBreakParticles Z
 		FIELD field_40339 fluidState Lnet/minecraft/class_3610;
@@ -1213,9 +1210,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 			ARG 1 world
 			ARG 2 pos
 			ARG 3 direction
-		METHOD method_26208 hasEmissiveLighting (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z
-			ARG 1 world
-			ARG 2 pos
+		METHOD method_26208 hasEmissiveLighting ()Z
 		METHOD method_26209 exceedsCube ()Z
 		METHOD method_26210 getAmbientOcclusionLightLevel (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)F
 			ARG 1 world

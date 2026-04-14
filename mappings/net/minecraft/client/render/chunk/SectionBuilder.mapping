@@ -4,14 +4,12 @@ CLASS net/minecraft/class_9810 net/minecraft/client/render/chunk/SectionBuilder
 	FIELD field_1_2183 blockModels Lnet/minecraft/class_773;
 	FIELD field_1_2184 cutoutLeaves Z
 	FIELD field_1_2484 fluidModels Lnet/minecraft/class_1_478;
-	FIELD field_52165 blockEntityRenderDispatcher Lnet/minecraft/class_824;
-	METHOD <init> (ZZLnet/minecraft/class_773;Lnet/minecraft/class_1_478;Lnet/minecraft/class_324;Lnet/minecraft/class_824;)V
+	METHOD <init> (ZZLnet/minecraft/class_773;Lnet/minecraft/class_1_478;Lnet/minecraft/class_324;)V
 		ARG 1 ao
 		ARG 2 cutoutLeaves
 		ARG 3 blockModels
 		ARG 4 fluidModels
 		ARG 5 blockColors
-		ARG 6 blockEntityRenderDispatcher
 	METHOD method_1_2311 (Ljava/util/Map;Lnet/minecraft/class_750;FFFLnet/minecraft/class_777;Lnet/minecraft/class_1_382;)V
 		ARG 3 x
 		ARG 4 y

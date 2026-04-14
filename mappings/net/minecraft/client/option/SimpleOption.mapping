@@ -66,7 +66,7 @@ CLASS net/minecraft/class_7172 net/minecraft/client/option/SimpleOption
 	FIELD field_37864 textGetter Ljava/util/function/Function;
 	FIELD field_37865 callbacks Lnet/minecraft/class_7172$class_7178;
 	FIELD field_37866 defaultValue Ljava/lang/Object;
-	FIELD field_37867 changeCallback Ljava/util/function/Consumer;
+	FIELD field_37867 changeCallback Lnet/minecraft/class_7172$class_1_783;
 	FIELD field_37868 value Ljava/lang/Object;
 	FIELD field_38278 BOOLEAN Lnet/minecraft/class_7172$class_7173;
 		COMMENT A set of callbacks for boolean options.
@@ -76,21 +76,19 @@ CLASS net/minecraft/class_7172 net/minecraft/client/option/SimpleOption
 	FIELD field_38279 codec Lcom/mojang/serialization/Codec;
 	FIELD field_38280 text Lnet/minecraft/class_2561;
 	FIELD field_41333 BOOLEAN_TEXT_GETTER Lnet/minecraft/class_7172$class_7303;
-	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_7172$class_7277;Lnet/minecraft/class_7172$class_7303;Lnet/minecraft/class_7172$class_7178;Lcom/mojang/serialization/Codec;Ljava/lang/Object;Ljava/util/function/Consumer;)V
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_7172$class_7277;Lnet/minecraft/class_7172$class_7303;Lnet/minecraft/class_7172$class_7178;Lcom/mojang/serialization/Codec;Ljava/lang/Object;Lnet/minecraft/class_7172$class_1_783;)V
 		ARG 1 key
 		ARG 2 tooltipFactory
 		ARG 3 valueTextGetter
 		ARG 4 callbacks
 		ARG 5 codec
 		ARG 6 defaultValue
-		ARG 7 changeCallback
-	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_7172$class_7277;Lnet/minecraft/class_7172$class_7303;Lnet/minecraft/class_7172$class_7178;Ljava/lang/Object;Ljava/util/function/Consumer;)V
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_7172$class_7277;Lnet/minecraft/class_7172$class_7303;Lnet/minecraft/class_7172$class_7178;Ljava/lang/Object;Lnet/minecraft/class_7172$class_1_783;)V
 		ARG 1 key
 		ARG 2 tooltipFactory
 		ARG 3 valueTextGetter
 		ARG 4 callbacks
 		ARG 5 defaultValue
-		ARG 6 changeCallback
 	METHOD method_18520 createWidget (Lnet/minecraft/class_315;III)Lnet/minecraft/class_339;
 		ARG 1 options
 		ARG 2 x
@@ -110,19 +108,15 @@ CLASS net/minecraft/class_7172 net/minecraft/client/option/SimpleOption
 		ARG 0 key
 		ARG 1 tooltipFactory
 		ARG 2 defaultValue
-	METHOD method_41750 ofBoolean (Ljava/lang/String;Lnet/minecraft/class_7172$class_7277;ZLjava/util/function/Consumer;)Lnet/minecraft/class_7172;
+	METHOD method_41750 ofBoolean (Ljava/lang/String;Lnet/minecraft/class_7172$class_7277;ZLnet/minecraft/class_7172$class_1_783;)Lnet/minecraft/class_7172;
 		COMMENT Creates a boolean option.
 		ARG 0 key
 		ARG 1 tooltipFactory
 		ARG 2 defaultValue
-		ARG 3 changeCallback
-	METHOD method_41751 ofBoolean (Ljava/lang/String;ZLjava/util/function/Consumer;)Lnet/minecraft/class_7172;
+	METHOD method_41751 ofBoolean (Ljava/lang/String;ZLnet/minecraft/class_7172$class_1_783;)Lnet/minecraft/class_7172;
 		COMMENT Creates a boolean option.
 		ARG 0 key
 		ARG 1 defaultValue
-		ARG 2 changeCallback
-	METHOD method_41752 (Ljava/lang/Boolean;)V
-		ARG 0 value
 	METHOD method_41753 getValue ()Ljava/lang/Object;
 		COMMENT {@return the option's current value}
 	METHOD method_41754 getCallbacks ()Lnet/minecraft/class_7172$class_7178;
@@ -134,35 +128,24 @@ CLASS net/minecraft/class_7172 net/minecraft/client/option/SimpleOption
 		ARG 0 key
 		ARG 1 defaultValue
 	METHOD method_42404 getCodec ()Lcom/mojang/serialization/Codec;
-	METHOD method_42405 (Ljava/lang/Boolean;)V
-		ARG 0 value
 	METHOD method_42715 (Lnet/minecraft/class_7172$class_7303;Ljava/lang/Object;)Lnet/minecraft/class_2561;
 		ARG 2 value
 	METHOD method_42717 constantTooltip (Lnet/minecraft/class_2561;)Lnet/minecraft/class_7172$class_7277;
 		COMMENT {@return the getter for the {@code tooltipFactoryGetter} parameter of the constructor
 		COMMENT to indicate constant tooltips}
 		ARG 0 text
-	METHOD method_47393 (Lnet/minecraft/class_2561;Ljava/lang/Object;)Lnet/minecraft/class_7919;
-		ARG 1 value
-	METHOD method_47394 (Ljava/lang/Object;)Lnet/minecraft/class_7919;
-		ARG 0 value
-	METHOD method_47603 createWidget (Lnet/minecraft/class_315;IIILjava/util/function/Consumer;)Lnet/minecraft/class_339;
+	METHOD method_47603 createWidget (Lnet/minecraft/class_315;IIILnet/minecraft/class_7172$class_1_783;)Lnet/minecraft/class_339;
 		ARG 1 options
 		ARG 2 x
 		ARG 3 y
 		ARG 4 width
-		ARG 5 changeCallback
-	METHOD method_47604 ofBoolean (Ljava/lang/String;Lnet/minecraft/class_7172$class_7277;Lnet/minecraft/class_7172$class_7303;ZLjava/util/function/Consumer;)Lnet/minecraft/class_7172;
+	METHOD method_47604 ofBoolean (Ljava/lang/String;Lnet/minecraft/class_7172$class_7277;Lnet/minecraft/class_7172$class_7303;ZLnet/minecraft/class_7172$class_1_783;)Lnet/minecraft/class_7172;
 		ARG 0 key
 		ARG 1 tooltipFactory
 		ARG 2 valueTextGetter
 		ARG 3 defaultValue
-		ARG 4 changeCallback
 	METHOD method_47605 (Lnet/minecraft/class_2561;Ljava/lang/Boolean;)Lnet/minecraft/class_2561;
-		ARG 0 optionText
 		ARG 1 value
-	METHOD method_47606 (Ljava/lang/Object;)V
-		ARG 0 value
 	METHOD method_57701 createWidget (Lnet/minecraft/class_315;)Lnet/minecraft/class_339;
 		ARG 1 options
 	CLASS class_7173 PotentialValuesBasedCallbacks
@@ -180,10 +163,10 @@ CLASS net/minecraft/class_7172 net/minecraft/client/option/SimpleOption
 		FIELD field_37872 option Lnet/minecraft/class_7172;
 		FIELD field_37873 callbacks Lnet/minecraft/class_7172$class_7176;
 		FIELD field_37874 tooltipFactory Lnet/minecraft/class_7172$class_7277;
-		FIELD field_41334 changeCallback Ljava/util/function/Consumer;
+		FIELD field_41334 changeCallback Lnet/minecraft/class_7172$class_1_783;
 		FIELD field_51513 timeToApply Ljava/lang/Long;
 		FIELD field_51514 shouldApplyImmediately Z
-		METHOD <init> (Lnet/minecraft/class_315;IIIILnet/minecraft/class_7172;Lnet/minecraft/class_7172$class_7176;Lnet/minecraft/class_7172$class_7277;Ljava/util/function/Consumer;Z)V
+		METHOD <init> (Lnet/minecraft/class_315;IIIILnet/minecraft/class_7172;Lnet/minecraft/class_7172$class_7176;Lnet/minecraft/class_7172$class_7277;Lnet/minecraft/class_7172$class_1_783;Z)V
 			ARG 1 options
 			ARG 2 x
 			ARG 3 y
@@ -192,7 +175,6 @@ CLASS net/minecraft/class_7172 net/minecraft/client/option/SimpleOption
 			ARG 6 option
 			ARG 7 callbacks
 			ARG 8 tooltipFactory
-			ARG 9 changeCallback
 			ARG 10 shouldApplyImmediately
 		METHOD method_59868 applyPendingValue ()V
 	CLASS class_7176 SliderCallbacks
@@ -205,7 +187,7 @@ CLASS net/minecraft/class_7172 net/minecraft/client/option/SimpleOption
 		METHOD method_41765 toSliderProgress (Ljava/lang/Object;)D
 			COMMENT {@return the progress ({@code 0.0} to {@code 1.0}, both inclusive) of the slider}
 			ARG 1 value
-		METHOD method_42725 (Lnet/minecraft/class_315;IIILnet/minecraft/class_7172$class_7277;Ljava/util/function/Consumer;Lnet/minecraft/class_7172;)Lnet/minecraft/class_339;
+		METHOD method_42725 (Lnet/minecraft/class_315;IIILnet/minecraft/class_7172$class_7277;Lnet/minecraft/class_7172$class_1_783;Lnet/minecraft/class_7172;)Lnet/minecraft/class_339;
 			ARG 7 option
 		METHOD method_75311 getPrevious (Ljava/lang/Object;)Ljava/util/Optional;
 			ARG 1 value
@@ -229,7 +211,7 @@ CLASS net/minecraft/class_7172 net/minecraft/client/option/SimpleOption
 		COMMENT A set of callbacks to customize an option's behavior.
 		COMMENT
 		COMMENT @see <a href="SimpleOption.html#callbacks">Callbacks</a>
-		METHOD method_41756 getWidgetCreator (Lnet/minecraft/class_7172$class_7277;Lnet/minecraft/class_315;IIILjava/util/function/Consumer;)Ljava/util/function/Function;
+		METHOD method_41756 getWidgetCreator (Lnet/minecraft/class_7172$class_7277;Lnet/minecraft/class_315;IIILnet/minecraft/class_7172$class_1_783;)Ljava/util/function/Function;
 			COMMENT {@return the widget creator}
 			COMMENT
 			COMMENT <p>Widget creators are responsible for rendering the option into
@@ -239,7 +221,6 @@ CLASS net/minecraft/class_7172 net/minecraft/client/option/SimpleOption
 			ARG 3 x
 			ARG 4 y
 			ARG 5 width
-			ARG 6 changeCallback
 		METHOD method_41758 validate (Ljava/lang/Object;)Ljava/util/Optional;
 			COMMENT {@return the validated value}
 			COMMENT
@@ -282,10 +263,9 @@ CLASS net/minecraft/class_7172 net/minecraft/client/option/SimpleOption
 			ARG 1 value
 	CLASS class_7305 CyclingCallbacks
 		METHOD method_42721 getValues ()Lnet/minecraft/class_5676$class_5680;
-		METHOD method_42723 (Lnet/minecraft/class_7172$class_7277;IIILnet/minecraft/class_315;Ljava/util/function/Consumer;Lnet/minecraft/class_7172;)Lnet/minecraft/class_339;
+		METHOD method_42723 (Lnet/minecraft/class_7172$class_7277;IIILnet/minecraft/class_315;Lnet/minecraft/class_7172$class_1_783;Lnet/minecraft/class_7172;)Lnet/minecraft/class_339;
 			ARG 7 option
-		METHOD method_42724 (Lnet/minecraft/class_7172;Lnet/minecraft/class_315;Ljava/util/function/Consumer;Lnet/minecraft/class_5676;Ljava/lang/Object;)V
-			ARG 4 button
+		METHOD method_42724 (Lnet/minecraft/class_7172;Lnet/minecraft/class_315;Lnet/minecraft/class_7172$class_1_783;Lnet/minecraft/class_5676;Ljava/lang/Object;)V
 			ARG 5 value
 		CLASS class_7274 ValueSetter
 			METHOD method_1_32 set (Lnet/minecraft/class_7172;Ljava/lang/Object;)V

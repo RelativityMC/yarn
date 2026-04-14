@@ -369,8 +369,8 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 2 cake
 	METHOD method_32229 registerAmethyst (Lnet/minecraft/class_2248;)V
 		ARG 1 block
-	METHOD method_32802 registerPointedDripstone ()V
-	METHOD method_32803 getDripstoneVariant (Lnet/minecraft/class_2350;Lnet/minecraft/class_5691;)Lnet/minecraft/class_807;
+	METHOD method_32802 registerPointedDripstone (Lnet/minecraft/class_2248;)V
+	METHOD method_32803 getDripstoneVariant (Lnet/minecraft/class_2350;Lnet/minecraft/class_5691;Lnet/minecraft/class_2248;)Lnet/minecraft/class_807;
 		ARG 1 direction
 	METHOD method_33128 registerSculkSensor ()V
 	METHOD method_33504 registerPetrifiedOakSlab ()V

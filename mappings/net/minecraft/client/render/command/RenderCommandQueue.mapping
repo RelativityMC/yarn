@@ -59,10 +59,10 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 6 light
 		ARG 7 squaredDistanceToCamera
 		ARG 9 cameraState
-	METHOD method_73483 submitCustom (Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;Lnet/minecraft/class_11659$class_11660;)V
+	METHOD method_73483 submitCustom (Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;ILnet/minecraft/class_11659$class_11660;)V
 		ARG 1 matrices
 		ARG 2 renderLayer
-		ARG 3 customRenderer
+		ARG 4 customRenderer
 	METHOD method_73484 submitBlockStateModel (Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;Ljava/util/List;[IIII)V
 		ARG 1 matrices
 		ARG 2 renderLayer

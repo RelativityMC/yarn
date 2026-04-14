@@ -2,7 +2,6 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 	FIELD field_3727 networkHandler Lnet/minecraft/class_634;
 	FIELD field_3729 client Lnet/minecraft/class_310;
 	FIELD field_17675 mapStates Ljava/util/Map;
-	FIELD field_17780 worldRenderer Lnet/minecraft/class_761;
 	FIELD field_18226 players Ljava/util/List;
 	FIELD field_21526 lightningTicksLeft I
 	FIELD field_21527 colorCache Lit/unimi/dsi/fastutil/objects/Object2ObjectArrayMap;
@@ -27,14 +26,13 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 	FIELD field_62027 blockParticlesManager Lnet/minecraft/class_11741;
 	FIELD field_62596 worldBorder Lnet/minecraft/class_2784;
 	FIELD field_64444 environmentAttributeAccess Lnet/minecraft/class_12205;
-	METHOD <init> (Lnet/minecraft/class_634;Lnet/minecraft/class_638$class_5271;Lnet/minecraft/class_5321;Lnet/minecraft/class_6880;IILnet/minecraft/class_761;ZJI)V
+	METHOD <init> (Lnet/minecraft/class_634;Lnet/minecraft/class_638$class_5271;Lnet/minecraft/class_5321;Lnet/minecraft/class_6880;IILnet/minecraft/class_1_816;ZJI)V
 		ARG 1 networkHandler
 		ARG 2 properties
 		ARG 3 registryRef
 		ARG 4 dimensionType
 		ARG 5 loadDistance
 		ARG 6 simulationDistance
-		ARG 7 worldRenderer
 		ARG 8 debugWorld
 		ARG 9 seed
 		ARG 11 seaLevel
@@ -160,8 +158,6 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 		ARG 4 maxX
 		ARG 5 maxY
 		ARG 6 maxZ
-	METHOD method_62895 onChunkUnload (J)V
-		ARG 1 sectionPos
 	METHOD method_68160 (Lnet/minecraft/class_2338;)I
 		ARG 1 pos
 	METHOD method_72019 getBlockEntities ()Ljava/util/Set;

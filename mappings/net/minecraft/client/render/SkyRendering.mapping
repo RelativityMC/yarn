@@ -14,7 +14,7 @@ CLASS net/minecraft/class_9975 net/minecraft/client/render/SkyRendering
 	FIELD field_63578 SUN_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_63579 END_FLASH_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_63580 celestialAtlasTexture Lnet/minecraft/class_1059;
-	METHOD <init> (Lnet/minecraft/class_1060;Lnet/minecraft/class_11697;)V
+	METHOD <init> (Lnet/minecraft/class_1060;Lnet/minecraft/class_11697;Lnet/minecraft/class_276;)V
 		ARG 1 textureManager
 		ARG 2 atlasManager
 	METHOD method_62302 renderTopSky (I)V

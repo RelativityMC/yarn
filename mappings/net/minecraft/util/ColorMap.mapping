@@ -1,31 +1,18 @@
 CLASS net/minecraft/class_1_727 net/minecraft/util/ColorMap
-	METHOD method_1_4393 values ()Lcom/google/common/collect/ImmutableList;
+	METHOD method_1_4393 values ()Ljava/util/List;
 	METHOD method_1_4394 forEach (Ljava/util/function/Consumer;)V
 		ARG 1 callback
-	METHOD method_1_4395 (Lorg/apache/commons/lang3/function/TriFunction;Ljava/lang/String;Ljava/util/function/BiFunction;Ljava/util/function/Function;Lnet/minecraft/class_1767;)Lnet/minecraft/class_2248;
-		ARG 4 color
 	METHOD method_1_4396 (Ljava/util/function/BiFunction;Lnet/minecraft/class_1767;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
 		ARG 2 settings
-	METHOD method_1_4397 (Ljava/util/function/BiFunction;Lnet/minecraft/class_1_727;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
-		ARG 2 color
-	METHOD method_1_4398 (Ljava/util/function/BiFunction;Ljava/lang/String;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
-		ARG 2 color
 	METHOD method_1_4399 fromFunction (Ljava/util/function/Function;)Lnet/minecraft/class_1_727;
-		ARG 0 f
 	METHOD method_1_4400 get (Lnet/minecraft/class_1767;)Ljava/lang/Object;
 		ARG 1 color
-	METHOD method_1_4401 forBlocks (Ljava/lang/String;Lorg/apache/commons/lang3/function/TriFunction;Ljava/util/function/BiFunction;Ljava/util/function/Function;)Lnet/minecraft/class_1_727;
-		ARG 0 suffix
-		ARG 1 registrar
+	METHOD method_1_4401 forBlocks (Lnet/minecraft/class_1_727;Lorg/apache/commons/lang3/function/TriFunction;Ljava/util/function/BiFunction;Ljava/util/function/Function;)Lnet/minecraft/class_1_727;
 		ARG 2 blockFactory
 		ARG 3 settingsFactory
-	METHOD method_1_4402 forItems (Ljava/lang/String;Ljava/util/function/BiFunction;)Lnet/minecraft/class_1_727;
-		ARG 0 suffix
-		ARG 1 itemFactory
+	METHOD method_1_4402 forItems (Lnet/minecraft/class_1_727;Lnet/minecraft/class_1_727;Lorg/apache/commons/lang3/function/TriFunction;)Lnet/minecraft/class_1_727;
 	METHOD method_1_4403 forBlockItems (Lnet/minecraft/class_1_727;Ljava/util/function/BiFunction;)Lnet/minecraft/class_1_727;
-		ARG 0 blocks
 		ARG 1 itemFactory
-	METHOD method_1_4404 forEachZipped (Ljava/util/function/BiConsumer;Lnet/minecraft/class_1_727;Lnet/minecraft/class_1_727;)V
-		ARG 0 callback
-		ARG 1 first
-		ARG 2 second
+	METHOD method_1_4404 forEachZipped (Lnet/minecraft/class_1_727;Lnet/minecraft/class_1_727;Ljava/util/function/BiConsumer;)V
+		ARG 0 first
+		ARG 1 second

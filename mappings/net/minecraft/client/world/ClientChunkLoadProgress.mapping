@@ -9,10 +9,9 @@ CLASS net/minecraft/class_11653 net/minecraft/client/world/ClientChunkLoadProgre
 	METHOD method_72899 tick ()V
 	METHOD method_72900 setChunkLoadMap (Lnet/minecraft/class_11544;)V
 		ARG 1 map
-	METHOD method_72901 startWorldLoading (Lnet/minecraft/class_746;Lnet/minecraft/class_638;Lnet/minecraft/class_761;)V
+	METHOD method_72901 startWorldLoading (Lnet/minecraft/class_746;Lnet/minecraft/class_638;)V
 		ARG 1 player
 		ARG 2 world
-		ARG 3 renderer
 	METHOD method_72902 isDone ()Z
 	METHOD method_72903 initialChunksComing ()V
 	METHOD method_72904 getChunkLoadMap ()Lnet/minecraft/class_11544;
@@ -24,12 +23,8 @@ CLASS net/minecraft/class_11653 net/minecraft/client/world/ClientChunkLoadProgre
 		METHOD method_72908 initialChunksComing ()Lnet/minecraft/class_11653$class_11655;
 	CLASS class_11656 LoadChunks
 		FIELD comp_4469 world Lnet/minecraft/class_638;
-		FIELD comp_4470 worldRenderer Lnet/minecraft/class_761;
 		METHOD comp_4469 world ()Lnet/minecraft/class_638;
-		METHOD comp_4470 worldRenderer ()Lnet/minecraft/class_761;
 		METHOD method_72909 isReady ()Z
 	CLASS class_11657 Start
 		FIELD comp_4473 world Lnet/minecraft/class_638;
-		FIELD comp_4474 worldRenderer Lnet/minecraft/class_761;
 		METHOD comp_4473 world ()Lnet/minecraft/class_638;
-		METHOD comp_4474 worldRenderer ()Lnet/minecraft/class_761;

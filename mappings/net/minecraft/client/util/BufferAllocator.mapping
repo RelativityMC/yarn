@@ -40,6 +40,5 @@ CLASS net/minecraft/class_9799 net/minecraft/client/util/BufferAllocator
 		FIELD field_52092 closed Z
 		METHOD <init> (Lnet/minecraft/class_9799;JII)V
 			ARG 2 offset
-			ARG 4 size
 			ARG 5 clearCount
 		METHOD method_60817 getBuffer ()Ljava/nio/ByteBuffer;

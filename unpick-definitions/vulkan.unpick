@@ -283,6 +283,15 @@ target_method org.lwjgl.vulkan.VkSurfaceFormatKHR format ()I
 target_method org.lwjgl.vulkan.VkSwapchainCreateInfoKHR imageFormat (I)Lorg/lwjgl/vulkan/VkSwapchainCreateInfoKHR;
 	param 0 vk_format
 
+target_method org.lwjgl.vulkan.VkVertexInputAttributeDescription format (I)Lorg/lwjgl/vulkan/VkVertexInputAttributeDescription;
+	param 0 vk_format
+
+target_method org.lwjgl.vulkan.VkPipelineRenderingCreateInfoKHR depthAttachmentFormat (I)Lorg/lwjgl/vulkan/VkPipelineRenderingCreateInfoKHR;
+	param 0 vk_format
+
+target_method org.lwjgl.vulkan.VkPipelineRenderingCreateInfoKHR stencilAttachmentFormat (I)Lorg/lwjgl/vulkan/VkPipelineRenderingCreateInfoKHR;
+	param 0 vk_format
+
 # https://docs.vulkan.org/refpages/latest/refpages/source/VkSampleCountFlagBits.html
 group int vk_sample_count_flag_bits
 	@flags
@@ -298,6 +307,9 @@ target_method org.lwjgl.vulkan.VkImageCreateInfo samples (I)Lorg/lwjgl/vulkan/Vk
 	param 0 vk_sample_count_flag_bits
 
 target_method org.lwjgl.vulkan.VkCommandBufferInheritanceRenderingInfo rasterizationSamples (I)Lorg/lwjgl/vulkan/VkCommandBufferInheritanceRenderingInfo;
+	param 0 vk_sample_count_flag_bits
+
+target_method org.lwjgl.vulkan.VkPipelineMultisampleStateCreateInfo rasterizationSamples (I)Lorg/lwjgl/vulkan/VkPipelineMultisampleStateCreateInfo;
 	param 0 vk_sample_count_flag_bits
 
 # https://docs.vulkan.org/refpages/latest/refpages/source/VkImageTiling.html
@@ -844,6 +856,220 @@ target_method org.lwjgl.vulkan.KHRSwapchain vkAcquireNextImageKHR (Lorg/lwjgl/vu
 
 target_method org.lwjgl.vulkan.KHRSwapchain vkQueuePresentKHR (Lorg/lwjgl/vulkan/VkQueue;Lorg/lwjgl/vulkan/VkPresentInfoKHR;)I
 	return vk_result
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkPipelineShaderStageCreateFlagBits.html
+group int vk_pipeline_shader_stage_create_flag_bits
+	@flags
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_SHADER_STAGE_CREATE_ALLOW_VARYING_SUBGROUP_SIZE_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_SHADER_STAGE_CREATE_REQUIRE_FULL_SUBGROUPS_BIT
+
+target_method org.lwjgl.vulkan.VkPipelineShaderStageCreateInfo flags (I)Lorg/lwjgl/vulkan/VkPipelineShaderStageCreateInfo;
+	param 0 vk_pipeline_shader_stage_create_flag_bits
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkShaderStageFlagBits.html
+group int vk_shader_stage_flag_bits
+	@flags
+	org.lwjgl.vulkan.VK10.VK_SHADER_STAGE_ALL
+	org.lwjgl.vulkan.VK10.VK_SHADER_STAGE_ALL_GRAPHICS
+	org.lwjgl.vulkan.VK10.VK_SHADER_STAGE_VERTEX_BIT
+	org.lwjgl.vulkan.VK10.VK_SHADER_STAGE_TESSELLATION_CONTROL_BIT
+	org.lwjgl.vulkan.VK10.VK_SHADER_STAGE_TESSELLATION_EVALUATION_BIT
+	org.lwjgl.vulkan.VK10.VK_SHADER_STAGE_GEOMETRY_BIT
+	org.lwjgl.vulkan.VK10.VK_SHADER_STAGE_FRAGMENT_BIT
+	org.lwjgl.vulkan.VK10.VK_SHADER_STAGE_COMPUTE_BIT
+
+target_method org.lwjgl.vulkan.VkPipelineShaderStageCreateInfo stage (I)Lorg/lwjgl/vulkan/VkPipelineShaderStageCreateInfo;
+	param 0 vk_shader_stage_flag_bits
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkVertexInputRate.html
+group int vk_vertex_input_rate
+	org.lwjgl.vulkan.VK10.VK_VERTEX_INPUT_RATE_VERTEX
+	org.lwjgl.vulkan.VK10.VK_VERTEX_INPUT_RATE_INSTANCE
+
+target_method org.lwjgl.vulkan.VkVertexInputBindingDescription inputRate (I)Lorg/lwjgl/vulkan/VkVertexInputBindingDescription;
+	param 0 vk_vertex_input_rate
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkPrimitiveTopology.html
+group int vk_primitive_topology
+	org.lwjgl.vulkan.VK10.VK_PRIMITIVE_TOPOLOGY_POINT_LIST
+	org.lwjgl.vulkan.VK10.VK_PRIMITIVE_TOPOLOGY_LINE_LIST
+	org.lwjgl.vulkan.VK10.VK_PRIMITIVE_TOPOLOGY_LINE_STRIP
+	org.lwjgl.vulkan.VK10.VK_PRIMITIVE_TOPOLOGY_TRIANGLE_LIST
+	org.lwjgl.vulkan.VK10.VK_PRIMITIVE_TOPOLOGY_TRIANGLE_STRIP
+	org.lwjgl.vulkan.VK10.VK_PRIMITIVE_TOPOLOGY_TRIANGLE_FAN
+	org.lwjgl.vulkan.VK10.VK_PRIMITIVE_TOPOLOGY_LINE_LIST_WITH_ADJACENCY
+	org.lwjgl.vulkan.VK10.VK_PRIMITIVE_TOPOLOGY_LINE_STRIP_WITH_ADJACENCY
+	org.lwjgl.vulkan.VK10.VK_PRIMITIVE_TOPOLOGY_TRIANGLE_LIST_WITH_ADJACENCY
+	org.lwjgl.vulkan.VK10.VK_PRIMITIVE_TOPOLOGY_TRIANGLE_STRIP_WITH_ADJACENCY
+	org.lwjgl.vulkan.VK10.VK_PRIMITIVE_TOPOLOGY_PATCH_LIST
+
+target_method org.lwjgl.vulkan.VkPipelineInputAssemblyStateCreateInfo topology (I)Lorg/lwjgl/vulkan/VkPipelineInputAssemblyStateCreateInfo;
+	param 0 vk_primitive_topology
+
+target_method net.minecraft.client.vulkan.VulkanConst toVkTopology (Lcom/mojang/blaze3d/vertex/VertexFormat$DrawMode;)I
+	return vk_primitive_topology
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkPolygonMode.html
+group int vk_polygon_mode
+	org.lwjgl.vulkan.VK10.VK_POLYGON_MODE_FILL
+	org.lwjgl.vulkan.VK10.VK_POLYGON_MODE_LINE
+	org.lwjgl.vulkan.VK10.VK_POLYGON_MODE_POINT
+
+target_method org.lwjgl.vulkan.VkPipelineRasterizationStateCreateInfo polygonMode (I)Lorg/lwjgl/vulkan/VkPipelineRasterizationStateCreateInfo;
+	param 0 vk_polygon_mode
+
+target_method net.minecraft.client.vulkan.VulkanConst toVkPolygonMode (Lcom/mojang/blaze3d/platform/PolygonMode;)I
+	return vk_polygon_mode
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkCullModeFlagBits.html
+group int vk_cull_mode_flag_bits
+	@flags
+	org.lwjgl.vulkan.VK10.VK_CULL_MODE_NONE
+	org.lwjgl.vulkan.VK10.VK_CULL_MODE_FRONT_BIT
+	org.lwjgl.vulkan.VK10.VK_CULL_MODE_BACK_BIT
+	org.lwjgl.vulkan.VK10.VK_CULL_MODE_FRONT_AND_BACK
+
+target_method org.lwjgl.vulkan.VkPipelineRasterizationStateCreateInfo cullMode (I)Lorg/lwjgl/vulkan/VkPipelineRasterizationStateCreateInfo;
+	param 0 vk_cull_mode_flag_bits
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkFrontFace.html
+group int vk_front_fdace
+	org.lwjgl.vulkan.VK10.VK_FRONT_FACE_COUNTER_CLOCKWISE
+	org.lwjgl.vulkan.VK10.VK_FRONT_FACE_CLOCKWISE
+
+target_method org.lwjgl.vulkan.VkPipelineRasterizationStateCreateInfo frontFace (I)Lorg/lwjgl/vulkan/VkPipelineRasterizationStateCreateInfo;
+	param 0 vk_front_fdace
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkCompareOp.html
+group int vk_compare_op
+	org.lwjgl.vulkan.VK10.VK_COMPARE_OP_NEVER
+	org.lwjgl.vulkan.VK10.VK_COMPARE_OP_LESS
+	org.lwjgl.vulkan.VK10.VK_COMPARE_OP_EQUAL
+	org.lwjgl.vulkan.VK10.VK_COMPARE_OP_LESS_OR_EQUAL
+	org.lwjgl.vulkan.VK10.VK_COMPARE_OP_GREATER
+	org.lwjgl.vulkan.VK10.VK_COMPARE_OP_NOT_EQUAL
+	org.lwjgl.vulkan.VK10.VK_COMPARE_OP_GREATER_OR_EQUAL
+	org.lwjgl.vulkan.VK10.VK_COMPARE_OP_ALWAYS
+
+target_method org.lwjgl.vulkan.VkPipelineDepthStencilStateCreateInfo depthCompareOp (I)Lorg/lwjgl/vulkan/VkPipelineDepthStencilStateCreateInfo;
+	param 0 vk_compare_op
+
+target_method net.minecraft.client.vulkan.VulkanConst toVkDepthTest (Lcom/mojang/blaze3d/pipeline/DepthTest;)I
+	return vk_compare_op
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkBlendFactor.html
+group int vk_blend_factor
+	org.lwjgl.vulkan.VK10.VK_BLEND_FACTOR_ZERO
+	org.lwjgl.vulkan.VK10.VK_BLEND_FACTOR_ONE
+	org.lwjgl.vulkan.VK10.VK_BLEND_FACTOR_SRC_COLOR
+	org.lwjgl.vulkan.VK10.VK_BLEND_FACTOR_ONE_MINUS_SRC_COLOR
+	org.lwjgl.vulkan.VK10.VK_BLEND_FACTOR_DST_COLOR
+	org.lwjgl.vulkan.VK10.VK_BLEND_FACTOR_ONE_MINUS_DST_COLOR
+	org.lwjgl.vulkan.VK10.VK_BLEND_FACTOR_SRC_ALPHA
+	org.lwjgl.vulkan.VK10.VK_BLEND_FACTOR_ONE_MINUS_SRC_ALPHA
+	org.lwjgl.vulkan.VK10.VK_BLEND_FACTOR_DST_ALPHA
+	org.lwjgl.vulkan.VK10.VK_BLEND_FACTOR_ONE_MINUS_DST_ALPHA
+	org.lwjgl.vulkan.VK10.VK_BLEND_FACTOR_CONSTANT_COLOR
+	org.lwjgl.vulkan.VK10.VK_BLEND_FACTOR_ONE_MINUS_CONSTANT_COLOR
+	org.lwjgl.vulkan.VK10.VK_BLEND_FACTOR_CONSTANT_ALPHA
+	org.lwjgl.vulkan.VK10.VK_BLEND_FACTOR_ONE_MINUS_CONSTANT_ALPHA
+	org.lwjgl.vulkan.VK10.VK_BLEND_FACTOR_SRC_ALPHA_SATURATE
+	org.lwjgl.vulkan.VK10.VK_BLEND_FACTOR_SRC1_COLOR
+	org.lwjgl.vulkan.VK10.VK_BLEND_FACTOR_ONE_MINUS_SRC1_COLOR
+	org.lwjgl.vulkan.VK10.VK_BLEND_FACTOR_SRC1_ALPHA
+	org.lwjgl.vulkan.VK10.VK_BLEND_FACTOR_ONE_MINUS_SRC1_ALPHA
+
+target_method org.lwjgl.vulkan.VkPipelineColorBlendAttachmentState$Buffer dstAlphaBlendFactor (I)Lorg/lwjgl/vulkan/VkPipelineColorBlendAttachmentState$Buffer;
+    param 0 vk_blend_factor
+
+target_method org.lwjgl.vulkan.VkPipelineColorBlendAttachmentState$Buffer dstColorBlendFactor (I)Lorg/lwjgl/vulkan/VkPipelineColorBlendAttachmentState$Buffer;
+    param 0 vk_blend_factor
+
+target_method org.lwjgl.vulkan.VkPipelineColorBlendAttachmentState$Buffer srcAlphaBlendFactor (I)Lorg/lwjgl/vulkan/VkPipelineColorBlendAttachmentState$Buffer;
+    param 0 vk_blend_factor
+
+target_method org.lwjgl.vulkan.VkPipelineColorBlendAttachmentState$Buffer srcColorBlendFactor (I)Lorg/lwjgl/vulkan/VkPipelineColorBlendAttachmentState$Buffer;
+    param 0 vk_blend_factor
+
+target_method net.minecraft.client.vulkan.VulkanConst toVkBlendParameter (Lcom/mojang/blaze3d/pipeline/BlendParameter;)I
+	return vk_blend_factor
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkBlendOp.html
+group int vk_blend_op
+	org.lwjgl.vulkan.VK10.VK_BLEND_OP_ADD
+	org.lwjgl.vulkan.VK10.VK_BLEND_OP_SUBTRACT
+	org.lwjgl.vulkan.VK10.VK_BLEND_OP_REVERSE_SUBTRACT
+	org.lwjgl.vulkan.VK10.VK_BLEND_OP_MIN
+	org.lwjgl.vulkan.VK10.VK_BLEND_OP_MAX
+
+target_method org.lwjgl.vulkan.VkPipelineColorBlendAttachmentState$Buffer colorBlendOp (I)Lorg/lwjgl/vulkan/VkPipelineColorBlendAttachmentState$Buffer;
+    param 0 vk_blend_op
+
+target_method org.lwjgl.vulkan.VkPipelineColorBlendAttachmentState$Buffer alphaBlendOp (I)Lorg/lwjgl/vulkan/VkPipelineColorBlendAttachmentState$Buffer;
+    param 0 vk_blend_op
+
+target_method net.minecraft.client.vulkan.VulkanConst toVkBlendOperation (Lcom/mojang/blaze3d/pipeline/BlendOperation;)I
+    return vk_blend_op
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkPipelineColorBlendStateCreateFlagBits.html
+group int vk_pipeline_color_blend_state_create_flag_bits
+	@flags
+	org.lwjgl.vulkan.EXTRasterizationOrderAttachmentAccess.VK_PIPELINE_COLOR_BLEND_STATE_CREATE_RASTERIZATION_ORDER_ATTACHMENT_ACCESS_BIT_EXT
+
+target_method org.lwjgl.vulkan.VkPipelineColorBlendStateCreateInfo flags (I)Lorg/lwjgl/vulkan/VkPipelineColorBlendStateCreateInfo;
+	param 0 vk_pipeline_color_blend_state_create_flag_bits
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkLogicOp.html
+group int vk_logic_op
+	org.lwjgl.vulkan.VK10.VK_LOGIC_OP_CLEAR
+	org.lwjgl.vulkan.VK10.VK_LOGIC_OP_AND
+	org.lwjgl.vulkan.VK10.VK_LOGIC_OP_AND_REVERSE
+	org.lwjgl.vulkan.VK10.VK_LOGIC_OP_COPY
+	org.lwjgl.vulkan.VK10.VK_LOGIC_OP_AND_INVERTED
+	org.lwjgl.vulkan.VK10.VK_LOGIC_OP_NO_OP
+	org.lwjgl.vulkan.VK10.VK_LOGIC_OP_XOR
+	org.lwjgl.vulkan.VK10.VK_LOGIC_OP_OR
+	org.lwjgl.vulkan.VK10.VK_LOGIC_OP_NOR
+	org.lwjgl.vulkan.VK10.VK_LOGIC_OP_EQUIVALENT
+	org.lwjgl.vulkan.VK10.VK_LOGIC_OP_INVERT
+	org.lwjgl.vulkan.VK10.VK_LOGIC_OP_OR_REVERSE
+	org.lwjgl.vulkan.VK10.VK_LOGIC_OP_COPY_INVERTED
+	org.lwjgl.vulkan.VK10.VK_LOGIC_OP_OR_INVERTED
+	org.lwjgl.vulkan.VK10.VK_LOGIC_OP_NAND
+	org.lwjgl.vulkan.VK10.VK_LOGIC_OP_SET
+
+target_method org.lwjgl.vulkan.VkPipelineColorBlendStateCreateInfo logicOp (I)Lorg/lwjgl/vulkan/VkPipelineColorBlendStateCreateInfo;
+	param 0 vk_pipeline_color_blend_state_create_flag_bits
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkPipelineCreateFlagBits.html
+group int vk_pipeline_create_flag_bits
+	@flags
+	org.lwjgl.vulkan.VK10.VK_PIPELINE_CREATE_DISABLE_OPTIMIZATION_BIT
+	org.lwjgl.vulkan.VK10.VK_PIPELINE_CREATE_ALLOW_DERIVATIVES_BIT
+	org.lwjgl.vulkan.VK10.VK_PIPELINE_CREATE_DERIVATIVE_BIT
+	org.lwjgl.vulkan.VK11.VK_PIPELINE_CREATE_DISPATCH_BASE_BIT
+	org.lwjgl.vulkan.VK11.VK_PIPELINE_CREATE_VIEW_INDEX_FROM_DEVICE_INDEX_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_CREATE_FAIL_ON_PIPELINE_COMPILE_REQUIRED_BIT
+	org.lwjgl.vulkan.VK13.VK_PIPELINE_CREATE_EARLY_RETURN_ON_FAILURE_BIT
+	org.lwjgl.vulkan.VK14.VK_PIPELINE_CREATE_NO_PROTECTED_ACCESS_BIT
+	org.lwjgl.vulkan.VK14.VK_PIPELINE_CREATE_PROTECTED_ACCESS_ONLY_BIT
+
+target_method org.lwjgl.vulkan.VkGraphicsPipelineCreateInfo$Buffer flags (I)Lorg/lwjgl/vulkan/VkGraphicsPipelineCreateInfo$Buffer;
+	param 0 vk_pipeline_create_flag_bits
+
+# https://docs.vulkan.org/refpages/latest/refpages/source/VkColorComponentFlagBits.html
+group int vk_color_component_flag_bits
+	@flags
+	org.lwjgl.vulkan.VK10.VK_COLOR_COMPONENT_R_BIT
+	org.lwjgl.vulkan.VK10.VK_COLOR_COMPONENT_G_BIT
+	org.lwjgl.vulkan.VK10.VK_COLOR_COMPONENT_B_BIT
+	org.lwjgl.vulkan.VK10.VK_COLOR_COMPONENT_A_BIT
+
+target_method org.lwjgl.vulkan.VkPipelineColorBlendAttachmentState$Buffer colorWriteMask (I)Lorg/lwjgl/vulkan/VkPipelineColorBlendAttachmentState$Buffer;
+	param 0 vk_color_component_flag_bits
+
+target_method net.minecraft.client.vulkan.VulkanConst getVkColorWriteMask (Lcom/mojang/blaze3d/pipeline/ColorTargetState;)I
+	return vk_color_component_flag_bits
 
 # ========================================
 # Target definition for actual usages

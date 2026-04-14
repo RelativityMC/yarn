@@ -19,6 +19,7 @@ package net.fabricmc.filament.nameproposal;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -57,7 +58,8 @@ public class FieldNameFinder {
 
 			boolean proposedAnyNames = false;
 
-			for (Map.Entry<String, List<MethodNode>> entry : classes.entrySet()) {
+			for (Iterator<Map.Entry<String, List<MethodNode>>> iterator = classes.entrySet().stream().sorted(Map.Entry.comparingByKey()).iterator(); iterator.hasNext(); ) {
+				Map.Entry<String, List<MethodNode>> entry = iterator.next();
 				String owner = entry.getKey();
 				Set<String> enumFields = allEnumFields.getOrDefault(owner, Collections.emptySet());
 

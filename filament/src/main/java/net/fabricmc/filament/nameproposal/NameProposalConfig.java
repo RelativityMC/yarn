@@ -40,13 +40,13 @@ public record NameProposalConfig(FieldNameProvider fieldNameProvider) {
 			new ConditionalFieldNameProvider(
 					new RecursiveArgumentFieldNameProvider(owner -> {
 						// trusted owners, currently for most IDs
-						return owner.equals("net/minecraft/class_1_779") ||
-								owner.equals("net/minecraft/class_1_780") ||
-								owner.equals("net/minecraft/class_1_781") ||
-								owner.equals("net/minecraft/class_1_786") ||
-								owner.equals("net/minecraft/class_1_789") ||
-								owner.equals("net/minecraft/class_1_793") ||
-								owner.equals("net/minecraft/class_1_819");
+						return owner.equals("net/minecraft/class_1_779")
+								|| owner.equals("net/minecraft/class_1_780")
+								|| owner.equals("net/minecraft/class_1_781")
+								|| owner.equals("net/minecraft/class_1_786")
+								|| owner.equals("net/minecraft/class_1_789")
+								|| owner.equals("net/minecraft/class_1_793")
+								|| owner.equals("net/minecraft/class_1_819");
 					}),
 					List.of(
 							new StaticFieldPredicate(true),

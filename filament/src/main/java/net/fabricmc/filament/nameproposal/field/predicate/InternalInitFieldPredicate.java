@@ -30,6 +30,9 @@ public class InternalInitFieldPredicate implements FieldPredicate {
 		return field.owner().equals(field.methodOwner())
 				// Needed for RebalancedVillagerTrades
 				|| field.methodOwner().equals("net/minecraft/class_1_31")
+				// Needed for block and item names
+				|| field.methodOwner().equals("net/minecraft/class_1_782")
+				|| field.methodOwner().equals("net/minecraft/class_1_784")
 				|| field.isEnum();
 	}
 

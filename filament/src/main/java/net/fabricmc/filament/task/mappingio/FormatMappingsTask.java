@@ -16,6 +16,7 @@ import net.fabricmc.filament.task.base.FilamentTask;
 import net.fabricmc.mappingio.MappingReader;
 import net.fabricmc.mappingio.MappingWriter;
 import net.fabricmc.mappingio.format.MappingFormat;
+import net.fabricmc.mappingio.tree.MappingTree;
 import net.fabricmc.mappingio.tree.MemoryMappingTree;
 import net.fabricmc.mappingio.tree.VisitOrder;
 
@@ -41,6 +42,39 @@ public abstract class FormatMappingsTask extends FilamentTask {
 
 		MemoryMappingTree tree = new MemoryMappingTree();
 		MappingReader.read(path, MappingFormat.ENIGMA_DIR, tree);
+
+		for (MappingTree.ClassMapping classMapping : tree.getClasses()) {
+			String srcName = classMapping.getSrcName();
+			int anonClassIndex;
+
+			try {
+				anonClassIndex = Integer.parseInt(srcName.substring(srcName.lastIndexOf('$') + 1));
+			} catch (NumberFormatException e) {
+				continue;
+			}
+
+			for (int dstIdx = 0; dstIdx < tree.getMaxNamespaceId(); dstIdx++) {
+				String dstName = classMapping.getDstName(dstIdx);
+
+				if (dstName == null) {
+					continue;
+				}
+
+				int dstAnonClassIndex;
+
+				try {
+					dstAnonClassIndex = Integer.parseInt(dstName.substring(dstName.lastIndexOf('$') + 1));
+				} catch (NumberFormatException e) {
+					getLogger().warn("Unable to parse dst anon class index for {} -> {}", srcName, dstName);
+					continue;
+				}
+
+				if (dstAnonClassIndex != anonClassIndex) {
+					classMapping.setDstName(dstName.substring(0, dstName.lastIndexOf('$') + 1) + anonClassIndex, dstIdx);
+				}
+			}
+		}
+
 		tree.accept(writer, VisitOrder.createByName());
 	}
 }

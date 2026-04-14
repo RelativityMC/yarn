@@ -53,7 +53,7 @@ CLASS net/minecraft/class_7668 net/minecraft/resource/fs/ResourcePath
 		ARG 2 endIndex
 	METHOD toRealPath ([Ljava/nio/file/LinkOption;)Ljava/nio/file/Path;
 		ARG 1 options
-	CLASS 1 3
+	CLASS 1 1
 		METHOD setTimes (Ljava/nio/file/attribute/FileTime;Ljava/nio/file/attribute/FileTime;Ljava/nio/file/attribute/FileTime;)V
 			ARG 1 lastModifiedTime
 			ARG 2 lastAccessFile

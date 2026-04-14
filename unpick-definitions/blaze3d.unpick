@@ -12,6 +12,14 @@ group int blaze3d_gpu_buffer_flags
 	com.mojang.blaze3d.buffers.GpuBuffer.USAGE_UNIFORM
 	com.mojang.blaze3d.buffers.GpuBuffer.USAGE_UNIFORM_TEXEL_BUFFER
 
+group int blaze3d_gpu_texture_flags
+	@flags
+	com.mojang.blaze3d.textures.GpuTexture.USAGE_COPY_DST
+	com.mojang.blaze3d.textures.GpuTexture.USAGE_COPY_SRC
+	com.mojang.blaze3d.textures.GpuTexture.USAGE_TEXTURE_BINDING
+	com.mojang.blaze3d.textures.GpuTexture.USAGE_RENDER_ATTACHMENT
+	com.mojang.blaze3d.textures.GpuTexture.USAGE_CUBEMAP_COMPATIBLE
+
 group int blaze3d_color_target_state_write_mask
 	@flags
 	com.mojang.blaze3d.pipeline.ColorTargetState.WRITE_RGB
@@ -25,3 +33,5 @@ group int blaze3d_color_target_state_write_mask
 target_annotation com.mojang.blaze3d.buffers.GpuBuffer$Usage blaze3d_gpu_buffer_flags
 
 target_annotation com.mojang.blaze3d.pipeline.ColorTargetState$WriteMask blaze3d_color_target_state_write_mask
+
+target_annotation com.mojang.blaze3d.textures.GpuTexture$Usage blaze3d_gpu_texture_flags

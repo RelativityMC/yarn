@@ -1,10 +1,10 @@
 CLASS net/minecraft/class_1_807
 	FIELD field_1_5738 uploadedIndices Lcom/mojang/blaze3d/buffers/GpuBuffer;
 	FIELD field_1_5739 uploadedVertices Lcom/mojang/blaze3d/buffers/GpuBuffer;
-	FIELD field_1_5741 index Lnet/minecraft/class_1_807$class_1_810;
+	FIELD field_1_5741 indexPool Lnet/minecraft/class_1_807$class_1_810;
 	FIELD field_1_5744 allocator Lnet/minecraft/class_9799;
 	FIELD field_1_5745 staging Lnet/minecraft/class_1_807$class_1_810;
-	FIELD field_1_5746 vertex Lnet/minecraft/class_1_807$class_1_810;
+	FIELD field_1_5746 vertexPool Lnet/minecraft/class_1_807$class_1_810;
 	METHOD <init> (Ljava/util/function/Supplier;I)V
 		ARG 1 labelGetter
 		ARG 2 maxSize

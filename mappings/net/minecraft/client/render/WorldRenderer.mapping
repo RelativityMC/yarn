@@ -1,5 +1,11 @@
 CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	FIELD field_1_2266 optionsRenderState Lnet/minecraft/class_1_421;
+	FIELD field_1_5672 atlasManager Lnet/minecraft/class_11697;
+	FIELD field_1_5673 entityOutlineFramebuffer Lnet/minecraft/class_276;
+	FIELD field_1_5674 gameRenderer Lnet/minecraft/class_757;
+	FIELD field_1_5675 bakedModelManager Lnet/minecraft/class_1092;
+	FIELD field_1_5676 shaderLoader Lnet/minecraft/class_10151;
+	FIELD field_1_5677 textureManager Lnet/minecraft/class_1060;
 	FIELD field_4109 entityRenderManager Lnet/minecraft/class_898;
 	FIELD field_4112 chunks Lnet/minecraft/class_769;
 	FIELD field_20951 bufferBuilders Lnet/minecraft/class_4599;
@@ -7,10 +13,10 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	FIELD field_45614 chunkBuilder Lnet/minecraft/class_846;
 	FIELD field_45615 chunkRenderingDataPreparer Lnet/minecraft/class_8679;
 	FIELD field_45616 builtChunks Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
-	FIELD field_53075 skyRendering Lnet/minecraft/class_9975;
+	FIELD field_53075 skyRenderer Lnet/minecraft/class_9975;
 	FIELD field_53076 cloudRenderer Lnet/minecraft/class_9955;
-	FIELD field_53077 worldBorderRendering Lnet/minecraft/class_9978;
-	FIELD field_53078 weatherRendering Lnet/minecraft/class_9976;
+	FIELD field_53077 worldBorderRenderer Lnet/minecraft/class_9978;
+	FIELD field_53078 weatherRenderer Lnet/minecraft/class_9976;
 	FIELD field_53081 framebufferSet Lnet/minecraft/class_9960;
 	FIELD field_53900 TRANSPARENCY Lnet/minecraft/class_2960;
 	FIELD field_53901 ENTITY_OUTLINE Lnet/minecraft/class_2960;
@@ -24,14 +30,40 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	FIELD field_63574 gizmoCollector Lnet/minecraft/class_12185;
 	FIELD field_64218 terrainSampler Lnet/minecraft/class_12137;
 	FIELD field_64566 gizmos Lnet/minecraft/class_761$class_12351;
+	METHOD <init> (Lnet/minecraft/class_898;Lnet/minecraft/class_824;Lnet/minecraft/class_1092;Lnet/minecraft/class_1060;Lnet/minecraft/class_11697;Lnet/minecraft/class_10151;Lnet/minecraft/class_757;II)V
+		ARG 1 entityRenderManager
+		ARG 2 blockEntityRenderManager
+		ARG 3 bakedModelManager
+		ARG 4 textureManager
+		ARG 5 atlasManager
+		ARG 6 shaderLoader
+		ARG 7 gameRenderer
+		ARG 8 width
+		ARG 9 height
 	METHOD method_1_2233 createSectionRenderState (Lorg/joml/Matrix4fc;)Lnet/minecraft/class_11532;
 		ARG 1 rotationMatrix
 	METHOD method_1_2234 prepareForRender (Lnet/minecraft/class_12075;)V
+	METHOD method_1_4858 addGizmos (Ljava/util/List;)V
+		ARG 1 gizmos
+	METHOD method_1_4859 getBlockEntityRenderManager ()Lnet/minecraft/class_824;
+	METHOD method_1_4860 getEntityRenderManager ()Lnet/minecraft/class_898;
+	METHOD method_1_4861 rebuildChunks (Lnet/minecraft/class_638;Lnet/minecraft/class_315;Lnet/minecraft/class_4184;Lnet/minecraft/class_324;)V
+		ARG 1 world
+		ARG 2 options
+		ARG 3 camera
+		ARG 4 blockColors
+	METHOD method_1_4862 getNearbyChunks ()Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
+	METHOD method_1_4863 clear ()V
+	METHOD method_1_4864 getSkyRenderer ()Lnet/minecraft/class_9975;
+	METHOD method_1_4865 getChunks ()Lnet/minecraft/class_769;
+	METHOD method_1_4866 getWeatherRenderer ()Lnet/minecraft/class_9976;
+	METHOD method_1_4867 getWorldBorderRenderer ()Lnet/minecraft/class_9978;
 	METHOD method_3242 onResized (II)V
 		ARG 1 width
 		ARG 2 height
 	METHOD method_3254 drawEntityOutlinesFramebuffer ()V
 	METHOD method_3269 updateChunks (Lnet/minecraft/class_12075;)V
+		ARG 1 cameraRenderState
 	METHOD method_3281 isTerrainRenderComplete ()Z
 	METHOD method_22710 render (Lnet/minecraft/class_9922;Lnet/minecraft/class_9779;ZLnet/minecraft/class_12075;Lorg/joml/Matrix4fc;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Lorg/joml/Vector4f;Z)V
 		ARG 1 allocator
@@ -60,6 +92,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_29364 getCloudsFramebuffer ()Lnet/minecraft/class_276;
 	METHOD method_34810 getChunkBuilder ()Lnet/minecraft/class_846;
 	METHOD method_40050 isRenderingReady (Lnet/minecraft/class_2338;)Z
+		ARG 1 pos
 	METHOD method_62196 getCloudRenderer ()Lnet/minecraft/class_9955;
 	METHOD method_62198 translucencySort (Lnet/minecraft/class_243;)V
 		ARG 1 cameraPos
@@ -71,6 +104,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_62200 renderSky (Lnet/minecraft/class_9909;Lnet/minecraft/class_12075;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
 		ARG 1 frameGraphBuilder
 		ARG 2 cameraRenderState
+		ARG 3 fogBuffer
 	METHOD method_62202 renderMain (Lnet/minecraft/class_9909;Lorg/joml/Matrix4fc;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;ZLnet/minecraft/class_11658;Lnet/minecraft/class_3695;Lnet/minecraft/class_11532;)V
 		ARG 1 frameGraphBuilder
 		ARG 2 rotationMatrix
@@ -106,7 +140,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_62220 getBuiltChunks ()Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
 	METHOD method_62221 getChunkRenderingDataPreparer ()Lnet/minecraft/class_8679;
 	METHOD method_62907 getTransparencyPostEffectProcessor ()Lnet/minecraft/class_279;
-	METHOD method_64059 clear ()V
+	METHOD method_64059 clearBuiltAndNearbyChunks ()V
 	METHOD method_64060 scheduleChunkTranslucencySort (Lnet/minecraft/class_846$class_851;Lnet/minecraft/class_10196;Lnet/minecraft/class_243;ZZ)V
 		ARG 1 chunk
 		ARG 2 relativePos

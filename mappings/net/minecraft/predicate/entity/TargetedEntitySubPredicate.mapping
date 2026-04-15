@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_831 net/minecraft/predicate/entity/TargetedEntitySubPredicate
+	FIELD field_1_5941 CODEC Lcom/mojang/serialization/Codec;

@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_7383 net/minecraft/predicate/entity/SlimePredicate
+CLASS net/minecraft/class_7383 net/minecraft/predicate/entity/SlimeSubPredicate
 	FIELD field_45776 CODEC Lcom/mojang/serialization/Codec;
 	METHOD <init> (Lnet/minecraft/class_2096$class_2100;)V
 		ARG 1 size

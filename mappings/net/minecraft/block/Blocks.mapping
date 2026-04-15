@@ -205,10 +205,17 @@ CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 	METHOD method_1_4135 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_4970$class_2251;
 		ARG 0 color
 	METHOD method_1_4136 registerSlabBlock (Lnet/minecraft/class_1_784;Lnet/minecraft/class_2248;)Lnet/minecraft/class_2248;
+		ARG 0 key
 		ARG 1 base
 	METHOD method_1_4137 registerWallBlock (Lnet/minecraft/class_1_784;Lnet/minecraft/class_2248;)Lnet/minecraft/class_2248;
+		ARG 0 key
 		ARG 1 base
+	METHOD method_1_4804 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_1_4805 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
 	METHOD method_9492 register (Lnet/minecraft/class_1_784;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 key
 		ARG 1 settings
 	METHOD method_24419 (Lnet/minecraft/class_2680;)I
 		ARG 0 state
@@ -337,6 +344,7 @@ CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 	METHOD method_55132 (Lnet/minecraft/class_2680;)I
 		ARG 0 state
 	METHOD method_55133 registerOldStairsBlock (Lnet/minecraft/class_1_784;Lnet/minecraft/class_2248;)Lnet/minecraft/class_2248;
+		ARG 0 key
 		ARG 1 base
 	METHOD method_56717 (Lnet/minecraft/class_2680;)I
 		ARG 0 state
@@ -386,6 +394,7 @@ CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 	METHOD method_63062 (Lnet/minecraft/class_3620;Lnet/minecraft/class_3620;Lnet/minecraft/class_2680;)Lnet/minecraft/class_3620;
 		ARG 2 state
 	METHOD method_63064 register (Lnet/minecraft/class_1_784;Ljava/util/function/Function;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 key
 		ARG 1 factory
 		ARG 2 settings
 	METHOD method_63065 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
@@ -468,6 +477,7 @@ CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 	METHOD method_63121 createNetherStemSettings (Lnet/minecraft/class_3620;)Lnet/minecraft/class_4970$class_2251;
 		ARG 0 mapColor
 	METHOD method_63123 registerStairsBlock (Lnet/minecraft/class_1_784;Lnet/minecraft/class_2248;)Lnet/minecraft/class_2248;
+		ARG 0 key
 		ARG 1 base
 	METHOD method_63144 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
 		ARG 0 settings

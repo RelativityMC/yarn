@@ -1,0 +1,81 @@
+CLASS net/minecraft/class_1_816
+	FIELD field_1_5786 debugRenderer Lnet/minecraft/class_863;
+	FIELD field_1_5787 gameTestDebugRenderer Lnet/minecraft/class_4503;
+	FIELD field_1_5788 viewDistance I
+	FIELD field_1_5789 world Lnet/minecraft/class_638;
+	FIELD field_1_5790 worldRenderState Lnet/minecraft/class_11658;
+	FIELD field_1_5791 worldRenderer Lnet/minecraft/class_761;
+	FIELD field_1_5792 gizmos Lnet/minecraft/class_12185;
+	FIELD field_1_5793 client Lnet/minecraft/class_310;
+	FIELD field_1_5794 pitchd2 D
+	FIELD field_1_5795 yawd2 D
+	FIELD field_1_5797 rebuildChunks Z
+	FIELD field_1_5798 recreateTerrainSampler Z
+	FIELD field_1_5799 clearWorldRenderer Z
+	FIELD field_1_5800 scheduledReload Z
+	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_11658;Lnet/minecraft/class_761;)V
+		ARG 1 client
+		ARG 2 worldRenderState
+		ARG 3 worldRenderer
+	METHOD method_1_4996 reload ()V
+	METHOD method_1_4997 applyFrustum (Lnet/minecraft/class_4604;)V
+		ARG 1 frustum
+	METHOD method_1_4998 updateListeners (Lnet/minecraft/class_2338;I)V
+		ARG 1 pos
+		ARG 2 flags
+	METHOD method_1_4999 startGizmos ()Lnet/minecraft/class_12180$class_12181;
+	METHOD method_1_5002 render (Lnet/minecraft/class_9779;Lnet/minecraft/class_4184;F)V
+		ARG 1 tickCounter
+		ARG 2 camera
+		ARG 3 tickProgress
+	METHOD method_1_5005 (Lnet/minecraft/class_1297;F)Lnet/minecraft/class_10017;
+		ARG 1 entity
+		ARG 2 tickProgress
+	METHOD method_1_5006 renderGizmos ()V
+	METHOD method_1_5007 (Lnet/minecraft/class_4184;FLnet/minecraft/class_11658;)V
+		ARG 1 camera
+		ARG 3 worldRenderState
+	METHOD method_1_5008 (Lnet/minecraft/class_4184;Lnet/minecraft/class_4604;Lnet/minecraft/class_9779;Lnet/minecraft/class_11658;)V
+		ARG 1 camera
+		ARG 2 frustum
+		ARG 3 tickCounter
+		ARG 4 worldRenderState
+	METHOD method_1_5010 recreateTerrainSampler ()V
+	METHOD method_1_5012 scheduleBlockRerenderIfNeeded (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;)V
+		ARG 1 pos
+		ARG 2 from
+		ARG 3 to
+	METHOD method_1_5013 updateBlock (Lnet/minecraft/class_2338;Z)V
+		ARG 1 pos
+		ARG 2 redrawOnMainThread
+	METHOD method_1_5014 updateBlocks (IIIIII)V
+		ARG 1 minX
+		ARG 2 minY
+		ARG 3 minZ
+		ARG 4 maxX
+		ARG 5 maxY
+		ARG 6 maxZ
+	METHOD method_1_5015 setWorld (Lnet/minecraft/class_638;)V
+		ARG 1 world
+	METHOD method_1_5016 updateSection (III)V
+		ARG 1 sectionX
+		ARG 2 sectionY
+		ARG 3 sectionZ
+	METHOD method_1_5017 updateSection (IIIZ)V
+		ARG 1 sectionX
+		ARG 2 sectionY
+		ARG 3 sectionZ
+		ARG 4 redrawOnMainThread
+	METHOD method_1_5018 scheduleChunkRenders (III)V
+		ARG 1 sectionX
+		ARG 2 sectionY
+		ARG 3 sectionZ
+	METHOD method_1_5019 scheduleChunkRenders (IIIIII)V
+		ARG 1 minSectionX
+		ARG 2 minSectionY
+		ARG 3 minSectionZ
+		ARG 4 maxSectionX
+		ARG 5 maxSectionY
+		ARG 6 maxSectionZ
+	METHOD method_1_5020 shouldDrawEntityOutlines (Lnet/minecraft/class_4184;)Z
+		ARG 1 camera

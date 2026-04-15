@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_822 net/minecraft/predicate/entity/VehicleSubPredicate
+	FIELD field_1_5931 CODEC Lcom/mojang/serialization/Codec;

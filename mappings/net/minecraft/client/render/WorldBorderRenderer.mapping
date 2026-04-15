@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_9978 net/minecraft/client/render/WorldBorderRendering
+CLASS net/minecraft/class_9978 net/minecraft/client/render/WorldBorderRenderer
 	FIELD field_53157 FORCEFIELD Lnet/minecraft/class_2960;
 	FIELD field_56586 forceRefreshBuffers Z
 	FIELD field_56587 lastUploadedBoundWest D

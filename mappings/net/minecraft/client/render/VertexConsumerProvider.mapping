@@ -1,5 +1,7 @@
 CLASS net/minecraft/class_4597 net/minecraft/client/render/VertexConsumerProvider
 	COMMENT Manages rendering with multiple {@linkplain RenderLayer render layers}.
+	METHOD method_1_4894 immediate (ILjava/util/SequencedSet;)Lnet/minecraft/class_4597$class_4598;
+		ARG 0 initialSize
 	METHOD method_73477 getBuffer (Lnet/minecraft/class_1921;)Lnet/minecraft/class_4588;
 		COMMENT Starts building a buffer that will be drawn with {@code layer}.
 		COMMENT
@@ -18,3 +20,8 @@ CLASS net/minecraft/class_4597 net/minecraft/client/render/VertexConsumerProvide
 		COMMENT
 		COMMENT @see VertexConsumerProvider#immediate(BufferAllocator)
 		COMMENT @see VertexConsumerProvider#immediate(SequencedMap, BufferAllocator)
+		METHOD <init> (ILjava/util/SequencedSet;)V
+			ARG 1 initialSize
+		METHOD method_1_4895 (Lnet/minecraft/class_1921;)Lnet/minecraft/class_1_807$class_1_808;
+			ARG 1 renderLayer
+		METHOD method_1_4898 prepare ()V

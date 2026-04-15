@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_835 net/minecraft/predicate/entity/CompositeSubPredicate
+	FIELD field_1_5945 CODEC Lcom/mojang/serialization/Codec;

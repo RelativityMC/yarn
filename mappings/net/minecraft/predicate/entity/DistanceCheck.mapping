@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_2025 net/minecraft/predicate/entity/DistancePredicate
+CLASS net/minecraft/class_2025 net/minecraft/predicate/entity/DistanceCheck
 	FIELD field_45728 CODEC Lcom/mojang/serialization/Codec;
 	METHOD <init> (Lnet/minecraft/class_2096$class_2099;Lnet/minecraft/class_2096$class_2099;Lnet/minecraft/class_2096$class_2099;Lnet/minecraft/class_2096$class_2099;Lnet/minecraft/class_2096$class_2099;)V
 		ARG 1 x

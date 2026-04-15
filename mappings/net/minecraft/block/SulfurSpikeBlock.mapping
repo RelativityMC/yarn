@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_812 net/minecraft/block/SulfurSpikeBlock
+	METHOD method_1_4974 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_4975 (Lnet/minecraft/class_1_812;)Lnet/minecraft/class_2680;
+		ARG 0 block

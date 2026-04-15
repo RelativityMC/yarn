@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_9750 net/minecraft/predicate/entity/MovementPredicate
+CLASS net/minecraft/class_9750 net/minecraft/predicate/entity/MovementSubPredicate
 	FIELD field_51786 CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_60277 test (DDDD)Z
 		ARG 1 x

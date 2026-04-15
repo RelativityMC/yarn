@@ -311,6 +311,12 @@ CLASS net/minecraft/class_315 net/minecraft/client/option/GameOptions
 		ARG 0 optionText
 		ARG 1 value
 	METHOD method_1_3895 getGraphicsApi ()Lnet/minecraft/class_7172;
+	METHOD method_1_4722 (Ljava/lang/Integer;)V
+		ARG 1 renderDistance
+	METHOD method_1_4723 (Ljava/lang/Boolean;)V
+		ARG 1 cutoutLeaves
+	METHOD method_1_4725 (Ljava/lang/Integer;)V
+		ARG 1 maxAnisotropy
 	METHOD method_1626 update (Lnet/minecraft/class_2487;)Lnet/minecraft/class_2487;
 		ARG 1 nbt
 	METHOD method_1627 addResourcePackProfilesToManager (Lnet/minecraft/class_3283;)V
@@ -611,20 +617,30 @@ CLASS net/minecraft/class_315 net/minecraft/client/option/GameOptions
 	METHOD method_74034 getAllowCursorChanges ()Lnet/minecraft/class_7172;
 	METHOD method_74035 (Ljava/lang/Boolean;)V
 		ARG 0 value
+	METHOD method_75316 (Lnet/minecraft/class_4063;)V
+		ARG 1 renderClouds
 	METHOD method_75317 applyGraphicsMode (Lnet/minecraft/class_5365;)V
 		ARG 1 mode
+	METHOD method_75319 (Ljava/lang/Integer;)V
+		ARG 1 simulationDistance
 	METHOD method_75320 (Lnet/minecraft/class_2561;Lnet/minecraft/class_5365;)Lnet/minecraft/class_2561;
 		ARG 0 optionText
 		ARG 1 value
 	METHOD method_75321 onChangeGraphicsOption ()V
+	METHOD method_75327 (Ljava/lang/Integer;)V
+		ARG 1 mipmapLevels
 	METHOD method_75328 (Lnet/minecraft/class_2561;Ljava/lang/Integer;)Lnet/minecraft/class_2561;
 		ARG 0 optionText
 		ARG 1 value
 	METHOD method_75329 getPreset ()Lnet/minecraft/class_7172;
+	METHOD method_75331 (Ljava/lang/Integer;)V
+		ARG 1 weatherRadius
 	METHOD method_75333 getWeatherRadius ()Lnet/minecraft/class_7172;
 	METHOD method_75334 getCutoutLeaves ()Lnet/minecraft/class_7172;
 	METHOD method_75335 getVignette ()Lnet/minecraft/class_7172;
 	METHOD method_75337 getImprovedTransparency ()Lnet/minecraft/class_7172;
+	METHOD method_75341 (Ljava/lang/Double;)V
+		ARG 1 entityDistanceScaling
 	METHOD method_76247 getMaxAnisotropy ()Lnet/minecraft/class_7172;
 	METHOD method_76248 getEffectiveAnisotropy ()I
 	METHOD method_76249 (I)Ljava/lang/Double;
@@ -678,14 +694,16 @@ CLASS net/minecraft/class_315 net/minecraft/client/option/GameOptions
 		ARG 0 mode
 	METHOD method_76779 refreshWorldRenderer (Ljava/util/function/Consumer;)V
 		ARG 0 refresher
+	METHOD method_76784 (Ljava/lang/Integer;)V
+		ARG 1 renderCloudsDistance
 	METHOD method_76786 (Ljava/lang/Boolean;)V
 		ARG 1 value
-	CLASS 2 2
+	CLASS 2
 		METHOD method_33676 find (Ljava/lang/String;)Ljava/lang/String;
 			ARG 1 key
 		METHOD method_42571 (Ljava/lang/String;Lnet/minecraft/class_7172;Lcom/mojang/serialization/DataResult$Error;)V
 			ARG 2 error
-	CLASS 3 3
+	CLASS 3
 		METHOD method_33677 print (Ljava/lang/String;)V
 			ARG 1 key
 		METHOD method_42573 (Ljava/lang/String;Ljava/io/PrintWriter;Lcom/google/gson/JsonElement;)V

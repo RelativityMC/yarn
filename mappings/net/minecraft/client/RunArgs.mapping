@@ -22,6 +22,8 @@ CLASS net/minecraft/class_542 net/minecraft/client/RunArgs
 			ARG 4 assetIndex
 		METHOD method_45701 getAssetDir ()Ljava/nio/file/Path;
 	CLASS class_545 Game
+		FIELD field_1_3398 vulkanValidation Z
+		FIELD field_1_3843 graphicsApiOption Lnet/minecraft/class_1_698;
 		FIELD field_3291 versionType Ljava/lang/String;
 		FIELD field_3292 demo Z
 		FIELD field_3293 version Ljava/lang/String;
@@ -37,12 +39,16 @@ CLASS net/minecraft/class_542 net/minecraft/client/RunArgs
 			ARG 4 multiplayerDisabled
 			ARG 5 onlineChatDisabled
 			ARG 6 tracyEnabled
+			ARG 7 vulkanValidation
+			ARG 8 renderDebugLabels
+			ARG 9 graphicsApiOption
 			ARG 10 offlineDeveloperMode
 	CLASS class_547 Network
 		FIELD field_3296 netProxy Ljava/net/Proxy;
 		FIELD field_3299 session Lnet/minecraft/class_320;
 		METHOD <init> (Lnet/minecraft/class_320;Ljava/net/Proxy;)V
 			ARG 1 session
+			ARG 2 netProxy
 	CLASS class_8495 QuickPlay
 		METHOD method_51257 isEnabled ()Z
 	CLASS class_11392 DisabledQuickPlay

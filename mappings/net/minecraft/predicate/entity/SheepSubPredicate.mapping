@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_10168 net/minecraft/predicate/entity/SheepPredicate
+CLASS net/minecraft/class_10168 net/minecraft/predicate/entity/SheepSubPredicate
 	FIELD field_54004 CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_63497 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance

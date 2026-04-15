@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_9975 net/minecraft/client/render/SkyRendering
+CLASS net/minecraft/class_9975 net/minecraft/client/render/SkyRenderer
 	FIELD field_53143 END_SKY_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_53145 starVertexBuffer Lcom/mojang/blaze3d/buffers/GpuBuffer;
 	FIELD field_53146 topSkyVertexBuffer Lcom/mojang/blaze3d/buffers/GpuBuffer;

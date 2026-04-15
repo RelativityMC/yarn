@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_6404 net/minecraft/predicate/entity/LightningBoltPredicate
+CLASS net/minecraft/class_6404 net/minecraft/predicate/entity/LightningBoltSubPredicate
 	FIELD field_45759 CODEC Lcom/mojang/serialization/Codec;
 	METHOD <init> (Lnet/minecraft/class_2096$class_2100;Ljava/util/Optional;)V
 		ARG 1 blocksSetOnFire

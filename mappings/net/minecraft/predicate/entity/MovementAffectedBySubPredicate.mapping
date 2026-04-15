@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_833 net/minecraft/predicate/entity/MovementAffectedBySubPredicate
+	FIELD field_1_5943 CODEC Lcom/mojang/serialization/Codec;

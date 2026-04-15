@@ -188,6 +188,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 0 runDir
 		ARG 1 crashReport
 	METHOD method_1_3940 getGpuSurface ()Lnet/minecraft/class_1_665;
+	METHOD method_1_4728 getRecorder ()Lnet/minecraft/class_5962;
 	METHOD method_1478 getResourceManager ()Lnet/minecraft/class_3300;
 	METHOD method_1479 getResourcePackDir ()Ljava/nio/file/Path;
 	METHOD method_1481 joinWorld (Lnet/minecraft/class_638;)V
@@ -485,5 +486,5 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 1 world
 	METHOD method_76797 disconnectWithProgressScreen (Z)V
 		ARG 1 stopSounds
-	CLASS 1 1
+	CLASS 1
 		FIELD field_52756 closed Z

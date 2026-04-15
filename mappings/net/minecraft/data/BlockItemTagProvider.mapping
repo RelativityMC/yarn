@@ -1,0 +1,20 @@
+CLASS net/minecraft/class_1_802 net/minecraft/data/BlockItemTagProvider
+	FIELD field_1_5686 builderFactory Ljava/util/function/Function;
+	METHOD <init> (Ljava/util/function/Function;)V
+		ARG 1 builderFactory
+	METHOD method_1_4886 builder (Lnet/minecraft/class_1_782;)Lnet/minecraft/class_1_802$class_1_803;
+		ARG 1 key
+	METHOD method_1_4887 blockBuilder (Lnet/minecraft/class_11389;)Lnet/minecraft/class_1_802$class_1_803;
+		ARG 0 blockBuilder
+	METHOD method_1_4888 itemBuilder (Lnet/minecraft/class_11389;)Lnet/minecraft/class_1_802$class_1_803;
+		ARG 0 itemBuilder
+	METHOD method_71549 configure ()V
+	CLASS class_1_803 Builder
+		METHOD method_1_4889 add ([Lnet/minecraft/class_1_784;)Lnet/minecraft/class_1_802$class_1_803;
+			ARG 1 keys
+		METHOD method_1_4890 add (Ljava/util/Collection;)Lnet/minecraft/class_1_802$class_1_803;
+			ARG 1 keys
+		METHOD method_1_4891 add (Ljava/util/stream/Stream;)Lnet/minecraft/class_1_802$class_1_803;
+			ARG 1 keys
+		METHOD method_1_4892 addTag (Lnet/minecraft/class_1_782;)Lnet/minecraft/class_1_802$class_1_803;
+			ARG 1 tagKey

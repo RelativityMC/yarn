@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_2040 net/minecraft/predicate/entity/EntityFlagsPredicate
+CLASS net/minecraft/class_2040 net/minecraft/predicate/entity/EntityFlagsSubPredicate
 	FIELD comp_1757 isSneaking Ljava/util/Optional;
 	FIELD field_45745 CODEC Lcom/mojang/serialization/Codec;
 	METHOD comp_1757 isSneaking ()Ljava/util/Optional;

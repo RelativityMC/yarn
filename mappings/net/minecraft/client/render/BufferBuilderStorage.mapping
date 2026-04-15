@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_4599 net/minecraft/client/render/BufferBuilderStorage
+	FIELD field_1_5678 effectVertexConsumers Lnet/minecraft/class_4597$class_4598;
 	FIELD field_20956 blockBufferBuilders Lnet/minecraft/class_750;
 	FIELD field_20961 outlineVertexConsumers Lnet/minecraft/class_4618;
 	FIELD field_46900 blockBufferBuildersPool Lnet/minecraft/class_8901;

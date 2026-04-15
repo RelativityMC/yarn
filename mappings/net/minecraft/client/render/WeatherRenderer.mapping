@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_9976 net/minecraft/client/render/WeatherRendering
+CLASS net/minecraft/class_9976 net/minecraft/client/render/WeatherRenderer
 	FIELD field_53150 RAIN_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_53151 SNOW_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_53155 NORMAL_LINE_DX [F
@@ -25,6 +25,7 @@ CLASS net/minecraft/class_9976 net/minecraft/client/render/WeatherRendering
 		ARG 8 light
 		ARG 9 tickProgress
 	METHOD method_62315 buildPrecipitationPieces (Lnet/minecraft/class_638;FLnet/minecraft/class_243;Lnet/minecraft/class_12077;)V
+		ARG 1 world
 		ARG 2 tickProgress
 		ARG 3 cameraPos
 		ARG 4 state

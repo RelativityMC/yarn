@@ -1,4 +1,9 @@
 CLASS net/minecraft/class_8679 net/minecraft/client/render/ChunkRenderingDataPreparer
+	FIELD field_1_5778 chunkCullingEnabled Z
+	FIELD field_1_5780 cameraXd8 D
+	FIELD field_1_5781 cameraYd8 D
+	FIELD field_1_5782 cameraZd8 D
+	FIELD field_1_5783 fov I
 	FIELD field_45617 LOGGER Lorg/slf4j/Logger;
 	FIELD field_45618 DIRECTIONS [Lnet/minecraft/class_2350;
 	FIELD field_45619 DEFAULT_SECTION_DISTANCE I
@@ -9,6 +14,11 @@ CLASS net/minecraft/class_8679 net/minecraft/client/render/ChunkRenderingDataPre
 	FIELD field_45624 state Ljava/util/concurrent/atomic/AtomicReference;
 	FIELD field_45626 needsUpdate Ljava/util/concurrent/atomic/AtomicBoolean;
 	FIELD field_55873 SECTION_DISTANCE I
+	METHOD method_1_4987 updateFromCameraRenderState (Lnet/minecraft/class_12075;I)V
+		ARG 1 cameraRenderState
+		ARG 2 fov
+	METHOD method_1_4989 (Lnet/minecraft/class_4604;)Lnet/minecraft/class_4604;
+		ARG 0 frustum
 	METHOD method_52817 scheduleTerrainUpdate ()V
 	METHOD method_52824 (Lnet/minecraft/class_8679$class_8681;Lnet/minecraft/class_8679$class_762;)V
 		ARG 1 info
@@ -34,8 +44,12 @@ CLASS net/minecraft/class_8679 net/minecraft/client/render/ChunkRenderingDataPre
 		ARG 1 centerSectionPos
 		ARG 3 otherSectionPos
 	METHOD method_52833 updateTerrain (Lnet/minecraft/class_12075;)V
+		ARG 1 cameraRenderState
 	METHOD method_52834 updateSectionOcclusionGraph (Lnet/minecraft/class_12075;ILit/unimi/dsi/fastutil/longs/LongOpenHashSet;Lit/unimi/dsi/fastutil/longs/LongOpenHashSet;)V
+		ARG 1 cameraRenderState
+		ARG 2 fov
 	METHOD method_52835 updateNow (Lnet/minecraft/class_12075;)V
+		ARG 1 cameraRenderState
 	METHOD method_52836 updateFrustum ()Z
 	METHOD method_52837 getInfo (Lnet/minecraft/class_846$class_851;)Lnet/minecraft/class_8679$class_762;
 		ARG 1 chunk

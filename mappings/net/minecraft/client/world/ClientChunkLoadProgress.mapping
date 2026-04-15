@@ -6,6 +6,12 @@ CLASS net/minecraft/class_11653 net/minecraft/client/world/ClientChunkLoadProgre
 	FIELD field_61728 chunkLoadMap Lnet/minecraft/class_11544;
 	FIELD field_61729 stage Lnet/minecraft/class_11545$class_11546;
 	FIELD field_61730 state Lnet/minecraft/class_11653$class_11655;
+	FIELD field_61937 maxWait J
+		COMMENT After this number of milliseconds, a chunk will be forced to be considered
+		COMMENT ready regardless of its state.
+	METHOD <init> (J)V
+		ARG 1 maxWait
+	METHOD method_1_4980 getSectionReadyCallback ()Ljava/lang/Runnable;
 	METHOD method_72899 tick ()V
 	METHOD method_72900 setChunkLoadMap (Lnet/minecraft/class_11544;)V
 		ARG 1 map

@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_3735 net/minecraft/predicate/entity/EntityEquipmentPredicate
+CLASS net/minecraft/class_3735 net/minecraft/predicate/entity/EntityEquipmentSubPredicate
 	FIELD field_45744 CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_16226 test (Lnet/minecraft/class_1297;)Z
 		ARG 1 entity

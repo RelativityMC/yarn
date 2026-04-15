@@ -1,0 +1,102 @@
+CLASS net/minecraft/class_1_805 net/minecraft/block/SpeleothemBlock
+	FIELD field_1_5720 GROWTH_ON_RANDOM_TICK_CHANCE F
+	FIELD field_1_5722 MAX_HORIZONTAL_MODEL_OFFSET F
+	FIELD field_1_5726 BASE_SHAPE Lnet/minecraft/class_265;
+	FIELD field_1_5727 FRUSTUM_SHAPE Lnet/minecraft/class_265;
+	FIELD field_1_5728 MIDDLE_SHAPE Lnet/minecraft/class_265;
+	FIELD field_1_5729 TIP_DOWN_SHAPE Lnet/minecraft/class_265;
+	FIELD field_1_5730 TIP_MERGE_SHAPE Lnet/minecraft/class_265;
+	FIELD field_1_5731 TIP_UP_SHAPE Lnet/minecraft/class_265;
+	FIELD field_1_5734 THICKNESS Lnet/minecraft/class_2754;
+	FIELD field_1_5735 DIRECTION Lnet/minecraft/class_2754;
+	FIELD field_1_5736 WATERLOGGED Lnet/minecraft/class_2746;
+	FIELD field_1_5737 growsOn Lnet/minecraft/class_2680;
+	METHOD <init> (Lnet/minecraft/class_2680;Lnet/minecraft/class_4970$class_2251;)V
+		ARG 1 growsOn
+		ARG 2 settings
+	METHOD method_1_4922 isDrippingObstructed (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Z
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 state
+	METHOD method_1_4923 getThickness (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;Z)Lnet/minecraft/class_5691;
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 direction
+		ARG 4 tipMerge
+	METHOD method_1_4924 getPlacementDirection (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;)Lnet/minecraft/class_2350;
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 direction
+	METHOD method_1_4925 canGrowInto (Lnet/minecraft/class_2680;Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;)Z
+		ARG 1 state
+		ARG 2 world
+		ARG 3 pos
+	METHOD method_1_4926 mergeTips (Lnet/minecraft/class_2680;Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;)V
+		ARG 1 state
+		ARG 2 world
+		ARG 3 pos
+	METHOD method_1_4927 place (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;Lnet/minecraft/class_5691;)V
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 direction
+		ARG 4 thickness
+	METHOD method_1_4928 searchForTip (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350$class_2352;Ljava/util/function/BiPredicate;Ljava/util/function/Predicate;I)Ljava/util/Optional;
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 direction
+		ARG 3 columnPredicate
+		ARG 4 tipPredicate
+		ARG 5 searchLimit
+	METHOD method_1_4929 getTipPos (Lnet/minecraft/class_2680;Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;IZ)Lnet/minecraft/class_2338;
+		ARG 0 state
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 searchLimit
+		ARG 4 allowMerged
+	METHOD method_1_4930 extend (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;)V
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 direction
+	METHOD method_1_4931 tryGrow (Lnet/minecraft/class_2680;Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)V
+		ARG 1 state
+		ARG 2 world
+		ARG 3 pos
+		ARG 4 random
+	METHOD method_1_4932 growStalagmite (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;)V
+		ARG 1 world
+		ARG 2 pos
+	METHOD method_1_4933 isGrowableTip (Lnet/minecraft/class_2680;)Z
+		ARG 0 state
+	METHOD method_1_4934 isSpeleothemInDirection (Lnet/minecraft/class_2680;Lnet/minecraft/class_2350;)Z
+		ARG 0 state
+		ARG 1 direction
+	METHOD method_1_4935 isStalactite (Lnet/minecraft/class_2680;)Z
+		ARG 0 state
+	METHOD method_1_4936 isStalactiteBase (Lnet/minecraft/class_2680;Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;)Z
+		ARG 0 state
+		ARG 1 world
+		ARG 2 pos
+	METHOD method_1_4937 isStalagmite (Lnet/minecraft/class_2680;)Z
+		ARG 0 state
+	METHOD method_1_4938 isTip (Lnet/minecraft/class_2680;Z)Z
+		ARG 0 state
+		ARG 1 allowMerge
+	METHOD method_1_4939 isSpeleothemOfSelf (Lnet/minecraft/class_2680;Lnet/minecraft/class_2350;)Z
+		ARG 1 state
+		ARG 2 direction
+	METHOD method_1_4940 canPlaceAt (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;)Z
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 direction
+	METHOD method_1_4941 (Lnet/minecraft/class_2680;Lnet/minecraft/class_2350;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Z
+		ARG 2 p
+		ARG 3 st
+	METHOD method_1_4942 (ZLnet/minecraft/class_2680;)Z
+		ARG 1 st
+	METHOD method_1_4943 createFallingStalactites (Lnet/minecraft/class_2680;Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;)V
+		ARG 0 state
+		ARG 1 world
+		ARG 2 pos
+	METHOD method_36371 canGrow (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;)Z
+		ARG 1 world
+		ARG 2 pos

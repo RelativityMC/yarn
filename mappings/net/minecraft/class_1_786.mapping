@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_1_786
-	METHOD method_1_4761 (Ljava/lang/String;)Lnet/minecraft/class_1_727;
-		ARG 0 suffix

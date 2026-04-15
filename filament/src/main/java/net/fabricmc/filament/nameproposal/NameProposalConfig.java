@@ -68,7 +68,7 @@ public record NameProposalConfig(FieldNameProvider fieldNameProvider) {
 			new ConditionalFieldNameProvider(
 					new RecursiveArgumentFieldNameProvider("net/minecraft/class_1_780"::equals),
 					List.of(
-							new StaticFieldPredicate(false),
+//							new StaticFieldPredicate(false),
 							new MethodOwnerFieldPredicate("net/minecraft/class_1_782")
 					)
 			),

@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_790
+	METHOD <init> (Lnet/minecraft/class_5539;I)V
+		ARG 1 world
+	METHOD method_1_4812 (Lnet/minecraft/class_638;J)Z
+		ARG 1 world
+		ARG 2 sectionPos
+	METHOD method_1_4814 (Lnet/minecraft/class_638;J)Z
+		ARG 1 world
+		ARG 2 sectionPos

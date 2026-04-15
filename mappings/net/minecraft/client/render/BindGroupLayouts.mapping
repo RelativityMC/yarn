@@ -1,0 +1,21 @@
+CLASS net/minecraft/class_1_804 net/minecraft/client/render/BindGroupLayouts
+	FIELD field_1_5689 CHUNK_SECTION Lnet/minecraft/class_1_794;
+	FIELD field_1_5690 CLOUD Lnet/minecraft/class_1_794;
+	FIELD field_1_5691 CURRENT_AND_NEXT_SPRITE Lnet/minecraft/class_1_794;
+	FIELD field_1_5692 DISSOLVE_MASK_SAMPLER Lnet/minecraft/class_1_794;
+	FIELD field_1_5693 DYNAMIC_TRANSFORMS Lnet/minecraft/class_1_794;
+	FIELD field_1_5694 FOG Lnet/minecraft/class_1_794;
+	FIELD field_1_5695 GLOBALS Lnet/minecraft/class_1_794;
+	FIELD field_1_5696 IN_SAMPLER Lnet/minecraft/class_1_794;
+	FIELD field_1_5697 LIGHTING Lnet/minecraft/class_1_794;
+	FIELD field_1_5698 LIGHTMAP_INFO Lnet/minecraft/class_1_794;
+	FIELD field_1_5699 DYNAMIC_TRANSFORMS_AND_PROJECTION Lnet/minecraft/class_1_794;
+	FIELD field_1_5700 PROJECTION Lnet/minecraft/class_1_794;
+	FIELD field_1_5701 SAMPLER_0 Lnet/minecraft/class_1_794;
+	FIELD field_1_5702 SAMPLER_01 Lnet/minecraft/class_1_794;
+	FIELD field_1_5703 SAMPLER_012 Lnet/minecraft/class_1_794;
+	FIELD field_1_5704 SAMPLER_02 Lnet/minecraft/class_1_794;
+	FIELD field_1_5705 SAMPLER_1 Lnet/minecraft/class_1_794;
+	FIELD field_1_5706 SAMPLER_2 Lnet/minecraft/class_1_794;
+	FIELD field_1_5707 SPRITE Lnet/minecraft/class_1_794;
+	FIELD field_1_5708 SPRITE_ANIMATION_INFO Lnet/minecraft/class_1_794;

@@ -40,7 +40,7 @@ CLASS net/minecraft/class_1_727 net/minecraft/util/ColorMap
 	METHOD method_1_4919 (Ljava/util/function/BiFunction;Lnet/minecraft/class_1767;Ljava/lang/Object;)Lnet/minecraft/class_1792;
 		ARG 1 color
 		ARG 2 id
-	METHOD method_1_4920 prefixWithColors (Lnet/minecraft/class_1_727;)Lnet/minecraft/class_1_727;
+	METHOD method_1_4920 addPrefixes (Lnet/minecraft/class_1_727;)Lnet/minecraft/class_1_727;
 		ARG 0 suffixes
 	METHOD method_1_4921 mapZipped (Lnet/minecraft/class_1_727;Lnet/minecraft/class_1_727;Ljava/util/function/BiFunction;)Lnet/minecraft/class_1_727;
 		ARG 0 first

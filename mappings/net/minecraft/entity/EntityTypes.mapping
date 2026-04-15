@@ -1,0 +1,26 @@
+CLASS net/minecraft/class_1_787 net/minecraft/entity/EntityTypes
+	FIELD field_1_5362 MOUNT_WIDTH F
+	FIELD field_1_5376 CAN_POTENTIALLY_EXECUTE_COMMANDS Ljava/util/Set;
+	METHOD method_1_4772 boat (Ljava/util/function/Supplier;)Lnet/minecraft/class_1299$class_4049;
+		ARG 0 itemSupplier
+	METHOD method_1_4773 chestBoat (Ljava/util/function/Supplier;)Lnet/minecraft/class_1299$class_4049;
+		ARG 0 itemSupplier
+	METHOD method_1_4774 chestRaft (Ljava/util/function/Supplier;)Lnet/minecraft/class_1299$class_4049;
+		ARG 0 itemSupplier
+	METHOD method_1_4775 (Ljava/util/function/Supplier;Lnet/minecraft/class_1299;Lnet/minecraft/class_1937;)Lnet/minecraft/class_1690;
+		ARG 1 type
+		ARG 2 world
+	METHOD method_1_4776 (Ljava/util/function/Supplier;Lnet/minecraft/class_1299;Lnet/minecraft/class_1937;)Lnet/minecraft/class_7264;
+		ARG 1 type
+		ARG 2 world
+	METHOD method_1_4777 (Ljava/util/function/Supplier;Lnet/minecraft/class_1299;Lnet/minecraft/class_1937;)Lnet/minecraft/class_10257;
+		ARG 1 type
+		ARG 2 world
+	METHOD method_1_4778 (Ljava/util/function/Supplier;Lnet/minecraft/class_1299;Lnet/minecraft/class_1937;)Lnet/minecraft/class_10258;
+		ARG 1 type
+		ARG 2 world
+	METHOD method_1_4799 raft (Ljava/util/function/Supplier;)Lnet/minecraft/class_1299$class_4049;
+		ARG 0 itemSupplier
+	METHOD method_1_4800 register (Lnet/minecraft/class_5321;Lnet/minecraft/class_1299$class_1300;)Lnet/minecraft/class_1299;
+		ARG 0 key
+		ARG 1 builder

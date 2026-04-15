@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_784 net/minecraft/block/BlockItemKey
+	METHOD method_1_4757 ofVanilla (Ljava/lang/String;)Lnet/minecraft/class_1_784;
+		ARG 0 path
+	METHOD method_1_4758 ofVanilla (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/class_1_784;
+		ARG 0 blockPath
+		ARG 1 itemPath
+	METHOD method_1_4759 of (Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_784;
+		ARG 0 blockId
+		ARG 1 itemId

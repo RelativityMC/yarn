@@ -1,4 +1,17 @@
 CLASS net/minecraft/class_1_797
+	FIELD field_1_5661 DUMMY Lnet/minecraft/class_4076;
+	METHOD method_1_4844 (III)Z
+		ARG 1 sectionX
+		ARG 2 sectionY
+		ARG 3 sectionZ
+	METHOD method_1_4846 (III)Lnet/minecraft/class_1_797$class_1_799;
+		ARG 1 sectionX
+		ARG 2 sectionY
+		ARG 3 sectionZ
+	METHOD method_1_4847 (J)Lnet/minecraft/class_1_797$class_1_799;
+		ARG 1 sectionPos
+	METHOD method_1_4853 (Lnet/minecraft/class_4076;)Z
+		ARG 1 pos
 	CLASS class_1_799
 		METHOD method_62973 setSectionPos (J)V
 		METHOD method_62975 getSectionPos ()J

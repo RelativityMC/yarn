@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_801
+	METHOD method_1_4880 (Lnet/minecraft/class_1_727;)Lnet/minecraft/class_1_801;
+		ARG 1 keys
+	METHOD method_1_4881 (Lnet/minecraft/class_1_758;)Lnet/minecraft/class_1_801;
+		ARG 1 keys

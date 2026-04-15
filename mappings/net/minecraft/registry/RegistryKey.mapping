@@ -13,6 +13,12 @@ CLASS net/minecraft/class_5321 net/minecraft/registry/RegistryKey
 	METHOD <init> (Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;)V
 		ARG 1 registry
 		ARG 2 value
+	METHOD method_1_4751 adapt (Lnet/minecraft/class_5321;Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 1 registry
+		ARG 2 suffix
+	METHOD method_1_4752 adapt (Lnet/minecraft/class_5321;Ljava/util/function/UnaryOperator;)Lnet/minecraft/class_5321;
+		ARG 1 registry
+		ARG 2 pathFunction
 	METHOD method_29177 getValue ()Lnet/minecraft/class_2960;
 	METHOD method_29179 of (Lnet/minecraft/class_5321;Lnet/minecraft/class_2960;)Lnet/minecraft/class_5321;
 		COMMENT Creates a registry key for a value in a registry with a registry key for

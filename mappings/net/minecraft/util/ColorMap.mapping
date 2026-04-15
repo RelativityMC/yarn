@@ -1,18 +1,48 @@
 CLASS net/minecraft/class_1_727 net/minecraft/util/ColorMap
+	FIELD field_1_5716 IDS Lnet/minecraft/class_1_727;
+	FIELD field_1_5717 COLORS Lnet/minecraft/class_1_727;
 	METHOD method_1_4393 values ()Ljava/util/List;
 	METHOD method_1_4394 forEach (Ljava/util/function/Consumer;)V
 		ARG 1 callback
+	METHOD method_1_4395 (Lorg/apache/commons/lang3/function/TriFunction;Ljava/util/function/BiFunction;Ljava/util/function/Function;Lnet/minecraft/class_1767;Ljava/lang/Object;)Lnet/minecraft/class_2248;
+		ARG 3 color
+		ARG 4 id
 	METHOD method_1_4396 (Ljava/util/function/BiFunction;Lnet/minecraft/class_1767;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
 		ARG 2 settings
-	METHOD method_1_4399 fromFunction (Ljava/util/function/Function;)Lnet/minecraft/class_1_727;
+	METHOD method_1_4399 map (Ljava/util/function/Function;)Lnet/minecraft/class_1_727;
+		ARG 1 function
 	METHOD method_1_4400 get (Lnet/minecraft/class_1767;)Ljava/lang/Object;
 		ARG 1 color
 	METHOD method_1_4401 forBlocks (Lnet/minecraft/class_1_727;Lorg/apache/commons/lang3/function/TriFunction;Ljava/util/function/BiFunction;Ljava/util/function/Function;)Lnet/minecraft/class_1_727;
+		ARG 0 ids
+		ARG 1 registrar
 		ARG 2 blockFactory
 		ARG 3 settingsFactory
-	METHOD method_1_4402 forItems (Lnet/minecraft/class_1_727;Lnet/minecraft/class_1_727;Lorg/apache/commons/lang3/function/TriFunction;)Lnet/minecraft/class_1_727;
-	METHOD method_1_4403 forBlockItems (Lnet/minecraft/class_1_727;Ljava/util/function/BiFunction;)Lnet/minecraft/class_1_727;
+	METHOD method_1_4402 forBlockItems (Lnet/minecraft/class_1_727;Lnet/minecraft/class_1_727;Lorg/apache/commons/lang3/function/TriFunction;)Lnet/minecraft/class_1_727;
+		ARG 0 ids
+		ARG 1 blocks
+		ARG 2 itemFactory
+	METHOD method_1_4403 forItems (Lnet/minecraft/class_1_727;Ljava/util/function/BiFunction;)Lnet/minecraft/class_1_727;
+		ARG 0 ids
 		ARG 1 itemFactory
 	METHOD method_1_4404 forEachZipped (Lnet/minecraft/class_1_727;Lnet/minecraft/class_1_727;Ljava/util/function/BiConsumer;)V
 		ARG 0 first
 		ARG 1 second
+		ARG 2 callback
+	METHOD method_1_4916 constant (Ljava/lang/Object;)Lnet/minecraft/class_1_727;
+		ARG 0 value
+	METHOD method_1_4917 (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 color
+		ARG 1 suffix
+	METHOD method_1_4918 (Lorg/apache/commons/lang3/function/TriFunction;Lnet/minecraft/class_1_727;Lnet/minecraft/class_1767;Ljava/lang/Object;)Lnet/minecraft/class_1792;
+		ARG 2 color
+		ARG 3 id
+	METHOD method_1_4919 (Ljava/util/function/BiFunction;Lnet/minecraft/class_1767;Ljava/lang/Object;)Lnet/minecraft/class_1792;
+		ARG 1 color
+		ARG 2 id
+	METHOD method_1_4920 prefixWithColors (Lnet/minecraft/class_1_727;)Lnet/minecraft/class_1_727;
+		ARG 0 suffixes
+	METHOD method_1_4921 mapZipped (Lnet/minecraft/class_1_727;Lnet/minecraft/class_1_727;Ljava/util/function/BiFunction;)Lnet/minecraft/class_1_727;
+		ARG 0 first
+		ARG 1 second
+		ARG 2 function

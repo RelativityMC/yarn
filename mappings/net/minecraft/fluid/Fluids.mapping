@@ -3,3 +3,6 @@ CLASS net/minecraft/class_1_792 net/minecraft/fluid/Fluids
 	FIELD field_1_5607 FLOWING_WATER Lnet/minecraft/class_3609;
 	FIELD field_1_5608 LAVA Lnet/minecraft/class_3609;
 	FIELD field_1_5609 WATER Lnet/minecraft/class_3609;
+	METHOD method_1_4828 register (Lnet/minecraft/class_5321;Lnet/minecraft/class_3611;)Lnet/minecraft/class_3611;
+		ARG 0 key
+		ARG 1 fluid

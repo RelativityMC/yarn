@@ -1,7 +1,10 @@
-CLASS net/minecraft/class_1_807
+CLASS net/minecraft/class_1_807 com/mojang/blaze3d/buffers/MultiDrawBuffer
 	FIELD field_1_5738 uploadedIndices Lcom/mojang/blaze3d/buffers/GpuBuffer;
 	FIELD field_1_5739 uploadedVertices Lcom/mojang/blaze3d/buffers/GpuBuffer;
+	FIELD field_1_5740 draws Ljava/util/List;
 	FIELD field_1_5741 indexPool Lnet/minecraft/class_1_807$class_1_810;
+	FIELD field_1_5742 lastDraw Lnet/minecraft/class_1_807$class_1_808;
+	FIELD field_1_5743 bufferBuilderForLastDraw Lnet/minecraft/class_287;
 	FIELD field_1_5744 allocator Lnet/minecraft/class_9799;
 	FIELD field_1_5745 staging Lnet/minecraft/class_1_807$class_1_810;
 	FIELD field_1_5746 vertexPool Lnet/minecraft/class_1_807$class_1_810;
@@ -16,17 +19,23 @@ CLASS net/minecraft/class_1_807
 		ARG 2 drawMode
 		ARG 3 vertexSorter
 	METHOD method_1_4946 collectCentroids (Lnet/minecraft/class_1_807$class_1_808;)Lnet/minecraft/class_11899;
+		ARG 0 multiBuffer
+	METHOD method_1_4947 clear ()V
 	METHOD method_1_4948 finish ()V
+	METHOD method_1_4949 finishPendingDraw ()V
 	METHOD method_1_4950 execute (Lnet/minecraft/class_1_807$class_1_808;)Lnet/minecraft/class_1_807$class_1_809;
+		ARG 1 multiBuffer
 	METHOD method_1_4951 appendDraw (Lnet/minecraft/class_1_807$class_1_808;)Lnet/minecraft/class_4588;
+		ARG 1 draw
 	METHOD method_1_4955 upload ()V
 	METHOD method_1_4956 upload (Lcom/mojang/blaze3d/systems/GpuDevice;Ljava/util/List;Lcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/buffers/GpuBuffer;II)V
 		ARG 1 device
+		ARG 2 draws
 		ARG 3 vertexBuffer
 		ARG 4 indexBuffer
 		ARG 5 vertexOffset
 		ARG 6 indexOffset
-	CLASS class_1_808
+	CLASS class_1_808 MultiBuffer
 		FIELD field_1_5748 vertexFormat Lcom/mojang/blaze3d/vertex/VertexFormat;
 		FIELD field_1_5749 totalIndexCount I
 		FIELD field_1_5750 indexOffset I
@@ -45,7 +54,10 @@ CLASS net/minecraft/class_1_807
 		METHOD method_1_4958 clear ()V
 		METHOD method_1_4959 getIndexType ()Lcom/mojang/blaze3d/vertex/VertexFormat$class_5595;
 		METHOD method_1_4960 isEmpty ()Z
+	CLASS class_1_809 DrawCall
 	CLASS class_1_810 BufferPool
+		FIELD field_1_5757 BUFFER_ALIGNMENT I
+		FIELD field_1_5758 ALLOCATION_MAX_SIZE_FACTOR I
 		FIELD field_1_5759 usableBuffers Ljava/util/List;
 		FIELD field_1_5760 labelGetter Ljava/util/function/Supplier;
 		FIELD field_1_5761 waitingBuffers Ljava/util/List;

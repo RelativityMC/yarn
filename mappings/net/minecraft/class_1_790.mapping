@@ -23,8 +23,15 @@ CLASS net/minecraft/class_1_790
 		ARG 4 redrawOnMainThread
 	METHOD method_1_4818 getSectionCount ()I
 	CLASS class_1_791 Section
+		FIELD field_1_5601 playerChanged Z
+		FIELD field_1_5602 update Z
 		FIELD field_1_5603 sectionPos J
 		METHOD <init> (ZZJ)V
+			ARG 1 update
+			ARG 2 playerChanged
 			ARG 3 sectionPos
+		METHOD method_1_4819 shouldUpdate ()Z
+		METHOD method_1_4820 isPlayerChanged ()Z
 		METHOD method_1_4821 update (Z)V
 			ARG 1 redrawOnMainThread
+		METHOD method_1_4822 resetUpdate ()V

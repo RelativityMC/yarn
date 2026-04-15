@@ -33,6 +33,9 @@ CLASS net/minecraft/class_10410 net/minecraft/client/data/ItemModels
 		ARG 1 property
 		ARG 2 fallback
 		ARG 3 valuesToModels
+	METHOD method_1_5024 basic (Lnet/minecraft/class_2960;Lnet/minecraft/class_4590;)Lnet/minecraft/class_10439$class_10441;
+		ARG 0 model
+		ARG 1 transformation
 	METHOD method_65479 usingItemProperty ()Lnet/minecraft/class_10460;
 	METHOD method_65480 constantTintSource (I)Lnet/minecraft/class_10401;
 		ARG 0 value

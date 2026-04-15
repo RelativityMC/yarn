@@ -2,6 +2,8 @@ CLASS net/minecraft/class_11228 net/minecraft/client/gui/render/GuiRenderer
 	FIELD field_1_1440 itemAtlas Lnet/minecraft/class_1_201;
 	FIELD field_1_1816 guiProjection Lnet/minecraft/class_11279;
 	FIELD field_1_2265 panoramaRenderer Lnet/minecraft/class_751;
+	FIELD field_1_5670 simpleElementMultiBuffer Lnet/minecraft/class_1_807$class_1_808;
+	FIELD field_1_5671 guiVertexBuffer Lnet/minecraft/class_1_807;
 	FIELD field_59905 LOGGER Lorg/slf4j/Logger;
 	FIELD field_59912 SIMPLE_ELEMENT_COMPARATOR Ljava/util/Comparator;
 	FIELD field_59914 state Lnet/minecraft/class_11246;
@@ -73,7 +75,7 @@ CLASS net/minecraft/class_11228 net/minecraft/client/gui/render/GuiRenderer
 	METHOD method_72107 (ILnet/minecraft/class_11245;)V
 		ARG 2 elem
 	METHOD method_72109 clearOversizedItems ()V
-	CLASS 1 1
+	CLASS 1
 		METHOD method_73409 draw (Lnet/minecraft/class_11767;)V
 			ARG 1 drawable
 	CLASS class_11230 Draw

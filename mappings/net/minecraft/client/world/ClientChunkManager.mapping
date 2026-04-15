@@ -7,6 +7,9 @@ CLASS net/minecraft/class_631 net/minecraft/client/world/ClientChunkManager
 	METHOD <init> (Lnet/minecraft/class_638;I)V
 		ARG 1 world
 		ARG 2 loadDistance
+	METHOD method_1_4977 getNewSections ()Lit/unimi/dsi/fastutil/longs/LongOpenHashSet;
+	METHOD method_1_4978 flip ()V
+	METHOD method_1_4979 getUpdatedSections ()Lit/unimi/dsi/fastutil/longs/LongOpenHashSet;
 	METHOD method_2859 unload (Lnet/minecraft/class_1923;)V
 		ARG 1 pos
 	METHOD method_16020 loadChunkFromPacket (IILnet/minecraft/class_2540;Ljava/util/Map;Ljava/util/function/Consumer;)Lnet/minecraft/class_2818;
@@ -31,6 +34,9 @@ CLASS net/minecraft/class_631 net/minecraft/client/world/ClientChunkManager
 		ARG 2 z
 		ARG 3 buf
 	CLASS class_3681 ClientChunkMap
+		FIELD field_1_5766 newSections [Lit/unimi/dsi/fastutil/longs/LongOpenHashSet;
+		FIELD field_1_5767 updatedSections [Lit/unimi/dsi/fastutil/longs/LongOpenHashSet;
+		FIELD field_1_5768 activeIndex I
 		FIELD field_16251 chunks Ljava/util/concurrent/atomic/AtomicReferenceArray;
 		FIELD field_16252 diameter I
 		FIELD field_16253 radius I

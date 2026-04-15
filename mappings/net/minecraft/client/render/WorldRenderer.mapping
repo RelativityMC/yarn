@@ -29,6 +29,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	FIELD field_61739 entityRenderDispatcher Lnet/minecraft/class_11684;
 	FIELD field_63574 gizmoCollector Lnet/minecraft/class_12185;
 	FIELD field_64218 terrainSampler Lnet/minecraft/class_12137;
+	FIELD field_64450 MIN_CHUNK_RENDERING_OPACITY F
 	FIELD field_64566 gizmos Lnet/minecraft/class_761$class_12351;
 	METHOD <init> (Lnet/minecraft/class_898;Lnet/minecraft/class_824;Lnet/minecraft/class_1092;Lnet/minecraft/class_1060;Lnet/minecraft/class_11697;Lnet/minecraft/class_10151;Lnet/minecraft/class_757;II)V
 		ARG 1 entityRenderManager
@@ -40,9 +41,12 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 7 gameRenderer
 		ARG 8 width
 		ARG 9 height
+	METHOD method_1_2232 (I)Ljava/util/List;
+		ARG 0 hash
 	METHOD method_1_2233 createSectionRenderState (Lorg/joml/Matrix4fc;)Lnet/minecraft/class_11532;
 		ARG 1 rotationMatrix
 	METHOD method_1_2234 prepareForRender (Lnet/minecraft/class_12075;)V
+		ARG 1 cameraRenderState
 	METHOD method_1_4858 addGizmos (Ljava/util/List;)V
 		ARG 1 gizmos
 	METHOD method_1_4859 getBlockEntityRenderManager ()Lnet/minecraft/class_824;

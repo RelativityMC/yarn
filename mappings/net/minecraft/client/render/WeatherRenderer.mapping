@@ -1,6 +1,10 @@
 CLASS net/minecraft/class_9976 net/minecraft/client/render/WeatherRenderer
+	FIELD field_1_1035 INDICES_PER_PIECE I
+	FIELD field_1_5784 vertexBuffer Lcom/mojang/blaze3d/buffers/GpuBuffer;
 	FIELD field_53150 RAIN_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_53151 SNOW_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_53152 NORMAL_TABLE_DIMENSION I
+	FIELD field_53153 NORMAL_TABLE_BIAS I
 	FIELD field_53155 NORMAL_LINE_DX [F
 		COMMENT Given {@code -16 <= z < 16} and {@code -16 <= x < 16}, let {@code i = 32 * (z + 16) + (x + 16)}.
 		COMMENT Then {@code NORMAL_LINE_DX[i]} and {@code NORMAL_LINE_DZ[i]} describe the
@@ -16,8 +20,11 @@ CLASS net/minecraft/class_9976 net/minecraft/client/render/WeatherRenderer
 		ARG 2 texture
 		ARG 3 start
 		ARG 4 end
+	METHOD method_1_4992 upload (Ljava/nio/ByteBuffer;)Lcom/mojang/blaze3d/buffers/GpuBuffer;
+		ARG 1 buffer
 	METHOD method_62314 createRainPiece (Lnet/minecraft/class_5819;JIIIIIF)Lnet/minecraft/class_9976$class_9977;
 		ARG 1 random
+		ARG 2 time
 		ARG 4 x
 		ARG 5 yMin
 		ARG 6 yMax
@@ -38,6 +45,7 @@ CLASS net/minecraft/class_9976 net/minecraft/client/render/WeatherRenderer
 		ARG 6 gradient
 	METHOD method_62321 createSnowPiece (Lnet/minecraft/class_5819;JIIIIIF)Lnet/minecraft/class_9976$class_9977;
 		ARG 1 random
+		ARG 2 time
 		ARG 4 x
 		ARG 5 yMin
 		ARG 6 yMax

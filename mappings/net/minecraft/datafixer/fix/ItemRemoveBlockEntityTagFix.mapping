@@ -1,2 +1,20 @@
 CLASS net/minecraft/class_7641 net/minecraft/datafixer/fix/ItemRemoveBlockEntityTagFix
+	FIELD field_1_5859 old Z
 	FIELD field_39900 itemIds Ljava/util/Set;
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Ljava/util/Set;)V
+		ARG 1 schema
+		ARG 2 itemIds
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;ZLjava/util/Set;)V
+		ARG 1 schema
+		ARG 2 old
+		ARG 3 itemIds
+	METHOD method_1_5041 removeTagInBlockEntities (Lcom/mojang/datafixers/OpticFinder;)Lcom/mojang/datafixers/TypeRewriteRule;
+		ARG 1 idFieldFinder
+	METHOD method_1_5042 removeTagInFallingBlockEntities (Lcom/mojang/datafixers/OpticFinder;)Lcom/mojang/datafixers/TypeRewriteRule;
+		ARG 1 idFieldFinder
+	METHOD method_1_5043 removeTagInItemStacks (Lcom/mojang/datafixers/OpticFinder;Ljava/lang/String;Ljava/lang/String;)Lcom/mojang/datafixers/TypeRewriteRule;
+		ARG 1 idFieldFinder
+		ARG 2 componentsField
+	METHOD method_1_5044 removeTagInStructures (Lcom/mojang/datafixers/OpticFinder;)Lcom/mojang/datafixers/TypeRewriteRule;
+		ARG 1 idFieldFinder
+	METHOD method_1_5045 updateBlockEntityType ()Lcom/mojang/datafixers/TypeRewriteRule;

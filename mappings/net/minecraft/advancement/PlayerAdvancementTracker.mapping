@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_2985 net/minecraft/advancement/PlayerAdvancementTracker
+	FIELD field_1_5441 criterionProgress Ljava/util/Map;
 	FIELD field_13387 currentDisplayTab Lnet/minecraft/class_8779;
 	FIELD field_13388 progressUpdates Ljava/util/Set;
 	FIELD field_13390 visibleAdvancements Ljava/util/Set;
@@ -14,9 +15,15 @@ CLASS net/minecraft/class_2985 net/minecraft/advancement/PlayerAdvancementTracke
 	FIELD field_46074 progressMapCodec Lcom/mojang/serialization/Codec;
 	METHOD <init> (Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_3324;Lnet/minecraft/class_2989;Ljava/nio/file/Path;Lnet/minecraft/class_3222;)V
 		ARG 1 dataFixer
+		ARG 2 playerManager
 		ARG 3 advancementLoader
 		ARG 4 filePath
 		ARG 5 owner
+	METHOD method_1_4806 resetCriterionProgress ()V
+	METHOD method_1_4807 getOrCreateConditions (Lnet/minecraft/class_179;)Ljava/util/Map;
+		ARG 1 criterion
+	METHOD method_1_4808 getConditions (Lnet/minecraft/class_179;)Ljava/util/Map;
+		ARG 1 criterion
 	METHOD method_12872 rewardEmptyAdvancements (Lnet/minecraft/class_2989;)V
 		ARG 1 advancementLoader
 	METHOD method_12873 load (Lnet/minecraft/class_2989;)V
@@ -62,6 +69,8 @@ CLASS net/minecraft/class_2985 net/minecraft/advancement/PlayerAdvancementTracke
 	METHOD method_53637 (Lnet/minecraft/class_8779;Lnet/minecraft/class_185;)V
 		ARG 2 display
 	METHOD method_53638 beginTracking (Lnet/minecraft/class_175;Lnet/minecraft/class_2985$class_180;)V
+		ARG 1 criterion
+		ARG 2 conditionKey
 	METHOD method_53639 (Lnet/minecraft/class_2989;Lnet/minecraft/class_2960;Lnet/minecraft/class_167;)V
 		ARG 2 id
 		ARG 3 progress
@@ -72,8 +81,10 @@ CLASS net/minecraft/class_2985 net/minecraft/advancement/PlayerAdvancementTracke
 		ARG 1 entry
 		ARG 2 progress
 	METHOD method_53642 endTrackingCompleted (Lnet/minecraft/class_179;Lnet/minecraft/class_2985$class_180;)V
+		ARG 1 criterion
+		ARG 2 conditionKey
 	METHOD method_53643 createProgressMap ()Lnet/minecraft/class_2985$class_8780;
-	CLASS class_180 ConditionsContainer
+	CLASS class_180 ConditionKey
 		FIELD comp_1926 advancement Lnet/minecraft/class_8779;
 		FIELD comp_1927 id Ljava/lang/String;
 		METHOD <init> (Lnet/minecraft/class_8779;Ljava/lang/String;)V

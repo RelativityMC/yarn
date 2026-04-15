@@ -10,7 +10,8 @@ CLASS net/minecraft/class_2780 net/minecraft/world/border/WorldBorderListener
 		ARG 1 border
 		ARG 2 fromSize
 		ARG 4 toSize
-		ARG 6 time
+		ARG 6 timeDuration
+		ARG 8 timeStart
 	METHOD method_11932 onWarningTimeChanged (Lnet/minecraft/class_2784;I)V
 		ARG 1 border
 		ARG 2 warningTime

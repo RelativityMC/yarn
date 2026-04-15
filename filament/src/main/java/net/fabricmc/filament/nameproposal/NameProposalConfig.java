@@ -19,10 +19,15 @@ package net.fabricmc.filament.nameproposal;
 import java.util.List;
 import java.util.Set;
 
-import net.fabricmc.filament.nameproposal.field.nameprovider.*;
+import net.fabricmc.filament.nameproposal.field.nameprovider.ConditionalFieldNameProvider;
+import net.fabricmc.filament.nameproposal.field.nameprovider.ConstantFieldNameProvider;
+import net.fabricmc.filament.nameproposal.field.nameprovider.FieldNameProvider;
+import net.fabricmc.filament.nameproposal.field.nameprovider.ModifyingFieldNameProvider;
+import net.fabricmc.filament.nameproposal.field.nameprovider.RecursiveArgumentFieldNameProvider;
+import net.fabricmc.filament.nameproposal.field.nameprovider.SequenceFieldNameProvider;
+import net.fabricmc.filament.nameproposal.field.nameprovider.StringArgumentFieldNameProvider;
 import net.fabricmc.filament.nameproposal.field.predicate.DescriptorFieldPredicate;
 import net.fabricmc.filament.nameproposal.field.predicate.InternalInitFieldPredicate;
-import net.fabricmc.filament.nameproposal.field.predicate.MethodNameFieldPredicate;
 import net.fabricmc.filament.nameproposal.field.predicate.StaticFieldPredicate;
 
 public record NameProposalConfig(FieldNameProvider fieldNameProvider) {

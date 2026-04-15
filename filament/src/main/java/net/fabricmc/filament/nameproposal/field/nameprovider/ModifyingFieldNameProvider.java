@@ -2,8 +2,8 @@ package net.fabricmc.filament.nameproposal.field.nameprovider;
 
 import net.fabricmc.filament.nameproposal.field.FieldData;
 
-import java.util.function.BiFunction;
 import java.util.function.UnaryOperator;
+import java.util.function.BiFunction;
 
 /**
  * A field name provider that delegates to another provider and modifies

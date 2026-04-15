@@ -28,6 +28,7 @@ import net.fabricmc.filament.nameproposal.field.nameprovider.SequenceFieldNamePr
 import net.fabricmc.filament.nameproposal.field.nameprovider.StringArgumentFieldNameProvider;
 import net.fabricmc.filament.nameproposal.field.predicate.DescriptorFieldPredicate;
 import net.fabricmc.filament.nameproposal.field.predicate.InternalInitFieldPredicate;
+import net.fabricmc.filament.nameproposal.field.predicate.MethodOwnerFieldPredicate;
 import net.fabricmc.filament.nameproposal.field.predicate.StaticFieldPredicate;
 
 public record NameProposalConfig(FieldNameProvider fieldNameProvider) {
@@ -56,14 +57,20 @@ public record NameProposalConfig(FieldNameProvider fieldNameProvider) {
 					new RecursiveArgumentFieldNameProvider(TRUSTED_ID_OWNERS::contains),
 					List.of(
 							new StaticFieldPredicate(true),
-							InternalInitFieldPredicate.INSTANCE
+						InternalInitFieldPredicate.INSTANCE
 					)
-			), (name, field) ->
-					switch (field.methodName()) {
-						case "method_1_4735" -> name + "_SPAWN_EGG";
-						case "method_1_4732" -> "MUSIC_DISC" + name;
-						default -> name;
-					}
+			), (name, field) -> switch (field.methodName()) {
+			case "method_1_4735" -> name + "_SPAWN_EGG";
+			case "method_1_4732" -> "MUSIC_DISC" + name;
+			default -> name;
+			}),
+			// Results of BlockItemTagKey#{block, item}
+			new ConditionalFieldNameProvider(
+					new RecursiveArgumentFieldNameProvider("net/minecraft/class_1_780"::equals),
+					List.of(
+							new StaticFieldPredicate(false),
+							new MethodOwnerFieldPredicate("net/minecraft/class_1_782")
+					)
 			),
 			new ConditionalFieldNameProvider(
 					new ConstantFieldNameProvider("CODEC"),

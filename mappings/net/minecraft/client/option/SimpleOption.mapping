@@ -224,7 +224,7 @@ CLASS net/minecraft/class_7172 net/minecraft/client/option/SimpleOption
 			COMMENT @see <a href="SimpleOption.html#callbacks-modifiers">Callback Modifiers</a>
 			ARG 1 sliderProgressValueToValue
 			ARG 2 valueToSliderProgressValue
-		CLASS 1
+		CLASS 1 1
 	CLASS class_7178 Callbacks
 		COMMENT A set of callbacks to customize an option's behavior.
 		COMMENT
@@ -261,7 +261,7 @@ CLASS net/minecraft/class_7172 net/minecraft/client/option/SimpleOption
 			COMMENT @see <a href="SimpleOption.html#callbacks-modifiers">Callback Modifiers</a>
 			ARG 1 sliderProgressValueToValue
 			ARG 2 valueToSliderProgressValue
-		CLASS 1
+		CLASS 1 1
 	CLASS class_7276 LazyCyclingCallbacks
 		COMMENT A set of callbacks for a cycling option whose potential values are determined lazily.
 		COMMENT

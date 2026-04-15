@@ -38,7 +38,7 @@ CLASS net/minecraft/class_1_797 net/minecraft/client/render/chunk/VisibleChunkSt
 		COMMENT {@return whether a terrain update should be scheduled}
 		ARG 1 pos
 	METHOD method_1_4854 getSectionCount ()I
-	CLASS 1
+	CLASS 1 1
 		FIELD field_1_5668 index I
 	CLASS class_1_798 SectionEntry
 	CLASS class_1_799 Positioned

@@ -523,14 +523,14 @@ CLASS net/minecraft/class_156 net/minecraft/util/Util
 	METHOD method_72236 isOnAarch64 ()Z
 	METHOD method_75862 getDefaultLocaleFormatter (Ljava/time/format/FormatStyle;)Ljava/time/format/DateTimeFormatter;
 		ARG 0 style
-	CLASS 2
-	CLASS 3
-	CLASS 4
-	CLASS 10
+	CLASS 2 2
+	CLASS 3 3
+	CLASS 4 4
+	CLASS 10 10
 		FIELD field_29655 cache Ljava/util/Map;
 		METHOD apply (Ljava/lang/Object;)Ljava/lang/Object;
 			ARG 1 t
-	CLASS 11
+	CLASS 11 11
 		FIELD field_29657 cache Ljava/util/Map;
 		METHOD apply (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 			ARG 1 t

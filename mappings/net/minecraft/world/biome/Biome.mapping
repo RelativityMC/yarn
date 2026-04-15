@@ -87,7 +87,7 @@ CLASS net/minecraft/class_1959 net/minecraft/world/biome/Biome
 	METHOD method_75734 getEnvironmentAttributes ()Lnet/minecraft/class_12199;
 	METHOD method_75735 (Lnet/minecraft/class_1959;)Lnet/minecraft/class_12199;
 		ARG 0 biome
-	CLASS 1
+	CLASS 1 1
 		METHOD rehash (I)V
 			ARG 1 n
 	CLASS class_1960 Builder

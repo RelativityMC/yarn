@@ -17,18 +17,28 @@
 package net.fabricmc.filament.nameproposal;
 
 import java.util.List;
+import java.util.Set;
 
-import net.fabricmc.filament.nameproposal.field.nameprovider.ConditionalFieldNameProvider;
-import net.fabricmc.filament.nameproposal.field.nameprovider.ConstantFieldNameProvider;
-import net.fabricmc.filament.nameproposal.field.nameprovider.FieldNameProvider;
-import net.fabricmc.filament.nameproposal.field.nameprovider.RecursiveArgumentFieldNameProvider;
-import net.fabricmc.filament.nameproposal.field.nameprovider.SequenceFieldNameProvider;
-import net.fabricmc.filament.nameproposal.field.nameprovider.StringArgumentFieldNameProvider;
+import net.fabricmc.filament.nameproposal.field.nameprovider.*;
 import net.fabricmc.filament.nameproposal.field.predicate.DescriptorFieldPredicate;
 import net.fabricmc.filament.nameproposal.field.predicate.InternalInitFieldPredicate;
+import net.fabricmc.filament.nameproposal.field.predicate.MethodNameFieldPredicate;
 import net.fabricmc.filament.nameproposal.field.predicate.StaticFieldPredicate;
 
 public record NameProposalConfig(FieldNameProvider fieldNameProvider) {
+	// trusted owners, currently for most IDs
+	private static final Set<String> TRUSTED_ID_OWNERS = Set.of(
+			"net/minecraft/class_3612",
+			"net/minecraft/class_9796",
+			"net/minecraft/class_1_779",
+			"net/minecraft/class_1_780",
+			"net/minecraft/class_1_781",
+			"net/minecraft/class_1_786",
+			"net/minecraft/class_1_789",
+			"net/minecraft/class_1_793",
+			"net/minecraft/class_1_819"
+	);
+
 	public static final NameProposalConfig DEFAULT = new NameProposalConfig(new SequenceFieldNameProvider(List.of(
 			new ConditionalFieldNameProvider(
 					StringArgumentFieldNameProvider.INSTANCE,
@@ -37,22 +47,18 @@ public record NameProposalConfig(FieldNameProvider fieldNameProvider) {
 							InternalInitFieldPredicate.INSTANCE
 					)
 			),
-			new ConditionalFieldNameProvider(
-					new RecursiveArgumentFieldNameProvider(owner -> {
-						// trusted owners, currently for most IDs
-						return owner.equals("net/minecraft/class_1_779")
-								|| owner.equals("net/minecraft/class_1_780")
-								|| owner.equals("net/minecraft/class_1_781")
-								|| owner.equals("net/minecraft/class_1_786")
-								|| owner.equals("net/minecraft/class_1_789")
-								|| owner.equals("net/minecraft/class_1_793")
-								|| owner.equals("net/minecraft/class_1_819")
-								|| owner.equals("net/minecraft/class_3612");
-					}),
+			new ModifyingFieldNameProvider(new ConditionalFieldNameProvider(
+					new RecursiveArgumentFieldNameProvider(TRUSTED_ID_OWNERS::contains),
 					List.of(
 							new StaticFieldPredicate(true),
 							InternalInitFieldPredicate.INSTANCE
 					)
+			), (name, field) ->
+					switch (field.methodName()) {
+						case "method_1_4735" -> name + "_SPAWN_EGG";
+						case "method_1_4732" -> "MUSIC_DISC" + name;
+						default -> name;
+					}
 			),
 			new ConditionalFieldNameProvider(
 					new ConstantFieldNameProvider("CODEC"),

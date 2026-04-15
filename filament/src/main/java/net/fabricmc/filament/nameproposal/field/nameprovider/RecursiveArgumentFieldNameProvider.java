@@ -18,7 +18,7 @@ public record RecursiveArgumentFieldNameProvider(Predicate<String> trustedOwnerP
 		if (arg == null) return null;
 
 		if (!this.trustedOwnerPredicate().test(arg.owner)) return null;
-		if (!field.isStatic()) System.out.println(field);
+
 		return field.proposedFieldNames().get(new MappingEntry(arg.owner, arg.name, arg.desc));
 	}
 

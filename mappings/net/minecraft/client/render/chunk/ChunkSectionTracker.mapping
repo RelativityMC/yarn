@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_1_790
+CLASS net/minecraft/class_1_790 net/minecraft/client/render/chunk/ChunkSectionTracker
 	FIELD field_1_5600 storage Lnet/minecraft/class_1_797;
 	METHOD <init> (Lnet/minecraft/class_5539;I)V
 		ARG 1 world

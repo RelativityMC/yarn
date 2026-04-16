@@ -9,6 +9,7 @@ CLASS net/minecraft/class_1_816 net/minecraft/client/render/WorldExtractor
 	FIELD field_1_5793 client Lnet/minecraft/class_310;
 	FIELD field_1_5794 pitchd2 D
 	FIELD field_1_5795 yawd2 D
+	FIELD field_1_5796 sectionTracker Lnet/minecraft/class_1_790;
 	FIELD field_1_5797 rebuildChunks Z
 	FIELD field_1_5798 recreateTerrainSampler Z
 	FIELD field_1_5799 clearWorldRenderer Z
@@ -25,12 +26,17 @@ CLASS net/minecraft/class_1_816 net/minecraft/client/render/WorldExtractor
 		ARG 2 flags
 	METHOD method_1_4999 startGizmos ()Lnet/minecraft/class_12180$class_12181;
 	METHOD method_1_5000 getRenderedSectionCount ()I
+	METHOD method_1_5001 getEntityRenderStats ()Ljava/lang/String;
 	METHOD method_1_5002 render (Lnet/minecraft/class_9779;Lnet/minecraft/class_4184;F)V
 		ARG 1 tickCounter
 		ARG 2 camera
 		ARG 3 tickProgress
 	METHOD method_1_5003 renderBlockBreaking (Lnet/minecraft/class_4184;Lnet/minecraft/class_11658;)V
+		ARG 1 camera
+		ARG 2 worldRenderStateOut
 	METHOD method_1_5004 renderBlockOutline (Lnet/minecraft/class_4184;Lnet/minecraft/class_11658;)V
+		ARG 1 camera
+		ARG 2 worldRenderStateOut
 	METHOD method_1_5005 getAndUpdateRenderState (Lnet/minecraft/class_1297;F)Lnet/minecraft/class_10017;
 		ARG 1 entity
 		ARG 2 tickProgress

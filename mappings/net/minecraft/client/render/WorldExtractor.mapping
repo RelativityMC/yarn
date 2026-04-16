@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_1_816
+CLASS net/minecraft/class_1_816 net/minecraft/client/render/WorldExtractor
 	FIELD field_1_5786 debugRenderer Lnet/minecraft/class_863;
 	FIELD field_1_5787 gameTestDebugRenderer Lnet/minecraft/class_4503;
 	FIELD field_1_5788 viewDistance I
@@ -24,23 +24,29 @@ CLASS net/minecraft/class_1_816
 		ARG 1 pos
 		ARG 2 flags
 	METHOD method_1_4999 startGizmos ()Lnet/minecraft/class_12180$class_12181;
+	METHOD method_1_5000 getRenderedSectionCount ()I
 	METHOD method_1_5002 render (Lnet/minecraft/class_9779;Lnet/minecraft/class_4184;F)V
 		ARG 1 tickCounter
 		ARG 2 camera
 		ARG 3 tickProgress
-	METHOD method_1_5005 (Lnet/minecraft/class_1297;F)Lnet/minecraft/class_10017;
+	METHOD method_1_5003 renderBlockBreaking (Lnet/minecraft/class_4184;Lnet/minecraft/class_11658;)V
+	METHOD method_1_5004 renderBlockOutline (Lnet/minecraft/class_4184;Lnet/minecraft/class_11658;)V
+	METHOD method_1_5005 getAndUpdateRenderState (Lnet/minecraft/class_1297;F)Lnet/minecraft/class_10017;
 		ARG 1 entity
 		ARG 2 tickProgress
 	METHOD method_1_5006 renderGizmos ()V
-	METHOD method_1_5007 (Lnet/minecraft/class_4184;FLnet/minecraft/class_11658;)V
+	METHOD method_1_5007 renderBlockEntities (Lnet/minecraft/class_4184;FLnet/minecraft/class_11658;)V
 		ARG 1 camera
+		ARG 2 tickProgress
 		ARG 3 worldRenderState
-	METHOD method_1_5008 (Lnet/minecraft/class_4184;Lnet/minecraft/class_4604;Lnet/minecraft/class_9779;Lnet/minecraft/class_11658;)V
+	METHOD method_1_5008 renderEntities (Lnet/minecraft/class_4184;Lnet/minecraft/class_4604;Lnet/minecraft/class_9779;Lnet/minecraft/class_11658;)V
 		ARG 1 camera
 		ARG 2 frustum
 		ARG 3 tickCounter
 		ARG 4 worldRenderState
+	METHOD method_1_5009 getLastViewDistance ()D
 	METHOD method_1_5010 recreateTerrainSampler ()V
+	METHOD method_1_5011 getChunkRenderStats ()Ljava/lang/String;
 	METHOD method_1_5012 scheduleBlockRerenderIfNeeded (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;)V
 		ARG 1 pos
 		ARG 2 from
@@ -79,3 +85,4 @@ CLASS net/minecraft/class_1_816
 		ARG 6 maxSectionZ
 	METHOD method_1_5020 shouldDrawEntityOutlines (Lnet/minecraft/class_4184;)Z
 		ARG 1 camera
+	METHOD method_1_5021 getSectionCount ()D

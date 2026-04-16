@@ -41,7 +41,7 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 		ARG 3 bakedModelManager
 	METHOD method_1_430 getWorldLightmapTextureView ()Lcom/mojang/blaze3d/textures/GpuTextureView;
 	METHOD method_1_431 getLightmapTextureView ()Lcom/mojang/blaze3d/textures/GpuTextureView;
-	METHOD method_1_2674 renderGui (Lnet/minecraft/class_9779;Z)V
+	METHOD method_1_2674 extract (Lnet/minecraft/class_9779;Z)V
 		ARG 1 renderTickCounter
 		ARG 2 tick
 	METHOD method_1_2676 updateOptionsRenderState ()V

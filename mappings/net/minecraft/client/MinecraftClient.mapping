@@ -42,6 +42,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_1_2136 blockModelManager Lnet/minecraft/class_1_394;
 	FIELD field_1_2249 lastWindowFocusTime J
 	FIELD field_1_2571 imeStatusController Lnet/minecraft/class_1_490;
+	FIELD field_1_3288 backendFailure Lnet/minecraft/class_1_739;
 	FIELD field_1_3290 surfaceConfigureFailed Z
 	FIELD field_1_3291 gpuTimestampProfiler Lnet/minecraft/class_1_667;
 	FIELD field_1_3292 gpuSurface Lnet/minecraft/class_1_665;

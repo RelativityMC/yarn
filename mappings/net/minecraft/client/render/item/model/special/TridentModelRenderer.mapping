@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_10518 net/minecraft/client/render/item/model/special/TridentModelRenderer
+	FIELD field_1_2391 TRANSFORMATION Lnet/minecraft/class_4590;
 	FIELD field_55456 model Lnet/minecraft/class_613;
 	METHOD <init> (Lnet/minecraft/class_613;)V
 		ARG 1 model

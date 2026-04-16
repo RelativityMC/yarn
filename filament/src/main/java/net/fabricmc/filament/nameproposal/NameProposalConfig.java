@@ -35,6 +35,8 @@ public record NameProposalConfig(FieldNameProvider fieldNameProvider) {
 	// trusted owners, currently for most IDs
 	private static final Set<String> TRUSTED_ID_OWNERS = Set.of(
 			"net/minecraft/class_3612",
+			"net/minecraft/class_8057",
+			"net/minecraft/class_8173",
 			"net/minecraft/class_9796",
 			"net/minecraft/class_1_779",
 			"net/minecraft/class_1_780",
@@ -60,8 +62,10 @@ public record NameProposalConfig(FieldNameProvider fieldNameProvider) {
 						InternalInitFieldPredicate.INSTANCE
 					)
 			), (name, field) -> switch (field.methodName()) {
+			case "method_1_4731" -> name + "_SMITHING_TEMPLATE";
+			case "method_1_4732" -> "MUSIC_DISC_" + name;
+			case "method_1_4733" -> name + "_POTTERY_SHERD";
 			case "method_1_4735" -> name + "_SPAWN_EGG";
-			case "method_1_4732" -> "MUSIC_DISC" + name;
 			default -> name;
 			}),
 			// Results of BlockItemTagKey#{block, item}

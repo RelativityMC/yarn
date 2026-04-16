@@ -17,5 +17,8 @@ CLASS net/minecraft/class_1_421 net/minecraft/client/render/OptionsRenderState
 	FIELD field_1_2347 distortionEffectScale F
 	FIELD field_1_2348 textBackgroundOpacity F
 	FIELD field_1_2349 textureFilteringMode Lnet/minecraft/class_12393;
+	FIELD field_1_5805 chunkFade D
+	FIELD field_1_5806 fov I
+	FIELD field_1_5807 chunkBuilderMode Lnet/minecraft/class_6597;
 	METHOD method_1_2803 getBackgroundOpacity (F)F
 		ARG 1 opacity

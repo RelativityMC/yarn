@@ -2,6 +2,9 @@ CLASS net/minecraft/class_3568 net/minecraft/world/chunk/light/LightingProvider
 	FIELD field_15813 skyLightProvider Lnet/minecraft/class_3558;
 	FIELD field_15814 blockLightProvider Lnet/minecraft/class_3558;
 	FIELD field_27339 world Lnet/minecraft/class_5539;
+	FIELD field_31714 SECTION_VERTICAL_MARGIN I
+		COMMENT The number of extra chunk sections to keep track of above and below the
+		COMMENT world.
 	FIELD field_52658 DEFAULT Lnet/minecraft/class_3568;
 	METHOD <init> (Lnet/minecraft/class_2823;ZZ)V
 		ARG 1 chunkProvider
@@ -22,9 +25,9 @@ CLASS net/minecraft/class_3568 net/minecraft/world/chunk/light/LightingProvider
 	METHOD method_22876 displaySectionLevel (Lnet/minecraft/class_1944;Lnet/minecraft/class_4076;)Ljava/lang/String;
 		ARG 1 lightType
 		ARG 2 pos
-	METHOD method_31928 getHeight ()I
-	METHOD method_31929 getBottomY ()I
-	METHOD method_31930 getTopY ()I
+	METHOD method_31928 getHeightInSections ()I
+	METHOD method_31929 getMinSectionY ()I
+	METHOD method_31930 getMaxSectionY ()I
 	METHOD method_51560 getStatus (Lnet/minecraft/class_1944;Lnet/minecraft/class_4076;)Lnet/minecraft/class_3560$class_8530;
 		ARG 1 lightType
 		ARG 2 pos

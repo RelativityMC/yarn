@@ -70,12 +70,16 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 		METHOD method_1_2412 onVertexBufferUploaded (Lnet/minecraft/class_11516;Lnet/minecraft/class_11515;)V
 			ARG 1 data
 			ARG 2 blockRenderLayer
+		METHOD method_1_5084 rebuildAsync (Lnet/minecraft/class_853;)V
+			ARG 1 region
 		METHOD method_3663 cancel ()V
 		METHOD method_3670 getOrigin ()Lnet/minecraft/class_2338;
 		METHOD method_3674 createRebuildTask (Lnet/minecraft/class_853;)Lnet/minecraft/class_846$class_851$class_4577;
+			ARG 1 region
 		METHOD method_3675 clear ()V
 		METHOD method_22773 scheduleSort ()V
 		METHOD method_22781 rebuild (Lnet/minecraft/class_853;)V
+			ARG 1 region
 		METHOD method_40051 getBoundingBox ()Lnet/minecraft/class_238;
 		METHOD method_60909 getVertexSorter (Lnet/minecraft/class_4076;Lnet/minecraft/class_243;)Lnet/minecraft/class_8251;
 			ARG 1 sectionPos

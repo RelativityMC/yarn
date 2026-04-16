@@ -1,0 +1,51 @@
+CLASS net/minecraft/class_1_797 net/minecraft/client/render/chunk/VisibleChunkStorage
+	FIELD field_1_5661 origin Lnet/minecraft/class_4076;
+	FIELD field_1_5662 maxSectionY I
+	FIELD field_1_5663 minSectionY I
+	FIELD field_1_5664 storage [Lnet/minecraft/class_1_797$class_1_798;
+	FIELD field_1_5665 viewDistance I
+	FIELD field_1_5666 horizontalSectionSideLength I
+	FIELD field_1_5667 heightInSections I
+	METHOD <init> (IIILnet/minecraft/class_1_797$class_1_800;)V
+		ARG 1 viewDistance
+		ARG 2 minSectionY
+		ARG 3 maxSectionY
+		ARG 4 dataFactory
+	METHOD forEach (Ljava/util/function/Consumer;)V
+		ARG 1 callback
+	METHOD method_1_4843 getSectionPos ()Lnet/minecraft/class_4076;
+	METHOD method_1_4844 isInRange (III)Z
+		ARG 1 sectionX
+		ARG 2 sectionY
+		ARG 3 sectionZ
+	METHOD method_1_4845 getStorageIndex (III)I
+		ARG 1 i
+		ARG 2 j
+		ARG 3 k
+	METHOD method_1_4846 getRenderedChunk (III)Lnet/minecraft/class_1_797$class_1_799;
+		ARG 1 sectionX
+		ARG 2 sectionY
+		ARG 3 sectionZ
+	METHOD method_1_4847 getRenderedChunk (J)Lnet/minecraft/class_1_797$class_1_799;
+		ARG 1 sectionPos
+	METHOD method_1_4848 getRenderedChunk (Lnet/minecraft/class_2338;)Lnet/minecraft/class_1_797$class_1_799;
+		ARG 1 pos
+	METHOD method_1_4849 getHeightInSections ()I
+	METHOD method_1_4850 getMaxSectionY ()I
+	METHOD method_1_4851 getMinSectionY ()I
+	METHOD method_1_4852 getViewDistance ()I
+	METHOD method_1_4853 setOrigin (Lnet/minecraft/class_4076;)Z
+		COMMENT {@return whether a terrain update should be scheduled}
+		ARG 1 pos
+	METHOD method_1_4854 getSectionCount ()I
+	CLASS 1 1
+		FIELD field_1_5668 index I
+	CLASS class_1_798 SectionEntry
+	CLASS class_1_799 Positioned
+		METHOD method_62973 setSectionPos (J)V
+			ARG 1 sectionPos
+		METHOD method_62975 getSectionPos ()J
+	CLASS class_1_800 DataFactory
+		METHOD method_1_4856 create (IJ)Lnet/minecraft/class_1_797$class_1_799;
+			ARG 1 index
+			ARG 2 sectionPos

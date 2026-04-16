@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_781 net/minecraft/block/BlockKeys
+	FIELD field_1_4414 CANDLE_CAKES Lnet/minecraft/class_1_727;
+	FIELD field_1_4486 WALL_BANNERS Lnet/minecraft/class_1_727;
+	METHOD method_1_4737 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 path
+	METHOD method_1_4738 ofColors (Ljava/lang/String;)Lnet/minecraft/class_1_727;
+		ARG 0 suffix

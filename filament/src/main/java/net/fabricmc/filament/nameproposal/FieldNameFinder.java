@@ -103,7 +103,7 @@ public class FieldNameFinder {
 			MappingEntry mappingEntry = new MappingEntry(fieldNode.owner, fieldNode.name, fieldNode.desc);
 			if (attemptedProposals.contains(mappingEntry)) continue;
 
-			if (instr1.getOpcode() != Opcodes.INVOKESTATIC && instr1.getOpcode() != Opcodes.INVOKESPECIAL) continue;
+			if (instr1.getOpcode() != Opcodes.INVOKESTATIC && instr1.getOpcode() != Opcodes.INVOKESPECIAL && instr1.getOpcode() != Opcodes.INVOKEVIRTUAL) continue;
 			if (!(instr1 instanceof MethodInsnNode methodNode)) continue;
 
 			var frame = frames[i - 1];

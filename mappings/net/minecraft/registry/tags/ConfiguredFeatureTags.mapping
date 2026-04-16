@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_1_463 net/minecraft/registry/tags/ConfiguredFeatureTags
-	METHOD method_1_2916 of (Ljava/lang/String;)Lnet/minecraft/class_6862;
-		ARG 0 path

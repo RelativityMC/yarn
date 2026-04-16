@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_3612 net/minecraft/fluid/FluidKeys
+	METHOD method_1_4870 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 path

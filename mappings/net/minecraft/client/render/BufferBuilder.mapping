@@ -59,7 +59,7 @@ CLASS net/minecraft/class_287 net/minecraft/client/render/BufferBuilder
 	METHOD method_60801 putInt (JI)V
 		ARG 0 pointer
 		ARG 2 i
-	METHOD method_60802 ensureBuilding ()V
+	METHOD method_60802 assertBuilding ()V
 	METHOD method_60804 build ()Lnet/minecraft/class_9801;
 	METHOD method_60805 beginVertex ()J
 	METHOD method_60806 endVertex ()V

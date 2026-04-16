@@ -1,6 +1,17 @@
 CLASS com/mojang/blaze3d/vertex/VertexFormat
+	METHOD <init> (Ljava/util/List;Ljava/util/List;Lit/unimi/dsi/fastutil/ints/IntList;I)V
+		ARG 1 elements
+		ARG 2 names
+		ARG 3 offsets
+		ARG 4 vertexSize
+	METHOD contains (Lcom/mojang/blaze3d/vertex/VertexFormatElement;)Z
+		ARG 1 element
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 other
+	METHOD getElementName (Lcom/mojang/blaze3d/vertex/VertexFormatElement;)Ljava/lang/String;
+		ARG 1 element
+	METHOD getOffset (Lcom/mojang/blaze3d/vertex/VertexFormatElement;)I
+		ARG 1 element
 	METHOD lambda$new$0 (II)I
 		ARG 0 a
 		ARG 1 b
@@ -15,6 +26,7 @@ CLASS com/mojang/blaze3d/vertex/VertexFormat
 		METHOD <init> (Ljava/lang/String;II)V
 			ARG 3 size
 		METHOD method_31972 smallestFor (I)Lcom/mojang/blaze3d/vertex/VertexFormat$class_5595;
+			ARG 0 indexCount
 	CLASS class_5596 DrawMode
 		FIELD field_27384 firstVertexCount I
 			COMMENT The number of vertices needed to form a first shape.

@@ -1,0 +1,81 @@
+CLASS net/minecraft/class_1_807 com/mojang/blaze3d/buffers/MultiDrawBuffer
+	FIELD field_1_5738 uploadedIndices Lcom/mojang/blaze3d/buffers/GpuBuffer;
+	FIELD field_1_5739 uploadedVertices Lcom/mojang/blaze3d/buffers/GpuBuffer;
+	FIELD field_1_5740 draws Ljava/util/List;
+	FIELD field_1_5741 indexPool Lnet/minecraft/class_1_807$class_1_810;
+	FIELD field_1_5742 lastDraw Lnet/minecraft/class_1_807$class_1_808;
+	FIELD field_1_5743 bufferBuilderForLastDraw Lnet/minecraft/class_287;
+	FIELD field_1_5744 allocator Lnet/minecraft/class_9799;
+	FIELD field_1_5745 staging Lnet/minecraft/class_1_807$class_1_810;
+	FIELD field_1_5746 vertexPool Lnet/minecraft/class_1_807$class_1_810;
+	METHOD <init> (Ljava/util/function/Supplier;I)V
+		ARG 1 labelGetter
+		ARG 2 maxSize
+	METHOD method_1_4944 appendDraw (Lcom/mojang/blaze3d/vertex/VertexFormat;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5596;)Lnet/minecraft/class_1_807$class_1_808;
+		ARG 1 vertexFormat
+		ARG 2 drawMode
+	METHOD method_1_4945 appendDraw (Lcom/mojang/blaze3d/vertex/VertexFormat;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5596;Lnet/minecraft/class_8251;)Lnet/minecraft/class_1_807$class_1_808;
+		ARG 1 vertexFormat
+		ARG 2 drawMode
+		ARG 3 vertexSorter
+	METHOD method_1_4946 collectCentroids (Lnet/minecraft/class_1_807$class_1_808;)Lnet/minecraft/class_11899;
+		ARG 0 multiBuffer
+	METHOD method_1_4947 clear ()V
+	METHOD method_1_4948 finish ()V
+	METHOD method_1_4949 finishPendingDraw ()V
+	METHOD method_1_4950 execute (Lnet/minecraft/class_1_807$class_1_808;)Lnet/minecraft/class_1_807$class_1_809;
+		ARG 1 multiBuffer
+	METHOD method_1_4951 appendDraw (Lnet/minecraft/class_1_807$class_1_808;)Lnet/minecraft/class_4588;
+		ARG 1 draw
+	METHOD method_1_4955 upload ()V
+	METHOD method_1_4956 upload (Lcom/mojang/blaze3d/systems/GpuDevice;Ljava/util/List;Lcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/buffers/GpuBuffer;II)V
+		ARG 1 device
+		ARG 2 draws
+		ARG 3 vertexBuffer
+		ARG 4 indexBuffer
+		ARG 5 vertexOffset
+		ARG 6 indexOffset
+	CLASS class_1_808 MultiBuffer
+		FIELD field_1_5748 vertexFormat Lcom/mojang/blaze3d/vertex/VertexFormat;
+		FIELD field_1_5749 totalIndexCount I
+		FIELD field_1_5750 indexOffset I
+		FIELD field_1_5751 drawMode Lcom/mojang/blaze3d/vertex/VertexFormat$class_5596;
+		FIELD field_1_5752 vertexSorter Lnet/minecraft/class_8251;
+		FIELD field_1_5753 totalVertexSize I
+		FIELD field_1_5754 segments Ljava/util/List;
+		FIELD field_1_5755 totalVertexCount I
+		FIELD field_1_5756 vertexOffset I
+		METHOD <init> (Lcom/mojang/blaze3d/vertex/VertexFormat;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5596;Lnet/minecraft/class_8251;)V
+			ARG 1 vertexFormat
+			ARG 2 drawMode
+			ARG 3 vertexSorter
+		METHOD method_1_4957 add (Lnet/minecraft/class_9801;)V
+			ARG 1 buffer
+		METHOD method_1_4958 clear ()V
+		METHOD method_1_4959 getIndexType ()Lcom/mojang/blaze3d/vertex/VertexFormat$class_5595;
+		METHOD method_1_4960 isEmpty ()Z
+	CLASS class_1_809 DrawCall
+	CLASS class_1_810 BufferPool
+		FIELD field_1_5757 BUFFER_ALIGNMENT I
+		FIELD field_1_5758 ALLOCATION_MAX_SIZE_FACTOR I
+		FIELD field_1_5759 usableBuffers Ljava/util/List;
+		FIELD field_1_5760 labelGetter Ljava/util/function/Supplier;
+		FIELD field_1_5761 waitingBuffers Ljava/util/List;
+		FIELD field_1_5762 usage I
+		FIELD field_1_5763 allocatedBuffers Ljava/util/List;
+		METHOD <init> (Ljava/util/function/Supplier;I)V
+			ARG 1 labelGetter
+			ARG 2 usage
+		METHOD method_1_4961 allocate (Lcom/mojang/blaze3d/systems/GpuDevice;I)Lcom/mojang/blaze3d/buffers/GpuBuffer;
+			ARG 1 device
+			ARG 2 size
+		METHOD method_1_4962 finish (Lcom/mojang/blaze3d/systems/GpuDevice;)V
+			ARG 1 device
+		METHOD method_1_4963 (Lnet/minecraft/class_1_807$class_1_810$class_1_811;)Z
+			ARG 1 waitingBuffer
+		METHOD method_1_4964 getSuitableBuffer (II)Lcom/mojang/blaze3d/buffers/GpuBuffer;
+			ARG 1 minSize
+			ARG 2 maxSize
+		METHOD method_1_4965 claimReadyBuffers ()V
+		CLASS class_1_811 WaitingBuffer
+			METHOD method_1_4966 getIfReady ()Ljava/util/List;

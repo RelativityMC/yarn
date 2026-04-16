@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_832 net/minecraft/predicate/entity/DistanceSubPredicate
+	FIELD field_1_5942 CODEC Lcom/mojang/serialization/Codec;

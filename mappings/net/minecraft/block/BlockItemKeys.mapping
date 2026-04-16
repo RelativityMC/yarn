@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_1_786 net/minecraft/block/BlockItemKeys
+	FIELD field_1_4550 BANNERS Lnet/minecraft/class_1_727;
+	FIELD field_1_4555 BEDS Lnet/minecraft/class_1_727;
+	FIELD field_1_4609 CARPETS Lnet/minecraft/class_1_727;
+	FIELD field_1_4675 CONCRETES Lnet/minecraft/class_1_727;
+	FIELD field_1_4676 CONCRETE_POWDERS Lnet/minecraft/class_1_727;
+	FIELD field_1_4679 COPPER_BLOCKS Lnet/minecraft/class_1_758;
+	FIELD field_1_4680 COPPER_BLOCK_SEQ Lnet/minecraft/class_1_758$class_1_821;
+	FIELD field_1_4798 DYED_CANDLES Lnet/minecraft/class_1_727;
+	FIELD field_1_4799 DYED_SHULKER_BOXES Lnet/minecraft/class_1_727;
+	FIELD field_1_4800 DYED_TERRACOTTAS Lnet/minecraft/class_1_727;
+	FIELD field_1_4827 GLAZED_TERRACOTTAS Lnet/minecraft/class_1_727;
+	FIELD field_1_5164 STAINED_GLASSES Lnet/minecraft/class_1_727;
+	FIELD field_1_5165 STAINED_GLASS_PANES Lnet/minecraft/class_1_727;
+	FIELD field_1_5272 WOOLS Lnet/minecraft/class_1_727;
+	METHOD method_1_4761 ofColors (Ljava/lang/String;)Lnet/minecraft/class_1_727;
+		ARG 0 suffix
+	METHOD method_1_4762 ofOxidations (Ljava/lang/String;)Lnet/minecraft/class_1_758;
+		ARG 0 suffix

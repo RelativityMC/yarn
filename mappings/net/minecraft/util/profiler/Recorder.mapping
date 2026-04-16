@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_5962 net/minecraft/util/profiler/Recorder
+	METHOD method_1_5103 extract ()V
 	METHOD method_34770 stop ()V
 	METHOD method_34771 startTick ()V
 	METHOD method_34772 endTick ()V

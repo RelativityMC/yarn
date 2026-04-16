@@ -1,0 +1,22 @@
+CLASS net/minecraft/class_1_779 net/minecraft/item/ItemKeys
+	FIELD field_1_3995 DYED_BUNDLES Lnet/minecraft/class_1_727;
+	FIELD field_1_3996 DYES Lnet/minecraft/class_1_727;
+	FIELD field_1_4064 HARNESSES Lnet/minecraft/class_1_727;
+	FIELD field_1_4122 MUSIC_DISC_11 Lnet/minecraft/class_5321;
+	FIELD field_1_4123 MUSIC_DISC_13 Lnet/minecraft/class_5321;
+	FIELD field_1_4124 MUSIC_DISC_5 Lnet/minecraft/class_5321;
+	FIELD field_1_4233 SMITHING_TEMPLATE_SUFFIX Ljava/lang/String;
+	METHOD method_1_4730 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 path
+	METHOD method_1_4731 ofSmithingTemplate (Lnet/minecraft/class_5321;)Lnet/minecraft/class_5321;
+		ARG 0 pattern
+	METHOD method_1_4732 ofMusicDisc (Lnet/minecraft/class_5321;)Lnet/minecraft/class_5321;
+		ARG 0 song
+	METHOD method_1_4733 ofPotterySherd (Lnet/minecraft/class_5321;)Lnet/minecraft/class_5321;
+		ARG 0 pattern
+	METHOD method_1_4734 ofColors (Ljava/lang/String;)Lnet/minecraft/class_1_727;
+		ARG 0 suffix
+	METHOD method_1_4735 ofSpawnEgg (Lnet/minecraft/class_5321;)Lnet/minecraft/class_5321;
+		ARG 0 entityType
+	METHOD method_1_4736 (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 path

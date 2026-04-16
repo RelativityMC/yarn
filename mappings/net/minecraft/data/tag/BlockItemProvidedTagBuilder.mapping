@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_1_801 net/minecraft/data/tag/BlockItemProvidedTagBuilder
+	FIELD field_1_5685 delegate Lnet/minecraft/class_11389;
+	METHOD <init> (Lnet/minecraft/class_11389;)V
+		ARG 1 delegate
+	METHOD method_1_4878 add ([Lnet/minecraft/class_1_784;)Lnet/minecraft/class_1_801;
+		ARG 1 elems
+	METHOD method_1_4880 addColors (Lnet/minecraft/class_1_727;)Lnet/minecraft/class_1_801;
+		ARG 1 elems
+	METHOD method_1_4881 addColors (Lnet/minecraft/class_1_758;)Lnet/minecraft/class_1_801;
+		ARG 1 elems
+	METHOD method_1_4885 getElemKey (Lnet/minecraft/class_1_784;)Lnet/minecraft/class_5321;
+		ARG 1 key

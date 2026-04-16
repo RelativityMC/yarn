@@ -1,4 +1,15 @@
 CLASS net/minecraft/class_7376 net/minecraft/predicate/entity/EntitySubPredicate
+	FIELD field_1_5934 ALWAYS_TRUE Lnet/minecraft/class_7376;
+	METHOD method_1_5104 and (Lnet/minecraft/class_7376;)Lnet/minecraft/class_7376;
+		ARG 1 other
+	METHOD method_1_5105 (Lnet/minecraft/class_7376;Lnet/minecraft/class_1297;Lnet/minecraft/class_3218;Lnet/minecraft/class_243;)Z
+		ARG 2 entity
+		ARG 3 world
+		ARG 4 pos
+	METHOD method_1_5106 (Lnet/minecraft/class_1297;Lnet/minecraft/class_3218;Lnet/minecraft/class_243;)Z
+		ARG 0 entity
+		ARG 1 world
+		ARG 2 pos
 	METHOD method_22497 test (Lnet/minecraft/class_1297;Lnet/minecraft/class_3218;Lnet/minecraft/class_243;)Z
 		ARG 1 entity
 		ARG 2 world

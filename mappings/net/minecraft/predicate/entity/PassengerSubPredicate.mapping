@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_825 net/minecraft/predicate/entity/PassengerSubPredicate
+	FIELD field_1_5936 CODEC Lcom/mojang/serialization/Codec;

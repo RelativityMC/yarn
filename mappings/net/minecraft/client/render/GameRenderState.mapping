@@ -5,3 +5,4 @@ CLASS net/minecraft/class_1_405 net/minecraft/client/render/GameRenderState
 	FIELD field_1_2299 lightmap Lnet/minecraft/class_1_50;
 	FIELD field_1_2300 options Lnet/minecraft/class_1_421;
 	FIELD field_1_2301 window Lnet/minecraft/class_1_416;
+	METHOD method_1_4995 usesImprovedTransparency ()Z

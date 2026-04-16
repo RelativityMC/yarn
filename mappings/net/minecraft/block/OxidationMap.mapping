@@ -1,12 +1,84 @@
 CLASS net/minecraft/class_1_758 net/minecraft/block/OxidationMap
+	FIELD field_1_5919 PREFIXES Lnet/minecraft/class_1_758;
+	FIELD field_1_5920 SEQ_SELF Lnet/minecraft/class_1_758$class_1_821;
 	METHOD method_1_4591 values ()Ljava/util/List;
 	METHOD method_1_4592 ofBlockFamilies (Ljava/util/function/BiFunction;Ljava/util/function/BiFunction;)Lnet/minecraft/class_1_758;
 		ARG 0 waxedFactory
 		ARG 1 weatheringFactory
 	METHOD method_1_4593 forEach (Ljava/util/function/Consumer;)V
 		ARG 1 callback
+	METHOD method_1_4594 (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 prefix
+		ARG 1 suffix
 	METHOD method_1_4598 ofBlocks (Lnet/minecraft/class_1_758;Lorg/apache/commons/lang3/function/TriFunction;Ljava/util/function/BiFunction;Ljava/util/function/BiFunction;Ljava/util/function/Function;)Lnet/minecraft/class_1_758;
+		ARG 0 ids
 		ARG 1 registrar
+		ARG 2 waxedBlockFactory
+		ARG 3 weatheringBlockFactory
 		ARG 4 settingsFactory
 	METHOD method_1_4600 ofBlockItems (Lnet/minecraft/class_1_758;Lnet/minecraft/class_1_758;Ljava/util/function/BiFunction;)Lnet/minecraft/class_1_758;
+		ARG 0 ids
 		ARG 1 block
+		ARG 2 itemFactory
+	METHOD method_1_5059 mapSequences (Ljava/util/function/Function;)Lnet/minecraft/class_1_758;
+		ARG 1 function
+	METHOD method_1_5060 mapSequences (Ljava/util/function/Function;Ljava/util/function/Function;)Lnet/minecraft/class_1_758;
+		ARG 1 weatheringFunction
+		ARG 2 waxedFunction
+	METHOD method_1_5061 constant (Ljava/lang/String;)Lnet/minecraft/class_1_758;
+		ARG 0 id
+	METHOD method_1_5062 (Ljava/util/function/BiFunction;Lnet/minecraft/class_1_758$class_1_821;)Lnet/minecraft/class_1_758$class_1_821;
+		ARG 1 prefixes
+	METHOD method_1_5063 (Ljava/util/function/BiFunction;Lnet/minecraft/class_1_758$class_1_821;)Lnet/minecraft/class_1_758$class_1_821;
+		ARG 1 prefixes
+	METHOD method_1_5064 (Lorg/apache/commons/lang3/function/TriFunction;Ljava/util/function/BiFunction;Ljava/util/function/Function;Lnet/minecraft/class_1_758$class_1_821;)Lnet/minecraft/class_1_758$class_1_821;
+		ARG 3 ids1
+	METHOD method_1_5065 (Lorg/apache/commons/lang3/function/TriFunction;Ljava/util/function/BiFunction;Ljava/util/function/Function;Lnet/minecraft/class_5955$class_5811;Ljava/lang/Object;)Lnet/minecraft/class_2248;
+		ARG 3 oxidation
+		ARG 4 id
+	METHOD method_1_5066 (Ljava/util/function/BiFunction;Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 2 settings
+	METHOD method_1_5067 (Lorg/apache/commons/lang3/function/TriFunction;Ljava/util/function/BiFunction;Ljava/util/function/Function;Lnet/minecraft/class_1_758$class_1_821;)Lnet/minecraft/class_1_758$class_1_821;
+		ARG 3 ids1
+	METHOD method_1_5068 (Lorg/apache/commons/lang3/function/TriFunction;Ljava/util/function/BiFunction;Ljava/util/function/Function;Lnet/minecraft/class_5955$class_5811;Ljava/lang/Object;)Lnet/minecraft/class_2248;
+		ARG 3 oxidation
+		ARG 4 id
+	METHOD method_1_5069 (Ljava/util/function/BiFunction;Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 2 settings
+	METHOD method_1_5070 map (Ljava/util/function/Function;)Lnet/minecraft/class_1_758;
+		ARG 1 function
+	METHOD method_1_5071 addPrefixes (Lnet/minecraft/class_1_758;)Lnet/minecraft/class_1_758;
+		ARG 0 suffixes
+	METHOD method_1_5072 forAdjacent (Ljava/util/function/BiConsumer;)V
+		ARG 1 callback
+	METHOD method_1_5073 waxInvariant (Lnet/minecraft/class_1_758$class_1_821;)Lnet/minecraft/class_1_758;
+		ARG 0 sequence
+	METHOD method_1_5074 forEachZipped (Lnet/minecraft/class_1_758$class_1_821;Lnet/minecraft/class_1_758$class_1_821;Ljava/util/function/BiConsumer;)V
+		ARG 0 first
+		ARG 1 second
+		ARG 2 function
+	METHOD method_1_5075 forEachZipped (Lnet/minecraft/class_1_758;Lnet/minecraft/class_1_758;Ljava/util/function/BiConsumer;)V
+		ARG 0 first
+		ARG 1 second
+		ARG 2 callback
+	METHOD method_1_5076 mapZipped (Lnet/minecraft/class_1_758$class_1_821;Lnet/minecraft/class_1_758$class_1_821;Ljava/util/function/BiFunction;)Lnet/minecraft/class_1_758$class_1_821;
+		ARG 0 first
+		ARG 1 second
+		ARG 2 function
+	METHOD method_1_5077 mapZipped (Lnet/minecraft/class_1_758;Lnet/minecraft/class_1_758;Ljava/util/function/BiFunction;)Lnet/minecraft/class_1_758;
+		ARG 0 first
+		ARG 1 second
+		ARG 2 function
+	METHOD method_1_5078 forWeatheringWaxedPairs (Ljava/util/function/BiConsumer;)V
+		ARG 1 callback
+	CLASS class_1_821 Sequence
+		METHOD method_1_5079 constant (Ljava/lang/Object;)Lnet/minecraft/class_1_758$class_1_821;
+			ARG 0 value
+		METHOD method_1_5080 forEach (Ljava/util/function/Consumer;)V
+			ARG 1 callback
+		METHOD method_1_5081 map (Ljava/util/function/Function;)Lnet/minecraft/class_1_758$class_1_821;
+			ARG 1 function
+		METHOD method_1_5082 get (Lnet/minecraft/class_5955$class_5811;)Ljava/lang/Object;
+			ARG 1 oxidation
+		METHOD method_1_5083 forAdjacent (Ljava/util/function/BiConsumer;)V
+			ARG 1 callback

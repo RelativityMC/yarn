@@ -1,0 +1,55 @@
+CLASS net/minecraft/class_9976 net/minecraft/client/render/WeatherRenderer
+	FIELD field_1_1035 INDICES_PER_PIECE I
+	FIELD field_1_5784 vertexBuffer Lcom/mojang/blaze3d/buffers/GpuBuffer;
+	FIELD field_53150 RAIN_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_53151 SNOW_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_53152 NORMAL_TABLE_DIMENSION I
+	FIELD field_53153 NORMAL_TABLE_BIAS I
+	FIELD field_53155 NORMAL_LINE_DX [F
+		COMMENT Given {@code -16 <= z < 16} and {@code -16 <= x < 16}, let {@code i = 32 * (z + 16) + (x + 16)}.
+		COMMENT Then {@code NORMAL_LINE_DX[i]} and {@code NORMAL_LINE_DZ[i]} describe the
+		COMMENT unit vector perpendicular to {@code (x, z)}.
+		COMMENT
+		COMMENT These lookup tables are used for rendering rain and snow.
+	FIELD field_53156 NORMAL_LINE_DZ [F
+	METHOD method_1_1040 render (Lnet/minecraft/class_243;Lnet/minecraft/class_12077;)V
+		ARG 1 pos
+		ARG 2 state
+	METHOD method_1_1041 issueDraw (Lcom/mojang/blaze3d/systems/RenderPass;Lnet/minecraft/class_1044;II)V
+		ARG 1 renderPass
+		ARG 2 texture
+		ARG 3 start
+		ARG 4 end
+	METHOD method_1_4992 upload (Ljava/nio/ByteBuffer;)Lcom/mojang/blaze3d/buffers/GpuBuffer;
+		ARG 1 buffer
+	METHOD method_62314 createRainPiece (Lnet/minecraft/class_5819;JIIIIIF)Lnet/minecraft/class_9976$class_9977;
+		ARG 1 random
+		ARG 2 time
+		ARG 4 x
+		ARG 5 yMin
+		ARG 6 yMax
+		ARG 7 z
+		ARG 8 light
+		ARG 9 tickProgress
+	METHOD method_62315 buildPrecipitationPieces (Lnet/minecraft/class_638;FLnet/minecraft/class_243;Lnet/minecraft/class_12077;)V
+		ARG 1 world
+		ARG 2 tickProgress
+		ARG 3 cameraPos
+		ARG 4 state
+	METHOD method_62318 renderPieces (Lnet/minecraft/class_4588;Ljava/util/List;Lnet/minecraft/class_243;FIF)V
+		ARG 1 vertexConsumer
+		ARG 2 pieces
+		ARG 3 pos
+		ARG 4 intensity
+		ARG 5 range
+		ARG 6 gradient
+	METHOD method_62321 createSnowPiece (Lnet/minecraft/class_5819;JIIIIIF)Lnet/minecraft/class_9976$class_9977;
+		ARG 1 random
+		ARG 2 time
+		ARG 4 x
+		ARG 5 yMin
+		ARG 6 yMax
+		ARG 7 z
+		ARG 8 light
+		ARG 9 tickProgress
+	CLASS class_9977 Piece

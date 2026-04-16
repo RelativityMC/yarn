@@ -28,3 +28,4 @@ CLASS net/minecraft/class_1_717 net/minecraft/client/vulkan/VulkanPhysicalDevice
 	METHOD method_1_4291 getPhysicalDevice ()Lorg/lwjgl/vulkan/VkPhysicalDevice;
 	METHOD method_1_4292 getDriverProperties ()Lorg/lwjgl/vulkan/VkPhysicalDeviceDriverProperties;
 	METHOD method_1_4293 getDeviceProperties ()Lorg/lwjgl/vulkan/VkPhysicalDeviceProperties;
+	METHOD method_1_4893 getType ()Lnet/minecraft/class_1_785;

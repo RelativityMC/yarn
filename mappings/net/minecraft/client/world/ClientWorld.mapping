@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
+	FIELD field_1_5681 blockBreakingInfoByEntity Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+	FIELD field_1_5682 blockBreakingInfoByPos Lit/unimi/dsi/fastutil/longs/Long2ObjectMap;
 	FIELD field_3727 networkHandler Lnet/minecraft/class_634;
 	FIELD field_3729 client Lnet/minecraft/class_310;
 	FIELD field_17675 mapStates Ljava/util/Map;
@@ -37,6 +39,12 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 		ARG 9 seed
 		ARG 11 seaLevel
 	METHOD method_1_2685 runLightUpdates ()V
+	METHOD method_1_4871 getBlockBreakingInfoByPos ()Lit/unimi/dsi/fastutil/longs/Long2ObjectMap;
+	METHOD method_1_4872 getPrecipitationAt (Lnet/minecraft/class_2338;)Lnet/minecraft/class_1959$class_1963;
+		ARG 1 pos
+	METHOD method_1_4874 decayBlockBreakingInfo ()V
+	METHOD method_1_4875 removeBlockBreakingInfo (Lnet/minecraft/class_3191;)V
+		ARG 1 info
 	METHOD method_2932 addParticle (DDDDDLnet/minecraft/class_2394;)V
 		ARG 1 minX
 		ARG 3 maxX
@@ -76,10 +84,10 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 	METHOD method_18110 unloadBlockEntities (Lnet/minecraft/class_2818;)V
 		ARG 1 chunk
 	METHOD method_18112 getEntities ()Ljava/lang/Iterable;
-	METHOD method_18113 scheduleBlockRenders (III)V
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
+	METHOD method_18113 scheduleChunkRenders (III)V
+		ARG 1 sectionX
+		ARG 2 sectionY
+		ARG 3 sectionZ
 	METHOD method_18116 tickEntities ()V
 	METHOD method_18120 getRegularEntityCount ()I
 	METHOD method_18646 tickEntity (Lnet/minecraft/class_1297;)V

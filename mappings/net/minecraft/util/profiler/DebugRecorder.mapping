@@ -21,6 +21,8 @@ CLASS net/minecraft/class_5961 net/minecraft/util/profiler/DebugRecorder
 		ARG 4 dumper
 		ARG 5 resultConsumer
 		ARG 6 dumpConsumer
+	METHOD method_1_5112 sample (Lnet/minecraft/class_5965$class_1_815;)V
+		ARG 1 stage
 	METHOD method_34762 checkState ()V
 	METHOD method_34763 dump (Lnet/minecraft/class_3696;)V
 		ARG 1 result

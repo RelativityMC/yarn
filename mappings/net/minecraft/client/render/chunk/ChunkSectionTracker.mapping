@@ -1,0 +1,37 @@
+CLASS net/minecraft/class_1_790 net/minecraft/client/render/chunk/ChunkSectionTracker
+	FIELD field_1_5600 storage Lnet/minecraft/class_1_797;
+	METHOD <init> (Lnet/minecraft/class_5539;I)V
+		ARG 1 world
+		ARG 2 viewDistance
+	METHOD method_1_4812 isLightingEnabledInChunk (Lnet/minecraft/class_638;J)Z
+		ARG 1 world
+		ARG 2 sectionPos
+	METHOD method_1_4813 getRenderedChunk (J)Lnet/minecraft/class_1_790$class_1_791;
+		ARG 1 sectionPos
+	METHOD method_1_4814 isLightingEnabledAround (Lnet/minecraft/class_638;J)Z
+		ARG 1 world
+		ARG 2 sectionPos
+	METHOD method_1_4815 (IJ)Lnet/minecraft/class_1_790$class_1_791;
+		ARG 0 index
+		ARG 1 sectionPos
+	METHOD method_1_4816 setOrigin (Lnet/minecraft/class_4076;)V
+		ARG 1 sectionPos
+	METHOD method_1_4817 updateSection (IIIZ)V
+		ARG 1 sectionX
+		ARG 2 sectionY
+		ARG 3 sectionZ
+		ARG 4 redrawOnMainThread
+	METHOD method_1_4818 getSectionCount ()I
+	CLASS class_1_791 Section
+		FIELD field_1_5601 playerChanged Z
+		FIELD field_1_5602 update Z
+		FIELD field_1_5603 sectionPos J
+		METHOD <init> (ZZJ)V
+			ARG 1 update
+			ARG 2 playerChanged
+			ARG 3 sectionPos
+		METHOD method_1_4819 shouldUpdate ()Z
+		METHOD method_1_4820 isPlayerChanged ()Z
+		METHOD method_1_4821 update (Z)V
+			ARG 1 redrawOnMainThread
+		METHOD method_1_4822 resetUpdate ()V

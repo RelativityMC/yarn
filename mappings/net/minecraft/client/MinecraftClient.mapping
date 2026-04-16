@@ -42,6 +42,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_1_2136 blockModelManager Lnet/minecraft/class_1_394;
 	FIELD field_1_2249 lastWindowFocusTime J
 	FIELD field_1_2571 imeStatusController Lnet/minecraft/class_1_490;
+	FIELD field_1_3288 backendFailure Lnet/minecraft/class_1_739;
 	FIELD field_1_3290 surfaceConfigureFailed Z
 	FIELD field_1_3291 gpuTimestampProfiler Lnet/minecraft/class_1_667;
 	FIELD field_1_3292 gpuSurface Lnet/minecraft/class_1_665;
@@ -188,6 +189,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 0 runDir
 		ARG 1 crashReport
 	METHOD method_1_3940 getGpuSurface ()Lnet/minecraft/class_1_665;
+	METHOD method_1_4728 getRecorder ()Lnet/minecraft/class_5962;
 	METHOD method_1478 getResourceManager ()Lnet/minecraft/class_3300;
 	METHOD method_1479 getResourcePackDir ()Ljava/nio/file/Path;
 	METHOD method_1481 joinWorld (Lnet/minecraft/class_638;)V

@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_834 net/minecraft/predicate/entity/PeriodicTickSubPredicate
+	FIELD field_1_5944 CODEC Lcom/mojang/serialization/Codec;

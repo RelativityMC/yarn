@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_826 net/minecraft/predicate/entity/SteppingOnSubPredicate
+	FIELD field_1_5937 CODEC Lcom/mojang/serialization/Codec;

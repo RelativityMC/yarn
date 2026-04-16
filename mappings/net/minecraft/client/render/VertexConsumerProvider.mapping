@@ -1,5 +1,8 @@
 CLASS net/minecraft/class_4597 net/minecraft/client/render/VertexConsumerProvider
 	COMMENT Manages rendering with multiple {@linkplain RenderLayer render layers}.
+	METHOD method_1_4894 immediate (ILjava/util/SequencedSet;)Lnet/minecraft/class_4597$class_4598;
+		ARG 0 initialSize
+		ARG 1 retainedLayers
 	METHOD method_73477 getBuffer (Lnet/minecraft/class_1921;)Lnet/minecraft/class_4588;
 		COMMENT Starts building a buffer that will be drawn with {@code layer}.
 		COMMENT
@@ -12,9 +15,21 @@ CLASS net/minecraft/class_4597 net/minecraft/client/render/VertexConsumerProvide
 		COMMENT {@link Tessellator} or making a custom render layer.
 		ARG 1 layer
 	CLASS class_4598 Immediate
-		COMMENT A vertex consumer provider that immediately draws the current buffer
-		COMMENT builder when a different render layer is requested except for render
-		COMMENT layers specified in the constructor.
+		COMMENT A vertex consumer provider that acts as if it immediately draws the
+		COMMENT current buffer builder when a different render layer is requested
+		COMMENT except for render layers specified in the constructor.
 		COMMENT
 		COMMENT @see VertexConsumerProvider#immediate(BufferAllocator)
 		COMMENT @see VertexConsumerProvider#immediate(SequencedMap, BufferAllocator)
+		FIELD field_1_5710 workingRenderLayers Ljava/util/List;
+		FIELD field_1_5711 workingMultiBuffers Ljava/util/List;
+		FIELD field_1_5712 layerIndices Lit/unimi/dsi/fastutil/objects/Reference2IntMap;
+		FIELD field_1_5713 retainedLayers Ljava/util/SequencedSet;
+		FIELD field_1_5714 multiDrawBuffer Lnet/minecraft/class_1_807;
+		METHOD <init> (ILjava/util/SequencedSet;)V
+			ARG 1 initialSize
+			ARG 2 retainedLayers
+		METHOD method_1_4895 createMultiBuffer (Lnet/minecraft/class_1921;)Lnet/minecraft/class_1_807$class_1_808;
+			ARG 1 renderLayer
+		METHOD method_1_4896 finish ()V
+		METHOD method_1_4898 prepare ()V

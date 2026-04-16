@@ -1,0 +1,31 @@
+CLASS net/minecraft/class_769 net/minecraft/client/render/chunk/BuiltChunkStorage
+	FIELD field_1_5276 topYInclusive I
+	FIELD field_1_5277 bottomY I
+	FIELD field_1_5278 dataPreparer Lnet/minecraft/class_8679;
+	FIELD field_4150 chunks Lnet/minecraft/class_1_797;
+	METHOD <init> (Lnet/minecraft/class_846;IIIIILnet/minecraft/class_8679;)V
+		ARG 1 chunkBuilder
+		ARG 2 bottomY
+		ARG 3 topYInclusive
+		ARG 4 minSectionY
+		ARG 5 maxSectionY
+		ARG 6 viewDistance
+		ARG 7 dataPreparer
+	METHOD method_1_4764 (Lnet/minecraft/class_846;IJ)Lnet/minecraft/class_846$class_851;
+		ARG 1 index
+		ARG 2 sectionPos
+	METHOD method_1_4765 getMaxSectionY ()I
+	METHOD method_1_4766 getTopYInclusive ()I
+	METHOD method_1_4767 getMinSectionY ()I
+	METHOD method_1_4768 getBottomY ()I
+	METHOD method_1_4769 setOrigin (Lnet/minecraft/class_4076;)Z
+		ARG 1 sectionPos
+	METHOD method_1_4770 getHeightInSections ()I
+	METHOD method_1_4771 getSectionCount ()I
+	METHOD method_3323 getRenderedChunk (Lnet/minecraft/class_2338;)Lnet/minecraft/class_846$class_851;
+		ARG 1 blockPos
+	METHOD method_3327 clear ()V
+	METHOD method_52839 getViewDistance ()I
+	METHOD method_62963 getRenderedChunk (J)Lnet/minecraft/class_846$class_851;
+		ARG 1 sectionPos
+	METHOD method_62966 getSectionPos ()Lnet/minecraft/class_4076;

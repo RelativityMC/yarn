@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_5965 net/minecraft/util/profiler/Sampler
+	FIELD field_1_5771 stage Lnet/minecraft/class_5965$class_1_815;
 	FIELD field_29598 type Lnet/minecraft/class_5949;
 	FIELD field_29599 retriever Ljava/util/function/DoubleSupplier;
 	FIELD field_29600 valueBuffer Lio/netty/buffer/ByteBuf;
@@ -10,17 +11,22 @@ CLASS net/minecraft/class_5965 net/minecraft/util/profiler/Sampler
 	FIELD field_33884 currentSample D
 	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_5965$class_1_815;Lnet/minecraft/class_5949;Ljava/util/function/DoubleSupplier;Ljava/lang/Runnable;Lnet/minecraft/class_5965$class_5967;)V
 		ARG 1 name
+		ARG 2 stage
+		ARG 3 type
 		ARG 4 retriever
 		ARG 5 startAction
 		ARG 6 deviationChecker
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
-	METHOD method_34776 (Ljava/lang/String;Lnet/minecraft/class_5949;Ljava/util/function/DoubleSupplier;)Lnet/minecraft/class_5965;
+	METHOD method_1_4983 getStage ()Lnet/minecraft/class_5965$class_1_815;
+	METHOD method_34776 endTick (Ljava/lang/String;Lnet/minecraft/class_5949;Ljava/util/function/DoubleSupplier;)Lnet/minecraft/class_5965;
 		ARG 0 name
 		ARG 1 type
 		ARG 2 retriever
-	METHOD method_34778 (Ljava/lang/String;Lnet/minecraft/class_5949;Ljava/util/function/DoubleSupplier;)Lnet/minecraft/class_5965;
+	METHOD method_34778 extract (Ljava/lang/String;Lnet/minecraft/class_5949;Ljava/util/function/DoubleSupplier;)Lnet/minecraft/class_5965;
+		ARG 0 name
 		ARG 1 type
+		ARG 2 retriever
 	METHOD method_34779 builder (Ljava/lang/String;Lnet/minecraft/class_5949;Ljava/util/function/ToDoubleFunction;Ljava/lang/Object;)Lnet/minecraft/class_5965$class_5966;
 		ARG 0 name
 		ARG 1 type
@@ -36,7 +42,9 @@ CLASS net/minecraft/class_5965 net/minecraft/util/profiler/Sampler
 	METHOD method_37172 getType ()Lnet/minecraft/class_5949;
 	METHOD method_37173 collectData ()Lnet/minecraft/class_5965$class_6398;
 	METHOD method_37174 hasDeviated ()Z
+	CLASS class_1_815 Stage
 	CLASS class_5966 Builder
+		FIELD field_1_5772 stage Lnet/minecraft/class_5965$class_1_815;
 		FIELD field_29605 timeGetter Ljava/util/function/DoubleSupplier;
 		FIELD field_29606 context Ljava/lang/Object;
 		FIELD field_29607 startAction Ljava/lang/Runnable;
@@ -44,9 +52,12 @@ CLASS net/minecraft/class_5965 net/minecraft/util/profiler/Sampler
 		FIELD field_33885 name Ljava/lang/String;
 		FIELD field_33886 type Lnet/minecraft/class_5949;
 		METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_5949;Ljava/util/function/ToDoubleFunction;Ljava/lang/Object;)V
+			ARG 1 name
 			ARG 2 type
 			ARG 3 timeFunction
 			ARG 4 context
+		METHOD method_1_4984 stage (Lnet/minecraft/class_5965$class_1_815;)Lnet/minecraft/class_5965$class_5966;
+			ARG 1 stage
 		METHOD method_34787 build ()Lnet/minecraft/class_5965;
 		METHOD method_34788 deviationChecker (Lnet/minecraft/class_5965$class_5967;)Lnet/minecraft/class_5965$class_5966;
 			ARG 1 deviationChecker

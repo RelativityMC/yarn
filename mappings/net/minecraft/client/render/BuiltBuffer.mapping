@@ -5,15 +5,29 @@ CLASS net/minecraft/class_9801 net/minecraft/client/render/BuiltBuffer
 	METHOD <init> (Lnet/minecraft/class_9799$class_9800;Lnet/minecraft/class_9801$class_4574;)V
 		ARG 1 buffer
 		ARG 2 drawParameters
+	METHOD method_1_4742 getCloseableBuffer ()Lnet/minecraft/class_9799$class_9800;
 	METHOD method_60818 getBuffer ()Ljava/nio/ByteBuffer;
 	METHOD method_60819 sortQuads (Lnet/minecraft/class_9799;Lnet/minecraft/class_8251;)Lnet/minecraft/class_9801$class_9802;
 		ARG 1 allocator
 		ARG 2 sorter
 	METHOD method_60820 collectCentroids (Ljava/nio/ByteBuffer;ILcom/mojang/blaze3d/vertex/VertexFormat;Lnet/minecraft/class_11899;I)V
+		ARG 0 buffer
+		ARG 1 vertexCount
+		ARG 2 format
+		ARG 3 quadsOut
+		ARG 4 index
 	METHOD method_60821 getSortedBuffer ()Ljava/nio/ByteBuffer;
 	METHOD method_60822 getDrawParameters ()Lnet/minecraft/class_9801$class_4574;
 	CLASS class_4574 DrawParameters
 	CLASS class_9802 SortState
+		METHOD method_1_4743 (Ljava/nio/ByteBuffer;I)V
+			ARG 1 index
+		METHOD method_1_4744 emitVertexIndices ([ILit/unimi/dsi/fastutil/ints/IntConsumer;)V
+			ARG 0 quadIndices
+			ARG 1 indexConsumer
+		METHOD method_1_4745 emitVertexIndices (Ljava/nio/ByteBuffer;Lnet/minecraft/class_8251;)V
+			ARG 1 buffer
+			ARG 2 vertexSorter
 		METHOD method_60823 getStorer (JLcom/mojang/blaze3d/vertex/VertexFormat$class_5595;)Lit/unimi/dsi/fastutil/ints/IntConsumer;
 			ARG 1 pointer
 			ARG 3 indexType

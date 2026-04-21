@@ -1,0 +1,20 @@
+name: Publish to Github Packages
+on:
+  push:
+    branches:
+      - ver/*
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'microsoft'
+      - uses: actions/checkout@v4
+      - name: publish
+        run: ./gradlew build check publish --stacktrace -x javadoc
+        env:
+          MAVEN_URL: "https://maven.pkg.github.com/RelativityMC/yarn/"
+          MAVEN_CRED_USR: ${{ github.actor }}
+          MAVEN_CRED_PSW: ${{ secrets.GITHUB_TOKEN }}

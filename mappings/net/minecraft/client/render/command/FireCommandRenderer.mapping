@@ -7,13 +7,10 @@ CLASS net/minecraft/class_11685 net/minecraft/client/render/command/FireCommandR
 		ARG 4 z
 		ARG 5 u
 		ARG 6 v
-	METHOD method_73005 render (Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4597;Lnet/minecraft/class_10017;Lorg/joml/Quaternionf;Lnet/minecraft/class_11697;)V
-		ARG 1 matricesEntry
-		ARG 2 vertexConsumers
-		ARG 3 renderState
-		ARG 4 rotation
-		ARG 5 atlasManager
-	METHOD method_73006 render (Lnet/minecraft/class_11788;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_11697;)V
-		ARG 1 queue
-		ARG 2 vertexConsumers
-		ARG 3 atlasManager
+	METHOD method_73005 render (Lnet/minecraft/class_11685$class_11666;Lnet/minecraft/class_4588;Lnet/minecraft/class_1058;Lnet/minecraft/class_1058;)V
+	METHOD method_73006 render (Lnet/minecraft/class_11788;Lnet/minecraft/class_1_841;)V
+	CLASS class_11666 FireCommand
+		FIELD comp_4492 matricesEntry Lnet/minecraft/class_4587$class_4665;
+		FIELD comp_4493 renderState Lnet/minecraft/class_10017;
+		METHOD comp_4492 matricesEntry ()Lnet/minecraft/class_4587$class_4665;
+		METHOD comp_4493 renderState ()Lnet/minecraft/class_10017;

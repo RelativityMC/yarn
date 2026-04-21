@@ -14,19 +14,16 @@ CLASS net/minecraft/class_11684 net/minecraft/client/render/command/RenderDispat
 	FIELD field_61841 itemCommandRenderer Lnet/minecraft/class_918;
 	FIELD field_61842 customCommandRenderer Lnet/minecraft/class_11682;
 	FIELD field_61843 fallingBlockCommandRenderer Lnet/minecraft/class_11681;
-	FIELD field_62258 crumblingOverlayVertexConsumers Lnet/minecraft/class_4597$class_4598;
 	FIELD field_62259 modelCommandRenderer Lnet/minecraft/class_11683;
 	FIELD field_62260 modelPartCommandRenderer Lnet/minecraft/class_9974;
-	FIELD field_62759 layeredCustomCommandRenderer Lnet/minecraft/class_11977;
-	METHOD <init> (Lnet/minecraft/class_11661;Lnet/minecraft/class_1092;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_11697;Lnet/minecraft/class_4618;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_327;Lnet/minecraft/class_1_405;)V
-		ARG 1 queue
+	FIELD field_62759 layeredCustomCommandRenderer Lnet/minecraft/class_1_849;
+	METHOD <init> (Lnet/minecraft/class_11661;Lnet/minecraft/class_1092;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_11697;Lnet/minecraft/class_4618;Lnet/minecraft/class_327;Lnet/minecraft/class_1_405;)V
 		ARG 2 bakedModelManager
 		ARG 3 vertexConsumers
 		ARG 4 atlasManager
 		ARG 5 outlineVertexConsumers
-		ARG 6 crumblingOverlayVertexConsumers
-		ARG 7 textRenderer
-		ARG 8 gameRenderState
+		ARG 6 textRenderer
+		ARG 7 gameRenderState
 	METHOD method_1_1220 clearQueue ()V
 	METHOD method_1_1221 render ()V
 	METHOD method_1_1222 renderOpaque ()V

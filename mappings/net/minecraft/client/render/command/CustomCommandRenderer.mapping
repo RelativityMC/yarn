@@ -1,10 +1,13 @@
 CLASS net/minecraft/class_11682 net/minecraft/client/render/command/CustomCommandRenderer
-	METHOD method_1_1214 renderOpaque (Lnet/minecraft/class_11788;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_4618;)V
+	METHOD method_1_1214 renderOpaque (Lnet/minecraft/class_11788;Lnet/minecraft/class_1_841;)V
 		ARG 1 queue
-		ARG 2 vertexConsumers
-	METHOD method_1_1215 renderBlended (Lnet/minecraft/class_11788;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_4618;)V
+	METHOD method_1_1215 renderBlended (Lnet/minecraft/class_11788;Lnet/minecraft/class_1_841;)V
 		ARG 1 queue
-		ARG 2 vertexConsumers
+	CLASS class_11664 CustomCommand
+		FIELD comp_4488 matricesEntry Lnet/minecraft/class_4587$class_4665;
+		FIELD comp_4489 customRenderer Lnet/minecraft/class_11659$class_11660;
+		METHOD comp_4488 matricesEntry ()Lnet/minecraft/class_4587$class_4665;
+		METHOD comp_4489 customRenderer ()Lnet/minecraft/class_11659$class_11660;
 	CLASS class_12047 Commands
 		FIELD field_1_1123 blendedCustomCommands Ljava/util/Map;
 		FIELD field_1_1124 blendedCustomRenderLayers Ljava/util/Set;

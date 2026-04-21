@@ -4,6 +4,7 @@ CLASS net/minecraft/class_11944 net/minecraft/client/particle/BillboardParticleS
 	FIELD field_62651 BUFFER_INT_FIELDS I
 	FIELD field_62652 bufferByType Ljava/util/Map;
 	FIELD field_62946 particles I
+	METHOD method_1_1186 isEmpty ()Z
 	METHOD method_74321 drawFace (Lnet/minecraft/class_4588;FFFFFFFFFFFFII)V
 		ARG 1 vertexConsumer
 		ARG 2 x
@@ -49,7 +50,7 @@ CLASS net/minecraft/class_11944 net/minecraft/client/particle/BillboardParticleS
 		ARG 13 maxV
 		ARG 14 color
 		ARG 15 light
-	METHOD method_74753 (Lnet/minecraft/class_287;FFFFFFFFFFFFII)V
+	METHOD method_74753 (Lnet/minecraft/class_4588;FFFFFFFFFFFFII)V
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
@@ -105,5 +106,3 @@ CLASS net/minecraft/class_11944 net/minecraft/client/particle/BillboardParticleS
 			ARG 1 vertexConsumer
 		METHOD method_74329 increaseCapacity ()V
 		METHOD method_74756 nextVertexIndex ()I
-	CLASS class_12041 Buffers
-	CLASS class_12042 Layer

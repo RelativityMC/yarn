@@ -74,7 +74,6 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 2 tickCounter
 		ARG 3 renderBlockOutline
 		ARG 4 cameraRenderState
-		ARG 5 rotationMatrix
 		ARG 6 fogBuffer
 		ARG 7 fogColor
 		ARG 8 renderSky
@@ -100,23 +99,16 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_62196 getCloudRenderer ()Lnet/minecraft/class_9955;
 	METHOD method_62198 translucencySort (Lnet/minecraft/class_243;)V
 		ARG 1 cameraPos
-	METHOD method_62199 renderLateDebug (Lnet/minecraft/class_9909;Lnet/minecraft/class_12075;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Lorg/joml/Matrix4fc;)V
-		ARG 1 frameGraphBuilder
-		ARG 2 cameraRenderState
-		ARG 3 fogBuffer
-		ARG 4 rotationMatrix
 	METHOD method_62200 renderSky (Lnet/minecraft/class_9909;Lnet/minecraft/class_12075;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
 		ARG 1 frameGraphBuilder
 		ARG 2 cameraRenderState
 		ARG 3 fogBuffer
-	METHOD method_62202 renderMain (Lnet/minecraft/class_9909;Lorg/joml/Matrix4fc;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;ZLnet/minecraft/class_11658;Lnet/minecraft/class_3695;Lnet/minecraft/class_11532;)V
+	METHOD method_62202 renderMain (Lnet/minecraft/class_9909;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Lnet/minecraft/class_11658;Lnet/minecraft/class_3695;Lnet/minecraft/class_11532;)V
 		ARG 1 frameGraphBuilder
-		ARG 2 rotationMatrix
-		ARG 3 fogBuffer
-		ARG 4 renderBlockOutline
-		ARG 5 worldRenderState
-		ARG 6 profiler
-		ARG 7 sectionRenderState
+		ARG 2 fogBuffer
+		ARG 3 worldRenderState
+		ARG 4 profiler
+		ARG 5 sectionRenderState
 	METHOD method_62203 renderWeather (Lnet/minecraft/class_9909;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
 		ARG 1 frameGraphBuilder
 		ARG 2 fogBuffer
@@ -133,10 +125,9 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 1 matrices
 		ARG 2 queue
 		ARG 3 renderStates
-	METHOD method_62208 renderBlockEntities (Lnet/minecraft/class_4587;Lnet/minecraft/class_11658;Lnet/minecraft/class_11661;)V
+	METHOD method_62208 renderBlockEntities (Lnet/minecraft/class_4587;Lnet/minecraft/class_11658;Lnet/minecraft/class_11659;)V
 		ARG 1 matrices
 		ARG 2 renderStates
-		ARG 3 queue
 	METHOD method_62210 renderTargetBlockOutline (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;Lnet/minecraft/class_11658;)V
 		ARG 1 matrices
 		ARG 2 queue

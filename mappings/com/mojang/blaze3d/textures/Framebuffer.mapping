@@ -22,7 +22,7 @@ CLASS net/minecraft/class_276 com/mojang/blaze3d/textures/Framebuffer
 		ARG 1 framebuffer
 	METHOD method_30277 getColorAttachment ()Lcom/mojang/blaze3d/textures/GpuTexture;
 	METHOD method_30278 getDepthAttachment ()Lcom/mojang/blaze3d/textures/GpuTexture;
-	METHOD method_68445 drawBlit (Lcom/mojang/blaze3d/textures/GpuTextureView;)V
+	METHOD method_68445 drawBlit (Lcom/mojang/blaze3d/textures/GpuTextureView;Lcom/mojang/blaze3d/textures/GpuTextureView;)V
 		ARG 1 texture
 	METHOD method_71639 getColorAttachmentView ()Lcom/mojang/blaze3d/textures/GpuTextureView;
 	METHOD method_71640 getDepthAttachmentView ()Lcom/mojang/blaze3d/textures/GpuTextureView;

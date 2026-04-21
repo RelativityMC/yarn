@@ -58,7 +58,7 @@ CLASS com/mojang/blaze3d/systems/CommandEncoder
 		ARG 1 labelGetter
 		ARG 2 colorAttachment
 		ARG 3 clearColor
-	METHOD createRenderPass (Ljava/util/function/Supplier;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/OptionalInt;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/OptionalDouble;)Lcom/mojang/blaze3d/systems/RenderPass;
+	METHOD createRenderPass (Ljava/util/function/Supplier;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/OptionalInt;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/OptionalDouble;Lcom/mojang/blaze3d/systems/RenderPass$class_1_837;)Lcom/mojang/blaze3d/systems/RenderPass;
 		ARG 1 labelGetter
 		ARG 2 colorAttachment
 		ARG 3 clearColor

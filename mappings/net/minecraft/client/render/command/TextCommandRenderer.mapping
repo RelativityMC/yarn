@@ -1,4 +1,9 @@
 CLASS net/minecraft/class_11691 net/minecraft/client/render/command/TextCommandRenderer
-	METHOD method_73017 render (Lnet/minecraft/class_11788;Lnet/minecraft/class_4597$class_4598;)V
-		ARG 1 queue
-		ARG 2 vertexConsumers
+	METHOD method_73017 render (Lnet/minecraft/class_11788;Lnet/minecraft/class_1_841;)V
+	CLASS class_11674 TextCommand
+		FIELD comp_4525 matricesEntry Lorg/joml/Matrix4fc;
+		FIELD comp_4528 text Lnet/minecraft/class_5481;
+		FIELD comp_4530 layerType Lnet/minecraft/class_327$class_6415;
+		METHOD comp_4525 matricesEntry ()Lorg/joml/Matrix4fc;
+		METHOD comp_4528 text ()Lnet/minecraft/class_5481;
+		METHOD comp_4530 layerType ()Lnet/minecraft/class_327$class_6415;

@@ -652,8 +652,8 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 	METHOD method_75788 getTextConsumer ()Lnet/minecraft/class_12225;
 	CLASS class_8214 ScissorStack
 		FIELD field_43099 stack Ljava/util/Deque;
-		METHOD method_49699 pop ()Lnet/minecraft/class_8030;
-		METHOD method_49700 push (Lnet/minecraft/class_8030;)Lnet/minecraft/class_8030;
+		METHOD method_49699 pop ()V
+		METHOD method_49700 push (Lnet/minecraft/class_8030;)V
 			ARG 1 rect
 		METHOD method_58136 contains (II)Z
 			ARG 1 x

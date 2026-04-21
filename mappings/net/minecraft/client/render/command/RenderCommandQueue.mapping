@@ -1,9 +1,7 @@
 CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderCommandQueue
-	METHOD method_1_3047 submitFallingBlock (Lnet/minecraft/class_4587;Lnet/minecraft/class_1087;JI)V
+	METHOD method_1_3047 submitFallingBlock (Lnet/minecraft/class_4587;Ljava/util/List;I)V
 		ARG 1 matrices
-		ARG 2 model
-		ARG 3 seed
-		ARG 5 progress
+		ARG 3 progress
 	METHOD method_1_3048 submitModel (Lnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_4587;IIILnet/minecraft/class_1_310;Lnet/minecraft/class_11701;ILnet/minecraft/class_11683$class_11792;)V
 		ARG 1 model
 		ARG 2 state
@@ -50,15 +48,14 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 6 tintLayers
 		ARG 7 quads
 		ARG 8 glintType
-	METHOD method_73482 submitLabel (Lnet/minecraft/class_4587;Lnet/minecraft/class_243;ILnet/minecraft/class_2561;ZIDLnet/minecraft/class_12075;)V
+	METHOD method_73482 submitLabel (Lnet/minecraft/class_4587;Lnet/minecraft/class_243;ILnet/minecraft/class_2561;ZILnet/minecraft/class_12075;)V
 		ARG 1 matrices
 		ARG 2 nameLabelPos
 		ARG 3 y
 		ARG 4 label
 		ARG 5 notSneaking
 		ARG 6 light
-		ARG 7 squaredDistanceToCamera
-		ARG 9 cameraState
+		ARG 7 cameraState
 	METHOD method_73483 submitCustom (Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;ILnet/minecraft/class_11659$class_11660;)V
 		ARG 1 matrices
 		ARG 2 renderLayer
@@ -134,5 +131,3 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 4 color
 		ARG 5 width
 		ARG 6 afterTerrain
-	METHOD method_74315 submitCustom (Lnet/minecraft/class_11659$class_11947;)V
-		ARG 1 customRenderer

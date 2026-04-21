@@ -4,7 +4,6 @@ CLASS net/minecraft/class_4722 net/minecraft/client/render/TexturedRenderLayers
 	FIELD field_1_1730 SHIELD_SHIELD_BASE Lnet/minecraft/class_1_310;
 	FIELD field_1_1731 SHIELD_SHIELD_BASE_NOPATTERN Lnet/minecraft/class_1_310;
 	FIELD field_21704 SHULKER_BOXES_ATLAS_TEXTURE Lnet/minecraft/class_2960;
-	FIELD field_21705 BEDS_ATLAS_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_21706 BANNER_PATTERNS_ATLAS_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_21707 SHIELD_PATTERNS_ATLAS_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_21708 SIGNS_ATLAS_TEXTURE Lnet/minecraft/class_2960;
@@ -12,7 +11,6 @@ CLASS net/minecraft/class_4722 net/minecraft/client/render/TexturedRenderLayers
 	FIELD field_21710 SHULKER_TEXTURE_ID Lnet/minecraft/class_1_310;
 	FIELD field_21711 COLORED_SHULKER_BOXES_TEXTURES Ljava/util/List;
 	FIELD field_21712 SIGN_TYPE_TEXTURES Ljava/util/Map;
-	FIELD field_21713 BED_TEXTURES [Lnet/minecraft/class_1_310;
 	FIELD field_21723 ENDER_CHEST Lnet/minecraft/class_1_310;
 	FIELD field_21729 CHEST_RENDER_LAYER Lnet/minecraft/class_1921;
 	FIELD field_28252 BANNER_PATTERN_TEXTURES Ljava/util/Map;
@@ -32,7 +30,6 @@ CLASS net/minecraft/class_4722 net/minecraft/client/render/TexturedRenderLayers
 	FIELD field_56358 SHIELD_PATTERN_SPRITE_MAPPER Lnet/minecraft/class_10721;
 	FIELD field_56359 CHEST_SPRITE_MAPPER Lnet/minecraft/class_10721;
 	FIELD field_56360 DECORATED_POT_SPRITE_MAPPER Lnet/minecraft/class_10721;
-	FIELD field_56361 BED_SPRITE_MAPPER Lnet/minecraft/class_10721;
 	FIELD field_56362 SHULKER_SPRITE_MAPPER Lnet/minecraft/class_10721;
 	FIELD field_56363 SIGN_SPRITE_MAPPER Lnet/minecraft/class_10721;
 	FIELD field_56364 HANGING_SIGN_SPRITE_MAPPER Lnet/minecraft/class_10721;
@@ -63,12 +60,6 @@ CLASS net/minecraft/class_4722 net/minecraft/client/render/TexturedRenderLayers
 		ARG 0 type
 	METHOD method_48480 getArmorTrims (Z)Lnet/minecraft/class_1921;
 		ARG 0 decal
-	METHOD method_65527 getBedTextureId (Lnet/minecraft/class_1767;)Lnet/minecraft/class_1_310;
-		ARG 0 color
-	METHOD method_65529 createColorId (Lnet/minecraft/class_1767;)Lnet/minecraft/class_2960;
-		ARG 0 color
-	METHOD method_65531 createBedTextureId (Lnet/minecraft/class_1767;)Lnet/minecraft/class_1_310;
-		ARG 0 color
 	METHOD method_65532 getShulkerBoxTextureId (Lnet/minecraft/class_1767;)Lnet/minecraft/class_1_310;
 		ARG 0 color
 	METHOD method_65533 createShulkerId (Lnet/minecraft/class_1767;)Lnet/minecraft/class_2960;

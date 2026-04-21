@@ -1,7 +1,7 @@
 CLASS com/mojang/blaze3d/systems/RenderPass
 	COMMENT Wraps a {@link com.mojang.blaze3d.systems.RenderPassBackend} to provide
 	COMMENT extra run-time checks.
-	METHOD <init> (Lnet/minecraft/class_1_149;Lnet/minecraft/class_1_147;Ljava/lang/Runnable;)V
+	METHOD <init> (Lnet/minecraft/class_1_149;Lnet/minecraft/class_1_147;Ljava/lang/Runnable;Lcom/mojang/blaze3d/systems/RenderPass$class_1_837;)V
 		ARG 1 backend
 		ARG 2 device
 		ARG 3 onFinish

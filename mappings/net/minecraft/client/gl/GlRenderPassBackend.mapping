@@ -11,7 +11,7 @@ CLASS net/minecraft/class_10866 net/minecraft/client/gl/GlRenderPassBackend
 	FIELD field_57875 setSimpleUniforms Ljava/util/Set;
 	FIELD field_57877 resourceManager Lnet/minecraft/class_10860;
 	FIELD field_57878 hasDepth Z
-	METHOD <init> (Lnet/minecraft/class_10860;Lnet/minecraft/class_10865;Z)V
+	METHOD <init> (Lnet/minecraft/class_10860;Lnet/minecraft/class_10865;ZLnet/minecraft/class_11219;)V
 		ARG 1 resourceManager
 		ARG 2 device
 		ARG 3 hasDepth

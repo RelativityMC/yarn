@@ -55,14 +55,13 @@ CLASS net/minecraft/class_3754 net/minecraft/world/gen/chunk/NoiseChunkGenerator
 		ARG 2 world
 		ARG 3 blender
 		ARG 4 noiseConfig
-	METHOD method_41538 buildSurface (Lnet/minecraft/class_2791;Lnet/minecraft/class_5868;Lnet/minecraft/class_7138;Lnet/minecraft/class_5138;Lnet/minecraft/class_4543;Lnet/minecraft/class_2378;Lnet/minecraft/class_6748;)V
+	METHOD method_41538 buildSurface (Lnet/minecraft/class_2791;Lnet/minecraft/class_5868;Lnet/minecraft/class_7138;Lnet/minecraft/class_5138;Lnet/minecraft/class_4543;Lnet/minecraft/class_6748;Ljava/util/Set;)V
 		ARG 1 chunk
 		ARG 2 heightContext
 		ARG 3 noiseConfig
 		ARG 4 structureAccessor
 		ARG 5 biomeAccess
-		ARG 6 biomeRegistry
-		ARG 7 blender
+		ARG 6 blender
 	METHOD method_41539 (Lnet/minecraft/class_5138;Lnet/minecraft/class_6748;Lnet/minecraft/class_7138;Lnet/minecraft/class_2791;)Lnet/minecraft/class_6568;
 		ARG 4 chunkx
 	METHOD method_41540 (Lnet/minecraft/class_5138;Lnet/minecraft/class_6748;Lnet/minecraft/class_7138;Lnet/minecraft/class_2791;)Lnet/minecraft/class_6568;

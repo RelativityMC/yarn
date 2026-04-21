@@ -5,13 +5,3 @@ CLASS net/minecraft/class_11659 net/minecraft/client/render/command/OrderedRende
 		METHOD method_1_191 render (Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;)V
 			ARG 1 matricesEntry
 			ARG 2 vertexConsumer
-	CLASS class_11947 LayeredCustom
-		METHOD method_1_1186 isEmpty ()Z
-		METHOD method_74324 render (Lnet/minecraft/class_11944$class_12041;Lnet/minecraft/class_11977$class_12051;Lcom/mojang/blaze3d/systems/RenderPass;Lnet/minecraft/class_1060;)V
-			ARG 1 buffers
-			ARG 2 verticesCache
-			ARG 3 renderPass
-			ARG 4 textureManager
-		METHOD method_74755 submit (Lnet/minecraft/class_11977$class_12051;Z)Lnet/minecraft/class_11944$class_12041;
-			ARG 1 verticesCache
-			ARG 2 translucent

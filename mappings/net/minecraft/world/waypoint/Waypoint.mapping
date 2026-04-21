@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_11208 net/minecraft/world/waypoint/Waypoint
-	FIELD field_59785 DEFAULT_PLAYER_RANGE I
 	FIELD field_59786 DISABLE_TRACKING Lnet/minecraft/class_1322;
 	METHOD method_70783 disableTracking (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
 		ARG 0 settings

@@ -9,8 +9,7 @@ CLASS net/minecraft/class_2874 net/minecraft/world/dimension/DimensionType
 	FIELD field_28135 MAX_COLUMN_HEIGHT I
 	FIELD field_28136 MIN_HEIGHT I
 	FIELD field_33411 SECTION_HEIGHT I
-	FIELD field_35478 MAX_COLUMN_HEIGHT_SECTIONS I
-	FIELD field_35479 MIN_HEIGHT_SECTIONS I
+	FIELD field_35479 BELOW_MIN_HEIGHT I
 	FIELD field_51951 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_63812 NETWORK_CODEC Lcom/mojang/serialization/Codec;
 	METHOD <init> (ZZZZDIIILnet/minecraft/class_6885;FLnet/minecraft/class_2874$class_7512;Lnet/minecraft/class_2874$class_12326;Lnet/minecraft/class_1_383$class_12325;Lnet/minecraft/class_12199;Lnet/minecraft/class_6885;Ljava/util/Optional;)V

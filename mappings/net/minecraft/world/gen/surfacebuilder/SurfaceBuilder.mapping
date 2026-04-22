@@ -48,9 +48,11 @@ CLASS net/minecraft/class_6724 net/minecraft/world/gen/surfacebuilder/SurfaceBui
 		ARG 1 noiseConfig
 		ARG 2 biomeAccess
 		ARG 3 useLegacyRandom
+		ARG 4 heightContext
 		ARG 5 chunk
 		ARG 6 chunkNoiseSampler
 		ARG 7 materialRule
+		ARG 8 includedBiomes
 	METHOD method_39108 createTerracottaBands (Lnet/minecraft/class_5819;)[Lnet/minecraft/class_2680;
 		ARG 0 random
 	METHOD method_39109 addTerracottaBands (Lnet/minecraft/class_5819;[Lnet/minecraft/class_2680;ILnet/minecraft/class_2680;)V

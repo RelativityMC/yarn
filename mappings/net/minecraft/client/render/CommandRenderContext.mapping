@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_841 net/minecraft/client/render/CommandRenderContext
+	FIELD comp_1_712 vertexConsumers Lnet/minecraft/class_4597;
+	FIELD comp_1_713 textRenderer Lnet/minecraft/class_327;
+	FIELD comp_1_716 outlineVertexConsumers Lnet/minecraft/class_4618;
+	METHOD comp_1_712 vertexConsumers ()Lnet/minecraft/class_4597;
+	METHOD comp_1_713 textRenderer ()Lnet/minecraft/class_327;
+	METHOD comp_1_716 outlineVertexConsumers ()Lnet/minecraft/class_4618;

@@ -26,7 +26,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	FIELD field_54164 nearbyChunks Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
 	FIELD field_61737 worldRenderState Lnet/minecraft/class_11658;
 	FIELD field_61738 entityRenderCommandQueue Lnet/minecraft/class_11661;
-	FIELD field_61739 entityRenderDispatcher Lnet/minecraft/class_11684;
+	FIELD field_61739 renderDispatcher Lnet/minecraft/class_11684;
 	FIELD field_63574 gizmoCollector Lnet/minecraft/class_12185;
 	FIELD field_64218 terrainSampler Lnet/minecraft/class_12137;
 	FIELD field_64450 MIN_CHUNK_RENDERING_OPACITY F
@@ -62,6 +62,13 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_1_4865 getChunks ()Lnet/minecraft/class_769;
 	METHOD method_1_4866 getWeatherRenderer ()Lnet/minecraft/class_9976;
 	METHOD method_1_4867 getWorldBorderRenderer ()Lnet/minecraft/class_9978;
+	METHOD method_1_5121 renderOnTopElements (Lnet/minecraft/class_9909;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
+		ARG 1 frameGraphBuilder
+		ARG 2 fogBuffer
+	METHOD method_1_5122 submitFeatures (Lnet/minecraft/class_11658;Lnet/minecraft/class_11659;Z)V
+		ARG 1 worldRenderState
+		ARG 2 queue
+		ARG 3 renderBlockOutline
 	METHOD method_3242 onResized (II)V
 		ARG 1 width
 		ARG 2 height
@@ -74,6 +81,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 2 tickCounter
 		ARG 3 renderBlockOutline
 		ARG 4 cameraRenderState
+		ARG 5 rotationMatrix
 		ARG 6 fogBuffer
 		ARG 7 fogColor
 		ARG 8 renderSky
@@ -128,6 +136,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_62208 renderBlockEntities (Lnet/minecraft/class_4587;Lnet/minecraft/class_11658;Lnet/minecraft/class_11659;)V
 		ARG 1 matrices
 		ARG 2 renderStates
+		ARG 3 queue
 	METHOD method_62210 renderTargetBlockOutline (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;Lnet/minecraft/class_11658;)V
 		ARG 1 matrices
 		ARG 2 queue

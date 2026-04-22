@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_10502 net/minecraft/client/render/item/model/special/ChestModelRenderer
+	FIELD field_1_5911 COPPER_IDS Lnet/minecraft/class_1_758$class_1_821;
 	FIELD field_55429 CHRISTMAS_ID Lnet/minecraft/class_1_477;
 	FIELD field_55430 NORMAL_ID Lnet/minecraft/class_1_477;
 	FIELD field_55431 TRAPPED_ID Lnet/minecraft/class_1_477;

@@ -23,7 +23,7 @@ CLASS net/minecraft/class_1_659 net/minecraft/client/gui/GuiManager
 		ARG 1 loadingContext
 	METHOD method_1_3899 canCurrentScreenBeInterrupted ()Z
 	METHOD method_1_3900 getMessageHandler ()Lnet/minecraft/class_7594;
-	METHOD method_1_3901 render (Lnet/minecraft/class_9779;ZZ)V
+	METHOD method_1_3901 extract (Lnet/minecraft/class_9779;ZZ)V
 		ARG 1 tickCounter
 		ARG 2 renderHud
 		ARG 3 finishedLoading

@@ -47,6 +47,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_1_3291 gpuTimestampProfiler Lnet/minecraft/class_1_667;
 	FIELD field_1_3292 gpuSurface Lnet/minecraft/class_1_665;
 	FIELD field_1_3293 updateSurface Z
+	FIELD field_1_3869 worldExtractor Lnet/minecraft/class_1_816;
 	FIELD field_1687 world Lnet/minecraft/class_638;
 		COMMENT Represents the world the client is currently viewing.
 		COMMENT This field is not null when in game.
@@ -190,6 +191,8 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 1 crashReport
 	METHOD method_1_3940 getGpuSurface ()Lnet/minecraft/class_1_665;
 	METHOD method_1_4728 getRecorder ()Lnet/minecraft/class_5962;
+	METHOD method_1_5115 (Lnet/minecraft/class_7973$class_7974;)V
+		ARG 1 properties
 	METHOD method_1478 getResourceManager ()Lnet/minecraft/class_3300;
 	METHOD method_1479 getResourcePackDir ()Ljava/nio/file/Path;
 	METHOD method_1481 joinWorld (Lnet/minecraft/class_638;)V

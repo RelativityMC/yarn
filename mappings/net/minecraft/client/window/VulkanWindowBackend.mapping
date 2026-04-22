@@ -21,3 +21,5 @@ CLASS net/minecraft/class_1_689 net/minecraft/client/window/VulkanWindowBackend
 		ARG 0 physicalDevice
 	METHOD method_1_4160 reportMissingCapabilities (Lorg/lwjgl/vulkan/VkPhysicalDevice;)V
 		ARG 0 physicalDevice
+	METHOD method_1_5119 isApiVersionSufficient (Lorg/lwjgl/vulkan/VkPhysicalDevice;)Z
+		ARG 0 physicalDevice

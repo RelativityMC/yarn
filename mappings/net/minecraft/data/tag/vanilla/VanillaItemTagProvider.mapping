@@ -2,3 +2,9 @@ CLASS net/minecraft/class_2471 net/minecraft/data/tag/vanilla/VanillaItemTagProv
 	METHOD <init> (Lnet/minecraft/class_7784;Ljava/util/concurrent/CompletableFuture;)V
 		ARG 1 output
 		ARG 2 registriesFuture
+	METHOD method_1_4899 (Lnet/minecraft/class_1_782;)Lnet/minecraft/class_1_802$class_1_803;
+		ARG 1 key
+	METHOD method_1_4901 item (Lnet/minecraft/class_1_727;)Lnet/minecraft/class_1_727;
+		ARG 0 keysByColor
+	METHOD method_1_4902 item (Lnet/minecraft/class_1_758;)Lnet/minecraft/class_1_758;
+		ARG 0 keysByOxidation

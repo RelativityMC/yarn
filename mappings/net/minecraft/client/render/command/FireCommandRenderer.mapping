@@ -7,8 +7,15 @@ CLASS net/minecraft/class_11685 net/minecraft/client/render/command/FireCommandR
 		ARG 4 z
 		ARG 5 u
 		ARG 6 v
+		ARG 7 light
 	METHOD method_73005 render (Lnet/minecraft/class_11685$class_11666;Lnet/minecraft/class_4588;Lnet/minecraft/class_1058;Lnet/minecraft/class_1058;)V
+		ARG 1 command
+		ARG 2 vertexConsumer
+		ARG 3 fire0
+		ARG 4 fire1
 	METHOD method_73006 render (Lnet/minecraft/class_11788;Lnet/minecraft/class_1_841;)V
+		ARG 1 queue
+		ARG 2 context
 	CLASS class_11666 FireCommand
 		FIELD comp_4492 matricesEntry Lnet/minecraft/class_4587$class_4665;
 		FIELD comp_4493 renderState Lnet/minecraft/class_10017;

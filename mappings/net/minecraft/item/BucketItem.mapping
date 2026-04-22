@@ -3,6 +3,7 @@ CLASS net/minecraft/class_1755 net/minecraft/item/BucketItem
 	METHOD <init> (Lnet/minecraft/class_3611;Lnet/minecraft/class_1792$class_1793;)V
 		ARG 1 fluid
 		ARG 2 settings
+	METHOD method_1_4753 getFluidHandling ()Lnet/minecraft/class_3959$class_242;
 	METHOD method_7727 playEmptyingSound (Lnet/minecraft/class_1309;Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;)V
 		ARG 1 user
 		ARG 2 world

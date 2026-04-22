@@ -15,6 +15,7 @@ CLASS net/minecraft/class_2338 net/minecraft/util/math/BlockPos
 	FIELD field_10981 BIT_SHIFT_X I
 	FIELD field_10983 BIT_SHIFT_Z I
 	FIELD field_25064 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_33083 BIT_SHIFT_Y I
 	FIELD field_48404 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_54978 SIZE_BITS_XZ I
 	FIELD field_54979 MAX_XZ I

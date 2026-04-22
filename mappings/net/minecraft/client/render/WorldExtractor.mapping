@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_1_816 net/minecraft/client/render/WorldExtractor
+	FIELD field_1_5785 MIN_CHUNK_OPACITY_FOR_RENDER F
 	FIELD field_1_5786 debugRenderer Lnet/minecraft/class_863;
 	FIELD field_1_5787 gameTestDebugRenderer Lnet/minecraft/class_4503;
 	FIELD field_1_5788 viewDistance I
@@ -27,25 +28,25 @@ CLASS net/minecraft/class_1_816 net/minecraft/client/render/WorldExtractor
 	METHOD method_1_4999 startGizmos ()Lnet/minecraft/class_12180$class_12181;
 	METHOD method_1_5000 getRenderedSectionCount ()I
 	METHOD method_1_5001 getEntityRenderStats ()Ljava/lang/String;
-	METHOD method_1_5002 render (Lnet/minecraft/class_9779;Lnet/minecraft/class_4184;F)V
+	METHOD method_1_5002 extract (Lnet/minecraft/class_9779;Lnet/minecraft/class_4184;F)V
 		ARG 1 tickCounter
 		ARG 2 camera
 		ARG 3 tickProgress
-	METHOD method_1_5003 renderBlockBreaking (Lnet/minecraft/class_4184;Lnet/minecraft/class_11658;)V
+	METHOD method_1_5003 extractBlockBreaking (Lnet/minecraft/class_4184;Lnet/minecraft/class_11658;)V
 		ARG 1 camera
 		ARG 2 worldRenderStateOut
-	METHOD method_1_5004 renderBlockOutline (Lnet/minecraft/class_4184;Lnet/minecraft/class_11658;)V
+	METHOD method_1_5004 extractBlockOutline (Lnet/minecraft/class_4184;Lnet/minecraft/class_11658;)V
 		ARG 1 camera
 		ARG 2 worldRenderStateOut
 	METHOD method_1_5005 getAndUpdateRenderState (Lnet/minecraft/class_1297;F)Lnet/minecraft/class_10017;
 		ARG 1 entity
 		ARG 2 tickProgress
-	METHOD method_1_5006 renderGizmos ()V
-	METHOD method_1_5007 renderBlockEntities (Lnet/minecraft/class_4184;FLnet/minecraft/class_11658;)V
+	METHOD method_1_5006 extractGizmos ()V
+	METHOD method_1_5007 extractBlockEntities (Lnet/minecraft/class_4184;FLnet/minecraft/class_11658;)V
 		ARG 1 camera
 		ARG 2 tickProgress
 		ARG 3 worldRenderState
-	METHOD method_1_5008 renderEntities (Lnet/minecraft/class_4184;Lnet/minecraft/class_4604;Lnet/minecraft/class_9779;Lnet/minecraft/class_11658;)V
+	METHOD method_1_5008 extractEntities (Lnet/minecraft/class_4184;Lnet/minecraft/class_4604;Lnet/minecraft/class_9779;Lnet/minecraft/class_11658;)V
 		ARG 1 camera
 		ARG 2 frustum
 		ARG 3 tickCounter

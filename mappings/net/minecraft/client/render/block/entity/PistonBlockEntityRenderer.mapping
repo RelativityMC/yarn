@@ -3,3 +3,4 @@ CLASS net/minecraft/class_835 net/minecraft/client/render/block/entity/PistonBlo
 		ARG 0 pos
 		ARG 1 state
 		ARG 2 biome
+		ARG 3 world

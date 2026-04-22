@@ -1,0 +1,20 @@
+CLASS net/minecraft/class_1_849 net/minecraft/client/render/ParticleCommandRenderer
+	FIELD field_1_5989 buffer Lnet/minecraft/class_1_807;
+	METHOD method_1_5165 doRender (Lnet/minecraft/class_1_807;Ljava/util/Map;Lcom/mojang/blaze3d/systems/RenderPass;Lnet/minecraft/class_1060;)V
+		ARG 0 multiDrawBuffer
+		ARG 1 geometryBuffers
+		ARG 2 renderPass
+		ARG 3 textureManager
+	METHOD method_1_5166 finish ()V
+	METHOD method_1_5168 (Lnet/minecraft/class_3940$class_11941;)Lnet/minecraft/class_1_807$class_1_808;
+		ARG 1 rt
+	METHOD method_1_5170 render (Lnet/minecraft/class_11788;Lnet/minecraft/class_1_841;Z)V
+		ARG 1 queue
+		ARG 2 context
+		ARG 3 blended
+	METHOD method_1_5171 renderOpaque (Lnet/minecraft/class_11788;Lnet/minecraft/class_1_841;)V
+		ARG 1 queue
+		ARG 2 context
+	METHOD method_1_5172 renderBlended (Lnet/minecraft/class_11788;Lnet/minecraft/class_1_841;)V
+		ARG 1 queue
+		ARG 2 context

@@ -7,7 +7,8 @@ CLASS net/minecraft/class_11767 net/minecraft/client/font/TextDrawable
 	METHOD method_73401 getRenderLayer (Lnet/minecraft/class_327$class_6415;)Lnet/minecraft/class_1921;
 		ARG 1 type
 	METHOD method_73403 render (Lorg/joml/Matrix4fc;Lnet/minecraft/class_4588;IZ)V
-		ARG 2 consumer
+		ARG 1 matrix
+		ARG 2 vertexConsumer
 		ARG 3 light
 		ARG 4 noDepth
 	CLASS class_12238 DrawnGlyphRect

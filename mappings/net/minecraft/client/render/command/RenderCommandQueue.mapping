@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderCommandQueue
 	METHOD method_1_3047 submitFallingBlock (Lnet/minecraft/class_4587;Ljava/util/List;I)V
 		ARG 1 matrices
+		ARG 2 modelParts
 		ARG 3 progress
 	METHOD method_1_3048 submitModel (Lnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_4587;IIILnet/minecraft/class_1_310;Lnet/minecraft/class_11701;ILnet/minecraft/class_11683$class_11792;)V
 		ARG 1 model
@@ -24,6 +25,16 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 8 crumblingOverlay
 	METHOD method_1_4569 (Lnet/minecraft/class_1921;Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 1 id
+	METHOD method_1_5040 submitCustom (Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;Lnet/minecraft/class_11659$class_11660;)V
+		ARG 1 matrices
+		ARG 2 renderLayer
+		ARG 3 customRenderer
+	METHOD method_1_5140 submitGizmos (Lnet/minecraft/class_12160$class_12355;Lnet/minecraft/class_12075;Z)V
+		ARG 1 group
+		ARG 2 camera
+		ARG 3 onTop
+	METHOD method_1_5141 submitBillboardParticle (Lnet/minecraft/class_11944;)V
+		ARG 1 billboardParticle
 	METHOD method_73478 submitText (Lnet/minecraft/class_4587;FFLnet/minecraft/class_5481;ZLnet/minecraft/class_327$class_6415;IIII)V
 		ARG 1 matrices
 		ARG 2 x
@@ -59,6 +70,7 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 	METHOD method_73483 submitCustom (Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;ILnet/minecraft/class_11659$class_11660;)V
 		ARG 1 matrices
 		ARG 2 renderLayer
+		ARG 3 outlineColor
 		ARG 4 customRenderer
 	METHOD method_73484 submitBlockStateModel (Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;Ljava/util/List;[IIII)V
 		ARG 1 matrices

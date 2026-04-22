@@ -1,10 +1,14 @@
-CLASS net/minecraft/class_11944 net/minecraft/client/particle/BillboardParticleSubmittable
+CLASS net/minecraft/class_11944 net/minecraft/client/particle/BillboardParticleCommand
 	FIELD field_62649 INITIAL_BUFFER_MAX_LENGTH I
 	FIELD field_62650 BUFFER_FLOAT_FIELDS I
 	FIELD field_62651 BUFFER_INT_FIELDS I
 	FIELD field_62652 bufferByType Ljava/util/Map;
 	FIELD field_62946 particles I
 	METHOD method_1_1186 isEmpty ()Z
+	METHOD method_1_5173 render (Lnet/minecraft/class_3940$class_11941;Lnet/minecraft/class_4588;)V
+		ARG 1 renderType
+		ARG 2 vertexConsumer
+	METHOD method_1_5174 getRenderTypes ()Ljava/util/Set;
 	METHOD method_74321 drawFace (Lnet/minecraft/class_4588;FFFFFFFFFFFFII)V
 		ARG 1 vertexConsumer
 		ARG 2 x
@@ -65,6 +69,8 @@ CLASS net/minecraft/class_11944 net/minecraft/client/particle/BillboardParticleS
 		ARG 13 maxV
 		ARG 14 color
 		ARG 15 light
+	METHOD method_74754 (Lnet/minecraft/class_3940$class_11941;)Lnet/minecraft/class_11944$class_11946;
+		ARG 0 layer
 	CLASS class_11945 Consumer
 		METHOD method_1_296 consume (FFFFFFFFFFFFII)V
 			ARG 1 x

@@ -130,6 +130,7 @@ CLASS net/minecraft/class_327 net/minecraft/client/font/TextRenderer
 			ARG 4 color
 			ARG 5 shadow
 			ARG 6 trackEmpty
+		METHOD method_1_5114 clearRectangles ()V
 		METHOD method_27532 addRectangle (Lnet/minecraft/class_11767;)V
 			ARG 1 rectangle
 		METHOD method_65177 getShadowColor (Lnet/minecraft/class_2583;I)I
@@ -161,6 +162,7 @@ CLASS net/minecraft/class_327 net/minecraft/client/font/TextRenderer
 		METHOD method_71798 drawRectangle (Lnet/minecraft/class_11767;)V
 			ARG 1 rect
 		METHOD method_73409 draw (Lnet/minecraft/class_11767;)V
+			ARG 1 drawable
 		METHOD method_75775 drawEmptyGlyphRect (Lnet/minecraft/class_12237;)V
 			ARG 1 rect
 	CLASS class_11465 GlyphDrawable

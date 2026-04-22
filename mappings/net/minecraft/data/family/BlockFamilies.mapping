@@ -1,5 +1,13 @@
 CLASS net/minecraft/class_5793 net/minecraft/data/family/BlockFamilies
 	FIELD field_1_1139 END_STONE Lnet/minecraft/class_5794;
+	FIELD field_1_3351 CINNABAR Lnet/minecraft/class_5794;
+	FIELD field_1_3352 CINNABAR_BRICK Lnet/minecraft/class_5794;
+	FIELD field_1_3353 COPPER_BLOCKS Lnet/minecraft/class_1_758;
+	FIELD field_1_3354 CUT_COPPERS Lnet/minecraft/class_1_758;
+	FIELD field_1_3355 POLISHED_CINNABAR Lnet/minecraft/class_5794;
+	FIELD field_1_3356 POLISHED_SULFUR Lnet/minecraft/class_5794;
+	FIELD field_1_3357 SULFUR Lnet/minecraft/class_5794;
+	FIELD field_1_3358 SULFUR_BRICK Lnet/minecraft/class_5794;
 	FIELD field_28480 POLISHED_DIORITE Lnet/minecraft/class_5794;
 	FIELD field_28481 GRANITE Lnet/minecraft/class_5794;
 	FIELD field_28482 POLISHED_GRANITE Lnet/minecraft/class_5794;
@@ -60,6 +68,18 @@ CLASS net/minecraft/class_5793 net/minecraft/data/family/BlockFamilies
 	FIELD field_55170 RESIN_BRICK Lnet/minecraft/class_5794;
 	METHOD method_1_1233 getFamily (Lnet/minecraft/class_2248;)Lnet/minecraft/class_5794;
 		ARG 0 block
+	METHOD method_1_3978 (Ljava/lang/String;Lnet/minecraft/class_5955$class_5811;)Lnet/minecraft/class_5794;
+		ARG 0 prefix
+		ARG 1 oxidation
+	METHOD method_1_3979 (Ljava/lang/String;Lnet/minecraft/class_5955$class_5811;)Lnet/minecraft/class_5794;
+		ARG 0 prefix
+		ARG 1 oxidation
+	METHOD method_1_3980 (Ljava/lang/String;Lnet/minecraft/class_5955$class_5811;)Lnet/minecraft/class_5794;
+		ARG 0 prefix
+		ARG 1 oxidation
+	METHOD method_1_3981 (Ljava/lang/String;Lnet/minecraft/class_5955$class_5811;)Lnet/minecraft/class_5794;
+		ARG 0 prefix
+		ARG 1 oxidation
 	METHOD method_33467 getFamilies ()Ljava/util/stream/Stream;
 	METHOD method_33468 register (Lnet/minecraft/class_2248;)Lnet/minecraft/class_5794$class_5795;
 		ARG 0 baseBlock

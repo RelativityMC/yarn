@@ -1,4 +1,0 @@
-CLASS net/minecraft/class_1_848
-	CLASS class_11790 MovingBlockCommand
-		FIELD comp_4652 matricesEntry Lorg/joml/Matrix4fc;
-		METHOD comp_4652 matricesEntry ()Lorg/joml/Matrix4fc;

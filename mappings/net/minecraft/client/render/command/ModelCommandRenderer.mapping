@@ -2,15 +2,20 @@ CLASS net/minecraft/class_11683 net/minecraft/client/render/command/ModelCommand
 	FIELD field_61827 matrices Lnet/minecraft/class_4587;
 	METHOD method_1_1212 renderOpaque (Lnet/minecraft/class_11788;Lnet/minecraft/class_1_841;)V
 		ARG 1 queue
+		ARG 2 context
 	METHOD method_1_1213 renderBlended (Lnet/minecraft/class_11788;Lnet/minecraft/class_1_841;)V
 		ARG 1 queue
+		ARG 2 context
 	METHOD method_73000 render (Lnet/minecraft/class_11683$class_11670;Lnet/minecraft/class_1921;Lnet/minecraft/class_4597;Lnet/minecraft/class_4618;)V
 		ARG 1 model
 		ARG 2 renderLayer
+		ARG 3 vertexConsumers
 		ARG 4 outlineVertexConsumers
 	METHOD method_73249 renderAll (Lnet/minecraft/class_1_841;Ljava/util/Map;)V
+		ARG 1 context
 		ARG 2 modelCommands
 	METHOD method_73250 renderAllBlended (Lnet/minecraft/class_1_841;Ljava/util/List;)V
+		ARG 1 context
 		ARG 2 blendedModelCommands
 	METHOD method_73251 (Lnet/minecraft/class_11683$class_11670;)D
 		ARG 0 modelCommand
@@ -29,4 +34,7 @@ CLASS net/minecraft/class_11683 net/minecraft/client/render/command/ModelCommand
 			ARG 1 renderLayer
 		METHOD method_74820 add (Lnet/minecraft/class_1921;Lnet/minecraft/class_11683$class_11670;)V
 			ARG 1 renderLayer
+			ARG 2 command
 		METHOD method_74821 nextFrame ()V
+		METHOD method_74822 (Lnet/minecraft/class_1921;)Ljava/util/List;
+			ARG 0 layer

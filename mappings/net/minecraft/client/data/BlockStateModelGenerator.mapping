@@ -44,6 +44,34 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 2 articleSource
 		ARG 3 texture
 		ARG 4 christmas
+	METHOD method_1_4492 (Lnet/minecraft/class_5955$class_5811;)V
+		ARG 1 oxidation
+	METHOD method_1_4493 (Lnet/minecraft/class_5955$class_5811;)V
+		ARG 1 oxidation
+	METHOD method_1_4494 (Lnet/minecraft/class_5955$class_5811;)V
+		ARG 1 oxidation
+	METHOD method_1_4495 (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
+		ARG 1 weathering
+		ARG 2 waxed
+	METHOD method_1_4496 (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
+		ARG 1 weathering
+		ARG 2 waxed
+	METHOD method_1_4497 (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
+		ARG 1 weathering
+		ARG 2 waxed
+	METHOD method_1_4498 (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
+		ARG 1 weathering
+		ARG 2 waxed
+	METHOD method_1_4499 (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
+		ARG 1 weathering
+		ARG 2 waxed
+	METHOD method_1_5022 createBedBlockState (Lnet/minecraft/class_2248;Lnet/minecraft/class_807;Lnet/minecraft/class_807;)Lnet/minecraft/class_4917;
+		ARG 0 bedBlock
+		ARG 1 headModel
+		ARG 2 footModel
+	METHOD method_1_5023 (Lnet/minecraft/class_1767;Lnet/minecraft/class_2248;)V
+		ARG 1 color
+		ARG 2 shulkerBox
 	METHOD method_25508 registerChorusPlant ()V
 	METHOD method_25509 registerComposter ()V
 	METHOD method_25510 registerDaylightDetector ()V
@@ -151,6 +179,7 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 3 belowFenceModel
 	METHOD method_25576 registerRandomHorizontalRotations (Lnet/minecraft/class_4946$class_4947;Ljava/util/List;)V
 		ARG 1 modelFactory
+		ARG 2 blocks
 	METHOD method_25581 getTurtleEggModel (II)Lnet/minecraft/class_813;
 		ARG 1 eggs
 		ARG 2 cracks
@@ -193,6 +222,7 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 8 topRightOpenModel
 	METHOD method_25614 registerSouthDefaultHorizontalFacing (Lnet/minecraft/class_4946$class_4947;Ljava/util/List;)V
 		ARG 1 modelFactory
+		ARG 2 blocks
 	METHOD method_25619 registerMirrorable (Lnet/minecraft/class_2248;)V
 		ARG 1 block
 	METHOD method_25620 registerGourd (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
@@ -370,8 +400,11 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 	METHOD method_32229 registerAmethyst (Lnet/minecraft/class_2248;)V
 		ARG 1 block
 	METHOD method_32802 registerPointedDripstone (Lnet/minecraft/class_2248;)V
+		ARG 1 block
 	METHOD method_32803 getDripstoneVariant (Lnet/minecraft/class_2350;Lnet/minecraft/class_5691;Lnet/minecraft/class_2248;)Lnet/minecraft/class_807;
 		ARG 1 direction
+		ARG 2 thickness
+		ARG 3 block
 	METHOD method_33128 registerSculkSensor ()V
 	METHOD method_33504 registerPetrifiedOakSlab ()V
 	METHOD method_33520 registerMultifaceBlock (Lnet/minecraft/class_2248;)V

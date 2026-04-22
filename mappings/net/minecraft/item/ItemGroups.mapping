@@ -17,6 +17,23 @@ CLASS net/minecraft/class_7706 net/minecraft/item/ItemGroups
 	FIELD field_42466 displayContext Lnet/minecraft/class_1761$class_8128;
 	FIELD field_52022 INVENTORY_TAB_TEXTURE_ID Lnet/minecraft/class_2960;
 	FIELD field_52023 ITEM_SEARCH_TAB_TEXTURE_ID Lnet/minecraft/class_2960;
+	METHOD method_1_4189 (Ljava/util/List;Lnet/minecraft/class_1761$class_8128;Lnet/minecraft/class_1761$class_7704;)V
+		ARG 1 displayContext
+		ARG 2 entries
+	METHOD method_1_4190 (Lnet/minecraft/class_1761$class_7704;Lnet/minecraft/class_1792;)V
+		ARG 1 dye
+	METHOD method_1_4823 forEachCopperFamily (Ljava/util/function/Consumer;)V
+		ARG 0 callback
+	METHOD method_1_4824 (Lnet/minecraft/class_1761$class_7704;Lnet/minecraft/class_1_758;)V
+		ARG 1 family
+	METHOD method_1_4825 (Lnet/minecraft/class_1761$class_7704;Lnet/minecraft/class_1_758;)V
+		ARG 1 family
+	METHOD method_1_4826 (Lnet/minecraft/class_1761$class_7704;Lnet/minecraft/class_1_727;Lnet/minecraft/class_1767;)V
+		ARG 2 color
+	METHOD method_1_4827 addColoredItems (Lnet/minecraft/class_1761$class_7704;Ljava/util/List;Lnet/minecraft/class_1_727;)V
+		ARG 0 entries
+		ARG 1 colors
+		ARG 2 itemsByColor
 	METHOD method_45426 addInstruments (Lnet/minecraft/class_1761$class_7704;Lnet/minecraft/class_7225;Lnet/minecraft/class_1792;Lnet/minecraft/class_6862;Lnet/minecraft/class_1761$class_7705;)V
 		ARG 0 entries
 		ARG 1 registryWrapper
@@ -64,6 +81,8 @@ CLASS net/minecraft/class_7706 net/minecraft/item/ItemGroups
 	METHOD method_47344 getSearchGroup ()Lnet/minecraft/class_1761;
 	METHOD method_48934 (Lnet/minecraft/class_1761$class_7704;Lnet/minecraft/class_1761$class_7705;Lnet/minecraft/class_1799;)V
 		ARG 2 stack
+	METHOD method_48935 (Lnet/minecraft/class_1761$class_7704;Lnet/minecraft/class_1761$class_7705;Lnet/minecraft/class_6880$class_6883;)V
+		ARG 2 paintingVariant
 	METHOD method_48937 addPaintings (Lnet/minecraft/class_1761$class_7704;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_7225$class_7226;Ljava/util/function/Predicate;Lnet/minecraft/class_1761$class_7705;)V
 		ARG 0 entries
 		ARG 1 registries

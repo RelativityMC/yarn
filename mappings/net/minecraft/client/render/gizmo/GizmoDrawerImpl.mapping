@@ -2,6 +2,10 @@ CLASS net/minecraft/class_12160 net/minecraft/client/render/gizmo/GizmoDrawerImp
 	FIELD field_64588 opaque Lnet/minecraft/class_12160$class_12355;
 	FIELD field_64589 transparent Lnet/minecraft/class_12160$class_12355;
 	FIELD field_64590 empty Z
+	METHOD method_1_5153 submit (Lnet/minecraft/class_11659;Lnet/minecraft/class_12075;Z)V
+		ARG 1 queue
+		ARG 2 cameraRenderState
+		ARG 3 onTop
 	METHOD method_76660 getDivision (I)Lnet/minecraft/class_12160$class_12355;
 		ARG 1 color
 	CLASS class_12161 Line
@@ -10,5 +14,7 @@ CLASS net/minecraft/class_12160 net/minecraft/client/render/gizmo/GizmoDrawerImp
 	CLASS class_12164 Text
 	CLASS class_12165 Polygon
 	CLASS class_12355 Division
+		FIELD comp_5256 polygons Ljava/util/List;
 		METHOD <init> (Z)V
 			ARG 1 opaque
+		METHOD comp_5256 polygons ()Ljava/util/List;

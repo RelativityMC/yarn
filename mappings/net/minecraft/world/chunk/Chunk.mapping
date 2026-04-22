@@ -28,6 +28,9 @@ CLASS net/minecraft/class_2791 net/minecraft/world/chunk/Chunk
 		ARG 5 inhabitedTime
 		ARG 7 sectionArray
 		ARG 8 blendingData
+	METHOD method_1_5123 getBiomes (Ljava/util/Set;)V
+		COMMENT Gets all biomes in any section’s palette, whether it actually shows up or not.
+		ARG 1 biomesOut
 	METHOD method_12002 addEntity (Lnet/minecraft/class_1297;)V
 		ARG 1 entity
 	METHOD method_12003 getUpgradeData ()Lnet/minecraft/class_2843;

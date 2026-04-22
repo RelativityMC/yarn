@@ -21,6 +21,7 @@ CLASS net/minecraft/class_4597 net/minecraft/client/render/VertexConsumerProvide
 		COMMENT
 		COMMENT @see VertexConsumerProvider#immediate(BufferAllocator)
 		COMMENT @see VertexConsumerProvider#immediate(SequencedMap, BufferAllocator)
+		FIELD field_1_5709 NOT_IN_WORKING_LAYERS I
 		FIELD field_1_5710 workingRenderLayers Ljava/util/List;
 		FIELD field_1_5711 workingMultiBuffers Ljava/util/List;
 		FIELD field_1_5712 layerIndices Lit/unimi/dsi/fastutil/objects/Reference2IntMap;

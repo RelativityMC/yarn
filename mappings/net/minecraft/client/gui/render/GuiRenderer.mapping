@@ -5,6 +5,9 @@ CLASS net/minecraft/class_11228 net/minecraft/client/gui/render/GuiRenderer
 	FIELD field_1_5670 simpleElementMultiBuffer Lnet/minecraft/class_1_807$class_1_808;
 	FIELD field_1_5671 guiVertexBuffer Lnet/minecraft/class_1_807;
 	FIELD field_59905 LOGGER Lorg/slf4j/Logger;
+	FIELD field_59906 FAR_OFFSET_FROM_NEAR F
+	FIELD field_59907 NEAR_DISTANCE F
+	FIELD field_59908 SPRITE_DIMENSION I
 	FIELD field_59912 SIMPLE_ELEMENT_COMPARATOR Ljava/util/Comparator;
 	FIELD field_59914 state Lnet/minecraft/class_11246;
 	FIELD field_59915 draws Ljava/util/List;
@@ -74,6 +77,8 @@ CLASS net/minecraft/class_11228 net/minecraft/client/gui/render/GuiRenderer
 	METHOD method_71291 renderPreparedDraws ()V
 	METHOD method_72107 (ILnet/minecraft/class_11245;)V
 		ARG 2 elem
+	METHOD method_72108 (Ljava/lang/Object;)Lnet/minecraft/class_11527;
+		ARG 0 key
 	METHOD method_72109 clearOversizedItems ()V
 	CLASS 1 1
 	CLASS class_11230 Draw

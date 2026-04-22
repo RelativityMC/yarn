@@ -49,3 +49,7 @@ CLASS net/minecraft/class_129 net/minecraft/util/crash/CrashReportSection
 		ARG 0 x
 		ARG 2 y
 		ARG 4 z
+	CLASS class_1_660 Element
+		METHOD <init> (Ljava/lang/String;Ljava/lang/Object;)V
+			ARG 1 key
+			ARG 2 value

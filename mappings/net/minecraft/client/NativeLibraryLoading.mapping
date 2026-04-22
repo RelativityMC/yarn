@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_1_741 net/minecraft/client/NativeLibraryLoading
 	FIELD field_1_3762 HEX_FORMAT Ljava/util/HexFormat;
 	FIELD field_1_3763 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_5973 loadedVulkan Z
 	METHOD method_1_4462 setSharedLibraryExtractPath ()V
 	METHOD method_1_4463 testSharedLibraryExtractDir (Ljava/lang/String;)V
 		ARG 0 dir
@@ -28,6 +29,8 @@ CLASS net/minecraft/class_1_741 net/minecraft/client/NativeLibraryLoading
 	METHOD method_1_4693 loadShaderc ()V
 	METHOD method_1_4694 loadSpvc ()V
 	METHOD method_1_4695 loadVma ()V
+	METHOD method_1_5135 isVulkanLoaded ()Z
+	METHOD method_1_5139 loadVulkanLoader ()Z
 	CLASS class_1_742 ToggledRecordingPrintStream
 		FIELD field_1_3764 byteOutput Lnet/minecraft/class_1_741$class_1_743;
 		METHOD <init> (Ljava/io/OutputStream;)V
@@ -42,3 +45,4 @@ CLASS net/minecraft/class_1_741 net/minecraft/client/NativeLibraryLoading
 			ARG 3 len
 		METHOD write (I)V
 			ARG 1 b
+	CLASS class_1_839 LoadAction

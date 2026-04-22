@@ -123,6 +123,7 @@ CLASS net/minecraft/class_437 net/minecraft/client/gui/screen/Screen
 		COMMENT {@link #setInitialFocus()} method by screen implementations.
 		ARG 1 element
 	METHOD method_48266 getTabNavigation (Z)Lnet/minecraft/class_8023$class_8026;
+		ARG 1 forward
 	METHOD method_48267 blur ()V
 	METHOD method_48640 refreshWidgetPositions ()V
 	METHOD method_49589 onDisplayed ()V

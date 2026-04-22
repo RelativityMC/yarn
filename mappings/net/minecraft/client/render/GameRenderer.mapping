@@ -31,6 +31,7 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	FIELD field_60104 globalSettings Lnet/minecraft/class_11284;
 	FIELD field_60105 worldProjectionMatrix Lnet/minecraft/class_11278;
 	FIELD field_60106 hudProjectionMatrix Lnet/minecraft/class_11278;
+	FIELD field_60107 PERSPECTIVE_FAR_DISTANCE F
 	FIELD field_60580 rotatingPanoramaRenderer Lnet/minecraft/class_766;
 	FIELD field_60793 fogRenderer Lnet/minecraft/class_758;
 	FIELD field_61733 orderedRenderCommandQueue Lnet/minecraft/class_11661;

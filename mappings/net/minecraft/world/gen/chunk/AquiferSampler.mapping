@@ -17,12 +17,18 @@ CLASS net/minecraft/class_6350 net/minecraft/world/gen/chunk/AquiferSampler
 		FIELD field_28813 barrierNoise Lnet/minecraft/class_6910;
 		FIELD field_28816 waterLevels [Lnet/minecraft/class_6350$class_6351;
 		FIELD field_28817 blockPositions [J
+			COMMENT One entry for each cell
 		FIELD field_28820 needsFluidTick Z
-		FIELD field_28822 startX I
-		FIELD field_28823 startY I
-		FIELD field_28824 startZ I
-		FIELD field_28825 sizeX I
-		FIELD field_28826 sizeZ I
+		FIELD field_28822 startCellX I
+			COMMENT The following five fields are expressed in terms of aquifer cells, which
+			COMMENT are 16×12×16 in volume.
+		FIELD field_28823 startCellY I
+		FIELD field_28824 startCellZ I
+		FIELD field_28825 cellCountX I
+		FIELD field_28826 cellCountZ I
+		FIELD field_31457 CELL_SIZE_X I
+		FIELD field_31458 CELL_SIZE_Y I
+		FIELD field_31459 CELL_SIZE_Z I
 		FIELD field_33575 fluidTypeNoise Lnet/minecraft/class_6910;
 		FIELD field_34578 chunkNoiseSampler Lnet/minecraft/class_6568;
 		FIELD field_34579 randomDeriver Lnet/minecraft/class_6574;
@@ -30,9 +36,10 @@ CLASS net/minecraft/class_6350 net/minecraft/world/gen/chunk/AquiferSampler
 		FIELD field_34581 CHUNK_POS_OFFSETS [[I
 		FIELD field_35122 fluidLevelFloodednessNoise Lnet/minecraft/class_6910;
 		FIELD field_35123 fluidLevelSpreadNoise Lnet/minecraft/class_6910;
-		FIELD field_36221 NEEDS_FLUID_TICK_DISTANCE_THRESHOLD D
+		FIELD field_36221 FLUID_TICK_DENSITY_FACTOR_THRESHOLD D
 		FIELD field_38246 erosionDensityFunction Lnet/minecraft/class_6910;
 		FIELD field_38247 depthDensityFunction Lnet/minecraft/class_6910;
+		FIELD field_61452 maxY I
 		METHOD <init> (Lnet/minecraft/class_6568;Lnet/minecraft/class_1923;Lnet/minecraft/class_6953;Lnet/minecraft/class_6574;IILnet/minecraft/class_6350$class_6565;)V
 			ARG 1 chunkNoiseSampler
 			ARG 2 chunkPos
@@ -41,19 +48,27 @@ CLASS net/minecraft/class_6350 net/minecraft/world/gen/chunk/AquiferSampler
 			ARG 5 minimumY
 			ARG 6 height
 			ARG 7 fluidLevelSampler
-		METHOD method_33734 getLocalX (I)I
+		METHOD method_33734 getCellX (I)I
+			ARG 0 x
 		METHOD method_33735 calculateDensity (Lnet/minecraft/class_6910$class_6912;Lorg/apache/commons/lang3/mutable/MutableDouble;Lnet/minecraft/class_6350$class_6351;Lnet/minecraft/class_6350$class_6351;)D
 			ARG 1 pos
-		METHOD method_33736 maxDistance (II)D
-			ARG 1 a
+			ARG 2 cachedBarrierNoiseValue
+			ARG 3 nearerLevel
+			ARG 4 fartherLevel
+		METHOD method_33736 densityFactor (II)D
+			ARG 0 nearerCellDistance
+			ARG 1 fartherCellDistance
 		METHOD method_33738 getWaterLevel (I)Lnet/minecraft/class_6350$class_6351;
-		METHOD method_33740 getLocalY (I)I
+			ARG 1 cellIndex
+		METHOD method_33740 getCellY (I)I
+			ARG 0 x
 		METHOD method_33741 index (III)I
 			ARG 1 x
 			ARG 2 y
 			ARG 3 z
-		METHOD method_33743 getLocalZ (I)I
-		METHOD method_40463 getFluidLevel (III)Lnet/minecraft/class_6350$class_6351;
+		METHOD method_33743 getCellZ (I)I
+			ARG 0 z
+		METHOD method_40463 generateFluidLevel (III)Lnet/minecraft/class_6350$class_6351;
 			ARG 1 blockX
 			ARG 2 blockY
 			ARG 3 blockZ
@@ -74,6 +89,17 @@ CLASS net/minecraft/class_6350 net/minecraft/world/gen/chunk/AquiferSampler
 			ARG 3 blockZ
 			ARG 4 defaultFluidLevel
 			ARG 5 surfaceHeightEstimate
+		METHOD method_72677 reconstructX (II)I
+			ARG 0 cellX
+			ARG 1 cellLocalX
+		METHOD method_72678 reconstructY (II)I
+			ARG 0 cellY
+			ARG 1 cellLocalY
+		METHOD method_72679 reconstructZ (II)I
+			ARG 0 cellZ
+			ARG 1 cellLocalZ
+		METHOD method_72680 adjustEstimatedHighestSurfaceLevel (I)I
+			ARG 1 estimatedHighestSurfaceLevel
 	CLASS class_6351 FluidLevel
 		FIELD comp_2967 y I
 		FIELD comp_2968 state Lnet/minecraft/class_2680;

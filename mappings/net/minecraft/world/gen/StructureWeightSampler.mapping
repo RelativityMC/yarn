@@ -3,6 +3,14 @@ CLASS net/minecraft/class_5817 net/minecraft/world/gen/StructureWeightSampler
 	FIELD field_28741 STRUCTURE_WEIGHT_TABLE [F
 	FIELD field_31461 INDEX_OFFSET I
 	FIELD field_31462 EDGE_LENGTH I
+	FIELD field_61464 EMPTY Lnet/minecraft/class_5817;
+	FIELD field_61465 pieces Ljava/util/List;
+	FIELD field_61466 junctions Ljava/util/List;
+	FIELD field_61467 boundingBox Lnet/minecraft/class_3341;
+	METHOD <init> (Ljava/util/List;Ljava/util/List;Lnet/minecraft/class_3341;)V
+		ARG 1 pieces
+		ARG 2 junctions
+		ARG 3 boundingBox
 	METHOD method_33640 ([F)V
 		ARG 0 array
 	METHOD method_33641 getStructureWeight (IIII)D
@@ -28,6 +36,11 @@ CLASS net/minecraft/class_5817 net/minecraft/world/gen/StructureWeightSampler
 		ARG 1 y
 		ARG 3 z
 	METHOD method_42695 createStructureWeightSampler (Lnet/minecraft/class_5138;Lnet/minecraft/class_1923;)Lnet/minecraft/class_5817;
+		ARG 0 structureAccessor
+		ARG 1 chunkPos
 	METHOD method_42696 (Lnet/minecraft/class_3195;)Z
 		ARG 0 structure
+	METHOD method_72681 union (Lnet/minecraft/class_3341;Lnet/minecraft/class_3341;)Lnet/minecraft/class_3341;
+		ARG 0 box1
+		ARG 1 box2
 	CLASS class_7301 Piece

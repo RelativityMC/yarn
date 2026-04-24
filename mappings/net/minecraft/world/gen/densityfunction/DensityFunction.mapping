@@ -5,6 +5,8 @@ CLASS net/minecraft/class_6910 net/minecraft/world/gen/densityfunction/DensityFu
 	COMMENT like constant values or {@code add}, which in turn use other density functions
 	COMMENT to define their operands.
 	FIELD field_37058 REGISTRY_ENTRY_CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_1_4456 (Lnet/minecraft/class_6880;)Lnet/minecraft/class_6910;
+		ARG 0 registryEntry
 	METHOD method_40464 sample (Lnet/minecraft/class_6910$class_6912;)D
 		COMMENT {@return the density value for the given block position}
 		ARG 1 pos

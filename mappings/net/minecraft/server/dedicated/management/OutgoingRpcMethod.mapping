@@ -16,8 +16,6 @@ CLASS net/minecraft/class_11808 net/minecraft/server/dedicated/management/Outgoi
 		FIELD field_62322 requestParameter Lnet/minecraft/class_11818;
 		FIELD field_62323 responseResult Lnet/minecraft/class_11820;
 		FIELD field_63003 DEFAULT_ATTRIBUTES Lnet/minecraft/class_11808$class_12055;
-		METHOD <init> (Lnet/minecraft/class_11808$class_12056;)V
-			ARG 1 factory
 		METHOD method_73691 requestParameter (Ljava/lang/String;Lnet/minecraft/class_11821;)Lnet/minecraft/class_11808$class_11811;
 			ARG 1 name
 			ARG 2 schema

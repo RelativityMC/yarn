@@ -65,7 +65,6 @@ CLASS net/minecraft/class_6910 net/minecraft/world/gen/densityfunction/DensityFu
 		COMMENT to density functions.
 		COMMENT
 		COMMENT <p>It also has a way to get the currently active {@link Blender}.
-		METHOD method_39327 getBlender ()Lnet/minecraft/class_6748;
 	CLASS class_6913 Base
 		COMMENT Represents a density function that has no other density functions as an argument,
 		COMMENT and provides default implementations of {@link #fill} and

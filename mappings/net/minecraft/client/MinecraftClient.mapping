@@ -39,7 +39,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	COMMENT
 	COMMENT @see net.minecraft.server.integrated.IntegratedServer
 	COMMENT @see net.minecraft.client.render.GameRenderer
-	FIELD field_1_2136 blockModelManager Lnet/minecraft/class_1_394;
 	FIELD field_1_2249 lastWindowFocusTime J
 	FIELD field_1_2571 imeStatusController Lnet/minecraft/class_1_490;
 	FIELD field_1_3288 backendFailure Lnet/minecraft/class_1_739;
@@ -68,7 +67,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_1714 musicTracker Lnet/minecraft/class_1142;
 	FIELD field_1715 resourcePackManager Lnet/minecraft/class_3283;
 	FIELD field_1717 languageManager Lnet/minecraft/class_1076;
-	FIELD field_1720 versionType Ljava/lang/String;
 	FIELD field_1721 isDemo Z
 	FIELD field_1724 player Lnet/minecraft/class_746;
 		COMMENT Represents the client's own player.
@@ -161,7 +159,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_61504 debugHudEntryList Lnet/minecraft/class_11633;
 	FIELD field_62106 apiServices Lnet/minecraft/class_7497;
 	FIELD field_62107 playerSkinCache Lnet/minecraft/class_11786;
-	FIELD field_62565 particleSpriteManager Lnet/minecraft/class_11939;
 	FIELD field_62566 packetApplyBatcher Lnet/minecraft/class_11980;
 	FIELD field_63466 gizmoCollector Lnet/minecraft/class_12185;
 	FIELD field_64524 gizmos Ljava/util/List;
@@ -211,8 +208,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 1 error
 		ARG 2 description
 	METHOD method_1508 handleInputEvents ()V
-	METHOD method_1510 (Lnet/minecraft/class_2561;)V
-		ARG 0 status
 	METHOD method_1511 doItemPick ()V
 	METHOD method_1513 reloadResourcesConcurrently ()Ljava/util/concurrent/CompletableFuture;
 	METHOD method_1514 run ()V
@@ -231,7 +226,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_1542 isInSingleplayer ()Z
 	METHOD method_1543 getDataFixer ()Lcom/mojang/datafixers/DataFixer;
 	METHOD method_1544 getMusicInstance ()Lnet/minecraft/class_5195;
-	METHOD method_1547 getVersionType ()Ljava/lang/String;
 	METHOD method_1548 getSession ()Lnet/minecraft/class_320;
 	METHOD method_1551 getInstance ()Lnet/minecraft/class_310;
 	METHOD method_1554 getBakedModelManager ()Lnet/minecraft/class_1092;
@@ -334,8 +328,8 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_31320 getSocialInteractionsManager ()Lnet/minecraft/class_5520;
 	METHOD method_31321 isConnectedToServer ()Z
 	METHOD method_31382 createUserApiService (Lcom/mojang/authlib/yggdrasil/YggdrasilAuthenticationService;Lnet/minecraft/class_542;)Lcom/mojang/authlib/minecraft/UserApiService;
-		ARG 1 authService
-		ARG 2 runArgs
+		ARG 0 authService
+		ARG 1 runArgs
 	METHOD method_31974 getLoadedEntityModels ()Lnet/minecraft/class_5599;
 	METHOD method_31975 getBlockEntityRenderDispatcher ()Lnet/minecraft/class_824;
 	METHOD method_33883 shouldFilterText ()Z
@@ -350,8 +344,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		COMMENT
 		COMMENT @return a user-oriented piece of text for screenshot result
 		ARG 1 directory
-	METHOD method_35701 (Lnet/minecraft/class_2561;)V
-		ARG 0 message
 	METHOD method_35704 (Ljava/io/File;Lnet/minecraft/class_2583;)Lnet/minecraft/class_2583;
 		ARG 1 style
 	METHOD method_35706 isRealmsEnabled ()Z
@@ -396,7 +388,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_44647 getMultiplayerBanDetails ()Lcom/mojang/authlib/minecraft/BanDetails;
 	METHOD method_44713 getNarratorManager ()Lnet/minecraft/class_333;
 	METHOD method_45573 getDefaultResourcePack ()Lnet/minecraft/class_3268;
-	METHOD method_47392 isConnectedToLocalServer ()Z
 	METHOD method_47595 isOptionalTelemetryEnabledByApi ()Z
 	METHOD method_47596 isTelemetryEnabledByApi ()Z
 	METHOD method_47599 getCurrentFps ()I
@@ -441,8 +432,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_55505 onDisconnected ()V
 	METHOD method_55607 getUserProperties ()Lcom/mojang/authlib/minecraft/UserApiService$UserProperties;
 	METHOD method_57017 onFontOptionsChanged ()V
-	METHOD method_60320 (Lnet/minecraft/class_1078;)V
-		ARG 1 translationStorage
 	METHOD method_60647 shouldTick ()Z
 	METHOD method_61962 printCrashReport (Ljava/io/File;Lnet/minecraft/class_128;I)I
 		ARG 0 runDir

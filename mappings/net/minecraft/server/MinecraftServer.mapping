@@ -105,7 +105,7 @@ CLASS net/minecraft/server/MinecraftServer
 	FIELD field_63111 spawnPoint Lnet/minecraft/class_5217$class_12064;
 	FIELD field_63648 activityNotifier Lnet/minecraft/class_12085;
 	FIELD field_63649 stopwatchPersistentState Lnet/minecraft/class_12110;
-	METHOD <init> (Ljava/lang/Thread;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_3283;Lnet/minecraft/class_6904;Ljava/util/Optional;Ljava/net/Proxy;Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_7497;Lnet/minecraft/class_11545;Z)V
+	METHOD <init> (Ljava/lang/Thread;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_3283;Lnet/minecraft/class_6904;Ljava/util/Optional;Ljava/net/Proxy;Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_7497;Lnet/minecraft/class_11545;ZLnet/minecraft/class_11870;)V
 		ARG 1 serverThread
 		ARG 2 session
 		ARG 3 dataPackManager

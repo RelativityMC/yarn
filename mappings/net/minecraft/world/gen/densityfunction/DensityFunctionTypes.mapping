@@ -54,10 +54,6 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 	METHOD method_40490 unary (Lnet/minecraft/class_6910;Lnet/minecraft/class_6916$class_6925$class_6926;)Lnet/minecraft/class_6910;
 		ARG 0 input
 		ARG 1 type
-	METHOD method_40491 weirdScaledSampler (Lnet/minecraft/class_6910;Lnet/minecraft/class_6880;Lnet/minecraft/class_6916$class_6944$class_7048;)Lnet/minecraft/class_6910;
-		ARG 0 input
-		ARG 1 parameters
-		ARG 2 mapper
 	METHOD method_40493 noise (Lnet/minecraft/class_6880;)Lnet/minecraft/class_6910;
 		ARG 0 noiseParameters
 	METHOD method_40494 noise (Lnet/minecraft/class_6880;D)Lnet/minecraft/class_6910;
@@ -156,8 +152,6 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 	CLASS class_6917 BinaryOperation
 	CLASS class_6919 BlendAlpha
 		FIELD field_37079 CODEC Lnet/minecraft/class_7243;
-	CLASS class_6920 BlendDensity
-		FIELD field_37080 CODEC_HOLDER Lnet/minecraft/class_7243;
 	CLASS class_6921 BlendOffset
 		FIELD field_37081 CODEC Lnet/minecraft/class_7243;
 	CLASS class_6922 Clamp
@@ -234,20 +228,6 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 		METHOD method_40518 apply (Lnet/minecraft/class_6910$class_6912;D)D
 			ARG 1 pos
 			ARG 2 density
-	CLASS class_6944 WeirdScaledSampler
-		FIELD field_37064 CODEC_HOLDER Lnet/minecraft/class_7243;
-		FIELD field_37065 WEIRD_SCALED_SAMPLER_CODEC Lcom/mojang/serialization/MapCodec;
-		METHOD method_41072 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 0 instance
-		CLASS class_7048 RarityValueMapper
-			FIELD field_37068 CODEC Lcom/mojang/serialization/Codec;
-			FIELD field_37070 name Ljava/lang/String;
-			FIELD field_37071 scaleFunction Lit/unimi/dsi/fastutil/doubles/Double2DoubleFunction;
-			FIELD field_37072 maxValueMultiplier D
-			METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lit/unimi/dsi/fastutil/doubles/Double2DoubleFunction;D)V
-				ARG 3 name
-				ARG 4 scaleFunction
-				ARG 5 maxValueMultiplier
 	CLASS class_6945 YClampedGradient
 		FIELD field_37074 CODEC_HOLDER Lnet/minecraft/class_7243;
 		FIELD field_37075 Y_CLAMPED_GRADIENT_CODEC Lcom/mojang/serialization/MapCodec;

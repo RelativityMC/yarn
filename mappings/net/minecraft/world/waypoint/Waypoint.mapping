@@ -24,10 +24,8 @@ CLASS net/minecraft/class_11208 net/minecraft/world/waypoint/Waypoint
 		METHOD method_71157 hasCustomStyle ()Z
 		METHOD method_71158 withTeamColorOf (Lnet/minecraft/class_1309;)Lnet/minecraft/class_11208$class_11209;
 			ARG 1 entity
-		METHOD method_71159 (Lnet/minecraft/class_268;)Ljava/lang/Integer;
+		METHOD method_71159 (Lnet/minecraft/class_268;)Ljava/util/Optional;
 			ARG 0 team
-		METHOD method_71160 (Ljava/lang/Integer;)Ljava/lang/Integer;
-			ARG 0 color
 		METHOD method_71161 getStyle ()Lnet/minecraft/class_5321;
 		METHOD method_76794 copyFrom (Lnet/minecraft/class_11208$class_11209;)V
 			ARG 1 other

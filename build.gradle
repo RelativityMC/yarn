@@ -19,7 +19,7 @@ plugins {
 	id 'net.fabricmc.filament'
 }
 
-def minecraft_version = "26.2-snapshot-4"
+def minecraft_version = "26.2-snapshot-5"
 
 filament {
 	minecraftVersion = minecraft_version

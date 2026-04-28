@@ -9,8 +9,8 @@ CLASS net/minecraft/server/Main
 		ARG 3 continueCheck
 		ARG 4 registries
 		ARG 5 recreateRegionFiles
-	METHOD method_29734 (Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_3283;Lnet/minecraft/class_6904;Lnet/minecraft/class_3807;Lnet/minecraft/class_7497;Ljoptsimple/OptionSet;Ljoptsimple/OptionSpec;Ljoptsimple/OptionSpec;Ljoptsimple/OptionSpec;Ljoptsimple/OptionSpec;Ljoptsimple/OptionSpec;Ljava/lang/Thread;)Lnet/minecraft/class_3176;
-		ARG 11 thread
+	METHOD method_29734 (Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_3283;Lnet/minecraft/class_6904;Lnet/minecraft/class_3807;Lnet/minecraft/class_7497;Lnet/minecraft/class_11807;Lnet/minecraft/class_11870;Ljoptsimple/OptionSet;Ljoptsimple/OptionSpec;Ljoptsimple/OptionSpec;Ljoptsimple/OptionSpec;Ljoptsimple/OptionSpec;Ljoptsimple/OptionSpec;Ljava/lang/Thread;)Lnet/minecraft/class_3176;
+		ARG 13 thread
 	METHOD method_43612 (Lnet/minecraft/class_7237$class_6906;Lcom/mojang/serialization/Dynamic;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_3807;Ljoptsimple/OptionSet;Ljoptsimple/OptionSpec;Ljoptsimple/OptionSpec;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
 		ARG 7 applyExecutor
 	METHOD method_43613 (Lcom/mojang/serialization/Dynamic;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_3807;Ljoptsimple/OptionSet;Ljoptsimple/OptionSpec;Ljoptsimple/OptionSpec;Lnet/minecraft/class_7237$class_7660;)Lnet/minecraft/class_7237$class_7661;

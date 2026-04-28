@@ -109,9 +109,8 @@ CLASS net/minecraft/class_1948 net/minecraft/world/SpawnHelper
 		ARG 1 world
 		ARG 2 spawnGroup
 		ARG 3 structureAccessor
-	METHOD method_61729 collectSpawnableGroups (Lnet/minecraft/class_1948$class_5262;Z)Ljava/util/List;
+	METHOD method_61729 collectSpawnableGroups (Lnet/minecraft/class_1948$class_5262;ZZ)Ljava/util/List;
 		ARG 0 info
-		ARG 1 rare
 	CLASS class_5259 Runner
 		METHOD method_1_77 run (Lnet/minecraft/class_1308;Lnet/minecraft/class_2791;)V
 			ARG 1 entity

@@ -1,14 +1,9 @@
 CLASS net/minecraft/class_465 net/minecraft/client/gui/screen/ingame/HandledScreen
 	FIELD field_2776 x I
-	FIELD field_2777 touchDragSlotStart Lnet/minecraft/class_1735;
 	FIELD field_2778 heldButtonCode I
 	FIELD field_2779 backgroundHeight I
-	FIELD field_2780 touchHoveredSlot Lnet/minecraft/class_1735;
-	FIELD field_2781 touchDropTimer J
-	FIELD field_2782 touchDragStack Lnet/minecraft/class_1799;
 	FIELD field_2783 doubleClicking Z
 	FIELD field_2787 focusedSlot Lnet/minecraft/class_1735;
-	FIELD field_2789 touchIsRightClickDrag Z
 	FIELD field_2790 heldButtonType I
 	FIELD field_2791 quickMovingStack Lnet/minecraft/class_1799;
 	FIELD field_2792 backgroundWidth I
@@ -28,7 +23,6 @@ CLASS net/minecraft/class_465 net/minecraft/client/gui/screen/ingame/HandledScre
 	FIELD field_52801 tooltipSubmenuHandlers Ljava/util/List;
 	FIELD field_54268 SLOT_HIGHLIGHT_BACK_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_54269 SLOT_HIGHLIGHT_FRONT_TEXTURE Lnet/minecraft/class_2960;
-	FIELD field_60054 letGoTouchStack Lnet/minecraft/class_465$class_11277;
 	METHOD <init> (Lnet/minecraft/class_1703;Lnet/minecraft/class_1661;Lnet/minecraft/class_2561;)V
 		ARG 1 handler
 		ARG 2 inventory
@@ -87,7 +81,6 @@ CLASS net/minecraft/class_465 net/minecraft/client/gui/screen/ingame/HandledScre
 		ARG 3 mouseY
 	METHOD method_30107 onMouseClick (Lnet/minecraft/class_11909;)V
 	METHOD method_37432 handledScreenTick ()V
-	METHOD method_44339 endTouchDrag ()V
 	METHOD method_51454 getTooltipFromItem (Lnet/minecraft/class_1799;)Ljava/util/List;
 		ARG 1 stack
 	METHOD method_54590 onSlotChangedState (IIZ)V
@@ -117,11 +110,8 @@ CLASS net/minecraft/class_465 net/minecraft/client/gui/screen/ingame/HandledScre
 		ARG 1 context
 		ARG 2 mouseX
 		ARG 3 mouseY
-	METHOD method_71084 renderLetGoTouchStack (Lnet/minecraft/class_332;)V
-		ARG 1 context
 	METHOD method_71085 renderMain (Lnet/minecraft/class_332;IIF)V
 		ARG 1 context
 		ARG 2 mouseX
 		ARG 3 mouseY
 		ARG 4 deltaTicks
-	CLASS class_11277 LetGoTouchStack

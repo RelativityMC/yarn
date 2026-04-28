@@ -13,11 +13,6 @@ CLASS net/minecraft/class_1_757 net/minecraft/block/entity/PotentSulfurBlockEnti
 		ARG 0 world
 		ARG 1 surfacePos
 		ARG 2 entityEyesPos
-	METHOD method_1_4574 tickClient (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_1_757;)V
-		ARG 0 world
-		ARG 1 pos
-		ARG 2 state
-		ARG 3 blockEntity
 	METHOD method_1_4575 getSurfacePos (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)Lnet/minecraft/class_2338;
 		ARG 0 world
 		ARG 1 pos
@@ -37,11 +32,6 @@ CLASS net/minecraft/class_1_757 net/minecraft/block/entity/PotentSulfurBlockEnti
 	METHOD method_1_4580 isSwimmingInStillWater (Lnet/minecraft/class_1937;Lnet/minecraft/class_243;)Z
 		ARG 0 world
 		ARG 1 entityWaistPos
-	METHOD method_1_4581 tickServer (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_1_757;)V
-		ARG 0 world
-		ARG 1 pos
-		ARG 2 state
-		ARG 3 blockEntity
 	METHOD method_1_4582 addNoxiousGasCloudParticles (Lnet/minecraft/class_1937;Lnet/minecraft/class_243;)V
 		ARG 0 world
 		ARG 1 pos

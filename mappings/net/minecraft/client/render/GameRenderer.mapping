@@ -109,7 +109,6 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 		ARG 1 world
 	METHOD method_71114 getDiffuseLighting ()Lnet/minecraft/class_308;
 	METHOD method_71649 getRotatingPanoramaRenderer ()Lnet/minecraft/class_766;
-	METHOD method_72910 getEntityRenderCommandQueue ()Lnet/minecraft/class_11661;
 	METHOD method_72911 getEntityRenderDispatcher ()Lnet/minecraft/class_11684;
 	METHOD method_72912 getRenderState ()Lnet/minecraft/class_1_405;
 	METHOD method_74920 updateCameraState (Lnet/minecraft/class_9779;FF)V

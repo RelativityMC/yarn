@@ -12,12 +12,6 @@ CLASS net/minecraft/class_11688 net/minecraft/client/render/command/LeashCommand
 		ARG 8 segmentIndex
 		ARG 9 backside
 		ARG 10 data
-	METHOD method_73012 render (Lnet/minecraft/class_11788;Lnet/minecraft/class_1_841;)V
-		ARG 1 queue
-	METHOD method_73013 render (Lorg/joml/Matrix4f;Lnet/minecraft/class_4597;Lnet/minecraft/class_10017$class_10018;)V
-		ARG 0 matrix
-		ARG 1 vertexConsumers
-		ARG 2 data
 	CLASS class_11669 LeashCommand
 		FIELD comp_4502 matricesEntry Lorg/joml/Matrix4f;
 		METHOD comp_4502 matricesEntry ()Lorg/joml/Matrix4f;

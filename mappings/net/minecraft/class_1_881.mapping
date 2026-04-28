@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_881
+	METHOD method_73006 render (Lnet/minecraft/class_1_841;Ljava/util/List;)V

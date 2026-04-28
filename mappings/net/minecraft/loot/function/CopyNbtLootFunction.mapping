@@ -55,12 +55,12 @@ CLASS net/minecraft/class_3837 net/minecraft/loot/function/CopyNbtLootFunction
 			ARG 2 targetPath
 			ARG 3 sourceNbts
 		CLASS 2 2
-			METHOD method_16866 (Lnet/minecraft/class_2520;Lnet/minecraft/class_2520;)V
+			METHOD method_16866 (Lnet/minecraft/class_2499;Lnet/minecraft/class_2520;)V
 				ARG 1 sourceNbt
 			METHOD method_16867 (Ljava/util/List;Lnet/minecraft/class_2520;)V
 				ARG 1 foundNbt
 		CLASS 3 3
-			METHOD method_16868 (Lnet/minecraft/class_2520;Lnet/minecraft/class_2520;)V
+			METHOD method_16868 (Lnet/minecraft/class_2487;Lnet/minecraft/class_2520;)V
 				ARG 1 sourceNbt
 			METHOD method_16869 (Ljava/util/List;Lnet/minecraft/class_2520;)V
 				ARG 1 foundNbt

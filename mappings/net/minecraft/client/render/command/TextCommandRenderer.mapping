@@ -1,14 +1,9 @@
 CLASS net/minecraft/class_11691 net/minecraft/client/render/command/TextCommandRenderer
-	METHOD method_73017 render (Lnet/minecraft/class_11788;Lnet/minecraft/class_1_841;)V
-		ARG 1 queue
-		ARG 2 context
 	CLASS class_1_842 GlyphDrawer
-		FIELD field_1_5975 vertexConsumers Lnet/minecraft/class_4597;
+		FIELD field_1_5975 vertexConsumers Lnet/minecraft/class_11691;
 		FIELD field_1_5976 textLayerType Lnet/minecraft/class_327$class_6415;
 		FIELD field_1_5977 light I
 		FIELD field_1_5978 matrix Lorg/joml/Matrix4f;
-		METHOD <init> (Lnet/minecraft/class_4597;)V
-			ARG 1 vertexConsumers
 	CLASS class_11674 TextCommand
 		FIELD comp_4525 matricesEntry Lorg/joml/Matrix4fc;
 		FIELD comp_4528 text Lnet/minecraft/class_5481;

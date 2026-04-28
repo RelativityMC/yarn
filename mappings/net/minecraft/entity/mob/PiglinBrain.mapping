@@ -181,8 +181,6 @@ CLASS net/minecraft/class_4838 net/minecraft/entity/mob/PiglinBrain
 	METHOD method_27086 isWillingToTrade (Lnet/minecraft/class_4836;Lnet/minecraft/class_1799;)Z
 		ARG 0 piglin
 		ARG 1 nearbyItems
-	METHOD method_29275 (Lnet/minecraft/class_4836;)Z
-		ARG 0 piglin
 	METHOD method_29276 isHuntingTarget (Lnet/minecraft/class_1309;Lnet/minecraft/class_1309;)Z
 		ARG 0 piglin
 		ARG 1 target

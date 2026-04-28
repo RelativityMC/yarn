@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_4643 net/minecraft/world/gen/feature/TreeFeatureConfig
 	FIELD field_1_1675 CAN_REPLACE_BELOW_TRUNK Lnet/minecraft/class_6646;
-	FIELD field_1_1676 DEFAULT_BELOW_TRUNK_PROVIDER Lnet/minecraft/class_1_459;
 	FIELD field_21288 trunkProvider Lnet/minecraft/class_4651;
 	FIELD field_21290 decorators Ljava/util/List;
 	FIELD field_24135 foliagePlacer Lnet/minecraft/class_4647;
@@ -57,7 +56,7 @@ CLASS net/minecraft/class_4643 net/minecraft/world/gen/feature/TreeFeatureConfig
 			ARG 4 foliagePlacer
 			ARG 5 rootPlacer
 			ARG 6 minimumSize
-		METHOD <init> (Lnet/minecraft/class_4651;Lnet/minecraft/class_5141;Lnet/minecraft/class_4651;Lnet/minecraft/class_4647;Lnet/minecraft/class_5201;)V
+		METHOD <init> (Lnet/minecraft/class_4651;Lnet/minecraft/class_5141;Lnet/minecraft/class_4651;Lnet/minecraft/class_4647;Lnet/minecraft/class_5201;Lnet/minecraft/class_4651;)V
 			ARG 1 trunkProvider
 			ARG 2 trunkPlacer
 			ARG 3 foliageProvider

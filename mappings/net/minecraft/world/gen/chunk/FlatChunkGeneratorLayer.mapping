@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_3229 net/minecraft/world/gen/chunk/FlatChunkGeneratorLayer
 	FIELD field_14028 thickness I
 	FIELD field_24974 CODEC Lcom/mojang/serialization/Codec;
-	FIELD field_29566 block Lnet/minecraft/class_2248;
+	FIELD field_29566 block Lnet/minecraft/class_6880;
 	METHOD <init> (ILnet/minecraft/class_2248;)V
 		ARG 1 thickness
 		ARG 2 block
@@ -9,7 +9,5 @@ CLASS net/minecraft/class_3229 net/minecraft/world/gen/chunk/FlatChunkGeneratorL
 	METHOD method_14289 getThickness ()I
 	METHOD method_28909 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
-	METHOD method_28910 (Lnet/minecraft/class_3229;)Lnet/minecraft/class_2248;
-		ARG 0 layer
 	METHOD method_71778 withMaxThickness (I)Lnet/minecraft/class_3229;
 		ARG 1 maxThickness

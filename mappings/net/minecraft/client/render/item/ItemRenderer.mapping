@@ -12,20 +12,10 @@ CLASS net/minecraft/class_918 net/minecraft/client/render/item/ItemRenderer
 	METHOD method_1_3052 getTint ([ILnet/minecraft/class_777$class_1_320;)I
 		ARG 0 tints
 		ARG 1 spriteInfo
-	METHOD method_1_3053 hasBlend (Lnet/minecraft/class_918$class_11668;)Z
-		ARG 0 itemCommand
-	METHOD method_1_3054 renderOpaque (Lnet/minecraft/class_11788;Lnet/minecraft/class_1_841;)V
-		ARG 1 queue
-	METHOD method_1_3055 renderBlended (Lnet/minecraft/class_11788;Lnet/minecraft/class_1_841;)V
-		ARG 1 queue
-	METHOD method_62476 renderItem (Lnet/minecraft/class_4597;Lnet/minecraft/class_4618;Lnet/minecraft/class_918$class_11668;)V
-		ARG 2 outlineVertexConsumers
-		ARG 3 queue
 	METHOD method_65569 getTint ([II)I
 		ARG 0 tints
 		ARG 1 index
-	METHOD method_71138 getSpecialItemGlintConsumer (Lnet/minecraft/class_4597;Lnet/minecraft/class_1921;Lnet/minecraft/class_4587$class_4665;)Lnet/minecraft/class_4588;
-		ARG 0 consumers
+	METHOD method_71138 getSpecialItemGlintConsumer (Lnet/minecraft/class_1921;Lnet/minecraft/class_4587$class_4665;)Lnet/minecraft/class_4588;
 		ARG 1 layer
 		ARG 2 matrix
 	METHOD method_71139 useTransparentGlint (Lnet/minecraft/class_1921;)Z

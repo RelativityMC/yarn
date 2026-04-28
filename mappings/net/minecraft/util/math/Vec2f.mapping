@@ -14,8 +14,6 @@ CLASS net/minecraft/class_241 net/minecraft/util/math/Vec2f
 	METHOD <init> (FF)V
 		ARG 1 x
 		ARG 2 y
-	METHOD method_1016 equals (Lnet/minecraft/class_241;)Z
-		ARG 1 other
 	METHOD method_35581 normalize ()Lnet/minecraft/class_241;
 	METHOD method_35582 multiply (F)Lnet/minecraft/class_241;
 		ARG 1 value

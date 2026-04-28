@@ -18,7 +18,6 @@ CLASS net/minecraft/class_7689 net/minecraft/entity/passive/CamelEntity
 	METHOD method_45346 getPassengerAttachmentY (ZFLnet/minecraft/class_4048;F)D
 		ARG 1 primaryPassenger
 		ARG 2 tickProgress
-		ARG 3 dimensions
 		ARG 4 scaleFactor
 	METHOD method_45350 isSitting ()Z
 	METHOD method_45351 isChangingPose ()Z

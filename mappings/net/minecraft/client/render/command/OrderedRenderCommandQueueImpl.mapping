@@ -1,9 +1,3 @@
 CLASS net/minecraft/class_11661 net/minecraft/client/render/command/OrderedRenderCommandQueueImpl
 	FIELD field_62244 batchingQueues Lit/unimi/dsi/fastutil/ints/Int2ObjectAVLTreeMap;
-	METHOD method_72953 clear ()V
-	METHOD method_72954 onNextFrame ()V
-	METHOD method_73530 (Lnet/minecraft/class_11788;)Z
-		ARG 0 queue
 	METHOD method_73532 getBatchingQueues ()Lit/unimi/dsi/fastutil/ints/Int2ObjectAVLTreeMap;
-	METHOD method_73533 (I)Lnet/minecraft/class_11788;
-		ARG 1 orderx

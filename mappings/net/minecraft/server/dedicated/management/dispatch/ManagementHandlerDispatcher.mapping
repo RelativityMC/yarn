@@ -29,6 +29,5 @@ CLASS net/minecraft/class_11827 net/minecraft/server/dedicated/management/dispat
 	METHOD method_73743 getOperatorHandler ()Lnet/minecraft/class_11830;
 	METHOD method_73744 getPropertiesHandler ()Lnet/minecraft/class_11832;
 	METHOD method_73745 getServerHandler ()Lnet/minecraft/class_11833;
-	METHOD method_74480 create (Lnet/minecraft/class_3176;)Lnet/minecraft/class_11827;
-		ARG 0 server
+	METHOD method_74480 create (Lnet/minecraft/class_11870;)Lnet/minecraft/class_11827;
 	METHOD method_74481 getListener ()Lnet/minecraft/class_11870;

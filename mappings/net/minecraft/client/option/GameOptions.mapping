@@ -73,7 +73,6 @@ CLASS net/minecraft/class_315 net/minecraft/client/option/GameOptions
 		COMMENT org.lwjgl.glfw.GLFW#GLFW_KEY_1 the 1 key} to {@linkplain
 		COMMENT org.lwjgl.glfw.GLFW#GLFW_KEY_9 the 9 key}) by default.
 	FIELD field_1853 COLON_SPLITTER Lcom/google/common/base/Splitter;
-	FIELD field_1854 touchscreen Lnet/minecraft/class_7172;
 	FIELD field_1856 mipmapLevels Lnet/minecraft/class_7172;
 	FIELD field_1857 fullscreen Lnet/minecraft/class_7172;
 	FIELD field_1859 STRING_LIST_TYPE Lcom/google/gson/reflect/TypeToken;
@@ -429,7 +428,6 @@ CLASS net/minecraft/class_315 net/minecraft/client/option/GameOptions
 	METHOD method_42443 getShowSubtitles ()Lnet/minecraft/class_7172;
 	METHOD method_42444 getDirectionalAudio ()Lnet/minecraft/class_7172;
 	METHOD method_42445 getBackgroundForChatOnly ()Lnet/minecraft/class_7172;
-	METHOD method_42446 getTouchscreen ()Lnet/minecraft/class_7172;
 	METHOD method_42447 getFullscreen ()Lnet/minecraft/class_7172;
 	METHOD method_42448 getBobView ()Lnet/minecraft/class_7172;
 	METHOD method_42449 getSneakToggled ()Lnet/minecraft/class_7172;

@@ -1,30 +1,21 @@
 CLASS net/minecraft/class_1_844 net/minecraft/client/render/gizmo/GizmoCommandRenderer
 	FIELD field_1_5979 matrices Lnet/minecraft/class_4587;
-	METHOD method_1_5144 renderLines (Ljava/util/List;Lnet/minecraft/class_12075;Lorg/joml/Matrix4fc;ZLnet/minecraft/class_4597;)V
+	METHOD method_1_5144 renderLines (Ljava/util/List;Lnet/minecraft/class_12075;Lorg/joml/Matrix4fc;Z)V
 		ARG 1 lines
 		ARG 2 cameraRenderState
 		ARG 3 modelViewMatrix
 		ARG 4 opaque
-		ARG 5 vertexConsumers
-	METHOD method_1_5145 renderPoints (Ljava/util/List;Lnet/minecraft/class_12075;Lnet/minecraft/class_4597;)V
+	METHOD method_1_5145 renderPoints (Ljava/util/List;Lnet/minecraft/class_12075;)V
 		ARG 1 points
 		ARG 2 cameraRenderState
-		ARG 3 vertexConsumers
-	METHOD method_1_5146 renderQuads (Ljava/util/List;Lnet/minecraft/class_12075;Lnet/minecraft/class_4597;)V
+	METHOD method_1_5146 renderQuads (Ljava/util/List;Lnet/minecraft/class_12075;)V
 		ARG 1 quads
 		ARG 2 cameraRenderState
-		ARG 3 vertexConsumers
-	METHOD method_1_5147 renderTexts (Ljava/util/List;Lnet/minecraft/class_12075;Lnet/minecraft/class_327;Lnet/minecraft/class_4597;)V
+	METHOD method_1_5147 renderTexts (Ljava/util/List;Lnet/minecraft/class_12075;Lnet/minecraft/class_327;)V
 		ARG 1 texts
 		ARG 2 cameraRenderState
 		ARG 3 textRenderer
-		ARG 4 vertexConsumers
-	METHOD method_1_5148 renderPolygons (Ljava/util/List;Lnet/minecraft/class_12075;Lnet/minecraft/class_4597;)V
+	METHOD method_1_5148 renderPolygons (Ljava/util/List;Lnet/minecraft/class_12075;)V
 		ARG 1 polygons
 		ARG 2 cameraRenderState
-		ARG 3 vertexConsumers
-	METHOD method_1_5149 renderBlended (Lnet/minecraft/class_11788;Lnet/minecraft/class_1_841;Z)V
-		ARG 1 queue
-		ARG 2 context
-		ARG 3 onTop
 	CLASS class_1_845 Command

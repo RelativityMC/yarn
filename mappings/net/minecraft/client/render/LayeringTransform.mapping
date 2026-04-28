@@ -5,7 +5,3 @@ CLASS net/minecraft/class_12245 net/minecraft/client/render/LayeringTransform
 		ARG 1 name
 		ARG 2 transform
 	METHOD method_75918 getTransform ()Ljava/util/function/Consumer;
-	METHOD method_75919 (Lorg/joml/Matrix4fStack;)V
-		ARG 0 matrices
-	METHOD method_75920 (Lorg/joml/Matrix4fStack;)V
-		ARG 0 matrices

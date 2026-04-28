@@ -49,8 +49,6 @@ CLASS net/minecraft/class_1_758 net/minecraft/block/OxidationMap
 		ARG 1 function
 	METHOD method_1_5071 addPrefixes (Lnet/minecraft/class_1_758;)Lnet/minecraft/class_1_758;
 		ARG 0 suffixes
-	METHOD method_1_5072 forAdjacent (Ljava/util/function/BiConsumer;)V
-		ARG 1 callback
 	METHOD method_1_5073 waxInvariant (Lnet/minecraft/class_1_758$class_1_821;)Lnet/minecraft/class_1_758;
 		ARG 0 sequence
 	METHOD method_1_5074 forEachZipped (Lnet/minecraft/class_1_758$class_1_821;Lnet/minecraft/class_1_758$class_1_821;Ljava/util/function/BiConsumer;)V

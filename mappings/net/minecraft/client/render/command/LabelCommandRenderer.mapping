@@ -2,31 +2,14 @@ CLASS net/minecraft/class_11689 net/minecraft/client/render/command/LabelCommand
 	METHOD method_1_5151 prepare (Lnet/minecraft/class_327;Lnet/minecraft/class_11689$class_11672;)Lnet/minecraft/class_327$class_11465;
 		ARG 0 textRenderer
 		ARG 1 command
-	METHOD method_73014 render (Lnet/minecraft/class_11788;Lnet/minecraft/class_1_841;)V
-		ARG 1 queue
-		ARG 2 context
 	CLASS class_1_846 GlyphDrawer
-		FIELD field_1_5983 vertexConsumers Lnet/minecraft/class_4597;
+		FIELD field_1_5983 vertexConsumers Lnet/minecraft/class_11689;
 		FIELD field_1_5984 textLayerType Lnet/minecraft/class_327$class_6415;
 		FIELD field_1_5985 light I
 		FIELD field_1_5986 matrix Lorg/joml/Matrix4f;
-		METHOD <init> (Lnet/minecraft/class_4597;)V
-			ARG 1 vertexConsumers
 		METHOD method_1_5152 configure (Lnet/minecraft/class_11689$class_11672;Lnet/minecraft/class_327$class_6415;)V
 			ARG 1 command
 			ARG 2 textLayerType
 	CLASS class_11672 Command
 		FIELD comp_4514 matricesEntry Lorg/joml/Matrix4fc;
-		METHOD comp_4514 matrix ()Lorg/joml/Matrix4fc;
-	CLASS class_12050 Commands
-		FIELD field_62987 seethroughLabels Ljava/util/List;
-		FIELD field_62988 normalLabels Ljava/util/List;
-		METHOD method_74828 clear ()V
-		METHOD method_74829 add (Lnet/minecraft/class_4587;Lnet/minecraft/class_243;ILnet/minecraft/class_2561;ZILnet/minecraft/class_12075;)V
-			ARG 1 matrices
-			ARG 2 pos
-			ARG 3 y
-			ARG 4 label
-			ARG 5 notSneaking
-			ARG 6 light
-			ARG 7 cameraState
+		METHOD comp_4514 matricesEntry ()Lorg/joml/Matrix4fc;

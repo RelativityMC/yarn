@@ -1,39 +1,10 @@
 CLASS net/minecraft/class_11684 net/minecraft/client/render/command/RenderDispatcher
 	FIELD field_1_2397 gameRenderState Lnet/minecraft/class_1_405;
 	FIELD field_1_2553 bakedModelManager Lnet/minecraft/class_1092;
-	FIELD field_1_5987 gizmoCommandRenderer Lnet/minecraft/class_1_844;
-	FIELD field_1_5988 movingBlockCommandRenderer Lnet/minecraft/class_1_848;
-	FIELD field_61828 queue Lnet/minecraft/class_11661;
-	FIELD field_61830 vertexConsumers Lnet/minecraft/class_4597$class_4598;
 	FIELD field_61831 atlasManager Lnet/minecraft/class_11697;
-	FIELD field_61832 outlineVertexConsumers Lnet/minecraft/class_4618;
 	FIELD field_61833 textRenderer Lnet/minecraft/class_327;
-	FIELD field_61834 shadowPiecesCommandRenderer Lnet/minecraft/class_11690;
-	FIELD field_61835 fireCommandRenderer Lnet/minecraft/class_11685;
-	FIELD field_61837 labelCommandRenderer Lnet/minecraft/class_11689;
-	FIELD field_61838 textCommandRenderer Lnet/minecraft/class_11691;
-	FIELD field_61840 leashCommandRenderer Lnet/minecraft/class_11688;
-	FIELD field_61841 itemCommandRenderer Lnet/minecraft/class_918;
-	FIELD field_61842 customCommandRenderer Lnet/minecraft/class_11682;
-	FIELD field_61843 fallingBlockCommandRenderer Lnet/minecraft/class_11681;
-	FIELD field_62259 modelCommandRenderer Lnet/minecraft/class_11683;
-	FIELD field_62260 modelPartCommandRenderer Lnet/minecraft/class_9974;
-	FIELD field_62759 particleCommandRenderer Lnet/minecraft/class_1_849;
-	METHOD <init> (Lnet/minecraft/class_11661;Lnet/minecraft/class_1092;Lnet/minecraft/class_4597$class_4598;Lnet/minecraft/class_11697;Lnet/minecraft/class_4618;Lnet/minecraft/class_327;Lnet/minecraft/class_1_405;)V
-		ARG 1 queue
+	METHOD <init> (Lnet/minecraft/class_4599;Lnet/minecraft/class_1092;Lnet/minecraft/class_11697;Lnet/minecraft/class_327;Lnet/minecraft/class_1_405;)V
 		ARG 2 bakedModelManager
-		ARG 3 vertexConsumers
-		ARG 4 atlasManager
-		ARG 5 outlineVertexConsumers
-		ARG 6 textRenderer
-		ARG 7 gameRenderState
-	METHOD method_1_1220 clearQueue ()V
-	METHOD method_1_1221 render ()V
-	METHOD method_1_1222 renderOpaque ()V
-	METHOD method_1_1223 renderTranslucent ()V
-	METHOD method_1_1631 renderTranslucentStage2 ()V
-	METHOD method_1_5154 createContext ()Lnet/minecraft/class_1_841;
-	METHOD method_1_5155 hasAnyOnTopElements ()Z
-	METHOD method_1_5156 renderTranslucentStage3 ()V
-	METHOD method_73003 getQueue ()Lnet/minecraft/class_11661;
-	METHOD method_74817 endLayeredCustoms ()V
+		ARG 3 atlasManager
+		ARG 4 textRenderer
+		ARG 5 gameRenderState

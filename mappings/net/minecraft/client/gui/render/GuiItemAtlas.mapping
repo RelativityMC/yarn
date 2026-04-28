@@ -8,15 +8,14 @@ CLASS net/minecraft/class_1_201 net/minecraft/client/gui/render/GuiItemAtlas
 	FIELD field_1_1459 matrixStack Lnet/minecraft/class_4587;
 	FIELD field_1_1460 projection Lnet/minecraft/class_11278;
 	FIELD field_1_1461 itemSpriteSize I
-	FIELD field_1_1462 queue Lnet/minecraft/class_11659;
+	FIELD field_1_1462 queue Lnet/minecraft/class_11661;
 	FIELD field_1_1463 colorTexture Lcom/mojang/blaze3d/textures/GpuTexture;
 	FIELD field_1_1464 atlasSize I
 	FIELD field_1_1465 colorTextureView Lcom/mojang/blaze3d/textures/GpuTextureView;
-	METHOD <init> (Lnet/minecraft/class_11659;Lnet/minecraft/class_11684;II)V
-		ARG 1 queue
-		ARG 2 dispatcher
-		ARG 3 atlasSize
-		ARG 4 itemSpriteSize
+	METHOD <init> (Lnet/minecraft/class_11684;II)V
+		ARG 1 dispatcher
+		ARG 2 atlasSize
+		ARG 3 itemSpriteSize
 	METHOD method_1_1734 getRequiredAtlasSize (II)I
 		ARG 0 itemSpriteSize
 		ARG 1 numItemModels

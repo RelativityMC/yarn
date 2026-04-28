@@ -7,5 +7,3 @@ CLASS net/minecraft/class_8646 net/minecraft/scoreboard/ScoreboardDisplaySlot
 		ARG 3 id
 		ARG 4 name
 	METHOD method_52621 getId ()I
-	METHOD method_52622 fromFormatting (Lnet/minecraft/class_124;)Lnet/minecraft/class_8646;
-		ARG 0 formatting

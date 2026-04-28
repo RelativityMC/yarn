@@ -35,8 +35,6 @@ CLASS net/minecraft/class_11795 net/minecraft/server/dedicated/management/networ
 		ARG 1 method
 		ARG 2 params
 	METHOD method_73610 sendRequest (Lnet/minecraft/class_6880$class_6883;Ljava/lang/Object;Z)Ljava/util/concurrent/CompletableFuture;
-		ARG 1 method
-		ARG 2 params
 		ARG 3 expectResponse
 	METHOD method_73611 handleMessage (Lcom/google/gson/JsonObject;)Lcom/google/gson/JsonObject;
 		ARG 1 request

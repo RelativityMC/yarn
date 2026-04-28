@@ -1,35 +1,4 @@
 CLASS net/minecraft/class_1_848 net/minecraft/client/render/block/MovingBlockCommandRenderer
-	METHOD method_1_5159 (Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;FFFLnet/minecraft/class_777;Lnet/minecraft/class_1_382;)V
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z
-		ARG 5 quad
-		ARG 6 shading
-	METHOD method_1_5160 (Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;FFFLnet/minecraft/class_777;Lnet/minecraft/class_1_382;)V
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z
-		ARG 5 quad
-		ARG 6 shading
-	METHOD method_1_5161 addQuad (Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;FFFLnet/minecraft/class_777;Lnet/minecraft/class_1_382;Lnet/minecraft/class_11515;)V
-		ARG 0 matrices
-		ARG 1 vertexConsumers
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z
-		ARG 5 quad
-		ARG 6 shading
-		ARG 7 blockRenderLayer
-	METHOD method_1_5162 render (Lnet/minecraft/class_11788;Lnet/minecraft/class_1_841;Z)V
-		ARG 1 queue
-		ARG 2 context
-		ARG 3 blended
-	METHOD method_1_5163 renderOpaque (Lnet/minecraft/class_11788;Lnet/minecraft/class_1_841;)V
-		ARG 1 queue
-		ARG 2 context
-	METHOD method_1_5164 renderBlended (Lnet/minecraft/class_11788;Lnet/minecraft/class_1_841;)V
-		ARG 1 queue
-		ARG 2 context
 	CLASS class_11790 Command
 		FIELD comp_4652 matricesEntry Lorg/joml/Matrix4fc;
 		METHOD comp_4652 matricesEntry ()Lorg/joml/Matrix4fc;

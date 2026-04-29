@@ -4,6 +4,8 @@ CLASS net/minecraft/class_2357 net/minecraft/block/dispenser/DispenserBehavior
 	METHOD method_1_192 dispense (Lnet/minecraft/class_2342;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1799;
 		ARG 1 pointer
 		ARG 2 stack
+	METHOD method_1_4440 (Lnet/minecraft/class_2970;Lnet/minecraft/class_1792;)V
+		ARG 1 shulkerBox
 	METHOD method_16812 doDispense (Lnet/minecraft/class_2342;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1799;
 		ARG 0 pointer
 		ARG 1 stack
@@ -22,6 +24,8 @@ CLASS net/minecraft/class_2357 net/minecraft/block/dispenser/DispenserBehavior
 	CLASS 7 7
 	CLASS 8 8
 	CLASS 9 9
+		METHOD method_66900 (Lnet/minecraft/class_4970$class_4971;)Z
+			ARG 0 state
 		METHOD method_66901 pickupFluid (Lnet/minecraft/class_2342;Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1799;
 			ARG 1 pointer
 			ARG 2 stack

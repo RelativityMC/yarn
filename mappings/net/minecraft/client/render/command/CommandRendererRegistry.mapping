@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_1_866 net/minecraft/client/render/command/CommandRendererRegistry
+	FIELD field_1_6159 renderers [Lnet/minecraft/class_1_863;
+	METHOD method_1_5270 get (Lnet/minecraft/class_1_867;)Lnet/minecraft/class_1_863;
+		ARG 1 type
+	METHOD method_1_5271 getOrThrow (Lnet/minecraft/class_1_867;)Lnet/minecraft/class_1_863;
+		ARG 1 type
+	METHOD method_1_5272 register (Lnet/minecraft/class_1_867;Lnet/minecraft/class_1_863;)V
+		ARG 1 type
+		ARG 2 renderer
+	METHOD method_1_5273 getAll ()Ljava/lang/Iterable;

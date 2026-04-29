@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_888 net/minecraft/command/NonpolarFilterState
+	FIELD field_1_6240 added Z
+	METHOD method_1_5363 shouldSuggest ()Z
+	METHOD method_1_5364 setAdded ()V

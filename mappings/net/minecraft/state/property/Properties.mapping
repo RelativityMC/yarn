@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_2741 net/minecraft/state/property/Properties
 	COMMENT Contains all block and fluid state properties that Minecraft uses.
+	FIELD field_1_6244 POTENT_SULFUR_STATE Lnet/minecraft/class_2754;
 	FIELD field_12480 FALLING Lnet/minecraft/class_2746;
 		COMMENT A property that specifies if a fluid is falling.
 	FIELD field_12481 HORIZONTAL_FACING Lnet/minecraft/class_2754;

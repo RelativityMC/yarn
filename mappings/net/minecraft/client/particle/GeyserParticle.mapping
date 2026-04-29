@@ -1,0 +1,26 @@
+CLASS net/minecraft/class_1_861 net/minecraft/client/particle/GeyserParticle
+	FIELD field_1_6138 BASE_BURST_IMPULSE F
+	FIELD field_1_6139 BASE_PARTICLE_COUNT I
+	FIELD field_1_6140 BASE_PARTICLE_PERIOD I
+	FIELD field_1_6141 POOF_BASE_IMPULSE F
+	FIELD field_1_6142 POOF_PARTICLE_COUNT I
+	FIELD field_1_6143 POOF_PARTICLE_PERIOD I
+	FIELD field_1_6144 baseEffect Lnet/minecraft/class_1_864;
+	FIELD field_1_6145 plumeEffect Lnet/minecraft/class_1_857;
+	FIELD field_1_6146 poofEffect Lnet/minecraft/class_1_864;
+	FIELD field_1_6147 waterBlocks I
+	FIELD field_1_6148 childVelocityX D
+	FIELD field_1_6149 childVelocityY D
+	FIELD field_1_6150 childVelocityZ D
+	METHOD <init> (Lnet/minecraft/class_638;DDDDDDLnet/minecraft/class_1_857;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 velocityX
+		ARG 10 velocityY
+		ARG 12 velocityZ
+		ARG 14 parameters
+	CLASS class_1_862 Factory
+		METHOD <init> (Lnet/minecraft/class_4002;)V
+			ARG 1 spriteProvider

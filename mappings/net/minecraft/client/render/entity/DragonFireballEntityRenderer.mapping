@@ -1,14 +1,23 @@
 CLASS net/minecraft/class_891 net/minecraft/client/render/entity/DragonFireballEntityRenderer
 	FIELD field_4661 TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_21735 LAYER Lnet/minecraft/class_1921;
+	METHOD method_1_5289 produceQuad (Lnet/minecraft/class_10017;Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;I)V
+		ARG 0 renderState
+		ARG 1 matricesEntry
+		ARG 2 vertexConsumer
+		ARG 3 outlineColor
+	METHOD method_1_5290 (Lnet/minecraft/class_10017;Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;)V
+		ARG 1 matricesEntry
+		ARG 2 vertexConsumer
 	METHOD method_23837 produceVertex (Lnet/minecraft/class_4588;Lnet/minecraft/class_4587$class_4665;IFIIII)V
 		ARG 0 vertexConsumer
-		ARG 1 matrix
+		ARG 1 matricesEntry
 		ARG 2 light
 		ARG 3 x
 		ARG 4 z
 		ARG 5 textureU
 		ARG 6 textureV
+		ARG 7 outlineColor
 	METHOD method_72972 (Lnet/minecraft/class_10017;Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;)V
 		ARG 1 matricesEntry
 		ARG 2 vertexConsumer

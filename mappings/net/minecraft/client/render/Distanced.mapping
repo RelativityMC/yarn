@@ -1,4 +1,0 @@
-CLASS net/minecraft/class_1_847 net/minecraft/client/render/Distanced
-	METHOD method_1_5157 getDistance (Lorg/joml/Matrix4fc;)F
-		ARG 0 positionMatrix
-	METHOD method_1_5158 getDistance ()F

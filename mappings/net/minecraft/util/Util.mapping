@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_156 net/minecraft/util/Util
 	COMMENT A class holding various utility methods.
+	FIELD field_1_5947 ESCAPER Lcom/google/common/escape/Escaper;
 	FIELD field_1128 nanoTimeSupplier Lnet/minecraft/class_7576$class_7577;
 	FIELD field_1129 LOGGER Lorg/slf4j/Logger;
 	FIELD field_18035 MAIN_WORKER_EXECUTOR Lnet/minecraft/class_10207;
@@ -35,6 +36,8 @@ CLASS net/minecraft/class_156 net/minecraft/util/Util
 	METHOD method_1_4710 join (Ljava/util/List;Ljava/util/List;)Ljava/util/List;
 		ARG 0 first
 		ARG 1 second
+	METHOD method_1_5113 (Lcom/google/common/escape/Escapers$Builder;)V
+		ARG 0 builder
 	METHOD method_645 previous (Ljava/lang/Iterable;Ljava/lang/Object;)Ljava/lang/Object;
 		COMMENT {@return the item preceding {@code object} in {@code iterable}}
 		COMMENT

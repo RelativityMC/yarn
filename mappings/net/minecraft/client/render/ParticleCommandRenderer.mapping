@@ -1,6 +1,0 @@
-CLASS net/minecraft/class_1_849 net/minecraft/client/render/ParticleCommandRenderer
-	METHOD method_1_5165 doRender (Lnet/minecraft/class_1_807;Ljava/util/Map;Lcom/mojang/blaze3d/systems/RenderPass;Lnet/minecraft/class_1060;)V
-		ARG 0 multiDrawBuffer
-		ARG 1 geometryBuffers
-		ARG 2 renderPass
-		ARG 3 textureManager

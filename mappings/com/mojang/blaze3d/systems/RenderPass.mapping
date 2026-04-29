@@ -5,6 +5,7 @@ CLASS com/mojang/blaze3d/systems/RenderPass
 		ARG 1 backend
 		ARG 2 device
 		ARG 3 onFinish
+		ARG 4 renderArea
 	METHOD bindTexture (Ljava/lang/String;Lcom/mojang/blaze3d/textures/GpuTextureView;Lnet/minecraft/class_12137;)V
 		ARG 1 name
 		ARG 2 textureView
@@ -47,6 +48,9 @@ CLASS com/mojang/blaze3d/systems/RenderPass
 	METHOD writeTimestamp (Lnet/minecraft/class_1_685;I)V
 		ARG 1 timestampQueryPool
 		ARG 2 index
+	CLASS class_1_837 RenderArea
+		METHOD method_1_5116 coversEntirely (Lcom/mojang/blaze3d/textures/GpuTextureView;)Z
+			ARG 1 textureView
 	CLASS class_10884 RenderObject
 		METHOD <init> (ILcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5595;III)V
 			ARG 1 slot

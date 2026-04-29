@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_1646 net/minecraft/entity/passive/VillagerEntity
 	FIELD field_1_625 VILLAGER_DATA_FINALIZED Lnet/minecraft/class_2940;
 	FIELD field_1_1197 PROFILE Lnet/minecraft/class_4095$class_5303;
+	FIELD field_1_1851 BABY_DIMENSIONS Lnet/minecraft/class_4048;
 	FIELD field_7445 VILLAGER_DATA Lnet/minecraft/class_2940;
 	FIELD field_18526 ITEM_FOOD_VALUES Ljava/util/Map;
 	FIELD field_18528 levelUpTimer I
@@ -26,8 +27,13 @@ CLASS net/minecraft/class_1646 net/minecraft/entity/passive/VillagerEntity
 		ARG 1 entityType
 		ARG 2 world
 		ARG 3 type
+	METHOD method_1_1020 (Lnet/minecraft/class_3218;Lnet/minecraft/class_6880$class_6883;)Ljava/lang/Integer;
+		ARG 1 day
 	METHOD method_1_1401 (Lnet/minecraft/class_1646;)Ljava/util/List;
 		ARG 0 villager
+	METHOD method_1_5209 isDataFinalized ()Z
+	METHOD method_1_5210 setDataFinalized (Z)V
+		ARG 1 dataFinalized
 	METHOD method_7234 canShareFoodForBreeding ()Z
 	METHOD method_7239 needsFoodForBreeding ()Z
 	METHOD method_16917 setOffers (Lnet/minecraft/class_1916;)V
@@ -97,6 +103,7 @@ CLASS net/minecraft/class_1646 net/minecraft/entity/passive/VillagerEntity
 		ARG 1 worldTime
 	METHOD method_20821 clearDailyRestockCount ()V
 	METHOD method_20822 shouldRestock (Lnet/minecraft/class_3218;)Z
+		ARG 1 world
 	METHOD method_20823 needsRestock ()Z
 		COMMENT Returns whether this villager needs restock.
 		COMMENT

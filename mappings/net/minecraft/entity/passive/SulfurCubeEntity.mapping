@@ -3,10 +3,18 @@ CLASS net/minecraft/class_1_748 net/minecraft/entity/passive/SulfurCubeEntity
 	FIELD field_1_3780 FROM_BUCKET Lnet/minecraft/class_2940;
 	FIELD field_1_3789 buoyant Z
 	FIELD field_1_3790 pickupTimer I
+	FIELD field_1_6154 FUSE Lnet/minecraft/class_2940;
+	FIELD field_1_6155 fuse I
+	FIELD field_1_6156 explosionFuse Ljava/util/OptionalInt;
 	METHOD method_1_4504 applyImpulse (FLnet/minecraft/class_243;)V
 		ARG 1 damage
 		ARG 2 vec
 	METHOD method_1_4505 canSpawn (Lnet/minecraft/class_1299;Lnet/minecraft/class_1936;Lnet/minecraft/class_3730;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)Z
+		ARG 0 type
+		ARG 1 world
+		ARG 2 spawnReason
+		ARG 3 pos
+		ARG 4 random
 	METHOD method_1_4506 addAttributes ()Lnet/minecraft/class_5132$class_5133;
 	METHOD method_1_4507 tryEquip (Lnet/minecraft/class_1799;)Z
 		ARG 1 stack
@@ -34,11 +42,21 @@ CLASS net/minecraft/class_1_748 net/minecraft/entity/passive/SulfurCubeEntity
 	METHOD method_1_4521 getApplicableArchetypes (Lnet/minecraft/class_1799;)Ljava/util/List;
 		ARG 1 containedBlock
 	METHOD method_1_4522 applyImpulse (Lnet/minecraft/class_1309;F)V
+		ARG 1 attacker
 		ARG 2 damage
 	METHOD method_1_4523 onPlayerCollisionWithContainedBlock (Lnet/minecraft/class_1657;)V
 		ARG 1 player
 	METHOD method_1_4524 setContentComponent (Lnet/minecraft/class_1_745;)V
 		ARG 1 content
+	METHOD method_1_5247 isIgnitable ()Z
+	METHOD method_1_5248 getFuse ()I
+	METHOD method_1_5249 isIgnited ()Z
+	METHOD method_1_5250 ignite (Z)Z
+		ARG 1 chained
+	METHOD method_1_5251 tickIgnitionByBlock ()V
+	METHOD method_1_5252 setFuse (I)V
+		ARG 1 fuse
+	METHOD method_1_5253 tickFuseCountdown ()V
 	CLASS class_1_749 SulfurCubeLookControl
 	CLASS class_1_750 SulfurCubeMoveControl
 		METHOD <init> (Lnet/minecraft/class_1_748;)V

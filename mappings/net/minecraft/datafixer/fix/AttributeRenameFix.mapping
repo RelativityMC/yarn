@@ -1,11 +1,30 @@
 CLASS net/minecraft/class_9853 net/minecraft/datafixer/fix/AttributeRenameFix
+	FIELD field_1_6151 old Z
 	FIELD field_52399 name Ljava/lang/String;
 	FIELD field_52400 renamer Ljava/util/function/UnaryOperator;
 	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Ljava/lang/String;Ljava/util/function/UnaryOperator;)V
 		ARG 1 outputSchema
 		ARG 2 name
 		ARG 3 renamer
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Ljava/lang/String;Ljava/util/function/UnaryOperator;Z)V
+		ARG 1 outputSchema
+		ARG 2 name
+		ARG 3 renamer
+		ARG 4 old
+	METHOD method_1_5236 applyToComponentsOld (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		COMMENT Prior to 24w10a, the {@code minecraft:attribute_modifiers} component had
+		COMMENT an extra nested {@code modifiers} tag.
+	METHOD method_1_5237 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 modifiersR
+	METHOD method_1_5238 (Ljava/util/stream/Stream;)Ljava/util/stream/Stream;
+		ARG 1 modifiers
 	METHOD method_61360 applyToComponents (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
 	METHOD method_61361 applyToIdField (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 tag
 	METHOD method_61363 applyToEntity (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
 	METHOD method_61364 applyToTypeField (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 tag
+	METHOD method_61365 (Ljava/util/stream/Stream;)Ljava/util/stream/Stream;
+		ARG 1 modifiers
+	METHOD method_61370 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 modifiersR

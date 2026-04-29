@@ -1,0 +1,28 @@
+CLASS net/minecraft/class_1_886 net/minecraft/client/render/command/TypedRenderCommandContainer
+	FIELD field_1_6236 entriesByType [Lnet/minecraft/class_1_886$class_1_887;
+	METHOD method_1_5352 clear ()V
+	METHOD method_1_5353 permute (Ljava/util/Collection;)Ljava/util/Collection;
+		ARG 0 commands
+	METHOD method_1_5354 permute ([Ljava/lang/Object;)[Ljava/lang/Object;
+		ARG 0 commands
+	METHOD method_1_5355 forEachCommandIn (Lnet/minecraft/class_1_877$class_1_878;Lnet/minecraft/class_1_886$class_1_887;)V
+		ARG 0 callback
+		ARG 1 entry
+	CLASS class_1_887 Entry
+		FIELD field_1_6237 commandsByRenderLayer Ljava/util/Map;
+		FIELD field_1_6238 type Lnet/minecraft/class_1_867;
+		FIELD field_1_6239 unlayeredCommands Ljava/util/List;
+		METHOD <init> (Lnet/minecraft/class_1_867;)V
+			ARG 1 type
+		METHOD method_1_5356 submit (Lnet/minecraft/class_1_865;)V
+			ARG 1 command
+		METHOD method_1_5357 submitCasting (Lnet/minecraft/class_1_865;)V
+			ARG 1 command
+		METHOD method_1_5358 getRenderLayer (Lnet/minecraft/class_1_865;)Ljava/lang/Object;
+			ARG 0 command
+		METHOD method_1_5359 clear ()V
+		METHOD method_1_5360 isEmpty ()Z
+		METHOD method_1_5361 (Ljava/lang/Object;)Ljava/util/List;
+			ARG 0 layer
+		METHOD method_1_5362 (Ljava/util/List;)Z
+			ARG 0 commands

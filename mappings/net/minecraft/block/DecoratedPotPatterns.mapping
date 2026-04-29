@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_8173 net/minecraft/block/DecoratedPotPatterns
+	METHOD method_1_5086 forEachPattern (Ljava/util/function/BiConsumer;)V
+		ARG 0 callback
 	METHOD method_49207 registerAndGetDefault (Lnet/minecraft/class_2378;)Lnet/minecraft/class_9766;
 		ARG 0 registry
 	METHOD method_49208 of (Ljava/lang/String;)Lnet/minecraft/class_5321;

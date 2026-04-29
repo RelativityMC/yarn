@@ -1,1 +1,7 @@
 CLASS net/minecraft/class_11236 net/minecraft/client/gui/render/ProfilerChartGuiElementRenderer
+	METHOD method_1_4616 (IIDDLnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;)V
+		ARG 6 matricesEntry
+		ARG 7 vertexConsumer
+	METHOD method_1_4617 (IDDILnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;)V
+		ARG 6 matricesEntry
+		ARG 7 vertexConsumer

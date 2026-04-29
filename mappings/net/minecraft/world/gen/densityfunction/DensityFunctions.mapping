@@ -75,6 +75,8 @@ CLASS net/minecraft/class_6954 net/minecraft/world/gen/densityfunction/DensityFu
 		ARG 0 densityFunctionRegisterable
 		ARG 1 densityFunctionLookup
 		ARG 2 jaggedNoise
+		ARG 3 continents
+		ARG 4 erosion
 		ARG 5 offsetKey
 		ARG 6 factorKey
 		ARG 7 jaggednessKey
@@ -167,3 +169,17 @@ CLASS net/minecraft/class_6954 net/minecraft/world/gen/densityfunction/DensityFu
 		ARG 0 offset
 		ARG 1 factor
 		ARG 2 amplified
+	CLASS class_1_859 WeirdScaledSampler
+		COMMENT Replacement for the removed {@code minecraft:weird_scaled_sampler} density
+		COMMENT function.
+		COMMENT
+		COMMENT @see https://www.minecraft.net/en-us/article/minecraft-26-2-snapshot-5
+		METHOD method_1_5223 selectorFunction (Lnet/minecraft/class_6880;D)Lnet/minecraft/class_6910;
+			ARG 0 noiseParameters
+			ARG 1 rarity
+		METHOD method_1_5224 rarityValueMapperType1 (Lnet/minecraft/class_6910;Lnet/minecraft/class_6880;)Lnet/minecraft/class_6910;
+			ARG 0 input
+			ARG 1 noiseParameters
+		METHOD method_1_5225 rarityValueMapperType2 (Lnet/minecraft/class_6910;Lnet/minecraft/class_6880;)Lnet/minecraft/class_6910;
+			ARG 0 input
+			ARG 1 noiseParameters

@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_850 net/minecraft/server/dedicated/management/ManagementServers
+	FIELD field_1_6023 LOGGER Lorg/slf4j/Logger;
+	METHOD method_1_5179 create (Lnet/minecraft/class_3807;Lnet/minecraft/class_11870;)Lnet/minecraft/class_11807;
+		ARG 0 serverPropertiesLoader
+		ARG 1 managementListener
+	METHOD method_1_5180 createSslContext (Lnet/minecraft/class_3806;)Lio/netty/handler/ssl/SslContext;
+		ARG 0 serverPropertiesHandler

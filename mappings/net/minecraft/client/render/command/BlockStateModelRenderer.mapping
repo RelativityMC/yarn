@@ -1,0 +1,23 @@
+CLASS net/minecraft/class_1_880 net/minecraft/client/render/command/BlockStateModelRenderer
+	FIELD field_1_6209 DIRECTIONS [Lnet/minecraft/class_2350;
+	FIELD field_1_6210 TYPE Lnet/minecraft/class_1_867;
+	FIELD field_1_6211 shading Lnet/minecraft/class_1_382;
+	METHOD method_1_5339 renderPart (Lnet/minecraft/class_10889;Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_1_382;I[ILnet/minecraft/class_4588;)V
+		ARG 0 part
+		ARG 1 matrix
+		ARG 2 shading
+		ARG 3 tintColor
+		ARG 4 tintLayers
+		ARG 5 vertexConsumer
+	METHOD method_1_5340 renderQuad (Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_777;Lnet/minecraft/class_1_382;I[ILnet/minecraft/class_4588;)V
+		ARG 0 matrix
+		ARG 1 quad
+		ARG 2 shading
+		ARG 3 tintColor
+		ARG 4 tintLayers
+		ARG 5 vertexConsumer
+	CLASS class_11662 Command
+		FIELD comp_4476 matricesEntry Lnet/minecraft/class_4587$class_4665;
+		FIELD comp_4477 renderLayer Lnet/minecraft/class_1921;
+		METHOD comp_4476 matricesEntry ()Lnet/minecraft/class_4587$class_4665;
+		METHOD comp_4477 renderLayer ()Lnet/minecraft/class_1921;

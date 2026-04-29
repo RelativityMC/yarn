@@ -41,6 +41,8 @@ CLASS net/minecraft/class_3542 net/minecraft/util/StringIdentifiable
 		METHOD <init> ([Ljava/lang/Enum;Ljava/util/function/Function;)V
 			ARG 1 values
 			ARG 2 idToIdentifiable
+		METHOD method_1_414 (Ljava/lang/Enum;)I
+			ARG 0 value
 		METHOD method_42633 byId (Ljava/lang/String;)Ljava/lang/Enum;
 			ARG 1 id
 		METHOD method_47920 byId (Ljava/lang/String;Ljava/lang/Enum;)Ljava/lang/Enum;

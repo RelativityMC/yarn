@@ -74,7 +74,7 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 4 tintLayers
 		ARG 5 lightCoords
 		ARG 6 overlayCoords
-		ARG 7 light
+		ARG 7 outlineColor
 	METHOD method_73485 submitMovingBlock (Lnet/minecraft/class_4587;Lnet/minecraft/class_11791;)V
 		ARG 1 matrices
 		ARG 2 state

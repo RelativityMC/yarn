@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_873 net/minecraft/datafixer/fix/RenameNameplateToNameTagFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD method_1_5295 fix (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 id

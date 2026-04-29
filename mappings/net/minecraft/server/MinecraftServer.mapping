@@ -24,6 +24,7 @@ CLASS net/minecraft/server/MinecraftServer
 	FIELD field_1_1404 timer Lnet/minecraft/class_236;
 	FIELD field_1_1405 weatherState Lnet/minecraft/class_1_216;
 	FIELD field_1_1406 worldGenSettings Lnet/minecraft/class_7726;
+	FIELD field_1_5953 SERVER_THREAD_NAME Ljava/lang/String;
 	FIELD field_4543 onlineMode Z
 	FIELD field_4544 running Z
 	FIELD field_4546 LOGGER Lorg/slf4j/Logger;
@@ -116,6 +117,7 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 8 apiServices
 		ARG 9 chunkLoadProgress
 		ARG 10 throwOnCrashReport
+		ARG 11 managementListener
 	METHOD method_1_402 checkLowDiskSpaceWarning ()V
 	METHOD method_1_847 getClocks ()Lnet/minecraft/class_1_109;
 	METHOD method_1_848 getOverworldGameRules ()Lnet/minecraft/class_1928;

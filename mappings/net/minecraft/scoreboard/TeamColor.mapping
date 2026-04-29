@@ -1,0 +1,23 @@
+CLASS net/minecraft/class_1_851 net/minecraft/scoreboard/TeamColor
+	FIELD field_1_6028 FROM_INDEX_FUNCTION Ljava/util/function/IntFunction;
+	FIELD field_1_6029 CODEC Lnet/minecraft/class_3542$class_7292;
+	FIELD field_1_6041 PACKET_CODEC Lnet/minecraft/class_9139;
+	FIELD field_1_6042 VALUES Ljava/util/List;
+	FIELD field_1_6045 displaySlot Lnet/minecraft/class_8646;
+	FIELD field_1_6046 textColor Lnet/minecraft/class_5251;
+	FIELD field_1_6047 index I
+	FIELD field_1_6048 name Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;IILjava/lang/String;Lnet/minecraft/class_5251;Lnet/minecraft/class_8646;)V
+		ARG 3 index
+		ARG 4 name
+		ARG 5 textColor
+		ARG 6 displaySlot
+	METHOD method_1_5182 byName (Ljava/lang/String;)Lnet/minecraft/class_1_851;
+		ARG 0 name
+	METHOD method_1_5183 getDisplaySlot ()Lnet/minecraft/class_8646;
+	METHOD method_1_5184 (Lnet/minecraft/class_1_851;)I
+		ARG 0 color
+	METHOD method_1_5185 (Lnet/minecraft/class_1_851;)I
+		ARG 0 color
+	METHOD method_1_5186 getRgbColor ()I
+	METHOD method_1_5187 getTextColor ()Lnet/minecraft/class_5251;

@@ -65,6 +65,17 @@ CLASS net/minecraft/class_5699 net/minecraft/util/dynamic/Codecs
 		ARG 0 converter
 	METHOD method_1_2462 normalizedAndValidatedPath (Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;
 		ARG 0 converter
+	METHOD method_1_5175 (Ljava/lang/Object;Ljava/util/Optional;)Ljava/lang/Object;
+		ARG 1 optionalValue
+	METHOD method_1_5176 optionalField (Lcom/mojang/serialization/Codec;Ljava/lang/String;Ljava/lang/Object;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 codec
+		ARG 1 fieldName
+		ARG 2 defaultValue
+	METHOD method_1_5177 optionalField (Lcom/mojang/serialization/Codec;Ljava/lang/String;Ljava/lang/Object;Z)Lcom/mojang/serialization/MapCodec;
+		ARG 0 codec
+		ARG 1 fieldName
+		ARG 2 defaultValue
+		ARG 3 lenient
 	METHOD method_36241 rangedInt (IILjava/util/function/Function;)Lcom/mojang/serialization/Codec;
 		ARG 0 min
 		ARG 1 max

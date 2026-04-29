@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_847 net/minecraft/client/render/command/DistancedCommand
+	METHOD method_1_5157 getDistance (Lorg/joml/Matrix4fc;)F
+		ARG 0 positionMatrix
+	METHOD method_1_5158 getDistance ()F
+	METHOD method_1_5322 getDistanceSquared (Lorg/joml/Matrix4fc;FFF)F
+		ARG 0 positionMatrix
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

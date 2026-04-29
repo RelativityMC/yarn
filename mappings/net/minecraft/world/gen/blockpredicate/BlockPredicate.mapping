@@ -2,6 +2,8 @@ CLASS net/minecraft/class_6646 net/minecraft/world/gen/blockpredicate/BlockPredi
 	FIELD field_35054 BASE_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_35696 IS_AIR Lnet/minecraft/class_6646;
 	FIELD field_35697 IS_AIR_OR_WATER Lnet/minecraft/class_6646;
+	METHOD method_1_5350 matchingBiomes (Lnet/minecraft/class_6885;)Lnet/minecraft/class_6646;
+		ARG 0 biomes
 	METHOD method_38873 getType ()Lnet/minecraft/class_6647;
 	METHOD method_38877 not (Lnet/minecraft/class_6646;)Lnet/minecraft/class_6646;
 		ARG 0 predicate

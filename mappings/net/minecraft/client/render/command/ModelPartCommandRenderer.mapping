@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_9974 net/minecraft/client/render/command/ModelPartCommandRenderer
+	FIELD field_1_6228 TYPE Lnet/minecraft/class_1_867;
 	METHOD method_62299 (Lorg/joml/Vector3f;Lnet/minecraft/class_4588;Lnet/minecraft/class_4587$class_4665;IFDDDDDD)V
 		ARG 5 minX
 		ARG 7 minY

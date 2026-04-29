@@ -1,6 +1,0 @@
-CLASS net/minecraft/class_1_880
-	CLASS class_11662 BlockStateModelCommand
-		FIELD comp_4476 matricesEntry Lnet/minecraft/class_4587$class_4665;
-		FIELD comp_4477 renderLayer Lnet/minecraft/class_1921;
-		METHOD comp_4476 matricesEntry ()Lnet/minecraft/class_4587$class_4665;
-		METHOD comp_4477 renderLayer ()Lnet/minecraft/class_1921;

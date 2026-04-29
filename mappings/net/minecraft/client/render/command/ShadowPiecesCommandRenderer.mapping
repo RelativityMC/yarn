@@ -1,7 +1,11 @@
 CLASS net/minecraft/class_11690 net/minecraft/client/render/command/ShadowPiecesCommandRenderer
+	FIELD field_1_6169 TYPE Lnet/minecraft/class_1_867;
 	FIELD field_61847 renderLayer Lnet/minecraft/class_1921;
 	METHOD method_73015 render (Lnet/minecraft/class_11690$class_11673;Lnet/minecraft/class_4588;)V
+		ARG 1 command
+		ARG 2 vertexConsumer
 	METHOD method_73016 vertex (Lorg/joml/Matrix4fc;Lnet/minecraft/class_4588;IFFFFF)V
+		ARG 0 matrix
 		ARG 1 vertexConsumer
 		ARG 2 color
 		ARG 3 x

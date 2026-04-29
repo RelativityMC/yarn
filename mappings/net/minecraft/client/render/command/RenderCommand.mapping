@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_865 net/minecraft/client/render/command/RenderCommand
+	METHOD method_1_5269 getType ()Lnet/minecraft/class_1_867;

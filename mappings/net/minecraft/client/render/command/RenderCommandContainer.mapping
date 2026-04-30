@@ -9,6 +9,8 @@ CLASS net/minecraft/class_1_877 net/minecraft/client/render/command/RenderComman
 	CLASS class_1_878 Executor
 		METHOD method_1_5320 accept (Lnet/minecraft/class_1_865;Z)V
 			ARG 1 command
+			ARG 2 separateMultiBuffers
 		METHOD method_1_5321 accept (Lnet/minecraft/class_1_867;Ljava/util/Collection;Z)V
 			ARG 1 type
 			ARG 2 commands
+			ARG 3 separateMultiBuffers

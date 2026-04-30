@@ -29,8 +29,9 @@ CLASS net/minecraft/class_11684 net/minecraft/client/render/command/RenderDispat
 		METHOD <init> (Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_1_877;)V
 			ARG 1 preparedFrame
 			ARG 2 container
-		METHOD method_1_5300 add (Lnet/minecraft/class_1_867;ZII)V
+		METHOD method_1_5300 addGroup (Lnet/minecraft/class_1_867;ZII)V
 			ARG 1 type
+			ARG 2 separateMultiBuffers
 			ARG 3 firstCommandIndex
 			ARG 4 lastCommandIndex
 		METHOD method_1_5301 (Lnet/minecraft/class_1_867;)Ljava/util/List;
@@ -62,10 +63,12 @@ CLASS net/minecraft/class_11684 net/minecraft/client/render/command/RenderDispat
 		FIELD field_1_6185 groupIndex I
 		FIELD field_1_6186 type Lnet/minecraft/class_1_867;
 		FIELD field_1_6187 firstCommandIndex I
+		FIELD field_1_6188 separateMultiBuffers Z
 		FIELD field_1_6189 lastCommandIndex I
 		METHOD <init> (ILnet/minecraft/class_1_867;ZII)V
 			ARG 1 groupIndex
 			ARG 2 type
+			ARG 3 separateMultiBuffers
 			ARG 4 firstIndex
 			ARG 5 lastIndex
 		METHOD method_1_5314 render (Lnet/minecraft/class_1_841;Lnet/minecraft/class_1_866;Ljava/util/List;)V

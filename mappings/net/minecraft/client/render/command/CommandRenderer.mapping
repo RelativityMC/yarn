@@ -5,6 +5,7 @@ CLASS net/minecraft/class_1_863 net/minecraft/client/render/command/CommandRende
 		ARG 1 context
 		ARG 2 groupIndex
 		ARG 3 commands
+		ARG 4 separateMultiBuffers
 	METHOD method_1_5244 clear (Lnet/minecraft/class_1_841;)V
 		ARG 1 context
 	METHOD method_1_5245 finishPrepare (Lnet/minecraft/class_1_841;)V
@@ -12,3 +13,4 @@ CLASS net/minecraft/class_1_863 net/minecraft/client/render/command/CommandRende
 	METHOD method_1_5246 prepare (Lnet/minecraft/class_1_841;Ljava/util/List;Z)V
 		ARG 1 context
 		ARG 2 commands
+		ARG 3 separateMultiBuffers

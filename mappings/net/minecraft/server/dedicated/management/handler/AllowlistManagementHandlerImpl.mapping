@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_11988 net/minecraft/server/dedicated/management/handler/AllowlistManagementHandlerImpl
+	FIELD field_1_6246 managementListener Lnet/minecraft/class_11870;
 	FIELD field_62805 logger Lnet/minecraft/class_11805;
 	METHOD <init> (Lnet/minecraft/class_11870;Lnet/minecraft/class_11805;)V
+		ARG 1 managementListener
 		ARG 2 logger
+	METHOD method_1_5368 getServer ()Lnet/minecraft/class_3176;

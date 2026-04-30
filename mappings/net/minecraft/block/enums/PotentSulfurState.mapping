@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_885 net/minecraft/block/enums/PotentSulfurState
+	FIELD field_1_6235 name Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+		ARG 3 name

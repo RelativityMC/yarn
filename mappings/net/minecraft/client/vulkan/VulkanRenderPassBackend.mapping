@@ -13,11 +13,13 @@ CLASS net/minecraft/class_1_704 net/minecraft/client/vulkan/VulkanRenderPassBack
 	FIELD field_1_3625 commandBufferSupplier Ljava/util/function/Supplier;
 	FIELD field_1_3626 boundTextures Ljava/util/HashMap;
 	FIELD field_1_3627 uniforms Ljava/util/HashMap;
+	FIELD field_1_5956 renderArea Lcom/mojang/blaze3d/systems/RenderPass$class_1_837;
 	METHOD <init> (Lnet/minecraft/class_1_679;Ljava/util/function/Consumer;Lorg/lwjgl/vulkan/VkCommandBuffer;Ljava/util/function/Supplier;Lcom/mojang/blaze3d/systems/RenderPass$class_1_837;IIZ)V
 		ARG 1 device
 		ARG 2 disposer
 		ARG 3 primaryCommandBuffer
 		ARG 4 commandBufferSupplier
+		ARG 5 renderArea
 		ARG 6 width
 		ARG 7 height
 		ARG 8 hasDepth
@@ -28,4 +30,11 @@ CLASS net/minecraft/class_1_704 net/minecraft/client/vulkan/VulkanRenderPassBack
 		ARG 1 commandBuffer
 	METHOD method_1_4217 updateShaderParams ()V
 	METHOD method_1_4218 createViewportCommandBuffer ()Lorg/lwjgl/vulkan/VkCommandBuffer;
+	METHOD method_1_5120 setScissor (Lorg/lwjgl/system/MemoryStack;Lorg/lwjgl/vulkan/VkCommandBuffer;IIII)V
+		ARG 0 memoryStack
+		ARG 1 viewportCommandBuffer
+		ARG 2 x
+		ARG 3 y
+		ARG 4 width
+		ARG 5 height
 	CLASS class_1_705 BoundTexture

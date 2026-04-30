@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_11993 net/minecraft/server/dedicated/management/handler/GameRuleManagementHandlerImpl
+	FIELD field_1_6243 managementListener Lnet/minecraft/class_11870;
 	FIELD field_62821 logger Lnet/minecraft/class_11805;
 	METHOD <init> (Lnet/minecraft/class_11870;Lnet/minecraft/class_11805;)V
+		ARG 1 managementListener
 		ARG 2 logger
+	METHOD method_1_5367 getServer ()Lnet/minecraft/class_3176;

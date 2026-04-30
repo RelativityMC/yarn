@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_11691 net/minecraft/client/render/command/TextCommandRenderer
+	FIELD field_1_6162 TYPE Lnet/minecraft/class_1_867;
 	CLASS class_1_842 GlyphDrawer
 		FIELD field_1_5975 vertexConsumers Lnet/minecraft/class_11691;
 		FIELD field_1_5976 textLayerType Lnet/minecraft/class_327$class_6415;

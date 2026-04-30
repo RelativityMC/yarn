@@ -1,5 +1,9 @@
 CLASS net/minecraft/class_11870 net/minecraft/server/dedicated/management/listener/CompositeManagementListener
+	FIELD field_1_6157 server Lnet/minecraft/class_3176;
 	FIELD field_62417 listeners Ljava/util/List;
+	METHOD method_1_5267 getServer ()Lnet/minecraft/class_3176;
+	METHOD method_1_5268 setServer (Lnet/minecraft/class_3176;)V
+		ARG 1 server
 	METHOD method_73986 (Lnet/minecraft/class_3222;Lnet/minecraft/class_11871;)V
 		ARG 1 listener
 	METHOD method_73987 addListener (Lnet/minecraft/class_11871;)V

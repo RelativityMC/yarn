@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_11685 net/minecraft/client/render/command/FireCommandRenderer
+	FIELD field_1_6163 TYPE Lnet/minecraft/class_1_867;
 	METHOD method_73004 vertex (Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;FFFFFI)V
 		ARG 0 matricesEntry
 		ARG 1 vertexConsumer

@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_889 net/minecraft/client/render/command/DistanceSortedRenderCommandContainer
+	FIELD field_1_6250 distances Lit/unimi/dsi/fastutil/floats/FloatList;
+	FIELD field_1_6251 commands Ljava/util/List;
+	METHOD method_1_5379 (II)I
+		ARG 1 a
+		ARG 2 b
+	METHOD method_1_5380 getSortOrder ()[I

@@ -1,3 +1,7 @@
 CLASS net/minecraft/class_11661 net/minecraft/client/render/command/OrderedRenderCommandQueueImpl
 	FIELD field_62244 batchingQueues Lit/unimi/dsi/fastutil/ints/Int2ObjectAVLTreeMap;
+	METHOD method_1_5202 forEachContainer (Ljava/util/function/Consumer;)V
+		ARG 1 callback
+	METHOD method_1_5203 (Ljava/util/function/Consumer;Lnet/minecraft/class_11788;)Z
+		ARG 1 queue
 	METHOD method_73532 getBatchingQueues ()Lit/unimi/dsi/fastutil/ints/Int2ObjectAVLTreeMap;

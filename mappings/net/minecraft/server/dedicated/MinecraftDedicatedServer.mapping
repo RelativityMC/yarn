@@ -21,6 +21,8 @@ CLASS net/minecraft/class_3176 net/minecraft/server/dedicated/MinecraftDedicated
 		ARG 6 propertiesLoader
 		ARG 7 dataFixer
 		ARG 8 apiServices
+		ARG 9 managementServer
+		ARG 10 compositeManagementListener
 	METHOD method_1_490 (Lnet/minecraft/class_12087$class_12089;Lnet/minecraft/class_3222;)Z
 		ARG 1 player
 	METHOD method_1_491 (Lnet/minecraft/class_3222;)V

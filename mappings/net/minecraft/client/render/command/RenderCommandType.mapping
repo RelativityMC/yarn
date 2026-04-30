@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_867 net/minecraft/client/render/command/RenderCommandType
+	FIELD field_1_6160 ID_COUNTER Ljava/util/concurrent/atomic/AtomicInteger;
+	METHOD <init> (ILjava/lang/String;)V
+		ARG 1 id
+		ARG 2 name
+	METHOD method_1_5278 create (Ljava/lang/String;)Lnet/minecraft/class_1_867;
+		ARG 0 name

@@ -4,6 +4,8 @@ CLASS net/minecraft/class_6498 net/minecraft/util/WinNativeModuleUtil
 	FIELD field_34393 EN_US_CODE_PAGE I
 	FIELD field_34394 LANGUAGE_ID_MASK I
 	FIELD field_34395 LANGUAGE_ID I
+	METHOD method_1_5117 escape (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 string
 	METHOD method_37961 collectNativeModules ()Ljava/util/List;
 	METHOD method_37962 (Lnet/minecraft/class_6498$class_6499;)Ljava/lang/String;
 		ARG 0 moduleName

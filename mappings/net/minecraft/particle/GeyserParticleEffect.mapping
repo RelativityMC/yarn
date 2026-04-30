@@ -1,0 +1,15 @@
+CLASS net/minecraft/class_1_857 net/minecraft/particle/GeyserParticleEffect
+	METHOD method_1_5215 createCodec (Lnet/minecraft/class_2396;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 type
+	METHOD method_1_5216 (Lnet/minecraft/class_2396;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 1 instance
+	METHOD method_1_5217 (Lnet/minecraft/class_1_857;)Ljava/lang/Integer;
+		ARG 0 effect
+	METHOD method_1_5218 (Lnet/minecraft/class_2396;Ljava/lang/Integer;)Lnet/minecraft/class_1_857;
+		ARG 1 waterBlocks
+	METHOD method_1_5219 (Lnet/minecraft/class_1_857;)Ljava/lang/Integer;
+		ARG 0 effect
+	METHOD method_1_5220 (Lnet/minecraft/class_2396;Ljava/lang/Integer;)Lnet/minecraft/class_1_857;
+		ARG 1 waterBlocks
+	METHOD method_1_5221 createPacketCodec (Lnet/minecraft/class_2396;)Lnet/minecraft/class_9139;
+		ARG 0 type

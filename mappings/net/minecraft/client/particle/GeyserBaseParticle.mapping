@@ -1,0 +1,23 @@
+CLASS net/minecraft/class_1_853 net/minecraft/client/particle/GeyserBaseParticle
+	FIELD field_1_6082 BURST_IMPULSE_PER_WATER_BLOCK F
+	FIELD field_1_6083 VELOCITY_MULTIPLIER F
+	FIELD field_1_6084 MAX_LIFESPAN I
+	FIELD field_1_6085 BASE_SCALE_MULTIPLIER F
+	FIELD field_1_6086 SCALE_MULTIPLIER_PER_WATER_BLOCK F
+	FIELD field_1_6087 POS_SPREAD F
+	FIELD field_1_6088 Y_OFFSET F
+	METHOD <init> (Lnet/minecraft/class_638;DDDDDDIFLnet/minecraft/class_4002;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 velocityX
+		ARG 10 velocityY
+		ARG 12 velocityZ
+		ARG 14 waterBlocks
+		ARG 15 burstImpulseBase
+		ARG 16 spriteProvider
+	CLASS class_1_854 Factory
+		FIELD field_1_6089 spriteProvider Lnet/minecraft/class_4002;
+		METHOD <init> (Lnet/minecraft/class_4002;)V
+			ARG 1 spriteProvider

@@ -1,8 +1,10 @@
 CLASS net/minecraft/class_4599 net/minecraft/client/render/BufferBuilderStorage
+	FIELD field_1_6063 sharedBuffer Lnet/minecraft/class_1_807;
 	FIELD field_20956 blockBufferBuilders Lnet/minecraft/class_750;
 	FIELD field_46900 blockBufferBuildersPool Lnet/minecraft/class_8901;
 	METHOD <init> (I)V
 		ARG 1 maxBlockBuildersPoolSize
 	METHOD method_1_4868 finish ()V
+	METHOD method_1_5197 getSharedBuffer ()Lnet/minecraft/class_1_807;
 	METHOD method_22997 getBlockBufferBuilders ()Lnet/minecraft/class_750;
 	METHOD method_54640 getBlockBufferBuildersPool ()Lnet/minecraft/class_8901;

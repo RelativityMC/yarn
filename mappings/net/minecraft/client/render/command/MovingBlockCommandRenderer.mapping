@@ -1,0 +1,28 @@
+CLASS net/minecraft/class_1_848 net/minecraft/client/render/command/MovingBlockCommandRenderer
+	FIELD field_1_6221 TYPE Lnet/minecraft/class_1_867;
+	FIELD field_1_6222 tempMatrixStack Lnet/minecraft/class_4587;
+	FIELD field_1_6223 quadRenderer Lnet/minecraft/class_1_319;
+	FIELD field_1_6224 solidQuadRenderer Lnet/minecraft/class_1_319;
+	METHOD method_1_5345 (FFFLnet/minecraft/class_777;Lnet/minecraft/class_1_382;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 bakedQuad
+		ARG 5 shading
+	METHOD method_1_5346 (FFFLnet/minecraft/class_777;Lnet/minecraft/class_1_382;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 bakedQuad
+		ARG 5 shading
+	METHOD method_1_5347 addQuad (Lnet/minecraft/class_4587;FFFLnet/minecraft/class_777;Lnet/minecraft/class_1_382;Lnet/minecraft/class_11515;)V
+		ARG 1 matrices
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 bakedQuad
+		ARG 6 shading
+		ARG 7 blockRenderLayer
+	CLASS class_11790 Command
+		FIELD comp_4652 matricesEntry Lorg/joml/Matrix4fc;
+		METHOD comp_4652 matricesEntry ()Lorg/joml/Matrix4fc;

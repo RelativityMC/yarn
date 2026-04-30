@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_1_877 net/minecraft/client/render/command/RenderCommandContainer
+	METHOD method_1_5317 isEmpty ()Z
+	METHOD method_1_5318 execute (Lnet/minecraft/class_1_877$class_1_878;)V
+		COMMENT Passes all submitted commands to {@code callback} and removes them from
+		COMMENT submission.
+		ARG 1 callback
+	METHOD method_1_5319 submit (Lnet/minecraft/class_1_865;)V
+		ARG 1 command
+	CLASS class_1_878 Executor
+		METHOD method_1_5320 accept (Lnet/minecraft/class_1_865;Z)V
+			ARG 1 command
+			ARG 2 separateMultiBuffers
+		METHOD method_1_5321 accept (Lnet/minecraft/class_1_867;Ljava/util/Collection;Z)V
+			ARG 1 type
+			ARG 2 commands
+			ARG 3 separateMultiBuffers

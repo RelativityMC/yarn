@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_872 net/minecraft/client/render/command/LayeredCommand
+	METHOD method_1_5294 getRenderLayer ()Ljava/lang/Object;

@@ -1,0 +1,23 @@
+CLASS net/minecraft/class_1_881 net/minecraft/client/render/command/AbstractCommandRenderer
+	FIELD field_1_6212 preparingGroup Lnet/minecraft/class_1_881$class_1_882;
+	FIELD field_1_6213 preparedGroups Ljava/util/List;
+	METHOD method_1_5341 getGroup ()Lnet/minecraft/class_1_881$class_1_882;
+	METHOD method_1_5342 getVertexConsumer (Lnet/minecraft/class_1921;)Lnet/minecraft/class_4588;
+		ARG 1 renderLayer
+	METHOD method_73006 render (Lnet/minecraft/class_1_841;Ljava/util/List;)V
+		ARG 1 context
+		ARG 2 commands
+	CLASS class_1_882 Group
+		FIELD field_1_6214 reuseMultiBuffers Z
+		FIELD field_1_6215 drawSpecs Ljava/util/List;
+		FIELD field_1_6216 multiBuffers Ljava/util/List;
+		FIELD field_1_6217 bufferOfLastQueriedRenderLayer Lnet/minecraft/class_1_807$class_1_808;
+		FIELD field_1_6218 lastQueriedRenderLayer Lnet/minecraft/class_1921;
+		FIELD field_1_6219 multiDrawBuffer Lnet/minecraft/class_1_807;
+		METHOD <init> (Lnet/minecraft/class_1_807;Z)V
+			ARG 1 multiDrawBuffer
+			ARG 2 reuseMultiBuffers
+		METHOD method_1_5343 findVertexConsumer (Lnet/minecraft/class_1921;)Lnet/minecraft/class_1_807$class_1_808;
+			ARG 1 renderLayer
+		METHOD method_1_5344 getVertexConsumer (Lnet/minecraft/class_1921;)Lnet/minecraft/class_4588;
+			ARG 1 renderLayer

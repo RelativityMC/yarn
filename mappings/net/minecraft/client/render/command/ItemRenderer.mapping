@@ -1,5 +1,6 @@
-CLASS net/minecraft/class_918 net/minecraft/client/render/item/ItemRenderer
+CLASS net/minecraft/class_918 net/minecraft/client/render/command/ItemRenderer
 	FIELD field_1_2537 shading Lnet/minecraft/class_1_382;
+	FIELD field_1_6161 TYPE Lnet/minecraft/class_1_867;
 	FIELD field_43086 ENTITY_ENCHANTMENT_GLINT Lnet/minecraft/class_2960;
 	FIELD field_43087 ITEM_ENCHANTMENT_GLINT Lnet/minecraft/class_2960;
 	FIELD field_55295 NO_TINT I
@@ -12,6 +13,15 @@ CLASS net/minecraft/class_918 net/minecraft/client/render/item/ItemRenderer
 	METHOD method_1_3052 getTint ([ILnet/minecraft/class_777$class_1_320;)I
 		ARG 0 tints
 		ARG 1 spriteInfo
+	METHOD method_1_5279 renderGlint (Lnet/minecraft/class_918$class_11668;)V
+		ARG 1 command
+	METHOD method_1_5280 renderRegular (Lnet/minecraft/class_918$class_11668;)V
+		ARG 1 command
+	METHOD method_1_5281 renderOutlined (Lnet/minecraft/class_918$class_11668;)V
+		ARG 1 command
+	METHOD method_1_5282 render (Lnet/minecraft/class_918$class_11668;Z)V
+		ARG 1 command
+		ARG 2 glint
 	METHOD method_65569 getTint ([II)I
 		ARG 0 tints
 		ARG 1 index
@@ -25,3 +35,4 @@ CLASS net/minecraft/class_918 net/minecraft/client/render/item/ItemRenderer
 		FIELD comp_4642 glintType Lnet/minecraft/class_10444$class_10445;
 		METHOD comp_4498 positionMatrix ()Lnet/minecraft/class_4587$class_4665;
 		METHOD comp_4642 glintType ()Lnet/minecraft/class_10444$class_10445;
+		METHOD method_1_5283 hasBlendedQuads ()Z

@@ -17,6 +17,9 @@ CLASS net/minecraft/class_1541 net/minecraft/entity/TntEntity
 		ARG 4 y
 		ARG 6 z
 		ARG 8 igniter
+	METHOD method_1_5195 getChainedFuseTime (ILnet/minecraft/class_5819;)I
+		ARG 0 originalFuse
+		ARG 1 random
 	METHOD method_6967 setFuse (I)V
 		ARG 1 fuse
 	METHOD method_6969 getFuse ()I

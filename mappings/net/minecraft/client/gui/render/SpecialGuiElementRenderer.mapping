@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_11239 net/minecraft/client/gui/render/SpecialGuiElementRenderer
 	FIELD field_1_1987 projection Lnet/minecraft/class_11279;
+	FIELD field_1_6170 queue Lnet/minecraft/class_11661;
 	FIELD field_59935 texture Lcom/mojang/blaze3d/textures/GpuTexture;
 	FIELD field_59936 depthTexture Lcom/mojang/blaze3d/textures/GpuTexture;
 	FIELD field_60042 projectionBuffer Lnet/minecraft/class_11278;
@@ -7,6 +8,9 @@ CLASS net/minecraft/class_11239 net/minecraft/client/gui/render/SpecialGuiElemen
 	FIELD field_60573 depthTextureView Lcom/mojang/blaze3d/textures/GpuTextureView;
 	METHOD method_70903 getElementClass ()Ljava/lang/Class;
 	METHOD method_70905 render (Lnet/minecraft/class_11256;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;)V
+		ARG 1 renderState
+		ARG 2 matrices
+		ARG 3 queue
 	METHOD method_70906 getName ()Ljava/lang/String;
 	METHOD method_70907 getYOffset (II)F
 		ARG 1 height
@@ -14,6 +18,7 @@ CLASS net/minecraft/class_11239 net/minecraft/client/gui/render/SpecialGuiElemen
 	METHOD method_70913 render (Lnet/minecraft/class_11256;Lnet/minecraft/class_11246;Lnet/minecraft/class_11684;I)V
 		ARG 1 elementState
 		ARG 2 state
+		ARG 3 renderDispatcher
 		ARG 4 windowScaleFactor
 	METHOD method_70914 prepareTextures (ZII)V
 		ARG 1 closePrevious

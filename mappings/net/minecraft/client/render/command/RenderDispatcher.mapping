@@ -1,10 +1,83 @@
 CLASS net/minecraft/class_11684 net/minecraft/client/render/command/RenderDispatcher
 	FIELD field_1_2397 gameRenderState Lnet/minecraft/class_1_405;
 	FIELD field_1_2553 bakedModelManager Lnet/minecraft/class_1092;
+	FIELD field_1_6172 commandRendererRegistry Lnet/minecraft/class_1_866;
+	FIELD field_1_6173 preparedFrame Lnet/minecraft/class_11684$class_1_875;
+	FIELD field_1_6174 sharedBuffer Lnet/minecraft/class_1_807;
 	FIELD field_61831 atlasManager Lnet/minecraft/class_11697;
 	FIELD field_61833 textRenderer Lnet/minecraft/class_327;
 	METHOD <init> (Lnet/minecraft/class_4599;Lnet/minecraft/class_1092;Lnet/minecraft/class_11697;Lnet/minecraft/class_327;Lnet/minecraft/class_1_405;)V
+		ARG 1 bufferBuilderStorage
 		ARG 2 bakedModelManager
 		ARG 3 atlasManager
 		ARG 4 textRenderer
 		ARG 5 gameRenderState
+	METHOD method_1_5296 (Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_1_877;)V
+		ARG 1 container
+	METHOD method_1_5297 prepareFrame (Lnet/minecraft/class_11661;)Lnet/minecraft/class_11684$class_1_875;
+		ARG 1 queue
+	METHOD method_1_5298 prepareFrame (Lnet/minecraft/class_1_841;Lnet/minecraft/class_11661;)Lnet/minecraft/class_11684$class_1_875;
+		ARG 1 context
+		ARG 2 queue
+	METHOD method_1_5299 renderAll (Lnet/minecraft/class_11661;)V
+		ARG 1 queue
+	CLASS class_1_874 Executor
+		FIELD field_1_6175 commands Ljava/util/List;
+		FIELD field_1_6176 preparedFrame Lnet/minecraft/class_11684$class_1_875;
+		FIELD field_1_6177 lastGroup Lnet/minecraft/class_11684$class_1_876;
+		FIELD field_1_6178 groups Ljava/util/List;
+		METHOD <init> (Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_1_877;)V
+			ARG 1 preparedFrame
+			ARG 2 container
+		METHOD method_1_5300 addGroup (Lnet/minecraft/class_1_867;ZII)V
+			ARG 1 type
+			ARG 2 separateMultiBuffers
+			ARG 3 firstCommandIndex
+			ARG 4 lastCommandIndex
+		METHOD method_1_5301 (Lnet/minecraft/class_1_867;)Ljava/util/List;
+			ARG 0 t
+	CLASS class_1_875 PreparedFrame
+		FIELD field_1_6179 commands Ljava/util/List;
+		FIELD field_1_6180 context Lnet/minecraft/class_1_841;
+		FIELD field_1_6181 groupListsByType Ljava/util/Map;
+		FIELD field_1_6182 groupListsByContainer Ljava/util/Map;
+		FIELD field_1_6183 queue Lnet/minecraft/class_11661;
+		METHOD method_1_5303 start (Lnet/minecraft/class_1_841;Lnet/minecraft/class_11661;)Lnet/minecraft/class_11684$class_1_875;
+			ARG 1 context
+			ARG 2 queue
+		METHOD method_1_5304 clear (Ljava/util/Collection;)V
+			ARG 0 groupLists
+		METHOD method_1_5305 renderTopGizmos ()V
+		METHOD method_1_5306 renderOutlines ()V
+		METHOD method_1_5307 render (Lnet/minecraft/class_1_877;Lnet/minecraft/class_1_841;)V
+			ARG 1 commands
+			ARG 2 context
+		METHOD method_1_5308 renderSolidFeatures ()V
+		METHOD method_1_5309 renderTranslucentFeatures ()V
+		METHOD method_1_5310 renderTranslucentParticles ()V
+		METHOD method_1_5311 hasAnyTopGizmos ()Z
+		METHOD method_1_5312 hasAnyOutlines ()Z
+		METHOD method_1_5313 (Ljava/util/List;)Z
+			ARG 0 groupList
+	CLASS class_1_876 Group
+		FIELD field_1_6185 groupIndex I
+		FIELD field_1_6186 type Lnet/minecraft/class_1_867;
+		FIELD field_1_6187 firstCommandIndex I
+		FIELD field_1_6188 separateMultiBuffers Z
+		FIELD field_1_6189 lastCommandIndex I
+		METHOD <init> (ILnet/minecraft/class_1_867;ZII)V
+			ARG 1 groupIndex
+			ARG 2 type
+			ARG 3 separateMultiBuffers
+			ARG 4 firstIndex
+			ARG 5 lastIndex
+		METHOD method_1_5314 render (Lnet/minecraft/class_1_841;Lnet/minecraft/class_1_866;Ljava/util/List;)V
+			ARG 1 context
+			ARG 2 commandRendererRegistry
+			ARG 3 commands
+		METHOD method_1_5315 prepare (Lnet/minecraft/class_1_841;Lnet/minecraft/class_1_866;Ljava/util/List;)V
+			ARG 1 context
+			ARG 2 commandRendererRegistry
+			ARG 3 commands
+		METHOD method_1_5316 getRelevantCommands (Ljava/util/List;)Ljava/util/List;
+			ARG 1 commands

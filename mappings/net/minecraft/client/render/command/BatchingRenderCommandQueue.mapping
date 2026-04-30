@@ -1,1 +1,20 @@
 CLASS net/minecraft/class_11788 net/minecraft/client/render/command/BatchingRenderCommandQueue
+	FIELD field_1_6115 particlesTranslucent Lnet/minecraft/class_1_886;
+	FIELD field_1_6116 renderCommandContainers Ljava/util/List;
+	FIELD field_1_6117 onTopGizmos Lnet/minecraft/class_1_886;
+	FIELD field_1_6118 crumbling Lnet/minecraft/class_1_886;
+	FIELD field_1_6119 gizmos Lnet/minecraft/class_1_886;
+	FIELD field_1_6120 labelsNormal Lnet/minecraft/class_1_886;
+	FIELD field_1_6121 outline Lnet/minecraft/class_1_886;
+	FIELD field_1_6122 labelsSeeThrough Lnet/minecraft/class_1_889;
+	FIELD field_1_6123 shadowPieces Lnet/minecraft/class_1_886;
+	FIELD field_1_6124 modelPart Lnet/minecraft/class_1_886;
+	FIELD field_1_6125 worldOpaque Lnet/minecraft/class_1_886;
+	FIELD field_1_6126 texts Lnet/minecraft/class_1_886;
+	FIELD field_1_6127 worldBlended Lnet/minecraft/class_1_889;
+	FIELD field_1_6128 worldBlendedCustom Lnet/minecraft/class_1_886;
+	FIELD field_1_6129 worldBlendedModel Lnet/minecraft/class_1_889;
+	FIELD field_1_6130 worldWaterMask Lnet/minecraft/class_1_886;
+	METHOD method_1_5213 getRenderCommandContainers ()Ljava/util/List;
+	METHOD method_1_5214 getOutlineLayer (Lnet/minecraft/class_1921;)Lnet/minecraft/class_1921;
+		ARG 0 renderLayer

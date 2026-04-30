@@ -1,5 +1,8 @@
 CLASS net/minecraft/class_11683 net/minecraft/client/render/command/ModelCommandRenderer
+	FIELD field_1_6166 TYPE Lnet/minecraft/class_1_867;
 	FIELD field_61827 matrices Lnet/minecraft/class_4587;
+	METHOD method_1_5285 render (Lnet/minecraft/class_11683$class_11670;)V
+		ARG 1 command
 	CLASS class_11670 ModelCommand
 		FIELD comp_4504 matricesEntry Lnet/minecraft/class_4587$class_4665;
 		METHOD comp_4504 matricesEntry ()Lnet/minecraft/class_4587$class_4665;

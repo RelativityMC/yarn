@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_1_891 net/minecraft/world/gen/blockpredicate/MatchingBiomesBlockPredicate
+	FIELD field_1_6256 biomes Lnet/minecraft/class_6885;
+	METHOD <init> (Lnet/minecraft/class_6885;)V
+		ARG 1 biomes
+	METHOD method_1_5390 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_5391 (Lnet/minecraft/class_1_891;)Lnet/minecraft/class_6885;
+		ARG 0 prediate
+	METHOD test (Ljava/lang/Object;Ljava/lang/Object;)Z
+		ARG 1 world
+		ARG 2 pos

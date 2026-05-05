@@ -27,6 +27,7 @@ import java.util.Set;
 
 import javax.lang.model.element.Modifier;
 
+import com.squareup.javapoet.ArrayTypeName;
 import com.squareup.javapoet.MethodSpec;
 import com.squareup.javapoet.ParameterSpec;
 import com.squareup.javapoet.TypeName;
@@ -123,8 +124,16 @@ public class MethodBuilder {
 		return currentSuggestion;
 	}
 
+	static TypeName withoutAnnotationsRecursively(TypeName type) {
+		if (type instanceof ArrayTypeName arrayTypeName) {
+			type = ArrayTypeName.of(withoutAnnotationsRecursively(arrayTypeName.componentType));
+		}
+
+		return type.withoutAnnotations();
+	}
+
 	static String suggestName(TypeName type) {
-		String str = type.withoutAnnotations().toString();
+		String str = withoutAnnotationsRecursively(type).toString();
 		int newStart = 0;
 		int newEnd = str.length();
 		int ltStart;

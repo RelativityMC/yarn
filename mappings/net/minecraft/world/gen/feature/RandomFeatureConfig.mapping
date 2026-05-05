@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_3141 net/minecraft/world/gen/feature/RandomFeatureConfig
-	FIELD field_13744 features Ljava/util/List;
-	FIELD field_13745 defaultFeature Lnet/minecraft/class_6880;
+	FIELD comp_1_801 defaultFeature Lnet/minecraft/class_6880;
+	FIELD comp_1_802 features Ljava/util/List;
 	FIELD field_24901 CODEC Lcom/mojang/serialization/Codec;
 	METHOD <init> (Ljava/util/List;Lnet/minecraft/class_6880;)V
 		ARG 1 features

@@ -6,12 +6,11 @@ CLASS net/minecraft/class_1_709 net/minecraft/client/vulkan/SpirvShaderCompiler
 		ARG 0 pipelineLayoutEntriesOut
 		ARG 1 shader
 		ARG 2 pipeline
-	METHOD method_1_4229 createShaderPipeline (Lnet/minecraft/class_1_679;Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/class_1_753;Lnet/minecraft/class_1_753;Ljava/util/List;)Lnet/minecraft/class_1_709$class_1_710;
+	METHOD method_1_4229 createShaderPipeline (Lnet/minecraft/class_1_679;Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/class_1_753;Lnet/minecraft/class_1_753;)Lnet/minecraft/class_1_709$class_1_710;
 		ARG 1 backend
 		ARG 2 pipeline
 		ARG 3 vertexShader
 		ARG 4 fragmentShader
-		ARG 5 inputNames
 	METHOD method_1_4230 compile (Ljava/lang/String;Ljava/lang/String;Lcom/mojang/blaze3d/shaders/ShaderType;)Lnet/minecraft/class_1_753;
 		ARG 1 name
 		ARG 2 source

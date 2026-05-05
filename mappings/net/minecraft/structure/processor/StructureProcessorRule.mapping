@@ -24,9 +24,8 @@ CLASS net/minecraft/class_3821 net/minecraft/structure/processor/StructureProces
 	METHOD method_16760 getOutputNbt (Lnet/minecraft/class_5819;Lnet/minecraft/class_2487;)Lnet/minecraft/class_2487;
 		ARG 1 random
 		ARG 2 nbt
-	METHOD method_16762 test (Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)Z
-		ARG 1 input
-		ARG 2 currentState
+	METHOD method_16762 test (Lnet/minecraft/class_4538;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)Z
+		ARG 2 input
 		ARG 3 originalPos
 		ARG 4 currentPos
 		ARG 5 pivot

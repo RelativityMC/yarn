@@ -22,7 +22,7 @@ CLASS net/minecraft/class_6630 net/minecraft/server/chase/ChaseClient
 	METHOD method_38760 executeCommand (Ljava/lang/String;)V
 		ARG 1 command
 	METHOD method_38761 getTeleportPos (Ljava/util/Scanner;)Ljava/util/Optional;
-		ARG 1 scanner
+		ARG 0 scanner
 	METHOD method_38762 run ()V
 	CLASS class_6631 TeleportPos
 		FIELD comp_138 dimension Lnet/minecraft/class_5321;

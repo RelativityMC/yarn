@@ -1,21 +1,17 @@
 CLASS com/mojang/blaze3d/pipeline/RenderPipeline
-	METHOD <init> (Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;Lnet/minecraft/class_10149;Ljava/util/List;Lnet/minecraft/class_1_384;Lnet/minecraft/class_1_386;Lcom/mojang/blaze3d/platform/PolygonMode;ZLcom/mojang/blaze3d/vertex/VertexFormat;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5596;I)V
-		ARG 1 location
+	METHOD <init> (Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;Lnet/minecraft/class_10149;Ljava/util/List;[Lnet/minecraft/class_1_384;Lnet/minecraft/class_1_386;Lcom/mojang/blaze3d/platform/PolygonMode;Z[Lcom/mojang/blaze3d/vertex/VertexFormat;Lnet/minecraft/class_5596;I)V
 		ARG 2 vertexShader
 		ARG 3 fragmentShader
 		ARG 4 shaderDefines
-		ARG 6 colorTargetState
 		ARG 7 depthStencilState
 		ARG 8 polygonMode
 		ARG 9 cull
-		ARG 10 vertexFormat
-		ARG 11 vertexFormatMode
 		ARG 12 sortKey
 	METHOD builder ([Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;)Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;
 		ARG 0 snippets
 	CLASS Builder
-		METHOD withColorTargetState (Lnet/minecraft/class_1_384;)Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;
-			ARG 1 colorTargetState
+		METHOD withColorTargetState (ILnet/minecraft/class_1_384;)Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;
+			ARG 2 colorTargetState
 		METHOD withCull (Z)Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;
 			ARG 1 cull
 		METHOD withDepthStencilState (Ljava/util/Optional;)Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;
@@ -42,9 +38,6 @@ CLASS com/mojang/blaze3d/pipeline/RenderPipeline
 			ARG 2 value
 		METHOD withSnippet (Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;)V
 			ARG 1 snippet
-		METHOD withVertexFormat (Lcom/mojang/blaze3d/vertex/VertexFormat;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5596;)Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;
-			ARG 1 vertexFormat
-			ARG 2 vertexFormatMode
 		METHOD withVertexShader (Ljava/lang/String;)Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;
 			ARG 1 vertexShader
 		METHOD withVertexShader (Lnet/minecraft/class_2960;)Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;

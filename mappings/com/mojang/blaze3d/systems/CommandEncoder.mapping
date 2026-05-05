@@ -5,23 +5,20 @@ CLASS com/mojang/blaze3d/systems/CommandEncoder
 		ARG 1 profiler
 		ARG 2 device
 		ARG 3 backend
-	METHOD clearColorAndDepthTextures (Lcom/mojang/blaze3d/textures/GpuTexture;ILcom/mojang/blaze3d/textures/GpuTexture;D)V
+	METHOD clearColorAndDepthTextures (Lcom/mojang/blaze3d/textures/GpuTexture;Lorg/joml/Vector4fc;Lcom/mojang/blaze3d/textures/GpuTexture;D)V
 		ARG 1 colorAttachment
-		ARG 2 color
 		ARG 3 depthAttachment
 		ARG 4 depth
-	METHOD clearColorAndDepthTextures (Lcom/mojang/blaze3d/textures/GpuTexture;ILcom/mojang/blaze3d/textures/GpuTexture;DIIII)V
+	METHOD clearColorAndDepthTextures (Lcom/mojang/blaze3d/textures/GpuTexture;Lorg/joml/Vector4fc;Lcom/mojang/blaze3d/textures/GpuTexture;DIIII)V
 		ARG 1 colorAttachment
-		ARG 2 color
 		ARG 3 depthAttachment
 		ARG 4 depth
 		ARG 6 scissorX
 		ARG 7 scissorY
 		ARG 8 scissorLeft
 		ARG 9 scissorTop
-	METHOD clearColorTexture (Lcom/mojang/blaze3d/textures/GpuTexture;I)V
+	METHOD clearColorTexture (Lcom/mojang/blaze3d/textures/GpuTexture;Lorg/joml/Vector4fc;)V
 		ARG 1 texture
-		ARG 2 color
 	METHOD clearDepthTexture (Lcom/mojang/blaze3d/textures/GpuTexture;D)V
 		ARG 1 texture
 		ARG 2 depth
@@ -54,31 +51,20 @@ CLASS com/mojang/blaze3d/systems/CommandEncoder
 	METHOD copyToBuffer (Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
 		ARG 1 from
 		ARG 2 to
-	METHOD createRenderPass (Ljava/util/function/Supplier;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/OptionalInt;)Lcom/mojang/blaze3d/systems/RenderPass;
+	METHOD createRenderPass (Ljava/util/function/Supplier;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/Optional;)Lcom/mojang/blaze3d/systems/RenderPass;
 		ARG 1 labelGetter
 		ARG 2 colorAttachment
-		ARG 3 clearColor
-	METHOD createRenderPass (Ljava/util/function/Supplier;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/OptionalInt;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/OptionalDouble;)Lcom/mojang/blaze3d/systems/RenderPass;
+	METHOD createRenderPass (Ljava/util/function/Supplier;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/Optional;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/OptionalDouble;)Lcom/mojang/blaze3d/systems/RenderPass;
 		ARG 1 labelGetter
 		ARG 2 colorAttachment
-		ARG 3 clearColor
 		ARG 4 depthAttachment
 		ARG 5 clearDepth
-	METHOD createRenderPass (Ljava/util/function/Supplier;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/OptionalInt;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/OptionalDouble;Lcom/mojang/blaze3d/systems/RenderPass$class_1_837;)Lcom/mojang/blaze3d/systems/RenderPass;
+	METHOD createRenderPass (Ljava/util/function/Supplier;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/Optional;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/OptionalDouble;Lcom/mojang/blaze3d/systems/RenderPass$class_1_837;)Lcom/mojang/blaze3d/systems/RenderPass;
 		ARG 1 labelGetter
 		ARG 2 colorAttachment
-		ARG 3 clearColor
 		ARG 4 depthAttachment
 		ARG 5 clearDepth
 		ARG 6 renderArea
-	METHOD mapBuffer (Lcom/mojang/blaze3d/buffers/GpuBuffer;ZZ)Lcom/mojang/blaze3d/buffers/GpuBuffer$MappedView;
-		ARG 1 buffer
-		ARG 2 read
-		ARG 3 write
-	METHOD mapBuffer (Lcom/mojang/blaze3d/buffers/GpuBufferSlice;ZZ)Lcom/mojang/blaze3d/buffers/GpuBuffer$MappedView;
-		ARG 1 slice
-		ARG 2 read
-		ARG 3 write
 	METHOD verifyColorTexture (Lcom/mojang/blaze3d/textures/GpuTexture;)V
 		ARG 1 texture
 	METHOD verifyDepthTexture (Lcom/mojang/blaze3d/textures/GpuTexture;)V

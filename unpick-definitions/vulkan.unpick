@@ -906,7 +906,7 @@ group int vk_primitive_topology
 target_method org.lwjgl.vulkan.VkPipelineInputAssemblyStateCreateInfo topology (I)Lorg/lwjgl/vulkan/VkPipelineInputAssemblyStateCreateInfo;
 	param 0 vk_primitive_topology
 
-target_method net.minecraft.client.vulkan.VulkanConst toVkTopology (Lcom/mojang/blaze3d/vertex/VertexFormat$DrawMode;)I
+target_method net.minecraft.client.vulkan.VulkanConst toVkTopology (Lcom/mojang/blaze3d/vertex/DrawMode;)I
 	return vk_primitive_topology
 
 # https://docs.vulkan.org/refpages/latest/refpages/source/VkPolygonMode.html

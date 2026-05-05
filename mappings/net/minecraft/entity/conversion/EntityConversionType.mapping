@@ -9,9 +9,9 @@ CLASS net/minecraft/class_10181 net/minecraft/entity/conversion/EntityConversion
 		ARG 2 newEntity
 		ARG 3 context
 	METHOD method_63611 copyData (Lnet/minecraft/class_1308;Lnet/minecraft/class_1308;Lnet/minecraft/class_10179;)V
-		ARG 1 oldEntity
-		ARG 2 newEntity
-		ARG 3 context
+		ARG 0 oldEntity
+		ARG 1 newEntity
+		ARG 2 context
 	METHOD method_71611 copyComponent (Lnet/minecraft/class_1308;Lnet/minecraft/class_1308;Lnet/minecraft/class_9331;)V
 		ARG 0 oldEntity
 		ARG 1 newEntity

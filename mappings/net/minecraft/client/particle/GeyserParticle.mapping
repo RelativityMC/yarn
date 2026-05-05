@@ -22,5 +22,3 @@ CLASS net/minecraft/class_1_861 net/minecraft/client/particle/GeyserParticle
 		ARG 12 velocityZ
 		ARG 14 parameters
 	CLASS class_1_862 Factory
-		METHOD <init> (Lnet/minecraft/class_4002;)V
-			ARG 1 spriteProvider

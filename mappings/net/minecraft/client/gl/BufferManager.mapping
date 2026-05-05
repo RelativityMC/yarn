@@ -1,11 +1,10 @@
 CLASS net/minecraft/class_10874 net/minecraft/client/gl/BufferManager
 	METHOD method_68431 createFramebuffer ()I
-	METHOD method_68432 setupFramebuffer (IIIII)V
+	METHOD method_68432 setupFramebuffer (I[I[IIII)V
 		ARG 1 framebuffer
-		ARG 2 colorAttachment
-		ARG 3 depthAttachment
 		ARG 4 mipLevel
 		ARG 5 bindTarget
+		ARG 6 depthAttachment
 	METHOD method_68812 setupBlitFramebuffer (IIIIIIIIIIII)V
 		ARG 1 readFramebuffer
 		ARG 2 writeFramebuffer
@@ -67,4 +66,4 @@ CLASS net/minecraft/class_10874 net/minecraft/client/gl/BufferManager
 	CLASS class_10929 ARBBufferManager
 	CLASS class_10930 DefaultBufferManager
 		METHOD method_72698 getTarget (I)I
-			ARG 1 usage
+			ARG 0 usage

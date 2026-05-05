@@ -13,10 +13,9 @@ CLASS net/minecraft/class_1_715 net/minecraft/client/vulkan/VulkanCommandEncoder
 		ARG 1 primary
 	METHOD method_1_4258 wait (JJ)Z
 		ARG 3 timeoutNanos
-	METHOD method_1_4259 clearTextureColor (Lorg/lwjgl/system/MemoryStack;Lcom/mojang/blaze3d/textures/GpuTexture;I)V
+	METHOD method_1_4259 clearTextureColor (Lorg/lwjgl/system/MemoryStack;Lcom/mojang/blaze3d/textures/GpuTexture;Lorg/joml/Vector4fc;)V
 		ARG 1 memoryStack
 		ARG 2 texture
-		ARG 3 color
 	METHOD method_1_4260 clearTextureDepth (Lorg/lwjgl/system/MemoryStack;Lcom/mojang/blaze3d/textures/GpuTexture;D)V
 		ARG 1 memoryStack
 		ARG 2 texture

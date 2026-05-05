@@ -1,21 +1,7 @@
 CLASS net/minecraft/class_1_848 net/minecraft/client/render/command/MovingBlockCommandRenderer
 	FIELD field_1_6221 TYPE Lnet/minecraft/class_1_867;
 	FIELD field_1_6222 tempMatrixStack Lnet/minecraft/class_4587;
-	FIELD field_1_6223 quadRenderer Lnet/minecraft/class_1_319;
-	FIELD field_1_6224 solidQuadRenderer Lnet/minecraft/class_1_319;
-	METHOD method_1_5345 (FFFLnet/minecraft/class_777;Lnet/minecraft/class_1_382;)V
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
-		ARG 4 bakedQuad
-		ARG 5 shading
-	METHOD method_1_5346 (FFFLnet/minecraft/class_777;Lnet/minecraft/class_1_382;)V
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
-		ARG 4 bakedQuad
-		ARG 5 shading
-	METHOD method_1_5347 addQuad (Lnet/minecraft/class_4587;FFFLnet/minecraft/class_777;Lnet/minecraft/class_1_382;Lnet/minecraft/class_11515;)V
+	METHOD method_1_5347 addQuad (Lnet/minecraft/class_4587;FFFLnet/minecraft/class_777;Lnet/minecraft/class_1_382;Lnet/minecraft/class_11515;I)V
 		ARG 1 matrices
 		ARG 2 x
 		ARG 3 y

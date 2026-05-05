@@ -22,10 +22,9 @@ CLASS net/minecraft/class_5944 net/minecraft/client/gl/GlShaderProgram
 	METHOD method_1270 getGlRef ()I
 	METHOD method_34582 getUniform (Ljava/lang/String;)Lnet/minecraft/class_284;
 		ARG 1 name
-	METHOD method_62896 create (Lnet/minecraft/class_10141;Lnet/minecraft/class_10141;Lcom/mojang/blaze3d/vertex/VertexFormat;Ljava/lang/String;)Lnet/minecraft/class_5944;
+	METHOD method_62896 create (Lnet/minecraft/class_10141;Lnet/minecraft/class_10141;[Lcom/mojang/blaze3d/vertex/VertexFormat;Ljava/lang/String;)Lnet/minecraft/class_5944;
 		ARG 0 vertexShader
 		ARG 1 fragmentShader
-		ARG 2 format
 		ARG 3 name
 	METHOD method_68404 getDebugLabel ()Ljava/lang/String;
 	METHOD method_68406 getUniforms ()Ljava/util/Map;

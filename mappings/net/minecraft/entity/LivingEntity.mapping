@@ -91,7 +91,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	FIELD field_60540 FALL_FLYING_KEY Ljava/lang/String;
 	FIELD field_60541 HURT_TIME_KEY Ljava/lang/String;
 	FIELD field_60542 DEATH_TIME_KEY Ljava/lang/String;
-	FIELD field_60543 HURT_BY_TIMESTAMP_KEY Ljava/lang/String;
 	FIELD field_60544 HEALTH_KEY Ljava/lang/String;
 	FIELD field_63291 ticksSinceHandEquipping I
 	FIELD field_63292 piercingCooldowns Lit/unimi/dsi/fastutil/objects/Object2LongMap;
@@ -129,7 +128,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_6000 enterCombat ()V
 	METHOD method_6002 getDeathSound ()Lnet/minecraft/class_3414;
 	METHOD method_6003 getGlidingTicks ()I
-	METHOD method_6005 takeKnockback (DDD)V
+	METHOD method_6005 takeKnockback (DDDLnet/minecraft/class_1282;F)V
 		ARG 1 strength
 		ARG 3 x
 		ARG 5 z
@@ -240,7 +239,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_6058 getActiveHand ()Lnet/minecraft/class_1268;
 	METHOD method_6059 hasStatusEffect (Lnet/minecraft/class_6880;)Z
 		ARG 1 effect
-	METHOD method_6060 knockback (Lnet/minecraft/class_1309;)V
+	METHOD method_6060 knockback (Lnet/minecraft/class_1309;Lnet/minecraft/class_1282;F)V
 		ARG 1 target
 	METHOD method_6062 isImmobile ()Z
 	METHOD method_6063 getMaxHealth ()F
@@ -291,7 +290,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_6088 getActiveStatusEffects ()Ljava/util/Map;
 	METHOD method_6089 containsOnlyAmbientEffects (Ljava/util/Collection;)Z
 		ARG 0 effects
-	METHOD method_6090 takeShieldHit (Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;)V
+	METHOD method_6090 takeShieldHit (Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;Lnet/minecraft/class_1282;F)V
 		ARG 1 world
 		ARG 2 attacker
 	METHOD method_6091 travel (Lnet/minecraft/class_243;)V
@@ -827,7 +826,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 target
 	METHOD method_75120 getItemUseTime (F)F
 		ARG 1 baseTime
-	METHOD method_75122 knockbackTarget (Lnet/minecraft/class_1297;FLnet/minecraft/class_243;)V
+	METHOD method_75122 knockbackTarget (Lnet/minecraft/class_1297;FLnet/minecraft/class_243;Lnet/minecraft/class_1282;F)V
 		ARG 1 target
 		ARG 2 strength
 		ARG 3 playerTargetVelocity

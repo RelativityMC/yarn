@@ -45,7 +45,7 @@ CLASS net/minecraft/class_1764 net/minecraft/item/CrossbowItem
 	METHOD method_59974 (Lnet/minecraft/class_1937;Lnet/minecraft/class_1309;Lnet/minecraft/class_6880;)V
 		ARG 2 sound
 	METHOD method_59976 getLoadingSounds (Lnet/minecraft/class_1799;)Lnet/minecraft/class_1764$class_9693;
-		ARG 1 stack
+		ARG 0 stack
 	METHOD method_67186 (Lnet/minecraft/class_1937;Lnet/minecraft/class_1309;Lnet/minecraft/class_6880;)V
 		ARG 2 sound
 	CLASS class_9693 LoadingSounds

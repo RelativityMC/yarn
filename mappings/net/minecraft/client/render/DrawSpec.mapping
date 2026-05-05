@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_1_870 net/minecraft/client/render/DrawSpec
-	METHOD method_1_5291 draw (Lcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5595;III)V
+	METHOD method_1_5291 draw (Lcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/buffers/GpuBuffer;Lnet/minecraft/class_5595;III)V
 		ARG 1 vertexBuffer
 		ARG 2 indexBuffer
 		ARG 3 indexType

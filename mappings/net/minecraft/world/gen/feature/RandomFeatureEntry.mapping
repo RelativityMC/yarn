@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_3226 net/minecraft/world/gen/feature/RandomFeatureEntry
-	FIELD field_14011 chance F
-	FIELD field_14013 feature Lnet/minecraft/class_6880;
+	FIELD comp_1_797 chance F
+	FIELD comp_1_798 feature Lnet/minecraft/class_6880;
 	FIELD field_24864 CODEC Lcom/mojang/serialization/Codec;
 	METHOD <init> (Lnet/minecraft/class_6880;F)V
 		ARG 1 feature

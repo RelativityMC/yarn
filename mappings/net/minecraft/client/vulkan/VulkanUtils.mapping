@@ -20,9 +20,8 @@ CLASS net/minecraft/class_1_678 net/minecraft/client/vulkan/VulkanUtils
 	METHOD method_1_4039 isDisjointFrom (JJ)Z
 		ARG 0 actual
 		ARG 2 required
-	METHOD method_1_4040 setClearColor (Lorg/lwjgl/vulkan/VkClearColorValue;I)Lorg/lwjgl/vulkan/VkClearColorValue;
+	METHOD method_1_4040 setClearColor (Lorg/lwjgl/vulkan/VkClearColorValue;Lorg/joml/Vector4fc;)Lorg/lwjgl/vulkan/VkClearColorValue;
 		ARG 0 clearColorValue
-		ARG 1 color
 	METHOD method_1_4041 describe (I)Ljava/lang/String;
 		ARG 0 code
 	METHOD method_1_4042 reportWindowError (ILjava/lang/String;Lnet/minecraft/class_1_739$class_1_740;)V

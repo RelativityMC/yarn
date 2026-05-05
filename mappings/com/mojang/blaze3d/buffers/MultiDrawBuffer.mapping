@@ -11,12 +11,10 @@ CLASS net/minecraft/class_1_807 com/mojang/blaze3d/buffers/MultiDrawBuffer
 	METHOD <init> (Ljava/util/function/Supplier;I)V
 		ARG 1 labelGetter
 		ARG 2 maxSize
-	METHOD method_1_4944 appendDraw (Lcom/mojang/blaze3d/vertex/VertexFormat;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5596;)Lnet/minecraft/class_1_807$class_1_808;
+	METHOD method_1_4944 appendDraw (Lcom/mojang/blaze3d/vertex/VertexFormat;Lnet/minecraft/class_5596;)Lnet/minecraft/class_1_807$class_1_808;
 		ARG 1 vertexFormat
-		ARG 2 drawMode
-	METHOD method_1_4945 appendDraw (Lcom/mojang/blaze3d/vertex/VertexFormat;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5596;Lnet/minecraft/class_8251;)Lnet/minecraft/class_1_807$class_1_808;
+	METHOD method_1_4945 appendDraw (Lcom/mojang/blaze3d/vertex/VertexFormat;Lnet/minecraft/class_5596;Lnet/minecraft/class_8251;)Lnet/minecraft/class_1_807$class_1_808;
 		ARG 1 vertexFormat
-		ARG 2 drawMode
 		ARG 3 vertexSorter
 	METHOD method_1_4946 collectCentroids (Lnet/minecraft/class_1_807$class_1_808;)Lnet/minecraft/class_11899;
 		ARG 0 multiBuffer
@@ -39,20 +37,19 @@ CLASS net/minecraft/class_1_807 com/mojang/blaze3d/buffers/MultiDrawBuffer
 		FIELD field_1_5748 vertexFormat Lcom/mojang/blaze3d/vertex/VertexFormat;
 		FIELD field_1_5749 totalIndexCount I
 		FIELD field_1_5750 indexOffset I
-		FIELD field_1_5751 drawMode Lcom/mojang/blaze3d/vertex/VertexFormat$class_5596;
+		FIELD field_1_5751 drawMode Lnet/minecraft/class_5596;
 		FIELD field_1_5752 vertexSorter Lnet/minecraft/class_8251;
 		FIELD field_1_5753 totalVertexSize I
 		FIELD field_1_5754 segments Ljava/util/List;
 		FIELD field_1_5755 totalVertexCount I
 		FIELD field_1_5756 vertexOffset I
-		METHOD <init> (Lcom/mojang/blaze3d/vertex/VertexFormat;Lcom/mojang/blaze3d/vertex/VertexFormat$class_5596;Lnet/minecraft/class_8251;)V
+		METHOD <init> (Lcom/mojang/blaze3d/vertex/VertexFormat;Lnet/minecraft/class_5596;Lnet/minecraft/class_8251;)V
 			ARG 1 vertexFormat
-			ARG 2 drawMode
 			ARG 3 vertexSorter
 		METHOD method_1_4957 add (Lnet/minecraft/class_9801;)V
 			ARG 1 buffer
 		METHOD method_1_4958 clear ()V
-		METHOD method_1_4959 getIndexType ()Lcom/mojang/blaze3d/vertex/VertexFormat$class_5595;
+		METHOD method_1_4959 getIndexType ()Lnet/minecraft/class_5595;
 		METHOD method_1_4960 isEmpty ()Z
 	CLASS class_1_809 DrawCall
 	CLASS class_1_810 BufferPool

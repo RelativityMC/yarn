@@ -77,7 +77,5 @@ CLASS net/minecraft/class_1_757 net/minecraft/block/entity/PotentSulfurBlockEnti
 		ARG 2 state
 		ARG 3 blockEntity
 	METHOD method_1_5337 resetCountdown ()V
-	METHOD method_1_5338 addGeyserParticles (Lnet/minecraft/class_1937;Lnet/minecraft/class_243;Lnet/minecraft/class_243;)V
+	METHOD method_1_5338 addGeyserParticles (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;)V
 		ARG 0 world
-		ARG 1 pos
-		ARG 2 surfacePos

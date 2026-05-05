@@ -5,9 +5,6 @@ CLASS net/minecraft/class_6686 net/minecraft/world/gen/surfacebuilder/MaterialRu
 	FIELD field_35494 STONE_DEPTH_CEILING Lnet/minecraft/class_6686$class_6693;
 	FIELD field_36341 STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH_RANGE_6 Lnet/minecraft/class_6686$class_6693;
 	FIELD field_36342 STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH_RANGE_30 Lnet/minecraft/class_6686$class_6693;
-	METHOD method_1_4405 gradient (Lnet/minecraft/class_5321;Ljava/util/List;)Lnet/minecraft/class_6686$class_6708;
-		ARG 0 noise
-		ARG 1 gradient
 	METHOD method_39045 steepSlope ()Lnet/minecraft/class_6686$class_6693;
 	METHOD method_39046 water (II)Lnet/minecraft/class_6686$class_6693;
 		ARG 0 offset
@@ -61,16 +58,6 @@ CLASS net/minecraft/class_6686 net/minecraft/world/gen/surfacebuilder/MaterialRu
 		ARG 0 registry
 		ARG 1 id
 		ARG 2 codec
-	CLASS class_1_728 NoiseGradientBlockStateRule
-	CLASS class_1_729 NoiseGradientMaterialRule
-		FIELD field_1_3713 MAP_CODEC Lcom/mojang/serialization/MapCodec;
-		FIELD field_1_3714 OPTIONAL_STATE_CODEC Lcom/mojang/serialization/Codec;
-		METHOD apply (Ljava/lang/Object;)Ljava/lang/Object;
-			ARG 1 context
-		METHOD method_1_4407 (Ljava/util/Optional;)Lnet/minecraft/class_2680;
-			ARG 0 state
-		METHOD method_1_4408 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 0 instance
 	CLASS class_1_838 BiomeMaterialRule
 		METHOD apply (Ljava/lang/Object;)Ljava/lang/Object;
 			ARG 1 context

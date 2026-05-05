@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_5595 com/mojang/blaze3d/vertex/IndexType
+	FIELD field_27375 size I
+	METHOD <init> (Ljava/lang/String;II)V
+		ARG 3 size
+	METHOD method_31972 smallestFor (I)Lnet/minecraft/class_5595;
+		ARG 0 indexCount

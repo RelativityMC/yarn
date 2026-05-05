@@ -6,10 +6,10 @@ CLASS net/minecraft/class_9206 net/minecraft/block/enums/VaultState
 		ARG 4 light
 	METHOD method_56801 getLuminance ()I
 	METHOD method_56802 ejectItem (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_1799;F)V
-		ARG 1 world
-		ARG 2 pos
-		ARG 3 stack
-		ARG 4 pitchModifier
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 stack
+		ARG 3 pitchModifier
 	METHOD method_56803 update (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_9203;Lnet/minecraft/class_9204;Lnet/minecraft/class_9205;)Lnet/minecraft/class_9206;
 		ARG 1 world
 		ARG 2 pos

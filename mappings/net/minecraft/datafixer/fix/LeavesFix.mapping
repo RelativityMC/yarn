@@ -78,7 +78,7 @@ CLASS net/minecraft/class_1191 net/minecraft/datafixer/fix/LeavesFix
 		METHOD method_5081 (Ljava/util/List;)Ljava/util/List;
 			ARG 0 palettes
 		METHOD method_5082 computeFlags (Ljava/lang/String;ZI)I
-			ARG 1 leafBlockName
-			ARG 2 persistent
-			ARG 3 distance
+			ARG 0 leafBlockName
+			ARG 1 persistent
+			ARG 2 distance
 		METHOD method_5083 finalizeFix (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;

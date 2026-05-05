@@ -1,7 +1,5 @@
 CLASS net/minecraft/class_10869 net/minecraft/client/gl/VertexBufferManager
-	METHOD method_68428 setupBuffer (Lcom/mojang/blaze3d/vertex/VertexFormat;Lnet/minecraft/class_10859;)V
-		ARG 1 format
-		ARG 2 into
+	METHOD method_68428 setupBuffer ([Lcom/mojang/blaze3d/vertex/VertexFormat;[Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Lnet/minecraft/class_10869$class_10872;)Lnet/minecraft/class_10869$class_10872;
 	METHOD method_68429 create (Lorg/lwjgl/opengl/GLCapabilities;Lnet/minecraft/class_10861;Ljava/util/Set;)Lnet/minecraft/class_10869;
 		ARG 0 capabilities
 		ARG 1 labeler
@@ -11,8 +9,7 @@ CLASS net/minecraft/class_10869 net/minecraft/client/gl/VertexBufferManager
 		FIELD field_57890 labeler Lnet/minecraft/class_10861;
 		METHOD <init> (Lnet/minecraft/class_10861;)V
 			ARG 1 labeler
-		METHOD method_68430 setupBuffer (Lcom/mojang/blaze3d/vertex/VertexFormat;Z)V
-			ARG 0 format
+		METHOD method_68430 setupBuffer ([Lcom/mojang/blaze3d/vertex/VertexFormat;Z[Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
 			ARG 1 vbaIsNew
 	CLASS class_10871 ARBVertexBufferManager
 		FIELD field_57891 cache Ljava/util/Map;
@@ -22,9 +19,5 @@ CLASS net/minecraft/class_10869 net/minecraft/client/gl/VertexBufferManager
 			ARG 1 labeler
 	CLASS class_10872 AllocatedBuffer
 		FIELD field_57893 glId I
-		FIELD field_57894 vertexFormat Lcom/mojang/blaze3d/vertex/VertexFormat;
-		FIELD field_57895 buffer Lnet/minecraft/class_10859;
-		METHOD <init> (ILcom/mojang/blaze3d/vertex/VertexFormat;Lnet/minecraft/class_10859;)V
+		METHOD <init> (I[Lcom/mojang/blaze3d/vertex/VertexFormat;)V
 			ARG 1 glId
-			ARG 2 vertexFormat
-			ARG 3 buffer

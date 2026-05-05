@@ -1,6 +1,4 @@
 CLASS net/minecraft/class_6725 net/minecraft/world/gen/surfacebuilder/VanillaSurfaceRules
-	FIELD field_1_3645 CINNABAR Lnet/minecraft/class_2680;
-	FIELD field_1_3646 SULFUR Lnet/minecraft/class_2680;
 	FIELD field_35310 WARPED_NYLIUM Lnet/minecraft/class_6686$class_6708;
 	FIELD field_35311 NETHER_WART_BLOCK Lnet/minecraft/class_6686$class_6708;
 	FIELD field_35312 CRIMSON_NYLIUM Lnet/minecraft/class_6686$class_6708;

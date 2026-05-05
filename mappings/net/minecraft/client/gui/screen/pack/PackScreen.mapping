@@ -49,11 +49,11 @@ CLASS net/minecraft/class_5375 net/minecraft/client/gui/screen/pack/PackScreen
 	METHOD method_30291 closeDirectoryWatcher ()V
 	METHOD method_52760 streamFileNames (Ljava/util/Collection;)Ljava/util/stream/Stream;
 		ARG 0 paths
-	METHOD method_74709 setSearch (Ljava/lang/String;)V
+	METHOD method_74709 setSearch (Ljava/lang/String;Lnet/minecraft/class_5369$class_5372;)V
 		ARG 1 search
 	METHOD method_74710 (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/class_5369$class_5371;)Z
 		ARG 2 pack
-	METHOD method_74711 filter (Ljava/lang/String;Ljava/util/stream/Stream;Lnet/minecraft/class_521;)V
+	METHOD method_74711 filter (Ljava/lang/String;Ljava/util/stream/Stream;Lnet/minecraft/class_521;Lnet/minecraft/class_5369$class_5372;)V
 		ARG 1 search
 		ARG 2 packs
 		ARG 3 listWidget

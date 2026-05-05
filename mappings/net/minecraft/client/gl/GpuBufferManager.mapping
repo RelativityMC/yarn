@@ -1,10 +1,4 @@
 CLASS net/minecraft/class_11266 net/minecraft/client/gl/GpuBufferManager
-	METHOD method_71016 mapBufferRange (Lnet/minecraft/class_10874;Lnet/minecraft/class_10859;JJI)Lnet/minecraft/class_10859$class_11269;
-		ARG 1 bufferManager
-		ARG 2 buffer
-		ARG 3 offset
-		ARG 5 length
-		ARG 7 flags
 	METHOD method_71017 createBuffer (Lnet/minecraft/class_10874;Ljava/util/function/Supplier;IJ)Lnet/minecraft/class_10859;
 		ARG 1 bufferManager
 		ARG 2 debugLabelSupplier
@@ -19,9 +13,4 @@ CLASS net/minecraft/class_11266 net/minecraft/client/gl/GpuBufferManager
 		ARG 0 capabilities
 		ARG 1 usedCapabilities
 	CLASS class_11267 ARBGpuBufferManager
-		METHOD method_71021 mapBufferRange (Lnet/minecraft/class_10874;IIJ)Ljava/nio/ByteBuffer;
-			ARG 1 bufferManager
-			ARG 2 usage
-			ARG 3 buffer
-			ARG 4 length
 	CLASS class_11268 DirectGpuBufferManager

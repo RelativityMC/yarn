@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_12331 net/minecraft/world/attribute/timeline/Timelines
 	FIELD field_64411 NIGHT_SKY_LIGHT_COLOR I
-	FIELD field_64414 NIGHT_FOG_COLOR I
 	FIELD field_64415 NIGHT_CLOUD_COLOR I
 	METHOD method_76494 (Lnet/minecraft/class_12301;Lnet/minecraft/class_12306$class_12307;)V
 		ARG 1 track

@@ -28,7 +28,7 @@ CLASS net/minecraft/class_9801 net/minecraft/client/render/BuiltBuffer
 		METHOD method_1_4745 emitVertexIndices (Ljava/nio/ByteBuffer;Lnet/minecraft/class_8251;)V
 			ARG 1 buffer
 			ARG 2 vertexSorter
-		METHOD method_60823 getStorer (JLcom/mojang/blaze3d/vertex/VertexFormat$class_5595;)Lit/unimi/dsi/fastutil/ints/IntConsumer;
+		METHOD method_60823 getStorer (JLnet/minecraft/class_5595;)Lit/unimi/dsi/fastutil/ints/IntConsumer;
 			ARG 1 pointer
 			ARG 3 indexType
 		METHOD method_60824 sortAndStore (Lnet/minecraft/class_9799;Lnet/minecraft/class_8251;)Lnet/minecraft/class_9799$class_9800;

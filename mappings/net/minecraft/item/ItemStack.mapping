@@ -574,9 +574,8 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 	METHOD method_74887 set (Lnet/minecraft/class_9336;)Ljava/lang/Object;
 		ARG 1 component
 	METHOD method_75218 getSwingAnimation ()Lnet/minecraft/class_12126;
-	METHOD method_75220 getDamageSource (Lnet/minecraft/class_1309;Ljava/util/function/Supplier;)Lnet/minecraft/class_1282;
+	METHOD method_75220 getDamageSource (Lnet/minecraft/class_1309;)Lnet/minecraft/class_1282;
 		ARG 1 attacker
-		ARG 2 fallbackSupplier
 	METHOD method_75221 (Lnet/minecraft/class_1309;Lnet/minecraft/class_6880;)Lnet/minecraft/class_1282;
 		ARG 1 typeEntry
 	METHOD method_75222 shouldSkipHandAnimationOnSwap (Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;Ljava/util/function/Predicate;)Z

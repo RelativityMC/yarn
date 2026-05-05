@@ -446,10 +446,10 @@ target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/pipeli
 target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/pipeline/BlendOperation;)I
 	return gl_blend_equation_mode
 
-target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/vertex/VertexFormat$DrawMode;)I
+target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/vertex/DrawMode;)I
 	return gl_draw_mode
 
-target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/vertex/VertexFormat$IndexType;)I
+target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/vertex/IndexType;)I
 	return gl_type
 
 target_method com.mojang.blaze3d.opengl.GlConst toGl (Lnet/minecraft/client/texture/NativeImage$Format;)I
@@ -495,7 +495,7 @@ target_method com.mojang.blaze3d.opengl.GlStateManager _glFramebufferTexture2D (
 	param 2 gl_tex_target
 target_method org.lwjgl.opengl.ARBDirectStateAccess glNamedFramebufferTexture (IIII)V
 	param 1 gl_framebuffer_attachment
-target_method net.minecraft.client.gl.BufferManager setupFramebuffer (IIIII)V
+target_method net.minecraft.client.gl.BufferManager setupFramebuffer (I[I[IIII)V
 	param 4 gl_framebuffer_target
 
 target_method com.mojang.blaze3d.opengl.GlStateManager _glBlitFrameBuffer (IIIIIIIIII)V

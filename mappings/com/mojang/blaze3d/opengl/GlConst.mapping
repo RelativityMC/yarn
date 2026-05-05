@@ -1,5 +1,3 @@
 CLASS com/mojang/blaze3d/opengl/GlConst
-	METHOD toGl (Lcom/mojang/blaze3d/vertex/VertexFormat$class_5595;)I
+	METHOD toGl (Lnet/minecraft/class_5595;)I
 		ARG 0 type
-	METHOD toGl (Lcom/mojang/blaze3d/vertex/VertexFormat$class_5596;)I
-		ARG 0 drawMode

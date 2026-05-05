@@ -1,8 +1,7 @@
 CLASS net/minecraft/class_1_686 net/minecraft/client/render/StagingBuffer
 	FIELD field_1_3522 nextOffset I
 	FIELD field_1_3523 numActiveSlices I
-	METHOD method_1_2180 reset (Lcom/mojang/blaze3d/systems/CommandEncoder;)V
-		ARG 1 commandEncoder
+	METHOD method_1_2180 reset ()V
 	METHOD method_1_2181 copyTo (Lcom/mojang/blaze3d/systems/CommandEncoder;Lcom/mojang/blaze3d/buffers/GpuBuffer;JJJ)V
 		ARG 1 commandEncoder
 		ARG 2 buffer
@@ -18,8 +17,7 @@ CLASS net/minecraft/class_1_686 net/minecraft/client/render/StagingBuffer
 		ARG 1 commandEncoder
 	METHOD method_1_4146 copyFrom (Ljava/nio/ByteBuffer;)Lnet/minecraft/class_1_686$class_1_687;
 		ARG 1 byteBuffer
-	METHOD method_1_4147 resetIfEmpty (Lcom/mojang/blaze3d/systems/CommandEncoder;)V
-		ARG 1 commandEncoder
+	METHOD method_1_4147 resetIfEmpty ()V
 	CLASS class_1_300 Direct
 		FIELD field_1_1775 buffer Ljava/nio/ByteBuffer;
 		METHOD <init> (I)V
@@ -27,12 +25,11 @@ CLASS net/minecraft/class_1_686 net/minecraft/client/render/StagingBuffer
 	CLASS class_1_301 Ring
 		FIELD field_1_1776 subData Ljava/nio/ByteBuffer;
 		FIELD field_1_1777 sub Lcom/mojang/blaze3d/buffers/GpuBuffer;
-		FIELD field_1_1778 subView Lcom/mojang/blaze3d/buffers/GpuBuffer$MappedView;
+		FIELD field_1_1778 subView Lcom/mojang/blaze3d/buffers/GpuBufferSlice$class_1_892;
 		FIELD field_1_1779 ringBuffer Lnet/minecraft/class_11285;
-		METHOD <init> (Ljava/lang/String;Lcom/mojang/blaze3d/systems/GpuDevice;I)V
+		METHOD <init> (Ljava/lang/String;I)V
 			ARG 1 name
-			ARG 2 device
-			ARG 3 size
+			ARG 2 size
 	CLASS class_1_687 Slice
 		FIELD field_1_3524 closed Z
 		FIELD field_1_3525 offset I

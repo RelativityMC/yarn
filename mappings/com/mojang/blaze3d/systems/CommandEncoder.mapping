@@ -7,10 +7,12 @@ CLASS com/mojang/blaze3d/systems/CommandEncoder
 		ARG 3 backend
 	METHOD clearColorAndDepthTextures (Lcom/mojang/blaze3d/textures/GpuTexture;Lorg/joml/Vector4fc;Lcom/mojang/blaze3d/textures/GpuTexture;D)V
 		ARG 1 colorAttachment
+		ARG 2 clearColor
 		ARG 3 depthAttachment
 		ARG 4 depth
 	METHOD clearColorAndDepthTextures (Lcom/mojang/blaze3d/textures/GpuTexture;Lorg/joml/Vector4fc;Lcom/mojang/blaze3d/textures/GpuTexture;DIIII)V
 		ARG 1 colorAttachment
+		ARG 2 clearColor
 		ARG 3 depthAttachment
 		ARG 4 depth
 		ARG 6 scissorX
@@ -19,6 +21,7 @@ CLASS com/mojang/blaze3d/systems/CommandEncoder
 		ARG 9 scissorTop
 	METHOD clearColorTexture (Lcom/mojang/blaze3d/textures/GpuTexture;Lorg/joml/Vector4fc;)V
 		ARG 1 texture
+		ARG 2 clearColor
 	METHOD clearDepthTexture (Lcom/mojang/blaze3d/textures/GpuTexture;D)V
 		ARG 1 texture
 		ARG 2 depth
@@ -54,17 +57,22 @@ CLASS com/mojang/blaze3d/systems/CommandEncoder
 	METHOD createRenderPass (Ljava/util/function/Supplier;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/Optional;)Lcom/mojang/blaze3d/systems/RenderPass;
 		ARG 1 labelGetter
 		ARG 2 colorAttachment
+		ARG 3 clearColor
 	METHOD createRenderPass (Ljava/util/function/Supplier;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/Optional;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/OptionalDouble;)Lcom/mojang/blaze3d/systems/RenderPass;
 		ARG 1 labelGetter
 		ARG 2 colorAttachment
+		ARG 3 clearColor
 		ARG 4 depthAttachment
 		ARG 5 clearDepth
 	METHOD createRenderPass (Ljava/util/function/Supplier;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/Optional;Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/OptionalDouble;Lcom/mojang/blaze3d/systems/RenderPass$class_1_837;)Lcom/mojang/blaze3d/systems/RenderPass;
 		ARG 1 labelGetter
 		ARG 2 colorAttachment
+		ARG 3 clearColor
 		ARG 4 depthAttachment
 		ARG 5 clearDepth
 		ARG 6 renderArea
+	METHOD createRenderPass (Lnet/minecraft/class_1_900;)Lcom/mojang/blaze3d/systems/RenderPass;
+		ARG 1 description
 	METHOD verifyColorTexture (Lcom/mojang/blaze3d/textures/GpuTexture;)V
 		ARG 1 texture
 	METHOD verifyDepthTexture (Lcom/mojang/blaze3d/textures/GpuTexture;)V

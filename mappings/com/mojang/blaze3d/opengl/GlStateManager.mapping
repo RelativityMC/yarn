@@ -29,10 +29,17 @@ CLASS com/mojang/blaze3d/opengl/GlStateManager
 		ARG 2 pname
 	METHOD _glBindAttribLocation (IILjava/lang/CharSequence;)V
 		ARG 1 index
+	METHOD _glBindFramebuffer (II)V
+		ARG 0 target
+		ARG 1 framebuffer
 	METHOD _glBindVertexArray (I)V
 		ARG 0 array
 	METHOD _glFramebufferTexture2D (IIIII)V
+		ARG 0 target
+		ARG 1 attachment
 		ARG 2 textureTarget
+		ARG 3 texture
+		ARG 4 level
 	METHOD _glMapBufferRange (IJJI)Ljava/nio/ByteBuffer;
 		ARG 3 range
 	METHOD _glUniform1i (II)V
@@ -73,6 +80,8 @@ CLASS com/mojang/blaze3d/opengl/GlStateManager
 		ARG 4 pointer
 	METHOD _vertexAttribPointer (IIIZIJ)V
 		ARG 5 pointer
+	METHOD getFrameBuffer (I)I
+		ARG 0 target
 	METHOD glBlendFuncSeparate (IIII)V
 		ARG 0 srcFactorRgb
 		ARG 1 dstFactorRgb

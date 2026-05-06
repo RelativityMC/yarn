@@ -5,6 +5,9 @@ CLASS net/minecraft/class_9848 net/minecraft/util/math/ColorHelper
 	FIELD field_63679 LINEAR_TO_SRGB [B
 	METHOD method_1_2566 gray (F)I
 		ARG 0 value
+	METHOD method_1_5395 setRgbaVector (Lorg/joml/Vector4f;I)Lorg/joml/Vector4f;
+		ARG 0 vec
+		ARG 1 argb
 	METHOD method_61317 getWhite (F)I
 		ARG 0 alpha
 	METHOD method_61318 fromFloats (FFFF)I

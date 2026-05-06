@@ -1,7 +1,10 @@
 CLASS net/minecraft/class_11391 net/minecraft/client/texture/GlTextureView
+	FIELD field_1_6274 keys Ljava/util/List;
+	FIELD field_1_6275 framebufferManager Lnet/minecraft/class_1_894;
 	FIELD field_60566 closed Z
 	FIELD field_64518 UNINITIALIZED I
 	METHOD <init> (Lnet/minecraft/class_10868;IILnet/minecraft/class_1_894;)V
 		ARG 1 texture
 		ARG 2 baseMipLevel
 		ARG 3 mipLevels
+		ARG 4 framebufferManager

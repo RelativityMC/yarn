@@ -16,3 +16,7 @@ CLASS net/minecraft/class_1_472 net/minecraft/util/math/floatprovider/FloatProvi
 		ARG 0 provider
 	METHOD method_1_2988 (Lnet/minecraft/class_5863;)Lcom/mojang/datafixers/util/Either;
 		ARG 0 provider
+	METHOD method_1_5442 atLeast (F)Lcom/mojang/serialization/Codec;
+		ARG 0 min
+	METHOD method_1_5443 (FLnet/minecraft/class_5863;)Lcom/mojang/serialization/DataResult;
+		ARG 1 provider

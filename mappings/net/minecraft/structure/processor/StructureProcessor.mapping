@@ -1,9 +1,11 @@
 CLASS net/minecraft/class_3491 net/minecraft/structure/processor/StructureProcessor
 	METHOD method_1_4636 getCodec ()Lcom/mojang/serialization/MapCodec;
+	METHOD method_1_5456 alwaysRun ()Z
 	METHOD method_15110 process (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;Lnet/minecraft/class_3499$class_3501;Lnet/minecraft/class_3492;)Lnet/minecraft/class_3499$class_3501;
 		ARG 1 world
 		ARG 2 pos
 		ARG 3 pivot
+		ARG 4 originalPos
 		ARG 5 currentBlockInfo
 		ARG 6 data
 	METHOD method_49887 reprocess (Lnet/minecraft/class_5425;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;Ljava/util/List;Ljava/util/List;Lnet/minecraft/class_3492;)Ljava/util/List;

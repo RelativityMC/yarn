@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_899 net/minecraft/client/gl/GlTextureLike
+	METHOD method_1_5421 addKey (Lnet/minecraft/class_1_894$class_1_895;)V
+		ARG 1 key
+	METHOD method_1_5422 getBaseMipLevel ()I
+	METHOD method_1_5423 removeKey (Lnet/minecraft/class_1_894$class_1_895;)V
+		ARG 1 key
+	METHOD method_68427 getGlId ()I

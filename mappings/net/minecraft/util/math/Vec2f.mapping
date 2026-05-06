@@ -14,6 +14,10 @@ CLASS net/minecraft/class_241 net/minecraft/util/math/Vec2f
 	METHOD <init> (FF)V
 		ARG 1 x
 		ARG 2 y
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other
+	METHOD method_1_5398 rotate (D)Lnet/minecraft/class_241;
+		ARG 1 angle
 	METHOD method_35581 normalize ()Lnet/minecraft/class_241;
 	METHOD method_35582 multiply (F)Lnet/minecraft/class_241;
 		ARG 1 value

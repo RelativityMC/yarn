@@ -8,6 +8,9 @@ CLASS net/minecraft/class_1_726 net/minecraft/entity/passive/SulfurCubeArchetype
 	FIELD field_1_3701 SLOW_FLAT Lnet/minecraft/class_5321;
 	FIELD field_1_3702 SLOW_SLIDING Lnet/minecraft/class_5321;
 	FIELD field_1_3703 STICKY Lnet/minecraft/class_5321;
+	FIELD field_1_6080 EXPLOSIVE Lnet/minecraft/class_5321;
+	FIELD field_1_6328 HOT Lnet/minecraft/class_5321;
+	FIELD field_1_6329 SLOW_BOUNCY Lnet/minecraft/class_5321;
 	METHOD method_1_4354 add (Lnet/minecraft/class_6880;D)Ljava/util/function/Function;
 		ARG 0 attribute
 		ARG 1 value
@@ -35,3 +38,14 @@ CLASS net/minecraft/class_1_726 net/minecraft/entity/passive/SulfurCubeArchetype
 		ARG 2 itemTag
 		ARG 3 attributes
 		ARG 4 buoyant
+		ARG 5 explosion
+		ARG 6 contactDamage
+		ARG 7 knockbackModifiers
+	METHOD method_1_5435 contactDamage (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_5863;Z)Lnet/minecraft/class_1_719$class_1_896;
+		ARG 0 registry
+		ARG 1 damageType
+		ARG 2 amount
+		ARG 3 attributeToSource
+	METHOD method_1_5436 knockback (FF)Lnet/minecraft/class_1_719$class_1_898;
+		ARG 0 horizontalPower
+		ARG 1 verticalPower

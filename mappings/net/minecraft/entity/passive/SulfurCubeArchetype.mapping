@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_1_719 net/minecraft/entity/passive/SulfurCubeArchetype
+	FIELD field_1_6320 defaultKnockbackModifiers Lnet/minecraft/class_1_719$class_1_898;
 	METHOD method_1_4341 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
 	CLASS class_1_720 AttributeEntry
@@ -12,3 +13,12 @@ CLASS net/minecraft/class_1_719 net/minecraft/entity/passive/SulfurCubeArchetype
 			ARG 0 attribute
 			ARG 1 amount
 			ARG 3 archetype
+	CLASS class_1_896 ContactDamage
+		METHOD method_1_5418 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+	CLASS class_1_897 Explosion
+		METHOD method_1_5419 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+	CLASS class_1_898 KnockbackModifiers
+		METHOD method_1_5420 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance

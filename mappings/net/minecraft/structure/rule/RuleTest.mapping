@@ -1,6 +1,10 @@
 CLASS net/minecraft/class_3825 net/minecraft/structure/rule/RuleTest
 	COMMENT Rule tests are used in structure generation to check if a block state matches some condition.
 	FIELD field_25012 TYPE_CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_1_5454 test (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)Z
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 random
 	METHOD method_16766 getType ()Lnet/minecraft/class_3827;
 	METHOD method_16768 test (Lnet/minecraft/class_2680;Lnet/minecraft/class_5819;)Z
 		ARG 1 state

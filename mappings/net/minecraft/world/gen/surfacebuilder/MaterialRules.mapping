@@ -5,6 +5,13 @@ CLASS net/minecraft/class_6686 net/minecraft/world/gen/surfacebuilder/MaterialRu
 	FIELD field_35494 STONE_DEPTH_CEILING Lnet/minecraft/class_6686$class_6693;
 	FIELD field_36341 STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH_RANGE_6 Lnet/minecraft/class_6686$class_6693;
 	FIELD field_36342 STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH_RANGE_30 Lnet/minecraft/class_6686$class_6693;
+	METHOD method_1_5437 noiseThreshold3d (Lnet/minecraft/class_5321;D)Lnet/minecraft/class_6686$class_6693;
+		ARG 0 noise
+		ARG 1 min
+	METHOD method_1_5438 noiseThreshold3d (Lnet/minecraft/class_5321;DD)Lnet/minecraft/class_6686$class_6693;
+		ARG 0 noise
+		ARG 1 min
+		ARG 3 max
 	METHOD method_39045 steepSlope ()Lnet/minecraft/class_6686$class_6693;
 	METHOD method_39046 water (II)Lnet/minecraft/class_6686$class_6693;
 		ARG 0 offset
@@ -89,6 +96,8 @@ CLASS net/minecraft/class_6686 net/minecraft/world/gen/surfacebuilder/MaterialRu
 		FIELD field_1_5962 currentBiome Lnet/minecraft/class_6880;
 		FIELD field_1_5963 includedBiomes Ljava/util/Set;
 			COMMENT Used for optimizing {@link BiomeMaterialRule}.
+		FIELD field_1_6330 cache2d Ljava/util/Map;
+		FIELD field_1_6331 cache3d Ljava/util/Map;
 		FIELD field_35233 surfaceBuilder Lnet/minecraft/class_6724;
 		FIELD field_35234 biomeTemperaturePredicate Lnet/minecraft/class_6686$class_6692;
 		FIELD field_35235 steepSlopePredicate Lnet/minecraft/class_6686$class_6692;
@@ -127,6 +136,13 @@ CLASS net/minecraft/class_6686 net/minecraft/world/gen/surfacebuilder/MaterialRu
 			ARG 6 heightContext
 			ARG 7 includedBiomes
 		METHOD method_1_5130 getCurrentBiome ()Lnet/minecraft/class_6880;
+		METHOD method_1_5439 computeSupplier2d (Lnet/minecraft/class_5321;)Ljava/util/function/DoubleSupplier;
+			ARG 1 noise
+		METHOD method_1_5440 computeSupplier3d (Lnet/minecraft/class_5321;)Ljava/util/function/DoubleSupplier;
+			ARG 1 noise
+		METHOD method_1_5441 getSupplier (Lnet/minecraft/class_5321;Z)Ljava/util/function/DoubleSupplier;
+			ARG 1 noiseParams
+			ARG 2 is3d
 		METHOD method_39072 initHorizontalContext (II)V
 			ARG 1 blockX
 			ARG 2 blockZ
@@ -142,6 +158,12 @@ CLASS net/minecraft/class_6686 net/minecraft/world/gen/surfacebuilder/MaterialRu
 		METHOD method_39904 chunkToBlockCoord (I)I
 			ARG 0 chunkCoord
 		METHOD method_61804 getSeaLevel ()I
+		CLASS 1 1
+			FIELD field_1_6332 lastQueriedValue D
+			FIELD field_1_6333 lastQueriedPos J
+		CLASS 2 2
+			FIELD field_1_6336 lastQueriedValue D
+			FIELD field_1_6337 lastQueriedPos J
 		CLASS class_6695 NegativeRunDepthPredicate
 			METHOD <init> (Lnet/minecraft/class_6686$class_6694;)V
 				ARG 1 context

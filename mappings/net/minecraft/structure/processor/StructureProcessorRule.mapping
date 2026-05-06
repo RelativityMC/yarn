@@ -25,6 +25,7 @@ CLASS net/minecraft/class_3821 net/minecraft/structure/processor/StructureProces
 		ARG 1 random
 		ARG 2 nbt
 	METHOD method_16762 test (Lnet/minecraft/class_4538;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)Z
+		ARG 1 world
 		ARG 2 input
 		ARG 3 originalPos
 		ARG 4 currentPos

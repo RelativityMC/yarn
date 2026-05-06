@@ -1,0 +1,25 @@
+CLASS net/minecraft/class_1_894 net/minecraft/client/gl/GlFramebufferManager
+	FIELD field_1_6294 framebuffersByAttachment Lit/unimi/dsi/fastutil/objects/Object2IntMap;
+	METHOD method_1_5412 create (Lnet/minecraft/class_1_894$class_1_895;Lnet/minecraft/class_10874;Ljava/util/List;Lnet/minecraft/class_1_899;)I
+		ARG 1 key
+		ARG 2 bufferManager
+		ARG 3 colorTextures
+		ARG 4 depthTexture
+	METHOD method_1_5413 remove (Lnet/minecraft/class_1_894$class_1_895;)V
+		ARG 1 key
+	METHOD method_1_5414 get (Lnet/minecraft/class_10874;Ljava/util/List;Lnet/minecraft/class_1_899;)I
+		ARG 1 bufferManager
+		ARG 2 colorTextures
+		ARG 3 depthTexture
+	METHOD method_1_5415 (Lnet/minecraft/class_1_894$class_1_895;Lnet/minecraft/class_10874;Ljava/util/List;Lnet/minecraft/class_1_899;Ljava/lang/Object;)I
+		ARG 5 key
+	CLASS class_1_895 AttachmentsKey
+		FIELD field_1_6295 textures Ljava/util/List;
+		FIELD field_1_6296 idsAndBaseMipLevels [I
+			COMMENT An interleaved array of OpenGL texture IDs and base mipmap levels.
+		FIELD field_1_6297 hashCode I
+		METHOD <init> (Ljava/util/List;Lnet/minecraft/class_1_899;)V
+			ARG 1 colorTextures
+			ARG 2 depthTexture
+		METHOD equals (Ljava/lang/Object;)Z
+			ARG 1 other

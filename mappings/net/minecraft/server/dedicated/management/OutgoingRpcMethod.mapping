@@ -11,11 +11,15 @@ CLASS net/minecraft/class_11808 net/minecraft/server/dedicated/management/Outgoi
 	CLASS class_11809 Parameterized
 	CLASS class_11810 Notification
 	CLASS class_11811 Builder
+		FIELD field_1_6079 allowPreServerInit Z
 		FIELD field_62320 factory Lnet/minecraft/class_11808$class_12056;
 		FIELD field_62321 description Ljava/lang/String;
 		FIELD field_62322 requestParameter Lnet/minecraft/class_11818;
 		FIELD field_62323 responseResult Lnet/minecraft/class_11820;
 		FIELD field_63003 DEFAULT_ATTRIBUTES Lnet/minecraft/class_11808$class_12055;
+		METHOD <init> (Lnet/minecraft/class_11808$class_12056;)V
+			ARG 1 factory
+		METHOD method_1_5201 allowPreServerInit ()Lnet/minecraft/class_11808$class_11811;
 		METHOD method_73691 requestParameter (Ljava/lang/String;Lnet/minecraft/class_11821;)Lnet/minecraft/class_11808$class_11811;
 			ARG 1 name
 			ARG 2 schema

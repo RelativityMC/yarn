@@ -49,6 +49,8 @@ CLASS net/minecraft/class_2509 net/minecraft/nbt/NbtOps
 		ARG 1 value
 	METHOD createString (Ljava/lang/String;)Ljava/lang/Object;
 		ARG 1 string
+	METHOD getBooleanValue (Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
+		ARG 1 elem
 	METHOD getByteBuffer (Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
 		ARG 1 element
 	METHOD getIntStream (Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
@@ -85,6 +87,8 @@ CLASS net/minecraft/class_2509 net/minecraft/nbt/NbtOps
 	METHOD mergeToMap (Ljava/lang/Object;Ljava/util/Map;)Lcom/mojang/serialization/DataResult;
 		ARG 1 nbt
 		ARG 2 map
+	METHOD method_1_5397 (Ljava/lang/Number;)Ljava/lang/Boolean;
+		ARG 0 number
 	METHOD method_29147 (Ljava/util/List;Lnet/minecraft/class_2487;Lcom/mojang/datafixers/util/Pair;)V
 		ARG 0 entry
 		ARG 2 pair

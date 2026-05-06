@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_903 net/minecraft/world/gen/feature/WeightedRandomFeatureConfig
+	METHOD method_1_5457 (Lnet/minecraft/class_6010;)Ljava/util/stream/Stream;
+		ARG 0 entry
+	METHOD method_1_5458 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

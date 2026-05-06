@@ -115,6 +115,7 @@ CLASS net/minecraft/class_3499 net/minecraft/structure/StructureTemplate
 		ARG 1 pos
 		ARG 2 pivot
 		ARG 3 placementData
+		ARG 4 structureBlockInfos
 	METHOD method_17916 getEntity (Lnet/minecraft/class_8942;Lnet/minecraft/class_5425;Lnet/minecraft/class_2487;)Ljava/util/Optional;
 		ARG 0 errorReporter
 		ARG 1 world

@@ -10,6 +10,11 @@ CLASS net/minecraft/class_3142 net/minecraft/server/command/TeamCommand
 	FIELD field_13755 OPTION_NAME_UNCHANGED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_13756 OPTION_SEE_FRIENDLY_INVISIBLES_ALREADY_DISABLED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_13757 OPTION_DEATH_MESSAGE_VISIBILITY_UNCHANGED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
+	METHOD method_1_5192 executeResetColor (Lnet/minecraft/class_2168;Lnet/minecraft/class_268;)I
+		ARG 0 source
+		ARG 1 team
+	METHOD method_1_5194 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
 	METHOD method_13711 executeModifyDisplayName (Lnet/minecraft/class_2168;Lnet/minecraft/class_268;Lnet/minecraft/class_2561;)I
 		ARG 0 source
 		ARG 1 team

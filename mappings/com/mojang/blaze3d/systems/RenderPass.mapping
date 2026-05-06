@@ -4,6 +4,8 @@ CLASS com/mojang/blaze3d/systems/RenderPass
 	METHOD <init> (Lnet/minecraft/class_1_149;Lnet/minecraft/class_1_147;Ljava/util/List;Ljava/lang/Runnable;Lcom/mojang/blaze3d/systems/RenderPass$class_1_837;)V
 		ARG 1 backend
 		ARG 2 device
+		ARG 3 colorAttachments
+		ARG 4 onFinish
 		ARG 5 renderArea
 	METHOD bindTexture (Ljava/lang/String;Lcom/mojang/blaze3d/textures/GpuTextureView;Lnet/minecraft/class_12137;)V
 		ARG 1 name
@@ -42,7 +44,8 @@ CLASS com/mojang/blaze3d/systems/RenderPass
 		ARG 1 name
 		ARG 2 slice
 	METHOD setVertexBuffer (ILcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
-		ARG 1 index
+		ARG 1 slot
+		ARG 2 vertexBuffer
 	METHOD writeTimestamp (Lnet/minecraft/class_1_685;I)V
 		ARG 1 timestampQueryPool
 		ARG 2 index

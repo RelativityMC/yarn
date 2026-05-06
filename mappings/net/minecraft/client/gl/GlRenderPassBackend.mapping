@@ -1,5 +1,8 @@
 CLASS net/minecraft/class_10866 net/minecraft/client/gl/GlRenderPassBackend
 	FIELD field_1_1151 device Lnet/minecraft/class_10865;
+	FIELD field_1_5954 defaultScissorState Lnet/minecraft/class_11219;
+	FIELD field_1_6269 numColorAttachments I
+	FIELD field_1_6270 dirty Z
 	FIELD field_57867 IS_DEVELOPMENT Z
 	FIELD field_57868 pipeline Lnet/minecraft/class_10867;
 	FIELD field_57869 vertexBuffers [Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
@@ -15,6 +18,8 @@ CLASS net/minecraft/class_10866 net/minecraft/client/gl/GlRenderPassBackend
 		ARG 1 resourceManager
 		ARG 2 device
 		ARG 3 hasDepth
+		ARG 4 numColorAttachments
+		ARG 5 defaultScissorState
 	METHOD method_68407 hasDepth ()Z
 	METHOD method_70808 isScissorEnabled ()Z
 	METHOD method_70809 getScissorX ()I

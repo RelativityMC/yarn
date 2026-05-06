@@ -26,6 +26,9 @@ CLASS net/minecraft/class_10665 net/minecraft/test/TestEnvironmentDefinition
 	CLASS class_1_434 TimelineDefinition
 		METHOD method_1_2830 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance
+	CLASS class_1_868 Difficulty
+		METHOD method_1_5286 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
 	CLASS class_10666 AllOf
 		FIELD field_56202 CODEC Lcom/mojang/serialization/MapCodec;
 		METHOD <init> ([Lnet/minecraft/class_10665;)V

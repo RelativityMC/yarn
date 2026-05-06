@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_3233 net/minecraft/world/ChunkRegion
+	FIELD field_1_6290 centerX I
+	FIELD field_1_6291 centerZ I
+	FIELD field_1_6292 blockStateWriteRadius I
 	FIELD field_14087 seed J
 	FIELD field_14091 random Lnet/minecraft/class_5819;
 	FIELD field_14092 LOGGER Lorg/slf4j/Logger;
@@ -19,6 +22,14 @@ CLASS net/minecraft/class_3233 net/minecraft/world/ChunkRegion
 		ARG 2 chunks
 		ARG 3 generationStep
 		ARG 4 centerPos
+	METHOD method_1_5409 isWithinSafeArea (II)Z
+		ARG 1 chunkX
+		ARG 2 chunkZ
+	METHOD method_1_5410 isWithinSafeArea (Lnet/minecraft/class_2338;)Z
+		ARG 1 blockPos
+	METHOD method_1_5411 assertInSafeArea (II)V
+		ARG 1 chunkX
+		ARG 2 chunkZ
 	METHOD method_14337 (Lnet/minecraft/class_2338;)Lnet/minecraft/class_6763;
 		ARG 1 pos
 	METHOD method_14338 markBlockForPostProcessing (Lnet/minecraft/class_2338;)V

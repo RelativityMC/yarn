@@ -1,10 +1,18 @@
-CLASS net/minecraft/class_10874 net/minecraft/client/gl/BufferManager
+CLASS net/minecraft/class_10874 net/minecraft/client/gl/GlBufferManager
+	METHOD method_1_5416 setupFramebuffer (IIIII)V
+		ARG 1 framebuffer
+		ARG 2 colorTexture
+		ARG 3 depthTexture
+		ARG 4 level
+		ARG 5 target
 	METHOD method_68431 createFramebuffer ()I
 	METHOD method_68432 setupFramebuffer (I[I[IIII)V
 		ARG 1 framebuffer
-		ARG 4 mipLevel
-		ARG 5 bindTarget
-		ARG 6 depthAttachment
+		ARG 2 colorTextures
+		ARG 3 colorLevels
+		ARG 4 depthTexture
+		ARG 5 depthLevel
+		ARG 6 target
 	METHOD method_68812 setupBlitFramebuffer (IIIIIIIIIIII)V
 		ARG 1 readFramebuffer
 		ARG 2 writeFramebuffer
@@ -21,6 +29,7 @@ CLASS net/minecraft/class_10874 net/minecraft/client/gl/BufferManager
 	METHOD method_68813 create (Lorg/lwjgl/opengl/GLCapabilities;Ljava/util/Set;Lnet/minecraft/class_11541;)Lnet/minecraft/class_10874;
 		ARG 0 capabilities
 		ARG 1 usedCapabilities
+		ARG 2 deviceInfo
 	METHOD method_71023 createBuffer ()I
 	METHOD method_71024 unmapBuffer (II)V
 		ARG 1 buffer

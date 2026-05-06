@@ -1,1 +1,11 @@
 CLASS net/minecraft/class_1_824 net/minecraft/predicate/entity/EntityTagsSubPredicate
+	METHOD method_1_5107 hasAll (Ljava/util/Set;Ljava/util/List;)Z
+		ARG 0 actual
+		ARG 1 expected
+	METHOD method_1_5108 hasAny (Ljava/util/Set;Ljava/util/List;)Z
+		ARG 0 actual
+		ARG 1 expected
+	METHOD method_1_5109 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_5110 test (Ljava/util/Set;)Z
+		ARG 1 tags

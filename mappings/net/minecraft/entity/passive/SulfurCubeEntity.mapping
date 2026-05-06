@@ -5,6 +5,9 @@ CLASS net/minecraft/class_1_748 net/minecraft/entity/passive/SulfurCubeEntity
 	FIELD field_1_3790 pickupTimer I
 	FIELD field_1_6154 FUSE Lnet/minecraft/class_2940;
 	FIELD field_1_6155 fuse I
+	FIELD field_1_6346 contactDamage Ljava/util/List;
+	FIELD field_1_6347 explosion Ljava/util/Optional;
+	FIELD field_1_6348 knockbackModifiers Lnet/minecraft/class_1_719$class_1_898;
 	METHOD method_1_4505 canSpawn (Lnet/minecraft/class_1299;Lnet/minecraft/class_1936;Lnet/minecraft/class_3730;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)Z
 		ARG 0 type
 		ARG 1 world
@@ -50,6 +53,28 @@ CLASS net/minecraft/class_1_748 net/minecraft/entity/passive/SulfurCubeEntity
 	METHOD method_1_5252 setFuse (I)V
 		ARG 1 fuse
 	METHOD method_1_5253 tickFuseCountdown ()V
+	METHOD method_1_5445 applyContactDamage (Lnet/minecraft/class_1297;)V
+		ARG 1 target
+	METHOD method_1_5446 spin (FLnet/minecraft/class_241;Lnet/minecraft/class_243;Lnet/minecraft/class_243;Lnet/minecraft/class_243;)Lnet/minecraft/class_241;
+		ARG 1 spinFactor
+		ARG 2 direction
+		ARG 3 eyePos
+		ARG 4 rotationVector
+		ARG 5 centerPos
+	METHOD method_1_5447 adjustDirectionByHeight (FFFLnet/minecraft/class_243;Lnet/minecraft/class_243;Lnet/minecraft/class_243;F)Lnet/minecraft/class_241;
+		ARG 1 factor
+		ARG 2 horizontalPower
+		ARG 3 verticalPower
+		ARG 4 eyePos
+		ARG 5 rotationVector
+		ARG 6 centerPos
+		ARG 7 height
+	METHOD method_1_5448 adjustDirectionByDeclination (FFFLnet/minecraft/class_243;Lnet/minecraft/class_243;)Lnet/minecraft/class_241;
+		ARG 1 factor
+		ARG 2 horizontalPower
+		ARG 3 verticalPower
+		ARG 4 attackerPos
+		ARG 5 selfPos
 	CLASS class_1_749 SulfurCubeLookControl
 	CLASS class_1_750 SulfurCubeMoveControl
 		METHOD <init> (Lnet/minecraft/class_1_748;)V

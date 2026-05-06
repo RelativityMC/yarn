@@ -3,6 +3,7 @@ CLASS net/minecraft/class_1_694 net/minecraft/client/vulkan/VulkanBuffer
 	FIELD field_1_3555 device Lnet/minecraft/class_1_679;
 	FIELD field_1_3556 rawBuffer J
 	FIELD field_1_3557 vmaAllocation J
+	FIELD field_1_6287 numMaps I
 	METHOD <init> (Lnet/minecraft/class_1_679;Ljava/util/function/Supplier;IJZ)V
 		ARG 1 device
 		ARG 2 labelGetter
@@ -10,3 +11,5 @@ CLASS net/minecraft/class_1_694 net/minecraft/client/vulkan/VulkanBuffer
 		ARG 4 size
 		ARG 6 alwaysHostVisible
 	METHOD method_1_4175 getRawBuffer ()J
+	CLASS 1 1
+		FIELD field_1_6288 closed Z

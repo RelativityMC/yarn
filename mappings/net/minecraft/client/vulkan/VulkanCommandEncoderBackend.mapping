@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_1_715 net/minecraft/client/vulkan/VulkanCommandEncoderBackend
 	FIELD field_1_3658 commandBufferDisposer Lnet/minecraft/class_1_699;
 	FIELD field_1_3659 rawCommandPool J
+	FIELD field_1_3660 lastWaitValue J
 	FIELD field_1_3661 commandBuffer Lorg/lwjgl/vulkan/VkCommandBuffer;
 	FIELD field_1_3662 renderPass Lnet/minecraft/class_1_704;
 	FIELD field_1_3664 objectDisposer Lnet/minecraft/class_1_699;
@@ -12,10 +13,12 @@ CLASS net/minecraft/class_1_715 net/minecraft/client/vulkan/VulkanCommandEncoder
 	METHOD method_1_4257 createCommandBuffer (Z)Lorg/lwjgl/vulkan/VkCommandBuffer;
 		ARG 1 primary
 	METHOD method_1_4258 wait (JJ)Z
+		ARG 1 waitValue
 		ARG 3 timeoutNanos
 	METHOD method_1_4259 clearTextureColor (Lorg/lwjgl/system/MemoryStack;Lcom/mojang/blaze3d/textures/GpuTexture;Lorg/joml/Vector4fc;)V
 		ARG 1 memoryStack
 		ARG 2 texture
+		ARG 3 clearColor
 	METHOD method_1_4260 clearTextureDepth (Lorg/lwjgl/system/MemoryStack;Lcom/mojang/blaze3d/textures/GpuTexture;D)V
 		ARG 1 memoryStack
 		ARG 2 texture

@@ -148,10 +148,6 @@ CLASS net/minecraft/class_2306 net/minecraft/command/EntitySelectorOptions
 		ARG 2 entity
 	METHOD method_22824 (Lnet/minecraft/class_2303;)V
 		ARG 0 reader
-	METHOD method_62669 (Lnet/minecraft/class_6885$class_6888;)Lnet/minecraft/class_2960;
-		ARG 0 tag
-	METHOD method_62670 (Lnet/minecraft/class_6885$class_6888;)Lnet/minecraft/class_2960;
-		ARG 0 tag
 	CLASS class_2307 SelectorHandler
 		METHOD method_1_344 handle (Lnet/minecraft/class_2303;)V
 			ARG 1 reader

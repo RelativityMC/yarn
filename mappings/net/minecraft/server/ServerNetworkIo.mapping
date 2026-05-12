@@ -41,9 +41,3 @@ CLASS net/minecraft/class_3242 net/minecraft/server/ServerNetworkIo
 			ARG 2 msg
 		METHOD method_34881 forward (Lio/netty/util/Timeout;)V
 			ARG 1 timeout
-		CLASS class_5981 Packet
-			FIELD field_29776 context Lio/netty/channel/ChannelHandlerContext;
-			FIELD field_29777 message Ljava/lang/Object;
-			METHOD <init> (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Object;)V
-				ARG 1 context
-				ARG 2 message

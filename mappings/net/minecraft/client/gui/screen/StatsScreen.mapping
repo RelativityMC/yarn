@@ -14,7 +14,7 @@ CLASS net/minecraft/class_447 net/minecraft/client/gui/screen/StatsScreen
 	FIELD field_49519 MOBS_BUTTON_TEXT Lnet/minecraft/class_2561;
 	FIELD field_49523 layout Lnet/minecraft/class_8132;
 	FIELD field_62152 tabManager Lnet/minecraft/class_8088;
-	FIELD field_62153 tabNavigationWidget Lnet/minecraft/class_8089;
+	FIELD field_62153 tabNavigationWidget Lnet/minecraft/class_1_923;
 	METHOD <init> (Lnet/minecraft/class_437;Lnet/minecraft/class_3469;)V
 		ARG 1 parent
 		ARG 2 statHandler

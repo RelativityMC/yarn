@@ -3,9 +3,7 @@ CLASS net/minecraft/class_1_870 net/minecraft/client/render/DrawSpec
 		ARG 1 vertexBuffer
 		ARG 2 indexBuffer
 		ARG 3 indexType
-		ARG 4 baseVertex
 		ARG 5 firstIndex
-		ARG 6 indexCount
 	METHOD method_1_5292 draw (Lnet/minecraft/class_1_807$class_1_809;)V
 		ARG 1 drawCall
 	CLASS class_1_871 Texture

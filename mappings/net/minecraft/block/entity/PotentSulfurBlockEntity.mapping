@@ -4,15 +4,13 @@ CLASS net/minecraft/class_1_757 net/minecraft/block/entity/PotentSulfurBlockEnti
 	FIELD field_1_3806 AFFECTED_ENTITY_PREDICATE Ljava/util/function/Predicate;
 	FIELD field_1_3807 MAX_EFFECTIVE_DISTANCE F
 	FIELD field_1_3808 PARTICLE_FREQUENCY I
-	FIELD field_1_6198 CLIENT_ERUPTION_TICKER Lnet/minecraft/class_5558;
+	FIELD field_1_6198 CLIENT_ERUPTION_TICKER Ljava/util/function/Function;
 	FIELD field_1_6199 CLIENT_CLOUD_PARTICLE_TICKER Lnet/minecraft/class_5558;
 	FIELD field_1_6201 GEYSER_TO_ENTITY_ACCELERATION F
 	FIELD field_1_6202 SERVER_ERUPTION_TICKER Lnet/minecraft/class_5558;
 	FIELD field_1_6203 SERVER_APPLY_EFFECT_TICKER Lnet/minecraft/class_5558;
 	FIELD field_1_6204 SERVER_GEYSER_TICKER Lnet/minecraft/class_5558;
-	FIELD field_1_6205 dormantTime I
 	FIELD field_1_6206 syncTime J
-	FIELD field_1_6207 eruptionTime I
 	FIELD field_1_6208 countdown I
 	METHOD <init> (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
 		ARG 1 pos
@@ -33,35 +31,18 @@ CLASS net/minecraft/class_1_757 net/minecraft/block/entity/PotentSulfurBlockEnti
 		ARG 0 world
 		ARG 1 sourcePos
 		ARG 2 entityWaistPos
-	METHOD method_1_4578 isBreathingAir (Lnet/minecraft/class_1937;Lnet/minecraft/class_243;)Z
-		ARG 0 world
-		ARG 1 entityEyesPos
-	METHOD method_1_4579 isActive (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)Z
-		ARG 0 world
-		ARG 1 pos
 	METHOD method_1_4580 isSwimmingInStillWater (Lnet/minecraft/class_1937;Lnet/minecraft/class_243;)Z
 		ARG 0 world
 		ARG 1 entityWaistPos
 	METHOD method_1_4582 addNoxiousGasCloudParticles (Lnet/minecraft/class_1937;Lnet/minecraft/class_243;)V
 		ARG 0 world
 		ARG 1 pos
-	METHOD method_1_5329 (Ljava/lang/Integer;)V
-		ARG 1 dormantTime
-	METHOD method_1_5330 (Ljava/lang/Integer;)V
-		ARG 1 eruptionTime
-	METHOD method_1_5331 (Ljava/lang/Integer;)V
-		ARG 1 countdown
 	METHOD method_1_5332 (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_1_757;)V
 		ARG 0 world
 		ARG 1 pos
 		ARG 2 state
 		ARG 3 blockEntity
 	METHOD method_1_5333 (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_1_757;)V
-		ARG 0 world
-		ARG 1 pos
-		ARG 2 state
-		ARG 3 blockEntity
-	METHOD method_1_5334 (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_1_757;)V
 		ARG 0 world
 		ARG 1 pos
 		ARG 2 state

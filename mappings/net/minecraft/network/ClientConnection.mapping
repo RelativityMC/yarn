@@ -9,7 +9,6 @@ CLASS net/minecraft/class_2535 net/minecraft/network/ClientConnection
 		COMMENT The side this connection is to.
 	FIELD field_11645 address Ljava/net/SocketAddress;
 	FIELD field_11646 disconnected Z
-	FIELD field_11647 encrypted Z
 	FIELD field_11651 channel Lio/netty/channel/Channel;
 	FIELD field_11652 packetListener Lnet/minecraft/class_2547;
 	FIELD field_11653 averagePacketsSent F
@@ -91,7 +90,6 @@ CLASS net/minecraft/class_2535 net/minecraft/network/ClientConnection
 	METHOD method_10768 handleDisconnection ()V
 	METHOD method_10769 connectLocal (Ljava/net/SocketAddress;)Lnet/minecraft/class_2535;
 		ARG 0 address
-	METHOD method_10771 isEncrypted ()Z
 	METHOD method_10772 isChannelAbsent ()Z
 	METHOD method_30615 updateStats ()V
 	METHOD method_36121 getSide ()Lnet/minecraft/class_2598;

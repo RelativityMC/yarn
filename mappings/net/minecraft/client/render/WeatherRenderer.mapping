@@ -18,8 +18,6 @@ CLASS net/minecraft/class_9976 net/minecraft/client/render/WeatherRenderer
 	METHOD method_1_1041 issueDraw (Lcom/mojang/blaze3d/systems/RenderPass;Lnet/minecraft/class_1044;II)V
 		ARG 1 renderPass
 		ARG 2 texture
-		ARG 3 start
-		ARG 4 end
 	METHOD method_1_4992 upload (Ljava/nio/ByteBuffer;)Lcom/mojang/blaze3d/buffers/GpuBuffer;
 		ARG 1 buffer
 	METHOD method_62314 createRainPiece (Lnet/minecraft/class_5819;JIIIIIF)Lnet/minecraft/class_9976$class_9977;

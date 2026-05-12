@@ -476,10 +476,7 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 3 eastSideModel
 		ARG 4 southSideModel
 		ARG 5 westSideModel
-	METHOD method_46190 registerHangingSign (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
-		ARG 1 base
-		ARG 2 hangingSign
-		ARG 3 wallHangingSign
+	METHOD method_46190 registerHangingSign (Lnet/minecraft/class_2248;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;)Lnet/minecraft/class_4917;
 	METHOD method_46193 registerChiseledBookshelf ()V
 	METHOD method_47519 createUvLockedColumnBlockState (Lnet/minecraft/class_2248;Lnet/minecraft/class_4944;Ljava/util/function/BiConsumer;)Lnet/minecraft/class_4917;
 		ARG 0 block

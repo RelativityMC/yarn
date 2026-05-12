@@ -13,7 +13,7 @@ CLASS net/minecraft/class_1_679 net/minecraft/client/vulkan/VulkanBackend
 	FIELD field_1_3447 fallbackQueue Lnet/minecraft/class_1_674;
 	FIELD field_1_3448 device Lorg/lwjgl/vulkan/VkDevice;
 	FIELD field_1_3449 vmaAllocator J
-	METHOD <init> (Lnet/minecraft/class_12289;Lnet/minecraft/class_1_691;Lnet/minecraft/class_1_717;Ljava/util/Set;Lorg/lwjgl/vulkan/VkDevice;J)V
+	METHOD <init> (Lnet/minecraft/class_12289;Lnet/minecraft/class_1_691;Lnet/minecraft/class_1_717;Ljava/util/Set;Lorg/lwjgl/vulkan/VkDevice;JLnet/minecraft/class_1_970;)V
 		ARG 1 shaderSoruceGetter
 		ARG 2 instance
 		ARG 3 physicalDevice

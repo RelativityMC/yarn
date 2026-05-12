@@ -1,12 +1,6 @@
 CLASS net/minecraft/class_1_890 net/minecraft/command/PolarFilterState
-	FIELD field_1_6253 addedNegative Z
-	FIELD field_1_6254 addedPositive Z
 	METHOD method_1_5383 isApplicable (Z)Z
 		ARG 1 negated
 	METHOD method_1_5384 shouldSuggest ()Z
-	METHOD method_1_5385 isNegativeApplicable ()Z
-	METHOD method_1_5386 isPositiveApplicable ()Z
 	METHOD method_1_5387 setAdded (Z)V
 		ARG 1 negated
-	METHOD method_1_5388 addNegative ()V
-	METHOD method_1_5389 addPositive ()V

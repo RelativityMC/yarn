@@ -12,8 +12,6 @@ CLASS net/minecraft/class_1_417 net/minecraft/client/render/block/model/CustomBl
 	METHOD method_1_2747 simple (Lnet/minecraft/class_324;Lnet/minecraft/class_2680;)Lnet/minecraft/class_1_445$class_1_446;
 		ARG 0 blockColors
 		ARG 1 state
-	METHOD method_1_2748 hangingSign (Lnet/minecraft/class_4719;)Lnet/minecraft/class_1_417$class_1_420;
-		ARG 0 woodType
 	METHOD method_1_2749 mergeableChest (Lnet/minecraft/class_1_477;)Lnet/minecraft/class_1_417$class_1_420;
 	METHOD method_1_2750 baseChest (Lnet/minecraft/class_2960;Lnet/minecraft/class_2745;Lnet/minecraft/class_2350;)Lnet/minecraft/class_1_411$class_1_413;
 		ARG 0 texture
@@ -40,29 +38,13 @@ CLASS net/minecraft/class_1_417 net/minecraft/client/render/block/model/CustomBl
 	METHOD method_1_2759 groundPlayerHead ()Lnet/minecraft/class_1_417$class_1_420;
 	METHOD method_1_2760 wallPlayerHead ()Lnet/minecraft/class_1_417$class_1_420;
 	METHOD method_1_2761 shulkerBox ()Lnet/minecraft/class_1_417$class_1_420;
-	METHOD method_1_2762 addSignModels (Lnet/minecraft/class_1_417$class_1_418;Lnet/minecraft/class_4719;Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
-		ARG 0 builder
-		ARG 1 woodType
-		ARG 2 sign
-		ARG 3 wallSign
-		ARG 4 hangingSign
-		ARG 5 wallHangingSign
 	METHOD method_1_2763 singleChest (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_417$class_1_420;
 		ARG 0 texture
-	METHOD method_1_2764 sign (Lnet/minecraft/class_4719;)Lnet/minecraft/class_1_417$class_1_420;
-		ARG 0 woodType
 	METHOD method_1_2765 wallBanner (Lnet/minecraft/class_1767;)Lnet/minecraft/class_1_417$class_1_420;
 		ARG 0 color
-	METHOD method_1_2766 wallHangingSign (Lnet/minecraft/class_4719;)Lnet/minecraft/class_1_417$class_1_420;
-		ARG 0 woodType
-	METHOD method_1_2767 wallSign (Lnet/minecraft/class_4719;)Lnet/minecraft/class_1_417$class_1_420;
-		ARG 0 woodType
 	METHOD method_1_2768 christianChest (Lnet/minecraft/class_1_477;)Lnet/minecraft/class_1_417$class_1_420;
 	METHOD method_1_2769 (Lnet/minecraft/class_1767;Ljava/lang/Integer;)Lnet/minecraft/class_1_411$class_1_413;
 		ARG 1 rotation
-	METHOD method_1_2771 (Lnet/minecraft/class_4719;Ljava/lang/Integer;Ljava/lang/Boolean;)Lnet/minecraft/class_1_411$class_1_413;
-		ARG 1 rotation
-		ARG 2 attached
 	METHOD method_1_2772 (Lnet/minecraft/class_1_477;Lnet/minecraft/class_2350;Lnet/minecraft/class_2745;)Lnet/minecraft/class_1_411$class_1_413;
 		ARG 1 facing
 		ARG 2 type
@@ -85,14 +67,8 @@ CLASS net/minecraft/class_1_417 net/minecraft/client/render/block/model/CustomBl
 		ARG 0 facing
 	METHOD method_1_2781 (Lnet/minecraft/class_2960;Lnet/minecraft/class_2350;)Lnet/minecraft/class_1_411$class_1_413;
 		ARG 1 facing
-	METHOD method_1_2782 (Lnet/minecraft/class_4719;Ljava/lang/Integer;)Lnet/minecraft/class_1_411$class_1_413;
-		ARG 1 rotation
 	METHOD method_1_2783 (Lnet/minecraft/class_1767;Lnet/minecraft/class_2350;)Lnet/minecraft/class_1_411$class_1_413;
 		ARG 1 direction
-	METHOD method_1_2784 (Lnet/minecraft/class_4719;Lnet/minecraft/class_2350;)Lnet/minecraft/class_1_411$class_1_413;
-		ARG 1 facing
-	METHOD method_1_2785 (Lnet/minecraft/class_4719;Lnet/minecraft/class_2350;)Lnet/minecraft/class_1_411$class_1_413;
-		ARG 1 facing
 	METHOD method_1_2786 (Lnet/minecraft/class_1_477;Lnet/minecraft/class_2350;Lnet/minecraft/class_2745;)Lnet/minecraft/class_1_411$class_1_413;
 		ARG 1 facing
 		ARG 2 type

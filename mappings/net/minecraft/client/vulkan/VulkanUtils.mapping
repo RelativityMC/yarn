@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_1_678 net/minecraft/client/vulkan/VulkanUtils
-	METHOD method_1_4033 reportError (ILjava/lang/String;)V
-		ARG 0 code
-		ARG 1 message
+	METHOD method_1_4033 reportError (Lnet/minecraft/class_1_679;ILjava/lang/String;)V
+		ARG 1 code
+		ARG 2 message
 	METHOD method_1_4034 containsAll (II)Z
 		ARG 0 actual
 		ARG 1 required

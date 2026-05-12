@@ -75,12 +75,5 @@ CLASS net/minecraft/class_5602 net/minecraft/client/render/entity/model/EntityMo
 	METHOD method_32082 create (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/class_5601;
 		ARG 0 id
 		ARG 1 layer
-	METHOD method_45719 createHangingSign (Lnet/minecraft/class_4719;Lnet/minecraft/class_1_402$class_10381;)Lnet/minecraft/class_5601;
-		ARG 0 type
-		ARG 1 attachmentType
-	METHOD method_62130 createStandingSign (Lnet/minecraft/class_4719;)Lnet/minecraft/class_5601;
-		ARG 0 type
-	METHOD method_62131 createWallSign (Lnet/minecraft/class_4719;)Lnet/minecraft/class_5601;
-		ARG 0 type
 	METHOD method_72894 registerEquipment (Ljava/lang/String;)Lnet/minecraft/class_11677;
 		ARG 0 id

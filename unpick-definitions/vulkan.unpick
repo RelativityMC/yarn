@@ -1176,9 +1176,6 @@ target_method net.minecraft.client.vulkan.DebugBackend setObjectLabel (Lorg/lwjg
 target_method net.minecraft.client.vulkan.DebugBackend setObjectLabel (Lorg/lwjgl/vulkan/VkDevice;IJLjava/util/function/Supplier;)V
 	param 1 vk_object_type
 
-target_method net.minecraft.client.vulkan.VulkanCommandEncoderBackend beginCommandBuffer (Ljava/nio/IntBuffer;I)Lorg/lwjgl/vulkan/VkCommandBuffer;
-	param 1 vk_format
-
 target_field net.minecraft.client.vulkan.VulkanQueue$Submission$SemaphoreInfo stageMask J vk_pipeline_stage_flag_bits2
 
 target_method net.minecraft.client.vulkan.VulkanQueue$Submission addWait (JJJ)V

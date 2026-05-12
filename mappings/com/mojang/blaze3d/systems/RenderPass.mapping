@@ -4,21 +4,12 @@ CLASS com/mojang/blaze3d/systems/RenderPass
 	METHOD <init> (Lnet/minecraft/class_1_149;Lnet/minecraft/class_1_147;Ljava/util/List;Ljava/lang/Runnable;Lcom/mojang/blaze3d/systems/RenderPass$class_1_837;)V
 		ARG 1 backend
 		ARG 2 device
-		ARG 3 colorAttachments
 		ARG 4 onFinish
 		ARG 5 renderArea
 	METHOD bindTexture (Ljava/lang/String;Lcom/mojang/blaze3d/textures/GpuTextureView;Lnet/minecraft/class_12137;)V
 		ARG 1 name
 		ARG 2 textureView
 		ARG 3 sampler
-	METHOD draw (II)V
-		ARG 1 offset
-		ARG 2 count
-	METHOD drawIndexed (IIII)V
-		ARG 1 baseVertex
-		ARG 2 firstIndex
-		ARG 3 count
-		ARG 4 instanceCount
 	METHOD drawMultipleIndexed (Ljava/util/Collection;Lcom/mojang/blaze3d/buffers/GpuBuffer;Lnet/minecraft/class_5595;Ljava/util/Collection;Ljava/lang/Object;)V
 		ARG 1 objects
 		ARG 2 buffer

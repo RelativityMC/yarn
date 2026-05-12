@@ -1,4 +1,0 @@
-CLASS net/minecraft/class_11237 net/minecraft/client/gui/render/SignGuiElementRenderer
-	FIELD field_61627 sprite Lnet/minecraft/class_11701;
-	METHOD <init> (Lnet/minecraft/class_11701;)V
-		ARG 1 sprite

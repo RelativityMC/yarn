@@ -5,7 +5,7 @@ CLASS net/minecraft/class_5520 net/minecraft/client/network/SocialInteractionsMa
 	FIELD field_26927 playerNameByUuid Ljava/util/Map;
 	FIELD field_35081 blockListLoaded Z
 	FIELD field_35082 blockListLoader Ljava/util/concurrent/CompletableFuture;
-	METHOD <init> (Lnet/minecraft/class_310;Lcom/mojang/authlib/minecraft/UserApiService;)V
+	METHOD <init> (Lnet/minecraft/class_310;Lcom/mojang/authlib/minecraft/UserApiService;Lcom/mojang/authlib/yggdrasil/FriendsService;Lnet/minecraft/class_1_1004;)V
 		ARG 1 client
 		ARG 2 userApiService
 	METHOD method_31336 getHiddenPlayers ()Ljava/util/Set;

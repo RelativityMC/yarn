@@ -6,7 +6,7 @@ CLASS net/minecraft/class_525 net/minecraft/client/gui/screen/world/CreateWorldS
 	FIELD field_26600 ENTER_NAME_TEXT Lnet/minecraft/class_2561;
 	FIELD field_32434 TEMP_DIR_PREFIX Ljava/lang/String;
 	FIELD field_37911 PREPARING_TEXT Lnet/minecraft/class_2561;
-	FIELD field_42164 tabNavigation Lnet/minecraft/class_8089;
+	FIELD field_42164 tabNavigation Lnet/minecraft/class_1_923;
 	FIELD field_42169 ALLOW_COMMANDS_INFO_TEXT Lnet/minecraft/class_2561;
 	FIELD field_42172 worldCreator Lnet/minecraft/class_8100;
 	FIELD field_42173 tabManager Lnet/minecraft/class_8088;

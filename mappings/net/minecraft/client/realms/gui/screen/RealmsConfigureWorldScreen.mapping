@@ -7,7 +7,7 @@ CLASS net/minecraft/class_4388 net/minecraft/client/realms/gui/screen/RealmsConf
 	FIELD field_60243 regionDataList Lnet/minecraft/class_11301;
 	FIELD field_60244 regions Ljava/util/Map;
 	FIELD field_60245 tabManager Lnet/minecraft/class_8088;
-	FIELD field_60246 tabNavigation Lnet/minecraft/class_8089;
+	FIELD field_60246 tabNavigation Lnet/minecraft/class_1_923;
 	FIELD field_60247 layout Lnet/minecraft/class_8132;
 	FIELD field_60248 PLAY_BUTTON_TEXT Lnet/minecraft/class_2561;
 	FIELD field_60861 playButton Lnet/minecraft/class_4185;

@@ -1,11 +1,3 @@
 CLASS net/minecraft/class_9826 net/minecraft/client/render/model/ErrorCollectingSpriteGetter
-	METHOD method_65739 get (Lnet/minecraft/class_1_314;Lnet/minecraft/class_10813;)Lnet/minecraft/class_1_314$class_1_315;
-		ARG 1 id
-		ARG 2 model
-	METHOD method_65740 getMissing (Ljava/lang/String;Lnet/minecraft/class_10813;)Lnet/minecraft/class_1_314$class_1_315;
-		ARG 1 name
-		ARG 2 model
-	METHOD method_68061 get (Lnet/minecraft/class_10419;Ljava/lang/String;Lnet/minecraft/class_10813;)Lnet/minecraft/class_1_314$class_1_315;
-		ARG 1 texture
-		ARG 2 name
-		ARG 3 model
+	METHOD method_10123 createBlockEntity (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Lnet/minecraft/class_2586;
+	METHOD method_31645 getTicker (Lnet/minecraft/class_1937;Lnet/minecraft/class_2680;Lnet/minecraft/class_2591;)Lnet/minecraft/class_5558;

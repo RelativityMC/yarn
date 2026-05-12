@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	COMMENT Represents an entity which has a health value and can receive damage.
-	FIELD field_1_847 currentExplosionEntity Lnet/minecraft/class_1297;
 	FIELD field_1_848 currentImpulseContextResetGraceTime I
 	FIELD field_1_849 currentExplosionImpactPos Lnet/minecraft/class_243;
 	FIELD field_6212 sidewaysSpeed F

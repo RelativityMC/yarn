@@ -1,35 +1,23 @@
 CLASS net/minecraft/class_1_704 net/minecraft/client/vulkan/VulkanRenderPassBackend
 	FIELD field_1_3614 IS_DEVELOPMENT Z
 	FIELD field_1_3615 shaderParamsDirty Z
-	FIELD field_1_3616 viewportCommandBuffer Lorg/lwjgl/vulkan/VkCommandBuffer;
 	FIELD field_1_3617 device Lnet/minecraft/class_1_679;
-	FIELD field_1_3618 disposer Ljava/util/function/Consumer;
 	FIELD field_1_3619 hasDepth Z
 	FIELD field_1_3620 height I
 	FIELD field_1_3621 width I
 	FIELD field_1_3622 pipeline Lnet/minecraft/class_1_718;
-	FIELD field_1_3623 primaryCommandBuffer Lorg/lwjgl/vulkan/VkCommandBuffer;
 	FIELD field_1_3624 numDebugGroups I
-	FIELD field_1_3625 commandBufferSupplier Ljava/util/function/Supplier;
 	FIELD field_1_3626 boundTextures Ljava/util/HashMap;
 	FIELD field_1_3627 uniforms Ljava/util/HashMap;
 	FIELD field_1_5956 renderArea Lcom/mojang/blaze3d/systems/RenderPass$class_1_837;
-	METHOD <init> (Lnet/minecraft/class_1_679;Ljava/util/function/Consumer;Lorg/lwjgl/vulkan/VkCommandBuffer;Ljava/util/function/Supplier;Lcom/mojang/blaze3d/systems/RenderPass$class_1_837;IIZ)V
+	METHOD <init> (Lnet/minecraft/class_1_679;Lnet/minecraft/class_1_715;Lorg/lwjgl/vulkan/VkCommandBuffer;Lnet/minecraft/class_1_970$class_1_971;Lcom/mojang/blaze3d/systems/RenderPass$class_1_837;IIZLjava/util/function/Supplier;)V
 		ARG 1 device
-		ARG 2 disposer
-		ARG 3 primaryCommandBuffer
-		ARG 4 commandBufferSupplier
 		ARG 5 renderArea
 		ARG 6 width
 		ARG 7 height
 		ARG 8 hasDepth
 	METHOD method_1_4212 createCommandBuffer ()Lorg/lwjgl/vulkan/VkCommandBuffer;
-	METHOD method_1_4213 close ()V
-	METHOD method_1_4214 endViewportCommands ()V
-	METHOD method_1_4215 executeCommands (Lorg/lwjgl/vulkan/VkCommandBuffer;)V
-		ARG 1 commandBuffer
 	METHOD method_1_4217 updateShaderParams ()V
-	METHOD method_1_4218 createViewportCommandBuffer ()Lorg/lwjgl/vulkan/VkCommandBuffer;
 	METHOD method_1_5120 setScissor (Lorg/lwjgl/system/MemoryStack;Lorg/lwjgl/vulkan/VkCommandBuffer;IIII)V
 		ARG 0 memoryStack
 		ARG 1 viewportCommandBuffer

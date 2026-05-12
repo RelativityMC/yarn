@@ -6,16 +6,13 @@ CLASS net/minecraft/class_4722 net/minecraft/client/render/TexturedRenderLayers
 	FIELD field_21704 SHULKER_BOXES_ATLAS_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_21706 BANNER_PATTERNS_ATLAS_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_21707 SHIELD_PATTERNS_ATLAS_TEXTURE Lnet/minecraft/class_2960;
-	FIELD field_21708 SIGNS_ATLAS_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_21709 CHEST_ATLAS_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_21710 SHULKER_TEXTURE_ID Lnet/minecraft/class_1_310;
 	FIELD field_21711 COLORED_SHULKER_BOXES_TEXTURES Ljava/util/List;
-	FIELD field_21712 SIGN_TYPE_TEXTURES Ljava/util/Map;
 	FIELD field_21723 ENDER_CHEST Lnet/minecraft/class_1_310;
 	FIELD field_21729 CHEST_RENDER_LAYER Lnet/minecraft/class_1921;
 	FIELD field_28252 BANNER_PATTERN_TEXTURES Ljava/util/Map;
 	FIELD field_28253 SHIELD_PATTERN_TEXTURES Ljava/util/Map;
-	FIELD field_40515 HANGING_SIGN_TYPE_TEXTURES Ljava/util/Map;
 	FIELD field_42070 ARMOR_TRIMS_RENDER_LAYER Lnet/minecraft/class_1921;
 	FIELD field_42071 ARMOR_TRIMS_ATLAS_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_42910 DECORATED_POT_ATLAS_TEXTURE Lnet/minecraft/class_2960;
@@ -31,8 +28,6 @@ CLASS net/minecraft/class_4722 net/minecraft/client/render/TexturedRenderLayers
 	FIELD field_56359 CHEST_SPRITE_MAPPER Lnet/minecraft/class_10721;
 	FIELD field_56360 DECORATED_POT_SPRITE_MAPPER Lnet/minecraft/class_10721;
 	FIELD field_56362 SHULKER_SPRITE_MAPPER Lnet/minecraft/class_10721;
-	FIELD field_56363 SIGN_SPRITE_MAPPER Lnet/minecraft/class_10721;
-	FIELD field_56364 HANGING_SIGN_SPRITE_MAPPER Lnet/minecraft/class_10721;
 	FIELD field_61757 GUI_ATLAS_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_61758 MAP_DECORATIONS_ATLAS_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_61759 PAINTINGS_ATLAS_TEXTURE Lnet/minecraft/class_2960;
@@ -44,20 +39,12 @@ CLASS net/minecraft/class_4722 net/minecraft/client/render/TexturedRenderLayers
 	METHOD method_24062 getChestTextureId (Lnet/minecraft/class_11959$class_11960;Lnet/minecraft/class_2745;)Lnet/minecraft/class_1_310;
 		ARG 0 variant
 		ARG 1 type
-	METHOD method_24064 createSignTextureId (Lnet/minecraft/class_4719;)Lnet/minecraft/class_1_310;
-		ARG 0 type
 	METHOD method_24072 getChest ()Lnet/minecraft/class_1921;
 	METHOD method_29382 getItemTranslucentCull ()Lnet/minecraft/class_1921;
 	METHOD method_33081 getBannerPatternTextureId (Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_310;
 		ARG 0 pattern
-	METHOD method_33082 getSignTextureId (Lnet/minecraft/class_4719;)Lnet/minecraft/class_1_310;
-		ARG 0 signType
 	METHOD method_33083 getShieldPatternTextureId (Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_310;
 		ARG 0 pattern
-	METHOD method_45781 getHangingSignTextureId (Lnet/minecraft/class_4719;)Lnet/minecraft/class_1_310;
-		ARG 0 signType
-	METHOD method_45782 createHangingSignTextureId (Lnet/minecraft/class_4719;)Lnet/minecraft/class_1_310;
-		ARG 0 type
 	METHOD method_48480 getArmorTrims (Z)Lnet/minecraft/class_1921;
 		ARG 0 decal
 	METHOD method_65532 getShulkerBoxTextureId (Lnet/minecraft/class_1767;)Lnet/minecraft/class_1_310;

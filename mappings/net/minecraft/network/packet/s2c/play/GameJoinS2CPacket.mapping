@@ -7,7 +7,7 @@ CLASS net/minecraft/class_2678 net/minecraft/network/packet/s2c/play/GameJoinS2C
 	FIELD comp_99 reducedDebugInfo Z
 	FIELD comp_100 showDeathScreen Z
 	FIELD field_47937 CODEC Lnet/minecraft/class_9139;
-	METHOD <init> (IZLjava/util/Set;IIIZZZLnet/minecraft/class_8589;Z)V
+	METHOD <init> (IZLjava/util/Set;IIIZZZLnet/minecraft/class_8589;ZZ)V
 		ARG 1 playerEntityId
 	METHOD <init> (Lnet/minecraft/class_9129;)V
 		ARG 1 buf

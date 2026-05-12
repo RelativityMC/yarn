@@ -1,6 +1,4 @@
 CLASS net/minecraft/class_1_715 net/minecraft/client/vulkan/VulkanCommandEncoderBackend
-	FIELD field_1_3658 commandBufferDisposer Lnet/minecraft/class_1_699;
-	FIELD field_1_3659 rawCommandPool J
 	FIELD field_1_3660 lastWaitValue J
 	FIELD field_1_3661 commandBuffer Lorg/lwjgl/vulkan/VkCommandBuffer;
 	FIELD field_1_3662 renderPass Lnet/minecraft/class_1_704;
@@ -10,8 +8,6 @@ CLASS net/minecraft/class_1_715 net/minecraft/client/vulkan/VulkanCommandEncoder
 	FIELD field_1_3667 submitSemaphore J
 	METHOD <init> (Lnet/minecraft/class_1_679;)V
 		ARG 1 device
-	METHOD method_1_4257 createCommandBuffer (Z)Lorg/lwjgl/vulkan/VkCommandBuffer;
-		ARG 1 primary
 	METHOD method_1_4258 wait (JJ)Z
 		ARG 1 waitValue
 		ARG 3 timeoutNanos
@@ -34,11 +30,6 @@ CLASS net/minecraft/class_1_715 net/minecraft/client/vulkan/VulkanCommandEncoder
 		ARG 1 memoryStack
 	METHOD method_1_4270 close (Lnet/minecraft/class_1_669;)V
 		ARG 1 object
-	METHOD method_1_4271 closeOnNextSubmit (Lorg/lwjgl/vulkan/VkCommandBuffer;)V
-		ARG 1 commandBuffer
-	METHOD method_1_4272 beginCommandBuffer (Ljava/nio/IntBuffer;I)Lorg/lwjgl/vulkan/VkCommandBuffer;
-		ARG 1 colorAttachmentFormats
-		ARG 2 depthAttachmentFormat
 	METHOD method_1_4273 addSignal (JJJ)V
 		ARG 1 vkSemaphore
 		ARG 3 value
@@ -60,5 +51,3 @@ CLASS net/minecraft/class_1_715 net/minecraft/client/vulkan/VulkanCommandEncoder
 		ARG 10 height
 		ARG 11 sourceWidth
 		ARG 12 sourceHeight
-	CLASS 1 1
-		FIELD field_1_3668 buffer Lorg/lwjgl/PointerBuffer;

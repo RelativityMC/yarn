@@ -15,8 +15,6 @@ CLASS net/minecraft/class_129 net/minecraft/util/crash/CrashReportSection
 		ARG 2 detail
 	METHOD method_579 initStackTrace (I)I
 		ARG 1 ignoredCallCount
-	METHOD method_580 trimStackTraceEnd (I)V
-		ARG 1 callCount
 	METHOD method_581 createPositionString (Lnet/minecraft/class_5539;III)Ljava/lang/String;
 		ARG 0 world
 		ARG 1 x
@@ -45,10 +43,6 @@ CLASS net/minecraft/class_129 net/minecraft/util/crash/CrashReportSection
 		ARG 0 element
 		ARG 1 world
 		ARG 2 pos
-	METHOD method_73068 createPositionString (DDD)Ljava/lang/String;
-		ARG 0 x
-		ARG 2 y
-		ARG 4 z
 	CLASS class_1_660 Element
 		METHOD <init> (Ljava/lang/String;Ljava/lang/Object;)V
 			ARG 1 key

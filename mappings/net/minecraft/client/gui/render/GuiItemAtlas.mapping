@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_1_201 net/minecraft/client/gui/render/GuiItemAtlas
-	FIELD field_1_1452 MAX_TEXTURE_SIZE I
 	FIELD field_1_1453 MIN_TEXTURE_SIZE I
 	FIELD field_1_1454 slots Lnet/minecraft/class_1_235;
 	FIELD field_1_1456 depthTexture Lcom/mojang/blaze3d/textures/GpuTexture;

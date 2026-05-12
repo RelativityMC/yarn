@@ -1,7 +1,7 @@
 CLASS com/mojang/blaze3d/systems/GpuDevice
 	COMMENT Wraps a {@link com.mojang.blaze3d.systems.GpuBackend} to provide extra
 	COMMENT run-time checks.
-	METHOD <init> (Lnet/minecraft/class_1_147;)V
+	METHOD <init> (Lnet/minecraft/class_1_147;Ljava/lang/Runnable;)V
 		ARG 1 backend
 	METHOD createBuffer (Ljava/util/function/Supplier;IJ)Lcom/mojang/blaze3d/buffers/GpuBuffer;
 		ARG 1 labelGetter

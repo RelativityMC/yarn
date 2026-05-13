@@ -47,6 +47,8 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_1_3292 gpuSurface Lnet/minecraft/class_1_665;
 	FIELD field_1_3293 updateSurface Z
 	FIELD field_1_3869 worldExtractor Lnet/minecraft/class_1_816;
+	FIELD field_1_6363 worldShareManager Lnet/minecraft/class_1_911;
+	FIELD field_1_6364 friendListManager Lnet/minecraft/class_1_1004;
 	FIELD field_1687 world Lnet/minecraft/class_638;
 		COMMENT Represents the world the client is currently viewing.
 		COMMENT This field is not null when in game.
@@ -190,6 +192,16 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_1_4728 getRecorder ()Lnet/minecraft/class_5962;
 	METHOD method_1_5115 (Lnet/minecraft/class_7973$class_7974;)V
 		ARG 1 properties
+	METHOD method_1_5467 isChatFriendsOnly ()Z
+	METHOD method_1_5468 acceptsFriendInvites ()Z
+	METHOD method_1_5469 areFriendsEnabled ()Z
+	METHOD method_1_5470 isStranger (Ljava/util/UUID;)Z
+		COMMENT Checks if the client should block messages from the {@code sender} due to
+		COMMENT the client only accepting messages from friends.
+		ARG 1 sender
+	METHOD method_1_5471 preloadDefaultShaders ()V
+	METHOD method_1_5472 setIntegratedServerConnection (Lnet/minecraft/class_2535;)V
+		ARG 1 integratedServerConnection
 	METHOD method_1478 getResourceManager ()Lnet/minecraft/class_3300;
 	METHOD method_1479 getResourcePackDir ()Ljava/nio/file/Path;
 	METHOD method_1481 joinWorld (Lnet/minecraft/class_638;)V
@@ -304,7 +316,8 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		COMMENT Checks if the provided {@code entity} should display an outline around its model.
 		ARG 1 entity
 	METHOD method_29042 shouldBlockMessages (Ljava/util/UUID;)Z
-		COMMENT Checks if the client should block messages from the {@code sender}.
+		COMMENT Checks if the client should block messages from the {@code sender} due to
+		COMMENT player muting.
 		COMMENT
 		COMMENT <p>If true, messages will not be displayed in chat and narrator will not process
 		COMMENT them.

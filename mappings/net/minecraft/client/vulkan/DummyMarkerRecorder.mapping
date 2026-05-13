@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_984 net/minecraft/client/vulkan/DummyMarkerRecorder
+	FIELD field_1_6789 INSTANCE Lnet/minecraft/class_1_984;
+	CLASS class_1_985 Queue
+		FIELD field_1_6790 INSTANCE Lnet/minecraft/class_1_984$class_1_985;

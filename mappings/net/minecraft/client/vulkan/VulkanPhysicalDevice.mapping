@@ -8,6 +8,7 @@ CLASS net/minecraft/class_1_717 net/minecraft/client/vulkan/VulkanPhysicalDevice
 	FIELD field_1_3683 physicalDeviceFeatures Lorg/lwjgl/vulkan/VkPhysicalDeviceFeatures2;
 	FIELD field_1_3684 physicalDevice Lorg/lwjgl/vulkan/VkPhysicalDevice;
 	FIELD field_1_3685 physicalDeviceProperties Lorg/lwjgl/vulkan/VkPhysicalDeviceProperties2;
+	FIELD field_1_6426 physicalDevicePropertiesVk11 Lorg/lwjgl/vulkan/VkPhysicalDeviceVulkan11Properties;
 	METHOD <init> (Lorg/lwjgl/vulkan/VkPhysicalDevice;)V
 		ARG 1 physicalDevice
 	METHOD method_1_4280 getComputeQueueFamily ()Lit/unimi/dsi/fastutil/ints/IntIntPair;
@@ -29,3 +30,4 @@ CLASS net/minecraft/class_1_717 net/minecraft/client/vulkan/VulkanPhysicalDevice
 	METHOD method_1_4292 getDriverProperties ()Lorg/lwjgl/vulkan/VkPhysicalDeviceDriverProperties;
 	METHOD method_1_4293 getDeviceProperties ()Lorg/lwjgl/vulkan/VkPhysicalDeviceProperties;
 	METHOD method_1_4893 getType ()Lnet/minecraft/class_1_785;
+	METHOD method_1_5537 getVk11DeviceProperties ()Lorg/lwjgl/vulkan/VkPhysicalDeviceVulkan11Properties;

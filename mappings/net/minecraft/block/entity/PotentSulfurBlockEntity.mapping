@@ -12,6 +12,7 @@ CLASS net/minecraft/class_1_757 net/minecraft/block/entity/PotentSulfurBlockEnti
 	FIELD field_1_6204 SERVER_GEYSER_TICKER Lnet/minecraft/class_5558;
 	FIELD field_1_6206 syncTime J
 	FIELD field_1_6208 countdown I
+	FIELD field_1_6819 WORLD_SEED_SALT J
 	METHOD <init> (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
 		ARG 1 pos
 		ARG 2 state
@@ -60,3 +61,26 @@ CLASS net/minecraft/class_1_757 net/minecraft/block/entity/PotentSulfurBlockEnti
 	METHOD method_1_5337 resetCountdown ()V
 	METHOD method_1_5338 addGeyserParticles (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;)V
 		ARG 0 world
+		ARG 1 basePos
+		ARG 2 surfacePos
+	METHOD method_1_6016 getGeyserHeight (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;I)I
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 depth
+	METHOD method_1_6017 getRandom (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;)Lnet/minecraft/class_5819;
+		ARG 0 world
+		ARG 1 pos
+	METHOD method_1_6018 canGeyserPassThrough (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_3726;)Z
+		ARG 0 state
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 shapeContext
+	METHOD method_1_6019 (Ljava/lang/Integer;)V
+		ARG 1 countdown
+	METHOD method_1_6020 (Lnet/minecraft/class_3414;)Lnet/minecraft/class_5558;
+		ARG 0 soundEvent
+	METHOD method_1_6021 (Lnet/minecraft/class_3414;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_1_757;)V
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 state
+		ARG 4 blockEntity

@@ -13,6 +13,7 @@ CLASS net/minecraft/class_1_679 net/minecraft/client/vulkan/VulkanBackend
 	FIELD field_1_3447 fallbackQueue Lnet/minecraft/class_1_674;
 	FIELD field_1_3448 device Lorg/lwjgl/vulkan/VkDevice;
 	FIELD field_1_3449 vmaAllocator J
+	FIELD field_1_6395 markerRecorder Lnet/minecraft/class_1_970;
 	METHOD <init> (Lnet/minecraft/class_12289;Lnet/minecraft/class_1_691;Lnet/minecraft/class_1_717;Ljava/util/Set;Lorg/lwjgl/vulkan/VkDevice;JLnet/minecraft/class_1_970;)V
 		ARG 1 shaderSoruceGetter
 		ARG 2 instance
@@ -20,6 +21,7 @@ CLASS net/minecraft/class_1_679 net/minecraft/client/vulkan/VulkanBackend
 		ARG 4 extensions
 		ARG 5 device
 		ARG 6 vmaAllocator
+		ARG 8 markerRecorder
 	METHOD method_1_4046 compileRenderPipeline (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/class_12289;)Lnet/minecraft/class_1_718;
 		ARG 1 pipeline
 		ARG 2 sourceGetter
@@ -45,4 +47,5 @@ CLASS net/minecraft/class_1_679 net/minecraft/client/vulkan/VulkanBackend
 	METHOD method_1_4057 getFallbackQueue ()Lnet/minecraft/class_1_674;
 	METHOD method_1_4058 getRawDevice ()Lorg/lwjgl/vulkan/VkDevice;
 	METHOD method_1_4059 getVmaAllocator ()J
+	METHOD method_1_5492 getMarkerRecorder ()Lnet/minecraft/class_1_970;
 	CLASS class_1_680 ShaderKey

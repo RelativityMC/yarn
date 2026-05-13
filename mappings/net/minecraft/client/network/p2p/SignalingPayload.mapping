@@ -1,0 +1,55 @@
+CLASS net/minecraft/class_1_931 net/minecraft/client/network/p2p/SignalingPayload
+	METHOD method_1_5686 answer (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/class_1_931;
+		ARG 0 sessionId
+		ARG 1 sdp
+	METHOD method_1_5687 toTyped ()Lnet/minecraft/class_1_931$class_1_937;
+	METHOD method_1_5688 fromTyped (Lnet/minecraft/class_1_931$class_1_937;)Lnet/minecraft/class_1_931;
+		ARG 0 typed
+	METHOD method_1_5689 iceCandidate (Ljava/lang/String;Ldev/onvoid/webrtc/RTCIceCandidate;)Lnet/minecraft/class_1_931;
+		ARG 0 sessionId
+		ARG 1 candidate
+	METHOD method_1_5690 inviteDeclined ()Lnet/minecraft/class_1_931;
+	METHOD method_1_5691 joinAccepted (Ljava/lang/String;)Lnet/minecraft/class_1_931;
+		ARG 0 sessionId
+	METHOD method_1_5692 joinRejected (Ljava/lang/String;)Lnet/minecraft/class_1_931;
+		ARG 0 sessionId
+	METHOD method_1_5693 joinRequest (Ljava/lang/String;)Lnet/minecraft/class_1_931;
+		ARG 0 sessionId
+	METHOD method_1_5694 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_5695 (Lnet/minecraft/class_1_931;)Ljava/util/Optional;
+		ARG 0 payload
+	METHOD method_1_5696 (Lnet/minecraft/class_1_931;)Ljava/util/Optional;
+		ARG 0 payload
+	METHOD method_1_5697 (Lnet/minecraft/class_1_931$class_1_938;Ljava/lang/String;Ljava/util/Optional;Ljava/util/Optional;)Lnet/minecraft/class_1_931;
+		ARG 0 type
+		ARG 1 sessionId
+		ARG 2 sdp
+		ARG 3 iceCandidate
+	METHOD method_1_5698 offer (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/class_1_931;
+		ARG 0 sessionId
+		ARG 1 sdp
+	CLASS class_1_932 FriendJoin
+		CLASS class_1_933 JoinAccepted
+		CLASS class_1_934 InviteDeclined
+			FIELD field_1_6577 INSTANCE Lnet/minecraft/class_1_931$class_1_932$class_1_934;
+		CLASS class_1_935 JoinRejected
+		CLASS class_1_936 JoinRequest
+	CLASS class_1_937 Typed
+	CLASS class_1_938 Type
+	CLASS class_1_939 WebRtc
+		CLASS class_1_940 Answer
+		CLASS class_1_941 IceCandidate
+			METHOD method_1_5700 fromWebRtc (Ldev/onvoid/webrtc/RTCIceCandidate;)Lnet/minecraft/class_1_931$class_1_939$class_1_941;
+				ARG 0 candidate
+			METHOD method_1_5701 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+				ARG 0 instance
+			METHOD method_1_5702 (Lnet/minecraft/class_1_931$class_1_939$class_1_941;)Ljava/util/Optional;
+				ARG 0 candidate
+			METHOD method_1_5703 (Ljava/lang/String;Ljava/util/Optional;Ljava/lang/Integer;)Lnet/minecraft/class_1_931$class_1_939$class_1_941;
+				ARG 0 candidate
+				ARG 1 sdpMid
+				ARG 2 sdpMLineIndex
+			METHOD method_1_5704 toWebRtc ()Ldev/onvoid/webrtc/RTCIceCandidate;
+		CLASS class_1_942 IceCandidatePayload
+		CLASS class_1_943 Offer

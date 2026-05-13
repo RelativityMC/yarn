@@ -1,0 +1,42 @@
+CLASS net/minecraft/class_1_958 net/minecraft/client/network/p2p/P2PTelemetrySender
+	FIELD field_1_6643 INSTANCE Lnet/minecraft/class_1_958;
+	METHOD method_1_5800 (ZLnet/minecraft/class_1_958$class_1_961;Lnet/minecraft/class_1_958$class_1_962$class_1_963;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Lnet/minecraft/class_7973$class_7974;)V
+		ARG 6 properties
+	METHOD method_1_5801 getElapsedTime (Ljava/time/Instant;Ljava/time/Instant;)Ljava/lang/Long;
+		ARG 0 from
+		ARG 1 to
+	METHOD method_1_5802 report (ZLnet/minecraft/class_1_958$class_1_962;Ljava/time/Instant;Ljava/time/Instant;Ljava/time/Instant;)V
+		ARG 1 connectionSuccessful
+		ARG 2 diagnostics
+		ARG 3 start
+		ARG 4 signalingFinished
+		ARG 5 connectionFinished
+	CLASS class_1_959 FailureStage
+		FIELD field_1_6649 name Ljava/lang/String;
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 name
+	CLASS class_1_960 CandidateType
+		FIELD field_1_6651 VALUES_BY_NAME Ljava/util/Map;
+		FIELD field_1_6657 name Ljava/lang/String;
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 name
+		METHOD method_1_5805 byName (Ljava/lang/String;)Ljava/util/Optional;
+			ARG 0 name
+	CLASS class_1_961 IcePath
+		FIELD field_1_6664 name Ljava/lang/String;
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 name
+		METHOD method_1_5807 getIcePath (Lnet/minecraft/class_1_958$class_1_960;Lnet/minecraft/class_1_958$class_1_960;)Lnet/minecraft/class_1_958$class_1_961;
+			ARG 0 local
+			ARG 1 remote
+	CLASS class_1_962 Diagnostics
+		FIELD field_1_6665 failureStage Lnet/minecraft/class_1_958$class_1_959;
+		FIELD field_1_6666 local Lnet/minecraft/class_1_958$class_1_960;
+		FIELD field_1_6667 remote Lnet/minecraft/class_1_958$class_1_960;
+		METHOD method_1_5808 setFailureStage (Lnet/minecraft/class_1_958$class_1_959;)V
+			ARG 1 failureStage
+		METHOD method_1_5809 setCandidateTypes (Lnet/minecraft/class_1_958$class_1_960;Lnet/minecraft/class_1_958$class_1_960;)V
+			ARG 1 local
+			ARG 2 remote
+		METHOD method_1_5810 toImmutable ()Lnet/minecraft/class_1_958$class_1_962$class_1_963;
+		CLASS class_1_963 Immutable

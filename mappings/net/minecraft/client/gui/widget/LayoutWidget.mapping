@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_8133 net/minecraft/client/gui/widget/LayoutWidget
+	METHOD method_1_5495 clear ()V
 	METHOD method_48222 refreshPositions ()V
 	METHOD method_48227 forEachElement (Ljava/util/function/Consumer;)V
 		ARG 1 consumer

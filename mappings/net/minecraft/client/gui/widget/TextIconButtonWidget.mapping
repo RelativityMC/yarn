@@ -2,6 +2,14 @@ CLASS net/minecraft/class_8662 net/minecraft/client/gui/widget/TextIconButtonWid
 	COMMENT A button with an icon and an optional text.
 	COMMENT
 	COMMENT @see ButtonWidget
+	FIELD field_1_6527 BUTTON_DISABLED_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_6528 FRIENDS_LOADING_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_6531 FRIENDS_BUTTON_LOADING_TOOLTIP Lnet/minecraft/class_7919;
+	FIELD field_1_6532 defaultTooltip Lnet/minecraft/class_7919;
+	FIELD field_1_6533 overrideTooltip Z
+	FIELD field_1_6534 xOffset I
+	FIELD field_1_6535 yOffset I
+	FIELD field_1_6536 setLoadingOnPress Z
 	FIELD field_45379 texture Lnet/minecraft/class_8666;
 	FIELD field_45380 textureWidth I
 	FIELD field_45381 textureHeight I
@@ -11,8 +19,20 @@ CLASS net/minecraft/class_8662 net/minecraft/client/gui/widget/TextIconButtonWid
 		ARG 3 message
 		ARG 4 textureWidth
 		ARG 5 textureHeight
+		ARG 6 xOffset
+		ARG 7 yOffset
+		ARG 8 buttonTextures
 		ARG 9 onPress
+		ARG 10 tooltip
 		ARG 11 narrationSupplier
+		ARG 12 setLoadingOnPress
+	METHOD method_1_5645 drawOverrideIcon (Lnet/minecraft/class_332;)Z
+		ARG 1 context
+	METHOD method_1_5646 setLoading (Z)V
+		ARG 1 overrideTooltip
+	METHOD method_1_5647 setTooltipOverride (ZLnet/minecraft/class_7919;)V
+		ARG 1 overrideTooltip
+		ARG 2 tooltip
 	METHOD method_52723 builder (Lnet/minecraft/class_2561;Lnet/minecraft/class_4185$class_4241;Z)Lnet/minecraft/class_8662$class_8663;
 		ARG 0 text
 		ARG 1 onPress
@@ -22,6 +42,9 @@ CLASS net/minecraft/class_8662 net/minecraft/client/gui/widget/TextIconButtonWid
 		ARG 2 x
 		ARG 3 y
 	CLASS class_8663 Builder
+		FIELD field_1_6537 xOffset I
+		FIELD field_1_6538 yOffset I
+		FIELD field_1_6539 setLoadingOnPress Z
 		FIELD field_45382 text Lnet/minecraft/class_2561;
 		FIELD field_45383 onPress Lnet/minecraft/class_4185$class_4241;
 		FIELD field_45384 hideText Z
@@ -36,6 +59,12 @@ CLASS net/minecraft/class_8662 net/minecraft/client/gui/widget/TextIconButtonWid
 			ARG 1 text
 			ARG 2 onPress
 			ARG 3 hideText
+		METHOD method_1_5648 offset (II)Lnet/minecraft/class_8662$class_8663;
+			ARG 1 xOffset
+			ARG 2 yOffset
+		METHOD method_1_5649 setLoadingOnPress ()Lnet/minecraft/class_8662$class_8663;
+		METHOD method_1_5650 tooltip (Lnet/minecraft/class_2561;)Lnet/minecraft/class_8662$class_8663;
+			ARG 1 tooltip
 		METHOD method_52724 build ()Lnet/minecraft/class_8662;
 		METHOD method_52725 width (I)Lnet/minecraft/class_8662$class_8663;
 			ARG 1 width
@@ -60,10 +89,13 @@ CLASS net/minecraft/class_8662 net/minecraft/client/gui/widget/TextIconButtonWid
 			ARG 3 message
 			ARG 4 textureWidth
 			ARG 5 textureHeight
+			ARG 6 xOffset
+			ARG 7 yOffset
 			ARG 8 textures
 			ARG 9 onPress
 			ARG 10 tooltip
 			ARG 11 narrationSupplier
+			ARG 12 setLoadingOnPress
 	CLASS class_8665 WithText
 		METHOD <init> (IILnet/minecraft/class_2561;IIIILnet/minecraft/class_8666;Lnet/minecraft/class_4185$class_4241;Lnet/minecraft/class_2561;Lnet/minecraft/class_4185$class_7841;Z)V
 			ARG 1 width
@@ -71,7 +103,10 @@ CLASS net/minecraft/class_8662 net/minecraft/client/gui/widget/TextIconButtonWid
 			ARG 3 message
 			ARG 4 textureWidth
 			ARG 5 textureHeight
+			ARG 6 xOffset
+			ARG 7 yOffset
 			ARG 8 textures
 			ARG 9 onPress
 			ARG 10 tooltip
 			ARG 11 narrationSupplier
+			ARG 12 setLoadingOnPress

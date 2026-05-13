@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_8216 net/minecraft/util/Urls
+	FIELD field_1_6371 JAVA_XBOX_PRIVACY_AND_SAFETY Ljava/net/URI;
 	FIELD field_43117 GDPR Ljava/net/URI;
 	FIELD field_43118 EULA Ljava/net/URI;
 	FIELD field_43119 JAVA_ATTRIBUTION Ljava/net/URI;

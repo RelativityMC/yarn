@@ -1,0 +1,17 @@
+CLASS net/minecraft/class_1_979 net/minecraft/client/friend/gui/tab/FriendListTab
+	FIELD field_1_6753 height I
+	FIELD field_1_6754 width I
+	METHOD <init> (II)V
+		ARG 1 width
+		ARG 2 height
+	METHOD method_1_5924 addWidget (Lnet/minecraft/class_8021;II)Lnet/minecraft/class_7843;
+		ARG 1 widget
+		ARG 2 width
+		ARG 3 height
+	METHOD method_1_5925 update ()V
+	METHOD method_1_5926 getBodyWidget ()Lnet/minecraft/class_8133;
+	METHOD method_1_5927 (Lnet/minecraft/class_339;)V
+		ARG 0 child
+	METHOD method_1_5928 relayout ()V
+	METHOD method_1_5929 setHeight (I)V
+		ARG 1 height

@@ -278,6 +278,7 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 2 text
 		ARG 3 x
 		ARG 4 y
+		ARG 5 width
 		ARG 6 color
 		ARG 7 shadow
 	METHOD method_51441 drawHoverEvent (Lnet/minecraft/class_327;Lnet/minecraft/class_2583;II)V
@@ -477,6 +478,7 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 2 text
 		ARG 3 x
 		ARG 4 y
+		ARG 5 width
 		ARG 6 color
 	METHOD method_70845 drawTexturedQuad (Lnet/minecraft/class_2960;IIIIFFFF)V
 		ARG 1 sprite
@@ -532,6 +534,7 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 8 x2
 		ARG 9 y2
 	METHOD method_70854 addPlayerSkin (Lnet/minecraft/class_3879$class_9948;Lnet/minecraft/class_2960;FFFFIIII)V
+		ARG 1 playerModel
 		ARG 2 texture
 		ARG 3 scale
 		ARG 4 xRotation
@@ -552,6 +555,9 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 	METHOD method_70856 addEntity (Lnet/minecraft/class_10017;FLorg/joml/Vector3fc;Lorg/joml/Quaternionfc;Lorg/joml/Quaternionfc;IIII)V
 		ARG 1 entityState
 		ARG 2 scale
+		ARG 3 translation
+		ARG 4 rotation
+		ARG 5 overrideCameraAngle
 		ARG 6 x1
 		ARG 7 y1
 		ARG 8 x2
@@ -643,7 +649,10 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 2 hoverType
 	METHOD method_75788 getTextConsumer ()Lnet/minecraft/class_12225;
 	CLASS class_8214 ScissorStack
+		FIELD field_1_5959 defaultRect Lnet/minecraft/class_8030;
 		FIELD field_43099 stack Ljava/util/Deque;
+		METHOD <init> (Lnet/minecraft/class_8030;)V
+			ARG 1 defaultRect
 		METHOD method_49699 pop ()V
 		METHOD method_49700 push (Lnet/minecraft/class_8030;)V
 			ARG 1 rect

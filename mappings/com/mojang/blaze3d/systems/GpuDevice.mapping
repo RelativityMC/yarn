@@ -3,6 +3,7 @@ CLASS com/mojang/blaze3d/systems/GpuDevice
 	COMMENT run-time checks.
 	METHOD <init> (Lnet/minecraft/class_1_147;Ljava/lang/Runnable;)V
 		ARG 1 backend
+		ARG 2 criticalShaderLoader
 	METHOD createBuffer (Ljava/util/function/Supplier;IJ)Lcom/mojang/blaze3d/buffers/GpuBuffer;
 		ARG 1 labelGetter
 		ARG 2 usage

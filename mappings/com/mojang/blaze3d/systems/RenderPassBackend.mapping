@@ -5,7 +5,16 @@ CLASS net/minecraft/class_1_149 com/mojang/blaze3d/systems/RenderPassBackend
 		ARG 3 sampler
 	METHOD method_1_1326 disableScissor ()V
 	METHOD method_1_1327 draw (IIII)V
+		ARG 1 vertexCount
+		ARG 2 instanceCount
+		ARG 3 firstVertex
+		ARG 4 firstInstance
 	METHOD method_1_1328 drawIndexed (IIIII)V
+		ARG 1 indexCount
+		ARG 2 instanceCount
+		ARG 3 firstIndex
+		ARG 4 vertexOffset
+		ARG 5 firstInstance
 	METHOD method_1_1329 drawMultipleIndexed (Ljava/util/Collection;Lcom/mojang/blaze3d/buffers/GpuBuffer;Lnet/minecraft/class_5595;Ljava/util/Collection;Ljava/lang/Object;)V
 		ARG 1 objects
 		ARG 2 buffer
@@ -37,3 +46,9 @@ CLASS net/minecraft/class_1_149 com/mojang/blaze3d/systems/RenderPassBackend
 	METHOD method_1_4243 writeTimestamp (Lnet/minecraft/class_1_685;I)V
 		ARG 1 timestampQueryPool
 		ARG 2 index
+	METHOD method_1_5511 drawIndexedIndirect (Lcom/mojang/blaze3d/buffers/GpuBufferSlice;I)V
+		ARG 1 buffer
+		ARG 2 drawCount
+	METHOD method_1_5512 drawIndirect (Lcom/mojang/blaze3d/buffers/GpuBufferSlice;I)V
+		ARG 1 buffer
+		ARG 2 drawCount

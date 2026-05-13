@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_1_917 net/minecraft/client/gui/widget/FriendsListButtonWidget
+	FIELD field_1_6476 OPEN_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_6477 NARRATION_SUPPLIER Lnet/minecraft/class_4185$class_7841;
+	FIELD field_1_6478 NOTIFICATION_COUNT_TEXTURES [Lnet/minecraft/class_2960;
+	FIELD field_1_6479 TEXTURE_SIZE I
+	FIELD field_1_6480 OPEN_TOOLTIP Lnet/minecraft/class_2561;
+	FIELD field_1_6481 incomingRequestCount I
+	METHOD <init> (ILnet/minecraft/class_4185$class_4241;)V
+		ARG 1 width
+		ARG 2 pressAction
+	METHOD method_1_5611 update ()V

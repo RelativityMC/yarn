@@ -5,9 +5,23 @@ CLASS net/minecraft/class_8089 net/minecraft/client/gui/widget/TabNavigationWidg
 	FIELD field_43079 USAGE_NARRATION_TEXT Lnet/minecraft/class_2561;
 	FIELD field_43080 grid Lnet/minecraft/class_7843;
 	METHOD <init> (IIIILnet/minecraft/class_8088;Lcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableList;)V
-		ARG 3 x
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+		ARG 5 tagManager
+		ARG 6 tabButtons
+		ARG 7 tabs
+	METHOD method_1_5867 relayout (I)V
+		ARG 1 width
+	METHOD method_1_5868 (DDLjava/util/concurrent/atomic/AtomicBoolean;Lnet/minecraft/class_8021;)V
+		ARG 5 element
 	METHOD method_48623 builder (Lnet/minecraft/class_8088;IIII)Lnet/minecraft/class_8089$class_8090;
 		ARG 0 tabManager
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
 	METHOD method_48987 selectTab (IZ)V
 		ARG 1 index
 		ARG 2 clickSound
@@ -31,10 +45,20 @@ CLASS net/minecraft/class_8089 net/minecraft/client/gui/widget/TabNavigationWidg
 		ARG 1 index
 		ARG 2 active
 	CLASS class_8090 Builder
+		FIELD field_1_6709 height I
+		FIELD field_1_6710 tabButtons Ljava/util/List;
+		FIELD field_1_6711 x I
+		FIELD field_1_6712 y I
 		FIELD field_42151 width I
 		FIELD field_42152 tabManager Lnet/minecraft/class_8088;
 		FIELD field_42153 tabs Ljava/util/List;
 		METHOD <init> (Lnet/minecraft/class_8088;IIII)V
 			ARG 1 tabManager
+			ARG 2 x
+			ARG 3 y
+			ARG 4 width
+			ARG 5 height
 		METHOD method_48627 build ()Lnet/minecraft/class_8089;
-		METHOD method_48631 tabs (Lnet/minecraft/class_8209;Lnet/minecraft/class_8087;)Lnet/minecraft/class_8089$class_8090;
+		METHOD method_48631 tab (Lnet/minecraft/class_8209;Lnet/minecraft/class_8087;)Lnet/minecraft/class_8089$class_8090;
+			ARG 1 tabButton
+			ARG 2 tab

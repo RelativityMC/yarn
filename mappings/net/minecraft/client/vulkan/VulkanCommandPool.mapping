@@ -1,0 +1,13 @@
+CLASS net/minecraft/class_1_907 net/minecraft/client/vulkan/VulkanCommandPool
+	FIELD field_1_6403 COMMAND_BUFFER_ALLOCATION_COUNT I
+	FIELD field_1_6404 COMMAND_BUFFER_ARRAY_EXPANSION_SIZE I
+	FIELD field_1_6405 commandBuffers Lorg/lwjgl/PointerBuffer;
+	FIELD field_1_6406 commandPool J
+	FIELD field_1_6407 backend Lnet/minecraft/class_1_679;
+	METHOD <init> (Lnet/minecraft/class_1_679;Lnet/minecraft/class_1_674;)V
+		ARG 1 backend
+		ARG 2 queue
+	METHOD method_1_5505 getVkCommandBuffer ()Lorg/lwjgl/vulkan/VkCommandBuffer;
+	METHOD method_1_5506 allocateMoreCommandBuffers ()V
+	METHOD method_1_5507 clear ()V
+	METHOD method_1_5508 reset ()V

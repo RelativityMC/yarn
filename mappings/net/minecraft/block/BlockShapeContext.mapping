@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_969 net/minecraft/block/BlockShapeContext
+	FIELD field_1_6705 minY D
+	METHOD <init> (D)V
+		ARG 1 minY

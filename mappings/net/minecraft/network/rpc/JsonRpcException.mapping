@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_1_983 net/minecraft/network/rpc/JsonRpcException
+	FIELD field_1_6786 code I
+	FIELD field_1_6787 data Lcom/google/gson/JsonElement;
+	FIELD field_1_6788 message Ljava/lang/String;
+	METHOD <init> (ILjava/lang/String;Lcom/google/gson/JsonElement;)V
+		ARG 1 code
+		ARG 2 message
+		ARG 3 data
+	METHOD method_1_5986 getCode ()I
+	METHOD method_1_5987 getData ()Lcom/google/gson/JsonElement;
+	METHOD method_1_5988 getCodeAsString ()Ljava/lang/String;
+	METHOD method_1_5989 getMessage ()Ljava/lang/String;

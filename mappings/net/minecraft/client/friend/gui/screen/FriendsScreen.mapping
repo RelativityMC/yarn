@@ -1,0 +1,47 @@
+CLASS net/minecraft/class_1_986 net/minecraft/client/friend/gui/screen/FriendsScreen
+	FIELD field_1_6791 FRIENDS_BACKGROUND_TEXTURE_TEXT Lnet/minecraft/class_2960;
+	FIELD field_1_6793 CONNECTION_ISSUE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_6794 GENERIC_ERROR_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_6795 TEMPORARILY_UNAVAILABLE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_6796 GENERIC_ERROR_TOAST_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_6797 UPGRADE_NEEDED_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_6798 USER_MAY_LACK_ACTIVE_PROFILE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_6799 LOADING_FRIENDS_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_6800 LOADING_REQUESTS_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_6801 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_6805 FRIENDS_OPEN_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_6806 parent Lnet/minecraft/class_437;
+	FIELD field_1_6807 tabs Lnet/minecraft/class_8667;
+	FIELD field_1_6809 friendsTab Lnet/minecraft/class_1_926;
+	FIELD field_1_6811 connectingP2P Z
+	FIELD field_1_6813 pendingFriendRemovals Ljava/util/Set;
+	FIELD field_1_6814 pendingFriendRequestsTabButton Lnet/minecraft/class_1_992;
+	FIELD field_1_6815 pendingFriendRequestsTab Lnet/minecraft/class_1_927;
+	FIELD field_1_6816 tabManager Lnet/minecraft/class_8088;
+	METHOD <init> (Lnet/minecraft/class_437;)V
+		ARG 1 parent
+	METHOD method_1_5994 unloadTab (Lnet/minecraft/class_8087;)V
+		ARG 1 tab
+	METHOD method_1_5995 getWidth ()I
+	METHOD method_1_5996 (Lnet/minecraft/class_1_986;Lnet/minecraft/class_339;)V
+		ARG 1 child
+	METHOD method_1_5997 (Lnet/minecraft/class_1_986;Lnet/minecraft/class_339;)V
+		ARG 1 widget
+	METHOD method_1_5998 (Lnet/minecraft/class_1_986;Lnet/minecraft/class_339;)V
+		ARG 1 widget
+	METHOD method_1_6001 (Ljava/util/UUID;Lcom/mojang/authlib/yggdrasil/FriendsService$ResultCode;Ljava/lang/Throwable;)V
+		ARG 2 resultCode
+		ARG 3 ex
+	METHOD method_1_6002 (Lcom/mojang/authlib/yggdrasil/FriendsService$ResultCode;)V
+		ARG 1 resultCode
+	METHOD method_1_6004 (Lcom/mojang/authlib/yggdrasil/FriendsService$ResultCode;)V
+		ARG 1 resultCode
+	METHOD method_1_6010 onSuccess (Lnet/minecraft/class_5520;)V
+		ARG 1 socialInteractionsManager
+	METHOD method_1_6011 updateStatus ()V
+	METHOD method_1_6012 loadTab (Lnet/minecraft/class_8087;)V
+		ARG 1 tab
+	METHOD method_1_6013 setErrorMessage (Lnet/minecraft/class_2561;)V
+		ARG 1 errorMessage
+	METHOD method_1_6014 update ()V
+	METHOD method_1_6015 tryConnectP2P ()Z

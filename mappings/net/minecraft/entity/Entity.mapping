@@ -254,6 +254,17 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 3 changedZ
 		ARG 4 movement
 	METHOD method_1_5399 getAirDragModifier ()F
+	METHOD method_1_5482 getCollisions (Lnet/minecraft/class_3726;Lnet/minecraft/class_1937;Ljava/util/List;Lnet/minecraft/class_238;)Ljava/util/List;
+		ARG 0 shapeContext
+		ARG 1 world
+		ARG 2 additionalCollisions
+		ARG 3 box
+	METHOD method_1_5483 adjustMovementForCollisions (Lnet/minecraft/class_3726;Lnet/minecraft/class_243;Lnet/minecraft/class_238;Lnet/minecraft/class_1937;Ljava/util/List;)Lnet/minecraft/class_243;
+		ARG 0 shapeContext
+		ARG 1 movement
+		ARG 2 boundingBox
+		ARG 3 world
+		ARG 4 additionalCollisions
 	METHOD method_5622 onBlockCollision (Lnet/minecraft/class_2680;)V
 		COMMENT Called when this entity's collision box intersects {@code state}.
 		COMMENT

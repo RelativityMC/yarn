@@ -68,6 +68,7 @@ CLASS net/minecraft/class_370 net/minecraft/client/toast/SystemToast
 		ARG 0 client
 		ARG 1 count
 	CLASS class_9037 Type
+		FIELD field_1_6603 FRIEND Lnet/minecraft/class_370$class_9037;
 		FIELD field_47583 NARRATOR_TOGGLE Lnet/minecraft/class_370$class_9037;
 		FIELD field_47584 WORLD_BACKUP Lnet/minecraft/class_370$class_9037;
 		FIELD field_47585 PACK_LOAD_FAILURE Lnet/minecraft/class_370$class_9037;

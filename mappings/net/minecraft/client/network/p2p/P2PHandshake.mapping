@@ -1,0 +1,99 @@
+CLASS net/minecraft/class_1_912 net/minecraft/client/network/p2p/P2PHandshake
+	FIELD field_1_6448 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_6449 channel Ldev/onvoid/webrtc/RTCDataChannel;
+	FIELD field_1_6450 handedOffChannel Ljava/util/concurrent/atomic/AtomicBoolean;
+	FIELD field_1_6451 sessionId Ljava/lang/String;
+	FIELD field_1_6452 join Z
+	FIELD field_1_6453 iceInfoCallback Ljava/util/function/Consumer;
+	FIELD field_1_6454 iceCandidateCallback Ljava/util/function/Consumer;
+	FIELD field_1_6455 peerConnection Ldev/onvoid/webrtc/RTCPeerConnection;
+	FIELD field_1_6456 openedChannel Ljava/util/concurrent/CompletableFuture;
+	FIELD field_1_6457 sdpFuture Ljava/util/concurrent/CompletableFuture;
+	FIELD field_1_6458 handshakeStarted Ljava/util/concurrent/atomic/AtomicBoolean;
+	METHOD <init> (Ldev/onvoid/webrtc/PeerConnectionFactory;Ldev/onvoid/webrtc/RTCConfiguration;Ljava/lang/String;ZLjava/util/function/Consumer;)V
+		ARG 1 peerConnectionFactory
+		ARG 2 rtcConfiguration
+		ARG 3 sessionId
+		ARG 4 join
+			COMMENT {@code true} if joining; {@code false} if hosting
+		ARG 5 iceCandidateCallback
+	METHOD method_1_5575 abortHandshake (Ljava/lang/String;)V
+		ARG 1 reason
+	METHOD method_1_5576 acceptOffer (Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 sdp
+	METHOD method_1_5577 addIceHandshake (Ldev/onvoid/webrtc/RTCIceCandidate;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 iceCandidate
+	METHOD method_1_5578 handleAnswer (Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 sdp
+	METHOD method_1_5579 completeWithSdp (Ljava/util/concurrent/CompletableFuture;)V
+		ARG 1 sdpFuture
+	METHOD method_1_5580 createAnswer ()Ljava/util/concurrent/CompletableFuture;
+	METHOD method_1_5581 createOffer ()Ljava/util/concurrent/CompletableFuture;
+	METHOD method_1_5582 doCreateOffer ()Ljava/util/concurrent/CompletableFuture;
+	METHOD method_1_5583 (Ldev/onvoid/webrtc/RTCStats;Ljava/util/Map;)Ljava/util/Optional;
+		ARG 2 stats
+	METHOD method_1_5584 abortHandshakeImpl (Ljava/lang/String;)V
+		ARG 1 reason
+	METHOD method_1_5585 onIceInfo (Lnet/minecraft/class_1_912$class_1_914;)V
+		ARG 1 iceInfo
+	METHOD method_1_5586 onLocalCandidate (Ldev/onvoid/webrtc/RTCIceCandidate;)V
+		ARG 1 iceCandidate
+	METHOD method_1_5587 getOpenedChannel ()Ljava/util/concurrent/CompletableFuture;
+	METHOD method_1_5588 getSessionId ()Ljava/lang/String;
+	METHOD method_1_5589 isJoin ()Z
+		COMMENT {@return {@code true} if joining; {@code false} if hosting}
+	METHOD method_1_5593 (Ljava/util/concurrent/CompletableFuture;Ljava/lang/Void;Ljava/lang/Throwable;)V
+		ARG 3 ex
+	METHOD method_1_5594 (Ljava/lang/String;Ljava/lang/Throwable;)V
+		ARG 1 sdp
+		ARG 2 ex
+	METHOD method_1_5595 onDataChannelOpen (Ldev/onvoid/webrtc/RTCDataChannel;)V
+		ARG 1 dataChannel
+	METHOD method_1_5596 setIceInfoCallback (Ljava/util/function/Consumer;)V
+		ARG 1 iceInfoCallback
+	METHOD method_1_5597 onConnected ()V
+	METHOD method_1_5598 setLocalDescription (Ldev/onvoid/webrtc/RTCSessionDescription;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 sessionDescription
+	METHOD method_1_5599 setRemoteDescription (Ldev/onvoid/webrtc/RTCSessionDescription;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 sessionDescription
+	METHOD method_1_5600 sdpExchange (Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletableFuture;
+	METHOD method_1_5601 onDataChannel (Ldev/onvoid/webrtc/RTCDataChannel;)V
+		ARG 1 channel
+	CLASS 1 1
+		METHOD onBufferedAmountChange (J)V
+			ARG 1 previousAmount
+		METHOD onMessage (Ldev/onvoid/webrtc/RTCDataChannelBuffer;)V
+			ARG 1 buffer
+	CLASS 2 2
+		METHOD onFailure (Ljava/lang/String;)V
+			ARG 1 message
+	CLASS 3 3
+		METHOD onFailure (Ljava/lang/String;)V
+			ARG 1 message
+	CLASS 4 4
+		METHOD onFailure (Ljava/lang/String;)V
+			ARG 1 message
+		METHOD onSuccess (Ldev/onvoid/webrtc/RTCSessionDescription;)V
+			ARG 1 sessionDescription
+	CLASS 5 5
+		METHOD onFailure (Ljava/lang/String;)V
+			ARG 1 message
+		METHOD onSuccess (Ldev/onvoid/webrtc/RTCSessionDescription;)V
+			ARG 1 sessionDescription
+	CLASS class_1_913 Channel
+	CLASS class_1_914 IceInfo
+	CLASS class_1_915 class_1_915
+		METHOD onConnectionChange (Ldev/onvoid/webrtc/RTCPeerConnectionState;)V
+			ARG 1 peerConnectionState
+		METHOD onDataChannel (Ldev/onvoid/webrtc/RTCDataChannel;)V
+			ARG 1 dataChannel
+		METHOD onIceCandidate (Ldev/onvoid/webrtc/RTCIceCandidate;)V
+			ARG 1 iceCandidate
+		METHOD onIceCandidateError (Ldev/onvoid/webrtc/RTCPeerConnectionIceErrorEvent;)V
+			ARG 1 error
+		METHOD onIceConnectionChange (Ldev/onvoid/webrtc/RTCIceConnectionState;)V
+			ARG 1 iceConnectionState
+		METHOD onIceGatheringChange (Ldev/onvoid/webrtc/RTCIceGatheringState;)V
+			ARG 1 iceGatheringState
+		METHOD onSignalingChange (Ldev/onvoid/webrtc/RTCSignalingState;)V
+			ARG 1 signalingState

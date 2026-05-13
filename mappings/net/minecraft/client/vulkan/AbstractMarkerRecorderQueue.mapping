@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_1_987 net/minecraft/client/vulkan/AbstractMarkerRecorderQueue
+	FIELD field_1_6821 pages [Lnet/minecraft/class_1_987$class_1_989;
+	FIELD field_1_6822 index I
+	FIELD field_1_6823 breadth I
+	FIELD field_1_6824 nextMarker I
+	FIELD field_1_6825 queue Lorg/lwjgl/vulkan/VkQueue;
+	METHOD <init> (Lnet/minecraft/class_1_674;I)V
+		ARG 1 queue
+		ARG 2 breadth
+	METHOD method_1_6022 findCheckpoint (I)Lnet/minecraft/class_1_987$class_1_988;
+		ARG 1 id
+	METHOD method_1_6023 addMarker (Lorg/lwjgl/vulkan/VkCommandBuffer;I)V
+		ARG 1 commandBuffer
+		ARG 2 marker
+	CLASS class_1_988 Checkpoint
+	CLASS class_1_989 Page

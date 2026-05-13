@@ -1,0 +1,17 @@
+CLASS net/minecraft/class_1_975 net/minecraft/client/gui/screen/ConfirmPrivacyLinkScreen
+	FIELD field_1_6726 PRIVACY_LINK_MESSAGE Lnet/minecraft/class_2561;
+	FIELD field_1_6727 PRIVACY_LINK_TITLE Lnet/minecraft/class_2561;
+	FIELD field_1_6728 linkText Lnet/minecraft/class_2561;
+	METHOD <init> (Lit/unimi/dsi/fastutil/booleans/BooleanConsumer;Ljava/lang/String;)V
+		ARG 1 callback
+		ARG 2 link
+	METHOD method_1_5879 open (Lnet/minecraft/class_437;Ljava/lang/String;)V
+		ARG 0 screen
+		ARG 1 link
+	METHOD method_1_5880 open (Lnet/minecraft/class_437;Ljava/net/URI;)V
+		ARG 0 screen
+		ARG 1 link
+	METHOD method_1_5881 (Ljava/lang/String;Lnet/minecraft/class_310;Lnet/minecraft/class_437;Z)V
+		ARG 3 confirmed
+	METHOD method_1_5882 (Lnet/minecraft/class_2583;)Lnet/minecraft/class_2583;
+		ARG 0 style

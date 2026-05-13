@@ -1,5 +1,7 @@
 CLASS net/minecraft/class_7966 net/minecraft/client/session/telemetry/TelemetryEventType
 	FIELD field_1_5968 GRAPHICS_CAPABILITIES Lnet/minecraft/class_7966;
+	FIELD field_1_6494 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_6495 P2P_CONNECTION Lnet/minecraft/class_7966;
 	FIELD field_41435 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_41436 WORLD_LOADED Lnet/minecraft/class_7966;
 	FIELD field_41437 PERFORMANCE_METRICS Lnet/minecraft/class_7966;
@@ -20,6 +22,7 @@ CLASS net/minecraft/class_7966 net/minecraft/client/session/telemetry/TelemetryE
 		ARG 2 exportKey
 		ARG 3 properties
 		ARG 4 optional
+	METHOD method_1_5618 isMissingTelemetryTranslations ()Z
 	METHOD method_47720 getId ()Ljava/lang/String;
 	METHOD method_47721 createEvent (Lcom/mojang/authlib/minecraft/TelemetrySession;Lnet/minecraft/class_7973;)Lcom/mojang/authlib/minecraft/TelemetryEvent;
 		ARG 1 session

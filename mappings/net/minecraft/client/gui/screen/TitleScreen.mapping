@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_442 net/minecraft/client/gui/screen/TitleScreen
+	FIELD field_1_6414 friendsListButton Lnet/minecraft/class_1_917;
 	FIELD field_2586 splashText Lnet/minecraft/class_8519;
 	FIELD field_2592 realmsNotificationGui Lnet/minecraft/class_4399;
 	FIELD field_17772 backgroundFadeStart J
@@ -13,6 +14,14 @@ CLASS net/minecraft/class_442 net/minecraft/client/gui/screen/TitleScreen
 	METHOD <init> (ZLnet/minecraft/class_8020;)V
 		ARG 1 doBackgroundFade
 		ARG 2 logoDrawer
+	METHOD method_1_5521 getIconButtonX (III)I
+		ARG 1 index
+		ARG 2 count
+		ARG 3 size
+	METHOD method_1_5522 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_1_5524 shouldShowFriendListButton (Z)Z
+		ARG 1 friendsEnabled
 	METHOD method_2249 addNormalWidgets (II)I
 		ARG 1 y
 		ARG 2 spacingY
@@ -26,12 +35,28 @@ CLASS net/minecraft/class_442 net/minecraft/client/gui/screen/TitleScreen
 		ARG 2 button
 	METHOD method_19860 onMultiplayerButtonPressed (Lnet/minecraft/class_4185;)V
 		ARG 1 button
+	METHOD method_19861 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_19862 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_19863 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_19864 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_20109 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
 	METHOD method_20375 onDemoDeletionConfirmed (Z)V
 		ARG 1 delete
 	METHOD method_31129 canReadDemoWorldData ()Z
+	METHOD method_41198 (Lnet/minecraft/class_4185;)V
+		ARG 1 text
 	METHOD method_44692 getMultiplayerDisabledText ()Lnet/minecraft/class_2561;
+	METHOD method_55814 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
 	METHOD method_64237 addDevelopmentWidgets (II)I
 		ARG 1 y
 		ARG 2 spacingY
+	METHOD method_64238 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
 	METHOD method_65810 registerTextures (Lnet/minecraft/class_1060;)V
 		ARG 0 textureManager

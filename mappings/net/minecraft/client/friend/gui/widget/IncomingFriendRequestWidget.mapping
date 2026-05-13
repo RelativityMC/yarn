@@ -1,0 +1,18 @@
+CLASS net/minecraft/class_1_946 net/minecraft/client/friend/gui/widget/IncomingFriendRequestWidget
+	FIELD field_1_6604 ACCEPT_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_6605 ACCEPT_BUTTON_TEXTURES Lnet/minecraft/class_8666;
+	FIELD field_1_6606 DECLINE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_6607 REJECT_BUTTON_TEXTURES Lnet/minecraft/class_8666;
+	FIELD field_1_6608 acceptButton Lnet/minecraft/class_8662;
+	FIELD field_1_6609 declineButton Lnet/minecraft/class_8662;
+	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_1_986;Lnet/minecraft/class_5520$class_1_980;Lnet/minecraft/class_8685;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
+		ARG 1 client
+		ARG 2 friendsScreen
+		ARG 3 player
+		ARG 4 skin
+		ARG 5 onAccept
+		ARG 6 onDecline
+	METHOD method_1_5721 (Lnet/minecraft/class_1_986;Ljava/lang/Runnable;Lnet/minecraft/class_4185;)V
+		ARG 2 button
+	METHOD method_1_5722 (Lnet/minecraft/class_1_986;Ljava/lang/Runnable;Lnet/minecraft/class_4185;)V
+		ARG 2 button

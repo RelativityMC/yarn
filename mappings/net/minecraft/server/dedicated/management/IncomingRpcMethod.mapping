@@ -18,6 +18,8 @@ CLASS net/minecraft/class_11796 net/minecraft/server/dedicated/management/Incomi
 		FIELD field_62298 discoverable Z
 		FIELD field_63667 parameterlessHandler Lnet/minecraft/class_11796$class_11800;
 		FIELD field_63668 parameterizedHandler Lnet/minecraft/class_11796$class_11801;
+		METHOD <init> (Ljava/util/function/Function;)V
+			ARG 1 parameterlessHandler
 		METHOD <init> (Lnet/minecraft/class_11796$class_11800;)V
 			ARG 1 parameterlessHandler
 		METHOD <init> (Lnet/minecraft/class_11796$class_11801;)V
@@ -44,6 +46,7 @@ CLASS net/minecraft/class_11796 net/minecraft/server/dedicated/management/Incomi
 			ARG 2 id
 		METHOD method_75571 (Ljava/util/function/Function;Lnet/minecraft/class_11827;Lnet/minecraft/class_11838;)Ljava/lang/Object;
 			ARG 1 dispatcher
+			ARG 2 result
 	CLASS class_11798 Parameterized
 		FIELD comp_4665 handler Lnet/minecraft/class_11796$class_11801;
 		METHOD comp_4665 handler ()Lnet/minecraft/class_11796$class_11801;

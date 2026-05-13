@@ -1,0 +1,88 @@
+CLASS net/minecraft/class_5520 net/minecraft/client/friend/SocialInteractionsManager
+	FIELD field_1_6755 FAILED_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_6756 FORBIDDEN_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_6757 RATE_LIMITED_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_6758 UNAVAILABLE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_6759 USER_MAY_LACK_ACTIVE_PROFILE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_6760 acceptsFriendInvites Z
+	FIELD field_1_6761 friendsEnabled Z
+	FIELD field_1_6762 friendsService Lcom/mojang/authlib/yggdrasil/FriendsService;
+	FIELD field_1_6763 invitationManager Lnet/minecraft/class_1_951;
+	FIELD field_1_6764 friendListManager Lnet/minecraft/class_1_1004;
+	FIELD field_26865 client Lnet/minecraft/class_310;
+	FIELD field_26866 hiddenPlayers Ljava/util/Set;
+	FIELD field_26912 userApiService Lcom/mojang/authlib/minecraft/UserApiService;
+	FIELD field_26927 playerNameByUuid Ljava/util/Map;
+	FIELD field_35081 blockListLoaded Z
+	FIELD field_35082 blockListLoader Ljava/util/concurrent/CompletableFuture;
+	METHOD <init> (Lnet/minecraft/class_310;Lcom/mojang/authlib/minecraft/UserApiService;Lcom/mojang/authlib/yggdrasil/FriendsService;Lnet/minecraft/class_1_1004;)V
+		ARG 1 client
+		ARG 2 userApiService
+		ARG 3 friendsService
+		ARG 4 friendListManager
+	METHOD method_1_5930 acceptIncomingFriendRequest (Ljava/util/UUID;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 uuid
+	METHOD method_1_5931 addUpdateListener (Ljava/lang/Runnable;)V
+		ARG 1 listener
+	METHOD method_1_5932 declineIncomingFriendRequest (Ljava/util/UUID;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 uuid
+	METHOD method_1_5933 getStatus ()Lnet/minecraft/class_1_1004$class_1_1006;
+	METHOD method_1_5934 getFriends ()Ljava/util/List;
+	METHOD method_1_5935 getIncomingRequests ()Ljava/util/List;
+	METHOD method_1_5936 getOutgoingRequests ()Ljava/util/List;
+	METHOD method_1_5937 getInvitationManager ()Lnet/minecraft/class_1_951;
+	METHOD method_1_5938 reportResultCode (Lcom/mojang/authlib/yggdrasil/FriendsService$ResultCode;)V
+		ARG 1 resultCode
+	METHOD method_1_5939 acceptsFriendInvites ()Z
+	METHOD method_1_5940 hasFriend (Ljava/util/UUID;)Z
+		ARG 1 uuid
+	METHOD method_1_5941 areFriendsEnabled ()Z
+	METHOD method_1_5942 isFriend (Ljava/util/UUID;)Z
+		ARG 1 pmid
+	METHOD method_1_5945 (Ljava/util/UUID;Lnet/minecraft/class_5520$class_1_980;)Z
+		ARG 1 friend
+	METHOD method_1_5946 (Lcom/mojang/authlib/yggdrasil/response/FriendDto;)Lnet/minecraft/class_5520$class_1_980;
+		ARG 0 player
+	METHOD method_1_5950 (Lcom/mojang/authlib/yggdrasil/FriendsService$ResultCode;)Ljava/util/concurrent/CompletionStage;
+		ARG 1 resultCode
+	METHOD method_1_5955 convertFriendDtos (Ljava/util/List;)Ljava/util/List;
+		ARG 0 player
+	METHOD method_1_5956 removeFriend (Ljava/util/UUID;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 uuid
+	METHOD method_1_5957 removeUpdateListener (Ljava/lang/Runnable;)V
+		ARG 1 listener
+	METHOD method_1_5958 revokeOutgoingFriendRequest (Ljava/util/UUID;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 uuid
+	METHOD method_1_5959 sendAsyncRequest (Ljava/util/function/Supplier;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 request
+	METHOD method_1_5960 sendFriendRequest (Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 username
+	METHOD method_1_5961 setAcceptsFriendInvites (Z)V
+		ARG 1 acceptsFriendInvites
+	METHOD method_1_5962 setFriendsEnabled (Z)V
+		ARG 1 friendsEnabled
+	METHOD method_1_5963 reportError (Lcom/mojang/authlib/yggdrasil/FriendsService$ResultCode;)V
+		ARG 1 resultCode
+	METHOD method_1_5964 updateFriendSettings (ZZ)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 enableFriendList
+		ARG 2 acceptFriendInvites
+	METHOD method_31336 getHiddenPlayers ()Ljava/util/Set;
+	METHOD method_31337 setPlayerOnline (Lnet/minecraft/class_640;)V
+		ARG 1 player
+	METHOD method_31338 hidePlayer (Ljava/util/UUID;)V
+		ARG 1 uuid
+	METHOD method_31339 showPlayer (Ljava/util/UUID;)V
+		ARG 1 uuid
+	METHOD method_31340 isPlayerHidden (Ljava/util/UUID;)Z
+		ARG 1 uuid
+	METHOD method_31341 setPlayerOffline (Ljava/util/UUID;)V
+		ARG 1 uuid
+	METHOD method_31391 isPlayerMuted (Ljava/util/UUID;)Z
+		ARG 1 uuid
+	METHOD method_31392 isPlayerBlocked (Ljava/util/UUID;)Z
+		ARG 1 uuid
+	METHOD method_31407 getUuid (Ljava/lang/String;)Ljava/util/UUID;
+		ARG 1 playerName
+	METHOD method_38935 loadBlockList ()V
+	METHOD method_38936 unloadBlockList ()V
+	CLASS class_1_980 Player

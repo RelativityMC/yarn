@@ -10,12 +10,20 @@ CLASS net/minecraft/class_1_704 net/minecraft/client/vulkan/VulkanRenderPassBack
 	FIELD field_1_3626 boundTextures Ljava/util/HashMap;
 	FIELD field_1_3627 uniforms Ljava/util/HashMap;
 	FIELD field_1_5956 renderArea Lcom/mojang/blaze3d/systems/RenderPass$class_1_837;
+	FIELD field_1_6399 markerRecorderQueue Lnet/minecraft/class_1_970$class_1_971;
+	FIELD field_1_6400 commandBuffer Lorg/lwjgl/vulkan/VkCommandBuffer;
+	FIELD field_1_6401 commandEncoder Lnet/minecraft/class_1_715;
+	FIELD field_1_6402 labelGetter Ljava/util/function/Supplier;
 	METHOD <init> (Lnet/minecraft/class_1_679;Lnet/minecraft/class_1_715;Lorg/lwjgl/vulkan/VkCommandBuffer;Lnet/minecraft/class_1_970$class_1_971;Lcom/mojang/blaze3d/systems/RenderPass$class_1_837;IIZLjava/util/function/Supplier;)V
 		ARG 1 device
+		ARG 2 commandEncoder
+		ARG 3 commandBuffer
+		ARG 4 markerRecorderQueue
 		ARG 5 renderArea
 		ARG 6 width
 		ARG 7 height
 		ARG 8 hasDepth
+		ARG 9 labelGetter
 	METHOD method_1_4212 createCommandBuffer ()Lorg/lwjgl/vulkan/VkCommandBuffer;
 	METHOD method_1_4217 updateShaderParams ()V
 	METHOD method_1_5120 setScissor (Lorg/lwjgl/system/MemoryStack;Lorg/lwjgl/vulkan/VkCommandBuffer;IIII)V
@@ -25,4 +33,5 @@ CLASS net/minecraft/class_1_704 net/minecraft/client/vulkan/VulkanRenderPassBack
 		ARG 3 y
 		ARG 4 width
 		ARG 5 height
+	METHOD method_1_5504 getLabelGetter ()Ljava/util/function/Supplier;
 	CLASS class_1_705 BoundTexture

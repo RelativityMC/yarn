@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_928 net/minecraft/client/gui/widget/SkinWidget
+	FIELD field_1_6526 skin Lnet/minecraft/class_8685;
+	METHOD <init> (ILnet/minecraft/class_8685;)V
+		ARG 1 size
+		ARG 2 skin

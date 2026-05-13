@@ -45,9 +45,13 @@ CLASS net/minecraft/class_4388 net/minecraft/client/realms/gui/screen/RealmsConf
 		ARG 1 regionDataList
 	METHOD method_71207 (Lnet/minecraft/class_4877;)V
 		ARG 1 server
+	METHOD method_71208 (Lnet/minecraft/class_4388;Lnet/minecraft/class_339;)V
+		ARG 1 tab
 	METHOD method_71209 (Lnet/minecraft/class_339;)V
 		ARG 1 child
 	METHOD method_71210 onTabLoaded (Lnet/minecraft/class_8087;)V
+		ARG 1 tab
+	METHOD method_71212 (Lnet/minecraft/class_4388;Lnet/minecraft/class_339;)V
 		ARG 1 tab
 	METHOD method_71213 onTabUnloaded (Lnet/minecraft/class_8087;)V
 		ARG 1 tab

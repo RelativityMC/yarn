@@ -1,6 +1,8 @@
 CLASS net/minecraft/class_2535 net/minecraft/network/ClientConnection
 	COMMENT A connection backed by a netty channel. It can be one to a client on the
 	COMMENT server or one to a server on a client.
+	FIELD field_1_6373 SECURE_TRANSPORT_KEY Lio/netty/util/AttributeKey;
+	FIELD field_1_6374 uuid Ljava/util/UUID;
 	FIELD field_11639 NETWORK_PACKETS_MARKER Lorg/slf4j/Marker;
 	FIELD field_11640 errored Z
 	FIELD field_11641 NETWORK_MARKER Lorg/slf4j/Marker;
@@ -44,6 +46,14 @@ CLASS net/minecraft/class_2535 net/minecraft/network/ClientConnection
 	METHOD exceptionCaught (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Throwable;)V
 		ARG 1 context
 		ARG 2 ex
+	METHOD method_1_5478 create (Lio/netty/channel/Channel;Lnet/minecraft/class_2598;Lnet/minecraft/class_9191;)Lnet/minecraft/class_2535;
+		ARG 0 channel
+		ARG 1 side
+		ARG 2 log
+	METHOD method_1_5479 getUuid ()Ljava/util/UUID;
+	METHOD method_1_5480 hasSecureTransport ()Z
+	METHOD method_1_5481 setUuid (Ljava/util/UUID;)V
+		ARG 1 uuid
 	METHOD method_10743 send (Lnet/minecraft/class_2596;)V
 		ARG 1 packet
 	METHOD method_10744 getPacketListener ()Lnet/minecraft/class_2547;

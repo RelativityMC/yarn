@@ -1,0 +1,46 @@
+CLASS net/minecraft/class_1_909 net/minecraft/client/network/p2p/RtcChannel
+	FIELD field_1_6427 USER_DEFINED_WRITABILITY_INDEX I
+	FIELD field_1_6428 SET_READ_ONLY_BUFFERED_AMOUNT_THRESHOLD J
+	FIELD field_1_6429 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_6430 SET_WRITABLE_BUFFERED_AMOUNT_THRESHOLD J
+	FIELD field_1_6431 MAX_MESSAGE_SIZE I
+	FIELD field_1_6432 metadata Lio/netty/channel/ChannelMetadata;
+	FIELD field_1_6433 active Z
+	FIELD field_1_6434 closed Z
+	FIELD field_1_6435 config Lio/netty/channel/ChannelConfig;
+	FIELD field_1_6436 channel Lnet/minecraft/class_1_912$class_1_913;
+	FIELD field_1_6437 readOnly Z
+	METHOD <init> (Lnet/minecraft/class_1_912$class_1_913;)V
+		ARG 1 channel
+	METHOD doBind (Ljava/net/SocketAddress;)V
+		ARG 1 localAddress
+	METHOD doRegister (Lio/netty/channel/ChannelPromise;)V
+		ARG 1 promise
+	METHOD doWrite (Lio/netty/channel/ChannelOutboundBuffer;)V
+		ARG 1 in
+	METHOD isCompatible (Lio/netty/channel/EventLoop;)Z
+		ARG 1 eventLoop
+	METHOD method_1_5538 closeChannel ()V
+	METHOD method_1_5539 destroy (Ldev/onvoid/webrtc/RTCPeerConnection;Ldev/onvoid/webrtc/RTCDataChannel;)V
+		ARG 0 peerConnection
+		ARG 1 dataChannel
+	METHOD method_1_5540 destroy (Lnet/minecraft/class_1_912$class_1_913;)V
+		ARG 0 channel
+	METHOD method_1_5541 acceptMessage (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buffer
+	METHOD method_1_5542 setDataChannelState (Ldev/onvoid/webrtc/RTCDataChannelState;)V
+		ARG 1 dataChannelState
+	METHOD method_1_5544 setReadOnly (Z)V
+		ARG 1 readOnly
+	METHOD method_1_5545 send (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 message
+	CLASS 1 1
+		METHOD onBufferedAmountChange (J)V
+			ARG 1 previousAmount
+		METHOD onMessage (Ldev/onvoid/webrtc/RTCDataChannelBuffer;)V
+			ARG 1 buffer
+	CLASS class_1_910 DummyChannel
+		METHOD connect (Ljava/net/SocketAddress;Ljava/net/SocketAddress;Lio/netty/channel/ChannelPromise;)V
+			ARG 1 remoteAddress
+			ARG 2 localAddress
+			ARG 3 promise

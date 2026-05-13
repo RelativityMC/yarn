@@ -12,10 +12,10 @@ CLASS net/minecraft/class_10866 net/minecraft/client/gl/GlRenderPassBackend
 	FIELD field_57873 simpleUniforms Ljava/util/HashMap;
 	FIELD field_57874 samplerUniforms Ljava/util/HashMap;
 	FIELD field_57875 setSimpleUniforms Ljava/util/Set;
-	FIELD field_57877 resourceManager Lnet/minecraft/class_10860;
+	FIELD field_57877 commandEncoder Lnet/minecraft/class_10860;
 	FIELD field_57878 hasDepth Z
 	METHOD <init> (Lnet/minecraft/class_10860;Lnet/minecraft/class_10865;ZILnet/minecraft/class_11219;)V
-		ARG 1 resourceManager
+		ARG 1 commandEncoder
 		ARG 2 device
 		ARG 3 hasDepth
 		ARG 4 numColorAttachments

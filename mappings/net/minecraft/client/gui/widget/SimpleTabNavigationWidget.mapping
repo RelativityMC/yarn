@@ -1,0 +1,28 @@
+CLASS net/minecraft/class_1_923 net/minecraft/client/gui/widget/SimpleTabNavigationWidget
+	FIELD field_1_6496 HEIGHT I
+	FIELD field_1_6498 MAX_TAB_WIDTH I
+	METHOD method_1_5620 builder (Lnet/minecraft/class_8088;I)Lnet/minecraft/class_1_923$class_1_924;
+		ARG 0 tabManager
+		ARG 1 width
+	CLASS class_1_924 Builder
+		METHOD <init> (Lnet/minecraft/class_8088;I)V
+			ARG 1 tabManager
+			ARG 2 width
+		METHOD method_1_5621 tab (Lnet/minecraft/class_8087;)Lnet/minecraft/class_1_923$class_1_924;
+			ARG 1 tab
+		METHOD method_1_5622 tabs ([Lnet/minecraft/class_8087;)Lnet/minecraft/class_1_923$class_1_924;
+			ARG 1 tabs
+	CLASS class_1_925 Button
+		FIELD field_1_6500 BUTTON_TEXTURES Lnet/minecraft/class_8666;
+		METHOD method_1_5624 drawCurrentTabBackground (Lnet/minecraft/class_332;Lnet/minecraft/class_327;I)V
+			ARG 1 context
+			ARG 2 textRenderer
+			ARG 3 color
+		METHOD method_1_5625 drawMessage (Lnet/minecraft/class_12225;)V
+			ARG 1 textConsumer
+		METHOD method_1_5626 drawMenuBackgroundTexture (Lnet/minecraft/class_332;IIII)V
+			ARG 1 context
+			ARG 2 left
+			ARG 3 top
+			ARG 4 right
+			ARG 5 bottom

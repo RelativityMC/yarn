@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1_992 net/minecraft/client/friend/gui/widget/FriendTabButtonWidget
+	FIELD field_1_6832 BUTTON_TEXTURES Lnet/minecraft/class_8666;
+	METHOD method_1_6025 drawCurrentTabBackground (Lnet/minecraft/class_332;Lnet/minecraft/class_327;I)V
+		ARG 1 context
+		ARG 2 textRenderer
+		ARG 3 color
+	METHOD method_1_6026 drawMessage (Lnet/minecraft/class_12225;)V
+		ARG 1 textConsumer

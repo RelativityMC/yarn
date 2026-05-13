@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_3726 net/minecraft/block/ShapeContext
+	METHOD method_1_5606 block (D)Lnet/minecraft/class_3726;
+		ARG 0 minY
 	METHOD method_16192 isAbove (Lnet/minecraft/class_265;Lnet/minecraft/class_2338;Z)Z
 		ARG 1 shape
 		ARG 2 pos

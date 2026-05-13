@@ -1,4 +1,8 @@
 CLASS net/minecraft/class_433 net/minecraft/client/gui/screen/GameMenuScreen
+	FIELD field_1_6410 MULTIPLAYER_OPTIONS_BUTTON_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_6411 PLAYER_REPORTING_NO_PLAYERS_TEXT Lnet/minecraft/class_7919;
+	FIELD field_1_6412 socialInteractionsUpdateListener Ljava/lang/Runnable;
+	FIELD field_1_6413 friendsListButton Lnet/minecraft/class_1_917;
 	FIELD field_19319 showMenu Z
 	FIELD field_40792 exitButton Lnet/minecraft/class_4185;
 	FIELD field_41614 GAME_TEXT Lnet/minecraft/class_2561;
@@ -19,11 +23,25 @@ CLASS net/minecraft/class_433 net/minecraft/client/gui/screen/GameMenuScreen
 	FIELD field_60753 CUSTOM_OPTIONS_TOOLTIP Lnet/minecraft/class_7919;
 	METHOD <init> (Z)V
 		ARG 1 showMenu
+	METHOD method_1_5514 isCurrentScreen ()Z
+	METHOD method_1_5515 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_1_5516 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_1_5517 (Ljava/util/Map$Entry;)Z
+		ARG 1 playerEntry
+	METHOD method_1_5518 (Lnet/minecraft/class_7845$class_7939;Lnet/minecraft/class_6880;)V
+		ARG 2 customOptionsDialog
+	METHOD method_1_5519 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_1_5520 updateSocialInteractions ()V
 	METHOD method_19836 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
 	METHOD method_19845 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
 	METHOD method_20543 initWidgets ()V
+	METHOD method_47898 (Ljava/util/function/Supplier;Lnet/minecraft/class_4185;)V
+		ARG 2 button
 	METHOD method_47900 createButton (Lnet/minecraft/class_2561;Ljava/util/function/Supplier;)Lnet/minecraft/class_4185;
 		ARG 1 text
 		ARG 2 screenSupplier

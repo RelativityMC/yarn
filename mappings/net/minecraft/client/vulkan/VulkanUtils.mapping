@@ -1,5 +1,7 @@
 CLASS net/minecraft/class_1_678 net/minecraft/client/vulkan/VulkanUtils
+	FIELD field_1_6393 PROBLEMATIC_DEVICES Ljava/util/Set;
 	METHOD method_1_4033 reportError (Lnet/minecraft/class_1_679;ILjava/lang/String;)V
+		ARG 0 backend
 		ARG 1 code
 		ARG 2 message
 	METHOD method_1_4034 containsAll (II)Z
@@ -29,3 +31,8 @@ CLASS net/minecraft/class_1_678 net/minecraft/client/vulkan/VulkanUtils
 		ARG 0 code
 		ARG 1 message
 		ARG 2 condition
+	METHOD method_1_5490 describeMarkerRecorderRecords (Ljava/util/List;)Ljava/lang/String;
+		ARG 0 records
+	METHOD method_1_5491 describeStage (J)Ljava/lang/String;
+		ARG 0 stage
+	CLASS class_1_905 DeviceId

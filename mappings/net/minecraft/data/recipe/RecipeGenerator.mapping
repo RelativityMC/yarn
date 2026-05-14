@@ -84,6 +84,30 @@ CLASS net/minecraft/class_2446 net/minecraft/data/recipe/RecipeGenerator
 		ARG 0 generator
 		ARG 1 output
 		ARG 2 input
+	METHOD method_1_2494 (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)V
+		ARG 0 generator
+		ARG 1 output
+		ARG 2 input
+	METHOD method_1_2495 (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)V
+		ARG 0 generator
+		ARG 1 output
+		ARG 2 input
+	METHOD method_1_5497 (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)Lnet/minecraft/class_5797;
+		ARG 0 generator
+		ARG 1 output
+		ARG 2 input
+	METHOD method_1_5498 (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)V
+		ARG 0 generator
+		ARG 1 output
+		ARG 2 input
+	METHOD method_1_5499 (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)V
+		ARG 0 generator
+		ARG 1 output
+		ARG 2 input
+	METHOD method_1_5500 (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)Lnet/minecraft/class_5797;
+		ARG 0 generator
+		ARG 1 output
+		ARG 2 input
 	METHOD method_10419 generate ()V
 	METHOD method_10420 conditionsFromTag (Lnet/minecraft/class_6862;)Lnet/minecraft/class_175;
 		ARG 1 tag
@@ -324,6 +348,7 @@ CLASS net/minecraft/class_2446 net/minecraft/data/recipe/RecipeGenerator
 		ARG 1 enabledFeatures
 	METHOD method_46208 offerHangingSignRecipe (Lnet/minecraft/class_1935;Lnet/minecraft/class_1856;)Lnet/minecraft/class_5797;
 		ARG 1 output
+		ARG 2 input
 	METHOD method_46209 offer2x2CompactingRecipe (Lnet/minecraft/class_7800;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)V
 		ARG 1 category
 		ARG 2 output

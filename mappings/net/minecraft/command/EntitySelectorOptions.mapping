@@ -26,6 +26,17 @@ CLASS net/minecraft/class_2306 net/minecraft/command/EntitySelectorOptions
 		ARG 0 reader
 	METHOD method_1_5376 (Lnet/minecraft/class_2303;)Z
 		ARG 0 reader
+	METHOD method_1_6114 (Lnet/minecraft/class_6885$class_6888;)Lnet/minecraft/class_2960;
+		ARG 0 tag
+	METHOD method_1_6115 exception (Lnet/minecraft/class_2303;ILcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;Ljava/lang/String;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+		ARG 0 reader
+		ARG 1 cursor
+		ARG 2 exceptionType
+		ARG 3 context
+	METHOD method_1_6116 exception (Lnet/minecraft/class_2303;ILcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+		ARG 0 reader
+		ARG 1 cursor
+		ARG 2 exceptionType
 	METHOD method_9919 (Lnet/minecraft/class_1299;ZLnet/minecraft/class_1297;)Z
 		ARG 2 entity
 	METHOD method_9920 (Ljava/lang/String;ZLnet/minecraft/class_1297;)Z

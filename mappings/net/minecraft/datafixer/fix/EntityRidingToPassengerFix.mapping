@@ -1,7 +1,21 @@
 CLASS net/minecraft/class_1166 net/minecraft/datafixer/fix/EntityRidingToPassengerFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Z)V
+		ARG 1 outputSchema
+		ARG 2 changesType
+	METHOD method_1_5990 (Lcom/mojang/datafixers/util/Pair;Ljava/lang/Object;Lcom/mojang/serialization/DynamicOps;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/OpticFinder;)Lcom/mojang/datafixers/util/Pair;
+		ARG 1 inputEntity
+		ARG 2 dynamicOps
+		ARG 3 outputEntityTreeType
+		ARG 4 passengersFinder
+	METHOD method_1_5991 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Ljava/util/Optional;
+		ARG 1 riding
+	METHOD method_4977 (Lcom/mojang/datafixers/types/Type;Lcom/mojang/serialization/DynamicOps;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/datafixers/util/Pair;
+		ARG 6 oldTree
 	METHOD method_4978 fixEntityTree (Lcom/mojang/datafixers/schemas/Schema;Lcom/mojang/datafixers/schemas/Schema;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/types/Type;)Lcom/mojang/datafixers/TypeRewriteRule;
 		ARG 1 inputSchema
 		ARG 2 outputSchema
 		ARG 3 inputEntityTreeType
 		ARG 4 outputEntityTreeType
 		ARG 5 inputEntityType
+	METHOD method_4980 (Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/types/Type;Lcom/mojang/serialization/DynamicOps;)Ljava/util/function/Function;
+		ARG 5 dynamicOps

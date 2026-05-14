@@ -72,6 +72,12 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 	METHOD method_1_5023 (Lnet/minecraft/class_1767;Lnet/minecraft/class_2248;)V
 		ARG 1 color
 		ARG 2 shulkerBox
+	METHOD method_1_5681 createSignBlockState (Lnet/minecraft/class_2248;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;)Lnet/minecraft/class_4917;
+		ARG 0 signBlock
+		ARG 1 model0
+		ARG 2 model1
+		ARG 3 model2
+		ARG 4 model3
 	METHOD method_25508 registerChorusPlant ()V
 	METHOD method_25509 registerComposter ()V
 	METHOD method_25510 registerDaylightDetector ()V
@@ -476,7 +482,16 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 3 eastSideModel
 		ARG 4 southSideModel
 		ARG 5 westSideModel
-	METHOD method_46190 registerHangingSign (Lnet/minecraft/class_2248;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;)Lnet/minecraft/class_4917;
+	METHOD method_46190 createHangingSignBlockState (Lnet/minecraft/class_2248;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;)Lnet/minecraft/class_4917;
+		ARG 0 hangingSignBlock
+		ARG 1 unattached0
+		ARG 2 unattached1
+		ARG 3 unattached2
+		ARG 4 unattached3
+		ARG 5 attached0
+		ARG 6 attached1
+		ARG 7 attached2
+		ARG 8 attached3
 	METHOD method_46193 registerChiseledBookshelf ()V
 	METHOD method_47519 createUvLockedColumnBlockState (Lnet/minecraft/class_2248;Lnet/minecraft/class_4944;Ljava/util/function/BiConsumer;)Lnet/minecraft/class_4917;
 		ARG 0 block
@@ -819,6 +834,14 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 			ARG 2 textures
 		METHOD method_1_1046 (Lnet/minecraft/class_2248;Lnet/minecraft/class_5794;)Z
 			ARG 1 family
+		METHOD method_1_5682 customHangingSign (Lnet/minecraft/class_2248;)Lnet/minecraft/class_4910$class_4912;
+			ARG 1 hangingSignBlock
+		METHOD method_1_5683 hangingSign (Lnet/minecraft/class_2248;)Lnet/minecraft/class_4910$class_4912;
+			ARG 1 hangingSignBlock
+		METHOD method_1_5684 hangingSign (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;Lnet/minecraft/class_5794$class_5796;)Lnet/minecraft/class_4910$class_4912;
+			ARG 1 hangingSignBlock
+			ARG 2 baseBlock
+			ARG 3 wallVariant
 		METHOD method_25716 button (Lnet/minecraft/class_2248;)Lnet/minecraft/class_4910$class_4912;
 			ARG 1 buttonBlock
 		METHOD method_25717 sign (Lnet/minecraft/class_2248;)Lnet/minecraft/class_4910$class_4912;

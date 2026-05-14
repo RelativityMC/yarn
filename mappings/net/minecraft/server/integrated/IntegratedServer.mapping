@@ -23,6 +23,7 @@ CLASS net/minecraft/class_1132 net/minecraft/server/integrated/IntegratedServer
 		ARG 1 gameMode
 	METHOD method_1_5526 getShareSetting ()Lnet/minecraft/class_1132$class_1_908;
 	METHOD method_1_5527 isOnline ()Z
+	METHOD method_1_5528 notifyWorldShareUpdateListeners ()V
 	METHOD method_1_5529 setAllowCommands (Z)V
 		ARG 1 allowCommands
 	METHOD method_1_5530 setShareSetting (Lnet/minecraft/class_1132$class_1_908;)V

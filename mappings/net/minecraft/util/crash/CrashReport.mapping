@@ -11,6 +11,12 @@ CLASS net/minecraft/class_128 net/minecraft/util/crash/CrashReport
 	METHOD <init> (Ljava/lang/String;Ljava/lang/Throwable;)V
 		ARG 1 message
 		ARG 2 cause
+	METHOD method_1_5459 copyExceptionDetails (Ljava/lang/Throwable;Ljava/lang/Throwable;)Ljava/lang/Throwable;
+		ARG 0 src
+		ARG 1 dest
+	METHOD method_1_5460 recreateCauseWithMessage (Ljava/lang/Throwable;Ljava/lang/String;)Ljava/lang/Throwable;
+		ARG 0 cause
+		ARG 1 message
 	METHOD method_555 addDetails (Ljava/lang/StringBuilder;)V
 		ARG 1 crashReportBuilder
 	METHOD method_556 addElement (Ljava/lang/String;I)Lnet/minecraft/class_129;

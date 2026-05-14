@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_3222 net/minecraft/server/network/ServerPlayerEntity
+	FIELD field_1_6398 lastExplosionImpactPos Lnet/minecraft/class_243;
 	FIELD field_13963 lastHealthScore F
 	FIELD field_13964 disconnected Z
 	FIELD field_13965 lastLevelScore I

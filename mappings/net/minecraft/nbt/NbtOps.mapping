@@ -89,11 +89,15 @@ CLASS net/minecraft/class_2509 net/minecraft/nbt/NbtOps
 		ARG 2 map
 	METHOD method_1_5397 (Ljava/lang/Number;)Ljava/lang/Boolean;
 		ARG 0 number
+	METHOD method_10638 (Ljava/util/Map$Entry;)Lcom/mojang/datafixers/util/Pair;
+		ARG 1 entry
 	METHOD method_29147 (Ljava/util/List;Lnet/minecraft/class_2487;Lcom/mojang/datafixers/util/Pair;)V
 		ARG 0 entry
 		ARG 2 pair
 	METHOD method_29152 (Lnet/minecraft/class_2487;Lcom/mojang/datafixers/util/Pair;)V
 		ARG 1 entry
+	METHOD method_29153 (Lnet/minecraft/class_2487;Ljava/util/function/BiConsumer;)V
+		ARG 2 callback
 	METHOD method_46230 (Ljava/util/List;Lnet/minecraft/class_2509$class_7813;)Lcom/mojang/serialization/DataResult;
 		ARG 1 merger
 	METHOD method_46234 (Lnet/minecraft/class_2520;Lnet/minecraft/class_2509$class_7813;)Lcom/mojang/serialization/DataResult;
@@ -108,6 +112,8 @@ CLASS net/minecraft/class_2509 net/minecraft/nbt/NbtOps
 			ARG 1 nbt
 		METHOD get (Ljava/lang/String;)Ljava/lang/Object;
 			ARG 1 key
+		METHOD method_29166 (Ljava/util/Map$Entry;)Lcom/mojang/datafixers/util/Pair;
+			ARG 1 entry
 	CLASS class_5320 MapBuilder
 		METHOD append (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 			ARG 1 key
@@ -127,6 +133,8 @@ CLASS net/minecraft/class_2509 net/minecraft/nbt/NbtOps
 		METHOD <init> (Lit/unimi/dsi/fastutil/ints/IntArrayList;)V
 			ARG 1 list
 		METHOD <init> (Lit/unimi/dsi/fastutil/longs/LongArrayList;)V
+			ARG 1 list
+		METHOD <init> (Lnet/minecraft/class_2499;)V
 			ARG 1 list
 		METHOD method_46241 (B)V
 			ARG 1 value

@@ -1,6 +1,29 @@
 CLASS net/minecraft/class_1_890 net/minecraft/command/PolarFilterState
+	COMMENT Tracks usage of entity selector arguments that can take both positive and
+	COMMENT negative ({@code !<...>}) constraints, possibly as well as tags. Such
+	COMMENT arguments include {@code type} or {@code gamemode}.
+	FIELD field_1_6895 count Lnet/minecraft/class_1_890$class_1_1007;
+	FIELD field_1_6896 mentionedTags Ljava/util/Set;
 	METHOD method_1_5383 isApplicable (Z)Z
 		ARG 1 negated
 	METHOD method_1_5384 shouldSuggest ()Z
 	METHOD method_1_5387 setAdded (Z)V
 		ARG 1 negated
+	METHOD method_1_6117 allowsAggregateFilters ()Z
+		COMMENT @implNote If selector arguments have narrowed things down to a single option,
+		COMMENT           then there's no point narrowing it down further.
+	METHOD method_1_6118 allowsSingleFilters ()Z
+	METHOD method_1_6119 allowsTags ()Z
+	METHOD method_1_6120 allowsNegative ()Z
+	METHOD method_1_6121 allowsPositive ()Z
+	METHOD method_1_6122 allowsTag (Lnet/minecraft/class_2960;)Z
+		ARG 1 tagId
+	METHOD method_1_6123 addAggregateFilter ()V
+	METHOD method_1_6124 addNegative ()V
+	METHOD method_1_6125 addPositive ()V
+	METHOD method_1_6126 addSingleFilter ()V
+	METHOD method_1_6127 addTag (Lnet/minecraft/class_2960;)V
+		ARG 1 tag
+	CLASS class_1_1007 Count
+		FIELD field_1_6899 Lnet/minecraft/class_1_890$class_1_1007;
+			COMMENT Actually means "all options are eligible".

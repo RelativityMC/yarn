@@ -1,14 +1,14 @@
 CLASS net/minecraft/class_9849 net/minecraft/util/InterpolatedFlipFlop
 	FIELD field_52389 frames I
 		COMMENT How many frames it takes to switch from fully off to fully on.
-	FIELD field_52390 smoothingFunction Lnet/minecraft/class_12301;
+	FIELD field_52390 easing Lnet/minecraft/class_12301;
 	FIELD field_52391 current I
 	FIELD field_52392 previous I
 	METHOD <init> (I)V
 		ARG 1 frames
 	METHOD <init> (ILnet/minecraft/class_12301;)V
 		ARG 1 frames
-		ARG 2 smoothingFunction
+		ARG 2 easing
 	METHOD method_61339 getValue (F)F
 		ARG 1 tickProgress
 	METHOD method_61340 tick (Z)V

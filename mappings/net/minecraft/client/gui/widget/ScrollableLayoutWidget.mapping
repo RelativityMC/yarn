@@ -26,3 +26,4 @@ CLASS net/minecraft/class_11467 net/minecraft/client/gui/widget/ScrollableLayout
 			ARG 4 height
 			ARG 5 scrollbar
 		METHOD method_1_605 getSideMargin ()I
+		METHOD method_1_5644 resetContents ()V

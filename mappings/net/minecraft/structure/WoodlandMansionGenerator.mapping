@@ -117,6 +117,7 @@ CLASS net/minecraft/class_3471 net/minecraft/structure/WoodlandMansionGenerator
 			ARG 1 i
 			ARG 2 j
 		METHOD method_15048 layoutThirdFloor ()V
+		CLASS class_1_767 CellPos
 	CLASS class_3475 LayoutGenerator
 		COMMENT Populates structure pieces based on the given {@link MansionParameters
 		COMMENT parameters}.

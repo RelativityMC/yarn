@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_7775 net/minecraft/client/render/model/Baker
 	METHOD method_45872 getModel (Lnet/minecraft/class_2960;)Lnet/minecraft/class_10819;
 		ARG 1 id
-	METHOD method_65732 getSpriteGetter ()Lnet/minecraft/class_1_734;
+	METHOD method_65732 getMissingTextureReporter ()Lnet/minecraft/class_1_734;
 	METHOD method_68549 compute (Lnet/minecraft/class_7775$class_10897;)Ljava/lang/Object;
 		ARG 1 key
 	METHOD method_76673 getBlockPart ()Lnet/minecraft/class_10889;
@@ -11,5 +11,6 @@ CLASS net/minecraft/class_7775 net/minecraft/client/render/model/Baker
 			ARG 1 baker
 	CLASS class_12356 Interner
 		METHOD method_1_2261 intern (Lnet/minecraft/class_777$class_1_320;)Lnet/minecraft/class_777$class_1_320;
+			ARG 1 spriteInfo
 		METHOD method_76676 intern (Lorg/joml/Vector3fc;)Lorg/joml/Vector3fc;
 			ARG 1 vec

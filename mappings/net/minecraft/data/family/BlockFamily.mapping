@@ -28,6 +28,16 @@ CLASS net/minecraft/class_5794 net/minecraft/data/family/BlockFamily
 		METHOD method_1_1232 generateStonecuttingRecipes ()Lnet/minecraft/class_5794$class_5795;
 		METHOD method_1_2455 cobbled (Lnet/minecraft/class_2248;)Lnet/minecraft/class_5794$class_5795;
 			ARG 1 block
+		METHOD method_1_5473 customHangingSign (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)Lnet/minecraft/class_5794$class_5795;
+			ARG 1 block
+			ARG 2 wallBlock
+		METHOD method_1_5474 hangingSign (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)Lnet/minecraft/class_5794$class_5795;
+			ARG 1 block
+			ARG 2 wallBlock
+		METHOD method_1_5475 log (Lnet/minecraft/class_2248;)Lnet/minecraft/class_5794$class_5795;
+			ARG 1 block
+		METHOD method_1_5476 strippedLog (Lnet/minecraft/class_2248;)Lnet/minecraft/class_5794$class_5795;
+			ARG 1 block
 		METHOD method_33481 build ()Lnet/minecraft/class_5794;
 		METHOD method_33482 button (Lnet/minecraft/class_2248;)Lnet/minecraft/class_5794$class_5795;
 			ARG 1 block
@@ -74,4 +84,5 @@ CLASS net/minecraft/class_5794 net/minecraft/data/family/BlockFamily
 		FIELD field_28546 name Ljava/lang/String;
 		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
 			ARG 3 name
+		METHOD method_1_5477 getVariantRecipeInput ()Lnet/minecraft/class_5794$class_5796;
 		METHOD method_33498 getName ()Ljava/lang/String;

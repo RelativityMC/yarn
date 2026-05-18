@@ -14,9 +14,9 @@ CLASS net/minecraft/class_759 net/minecraft/client/render/item/HeldItemRenderer
 	FIELD field_32700 ARM_HOLDING_ITEM_X_ANGLE_MULTIPLIER I
 	FIELD field_32701 ARM_HOLDING_ITEM_THIRD_Y_ANGLE_MULTIPLIER I
 	FIELD field_32702 ARM_HOLDING_ITEM_SECOND_Z_ANGLE_MULTIPLIER I
-	FIELD field_32712 ARM_X_ANGLE_MULTIPLIER F
-	FIELD field_32713 ARM_Y_ANGLE_MULTIPLIER F
-	FIELD field_32714 ARM_Z_ANGLE_MULTIPLIER F
+	FIELD field_32712 ARM_X_ANGLE F
+	FIELD field_32713 ARM_Y_ANGLE F
+	FIELD field_32714 ARM_Z_ANGLE F
 	FIELD field_32715 ARM_TRANSLATE_X F
 	FIELD field_32716 ARM_TRANSLATE_Y F
 	FIELD field_32717 ARM_TRANSLATE_Z F
@@ -38,6 +38,9 @@ CLASS net/minecraft/class_759 net/minecraft/client/render/item/HeldItemRenderer
 		ARG 1 client
 		ARG 2 entityRenderDispatcher
 		ARG 3 itemModelManager
+	METHOD method_1_5131 setHeldItemsIfSkippingSwapAnimation (Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;)V
+		ARG 1 mainHandStack
+		ARG 2 offHandStack
 	METHOD method_3215 resetEquipProgress (Lnet/minecraft/class_1268;)V
 		ARG 1 hand
 	METHOD method_3216 renderArm (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;ILnet/minecraft/class_1306;)V

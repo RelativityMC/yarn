@@ -1,6 +1,8 @@
 CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 	FIELD field_1_5681 blockBreakingInfoByEntity Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
 	FIELD field_1_5682 blockBreakingInfoByPos Lit/unimi/dsi/fastutil/longs/Long2ObjectMap;
+	FIELD field_1_5683 worldExtractor Lnet/minecraft/class_1_816;
+	FIELD field_1_5684 ticksSinceLastRainSound I
 	FIELD field_3727 networkHandler Lnet/minecraft/class_634;
 	FIELD field_3729 client Lnet/minecraft/class_310;
 	FIELD field_17675 mapStates Ljava/util/Map;
@@ -45,6 +47,7 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 	METHOD method_1_4874 decayBlockBreakingInfo ()V
 	METHOD method_1_4875 removeBlockBreakingInfo (Lnet/minecraft/class_3191;)V
 		ARG 1 info
+	METHOD method_1_4876 addRainEffects ()V
 	METHOD method_2932 addParticle (DDDDDLnet/minecraft/class_2394;)V
 		ARG 1 minX
 		ARG 3 maxX

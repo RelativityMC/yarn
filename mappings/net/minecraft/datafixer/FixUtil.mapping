@@ -10,6 +10,7 @@ CLASS net/minecraft/class_9228 net/minecraft/datafixer/FixUtil
 		ARG 0 oldType
 		ARG 1 newType
 	METHOD method_61350 withTypeChanged (Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/types/Type;)Lcom/mojang/datafixers/types/Type;
+		ARG 0 type
 		ARG 1 oldType
 		ARG 2 newType
 	METHOD method_61351 apply (Lcom/mojang/serialization/Dynamic;Ljava/lang/String;Ljava/util/function/UnaryOperator;)Lcom/mojang/serialization/Dynamic;
@@ -46,3 +47,7 @@ CLASS net/minecraft/class_9228 net/minecraft/datafixer/FixUtil
 		ARG 2 yKey
 		ARG 3 zKey
 		ARG 4 newPosKey
+	METHOD method_67590 setFrom (Lcom/mojang/datafixers/Typed;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/datafixers/Typed;
+		ARG 0 dest
+		ARG 1 opticFinder
+		ARG 2 src

@@ -10,10 +10,12 @@ CLASS net/minecraft/class_801 net/minecraft/client/render/model/json/GeneratedIt
 		ARG 0 builder
 		ARG 1 interner
 		ARG 2 settings
+		ARG 3 spriteInfo
 	METHOD method_1_2414 addEdgeGeometry (Lnet/minecraft/class_10817$class_10818;Lnet/minecraft/class_7775$class_12356;Lnet/minecraft/class_3665;Lnet/minecraft/class_777$class_1_320;)V
 		ARG 0 builder
 		ARG 1 interner
 		ARG 2 settings
+		ARG 3 spriteInfo
 	METHOD method_3476 getEdgePixels (Lnet/minecraft/class_801$class_803;Ljava/util/Set;Lnet/minecraft/class_7764;IIIII)V
 		ARG 0 side
 		ARG 1 edgePixelsOut

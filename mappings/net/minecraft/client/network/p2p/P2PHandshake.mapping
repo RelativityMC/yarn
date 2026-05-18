@@ -30,7 +30,8 @@ CLASS net/minecraft/class_1_912 net/minecraft/client/network/p2p/P2PHandshake
 	METHOD method_1_5580 createAnswer ()Ljava/util/concurrent/CompletableFuture;
 	METHOD method_1_5581 createOffer ()Ljava/util/concurrent/CompletableFuture;
 	METHOD method_1_5582 doCreateOffer ()Ljava/util/concurrent/CompletableFuture;
-	METHOD method_1_5583 (Ldev/onvoid/webrtc/RTCStats;Ljava/util/Map;)Ljava/util/Optional;
+	METHOD method_1_5583 getIceInfo (Ldev/onvoid/webrtc/RTCStats;Ljava/util/Map;)Ljava/util/Optional;
+		ARG 1 rtcStats
 		ARG 2 stats
 	METHOD method_1_5584 abortHandshakeImpl (Ljava/lang/String;)V
 		ARG 1 reason
@@ -42,6 +43,10 @@ CLASS net/minecraft/class_1_912 net/minecraft/client/network/p2p/P2PHandshake
 	METHOD method_1_5588 getSessionId ()Ljava/lang/String;
 	METHOD method_1_5589 isJoin ()Z
 		COMMENT {@return {@code true} if joining; {@code false} if hosting}
+	METHOD method_1_5591 (Ldev/onvoid/webrtc/RTCStatsReport;)V
+		ARG 1 statsReport
+	METHOD method_1_5592 (Ldev/onvoid/webrtc/RTCStats;)Z
+		ARG 0 stats
 	METHOD method_1_5593 (Ljava/util/concurrent/CompletableFuture;Ljava/lang/Void;Ljava/lang/Throwable;)V
 		ARG 3 ex
 	METHOD method_1_5594 (Ljava/lang/String;Ljava/lang/Throwable;)V

@@ -11,6 +11,9 @@ CLASS net/minecraft/class_8019 net/minecraft/client/gui/widget/NarratedMultiline
 		ARG 4 customWidth
 		ARG 5 backgroundRendering
 		ARG 6 alwaysShowBorders
+	METHOD method_1_5770 (Lnet/minecraft/class_2583;Ljava/lang/String;)Ljava/util/Optional;
+		ARG 0 style
+		ARG 1 string
 	METHOD method_75352 builder (Lnet/minecraft/class_2561;Lnet/minecraft/class_327;)Lnet/minecraft/class_8019$class_12141;
 		ARG 0 text
 		ARG 1 textRenderer

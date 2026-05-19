@@ -51,8 +51,8 @@ CLASS net/minecraft/class_1_993 net/minecraft/client/network/p2p/P2PGateway
 		ARG 1 response
 	METHOD method_1_6043 (Ljava/lang/String;)Ljava/lang/IllegalStateException;
 		ARG 0 message
-	METHOD method_1_6044 (Ljava/util/UUID;Lnet/minecraft/class_1_952;Lnet/minecraft/class_1_993$class_1_997;)V
-		ARG 2 listener
+	METHOD method_1_6044 (Lnet/minecraft/class_1_952;Lnet/minecraft/class_1_993$class_1_997;)V
+		ARG 1 listener
 	METHOD method_1_6045 (Ljava/lang/Runnable;)Ljava/lang/Thread;
 		ARG 0 runnable
 	METHOD method_1_6046 (Ljava/lang/Thread;Ljava/lang/Throwable;)V

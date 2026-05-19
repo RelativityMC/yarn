@@ -1,8 +1,7 @@
 CLASS net/minecraft/class_9918 net/minecraft/client/ClientWatchdog
 	FIELD field_52723 TIMEOUT Ljava/time/Duration;
-	METHOD method_1_5619 makeJvmCrash ()V
-	METHOD method_61936 shutdownClient (Ljava/lang/String;Lnet/minecraft/class_310;Lnet/minecraft/class_542;J)V
+	METHOD method_61936 shutdownClient (Ljava/lang/String;ZLnet/minecraft/class_310;Lnet/minecraft/class_542;J)V
 		ARG 0 reason
-		ARG 1 client
-		ARG 2 args
-		ARG 3 threadId
+		ARG 2 client
+		ARG 3 args
+		ARG 4 threadId

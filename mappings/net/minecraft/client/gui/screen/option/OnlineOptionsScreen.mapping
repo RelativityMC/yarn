@@ -14,7 +14,6 @@ CLASS net/minecraft/class_6777 net/minecraft/client/gui/screen/option/OnlineOpti
 	FIELD field_1_6782 acceptsFriendInvitesButton Lnet/minecraft/class_5676;
 	FIELD field_1_6783 friendsEnabledButton Lnet/minecraft/class_5676;
 	FIELD field_1_6784 getInGameNotificationButton Lnet/minecraft/class_5676;
-	FIELD field_41344 difficulty Lnet/minecraft/class_7172;
 	FIELD field_49500 TITLE_TEXT Lnet/minecraft/class_2561;
 	METHOD <init> (Lnet/minecraft/class_437;Lnet/minecraft/class_315;)V
 		ARG 1 parent
@@ -28,11 +27,6 @@ CLASS net/minecraft/class_6777 net/minecraft/client/gui/screen/option/OnlineOpti
 		ARG 0 client
 		ARG 1 action
 		ARG 2 parent
-	METHOD method_1_5969 (Lnet/minecraft/class_638;)Lnet/minecraft/class_7172;
-		ARG 0 world
-	METHOD method_1_5970 (Lnet/minecraft/class_1267;Lnet/minecraft/class_2561;Lcom/mojang/datafixers/util/Unit;)Lnet/minecraft/class_2561;
-		ARG 1 optionText
-		ARG 2 value
 	METHOD method_1_5971 (Lnet/minecraft/class_5520;Lnet/minecraft/class_7172;Lnet/minecraft/class_5676;Ljava/lang/Boolean;)V
 		ARG 3 button
 		ARG 4 value
@@ -51,8 +45,8 @@ CLASS net/minecraft/class_6777 net/minecraft/client/gui/screen/option/OnlineOpti
 	METHOD method_1_5978 (Lnet/minecraft/class_5520;ZZLjava/util/function/Consumer;Lcom/mojang/authlib/yggdrasil/FriendsService$ResultCode;Ljava/lang/Throwable;)V
 		ARG 4 resultCode
 		ARG 5 ex
-	METHOD method_1_5979 (Lnet/minecraft/class_310;Lnet/minecraft/class_5520;Ljava/lang/Runnable;Lnet/minecraft/class_437;Z)V
-		ARG 4 confirmed
+	METHOD method_1_5979 (Lnet/minecraft/class_310;Ljava/lang/Runnable;Lnet/minecraft/class_437;Z)V
+		ARG 3 confirmed
 	METHOD method_1_5980 (Ljava/lang/Runnable;Ljava/lang/Boolean;)V
 		ARG 1 succeeded
 	METHOD method_1_5981 (Lnet/minecraft/class_5520;Z)V

@@ -70,8 +70,8 @@ CLASS net/minecraft/class_1_948 net/minecraft/client/network/p2p/JoinRequestMana
 		ARG 1 friend
 	METHOD method_1_5752 (Ljava/util/UUID;Lnet/minecraft/class_1_948$class_1_949;Ljava/lang/Void;Ljava/lang/Throwable;)V
 		ARG 4 ex
-	METHOD method_1_5754 (Ljava/util/concurrent/CompletableFuture;Ljava/lang/Void;Ljava/lang/Throwable;)V
-		ARG 2 ex
+	METHOD method_1_5754 (Ljava/lang/String;Ljava/util/concurrent/CompletableFuture;Ljava/lang/Void;Ljava/lang/Throwable;)V
+		ARG 3 ex
 	METHOD method_1_5756 (Ljava/lang/String;Ljava/lang/Throwable;)Ljava/lang/Void;
 		ARG 1 ex
 	METHOD method_1_5757 (Ljava/util/UUID;Ljava/lang/String;Ljava/lang/Throwable;)Ljava/util/concurrent/CompletionStage;

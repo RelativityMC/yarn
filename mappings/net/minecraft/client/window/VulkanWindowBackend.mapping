@@ -8,7 +8,7 @@ CLASS net/minecraft/class_1_689 net/minecraft/client/window/VulkanWindowBackend
 	FIELD field_1_3539 PHYSICAL_DEVICE_VULKAN_1_2_FEATURES Lnet/minecraft/class_1_730;
 	FIELD field_1_6285 PHYSICAL_DEVICE_VERTEX_ATTRIBUTE_DIVISOR_FEATURES Lnet/minecraft/class_1_730;
 	FIELD field_1_6396 PHYSICAL_DEVICE_VULKAN_1_1_FEATURES Lnet/minecraft/class_1_730;
-	METHOD method_1_4154 createDevice (Ljava/util/Collection;Lnet/minecraft/class_1_717;)Lorg/lwjgl/vulkan/VkDevice;
+	METHOD method_1_4154 createDevice (Ljava/util/Collection;Lnet/minecraft/class_1_717;Ljava/util/Set;)Lorg/lwjgl/vulkan/VkDevice;
 		ARG 0 enabledExtensions
 		ARG 1 physicalDevice
 	METHOD method_1_4155 createVmaAllocator (Lorg/lwjgl/vulkan/VkDevice;)J

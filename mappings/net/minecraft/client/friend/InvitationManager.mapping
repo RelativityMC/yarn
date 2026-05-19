@@ -22,7 +22,6 @@ CLASS net/minecraft/class_1_951 net/minecraft/client/friend/InvitationManager
 		ARG 1 friendId
 	METHOD method_1_5776 getOutgoingInvitations ()Ljava/util/Set;
 	METHOD method_1_5777 getJoinInfoUpdate (Lcom/mojang/authlib/yggdrasil/response/PresenceStatus;)Lcom/mojang/authlib/yggdrasil/request/JoinInfoUpdate;
-		ARG 1 presenceStatus
 	METHOD method_1_5778 getPresenceResponse ()Lcom/mojang/authlib/yggdrasil/response/PresenceResponse;
 	METHOD method_1_5779 getPresenceStatus ()Lcom/mojang/authlib/yggdrasil/response/PresenceStatus;
 	METHOD method_1_5780 pmidToProfileId (Ljava/util/UUID;)Ljava/util/UUID;

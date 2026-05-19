@@ -30,13 +30,12 @@ CLASS net/minecraft/class_8679 net/minecraft/client/render/ChunkRenderingDataPre
 	METHOD method_52817 scheduleTerrainUpdate ()V
 	METHOD method_52824 (Lnet/minecraft/class_8679$class_8681;Lnet/minecraft/class_8679$class_762;)V
 		ARG 1 info
-	METHOD method_52825 update (Lnet/minecraft/class_8679$class_6600;Lnet/minecraft/class_243;Ljava/util/Queue;ZLjava/util/function/Consumer;Lit/unimi/dsi/fastutil/longs/LongOpenHashSet;)V
+	METHOD method_52825 update (Lnet/minecraft/class_8679$class_6600;Lnet/minecraft/class_243;Ljava/util/Queue;ZLjava/util/function/Consumer;Lit/unimi/dsi/fastutil/longs/LongOpenHashSet;Lit/unimi/dsi/fastutil/longs/LongOpenHashSet;)V
 		ARG 1 renderableChunks
 		ARG 2 pos
 		ARG 3 chunkInfoQueue
 		ARG 4 cullChunks
 		ARG 5 loadedSectionCallback
-		ARG 6 loadedSections
 	METHOD method_52826 setStorage (Lnet/minecraft/class_769;)V
 		ARG 1 storage
 	METHOD method_52827 schedulePropagationFrom (Lnet/minecraft/class_846$class_851;)V
@@ -57,13 +56,10 @@ CLASS net/minecraft/class_8679 net/minecraft/client/render/ChunkRenderingDataPre
 		ARG 1 centerSectionPos
 		ARG 3 otherSectionPos
 	METHOD method_52833 scheduleTerrainUpdate (Lnet/minecraft/class_12075;)V
-		ARG 1 cameraRenderState
-	METHOD method_52834 updateSectionOcclusionGraph (Lnet/minecraft/class_12075;ILit/unimi/dsi/fastutil/longs/LongOpenHashSet;Lit/unimi/dsi/fastutil/longs/LongOpenHashSet;)V
+	METHOD method_52834 updateSectionOcclusionGraph (Lnet/minecraft/class_12075;ILnet/minecraft/class_1_1029;)V
 		ARG 1 cameraRenderState
 		ARG 2 fov
-		ARG 3 newSections
-		ARG 4 updatedSections
-	METHOD method_52835 updateNow (Lnet/minecraft/class_12075;)V
+	METHOD method_52835 updateNow (Lnet/minecraft/class_12075;Lit/unimi/dsi/fastutil/longs/LongSet;)V
 		ARG 1 cameraRenderState
 	METHOD method_52836 updateFrustum ()Z
 	METHOD method_52837 getInfo (Lnet/minecraft/class_846$class_851;)Lnet/minecraft/class_8679$class_762;

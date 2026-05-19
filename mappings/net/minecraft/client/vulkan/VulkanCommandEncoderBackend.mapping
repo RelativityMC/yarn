@@ -23,8 +23,6 @@ CLASS net/minecraft/class_1_715 net/minecraft/client/vulkan/VulkanCommandEncoder
 		ARG 2 texture
 		ARG 3 depth
 	METHOD method_1_4261 beginCommandBuffer ()Lorg/lwjgl/vulkan/VkCommandBuffer;
-	METHOD method_1_4262 stage (Ljava/nio/ByteBuffer;)Lnet/minecraft/class_1_694;
-		ARG 1 contents
 	METHOD method_1_4263 endCommandBuffer ()V
 	METHOD method_1_4264 addCommandBuffer (Lorg/lwjgl/vulkan/VkCommandBuffer;)V
 		ARG 1 commandBuffer
@@ -42,7 +40,7 @@ CLASS net/minecraft/class_1_715 net/minecraft/client/vulkan/VulkanCommandEncoder
 		ARG 1 vkSemaphore
 		ARG 3 value
 		ARG 5 stageMask
-	METHOD method_1_4276 writeToTexture (Lnet/minecraft/class_1_703;Lnet/minecraft/class_1_694;JIIIIIIII)V
+	METHOD method_1_4276 writeToTexture (Lnet/minecraft/class_1_703;Lnet/minecraft/class_1_1012;JIIIIIIII)V
 		ARG 1 target
 		ARG 2 source
 		ARG 3 sourceOffset

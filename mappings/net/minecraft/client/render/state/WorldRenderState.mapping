@@ -4,9 +4,7 @@ CLASS net/minecraft/class_11658 net/minecraft/client/render/state/WorldRenderSta
 	FIELD field_1_1887 cloudHeight F
 	FIELD field_1_2384 particles Lnet/minecraft/class_11943;
 	FIELD field_1_3809 show3dCrosshair Z
-	FIELD field_1_5912 newSections Lit/unimi/dsi/fastutil/longs/LongOpenHashSet;
 	FIELD field_1_5913 sectionReadyCallback Ljava/lang/Runnable;
-	FIELD field_1_5914 updatedSections Lit/unimi/dsi/fastutil/longs/LongOpenHashSet;
 	FIELD field_1_5915 sectionUpdates Ljava/util/List;
 	FIELD field_1_5916 recreateTerrainSampler Z
 	FIELD field_1_5917 scheduledReload Z

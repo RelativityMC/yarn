@@ -5,14 +5,13 @@ CLASS net/minecraft/class_11807 net/minecraft/server/dedicated/management/Manage
 	FIELD field_62316 connectionHandlers Ljava/util/Set;
 	FIELD field_62800 authHandler Lnet/minecraft/class_12000;
 	FIELD field_62801 channel Lio/netty/channel/Channel;
-	FIELD field_62802 eventLoopGroup Lio/netty/channel/nio/NioEventLoopGroup;
+	FIELD field_62802 eventLoopGroup Lio/netty/channel/EventLoopGroup;
 	METHOD <init> (Lcom/google/common/net/HostAndPort;Lnet/minecraft/class_12000;)V
 		ARG 1 address
 		ARG 2 authHandler
-	METHOD <init> (Lcom/google/common/net/HostAndPort;Lnet/minecraft/class_12000;Lio/netty/channel/nio/NioEventLoopGroup;)V
+	METHOD <init> (Lcom/google/common/net/HostAndPort;Lnet/minecraft/class_12000;Lio/netty/channel/EventLoopGroup;)V
 		ARG 1 address
 		ARG 2 authHandler
-		ARG 3 eventLoopGroup
 	METHOD method_1_5199 setStatusHeartbeatInterval (Lnet/minecraft/class_11870;J)Z
 		ARG 1 listener
 		ARG 2 statusHeartbeatIntervalSeconds

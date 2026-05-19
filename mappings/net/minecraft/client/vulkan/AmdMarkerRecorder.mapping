@@ -2,7 +2,7 @@ CLASS net/minecraft/class_1_981 net/minecraft/client/vulkan/AmdMarkerRecorder
 	FIELD field_1_6766 STAGES [J
 	FIELD field_1_6767 queues Ljava/util/List;
 	CLASS class_1_982 Queue
-		FIELD field_1_6768 internalMarkerStorage Lnet/minecraft/class_1_694;
+		FIELD field_1_6768 internalMarkerStorage Lnet/minecraft/class_1_1012;
 		FIELD field_1_6769 internalMarkerStorageMapped Lcom/mojang/blaze3d/buffers/GpuBufferSlice$class_1_892;
 		METHOD <init> (Lnet/minecraft/class_1_679;Lnet/minecraft/class_1_674;I)V
 			ARG 1 backend

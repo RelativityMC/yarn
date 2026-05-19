@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_1132 net/minecraft/server/integrated/IntegratedServer
-	FIELD field_1_6415 shareSetting Lnet/minecraft/class_1132$class_1_908;
+	FIELD field_1_6415 shareSetting Lnet/minecraft/server/MinecraftServer$class_1_908;
 	FIELD field_5518 client Lnet/minecraft/class_310;
 	FIELD field_5519 lanPinger Lnet/minecraft/class_1133;
 	FIELD field_5520 LOGGER Lorg/slf4j/Logger;
@@ -21,22 +21,14 @@ CLASS net/minecraft/class_1132 net/minecraft/server/integrated/IntegratedServer
 		ARG 8 chunkLoadProgress
 	METHOD method_1_5525 setGameMode (Lnet/minecraft/class_1934;)V
 		ARG 1 gameMode
-	METHOD method_1_5526 getShareSetting ()Lnet/minecraft/class_1132$class_1_908;
+	METHOD method_1_5526 getShareSetting ()Lnet/minecraft/server/MinecraftServer$class_1_908;
 	METHOD method_1_5527 isOnline ()Z
 	METHOD method_1_5528 notifyWorldShareUpdateListeners ()V
 	METHOD method_1_5529 setAllowCommands (Z)V
 		ARG 1 allowCommands
-	METHOD method_1_5530 setShareSetting (Lnet/minecraft/class_1132$class_1_908;)V
+	METHOD method_1_5530 setShareSetting (Lnet/minecraft/server/MinecraftServer$class_1_908;)V
 		ARG 1 shareSetting
-	METHOD method_1_5531 unpublish ()Z
 	METHOD method_4817 setLocalPlayerUuid (Ljava/util/UUID;)V
 		ARG 1 localPlayerUuid
 	METHOD method_36439 incrementTotalWorldTimeStat ()V
 	METHOD method_75491 getGizmoEntries ()Ljava/util/Collection;
-	CLASS class_1_908 ShareSetting
-		FIELD field_1_6420 tooltip Lnet/minecraft/class_7919;
-		FIELD field_1_6421 text Lnet/minecraft/class_2561;
-		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
-			ARG 3 id
-		METHOD method_1_5533 getText ()Lnet/minecraft/class_2561;
-		METHOD method_1_5534 getTooltip ()Lnet/minecraft/class_7919;

@@ -136,6 +136,7 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 2 rainTime
 		ARG 3 raining
 		ARG 4 thundering
+	METHOD method_1_5531 unpublish ()Z
 	METHOD method_3716 getKeyPair ()Ljava/security/KeyPair;
 	METHOD method_3718 isFlightEnabled ()Z
 	METHOD method_3723 save (ZZZ)Z
@@ -204,16 +205,16 @@ CLASS net/minecraft/server/MinecraftServer
 	METHOD method_3760 getPlayerManager ()Lnet/minecraft/class_3324;
 	METHOD method_3761 getForcedGameMode ()Lnet/minecraft/class_1934;
 		COMMENT Returns the game mode a player should be set to when connecting to the server, or {@code null} if none is set.
-	METHOD method_3763 openToLan (Lnet/minecraft/class_1934;ZI)Z
+	METHOD method_3763 openToLan (Lnet/minecraft/server/MinecraftServer$class_1_908;Lnet/minecraft/class_1934;ZI)Z
 		COMMENT Opens a server for LAN connections.
 		COMMENT This is only supported on an integrated server, a dedicated server will always fail to open to LAN.
 		COMMENT
 		COMMENT @return whether the server was successfully opened to LAN
-		ARG 1 gameMode
+		ARG 2 gameMode
 			COMMENT the game mode connecting players will have set by default
-		ARG 2 cheatsAllowed
+		ARG 3 cheatsAllowed
 			COMMENT whether players on the server have operator permissions
-		ARG 3 port
+		ARG 4 port
 			COMMENT the port to open up to LAN connections
 	METHOD method_3764 setPreventProxyConnections (Z)V
 		ARG 1 preventProxyConnections
@@ -535,6 +536,13 @@ CLASS net/minecraft/server/MinecraftServer
 		FIELD field_61875 chunkLoadingManager Lnet/minecraft/class_3898;
 		FIELD field_61876 spawnChunkX I
 		FIELD field_61877 spawnChunkZ I
+	CLASS class_1_908 ShareSetting
+		FIELD field_1_6420 tooltip Lnet/minecraft/class_2561;
+		FIELD field_1_6421 text Lnet/minecraft/class_2561;
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 id
+		METHOD method_1_5533 getText ()Lnet/minecraft/class_2561;
+		METHOD method_1_5534 getTooltip ()Lnet/minecraft/class_2561;
 	CLASS class_6414 DebugStart
 		FIELD field_33980 time J
 		FIELD field_33981 tick I

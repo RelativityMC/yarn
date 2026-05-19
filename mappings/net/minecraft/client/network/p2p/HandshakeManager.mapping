@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_1_966 net/minecraft/client/network/p2p/HandshakeManager
 	FIELD field_1_6694 LOGGER Lorg/slf4j/Logger;
-	FIELD field_1_6695 HANDSHAKE_TIMEOUT_SECONDS J
 	FIELD field_1_6696 CONNECTION_LISTENER Lnet/minecraft/class_1_993$class_1_997;
 	FIELD field_1_6697 peerConnectionFactory Ldev/onvoid/webrtc/PeerConnectionFactory;
 	FIELD field_1_6698 handshakes Ljava/util/concurrent/ConcurrentHashMap;
@@ -29,9 +28,8 @@ CLASS net/minecraft/class_1_966 net/minecraft/client/network/p2p/HandshakeManage
 	METHOD method_1_5830 onAnswer (Ljava/util/UUID;Lnet/minecraft/class_1_931$class_1_939$class_1_940;)V
 		ARG 1 uuid
 		ARG 2 answer
-	METHOD method_1_5831 onIceCandidate (Ljava/util/UUID;Lnet/minecraft/class_1_931$class_1_939$class_1_942;)V
+	METHOD method_1_5831 onIceCandidate (Ljava/util/UUID;Lnet/minecraft/class_1_931$class_1_939$class_1_941;)V
 		ARG 1 uuid
-		ARG 2 iceCandidate
 	METHOD method_1_5832 onOffer (Ljava/util/UUID;Lnet/minecraft/class_1_931$class_1_939$class_1_943;)V
 		ARG 1 uuid
 		ARG 2 offer
@@ -57,7 +55,7 @@ CLASS net/minecraft/class_1_966 net/minecraft/client/network/p2p/HandshakeManage
 		ARG 6 ex
 	METHOD method_1_5844 (Lnet/minecraft/class_1_912;Ljava/lang/Throwable;)Ljava/lang/Void;
 		ARG 1 ex
-	METHOD method_1_5845 (Lnet/minecraft/class_1_931$class_1_939$class_1_942;Ljava/lang/Throwable;)Ljava/lang/Void;
+	METHOD method_1_5845 (Lnet/minecraft/class_1_931$class_1_939$class_1_941;Ljava/lang/Throwable;)Ljava/lang/Void;
 		ARG 1 ex
 	METHOD method_1_5846 (Lnet/minecraft/class_1_931$class_1_939$class_1_943;Lnet/minecraft/class_1_912;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 handshake

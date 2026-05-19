@@ -32,10 +32,8 @@ CLASS net/minecraft/class_1_911 net/minecraft/client/network/p2p/WorldShareManag
 	METHOD method_1_5563 disconnectIfIrrelevant ()V
 	METHOD method_1_5564 isRelevant ()Z
 	METHOD method_1_5565 notifyUpdateListeners ()V
-	METHOD method_1_5566 setShareSetting (Lnet/minecraft/class_1132$class_1_908;)V
+	METHOD method_1_5566 setShareSetting (Lnet/minecraft/server/MinecraftServer$class_1_908;)V
 		ARG 1 shareSetting
-	METHOD method_1_5567 stop ()V
-	METHOD method_1_5568 onDisconnect ()V
 	METHOD method_1_5569 getWorldJoinStatus (Ljava/util/UUID;)Lnet/minecraft/class_1_948$class_1_950;
 		ARG 1 pmid
 	METHOD method_1_5570 rejectJoinRequest (Ljava/util/UUID;)V

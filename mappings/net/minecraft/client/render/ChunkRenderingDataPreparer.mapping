@@ -6,6 +6,7 @@ CLASS net/minecraft/class_8679 net/minecraft/client/render/ChunkRenderingDataPre
 	FIELD field_1_5781 cameraYd8 D
 	FIELD field_1_5782 cameraZd8 D
 	FIELD field_1_5783 fov I
+	FIELD field_1_7000 loadedChunks Lit/unimi/dsi/fastutil/longs/LongOpenHashSet;
 	FIELD field_45617 LOGGER Lorg/slf4j/Logger;
 	FIELD field_45618 DIRECTIONS [Lnet/minecraft/class_2350;
 	FIELD field_45619 DEFAULT_SECTION_DISTANCE I
@@ -27,6 +28,12 @@ CLASS net/minecraft/class_8679 net/minecraft/client/render/ChunkRenderingDataPre
 	METHOD method_1_4990 updateLoadedSections (Lit/unimi/dsi/fastutil/longs/LongOpenHashSet;Lit/unimi/dsi/fastutil/longs/LongOpenHashSet;)V
 		ARG 1 newSections
 		ARG 2 updatedSections
+	METHOD method_1_6235 getLoadedChunkPositions ()Lit/unimi/dsi/fastutil/longs/LongCollection;
+	METHOD method_1_6238 (J)Lit/unimi/dsi/fastutil/longs/LongList;
+		ARG 0 chunkPos
+	METHOD method_1_6239 updateLoadedChunks (Lit/unimi/dsi/fastutil/longs/LongOpenHashSet;Lit/unimi/dsi/fastutil/longs/LongOpenHashSet;)V
+		ARG 1 loadedChunks
+		ARG 2 unloadedChunks
 	METHOD method_52817 scheduleTerrainUpdate ()V
 	METHOD method_52824 (Lnet/minecraft/class_8679$class_8681;Lnet/minecraft/class_8679$class_762;)V
 		ARG 1 info
@@ -36,6 +43,8 @@ CLASS net/minecraft/class_8679 net/minecraft/client/render/ChunkRenderingDataPre
 		ARG 3 chunkInfoQueue
 		ARG 4 cullChunks
 		ARG 5 loadedSectionCallback
+		ARG 6 loadedSections
+		ARG 7 loadedChunks
 	METHOD method_52826 setStorage (Lnet/minecraft/class_769;)V
 		ARG 1 storage
 	METHOD method_52827 schedulePropagationFrom (Lnet/minecraft/class_846$class_851;)V
@@ -56,9 +65,11 @@ CLASS net/minecraft/class_8679 net/minecraft/client/render/ChunkRenderingDataPre
 		ARG 1 centerSectionPos
 		ARG 3 otherSectionPos
 	METHOD method_52833 scheduleTerrainUpdate (Lnet/minecraft/class_12075;)V
+		ARG 1 cameraRenderState
 	METHOD method_52834 updateSectionOcclusionGraph (Lnet/minecraft/class_12075;ILnet/minecraft/class_1_1029;)V
 		ARG 1 cameraRenderState
 		ARG 2 fov
+		ARG 3 chunkManagerRenderState
 	METHOD method_52835 updateNow (Lnet/minecraft/class_12075;Lit/unimi/dsi/fastutil/longs/LongSet;)V
 		ARG 1 cameraRenderState
 	METHOD method_52836 updateFrustum ()Z
@@ -101,6 +112,7 @@ CLASS net/minecraft/class_8679 net/minecraft/client/render/ChunkRenderingDataPre
 			ARG 1 chunk
 			ARG 2 info
 	CLASS class_6600 RenderableChunks
+		FIELD field_1_7001 loadedChunks Lit/unimi/dsi/fastutil/longs/Long2ObjectMap;
 		FIELD field_45627 infoList Lnet/minecraft/class_8679$class_5972;
 		FIELD field_53929 octree Lnet/minecraft/class_10143;
 		METHOD <init> (Lnet/minecraft/class_769;)V

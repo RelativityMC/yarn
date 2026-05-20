@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_1028 net/minecraft/client/friend/gui/screen/FriendListConfirmScreen
+	FIELD field_1_7022 BACKGROUND_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_7025 NARRATION_LINK_USAGE_FOCUSED_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_7026 NARRATION_LINK_USAGE_HOVERED_TEXT Lnet/minecraft/class_2561;
+	METHOD method_1_6265 (Lnet/minecraft/class_2583;)V
+		ARG 1 widget

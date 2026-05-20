@@ -14,6 +14,8 @@ CLASS net/minecraft/class_6777 net/minecraft/client/gui/screen/option/OnlineOpti
 	FIELD field_1_6782 acceptsFriendInvitesButton Lnet/minecraft/class_5676;
 	FIELD field_1_6783 friendsEnabledButton Lnet/minecraft/class_5676;
 	FIELD field_1_6784 getInGameNotificationButton Lnet/minecraft/class_5676;
+	FIELD field_1_7020 CONFIRM_MESSAGE_LINK_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_7021 SERVERS_HEADER_TEXT Lnet/minecraft/class_2561;
 	FIELD field_49500 TITLE_TEXT Lnet/minecraft/class_2561;
 	METHOD <init> (Lnet/minecraft/class_437;Lnet/minecraft/class_315;)V
 		ARG 1 parent
@@ -42,6 +44,8 @@ CLASS net/minecraft/class_6777 net/minecraft/client/gui/screen/option/OnlineOpti
 	METHOD method_1_5976 (Lnet/minecraft/class_7172;Lnet/minecraft/class_5676;Ljava/lang/Boolean;)V
 		ARG 1 button
 		ARG 2 value
+	METHOD method_1_5977 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
 	METHOD method_1_5978 (Lnet/minecraft/class_5520;ZZLjava/util/function/Consumer;Lcom/mojang/authlib/yggdrasil/FriendsService$ResultCode;Ljava/lang/Throwable;)V
 		ARG 4 resultCode
 		ARG 5 ex
@@ -60,3 +64,5 @@ CLASS net/minecraft/class_6777 net/minecraft/client/gui/screen/option/OnlineOpti
 		ARG 2 socialInteractionsManager
 		ARG 3 getInGameNotification
 	METHOD method_1_5985 refresh ()V
+	METHOD method_1_6264 (Lnet/minecraft/class_2583;)Lnet/minecraft/class_2583;
+		ARG 0 style

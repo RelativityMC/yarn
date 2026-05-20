@@ -9,6 +9,7 @@ CLASS net/minecraft/class_11658 net/minecraft/client/render/state/WorldRenderSta
 	FIELD field_1_5916 recreateTerrainSampler Z
 	FIELD field_1_5917 scheduledReload Z
 	FIELD field_1_5918 drawEntityOutlines Z
+	FIELD field_1_7019 chunkManager Lnet/minecraft/class_1_1029;
 	FIELD field_61735 entityRenderStates Ljava/util/List;
 	FIELD field_62646 blockEntityRenderStates Ljava/util/List;
 	FIELD field_63082 cameraRenderState Lnet/minecraft/class_12075;

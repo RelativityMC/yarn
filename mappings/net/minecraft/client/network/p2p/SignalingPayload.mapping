@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_1_931 net/minecraft/client/network/p2p/SignalingPayload
+	FIELD field_1_6576 CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_1_5686 answer (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/class_1_931;
 		ARG 0 sessionId
 		ARG 1 sdp
@@ -15,16 +16,33 @@ CLASS net/minecraft/class_1_931 net/minecraft/client/network/p2p/SignalingPayloa
 	METHOD method_1_5698 offer (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/class_1_931;
 		ARG 0 sessionId
 		ARG 1 sdp
+	METHOD method_1_6241 getPayloadType ()Lnet/minecraft/class_1_931$class_1_938;
 	CLASS class_1_932 FriendJoin
 		CLASS class_1_933 JoinAccepted
+			METHOD method_1_6242 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+				ARG 0 instance
 		CLASS class_1_934 InviteDeclined
+			METHOD method_1_6243 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+				ARG 0 instance
 		CLASS class_1_935 JoinRejected
+			METHOD method_1_6244 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+				ARG 0 instance
 		CLASS class_1_936 JoinRequest
+			METHOD method_1_6245 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+				ARG 0 instance
 	CLASS class_1_938 Type
+		FIELD field_1_7008 codecSupplier Ljava/util/function/Supplier;
+		METHOD <init> (Ljava/lang/String;ILjava/util/function/Supplier;)V
+			ARG 3 codecSupplier
+		METHOD method_1_6246 getCodec ()Lcom/mojang/serialization/MapCodec;
 	CLASS class_1_939 WebRtc
 		CLASS class_1_940 Answer
+			METHOD method_1_6254 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+				ARG 0 instance
 		CLASS class_1_941 IceCandidate
 			METHOD method_1_5701 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 				ARG 0 instance
 			METHOD method_1_5704 toWebRtc ()Ldev/onvoid/webrtc/RTCIceCandidate;
 		CLASS class_1_943 Offer
+			METHOD method_1_6255 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+				ARG 0 instance

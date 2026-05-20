@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_1029 net/minecraft/client/render/state/ChunkManagerRenderState
+	FIELD field_1_7027 newSections Lit/unimi/dsi/fastutil/longs/LongOpenHashSet;
+	FIELD field_1_7028 loadedChunks Lit/unimi/dsi/fastutil/longs/LongOpenHashSet;
+	FIELD field_1_7029 loadedChunkPositions Lit/unimi/dsi/fastutil/longs/LongOpenHashSet;
+	FIELD field_1_7030 updateSections Lit/unimi/dsi/fastutil/longs/LongOpenHashSet;
+	FIELD field_1_7031 unloadedChunks Lit/unimi/dsi/fastutil/longs/LongOpenHashSet;
+	METHOD method_1_6266 clear ()V

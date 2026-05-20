@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_8019 net/minecraft/client/gui/widget/NarratedMultilineTextWidget
+	FIELD field_1_7011 focusedText Lnet/minecraft/class_2561;
+	FIELD field_1_7012 hoveredText Lnet/minecraft/class_2561;
+	FIELD field_1_7013 narrateTitle Z
 	FIELD field_41802 DEFAULT_MARGIN I
 	FIELD field_45355 alwaysShowBorders Z
 	FIELD field_49480 margin I
@@ -14,6 +17,11 @@ CLASS net/minecraft/class_8019 net/minecraft/client/gui/widget/NarratedMultiline
 	METHOD method_1_5770 (Lnet/minecraft/class_2583;Ljava/lang/String;)Ljava/util/Optional;
 		ARG 0 style
 		ARG 1 string
+	METHOD method_1_6256 setNarrateTitle (Z)V
+		ARG 1 narrateTitle
+	METHOD method_1_6257 setFocusedAndHoverText (Lnet/minecraft/class_2561;Lnet/minecraft/class_2561;)V
+		ARG 1 focusedText
+		ARG 2 hoveredText
 	METHOD method_75352 builder (Lnet/minecraft/class_2561;Lnet/minecraft/class_327;)Lnet/minecraft/class_8019$class_12141;
 		ARG 0 text
 		ARG 1 textRenderer

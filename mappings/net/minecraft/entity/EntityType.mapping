@@ -26,6 +26,7 @@ CLASS net/minecraft/class_1299 net/minecraft/entity/EntityType
 		ARG 4 summonable
 		ARG 5 fireImmune
 		ARG 6 spawnableFarFromPlayer
+		ARG 7 canSpawnInside
 		ARG 8 dimensions
 		ARG 9 spawnBoxScale
 		ARG 10 maxTrackDistance
@@ -34,6 +35,8 @@ CLASS net/minecraft/class_1299 net/minecraft/entity/EntityType
 		ARG 13 lootTable
 		ARG 14 requiredFeatures
 		ARG 15 allowedInPeaceful
+	METHOD method_1_5188 isAllowedInWorld (Lnet/minecraft/class_1937;)Z
+		ARG 1 world
 	METHOD method_5881 loadFromEntityNbt (Lnet/minecraft/class_1937;Lnet/minecraft/class_1309;Lnet/minecraft/class_1297;Lnet/minecraft/class_11580;)V
 		ARG 0 world
 		ARG 1 spawner
@@ -250,6 +253,7 @@ CLASS net/minecraft/class_1299 net/minecraft/entity/EntityType
 			COMMENT With this setting, fire resistant mobs can spawn on/in fire damage dealing blocks,
 			COMMENT and wither skeletons can spawn in wither roses. If a block added is not in the default
 			COMMENT blacklist, the addition has no effect.
+			ARG 1 canSpawnInside
 		METHOD method_45323 requires ([Lnet/minecraft/class_7696;)Lnet/minecraft/class_1299$class_1300;
 			ARG 1 features
 		METHOD method_55687 eyeHeight (F)Lnet/minecraft/class_1299$class_1300;

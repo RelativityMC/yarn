@@ -1,0 +1,49 @@
+CLASS net/minecraft/class_1_1022 net/minecraft/client/util/memory/Arena
+	FIELD field_1_6964 rawAllocator Lnet/minecraft/class_1_1022$class_1_1024;
+	FIELD field_1_6965 blockSize J
+	FIELD field_1_6966 partialBlock Ljava/lang/Object;
+		COMMENT A block that is partially occupied.
+		COMMENT
+		COMMENT This should also be found in {@link occupiedBlocks}, so it should not be
+		COMMENT freed separately.
+	FIELD field_1_6967 partialBlockOffset J
+		COMMENT The offset that marks the start of the free space in {@link partialBlock}.
+	FIELD field_1_6968 freeBlocks Lit/unimi/dsi/fastutil/objects/ReferenceArrayList;
+	FIELD field_1_6969 maxSupportedAlignment J
+	FIELD field_1_6970 blockAllocatedCallback Ljava/util/function/Consumer;
+	FIELD field_1_6971 oversizedBlocks Lit/unimi/dsi/fastutil/objects/ReferenceArrayList;
+	FIELD field_1_6972 occupiedBlocks Lit/unimi/dsi/fastutil/objects/ReferenceArrayList;
+	METHOD <init> (JJLnet/minecraft/class_1_1022$class_1_1024;)V
+		ARG 1 blockSize
+		ARG 3 maxSupportedAlignment
+		ARG 5 rawAllocator
+	METHOD <init> (JJLnet/minecraft/class_1_1022$class_1_1024;Ljava/util/function/Consumer;)V
+		ARG 1 blockSize
+		ARG 3 maxSupportedAlignment
+		ARG 5 rawAllocator
+		ARG 6 blockAllocatedCallback
+	METHOD method_1_6201 allocate (JJJJ)Lnet/minecraft/class_1_1022$class_1_1023;
+		ARG 1 preferredSize
+		ARG 3 alignment
+		ARG 5 minimumSize
+		ARG 7 sizeAlignment
+	METHOD method_1_6202 allocateBlock ()Ljava/lang/Object;
+	METHOD method_1_6203 getBlockSize ()J
+	METHOD method_1_6204 fitsInBlock (JJ)Z
+		ARG 1 size
+		ARG 3 alignment
+	METHOD method_1_6205 fitsInPartialBlock (JJ)Z
+		ARG 1 size
+		ARG 3 alignment
+	METHOD method_1_6206 (Ljava/lang/Object;)V
+		ARG 0 block
+	METHOD method_1_6209 startClearing ()Ljava/lang/Runnable;
+	CLASS class_1_1023 Region
+	CLASS class_1_1024 Allocator
+		METHOD method_1_6210 alloc (J)Ljava/lang/Object;
+			ARG 1 size
+		METHOD method_1_6211 fromFunctions (Ljava/util/function/LongFunction;Ljava/util/function/Consumer;)Lnet/minecraft/class_1_1022$class_1_1024;
+			ARG 0 alloc
+			ARG 1 free
+		METHOD method_1_6212 free (Ljava/lang/Object;)V
+			ARG 1 object

@@ -6,6 +6,8 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	FIELD field_1_5675 bakedModelManager Lnet/minecraft/class_1092;
 	FIELD field_1_5676 shaderLoader Lnet/minecraft/class_10151;
 	FIELD field_1_5677 textureManager Lnet/minecraft/class_1060;
+	FIELD field_1_6301 ENTITY_OUTLINE_FRAMEBUFFER_CLEAR_COLOR Lorg/joml/Vector4fc;
+	FIELD field_1_6302 FRAMEBUFFER_CLEAR_COLOR Lorg/joml/Vector4fc;
 	FIELD field_4109 entityRenderManager Lnet/minecraft/class_898;
 	FIELD field_4112 chunks Lnet/minecraft/class_769;
 	FIELD field_20951 bufferBuilders Lnet/minecraft/class_4599;
@@ -70,6 +72,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 1 worldRenderState
 		ARG 2 queue
 		ARG 3 renderBlockOutline
+	METHOD method_1_6185 getLoadedChunkPositions ()Lit/unimi/dsi/fastutil/longs/LongCollection;
 	METHOD method_3242 onResized (II)V
 		ARG 1 width
 		ARG 2 height

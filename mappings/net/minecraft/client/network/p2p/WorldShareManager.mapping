@@ -2,8 +2,12 @@ CLASS net/minecraft/class_1_911 net/minecraft/client/network/p2p/WorldShareManag
 	FIELD field_1_6440 LOGGER Lorg/slf4j/Logger;
 	FIELD field_1_6442 joinRequestManager Lnet/minecraft/class_1_948;
 	FIELD field_1_6443 client Lnet/minecraft/class_310;
+	FIELD field_1_6444 handshakeManager Lnet/minecraft/class_1_966;
 	FIELD field_1_6445 shutdown Z
 	FIELD field_1_6446 gateway Lnet/minecraft/class_1_993;
+	FIELD field_1_6993 MAX_RETRY_DELAY Ljava/time/Duration;
+	FIELD field_1_6994 random Lnet/minecraft/class_5819;
+	FIELD field_1_6995 numRetries I
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_320;)V
 		ARG 1 client
 		ARG 2 session
@@ -45,3 +49,6 @@ CLASS net/minecraft/class_1_911 net/minecraft/client/network/p2p/WorldShareManag
 		ARG 1 uuid
 		ARG 2 sessionId
 	METHOD method_1_5574 stopImpl ()V
+	METHOD method_1_6229 onDisconnectOrFail ()V
+	METHOD method_1_6230 getRetryDelay (I)J
+		ARG 1 numRetries

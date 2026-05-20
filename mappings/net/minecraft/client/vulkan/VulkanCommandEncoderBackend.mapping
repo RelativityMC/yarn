@@ -9,6 +9,7 @@ CLASS net/minecraft/class_1_715 net/minecraft/client/vulkan/VulkanCommandEncoder
 	FIELD field_1_3667 submitSemaphore J
 	FIELD field_1_6424 markerRecorderQueue Lnet/minecraft/class_1_970$class_1_971;
 	FIELD field_1_6425 commandPools [Lnet/minecraft/class_1_907;
+	FIELD field_1_6961 gpuBufferAllocator Lnet/minecraft/class_1_1025;
 	METHOD <init> (Lnet/minecraft/class_1_679;)V
 		ARG 1 device
 	METHOD method_1_4258 wait (JJ)Z
@@ -54,3 +55,9 @@ CLASS net/minecraft/class_1_715 net/minecraft/client/vulkan/VulkanCommandEncoder
 		ARG 12 sourceHeight
 	METHOD method_1_5535 getCommandBufferImpl ()Lorg/lwjgl/vulkan/VkCommandBuffer;
 	METHOD method_1_5536 getCommandPool ()Lnet/minecraft/class_1_907;
+	METHOD method_1_6194 issueMemoryBarrier (Lorg/lwjgl/vulkan/VkCommandBuffer;Lorg/lwjgl/system/MemoryStack;)V
+		ARG 0 commandBuffer
+		ARG 1 memoryStack
+	CLASS 1 1
+		FIELD field_1_3671 done Z
+		FIELD field_1_3672 waitValue J

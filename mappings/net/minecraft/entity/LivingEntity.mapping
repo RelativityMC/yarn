@@ -106,6 +106,8 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_1_884 getAttackRange (Lnet/minecraft/class_1799;)Lnet/minecraft/class_12392;
 		ARG 1 weapon
 	METHOD method_1_1166 getFluidWalkingShape ()Lnet/minecraft/class_265;
+	METHOD method_1_2938 (Lnet/minecraft/class_1282;Lnet/minecraft/class_6885;)Ljava/lang/Boolean;
+		ARG 1 bypassedBy
 	METHOD method_1_4165 adjustSlipperinessByFriction (FF)F
 		ARG 0 slipperiness
 		ARG 1 frictionModifier
@@ -115,6 +117,8 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 source
 		ARG 2 amount
 		ARG 3 blocked
+	METHOD method_1_6146 isAffectedByFluid (Lnet/minecraft/class_6862;)Z
+		ARG 1 fluidTag
 	METHOD method_5673 setEquipment (Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;)V
 		ARG 1 slot
 		ARG 2 stack
@@ -247,6 +251,8 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 effect
 	METHOD method_6060 knockback (Lnet/minecraft/class_1309;Lnet/minecraft/class_1282;F)V
 		ARG 1 target
+		ARG 2 source
+		ARG 3 damageAmount
 	METHOD method_6062 isImmobile ()Z
 	METHOD method_6063 getMaxHealth ()F
 	METHOD method_6064 getNextAirOnLand (I)I
@@ -299,6 +305,8 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_6090 takeShieldHit (Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;Lnet/minecraft/class_1282;F)V
 		ARG 1 world
 		ARG 2 attacker
+		ARG 3 source
+		ARG 4 damageAmount
 	METHOD method_6091 travel (Lnet/minecraft/class_243;)V
 		COMMENT Allows you to do certain speed and velocity calculations. This is useful for custom vehicle behavior, or custom entity movement. This is not to be confused with AI.
 		COMMENT

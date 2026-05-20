@@ -46,6 +46,7 @@ CLASS net/minecraft/class_1_993 net/minecraft/client/network/p2p/P2PGateway
 	METHOD method_1_6039 (Ljava/net/http/HttpClient;Lnet/minecraft/class_1_977;Ljava/lang/String;Ljava/lang/String;)Ljava/util/concurrent/CompletionStage;
 		ARG 4 endpoint
 	METHOD method_1_6040 (Ljava/net/http/HttpClient;Lnet/minecraft/class_1_977;Ljava/lang/Throwable;)V
+		ARG 2 webSocket
 		ARG 3 ex
 	METHOD method_1_6042 (Ljava/net/http/HttpResponse;)Ljava/lang/String;
 		ARG 1 response
@@ -134,6 +135,8 @@ CLASS net/minecraft/class_1_993 net/minecraft/client/network/p2p/P2PGateway
 		METHOD method_1_6082 onException (Ljava/util/UUID;Lnet/minecraft/class_1_952;)V
 			ARG 1 pmid
 			ARG 2 ex
+		METHOD method_1_6268 onFail ()V
+		METHOD method_1_6269 onConnect ()V
 	CLASS class_1_998 Environment
 		FIELD field_1_6857 CONFIGURATION_ROUTE Ljava/lang/String;
 		FIELD field_1_6860 url Ljava/lang/String;

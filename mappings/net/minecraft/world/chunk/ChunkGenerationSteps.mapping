@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_9768 net/minecraft/world/chunk/ChunkGenerationSteps
+	FIELD field_1_6341 LOADABLE_RANGE I
+	FIELD field_1_6342 LOADING_PADDING I
 	FIELD field_51900 GENERATION Lnet/minecraft/class_9768;
 	FIELD field_51901 LOADING Lnet/minecraft/class_9768;
 	METHOD method_60518 get (Lnet/minecraft/class_2806;)Lnet/minecraft/class_9770;

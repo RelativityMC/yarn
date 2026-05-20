@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_1021 net/minecraft/server/command/UnpublishCommand
+	METHOD method_1_6197 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD method_1_6199 register (Lcom/mojang/brigadier/CommandDispatcher;)V
+		ARG 0 dispatcher
+	METHOD method_1_6200 execute (Lnet/minecraft/class_2168;)I
+		ARG 0 source

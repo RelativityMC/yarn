@@ -1,0 +1,87 @@
+CLASS net/minecraft/class_1_1013 com/mojang/blaze3d/buffers/GpuBufferAllocator
+	METHOD method_1_6149 allocateByteBuffer (JJ)Ljava/nio/ByteBuffer;
+		ARG 1 size
+		ARG 3 alignment
+	METHOD method_1_6150 allocateByteBuffer (JJJJ)Ljava/nio/ByteBuffer;
+		ARG 1 preferredSize
+		ARG 3 alignment
+		ARG 5 minimumSize
+		ARG 7 sizeAlignment
+	METHOD method_1_6151 allocateDeviceBuffer (JJI)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+		ARG 1 size
+		ARG 3 alignment
+		ARG 5 usage
+	METHOD method_1_6152 allocateDeviceBuffer (JJIJJ)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+		ARG 1 preferredSize
+		ARG 3 alignment
+		ARG 5 usage
+		ARG 6 minimumSize
+		ARG 8 sizeAlignment
+	METHOD method_1_6153 allocateMappedBuffer (JJI)Lcom/mojang/blaze3d/buffers/GpuBufferSlice$class_1_892;
+		ARG 1 size
+		ARG 3 alignment
+		ARG 5 usage
+	METHOD method_1_6154 allocateMappedBuffer (JJIJJ)Lcom/mojang/blaze3d/buffers/GpuBufferSlice$class_1_892;
+		ARG 1 preferredSize
+		ARG 3 alignment
+		ARG 5 usage
+		ARG 6 minimumSize
+		ARG 8 sizeAlignment
+	METHOD method_1_6155 allocateHostBuffer (JJI)Lcom/mojang/blaze3d/buffers/GpuBufferSlice$class_1_892;
+		ARG 1 size
+		ARG 3 alignment
+		ARG 5 usage
+	METHOD method_1_6156 allocateHostBuffer (JJIJJ)Lcom/mojang/blaze3d/buffers/GpuBufferSlice$class_1_892;
+		ARG 1 preferredSize
+		ARG 3 alignment
+		ARG 5 usage
+		ARG 6 minimumSize
+		ARG 8 sizeAlignment
+	METHOD method_1_6157 allocateMappedBuffers (Ljava/util/List;JI)Ljava/util/List;
+		ARG 1 contents
+		ARG 2 alignment
+		ARG 4 usage
+	METHOD method_1_6158 allocateHostBuffers (Ljava/util/List;JI)Ljava/util/List;
+		ARG 1 contents
+		ARG 2 alignment
+		ARG 4 usage
+	METHOD method_1_6159 allocateMappedBuffer (Ljava/nio/ByteBuffer;JI)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+		ARG 1 contents
+		ARG 2 alignment
+		ARG 4 usage
+	METHOD method_1_6160 allocateMappedBuffer (Ljava/nio/ByteBuffer;JIJJ)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+		ARG 1 contents
+		ARG 2 alignment
+		ARG 4 usage
+		ARG 5 minimumSize
+		ARG 7 sizeAlignment
+	METHOD method_1_6161 allocateMappedBuffer (Ljava/util/List;JI)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+		ARG 1 contents
+		ARG 2 alignment
+		ARG 4 usage
+	METHOD method_1_6162 allocateMappedBuffer (Ljava/util/List;JIJJ)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+		ARG 1 contents
+		ARG 2 alignment
+		ARG 4 usage
+		ARG 5 minimumSize
+		ARG 7 sizeAlignment
+	METHOD method_1_6163 allocateHostBuffer (Ljava/nio/ByteBuffer;JI)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+		ARG 1 contents
+		ARG 2 alignment
+		ARG 4 usage
+	METHOD method_1_6164 allocateHostBuffer (Ljava/nio/ByteBuffer;JIJJ)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+		ARG 1 contents
+		ARG 2 alignment
+		ARG 4 usage
+		ARG 5 minimumSize
+		ARG 7 sizeAlignment
+	METHOD method_1_6165 allocateHostBuffer (Ljava/util/List;JI)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+		ARG 1 contents
+		ARG 2 alignment
+		ARG 4 usage
+	METHOD method_1_6166 allocateHostBuffer (Ljava/util/List;JIJJ)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+		ARG 1 contents
+		ARG 2 alignment
+		ARG 4 usage
+		ARG 5 minimumSize
+		ARG 7 sizeAlignment

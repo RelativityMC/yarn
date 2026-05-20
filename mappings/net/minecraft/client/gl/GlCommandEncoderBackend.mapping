@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_10860 net/minecraft/client/gl/GlCommandEncoderBackend
 	FIELD field_1_6298 vertexBuffer Lnet/minecraft/class_10869$class_10872;
 	FIELD field_1_6299 colorAttachmentTextures Ljava/util/List;
+	FIELD field_1_6939 gpuBufferAllocator Lnet/minecraft/class_1_1014;
 	FIELD field_57843 LOGGER Lorg/slf4j/Logger;
 	FIELD field_57844 backend Lnet/minecraft/class_10865;
 	FIELD field_57845 temporaryFb1 I
@@ -20,6 +21,13 @@ CLASS net/minecraft/class_10860 net/minecraft/client/gl/GlCommandEncoderBackend
 	METHOD method_1_5503 assertUsable (Lnet/minecraft/class_10866;Lnet/minecraft/class_5595;)V
 		ARG 1 renderPass
 		ARG 2 indexType
+	METHOD method_1_6148 multiDraw (Lnet/minecraft/class_10866;Lnet/minecraft/class_5595;Lorg/lwjgl/PointerBuffer;Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;I)V
+		ARG 1 pass
+		ARG 2 indexType
+		ARG 3 indices
+		ARG 4 count
+		ARG 5 first
+		ARG 6 drawCount
 	METHOD method_68351 setupRenderPass (Lnet/minecraft/class_10866;Ljava/util/Collection;)Z
 		ARG 1 pass
 		ARG 2 validationSkippedUniforms

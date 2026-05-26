@@ -205,11 +205,8 @@ CLASS net/minecraft/server/MinecraftServer
 	METHOD method_3760 getPlayerManager ()Lnet/minecraft/class_3324;
 	METHOD method_3761 getForcedGameMode ()Lnet/minecraft/class_1934;
 		COMMENT Returns the game mode a player should be set to when connecting to the server, or {@code null} if none is set.
-	METHOD method_3763 openToLan (Lnet/minecraft/server/MinecraftServer$class_1_908;Lnet/minecraft/class_1934;ZI)Z
-		COMMENT Opens a server for LAN connections.
-		COMMENT This is only supported on an integrated server, a dedicated server will always fail to open to LAN.
-		COMMENT
-		COMMENT @return whether the server was successfully opened to LAN
+	METHOD method_3763 publish (Lnet/minecraft/server/MinecraftServer$class_1_908;Lnet/minecraft/class_1934;ZI)Z
+		ARG 1 shareSetting
 		ARG 2 gameMode
 			COMMENT the game mode connecting players will have set by default
 		ARG 3 cheatsAllowed

@@ -7,7 +7,9 @@ CLASS net/minecraft/class_1132 net/minecraft/server/integrated/IntegratedServer
 	FIELD field_5522 lanPort I
 	FIELD field_5524 paused Z
 	FIELD field_28075 forcedGameMode Lnet/minecraft/class_1934;
+	FIELD field_34964 MIN_VIEW_DISTANCE I
 	FIELD field_34965 simulationDistance I
+	FIELD field_62489 MAX_PLAYER_COUNT I
 	FIELD field_63623 gizmoEntries Ljava/util/List;
 	FIELD field_63624 gizmoCollector Lnet/minecraft/class_12185;
 	METHOD <init> (Ljava/lang/Thread;Lnet/minecraft/class_310;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_3283;Lnet/minecraft/class_6904;Ljava/util/Optional;Lnet/minecraft/class_7497;Lnet/minecraft/class_11545;)V
@@ -22,12 +24,12 @@ CLASS net/minecraft/class_1132 net/minecraft/server/integrated/IntegratedServer
 	METHOD method_1_5525 setGameMode (Lnet/minecraft/class_1934;)V
 		ARG 1 gameMode
 	METHOD method_1_5526 getShareSetting ()Lnet/minecraft/server/MinecraftServer$class_1_908;
-	METHOD method_1_5527 isOnline ()Z
-	METHOD method_1_5528 notifyWorldShareUpdateListeners ()V
 	METHOD method_1_5529 setAllowCommands (Z)V
 		ARG 1 allowCommands
 	METHOD method_1_5530 setShareSetting (Lnet/minecraft/server/MinecraftServer$class_1_908;)V
 		ARG 1 shareSetting
+	METHOD method_1_6190 shutdownLanPinger ()V
+	METHOD method_1_6191 doUnpublish ()V
 	METHOD method_4817 setLocalPlayerUuid (Ljava/util/UUID;)V
 		ARG 1 localPlayerUuid
 	METHOD method_36439 incrementTotalWorldTimeStat ()V

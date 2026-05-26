@@ -25,7 +25,7 @@ CLASS net/minecraft/class_6628 net/minecraft/client/session/telemetry/TelemetryM
 		ARG 2 session
 		ARG 3 eventType
 		ARG 4 adder
-	METHOD method_47706 createWorldSession (ZLjava/time/Duration;Ljava/lang/String;)Lnet/minecraft/class_7975;
+	METHOD method_47706 createWorldSession (ZLjava/time/Duration;Ljava/lang/String;Ljava/util/UUID;)Lnet/minecraft/class_7975;
 		ARG 1 newWorld
 		ARG 2 worldLoadTime
 		ARG 3 minigameName

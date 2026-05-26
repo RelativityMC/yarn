@@ -1,88 +1,24 @@
 CLASS net/minecraft/class_1_929 net/minecraft/client/friend/gui/widget/FriendWidget
-	FIELD field_1_6540 MULTIPLAYER_INVITE_ACCEPT_TEXT Lnet/minecraft/class_2561;
-	FIELD field_1_6541 JOIN_REQUEST_ACCEPT_TEXT Lnet/minecraft/class_2561;
-	FIELD field_1_6542 FRIENDS_ACCEPT_BUTTON_TEXTURES Lnet/minecraft/class_8666;
 	FIELD field_1_6543 CONFIRM_TITLE_TEXT Lnet/minecraft/class_2561;
 	FIELD field_1_6544 CONFIRM_UNFRIEND_TEXT Lnet/minecraft/class_2561;
-	FIELD field_1_6545 MULTIPLAYER_INVITE_TEXT Lnet/minecraft/class_2561;
-	FIELD field_1_6546 FRIENDS_MULTIPLAYER_INVITE_BUTTON_TEXTURES Lnet/minecraft/class_8666;
-	FIELD field_1_6547 JOIN_REQUEST_TEXT Lnet/minecraft/class_2561;
-	FIELD field_1_6548 FRIENDS_MULTIPLAYER_JOIN_REQUEST_BUTTON_TEXTURES Lnet/minecraft/class_8666;
-	FIELD field_1_6549 MULTIPLAYER_INVITE_REJECT_TEXT Lnet/minecraft/class_2561;
-	FIELD field_1_6550 JOIN_REQUEST_REJECT_TEXT Lnet/minecraft/class_2561;
-	FIELD field_1_6551 FRIENDS_REJECT_BUTTON_TEXTURES Lnet/minecraft/class_8666;
 	FIELD field_1_6552 FRIENDS_REMOVE_BUTTON_TEXTURES Lnet/minecraft/class_8666;
 	FIELD field_1_6553 UNFRIEND_TEXT Lnet/minecraft/class_2561;
-	FIELD field_1_6554 button1 Lnet/minecraft/class_8662;
 	FIELD field_1_6555 presenceStatus Lcom/mojang/authlib/yggdrasil/response/PresenceStatusDto;
 	FIELD field_1_6556 unfriendButton Lnet/minecraft/class_8662;
-	FIELD field_1_6557 button2 Lnet/minecraft/class_8662;
 	FIELD field_1_6558 presenceStatusText Lnet/minecraft/class_7842;
-	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_1_986;Lnet/minecraft/class_5520$class_1_980;Lnet/minecraft/class_8685;Lcom/mojang/authlib/yggdrasil/response/PresenceStatusDto;ZLjava/lang/Runnable;)V
+	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_1_986;Lnet/minecraft/class_5520$class_1_980;Lcom/mojang/authlib/yggdrasil/response/PresenceStatusDto;ZLjava/lang/Runnable;)V
 		ARG 1 client
 		ARG 2 friendsScreen
 		ARG 3 player
-		ARG 4 skin
-		ARG 5 presenceStatus
-		ARG 6 unfriending
-		ARG 7 onUnfriend
-	METHOD method_1_5651 acceptInvite (Ljava/util/UUID;)V
-		ARG 1 pmid
-	METHOD method_1_5652 acceptJoinRequest (Ljava/util/UUID;)V
-		ARG 1 uuid
+		ARG 4 presenceStatus
+		ARG 5 unfriending
+		ARG 6 onUnfriend
 	METHOD method_1_5653 promptUnfriendConfirmation (Ljava/lang/Runnable;)V
 		ARG 1 onUnfriend
-	METHOD method_1_5654 rejectInvite (Ljava/util/UUID;)V
-		ARG 1 uuid
-	METHOD method_1_5655 setPresenceStatus (Lnet/minecraft/class_310;Lnet/minecraft/class_5520$class_1_980;Lcom/mojang/authlib/yggdrasil/response/PresenceStatusDto;)V
-		ARG 1 client
-		ARG 2 player
-		ARG 3 presenceStatus
-	METHOD method_1_5656 inviteFriend (Lnet/minecraft/class_310;Ljava/util/UUID;)V
-		ARG 1 client
-		ARG 2 friendId
-	METHOD method_1_5657 (Ljava/lang/Void;Ljava/lang/Throwable;)V
-		ARG 2 ex
 	METHOD method_1_5658 (Ljava/lang/Runnable;Lnet/minecraft/class_8816;)V
 		ARG 2 button
 	METHOD method_1_5659 (Lnet/minecraft/class_8816;)V
 		ARG 1 button
-	METHOD method_1_5661 (Ljava/lang/Throwable;)Ljava/lang/Void;
-		ARG 0 ex
-	METHOD method_1_5662 (Ljava/util/UUID;Lnet/minecraft/class_4185;)V
-		ARG 2 button
-	METHOD method_1_5663 (Ljava/util/UUID;Lnet/minecraft/class_4185;)V
-		ARG 2 button
-	METHOD method_1_5664 (Lnet/minecraft/class_4185;)V
-		ARG 0 button
-	METHOD method_1_5665 (Ljava/util/UUID;Lnet/minecraft/class_4185;)V
-		ARG 2 button
-	METHOD method_1_5666 (Ljava/util/UUID;Lnet/minecraft/class_4185;)V
-		ARG 2 button
-	METHOD method_1_5667 (Lnet/minecraft/class_5520$class_1_980;Ljava/util/Map$Entry;)Z
-		ARG 1 playerEntry
-	METHOD method_1_5668 (Lnet/minecraft/class_310;Lnet/minecraft/class_5520$class_1_980;Lnet/minecraft/class_4185;)V
-		ARG 3 button
-	METHOD method_1_5669 (Ljava/util/UUID;Lcom/mojang/authlib/yggdrasil/response/PresenceStatusDto;Lnet/minecraft/class_4185;)V
-		ARG 3 button
-	METHOD method_1_5670 (Ljava/util/UUID;Lcom/mojang/authlib/yggdrasil/response/PresenceStatusDto;Lnet/minecraft/class_4185;)V
-		ARG 3 button
-	METHOD method_1_5671 (Lnet/minecraft/class_310;Lnet/minecraft/class_5520$class_1_980;Lnet/minecraft/class_4185;)V
-		ARG 3 button
 	METHOD method_1_5672 (Ljava/lang/Runnable;Lnet/minecraft/class_4185;)V
 		ARG 2 button
-	METHOD method_1_5673 (Ljava/lang/Void;Ljava/lang/Throwable;)V
-		ARG 2 ex
-	METHOD method_1_5674 (Ljava/util/UUID;Lnet/minecraft/class_5520$class_1_980;)Z
-		ARG 1 friend
-	METHOD method_1_5675 (Lorg/apache/commons/lang3/function/TriConsumer;Lnet/minecraft/class_5520$class_1_980;)V
-		ARG 2 friend
 	METHOD method_1_5676 getSortOrder ()I
-	METHOD method_1_5677 rejectJoinRequest (Ljava/util/UUID;)V
-		ARG 1 uuid
-	METHOD method_1_5678 joinRequest (Ljava/util/UUID;Ljava/util/UUID;)V
-		ARG 1 pmid
-		ARG 2 profileId
-	METHOD method_1_5679 showToast (Lorg/apache/commons/lang3/function/TriConsumer;Ljava/util/UUID;)V
-		ARG 1 toastCallback
-		ARG 2 profileId

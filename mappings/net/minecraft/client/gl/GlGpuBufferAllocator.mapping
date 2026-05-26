@@ -1,0 +1,60 @@
+CLASS net/minecraft/class_1_1014 net/minecraft/client/gl/GlGpuBufferAllocator
+	FIELD field_1_6941 BLOCK_SIZE J
+	FIELD field_1_6942 MAX_HOST_MEMORY_ALIGNMENT J
+	FIELD field_1_6943 MAX_GPU_BUFFER_ALIGNMENT J
+	FIELD field_1_6944 gpuBufferManager Lnet/minecraft/class_11266;
+	FIELD field_1_6945 memoryArena Lnet/minecraft/class_1_1022;
+	FIELD field_1_6946 debugLabelManager Lnet/minecraft/class_10861;
+	FIELD field_1_6947 bufferManager Lnet/minecraft/class_10874;
+	METHOD <init> (Lnet/minecraft/class_10865;Lnet/minecraft/class_10860;)V
+		ARG 1 device
+	METHOD method_1_6167 start ()V
+	CLASS class_1_1015 Fallback
+		FIELD field_1_6949 arena Lnet/minecraft/class_1_1022;
+		METHOD method_1_6169 allocateTransientBuffer (J)Lnet/minecraft/class_1_1014$class_1_1015$class_1_1016;
+			ARG 1 size
+		METHOD method_1_6170 destroyTransientBuffer (Lnet/minecraft/class_1_1014$class_1_1015$class_1_1016;)V
+			ARG 1 buffer
+		METHOD method_1_6173 (Ljava/util/List;I)Ljava/lang/Integer;
+			ARG 1 i
+		CLASS class_1_1016 Buffer
+	CLASS class_1_1017 PersistentMapped
+		FIELD field_1_6952 deviceAllocator Lnet/minecraft/class_1_1022;
+		FIELD field_1_6953 sharedAllocator Lnet/minecraft/class_1_1022;
+		FIELD field_1_6954 fences [Lnet/minecraft/class_1_1014$class_1_1017$class_1_1019;
+		FIELD field_1_6955 hostAllocator Lnet/minecraft/class_1_1022;
+		METHOD method_1_6174 allocateBuffer (JZZ)Lnet/minecraft/class_1_1014$class_1_1017$class_1_1018;
+			ARG 1 size
+			ARG 3 hostOnly
+			ARG 4 coherent
+		METHOD method_1_6175 destroyBuffer (Lnet/minecraft/class_1_1014$class_1_1017$class_1_1018;)V
+			ARG 1 buffer
+		METHOD method_1_6179 (Ljava/util/List;I)Ljava/lang/Integer;
+			ARG 1 index
+		METHOD method_1_6180 (J)Lnet/minecraft/class_1_1014$class_1_1017$class_1_1018;
+			ARG 1 size
+		METHOD method_1_6181 (J)Lnet/minecraft/class_1_1014$class_1_1017$class_1_1018;
+			ARG 1 size
+		METHOD method_1_6182 (J)Lnet/minecraft/class_1_1014$class_1_1017$class_1_1018;
+			ARG 1 size
+		METHOD method_1_6183 allocateMappedBuffers (Ljava/util/List;JIZ)Ljava/util/List;
+			ARG 1 contents
+			ARG 2 alignment
+			ARG 4 usage
+			ARG 5 hostOnly
+		METHOD method_1_6184 allocateMappedBuffer (Ljava/util/List;JIJJZ)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+			ARG 1 contents
+			ARG 2 alignment
+			ARG 4 usage
+			ARG 5 minimumSize
+			ARG 7 sizeAlignment
+			ARG 9 hostOnly
+		CLASS class_1_1018 Buffer
+		CLASS class_1_1019 Fence
+	CLASS class_1_1020 TransientBuffer
+		FIELD field_1_6956 commandBufferIndex J
+		FIELD field_1_6957 closed Z
+		METHOD <init> (Lnet/minecraft/class_1_1014;IIJ)V
+			ARG 2 glId
+			ARG 3 usage
+			ARG 4 size

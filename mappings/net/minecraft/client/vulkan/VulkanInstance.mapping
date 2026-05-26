@@ -11,7 +11,6 @@ CLASS net/minecraft/class_1_691 net/minecraft/client/vulkan/VulkanInstance
 		ARG 1 logLevel
 		ARG 2 useLabels
 		ARG 3 enableValidationLayer
-	METHOD method_1_4167 destroy ()V
 	METHOD method_1_4168 getDebugBackend ()Lnet/minecraft/class_1_671;
 	METHOD method_1_4169 getEnabledExtensions ()Ljava/util/Set;
 	METHOD method_1_4170 getInstanceExtensionProperties ()Ljava/util/Set;

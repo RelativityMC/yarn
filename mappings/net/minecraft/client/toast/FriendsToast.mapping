@@ -9,60 +9,31 @@ CLASS net/minecraft/class_1_945 net/minecraft/client/toast/FriendsToast
 	FIELD field_1_6598 TEXT_LEFT_WITH_SKIN I
 	FIELD field_1_6599 duration J
 	FIELD field_1_6600 lines Ljava/util/List;
-	FIELD field_1_6601 skin Lnet/minecraft/class_8685;
 	FIELD field_1_6602 visibility Lnet/minecraft/class_368$class_369;
-	METHOD <init> (Lnet/minecraft/class_327;Lnet/minecraft/class_8685;Lnet/minecraft/class_2561;)V
+	METHOD <init> (Lnet/minecraft/class_327;Lnet/minecraft/class_9296;Lnet/minecraft/class_2561;)V
 		ARG 1 textRenderer
-		ARG 2 skin
 		ARG 3 text
-	METHOD <init> (Lnet/minecraft/class_327;Lnet/minecraft/class_8685;Lnet/minecraft/class_2561;J)V
+	METHOD <init> (Lnet/minecraft/class_327;Lnet/minecraft/class_9296;Lnet/minecraft/class_2561;J)V
 		ARG 1 textRenderer
-		ARG 2 skin
 		ARG 3 text
 		ARG 4 duration
-	METHOD method_1_5708 addToast (Lnet/minecraft/class_374;Lnet/minecraft/class_327;Lnet/minecraft/class_8685;Lnet/minecraft/class_2561;)V
+	METHOD method_1_5708 addToast (Lnet/minecraft/class_374;Lnet/minecraft/class_327;Lnet/minecraft/class_9296;Lnet/minecraft/class_2561;)V
 		ARG 0 toastManager
 		ARG 1 textRenderer
-		ARG 2 skin
 		ARG 3 text
 	METHOD method_1_5709 getTextHeight ()I
 	METHOD method_1_5710 hide ()V
-	METHOD method_1_5711 onFriendAdded (Lnet/minecraft/class_310;Ljava/lang/String;Lnet/minecraft/class_8685;)V
+	METHOD method_1_5711 onFriendAdded (Lnet/minecraft/class_310;Ljava/lang/String;Ljava/util/UUID;)V
 		ARG 0 client
 		ARG 1 name
-		ARG 2 skin
-	METHOD method_1_5712 onFriendInvited (Lnet/minecraft/class_310;Ljava/lang/String;Lnet/minecraft/class_8685;)V
+	METHOD method_1_5714 onRequestAccepted (Lnet/minecraft/class_310;Ljava/lang/String;Ljava/util/UUID;)V
 		ARG 0 client
 		ARG 1 name
-		ARG 2 skin
-	METHOD method_1_5713 onJoinRequest (Lnet/minecraft/class_310;Ljava/lang/String;Lnet/minecraft/class_8685;)V
+	METHOD method_1_5715 onRequestReceived (Lnet/minecraft/class_310;Ljava/lang/String;Ljava/util/UUID;)V
 		ARG 0 client
 		ARG 1 name
-		ARG 2 skin
-	METHOD method_1_5714 onRequestAccepted (Lnet/minecraft/class_310;Ljava/lang/String;Lnet/minecraft/class_8685;)V
-		ARG 0 client
-		ARG 1 name
-		ARG 2 skin
-	METHOD method_1_5715 onRequestReceived (Lnet/minecraft/class_310;Ljava/lang/String;Lnet/minecraft/class_8685;)V
-		ARG 0 client
-		ARG 1 name
-		ARG 2 skin
 	METHOD method_1_5716 onRequestSent (Lnet/minecraft/class_310;Ljava/lang/String;)V
 		ARG 0 client
 		ARG 1 name
-	METHOD method_1_5717 onHostInviteExpired (Lnet/minecraft/class_310;Ljava/lang/String;Lnet/minecraft/class_8685;)V
-		ARG 0 client
-		ARG 1 name
-		ARG 2 skin
-	METHOD method_1_5718 onInviteFromFriend (Lnet/minecraft/class_310;Ljava/lang/String;Lnet/minecraft/class_8685;)V
-		ARG 0 client
-		ARG 1 name
-		ARG 2 skin
-	METHOD method_1_5719 onJoinInviteExpired (Lnet/minecraft/class_310;Ljava/lang/String;Lnet/minecraft/class_8685;)V
-		ARG 0 client
-		ARG 1 name
-		ARG 2 skin
-	METHOD method_1_5720 onRequestToJoinFriend (Lnet/minecraft/class_310;Ljava/lang/String;Lnet/minecraft/class_8685;)V
-		ARG 0 client
-		ARG 1 name
-		ARG 2 skin
+	CLASS class_1_1005 FriendStatusChangeNotifier
+		METHOD method_1_6112 run (Lnet/minecraft/class_310;Ljava/lang/String;Ljava/util/UUID;)V

@@ -2,51 +2,17 @@ CLASS net/minecraft/class_1_951 net/minecraft/client/friend/InvitationManager
 	FIELD field_1_6629 CLEAN_UPDATE_INTERVAL Ljava/time/Duration;
 	FIELD field_1_6630 DIRTY_UPDATE_INTERVAL Ljava/time/Duration;
 	FIELD field_1_6631 friendsService Lcom/mojang/authlib/yggdrasil/FriendsService;
-	FIELD field_1_6632 outgoingInvitations Ljava/util/Set;
 	FIELD field_1_6633 presenceStatusUpdatedTime Ljava/time/Instant;
 	FIELD field_1_6634 presenceResponse Lcom/mojang/authlib/yggdrasil/response/PresenceResponse;
-	FIELD field_1_6635 respondedInvitations Ljava/util/Set;
 	FIELD field_1_6636 client Lnet/minecraft/class_310;
-	FIELD field_1_6637 incomingInvitations Ljava/util/Set;
 	FIELD field_1_6638 dirty Z
 	METHOD <init> (Lnet/minecraft/class_310;Lcom/mojang/authlib/yggdrasil/FriendsService;)V
 		ARG 1 client
 		ARG 2 friendsService
-	METHOD method_1_5771 removeInvite (Ljava/util/UUID;)Z
-		ARG 1 pmid
-	METHOD method_1_5772 clear ()V
-	METHOD method_1_5773 cleanRespondedInvitations ()V
-	METHOD method_1_5774 respondToInvite (Ljava/util/UUID;)V
-		ARG 1 pmid
-	METHOD method_1_5775 onHostInviteExpired (Ljava/util/UUID;)V
-		ARG 1 friendId
-	METHOD method_1_5776 getOutgoingInvitations ()Ljava/util/Set;
-	METHOD method_1_5777 getJoinInfoUpdate (Lcom/mojang/authlib/yggdrasil/response/PresenceStatus;)Lcom/mojang/authlib/yggdrasil/request/JoinInfoUpdate;
 	METHOD method_1_5778 getPresenceResponse ()Lcom/mojang/authlib/yggdrasil/response/PresenceResponse;
 	METHOD method_1_5779 getPresenceStatus ()Lcom/mojang/authlib/yggdrasil/response/PresenceStatus;
-	METHOD method_1_5780 pmidToProfileId (Ljava/util/UUID;)Ljava/util/UUID;
-		ARG 1 pmid
-	METHOD method_1_5781 hasRespondedToInvitationFrom (Lcom/mojang/authlib/yggdrasil/response/PresenceStatusDto;)Z
-		ARG 1 presenceStatus
-	METHOD method_1_5782 inviteFriend (Ljava/util/UUID;)V
-		ARG 1 profileId
-	METHOD method_1_5783 hasOutgoingInvitationTo (Ljava/util/UUID;)Z
-		ARG 1 pmid
-	METHOD method_1_5784 (Ljava/util/UUID;)Z
-		ARG 1 pmid
-	METHOD method_1_5785 (Ljava/util/UUID;Lcom/mojang/authlib/yggdrasil/response/PresenceStatusDto;)Z
-		ARG 1 presenceStatus
-	METHOD method_1_5786 (Ljava/util/UUID;Lnet/minecraft/class_5520$class_1_980;)Z
-		ARG 1 friend
-	METHOD method_1_5787 (Lnet/minecraft/class_5520$class_1_980;)V
-		ARG 1 friend
-	METHOD method_1_5791 (Lcom/mojang/authlib/yggdrasil/response/PresenceStatusDto;)V
-		ARG 1 presenceStatus
-	METHOD method_1_5792 (Lcom/mojang/authlib/yggdrasil/response/PresenceStatusDto;Lnet/minecraft/class_5520$class_1_980;)Z
-		ARG 2 friend
-	METHOD method_1_5793 (Lnet/minecraft/class_8685;Lnet/minecraft/class_5520$class_1_980;)V
-		ARG 2 friend
 	METHOD method_1_5794 shouldUpdatePresenceStatus ()Z
 	METHOD method_1_5795 checkPresenceStatus ()V
 	METHOD method_1_5796 markDirty ()V
 	METHOD method_1_5797 updatePresenceStatus ()V
+	METHOD method_1_6258 getActualPresenceStatus ()Lcom/mojang/authlib/yggdrasil/response/PresenceStatus;

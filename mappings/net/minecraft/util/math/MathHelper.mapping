@@ -52,6 +52,14 @@ CLASS net/minecraft/class_3532 net/minecraft/util/math/MathHelper
 	FIELD field_46244 Z_AXIS Lorg/joml/Vector3fc;
 	METHOD method_1_3881 getBearingFromCardinal (F)F
 		ARG 0 degrees
+	METHOD method_1_6134 isPowerOfTwo (J)Z
+		ARG 0 value
+	METHOD method_1_6135 ceilDiv (JJ)J
+		ARG 0 a
+		ARG 2 b
+	METHOD method_1_6136 roundUpToMultiple (JJ)J
+		ARG 0 a
+		ARG 2 b
 	METHOD method_15338 wrapDegrees (D)D
 		COMMENT Wraps an angle in degrees to the interval {@code [-180, 180)}.
 		ARG 0 degrees

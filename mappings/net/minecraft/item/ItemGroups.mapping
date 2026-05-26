@@ -146,9 +146,9 @@ CLASS net/minecraft/class_7706 net/minecraft/item/ItemGroups
 	METHOD method_51330 (Lnet/minecraft/class_1761$class_8128;Lnet/minecraft/class_1761$class_7704;)V
 		ARG 0 displayContext
 		ARG 1 entries
-	METHOD method_51332 (Lnet/minecraft/class_1761$class_8128;Lnet/minecraft/class_1761$class_7704;)V
-		ARG 0 displayContext
-		ARG 1 entries
+	METHOD method_51332 (Ljava/util/List;Lnet/minecraft/class_1761$class_8128;Lnet/minecraft/class_1761$class_7704;)V
+		ARG 1 displayContext
+		ARG 2 entries
 	METHOD method_51334 (Lnet/minecraft/class_1761$class_8128;Lnet/minecraft/class_1761$class_7704;)V
 		ARG 0 displayContext
 		ARG 1 entries

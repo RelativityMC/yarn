@@ -2,11 +2,10 @@ CLASS net/minecraft/class_1_947 net/minecraft/client/friend/gui/widget/OutgoingF
 	FIELD field_1_6610 CANCEL_REQUEST Lnet/minecraft/class_2561;
 	FIELD field_1_6611 CANCEL_BUTTON_TEXTURES Lnet/minecraft/class_8666;
 	FIELD field_1_6612 cancelRequestButton Lnet/minecraft/class_8662;
-	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_1_986;Lnet/minecraft/class_5520$class_1_980;Lnet/minecraft/class_8685;Ljava/lang/Runnable;)V
+	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_1_986;Lnet/minecraft/class_5520$class_1_980;Ljava/lang/Runnable;)V
 		ARG 1 client
 		ARG 2 friendsScreen
 		ARG 3 player
-		ARG 4 skin
-		ARG 5 onCancelRequest
+		ARG 4 onCancelRequest
 	METHOD method_1_5723 (Lnet/minecraft/class_1_986;Ljava/lang/Runnable;Lnet/minecraft/class_4185;)V
 		ARG 2 button

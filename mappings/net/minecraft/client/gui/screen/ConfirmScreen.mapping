@@ -17,6 +17,7 @@ CLASS net/minecraft/class_410 net/minecraft/client/gui/screen/ConfirmScreen
 		ARG 3 message
 		ARG 4 yesText
 		ARG 5 noText
+	METHOD method_1_6196 createMessageWidget ()Lnet/minecraft/class_8021;
 	METHOD method_2125 disableButtons (I)V
 		ARG 1 ticks
 	METHOD method_37051 addButtons (Lnet/minecraft/class_8667;)V

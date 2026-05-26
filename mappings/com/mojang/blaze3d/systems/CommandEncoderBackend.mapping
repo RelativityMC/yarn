@@ -79,4 +79,5 @@ CLASS net/minecraft/class_1_154 com/mojang/blaze3d/systems/CommandEncoderBackend
 	METHOD method_1_4411 writeTimestamp (Lnet/minecraft/class_1_685;I)V
 		ARG 1 timestampQueryPool
 		ARG 2 index
+	METHOD method_1_6231 getGpuBufferAllocator ()Lnet/minecraft/class_1_1013;
 	METHOD method_68346 closePass ()V

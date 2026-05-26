@@ -64,10 +64,6 @@ CLASS net/minecraft/class_2446 net/minecraft/data/recipe/RecipeGenerator
 	METHOD method_1_1272 (Lnet/minecraft/class_5794;Lnet/minecraft/class_2248;Lnet/minecraft/class_5794$class_5796;Lnet/minecraft/class_2248;)V
 		ARG 3 variant
 		ARG 4 block
-	METHOD method_1_1273 (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)V
-		ARG 0 generator
-		ARG 1 output
-		ARG 2 input
 	METHOD method_1_1274 (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)V
 		ARG 0 generator
 		ARG 1 output
@@ -77,10 +73,6 @@ CLASS net/minecraft/class_2446 net/minecraft/data/recipe/RecipeGenerator
 		ARG 1 output
 		ARG 2 input
 	METHOD method_1_1277 (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)V
-		ARG 0 generator
-		ARG 1 output
-		ARG 2 input
-	METHOD method_1_1279 (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)V
 		ARG 0 generator
 		ARG 1 output
 		ARG 2 input
@@ -222,8 +214,6 @@ CLASS net/minecraft/class_2446 net/minecraft/data/recipe/RecipeGenerator
 	METHOD method_33535 generateFamily (Lnet/minecraft/class_5794;Lnet/minecraft/class_7699;)V
 		ARG 1 family
 		ARG 2 enabledFeatures
-	METHOD method_33536 (Lnet/minecraft/class_5797;Lnet/minecraft/class_5794$class_5796;Ljava/lang/String;)V
-		ARG 2 group
 	METHOD method_33537 createCondensingRecipe (Lnet/minecraft/class_7800;Lnet/minecraft/class_1935;Lnet/minecraft/class_1856;)Lnet/minecraft/class_5797;
 		ARG 1 category
 		ARG 2 output

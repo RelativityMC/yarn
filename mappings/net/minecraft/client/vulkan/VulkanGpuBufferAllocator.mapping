@@ -1,0 +1,59 @@
+CLASS net/minecraft/class_1_1025 net/minecraft/client/vulkan/VulkanGpuBufferAllocator
+	FIELD field_1_6976 BLOCK_SIZE J
+	FIELD field_1_6978 MAX_HOST_MEMORY_ALIGNMENT J
+	FIELD field_1_6979 MAX_GPU_BUFFER_ALIGNMENT J
+	FIELD field_1_6980 issueMemoryBarrier Z
+	FIELD field_1_6981 currentCommandBuffer Lorg/lwjgl/vulkan/VkCommandBuffer;
+	FIELD field_1_6982 memoryArena Lnet/minecraft/class_1_1022;
+	FIELD field_1_6983 device Lnet/minecraft/class_1_679;
+	FIELD field_1_6984 commandEncoder Lnet/minecraft/class_1_715;
+	FIELD field_1_6985 devicePreferredTransientBufferArena Lnet/minecraft/class_1_1022;
+	FIELD field_1_6986 hostDeviceBufferPairArena Lnet/minecraft/class_1_1022;
+	FIELD field_1_6987 hostPreferredTransientBufferArena Lnet/minecraft/class_1_1022;
+	FIELD field_1_6988 commandBufferIndex J
+	FIELD field_1_6989 forceHostVisibilityAndCoherence Z
+	METHOD <init> (Lnet/minecraft/class_1_679;Lnet/minecraft/class_1_715;)V
+		ARG 1 device
+		ARG 2 commandEncoder
+	METHOD method_1_6213 allocateHostDeviceBufferPair (J)Lit/unimi/dsi/fastutil/Pair;
+		ARG 1 size
+	METHOD method_1_6214 allocateTransientMemoryBuffer (JZ)Lnet/minecraft/class_1_1025$class_1_1027;
+		ARG 1 size
+		ARG 3 preferHost
+	METHOD method_1_6215 start ()V
+	METHOD method_1_6216 finish ()V
+	METHOD method_1_6217 deallocateHostDeviceBufferPair (Lit/unimi/dsi/fastutil/Pair;)V
+		ARG 1 pair
+	METHOD method_1_6218 destroyNow (Lnet/minecraft/class_1_1025$class_1_1027;)V
+		ARG 1 buffer
+	METHOD method_1_6221 (Ljava/util/List;I)Ljava/lang/Integer;
+		ARG 1 i
+	METHOD method_1_6222 (J)Lnet/minecraft/class_1_1025$class_1_1027;
+		ARG 1 size
+	METHOD method_1_6223 (J)Lnet/minecraft/class_1_1025$class_1_1027;
+		ARG 1 size
+	METHOD method_1_6225 allocateMappedBuffers (Ljava/util/List;JIZ)Ljava/util/List;
+		ARG 1 contents
+		ARG 2 alignment
+		ARG 4 usage
+		ARG 5 hostOnly
+	METHOD method_1_6226 destroyLater (Lnet/minecraft/class_1_1025$class_1_1027;)V
+		ARG 1 buffer
+	METHOD method_1_6227 copyHostToDeviceBuffer (Lit/unimi/dsi/fastutil/Pair;)V
+		ARG 1 pair
+	METHOD method_1_6228 allocateMappedBuffer (Ljava/util/List;JIJJZ)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+		ARG 1 contents
+		ARG 2 alignment
+		ARG 4 usage
+		ARG 5 minimumSize
+		ARG 7 sizeAlignment
+		ARG 9 hostOnly
+	CLASS class_1_1026 TransientBuffer
+		FIELD field_1_6990 commandBufferIndex J
+		FIELD field_1_6991 closed Z
+		METHOD <init> (Lnet/minecraft/class_1_1025;JIIJ)V
+			ARG 2 bufferPtr
+			ARG 4 usage
+			ARG 5 size
+			ARG 6 commandBufferIndex
+	CLASS class_1_1027 MappedVkBuffer

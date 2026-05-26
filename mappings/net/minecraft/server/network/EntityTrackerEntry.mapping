@@ -15,6 +15,11 @@ CLASS net/minecraft/class_3231 net/minecraft/server/network/EntityTrackerEntry
 	FIELD field_18278 velocity Lnet/minecraft/class_243;
 	FIELD field_39019 trackedPos Lnet/minecraft/class_7422;
 	FIELD field_41697 changedEntries Ljava/util/List;
+	FIELD field_44987 POSITION_SYNC_PACKET_INTERVAL I
+		COMMENT Tick interval for syncing positions, if no other conditions are met.
+	FIELD field_44988 MIN_SQUARED_MOVE_DISTANCE_FOR_SYNC D
+		COMMENT Minimum squared distance the entity must have moved from its last synced
+		COMMENT position in order to sync positions again, if no other conditions are met.
 	FIELD field_62840 packetSender Lnet/minecraft/class_3231$class_12004;
 	METHOD <init> (Lnet/minecraft/class_3218;Lnet/minecraft/class_1297;IZLnet/minecraft/class_3231$class_12004;)V
 		ARG 1 world

@@ -25,10 +25,7 @@ CLASS net/minecraft/class_1_1004 net/minecraft/client/friend/FriendListManager
 	METHOD method_1_6093 updateFromFriendData (Lcom/mojang/authlib/yggdrasil/response/FriendData;Lnet/minecraft/class_1_1004$class_1_1006;)Z
 		ARG 1 friendData
 		ARG 2 status
-	METHOD method_1_6094 onFriendStatusChanged (Ljava/util/UUID;Ljava/lang/String;Lnet/minecraft/class_1_1004$class_1_1005;)V
-		ARG 1 uuid
-		ARG 2 name
-		ARG 3 callback
+	METHOD method_1_6094 onFriendStatusChanged (Ljava/util/UUID;Ljava/lang/String;Lnet/minecraft/class_1_945$class_1_1005;)V
 	METHOD method_1_6095 updateAsync ()Ljava/util/concurrent/CompletableFuture;
 	METHOD method_1_6096 getFriendData ()Lcom/mojang/authlib/yggdrasil/response/FriendData;
 	METHOD method_1_6097 getStatus ()Lnet/minecraft/class_1_1004$class_1_1006;
@@ -45,9 +42,4 @@ CLASS net/minecraft/class_1_1004 net/minecraft/client/friend/FriendListManager
 	METHOD method_1_6109 update ()V
 	METHOD method_1_6110 onFriendsEnabled ()V
 	METHOD method_1_6111 onFriendsDisabled ()V
-	CLASS class_1_1005 FriendStatusChangeNotifier
-		METHOD method_1_6112 run (Lnet/minecraft/class_310;Ljava/lang/String;Lnet/minecraft/class_8685;)V
-			ARG 1 client
-			ARG 2 name
-			ARG 3 skin
 	CLASS class_1_1006 Status

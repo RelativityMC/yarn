@@ -30,8 +30,6 @@ CLASS net/minecraft/class_436 net/minecraft/client/gui/screen/OpenToLanScreen
 	METHOD method_1_5869 updateShareSetting (Lnet/minecraft/class_1132;)V
 		ARG 1 integratedServer
 	METHOD method_1_5870 areSettingsChanged ()Z
-	METHOD method_1_5871 (Lnet/minecraft/server/MinecraftServer$class_1_908;)Z
-		ARG 0 setting
 	METHOD method_1_5873 (Lnet/minecraft/class_5676;Lnet/minecraft/server/MinecraftServer$class_1_908;)V
 		ARG 1 button
 		ARG 2 value

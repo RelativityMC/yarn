@@ -37,10 +37,6 @@ CLASS net/minecraft/class_5520 net/minecraft/client/friend/SocialInteractionsMan
 	METHOD method_1_5940 hasFriend (Ljava/util/UUID;)Z
 		ARG 1 uuid
 	METHOD method_1_5941 areFriendsEnabled ()Z
-	METHOD method_1_5942 isFriend (Ljava/util/UUID;)Z
-		ARG 1 pmid
-	METHOD method_1_5945 (Ljava/util/UUID;Lnet/minecraft/class_5520$class_1_980;)Z
-		ARG 1 friend
 	METHOD method_1_5946 (Lcom/mojang/authlib/yggdrasil/response/FriendDto;)Lnet/minecraft/class_5520$class_1_980;
 		ARG 0 player
 	METHOD method_1_5950 (Lcom/mojang/authlib/yggdrasil/FriendsService$ResultCode;)Ljava/util/concurrent/CompletionStage;

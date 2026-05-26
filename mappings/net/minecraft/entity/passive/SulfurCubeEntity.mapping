@@ -19,8 +19,6 @@ CLASS net/minecraft/class_1_748 net/minecraft/entity/passive/SulfurCubeEntity
 		ARG 1 stack
 	METHOD method_1_4508 getAbsorbSound ()Lnet/minecraft/class_3414;
 	METHOD method_1_4509 getEjectSound ()Lnet/minecraft/class_3414;
-	METHOD method_1_4510 getHitSound ()Lnet/minecraft/class_3414;
-	METHOD method_1_4511 getPushSound ()Lnet/minecraft/class_3414;
 	METHOD method_1_4512 getContentComponent (Lnet/minecraft/class_1799;)Lnet/minecraft/class_1_745;
 		ARG 0 stack
 	METHOD method_1_4513 containsBlock ()Z

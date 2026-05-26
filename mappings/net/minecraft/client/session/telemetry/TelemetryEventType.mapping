@@ -1,7 +1,6 @@
 CLASS net/minecraft/class_7966 net/minecraft/client/session/telemetry/TelemetryEventType
 	FIELD field_1_5968 GRAPHICS_CAPABILITIES Lnet/minecraft/class_7966;
 	FIELD field_1_6494 LOGGER Lorg/slf4j/Logger;
-	FIELD field_1_6495 P2P_CONNECTION Lnet/minecraft/class_7966;
 	FIELD field_41435 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_41436 WORLD_LOADED Lnet/minecraft/class_7966;
 	FIELD field_41437 PERFORMANCE_METRICS Lnet/minecraft/class_7966;

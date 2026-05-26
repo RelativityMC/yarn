@@ -13,7 +13,6 @@ CLASS net/minecraft/class_1_986 net/minecraft/client/friend/gui/screen/FriendsSc
 	FIELD field_1_6806 parent Lnet/minecraft/class_437;
 	FIELD field_1_6807 tabs Lnet/minecraft/class_8667;
 	FIELD field_1_6809 friendsTab Lnet/minecraft/class_1_926;
-	FIELD field_1_6811 connectingP2P Z
 	FIELD field_1_6813 pendingFriendRemovals Ljava/util/Set;
 	FIELD field_1_6814 pendingFriendRequestsTabButton Lnet/minecraft/class_1_992;
 	FIELD field_1_6815 pendingFriendRequestsTab Lnet/minecraft/class_1_927;
@@ -44,4 +43,3 @@ CLASS net/minecraft/class_1_986 net/minecraft/client/friend/gui/screen/FriendsSc
 	METHOD method_1_6013 setErrorMessage (Lnet/minecraft/class_2561;)V
 		ARG 1 errorMessage
 	METHOD method_1_6014 update ()V
-	METHOD method_1_6015 tryConnectP2P ()Z

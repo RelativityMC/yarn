@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_1_470 net/minecraft/util/math/intprovider/TrapezoidIntProvider
-	FIELD comp_1_345 getMax I
-	FIELD comp_1_346 getMin I
+	FIELD comp_1_348 getMax I
+	FIELD comp_1_349 getMin I
 	FIELD field_1_2473 CODEC Lcom/mojang/serialization/MapCodec;
 	METHOD method_1_2972 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance

@@ -5,7 +5,7 @@ CLASS net/minecraft/class_7975 net/minecraft/client/session/telemetry/WorldSessi
 	FIELD field_41502 worldUnloadedEvent Lnet/minecraft/class_7982;
 	FIELD field_41503 performanceMetricsEvent Lnet/minecraft/class_7977;
 	FIELD field_41504 worldLoadTimesEvent Lnet/minecraft/class_7981;
-	METHOD <init> (Lnet/minecraft/class_7965;ZLjava/time/Duration;Ljava/lang/String;)V
+	METHOD <init> (Lnet/minecraft/class_7965;ZLjava/time/Duration;Ljava/lang/String;Ljava/util/UUID;)V
 		ARG 1 sender
 		ARG 2 newWorld
 		ARG 3 worldLoadTime
@@ -16,8 +16,8 @@ CLASS net/minecraft/class_7975 net/minecraft/client/session/telemetry/WorldSessi
 	METHOD method_47772 setGameMode (Lnet/minecraft/class_1934;Z)V
 		ARG 1 gameMode
 		ARG 2 hardcore
-	METHOD method_47773 (Lnet/minecraft/class_7973$class_7974;)V
-		ARG 1 builder
+	METHOD method_47773 (Ljava/util/UUID;Lnet/minecraft/class_7973$class_7974;)V
+		ARG 2 builder
 	METHOD method_47774 setBrand (Ljava/lang/String;)V
 		ARG 1 brand
 	METHOD method_47775 onLoad ()V

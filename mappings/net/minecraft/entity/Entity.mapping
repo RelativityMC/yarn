@@ -99,10 +99,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	FIELD field_5974 random Lnet/minecraft/class_5819;
 	FIELD field_5975 NAME_VISIBLE Lnet/minecraft/class_2940;
 	FIELD field_5976 horizontalCollision Z
-	FIELD field_5978 CURRENT_ID Ljava/util/concurrent/atomic/AtomicInteger;
-		COMMENT A generator of unique entity {@link #id network IDs}. The generated
-		COMMENT ID for client entities are useless and discarded subsequently through
-		COMMENT {@link #setId(int)} calls.
 	FIELD field_5979 passengerList Lcom/google/common/collect/ImmutableList;
 	FIELD field_5981 uuidString Ljava/lang/String;
 	FIELD field_5982 lastYaw F

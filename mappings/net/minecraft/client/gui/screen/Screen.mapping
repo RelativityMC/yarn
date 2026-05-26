@@ -186,7 +186,6 @@ CLASS net/minecraft/class_437 net/minecraft/client/gui/screen/Screen
 		ARG 0 clickEvent
 		ARG 1 client
 		ARG 2 screenAfterRun
-	METHOD method_72798 allowRotatingPanorama ()Z
 	METHOD method_72802 setElementNarrationStartTime (J)V
 		ARG 1 startTimeMs
 	METHOD method_73150 deferSubtitles ()Z

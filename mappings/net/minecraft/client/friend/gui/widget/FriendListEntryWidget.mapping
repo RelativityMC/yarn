@@ -6,7 +6,7 @@ CLASS net/minecraft/class_1_1008 net/minecraft/client/friend/gui/widget/FriendLi
 	FIELD field_1_6910 playerName Ljava/lang/String;
 	FIELD field_1_6911 friendsScreen Lnet/minecraft/class_1_986;
 	FIELD field_1_6912 renderPlayerNameHigh Z
-	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_1_986;IIIILnet/minecraft/class_5520$class_1_980;Lnet/minecraft/class_8685;)V
+	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_1_986;IIIILnet/minecraft/class_5520$class_1_980;)V
 		ARG 1 client
 		ARG 2 friendsScreen
 		ARG 3 x
@@ -14,8 +14,7 @@ CLASS net/minecraft/class_1_1008 net/minecraft/client/friend/gui/widget/FriendLi
 		ARG 5 width
 		ARG 6 height
 		ARG 7 player
-		ARG 8 skin
-	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_1_986;IIIILnet/minecraft/class_5520$class_1_980;Lnet/minecraft/class_8685;Z)V
+	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_1_986;IIIILnet/minecraft/class_5520$class_1_980;Z)V
 		ARG 1 client
 		ARG 2 friendsScreen
 		ARG 3 x
@@ -23,8 +22,7 @@ CLASS net/minecraft/class_1_1008 net/minecraft/client/friend/gui/widget/FriendLi
 		ARG 5 width
 		ARG 6 height
 		ARG 7 player
-		ARG 8 skin
-		ARG 9 renderPlayerNameHigh
+		ARG 8 renderPlayerNameHigh
 	METHOD method_1_6129 addChild (Lnet/minecraft/class_339;)V
 		ARG 1 widget
 	METHOD method_1_6130 update ()V

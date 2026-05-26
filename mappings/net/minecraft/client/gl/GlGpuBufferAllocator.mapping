@@ -6,11 +6,9 @@ CLASS net/minecraft/class_1_1014 net/minecraft/client/gl/GlGpuBufferAllocator
 	FIELD field_1_6945 memoryArena Lnet/minecraft/class_1_1022;
 	FIELD field_1_6946 debugLabelManager Lnet/minecraft/class_10861;
 	FIELD field_1_6947 bufferManager Lnet/minecraft/class_10874;
-	FIELD field_1_6948 commandBufferIndex J
-	METHOD <init> (Lnet/minecraft/class_10865;)V
+	METHOD <init> (Lnet/minecraft/class_10865;Lnet/minecraft/class_10860;)V
 		ARG 1 device
 	METHOD method_1_6167 start ()V
-	METHOD method_1_6168 getCommandBufferIndex ()J
 	CLASS class_1_1015 Fallback
 		FIELD field_1_6949 arena Lnet/minecraft/class_1_1022;
 		METHOD method_1_6169 allocateTransientBuffer (J)Lnet/minecraft/class_1_1014$class_1_1015$class_1_1016;
@@ -21,7 +19,6 @@ CLASS net/minecraft/class_1_1014 net/minecraft/client/gl/GlGpuBufferAllocator
 			ARG 1 i
 		CLASS class_1_1016 Buffer
 	CLASS class_1_1017 PersistentMapped
-		FIELD field_1_6951 NUM_FENCES I
 		FIELD field_1_6952 deviceAllocator Lnet/minecraft/class_1_1022;
 		FIELD field_1_6953 sharedAllocator Lnet/minecraft/class_1_1022;
 		FIELD field_1_6954 fences [Lnet/minecraft/class_1_1014$class_1_1017$class_1_1019;

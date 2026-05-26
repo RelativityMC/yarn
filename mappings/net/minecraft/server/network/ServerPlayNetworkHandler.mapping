@@ -147,7 +147,7 @@ CLASS net/minecraft/class_3244 net/minecraft/server/network/ServerPlayNetworkHan
 		COMMENT
 		COMMENT @see net.minecraft.util.StringHelper#isValidChar(char)
 		ARG 0 message
-	METHOD method_43669 checkForSpam ()V
+	METHOD method_43669 checkForSpam (Lnet/minecraft/class_10222;)V
 	METHOD method_44155 handleDecoratedMessage (Lnet/minecraft/class_7471;)V
 		ARG 1 message
 	METHOD method_44337 validateMessage (Ljava/lang/String;ZLjava/lang/Runnable;)V

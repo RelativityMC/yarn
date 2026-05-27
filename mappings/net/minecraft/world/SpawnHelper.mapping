@@ -2,7 +2,9 @@ CLASS net/minecraft/class_1948 net/minecraft/world/SpawnHelper
 	FIELD field_9292 LOGGER Lorg/slf4j/Logger;
 	FIELD field_24392 CHUNK_AREA I
 	FIELD field_24393 SPAWNABLE_GROUPS [Lnet/minecraft/class_1311;
+	FIELD field_30972 TICK_WITH_PLAYERS_CHUNK_DISTANCE_THRESHOLD I
 	FIELD field_30974 MIN_SPAWN_DISTANCE I
+	FIELD field_56560 ALWAYS_TICK_CHUNK_DISTANCE_THRESHOLD I
 	METHOD method_8657 getRandomPosInChunkSection (Lnet/minecraft/class_1937;Lnet/minecraft/class_2818;)Lnet/minecraft/class_2338;
 		ARG 0 world
 		ARG 1 chunk
@@ -111,6 +113,8 @@ CLASS net/minecraft/class_1948 net/minecraft/world/SpawnHelper
 		ARG 3 structureAccessor
 	METHOD method_61729 collectSpawnableGroups (Lnet/minecraft/class_1948$class_5262;ZZ)Ljava/util/List;
 		ARG 0 info
+		ARG 1 spawnMonsters
+		ARG 2 rareTick
 	CLASS class_5259 Runner
 		METHOD method_1_77 run (Lnet/minecraft/class_1308;Lnet/minecraft/class_2791;)V
 			ARG 1 entity

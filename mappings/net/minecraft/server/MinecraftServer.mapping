@@ -66,6 +66,7 @@ CLASS net/minecraft/server/MinecraftServer
 	FIELD field_25132 combinedDynamicRegistries Lnet/minecraft/class_7780;
 	FIELD field_25318 resourceManagerHolder Lnet/minecraft/server/MinecraftServer$class_6897;
 	FIELD field_33211 MAX_WORLD_BORDER_RADIUS I
+	FIELD field_33220 INITIAL_TICKS_UNTIL_AUTOSAVE I
 	FIELD field_33975 recorderResultConsumer Ljava/util/function/Consumer;
 	FIELD field_33976 recorderDumpConsumer Ljava/util/function/Consumer;
 	FIELD field_33977 needsRecorderSetup Z
@@ -137,6 +138,8 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 3 raining
 		ARG 4 thundering
 	METHOD method_1_5531 unpublish ()Z
+	METHOD method_1_6279 getChatSpamThreshold ()I
+	METHOD method_1_6280 getCommandSpamThreshold ()I
 	METHOD method_3716 getKeyPair ()Ljava/security/KeyPair;
 	METHOD method_3718 isFlightEnabled ()Z
 	METHOD method_3723 save (ZZZ)Z

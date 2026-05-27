@@ -8,6 +8,12 @@ CLASS net/minecraft/class_7532 net/minecraft/client/gui/PlayerSkinDrawer
 	FIELD field_39530 FACE_OVERLAY_Y I
 	FIELD field_39533 SKIN_TEXTURE_WIDTH I
 	FIELD field_39534 SKIN_TEXTURE_HEIGHT I
+	METHOD method_1_6310 draw (Lnet/minecraft/class_332;Lnet/minecraft/class_9296;III)V
+		ARG 0 context
+		ARG 1 profile
+		ARG 2 x
+		ARG 3 y
+		ARG 4 size
 	METHOD method_44443 draw (Lnet/minecraft/class_332;Lnet/minecraft/class_8685;IIII)V
 		COMMENT Draws the player's head (including the hat) on GUI.
 		ARG 0 context

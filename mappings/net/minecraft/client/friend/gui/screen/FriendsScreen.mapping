@@ -12,11 +12,14 @@ CLASS net/minecraft/class_1_986 net/minecraft/client/friend/gui/screen/FriendsSc
 	FIELD field_1_6805 FRIENDS_OPEN_TEXT Lnet/minecraft/class_2561;
 	FIELD field_1_6806 parent Lnet/minecraft/class_437;
 	FIELD field_1_6807 tabs Lnet/minecraft/class_8667;
+	FIELD field_1_6808 updateStatusIfCurrentScreenRunnable Ljava/lang/Runnable;
 	FIELD field_1_6809 friendsTab Lnet/minecraft/class_1_926;
+	FIELD field_1_6810 tabLayoutWidget Lnet/minecraft/class_8667;
 	FIELD field_1_6813 pendingFriendRemovals Ljava/util/Set;
 	FIELD field_1_6814 pendingFriendRequestsTabButton Lnet/minecraft/class_1_992;
 	FIELD field_1_6815 pendingFriendRequestsTab Lnet/minecraft/class_1_927;
 	FIELD field_1_6816 tabManager Lnet/minecraft/class_8088;
+	FIELD field_1_6817 tabNavigation Lnet/minecraft/class_8089;
 	METHOD <init> (Lnet/minecraft/class_437;)V
 		ARG 1 parent
 	METHOD method_1_5994 unloadTab (Lnet/minecraft/class_8087;)V
@@ -35,6 +38,9 @@ CLASS net/minecraft/class_1_986 net/minecraft/client/friend/gui/screen/FriendsSc
 		ARG 1 resultCode
 	METHOD method_1_6004 (Lcom/mojang/authlib/yggdrasil/FriendsService$ResultCode;)V
 		ARG 1 resultCode
+	METHOD method_1_6007 showFriendActionError (Ljava/lang/Throwable;)Ljava/lang/Void;
+		ARG 1 ex
+	METHOD method_1_6008 updateStatusIfCurrentScreen ()V
 	METHOD method_1_6010 onSuccess (Lnet/minecraft/class_5520;)V
 		ARG 1 socialInteractionsManager
 	METHOD method_1_6011 updateStatus ()V

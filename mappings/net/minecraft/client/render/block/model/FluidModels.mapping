@@ -7,5 +7,6 @@ CLASS net/minecraft/class_1_478 net/minecraft/client/render/block/model/FluidMod
 		ARG 1 modelsByFluid
 		ARG 2 missingModel
 	METHOD method_1_3034 bake (Lnet/minecraft/class_1_734;)Ljava/util/Map;
+		ARG 0 reporter
 	METHOD method_1_3035 get (Lnet/minecraft/class_3610;)Lnet/minecraft/class_1_467;
 		ARG 1 fluidState

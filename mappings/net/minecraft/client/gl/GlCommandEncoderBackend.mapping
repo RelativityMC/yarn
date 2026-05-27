@@ -2,6 +2,9 @@ CLASS net/minecraft/class_10860 net/minecraft/client/gl/GlCommandEncoderBackend
 	FIELD field_1_6298 vertexBuffer Lnet/minecraft/class_10869$class_10872;
 	FIELD field_1_6299 colorAttachmentTextures Ljava/util/List;
 	FIELD field_1_6939 gpuBufferAllocator Lnet/minecraft/class_1_1014;
+	FIELD field_1_7067 NUM_SYNC_OBJECTS I
+	FIELD field_1_7069 submitIndex J
+	FIELD field_1_7070 sync [J
 	FIELD field_57843 LOGGER Lorg/slf4j/Logger;
 	FIELD field_57844 backend Lnet/minecraft/class_10865;
 	FIELD field_57845 temporaryFb1 I
@@ -28,6 +31,11 @@ CLASS net/minecraft/class_10860 net/minecraft/client/gl/GlCommandEncoderBackend
 		ARG 4 count
 		ARG 5 first
 		ARG 6 drawCount
+	METHOD method_1_6294 wait (JJ)Z
+		ARG 1 index
+		ARG 3 timeoutNanos
+	METHOD method_1_6295 getSubmitIndex ()J
+	METHOD method_1_6296 getCurrentSyncIndex ()I
 	METHOD method_68351 setupRenderPass (Lnet/minecraft/class_10866;Ljava/util/Collection;)Z
 		ARG 1 pass
 		ARG 2 validationSkippedUniforms

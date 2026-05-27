@@ -6,8 +6,10 @@ CLASS net/minecraft/class_1_1014 net/minecraft/client/gl/GlGpuBufferAllocator
 	FIELD field_1_6945 memoryArena Lnet/minecraft/class_1_1022;
 	FIELD field_1_6946 debugLabelManager Lnet/minecraft/class_10861;
 	FIELD field_1_6947 bufferManager Lnet/minecraft/class_10874;
+	FIELD field_1_7072 commandEncoder Lnet/minecraft/class_10860;
 	METHOD <init> (Lnet/minecraft/class_10865;Lnet/minecraft/class_10860;)V
 		ARG 1 device
+		ARG 2 commandEncoder
 	METHOD method_1_6167 start ()V
 	CLASS class_1_1015 Fallback
 		FIELD field_1_6949 arena Lnet/minecraft/class_1_1022;

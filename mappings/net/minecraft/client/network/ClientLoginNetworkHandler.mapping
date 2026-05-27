@@ -38,6 +38,9 @@ CLASS net/minecraft/class_635 net/minecraft/client/network/ClientLoginNetworkHan
 	METHOD method_53873 (Lnet/minecraft/class_635$class_8798;Lnet/minecraft/class_635$class_8798;)Lnet/minecraft/class_635$class_8798;
 		ARG 1 currentState
 	METHOD method_56151 setupEncryption (Lnet/minecraft/class_2917;Ljavax/crypto/Cipher;Ljavax/crypto/Cipher;)V
+		ARG 1 packet
+		ARG 2 decryptionCipher
+		ARG 3 encryptionCipher
 	CLASS class_8798 State
 		FIELD field_46197 name Lnet/minecraft/class_2561;
 		FIELD field_46198 prevStates Ljava/util/Set;

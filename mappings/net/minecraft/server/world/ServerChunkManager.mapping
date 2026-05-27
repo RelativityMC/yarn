@@ -27,6 +27,10 @@ CLASS net/minecraft/class_3215 net/minecraft/server/world/ServerChunkManager
 		ARG 7 viewDistance
 		ARG 8 simulationDistance
 		ARG 9 dsync
+		ARG 10 chunkStatusChangeListener
+		ARG 11 persistentStateManagerFactory
+	METHOD method_1_6297 isTrackingEntity (I)Z
+		ARG 1 entityId
 	METHOD method_12129 getChunkGenerator ()Lnet/minecraft/class_2794;
 	METHOD method_14096 updatePosition (Lnet/minecraft/class_3222;)V
 		COMMENT Updates the chunk section position of the {@code player}. This can either be a

@@ -29,6 +29,7 @@ CLASS net/minecraft/class_355 net/minecraft/client/gui/hud/PlayerListHud
 	FIELD field_45378 HALF_HEART_TEXTURE Lnet/minecraft/class_2960;
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_329;)V
 		ARG 1 client
+		ARG 2 inGameHud
 	METHOD method_1918 getPlayerName (Lnet/minecraft/class_640;)Lnet/minecraft/class_2561;
 		COMMENT {@return the player name rendered by this HUD}
 		ARG 1 entry

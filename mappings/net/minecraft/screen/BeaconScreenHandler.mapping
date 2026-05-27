@@ -20,7 +20,8 @@ CLASS net/minecraft/class_1704 net/minecraft/screen/BeaconScreenHandler
 		ARG 4 context
 	METHOD method_17372 setEffects (Ljava/util/Optional;Ljava/util/Optional;)Z
 		ARG 1 primary
-	METHOD method_17373 getProperties ()I
+		ARG 2 secondary
+	METHOD method_17373 getLevel ()I
 	METHOD method_17374 getPrimaryEffect ()Lnet/minecraft/class_6880;
 	METHOD method_17375 getSecondaryEffect ()Lnet/minecraft/class_6880;
 	METHOD method_17376 hasPayment ()Z

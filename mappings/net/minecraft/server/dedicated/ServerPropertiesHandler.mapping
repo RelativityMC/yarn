@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_3806 net/minecraft/server/dedicated/ServerPropertiesHandler
+	FIELD field_1_7091 chatSpamThresholdSeconds I
+	FIELD field_1_7092 commandSpamThresholdSeconds I
 	FIELD field_16802 broadcastConsoleToOps Z
 	FIELD field_16804 whiteList Lnet/minecraft/class_3808$class_3809;
 	FIELD field_16805 enforceWhitelist Lnet/minecraft/class_3808$class_3809;

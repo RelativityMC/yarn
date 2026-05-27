@@ -41,6 +41,7 @@ CLASS net/minecraft/class_1_726 net/minecraft/entity/passive/SulfurCubeArchetype
 		ARG 5 explosion
 		ARG 6 contactDamage
 		ARG 7 knockbackModifiers
+		ARG 8 soundSettings
 	METHOD method_1_5435 contactDamage (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_5863;Z)Lnet/minecraft/class_1_719$class_1_896;
 		ARG 0 registry
 		ARG 1 damageType
@@ -49,3 +50,8 @@ CLASS net/minecraft/class_1_726 net/minecraft/entity/passive/SulfurCubeArchetype
 	METHOD method_1_5436 knockback (FF)Lnet/minecraft/class_1_719$class_1_898;
 		ARG 0 horizontalPower
 		ARG 1 verticalPower
+	METHOD method_1_6301 soundSettings (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;FF)Lnet/minecraft/class_1_719$class_1_1031;
+		ARG 0 hitSound
+		ARG 1 pushSound
+		ARG 2 pushSoundImpulseThreshold
+		ARG 3 pushSoundCooldown

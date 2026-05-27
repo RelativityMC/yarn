@@ -7,19 +7,27 @@ CLASS net/minecraft/class_2580 net/minecraft/block/entity/BeaconBlockEntity
 	FIELD field_11803 level I
 	FIELD field_17377 lock Lnet/minecraft/class_1273;
 	FIELD field_17378 propertyDelegate Lnet/minecraft/class_3913;
-	FIELD field_19177 beamSegments Ljava/util/List;
+	FIELD field_19177 displayedBeamSegments Ljava/util/List;
+	FIELD field_19178 calculatedBeamSegments Ljava/util/List;
 	FIELD field_19179 minY I
 	FIELD field_31300 LEVEL_PROPERTY_INDEX I
 	FIELD field_31301 PRIMARY_PROPERTY_INDEX I
 	FIELD field_31302 SECONDARY_PROPERTY_INDEX I
 	FIELD field_31303 PROPERTY_COUNT I
 	FIELD field_31304 MAX_LEVEL I
+	FIELD field_31305 BLOCKS_SCANNED_PER_TICK I
 	FIELD field_40328 CONTAINER_NAME_TEXT Lnet/minecraft/class_2561;
 	FIELD field_45784 PRIMARY_EFFECT_NBT_KEY Ljava/lang/String;
 	FIELD field_45785 SECONDARY_EFFECT_NBT_KEY Ljava/lang/String;
 	METHOD <init> (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
 		ARG 1 pos
 		ARG 2 state
+	METHOD method_1_6317 getRequiredBeaconLevel (Lnet/minecraft/class_6880;)I
+		ARG 0 effect
+	METHOD method_1_6318 canSetEffectsTo (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;I)Z
+		ARG 0 primary
+		ARG 1 secondary
+		ARG 2 level
 	METHOD method_10936 setCustomName (Lnet/minecraft/class_2561;)V
 		ARG 1 customName
 	METHOD method_10938 playSound (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_3414;)V

@@ -35,6 +35,7 @@ CLASS net/minecraft/class_3204 net/minecraft/server/world/ChunkLevelManager
 		ARG 1 pos
 		ARG 3 level
 		ARG 4 holder
+		ARG 5 prevLevel
 	METHOD method_15892 update (Lnet/minecraft/class_3898;)Z
 		COMMENT Update the states related to chunk tickets and chunk loading levels, which mainly involves three kind of updates:
 		COMMENT <ul>
@@ -48,6 +49,9 @@ CLASS net/minecraft/class_3204 net/minecraft/server/world/ChunkLevelManager
 	METHOD method_17655 (J)Lit/unimi/dsi/fastutil/objects/ObjectSet;
 		ARG 0 sectionPos
 	METHOD method_20800 shouldTick (J)Lnet/minecraft/class_9851;
+		COMMENT {@return {@link TriState#TRUE} or {@link TriState#FALSE}, to indicate that
+		COMMENT   the chunk should or should not be ticked, or {@link TriState#DEFAULT} to
+		COMMENT   tick only if a player is nearby to tick the chunk}
 		ARG 1 chunkPos
 	METHOD method_21683 toDumpString ()Ljava/lang/String;
 	METHOD method_38629 setSimulationDistance (I)V

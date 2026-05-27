@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_1_719 net/minecraft/entity/passive/SulfurCubeArchetype
 	FIELD field_1_6320 defaultKnockbackModifiers Lnet/minecraft/class_1_719$class_1_898;
+	FIELD field_1_7075 defaultSoundSettings Lnet/minecraft/class_1_719$class_1_1031;
 	METHOD method_1_4341 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
 	CLASS class_1_720 AttributeEntry
@@ -21,4 +22,7 @@ CLASS net/minecraft/class_1_719 net/minecraft/entity/passive/SulfurCubeArchetype
 			ARG 0 instance
 	CLASS class_1_898 KnockbackModifiers
 		METHOD method_1_5420 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+	CLASS class_1_1031 SoundSettings
+		METHOD method_1_6300 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance

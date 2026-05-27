@@ -48,6 +48,8 @@ CLASS net/minecraft/class_3898 net/minecraft/server/world/ServerChunkLoadingMana
 		ARG 11 ticketManager
 		ARG 12 viewDistance
 		ARG 13 dsync
+	METHOD method_1_6278 isTrackingEntity (I)Z
+		ARG 1 entityId
 	METHOD method_17212 getLightingProvider ()Lnet/minecraft/class_3227;
 	METHOD method_17214 setViewDistance (I)V
 		ARG 1 watchDistance
@@ -59,6 +61,7 @@ CLASS net/minecraft/class_3898 net/minecraft/server/world/ServerChunkLoadingMana
 		ARG 1 pos
 		ARG 3 level
 		ARG 4 holder
+		ARG 5 prevLevel
 	METHOD method_17220 getRegion (Lnet/minecraft/class_3193;ILjava/util/function/IntFunction;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 centerChunk
 		ARG 2 margin
@@ -203,6 +206,8 @@ CLASS net/minecraft/class_3898 net/minecraft/server/world/ServerChunkLoadingMana
 		ARG 2 chunkPos
 	METHOD method_43377 (Ljava/util/Optional;)Ljava/util/Optional;
 		ARG 1 nbt
+	METHOD method_43378 (Lnet/minecraft/class_1923;Ljava/util/Optional;)Ljava/util/Optional;
+		ARG 2 updatedChunkOpt
 	METHOD method_43381 updateChunkNbt (Lnet/minecraft/class_2487;)Lnet/minecraft/class_2487;
 		ARG 1 nbt
 	METHOD method_43382 getProtoChunk (Lnet/minecraft/class_1923;)Lnet/minecraft/class_2791;
@@ -265,6 +270,8 @@ CLASS net/minecraft/class_3898 net/minecraft/server/world/ServerChunkLoadingMana
 		ARG 1 chunks
 	METHOD method_61257 (Lnet/minecraft/class_3193;Ljava/util/List;)Lnet/minecraft/class_2818;
 		ARG 2 chunks
+	METHOD method_61258 (Lnet/minecraft/class_1923;Lnet/minecraft/class_2487;)Lnet/minecraft/class_2852;
+		ARG 2 updatedChunk
 	METHOD method_61261 isAnyPlayerTicking (Lnet/minecraft/class_1923;)Z
 		ARG 1 pos
 	METHOD method_63545 updateLevel (Lnet/minecraft/class_1923;Ljava/util/function/IntSupplier;ILjava/util/function/IntConsumer;)V

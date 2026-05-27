@@ -13,7 +13,7 @@ CLASS net/minecraft/class_8088 net/minecraft/client/gui/tab/TabManager
 		ARG 2 tabUnloadWidgetConsumer
 		ARG 3 tabLoadTabConsumer
 		ARG 4 tabUnloadTabConsumer
-	METHOD method_1_5627 setCurrentTAb (Lnet/minecraft/class_8087;Z)V
+	METHOD method_1_5627 setCurrentTab (Lnet/minecraft/class_8087;Z)V
 		ARG 1 tab
 		ARG 2 clickSound
 	METHOD method_48614 getCurrentTab ()Lnet/minecraft/class_8087;

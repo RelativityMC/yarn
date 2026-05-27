@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_634 net/minecraft/client/network/ClientPlayNetworkHandler
 	FIELD field_1_1040 clocks Lnet/minecraft/class_1_100;
+	FIELD field_1_6575 onlineMode Z
 	FIELD field_3687 random Lnet/minecraft/class_5819;
 	FIELD field_3691 commandSource Lnet/minecraft/class_637;
 	FIELD field_3692 dataQueryHandler Lnet/minecraft/class_300;
@@ -64,6 +65,7 @@ CLASS net/minecraft/class_634 net/minecraft/client/network/ClientPlayNetworkHand
 	METHOD method_1_1525 showDemoStartDialog (Lnet/minecraft/class_315;)V
 		ARG 1 options
 	METHOD method_1_5028 getSectionReadyCallback ()Ljava/lang/Runnable;
+	METHOD method_1_5685 isOnlineMode ()Z
 	METHOD method_2869 getAdvancementHandler ()Lnet/minecraft/class_632;
 	METHOD method_2870 updateLighting (IILnet/minecraft/class_3568;Lnet/minecraft/class_1944;Ljava/util/BitSet;Ljava/util/BitSet;Ljava/util/Iterator;Z)V
 		ARG 1 chunkX

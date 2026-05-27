@@ -100,6 +100,36 @@ CLASS net/minecraft/class_2446 net/minecraft/data/recipe/RecipeGenerator
 		ARG 0 generator
 		ARG 1 output
 		ARG 2 input
+	METHOD method_1_6285 generateFamilyCrackingRecipe (Lnet/minecraft/class_5794$class_5796;Lnet/minecraft/class_2248;Lnet/minecraft/class_1935;)V
+		ARG 1 variant
+		ARG 2 output
+		ARG 3 input
+	METHOD method_1_6286 getCriterionName (Lnet/minecraft/class_5794;Lnet/minecraft/class_5794$class_5796;Lnet/minecraft/class_1935;)Ljava/lang/String;
+		ARG 1 family
+		ARG 2 variant
+		ARG 3 input
+	METHOD method_1_6287 (Lnet/minecraft/class_5797;Lnet/minecraft/class_5794$class_5796;Ljava/lang/String;)V
+		ARG 2 group
+	METHOD method_1_6289 (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)Lnet/minecraft/class_5797;
+		ARG 0 generator
+		ARG 1 output
+		ARG 2 input
+	METHOD method_1_6290 (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)V
+		ARG 0 generator
+		ARG 1 output
+		ARG 2 input
+	METHOD method_1_6291 (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)V
+		ARG 0 generator
+		ARG 1 output
+		ARG 2 input
+	METHOD method_1_6292 (Lnet/minecraft/class_2446;Lnet/minecraft/class_1935;Lnet/minecraft/class_1935;)V
+		ARG 0 generator
+		ARG 1 output
+		ARG 2 input
+	METHOD method_1_6293 getPillarRecipe (Lnet/minecraft/class_7800;Lnet/minecraft/class_1935;Lnet/minecraft/class_1856;)Lnet/minecraft/class_5797;
+		ARG 1 category
+		ARG 2 output
+		ARG 3 input
 	METHOD method_10419 generate ()V
 	METHOD method_10420 conditionsFromTag (Lnet/minecraft/class_6862;)Lnet/minecraft/class_175;
 		ARG 1 tag

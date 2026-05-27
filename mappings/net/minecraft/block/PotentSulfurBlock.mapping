@@ -11,3 +11,5 @@ CLASS net/minecraft/class_1_735 net/minecraft/block/PotentSulfurBlock
 		ARG 0 state
 		ARG 1 world
 		ARG 2 pos
+	METHOD method_1_6303 isDryOrStillFluid (Lnet/minecraft/class_2680;)Z
+		ARG 0 state

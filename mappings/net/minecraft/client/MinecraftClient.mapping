@@ -199,6 +199,8 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		COMMENT the client only accepting messages from friends.
 		ARG 1 sender
 	METHOD method_1_5471 preloadDefaultShaders ()V
+	METHOD method_1_6137 addSystemMessage (Lnet/minecraft/class_2561;)V
+		ARG 1 message
 	METHOD method_1478 getResourceManager ()Lnet/minecraft/class_3300;
 	METHOD method_1479 getResourcePackDir ()Ljava/nio/file/Path;
 	METHOD method_1481 joinWorld (Lnet/minecraft/class_638;)V
@@ -217,6 +219,8 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 1 error
 		ARG 2 description
 	METHOD method_1508 handleInputEvents ()V
+	METHOD method_1510 (Lnet/minecraft/class_2561;)V
+		ARG 0 status
 	METHOD method_1511 doItemPick ()V
 	METHOD method_1513 reloadResourcesConcurrently ()Ljava/util/concurrent/CompletableFuture;
 	METHOD method_1514 run ()V
@@ -354,6 +358,8 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		COMMENT
 		COMMENT @return a user-oriented piece of text for screenshot result
 		ARG 1 directory
+	METHOD method_35701 (Lnet/minecraft/class_2561;)V
+		ARG 0 message
 	METHOD method_35704 (Ljava/io/File;Lnet/minecraft/class_2583;)Lnet/minecraft/class_2583;
 		ARG 1 style
 	METHOD method_35706 isRealmsEnabled ()Z
@@ -442,6 +448,8 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_55505 onDisconnected ()V
 	METHOD method_55607 getUserProperties ()Lcom/mojang/authlib/minecraft/UserApiService$UserProperties;
 	METHOD method_57017 onFontOptionsChanged ()V
+	METHOD method_60320 (Lnet/minecraft/class_1078;)V
+		ARG 1 translationStorage
 	METHOD method_60647 shouldTick ()Z
 	METHOD method_61962 printCrashReport (Ljava/io/File;Lnet/minecraft/class_128;I)I
 		ARG 0 runDir

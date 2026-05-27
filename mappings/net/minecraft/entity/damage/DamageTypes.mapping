@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_8111 net/minecraft/entity/damage/DamageTypes
+	FIELD field_1_6960 SULFUR_CUBE_HOT Lnet/minecraft/class_5321;
 	FIELD field_42319 MOB_ATTACK_NO_AGGRO Lnet/minecraft/class_5321;
 	FIELD field_42320 PLAYER_ATTACK Lnet/minecraft/class_5321;
 	FIELD field_42321 ARROW Lnet/minecraft/class_5321;

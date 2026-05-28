@@ -34,4 +34,5 @@ CLASS net/minecraft/class_1_964 net/minecraft/client/gui/friend/widget/FriendsTa
 		ARG 0 pos
 	METHOD method_1_5822 setSearchText (Ljava/lang/String;)V
 		ARG 1 searchText
+	METHOD method_1_6316 createProfileNameWidget ()Lnet/minecraft/class_8667;
 	CLASS class_1_965 State

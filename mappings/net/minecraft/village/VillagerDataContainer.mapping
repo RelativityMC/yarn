@@ -1,6 +1,10 @@
 CLASS net/minecraft/class_3851 net/minecraft/village/VillagerDataContainer
 	METHOD method_1_5274 isVillagerDataFinalized ()Z
 	METHOD method_1_5275 setVillagerDataFinalized (Z)V
+		ARG 1 finalized
+	METHOD method_1_6345 resolveVillagerData (Lnet/minecraft/class_5425;Lnet/minecraft/class_2338;)V
+		ARG 1 world
+		ARG 2 pos
 	METHOD method_7195 setVillagerData (Lnet/minecraft/class_3850;)V
 		ARG 1 villagerData
 	METHOD method_7231 getVillagerData ()Lnet/minecraft/class_3850;

@@ -2,6 +2,7 @@ CLASS net/minecraft/class_11467 net/minecraft/client/gui/widget/ScrollableLayout
 	FIELD field_1_636 minHeight I
 	FIELD field_1_637 marginSide Lnet/minecraft/class_11467$class_1_41;
 	FIELD field_1_638 marginWidth I
+	FIELD field_60715 DEFAULT_MARGIN_WIDTH I
 	FIELD field_60716 layout Lnet/minecraft/class_8133;
 	FIELD field_60717 container Lnet/minecraft/class_11467$class_11468;
 	FIELD field_60718 width I
@@ -10,8 +11,15 @@ CLASS net/minecraft/class_11467 net/minecraft/client/gui/widget/ScrollableLayout
 		ARG 1 client
 		ARG 2 layout
 		ARG 3 height
+	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_8133;ILnet/minecraft/class_11467$class_1_41;)V
+		ARG 1 client
+		ARG 2 layout
+		ARG 3 height
+		ARG 4 marginSide
 	METHOD method_1_604 setMinHeight (I)V
 		ARG 1 minHeight
+	METHOD method_1_6304 setMarginWidth (I)V
+		ARG 1 marginWidth
 	METHOD method_71806 setWidth (I)V
 		ARG 1 width
 	METHOD method_71807 setHeight (I)V

@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_1_1033 net/minecraft/entity/EntityInitializer
+	METHOD method_1_6338 then (Lnet/minecraft/class_1_1033;)Lnet/minecraft/class_1_1033;
+		ARG 1 after
+	METHOD method_1_6339 initialize (Lnet/minecraft/class_1297;)V
+		ARG 1 entity
+	METHOD method_1_6340 (Lnet/minecraft/class_1_1033;Lnet/minecraft/class_1297;)V
+		ARG 2 entity
+	METHOD method_1_6341 (Lnet/minecraft/class_1297;)V
+		ARG 0 entity
+	METHOD method_1_6342 trivial ()Lnet/minecraft/class_1_1033;

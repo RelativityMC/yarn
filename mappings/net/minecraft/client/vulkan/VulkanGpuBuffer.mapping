@@ -1,0 +1,20 @@
+CLASS net/minecraft/class_1_1012 net/minecraft/client/vulkan/VulkanGpuBuffer
+	FIELD field_1_6937 bufferPtr J
+	METHOD <init> (JIJ)V
+		ARG 1 bufferPtr
+		ARG 3 usage
+		ARG 4 size
+	METHOD method_1_6147 getBufferPtr ()J
+	CLASS class_1_694 Impl
+		FIELD field_1_3554 closed Z
+		FIELD field_1_3555 device Lnet/minecraft/class_1_679;
+		FIELD field_1_3557 vmaAllocation J
+		FIELD field_1_6287 mapCount I
+		METHOD <init> (Lnet/minecraft/class_1_679;Ljava/util/function/Supplier;IJZ)V
+			ARG 1 device
+			ARG 2 labelSupplier
+			ARG 3 usage
+			ARG 4 size
+			ARG 6 hostVisible
+		CLASS 1 1
+			FIELD field_1_6288 closed Z

@@ -15,6 +15,7 @@ CLASS net/minecraft/class_1_927 net/minecraft/client/friend/gui/tab/PendingFrien
 		ARG 5 height
 	METHOD method_1_5640 addEmptyRequestListBody ()V
 	METHOD method_1_5641 setErrorMessage (Lnet/minecraft/class_2561;)V
+		ARG 1 message
 	METHOD method_1_5642 setLoading ()V
 	METHOD method_1_5643 setFriendRequestWidgets (Ljava/util/List;Ljava/util/List;)V
 		ARG 1 incoming

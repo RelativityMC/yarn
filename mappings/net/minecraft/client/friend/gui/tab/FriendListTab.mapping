@@ -15,3 +15,12 @@ CLASS net/minecraft/class_1_979 net/minecraft/client/friend/gui/tab/FriendListTa
 	METHOD method_1_5928 relayout ()V
 	METHOD method_1_5929 setHeight (I)V
 		ARG 1 height
+	METHOD method_1_6322 createCenteredText (Lnet/minecraft/class_2561;Lnet/minecraft/class_327;I)Lnet/minecraft/class_7940;
+		ARG 1 text
+		ARG 2 textRenderer
+		ARG 3 width
+	METHOD method_1_6323 createText (Lnet/minecraft/class_2561;Lnet/minecraft/class_327;I)Lnet/minecraft/class_8019;
+		ARG 1 text
+		ARG 2 textRenderer
+		ARG 3 width
+	METHOD method_1_6324 getInnerWidth ()I

@@ -53,6 +53,7 @@ CLASS net/minecraft/class_1299 net/minecraft/entity/EntityType
 		ARG 3 boundingBox
 	METHOD method_5888 create (Lnet/minecraft/class_3218;Lnet/minecraft/class_1_1033;Lnet/minecraft/class_2338;Lnet/minecraft/class_3730;ZZ)Lnet/minecraft/class_1297;
 		ARG 1 world
+		ARG 2 initializer
 		ARG 3 pos
 		ARG 4 reason
 		ARG 5 alignPosition
@@ -77,6 +78,7 @@ CLASS net/minecraft/class_1299 net/minecraft/entity/EntityType
 	METHOD method_5897 getName ()Lnet/minecraft/class_2561;
 	METHOD method_5899 spawn (Lnet/minecraft/class_3218;Lnet/minecraft/class_1_1033;Lnet/minecraft/class_2338;Lnet/minecraft/class_3730;ZZ)Lnet/minecraft/class_1297;
 		ARG 1 world
+		ARG 2 initializer
 		ARG 3 pos
 		ARG 4 reason
 		ARG 5 alignPosition
@@ -135,10 +137,12 @@ CLASS net/minecraft/class_1299 net/minecraft/entity/EntityType
 		ARG 1 stack
 		ARG 2 spawner
 	METHOD method_48011 nbtCopier (Lnet/minecraft/class_1_1033;Lnet/minecraft/class_1937;Lnet/minecraft/class_1799;Lnet/minecraft/class_1309;)Lnet/minecraft/class_1_1033;
+		ARG 0 before
 		ARG 1 world
 		ARG 2 stack
 		ARG 3 spawner
 	METHOD method_48156 copier (Lnet/minecraft/class_1_1033;Lnet/minecraft/class_1937;Lnet/minecraft/class_1799;Lnet/minecraft/class_1309;)Lnet/minecraft/class_1_1033;
+		ARG 0 before
 		ARG 1 world
 		ARG 2 stack
 		ARG 3 spawner
@@ -150,6 +154,7 @@ CLASS net/minecraft/class_1299 net/minecraft/entity/EntityType
 	METHOD method_66662 (Lnet/minecraft/class_1799;Lnet/minecraft/class_1297;)V
 		ARG 1 entity
 	METHOD method_66663 componentsCopier (Lnet/minecraft/class_1_1033;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1_1033;
+		ARG 0 before
 		ARG 1 stack
 	METHOD method_67636 (Lnet/minecraft/class_1937;Lnet/minecraft/class_3730;Lnet/minecraft/class_11368;Ljava/util/function/Consumer;)V
 		ARG 2 viewx

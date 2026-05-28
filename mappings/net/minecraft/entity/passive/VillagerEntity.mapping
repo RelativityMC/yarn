@@ -19,21 +19,10 @@ CLASS net/minecraft/class_1646 net/minecraft/entity/passive/VillagerEntity
 	FIELD field_25167 natural Z
 	FIELD field_36335 LOGGER Lorg/slf4j/Logger;
 	FIELD field_57714 DEFAULT_NATURAL Z
-	METHOD <init> (Lnet/minecraft/class_1299;Lnet/minecraft/class_1937;Lnet/minecraft/class_5321;)V
-		ARG 1 entityType
-		ARG 2 world
-		ARG 3 type
-	METHOD <init> (Lnet/minecraft/class_1299;Lnet/minecraft/class_1937;Lnet/minecraft/class_6880;)V
-		ARG 1 entityType
-		ARG 2 world
-		ARG 3 type
 	METHOD method_1_1020 (Lnet/minecraft/class_3218;Lnet/minecraft/class_6880$class_6883;)Ljava/lang/Integer;
 		ARG 1 day
 	METHOD method_1_1401 (Lnet/minecraft/class_1646;)Ljava/util/List;
 		ARG 0 villager
-	METHOD method_1_5209 isDataFinalized ()Z
-	METHOD method_1_5210 setDataFinalized (Z)V
-		ARG 1 dataFinalized
 	METHOD method_7234 canShareFoodForBreeding ()Z
 	METHOD method_7239 needsFoodForBreeding ()Z
 	METHOD method_16917 setOffers (Lnet/minecraft/class_1916;)V

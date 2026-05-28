@@ -86,7 +86,6 @@ CLASS net/minecraft/class_8100 net/minecraft/client/gui/screen/world/WorldCreato
 	METHOD method_48735 updateWorldTypeLists ()V
 	METHOD method_49703 getWorldDirectoryName ()Ljava/lang/String;
 	METHOD method_49704 toDirectoryName (Ljava/lang/String;)Ljava/lang/String;
-		ARG 1 worldName
 	METHOD method_64249 (Lnet/minecraft/class_5321;Lnet/minecraft/class_2378;)Ljava/util/Optional;
 		ARG 1 registry
 	METHOD method_64251 (Lnet/minecraft/class_3232;)V

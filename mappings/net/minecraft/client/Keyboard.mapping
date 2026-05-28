@@ -35,9 +35,8 @@ CLASS net/minecraft/class_309 net/minecraft/client/Keyboard
 	METHOD method_1457 onChar (JLnet/minecraft/class_11905;)V
 		ARG 1 window
 		ARG 3 input
-	METHOD method_1459 debugLog (Ljava/lang/String;[Ljava/lang/Object;)V
+	METHOD method_1459 debugLogTranslatable (Ljava/lang/String;)V
 		ARG 1 key
-		ARG 2 args
 	METHOD method_1460 getClipboard ()Ljava/lang/String;
 	METHOD method_1461 (IJ)V
 		ARG 1 error
@@ -87,5 +86,5 @@ CLASS net/minecraft/class_309 net/minecraft/client/Keyboard
 	METHOD method_75914 debugLog (Ljava/lang/String;Z)V
 		ARG 1 message
 		ARG 2 value
-	METHOD method_75915 debugLog (Ljava/lang/String;)V
+	METHOD method_75915 debugLogLiteral (Ljava/lang/String;)V
 		ARG 1 message

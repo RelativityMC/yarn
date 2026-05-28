@@ -401,8 +401,6 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 1 details
 	METHOD method_37329 (Ljava/nio/file/Path;)V
 		ARG 0 path
-	METHOD method_38580 (Lnet/minecraft/class_6498$class_6499;)Ljava/lang/String;
-		ARG 0 module
 	METHOD method_38584 dumpNativeModules (Ljava/nio/file/Path;)V
 		ARG 1 path
 	METHOD method_39218 saveAll (ZZZ)Z

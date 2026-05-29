@@ -1,7 +1,0 @@
-CLASS net/minecraft/class_1_1012 net/minecraft/client/vulkan/AbstractVulkanGpuBuffer
-	FIELD field_1_6937 bufferPtr J
-	METHOD <init> (JIJ)V
-		ARG 1 bufferPtr
-		ARG 3 usage
-		ARG 4 size
-	METHOD method_1_6147 getBufferPtr ()J

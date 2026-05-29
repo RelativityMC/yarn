@@ -98,6 +98,7 @@ CLASS net/minecraft/class_1_805 net/minecraft/block/SpeleothemBlock
 		ARG 1 world
 		ARG 2 pos
 	METHOD method_1_5205 getWorldEventId ()I
+	METHOD method_1_6302 getMaxGrowthLength ()I
 	METHOD method_36371 canGrow (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;)Z
 		ARG 1 world
 		ARG 2 pos

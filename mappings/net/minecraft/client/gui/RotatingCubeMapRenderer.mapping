@@ -1,6 +1,9 @@
 CLASS net/minecraft/class_766 net/minecraft/client/gui/RotatingCubeMapRenderer
+	FIELD field_1_7065 rotating Z
 	FIELD field_40510 pitch F
 	FIELD field_49905 OVERLAY_TEXTURE Lnet/minecraft/class_2960;
+	METHOD method_1_6282 stopRotating ()V
+	METHOD method_1_6283 startRotating ()V
 	METHOD method_3317 render (Lnet/minecraft/class_332;II)V
 		ARG 1 context
 		ARG 2 width

@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_7576 net/minecraft/util/TimeSupplier
 	METHOD method_1_10 get (Ljava/util/concurrent/TimeUnit;)J
 		ARG 1 timeUnit
+	METHOD method_1_6333 constantNanos (J)Lnet/minecraft/class_7576$class_7577;
+		ARG 0 nanos
 	CLASS class_7577 Nanoseconds

@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_1661 net/minecraft/entity/player/PlayerInventory
 	FIELD field_1_7100 visualSelectedSlot I
 	FIELD field_7542 changeCount I
-	FIELD field_7545 slot I
+	FIELD field_7545 selectedSlot I
 	FIELD field_7546 player Lnet/minecraft/class_1657;
 	FIELD field_7547 main Lnet/minecraft/class_2371;
 	FIELD field_30637 ITEM_USAGE_COOLDOWN I

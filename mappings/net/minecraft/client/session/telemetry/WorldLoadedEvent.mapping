@@ -15,5 +15,5 @@ CLASS net/minecraft/class_7979 net/minecraft/client/session/telemetry/WorldLoade
 	METHOD method_47794 getServerType ()Lnet/minecraft/class_7969$class_7972;
 	METHOD method_47795 (Lnet/minecraft/class_7973$class_7974;)V
 		ARG 1 adder
-	METHOD method_47980 send (Lnet/minecraft/class_7965;)Z
+	METHOD method_47980 send (Lnet/minecraft/class_7965;Z)Z
 		ARG 1 sender

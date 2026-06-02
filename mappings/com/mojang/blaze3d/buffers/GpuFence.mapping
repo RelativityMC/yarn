@@ -1,3 +1,0 @@
-CLASS com/mojang/blaze3d/buffers/GpuFence
-	METHOD awaitCompletion (J)Z
-		ARG 1 timeoutNanos

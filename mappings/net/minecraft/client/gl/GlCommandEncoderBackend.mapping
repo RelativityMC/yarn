@@ -33,7 +33,6 @@ CLASS net/minecraft/class_10860 net/minecraft/client/gl/GlCommandEncoderBackend
 		ARG 6 drawCount
 	METHOD method_1_6294 wait (JJ)Z
 		ARG 1 index
-		ARG 3 timeoutNanos
 	METHOD method_1_6295 getSubmitIndex ()J
 	METHOD method_1_6296 getCurrentSyncIndex ()I
 	METHOD method_68351 setupRenderPass (Lnet/minecraft/class_10866;Ljava/util/Collection;)Z

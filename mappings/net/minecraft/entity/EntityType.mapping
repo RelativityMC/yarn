@@ -61,10 +61,9 @@ CLASS net/minecraft/class_1299 net/minecraft/entity/EntityType
 	METHOD method_5890 getId (Lnet/minecraft/class_1299;)Lnet/minecraft/class_2960;
 		ARG 0 type
 	METHOD method_5891 getSpawnGroup ()Lnet/minecraft/class_1311;
-	METHOD method_5892 getEntityFromData (Lnet/minecraft/class_11368;Lnet/minecraft/class_1937;Lnet/minecraft/class_3730;)Ljava/util/Optional;
+	METHOD method_5892 getEntityFromData (Lnet/minecraft/class_11368;Lnet/minecraft/class_1937;Lnet/minecraft/class_1_1035;)Ljava/util/Optional;
 		ARG 0 view
 		ARG 1 world
-		ARG 2 reason
 	METHOD method_5893 isSaveable ()Z
 	METHOD method_5894 spawnFromItemStack (Lnet/minecraft/class_3218;Lnet/minecraft/class_1799;Lnet/minecraft/class_1309;Lnet/minecraft/class_2338;Lnet/minecraft/class_3730;ZZ)Lnet/minecraft/class_1297;
 		ARG 1 world
@@ -90,19 +89,17 @@ CLASS net/minecraft/class_1299 net/minecraft/entity/EntityType
 	METHOD method_17686 getHeight ()F
 	METHOD method_17839 (Lnet/minecraft/class_11368;Lnet/minecraft/class_1297;)V
 		ARG 1 entity
-	METHOD method_17842 loadEntityWithPassengers (Lnet/minecraft/class_11368;Lnet/minecraft/class_1937;Lnet/minecraft/class_3730;Lnet/minecraft/class_12259;)Lnet/minecraft/class_1297;
+	METHOD method_17842 loadEntityWithPassengers (Lnet/minecraft/class_11368;Lnet/minecraft/class_1937;Lnet/minecraft/class_1_1035;Lnet/minecraft/class_12259;)Lnet/minecraft/class_1297;
 		ARG 0 view
 		ARG 1 world
-		ARG 2 reason
 		ARG 3 processor
-	METHOD method_17843 (Lnet/minecraft/class_11368;Lnet/minecraft/class_1937;Lnet/minecraft/class_3730;Lnet/minecraft/class_12259;Lnet/minecraft/class_1297;)Lnet/minecraft/class_1297;
+	METHOD method_17843 (Lnet/minecraft/class_11368;Lnet/minecraft/class_1937;Lnet/minecraft/class_1_1035;Lnet/minecraft/class_12259;Lnet/minecraft/class_1297;)Lnet/minecraft/class_1297;
 		ARG 4 entity
-	METHOD method_17846 (Lnet/minecraft/class_1937;Lnet/minecraft/class_3730;Lnet/minecraft/class_1299;)Lnet/minecraft/class_1297;
+	METHOD method_17846 (Lnet/minecraft/class_1937;Lnet/minecraft/class_1_1035;Lnet/minecraft/class_1299;)Lnet/minecraft/class_1297;
 		ARG 2 type
-	METHOD method_17848 loadEntityFromData (Lnet/minecraft/class_11368;Lnet/minecraft/class_1937;Lnet/minecraft/class_3730;)Ljava/util/Optional;
+	METHOD method_17848 loadEntityFromData (Lnet/minecraft/class_11368;Lnet/minecraft/class_1937;Lnet/minecraft/class_1_1035;)Ljava/util/Optional;
 		ARG 0 view
 		ARG 1 world
-		ARG 2 reason
 	METHOD method_18386 getDimensions ()Lnet/minecraft/class_4048;
 	METHOD method_18387 getMaxTrackDistance ()I
 		COMMENT Returns the tracking distance, <b>in chunks</b>, of this type of entity
@@ -161,16 +158,14 @@ CLASS net/minecraft/class_1299 net/minecraft/entity/EntityType
 		ARG 3 callback
 	METHOD method_67637 (Ljava/util/function/Consumer;Lnet/minecraft/class_1297;)Lnet/minecraft/class_1297;
 		ARG 1 entity
-	METHOD method_71371 loadEntityWithPassengers (Lnet/minecraft/class_2487;Lnet/minecraft/class_1937;Lnet/minecraft/class_3730;Lnet/minecraft/class_12259;)Lnet/minecraft/class_1297;
+	METHOD method_71371 loadEntityWithPassengers (Lnet/minecraft/class_2487;Lnet/minecraft/class_1937;Lnet/minecraft/class_1_1035;Lnet/minecraft/class_12259;)Lnet/minecraft/class_1297;
 		ARG 0 nbt
 		ARG 1 world
-		ARG 2 reason
 		ARG 3 processor
-	METHOD method_72383 loadEntityPassengers (Lnet/minecraft/class_1297;Lnet/minecraft/class_11368;Lnet/minecraft/class_1937;Lnet/minecraft/class_3730;Lnet/minecraft/class_12259;)Lnet/minecraft/class_1297;
+	METHOD method_72383 loadEntityPassengers (Lnet/minecraft/class_1297;Lnet/minecraft/class_11368;Lnet/minecraft/class_1937;Lnet/minecraft/class_1_1035;Lnet/minecraft/class_12259;)Lnet/minecraft/class_1297;
 		ARG 0 entity
 		ARG 1 view
 		ARG 2 world
-		ARG 3 reason
 		ARG 4 processor
 	METHOD method_72384 getEntityFromData (Lnet/minecraft/class_1299;Lnet/minecraft/class_11368;Lnet/minecraft/class_1937;Lnet/minecraft/class_3730;)Ljava/util/Optional;
 		ARG 0 type

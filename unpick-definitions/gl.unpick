@@ -452,9 +452,6 @@ target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/vertex
 target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/vertex/IndexType;)I
 	return gl_type
 
-target_method com.mojang.blaze3d.opengl.GlConst toGl (Lnet/minecraft/client/texture/NativeImage$Format;)I
-	return gl_tex_format
-
 target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/textures/AddressMode;)I
 	return gl_address_mode
 

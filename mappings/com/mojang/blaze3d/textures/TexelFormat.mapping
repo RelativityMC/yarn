@@ -1,9 +1,4 @@
 CLASS net/minecraft/class_1_658 com/mojang/blaze3d/textures/TexelFormat
-	FIELD field_1_3259 size I
-	FIELD field_1_3866 alignment I
-	METHOD <init> (Ljava/lang/String;III)V
-		ARG 3 size
-		ARG 4 alignment
 	METHOD method_1_3886 isColor ()Z
 	METHOD method_1_3887 hasDepth ()Z
 	METHOD method_1_3888 hasStencil ()Z

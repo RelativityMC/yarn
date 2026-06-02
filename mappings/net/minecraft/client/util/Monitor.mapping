@@ -8,7 +8,6 @@ CLASS net/minecraft/class_313 net/minecraft/client/util/Monitor
 		ARG 1 handle
 	METHOD method_1614 findClosestVideoMode (Ljava/util/Optional;)Lnet/minecraft/class_319;
 		ARG 1 videoMode
-	METHOD method_1615 populateVideoModes ()V
 	METHOD method_1616 getViewportX ()I
 	METHOD method_1617 getCurrentVideoMode ()Lnet/minecraft/class_319;
 	METHOD method_1618 getViewportY ()I

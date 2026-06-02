@@ -14,7 +14,6 @@ CLASS net/minecraft/class_1_715 net/minecraft/client/vulkan/VulkanCommandEncoder
 		ARG 1 device
 	METHOD method_1_4258 wait (JJ)Z
 		ARG 1 waitValue
-		ARG 3 timeoutNanos
 	METHOD method_1_4259 clearTextureColor (Lorg/lwjgl/system/MemoryStack;Lcom/mojang/blaze3d/textures/GpuTexture;Lorg/joml/Vector4fc;)V
 		ARG 1 memoryStack
 		ARG 2 texture
@@ -41,18 +40,6 @@ CLASS net/minecraft/class_1_715 net/minecraft/client/vulkan/VulkanCommandEncoder
 		ARG 1 vkSemaphore
 		ARG 3 value
 		ARG 5 stageMask
-	METHOD method_1_4276 writeToTexture (Lnet/minecraft/class_1_703;Lnet/minecraft/class_1_1012;JIIIIIIII)V
-		ARG 1 target
-		ARG 2 source
-		ARG 3 sourceOffset
-		ARG 5 mipLevel
-		ARG 6 depth
-		ARG 7 offsetX
-		ARG 8 offsetY
-		ARG 9 width
-		ARG 10 height
-		ARG 11 sourceWidth
-		ARG 12 sourceHeight
 	METHOD method_1_5535 getCommandBufferImpl ()Lorg/lwjgl/vulkan/VkCommandBuffer;
 	METHOD method_1_5536 getCommandPool ()Lnet/minecraft/class_1_907;
 	METHOD method_1_6194 issueMemoryBarrier (Lorg/lwjgl/vulkan/VkCommandBuffer;Lorg/lwjgl/system/MemoryStack;)V

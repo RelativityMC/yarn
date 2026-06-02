@@ -1,9 +1,7 @@
 CLASS net/minecraft/class_386 net/minecraft/client/font/BitmapFont
 	FIELD field_2284 glyphs Lnet/minecraft/class_8532;
-	FIELD field_2285 image Lnet/minecraft/class_1011;
 	FIELD field_2286 LOGGER Lorg/slf4j/Logger;
-	METHOD <init> (Lnet/minecraft/class_1011;Lnet/minecraft/class_8532;)V
-		ARG 1 image
+	METHOD <init> (Lnet/minecraft/class_386$class_1_1036;Lnet/minecraft/class_8532;)V
 		ARG 2 glyphs
 	CLASS class_387 Loader
 		FIELD field_44799 CODEC Lcom/mojang/serialization/MapCodec;
@@ -32,16 +30,14 @@ CLASS net/minecraft/class_386 net/minecraft/client/font/BitmapFont
 			ARG 0 codePointGrid
 	CLASS class_388 BitmapFontGlyph
 		FIELD comp_603 scaleFactor F
-		FIELD comp_604 image Lnet/minecraft/class_1011;
 		FIELD comp_605 x I
 		FIELD comp_606 y I
 		FIELD comp_607 width I
 		FIELD comp_608 height I
 		FIELD comp_609 advance I
 		FIELD comp_610 ascent I
-		METHOD <init> (FLnet/minecraft/class_1011;IIIIII)V
+		METHOD <init> (FLnet/minecraft/class_386$class_1_1036;IIIIII)V
 			ARG 1 scaleFactor
-			ARG 2 image
 			ARG 3 x
 			ARG 4 y
 			ARG 5 width
@@ -49,7 +45,6 @@ CLASS net/minecraft/class_386 net/minecraft/client/font/BitmapFont
 			ARG 7 advance
 			ARG 8 ascent
 		METHOD comp_603 scaleFactor ()F
-		METHOD comp_604 image ()Lnet/minecraft/class_1011;
 		METHOD comp_605 x ()I
 		METHOD comp_606 y ()I
 		METHOD comp_607 width ()I

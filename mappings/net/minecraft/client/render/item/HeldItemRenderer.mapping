@@ -38,9 +38,6 @@ CLASS net/minecraft/class_759 net/minecraft/client/render/item/HeldItemRenderer
 		ARG 1 client
 		ARG 2 entityRenderDispatcher
 		ARG 3 itemModelManager
-	METHOD method_1_5131 setHeldItemsIfSkippingSwapAnimation (Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;)V
-		ARG 1 mainHandStack
-		ARG 2 offHandStack
 	METHOD method_3215 resetEquipProgress (Lnet/minecraft/class_1268;)V
 		ARG 1 hand
 	METHOD method_3216 renderArm (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;ILnet/minecraft/class_1306;)V

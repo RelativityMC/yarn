@@ -69,12 +69,12 @@ CLASS net/minecraft/class_1_748 net/minecraft/entity/passive/SulfurCubeEntity
 		ARG 5 rotationVector
 		ARG 6 centerPos
 		ARG 7 height
-	METHOD method_1_5448 adjustDirectionByDeclination (FFFLnet/minecraft/class_243;Lnet/minecraft/class_243;)Lnet/minecraft/class_241;
+	METHOD method_1_5448 adjustDirectionByDeclination (FFFFFLnet/minecraft/class_243;Lnet/minecraft/class_243;)Lnet/minecraft/class_241;
 		ARG 1 factor
 		ARG 2 horizontalPower
 		ARG 3 verticalPower
-		ARG 4 attackerPos
-		ARG 5 selfPos
+		ARG 6 attackerPos
+		ARG 7 selfPos
 	METHOD method_1_6307 playEatSound ()V
 	CLASS class_1_749 SulfurCubeLookControl
 	CLASS class_1_750 SulfurCubeMoveControl

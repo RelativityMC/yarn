@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_315 net/minecraft/client/option/GameOptions
 	FIELD field_1_17 debugLightmapTextureKey Lnet/minecraft/class_304;
-	FIELD field_1_2567 EXCLUSIVE_FULLSCREEN_WARNING_TOOLTIP Lnet/minecraft/class_2561;
 	FIELD field_1_2568 NEEDS_RESTART_TEXT Lnet/minecraft/class_2561;
 	FIELD field_1_2569 exclusiveFullscreen Lnet/minecraft/class_7172;
 	FIELD field_1_3260 graphicsApiValue Lnet/minecraft/class_1_698;

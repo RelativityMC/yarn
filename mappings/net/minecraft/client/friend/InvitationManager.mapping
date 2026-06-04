@@ -5,6 +5,7 @@ CLASS net/minecraft/class_1_951 net/minecraft/client/friend/InvitationManager
 	FIELD field_1_6634 presenceResponse Lcom/mojang/authlib/yggdrasil/response/PresenceResponse;
 	FIELD field_1_6636 client Lnet/minecraft/class_310;
 	FIELD field_1_6638 dirty Z
+	FIELD field_1_7149 UPDATE_INTERVAL_MULTIPLIER_WHEN_NOT_DIRTY J
 	METHOD <init> (Lnet/minecraft/class_310;Lcom/mojang/authlib/yggdrasil/FriendsService;)V
 		ARG 1 client
 		ARG 2 friendsService

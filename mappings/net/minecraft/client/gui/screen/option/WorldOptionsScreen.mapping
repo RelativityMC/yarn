@@ -6,12 +6,30 @@ CLASS net/minecraft/class_1_125 net/minecraft/client/gui/screen/option/WorldOpti
 	FIELD field_1_1053 layoutWidget Lnet/minecraft/class_8132;
 	FIELD field_1_1970 RESTRICTIONS_SCREEN_BUTTON_TEXT Lnet/minecraft/class_2561;
 	FIELD field_1_2542 difficultySelection Lnet/minecraft/class_1_181;
+	FIELD field_1_7150 ALLOW_COMMANDS_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_7151 GAME_MODE_TEXT Lnet/minecraft/class_2561;
 	METHOD <init> (Lnet/minecraft/class_437;Lnet/minecraft/class_1937;)V
 		ARG 1 parent
 		ARG 2 world
 	METHOD method_1_1103 createGameRulesButton ()Lnet/minecraft/class_4185;
+	METHOD method_1_1106 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_1_1107 (Ljava/util/Optional;)V
+		ARG 1 ruleSave
+	METHOD method_1_1108 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
 	METHOD method_1_1109 (Lnet/minecraft/class_1_125;Lnet/minecraft/class_339;)V
 		ARG 1 child
 	METHOD method_1_2399 createRestrictionsScreenButton ()Lnet/minecraft/class_4185;
 	METHOD method_1_2400 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
+	METHOD method_1_6403 createAllowCommandsButton (Lnet/minecraft/class_1132;)Lnet/minecraft/class_5676;
+		ARG 1 server
+	METHOD method_1_6404 createGameModeButton (Lnet/minecraft/class_1132;)Lnet/minecraft/class_5676;
+		ARG 1 server
+	METHOD method_1_6405 (Lnet/minecraft/class_1132;Lnet/minecraft/class_5676;Ljava/lang/Boolean;)V
+		ARG 1 button
+		ARG 2 value
+	METHOD method_1_6406 (Lnet/minecraft/class_1132;Lnet/minecraft/class_5676;Lnet/minecraft/class_1934;)V
+		ARG 1 button
+		ARG 2 value

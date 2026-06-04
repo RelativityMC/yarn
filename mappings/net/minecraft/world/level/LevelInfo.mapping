@@ -16,6 +16,8 @@ CLASS net/minecraft/class_1940 net/minecraft/world/level/LevelInfo
 	METHOD comp_1_135 name ()Ljava/lang/String;
 	METHOD method_1_1689 withDifficultyLock (Z)Lnet/minecraft/class_1940;
 		ARG 1 locked
+	METHOD method_1_6377 withAllowCommands (Z)Lnet/minecraft/class_1940;
+		ARG 1 allowCommands
 	METHOD method_28381 withDifficulty (Lnet/minecraft/class_1267;)Lnet/minecraft/class_1940;
 		ARG 1 difficulty
 	METHOD method_28382 withGameMode (Lnet/minecraft/class_1934;)Lnet/minecraft/class_1940;

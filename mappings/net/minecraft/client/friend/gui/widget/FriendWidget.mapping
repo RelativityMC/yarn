@@ -6,6 +6,7 @@ CLASS net/minecraft/class_1_929 net/minecraft/client/friend/gui/widget/FriendWid
 	FIELD field_1_6555 presenceStatus Lcom/mojang/authlib/yggdrasil/response/PresenceStatusDto;
 	FIELD field_1_6556 unfriendButton Lnet/minecraft/class_8662;
 	FIELD field_1_6558 presenceStatusText Lnet/minecraft/class_7842;
+	FIELD field_1_7146 PRESENCE_STATUS_OFFLINE_TEXT Lnet/minecraft/class_2561;
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_1_986;Lnet/minecraft/class_5520$class_1_980;Lcom/mojang/authlib/yggdrasil/response/PresenceStatusDto;ZLjava/lang/Runnable;)V
 		ARG 1 client
 		ARG 2 friendsScreen
@@ -22,3 +23,7 @@ CLASS net/minecraft/class_1_929 net/minecraft/client/friend/gui/widget/FriendWid
 	METHOD method_1_5672 (Ljava/lang/Runnable;Lnet/minecraft/class_4185;)V
 		ARG 2 button
 	METHOD method_1_5676 getSortOrder ()I
+	METHOD method_1_6396 setPresenceStatus (Lcom/mojang/authlib/yggdrasil/response/PresenceStatusDto;)V
+		ARG 1 presenceStatus
+	METHOD method_1_6397 presenceStatusToText (Lcom/mojang/authlib/yggdrasil/response/PresenceStatusDto;)Lnet/minecraft/class_2561;
+		ARG 0 presenceStatus

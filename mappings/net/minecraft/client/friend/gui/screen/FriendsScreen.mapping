@@ -20,6 +20,7 @@ CLASS net/minecraft/class_1_986 net/minecraft/client/friend/gui/screen/FriendsSc
 	FIELD field_1_6815 pendingFriendRequestsTab Lnet/minecraft/class_1_927;
 	FIELD field_1_6816 tabManager Lnet/minecraft/class_8088;
 	FIELD field_1_6817 tabNavigation Lnet/minecraft/class_8089;
+	FIELD field_1_7154 UNAUTHORIZED_TEXT Lnet/minecraft/class_2561;
 	METHOD <init> (Lnet/minecraft/class_437;)V
 		ARG 1 parent
 	METHOD method_1_5994 unloadTab (Lnet/minecraft/class_8087;)V
@@ -49,3 +50,4 @@ CLASS net/minecraft/class_1_986 net/minecraft/client/friend/gui/screen/FriendsSc
 	METHOD method_1_6013 setErrorMessage (Lnet/minecraft/class_2561;)V
 		ARG 1 errorMessage
 	METHOD method_1_6014 update ()V
+	METHOD method_1_6407 queryPresenceResponse ()V

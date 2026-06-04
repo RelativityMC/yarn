@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_4388 net/minecraft/client/realms/gui/screen/RealmsConfigureWorldScreen
+	FIELD field_1_7157 subscription Lnet/minecraft/class_4887;
 	FIELD field_19790 LOGGER Lorg/slf4j/Logger;
 	FIELD field_19792 parent Lnet/minecraft/class_4325;
 	FIELD field_19794 serverId J
@@ -19,6 +20,14 @@ CLASS net/minecraft/class_4388 net/minecraft/client/realms/gui/screen/RealmsConf
 		ARG 2 serverId
 		ARG 4 server
 		ARG 5 regionDataList
+	METHOD method_1_6408 fetchSubscription (J)V
+		ARG 1 serverId
+	METHOD method_1_6409 (JLnet/minecraft/class_4341;)Lnet/minecraft/class_4887;
+		ARG 2 client
+	METHOD method_1_6410 (Lnet/minecraft/class_4355;)V
+		ARG 1 ex
+	METHOD method_1_6412 (Lnet/minecraft/class_4887;)V
+		ARG 1 subscription
 	METHOD method_21198 stateChanged ()V
 	METHOD method_21204 fetchServerData (J)V
 		ARG 1 worldId

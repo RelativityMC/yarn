@@ -48,6 +48,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_1_3293 updateSurface Z
 	FIELD field_1_3869 worldExtractor Lnet/minecraft/class_1_816;
 	FIELD field_1_6364 friendListManager Lnet/minecraft/class_1_1004;
+	FIELD field_1_7135 monitorTracker Lnet/minecraft/class_323;
 	FIELD field_1687 world Lnet/minecraft/class_638;
 		COMMENT Represents the world the client is currently viewing.
 		COMMENT This field is not null when in game.
@@ -201,6 +202,14 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_1_5471 preloadDefaultShaders ()V
 	METHOD method_1_6137 addSystemMessage (Lnet/minecraft/class_2561;)V
 		ARG 1 message
+	METHOD method_1_6369 handleGlobalKeys (Lnet/minecraft/class_3675$class_306;Z)Z
+		COMMENT Handles key bindings that can be activated anywhere.
+		COMMENT
+		COMMENT {@return whether a key input was intercepted}
+		ARG 1 key
+		ARG 2 hasCtrlOrCmd
+	METHOD method_1_6370 toggleFriendsScreen ()Z
+	METHOD method_1_6371 toggleFullscreen ()V
 	METHOD method_1478 getResourceManager ()Lnet/minecraft/class_3300;
 	METHOD method_1479 getResourcePackDir ()Ljava/nio/file/Path;
 	METHOD method_1481 joinWorld (Lnet/minecraft/class_638;)V

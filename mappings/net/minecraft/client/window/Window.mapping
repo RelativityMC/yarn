@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	FIELD field_1_2251 backend Lnet/minecraft/class_1_11;
 	FIELD field_1_2592 focused Z
+	FIELD field_1_7137 exclusiveFullscreen Z
 	FIELD field_5174 windowedWidth I
 	FIELD field_5175 windowedX I
 	FIELD field_5176 eventHandler Lnet/minecraft/class_3678;
@@ -35,7 +36,9 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 		ARG 1 eventHandler
 		ARG 2 settings
 		ARG 3 fullscreenVideoMode
+		ARG 4 exclusiveFullscreen
 		ARG 5 title
+		ARG 6 monitorTracker
 		ARG 7 backend
 	METHOD method_1_2661 getBackend ()Lnet/minecraft/class_1_11;
 	METHOD method_1_2662 createHandle (IILjava/lang/String;JLnet/minecraft/class_1_11;)J
@@ -54,6 +57,7 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	METHOD method_1_3099 clampToPositive (I)I
 		ARG 0 x
 	METHOD method_1_3138 isFocused ()Z
+	METHOD method_1_6373 shouldReserveOneRow ()Z
 	METHOD method_4474 setPhase (Ljava/lang/String;)V
 		ARG 1 phase
 	METHOD method_4475 applyFullscreenVideoMode ()V

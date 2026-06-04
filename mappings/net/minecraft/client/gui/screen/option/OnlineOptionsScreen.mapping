@@ -16,6 +16,7 @@ CLASS net/minecraft/class_6777 net/minecraft/client/gui/screen/option/OnlineOpti
 	FIELD field_1_6784 getInGameNotificationButton Lnet/minecraft/class_5676;
 	FIELD field_1_7020 CONFIRM_MESSAGE_LINK_TEXT Lnet/minecraft/class_2561;
 	FIELD field_1_7021 SERVERS_HEADER_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_7153 sharePresenceWidget Lnet/minecraft/class_339;
 	FIELD field_49500 TITLE_TEXT Lnet/minecraft/class_2561;
 	METHOD <init> (Lnet/minecraft/class_437;Lnet/minecraft/class_315;)V
 		ARG 1 parent
@@ -64,3 +65,5 @@ CLASS net/minecraft/class_6777 net/minecraft/client/gui/screen/option/OnlineOpti
 	METHOD method_1_5985 refresh ()V
 	METHOD method_1_6264 (Lnet/minecraft/class_2583;)Lnet/minecraft/class_2583;
 		ARG 0 style
+	METHOD method_1_6325 (Lnet/minecraft/class_310;Ljava/lang/Runnable;Lnet/minecraft/class_437;Z)V
+		ARG 3 confirmed

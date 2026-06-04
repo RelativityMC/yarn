@@ -1,9 +1,13 @@
 CLASS net/minecraft/class_353 net/minecraft/client/gui/widget/OptionListWidget
+	FIELD field_49481 WIDGET_ENTRY_WIDTH I
+	FIELD field_49482 WIDGET_ENTRY_HEIGHT I
 	FIELD field_49483 optionsScreen Lnet/minecraft/class_4667;
 	METHOD <init> (Lnet/minecraft/class_310;ILnet/minecraft/class_4667;)V
 		ARG 1 client
 		ARG 2 width
 		ARG 3 optionsScreen
+	METHOD method_1_6392 addWidgetEntry (Lnet/minecraft/class_339;)V
+		ARG 1 widget
 	METHOD method_20406 addSingleOptionEntry (Lnet/minecraft/class_7172;)V
 		ARG 1 option
 	METHOD method_20407 addWidgetEntry (Lnet/minecraft/class_339;Lnet/minecraft/class_339;)V
@@ -31,6 +35,9 @@ CLASS net/minecraft/class_353 net/minecraft/client/gui/widget/OptionListWidget
 		METHOD <init> (Ljava/util/List;Lnet/minecraft/class_437;)V
 			ARG 1 widgets
 			ARG 2 screen
+		METHOD method_1_6393 create (Lnet/minecraft/class_339;Lnet/minecraft/class_437;)Lnet/minecraft/class_353$class_354;
+			ARG 0 widget
+			ARG 1 screen
 		METHOD method_20409 create (Lnet/minecraft/class_315;Lnet/minecraft/class_7172;Lnet/minecraft/class_437;)Lnet/minecraft/class_353$class_354;
 			ARG 0 options
 			ARG 1 option

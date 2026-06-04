@@ -13,6 +13,7 @@ CLASS net/minecraft/class_1_964 net/minecraft/client/gui/friend/widget/FriendsTa
 	FIELD field_1_6686 profileNameText Lnet/minecraft/class_7077;
 	METHOD <init> (ILjava/lang/Runnable;)V
 		ARG 1 width
+		ARG 2 onSendRequest
 	METHOD method_1_5812 setState (Lnet/minecraft/class_1_964$class_1_965;)V
 		ARG 1 state
 	METHOD method_1_5813 onSearchFieldChanged (Ljava/lang/String;)V
@@ -32,4 +33,13 @@ CLASS net/minecraft/class_1_964 net/minecraft/client/gui/friend/widget/FriendsTa
 	METHOD method_1_5822 setSearchText (Ljava/lang/String;)V
 		ARG 1 searchText
 	METHOD method_1_6316 createProfileNameWidget ()Lnet/minecraft/class_8667;
+	METHOD method_1_6364 playerListContainsUsername (Ljava/util/List;Ljava/lang/String;)Z
+		ARG 0 players
+		ARG 1 username
+	METHOD method_1_6365 getFriendRequestErrorText (Ljava/lang/String;)Lnet/minecraft/class_2561;
+		ARG 1 username
+	METHOD method_1_6366 (Ljava/lang/Runnable;Lnet/minecraft/class_4185;)V
+		ARG 2 button
+	METHOD method_1_6367 (Ljava/lang/Runnable;Lcom/mojang/authlib/yggdrasil/FriendsService$ResultCode;)V
+		ARG 2 resultCode
 	CLASS class_1_965 State

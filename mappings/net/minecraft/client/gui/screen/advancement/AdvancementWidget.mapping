@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_456 net/minecraft/client/gui/screen/advancement/AdvancementWidget
+	FIELD field_1_1060 icon Lnet/minecraft/class_1799;
 	FIELD field_2703 tab Lnet/minecraft/class_454;
 	FIELD field_2704 client Lnet/minecraft/class_310;
 	FIELD field_2705 description Ljava/util/List;
@@ -18,6 +19,7 @@ CLASS net/minecraft/class_456 net/minecraft/client/gui/screen/advancement/Advanc
 	FIELD field_32297 TITLE_MAX_WIDTH I
 	FIELD field_45425 TITLE_BOX_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_46143 advancement Lnet/minecraft/class_8781;
+	FIELD field_55104 TITLE_MIN_WIDTH I
 	FIELD field_55105 title Ljava/util/List;
 	METHOD <init> (Lnet/minecraft/class_454;Lnet/minecraft/class_310;Lnet/minecraft/class_8781;Lnet/minecraft/class_185;)V
 		ARG 1 tab
@@ -39,7 +41,7 @@ CLASS net/minecraft/class_456 net/minecraft/client/gui/screen/advancement/Advanc
 	METHOD method_2327 getX ()I
 	METHOD method_2328 getParent (Lnet/minecraft/class_8781;)Lnet/minecraft/class_456;
 		ARG 1 advancement
-	METHOD method_2329 shouldRender (IIII)Z
+	METHOD method_2329 shouldRenderTooltip (IIII)Z
 		ARG 1 originX
 		ARG 2 originY
 		ARG 3 mouseX

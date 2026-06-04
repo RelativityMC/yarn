@@ -71,8 +71,10 @@ CLASS net/minecraft/class_1_748 net/minecraft/entity/passive/SulfurCubeEntity
 		ARG 7 height
 	METHOD method_1_5448 adjustDirectionByDeclination (FFFFFLnet/minecraft/class_243;Lnet/minecraft/class_243;)Lnet/minecraft/class_241;
 		ARG 1 factor
-		ARG 2 horizontalPower
-		ARG 3 verticalPower
+		ARG 2 dx
+		ARG 3 dz
+		ARG 4 horizontalPower
+		ARG 5 verticalPower
 		ARG 6 attackerPos
 		ARG 7 selfPos
 	METHOD method_1_6307 playEatSound ()V

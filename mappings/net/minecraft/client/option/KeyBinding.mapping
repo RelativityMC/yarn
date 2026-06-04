@@ -7,6 +7,7 @@ CLASS net/minecraft/class_304 net/minecraft/client/option/KeyBinding
 	FIELD field_1659 category Lnet/minecraft/class_304$class_11900;
 	FIELD field_1660 id Ljava/lang/String;
 	FIELD field_1661 timesPressed I
+	FIELD field_63464 order I
 	METHOD <init> (Ljava/lang/String;ILnet/minecraft/class_304$class_11900;)V
 		ARG 1 id
 		ARG 2 code
@@ -21,8 +22,12 @@ CLASS net/minecraft/class_304 net/minecraft/client/option/KeyBinding
 		ARG 2 type
 		ARG 3 code
 		ARG 4 category
+		ARG 5 order
 	METHOD compareTo (Ljava/lang/Object;)I
 		ARG 1 other
+	METHOD method_1_6351 hasAnyBindingsInCategory (Lnet/minecraft/class_3675$class_306;Lnet/minecraft/class_304$class_11900;)Z
+		ARG 0 key
+		ARG 1 category
 	METHOD method_1415 isUnbound ()Z
 	METHOD method_1416 setKeyPressed (Lnet/minecraft/class_3675$class_306;Z)V
 		ARG 0 key

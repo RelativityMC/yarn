@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_6725 net/minecraft/world/gen/surfacebuilder/VanillaSurfaceRules
+	FIELD field_1_6303 CINNABAR Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_6304 SULFUR Lnet/minecraft/class_6686$class_6708;
 	FIELD field_35310 WARPED_NYLIUM Lnet/minecraft/class_6686$class_6708;
 	FIELD field_35311 NETHER_WART_BLOCK Lnet/minecraft/class_6686$class_6708;
 	FIELD field_35312 CRIMSON_NYLIUM Lnet/minecraft/class_6686$class_6708;
@@ -35,13 +37,16 @@ CLASS net/minecraft/class_6725 net/minecraft/world/gen/surfacebuilder/VanillaSur
 	FIELD field_35640 DEEPSLATE Lnet/minecraft/class_6686$class_6708;
 	FIELD field_38808 MUD Lnet/minecraft/class_6686$class_6708;
 	METHOD method_39134 createOverworldSurfaceRule (Lnet/minecraft/class_7871;)Lnet/minecraft/class_6686$class_6708;
+		ARG 0 biomes
 	METHOD method_39135 surfaceNoiseThreshold (D)Lnet/minecraft/class_6686$class_6693;
 		ARG 0 min
 	METHOD method_39136 block (Lnet/minecraft/class_2248;)Lnet/minecraft/class_6686$class_6708;
 		ARG 0 block
 	METHOD method_39138 createNetherSurfaceRule (Lnet/minecraft/class_7871;)Lnet/minecraft/class_6686$class_6708;
+		ARG 0 biomes
 	METHOD method_39139 getEndStoneRule ()Lnet/minecraft/class_6686$class_6708;
 	METHOD method_39922 createDefaultRule (Lnet/minecraft/class_7871;ZZZ)Lnet/minecraft/class_6686$class_6708;
+		ARG 0 biomes
 		ARG 1 surface
 		ARG 2 bedrockRoof
 		ARG 3 bedrockFloor

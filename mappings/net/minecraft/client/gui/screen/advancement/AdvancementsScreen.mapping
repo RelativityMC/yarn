@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_457 net/minecraft/client/gui/screen/advancement/AdvancementsScreen
+	FIELD field_1_7133 x I
+	FIELD field_1_7134 y I
 	FIELD field_2717 WINDOW_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_2718 movingTab Z
 	FIELD field_2719 tabs Ljava/util/Map;
@@ -38,3 +40,5 @@ CLASS net/minecraft/class_457 net/minecraft/client/gui/screen/advancement/Advanc
 		ARG 3 mouseY
 	METHOD method_57743 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
+	METHOD method_57744 (Lnet/minecraft/class_457;Lnet/minecraft/class_339;)V
+		ARG 1 child

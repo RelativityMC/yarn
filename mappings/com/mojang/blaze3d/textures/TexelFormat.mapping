@@ -1,6 +1,18 @@
 CLASS net/minecraft/class_1_658 com/mojang/blaze3d/textures/TexelFormat
+	FIELD field_1_7102 channels I
+	FIELD field_1_7103 subpixelFormat Lnet/minecraft/class_1_658$class_1_1034;
+	METHOD <init> (Ljava/lang/String;ILnet/minecraft/class_1_658$class_1_1034;I)V
+		ARG 3 subpixelFormat
+		ARG 4 channels
 	METHOD method_1_3886 isColor ()Z
 	METHOD method_1_3887 hasDepth ()Z
 	METHOD method_1_3888 hasStencil ()Z
 	METHOD method_1_3889 getSize ()I
-	METHOD method_1_4721 getAlignment ()I
+	METHOD method_1_4721 getChannelCount ()I
+	METHOD method_1_6347 getSubpixelSize ()I
+	METHOD method_1_6348 getSubpixelFormat ()Lnet/minecraft/class_1_658$class_1_1034;
+	CLASS class_1_1034 Subpixel
+		FIELD field_1_7121 size I
+		METHOD <init> (Ljava/lang/String;II)V
+			ARG 3 size
+		METHOD method_1_6350 getSize ()I

@@ -29,3 +29,4 @@ CLASS net/minecraft/class_1_926 net/minecraft/client/friend/gui/tab/FriendsTab
 	METHOD method_1_5638 setLoading ()V
 	METHOD method_1_5639 setFriendWidgets (Ljava/util/List;)V
 		ARG 1 friends
+	METHOD method_1_6358 onSendRequest ()V

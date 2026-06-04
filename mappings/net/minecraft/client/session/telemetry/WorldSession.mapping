@@ -10,6 +10,7 @@ CLASS net/minecraft/class_7975 net/minecraft/client/session/telemetry/WorldSessi
 		ARG 2 newWorld
 		ARG 3 worldLoadTime
 		ARG 4 minigameName
+		ARG 5 serverSessionId
 	METHOD method_47770 tick ()V
 	METHOD method_47771 setTick (J)V
 		ARG 1 tick

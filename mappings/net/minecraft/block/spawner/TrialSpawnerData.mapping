@@ -17,6 +17,8 @@ CLASS net/minecraft/class_8966 net/minecraft/block/spawner/TrialSpawnerData
 		ARG 1 world
 	METHOD method_55184 isCooldownPast (Lnet/minecraft/class_3218;FI)Z
 		ARG 1 world
+		ARG 2 cooldown
+		ARG 3 cooldownLength
 	METHOD method_55185 canSpawnMore (Lnet/minecraft/class_3218;Lnet/minecraft/class_8965;I)Z
 		ARG 1 world
 		ARG 2 config
@@ -46,6 +48,8 @@ CLASS net/minecraft/class_8966 net/minecraft/block/spawner/TrialSpawnerData
 		ARG 2 random
 	METHOD method_55198 isCooldownAtRepeating (Lnet/minecraft/class_3218;FI)Z
 		ARG 1 world
+		ARG 2 cooldown
+		ARG 3 cooldownLength
 	METHOD method_55200 areMobsDead ()Z
 	METHOD method_55202 getDisplayEntityRotation ()D
 	METHOD method_55204 getLastDisplayEntityRotation ()D

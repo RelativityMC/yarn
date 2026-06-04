@@ -25,6 +25,19 @@ CLASS com/mojang/blaze3d/systems/CommandEncoder
 	METHOD clearDepthTexture (Lcom/mojang/blaze3d/textures/GpuTexture;D)V
 		ARG 1 texture
 		ARG 2 depth
+	METHOD copyBufferToTexture (Lcom/mojang/blaze3d/buffers/GpuBufferSlice;IIIILcom/mojang/blaze3d/textures/GpuTexture;IIIIII)V
+		ARG 1 source
+		ARG 2 sourceX
+		ARG 3 sourceY
+		ARG 4 sourceWidth
+		ARG 5 sourceHeight
+		ARG 6 target
+		ARG 7 targetX
+		ARG 8 targetY
+		ARG 9 targetWidth
+		ARG 10 targetHeight
+		ARG 11 mipmap
+		ARG 12 depthOrLayer
 	METHOD copyTextureToBuffer (Lcom/mojang/blaze3d/textures/GpuTexture;Lcom/mojang/blaze3d/buffers/GpuBuffer;JLjava/lang/Runnable;I)V
 		ARG 1 source
 		ARG 2 target

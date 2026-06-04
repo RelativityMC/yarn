@@ -30,6 +30,8 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 		ARG 2 top
 		ARG 3 right
 		ARG 4 bottom
+	METHOD method_1_6357 getImageData ()Ljava/nio/ByteBuffer;
+		COMMENT {@return a {@link ByteBuffer} owned by this {@link NativeImage}}
 	METHOD method_4300 resizeSubRectTo (IIIILnet/minecraft/class_1011;)V
 		ARG 1 x
 		ARG 2 y

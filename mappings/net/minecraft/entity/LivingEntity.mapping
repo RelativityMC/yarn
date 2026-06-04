@@ -840,7 +840,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 target
 	METHOD method_75120 getItemUseTime (F)F
 		ARG 1 baseTime
-	METHOD method_75122 knockbackTarget (Lnet/minecraft/class_1297;FLnet/minecraft/class_243;Lnet/minecraft/class_1282;F)V
+	METHOD method_75122 knockbackTarget (Lnet/minecraft/class_1297;FLnet/minecraft/class_243;Lnet/minecraft/class_1282;FZ)V
 		ARG 1 target
 		ARG 2 strength
 		ARG 3 playerTargetVelocity

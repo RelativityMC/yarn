@@ -6,7 +6,6 @@ CLASS net/minecraft/class_1132 net/minecraft/server/integrated/IntegratedServer
 	FIELD field_5521 localPlayerUuid Ljava/util/UUID;
 	FIELD field_5522 lanPort I
 	FIELD field_5524 paused Z
-	FIELD field_28075 forcedGameMode Lnet/minecraft/class_1934;
 	FIELD field_34964 MIN_VIEW_DISTANCE I
 	FIELD field_34965 simulationDistance I
 	FIELD field_62489 MAX_PLAYER_COUNT I
@@ -21,11 +20,7 @@ CLASS net/minecraft/class_1132 net/minecraft/server/integrated/IntegratedServer
 		ARG 6 gameRules
 		ARG 7 apiServices
 		ARG 8 chunkLoadProgress
-	METHOD method_1_5525 setGameMode (Lnet/minecraft/class_1934;)V
-		ARG 1 gameMode
 	METHOD method_1_5526 getShareSetting ()Lnet/minecraft/server/MinecraftServer$class_1_908;
-	METHOD method_1_5529 setAllowCommands (Z)V
-		ARG 1 allowCommands
 	METHOD method_1_5530 setShareSetting (Lnet/minecraft/server/MinecraftServer$class_1_908;)V
 		ARG 1 shareSetting
 	METHOD method_1_6190 shutdownLanPinger ()V

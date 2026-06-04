@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_1_1004 net/minecraft/client/friend/FriendListManager
-	FIELD field_1_6869 UPDATE_PERIOD J
 	FIELD field_1_6870 UPDATE_PERIOD_IN_FRIEND_SCREEN J
 	FIELD field_1_6871 LOGGER Lorg/slf4j/Logger;
 	FIELD field_1_6872 TICK_PERIOD J

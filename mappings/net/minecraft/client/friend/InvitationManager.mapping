@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_1_951 net/minecraft/client/friend/InvitationManager
-	FIELD field_1_6629 CLEAN_UPDATE_INTERVAL Ljava/time/Duration;
 	FIELD field_1_6630 DIRTY_UPDATE_INTERVAL Ljava/time/Duration;
 	FIELD field_1_6631 friendsService Lcom/mojang/authlib/yggdrasil/FriendsService;
 	FIELD field_1_6633 presenceStatusUpdatedTime Ljava/time/Instant;

@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_8082 net/minecraft/client/gui/screen/OnboardingButtons
-	METHOD method_1_5607 createFriendsListButton (ILnet/minecraft/class_4185$class_4241;)Lnet/minecraft/class_1_917;
+	METHOD method_1_5607 createFriendsListButton (ILnet/minecraft/class_4185$class_4241;Z)Lnet/minecraft/class_1_917;
 		ARG 0 width
 		ARG 1 pressAction
 	METHOD method_48592 createLanguageButton (ILnet/minecraft/class_4185$class_4241;Z)Lnet/minecraft/class_8662;

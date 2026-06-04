@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_429 net/minecraft/client/gui/screen/option/OptionsScreen
 	FIELD field_1_1041 inGame Z
-	FIELD field_1_2497 difficultySelection Lnet/minecraft/class_1_181;
 	FIELD field_2501 parent Lnet/minecraft/class_437;
 	FIELD field_2502 settings Lnet/minecraft/class_315;
 	FIELD field_41345 SKIN_CUSTOMIZATION_TEXT Lnet/minecraft/class_2561;
@@ -21,10 +20,7 @@ CLASS net/minecraft/class_429 net/minecraft/client/gui/screen/option/OptionsScre
 		ARG 1 parent
 		ARG 2 gameOptions
 		ARG 3 inGame
-	METHOD method_1_1542 createWorldOptionsButton (Lnet/minecraft/class_1937;)Lnet/minecraft/class_8021;
-		ARG 1 world
 	METHOD method_1_1543 getParent ()Lnet/minecraft/class_437;
-	METHOD method_1_2349 needsAdditionalWorldOptions ()Z
 	METHOD method_47625 createButton (Lnet/minecraft/class_2561;Ljava/util/function/Supplier;)Lnet/minecraft/class_4185;
 		ARG 1 message
 		ARG 2 screenSupplier

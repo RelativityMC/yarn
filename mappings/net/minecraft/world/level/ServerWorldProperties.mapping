@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_5268 net/minecraft/world/level/ServerWorldProperties
+	METHOD method_1_6379 setAllowCommands (Z)V
+		ARG 1 allowCommands
 	METHOD method_150 getLevelName ()Ljava/lang/String;
 	METHOD method_193 setGameMode (Lnet/minecraft/class_1934;)V
 		ARG 1 gameMode

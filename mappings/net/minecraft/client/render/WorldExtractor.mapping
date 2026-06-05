@@ -95,3 +95,9 @@ CLASS net/minecraft/class_1_816 net/minecraft/client/render/WorldExtractor
 	METHOD method_1_5021 getSectionCount ()D
 	METHOD method_1_6240 (Lnet/minecraft/class_631;J)V
 		ARG 2 chunkPos
+	METHOD method_1_6398 shouldRenderEntity (Lnet/minecraft/class_1297;Lnet/minecraft/class_4604;DDD)Z
+		ARG 1 entity
+		ARG 2 frustum
+		ARG 3 x
+		ARG 5 y
+		ARG 7 z

@@ -212,8 +212,7 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 1 shareSetting
 		ARG 2 gameMode
 			COMMENT the game mode connecting players will have set by default
-		ARG 3 cheatsAllowed
-			COMMENT whether players on the server have operator permissions
+		ARG 3 allowCommands
 		ARG 4 port
 			COMMENT the port to open up to LAN connections
 	METHOD method_3764 setPreventProxyConnections (Z)V

@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
+	FIELD field_1_6260 PERSISTENCE_REQUIRED_KEY Ljava/lang/String;
 	FIELD field_6184 lootTableSeed J
 	FIELD field_6185 targetSelector Lnet/minecraft/class_1355;
 		COMMENT Contains goals used to select this entity's target.

@@ -78,6 +78,8 @@ CLASS net/minecraft/class_1_748 net/minecraft/entity/passive/SulfurCubeEntity
 		ARG 6 attackerPos
 		ARG 7 selfPos
 	METHOD method_1_6307 playEatSound ()V
+	METHOD method_1_6360 (Lnet/minecraft/class_1304;)Lnet/minecraft/class_1799;
+		ARG 0 slot
 	CLASS class_1_749 SulfurCubeLookControl
 	CLASS class_1_750 SulfurCubeMoveControl
 		METHOD <init> (Lnet/minecraft/class_1_748;)V

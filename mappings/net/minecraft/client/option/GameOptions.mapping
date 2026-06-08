@@ -10,6 +10,9 @@ CLASS net/minecraft/class_315 net/minecraft/client/option/GameOptions
 	FIELD field_1_6354 inGameNotification Lnet/minecraft/class_7172;
 	FIELD field_1_6355 friendsKey Lnet/minecraft/class_304;
 	FIELD field_1_6356 sharePresence Lnet/minecraft/class_7172;
+	FIELD field_1_6914 GRAPHICS_API_VULKAN_TOOLTIP Lnet/minecraft/class_2561;
+	FIELD field_1_7122 EXCLUSIVE_FULLSCREEN_OFF_TOOLTIP Lnet/minecraft/class_2561;
+	FIELD field_1_7123 EXCLUSIVE_FULLSCREEN_ON_TOOLTIP Lnet/minecraft/class_2561;
 	FIELD field_1814 cloudRenderMode Lnet/minecraft/class_7172;
 	FIELD field_1815 hideServerAddress Z
 	FIELD field_1816 smoothCameraKey Lnet/minecraft/class_304;

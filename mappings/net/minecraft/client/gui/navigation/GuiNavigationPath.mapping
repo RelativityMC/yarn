@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_8016 net/minecraft/client/gui/navigation/GuiNavigationPath
 	COMMENT Represents a path of currently navigating elements from the root element
 	COMMENT to the leaf.
+	METHOD method_1_6415 getLeaf ()Lnet/minecraft/class_364;
 	METHOD method_48192 of (Lnet/minecraft/class_4069;Lnet/minecraft/class_8016;)Lnet/minecraft/class_8016;
 		ARG 0 element
 		ARG 1 childPath

@@ -8,10 +8,17 @@ CLASS net/minecraft/class_1_125 net/minecraft/client/gui/screen/option/WorldOpti
 	FIELD field_1_2542 difficultySelection Lnet/minecraft/class_1_181;
 	FIELD field_1_7150 ALLOW_COMMANDS_TEXT Lnet/minecraft/class_2561;
 	FIELD field_1_7151 GAME_MODE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_7160 ALLOW_COMMANDS_DISABLED_TOOLTIP Lnet/minecraft/class_7919;
+	FIELD field_1_7161 EDIT_GAME_RULE_DISABLED_HARDCORE_TOOLTIP Lnet/minecraft/class_7919;
+	FIELD field_1_7162 GAME_MODE_DISABLED_TOOLTIP Lnet/minecraft/class_7919;
+	FIELD field_1_7163 GAME_MODE_DISABLED_OPERATOR_TOOLTIP Lnet/minecraft/class_7919;
+	FIELD field_1_7164 gameModeButton Lnet/minecraft/class_5676;
+	FIELD field_1_7165 gameRulesButton Lnet/minecraft/class_4185;
 	METHOD <init> (Lnet/minecraft/class_437;Lnet/minecraft/class_1937;)V
 		ARG 1 parent
 		ARG 2 world
 	METHOD method_1_1103 createGameRulesButton (Lnet/minecraft/class_1132;)Lnet/minecraft/class_4185;
+		ARG 1 server
 	METHOD method_1_1106 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
 	METHOD method_1_1107 (Ljava/util/Optional;)V
@@ -33,3 +40,8 @@ CLASS net/minecraft/class_1_125 net/minecraft/client/gui/screen/option/WorldOpti
 	METHOD method_1_6406 (Lnet/minecraft/class_1132;Lnet/minecraft/class_5676;Lnet/minecraft/class_1934;)V
 		ARG 1 button
 		ARG 2 value
+	METHOD method_1_6416 configureGameplaySelector (Lnet/minecraft/class_339;Lnet/minecraft/class_1132;Lnet/minecraft/class_7919;Lnet/minecraft/class_7919;)V
+		ARG 1 selectorWidget
+		ARG 2 server
+		ARG 3 hardcoreTooltip
+		ARG 4 insufficientPermissionsTooltip

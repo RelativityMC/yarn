@@ -131,6 +131,8 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	METHOD method_60793 getGlfwPlatform ()Ljava/lang/String;
 	METHOD method_61943 setCloseCallback (Ljava/lang/Runnable;)V
 		ARG 1 callback
+	METHOD method_61944 (Ljava/lang/Runnable;J)V
+		ARG 1 window
 	METHOD method_61945 onMinimizeChanged (JZ)V
 		ARG 1 window
 		ARG 3 minimized

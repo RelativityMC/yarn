@@ -5,6 +5,8 @@ CLASS net/minecraft/class_3226 net/minecraft/world/gen/feature/RandomFeatureEntr
 	METHOD <init> (Lnet/minecraft/class_6880;F)V
 		ARG 1 feature
 		ARG 2 chance
+	METHOD comp_1_797 chance ()F
+	METHOD comp_1_798 feature ()Lnet/minecraft/class_6880;
 	METHOD method_14271 generate (Lnet/minecraft/class_5281;Lnet/minecraft/class_2794;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338;)Z
 		ARG 1 world
 		ARG 2 chunkGenerator

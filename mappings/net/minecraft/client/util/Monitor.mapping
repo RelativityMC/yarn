@@ -8,10 +8,11 @@ CLASS net/minecraft/class_313 net/minecraft/client/util/Monitor
 	FIELD field_1_7141 LOGGER Lorg/slf4j/Logger;
 	METHOD <init> (Ljava/lang/String;JLjava/util/List;Lnet/minecraft/class_319;II)V
 		ARG 2 handle
-	METHOD comp_1_894 getCurrentVideoMode ()Lnet/minecraft/class_319;
-	METHOD comp_1_895 getHandle ()J
-	METHOD comp_1_898 getViewportX ()I
-	METHOD comp_1_899 getViewportY ()I
+	METHOD comp_1_894 currentVideoMode ()Lnet/minecraft/class_319;
+	METHOD comp_1_895 handle ()J
+	METHOD comp_1_897 videoModes ()Ljava/util/List;
+	METHOD comp_1_898 x ()I
+	METHOD comp_1_899 y ()I
 	METHOD method_1_6374 describeMonitor (J)Ljava/lang/String;
 		ARG 0 monitor
 	METHOD method_1_6375 fromPointer (J)Lnet/minecraft/class_313;

@@ -15,3 +15,4 @@ CLASS net/minecraft/class_4907 net/minecraft/client/realms/RepeatedNarrator
 			ARG 1 text
 			ARG 2 rateLimiter
 		METHOD comp_1_773 message ()Lnet/minecraft/class_2561;
+		METHOD comp_1_774 rateLimiter ()Lcom/google/common/util/concurrent/RateLimiter;

@@ -119,6 +119,13 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 3 blocked
 	METHOD method_1_6146 isAffectedByFluid (Lnet/minecraft/class_6862;)Z
 		ARG 1 fluidTag
+	METHOD method_1_6376 takeKnockback (DDDLnet/minecraft/class_1282;FZ)V
+		ARG 1 strength
+		ARG 3 x
+		ARG 5 z
+		ARG 7 source
+		ARG 8 damageAmount
+		ARG 9 damaged
 	METHOD method_5673 setEquipment (Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;)V
 		ARG 1 slot
 		ARG 2 stack
@@ -846,6 +853,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 3 playerTargetVelocity
 		ARG 4 source
 		ARG 5 damageAmount
+		ARG 6 damaged
 	METHOD method_75123 pierce (Lnet/minecraft/class_1304;Lnet/minecraft/class_1297;FZZZ)Z
 		ARG 1 slot
 		ARG 2 target

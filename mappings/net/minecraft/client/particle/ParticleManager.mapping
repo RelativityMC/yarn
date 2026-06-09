@@ -10,6 +10,9 @@ CLASS net/minecraft/class_702 net/minecraft/client/particle/ParticleManager
 	METHOD <init> (Lnet/minecraft/class_638;Lnet/minecraft/class_11939;)V
 		ARG 1 world
 		ARG 2 spriteManager
+	METHOD method_1_6380 getRandom ()Lnet/minecraft/class_5819;
+	METHOD method_1_6381 (Lnet/minecraft/class_5878;)V
+		ARG 1 group
 	METHOD method_3045 setWorld (Lnet/minecraft/class_638;)V
 		ARG 1 world
 	METHOD method_3051 addEmitter (Lnet/minecraft/class_1297;Lnet/minecraft/class_2394;I)V

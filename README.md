@@ -6,7 +6,7 @@ Modern Yarn is a fork of Yarn that adds support for [post-obfuscation](https://w
 
 ```gradle
 plugins {
-    id 'net.fabricmc.fabric-loom-remap' version '1.16-SNAPSHOT'
+    id 'net.fabricmc.fabric-loom-remap' version '1.17-SNAPSHOT'
 }
 
 repositories {
@@ -31,8 +31,8 @@ If you want to write NeoForge mods using Modern Yarn, consider using [Neo Loom](
 
 ## Notes
 
-Loom 1.16+ is required for fabric-api to function correctly in development environments.  
-If you have previously set up the project using any prior versions, you'll have to clean the project-wide gradle cache (`<project dir>/.gradle/`) on Loom 1.16+.  
+Loom 1.17+ is required for fabric-api to function correctly in development environments.  
+If you have previously set up the project using any prior versions, you'll have to clean the project-wide gradle cache (`<project dir>/.gradle/`) on Loom 1.17+.  
 
 # Yarn
 

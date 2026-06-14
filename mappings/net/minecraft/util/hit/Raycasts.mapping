@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_1675 net/minecraft/entity/projectile/ProjectileUtil
+CLASS net/minecraft/class_1675 net/minecraft/util/hit/Raycasts
 	FIELD field_46654 DEFAULT_MARGIN F
 	METHOD method_7484 setRotationFromVelocity (Lnet/minecraft/class_1297;F)V
 		ARG 0 entity
@@ -83,3 +83,5 @@ CLASS net/minecraft/class_1675 net/minecraft/entity/projectile/ProjectileUtil
 		ARG 4 box
 		ARG 5 hitPredicate
 		ARG 6 hitboxMargin
+		ARG 7 shapeType
+		ARG 8 skipRaycast

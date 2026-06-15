@@ -83,7 +83,7 @@ CLASS net/minecraft/class_1_291 net/minecraft/client/render/AllocationManager
 		METHOD method_1_2165 getBlockSize ()J
 		METHOD method_1_2166 isFreed ()Z
 	CLASS class_1_293 Block
-		FIELD field_1_1753 USED I
+		FIELD field_1_1753 FREE I
 		FIELD field_1_1754 parentAllocationInfo Lnet/minecraft/class_1_291$class_1_294;
 		FIELD field_1_1755 next Lnet/minecraft/class_1_291$class_1_293;
 		FIELD field_1_1756 right Lnet/minecraft/class_1_291$class_1_293;

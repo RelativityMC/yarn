@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_1037 net/minecraft/datafixer/fix/ResetSpectatorsGenerateChunksRuleInHardcoreFix
+	METHOD method_1_6420 (Lnet/minecraft/class_1_233;)Lnet/minecraft/class_1_228$class_1_230;
+		ARG 0 tracker
+	METHOD method_1_6421 (Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_27;)V
+		ARG 2 worldUpdateProgress
+	METHOD method_1_6422 (Lnet/minecraft/class_1_207;Lcom/mojang/serialization/Dynamic;)V
+		ARG 1 fixedNbt

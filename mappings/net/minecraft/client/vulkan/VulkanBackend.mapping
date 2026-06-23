@@ -14,11 +14,10 @@ CLASS net/minecraft/class_1_679 net/minecraft/client/vulkan/VulkanBackend
 	FIELD field_1_3448 device Lorg/lwjgl/vulkan/VkDevice;
 	FIELD field_1_3449 vmaAllocator J
 	FIELD field_1_6395 markerRecorder Lnet/minecraft/class_1_970;
-	METHOD <init> (Lnet/minecraft/class_12289;Lnet/minecraft/class_1_691;Lnet/minecraft/class_1_717;Ljava/util/Set;Lorg/lwjgl/vulkan/VkDevice;JLnet/minecraft/class_1_970;)V
+	METHOD <init> (Lnet/minecraft/class_12289;Lnet/minecraft/class_1_691;Lnet/minecraft/class_1_717;Lnet/minecraft/class_1_1045;Lorg/lwjgl/vulkan/VkDevice;JLnet/minecraft/class_1_970;)V
 		ARG 1 shaderSoruceGetter
 		ARG 2 instance
 		ARG 3 physicalDevice
-		ARG 4 extensions
 		ARG 5 device
 		ARG 6 vmaAllocator
 		ARG 8 markerRecorder

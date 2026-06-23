@@ -81,13 +81,12 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 	METHOD method_25508 registerChorusPlant ()V
 	METHOD method_25509 registerComposter ()V
 	METHOD method_25510 registerDaylightDetector ()V
-	METHOD method_25512 registerFarmland ()V
+	METHOD method_25512 registerFarmland (Lnet/minecraft/class_2248;Lnet/minecraft/class_1_314;Lnet/minecraft/class_1_314;Lnet/minecraft/class_4942;)V
 	METHOD method_25513 registerFire ()V
 	METHOD method_25514 registerSoulFire ()V
 	METHOD method_25515 registerFrostedIce ()V
 	METHOD method_25516 registerTopSoils ()V
 	METHOD method_25517 registerCocoa ()V
-	METHOD method_25518 registerDirtPath ()V
 	METHOD method_25519 registerHopper ()V
 	METHOD method_25521 registerLever ()V
 	METHOD method_25522 registerLilyPad ()V
@@ -184,7 +183,6 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 2 aboveFenceModel
 		ARG 3 belowFenceModel
 	METHOD method_25576 registerRandomHorizontalRotations (Lnet/minecraft/class_4946$class_4947;Ljava/util/List;)V
-		ARG 1 modelFactory
 		ARG 2 blocks
 	METHOD method_25581 getTurtleEggModel (II)Lnet/minecraft/class_813;
 		ARG 1 eggs
@@ -251,7 +249,6 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 4 closedWallModel
 		ARG 5 uvlock
 	METHOD method_25631 registerRotatable (Lnet/minecraft/class_2248;)V
-		ARG 1 block
 	METHOD method_25636 createWallBlockState (Lnet/minecraft/class_2248;Lnet/minecraft/class_807;Lnet/minecraft/class_807;Lnet/minecraft/class_807;)Lnet/minecraft/class_4917;
 		ARG 0 wallBlock
 		ARG 1 postModel
@@ -571,11 +568,9 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 	METHOD method_65399 registerItemModel (Lnet/minecraft/class_1792;Lnet/minecraft/class_2960;)V
 		ARG 1 item
 		ARG 2 modelId
-	METHOD method_65400 uploadBlockItemModel (Lnet/minecraft/class_1792;Lnet/minecraft/class_2248;)Lnet/minecraft/class_2960;
+	METHOD method_65400 uploadBlockItemModel (Lnet/minecraft/class_1792;Lnet/minecraft/class_1_314;)Lnet/minecraft/class_2960;
 		ARG 1 item
-		ARG 2 block
 	METHOD method_65401 uploadBlockItemModel (Lnet/minecraft/class_1792;Lnet/minecraft/class_2248;Ljava/lang/String;)Lnet/minecraft/class_2960;
-		ARG 1 item
 		ARG 2 block
 		ARG 3 textureSuffix
 	METHOD method_65402 registerTintedItemModel (Lnet/minecraft/class_2248;Lnet/minecraft/class_2960;Lnet/minecraft/class_10401;)V
@@ -611,15 +606,8 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 3 model
 	METHOD method_65410 registerSkulls ()V
 	METHOD method_65412 registerChests ()V
-	METHOD method_65414 uploadTwoLayerBlockItemModel (Lnet/minecraft/class_1792;Lnet/minecraft/class_2248;Ljava/lang/String;)Lnet/minecraft/class_2960;
-		ARG 1 item
-		ARG 2 block
-		ARG 3 layer1Suffix
 	METHOD method_65415 registerBed (Lnet/minecraft/class_1767;)V
 		ARG 1 color
-	METHOD method_65416 registerTwoLayerItemModel (Lnet/minecraft/class_2248;Ljava/lang/String;)V
-		ARG 1 block
-		ARG 2 layer1Suffix
 	METHOD method_65417 registerDoubleBlockAndItem (Lnet/minecraft/class_2248;Lnet/minecraft/class_4910$class_4913;)V
 		ARG 1 block
 		ARG 2 crossType
@@ -896,7 +884,7 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		METHOD method_25727 getFlowerPotCrossModel ()Lnet/minecraft/class_4942;
 		METHOD method_65296 getTextureMap (Lnet/minecraft/class_2248;)Lnet/minecraft/class_4944;
 			ARG 1 block
-		METHOD method_65297 registerItemModel (Lnet/minecraft/class_4910;Lnet/minecraft/class_2248;)Lnet/minecraft/class_2960;
+		METHOD method_65297 registerItemModel (Lnet/minecraft/class_4910;Lnet/minecraft/class_2248;Ljava/lang/String;)Lnet/minecraft/class_2960;
 			ARG 1 modelGenerator
 			ARG 2 block
 		METHOD method_65298 getFlowerPotTextureMap (Lnet/minecraft/class_2248;)Lnet/minecraft/class_4944;

@@ -13,5 +13,5 @@ CLASS net/minecraft/class_9120 net/minecraft/test/TestStructurePlacer
 		ARG 1 origin
 		ARG 2 testsPerRow
 		ARG 3 clearBeforeBatch
-	METHOD method_61101 (Lnet/minecraft/class_3218;Lnet/minecraft/class_4517;)V
-		ARG 1 state
+	METHOD method_61101 (Lnet/minecraft/class_4517;)V
+		ARG 0 state

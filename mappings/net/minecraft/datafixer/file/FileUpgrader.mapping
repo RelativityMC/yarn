@@ -49,7 +49,7 @@ CLASS net/minecraft/class_1_193 net/minecraft/datafixer/file/FileUpgrader
 		ARG 0 path
 	METHOD method_1_1706 areHardLinksSupported (Ljava/nio/file/Path;)Z
 		ARG 0 path
-	METHOD method_1_1707 fixFilesInWorld (Lnet/minecraft/class_32$class_5143;Ljava/util/List;Ljava/nio/file/Path;Ljava/nio/file/Path;)V
+	METHOD method_1_1707 fixFilesInWorld (Lnet/minecraft/class_32$class_5143;Ljava/util/List;Ljava/nio/file/Path;Ljava/nio/file/Path;Lnet/minecraft/class_1_27;)V
 		ARG 0 session
 		ARG 1 moves
 		ARG 2 filefixDir

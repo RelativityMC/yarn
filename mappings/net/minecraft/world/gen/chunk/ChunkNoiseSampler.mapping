@@ -121,9 +121,8 @@ CLASS net/minecraft/class_6568 net/minecraft/world/gen/chunk/ChunkNoiseSampler
 			COMMENT the density function to get an actual implementation for
 	METHOD method_40530 (Lnet/minecraft/class_6910;Lnet/minecraft/class_6910$class_6912;)Lnet/minecraft/class_2680;
 		ARG 2 pos
-	METHOD method_40531 createMultiNoiseSampler (Lnet/minecraft/class_6953;Ljava/util/List;)Lnet/minecraft/class_6544$class_6552;
+	METHOD method_40531 createMultiNoiseSampler (Lnet/minecraft/class_6953;)Lnet/minecraft/class_6544$class_6552;
 		ARG 1 noiseRouter
-		ARG 2 spawnTarget
 	METHOD method_40532 sampleDensity (ZI)V
 		COMMENT Samples the density values for all cells in the chunk with the given X coordinate.
 		COMMENT This is done for every {@code interpolated} function.

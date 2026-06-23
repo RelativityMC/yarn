@@ -5,8 +5,6 @@ CLASS net/minecraft/class_5624 net/minecraft/test/StructureTestListener
 		ARG 0 world
 		ARG 1 formatting
 		ARG 2 message
-	METHOD method_32249 (Lnet/minecraft/class_3222;)Z
-		ARG 0 player
 	METHOD method_32250 (Ljava/lang/String;Lnet/minecraft/class_124;Lnet/minecraft/class_3222;)V
 		ARG 2 player
 	METHOD method_32254 failTest (Lnet/minecraft/class_4517;Ljava/lang/Throwable;)V

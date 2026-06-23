@@ -136,7 +136,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_39718 realmsPeriodicCheckers Lnet/minecraft/class_7578;
 	FIELD field_39769 narratorManager Lnet/minecraft/class_333;
 	FIELD field_39924 advanceValidatingTextRenderer Lnet/minecraft/class_327;
-	FIELD field_40380 defaultResourcePack Lnet/minecraft/class_3268;
+	FIELD field_40380 defaultResourcePack Lnet/minecraft/class_1_1065;
 	FIELD field_40381 serverResourcePackLoader Lnet/minecraft/class_1066;
 	FIELD field_41331 telemetryManager Lnet/minecraft/class_6628;
 	FIELD field_41332 renderTime J
@@ -412,7 +412,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_44646 getRealmsPeriodicCheckers ()Lnet/minecraft/class_7578;
 	METHOD method_44647 getMultiplayerBanDetails ()Lcom/mojang/authlib/minecraft/BanDetails;
 	METHOD method_44713 getNarratorManager ()Lnet/minecraft/class_333;
-	METHOD method_45573 getDefaultResourcePack ()Lnet/minecraft/class_3268;
+	METHOD method_45573 getDefaultResourcePack ()Lnet/minecraft/class_1_1065;
 	METHOD method_47595 isOptionalTelemetryEnabledByApi ()Z
 	METHOD method_47596 isTelemetryEnabledByApi ()Z
 	METHOD method_47599 getCurrentFps ()I

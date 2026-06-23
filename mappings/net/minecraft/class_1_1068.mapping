@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_1068
+	METHOD method_14407 getMetadata (Lnet/minecraft/class_7677;)Ljava/lang/Object;
+	METHOD method_14410 openRoot ([Ljava/lang/String;)Lnet/minecraft/class_7367;
+	METHOD method_56926 getInfo ()Lnet/minecraft/class_9224;

@@ -1,9 +1,8 @@
 CLASS net/minecraft/class_7059 net/minecraft/structure/StructureSet
 	FIELD field_37195 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_37196 REGISTRY_CODEC Lcom/mojang/serialization/Codec;
-	METHOD <init> (Lnet/minecraft/class_6880;Lnet/minecraft/class_6874;)V
+	METHOD <init> (Lnet/minecraft/class_6880;Lnet/minecraft/class_1_1143;)V
 		ARG 1 structure
-		ARG 2 placement
 	METHOD method_41144 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
 	METHOD method_41145 createEntry (Lnet/minecraft/class_6880;)Lnet/minecraft/class_7059$class_7060;

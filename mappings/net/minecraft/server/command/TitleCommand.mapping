@@ -6,11 +6,10 @@ CLASS net/minecraft/class_3151 net/minecraft/server/command/TitleCommand
 		ARG 0 context
 	METHOD method_13801 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
-	METHOD method_13802 executeTitle (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_2561;Ljava/lang/String;Ljava/util/function/Function;)I
+	METHOD method_13802 executeTitle (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_2561;Lnet/minecraft/class_1_1083$class_1_1091;Ljava/util/function/Function;)I
 		ARG 0 source
 		ARG 1 targets
 		ARG 2 title
-		ARG 3 titleType
 		ARG 4 constructor
 	METHOD method_13803 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context

@@ -9,7 +9,6 @@ CLASS net/minecraft/class_3115 net/minecraft/server/command/ScoreboardCommand
 		ARG 0 context
 	METHOD method_13575 executeReset (Lnet/minecraft/class_2168;Ljava/util/Collection;)I
 		ARG 0 source
-		ARG 1 targets
 	METHOD method_13576 executeModifyObjective (Lnet/minecraft/class_2168;Lnet/minecraft/class_266;Lnet/minecraft/class_2561;)I
 		ARG 0 source
 		ARG 1 objective
@@ -18,7 +17,6 @@ CLASS net/minecraft/class_3115 net/minecraft/server/command/ScoreboardCommand
 		ARG 0 context
 	METHOD method_13578 executeAdd (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_266;I)I
 		ARG 0 source
-		ARG 1 targets
 		ARG 2 objective
 		ARG 3 score
 	METHOD method_13579 (Lcom/mojang/brigadier/context/CommandContext;)I
@@ -42,7 +40,6 @@ CLASS net/minecraft/class_3115 net/minecraft/server/command/ScoreboardCommand
 		ARG 5 sourceObjectives
 	METHOD method_13586 executeReset (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_266;)I
 		ARG 0 source
-		ARG 1 targets
 		ARG 2 objective
 	METHOD method_13587 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 0 context
@@ -77,7 +74,6 @@ CLASS net/minecraft/class_3115 net/minecraft/server/command/ScoreboardCommand
 		ARG 0 context
 	METHOD method_13600 executeRemove (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_266;I)I
 		ARG 0 source
-		ARG 1 targets
 		ARG 2 objective
 		ARG 3 score
 	METHOD method_13601 (Lnet/minecraft/class_274$class_275;Lcom/mojang/brigadier/context/CommandContext;)I
@@ -89,7 +85,6 @@ CLASS net/minecraft/class_3115 net/minecraft/server/command/ScoreboardCommand
 		ARG 0 context
 	METHOD method_13604 executeSet (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_266;I)I
 		ARG 0 source
-		ARG 1 targets
 		ARG 2 objective
 		ARG 3 score
 	METHOD method_13605 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
@@ -104,7 +99,6 @@ CLASS net/minecraft/class_3115 net/minecraft/server/command/ScoreboardCommand
 		ARG 0 context
 	METHOD method_13609 executeEnable (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_266;)I
 		ARG 0 source
-		ARG 1 targets
 		ARG 2 objective
 	METHOD method_13610 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
@@ -138,16 +132,12 @@ CLASS net/minecraft/class_3115 net/minecraft/server/command/ScoreboardCommand
 		ARG 2 enable
 	METHOD method_55349 executeSetDisplayName (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_266;Lnet/minecraft/class_2561;)I
 		ARG 0 source
-		ARG 1 targets
 		ARG 2 objective
 		ARG 3 displayName
 	METHOD method_55350 executeSetNumberFormat (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_266;Lnet/minecraft/class_9022;)I
 		ARG 0 source
-		ARG 1 targets
 		ARG 2 objective
 		ARG 3 numberFormat
-	METHOD method_55352 getNextDisplayName (Ljava/util/Collection;)Lnet/minecraft/class_2561;
-		ARG 0 targets
 	METHOD method_55355 (Lnet/minecraft/class_3115$class_9008;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 1 context
 	METHOD method_55360 (Lnet/minecraft/class_3115$class_9008;Lcom/mojang/brigadier/context/CommandContext;)I

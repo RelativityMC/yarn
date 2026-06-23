@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_6874 net/minecraft/world/gen/chunk/placement/StructurePlacement
-	FIELD field_36428 TYPE_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_37775 ARBITRARY_SALT I
 	FIELD field_37776 locateOffset Lnet/minecraft/class_2382;
 	FIELD field_37777 frequencyReductionMethod Lnet/minecraft/class_6874$class_7154;
@@ -12,7 +11,6 @@ CLASS net/minecraft/class_6874 net/minecraft/world/gen/chunk/placement/Structure
 		ARG 3 frequency
 		ARG 4 salt
 		ARG 5 exclusionZone
-	METHOD method_40166 getType ()Lnet/minecraft/class_6875;
 	METHOD method_40168 isStartChunk (Lnet/minecraft/class_7869;II)Z
 		ARG 1 calculator
 		ARG 2 chunkX
@@ -23,8 +21,6 @@ CLASS net/minecraft/class_6874 net/minecraft/world/gen/chunk/placement/Structure
 		ARG 3 chunkX
 		ARG 4 chunkZ
 		ARG 5 frequency
-	METHOD method_41636 getLocatePos (Lnet/minecraft/class_1923;)Lnet/minecraft/class_2338;
-		ARG 1 chunkPos
 	METHOD method_41637 buildCodec (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/Products$P5;
 		ARG 0 instance
 	METHOD method_41638 legacyType3ShouldGenerate (JIIIF)Z
@@ -33,7 +29,7 @@ CLASS net/minecraft/class_6874 net/minecraft/world/gen/chunk/placement/Structure
 		ARG 3 chunkX
 		ARG 4 chunkZ
 		ARG 5 frequency
-	METHOD method_41639 shouldGenerate (Lnet/minecraft/class_7869;II)Z
+	METHOD method_41639 (Lnet/minecraft/class_7869;II)Z
 		ARG 1 calculator
 		ARG 2 chunkX
 		ARG 3 chunkZ
@@ -49,12 +45,11 @@ CLASS net/minecraft/class_6874 net/minecraft/world/gen/chunk/placement/Structure
 		ARG 3 chunkX
 		ARG 4 chunkZ
 		ARG 5 frequency
-	METHOD method_41642 getLocateOffset ()Lnet/minecraft/class_2382;
 	METHOD method_41643 getFrequencyReductionMethod ()Lnet/minecraft/class_6874$class_7154;
 	METHOD method_41644 getFrequency ()F
 	METHOD method_41645 getSalt ()I
 	METHOD method_41646 getExclusionZone ()Ljava/util/Optional;
-	METHOD method_56575 applyFrequencyReduction (IIJ)Z
+	METHOD method_56575 (IIJ)Z
 		ARG 1 chunkX
 		ARG 2 chunkZ
 		ARG 3 seed

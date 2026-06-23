@@ -920,14 +920,6 @@ CLASS net/minecraft/class_1802 net/minecraft/item/Items
 		ARG 2 color
 	METHOD method_1_3969 (Lnet/minecraft/class_1767;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
 		ARG 1 settings
-	METHOD method_1_3970 (Lnet/minecraft/class_1_784;Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
-		ARG 0 id
-		ARG 1 block
-		ARG 2 color
-	METHOD method_1_3971 (Lnet/minecraft/class_1_784;Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
-		ARG 0 id
-		ARG 1 block
-		ARG 2 color
 	METHOD method_1_3972 (Lnet/minecraft/class_1_784;Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
 		ARG 0 id
 		ARG 1 block
@@ -998,8 +990,6 @@ CLASS net/minecraft/class_1802 net/minecraft/item/Items
 		ARG 0 settings
 	METHOD method_58105 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
 		ARG 0 settings
-	METHOD method_58106 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
-		ARG 0 settings
 	METHOD method_63695 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
 		ARG 0 block
 		ARG 1 settings
@@ -1010,24 +1000,6 @@ CLASS net/minecraft/class_1802 net/minecraft/item/Items
 		ARG 0 block
 		ARG 1 settings
 	METHOD method_63701 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 settings
-	METHOD method_63703 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 settings
-	METHOD method_63705 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 settings
-	METHOD method_63707 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 settings
-	METHOD method_63709 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 settings
-	METHOD method_63711 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 settings
-	METHOD method_63713 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
 		ARG 0 block
 		ARG 1 settings
 	METHOD method_63715 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
@@ -1046,21 +1018,6 @@ CLASS net/minecraft/class_1802 net/minecraft/item/Items
 		ARG 0 block
 		ARG 1 settings
 	METHOD method_63725 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 settings
-	METHOD method_63727 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 settings
-	METHOD method_63729 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 settings
-	METHOD method_63731 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 settings
-	METHOD method_63733 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 settings
-	METHOD method_63735 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
 		ARG 0 block
 		ARG 1 settings
 	METHOD method_63737 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
@@ -1105,15 +1062,6 @@ CLASS net/minecraft/class_1802 net/minecraft/item/Items
 		ARG 0 block
 		ARG 1 settings
 	METHOD method_63783 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 settings
-	METHOD method_63785 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 settings
-	METHOD method_63787 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 block
-		ARG 1 settings
-	METHOD method_63789 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
 		ARG 0 block
 		ARG 1 settings
 	METHOD method_63791 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
@@ -1183,12 +1131,6 @@ CLASS net/minecraft/class_1802 net/minecraft/item/Items
 	METHOD method_63887 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
 		ARG 0 settings
 	METHOD method_63888 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 settings
-	METHOD method_63889 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 settings
-	METHOD method_63890 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
-		ARG 0 settings
-	METHOD method_63891 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
 		ARG 0 settings
 	METHOD method_63892 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
 		ARG 0 settings
@@ -1307,10 +1249,6 @@ CLASS net/minecraft/class_1802 net/minecraft/item/Items
 	METHOD method_72514 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
 		ARG 0 settings
 	METHOD method_72515 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
-		ARG 0 settings
-	METHOD method_72516 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
-		ARG 0 settings
-	METHOD method_72517 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
 		ARG 0 settings
 	METHOD method_73100 (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792;
 		ARG 0 block

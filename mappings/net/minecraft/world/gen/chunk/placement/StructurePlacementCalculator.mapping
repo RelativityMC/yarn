@@ -8,12 +8,11 @@ CLASS net/minecraft/class_7869 net/minecraft/world/gen/chunk/placement/Structure
 	FIELD field_40905 concentricPlacementsToPositions Ljava/util/Map;
 	FIELD field_40906 calculated Z
 	FIELD field_40907 structureSets Ljava/util/List;
-	METHOD <init> (Lnet/minecraft/class_7138;Lnet/minecraft/class_1966;JJLjava/util/List;)V
+	METHOD <init> (Lnet/minecraft/class_7138;Lnet/minecraft/class_1966;JLnet/minecraft/class_1923;JLjava/util/List;)V
 		ARG 1 noiseConfig
-		ARG 2 biomeSource
 		ARG 3 structureSeed
-		ARG 5 concentricRingSeed
-		ARG 7 structureSets
+		ARG 6 concentricRingSeed
+		ARG 8 structureSets
 	METHOD method_46697 getStructureSets ()Ljava/util/List;
 	METHOD method_46699 (Lnet/minecraft/class_1966;Lnet/minecraft/class_6880$class_6883;)Z
 		ARG 1 structureSet
@@ -21,16 +20,16 @@ CLASS net/minecraft/class_7869 net/minecraft/world/gen/chunk/placement/Structure
 		ARG 1 structureSet
 	METHOD method_46701 (Lcom/google/common/base/Stopwatch;Lnet/minecraft/class_6880;Ljava/util/List;)Ljava/util/List;
 		ARG 2 positions
-	METHOD method_46702 create (Lnet/minecraft/class_7138;JLnet/minecraft/class_1966;Lnet/minecraft/class_7225;)Lnet/minecraft/class_7869;
+	METHOD method_46702 create (Lnet/minecraft/class_7138;JLnet/minecraft/class_1923;Lnet/minecraft/class_1966;Lnet/minecraft/class_7225;)Lnet/minecraft/class_7869;
 		ARG 0 noiseConfig
 		ARG 1 seed
-		ARG 3 biomeSource
-		ARG 4 structureSetRegistry
-	METHOD method_46703 create (Lnet/minecraft/class_7138;JLnet/minecraft/class_1966;Ljava/util/stream/Stream;)Lnet/minecraft/class_7869;
+		ARG 4 biomeSource
+		ARG 5 structureSetRegistry
+	METHOD method_46703 create (Lnet/minecraft/class_7138;JLnet/minecraft/class_1923;Lnet/minecraft/class_1966;Ljava/util/stream/Stream;)Lnet/minecraft/class_7869;
 		ARG 0 noiseConfig
 		ARG 1 seed
-		ARG 3 biomeSource
-		ARG 4 structureSets
+		ARG 4 biomeSource
+		ARG 5 structureSets
 	METHOD method_46704 (Lnet/minecraft/class_3195;)Ljava/util/List;
 		ARG 0 structure
 	METHOD method_46705 (Lnet/minecraft/class_7059$class_7060;)Ljava/util/stream/Stream;

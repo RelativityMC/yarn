@@ -11,15 +11,12 @@ CLASS net/minecraft/class_840 net/minecraft/client/render/block/entity/AbstractE
 		ARG 1 vertices
 	METHOD method_1_3076 (Lnet/minecraft/class_2350;)Ljava/util/List;
 		ARG 0 direction
-	METHOD method_1_3077 (Ljava/util/Collection;Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;)V
-		ARG 1 matricesEntry
-		ARG 2 vertexConsumer
+	METHOD method_1_3077 (Ljava/util/Collection;Ljava/util/function/Consumer;Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;)V
+		ARG 2 matricesEntry
 	METHOD method_1_3078 render (Ljava/util/Collection;Lnet/minecraft/class_1921;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;)V
 		ARG 0 visibleDirections
-		ARG 1 renderLayer
 		ARG 2 matrices
-		ARG 3 queue
-	METHOD method_1_3079 render (Lnet/minecraft/class_1921;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;)V
+	METHOD method_1_3079 render (Lnet/minecraft/class_1921;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;I)V
 		ARG 0 renderLayer
 		ARG 1 matrices
 		ARG 2 queue

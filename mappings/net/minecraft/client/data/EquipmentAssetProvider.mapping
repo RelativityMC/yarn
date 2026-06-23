@@ -5,9 +5,9 @@ CLASS net/minecraft/class_10206 net/minecraft/client/data/EquipmentAssetProvider
 	METHOD method_64112 (Ljava/util/Map;Lnet/minecraft/class_5321;Lnet/minecraft/class_10186;)V
 		ARG 1 key
 		ARG 2 model
-	METHOD method_65423 createHumanoidOnlyModel (Ljava/lang/String;)Lnet/minecraft/class_10186;
+	METHOD method_65423 createHumanoidOnlyModel (Ljava/lang/String;)Lnet/minecraft/class_10186$class_10187;
 		ARG 0 id
 	METHOD method_65424 bootstrap (Ljava/util/function/BiConsumer;)V
 		ARG 0 equipmentBiConsumer
-	METHOD method_65425 createHumanoidAndHorseModel (Ljava/lang/String;)Lnet/minecraft/class_10186;
+	METHOD method_65425 createHumanoidAndHorseModel (Ljava/lang/String;)Lnet/minecraft/class_10186$class_10187;
 		ARG 0 id

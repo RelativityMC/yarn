@@ -27,9 +27,7 @@ CLASS net/minecraft/class_47 net/minecraft/loot/context/LootContext
 	METHOD method_51185 table (Lnet/minecraft/class_52;)Lnet/minecraft/class_47$class_8487;
 		ARG 0 table
 	METHOD method_51186 itemModifier (Lnet/minecraft/class_117;)Lnet/minecraft/class_47$class_8487;
-		ARG 0 itemModifier
 	METHOD method_51187 predicate (Lnet/minecraft/class_5341;)Lnet/minecraft/class_47$class_8487;
-		ARG 0 predicate
 	METHOD method_65013 get (Lnet/minecraft/class_169;)Ljava/lang/Object;
 		ARG 1 parameter
 	CLASS class_48 Builder

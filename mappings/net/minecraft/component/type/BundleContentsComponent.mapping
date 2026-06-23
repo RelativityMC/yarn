@@ -27,20 +27,15 @@ CLASS net/minecraft/class_9276 net/minecraft/component/type/BundleContentsCompon
 		ARG 0 component
 	METHOD method_57425 calculateOccupancy (Ljava/util/List;)Lcom/mojang/serialization/DataResult;
 		ARG 0 stacks
-	METHOD method_57426 size ()I
 	METHOD method_57428 getOccupancy ()Lcom/mojang/serialization/DataResult;
 	METHOD method_57429 isEmpty ()Z
-	METHOD method_59707 stream ()Ljava/util/stream/Stream;
 	METHOD method_61666 getNumberOfStacksShown ()I
 	METHOD method_61667 canBeBundled (Lnet/minecraft/class_1799;)Z
 		ARG 0 stack
 	METHOD method_61668 getSelectedStackIndex ()I
 	CLASS class_9277 Builder
-		FIELD field_49296 stacks Ljava/util/List;
 		FIELD field_49297 occupancy Lorg/apache/commons/lang3/math/Fraction;
 		FIELD field_52593 selectedStackIndex I
-		METHOD <init> (Lnet/minecraft/class_9276;)V
-			ARG 1 from
 		METHOD method_57430 removeSelected ()Lnet/minecraft/class_1799;
 		METHOD method_57431 add (Lnet/minecraft/class_1735;Lnet/minecraft/class_1657;)I
 			ARG 1 slot
@@ -49,7 +44,6 @@ CLASS net/minecraft/class_9276 net/minecraft/component/type/BundleContentsCompon
 			ARG 1 stack
 		METHOD method_57433 getOccupancy ()Lorg/apache/commons/lang3/math/Fraction;
 		METHOD method_57434 getInsertionIndex (Lnet/minecraft/class_1799;)I
-			ARG 1 stack
 		METHOD method_57435 build ()Lnet/minecraft/class_9276;
 		METHOD method_57436 getMaxAllowed (Lorg/apache/commons/lang3/math/Fraction;)I
 			ARG 1 spacePerItem

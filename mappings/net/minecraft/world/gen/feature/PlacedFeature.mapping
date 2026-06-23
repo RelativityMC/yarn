@@ -17,7 +17,7 @@ CLASS net/minecraft/class_6796 net/minecraft/world/gen/feature/PlacedFeature
 		ARG 4 pos
 	METHOD method_39645 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
-	METHOD method_39646 (Lnet/minecraft/class_2975;Lnet/minecraft/class_5444;Lnet/minecraft/class_5819;Lorg/apache/commons/lang3/mutable/MutableBoolean;Lnet/minecraft/class_2338;)V
+	METHOD method_39646 (Lnet/minecraft/class_3031;Lnet/minecraft/class_5444;Lnet/minecraft/class_5819;Lorg/apache/commons/lang3/mutable/MutableBoolean;Lnet/minecraft/class_2338;)V
 		ARG 4 placedPos
 	METHOD method_39647 (Lnet/minecraft/class_6796;)Ljava/util/List;
 		ARG 0 feature

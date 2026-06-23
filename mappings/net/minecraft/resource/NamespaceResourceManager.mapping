@@ -16,26 +16,22 @@ CLASS net/minecraft/class_3294 net/minecraft/resource/NamespaceResourceManager
 		ARG 0 id
 	METHOD method_24233 addPack (Lnet/minecraft/class_3262;)V
 		ARG 1 pack
-	METHOD method_41256 addPack (Lnet/minecraft/class_3262;Ljava/util/function/Predicate;)V
+	METHOD method_41256 addPack (Lnet/minecraft/class_3262;Lnet/minecraft/class_3262$class_1_1042;)V
 		ARG 1 pack
-		ARG 2 filter
 	METHOD method_41257 (Lnet/minecraft/class_3294$class_7082;)Lnet/minecraft/class_3262;
 		ARG 0 pack
-	METHOD method_41258 findAndAdd (Lnet/minecraft/class_3294$class_7082;Ljava/lang/String;Ljava/util/function/Predicate;Ljava/util/Map;)V
+	METHOD method_41258 findAndAdd (Lnet/minecraft/class_3294$class_7082;Ljava/lang/String;Lnet/minecraft/class_3300$class_1_1101;Ljava/util/Map;)V
 		ARG 1 pack
 		ARG 2 startingPath
-		ARG 3 allowedPathPredicate
 		ARG 4 idToEntryList
 	METHOD method_41259 applyFilter (Lnet/minecraft/class_3294$class_7082;Ljava/util/Map;)V
 		ARG 0 pack
 		ARG 1 idToEntryList
-	METHOD method_41260 addPack (Ljava/lang/String;Lnet/minecraft/class_3262;Ljava/util/function/Predicate;)V
+	METHOD method_41260 addPack (Ljava/lang/String;Lnet/minecraft/class_3262;Lnet/minecraft/class_3262$class_1_1042;)V
 		ARG 1 id
 		ARG 2 underlyingPack
-		ARG 3 filter
-	METHOD method_41261 addPack (Ljava/lang/String;Ljava/util/function/Predicate;)V
+	METHOD method_41261 addPack (Ljava/lang/String;Lnet/minecraft/class_3262$class_1_1042;)V
 		ARG 1 id
-		ARG 2 filter
 	METHOD method_43035 createMetadataSupplier (Lnet/minecraft/class_2960;I)Lnet/minecraft/class_7367;
 		ARG 1 id
 		ARG 2 index
@@ -53,10 +49,10 @@ CLASS net/minecraft/class_3294 net/minecraft/resource/NamespaceResourceManager
 	METHOD method_45293 (Ljava/util/Map;Ljava/util/Map;Lnet/minecraft/class_2960;Lnet/minecraft/class_3294$class_7681;)V
 		ARG 2 id
 		ARG 3 result
-	METHOD method_45294 (Ljava/util/function/Predicate;Ljava/util/Map;Lnet/minecraft/class_3262;ILjava/util/Map;Lnet/minecraft/class_2960;Lnet/minecraft/class_7367;)V
+	METHOD method_45294 (Lnet/minecraft/class_3300$class_1_1101;Ljava/util/Map;Lnet/minecraft/class_3262;ILjava/util/Map;Lnet/minecraft/class_2960;Lnet/minecraft/class_7367;)V
 		ARG 5 id
 		ARG 6 supplier
-	METHOD method_45295 (Ljava/util/function/Predicate;Ljava/util/Map;Lnet/minecraft/class_3262;Lnet/minecraft/class_2960;Lnet/minecraft/class_7367;)V
+	METHOD method_45295 (Lnet/minecraft/class_3300$class_1_1101;Ljava/util/Map;Lnet/minecraft/class_3262;Lnet/minecraft/class_2960;Lnet/minecraft/class_7367;)V
 		ARG 3 id
 		ARG 4 supplier
 	METHOD method_45296 isMcmeta (Lnet/minecraft/class_2960;)Z

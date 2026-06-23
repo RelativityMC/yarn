@@ -163,8 +163,6 @@ CLASS net/minecraft/class_2794 net/minecraft/world/gen/chunk/ChunkGenerator
 		ARG 11 dimension
 	METHOD method_41045 (Lnet/minecraft/class_3449;Lnet/minecraft/class_2378;)Ljava/lang/String;
 		ARG 1 structureTypeRegistry
-	METHOD method_41046 (Lnet/minecraft/class_6874;)Ljava/util/Set;
-		ARG 0 placement
 	METHOD method_41047 (Lnet/minecraft/class_2338;Lnet/minecraft/class_3449;)Z
 		ARG 1 start
 	METHOD method_41052 (Lorg/apache/commons/lang3/mutable/MutableBoolean;Ljava/util/function/Predicate;Lnet/minecraft/class_3449;)V
@@ -172,12 +170,11 @@ CLASS net/minecraft/class_2794 net/minecraft/world/gen/chunk/ChunkGenerator
 	METHOD method_41521 checkNotReferenced (Lnet/minecraft/class_5138;Lnet/minecraft/class_3449;)Z
 		ARG 0 structureAccessor
 		ARG 1 start
-	METHOD method_41522 locateStructure (Ljava/util/Set;Lnet/minecraft/class_4538;Lnet/minecraft/class_5138;ZLnet/minecraft/class_6874;Lnet/minecraft/class_1923;)Lcom/mojang/datafixers/util/Pair;
+	METHOD method_41522 locateStructure (Ljava/util/Set;Lnet/minecraft/class_4538;Lnet/minecraft/class_5138;ZLnet/minecraft/class_1_1143;Lnet/minecraft/class_1923;)Lcom/mojang/datafixers/util/Pair;
 		ARG 0 structures
 		ARG 1 world
 		ARG 2 structureAccessor
 		ARG 3 skipReferencedStructures
-		ARG 4 placement
 		ARG 5 pos
 	METHOD method_44216 getGenerationSettings (Lnet/minecraft/class_6880;)Lnet/minecraft/class_5485;
 		ARG 1 biomeEntry

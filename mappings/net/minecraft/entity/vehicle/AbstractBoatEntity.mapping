@@ -60,8 +60,6 @@ CLASS net/minecraft/class_10255 net/minecraft/entity/vehicle/AbstractBoatEntity
 		ARG 1 paddle
 	METHOD method_64492 clampPassengerYaw (Lnet/minecraft/class_1297;)V
 		ARG 1 passenger
-	METHOD method_64493 (Lnet/minecraft/class_1297;)Z
-		ARG 0 passenger
 	METHOD method_64494 getPaddleSound ()Lnet/minecraft/class_3414;
 	METHOD method_64495 getWaterHeightBelow ()F
 	METHOD method_64496 setBubbleWobbleTicks (I)V

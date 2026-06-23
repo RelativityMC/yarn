@@ -1,10 +1,4 @@
 CLASS net/minecraft/class_6686 net/minecraft/world/gen/surfacebuilder/MaterialRules
-	FIELD field_35222 STONE_DEPTH_FLOOR Lnet/minecraft/class_6686$class_6693;
-	FIELD field_35223 STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH Lnet/minecraft/class_6686$class_6693;
-	FIELD field_35224 STONE_DEPTH_CEILING_WITH_SURFACE_DEPTH Lnet/minecraft/class_6686$class_6693;
-	FIELD field_35494 STONE_DEPTH_CEILING Lnet/minecraft/class_6686$class_6693;
-	FIELD field_36341 STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH_RANGE_6 Lnet/minecraft/class_6686$class_6693;
-	FIELD field_36342 STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH_RANGE_30 Lnet/minecraft/class_6686$class_6693;
 	METHOD method_1_5437 noiseThreshold3d (Lnet/minecraft/class_5321;D)Lnet/minecraft/class_6686$class_6693;
 		ARG 0 noise
 		ARG 1 min
@@ -88,7 +82,6 @@ CLASS net/minecraft/class_6686 net/minecraft/world/gen/surfacebuilder/MaterialRu
 	CLASS class_6692 BooleanSupplier
 		METHOD method_39069 get ()Z
 	CLASS class_6693 MaterialCondition
-		FIELD field_35232 CODEC Lcom/mojang/serialization/Codec;
 		METHOD method_39064 codec ()Lcom/mojang/serialization/MapCodec;
 		METHOD method_39070 registerAndGetDefault (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
 			ARG 0 registry
@@ -203,7 +196,6 @@ CLASS net/minecraft/class_6686 net/minecraft/world/gen/surfacebuilder/MaterialRu
 		METHOD apply (Ljava/lang/Object;)Ljava/lang/Object;
 			ARG 1 context
 	CLASS class_6708 MaterialRule
-		FIELD field_35252 CODEC Lcom/mojang/serialization/Codec;
 		METHOD method_39061 codec ()Lcom/mojang/serialization/MapCodec;
 		METHOD method_39085 registerAndGetDefault (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
 			ARG 0 registry

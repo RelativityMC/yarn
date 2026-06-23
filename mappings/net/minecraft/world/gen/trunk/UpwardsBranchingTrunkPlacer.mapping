@@ -12,11 +12,10 @@ CLASS net/minecraft/class_7390 net/minecraft/world/gen/trunk/UpwardsBranchingTru
 		ARG 5 placeBranchPerLogProbability
 		ARG 6 extraBranchLength
 		ARG 7 canGrowThrough
-	METHOD method_43199 generateExtraBranch (Lnet/minecraft/class_5281;Ljava/util/function/BiConsumer;Lnet/minecraft/class_5819;ILnet/minecraft/class_4643;Ljava/util/List;Lnet/minecraft/class_2338$class_2339;ILnet/minecraft/class_2350;II)V
+	METHOD method_43199 generateExtraBranch (Lnet/minecraft/class_5281;Ljava/util/function/BiConsumer;Lnet/minecraft/class_5819;ILnet/minecraft/class_2944;Ljava/util/List;Lnet/minecraft/class_2338$class_2339;ILnet/minecraft/class_2350;II)V
 		ARG 2 replacer
 		ARG 3 random
 		ARG 4 height
-		ARG 5 config
 		ARG 6 nodes
 		ARG 7 pos
 		ARG 8 yOffset

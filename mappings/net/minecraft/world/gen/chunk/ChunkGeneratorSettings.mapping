@@ -2,7 +2,6 @@ CLASS net/minecraft/class_5284 net/minecraft/world/gen/chunk/ChunkGeneratorSetti
 	FIELD comp_474 generationShapeConfig Lnet/minecraft/class_5309;
 	FIELD comp_475 defaultBlock Lnet/minecraft/class_2680;
 	FIELD comp_476 defaultFluid Lnet/minecraft/class_2680;
-	FIELD comp_478 surfaceRule Lnet/minecraft/class_6686$class_6708;
 	FIELD comp_479 seaLevel I
 	FIELD comp_480 mobGenerationDisabled Z
 	FIELD comp_481 aquifers Z
@@ -17,12 +16,9 @@ CLASS net/minecraft/class_5284 net/minecraft/world/gen/chunk/ChunkGeneratorSetti
 	FIELD field_26359 CAVES Lnet/minecraft/class_5321;
 	FIELD field_26360 FLOATING_ISLANDS Lnet/minecraft/class_5321;
 	FIELD field_35051 LARGE_BIOMES Lnet/minecraft/class_5321;
-	METHOD <init> (Lnet/minecraft/class_5309;Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;Lnet/minecraft/class_6953;Lnet/minecraft/class_6686$class_6708;Ljava/util/List;IZZZZ)V
-		ARG 5 surfaceRule
 	METHOD comp_474 generationShapeConfig ()Lnet/minecraft/class_5309;
 	METHOD comp_475 defaultBlock ()Lnet/minecraft/class_2680;
 	METHOD comp_476 defaultFluid ()Lnet/minecraft/class_2680;
-	METHOD comp_478 surfaceRule ()Lnet/minecraft/class_6686$class_6708;
 	METHOD comp_479 seaLevel ()I
 	METHOD comp_480 mobGenerationDisabled ()Z
 		COMMENT Whether entities will be generated during chunk population.

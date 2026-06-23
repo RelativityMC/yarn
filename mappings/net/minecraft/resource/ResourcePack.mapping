@@ -12,16 +12,11 @@ CLASS net/minecraft/class_3262 net/minecraft/resource/ResourcePack
 		ARG 2 id
 	METHOD method_14406 getNamespaces (Lnet/minecraft/class_3264;)Ljava/util/Set;
 		ARG 1 type
-	METHOD method_14407 getMetadata (Lnet/minecraft/class_7677;)Ljava/lang/Object;
-		ARG 1 metadataSerializer
 	METHOD method_14408 findResources (Lnet/minecraft/class_3264;Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/class_3262$class_7664;)V
 		ARG 1 type
 		ARG 2 namespace
 		ARG 3 prefix
 		ARG 4 consumer
 	METHOD method_14409 getId ()Ljava/lang/String;
-	METHOD method_14410 openRoot ([Ljava/lang/String;)Lnet/minecraft/class_7367;
-		ARG 1 segments
-	METHOD method_56926 getInfo ()Lnet/minecraft/class_9224;
 	METHOD method_56929 getKnownPackInfo ()Ljava/util/Optional;
 	CLASS class_7664 ResultConsumer

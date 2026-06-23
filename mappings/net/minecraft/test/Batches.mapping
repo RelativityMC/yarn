@@ -15,12 +15,9 @@ CLASS net/minecraft/class_9113 net/minecraft/test/Batches
 		ARG 1 entry
 	METHOD method_61092 batcher (I)Lnet/minecraft/class_4520$class_9116;
 		ARG 0 batchSize
-	METHOD method_66925 batch (Ljava/util/Collection;Lnet/minecraft/class_9113$class_10658;Lnet/minecraft/class_3218;)Ljava/util/List;
+	METHOD method_66925 batch (Ljava/util/Collection;Lnet/minecraft/class_9113$class_10658;Lnet/minecraft/server/MinecraftServer;)Ljava/util/List;
 		ARG 0 instances
 		ARG 1 decorator
-		ARG 2 world
-	METHOD method_66926 (Ljava/util/Map$Entry;)Ljava/util/stream/Stream;
-		ARG 0 entry
 	METHOD method_66927 (Lnet/minecraft/class_6880$class_6883;Lnet/minecraft/class_3218;)Ljava/util/stream/Stream;
 		ARG 0 instance
 		ARG 1 world
@@ -31,8 +28,6 @@ CLASS net/minecraft/class_9113 net/minecraft/test/Batches
 	METHOD method_66930 (Lnet/minecraft/class_6880;Ljava/util/List;J)Lnet/minecraft/class_4514;
 		ARG 1 states
 		ARG 2 index
-	METHOD method_66931 (Lnet/minecraft/class_4517;)Lnet/minecraft/class_6880;
-		ARG 0 state
 	CLASS class_10658 Decorator
 		METHOD method_1_246 decorate (Lnet/minecraft/class_6880$class_6883;Lnet/minecraft/class_3218;)Ljava/util/stream/Stream;
 			ARG 1 instance

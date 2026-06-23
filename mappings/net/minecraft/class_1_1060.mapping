@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_1060
+	METHOD method_4570 getFrameV (F)F
+	METHOD method_4580 getFrameU (F)F

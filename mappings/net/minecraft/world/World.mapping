@@ -210,9 +210,6 @@ CLASS net/minecraft/class_1937 net/minecraft/world/World
 	METHOD method_8500 getWorldChunk (Lnet/minecraft/class_2338;)Lnet/minecraft/class_2818;
 		COMMENT {@return the chunk that contains {@code pos}}
 		ARG 1 pos
-	METHOD method_8501 setBlockState (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Z
-		ARG 1 pos
-		ARG 2 state
 	METHOD method_8505 canEntityModifyAt (Lnet/minecraft/class_1297;Lnet/minecraft/class_2338;)Z
 		COMMENT {@return whether {@code entity} can modify blocks at {@code pos}}
 		COMMENT

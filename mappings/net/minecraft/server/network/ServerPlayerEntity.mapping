@@ -193,6 +193,7 @@ CLASS net/minecraft/class_3222 net/minecraft/server/network/ServerPlayerEntity
 	METHOD method_38786 tickFallStartPos ()V
 	METHOD method_38787 tickVehicleInLavaRiding ()V
 	METHOD method_39426 allowsServerListing ()Z
+	METHOD method_42272 getSculkShriekerWarningManager ()Lnet/minecraft/class_7262;
 	METHOD method_43502 sendMessageToClient (Lnet/minecraft/class_2561;Z)V
 		ARG 1 message
 		ARG 2 overlay

@@ -13,7 +13,7 @@ CLASS net/minecraft/class_3286 net/minecraft/resource/VanillaDataPackProvider
 	METHOD method_45286 createManager (Ljava/nio/file/Path;Lnet/minecraft/class_8580;)Lnet/minecraft/class_3283;
 		ARG 0 dataPacksPath
 		ARG 1 symlinkFinder
-	METHOD method_45287 createDefaultPack ()Lnet/minecraft/class_3268;
+	METHOD method_45287 createDefaultPack ()Lnet/minecraft/class_1_1065;
 	METHOD method_52442 (Ljava/nio/file/Path;)Z
 		ARG 0 path
 	METHOD method_52443 createClientManager ()Lnet/minecraft/class_3283;

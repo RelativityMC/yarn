@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_2843 net/minecraft/world/chunk/UpgradeData
 	FIELD field_12950 NO_UPGRADE_DATA Lnet/minecraft/class_2843;
 	FIELD field_12951 sidesToUpgrade Ljava/util/EnumSet;
-	FIELD field_12952 EIGHT_WAYS [Lnet/minecraft/class_2355;
+	FIELD field_12952 EIGHT_WAYS [Lnet/minecraft/class_1_1039$class_2355;
 	FIELD field_12953 BLOCK_TO_LOGIC Ljava/util/Map;
 	FIELD field_12954 CALLBACK_LOGICS Ljava/util/Set;
 	FIELD field_12955 centerIndicesToUpgrade [[I
@@ -28,7 +28,7 @@ CLASS net/minecraft/class_2843 net/minecraft/world/chunk/UpgradeData
 		ARG 2 world
 		ARG 3 currentPos
 		ARG 4 otherPos
-	METHOD method_12352 upgradeSide (Lnet/minecraft/class_2818;Lnet/minecraft/class_2355;)V
+	METHOD method_12352 upgradeSide (Lnet/minecraft/class_2818;Lnet/minecraft/class_1_1039$class_2355;)V
 		ARG 0 chunk
 		ARG 1 side
 	METHOD method_12353 (Lnet/minecraft/class_1937;Lnet/minecraft/class_2843$class_2844;)V

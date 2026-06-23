@@ -45,8 +45,7 @@ CLASS net/minecraft/class_6306 net/minecraft/test/TestServer
 	METHOD method_66985 selectInstances (Lnet/minecraft/class_5455;Ljava/lang/String;)Ljava/util/stream/Stream;
 		ARG 0 registryManager
 		ARG 1 selector
-	METHOD method_66986 batch (Lnet/minecraft/class_3218;)Ljava/util/List;
-		ARG 1 world
+	METHOD method_66986 batch (Lnet/minecraft/server/MinecraftServer;)Ljava/util/List;
 	METHOD method_66987 (Lnet/minecraft/class_6880$class_6883;)Z
 		ARG 0 instance
 	METHOD method_67486 logFailure (Lnet/minecraft/class_4517;)V

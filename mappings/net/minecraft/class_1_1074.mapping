@@ -1,0 +1,13 @@
+CLASS net/minecraft/class_1_1074
+	CLASS class_10379 CherryLeavesFactory
+		FIELD field_55133 spriteProvider Lnet/minecraft/class_4002;
+		METHOD <init> (Lnet/minecraft/class_4002;)V
+			ARG 1 spriteProvider
+	CLASS class_10380 PaleOakLeavesFactory
+		FIELD field_55134 spriteProvider Lnet/minecraft/class_4002;
+		METHOD <init> (Lnet/minecraft/class_4002;)V
+			ARG 1 spriteProvider
+	CLASS class_10604 TintedLeavesFactory
+		FIELD field_55867 spriteProvider Lnet/minecraft/class_4002;
+		METHOD <init> (Lnet/minecraft/class_4002;)V
+			ARG 1 spriteProvider

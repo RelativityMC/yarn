@@ -2,9 +2,8 @@ CLASS net/minecraft/class_10197 net/minecraft/client/render/entity/equipment/Equ
 	FIELD field_54179 equipmentModelLoader Lnet/minecraft/class_10201;
 	FIELD field_54180 layerTextures Ljava/util/function/Function;
 	FIELD field_54181 trimSprites Ljava/util/function/Function;
-	METHOD <init> (Lnet/minecraft/class_10201;Lnet/minecraft/class_1059;)V
+	METHOD <init> (Lnet/minecraft/class_10201;Lnet/minecraft/class_1_1126;)V
 		ARG 1 equipmentModelLoader
-		ARG 2 armorTrimsAtlas
 	METHOD method_64076 getDyeColor (Lnet/minecraft/class_10186$class_10189;I)I
 		ARG 0 layer
 		ARG 1 dyeColor
@@ -32,8 +31,5 @@ CLASS net/minecraft/class_10197 net/minecraft/client/render/entity/equipment/Equ
 		ARG 11 initialOrder
 	METHOD method_64079 (Lnet/minecraft/class_10197$class_10198;)Lnet/minecraft/class_2960;
 		ARG 0 key
-	METHOD method_64080 (Lnet/minecraft/class_1059;Lnet/minecraft/class_10197$class_10199;)Lnet/minecraft/class_1058;
-		ARG 1 key
 	CLASS class_10198 LayerTextureKey
 	CLASS class_10199 TrimSpriteKey
-		METHOD method_65573 getTexture ()Lnet/minecraft/class_2960;

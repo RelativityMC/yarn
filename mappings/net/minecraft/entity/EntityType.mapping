@@ -19,7 +19,7 @@ CLASS net/minecraft/class_1299 net/minecraft/entity/EntityType
 	FIELD field_57582 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_61222 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_61223 allowedInPeaceful Z
-	METHOD <init> (Lnet/minecraft/class_1299$class_4049;Lnet/minecraft/class_1311;ZZZZLnet/minecraft/class_6862;Lnet/minecraft/class_4048;FIILjava/lang/String;Ljava/util/Optional;Lnet/minecraft/class_7699;Z)V
+	METHOD <init> (Lnet/minecraft/class_1299$class_4049;Lnet/minecraft/class_1311;ZZZZLnet/minecraft/class_6862;Lnet/minecraft/class_4048;FIILjava/lang/String;Ljava/util/Optional;Lnet/minecraft/class_7699;ZZ)V
 		ARG 1 factory
 		ARG 2 spawnGroup
 		ARG 3 saveable
@@ -225,7 +225,6 @@ CLASS net/minecraft/class_1299 net/minecraft/entity/EntityType
 		FIELD field_53973 translationKey Lnet/minecraft/class_10162;
 		FIELD field_61224 allowedInPeaceful Z
 		METHOD <init> (Lnet/minecraft/class_1299$class_4049;Lnet/minecraft/class_1311;)V
-			ARG 1 factory
 			ARG 2 spawnGroup
 		METHOD method_5900 (Lnet/minecraft/class_1299;Lnet/minecraft/class_1937;)Lnet/minecraft/class_1297;
 			ARG 0 type

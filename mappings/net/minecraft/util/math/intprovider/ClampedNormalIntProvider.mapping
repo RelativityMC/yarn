@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_6728 net/minecraft/util/math/intprovider/ClampedNormalIntProvider
-	FIELD comp_1_348 max I
-	FIELD comp_1_349 min I
+	FIELD comp_1_345 max I
+	FIELD comp_1_346 min I
 	FIELD comp_1_376 deviation F
 	FIELD comp_1_378 mean F
 	FIELD field_35352 CODEC Lcom/mojang/serialization/MapCodec;

@@ -32,12 +32,9 @@ CLASS net/minecraft/class_156 net/minecraft/util/Util
 	METHOD method_1_2911 withAppended (Ljava/util/List;[Ljava/lang/Object;)Ljava/util/List;
 		ARG 0 list
 		ARG 1 valuesToAppend
-	METHOD method_1_3882 join ([Ljava/util/List;)Ljava/util/List;
-		ARG 0 lists
+	METHOD method_1_3882 join ([Ljava/util/Collection;)Ljava/util/List;
 	METHOD method_1_4709 getThreadInfos ()[Ljava/lang/management/ThreadInfo;
-	METHOD method_1_4710 join (Ljava/util/List;Ljava/util/List;)Ljava/util/List;
-		ARG 0 first
-		ARG 1 second
+	METHOD method_1_4710 join (Ljava/util/Collection;Ljava/util/Collection;)Ljava/util/List;
 	METHOD method_1_5113 (Lcom/google/common/escape/Escapers$Builder;)V
 		ARG 0 builder
 	METHOD method_1_6330 setNanoTimeSupplier (Lnet/minecraft/class_7576$class_7577;)V

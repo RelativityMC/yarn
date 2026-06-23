@@ -21,7 +21,7 @@ CLASS net/minecraft/class_3288 net/minecraft/resource/ResourcePackProfile
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
 	METHOD method_14457 getDisplayName ()Lnet/minecraft/class_2561;
-	METHOD method_14458 createResourcePack ()Lnet/minecraft/class_3262;
+	METHOD method_14458 createResourcePack ()Lnet/minecraft/class_1_1068;
 	METHOD method_14459 getDescription ()Lnet/minecraft/class_2561;
 	METHOD method_14460 getCompatibility ()Lnet/minecraft/class_3281;
 	METHOD method_14461 getInformationText (Z)Lnet/minecraft/class_2561;
@@ -53,8 +53,8 @@ CLASS net/minecraft/class_3288 net/minecraft/resource/ResourcePackProfile
 			ARG 4 listInverted
 	CLASS class_7679 Metadata
 	CLASS class_7680 PackFactory
-		METHOD method_52424 open (Lnet/minecraft/class_9224;)Lnet/minecraft/class_3262;
+		METHOD method_52424 open (Lnet/minecraft/class_9224;)Lnet/minecraft/class_1_1068;
 			ARG 1 info
-		METHOD method_52425 openWithOverlays (Lnet/minecraft/class_9224;Lnet/minecraft/class_3288$class_7679;)Lnet/minecraft/class_3262;
+		METHOD method_52425 openWithOverlays (Lnet/minecraft/class_9224;Lnet/minecraft/class_3288$class_7679;)Ljava/util/stream/Stream;
 			ARG 1 info
 			ARG 2 metadata

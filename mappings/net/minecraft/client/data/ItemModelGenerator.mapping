@@ -29,11 +29,10 @@ CLASS net/minecraft/class_4915 net/minecraft/client/data/ItemModelGenerator
 	METHOD method_65427 registerDyeable (Lnet/minecraft/class_1792;I)V
 		ARG 1 item
 		ARG 2 defaultColor
-	METHOD method_65429 registerArmor (Lnet/minecraft/class_1792;Lnet/minecraft/class_5321;Lnet/minecraft/class_2960;Z)V
+	METHOD method_65429 registerArmor (Lnet/minecraft/class_1792;Lnet/minecraft/class_2960;ZLjava/util/Map;)V
 		ARG 1 item
-		ARG 2 equipmentKey
-		ARG 3 trimIdPrefix
-		ARG 4 dyeable
+		ARG 2 trimIdPrefix
+		ARG 3 dyeable
 	METHOD method_65430 registerPotionTinted (Lnet/minecraft/class_1792;Lnet/minecraft/class_2960;)V
 		ARG 1 item
 		ARG 2 model

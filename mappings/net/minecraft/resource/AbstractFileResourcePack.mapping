@@ -3,5 +3,4 @@ CLASS net/minecraft/class_3255 net/minecraft/resource/AbstractFileResourcePack
 	FIELD field_49031 info Lnet/minecraft/class_9224;
 	METHOD <init> (Lnet/minecraft/class_9224;)V
 		ARG 1 info
-	METHOD method_1_564 parseMetadata (Lnet/minecraft/class_3262;)Lnet/minecraft/class_7368;
-		ARG 0 pack
+	METHOD method_1_564 parseMetadata (Lnet/minecraft/class_1_1068;)Lnet/minecraft/class_7368;

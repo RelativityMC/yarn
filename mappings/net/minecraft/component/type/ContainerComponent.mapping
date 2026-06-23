@@ -43,8 +43,6 @@ CLASS net/minecraft/class_9288 net/minecraft/component/type/ContainerComponent
 		COMMENT {@return a copy of the first contained stack in this component}
 		COMMENT
 		COMMENT <p>If this component is empty, returns an empty stack.
-	METHOD method_59712 streamNonEmpty ()Ljava/util/stream/Stream;
-		COMMENT {@return a stream over copies of this component's non-empty item stacks}
 	METHOD method_59713 findLastNonEmptyIndex (Ljava/util/List;)I
 		ARG 0 stacks
 	METHOD method_59714 iterateNonEmpty ()Ljava/lang/Iterable;

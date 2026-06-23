@@ -1,7 +1,5 @@
 CLASS net/minecraft/class_1_714 net/minecraft/client/vulkan/VulkanFeature
 	METHOD <init> (Lnet/minecraft/class_1_730;Ljava/lang/String;J)V
-		ARG 1 struct
-		ARG 2 name
 		ARG 3 offset
 	METHOD method_1_4244 get (J)Z
 		ARG 1 address

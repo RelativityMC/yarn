@@ -6,6 +6,6 @@ CLASS net/minecraft/class_3825 net/minecraft/structure/rule/RuleTest
 		ARG 2 pos
 		ARG 3 random
 	METHOD method_16766 getType ()Lnet/minecraft/class_3827;
-	METHOD method_16768 test (Lnet/minecraft/class_2680;Lnet/minecraft/class_5819;)Z
+	METHOD method_16768 test (Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)Z
 		ARG 1 state
-		ARG 2 random
+		ARG 3 random

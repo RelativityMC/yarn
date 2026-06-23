@@ -3,3 +3,8 @@ CLASS net/minecraft/class_1_761 net/minecraft/world/gen/feature/TemplateFeature
 		ARG 1 rotation
 		ARG 2 axis
 		ARG 3 template
+	CLASS class_1_771 RotatableTemplate
+		METHOD method_1_4652 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+		METHOD method_1_4653 free (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_761$class_1_771;
+			ARG 0 id

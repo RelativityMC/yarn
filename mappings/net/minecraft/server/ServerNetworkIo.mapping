@@ -7,9 +7,6 @@ CLASS net/minecraft/class_3242 net/minecraft/server/ServerNetworkIo
 	FIELD field_14110 LOGGER Lorg/slf4j/Logger;
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
 		ARG 1 server
-	METHOD method_1_5706 (Lio/netty/channel/Channel;Ljava/util/UUID;)V
-		ARG 1 channel
-		ARG 2 profileId
 	METHOD method_1_5707 clear ()V
 	METHOD method_1_6306 getSessionId ()Ljava/util/UUID;
 	METHOD method_14351 getServer ()Lnet/minecraft/server/MinecraftServer;
@@ -24,9 +21,6 @@ CLASS net/minecraft/class_3242 net/minecraft/server/ServerNetworkIo
 		METHOD initChannel (Lio/netty/channel/Channel;)V
 			ARG 1 channel
 	CLASS 2 2
-		METHOD initChannel (Lio/netty/channel/Channel;)V
-			ARG 1 channel
-	CLASS 3 3
 		METHOD initChannel (Lio/netty/channel/Channel;)V
 			ARG 1 channel
 	CLASS class_5980 DelayingChannelInboundHandler

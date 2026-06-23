@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_1038
+	METHOD method_10148 getOffsetX ()I
+	METHOD method_10164 getOffsetY ()I
+	METHOD method_10165 getOffsetZ ()I

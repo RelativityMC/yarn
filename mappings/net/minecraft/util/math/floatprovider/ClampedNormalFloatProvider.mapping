@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_5861 net/minecraft/util/math/floatprovider/ClampedNormalFloatProvider
-	FIELD comp_1_370 max F
-	FIELD comp_1_371 min F
+	FIELD comp_1_363 max F
+	FIELD comp_1_364 min F
 	FIELD comp_1_383 deviation F
 	FIELD comp_1_385 mean F
 	FIELD field_28998 CODEC Lcom/mojang/serialization/MapCodec;

@@ -1,8 +1,10 @@
 CLASS net/minecraft/class_9666 net/minecraft/loot/ContainerComponentModifier
-	METHOD method_59719 getComponentType ()Lnet/minecraft/class_9331;
-	METHOD method_59720 apply (Lnet/minecraft/class_1799;Ljava/lang/Object;Ljava/util/stream/Stream;)V
+	FIELD comp_1_1144 getDefault Lnet/minecraft/class_1_1106;
+	FIELD comp_1_1145 getComponentType Lnet/minecraft/class_9331;
+	METHOD comp_1_1144 getDefault ()Lnet/minecraft/class_1_1106;
+	METHOD comp_1_1145 getComponentType ()Lnet/minecraft/class_9331;
+	METHOD method_59720 apply (Lnet/minecraft/class_1799;Lnet/minecraft/class_1_1106;Ljava/util/stream/Stream;)V
 		ARG 1 stack
-		ARG 2 component
 		ARG 3 contents
 	METHOD method_59721 apply (Lnet/minecraft/class_1799;Ljava/util/function/UnaryOperator;)V
 		ARG 1 stack
@@ -10,15 +12,6 @@ CLASS net/minecraft/class_9666 net/minecraft/loot/ContainerComponentModifier
 	METHOD method_59722 apply (Lnet/minecraft/class_1799;Ljava/util/stream/Stream;)V
 		ARG 1 stack
 		ARG 2 contents
-	METHOD method_59723 stream (Ljava/lang/Object;)Ljava/util/stream/Stream;
-		ARG 1 component
-	METHOD method_59724 apply (Ljava/lang/Object;Ljava/util/stream/Stream;)Ljava/lang/Object;
-		ARG 1 component
-		ARG 2 contents
 	METHOD method_59725 (Ljava/util/function/UnaryOperator;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1799;
 		ARG 1 contentStack
-	METHOD method_59726 getDefault ()Ljava/lang/Object;
 	METHOD method_76205 stream (Lnet/minecraft/class_1799;)Lnet/minecraft/class_12271;
-		ARG 1 stack
-	METHOD method_76207 (Lnet/minecraft/class_1799;)Z
-		ARG 0 s

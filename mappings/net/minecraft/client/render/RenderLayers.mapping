@@ -122,8 +122,6 @@ CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 		ARG 0 texture
 		ARG 1 affectsOutline
 	METHOD method_75972 cutout ()Lnet/minecraft/class_1921;
-	METHOD method_75973 armorDecalCutoutNoCull (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
-		ARG 0 texture
 	METHOD method_75974 energySwirl (Lnet/minecraft/class_2960;FF)Lnet/minecraft/class_1921;
 		ARG 0 texture
 		ARG 1 du

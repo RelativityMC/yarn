@@ -8,7 +8,6 @@ CLASS net/minecraft/class_3898 net/minecraft/server/world/ServerChunkLoadingMana
 	FIELD field_17221 unloadedChunks Lit/unimi/dsi/fastutil/longs/LongSet;
 	FIELD field_17222 chunkHolderListDirty Z
 	FIELD field_17228 levelManager Lnet/minecraft/class_3898$class_3216;
-	FIELD field_17707 saveDir Ljava/lang/String;
 	FIELD field_18241 playerChunkWatchingManager Lnet/minecraft/class_3210;
 	FIELD field_18242 entityTrackers Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
 	FIELD field_18243 watchDistance I
@@ -34,7 +33,7 @@ CLASS net/minecraft/class_3898 net/minecraft/server/world/ServerChunkLoadingMana
 	FIELD field_54964 chunksToSave Lit/unimi/dsi/fastutil/longs/LongSet;
 	FIELD field_54965 chunksBeingSavedCount Ljava/util/concurrent/atomic/AtomicInteger;
 	FIELD field_55588 ticketManager Lnet/minecraft/class_10592;
-	METHOD <init> (Lnet/minecraft/class_3218;Lnet/minecraft/class_32$class_5143;Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_3485;Ljava/util/concurrent/Executor;Lnet/minecraft/class_1255;Lnet/minecraft/class_2823;Lnet/minecraft/class_2794;Lnet/minecraft/class_5567;Ljava/util/function/Supplier;Lnet/minecraft/class_10592;IZ)V
+	METHOD <init> (Lnet/minecraft/class_3218;Lnet/minecraft/class_32$class_5143;Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_3485;Ljava/util/concurrent/Executor;Lnet/minecraft/class_1255;Lnet/minecraft/class_2823;Lnet/minecraft/class_2794;Lnet/minecraft/class_5567;Lnet/minecraft/class_10592;IZ)V
 		ARG 1 world
 		ARG 2 session
 		ARG 3 dataFixer
@@ -44,10 +43,9 @@ CLASS net/minecraft/class_3898 net/minecraft/server/world/ServerChunkLoadingMana
 		ARG 7 chunkProvider
 		ARG 8 chunkGenerator
 		ARG 9 chunkStatusChangeListener
-		ARG 10 persistentStateManagerFactory
-		ARG 11 ticketManager
-		ARG 12 viewDistance
-		ARG 13 dsync
+		ARG 10 ticketManager
+		ARG 11 viewDistance
+		ARG 12 dsync
 	METHOD method_1_6278 isTrackingEntity (I)Z
 		ARG 1 entityId
 	METHOD method_17212 getLightingProvider ()Lnet/minecraft/class_3227;
@@ -165,7 +163,6 @@ CLASS net/minecraft/class_3898 net/minecraft/server/world/ServerChunkLoadingMana
 		ARG 0 chunks
 	METHOD method_31417 makeChunkAccessible (Lnet/minecraft/class_3193;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 holder
-	METHOD method_37476 getSaveDir ()Ljava/lang/String;
 	METHOD method_37897 getChunkGenerator ()Lnet/minecraft/class_2794;
 	METHOD method_37907 getPlayersWatchingChunk (Lnet/minecraft/class_1923;)Ljava/util/List;
 		ARG 1 pos

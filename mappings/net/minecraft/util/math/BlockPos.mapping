@@ -19,8 +19,6 @@ CLASS net/minecraft/class_2338 net/minecraft/util/math/BlockPos
 	FIELD field_48404 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_54978 SIZE_BITS_XZ I
 	FIELD field_54979 MAX_XZ I
-	METHOD <init> (Lnet/minecraft/class_2382;)V
-		ARG 1 pos
 	METHOD method_1_4673 iterateInCrossColumn (IIII)Ljava/lang/Iterable;
 		ARG 0 startX
 		ARG 1 startY

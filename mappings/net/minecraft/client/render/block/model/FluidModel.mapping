@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_1_467 net/minecraft/client/render/block/model/FluidModel
 	CLASS class_1_468 Unbaked
 		METHOD method_1_2959 bake (Lnet/minecraft/class_1_734;Lnet/minecraft/class_10813;)Lnet/minecraft/class_1_467;
-			ARG 2 model
 		METHOD method_1_2960 getTransparency (Lnet/minecraft/class_1_314$class_1_315;)Lnet/minecraft/class_1_303;
 			ARG 0 texture

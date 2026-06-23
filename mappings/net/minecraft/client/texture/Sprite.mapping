@@ -17,19 +17,17 @@ CLASS net/minecraft/class_1058 net/minecraft/client/texture/Sprite
 		ARG 6 y
 		ARG 7 padding
 	METHOD method_1_2375 getTransparency ()Lnet/minecraft/class_1_303;
-	METHOD method_4570 getFrameV (F)F
+	METHOD method_4570 (F)F
 		ARG 1 frame
 	METHOD method_4575 getMaxV ()F
 	METHOD method_4577 getMaxU ()F
-	METHOD method_4580 getFrameU (F)F
+	METHOD method_4580 (F)F
 		ARG 1 frame
 	METHOD method_4584 upload (Lcom/mojang/blaze3d/textures/GpuTexture;I)V
 		ARG 1 texture
 		ARG 2 mipmap
 	METHOD method_4593 getMinV ()F
 	METHOD method_4594 getMinU ()F
-	METHOD method_24108 getTextureSpecificVertexConsumer (Lnet/minecraft/class_4588;)Lnet/minecraft/class_4588;
-		ARG 1 consumer
 	METHOD method_35806 getX ()I
 	METHOD method_35807 getY ()I
 	METHOD method_45851 getContents ()Lnet/minecraft/class_7764;

@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_1_280 net/minecraft/world/gen/feature/BlockBlobFeatureConfig
-	METHOD method_1_2072 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance

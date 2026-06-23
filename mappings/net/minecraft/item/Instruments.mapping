@@ -5,7 +5,7 @@ CLASS net/minecraft/class_7445 net/minecraft/item/Instruments
 		ARG 0 registry
 	METHOD method_43714 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
 		ARG 0 id
-	METHOD method_61646 register (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_6880;FF)V
+	METHOD method_61646 register (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_6880;FFI)V
 		ARG 0 registry
 		ARG 1 key
 		ARG 2 sound

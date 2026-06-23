@@ -198,7 +198,6 @@ CLASS net/minecraft/class_6544 net/minecraft/world/biome/source/util/MultiNoiseU
 				ARG 1 parameters
 				ARG 2 subTree
 	CLASS class_6552 MultiNoiseSampler
-		METHOD method_39165 findBestSpawnPosition ()Lnet/minecraft/class_2338;
 		METHOD method_40444 sample (III)Lnet/minecraft/class_6544$class_6553;
 			ARG 1 x
 			ARG 2 y

@@ -17,7 +17,7 @@ CLASS net/minecraft/class_3215 net/minecraft/server/world/ServerChunkManager
 	FIELD field_52356 chunksToBroadcastUpdate Ljava/util/Set;
 	FIELD field_55594 ticketManager Lnet/minecraft/class_10592;
 	FIELD field_56524 spawningChunks Ljava/util/List;
-	METHOD <init> (Lnet/minecraft/class_3218;Lnet/minecraft/class_32$class_5143;Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_3485;Ljava/util/concurrent/Executor;Lnet/minecraft/class_2794;IIZLnet/minecraft/class_5567;Ljava/util/function/Supplier;)V
+	METHOD <init> (Lnet/minecraft/class_3218;Lnet/minecraft/class_32$class_5143;Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_3485;Ljava/util/concurrent/Executor;Lnet/minecraft/class_2794;IIZLnet/minecraft/class_5567;)V
 		ARG 1 world
 		ARG 2 session
 		ARG 3 dataFixer
@@ -28,7 +28,6 @@ CLASS net/minecraft/class_3215 net/minecraft/server/world/ServerChunkManager
 		ARG 8 simulationDistance
 		ARG 9 dsync
 		ARG 10 chunkStatusChangeListener
-		ARG 11 persistentStateManagerFactory
 	METHOD method_1_6297 isTrackingEntity (I)Z
 		ARG 1 entityId
 	METHOD method_12129 getChunkGenerator ()Lnet/minecraft/class_2794;

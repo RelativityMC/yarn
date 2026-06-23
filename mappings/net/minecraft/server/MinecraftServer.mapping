@@ -17,7 +17,6 @@ CLASS net/minecraft/server/MinecraftServer
 	COMMENT @see net.minecraft.server.integrated.IntegratedServer
 	FIELD field_1_962 clocks Lnet/minecraft/class_1_109;
 	FIELD field_1_1399 SAFE_MODE_GAME_RULES Ljava/util/function/Supplier;
-	FIELD field_1_1400 OLD_DIMENSION_DIR_NAMES Ljava/util/Map;
 	FIELD field_1_1401 gameRules Lnet/minecraft/class_1928;
 	FIELD field_1_1402 randomSequencesState Lnet/minecraft/class_8565;
 	FIELD field_1_1403 persistentStateManager Lnet/minecraft/class_26;

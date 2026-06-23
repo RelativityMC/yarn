@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_1143
+	METHOD method_41639 shouldGenerate (Lnet/minecraft/class_7869;II)Z
+	METHOD method_41642 getLocateOffset ()Lnet/minecraft/class_2382;
+	METHOD method_56575 applyFrequencyReduction (IIJ)Z

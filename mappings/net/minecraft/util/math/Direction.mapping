@@ -55,7 +55,6 @@ CLASS net/minecraft/class_2350 net/minecraft/util/math/Direction
 		ARG 0 x
 		ARG 1 y
 		ARG 2 z
-	METHOD method_10148 getOffsetX ()I
 	METHOD method_10150 fromHorizontalDegrees (D)Lnet/minecraft/class_2350;
 		ARG 0 angle
 	METHOD method_10151 getId ()Ljava/lang/String;
@@ -71,8 +70,6 @@ CLASS net/minecraft/class_2350 net/minecraft/util/math/Direction
 	METHOD method_10161 getHorizontalQuarterTurns ()I
 	METHOD method_10162 random (Lnet/minecraft/class_5819;)Lnet/minecraft/class_2350;
 		ARG 0 random
-	METHOD method_10164 getOffsetY ()I
-	METHOD method_10165 getOffsetZ ()I
 	METHOD method_10166 getAxis ()Lnet/minecraft/class_2350$class_2351;
 	METHOD method_10168 byId (Ljava/lang/String;)Lnet/minecraft/class_2350;
 		COMMENT {@return a direction with the given {@code name}, or {@code null} if there is

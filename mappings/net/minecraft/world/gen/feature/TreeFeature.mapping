@@ -4,14 +4,13 @@ CLASS net/minecraft/class_2944 net/minecraft/world/gen/feature/TreeFeature
 		ARG 0 world
 		ARG 1 pos
 		ARG 2 state
-	METHOD method_12775 generate (Lnet/minecraft/class_5281;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338;Ljava/util/function/BiConsumer;Ljava/util/function/BiConsumer;Lnet/minecraft/class_4647$class_8179;Lnet/minecraft/class_4643;)Z
+	METHOD method_12775 generate (Lnet/minecraft/class_5281;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338;Ljava/util/function/BiConsumer;Ljava/util/function/BiConsumer;Lnet/minecraft/class_4647$class_8179;)Z
 		ARG 1 world
 		ARG 2 random
 		ARG 3 pos
 		ARG 4 rootPlacerReplacer
 		ARG 5 trunkPlacerReplacer
 		ARG 6 blockPlacer
-		ARG 7 config
 	METHOD method_16416 isVine (Lnet/minecraft/class_3746;Lnet/minecraft/class_2338;)Z
 		ARG 0 world
 		ARG 1 pos
@@ -33,12 +32,11 @@ CLASS net/minecraft/class_2944 net/minecraft/world/gen/feature/TreeFeature
 	METHOD method_27371 canReplace (Lnet/minecraft/class_3746;Lnet/minecraft/class_2338;)Z
 		ARG 0 world
 		ARG 1 pos
-	METHOD method_27372 (Lnet/minecraft/class_4643;Lnet/minecraft/class_5281;Lnet/minecraft/class_4647$class_8179;Lnet/minecraft/class_5819;IIILnet/minecraft/class_4647$class_5208;)V
+	METHOD method_27372 (Lnet/minecraft/class_5281;Lnet/minecraft/class_4647$class_8179;Lnet/minecraft/class_5819;IIILnet/minecraft/class_4647$class_5208;)V
 		ARG 7 node
-	METHOD method_29963 getTopPosition (Lnet/minecraft/class_5281;ILnet/minecraft/class_2338;Lnet/minecraft/class_4643;)I
+	METHOD method_29963 getTopPosition (Lnet/minecraft/class_5281;ILnet/minecraft/class_2338;)I
 		ARG 2 height
 		ARG 3 pos
-		ARG 4 config
 	METHOD method_35363 (Lnet/minecraft/class_5281;Ljava/util/Set;Ljava/util/Set;Ljava/util/Set;Lnet/minecraft/class_3341;)Ljava/lang/Boolean;
 		ARG 4 box
 	METHOD method_35364 (Ljava/util/Set;Lnet/minecraft/class_5281;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
@@ -56,3 +54,34 @@ CLASS net/minecraft/class_2944 net/minecraft/world/gen/feature/TreeFeature
 		ARG 0 state
 	METHOD method_66482 getLeafLitterPositions (Lnet/minecraft/class_4662$class_7402;)Ljava/util/List;
 		ARG 0 decoratorGenerator
+	CLASS class_4644 Builder
+		FIELD field_21292 trunkProvider Lnet/minecraft/class_4651;
+		FIELD field_21294 decorators Ljava/util/List;
+		FIELD field_24140 foliagePlacer Lnet/minecraft/class_4647;
+		FIELD field_24141 trunkPlacer Lnet/minecraft/class_5141;
+		FIELD field_24142 minimumSize Lnet/minecraft/class_5201;
+		FIELD field_24143 ignoreVines Z
+		FIELD field_29282 foliageProvider Lnet/minecraft/class_4651;
+		FIELD field_29283 belowTrunkProvider Lnet/minecraft/class_4651;
+		FIELD field_38768 rootPlacer Ljava/util/Optional;
+		METHOD <init> (Lnet/minecraft/class_4651;Lnet/minecraft/class_5141;Lnet/minecraft/class_4651;Lnet/minecraft/class_4647;Ljava/util/Optional;Lnet/minecraft/class_5201;Lnet/minecraft/class_4651;)V
+			ARG 1 trunkProvider
+			ARG 2 trunkPlacer
+			ARG 3 foliageProvider
+			ARG 4 foliagePlacer
+			ARG 5 rootPlacer
+			ARG 6 minimumSize
+			ARG 7 belowTrunkProvider
+		METHOD <init> (Lnet/minecraft/class_4651;Lnet/minecraft/class_5141;Lnet/minecraft/class_4651;Lnet/minecraft/class_4647;Lnet/minecraft/class_5201;Lnet/minecraft/class_4651;)V
+			ARG 1 trunkProvider
+			ARG 2 trunkPlacer
+			ARG 3 foliageProvider
+			ARG 4 foliagePlacer
+			ARG 5 minimumSize
+			ARG 6 belowTrunkProvider
+		METHOD method_23445 build ()Lnet/minecraft/class_2944;
+		METHOD method_27374 ignoreVines ()Lnet/minecraft/class_2944$class_4644;
+		METHOD method_27376 decorators (Ljava/util/List;)Lnet/minecraft/class_2944$class_4644;
+			ARG 1 decorators
+		METHOD method_34346 belowTrunkProvider (Lnet/minecraft/class_4651;)Lnet/minecraft/class_2944$class_4644;
+			ARG 1 belowTrunkProvider

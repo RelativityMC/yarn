@@ -2,7 +2,6 @@ CLASS net/minecraft/class_4520 net/minecraft/test/TestRunContext
 	FIELD field_1_236 testEnvironmentMemento Lnet/minecraft/class_10665$class_1_53;
 	FIELD field_33151 DEFAULT_TESTS_PER_ROW I
 	FIELD field_48470 LOGGER Lorg/slf4j/Logger;
-	FIELD field_48471 world Lnet/minecraft/class_3218;
 	FIELD field_48472 manager Lnet/minecraft/class_4521;
 	FIELD field_48473 states Ljava/util/List;
 	FIELD field_48474 batches Lcom/google/common/collect/ImmutableList;
@@ -14,10 +13,9 @@ CLASS net/minecraft/class_4520 net/minecraft/test/TestRunContext
 	FIELD field_48481 initialSpawner Lnet/minecraft/class_4520$class_9117;
 	FIELD field_52279 stopAfterFailure Z
 	FIELD field_61881 clearBetweenBatches Z
-	METHOD <init> (Lnet/minecraft/class_4520$class_9116;Ljava/util/Collection;Lnet/minecraft/class_3218;Lnet/minecraft/class_4521;Lnet/minecraft/class_4520$class_9117;Lnet/minecraft/class_4520$class_9117;ZZ)V
+	METHOD <init> (Lnet/minecraft/class_4520$class_9116;Ljava/util/Collection;Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_4521;Lnet/minecraft/class_4520$class_9117;Lnet/minecraft/class_4520$class_9117;ZZ)V
 		ARG 1 batcher
 		ARG 2 batches
-		ARG 3 world
 		ARG 4 manager
 		ARG 5 reuseSpawner
 		ARG 6 initialSpawner
@@ -49,17 +47,12 @@ CLASS net/minecraft/class_4520 net/minecraft/test/TestRunContext
 		ARG 0 state
 	METHOD method_66982 clearEnvironment ()V
 	METHOD method_73075 (Lnet/minecraft/class_4517;)V
-		ARG 1 state
+		ARG 0 state
 	CLASS 1 1
 		METHOD method_56232 onFinished (Lnet/minecraft/class_4517;)V
-		METHOD method_56233 (J)V
-			ARG 1 chunkPos
 		METHOD method_56234 (Lnet/minecraft/class_4514;Lnet/minecraft/class_9114;)V
 			ARG 1 listener
-		METHOD method_61094 (J)V
-			ARG 1 chunkPos
 	CLASS class_9115 Builder
-		FIELD field_48485 world Lnet/minecraft/class_3218;
 		FIELD field_48486 manager Lnet/minecraft/class_4521;
 		FIELD field_48487 batcher Lnet/minecraft/class_4520$class_9116;
 		FIELD field_48488 reuseSpawner Lnet/minecraft/class_4520$class_9117;
@@ -67,18 +60,15 @@ CLASS net/minecraft/class_4520 net/minecraft/test/TestRunContext
 		FIELD field_48490 batches Ljava/util/Collection;
 		FIELD field_52280 stopAfterFailure Z
 		FIELD field_61882 clearBetweenBatches Z
-		METHOD <init> (Ljava/util/Collection;Lnet/minecraft/class_3218;)V
+		METHOD <init> (Ljava/util/Collection;Lnet/minecraft/server/MinecraftServer;)V
 			ARG 1 batches
-			ARG 2 world
 		METHOD method_56235 build ()Lnet/minecraft/class_4520;
-		METHOD method_56236 of (Ljava/util/Collection;Lnet/minecraft/class_3218;)Lnet/minecraft/class_4520$class_9115;
+		METHOD method_56236 of (Ljava/util/Collection;Lnet/minecraft/server/MinecraftServer;)Lnet/minecraft/class_4520$class_9115;
 			ARG 0 batches
-			ARG 1 world
 		METHOD method_56237 initialSpawner (Lnet/minecraft/class_4520$class_9117;)Lnet/minecraft/class_4520$class_9115;
 			ARG 1 initialSpawner
-		METHOD method_56238 ofStates (Ljava/util/Collection;Lnet/minecraft/class_3218;)Lnet/minecraft/class_4520$class_9115;
+		METHOD method_56238 ofStates (Ljava/util/Collection;Lnet/minecraft/server/MinecraftServer;)Lnet/minecraft/class_4520$class_9115;
 			ARG 0 states
-			ARG 1 world
 		METHOD method_61095 batcher (Lnet/minecraft/class_4520$class_9116;)Lnet/minecraft/class_4520$class_9115;
 			ARG 1 batcher
 		METHOD method_61096 reuseSpawner (Lnet/minecraft/class_9120;)Lnet/minecraft/class_4520$class_9115;
@@ -97,5 +87,4 @@ CLASS net/minecraft/class_4520 net/minecraft/test/TestRunContext
 			ARG 0 oldState
 		METHOD method_56240 (Lnet/minecraft/class_4517;)Ljava/util/Optional;
 			ARG 0 oldState
-		METHOD method_61098 onBatch (Lnet/minecraft/class_3218;)V
-			ARG 1 world
+		METHOD method_61098 onBatch (Lnet/minecraft/server/MinecraftServer;)V

@@ -13,7 +13,7 @@ CLASS net/minecraft/class_5617 net/minecraft/client/render/entity/EntityRenderer
 		FIELD field_55291 itemModelManager Lnet/minecraft/class_10442;
 		FIELD field_61799 spriteHolder Lnet/minecraft/class_11697;
 		FIELD field_62255 playerSkinCache Lnet/minecraft/class_11786;
-		METHOD <init> (Lnet/minecraft/class_898;Lnet/minecraft/class_1_394;Lnet/minecraft/class_10442;Lnet/minecraft/class_330;Lnet/minecraft/class_3300;Lnet/minecraft/class_5599;Lnet/minecraft/class_10201;Lnet/minecraft/class_11697;Lnet/minecraft/class_327;Lnet/minecraft/class_11786;)V
+		METHOD <init> (Lnet/minecraft/class_898;Lnet/minecraft/class_1_394;Lnet/minecraft/class_10442;Lnet/minecraft/class_330;Lnet/minecraft/class_3300;Lnet/minecraft/class_5599;Lnet/minecraft/class_10201;Lnet/minecraft/class_11697;Lnet/minecraft/class_327;Lnet/minecraft/class_11786;Lnet/minecraft/class_1_1126;)V
 			ARG 1 renderDispatcher
 			ARG 2 blockModelManager
 			ARG 3 itemModelManager

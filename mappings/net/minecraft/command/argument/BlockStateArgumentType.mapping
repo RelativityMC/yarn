@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_2257 commandRegistryAccess
+CLASS net/minecraft/class_2257 net/minecraft/command/argument/BlockStateArgumentType
 	FIELD field_10679 EXAMPLES Ljava/util/Collection;
 	FIELD field_37964 registryWrapper Lnet/minecraft/class_7225;
 	METHOD <init> (Lnet/minecraft/class_7157;)V

@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1140 net/minecraft/datafixer/fix/PotDecorationStructureFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD method_1_7210 fixPotDecorationsComponent (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 component

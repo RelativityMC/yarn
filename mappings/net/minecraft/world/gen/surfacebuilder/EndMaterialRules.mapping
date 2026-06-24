@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1103 net/minecraft/world/gen/surfacebuilder/EndMaterialRules
+	METHOD method_1_6980 bootstrap (Lnet/minecraft/class_7891;)V
+		ARG 0 registry
+	METHOD method_1_6981 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 path

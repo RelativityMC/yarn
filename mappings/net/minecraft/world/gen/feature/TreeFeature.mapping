@@ -1,5 +1,10 @@
 CLASS net/minecraft/class_2944 net/minecraft/world/gen/feature/TreeFeature
+	FIELD field_1_7611 CAN_REPLACE_BELOW_TREE_TRUNK Lnet/minecraft/class_6646;
 	FIELD field_31519 FORCE_STATE_AND_NOTIFY_ALL I
+	METHOD method_1_7034 replaceWithDirt (Lnet/minecraft/class_7871;)Lnet/minecraft/class_4651;
+		ARG 0 biome
+	METHOD method_1_7035 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
 	METHOD method_12774 setBlockStateWithoutUpdatingNeighbors (Lnet/minecraft/class_1945;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
 		ARG 0 world
 		ARG 1 pos
@@ -35,6 +40,7 @@ CLASS net/minecraft/class_2944 net/minecraft/world/gen/feature/TreeFeature
 	METHOD method_27372 (Lnet/minecraft/class_5281;Lnet/minecraft/class_4647$class_8179;Lnet/minecraft/class_5819;IIILnet/minecraft/class_4647$class_5208;)V
 		ARG 7 node
 	METHOD method_29963 getTopPosition (Lnet/minecraft/class_5281;ILnet/minecraft/class_2338;)I
+		ARG 1 world
 		ARG 2 height
 		ARG 3 pos
 	METHOD method_35363 (Lnet/minecraft/class_5281;Ljava/util/Set;Ljava/util/Set;Ljava/util/Set;Lnet/minecraft/class_3341;)Ljava/lang/Boolean;

@@ -1,3 +1,18 @@
 CLASS net/minecraft/class_12270 net/minecraft/loot/slot/SlotRangeSlotSource
+	FIELD field_1_7435 DEFAULT_SOURCE Lnet/minecraft/class_12283;
+	FIELD field_64158 CODEC Lcom/mojang/serialization/MapCodec;
+	FIELD field_64159 source Lnet/minecraft/class_12283;
+	FIELD field_64160 slots Lnet/minecraft/class_9348;
+	METHOD <init> (Lnet/minecraft/class_12283;Lnet/minecraft/class_9348;)V
+		ARG 1 source
+		ARG 2 slots
+	METHOD method_1_6680 (Lnet/minecraft/class_12283$class_12284;)Lnet/minecraft/class_12283$class_12284;
+		ARG 0 builder
+	METHOD method_1_6681 from (Lnet/minecraft/class_9348;)Lnet/minecraft/class_12270;
+		ARG 0 range
 	METHOD method_76120 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
+	METHOD method_76121 (Lnet/minecraft/class_12270;)Lnet/minecraft/class_9348;
+		ARG 0 source
+	METHOD method_76122 (Lnet/minecraft/class_12270;)Lnet/minecraft/class_12283;
+		ARG 0 source

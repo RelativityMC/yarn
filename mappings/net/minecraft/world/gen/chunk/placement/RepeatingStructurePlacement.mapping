@@ -1,0 +1,87 @@
+CLASS net/minecraft/class_6874 net/minecraft/world/gen/chunk/placement/RepeatingStructurePlacement
+	FIELD field_37775 ARBITRARY_SALT I
+	FIELD field_37776 locateOffset Lnet/minecraft/class_2382;
+	FIELD field_37777 frequencyReductionMethod Lnet/minecraft/class_6874$class_7154;
+	FIELD field_37778 frequency F
+	FIELD field_37779 salt I
+	FIELD field_37780 exclusionZone Ljava/util/Optional;
+	METHOD <init> (Lnet/minecraft/class_2382;Lnet/minecraft/class_6874$class_7154;FILjava/util/Optional;)V
+		ARG 1 locateOffset
+		ARG 2 frequencyReductionMethod
+		ARG 3 frequency
+		ARG 4 salt
+		ARG 5 exclusionZone
+	METHOD method_40168 isStartChunk (Lnet/minecraft/class_7869;II)Z
+		ARG 1 calculator
+		ARG 2 chunkX
+		ARG 3 chunkZ
+	METHOD method_41635 defaultShouldGenerate (JIIIF)Z
+		ARG 0 seed
+		ARG 2 salt
+		ARG 3 chunkX
+		ARG 4 chunkZ
+		ARG 5 frequency
+	METHOD method_41637 buildCodec (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/Products$P5;
+		ARG 0 instance
+	METHOD method_41638 legacyType3ShouldGenerate (JIIIF)Z
+		ARG 0 seed
+		ARG 2 salt
+		ARG 3 chunkX
+		ARG 4 chunkZ
+		ARG 5 frequency
+	METHOD method_41639 (Lnet/minecraft/class_7869;II)Z
+		ARG 1 calculator
+		ARG 2 chunkX
+		ARG 3 chunkZ
+	METHOD method_41640 legacyType2ShouldGenerate (JIIIF)Z
+		ARG 0 seed
+		ARG 2 salt
+		ARG 3 chunkX
+		ARG 4 chunkZ
+		ARG 5 frequency
+	METHOD method_41641 legacyType1ShouldGenerate (JIIIF)Z
+		ARG 0 seed
+		ARG 2 salt
+		ARG 3 chunkX
+		ARG 4 chunkZ
+		ARG 5 frequency
+	METHOD method_41643 getFrequencyReductionMethod ()Lnet/minecraft/class_6874$class_7154;
+	METHOD method_41644 getFrequency ()F
+	METHOD method_41645 getSalt ()I
+	METHOD method_41646 getExclusionZone ()Ljava/util/Optional;
+	METHOD method_56575 (IIJ)Z
+		ARG 1 chunkX
+		ARG 2 chunkZ
+		ARG 3 seed
+	METHOD method_56576 applyExclusionZone (Lnet/minecraft/class_7869;II)Z
+		ARG 1 calculator
+		ARG 2 centerChunkX
+		ARG 3 centerChunkZ
+	CLASS class_7152 ExclusionZone
+		FIELD field_37781 CODEC Lcom/mojang/serialization/Codec;
+		METHOD method_41647 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+		METHOD method_41648 shouldExclude (Lnet/minecraft/class_7869;II)Z
+			ARG 1 calculator
+			ARG 2 centerChunkX
+			ARG 3 centerChunkZ
+	CLASS class_7153 GenerationPredicate
+		METHOD method_1_349 shouldGenerate (JIIIF)Z
+			ARG 1 seed
+			ARG 3 salt
+			ARG 4 chunkX
+			ARG 5 chunkZ
+			ARG 6 chance
+	CLASS class_7154 FrequencyReductionMethod
+		FIELD field_37786 CODEC Lcom/mojang/serialization/Codec;
+		FIELD field_37787 name Ljava/lang/String;
+		FIELD field_37788 generationPredicate Lnet/minecraft/class_6874$class_7153;
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lnet/minecraft/class_6874$class_7153;)V
+			ARG 3 name
+			ARG 4 generationPredicate
+		METHOD method_41650 shouldGenerate (JIIIF)Z
+			ARG 1 seed
+			ARG 3 salt
+			ARG 4 chunkX
+			ARG 5 chunkZ
+			ARG 6 chance

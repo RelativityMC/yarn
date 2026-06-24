@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1038 net/minecraft/util/math/Offset
+	METHOD method_1_6429 getOffset ()Lnet/minecraft/class_2382;
+	METHOD method_10148 getOffsetX ()I
+	METHOD method_10164 getOffsetY ()I
+	METHOD method_10165 getOffsetZ ()I

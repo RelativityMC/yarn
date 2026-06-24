@@ -1,0 +1,53 @@
+CLASS net/minecraft/class_1_1148 net/minecraft/world/gen/treedecorator/ShelfMushroomDecorator
+	FIELD field_1_7934 NUM_AGES I
+	FIELD field_1_7935 MAX_Y_OFFSET I
+	FIELD field_1_7936 MIN_Y_OFFSET I
+	FIELD field_1_7937 GENERATION_CHANCE_PER_POSITION F
+	FIELD field_1_7938 probability F
+	METHOD <init> (F)V
+		ARG 1 probability
+	METHOD method_1_7251 hasShelfMushroomAround (Lnet/minecraft/class_4662$class_7402;Lnet/minecraft/class_2338;)Z
+		ARG 0 generator
+		ARG 1 pos
+	METHOD method_1_7252 hasShelfMushroomAt (Lnet/minecraft/class_4662$class_7402;Lnet/minecraft/class_2338;)Z
+		ARG 0 generator
+		ARG 1 pos
+	METHOD method_1_7253 hasSingleYLevel (Ljava/util/List;)Z
+		ARG 0 logPositions
+	METHOD method_1_7254 shouldGenerateOn (Lnet/minecraft/class_2338;I)Z
+		ARG 0 logPosition
+		ARG 1 baseY
+	METHOD method_1_7255 (Lnet/minecraft/class_2680;)Z
+		ARG 0 state
+	METHOD method_1_7256 (Lnet/minecraft/class_1_1148;)Ljava/lang/Float;
+		ARG 0 decorator
+	METHOD method_1_7257 getShelfMushroomPosition (Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;)Lnet/minecraft/class_2338;
+		ARG 0 pos
+		ARG 1 facing
+	METHOD method_1_7258 getLegalDirections (Ljava/util/List;)[Lnet/minecraft/class_2350;
+		ARG 0 logPositions
+	METHOD method_1_7259 getRandomAdjacentDirections (Lnet/minecraft/class_5819;)[Lnet/minecraft/class_2350;
+		ARG 0 random
+	METHOD method_1_7260 placeShelfMushroom (Lnet/minecraft/class_4662$class_7402;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;Lnet/minecraft/class_5819;)V
+		ARG 0 generator
+		ARG 1 pos
+		ARG 2 facing
+		ARG 3 random
+	METHOD method_1_7261 generateSupine (Lnet/minecraft/class_4662$class_7402;Ljava/util/List;Lnet/minecraft/class_5819;)V
+		ARG 0 generator
+		ARG 1 logPositions
+		ARG 2 random
+	METHOD method_1_7262 generateUpright (Lnet/minecraft/class_4662$class_7402;Ljava/util/List;Lnet/minecraft/class_5819;)V
+		ARG 0 generator
+		ARG 1 logPositions
+		ARG 2 random
+	METHOD method_1_7263 generateShelfMushroomSupine (Lnet/minecraft/class_4662$class_7402;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;Lnet/minecraft/class_5819;)V
+		ARG 0 generator
+		ARG 1 logPosition
+		ARG 2 facing
+		ARG 3 random
+	METHOD method_1_7264 tryGenerateShelfMushroomUpright (Lnet/minecraft/class_4662$class_7402;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;Lnet/minecraft/class_5819;)Z
+		ARG 0 generator
+		ARG 1 logPosition
+		ARG 2 direction
+		ARG 3 random

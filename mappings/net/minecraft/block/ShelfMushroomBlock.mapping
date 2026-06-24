@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_1073 net/minecraft/block/ShelfMushroomBlock
+	FIELD field_1_7514 AGE Lnet/minecraft/class_2758;
+	FIELD field_1_7516 MAX_AGE I
+	FIELD field_1_7517 VOXEL_SHAPES Ljava/util/List;
+	METHOD method_1_6878 (I)Ljava/util/Map;
+		ARG 0 age

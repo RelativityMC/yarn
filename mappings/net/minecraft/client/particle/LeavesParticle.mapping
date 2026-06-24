@@ -2,6 +2,13 @@ CLASS net/minecraft/class_8253 net/minecraft/client/particle/LeavesParticle
 	FIELD field_43369 angularVelocity F
 	FIELD field_43371 angularAcceleration F
 	FIELD field_43372 SPEED_SCALE F
+	FIELD field_43373 MAX_AGE I
+	FIELD field_55127 levity F
+	FIELD field_55128 applyRotationalForce Z
+	FIELD field_55129 applyLinearForce Z
+	FIELD field_55130 baseLinearAccelX D
+	FIELD field_55131 baseLinearAccelZ D
+	FIELD field_55132 totalRotation D
 	METHOD <init> (Lnet/minecraft/class_638;DDDLnet/minecraft/class_1058;FFZZFF)V
 		ARG 1 world
 		ARG 2 x
@@ -9,5 +16,8 @@ CLASS net/minecraft/class_8253 net/minecraft/client/particle/LeavesParticle
 		ARG 6 z
 		ARG 8 sprite
 		ARG 9 gravity
+		ARG 10 levity
+		ARG 11 applyRotationalForce
+		ARG 12 applyLinearForce
 		ARG 13 size
 		ARG 14 initialYVelocity

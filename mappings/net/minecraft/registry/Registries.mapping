@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_7923 net/minecraft/registry/Registries
 	FIELD field_1_1019 defaultComponentBinder Lnet/minecraft/class_1_117;
+	FIELD field_1_7450 FEATURE Lnet/minecraft/class_2378;
 	FIELD field_41128 POINT_OF_INTEREST_TYPE Lnet/minecraft/class_2378;
 	FIELD field_41129 MEMORY_MODULE_TYPE Lnet/minecraft/class_7922;
 	FIELD field_41130 SENSOR_TYPE Lnet/minecraft/class_7922;

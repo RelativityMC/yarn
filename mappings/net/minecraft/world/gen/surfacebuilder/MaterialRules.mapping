@@ -6,6 +6,20 @@ CLASS net/minecraft/class_6686 net/minecraft/world/gen/surfacebuilder/MaterialRu
 		ARG 0 noise
 		ARG 1 min
 		ARG 3 max
+	METHOD method_1_6812 getCondition (Lnet/minecraft/class_7871;Lnet/minecraft/class_5321;)Lnet/minecraft/class_6686$class_6693;
+		ARG 0 registry
+		ARG 1 key
+	METHOD method_1_6813 getRule (Lnet/minecraft/class_7871;Lnet/minecraft/class_5321;)Lnet/minecraft/class_6686$class_6708;
+		ARG 0 registry
+		ARG 1 key
+	METHOD method_1_6814 register (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_6686$class_6693;)Lnet/minecraft/class_6686$class_6693;
+		ARG 0 registry
+		ARG 1 key
+		ARG 2 condition
+	METHOD method_1_6815 register (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_6686$class_6708;)Lnet/minecraft/class_6686$class_6708;
+		ARG 0 registry
+		ARG 1 key
+		ARG 2 rule
 	METHOD method_39045 steepSlope ()Lnet/minecraft/class_6686$class_6693;
 	METHOD method_39046 water (II)Lnet/minecraft/class_6686$class_6693;
 		ARG 0 offset
@@ -69,6 +83,12 @@ CLASS net/minecraft/class_6686 net/minecraft/world/gen/surfacebuilder/MaterialRu
 		METHOD method_1_5129 isSuperset (Ljava/util/Set;)Z
 			ARG 1 contextBiomes
 		CLASS class_6690 BiomePredicate
+	CLASS class_1_1066 RegisteredCondition
+		METHOD apply (Ljava/lang/Object;)Ljava/lang/Object;
+			ARG 1 context
+	CLASS class_1_1067 RegisteredRule
+		METHOD apply (Ljava/lang/Object;)Ljava/lang/Object;
+			ARG 1 context
 	CLASS class_6687 TerracottaBandsMaterialRule
 		FIELD field_35226 CODEC Lcom/mojang/serialization/MapCodec;
 		METHOD apply (Ljava/lang/Object;)Ljava/lang/Object;
@@ -82,6 +102,11 @@ CLASS net/minecraft/class_6686 net/minecraft/world/gen/surfacebuilder/MaterialRu
 	CLASS class_6692 BooleanSupplier
 		METHOD method_39069 get ()Z
 	CLASS class_6693 MaterialCondition
+		FIELD field_35232 BASE_CODEC Lcom/mojang/serialization/Codec;
+		METHOD method_1_6816 (Lnet/minecraft/class_6880;)Lnet/minecraft/class_6686$class_6693;
+			ARG 0 registryEntry
+		METHOD method_1_6817 (Lnet/minecraft/class_6686$class_6693;)Lnet/minecraft/class_6880;
+			ARG 0 rule
 		METHOD method_39064 codec ()Lcom/mojang/serialization/MapCodec;
 		METHOD method_39070 registerAndGetDefault (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
 			ARG 0 registry
@@ -196,6 +221,13 @@ CLASS net/minecraft/class_6686 net/minecraft/world/gen/surfacebuilder/MaterialRu
 		METHOD apply (Ljava/lang/Object;)Ljava/lang/Object;
 			ARG 1 context
 	CLASS class_6708 MaterialRule
+		FIELD field_1_7484 CODEC Lcom/mojang/serialization/Codec;
+		FIELD field_1_7485 ENTRY_CODEC Lcom/mojang/serialization/Codec;
+		FIELD field_35252 BASE_CODEC Lcom/mojang/serialization/Codec;
+		METHOD method_1_6820 (Lnet/minecraft/class_6880;)Lnet/minecraft/class_6686$class_6708;
+			ARG 0 registryEntry
+		METHOD method_1_6821 (Lnet/minecraft/class_6686$class_6708;)Lnet/minecraft/class_6880;
+			ARG 0 rule
 		METHOD method_39061 codec ()Lcom/mojang/serialization/MapCodec;
 		METHOD method_39085 registerAndGetDefault (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
 			ARG 0 registry

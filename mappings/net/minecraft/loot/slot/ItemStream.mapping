@@ -1,6 +1,12 @@
 CLASS net/minecraft/class_12271 net/minecraft/loot/slot/ItemStream
 	FIELD field_64161 EMPTY Lnet/minecraft/class_12271;
 	METHOD method_1_132 itemCopies ()Ljava/util/stream/Stream;
+	METHOD method_1_6665 forEach (Ljava/util/function/Consumer;Lnet/minecraft/class_1_1052;)V
+		ARG 1 callback
+		ARG 2 slotSelector
+	METHOD method_1_6667 (Lnet/minecraft/class_1_1040;Lnet/minecraft/class_1_1052;)I
+		ARG 2 slotSelector
+	METHOD method_1_6668 size ()I
 	METHOD method_76123 limit (I)Lnet/minecraft/class_12271;
 		ARG 1 count
 	METHOD method_76124 of (Lnet/minecraft/class_5630;)Lnet/minecraft/class_12271;

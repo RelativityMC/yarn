@@ -1,4 +1,11 @@
 CLASS net/minecraft/class_3122 net/minecraft/world/gen/feature/OreFeature
+	METHOD <init> (Ljava/util/List;I)V
+		ARG 1 targets
+		ARG 2 size
+	METHOD <init> (Lnet/minecraft/class_3825;Lnet/minecraft/class_2680;I)V
+		ARG 1 target
+		ARG 2 state
+		ARG 3 size
 	METHOD method_13629 generateVeinPart (Lnet/minecraft/class_5281;Lnet/minecraft/class_5819;DDDDDDIIIII)Z
 		ARG 1 world
 		ARG 2 random

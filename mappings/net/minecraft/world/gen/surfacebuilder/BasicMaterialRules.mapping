@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_1115 net/minecraft/world/gen/surfacebuilder/BasicMaterialRules
+	FIELD field_1_7674 BEDROCK Lnet/minecraft/class_6686$class_6708;
+	METHOD method_1_7063 air ()Lnet/minecraft/class_6686$class_6708;
+	METHOD method_1_7064 bootstrap (Lnet/minecraft/class_7891;)V
+		ARG 0 registry
+	METHOD method_1_7065 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 path
+	METHOD method_1_7066 block (Lnet/minecraft/class_2248;)Lnet/minecraft/class_6686$class_6708;
+		ARG 0 block

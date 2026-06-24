@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_1071 net/minecraft/loot/slot/ReferenceSlotSource
+	FIELD field_1_7508 LOGGER Lorg/slf4j/Logger;
+	METHOD method_1_6866 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

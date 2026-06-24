@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_1102 net/minecraft/client/texture/palette/PaletteMapping
+	FIELD field_1_7568 EMPTY Lnet/minecraft/class_1_1102;
+	METHOD apply (I)I
+		ARG 1 color
+	METHOD method_1_6979 of (Lnet/minecraft/class_1_1057;Lnet/minecraft/class_1_1057;)Lnet/minecraft/class_1_1102;
+		ARG 0 key
+		ARG 1 value

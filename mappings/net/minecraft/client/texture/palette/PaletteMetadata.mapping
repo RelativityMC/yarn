@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_1139 net/minecraft/client/texture/palette/PaletteMetadata
+	FIELD field_1_7903 METADATA_SERIALIZER Lnet/minecraft/class_7677;
+	METHOD method_1_7203 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

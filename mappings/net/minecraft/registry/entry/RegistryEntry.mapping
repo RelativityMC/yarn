@@ -26,6 +26,7 @@ CLASS net/minecraft/class_6880 net/minecraft/registry/entry/RegistryEntry
 	METHOD method_1_817 of (Ljava/lang/Object;Lnet/minecraft/class_9323;)Lnet/minecraft/class_6880;
 		ARG 0 value
 		ARG 1 components
+	METHOD method_1_6425 getIdAsStringOptional ()Ljava/util/Optional;
 	METHOD method_40220 isIn (Lnet/minecraft/class_6862;)Z
 		COMMENT {@return whether this entry is in {@code tag}}
 		COMMENT

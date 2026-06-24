@@ -1,0 +1,23 @@
+CLASS net/minecraft/class_1_1142 net/minecraft/world/gen/trunk/PoplarTrunkPlacer
+	FIELD field_1_7915 branchAmount Lnet/minecraft/class_6017;
+	FIELD field_1_7916 trunkHeightAboveBranches Lnet/minecraft/class_6017;
+	METHOD <init> (IIILnet/minecraft/class_6017;Lnet/minecraft/class_6017;)V
+		ARG 1 baseHeight
+		ARG 2 firstRandomHeight
+		ARG 3 secondRandomHeight
+		ARG 4 trunkHeightAboveBranches
+		ARG 5 branchAmount
+	METHOD method_1_7219 shuffleHorizontalDirections (Lnet/minecraft/class_5819;)Ljava/util/List;
+		ARG 0 random
+	METHOD method_1_7220 axisSetter (Lnet/minecraft/class_2350;)Ljava/util/function/Function;
+		ARG 0 direction
+	METHOD method_1_7221 (Lnet/minecraft/class_2350;)Z
+		ARG 0 direction
+	METHOD method_1_7222 (Lnet/minecraft/class_2350;Lnet/minecraft/class_2680;)Lnet/minecraft/class_2680;
+		ARG 1 state
+	METHOD method_1_7223 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_7224 (Lnet/minecraft/class_1_1142;)Lnet/minecraft/class_6017;
+		ARG 0 placer
+	METHOD method_1_7225 (Lnet/minecraft/class_1_1142;)Lnet/minecraft/class_6017;
+		ARG 0 placer

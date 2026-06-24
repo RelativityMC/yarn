@@ -1,0 +1,44 @@
+CLASS net/minecraft/class_1_1039 net/minecraft/util/math/ChebyshevDirection
+	COMMENT Any of the 26 directions corresponding to an offset with a
+	COMMENT <a href="https://en.wikipedia.org/wiki/Chebyshev_distance">Chebyshev distance</a>
+	COMMENT of 1.
+	FIELD field_1_7255 DOWN Lnet/minecraft/class_1_1039;
+	FIELD field_1_7256 EAST Lnet/minecraft/class_1_1039;
+	FIELD field_1_7257 DOWN_EAST Lnet/minecraft/class_1_1039;
+	FIELD field_1_7258 UP_EAST Lnet/minecraft/class_1_1039;
+	FIELD field_1_7259 NORTH Lnet/minecraft/class_1_1039;
+	FIELD field_1_7260 DOWN_NORTH Lnet/minecraft/class_1_1039;
+	FIELD field_1_7261 NORTH_EAST Lnet/minecraft/class_1_1039;
+	FIELD field_1_7262 DOWN_NORTH_EAST Lnet/minecraft/class_1_1039;
+	FIELD field_1_7263 UP_NORTH_EAST Lnet/minecraft/class_1_1039;
+	FIELD field_1_7264 UP_NORTH Lnet/minecraft/class_1_1039;
+	FIELD field_1_7265 NORTH_WEST Lnet/minecraft/class_1_1039;
+	FIELD field_1_7266 DOWN_NORTH_WEST Lnet/minecraft/class_1_1039;
+	FIELD field_1_7267 UP_NORTH_WEST Lnet/minecraft/class_1_1039;
+	FIELD field_1_7268 SOUTH Lnet/minecraft/class_1_1039;
+	FIELD field_1_7269 DOWN_SOUTH Lnet/minecraft/class_1_1039;
+	FIELD field_1_7270 SOUTH_EAST Lnet/minecraft/class_1_1039;
+	FIELD field_1_7271 DOWN_SOUTH_EAST Lnet/minecraft/class_1_1039;
+	FIELD field_1_7272 UP_SOUTH_EAST Lnet/minecraft/class_1_1039;
+	FIELD field_1_7273 UP_SOUTH Lnet/minecraft/class_1_1039;
+	FIELD field_1_7274 SOUTH_WEST Lnet/minecraft/class_1_1039;
+	FIELD field_1_7275 DOWN_SOUTH_WEST Lnet/minecraft/class_1_1039;
+	FIELD field_1_7276 UP_SOUTH_WEST Lnet/minecraft/class_1_1039;
+	FIELD field_1_7277 UP Lnet/minecraft/class_1_1039;
+	FIELD field_1_7278 WEST Lnet/minecraft/class_1_1039;
+	FIELD field_1_7279 DOWN_WEST Lnet/minecraft/class_1_1039;
+	FIELD field_1_7280 UP_WEST Lnet/minecraft/class_1_1039;
+	METHOD <init> ([Lnet/minecraft/class_2350;)V
+		ARG 1 directions
+	METHOD <init> (Ljava/util/Set;Lnet/minecraft/class_2382;)V
+		ARG 1 direction
+		ARG 2 step
+	METHOD method_1_6465 combine (Lnet/minecraft/class_1_1039;)Lnet/minecraft/class_1_1039;
+		COMMENT Only used in defining constants in this class. Prefer to use the constants
+		COMMENT instead.
+		ARG 1 other
+	CLASS class_2355 Horizontal
+		FIELD field_1_7281 underlying Lnet/minecraft/class_1_1039;
+		METHOD <init> (Ljava/lang/String;ILnet/minecraft/class_1_1039;)V
+			ARG 3 underlying
+		METHOD method_10186 getDirections ()Ljava/util/Set;

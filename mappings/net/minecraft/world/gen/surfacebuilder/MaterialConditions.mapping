@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1135 net/minecraft/world/gen/surfacebuilder/MaterialConditions
+	METHOD method_1_7152 bootstrap (Lnet/minecraft/class_7891;)V
+		ARG 0 registry
+	METHOD method_1_7153 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 path

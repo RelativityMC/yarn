@@ -1,1 +1,7 @@
 CLASS net/minecraft/class_10121 net/minecraft/datafixer/schema/Schema4059
+	METHOD method_63584 createOptionalDataComponents (Lcom/mojang/datafixers/schemas/Schema;)Ljava/util/SequencedMap;
+		ARG 0 schema
+	METHOD registerTypes (Lcom/mojang/datafixers/schemas/Schema;Ljava/util/Map;Ljava/util/Map;)V
+		ARG 1 schema
+		ARG 2 entityTypes
+		ARG 3 blockEntityTypes

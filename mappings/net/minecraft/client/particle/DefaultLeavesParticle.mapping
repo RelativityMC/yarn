@@ -1,4 +1,8 @@
-CLASS net/minecraft/class_1_1074
+CLASS net/minecraft/class_1_1074 net/minecraft/client/particle/DefaultLeavesParticle
+	CLASS class_1_1075 PoplarLeavesFactory
+		FIELD field_1_7524 spriteProvider Lnet/minecraft/class_4002;
+		METHOD <init> (Lnet/minecraft/class_4002;)V
+			ARG 1 spriteProvider
 	CLASS class_10379 CherryLeavesFactory
 		FIELD field_55133 spriteProvider Lnet/minecraft/class_4002;
 		METHOD <init> (Lnet/minecraft/class_4002;)V

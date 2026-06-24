@@ -1,5 +1,8 @@
 CLASS net/minecraft/class_1945 net/minecraft/world/ModifiableWorld
 	COMMENT Represents a modifiable world where block states can be changed and entities spawned.
+	METHOD method_1_6481 setBlockState (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Z
+		ARG 1 pos
+		ARG 2 state
 	METHOD method_8649 spawnEntity (Lnet/minecraft/class_1297;)Z
 		COMMENT Spawns an entity.
 		COMMENT

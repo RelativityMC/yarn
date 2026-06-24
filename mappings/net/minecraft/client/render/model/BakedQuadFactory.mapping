@@ -20,6 +20,7 @@ CLASS net/minecraft/class_796 net/minecraft/client/render/model/BakedQuadFactory
 		ARG 4 matrix
 		ARG 5 from
 		ARG 6 to
+		ARG 7 spriteInfo
 		ARG 8 affineTransformation
 		ARG 9 rotation
 		ARG 10 positions

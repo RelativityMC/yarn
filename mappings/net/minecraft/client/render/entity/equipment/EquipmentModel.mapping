@@ -7,7 +7,11 @@ CLASS net/minecraft/class_10186 net/minecraft/client/render/entity/equipment/Equ
 	METHOD method_63996 getLayers (Lnet/minecraft/class_10186$class_10190;)Ljava/util/List;
 		ARG 1 layerType
 	CLASS class_10187 Builder
+		FIELD field_1_7652 darkenedPalettesByBase Lcom/google/common/collect/ImmutableMap$Builder;
 		FIELD field_54122 layers Ljava/util/Map;
+		METHOD method_1_7050 addPalettes (Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;)Lnet/minecraft/class_10186$class_10187;
+			ARG 1 paletteId
+			ARG 2 darkerPaletteId
 		METHOD method_63997 build ()Lnet/minecraft/class_10186;
 		METHOD method_63998 addHumanoidLayers (Lnet/minecraft/class_2960;)Lnet/minecraft/class_10186$class_10187;
 			ARG 1 textureId

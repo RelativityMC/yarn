@@ -1,0 +1,20 @@
+CLASS net/minecraft/class_1_1055 net/minecraft/client/vulkan/VulkanFeatureSets
+	FIELD field_1_7396 AMD_BUFFER_MARKER Lnet/minecraft/class_1_1045;
+	FIELD field_1_7397 PHYSICAL_DEVICE_DYNAMIC_RENDERING_FEATURES Lnet/minecraft/class_1_730;
+	FIELD field_1_7398 EXT_MULTIDRAW Lnet/minecraft/class_1_1045;
+	FIELD field_1_7399 PHYSICAL_DEVICE_MULTI_DRAW_FEATURES Lnet/minecraft/class_1_730;
+	FIELD field_1_7400 NV_DIAGNOSTIC_CHECKPOINT Lnet/minecraft/class_1_1045;
+	FIELD field_1_7401 VULKAN_PORTABILITY_SUBSET Lnet/minecraft/class_1_1045;
+	FIELD field_1_7402 PHYSICAL_DEVICE_PORTABILITY_SUBSET_FEATURES_KHR Lnet/minecraft/class_1_730;
+	FIELD field_1_7403 MINECRAFT_BASE_REQUIRED Lnet/minecraft/class_1_1045;
+	FIELD field_1_7404 PHYSICAL_DEVICE_SYNCHRONIZATION_2_FEATURES Lnet/minecraft/class_1_730;
+	FIELD field_1_7405 PHYSICAL_DEVICE_VERTEX_ATTRIBUTE_DIVISOR_FEATURES_EXT Lnet/minecraft/class_1_730;
+	FIELD field_1_7406 PHYSICAL_DEVICE_FEATURES_2 Lnet/minecraft/class_1_730;
+	FIELD field_1_7407 PHYSICAL_DEVICE_VULKAN_11_FEATURES Lnet/minecraft/class_1_730;
+	FIELD field_1_7408 PHYSICAL_DEVICE_VULKAN_12_FEATURES Lnet/minecraft/class_1_730;
+	METHOD method_1_6617 initialize ()V
+	METHOD method_1_6618 (Lorg/lwjgl/vulkan/VkPhysicalDevice;)Z
+		ARG 0 physicalDevice
+	METHOD method_1_6619 optional ()Ljava/util/Set;
+	METHOD method_1_6620 baseRequired ()Ljava/util/Set;
+	METHOD method_1_6621 portabilitySubset ()Ljava/util/Set;

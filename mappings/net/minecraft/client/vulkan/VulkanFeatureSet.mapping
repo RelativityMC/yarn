@@ -1,0 +1,45 @@
+CLASS net/minecraft/class_1_1045 net/minecraft/client/vulkan/VulkanFeatureSet
+	METHOD <init> (Ljava/lang/String;Ljava/util/Collection;)V
+		ARG 1 name
+		ARG 2 all
+	METHOD <init> (Ljava/lang/String;Ljava/util/Set;Ljava/util/Set;)V
+		ARG 1 name
+		ARG 2 extensions
+		ARG 3 features
+	METHOD <init> (Ljava/lang/String;Ljava/util/Set;Ljava/util/Set;Lnet/minecraft/class_1_1045$class_1_1046;)V
+		ARG 1 name
+		ARG 2 extensions
+		ARG 3 features
+		ARG 4 condition
+	METHOD method_1_6541 areFeaturesSupported (Lorg/lwjgl/vulkan/VkPhysicalDevice;)Z
+		ARG 1 physicalDevice
+	METHOD method_1_6542 passesCondition (Lorg/lwjgl/vulkan/VkPhysicalDevice;)Z
+		ARG 1 physicalDevice
+	METHOD method_1_6543 and (Lnet/minecraft/class_1_1045;)Lnet/minecraft/class_1_1045;
+		ARG 1 other
+	METHOD method_1_6544 (Lnet/minecraft/class_1_1045;)Z
+		ARG 1 other
+	METHOD method_1_6545 isSupported (Lorg/lwjgl/vulkan/VkPhysicalDevice;)Z
+		ARG 1 physicalDevice
+	METHOD method_1_6546 isSupported (Lorg/lwjgl/vulkan/VkPhysicalDevice;Ljava/util/Set;)Z
+		ARG 1 physicalDevice
+		ARG 2 supportedExtensions
+	METHOD method_1_6547 (Ljava/util/Set;)Ljava/util/Set;
+		ARG 1 with
+	METHOD method_1_6548 (Lorg/lwjgl/vulkan/VkPhysicalDevice;)Ljava/util/Set;
+		ARG 1 physicalDevice
+	METHOD method_1_6549 getMissingExtensions (Ljava/util/Set;)Ljava/util/Set;
+		ARG 1 supportedExtensions
+	METHOD method_1_6550 getMissingFeatures (Lorg/lwjgl/vulkan/VkPhysicalDevice;)Ljava/util/Set;
+		ARG 1 physicalDevice
+	CLASS class_1_1046 Condition
+		FIELD field_1_7354 PASS Lnet/minecraft/class_1_1045$class_1_1046;
+		METHOD method_1_6551 (Lnet/minecraft/class_1_1045$class_1_1046;Lnet/minecraft/class_1_1045$class_1_1046;Lorg/lwjgl/vulkan/VkPhysicalDevice;)Z
+			ARG 2 physicalDevice
+		METHOD method_1_6552 (Lorg/lwjgl/vulkan/VkPhysicalDevice;)Z
+			ARG 0 physicalDevice
+		METHOD method_1_6553 both (Lnet/minecraft/class_1_1045$class_1_1046;Lnet/minecraft/class_1_1045$class_1_1046;)Lnet/minecraft/class_1_1045$class_1_1046;
+			ARG 0 first
+			ARG 1 second
+		METHOD method_1_6554 test (Lorg/lwjgl/vulkan/VkPhysicalDevice;)Z
+			ARG 1 physicalDevice

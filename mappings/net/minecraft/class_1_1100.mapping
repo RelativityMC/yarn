@@ -1,0 +1,17 @@
+CLASS net/minecraft/class_1_1100
+	FIELD field_1_7562 BLOCK_MODIFY_SUCCESS Lnet/minecraft/class_1_1083$class_1_1091;
+	FIELD field_1_7563 BLOCK_REPLACE_SUCCESS Lnet/minecraft/class_1_1083$class_1_1091;
+	FIELD field_1_7564 BLOCK_REPLACE_SUCCESS_KNOWN_ITEM Lnet/minecraft/class_1_1083$class_1_1092;
+	METHOD method_1_6954 (Lnet/minecraft/class_2168;Lnet/minecraft/class_12275;Lcom/mojang/brigadier/exceptions/Dynamic3CommandExceptionType;)Lnet/minecraft/class_12271;
+		ARG 1 source
+		ARG 2 slotSource
+		ARG 3 onNonInventory
+	METHOD method_1_6955 getInventory (Lnet/minecraft/class_2168;Lnet/minecraft/class_2338;Lcom/mojang/brigadier/exceptions/Dynamic3CommandExceptionType;)Lnet/minecraft/class_1263;
+		ARG 0 source
+		ARG 1 pos
+		ARG 2 onNonInventory
+	METHOD method_1_6959 (Lnet/minecraft/class_2338;I)Lnet/minecraft/class_2561;
+		ARG 0 pos
+	METHOD method_1_6961 (Lnet/minecraft/class_2338;ILnet/minecraft/class_1799;)Lnet/minecraft/class_2561;
+		ARG 0 pos
+		ARG 2 stack

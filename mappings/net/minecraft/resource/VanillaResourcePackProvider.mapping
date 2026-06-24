@@ -13,6 +13,7 @@ CLASS net/minecraft/class_7678 net/minecraft/resource/VanillaResourcePackProvide
 		ARG 4 symlinkFinder
 	METHOD method_45256 getResourcePack ()Lnet/minecraft/class_1_1065;
 	METHOD method_45257 createDefault (Lnet/minecraft/class_3288$class_7680;)Lnet/minecraft/class_3288;
+		ARG 1 packFactory
 	METHOD method_45258 (Lnet/minecraft/class_3288$class_7680;Ljava/lang/String;)Lnet/minecraft/class_3288;
 		ARG 2 id
 	METHOD method_45259 getDisplayName (Ljava/lang/String;)Lnet/minecraft/class_2561;

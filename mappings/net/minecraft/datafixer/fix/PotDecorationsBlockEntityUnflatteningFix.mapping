@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_1141 net/minecraft/datafixer/fix/PotDecorationsBlockEntityUnflatteningFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema

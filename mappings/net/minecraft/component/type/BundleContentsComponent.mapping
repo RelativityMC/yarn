@@ -21,7 +21,7 @@ CLASS net/minecraft/class_9276 net/minecraft/component/type/BundleContentsCompon
 	METHOD method_1_1028 (Lnet/minecraft/class_9276;)Ljava/util/List;
 		ARG 0 component
 	METHOD method_57421 iterate ()Ljava/util/List;
-	METHOD method_57423 getOccupancy (Lnet/minecraft/class_1_96;)Lcom/mojang/serialization/DataResult;
+	METHOD method_57423 getPerItemOccupancy (Lnet/minecraft/class_1_96;)Lcom/mojang/serialization/DataResult;
 		ARG 0 item
 	METHOD method_57424 (Lnet/minecraft/class_9276;)Ljava/util/List;
 		ARG 0 component
@@ -34,8 +34,26 @@ CLASS net/minecraft/class_9276 net/minecraft/component/type/BundleContentsCompon
 		ARG 0 stack
 	METHOD method_61668 getSelectedStackIndex ()I
 	CLASS class_9277 Builder
+		FIELD field_1_7507 dirty Z
 		FIELD field_49297 occupancy Lorg/apache/commons/lang3/math/Fraction;
 		FIELD field_52593 selectedStackIndex I
+		METHOD <init> (Ljava/util/List;Lorg/apache/commons/lang3/math/Fraction;I)V
+			ARG 1 stacks
+			ARG 2 occupancy
+			ARG 3 selectedStackIndex
+		METHOD method_1_6861 getInsertionIndex (Lnet/minecraft/class_1799;II)I
+			ARG 1 stack
+			ARG 2 start
+			ARG 3 end
+		METHOD method_1_6862 getTotalStackOccupancy (Lnet/minecraft/class_1799;)Lorg/apache/commons/lang3/math/Fraction;
+			ARG 0 stack
+		METHOD method_1_6863 getTotalStackOccupancy (Lorg/apache/commons/lang3/math/Fraction;I)Lorg/apache/commons/lang3/math/Fraction;
+			ARG 0 occupancyPerItem
+			ARG 1 count
+		METHOD method_1_6864 getOccupancyAfterInsertion (Lorg/apache/commons/lang3/math/Fraction;Lnet/minecraft/class_1799;)Lorg/apache/commons/lang3/math/Fraction;
+			ARG 0 occupancy
+			ARG 1 stack
+		METHOD method_1_6865 collapse ()V
 		METHOD method_57430 removeSelected ()Lnet/minecraft/class_1799;
 		METHOD method_57431 add (Lnet/minecraft/class_1735;Lnet/minecraft/class_1657;)I
 			ARG 1 slot
@@ -44,6 +62,7 @@ CLASS net/minecraft/class_9276 net/minecraft/component/type/BundleContentsCompon
 			ARG 1 stack
 		METHOD method_57433 getOccupancy ()Lorg/apache/commons/lang3/math/Fraction;
 		METHOD method_57434 getInsertionIndex (Lnet/minecraft/class_1799;)I
+			ARG 1 stack
 		METHOD method_57435 build ()Lnet/minecraft/class_9276;
 		METHOD method_57436 getMaxAllowed (Lorg/apache/commons/lang3/math/Fraction;)I
 			ARG 1 spacePerItem

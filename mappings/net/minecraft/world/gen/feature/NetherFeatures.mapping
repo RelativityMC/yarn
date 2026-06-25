@@ -1,4 +1,5 @@
-CLASS net/minecraft/class_6805 net/minecraft/world/gen/feature/NetherConfiguredFeatures
+CLASS net/minecraft/class_6805 net/minecraft/world/gen/feature/NetherFeatures
+	FIELD field_1_2485 CRIMSON_ROOTS Lnet/minecraft/class_5321;
 	FIELD field_35817 DELTA Lnet/minecraft/class_5321;
 	FIELD field_35818 SMALL_BASALT_COLUMNS Lnet/minecraft/class_5321;
 	FIELD field_35819 SMALL_BASALT_COLUMNS_TEMP Lnet/minecraft/class_5321;

@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_6807 net/minecraft/world/gen/feature/PileConfiguredFeatures
+CLASS net/minecraft/class_6807 net/minecraft/world/gen/feature/PileFeatures
 	FIELD field_35883 PILE_HAY Lnet/minecraft/class_5321;
 	FIELD field_35884 PILE_MELON Lnet/minecraft/class_5321;
 	FIELD field_35885 PILE_SNOW Lnet/minecraft/class_5321;

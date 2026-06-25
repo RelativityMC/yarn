@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_6806 net/minecraft/world/gen/feature/OreConfiguredFeatures
+CLASS net/minecraft/class_6806 net/minecraft/world/gen/feature/OreFeatures
 	FIELD field_35841 ORE_IRON_SMALL Lnet/minecraft/class_5321;
 	FIELD field_35842 ORE_GOLD Lnet/minecraft/class_5321;
 	FIELD field_35843 ORE_GOLD_BURIED Lnet/minecraft/class_5321;

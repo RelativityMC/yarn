@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_3219 net/minecraft/world/gen/feature/VinesFeature
+	FIELD field_1_7651 INSTANCE Lnet/minecraft/class_3219;

@@ -1,4 +1,11 @@
-CLASS net/minecraft/class_6808 net/minecraft/world/gen/feature/TreeConfiguredFeatures
+CLASS net/minecraft/class_6808 net/minecraft/world/gen/feature/TreeFeatures
+	FIELD field_1_7490 FALLEN_POPLAR_TREE Lnet/minecraft/class_5321;
+	FIELD field_1_7491 ORANGE_POPLAR Lnet/minecraft/class_5321;
+	FIELD field_1_7492 ORANGE_POPLAR_LEAF_LITTER Lnet/minecraft/class_5321;
+	FIELD field_1_7493 RED_POPLAR Lnet/minecraft/class_5321;
+	FIELD field_1_7494 RED_POPLAR_LEAF_LITTER Lnet/minecraft/class_5321;
+	FIELD field_1_7495 YELLOW_POPLAR Lnet/minecraft/class_5321;
+	FIELD field_1_7496 YELLOW_POPLAR_LEAF_LITTER Lnet/minecraft/class_5321;
 	FIELD field_35888 BIRCH_BEES_0002 Lnet/minecraft/class_5321;
 	FIELD field_35889 BIRCH_BEES_002 Lnet/minecraft/class_5321;
 	FIELD field_35890 BIRCH_BEES_005 Lnet/minecraft/class_5321;
@@ -49,7 +56,12 @@ CLASS net/minecraft/class_6808 net/minecraft/world/gen/feature/TreeConfiguredFea
 	FIELD field_57963 FALLEN_SPRUCE_TREE Lnet/minecraft/class_5321;
 	FIELD field_57964 FALLEN_BIRCH_TREE Lnet/minecraft/class_5321;
 	FIELD field_57965 FALLEN_SUPER_BIRCH_TREE Lnet/minecraft/class_5321;
+	METHOD method_1_6829 fallenPoplar ()Lnet/minecraft/class_10853$class_1_1125;
+	METHOD method_1_6830 poplar (Lnet/minecraft/class_2248;Lnet/minecraft/class_4651;)Lnet/minecraft/class_2944$class_4644;
+		ARG 0 leaves
+		ARG 1 belowTrunkProvider
 	METHOD method_39710 oak (Lnet/minecraft/class_4651;)Lnet/minecraft/class_2944$class_4644;
+		ARG 0 belowTrunkProvider
 	METHOD method_39711 builder (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;IIIILnet/minecraft/class_4651;)Lnet/minecraft/class_2944$class_4644;
 		ARG 0 log
 		ARG 1 leaves
@@ -57,14 +69,21 @@ CLASS net/minecraft/class_6808 net/minecraft/world/gen/feature/TreeConfiguredFea
 		ARG 3 firstRandomHeight
 		ARG 4 secondRandomHeight
 		ARG 5 radius
+		ARG 6 belowTrunkProvider
 	METHOD method_39712 birch (Lnet/minecraft/class_4651;)Lnet/minecraft/class_2944$class_4644;
+		ARG 0 belowTrunkProvider
 	METHOD method_39713 superBirch (Lnet/minecraft/class_4651;)Lnet/minecraft/class_2944$class_4644;
+		ARG 0 belowTrunkProvider
 	METHOD method_39714 jungle (Lnet/minecraft/class_4651;)Lnet/minecraft/class_2944$class_4644;
+		ARG 0 belowTrunkProvider
 	METHOD method_39715 fancyOak (Lnet/minecraft/class_4651;)Lnet/minecraft/class_2944$class_4644;
+		ARG 0 belowTrunkProvider
 	METHOD method_46857 bootstrap (Lnet/minecraft/class_7891;)V
 		ARG 0 featureRegisterable
 	METHOD method_49392 cherry (Lnet/minecraft/class_4651;)Lnet/minecraft/class_2944$class_4644;
+		ARG 0 belowTrunkProvider
 	METHOD method_66558 darkOak (Lnet/minecraft/class_4651;)Lnet/minecraft/class_2944$class_4644;
+		ARG 0 belowTrunkProvider
 	METHOD method_68554 fallenBirch (I)Lnet/minecraft/class_10853$class_1_1125;
 		ARG 0 maxLength
 	METHOD method_68555 fallen (Lnet/minecraft/class_2248;II)Lnet/minecraft/class_10853$class_1_1125;

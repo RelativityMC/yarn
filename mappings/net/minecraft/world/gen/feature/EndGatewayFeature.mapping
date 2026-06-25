@@ -1,3 +1,9 @@
 CLASS net/minecraft/class_3029 net/minecraft/world/gen/feature/EndGatewayFeature
+	METHOD method_1_7111 empty ()Lnet/minecraft/class_3029;
+	METHOD method_1_7112 of (Lnet/minecraft/class_2338;Z)Lnet/minecraft/class_3029;
+		ARG 0 exit
+		ARG 1 exact
+	METHOD method_1_7113 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
 	METHOD method_18037 (Lnet/minecraft/class_5281;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;)V
 		ARG 3 pos

@@ -43,3 +43,5 @@ CLASS net/minecraft/class_3259 net/minecraft/resource/DirectoryResourcePack
 		FIELD field_45049 path Ljava/nio/file/Path;
 		METHOD <init> (Ljava/nio/file/Path;)V
 			ARG 1 path
+		METHOD method_1_6663 openImpl (Lnet/minecraft/class_9224;)Lnet/minecraft/class_3259;
+			ARG 1 info

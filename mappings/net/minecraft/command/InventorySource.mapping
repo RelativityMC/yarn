@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_1_1061 net/minecraft/command/InventorySource
+	METHOD method_1_6777 report (Lnet/minecraft/class_2168;Lnet/minecraft/class_1_1083;)I
+		ARG 1 source
+		ARG 2 aggregator
+	METHOD method_1_6778 report (Lnet/minecraft/class_2168;Lnet/minecraft/class_1_1083;Lnet/minecraft/class_1799;)I
+		ARG 1 source
+		ARG 2 aggregator
+		ARG 3 knownItemStack
+	METHOD method_1_6779 getSlots (Lnet/minecraft/class_2168;Lnet/minecraft/class_12275;)Lnet/minecraft/class_12271;
+		ARG 1 source
+		ARG 2 slotSource
+	METHOD method_1_6780 withSlots (Lnet/minecraft/class_2168;Lnet/minecraft/class_12275;Lnet/minecraft/class_1_1061$class_1_1062;)V
+		ARG 1 source
+		ARG 2 slotSource
+		ARG 3 callback
+	CLASS class_1_1062 SlotsAction
+		METHOD method_1_6781 accept (Ljava/lang/Object;Lnet/minecraft/class_12271;)I
+			ARG 1 target
+			ARG 2 slots

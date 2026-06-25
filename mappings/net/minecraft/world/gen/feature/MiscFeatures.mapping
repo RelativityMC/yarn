@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_6804 net/minecraft/world/gen/feature/MiscConfiguredFeatures
+CLASS net/minecraft/class_6804 net/minecraft/world/gen/feature/MiscFeatures
 	FIELD field_1_3810 SULFUR_POOL Lnet/minecraft/class_5321;
 	FIELD field_1_3811 SULFUR_SPRING Lnet/minecraft/class_5321;
 	FIELD field_35800 ICE_SPIKE Lnet/minecraft/class_5321;
@@ -19,5 +19,10 @@ CLASS net/minecraft/class_6804 net/minecraft/world/gen/feature/MiscConfiguredFea
 	FIELD field_35815 SPRING_LAVA_FROZEN Lnet/minecraft/class_5321;
 	FIELD field_35816 SPRING_WATER Lnet/minecraft/class_5321;
 	FIELD field_38809 DISK_GRASS Lnet/minecraft/class_5321;
+	METHOD method_1_5450 (Ljava/lang/Integer;Ljava/lang/Integer;)Lnet/minecraft/class_6880;
+		ARG 0 count
+		ARG 1 spread
+	METHOD method_1_5451 (Lnet/minecraft/class_6012;)Lnet/minecraft/class_6880;
+		ARG 0 template
 	METHOD method_46853 bootstrap (Lnet/minecraft/class_7891;)V
 		ARG 0 featureRegisterable

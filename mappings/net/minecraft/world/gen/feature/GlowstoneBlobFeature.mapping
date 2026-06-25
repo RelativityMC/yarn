@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_3047 net/minecraft/world/gen/feature/GlowstoneBlobFeature
+	FIELD field_1_7779 INSTANCE Lnet/minecraft/class_3047;

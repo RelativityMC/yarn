@@ -1,10 +1,9 @@
 CLASS net/minecraft/class_9666 net/minecraft/loot/ContainerComponentModifier
-	FIELD comp_1_1144 getDefault Lnet/minecraft/class_1_1106;
-	FIELD comp_1_1145 getComponentType Lnet/minecraft/class_9331;
-	METHOD comp_1_1144 getDefault ()Lnet/minecraft/class_1_1106;
-	METHOD comp_1_1145 getComponentType ()Lnet/minecraft/class_9331;
+	FIELD comp_1_1144 fallback Lnet/minecraft/class_1_1106;
+	METHOD comp_1_1144 fallback ()Lnet/minecraft/class_1_1106;
 	METHOD method_59720 apply (Lnet/minecraft/class_1799;Lnet/minecraft/class_1_1106;Ljava/util/stream/Stream;)V
 		ARG 1 stack
+		ARG 2 defaultComponent
 		ARG 3 contents
 	METHOD method_59721 apply (Lnet/minecraft/class_1799;Ljava/util/function/UnaryOperator;)V
 		ARG 1 stack
@@ -15,3 +14,5 @@ CLASS net/minecraft/class_9666 net/minecraft/loot/ContainerComponentModifier
 	METHOD method_59725 (Ljava/util/function/UnaryOperator;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1799;
 		ARG 1 contentStack
 	METHOD method_76205 stream (Lnet/minecraft/class_1799;)Lnet/minecraft/class_12271;
+		ARG 1 itemStack
+	CLASS class_1_1137 ComponentSlotContainer

@@ -20,6 +20,7 @@ CLASS net/minecraft/class_3288 net/minecraft/resource/ResourcePackProfile
 		ARG 4 position
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
+	METHOD method_1_6602 createResourcePackWithOverlays ()Ljava/util/stream/Stream;
 	METHOD method_14457 getDisplayName ()Lnet/minecraft/class_2561;
 	METHOD method_14458 createResourcePack ()Lnet/minecraft/class_1_1068;
 	METHOD method_14459 getDescription ()Lnet/minecraft/class_2561;

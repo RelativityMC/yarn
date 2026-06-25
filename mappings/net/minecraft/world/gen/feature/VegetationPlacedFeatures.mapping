@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_6819 net/minecraft/world/gen/feature/VegetationPlacedFeatures
+	FIELD field_1_7685 BROWN_MUSHROOM_DAPPLED_FOREST Lnet/minecraft/class_5321;
+	FIELD field_1_7686 PATCH_RED_SHRUB Lnet/minecraft/class_5321;
+	FIELD field_1_7687 TREES_DAPPLED_FOREST Lnet/minecraft/class_5321;
 	FIELD field_36114 PATCH_SUGAR_CANE_SWAMP Lnet/minecraft/class_5321;
 	FIELD field_36115 PATCH_SUGAR_CANE_DESERT Lnet/minecraft/class_5321;
 	FIELD field_36116 PATCH_SUGAR_CANE_BADLANDS Lnet/minecraft/class_5321;

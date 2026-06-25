@@ -1,1 +1,5 @@
 CLASS net/minecraft/class_3177 net/minecraft/world/gen/feature/SimpleRandomFeature
+	METHOD method_1_7205 (Lnet/minecraft/class_6880;)Ljava/util/stream/Stream;
+		ARG 0 feature
+	METHOD method_1_7206 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

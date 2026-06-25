@@ -12,6 +12,8 @@ CLASS net/minecraft/class_3300 net/minecraft/resource/ResourceManager
 		COMMENT duplicates in the returned list are discarded before loading.
 		COMMENT
 		COMMENT @return the list matching identifiers
+		ARG 1 prefix
+		ARG 2 filter
 	METHOD method_14489 getAllResources (Lnet/minecraft/class_2960;)Ljava/util/List;
 		COMMENT Gets all of the available resources to the corresponding resource identifier.
 		COMMENT
@@ -24,4 +26,9 @@ CLASS net/minecraft/class_3300 net/minecraft/resource/ResourceManager
 	METHOD method_29213 streamResourcePacks ()Ljava/util/stream/Stream;
 		COMMENT Gets a stream of loaded resource packs in increasing order of priority.
 	METHOD method_41265 findAllResources (Ljava/lang/String;Lnet/minecraft/class_3300$class_1_1101;)Ljava/util/Map;
+		ARG 1 prefix
+		ARG 2 filter
+	CLASS class_1_1101 Filter
+		METHOD method_1_6965 test (Lnet/minecraft/class_2960;)Z
+			ARG 1 id
 	CLASS class_5353 Empty

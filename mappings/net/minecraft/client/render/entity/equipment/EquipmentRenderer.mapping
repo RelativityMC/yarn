@@ -1,9 +1,13 @@
 CLASS net/minecraft/class_10197 net/minecraft/client/render/entity/equipment/EquipmentRenderer
+	FIELD field_54178 DEFAULT_DYE_COLOR I
 	FIELD field_54179 equipmentModelLoader Lnet/minecraft/class_10201;
 	FIELD field_54180 layerTextures Ljava/util/function/Function;
 	FIELD field_54181 trimSprites Ljava/util/function/Function;
 	METHOD <init> (Lnet/minecraft/class_10201;Lnet/minecraft/class_1_1126;)V
 		ARG 1 equipmentModelLoader
+		ARG 2 palettedTextureManager
+	METHOD method_1_7187 (Lnet/minecraft/class_1_1126;Lnet/minecraft/class_10197$class_10199;)Lnet/minecraft/class_1_1126$class_1_1129;
+		ARG 1 key
 	METHOD method_64076 getDyeColor (Lnet/minecraft/class_10186$class_10189;I)I
 		ARG 0 layer
 		ARG 1 dyeColor
@@ -33,3 +37,7 @@ CLASS net/minecraft/class_10197 net/minecraft/client/render/entity/equipment/Equ
 		ARG 0 key
 	CLASS class_10198 LayerTextureKey
 	CLASS class_10199 TrimSpriteKey
+		METHOD method_1_7188 getTrimPatternId ()Lnet/minecraft/class_2960;
+		METHOD method_1_7189 (Ljava/lang/String;)Ljava/lang/String;
+			ARG 1 path
+		METHOD method_1_7190 getTrimMaterialPaletteId ()Lnet/minecraft/class_2960;

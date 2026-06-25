@@ -11,6 +11,8 @@ CLASS net/minecraft/class_2794 net/minecraft/world/gen/chunk/ChunkGenerator
 	METHOD <init> (Lnet/minecraft/class_1966;Ljava/util/function/Function;)V
 		ARG 1 biomeSource
 		ARG 2 generationSettingsGetter
+	METHOD method_1_6742 getSpawnPos (Lnet/minecraft/class_7138;)Lnet/minecraft/class_1923;
+		ARG 1 noiseConfig
 	METHOD method_12088 populateNoise (Lnet/minecraft/class_6748;Lnet/minecraft/class_7138;Lnet/minecraft/class_5138;Lnet/minecraft/class_2791;)Ljava/util/concurrent/CompletableFuture;
 		COMMENT Generates the base shape of the chunk out of the basic block states as decided by this chunk generator's config.
 		ARG 1 blender

@@ -8,6 +8,9 @@ CLASS net/minecraft/class_11580 net/minecraft/entity/TypedEntityData
 		ARG 2 nbt
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 other
+	METHOD method_1_6877 applyToSpawnerEntry (Lnet/minecraft/class_1952;Lnet/minecraft/class_7922;)Z
+		ARG 1 spawnerEntry
+		ARG 2 registry
 	METHOD method_72530 getType ()Ljava/lang/Object;
 	METHOD method_72531 applyToEntity (Lnet/minecraft/class_1297;)V
 		ARG 1 entity

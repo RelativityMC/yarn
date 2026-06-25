@@ -1,0 +1,60 @@
+CLASS net/minecraft/class_1_1126 net/minecraft/client/texture/palette/PalettedTextureManager
+	FIELD field_1_7800 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_7801 atlases Ljava/util/List;
+	FIELD field_1_7802 cache Lcom/google/common/cache/LoadingCache;
+	FIELD field_1_7803 spritesByKey Ljava/util/Map;
+	FIELD field_1_7804 missing Lnet/minecraft/class_1_1126$class_1_1129;
+	FIELD field_1_7805 overflowTextures Ljava/util/List;
+	FIELD field_1_7806 loader Ljava/util/function/BiFunction;
+	FIELD field_1_7807 textureManager Lnet/minecraft/class_1060;
+	METHOD <init> (Lnet/minecraft/class_3300;Lnet/minecraft/class_1060;)V
+		ARG 1 resourceManager
+		ARG 2 textureManager
+	METHOD method_1_7123 allocate (II)Lnet/minecraft/class_1_1126$class_1_1131;
+		ARG 1 width
+		ARG 2 height
+	METHOD method_1_7124 get (Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_1126$class_1_1129;
+		ARG 1 baseTexture
+		ARG 2 paletteId
+	METHOD method_1_7125 (Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_1102;
+		ARG 0 base
+		ARG 1 target
+	METHOD method_1_7126 (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 path
+	METHOD method_1_7127 (Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_1102;
+		ARG 0 base
+		ARG 1 target
+	METHOD method_1_7128 (Lcom/google/common/cache/RemovalNotification;)V
+		ARG 0 removalNotification
+	METHOD method_1_7129 (Ljava/util/Map;)V
+		ARG 1 palettes
+	METHOD method_1_7130 loadBaseTexture (Lnet/minecraft/class_2960;Lnet/minecraft/class_3300;)Lnet/minecraft/class_1_1126$class_1_1128;
+		ARG 0 id
+		ARG 1 resourceManager
+	METHOD method_1_7131 create (Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_1126$class_1_1129;
+		ARG 1 baseTexture
+		ARG 2 paletteId
+	CLASS 1 1
+		METHOD load (Ljava/lang/Object;)Ljava/lang/Object;
+			ARG 1 id
+	CLASS class_1_1127 Atlas
+		FIELD field_1_7809 ATLAS_DIMENSION I
+		FIELD field_1_7810 id Lnet/minecraft/class_2960;
+		FIELD field_1_7811 rootSlot Lnet/minecraft/class_1_1109;
+		METHOD <init> (Lnet/minecraft/class_2960;)V
+			ARG 1 id
+		METHOD method_1_7133 (I)I
+			ARG 0 color
+		METHOD method_1_7135 allocate (II)Lnet/minecraft/class_1_1117;
+			ARG 1 width
+			ARG 2 height
+	CLASS class_1_1128 BaseTextureImage
+	CLASS class_1_1129 Sprite
+	CLASS class_1_1130 OverflowTexture
+		FIELD field_1_7812 id Lnet/minecraft/class_2960;
+		METHOD <init> (Lnet/minecraft/class_2960;II)V
+			ARG 1 id
+			ARG 2 width
+			ARG 3 height
+	CLASS class_1_1131 Region
+	CLASS class_1_1132 Key

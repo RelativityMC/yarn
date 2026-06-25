@@ -16,6 +16,17 @@ CLASS net/minecraft/class_9123 net/minecraft/server/command/TestFinder
 		METHOD <init> (Ljava/util/function/UnaryOperator;Ljava/util/function/UnaryOperator;)V
 			ARG 1 testInstanceFinderMapper
 			ARG 2 testInstanceBlockFinderMapper
+		METHOD method_1_6623 (Lnet/minecraft/class_6880;)Lnet/minecraft/class_5321;
+			ARG 0 definition
+		METHOD method_1_6624 (Lnet/minecraft/class_5321;)Z
+			ARG 0 dimension
+		METHOD method_1_6625 (Lnet/minecraft/class_6880$class_6883;)Lnet/minecraft/class_5321;
+			ARG 0 testInstance
+		METHOD method_1_6626 getDimension (Lnet/minecraft/class_10665;)Lnet/minecraft/class_5321;
+			ARG 0 testEnvironmentDefinition
+		METHOD method_1_6627 setCommandSourceWorld (Lnet/minecraft/class_2168;Ljava/util/List;)Lnet/minecraft/class_2168;
+			ARG 0 source
+			ARG 1 testInstances
 		METHOD method_56309 nearest (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/class_9123;
 			ARG 1 context
 		METHOD method_56310 surface (Lcom/mojang/brigadier/context/CommandContext;I)Lnet/minecraft/class_9123;

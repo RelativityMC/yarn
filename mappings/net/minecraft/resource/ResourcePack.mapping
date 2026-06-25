@@ -19,4 +19,7 @@ CLASS net/minecraft/class_3262 net/minecraft/resource/ResourcePack
 		ARG 4 consumer
 	METHOD method_14409 getId ()Ljava/lang/String;
 	METHOD method_56929 getKnownPackInfo ()Ljava/util/Optional;
+	CLASS class_1_1042 Filter
+		METHOD method_1_6531 shouldFilter (Lnet/minecraft/class_2960;)Z
+			ARG 1 id
 	CLASS class_7664 ResultConsumer

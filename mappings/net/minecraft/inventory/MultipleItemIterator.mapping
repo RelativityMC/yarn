@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_1_1050 net/minecraft/inventory/MultipleItemIterator
+	FIELD field_1_7387 stacks [Lnet/minecraft/class_1799;
+	FIELD field_1_7388 peeked Lnet/minecraft/class_1799;
+	FIELD field_1_7389 index I
+	METHOD <init> ([Lnet/minecraft/class_1799;)V
+		ARG 1 stacks
+	METHOD method_1_6604 getCurrent ()Lnet/minecraft/class_1799;
+	METHOD method_1_6605 setIndex (I)V
+		ARG 1 index
+	CLASS class_1_1051 Cycling

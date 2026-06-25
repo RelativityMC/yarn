@@ -1,3 +1,16 @@
 CLASS net/minecraft/class_2369 net/minecraft/block/DirtPathBlock
+	FIELD field_1_7372 baseBlock Lnet/minecraft/class_2248;
 	FIELD field_11106 SHAPE Lnet/minecraft/class_265;
 	FIELD field_46335 CODEC Lcom/mojang/serialization/MapCodec;
+	METHOD <init> (Lnet/minecraft/class_2248;Lnet/minecraft/class_4970$class_2251;)V
+		ARG 1 baseBlock
+		ARG 2 settings
+	METHOD method_1_6581 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_6582 (Lnet/minecraft/class_2369;)Lnet/minecraft/class_2248;
+		ARG 0 block
+	METHOD method_1_6583 onChange (Lnet/minecraft/class_1297;Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)V
+		ARG 1 sourceEntity
+		ARG 2 state
+		ARG 3 world
+		ARG 4 pos

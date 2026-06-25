@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_2953 net/minecraft/world/gen/feature/BonusChestFeature
+	FIELD field_1_7783 INSTANCE Lnet/minecraft/class_2953;

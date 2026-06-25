@@ -17,6 +17,9 @@ CLASS net/minecraft/class_8963 net/minecraft/block/spawner/TrialSpawnerLogic
 		ARG 2 trialSpawner
 		ARG 3 entityDetector
 		ARG 4 entitySelector
+	METHOD method_1_7159 setEntityData (Lnet/minecraft/class_11580;Lnet/minecraft/class_1937;)V
+		ARG 1 data
+		ARG 2 world
 	METHOD method_55157 (Lnet/minecraft/class_243;Lnet/minecraft/class_5819;Lnet/minecraft/class_1297;)Lnet/minecraft/class_1297;
 		ARG 2 entity
 	METHOD method_55158 trySpawnMob (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;)Ljava/util/Optional;
@@ -111,6 +114,8 @@ CLASS net/minecraft/class_8963 net/minecraft/block/spawner/TrialSpawnerLogic
 	CLASS class_11349 FullConfig
 		FIELD field_60374 CODEC Lcom/mojang/serialization/MapCodec;
 		FIELD field_60375 DEFAULT Lnet/minecraft/class_8963$class_11349;
+		METHOD method_1_7160 withEntityData (Lnet/minecraft/class_11580;)Lnet/minecraft/class_8963$class_11349;
+			ARG 1 data
 		METHOD method_71407 withEntityType (Lnet/minecraft/class_1299;)Lnet/minecraft/class_8963$class_11349;
 			ARG 1 entityType
 		METHOD method_71408 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_4946 net/minecraft/client/data/TexturedModel
 	COMMENT Represents a model with texture variables defined.
+	FIELD field_1_7541 TEMPLATE_CUBE_BOTTOM_TOP_INDENTED Lnet/minecraft/class_4946$class_4947;
 	FIELD field_23036 CUBE_ALL Lnet/minecraft/class_4946$class_4947;
 	FIELD field_23037 CUBE_MIRRORED_ALL Lnet/minecraft/class_4946$class_4947;
 	FIELD field_23038 CUBE_COLUMN Lnet/minecraft/class_4946$class_4947;

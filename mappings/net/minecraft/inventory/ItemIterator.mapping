@@ -1,0 +1,40 @@
+CLASS net/minecraft/class_1_1040 net/minecraft/inventory/ItemIterator
+	COMMENT An object that can iterate through a sequence of item stack as well as
+	COMMENT resetting its state to the start and skipping items until one is found
+	COMMENT satisfying a given predicate.
+	METHOD method_1_6468 cycling (Ljava/util/Collection;)Lnet/minecraft/class_1_1040;
+		ARG 0 stacks
+	METHOD method_1_6469 cycling ([Lnet/minecraft/class_1799;)Lnet/minecraft/class_1_1040;
+		ARG 0 stacks
+	METHOD method_1_6470 skipUntil (Ljava/util/function/Predicate;)Z
+		COMMENT Advances the state of this iterator so that calling {@link #next()} after
+		COMMENT this method will return the first unvisited item stack that satisfies
+		COMMENT {@code predicate}.
+		COMMENT
+		COMMENT This method always terminates, even when the underlying sequence of item
+		COMMENT stacks repeats infinitely.
+		COMMENT
+		COMMENT @return {@code true} if such an item stack was found; {@code false} otherwise
+		ARG 1 predicate
+	METHOD method_1_6471 skipToNonEmpty ()Z
+	METHOD method_1_6472 hasNext ()Z
+	METHOD method_1_6473 (Lnet/minecraft/class_1799;)Z
+		ARG 0 stack
+	METHOD method_1_6474 next ()Lnet/minecraft/class_1799;
+	METHOD method_1_6475 of (Ljava/util/Collection;)Lnet/minecraft/class_1_1040;
+		ARG 0 stacks
+	METHOD method_1_6476 of ([Lnet/minecraft/class_1799;)Lnet/minecraft/class_1_1040;
+		ARG 0 stacks
+	METHOD method_1_6477 withFallback (Lnet/minecraft/class_1799;)Lnet/minecraft/class_1_1040;
+		ARG 1 stack
+	METHOD method_1_6478 peek ()Lnet/minecraft/class_1799;
+	METHOD method_1_6479 reset ()V
+	CLASS class_1_1041 Fallback
+		COMMENT An {@code ItemIterator} that returns a fallback item stack when the
+		COMMENT underlying iterator is exhausted.
+		FIELD field_1_7308 fallback Lnet/minecraft/class_1799;
+		FIELD field_1_7309 exhausted Z
+		FIELD field_1_7310 underlying Lnet/minecraft/class_1_1040;
+		METHOD <init> (Lnet/minecraft/class_1_1040;Lnet/minecraft/class_1799;)V
+			ARG 1 underlying
+			ARG 2 fallback

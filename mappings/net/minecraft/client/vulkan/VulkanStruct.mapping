@@ -1,4 +1,8 @@
 CLASS net/minecraft/class_1_730 net/minecraft/client/vulkan/VulkanStruct
+	FIELD field_1_7486 PNEXT_OFFSET I
+	FIELD field_1_7487 STYPE_OFFSET I
+	METHOD <init> (Ljava/lang/Class;)V
+		ARG 1 clazz
 	METHOD method_1_4412 findOrCreate (JLorg/lwjgl/system/MemoryStack;)J
 		ARG 1 address
 		ARG 3 memoryStack
@@ -13,3 +17,15 @@ CLASS net/minecraft/class_1_730 net/minecraft/client/vulkan/VulkanStruct
 	METHOD method_1_4416 find (JI)J
 		ARG 0 address
 		ARG 2 structureType
+	METHOD method_1_6822 getOffset (Ljava/lang/String;)J
+		ARG 1 fieldName
+	METHOD method_1_6823 getPNextUnchecked (J)J
+		ARG 0 address
+	METHOD method_1_6824 setPNextUnchecked (JJ)V
+		ARG 0 address
+		ARG 2 pNext
+	METHOD method_1_6825 getSTypeUnchecked (J)I
+		ARG 0 address
+	METHOD method_1_6826 setSTypeUnchecked (JI)V
+		ARG 0 address
+		ARG 2 sType

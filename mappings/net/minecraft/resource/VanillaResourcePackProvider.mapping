@@ -9,6 +9,7 @@ CLASS net/minecraft/class_7678 net/minecraft/resource/VanillaResourcePackProvide
 	FIELD field_55931 TESTS_KEY Ljava/lang/String;
 	METHOD <init> (Lnet/minecraft/class_3264;Lnet/minecraft/class_1_1065;Lnet/minecraft/class_2960;Lnet/minecraft/class_8580;)V
 		ARG 1 type
+		ARG 2 resourcePack
 		ARG 3 id
 		ARG 4 symlinkFinder
 	METHOD method_45256 getResourcePack ()Lnet/minecraft/class_1_1065;

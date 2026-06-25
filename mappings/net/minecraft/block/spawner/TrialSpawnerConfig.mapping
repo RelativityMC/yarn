@@ -4,6 +4,8 @@ CLASS net/minecraft/class_8965 net/minecraft/block/spawner/TrialSpawnerConfig
 	FIELD field_47368 ENTRY_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_53980 CODEC Lcom/mojang/serialization/Codec;
 	METHOD comp_2110 spawnPotentials ()Lnet/minecraft/class_6012;
+	METHOD method_1_7204 withSpawnPotential (Lnet/minecraft/class_11580;)Lnet/minecraft/class_8965;
+		ARG 1 entityData
 	METHOD method_55179 getTotalMobs (I)I
 		ARG 1 additionalPlayers
 	METHOD method_55180 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

@@ -1,7 +1,37 @@
 CLASS net/minecraft/class_3043 net/minecraft/server/command/EffectCommand
+	FIELD field_1_7420 CLEAR_EVERYTHING_REPORTER Lnet/minecraft/class_1_1083$class_1_1091;
+	FIELD field_1_7421 CLEAR_SPECIFIC_REPORTER Lnet/minecraft/class_1_1083$class_1_1092;
+	FIELD field_1_7422 GIVE_REPORTER Lnet/minecraft/class_1_1083$class_1_1093;
 	FIELD field_13607 GIVE_FAILED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_13608 CLEAR_SPECIFIC_FAILED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_13609 CLEAR_EVERYTHING_FAILED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
+	METHOD method_1_6646 getEffectTicks (Ljava/lang/Integer;Lnet/minecraft/class_1291;)I
+		ARG 0 durationInput
+		ARG 1 effect
+	METHOD method_1_6647 (Lnet/minecraft/class_1309;ILnet/minecraft/class_1291;Ljava/lang/Integer;)Lnet/minecraft/class_2561;
+		ARG 0 entity
+		ARG 1 total
+		ARG 2 effect
+		ARG 3 duration
+	METHOD method_1_6648 (IILnet/minecraft/class_1291;Ljava/lang/Integer;)Lnet/minecraft/class_2561;
+		ARG 0 targets
+		ARG 1 total
+		ARG 2 effect
+		ARG 3 duration
+	METHOD method_1_6649 (Lnet/minecraft/class_1297;I)Lnet/minecraft/class_2561;
+		ARG 0 entity
+		ARG 1 total
+	METHOD method_1_6650 (II)Lnet/minecraft/class_2561;
+		ARG 0 targets
+		ARG 1 total
+	METHOD method_1_6651 (Lnet/minecraft/class_1297;ILnet/minecraft/class_1291;)Lnet/minecraft/class_2561;
+		ARG 0 entity
+		ARG 1 total
+		ARG 2 effect
+	METHOD method_1_6652 (IILnet/minecraft/class_1291;)Lnet/minecraft/class_2561;
+		ARG 0 targets
+		ARG 1 total
+		ARG 2 effect
 	METHOD method_13225 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_13226 (Lcom/mojang/brigadier/context/CommandContext;)I
@@ -10,7 +40,7 @@ CLASS net/minecraft/class_3043 net/minecraft/server/command/EffectCommand
 		ARG 0 source
 		ARG 1 targets
 		ARG 2 statusEffect
-		ARG 3 seconds
+		ARG 3 durationInput
 		ARG 4 amplifier
 		ARG 5 showParticles
 	METHOD method_13228 (Lcom/mojang/brigadier/context/CommandContext;)I

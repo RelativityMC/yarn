@@ -1,9 +1,27 @@
 CLASS net/minecraft/class_3060 net/minecraft/server/command/ForceLoadCommand
+	FIELD field_1_7442 ADDED_REPORTER Lnet/minecraft/class_1_1083$class_1_1092;
+	FIELD field_1_7443 REMOVED_REPORTER Lnet/minecraft/class_1_1083$class_1_1092;
 	FIELD field_13657 TOO_BIG_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
 	FIELD field_13658 ADDED_FAILURE_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_13659 QUERY_FAILURE_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
 	FIELD field_13660 REMOVED_FAILURE_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_33392 MAX_CHUNKS I
+	METHOD method_1_6729 (Lnet/minecraft/class_1923;ILnet/minecraft/class_3060$class_1_1058;)Lnet/minecraft/class_2561;
+		ARG 0 chunkPos
+		ARG 1 total
+		ARG 2 range
+	METHOD method_1_6730 (IILnet/minecraft/class_3060$class_1_1058;)Lnet/minecraft/class_2561;
+		ARG 0 targets
+		ARG 1 total
+		ARG 2 range
+	METHOD method_1_6731 (Lnet/minecraft/class_1923;ILnet/minecraft/class_3060$class_1_1058;)Lnet/minecraft/class_2561;
+		ARG 0 chunkPos
+		ARG 1 total
+		ARG 2 range
+	METHOD method_1_6732 (IILnet/minecraft/class_3060$class_1_1058;)Lnet/minecraft/class_2561;
+		ARG 0 targets
+		ARG 1 total
+		ARG 2 range
 	METHOD method_13363 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_13364 (Lcom/mojang/brigadier/context/CommandContext;)I
@@ -40,3 +58,6 @@ CLASS net/minecraft/class_3060 net/minecraft/server/command/ForceLoadCommand
 		ARG 1 chunkPos
 	METHOD method_13378 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
+	CLASS class_1_1058 Range
+		METHOD method_1_6733 getMaxChunkPos ()Lnet/minecraft/class_1923;
+		METHOD method_1_6734 getMinChunkPos ()Lnet/minecraft/class_1923;

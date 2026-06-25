@@ -1,5 +1,11 @@
 CLASS net/minecraft/class_3031 net/minecraft/world/gen/feature/Feature
+	FIELD field_1_7518 ENTRY_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_7519 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_7520 ENTRY_LIST_CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_1_6879 getCodec ()Lcom/mojang/serialization/MapCodec;
+	METHOD method_1_6880 getDecoratedFeatures ()Ljava/util/stream/Stream;
+	METHOD method_1_6881 (Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 mapCodec
 	METHOD method_13151 generate (Lnet/minecraft/class_5281;Lnet/minecraft/class_2794;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338;)Z
 		ARG 1 world
 		ARG 2 chunkGenerator

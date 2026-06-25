@@ -1,4 +1,8 @@
 CLASS net/minecraft/class_11814 net/minecraft/server/dedicated/management/OutgoingRpcMethods
+	FIELD field_1_7472 WORLD_UPGRADE_FAILED Lnet/minecraft/class_6880$class_6883;
+	FIELD field_1_7473 WORLD_UPGRADE_FINISHED Lnet/minecraft/class_6880$class_6883;
+	FIELD field_1_7474 WORLD_UPGRADE_PROGRESS Lnet/minecraft/class_6880$class_6883;
+	FIELD field_1_7475 WORLD_UPGRADE_STARTED Lnet/minecraft/class_6880$class_6883;
 	FIELD field_62324 SERVER_STARTED Lnet/minecraft/class_6880$class_6883;
 	FIELD field_62325 SERVER_STOPPING Lnet/minecraft/class_6880$class_6883;
 	FIELD field_62326 SERVER_SAVING Lnet/minecraft/class_6880$class_6883;

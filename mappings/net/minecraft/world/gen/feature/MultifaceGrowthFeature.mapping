@@ -1,5 +1,18 @@
 CLASS net/minecraft/class_5779 net/minecraft/world/gen/feature/MultifaceGrowthFeature
+	METHOD method_1_7167 getShuffledFacingDirections (Lnet/minecraft/class_5819;)Ljava/util/List;
+		ARG 1 random
+	METHOD method_1_7168 getShuffledFacingDirections (Lnet/minecraft/class_5819;Lnet/minecraft/class_2350;)Ljava/util/List;
+		ARG 1 random
+		ARG 2 except
+	METHOD method_1_7169 (Lnet/minecraft/class_2350;Lnet/minecraft/class_2350;)Z
+		ARG 1 direction
+	METHOD method_1_7170 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_7172 getValidFacingDirections ()Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
+	METHOD method_1_7173 validateBlock (Lnet/minecraft/class_2248;)Lcom/mojang/serialization/DataResult;
+		ARG 0 block
 	METHOD method_33391 generate (Lnet/minecraft/class_10376;Lnet/minecraft/class_5281;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_5819;Ljava/util/List;)Z
+		ARG 1 block
 		ARG 2 world
 		ARG 3 pos
 		ARG 4 state

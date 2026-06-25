@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_3005 net/minecraft/world/gen/feature/DesertWellFeature
+	FIELD field_1_7785 INSTANCE Lnet/minecraft/class_3005;
 	FIELD field_13450 CAN_GENERATE Lnet/minecraft/class_2715;
 	METHOD method_49235 (Lnet/minecraft/class_2338;Lnet/minecraft/class_8174;)V
 		ARG 1 blockEntity

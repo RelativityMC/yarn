@@ -1,4 +1,9 @@
 CLASS net/minecraft/class_10853 net/minecraft/world/gen/feature/FallenTreeFeature
+	METHOD method_1_7114 builder (Lnet/minecraft/class_4651;Lnet/minecraft/class_6017;)Lnet/minecraft/class_10853$class_1_1125;
+		ARG 0 log
+		ARG 1 length
+	METHOD method_1_7115 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
 	METHOD method_68300 canReplaceAndHasSolidBelow (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;)Z
 		ARG 1 world
 		ARG 2 pos
@@ -48,3 +53,16 @@ CLASS net/minecraft/class_10853 net/minecraft/world/gen/feature/FallenTreeFeatur
 	METHOD method_68313 isSolidBelow (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;)Z
 		ARG 1 world
 		ARG 2 pos
+	CLASS class_1_1125 Builder
+		FIELD field_1_7792 logDecorators Ljava/util/List;
+		FIELD field_1_7793 length Lnet/minecraft/class_6017;
+		FIELD field_1_7794 stumpDecorators Ljava/util/List;
+		FIELD field_1_7795 log Lnet/minecraft/class_4651;
+		METHOD <init> (Lnet/minecraft/class_4651;Lnet/minecraft/class_6017;)V
+			ARG 1 log
+			ARG 2 length
+		METHOD method_1_7116 build ()Lnet/minecraft/class_10853;
+		METHOD method_1_7117 logDecorator (Lnet/minecraft/class_4662;)Lnet/minecraft/class_10853$class_1_1125;
+			ARG 1 logDecorator
+		METHOD method_1_7118 stumpDecorator (Lnet/minecraft/class_4662;)Lnet/minecraft/class_10853$class_1_1125;
+			ARG 1 stumpDecorator

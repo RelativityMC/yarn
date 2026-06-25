@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_6800 net/minecraft/world/gen/feature/OceanConfiguredFeatures
+CLASS net/minecraft/class_6800 net/minecraft/world/gen/feature/OceanFeatures
 	FIELD field_35762 SEAGRASS_SHORT Lnet/minecraft/class_5321;
 	FIELD field_35763 SEAGRASS_SLIGHTLY_LESS_SHORT Lnet/minecraft/class_5321;
 	FIELD field_35764 SEAGRASS_MID Lnet/minecraft/class_5321;

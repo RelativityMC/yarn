@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_6801 net/minecraft/world/gen/feature/UndergroundConfiguredFeatures
+CLASS net/minecraft/class_6801 net/minecraft/world/gen/feature/UndergroundFeatures
 	FIELD field_1_3727 ROOTED_SULFUR_SPRING Lnet/minecraft/class_5321;
 	FIELD field_1_5769 SULFUR_SPIKE Lnet/minecraft/class_5321;
 	FIELD field_1_5770 SULFUR_SPIKE_CLUSTER Lnet/minecraft/class_5321;

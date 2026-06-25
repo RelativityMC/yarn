@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_1_1106
-	METHOD method_57426 size ()I
-	METHOD method_59707 stream ()Ljava/util/stream/Stream;

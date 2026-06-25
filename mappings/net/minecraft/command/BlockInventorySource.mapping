@@ -1,0 +1,37 @@
+CLASS net/minecraft/class_1_1100 net/minecraft/command/BlockInventorySource
+	FIELD field_1_7561 ARGUMENT Lnet/minecraft/class_1_1047$class_1_1048;
+	FIELD field_1_7562 MODIFY_REPORTER Lnet/minecraft/class_1_1083$class_1_1091;
+	FIELD field_1_7563 REPLACE_REPORTER Lnet/minecraft/class_1_1083$class_1_1091;
+	FIELD field_1_7564 REPLACE_KNOWN_ITEM_REPORTER Lnet/minecraft/class_1_1083$class_1_1092;
+	METHOD method_1_6954 getSlots (Lnet/minecraft/class_2168;Lnet/minecraft/class_12275;Lcom/mojang/brigadier/exceptions/Dynamic3CommandExceptionType;)Lnet/minecraft/class_12271;
+		ARG 1 source
+		ARG 2 slotSource
+		ARG 3 onNonInventory
+	METHOD method_1_6955 getInventory (Lnet/minecraft/class_2168;Lnet/minecraft/class_2338;Lcom/mojang/brigadier/exceptions/Dynamic3CommandExceptionType;)Lnet/minecraft/class_1263;
+		ARG 0 source
+		ARG 1 pos
+		ARG 2 onNonInventory
+	METHOD method_1_6956 (Ljava/lang/String;)Lnet/minecraft/class_1_1047;
+		ARG 0 argName
+	METHOD method_1_6958 (Ljava/lang/String;Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/class_1_1061;
+		ARG 1 context
+	METHOD method_1_6959 (Lnet/minecraft/class_2338;I)Lnet/minecraft/class_2561;
+		ARG 0 pos
+		ARG 1 total
+	METHOD method_1_6960 (II)Lnet/minecraft/class_2561;
+		ARG 0 targets
+		ARG 1 total
+	METHOD method_1_6961 (Lnet/minecraft/class_2338;ILnet/minecraft/class_1799;)Lnet/minecraft/class_2561;
+		ARG 0 pos
+		ARG 1 total
+		ARG 2 stack
+	METHOD method_1_6962 (IILnet/minecraft/class_1799;)Lnet/minecraft/class_2561;
+		ARG 0 targets
+		ARG 1 total
+		ARG 2 stack
+	METHOD method_1_6963 (Lnet/minecraft/class_2338;I)Lnet/minecraft/class_2561;
+		ARG 0 pos
+		ARG 1 total
+	METHOD method_1_6964 (II)Lnet/minecraft/class_2561;
+		ARG 0 targets
+		ARG 1 total

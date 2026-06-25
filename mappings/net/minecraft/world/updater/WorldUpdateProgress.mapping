@@ -14,6 +14,9 @@ CLASS net/minecraft/class_1_27 net/minecraft/world/updater/WorldUpdateProgress
 	FIELD field_1_1496 conversionProgress Lnet/minecraft/class_1_27$class_1_209;
 	FIELD field_1_1497 perStageProgress Lnet/minecraft/class_1_27$class_1_209;
 	FIELD field_1_1498 stage Lnet/minecraft/class_1_27$class_1_210;
+	FIELD field_1_7446 managementListener Lnet/minecraft/class_11871;
+	METHOD <init> (Lnet/minecraft/class_11871;)V
+		ARG 1 managementListener
 	METHOD method_1_492 addTotalChunkCount (I)V
 		ARG 1 count
 	METHOD method_1_494 getUpgradedChunkCount ()I
@@ -55,6 +58,7 @@ CLASS net/minecraft/class_1_27 net/minecraft/world/updater/WorldUpdateProgress
 		ARG 1 total
 	METHOD method_1_1795 setStage (Lnet/minecraft/class_1_27$class_1_210;)V
 		ARG 1 stage
+	METHOD method_1_6737 getManagementListener ()Lnet/minecraft/class_11871;
 	CLASS class_1_28 Dummy
 	CLASS class_1_29 Status
 	CLASS class_1_209 Ratio

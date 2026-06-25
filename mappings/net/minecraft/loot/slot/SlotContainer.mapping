@@ -1,10 +1,16 @@
-CLASS net/minecraft/class_12271 net/minecraft/loot/slot/ItemStream
+CLASS net/minecraft/class_12271 net/minecraft/loot/slot/SlotContainer
+	COMMENT Represents a sequence of item stack references.
 	FIELD field_64161 EMPTY Lnet/minecraft/class_12271;
 	METHOD method_1_132 itemCopies ()Ljava/util/stream/Stream;
+	METHOD method_1_6664 forEach (Ljava/util/function/Consumer;)V
+		ARG 1 callback
 	METHOD method_1_6665 forEach (Ljava/util/function/Consumer;Lnet/minecraft/class_1_1052;)V
 		ARG 1 callback
 		ARG 2 slotSelector
-	METHOD method_1_6667 (Lnet/minecraft/class_1_1040;Lnet/minecraft/class_1_1052;)I
+	METHOD method_1_6666 copyFrom (Lnet/minecraft/class_1_1040;)I
+		ARG 1 source
+	METHOD method_1_6667 copyFrom (Lnet/minecraft/class_1_1040;Lnet/minecraft/class_1_1052;)I
+		ARG 1 source
 		ARG 2 slotSelector
 	METHOD method_1_6668 size ()I
 	METHOD method_76123 limit (I)Lnet/minecraft/class_12271;
@@ -23,5 +29,11 @@ CLASS net/minecraft/class_12271 net/minecraft/loot/slot/ItemStream
 	METHOD method_76129 filter (Ljava/util/function/Predicate;)Lnet/minecraft/class_12271;
 		ARG 1 predicate
 	CLASS class_12272 Filter
+		METHOD method_1_993 (Ljava/util/function/Predicate;Lnet/minecraft/class_1799;)Z
+			ARG 2 stack
 	CLASS class_12273 Map
+		METHOD method_1_6669 (Ljava/util/function/Consumer;Lnet/minecraft/class_1_1052;Lnet/minecraft/class_5630;)V
+			ARG 3 slot
+		METHOD method_1_6670 (Lorg/apache/commons/lang3/mutable/MutableInt;Lnet/minecraft/class_1_1040;Lnet/minecraft/class_1_1052;Lnet/minecraft/class_5630;)V
+			ARG 4 slot
 	CLASS class_12274 Limit

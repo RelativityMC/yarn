@@ -5,6 +5,9 @@ CLASS net/minecraft/class_5478 net/minecraft/world/biome/OverworldBiomeCreator
 	METHOD method_1_4442 createSulfurCaves (Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;)Lnet/minecraft/class_1959;
 		ARG 0 featureLookup
 		ARG 1 carverLookup
+	METHOD method_1_6828 createDappledForest (Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;)Lnet/minecraft/class_1959;
+		ARG 0 featureLookup
+		ARG 1 carverLookup
 	METHOD method_30683 createJungle (Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;)Lnet/minecraft/class_1959;
 		ARG 0 featureLookup
 		ARG 1 carverLookup

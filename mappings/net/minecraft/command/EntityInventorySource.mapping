@@ -1,0 +1,29 @@
+CLASS net/minecraft/class_1_1104 net/minecraft/command/EntityInventorySource
+	FIELD field_1_7571 ARGUMENT Lnet/minecraft/class_1_1047$class_1_1048;
+	FIELD field_1_7572 MODIFY_REPORTER Lnet/minecraft/class_1_1083$class_1_1091;
+	FIELD field_1_7573 REPLACE_REPORTER Lnet/minecraft/class_1_1083$class_1_1091;
+	FIELD field_1_7574 REPLACE_KNOWN_ITEM_REPORTER Lnet/minecraft/class_1_1083$class_1_1092;
+	METHOD method_1_6987 (Ljava/lang/String;)Lnet/minecraft/class_1_1047;
+		ARG 0 argName
+	METHOD method_1_6989 (Ljava/lang/String;Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/class_1_1061;
+		ARG 1 context
+	METHOD method_1_6990 (Lnet/minecraft/class_1297;I)Lnet/minecraft/class_2561;
+		ARG 0 entity
+		ARG 1 total
+	METHOD method_1_6991 (II)Lnet/minecraft/class_2561;
+		ARG 0 targets
+		ARG 1 total
+	METHOD method_1_6992 (Lnet/minecraft/class_1297;ILnet/minecraft/class_1799;)Lnet/minecraft/class_2561;
+		ARG 0 entity
+		ARG 1 total
+		ARG 2 stack
+	METHOD method_1_6993 (IILnet/minecraft/class_1799;)Lnet/minecraft/class_2561;
+		ARG 0 targets
+		ARG 1 total
+		ARG 2 stack
+	METHOD method_1_6994 (Lnet/minecraft/class_1297;I)Lnet/minecraft/class_2561;
+		ARG 0 entity
+		ARG 1 total
+	METHOD method_1_6995 (II)Lnet/minecraft/class_2561;
+		ARG 0 targets
+		ARG 1 total

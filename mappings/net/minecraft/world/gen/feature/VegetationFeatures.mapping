@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_6809 net/minecraft/world/gen/feature/VegetationConfiguredFeatures
+CLASS net/minecraft/class_6809 net/minecraft/world/gen/feature/VegetationFeatures
 	FIELD field_1_2512 BERRY_BUSH Lnet/minecraft/class_5321;
 	FIELD field_1_2513 BROWN_MUSHROOM Lnet/minecraft/class_5321;
 	FIELD field_1_2514 BUSH Lnet/minecraft/class_5321;
@@ -20,6 +20,8 @@ CLASS net/minecraft/class_6809 net/minecraft/world/gen/feature/VegetationConfigu
 	FIELD field_1_2530 TALL_GRASS Lnet/minecraft/class_5321;
 	FIELD field_1_2531 WATERLILY Lnet/minecraft/class_5321;
 	FIELD field_1_2532 WILDFLOWER Lnet/minecraft/class_5321;
+	FIELD field_1_7642 RED_SHRUB Lnet/minecraft/class_5321;
+	FIELD field_1_7643 TREES_DAPPLED_FOREST Lnet/minecraft/class_5321;
 	FIELD field_35925 TREES_FLOWER_FOREST Lnet/minecraft/class_5321;
 	FIELD field_35926 MEADOW_TREES Lnet/minecraft/class_5321;
 	FIELD field_35927 TREES_TAIGA Lnet/minecraft/class_5321;

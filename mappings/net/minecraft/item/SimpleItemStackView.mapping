@@ -33,3 +33,6 @@ CLASS net/minecraft/class_1_107 net/minecraft/item/SimpleItemStackView
 		ARG 1 count
 	METHOD method_1_6378 fromOptionalItemStack (Lnet/minecraft/class_1799;)Lnet/minecraft/class_1_107;
 		ARG 0 stack
+	METHOD method_1_6606 fromItemStackWithCount (Lnet/minecraft/class_1799;I)Lnet/minecraft/class_1_107;
+		ARG 0 stack
+		ARG 1 count

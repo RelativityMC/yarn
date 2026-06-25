@@ -1,4 +1,51 @@
 CLASS net/minecraft/class_3151 net/minecraft/server/command/TitleCommand
+	FIELD field_1_7380 CLEARED_REPORTER Lnet/minecraft/class_1_1083$class_1_1091;
+	FIELD field_1_7381 RESET_REPORTER Lnet/minecraft/class_1_1083$class_1_1091;
+	FIELD field_1_7382 TIMES_REPORTER Lnet/minecraft/class_1_1083$class_1_1091;
+	FIELD field_1_7383 SHOW_ACTIONBAR_REPORTER Lnet/minecraft/class_1_1083$class_1_1091;
+	FIELD field_1_7384 SHOW_SUBTITLE_REPORTER Lnet/minecraft/class_1_1083$class_1_1091;
+	FIELD field_1_7385 SHOW_TITLE_REPORTER Lnet/minecraft/class_1_1083$class_1_1091;
+	METHOD method_1_6589 (Lnet/minecraft/class_3222;I)Lnet/minecraft/class_2561;
+		ARG 0 entity
+		ARG 1 total
+	METHOD method_1_6590 (II)Lnet/minecraft/class_2561;
+		ARG 0 targets
+		ARG 1 total
+	METHOD method_1_6591 (Lnet/minecraft/class_3222;I)Lnet/minecraft/class_2561;
+		ARG 0 entity
+		ARG 1 total
+	METHOD method_1_6592 (II)Lnet/minecraft/class_2561;
+		ARG 0 targets
+		ARG 1 total
+	METHOD method_1_6593 (Lnet/minecraft/class_3222;I)Lnet/minecraft/class_2561;
+		ARG 0 entity
+		ARG 1 total
+	METHOD method_1_6594 (II)Lnet/minecraft/class_2561;
+		ARG 0 targets
+		ARG 1 total
+	METHOD method_1_6595 (Lnet/minecraft/class_3222;I)Lnet/minecraft/class_2561;
+		ARG 0 entity
+		ARG 1 total
+	METHOD method_1_6596 (II)Lnet/minecraft/class_2561;
+		ARG 0 targets
+		ARG 1 total
+	METHOD method_1_6597 (Lnet/minecraft/class_3222;I)Lnet/minecraft/class_2561;
+		ARG 0 entity
+		ARG 1 total
+	METHOD method_1_6598 (II)Lnet/minecraft/class_2561;
+		ARG 0 targets
+		ARG 1 total
+	METHOD method_1_6599 (Lnet/minecraft/class_3222;I)Lnet/minecraft/class_2561;
+		ARG 0 entity
+		ARG 1 total
+	METHOD method_1_6600 (II)Lnet/minecraft/class_2561;
+		ARG 0 targets
+		ARG 1 total
+	METHOD method_1_6601 sendPacket (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_2596;Lnet/minecraft/class_1_1083$class_1_1091;)I
+		ARG 0 source
+		ARG 1 targets
+		ARG 2 packet
+		ARG 3 reporter
 	METHOD method_13799 executeReset (Lnet/minecraft/class_2168;Ljava/util/Collection;)I
 		ARG 0 source
 		ARG 1 targets
@@ -10,6 +57,7 @@ CLASS net/minecraft/class_3151 net/minecraft/server/command/TitleCommand
 		ARG 0 source
 		ARG 1 targets
 		ARG 2 title
+		ARG 3 reporter
 		ARG 4 constructor
 	METHOD method_13803 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context

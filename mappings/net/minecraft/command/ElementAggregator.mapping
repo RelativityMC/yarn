@@ -1,0 +1,158 @@
+CLASS net/minecraft/class_1_1083 net/minecraft/command/ElementAggregator
+	FIELD field_1_7552 numTargets I
+	FIELD field_1_7553 numNonzeroTargets I
+	FIELD field_1_7554 uniqueTarget Ljava/lang/Object;
+	FIELD field_1_7555 uniqueNonzeroTarget Ljava/lang/Object;
+	FIELD field_1_7556 total I
+	METHOD method_1_6908 create ()Lnet/minecraft/class_1_1083;
+	METHOD method_1_6909 report (Lnet/minecraft/class_1_1083$class_1_1087;Lnet/minecraft/class_1_1083$class_1_1084;)Ljava/lang/Object;
+		ARG 1 queryType
+		ARG 2 reporter
+	METHOD method_1_6910 report (Lnet/minecraft/class_1_1083$class_1_1087;Lnet/minecraft/class_1_1083$class_1_1085;Ljava/lang/Object;)Ljava/lang/Object;
+		ARG 1 queryType
+		ARG 2 reporter
+		ARG 3 arg
+	METHOD method_1_6911 report (Lnet/minecraft/class_1_1083$class_1_1087;Lnet/minecraft/class_1_1083$class_1_1086;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+		ARG 1 queryType
+		ARG 2 reporter
+		ARG 3 arg0
+		ARG 4 arg1
+	METHOD method_1_6912 getNumTargets (Lnet/minecraft/class_1_1083$class_1_1087;)I
+		ARG 1 type
+	METHOD method_1_6913 getUniqueTarget (Lnet/minecraft/class_1_1083$class_1_1087;)Ljava/lang/Object;
+		ARG 1 type
+	METHOD method_1_6914 (Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;Ljava/lang/Object;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+		ARG 1 arg
+	METHOD method_1_6915 (Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+		ARG 1 arg0
+		ARG 2 arg1
+	METHOD method_1_6919 reporter (Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;Lnet/minecraft/class_1_1083$class_1_1097;Lnet/minecraft/class_1_1083$class_1_1094;)Lnet/minecraft/class_1_1083$class_1_1091;
+		ARG 0 onZero
+		ARG 1 onSingle
+		ARG 2 onMultiple
+	METHOD method_1_6920 reporter1 (Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;Lnet/minecraft/class_1_1083$class_1_1098;Lnet/minecraft/class_1_1083$class_1_1095;)Lnet/minecraft/class_1_1083$class_1_1092;
+		ARG 0 onZero
+		ARG 1 onSingle
+		ARG 2 onMultiple
+	METHOD method_1_6921 reporter2 (Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;Lnet/minecraft/class_1_1083$class_1_1099;Lnet/minecraft/class_1_1083$class_1_1096;)Lnet/minecraft/class_1_1083$class_1_1093;
+		ARG 0 onZero
+		ARG 1 onSingle
+		ARG 2 onMultiple
+	METHOD method_1_6922 reporter (Lnet/minecraft/class_1_1083$class_1_1088;Lnet/minecraft/class_1_1083$class_1_1097;Lnet/minecraft/class_1_1083$class_1_1094;)Lnet/minecraft/class_1_1083$class_1_1091;
+		ARG 0 onZero
+		ARG 1 onSingle
+		ARG 2 onMultiple
+	METHOD method_1_6923 reporter1 (Lnet/minecraft/class_1_1083$class_1_1089;Lnet/minecraft/class_1_1083$class_1_1098;Lnet/minecraft/class_1_1083$class_1_1095;)Lnet/minecraft/class_1_1083$class_1_1092;
+		ARG 0 onZero
+		ARG 1 onSingle
+		ARG 2 onMultiple
+	METHOD method_1_6924 reporter2 (Lnet/minecraft/class_1_1083$class_1_1090;Lnet/minecraft/class_1_1083$class_1_1099;Lnet/minecraft/class_1_1083$class_1_1096;)Lnet/minecraft/class_1_1083$class_1_1093;
+		ARG 0 onZero
+		ARG 1 onSingle
+		ARG 2 onMultiple
+	METHOD method_1_6925 reporter (Lnet/minecraft/class_1_1083$class_1_1097;Lnet/minecraft/class_1_1083$class_1_1094;)Lnet/minecraft/class_1_1083$class_1_1091;
+		ARG 0 onSingle
+		ARG 1 onMultiple
+	METHOD method_1_6926 reporter1 (Lnet/minecraft/class_1_1083$class_1_1098;Lnet/minecraft/class_1_1083$class_1_1095;)Lnet/minecraft/class_1_1083$class_1_1092;
+		ARG 0 onSingle
+		ARG 1 onMultiple
+	METHOD method_1_6927 reporter2 (Lnet/minecraft/class_1_1083$class_1_1099;Lnet/minecraft/class_1_1083$class_1_1096;)Lnet/minecraft/class_1_1083$class_1_1093;
+		ARG 0 onSingle
+		ARG 1 onMultiple
+	METHOD method_1_6928 report (Lnet/minecraft/class_2168;ZLnet/minecraft/class_1_1083$class_1_1087;Lnet/minecraft/class_1_1083$class_1_1091;)I
+		ARG 1 source
+		ARG 2 broadcastToOps
+		ARG 3 queryType
+		ARG 4 reporter
+	METHOD method_1_6929 report (Lnet/minecraft/class_2168;ZLnet/minecraft/class_1_1083$class_1_1087;Lnet/minecraft/class_1_1083$class_1_1092;Ljava/lang/Object;)I
+		ARG 1 source
+		ARG 2 broadcastToOps
+		ARG 3 queryType
+		ARG 4 reporter
+		ARG 5 arg
+	METHOD method_1_6930 report (Lnet/minecraft/class_2168;ZLnet/minecraft/class_1_1083$class_1_1087;Lnet/minecraft/class_1_1083$class_1_1093;Ljava/lang/Object;Ljava/lang/Object;)I
+		ARG 1 source
+		ARG 2 broadcastToOps
+		ARG 3 queryType
+		ARG 4 reporter
+		ARG 5 arg0
+		ARG 6 arg1
+	METHOD method_1_6931 report (Lnet/minecraft/class_2168;ZLnet/minecraft/class_1_1083$class_1_1091;)I
+		ARG 1 source
+		ARG 2 broadcastToOps
+		ARG 3 reporter
+	METHOD method_1_6932 report (Lnet/minecraft/class_2168;ZLnet/minecraft/class_1_1083$class_1_1092;Ljava/lang/Object;)I
+		ARG 1 source
+		ARG 2 broadcastToOps
+		ARG 3 reporter
+		ARG 4 arg
+	METHOD method_1_6933 report (Lnet/minecraft/class_2168;ZLnet/minecraft/class_1_1083$class_1_1093;Ljava/lang/Object;Ljava/lang/Object;)I
+		ARG 1 source
+		ARG 2 broadcastToOps
+		ARG 3 reporter2
+		ARG 4 arg0
+		ARG 5 arg1
+	METHOD method_1_6934 getTotal ()I
+	METHOD method_1_6935 add (Ljava/lang/Object;)V
+		ARG 1 target
+	METHOD method_1_6936 add (Ljava/lang/Object;I)V
+		ARG 1 target
+		ARG 2 count
+	METHOD method_1_6937 add (Ljava/lang/Object;Z)V
+		ARG 1 target
+		ARG 2 success
+	CLASS class_1_1084 NonzeroReporter
+	CLASS class_1_1085 NonzeroReporter1
+	CLASS class_1_1086 NonzeroReporter2
+	CLASS class_1_1087 QueryType
+	CLASS class_1_1088 ErrorSupplier
+		METHOD method_1_6939 get ()Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+	CLASS class_1_1089 ToErrorFunction
+		METHOD method_1_6940 get (Ljava/lang/Object;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+			ARG 1 value
+	CLASS class_1_1090 ToErrorBiFunction
+		METHOD method_1_6941 get (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+			ARG 1 first
+			ARG 2 second
+	CLASS class_1_1091 Reporter
+		METHOD method_1_6942 validate (I)V
+			ARG 1 count
+	CLASS class_1_1092 Reporter1
+		METHOD method_1_6943 validate (ILjava/lang/Object;)V
+			ARG 1 count
+			ARG 2 arg
+	CLASS class_1_1093 Reporter2
+		METHOD method_1_6944 validate (ILjava/lang/Object;Ljava/lang/Object;)V
+			ARG 1 count
+			ARG 2 arg0
+			ARG 3 arg1
+	CLASS class_1_1094 OnMultipleFunction
+		METHOD method_1_6945 call (II)Ljava/lang/Object;
+			ARG 1 targets
+			ARG 2 total
+	CLASS class_1_1095 OnMultipleFunction1
+		METHOD method_1_6946 call (IILjava/lang/Object;)Ljava/lang/Object;
+			ARG 1 targets
+			ARG 2 total
+			ARG 3 arg
+	CLASS class_1_1096 OnMultipleFunction2
+		METHOD method_1_6947 call (IILjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+			ARG 1 targets
+			ARG 2 total
+			ARG 3 arg0
+			ARG 4 arg1
+	CLASS class_1_1097 OnSingleFunction
+		METHOD method_1_6948 call (Ljava/lang/Object;I)Ljava/lang/Object;
+			ARG 1 elem
+			ARG 2 total
+	CLASS class_1_1098 OnSingleFunction1
+		METHOD method_1_6949 call (Ljava/lang/Object;ILjava/lang/Object;)Ljava/lang/Object;
+			ARG 1 elem
+			ARG 2 total
+			ARG 3 arg
+	CLASS class_1_1099 OnSingleFunction2
+		METHOD method_1_6950 call (Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+			ARG 1 elem
+			ARG 2 total
+			ARG 3 arg0
+			ARG 4 arg1

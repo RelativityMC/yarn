@@ -1,20 +1,82 @@
 CLASS net/minecraft/class_5687 net/minecraft/server/command/ItemCommand
+	FIELD field_1_7467 UNNAMED_INVENTORY_SOURCE_ARGUMENTS Ljava/util/List;
 	FIELD field_1_7468 NO_SUCH_SLOT_SOURCE_UNNAMED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_1_7469 NO_SUCH_SLOT_TARGET_UNNAMED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
+	FIELD field_1_7470 SOURCE_ARGS Ljava/util/List;
+	FIELD field_1_7471 TARGET_ARGS Ljava/util/List;
 	FIELD field_28018 NOT_A_CONTAINER_TARGET_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic3CommandExceptionType;
 	FIELD field_28019 NO_SUCH_SLOT_TARGET_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_28020 NOT_A_CONTAINER_SOURCE_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic3CommandExceptionType;
 	FIELD field_28021 NO_SUCH_SLOT_SOURCE_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_28022 NO_CHANGES_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_28023 KNOWN_ITEM_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
-	METHOD method_1_6784 (Lnet/minecraft/class_2168;Lnet/minecraft/class_12260;Lnet/minecraft/class_12275;)Lnet/minecraft/class_12271;
+	METHOD method_1_6782 fillIterator (Ljava/util/Collection;)Lnet/minecraft/class_1_1040;
+		ARG 0 stacks
+	METHOD method_1_6783 getSourceItems (Lnet/minecraft/class_2168;Lnet/minecraft/class_1_1061;Lnet/minecraft/class_1_1077$class_1_1080;Lnet/minecraft/class_6880;)Ljava/util/Collection;
+		ARG 0 source
+		ARG 1 sourceInventory
+		ARG 2 sourceSlots
+		ARG 3 modifier
+	METHOD method_1_6784 getSlots (Lnet/minecraft/class_2168;Lnet/minecraft/class_12260;Lnet/minecraft/class_12275;)Lnet/minecraft/class_12271;
 		ARG 0 source
 		ARG 1 inventory
 		ARG 2 slotSource
 	METHOD method_1_6785 (Lnet/minecraft/class_117;Lnet/minecraft/class_47;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1799;
 		ARG 2 stack
-	METHOD method_1_6796 (Lnet/minecraft/class_2168;Lnet/minecraft/class_1_1061;Lnet/minecraft/class_1_1077$class_1_1080;Lnet/minecraft/class_6880;)I
+	METHOD method_1_6786 (Lnet/minecraft/class_1_1059;Lnet/minecraft/class_1_1052;Lnet/minecraft/class_1_1083;Ljava/lang/Object;Lnet/minecraft/class_12271;)I
+		ARG 3 target
+		ARG 4 slots
+	METHOD method_1_6787 (Lnet/minecraft/class_7157;Lnet/minecraft/class_1_1047;Lcom/mojang/brigadier/builder/ArgumentBuilder;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+		ARG 2 builder
+	METHOD method_1_6788 (Lnet/minecraft/class_1_1047;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 1 context
+	METHOD method_1_6789 (Lnet/minecraft/class_1_1040;Lnet/minecraft/class_1_1052;Lnet/minecraft/class_1_1083;Ljava/lang/Object;Lnet/minecraft/class_12271;)I
+		ARG 3 target
+		ARG 4 slots
+	METHOD method_1_6790 (Lnet/minecraft/class_7157;Lnet/minecraft/class_1_1047;Lnet/minecraft/class_5687$class_1_1063;Lcom/mojang/brigadier/builder/ArgumentBuilder;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+		ARG 3 builder
+	METHOD method_1_6791 (Lnet/minecraft/class_7157;Lnet/minecraft/class_1_1047;Lnet/minecraft/class_5687$class_1_1063;Lnet/minecraft/class_1_1047;Lcom/mojang/brigadier/builder/ArgumentBuilder;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+		ARG 4 builder
+	METHOD method_1_6792 (Lnet/minecraft/class_1_1047;Lnet/minecraft/class_5687$class_1_1063;Lnet/minecraft/class_1_1047;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 3 context
+	METHOD method_1_6793 (Lnet/minecraft/class_1_1047;Lnet/minecraft/class_5687$class_1_1063;Lnet/minecraft/class_1_1047;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 3 context
+	METHOD method_1_6794 (Lnet/minecraft/class_1_1047;Lnet/minecraft/class_5687$class_1_1063;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 2 context
+	METHOD method_1_6795 (Lnet/minecraft/class_1_1047;Lnet/minecraft/class_5687$class_1_1063;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 2 context
+	METHOD method_1_6796 modify (Lnet/minecraft/class_2168;Lnet/minecraft/class_1_1061;Lnet/minecraft/class_1_1077$class_1_1080;Lnet/minecraft/class_6880;)I
 		ARG 0 source
+		ARG 1 target
+		ARG 2 slots
+		ARG 3 modifier
+	METHOD method_1_6797 overrideIterator (Ljava/util/Collection;)Lnet/minecraft/class_1_1040;
+		ARG 0 stacks
+	METHOD method_1_6798 replaceIterator (Ljava/util/Collection;)Lnet/minecraft/class_1_1040;
+		ARG 0 stacks
+	METHOD method_1_6799 set (Lnet/minecraft/class_2168;Lnet/minecraft/class_1_1061;Lnet/minecraft/class_1_1077$class_1_1080;Lnet/minecraft/class_5687$class_1_1063;Lnet/minecraft/class_1799;)I
+		ARG 0 source
+		ARG 1 target
+		ARG 2 slots
+		ARG 3 iteratorFactory
+		ARG 4 item
+	METHOD method_1_6800 copy (Lnet/minecraft/class_2168;Lnet/minecraft/class_1_1061;Lnet/minecraft/class_1_1077$class_1_1080;Lnet/minecraft/class_5687$class_1_1063;Ljava/util/Collection;)I
+		ARG 0 source
+		ARG 1 target
+		ARG 2 slots
+		ARG 3 iteratorFactory
+		ARG 4 items
+	METHOD method_1_6801 set (Lnet/minecraft/class_2168;Lnet/minecraft/class_1_1061;Lnet/minecraft/class_1_1077$class_1_1080;Lnet/minecraft/class_1_1040;Lnet/minecraft/class_1799;)I
+		ARG 0 source
+		ARG 1 target
+		ARG 2 slotSourceProvider
+		ARG 3 items
+		ARG 4 fallback
+	METHOD method_1_6802 createCopyingSubcommand (Lnet/minecraft/class_7157;Lcom/mojang/brigadier/builder/ArgumentBuilder;Lnet/minecraft/class_1_1047;Lnet/minecraft/class_5687$class_1_1063;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+		ARG 0 commandRegistryAccess
+		ARG 1 node
+		ARG 2 targetArg
+		ARG 3 iteratorFactory
 	METHOD method_32707 register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/class_7157;)V
 		ARG 0 dispatcher
 		ARG 1 commandRegistryAccess
@@ -35,3 +97,6 @@ CLASS net/minecraft/class_5687 net/minecraft/server/command/ItemCommand
 		ARG 2 z
 	METHOD method_32733 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 slot
+	CLASS class_1_1063 ItemIteratorFactory
+		METHOD method_1_6803 create (Ljava/util/Collection;)Lnet/minecraft/class_1_1040;
+			ARG 1 stacks

@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_1_1047
-	METHOD method_1_6556 (Lcom/mojang/brigadier/context/CommandContext;)Ljava/lang/Object;
-		ARG 1 context

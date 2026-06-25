@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_4779 net/minecraft/world/gen/feature/BasaltPillarFeature
+	FIELD field_1_7841 INSTANCE Lnet/minecraft/class_4779;
 	METHOD method_24434 tryPlaceBasalt (Lnet/minecraft/class_1936;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338;)V
 		ARG 1 world
 		ARG 2 random

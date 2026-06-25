@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1_1106 net/minecraft/component/AbstractContainerComponent
+	METHOD method_1_7000 toBuilder ()Lnet/minecraft/class_1_1106$class_1_1107;
+	METHOD method_1_7001 fromItemStacks (Ljava/util/stream/Stream;)Lnet/minecraft/class_1_1106;
+		ARG 1 stacks
+	METHOD method_57426 size ()I
+	METHOD method_59707 stream ()Ljava/util/stream/Stream;
+	CLASS class_1_1107 Builder
+		METHOD method_1_7002 build ()Ljava/lang/Object;

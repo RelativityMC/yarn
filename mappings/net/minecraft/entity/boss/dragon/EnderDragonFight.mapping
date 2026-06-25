@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_2881 net/minecraft/entity/boss/dragon/EnderDragonFight
 	FIELD field_1_1619 BOSS_BAR_NAME Lnet/minecraft/class_2561;
 	FIELD field_1_1620 TYPE Lnet/minecraft/class_10741;
+	FIELD field_1_7665 ORIGIN Lnet/minecraft/class_2338;
 	FIELD field_13105 crystalCountTimer I
 	FIELD field_13106 endCrystalsAlive I
 	FIELD field_13107 dragonSeenTimer I
@@ -62,6 +63,8 @@ CLASS net/minecraft/class_2881 net/minecraft/entity/boss/dragon/EnderDragonFight
 		ARG 0 state
 	METHOD method_1_1974 (Lnet/minecraft/class_2881;)Ljava/util/List;
 		ARG 0 state
+	METHOD method_1_7057 toAbsolutePos (Lnet/minecraft/class_2338;)Lnet/minecraft/class_2338;
+		ARG 0 pos
 	METHOD method_12514 worldContainsEndPortal ()Z
 	METHOD method_12515 convertFromLegacy ()V
 	METHOD method_12516 generateEndGateway (Lnet/minecraft/class_2338;)V

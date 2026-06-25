@@ -18,11 +18,13 @@ CLASS net/minecraft/class_3294 net/minecraft/resource/NamespaceResourceManager
 		ARG 1 pack
 	METHOD method_41256 addPack (Lnet/minecraft/class_3262;Lnet/minecraft/class_3262$class_1_1042;)V
 		ARG 1 pack
+		ARG 2 filter
 	METHOD method_41257 (Lnet/minecraft/class_3294$class_7082;)Lnet/minecraft/class_3262;
 		ARG 0 pack
 	METHOD method_41258 findAndAdd (Lnet/minecraft/class_3294$class_7082;Ljava/lang/String;Lnet/minecraft/class_3300$class_1_1101;Ljava/util/Map;)V
 		ARG 1 pack
 		ARG 2 startingPath
+		ARG 3 filter
 		ARG 4 idToEntryList
 	METHOD method_41259 applyFilter (Lnet/minecraft/class_3294$class_7082;Ljava/util/Map;)V
 		ARG 0 pack
@@ -30,8 +32,10 @@ CLASS net/minecraft/class_3294 net/minecraft/resource/NamespaceResourceManager
 	METHOD method_41260 addPack (Ljava/lang/String;Lnet/minecraft/class_3262;Lnet/minecraft/class_3262$class_1_1042;)V
 		ARG 1 id
 		ARG 2 underlyingPack
+		ARG 3 filter
 	METHOD method_41261 addPack (Ljava/lang/String;Lnet/minecraft/class_3262$class_1_1042;)V
 		ARG 1 id
+		ARG 2 filter
 	METHOD method_43035 createMetadataSupplier (Lnet/minecraft/class_2960;I)Lnet/minecraft/class_7367;
 		ARG 1 id
 		ARG 2 index

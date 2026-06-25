@@ -1,4 +1,10 @@
 CLASS net/minecraft/class_11871 net/minecraft/server/dedicated/management/listener/ManagementListener
+	METHOD method_1_7020 onWorldUpgradeFailed (Ljava/lang/String;)V
+		ARG 1 reason
+	METHOD method_1_7021 onWorldUpgradeFinished ()V
+	METHOD method_1_7022 onWorldUpgradeProgress (F)V
+		ARG 1 progress
+	METHOD method_1_7023 onWorldUpgradeStarted ()V
 	METHOD method_73656 onServerStarted ()V
 	METHOD method_73661 onPlayerJoined (Lnet/minecraft/class_3222;)V
 		ARG 1 player

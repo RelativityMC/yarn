@@ -1,6 +1,8 @@
 CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 	FIELD field_1_1578 ENTITY_CUTOUT_DISSOLVE Ljava/util/function/BiFunction;
 	FIELD field_1_2486 BANNER_PATTERN Ljava/util/function/Function;
+	FIELD field_1_7543 ARMOR_TRIM Ljava/util/function/Function;
+	FIELD field_1_7544 ARMOR_TRIM_DECAL Ljava/util/function/Function;
 	FIELD field_64015 GLINT_TRANSLUCENT Lnet/minecraft/class_1921;
 	FIELD field_64016 GLINT Lnet/minecraft/class_1921;
 	FIELD field_64017 ENTITY_GLINT Lnet/minecraft/class_1921;
@@ -67,6 +69,13 @@ CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 		ARG 0 pipeline
 		ARG 1 translucent
 	METHOD method_1_3008 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+		ARG 0 texture
+	METHOD method_1_6898 armorTrim (Lnet/minecraft/class_2960;Z)Lnet/minecraft/class_1921;
+		ARG 0 texture
+		ARG 1 decal
+	METHOD method_1_6899 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+		ARG 0 texture
+	METHOD method_1_6900 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
 	METHOD method_75942 blockScreenEffect (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture

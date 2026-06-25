@@ -10,4 +10,6 @@ CLASS net/minecraft/class_1_314 net/minecraft/client/render/model/ModelTexture
 		ARG 0 value
 	METHOD method_1_2295 withForceTranslucent (Z)Lnet/minecraft/class_1_314;
 		ARG 1 forceTranslucent
+	METHOD method_1_6901 suffixed (Ljava/lang/String;)Lnet/minecraft/class_1_314;
+		ARG 1 suffix
 	CLASS class_1_315 Baked

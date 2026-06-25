@@ -1,3 +1,5 @@
-CLASS net/minecraft/class_1_1112 net/minecraft/world/gen/feature/Features
-	METHOD method_1_7047 register (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
-		ARG 0 registries
+CLASS net/minecraft/class_6803 net/minecraft/world/gen/feature/Features
+	METHOD method_39702 bootstrap (Lnet/minecraft/class_7891;)V
+		ARG 0 featureRegisterable
+	METHOD method_46852 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 id

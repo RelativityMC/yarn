@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1_1059 net/minecraft/inventory/CountingStackTransformer
+	FIELD field_1_7447 transformation Ljava/util/function/UnaryOperator;
+	FIELD field_1_7448 successes I
+	METHOD <init> (Ljava/util/function/UnaryOperator;)V
+		ARG 1 transformation
+	METHOD accept (Ljava/lang/Object;)V
+		ARG 1 stackRef
+	METHOD method_1_6739 getSuccessCount ()I

@@ -17,6 +17,8 @@ CLASS net/minecraft/class_4662 net/minecraft/world/gen/treedecorator/TreeDecorat
 			ARG 4 logPositions
 			ARG 5 leavesPositions
 			ARG 6 rootPositions
+		METHOD method_1_7214 isReplaceable (Lnet/minecraft/class_2338;)Z
+			ARG 1 pos
 		METHOD method_43316 getWorld ()Lnet/minecraft/class_5281;
 		METHOD method_43317 isAir (Lnet/minecraft/class_2338;)Z
 			ARG 1 pos

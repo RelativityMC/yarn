@@ -1,0 +1,23 @@
+CLASS net/minecraft/class_1_1052 net/minecraft/inventory/SlotSelector
+	FIELD field_1_7390 PASS Lnet/minecraft/class_1_1052;
+	FIELD field_1_7391 EMPTY Lnet/minecraft/class_1_1052;
+	FIELD field_1_7392 NON_EMPTY Lnet/minecraft/class_1_1052;
+	METHOD method_1_6607 restrict (Ljava/util/function/Predicate;)Lnet/minecraft/class_1_1052;
+		ARG 1 filter
+	METHOD method_1_6608 (Lnet/minecraft/class_1799;)Z
+		ARG 0 stack
+	METHOD method_1_6609 limit (I)Lnet/minecraft/class_1_1052;
+		ARG 1 limit
+	METHOD method_1_6610 filter (Ljava/util/function/Predicate;)Lnet/minecraft/class_1_1052;
+		ARG 0 filter
+	METHOD method_1_6611 withCount (Lnet/minecraft/class_1_1052;Lorg/apache/commons/lang3/mutable/MutableInt;)Lnet/minecraft/class_1_1052;
+		ARG 0 slotSelector
+		ARG 1 selectedCount
+	METHOD method_1_6612 withCount (Lorg/apache/commons/lang3/mutable/MutableInt;)Lnet/minecraft/class_1_1052;
+		ARG 0 selectedCount
+	METHOD method_1_6613 test (Lnet/minecraft/class_1799;)Z
+		ARG 1 stack
+	CLASS class_1_1053 Filter
+		METHOD method_1_6614 (Ljava/util/function/Predicate;Lnet/minecraft/class_1799;)Z
+			ARG 2 stack
+	CLASS class_1_1054 Limit

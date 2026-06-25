@@ -1,5 +1,10 @@
 CLASS net/minecraft/class_5875 net/minecraft/world/gen/feature/ScatteredOreFeature
 	FIELD field_31515 MAX_SPREAD I
+	METHOD <init> (Lnet/minecraft/class_3825;Lnet/minecraft/class_2680;IF)V
+		ARG 1 target
+		ARG 2 state
+		ARG 3 size
+		ARG 4 discardChanceOnAirExposure
 	METHOD method_33985 setPos (Lnet/minecraft/class_2338$class_2339;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338;I)V
 		ARG 1 mutable
 		ARG 2 random

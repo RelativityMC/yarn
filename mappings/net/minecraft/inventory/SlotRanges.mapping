@@ -1,7 +1,20 @@
 CLASS net/minecraft/class_9349 net/minecraft/inventory/SlotRanges
+	FIELD field_1_1095 MOB_INVENTORY_SIZE I
+	FIELD field_1_1096 MOB_INVENTORY_BASE I
+	FIELD field_1_7353 UNKNOWN_SLOT_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_49744 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_49745 SLOT_RANGES Ljava/util/List;
 	FIELD field_49746 FROM_NAME Ljava/util/function/Function;
+	METHOD method_1_6536 (C)Z
+		ARG 0 c
+	METHOD method_1_6537 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 slot
+	METHOD method_1_6538 (C)Z
+		ARG 0 c
+	METHOD method_1_6539 readOrThrow (Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/class_9348;
+		ARG 0 reader
+	METHOD method_1_6540 read (Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/class_9348;
+		ARG 0 reader
 	METHOD method_58078 streamNames ()Ljava/util/stream/Stream;
 	METHOD method_58079 (Lnet/minecraft/class_9348;)Z
 		ARG 0 slotRange

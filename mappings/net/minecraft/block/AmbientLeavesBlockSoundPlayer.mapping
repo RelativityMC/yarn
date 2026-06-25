@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_1_1136 net/minecraft/block/AmbientLeavesBlockSoundPlayer
+	FIELD field_1_7893 DEFAULT_CHANCE I
+	FIELD field_1_7895 DEFAULT_NEARBY_SAME_LEAVES_REQUIRED I
+	FIELD field_1_7896 DEFAULT_NEARBY_SATISFYING_BLOCKS_REQUIRED I
+	FIELD field_1_7897 EMPTY Lnet/minecraft/class_1_1136;
+	METHOD method_1_7196 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_7197 empty ()Lnet/minecraft/class_1_1136;
+	METHOD method_1_7198 of (Lnet/minecraft/class_6880;Lnet/minecraft/class_6862;)Lnet/minecraft/class_1_1136;
+		ARG 0 ambientSound
+		ARG 1 satisfyingBlocks
+	METHOD method_1_7199 tickSounds (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2248;Lnet/minecraft/class_5819;)V
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 block
+		ARG 4 random

@@ -1,0 +1,48 @@
+CLASS net/minecraft/class_1_1110 net/minecraft/structure/AbandonedCampGenerator
+	FIELD field_1_7616 BAMBOO_JUNGLE Lnet/minecraft/class_1_1110$class_1_1111;
+	FIELD field_1_7617 VARIANTS Ljava/util/List;
+	FIELD field_1_7618 BIRCH_FOREST Lnet/minecraft/class_1_1110$class_1_1111;
+	FIELD field_1_7619 CAMPSITE_FORMAT Ljava/lang/String;
+	FIELD field_1_7620 CAMPSITE_DEFAULT_FORMAT Ljava/lang/String;
+	FIELD field_1_7621 CHERRY_GROVE Lnet/minecraft/class_1_1110$class_1_1111;
+	FIELD field_1_7622 DAPPLED_FOREST Lnet/minecraft/class_1_1110$class_1_1111;
+	FIELD field_1_7623 DEFAULT_CAMPSITE_ELEMENTS Ljava/util/List;
+	FIELD field_1_7624 FLOWER_FOREST Lnet/minecraft/class_1_1110$class_1_1111;
+	FIELD field_1_7625 FOREST Lnet/minecraft/class_1_1110$class_1_1111;
+	FIELD field_1_7626 MEADOW Lnet/minecraft/class_1_1110$class_1_1111;
+	FIELD field_1_7627 NUM_CAMPSITE_VARIANTS I
+	FIELD field_1_7628 NUM_CAMPSITE_ELEMENT_VARIANTS I
+	FIELD field_1_7629 NUM_TENT_VARIANTS I
+	FIELD field_1_7630 OLD_GROWTH_BIRCH_FOREST Lnet/minecraft/class_1_1110$class_1_1111;
+	FIELD field_1_7631 OLD_GROWTH_PINE_TAIGA Lnet/minecraft/class_1_1110$class_1_1111;
+	FIELD field_1_7632 OLD_GROWTH_SPRUCE_TAIGA Lnet/minecraft/class_1_1110$class_1_1111;
+	FIELD field_1_7633 PALE_GARDEN Lnet/minecraft/class_1_1110$class_1_1111;
+	FIELD field_1_7634 SAVANNA Lnet/minecraft/class_1_1110$class_1_1111;
+	FIELD field_1_7635 SNOWY_TAIGA Lnet/minecraft/class_1_1110$class_1_1111;
+	FIELD field_1_7636 SPARSE_JUNGLE Lnet/minecraft/class_1_1110$class_1_1111;
+	FIELD field_1_7637 SWAMP Lnet/minecraft/class_1_1110$class_1_1111;
+	FIELD field_1_7638 TAIGA Lnet/minecraft/class_1_1110$class_1_1111;
+	FIELD field_1_7639 TENT_FORMAT Ljava/lang/String;
+	FIELD field_1_7640 WINDSWEPT_FOREST Lnet/minecraft/class_1_1110$class_1_1111;
+	FIELD field_1_7641 WOODED_BADLANDS Lnet/minecraft/class_1_1110$class_1_1111;
+	METHOD method_1_7036 bootstrap (Lnet/minecraft/class_7891;)V
+		ARG 0 structurePoolsRegisterable
+	METHOD method_1_7037 registerAllVariants (Lnet/minecraft/class_7891;Lnet/minecraft/class_6880;)V
+		ARG 0 structurePoolsRegisterable
+		ARG 1 emptyPool
+	METHOD method_1_7038 format (Lnet/minecraft/class_1_1110$class_1_1111;Ljava/lang/String;I)Ljava/lang/String;
+		ARG 0 variant
+		ARG 1 format
+		ARG 2 num
+	METHOD method_1_7039 formatDefaultCampsitePath (Ljava/lang/String;I)Ljava/lang/String;
+		ARG 0 element
+		ARG 1 num
+	METHOD method_1_7040 registerCampsites (Lnet/minecraft/class_7891;Lnet/minecraft/class_6880;Lnet/minecraft/class_1_1110$class_1_1111;)V
+		ARG 0 structurePoolsRegisterable
+		ARG 1 emptyPool
+		ARG 2 variant
+	METHOD method_1_7041 registerTents (Lnet/minecraft/class_7891;Lnet/minecraft/class_6880;Lnet/minecraft/class_1_1110$class_1_1111;)V
+		ARG 0 structurePoolsRegisterable
+		ARG 1 emptyPool
+		ARG 2 variant
+	CLASS class_1_1111 Variant

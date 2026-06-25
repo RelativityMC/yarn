@@ -50,8 +50,10 @@ CLASS net/minecraft/class_746 net/minecraft/client/network/ClientPlayerEntity
 		ARG 5 recipeBook
 		ARG 6 lastPlayerInput
 		ARG 7 lastSprinting
+		ARG 8 chatRestrictions
 	METHOD method_1_2187 getChatRestrictions ()Lnet/minecraft/class_1_317;
 	METHOD method_1_2188 setChatRestrictionsFromClient ()V
+	METHOD method_1_6520 sync ()V
 	METHOD method_3130 getRecipeBook ()Lnet/minecraft/class_299;
 	METHOD method_3132 openRidingInventory ()V
 	METHOD method_3133 startRidingJump ()V

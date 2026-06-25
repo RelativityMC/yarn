@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_1149 net/minecraft/world/gen/chunk/placement/DimensionOriginStructurePlacement
+	FIELD field_1_7940 INSTANCE Lnet/minecraft/class_1_1149;

@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_1_1138 net/minecraft/client/sound/ConditionalMusicLoop
+	FIELD field_1_7898 MAX_COUNTER I
+	FIELD field_1_7899 counter I
+	FIELD field_1_7900 playerTest Ljava/util/function/Predicate;
+	FIELD field_1_7901 player Lnet/minecraft/class_746;
+	METHOD <init> (Lnet/minecraft/class_3414;Lnet/minecraft/class_746;Ljava/util/function/Predicate;)V
+		ARG 1 sound
+		ARG 2 player
+		ARG 3 playerTest
+	METHOD method_1_7202 underwater (Lnet/minecraft/class_746;)Lnet/minecraft/class_1_1138;
+		ARG 0 player

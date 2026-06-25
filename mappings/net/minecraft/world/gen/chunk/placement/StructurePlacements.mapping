@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_1145 net/minecraft/world/gen/chunk/placement/StructurePlacements
+	METHOD method_1_7230 register (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 registries

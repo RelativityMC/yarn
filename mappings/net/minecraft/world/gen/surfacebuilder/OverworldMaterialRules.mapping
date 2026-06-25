@@ -1,0 +1,43 @@
+CLASS net/minecraft/class_1_1122 net/minecraft/world/gen/surfacebuilder/OverworldMaterialRules
+	FIELD field_1_7703 AIR Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_7705 CALCITE Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_7706 CINNABAR Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_7707 COARSE_DIRT Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_7709 DEEPSLATE Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_7712 DIRT Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_7716 GRASS_BLOCK Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_7717 GRAVEL Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_7721 ICE Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_7726 MUD Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_7728 MYCELIUM Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_7730 ORANGE_TERRACOTTA Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_7734 PACKED_ICE Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_7735 PODZOL Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_7736 POWDER_SNOW Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_7739 RED_SAND Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_7740 RED_SANDSTONE Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_7741 SAND Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_7742 SANDSTONE Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_7746 SNOW_BLOCK Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_7747 STONE Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_7750 SULFUR Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_7754 TERRACOTTA Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_7757 WATER Lnet/minecraft/class_6686$class_6708;
+	FIELD field_1_7758 WHITE_TERRACOTTA Lnet/minecraft/class_6686$class_6708;
+	METHOD method_1_7091 bootstrap (Lnet/minecraft/class_7891;)V
+		ARG 0 registry
+	METHOD method_1_7092 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 key
+	METHOD method_1_7093 createCompositeRule (Lnet/minecraft/class_7871;ZZZLnet/minecraft/class_6686$class_6708;Lnet/minecraft/class_6686$class_6708;)Lnet/minecraft/class_6686$class_6708;
+		ARG 0 registry
+		ARG 1 imposeSurfaceCondition
+		ARG 2 hasBedrockRoof
+		ARG 3 hasBedrockFloor
+		ARG 4 surfaceRule
+		ARG 5 undergroundRule
+	METHOD method_1_7095 block (Lnet/minecraft/class_2248;)Lnet/minecraft/class_6686$class_6708;
+		ARG 0 block
+	METHOD method_1_7096 createSurfaceRule (Lnet/minecraft/class_7891;Lnet/minecraft/class_6686$class_6708;)Lnet/minecraft/class_6686$class_6708;
+		ARG 0 registry
+		ARG 1 sulfurCaveBandsRule
+	METHOD method_1_7097 surfaceNoiseThreshold (D)Lnet/minecraft/class_6686$class_6693;

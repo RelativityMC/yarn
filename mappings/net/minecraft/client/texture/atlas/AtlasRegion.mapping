@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1117 net/minecraft/client/texture/atlas/AtlasRegion
+	METHOD method_1_7074 getHeight ()I
+	METHOD method_1_7075 getWidth ()I
+	METHOD method_1_7076 getX ()I
+	METHOD method_1_7077 getY ()I

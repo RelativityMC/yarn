@@ -1,0 +1,63 @@
+CLASS net/minecraft/class_1_1147 net/minecraft/world/gen/foliage/PoplarFoliagePlacer
+	FIELD field_1_7927 stashedGiantTrunk Z
+	FIELD field_1_7928 stashedFoliageHeight I
+	FIELD field_1_7929 height Lnet/minecraft/class_6017;
+	FIELD field_1_7930 TWO_LOWER Ljava/util/function/Function;
+	FIELD field_1_7931 sideHoleChance F
+	FIELD field_1_7932 ONE_LOWER Ljava/util/function/Function;
+	METHOD <init> (Lnet/minecraft/class_6017;Lnet/minecraft/class_6017;Lnet/minecraft/class_6017;F)V
+		ARG 1 radius
+		ARG 2 offset
+		ARG 3 height
+		ARG 4 sideHoleChance
+	METHOD method_1_7236 getLeavesMargin (IIIZ)I
+		ARG 1 dx
+		ARG 2 dz
+		ARG 3 radius
+		ARG 4 centralY
+	METHOD method_1_7237 axisSetter (Lnet/minecraft/class_2350;)Ljava/util/function/Function;
+		ARG 0 direction
+	METHOD method_1_7238 haveOppositeSigns (II)Z
+		ARG 0 dx
+		ARG 1 dz
+	METHOD method_1_7239 haveSameSign (II)Z
+		ARG 0 dx
+		ARG 1 dz
+	METHOD method_1_7240 isWithinRangeForLeaves (IIIII)Z
+		ARG 0 radius
+		ARG 1 absdx
+		ARG 2 absdz
+		ARG 3 leavesMargin
+		ARG 4 sideHoleAdjustment
+	METHOD method_1_7241 (Lnet/minecraft/class_2350;Lnet/minecraft/class_2680;)Lnet/minecraft/class_2680;
+		ARG 1 state
+	METHOD method_1_7242 (Ljava/lang/Integer;)Ljava/lang/Integer;
+		ARG 0 y
+	METHOD method_1_7243 (Ljava/lang/Integer;)Ljava/lang/Integer;
+		ARG 0 y
+	METHOD method_1_7244 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_7245 (Lnet/minecraft/class_1_1147;)Lnet/minecraft/class_6017;
+		ARG 0 placer
+	METHOD method_1_7246 (Lnet/minecraft/class_1_1147;)Ljava/lang/Float;
+		ARG 0 placer
+	METHOD method_1_7247 (Lnet/minecraft/class_2944;Lnet/minecraft/class_5281;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Z
+		ARG 4 state
+	METHOD method_1_7248 generateSquareWithSideHoles (Lnet/minecraft/class_5281;Lnet/minecraft/class_4647$class_8179;Lnet/minecraft/class_2944;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338;IIZ)V
+		ARG 1 world
+		ARG 2 placer
+		ARG 3 feature
+		ARG 4 random
+		ARG 5 pos
+		ARG 6 radius
+		ARG 7 y
+		ARG 8 giantTrunk
+	METHOD method_1_7249 isCentralY (I)Z
+		ARG 1 y
+	METHOD method_1_7250 replaceFoliageWithTrunk (Lnet/minecraft/class_5281;Lnet/minecraft/class_4647$class_8179;Lnet/minecraft/class_5819;Lnet/minecraft/class_2944;Lnet/minecraft/class_2338;Ljava/util/function/Function;)V
+		ARG 0 world
+		ARG 1 placer
+		ARG 2 random
+		ARG 3 feature
+		ARG 4 pos
+		ARG 5 trunkTransformer

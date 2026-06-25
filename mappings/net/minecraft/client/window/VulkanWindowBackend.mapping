@@ -1,17 +1,22 @@
 CLASS net/minecraft/class_1_689 net/minecraft/client/window/VulkanWindowBackend
 	FIELD field_1_3534 LOGGER Lorg/slf4j/Logger;
 	METHOD method_1_4154 createDevice (Lnet/minecraft/class_1_1045;Lnet/minecraft/class_1_717;)Lorg/lwjgl/vulkan/VkDevice;
+		ARG 0 enabled
 		ARG 1 physicalDevice
 	METHOD method_1_4155 createVmaAllocator (Lorg/lwjgl/vulkan/VkDevice;)J
 		ARG 0 device
 	METHOD method_1_4156 getSuitablePhysicalDevice (Lnet/minecraft/class_1_691;Ljava/util/Set;Ljava/util/Set;)Lnet/minecraft/class_1_717;
 		ARG 0 instance
+		ARG 1 baseRequired
+		ARG 2 portabilitySubset
 	METHOD method_1_4157 getPhysicalDeviceName (Lorg/lwjgl/vulkan/VkPhysicalDevice;)Ljava/lang/String;
 		ARG 0 physicalDevice
 	METHOD method_1_4158 isDiscreteGpu (Lorg/lwjgl/vulkan/VkPhysicalDevice;)Z
 		ARG 0 physicalDevice
 	METHOD method_1_4159 isPhysicalDeviceSuitable (Lorg/lwjgl/vulkan/VkPhysicalDevice;Ljava/util/Set;Ljava/util/Set;)Lnet/minecraft/class_1_739;
 		ARG 0 physicalDevice
+		ARG 1 baseRequired
+		ARG 2 portabilitySubset
 	METHOD method_1_5119 isApiVersionSufficient (Lorg/lwjgl/vulkan/VkPhysicalDevice;)Z
 		ARG 0 physicalDevice
 	METHOD method_1_6284 getPilotWindowException ()Lnet/minecraft/class_1_739;

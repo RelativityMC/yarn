@@ -5,12 +5,16 @@ CLASS net/minecraft/class_4897 net/minecraft/client/sound/BiomeEffectSoundPlayer
 	FIELD field_22800 soundLoops Lit/unimi/dsi/fastutil/objects/Object2ObjectArrayMap;
 	FIELD field_23189 moodPercentage F
 	FIELD field_32994 MAX_STRENGTH I
+	FIELD field_63919 currentLoop Lnet/minecraft/class_6880;
 	METHOD <init> (Lnet/minecraft/class_746;Lnet/minecraft/class_1144;)V
 		ARG 1 player
 		ARG 2 soundManager
 	METHOD method_25459 (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;Lnet/minecraft/class_4897$class_4898;)Lnet/minecraft/class_4897$class_4898;
+		ARG 2 event
 		ARG 3 loop
 	METHOD method_26272 getMoodPercentage ()F
+	METHOD method_75840 (Lnet/minecraft/class_1937;Lnet/minecraft/class_4968;)V
+		ARG 2 mood
 	CLASS class_4898 MusicLoop
 		FIELD field_22805 delta I
 		FIELD field_22806 strength I

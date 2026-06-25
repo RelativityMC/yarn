@@ -220,6 +220,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 	COMMENT <li>Called before {@link #getDroppedStacks getDroppedStacks} in this case.</li>
 	COMMENT </ol>
 	FIELD field_1_3773 bounciness F
+	FIELD field_1_7565 fallDistanceReduction F
 	FIELD field_23154 dynamicBounds Z
 		COMMENT Whether this block's collision shape can change.
 		COMMENT
@@ -269,6 +270,8 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		COMMENT
 		COMMENT @see net.minecraft.resource.featuretoggle.FeatureFlags
 	FIELD field_54005 translationKey Ljava/lang/String;
+	METHOD <init> (Lnet/minecraft/class_4970$class_2251;)V
+		ARG 1 settings
 	METHOD method_1_5240 getWeakRedstonePower (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)I
 		ARG 1 state
 		ARG 2 view
@@ -881,6 +884,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 	CLASS class_2250 OffsetType
 	CLASS class_2251 Settings
 		FIELD field_1_3774 bounciness F
+		FIELD field_1_7566 fallDistanceReduction F
 		FIELD field_10660 resistance F
 		FIELD field_10661 randomTicks Z
 		FIELD field_10662 mapColorProvider Ljava/util/function/Function;
@@ -915,8 +919,16 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		FIELD field_54006 registryKey Lnet/minecraft/class_5321;
 		FIELD field_54007 lootTable Lnet/minecraft/class_10162;
 		FIELD field_54008 translationKey Lnet/minecraft/class_10162;
+		METHOD method_1_3011 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Lnet/minecraft/class_2338;
+			ARG 0 state
+			ARG 1 world
+			ARG 2 pos
+		METHOD method_1_3012 (Lnet/minecraft/class_2680;)Z
+			ARG 0 state
 		METHOD method_1_4491 bounciness (F)Lnet/minecraft/class_4970$class_2251;
 			ARG 1 bounciness
+		METHOD method_1_6968 fallDistanceReduction (F)Lnet/minecraft/class_4970$class_2251;
+			ARG 1 fallDistanceReduction
 		METHOD method_9618 breakInstantly ()Lnet/minecraft/class_4970$class_2251;
 			COMMENT Specifies that a block is broken instantly.
 		METHOD method_9624 dynamicBounds ()Lnet/minecraft/class_4970$class_2251;
@@ -975,6 +987,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		METHOD method_26247 postProcess (Lnet/minecraft/class_4970$class_1_474;)Lnet/minecraft/class_4970$class_2251;
 			ARG 1 postProcessPredicate
 		METHOD method_26249 emissiveLighting (Ljava/util/function/Predicate;)Lnet/minecraft/class_4970$class_2251;
+			ARG 1 emissiveLightingPredicate
 		METHOD method_26250 air ()Lnet/minecraft/class_4970$class_2251;
 		METHOD method_29292 requiresTool ()Lnet/minecraft/class_4970$class_2251;
 		METHOD method_31710 mapColor (Lnet/minecraft/class_3620;)Lnet/minecraft/class_4970$class_2251;
@@ -1117,6 +1130,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 			ARG 2 pos
 			ARG 3 entity
 			ARG 4 collisionHandler
+			ARG 5 substantial
 		METHOD method_26179 onBlockBreakStart (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1657;)V
 			ARG 1 world
 			ARG 2 pos

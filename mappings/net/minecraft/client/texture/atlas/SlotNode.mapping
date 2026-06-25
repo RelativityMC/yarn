@@ -1,0 +1,21 @@
+CLASS net/minecraft/class_1_1109 net/minecraft/client/texture/atlas/SlotNode
+	FIELD field_1_7595 height I
+	FIELD field_1_7596 leftChild Lnet/minecraft/class_1_1109;
+	FIELD field_1_7597 full Z
+	FIELD field_1_7598 rightChild Lnet/minecraft/class_1_1109;
+	FIELD field_1_7599 width I
+	FIELD field_1_7600 x I
+	FIELD field_1_7601 y I
+	METHOD <init> (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+	METHOD method_1_7011 allocate (III)Lnet/minecraft/class_1_1117;
+		ARG 1 width
+		ARG 2 height
+		ARG 3 padding
+	METHOD method_1_7012 split (III)Lnet/minecraft/class_1_1109;
+		ARG 1 width
+		ARG 2 height
+		ARG 3 padding

@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_1060 net/minecraft/client/texture/TextureRegion
+	METHOD method_1_6743 restrict (Lnet/minecraft/class_4588;)Lnet/minecraft/class_4588;
+		ARG 1 vertexConsumer
+	METHOD method_4570 getFrameV (F)F
+		ARG 1 v
+	METHOD method_4580 getFrameU (F)F
+		ARG 1 u

@@ -35,4 +35,10 @@ CLASS net/minecraft/class_1_678 net/minecraft/client/vulkan/VulkanUtils
 		ARG 0 records
 	METHOD method_1_5491 describeStage (J)Ljava/lang/String;
 		ARG 0 stage
+	METHOD method_1_6463 getDeviceExtensions (Lorg/lwjgl/vulkan/VkPhysicalDevice;)Ljava/util/Set;
+		ARG 0 physicalDevice
+	METHOD method_1_6464 getPhysicalDeviceFeatures2Struct (Lorg/lwjgl/vulkan/VkPhysicalDevice;Ljava/util/Set;Lorg/lwjgl/system/MemoryStack;)Lorg/lwjgl/vulkan/VkPhysicalDeviceFeatures2;
+		ARG 0 physicalDevice
+		ARG 1 features
+		ARG 2 memoryStack
 	CLASS class_1_905 DeviceId

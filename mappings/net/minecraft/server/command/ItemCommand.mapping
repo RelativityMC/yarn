@@ -1,15 +1,28 @@
 CLASS net/minecraft/class_5687 net/minecraft/server/command/ItemCommand
+	FIELD field_1_7468 NO_SUCH_SLOT_SOURCE_UNNAMED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
+	FIELD field_1_7469 NO_SUCH_SLOT_TARGET_UNNAMED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_28018 NOT_A_CONTAINER_TARGET_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic3CommandExceptionType;
 	FIELD field_28019 NO_SUCH_SLOT_TARGET_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_28020 NOT_A_CONTAINER_SOURCE_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic3CommandExceptionType;
 	FIELD field_28021 NO_SUCH_SLOT_SOURCE_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_28022 NO_CHANGES_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_28023 KNOWN_ITEM_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
+	METHOD method_1_6784 (Lnet/minecraft/class_2168;Lnet/minecraft/class_12260;Lnet/minecraft/class_12275;)Lnet/minecraft/class_12271;
+		ARG 0 source
+		ARG 1 inventory
+		ARG 2 slotSource
+	METHOD method_1_6785 (Lnet/minecraft/class_117;Lnet/minecraft/class_47;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1799;
+		ARG 2 stack
+	METHOD method_1_6796 (Lnet/minecraft/class_2168;Lnet/minecraft/class_1_1061;Lnet/minecraft/class_1_1077$class_1_1080;Lnet/minecraft/class_6880;)I
+		ARG 0 source
 	METHOD method_32707 register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/class_7157;)V
 		ARG 0 dispatcher
 		ARG 1 commandRegistryAccess
 	METHOD method_32715 getStackWithModifier (Lnet/minecraft/class_2168;Lnet/minecraft/class_117;)Ljava/util/function/UnaryOperator;
 		ARG 0 source
+		ARG 1 function
+	METHOD method_32726 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 item
 	METHOD method_32728 (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 x
 		ARG 1 y

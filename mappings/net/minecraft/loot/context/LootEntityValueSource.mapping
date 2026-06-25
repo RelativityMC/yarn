@@ -1,6 +1,8 @@
 CLASS net/minecraft/class_12283 net/minecraft/loot/context/LootEntityValueSource
 	FIELD field_64179 ENTITY_OR_BLOCK_ENTITY_CODEC Lcom/mojang/serialization/Codec;
 	METHOD comp_4920 contextParam ()Lnet/minecraft/class_169;
+	METHOD method_1_7009 fromContextParameter (Lnet/minecraft/class_169;)Lnet/minecraft/class_12283;
+		ARG 0 contextParameter
 	METHOD method_76208 get (Lnet/minecraft/class_47;)Ljava/lang/Object;
 		ARG 1 context
 	METHOD method_76209 (Lnet/minecraft/class_12283$class_12284;)Lnet/minecraft/class_12283$class_12284;
@@ -10,7 +12,12 @@ CLASS net/minecraft/class_12283 net/minecraft/loot/context/LootEntityValueSource
 	METHOD method_76211 createCodec (Ljava/util/function/UnaryOperator;)Lcom/mojang/serialization/Codec;
 		ARG 0 factory
 	CLASS class_12284 Builder
-		FIELD field_64180 ID_MAPPER Lnet/minecraft/class_5699$class_10388;
+		FIELD field_64180 idMapper Lnet/minecraft/class_5699$class_10388;
+		METHOD method_1_641 (Lnet/minecraft/class_3542;)Lnet/minecraft/class_12283;
+			ARG 0 value
+		METHOD method_1_7010 add (Ljava/lang/String;Lnet/minecraft/class_12283;)Lnet/minecraft/class_12283$class_12284;
+			ARG 1 key
+			ARG 2 source
 		METHOD method_76212 getCodec ()Lcom/mojang/serialization/Codec;
 		METHOD method_76214 forEntities (Ljava/util/function/Function;)Lnet/minecraft/class_12283$class_12284;
 			ARG 1 sourceFactory

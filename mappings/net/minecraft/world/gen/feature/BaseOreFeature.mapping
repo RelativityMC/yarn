@@ -1,0 +1,31 @@
+CLASS net/minecraft/class_1_1133 net/minecraft/world/gen/feature/BaseOreFeature
+	FIELD field_1_7818 discardChanceOnAirExposure F
+	FIELD field_1_7819 size I
+	FIELD field_1_7820 targets Ljava/util/List;
+	METHOD <init> (Ljava/util/List;IF)V
+		ARG 1 targets
+		ARG 2 size
+		ARG 3 discardChanceOnAirExposure
+	METHOD method_1_7136 shouldReplace (Lnet/minecraft/class_2680;Ljava/util/function/Function;Lnet/minecraft/class_5819;Lnet/minecraft/class_1_1124;Lnet/minecraft/class_2338$class_2339;)Z
+		ARG 1 state
+		ARG 2 stateGetter
+		ARG 3 random
+		ARG 4 replacement
+		ARG 5 pos
+	METHOD method_1_7137 isExposedTo (Ljava/util/function/Function;Lnet/minecraft/class_2338;Ljava/util/function/Predicate;)Z
+		ARG 0 stateGetter
+		ARG 1 pos
+		ARG 2 airPredicate
+	METHOD method_1_7138 getDiscardChanceOnAirExposure ()F
+	METHOD method_1_7139 isExposedToAir (Ljava/util/function/Function;Lnet/minecraft/class_2338;)Z
+		ARG 0 stateGetter
+		ARG 1 pos
+	METHOD method_1_7140 (Lcom/mojang/datafixers/util/Function3;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 1 instance
+	METHOD method_1_7141 createMapCodec (Lcom/mojang/datafixers/util/Function3;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 constructor
+	METHOD method_1_7142 passesAirExposureTest (Lnet/minecraft/class_5819;F)Z
+		ARG 0 random
+		ARG 1 discardChanceOnAirExposure
+	METHOD method_1_7143 getSize ()I
+	METHOD method_1_7144 getTargets ()Ljava/util/List;

@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_1_1146 net/minecraft/structure/rule/HeightMatchRuleTest
+	FIELD field_1_7923 maxInclusive I
+	FIELD field_1_7924 minInclusive I
+	METHOD <init> (II)V
+		ARG 1 minInclusive
+		ARG 2 maxInclusive
+	METHOD method_1_7231 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_7232 (Lnet/minecraft/class_1_1146;)Ljava/lang/Integer;
+		ARG 0 test
+	METHOD method_1_7233 (Lnet/minecraft/class_1_1146;)Ljava/lang/Integer;
+		ARG 0 test
+	METHOD method_1_7234 atMost (I)Lnet/minecraft/class_3825;
+		ARG 0 minInclusive
+	METHOD method_1_7235 atLeast (I)Lnet/minecraft/class_3825;
+		ARG 0 maxInclusive

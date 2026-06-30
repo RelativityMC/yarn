@@ -1,0 +1,13 @@
+CLASS net/minecraft/class_6729 net/minecraft/world/biome/source/util/FittestPositionFinder
+	FIELD field_35360 bestResult Lnet/minecraft/class_6729$class_6730;
+	METHOD method_39166 findFittest (Ljava/util/List;FF)V
+		ARG 2 maxDistance
+		ARG 3 step
+	METHOD method_39167 calculateFitness (Ljava/util/List;II)Lnet/minecraft/class_6729$class_6730;
+		ARG 1 x
+		ARG 2 z
+	CLASS class_6730 Result
+		FIELD comp_223 location Lnet/minecraft/class_2338;
+		FIELD comp_224 fitness J
+		METHOD comp_223 location ()Lnet/minecraft/class_2338;
+		METHOD comp_224 fitness ()J

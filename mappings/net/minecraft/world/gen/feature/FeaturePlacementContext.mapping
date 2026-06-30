@@ -6,8 +6,6 @@ CLASS net/minecraft/class_5444 net/minecraft/world/gen/feature/FeaturePlacementC
 		ARG 1 world
 		ARG 2 generator
 		ARG 3 placedFeature
-	METHOD method_30459 getOrCreateCarvingMask (Lnet/minecraft/class_1923;)Lnet/minecraft/class_6643;
-		ARG 1 chunkPos
 	METHOD method_30460 getTopY (Lnet/minecraft/class_2902$class_2903;II)I
 		ARG 1 heightmap
 		ARG 2 x

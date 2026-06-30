@@ -5,7 +5,6 @@ CLASS net/minecraft/class_2510 net/minecraft/block/StairsBlock
 	FIELD field_11573 WATERLOGGED Lnet/minecraft/class_2746;
 	FIELD field_11574 baseBlockState Lnet/minecraft/class_2680;
 	FIELD field_11579 baseBlock Lnet/minecraft/class_2248;
-	FIELD field_46460 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_55795 OUTER_BOTTOM_SHAPES Ljava/util/Map;
 	FIELD field_55796 STRAIGHT_BOTTOM_SHAPES Ljava/util/Map;
 	FIELD field_55797 INNER_BOTTOM_SHAPES Ljava/util/Map;
@@ -29,7 +28,3 @@ CLASS net/minecraft/class_2510 net/minecraft/block/StairsBlock
 		ARG 1 world
 		ARG 2 pos
 		ARG 3 dir
-	METHOD method_54046 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance
-	METHOD method_54047 (Lnet/minecraft/class_2510;)Lnet/minecraft/class_2680;
-		ARG 0 block

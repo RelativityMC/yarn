@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_2401 net/minecraft/block/LeverBlock
 	FIELD field_11265 POWERED Lnet/minecraft/class_2746;
-	FIELD field_46387 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_55776 shapeFunction Ljava/util/function/Function;
 	METHOD method_10308 spawnParticles (Lnet/minecraft/class_2680;Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;F)V
 		ARG 0 state

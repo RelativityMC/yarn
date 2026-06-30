@@ -3,18 +3,9 @@ CLASS net/minecraft/class_2195 net/minecraft/block/AttachedStemBlock
 	FIELD field_9874 SHAPES_BY_DIRECTION Ljava/util/Map;
 	FIELD field_9875 gourdBlock Lnet/minecraft/class_5321;
 	FIELD field_27095 pickBlockItem Lnet/minecraft/class_5321;
-	FIELD field_46259 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_46260 stemBlock Lnet/minecraft/class_5321;
 	METHOD <init> (Lnet/minecraft/class_5321;Lnet/minecraft/class_5321;Lnet/minecraft/class_5321;Lnet/minecraft/class_6862;Lnet/minecraft/class_4970$class_2251;)V
 		ARG 1 stemBlock
 		ARG 2 gourdBlock
 		ARG 3 pickBlockItem
 		ARG 5 settings
-	METHOD method_53973 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance
-	METHOD method_53974 (Lnet/minecraft/class_2195;)Lnet/minecraft/class_5321;
-		ARG 0 block
-	METHOD method_53975 (Lnet/minecraft/class_2195;)Lnet/minecraft/class_5321;
-		ARG 0 block
-	METHOD method_53976 (Lnet/minecraft/class_2195;)Lnet/minecraft/class_5321;
-		ARG 0 block

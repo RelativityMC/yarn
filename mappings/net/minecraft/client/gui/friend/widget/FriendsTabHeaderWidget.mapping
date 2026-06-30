@@ -40,6 +40,4 @@ CLASS net/minecraft/class_1_964 net/minecraft/client/gui/friend/widget/FriendsTa
 		ARG 1 username
 	METHOD method_1_6366 (Ljava/lang/Runnable;Lnet/minecraft/class_4185;)V
 		ARG 2 button
-	METHOD method_1_6367 (Ljava/lang/Runnable;Lcom/mojang/authlib/yggdrasil/FriendsService$ResultCode;)V
-		ARG 2 resultCode
 	CLASS class_1_965 State

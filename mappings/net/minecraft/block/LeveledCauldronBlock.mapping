@@ -5,7 +5,6 @@ CLASS net/minecraft/class_5556 net/minecraft/block/LeveledCauldronBlock
 	FIELD field_31108 MAX_LEVEL I
 	FIELD field_31109 BASE_FLUID_HEIGHT I
 	FIELD field_31110 FLUID_HEIGHT_PER_LEVEL D
-	FIELD field_46383 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_46384 precipitation Lnet/minecraft/class_1959$class_1963;
 	FIELD field_60561 INSIDE_COLLISION_SHAPE_BY_LEVEL [Lnet/minecraft/class_265;
 	METHOD <init> (Lnet/minecraft/class_1959$class_1963;Lnet/minecraft/class_1_368$class_1_369;Lnet/minecraft/class_4970$class_2251;)V
@@ -21,12 +20,6 @@ CLASS net/minecraft/class_5556 net/minecraft/block/LeveledCauldronBlock
 		ARG 1 state
 		ARG 2 world
 		ARG 3 pos
-	METHOD method_54024 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance
-	METHOD method_54025 (Lnet/minecraft/class_5556;)Lnet/minecraft/class_1_368$class_1_369;
-		ARG 0 block
-	METHOD method_54026 (Lnet/minecraft/class_5556;)Lnet/minecraft/class_1959$class_1963;
-		ARG 0 block
 	METHOD method_71627 (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_1297;)V
 		ARG 5 collidedEntity
 	METHOD method_71629 getFluidHeight (I)D

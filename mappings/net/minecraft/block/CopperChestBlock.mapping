@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_11582 net/minecraft/block/CopperChestBlock
-	FIELD field_61405 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_61406 FROM_COPPER_BLOCK Ljava/util/function/Supplier;
 	FIELD field_61407 oxidationLevel Lnet/minecraft/class_5955$class_5811;
 	METHOD <init> (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_3414;Lnet/minecraft/class_3414;Lnet/minecraft/class_4970$class_2251;)V
@@ -10,8 +9,6 @@ CLASS net/minecraft/class_11582 net/minecraft/block/CopperChestBlock
 	METHOD method_1_4423 getSoundEvent (Lnet/minecraft/class_5955$class_5811;Z)Lnet/minecraft/class_3414;
 		ARG 0 oxidationLevel
 		ARG 1 open
-	METHOD method_72596 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance
 	METHOD method_72597 fromCopperBlock (Lnet/minecraft/class_2248;Lnet/minecraft/class_2350;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)Lnet/minecraft/class_2680;
 		ARG 0 block
 		ARG 1 facing

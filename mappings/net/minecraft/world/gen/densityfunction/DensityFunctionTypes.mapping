@@ -188,9 +188,6 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 		METHOD method_40521 apply (Lnet/minecraft/class_6916$class_6925$class_6926;D)D
 			ARG 0 type
 			ARG 1 density
-		METHOD method_41079 create (Lnet/minecraft/class_6916$class_6925$class_6926;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6916$class_6925;
-			ARG 0 type
-			ARG 1 input
 		CLASS class_6926 Type
 			FIELD field_37086 name Ljava/lang/String;
 			FIELD field_37087 codecHolder Lnet/minecraft/class_7243;

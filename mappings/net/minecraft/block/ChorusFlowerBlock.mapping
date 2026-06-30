@@ -3,7 +3,6 @@ CLASS net/minecraft/class_2279 net/minecraft/block/ChorusFlowerBlock
 	FIELD field_10763 plantBlock Lnet/minecraft/class_2248;
 	FIELD field_31060 MAX_AGE I
 	FIELD field_45145 SHAPE Lnet/minecraft/class_265;
-	FIELD field_46313 CODEC Lcom/mojang/serialization/MapCodec;
 	METHOD <init> (Lnet/minecraft/class_2248;Lnet/minecraft/class_4970$class_2251;)V
 		ARG 1 plantBlock
 		ARG 2 settings
@@ -30,7 +29,3 @@ CLASS net/minecraft/class_2279 net/minecraft/block/ChorusFlowerBlock
 		ARG 3 rootPos
 		ARG 4 size
 		ARG 5 layer
-	METHOD method_53994 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance
-	METHOD method_53995 (Lnet/minecraft/class_2279;)Lnet/minecraft/class_2248;
-		ARG 0 block

@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_10374 net/minecraft/block/EyeblossomBlock
-	FIELD field_55066 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_55067 NOTIFY_RANGE_XZ I
 	FIELD field_55068 NOTIFY_RANGE_Y I
 	FIELD field_55069 state Lnet/minecraft/class_10374$class_10375;
@@ -11,10 +10,6 @@ CLASS net/minecraft/class_10374 net/minecraft/block/EyeblossomBlock
 		ARG 2 settings
 	METHOD method_65149 (Lnet/minecraft/class_3218;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338;)V
 		ARG 4 otherPos
-	METHOD method_65150 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance
-	METHOD method_65151 (Lnet/minecraft/class_10374;)Ljava/lang/Boolean;
-		ARG 0 block
 	METHOD method_65153 updateStateAndNotifyOthers (Lnet/minecraft/class_2680;Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)Z
 		ARG 1 state
 		ARG 2 world

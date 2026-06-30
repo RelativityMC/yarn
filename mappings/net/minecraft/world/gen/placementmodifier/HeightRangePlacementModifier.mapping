@@ -1,8 +1,9 @@
 CLASS net/minecraft/class_6795 net/minecraft/world/gen/placementmodifier/HeightRangePlacementModifier
+	FIELD comp_1_1217 height Lnet/minecraft/class_6122;
 	FIELD field_35725 MODIFIER_CODEC Lcom/mojang/serialization/MapCodec;
-	FIELD field_35726 height Lnet/minecraft/class_6122;
 	METHOD <init> (Lnet/minecraft/class_6122;)V
 		ARG 1 height
+	METHOD comp_1_1217 height ()Lnet/minecraft/class_6122;
 	METHOD method_39633 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
 	METHOD method_39634 uniform (Lnet/minecraft/class_5843;Lnet/minecraft/class_5843;)Lnet/minecraft/class_6795;
@@ -10,8 +11,6 @@ CLASS net/minecraft/class_6795 net/minecraft/world/gen/placementmodifier/HeightR
 		ARG 1 maxOffset
 	METHOD method_39635 of (Lnet/minecraft/class_6122;)Lnet/minecraft/class_6795;
 		ARG 0 height
-	METHOD method_39636 (Lnet/minecraft/class_6795;)Lnet/minecraft/class_6122;
-		ARG 0 placementModifier
 	METHOD method_39637 trapezoid (Lnet/minecraft/class_5843;Lnet/minecraft/class_5843;)Lnet/minecraft/class_6795;
 		ARG 0 minOffset
 		ARG 1 maxOffset

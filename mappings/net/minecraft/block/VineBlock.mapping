@@ -5,7 +5,6 @@ CLASS net/minecraft/class_2541 net/minecraft/block/VineBlock
 	FIELD field_11702 EAST Lnet/minecraft/class_2746;
 	FIELD field_11703 UP Lnet/minecraft/class_2746;
 	FIELD field_11706 NORTH Lnet/minecraft/class_2746;
-	FIELD field_46485 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_55811 shapeFunction Ljava/util/function/Function;
 	METHOD method_10820 getGrownState (Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;Lnet/minecraft/class_5819;)Lnet/minecraft/class_2680;
 		ARG 1 above

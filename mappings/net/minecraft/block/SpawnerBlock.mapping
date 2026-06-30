@@ -1,2 +1,1 @@
 CLASS net/minecraft/class_2496 net/minecraft/block/SpawnerBlock
-	FIELD field_46455 CODEC Lcom/mojang/serialization/MapCodec;

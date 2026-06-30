@@ -16,7 +16,6 @@ CLASS net/minecraft/class_7924 net/minecraft/registry/RegistryKeys
 	FIELD field_41233 TRUNK_PLACER_TYPE Lnet/minecraft/class_5321;
 	FIELD field_41236 BIOME Lnet/minecraft/class_5321;
 	FIELD field_41237 MESSAGE_TYPE Lnet/minecraft/class_5321;
-	FIELD field_41238 CONFIGURED_CARVER Lnet/minecraft/class_5321;
 	FIELD field_41240 DENSITY_FUNCTION Lnet/minecraft/class_5321;
 	FIELD field_41242 FLAT_LEVEL_GENERATOR_PRESET Lnet/minecraft/class_5321;
 	FIELD field_41243 CHUNK_GENERATOR_SETTINGS Lnet/minecraft/class_5321;
@@ -29,7 +28,6 @@ CLASS net/minecraft/class_7924 net/minecraft/registry/RegistryKeys
 	FIELD field_41250 WORLD_PRESET Lnet/minecraft/class_5321;
 	FIELD field_41253 BIOME_SOURCE Lnet/minecraft/class_5321;
 	FIELD field_41257 BLOCK_STATE_PROVIDER_TYPE Lnet/minecraft/class_5321;
-	FIELD field_41258 CARVER Lnet/minecraft/class_5321;
 	FIELD field_41260 CHUNK_GENERATOR Lnet/minecraft/class_5321;
 	FIELD field_41264 DENSITY_FUNCTION_TYPE Lnet/minecraft/class_5321;
 	FIELD field_41267 FEATURE Lnet/minecraft/class_5321;

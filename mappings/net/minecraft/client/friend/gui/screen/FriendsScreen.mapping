@@ -32,13 +32,8 @@ CLASS net/minecraft/class_1_986 net/minecraft/client/friend/gui/screen/FriendsSc
 		ARG 1 widget
 	METHOD method_1_5998 (Lnet/minecraft/class_1_986;Lnet/minecraft/class_339;)V
 		ARG 1 widget
-	METHOD method_1_6001 (Ljava/util/UUID;Lcom/mojang/authlib/yggdrasil/FriendsService$ResultCode;Ljava/lang/Throwable;)V
-		ARG 2 resultCode
+	METHOD method_1_6001 (Ljava/util/UUID;Lcom/mojang/authlib/services/FriendsService$ResultCode;Ljava/lang/Throwable;)V
 		ARG 3 ex
-	METHOD method_1_6002 (Lcom/mojang/authlib/yggdrasil/FriendsService$ResultCode;)V
-		ARG 1 resultCode
-	METHOD method_1_6004 (Lcom/mojang/authlib/yggdrasil/FriendsService$ResultCode;)V
-		ARG 1 resultCode
 	METHOD method_1_6007 showFriendActionError (Ljava/lang/Throwable;)Ljava/lang/Void;
 		ARG 1 ex
 	METHOD method_1_6008 updateStatusIfCurrentScreen ()V

@@ -2,7 +2,7 @@ CLASS net/minecraft/class_1_849 net/minecraft/client/render/command/ParticleComm
 	FIELD field_1_6225 TYPE Lnet/minecraft/class_1_867;
 	FIELD field_1_6226 modelViewUniform Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
 	FIELD field_1_6227 groups Ljava/util/List;
-	METHOD method_1_5165 doRender (Lnet/minecraft/class_1_807;Ljava/util/Map;Lcom/mojang/blaze3d/systems/RenderPass;Lnet/minecraft/class_1060;)V
+	METHOD method_1_5165 doRender (Lnet/minecraft/class_1_807;Ljava/util/Map;Lcom/mojang/blaze3d/systems/RenderPass;Lnet/minecraft/class_1060;Lnet/minecraft/class_1_1153;)V
 		ARG 0 multiDrawBuffer
 		ARG 1 geometryBuffers
 		ARG 2 renderPass

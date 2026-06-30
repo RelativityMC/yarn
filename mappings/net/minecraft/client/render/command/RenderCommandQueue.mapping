@@ -1,9 +1,6 @@
 CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderCommandQueue
-	METHOD method_1_3047 submitFallingBlock (Lnet/minecraft/class_4587;Ljava/util/List;I)V
-		ARG 1 matrices
-		ARG 2 modelParts
-		ARG 3 progress
-	METHOD method_1_3048 submitModel (Lnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_4587;IIILnet/minecraft/class_1_310;Lnet/minecraft/class_11701;ILnet/minecraft/class_11683$class_11792;)V
+	METHOD method_1_3047 submitFallingBlock (Lnet/minecraft/class_4587;Ljava/util/List;IZ)V
+	METHOD method_1_3048 submitModel (Lnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_4587;IIILnet/minecraft/class_1_310;Lnet/minecraft/class_11701;I)V
 		ARG 1 model
 		ARG 2 state
 		ARG 3 matrices
@@ -13,8 +10,7 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 7 spriteId
 		ARG 8 spriteHolder
 		ARG 9 outlineColor
-		ARG 10 crumblingOverlay
-	METHOD method_1_3049 submitModel (Lnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_4587;Lnet/minecraft/class_2960;IIILnet/minecraft/class_11683$class_11792;)V
+	METHOD method_1_3049 submitModel (Lnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_4587;Lnet/minecraft/class_2960;III)V
 		ARG 1 model
 		ARG 2 state
 		ARG 3 matrices
@@ -22,7 +18,6 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 5 light
 		ARG 6 overlay
 		ARG 7 outlineColor
-		ARG 8 crumblingOverlay
 	METHOD method_1_4569 (Lnet/minecraft/class_1921;Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 1 id
 	METHOD method_1_5140 submitGizmos (Lnet/minecraft/class_12160$class_12355;Lnet/minecraft/class_12075;Z)V
@@ -83,7 +78,7 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 1 matrices
 		ARG 2 renderState
 		ARG 3 rotation
-	METHOD method_73489 submitModel (Lnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;IIILnet/minecraft/class_11683$class_11792;)V
+	METHOD method_73489 submitModel (Lnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;III)V
 		ARG 1 model
 		ARG 2 state
 		ARG 3 matrices
@@ -91,40 +86,28 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 5 light
 		ARG 6 overlay
 		ARG 7 outlineColor
-		ARG 8 crumblingOverlay
-	METHOD method_73490 submitModel (Lnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;IIILnet/minecraft/class_1_1060;ILnet/minecraft/class_11683$class_11792;)V
-		ARG 1 model
-		ARG 2 state
-		ARG 3 matrices
-		ARG 4 renderLayer
-		ARG 5 light
-		ARG 6 overlay
-		ARG 7 tintedColor
-		ARG 9 outlineColor
-		ARG 10 crumblingOverlay
+	METHOD method_73490 submitModel (Lnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;IIILnet/minecraft/class_1_1060;I)V
 	METHOD method_73491 submitModelPart (Lnet/minecraft/class_630;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;IILnet/minecraft/class_1_1060;)V
 		ARG 1 part
 		ARG 2 matrices
 		ARG 3 renderLayer
 		ARG 4 light
 		ARG 5 overlay
-	METHOD method_73492 submitModelPart (Lnet/minecraft/class_630;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;IILnet/minecraft/class_1_1060;ILnet/minecraft/class_11683$class_11792;)V
+	METHOD method_73492 submitModelPart (Lnet/minecraft/class_630;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;IILnet/minecraft/class_1_1060;I)V
 		ARG 1 part
 		ARG 2 matrices
 		ARG 3 renderLayer
 		ARG 4 light
 		ARG 5 overlay
 		ARG 7 tintedColor
-		ARG 8 crumblingOverlay
-	METHOD method_73493 submitModelPart (Lnet/minecraft/class_630;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;IILnet/minecraft/class_1_1060;ILnet/minecraft/class_11683$class_11792;I)V
+	METHOD method_73493 submitModelPart (Lnet/minecraft/class_630;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;IILnet/minecraft/class_1_1060;II)V
 		ARG 1 modelPart
 		ARG 2 matrices
 		ARG 3 renderLayer
 		ARG 4 light
 		ARG 5 overlay
 		ARG 7 tintedColor
-		ARG 8 crumblingOverlay
-		ARG 9 outlineColor
+		ARG 8 outlineColor
 	METHOD method_73494 submitModelPart (Lnet/minecraft/class_4587;Lnet/minecraft/class_265;Lnet/minecraft/class_1921;IFZ)V
 		ARG 1 matrices
 		ARG 2 voxelShape

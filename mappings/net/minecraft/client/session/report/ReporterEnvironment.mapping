@@ -6,9 +6,9 @@ CLASS net/minecraft/class_7569 net/minecraft/client/session/report/ReporterEnvir
 		ARG 0 server
 	METHOD method_44589 ofThirdPartyServer (Ljava/lang/String;)Lnet/minecraft/class_7569;
 		ARG 0 ip
-	METHOD method_44590 toClientInfo ()Lcom/mojang/authlib/yggdrasil/request/AbuseReportRequest$ClientInfo;
-	METHOD method_44591 toThirdPartyServerInfo ()Lcom/mojang/authlib/yggdrasil/request/AbuseReportRequest$ThirdPartyServerInfo;
-	METHOD method_44592 toRealmInfo ()Lcom/mojang/authlib/yggdrasil/request/AbuseReportRequest$RealmInfo;
+	METHOD method_44590 toClientInfo ()Lcom/mojang/authlib/services/request/AbuseReportRequest$ClientInfo;
+	METHOD method_44591 toThirdPartyServerInfo ()Lcom/mojang/authlib/services/request/AbuseReportRequest$ThirdPartyServerInfo;
+	METHOD method_44592 toRealmInfo ()Lcom/mojang/authlib/services/request/AbuseReportRequest$RealmInfo;
 	METHOD method_44593 getVersion ()Ljava/lang/String;
 	CLASS class_7570 Server
 		CLASS class_7571 Realm

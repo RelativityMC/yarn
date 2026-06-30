@@ -11,11 +11,7 @@ CLASS net/minecraft/class_7500 net/minecraft/network/encryption/SignatureVerifie
 		ARG 0 updatable
 		ARG 1 signatureData
 		ARG 2 signature
-	METHOD method_44172 create (Lcom/mojang/authlib/yggdrasil/ServicesKeySet;Lcom/mojang/authlib/yggdrasil/ServicesKeyType;)Lnet/minecraft/class_7500;
-		ARG 0 servicesKeySet
-		ARG 1 servicesKeyType
-	METHOD method_44173 (Lnet/minecraft/class_7498;[BLcom/mojang/authlib/yggdrasil/ServicesKeyInfo;)Z
-		ARG 2 keyInfo
+	METHOD method_44172 create (Lcom/mojang/authlib/services/ServicesKeySet;Lcom/mojang/authlib/services/ServicesKeyType;)Lnet/minecraft/class_7500;
 	METHOD method_44174 (Ljava/lang/String;Ljava/security/PublicKey;Lnet/minecraft/class_7498;[B)Z
 		ARG 2 updatable
 		ARG 3 signatureData

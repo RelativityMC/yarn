@@ -1,7 +1,6 @@
 CLASS net/minecraft/class_2665 net/minecraft/block/PistonBlock
 	FIELD field_12187 sticky Z
 	FIELD field_12191 EXTENDED Lnet/minecraft/class_2746;
-	FIELD field_46530 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_55824 EXTENDED_SHAPES_BY_DIRECTION Ljava/util/Map;
 	METHOD <init> (ZLnet/minecraft/class_4970$class_2251;)V
 		ARG 1 sticky
@@ -26,7 +25,3 @@ CLASS net/minecraft/class_2665 net/minecraft/block/PistonBlock
 		ARG 3 direction
 		ARG 4 canBreak
 		ARG 5 pistonDir
-	METHOD method_54091 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance
-	METHOD method_54092 (Lnet/minecraft/class_2665;)Ljava/lang/Boolean;
-		ARG 0 block

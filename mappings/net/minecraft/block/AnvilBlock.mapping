@@ -3,7 +3,6 @@ CLASS net/minecraft/class_2199 net/minecraft/block/AnvilBlock
 	FIELD field_17349 TITLE Lnet/minecraft/class_2561;
 	FIELD field_30993 FALLING_BLOCK_ENTITY_DAMAGE_MULTIPLIER F
 	FIELD field_30994 FALLING_BLOCK_ENTITY_MAX_DAMAGE I
-	FIELD field_46258 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_55730 SHAPES_BY_AXIS Ljava/util/Map;
 	METHOD method_9346 getLandingState (Lnet/minecraft/class_2680;)Lnet/minecraft/class_2680;
 		ARG 0 fallingState

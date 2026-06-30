@@ -1,7 +1,6 @@
 CLASS net/minecraft/class_5542 net/minecraft/block/AmethystClusterBlock
 	FIELD field_27086 WATERLOGGED Lnet/minecraft/class_2746;
 	FIELD field_27087 FACING Lnet/minecraft/class_2754;
-	FIELD field_46255 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_46256 height F
 	FIELD field_55728 width F
 	FIELD field_55729 shapesByDirection Ljava/util/Map;
@@ -9,9 +8,3 @@ CLASS net/minecraft/class_5542 net/minecraft/block/AmethystClusterBlock
 		ARG 1 height
 		ARG 2 width
 		ARG 3 settings
-	METHOD method_53970 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance
-	METHOD method_53971 (Lnet/minecraft/class_5542;)Ljava/lang/Float;
-		ARG 0 block
-	METHOD method_53972 (Lnet/minecraft/class_5542;)Ljava/lang/Float;
-		ARG 0 block

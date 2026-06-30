@@ -13,23 +13,15 @@ CLASS net/minecraft/class_918 net/minecraft/client/render/command/ItemRenderer
 	METHOD method_1_3052 getTint ([ILnet/minecraft/class_777$class_1_320;)I
 		ARG 0 tints
 		ARG 1 spriteInfo
-	METHOD method_1_5279 renderGlint (Lnet/minecraft/class_918$class_11668;)V
-		ARG 1 command
 	METHOD method_1_5280 renderRegular (Lnet/minecraft/class_918$class_11668;)V
 		ARG 1 command
 	METHOD method_1_5281 renderOutlined (Lnet/minecraft/class_918$class_11668;)V
 		ARG 1 command
-	METHOD method_1_5282 render (Lnet/minecraft/class_918$class_11668;Z)V
+	METHOD method_1_5282 render (Lnet/minecraft/class_918$class_11668;)V
 		ARG 1 command
-		ARG 2 glint
 	METHOD method_65569 getTint ([II)I
 		ARG 0 tints
 		ARG 1 index
-	METHOD method_71138 getSpecialItemGlintConsumer (Lnet/minecraft/class_1921;Lnet/minecraft/class_4587$class_4665;)Lnet/minecraft/class_4588;
-		ARG 1 layer
-		ARG 2 matrix
-	METHOD method_71139 useTransparentGlint (Lnet/minecraft/class_1921;)Z
-		ARG 0 renderLayer
 	CLASS class_11668 ItemCommand
 		FIELD comp_4498 positionMatrix Lnet/minecraft/class_4587$class_4665;
 		FIELD comp_4642 glintType Lnet/minecraft/class_10444$class_10445;

@@ -4,7 +4,6 @@ CLASS net/minecraft/class_3709 net/minecraft/block/BellBlock
 	FIELD field_17089 BELL_SHAPE Lnet/minecraft/class_265;
 	FIELD field_17094 CEILING_SHAPE Lnet/minecraft/class_265;
 	FIELD field_20648 POWERED Lnet/minecraft/class_2746;
-	FIELD field_46276 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_55733 SINGLE_WALL_SHAPES Ljava/util/Map;
 	FIELD field_55734 FLOOR_SHAPES Ljava/util/Map;
 	FIELD field_55735 DOUBLE_WALL_SHAPES Ljava/util/Map;

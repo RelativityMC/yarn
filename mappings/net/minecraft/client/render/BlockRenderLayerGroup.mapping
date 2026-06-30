@@ -5,4 +5,3 @@ CLASS net/minecraft/class_11531 net/minecraft/client/render/BlockRenderLayerGrou
 		ARG 3 layers
 	METHOD method_72166 getName ()Ljava/lang/String;
 	METHOD method_72167 getLayers ()[Lnet/minecraft/class_11515;
-	METHOD method_72168 getFramebuffer ()Lnet/minecraft/class_276;

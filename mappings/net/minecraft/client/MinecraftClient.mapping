@@ -184,7 +184,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 1 element
 		ARG 2 focused
 	METHOD method_1_3097 getImeStatusController ()Lnet/minecraft/class_1_490;
-	METHOD method_1_3935 getYggdrasilGameProfileResult ()Lcom/mojang/authlib/yggdrasil/ProfileResult;
+	METHOD method_1_3935 getYggdrasilGameProfileResult ()Lcom/mojang/authlib/services/ProfileResult;
 	METHOD method_1_3936 markSurfaceForUpdate ()V
 	METHOD method_1_3939 printCrashReport (Ljava/io/File;Lnet/minecraft/class_128;)V
 		ARG 0 runDir
@@ -352,8 +352,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 3 loadingContext
 	METHOD method_31320 getSocialInteractionsManager ()Lnet/minecraft/class_5520;
 	METHOD method_31321 isConnectedToServer ()Z
-	METHOD method_31382 createUserApiService (Lcom/mojang/authlib/yggdrasil/YggdrasilAuthenticationService;Lnet/minecraft/class_542;)Lcom/mojang/authlib/minecraft/UserApiService;
-		ARG 0 authService
+	METHOD method_31382 createUserApiService (Lcom/mojang/authlib/services/MinecraftServicesDiscoveryService;Lnet/minecraft/class_542;)Lcom/mojang/authlib/minecraft/UserApiService;
 		ARG 1 runArgs
 	METHOD method_31974 getLoadedEntityModels ()Lnet/minecraft/class_5599;
 	METHOD method_31975 getBlockEntityRenderDispatcher ()Lnet/minecraft/class_824;
@@ -474,9 +473,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_63507 onShaderResourceReloadFailure (Ljava/lang/Exception;)V
 		ARG 1 exception
 	METHOD method_65386 getItemModelManager ()Lnet/minecraft/class_10442;
-	METHOD method_68467 (Lnet/minecraft/class_2960;Lcom/mojang/blaze3d/shaders/ShaderType;)Ljava/lang/String;
-		ARG 1 id
-		ARG 2 type
 	METHOD method_72096 (Lnet/minecraft/class_6880;)V
 		ARG 1 dialog
 	METHOD method_72097 (Lnet/minecraft/class_2378;Lnet/minecraft/class_6885$class_6888;)Ljava/util/Optional;

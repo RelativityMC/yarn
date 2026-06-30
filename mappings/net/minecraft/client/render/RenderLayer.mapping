@@ -18,7 +18,6 @@ CLASS net/minecraft/class_1921 net/minecraft/client/render/RenderLayer
 		ARG 1 name
 		ARG 2 renderSetup
 	METHOD method_1_1195 hasBlend ()Z
-	METHOD method_1_2313 getOutputTarget ()Lnet/minecraft/class_12246;
 	METHOD method_1_5226 getDrawSpec ()Lnet/minecraft/class_1_870;
 	METHOD method_1_5227 setModelViewMatrix (Lorg/joml/Matrix4f;)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
 		ARG 1 matrix

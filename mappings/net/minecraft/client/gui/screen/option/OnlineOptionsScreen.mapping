@@ -47,8 +47,7 @@ CLASS net/minecraft/class_6777 net/minecraft/client/gui/screen/option/OnlineOpti
 		ARG 2 value
 	METHOD method_1_5977 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
-	METHOD method_1_5978 (Lnet/minecraft/class_5520;ZZLjava/util/function/Consumer;Lcom/mojang/authlib/yggdrasil/FriendsService$ResultCode;Ljava/lang/Throwable;)V
-		ARG 4 resultCode
+	METHOD method_1_5978 (Lnet/minecraft/class_5520;ZZLjava/util/function/Consumer;Lcom/mojang/authlib/services/FriendsService$ResultCode;Ljava/lang/Throwable;)V
 		ARG 5 ex
 	METHOD method_1_5980 (Ljava/lang/Runnable;Ljava/lang/Boolean;)V
 		ARG 1 succeeded

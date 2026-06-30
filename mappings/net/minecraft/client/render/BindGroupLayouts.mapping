@@ -9,7 +9,6 @@ CLASS net/minecraft/class_1_804 net/minecraft/client/render/BindGroupLayouts
 	FIELD field_1_5696 IN_SAMPLER Lnet/minecraft/class_1_794;
 	FIELD field_1_5697 LIGHTING Lnet/minecraft/class_1_794;
 	FIELD field_1_5698 LIGHTMAP_INFO Lnet/minecraft/class_1_794;
-	FIELD field_1_5699 DYNAMIC_TRANSFORMS_AND_PROJECTION Lnet/minecraft/class_1_794;
 	FIELD field_1_5700 PROJECTION Lnet/minecraft/class_1_794;
 	FIELD field_1_5701 SAMPLER_0 Lnet/minecraft/class_1_794;
 	FIELD field_1_5702 SAMPLER_01 Lnet/minecraft/class_1_794;

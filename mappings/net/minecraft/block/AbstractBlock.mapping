@@ -834,13 +834,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		ARG 1 state
 		ARG 2 world
 		ARG 3 pos
-	METHOD method_53969 getCodec ()Lcom/mojang/serialization/MapCodec;
-	METHOD method_54093 (Ljava/util/function/Function;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 1 instance
-	METHOD method_54094 createCodec (Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;
-		ARG 0 blockFromSettings
 	METHOD method_54095 getSettings ()Lnet/minecraft/class_4970$class_2251;
-	METHOD method_54096 createSettingsCodec ()Lcom/mojang/serialization/codecs/RecordCodecBuilder;
 	METHOD method_55124 onExploded (Lnet/minecraft/class_2680;Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_1927;Ljava/util/function/BiConsumer;)V
 		ARG 1 state
 		ARG 2 world
@@ -915,7 +909,6 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		FIELD field_44628 forceSolid Z
 		FIELD field_44629 instrument Lnet/minecraft/class_2766;
 		FIELD field_44630 replaceable Z
-		FIELD field_46532 CODEC Lcom/mojang/serialization/Codec;
 		FIELD field_54006 registryKey Lnet/minecraft/class_5321;
 		FIELD field_54007 lootTable Lnet/minecraft/class_10162;
 		FIELD field_54008 translationKey Lnet/minecraft/class_10162;

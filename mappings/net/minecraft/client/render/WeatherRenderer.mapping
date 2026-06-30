@@ -12,13 +12,10 @@ CLASS net/minecraft/class_9976 net/minecraft/client/render/WeatherRenderer
 		COMMENT
 		COMMENT These lookup tables are used for rendering rain and snow.
 	FIELD field_53156 NORMAL_LINE_DZ [F
-	METHOD method_1_1040 render (Lnet/minecraft/class_243;Lnet/minecraft/class_12077;)V
-		ARG 1 pos
-		ARG 2 state
 	METHOD method_1_1041 issueDraw (Lcom/mojang/blaze3d/systems/RenderPass;Lnet/minecraft/class_1044;II)V
 		ARG 1 renderPass
 		ARG 2 texture
-	METHOD method_1_4992 upload (Ljava/nio/ByteBuffer;)Lcom/mojang/blaze3d/buffers/GpuBuffer;
+	METHOD method_1_4992 upload (Ljava/nio/ByteBuffer;)V
 		ARG 1 buffer
 	METHOD method_62314 createRainPiece (Lnet/minecraft/class_5819;JIIIIIF)Lnet/minecraft/class_9976$class_9977;
 		ARG 1 random

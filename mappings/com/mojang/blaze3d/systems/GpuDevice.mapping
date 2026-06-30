@@ -1,9 +1,11 @@
 CLASS com/mojang/blaze3d/systems/GpuDevice
 	COMMENT Wraps a {@link com.mojang.blaze3d.systems.GpuBackend} to provide extra
 	COMMENT run-time checks.
-	METHOD <init> (Lnet/minecraft/class_1_147;Ljava/lang/Runnable;)V
+	METHOD <init> (Lnet/minecraft/class_1_147;)V
 		ARG 1 backend
-		ARG 2 criticalShaderLoader
+	METHOD compilePipeline (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/class_12289;)Lcom/mojang/blaze3d/pipeline/CompiledRenderPipeline;
+		ARG 1 pipeline
+		ARG 2 sourceGetter
 	METHOD createBuffer (Ljava/util/function/Supplier;IJ)Lcom/mojang/blaze3d/buffers/GpuBuffer;
 		ARG 1 labelGetter
 		ARG 2 usage
@@ -45,11 +47,6 @@ CLASS com/mojang/blaze3d/systems/GpuDevice
 		ARG 3 mipLevels
 	METHOD createTimestampQueryPool (I)Lnet/minecraft/class_1_685;
 		ARG 1 size
-	METHOD precompilePipeline (Lcom/mojang/blaze3d/pipeline/RenderPipeline;)Lcom/mojang/blaze3d/pipeline/CompiledRenderPipeline;
-		ARG 1 pipeline
-	METHOD precompilePipeline (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/class_12289;)Lcom/mojang/blaze3d/pipeline/CompiledRenderPipeline;
-		ARG 1 pipeline
-		ARG 2 sourceGetter
 	METHOD verifyTextureCreationArgs (IIIII)V
 		ARG 1 usage
 		ARG 2 width

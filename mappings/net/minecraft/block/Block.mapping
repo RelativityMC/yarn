@@ -52,7 +52,6 @@ CLASS net/minecraft/class_2248 net/minecraft/block/Block
 	FIELD field_31036 NOTIFY_ALL I
 		COMMENT The default setBlockState behavior. Same as {@code NOTIFY_NEIGHBORS | NOTIFY_LISTENERS}.
 	FIELD field_36404 registryEntry Lnet/minecraft/class_6880$class_6883;
-	FIELD field_46280 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_53822 SKIP_REDSTONE_WIRE_STATE_REPLACEMENT I
 		COMMENT Skips {@link AbstractBlock#getStateForNeighborUpdate} call for redstone wire.
 	FIELD field_55739 SKIP_BLOCK_ENTITY_REPLACED_CALLBACK I
@@ -379,10 +378,6 @@ CLASS net/minecraft/class_2248 net/minecraft/block/Block
 		ARG 4 state
 	METHOD method_33615 createShapeFunction (Ljava/util/function/Function;)Ljava/util/function/Function;
 		ARG 1 stateToShape
-	METHOD method_34724 copyProperty (Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;Lnet/minecraft/class_2769;)Lnet/minecraft/class_2680;
-		ARG 0 source
-		ARG 1 target
-		ARG 2 property
 	METHOD method_34725 getStateWithProperties (Lnet/minecraft/class_2680;)Lnet/minecraft/class_2680;
 		COMMENT Gets a block state with all properties that both this block and the source block state have.
 		ARG 1 state

@@ -2,7 +2,6 @@ CLASS net/minecraft/class_2244 net/minecraft/block/BedBlock
 	FIELD field_9966 color Lnet/minecraft/class_1767;
 	FIELD field_9967 PART Lnet/minecraft/class_2754;
 	FIELD field_9968 OCCUPIED Lnet/minecraft/class_2746;
-	FIELD field_46273 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_55732 SHAPES_BY_DIRECTION Ljava/util/Map;
 	METHOD <init> (Lnet/minecraft/class_1767;Lnet/minecraft/class_4970$class_2251;)V
 		ARG 1 color
@@ -53,7 +52,5 @@ CLASS net/minecraft/class_2244 net/minecraft/block/BedBlock
 	METHOD method_30840 getAroundBedOffsets (Lnet/minecraft/class_2350;Lnet/minecraft/class_2350;)[[I
 		ARG 0 bedDirection
 		ARG 1 respawnDirection
-	METHOD method_53978 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance
 	METHOD method_55767 (Lnet/minecraft/class_1657;Lnet/minecraft/class_1657$class_1658;)V
 		ARG 1 reason

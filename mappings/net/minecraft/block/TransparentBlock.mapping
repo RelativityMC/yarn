@@ -1,2 +1,1 @@
 CLASS net/minecraft/class_8923 net/minecraft/block/TransparentBlock
-	FIELD field_47087 CODEC Lcom/mojang/serialization/MapCodec;

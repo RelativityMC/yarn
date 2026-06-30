@@ -3,37 +3,34 @@ CLASS net/minecraft/class_1_1004 net/minecraft/client/friend/FriendListManager
 	FIELD field_1_6871 LOGGER Lorg/slf4j/Logger;
 	FIELD field_1_6872 TICK_PERIOD J
 	FIELD field_1_6873 enabled Ljava/util/concurrent/atomic/AtomicBoolean;
-	FIELD field_1_6874 friendsService Lcom/mojang/authlib/yggdrasil/FriendsService;
+	FIELD field_1_6874 friendsService Lcom/mojang/authlib/services/FriendsService;
 	FIELD field_1_6875 friends Ljava/util/Set;
 	FIELD field_1_6876 incomingRequests Ljava/util/Set;
 	FIELD field_1_6877 outgoingRequests Ljava/util/Set;
 	FIELD field_1_6878 lastUpdatedAt J
-	FIELD field_1_6879 friendData Lcom/mojang/authlib/yggdrasil/response/FriendData;
+	FIELD field_1_6879 friendData Lcom/mojang/authlib/services/response/FriendData;
 	FIELD field_1_6880 client Lnet/minecraft/class_310;
 	FIELD field_1_6881 tickTask Ljava/util/concurrent/ScheduledFuture;
 	FIELD field_1_6882 friendsListThreadExecutor Ljava/util/concurrent/ScheduledExecutorService;
 	FIELD field_1_6883 lastStatus Lnet/minecraft/class_1_1004$class_1_1006;
 	FIELD field_1_6884 updating Ljava/util/concurrent/atomic/AtomicBoolean;
 	FIELD field_1_6885 updateListeners Ljava/util/Set;
-	METHOD <init> (Lcom/mojang/authlib/yggdrasil/FriendsService;Lnet/minecraft/class_310;)V
-		ARG 1 friendsService
+	METHOD <init> (Lcom/mojang/authlib/services/FriendsService;Lnet/minecraft/class_310;)V
 		ARG 2 client
 	METHOD method_1_6091 addUpdateListener (Ljava/lang/Runnable;)V
 		ARG 1 listener
 	METHOD method_1_6092 shutdown ()V
-	METHOD method_1_6093 updateFromFriendData (Lcom/mojang/authlib/yggdrasil/response/FriendData;Lnet/minecraft/class_1_1004$class_1_1006;)Z
-		ARG 1 friendData
+	METHOD method_1_6093 updateFromFriendData (Lcom/mojang/authlib/services/response/FriendData;Lnet/minecraft/class_1_1004$class_1_1006;)Z
 		ARG 2 status
 	METHOD method_1_6094 onFriendStatusChanged (Ljava/util/UUID;Ljava/lang/String;Lnet/minecraft/class_1_945$class_1_1005;)V
 	METHOD method_1_6095 updateAsync ()Ljava/util/concurrent/CompletableFuture;
-	METHOD method_1_6096 getFriendData ()Lcom/mojang/authlib/yggdrasil/response/FriendData;
+	METHOD method_1_6096 getFriendData ()Lcom/mojang/authlib/services/response/FriendData;
 	METHOD method_1_6097 getStatus ()Lnet/minecraft/class_1_1004$class_1_1006;
 	METHOD method_1_6098 getUpdatePeriod ()J
 	METHOD method_1_6099 shouldSuppressNotifications ()Z
 	METHOD method_1_6103 (Ljava/lang/Runnable;)Ljava/lang/Thread;
 		ARG 0 runnable
-	METHOD method_1_6105 convertYggdrasilResultCode (Lcom/mojang/authlib/yggdrasil/FriendsService$ResultCode;)Lnet/minecraft/class_1_1004$class_1_1006;
-		ARG 0 resultCode
+	METHOD method_1_6105 convertYggdrasilResultCode (Lcom/mojang/authlib/services/FriendsService$ResultCode;)Lnet/minecraft/class_1_1004$class_1_1006;
 	METHOD method_1_6106 notifyUpdateListeners ()V
 	METHOD method_1_6107 removeUpdateListener (Ljava/lang/Runnable;)V
 		ARG 1 listener

@@ -4,22 +4,14 @@ CLASS net/minecraft/class_7138 net/minecraft/world/gen/noise/NoiseConfig
 	FIELD field_38257 noiseRouter Lnet/minecraft/class_6953;
 	FIELD field_38258 multiNoiseSampler Lnet/minecraft/class_6544$class_6552;
 	FIELD field_38259 surfaceBuilder Lnet/minecraft/class_6724;
-	FIELD field_38260 aquiferRandomDeriver Lnet/minecraft/class_6574;
-	FIELD field_38261 oreRandomDeriver Lnet/minecraft/class_6574;
 	FIELD field_38262 noises Ljava/util/Map;
 	FIELD field_38263 randomDerivers Ljava/util/Map;
-	METHOD <init> (Lnet/minecraft/class_5284;Lnet/minecraft/class_7871;J)V
-		ARG 1 chunkGeneratorSettings
-		ARG 2 noiseParametersLookup
-		ARG 3 seed
-	METHOD method_41556 create (Lnet/minecraft/class_5284;Lnet/minecraft/class_7871;J)Lnet/minecraft/class_7138;
-		ARG 0 chunkGeneratorSettings
+	METHOD <init> (Lnet/minecraft/class_7871;JZLnet/minecraft/class_2680;ILnet/minecraft/class_6953;Ljava/util/List;)V
 		ARG 1 noiseParametersLookup
-		ARG 2 legacyWorldSeed
-	METHOD method_41557 create (Lnet/minecraft/class_7871$class_7872;Lnet/minecraft/class_5321;J)Lnet/minecraft/class_7138;
-		ARG 0 registryLookup
-		ARG 1 chunkGeneratorSettingsKey
-		ARG 2 legacyWorldSeed
+		ARG 2 seed
+	METHOD method_41556 create (Lnet/minecraft/class_7871;JZLnet/minecraft/class_2680;ILnet/minecraft/class_6953;Ljava/util/List;)Lnet/minecraft/class_7138;
+	METHOD method_41557 create (Lnet/minecraft/class_7871;JLnet/minecraft/class_5284;)Lnet/minecraft/class_7138;
+		ARG 1 legacyWorldSeed
 	METHOD method_41558 getOrCreateSampler (Lnet/minecraft/class_5321;)Lnet/minecraft/class_5216;
 		ARG 1 noiseParametersKey
 	METHOD method_41559 (Lnet/minecraft/class_5321;Lnet/minecraft/class_5321;)Lnet/minecraft/class_5216;
@@ -31,8 +23,6 @@ CLASS net/minecraft/class_7138 net/minecraft/world/gen/noise/NoiseConfig
 	METHOD method_42370 getNoiseRouter ()Lnet/minecraft/class_6953;
 	METHOD method_42371 getMultiNoiseSampler ()Lnet/minecraft/class_6544$class_6552;
 	METHOD method_42372 getSurfaceBuilder ()Lnet/minecraft/class_6724;
-	METHOD method_42373 getAquiferRandomDeriver ()Lnet/minecraft/class_6574;
-	METHOD method_42374 getOreRandomDeriver ()Lnet/minecraft/class_6574;
 	CLASS 1 1
 		FIELD field_40362 unwrapped Ljava/util/Map;
 		METHOD method_45512 unwrap (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;

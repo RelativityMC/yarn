@@ -1,19 +1,12 @@
 CLASS net/minecraft/class_6732 net/minecraft/world/gen/placementmodifier/RandomOffsetPlacementModifier
+	FIELD comp_1_1213 spreadY Lnet/minecraft/class_6017;
 	FIELD field_35419 MODIFIER_CODEC Lcom/mojang/serialization/MapCodec;
-	FIELD field_35420 spreadXz Lnet/minecraft/class_6017;
-	FIELD field_35421 spreadY Lnet/minecraft/class_6017;
-	METHOD <init> (Lnet/minecraft/class_6017;Lnet/minecraft/class_6017;)V
-		ARG 1 xzSpread
-		ARG 2 ySpread
+	METHOD comp_1_1213 spreadY ()Lnet/minecraft/class_6017;
 	METHOD method_1_3072 of (II)Lnet/minecraft/class_6732;
 		ARG 0 spreadXz
 		ARG 1 spreadY
 	METHOD method_39179 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
-	METHOD method_39180 (Lnet/minecraft/class_6732;)Lnet/minecraft/class_6017;
-		ARG 0 placementModifier
-	METHOD method_39181 (Lnet/minecraft/class_6732;)Lnet/minecraft/class_6017;
-		ARG 0 placementModifier
 	METHOD method_39656 vertically (Lnet/minecraft/class_6017;)Lnet/minecraft/class_6732;
 		ARG 0 spreadY
 	METHOD method_39657 of (Lnet/minecraft/class_6017;Lnet/minecraft/class_6017;)Lnet/minecraft/class_6732;

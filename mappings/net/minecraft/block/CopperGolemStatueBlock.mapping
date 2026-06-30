@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_11583 net/minecraft/block/CopperGolemStatueBlock
-	FIELD field_61408 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_61409 FACING Lnet/minecraft/class_2754;
 	FIELD field_61410 POSE Lnet/minecraft/class_2754;
 	FIELD field_61411 WATERLOGGED Lnet/minecraft/class_2746;
@@ -8,8 +7,6 @@ CLASS net/minecraft/class_11583 net/minecraft/block/CopperGolemStatueBlock
 	METHOD <init> (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_4970$class_2251;)V
 		ARG 1 oxidationLevel
 		ARG 2 settings
-	METHOD method_72604 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance
 	METHOD method_72605 changePose (Lnet/minecraft/class_1937;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_1657;)V
 		ARG 1 world
 		ARG 2 state

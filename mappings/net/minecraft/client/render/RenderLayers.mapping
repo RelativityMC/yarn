@@ -3,8 +3,6 @@ CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 	FIELD field_1_2486 BANNER_PATTERN Ljava/util/function/Function;
 	FIELD field_1_7543 ARMOR_TRIM Ljava/util/function/Function;
 	FIELD field_1_7544 ARMOR_TRIM_DECAL Ljava/util/function/Function;
-	FIELD field_64015 GLINT_TRANSLUCENT Lnet/minecraft/class_1921;
-	FIELD field_64016 GLINT Lnet/minecraft/class_1921;
 	FIELD field_64017 ENTITY_GLINT Lnet/minecraft/class_1921;
 	FIELD field_64018 CRUMBLING Ljava/util/function/Function;
 	FIELD field_64019 TEXT Ljava/util/function/Function;
@@ -156,9 +154,8 @@ CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 	METHOD method_75983 (Lnet/minecraft/class_2960;Ljava/lang/Boolean;)Lnet/minecraft/class_1921;
 		ARG 0 texture
 		ARG 1 affectsOutline
-	METHOD method_75984 entityTranslucentEmissive (Lnet/minecraft/class_2960;Z)Lnet/minecraft/class_1921;
+	METHOD method_75984 entityTranslucentEmissive (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
-		ARG 1 affectsOutline
 	METHOD method_75985 waterMask ()Lnet/minecraft/class_1921;
 	METHOD method_75986 entitySolidZOffsetForward (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
@@ -174,10 +171,8 @@ CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 	METHOD method_75991 (Lnet/minecraft/class_2960;Ljava/lang/Boolean;)Lnet/minecraft/class_1921;
 		ARG 0 texture
 		ARG 1 cull
-	METHOD method_75993 glintTranslucent ()Lnet/minecraft/class_1921;
 	METHOD method_75994 entityCutoutNoCull (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
-	METHOD method_75995 glint ()Lnet/minecraft/class_1921;
 	METHOD method_75996 entityCutoutNoCullZOffset (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
 	METHOD method_75997 entityGlint ()Lnet/minecraft/class_1921;
@@ -187,8 +182,6 @@ CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 	METHOD method_76000 entityTranslucent (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
 	METHOD method_76001 textBackgroundSeeThrough ()Lnet/minecraft/class_1921;
-	METHOD method_76002 entityTranslucentEmissive (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
-		ARG 0 texture
 	METHOD method_76003 lightning ()Lnet/minecraft/class_1921;
 	METHOD method_76005 dragonRays ()Lnet/minecraft/class_1921;
 	METHOD method_76006 entityDecal (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;

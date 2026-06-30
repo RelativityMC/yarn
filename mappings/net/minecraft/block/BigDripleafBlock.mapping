@@ -2,7 +2,6 @@ CLASS net/minecraft/class_5801 net/minecraft/block/BigDripleafBlock
 	FIELD field_28660 WATERLOGGED Lnet/minecraft/class_2746;
 	FIELD field_28661 TILT Lnet/minecraft/class_2754;
 	FIELD field_28662 NEXT_TILT_DELAYS Lit/unimi/dsi/fastutil/objects/Object2IntMap;
-	FIELD field_46277 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_55736 SHAPES_BY_TILT Ljava/util/Map;
 	FIELD field_55737 shapeFunction Ljava/util/function/Function;
 	METHOD method_1_2525 canGrowIntoImpl (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;)Z

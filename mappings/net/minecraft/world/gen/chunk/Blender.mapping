@@ -72,7 +72,7 @@ CLASS net/minecraft/class_6748 net/minecraft/world/gen/chunk/Blender
 		ARG 6 x2
 		ARG 8 y2
 		ARG 10 z2
-	METHOD method_39809 createCarvingMasks (Lnet/minecraft/class_5281;Lnet/minecraft/class_2839;)V
+	METHOD method_39809 createCarvingMasks (Lnet/minecraft/class_5281;Lnet/minecraft/class_2839;)Lnet/minecraft/class_6643$class_6828;
 		ARG 0 world
 		ARG 1 chunk
 	METHOD method_39811 (Lnet/minecraft/class_6748$class_6831;III)Z

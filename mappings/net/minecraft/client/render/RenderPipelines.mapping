@@ -58,8 +58,6 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_56869 RENDERTYPE_WORLD_BORDER Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56870 OPAQUE_PARTICLE Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56871 TRANSLUCENT_PARTICLE Lcom/mojang/blaze3d/pipeline/RenderPipeline;
-	FIELD field_56872 WEATHER_DEPTH Lcom/mojang/blaze3d/pipeline/RenderPipeline;
-	FIELD field_56873 WEATHER_NO_DEPTH Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56874 POSITION_SKY Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56875 POSITION_TEX_COLOR_END_SKY Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56876 POSITION_COLOR_SUNRISE_SUNSET Lcom/mojang/blaze3d/pipeline/RenderPipeline;

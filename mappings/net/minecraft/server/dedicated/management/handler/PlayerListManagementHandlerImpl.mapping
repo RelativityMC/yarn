@@ -5,5 +5,3 @@ CLASS net/minecraft/class_11995 net/minecraft/server/dedicated/management/handle
 		ARG 1 managementListener
 		ARG 2 logger
 	METHOD method_1_5377 getServer ()Lnet/minecraft/class_3176;
-	METHOD method_74505 (Lcom/mojang/authlib/yggdrasil/ProfileResult;)Lnet/minecraft/class_11560;
-		ARG 0 result

@@ -2,7 +2,7 @@ CLASS net/minecraft/class_6385 net/minecraft/client/gui/screen/narration/ScreenN
 	COMMENT Manages narration messages and combines them into a narrated string.
 	FIELD field_33796 currentMessageIndex I
 	FIELD field_33797 narrations Ljava/util/Map;
-	METHOD method_37044 buildNarrations (Ljava/util/function/Consumer;)V
+	METHOD method_37044 buildNarrations (Ljava/util/function/Consumer;Lnet/minecraft/class_1_1171;)V
 		COMMENT Creates the narration messages for the next narration using a
 		COMMENT {@link NarrationMessageBuilder}.
 		ARG 1 builderConsumer
@@ -46,7 +46,7 @@ CLASS net/minecraft/class_6385 net/minecraft/client/gui/screen/narration/ScreenN
 			ARG 2 narration
 	CLASS class_6388 MessageBuilder
 		FIELD field_33807 depth I
-		METHOD <init> (Lnet/minecraft/class_6385;I)V
+		METHOD <init> (Lnet/minecraft/class_6385;ILnet/minecraft/class_1_1171;)V
 			ARG 2 depth
 		METHOD method_37050 (Lnet/minecraft/class_6385$class_6386;)Lnet/minecraft/class_6385$class_6387;
 			ARG 0 partIndex

@@ -1,20 +1,17 @@
 CLASS net/minecraft/class_3275 net/minecraft/world/gen/placementmodifier/NoiseBasedCountPlacementModifier
-	FIELD field_14205 noiseOffset D
-	FIELD field_14206 noiseFactor D
-	FIELD field_14208 noiseToCountRatio I
+	FIELD comp_1_1228 noiseFactor D
+	FIELD comp_1_1229 noiseOffset D
+	FIELD comp_1_1230 noiseToCountRatio I
 	FIELD field_24987 MODIFIER_CODEC Lcom/mojang/serialization/MapCodec;
 	METHOD <init> (IDD)V
 		ARG 1 noiseToCountRatio
 		ARG 2 noiseFactor
 		ARG 4 noiseOffset
+	METHOD comp_1_1228 noiseFactor ()D
+	METHOD comp_1_1229 noiseOffset ()D
+	METHOD comp_1_1230 noiseToCountRatio ()I
 	METHOD method_28939 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
-	METHOD method_28941 (Lnet/minecraft/class_3275;)Ljava/lang/Double;
-		ARG 0 placementModifier
-	METHOD method_28942 (Lnet/minecraft/class_3275;)Ljava/lang/Double;
-		ARG 0 placementModifier
-	METHOD method_28943 (Lnet/minecraft/class_3275;)Ljava/lang/Integer;
-		ARG 0 placementModifier
 	METHOD method_39641 of (IDD)Lnet/minecraft/class_3275;
 		ARG 0 noiseToCountRatio
 		ARG 1 noiseFactor

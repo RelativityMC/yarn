@@ -1,7 +1,6 @@
 CLASS net/minecraft/class_2420 net/minecraft/block/MushroomPlantBlock
 	FIELD field_11304 SHAPE Lnet/minecraft/class_265;
 	FIELD field_27194 featureKey Lnet/minecraft/class_5321;
-	FIELD field_46399 CODEC Lcom/mojang/serialization/MapCodec;
 	METHOD <init> (Lnet/minecraft/class_5321;Lnet/minecraft/class_4970$class_2251;)V
 		ARG 1 featureKey
 		ARG 2 settings
@@ -10,7 +9,3 @@ CLASS net/minecraft/class_2420 net/minecraft/block/MushroomPlantBlock
 		ARG 2 pos
 		ARG 3 state
 		ARG 4 random
-	METHOD method_54034 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance
-	METHOD method_54035 (Lnet/minecraft/class_2420;)Lnet/minecraft/class_5321;
-		ARG 0 block

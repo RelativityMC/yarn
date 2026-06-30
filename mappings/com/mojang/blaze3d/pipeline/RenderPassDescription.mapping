@@ -1,26 +1,6 @@
 CLASS net/minecraft/class_1_900 com/mojang/blaze3d/pipeline/RenderPassDescription
-	FIELD field_1_6324 colorAttachments Ljava/util/List;
-	FIELD field_1_6325 depthAttachment Lnet/minecraft/class_1_900$class_1_901;
 	FIELD field_1_6326 labelGetter Ljava/util/function/Supplier;
-	FIELD field_1_6327 renderArea Lcom/mojang/blaze3d/systems/RenderPass$class_1_837;
-	METHOD <init> (Ljava/util/function/Supplier;)V
-		ARG 1 labelGetter
 	METHOD method_1_5424 getColorAttachments ()Ljava/util/List;
-	METHOD method_1_5425 withLabel (Ljava/util/function/Supplier;)Lnet/minecraft/class_1_900;
-		ARG 0 labelGetter
 	METHOD method_1_5426 getDepthAttachment ()Lnet/minecraft/class_1_900$class_1_901;
 	METHOD method_1_5427 getLabelGetter ()Ljava/util/function/Supplier;
-	METHOD method_1_5428 color (Lcom/mojang/blaze3d/textures/GpuTextureView;)Lnet/minecraft/class_1_900;
-		ARG 1 textureView
-	METHOD method_1_5429 color (Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/Optional;)Lnet/minecraft/class_1_900;
-		ARG 1 textureView
-		ARG 2 clearColor
-	METHOD method_1_5430 depth (Lcom/mojang/blaze3d/textures/GpuTextureView;)Lnet/minecraft/class_1_900;
-		ARG 1 textureView
-	METHOD method_1_5431 depth (Lcom/mojang/blaze3d/textures/GpuTextureView;Ljava/util/OptionalDouble;)Lnet/minecraft/class_1_900;
-		ARG 1 textureView
-		ARG 2 clearColor
-	METHOD method_1_5432 renderArea (Lcom/mojang/blaze3d/systems/RenderPass$class_1_837;)Lnet/minecraft/class_1_900;
-		ARG 1 renderArea
-	METHOD method_1_5433 withoutColor ()Lnet/minecraft/class_1_900;
 	CLASS class_1_901 Attachment

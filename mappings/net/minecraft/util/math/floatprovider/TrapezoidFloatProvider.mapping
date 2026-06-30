@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_5865 net/minecraft/util/math/floatprovider/TrapezoidFloatProvider
-	FIELD comp_1_370 max F
-	FIELD comp_1_371 min F
+	FIELD comp_1_363 max F
+	FIELD comp_1_364 min F
 	FIELD comp_1_373 plateau F
 	FIELD field_29012 CODEC Lcom/mojang/serialization/MapCodec;
 	METHOD <init> (FFF)V

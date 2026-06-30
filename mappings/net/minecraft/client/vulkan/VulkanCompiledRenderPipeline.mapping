@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_1_718 net/minecraft/client/vulkan/VulkanCompiledRenderPipeline
-	FIELD field_1_3686 NULLPTR J
 	METHOD method_1_4294 setBlendFunction (Lorg/lwjgl/vulkan/VkPipelineColorBlendAttachmentState$Buffer;Lcom/mojang/blaze3d/pipeline/BlendFunction;)V
 		ARG 0 colorBlendAttachmentState
 		ARG 1 blendFunction

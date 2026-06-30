@@ -1,4 +1,1 @@
 CLASS net/minecraft/class_2563 net/minecraft/block/WitherRoseBlock
-	FIELD field_46503 CODEC Lcom/mojang/serialization/MapCodec;
-	METHOD method_54075 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance

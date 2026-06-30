@@ -4,7 +4,6 @@ CLASS net/minecraft/class_2315 net/minecraft/block/DispenserBlock
 	FIELD field_10920 TRIGGERED Lnet/minecraft/class_2746;
 	FIELD field_31082 SCHEDULED_TICK_DELAY I
 	FIELD field_46212 LOGGER Lorg/slf4j/Logger;
-	FIELD field_46336 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_51412 DEFAULT_BEHAVIOR Lnet/minecraft/class_2347;
 	METHOD method_10009 registerBehavior (Lnet/minecraft/class_1935;Lnet/minecraft/class_2357;)V
 		ARG 0 provider

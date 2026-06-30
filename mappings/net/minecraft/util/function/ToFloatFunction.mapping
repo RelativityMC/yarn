@@ -2,8 +2,7 @@ CLASS net/minecraft/class_6501 net/minecraft/util/function/ToFloatFunction
 	FIELD field_37409 IDENTITY Lnet/minecraft/class_6501;
 	METHOD method_1_4162 constant (F)Lnet/minecraft/class_6501;
 		ARG 0 value
-	METHOD method_1_4163 max ()F
-	METHOD method_1_4164 min ()F
+	METHOD method_1_4163 max ()Lnet/minecraft/class_1_1150;
 	METHOD method_41296 apply (Ljava/lang/Object;)F
 		ARG 1 x
 	METHOD method_41309 compose (Ljava/util/function/Function;)Lnet/minecraft/class_6501;

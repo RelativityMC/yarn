@@ -2,7 +2,6 @@ CLASS net/minecraft/class_7714 net/minecraft/block/ChiseledBookshelfBlock
 	FIELD field_41307 BOOK_HEIGHT I
 	FIELD field_41308 SLOT_OCCUPIED_PROPERTIES Ljava/util/List;
 	FIELD field_41309 MAX_BOOK_COUNT I
-	FIELD field_46312 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_61990 FACING Lnet/minecraft/class_2754;
 	FIELD field_61991 SLOT_0_OCCUPIED Lnet/minecraft/class_2746;
 	FIELD field_61992 SLOT_1_OCCUPIED Lnet/minecraft/class_2746;

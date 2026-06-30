@@ -34,8 +34,7 @@ CLASS net/minecraft/class_7434 net/minecraft/client/session/ProfileKeysImpl
 		COMMENT <p>This can return expired keys.
 		COMMENT
 		COMMENT @implNote The cache file is stored at {@code .minecraft/profilekeys/<uuid>.json}.
-	METHOD method_44076 decodeKeyPairResponse (Lcom/mojang/authlib/yggdrasil/response/KeyPairResponse;)Lnet/minecraft/class_7428$class_7443;
+	METHOD method_44076 decodeKeyPairResponse (Lcom/mojang/authlib/services/response/KeyPairResponse;)Lnet/minecraft/class_7428$class_7443;
 		COMMENT {@return {@code keyPairResponse} decoded to {@link PlayerPublicKey.PublicKeyData}}
 		COMMENT
 		COMMENT @throws NetworkEncryptionException when the response is malformed
-		ARG 0 keyPairResponse

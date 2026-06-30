@@ -79,7 +79,7 @@ CLASS net/minecraft/class_437 net/minecraft/client/gui/screen/Screen
 		ARG 1 builder
 	METHOD method_37058 setElementNarrationDelay (J)V
 		ARG 1 delayMs
-	METHOD method_37059 setScreenNarrationDelay (JZ)V
+	METHOD method_37059 setScreenNarrationDelay (JZLnet/minecraft/class_1_1171;)V
 		ARG 1 delayMs
 		ARG 3 restartElementNarration
 	METHOD method_37060 addDrawable (Lnet/minecraft/class_4068;)Lnet/minecraft/class_4068;
@@ -96,7 +96,7 @@ CLASS net/minecraft/class_437 net/minecraft/client/gui/screen/Screen
 		ARG 1 onlyChangedNarrations
 			COMMENT if {@code true}, the text will not include unchanged narrations that have
 			COMMENT already been narrated previously
-	METHOD method_37065 narrateScreen (Z)V
+	METHOD method_37065 narrateScreen (ZLnet/minecraft/class_1_1171;)V
 		ARG 1 onlyChangedNarrations
 	METHOD method_37066 remove (Lnet/minecraft/class_364;)V
 		ARG 1 child
@@ -158,7 +158,7 @@ CLASS net/minecraft/class_437 net/minecraft/client/gui/screen/Screen
 		ARG 5 v
 		ARG 6 width
 		ARG 7 height
-	METHOD method_61040 refreshNarrator (Z)V
+	METHOD method_61040 refreshNarrator (ZLnet/minecraft/class_1_1171;)V
 		ARG 1 previouslyDisabled
 	METHOD method_64506 getTextRenderer ()Lnet/minecraft/class_327;
 	METHOD method_64507 showsStatusEffects ()Z

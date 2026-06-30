@@ -33,6 +33,3 @@ CLASS net/minecraft/class_1433 net/minecraft/entity/passive/DolphinEntity
 			ARG 1 dolphin
 			ARG 2 speed
 	CLASS class_1437 PlayWithItemsGoal
-		FIELD field_6758 nextPlayingTime I
-		METHOD method_18056 spitOutItem (Lnet/minecraft/class_1799;)V
-			ARG 1 stack

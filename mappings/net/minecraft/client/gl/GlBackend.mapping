@@ -10,9 +10,6 @@ CLASS net/minecraft/class_10865 net/minecraft/client/gl/GlBackend
 	FIELD field_57855 glDebug Lnet/minecraft/class_1008;
 	FIELD field_57856 debugLabelManager Lnet/minecraft/class_10861;
 	FIELD field_57858 bufferManager Lnet/minecraft/class_10874;
-	FIELD field_57859 defaultShaderSourceGetter Lnet/minecraft/class_12289;
-	FIELD field_57860 pipelineCompileCache Ljava/util/Map;
-	FIELD field_57861 shaderCompileCache Ljava/util/Map;
 	FIELD field_57862 vertexBufferManager Lnet/minecraft/class_10869;
 	FIELD field_58035 allowGlArbVABinding Z
 	FIELD field_58036 allowGlKhrDebug Z
@@ -21,28 +18,13 @@ CLASS net/minecraft/class_10865 net/minecraft/client/gl/GlBackend
 	FIELD field_58039 allowGlArbDirectAccess Z
 	FIELD field_60016 allowGlBufferStorage Z
 	FIELD field_60017 gpuBufferManager Lnet/minecraft/class_11266;
-	METHOD <init> (JLnet/minecraft/class_12289;Lnet/minecraft/class_1_16;)V
+	METHOD <init> (JLnet/minecraft/class_1_16;)V
 		ARG 1 contextId
-		ARG 3 defaultShaderSourceGetter
-		ARG 4 debugOptions
+		ARG 3 debugOptions
 	METHOD method_1_5402 getFramebufferManager ()Lnet/minecraft/class_1_894;
 	METHOD method_68377 getDebugLabelManager ()Lnet/minecraft/class_10861;
-	METHOD method_68378 getCompiledShader (Lnet/minecraft/class_2960;Lcom/mojang/blaze3d/shaders/ShaderType;Lnet/minecraft/class_10149;Lnet/minecraft/class_12289;)Lnet/minecraft/class_10141;
-		ARG 1 id
-		ARG 2 type
-		ARG 3 defines
+	METHOD method_68379 compileShader (Lnet/minecraft/class_2960;Lcom/mojang/blaze3d/shaders/ShaderType;Lnet/minecraft/class_10149;Lnet/minecraft/class_12289;)Lnet/minecraft/class_10141;
 		ARG 4 sourceGetter
-	METHOD method_68379 compileShader (Lnet/minecraft/class_10865$class_10154;Lnet/minecraft/class_12289;)Lnet/minecraft/class_10141;
-		ARG 1 key
-		ARG 2 sourceGetter
-	METHOD method_68380 (Lnet/minecraft/class_12289;Lnet/minecraft/class_10865$class_10154;)Lnet/minecraft/class_10141;
-		ARG 2 key
-	METHOD method_68381 getCompiledPipeline (Lcom/mojang/blaze3d/pipeline/RenderPipeline;)Lnet/minecraft/class_10867;
-		ARG 1 pipeline
-	METHOD method_68382 (Lcom/mojang/blaze3d/pipeline/RenderPipeline;)Lnet/minecraft/class_10867;
-		ARG 1 p
-	METHOD method_68384 (Lnet/minecraft/class_12289;Lcom/mojang/blaze3d/pipeline/RenderPipeline;)Lnet/minecraft/class_10867;
-		ARG 2 p
 	METHOD method_68392 compileRenderPipeline (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/class_12289;)Lnet/minecraft/class_10867;
 		ARG 1 pipeline
 		ARG 2 sourceGetter
@@ -53,4 +35,3 @@ CLASS net/minecraft/class_10865 net/minecraft/client/gl/GlBackend
 	METHOD method_76229 compileProgram (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/class_12289;)Lnet/minecraft/class_5944;
 		ARG 1 pipeline
 		ARG 2 sourceGetter
-	CLASS class_10154 ShaderKey

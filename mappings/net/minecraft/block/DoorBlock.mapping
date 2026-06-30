@@ -5,7 +5,6 @@ CLASS net/minecraft/class_2323 net/minecraft/block/DoorBlock
 	FIELD field_10945 OPEN Lnet/minecraft/class_2746;
 	FIELD field_10946 HALF Lnet/minecraft/class_2754;
 	FIELD field_42757 blockSetType Lnet/minecraft/class_8177;
-	FIELD field_46337 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_55753 SHAPES_BY_DIRECTION Ljava/util/Map;
 	METHOD <init> (Lnet/minecraft/class_8177;Lnet/minecraft/class_4970$class_2251;)V
 		ARG 1 type
@@ -31,5 +30,3 @@ CLASS net/minecraft/class_2323 net/minecraft/block/DoorBlock
 	METHOD method_30841 isOpen (Lnet/minecraft/class_2680;)Z
 		ARG 1 state
 	METHOD method_51169 getBlockSetType ()Lnet/minecraft/class_8177;
-	METHOD method_54010 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance

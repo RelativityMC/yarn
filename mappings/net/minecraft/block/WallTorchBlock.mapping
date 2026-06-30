@@ -1,13 +1,8 @@
 CLASS net/minecraft/class_2555 net/minecraft/block/WallTorchBlock
 	FIELD field_11731 FACING Lnet/minecraft/class_2754;
 	FIELD field_11732 SHAPES_BY_DIRECTION Ljava/util/Map;
-	FIELD field_46491 CODEC Lcom/mojang/serialization/MapCodec;
 	METHOD method_10841 getBoundingShape (Lnet/minecraft/class_2680;)Lnet/minecraft/class_265;
 		ARG 0 state
-	METHOD method_54066 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance
-	METHOD method_54067 (Lnet/minecraft/class_2555;)Lnet/minecraft/class_2400;
-		ARG 0 block
 	METHOD method_56118 canPlaceAt (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;)Z
 		ARG 0 world
 		ARG 1 pos

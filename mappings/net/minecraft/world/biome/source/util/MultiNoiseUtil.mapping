@@ -28,9 +28,6 @@ CLASS net/minecraft/class_6544 net/minecraft/world/biome/source/util/MultiNoiseU
 		ARG 0 value
 	METHOD method_38666 toFloat (J)F
 		ARG 0 value
-	METHOD method_39164 findFittestPosition (Ljava/util/List;Lnet/minecraft/class_6544$class_6552;)Lnet/minecraft/class_2338;
-		ARG 0 noises
-		ARG 1 sampler
 	METHOD method_40443 createEmptyMultiNoiseSampler ()Lnet/minecraft/class_6544$class_6552;
 	CLASS class_4762 NoiseHypercube
 		COMMENT Represents a hypercube in a multi-dimensional cartesian plane. The multi-noise
@@ -99,8 +96,6 @@ CLASS net/minecraft/class_6544 net/minecraft/world/biome/source/util/MultiNoiseU
 		METHOD method_38121 of (FF)Lnet/minecraft/class_6544$class_6546;
 			ARG 0 min
 			ARG 1 max
-		METHOD method_38122 getDistance (Lnet/minecraft/class_6544$class_6546;)J
-			ARG 1 other
 		METHOD method_38123 combine (Lnet/minecraft/class_6544$class_6546;Lnet/minecraft/class_6544$class_6546;)Lnet/minecraft/class_6544$class_6546;
 			COMMENT Creates a new {@link MultiNoiseUtil.ParameterRange} that combines the parameters.
 			COMMENT
@@ -216,23 +211,3 @@ CLASS net/minecraft/class_6544 net/minecraft/world/biome/source/util/MultiNoiseU
 		METHOD comp_116 depth ()J
 		METHOD comp_117 weirdnessNoise ()J
 		METHOD method_38166 getNoiseValueList ()[J
-	CLASS class_6729 FittestPositionFinder
-		FIELD field_35360 bestResult Lnet/minecraft/class_6544$class_6729$class_6730;
-		METHOD <init> (Ljava/util/List;Lnet/minecraft/class_6544$class_6552;)V
-			ARG 1 noises
-			ARG 2 sampler
-		METHOD method_39166 findFittest (Ljava/util/List;Lnet/minecraft/class_6544$class_6552;FF)V
-			ARG 1 noises
-			ARG 2 sampler
-			ARG 3 maxDistance
-			ARG 4 step
-		METHOD method_39167 calculateFitness (Ljava/util/List;Lnet/minecraft/class_6544$class_6552;II)Lnet/minecraft/class_6544$class_6729$class_6730;
-			ARG 0 noises
-			ARG 1 sampler
-			ARG 2 x
-			ARG 3 z
-		CLASS class_6730 Result
-			FIELD comp_223 location Lnet/minecraft/class_2338;
-			FIELD comp_224 fitness J
-			METHOD comp_223 location ()Lnet/minecraft/class_2338;
-			METHOD comp_224 fitness ()J

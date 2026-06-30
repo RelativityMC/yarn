@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_11198 net/minecraft/block/DriedGhastBlock
-	FIELD field_59753 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_59754 MAX_HYDRATION I
 	FIELD field_59755 HYDRATION Lnet/minecraft/class_2758;
 	FIELD field_59756 WATERLOGGED Lnet/minecraft/class_2746;

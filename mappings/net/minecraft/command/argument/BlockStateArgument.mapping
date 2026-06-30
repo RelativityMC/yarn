@@ -18,9 +18,5 @@ CLASS net/minecraft/class_2247 net/minecraft/command/argument/BlockStateArgument
 	METHOD method_35759 getProperties ()Ljava/util/Set;
 	METHOD method_65237 copyPropertiesTo (Lnet/minecraft/class_2680;)Lnet/minecraft/class_2680;
 		ARG 1 state
-	METHOD method_65238 copyProperty (Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;Lnet/minecraft/class_2769;)Lnet/minecraft/class_2680;
-		ARG 0 to
-		ARG 1 from
-		ARG 2 property
 	METHOD test (Ljava/lang/Object;)Z
 		ARG 1 context

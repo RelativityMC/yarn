@@ -1,11 +1,10 @@
 CLASS net/minecraft/class_6793 net/minecraft/world/gen/placementmodifier/CountPlacementModifier
+	FIELD comp_1_1210 count Lnet/minecraft/class_6017;
 	FIELD field_35718 MODIFIER_CODEC Lcom/mojang/serialization/MapCodec;
-	FIELD field_35719 count Lnet/minecraft/class_6017;
 	METHOD <init> (Lnet/minecraft/class_6017;)V
 		ARG 1 count
+	METHOD comp_1_1210 count ()Lnet/minecraft/class_6017;
 	METHOD method_39623 of (I)Lnet/minecraft/class_6793;
 		ARG 0 count
 	METHOD method_39624 of (Lnet/minecraft/class_6017;)Lnet/minecraft/class_6793;
 		ARG 0 count
-	METHOD method_39625 (Lnet/minecraft/class_6793;)Lnet/minecraft/class_6017;
-		ARG 0 placementModifier

@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_10322 net/minecraft/block/PaleMossCarpetBlock
-	FIELD field_54755 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_54756 BOTTOM Lnet/minecraft/class_2746;
 	FIELD field_54757 NORTH Lnet/minecraft/class_2754;
 	FIELD field_54758 EAST Lnet/minecraft/class_2754;

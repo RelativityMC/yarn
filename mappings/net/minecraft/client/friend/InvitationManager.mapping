@@ -1,18 +1,17 @@
 CLASS net/minecraft/class_1_951 net/minecraft/client/friend/InvitationManager
 	FIELD field_1_6630 DIRTY_UPDATE_INTERVAL Ljava/time/Duration;
-	FIELD field_1_6631 friendsService Lcom/mojang/authlib/yggdrasil/FriendsService;
+	FIELD field_1_6631 friendsService Lcom/mojang/authlib/services/FriendsService;
 	FIELD field_1_6633 presenceStatusUpdatedTime Ljava/time/Instant;
-	FIELD field_1_6634 presenceResponse Lcom/mojang/authlib/yggdrasil/response/PresenceResponse;
+	FIELD field_1_6634 presenceResponse Lcom/mojang/authlib/services/response/PresenceResponse;
 	FIELD field_1_6636 client Lnet/minecraft/class_310;
 	FIELD field_1_6638 dirty Z
 	FIELD field_1_7149 UPDATE_INTERVAL_MULTIPLIER_WHEN_NOT_DIRTY J
-	METHOD <init> (Lnet/minecraft/class_310;Lcom/mojang/authlib/yggdrasil/FriendsService;)V
+	METHOD <init> (Lnet/minecraft/class_310;Lcom/mojang/authlib/services/FriendsService;)V
 		ARG 1 client
-		ARG 2 friendsService
-	METHOD method_1_5778 getPresenceResponse ()Lcom/mojang/authlib/yggdrasil/response/PresenceResponse;
-	METHOD method_1_5779 getPresenceStatus ()Lcom/mojang/authlib/yggdrasil/response/PresenceStatus;
+	METHOD method_1_5778 getPresenceResponse ()Lcom/mojang/authlib/services/response/PresenceResponse;
+	METHOD method_1_5779 getPresenceStatus ()Lcom/mojang/authlib/services/response/PresenceStatus;
 	METHOD method_1_5794 shouldUpdatePresenceStatus ()Z
 	METHOD method_1_5795 checkPresenceStatus ()V
 	METHOD method_1_5796 markDirty ()V
 	METHOD method_1_5797 updatePresenceStatus ()V
-	METHOD method_1_6258 getActualPresenceStatus ()Lcom/mojang/authlib/yggdrasil/response/PresenceStatus;
+	METHOD method_1_6258 getActualPresenceStatus ()Lcom/mojang/authlib/services/response/PresenceStatus;

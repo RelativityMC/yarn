@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_10319 net/minecraft/block/CreakingHeartBlock
-	FIELD field_54738 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_54739 AXIS Lnet/minecraft/class_2754;
 	FIELD field_55064 ACTIVE Lnet/minecraft/class_2754;
 	FIELD field_55065 NATURAL Lnet/minecraft/class_2746;

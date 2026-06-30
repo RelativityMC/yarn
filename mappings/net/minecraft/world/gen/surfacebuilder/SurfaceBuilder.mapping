@@ -44,15 +44,14 @@ CLASS net/minecraft/class_6724 net/minecraft/world/gen/surfacebuilder/SurfaceBui
 		ARG 5 x
 		ARG 6 z
 		ARG 7 surfaceY
-	METHOD method_39106 buildSurface (Lnet/minecraft/class_7138;Lnet/minecraft/class_4543;ZLnet/minecraft/class_5868;Lnet/minecraft/class_2791;Lnet/minecraft/class_6568;Lnet/minecraft/class_6686$class_6708;Ljava/util/Set;)V
+	METHOD method_39106 buildSurface (Lnet/minecraft/class_7138;Lnet/minecraft/class_4543;Lnet/minecraft/class_5868;Lnet/minecraft/class_2791;Lnet/minecraft/class_6568;Lnet/minecraft/class_6686$class_6708;Ljava/util/Set;)V
 		ARG 1 noiseConfig
 		ARG 2 biomeAccess
-		ARG 3 useLegacyRandom
-		ARG 4 heightContext
-		ARG 5 chunk
-		ARG 6 chunkNoiseSampler
-		ARG 7 materialRule
-		ARG 8 includedBiomes
+		ARG 3 heightContext
+		ARG 4 chunk
+		ARG 5 chunkNoiseSampler
+		ARG 6 materialRule
+		ARG 7 includedBiomes
 	METHOD method_39108 createTerracottaBands (Lnet/minecraft/class_5819;)[Lnet/minecraft/class_2680;
 		ARG 0 random
 	METHOD method_39109 addTerracottaBands (Lnet/minecraft/class_5819;[Lnet/minecraft/class_2680;ILnet/minecraft/class_2680;)V
@@ -60,14 +59,13 @@ CLASS net/minecraft/class_6724 net/minecraft/world/gen/surfacebuilder/SurfaceBui
 		ARG 1 terracottaBands
 		ARG 2 minBandSize
 		ARG 3 state
-	METHOD method_39110 applyMaterialRule (Lnet/minecraft/class_6686$class_6708;Lnet/minecraft/class_5873;Ljava/util/function/Function;Lnet/minecraft/class_2791;Lnet/minecraft/class_6568;Lnet/minecraft/class_2338;Z)Ljava/util/Optional;
+	METHOD method_39110 applyMaterialRule (Lnet/minecraft/class_6686$class_6708;Lnet/minecraft/class_7138;Lnet/minecraft/class_5868;Ljava/util/function/Function;Lnet/minecraft/class_2791;Lnet/minecraft/class_6568;Lnet/minecraft/class_2338;Z)Ljava/util/Optional;
 		ARG 1 rule
-		ARG 2 context
-		ARG 3 posToBiome
-		ARG 4 chunk
-		ARG 5 chunkNoiseSampler
-		ARG 6 pos
-		ARG 7 hasFluid
+		ARG 4 posToBiome
+		ARG 5 chunk
+		ARG 6 chunkNoiseSampler
+		ARG 7 pos
+		ARG 8 hasFluid
 	METHOD method_39333 isDefaultBlock (Lnet/minecraft/class_2680;)Z
 		ARG 1 state
 	METHOD method_39552 sampleRunDepth (II)I

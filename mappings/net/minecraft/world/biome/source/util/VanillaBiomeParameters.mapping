@@ -191,7 +191,7 @@ CLASS net/minecraft/class_6554 net/minecraft/world/biome/source/util/VanillaBiom
 		ARG 1 temperature
 		ARG 2 humidity
 		ARG 3 weirdness
-	METHOD method_39168 getSpawnSuitabilityNoises ()Ljava/util/List;
+	METHOD method_39168 getSpawnSuitabilityNoises (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)Ljava/util/List;
 	METHOD method_40009 getBiomeOrWindsweptSavanna (IILnet/minecraft/class_6544$class_6546;Lnet/minecraft/class_5321;)Lnet/minecraft/class_5321;
 		COMMENT {@return a windswept savanna for specific conditions, otherwise the given biome}.
 		COMMENT

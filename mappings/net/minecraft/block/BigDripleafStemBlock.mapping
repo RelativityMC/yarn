@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_5802 net/minecraft/block/BigDripleafStemBlock
 	FIELD field_28667 WATERLOGGED Lnet/minecraft/class_2746;
-	FIELD field_46278 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_55738 SHAPES_BY_DIRECTION Ljava/util/Map;
 	METHOD method_1_2547 (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;)Z
 		ARG 1 pos

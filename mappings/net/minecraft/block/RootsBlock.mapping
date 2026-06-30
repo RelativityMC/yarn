@@ -4,7 +4,3 @@ CLASS net/minecraft/class_1_114 net/minecraft/block/RootsBlock
 	METHOD <init> (Lnet/minecraft/class_6862;Lnet/minecraft/class_4970$class_2251;)V
 		ARG 1 supportBlocksTag
 		ARG 2 settings
-	METHOD method_1_1021 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance
-	METHOD method_1_1022 (Lnet/minecraft/class_1_114;)Lnet/minecraft/class_6862;
-		ARG 0 block

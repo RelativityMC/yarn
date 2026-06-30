@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_8886 net/minecraft/block/CrafterBlock
-	FIELD field_46798 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_46799 CRAFTING Lnet/minecraft/class_2746;
 	FIELD field_46800 TRIGGERED Lnet/minecraft/class_2746;
 	FIELD field_46801 ORIENTATION Lnet/minecraft/class_2754;

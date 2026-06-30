@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_3713 net/minecraft/block/GrindstoneBlock
 	FIELD field_17364 TITLE Lnet/minecraft/class_2561;
-	FIELD field_46365 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_55765 shapeFunction Ljava/util/function/Function;
 	METHOD method_16119 getShape (Lnet/minecraft/class_2680;)Lnet/minecraft/class_265;
 		ARG 1 state

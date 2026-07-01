@@ -1,0 +1,37 @@
+CLASS net/minecraft/class_1_1165 net/minecraft/client/render/oit/OitPipelineSet
+	METHOD method_1_7422 builder (Ljava/lang/String;Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;)Lnet/minecraft/class_1_1165$class_1_1166;
+		ARG 0 name
+		ARG 1 snippetBuilder
+	METHOD method_1_7423 get (Lnet/minecraft/class_1_1153;)Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+		ARG 1 stage
+	CLASS class_1_1166 Builder
+		FIELD field_1_8143 SET_EMPTY_DEPTH_STENCIL_STATE_CALLBACK Ljava/util/function/Consumer;
+		FIELD field_1_8144 accumulateAction Ljava/util/Optional;
+		FIELD field_1_8145 snippet Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+		FIELD field_1_8146 depthBoundsAction Ljava/util/Optional;
+		FIELD field_1_8147 name Ljava/lang/String;
+		FIELD field_1_8148 transmittanceAction Ljava/util/Optional;
+		METHOD <init> (Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;Ljava/lang/String;)V
+			ARG 1 snippet
+			ARG 2 name
+		METHOD method_1_7424 build ()Lnet/minecraft/class_1_1165;
+		METHOD method_1_7425 compose (Ljava/util/Optional;Ljava/util/function/Consumer;)Ljava/util/Optional;
+			ARG 0 first
+			ARG 1 second
+		METHOD method_1_7426 (Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;Ljava/util/function/Consumer;)V
+			ARG 1 callback
+		METHOD method_1_7427 (Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;Ljava/util/function/Consumer;)V
+			ARG 1 callback
+		METHOD method_1_7428 (Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;Ljava/util/function/Consumer;)V
+			ARG 1 callback
+		METHOD method_1_7429 (Ljava/util/Optional;Ljava/util/function/Consumer;Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;)V
+			ARG 2 builder
+		METHOD method_1_7430 (Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;)V
+			ARG 0 builder
+		METHOD method_1_7431 accumulate (Ljava/util/function/Consumer;)Lnet/minecraft/class_1_1165$class_1_1166;
+			ARG 1 callback
+		METHOD method_1_7432 depthBounds (Ljava/util/function/Consumer;)Lnet/minecraft/class_1_1165$class_1_1166;
+			ARG 1 callback
+		METHOD method_1_7433 transmittance (Ljava/util/function/Consumer;)Lnet/minecraft/class_1_1165$class_1_1166;
+			ARG 1 callback
+		METHOD method_1_7434 noDepth ()Lnet/minecraft/class_1_1165$class_1_1166;

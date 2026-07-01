@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_1_1182 net/minecraft/world/gen/feature/SingleBlockPillarFeature
+	METHOD <init> (Lnet/minecraft/class_4651;Lnet/minecraft/class_6646;Lnet/minecraft/class_2350;F)V
+		ARG 1 block
+		ARG 2 canReplace
+		ARG 3 direction
+		ARG 4 chanceToContinue
+	METHOD method_1_7568 (Lnet/minecraft/class_5281;Lnet/minecraft/class_2794;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338$class_2339;Lnet/minecraft/class_6880;)V
+		ARG 4 capFeature
+	METHOD method_1_7569 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

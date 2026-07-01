@@ -1,6 +1,18 @@
 CLASS net/minecraft/class_6643 net/minecraft/world/gen/carver/CarvingMask
+	FIELD field_1_7987 height I
+	FIELD field_1_7988 topY I
 	FIELD field_35049 bottomY I
 	FIELD field_35050 mask Ljava/util/BitSet;
+	METHOD <init> (II)V
+		ARG 1 bottomY
+		ARG 2 topY
+	METHOD method_1_7353 isEmpty ()Z
+	METHOD method_1_7354 carve (Lnet/minecraft/class_6643$class_1_1154;)V
+		ARG 1 filler
+	METHOD method_1_7355 carve (Lnet/minecraft/class_6643$class_1_1154;II)V
+		ARG 1 filler
+		ARG 2 from
+		ARG 3 to
 	METHOD method_38865 (III)V
 		ARG 1 offsetX
 		ARG 2 y
@@ -9,6 +21,12 @@ CLASS net/minecraft/class_6643 net/minecraft/world/gen/carver/CarvingMask
 		ARG 1 offsetX
 		ARG 2 y
 		ARG 3 offsetZ
+	CLASS class_1_1154 Filler
+		METHOD method_1_7356 fill (IIII)V
+			ARG 1 offsetX
+			ARG 2 offsetZ
+			ARG 3 yStart
+			ARG 4 yEnd
 	CLASS class_6828 MaskPredicate
 		METHOD method_1_117 test (III)Z
 			ARG 1 offsetX

@@ -4,6 +4,7 @@ CLASS net/minecraft/class_11228 net/minecraft/client/gui/render/GuiRenderer
 	FIELD field_1_2265 panoramaRenderer Lnet/minecraft/class_751;
 	FIELD field_1_5670 simpleElementMultiBuffer Lnet/minecraft/class_1_807$class_1_808;
 	FIELD field_1_5671 guiVertexBuffer Lnet/minecraft/class_1_807;
+	FIELD field_59904 ZERO_COLOR Lorg/joml/Vector4fc;
 	FIELD field_59905 LOGGER Lorg/slf4j/Logger;
 	FIELD field_59906 FAR_OFFSET_FROM_NEAR F
 	FIELD field_59907 NEAR_DISTANCE F

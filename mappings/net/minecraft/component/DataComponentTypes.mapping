@@ -40,6 +40,10 @@ CLASS net/minecraft/class_9334 net/minecraft/component/DataComponentTypes
 		ARG 0 builder
 	METHOD method_1_4236 (Lnet/minecraft/class_9331$class_9332;)Lnet/minecraft/class_9331$class_9332;
 		ARG 0 builder
+	METHOD method_1_6622 (Lnet/minecraft/class_9331$class_9332;)Lnet/minecraft/class_9331$class_9332;
+		ARG 0 builder
+	METHOD method_1_7352 (Lnet/minecraft/class_9331$class_9332;)Lnet/minecraft/class_9331$class_9332;
+		ARG 0 builder
 	METHOD method_57884 (Lnet/minecraft/class_9331$class_9332;)Lnet/minecraft/class_9331$class_9332;
 		ARG 0 builder
 	METHOD method_57885 (Lnet/minecraft/class_9331$class_9332;)Lnet/minecraft/class_9331$class_9332;

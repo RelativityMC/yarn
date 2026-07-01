@@ -1,10 +1,22 @@
 CLASS net/minecraft/class_5870 net/minecraft/world/gen/carver/RavineCarver
+	METHOD method_1_7541 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_7542 (Lnet/minecraft/class_5870;)Ljava/lang/Float;
+		ARG 0 carver
+	METHOD method_1_7543 (Lnet/minecraft/class_5870;)Lnet/minecraft/class_6122;
+		ARG 0 carver
+	METHOD method_1_7544 (Lnet/minecraft/class_5870;)Lnet/minecraft/class_5863;
+		ARG 0 carver
+	METHOD method_1_7545 (Lnet/minecraft/class_5870;)Lnet/minecraft/class_5870$class_1_1181;
+		ARG 0 carver
 	METHOD method_33960 getVerticalScale (Lnet/minecraft/class_5819;DFF)D
 		ARG 1 random
 		ARG 2 pitch
 		ARG 4 branchCount
 		ARG 5 branchIndex
 	METHOD method_33961 carveRavine (Lnet/minecraft/class_5868;Lnet/minecraft/class_1923;JDDDFFFIIDLnet/minecraft/class_1_1155;)V
+		ARG 1 heightContext
+		ARG 2 chunkPos
 		ARG 3 seed
 		ARG 5 x
 		ARG 7 y
@@ -15,7 +27,9 @@ CLASS net/minecraft/class_5870 net/minecraft/world/gen/carver/RavineCarver
 		ARG 14 branchStartIndex
 		ARG 15 branchCount
 		ARG 16 yawPitchRatio
+		ARG 18 carvingMask
 	METHOD method_33964 isPositionExcluded (Lnet/minecraft/class_5868;[FDDDI)Z
+		ARG 1 heightContext
 		ARG 2 horizontalStretchFactors
 		ARG 3 scaledRelativeX
 		ARG 5 scaledRelativeY
@@ -27,4 +41,22 @@ CLASS net/minecraft/class_5870 net/minecraft/world/gen/carver/RavineCarver
 		ARG 7 scaledRelativeZ
 		ARG 9 yx
 	METHOD method_33966 createHorizontalStretchFactors (Lnet/minecraft/class_5868;Lnet/minecraft/class_5819;)[F
+		ARG 1 heightContext
 		ARG 2 random
+	CLASS class_1_1181 Shape
+		METHOD method_1_7546 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+		METHOD method_1_7547 (Lnet/minecraft/class_5870$class_1_1181;)Lnet/minecraft/class_5863;
+			ARG 0 shape
+		METHOD method_1_7548 (Lnet/minecraft/class_5870$class_1_1181;)Lnet/minecraft/class_5863;
+			ARG 0 shape
+		METHOD method_1_7549 (Lnet/minecraft/class_5870$class_1_1181;)Ljava/lang/Integer;
+			ARG 0 shape
+		METHOD method_1_7550 (Lnet/minecraft/class_5870$class_1_1181;)Lnet/minecraft/class_5863;
+			ARG 0 shape
+		METHOD method_1_7551 (Lnet/minecraft/class_5870$class_1_1181;)Ljava/lang/Float;
+			ARG 0 shape
+		METHOD method_1_7552 (Lnet/minecraft/class_5870$class_1_1181;)Ljava/lang/Float;
+			ARG 0 shape
+		METHOD method_1_7553 (Lnet/minecraft/class_5870$class_1_1181;)Lnet/minecraft/class_5863;
+			ARG 0 shape

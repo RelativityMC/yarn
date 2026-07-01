@@ -1076,6 +1076,12 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		METHOD method_1_5241 getWeakRedstonePower (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)I
 			ARG 1 world
 			ARG 2 pos
+		METHOD method_1_7487 copyPropertyToState (Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;Lnet/minecraft/class_2769;)Lnet/minecraft/class_2680;
+			ARG 0 source
+			ARG 1 dest
+			ARG 2 property
+		METHOD method_1_7488 withPropertiesFrom (Lnet/minecraft/class_2680;)Lnet/minecraft/class_2680;
+			ARG 1 source
 		METHOD method_26165 calcBlockBreakingDelta (Lnet/minecraft/class_1657;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)F
 			ARG 1 player
 			ARG 2 world

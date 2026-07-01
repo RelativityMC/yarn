@@ -1,5 +1,17 @@
 CLASS net/minecraft/class_2939 net/minecraft/world/gen/carver/Carver
+	FIELD field_1_8201 REGISTRY_ENTRY_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_8202 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_8203 REGISTRY_ENTRY_LIST_CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_1_7491 getCodec ()Lcom/mojang/serialization/MapCodec;
 	METHOD method_12710 getBranchFactor ()I
+	METHOD method_33959 passesProbabilityCheck (Lnet/minecraft/class_5819;)Z
+		ARG 1 random
+	METHOD method_33962 carve (Lnet/minecraft/class_5868;Lnet/minecraft/class_5819;Lnet/minecraft/class_1923;Lnet/minecraft/class_1923;Lnet/minecraft/class_1_1155;)Z
+		ARG 1 heightContext
+		ARG 2 random
+		ARG 3 chunkPos
+		ARG 4 originChunkPos
+		ARG 5 carvingMask
 	METHOD method_33976 canCarveBranch (Lnet/minecraft/class_1923;DDIIF)Z
 		ARG 0 pos
 		ARG 1 x
@@ -8,11 +20,13 @@ CLASS net/minecraft/class_2939 net/minecraft/world/gen/carver/Carver
 		ARG 6 branchCount
 		ARG 7 baseWidth
 	METHOD method_33978 carveRegion (Lnet/minecraft/class_1923;DDDDDLnet/minecraft/class_1_1155;Lnet/minecraft/class_2939$class_5874;)V
+		ARG 0 chunkPos
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
 		ARG 7 width
 		ARG 9 height
+		ARG 11 carvingMask
 		ARG 12 skipPredicate
 	CLASS class_5874 SkipPredicate
 		METHOD method_1_255 shouldSkip (DDDI)Z

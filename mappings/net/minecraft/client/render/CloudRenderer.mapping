@@ -11,10 +11,20 @@ CLASS net/minecraft/class_9955 net/minecraft/client/render/CloudRenderer
 	FIELD field_60074 cloudFacesBuffer Lnet/minecraft/class_11285;
 	FIELD field_60081 UBO_SIZE I
 	FIELD field_60792 instanceCount I
+	METHOD method_1_7334 draw (Lcom/mojang/blaze3d/systems/RenderPass;Lcom/mojang/blaze3d/pipeline/RenderPipeline;)V
+		ARG 1 renderPass
+		ARG 2 pipeline
+	METHOD method_1_7335 draw (Lnet/minecraft/class_4063;Lcom/mojang/blaze3d/systems/RenderPass;)V
+		ARG 1 cloudRenderMode
+		ARG 2 renderPass
+	METHOD method_1_7336 drawOit (Lnet/minecraft/class_4063;Lnet/minecraft/class_1_1153;Lnet/minecraft/class_1_1174$class_1_1175;)V
+		ARG 1 cloudRenderMode
+		ARG 2 oitStage
+		ARG 3 textureSet
 	METHOD method_62166 scheduleTerrainUpdate ()V
 	METHOD method_62167 isEmpty (I)Z
 		ARG 0 color
-	METHOD method_62168 renderClouds (ILnet/minecraft/class_4063;FILnet/minecraft/class_243;JF)V
+	METHOD method_62168 prepare (ILnet/minecraft/class_4063;FILnet/minecraft/class_243;JF)V
 		ARG 1 color
 		ARG 2 cloudRenderMode
 		ARG 3 cloudHeight
@@ -29,15 +39,18 @@ CLASS net/minecraft/class_9955 net/minecraft/client/render/CloudRenderer
 		ARG 3 borderSouth
 		ARG 4 borderWest
 	METHOD method_62172 buildCloudCellFast (Ljava/nio/ByteBuffer;II)V
+		ARG 1 dataOut
 		ARG 2 x
 		ARG 3 z
 	METHOD method_62174 buildCloudCellFancy (Lnet/minecraft/class_9955$class_9956;Ljava/nio/ByteBuffer;IIJ)V
 		ARG 1 viewMode
+		ARG 2 dataOut
 		ARG 3 x
 		ARG 4 z
 		ARG 5 packedCell
 	METHOD method_62175 buildCloudCells (Lnet/minecraft/class_9955$class_9956;Ljava/nio/ByteBuffer;IIZI)V
 		ARG 1 viewMode
+		ARG 2 dataOut
 		ARG 3 x
 		ARG 4 z
 		ARG 5 fancy
@@ -51,6 +64,7 @@ CLASS net/minecraft/class_9955 net/minecraft/client/render/CloudRenderer
 	METHOD method_62181 hasBorderWest (J)Z
 		ARG 0 packed
 	METHOD method_71098 buildCloudFace (Ljava/nio/ByteBuffer;IILnet/minecraft/class_2350;I)V
+		ARG 1 dataOut
 		ARG 2 x
 		ARG 3 z
 		ARG 4 direction
@@ -60,6 +74,7 @@ CLASS net/minecraft/class_9955 net/minecraft/client/render/CloudRenderer
 		ARG 0 cloudRange
 	METHOD method_72155 buildCloudCell (Lnet/minecraft/class_9955$class_9956;Ljava/nio/ByteBuffer;IIZIIII[J)V
 		ARG 1 viewMode
+		ARG 2 dataOut
 		ARG 3 centerX
 		ARG 4 centerZ
 		ARG 5 fancy

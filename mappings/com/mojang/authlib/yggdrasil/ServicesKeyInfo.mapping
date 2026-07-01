@@ -1,2 +1,0 @@
-CLASS net/minecraft/class_1_1155 com/mojang/authlib/yggdrasil/ServicesKeyInfo
-	METHOD method_38865 set (III)V

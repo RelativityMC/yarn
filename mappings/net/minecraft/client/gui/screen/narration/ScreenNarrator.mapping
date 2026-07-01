@@ -7,6 +7,7 @@ CLASS net/minecraft/class_6385 net/minecraft/client/gui/screen/narration/ScreenN
 		COMMENT {@link NarrationMessageBuilder}.
 		ARG 1 builderConsumer
 			COMMENT a consumer that adds the narrations to a {@link NarrationMessageBuilder}
+		ARG 2 trigger
 	METHOD method_37045 buildNarratorText (Z)Ljava/lang/String;
 		COMMENT Builds a text representation of the narrations produced by the last call to
 		COMMENT {@link #buildNarrations buildNarrations}.
@@ -45,8 +46,10 @@ CLASS net/minecraft/class_6385 net/minecraft/client/gui/screen/narration/ScreenN
 			ARG 1 index
 			ARG 2 narration
 	CLASS class_6388 MessageBuilder
+		FIELD field_1_8224 trigger Lnet/minecraft/class_1_1171;
 		FIELD field_33807 depth I
 		METHOD <init> (Lnet/minecraft/class_6385;ILnet/minecraft/class_1_1171;)V
 			ARG 2 depth
+			ARG 3 trigger
 		METHOD method_37050 (Lnet/minecraft/class_6385$class_6386;)Lnet/minecraft/class_6385$class_6387;
 			ARG 0 partIndex

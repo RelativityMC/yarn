@@ -1,5 +1,22 @@
 CLASS net/minecraft/class_290 net/minecraft/client/render/VertexFormats
 	COMMENT Holding vertex formats and vertex format elements.
+	FIELD field_1_6306 COLOR_FORMAT Lnet/minecraft/class_1_658;
+	FIELD field_1_6307 COLOR_KEY Ljava/lang/String;
+	FIELD field_1_6308 LINE_WIDTH_FORMAT Lnet/minecraft/class_1_658;
+	FIELD field_1_6309 LINE_WIDTH_KEY Ljava/lang/String;
+	FIELD field_1_6310 NORMAL_FORMAT Lnet/minecraft/class_1_658;
+	FIELD field_1_6311 NORMAL_KEY Ljava/lang/String;
+	FIELD field_1_6312 POSITION_FORMAT Lnet/minecraft/class_1_658;
+	FIELD field_1_6313 POSITION_KEY Ljava/lang/String;
+	FIELD field_1_6314 UV0_FORMAT Lnet/minecraft/class_1_658;
+	FIELD field_1_6315 UV0_KEY Ljava/lang/String;
+	FIELD field_1_6316 UV1_FORMAT Lnet/minecraft/class_1_658;
+	FIELD field_1_6317 UV1_KEY Ljava/lang/String;
+	FIELD field_1_6318 UV2_FORMAT Lnet/minecraft/class_1_658;
+	FIELD field_1_6319 UV2_KEY Ljava/lang/String;
+	FIELD field_1_7989 POSITION_COLOR_TEXTURE_OVERLAY_LIGHT_UV3_NORMAL Lcom/mojang/blaze3d/vertex/VertexFormat;
+	FIELD field_1_7990 UV3_FORMAT Lnet/minecraft/class_1_658;
+	FIELD field_1_7991 UV3_KEY Ljava/lang/String;
 	FIELD field_1575 POSITION_TEXTURE_COLOR Lcom/mojang/blaze3d/vertex/VertexFormat;
 	FIELD field_1576 POSITION_COLOR Lcom/mojang/blaze3d/vertex/VertexFormat;
 	FIELD field_1577 POSITION_TEXTURE_COLOR_NORMAL Lcom/mojang/blaze3d/vertex/VertexFormat;

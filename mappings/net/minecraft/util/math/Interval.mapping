@@ -1,0 +1,91 @@
+CLASS net/minecraft/class_1_1150 net/minecraft/util/math/Interval
+	FIELD field_1_7942 UNBOUNDED Lnet/minecraft/class_1_1150;
+	FIELD field_1_7943 NEGATIVE_ONE_TO_ONE Lnet/minecraft/class_1_1150;
+	FIELD field_1_7944 NaI Lnet/minecraft/class_1_1150;
+	FIELD field_1_7945 ZERO_TO_ONE Lnet/minecraft/class_1_1150;
+	FIELD field_1_7946 max D
+	FIELD field_1_7947 min D
+	METHOD <init> (DD)V
+		ARG 1 min
+		ARG 3 max
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other
+	METHOD method_1_7265 abs (Lnet/minecraft/class_1_1150;)Lnet/minecraft/class_1_1150;
+		ARG 0 interval
+	METHOD method_1_7266 add (Lnet/minecraft/class_1_1150;Lnet/minecraft/class_1_1150;)Lnet/minecraft/class_1_1150;
+		ARG 0 first
+		ARG 1 second
+	METHOD method_1_7267 restrict (Lnet/minecraft/class_1_1150;DD)Lnet/minecraft/class_1_1150;
+		ARG 0 interval
+		ARG 1 min
+		ARG 3 max
+	METHOD method_1_7268 contains (D)Z
+		ARG 1 value
+	METHOD method_1_7269 divide (Lnet/minecraft/class_1_1150;Lnet/minecraft/class_1_1150;)Lnet/minecraft/class_1_1150;
+		ARG 0 dividend
+		ARG 1 divisor
+	METHOD method_1_7270 containing (DD)Lnet/minecraft/class_1_1150;
+		ARG 0 min
+		ARG 2 max
+	METHOD method_1_7271 union (Ljava/util/List;)Lnet/minecraft/class_1_1150;
+		ARG 0 intervals
+	METHOD method_1_7272 union ([Lnet/minecraft/class_1_1150;)Lnet/minecraft/class_1_1150;
+		ARG 0 intervals
+	METHOD method_1_7273 intersects (Lnet/minecraft/class_1_1150;)Z
+		ARG 1 other
+	METHOD method_1_7274 reciprocal (Lnet/minecraft/class_1_1150;)Lnet/minecraft/class_1_1150;
+		ARG 0 interval
+	METHOD method_1_7275 isNaI ()Z
+	METHOD method_1_7276 lerp (Lnet/minecraft/class_1_1150;DD)Lnet/minecraft/class_1_1150;
+		ARG 0 interval
+		ARG 1 min
+		ARG 3 max
+	METHOD method_1_7277 lerp (Lnet/minecraft/class_1_1150;Lnet/minecraft/class_1_1150;Lnet/minecraft/class_1_1150;)Lnet/minecraft/class_1_1150;
+		ARG 0 interval
+		ARG 1 min
+		ARG 2 max
+	METHOD method_1_7278 lerpFinite (DDD)D
+		ARG 0 t
+		ARG 2 min
+		ARG 4 max
+	METHOD method_1_7279 lerpFinite (Lnet/minecraft/class_1_1150;DD)Lnet/minecraft/class_1_1150;
+		ARG 0 interval
+		ARG 1 min
+		ARG 3 max
+	METHOD method_1_7280 lerpInfinite (DDD)D
+		ARG 0 t
+		ARG 2 min
+		ARG 4 max
+	METHOD method_1_7281 lerpInfinite (Lnet/minecraft/class_1_1150;DD)Lnet/minecraft/class_1_1150;
+		ARG 0 interval
+		ARG 1 min
+		ARG 3 max
+	METHOD method_1_7282 applyMonotonicFunction (Lnet/minecraft/class_1_1150;Ljava/util/function/DoubleUnaryOperator;)Lnet/minecraft/class_1_1150;
+		ARG 0 interval
+		ARG 1 func
+	METHOD method_1_7283 getMax ()D
+	METHOD method_1_7284 max (Lnet/minecraft/class_1_1150;Lnet/minecraft/class_1_1150;)Lnet/minecraft/class_1_1150;
+		ARG 0 first
+		ARG 1 second
+	METHOD method_1_7285 getMin ()D
+	METHOD method_1_7286 min (Lnet/minecraft/class_1_1150;Lnet/minecraft/class_1_1150;)Lnet/minecraft/class_1_1150;
+		ARG 0 first
+		ARG 1 second
+	METHOD method_1_7287 multiply (Lnet/minecraft/class_1_1150;Lnet/minecraft/class_1_1150;)Lnet/minecraft/class_1_1150;
+		ARG 0 first
+		ARG 1 second
+	METHOD method_1_7288 multiply (DD)D
+		ARG 0 a
+		ARG 2 b
+	METHOD method_1_7289 between (DD)Lnet/minecraft/class_1_1150;
+		ARG 0 min
+		ARG 2 max
+	METHOD method_1_7290 exact (D)Lnet/minecraft/class_1_1150;
+		ARG 0 value
+	METHOD method_1_7291 signed (D)Lnet/minecraft/class_1_1150;
+		ARG 0 maxAbsValue
+	METHOD method_1_7292 square (Lnet/minecraft/class_1_1150;)Lnet/minecraft/class_1_1150;
+		ARG 0 interval
+	METHOD method_1_7293 subtract (Lnet/minecraft/class_1_1150;Lnet/minecraft/class_1_1150;)Lnet/minecraft/class_1_1150;
+		ARG 0 first
+		ARG 1 second

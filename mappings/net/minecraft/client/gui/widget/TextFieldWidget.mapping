@@ -46,6 +46,9 @@ CLASS net/minecraft/class_342 net/minecraft/client/gui/widget/TextFieldWidget
 		ARG 2 width
 		ARG 3 height
 		ARG 4 text
+	METHOD <init> (Lnet/minecraft/class_327;Lnet/minecraft/class_2561;)V
+		ARG 1 textRenderer
+		ARG 2 text
 	METHOD method_1851 drawsBackground ()Z
 	METHOD method_1852 setText (Ljava/lang/String;)V
 		ARG 1 text

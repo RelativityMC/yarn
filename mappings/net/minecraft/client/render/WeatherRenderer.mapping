@@ -1,6 +1,12 @@
 CLASS net/minecraft/class_9976 net/minecraft/client/render/WeatherRenderer
 	FIELD field_1_1035 INDICES_PER_PIECE I
 	FIELD field_1_5784 vertexBuffer Lcom/mojang/blaze3d/buffers/GpuBuffer;
+	FIELD field_1_8175 gameRenderer Lnet/minecraft/class_757;
+	FIELD field_1_8176 indexCount I
+	FIELD field_1_8177 drawMode Lnet/minecraft/class_5596;
+	FIELD field_1_8178 rainTexture Lnet/minecraft/class_1044;
+	FIELD field_1_8179 snowTexture Lnet/minecraft/class_1044;
+	FIELD field_1_8180 textureManager Lnet/minecraft/class_1060;
 	FIELD field_53150 RAIN_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_53151 SNOW_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_53152 NORMAL_TABLE_DIMENSION I
@@ -15,8 +21,24 @@ CLASS net/minecraft/class_9976 net/minecraft/client/render/WeatherRenderer
 	METHOD method_1_1041 issueDraw (Lcom/mojang/blaze3d/systems/RenderPass;Lnet/minecraft/class_1044;II)V
 		ARG 1 renderPass
 		ARG 2 texture
+		ARG 3 index
+		ARG 4 count
 	METHOD method_1_4992 upload (Ljava/nio/ByteBuffer;)V
 		ARG 1 buffer
+	METHOD method_1_7458 prepare (Lnet/minecraft/class_243;Lnet/minecraft/class_12077;)V
+		ARG 1 cameraPos
+		ARG 2 state
+	METHOD method_1_7459 draw (Lnet/minecraft/class_12077;Lcom/mojang/blaze3d/systems/RenderPass;)V
+		ARG 1 state
+		ARG 2 renderPass
+	METHOD method_1_7460 draw (Lnet/minecraft/class_12077;Lcom/mojang/blaze3d/systems/RenderPass;Lcom/mojang/blaze3d/pipeline/RenderPipeline;)V
+		ARG 1 state
+		ARG 2 renderPass
+		ARG 3 pipeline
+	METHOD method_1_7461 drawOit (Lnet/minecraft/class_1_1153;Lnet/minecraft/class_12077;Lcom/mojang/blaze3d/systems/RenderPass;)V
+		ARG 1 oitStage
+		ARG 2 state
+		ARG 3 renderPass
 	METHOD method_62314 createRainPiece (Lnet/minecraft/class_5819;JIIIIIF)Lnet/minecraft/class_9976$class_9977;
 		ARG 1 random
 		ARG 2 time

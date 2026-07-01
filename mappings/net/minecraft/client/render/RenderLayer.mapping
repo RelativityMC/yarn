@@ -21,9 +21,11 @@ CLASS net/minecraft/class_1921 net/minecraft/client/render/RenderLayer
 	METHOD method_1_5226 getDrawSpec ()Lnet/minecraft/class_1_870;
 	METHOD method_1_5227 setModelViewMatrix (Lorg/joml/Matrix4f;)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
 		ARG 1 matrix
+	METHOD method_1_7462 hasCrumbling ()Z
+	METHOD method_1_7463 shouldUseOit ()Z
 	METHOD method_23031 getVertexFormat ()Lcom/mojang/blaze3d/vertex/VertexFormat;
 	METHOD method_23033 getDrawMode ()Lnet/minecraft/class_5596;
-	METHOD method_23037 hasCrumbling ()Z
+	METHOD method_23037 isOpaque ()Z
 	METHOD method_23289 getAffectedOutline ()Ljava/util/Optional;
 	METHOD method_24295 isOutline ()Z
 	METHOD method_43332 areVerticesNotShared ()Z

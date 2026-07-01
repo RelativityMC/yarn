@@ -18,3 +18,9 @@ CLASS net/minecraft/class_1_804 net/minecraft/client/render/BindGroupLayouts
 	FIELD field_1_5706 SAMPLER_2 Lnet/minecraft/class_1_794;
 	FIELD field_1_5707 SPRITE Lnet/minecraft/class_1_794;
 	FIELD field_1_5708 SPRITE_ANIMATION_INFO Lnet/minecraft/class_1_794;
+	FIELD field_1_8121 CLOUD_OIT Lnet/minecraft/class_1_794;
+	FIELD field_1_8122 DEPTH_BOUNDS_SAMPLER Lnet/minecraft/class_1_794;
+	FIELD field_1_8123 GLINT_SAMPLER Lnet/minecraft/class_1_794;
+	FIELD field_1_8124 DEPTH_BOUNDS_SAMPLER_OIT Lnet/minecraft/class_1_794;
+	FIELD field_1_8125 SAMPLER_0_OIT Lnet/minecraft/class_1_794;
+	FIELD field_1_8126 SAMPLER_02_WOIT Lnet/minecraft/class_1_794;

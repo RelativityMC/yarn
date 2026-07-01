@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_1_1152 net/minecraft/client/render/CompiledRenderPipelineCache
+	FIELD field_1_7972 cache Ljava/util/Map;
+	FIELD field_1_7973 device Lcom/mojang/blaze3d/systems/GpuDevice;
+	FIELD field_1_7974 shaderSourceGetter Lnet/minecraft/class_12289;
+	METHOD <init> (Lcom/mojang/blaze3d/systems/GpuDevice;Lnet/minecraft/class_12289;)V
+		ARG 1 device
+		ARG 2 shaderSourceGetter
+	METHOD method_1_7318 clear ()V
+	METHOD method_1_7319 getCompiled (Lcom/mojang/blaze3d/pipeline/RenderPipeline;)Lcom/mojang/blaze3d/pipeline/CompiledRenderPipeline;
+		ARG 1 pipeline

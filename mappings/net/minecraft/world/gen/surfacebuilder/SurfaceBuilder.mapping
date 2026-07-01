@@ -61,6 +61,8 @@ CLASS net/minecraft/class_6724 net/minecraft/world/gen/surfacebuilder/SurfaceBui
 		ARG 3 state
 	METHOD method_39110 applyMaterialRule (Lnet/minecraft/class_6686$class_6708;Lnet/minecraft/class_7138;Lnet/minecraft/class_5868;Ljava/util/function/Function;Lnet/minecraft/class_2791;Lnet/minecraft/class_6568;Lnet/minecraft/class_2338;Z)Ljava/util/Optional;
 		ARG 1 rule
+		ARG 2 noiseConfig
+		ARG 3 heightContext
 		ARG 4 posToBiome
 		ARG 5 chunk
 		ARG 6 chunkNoiseSampler

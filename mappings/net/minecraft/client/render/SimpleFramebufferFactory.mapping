@@ -1,1 +1,3 @@
 CLASS net/minecraft/class_9923 net/minecraft/client/render/SimpleFramebufferFactory
+	CLASS class_1_1170 ClearValue
+		FIELD field_1_8161 ZERO Lnet/minecraft/class_9923$class_1_1170;

@@ -7,5 +7,11 @@ CLASS net/minecraft/class_1_849 net/minecraft/client/render/command/ParticleComm
 		ARG 1 geometryBuffers
 		ARG 2 renderPass
 		ARG 3 textureManager
+		ARG 4 oitStage
+	METHOD method_1_5349 (Lnet/minecraft/class_1_807;Lnet/minecraft/class_3940$class_11941;)Lnet/minecraft/class_1_807$class_1_808;
+		ARG 1 renderType
+	METHOD method_1_7564 getOitPipeline (Lnet/minecraft/class_1_1153;Lnet/minecraft/class_3940$class_11941;)Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+		ARG 0 oitStage
+		ARG 1 renderType
 	CLASS class_1_883 Group
 	CLASS class_1_884 Command

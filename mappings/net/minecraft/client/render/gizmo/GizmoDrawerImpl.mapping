@@ -6,6 +6,7 @@ CLASS net/minecraft/class_12160 net/minecraft/client/render/gizmo/GizmoDrawerImp
 		ARG 1 queue
 		ARG 2 cameraRenderState
 		ARG 3 onTop
+	METHOD method_1_7555 isEmpty ()Z
 	METHOD method_76660 getDivision (I)Lnet/minecraft/class_12160$class_12355;
 		ARG 1 color
 	CLASS class_12161 Line

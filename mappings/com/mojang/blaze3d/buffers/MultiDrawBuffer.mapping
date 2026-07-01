@@ -13,8 +13,10 @@ CLASS net/minecraft/class_1_807 com/mojang/blaze3d/buffers/MultiDrawBuffer
 		ARG 2 maxSize
 	METHOD method_1_4944 appendDraw (Lcom/mojang/blaze3d/vertex/VertexFormat;Lnet/minecraft/class_5596;)Lnet/minecraft/class_1_807$class_1_808;
 		ARG 1 vertexFormat
+		ARG 2 drawMode
 	METHOD method_1_4945 appendDraw (Lcom/mojang/blaze3d/vertex/VertexFormat;Lnet/minecraft/class_5596;Lnet/minecraft/class_8251;)Lnet/minecraft/class_1_807$class_1_808;
 		ARG 1 vertexFormat
+		ARG 2 drawMode
 		ARG 3 vertexSorter
 	METHOD method_1_4946 collectCentroids (Lnet/minecraft/class_1_807$class_1_808;)Lnet/minecraft/class_11899;
 		ARG 0 multiBuffer
@@ -33,6 +35,8 @@ CLASS net/minecraft/class_1_807 com/mojang/blaze3d/buffers/MultiDrawBuffer
 		ARG 4 indexBuffer
 		ARG 5 vertexOffset
 		ARG 6 indexOffset
+	METHOD method_1_7420 prepare (Lnet/minecraft/class_1_807$class_1_808;)V
+		ARG 1 multiBuffer
 	CLASS class_1_808 MultiBuffer
 		FIELD field_1_5748 vertexFormat Lcom/mojang/blaze3d/vertex/VertexFormat;
 		FIELD field_1_5749 totalIndexCount I
@@ -45,6 +49,7 @@ CLASS net/minecraft/class_1_807 com/mojang/blaze3d/buffers/MultiDrawBuffer
 		FIELD field_1_5756 vertexOffset I
 		METHOD <init> (Lcom/mojang/blaze3d/vertex/VertexFormat;Lnet/minecraft/class_5596;Lnet/minecraft/class_8251;)V
 			ARG 1 vertexFormat
+			ARG 2 drawMode
 			ARG 3 vertexSorter
 		METHOD method_1_4957 add (Lnet/minecraft/class_9801;)V
 			ARG 1 buffer
@@ -52,6 +57,7 @@ CLASS net/minecraft/class_1_807 com/mojang/blaze3d/buffers/MultiDrawBuffer
 		METHOD method_1_4959 getIndexType ()Lnet/minecraft/class_5595;
 		METHOD method_1_4960 isEmpty ()Z
 	CLASS class_1_809 DrawCall
+		METHOD method_1_7421 getIndexBuffer ()Lcom/mojang/blaze3d/buffers/GpuBuffer;
 	CLASS class_1_810 BufferPool
 		FIELD field_1_5757 BUFFER_ALIGNMENT I
 		FIELD field_1_5758 ALLOCATION_MAX_SIZE_FACTOR I

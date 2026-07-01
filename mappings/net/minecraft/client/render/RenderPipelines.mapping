@@ -14,6 +14,84 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_1_3654 TEXT_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
 	FIELD field_1_6422 GLOBALS_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
 	FIELD field_1_6423 TEXT_GRAYSCALE_POLYGON_OFFSET Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	FIELD field_1_7124 TERRAIN_ALPHA_CUTOUT F
+	FIELD field_1_7125 DEFAULT_ALPHA_CUTOUT F
+	FIELD field_1_7992 ARMOR_CUTOUT_NO_CULL_GLINT Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	FIELD field_1_7993 BREEZE_WIND_OPAQUE_PARTS Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	FIELD field_1_7994 CRUMBLING_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+	FIELD field_1_7995 DEBUG_POINT_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+	FIELD field_1_7996 LIGHTNING_TRIANGLES_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+	FIELD field_1_7997 ENERGY_SWIRL_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+	FIELD field_1_7998 ENTITY_SHADOW_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+	FIELD field_1_7999 ENTITY_LIGHTING_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+	FIELD field_1_8000 ENTITY_SOLID_GLINT Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	FIELD field_1_8001 ENTITY_TRANSLUCENT_CULL_OPAQUE_PARTS Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	FIELD field_1_8002 ENTITY_TRANSLUCENT_EMISSIVE_OPAQUE_PARTS Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	FIELD field_1_8003 ENTITY_TRANSLUCENT_OPAQUE_PARTS Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	FIELD field_1_8004 EYES_OPAQUE_PARTS Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	FIELD field_1_8005 EYES_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+	FIELD field_1_8006 GLINT_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+	FIELD field_1_8007 SPECIAL_GLINT_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+	FIELD field_1_8008 ITEM_CUTOUT_GLINT Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	FIELD field_1_8009 ITEM_CUTOUT_GLINT_SPECIAL Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	FIELD field_1_8010 ITEM_TRANSLUCENT_GLINT Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	FIELD field_1_8011 ITEM_TRANSLUCENT_GLINT_OPAQUE_PARTS Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	FIELD field_1_8012 ITEM_TRANSLUCENT_GLINT_SPECIAL Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	FIELD field_1_8013 ITEM_TRANSLUCENT_GLINT_SPECIAL_OPAQUE_PARTS Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	FIELD field_1_8014 ITEM_TRANSLUCENT_OPAQUE_PARTS Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	FIELD field_1_8015 LIGHTNING_QUADS_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+	FIELD field_1_8016 FOG_AND_SAMPLERS_02_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+	FIELD field_1_8017 ACCUMULATE_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+	FIELD field_1_8018 OIT_BEACON_BEAM Lnet/minecraft/class_1_1165;
+	FIELD field_1_8019 OIT_BREEZE_WIND Lnet/minecraft/class_1_1165;
+	FIELD field_1_8020 OIT_CLOUDS Lnet/minecraft/class_1_1165;
+	FIELD field_1_8021 CLOUDS_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+	FIELD field_1_8022 OIT_COMPOSITE Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	FIELD field_1_8023 OIT_CRUMBLING Lnet/minecraft/class_1_1165;
+	FIELD field_1_8024 OIT_DEBUG_FILLED_BOX Lnet/minecraft/class_1_1165;
+	FIELD field_1_8025 DEBUG_LINES_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+	FIELD field_1_8026 OIT_DEBUG_POINTS Lnet/minecraft/class_1_1165;
+	FIELD field_1_8027 OIT_DEBUG_QUADS Lnet/minecraft/class_1_1165;
+	FIELD field_1_8028 OIT_DEBUG_TRIANGLE_FAN Lnet/minecraft/class_1_1165;
+	FIELD field_1_8029 DEPTH_BOUNDS_SNIPPEt Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+	FIELD field_1_8030 OIT_DRAGON_RAYS Lnet/minecraft/class_1_1165;
+	FIELD field_1_8031 ENERGY_SWIRL Lnet/minecraft/class_1_1165;
+	FIELD field_1_8032 OIT_ENTITY Lnet/minecraft/class_1_1165;
+	FIELD field_1_8033 OIT_ENTITY_CULL Lnet/minecraft/class_1_1165;
+	FIELD field_1_8034 OIT_ENTITY_EMISSIVE Lnet/minecraft/class_1_1165;
+	FIELD field_1_8035 OIT_ENTITY_SHADOW Lnet/minecraft/class_1_1165;
+	FIELD field_1_8036 ENTITY_ALPHA_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+	FIELD field_1_8037 OIT_EYES Lnet/minecraft/class_1_1165;
+	FIELD field_1_8038 OIT_FLAT_CLOUDS Lnet/minecraft/class_1_1165;
+	FIELD field_1_8039 OIT_ITEM Lnet/minecraft/class_1_1165;
+	FIELD field_1_8040 OIT_ITEM_GLINT Lnet/minecraft/class_1_1165;
+	FIELD field_1_8041 OIT_ITEM_GLINT_SPECIAL Lnet/minecraft/class_1_1165;
+	FIELD field_1_8042 ITEM_ALPHA_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+	FIELD field_1_8043 OIT_LIGHTNING Lnet/minecraft/class_1_1165;
+	FIELD field_1_8044 LINES_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+	FIELD field_1_8045 OIT_LINES_TRANSLUCENT Lnet/minecraft/class_1_1165;
+	FIELD field_1_8046 OIT_OPAQUE_PARTS_THRESHOLD_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+	FIELD field_1_8047 OIT_PARTICLE Lnet/minecraft/class_1_1165;
+	FIELD field_1_8048 DYNAMIC_TRANSFORM_PARTICLE_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+	FIELD field_1_8049 OIT_SECONDARY_BLOCK_OUTLINE Lnet/minecraft/class_1_1165;
+	FIELD field_1_8050 OIT_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+	FIELD field_1_8051 OIT_TERRAIN Lnet/minecraft/class_1_1165;
+	FIELD field_1_8052 OIT_TEXT Lnet/minecraft/class_1_1165;
+	FIELD field_1_8053 OIT_TEXT_BACKGROUND Lnet/minecraft/class_1_1165;
+	FIELD field_1_8054 OIT_TEXT_BACKGROUND_SEE_THROUGH Lnet/minecraft/class_1_1165;
+	FIELD field_1_8055 OIT_TEXT_GRAYSCALE Lnet/minecraft/class_1_1165;
+	FIELD field_1_8056 OIT_TEXT_GRAYSCALE_POLYGON_OFFSET Lnet/minecraft/class_1_1165;
+	FIELD field_1_8057 OIT_TEXT_GRAYSCALE_SEE_THROUGH Lnet/minecraft/class_1_1165;
+	FIELD field_1_8058 OIT_TEXT_POLYGON_OFFSET Lnet/minecraft/class_1_1165;
+	FIELD field_1_8059 OIT_TEXT_SEE_THROUGH Lnet/minecraft/class_1_1165;
+	FIELD field_1_8060 OIT_TRANSLUCENT_BLOCK Lnet/minecraft/class_1_1165;
+	FIELD field_1_8061 TRANSMITTANCE_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+	FIELD field_1_8062 OIT_WATER_MASK Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	FIELD field_1_8063 OIT_WEATHER Lnet/minecraft/class_1_1165;
+	FIELD field_1_8064 OIT_WORLD_BORDER Lnet/minecraft/class_1_1165;
+	FIELD field_1_8065 TEXT_BACKGROUND_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+	FIELD field_1_8066 WATER_MASK_SNIPPET Lcom/mojang/blaze3d/pipeline/RenderPipeline$Snippet;
+	FIELD field_1_8067 WEATHER Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56812 BEACON_BEAM_TRANSLUCENT Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56814 RENDERTYPE_LEASH Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56815 RENDERTYPE_WATER_MASK Lcom/mojang/blaze3d/pipeline/RenderPipeline;
@@ -87,7 +165,7 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_56910 BREEZE_WIND Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56911 ENTITY_ENERGY_SWIRL Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56912 ENTITY_EYES Lcom/mojang/blaze3d/pipeline/RenderPipeline;
-	FIELD field_56914 RENDERTYPE_ENTITY_SHADOW Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	FIELD field_56914 ENTITY_SHADOW Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_56916 BEACON_BEAM_OPAQUE Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_57928 TRACY_BLIT Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_57929 WIREFRAME Lcom/mojang/blaze3d/pipeline/RenderPipeline;
@@ -109,6 +187,26 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_64226 CUTOUT_BLOCK Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_64227 CUTOUT_TERRAIN Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 	FIELD field_64567 LINES_TRANSLUCENT Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	METHOD method_1_7361 (Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;)V
+		ARG 0 builder
+	METHOD method_1_7362 (Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;)V
+		ARG 0 builder
+	METHOD method_1_7363 (Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;)V
+		ARG 0 builder
+	METHOD method_1_7364 (Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;)V
+		ARG 0 builder
+	METHOD method_1_7365 (Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;)V
+		ARG 0 builder
+	METHOD method_1_7366 (Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;)V
+		ARG 0 builder
+	METHOD method_1_7367 (Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;)V
+		ARG 0 builder
+	METHOD method_1_7368 (Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;)V
+		ARG 0 builder
+	METHOD method_1_7369 (Lcom/mojang/blaze3d/pipeline/RenderPipeline$Builder;)V
+		ARG 0 builder
+	METHOD method_1_7370 register (Lnet/minecraft/class_1_1165;)Lnet/minecraft/class_1_1165;
+		ARG 0 oitPipelineSet
 	METHOD method_67886 getAll ()Ljava/util/List;
 	METHOD method_67887 register (Lcom/mojang/blaze3d/pipeline/RenderPipeline;)Lcom/mojang/blaze3d/pipeline/RenderPipeline;
 		ARG 0 pipeline

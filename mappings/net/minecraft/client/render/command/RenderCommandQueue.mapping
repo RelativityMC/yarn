@@ -1,5 +1,9 @@
 CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderCommandQueue
 	METHOD method_1_3047 submitFallingBlock (Lnet/minecraft/class_4587;Ljava/util/List;IZ)V
+		ARG 1 matrices
+		ARG 2 modelParts
+		ARG 3 breakProgress
+		ARG 4 translucent
 	METHOD method_1_3048 submitModel (Lnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_4587;IIILnet/minecraft/class_1_310;Lnet/minecraft/class_11701;I)V
 		ARG 1 model
 		ARG 2 state
@@ -26,6 +30,25 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 3 onTop
 	METHOD method_1_5141 submitBillboardParticle (Lnet/minecraft/class_11944;)V
 		ARG 1 billboardParticle
+	METHOD method_1_7504 (Lnet/minecraft/class_1921;Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+		ARG 1 texture
+	METHOD method_1_7505 submitModel (Lnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;IIILnet/minecraft/class_11683$class_11792;)V
+		ARG 1 model
+		ARG 2 state
+		ARG 3 matrices
+		ARG 4 renderLayer
+		ARG 5 light
+		ARG 6 overlay
+		ARG 7 color
+		ARG 8 crumblingOverlayCommand
+	METHOD method_1_7506 submitModel (Lnet/minecraft/class_630;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;IIILnet/minecraft/class_11683$class_11792;)V
+		ARG 1 modelPart
+		ARG 2 matrices
+		ARG 3 renderLayer
+		ARG 4 light
+		ARG 5 overlay
+		ARG 6 color
+		ARG 7 crumblingOverlayCommand
 	METHOD method_73478 submitText (Lnet/minecraft/class_4587;FFLnet/minecraft/class_5481;ZLnet/minecraft/class_327$class_6415;IIII)V
 		ARG 1 matrices
 		ARG 2 x
@@ -71,6 +94,9 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 6 overlayCoords
 		ARG 7 outlineColor
 	METHOD method_73485 submitMovingBlock (Lnet/minecraft/class_4587;Lnet/minecraft/class_11791;I)V
+		ARG 1 matrices
+		ARG 2 state
+		ARG 3 outlineColor
 	METHOD method_73486 submitLeash (Lnet/minecraft/class_4587;Lnet/minecraft/class_10017$class_10018;)V
 		ARG 1 matrices
 		ARG 2 leashData
@@ -87,18 +113,29 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 6 overlay
 		ARG 7 outlineColor
 	METHOD method_73490 submitModel (Lnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;IIILnet/minecraft/class_1_1060;I)V
+		ARG 1 model
+		ARG 2 state
+		ARG 3 matrices
+		ARG 4 renderLayer
+		ARG 5 light
+		ARG 6 overlay
+		ARG 7 color
+		ARG 8 textureRegion
+		ARG 9 outlineColor
 	METHOD method_73491 submitModelPart (Lnet/minecraft/class_630;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;IILnet/minecraft/class_1_1060;)V
 		ARG 1 part
 		ARG 2 matrices
 		ARG 3 renderLayer
 		ARG 4 light
 		ARG 5 overlay
+		ARG 6 region
 	METHOD method_73492 submitModelPart (Lnet/minecraft/class_630;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;IILnet/minecraft/class_1_1060;I)V
 		ARG 1 part
 		ARG 2 matrices
 		ARG 3 renderLayer
 		ARG 4 light
 		ARG 5 overlay
+		ARG 6 region
 		ARG 7 tintedColor
 	METHOD method_73493 submitModelPart (Lnet/minecraft/class_630;Lnet/minecraft/class_4587;Lnet/minecraft/class_1921;IILnet/minecraft/class_1_1060;II)V
 		ARG 1 modelPart
@@ -106,6 +143,7 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 3 renderLayer
 		ARG 4 light
 		ARG 5 overlay
+		ARG 6 region
 		ARG 7 tintedColor
 		ARG 8 outlineColor
 	METHOD method_73494 submitModelPart (Lnet/minecraft/class_4587;Lnet/minecraft/class_265;Lnet/minecraft/class_1921;IFZ)V

@@ -8,6 +8,8 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	FIELD field_1_5677 textureManager Lnet/minecraft/class_1060;
 	FIELD field_1_6301 ENTITY_OUTLINE_FRAMEBUFFER_CLEAR_COLOR Lorg/joml/Vector4fc;
 	FIELD field_1_6302 FRAMEBUFFER_CLEAR_COLOR Lorg/joml/Vector4fc;
+	FIELD field_1_7983 COEFF_COUNT I
+	FIELD field_1_7984 COEFF_ATTACHMENT_COUNT I
 	FIELD field_4109 entityRenderManager Lnet/minecraft/class_898;
 	FIELD field_4112 chunks Lnet/minecraft/class_769;
 	FIELD field_20951 bufferBuilders Lnet/minecraft/class_4599;
@@ -68,6 +70,27 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 2 queue
 		ARG 3 renderBlockOutline
 	METHOD method_1_6185 getLoadedChunkPositions ()Lit/unimi/dsi/fastutil/longs/LongCollection;
+	METHOD method_1_7337 getAccumulateFramebuffer ()Lnet/minecraft/class_276;
+	METHOD method_1_7338 drawTranslucentGeometry (Lnet/minecraft/class_11532;Lnet/minecraft/class_11684$class_1_875;Lcom/mojang/blaze3d/systems/RenderPass;)V
+		ARG 1 state
+		ARG 2 preparedFrame
+		ARG 3 renderPass
+	METHOD method_1_7339 drawOitTranslucentGeometry (Lnet/minecraft/class_11532;Lnet/minecraft/class_11684$class_1_875;)V
+		ARG 1 sectionRenderState
+		ARG 2 preparedFrame
+	METHOD method_1_7340 drawWaterMask (Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_276;)V
+		ARG 1 preparedFrame
+		ARG 2 mainFramebuffer
+	METHOD method_1_7341 drawOutlines (Lnet/minecraft/class_11684$class_1_875;)V
+		ARG 1 preparedFrame
+	METHOD method_1_7342 renderSolidGeometry (Lnet/minecraft/class_11532;Lnet/minecraft/class_11684$class_1_875;Lcom/mojang/blaze3d/systems/RenderPass;)V
+		ARG 1 sectionRenderState
+		ARG 2 preparedFrame
+		ARG 3 renderPass
+	METHOD method_1_7350 prepare (F)V
+		ARG 1 tickProgress
+	METHOD method_1_7351 getTransmittanceTargetFramebuffer (I)Lnet/minecraft/class_276;
+		ARG 1 index
 	METHOD method_3242 onResized (II)V
 		ARG 1 width
 		ARG 2 height
@@ -94,9 +117,9 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 7 afterTerrain
 	METHOD method_22979 checkEmpty (Lnet/minecraft/class_4587;)V
 		ARG 1 matrices
-	METHOD method_22990 getEntityOutlinesFramebuffer ()Lnet/minecraft/class_276;
-	METHOD method_29361 getEntityFramebuffer ()Lnet/minecraft/class_276;
-	METHOD method_29363 getWeatherFramebuffer ()Lnet/minecraft/class_276;
+	METHOD method_22990 getOutlineFramebuffer ()Lnet/minecraft/class_276;
+	METHOD method_29361 getDepthBoundsFramebuffer ()Lnet/minecraft/class_276;
+	METHOD method_29363 getTerrainDepthFramebuffer ()Lnet/minecraft/class_276;
 	METHOD method_34810 getChunkBuilder ()Lnet/minecraft/class_846;
 	METHOD method_40050 isRenderingReady (Lnet/minecraft/class_2338;)Z
 		ARG 1 pos
@@ -112,6 +135,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 2 preparedFrame
 		ARG 3 fogBuffer
 		ARG 4 sectionRenderState
+		ARG 5 tickProgress
 	METHOD method_62206 renderBlockDamage (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;Lnet/minecraft/class_11658;)V
 		ARG 1 matrices
 		ARG 2 queue

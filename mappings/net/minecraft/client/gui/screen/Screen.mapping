@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_437 net/minecraft/client/gui/screen/Screen
+	FIELD field_1_7966 lastNarrationTrigger Lnet/minecraft/class_1_1171;
 	FIELD field_22782 LOGGER Lorg/slf4j/Logger;
 	FIELD field_22785 title Lnet/minecraft/class_2561;
 	FIELD field_22786 children Ljava/util/List;
@@ -33,6 +34,7 @@ CLASS net/minecraft/class_437 net/minecraft/client/gui/screen/Screen
 		ARG 3 title
 	METHOD <init> (Lnet/minecraft/class_2561;)V
 		ARG 1 title
+	METHOD method_1_7314 shouldIgnoreFriendsKey ()Z
 	METHOD method_25393 tick ()V
 	METHOD method_25408 getTooltipFromItem (Lnet/minecraft/class_310;Lnet/minecraft/class_1799;)Ljava/util/List;
 		ARG 0 client
@@ -82,6 +84,7 @@ CLASS net/minecraft/class_437 net/minecraft/client/gui/screen/Screen
 	METHOD method_37059 setScreenNarrationDelay (JZLnet/minecraft/class_1_1171;)V
 		ARG 1 delayMs
 		ARG 3 restartElementNarration
+		ARG 4 trigger
 	METHOD method_37060 addDrawable (Lnet/minecraft/class_4068;)Lnet/minecraft/class_4068;
 		ARG 1 drawable
 	METHOD method_37061 findSelectedElementData (Ljava/util/List;Lnet/minecraft/class_6379;)Lnet/minecraft/class_437$class_6390;
@@ -98,6 +101,7 @@ CLASS net/minecraft/class_437 net/minecraft/client/gui/screen/Screen
 			COMMENT already been narrated previously
 	METHOD method_37065 narrateScreen (ZLnet/minecraft/class_1_1171;)V
 		ARG 1 onlyChangedNarrations
+		ARG 2 trigger
 	METHOD method_37066 remove (Lnet/minecraft/class_364;)V
 		ARG 1 child
 	METHOD method_37067 clearChildren ()V
@@ -160,6 +164,7 @@ CLASS net/minecraft/class_437 net/minecraft/client/gui/screen/Screen
 		ARG 7 height
 	METHOD method_61040 refreshNarrator (ZLnet/minecraft/class_1_1171;)V
 		ARG 1 previouslyDisabled
+		ARG 2 trigger
 	METHOD method_64506 getTextRenderer ()Lnet/minecraft/class_327;
 	METHOD method_64507 showsStatusEffects ()Z
 	METHOD method_65027 addCrashReportSection (Lnet/minecraft/class_128;)V
@@ -191,6 +196,8 @@ CLASS net/minecraft/class_437 net/minecraft/client/gui/screen/Screen
 	METHOD method_73150 deferSubtitles ()Z
 	METHOD method_73217 keepOpenThroughPortal ()Z
 	METHOD method_73339 canBeInterruptedByOtherScreen ()Z
+	METHOD method_75366 (Lnet/minecraft/class_310;Ljava/lang/Runnable;)V
+		ARG 2 runnable
 	CLASS class_6390 SelectedElementNarrationData
 		FIELD comp_4463 selectable Lnet/minecraft/class_6379;
 		FIELD comp_4464 index I

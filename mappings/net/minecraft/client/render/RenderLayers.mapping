@@ -3,6 +3,14 @@ CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 	FIELD field_1_2486 BANNER_PATTERN Ljava/util/function/Function;
 	FIELD field_1_7543 ARMOR_TRIM Ljava/util/function/Function;
 	FIELD field_1_7544 ARMOR_TRIM_DECAL Ljava/util/function/Function;
+	FIELD field_1_8188 ARMOR_CUTOUT_NO_CULL_GLINT Ljava/util/function/Function;
+	FIELD field_1_8189 ENTITY_SOLID_GLINT Ljava/util/function/Function;
+	FIELD field_1_8190 ITEM_CUTOUT_GLINT Ljava/util/function/Function;
+	FIELD field_1_8191 ITEM_CUTOUT_GLINT_SPECIAL Ljava/util/function/Function;
+	FIELD field_1_8192 ITEM_TRANSLUCENT_GLINT Ljava/util/function/Function;
+	FIELD field_1_8193 ITEM_TRANSLUCENT_GLINT_SPECIAL Ljava/util/function/Function;
+	FIELD field_1_8194 LINES_TRANSLUCENT_DEPTH_BIAS Lnet/minecraft/class_1921;
+	FIELD field_1_8195 OIT_WATER_MASK Lnet/minecraft/class_1921;
 	FIELD field_64017 ENTITY_GLINT Lnet/minecraft/class_1921;
 	FIELD field_64018 CRUMBLING Ljava/util/function/Function;
 	FIELD field_64019 TEXT Ljava/util/function/Function;
@@ -75,6 +83,31 @@ CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 		ARG 0 texture
 	METHOD method_1_6900 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
+	METHOD method_1_7473 armorCutoutNoCullGlint (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+		ARG 0 texture
+	METHOD method_1_7474 entitySolidGlint (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+		ARG 0 texture
+	METHOD method_1_7475 itemCutoutGlint (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+		ARG 0 texture
+	METHOD method_1_7476 itemCutoutGlintSpecial (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+		ARG 0 texture
+	METHOD method_1_7477 itemTranslucentGlint (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+		ARG 0 texture
+	METHOD method_1_7478 itemTranslucentGlintSpecial (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+		ARG 0 texture
+	METHOD method_1_7479 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+		ARG 0 texture
+	METHOD method_1_7480 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+		ARG 0 texture
+	METHOD method_1_7481 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+		ARG 0 texture
+	METHOD method_1_7482 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+		ARG 0 texture
+	METHOD method_1_7483 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+		ARG 0 texture
+	METHOD method_1_7484 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+		ARG 0 texture
+	METHOD method_1_7485 lintsTranslucentDepthBias ()Lnet/minecraft/class_1921;
 	METHOD method_75942 blockScreenEffect (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
 	METHOD method_75943 fireScreenEffect (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;

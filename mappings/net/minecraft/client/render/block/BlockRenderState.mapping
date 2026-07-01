@@ -7,11 +7,13 @@ CLASS net/minecraft/class_1_395 net/minecraft/client/render/block/BlockRenderSta
 	FIELD field_1_2367 renderLayer Lnet/minecraft/class_1921;
 	FIELD field_1_2368 specialRendererTransformation Lorg/joml/Matrix4fc;
 	FIELD field_1_2369 modelTransformation Lorg/joml/Matrix4fc;
+	FIELD field_1_5860 emissiveLight I
 	METHOD method_1_2637 reset ()V
 	METHOD method_1_2638 isEmpty ()Z
 	METHOD method_1_2639 render (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;III)V
 		ARG 1 matrices
 		ARG 2 queue
+		ARG 3 light
 		ARG 4 overlayCoords
 		ARG 5 outlineColor
 	METHOD method_1_2640 renderOutlineNoCull (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;III)V
@@ -40,8 +42,9 @@ CLASS net/minecraft/class_1_395 net/minecraft/client/render/block/BlockRenderSta
 		ARG 1 layer
 		ARG 2 matrices
 		ARG 3 queue
+		ARG 4 light
 		ARG 5 overlayCoords
-		ARG 6 light
+		ARG 6 outlineColor
 	METHOD method_1_2822 renderSpecial (Lnet/minecraft/class_10515;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;III)V
 		ARG 0 renderer
 		ARG 1 matrices

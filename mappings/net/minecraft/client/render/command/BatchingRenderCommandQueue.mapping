@@ -13,6 +13,18 @@ CLASS net/minecraft/class_11788 net/minecraft/client/render/command/BatchingRend
 	FIELD field_1_6128 worldBlendedCustom Lnet/minecraft/class_1_886;
 	FIELD field_1_6129 worldBlendedModel Lnet/minecraft/class_1_877;
 	FIELD field_1_6130 worldWaterMask Lnet/minecraft/class_1_886;
+	FIELD field_1_8162 gizmosOnTop Lnet/minecraft/class_1_886;
+	FIELD field_1_8163 improvedTranslucencyRenderCommandContainer Lnet/minecraft/class_1_886;
+	FIELD field_1_8164 gizmos Lnet/minecraft/class_1_886;
+	METHOD <init> (Z)V
+		ARG 1 improvedTransparency
 	METHOD method_1_5213 getRenderCommandContainers ()Ljava/util/List;
 	METHOD method_1_5214 getOutlineLayer (Lnet/minecraft/class_1921;)Lnet/minecraft/class_1921;
 		ARG 0 renderLayer
+	METHOD method_1_7452 hasTranslucency (Lnet/minecraft/class_918$class_11668;)Z
+		ARG 0 itemCommand
+	METHOD method_1_7453 labelIsOpaque (II)Z
+		ARG 0 textColor
+		ARG 1 backgroundColor
+	METHOD method_1_7454 submitLabel (Lnet/minecraft/class_11689$class_11672;)V
+		ARG 1 command

@@ -1,11 +1,41 @@
 CLASS net/minecraft/class_2925 net/minecraft/world/gen/carver/CaveCarver
+	METHOD method_1_7515 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_7516 (Lnet/minecraft/class_2925;)Ljava/lang/Float;
+		ARG 0 carver
+	METHOD method_1_7517 (Lnet/minecraft/class_2925;)Lnet/minecraft/class_5863;
+		ARG 0 carver
+	METHOD method_1_7518 (Lnet/minecraft/class_2925;)Lnet/minecraft/class_6122;
+		ARG 0 carver
+	METHOD method_1_7519 (Lnet/minecraft/class_2925;)Lnet/minecraft/class_6017;
+		ARG 0 carver
+	METHOD method_1_7520 (Lnet/minecraft/class_2925;)Lnet/minecraft/class_5863;
+		ARG 0 carver
+	METHOD method_1_7521 (Lnet/minecraft/class_2925;)Ljava/lang/Boolean;
+		ARG 0 carver
+	METHOD method_1_7522 (Lnet/minecraft/class_2925;)Lnet/minecraft/class_5863;
+		ARG 0 carver
+	METHOD method_1_7523 (Lnet/minecraft/class_2925;)Lnet/minecraft/class_5863;
+		ARG 0 carver
+	METHOD method_1_7524 (Lnet/minecraft/class_2925;)Lnet/minecraft/class_5863;
+		ARG 0 carver
+	METHOD method_1_7525 (Lnet/minecraft/class_2925;)Lnet/minecraft/class_5863;
+		ARG 0 carver
 	METHOD method_12674 carveCave (Lnet/minecraft/class_1923;DDDFDLnet/minecraft/class_1_1155;Lnet/minecraft/class_2939$class_5874;)V
+		ARG 1 chunkPos
+		ARG 2 originX
+		ARG 4 originY
+		ARG 6 originZ
+		ARG 8 widthMultiplier
+		ARG 9 roomVerticalRadiusMultiplier
+		ARG 11 carvingMask
 		ARG 12 skipPredicate
 	METHOD method_12675 carveTunnels (Lnet/minecraft/class_1923;JDDDDDFFFIIDLnet/minecraft/class_1_1155;Lnet/minecraft/class_2939$class_5874;)V
+		ARG 1 chunkPos
 		ARG 2 seed
-		ARG 4 x
-		ARG 6 y
-		ARG 8 z
+		ARG 4 originX
+		ARG 6 originY
+		ARG 8 originZ
 		ARG 10 horizontalScale
 		ARG 12 verticalScale
 		ARG 14 width
@@ -14,6 +44,7 @@ CLASS net/minecraft/class_2925 net/minecraft/world/gen/carver/CaveCarver
 		ARG 17 branchStartIndex
 		ARG 18 branchCount
 		ARG 19 yawPitchRatio
+		ARG 21 carvingMask
 		ARG 22 skipPredicate
 	METHOD method_16576 getTunnelSystemWidth (Lnet/minecraft/class_5819;)F
 		ARG 1 random

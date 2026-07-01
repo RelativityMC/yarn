@@ -12,6 +12,21 @@ CLASS net/minecraft/class_3754 net/minecraft/world/gen/chunk/NoiseChunkGenerator
 	METHOD method_1_5150 getBiomesAround (Lnet/minecraft/class_3233;I)Ljava/util/Set;
 		ARG 0 region
 		ARG 1 radiusChunks
+	METHOD method_1_7538 carve (Lnet/minecraft/class_2791;Lnet/minecraft/class_6643;Lnet/minecraft/class_7138;Lnet/minecraft/class_5868;Lnet/minecraft/class_6568;Ljava/util/function/Function;Lnet/minecraft/class_6643$class_6828;)V
+		ARG 1 chunk
+		ARG 2 carvingMask
+		ARG 3 noiseConfig
+		ARG 4 heightcontext
+		ARG 5 noiseSampler
+		ARG 6 biomeGetter
+		ARG 7 maskPredicate
+	METHOD method_1_7539 (Lnet/minecraft/class_1923;Lnet/minecraft/class_6643$class_6828;Lnet/minecraft/class_2338$class_2339;Lnet/minecraft/class_2791;Lnet/minecraft/class_6350;Lnet/minecraft/class_2338$class_2339;Lnet/minecraft/class_7138;Lnet/minecraft/class_6686$class_6708;Lnet/minecraft/class_5868;Ljava/util/function/Function;Lnet/minecraft/class_6568;IIII)V
+		ARG 11 offsetX
+		ARG 12 offsetZ
+		ARG 13 startY
+		ARG 14 endY
+	METHOD method_1_7540 (Lnet/minecraft/class_2791;Lnet/minecraft/class_2338$class_2339;Lnet/minecraft/class_2680;)V
+		ARG 2 state
 	METHOD method_26263 sampleHeightmap (Lnet/minecraft/class_5539;Lnet/minecraft/class_7138;IILorg/apache/commons/lang3/mutable/MutableObject;Ljava/util/function/Predicate;)Ljava/util/OptionalInt;
 		ARG 1 world
 		ARG 2 noiseConfig

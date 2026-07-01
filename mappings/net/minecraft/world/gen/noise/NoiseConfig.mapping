@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_7138 net/minecraft/world/gen/noise/NoiseConfig
+	FIELD field_1_8127 spawnTargets Ljava/util/List;
 	FIELD field_38254 randomDeriver Lnet/minecraft/class_6574;
 	FIELD field_38256 noiseParametersRegistry Lnet/minecraft/class_7871;
 	FIELD field_38257 noiseRouter Lnet/minecraft/class_6953;
@@ -9,9 +10,26 @@ CLASS net/minecraft/class_7138 net/minecraft/world/gen/noise/NoiseConfig
 	METHOD <init> (Lnet/minecraft/class_7871;JZLnet/minecraft/class_2680;ILnet/minecraft/class_6953;Ljava/util/List;)V
 		ARG 1 noiseParametersLookup
 		ARG 2 seed
+		ARG 4 legacyRandom
+		ARG 5 defaultState
+		ARG 6 seaLevel
+		ARG 7 noiseRouter
+		ARG 8 spawnTargets
+	METHOD method_1_7406 (Lnet/minecraft/class_7138$class_7271;Lnet/minecraft/class_6910$class_6915;Lnet/minecraft/class_1_1172;)Lnet/minecraft/class_1_1172$class_1_1173;
+		ARG 2 spawnTarget
+	METHOD method_1_7407 getSpawnTargets ()Ljava/util/List;
 	METHOD method_41556 create (Lnet/minecraft/class_7871;JZLnet/minecraft/class_2680;ILnet/minecraft/class_6953;Ljava/util/List;)Lnet/minecraft/class_7138;
+		ARG 0 noiseParametersLookup
+		ARG 1 seed
+		ARG 3 legacyRandom
+		ARG 4 defaultState
+		ARG 5 seaLevel
+		ARG 6 noiseRouter
+		ARG 7 spawnTargets
 	METHOD method_41557 create (Lnet/minecraft/class_7871;JLnet/minecraft/class_5284;)Lnet/minecraft/class_7138;
+		ARG 0 noiseParametersLookup
 		ARG 1 legacyWorldSeed
+		ARG 3 chunkGeneratorSettings
 	METHOD method_41558 getOrCreateSampler (Lnet/minecraft/class_5321;)Lnet/minecraft/class_5216;
 		ARG 1 noiseParametersKey
 	METHOD method_41559 (Lnet/minecraft/class_5321;Lnet/minecraft/class_5321;)Lnet/minecraft/class_5216;

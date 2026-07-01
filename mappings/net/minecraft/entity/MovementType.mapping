@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_1313 net/minecraft/entity/MovementType
+	METHOD method_1_6462 isOther ()Z

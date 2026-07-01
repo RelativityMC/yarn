@@ -13,6 +13,7 @@ CLASS net/minecraft/class_6382 net/minecraft/client/gui/screen/narration/Narrati
 	COMMENT first, in {@link NarrationPart}'s natural ordering. If there are multiple
 	COMMENT narrations for a part added through submessages, they will be ordered earliest
 	COMMENT submessage first.
+	METHOD method_1_7507 getNarrationTrigger ()Lnet/minecraft/class_1_1171;
 	METHOD method_37031 nextMessage ()Lnet/minecraft/class_6382;
 		COMMENT Creates a narration message builder for a submessage.
 		COMMENT

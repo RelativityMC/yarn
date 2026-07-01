@@ -3,6 +3,8 @@ CLASS net/minecraft/class_1_863 net/minecraft/client/render/command/CommandRende
 		ARG 1 context
 	METHOD method_1_5243 render (Lnet/minecraft/class_1_841;Lnet/minecraft/class_1_1153;Lcom/mojang/blaze3d/systems/RenderPass;ILjava/util/List;Z)V
 		ARG 1 context
+		ARG 2 oitStage
+		ARG 3 renderPass
 		ARG 4 groupIndex
 		ARG 5 commands
 		ARG 6 separateMultiBuffers

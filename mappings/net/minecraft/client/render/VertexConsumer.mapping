@@ -14,6 +14,14 @@ CLASS net/minecraft/class_4588 net/minecraft/client/render/VertexConsumer
 		ARG 3 z
 		ARG 4 quad
 		ARG 5 shading
+	METHOD method_1_7316 quadWithSpecialGlint (Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_777;Lnet/minecraft/class_1_382;Lnet/minecraft/class_4587$class_4665;)V
+		ARG 1 matrix
+		ARG 2 quad
+		ARG 3 shading
+		ARG 4 glintMatrix
+	METHOD method_1_7317 glint (FF)Lnet/minecraft/class_4588;
+		ARG 1 u
+		ARG 2 v
 	METHOD method_1336 color (IIII)Lnet/minecraft/class_4588;
 		COMMENT Specifies the {@linkplain VertexFormats#COLOR_ELEMENT
 		COMMENT color element} of the current vertex.
@@ -171,8 +179,10 @@ CLASS net/minecraft/class_4588 net/minecraft/client/render/VertexConsumer
 		ARG 4 z
 	METHOD method_61032 vertex (Lnet/minecraft/class_4587$class_4665;Lorg/joml/Vector3fc;)Lnet/minecraft/class_4588;
 		ARG 1 matrix
+		ARG 2 vec
 	METHOD method_61959 normal (Lnet/minecraft/class_4587$class_4665;Lorg/joml/Vector3fc;)Lnet/minecraft/class_4588;
 		ARG 1 matrix
+		ARG 2 vec
 	METHOD method_70815 vertex (Lorg/joml/Matrix3x2fc;FF)Lnet/minecraft/class_4588;
 		ARG 1 matrix
 		ARG 2 x

@@ -163,6 +163,10 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 			ARG 0 instance
 		METHOD method_1_5233 validate ()Lcom/mojang/serialization/DataResult;
 	CLASS class_6917 BinaryOperation
+		METHOD <init> (Lnet/minecraft/class_6916$class_7055$class_6918;Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;)V
+			ARG 1 type
+			ARG 2 argument1
+			ARG 3 argument2
 	CLASS class_6919 BlendAlpha
 		FIELD field_37079 CODEC Lnet/minecraft/class_7243;
 	CLASS class_6921 BlendOffset
@@ -170,6 +174,8 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 	CLASS class_6922 Clamp
 		FIELD field_37082 CODEC_HOLDER Lnet/minecraft/class_7243;
 		FIELD field_37083 CLAMP_CODEC Lcom/mojang/serialization/MapCodec;
+		METHOD method_1_7465 validate (Lnet/minecraft/class_6916$class_6922;)Lcom/mojang/serialization/DataResult;
+			ARG 0 densityFunction
 		METHOD method_41078 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance
 	CLASS class_6923 Constant
@@ -185,6 +191,8 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 			ARG 1 x
 			ARG 2 z
 	CLASS class_6925 UnaryOperation
+		METHOD method_1_7466 (D)D
+			ARG 1 density
 		METHOD method_40521 apply (Lnet/minecraft/class_6916$class_6925$class_6926;D)D
 			ARG 0 type
 			ARG 1 density

@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_1603 net/minecraft/entity/ai/RangedAttackMob
+	METHOD method_1_7455 getShotDivergence (Lnet/minecraft/class_1937;)F
+		ARG 1 world
 	METHOD method_7105 shootAt (Lnet/minecraft/class_1309;F)V
 		ARG 1 target
 		ARG 2 pullProgress

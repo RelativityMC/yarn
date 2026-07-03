@@ -1,5 +1,7 @@
 CLASS net/minecraft/class_8188 net/minecraft/client/render/block/entity/DecoratedPotBlockEntityRenderer
 	FIELD field_1_2398 TRANSFORMATIONS Ljava/util/Map;
+	FIELD field_1_7829 emptyPatternSprite Lnet/minecraft/class_8188$class_1_1134;
+	FIELD field_1_7830 spritesByPattern Ljava/util/Map;
 	FIELD field_42913 NECK Ljava/lang/String;
 	FIELD field_42914 FRONT Ljava/lang/String;
 	FIELD field_42915 BACK Ljava/lang/String;
@@ -18,6 +20,7 @@ CLASS net/minecraft/class_8188 net/minecraft/client/render/block/entity/Decorate
 	FIELD field_61787 materials Lnet/minecraft/class_11701;
 	METHOD <init> (Lnet/minecraft/class_5599;Lnet/minecraft/class_11701;)V
 		ARG 1 entityModelSet
+		ARG 2 materials
 	METHOD <init> (Lnet/minecraft/class_5614$class_5615;)V
 		ARG 1 context
 	METHOD <init> (Lnet/minecraft/class_10515$class_11695;)V
@@ -26,7 +29,9 @@ CLASS net/minecraft/class_8188 net/minecraft/client/render/block/entity/Decorate
 		ARG 0 facing
 	METHOD method_1_2863 getTransformation (Lnet/minecraft/class_2350;)Lnet/minecraft/class_4590;
 		ARG 0 facing
-	METHOD method_49343 getTextureIdFromSherd (Ljava/util/Optional;)Lnet/minecraft/class_8188$class_1_1134;
+	METHOD method_1_7150 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_8188$class_1_1134;
+		ARG 1 id
+	METHOD method_49343 getSherdSprite (Ljava/util/Optional;)Lnet/minecraft/class_8188$class_1_1134;
 		ARG 1 sherd
 	METHOD method_49346 getTopBottomNeckTexturedModelData ()Lnet/minecraft/class_5607;
 	METHOD method_49347 getSidesTexturedModelData ()Lnet/minecraft/class_5607;
@@ -35,6 +40,11 @@ CLASS net/minecraft/class_8188 net/minecraft/client/render/block/entity/Decorate
 		ARG 2 queue
 		ARG 3 light
 		ARG 4 overlay
+		ARG 5 sherds
 		ARG 6 outlineColor
 	METHOD method_72161 collectVertices (Ljava/util/function/Consumer;)V
 		ARG 1 callback
+	CLASS class_1_1134 PatternSprite
+		METHOD method_1_7151 of (Lnet/minecraft/class_11701;Lnet/minecraft/class_1_310;)Lnet/minecraft/class_8188$class_1_1134;
+			ARG 0 materials
+			ARG 1 textureId

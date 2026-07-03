@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_6024 net/minecraft/entity/EntityStatuses
+	FIELD field_1_7311 BUBBLE_COLUMN_LIFT B
+	FIELD field_1_7312 BUBBLE_COLUMN_DRAG B
 	FIELD field_29995 SET_OP_LEVEL_3 B
 	FIELD field_29996 SET_OP_LEVEL_4 B
 	FIELD field_29999 PULL_HOOKED_ENTITY B

@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_7299 net/minecraft/entity/passive/AllayBrain
+	FIELD field_1_7480 VELOCITY_FACTOR Lnet/minecraft/class_243;
 	FIELD field_38408 WALK_TO_ITEM_SPEED F
 	FIELD field_38413 LIKED_NOTEBLOCK_COOLDOWN_TICKS_EXPIRY I
 	FIELD field_38940 WALK_TO_ITEM_RADIUS I
@@ -9,7 +10,10 @@ CLASS net/minecraft/class_7299 net/minecraft/entity/passive/AllayBrain
 	METHOD method_1_1005 onGiveItem (Lnet/minecraft/class_3218;Lnet/minecraft/class_7298;Lnet/minecraft/class_243;)V
 		ARG 0 world
 		ARG 1 allay
+		ARG 2 lookTargetPos
 	METHOD method_1_1183 getTaskLists ()Ljava/util/List;
+	METHOD method_1_6810 hasItem (Lnet/minecraft/class_7298;)Z
+		ARG 0 allay
 	METHOD method_42657 getLookTarget (Lnet/minecraft/class_1309;)Ljava/util/Optional;
 		ARG 0 allay
 	METHOD method_42658 shouldGoTowardsNoteBlock (Lnet/minecraft/class_1309;Lnet/minecraft/class_4095;Lnet/minecraft/class_4208;)Z

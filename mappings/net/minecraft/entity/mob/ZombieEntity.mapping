@@ -20,6 +20,7 @@ CLASS net/minecraft/class_1642 net/minecraft/entity/mob/ZombieEntity
 	FIELD field_57699 DEFAULT_IN_WATER_TIME I
 	METHOD <init> (Lnet/minecraft/class_1937;)V
 		ARG 1 world
+	METHOD method_1_7438 isTargetingOutsideMeleeRange ()Z
 	METHOD method_6001 initAttributes ()V
 	METHOD method_7200 convertTo (Lnet/minecraft/class_3218;Lnet/minecraft/class_1299;)V
 		ARG 1 world

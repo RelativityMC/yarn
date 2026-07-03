@@ -30,8 +30,24 @@ group int blaze3d_color_target_state_write_mask
 	com.mojang.blaze3d.pipeline.ColorTargetState.WRITE_BLUE
 	com.mojang.blaze3d.pipeline.ColorTargetState.WRITE_ALPHA
 
+group int blaze3d_buffer_builder_element_type
+	net.minecraft.client.render.BufferBuilder.POSITION
+	net.minecraft.client.render.BufferBuilder.COLOR
+	net.minecraft.client.render.BufferBuilder.UV0
+	net.minecraft.client.render.BufferBuilder.UV1
+	net.minecraft.client.render.BufferBuilder.UV2
+	net.minecraft.client.render.BufferBuilder.UV3
+	net.minecraft.client.render.BufferBuilder.NORMAL
+	net.minecraft.client.render.BufferBuilder.LINE_WIDTH
+
 target_annotation com.mojang.blaze3d.buffers.GpuBuffer$Usage blaze3d_gpu_buffer_flags
 
 target_annotation com.mojang.blaze3d.pipeline.ColorTargetState$WriteMask blaze3d_color_target_state_write_mask
 
 target_annotation com.mojang.blaze3d.textures.GpuTexture$Usage blaze3d_gpu_texture_flags
+
+target_method net.minecraft.client.render.BufferBuilder beginElement (I)J
+	param 0 blaze3d_buffer_builder_element_type
+
+target_method net.minecraft.client.render.BufferBuilder uv (SSI)Lnet/minecraft/client/render/VertexConsumer;
+	param 2 blaze3d_buffer_builder_element_type

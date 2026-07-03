@@ -5,6 +5,9 @@ CLASS net/minecraft/class_6646 net/minecraft/world/gen/blockpredicate/BlockPredi
 	METHOD method_1_7165 matchingBlockTag (Lnet/minecraft/class_1_1038;Lnet/minecraft/class_6862;)Lnet/minecraft/class_6646;
 		ARG 0 offset
 		ARG 1 tag
+	METHOD method_1_7565 heightRange (Lnet/minecraft/class_5843;Lnet/minecraft/class_5843;)Lnet/minecraft/class_6646;
+		ARG 0 minInclusive
+		ARG 1 maxInclusive
 	METHOD method_38873 getType ()Lnet/minecraft/class_6647;
 	METHOD method_38877 not (Lnet/minecraft/class_6646;)Lnet/minecraft/class_6646;
 		ARG 0 predicate

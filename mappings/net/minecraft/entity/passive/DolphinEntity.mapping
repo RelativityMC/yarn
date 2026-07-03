@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_1433 net/minecraft/entity/passive/DolphinEntity
+	FIELD field_1_6112 BABY_DIMENSIONS Lnet/minecraft/class_4048;
 	FIELD field_6748 CAN_TAKE Ljava/util/function/Predicate;
 	FIELD field_6749 MOISTNESS Lnet/minecraft/class_2940;
 	FIELD field_6750 HAS_FISH Lnet/minecraft/class_2940;
@@ -20,6 +21,12 @@ CLASS net/minecraft/class_1433 net/minecraft/entity/passive/DolphinEntity
 	METHOD method_6492 spawnParticlesAround (Lnet/minecraft/class_2394;)V
 		ARG 1 parameters
 	METHOD method_26884 createDolphinAttributes ()Lnet/minecraft/class_5132$class_5133;
+	CLASS class_1_1167 AbstractThrowItemsGoal
+		METHOD method_1_7446 throwItem (Lnet/minecraft/class_1799;)V
+			ARG 1 stack
+		METHOD method_1_7447 throwItemInMainHand ()Z
+	CLASS class_1_1168 PlayWithItemsGoal
+		FIELD field_1_8157 nextStartAge I
 	CLASS class_1435 LeadToNearbyTreasureGoal
 		FIELD field_6752 dolphin Lnet/minecraft/class_1433;
 		FIELD field_6753 noPathToStructure Z
@@ -32,4 +39,4 @@ CLASS net/minecraft/class_1433 net/minecraft/entity/passive/DolphinEntity
 		METHOD <init> (Lnet/minecraft/class_1433;D)V
 			ARG 1 dolphin
 			ARG 2 speed
-	CLASS class_1437 PlayWithItemsGoal
+	CLASS class_1437 ThrowItemsGoal

@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_1676 net/minecraft/entity/projectile/ProjectileEntity
+	FIELD field_1_8153 canBreak Lnet/minecraft/class_6538;
 	FIELD field_23740 leftOwner Z
 	FIELD field_28646 shot Z
 	FIELD field_51621 lastDeflectedEntity Lnet/minecraft/class_1297;
@@ -6,6 +7,8 @@ CLASS net/minecraft/class_1676 net/minecraft/entity/projectile/ProjectileEntity
 	FIELD field_57743 DEFAULT_SHOT Z
 	FIELD field_60558 owner Lnet/minecraft/class_10583;
 	FIELD field_63116 checkedForLeftOwner Z
+	METHOD method_1_7439 canBreakBlockAt (Lnet/minecraft/class_2694;)Z
+		ARG 1 pos
 	METHOD method_7432 setOwner (Lnet/minecraft/class_1297;)V
 		ARG 1 owner
 	METHOD method_7454 onEntityHit (Lnet/minecraft/class_3966;)V
@@ -66,6 +69,7 @@ CLASS net/minecraft/class_1676 net/minecraft/entity/projectile/ProjectileEntity
 		COMMENT is attributed to this projectile itself.
 	METHOD method_54457 canBreakBlocks (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;)Z
 		ARG 1 world
+		ARG 2 pos
 	METHOD method_58645 calculateVelocity (DDDFF)Lnet/minecraft/class_243;
 		ARG 1 x
 		ARG 3 y
@@ -73,9 +77,11 @@ CLASS net/minecraft/class_1676 net/minecraft/entity/projectile/ProjectileEntity
 		ARG 7 power
 		ARG 8 uncertainty
 	METHOD method_59525 onDeflected (Z)V
+		ARG 1 fromAttack
 	METHOD method_59859 deflect (Lnet/minecraft/class_9109;Lnet/minecraft/class_1297;Lnet/minecraft/class_10583;Z)Z
 		ARG 1 deflection
 		ARG 2 deflector
+		ARG 3 owner
 		ARG 4 fromAttack
 	METHOD method_59860 hitOrDeflect (Lnet/minecraft/class_239;)Lnet/minecraft/class_9109;
 		ARG 1 hitResult

@@ -17,16 +17,16 @@ CLASS net/minecraft/class_1_1045 net/minecraft/client/vulkan/VulkanFeatureSet
 		ARG 1 physicalDevice
 	METHOD method_1_6543 and (Lnet/minecraft/class_1_1045;)Lnet/minecraft/class_1_1045;
 		ARG 1 other
-	METHOD method_1_6544 (Lnet/minecraft/class_1_1045;)Z
+	METHOD method_1_6544 isSubsetOf (Lnet/minecraft/class_1_1045;)Z
 		ARG 1 other
 	METHOD method_1_6545 isSupported (Lorg/lwjgl/vulkan/VkPhysicalDevice;)Z
 		ARG 1 physicalDevice
 	METHOD method_1_6546 isSupported (Lorg/lwjgl/vulkan/VkPhysicalDevice;Ljava/util/Set;)Z
 		ARG 1 physicalDevice
 		ARG 2 supportedExtensions
-	METHOD method_1_6547 (Ljava/util/Set;)Ljava/util/Set;
-		ARG 1 with
-	METHOD method_1_6548 (Lorg/lwjgl/vulkan/VkPhysicalDevice;)Ljava/util/Set;
+	METHOD method_1_6547 getSupportedExtensions (Ljava/util/Set;)Ljava/util/Set;
+		ARG 1 supportedExtensions
+	METHOD method_1_6548 getPresentFeatures (Lorg/lwjgl/vulkan/VkPhysicalDevice;)Ljava/util/Set;
 		ARG 1 physicalDevice
 	METHOD method_1_6549 getMissingExtensions (Ljava/util/Set;)Ljava/util/Set;
 		ARG 1 supportedExtensions

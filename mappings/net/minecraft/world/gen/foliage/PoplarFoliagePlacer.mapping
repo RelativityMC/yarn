@@ -11,6 +11,7 @@ CLASS net/minecraft/class_1_1147 net/minecraft/world/gen/foliage/PoplarFoliagePl
 		ARG 2 dz
 		ARG 3 radius
 		ARG 4 centralY
+		ARG 5 orientation
 	METHOD method_1_7237 axisSetter (Lnet/minecraft/class_2350;)Ljava/util/function/Function;
 		ARG 0 direction
 	METHOD method_1_7238 haveOppositeSigns (II)Z
@@ -44,7 +45,10 @@ CLASS net/minecraft/class_1_1147 net/minecraft/world/gen/foliage/PoplarFoliagePl
 		ARG 6 radius
 		ARG 7 y
 		ARG 8 giantTrunk
+		ARG 9 foliageHeight
+		ARG 10 orientation
 	METHOD method_1_7249 isCentralY (II)Z
+		ARG 1 foliageHeight
 		ARG 2 y
 	METHOD method_1_7250 replaceFoliageWithTrunk (Lnet/minecraft/class_5281;Lnet/minecraft/class_4647$class_8179;Lnet/minecraft/class_5819;Lnet/minecraft/class_2944;Lnet/minecraft/class_2338;Ljava/util/function/Function;)V
 		ARG 0 world
@@ -53,3 +57,23 @@ CLASS net/minecraft/class_1_1147 net/minecraft/world/gen/foliage/PoplarFoliagePl
 		ARG 3 feature
 		ARG 4 pos
 		ARG 5 trunkTransformer
+	METHOD method_1_7580 generateSquare (Lnet/minecraft/class_5281;Lnet/minecraft/class_4647$class_8179;Lnet/minecraft/class_5819;Lnet/minecraft/class_2944;Lnet/minecraft/class_2338;IIZIZ)V
+		ARG 1 world
+		ARG 2 placer
+		ARG 3 random
+		ARG 4 feature
+		ARG 5 trunkPos
+		ARG 6 radius
+		ARG 7 y
+		ARG 8 giantTrunk
+		ARG 9 foliageHeight
+		ARG 10 orientation
+	METHOD method_1_7581 shouldPlaceLeafBlockAt (Lnet/minecraft/class_5819;IIIIZIZ)Z
+		ARG 1 random
+		ARG 2 dx
+		ARG 3 y
+		ARG 4 dz
+		ARG 5 radius
+		ARG 6 giantTrunk
+		ARG 7 foliageHeight
+		ARG 8 orientation

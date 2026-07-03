@@ -2,6 +2,11 @@ CLASS net/minecraft/class_5843 net/minecraft/world/gen/YOffset
 	FIELD field_28915 OFFSET_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_28916 BOTTOM Lnet/minecraft/class_5843;
 	FIELD field_28917 TOP Lnet/minecraft/class_5843;
+	METHOD method_1_7449 (Lcom/mojang/datafixers/util/Either;)Ljava/lang/Record;
+		ARG 0 inner
+	METHOD method_1_7450 relativeToSeaLevel (I)Lnet/minecraft/class_5843;
+		ARG 0 offset
+	METHOD method_1_7451 seaLevel ()Lnet/minecraft/class_5843;
 	METHOD method_33840 getBottom ()Lnet/minecraft/class_5843;
 	METHOD method_33841 fixed (I)Lnet/minecraft/class_5843;
 		ARG 0 offset
@@ -16,6 +21,7 @@ CLASS net/minecraft/class_5843 net/minecraft/world/gen/YOffset
 		ARG 0 offset
 	METHOD method_33849 belowTop (I)Lnet/minecraft/class_5843;
 		ARG 0 offset
+	CLASS class_1_1169 RelativeToSeaLevel
 	CLASS class_5844 AboveBottom
 		FIELD field_28919 CODEC Lcom/mojang/serialization/Codec;
 	CLASS class_5845 Fixed

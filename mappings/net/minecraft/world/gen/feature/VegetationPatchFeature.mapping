@@ -1,4 +1,49 @@
 CLASS net/minecraft/class_5922 net/minecraft/world/gen/feature/VegetationPatchFeature
+	FIELD field_1_7877 depth Lnet/minecraft/class_6017;
+	FIELD field_1_7878 extraBottomBlockChance F
+	FIELD field_1_7879 extraEdgeColumnChance F
+	FIELD field_1_7880 groundState Lnet/minecraft/class_4651;
+	FIELD field_1_7881 replaceable Lnet/minecraft/class_6885;
+	FIELD field_1_7882 surface Lnet/minecraft/class_5932;
+	FIELD field_1_7883 vegetationChance F
+	FIELD field_1_7884 vegetationFeature Lnet/minecraft/class_6880;
+	FIELD field_1_7885 verticalRange I
+	FIELD field_1_7886 xzRadius Lnet/minecraft/class_6017;
+	METHOD <init> (Lnet/minecraft/class_6885;Lnet/minecraft/class_4651;Lnet/minecraft/class_6880;Lnet/minecraft/class_5932;Lnet/minecraft/class_6017;FIFLnet/minecraft/class_6017;F)V
+		ARG 1 replaceable
+		ARG 2 groundState
+		ARG 3 vegetationFeature
+		ARG 4 surface
+		ARG 5 depth
+		ARG 6 extraBottomBlockChance
+		ARG 7 verticalRange
+		ARG 8 vegetationChance
+		ARG 9 xzRadius
+		ARG 10 extraEdgeColumnChance
+	METHOD method_1_7175 (Lcom/mojang/datafixers/util/Function10;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 1 instance
+	METHOD method_1_7176 (Lnet/minecraft/class_5922;)Lnet/minecraft/class_6885;
+		ARG 0 feature
+	METHOD method_1_7177 (Lnet/minecraft/class_5922;)Ljava/lang/Float;
+		ARG 0 feature
+	METHOD method_1_7178 (Lnet/minecraft/class_5922;)Lnet/minecraft/class_4651;
+		ARG 0 feature
+	METHOD method_1_7179 (Lnet/minecraft/class_5922;)Lnet/minecraft/class_6880;
+		ARG 0 feature
+	METHOD method_1_7180 (Lnet/minecraft/class_5922;)Lnet/minecraft/class_5932;
+		ARG 0 feature
+	METHOD method_1_7181 (Lnet/minecraft/class_5922;)Lnet/minecraft/class_6017;
+		ARG 0 feature
+	METHOD method_1_7182 (Lnet/minecraft/class_5922;)Ljava/lang/Float;
+		ARG 0 feature
+	METHOD method_1_7183 (Lnet/minecraft/class_5922;)Ljava/lang/Integer;
+		ARG 0 feature
+	METHOD method_1_7184 (Lnet/minecraft/class_5922;)Ljava/lang/Float;
+		ARG 0 feature
+	METHOD method_1_7185 (Lnet/minecraft/class_5922;)Lnet/minecraft/class_6017;
+		ARG 0 feature
+	METHOD method_1_7186 createCodec (Lcom/mojang/datafixers/util/Function10;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 constructor
 	METHOD method_34315 generateVegetationFeature (Lnet/minecraft/class_5281;Lnet/minecraft/class_2794;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338;)Z
 		ARG 1 world
 		ARG 2 generator
@@ -19,6 +64,7 @@ CLASS net/minecraft/class_5922 net/minecraft/world/gen/feature/VegetationPatchFe
 		ARG 5 depth
 	METHOD method_34318 generateVegetation (Lnet/minecraft/class_5281;Lnet/minecraft/class_2794;Lnet/minecraft/class_5819;Ljava/util/Set;)V
 		ARG 1 world
+		ARG 2 chunkGenerator
 		ARG 3 random
 		ARG 4 positions
 	METHOD method_34321 (Lnet/minecraft/class_2680;)Z

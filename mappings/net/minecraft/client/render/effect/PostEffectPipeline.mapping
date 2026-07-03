@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_9962 net/minecraft/render/effect/PostEffectPipeline
+CLASS net/minecraft/class_9962 net/minecraft/client/render/effect/PostEffectPipeline
 	FIELD field_53111 CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_62242 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance

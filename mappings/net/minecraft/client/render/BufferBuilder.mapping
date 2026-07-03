@@ -13,6 +13,16 @@ CLASS net/minecraft/class_287 net/minecraft/client/render/BufferBuilder
 	COMMENT VertexFormat.DrawMode#LINE_STRIP LINE_STRIP} draw modes, this builder
 	COMMENT duplicates every vertex in a line to produce a quad with zero area. See
 	COMMENT {@link RenderLayer#getLines}.
+	FIELD field_1_6276 COLOR I
+	FIELD field_1_6277 NORMAL I
+	FIELD field_1_6278 UV3 I
+	FIELD field_1_6279 POSITION I
+	FIELD field_1_6280 UV0 I
+	FIELD field_1_6281 UV1 I
+	FIELD field_1_6282 UV2 I
+	FIELD field_1_6283 ELEMENT_NAMES [Ljava/lang/String;
+	FIELD field_1_6284 elements [Lcom/mojang/blaze3d/vertex/VertexFormatElement;
+	FIELD field_1_7965 LINE_WIDTH I
 	FIELD field_1554 vertexCount I
 	FIELD field_1556 building Z
 	FIELD field_1565 vertexFormat Lcom/mojang/blaze3d/vertex/VertexFormat;
@@ -30,6 +40,7 @@ CLASS net/minecraft/class_287 net/minecraft/client/render/BufferBuilder
 	FIELD field_52077 currentMask I
 	METHOD <init> (Lnet/minecraft/class_9799;Lnet/minecraft/class_5596;Lcom/mojang/blaze3d/vertex/VertexFormat;)V
 		ARG 1 allocator
+		ARG 2 drawMode
 		ARG 3 vertexFormat
 	METHOD method_1_4142 normal (JFFF)V
 		ARG 0 offset
@@ -41,6 +52,10 @@ CLASS net/minecraft/class_287 net/minecraft/client/render/BufferBuilder
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_1_5405 (I)Z
+		ARG 1 id
+	METHOD method_1_5406 (I)Ljava/lang/String;
+		ARG 0 id
 	METHOD method_60794 endNullable ()Lnet/minecraft/class_9801;
 	METHOD method_60795 floatToByte (F)B
 		ARG 0 f
@@ -48,9 +63,11 @@ CLASS net/minecraft/class_287 net/minecraft/client/render/BufferBuilder
 		ARG 0 pointer
 		ARG 2 argb
 	METHOD method_60798 beginElement (I)J
+		ARG 1 id
 	METHOD method_60799 uv (SSI)Lnet/minecraft/class_4588;
 		ARG 1 u
 		ARG 2 v
+		ARG 3 id
 	METHOD method_60800 end ()Lnet/minecraft/class_9801;
 	METHOD method_60801 putInt (JI)V
 		ARG 0 pointer

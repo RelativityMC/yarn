@@ -29,6 +29,10 @@ CLASS net/minecraft/class_10255 net/minecraft/entity/vehicle/AbstractBoatEntity
 		ARG 1 type
 		ARG 2 world
 		ARG 3 itemSupplier
+	METHOD method_1_6966 applyBubbleColumnAcceleration (Z)V
+		ARG 1 drag
+	METHOD method_1_7486 getYawForPassenger (Lnet/minecraft/class_1297;)F
+		ARG 1 passenger
 	METHOD method_64476 handleBubbleColumn ()V
 	METHOD method_64478 checkLocation ()Lnet/minecraft/class_10255$class_1691;
 	METHOD method_64479 checkBoatInWater ()Z

@@ -6,6 +6,14 @@ CLASS net/minecraft/class_4527 net/minecraft/server/command/TestCommand
 	FIELD field_56198 NO_TEST_CONTAINING_POS_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic3CommandExceptionType;
 	FIELD field_56408 NO_TESTS_TO_RESET_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_56409 TOO_LARGE_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
+	METHOD method_1_6640 (Ljava/lang/String;Lnet/minecraft/class_4527$class_1_1056;FFLnet/minecraft/class_2583;)Lnet/minecraft/class_2583;
+		ARG 4 style
+	METHOD method_1_6642 (Ljava/lang/String;Lnet/minecraft/class_4527$class_1_1056;Lnet/minecraft/class_2583;)Lnet/minecraft/class_2583;
+		ARG 2 style
+	METHOD method_1_6644 sendCoordinates (Lnet/minecraft/class_2168;)V
+		ARG 0 source
+	METHOD method_1_6645 getTestInfo (Lnet/minecraft/class_2168;)Lnet/minecraft/class_4527$class_1_1056;
+		ARG 0 source
 	METHOD method_22264 executePos (Lnet/minecraft/class_2168;Ljava/lang/String;)I
 		ARG 0 source
 		ARG 1 variableName
@@ -158,6 +166,7 @@ CLASS net/minecraft/class_4527 net/minecraft/server/command/TestCommand
 		ARG 0 context
 	METHOD method_71948 (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/class_9123;
 		ARG 0 context
+	CLASS class_1_1056 Info
 	CLASS class_4528 Listener
 		FIELD comp_2217 tests Lnet/minecraft/class_4524;
 		METHOD <init> (Lnet/minecraft/class_2168;Lnet/minecraft/class_4524;)V

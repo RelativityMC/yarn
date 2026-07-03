@@ -9,6 +9,10 @@ CLASS net/minecraft/class_5485 net/minecraft/world/biome/GenerationSettings
 	METHOD <init> (Lnet/minecraft/class_6885;Ljava/util/List;)V
 		ARG 1 carvers
 		ARG 2 features
+	METHOD method_1_3045 (Lnet/minecraft/class_6880;)Ljava/util/stream/Stream;
+		ARG 0 feature
+	METHOD method_1_3046 (Lnet/minecraft/class_6880;)Z
+		ARG 0 feature
 	METHOD method_30802 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
 	METHOD method_30808 (Lnet/minecraft/class_5485;)Lnet/minecraft/class_6885;

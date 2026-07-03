@@ -12,3 +12,10 @@ CLASS net/minecraft/class_4583 net/minecraft/client/render/OverlayVertexConsumer
 		ARG 1 delegate
 		ARG 2 matrix
 		ARG 3 textureScale
+	METHOD method_1_7492 glint (Lorg/joml/Vector3f;Lorg/joml/Vector3f;Lorg/joml/Matrix4fc;Lorg/joml/Matrix3fc;FLnet/minecraft/class_4588;)V
+		ARG 0 position
+		ARG 1 normal
+		ARG 2 positionTransformation
+		ARG 3 normalTransformation
+		ARG 4 scale
+		ARG 5 vertexConsumer

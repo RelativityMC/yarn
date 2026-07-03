@@ -5,6 +5,27 @@ CLASS net/minecraft/class_3050 net/minecraft/server/command/ExecuteCommand
 	FIELD field_33390 MAX_BLOCKS I
 	FIELD field_46642 INSTANTIATION_FAILURE_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
 	FIELD field_60332 LOGGER Lorg/slf4j/Logger;
+	METHOD method_1_6655 testItemPredicate (Lnet/minecraft/class_2168;Lnet/minecraft/class_1_1061;Lnet/minecraft/class_1_1077$class_1_1080;Ljava/util/function/Predicate;)I
+		ARG 0 source
+		ARG 1 sourceArg
+		ARG 2 slots
+		ARG 3 itemPredicate
+	METHOD method_1_6656 testItemSlots (Lnet/minecraft/class_2168;Lnet/minecraft/class_1_1061;Lnet/minecraft/class_1_1077$class_1_1080;)I
+		ARG 0 source
+		ARG 1 sourceArg
+		ARG 2 slots
+	METHOD method_1_6657 (Lnet/minecraft/class_7157;Lcom/mojang/brigadier/tree/CommandNode;ZLnet/minecraft/class_1_1047;Lcom/mojang/brigadier/builder/ArgumentBuilder;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+		ARG 4 builder
+	METHOD method_1_6658 (ZLnet/minecraft/class_1_1047;Lcom/mojang/brigadier/context/CommandContext;)Ljava/util/Collection;
+		ARG 2 context
+	METHOD method_1_6659 (Lnet/minecraft/class_1_1047;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 1 context
+	METHOD method_1_6660 (Lnet/minecraft/class_7157;Lcom/mojang/brigadier/tree/CommandNode;ZLnet/minecraft/class_1_1047;Lcom/mojang/brigadier/builder/ArgumentBuilder;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+		ARG 4 builder
+	METHOD method_1_6661 (ZLnet/minecraft/class_1_1047;Lcom/mojang/brigadier/context/CommandContext;)Ljava/util/Collection;
+		ARG 2 context
+	METHOD method_1_6662 (Lnet/minecraft/class_1_1047;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 1 context
 	METHOD method_13249 (Lcom/mojang/brigadier/context/CommandContext;)Z
 		ARG 0 context
 	METHOD method_13250 (II)Z

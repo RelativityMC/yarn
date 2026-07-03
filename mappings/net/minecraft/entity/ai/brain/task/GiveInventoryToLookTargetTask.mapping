@@ -1,5 +1,8 @@
 CLASS net/minecraft/class_7296 net/minecraft/entity/ai/brain/task/GiveInventoryToLookTargetTask
 	FIELD field_1_1058 giveListener Lnet/minecraft/class_7296$class_1_128;
+	FIELD field_1_7813 cooldown I
+	FIELD field_1_7814 cooldownModuleType Lnet/minecraft/class_4140;
+	FIELD field_1_7815 hasItemPredicate Ljava/util/function/Predicate;
 	FIELD field_38387 COMPLETION_RANGE I
 	FIELD field_38389 lookTargetFunction Ljava/util/function/Function;
 	FIELD field_38390 speed F
@@ -8,6 +11,9 @@ CLASS net/minecraft/class_7296 net/minecraft/entity/ai/brain/task/GiveInventoryT
 		ARG 2 speed
 		ARG 3 runTime
 		ARG 4 giveListener
+		ARG 5 cooldownModuleType
+		ARG 6 cooldown
+		ARG 7 hasItemPredicate
 	METHOD method_42649 hasItemAndTarget (Lnet/minecraft/class_1309;)Z
 		ARG 1 entity
 	METHOD method_42650 (Lnet/minecraft/class_1309;Lnet/minecraft/class_4115;)V
@@ -16,3 +22,4 @@ CLASS net/minecraft/class_7296 net/minecraft/entity/ai/brain/task/GiveInventoryT
 		METHOD method_1_1117 call (Lnet/minecraft/class_3218;Ljava/lang/Object;Lnet/minecraft/class_243;)V
 			ARG 1 world
 			ARG 2 giver
+			ARG 3 lookTargetPos

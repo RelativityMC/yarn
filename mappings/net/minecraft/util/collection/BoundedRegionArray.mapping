@@ -10,6 +10,11 @@ CLASS net/minecraft/class_9762 net/minecraft/util/collection/BoundedRegionArray
 		ARG 3 maxX
 		ARG 4 maxZ
 		ARG 5 getter
+	METHOD method_1_7299 (Lnet/minecraft/class_9762$class_1_1151;II)Ljava/lang/Object;
+		ARG 2 x
+		ARG 3 z
+	METHOD method_1_7300 map (Lnet/minecraft/class_9762$class_1_1151;)Lnet/minecraft/class_9762;
+		ARG 1 mapper
 	METHOD method_60482 get (II)Ljava/lang/Object;
 		ARG 1 x
 		ARG 2 z
@@ -26,6 +31,11 @@ CLASS net/minecraft/class_9762 net/minecraft/util/collection/BoundedRegionArray
 	METHOD method_60486 toIndex (II)I
 		ARG 1 x
 		ARG 2 z
+	CLASS class_1_1151 Mapper
+		METHOD method_1_7301 transform (Ljava/lang/Object;II)Ljava/lang/Object;
+			ARG 1 value
+			ARG 2 x
+			ARG 3 z
 	CLASS class_9763 Getter
 		METHOD method_1_19 get (II)Ljava/lang/Object;
 			ARG 1 x

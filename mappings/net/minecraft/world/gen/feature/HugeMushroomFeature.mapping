@@ -1,8 +1,8 @@
 CLASS net/minecraft/class_4625 net/minecraft/world/gen/feature/HugeMushroomFeature
-	METHOD comp_1_1106 comp_1_1121 ()Lnet/minecraft/class_6646;
-	METHOD comp_1_1107 comp_1_1122 ()Lnet/minecraft/class_4651;
-	METHOD comp_1_1108 comp_1_1123 ()I
-	METHOD comp_1_1109 comp_1_1124 ()Lnet/minecraft/class_4651;
+	METHOD comp_1_1121 comp_1_1121 ()Lnet/minecraft/class_6646;
+	METHOD comp_1_1122 comp_1_1122 ()Lnet/minecraft/class_4651;
+	METHOD comp_1_1123 comp_1_1123 ()I
+	METHOD comp_1_1124 comp_1_1124 ()Lnet/minecraft/class_4651;
 	METHOD method_23372 getCapSize (IIII)I
 		ARG 3 capSize
 		ARG 4 y

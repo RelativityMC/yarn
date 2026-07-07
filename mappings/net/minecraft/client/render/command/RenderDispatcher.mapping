@@ -19,7 +19,7 @@ CLASS net/minecraft/class_11684 net/minecraft/client/render/command/RenderDispat
 	METHOD method_1_5298 prepareFrame (Lnet/minecraft/class_1_841;Lnet/minecraft/class_11661;)Lnet/minecraft/class_11684$class_1_875;
 		ARG 1 context
 		ARG 2 queue
-	METHOD method_1_5299 renderAll (Lcom/mojang/blaze3d/systems/RenderPass;Lnet/minecraft/class_11684$class_1_875;)V
+	METHOD method_1_5299 renderAll (Lnet/minecraft/class_1_1227;Lnet/minecraft/class_11684$class_1_875;)V
 		ARG 0 renderPass
 		ARG 1 preparedFrame
 	CLASS class_1_874 Executor
@@ -50,33 +50,33 @@ CLASS net/minecraft/class_11684 net/minecraft/client/render/command/RenderDispat
 			ARG 2 queue
 		METHOD method_1_5304 clear (Ljava/util/Collection;)V
 			ARG 0 groupLists
-		METHOD method_1_5305 renderTopGizmos (Lcom/mojang/blaze3d/systems/RenderPass;)V
+		METHOD method_1_5305 renderTopGizmos (Lnet/minecraft/class_1_1227;)V
 			ARG 1 renderPass
-		METHOD method_1_5306 renderOutlines (Lcom/mojang/blaze3d/systems/RenderPass;)V
+		METHOD method_1_5306 renderOutlines (Lnet/minecraft/class_1_1227;)V
 			ARG 1 renderPass
-		METHOD method_1_5307 render (Lnet/minecraft/class_1_877;Lnet/minecraft/class_1_841;Lnet/minecraft/class_1_1153;Lcom/mojang/blaze3d/systems/RenderPass;)V
+		METHOD method_1_5307 render (Lnet/minecraft/class_1_877;Lnet/minecraft/class_1_841;Lnet/minecraft/class_1_1153;Lnet/minecraft/class_1_1227;)V
 			ARG 1 commands
 			ARG 2 context
 			ARG 3 oitStage
 			ARG 4 renderPass
-		METHOD method_1_5308 renderSolidFeatures (Lcom/mojang/blaze3d/systems/RenderPass;)V
+		METHOD method_1_5308 renderSolidFeatures (Lnet/minecraft/class_1_1227;)V
 			ARG 1 renderPass
-		METHOD method_1_5309 renderTranslucentFeatures (Lcom/mojang/blaze3d/systems/RenderPass;)V
+		METHOD method_1_5309 renderTranslucentFeatures (Lnet/minecraft/class_1_1227;)V
 			ARG 1 renderPass
-		METHOD method_1_5310 renderTranslucentParticles (Lcom/mojang/blaze3d/systems/RenderPass;)V
+		METHOD method_1_5310 renderTranslucentParticles (Lnet/minecraft/class_1_1227;)V
 			ARG 1 renderPass
 		METHOD method_1_5311 hasAnyTopGizmos ()Z
 		METHOD method_1_5312 hasAnyOutlines ()Z
 		METHOD method_1_5313 (Ljava/util/List;)Z
 			ARG 0 groupList
-		METHOD method_1_7557 renderOitTranslucentElements (Lnet/minecraft/class_1_1153;Lcom/mojang/blaze3d/systems/RenderPass;)V
+		METHOD method_1_7557 renderOitTranslucentElements (Lnet/minecraft/class_1_1153;Lnet/minecraft/class_1_1227;)V
 			ARG 1 oitStage
 			ARG 2 renderPass
-		METHOD method_1_7558 render (Lnet/minecraft/class_1_877;Lnet/minecraft/class_1_841;Lcom/mojang/blaze3d/systems/RenderPass;)V
+		METHOD method_1_7558 render (Lnet/minecraft/class_1_877;Lnet/minecraft/class_1_841;Lnet/minecraft/class_1_1227;)V
 			ARG 1 commands
 			ARG 2 context
 			ARG 3 renderPass
-		METHOD method_1_7559 renderWorldWaterMask (Lcom/mojang/blaze3d/systems/RenderPass;)V
+		METHOD method_1_7559 renderWorldWaterMask (Lnet/minecraft/class_1_1227;)V
 			ARG 1 renderPass
 		METHOD method_1_7560 hasAnyWaterMasks ()Z
 	CLASS class_1_876 Group
@@ -91,7 +91,7 @@ CLASS net/minecraft/class_11684 net/minecraft/client/render/command/RenderDispat
 			ARG 3 separateMultiBuffers
 			ARG 4 firstIndex
 			ARG 5 lastIndex
-		METHOD method_1_5314 render (Lnet/minecraft/class_1_841;Lnet/minecraft/class_1_1153;Lcom/mojang/blaze3d/systems/RenderPass;Lnet/minecraft/class_1_866;Ljava/util/List;)V
+		METHOD method_1_5314 render (Lnet/minecraft/class_1_841;Lnet/minecraft/class_1_1153;Lnet/minecraft/class_1_1227;Lnet/minecraft/class_1_866;Ljava/util/List;)V
 			ARG 1 context
 			ARG 2 oitStage
 			ARG 3 renderPass

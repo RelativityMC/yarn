@@ -808,8 +808,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_67518 createEquipment ()Lnet/minecraft/class_10630;
 	METHOD method_67650 (Lnet/minecraft/class_2338;)V
 		ARG 1 pos
-	METHOD method_68264 (Ljava/lang/String;)V
-		ARG 1 team
 	METHOD method_70670 travelFlying (Lnet/minecraft/class_243;F)V
 		ARG 1 movementInput
 		ARG 2 speed

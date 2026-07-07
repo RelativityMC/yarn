@@ -92,7 +92,6 @@ CLASS net/minecraft/server/MinecraftServer
 	FIELD field_48773 lastFullTickLogTime J
 	FIELD field_48774 tasksStartTime J
 	FIELD field_48775 waitTime J
-	FIELD field_51466 brewingRecipeRegistry Lnet/minecraft/class_1845;
 	FIELD field_53715 fuelRegistry Lnet/minecraft/class_9895;
 	FIELD field_53716 idleTickCount I
 	FIELD field_53717 suppressedExceptionsTracker Lnet/minecraft/class_9843;
@@ -466,7 +465,6 @@ CLASS net/minecraft/server/MinecraftServer
 	METHOD method_56626 shouldPushTickTimeLog ()Z
 	METHOD method_57823 showLowDiskSpaceWarning ()V
 	METHOD method_58576 getReloadableRegistries ()Lnet/minecraft/class_9383$class_9385;
-	METHOD method_59777 getBrewingRecipeRegistry ()Lnet/minecraft/class_1845;
 	METHOD method_59847 forceEnableRequestedFeatures (Lnet/minecraft/class_3283;Lnet/minecraft/class_7699;)V
 		ARG 0 resourcePackManager
 		ARG 1 enabledFeatures

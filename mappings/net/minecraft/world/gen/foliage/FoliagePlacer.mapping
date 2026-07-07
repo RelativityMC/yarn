@@ -98,23 +98,20 @@ CLASS net/minecraft/class_4647 net/minecraft/world/gen/foliage/FoliagePlacer
 		ARG 0 state
 	CLASS class_5208 TreeNode
 		COMMENT A point on a tree to generate foliage around
-		FIELD field_1_7907 trunkWidth I
-		FIELD field_1_7908 trunkHeight I
-		FIELD field_24158 center Lnet/minecraft/class_2338;
-		FIELD field_24159 foliageRadius I
+		FIELD comp_1_1329 center Lnet/minecraft/class_2338;
+		FIELD comp_1_1330 getFoliageRadius I
+		FIELD comp_1_1331 trunkWidth I
+		FIELD comp_1_1332 trunkHeight I
 		METHOD <init> (Lnet/minecraft/class_2338;III)V
 			ARG 1 center
-			ARG 2 foliageRadius
 			ARG 3 trunkWidth
 			ARG 4 trunkHeight
 		METHOD <init> (Lnet/minecraft/class_2338;IZ)V
 			ARG 1 center
-			ARG 2 foliageRadius
-			ARG 3 giantTrunk
-		METHOD method_1_7212 getTrunkWidth ()I
-		METHOD method_1_7213 getTrunkHeight ()I
-		METHOD method_27388 getCenter ()Lnet/minecraft/class_2338;
-		METHOD method_27389 getFoliageRadius ()I
+		METHOD comp_1_1329 center ()Lnet/minecraft/class_2338;
+		METHOD comp_1_1330 getFoliageRadius ()I
+		METHOD comp_1_1331 trunkWidth ()I
+		METHOD comp_1_1332 trunkHeight ()I
 		METHOD method_27390 isGiantTrunk ()Z
 			COMMENT Whether this node is the top of a giant (2x2 block) trunk
 	CLASS class_8179 BlockPlacer

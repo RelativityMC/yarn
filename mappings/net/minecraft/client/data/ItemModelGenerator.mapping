@@ -12,8 +12,6 @@ CLASS net/minecraft/class_4915 net/minecraft/client/data/ItemModelGenerator
 		ARG 2 modelCollector
 	METHOD method_1_4484 (Lnet/minecraft/class_1792;)V
 		ARG 1 dye
-	METHOD method_1_4485 (Lnet/minecraft/class_1792;)V
-		ARG 1 harness
 	METHOD method_1_6895 registerArmor (Lnet/minecraft/class_1792;Lnet/minecraft/class_1792;Lnet/minecraft/class_1792;Lnet/minecraft/class_1792;ZLjava/util/Map;)V
 		ARG 1 helmet
 		ARG 2 chestplate

@@ -2,18 +2,18 @@ CLASS net/minecraft/class_1_686 net/minecraft/client/render/StagingBuffer
 	FIELD field_1_3522 nextOffset I
 	FIELD field_1_3523 numActiveSlices I
 	METHOD method_1_2180 reset ()V
-	METHOD method_1_2181 copyTo (Lcom/mojang/blaze3d/systems/CommandEncoder;Lcom/mojang/blaze3d/buffers/GpuBuffer;JJJ)V
+	METHOD method_1_2181 copyTo (Lnet/minecraft/class_1_1256;Lnet/minecraft/class_1_1211;JJJ)V
 		ARG 1 commandEncoder
 		ARG 2 buffer
 		ARG 3 toStart
 		ARG 5 fromStart
 		ARG 7 size
 	METHOD method_1_2184 getData ()Ljava/nio/ByteBuffer;
-	METHOD method_1_4144 create (Ljava/lang/String;Lcom/mojang/blaze3d/systems/GpuDevice;I)Lnet/minecraft/class_1_686;
+	METHOD method_1_4144 create (Ljava/lang/String;Lnet/minecraft/class_1_1209;I)Lnet/minecraft/class_1_686;
 		ARG 0 name
 		ARG 1 devices
 		ARG 2 bufferSize
-	METHOD method_1_4145 uploader (Lcom/mojang/blaze3d/systems/CommandEncoder;)Lnet/minecraft/class_1_686$class_1_688;
+	METHOD method_1_4145 uploader (Lnet/minecraft/class_1_1256;)Lnet/minecraft/class_1_686$class_1_688;
 		ARG 1 commandEncoder
 	METHOD method_1_4146 copyFrom (Ljava/nio/ByteBuffer;)Lnet/minecraft/class_1_686$class_1_687;
 		ARG 1 byteBuffer
@@ -24,8 +24,8 @@ CLASS net/minecraft/class_1_686 net/minecraft/client/render/StagingBuffer
 			ARG 1 size
 	CLASS class_1_301 Ring
 		FIELD field_1_1776 subData Ljava/nio/ByteBuffer;
-		FIELD field_1_1777 sub Lcom/mojang/blaze3d/buffers/GpuBuffer;
-		FIELD field_1_1778 subView Lcom/mojang/blaze3d/buffers/GpuBufferSlice$class_1_892;
+		FIELD field_1_1777 sub Lnet/minecraft/class_1_1211;
+		FIELD field_1_1778 subView Lnet/minecraft/class_1_1254$class_1_892;
 		FIELD field_1_1779 ringBuffer Lnet/minecraft/class_11285;
 		METHOD <init> (Ljava/lang/String;I)V
 			ARG 1 name
@@ -41,12 +41,12 @@ CLASS net/minecraft/class_1_686 net/minecraft/client/render/StagingBuffer
 			ARG 1 parent
 		METHOD method_1_4149 getSize ()J
 	CLASS class_1_688 Uploader
-		FIELD field_1_3528 commandEncoder Lcom/mojang/blaze3d/systems/CommandEncoder;
-		METHOD <init> (Lnet/minecraft/class_1_686;Lcom/mojang/blaze3d/systems/CommandEncoder;)V
+		FIELD field_1_3528 commandEncoder Lnet/minecraft/class_1_1256;
+		METHOD <init> (Lnet/minecraft/class_1_686;Lnet/minecraft/class_1_1256;)V
 			ARG 2 commandEncoder
 		METHOD method_1_4150 assertStagingBufferMatches (Lnet/minecraft/class_1_686;)V
 			ARG 1 buffer
-		METHOD method_1_4151 copyFromSlice (Lnet/minecraft/class_1_686$class_1_687;Lcom/mojang/blaze3d/buffers/GpuBuffer;J)V
+		METHOD method_1_4151 copyFromSlice (Lnet/minecraft/class_1_686$class_1_687;Lnet/minecraft/class_1_1211;J)V
 			ARG 1 slice
 			ARG 2 buffer
 			ARG 3 toStart

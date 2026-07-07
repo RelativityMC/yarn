@@ -24,8 +24,6 @@ CLASS net/minecraft/class_7655 net/minecraft/registry/RegistryLoading
 		ARG 1 loader
 	METHOD method_45126 writeAndCreateLoadingException (Ljava/util/Map;)Lnet/minecraft/class_148;
 		ARG 0 exceptions
-	METHOD method_46618 createInfo (Lnet/minecraft/class_7225$class_7226;)Lnet/minecraft/class_6903$class_7862;
-		ARG 0 registry
 	METHOD method_46619 createInfoGetter (Ljava/util/List;Ljava/util/List;)Lnet/minecraft/class_6903$class_7863;
 		ARG 0 registries
 		ARG 1 additionalRegistries

@@ -1,10 +1,10 @@
 CLASS net/minecraft/class_1_154 com/mojang/blaze3d/systems/CommandEncoderBackend
-	METHOD method_1_1381 clearColorAndDepthTextures (Lcom/mojang/blaze3d/textures/GpuTexture;Lorg/joml/Vector4fc;Lcom/mojang/blaze3d/textures/GpuTexture;D)V
+	METHOD method_1_1381 clearColorAndDepthTextures (Lnet/minecraft/class_1_1231;Lorg/joml/Vector4fc;Lnet/minecraft/class_1_1231;D)V
 		ARG 1 colorAttachment
 		ARG 2 clearColor
 		ARG 3 depthAttachment
 		ARG 4 depth
-	METHOD method_1_1382 clearColorAndDepthTextures (Lcom/mojang/blaze3d/textures/GpuTexture;Lorg/joml/Vector4fc;Lcom/mojang/blaze3d/textures/GpuTexture;DIIII)V
+	METHOD method_1_1382 clearColorAndDepthTextures (Lnet/minecraft/class_1_1231;Lorg/joml/Vector4fc;Lnet/minecraft/class_1_1231;DIIII)V
 		ARG 1 colorAttachment
 		ARG 2 clearColor
 		ARG 3 depthAttachment
@@ -13,19 +13,19 @@ CLASS net/minecraft/class_1_154 com/mojang/blaze3d/systems/CommandEncoderBackend
 		ARG 7 scissorY
 		ARG 8 scissorWidth
 		ARG 9 scissorHeight
-	METHOD method_1_1383 clearColorTexture (Lcom/mojang/blaze3d/textures/GpuTexture;Lorg/joml/Vector4fc;)V
+	METHOD method_1_1383 clearColorTexture (Lnet/minecraft/class_1_1231;Lorg/joml/Vector4fc;)V
 		ARG 1 texture
 		ARG 2 clearColor
-	METHOD method_1_1384 clearDepthTexture (Lcom/mojang/blaze3d/textures/GpuTexture;D)V
+	METHOD method_1_1384 clearDepthTexture (Lnet/minecraft/class_1_1231;D)V
 		ARG 1 texture
 		ARG 2 depth
-	METHOD method_1_1385 copyTextureToBuffer (Lcom/mojang/blaze3d/textures/GpuTexture;Lcom/mojang/blaze3d/buffers/GpuBuffer;JLjava/lang/Runnable;I)V
+	METHOD method_1_1385 copyTextureToBuffer (Lnet/minecraft/class_1_1231;Lnet/minecraft/class_1_1211;JLjava/lang/Runnable;I)V
 		ARG 1 source
 		ARG 2 target
 		ARG 3 offset
 		ARG 5 dataUploadedCallback
 		ARG 6 mipLevel
-	METHOD method_1_1386 copyTextureToBuffer (Lcom/mojang/blaze3d/textures/GpuTexture;Lcom/mojang/blaze3d/buffers/GpuBuffer;JLjava/lang/Runnable;IIIII)V
+	METHOD method_1_1386 copyTextureToBuffer (Lnet/minecraft/class_1_1231;Lnet/minecraft/class_1_1211;JLjava/lang/Runnable;IIIII)V
 		ARG 1 source
 		ARG 2 target
 		ARG 3 offset
@@ -35,7 +35,7 @@ CLASS net/minecraft/class_1_154 com/mojang/blaze3d/systems/CommandEncoderBackend
 		ARG 8 sourceY
 		ARG 9 width
 		ARG 10 height
-	METHOD method_1_1387 copyTextureToTexture (Lcom/mojang/blaze3d/textures/GpuTexture;Lcom/mojang/blaze3d/textures/GpuTexture;IIIIIII)V
+	METHOD method_1_1387 copyTextureToTexture (Lnet/minecraft/class_1_1231;Lnet/minecraft/class_1_1231;IIIIIII)V
 		ARG 1 source
 		ARG 2 target
 		ARG 3 mipLevel
@@ -45,16 +45,16 @@ CLASS net/minecraft/class_1_154 com/mojang/blaze3d/systems/CommandEncoderBackend
 		ARG 7 sourceY
 		ARG 8 width
 		ARG 9 height
-	METHOD method_1_1388 copyToBuffer (Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
+	METHOD method_1_1388 copyToBuffer (Lnet/minecraft/class_1_1254;Lnet/minecraft/class_1_1254;)V
 		ARG 1 from
 		ARG 2 to
-	METHOD method_1_1389 createFence ()Lcom/mojang/blaze3d/buffers/GpuFence;
+	METHOD method_1_1389 createFence ()Lnet/minecraft/class_1_1212;
 	METHOD method_1_1391 createRenderPass (Lnet/minecraft/class_1_900;)Lnet/minecraft/class_1_149;
 		ARG 1 description
-	METHOD method_1_1397 writeToBuffer (Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Ljava/nio/ByteBuffer;)V
+	METHOD method_1_1397 writeToBuffer (Lnet/minecraft/class_1_1254;Ljava/nio/ByteBuffer;)V
 		ARG 1 slice
 		ARG 2 source
-	METHOD method_1_1398 writeToTexture (Lcom/mojang/blaze3d/buffers/GpuBufferSlice;IIIILcom/mojang/blaze3d/textures/GpuTexture;IIIIII)V
+	METHOD method_1_1398 writeToTexture (Lnet/minecraft/class_1_1254;IIIILnet/minecraft/class_1_1231;IIIIII)V
 		ARG 1 source
 		ARG 2 sourceX
 		ARG 3 sourceY
@@ -67,7 +67,7 @@ CLASS net/minecraft/class_1_154 com/mojang/blaze3d/systems/CommandEncoderBackend
 		ARG 10 targetHeight
 		ARG 11 mipmap
 		ARG 12 depthOrLayer
-	METHOD method_1_1399 writeToTexture (Lcom/mojang/blaze3d/textures/GpuTexture;Ljava/nio/ByteBuffer;IIIIII)V
+	METHOD method_1_1399 writeToTexture (Lnet/minecraft/class_1_1231;Ljava/nio/ByteBuffer;IIIIII)V
 		ARG 1 target
 		ARG 2 buf
 		ARG 3 height

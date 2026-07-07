@@ -36,15 +36,6 @@ CLASS net/minecraft/class_7733 net/minecraft/command/argument/RegistryEntryRefer
 		ARG 0 element
 		ARG 1 type
 		ARG 2 expectedType
-	METHOD method_45607 getConfiguredFeature (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880$class_6883;
-		ARG 0 context
-		ARG 1 name
-	METHOD method_45608 getStructure (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880$class_6883;
-		ARG 0 context
-		ARG 1 name
-	METHOD method_45609 getEntityType (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880$class_6883;
-		ARG 0 context
-		ARG 1 name
 	METHOD method_45610 getSummonableEntityType (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880$class_6883;
 		ARG 0 context
 		ARG 1 name

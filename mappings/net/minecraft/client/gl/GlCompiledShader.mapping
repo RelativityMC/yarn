@@ -3,8 +3,8 @@ CLASS net/minecraft/class_10141 net/minecraft/client/gl/GlCompiledShader
 	FIELD field_53828 id Lnet/minecraft/class_2960;
 	FIELD field_53829 handle I
 	FIELD field_57880 INVALID_SHADER Lnet/minecraft/class_10141;
-	FIELD field_57881 shaderType Lcom/mojang/blaze3d/shaders/ShaderType;
-	METHOD <init> (ILnet/minecraft/class_2960;Lcom/mojang/blaze3d/shaders/ShaderType;)V
+	FIELD field_57881 shaderType Lnet/minecraft/class_1_1229;
+	METHOD <init> (ILnet/minecraft/class_2960;Lnet/minecraft/class_1_1229;)V
 		ARG 1 handle
 		ARG 2 id
 		ARG 3 shaderType

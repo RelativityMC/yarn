@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_1_1176 net/minecraft/util/math/intprovider/VeryBiasedToBottomIntProvider
-	FIELD comp_1_1183 max I
-	FIELD comp_1_1184 min I
+	FIELD comp_1_345 max I
+	FIELD comp_1_346 min I
 	METHOD method_1_7500 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
 	METHOD method_1_7501 (Lnet/minecraft/class_1_1176;)Lcom/mojang/serialization/DataResult;

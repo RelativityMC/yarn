@@ -21,11 +21,11 @@ CLASS net/minecraft/class_287 net/minecraft/client/render/BufferBuilder
 	FIELD field_1_6281 UV1 I
 	FIELD field_1_6282 UV2 I
 	FIELD field_1_6283 ELEMENT_NAMES [Ljava/lang/String;
-	FIELD field_1_6284 elements [Lcom/mojang/blaze3d/vertex/VertexFormatElement;
+	FIELD field_1_6284 elements [Lnet/minecraft/class_1_1271;
 	FIELD field_1_7965 LINE_WIDTH I
 	FIELD field_1554 vertexCount I
 	FIELD field_1556 building Z
-	FIELD field_1565 vertexFormat Lcom/mojang/blaze3d/vertex/VertexFormat;
+	FIELD field_1565 vertexFormat Lnet/minecraft/class_1_1232;
 	FIELD field_21594 canSkipElementChecks Z
 		COMMENT Whether this builder is aware of the vertex format and can skip checks
 		COMMENT for the current target element while building a vertex in {@link
@@ -38,7 +38,7 @@ CLASS net/minecraft/class_287 net/minecraft/client/render/BufferBuilder
 	FIELD field_52074 vertexSizeByte I
 	FIELD field_52075 requiredMask I
 	FIELD field_52077 currentMask I
-	METHOD <init> (Lnet/minecraft/class_9799;Lnet/minecraft/class_5596;Lcom/mojang/blaze3d/vertex/VertexFormat;)V
+	METHOD <init> (Lnet/minecraft/class_9799;Lnet/minecraft/class_5596;Lnet/minecraft/class_1_1232;)V
 		ARG 1 allocator
 		ARG 2 drawMode
 		ARG 3 vertexFormat

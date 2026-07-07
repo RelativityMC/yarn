@@ -5,8 +5,8 @@ CLASS net/minecraft/class_10866 net/minecraft/client/gl/GlRenderPassBackend
 	FIELD field_1_6270 dirty Z
 	FIELD field_57867 IS_DEVELOPMENT Z
 	FIELD field_57868 pipeline Lnet/minecraft/class_10867;
-	FIELD field_57869 vertexBuffers [Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
-	FIELD field_57870 indexBuffer Lcom/mojang/blaze3d/buffers/GpuBuffer;
+	FIELD field_57869 vertexBuffers [Lnet/minecraft/class_1_1254;
+	FIELD field_57870 indexBuffer Lnet/minecraft/class_1_1211;
 	FIELD field_57871 indexType Lnet/minecraft/class_5595;
 	FIELD field_57872 scissorState Lnet/minecraft/class_11219;
 	FIELD field_57873 simpleUniforms Ljava/util/HashMap;

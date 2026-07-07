@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_751 net/minecraft/client/gui/CubeMapRenderer
 	FIELD field_32680 FACES_COUNT I
-	FIELD field_60576 buffer Lcom/mojang/blaze3d/buffers/GpuBuffer;
+	FIELD field_60576 buffer Lnet/minecraft/class_1_1211;
 	FIELD field_60577 projectionMatrix Lnet/minecraft/class_11278;
 	FIELD field_60578 id Lnet/minecraft/class_2960;
 	METHOD <init> (Lnet/minecraft/class_2960;)V
@@ -10,4 +10,4 @@ CLASS net/minecraft/class_751 net/minecraft/client/gui/CubeMapRenderer
 		ARG 2 y
 	METHOD method_65815 registerTextures (Lnet/minecraft/class_1060;)V
 		ARG 1 textureManager
-	METHOD method_67548 upload ()Lcom/mojang/blaze3d/buffers/GpuBuffer;
+	METHOD method_67548 upload ()Lnet/minecraft/class_1_1211;

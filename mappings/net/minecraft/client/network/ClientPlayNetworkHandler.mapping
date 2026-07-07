@@ -31,7 +31,6 @@ CLASS net/minecraft/class_634 net/minecraft/client/network/ClientPlayNetworkHand
 	FIELD field_46187 worldCleared Z
 	FIELD field_47878 scoreboard Lnet/minecraft/class_269;
 	FIELD field_48403 secureChatEnforced Z
-	FIELD field_51439 brewingRecipeRegistry Lnet/minecraft/class_1845;
 	FIELD field_51825 searchManager Lnet/minecraft/class_1124;
 	FIELD field_53030 fuelRegistry Lnet/minecraft/class_9895;
 	FIELD field_53031 profileKeyPairFuture Ljava/util/concurrent/CompletableFuture;
@@ -154,7 +153,6 @@ CLASS net/minecraft/class_634 net/minecraft/client/network/ClientPlayNetworkHand
 		ARG 3 reason
 	METHOD method_54134 clearWorld ()V
 	METHOD method_55823 getScoreboard ()Lnet/minecraft/class_269;
-	METHOD method_59754 getBrewingRecipeRegistry ()Lnet/minecraft/class_1845;
 	METHOD method_59842 getWorldEntryReason (ZLnet/minecraft/class_5321;Lnet/minecraft/class_5321;)Lnet/minecraft/class_3928$class_9678;
 		ARG 1 dead
 		ARG 2 from

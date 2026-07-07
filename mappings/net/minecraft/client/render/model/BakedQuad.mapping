@@ -11,11 +11,10 @@ CLASS net/minecraft/class_777 net/minecraft/client/render/model/BakedQuad
 	METHOD method_76649 getTexcoords (I)J
 		ARG 1 index
 	CLASS class_1_320 SpriteInfo
-		METHOD method_1_2310 of (Lnet/minecraft/class_1_314$class_1_315;Lnet/minecraft/class_1_303;IZI)Lnet/minecraft/class_777$class_1_320;
+		METHOD method_1_2310 of (Lnet/minecraft/class_1_314$class_1_315;Lnet/minecraft/class_1_303;ILnet/minecraft/class_2350;I)Lnet/minecraft/class_777$class_1_320;
 			ARG 0 sprite
 			ARG 1 transparency
 			ARG 2 tintIndex
-			ARG 3 shade
 			ARG 4 lightEmission
 		METHOD method_1_3043 getFlags ()I
 		METHOD method_1_3044 hasTint ()Z

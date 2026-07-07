@@ -9,10 +9,8 @@ CLASS net/minecraft/class_7926 net/minecraft/server/command/FillBiomeCommand
 	METHOD method_47530 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_47531 createBiomeSupplier (Lorg/apache/commons/lang3/mutable/MutableInt;Lnet/minecraft/class_2791;Lnet/minecraft/class_3341;Lnet/minecraft/class_6880;Ljava/util/function/Predicate;)Lnet/minecraft/class_6780;
-		ARG 0 counter
 		ARG 1 chunk
 		ARG 2 box
-		ARG 3 biome
 		ARG 4 filter
 	METHOD method_47533 execute (Lnet/minecraft/class_2168;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;Lnet/minecraft/class_6880$class_6883;Ljava/util/function/Predicate;)I
 		ARG 0 source
@@ -20,11 +18,10 @@ CLASS net/minecraft/class_7926 net/minecraft/server/command/FillBiomeCommand
 		ARG 2 to
 		ARG 3 biome
 		ARG 4 filter
-	METHOD method_47534 (Lnet/minecraft/class_2791;Lnet/minecraft/class_3341;Ljava/util/function/Predicate;Lorg/apache/commons/lang3/mutable/MutableInt;Lnet/minecraft/class_6880;IIILnet/minecraft/class_6544$class_6552;)Lnet/minecraft/class_6880;
+	METHOD method_47534 (Lnet/minecraft/class_2791;Lnet/minecraft/class_3341;Ljava/util/function/Predicate;Lnet/minecraft/class_6880;Lorg/apache/commons/lang3/mutable/MutableInt;IIILnet/minecraft/class_6544$class_6552;)Lnet/minecraft/class_6880;
 		ARG 5 x
 		ARG 6 y
 		ARG 7 z
-		ARG 8 noise
 	METHOD method_47535 convertPos (Lnet/minecraft/class_2338;)Lnet/minecraft/class_2338;
 		ARG 0 pos
 	METHOD method_47536 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
@@ -46,7 +43,3 @@ CLASS net/minecraft/class_7926 net/minecraft/server/command/FillBiomeCommand
 		ARG 5 feedbackConsumer
 	METHOD method_55341 (Lnet/minecraft/class_2168;Ljava/util/function/Supplier;)V
 		ARG 1 feedbackSupplier
-	METHOD method_55342 (Lnet/minecraft/class_6880;)Z
-		ARG 0 biomex
-	METHOD method_55343 (Ljava/util/function/Supplier;)V
-		ARG 0 feedbackSupplier

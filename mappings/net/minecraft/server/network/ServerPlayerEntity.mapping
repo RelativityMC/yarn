@@ -147,8 +147,8 @@ CLASS net/minecraft/class_3222 net/minecraft/server/network/ServerPlayerEntity
 			COMMENT the updated section position
 	METHOD method_18783 worldChanged (Lnet/minecraft/class_3218;)V
 		ARG 1 origin
-	METHOD method_19504 (Lnet/minecraft/class_3902;)V
-		ARG 1 unit
+	METHOD method_19504 (Lnet/minecraft/class_2244;ZLnet/minecraft/class_3902;)V
+		ARG 3 unit
 	METHOD method_26283 (Lnet/minecraft/class_1588;)Z
 		ARG 1 entity
 	METHOD method_26284 setSpawnPoint (Lnet/minecraft/class_3222$class_10766;Z)V

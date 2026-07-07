@@ -1,16 +1,14 @@
 CLASS net/minecraft/class_1_849 net/minecraft/client/render/command/ParticleCommandRenderer
 	FIELD field_1_6225 TYPE Lnet/minecraft/class_1_867;
-	FIELD field_1_6226 modelViewUniform Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+	FIELD field_1_6226 modelViewUniform Lnet/minecraft/class_1_1254;
 	FIELD field_1_6227 groups Ljava/util/List;
-	METHOD method_1_5165 doRender (Lnet/minecraft/class_1_807;Ljava/util/Map;Lcom/mojang/blaze3d/systems/RenderPass;Lnet/minecraft/class_1060;Lnet/minecraft/class_1_1153;)V
+	METHOD method_1_5165 doRender (Lnet/minecraft/class_1_807;Lnet/minecraft/class_1_849$class_1_883;Lnet/minecraft/class_1_1227;Lnet/minecraft/class_1_1153;)V
 		ARG 0 multiDrawBuffer
-		ARG 1 geometryBuffers
 		ARG 2 renderPass
-		ARG 3 textureManager
-		ARG 4 oitStage
+		ARG 3 oitStage
 	METHOD method_1_5349 (Lnet/minecraft/class_1_807;Lnet/minecraft/class_3940$class_11941;)Lnet/minecraft/class_1_807$class_1_808;
 		ARG 1 renderType
-	METHOD method_1_7564 getOitPipeline (Lnet/minecraft/class_1_1153;Lnet/minecraft/class_3940$class_11941;)Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	METHOD method_1_7564 getOitPipeline (Lnet/minecraft/class_1_1153;Lnet/minecraft/class_3940$class_11941;)Lnet/minecraft/class_1_1257;
 		ARG 0 oitStage
 		ARG 1 renderType
 	CLASS class_1_883 Group

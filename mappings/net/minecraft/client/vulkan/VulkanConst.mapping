@@ -17,11 +17,11 @@ CLASS net/minecraft/class_1_670 net/minecraft/client/vulkan/VulkanConst
 		ARG 0 blendOperation
 	METHOD method_1_4009 toVkDepthTest (Lnet/minecraft/class_1_381;)I
 		ARG 0 depthTest
-	METHOD method_1_4010 toVkPolygonMode (Lcom/mojang/blaze3d/platform/PolygonMode;)I
+	METHOD method_1_4010 toVkPolygonMode (Lnet/minecraft/class_1_1238;)I
 		ARG 0 polygonMode
-	METHOD method_1_4011 toVkAddressMode (Lcom/mojang/blaze3d/textures/AddressMode;)I
+	METHOD method_1_4011 toVkAddressMode (Lnet/minecraft/class_1_1239;)I
 		ARG 0 addressMode
-	METHOD method_1_4012 toVkFilterMode (Lcom/mojang/blaze3d/textures/FilterMode;)I
+	METHOD method_1_4012 toVkFilterMode (Lnet/minecraft/class_1_1230;)I
 		ARG 0 filterMode
 	METHOD method_1_4013 toVkTopology (Lnet/minecraft/class_5596;)I
 	METHOD method_1_4678 getVkPresentMode (Lnet/minecraft/class_1_665$class_1_774;)I

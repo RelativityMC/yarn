@@ -16,5 +16,4 @@ CLASS net/minecraft/class_10289 net/minecraft/recipe/PreparedRecipes
 		ARG 1 type
 		ARG 2 input
 		ARG 3 world
-	METHOD method_64700 of (Ljava/lang/Iterable;)Lnet/minecraft/class_10289;
-		ARG 0 recipes
+	METHOD method_64700 of (Lnet/minecraft/class_7225;)Lnet/minecraft/class_10289;

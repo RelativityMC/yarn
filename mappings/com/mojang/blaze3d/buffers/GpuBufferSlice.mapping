@@ -1,8 +1,8 @@
-CLASS com/mojang/blaze3d/buffers/GpuBufferSlice
-	METHOD map (ZZ)Lcom/mojang/blaze3d/buffers/GpuBufferSlice$class_1_892;
+CLASS net/minecraft/class_1_1254 com/mojang/blaze3d/buffers/GpuBufferSlice
+	METHOD method_1_7924 (ZZ)Lnet/minecraft/class_1_1254$class_1_892;
 		ARG 1 read
 		ARG 2 write
-	METHOD slice (JJ)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+	METHOD method_1_7925 (JJ)Lnet/minecraft/class_1_1254;
 		ARG 1 offset
 		ARG 3 length
 	CLASS class_1_892 Mapped

@@ -1,12 +1,12 @@
 CLASS net/minecraft/class_1_12 net/minecraft/client/world/LightmapTexture
 	FIELD field_1_104 UNIFORM_SIZE I
 	FIELD field_1_105 TEXTURE_SIZE I
-	FIELD field_1_106 texture Lcom/mojang/blaze3d/textures/GpuTexture;
-	FIELD field_1_107 textureView Lcom/mojang/blaze3d/textures/GpuTextureView;
+	FIELD field_1_106 texture Lnet/minecraft/class_1_1231;
+	FIELD field_1_107 textureView Lnet/minecraft/class_1_1260;
 	FIELD field_1_108 uniformRingBuffer Lnet/minecraft/class_11285;
 	METHOD method_1_406 getBrightness (Lnet/minecraft/class_2874;I)F
 		ARG 0 dimensionType
 		ARG 1 lightLevel
-	METHOD method_1_407 getTextureView ()Lcom/mojang/blaze3d/textures/GpuTextureView;
+	METHOD method_1_407 getTextureView ()Lnet/minecraft/class_1_1260;
 	METHOD method_1_410 prepareRender (Lnet/minecraft/class_1_50;)V
 		ARG 1 state

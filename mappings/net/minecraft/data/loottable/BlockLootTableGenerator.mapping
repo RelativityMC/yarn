@@ -4,11 +4,9 @@ CLASS net/minecraft/class_7788 net/minecraft/data/loottable/BlockLootTableGenera
 	FIELD field_40609 requiredFeatures Lnet/minecraft/class_7699;
 	FIELD field_40610 lootTables Ljava/util/Map;
 	FIELD field_40611 LEAVES_STICK_DROP_CHANCE [F
-	FIELD field_51845 registries Lnet/minecraft/class_7225$class_7874;
-	METHOD <init> (Ljava/util/Set;Lnet/minecraft/class_7699;Lnet/minecraft/class_7225$class_7874;)V
+	METHOD <init> (Ljava/util/Set;Lnet/minecraft/class_7699;Lnet/minecraft/class_7791$class_1_1214;)V
 		ARG 1 explosionImmuneItems
 		ARG 2 requiredFeatures
-		ARG 3 registries
 	METHOD method_10379 generate ()V
 	METHOD method_45975 dropsNothing ()Lnet/minecraft/class_52$class_53;
 	METHOD method_45976 drops (Lnet/minecraft/class_1935;)Lnet/minecraft/class_52$class_53;
@@ -25,7 +23,6 @@ CLASS net/minecraft/class_7788 net/minecraft/data/loottable/BlockLootTableGenera
 	METHOD method_45980 slabDrops (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 drop
 	METHOD method_45981 oreDrops (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792;)Lnet/minecraft/class_52$class_53;
-		ARG 1 withSilkTouch
 		ARG 2 withoutSilkTouch
 	METHOD method_45982 cropDrops (Lnet/minecraft/class_2248;Lnet/minecraft/class_1792;Lnet/minecraft/class_1792;Lnet/minecraft/class_5341$class_210;)Lnet/minecraft/class_52$class_53;
 		ARG 1 crop
@@ -111,11 +108,8 @@ CLASS net/minecraft/class_7788 net/minecraft/data/loottable/BlockLootTableGenera
 	METHOD method_46009 pottedPlantDrops (Lnet/minecraft/class_1935;)Lnet/minecraft/class_52$class_53;
 		ARG 1 drop
 	METHOD method_46010 copperOreDrops (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 drop
 	METHOD method_46011 lapisOreDrops (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 drop
 	METHOD method_46012 redstoneOreDrops (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 drop
 	METHOD method_46013 bannerDrops (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 drop
 	METHOD method_46014 beeNestDrops (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
@@ -125,9 +119,7 @@ CLASS net/minecraft/class_7788 net/minecraft/data/loottable/BlockLootTableGenera
 	METHOD method_46016 glowBerryDrops (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 drop
 	METHOD method_46017 shortPlantDrops (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 withShears
 	METHOD method_46018 mangroveLeavesDrops (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 leaves
 	METHOD method_46019 seagrassDrops (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 seagrass
 	METHOD method_46020 candleDrops (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
@@ -149,8 +141,8 @@ CLASS net/minecraft/class_7788 net/minecraft/data/loottable/BlockLootTableGenera
 	METHOD method_60392 createWithSilkTouchOrShearsCondition ()Lnet/minecraft/class_5341$class_210;
 	METHOD method_60393 createWithoutShearsOrSilkTouchCondition ()Lnet/minecraft/class_5341$class_210;
 	METHOD method_62727 createWithShearsCondition ()Lnet/minecraft/class_5341$class_210;
-	METHOD method_63538 (Ljava/util/Set;Lnet/minecraft/class_2248;Ljava/util/function/BiConsumer;Lnet/minecraft/class_5321;)V
-		ARG 4 lootTableKey
+	METHOD method_63538 (Ljava/util/Set;Lnet/minecraft/class_2248;Lnet/minecraft/class_5321;)V
+		ARG 3 lootTableKey
 	METHOD method_64930 paleMossCarpetDrops (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_65053 dropsWithSilkTouchOrShears (Lnet/minecraft/class_1935;)Lnet/minecraft/class_52$class_53;

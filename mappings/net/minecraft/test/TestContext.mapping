@@ -94,9 +94,6 @@ CLASS net/minecraft/class_4516 net/minecraft/test/TestContext
 		ARG 3 reason
 	METHOD method_1_6744 alignYawToBlock (Lnet/minecraft/class_1297;)V
 		ARG 1 enttity
-	METHOD method_1_6745 setDefaultClockTime (JLnet/minecraft/class_5321;)V
-		ARG 1 ticks
-		ARG 3 world
 	METHOD method_1_6746 useItem (Lnet/minecraft/class_1657;Lnet/minecraft/class_1792;Lnet/minecraft/class_2338;)V
 		ARG 1 player
 		ARG 2 item

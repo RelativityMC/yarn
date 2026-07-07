@@ -17,7 +17,7 @@ CLASS net/minecraft/class_1_679 net/minecraft/client/vulkan/VulkanBackend
 		ARG 4 device
 		ARG 5 vmaAllocator
 		ARG 7 markerRecorder
-	METHOD method_1_4047 compileShader (Lnet/minecraft/class_2960;Lcom/mojang/blaze3d/shaders/ShaderType;Lnet/minecraft/class_10149;Lnet/minecraft/class_12289;)Lnet/minecraft/class_1_753;
+	METHOD method_1_4047 compileShader (Lnet/minecraft/class_2960;Lnet/minecraft/class_1_1229;Lnet/minecraft/class_10149;Lnet/minecraft/class_12289;)Lnet/minecraft/class_1_753;
 		ARG 4 sourceGetter
 	METHOD method_1_4048 getComputeQueue ()Lnet/minecraft/class_1_674;
 	METHOD method_1_4052 getGraphicsAndComputeQueue ()Lnet/minecraft/class_1_674;

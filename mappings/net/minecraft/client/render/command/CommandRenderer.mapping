@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_1_863 net/minecraft/client/render/command/CommandRenderer
 	METHOD method_1_5242 beginPrepare (Lnet/minecraft/class_1_841;)V
 		ARG 1 context
-	METHOD method_1_5243 render (Lnet/minecraft/class_1_841;Lnet/minecraft/class_1_1153;Lcom/mojang/blaze3d/systems/RenderPass;ILjava/util/List;Z)V
+	METHOD method_1_5243 render (Lnet/minecraft/class_1_841;Lnet/minecraft/class_1_1153;Lnet/minecraft/class_1_1227;ILjava/util/List;Z)V
 		ARG 1 context
 		ARG 2 oitStage
 		ARG 3 renderPass

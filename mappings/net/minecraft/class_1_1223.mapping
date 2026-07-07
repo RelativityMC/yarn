@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_1223
+	CLASS class_8992 LazyReferenceEntry
+		FIELD field_47490 supplier Ljava/util/function/Supplier;
+		METHOD <init> (Lnet/minecraft/class_7876;Lnet/minecraft/class_5321;)V
+			ARG 1 owner
+			ARG 2 key

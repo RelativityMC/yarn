@@ -1,58 +1,67 @@
-CLASS com/mojang/blaze3d/opengl/GlStateManager
-	METHOD _activeTexture (I)V
+CLASS net/minecraft/class_1_1267 com/mojang/blaze3d/opengl/GlStateManager
+	METHOD method_1_8022 _activeTexture (I)V
 		ARG 0 texture
-	METHOD _bindTexture (I)V
+	METHOD method_1_8023 (I)V
 		ARG 0 texture
-	METHOD _blendFuncSeparate (IIII)V
+	METHOD method_1_8025 (IIII)V
 		ARG 0 srcFactorRGB
 		ARG 1 dstFactorRgb
 		ARG 2 srcFactorAlpha
 		ARG 3 dstFactorAlpha
-	METHOD _clear (I)V
+	METHOD method_1_8026 _clear (I)V
 		ARG 0 mask
-	METHOD _colorMask (I)V
+	METHOD method_1_8029 (I)V
 		ARG 0 writeMask
-	METHOD _deleteTexture (I)V
+	METHOD method_1_8031 (I)V
 		ARG 0 texture
-	METHOD _depthFunc (I)V
+	METHOD method_1_8032 (I)V
 		ARG 0 func
-	METHOD _depthMask (Z)V
+	METHOD method_1_8033 (Z)V
 		ARG 0 mask
-	METHOD _drawElements (IIIJ)V
+	METHOD method_1_8041 (IIIJ)V
 		ARG 1 type
 		ARG 2 count
-	METHOD _getInteger (I)I
+	METHOD method_1_8050 _getError ()I
+	METHOD method_1_8051 _getInteger (I)I
 		ARG 0 pname
-	METHOD _getString (I)Ljava/lang/String;
+	METHOD method_1_8052 _getString (I)Ljava/lang/String;
 		ARG 0 name
-	METHOD _getTexLevelParameter (III)I
+	METHOD method_1_8053 _getTexLevelParameter (III)I
 		ARG 2 pname
-	METHOD _glBindAttribLocation (IILjava/lang/CharSequence;)V
+	METHOD method_1_8054 (IILjava/lang/CharSequence;)V
 		ARG 1 index
-	METHOD _glBindFramebuffer (II)V
+	METHOD method_1_8055 _bindBuffer (II)V
+	METHOD method_1_8056 _glBindFramebuffer (II)V
 		ARG 0 target
 		ARG 1 framebuffer
-	METHOD _glBindVertexArray (I)V
+	METHOD method_1_8057 (I)V
 		ARG 0 array
-	METHOD _glFramebufferTexture2D (IIIII)V
+	METHOD method_1_8058 _glBlitFrameBuffer (IIIIIIIIII)V
+	METHOD method_1_8059 _bufferData (IJI)V
+	METHOD method_1_8060 _bufferData (ILjava/nio/ByteBuffer;I)V
+	METHOD method_1_8062 _glClientWaitSync (JIJ)I
+	METHOD method_1_8066 _glFenceSync (II)J
+	METHOD method_1_8067 _glFramebufferTexture2D (IIIII)V
 		ARG 0 target
 		ARG 1 attachment
 		ARG 2 textureTarget
 		ARG 3 texture
 		ARG 4 level
-	METHOD _glMapBufferRange (IJJI)Ljava/nio/ByteBuffer;
+	METHOD method_1_8071 (IJJI)Ljava/nio/ByteBuffer;
 		ARG 3 range
-	METHOD _glUniform1i (II)V
+	METHOD method_1_8072 (II)V
 		ARG 1 value
-	METHOD _logicOp (I)V
+	METHOD method_1_8073 _unmapBuffer (I)V
+	METHOD method_1_8075 _logicOp (I)V
 		ARG 0 op
-	METHOD _pixelStore (II)V
+	METHOD method_1_8076 _pixelStore (II)V
 		ARG 0 pname
 		ARG 1 param
-	METHOD _polygonOffset (FF)V
+	METHOD method_1_8077 _polygonMode (II)V
+	METHOD method_1_8078 (FF)V
 		ARG 0 factor
 		ARG 1 units
-	METHOD _readPixels (IIIIIIJ)V
+	METHOD method_1_8079 _readPixels (IIIIIIJ)V
 		ARG 0 x
 		ARG 1 y
 		ARG 2 width
@@ -60,39 +69,42 @@ CLASS com/mojang/blaze3d/opengl/GlStateManager
 		ARG 4 format
 		ARG 5 type
 		ARG 6 data
-	METHOD _scissorBox (IIII)V
+	METHOD method_1_8080 (IIII)V
 		ARG 0 x
 		ARG 1 y
 		ARG 2 width
 		ARG 3 height
-	METHOD _texImage2D (IIIIIIIILjava/nio/ByteBuffer;)V
+	METHOD method_1_8081 _texImage2D (IIIIIIIILjava/nio/ByteBuffer;)V
 		ARG 2 internalFormat
-	METHOD _texParameter (III)V
+	METHOD method_1_8082 _texParameter (III)V
 		ARG 1 pname
 		ARG 2 param
-	METHOD _texSubImage2D (IIIIIIIIJ)V
+	METHOD method_1_8083 _texSubImage2D (IIIIIIIIJ)V
 		ARG 2 offsetX
 		ARG 3 offsetY
-	METHOD _texSubImage2D (IIIIIIIILjava/nio/ByteBuffer;)V
+	METHOD method_1_8084 _texSubImage2D (IIIIIIIILjava/nio/ByteBuffer;)V
 		ARG 2 offsetX
 		ARG 3 offsetY
-	METHOD _vertexAttribIPointer (IIIIJ)V
+	METHOD method_1_8085 (IIIIJ)V
 		ARG 4 pointer
-	METHOD _vertexAttribPointer (IIIZIJ)V
+	METHOD method_1_8086 (IIIZIJ)V
 		ARG 5 pointer
-	METHOD getFrameBuffer (I)I
+	METHOD method_1_8089 getFrameBuffer (I)I
 		ARG 0 target
-	METHOD glBlendFuncSeparate (IIII)V
+	METHOD method_1_8092 (IIII)V
 		ARG 0 srcFactorRgb
 		ARG 1 dstFactorRgb
 		ARG 2 srcFactorAlpha
 		ARG 3 dstFactorAlpha
-	METHOD lambda$static$0 (I)Lcom/mojang/blaze3d/opengl/GlStateManager$class_1039;
+	METHOD method_1_8095 _createShader (I)I
+	METHOD method_1_8100 _getProgram (II)I
+	METHOD method_1_8102 _getShader (II)I
+	METHOD method_1_8107 (I)Lnet/minecraft/class_1_1267$class_1039;
 		ARG 0 index
 	CLASS class_1017 BlendFuncState
 		FIELD field_1_3543 opAlpha I
 		FIELD field_1_3544 opRgb I
-		FIELD field_5045 capState Lcom/mojang/blaze3d/opengl/GlStateManager$class_1018;
+		FIELD field_5045 capState Lnet/minecraft/class_1_1267$class_1018;
 		FIELD field_5046 dstFactorAlpha I
 		FIELD field_5047 srcFactorAlpha I
 		FIELD field_5048 dstFactorRgb I
@@ -107,19 +119,19 @@ CLASS com/mojang/blaze3d/opengl/GlStateManager
 			ARG 1 state
 		METHOD method_4471 enable ()V
 	CLASS class_1021 LogicOpState
-		FIELD field_5058 capState Lcom/mojang/blaze3d/opengl/GlStateManager$class_1018;
+		FIELD field_5058 capState Lnet/minecraft/class_1_1267$class_1018;
 		FIELD field_5059 op I
 	CLASS class_1025 CullFaceState
-		FIELD field_5072 capState Lcom/mojang/blaze3d/opengl/GlStateManager$class_1018;
+		FIELD field_5072 capState Lnet/minecraft/class_1_1267$class_1018;
 	CLASS class_1026 DepthTestState
-		FIELD field_5074 capState Lcom/mojang/blaze3d/opengl/GlStateManager$class_1018;
+		FIELD field_5074 capState Lnet/minecraft/class_1_1267$class_1018;
 		FIELD field_5075 func I
 		FIELD field_5076 mask Z
 	CLASS class_1031 PolygonOffsetState
 		FIELD field_5122 units F
-		FIELD field_5123 capFill Lcom/mojang/blaze3d/opengl/GlStateManager$class_1018;
+		FIELD field_5123 capFill Lnet/minecraft/class_1_1267$class_1018;
 		FIELD field_5124 factor F
 	CLASS class_1039 Texture2DState
 		FIELD field_5167 boundTexture I
 	CLASS class_5518 ScissorTestState
-		FIELD field_26840 capState Lcom/mojang/blaze3d/opengl/GlStateManager$class_1018;
+		FIELD field_26840 capState Lnet/minecraft/class_1_1267$class_1018;

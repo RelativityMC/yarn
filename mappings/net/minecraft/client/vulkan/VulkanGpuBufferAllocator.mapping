@@ -41,7 +41,7 @@ CLASS net/minecraft/class_1_1025 net/minecraft/client/vulkan/VulkanGpuBufferAllo
 		ARG 1 buffer
 	METHOD method_1_6227 copyHostToDeviceBuffer (Lit/unimi/dsi/fastutil/Pair;)V
 		ARG 1 pair
-	METHOD method_1_6228 allocateMappedBuffer (Ljava/util/List;JIJJZ)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+	METHOD method_1_6228 allocateMappedBuffer (Ljava/util/List;JIJJZ)Lnet/minecraft/class_1_1254;
 		ARG 1 contents
 		ARG 2 alignment
 		ARG 4 usage

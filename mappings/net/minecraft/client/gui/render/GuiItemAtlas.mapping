@@ -1,16 +1,16 @@
 CLASS net/minecraft/class_1_201 net/minecraft/client/gui/render/GuiItemAtlas
 	FIELD field_1_1453 MIN_TEXTURE_SIZE I
 	FIELD field_1_1454 slots Lnet/minecraft/class_1_235;
-	FIELD field_1_1456 depthTexture Lcom/mojang/blaze3d/textures/GpuTexture;
-	FIELD field_1_1457 depthTextureView Lcom/mojang/blaze3d/textures/GpuTextureView;
+	FIELD field_1_1456 depthTexture Lnet/minecraft/class_1_1231;
+	FIELD field_1_1457 depthTextureView Lnet/minecraft/class_1_1260;
 	FIELD field_1_1458 dispatcher Lnet/minecraft/class_11684;
 	FIELD field_1_1459 matrixStack Lnet/minecraft/class_4587;
 	FIELD field_1_1460 projectionBuffer Lnet/minecraft/class_11278;
 	FIELD field_1_1461 itemSpriteSize I
 	FIELD field_1_1462 queue Lnet/minecraft/class_11661;
-	FIELD field_1_1463 colorTexture Lcom/mojang/blaze3d/textures/GpuTexture;
+	FIELD field_1_1463 colorTexture Lnet/minecraft/class_1_1231;
 	FIELD field_1_1464 atlasSize I
-	FIELD field_1_1465 colorTextureView Lcom/mojang/blaze3d/textures/GpuTextureView;
+	FIELD field_1_1465 colorTextureView Lnet/minecraft/class_1_1260;
 	FIELD field_1_1832 projection Lnet/minecraft/class_11279;
 	METHOD <init> (Lnet/minecraft/class_11684;II)V
 		ARG 1 dispatcher

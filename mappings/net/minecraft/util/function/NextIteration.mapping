@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_7928 net/minecraft/util/function/NextIteration
+	COMMENT Indicates whether to perform the next iteration.
+	METHOD method_47543 shouldAbort ()Z

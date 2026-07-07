@@ -1,4 +1,4 @@
-CLASS com/mojang/blaze3d/pipeline/BlendFunction
+CLASS net/minecraft/class_1_1255
 	METHOD <init> (Lnet/minecraft/class_1_683;Lnet/minecraft/class_1_683;)V
 		ARG 1 src
 		ARG 2 dest

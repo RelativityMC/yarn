@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_1_744 net/minecraft/client/render/ThreeDimensionalCrosshair
-	FIELD field_1_3768 crosshairVertexBuffer Lcom/mojang/blaze3d/buffers/GpuBuffer;
+	FIELD field_1_3768 crosshairVertexBuffer Lnet/minecraft/class_1_1211;
 	FIELD field_1_3769 linesIndexBuffer Lcom/mojang/blaze3d/systems/RenderSystem$class_5590;
 	METHOD method_1_4488 render (Lnet/minecraft/class_12075;I)V
 		ARG 1 cameraRenderState

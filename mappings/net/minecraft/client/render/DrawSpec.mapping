@@ -1,12 +1,12 @@
 CLASS net/minecraft/class_1_870 net/minecraft/client/render/DrawSpec
-	METHOD method_1_7533 drawInternal (Lnet/minecraft/class_1_807$class_1_809;Lcom/mojang/blaze3d/systems/RenderPass;Lcom/mojang/blaze3d/pipeline/RenderPipeline;)V
+	METHOD method_1_7533 drawInternal (Lnet/minecraft/class_1_807$class_1_809;Lnet/minecraft/class_1_1227;Lnet/minecraft/class_1_1257;)V
 		ARG 1 drawCall
 		ARG 2 renderPass
 		ARG 3 pipeline
-	METHOD method_1_7534 draw (Lnet/minecraft/class_1_807$class_1_809;Lcom/mojang/blaze3d/systems/RenderPass;)V
+	METHOD method_1_7534 draw (Lnet/minecraft/class_1_807$class_1_809;Lnet/minecraft/class_1_1227;)V
 		ARG 1 drawCall
 		ARG 2 renderPass
-	METHOD method_1_7535 drawOit (Lnet/minecraft/class_1_807$class_1_809;Lnet/minecraft/class_1_1153;Lcom/mojang/blaze3d/systems/RenderPass;)V
+	METHOD method_1_7535 drawOit (Lnet/minecraft/class_1_807$class_1_809;Lnet/minecraft/class_1_1153;Lnet/minecraft/class_1_1227;)V
 		ARG 1 drawCall
 		ARG 2 oitStage
 		ARG 3 renderPass

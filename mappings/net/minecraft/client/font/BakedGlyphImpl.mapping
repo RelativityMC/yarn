@@ -9,9 +9,9 @@ CLASS net/minecraft/class_382 net/minecraft/client/font/BakedGlyphImpl
 	FIELD field_2280 maxX F
 	FIELD field_44760 textRenderLayers Lnet/minecraft/class_8538;
 	FIELD field_55098 Z_OFFSET F
-	FIELD field_60569 textureView Lcom/mojang/blaze3d/textures/GpuTextureView;
+	FIELD field_60569 textureView Lnet/minecraft/class_1_1260;
 	FIELD field_62142 glyph Lnet/minecraft/class_379;
-	METHOD <init> (Lnet/minecraft/class_379;Lnet/minecraft/class_8538;Lcom/mojang/blaze3d/textures/GpuTextureView;FFFFFFFF)V
+	METHOD <init> (Lnet/minecraft/class_379;Lnet/minecraft/class_8538;Lnet/minecraft/class_1_1260;FFFFFFFF)V
 		ARG 1 glyph
 		ARG 2 textRenderLayers
 		ARG 3 textureView

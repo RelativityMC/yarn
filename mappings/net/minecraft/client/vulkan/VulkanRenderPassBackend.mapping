@@ -9,12 +9,12 @@ CLASS net/minecraft/class_1_704 net/minecraft/client/vulkan/VulkanRenderPassBack
 	FIELD field_1_3624 numDebugGroups I
 	FIELD field_1_3626 boundTextures Ljava/util/HashMap;
 	FIELD field_1_3627 uniforms Ljava/util/HashMap;
-	FIELD field_1_5956 renderArea Lcom/mojang/blaze3d/systems/RenderPass$class_1_837;
+	FIELD field_1_5956 renderArea Lnet/minecraft/class_1_1227$class_1_837;
 	FIELD field_1_6399 markerRecorderQueue Lnet/minecraft/class_1_970$class_1_971;
 	FIELD field_1_6400 commandBuffer Lorg/lwjgl/vulkan/VkCommandBuffer;
 	FIELD field_1_6401 commandEncoder Lnet/minecraft/class_1_715;
 	FIELD field_1_6402 labelGetter Ljava/util/function/Supplier;
-	METHOD <init> (Lnet/minecraft/class_1_679;Lnet/minecraft/class_1_715;Lorg/lwjgl/vulkan/VkCommandBuffer;Lnet/minecraft/class_1_970$class_1_971;Lcom/mojang/blaze3d/systems/RenderPass$class_1_837;IIZLjava/util/function/Supplier;)V
+	METHOD <init> (Lnet/minecraft/class_1_679;Lnet/minecraft/class_1_715;Lorg/lwjgl/vulkan/VkCommandBuffer;Lnet/minecraft/class_1_970$class_1_971;Lnet/minecraft/class_1_1227$class_1_837;IIZLjava/util/function/Supplier;)V
 		ARG 1 device
 		ARG 2 commandEncoder
 		ARG 3 commandBuffer

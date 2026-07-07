@@ -29,7 +29,7 @@ CLASS net/minecraft/class_677 net/minecraft/client/particle/FireworksSparkPartic
 		FIELD field_3808 age I
 		FIELD field_49565 CREEPER_PATTERN [[D
 		FIELD field_49566 STAR_PATTERN [[D
-		METHOD <init> (Lnet/minecraft/class_638;DDDDDDLnet/minecraft/class_702;Ljava/util/List;)V
+		METHOD <init> (Lnet/minecraft/class_638;DDDDDDLnet/minecraft/class_702;Ljava/util/List;Z)V
 			ARG 1 world
 			ARG 2 x
 			ARG 4 y

@@ -71,7 +71,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 3 renderBlockOutline
 	METHOD method_1_6185 getLoadedChunkPositions ()Lit/unimi/dsi/fastutil/longs/LongCollection;
 	METHOD method_1_7337 getAccumulateFramebuffer ()Lnet/minecraft/class_276;
-	METHOD method_1_7338 drawTranslucentGeometry (Lnet/minecraft/class_11532;Lnet/minecraft/class_11684$class_1_875;Lcom/mojang/blaze3d/systems/RenderPass;)V
+	METHOD method_1_7338 drawTranslucentGeometry (Lnet/minecraft/class_11532;Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_1_1227;)V
 		ARG 1 state
 		ARG 2 preparedFrame
 		ARG 3 renderPass
@@ -83,7 +83,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 2 mainFramebuffer
 	METHOD method_1_7341 drawOutlines (Lnet/minecraft/class_11684$class_1_875;)V
 		ARG 1 preparedFrame
-	METHOD method_1_7342 renderSolidGeometry (Lnet/minecraft/class_11532;Lnet/minecraft/class_11684$class_1_875;Lcom/mojang/blaze3d/systems/RenderPass;)V
+	METHOD method_1_7342 renderSolidGeometry (Lnet/minecraft/class_11532;Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_1_1227;)V
 		ARG 1 sectionRenderState
 		ARG 2 preparedFrame
 		ARG 3 renderPass
@@ -98,7 +98,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_3269 updateChunks (Lnet/minecraft/class_12075;)V
 		ARG 1 cameraRenderState
 	METHOD method_3281 isTerrainRenderComplete ()Z
-	METHOD method_22710 render (Lnet/minecraft/class_9922;Lnet/minecraft/class_9779;ZLnet/minecraft/class_12075;Lorg/joml/Matrix4fc;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Lorg/joml/Vector4f;Z)V
+	METHOD method_22710 render (Lnet/minecraft/class_9922;Lnet/minecraft/class_9779;ZLnet/minecraft/class_12075;Lorg/joml/Matrix4fc;Lnet/minecraft/class_1_1254;Lorg/joml/Vector4f;Z)V
 		ARG 1 allocator
 		ARG 2 tickCounter
 		ARG 3 renderBlockOutline
@@ -126,11 +126,11 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_62196 getCloudRenderer ()Lnet/minecraft/class_9955;
 	METHOD method_62198 translucencySort (Lnet/minecraft/class_243;)V
 		ARG 1 cameraPos
-	METHOD method_62200 renderSky (Lnet/minecraft/class_9909;Lnet/minecraft/class_12075;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
+	METHOD method_62200 renderSky (Lnet/minecraft/class_9909;Lnet/minecraft/class_12075;Lnet/minecraft/class_1_1254;)V
 		ARG 1 frameGraphBuilder
 		ARG 2 cameraRenderState
 		ARG 3 fogBuffer
-	METHOD method_62202 renderMain (Lnet/minecraft/class_9909;Lnet/minecraft/class_11684$class_1_875;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Lnet/minecraft/class_11532;F)V
+	METHOD method_62202 renderMain (Lnet/minecraft/class_9909;Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_1_1254;Lnet/minecraft/class_11532;F)V
 		ARG 1 frameGraphBuilder
 		ARG 2 preparedFrame
 		ARG 3 fogBuffer
@@ -158,7 +158,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 4 needsUpdate
 		ARG 5 ignoreCameraAlignment
 	METHOD method_71118 rotate ()V
-	METHOD method_72156 (I[Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Lcom/mojang/blaze3d/systems/RenderPass$class_10885;)V
+	METHOD method_72156 (I[Lnet/minecraft/class_1_1254;Lnet/minecraft/class_1_1227$class_10885;)V
 		ARG 1 chunkSectionBuffers
 		ARG 2 uploader
 	METHOD method_72916 pushEntityRenders (Lnet/minecraft/class_4587;Lnet/minecraft/class_11658;Lnet/minecraft/class_11659;)V

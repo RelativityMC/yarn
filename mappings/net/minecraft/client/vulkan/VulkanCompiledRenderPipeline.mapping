@@ -2,13 +2,13 @@ CLASS net/minecraft/class_1_718 net/minecraft/client/vulkan/VulkanCompiledRender
 	FIELD field_1_8112 closed Z
 	FIELD field_1_8113 backend Lnet/minecraft/class_1_679;
 	FIELD field_1_8114 fragmentShaderModule J
-	FIELD field_1_8115 pipeline Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	FIELD field_1_8115 pipeline Lnet/minecraft/class_1_1257;
 	FIELD field_1_8116 pipelineLayout Lnet/minecraft/class_1_721;
 	FIELD field_1_8117 rawLayout J
 	FIELD field_1_8118 vertexShaderModule J
 	FIELD field_1_8119 depthPipeline J
 	FIELD field_1_8120 noDepthPipeline J
-	METHOD <init> (Lnet/minecraft/class_1_679;Lcom/mojang/blaze3d/pipeline/RenderPipeline;JJJLnet/minecraft/class_1_721;JJ)V
+	METHOD <init> (Lnet/minecraft/class_1_679;Lnet/minecraft/class_1_1257;JJJLnet/minecraft/class_1_721;JJ)V
 		ARG 1 backend
 		ARG 2 pipeline
 		ARG 3 depthPipeline
@@ -17,10 +17,10 @@ CLASS net/minecraft/class_1_718 net/minecraft/client/vulkan/VulkanCompiledRender
 		ARG 9 pipelineLayout
 		ARG 10 vertexShaderModule
 		ARG 12 fragmentShaderModule
-	METHOD method_1_4294 setBlendFunction (Lorg/lwjgl/vulkan/VkPipelineColorBlendAttachmentState$Buffer;Lcom/mojang/blaze3d/pipeline/BlendFunction;)V
+	METHOD method_1_4294 setBlendFunction (Lorg/lwjgl/vulkan/VkPipelineColorBlendAttachmentState$Buffer;Lnet/minecraft/class_1_1255;)V
 		ARG 0 colorBlendAttachmentState
 		ARG 1 blendFunction
-	METHOD method_1_4295 create (Lnet/minecraft/class_1_679;Lnet/minecraft/class_1_721;Lcom/mojang/blaze3d/pipeline/RenderPipeline;JJ)Lnet/minecraft/class_1_718;
+	METHOD method_1_4295 create (Lnet/minecraft/class_1_679;Lnet/minecraft/class_1_721;Lnet/minecraft/class_1_1257;JJ)Lnet/minecraft/class_1_718;
 		ARG 0 device
 		ARG 1 layout
 		ARG 2 pipeline

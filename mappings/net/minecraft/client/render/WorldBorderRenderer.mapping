@@ -5,13 +5,13 @@ CLASS net/minecraft/class_9978 net/minecraft/client/render/WorldBorderRenderer
 	FIELD field_56586 forceRefreshBuffers Z
 	FIELD field_56587 lastUploadedBoundWest D
 	FIELD field_56589 lastUploadedBoundNorth D
-	FIELD field_56591 vertexBuffer Lcom/mojang/blaze3d/buffers/GpuBuffer;
+	FIELD field_56591 vertexBuffer Lnet/minecraft/class_1_1211;
 	FIELD field_56923 lastXMin D
 	FIELD field_56924 lastXMax D
 	FIELD field_56925 lastZMin D
 	FIELD field_56926 lastZMax D
 	FIELD field_57936 indexBuffer Lcom/mojang/blaze3d/systems/RenderSystem$class_5590;
-	METHOD method_1_7440 draw (Ljava/util/List;DDDLcom/mojang/blaze3d/buffers/GpuBuffer;Lcom/mojang/blaze3d/systems/RenderPass;)V
+	METHOD method_1_7440 draw (Ljava/util/List;DDDLnet/minecraft/class_1_1211;Lnet/minecraft/class_1_1227;)V
 		ARG 1 distances
 		ARG 2 viewDistanceBlocks
 		ARG 4 cameraX
@@ -23,20 +23,20 @@ CLASS net/minecraft/class_9978 net/minecraft/client/render/WorldBorderRenderer
 		ARG 2 pos
 		ARG 3 viewDistanceBlocks
 		ARG 5 farPlaneDistance
-	METHOD method_1_7442 writeDynamicUniforms (Lnet/minecraft/class_12078;Lnet/minecraft/class_243;)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+	METHOD method_1_7442 writeDynamicUniforms (Lnet/minecraft/class_12078;Lnet/minecraft/class_243;)Lnet/minecraft/class_1_1254;
 		ARG 1 state
 		ARG 2 cameraPos
-	METHOD method_1_7443 setRenderPassProperties (Lcom/mojang/blaze3d/systems/RenderPass;Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Lcom/mojang/blaze3d/buffers/GpuBuffer;Lnet/minecraft/class_1044;)V
+	METHOD method_1_7443 setRenderPassProperties (Lnet/minecraft/class_1_1227;Lnet/minecraft/class_1_1254;Lnet/minecraft/class_1_1211;Lnet/minecraft/class_1044;)V
 		ARG 1 renderPass
 		ARG 2 dynamicTransforms
 		ARG 3 indexBuffer
 		ARG 4 forceFieldTexture
-	METHOD method_1_7444 draw (Lnet/minecraft/class_12078;Lcom/mojang/blaze3d/systems/RenderPass;Lnet/minecraft/class_243;D)V
+	METHOD method_1_7444 draw (Lnet/minecraft/class_12078;Lnet/minecraft/class_1_1227;Lnet/minecraft/class_243;D)V
 		ARG 1 state
 		ARG 2 renderPass
 		ARG 3 cameraPos
 		ARG 4 viewDistanceBlocks
-	METHOD method_1_7445 drawOit (Lnet/minecraft/class_12078;Lnet/minecraft/class_243;DLnet/minecraft/class_1_1153;Lcom/mojang/blaze3d/systems/RenderPass;)V
+	METHOD method_1_7445 drawOit (Lnet/minecraft/class_12078;Lnet/minecraft/class_243;DLnet/minecraft/class_1_1153;Lnet/minecraft/class_1_1227;)V
 		ARG 1 state
 		ARG 2 cameraPos
 		ARG 3 viewDistanceBlocks

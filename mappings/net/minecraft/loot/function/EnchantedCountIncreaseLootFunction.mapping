@@ -8,8 +8,7 @@ CLASS net/minecraft/class_125 net/minecraft/loot/function/EnchantedCountIncrease
 		ARG 1 conditions
 		ARG 2 enchantment
 		ARG 4 limit
-	METHOD method_547 builder (Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_5658;)Lnet/minecraft/class_125$class_126;
-		ARG 0 registries
+	METHOD method_547 builder (Lnet/minecraft/class_7871;Lnet/minecraft/class_5658;)Lnet/minecraft/class_125$class_126;
 		ARG 1 count
 	METHOD method_549 hasLimit ()Z
 	METHOD method_53348 (Lnet/minecraft/class_125;)Ljava/lang/Integer;

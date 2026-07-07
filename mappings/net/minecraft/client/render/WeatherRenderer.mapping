@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_9976 net/minecraft/client/render/WeatherRenderer
 	FIELD field_1_1035 INDICES_PER_PIECE I
-	FIELD field_1_5784 vertexBuffer Lcom/mojang/blaze3d/buffers/GpuBuffer;
+	FIELD field_1_5784 vertexBuffer Lnet/minecraft/class_1_1211;
 	FIELD field_1_8175 gameRenderer Lnet/minecraft/class_757;
 	FIELD field_1_8176 indexCount I
 	FIELD field_1_8177 drawMode Lnet/minecraft/class_5596;
@@ -18,7 +18,7 @@ CLASS net/minecraft/class_9976 net/minecraft/client/render/WeatherRenderer
 		COMMENT
 		COMMENT These lookup tables are used for rendering rain and snow.
 	FIELD field_53156 NORMAL_LINE_DZ [F
-	METHOD method_1_1041 issueDraw (Lcom/mojang/blaze3d/systems/RenderPass;Lnet/minecraft/class_1044;II)V
+	METHOD method_1_1041 issueDraw (Lnet/minecraft/class_1_1227;Lnet/minecraft/class_1044;II)V
 		ARG 1 renderPass
 		ARG 2 texture
 		ARG 3 index
@@ -28,14 +28,14 @@ CLASS net/minecraft/class_9976 net/minecraft/client/render/WeatherRenderer
 	METHOD method_1_7458 prepare (Lnet/minecraft/class_243;Lnet/minecraft/class_12077;)V
 		ARG 1 cameraPos
 		ARG 2 state
-	METHOD method_1_7459 draw (Lnet/minecraft/class_12077;Lcom/mojang/blaze3d/systems/RenderPass;)V
+	METHOD method_1_7459 draw (Lnet/minecraft/class_12077;Lnet/minecraft/class_1_1227;)V
 		ARG 1 state
 		ARG 2 renderPass
-	METHOD method_1_7460 draw (Lnet/minecraft/class_12077;Lcom/mojang/blaze3d/systems/RenderPass;Lcom/mojang/blaze3d/pipeline/RenderPipeline;)V
+	METHOD method_1_7460 draw (Lnet/minecraft/class_12077;Lnet/minecraft/class_1_1227;Lnet/minecraft/class_1_1257;)V
 		ARG 1 state
 		ARG 2 renderPass
 		ARG 3 pipeline
-	METHOD method_1_7461 drawOit (Lnet/minecraft/class_1_1153;Lnet/minecraft/class_12077;Lcom/mojang/blaze3d/systems/RenderPass;)V
+	METHOD method_1_7461 drawOit (Lnet/minecraft/class_1_1153;Lnet/minecraft/class_12077;Lnet/minecraft/class_1_1227;)V
 		ARG 1 oitStage
 		ARG 2 state
 		ARG 3 renderPass

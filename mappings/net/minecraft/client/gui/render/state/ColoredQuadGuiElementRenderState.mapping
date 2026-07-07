@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_11242 net/minecraft/client/gui/render/state/ColoredQuadGuiElementRenderState
-	METHOD <init> (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/class_11231;Lorg/joml/Matrix3x2fc;IIIIIILnet/minecraft/class_8030;)V
+	METHOD <init> (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_11231;Lorg/joml/Matrix3x2fc;IIIIIILnet/minecraft/class_8030;)V
 		ARG 1 pipeline
 		ARG 2 textureSetup
 		ARG 3 pose

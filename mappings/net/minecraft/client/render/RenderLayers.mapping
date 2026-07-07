@@ -71,7 +71,7 @@ CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 		ARG 1 dissolveMaskTexture
 	METHOD method_1_3005 bannerPattern (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
-	METHOD method_1_3006 createBlockSetup (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Z)Lnet/minecraft/class_12247;
+	METHOD method_1_3006 createBlockSetup (Lnet/minecraft/class_1_1257;Z)Lnet/minecraft/class_12247;
 		ARG 0 pipeline
 		ARG 1 translucent
 	METHOD method_1_3008 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;

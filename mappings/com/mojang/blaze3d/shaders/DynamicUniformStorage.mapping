@@ -14,9 +14,9 @@ CLASS net/minecraft/class_11280 com/mojang/blaze3d/shaders/DynamicUniformStorage
 	METHOD method_71100 clear ()V
 	METHOD method_71101 growBuffer (I)V
 		ARG 1 capacity
-	METHOD method_71102 write (Lnet/minecraft/class_11280$class_11281;)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+	METHOD method_71102 write (Lnet/minecraft/class_11280$class_11281;)Lnet/minecraft/class_1_1254;
 		ARG 1 value
-	METHOD method_71103 writeAll ([Lnet/minecraft/class_11280$class_11281;)[Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+	METHOD method_71103 writeAll ([Lnet/minecraft/class_11280$class_11281;)[Lnet/minecraft/class_1_1254;
 		ARG 1 values
 	CLASS class_11281 Uploadable
 		METHOD method_71104 write (Ljava/nio/ByteBuffer;)V

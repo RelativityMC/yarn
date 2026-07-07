@@ -2,16 +2,10 @@ CLASS net/minecraft/class_2989 net/minecraft/server/ServerAdvancementLoader
 	FIELD field_13404 advancements Ljava/util/Map;
 	FIELD field_13406 LOGGER Lorg/slf4j/Logger;
 	FIELD field_46076 manager Lnet/minecraft/class_163;
-	FIELD field_48787 registries Lnet/minecraft/class_7225$class_7874;
 	METHOD <init> (Lnet/minecraft/class_7225$class_7874;)V
 		ARG 1 registries
 	METHOD method_12893 getAdvancements ()Ljava/util/Collection;
 	METHOD method_12896 get (Lnet/minecraft/class_2960;)Lnet/minecraft/class_8779;
 		ARG 1 id
-	METHOD method_20723 (Lcom/google/common/collect/ImmutableMap$Builder;Lnet/minecraft/class_2960;Lnet/minecraft/class_161;)V
-		ARG 2 id
-		ARG 3 advancement
 	METHOD method_53646 getManager ()Lnet/minecraft/class_163;
-	METHOD method_54921 validate (Lnet/minecraft/class_2960;Lnet/minecraft/class_161;)V
-		ARG 1 id
-		ARG 2 advancement
+	METHOD method_54921 validate (Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_6880$class_6883;)V

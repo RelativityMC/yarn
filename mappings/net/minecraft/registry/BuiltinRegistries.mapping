@@ -5,14 +5,10 @@ CLASS net/minecraft/class_7887 net/minecraft/registry/BuiltinRegistries
 		ARG 0 placedFeature
 	METHOD method_46819 (Lnet/minecraft/class_6880$class_6883;Lnet/minecraft/class_6796;)V
 		ARG 1 value
-	METHOD method_46820 (Lnet/minecraft/class_7871;Lnet/minecraft/class_2960;Lnet/minecraft/class_5321;)V
+	METHOD method_46820 (Lnet/minecraft/class_7225$class_7226;Lnet/minecraft/class_2960;Lnet/minecraft/class_5321;)V
 		ARG 2 key
-	METHOD method_46821 (Lnet/minecraft/class_7871;Lnet/minecraft/class_2960;Lnet/minecraft/class_6880$class_6883;Lnet/minecraft/class_6880;)V
+	METHOD method_46821 (Lnet/minecraft/class_7225$class_7226;Lnet/minecraft/class_2960;Lnet/minecraft/class_6880$class_6883;Lnet/minecraft/class_6880;)V
 		ARG 3 placedFeature
-	METHOD method_46822 (Lnet/minecraft/class_7871;Lnet/minecraft/class_6880$class_6883;)V
+	METHOD method_46822 (Lnet/minecraft/class_7225$class_7226;Lnet/minecraft/class_6880$class_6883;)V
 		ARG 1 biome
 	METHOD method_46823 validate (Lnet/minecraft/class_7225$class_7874;)V
-		ARG 0 registries
-	METHOD method_49382 validate (Lnet/minecraft/class_7871;Lnet/minecraft/class_7225;)V
-		ARG 0 placedFeatureLookup
-		ARG 1 biomeLookup

@@ -18,8 +18,7 @@ CLASS net/minecraft/class_2541 net/minecraft/block/VineBlock
 		ARG 1 state
 	METHOD method_10823 hasAdjacentBlocks (Lnet/minecraft/class_2680;)Z
 		ARG 1 state
-	METHOD method_10824 canGrowAt (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z
-		ARG 1 world
+	METHOD method_10824 canGrowAt (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;)Z
 		ARG 2 pos
 	METHOD method_10826 (Ljava/util/Map$Entry;)Z
 		ARG 0 entry

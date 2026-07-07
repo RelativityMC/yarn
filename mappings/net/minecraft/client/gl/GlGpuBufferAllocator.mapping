@@ -44,7 +44,7 @@ CLASS net/minecraft/class_1_1014 net/minecraft/client/gl/GlGpuBufferAllocator
 			ARG 2 alignment
 			ARG 4 usage
 			ARG 5 hostOnly
-		METHOD method_1_6184 allocateMappedBuffer (Ljava/util/List;JIJJZ)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+		METHOD method_1_6184 allocateMappedBuffer (Ljava/util/List;JIJJZ)Lnet/minecraft/class_1_1254;
 			ARG 1 contents
 			ARG 2 alignment
 			ARG 4 usage

@@ -14,7 +14,6 @@ CLASS net/minecraft/class_10676 net/minecraft/registry/ContextSwappableRegistryL
 			ARG 2 encodedValue
 	CLASS class_10677 EntryLookupImpl
 		METHOD method_67094 asEntryLookup ()Lnet/minecraft/class_7871;
-		METHOD method_67095 asEntryOwner ()Lnet/minecraft/class_7876;
 		METHOD method_67096 getOrComputeEntry (Lnet/minecraft/class_5321;)Lnet/minecraft/class_6880$class_6883;
 			ARG 1 key
 		METHOD method_67097 getOrComputeTag (Lnet/minecraft/class_6862;)Lnet/minecraft/class_6885$class_6888;

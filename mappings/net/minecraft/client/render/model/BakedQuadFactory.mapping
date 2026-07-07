@@ -36,7 +36,7 @@ CLASS net/minecraft/class_796 net/minecraft/client/render/model/BakedQuadFactory
 		ARG 2 transform
 	METHOD method_3467 decodeDirection ([Lorg/joml/Vector3fc;)Lnet/minecraft/class_2350;
 		ARG 0 vecs
-	METHOD method_3468 bake (Lnet/minecraft/class_7775;Lorg/joml/Vector3fc;Lorg/joml/Vector3fc;Lnet/minecraft/class_783;Lnet/minecraft/class_1_314$class_1_315;Lnet/minecraft/class_2350;Lnet/minecraft/class_3665;Lnet/minecraft/class_789;ZI)Lnet/minecraft/class_777;
+	METHOD method_3468 bake (Lnet/minecraft/class_7775;Lorg/joml/Vector3fc;Lorg/joml/Vector3fc;Lnet/minecraft/class_783;Lnet/minecraft/class_1_314$class_1_315;Lnet/minecraft/class_2350;Lnet/minecraft/class_3665;Lnet/minecraft/class_789;Lnet/minecraft/class_2350;I)Lnet/minecraft/class_777;
 		ARG 0 baker
 		ARG 1 from
 		ARG 2 to
@@ -45,7 +45,6 @@ CLASS net/minecraft/class_796 net/minecraft/client/render/model/BakedQuadFactory
 		ARG 5 direction
 		ARG 6 settings
 		ARG 7 rotation
-		ARG 8 shade
 		ARG 9 lightEmission
 	METHOD method_67919 setCenterBack (F)F
 		ARG 0 texcoord

@@ -1,20 +1,20 @@
 CLASS com/mojang/blaze3d/systems/RenderSystem
-	METHOD bindDefaultUniforms (Lcom/mojang/blaze3d/systems/RenderPass;)V
+	METHOD bindDefaultUniforms (Lnet/minecraft/class_1_1227;)V
 		ARG 0 pass
 	METHOD enableScissorForRenderTypeDraws (IIII)V
 		ARG 0 x
 		ARG 1 y
 		ARG 2 width
 		ARG 3 height
-	METHOD getCompiledPipeline (Lcom/mojang/blaze3d/pipeline/RenderPipeline;)Lcom/mojang/blaze3d/pipeline/CompiledRenderPipeline;
+	METHOD getCompiledPipeline (Lnet/minecraft/class_1_1257;)Lnet/minecraft/class_1_1285;
 		ARG 0 pipeline
-	METHOD getCompiledPipelineNullable (Lcom/mojang/blaze3d/pipeline/RenderPipeline;)Lcom/mojang/blaze3d/pipeline/CompiledRenderPipeline;
+	METHOD getCompiledPipelineNullable (Lnet/minecraft/class_1_1257;)Lnet/minecraft/class_1_1285;
 		ARG 0 pipeline
 	METHOD getSequentialBuffer (Lnet/minecraft/class_5596;)Lcom/mojang/blaze3d/systems/RenderSystem$class_5590;
 		ARG 0 drawMode
 	METHOD initBackendSystem ()Lnet/minecraft/class_7576$class_7577;
 		COMMENT {@return a {@link TimeSupplier} that retrieves elapsed time from the backend}
-	METHOD initRenderer (Lcom/mojang/blaze3d/systems/GpuDevice;)V
+	METHOD initRenderer (Lnet/minecraft/class_1_1209;)V
 		ARG 0 device
 	METHOD lambda$static$0 (Lit/unimi/dsi/fastutil/ints/IntConsumer;I)V
 		ARG 0 indexConsumer
@@ -30,14 +30,14 @@ CLASS com/mojang/blaze3d/systems/RenderSystem
 		ARG 0 callback
 	METHOD setFallbackPipelineCache (Lnet/minecraft/class_1_1152;)V
 		ARG 0 fallbackPipelineCache
-	METHOD setGlobalSettingsUniform (Lcom/mojang/blaze3d/buffers/GpuBuffer;)V
+	METHOD setGlobalSettingsUniform (Lnet/minecraft/class_1_1211;)V
 		ARG 0 globalSettingsUniform
-	METHOD setProjectionMatrix (Lcom/mojang/blaze3d/buffers/GpuBufferSlice;Lnet/minecraft/class_10366;)V
+	METHOD setProjectionMatrix (Lnet/minecraft/class_1_1254;Lnet/minecraft/class_10366;)V
 		ARG 0 projectionMatrixBuffer
 		ARG 1 projectionType
-	METHOD setShaderFog (Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
+	METHOD setShaderFog (Lnet/minecraft/class_1_1254;)V
 		ARG 0 shaderFog
-	METHOD setShaderLights (Lcom/mojang/blaze3d/buffers/GpuBufferSlice;)V
+	METHOD setShaderLights (Lnet/minecraft/class_1_1254;)V
 		ARG 0 shaderLightDirections
 	CLASS class_5590 ShapeIndexBuffer
 		COMMENT An index buffer that holds a pre-made indices for a specific shape. If
@@ -50,7 +50,7 @@ CLASS com/mojang/blaze3d/systems/RenderSystem
 		FIELD field_27334 triangulator Lcom/mojang/blaze3d/systems/RenderSystem$class_5590$class_5591;
 		FIELD field_27336 indexType Lnet/minecraft/class_5595;
 		FIELD field_27337 size I
-		FIELD field_54299 indexBuffer Lcom/mojang/blaze3d/buffers/GpuBuffer;
+		FIELD field_54299 indexBuffer Lnet/minecraft/class_1_1211;
 		METHOD <init> (IILcom/mojang/blaze3d/systems/RenderSystem$class_5590$class_5591;)V
 			ARG 1 vertexCountInShape
 				COMMENT the number of vertices in a shape
@@ -58,7 +58,7 @@ CLASS com/mojang/blaze3d/systems/RenderSystem
 				COMMENT the number of vertices in the triangles decomposed from the shape
 			ARG 3 triangulator
 				COMMENT a function that decomposes a shape into triangles
-		METHOD method_1_7311 getIndexBuffer ()Lcom/mojang/blaze3d/buffers/GpuBuffer;
+		METHOD method_1_7311 getIndexBuffer ()Lnet/minecraft/class_1_1211;
 		METHOD method_1_7312 deferGrow (I)V
 			ARG 1 size
 		METHOD method_1_7313 applyDeferredGrow ()V
@@ -71,7 +71,7 @@ CLASS com/mojang/blaze3d/systems/RenderSystem
 		METHOD method_31924 getIndexType ()Lnet/minecraft/class_5595;
 		METHOD method_43409 isLargeEnough (I)Z
 			ARG 1 requiredSize
-		METHOD method_68274 getIndexBuffer (I)Lcom/mojang/blaze3d/buffers/GpuBuffer;
+		METHOD method_68274 getIndexBuffer (I)Lnet/minecraft/class_1_1211;
 			ARG 1 requiredSize
 		CLASS class_5591 Triangulator
 			COMMENT A functional interface that decomposes a shape into triangles.

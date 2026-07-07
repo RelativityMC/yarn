@@ -55,8 +55,7 @@ CLASS net/minecraft/class_161 net/minecraft/advancement/Advancement
 		FIELD field_44783 sendsTelemetryEvent Z
 		METHOD method_693 display (Lnet/minecraft/class_185;)Lnet/minecraft/class_161$class_162;
 			ARG 1 display
-		METHOD method_694 build (Ljava/util/function/Consumer;Ljava/lang/String;)Lnet/minecraft/class_8779;
-			ARG 1 exporter
+		METHOD method_694 build (Lnet/minecraft/class_7891;Ljava/lang/String;)Lnet/minecraft/class_8779;
 			ARG 2 id
 		METHOD method_695 build (Lnet/minecraft/class_2960;)Lnet/minecraft/class_8779;
 			ARG 1 id

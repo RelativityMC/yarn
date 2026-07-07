@@ -22,7 +22,7 @@ CLASS net/minecraft/class_7225 net/minecraft/registry/RegistryWrapper
 			METHOD method_46757 (Ljava/util/function/Predicate;Lnet/minecraft/class_6880$class_6883;)Z
 				ARG 1 entry
 		CLASS class_7875 Delegating
-			METHOD method_46725 getBase ()Lnet/minecraft/class_7225$class_7226;
+			METHOD comp_1_1258 getBase ()Lnet/minecraft/class_7225$class_7226;
 	CLASS class_7874 WrapperLookup
 		METHOD method_46760 (Lnet/minecraft/class_7225$class_7226;)Lnet/minecraft/class_7225$class_7226;
 			ARG 0 wrapper

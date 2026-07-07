@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_12247 net/minecraft/client/render/RenderSetup
 	FIELD field_1_8182 hasCrumbling Z
-	FIELD field_1_8183 opaquePartsPipeline Lcom/mojang/blaze3d/pipeline/RenderPipeline;
-	FIELD field_63986 pipeline Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	FIELD field_1_8183 opaquePartsPipeline Lnet/minecraft/class_1_1257;
+	FIELD field_63986 pipeline Lnet/minecraft/class_1_1257;
 	FIELD field_63987 textures Ljava/util/Map;
 	FIELD field_63988 textureTransform Lnet/minecraft/class_12250;
 	FIELD field_63989 oitPipelineSet Lnet/minecraft/class_1_1165;
@@ -11,7 +11,7 @@ CLASS net/minecraft/class_12247 net/minecraft/client/render/RenderSetup
 	FIELD field_63993 opaque Z
 	FIELD field_63994 translucent Z
 	FIELD field_63996 layeringTransform Lnet/minecraft/class_12245;
-	METHOD <init> (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/class_1_1165;Lcom/mojang/blaze3d/pipeline/RenderPipeline;Ljava/util/Map;ZZLnet/minecraft/class_12245;Lnet/minecraft/class_12250;Lnet/minecraft/class_12247$class_4750;ZZZ)V
+	METHOD <init> (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_1_1165;Lnet/minecraft/class_1_1257;Ljava/util/Map;ZZLnet/minecraft/class_12245;Lnet/minecraft/class_12250;Lnet/minecraft/class_12247$class_4750;ZZZ)V
 		ARG 1 pipeline
 		ARG 2 oitPipelineSet
 		ARG 3 opaquePartsPipeline
@@ -24,12 +24,12 @@ CLASS net/minecraft/class_12247 net/minecraft/client/render/RenderSetup
 		ARG 10 hasCrumbling
 		ARG 11 translucent
 		ARG 12 opaque
-	METHOD method_75926 resolveTextures (Lnet/minecraft/class_1060;Lnet/minecraft/class_12136;Lcom/mojang/blaze3d/textures/GpuTextureView;Lcom/mojang/blaze3d/textures/GpuTextureView;)Ljava/util/List;
+	METHOD method_75926 resolveTextures (Lnet/minecraft/class_1060;Lnet/minecraft/class_12136;Lnet/minecraft/class_1_1260;Lnet/minecraft/class_1_1260;)Ljava/util/List;
 		ARG 1 textureManager
 		ARG 2 samplerCache
 		ARG 3 overlay
 		ARG 4 lightmap
-	METHOD method_75927 builder (Lcom/mojang/blaze3d/pipeline/RenderPipeline;)Lnet/minecraft/class_12247$class_12248;
+	METHOD method_75927 builder (Lnet/minecraft/class_1_1257;)Lnet/minecraft/class_12247$class_12248;
 		ARG 0 renderPipeline
 	CLASS class_4750 OutlineMode
 		FIELD field_22243 name Ljava/lang/String;
@@ -38,8 +38,8 @@ CLASS net/minecraft/class_12247 net/minecraft/client/render/RenderSetup
 	CLASS class_12248 Builder
 		FIELD field_1_8184 opaque Z
 		FIELD field_1_8186 oitPipelineSet Lnet/minecraft/class_1_1165;
-		FIELD field_1_8187 opaquePartsPipeline Lcom/mojang/blaze3d/pipeline/RenderPipeline;
-		FIELD field_63997 pipeline Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+		FIELD field_1_8187 opaquePartsPipeline Lnet/minecraft/class_1_1257;
+		FIELD field_63997 pipeline Lnet/minecraft/class_1_1257;
 		FIELD field_63998 useLightmap Z
 		FIELD field_63999 useOverlay Z
 		FIELD field_64000 layeringTransform Lnet/minecraft/class_12245;
@@ -49,9 +49,9 @@ CLASS net/minecraft/class_12247 net/minecraft/client/render/RenderSetup
 		FIELD field_64004 translucent Z
 		FIELD field_64006 outlineMode Lnet/minecraft/class_12247$class_4750;
 		FIELD field_64007 textures Ljava/util/Map;
-		METHOD <init> (Lcom/mojang/blaze3d/pipeline/RenderPipeline;)V
+		METHOD <init> (Lnet/minecraft/class_1_1257;)V
 			ARG 1 pipeline
-		METHOD method_1_7471 opaquePartsPipeline (Lcom/mojang/blaze3d/pipeline/RenderPipeline;)Lnet/minecraft/class_12247$class_12248;
+		METHOD method_1_7471 opaquePartsPipeline (Lnet/minecraft/class_1_1257;)Lnet/minecraft/class_12247$class_12248;
 			ARG 1 opaquePartsPipeline
 		METHOD method_1_7472 opaque ()Lnet/minecraft/class_12247$class_12248;
 		METHOD method_75928 useLightmap ()Lnet/minecraft/class_12247$class_12248;

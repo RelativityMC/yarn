@@ -1,26 +1,26 @@
 CLASS net/minecraft/class_12136 com/mojang/blaze3d/textures/SamplerCache
 	FIELD field_63453 samplers [Lnet/minecraft/class_12137;
 	METHOD method_75292 init ()V
-	METHOD method_75293 get (Lcom/mojang/blaze3d/textures/AddressMode;Lcom/mojang/blaze3d/textures/AddressMode;Lcom/mojang/blaze3d/textures/FilterMode;Lcom/mojang/blaze3d/textures/FilterMode;Z)Lnet/minecraft/class_12137;
+	METHOD method_75293 get (Lnet/minecraft/class_1_1239;Lnet/minecraft/class_1_1239;Lnet/minecraft/class_1_1230;Lnet/minecraft/class_1_1230;Z)Lnet/minecraft/class_12137;
 		ARG 1 addressModeU
 		ARG 2 addressModeV
 		ARG 3 minFilterMode
 		ARG 4 magFilterMode
 		ARG 5 defaultLevelOfDetail
-	METHOD method_75294 get (Lcom/mojang/blaze3d/textures/FilterMode;)Lnet/minecraft/class_12137;
+	METHOD method_75294 get (Lnet/minecraft/class_1_1230;)Lnet/minecraft/class_12137;
 		ARG 1 filterMode
 	METHOD method_75295 close ()V
-	METHOD method_75296 toIndex (Lcom/mojang/blaze3d/textures/AddressMode;Lcom/mojang/blaze3d/textures/AddressMode;Lcom/mojang/blaze3d/textures/FilterMode;Lcom/mojang/blaze3d/textures/FilterMode;Z)I
+	METHOD method_75296 toIndex (Lnet/minecraft/class_1_1239;Lnet/minecraft/class_1_1239;Lnet/minecraft/class_1_1230;Lnet/minecraft/class_1_1230;Z)I
 		ARG 0 addressModeU
 		ARG 1 addressModeV
 		ARG 2 minFilterMode
 		ARG 3 magFilterMode
 		ARG 4 defaultLevelOfDetail
-	METHOD method_75297 getRepeated (Lcom/mojang/blaze3d/textures/FilterMode;)Lnet/minecraft/class_12137;
+	METHOD method_75297 getRepeated (Lnet/minecraft/class_1_1230;)Lnet/minecraft/class_12137;
 		ARG 1 filterMode
-	METHOD method_76520 get (Lcom/mojang/blaze3d/textures/FilterMode;Z)Lnet/minecraft/class_12137;
+	METHOD method_76520 get (Lnet/minecraft/class_1_1230;Z)Lnet/minecraft/class_12137;
 		ARG 1 filterMode
 		ARG 2 defaultLevelOfDetail
-	METHOD method_76521 getRepeated (Lcom/mojang/blaze3d/textures/FilterMode;Z)Lnet/minecraft/class_12137;
+	METHOD method_76521 getRepeated (Lnet/minecraft/class_1_1230;Z)Lnet/minecraft/class_12137;
 		ARG 1 filterMode
 		ARG 2 defaultLevelOfDetail

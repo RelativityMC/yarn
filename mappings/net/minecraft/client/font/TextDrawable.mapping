@@ -3,7 +3,7 @@ CLASS net/minecraft/class_11767 net/minecraft/client/font/TextDrawable
 	METHOD method_71830 getEffectiveMinY ()F
 	METHOD method_71831 getEffectiveMaxX ()F
 	METHOD method_71832 getEffectiveMaxY ()F
-	METHOD method_73400 getPipeline ()Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	METHOD method_73400 getPipeline ()Lnet/minecraft/class_1_1257;
 	METHOD method_73401 getRenderLayer (Lnet/minecraft/class_327$class_6415;)Lnet/minecraft/class_1921;
 		ARG 1 type
 	METHOD method_73403 render (Lorg/joml/Matrix4fc;Lnet/minecraft/class_4588;IZ)V

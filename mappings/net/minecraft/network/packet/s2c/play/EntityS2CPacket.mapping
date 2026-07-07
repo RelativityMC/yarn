@@ -1,55 +1,38 @@
 CLASS net/minecraft/class_2684 net/minecraft/network/packet/s2c/play/EntityS2CPacket
 	FIELD field_12305 rotate Z
 	FIELD field_12306 onGround Z
-	FIELD field_12307 deltaZ S
-	FIELD field_12308 deltaY S
-	FIELD field_12309 deltaX S
 	FIELD field_12310 id I
 	FIELD field_12311 pitch B
 	FIELD field_12312 yaw B
 	FIELD field_20849 positionChanged Z
-	METHOD <init> (ISSSBBZZZ)V
+	METHOD <init> (ILnet/minecraft/class_1_1216;BBZZZ)V
 		ARG 1 entityId
-		ARG 2 deltaX
-		ARG 3 deltaY
-		ARG 4 deltaZ
-		ARG 5 yaw
-		ARG 6 pitch
-		ARG 7 onGround
-		ARG 8 rotate
-		ARG 9 positionChanged
+		ARG 3 yaw
+		ARG 4 pitch
+		ARG 5 onGround
+		ARG 6 rotate
+		ARG 7 positionChanged
 	METHOD method_11645 getEntity (Lnet/minecraft/class_1937;)Lnet/minecraft/class_1297;
 		ARG 1 world
 	METHOD method_11649 getYaw ()F
 	METHOD method_11650 getPitch ()F
-	METHOD method_11652 hasRotation ()Z
 	METHOD method_11653 isOnGround ()Z
-	METHOD method_22826 isPositionChanged ()Z
-	METHOD method_36150 getDeltaX ()S
-	METHOD method_36151 getDeltaY ()S
-	METHOD method_36152 getDeltaZ ()S
 	CLASS class_2685 MoveRelative
 		FIELD field_47940 CODEC Lnet/minecraft/class_9139;
-		METHOD <init> (ISSSZ)V
+		METHOD <init> (ILnet/minecraft/class_1_1216;Z)V
 			ARG 1 entityId
-			ARG 2 deltaX
-			ARG 3 deltaY
-			ARG 4 deltaZ
-			ARG 5 onGround
+			ARG 3 onGround
 		METHOD method_34138 read (Lnet/minecraft/class_2540;)Lnet/minecraft/class_2684$class_2685;
 			ARG 0 buf
 		METHOD method_55890 write (Lnet/minecraft/class_2540;)V
 			ARG 1 buf
 	CLASS class_2686 RotateAndMoveRelative
 		FIELD field_47941 CODEC Lnet/minecraft/class_9139;
-		METHOD <init> (ISSSBBZ)V
+		METHOD <init> (ILnet/minecraft/class_1_1216;BBZ)V
 			ARG 1 entityId
-			ARG 2 deltaX
-			ARG 3 deltaY
-			ARG 4 deltaZ
-			ARG 5 yaw
-			ARG 6 pitch
-			ARG 7 onGround
+			ARG 3 yaw
+			ARG 4 pitch
+			ARG 5 onGround
 		METHOD method_34139 read (Lnet/minecraft/class_2540;)Lnet/minecraft/class_2684$class_2686;
 			ARG 0 buf
 		METHOD method_55891 write (Lnet/minecraft/class_2540;)V

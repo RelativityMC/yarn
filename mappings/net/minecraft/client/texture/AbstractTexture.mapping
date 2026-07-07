@@ -1,8 +1,8 @@
 CLASS net/minecraft/class_1044 net/minecraft/client/texture/AbstractTexture
-	FIELD field_56974 texture Lcom/mojang/blaze3d/textures/GpuTexture;
-	FIELD field_60597 textureView Lcom/mojang/blaze3d/textures/GpuTextureView;
+	FIELD field_56974 texture Lnet/minecraft/class_1_1231;
+	FIELD field_60597 textureView Lnet/minecraft/class_1_1260;
 	FIELD field_63613 sampler Lnet/minecraft/class_12137;
 	METHOD method_1_5705 destroyTexture ()V
-	METHOD method_68004 getTexture ()Lcom/mojang/blaze3d/textures/GpuTexture;
-	METHOD method_71659 getTextureView ()Lcom/mojang/blaze3d/textures/GpuTextureView;
+	METHOD method_68004 getTexture ()Lnet/minecraft/class_1_1231;
+	METHOD method_71659 getTextureView ()Lnet/minecraft/class_1_1260;
 	METHOD method_75484 getSampler ()Lnet/minecraft/class_12137;

@@ -42,3 +42,4 @@ CLASS net/minecraft/class_9878 net/minecraft/entity/vehicle/MinecartController
 	METHOD method_61599 getSpeedRetention ()D
 	METHOD method_62826 handleCollision ()Z
 	METHOD method_66328 getInterpolator ()Lnet/minecraft/class_10584;
+	METHOD method_66329 onLerp (Lnet/minecraft/class_10584;)V

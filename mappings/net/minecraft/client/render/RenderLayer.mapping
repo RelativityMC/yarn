@@ -19,18 +19,18 @@ CLASS net/minecraft/class_1921 net/minecraft/client/render/RenderLayer
 		ARG 2 renderSetup
 	METHOD method_1_1195 hasBlend ()Z
 	METHOD method_1_5226 getDrawSpec ()Lnet/minecraft/class_1_870;
-	METHOD method_1_5227 setModelViewMatrix (Lorg/joml/Matrix4f;)Lcom/mojang/blaze3d/buffers/GpuBufferSlice;
+	METHOD method_1_5227 setModelViewMatrix (Lorg/joml/Matrix4f;)Lnet/minecraft/class_1_1254;
 		ARG 1 matrix
 	METHOD method_1_7462 hasCrumbling ()Z
 	METHOD method_1_7463 shouldUseOit ()Z
-	METHOD method_23031 getVertexFormat ()Lcom/mojang/blaze3d/vertex/VertexFormat;
+	METHOD method_23031 getVertexFormat ()Lnet/minecraft/class_1_1232;
 	METHOD method_23033 getDrawMode ()Lnet/minecraft/class_5596;
 	METHOD method_23037 isOpaque ()Z
 	METHOD method_23289 getAffectedOutline ()Ljava/util/Optional;
 	METHOD method_24295 isOutline ()Z
 	METHOD method_43332 areVerticesNotShared ()Z
 	METHOD method_60894 isTranslucent ()Z
-	METHOD method_73243 getRenderPipeline ()Lcom/mojang/blaze3d/pipeline/RenderPipeline;
+	METHOD method_73243 getRenderPipeline ()Lnet/minecraft/class_1_1257;
 	METHOD method_75939 (Lnet/minecraft/class_12247;Lnet/minecraft/class_12247$class_12338;)Lnet/minecraft/class_1921;
 		ARG 1 texture
 	METHOD method_75940 of (Ljava/lang/String;Lnet/minecraft/class_12247;)Lnet/minecraft/class_1921;

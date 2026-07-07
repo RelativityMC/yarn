@@ -168,8 +168,6 @@ CLASS net/minecraft/class_7923 net/minecraft/registry/Registries
 		ARG 0 registry
 	METHOD method_47498 (Lnet/minecraft/class_2378;)Ljava/lang/Object;
 		ARG 0 registry
-	METHOD method_47499 (Lnet/minecraft/class_2378;)Ljava/lang/Object;
-		ARG 0 registry
 	METHOD method_47501 (Lnet/minecraft/class_2378;)Ljava/lang/Object;
 		ARG 0 registry
 	METHOD method_47502 (Lnet/minecraft/class_2378;)Ljava/lang/Object;

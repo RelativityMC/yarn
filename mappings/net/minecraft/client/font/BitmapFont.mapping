@@ -6,13 +6,13 @@ CLASS net/minecraft/class_386 net/minecraft/client/font/BitmapFont
 		ARG 1 texture
 		ARG 2 glyphs
 	CLASS class_1_1036 Texture
-		FIELD field_1_7129 stagingBuffer Lcom/mojang/blaze3d/buffers/GpuBuffer;
+		FIELD field_1_7129 stagingBuffer Lnet/minecraft/class_1_1211;
 		FIELD field_1_7130 id Lnet/minecraft/class_2960;
 		FIELD field_1_7131 image Lnet/minecraft/class_1011;
 		METHOD <init> (Lnet/minecraft/class_2960;Lnet/minecraft/class_1011;)V
 			ARG 1 id
 			ARG 2 image
-		METHOD method_1_6361 getImageDataBuffer ()Lcom/mojang/blaze3d/buffers/GpuBuffer;
+		METHOD method_1_6361 getImageDataBuffer ()Lnet/minecraft/class_1_1211;
 	CLASS class_387 Loader
 		FIELD field_44799 CODEC Lcom/mojang/serialization/MapCodec;
 		FIELD field_44800 CODE_POINT_GRID_CODEC Lcom/mojang/serialization/Codec;

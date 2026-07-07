@@ -1,9 +1,8 @@
 CLASS net/minecraft/class_5475 net/minecraft/data/DynamicRegistriesProvider
 	FIELD field_40665 output Lnet/minecraft/class_7784;
 	FIELD field_40952 registriesFuture Ljava/util/concurrent/CompletableFuture;
-	METHOD <init> (Lnet/minecraft/class_7784;Ljava/util/concurrent/CompletableFuture;)V
+	METHOD <init> (Lnet/minecraft/class_7784;Ljava/lang/String;Ljava/util/Collection;Ljava/util/concurrent/CompletableFuture;)V
 		ARG 1 output
-		ARG 2 registriesFuture
 	METHOD method_39678 writeRegistryEntries (Lnet/minecraft/class_7403;Lnet/minecraft/class_7225$class_7874;Lcom/mojang/serialization/DynamicOps;Lnet/minecraft/class_7655$class_7657;)Ljava/util/Optional;
 		ARG 1 writer
 		ARG 2 registries

@@ -1,3 +1,3 @@
 CLASS net/minecraft/class_1_14 net/minecraft/client/gui/render/UiLightmapTexture
 	FIELD field_1_109 texture Lnet/minecraft/class_1043;
-	METHOD method_1_417 getTextureView ()Lcom/mojang/blaze3d/textures/GpuTextureView;
+	METHOD method_1_417 getTextureView ()Lnet/minecraft/class_1_1260;

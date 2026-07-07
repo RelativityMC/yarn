@@ -20,16 +20,11 @@ CLASS net/minecraft/class_2589 net/minecraft/block/entity/BrewingStandBlockEntit
 	METHOD <init> (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
 		ARG 1 pos
 		ARG 2 state
-	METHOD method_11027 canCraft (Lnet/minecraft/class_1845;Lnet/minecraft/class_2371;)Z
-		ARG 0 brewingRecipeRegistry
-		ARG 1 slots
+	METHOD method_11027 canCraft (Lnet/minecraft/class_3218;Lnet/minecraft/class_2589;)Z
 	METHOD method_11028 getSlotsEmpty ()[Z
-	METHOD method_11029 craft (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2371;)V
-		ARG 0 world
+	METHOD method_11029 craft (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_2589;)V
 		ARG 1 pos
-		ARG 2 slots
-	METHOD method_31665 tick (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2589;)V
-		ARG 0 world
+	METHOD method_31665 tick (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2589;)V
 		ARG 1 pos
 		ARG 2 state
 		ARG 3 blockEntity

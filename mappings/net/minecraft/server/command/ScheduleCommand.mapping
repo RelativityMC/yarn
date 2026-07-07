@@ -12,9 +12,8 @@ CLASS net/minecraft/class_3112 net/minecraft/server/command/ScheduleCommand
 		ARG 0 dispatcher
 	METHOD method_13568 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
-	METHOD method_22833 clearEvent (Lnet/minecraft/class_2168;Ljava/lang/String;)I
+	METHOD method_22833 clearEvent (Lnet/minecraft/class_2168;Lnet/minecraft/class_2960;)I
 		ARG 0 source
-		ARG 1 eventName
 	METHOD method_22834 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_22835 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;

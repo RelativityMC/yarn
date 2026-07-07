@@ -1,22 +1,22 @@
 CLASS net/minecraft/class_1_147 com/mojang/blaze3d/systems/GpuBackend
 	METHOD method_1_1285 close ()V
-	METHOD method_1_1286 createBuffer (Ljava/util/function/Supplier;IJ)Lcom/mojang/blaze3d/buffers/GpuBuffer;
+	METHOD method_1_1286 createBuffer (Ljava/util/function/Supplier;IJ)Lnet/minecraft/class_1_1211;
 		ARG 1 labelGetter
 		ARG 2 usage
 		ARG 3 size
-	METHOD method_1_1287 createBuffer (Ljava/util/function/Supplier;ILjava/nio/ByteBuffer;)Lcom/mojang/blaze3d/buffers/GpuBuffer;
+	METHOD method_1_1287 createBuffer (Ljava/util/function/Supplier;ILjava/nio/ByteBuffer;)Lnet/minecraft/class_1_1211;
 		ARG 1 labelGetter
 		ARG 2 usage
 		ARG 3 data
 	METHOD method_1_1288 getCommandEncoder ()Lnet/minecraft/class_1_154;
-	METHOD method_1_1289 createSampler (Lcom/mojang/blaze3d/textures/AddressMode;Lcom/mojang/blaze3d/textures/AddressMode;Lcom/mojang/blaze3d/textures/FilterMode;Lcom/mojang/blaze3d/textures/FilterMode;ILjava/util/OptionalDouble;)Lnet/minecraft/class_12137;
+	METHOD method_1_1289 createSampler (Lnet/minecraft/class_1_1239;Lnet/minecraft/class_1_1239;Lnet/minecraft/class_1_1230;Lnet/minecraft/class_1_1230;ILjava/util/OptionalDouble;)Lnet/minecraft/class_12137;
 		ARG 1 addressModeU
 		ARG 2 addressModeV
 		ARG 3 minFilterMode
 		ARG 4 magFilterMode
 		ARG 5 maxAnisotropy
 		ARG 6 maxLevelOfDetail
-	METHOD method_1_1290 createTexture (Ljava/lang/String;ILnet/minecraft/class_1_658;IIII)Lcom/mojang/blaze3d/textures/GpuTexture;
+	METHOD method_1_1290 createTexture (Ljava/lang/String;ILnet/minecraft/class_1_658;IIII)Lnet/minecraft/class_1_1231;
 		ARG 1 label
 		ARG 2 usage
 		ARG 3 format
@@ -24,7 +24,7 @@ CLASS net/minecraft/class_1_147 com/mojang/blaze3d/systems/GpuBackend
 		ARG 5 height
 		ARG 6 depthOrLayers
 		ARG 7 mipLevels
-	METHOD method_1_1291 createTexture (Ljava/util/function/Supplier;ILnet/minecraft/class_1_658;IIII)Lcom/mojang/blaze3d/textures/GpuTexture;
+	METHOD method_1_1291 createTexture (Ljava/util/function/Supplier;ILnet/minecraft/class_1_658;IIII)Lnet/minecraft/class_1_1231;
 		ARG 1 labelGetter
 		ARG 2 usage
 		ARG 3 format
@@ -32,15 +32,15 @@ CLASS net/minecraft/class_1_147 com/mojang/blaze3d/systems/GpuBackend
 		ARG 5 height
 		ARG 6 depthOrLayers
 		ARG 7 mipLevels
-	METHOD method_1_1292 createTextureView (Lcom/mojang/blaze3d/textures/GpuTexture;)Lcom/mojang/blaze3d/textures/GpuTextureView;
+	METHOD method_1_1292 createTextureView (Lnet/minecraft/class_1_1231;)Lnet/minecraft/class_1_1260;
 		ARG 1 texture
-	METHOD method_1_1293 createTextureView (Lcom/mojang/blaze3d/textures/GpuTexture;II)Lcom/mojang/blaze3d/textures/GpuTextureView;
+	METHOD method_1_1293 createTextureView (Lnet/minecraft/class_1_1231;II)Lnet/minecraft/class_1_1260;
 		ARG 1 texture
 		ARG 2 baseMipLevel
 		ARG 3 mipLevels
 	METHOD method_1_1297 getLastDebugMessages ()Ljava/util/List;
 	METHOD method_1_1304 isDebuggingEnabled ()Z
-	METHOD method_1_1306 getCompiledPipeline (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/class_12289;)Lcom/mojang/blaze3d/pipeline/CompiledRenderPipeline;
+	METHOD method_1_1306 getCompiledPipeline (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_12289;)Lnet/minecraft/class_1_1285;
 		ARG 1 pipeline
 		ARG 2 sourceGetter
 	METHOD method_1_4219 createSurface (J)Lnet/minecraft/class_1_713;

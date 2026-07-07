@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_2432 net/minecraft/data/loottable/vanilla/VanillaChestLootTableGenerator
-	METHOD method_1_6728 acceptAbandonedCampTables (Ljava/util/function/BiConsumer;)V
-		ARG 1 lootTableBiConsumer
+	METHOD method_1_6728 acceptAbandonedCampTables ()V
 	METHOD method_48499 createShipwreckSupplyChestTableBuilder ()Lnet/minecraft/class_52$class_53;
 	METHOD method_48500 createShipwreckMapChestTableBuilder ()Lnet/minecraft/class_52$class_53;
 	METHOD method_48501 createBastionHoglinStableChestTableBuilder ()Lnet/minecraft/class_52$class_53;
@@ -17,5 +16,4 @@ CLASS net/minecraft/class_2432 net/minecraft/data/loottable/vanilla/VanillaChest
 	METHOD method_48512 createShipwreckTreasureChestTableBuilder ()Lnet/minecraft/class_52$class_53;
 	METHOD method_48513 createPillagerOutpostChestTableBuilder ()Lnet/minecraft/class_52$class_53;
 	METHOD method_48514 createDesertPyramidChestTableBuilder ()Lnet/minecraft/class_52$class_53;
-	METHOD method_55304 acceptTrialSpawnerTables (Ljava/util/function/BiConsumer;)V
-		ARG 1 lootTableBiConsumer
+	METHOD method_55304 acceptTrialSpawnerTables ()V

@@ -1,4 +1,4 @@
 CLASS net/minecraft/class_12289 net/minecraft/client/shader/ShaderSourceGetter
-	METHOD method_1_55 get (Lnet/minecraft/class_2960;Lcom/mojang/blaze3d/shaders/ShaderType;)Ljava/lang/String;
+	METHOD method_1_55 get (Lnet/minecraft/class_2960;Lnet/minecraft/class_1_1229;)Ljava/lang/String;
 		ARG 1 id
 		ARG 2 type

@@ -18,12 +18,12 @@ CLASS net/minecraft/class_1_296 net/minecraft/client/render/UberBuffer
 		ARG 1 data
 	METHOD method_1_2174 get (Ljava/lang/Object;)Lnet/minecraft/class_1_291$class_1_292;
 		ARG 1 data
-	METHOD method_1_2175 getBufferOfAllocation (Lnet/minecraft/class_1_291$class_1_292;)Lcom/mojang/blaze3d/buffers/GpuBuffer;
+	METHOD method_1_2175 getBufferOfAllocation (Lnet/minecraft/class_1_291$class_1_292;)Lnet/minecraft/class_1_1211;
 		ARG 1 allocation
 	METHOD method_1_2176 logState ()V
 	METHOD method_1_2177 dispose (Ljava/lang/Object;)V
 		ARG 1 data
-	METHOD method_1_2178 upload (Lcom/mojang/blaze3d/systems/GpuDevice;Lnet/minecraft/class_1_686$class_1_688;)Z
+	METHOD method_1_2178 upload (Lnet/minecraft/class_1_1209;Lnet/minecraft/class_1_686$class_1_688;)Z
 		COMMENT {@return whether any heaps were created or destroyed}
 		ARG 1 device
 		ARG 2 uploader
@@ -38,8 +38,8 @@ CLASS net/minecraft/class_1_296 net/minecraft/client/render/UberBuffer
 		FIELD comp_1_498 uploadCallback Lnet/minecraft/class_1_296$class_1_302;
 		METHOD comp_1_498 uploadCallback ()Lnet/minecraft/class_1_296$class_1_302;
 	CLASS class_1_298 Heap
-		FIELD field_1_1774 buffer Lcom/mojang/blaze3d/buffers/GpuBuffer;
-		METHOD <init> (JLcom/mojang/blaze3d/systems/GpuDevice;ILjava/lang/String;)V
+		FIELD field_1_1774 buffer Lnet/minecraft/class_1_1211;
+		METHOD <init> (JLnet/minecraft/class_1_1209;ILjava/lang/String;)V
 			ARG 1 size
 			ARG 3 device
 			ARG 4 usage

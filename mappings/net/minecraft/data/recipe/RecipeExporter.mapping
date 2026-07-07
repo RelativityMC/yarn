@@ -4,4 +4,3 @@ CLASS net/minecraft/class_8790 net/minecraft/data/recipe/RecipeExporter
 		ARG 1 key
 		ARG 2 recipe
 		ARG 3 advancement
-	METHOD method_62738 addRootAdvancement ()V

@@ -10,7 +10,7 @@ CLASS net/minecraft/class_9801 net/minecraft/client/render/BuiltBuffer
 	METHOD method_60819 sortQuads (Lnet/minecraft/class_9799;Lnet/minecraft/class_8251;)Lnet/minecraft/class_9801$class_9802;
 		ARG 1 allocator
 		ARG 2 sorter
-	METHOD method_60820 collectCentroids (Ljava/nio/ByteBuffer;ILcom/mojang/blaze3d/vertex/VertexFormat;Lnet/minecraft/class_11899;I)V
+	METHOD method_60820 collectCentroids (Ljava/nio/ByteBuffer;ILnet/minecraft/class_1_1232;Lnet/minecraft/class_11899;I)V
 		ARG 0 buffer
 		ARG 1 vertexCount
 		ARG 2 format

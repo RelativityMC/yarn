@@ -45,5 +45,5 @@ CLASS net/minecraft/class_1856 net/minecraft/recipe/Ingredient
 	METHOD method_64981 createDisplayWithRemainder (Lnet/minecraft/class_6880;)Lnet/minecraft/class_10302;
 		ARG 0 displayedItem
 	METHOD method_65799 isEmpty ()Z
-	METHOD test matches (Ljava/lang/Object;)Z
+	METHOD test (Ljava/lang/Object;)Z
 		ARG 1 stack

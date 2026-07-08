@@ -6,11 +6,11 @@ CLASS net/minecraft/class_1_1260 com/mojang/blaze3d/textures/GpuTextureView
 		ARG 1 texture
 		ARG 2 baseMipLevel
 		ARG 3 mipLevel
-	METHOD method_1_8000 getBaseMipLevel ()I
+	METHOD method_1_8000 baseMipLevel ()I
 	METHOD method_1_8001 getHeight (I)I
 		ARG 1 mipmap
 	METHOD method_1_8002 getWidth (I)I
 		ARG 1 mipmap
 	METHOD method_1_8003 isClosed ()Z
-	METHOD method_1_8004 getMipLevel ()I
+	METHOD method_1_8004 mipLevel ()I
 	METHOD method_1_8005 getTexture ()Lnet/minecraft/class_1_1231;

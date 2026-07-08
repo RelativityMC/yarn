@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_1247
+	METHOD method_1_7894 tickInVehicle ()V
+	METHOD method_1_7895 (Lnet/minecraft/class_243;)Lnet/minecraft/class_1_1198;
+		ARG 1 syncedPos
+	METHOD method_1_7896 (Lnet/minecraft/class_243;)V
+		ARG 1 syncedPos

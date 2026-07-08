@@ -1,4 +1,20 @@
 CLASS net/minecraft/class_1_1223
+	FIELD field_1_8497 entries Ljava/util/Map;
+	FIELD field_1_8498 key Lnet/minecraft/class_5321;
+	FIELD field_1_8499 lifecycle Lcom/mojang/serialization/Lifecycle;
+	METHOD <init> (Lnet/minecraft/class_5321;Lcom/mojang/serialization/Lifecycle;)V
+		ARG 1 key
+		ARG 2 lifecycle
+	METHOD method_1_7771 (Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_8990$class_8991;Ljava/util/Set;)Lnet/minecraft/class_7225$class_7874;
+		ARG 0 registries
+		ARG 1 base
+		ARG 3 cloneableRegistries
+		ARG 4 bootstrappedRegistries
+	METHOD method_1_7772 (Lnet/minecraft/class_8990$class_8991;Lnet/minecraft/class_5321;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_7225$class_7874;Lorg/apache/commons/lang3/mutable/MutableObject;)Lnet/minecraft/class_7225$class_7226;
+		ARG 0 cloneableRegistries
+		ARG 1 registryKey
+	METHOD method_1_7773 (Lnet/minecraft/class_8990$class_8991;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_7225$class_7874;Lorg/apache/commons/lang3/mutable/MutableObject;Lnet/minecraft/class_5321;)Lnet/minecraft/class_7225$class_7226;
+		ARG 4 registryKey
 	CLASS class_8992 LazyReferenceEntry
 		FIELD field_47490 supplier Ljava/util/function/Supplier;
 		METHOD <init> (Lnet/minecraft/class_7876;Lnet/minecraft/class_5321;)V

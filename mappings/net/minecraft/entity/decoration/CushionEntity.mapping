@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_1_1225 net/minecraft/entity/decoration/CushionEntity
+	FIELD field_1_8511 COLOR Lnet/minecraft/class_2940;
+	FIELD field_1_8512 DEFAULT_COLOR Lnet/minecraft/class_1767;
+	METHOD method_1_7782 getColor ()Lnet/minecraft/class_1767;
+	METHOD method_1_7783 setColor (Lnet/minecraft/class_1767;)V
+		ARG 1 color
+	METHOD method_1_7784 spawnBreakParticles ()V
+	METHOD method_1_7785 canBePlacedOn (Lnet/minecraft/class_1937;Lnet/minecraft/class_238;)Z
+		ARG 0 world
+		ARG 1 cushionBox

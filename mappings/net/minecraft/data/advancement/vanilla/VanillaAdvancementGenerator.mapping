@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1_1277 net/minecraft/data/advancement/vanilla/VanillaAdvancementGenerator
+	FIELD field_1_8701 advancements Lnet/minecraft/class_7891;
+	METHOD <init> (Lnet/minecraft/class_7891;)V
+		ARG 1 registry
+	METHOD method_10335 accept ()V
+	CLASS class_1_1278 Factory
+		METHOD method_1_8145 create (Lnet/minecraft/class_7891;)Lnet/minecraft/class_1_1277;
+			ARG 1 registry

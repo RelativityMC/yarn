@@ -1,67 +1,121 @@
 CLASS net/minecraft/class_1_1267 com/mojang/blaze3d/opengl/GlStateManager
-	METHOD method_1_8022 _activeTexture (I)V
+	FIELD field_1_8668 blendFunc [Lnet/minecraft/class_1_1267$class_1017;
+	FIELD field_1_8669 logicOp Lnet/minecraft/class_1_1267$class_1021;
+	FIELD field_1_8670 writeMasks [I
+	FIELD field_1_8671 cullFace Lnet/minecraft/class_1_1267$class_1025;
+	FIELD field_1_8672 depthTest Lnet/minecraft/class_1_1267$class_1026;
+	FIELD field_1_8673 BUFFERS_PLOT Lcom/mojang/jtracy/Plot;
+	FIELD field_1_8674 TEXTURES_PLOT Lcom/mojang/jtracy/Plot;
+	FIELD field_1_8675 polygonOffset Lnet/minecraft/class_1_1267$class_1031;
+	FIELD field_1_8676 scissorTest Lnet/minecraft/class_1_1267$class_5518;
+	FIELD field_1_8677 texture [Lnet/minecraft/class_1_1267$class_1039;
+	FIELD field_1_8679 activeTexture I
+	FIELD field_1_8680 numBuffers I
+	FIELD field_1_8681 numTextures I
+	FIELD field_1_8682 currentReadFramebuffer I
+	FIELD field_1_8683 currentDrawFramebuffer I
+	METHOD method_1_8022 activeTexture (I)V
 		ARG 0 texture
-	METHOD method_1_8023 (I)V
+	METHOD method_1_8023 bindTexture (I)V
 		ARG 0 texture
-	METHOD method_1_8025 (IIII)V
+	METHOD method_1_8024 blendEquationSeparate (II)V
+		ARG 0 opRgb
+		ARG 1 opAlpha
+	METHOD method_1_8025 blendFuncSeparate (IIII)V
 		ARG 0 srcFactorRGB
 		ARG 1 dstFactorRgb
 		ARG 2 srcFactorAlpha
 		ARG 3 dstFactorAlpha
-	METHOD method_1_8026 _clear (I)V
+	METHOD method_1_8026 clear (I)V
 		ARG 0 mask
-	METHOD method_1_8029 (I)V
+	METHOD method_1_8027 clear (D)V
+		ARG 0 depth
+	METHOD method_1_8028 clear (ILorg/joml/Vector4fc;)V
+		ARG 0 mask
+		ARG 1 color
+	METHOD method_1_8029 colorMask (I)V
 		ARG 0 writeMask
-	METHOD method_1_8031 (I)V
+	METHOD method_1_8030 colorMask (II)V
+		ARG 0 index
+		ARG 1 writeMask
+	METHOD method_1_8031 deleteTexture (I)V
 		ARG 0 texture
-	METHOD method_1_8032 (I)V
+	METHOD method_1_8032 depthFunc (I)V
 		ARG 0 func
-	METHOD method_1_8033 (Z)V
+	METHOD method_1_8033 depthMask (Z)V
 		ARG 0 mask
-	METHOD method_1_8041 (IIIJ)V
+	METHOD method_1_8034 disableBlend (I)V
+		ARG 0 index
+	METHOD method_1_8035 disableLogicOp ()V
+	METHOD method_1_8036 disableCull ()V
+	METHOD method_1_8037 disableDepthTest ()V
+	METHOD method_1_8038 disablePolygonOffset ()V
+	METHOD method_1_8039 disableScissor ()V
+	METHOD method_1_8040 drawArrays (III)V
+	METHOD method_1_8041 drawElements (IIIJ)V
 		ARG 1 type
 		ARG 2 count
-	METHOD method_1_8050 _getError ()I
-	METHOD method_1_8051 _getInteger (I)I
+	METHOD method_1_8042 enableBlend (I)V
+		ARG 0 index
+	METHOD method_1_8043 enableLogicOp ()V
+	METHOD method_1_8044 enableCull ()V
+	METHOD method_1_8045 enableDepthTest ()V
+	METHOD method_1_8046 enablePolygonOffset ()V
+	METHOD method_1_8047 enableScissor ()V
+	METHOD method_1_8048 enableVertexAttribArray (I)V
+	METHOD method_1_8049 genTexture ()I
+	METHOD method_1_8050 getError ()I
+	METHOD method_1_8051 getInteger (I)I
 		ARG 0 pname
-	METHOD method_1_8052 _getString (I)Ljava/lang/String;
+	METHOD method_1_8052 getString (I)Ljava/lang/String;
 		ARG 0 name
-	METHOD method_1_8053 _getTexLevelParameter (III)I
+	METHOD method_1_8053 getTexLevelParameter (III)I
 		ARG 2 pname
-	METHOD method_1_8054 (IILjava/lang/CharSequence;)V
+	METHOD method_1_8054 bindAttribLocation (IILjava/lang/CharSequence;)V
 		ARG 1 index
-	METHOD method_1_8055 _bindBuffer (II)V
-	METHOD method_1_8056 _glBindFramebuffer (II)V
+	METHOD method_1_8055 bindBuffer (II)V
+	METHOD method_1_8056 bindFramebuffer (II)V
 		ARG 0 target
 		ARG 1 framebuffer
-	METHOD method_1_8057 (I)V
+	METHOD method_1_8057 bindVertexArray (I)V
 		ARG 0 array
-	METHOD method_1_8058 _glBlitFrameBuffer (IIIIIIIIII)V
-	METHOD method_1_8059 _bufferData (IJI)V
-	METHOD method_1_8060 _bufferData (ILjava/nio/ByteBuffer;I)V
-	METHOD method_1_8062 _glClientWaitSync (JIJ)I
-	METHOD method_1_8066 _glFenceSync (II)J
-	METHOD method_1_8067 _glFramebufferTexture2D (IIIII)V
+	METHOD method_1_8058 blitFrameBuffer (IIIIIIIIII)V
+	METHOD method_1_8059 bufferData (IJI)V
+	METHOD method_1_8060 bufferData (ILjava/nio/ByteBuffer;I)V
+	METHOD method_1_8061 bufferSubData (IJLjava/nio/ByteBuffer;)V
+	METHOD method_1_8062 clientWaitSync (JIJ)I
+	METHOD method_1_8063 deleteBuffer (I)V
+		ARG 0 buffer
+	METHOD method_1_8064 deleteFramebuffer (I)V
+		ARG 0 framebuffer
+	METHOD method_1_8065 deleteSync (J)V
+	METHOD method_1_8066 fenceSync (II)J
+	METHOD method_1_8067 framebufferTexture2D (IIIII)V
 		ARG 0 target
 		ARG 1 attachment
 		ARG 2 textureTarget
 		ARG 3 texture
 		ARG 4 level
-	METHOD method_1_8071 (IJJI)Ljava/nio/ByteBuffer;
+	METHOD method_1_8068 genBuffer ()I
+	METHOD method_1_8069 genVertexArray ()I
+	METHOD method_1_8070 getUniformLocation (ILjava/lang/CharSequence;)I
+		ARG 1 name
+	METHOD method_1_8071 mapBufferRange (IJJI)Ljava/nio/ByteBuffer;
 		ARG 3 range
-	METHOD method_1_8072 (II)V
+	METHOD method_1_8072 uniform1i (II)V
 		ARG 1 value
-	METHOD method_1_8073 _unmapBuffer (I)V
-	METHOD method_1_8075 _logicOp (I)V
+	METHOD method_1_8073 unmapBuffer (I)V
+	METHOD method_1_8074 useProgram (I)V
+	METHOD method_1_8075 logicOp (I)V
 		ARG 0 op
-	METHOD method_1_8076 _pixelStore (II)V
+	METHOD method_1_8076 pixelStore (II)V
 		ARG 0 pname
 		ARG 1 param
-	METHOD method_1_8077 _polygonMode (II)V
-	METHOD method_1_8078 (FF)V
+	METHOD method_1_8077 polygonMode (II)V
+	METHOD method_1_8078 polygonOffset (FF)V
 		ARG 0 factor
 		ARG 1 units
-	METHOD method_1_8079 _readPixels (IIIIIIJ)V
+	METHOD method_1_8079 readPixels (IIIIIIJ)V
 		ARG 0 x
 		ARG 1 y
 		ARG 2 width
@@ -69,37 +123,58 @@ CLASS net/minecraft/class_1_1267 com/mojang/blaze3d/opengl/GlStateManager
 		ARG 4 format
 		ARG 5 type
 		ARG 6 data
-	METHOD method_1_8080 (IIII)V
+	METHOD method_1_8080 scissor (IIII)V
 		ARG 0 x
 		ARG 1 y
 		ARG 2 width
 		ARG 3 height
-	METHOD method_1_8081 _texImage2D (IIIIIIIILjava/nio/ByteBuffer;)V
+	METHOD method_1_8081 texImage2D (IIIIIIIILjava/nio/ByteBuffer;)V
 		ARG 2 internalFormat
-	METHOD method_1_8082 _texParameter (III)V
+	METHOD method_1_8082 texParameter (III)V
 		ARG 1 pname
 		ARG 2 param
-	METHOD method_1_8083 _texSubImage2D (IIIIIIIIJ)V
+	METHOD method_1_8083 texSubImage2D (IIIIIIIIJ)V
 		ARG 2 offsetX
 		ARG 3 offsetY
-	METHOD method_1_8084 _texSubImage2D (IIIIIIIILjava/nio/ByteBuffer;)V
+	METHOD method_1_8084 texSubImage2D (IIIIIIIILjava/nio/ByteBuffer;)V
 		ARG 2 offsetX
 		ARG 3 offsetY
-	METHOD method_1_8085 (IIIIJ)V
+	METHOD method_1_8085 vertexAttribIPointer (IIIIJ)V
 		ARG 4 pointer
-	METHOD method_1_8086 (IIIZIJ)V
+	METHOD method_1_8086 vertexAttribPointer (IIIZIJ)V
 		ARG 5 pointer
+	METHOD method_1_8087 viewport (IIII)V
+	METHOD method_1_8088 clearErrors ()V
 	METHOD method_1_8089 getFrameBuffer (I)I
 		ARG 0 target
-	METHOD method_1_8092 (IIII)V
+	METHOD method_1_8090 attachShader (II)V
+	METHOD method_1_8091 glBlendEquationSeparate (II)V
+		ARG 0 opRgb
+		ARG 1 opAlpha
+	METHOD method_1_8092 glBlendFuncSeparate (IIII)V
 		ARG 0 srcFactorRgb
 		ARG 1 dstFactorRgb
 		ARG 2 srcFactorAlpha
 		ARG 3 dstFactorAlpha
-	METHOD method_1_8095 _createShader (I)I
-	METHOD method_1_8100 _getProgram (II)I
-	METHOD method_1_8102 _getShader (II)I
+	METHOD method_1_8093 compileShader (I)V
+	METHOD method_1_8094 createProgram ()I
+	METHOD method_1_8095 createShader (I)I
+	METHOD method_1_8096 deleteProgram (I)V
+	METHOD method_1_8097 deleteShadder (I)V
+	METHOD method_1_8098 genFramebuffers ()I
+	METHOD method_1_8099 getProgramInfoLog (II)Ljava/lang/String;
+	METHOD method_1_8100 getProgram (II)I
+	METHOD method_1_8101 getShaderInfoLog (II)Ljava/lang/String;
+	METHOD method_1_8102 getShader (II)I
+	METHOD method_1_8103 linkProgram (I)V
+	METHOD method_1_8104 shaderSource (ILjava/lang/String;)V
+		ARG 1 source
+	METHOD method_1_8105 onCreateBuffer ()V
 	METHOD method_1_8107 (I)Lnet/minecraft/class_1_1267$class_1039;
+		ARG 0 index
+	METHOD method_1_8108 (I)I
+		ARG 0 index
+	METHOD method_1_8109 (I)Lnet/minecraft/class_1_1267$class_1017;
 		ARG 0 index
 	CLASS class_1017 BlendFuncState
 		FIELD field_1_3543 opAlpha I

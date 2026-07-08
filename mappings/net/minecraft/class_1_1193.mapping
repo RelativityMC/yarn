@@ -1,0 +1,29 @@
+CLASS net/minecraft/class_1_1193
+	FIELD field_1_8284 PACKET_CODEC Lnet/minecraft/class_9139;
+	METHOD comp_1_1266 pitch ()F
+	METHOD comp_1_1267 yaw ()F
+	METHOD method_1_7632 freeze ()Lnet/minecraft/class_1_1193;
+	METHOD method_1_7633 equals (Lnet/minecraft/class_243;FF)Z
+		ARG 1 position
+		ARG 2 yaw
+		ARG 3 pitch
+	METHOD method_1_7634 of (Lnet/minecraft/class_243;FF)Lnet/minecraft/class_1_1193;
+		ARG 0 position
+		ARG 1 yaw
+		ARG 2 pitch
+	CLASS class_1_1194 Immutable
+		FIELD comp_1_1266 pitch F
+		FIELD comp_1_1267 yaw F
+	CLASS class_1_1195 Mutable
+		FIELD field_1_8285 position Lnet/minecraft/class_243;
+		FIELD field_1_8286 pitch F
+		FIELD field_1_8287 yaw F
+		METHOD method_1_7635 move (Lnet/minecraft/class_243;)V
+			ARG 1 offset
+		METHOD method_1_7636 turn (FF)V
+			ARG 1 yawOffset
+			ARG 2 pitchOffset
+		METHOD method_1_7637 set (Lnet/minecraft/class_243;FF)V
+			ARG 1 position
+			ARG 2 yaw
+			ARG 3 pitch

@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_1275 net/minecraft/client/render/entity/model/CushionEntityModel
+	METHOD method_1_8144 getTexturedModelData ()Lnet/minecraft/class_5607;

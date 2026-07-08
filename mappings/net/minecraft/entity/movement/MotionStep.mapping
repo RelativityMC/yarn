@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_1202 net/minecraft/entity/movement/MotionStep
+	FIELD field_1_8300 PACKET_CODEC Lnet/minecraft/class_9139;
+	METHOD method_1_7658 moved (Lnet/minecraft/class_243;)Lnet/minecraft/class_1_1202;
+		ARG 1 offset

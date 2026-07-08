@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1289 net/minecraft/loot/condition/LootConditions
+	METHOD method_1_8183 bootstrap (Lnet/minecraft/class_7891;)V
+		ARG 0 registry
+	METHOD method_1_8184 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 path

@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_2172 net/minecraft/command/CommandSource
 	FIELD field_55224 SUGGESTION_MATCH_PREFIX Lcom/google/common/base/CharMatcher;
+	METHOD method_1_7846 getPostEffects ()Ljava/util/stream/Stream;
 	METHOD method_9250 forEachMatching (Ljava/lang/Iterable;Ljava/lang/String;Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Consumer;)V
 		ARG 0 candidates
 		ARG 1 remaining

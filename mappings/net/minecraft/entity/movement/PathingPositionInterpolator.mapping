@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_1_1279 net/minecraft/entity/movement/PathingPositionInterpolator
+	FIELD field_1_8705 destination Lnet/minecraft/class_1_1279$class_1_1280;
+	CLASS class_1_1280 Destination
+		FIELD field_1_8707 progress F
+		FIELD field_1_8708 cumulativeOffset Lnet/minecraft/class_243;
+		FIELD field_1_8709 duration F
+		FIELD field_1_8710 steps Ljava/util/LinkedList;
+		METHOD method_1_8149 setMotionPath (Lnet/minecraft/class_1_1198;Lnet/minecraft/class_243;I)V
+			ARG 1 motion
+			ARG 2 entityPos
+			ARG 3 lerpDuration
+		METHOD method_1_8150 tickPos ()Lnet/minecraft/class_243;
+		METHOD method_1_8151 (Lnet/minecraft/class_243;Lnet/minecraft/class_1_1202;)Lnet/minecraft/class_1_1202;
+			ARG 1 step

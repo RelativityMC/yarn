@@ -1,0 +1,33 @@
+CLASS net/minecraft/class_1_1241 net/minecraft/registry/BootstrapRegistryWrapper
+	FIELD field_1_8575 key Lnet/minecraft/class_5321;
+	FIELD field_1_8576 lifecycle Lcom/mojang/serialization/Lifecycle;
+	FIELD field_1_8577 contents Lnet/minecraft/class_1_1241$class_1_1244;
+	METHOD <init> (Lnet/minecraft/class_5321;Lcom/mojang/serialization/Lifecycle;)V
+		ARG 1 key
+		ARG 2 lifecycle
+	METHOD method_1_7847 freeze ()V
+	METHOD method_1_7848 removeIf (Ljava/util/function/Predicate;)V
+		ARG 1 predicate
+	CLASS class_1_1242 Frozen
+		FIELD field_1_8578 tags Ljava/util/Map;
+		FIELD field_1_8579 entries Ljava/util/Map;
+		METHOD <init> (Ljava/util/Map;Ljava/util/Map;)V
+			ARG 1 entries
+			ARG 2 tags
+	CLASS class_1_1243 Larval
+		FIELD field_1_8580 tags Ljava/util/Map;
+		FIELD field_1_8581 entries Ljava/util/Map;
+		METHOD method_1_7849 (Lnet/minecraft/class_5321;)Lnet/minecraft/class_6880$class_6883;
+			ARG 1 k
+		METHOD method_1_7850 (Lnet/minecraft/class_6862;)Lnet/minecraft/class_6885$class_6888;
+			ARG 1 t
+	CLASS class_1_1244 Contents
+		METHOD method_1_7851 frozen ()Lnet/minecraft/class_1_1241$class_1_1244;
+		METHOD method_1_7852 getEntry (Lnet/minecraft/class_5321;)Lnet/minecraft/class_6880$class_6883;
+			ARG 1 key
+		METHOD method_1_7853 getTag (Lnet/minecraft/class_6862;)Lnet/minecraft/class_6885$class_6888;
+			ARG 1 tag
+		METHOD method_1_7854 entries ()Ljava/util/Collection;
+		METHOD method_1_7855 getTags ()Ljava/util/Collection;
+		METHOD method_1_7856 removeIf (Ljava/util/function/Predicate;)V
+			ARG 1 predicate

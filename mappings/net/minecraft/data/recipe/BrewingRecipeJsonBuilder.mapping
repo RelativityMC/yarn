@@ -1,0 +1,30 @@
+CLASS net/minecraft/class_1_1245 net/minecraft/data/recipe/BrewingRecipeJsonBuilder
+	FIELD field_1_8583 input Lnet/minecraft/class_1_1264;
+	FIELD field_1_8584 output Lnet/minecraft/class_1_107;
+	FIELD field_1_8585 reagent Lnet/minecraft/class_1_1264;
+	METHOD <init> (Lnet/minecraft/class_1_1264;Lnet/minecraft/class_1_1264;Lnet/minecraft/class_1_107;)V
+		ARG 1 input
+		ARG 2 reagent
+		ARG 3 output
+	METHOD method_1_7857 createTransformation (Lnet/minecraft/class_1792;Lnet/minecraft/class_6880;Lnet/minecraft/class_1792;Lnet/minecraft/class_1792;)Lnet/minecraft/class_1_1245;
+		ARG 0 inputItem
+		ARG 1 potion
+		ARG 2 reagent
+		ARG 3 outputItem
+	METHOD method_1_7858 create (Lnet/minecraft/class_1792;Lnet/minecraft/class_6880;Lnet/minecraft/class_1792;Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_1245;
+		ARG 0 potionItem
+		ARG 1 inputPotion
+		ARG 2 reagent
+		ARG 3 outputPotion
+	METHOD method_1_7859 getUniquePotionEntry (Lnet/minecraft/class_9359;)Ljava/util/Optional;
+		ARG 0 contents
+	METHOD method_1_7860 getUniquePotionEntry (Lnet/minecraft/class_1_1264;)Ljava/util/Optional;
+		ARG 1 ingredient
+	METHOD method_1_7862 (Lnet/minecraft/class_5321;Lnet/minecraft/class_5321;Ljava/lang/String;)Ljava/lang/String;
+		ARG 2 path
+	METHOD method_1_7863 potionInput (Lnet/minecraft/class_1792;Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_1264;
+		ARG 0 item
+		ARG 1 potion
+	METHOD method_1_7864 potionOutput (Lnet/minecraft/class_1792;Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_107;
+		ARG 0 item
+		ARG 1 potion

@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_8705 net/minecraft/network/listener/ClientCommonPacketListener
+	METHOD method_1_8182 onPostEffects (Lnet/minecraft/class_1_1290;)V
+		ARG 1 packet
 	METHOD method_11126 onSynchronizeTags (Lnet/minecraft/class_2790;)V
 		ARG 1 packet
 	METHOD method_52780 onCustomPayload (Lnet/minecraft/class_2658;)V

@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1262 net/minecraft/registry/RegistryHolder
+	METHOD method_1_8006 getRegistryEntries (Lnet/minecraft/class_5321;)Ljava/util/stream/Stream;
+		ARG 1 key
+	METHOD method_1_8007 getLookup (Lnet/minecraft/class_5321;)Lnet/minecraft/class_7871;
+		ARG 1 key

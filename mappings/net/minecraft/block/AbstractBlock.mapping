@@ -270,6 +270,8 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		COMMENT
 		COMMENT @see net.minecraft.resource.featuretoggle.FeatureFlags
 	FIELD field_54005 translationKey Ljava/lang/String;
+	METHOD <init> (Lnet/minecraft/class_4970$class_2251;)V
+		ARG 1 settings
 	METHOD method_1_5240 getWeakRedstonePower (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)I
 		ARG 1 state
 		ARG 2 view

@@ -17,9 +17,11 @@ CLASS net/minecraft/class_1542 net/minecraft/entity/ItemEntity
 	FIELD field_57661 DEFAULT_AGE S
 	FIELD field_57662 DEFAULT_PICKUP_DELAY S
 	METHOD <init> (Lnet/minecraft/class_1937;DDDLnet/minecraft/class_1799;)V
+		ARG 1 world
 		ARG 2 x
 		ARG 4 y
 		ARG 6 z
+		ARG 8 stack
 	METHOD <init> (Lnet/minecraft/class_1937;DDDLnet/minecraft/class_1799;DDD)V
 		ARG 1 world
 		ARG 2 x
@@ -90,6 +92,8 @@ CLASS net/minecraft/class_1542 net/minecraft/entity/ItemEntity
 		ARG 2 maxCount
 	METHOD method_24348 applyLavaBuoyancy ()V
 	METHOD method_27314 getRotation (FF)F
+		ARG 0 age
+		ARG 1 uniqueOffset
 	METHOD method_35190 setNeverDespawn ()V
 	METHOD method_48349 setOwner (Ljava/util/UUID;)V
 		ARG 1 owner

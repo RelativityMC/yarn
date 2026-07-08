@@ -1,1 +1,9 @@
 CLASS net/minecraft/class_7791 net/minecraft/data/loottable/LootTableGenerator
+	METHOD method_1_7738 accept ()V
+	CLASS class_1_1214 Output
+		METHOD method_1_7739 register (Lnet/minecraft/class_5321;Lnet/minecraft/class_52$class_53;)Lnet/minecraft/class_6880$class_6883;
+			ARG 1 key
+			ARG 2 builder
+	CLASS class_1_1215 Factory
+		METHOD method_1_7740 create (Lnet/minecraft/class_7791$class_1_1214;)Lnet/minecraft/class_7791;
+			ARG 1 output

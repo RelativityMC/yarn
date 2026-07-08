@@ -3,6 +3,14 @@ CLASS net/minecraft/class_7422 net/minecraft/entity/TrackedPosition
 	FIELD field_39016 pos Lnet/minecraft/class_243;
 	METHOD method_1_6831 error (D)D
 		ARG 0 value
+	METHOD method_1_7927 isTooBigToInterpolate (JJJ)Z
+		ARG 0 dx
+		ARG 2 dy
+		ARG 4 dz
+	METHOD method_1_7928 motionToVecDelta (Lnet/minecraft/class_1_1198;)Lnet/minecraft/class_1_1216;
+		ARG 1 motion
+	METHOD method_1_7929 getMotionToPos (Lnet/minecraft/class_243;)Lnet/minecraft/class_1_1216;
+		ARG 1 pos
 	METHOD method_43487 pack (D)J
 		ARG 0 value
 	METHOD method_43488 unpack (J)D

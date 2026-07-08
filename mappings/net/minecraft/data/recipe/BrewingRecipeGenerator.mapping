@@ -1,0 +1,28 @@
+CLASS net/minecraft/class_1_1207 net/minecraft/data/recipe/BrewingRecipeGenerator
+	FIELD field_1_8335 transformations Ljava/util/List;
+	FIELD field_1_8336 containers Ljava/util/List;
+	FIELD field_1_8337 exporter Lnet/minecraft/class_8790;
+	FIELD field_1_8338 usedPotions Ljava/util/Set;
+	METHOD <init> (Lnet/minecraft/class_8790;)V
+		ARG 1 exporter
+	METHOD method_1_7693 registerContainer (Lnet/minecraft/class_1792;)V
+		ARG 1 container
+	METHOD method_1_7694 registerTransformation (Lnet/minecraft/class_1792;Lnet/minecraft/class_1792;Lnet/minecraft/class_1792;)V
+		ARG 1 container
+		ARG 2 reagent
+		ARG 3 output
+	METHOD method_1_7695 registerTransformations ()V
+	METHOD method_1_7696 registerContainers ()V
+	METHOD method_1_7697 registerPotionRecipe (Lnet/minecraft/class_6880;Lnet/minecraft/class_1792;Lnet/minecraft/class_6880;)V
+		ARG 1 inputPotion
+		ARG 2 reagent
+		ARG 3 outputPotion
+	METHOD method_1_7698 registerPotionRecipes ()V
+	METHOD method_1_7699 generate ()V
+	METHOD method_1_7700 registerPotionRecipePlusMundane (Lnet/minecraft/class_1792;Lnet/minecraft/class_6880;)V
+		ARG 1 reagent
+		ARG 2 outputFromAwkward
+	METHOD method_1_7701 offerTransformationRecipes ()V
+	METHOD method_1_7702 offer (Lnet/minecraft/class_1_1245;)V
+		ARG 1 builder
+	CLASS class_1_1208 Transformation

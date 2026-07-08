@@ -1,4 +1,9 @@
 CLASS net/minecraft/class_9359 net/minecraft/predicate/item/PotionContentsPredicate
+	FIELD field_1_8717 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_49802 CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_1_8157 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_8158 potionContents (Lnet/minecraft/class_6880;)Lnet/minecraft/class_9359;
+		ARG 0 potions
 	METHOD method_58178 potionContents (Lnet/minecraft/class_6885;)Lnet/minecraft/class_9359;
 		ARG 0 potions

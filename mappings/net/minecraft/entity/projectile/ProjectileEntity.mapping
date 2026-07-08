@@ -1,5 +1,9 @@
 CLASS net/minecraft/class_1676 net/minecraft/entity/projectile/ProjectileEntity
 	FIELD field_1_8153 canBreak Lnet/minecraft/class_6538;
+	FIELD field_1_8604 CAN_BREAK_KEY Ljava/lang/String;
+	FIELD field_1_8605 HAS_BEEN_SHOT_KEY Ljava/lang/String;
+	FIELD field_1_8606 LEFT_OWNER_KEY Ljava/lang/String;
+	FIELD field_1_8607 OWNER_KEY Ljava/lang/String;
 	FIELD field_23740 leftOwner Z
 	FIELD field_28646 shot Z
 	FIELD field_51621 lastDeflectedEntity Lnet/minecraft/class_1297;

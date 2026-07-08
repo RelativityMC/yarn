@@ -1,0 +1,35 @@
+CLASS net/minecraft/class_1_1248 net/minecraft/recipe/BrewingRecipe
+	FIELD field_1_8596 SERIALIZER Lnet/minecraft/class_1_157;
+	FIELD field_1_8597 PACKET_CODEC Lnet/minecraft/class_9139;
+	FIELD field_1_8598 input Lnet/minecraft/class_1_1264;
+	FIELD field_1_8599 output Lnet/minecraft/class_1_107;
+	FIELD field_1_8600 reagent Lnet/minecraft/class_1_1264;
+	METHOD <init> (Lnet/minecraft/class_1_1264;Lnet/minecraft/class_1_1264;Lnet/minecraft/class_1_107;)V
+		ARG 1 input
+		ARG 2 reagent
+		ARG 3 output
+	METHOD method_1_7898 getInput ()Lnet/minecraft/class_1_1264;
+	METHOD method_1_7899 getOutput ()Lnet/minecraft/class_1_107;
+	METHOD method_1_7900 getReagent ()Lnet/minecraft/class_1_1264;
+	METHOD method_1_7901 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_7902 (Lnet/minecraft/class_1_1248;)Lnet/minecraft/class_1_1264;
+		ARG 0 recipe
+	METHOD method_1_7903 (Lnet/minecraft/class_1_1248;)Lnet/minecraft/class_1_1264;
+		ARG 0 recipe
+	METHOD method_1_7904 (Lnet/minecraft/class_1_1248;)Lnet/minecraft/class_1_107;
+		ARG 0 recipe
+	METHOD method_1_7905 (Lnet/minecraft/class_1_1248;)Lnet/minecraft/class_1_1264;
+		ARG 0 recipe
+	METHOD method_1_7906 (Lnet/minecraft/class_1_1248;)Lnet/minecraft/class_1_1264;
+		ARG 0 recipe
+	METHOD method_1_7907 (Lnet/minecraft/class_1_1248;)Lnet/minecraft/class_1_107;
+		ARG 0 recipe
+	METHOD method_1_7908 matches (Lnet/minecraft/class_1_1236;)Z
+		ARG 1 input
+	CLASS class_1_1249 Factory
+		METHOD method_1_7910 create (Lnet/minecraft/class_1860$class_1_145;Lnet/minecraft/class_1_1264;Lnet/minecraft/class_1_1264;Lnet/minecraft/class_1_107;)Lnet/minecraft/class_1_1248;
+			ARG 1 settings
+			ARG 2 input
+			ARG 3 reagent
+			ARG 4 output

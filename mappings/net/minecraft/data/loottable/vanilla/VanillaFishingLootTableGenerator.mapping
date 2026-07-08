@@ -1,2 +1,7 @@
 CLASS net/minecraft/class_2437 net/minecraft/data/loottable/vanilla/VanillaFishingLootTableGenerator
+	FIELD field_1_8601 biomes Lnet/minecraft/class_7871;
+	FIELD field_1_8602 enchantments Lnet/minecraft/class_7871;
+	FIELD field_1_8603 output Lnet/minecraft/class_7791$class_1_1214;
+	METHOD <init> (Lnet/minecraft/class_7791$class_1_1214;)V
+		ARG 1 output
 	METHOD method_48516 createFishTableBuilder ()Lnet/minecraft/class_52$class_53;

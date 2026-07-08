@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_1_1009
-	METHOD method_1_6141 usageToGlBufferType (I)I
-		ARG 0 usage

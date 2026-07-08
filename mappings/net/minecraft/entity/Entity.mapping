@@ -264,6 +264,17 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 4 additionalCollisions
 	METHOD method_1_6352 isImmuneToPiercing ()Z
 	METHOD method_1_6424 obstructsTargetingFromInside ()Z
+	METHOD method_1_7595 canHurt (Lnet/minecraft/class_1297;)Z
+		ARG 1 other
+	METHOD method_1_7596 getMovementSide ()Lnet/minecraft/class_1_1224;
+	METHOD method_1_7598 updateTrackedPositionAndAngles (Lnet/minecraft/class_243;FF)V
+		ARG 1 pos
+		ARG 2 yaw
+		ARG 3 pitch
+	METHOD method_1_7599 (Lnet/minecraft/class_10584;)V
+		ARG 1 interpolator
+	METHOD method_1_7600 (Lnet/minecraft/class_1313;Lnet/minecraft/class_243;)V
+		ARG 1 movementType
 	METHOD method_5622 onBlockCollision (Lnet/minecraft/class_2680;)V
 		COMMENT Called when this entity's collision box intersects {@code state}.
 		COMMENT
@@ -2244,8 +2255,9 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_66233 getInterpolator ()Lnet/minecraft/class_10584;
 	METHOD method_66245 isInterpolating ()Z
 	METHOD method_66246 updateTrackedPositionAndAngles (Lnet/minecraft/class_1_1198;FF)V
+		ARG 1 motionPath
 		ARG 2 yaw
-		ARG 3 tch
+		ARG 3 pitch
 	METHOD method_66247 isLogicalSideForUpdatingMovement ()Z
 	METHOD method_66248 isControlledByMainPlayer ()Z
 	METHOD method_66249 canMoveVoluntarily ()Z
@@ -2335,10 +2347,15 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 3 blockCollision
 		ARG 4 fluidCollision
 	METHOD method_73092 updateTrackedPositionAndAngles (Lnet/minecraft/class_1_1198;FFZ)V
+		ARG 1 motionPath
+		ARG 2 yaw
+		ARG 3 pitch
+		ARG 4 updateAngles
 	METHOD method_73094 updateTrackedAngles (FF)V
 		ARG 1 yaw
-		ARG 2 itch
+		ARG 2 pitch
 	METHOD method_73095 updateTrackedPosition (Lnet/minecraft/class_1_1198;)V
+		ARG 1 motionPath
 	METHOD method_73187 isInteractable ()Z
 	METHOD method_74016 isPartlyTouchingWater ()Z
 		COMMENT {@return whether this entity's hitbox is touching, but not fully submerged in, water}

@@ -8,6 +8,7 @@ CLASS net/minecraft/class_1856 net/minecraft/recipe/Ingredient
 		ARG 1 entries
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
+	METHOD method_1_7750 getUniqueEntry ()Ljava/util/Optional;
 	METHOD method_8091 ofItems ([Lnet/minecraft/class_1935;)Lnet/minecraft/class_1856;
 		ARG 0 items
 	METHOD method_8101 ofItem (Lnet/minecraft/class_1935;)Lnet/minecraft/class_1856;
@@ -44,5 +45,5 @@ CLASS net/minecraft/class_1856 net/minecraft/recipe/Ingredient
 	METHOD method_64981 createDisplayWithRemainder (Lnet/minecraft/class_6880;)Lnet/minecraft/class_10302;
 		ARG 0 displayedItem
 	METHOD method_65799 isEmpty ()Z
-	METHOD test (Ljava/lang/Object;)Z
+	METHOD test matches (Ljava/lang/Object;)Z
 		ARG 1 stack

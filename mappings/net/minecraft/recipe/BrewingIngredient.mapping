@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_1_1264 net/minecraft/recipe/BrewingIngredient
+	FIELD field_1_8660 PACKET_CODEC Lnet/minecraft/class_9139;
+	METHOD method_1_8008 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_8009 (Lnet/minecraft/class_1_1264;)Lnet/minecraft/class_1856;
+		ARG 0 ingredient
+	METHOD method_1_8010 (Lnet/minecraft/class_1_1264;)Ljava/util/Optional;
+		ARG 0 ingredient
+	METHOD method_1_8011 (Lnet/minecraft/class_1_1264;)Lnet/minecraft/class_1856;
+		ARG 0 ingredient
+	METHOD method_1_8012 (Lnet/minecraft/class_1_1264;)Ljava/util/Optional;
+		ARG 0 ingredient
+	METHOD method_1_8013 of (Lnet/minecraft/class_1792;)Lnet/minecraft/class_1_1264;
+		ARG 0 item
+	METHOD method_1_8014 of (Lnet/minecraft/class_1792;Lnet/minecraft/class_9359;)Lnet/minecraft/class_1_1264;
+		ARG 0 item
+		ARG 1 contents
+	METHOD test matches (Ljava/lang/Object;)Z
+		ARG 1 stack

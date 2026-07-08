@@ -9,18 +9,25 @@ CLASS net/minecraft/class_1_1211 com/mojang/blaze3d/buffers/GpuBuffer
 	FIELD field_1_8356 USAGE_UNIFORM I
 	FIELD field_1_8357 USAGE_UNIFORM_TEXEL_BUFFER I
 	FIELD field_1_8358 USAGE_VERTEX I
+	FIELD field_1_8359 entireSlice Lnet/minecraft/class_1_1254;
+	FIELD field_1_8360 size J
+	FIELD field_1_8361 usage I
 	METHOD <init> (IJ)V
 		ARG 1 usage
 		ARG 2 size
-	METHOD method_1_7729 (JJZZ)Lnet/minecraft/class_1_1254$class_1_892;
+	METHOD method_1_7728 isClosed ()Z
+	METHOD method_1_7729 map (JJZZ)Lnet/minecraft/class_1_1254$class_1_892;
 		ARG 1 offset
 		ARG 3 size
 		ARG 5 read
 		ARG 6 write
-	METHOD method_1_7730 (ZZ)Lnet/minecraft/class_1_1254$class_1_892;
+	METHOD method_1_7730 map (ZZ)Lnet/minecraft/class_1_1254$class_1_892;
 		ARG 1 read
 		ARG 2 write
-	METHOD method_1_7733 (JJ)Lnet/minecraft/class_1_1254;
+	METHOD method_1_7731 getSize ()J
+	METHOD method_1_7732 slice ()Lnet/minecraft/class_1_1254;
+	METHOD method_1_7733 slice (JJ)Lnet/minecraft/class_1_1254;
 		ARG 1 start
 		ARG 3 length
+	METHOD method_1_7734 getUsage ()I
 	CLASS class_12113 Usage

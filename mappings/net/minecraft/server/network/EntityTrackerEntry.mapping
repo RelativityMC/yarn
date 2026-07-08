@@ -27,6 +27,15 @@ CLASS net/minecraft/class_3231 net/minecraft/server/network/EntityTrackerEntry
 		ARG 3 tickInterval
 		ARG 4 alwaysUpdateVelocity
 		ARG 5 packetSender
+	METHOD method_1_7641 createMovementPacket (Lnet/minecraft/class_1_1198;BBZZ)Lnet/minecraft/class_1_1263;
+		ARG 1 motion
+		ARG 2 packedYaw
+		ARG 3 packedPitch
+		ARG 4 moved
+		ARG 5 turned
+	METHOD method_1_7642 shouldSendPositionSyncPacket (Lnet/minecraft/class_243;Lnet/minecraft/class_1_1216;)Z
+		ARG 1 endPosition
+		ARG 2 vecDelta
 	METHOD method_14302 stopTracking (Lnet/minecraft/class_3222;)V
 		ARG 1 player
 	METHOD method_14306 syncEntityData ()V

@@ -1,0 +1,68 @@
+CLASS net/minecraft/class_1_1204 net/minecraft/world/BlockQueries
+	METHOD method_1_7659 iterateOverBlocks (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;Ljava/util/function/Predicate;Lnet/minecraft/class_1_1221;)Z
+		ARG 0 world
+		ARG 1 corner1
+		ARG 2 corner2
+		ARG 3 blockStatePredicate
+		ARG 4 callback
+	METHOD method_1_7660 iterateOverSectionBlocks (Lnet/minecraft/class_2826;Lnet/minecraft/class_2338;IIIIIILjava/util/function/Predicate;Lnet/minecraft/class_1_1221;)Z
+		ARG 0 section
+		ARG 1 nwdPos
+		ARG 2 minLocalX
+		ARG 3 minLocalY
+		ARG 4 minLocalZ
+		ARG 5 maxLocalX
+		ARG 6 maxLocalY
+		ARG 7 maxLocalZ
+		ARG 8 blockStatePredicate
+		ARG 9 callback
+	METHOD method_1_7661 (Lnet/minecraft/class_2680;)Z
+		ARG 0 state
+	METHOD method_1_7662 iterateOverBlocks (Lnet/minecraft/class_4538;IIIIIILjava/util/function/Predicate;Lnet/minecraft/class_1_1221;)Z
+		ARG 0 world
+		ARG 1 minX
+		ARG 2 minY
+		ARG 3 minZ
+		ARG 4 maxX
+		ARG 5 maxY
+		ARG 6 maxZ
+		ARG 7 blockStatePredicate
+		ARG 8 callback
+	CLASS class_1_1205 Region
+		FIELD field_1_8304 minCorner Lnet/minecraft/class_2338;
+		FIELD field_1_8305 world Lnet/minecraft/class_4538;
+		FIELD field_1_8306 blockStatePredicate Ljava/util/function/Predicate;
+		FIELD field_1_8307 maxCorner Lnet/minecraft/class_2338;
+		METHOD <init> (Lnet/minecraft/class_4538;Lnet/minecraft/class_238;)V
+			ARG 1 world
+			ARG 2 box
+		METHOD <init> (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;)V
+			ARG 1 world
+			ARG 2 minCorner
+			ARG 3 maxCorner
+		METHOD method_1_7663 allBlocksMatch ()Z
+		METHOD method_1_7664 containsAny ()Z
+		METHOD method_1_7665 containsAtLeast (I)Z
+			ARG 1 count
+		METHOD method_1_7666 containsAtMost (I)Z
+			ARG 1 count
+		METHOD method_1_7667 andMatches (Ljava/util/function/Predicate;)Lnet/minecraft/class_1_1204$class_1_1205;
+			ARG 1 blockStatePredicate
+		METHOD method_1_7668 forEachBlock (Ljava/util/function/BiConsumer;)V
+			ARG 1 callback
+		METHOD method_1_7669 iterate (Lnet/minecraft/class_1_1221;)Z
+			ARG 1 callback
+		METHOD method_1_7670 (Lnet/minecraft/class_2680;)Z
+			ARG 1 state
+		METHOD method_1_7671 (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Lnet/minecraft/class_7928;
+			ARG 0 pos
+			ARG 1 state
+		METHOD method_1_7672 (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Lnet/minecraft/class_7928;
+			ARG 0 pos
+			ARG 1 state
+		METHOD method_1_7673 (Ljava/util/function/BiConsumer;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Lnet/minecraft/class_7928;
+			ARG 1 pos
+			ARG 2 state
+		METHOD method_1_7674 containsNone ()Z
+		CLASS 1 1
+			FIELD field_1_8308 count I

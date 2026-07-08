@@ -1,0 +1,31 @@
+CLASS net/minecraft/class_1_1255 com/mojang/blaze3d/pipeline/BlendFunction
+	FIELD field_1_8608 ADDITIVE Lnet/minecraft/class_1_1255;
+	FIELD field_1_8609 ENTITY_OUTLINE_BLIT Lnet/minecraft/class_1_1255;
+	FIELD field_1_8610 GLINT Lnet/minecraft/class_1_1255;
+	FIELD field_1_8611 INVERT Lnet/minecraft/class_1_1255;
+	FIELD field_1_8612 LIGHTING Lnet/minecraft/class_1_1255;
+	FIELD field_1_8613 MAX Lnet/minecraft/class_1_1255;
+	FIELD field_1_8614 OVERLAY Lnet/minecraft/class_1_1255;
+	FIELD field_1_8615 TRANSLUCENT Lnet/minecraft/class_1_1255;
+	FIELD field_1_8616 TRANSLUCENT_PREMULTIPLIED_ALPHA Lnet/minecraft/class_1_1255;
+	METHOD <init> (Lnet/minecraft/class_1_683;Lnet/minecraft/class_1_683;)V
+		ARG 1 src
+		ARG 2 dest
+	METHOD <init> (Lnet/minecraft/class_1_683;Lnet/minecraft/class_1_683;Lnet/minecraft/class_1_662;)V
+		ARG 1 src
+		ARG 2 dest
+		ARG 3 op
+	METHOD <init> (Lnet/minecraft/class_1_683;Lnet/minecraft/class_1_683;Lnet/minecraft/class_1_662;Lnet/minecraft/class_1_683;Lnet/minecraft/class_1_683;Lnet/minecraft/class_1_662;)V
+		ARG 1 colorSrc
+		ARG 2 colorDest
+		ARG 3 colorOp
+		ARG 4 alphaSrc
+		ARG 5 alphaDest
+		ARG 6 alphaOp
+	METHOD <init> (Lnet/minecraft/class_1_683;Lnet/minecraft/class_1_683;Lnet/minecraft/class_1_683;Lnet/minecraft/class_1_683;)V
+		ARG 1 colorSrc
+		ARG 2 colorDest
+		ARG 3 alphaSrc
+		ARG 4 alphaDest
+	METHOD <init> (Lnet/minecraft/class_1_693;)V
+		ARG 1 equation

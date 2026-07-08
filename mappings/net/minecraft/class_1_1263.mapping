@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_1_1263
-	METHOD method_11652 hasRotation ()Z
-	METHOD method_22826 isPositionChanged ()Z

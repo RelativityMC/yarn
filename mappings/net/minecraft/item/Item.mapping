@@ -358,14 +358,19 @@ CLASS net/minecraft/class_1792 net/minecraft/item/Item
 		METHOD method_1_830 (Lnet/minecraft/class_9331;Lnet/minecraft/class_5321;Lnet/minecraft/class_9323$class_9324;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_5321;)V
 			ARG 2 builder
 			ARG 3 lookup
+			ARG 4 key
 		METHOD method_1_831 (Lnet/minecraft/class_2561;Lnet/minecraft/class_2960;Lnet/minecraft/class_9323$class_9324;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_5321;)V
 			ARG 2 builder
+			ARG 3 lookup
+			ARG 4 key
 		METHOD method_1_832 (Lnet/minecraft/class_9323;)V
 			ARG 0 components
 		METHOD method_1_833 (Lnet/minecraft/class_5321;Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_9792;
 			ARG 1 registries
 		METHOD method_1_834 (Lnet/minecraft/class_9323$class_9324;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_5321;)V
 			ARG 0 builder
+			ARG 1 lookup
+			ARG 2 key
 		METHOD method_1_2914 (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_10215;
 			ARG 0 registries
 		METHOD method_1_3095 requires (Lnet/minecraft/class_7699;)Lnet/minecraft/class_1792$class_1793;
@@ -380,6 +385,8 @@ CLASS net/minecraft/class_1792 net/minecraft/item/Item
 			ARG 0 registries
 		METHOD method_1_7296 (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_1_1156;
 			ARG 0 registries
+		METHOD method_1_7584 compostable (Lnet/minecraft/class_5321;)Lnet/minecraft/class_1792$class_1793;
+			ARG 1 layers
 		METHOD method_7889 maxCount (I)Lnet/minecraft/class_1792$class_1793;
 			COMMENT Sets the maximum stack count of any ItemStack with an Item using this Settings instance.
 			COMMENT

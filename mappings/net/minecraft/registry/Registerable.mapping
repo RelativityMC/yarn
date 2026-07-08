@@ -1,3 +1,4 @@
 CLASS net/minecraft/class_7891 net/minecraft/registry/Registerable
 	METHOD method_46838 register (Lnet/minecraft/class_5321;Ljava/lang/Object;)Lnet/minecraft/class_6880$class_6883;
+		ARG 1 key
 		ARG 2 value

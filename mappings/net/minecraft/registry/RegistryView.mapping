@@ -16,7 +16,7 @@ CLASS net/minecraft/class_7225 net/minecraft/registry/RegistryView
 		METHOD method_46766 getLifecycle ()Lcom/mojang/serialization/Lifecycle;
 		METHOD method_56882 withPredicateFilter (Ljava/util/function/Predicate;)Lnet/minecraft/class_7225$class_7226;
 			ARG 1 predicate
-		CLASS 1
+		CLASS 1 1
 			METHOD method_46756 (Ljava/util/function/Predicate;Lnet/minecraft/class_6880$class_6883;)Z
 				ARG 1 entry
 			METHOD method_46757 (Ljava/util/function/Predicate;Lnet/minecraft/class_6880$class_6883;)Z
@@ -35,4 +35,4 @@ CLASS net/minecraft/class_7225 net/minecraft/registry/RegistryView
 			ARG 1 delegate
 		METHOD method_62678 stream ()Ljava/util/stream/Stream;
 		METHOD method_62679 getLifecycle ()Lcom/mojang/serialization/Lifecycle;
-		CLASS 1
+		CLASS 1 1

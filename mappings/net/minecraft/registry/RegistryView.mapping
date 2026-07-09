@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_7225 net/minecraft/registry/RegistryWrapper
+CLASS net/minecraft/class_7225 net/minecraft/registry/RegistryView
 	COMMENT A read-only wrapper of a registry.
 	METHOD method_42017 streamEntries ()Ljava/util/stream/Stream;
 		COMMENT {@return a stream of registry keys defined in the wrapped registry}
@@ -7,7 +7,7 @@ CLASS net/minecraft/class_7225 net/minecraft/registry/RegistryWrapper
 	METHOD method_42020 tags ()Ljava/util/stream/Stream;
 	METHOD method_46754 streamKeys ()Ljava/util/stream/Stream;
 	METHOD method_46755 streamTagKeys ()Ljava/util/stream/Stream;
-	CLASS class_7226 Impl
+	CLASS class_7226 Named
 		METHOD method_45919 withFeatureFilter (Lnet/minecraft/class_7699;)Lnet/minecraft/class_7225$class_7226;
 			ARG 1 enabledFeatures
 		METHOD method_45920 (Lnet/minecraft/class_7699;Ljava/lang/Object;)Z
@@ -16,7 +16,7 @@ CLASS net/minecraft/class_7225 net/minecraft/registry/RegistryWrapper
 		METHOD method_46766 getLifecycle ()Lcom/mojang/serialization/Lifecycle;
 		METHOD method_56882 withPredicateFilter (Ljava/util/function/Predicate;)Lnet/minecraft/class_7225$class_7226;
 			ARG 1 predicate
-		CLASS 1 1
+		CLASS 1
 			METHOD method_46756 (Ljava/util/function/Predicate;Lnet/minecraft/class_6880$class_6883;)Z
 				ARG 1 entry
 			METHOD method_46757 (Ljava/util/function/Predicate;Lnet/minecraft/class_6880$class_6883;)Z
@@ -35,4 +35,4 @@ CLASS net/minecraft/class_7225 net/minecraft/registry/RegistryWrapper
 			ARG 1 delegate
 		METHOD method_62678 stream ()Ljava/util/stream/Stream;
 		METHOD method_62679 getLifecycle ()Lcom/mojang/serialization/Lifecycle;
-		CLASS 1 1
+		CLASS 1

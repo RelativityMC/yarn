@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_1_1223 net/minecraft/registry/LazyReferenceRegistryWrapper
+CLASS net/minecraft/class_1_1223 net/minecraft/registry/CombinedRegistryView
 	FIELD field_1_8497 entries Ljava/util/Map;
 	FIELD field_1_8498 key Lnet/minecraft/class_5321;
 	FIELD field_1_8499 lifecycle Lcom/mojang/serialization/Lifecycle;

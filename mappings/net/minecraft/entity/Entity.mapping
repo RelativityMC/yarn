@@ -271,7 +271,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 1 pos
 		ARG 2 yaw
 		ARG 3 pitch
-	METHOD method_1_7599 (Lnet/minecraft/class_10584;)V
+	METHOD method_1_7599 onLerp (Lnet/minecraft/class_10584;)V
 		ARG 1 interpolator
 	METHOD method_1_7600 (Lnet/minecraft/class_1313;Lnet/minecraft/class_243;)V
 		ARG 1 movementType

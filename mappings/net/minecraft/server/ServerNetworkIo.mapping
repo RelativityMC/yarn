@@ -1,12 +1,16 @@
 CLASS net/minecraft/class_3242 net/minecraft/server/ServerNetworkIo
 	FIELD field_1_7081 sessionId Ljava/util/UUID;
+	FIELD field_1_8697 pendingConnections Ljava/util/Queue;
 	FIELD field_14106 channels Ljava/util/List;
 	FIELD field_14107 connections Ljava/util/List;
 	FIELD field_14108 active Z
 	FIELD field_14109 server Lnet/minecraft/server/MinecraftServer;
 	FIELD field_14110 LOGGER Lorg/slf4j/Logger;
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
+		ARG 1 server
 	METHOD method_1_5707 clear ()V
 	METHOD method_1_6306 getSessionId ()Ljava/util/UUID;
+	METHOD method_1_8142 acceptPendingConnections ()V
 	METHOD method_14351 getServer ()Lnet/minecraft/server/MinecraftServer;
 	METHOD method_14353 bindLocal ()Ljava/net/SocketAddress;
 	METHOD method_14354 bind (Ljava/net/InetAddress;I)V

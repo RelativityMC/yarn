@@ -46,7 +46,7 @@ CLASS net/minecraft/class_1_1204 net/minecraft/world/BlockQueries
 			ARG 1 count
 		METHOD method_1_7666 containsAtMost (I)Z
 			ARG 1 count
-		METHOD method_1_7667 andMatches (Ljava/util/function/Predicate;)Lnet/minecraft/class_1_1204$class_1_1205;
+		METHOD method_1_7667 matching (Ljava/util/function/Predicate;)Lnet/minecraft/class_1_1204$class_1_1205;
 			ARG 1 blockStatePredicate
 		METHOD method_1_7668 forEachBlock (Ljava/util/function/BiConsumer;)V
 			ARG 1 callback

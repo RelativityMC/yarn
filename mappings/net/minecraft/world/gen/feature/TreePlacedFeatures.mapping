@@ -3,6 +3,9 @@ CLASS net/minecraft/class_6818 net/minecraft/world/gen/feature/TreePlacedFeature
 	FIELD field_1_7546 ORANGE_POPLAR_LEAF_LITTER Lnet/minecraft/class_5321;
 	FIELD field_1_7547 RED_POPLAR_LEAF_LITTER Lnet/minecraft/class_5321;
 	FIELD field_1_7548 YELLOW_POPLAR_LEAF_LITTER Lnet/minecraft/class_5321;
+	FIELD field_1_8687 ORANGE_POPLAR Lnet/minecraft/class_5321;
+	FIELD field_1_8688 RED_POPLAR Lnet/minecraft/class_5321;
+	FIELD field_1_8689 YELLOW_POPLAR Lnet/minecraft/class_5321;
 	FIELD field_36087 FANCY_OAK_BEES Lnet/minecraft/class_5321;
 	FIELD field_36088 CRIMSON_FUNGI Lnet/minecraft/class_5321;
 	FIELD field_36089 WARPED_FUNGI Lnet/minecraft/class_5321;

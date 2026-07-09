@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_1_1279 net/minecraft/entity/movement/PathingPositionInterpolator
 	FIELD field_1_8705 destination Lnet/minecraft/class_1_1279$class_1_1280;
+	FIELD field_1_8706 movementTracker Lnet/minecraft/class_1_1281;
 	CLASS class_1_1280 Destination
 		FIELD field_1_8707 progress F
 		FIELD field_1_8708 cumulativeOffset Lnet/minecraft/class_243;

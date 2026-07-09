@@ -1,13 +1,13 @@
-CLASS net/minecraft/class_1_1281
+CLASS net/minecraft/class_1_1281 net/minecraft/entity/movement/MotionPathTracker
 	FIELD field_1_8711 entity Lnet/minecraft/class_1297;
 	FIELD field_1_8712 offset Lnet/minecraft/class_243;
 	FIELD field_1_8713 tickOffset I
 	FIELD field_1_8714 steps Ljava/util/List;
 	METHOD <init> (Lnet/minecraft/class_1297;)V
 		ARG 1 entity
-	METHOD method_1_8152 onBounce (Lnet/minecraft/class_243;)V
+	METHOD method_1_8152 addStep (Lnet/minecraft/class_243;)V
 		ARG 1 pos
-	METHOD method_1_8153 addOffset (Lnet/minecraft/class_243;)V
+	METHOD method_1_8153 move (Lnet/minecraft/class_243;)V
 		ARG 1 offset
 	METHOD method_1_8154 (Lnet/minecraft/class_1_1202;)Lnet/minecraft/class_1_1202;
 		ARG 1 step

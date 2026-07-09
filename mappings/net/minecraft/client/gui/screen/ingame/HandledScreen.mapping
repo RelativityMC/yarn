@@ -82,6 +82,7 @@ CLASS net/minecraft/class_465 net/minecraft/client/gui/screen/ingame/HandledScre
 		ARG 2 mouseX
 		ARG 3 mouseY
 	METHOD method_30107 onMouseClick (Lnet/minecraft/class_11909;)V
+		ARG 1 click
 	METHOD method_37432 handledScreenTick ()V
 	METHOD method_51454 getTooltipFromItem (Lnet/minecraft/class_1799;)Ljava/util/List;
 		ARG 1 stack

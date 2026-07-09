@@ -11,6 +11,7 @@ CLASS net/minecraft/class_10151 net/minecraft/client/shader/ShaderLoader
 	METHOD <init> (Lnet/minecraft/class_1060;Ljava/util/function/Consumer;)V
 		ARG 1 textureManager
 		ARG 2 onError
+	METHOD method_1_7723 streamPostChainIds ()Ljava/util/stream/Stream;
 	METHOD method_62939 loadShaderSource (Lnet/minecraft/class_2960;Lnet/minecraft/class_3298;Lnet/minecraft/class_1_1229;Ljava/util/Map;Lcom/google/common/collect/ImmutableMap$Builder;)V
 		ARG 0 id
 		ARG 1 resource
@@ -49,6 +50,7 @@ CLASS net/minecraft/class_10151 net/minecraft/client/shader/ShaderLoader
 		FIELD field_55152 errorHandled Z
 		METHOD <init> (Lnet/minecraft/class_10151;Lnet/minecraft/class_10151$class_10153;)V
 			ARG 2 definitions
+		METHOD method_1_7724 streamPostChainIds ()Ljava/util/stream/Stream;
 		METHOD method_63523 getOrLoadProcessor (Lnet/minecraft/class_2960;Ljava/util/Set;)Lnet/minecraft/class_279;
 			ARG 1 id
 			ARG 2 availableExternalTargets

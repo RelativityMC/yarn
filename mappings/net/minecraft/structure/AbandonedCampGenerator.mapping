@@ -45,4 +45,11 @@ CLASS net/minecraft/class_1_1110 net/minecraft/structure/AbandonedCampGenerator
 		ARG 0 structurePoolsRegisterable
 		ARG 1 emptyPool
 		ARG 2 variant
+	METHOD method_1_8155 registerTreePools (Lnet/minecraft/class_7891;Lnet/minecraft/class_6880;)V
+		ARG 0 structurePoolsRegisterable
+		ARG 1 fallbackPool
+	METHOD method_1_8156 registerTreePools (Lnet/minecraft/class_7891;Lnet/minecraft/class_6880;Ljava/util/Collection;)V
+		ARG 0 structurePoolsRegisterable
+		ARG 1 fallbackPool
+		ARG 2 placedFeaturesByName
 	CLASS class_1_1111 Variant

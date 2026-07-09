@@ -6,6 +6,11 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	FIELD field_1_2263 renderState Lnet/minecraft/class_1_405;
 	FIELD field_1_3629 crosshair3d Lnet/minecraft/class_1_744;
 	FIELD field_1_5610 framebuffer Lnet/minecraft/class_276;
+	FIELD field_1_8330 END_OF_FRAME Lnet/minecraft/class_2960;
+	FIELD field_1_8331 appliedPostEffects Ljava/util/List;
+	FIELD field_1_8332 erroredPostEffects Ljava/util/List;
+	FIELD field_1_8333 postEffects Ljava/util/List;
+	FIELD field_1_8334 reloadedResources Z
 	FIELD field_3993 LOGGER Lorg/slf4j/Logger;
 	FIELD field_3994 random Lnet/minecraft/class_5819;
 	FIELD field_3997 lastSkyDarkness F
@@ -57,6 +62,12 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	METHOD method_1_4829 getFramebuffer ()Lnet/minecraft/class_276;
 	METHOD method_1_4830 getBuffers ()Lnet/minecraft/class_4599;
 	METHOD method_1_7330 usesImprovedTransparency ()Z
+	METHOD method_1_7688 applyPostEffects ()V
+	METHOD method_1_7689 getResourceReloadCallback ()Lnet/minecraft/class_3302;
+	METHOD method_1_7690 getAppliedPostEffects ()Ljava/util/List;
+	METHOD method_1_7691 getPostEffects ()Ljava/util/List;
+	METHOD method_1_7692 (Lnet/minecraft/class_3300;)V
+		ARG 1 manager
 	METHOD method_3167 onCameraEntitySet (Lnet/minecraft/class_1297;)V
 		ARG 1 entity
 	METHOD method_3169 onResized (II)V

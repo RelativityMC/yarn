@@ -51,3 +51,6 @@ CLASS net/minecraft/class_1_1148 net/minecraft/world/gen/treedecorator/ShelfMush
 		ARG 1 logPosition
 		ARG 2 direction
 		ARG 3 random
+	METHOD method_1_8233 canGenerateMushrromAt (Lnet/minecraft/class_4662$class_7402;Lnet/minecraft/class_2338;)Z
+		ARG 0 generator
+		ARG 1 pos

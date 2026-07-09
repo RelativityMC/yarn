@@ -80,6 +80,7 @@ dependencies {
 		transitive = false
 	}
 	enigmaRuntime "net.fabricmc:tiny-remapper:${project.tiny_remapper_version}"
+	enigmaRuntime "net.fabricmc:mapping-io:${project.mapping_io_version}"
 	enigmaRuntime gradleApi()
 
 	javadocClasspath "net.fabricmc:fabric-loader:${project.fabric_loader_version}"

@@ -3,15 +3,17 @@ package net.fabricmc.filament.enigma.annotations;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.UncheckedIOException;
+import java.net.URI;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Stream;
 import java.util.zip.ZipEntry;
-import java.util.zip.ZipFile;
 
 import cuchaz.enigma.api.view.ProjectView;
 import org.objectweb.asm.ClassReader;
@@ -34,7 +36,7 @@ public record AnnotationsIndex(Collection<String> annotations, Collection<String
 				}
 			});
 
-			indexJdkClasses(annotations, allClasses);
+			indexJdkClasses(Collections.synchronizedList(annotations), Collections.synchronizedList(allClasses));
 
 			return new AnnotationsIndex(annotations, allClasses);
 		}).whenComplete((annotationsIndex, throwable) -> {
@@ -45,37 +47,21 @@ public record AnnotationsIndex(Collection<String> annotations, Collection<String
 	}
 
 	private static void indexJdkClasses(List<String> annotations, List<String> allClasses) {
-		String javaHome = System.getProperty("java.home");
-		Path modulesPath = Path.of(javaHome, "jmods");
+		try (Stream<Path> classes = Files.walk(Paths.get(URI.create("jrt:/"))).parallel()) {
+			classes.forEach(path -> {
+				if (!Files.isRegularFile(path)) return;
+				if (!path.getFileName().toString().endsWith(".class")) return;
 
-		try (Stream<Path> modules = Files.walk(modulesPath)) {
-			modules.forEach(module -> {
-				if (!module.toString().endsWith(".jmod")) {
-					return;
-				}
+				try (InputStream in = Files.newInputStream(path)) {
+					ClassReader reader = new ClassReader(in);
 
-				try (ZipFile zipFile = new ZipFile(module.toFile())) {
-					List<? extends ZipEntry> classEntries = zipFile.stream()
-							.filter(entry -> entry.getName().startsWith("classes/") && entry.getName().endsWith(".class"))
-							.toList();
+					allClasses.add(reader.getClassName());
 
-					for (ZipEntry classEntry : classEntries) {
-						allClasses.add(getClassName(classEntry));
-					}
-
-					classEntries.parallelStream().forEach(entry -> {
-						try (InputStream in = zipFile.getInputStream(entry)) {
-							ClassReader reader = new ClassReader(in);
-
-							if ((reader.getAccess() & Opcodes.ACC_ANNOTATION) != 0) {
-								synchronized (annotations) {
-									annotations.add(getClassName(entry));
-								}
-							}
-						} catch (IOException e) {
-							throw new UncheckedIOException(e);
+					if ((reader.getAccess() & Opcodes.ACC_ANNOTATION) != 0) {
+						synchronized (annotations) {
+							annotations.add(reader.getClassName());
 						}
-					});
+					}
 				} catch (IOException e) {
 					throw new UncheckedIOException(e);
 				}

@@ -1,0 +1,20 @@
+CLASS net/minecraft/class_1_1216 net/minecraft/entity/VecDelta
+	FIELD field_1_8367 ZERO Lnet/minecraft/class_1_1216;
+	METHOD method_1_7741 getAppliedMotion (Lnet/minecraft/class_7422;)Lnet/minecraft/class_1_1198;
+		ARG 1 trackedPos
+	METHOD method_1_7742 movedX ()Z
+	METHOD method_1_7743 movedZ ()Z
+	METHOD method_1_7744 read (Lnet/minecraft/class_2540;I)Lnet/minecraft/class_1_1216;
+		ARG 0 buf
+		ARG 1 steps
+	METHOD method_1_7745 steps ()I
+	METHOD method_1_7746 write (Lnet/minecraft/class_2540;Lnet/minecraft/class_1_1216;)V
+		ARG 0 buf
+		ARG 1 vecDelta
+	CLASS class_1_1217 Linear
+	CLASS class_1_1218 Stepped
+		FIELD field_1_8368 SIZE_PER_STEP I
+		METHOD method_1_7747 fromMotion (Lnet/minecraft/class_7422;Ljava/util/List;)Lnet/minecraft/class_1_1216$class_1_1218;
+			ARG 0 trackedPos
+			ARG 1 steps
+		CLASS class_1_1219 Step

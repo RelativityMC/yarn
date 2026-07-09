@@ -1,0 +1,38 @@
+CLASS net/minecraft/class_7225 net/minecraft/registry/RegistryView
+	COMMENT A read-only wrapper of a registry.
+	METHOD method_42017 streamEntries ()Ljava/util/stream/Stream;
+		COMMENT {@return a stream of registry keys defined in the wrapped registry}
+		COMMENT
+		COMMENT @see Registry#getKeys
+	METHOD method_42020 tags ()Ljava/util/stream/Stream;
+	METHOD method_46754 streamKeys ()Ljava/util/stream/Stream;
+	METHOD method_46755 streamTagKeys ()Ljava/util/stream/Stream;
+	CLASS class_7226 Named
+		METHOD method_45919 withFeatureFilter (Lnet/minecraft/class_7699;)Lnet/minecraft/class_7225$class_7226;
+			ARG 1 enabledFeatures
+		METHOD method_45920 (Lnet/minecraft/class_7699;Ljava/lang/Object;)Z
+			ARG 1 feature
+		METHOD method_46765 getKey ()Lnet/minecraft/class_5321;
+		METHOD method_46766 getLifecycle ()Lcom/mojang/serialization/Lifecycle;
+		METHOD method_56882 withPredicateFilter (Ljava/util/function/Predicate;)Lnet/minecraft/class_7225$class_7226;
+			ARG 1 predicate
+		CLASS 1 1
+			METHOD method_46756 (Ljava/util/function/Predicate;Lnet/minecraft/class_6880$class_6883;)Z
+				ARG 1 entry
+			METHOD method_46757 (Ljava/util/function/Predicate;Lnet/minecraft/class_6880$class_6883;)Z
+				ARG 1 entry
+		CLASS class_7875 Delegating
+			METHOD comp_1_1258 getBase ()Lnet/minecraft/class_7225$class_7226;
+	CLASS class_7874 WrapperLookup
+		METHOD method_46760 (Lnet/minecraft/class_7225$class_7226;)Lnet/minecraft/class_7225$class_7226;
+			ARG 0 wrapper
+		METHOD method_46761 of (Ljava/util/stream/Stream;)Lnet/minecraft/class_7225$class_7874;
+			ARG 0 wrappers
+		METHOD method_46762 getWrapperOrThrow (Lnet/minecraft/class_5321;)Lnet/minecraft/class_7225$class_7226;
+			ARG 1 registryRef
+		METHOD method_55282 streamAllRegistryKeys ()Ljava/util/stream/Stream;
+		METHOD method_57093 getOps (Lcom/mojang/serialization/DynamicOps;)Lnet/minecraft/class_6903;
+			ARG 1 delegate
+		METHOD method_62678 stream ()Ljava/util/stream/Stream;
+		METHOD method_62679 getLifecycle ()Lcom/mojang/serialization/Lifecycle;
+		CLASS 1 1

@@ -1,4 +1,10 @@
 CLASS net/minecraft/class_2412 net/minecraft/data/advancement/vanilla/VanillaAdventureTabAdvancementGenerator
+	FIELD field_1_8747 bannerPatterns Lnet/minecraft/class_7871;
+	FIELD field_1_8748 biomes Lnet/minecraft/class_7871;
+	FIELD field_1_8749 blocks Lnet/minecraft/class_7871;
+	FIELD field_1_8750 entityTypes Lnet/minecraft/class_7871;
+	FIELD field_1_8751 items Lnet/minecraft/class_7871;
+	FIELD field_1_8752 structures Lnet/minecraft/class_7871;
 	FIELD field_11294 MONSTERS Ljava/util/List;
 	FIELD field_35091 OVERWORLD_HEIGHT I
 	FIELD field_35092 OVERWORLD_MAX_Y I
@@ -7,9 +13,11 @@ CLASS net/minecraft/class_2412 net/minecraft/data/advancement/vanilla/VanillaAdv
 	FIELD field_60599 LOGGER Lorg/slf4j/Logger;
 	FIELD field_60600 EXCEPTIONS Ljava/util/Map;
 	METHOD method_10336 requireListedMobsKilled (Lnet/minecraft/class_161$class_162;Ljava/util/List;)Lnet/minecraft/class_161$class_162;
+		ARG 1 builder
 		ARG 2 entityTypes
 	METHOD method_10337 requireListedBiomesVisited (Lnet/minecraft/class_161$class_162;Lnet/minecraft/class_7871;Ljava/util/List;)Lnet/minecraft/class_161$class_162;
 		ARG 0 builder
+		ARG 1 biomeRegistry
 		ARG 2 biomes
 	METHOD method_37315 createLookingAtEntityUsing (Lnet/minecraft/class_2048$class_2049;Lnet/minecraft/class_2073$class_2074;)Lnet/minecraft/class_175;
 		ARG 0 lookingAt

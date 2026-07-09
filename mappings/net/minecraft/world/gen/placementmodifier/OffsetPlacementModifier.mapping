@@ -1,0 +1,23 @@
+CLASS net/minecraft/class_6732 net/minecraft/world/gen/placementmodifier/OffsetPlacementModifier
+	FIELD comp_1_1213 spreadY Lnet/minecraft/class_6017;
+	FIELD field_35419 MODIFIER_CODEC Lcom/mojang/serialization/MapCodec;
+	METHOD comp_1_1213 spreadY ()Lnet/minecraft/class_6017;
+	METHOD method_1_3072 triangular (II)Lnet/minecraft/class_6732;
+		ARG 0 spreadXz
+		ARG 1 spreadY
+	METHOD method_1_7556 fixed (III)Lnet/minecraft/class_6732;
+		ARG 0 dx
+		ARG 1 dy
+		ARG 2 dz
+	METHOD method_1_8175 up ()Lnet/minecraft/class_6732;
+	METHOD method_1_8176 fixed (Lnet/minecraft/class_2350;)Lnet/minecraft/class_6732;
+		ARG 0 direction
+	METHOD method_39179 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_39656 vertically (Lnet/minecraft/class_6017;)Lnet/minecraft/class_6732;
+		ARG 0 spreadY
+	METHOD method_39657 of (Lnet/minecraft/class_6017;Lnet/minecraft/class_6017;)Lnet/minecraft/class_6732;
+		ARG 0 spreadXz
+		ARG 1 spreadY
+	METHOD method_39658 horizontally (Lnet/minecraft/class_6017;)Lnet/minecraft/class_6732;
+		ARG 0 spreadXz

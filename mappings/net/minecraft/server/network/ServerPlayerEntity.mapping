@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_3222 net/minecraft/server/network/ServerPlayerEntity
 	FIELD field_1_6397 lastExplosionCause Lnet/minecraft/class_1297;
 	FIELD field_1_6398 lastExplosionImpactPos Lnet/minecraft/class_243;
+	FIELD field_1_8290 postEffectsDirty Z
 	FIELD field_13963 lastHealthScore F
 	FIELD field_13964 disconnected Z
 	FIELD field_13965 lastLevelScore I
@@ -80,6 +81,13 @@ CLASS net/minecraft/class_3222 net/minecraft/server/network/ServerPlayerEntity
 		ARG 2 limit
 	METHOD method_1_3106 sendSpawnProtectionMessage (Lnet/minecraft/class_2338;)V
 		ARG 1 pos
+	METHOD method_1_7643 addPostEffect (Lnet/minecraft/class_2960;)Z
+		ARG 1 effect
+	METHOD method_1_7644 clearPostEffects ()Z
+	METHOD method_1_7645 getPostEffects ()Ljava/util/List;
+	METHOD method_1_7646 removePostEffect (Lnet/minecraft/class_2960;)Z
+		ARG 1 effect
+	METHOD method_1_7647 sendPostEffectsPacket ()V
 	METHOD method_7336 changeGameMode (Lnet/minecraft/class_1934;)Z
 		ARG 1 gameMode
 	METHOD method_14203 copyFrom (Lnet/minecraft/class_3222;Z)V
@@ -254,6 +262,7 @@ CLASS net/minecraft/class_3222 net/minecraft/server/network/ServerPlayerEntity
 	METHOD method_60588 findRespawnPosition (Lnet/minecraft/class_3218;Lnet/minecraft/class_3222$class_10766;Z)Ljava/util/Optional;
 		ARG 0 world
 		ARG 1 respawn
+		ARG 2 alive
 	METHOD method_60589 (Lnet/minecraft/class_2338;Lnet/minecraft/class_243;)Lnet/minecraft/class_3222$class_9773;
 		ARG 1 respawnPos
 	METHOD method_60590 getRespawnTarget (ZLnet/minecraft/class_5454$class_9823;)Lnet/minecraft/class_5454;

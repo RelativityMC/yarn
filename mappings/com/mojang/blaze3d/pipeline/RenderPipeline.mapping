@@ -1,0 +1,112 @@
+CLASS net/minecraft/class_1_1257 com/mojang/blaze3d/pipeline/RenderPipeline
+	FIELD field_1_8626 bindGroupLayouts Ljava/util/List;
+	FIELD field_1_8627 colorTargetStates [Lnet/minecraft/class_1_384;
+	FIELD field_1_8628 cull Z
+	FIELD field_1_8629 depthStencilState Lnet/minecraft/class_1_386;
+	FIELD field_1_8630 fragmentShader Lnet/minecraft/class_2960;
+	FIELD field_1_8631 location Lnet/minecraft/class_2960;
+	FIELD field_1_8632 polygonMode Lnet/minecraft/class_1_1238;
+	FIELD field_1_8633 drawMode Lnet/minecraft/class_5596;
+	FIELD field_1_8634 shaderDefines Lnet/minecraft/class_10149;
+	FIELD field_1_8635 sortKey I
+	FIELD field_1_8636 randomValue I
+	FIELD field_1_8637 vertexFormats [Lnet/minecraft/class_1_1232;
+	FIELD field_1_8638 vertexShader Lnet/minecraft/class_2960;
+	METHOD <init> (Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;Lnet/minecraft/class_10149;Ljava/util/List;[Lnet/minecraft/class_1_384;Lnet/minecraft/class_1_386;Lnet/minecraft/class_1_1238;Z[Lnet/minecraft/class_1_1232;Lnet/minecraft/class_5596;I)V
+		ARG 1 location
+		ARG 2 vertexShader
+		ARG 3 fragmentShader
+		ARG 4 shaderDefines
+		ARG 5 bindGroupLayouts
+		ARG 6 colorTargetStates
+		ARG 7 depthStencilState
+		ARG 8 polygonMode
+		ARG 9 cull
+		ARG 10 vertexFormats
+		ARG 11 drawMode
+		ARG 12 sortKey
+	METHOD method_1_7960 builder ([Lnet/minecraft/class_1_1257$class_1_1259;)Lnet/minecraft/class_1_1257$class_1_1258;
+		ARG 0 snippets
+	METHOD method_1_7961 getBindGroupLayouts ()Ljava/util/List;
+	METHOD method_1_7962 getColorTargetStates ()[Lnet/minecraft/class_1_384;
+	METHOD method_1_7963 getDepthStencilState ()Lnet/minecraft/class_1_386;
+	METHOD method_1_7964 getFragmentShader ()Lnet/minecraft/class_2960;
+	METHOD method_1_7965 getId ()Lnet/minecraft/class_2960;
+	METHOD method_1_7966 getPolygonMode ()Lnet/minecraft/class_1_1238;
+	METHOD method_1_7967 getDrawMode ()Lnet/minecraft/class_5596;
+	METHOD method_1_7968 getShaderDefines ()Lnet/minecraft/class_10149;
+	METHOD method_1_7969 getSortKey ()I
+	METHOD method_1_7970 getVertexFormat (I)Lnet/minecraft/class_1_1232;
+		ARG 1 index
+	METHOD method_1_7971 getVertexFormats ()[Lnet/minecraft/class_1_1232;
+	METHOD method_1_7972 getVertexShader ()Lnet/minecraft/class_2960;
+	METHOD method_1_7973 isCulled ()Z
+	METHOD method_1_7974 randomize ()V
+	METHOD method_1_7975 hasDepthStencil ()Z
+	CLASS class_1_1258 Builder
+		FIELD field_1_8639 numColorTargetStates I
+		FIELD field_1_8640 bindGroupLayouts Ljava/util/Optional;
+		FIELD field_1_8641 colorTargetStates [Lnet/minecraft/class_1_384;
+		FIELD field_1_8642 cull Ljava/util/Optional;
+		FIELD field_1_8643 defines Ljava/util/Optional;
+		FIELD field_1_8644 depthStencilState Ljava/util/Optional;
+		FIELD field_1_8645 fragmentShader Ljava/util/Optional;
+		FIELD field_1_8646 location Ljava/util/Optional;
+		FIELD field_1_8647 ordinal I
+		FIELD field_1_8648 polygonMode Ljava/util/Optional;
+		FIELD field_1_8649 drawMode Ljava/util/Optional;
+		FIELD field_1_8650 vertexFormats [Lnet/minecraft/class_1_1232;
+		FIELD field_1_8651 vertexShader Ljava/util/Optional;
+		METHOD method_1_7976 build ()Lnet/minecraft/class_1_1257;
+		METHOD method_1_7977 buildSnippet ()Lnet/minecraft/class_1_1257$class_1_1259;
+		METHOD method_1_7978 (Ljava/util/List;)V
+			ARG 1 bindGroupLayouts
+		METHOD method_1_7979 bindGroupLayout (Lnet/minecraft/class_1_794;)Lnet/minecraft/class_1_1257$class_1_1258;
+			ARG 1 bindGroupLayout
+		METHOD method_1_7980 colorTargetState (ILnet/minecraft/class_1_384;)Lnet/minecraft/class_1_1257$class_1_1258;
+			ARG 1 index
+			ARG 2 colorTargetState
+		METHOD method_1_7981 colorTargetState (Lnet/minecraft/class_1_384;)Lnet/minecraft/class_1_1257$class_1_1258;
+			ARG 1 colorTargetState
+		METHOD method_1_7982 colorTargetStates (IILjava/util/function/Supplier;)Lnet/minecraft/class_1_1257$class_1_1258;
+			ARG 1 first
+			ARG 2 last
+			ARG 3 colorTargetStateSupplier
+		METHOD method_1_7983 cull (Z)Lnet/minecraft/class_1_1257$class_1_1258;
+			ARG 1 cull
+		METHOD method_1_7984 depthStencilState (Lnet/minecraft/class_1_386;)Lnet/minecraft/class_1_1257$class_1_1258;
+			ARG 1 depthStencilState
+		METHOD method_1_7985 depthStencilState (Ljava/util/Optional;)Lnet/minecraft/class_1_1257$class_1_1258;
+			ARG 1 depthStencilState
+		METHOD method_1_7986 fragmentShader (Ljava/lang/String;)Lnet/minecraft/class_1_1257$class_1_1258;
+			ARG 1 fragmentShader
+		METHOD method_1_7987 fragmentShader (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_1257$class_1_1258;
+			ARG 1 fragmentShader
+		METHOD method_1_7988 id (Ljava/lang/String;)Lnet/minecraft/class_1_1257$class_1_1258;
+			ARG 1 location
+		METHOD method_1_7989 id (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_1257$class_1_1258;
+			ARG 1 location
+		METHOD method_1_7990 polygonMode (Lnet/minecraft/class_1_1238;)Lnet/minecraft/class_1_1257$class_1_1258;
+			ARG 1 polygonMode
+		METHOD method_1_7991 drawMode (Lnet/minecraft/class_5596;)Lnet/minecraft/class_1_1257$class_1_1258;
+			ARG 1 drawMode
+		METHOD method_1_7992 define (Ljava/lang/String;)Lnet/minecraft/class_1_1257$class_1_1258;
+			ARG 1 flag
+		METHOD method_1_7993 define (Ljava/lang/String;F)Lnet/minecraft/class_1_1257$class_1_1258;
+			ARG 1 name
+			ARG 2 value
+		METHOD method_1_7994 define (Ljava/lang/String;I)Lnet/minecraft/class_1_1257$class_1_1258;
+			ARG 1 name
+			ARG 2 value
+		METHOD method_1_7995 addSnippet (Lnet/minecraft/class_1_1257$class_1_1259;)V
+			ARG 1 snippet
+		METHOD method_1_7996 emptyColorTargetState (I)Lnet/minecraft/class_1_1257$class_1_1258;
+			ARG 1 index
+		METHOD method_1_7997 vertexFormat (ILnet/minecraft/class_1_1232;)Lnet/minecraft/class_1_1257$class_1_1258;
+			ARG 1 index
+			ARG 2 vertexFormat
+		METHOD method_1_7998 vertexShader (Ljava/lang/String;)Lnet/minecraft/class_1_1257$class_1_1258;
+			ARG 1 vertexShader
+		METHOD method_1_7999 vertexShader (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_1257$class_1_1258;
+			ARG 1 vertexShader
+	CLASS class_1_1259 Snippet

@@ -1,6 +1,14 @@
 CLASS net/minecraft/class_7887 net/minecraft/registry/BuiltinRegistries
-	FIELD field_40953 REGISTRY_BUILDER Lnet/minecraft/class_7877;
-	METHOD method_46817 createWrapperLookup ()Lnet/minecraft/class_7225$class_7874;
+	FIELD field_1_8586 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_8587 RELOADABLE_REGISTRY_BUILDER Lnet/minecraft/class_7877;
+	FIELD field_40953 WORLD_REGISTRY_BUILDER Lnet/minecraft/class_7877;
+	METHOD method_1_7865 createReloadableRegistries (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_7225$class_7874;
+		ARG 0 worldRegistries
+	METHOD method_1_7866 (Lnet/minecraft/class_8944;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_8490;)V
+		ARG 2 lootDataType
+	METHOD method_1_7868 validateReloadable (Lnet/minecraft/class_7225$class_7874;)V
+		ARG 0 registries
+	METHOD method_46817 createWorldRegistries ()Lnet/minecraft/class_7225$class_7874;
 	METHOD method_46818 hasBiomePlacementModifier (Lnet/minecraft/class_6796;)Z
 		ARG 0 placedFeature
 	METHOD method_46819 (Lnet/minecraft/class_6880$class_6883;Lnet/minecraft/class_6796;)V
@@ -11,4 +19,5 @@ CLASS net/minecraft/class_7887 net/minecraft/registry/BuiltinRegistries
 		ARG 3 placedFeature
 	METHOD method_46822 (Lnet/minecraft/class_7225$class_7226;Lnet/minecraft/class_6880$class_6883;)V
 		ARG 1 biome
-	METHOD method_46823 validate (Lnet/minecraft/class_7225$class_7874;)V
+	METHOD method_46823 validateWorld (Lnet/minecraft/class_7225$class_7874;)V
+		ARG 0 registries

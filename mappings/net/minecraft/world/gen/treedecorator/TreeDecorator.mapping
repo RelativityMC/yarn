@@ -12,6 +12,7 @@ CLASS net/minecraft/class_4662 net/minecraft/world/gen/treedecorator/TreeDecorat
 		FIELD field_38876 leavesPositions Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
 		FIELD field_38877 rootPositions Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
 		METHOD <init> (Lnet/minecraft/class_5281;Ljava/util/function/BiConsumer;Lnet/minecraft/class_5819;Ljava/util/Set;Ljava/util/Set;Ljava/util/Set;)V
+			ARG 1 world
 			ARG 2 replacer
 			ARG 3 random
 			ARG 4 logPositions
@@ -19,6 +20,18 @@ CLASS net/minecraft/class_4662 net/minecraft/world/gen/treedecorator/TreeDecorat
 			ARG 6 rootPositions
 		METHOD method_1_7214 isReplaceable (Lnet/minecraft/class_2338;)Z
 			ARG 1 pos
+		METHOD method_1_8195 isWaterOrAdjacent (Lnet/minecraft/class_2338;)Z
+			ARG 1 pos
+		METHOD method_1_8196 (Lnet/minecraft/class_2680;)Z
+			ARG 0 state
+		METHOD method_1_8197 (Lnet/minecraft/class_2680;)Z
+			ARG 0 state
+		METHOD method_1_8198 (Lnet/minecraft/class_2680;)Z
+			ARG 0 state
+		METHOD method_1_8199 (Lnet/minecraft/class_2680;)Z
+			ARG 0 state
+		METHOD method_1_8200 (Lnet/minecraft/class_2680;)Z
+			ARG 0 state
 		METHOD method_43316 getWorld ()Lnet/minecraft/class_5281;
 		METHOD method_43317 isAir (Lnet/minecraft/class_2338;)Z
 			ARG 1 pos

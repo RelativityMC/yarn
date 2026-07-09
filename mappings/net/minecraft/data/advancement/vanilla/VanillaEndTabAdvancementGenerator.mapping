@@ -1,1 +1,3 @@
 CLASS net/minecraft/class_2419 net/minecraft/data/advancement/vanilla/VanillaEndTabAdvancementGenerator
+	FIELD field_1_8738 entityTypes Lnet/minecraft/class_7871;
+	FIELD field_1_8739 structures Lnet/minecraft/class_7871;

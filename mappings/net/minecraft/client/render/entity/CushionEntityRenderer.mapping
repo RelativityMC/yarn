@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1268 net/minecraft/client/render/entity/CushionEntityRenderer
+	FIELD field_1_8684 TEXTURES_BY_COLOR Ljava/util/EnumMap;
+	FIELD field_1_8685 model Lnet/minecraft/class_1_1275;
+	METHOD method_1_8113 (Ljava/util/EnumMap;)V
+		ARG 0 map

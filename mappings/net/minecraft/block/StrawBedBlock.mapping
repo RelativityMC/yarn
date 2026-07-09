@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1_1226 net/minecraft/block/StrawBedBlock
+	FIELD field_1_8515 BASE_FOOT_SHAPE Lnet/minecraft/class_265;
+	FIELD field_1_8516 FOOT_SHAPES Ljava/util/Map;
+	FIELD field_1_8517 HEAD_SHAPES Ljava/util/Map;
+	FIELD field_1_8518 BASE_HEAD_SHAPE Lnet/minecraft/class_265;
+	METHOD method_1_7789 destroyStrawBed (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)V
+		ARG 1 world
+		ARG 2 pos

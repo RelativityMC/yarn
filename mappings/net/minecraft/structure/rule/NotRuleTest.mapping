@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_1292 net/minecraft/structure/rule/NotRuleTest
+	FIELD field_1_8760 rule Lnet/minecraft/class_3825;
+	METHOD <init> (Lnet/minecraft/class_3825;)V
+		ARG 1 rule
+	METHOD method_1_8201 (Lnet/minecraft/class_1_1292;)Lnet/minecraft/class_3825;
+		ARG 0 test

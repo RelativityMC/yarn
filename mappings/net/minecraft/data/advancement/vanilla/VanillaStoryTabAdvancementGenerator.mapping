@@ -1,1 +1,3 @@
 CLASS net/minecraft/class_2417 net/minecraft/data/advancement/vanilla/VanillaStoryTabAdvancementGenerator
+	FIELD field_1_8730 items Lnet/minecraft/class_7871;
+	FIELD field_1_8731 structures Lnet/minecraft/class_7871;

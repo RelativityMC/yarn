@@ -5,6 +5,11 @@ CLASS net/minecraft/class_9959 net/minecraft/client/world/WorldEventHandler
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_638;)V
 		ARG 1 client
 		ARG 2 world
+	METHOD method_1_7845 addEffectParticles (Lnet/minecraft/class_2396;Lnet/minecraft/class_2338;ILnet/minecraft/class_5819;)V
+		ARG 1 effect
+		ARG 2 pos
+		ARG 3 data
+		ARG 4 random
 	METHOD method_62187 processGlobalEvent (ILnet/minecraft/class_2338;I)V
 		ARG 1 eventId
 		ARG 2 pos

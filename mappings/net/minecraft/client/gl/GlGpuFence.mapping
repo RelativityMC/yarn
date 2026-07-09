@@ -1,1 +1,6 @@
 CLASS net/minecraft/class_11270 net/minecraft/client/gl/GlGpuFence
+	FIELD field_1_7059 closed Z
+	FIELD field_1_7060 commandEncoder Lnet/minecraft/class_10860;
+	FIELD field_1_7061 submitIndex J
+	METHOD <init> (Lnet/minecraft/class_10860;)V
+		ARG 1 commandEncoder

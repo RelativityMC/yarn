@@ -1,8 +1,19 @@
 CLASS net/minecraft/class_5475 net/minecraft/data/DynamicRegistriesProvider
+	FIELD field_1_8721 stage Ljava/lang/String;
+	FIELD field_1_8722 registries Ljava/util/Collection;
 	FIELD field_40665 output Lnet/minecraft/class_7784;
 	FIELD field_40952 registriesFuture Ljava/util/concurrent/CompletableFuture;
 	METHOD <init> (Lnet/minecraft/class_7784;Ljava/lang/String;Ljava/util/Collection;Ljava/util/concurrent/CompletableFuture;)V
 		ARG 1 output
+		ARG 2 stage
+		ARG 3 registries
+		ARG 4 registriesFuture
+	METHOD method_1_8160 reloadable (Lnet/minecraft/class_7784;Ljava/util/concurrent/CompletableFuture;)Lnet/minecraft/class_2405;
+		ARG 0 output
+		ARG 1 registriesFuture
+	METHOD method_1_8161 world (Lnet/minecraft/class_7784;Ljava/util/concurrent/CompletableFuture;)Lnet/minecraft/class_5475;
+		ARG 0 output
+		ARG 1 registriesFuture
 	METHOD method_39678 writeRegistryEntries (Lnet/minecraft/class_7403;Lnet/minecraft/class_7225$class_7874;Lcom/mojang/serialization/DynamicOps;Lnet/minecraft/class_7655$class_7657;)Ljava/util/Optional;
 		ARG 1 writer
 		ARG 2 registries
@@ -22,3 +33,7 @@ CLASS net/minecraft/class_5475 net/minecraft/data/DynamicRegistriesProvider
 		ARG 2 registries
 	METHOD method_46816 (Lnet/minecraft/class_7403;Lnet/minecraft/class_7225$class_7874;Lcom/mojang/serialization/DynamicOps;Lnet/minecraft/class_7655$class_7657;)Ljava/util/stream/Stream;
 		ARG 4 entry
+	METHOD method_61090 (Ljava/nio/file/Path;Lcom/mojang/serialization/DataResult$Error;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 error
+	METHOD method_61091 (Lnet/minecraft/class_7403;Ljava/nio/file/Path;Lcom/google/gson/JsonElement;)Ljava/util/concurrent/CompletableFuture;
+		ARG 2 element

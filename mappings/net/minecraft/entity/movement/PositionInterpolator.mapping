@@ -1,0 +1,25 @@
+CLASS net/minecraft/class_10584 net/minecraft/entity/movement/PositionInterpolator
+	FIELD field_55663 DEFAULT_INTERPOLATION_DURATION I
+	FIELD field_55664 entity Lnet/minecraft/class_1297;
+	FIELD field_55665 lerpDuration I
+	METHOD <init> (Lnet/minecraft/class_1297;)V
+		ARG 1 entity
+	METHOD <init> (Lnet/minecraft/class_1297;I)V
+		ARG 1 entity
+		ARG 2 lerpDuration
+	METHOD method_1_7887 move (Lnet/minecraft/class_243;)V
+		ARG 1 offset
+	METHOD method_1_7888 tickPos ()V
+	METHOD method_1_7890 getDestination ()Lnet/minecraft/class_1_1193$class_1_1195;
+	METHOD method_1_7891 getMovementTracker ()Lnet/minecraft/class_1_1247;
+	METHOD method_1_7893 setMotionPath (Lnet/minecraft/class_1_1198;FF)V
+		ARG 1 motionPath
+		ARG 2 yaw
+		ARG 3 pitch
+	METHOD method_66267 refreshPositionAndAngles (Lnet/minecraft/class_1_1198;FF)V
+		ARG 1 motion
+		ARG 2 yaw
+		ARG 3 pitch
+	METHOD method_66270 isInterpolating ()Z
+	METHOD method_66271 tick ()V
+	METHOD method_66272 clear ()V

@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_7655 net/minecraft/registry/RegistryLoading
-	FIELD field_39968 DYNAMIC_REGISTRIES Ljava/util/List;
+	FIELD field_1_8339 RELOADABLE_REGISTRIES Ljava/util/List;
+	FIELD field_39968 WORLD_REGISTRIES Ljava/util/List;
 	FIELD field_39969 DIMENSION_REGISTRIES Ljava/util/List;
 	FIELD field_39970 LOGGER Lorg/slf4j/Logger;
 	FIELD field_48709 SYNCED_REGISTRIES Ljava/util/List;
@@ -11,6 +12,7 @@ CLASS net/minecraft/class_7655 net/minecraft/registry/RegistryLoading
 		ARG 1 resourceFactory
 		ARG 2 registries
 		ARG 3 additionalRegistries
+		ARG 4 executor
 	METHOD method_1_438 load (Lnet/minecraft/class_7655$class_1_19;Ljava/util/List;Ljava/util/List;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
 		ARG 0 loaderFactory
 		ARG 1 registries
@@ -20,6 +22,7 @@ CLASS net/minecraft/class_7655 net/minecraft/registry/RegistryLoading
 		ARG 0 resourceManager
 		ARG 1 registries
 		ARG 2 additionalRegistries
+		ARG 3 executor
 	METHOD method_1_953 (Ljava/util/Map;Lnet/minecraft/class_1_102;)Z
 		ARG 1 loader
 	METHOD method_45126 writeAndCreateLoadingException (Ljava/util/Map;)Lnet/minecraft/class_148;

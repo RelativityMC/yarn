@@ -1,6 +1,52 @@
 CLASS net/minecraft/class_1_1232 com/mojang/blaze3d/vertex/VertexFormat
+	FIELD field_1_8550 MAX_ATTRIBUTES I
+	FIELD field_1_8551 MIN_VERTEX_ALIGNMENT I
+	FIELD field_1_8552 attributes Ljava/util/List;
+	FIELD field_1_8553 attributesByName Ljava/util/Map;
+	FIELD field_1_8554 divisor I
+	FIELD field_1_8555 vertexSize I
 	METHOD <init> (Ljava/util/List;II)V
-		ARG 1 elements
+		ARG 1 attributes
 		ARG 2 vertexSize
+		ARG 3 divisor
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 other
+	METHOD method_1_7825 builder (I)Lnet/minecraft/class_1_1232$class_1_1233;
+		ARG 0 divisor
+	METHOD method_1_7826 hasAttribute (Ljava/lang/String;)Z
+		ARG 1 name
+	METHOD method_1_7827 getAttribute (Ljava/lang/String;)Lnet/minecraft/class_1_1271;
+		ARG 1 name
+	METHOD method_1_7828 numVertexAttributes ()Ljava/util/List;
+	METHOD method_1_7829 getDivisor ()I
+	METHOD method_1_7830 getVertexSize ()I
+	CLASS class_1_1233 Builder
+		FIELD field_1_8556 attributes Ljava/util/List;
+		FIELD field_1_8557 vertexSize I
+		FIELD field_1_8558 divisor I
+		METHOD <init> (I)V
+			ARG 1 divisor
+		METHOD method_1_7831 attributes (Ljava/lang/String;IILnet/minecraft/class_1_658;I)Lnet/minecraft/class_1_1232$class_1_1233;
+			ARG 1 name
+			ARG 2 firstOffset
+			ARG 3 stride
+			ARG 4 texelFormat
+			ARG 5 count
+		METHOD method_1_7832 attribute (Ljava/lang/String;ILnet/minecraft/class_1_658;)Lnet/minecraft/class_1_1232$class_1_1233;
+			ARG 1 name
+			ARG 2 size
+			ARG 3 texelFormat
+		METHOD method_1_7833 attribute (Ljava/lang/String;Lnet/minecraft/class_1_658;)Lnet/minecraft/class_1_1232$class_1_1233;
+			ARG 1 name
+			ARG 2 texelFormat
+		METHOD method_1_7834 attributes (Ljava/lang/String;Lnet/minecraft/class_1_658;I)Lnet/minecraft/class_1_1232$class_1_1233;
+			ARG 1 name
+			ARG 2 texelFormat
+			ARG 3 count
+		METHOD method_1_7835 build ()Lnet/minecraft/class_1_1232;
+		METHOD method_1_7836 addAttribute (Ljava/lang/String;ILnet/minecraft/class_1_658;)V
+			ARG 1 name
+			ARG 2 offset
+			ARG 3 texelFormat
+		METHOD method_1_7837 assertNameAvailable (Ljava/lang/String;)V
+			ARG 1 name

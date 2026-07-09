@@ -1,10 +1,14 @@
 CLASS net/minecraft/class_12328 net/minecraft/world/attribute/timeline/TrackAttributeModification
+	FIELD field_1_1034 clock Lnet/minecraft/class_6880;
 	FIELD field_64392 modifiers Lnet/minecraft/class_12212;
 	FIELD field_64393 evaluator Lnet/minecraft/class_12308;
 	FIELD field_64394 timeSupplier Lnet/minecraft/class_1_98;
 	FIELD field_64395 lastComputedTime I
 	FIELD field_64396 lastComputedValue Ljava/lang/Object;
 	METHOD <init> (Lnet/minecraft/class_6880;Ljava/util/Optional;Lnet/minecraft/class_12212;Lnet/minecraft/class_12306;Lnet/minecraft/class_12210;Lnet/minecraft/class_1_98;)V
+		ARG 1 clock
 		ARG 2 period
+		ARG 3 modifiers
 		ARG 4 track
 		ARG 5 interpolator
+		ARG 6 timeSupplier

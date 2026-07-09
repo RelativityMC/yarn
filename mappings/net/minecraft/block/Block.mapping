@@ -74,6 +74,10 @@ CLASS net/minecraft/class_2248 net/minecraft/block/Block
 		ARG 4 entity
 		ARG 5 fallDistance
 	METHOD method_1_6483 getFallDistanceReduction ()F
+	METHOD method_1_7631 spawnBreakParticles (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 state
 	METHOD method_9496 randomDisplayTick (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)V
 		COMMENT Called randomly on the client. Blocks may override this to spawn particles.
 		COMMENT Unlike {@link AbstractBlock#randomTick} this is not affected by a game rule.
@@ -373,6 +377,7 @@ CLASS net/minecraft/class_2248 net/minecraft/block/Block
 			COMMENT the bitwise flags for {@link net.minecraft.world.ModifiableWorld#setBlockState(BlockPos, BlockState, int, int)}
 	METHOD method_33614 spawnBreakParticles (Lnet/minecraft/class_1937;Lnet/minecraft/class_1297;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
 		ARG 1 world
+		ARG 2 entity
 		ARG 3 pos
 		ARG 4 state
 	METHOD method_33615 createShapeFunction (Ljava/util/function/Function;)Ljava/util/function/Function;

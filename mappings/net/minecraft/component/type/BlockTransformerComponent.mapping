@@ -1,0 +1,110 @@
+CLASS net/minecraft/class_1_1156 net/minecraft/component/type/BlockTransformerComponent
+	FIELD field_1_8068 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_8069 PACKET_CODEC Lnet/minecraft/class_9139;
+	METHOD method_1_7371 (Lnet/minecraft/class_3218;Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_1799;Lnet/minecraft/class_1657;Lnet/minecraft/class_1_1156$class_1_1157;Lnet/minecraft/class_2350;Lnet/minecraft/class_5321;)V
+		ARG 8 lootTable
+	METHOD method_1_7372 (Lnet/minecraft/class_1_1156$class_1_1157;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;Lnet/minecraft/class_3218;Lnet/minecraft/class_1799;)V
+		ARG 3 world
+		ARG 4 stack
+	METHOD method_1_7373 isPreemptedByShield (Lnet/minecraft/class_1838;)Z
+		ARG 0 context
+	METHOD method_1_7374 use (Lnet/minecraft/class_1838;)Lnet/minecraft/class_1269;
+		ARG 1 context
+	CLASS class_1_1157 Transform
+		FIELD field_1_8071 PACKET_CODEC Lnet/minecraft/class_9139;
+		METHOD method_1_7375 builder (Lnet/minecraft/class_6646;Lnet/minecraft/class_2248;)Lnet/minecraft/class_1_1156$class_1_1157$class_1_1158;
+			ARG 0 ifTrue
+			ARG 1 then
+		METHOD method_1_7376 builder (Lnet/minecraft/class_6646;Lnet/minecraft/class_4651;)Lnet/minecraft/class_1_1156$class_1_1157$class_1_1158;
+			ARG 0 ifTrue
+			ARG 1 then
+		METHOD method_1_7377 builder (Lnet/minecraft/class_4651;)Lnet/minecraft/class_1_1156$class_1_1157$class_1_1158;
+			ARG 0 blockStateProvider
+		METHOD method_1_7378 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+		CLASS class_1_1158 Builder
+			FIELD field_1_8072 consumeOnUse Z
+			FIELD field_1_8073 disallowedFaces Ljava/util/List;
+			FIELD field_1_8074 dropStrategy Lnet/minecraft/class_1_1156$class_1_1159;
+			FIELD field_1_8075 itemDamagePerUse I
+			FIELD field_1_8076 loot Ljava/util/Optional;
+			FIELD field_1_8077 particle Lnet/minecraft/class_1_1156$class_1_1161;
+			FIELD field_1_8078 sound Lnet/minecraft/class_6880;
+			FIELD field_1_8079 blockStateProvider Lnet/minecraft/class_4651;
+			FIELD field_1_8080 transformType Lnet/minecraft/class_1_1156$class_1_1162;
+			FIELD field_1_8496 updateFromNeighbors Z
+			METHOD <init> (Lnet/minecraft/class_4651;)V
+				ARG 1 blockStateProvider
+			METHOD method_1_7379 build ()Lnet/minecraft/class_1_1156$class_1_1157;
+			METHOD method_1_7380 consumeOnUse (Z)Lnet/minecraft/class_1_1156$class_1_1157$class_1_1158;
+				ARG 1 consumeOnUse
+			METHOD method_1_7381 disallowedFaces (Ljava/util/List;)Lnet/minecraft/class_1_1156$class_1_1157$class_1_1158;
+				ARG 1 disallowedFaces
+			METHOD method_1_7382 dropStrategy (Lnet/minecraft/class_1_1156$class_1_1159;)Lnet/minecraft/class_1_1156$class_1_1157$class_1_1158;
+				ARG 1 dropStrategy
+			METHOD method_1_7383 itemDamagePerUse (I)Lnet/minecraft/class_1_1156$class_1_1157$class_1_1158;
+				ARG 1 itemDamagePerUse
+			METHOD method_1_7384 loot (Lnet/minecraft/class_5321;)Lnet/minecraft/class_1_1156$class_1_1157$class_1_1158;
+				ARG 1 loot
+			METHOD method_1_7385 particle (Lnet/minecraft/class_1_1156$class_1_1161;)Lnet/minecraft/class_1_1156$class_1_1157$class_1_1158;
+				ARG 1 particle
+			METHOD method_1_7386 sound (Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_1156$class_1_1157$class_1_1158;
+				ARG 1 sound
+			METHOD method_1_7387 transformType (Lnet/minecraft/class_1_1156$class_1_1162;)Lnet/minecraft/class_1_1156$class_1_1157$class_1_1158;
+				ARG 1 transformType
+			METHOD method_1_7770 updateFromNeighbors (Z)Lnet/minecraft/class_1_1156$class_1_1157$class_1_1158;
+				ARG 1 updateFromNeighbors
+	CLASS class_1_1159 DropStrategy
+		FIELD field_1_8082 INDEX_TO_VALUE Ljava/util/function/IntFunction;
+		FIELD field_1_8086 PACKET_CODEC Lnet/minecraft/class_9139;
+		FIELD field_1_8087 id I
+		FIELD field_1_8088 name Ljava/lang/String;
+		FIELD field_1_8089 action Lnet/minecraft/class_1_1156$class_1_1159$class_1_1160;
+		METHOD <init> (Ljava/lang/String;IILjava/lang/String;Lnet/minecraft/class_1_1156$class_1_1159$class_1_1160;)V
+			ARG 3 id
+			ARG 4 name
+			ARG 5 action
+		METHOD method_1_7389 getId ()I
+		METHOD method_1_7390 drop (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;Lnet/minecraft/class_1799;)V
+			ARG 1 world
+			ARG 2 pos
+			ARG 3 direction
+			ARG 4 stack
+		CLASS class_1_1160 Action
+			FIELD field_1_8090 CLICKED_FACE Lnet/minecraft/class_1_1156$class_1_1159$class_1_1160;
+			FIELD field_1_8091 FROM_MIDDLE Lnet/minecraft/class_1_1156$class_1_1159$class_1_1160;
+			METHOD method_1_7391 (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;Lnet/minecraft/class_1799;)V
+				ARG 0 world
+				ARG 1 pos
+				ARG 2 direction
+				ARG 3 stack
+			METHOD method_1_7392 drop (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;Lnet/minecraft/class_1799;)V
+				ARG 1 world
+				ARG 2 pos
+				ARG 3 direction
+				ARG 4 stack
+	CLASS class_1_1161 Particle
+		FIELD field_1_8093 INDEX_TO_VALUE Ljava/util/function/IntFunction;
+		FIELD field_1_8097 PACKET_CODEC Lnet/minecraft/class_9139;
+		FIELD field_1_8100 id I
+		FIELD field_1_8101 event I
+		FIELD field_1_8102 name Ljava/lang/String;
+		METHOD <init> (Ljava/lang/String;IILjava/lang/String;I)V
+			ARG 3 id
+			ARG 4 name
+			ARG 5 event
+		METHOD method_1_7394 getId ()I
+		METHOD method_1_7395 getEvent ()I
+		METHOD method_1_7396 spawn (Lnet/minecraft/class_1937;Lnet/minecraft/class_1297;Lnet/minecraft/class_2338;)V
+			ARG 1 world
+			ARG 2 entity
+			ARG 3 blockPos
+	CLASS class_1_1162 TransformType
+		FIELD field_1_8104 INDEX_TO_VALUE Ljava/util/function/IntFunction;
+		FIELD field_1_8108 PACKET_CODEC Lnet/minecraft/class_9139;
+		FIELD field_1_8109 id I
+		FIELD field_1_8110 name Ljava/lang/String;
+		METHOD <init> (Ljava/lang/String;IILjava/lang/String;)V
+			ARG 3 id
+			ARG 4 name
+		METHOD method_1_7398 getId ()I

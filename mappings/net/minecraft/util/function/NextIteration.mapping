@@ -1,3 +1,7 @@
 CLASS net/minecraft/class_7928 net/minecraft/util/function/NextIteration
 	COMMENT Indicates whether to perform the next iteration.
+	METHOD method_1_7592 abortIf (Z)Lnet/minecraft/class_7928;
+		ARG 0 abort
+	METHOD method_1_7593 continueIf (Z)Lnet/minecraft/class_7928;
+		ARG 0 continues
 	METHOD method_47543 shouldAbort ()Z

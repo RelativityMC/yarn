@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_2684 net/minecraft/network/packet/s2c/play/EntityS2CPacket
+	FIELD field_1_8740 ON_GROUND I
+	FIELD field_1_8741 MOTION_STEPS_SHIFT I
+	FIELD field_1_8742 delta Lnet/minecraft/class_1_1216;
 	FIELD field_12305 rotate Z
 	FIELD field_12306 onGround Z
 	FIELD field_12310 id I
@@ -7,11 +10,20 @@ CLASS net/minecraft/class_2684 net/minecraft/network/packet/s2c/play/EntityS2CPa
 	FIELD field_20849 positionChanged Z
 	METHOD <init> (ILnet/minecraft/class_1_1216;BBZZZ)V
 		ARG 1 entityId
+		ARG 2 delta
 		ARG 3 yaw
 		ARG 4 pitch
 		ARG 5 onGround
 		ARG 6 rotate
 		ARG 7 positionChanged
+	METHOD method_1_8178 getDelta ()Lnet/minecraft/class_1_1216;
+	METHOD method_1_8179 pack (ZI)I
+		ARG 0 onGround
+		ARG 1 steps
+	METHOD method_1_8180 isOnGround (I)Z
+		ARG 0 packed
+	METHOD method_1_8181 getMotionSteps (I)I
+		ARG 0 packed
 	METHOD method_11645 getEntity (Lnet/minecraft/class_1937;)Lnet/minecraft/class_1297;
 		ARG 1 world
 	METHOD method_11649 getYaw ()F
@@ -21,6 +33,7 @@ CLASS net/minecraft/class_2684 net/minecraft/network/packet/s2c/play/EntityS2CPa
 		FIELD field_47940 CODEC Lnet/minecraft/class_9139;
 		METHOD <init> (ILnet/minecraft/class_1_1216;Z)V
 			ARG 1 entityId
+			ARG 2 delta
 			ARG 3 onGround
 		METHOD method_34138 read (Lnet/minecraft/class_2540;)Lnet/minecraft/class_2684$class_2685;
 			ARG 0 buf
@@ -30,6 +43,7 @@ CLASS net/minecraft/class_2684 net/minecraft/network/packet/s2c/play/EntityS2CPa
 		FIELD field_47941 CODEC Lnet/minecraft/class_9139;
 		METHOD <init> (ILnet/minecraft/class_1_1216;BBZ)V
 			ARG 1 entityId
+			ARG 2 delta
 			ARG 3 yaw
 			ARG 4 pitch
 			ARG 5 onGround

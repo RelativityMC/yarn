@@ -4,6 +4,8 @@ CLASS net/minecraft/class_2438 net/minecraft/data/loottable/LootTableProvider
 	METHOD <init> (Ljava/util/Set;Ljava/util/List;)V
 		ARG 1 lootTableIds
 		ARG 2 lootTypeGenerators
+	METHOD method_1_7677 (Ljava/util/Map;Lnet/minecraft/class_7891;Lnet/minecraft/class_2438$class_7790;)V
+		ARG 3 lootTypeGenerator
 	METHOD method_58574 getId (Lnet/minecraft/class_5321;)Lnet/minecraft/class_2960;
 		ARG 0 lootTableKey
 	CLASS class_7790 LootTypeGenerator

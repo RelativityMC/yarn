@@ -353,6 +353,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_31320 getSocialInteractionsManager ()Lnet/minecraft/class_5520;
 	METHOD method_31321 isConnectedToServer ()Z
 	METHOD method_31382 createUserApiService (Lcom/mojang/authlib/services/MinecraftServicesDiscoveryService;Lnet/minecraft/class_542;)Lcom/mojang/authlib/minecraft/UserApiService;
+		ARG 0 discoveryService
 		ARG 1 runArgs
 	METHOD method_31974 getLoadedEntityModels ()Lnet/minecraft/class_5599;
 	METHOD method_31975 getBlockEntityRenderDispatcher ()Lnet/minecraft/class_824;

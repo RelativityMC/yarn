@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_1287 net/minecraft/client/render/entity/state/CushionEntityRenderState
+	FIELD field_1_8727 DEFAULT_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_8728 direction Lnet/minecraft/class_2350;
+	FIELD field_1_8729 texture Lnet/minecraft/class_2960;

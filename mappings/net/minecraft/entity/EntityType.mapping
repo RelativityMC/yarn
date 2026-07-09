@@ -47,6 +47,8 @@ CLASS net/minecraft/class_1299 net/minecraft/entity/EntityType
 		ARG 1 world
 		ARG 2 reason
 		ARG 3 entityProcessor
+	METHOD method_1_7627 getSpawnBox (Lnet/minecraft/class_243;)Lnet/minecraft/class_238;
+		ARG 1 pos
 	METHOD method_5881 loadFromEntityNbt (Lnet/minecraft/class_1937;Lnet/minecraft/class_1309;Lnet/minecraft/class_1297;Lnet/minecraft/class_11580;)V
 		ARG 0 world
 		ARG 1 spawner

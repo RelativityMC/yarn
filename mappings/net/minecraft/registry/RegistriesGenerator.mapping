@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_1269 net/minecraft/registry/RegistriesGenerator
+	METHOD method_1_8115 getOutputRegistries ()Ljava/util/Set;
+	METHOD method_1_8116 generate (Lnet/minecraft/class_1_1269$class_1_1270;)V
+		ARG 1 output
+	CLASS class_1_1270 OutputRegistryLookup
+		METHOD method_1_8117 get (Lnet/minecraft/class_5321;)Lnet/minecraft/class_7891;
+			ARG 1 registry

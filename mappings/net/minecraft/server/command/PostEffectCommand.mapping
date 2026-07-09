@@ -1,0 +1,53 @@
+CLASS net/minecraft/class_1_1246 net/minecraft/server/command/PostEffectCommand
+	FIELD field_1_8588 ADD_FAILED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
+	FIELD field_1_8589 CLEAR_FAILED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
+	FIELD field_1_8590 REMOVE_FAILED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
+	FIELD field_1_8591 ADD_REPORTER Lnet/minecraft/class_1_1083$class_1_1092;
+	FIELD field_1_8592 CLEAR_REPORTER Lnet/minecraft/class_1_1083$class_1_1091;
+	FIELD field_1_8593 REMOVE_REPORTER Lnet/minecraft/class_1_1083$class_1_1092;
+	METHOD method_1_7869 executeAdd (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_2960;)I
+		ARG 0 source
+		ARG 1 players
+		ARG 2 effect
+	METHOD method_1_7870 executeClear (Lnet/minecraft/class_2168;Ljava/util/Collection;)I
+		ARG 0 source
+		ARG 1 players
+	METHOD method_1_7873 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD method_1_7874 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD method_1_7875 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD method_1_7876 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD method_1_7877 (Lnet/minecraft/class_3222;ILnet/minecraft/class_2960;)Lnet/minecraft/class_2561;
+		ARG 0 player
+		ARG 1 total
+		ARG 2 effect
+	METHOD method_1_7878 (IILnet/minecraft/class_2960;)Lnet/minecraft/class_2561;
+		ARG 0 targets
+		ARG 1 total
+		ARG 2 effect
+	METHOD method_1_7879 (Lnet/minecraft/class_3222;I)Lnet/minecraft/class_2561;
+		ARG 0 player
+		ARG 1 total
+	METHOD method_1_7880 (II)Lnet/minecraft/class_2561;
+		ARG 0 targets
+		ARG 1 total
+	METHOD method_1_7881 (Lnet/minecraft/class_3222;ILnet/minecraft/class_2960;)Lnet/minecraft/class_2561;
+		ARG 0 player
+		ARG 1 total
+		ARG 2 effect
+	METHOD method_1_7882 (IILnet/minecraft/class_2960;)Lnet/minecraft/class_2561;
+		ARG 0 targets
+		ARG 1 total
+		ARG 2 effect
+	METHOD method_1_7883 executeList (Lnet/minecraft/class_2168;Lnet/minecraft/class_3222;)I
+		ARG 0 source
+		ARG 1 players
+	METHOD method_1_7884 register (Lcom/mojang/brigadier/CommandDispatcher;)V
+		ARG 0 dispatcher
+	METHOD method_1_7885 executeRemove (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_2960;)I
+		ARG 0 source
+		ARG 1 players
+		ARG 2 effect

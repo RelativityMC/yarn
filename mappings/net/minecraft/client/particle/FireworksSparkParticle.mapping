@@ -1,5 +1,11 @@
 CLASS net/minecraft/class_677 net/minecraft/client/particle/FireworksSparkParticle
 	CLASS class_678 Flash
+		METHOD <init> (Lnet/minecraft/class_638;DDDLnet/minecraft/class_1058;)V
+			ARG 1 world
+			ARG 2 x
+			ARG 4 y
+			ARG 6 z
+			ARG 8 sprite
 	CLASS class_679 ExplosionFactory
 		FIELD field_17811 spriteProvider Lnet/minecraft/class_4002;
 		METHOD <init> (Lnet/minecraft/class_4002;)V
@@ -23,6 +29,7 @@ CLASS net/minecraft/class_677 net/minecraft/client/particle/FireworksSparkPartic
 		METHOD method_3027 setTrail (Z)V
 			ARG 1 trail
 	CLASS class_681 FireworkParticle
+		FIELD field_1_8574 playSounds Z
 		FIELD field_3805 particleManager Lnet/minecraft/class_702;
 		FIELD field_3806 explosions Ljava/util/List;
 		FIELD field_3807 flicker Z
@@ -39,6 +46,7 @@ CLASS net/minecraft/class_677 net/minecraft/client/particle/FireworksSparkPartic
 			ARG 12 velocityZ
 			ARG 14 particleManager
 			ARG 15 fireworkExplosions
+			ARG 16 playSounds
 		METHOD method_3028 explodeStar (D[[DLit/unimi/dsi/fastutil/ints/IntList;Lit/unimi/dsi/fastutil/ints/IntList;ZZZ)V
 			ARG 1 size
 			ARG 3 pattern

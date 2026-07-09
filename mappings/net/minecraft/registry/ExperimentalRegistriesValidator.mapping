@@ -1,8 +1,24 @@
 CLASS net/minecraft/class_8931 net/minecraft/registry/ExperimentalRegistriesValidator
+	METHOD method_1_8118 validateReloadable (Ljava/util/concurrent/CompletableFuture;Ljava/util/concurrent/CompletableFuture;Lnet/minecraft/class_7877;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 experimentalWorld
+		ARG 1 baseReloadable
+		ARG 2 experimentalReloadableRegistryBuilder
+	METHOD method_1_8119 hasAnyPatches (Lnet/minecraft/class_7877$class_8993;Lnet/minecraft/class_5321;)Z
+		ARG 0 registries
+		ARG 1 registry
+	METHOD method_1_8120 (Lnet/minecraft/class_7877;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_7877$class_8993;
+		ARG 1 exWorld
+		ARG 2 baseReload
+	METHOD method_1_8121 (Lnet/minecraft/class_8990$class_8991;Lnet/minecraft/class_7655$class_7657;)V
+		ARG 1 registry
+	METHOD method_1_8122 (Lnet/minecraft/class_7877$class_8993;Lnet/minecraft/class_8490;)Z
+		ARG 1 lootDataType
+	METHOD method_1_8123 (Lnet/minecraft/class_7225$class_7226;)Ljava/util/Optional;
+		ARG 0 patch
 	METHOD method_54839 (Lnet/minecraft/class_7877;Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_7877$class_8993;
-		ARG 1 registries
-	METHOD method_54840 validate (Ljava/util/concurrent/CompletableFuture;Lnet/minecraft/class_7877;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 registriesFuture
+		ARG 1 baseWrld
+	METHOD method_54840 validateWorld (Ljava/util/concurrent/CompletableFuture;Lnet/minecraft/class_7877;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 baseWorld
 		ARG 1 builder
 	METHOD method_55310 (Lnet/minecraft/class_8990$class_8991;Lnet/minecraft/class_7655$class_7657;)V
 		ARG 1 entry

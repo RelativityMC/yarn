@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1197 net/minecraft/world/clock/ClockEntry
+	METHOD method_1_7648 isPaused ()Z
+	METHOD method_1_7649 getPartialTick ()F
+	METHOD method_1_7650 getRate ()F
+	METHOD method_1_7651 getTotalTicks ()J

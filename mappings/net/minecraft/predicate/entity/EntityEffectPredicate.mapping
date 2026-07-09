@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_2102 net/minecraft/predicate/entity/EntityEffectPredicate
 	FIELD comp_1811 effects Ljava/util/Map;
+	FIELD field_1_8718 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_45764 CODEC Lcom/mojang/serialization/Codec;
 	METHOD <init> (Ljava/util/Map;)V
 		ARG 1 effects
@@ -10,11 +11,15 @@ CLASS net/minecraft/class_2102 net/minecraft/predicate/entity/EntityEffectPredic
 		ARG 1 effects
 	METHOD method_9067 test (Lnet/minecraft/class_1309;)Z
 		ARG 1 livingEntity
+	METHOD test (Ljava/lang/Object;)Z
+		ARG 1 instance
 	CLASS class_2103 EffectData
 		FIELD comp_1812 amplifier Lnet/minecraft/class_2096$class_2100;
 		FIELD comp_1813 duration Lnet/minecraft/class_2096$class_2100;
 		FIELD comp_1814 ambient Ljava/util/Optional;
 		FIELD comp_1815 visible Ljava/util/Optional;
+		FIELD field_1_8719 MAP_BY_EFFECT_PACKET_CODEC Lnet/minecraft/class_9139;
+		FIELD field_1_8720 PACKET_CODEC Lnet/minecraft/class_9139;
 		FIELD field_45766 CODEC Lcom/mojang/serialization/Codec;
 		METHOD <init> (Lnet/minecraft/class_2096$class_2100;Lnet/minecraft/class_2096$class_2100;Ljava/util/Optional;Ljava/util/Optional;)V
 			ARG 1 amplifier

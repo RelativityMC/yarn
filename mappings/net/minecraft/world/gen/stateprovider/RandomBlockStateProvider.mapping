@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1299 net/minecraft/world/gen/stateprovider/RandomBlockStateProvider
+	METHOD method_1_8226 sample (Lnet/minecraft/class_5819;)Ljava/util/Optional;
+		ARG 1 random
+	METHOD method_1_8228 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

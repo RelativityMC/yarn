@@ -1,6 +1,11 @@
 CLASS net/minecraft/class_1_1229 com/mojang/blaze3d/shaders/ShaderType
+	FIELD field_1_8531 VALUES [Lnet/minecraft/class_1_1229;
+	FIELD field_1_8533 extension Ljava/lang/String;
+	FIELD field_1_8534 name Ljava/lang/String;
 	METHOD <init> (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
 		ARG 3 name
 		ARG 4 extension
-	METHOD method_1_7813 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_1229;
+	METHOD method_1_7813 fromExtension (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_1229;
 		ARG 0 id
+	METHOD method_1_7814 getName ()Ljava/lang/String;
+	METHOD method_1_7815 createResourceFinder ()Lnet/minecraft/class_7654;

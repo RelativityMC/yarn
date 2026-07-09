@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_1263 net/minecraft/network/packet/s2c/play/AbstractEntityPositionS2CPacket
+	METHOD method_11652 hasRotation ()Z
+	METHOD method_22826 isPositionChanged ()Z

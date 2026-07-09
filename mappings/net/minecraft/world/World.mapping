@@ -59,6 +59,7 @@ CLASS net/minecraft/class_1937 net/minecraft/world/World
 		ARG 4 category
 		ARG 5 volume
 		ARG 6 pitch
+	METHOD method_1_7594 getEntityMotionRate ()F
 	METHOD method_8413 updateListeners (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;I)V
 		ARG 1 pos
 		ARG 2 oldState
@@ -290,6 +291,7 @@ CLASS net/minecraft/class_1937 net/minecraft/world/World
 		ARG 9 velocityY
 		ARG 11 velocityZ
 		ARG 13 explosions
+		ARG 14 playSounds
 	METHOD method_8558 isValidHorizontally (Lnet/minecraft/class_2338;)Z
 		ARG 0 pos
 	METHOD method_16109 scheduleBlockRerenderIfNeeded (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;)V

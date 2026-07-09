@@ -10,6 +10,16 @@ CLASS net/minecraft/class_3825 net/minecraft/structure/rule/RuleTest
 		ARG 0 rules
 	METHOD method_1_7201 all ([Lnet/minecraft/class_3825;)Lnet/minecraft/class_3825;
 		ARG 0 rules
+	METHOD method_1_8189 any (Ljava/util/List;)Lnet/minecraft/class_3825;
+		ARG 0 rules
+	METHOD method_1_8190 any ([Lnet/minecraft/class_3825;)Lnet/minecraft/class_3825;
+		ARG 0 rules
+	METHOD method_1_8191 conditional (Lnet/minecraft/class_3825;Lnet/minecraft/class_3825;Lnet/minecraft/class_3825;)Lnet/minecraft/class_3825;
+		ARG 0 condition
+		ARG 1 ifTrue
+		ARG 2 ifFalse
+	METHOD method_1_8192 not (Lnet/minecraft/class_3825;)Lnet/minecraft/class_3825;
+		ARG 0 rule
 	METHOD method_16766 getType ()Lnet/minecraft/class_3827;
 	METHOD method_16768 test (Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)Z
 		ARG 1 state

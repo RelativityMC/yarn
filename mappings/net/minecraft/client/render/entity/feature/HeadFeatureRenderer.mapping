@@ -20,4 +20,17 @@ CLASS net/minecraft/class_976 net/minecraft/client/render/entity/feature/HeadFea
 		ARG 1 state
 		ARG 2 skullType
 	CLASS class_9994 HeadTransformation
+		FIELD field_1_7701 SULFUR_CUBE_RESOLVER Ljava/util/function/Function;
+		FIELD field_1_7702 DEFAULT_RESOLVER Ljava/util/function/Function;
 		FIELD field_53212 DEFAULT Lnet/minecraft/class_976$class_9994;
+		METHOD <init> (FFF)V
+			ARG 1 yOffset
+			ARG 2 skullYOffset
+			ARG 3 horizontalScale
+		METHOD <init> (FFFF)V
+			ARG 1 yOffset
+			ARG 2 skullYOffset
+			ARG 3 horizontalScale
+			ARG 4 verticalScale
+		METHOD method_1_7090 (Lnet/minecraft/class_11786$class_11787;)Lnet/minecraft/class_1921;
+			ARG 0 entry

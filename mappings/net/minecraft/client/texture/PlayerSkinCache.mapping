@@ -21,8 +21,12 @@ CLASS net/minecraft/class_11786 net/minecraft/client/texture/PlayerSkinCache
 	CLASS 1 1
 		METHOD load (Ljava/lang/Object;)Ljava/lang/Object;
 			ARG 1 profile
+		METHOD method_73497 (Lnet/minecraft/class_9296;Lcom/mojang/authlib/GameProfile;)Ljava/util/concurrent/CompletionStage;
+			ARG 2 profile
 		METHOD method_73498 (Lcom/mojang/authlib/GameProfile;Lnet/minecraft/class_9296;Lnet/minecraft/class_8685;)Lnet/minecraft/class_11786$class_11787;
 			ARG 3 skinTextures
+		METHOD method_73499 (Lcom/mojang/authlib/GameProfile;Lnet/minecraft/class_9296;Ljava/util/Optional;)Ljava/util/Optional;
+			ARG 3 skinTexturesOpt
 	CLASS 2 2
 		METHOD load (Ljava/lang/Object;)Ljava/lang/Object;
 			ARG 1 profile
@@ -35,6 +39,7 @@ CLASS net/minecraft/class_11786 net/minecraft/client/texture/PlayerSkinCache
 		METHOD <init> (Lnet/minecraft/class_11786;Lcom/mojang/authlib/GameProfile;Lnet/minecraft/class_8685;Lnet/minecraft/class_8685$class_11892;)V
 			ARG 2 profile
 			ARG 3 textures
+			ARG 4 skinOverride
 		METHOD equals (Ljava/lang/Object;)Z
 			ARG 1 o
 		METHOD method_73502 getProfile ()Lcom/mojang/authlib/GameProfile;

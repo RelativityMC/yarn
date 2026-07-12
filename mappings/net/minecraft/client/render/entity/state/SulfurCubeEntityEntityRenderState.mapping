@@ -1,2 +1,3 @@
 CLASS net/minecraft/class_1_764 net/minecraft/client/render/entity/state/SulfurCubeEntityEntityRenderState
 	FIELD field_1_3820 block Lnet/minecraft/class_1_395;
+	FIELD field_1_6220 fuse F

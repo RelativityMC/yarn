@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_634 net/minecraft/client/network/ClientPlayNetworkHandler
 	FIELD field_1_1040 clocks Lnet/minecraft/class_1_100;
 	FIELD field_1_6575 onlineMode Z
+	FIELD field_1_8196 PACKET_SPAWN_CONTEXT Lnet/minecraft/class_1_1035;
 	FIELD field_3687 random Lnet/minecraft/class_5819;
 	FIELD field_3691 commandSource Lnet/minecraft/class_637;
 	FIELD field_3692 dataQueryHandler Lnet/minecraft/class_300;

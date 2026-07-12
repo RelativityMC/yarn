@@ -5,6 +5,7 @@ CLASS net/minecraft/class_1551 net/minecraft/entity/mob/DrownedEntity
 	METHOD method_1_4443 isExplicitlyTargetingUnderwater ()Z
 	METHOD method_1_7448 setShotDivergence (F)V
 		ARG 1 shotDivergence
+	METHOD method_1_7930 canTargetWithTrident ()Z
 	METHOD method_7012 canDrownedAttackTarget (Lnet/minecraft/class_1309;)Z
 		ARG 1 target
 	METHOD method_7013 setTargetingUnderwater (Z)V

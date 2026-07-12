@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_1_1193
+CLASS net/minecraft/class_1_1193 net/minecraft/entity/movement/EntityStance
 	FIELD field_1_8284 PACKET_CODEC Lnet/minecraft/class_9139;
 	METHOD comp_1_1266 pitch ()F
 	METHOD comp_1_1267 yaw ()F

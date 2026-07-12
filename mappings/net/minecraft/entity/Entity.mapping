@@ -273,8 +273,10 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 3 pitch
 	METHOD method_1_7599 onLerp (Lnet/minecraft/class_10584;)V
 		ARG 1 interpolator
-	METHOD method_1_7600 (Lnet/minecraft/class_1313;Lnet/minecraft/class_243;)V
+	METHOD method_1_7600 moveRaw (Lnet/minecraft/class_1313;Lnet/minecraft/class_243;)V
 		ARG 1 movementType
+		ARG 2 movement
+	METHOD method_1_7601 getStance ()Lnet/minecraft/class_1_1193;
 	METHOD method_5622 onBlockCollision (Lnet/minecraft/class_2680;)V
 		COMMENT Called when this entity's collision box intersects {@code state}.
 		COMMENT

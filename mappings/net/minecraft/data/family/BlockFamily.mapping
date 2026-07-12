@@ -43,6 +43,8 @@ CLASS net/minecraft/class_5794 net/minecraft/data/family/BlockFamily
 		METHOD method_1_6273 noGenerateCrackingRecipes ()Lnet/minecraft/class_5794$class_5795;
 		METHOD method_1_6274 pillar (Lnet/minecraft/class_2248;)Lnet/minecraft/class_5794$class_5795;
 			ARG 1 block
+		METHOD method_1_6430 carpet (Lnet/minecraft/class_2248;)Lnet/minecraft/class_5794$class_5795;
+			ARG 1 block
 		METHOD method_33481 build ()Lnet/minecraft/class_5794;
 		METHOD method_33482 button (Lnet/minecraft/class_2248;)Lnet/minecraft/class_5794$class_5795;
 			ARG 1 block

@@ -6,5 +6,20 @@ CLASS net/minecraft/class_6800 net/minecraft/world/gen/feature/OceanFeatures
 	FIELD field_35766 SEA_PICKLE Lnet/minecraft/class_5321;
 	FIELD field_35768 KELP Lnet/minecraft/class_5321;
 	FIELD field_35769 WARM_OCEAN_VEGETATION Lnet/minecraft/class_5321;
+	METHOD method_1_8124 coralInner (Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;Lnet/minecraft/class_2248;)Lnet/minecraft/class_3031;
+		ARG 0 featureRegistry
+		ARG 1 blockRegistry
+		ARG 2 block
+	METHOD method_1_8125 (Lnet/minecraft/class_7871;Lnet/minecraft/class_1_784;)Lnet/minecraft/class_2248;
+		ARG 1 key
+	METHOD method_1_8126 (Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;Lnet/minecraft/class_2248;)Lnet/minecraft/class_3031;
+		ARG 2 block
+	METHOD method_1_8127 (Lnet/minecraft/class_6658;Lnet/minecraft/class_3031;)Ljava/util/stream/Stream;
+		ARG 1 feature
+	METHOD method_1_8128 seagrass (I)Lnet/minecraft/class_3031;
+		ARG 0 tallPercentage
+	METHOD method_1_8129 wallCoral (Lnet/minecraft/class_7871;Lnet/minecraft/class_2350;)Lnet/minecraft/class_6880;
+		ARG 0 blockRegistry
+		ARG 1 direction
 	METHOD method_46849 bootstrap (Lnet/minecraft/class_7891;)V
 		ARG 0 featureRegisterable

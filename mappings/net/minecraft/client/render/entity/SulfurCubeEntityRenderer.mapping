@@ -2,3 +2,8 @@ CLASS net/minecraft/class_1_754 net/minecraft/client/render/entity/SulfurCubeEnt
 	FIELD field_1_3800 ID Lnet/minecraft/class_1_436;
 	FIELD field_1_3801 OUTER_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_1_3802 blockModelManager Lnet/minecraft/class_1_394;
+	FIELD field_1_7085 OUTER_TEXTURE_SMALL Lnet/minecraft/class_2960;
+	FIELD field_1_7086 regularModel Lnet/minecraft/class_1_756;
+	FIELD field_1_7087 smallModel Lnet/minecraft/class_1_1032;
+	FIELD field_1_7614 HORIZONTAL_SCALE F
+	FIELD field_1_7615 HEAD_TRANSFORMATION Lnet/minecraft/class_976$class_9994;

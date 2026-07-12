@@ -13,6 +13,8 @@ CLASS net/minecraft/class_6796 net/minecraft/world/gen/feature/PlacedFeature
 	METHOD method_39644 generateUnregistered (Lnet/minecraft/class_5281;Lnet/minecraft/class_2794;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338;)Z
 		ARG 1 world
 		ARG 2 generator
+		ARG 3 random
+		ARG 4 pos
 	METHOD method_39645 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
 	METHOD method_39647 (Lnet/minecraft/class_6796;)Ljava/util/List;

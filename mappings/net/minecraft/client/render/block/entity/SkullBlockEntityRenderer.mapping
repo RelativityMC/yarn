@@ -9,6 +9,8 @@ CLASS net/minecraft/class_836 net/minecraft/client/render/block/entity/SkullBloc
 		ARG 0 rotation
 	METHOD method_1_2846 getWallTransformation (Lnet/minecraft/class_2350;)Lnet/minecraft/class_4590;
 		ARG 0 direction
+	METHOD method_1_7109 getSulfurCubeRenderLayer (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
+		ARG 0 texture
 	METHOD method_3578 getCutoutRenderLayer (Lnet/minecraft/class_2484$class_2485;Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 type
 		ARG 1 texture

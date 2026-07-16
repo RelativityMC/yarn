@@ -1,7 +1,5 @@
 CLASS net/minecraft/class_6898 net/minecraft/registry/entry/RegistryEntryListCodec
 	FIELD field_36480 registry Lnet/minecraft/class_5321;
-	FIELD field_36481 entryCodec Lcom/mojang/serialization/Codec;
-	FIELD field_36482 directEntryListCodec Lcom/mojang/serialization/Codec;
 	FIELD field_36483 entryListStorageCodec Lcom/mojang/serialization/Codec;
 	METHOD <init> (Lnet/minecraft/class_5321;Lcom/mojang/serialization/Codec;Z)V
 		ARG 1 registry
@@ -16,30 +14,17 @@ CLASS net/minecraft/class_6898 net/minecraft/registry/entry/RegistryEntryListCod
 		ARG 1 entryList
 		ARG 2 ops
 		ARG 3 prefix
-	METHOD method_40381 (Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/serialization/DataResult;
-		ARG 0 pair
 	METHOD method_40382 createDirectEntryListCodec (Lcom/mojang/serialization/Codec;Z)Lcom/mojang/serialization/Codec;
 		ARG 0 entryCodec
 		ARG 1 alwaysSerializeAsList
 			COMMENT whether to always serialize the list as a list
 			COMMENT instead of serializing as one entry if the length is {@code 0}
-	METHOD method_40383 decodeDirect (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
-		ARG 1 ops
-		ARG 2 input
-	METHOD method_40385 (Lnet/minecraft/class_7871;Lnet/minecraft/class_6862;)Lcom/mojang/serialization/DataResult;
-		ARG 1 tag
-	METHOD method_40386 (Lnet/minecraft/class_7871;Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/serialization/DataResult;
-		ARG 1 pair
 	METHOD method_40388 create (Lnet/minecraft/class_5321;Lcom/mojang/serialization/Codec;Z)Lcom/mojang/serialization/Codec;
 		ARG 0 registryRef
 		ARG 1 entryCodec
 		ARG 2 alwaysSerializeAsList
 			COMMENT whether to always serialize the list as a list
 			COMMENT instead of serializing as one entry if the length is {@code 0}
-	METHOD method_40389 encodeDirect (Lnet/minecraft/class_6885;Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
-		ARG 1 entryList
-		ARG 2 ops
-		ARG 3 prefix
 	METHOD method_58028 (Lcom/mojang/datafixers/util/Pair;Lnet/minecraft/class_6885;)Lcom/mojang/datafixers/util/Pair;
 		ARG 1 entries
 	METHOD method_58029 get (Lnet/minecraft/class_7871;Lnet/minecraft/class_6862;)Lcom/mojang/serialization/DataResult;

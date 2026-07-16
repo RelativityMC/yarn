@@ -46,8 +46,6 @@ CLASS net/minecraft/class_10302 net/minecraft/recipe/display/SlotDisplay
 	CLASS class_1_167 WithAnyPotionSlotDisplay
 		FIELD field_1_1300 PACKET_CODEC Lnet/minecraft/class_9139;
 		FIELD field_1_1301 SERIALIZER Lnet/minecraft/class_10302$class_10312;
-		METHOD method_1_1538 (Lnet/minecraft/class_7225$class_7874;)Ljava/util/Optional;
-			ARG 0 registries
 		METHOD method_1_1539 (Ljava/util/List;Lnet/minecraft/class_10358$class_10360;Lnet/minecraft/class_6880$class_6883;)Ljava/util/stream/Stream;
 			ARG 2 potionEntries
 		METHOD method_1_1540 (Lnet/minecraft/class_1844;Lnet/minecraft/class_10358$class_10360;Lnet/minecraft/class_1799;)Ljava/lang/Object;
@@ -105,10 +103,6 @@ CLASS net/minecraft/class_10302 net/minecraft/recipe/display/SlotDisplay
 		FIELD field_54698 SERIALIZER Lnet/minecraft/class_10302$class_10312;
 		METHOD method_64754 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance
-		METHOD method_64755 (Lnet/minecraft/class_10358$class_10360;Lnet/minecraft/class_6885$class_6888;)Ljava/util/stream/Stream;
-			ARG 1 tag
-		METHOD method_65005 (Ljava/util/stream/Stream;)Ljava/util/stream/Stream;
-			ARG 0 values
 	CLASS class_10312 Serializer
 	CLASS class_10361 NoopDisplayedItemFactory
 		FIELD field_54901 INSTANCE Lnet/minecraft/class_10302$class_10361;

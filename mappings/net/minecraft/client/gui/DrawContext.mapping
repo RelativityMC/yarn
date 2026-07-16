@@ -24,8 +24,7 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 3 state
 		ARG 4 mouseX
 		ARG 5 mouseY
-	METHOD method_1_399 drawTexturedQuad (Lnet/minecraft/class_1_1260;Lnet/minecraft/class_12137;IIIIFFFF)V
-		ARG 1 texture
+	METHOD method_1_399 drawTexturedQuad (Lnet/minecraft/class_1_1330;Lnet/minecraft/class_12137;IIIIFFFF)V
 		ARG 2 sampler
 		ARG 3 x1
 		ARG 4 y1
@@ -518,9 +517,8 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 8 y
 		ARG 9 width
 		ARG 10 height
-	METHOD method_70847 drawTexturedQuad (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_1_1260;Lnet/minecraft/class_12137;IIIIFFFFI)V
+	METHOD method_70847 drawTexturedQuad (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_1_1330;Lnet/minecraft/class_12137;IIIIFFFFI)V
 		ARG 1 pipeline
-		ARG 2 texture
 		ARG 3 sampler
 		ARG 4 x1
 		ARG 5 y1
@@ -582,7 +580,6 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 	METHOD method_70857 drawMap (Lnet/minecraft/class_10090;)V
 		ARG 1 mapState
 	METHOD method_70858 addProfilerChart (Ljava/util/List;IIII)V
-		ARG 1 chartData
 		ARG 2 x1
 		ARG 3 y1
 		ARG 4 x2
@@ -640,9 +637,8 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 1 window
 	METHOD method_74037 setCursor (Lnet/minecraft/class_11875;)V
 		ARG 1 cursor
-	METHOD method_74707 drawTiledTexturedQuad (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_1_1260;Lnet/minecraft/class_12137;IIIIIIFFFFI)V
+	METHOD method_74707 drawTiledTexturedQuad (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_1_1330;Lnet/minecraft/class_12137;IIIIIIFFFFI)V
 		ARG 1 pipeline
-		ARG 2 texture
 		ARG 3 sampler
 		ARG 4 tileWidth
 		ARG 5 tileHeight

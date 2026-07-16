@@ -15,5 +15,5 @@ CLASS net/minecraft/class_1_1264 net/minecraft/recipe/BrewingIngredient
 	METHOD method_1_8014 of (Lnet/minecraft/class_1792;Lnet/minecraft/class_9359;)Lnet/minecraft/class_1_1264;
 		ARG 0 item
 		ARG 1 contents
-	METHOD test matches (Ljava/lang/Object;)Z
+	METHOD test (Ljava/lang/Object;)Z
 		ARG 1 stack

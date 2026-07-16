@@ -34,7 +34,7 @@ CLASS net/minecraft/class_11786 net/minecraft/client/texture/PlayerSkinCache
 		FIELD field_62221 profile Lcom/mojang/authlib/GameProfile;
 		FIELD field_62222 textures Lnet/minecraft/class_8685;
 		FIELD field_62223 renderLayer Lnet/minecraft/class_1921;
-		FIELD field_62482 textureView Lnet/minecraft/class_1_1260;
+		FIELD field_62482 textureView Lnet/minecraft/class_1_1330;
 		FIELD field_62483 textRenderLayers Lnet/minecraft/class_8538;
 		METHOD <init> (Lnet/minecraft/class_11786;Lcom/mojang/authlib/GameProfile;Lnet/minecraft/class_8685;Lnet/minecraft/class_8685$class_11892;)V
 			ARG 2 profile
@@ -45,5 +45,5 @@ CLASS net/minecraft/class_11786 net/minecraft/client/texture/PlayerSkinCache
 		METHOD method_73502 getProfile ()Lcom/mojang/authlib/GameProfile;
 		METHOD method_73503 getTextures ()Lnet/minecraft/class_8685;
 		METHOD method_73504 getRenderLayer ()Lnet/minecraft/class_1921;
-		METHOD method_74051 getTextureView ()Lnet/minecraft/class_1_1260;
+		METHOD method_74051 getTextureView ()Lnet/minecraft/class_1_1330;
 		METHOD method_74052 getTextRenderLayers ()Lnet/minecraft/class_8538;

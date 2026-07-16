@@ -1,9 +1,9 @@
 CLASS net/minecraft/class_11287 com/mojang/blaze3d/shaders/UniformValue
 	FIELD field_60130 CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_71130 getType ()Lnet/minecraft/class_11287$class_11292;
-	METHOD method_71131 write (Lcom/mojang/blaze3d/buffers/Std140Builder;)V
+	METHOD method_71131 write (Lnet/minecraft/class_1_1308;)V
 		ARG 1 builder
-	METHOD method_71132 addSize (Lcom/mojang/blaze3d/buffers/Std140SizeCalculator;)V
+	METHOD method_71132 addSize (Lnet/minecraft/class_1_1323;)V
 		ARG 1 calculator
 	METHOD method_71133 (Lnet/minecraft/class_11287$class_11292;)Lcom/mojang/serialization/MapCodec;
 		ARG 0 val

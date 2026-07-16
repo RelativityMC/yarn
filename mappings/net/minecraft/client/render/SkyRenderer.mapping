@@ -10,7 +10,7 @@ CLASS net/minecraft/class_9975 net/minecraft/client/render/SkyRenderer
 	FIELD field_62958 moonPhaseVertexBuffer Lnet/minecraft/class_1_1211;
 	FIELD field_62959 sunRiseVertexBuffer Lnet/minecraft/class_1_1211;
 	FIELD field_62960 endFlashVertexBuffer Lnet/minecraft/class_1_1211;
-	FIELD field_62961 indexBuffer2 Lcom/mojang/blaze3d/systems/RenderSystem$class_5590;
+	FIELD field_62961 indexBuffer2 Lnet/minecraft/class_1_1307$class_5590;
 	FIELD field_63578 SUN_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_63579 END_FLASH_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_63580 celestialAtlasTexture Lnet/minecraft/class_1059;

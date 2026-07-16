@@ -2,33 +2,31 @@ CLASS net/minecraft/class_1_1209 com/mojang/blaze3d/systems/GpuDevice
 	COMMENT Wraps a {@link com.mojang.blaze3d.systems.GpuBackend} to provide extra
 	COMMENT run-time checks.
 	FIELD field_1_8343 backend Lnet/minecraft/class_1_147;
-	FIELD field_1_8344 commandEncoder Lnet/minecraft/class_1_1256;
+	FIELD field_1_8344 commandEncoder Lnet/minecraft/class_1_1329;
 	FIELD field_1_8345 profiler Lnet/minecraft/class_1_708;
 	METHOD <init> (Lnet/minecraft/class_1_147;)V
 		ARG 1 backend
-	METHOD method_1_7705 close ()V
-	METHOD method_1_7706 getCompiledPipeline (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_12289;)Lnet/minecraft/class_1_1285;
+	METHOD method_1_7706 (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_12289;)Lnet/minecraft/class_1_1285;
 		ARG 1 pipeline
 		ARG 2 sourceGetter
-	METHOD method_1_7707 createBuffer (Ljava/util/function/Supplier;IJ)Lnet/minecraft/class_1_1211;
+	METHOD method_1_7707 (Ljava/util/function/Supplier;IJ)Lnet/minecraft/class_1_1211;
 		ARG 1 labelGetter
 		ARG 2 usage
 		ARG 3 size
-	METHOD method_1_7708 createBuffer (Ljava/util/function/Supplier;ILjava/nio/ByteBuffer;)Lnet/minecraft/class_1_1211;
+	METHOD method_1_7708 (Ljava/util/function/Supplier;ILjava/nio/ByteBuffer;)Lnet/minecraft/class_1_1211;
 		ARG 1 labelGetter
 		ARG 2 usage
 		ARG 3 data
-	METHOD method_1_7709 getCommandEncoder ()Lnet/minecraft/class_1_1256;
-	METHOD method_1_7710 createSampler (Lnet/minecraft/class_1_1239;Lnet/minecraft/class_1_1239;Lnet/minecraft/class_1_1230;Lnet/minecraft/class_1_1230;ILjava/util/OptionalDouble;)Lnet/minecraft/class_12137;
+	METHOD method_1_7710 (Lnet/minecraft/class_1_1239;Lnet/minecraft/class_1_1239;Lnet/minecraft/class_1_1230;Lnet/minecraft/class_1_1230;ILjava/util/OptionalDouble;)Lnet/minecraft/class_12137;
 		ARG 1 addressModeU
 		ARG 2 addressModeV
 		ARG 3 filterModeU
 		ARG 4 filterModeV
 		ARG 5 maxAnisotropy
 		ARG 6 maxLevelOfDetail
-	METHOD method_1_7711 createSurface (J)Lnet/minecraft/class_1_665;
+	METHOD method_1_7711 (J)Lnet/minecraft/class_1_1314;
 		ARG 1 window
-	METHOD method_1_7712 createTexture (Ljava/lang/String;ILnet/minecraft/class_1_658;IIII)Lnet/minecraft/class_1_1231;
+	METHOD method_1_7712 (Ljava/lang/String;ILnet/minecraft/class_1_658;IIII)Lnet/minecraft/class_1_1318;
 		ARG 1 label
 		ARG 2 usage
 		ARG 3 format
@@ -36,7 +34,7 @@ CLASS net/minecraft/class_1_1209 com/mojang/blaze3d/systems/GpuDevice
 		ARG 5 height
 		ARG 6 depthOrLayers
 		ARG 7 mipLevels
-	METHOD method_1_7713 createTexture (Ljava/util/function/Supplier;ILnet/minecraft/class_1_658;IIII)Lnet/minecraft/class_1_1231;
+	METHOD method_1_7713 (Ljava/util/function/Supplier;ILnet/minecraft/class_1_658;IIII)Lnet/minecraft/class_1_1318;
 		ARG 1 labelGetter
 		ARG 2 usage
 		ARG 3 format
@@ -44,25 +42,19 @@ CLASS net/minecraft/class_1_1209 com/mojang/blaze3d/systems/GpuDevice
 		ARG 5 height
 		ARG 6 depthOrLayers
 		ARG 7 mipLevels
-	METHOD method_1_7714 createTextureView (Lnet/minecraft/class_1_1231;)Lnet/minecraft/class_1_1260;
-		ARG 1 texture
-	METHOD method_1_7715 createTextureView (Lnet/minecraft/class_1_1231;II)Lnet/minecraft/class_1_1260;
-		ARG 1 texture
+	METHOD method_1_7715 (Lnet/minecraft/class_1_1318;II)Lnet/minecraft/class_1_1330;
 		ARG 2 baseMipLevel
 		ARG 3 mipLevels
-	METHOD method_1_7716 createTimestampQueryPool (I)Lnet/minecraft/class_1_685;
+	METHOD method_1_7716 (I)Lnet/minecraft/class_1_685;
 		ARG 1 size
-	METHOD method_1_7717 getDeviceInfo ()Lnet/minecraft/class_1_664;
-	METHOD method_1_7718 getLastDebugMessages ()Ljava/util/List;
 	METHOD method_1_7719 getTimestampNow ()J
-	METHOD method_1_7720 isDebuggingEnabled ()Z
 	METHOD method_1_7721 assertValidTextureCreationParams (IIIII)V
 		ARG 1 usage
 		ARG 2 width
 		ARG 3 height
 		ARG 4 depthOrLayers
 		ARG 5 mipLevels
-	METHOD method_1_7722 assertTextureUsableWithMipLevels (Lnet/minecraft/class_1_1231;II)V
+	METHOD method_1_7722 assertTextureUsableWithMipLevels (Lnet/minecraft/class_1_1318;II)V
 		ARG 1 texture
 		ARG 2 baseMipLevel
 		ARG 3 mipLevels

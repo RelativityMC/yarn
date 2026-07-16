@@ -15,4 +15,3 @@ CLASS net/minecraft/class_12134 net/minecraft/client/gl/GlSampler
 		ARG 5 maxAnisotropy
 		ARG 6 maxLevelOfDetail
 	METHOD method_75285 getSamplerId ()I
-	METHOD method_75290 isClosed ()Z

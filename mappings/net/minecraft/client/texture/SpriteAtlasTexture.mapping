@@ -12,7 +12,7 @@ CLASS net/minecraft/class_1059 net/minecraft/client/texture/SpriteAtlasTexture
 	FIELD field_64243 animators Ljava/util/List;
 	FIELD field_64244 mipLevel I
 	FIELD field_64245 numMipLevels I
-	FIELD field_64246 mipTextures [Lnet/minecraft/class_1_1260;
+	FIELD field_64246 mipTextures [Lnet/minecraft/class_1_1330;
 	FIELD field_64247 uniformBuffer Lnet/minecraft/class_1_1211;
 	FIELD field_64467 ITEMS_ATLAS_TEXTURE Lnet/minecraft/class_2960;
 	METHOD <init> (Lnet/minecraft/class_2960;)V

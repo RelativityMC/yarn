@@ -1,15 +1,13 @@
 CLASS net/minecraft/class_10447 net/minecraft/client/render/item/model/MissingItemModel
 	FIELD field_1_2295 modelTransform Lorg/joml/Matrix4fc;
-	FIELD field_56969 quads Ljava/util/List;
 	FIELD field_56970 vector Ljava/util/function/Supplier;
 	FIELD field_56971 settings Lnet/minecraft/class_10809;
-	METHOD <init> (Ljava/util/List;Ljava/util/function/Supplier;Lnet/minecraft/class_10809;Lorg/joml/Matrix4fc;)V
-		ARG 1 quads
-		ARG 2 vector
-		ARG 3 settings
-		ARG 4 modelTransform
 	METHOD <init> (Ljava/util/List;Lnet/minecraft/class_10809;)V
 		ARG 1 quads
 		ARG 2 settings
+	METHOD <init> (Lnet/minecraft/class_1_1348;Ljava/util/function/Supplier;Lnet/minecraft/class_10809;Lorg/joml/Matrix4fc;)V
+		ARG 2 vector
+		ARG 3 settings
+		ARG 4 modelTransform
 	METHOD method_1_2722 withModelTransform (Lorg/joml/Matrix4fc;)Lnet/minecraft/class_10447;
 		ARG 1 modelTransform

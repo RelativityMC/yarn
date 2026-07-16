@@ -1,9 +1,8 @@
 CLASS net/minecraft/class_1_713 com/mojang/blaze3d/systems/GpuSurfaceBackend
 	METHOD method_1_4238 acquire ()V
-	METHOD method_1_4239 blit (Lnet/minecraft/class_1_154;Lnet/minecraft/class_1_1260;)V
+	METHOD method_1_4239 blit (Lnet/minecraft/class_1_154;Lnet/minecraft/class_1_1330;)V
 		ARG 1 encoder
-		ARG 2 textureView
-	METHOD method_1_4240 configure (Lnet/minecraft/class_1_665$class_1_666;)V
+	METHOD method_1_4240 configure (Lnet/minecraft/class_1_1314$class_1_666;)V
 		ARG 1 settings
 	METHOD method_1_4241 needsReconfigure ()Z
 	METHOD method_1_4242 present ()V

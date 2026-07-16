@@ -2,19 +2,16 @@ CLASS net/minecraft/class_1_686 net/minecraft/client/render/StagingBuffer
 	FIELD field_1_3522 nextOffset I
 	FIELD field_1_3523 numActiveSlices I
 	METHOD method_1_2180 reset ()V
-	METHOD method_1_2181 copyTo (Lnet/minecraft/class_1_1256;Lnet/minecraft/class_1_1211;JJJ)V
-		ARG 1 commandEncoder
+	METHOD method_1_2181 copyTo (Lnet/minecraft/class_1_1329;Lnet/minecraft/class_1_1211;JJJ)V
 		ARG 2 buffer
 		ARG 3 toStart
 		ARG 5 fromStart
 		ARG 7 size
 	METHOD method_1_2184 getData ()Ljava/nio/ByteBuffer;
-	METHOD method_1_4144 create (Ljava/lang/String;Lnet/minecraft/class_1_1209;I)Lnet/minecraft/class_1_686;
+	METHOD method_1_4144 create (Ljava/lang/String;Lnet/minecraft/class_1_1313;I)Lnet/minecraft/class_1_686;
 		ARG 0 name
-		ARG 1 devices
 		ARG 2 bufferSize
-	METHOD method_1_4145 uploader (Lnet/minecraft/class_1_1256;)Lnet/minecraft/class_1_686$class_1_688;
-		ARG 1 commandEncoder
+	METHOD method_1_4145 uploader (Lnet/minecraft/class_1_1329;)Lnet/minecraft/class_1_686$class_1_688;
 	METHOD method_1_4146 copyFrom (Ljava/nio/ByteBuffer;)Lnet/minecraft/class_1_686$class_1_687;
 		ARG 1 byteBuffer
 	METHOD method_1_4147 resetIfEmpty ()V
@@ -41,9 +38,7 @@ CLASS net/minecraft/class_1_686 net/minecraft/client/render/StagingBuffer
 			ARG 1 parent
 		METHOD method_1_4149 getSize ()J
 	CLASS class_1_688 Uploader
-		FIELD field_1_3528 commandEncoder Lnet/minecraft/class_1_1256;
-		METHOD <init> (Lnet/minecraft/class_1_686;Lnet/minecraft/class_1_1256;)V
-			ARG 2 commandEncoder
+		FIELD field_1_3528 commandEncoder Lnet/minecraft/class_1_1329;
 		METHOD method_1_4150 assertStagingBufferMatches (Lnet/minecraft/class_1_686;)V
 			ARG 1 buffer
 		METHOD method_1_4151 copyFromSlice (Lnet/minecraft/class_1_686$class_1_687;Lnet/minecraft/class_1_1211;J)V

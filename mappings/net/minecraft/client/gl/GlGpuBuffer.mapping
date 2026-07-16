@@ -8,7 +8,6 @@ CLASS net/minecraft/class_1_1010 net/minecraft/client/gl/GlGpuBuffer
 		ARG 2 size
 		ARG 4 glId
 		ARG 5 supportsPersistentMapping
-	METHOD method_1_6142 assertUsable ()V
 	METHOD method_1_6143 getGlId ()I
 	CLASS class_10859 Impl
 		FIELD field_1_6262 access I

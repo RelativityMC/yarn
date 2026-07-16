@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_1370
+	METHOD method_433 generateLoot (Ljava/util/function/Consumer;Lnet/minecraft/class_47;)V

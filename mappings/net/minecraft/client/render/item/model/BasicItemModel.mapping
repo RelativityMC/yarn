@@ -1,12 +1,10 @@
 CLASS net/minecraft/class_10430 net/minecraft/client/render/item/model/BasicItemModel
 	FIELD field_1_2373 modelTransform Lorg/joml/Matrix4fc;
 	FIELD field_55323 tints Ljava/util/List;
-	FIELD field_56959 quads Lnet/minecraft/class_10817;
 	FIELD field_56960 vertices Ljava/util/function/Supplier;
 	FIELD field_56961 settings Lnet/minecraft/class_10809;
 	METHOD <init> (Ljava/util/List;Lnet/minecraft/class_10817;Lnet/minecraft/class_10809;Lorg/joml/Matrix4fc;)V
 		ARG 1 tints
-		ARG 3 settings
 		ARG 4 modelTransform
 	METHOD method_1_2319 validateQuads (Ljava/util/List;)V
 		ARG 0 quads

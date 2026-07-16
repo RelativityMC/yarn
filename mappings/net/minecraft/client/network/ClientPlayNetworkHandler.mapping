@@ -33,7 +33,6 @@ CLASS net/minecraft/class_634 net/minecraft/client/network/ClientPlayNetworkHand
 	FIELD field_47878 scoreboard Lnet/minecraft/class_269;
 	FIELD field_48403 secureChatEnforced Z
 	FIELD field_51825 searchManager Lnet/minecraft/class_1124;
-	FIELD field_53030 fuelRegistry Lnet/minecraft/class_9895;
 	FIELD field_53031 profileKeyPairFuture Ljava/util/concurrent/CompletableFuture;
 	FIELD field_53032 syncedOptions Lnet/minecraft/class_8791;
 	FIELD field_54850 recipeManager Lnet/minecraft/class_10333;
@@ -160,7 +159,6 @@ CLASS net/minecraft/class_634 net/minecraft/client/network/ClientPlayNetworkHand
 		ARG 3 to
 	METHOD method_60346 refreshSearchManager ()V
 	METHOD method_60347 getSearchManager ()Lnet/minecraft/class_1124;
-	METHOD method_62147 getFuelRegistry ()Lnet/minecraft/class_9895;
 	METHOD method_62148 startTagReload (Lnet/minecraft/class_5321;Lnet/minecraft/class_6864$class_5748;)Lnet/minecraft/class_2378$class_10106;
 		ARG 1 registryRef
 		ARG 2 serialized

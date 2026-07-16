@@ -9,8 +9,6 @@ CLASS net/minecraft/class_1_708 com/mojang/blaze3d/profiling/GpuProfiler
 	METHOD method_1_4223 close ()V
 	METHOD method_1_4224 submitQueryTimestamps ()V
 	METHOD method_1_4225 nextTimestampIndex ()I
-	METHOD method_1_4226 endZone (Lnet/minecraft/class_1_1256;)V
-		ARG 1 encoder
-	METHOD method_1_4227 beginZone (Lnet/minecraft/class_1_1256;Ljava/lang/String;)V
-		ARG 1 encoder
+	METHOD method_1_4226 endZone (Lnet/minecraft/class_1_1329;)V
+	METHOD method_1_4227 beginZone (Lnet/minecraft/class_1_1329;Ljava/lang/String;)V
 		ARG 2 name

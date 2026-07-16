@@ -14,11 +14,11 @@ CLASS net/minecraft/class_1_715 net/minecraft/client/vulkan/VulkanCommandEncoder
 		ARG 1 device
 	METHOD method_1_4258 wait (JJ)Z
 		ARG 1 waitValue
-	METHOD method_1_4259 clearTextureColor (Lorg/lwjgl/system/MemoryStack;Lnet/minecraft/class_1_1231;Lorg/joml/Vector4fc;)V
+	METHOD method_1_4259 clearTextureColor (Lorg/lwjgl/system/MemoryStack;Lnet/minecraft/class_1_1318;Lorg/joml/Vector4fc;)V
 		ARG 1 memoryStack
 		ARG 2 texture
 		ARG 3 clearColor
-	METHOD method_1_4260 clearTextureDepth (Lorg/lwjgl/system/MemoryStack;Lnet/minecraft/class_1_1231;D)V
+	METHOD method_1_4260 clearTextureDepth (Lorg/lwjgl/system/MemoryStack;Lnet/minecraft/class_1_1318;D)V
 		ARG 1 memoryStack
 		ARG 2 texture
 		ARG 3 depth

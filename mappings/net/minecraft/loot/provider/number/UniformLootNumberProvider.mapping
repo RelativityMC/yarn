@@ -1,9 +1,6 @@
 CLASS net/minecraft/class_5662 net/minecraft/loot/provider/number/UniformLootNumberProvider
 	FIELD field_45891 CODEC Lcom/mojang/serialization/MapCodec;
-	METHOD <init> (Lnet/minecraft/class_5658;Lnet/minecraft/class_5658;)V
-		ARG 1 min
-		ARG 2 max
-	METHOD method_32462 create (FF)Lnet/minecraft/class_5662;
+	METHOD method_32462 create (FF)Lnet/minecraft/class_6880;
 		ARG 0 min
 		ARG 1 max
 	METHOD method_53444 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

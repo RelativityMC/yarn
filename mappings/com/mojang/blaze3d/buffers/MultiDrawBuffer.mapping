@@ -28,8 +28,7 @@ CLASS net/minecraft/class_1_807 com/mojang/blaze3d/buffers/MultiDrawBuffer
 	METHOD method_1_4951 appendDraw (Lnet/minecraft/class_1_807$class_1_808;)Lnet/minecraft/class_4588;
 		ARG 1 draw
 	METHOD method_1_4955 upload ()V
-	METHOD method_1_4956 upload (Lnet/minecraft/class_1_1209;Ljava/util/List;Lnet/minecraft/class_1_1211;Lnet/minecraft/class_1_1211;II)V
-		ARG 1 device
+	METHOD method_1_4956 upload (Lnet/minecraft/class_1_1313;Ljava/util/List;Lnet/minecraft/class_1_1211;Lnet/minecraft/class_1_1211;II)V
 		ARG 2 draws
 		ARG 3 vertexBuffer
 		ARG 4 indexBuffer
@@ -69,11 +68,9 @@ CLASS net/minecraft/class_1_807 com/mojang/blaze3d/buffers/MultiDrawBuffer
 		METHOD <init> (Ljava/util/function/Supplier;I)V
 			ARG 1 labelGetter
 			ARG 2 usage
-		METHOD method_1_4961 allocate (Lnet/minecraft/class_1_1209;I)Lnet/minecraft/class_1_1211;
-			ARG 1 device
+		METHOD method_1_4961 allocate (Lnet/minecraft/class_1_1313;I)Lnet/minecraft/class_1_1211;
 			ARG 2 size
-		METHOD method_1_4962 finish (Lnet/minecraft/class_1_1209;)V
-			ARG 1 device
+		METHOD method_1_4962 finish (Lnet/minecraft/class_1_1313;)V
 		METHOD method_1_4963 (Lnet/minecraft/class_1_807$class_1_810$class_1_811;)Z
 			ARG 1 waitingBuffer
 		METHOD method_1_4964 getSuitableBuffer (II)Lnet/minecraft/class_1_1211;

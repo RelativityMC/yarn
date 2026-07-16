@@ -23,7 +23,7 @@ CLASS net/minecraft/class_1058 net/minecraft/client/texture/Sprite
 	METHOD method_4577 getMaxU ()F
 	METHOD method_4580 (F)F
 		ARG 1 frame
-	METHOD method_4584 upload (Lnet/minecraft/class_1_1231;I)V
+	METHOD method_4584 upload (Lnet/minecraft/class_1_1318;I)V
 		ARG 1 texture
 		ARG 2 mipmap
 	METHOD method_4593 getMinV ()F

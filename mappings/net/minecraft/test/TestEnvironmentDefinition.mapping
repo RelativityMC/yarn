@@ -29,13 +29,6 @@ CLASS net/minecraft/class_10665 net/minecraft/test/TestEnvironmentDefinition
 	CLASS class_1_868 Difficulty
 		METHOD method_1_5286 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance
-	CLASS class_1_1120 Dimension
-		METHOD method_1_7080 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 0 instance
-		CLASS class_1_1121 Type
-			FIELD field_1_7694 name Ljava/lang/String;
-			METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
-				ARG 3 name
 	CLASS class_10666 AllOf
 		FIELD field_56202 CODEC Lcom/mojang/serialization/MapCodec;
 		METHOD <init> ([Lnet/minecraft/class_10665;)V

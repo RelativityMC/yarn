@@ -69,8 +69,6 @@ CLASS net/minecraft/class_2430 net/minecraft/data/loottable/vanilla/VanillaBlock
 		ARG 1 block
 	METHOD method_30157 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
-	METHOD method_32226 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
 	METHOD method_33707 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_33708 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
@@ -99,8 +97,6 @@ CLASS net/minecraft/class_2430 net/minecraft/data/loottable/vanilla/VanillaBlock
 		ARG 1 block
 	METHOD method_34596 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
-	METHOD method_34599 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
 	METHOD method_34600 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_34601 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
@@ -112,13 +108,13 @@ CLASS net/minecraft/class_2430 net/minecraft/data/loottable/vanilla/VanillaBlock
 	METHOD method_43810 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_43812 (Lnet/minecraft/class_2248;Ljava/lang/Integer;)Lnet/minecraft/class_79$class_80;
-		ARG 1 layers
+		ARG 2 layers
 	METHOD method_43813 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_43814 (Lnet/minecraft/class_2248;Ljava/lang/Integer;)Lnet/minecraft/class_79$class_80;
-		ARG 1 layers
+		ARG 2 layers
 	METHOD method_43815 (Lnet/minecraft/class_2248;Ljava/lang/Integer;)Lnet/minecraft/class_117$class_118;
-		ARG 1 pickles
+		ARG 2 pickles
 	METHOD method_46051 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_46052 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
@@ -146,7 +142,7 @@ CLASS net/minecraft/class_2430 net/minecraft/data/loottable/vanilla/VanillaBlock
 	METHOD method_46174 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_49928 (Ljava/lang/Integer;)Lnet/minecraft/class_79$class_80;
-		ARG 0 age
+		ARG 1 age
 	METHOD method_49929 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_49930 (Lnet/minecraft/class_2430;Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;

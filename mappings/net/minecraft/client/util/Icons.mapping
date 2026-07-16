@@ -7,5 +7,3 @@ CLASS net/minecraft/class_8518 net/minecraft/client/util/Icons
 	METHOD method_51419 getIcon (Lnet/minecraft/class_1_1068;Ljava/lang/String;)Lnet/minecraft/class_7367;
 		ARG 1 resolver
 		ARG 2 fileName
-	METHOD method_51420 getMacIcon (Lnet/minecraft/class_1_1068;)Lnet/minecraft/class_7367;
-		ARG 1 resolver

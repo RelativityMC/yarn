@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_1323
+	METHOD method_1_8684 (I)Lnet/minecraft/class_1_1323;
+		ARG 1 alignedSize

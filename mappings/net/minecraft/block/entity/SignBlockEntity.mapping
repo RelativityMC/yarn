@@ -16,15 +16,11 @@ CLASS net/minecraft/class_2625 net/minecraft/block/entity/SignBlockEntity
 	METHOD method_34272 updateListeners ()V
 	METHOD method_45469 getTextLineHeight ()I
 	METHOD method_45470 getMaxTextWidth ()I
-	METHOD method_49834 isPlayerFacingFront (Lnet/minecraft/class_1657;)Z
+	METHOD method_49834 isPlayerFacingFront (Lnet/minecraft/class_1657;)Lnet/minecraft/class_1_1337;
 		ARG 1 player
-	METHOD method_49835 getTextWithMessages (Lnet/minecraft/class_1657;Ljava/util/List;Lnet/minecraft/class_8242;)Lnet/minecraft/class_8242;
+	METHOD method_49835 getTextWithMessages (Ljava/util/List;Lnet/minecraft/class_8242;Z)Lnet/minecraft/class_8242;
+	METHOD method_49836 tryChangeText (Lnet/minecraft/class_1657;Lnet/minecraft/class_1_1337;Ljava/util/List;)V
 		ARG 1 player
-		ARG 2 messages
-		ARG 3 text
-	METHOD method_49836 tryChangeText (Lnet/minecraft/class_1657;ZLjava/util/List;)V
-		ARG 1 player
-		ARG 2 front
 		ARG 3 messages
 	METHOD method_49837 tick (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2625;)V
 		ARG 0 world
@@ -35,42 +31,29 @@ CLASS net/minecraft/class_2625 net/minecraft/block/entity/SignBlockEntity
 		ARG 1 blockEntity
 		ARG 2 world
 		ARG 3 uuid
-	METHOD method_49839 setBackText (Lnet/minecraft/class_8242;)Z
-		ARG 1 backText
-	METHOD method_49840 setText (Lnet/minecraft/class_8242;Z)Z
+	METHOD method_49840 setText (Lnet/minecraft/class_8242;Lnet/minecraft/class_1_1337;)V
 		ARG 1 text
-		ARG 2 front
-	METHOD method_49841 changeText (Ljava/util/function/UnaryOperator;Z)Z
+	METHOD method_49841 changeText (Ljava/util/function/UnaryOperator;Lnet/minecraft/class_1_1337;)Z
 		ARG 1 textChanger
-		ARG 2 front
-	METHOD method_49843 getText (Z)Lnet/minecraft/class_8242;
-		ARG 1 front
-	METHOD method_49845 (Lnet/minecraft/class_1657;Ljava/util/List;Lnet/minecraft/class_8242;)Lnet/minecraft/class_8242;
-		ARG 3 text
-	METHOD method_49846 setFrontText (Lnet/minecraft/class_8242;)Z
-		ARG 1 frontText
+	METHOD method_49843 getText (Lnet/minecraft/class_1_1337;)Lnet/minecraft/class_8242;
+	METHOD method_49845 (Ljava/util/List;Lnet/minecraft/class_1657;Lnet/minecraft/class_8242;)Lnet/minecraft/class_8242;
+		ARG 2 text
 	METHOD method_49847 isPlayerTooFarToEdit (Ljava/util/UUID;)Z
 		ARG 1 uuid
 	METHOD method_49849 setWaxed (Z)Z
 		ARG 1 waxed
-	METHOD method_49852 createText ()Lnet/minecraft/class_8242;
-	METHOD method_49853 getFrontText ()Lnet/minecraft/class_8242;
-	METHOD method_49854 getBackText ()Lnet/minecraft/class_8242;
 	METHOD method_49855 isWaxed ()Z
 	METHOD method_50006 createCommandSource (Lnet/minecraft/class_1657;Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;)Lnet/minecraft/class_2168;
 		ARG 0 player
 		ARG 1 world
 		ARG 2 pos
-	METHOD method_50007 runCommandClickEvent (Lnet/minecraft/class_3218;Lnet/minecraft/class_1657;Lnet/minecraft/class_2338;Z)Z
-		ARG 1 world
+	METHOD method_50007 runCommandClickEvent (Lnet/minecraft/class_3218;Lnet/minecraft/class_1657;Lnet/minecraft/class_2338;Lnet/minecraft/class_1_1337;)Z
 		ARG 2 player
 		ARG 3 pos
-		ARG 4 front
 	METHOD method_50008 parseLines (Lnet/minecraft/class_8242;)Lnet/minecraft/class_8242;
 		ARG 1 signText
 	METHOD method_50009 parseLine (Lnet/minecraft/class_2561;)Lnet/minecraft/class_2561;
 		ARG 1 text
-	METHOD method_50010 canRunCommandClickEvent (ZLnet/minecraft/class_1657;)Z
-		ARG 1 front
+	METHOD method_50010 canRunCommandClickEvent (Lnet/minecraft/class_1_1337;Lnet/minecraft/class_1657;)Z
 		ARG 2 player
 	METHOD method_54303 getInteractionFailSound ()Lnet/minecraft/class_3414;

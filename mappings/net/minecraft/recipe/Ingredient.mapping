@@ -37,8 +37,6 @@ CLASS net/minecraft/class_1856 net/minecraft/recipe/Ingredient
 		ARG 0 entries
 	METHOD method_61680 (Lnet/minecraft/class_1856;)Lnet/minecraft/class_6885;
 		ARG 0 ingredient
-	METHOD method_64672 (Ljava/util/List;)Ljava/lang/Record;
-		ARG 0 items
 	METHOD method_64673 toDisplay ()Lnet/minecraft/class_10302;
 	METHOD method_64980 toDisplay (Ljava/util/Optional;)Lnet/minecraft/class_10302;
 		ARG 0 ingredient

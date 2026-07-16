@@ -7,18 +7,14 @@ CLASS net/minecraft/class_1959 net/minecraft/world/biome/Biome
 	FIELD field_25819 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_26392 FROZEN_OCEAN_NOISE Lnet/minecraft/class_3543;
 	FIELD field_26393 weather Lnet/minecraft/class_1959$class_5482;
-	FIELD field_26395 spawnSettings Lnet/minecraft/class_5483;
 	FIELD field_26633 NETWORK_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_26635 generationSettings Lnet/minecraft/class_5485;
 	FIELD field_26750 REGISTRY_ENTRY_LIST_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_30978 MAX_TEMPERATURE_CACHE_SIZE I
 	FIELD field_63809 environmentAttributes Lnet/minecraft/class_12199;
-	METHOD <init> (Lnet/minecraft/class_1959$class_5482;Lnet/minecraft/class_12199;Lnet/minecraft/class_4763;Lnet/minecraft/class_5485;Lnet/minecraft/class_5483;)V
+	METHOD <init> (Lnet/minecraft/class_1959$class_5482;Lnet/minecraft/class_12199;Lnet/minecraft/class_4763;Lnet/minecraft/class_5485;)V
 		ARG 1 weather
-		ARG 2 effects
 		ARG 3 biomeEffects
-		ARG 4 generationSettings
-		ARG 5 spawnSettings
 	METHOD method_8685 canSetIce (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;Z)Z
 		ARG 1 world
 		ARG 2 pos
@@ -44,15 +40,12 @@ CLASS net/minecraft/class_1959 net/minecraft/world/biome/Biome
 	METHOD method_24377 getEffects ()Lnet/minecraft/class_4763;
 	METHOD method_28409 (Lnet/minecraft/class_1959;)Lnet/minecraft/class_1959$class_5482;
 		ARG 0 biome
-	METHOD method_28417 (Lnet/minecraft/class_1959;)Lnet/minecraft/class_5483;
-		ARG 0 biome
 	METHOD method_28418 (Lnet/minecraft/class_1959;)Lnet/minecraft/class_5485;
 		ARG 0 biome
 	METHOD method_28423 (Lnet/minecraft/class_1959;)Lnet/minecraft/class_1959$class_5482;
 		ARG 0 biome
 	METHOD method_30773 getDefaultGrassColor ()I
 	METHOD method_30774 getDefaultFoliageColor ()I
-	METHOD method_30966 getSpawnSettings ()Lnet/minecraft/class_5483;
 	METHOD method_30970 getGenerationSettings ()Lnet/minecraft/class_5485;
 	METHOD method_33599 isCold (Lnet/minecraft/class_2338;I)Z
 		ARG 1 pos
@@ -95,7 +88,6 @@ CLASS net/minecraft/class_1959 net/minecraft/world/biome/Biome
 		FIELD field_9351 downfall Ljava/lang/Float;
 		FIELD field_22042 specialEffects Lnet/minecraft/class_4763;
 		FIELD field_26396 temperatureModifier Lnet/minecraft/class_1959$class_5484;
-		FIELD field_26636 spawnSettings Lnet/minecraft/class_5483;
 		FIELD field_26637 generationSettings Lnet/minecraft/class_5485;
 		FIELD field_41767 precipitation Z
 		FIELD field_63810 environmentAttributeBuilder Lnet/minecraft/class_12199$class_12200;

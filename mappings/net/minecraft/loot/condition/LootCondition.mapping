@@ -5,8 +5,6 @@ CLASS net/minecraft/class_5341 net/minecraft/loot/condition/LootCondition
 	FIELD field_51809 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_51810 ENTRY_CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_1_745 getCodec ()Lcom/mojang/serialization/MapCodec;
-	METHOD method_1_8188 (Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
-		ARG 0 mapCodec
 	CLASS class_210 Builder
 		METHOD method_1_327 and (Lnet/minecraft/class_5341$class_210;)Lnet/minecraft/class_8548$class_8549;
 			ARG 1 condition

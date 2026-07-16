@@ -4,8 +4,7 @@ CLASS net/minecraft/class_109 net/minecraft/loot/function/EnchantRandomlyLootFun
 	FIELD field_45823 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_51792 options Ljava/util/Optional;
 	FIELD field_51793 onlyCompatible Z
-	METHOD <init> (Ljava/util/List;Ljava/util/Optional;ZZ)V
-		ARG 1 conditions
+	METHOD <init> (Ljava/util/Optional;Ljava/util/Optional;ZZ)V
 		ARG 2 options
 		ARG 3 onlyCompatible
 		ARG 4 includeAdditionalCostComponent

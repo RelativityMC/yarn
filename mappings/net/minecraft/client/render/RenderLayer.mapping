@@ -22,7 +22,6 @@ CLASS net/minecraft/class_1921 net/minecraft/client/render/RenderLayer
 	METHOD method_1_5227 setModelViewMatrix (Lorg/joml/Matrix4f;)Lnet/minecraft/class_1_1254;
 		ARG 1 matrix
 	METHOD method_1_7462 hasCrumbling ()Z
-	METHOD method_1_7463 shouldUseOit ()Z
 	METHOD method_23031 getVertexFormat ()Lnet/minecraft/class_1_1232;
 	METHOD method_23033 getDrawMode ()Lnet/minecraft/class_5596;
 	METHOD method_23037 isOpaque ()Z

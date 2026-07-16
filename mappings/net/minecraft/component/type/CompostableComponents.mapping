@@ -2,8 +2,8 @@ CLASS net/minecraft/class_1_1293 net/minecraft/component/type/CompostableCompone
 	FIELD field_1_8761 NUMBER_PROVIDER_CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_1_8202 bootstrap (Lnet/minecraft/class_7891;)V
 		ARG 0 registry
-	METHOD method_1_8203 chance (I)Lnet/minecraft/class_5658;
-		ARG 0 percentage
+	METHOD method_1_8203 chance (Lnet/minecraft/class_7871;I)Lnet/minecraft/class_5658;
+		ARG 1 percentage
 	METHOD method_1_8204 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
 		ARG 0 path
 	METHOD method_1_8206 (Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;

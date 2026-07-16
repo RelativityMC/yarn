@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_1_11 net/minecraft/client/window/WindowBackend
 	METHOD method_1_405 getName ()Ljava/lang/String;
-	METHOD method_1_2669 createDevice (JLnet/minecraft/class_1_16;)Lnet/minecraft/class_1_1209;
-	METHOD method_1_2670 reportError (Lnet/minecraft/class_1_7$class_1_8;)V
-		ARG 1 error
+	METHOD method_1_2669 createDevice (JLnet/minecraft/class_1_16;)Lnet/minecraft/class_1_1313;
+	METHOD method_1_2670 reportError (Ljava/lang/String;)V
 	METHOD method_1_2671 setHints ()V

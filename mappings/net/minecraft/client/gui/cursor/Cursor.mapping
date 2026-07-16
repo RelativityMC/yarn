@@ -8,5 +8,4 @@ CLASS net/minecraft/class_11875 net/minecraft/client/gui/cursor/Cursor
 		ARG 0 handle
 		ARG 1 name
 		ARG 2 fallback
-	METHOD method_74032 applyTo (Lnet/minecraft/class_1041;)V
-		ARG 1 window
+	METHOD method_74032 applyTo ()V

@@ -1,4 +1,4 @@
-CLASS net/minecraft/util/profiling/jfr/event/StructureGenerationEvent
+CLASS net/minecraft/class_1_1365
 	METHOD <init> (Lnet/minecraft/class_1923;Lnet/minecraft/class_6880;Lnet/minecraft/class_5321;)V
 		ARG 1 chunkPos
 		ARG 3 dimension

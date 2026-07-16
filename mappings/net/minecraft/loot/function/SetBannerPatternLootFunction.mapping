@@ -2,8 +2,7 @@ CLASS net/minecraft/class_5592 net/minecraft/loot/function/SetBannerPatternLootF
 	FIELD field_27343 patterns Lnet/minecraft/class_9307;
 	FIELD field_27344 append Z
 	FIELD field_45839 CODEC Lcom/mojang/serialization/MapCodec;
-	METHOD <init> (Ljava/util/List;Lnet/minecraft/class_9307;Z)V
-		ARG 1 conditions
+	METHOD <init> (Ljava/util/Optional;Lnet/minecraft/class_9307;Z)V
 		ARG 2 patterns
 		ARG 3 append
 	METHOD method_35531 builder (Z)Lnet/minecraft/class_5592$class_6157;

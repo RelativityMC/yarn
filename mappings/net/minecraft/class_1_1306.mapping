@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_1306
+	METHOD method_1_8482 (Ljava/nio/file/Path;)Ljava/nio/file/Path;
+		ARG 0 path
+	METHOD method_1_8488 (Ljava/nio/channels/ReadableByteChannel;I)Ljava/nio/ByteBuffer;
+		ARG 1 bufSize
+	METHOD method_1_8490 (Ljava/nio/file/Path;Ljava/lang/String;Lnet/minecraft/class_1_1318;ILjava/util/function/IntUnaryOperator;)V
+		ARG 0 directory
+		ARG 3 scales
+		ARG 4 colorFunction

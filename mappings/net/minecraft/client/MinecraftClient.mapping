@@ -44,7 +44,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_1_3288 backendFailure Lnet/minecraft/class_1_739;
 	FIELD field_1_3290 surfaceConfigureFailed Z
 	FIELD field_1_3291 gpuTimestampProfiler Lnet/minecraft/class_1_667;
-	FIELD field_1_3292 gpuSurface Lnet/minecraft/class_1_665;
+	FIELD field_1_3292 gpuSurface Lnet/minecraft/class_1_1314;
 	FIELD field_1_3293 updateSurface Z
 	FIELD field_1_3869 worldExtractor Lnet/minecraft/class_1_816;
 	FIELD field_1_6364 friendListManager Lnet/minecraft/class_1_1004;
@@ -189,7 +189,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_1_3939 printCrashReport (Ljava/io/File;Lnet/minecraft/class_128;)V
 		ARG 0 runDir
 		ARG 1 crashReport
-	METHOD method_1_3940 getGpuSurface ()Lnet/minecraft/class_1_665;
+	METHOD method_1_3940 getGpuSurface ()Lnet/minecraft/class_1_1314;
 	METHOD method_1_4728 getRecorder ()Lnet/minecraft/class_5962;
 	METHOD method_1_5115 (Lnet/minecraft/class_7973$class_7974;)V
 		ARG 1 properties
@@ -226,9 +226,6 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_1504 setCameraEntity (Lnet/minecraft/class_1297;)V
 		ARG 1 entity
 	METHOD method_1505 getBlockColors ()Lnet/minecraft/class_324;
-	METHOD method_1506 handleGlErrorByDisableVsync (IJ)V
-		ARG 1 error
-		ARG 2 description
 	METHOD method_1508 handleInputEvents ()V
 	METHOD method_1510 (Lnet/minecraft/class_2561;)V
 		ARG 0 status

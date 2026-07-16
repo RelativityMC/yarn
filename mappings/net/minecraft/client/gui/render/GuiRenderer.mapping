@@ -38,15 +38,13 @@ CLASS net/minecraft/class_11228 net/minecraft/client/gui/render/GuiRenderer
 	METHOD method_70880 createItemAtlas (Ljava/util/Set;I)Lnet/minecraft/class_1_201;
 		ARG 1 itemModelKeys
 		ARG 2 itemSpriteSize
-	METHOD method_70884 enableScissor (Lnet/minecraft/class_8030;Lnet/minecraft/class_1_1227;)V
+	METHOD method_70884 enableScissor (Lnet/minecraft/class_8030;Lnet/minecraft/class_1_1317;)V
 		ARG 1 scissorArea
-		ARG 2 pass
 	METHOD method_70885 scissorChanged (Lnet/minecraft/class_8030;Lnet/minecraft/class_8030;)Z
 		ARG 1 oldScissorArea
 		ARG 2 newScissorArea
-	METHOD method_70886 render (Lnet/minecraft/class_11228$class_11230;Lnet/minecraft/class_1_1227;)V
+	METHOD method_70886 render (Lnet/minecraft/class_11228$class_11230;Lnet/minecraft/class_1_1317;)V
 		ARG 1 draw
-		ARG 2 pass
 	METHOD method_70888 prepareSpecialElement (Lnet/minecraft/class_11256;I)V
 		ARG 1 elementState
 		ARG 2 windowScaleFactor

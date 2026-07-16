@@ -5,10 +5,9 @@ CLASS net/minecraft/class_1_26 net/minecraft/village/TradeSets
 		ARG 0 registries
 		ARG 1 set
 		ARG 2 tag
-	METHOD method_1_472 register (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_6862;Lnet/minecraft/class_5658;)Lnet/minecraft/class_6880$class_6883;
+	METHOD method_1_472 register (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_6862;Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880$class_6883;
 		ARG 0 registries
 		ARG 1 set
 		ARG 2 tag
-		ARG 3 amount
 	METHOD method_1_473 register (Ljava/lang/String;)Lnet/minecraft/class_5321;
 		ARG 0 path

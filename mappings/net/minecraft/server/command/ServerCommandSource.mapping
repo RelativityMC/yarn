@@ -118,7 +118,5 @@ CLASS net/minecraft/class_2168 net/minecraft/server/command/ServerCommandSource
 		COMMENT Sends {@code message} as the feedback to the command's executor, or to the server's log
 		COMMENT if the command is not executed by a player.
 		ARG 1 message
-	METHOD method_64830 (Lnet/minecraft/class_8786;)Lnet/minecraft/class_2960;
-		ARG 0 recipe
 	METHOD method_71773 getRegistry (Lnet/minecraft/class_5321;)Ljava/util/Optional;
 		ARG 1 registryRef

@@ -29,19 +29,6 @@ CLASS net/minecraft/class_1863 net/minecraft/recipe/ServerRecipeManager
 		ARG 2 input
 		ARG 3 world
 			COMMENT the input world
-	METHOD method_17720 deserialize (Lnet/minecraft/class_5321;Lcom/google/gson/JsonObject;Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_8786;
-		COMMENT Reads a recipe from a JSON object.
-		COMMENT
-		COMMENT @implNote Even though a recipe's {@linkplain Recipe#getSerializer() serializer}
-		COMMENT is stored in a {@code type} field in the JSON format and referred so in this
-		COMMENT method, its registry has key {@code minecraft:root/minecraft:recipe_serializer}
-		COMMENT and is thus named.
-		COMMENT
-		COMMENT @throws com.google.gson.JsonParseException if the recipe JSON is invalid
-		COMMENT @return the read recipe
-		ARG 0 key
-		ARG 1 json
-		ARG 2 registries
 	METHOD method_42299 getFirstMatch (Lnet/minecraft/class_3956;Lnet/minecraft/class_9695;Lnet/minecraft/class_1937;Lnet/minecraft/class_5321;)Ljava/util/Optional;
 		ARG 1 type
 		ARG 2 input

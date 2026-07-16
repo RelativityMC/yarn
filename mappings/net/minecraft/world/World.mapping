@@ -495,7 +495,6 @@ CLASS net/minecraft/class_1937 net/minecraft/world/World
 		ARG 9 category
 		ARG 10 volume
 		ARG 11 pitch
-	METHOD method_61269 getFuelRegistry ()Lnet/minecraft/class_9895;
 	METHOD method_63020 canHaveWeather ()Z
 	METHOD method_65097 getEnderDragonParts ()Ljava/util/Collection;
 	METHOD method_66016 onBlockStateChanged (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;)V

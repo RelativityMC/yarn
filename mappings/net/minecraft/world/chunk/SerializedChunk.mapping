@@ -68,8 +68,8 @@ CLASS net/minecraft/class_2852 net/minecraft/world/chunk/SerializedChunk
 		ARG 3 blockStates
 	METHOD method_68292 (Lnet/minecraft/class_5539;Lnet/minecraft/class_2487;)Lnet/minecraft/class_2843;
 		ARG 1 upgradeData
-	METHOD method_68293 (Lnet/minecraft/class_2806;Ljava/util/Map;Lnet/minecraft/class_2487;)V
-		ARG 2 heightmaps
+	METHOD method_68293 (Ljava/util/Map;Lnet/minecraft/class_2487;)V
+		ARG 1 heightmaps
 	METHOD method_68294 (Ljava/util/Map;Lnet/minecraft/class_2902$class_2903;[J)V
 		ARG 2 heightmapType
 	METHOD method_68295 (Lnet/minecraft/class_2378;Lnet/minecraft/class_1923;Ljava/util/Map;Ljava/lang/String;Lnet/minecraft/class_2520;)V

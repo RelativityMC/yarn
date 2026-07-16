@@ -20,10 +20,10 @@ CLASS net/minecraft/class_2609 net/minecraft/block/entity/AbstractFurnaceBlockEn
 	FIELD field_55575 litTotalTime I
 	FIELD field_55576 cookingTimeSpent I
 	FIELD field_56671 CODEC Lcom/mojang/serialization/Codec;
-	FIELD field_57764 DEFAULT_LIT_TIME_REMAINING S
-	FIELD field_57765 DEFAULT_LIT_TOTAL_TIME S
-	FIELD field_57766 DEFAULT_COOKING_TIME_SPENT S
-	FIELD field_57767 DEFAULT_COOKING_TOTAL_TIME S
+	FIELD field_57764 DEFAULT_LIT_TIME_REMAINING I
+	FIELD field_57765 DEFAULT_LIT_TOTAL_TIME I
+	FIELD field_57766 DEFAULT_COOKING_TIME_SPENT I
+	FIELD field_57767 DEFAULT_COOKING_TOTAL_TIME I
 	METHOD <init> (Lnet/minecraft/class_2591;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_3956;)V
 		ARG 1 blockEntityType
 		ARG 2 pos
@@ -36,9 +36,7 @@ CLASS net/minecraft/class_2609 net/minecraft/block/entity/AbstractFurnaceBlockEn
 		ARG 0 inventory
 		ARG 1 maxCount
 		ARG 2 outputStack
-	METHOD method_11200 getFuelTime (Lnet/minecraft/class_9895;Lnet/minecraft/class_1799;)I
-		ARG 1 fuelRegistry
-		ARG 2 stack
+	METHOD method_11200 getFuelTime (Lnet/minecraft/class_3218;Lnet/minecraft/class_1799;)I
 	METHOD method_11203 craftRecipe (Lnet/minecraft/class_2371;Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;)V
 		ARG 0 inventory
 		ARG 1 input
@@ -63,5 +61,3 @@ CLASS net/minecraft/class_2609 net/minecraft/block/entity/AbstractFurnaceBlockEn
 		ARG 1 pos
 		ARG 2 state
 		ARG 3 blockEntity
-	METHOD method_53790 (Lnet/minecraft/class_8786;)Ljava/lang/Integer;
-		ARG 0 recipe

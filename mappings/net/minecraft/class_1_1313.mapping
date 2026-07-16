@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_1_1313
+	METHOD method_1_7705 close ()V
+	METHOD method_1_7706 getCompiledPipeline (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_12289;)Lnet/minecraft/class_1_1285;
+	METHOD method_1_7707 createBuffer (Ljava/util/function/Supplier;IJ)Lnet/minecraft/class_1_1211;
+	METHOD method_1_7708 createBuffer (Ljava/util/function/Supplier;ILjava/nio/ByteBuffer;)Lnet/minecraft/class_1_1211;
+	METHOD method_1_7709 getCommandEncoder ()Lnet/minecraft/class_1_1329;
+	METHOD method_1_7710 createSampler (Lnet/minecraft/class_1_1239;Lnet/minecraft/class_1_1239;Lnet/minecraft/class_1_1230;Lnet/minecraft/class_1_1230;ILjava/util/OptionalDouble;)Lnet/minecraft/class_12137;
+	METHOD method_1_7711 createSurface (J)Lnet/minecraft/class_1_1314;
+	METHOD method_1_7712 createTexture (Ljava/lang/String;ILnet/minecraft/class_1_658;IIII)Lnet/minecraft/class_1_1318;
+	METHOD method_1_7713 createTexture (Ljava/util/function/Supplier;ILnet/minecraft/class_1_658;IIII)Lnet/minecraft/class_1_1318;
+	METHOD method_1_7714 createTextureView (Lnet/minecraft/class_1_1318;)Lnet/minecraft/class_1_1330;
+	METHOD method_1_7715 createTextureView (Lnet/minecraft/class_1_1318;II)Lnet/minecraft/class_1_1330;
+	METHOD method_1_7716 createTimestampQueryPool (I)Lnet/minecraft/class_1_685;
+	METHOD method_1_7717 getDeviceInfo ()Lnet/minecraft/class_1_664;
+	METHOD method_1_7718 getLastDebugMessages ()Ljava/util/List;
+	METHOD method_1_7720 isDebuggingEnabled ()Z

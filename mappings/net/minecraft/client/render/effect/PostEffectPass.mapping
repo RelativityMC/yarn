@@ -27,7 +27,7 @@ CLASS net/minecraft/class_283 net/minecraft/client/render/effect/PostEffectPass
 			ARG 2 internalTargets
 		METHOD method_62261 postRender (Ljava/util/Map;)V
 			ARG 1 internalTargets
-		METHOD method_71128 getTexture (Ljava/util/Map;)Lnet/minecraft/class_1_1260;
+		METHOD method_71128 getTexture (Ljava/util/Map;)Lnet/minecraft/class_1_1330;
 			ARG 1 internalTargets
 	CLASS class_9972 TargetSampler
 		FIELD comp_3038 comp_3034 Ljava/lang/String;

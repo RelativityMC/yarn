@@ -60,8 +60,7 @@ CLASS net/minecraft/class_2794 net/minecraft/world/gen/chunk/ChunkGenerator
 		ARG 2 structures
 		ARG 3 noiseConfig
 		ARG 4 chunk
-	METHOD method_12113 getEntitySpawnList (Lnet/minecraft/class_6880;Lnet/minecraft/class_5138;Lnet/minecraft/class_1311;Lnet/minecraft/class_2338;)Lnet/minecraft/class_6012;
-		ARG 1 biome
+	METHOD method_12113 getEntitySpawnList (Lnet/minecraft/class_1937;Lnet/minecraft/class_5138;Lnet/minecraft/class_1311;Lnet/minecraft/class_2338;)Lnet/minecraft/class_6012;
 		ARG 2 accessor
 		ARG 3 group
 		ARG 4 pos

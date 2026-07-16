@@ -1,8 +1,6 @@
 CLASS net/minecraft/class_52 net/minecraft/loot/LootTable
 	FIELD field_942 type Lnet/minecraft/class_176;
 	FIELD field_943 pools Ljava/util/List;
-	FIELD field_944 functions Ljava/util/List;
-	FIELD field_945 combinedFunction Ljava/util/function/BiFunction;
 	FIELD field_946 LOGGER Lorg/slf4j/Logger;
 	FIELD field_947 GENERIC Lnet/minecraft/class_176;
 	FIELD field_948 EMPTY Lnet/minecraft/class_52;
@@ -11,11 +9,10 @@ CLASS net/minecraft/class_52 net/minecraft/loot/LootTable
 	FIELD field_49428 DEFAULT_SEED J
 	FIELD field_50021 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_56684 TABLE_KEY Lcom/mojang/serialization/Codec;
-	METHOD <init> (Lnet/minecraft/class_176;Ljava/util/Optional;Ljava/util/List;Ljava/util/List;)V
+	METHOD <init> (Lnet/minecraft/class_176;Ljava/util/Optional;Ljava/util/List;Ljava/util/Optional;)V
 		ARG 1 type
 		ARG 2 randomSequenceId
 		ARG 3 pools
-		ARG 4 functions
 	METHOD method_319 generateLoot (Lnet/minecraft/class_47;)Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
 		ARG 1 context
 	METHOD method_320 generateLoot (Lnet/minecraft/class_47;Ljava/util/function/Consumer;)V
@@ -62,7 +59,7 @@ CLASS net/minecraft/class_52 net/minecraft/loot/LootTable
 		ARG 2 random
 	METHOD method_67696 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
-	METHOD method_67697 (Lnet/minecraft/class_52;)Ljava/util/List;
+	METHOD method_67697 (Lnet/minecraft/class_52;)Ljava/util/Optional;
 		ARG 0 table
 	METHOD method_67698 (Lnet/minecraft/class_52;)Ljava/util/List;
 		ARG 0 table

@@ -41,7 +41,7 @@ CLASS net/minecraft/class_340 net/minecraft/client/gui/hud/DebugHud
 	METHOD method_20541 (Lnet/minecraft/class_9259;)Lnet/minecraft/class_2818;
 		ARG 0 chunk
 	METHOD method_20603 getServerWorld ()Lnet/minecraft/class_3218;
-	METHOD method_51745 drawText (Lnet/minecraft/class_332;Ljava/util/List;Z)V
+	METHOD method_51745 drawText (Lnet/minecraft/class_332;Ljava/util/List;ZI)V
 		ARG 1 context
 		ARG 2 text
 		ARG 3 left

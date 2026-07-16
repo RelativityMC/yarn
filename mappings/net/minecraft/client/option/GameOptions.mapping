@@ -6,7 +6,6 @@ CLASS net/minecraft/class_315 net/minecraft/client/option/GameOptions
 	FIELD field_1_3261 graphicsApi Lnet/minecraft/class_7172;
 	FIELD field_1_6351 GRAPHICS_API_TOOLTIP Lnet/minecraft/class_2561;
 	FIELD field_1_6352 IN_GAME_NOTIFICATION_TOOLTIP Lnet/minecraft/class_2561;
-	FIELD field_1_6353 exclusiveFullscreenValue Z
 	FIELD field_1_6354 inGameNotification Lnet/minecraft/class_7172;
 	FIELD field_1_6355 friendsKey Lnet/minecraft/class_304;
 	FIELD field_1_6356 sharePresence Lnet/minecraft/class_7172;
@@ -166,7 +165,6 @@ CLASS net/minecraft/class_315 net/minecraft/client/option/GameOptions
 	FIELD field_18725 backgroundForChatOnly Lnet/minecraft/class_7172;
 	FIELD field_18726 textBackgroundOpacity Lnet/minecraft/class_7172;
 	FIELD field_19244 discreteMouseScroll Lnet/minecraft/class_7172;
-	FIELD field_20308 rawMouseInput Lnet/minecraft/class_7172;
 	FIELD field_21332 sneakToggled Lnet/minecraft/class_7172;
 	FIELD field_21333 sprintToggled Lnet/minecraft/class_7172;
 	FIELD field_21840 skipMultiplayerWarning Z
@@ -311,8 +309,6 @@ CLASS net/minecraft/class_315 net/minecraft/client/option/GameOptions
 	METHOD method_1_2454 isValidSoundDevice (Ljava/lang/String;)Z
 		ARG 0 deviceName
 	METHOD method_1_3093 getExclusiveFullscreen ()Lnet/minecraft/class_7172;
-	METHOD method_1_3094 (Ljava/lang/Boolean;)Lnet/minecraft/class_7919;
-		ARG 1 value
 	METHOD method_1_3890 isGraphicsApiChanged ()Z
 	METHOD method_1_3894 (Lnet/minecraft/class_2561;Lnet/minecraft/class_1_698;)Lnet/minecraft/class_2561;
 		ARG 0 optionText
@@ -433,7 +429,6 @@ CLASS net/minecraft/class_315 net/minecraft/client/option/GameOptions
 		ARG 1 value
 	METHOD method_41805 getBiomeBlendRadius ()Lnet/minecraft/class_7172;
 	METHOD method_41806 getMouseWheelSensitivity ()Lnet/minecraft/class_7172;
-	METHOD method_41807 getRawMouseInput ()Lnet/minecraft/class_7172;
 	METHOD method_41808 getFov ()Lnet/minecraft/class_7172;
 	METHOD method_42423 getAutoJump ()Lnet/minecraft/class_7172;
 	METHOD method_42424 (Ljava/lang/Double;)V
@@ -507,7 +502,7 @@ CLASS net/minecraft/class_315 net/minecraft/client/option/GameOptions
 	METHOD method_42511 (I)Ljava/lang/Integer;
 		ARG 0 value
 	METHOD method_42513 (Ljava/lang/Boolean;)V
-		ARG 1 value
+		ARG 0 value
 	METHOD method_42515 (Ljava/lang/Integer;)V
 		ARG 1 value
 	METHOD method_42516 (Ljava/lang/String;)Ljava/util/Optional;

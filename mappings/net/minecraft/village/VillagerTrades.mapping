@@ -6,7 +6,7 @@ CLASS net/minecraft/class_1_31 net/minecraft/village/VillagerTrades
 	FIELD field_1_3708 SHEPHERD_3_EMERALD_BEDS Lnet/minecraft/class_1_727;
 	FIELD field_1_3709 SHEPHERD_4_EMERALD_BANNERS Lnet/minecraft/class_1_727;
 	FIELD field_1_3710 WANDERING_TRADER_EMERALD_DYES Lnet/minecraft/class_1_727;
-	METHOD method_1_530 randomDyesFunction ()Lnet/minecraft/class_117;
+	METHOD method_1_530 randomDyesFunction ()Lnet/minecraft/class_117$class_118;
 	METHOD method_1_531 bootstrap (Lnet/minecraft/class_7891;)Lnet/minecraft/class_6880;
 		ARG 0 registries
 	METHOD method_1_532 randomDyesFunction (Lnet/minecraft/class_7871;Lnet/minecraft/class_1792;)Ljava/util/List;
@@ -61,15 +61,14 @@ CLASS net/minecraft/class_1_31 net/minecraft/village/VillagerTrades
 	METHOD method_1_562 villagerType (Lnet/minecraft/class_7871;Lnet/minecraft/class_5321;)Lnet/minecraft/class_6885;
 		ARG 0 villagerTypeRegistry
 		ARG 1 villagerType
-	METHOD method_1_563 villagerTypesCondition (Lnet/minecraft/class_6885;)Ljava/util/Optional;
+	METHOD method_1_563 villagerTypesCondition (Lnet/minecraft/class_6885;)Lnet/minecraft/class_6880;
 		ARG 0 villagerTypes
-	METHOD method_1_4364 cartographerLevel2ExplorerMapSale (Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;Lnet/minecraft/class_6862;Lnet/minecraft/class_6880;Ljava/lang/String;Ljava/util/List;)Lnet/minecraft/class_1_30;
+	METHOD method_1_4364 cartographerLevel2ExplorerMapSale (Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;Lnet/minecraft/class_6862;Lnet/minecraft/class_6880;Ljava/lang/String;Ljava/util/List;)Lnet/minecraft/class_1_30;
 		ARG 0 items
 		ARG 1 villagerTypes
-		ARG 2 structureTag
-		ARG 3 decoration
-		ARG 4 name
-		ARG 5 allowedVillagerTypes
+		ARG 4 decoration
+		ARG 5 name
+		ARG 6 allowedVillagerTypes
 	METHOD method_1_4365 cartographerBannerSale (Lnet/minecraft/class_7871;Lnet/minecraft/class_1792;Ljava/util/List;)Lnet/minecraft/class_1_30;
 		ARG 0 villagerTypes
 		ARG 1 banner
@@ -98,7 +97,7 @@ CLASS net/minecraft/class_1_31 net/minecraft/village/VillagerTrades
 	METHOD method_1_4375 enchantedBookFunctions (Lnet/minecraft/class_7871;Lnet/minecraft/class_6885;)Ljava/util/List;
 		ARG 0 items
 		ARG 1 allowedEnchantments
-	METHOD method_1_4383 bootstrapCartographerLevel2ExplorerMaps (Lnet/minecraft/class_7891;Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;)V
+	METHOD method_1_4383 bootstrapCartographerLevel2ExplorerMaps (Lnet/minecraft/class_7891;Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;)V
 		ARG 0 registries
 		ARG 1 items
 		ARG 2 villagerTypes

@@ -27,4 +27,3 @@ CLASS net/minecraft/class_918 net/minecraft/client/render/command/ItemRenderer
 		FIELD comp_4642 glintType Lnet/minecraft/class_10444$class_10445;
 		METHOD comp_4498 positionMatrix ()Lnet/minecraft/class_4587$class_4665;
 		METHOD comp_4642 glintType ()Lnet/minecraft/class_10444$class_10445;
-		METHOD method_1_5283 hasBlendedQuads ()Z

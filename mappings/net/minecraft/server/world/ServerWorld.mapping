@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_3218 net/minecraft/server/world/ServerWorld
 	FIELD field_1_7066 lastEntityId Ljava/util/concurrent/atomic/AtomicInteger;
+	FIELD field_1_8798 sleepManager Lnet/minecraft/class_5838;
 	FIELD field_13948 idleTimeout I
 	FIELD field_13949 blockTickScheduler Lnet/minecraft/class_6757;
 	FIELD field_13950 syncedBlockEventQueue Lit/unimi/dsi/fastutil/objects/ObjectLinkedOpenHashSet;
@@ -22,7 +23,6 @@ CLASS net/minecraft/class_3218 net/minecraft/server/world/ServerWorld
 	FIELD field_26933 enderDragonParts Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
 	FIELD field_26934 entityList Lnet/minecraft/class_5574;
 	FIELD field_26935 entityManager Lnet/minecraft/class_5579;
-	FIELD field_28859 sleepManager Lnet/minecraft/class_5838;
 	FIELD field_29768 SERVER_IDLE_COOLDOWN I
 		COMMENT The number of ticks ({@value}) the world will continue to tick entities after
 		COMMENT all players have left and the world does not contain any forced chunks.

@@ -10,6 +10,3 @@ CLASS net/minecraft/class_65 net/minecraft/loot/entry/AlternativeEntry
 		ARG 0 children
 		ARG 1 toBuilderFunction
 	CLASS class_66 Builder
-		FIELD field_979 children Lcom/google/common/collect/ImmutableList$Builder;
-		METHOD <init> ([Lnet/minecraft/class_79$class_80;)V
-			ARG 1 children

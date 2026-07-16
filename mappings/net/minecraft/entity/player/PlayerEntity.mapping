@@ -118,9 +118,8 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 		COMMENT
 		COMMENT @see net.minecraft.item.ItemStack#isSuitableFor(BlockState)
 		ARG 1 state
-	METHOD method_7311 openEditSignScreen (Lnet/minecraft/class_2625;Z)V
+	METHOD method_7311 openEditSignScreen (Lnet/minecraft/class_2625;Lnet/minecraft/class_1_1337;)V
 		ARG 1 sign
-		ARG 2 front
 	METHOD method_7315 useBook (Lnet/minecraft/class_1799;Lnet/minecraft/class_1268;)V
 		COMMENT Called when the player uses (defaults to right click) a writable or written
 		COMMENT book item.
@@ -161,11 +160,7 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 	METHOD method_7330 updateTurtleHelmet ()V
 	METHOD method_7332 canConsume (Z)Z
 		ARG 1 ignoreHunger
-	METHOD method_7333 lockRecipes (Ljava/util/Collection;)I
-		ARG 1 recipes
 	METHOD method_7334 getGameProfile ()Lcom/mojang/authlib/GameProfile;
-	METHOD method_7335 unlockRecipes (Ljava/util/List;)V
-		ARG 1 recipes
 	METHOD method_7338 isCreativeLevelTwoOp ()Z
 	METHOD method_7339 increaseStat (Lnet/minecraft/class_2960;I)V
 		ARG 1 stat

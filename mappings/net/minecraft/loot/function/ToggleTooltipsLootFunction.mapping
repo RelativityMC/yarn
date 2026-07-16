@@ -1,8 +1,7 @@
 CLASS net/minecraft/class_9429 net/minecraft/loot/function/ToggleTooltipsLootFunction
 	FIELD field_50027 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_50030 toggles Ljava/util/Map;
-	METHOD <init> (Ljava/util/List;Ljava/util/Map;)V
-		ARG 1 conditions
+	METHOD <init> (Ljava/util/Optional;Ljava/util/Map;)V
 		ARG 2 toggles
 	METHOD method_58465 (Lnet/minecraft/class_9429;)Ljava/util/Map;
 		ARG 0 lootFunction

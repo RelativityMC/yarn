@@ -3,16 +3,16 @@ CLASS net/minecraft/class_1_1295 net/minecraft/loot/provider/number/NumberDispat
 		ARG 0 instance
 	METHOD method_1_8214 (Lnet/minecraft/class_1_1295;)Ljava/util/List;
 		ARG 0 provider
-	METHOD method_1_8215 (Lnet/minecraft/class_1_1295;)Lnet/minecraft/class_5658;
+	METHOD method_1_8215 (Lnet/minecraft/class_1_1295;)Lnet/minecraft/class_6880;
 		ARG 0 provider
 	METHOD method_1_8216 getMatchingProvider (Lnet/minecraft/class_47;)Lnet/minecraft/class_5658;
 		ARG 1 context
 	CLASS class_1_1296 Case
 		METHOD method_1_8217 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance
-		METHOD method_1_8218 (Lnet/minecraft/class_1_1295$class_1_1296;)Lnet/minecraft/class_5341;
+		METHOD method_1_8218 (Lnet/minecraft/class_1_1295$class_1_1296;)Lnet/minecraft/class_6880;
 			ARG 0 c
-		METHOD method_1_8219 (Lnet/minecraft/class_1_1295$class_1_1296;)Lnet/minecraft/class_5658;
+		METHOD method_1_8219 (Lnet/minecraft/class_1_1295$class_1_1296;)Lnet/minecraft/class_6880;
 			ARG 0 c
 		METHOD method_1_8220 test (Lnet/minecraft/class_47;)Z
 			ARG 1 context

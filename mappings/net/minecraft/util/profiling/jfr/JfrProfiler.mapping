@@ -23,13 +23,13 @@ CLASS net/minecraft/class_6505 net/minecraft/util/profiling/jfr/JfrProfiler
 		ARG 2 instanceType
 	METHOD method_38660 addListener ()V
 	METHOD method_39428 getInstance ()Lnet/minecraft/class_6505;
-	METHOD method_39429 getOrCreateSummaryRecorder (Ljava/net/SocketAddress;)Lnet/minecraft/util/profiling/jfr/event/NetworkSummaryEvent$class_6779;
+	METHOD method_39429 getOrCreateSummaryRecorder (Ljava/net/SocketAddress;)Lnet/minecraft/class_1_1354$class_6779;
 		ARG 1 address
-	METHOD method_65106 (Lnet/minecraft/util/profiling/jfr/event/ChunkGenerationEvent;Z)V
+	METHOD method_65106 (Lnet/minecraft/class_1_1357;Z)V
 		ARG 1 success
-	METHOD method_65107 (Lnet/minecraft/util/profiling/jfr/event/StructureGenerationEvent;Z)V
+	METHOD method_65107 (Lnet/minecraft/class_1_1365;Z)V
 		ARG 1 success
-	METHOD method_65108 (Lnet/minecraft/util/profiling/jfr/event/WorldLoadFinishedEvent;Z)V
+	METHOD method_65108 (Lnet/minecraft/class_1_1363;Z)V
 		ARG 1 success
 	METHOD method_75088 addPeriodicEvent (Ljava/lang/Class;Ljava/lang/Runnable;)V
 		ARG 0 clazz

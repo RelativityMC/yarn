@@ -1,9 +1,4 @@
 CLASS net/minecraft/class_1_1231 com/mojang/blaze3d/textures/GpuTexture
-	FIELD field_1_8538 USAGE_COPY_DST I
-	FIELD field_1_8539 USAGE_COPY_SRC I
-	FIELD field_1_8540 USAGE_CUBEMAP_COMPATIBLE I
-	FIELD field_1_8541 USAGE_RENDER_ATTACHMENT I
-	FIELD field_1_8542 USAGE_TEXTURE_BINDING I
 	FIELD field_1_8543 depthOrLayers I
 	FIELD field_1_8544 format Lnet/minecraft/class_1_658;
 	FIELD field_1_8545 height I
@@ -19,14 +14,7 @@ CLASS net/minecraft/class_1_1231 com/mojang/blaze3d/textures/GpuTexture
 		ARG 5 height
 		ARG 6 depthOrLayers
 		ARG 7 mipLevels
-	METHOD method_1_7817 getDepthOrLayers ()I
-	METHOD method_1_7818 getTexelFormat ()Lnet/minecraft/class_1_658;
-	METHOD method_1_7819 getHeight (I)I
+	METHOD method_1_7819 (I)I
 		ARG 1 mipLevel
-	METHOD method_1_7820 getLabel ()Ljava/lang/String;
-	METHOD method_1_7821 getMipLevels ()I
-	METHOD method_1_7822 getWidth (I)I
+	METHOD method_1_7822 (I)I
 		ARG 1 mipLevel
-	METHOD method_1_7823 isClosed ()Z
-	METHOD method_1_7824 getUsage ()I
-	CLASS class_12115 Usage

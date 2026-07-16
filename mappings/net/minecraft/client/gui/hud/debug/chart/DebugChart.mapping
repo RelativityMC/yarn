@@ -18,7 +18,7 @@ CLASS net/minecraft/class_8755 net/minecraft/client/gui/hud/debug/chart/DebugCha
 		ARG 1 centerX
 	METHOD method_53471 getColor (J)I
 		ARG 1 value
-	METHOD method_53472 render (Lnet/minecraft/class_332;II)V
+	METHOD method_53472 render (Lnet/minecraft/class_332;III)V
 		ARG 1 context
 		ARG 2 x
 		ARG 3 width

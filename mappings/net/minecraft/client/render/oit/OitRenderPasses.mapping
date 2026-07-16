@@ -1,15 +1,15 @@
 CLASS net/minecraft/class_1_1174 net/minecraft/client/render/oit/OitRenderPasses
-	METHOD method_1_7493 createAccumulateRenderPass (Ljava/util/function/Supplier;Lnet/minecraft/class_1_1174$class_1_1175;)Lnet/minecraft/class_1_1227;
+	METHOD method_1_7493 createAccumulateRenderPass (Ljava/util/function/Supplier;Lnet/minecraft/class_1_1174$class_1_1175;)Lnet/minecraft/class_1_1317;
 		ARG 0 labelGetter
 		ARG 1 textureSet
-	METHOD method_1_7494 createDepthBoundsRenderPass (Ljava/util/function/Supplier;Lnet/minecraft/class_1_1174$class_1_1175;)Lnet/minecraft/class_1_1227;
+	METHOD method_1_7494 createDepthBoundsRenderPass (Ljava/util/function/Supplier;Lnet/minecraft/class_1_1174$class_1_1175;)Lnet/minecraft/class_1_1317;
 		ARG 0 labelGetter
 		ARG 1 textureset
-	METHOD method_1_7495 create (Lnet/minecraft/class_1_1153;Ljava/util/function/Supplier;Lnet/minecraft/class_1_1174$class_1_1175;)Lnet/minecraft/class_1_1227;
+	METHOD method_1_7495 create (Lnet/minecraft/class_1_1153;Ljava/util/function/Supplier;Lnet/minecraft/class_1_1174$class_1_1175;)Lnet/minecraft/class_1_1317;
 		ARG 0 stage
 		ARG 1 labelGetter
 		ARG 2 textureSet
-	METHOD method_1_7496 createTransmittanceRenderPass (Ljava/util/function/Supplier;Lnet/minecraft/class_1_1174$class_1_1175;)Lnet/minecraft/class_1_1227;
+	METHOD method_1_7496 createTransmittanceRenderPass (Ljava/util/function/Supplier;Lnet/minecraft/class_1_1174$class_1_1175;)Lnet/minecraft/class_1_1317;
 		ARG 0 labelGetter
 		ARG 1 textureSet
 	CLASS class_1_1175 TextureSet

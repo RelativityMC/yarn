@@ -4,8 +4,6 @@ CLASS net/minecraft/class_5284 net/minecraft/world/gen/chunk/ChunkGeneratorSetti
 	FIELD comp_476 defaultFluid Lnet/minecraft/class_2680;
 	FIELD comp_479 seaLevel I
 	FIELD comp_480 mobGenerationDisabled Z
-	FIELD comp_481 aquifers Z
-	FIELD comp_482 oreVeins Z
 	FIELD comp_483 usesLegacyRandom Z
 	FIELD field_24780 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_24781 REGISTRY_CODEC Lcom/mojang/serialization/Codec;
@@ -24,8 +22,6 @@ CLASS net/minecraft/class_5284 net/minecraft/world/gen/chunk/ChunkGeneratorSetti
 		COMMENT Whether entities will be generated during chunk population.
 		COMMENT
 		COMMENT <p>It does not control whether spawns will occur during gameplay.
-	METHOD comp_481 aquifers ()Z
-	METHOD comp_482 oreVeins ()Z
 	METHOD comp_483 usesLegacyRandom ()Z
 	METHOD method_28558 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
@@ -39,7 +35,6 @@ CLASS net/minecraft/class_5284 net/minecraft/world/gen/chunk/ChunkGeneratorSetti
 		ARG 2 largeBiomes
 	METHOD method_31111 bootstrap (Lnet/minecraft/class_7891;)V
 		ARG 0 chunkGenerationSettingsRegisterable
-	METHOD method_33757 hasAquifers ()Z
 	METHOD method_38999 getRandomProvider ()Lnet/minecraft/class_2919$class_6675;
 	METHOD method_39901 createCavesSettings (Lnet/minecraft/class_7891;)Lnet/minecraft/class_5284;
 		ARG 0 registerable

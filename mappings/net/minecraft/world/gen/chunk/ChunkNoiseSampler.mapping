@@ -43,7 +43,6 @@ CLASS net/minecraft/class_6568 net/minecraft/world/gen/chunk/ChunkNoiseSampler
 	FIELD field_36593 isSamplingForCaches Z
 	FIELD field_36594 startBlockX I
 	FIELD field_37113 beardifying Lnet/minecraft/class_6916$class_7050;
-	FIELD field_61471 surfaceHeightEstimateCache Lit/unimi/dsi/fastutil/longs/Long2IntMap;
 	FIELD field_61472 preliminarySurfaceLevel Lnet/minecraft/class_6910;
 	METHOD <init> (ILnet/minecraft/class_7138;IILnet/minecraft/class_5309;Lnet/minecraft/class_6916$class_7050;Lnet/minecraft/class_5284;Lnet/minecraft/class_6350$class_6565;Lnet/minecraft/class_6748;)V
 		ARG 1 horizontalCellCount
@@ -106,11 +105,7 @@ CLASS net/minecraft/class_6568 net/minecraft/world/gen/chunk/ChunkNoiseSampler
 		ARG 3 chunkGeneratorSettings
 		ARG 4 fluidLevelSampler
 		ARG 5 blender
-	METHOD method_39899 calculateSurfaceHeightEstimate (J)I
-		ARG 1 columnPos
-	METHOD method_39900 estimateSurfaceHeight (II)I
-		ARG 1 blockX
-		ARG 2 blockZ
+	METHOD method_39899 calculateSurfaceHeightEstimate (II)I
 	METHOD method_40529 getActualDensityFunction (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
 		COMMENT {@return the actual density function for a given density function}
 		COMMENT
@@ -141,11 +136,6 @@ CLASS net/minecraft/class_6568 net/minecraft/world/gen/chunk/ChunkNoiseSampler
 		COMMENT Stops the interpolation loop for this chunk.
 	METHOD method_42361 getHorizontalCellBlockCount ()I
 	METHOD method_42362 getVerticalCellBlockCount ()I
-	METHOD method_72685 estimateHighestSurfaceLevel (IIII)I
-		ARG 1 minX
-		ARG 2 minZ
-		ARG 3 maxX
-		ARG 4 maxZ
 	CLASS class_5917 DensityInterpolator
 		FIELD field_29227 startDensityBuffer [[D
 		FIELD field_29228 endDensityBuffer [[D

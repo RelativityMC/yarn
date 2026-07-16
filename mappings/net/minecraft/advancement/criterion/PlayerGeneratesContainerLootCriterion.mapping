@@ -7,9 +7,9 @@ CLASS net/minecraft/class_5282 net/minecraft/advancement/criterion/PlayerGenerat
 	CLASS class_5283 Conditions
 		FIELD comp_2029 player Ljava/util/Optional;
 		FIELD field_47307 CODEC Lcom/mojang/serialization/Codec;
-		METHOD <init> (Ljava/util/Optional;Lnet/minecraft/class_5321;)V
+		METHOD <init> (Ljava/util/Optional;Lnet/minecraft/class_6885;)V
 			ARG 1 playerPredicate
-		METHOD method_27995 create (Lnet/minecraft/class_5321;)Lnet/minecraft/class_175;
+		METHOD method_27995 create (Lnet/minecraft/class_6885;)Lnet/minecraft/class_175;
 		METHOD method_27996 test (Lnet/minecraft/class_5321;)Z
 			ARG 1 lootTable
 		METHOD method_55060 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

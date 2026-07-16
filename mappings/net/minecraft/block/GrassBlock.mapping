@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_2372 net/minecraft/block/GrassBlock
 	FIELD field_1_7393 NUM_POSITIONS I
 	FIELD field_1_7395 FLOWER_CHANCE F
-	METHOD method_1_6615 createFlora (Lnet/minecraft/class_3218;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338;)V
+	METHOD method_1_6615 createFlora (Lnet/minecraft/class_3218;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338;Lnet/minecraft/class_1_1322;)V
 		ARG 0 world
 		ARG 1 random
 		ARG 2 pos

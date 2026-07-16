@@ -1,13 +1,10 @@
 CLASS net/minecraft/class_101 net/minecraft/loot/function/CopyNameLootFunction
 	FIELD field_1018 source Lnet/minecraft/class_12283;
 	FIELD field_45817 CODEC Lcom/mojang/serialization/MapCodec;
-	METHOD <init> (Ljava/util/List;Lnet/minecraft/class_12283;)V
-		ARG 1 conditions
+	METHOD <init> (Ljava/util/Optional;Lnet/minecraft/class_12283;)V
 		ARG 2 source
 	METHOD method_473 builder (Lnet/minecraft/class_12283;)Lnet/minecraft/class_120$class_121;
 		ARG 0 source
-	METHOD method_474 (Lnet/minecraft/class_12283;Ljava/util/List;)Lnet/minecraft/class_117;
-		ARG 1 conditions
 	METHOD method_53313 (Lnet/minecraft/class_101;)Lnet/minecraft/class_12283;
 		ARG 0 function
 	METHOD method_53314 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

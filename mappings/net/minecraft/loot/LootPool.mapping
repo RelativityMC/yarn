@@ -1,18 +1,11 @@
 CLASS net/minecraft/class_55 net/minecraft/loot/LootPool
-	FIELD field_952 javaFunctions Ljava/util/function/BiFunction;
 	FIELD field_953 entries Ljava/util/List;
-	FIELD field_954 conditions Ljava/util/List;
-	FIELD field_955 predicate Ljava/util/function/Predicate;
-	FIELD field_956 functions Ljava/util/List;
-	FIELD field_957 rolls Lnet/minecraft/class_5658;
-	FIELD field_958 bonusRolls Lnet/minecraft/class_5658;
+	FIELD field_954 conditions Ljava/util/Optional;
+	FIELD field_957 rolls Lnet/minecraft/class_6880;
+	FIELD field_958 bonusRolls Lnet/minecraft/class_6880;
 	FIELD field_45795 CODEC Lcom/mojang/serialization/Codec;
-	METHOD <init> (Ljava/util/List;Ljava/util/List;Ljava/util/List;Lnet/minecraft/class_5658;Lnet/minecraft/class_5658;)V
+	METHOD <init> (Ljava/util/List;Ljava/util/Optional;Ljava/util/Optional;Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)V
 		ARG 1 entries
-		ARG 2 conditions
-		ARG 3 functions
-		ARG 4 rolls
-		ARG 5 bonusRolls
 	METHOD method_341 addGeneratedLoot (Ljava/util/function/Consumer;Lnet/minecraft/class_47;)V
 		ARG 1 lootConsumer
 		ARG 2 context
@@ -24,28 +17,26 @@ CLASS net/minecraft/class_55 net/minecraft/loot/LootPool
 	METHOD method_347 builder ()Lnet/minecraft/class_55$class_56;
 	METHOD method_53268 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
-	METHOD method_53269 (Lnet/minecraft/class_55;)Lnet/minecraft/class_5658;
+	METHOD method_53269 (Lnet/minecraft/class_55;)Lnet/minecraft/class_6880;
 		ARG 0 pool
-	METHOD method_53270 (Lnet/minecraft/class_55;)Lnet/minecraft/class_5658;
+	METHOD method_53270 (Lnet/minecraft/class_55;)Lnet/minecraft/class_6880;
 		ARG 0 pool
-	METHOD method_53271 (Lnet/minecraft/class_55;)Ljava/util/List;
+	METHOD method_53271 (Lnet/minecraft/class_55;)Ljava/util/Optional;
 		ARG 0 pool
-	METHOD method_53272 (Lnet/minecraft/class_55;)Ljava/util/List;
+	METHOD method_53272 (Lnet/minecraft/class_55;)Ljava/util/Optional;
 		ARG 0 pool
 	METHOD method_53273 (Lnet/minecraft/class_55;)Ljava/util/List;
 		ARG 0 pool
 	CLASS class_56 Builder
-		FIELD field_959 rolls Lnet/minecraft/class_5658;
+		FIELD field_959 rolls Lnet/minecraft/class_6880;
 		FIELD field_960 entries Lcom/google/common/collect/ImmutableList$Builder;
 		FIELD field_961 functions Lcom/google/common/collect/ImmutableList$Builder;
-		FIELD field_962 bonusRollsRange Lnet/minecraft/class_5658;
+		FIELD field_962 bonusRollsRange Lnet/minecraft/class_6880;
 		FIELD field_963 conditions Lcom/google/common/collect/ImmutableList$Builder;
 		METHOD method_1_4409 with (Ljava/util/List;)Lnet/minecraft/class_55$class_56;
 			ARG 1 entries
 		METHOD method_351 with (Lnet/minecraft/class_79$class_80;)Lnet/minecraft/class_55$class_56;
 			ARG 1 entry
-		METHOD method_352 rolls (Lnet/minecraft/class_5658;)Lnet/minecraft/class_55$class_56;
-			ARG 1 rolls
+		METHOD method_352 rolls (Lnet/minecraft/class_6880;)Lnet/minecraft/class_55$class_56;
 		METHOD method_355 build ()Lnet/minecraft/class_55;
-		METHOD method_35509 bonusRolls (Lnet/minecraft/class_5658;)Lnet/minecraft/class_55$class_56;
-			ARG 1 bonusRolls
+		METHOD method_35509 bonusRolls (Lnet/minecraft/class_6880;)Lnet/minecraft/class_55$class_56;

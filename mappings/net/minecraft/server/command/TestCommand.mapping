@@ -10,9 +10,9 @@ CLASS net/minecraft/class_4527 net/minecraft/server/command/TestCommand
 		ARG 4 style
 	METHOD method_1_6642 (Ljava/lang/String;Lnet/minecraft/class_4527$class_1_1056;Lnet/minecraft/class_2583;)Lnet/minecraft/class_2583;
 		ARG 2 style
-	METHOD method_1_6644 sendCoordinates (Lnet/minecraft/class_2168;)V
+	METHOD method_1_6644 sendCoordinates (Lnet/minecraft/class_2168;Ljava/util/Set;)V
 		ARG 0 source
-	METHOD method_1_6645 getTestInfo (Lnet/minecraft/class_2168;)Lnet/minecraft/class_4527$class_1_1056;
+	METHOD method_1_6645 getTestInfo (Lnet/minecraft/class_2168;Lnet/minecraft/class_5321;)Lnet/minecraft/class_4527$class_1_1056;
 		ARG 0 source
 	METHOD method_22264 executePos (Lnet/minecraft/class_2168;Ljava/lang/String;)I
 		ARG 0 source
@@ -33,14 +33,12 @@ CLASS net/minecraft/class_4527 net/minecraft/server/command/TestCommand
 		ARG 0 context
 	METHOD method_23648 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
-	METHOD method_54850 getStructurePos (Lnet/minecraft/class_2168;)Lnet/minecraft/class_2338;
+	METHOD method_54850 getStructurePos (Lnet/minecraft/class_2168;Lnet/minecraft/class_5321;)Lnet/minecraft/class_2338;
 		ARG 0 source
 	METHOD method_54904 checkStructure (Lnet/minecraft/class_2168;Lnet/minecraft/class_2960;)Z
 		ARG 0 source
 		ARG 1 templateId
 	METHOD method_56254 stop ()I
-	METHOD method_56255 (ILnet/minecraft/class_2168;Lnet/minecraft/class_9118;Lnet/minecraft/class_6880$class_6883;)Lnet/minecraft/class_4517;
-		ARG 3 instance
 	METHOD method_56256 (Lcom/mojang/brigadier/builder/ArgumentBuilder;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
 		ARG 0 extraConfigAdder
 	METHOD method_56257 testAttemptConfig (Lcom/mojang/brigadier/builder/ArgumentBuilder;Lnet/minecraft/class_10618;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
@@ -53,8 +51,6 @@ CLASS net/minecraft/class_4527 net/minecraft/server/command/TestCommand
 	METHOD method_56259 start (Lnet/minecraft/class_2168;Lnet/minecraft/class_4520;)I
 		ARG 0 source
 		ARG 1 context
-	METHOD method_56260 (Lnet/minecraft/class_2168;Lnet/minecraft/class_9118;Lnet/minecraft/class_2338;)Ljava/util/Optional;
-		ARG 2 pos
 	METHOD method_56261 stream (Lnet/minecraft/class_2168;Lnet/minecraft/class_9118;Lnet/minecraft/class_10675;)Ljava/util/stream/Stream;
 		ARG 0 source
 		ARG 1 config
@@ -64,8 +60,7 @@ CLASS net/minecraft/class_4527 net/minecraft/server/command/TestCommand
 		ARG 1 config
 		ARG 2 finder
 		ARG 3 rotationSteps
-	METHOD method_56264 find (Lnet/minecraft/class_2338;Lnet/minecraft/class_2168;Lnet/minecraft/class_9118;)Ljava/util/Optional;
-		ARG 0 pos
+	METHOD method_56264 find (Lnet/minecraft/class_4208;Lnet/minecraft/class_2168;Lnet/minecraft/class_9118;)Ljava/util/Optional;
 		ARG 1 source
 		ARG 2 config
 	METHOD method_56267 reset (Lnet/minecraft/class_2168;Lnet/minecraft/class_4517;)I
@@ -99,8 +94,6 @@ CLASS net/minecraft/class_4527 net/minecraft/server/command/TestCommand
 		ARG 1 style
 	METHOD method_67009 reset (Lnet/minecraft/class_9123;)I
 		ARG 0 finder
-	METHOD method_67010 (Lnet/minecraft/class_9123;Lnet/minecraft/class_2338;Lorg/apache/commons/lang3/mutable/MutableInt;Lnet/minecraft/class_2338;)V
-		ARG 3 pos
 	METHOD method_67011 (Lnet/minecraft/class_9123;Lnet/minecraft/class_4517;)Ljava/lang/Integer;
 		ARG 1 state
 	METHOD method_67012 start (Lnet/minecraft/class_9123;Lnet/minecraft/class_9118;II)I
@@ -110,8 +103,6 @@ CLASS net/minecraft/class_4527 net/minecraft/server/command/TestCommand
 		ARG 3 testsPerRow
 	METHOD method_67016 (Lnet/minecraft/class_10618;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 1 context
-	METHOD method_67017 (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;)Ljava/util/stream/Stream;
-		ARG 1 pos
 	METHOD method_67018 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_67020 clear (Lnet/minecraft/class_9123;)I
@@ -168,9 +159,8 @@ CLASS net/minecraft/class_4527 net/minecraft/server/command/TestCommand
 		ARG 0 context
 	CLASS class_1_1056 Info
 	CLASS class_4528 Listener
-		FIELD comp_2217 tests Lnet/minecraft/class_4524;
+		FIELD field_1_9035 tests Lnet/minecraft/class_4524;
 		METHOD <init> (Lnet/minecraft/class_2168;Lnet/minecraft/class_4524;)V
 			ARG 2 tests
-		METHOD comp_2217 tests ()Lnet/minecraft/class_4524;
 		METHOD method_56304 onFinished ()V
 	CLASS class_9122 ReportingBatchListener

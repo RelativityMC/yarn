@@ -1,4 +1,4 @@
-CLASS net/minecraft/util/profiling/jfr/event/ChunkGenerationEvent
+CLASS net/minecraft/class_1_1357
 	METHOD <init> (Lnet/minecraft/class_1923;Lnet/minecraft/class_5321;Ljava/lang/String;)V
 		ARG 1 chunkPos
 		ARG 2 world

@@ -1,46 +1,28 @@
 CLASS net/minecraft/class_85 net/minecraft/loot/entry/LeafEntry
 	FIELD field_994 quality I
 	FIELD field_995 weight I
-	FIELD field_996 functions Ljava/util/List;
-	FIELD field_997 compiledFunctions Ljava/util/function/BiFunction;
-	FIELD field_998 choice Lnet/minecraft/class_82;
 	FIELD field_31847 DEFAULT_WEIGHT I
 	FIELD field_31848 DEFAULT_QUALITY I
-	METHOD <init> (IILjava/util/List;Ljava/util/List;)V
+	METHOD <init> (IILjava/util/Optional;Ljava/util/Optional;)V
 		ARG 1 weight
 		ARG 2 quality
-		ARG 3 conditions
-		ARG 4 functions
-	METHOD method_433 generateLoot (Ljava/util/function/Consumer;Lnet/minecraft/class_47;)V
-		ARG 1 lootConsumer
-		ARG 2 context
 	METHOD method_434 builder (Lnet/minecraft/class_85$class_89;)Lnet/minecraft/class_85$class_86;
 		ARG 0 factory
-	METHOD method_53289 (Lnet/minecraft/class_85;)Ljava/util/List;
-		ARG 0 entry
-	METHOD method_53290 addLeafFields (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/Products$P4;
-		ARG 0 instance
 	METHOD method_53291 (Lnet/minecraft/class_85;)Ljava/lang/Integer;
 		ARG 0 entry
 	METHOD method_53292 (Lnet/minecraft/class_85;)Ljava/lang/Integer;
 		ARG 0 entry
 	CLASS class_86 Builder
-		FIELD field_999 functions Lcom/google/common/collect/ImmutableList$Builder;
 		FIELD field_1000 quality I
 		FIELD field_1001 weight I
 		METHOD method_436 quality (I)Lnet/minecraft/class_85$class_86;
 			ARG 1 quality
 		METHOD method_437 weight (I)Lnet/minecraft/class_85$class_86;
 			ARG 1 weight
-		METHOD method_439 getFunctions ()Ljava/util/List;
 	CLASS class_87 BasicBuilder
 		FIELD field_1003 factory Lnet/minecraft/class_85$class_89;
 		METHOD <init> (Lnet/minecraft/class_85$class_89;)V
 			ARG 1 factory
 	CLASS class_88 Choice
 	CLASS class_89 Factory
-		METHOD method_1_350 build (IILjava/util/List;Ljava/util/List;)Lnet/minecraft/class_85;
-			ARG 1 weight
-			ARG 2 quality
-			ARG 3 conditions
-			ARG 4 functions
+		METHOD method_1_350 build (IILjava/util/Optional;Ljava/util/Optional;)Lnet/minecraft/class_85;

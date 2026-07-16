@@ -36,7 +36,6 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	FIELD field_60104 globalSettings Lnet/minecraft/class_11284;
 	FIELD field_60105 worldProjectionMatrix Lnet/minecraft/class_11278;
 	FIELD field_60106 hudProjectionMatrix Lnet/minecraft/class_11278;
-	FIELD field_60107 PERSPECTIVE_FAR_DISTANCE F
 	FIELD field_60580 rotatingPanoramaRenderer Lnet/minecraft/class_766;
 	FIELD field_60793 fogRenderer Lnet/minecraft/class_758;
 	FIELD field_61733 orderedRenderCommandQueue Lnet/minecraft/class_11661;
@@ -45,8 +44,8 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 		ARG 1 client
 		ARG 2 firstPersonHeldItemRenderer
 		ARG 3 bakedModelManager
-	METHOD method_1_430 getWorldLightmapTextureView ()Lnet/minecraft/class_1_1260;
-	METHOD method_1_431 getLightmapTextureView ()Lnet/minecraft/class_1_1260;
+	METHOD method_1_430 getWorldLightmapTextureView ()Lnet/minecraft/class_1_1330;
+	METHOD method_1_431 getLightmapTextureView ()Lnet/minecraft/class_1_1330;
 	METHOD method_1_2674 extract (Lnet/minecraft/class_9779;Z)V
 		ARG 1 renderTickCounter
 		ARG 2 tick
@@ -54,9 +53,7 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	METHOD method_1_2677 updateWindowRenderState ()V
 	METHOD method_1_2678 registerPanoramaTextures (Lnet/minecraft/class_1060;)V
 		ARG 1 textureManager
-	METHOD method_1_2679 render (Lnet/minecraft/class_9779;Z)V
-		ARG 1 renderTickCounter
-		ARG 2 tick
+	METHOD method_1_2679 render ()V
 	METHOD method_1_2680 tickCamera (Lnet/minecraft/class_9779;)V
 		ARG 1 renderTickCounter
 	METHOD method_1_4829 getFramebuffer ()Lnet/minecraft/class_276;
@@ -73,10 +70,8 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	METHOD method_3169 onResized (II)V
 		ARG 1 width
 		ARG 2 height
-	METHOD method_3172 renderHand (Lnet/minecraft/class_12075;FLorg/joml/Matrix4fc;)V
+	METHOD method_3172 renderHand (Lnet/minecraft/class_12075;Lnet/minecraft/class_1_1330;)V
 		ARG 1 cameraRenderState
-		ARG 2 tickProgress
-		ARG 3 rotationMatrix
 	METHOD method_3174 getNightVisionStrength (Lnet/minecraft/class_1309;F)F
 		ARG 0 entity
 		ARG 1 tickProgress
@@ -87,8 +82,7 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	METHOD method_3186 bobView (Lnet/minecraft/class_12075;Lnet/minecraft/class_4587;)V
 		ARG 1 cameraRenderState
 		ARG 2 matrices
-	METHOD method_3188 renderWorld (Lnet/minecraft/class_9779;)V
-		ARG 1 renderTickCounter
+	METHOD method_3188 renderWorld ()V
 	METHOD method_3189 showFloatingItem (Lnet/minecraft/class_1799;)V
 		ARG 1 floatingItem
 	METHOD method_3195 getSkyDarkness (F)F
@@ -123,7 +117,6 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	METHOD method_71649 getRotatingPanoramaRenderer ()Lnet/minecraft/class_766;
 	METHOD method_72911 getEntityRenderDispatcher ()Lnet/minecraft/class_11684;
 	METHOD method_72912 getRenderState ()Lnet/minecraft/class_1_405;
-	METHOD method_74920 updateCameraState (Lnet/minecraft/class_9779;FF)V
+	METHOD method_74920 updateCameraState (Lnet/minecraft/class_9779;F)V
 		ARG 1 renderTickCounter
 		ARG 2 skyTickProgress
-		ARG 3 cameraTickProgress

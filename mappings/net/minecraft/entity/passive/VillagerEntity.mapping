@@ -3,7 +3,6 @@ CLASS net/minecraft/class_1646 net/minecraft/entity/passive/VillagerEntity
 	FIELD field_1_1197 PROFILE Lnet/minecraft/class_4095$class_5303;
 	FIELD field_1_1851 BABY_DIMENSIONS Lnet/minecraft/class_4048;
 	FIELD field_7445 VILLAGER_DATA Lnet/minecraft/class_2940;
-	FIELD field_18526 ITEM_FOOD_VALUES Ljava/util/Map;
 	FIELD field_18528 levelUpTimer I
 	FIELD field_18529 levelingUp Z
 	FIELD field_18530 lastCustomer Lnet/minecraft/class_1657;
@@ -27,8 +26,6 @@ CLASS net/minecraft/class_1646 net/minecraft/entity/passive/VillagerEntity
 		ARG 1 offers
 	METHOD method_16918 levelUp (Lnet/minecraft/class_3218;)V
 		ARG 1 world
-	METHOD method_19172 (Lnet/minecraft/class_1277;Ljava/util/Map$Entry;)I
-		ARG 1 item
 	METHOD method_19174 initBrain (Lnet/minecraft/class_4095;)V
 		ARG 1 brain
 	METHOD method_19176 releaseTicketFor (Lnet/minecraft/class_4140;)V

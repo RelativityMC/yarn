@@ -11,4 +11,4 @@ CLASS net/minecraft/class_4608 net/minecraft/client/render/OverlayTexture
 	METHOD method_23625 packUv (II)I
 		ARG 0 u
 		ARG 1 v
-	METHOD method_76037 getTextureView ()Lnet/minecraft/class_1_1260;
+	METHOD method_76037 getTextureView ()Lnet/minecraft/class_1_1330;

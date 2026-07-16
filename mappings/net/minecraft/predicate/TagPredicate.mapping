@@ -1,13 +1,11 @@
 CLASS net/minecraft/class_8129 net/minecraft/predicate/TagPredicate
-	METHOD <init> (Lnet/minecraft/class_6862;Z)V
-		ARG 1 tag
+	METHOD <init> (Lnet/minecraft/class_6885;Z)V
 		ARG 2 expected
-	METHOD method_48965 expected (Lnet/minecraft/class_6862;)Lnet/minecraft/class_8129;
-		ARG 0 tag
+	METHOD method_48965 expected (Lnet/minecraft/class_7871;Lnet/minecraft/class_6862;)Lnet/minecraft/class_8129;
+		ARG 1 tag
 	METHOD method_48967 test (Lnet/minecraft/class_6880;)Z
-		ARG 1 registryEntry
-	METHOD method_48968 unexpected (Lnet/minecraft/class_6862;)Lnet/minecraft/class_8129;
-		ARG 0 tag
+	METHOD method_48968 unexpected (Lnet/minecraft/class_7871;Lnet/minecraft/class_6862;)Lnet/minecraft/class_8129;
+		ARG 1 tag
 	METHOD method_53245 createCodec (Lnet/minecraft/class_5321;)Lcom/mojang/serialization/Codec;
 		ARG 0 registryRef
 	METHOD method_53246 (Lnet/minecraft/class_5321;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

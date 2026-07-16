@@ -4,8 +4,7 @@ CLASS net/minecraft/class_9317 net/minecraft/loot/function/CopyComponentsLootFun
 	FIELD field_50202 include Ljava/util/Optional;
 	FIELD field_50203 exclude Ljava/util/Optional;
 	FIELD field_50204 filter Ljava/util/function/Predicate;
-	METHOD <init> (Ljava/util/List;Lnet/minecraft/class_12283;Ljava/util/Optional;Ljava/util/Optional;)V
-		ARG 1 conditions
+	METHOD <init> (Ljava/util/Optional;Lnet/minecraft/class_12283;Ljava/util/Optional;Ljava/util/Optional;)V
 		ARG 2 source
 		ARG 3 include
 		ARG 4 exclude

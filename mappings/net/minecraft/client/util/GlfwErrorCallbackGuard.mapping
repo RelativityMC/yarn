@@ -1,5 +1,0 @@
-CLASS net/minecraft/class_1_3 net/minecraft/client/util/GlfwErrorCallbackGuard
-	FIELD field_1_20 currentCallback Lorg/lwjgl/glfw/GLFWErrorCallback;
-	FIELD field_1_21 previousCallback Lorg/lwjgl/glfw/GLFWErrorCallback;
-	METHOD <init> (Lorg/lwjgl/glfw/GLFWErrorCallbackI;)V
-		ARG 1 callback

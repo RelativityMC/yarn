@@ -6,8 +6,7 @@ CLASS net/minecraft/class_9375 net/minecraft/loot/function/SetFireworkExplosionL
 	FIELD field_49878 fadeColors Ljava/util/Optional;
 	FIELD field_49879 trail Ljava/util/Optional;
 	FIELD field_49880 twinkle Ljava/util/Optional;
-	METHOD <init> (Ljava/util/List;Ljava/util/Optional;Ljava/util/Optional;Ljava/util/Optional;Ljava/util/Optional;Ljava/util/Optional;)V
-		ARG 1 conditions
+	METHOD <init> (Ljava/util/Optional;Ljava/util/Optional;Ljava/util/Optional;Ljava/util/Optional;Ljava/util/Optional;Ljava/util/Optional;)V
 		ARG 2 shape
 		ARG 3 colors
 		ARG 4 fadeColors

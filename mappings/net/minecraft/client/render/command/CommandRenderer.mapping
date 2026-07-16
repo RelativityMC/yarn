@@ -1,10 +1,9 @@
 CLASS net/minecraft/class_1_863 net/minecraft/client/render/command/CommandRenderer
 	METHOD method_1_5242 beginPrepare (Lnet/minecraft/class_1_841;)V
 		ARG 1 context
-	METHOD method_1_5243 render (Lnet/minecraft/class_1_841;Lnet/minecraft/class_1_1153;Lnet/minecraft/class_1_1227;ILjava/util/List;Z)V
+	METHOD method_1_5243 render (Lnet/minecraft/class_1_841;Lnet/minecraft/class_1_1153;Lnet/minecraft/class_1_1317;ILjava/util/List;Z)V
 		ARG 1 context
 		ARG 2 oitStage
-		ARG 3 renderPass
 		ARG 4 groupIndex
 		ARG 5 commands
 		ARG 6 separateMultiBuffers

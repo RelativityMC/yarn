@@ -1,4 +1,4 @@
-CLASS net/minecraft/util/profiling/jfr/event/ServerTickTimeEvent
+CLASS net/minecraft/class_1_1356
 	METHOD <init> (F)V
 		ARG 1 averageTickMilliseconds
 	CLASS class_6601 Names

@@ -1,5 +1,0 @@
-CLASS com/mojang/blaze3d/buffers/Std140Builder
-	METHOD align (I)Lcom/mojang/blaze3d/buffers/Std140Builder;
-		ARG 1 alignedSize
-	METHOD putMat4f (Lorg/joml/Matrix4fc;)Lcom/mojang/blaze3d/buffers/Std140Builder;
-		ARG 1 matrix

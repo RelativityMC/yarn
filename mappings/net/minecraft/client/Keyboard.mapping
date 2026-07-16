@@ -10,19 +10,9 @@ CLASS net/minecraft/class_309 net/minecraft/client/Keyboard
 	FIELD field_60432 LOGGER Lorg/slf4j/Logger;
 	METHOD <init> (Lnet/minecraft/class_310;)V
 		ARG 1 client
-	METHOD method_1_2480 (JIJIJII)V
-		ARG 1 window
-		ARG 3 preEditCount
-		ARG 4 preEditStringPtr
-		ARG 6 blockCount
-		ARG 7 blockSizesPtr
-		ARG 9 focusedBlock
-		ARG 10 caret
 	METHOD method_1_2482 onImePreEdit (JLnet/minecraft/class_1_359;)V
 		ARG 1 window
 		ARG 3 preEdit
-	METHOD method_1_2579 (J)V
-		ARG 1 window
 	METHOD method_1_3100 handleCurrentPreEdit (Lnet/minecraft/class_364;)V
 		ARG 1 element
 	METHOD method_1_3101 onImePreEdit (Lnet/minecraft/class_364;Lnet/minecraft/class_1_359;)V
@@ -38,9 +28,6 @@ CLASS net/minecraft/class_309 net/minecraft/client/Keyboard
 	METHOD method_1459 debugLogTranslatable (Ljava/lang/String;)V
 		ARG 1 key
 	METHOD method_1460 getClipboard ()Ljava/lang/String;
-	METHOD method_1461 (IJ)V
-		ARG 1 error
-		ARG 2 description
 	METHOD method_1465 copyLookAt (ZZ)V
 		ARG 1 hasQueryPermission
 		ARG 2 queryServer
@@ -58,22 +45,11 @@ CLASS net/minecraft/class_309 net/minecraft/client/Keyboard
 		ARG 3 nbt
 	METHOD method_1471 (Lnet/minecraft/class_2960;Lnet/minecraft/class_1297;Lnet/minecraft/class_2487;)V
 		ARG 3 nbt
-	METHOD method_1472 setup (Lnet/minecraft/class_1041;)V
-		ARG 1 window
 	METHOD method_1474 pollDebugCrash ()V
 	METHOD method_1475 copyBlock (Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_2487;)V
 		ARG 1 state
 		ARG 2 pos
 		ARG 3 nbt
-	METHOD method_22675 (JI)V
-		ARG 1 window
-		ARG 3 codePoint
-	METHOD method_22676 (JIIII)V
-		ARG 1 handle
-		ARG 3 key
-		ARG 4 scancode
-		ARG 5 action
-		ARG 6 modifiers
 	METHOD method_35696 processDebugKeys (Lnet/minecraft/class_11908;)Z
 		ARG 1 input
 	METHOD method_37272 debugLog (Lnet/minecraft/class_2561;)V

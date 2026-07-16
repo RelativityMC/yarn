@@ -16,7 +16,6 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	FIELD field_5185 windowedY I
 	FIELD field_5186 fullscreenVideoModeDirty Z
 	FIELD field_5187 handle J
-	FIELD field_5190 errorCallback Lorg/lwjgl/glfw/GLFWErrorCallback;
 	FIELD field_5191 fullscreen Z
 	FIELD field_5192 phase Ljava/lang/String;
 	FIELD field_5193 fullscreenVideoMode Ljava/util/Optional;
@@ -25,7 +24,6 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	FIELD field_5196 framebufferHeight I
 	FIELD field_5197 height I
 	FIELD field_5198 y I
-	FIELD field_16517 vsync Z
 	FIELD field_52250 FRAMEBUFFER_WIDTH_SCALE I
 	FIELD field_52251 FRAMEBUFFER_HEIGHT_SCALE I
 	FIELD field_52735 minimized Z
@@ -41,20 +39,12 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 		ARG 6 monitorTracker
 		ARG 7 backend
 	METHOD method_1_2661 getBackend ()Lnet/minecraft/class_1_11;
-	METHOD method_1_2662 createHandle (IILjava/lang/String;JLnet/minecraft/class_1_11;)J
-		ARG 0 width
-		ARG 1 height
-		ARG 2 title
-		ARG 3 monitor
-		ARG 5 backend
-	METHOD method_1_2663 createHandle (Lnet/minecraft/class_1_11;IILjava/lang/String;J)J
-		ARG 1 backend
+	METHOD method_1_2662 createHandle (Lnet/minecraft/class_1_11;IILjava/lang/String;)J
 		ARG 2 width
 		ARG 3 height
 		ARG 4 title
-		ARG 5 monitor
 	METHOD method_1_2666 updateFullscreenIfNeeded ()V
-	METHOD method_1_3099 clampToPositive (I)I
+	METHOD method_1_3099 clampToPositive (II)I
 		ARG 0 x
 	METHOD method_1_3138 isFocused ()Z
 	METHOD method_1_6373 shouldReserveOneRow ()Z
@@ -65,62 +55,39 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 		ARG 1 guiScale
 		ARG 2 forceUnicodeFont
 	METHOD method_4477 getY ()I
-	METHOD method_4478 onWindowPosChanged (JII)V
-		ARG 1 window
-		ARG 3 x
-		ARG 4 y
+	METHOD method_4478 onWindowPosChanged (II)V
+		ARG 1 x
+		ARG 2 y
 	METHOD method_4479 updateWindowRegion ()V
 	METHOD method_4480 getWidth ()I
-	METHOD method_4481 throwOnGlError ()V
-	METHOD method_4482 logGlfwError (IJ)V
-		ARG 1 error
-		ARG 2 description
 	METHOD method_4483 updateFramebufferSize ()V
 	METHOD method_4486 getScaledWidth ()I
-	METHOD method_4488 onWindowSizeChanged (JII)V
-		ARG 1 window
-		ARG 3 width
-		ARG 4 height
+	METHOD method_4488 onWindowSizeChanged (II)V
+		ARG 1 width
+		ARG 2 height
 	METHOD method_4489 getFramebufferWidth ()I
 	METHOD method_4490 getHandle ()J
-	METHOD method_4491 setIcon (Lnet/minecraft/class_3262;Lnet/minecraft/class_8518;)V
-		ARG 1 resourcePack
+	METHOD method_4491 setIcon (Lnet/minecraft/class_1_1068;Lnet/minecraft/class_8518;)V
 		ARG 2 icons
-	METHOD method_4492 acceptError (Ljava/util/function/BiConsumer;)V
-		ARG 0 consumer
-	METHOD method_4494 onWindowFocusChanged (JZ)V
-		ARG 1 window
-		ARG 3 focused
+	METHOD method_4494 onWindowFocusChanged (Z)V
+		ARG 1 focused
 	METHOD method_4495 getScaleFactor ()I
 	METHOD method_4498 isFullscreen ()Z
 	METHOD method_4499 getX ()I
-	METHOD method_4500 toggleFullscreen ()V
-	METHOD method_4501 throwGlfwError (IJ)V
-		ARG 0 error
-		ARG 1 description
 	METHOD method_4502 getScaledHeight ()I
-	METHOD method_4504 onFramebufferSizeChanged (JII)V
-		ARG 1 window
-		ARG 3 width
-		ARG 4 height
+	METHOD method_4504 onFramebufferSizeChanged (II)V
+		ARG 1 width
+		ARG 2 height
 	METHOD method_4505 setFullscreenVideoMode (Ljava/util/Optional;)V
 		ARG 1 fullscreenVideoMode
 	METHOD method_4506 getFramebufferHeight ()I
 	METHOD method_4507 getHeight ()I
 	METHOD method_4511 getFullscreenVideoMode ()Ljava/util/Optional;
-	METHOD method_4513 logOnGlfwError ()V
 	METHOD method_15997 setScaleFactor (I)V
 		ARG 1 scaleFactor
 	METHOD method_20831 getMonitor ()Lnet/minecraft/class_313;
-	METHOD method_21668 setRawMouseMotion (Z)V
-		ARG 1 rawMouseMotion
-	METHOD method_22092 getRefreshRate ()I
-	METHOD method_22093 shouldClose ()Z
 	METHOD method_24286 setTitle (Ljava/lang/String;)V
 		ARG 1 title
-	METHOD method_30132 onCursorEnterChanged (JZ)V
-		ARG 1 window
-		ARG 3 entered
 	METHOD method_35642 setFramebufferWidth (I)V
 		ARG 1 framebufferWidth
 	METHOD method_35643 setFramebufferHeight (I)V
@@ -131,11 +98,8 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	METHOD method_60793 getGlfwPlatform ()Ljava/lang/String;
 	METHOD method_61943 setCloseCallback (Ljava/lang/Runnable;)V
 		ARG 1 callback
-	METHOD method_61944 (Ljava/lang/Runnable;J)V
-		ARG 1 window
-	METHOD method_61945 onMinimizeChanged (JZ)V
-		ARG 1 window
-		ARG 3 minimized
+	METHOD method_61945 onMinimizeChanged (Z)V
+		ARG 1 minimized
 	METHOD method_61946 isMinimized ()Z
 	METHOD method_65966 hasZeroWidthOrHeight ()Z
 	METHOD method_74029 setCursor (Lnet/minecraft/class_11875;)V

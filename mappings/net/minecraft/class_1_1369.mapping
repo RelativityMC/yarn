@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_1369
+	METHOD method_447 grow (Ljava/util/function/Consumer;)Z

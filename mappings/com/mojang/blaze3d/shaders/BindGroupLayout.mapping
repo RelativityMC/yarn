@@ -1,9 +1,8 @@
 CLASS net/minecraft/class_1_794 com/mojang/blaze3d/shaders/BindGroupLayout
-	FIELD field_1_5657 samplers Ljava/util/List;
-	FIELD field_1_5658 buffers Ljava/util/List;
-	METHOD <init> (Ljava/util/List;Ljava/util/List;)V
-		ARG 1 samplers
-		ARG 2 buffers
+	FIELD comp_1_1381 samplers Ljava/util/List;
+	FIELD comp_1_1382 buffers Ljava/util/List;
+	METHOD comp_1_1381 samplers ()Ljava/util/List;
+	METHOD comp_1_1382 buffers ()Ljava/util/List;
 	METHOD method_1_4832 builder ()Lnet/minecraft/class_1_794$class_1_795;
 	METHOD method_1_4833 validate (Ljava/util/List;)V
 		ARG 0 layouts
@@ -11,8 +10,6 @@ CLASS net/minecraft/class_1_794 com/mojang/blaze3d/shaders/BindGroupLayout
 		ARG 0 layouts
 	METHOD method_1_4835 getBuffers (Ljava/util/List;)Ljava/util/List;
 		ARG 0 layouts
-	METHOD method_1_4836 getSamplers ()Ljava/util/List;
-	METHOD method_1_4837 getBuffers ()Ljava/util/List;
 	CLASS class_1_795 Builder
 		FIELD field_1_5659 samplers Ljava/util/List;
 		FIELD field_1_5660 buffers Ljava/util/List;

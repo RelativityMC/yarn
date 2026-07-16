@@ -1,43 +1,37 @@
-CLASS com/mojang/blaze3d/systems/RenderSystem
-	METHOD bindDefaultUniforms (Lnet/minecraft/class_1_1227;)V
-		ARG 0 pass
-	METHOD enableScissorForRenderTypeDraws (IIII)V
+CLASS net/minecraft/class_1_1307
+	METHOD method_1_8498 (IIII)V
 		ARG 0 x
 		ARG 1 y
 		ARG 2 width
 		ARG 3 height
-	METHOD getCompiledPipeline (Lnet/minecraft/class_1_1257;)Lnet/minecraft/class_1_1285;
+	METHOD method_1_8501 (Lnet/minecraft/class_1_1257;)Lnet/minecraft/class_1_1285;
 		ARG 0 pipeline
-	METHOD getCompiledPipelineNullable (Lnet/minecraft/class_1_1257;)Lnet/minecraft/class_1_1285;
+	METHOD method_1_8502 (Lnet/minecraft/class_1_1257;)Lnet/minecraft/class_1_1285;
 		ARG 0 pipeline
-	METHOD getSequentialBuffer (Lnet/minecraft/class_5596;)Lcom/mojang/blaze3d/systems/RenderSystem$class_5590;
+	METHOD method_1_8512 (Lnet/minecraft/class_5596;)Lnet/minecraft/class_1_1307$class_5590;
 		ARG 0 drawMode
-	METHOD initBackendSystem ()Lnet/minecraft/class_7576$class_7577;
+	METHOD method_1_8515 ()Lnet/minecraft/class_7576$class_7577;
 		COMMENT {@return a {@link TimeSupplier} that retrieves elapsed time from the backend}
-	METHOD initRenderer (Lnet/minecraft/class_1_1209;)V
-		ARG 0 device
-	METHOD lambda$static$0 (Lit/unimi/dsi/fastutil/ints/IntConsumer;I)V
+	METHOD method_1_8520 (Lit/unimi/dsi/fastutil/ints/IntConsumer;I)V
 		ARG 0 indexConsumer
 		ARG 1 firstVertexIndex
-	METHOD lambda$static$1 (Lit/unimi/dsi/fastutil/ints/IntConsumer;I)V
+	METHOD method_1_8521 (Lit/unimi/dsi/fastutil/ints/IntConsumer;I)V
 		ARG 0 indexConsumer
 		ARG 1 firstVertexIndex
-	METHOD queueFencedTask (Ljava/lang/Runnable;)V
+	METHOD method_1_8524 (Ljava/lang/Runnable;)V
 		ARG 0 task
-	METHOD setCurrentPipelineCache (Lnet/minecraft/class_1_1152;)Lnet/minecraft/class_1_1152;
+	METHOD method_1_8527 (Lnet/minecraft/class_1_1152;)Lnet/minecraft/class_1_1152;
 		ARG 0 currentPipelineCache
-	METHOD setErrorCallback (Lorg/lwjgl/glfw/GLFWErrorCallbackI;)V
-		ARG 0 callback
-	METHOD setFallbackPipelineCache (Lnet/minecraft/class_1_1152;)V
+	METHOD method_1_8528 (Lnet/minecraft/class_1_1152;)V
 		ARG 0 fallbackPipelineCache
-	METHOD setGlobalSettingsUniform (Lnet/minecraft/class_1_1211;)V
+	METHOD method_1_8529 (Lnet/minecraft/class_1_1211;)V
 		ARG 0 globalSettingsUniform
-	METHOD setProjectionMatrix (Lnet/minecraft/class_1_1254;Lnet/minecraft/class_10366;)V
+	METHOD method_1_8530 (Lnet/minecraft/class_1_1254;Lnet/minecraft/class_10366;)V
 		ARG 0 projectionMatrixBuffer
 		ARG 1 projectionType
-	METHOD setShaderFog (Lnet/minecraft/class_1_1254;)V
+	METHOD method_1_8531 (Lnet/minecraft/class_1_1254;)V
 		ARG 0 shaderFog
-	METHOD setShaderLights (Lnet/minecraft/class_1_1254;)V
+	METHOD method_1_8532 (Lnet/minecraft/class_1_1254;)V
 		ARG 0 shaderLightDirections
 	CLASS class_5590 ShapeIndexBuffer
 		COMMENT An index buffer that holds a pre-made indices for a specific shape. If
@@ -47,11 +41,11 @@ CLASS com/mojang/blaze3d/systems/RenderSystem
 		FIELD field_1_7964 deferredSize I
 		FIELD field_27332 vertexCountInShape I
 		FIELD field_27333 vertexCountInTriangulated I
-		FIELD field_27334 triangulator Lcom/mojang/blaze3d/systems/RenderSystem$class_5590$class_5591;
+		FIELD field_27334 triangulator Lnet/minecraft/class_1_1307$class_5590$class_5591;
 		FIELD field_27336 indexType Lnet/minecraft/class_5595;
 		FIELD field_27337 size I
 		FIELD field_54299 indexBuffer Lnet/minecraft/class_1_1211;
-		METHOD <init> (IILcom/mojang/blaze3d/systems/RenderSystem$class_5590$class_5591;)V
+		METHOD <init> (IILnet/minecraft/class_1_1307$class_5590$class_5591;)V
 			ARG 1 vertexCountInShape
 				COMMENT the number of vertices in a shape
 			ARG 2 vertexCountInTriangulated

@@ -1,41 +1,36 @@
 CLASS net/minecraft/class_1_900 com/mojang/blaze3d/pipeline/RenderPassDescription
-	FIELD field_1_6326 labelGetter Ljava/util/function/Supplier;
-	FIELD field_1_8128 colorAttachments Ljava/util/List;
-	FIELD field_1_8129 depthAttachment Lnet/minecraft/class_1_900$class_1_901;
-	FIELD field_1_8130 renderArea Lnet/minecraft/class_1_1227$class_1_837;
-	METHOD <init> (Ljava/util/function/Supplier;Ljava/util/List;Lnet/minecraft/class_1_900$class_1_901;Lnet/minecraft/class_1_1227$class_1_837;)V
+	FIELD comp_1_1406 colorAttachments Ljava/util/List;
+	FIELD comp_1_1407 depthAttachment Lnet/minecraft/class_1_900$class_1_901;
+	FIELD comp_1_1408 labelGetter Ljava/util/function/Supplier;
+	FIELD comp_1_1409 renderArea Lnet/minecraft/class_1_1317$class_1_837;
+	METHOD <init> (Ljava/util/function/Supplier;Ljava/util/List;Lnet/minecraft/class_1_900$class_1_901;Lnet/minecraft/class_1_1317$class_1_837;)V
 		ARG 1 labelGetter
-		ARG 2 colorAttachments
 		ARG 3 depthAttachments
 		ARG 4 renderArea
-	METHOD method_1_5424 getColorAttachments ()Ljava/util/List;
-	METHOD method_1_5426 getDepthAttachment ()Lnet/minecraft/class_1_900$class_1_901;
-	METHOD method_1_5427 getLabelGetter ()Ljava/util/function/Supplier;
+	METHOD comp_1_1406 colorAttachments ()Ljava/util/List;
+	METHOD comp_1_1407 depthAttachment ()Lnet/minecraft/class_1_900$class_1_901;
+	METHOD comp_1_1408 labelGetter ()Ljava/util/function/Supplier;
+	METHOD comp_1_1409 renderArea ()Lnet/minecraft/class_1_1317$class_1_837;
 	METHOD method_1_7408 builder (Ljava/util/function/Supplier;)Lnet/minecraft/class_1_900$class_1_1164;
 		ARG 0 labelGetter
-	METHOD method_1_7409 getRenderArea ()Lnet/minecraft/class_1_1227$class_1_837;
 	CLASS class_1_901 Attachment
 	CLASS class_1_1164 Builder
 		FIELD field_1_8131 colorAttachments Ljava/util/List;
 		FIELD field_1_8132 depthAttachments Lnet/minecraft/class_1_900$class_1_901;
 		FIELD field_1_8133 labelGetter Ljava/util/function/Supplier;
-		FIELD field_1_8134 renderArea Lnet/minecraft/class_1_1227$class_1_837;
+		FIELD field_1_8134 renderArea Lnet/minecraft/class_1_1317$class_1_837;
 		METHOD <init> (Ljava/util/function/Supplier;)V
 			ARG 1 labelGetter
 		METHOD method_1_7410 build ()Lnet/minecraft/class_1_900;
-		METHOD method_1_7411 calculateRenderArea (Ljava/util/List;Lnet/minecraft/class_1_900$class_1_901;)Lnet/minecraft/class_1_1227$class_1_837;
+		METHOD method_1_7411 calculateRenderArea (Ljava/util/List;Lnet/minecraft/class_1_900$class_1_901;)Lnet/minecraft/class_1_1317$class_1_837;
 			ARG 0 colorAttachments
 			ARG 1 depthAttachments
-		METHOD method_1_7412 colorAttachment (Lnet/minecraft/class_1_1260;)Lnet/minecraft/class_1_900$class_1_1164;
-			ARG 1 textureView
-		METHOD method_1_7413 colorAttachment (Lnet/minecraft/class_1_1260;Ljava/util/Optional;)Lnet/minecraft/class_1_900$class_1_1164;
-			ARG 1 textureView
+		METHOD method_1_7412 colorAttachment (Lnet/minecraft/class_1_1330;)Lnet/minecraft/class_1_900$class_1_1164;
+		METHOD method_1_7413 colorAttachment (Lnet/minecraft/class_1_1330;Ljava/util/Optional;)Lnet/minecraft/class_1_900$class_1_1164;
 			ARG 2 clearColor
-		METHOD method_1_7414 depthAttachment (Lnet/minecraft/class_1_1260;)Lnet/minecraft/class_1_900$class_1_1164;
-			ARG 1 textureView
-		METHOD method_1_7415 depthAttachment (Lnet/minecraft/class_1_1260;Ljava/util/OptionalDouble;)Lnet/minecraft/class_1_900$class_1_1164;
-			ARG 1 textureView
+		METHOD method_1_7414 depthAttachment (Lnet/minecraft/class_1_1330;)Lnet/minecraft/class_1_900$class_1_1164;
+		METHOD method_1_7415 depthAttachment (Lnet/minecraft/class_1_1330;Ljava/util/OptionalDouble;)Lnet/minecraft/class_1_900$class_1_1164;
 			ARG 2 clearDepth
-		METHOD method_1_7416 renderArea (Lnet/minecraft/class_1_1227$class_1_837;)Lnet/minecraft/class_1_900$class_1_1164;
+		METHOD method_1_7416 renderArea (Lnet/minecraft/class_1_1317$class_1_837;)Lnet/minecraft/class_1_900$class_1_1164;
 			ARG 1 renderArea
 		METHOD method_1_7417 unusedColorAttachment ()Lnet/minecraft/class_1_900$class_1_1164;

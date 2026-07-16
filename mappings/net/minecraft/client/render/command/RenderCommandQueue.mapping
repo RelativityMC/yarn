@@ -64,14 +64,13 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 1 matrices
 		ARG 2 shadowRadius
 		ARG 3 shadowPieces
-	METHOD method_73480 submitItem (Lnet/minecraft/class_4587;Lnet/minecraft/class_811;III[ILjava/util/List;Lnet/minecraft/class_10444$class_10445;)V
+	METHOD method_73480 submitItem (Lnet/minecraft/class_4587;Lnet/minecraft/class_811;III[ILnet/minecraft/class_1_1348;Lnet/minecraft/class_10444$class_10445;)V
 		ARG 1 matrices
 		ARG 2 displayContext
 		ARG 3 light
 		ARG 4 overlay
 		ARG 5 outlineColor
 		ARG 6 tintLayers
-		ARG 7 quads
 		ARG 8 glintType
 	METHOD method_73482 submitLabel (Lnet/minecraft/class_4587;Lnet/minecraft/class_243;ILnet/minecraft/class_2561;ZILnet/minecraft/class_12075;)V
 		ARG 1 matrices

@@ -5,9 +5,9 @@ CLASS net/minecraft/class_5219 net/minecraft/world/SaveProperties
 		ARG 1 singleplayerUuid
 	METHOD method_1_6379 setAllowCommands (Z)V
 		ARG 1 allowCommands
-	METHOD method_150 getLevelName ()Ljava/lang/String;
-	METHOD method_151 populateCrashReport (Lnet/minecraft/class_129;)V
+	METHOD method_1_8634 populateCrashReport (Lnet/minecraft/class_129;)V
 		ARG 1 section
+	METHOD method_150 getLevelName ()Ljava/lang/String;
 	METHOD method_152 isHardcore ()Z
 	METHOD method_168 getVersion ()I
 	METHOD method_186 setDifficultyLocked (Z)V

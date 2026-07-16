@@ -41,7 +41,7 @@ CLASS net/minecraft/class_10444 net/minecraft/client/render/item/ItemRenderState
 		FIELD field_55351 data Ljava/lang/Object;
 		FIELD field_56962 DEFAULT Ljava/util/function/Supplier;
 		FIELD field_56963 EMPTY [Lorg/joml/Vector3fc;
-		FIELD field_56964 quads Ljava/util/List;
+		FIELD field_56964 quads Lnet/minecraft/class_1_1348;
 		FIELD field_56965 useLight Z
 		FIELD field_56967 transform Lnet/minecraft/class_804;
 		FIELD field_56968 vertices Ljava/util/function/Supplier;
@@ -72,4 +72,3 @@ CLASS net/minecraft/class_10444 net/minecraft/client/render/item/ItemRenderState
 			ARG 1 vertices
 		METHOD method_67996 setUseLight (Z)V
 			ARG 1 useLight
-		METHOD method_67997 getQuads ()Ljava/util/List;

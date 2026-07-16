@@ -1,17 +1,17 @@
 CLASS net/minecraft/class_1_15 net/minecraft/village/TradeSet
-	FIELD field_1_113 allowDuplicates Z
-	FIELD field_1_114 amount Lnet/minecraft/class_5658;
-	FIELD field_1_115 randomSequence Ljava/util/Optional;
-	FIELD field_1_116 trades Lnet/minecraft/class_6885;
-	METHOD <init> (Lnet/minecraft/class_6885;Lnet/minecraft/class_5658;ZLjava/util/Optional;)V
+	FIELD comp_1_1355 allowDuplicates Z
+	FIELD comp_1_1356 amount Lnet/minecraft/class_6880;
+	FIELD comp_1_1357 randomSequence Ljava/util/Optional;
+	FIELD comp_1_1358 trades Lnet/minecraft/class_6885;
+	METHOD <init> (Lnet/minecraft/class_6885;Lnet/minecraft/class_6880;ZLjava/util/Optional;)V
 		ARG 1 trades
-		ARG 2 amount
 		ARG 3 allowDuplicates
 		ARG 4 randomSequence
-	METHOD method_1_421 allowsDuplicates ()Z
+	METHOD comp_1_1355 allowDuplicates ()Z
+	METHOD comp_1_1356 amount ()Lnet/minecraft/class_6880;
+	METHOD comp_1_1357 randomSequence ()Ljava/util/Optional;
+	METHOD comp_1_1358 trades ()Lnet/minecraft/class_6885;
 	METHOD method_1_422 sampleAmount (Lnet/minecraft/class_47;)I
 		ARG 1 context
-	METHOD method_1_423 getTrades ()Lnet/minecraft/class_6885;
 	METHOD method_1_424 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
-	METHOD method_1_429 getRandomSequence ()Ljava/util/Optional;

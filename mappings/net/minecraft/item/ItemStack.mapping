@@ -445,12 +445,12 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 		ARG 1 type
 		ARG 2 defaultValue
 		ARG 3 applier
-	METHOD method_57369 appendComponentTooltip (Lnet/minecraft/class_9331;Lnet/minecraft/class_1792$class_9635;Lnet/minecraft/class_10712;Ljava/util/function/Consumer;Lnet/minecraft/class_1836;)V
+	METHOD method_57369 appendComponentTooltip (Lnet/minecraft/class_9331;Lnet/minecraft/class_9299$class_1_1332;Lnet/minecraft/class_1792$class_9635;Lnet/minecraft/class_10712;Ljava/util/function/Consumer;Lnet/minecraft/class_1836;)V
 		ARG 1 componentType
-		ARG 2 context
-		ARG 3 displayComponent
-		ARG 4 textConsumer
-		ARG 5 type
+		ARG 3 context
+		ARG 4 displayComponent
+		ARG 5 textConsumer
+		ARG 6 type
 	METHOD method_57370 (Lorg/apache/commons/lang3/mutable/MutableBoolean;Ljava/util/function/Consumer;Lnet/minecraft/class_9274;Lnet/minecraft/class_1657;Lnet/minecraft/class_6880;Lnet/minecraft/class_1322;Lnet/minecraft/class_9285$class_11193;)V
 		ARG 4 attribute
 		ARG 5 modifier

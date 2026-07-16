@@ -13,12 +13,6 @@ CLASS net/minecraft/class_1747 net/minecraft/item/BlockItem
 	METHOD method_7709 canPlace (Lnet/minecraft/class_1750;Lnet/minecraft/class_2680;)Z
 		ARG 1 context
 		ARG 2 state
-	METHOD method_7710 postPlacement (Lnet/minecraft/class_2338;Lnet/minecraft/class_1937;Lnet/minecraft/class_1657;Lnet/minecraft/class_1799;Lnet/minecraft/class_2680;)Z
-		ARG 1 pos
-		ARG 2 world
-		ARG 3 player
-		ARG 4 stack
-		ARG 5 state
 	METHOD method_7711 getBlock ()Lnet/minecraft/class_2248;
 	METHOD method_7712 place (Lnet/minecraft/class_1750;)Lnet/minecraft/class_1269;
 		ARG 1 context
@@ -33,10 +27,10 @@ CLASS net/minecraft/class_1747 net/minecraft/item/BlockItem
 	METHOD method_16356 getPlacementContext (Lnet/minecraft/class_1750;)Lnet/minecraft/class_1750;
 		ARG 1 context
 	METHOD method_18084 placeFromNbt (Lnet/minecraft/class_2338;Lnet/minecraft/class_1937;Lnet/minecraft/class_1799;Lnet/minecraft/class_2680;)Lnet/minecraft/class_2680;
-		ARG 1 pos
-		ARG 2 world
-		ARG 3 stack
-		ARG 4 state
+		ARG 0 pos
+		ARG 1 world
+		ARG 2 stack
+		ARG 3 state
 	METHOD method_19260 getPlaceSound (Lnet/minecraft/class_2680;)Lnet/minecraft/class_3414;
 		ARG 1 state
 	METHOD method_20360 checkStatePlacement ()Z

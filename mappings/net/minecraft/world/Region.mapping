@@ -1,0 +1,20 @@
+CLASS net/minecraft/class_1_1205 net/minecraft/world/Region
+	FIELD field_1_8305 world Lnet/minecraft/class_4538;
+	FIELD field_1_8306 blockStatePredicate Ljava/util/function/Predicate;
+	METHOD <init> (Lnet/minecraft/class_4538;)V
+		ARG 1 world
+	METHOD method_1_7663 allBlocksMatch ()Z
+	METHOD method_1_7664 containsAny ()Z
+	METHOD method_1_7665 containsAtLeast (I)Z
+		ARG 1 count
+	METHOD method_1_7666 containsAtMost (I)Z
+		ARG 1 count
+	METHOD method_1_7667 matching (Ljava/util/function/Predicate;)Lnet/minecraft/class_1_1205;
+		ARG 1 blockStatePredicate
+	METHOD method_1_7668 forEachBlock (Ljava/util/function/BiConsumer;)V
+		ARG 1 callback
+	METHOD method_1_7669 iterate (Lnet/minecraft/class_1_1221;)Z
+		ARG 1 callback
+	METHOD method_1_7670 (Lnet/minecraft/class_2680;)Z
+		ARG 1 state
+	METHOD method_1_7674 containsNone ()Z

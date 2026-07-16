@@ -20,9 +20,8 @@ CLASS net/minecraft/class_1948 net/minecraft/world/SpawnHelper
 		ARG 3 spawnGroup
 		ARG 4 spawnEntry
 		ARG 5 pos
-	METHOD method_8661 populateEntities (Lnet/minecraft/class_5425;Lnet/minecraft/class_6880;Lnet/minecraft/class_1923;Lnet/minecraft/class_5819;)V
+	METHOD method_8661 populateEntities (Lnet/minecraft/class_5425;Lnet/minecraft/class_2338;Lnet/minecraft/class_1923;Lnet/minecraft/class_5819;)V
 		ARG 0 world
-		ARG 1 biomeEntry
 		ARG 2 chunkPos
 		ARG 3 random
 	METHOD method_8662 isClearForSpawn (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_3610;Lnet/minecraft/class_1299;)Z
@@ -71,37 +70,25 @@ CLASS net/minecraft/class_1948 net/minecraft/world/SpawnHelper
 		ARG 4 spawnEntry
 		ARG 5 pos
 		ARG 6 squaredDistance
-	METHOD method_27815 setupSpawn (ILjava/lang/Iterable;Lnet/minecraft/class_1948$class_5260;Lnet/minecraft/class_6540;)Lnet/minecraft/class_1948$class_5262;
+	METHOD method_27815 setupSpawn (ILnet/minecraft/class_3218;Lnet/minecraft/class_1948$class_5260;Lnet/minecraft/class_6540;)Lnet/minecraft/class_1948$class_5262;
 		ARG 0 spawningChunkCount
-		ARG 1 entities
 		ARG 2 chunkSource
 		ARG 3 densityCapper
 	METHOD method_27816 (Lnet/minecraft/class_1311;)Z
 		ARG 0 spawnGroup
-	METHOD method_27819 (Lnet/minecraft/class_2338;Lnet/minecraft/class_1297;Lnet/minecraft/class_5263;Lnet/minecraft/class_6540;Lnet/minecraft/class_1311;Lit/unimi/dsi/fastutil/objects/Object2IntOpenHashMap;Lnet/minecraft/class_2818;)V
-		ARG 6 chunk
+	METHOD method_27819 (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_1297;Lnet/minecraft/class_5263;Lnet/minecraft/class_6540;Lnet/minecraft/class_1311;Lit/unimi/dsi/fastutil/objects/Object2IntOpenHashMap;Lnet/minecraft/class_2818;)V
+		ARG 7 chunk
 	METHOD method_27821 spawn (Lnet/minecraft/class_3218;Lnet/minecraft/class_2818;Lnet/minecraft/class_1948$class_5262;Ljava/util/List;)V
 		ARG 0 world
 		ARG 1 chunk
 		ARG 2 info
 		ARG 3 spawnableGroups
-	METHOD method_27822 getBiomeDirectly (Lnet/minecraft/class_2338;Lnet/minecraft/class_2791;)Lnet/minecraft/class_1959;
-		ARG 0 pos
-		ARG 1 chunk
-	METHOD method_29950 getSpawnEntries (Lnet/minecraft/class_3218;Lnet/minecraft/class_5138;Lnet/minecraft/class_2794;Lnet/minecraft/class_1311;Lnet/minecraft/class_2338;Lnet/minecraft/class_6880;)Lnet/minecraft/class_6012;
+	METHOD method_29950 getSpawnEntries (Lnet/minecraft/class_3218;Lnet/minecraft/class_5138;Lnet/minecraft/class_2794;Lnet/minecraft/class_1311;Lnet/minecraft/class_2338;)Lnet/minecraft/class_6012;
 		ARG 0 world
 		ARG 1 structureAccessor
 		ARG 2 chunkGenerator
 		ARG 3 spawnGroup
 		ARG 4 pos
-		ARG 5 biomeEntry
-	METHOD method_35238 (Lnet/minecraft/class_1299;Lnet/minecraft/class_2338;Lnet/minecraft/class_2791;)Z
-		ARG 0 type
-		ARG 1 posx
-		ARG 2 chunk
-	METHOD method_35239 (Lnet/minecraft/class_1308;Lnet/minecraft/class_2791;)V
-		ARG 0 entity
-		ARG 1 chunk
 	METHOD method_35240 spawnEntitiesInChunk (Lnet/minecraft/class_1311;Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;)V
 		ARG 0 group
 		ARG 1 world
@@ -124,10 +111,10 @@ CLASS net/minecraft/class_1948 net/minecraft/world/SpawnHelper
 			ARG 1 pos
 			ARG 3 chunkConsumer
 	CLASS class_5261 Checker
-		METHOD method_1_79 test (Lnet/minecraft/class_1299;Lnet/minecraft/class_2338;Lnet/minecraft/class_2791;)Z
+		METHOD method_1_79 test (Lnet/minecraft/class_1299;Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_2791;)Z
 			ARG 1 type
-			ARG 2 pos
-			ARG 3 chunk
+			ARG 3 pos
+			ARG 4 chunk
 	CLASS class_5262 Info
 		FIELD field_24394 spawningChunkCount I
 		FIELD field_24395 groupToCount Lit/unimi/dsi/fastutil/objects/Object2IntOpenHashMap;
@@ -143,11 +130,10 @@ CLASS net/minecraft/class_1948 net/minecraft/world/SpawnHelper
 			ARG 3 densityField
 			ARG 4 densityCapper
 		METHOD method_27823 getSpawningChunkCount ()I
-		METHOD method_27824 test (Lnet/minecraft/class_1299;Lnet/minecraft/class_2338;Lnet/minecraft/class_2791;)Z
+		METHOD method_27824 test (Lnet/minecraft/class_1299;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2791;)Z
 			COMMENT @see SpawnHelper.Checker#test(EntityType, BlockPos, Chunk)
 			ARG 1 type
-			ARG 2 pos
-			ARG 3 chunk
+			ARG 4 chunk
 		METHOD method_27825 run (Lnet/minecraft/class_1308;Lnet/minecraft/class_2791;)V
 			COMMENT @see SpawnHelper.Runner#run(MobEntity, Chunk)
 			ARG 1 entity

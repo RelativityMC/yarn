@@ -99,35 +99,6 @@ CLASS net/minecraft/class_2338 net/minecraft/util/math/BlockPos
 		COMMENT
 		COMMENT <p>If this block position is a mutable one, mutation to this block
 		COMMENT position won't affect the returned position.
-	METHOD method_25996 iterateOutwards (Lnet/minecraft/class_2338;III)Ljava/lang/Iterable;
-		COMMENT Iterates block positions around the {@code center}. The iteration order
-		COMMENT is mainly based on the manhattan distance of the position from the
-		COMMENT center.
-		COMMENT
-		COMMENT <p>For the same manhattan distance, the positions are iterated by y
-		COMMENT offset, from negative to positive. For the same y offset, the positions
-		COMMENT are iterated by x offset, from negative to positive. For the two
-		COMMENT positions with the same x and y offsets and the same manhattan distance,
-		COMMENT the one with a positive z offset is visited first before the one with a
-		COMMENT negative z offset.
-		ARG 0 center
-			COMMENT the center of iteration
-		ARG 1 rangeX
-			COMMENT the maximum x difference from the center
-		ARG 2 rangeY
-			COMMENT the maximum y difference from the center
-		ARG 3 rangeZ
-			COMMENT the maximum z difference from the center
-	METHOD method_25997 findClosest (Lnet/minecraft/class_2338;IILjava/util/function/Predicate;)Ljava/util/Optional;
-		ARG 0 pos
-		ARG 1 horizontalRange
-		ARG 2 verticalRange
-		ARG 3 condition
-	METHOD method_25998 streamOutwards (Lnet/minecraft/class_2338;III)Ljava/util/stream/Stream;
-		ARG 0 center
-		ARG 1 maxX
-		ARG 2 maxY
-		ARG 3 maxZ
 	METHOD method_27156 iterateRandomly (Lnet/minecraft/class_5819;IIIIIII)Ljava/lang/Iterable;
 		COMMENT Iterates through {@code count} random block positions in the given area.
 		COMMENT
@@ -215,8 +186,6 @@ CLASS net/minecraft/class_2338 net/minecraft/util/math/BlockPos
 		ARG 4 callback
 	METHOD method_49926 (Ljava/util/Queue;ILnet/minecraft/class_2338;)V
 		ARG 2 queuedPos
-	METHOD method_51686 streamSouthEastSquare (Lnet/minecraft/class_2338;)Ljava/util/stream/Stream;
-		ARG 0 pos
 	METHOD method_58249 min (Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;)Lnet/minecraft/class_2338;
 		ARG 0 a
 		ARG 1 b

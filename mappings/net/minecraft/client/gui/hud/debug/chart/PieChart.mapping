@@ -14,7 +14,7 @@ CLASS net/minecraft/class_9931 net/minecraft/client/gui/hud/debug/chart/PieChart
 		ARG 1 bottomMargin
 	METHOD method_61985 setProfileResult (Lnet/minecraft/class_3696;)V
 		ARG 1 profileResult
-	METHOD method_61986 render (Lnet/minecraft/class_332;)V
+	METHOD method_61986 render (Lnet/minecraft/class_332;II)V
 		ARG 1 context
 	METHOD method_61987 select (I)V
 		ARG 1 index

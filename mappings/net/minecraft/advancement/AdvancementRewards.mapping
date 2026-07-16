@@ -1,14 +1,14 @@
 CLASS net/minecraft/class_170 net/minecraft/advancement/AdvancementRewards
 	FIELD comp_2025 experience I
-	FIELD comp_2026 loot Ljava/util/List;
+	FIELD comp_2026 loot Lnet/minecraft/class_6885;
 	FIELD comp_2027 recipes Ljava/util/List;
 	FIELD comp_2028 function Ljava/util/Optional;
 	FIELD field_1167 NONE Lnet/minecraft/class_170;
 	FIELD field_47185 CODEC Lcom/mojang/serialization/Codec;
-	METHOD <init> (ILjava/util/List;Ljava/util/List;Ljava/util/Optional;)V
+	METHOD <init> (ILnet/minecraft/class_6885;Ljava/util/List;Ljava/util/Optional;)V
 		ARG 1 experience
 	METHOD comp_2025 experience ()I
-	METHOD comp_2026 loot ()Ljava/util/List;
+	METHOD comp_2026 loot ()Lnet/minecraft/class_6885;
 	METHOD comp_2027 recipes ()Ljava/util/List;
 	METHOD comp_2028 function ()Ljava/util/Optional;
 	METHOD method_748 apply (Lnet/minecraft/class_3222;)V
@@ -33,10 +33,7 @@ CLASS net/minecraft/class_170 net/minecraft/advancement/AdvancementRewards
 			ARG 1 recipeKey
 		METHOD method_753 recipe (Lnet/minecraft/class_5321;)Lnet/minecraft/class_170$class_171;
 			ARG 0 recipeKey
-		METHOD method_34899 loot (Lnet/minecraft/class_5321;)Lnet/minecraft/class_170$class_171;
-			ARG 0 loot
-		METHOD method_34900 addLoot (Lnet/minecraft/class_5321;)Lnet/minecraft/class_170$class_171;
-			ARG 1 loot
+		METHOD method_34900 addLoot (Lnet/minecraft/class_6880;)Lnet/minecraft/class_170$class_171;
 		METHOD method_34901 function (Lnet/minecraft/class_2960;)Lnet/minecraft/class_170$class_171;
 			ARG 0 function
 		METHOD method_34902 setFunction (Lnet/minecraft/class_2960;)Lnet/minecraft/class_170$class_171;

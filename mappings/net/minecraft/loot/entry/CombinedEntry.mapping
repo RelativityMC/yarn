@@ -2,9 +2,8 @@ CLASS net/minecraft/class_69 net/minecraft/loot/entry/CombinedEntry
 	FIELD field_982 children Ljava/util/List;
 	FIELD field_983 predicate Lnet/minecraft/class_64;
 	FIELD field_60421 EMPTY_CHILDREN_LIST_ERROR Lnet/minecraft/class_8942$class_11337;
-	METHOD <init> (Ljava/util/List;Ljava/util/List;)V
+	METHOD <init> (Ljava/util/List;Ljava/util/Optional;Ljava/util/Optional;)V
 		ARG 1 terms
-		ARG 2 conditions
 	METHOD method_394 combine (Ljava/util/List;)Lnet/minecraft/class_64;
 		ARG 1 terms
 	METHOD method_53279 createCodec (Lnet/minecraft/class_69$class_70;)Lcom/mojang/serialization/MapCodec;
@@ -14,6 +13,4 @@ CLASS net/minecraft/class_69 net/minecraft/loot/entry/CombinedEntry
 	METHOD method_53281 (Lnet/minecraft/class_69;)Ljava/util/List;
 		ARG 0 entry
 	CLASS class_70 Factory
-		METHOD method_1_316 create (Ljava/util/List;Ljava/util/List;)Lnet/minecraft/class_69;
-			ARG 1 terms
-			ARG 2 conditions
+		METHOD method_1_316 create (Ljava/util/List;Ljava/util/Optional;Ljava/util/Optional;)Lnet/minecraft/class_69;

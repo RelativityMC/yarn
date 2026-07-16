@@ -30,7 +30,7 @@ CLASS net/minecraft/class_7764 net/minecraft/client/texture/SpriteContents
 	METHOD method_1_2321 getTransparency ()Lnet/minecraft/class_1_303;
 	METHOD method_45808 generateMipmaps (I)V
 		ARG 1 mipmapLevels
-	METHOD method_45809 upload (Lnet/minecraft/class_1_1231;I)V
+	METHOD method_45809 upload (Lnet/minecraft/class_1_1318;I)V
 		ARG 1 texture
 		ARG 2 mipmap
 	METHOD method_45810 isPixelTransparent (III)Z
@@ -94,7 +94,6 @@ CLASS net/minecraft/class_7764 net/minecraft/client/texture/SpriteContents
 		METHOD method_76307 tick ()V
 		METHOD method_76308 getBufferSlice (I)Lnet/minecraft/class_1_1254;
 			ARG 1 frame
-		METHOD method_76309 upload (Lnet/minecraft/class_1_1227;Lnet/minecraft/class_1_1254;)V
-			ARG 1 renderPass
+		METHOD method_76309 upload (Lnet/minecraft/class_1_1317;Lnet/minecraft/class_1_1254;)V
 			ARG 2 bufferSlice
 		METHOD method_76310 isDirty ()Z

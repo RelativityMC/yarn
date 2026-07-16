@@ -92,7 +92,6 @@ CLASS net/minecraft/server/MinecraftServer
 	FIELD field_48773 lastFullTickLogTime J
 	FIELD field_48774 tasksStartTime J
 	FIELD field_48775 waitTime J
-	FIELD field_53715 fuelRegistry Lnet/minecraft/class_9895;
 	FIELD field_53716 idleTickCount I
 	FIELD field_53717 suppressedExceptionsTracker Lnet/minecraft/class_9843;
 	FIELD field_53718 waitingForNextTick Z
@@ -484,7 +483,6 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 1 exception
 		ARG 2 type
 	METHOD method_62734 runAutosave ()V
-	METHOD method_62735 getFuelRegistry ()Lnet/minecraft/class_9895;
 	METHOD method_64261 (Ljava/nio/file/Path;)V
 		ARG 1 path
 	METHOD method_71943 handleCustomClickAction (Lnet/minecraft/class_2960;Ljava/util/Optional;)V

@@ -1,0 +1,15 @@
+CLASS net/minecraft/class_1_1318
+	FIELD field_1_9060 USAGE_COPY_DST I
+	FIELD field_1_9061 USAGE_COPY_SRC I
+	FIELD field_1_9062 USAGE_CUBEMAP_COMPATIBLE I
+	FIELD field_1_9063 USAGE_RENDER_ATTACHMENT I
+	FIELD field_1_9064 USAGE_TEXTURE_BINDING I
+	METHOD method_1_7817 getDepthOrLayers ()I
+	METHOD method_1_7818 getTexelFormat ()Lnet/minecraft/class_1_658;
+	METHOD method_1_7819 getHeight (I)I
+	METHOD method_1_7820 getLabel ()Ljava/lang/String;
+	METHOD method_1_7821 getMipLevels ()I
+	METHOD method_1_7822 getWidth (I)I
+	METHOD method_1_7823 isClosed ()Z
+	METHOD method_1_7824 getUsage ()I
+	CLASS class_12115 Usage

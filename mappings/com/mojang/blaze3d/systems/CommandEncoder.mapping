@@ -11,46 +11,38 @@ CLASS net/minecraft/class_1_1256 com/mojang/blaze3d/systems/CommandEncoder
 		ARG 2 device
 		ARG 3 backend
 	METHOD method_1_7933 getBackend ()Lnet/minecraft/class_1_154;
-	METHOD method_1_7934 clearColorAndDepthTextures (Lnet/minecraft/class_1_1231;Lorg/joml/Vector4fc;Lnet/minecraft/class_1_1231;D)V
-		ARG 1 colorAttachment
+	METHOD method_1_7934 (Lnet/minecraft/class_1_1318;Lorg/joml/Vector4fc;Lnet/minecraft/class_1_1318;D)V
 		ARG 2 clearColor
-		ARG 3 depthAttachment
 		ARG 4 depth
-	METHOD method_1_7935 clearColorAndDepthTextures (Lnet/minecraft/class_1_1231;Lorg/joml/Vector4fc;Lnet/minecraft/class_1_1231;DIIII)V
-		ARG 1 colorAttachment
+	METHOD method_1_7935 (Lnet/minecraft/class_1_1318;Lorg/joml/Vector4fc;Lnet/minecraft/class_1_1318;DIIII)V
 		ARG 2 clearColor
-		ARG 3 depthAttachment
 		ARG 4 depth
 		ARG 6 scissorX
 		ARG 7 scissorY
 		ARG 8 scissorLeft
 		ARG 9 scissorTop
-	METHOD method_1_7936 clearColorTexture (Lnet/minecraft/class_1_1231;Lorg/joml/Vector4fc;)V
-		ARG 1 texture
+	METHOD method_1_7936 (Lnet/minecraft/class_1_1318;Lorg/joml/Vector4fc;)V
 		ARG 2 clearColor
-	METHOD method_1_7937 clearDepthTexture (Lnet/minecraft/class_1_1231;D)V
-		ARG 1 texture
+	METHOD method_1_7937 (Lnet/minecraft/class_1_1318;D)V
 		ARG 2 depth
-	METHOD method_1_7938 writeToTexture (Lnet/minecraft/class_1_1254;IIIILnet/minecraft/class_1_1231;IIIIII)V
+	METHOD method_1_7938 (Lnet/minecraft/class_1_1254;IIIILnet/minecraft/class_1_1318;IIIIII)V
 		ARG 1 source
 		ARG 2 sourceX
 		ARG 3 sourceY
 		ARG 4 sourceWidth
 		ARG 5 sourceHeight
-		ARG 6 target
 		ARG 7 targetX
 		ARG 8 targetY
 		ARG 9 targetWidth
 		ARG 10 targetHeight
 		ARG 11 mipmap
 		ARG 12 depthOrLayer
-	METHOD method_1_7939 copyTextureToBuffer (Lnet/minecraft/class_1_1231;Lnet/minecraft/class_1_1211;JLjava/lang/Runnable;I)V
-		ARG 1 source
+	METHOD method_1_7939 (Lnet/minecraft/class_1_1318;Lnet/minecraft/class_1_1211;JLjava/lang/Runnable;I)V
 		ARG 2 target
 		ARG 3 offset
 		ARG 5 dataUploadedCallback
 		ARG 6 mipLevel
-	METHOD method_1_7940 copyTextureToBuffer (Lnet/minecraft/class_1_1231;Lnet/minecraft/class_1_1211;JLjava/lang/Runnable;IIIII)V
+	METHOD method_1_7940 (Lnet/minecraft/class_1_1318;Lnet/minecraft/class_1_1211;JLjava/lang/Runnable;IIIII)V
 		ARG 1 source
 		ARG 2 target
 		ARG 3 offset
@@ -60,9 +52,7 @@ CLASS net/minecraft/class_1_1256 com/mojang/blaze3d/systems/CommandEncoder
 		ARG 8 sourceY
 		ARG 9 width
 		ARG 10 height
-	METHOD method_1_7941 copyTextureToTexture (Lnet/minecraft/class_1_1231;Lnet/minecraft/class_1_1231;IIIIIII)V
-		ARG 1 source
-		ARG 2 target
+	METHOD method_1_7941 (Lnet/minecraft/class_1_1318;Lnet/minecraft/class_1_1318;IIIIIII)V
 		ARG 3 mipLevel
 		ARG 4 intoX
 		ARG 5 intoY
@@ -70,61 +60,50 @@ CLASS net/minecraft/class_1_1256 com/mojang/blaze3d/systems/CommandEncoder
 		ARG 7 sourceY
 		ARG 8 width
 		ARG 9 height
-	METHOD method_1_7942 copyToBuffer (Lnet/minecraft/class_1_1254;Lnet/minecraft/class_1_1254;)V
+	METHOD method_1_7942 (Lnet/minecraft/class_1_1254;Lnet/minecraft/class_1_1254;)V
 		ARG 1 from
 		ARG 2 to
-	METHOD method_1_7943 createFence ()Lnet/minecraft/class_1_1212;
-	METHOD method_1_7944 createRenderPass (Lnet/minecraft/class_1_900;)Lnet/minecraft/class_1_1227;
+	METHOD method_1_7944 (Lnet/minecraft/class_1_900;)Lnet/minecraft/class_1_1317;
 		ARG 1 description
-	METHOD method_1_7945 createRenderPass (Ljava/util/function/Supplier;Lnet/minecraft/class_1_1260;Ljava/util/Optional;)Lnet/minecraft/class_1_1227;
+	METHOD method_1_7945 (Ljava/util/function/Supplier;Lnet/minecraft/class_1_1330;Ljava/util/Optional;)Lnet/minecraft/class_1_1317;
 		ARG 1 labelGetter
-		ARG 2 colorAttachment
 		ARG 3 clearColor
-	METHOD method_1_7946 createRenderPass (Ljava/util/function/Supplier;Lnet/minecraft/class_1_1260;Ljava/util/Optional;Lnet/minecraft/class_1_1260;Ljava/util/OptionalDouble;)Lnet/minecraft/class_1_1227;
+	METHOD method_1_7946 (Ljava/util/function/Supplier;Lnet/minecraft/class_1_1330;Ljava/util/Optional;Lnet/minecraft/class_1_1330;Ljava/util/OptionalDouble;)Lnet/minecraft/class_1_1317;
 		ARG 1 labelGetter
-		ARG 2 colorAttachment
 		ARG 3 clearColor
-		ARG 4 depthAttachment
 		ARG 5 clearDepth
-	METHOD method_1_7947 createRenderPass (Ljava/util/function/Supplier;Lnet/minecraft/class_1_1260;Ljava/util/Optional;Lnet/minecraft/class_1_1260;Ljava/util/OptionalDouble;Lnet/minecraft/class_1_1227$class_1_837;)Lnet/minecraft/class_1_1227;
+	METHOD method_1_7947 (Ljava/util/function/Supplier;Lnet/minecraft/class_1_1330;Ljava/util/Optional;Lnet/minecraft/class_1_1330;Ljava/util/OptionalDouble;Lnet/minecraft/class_1_1317$class_1_837;)Lnet/minecraft/class_1_1317;
 		ARG 1 labelGetter
-		ARG 2 colorAttachment
 		ARG 3 clearColor
-		ARG 4 depthAttachment
 		ARG 5 clearDepth
 		ARG 6 renderArea
 	METHOD method_1_7948 isRenderPassOpen ()Z
-	METHOD method_1_7949 submit ()V
 	METHOD method_1_7950 finishRenderPass ()V
-	METHOD method_1_7951 getBufferAllocator ()Lnet/minecraft/class_1_1013;
-	METHOD method_1_7952 assertClearableColorTexture (Lnet/minecraft/class_1_1231;)V
+	METHOD method_1_7952 assertClearableColorTexture (Lnet/minecraft/class_1_1318;)V
 		ARG 1 texture
-	METHOD method_1_7953 assertClearableDepthTexture (Lnet/minecraft/class_1_1231;)V
+	METHOD method_1_7953 assertClearableDepthTexture (Lnet/minecraft/class_1_1318;)V
 		ARG 1 texture
-	METHOD method_1_7954 assertValidRegion (Lnet/minecraft/class_1_1231;IIII)V
+	METHOD method_1_7954 assertValidRegion (Lnet/minecraft/class_1_1318;IIII)V
 		ARG 1 texture
 		ARG 2 regionX
 		ARG 3 regionY
 		ARG 4 regionWidth
 		ARG 5 regionHeight
-	METHOD method_1_7955 writeTimestamp (Lnet/minecraft/class_1_685;I)V
+	METHOD method_1_7955 (Lnet/minecraft/class_1_685;I)V
 		ARG 1 timestampQueryPool
 		ARG 2 index
-	METHOD method_1_7956 writeToBuffer (Lnet/minecraft/class_1_1254;Ljava/nio/ByteBuffer;)V
+	METHOD method_1_7956 (Lnet/minecraft/class_1_1254;Ljava/nio/ByteBuffer;)V
 		ARG 1 slice
 		ARG 2 source
-	METHOD method_1_7957 writeToTexture (Lnet/minecraft/class_1_1231;Lnet/minecraft/class_1011;)V
-		ARG 1 target
+	METHOD method_1_7957 (Lnet/minecraft/class_1_1318;Lnet/minecraft/class_1011;)V
 		ARG 2 source
-	METHOD method_1_7958 writeToTexture (Lnet/minecraft/class_1_1231;Lnet/minecraft/class_1011;IIII)V
-		ARG 1 target
+	METHOD method_1_7958 (Lnet/minecraft/class_1_1318;Lnet/minecraft/class_1011;IIII)V
 		ARG 2 source
 		ARG 3 mipLevel
 		ARG 4 depth
 		ARG 5 offsetX
 		ARG 6 offsetY
-	METHOD method_1_7959 writeToTexture (Lnet/minecraft/class_1_1231;Ljava/nio/ByteBuffer;IIIIII)V
-		ARG 1 target
+	METHOD method_1_7959 (Lnet/minecraft/class_1_1318;Ljava/nio/ByteBuffer;IIIIII)V
 		ARG 2 buf
 		ARG 3 mipLevel
 		ARG 4 depth

@@ -19,7 +19,7 @@ CLASS net/minecraft/class_9463 net/minecraft/item/ProjectileItem
 			FIELD field_50148 positionFunction Lnet/minecraft/class_9463$class_9466;
 			FIELD field_50149 uncertainty F
 			FIELD field_50150 power F
-			FIELD field_50151 overrideDispenserEvent Ljava/util/OptionalInt;
+			FIELD field_50151 overrideDispenserEvent Ljava/util/Optional;
 			METHOD method_58664 build ()Lnet/minecraft/class_9463$class_9464;
 			METHOD method_58665 uncertainty (F)Lnet/minecraft/class_9463$class_9464$class_9465;
 				ARG 1 uncertainty

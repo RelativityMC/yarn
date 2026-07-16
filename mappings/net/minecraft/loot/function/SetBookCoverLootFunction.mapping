@@ -3,8 +3,7 @@ CLASS net/minecraft/class_9374 net/minecraft/loot/function/SetBookCoverLootFunct
 	FIELD field_49871 author Ljava/util/Optional;
 	FIELD field_49872 title Ljava/util/Optional;
 	FIELD field_49873 generation Ljava/util/Optional;
-	METHOD <init> (Ljava/util/List;Ljava/util/Optional;Ljava/util/Optional;Ljava/util/Optional;)V
-		ARG 1 conditions
+	METHOD <init> (Ljava/util/Optional;Ljava/util/Optional;Ljava/util/Optional;Ljava/util/Optional;)V
 		ARG 2 title
 		ARG 3 author
 		ARG 4 generation

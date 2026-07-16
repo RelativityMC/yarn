@@ -1,1 +1,5 @@
 CLASS net/minecraft/class_3059 net/minecraft/world/gen/feature/HugeBrownMushroomFeature
+	FIELD comp_1_1106 comp_1_1121 Lnet/minecraft/class_6646;
+	FIELD comp_1_1107 comp_1_1122 Lnet/minecraft/class_4651;
+	FIELD comp_1_1108 comp_1_1123 I
+	FIELD comp_1_1109 comp_1_1124 Lnet/minecraft/class_4651;

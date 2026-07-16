@@ -19,27 +19,23 @@ CLASS net/minecraft/class_4711 net/minecraft/advancement/criterion/ItemCriterion
 		METHOD method_51709 create (Lnet/minecraft/class_2090$class_2091;Lnet/minecraft/class_2073$class_2074;)Lnet/minecraft/class_4711$class_4712;
 			ARG 0 location
 			ARG 1 item
-		METHOD method_51710 createPlacedBlock (Lnet/minecraft/class_2248;)Lnet/minecraft/class_175;
-			ARG 0 block
+		METHOD method_51710 createPlacedBlock (Lnet/minecraft/class_7871;Lnet/minecraft/class_2248;)Lnet/minecraft/class_175;
+			ARG 1 block
 		METHOD method_51711 test (Lnet/minecraft/class_47;)Z
 			ARG 1 location
-		METHOD method_51712 createPlacedBlock ([Lnet/minecraft/class_5341$class_210;)Lnet/minecraft/class_175;
-			ARG 0 locationConditions
+		METHOD method_51712 createPlacedBlock (Lnet/minecraft/class_5341$class_210;)Lnet/minecraft/class_175;
 		METHOD method_55004 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance
-		METHOD method_70715 createPlacedWithState (Lnet/minecraft/class_2248;Lnet/minecraft/class_2769;I)Lnet/minecraft/class_175;
-			ARG 0 block
-			ARG 1 property
-			ARG 2 value
-		METHOD method_70716 createPlacedWithState (Lnet/minecraft/class_2248;Lnet/minecraft/class_2769;Ljava/lang/Comparable;)Lnet/minecraft/class_175;
-			ARG 0 block
-			ARG 1 property
-			ARG 2 value
-		METHOD method_70717 createPlacedWithState (Lnet/minecraft/class_2248;Lnet/minecraft/class_2769;Ljava/lang/String;)Lnet/minecraft/class_175;
-			ARG 0 block
-			ARG 1 property
-			ARG 2 value
-		METHOD method_70718 createPlacedWithState (Lnet/minecraft/class_2248;Lnet/minecraft/class_2769;Z)Lnet/minecraft/class_175;
-			ARG 0 block
-			ARG 1 property
-			ARG 2 value
+		METHOD method_70715 createPlacedWithState (Lnet/minecraft/class_7871;Lnet/minecraft/class_2248;Lnet/minecraft/class_2769;I)Lnet/minecraft/class_175;
+			ARG 2 property
+			ARG 3 value
+		METHOD method_70716 createPlacedWithState (Lnet/minecraft/class_7871;Lnet/minecraft/class_2248;Lnet/minecraft/class_2769;Ljava/lang/Comparable;)Lnet/minecraft/class_175;
+			ARG 2 property
+			ARG 3 value
+		METHOD method_70717 createPlacedWithState (Lnet/minecraft/class_7871;Lnet/minecraft/class_2248;Lnet/minecraft/class_2769;Ljava/lang/String;)Lnet/minecraft/class_175;
+			ARG 1 block
+			ARG 2 property
+			ARG 3 value
+		METHOD method_70718 createPlacedWithState (Lnet/minecraft/class_7871;Lnet/minecraft/class_2248;Lnet/minecraft/class_2769;Z)Lnet/minecraft/class_175;
+			ARG 2 property
+			ARG 3 value

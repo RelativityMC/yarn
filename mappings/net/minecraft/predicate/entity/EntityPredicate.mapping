@@ -4,7 +4,6 @@ CLASS net/minecraft/class_2048 net/minecraft/predicate/entity/EntityPredicate
 	FIELD field_1_5927 merged Lnet/minecraft/class_7376;
 	FIELD field_1_5928 parts Ljava/util/Map;
 	FIELD field_45746 CODEC Lcom/mojang/serialization/Codec;
-	FIELD field_47250 LOOT_CONTEXT_PREDICATE_CODEC Lcom/mojang/serialization/Codec;
 	METHOD <init> (Ljava/util/Map;)V
 		ARG 1 parts
 	METHOD equals (Ljava/lang/Object;)Z
@@ -29,9 +28,9 @@ CLASS net/minecraft/class_2048 net/minecraft/predicate/entity/EntityPredicate
 	METHOD method_27802 createAdvancementEntityLootContext (Lnet/minecraft/class_3222;Lnet/minecraft/class_1297;)Lnet/minecraft/class_47;
 		ARG 0 player
 		ARG 1 target
-	METHOD method_51704 asLootContextPredicate (Lnet/minecraft/class_2048;)Lnet/minecraft/class_5258;
+	METHOD method_51704 asLootContextPredicate (Lnet/minecraft/class_2048;)Lnet/minecraft/class_6880;
 		ARG 0 predicate
-	METHOD method_53134 contextPredicateFromEntityPredicate (Lnet/minecraft/class_2048$class_2049;)Lnet/minecraft/class_5258;
+	METHOD method_53134 contextPredicateFromEntityPredicate (Lnet/minecraft/class_2048$class_2049;)Lnet/minecraft/class_6880;
 		ARG 0 builder
 	METHOD method_53135 (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
 		ARG 0 codec

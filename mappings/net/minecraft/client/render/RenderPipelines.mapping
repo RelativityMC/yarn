@@ -17,7 +17,6 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_1_7124 TERRAIN_ALPHA_CUTOUT F
 	FIELD field_1_7125 DEFAULT_ALPHA_CUTOUT F
 	FIELD field_1_7992 ARMOR_CUTOUT_NO_CULL_GLINT Lnet/minecraft/class_1_1257;
-	FIELD field_1_7993 BREEZE_WIND_OPAQUE_PARTS Lnet/minecraft/class_1_1257;
 	FIELD field_1_7994 CRUMBLING_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_1_7995 DEBUG_POINT_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_1_7996 LIGHTNING_TRIANGLES_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
@@ -25,20 +24,13 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_1_7998 ENTITY_SHADOW_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_1_7999 ENTITY_LIGHTING_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_1_8000 ENTITY_SOLID_GLINT Lnet/minecraft/class_1_1257;
-	FIELD field_1_8001 ENTITY_TRANSLUCENT_CULL_OPAQUE_PARTS Lnet/minecraft/class_1_1257;
-	FIELD field_1_8002 ENTITY_TRANSLUCENT_EMISSIVE_OPAQUE_PARTS Lnet/minecraft/class_1_1257;
-	FIELD field_1_8003 ENTITY_TRANSLUCENT_OPAQUE_PARTS Lnet/minecraft/class_1_1257;
-	FIELD field_1_8004 EYES_OPAQUE_PARTS Lnet/minecraft/class_1_1257;
 	FIELD field_1_8005 EYES_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_1_8006 GLINT_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_1_8007 SPECIAL_GLINT_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_1_8008 ITEM_CUTOUT_GLINT Lnet/minecraft/class_1_1257;
 	FIELD field_1_8009 ITEM_CUTOUT_GLINT_SPECIAL Lnet/minecraft/class_1_1257;
 	FIELD field_1_8010 ITEM_TRANSLUCENT_GLINT Lnet/minecraft/class_1_1257;
-	FIELD field_1_8011 ITEM_TRANSLUCENT_GLINT_OPAQUE_PARTS Lnet/minecraft/class_1_1257;
 	FIELD field_1_8012 ITEM_TRANSLUCENT_GLINT_SPECIAL Lnet/minecraft/class_1_1257;
-	FIELD field_1_8013 ITEM_TRANSLUCENT_GLINT_SPECIAL_OPAQUE_PARTS Lnet/minecraft/class_1_1257;
-	FIELD field_1_8014 ITEM_TRANSLUCENT_OPAQUE_PARTS Lnet/minecraft/class_1_1257;
 	FIELD field_1_8015 LIGHTNING_QUADS_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_1_8016 FOG_AND_SAMPLERS_02_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_1_8017 ACCUMULATE_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
@@ -70,7 +62,6 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_1_8043 OIT_LIGHTNING Lnet/minecraft/class_1_1165;
 	FIELD field_1_8044 LINES_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_1_8045 OIT_LINES_TRANSLUCENT Lnet/minecraft/class_1_1165;
-	FIELD field_1_8046 OIT_OPAQUE_PARTS_THRESHOLD_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_1_8047 OIT_PARTICLE Lnet/minecraft/class_1_1165;
 	FIELD field_1_8048 DYNAMIC_TRANSFORM_PARTICLE_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_1_8049 OIT_SECONDARY_BLOCK_OUTLINE Lnet/minecraft/class_1_1165;

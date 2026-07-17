@@ -815,7 +815,7 @@ group int vk_present_mode_khr
 target_method org.lwjgl.vulkan.VkSwapchainCreateInfoKHR presentMode (I)Lorg/lwjgl/vulkan/VkSwapchainCreateInfoKHR;
 	param 0 vk_present_mode_khr
 
-target_method net.minecraft.client.vulkan.VulkanConst getVkPresentMode (Lnet/minecraft/class_1_1314$PresentMode;)I
+target_method net.minecraft.client.vulkan.VulkanConst getVkPresentMode (Lcom/mojang/blaze3d/systems/GpuSurface$PresentMode;)I
 	return vk_present_mode_khr
 
 # https://docs.vulkan.org/refpages/latest/refpages/source/VkResult.html

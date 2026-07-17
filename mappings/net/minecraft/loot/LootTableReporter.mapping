@@ -10,22 +10,40 @@ CLASS net/minecraft/class_58 net/minecraft/loot/LootTableReporter
 		ARG 1 errorReporter
 		ARG 2 contextType
 		ARG 3 dataLookup
+		ARG 4 referenceStack
 	METHOD <init> (Lnet/minecraft/class_8942;Lnet/minecraft/class_176;Lnet/minecraft/class_7871$class_7872;)V
 		ARG 1 errorReporter
 		ARG 2 contextType
 		ARG 3 dataLookup
 	METHOD method_1_659 map (Ljava/lang/String;)Lnet/minecraft/class_58;
+		ARG 1 key
 	METHOD method_1_660 namedList (Ljava/lang/String;I)Lnet/minecraft/class_58;
+		ARG 1 key
+		ARG 2 index
 	METHOD method_1_661 namedMap (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/class_58;
+		ARG 1 name
+		ARG 2 key
+	METHOD method_1_8888 makeChildInner (Lnet/minecraft/class_8942$class_11336;Ljava/lang/Object;)Lnet/minecraft/class_58;
+		ARG 1 context
+		ARG 2 reference
+	METHOD method_1_8889 makeChild (Lnet/minecraft/class_8942$class_11336;Lnet/minecraft/class_6862;)Lnet/minecraft/class_58;
+		ARG 1 context
+		ARG 2 key
+	METHOD method_1_8890 isInStack (Lnet/minecraft/class_6862;)Z
+		ARG 1 key
 	METHOD method_360 report (Lnet/minecraft/class_8942$class_11337;)V
+		ARG 1 error
 	METHOD method_364 makeChild (Lnet/minecraft/class_8942$class_11336;)Lnet/minecraft/class_58;
+		ARG 1 context
 	METHOD method_22567 validateContext (Lnet/minecraft/class_46;)V
 		ARG 1 contextAware
 	METHOD method_51218 isInStack (Lnet/minecraft/class_5321;)Z
 		ARG 1 key
 	METHOD method_51219 makeChild (Lnet/minecraft/class_8942$class_11336;Lnet/minecraft/class_5321;)Lnet/minecraft/class_58;
+		ARG 1 context
 		ARG 2 key
 	METHOD method_51220 getDataLookup ()Lnet/minecraft/class_7871$class_7872;
 	METHOD method_60288 getErrorReporter ()Lnet/minecraft/class_8942;
+	CLASS class_1_1353 TagRecursionError
 	CLASS class_11376 ParametersNotProvidedError
 	CLASS class_11377 RecursionError

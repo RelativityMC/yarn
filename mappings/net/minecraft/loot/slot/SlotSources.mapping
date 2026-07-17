@@ -1,4 +1,16 @@
 CLASS net/minecraft/class_12276 net/minecraft/loot/slot/SlotSources
+	FIELD field_1_8844 ENTRY_LIST_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_8845 FULL_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_64162 BASE_CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_1_8568 (Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 mapCodec
+	METHOD method_1_8570 (Lcom/mojang/datafixers/util/Either;)Lnet/minecraft/class_12275;
+		ARG 0 either
+	METHOD method_1_8571 (Lnet/minecraft/class_12275;)Lnet/minecraft/class_12275;
+		ARG 0 source
+	METHOD method_1_8572 (Lnet/minecraft/class_12268;)Lnet/minecraft/class_12275;
+		ARG 0 groupSource
+	METHOD method_1_8573 (Lnet/minecraft/class_12275;)Lcom/mojang/datafixers/util/Either;
+		ARG 0 source
 	METHOD method_76140 registerAndGetDefault (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
 		ARG 0 registry

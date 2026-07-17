@@ -1,0 +1,146 @@
+CLASS net/minecraft/class_1_1307 com/mojang/blaze3d/systems/RenderSystem
+	FIELD field_1_8803 window Lnet/minecraft/class_1_11;
+	FIELD field_1_8805 device Lnet/minecraft/class_1_1313;
+	FIELD field_1_8806 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_8808 TASKS Lnet/minecraft/class_8623;
+	FIELD field_1_8809 MAT4F_SIZE I
+	FIELD field_1_8810 currentPipelineCache Lnet/minecraft/class_1_1152;
+	FIELD field_1_8811 dynamicUniforms Lnet/minecraft/class_11282;
+	FIELD field_1_8812 fallbackPipelineCache Lnet/minecraft/class_1_1152;
+	FIELD field_1_8813 globalsBuffer Lnet/minecraft/class_1_1211;
+	FIELD field_1_8814 renderingWorld Z
+	FIELD field_1_8815 MATRIX_STACK Lorg/joml/Matrix4fStack;
+	FIELD field_1_8816 INPUT_HANDLING_STARTED_AT Ljava/util/concurrent/atomic/AtomicLong;
+	FIELD field_1_8817 HANDLING_INPUT Ljava/util/concurrent/atomic/AtomicBoolean;
+	FIELD field_1_8818 projectionBuffer Lnet/minecraft/class_1_1254;
+	FIELD field_1_8819 projectionType Lnet/minecraft/class_10366;
+	FIELD field_1_8820 renderThread Ljava/lang/Thread;
+	FIELD field_1_8821 SAMPLER_CACHE Lnet/minecraft/class_12136;
+	FIELD field_1_8822 savedProjectionBuffer Lnet/minecraft/class_1_1254;
+	FIELD field_1_8823 savedProjectionType Lnet/minecraft/class_10366;
+	FIELD field_1_8824 SCISSOR_STATE Lnet/minecraft/class_11219;
+	FIELD field_1_8825 fogBuffer Lnet/minecraft/class_1_1254;
+	FIELD field_1_8826 lightingBuffer Lnet/minecraft/class_1_1254;
+	FIELD field_1_8827 DEFAULT_SHAPE_INDEX_BUFFER Lnet/minecraft/class_1_1307$class_5590;
+	FIELD field_1_8828 LINES_SHAPE_INDEX_BUFFER Lnet/minecraft/class_1_1307$class_5590;
+	FIELD field_1_8829 QUADS_SHAPE_INDEX_BUFFER Lnet/minecraft/class_1_1307$class_5590;
+	METHOD method_1_8493 assertOnRenderThread ()V
+	METHOD method_1_8494 saveProjection ()V
+		COMMENT @apiNote This only saves one level.
+	METHOD method_1_8495 setDefaultUniforms (Lnet/minecraft/class_1_1317;)V
+		ARG 0 pass
+	METHOD method_1_8496 wrongThreadException ()Ljava/lang/IllegalStateException;
+	METHOD method_1_8497 disableScissor ()V
+	METHOD method_1_8498 enableScissor (IIII)V
+		ARG 0 x
+		ARG 1 y
+		ARG 2 width
+		ARG 3 height
+	METHOD method_1_8499 runGpuAsyncTasks ()V
+	METHOD method_1_8500 getFormattedLwjglVersion ()Ljava/lang/String;
+	METHOD method_1_8501 compilePipeline (Lnet/minecraft/class_1_1257;)Lnet/minecraft/class_1_1285;
+		ARG 0 pipeline
+	METHOD method_1_8502 compilePipelineOrNull (Lnet/minecraft/class_1_1257;)Lnet/minecraft/class_1_1285;
+		ARG 0 pipeline
+	METHOD method_1_8503 getDevice ()Lnet/minecraft/class_1_1313;
+	METHOD method_1_8504 getDynamicUniforms ()Lnet/minecraft/class_11282;
+	METHOD method_1_8505 getGlobalsBuffer ()Lnet/minecraft/class_1_1211;
+	METHOD method_1_8506 getGlobalMatrix ()Lorg/joml/Matrix4f;
+	METHOD method_1_8507 getGlobalMatrixStack ()Lorg/joml/Matrix4fStack;
+	METHOD method_1_8508 getProjectionBuffer ()Lnet/minecraft/class_1_1254;
+	METHOD method_1_8509 getProjectionType ()Lnet/minecraft/class_10366;
+	METHOD method_1_8510 getSamplerCache ()Lnet/minecraft/class_12136;
+	METHOD method_1_8511 getScissorState ()Lnet/minecraft/class_11219;
+	METHOD method_1_8512 getShapeIndexBufferFor (Lnet/minecraft/class_5596;)Lnet/minecraft/class_1_1307$class_5590;
+		ARG 0 drawMode
+	METHOD method_1_8513 getFogBuffer ()Lnet/minecraft/class_1_1254;
+	METHOD method_1_8514 getLightingBuffer ()Lnet/minecraft/class_1_1254;
+	METHOD method_1_8515 initializeSdl ()Lnet/minecraft/class_7576$class_7577;
+		COMMENT {@return a {@link TimeSupplier} that retrieves elapsed time from the backend}
+	METHOD method_1_8516 initializeRenderThread ()V
+	METHOD method_1_8517 initializeDevice (Lnet/minecraft/class_1_1313;)V
+		ARG 0 device
+	METHOD method_1_8518 isWaitingTooLongForInput ()Z
+	METHOD method_1_8519 isOnRenderThread ()Z
+	METHOD method_1_8520 (Lit/unimi/dsi/fastutil/ints/IntConsumer;I)V
+		ARG 0 indexConsumer
+		ARG 1 firstVertexIndex
+	METHOD method_1_8521 (Lit/unimi/dsi/fastutil/ints/IntConsumer;I)V
+		ARG 0 indexConsumer
+		ARG 1 firstVertexIndex
+	METHOD method_1_8522 pollEvents (Lnet/minecraft/class_1_1312;)V
+		ARG 0 windowEventListener
+	METHOD method_1_8523 flushEvents (Lnet/minecraft/class_1_1312;)V
+		ARG 0 windowEventListener
+	METHOD method_1_8524 scheduleGpuAsyncTask (Ljava/lang/Runnable;)V
+		ARG 0 task
+	METHOD method_1_8525 growShapeIndexBuffers ()V
+	METHOD method_1_8526 restoreProjection ()V
+	METHOD method_1_8527 setCurrentPipelineCache (Lnet/minecraft/class_1_1152;)Lnet/minecraft/class_1_1152;
+		ARG 0 currentPipelineCache
+	METHOD method_1_8528 setFallbackPipelineCache (Lnet/minecraft/class_1_1152;)V
+		ARG 0 fallbackPipelineCache
+	METHOD method_1_8529 setGlobalsBuffer (Lnet/minecraft/class_1_1211;)V
+		ARG 0 globalSettingsUniform
+	METHOD method_1_8530 setProjection (Lnet/minecraft/class_1_1254;Lnet/minecraft/class_10366;)V
+		ARG 0 projectionMatrixBuffer
+		ARG 1 projectionType
+	METHOD method_1_8531 setFogBuffer (Lnet/minecraft/class_1_1254;)V
+		ARG 0 shaderFog
+	METHOD method_1_8532 setLightingBuffer (Lnet/minecraft/class_1_1254;)V
+		ARG 0 shaderLightDirections
+	METHOD method_1_8533 clearGlobalMatrixStack ()V
+	METHOD method_1_8534 startClosing ()V
+	METHOD method_1_8535 setWindow (Lnet/minecraft/class_1_11;)V
+		ARG 0 window
+	METHOD method_1_8536 getDeviceOptional ()Lnet/minecraft/class_1_1313;
+	METHOD method_1_8537 unloadWindow ()V
+	CLASS class_5590 ShapeIndexBuffer
+		COMMENT An index buffer that holds a pre-made indices for a specific shape. If
+		COMMENT this buffer is not large enough for the required number of indices when
+		COMMENT this buffer is bound, it automatically grows and fills indices using a
+		COMMENT given {@code triangulator}.
+		FIELD field_1_7964 deferredSize I
+		FIELD field_27332 vertexCountInShape I
+		FIELD field_27333 vertexCountInTriangulated I
+		FIELD field_27334 triangulator Lnet/minecraft/class_1_1307$class_5590$class_5591;
+		FIELD field_27336 indexType Lnet/minecraft/class_5595;
+		FIELD field_27337 size I
+		FIELD field_54299 indexBuffer Lnet/minecraft/class_1_1211;
+		METHOD <init> (IILnet/minecraft/class_1_1307$class_5590$class_5591;)V
+			ARG 1 vertexCountInShape
+				COMMENT the number of vertices in a shape
+			ARG 2 vertexCountInTriangulated
+				COMMENT the number of vertices in the triangles decomposed from the shape
+			ARG 3 triangulator
+				COMMENT a function that decomposes a shape into triangles
+		METHOD method_1_7311 getIndexBuffer ()Lnet/minecraft/class_1_1211;
+		METHOD method_1_7312 deferGrow (I)V
+			ARG 1 size
+		METHOD method_1_7313 applyDeferredGrow ()V
+		METHOD method_31920 grow (I)V
+			ARG 1 requiredSize
+		METHOD method_31922 getIndexConsumer (Ljava/nio/ByteBuffer;)Lit/unimi/dsi/fastutil/ints/IntConsumer;
+			ARG 1 indexBuffer
+		METHOD method_31923 (Ljava/nio/ByteBuffer;I)V
+			ARG 1 index
+		METHOD method_31924 getIndexType ()Lnet/minecraft/class_5595;
+		METHOD method_43409 isLargeEnough (I)Z
+			ARG 1 requiredSize
+		METHOD method_68274 getIndexBuffer (I)Lnet/minecraft/class_1_1211;
+			ARG 1 requiredSize
+		CLASS class_5591 Triangulator
+			COMMENT A functional interface that decomposes a shape into triangles.
+			COMMENT
+			COMMENT <p>The input shape is represented by the index of the first vertex in
+			COMMENT the shape. An output triangle is represented by the indices of the
+			COMMENT vertices in the triangle.
+			COMMENT
+			COMMENT @see <a href="https://en.wikipedia.org/wiki/Polygon_triangulation">Polygon triangulation - Wikipedia</a>
+			METHOD method_1_56 accept (Lit/unimi/dsi/fastutil/ints/IntConsumer;I)V
+				COMMENT Decomposes a shape into triangles.
+				ARG 1 indexConsumer
+					COMMENT the consumer that accepts triangles
+				ARG 2 firstVertexIndex
+					COMMENT the index of the first vertex in the input shape
+	CLASS class_10827 Task

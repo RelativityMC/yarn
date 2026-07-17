@@ -4,6 +4,8 @@ CLASS net/minecraft/class_9960 net/minecraft/client/render/DefaultFramebufferSet
 	FIELD field_1_8137 cloudDepthFramebuffer Lnet/minecraft/class_9925;
 	FIELD field_1_8138 terrainDepthFramebuffer Lnet/minecraft/class_9925;
 	FIELD field_1_8139 transmittanceTargetFramebuffers Ljava/util/List;
+	FIELD field_1_9090 alwaysOnTopDepthFramebuffer Lnet/minecraft/class_9925;
+	FIELD field_1_9091 depthBoundsCopyFramebuffer Lnet/minecraft/class_9925;
 	FIELD field_53083 MAIN Lnet/minecraft/class_2960;
 	FIELD field_53089 ENTITY_OUTLINE Lnet/minecraft/class_2960;
 	FIELD field_53091 mainFramebuffer Lnet/minecraft/class_9925;

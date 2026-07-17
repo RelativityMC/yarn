@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_1350 net/minecraft/world/gen/noise/OverworldNoiseSet
+	METHOD method_1_8872 apply (Ljava/util/function/Function;)Lnet/minecraft/class_1_1350;
+		ARG 1 function

@@ -1,0 +1,43 @@
+CLASS net/minecraft/class_1_1316 net/minecraft/entity/conversion/EntityConversionManager
+	FIELD field_1_9039 NOT_SUBMERGED I
+	FIELD field_1_9040 submersionTime I
+	FIELD field_1_9041 submersionTimeKey Ljava/lang/String;
+	FIELD field_1_9042 converting Lnet/minecraft/class_2940;
+	FIELD field_1_9043 eventIdSupplier Ljava/util/function/Supplier;
+	FIELD field_1_9044 timeUntilConversionFinish I
+	FIELD field_1_9045 conversionTimeKey Ljava/lang/String;
+	FIELD field_1_9046 resultEntityTypeSupplier Ljava/util/function/Supplier;
+	FIELD field_1_9047 submersionPredicate Ljava/util/function/BooleanSupplier;
+	FIELD field_1_9048 mob Lnet/minecraft/class_1308;
+	FIELD field_1_9049 onConvert Ljava/util/function/BiConsumer;
+	FIELD field_1_9050 requiredSubmersionTime I
+	FIELD field_1_9051 requiredConversionTime I
+	METHOD <init> (Lnet/minecraft/class_1308;Lnet/minecraft/class_2940;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Ljava/util/function/BooleanSupplier;Ljava/lang/String;ILjava/lang/String;ILjava/util/function/BiConsumer;)V
+		ARG 1 mob
+		ARG 2 converting
+		ARG 3 resultEntityTypeSupplier
+		ARG 4 eventIdSupplier
+		ARG 5 submersionPredicate
+		ARG 6 submersionTimeKey
+		ARG 7 requiredSubmersionTime
+		ARG 8 conversionTimeKey
+		ARG 9 requiredConversionTime
+		ARG 10 onConvert
+	METHOD method_1_8647 write (Lnet/minecraft/class_11372;)V
+		ARG 1 writeView
+	METHOD method_1_8648 finishConverting (Lnet/minecraft/class_3218;)V
+		ARG 1 world
+	METHOD method_1_8649 isConverting ()Z
+	METHOD method_1_8650 (Lnet/minecraft/class_3218;Lnet/minecraft/class_1308;)V
+		ARG 2 convertedEntity
+	METHOD method_1_8651 read (Lnet/minecraft/class_11368;)V
+		ARG 1 readView
+	METHOD method_1_8652 setSubmersionTime (I)V
+		ARG 1 submersionTime
+	METHOD method_1_8653 setTimeUntilConversionFinish (I)V
+		ARG 1 timeUntilConversionFinish
+	METHOD method_1_8654 setConverting (Z)V
+		ARG 1 converting
+	METHOD method_1_8655 startConverting (I)V
+		ARG 1 timeUntilFinish
+	METHOD method_1_8656 tick ()V

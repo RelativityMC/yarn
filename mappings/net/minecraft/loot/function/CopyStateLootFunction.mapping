@@ -3,9 +3,11 @@ CLASS net/minecraft/class_4488 net/minecraft/loot/function/CopyStateLootFunction
 	FIELD field_20450 properties Ljava/util/Set;
 	FIELD field_45816 CODEC Lcom/mojang/serialization/MapCodec;
 	METHOD <init> (Ljava/util/Optional;Lnet/minecraft/class_6880;Ljava/util/List;)V
+		ARG 1 condition
 		ARG 2 block
 		ARG 3 properties
 	METHOD <init> (Ljava/util/Optional;Lnet/minecraft/class_6880;Ljava/util/Set;)V
+		ARG 1 condition
 		ARG 2 block
 		ARG 3 properties
 	METHOD method_21892 builder (Lnet/minecraft/class_2248;)Lnet/minecraft/class_4488$class_4489;

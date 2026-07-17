@@ -1,0 +1,32 @@
+CLASS net/minecraft/class_1_1312 net/minecraft/client/window/WindowEventListener
+	FIELD field_1_9019 droppedFiles Ljava/util/List;
+	FIELD field_1_9020 client Lnet/minecraft/class_310;
+	FIELD field_1_9021 window Lnet/minecraft/class_1041;
+	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_1041;)V
+		ARG 1 client
+		ARG 2 window
+	METHOD method_1_8593 getWindowFromEvent (Lorg/lwjgl/sdl/SDL_Event;)J
+		ARG 0 event
+	METHOD method_1_8594 onDropBegin ()V
+	METHOD method_1_8595 onDropComplete (Lorg/lwjgl/sdl/SDL_Event;)V
+		ARG 1 event
+	METHOD method_1_8596 onDropFile (Lorg/lwjgl/sdl/SDL_Event;)V
+		ARG 1 event
+	METHOD method_1_8597 onKey (Lorg/lwjgl/sdl/SDL_Event;)V
+		ARG 1 event
+	METHOD method_1_8598 onKeymapChanged ()V
+	METHOD method_1_8599 onMouseButton (Lorg/lwjgl/sdl/SDL_Event;)V
+		ARG 1 event
+	METHOD method_1_8600 onMouseMove (Lorg/lwjgl/sdl/SDL_Event;)V
+		ARG 1 event
+	METHOD method_1_8601 onMouseWheel (Lorg/lwjgl/sdl/SDL_Event;)V
+		ARG 1 event
+	METHOD method_1_8602 onTextEditing (Lorg/lwjgl/sdl/SDL_Event;)V
+		ARG 1 event
+	METHOD method_1_8603 onTextInput (Lorg/lwjgl/sdl/SDL_Event;)V
+		ARG 1 event
+	METHOD method_1_8604 treatHorizontalScrollAsVertical (DD)Z
+		ARG 0 vertical
+		ARG 2 horizontal
+	METHOD method_1_8613 poll ()V
+	METHOD method_1_8614 flushEvents ()V

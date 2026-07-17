@@ -5,9 +5,13 @@ CLASS net/minecraft/class_125 net/minecraft/loot/function/EnchantedCountIncrease
 	FIELD field_45833 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_51798 enchantment Lnet/minecraft/class_6880;
 	METHOD <init> (Ljava/util/Optional;Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;I)V
+		ARG 1 condition
 		ARG 2 enchantment
+		ARG 3 count
 		ARG 4 limit
 	METHOD method_547 builder (Lnet/minecraft/class_7871;Lnet/minecraft/class_6880;)Lnet/minecraft/class_125$class_126;
+		ARG 0 enchantmentLookup
+		ARG 1 count
 	METHOD method_549 hasLimit ()Z
 	METHOD method_53348 (Lnet/minecraft/class_125;)Ljava/lang/Integer;
 		ARG 0 function
@@ -23,5 +27,6 @@ CLASS net/minecraft/class_125 net/minecraft/loot/function/EnchantedCountIncrease
 		FIELD field_51799 enchantment Lnet/minecraft/class_6880;
 		METHOD <init> (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)V
 			ARG 1 enchantment
+			ARG 2 count
 		METHOD method_551 withLimit (I)Lnet/minecraft/class_125$class_126;
 			ARG 1 limit

@@ -1,12 +1,28 @@
 CLASS net/minecraft/class_144 net/minecraft/loot/function/SetLootTableLootFunction
+	FIELD field_1_9295 TAG_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_9296 tag Lnet/minecraft/class_6880$class_6883;
 	FIELD field_1117 seed J
 	FIELD field_34773 type Lnet/minecraft/class_6880;
 	FIELD field_45842 CODEC Lcom/mojang/serialization/MapCodec;
 	METHOD <init> (Ljava/util/Optional;Lnet/minecraft/class_6880$class_6883;JLnet/minecraft/class_6880;)V
+		ARG 1 condition
+		ARG 2 tag
 		ARG 3 seed
 		ARG 5 blockEntityType
+	METHOD method_1_8974 (Lnet/minecraft/class_6880;)Lcom/mojang/serialization/DataResult;
+		ARG 0 entry
+	METHOD method_1_8976 (Lnet/minecraft/class_6880$class_6883;)Lnet/minecraft/class_6880;
+		ARG 0 entry
+	METHOD method_1_8977 (Lnet/minecraft/class_6880$class_6883;Lnet/minecraft/class_6880;Ljava/util/Optional;)Lnet/minecraft/class_117;
+		ARG 2 condition
+	METHOD method_1_8978 (Lnet/minecraft/class_6880$class_6883;JLnet/minecraft/class_6880;Ljava/util/Optional;)Lnet/minecraft/class_117;
+		ARG 4 condition
 	METHOD method_35534 builder (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880$class_6883;)Lnet/minecraft/class_120$class_121;
+		ARG 0 type
+		ARG 1 tag
 	METHOD method_35535 builder (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880$class_6883;J)Lnet/minecraft/class_120$class_121;
+		ARG 0 type
+		ARG 1 tag
 		ARG 2 seed
 	METHOD method_53366 (Lnet/minecraft/class_144;)Lnet/minecraft/class_6880;
 		ARG 0 function

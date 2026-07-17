@@ -15,6 +15,14 @@ CLASS net/minecraft/class_6955 net/minecraft/world/gen/OreVeinSampler
 	FIELD field_36626 DENSITY_FOR_MAX_ORE_CHANCE F
 	FIELD field_36627 RAW_ORE_BLOCK_CHANCE F
 	FIELD field_36628 VEIN_GAP_THRESHOLD F
+	METHOD method_1_8724 createBlockStateSampler (Lnet/minecraft/class_6574;)Lnet/minecraft/class_6568$class_6569;
+		ARG 1 randomSplitter
+	METHOD method_1_8725 (Lnet/minecraft/class_2680;Lnet/minecraft/class_6574;Lnet/minecraft/class_6910$class_6912;)Lnet/minecraft/class_2680;
+		ARG 3 pos
+	METHOD method_1_8726 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_8727 apply (Lnet/minecraft/class_6910$class_6915;)Lnet/minecraft/class_6955;
+		ARG 1 visitor
 	CLASS class_6354 VeinType
 		FIELD field_33605 ore Lnet/minecraft/class_2680;
 		FIELD field_33606 stone Lnet/minecraft/class_2680;
@@ -22,6 +30,12 @@ CLASS net/minecraft/class_6955 net/minecraft/world/gen/OreVeinSampler
 		FIELD field_33608 maxY I
 		FIELD field_33668 rawOreBlock Lnet/minecraft/class_2680;
 		METHOD <init> (Ljava/lang/String;ILnet/minecraft/class_2680;Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;II)V
+			ARG 3 ore
 			ARG 4 rawOreBlock
+			ARG 5 stone
 			ARG 6 minY
 			ARG 7 maxY
+		METHOD method_1_8728 createConfig (Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6955;
+			ARG 1 density
+			ARG 2 richness
+			ARG 3 gap

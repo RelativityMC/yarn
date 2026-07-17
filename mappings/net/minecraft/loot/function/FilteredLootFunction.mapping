@@ -4,6 +4,7 @@ CLASS net/minecraft/class_9668 net/minecraft/loot/function/FilteredLootFunction
 	FIELD field_63966 onPass Ljava/util/Optional;
 	FIELD field_63967 onFail Ljava/util/Optional;
 	METHOD <init> (Ljava/util/Optional;Lnet/minecraft/class_2073;Ljava/util/Optional;Ljava/util/Optional;)V
+		ARG 1 condition
 		ARG 2 itemFilter
 		ARG 3 onPass
 		ARG 4 onFail
@@ -24,4 +25,6 @@ CLASS net/minecraft/class_9668 net/minecraft/loot/function/FilteredLootFunction
 		METHOD <init> (Lnet/minecraft/class_2073;)V
 			ARG 1 itemFilter
 		METHOD method_75910 onPass (Lnet/minecraft/class_117;)Lnet/minecraft/class_9668$class_12244;
+			ARG 1 onPass
 		METHOD method_75911 onFail (Lnet/minecraft/class_117;)Lnet/minecraft/class_9668$class_12244;
+			ARG 1 onFail

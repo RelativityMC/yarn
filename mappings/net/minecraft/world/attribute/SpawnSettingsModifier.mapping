@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1366 net/minecraft/world/attribute/SpawnSettingsModifier
+	METHOD method_1_8923 overlay ()Lnet/minecraft/class_1_1366;
+	CLASS class_1_1367 Overlay
+		FIELD field_1_9272 SPAWN_GROUPS [Lnet/minecraft/class_1311;
+		FIELD field_1_9273 INSTANCE Lnet/minecraft/class_1_1366$class_1_1367;

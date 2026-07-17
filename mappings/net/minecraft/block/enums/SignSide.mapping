@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_1_1337 net/minecraft/block/enums/SignSide
+	FIELD field_1_9151 BY_ID Ljava/util/function/IntFunction;
+	FIELD field_1_9153 PACKET_CODEC Lnet/minecraft/class_9139;
+	FIELD field_1_9154 index I
+	METHOD <init> (Ljava/lang/String;II)V
+		ARG 3 index
+	METHOD method_1_8812 (Lnet/minecraft/class_1_1337;)I
+		ARG 0 side
+	METHOD method_1_8813 (Lnet/minecraft/class_1_1337;)I
+		ARG 0 side

@@ -1,18 +1,34 @@
 CLASS net/minecraft/class_79 net/minecraft/loot/entry/LootPoolEntry
-	FIELD field_988 conditions Ljava/util/Optional;
+	FIELD field_1_9287 modifier Ljava/util/Optional;
+	FIELD field_988 condition Ljava/util/Optional;
+	METHOD <init> (Ljava/util/Optional;Ljava/util/Optional;)V
+		ARG 1 condition
+		ARG 2 modifier
 	METHOD method_1_748 getMapCodec ()Lcom/mojang/serialization/MapCodec;
+	METHOD method_1_8961 apply (Ljava/util/function/Consumer;)Ljava/util/function/Consumer;
+		ARG 1 choiceConsumer
+	METHOD method_1_8962 expandInternal (Lnet/minecraft/class_47;Ljava/util/function/Consumer;)Z
+		ARG 1 context
+		ARG 2 choiceConsumer
+	METHOD method_1_8963 (Ljava/util/function/Consumer;Lnet/minecraft/class_82;)V
+		ARG 2 lootChoice
+	METHOD method_1_8964 (Lnet/minecraft/class_79;)Ljava/util/Optional;
+		ARG 0 entry
 	METHOD method_414 test (Lnet/minecraft/class_47;)Z
+		ARG 1 context
 	METHOD method_53287 addConditionsField (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/Products$P2;
 		ARG 0 instance
 	METHOD method_53288 (Lnet/minecraft/class_79;)Ljava/util/Optional;
 		ARG 0 entry
 	CLASS class_80 Builder
-		FIELD field_990 conditions Lcom/google/common/collect/ImmutableList$Builder;
+		FIELD field_1_9290 modifier Lcom/google/common/collect/ImmutableList$Builder;
+		FIELD field_990 condition Lcom/google/common/collect/ImmutableList$Builder;
+		METHOD method_1_8966 getModifier ()Ljava/util/Optional;
 		METHOD method_417 alternatively (Lnet/minecraft/class_79$class_80;)Lnet/minecraft/class_65$class_66;
 			ARG 1 builder
 		METHOD method_418 getThisBuilder ()Lnet/minecraft/class_79$class_80;
 		METHOD method_419 build ()Lnet/minecraft/class_79;
-		METHOD method_420 getConditions ()Ljava/util/Optional;
+		METHOD method_420 getCondition ()Ljava/util/Optional;
 		METHOD method_35513 groupEntry (Lnet/minecraft/class_79$class_80;)Lnet/minecraft/class_93$class_6152;
 			ARG 1 entry
 		METHOD method_35514 sequenceEntry (Lnet/minecraft/class_79$class_80;)Lnet/minecraft/class_72$class_6153;

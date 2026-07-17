@@ -1,7 +1,0 @@
-CLASS net/minecraft/class_1_1330
-	METHOD method_1_8000 baseMipLevel ()I
-	METHOD method_1_8001 getHeight (I)I
-	METHOD method_1_8002 getWidth (I)I
-	METHOD method_1_8003 isClosed ()Z
-	METHOD method_1_8004 mipLevel ()I
-	METHOD method_1_8005 getTexture ()Lnet/minecraft/class_1_1318;

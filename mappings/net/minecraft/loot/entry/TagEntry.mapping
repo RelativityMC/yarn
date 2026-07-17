@@ -2,12 +2,32 @@ CLASS net/minecraft/class_91 net/minecraft/loot/entry/TagEntry
 	FIELD field_1005 name Lnet/minecraft/class_6885;
 	FIELD field_45805 CODEC Lcom/mojang/serialization/MapCodec;
 	METHOD <init> (Lnet/minecraft/class_6885;ZIILjava/util/Optional;Ljava/util/Optional;)V
+		ARG 1 items
 		ARG 2 expand
 		ARG 3 weight
 		ARG 4 quality
+		ARG 5 condition
+		ARG 6 modifier
+	METHOD method_1_8873 (Lnet/minecraft/class_6885;IILjava/util/Optional;Ljava/util/Optional;)Lnet/minecraft/class_85;
+		ARG 1 weight
+		ARG 2 quality
+		ARG 3 condition
+		ARG 4 modifier
+	METHOD method_1_8874 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_8875 (Lnet/minecraft/class_6885;IILjava/util/Optional;Ljava/util/Optional;)Lnet/minecraft/class_85;
+		ARG 1 weight
+		ARG 2 quality
+		ARG 3 condition
+		ARG 4 modifier
 	METHOD method_445 expandBuilder (Lnet/minecraft/class_6885;)Lnet/minecraft/class_85$class_86;
+		ARG 0 items
 	METHOD method_447 (Ljava/util/function/Consumer;)Z
 		ARG 1 lootChoiceExpander
 	METHOD method_35517 builder (Lnet/minecraft/class_6885;)Lnet/minecraft/class_85$class_86;
+		ARG 0 items
 	METHOD method_53296 (Lnet/minecraft/class_91;)Lnet/minecraft/class_6885;
 		ARG 0 entry
+	CLASS 2 2
+		METHOD method_1_8876 (Ljava/util/function/Consumer;Lnet/minecraft/class_6880;)V
+			ARG 1 item

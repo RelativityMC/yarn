@@ -19,10 +19,16 @@ CLASS net/minecraft/class_2382 net/minecraft/util/math/Vec3i
 	FIELD field_11176 ZERO Lnet/minecraft/class_2382;
 	FIELD field_25123 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_56131 PACKET_CODEC Lnet/minecraft/class_9139;
+	METHOD <init> (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD compareTo (Ljava/lang/Object;)I
 		ARG 1 vec
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
+	METHOD method_1_8235 isInDifferentColumn (Lnet/minecraft/class_2382;)Z
+		ARG 1 other
 	METHOD method_10099 setY (I)Lnet/minecraft/class_2382;
 		ARG 1 y
 	METHOD method_10259 crossProduct (Lnet/minecraft/class_2382;)Lnet/minecraft/class_2382;

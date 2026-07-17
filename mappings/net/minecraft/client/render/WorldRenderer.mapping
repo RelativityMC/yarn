@@ -10,6 +10,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	FIELD field_1_6302 FRAMEBUFFER_CLEAR_COLOR Lorg/joml/Vector4fc;
 	FIELD field_1_7983 COEFF_COUNT I
 	FIELD field_1_7984 COEFF_ATTACHMENT_COUNT I
+	FIELD field_1_8347 drawOutlines Z
 	FIELD field_4109 entityRenderManager Lnet/minecraft/class_898;
 	FIELD field_4112 chunks Lnet/minecraft/class_769;
 	FIELD field_20951 bufferBuilders Lnet/minecraft/class_4599;
@@ -74,6 +75,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_1_7338 drawTranslucentGeometry (Lnet/minecraft/class_11532;Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_1_1317;)V
 		ARG 1 state
 		ARG 2 preparedFrame
+		ARG 3 pass
 	METHOD method_1_7339 drawOitTranslucentGeometry (Lnet/minecraft/class_11532;Lnet/minecraft/class_11684$class_1_875;)V
 		ARG 1 sectionRenderState
 		ARG 2 preparedFrame
@@ -85,9 +87,17 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_1_7342 renderSolidGeometry (Lnet/minecraft/class_11532;Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_1_1317;)V
 		ARG 1 sectionRenderState
 		ARG 2 preparedFrame
+		ARG 3 pass
 	METHOD method_1_7350 prepare ()V
 	METHOD method_1_7351 getTransmittanceTargetFramebuffer (I)Lnet/minecraft/class_276;
 		ARG 1 index
+	METHOD method_1_8615 getDepthBoundsCopyFramebuffer ()Lnet/minecraft/class_276;
+	METHOD method_1_8616 renderAlwaysOnTopFeatures (Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_276;Z)V
+		ARG 1 preparedFrame
+		ARG 2 framebuffer
+		ARG 3 hasPostEffects
+	METHOD method_1_8617 oitCullDepthBounds ()V
+	METHOD method_1_8618 hasAlwaysOnTopPrimitives ()Z
 	METHOD method_3242 onResized (II)V
 		ARG 1 width
 		ARG 2 height
@@ -102,6 +112,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 4 fogBuffer
 		ARG 5 fogColor
 		ARG 6 renderSky
+		ARG 7 hasPostEffects
 	METHOD method_22712 drawBlockOutline (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;Lnet/minecraft/class_1921;Lnet/minecraft/class_12074;IFZ)V
 		ARG 1 matrices
 		ARG 2 queue
@@ -130,6 +141,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 2 preparedFrame
 		ARG 3 fogBuffer
 		ARG 4 sectionRenderState
+		ARG 5 hasPostEffects
 	METHOD method_62206 renderBlockDamage (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;Lnet/minecraft/class_11658;)V
 		ARG 1 matrices
 		ARG 2 queue

@@ -1,5 +1,0 @@
-CLASS net/minecraft/class_1_1308
-	METHOD method_1_8540 (I)Lnet/minecraft/class_1_1308;
-		ARG 1 alignedSize
-	METHOD method_1_8552 (Lorg/joml/Matrix4fc;)Lnet/minecraft/class_1_1308;
-		ARG 1 matrix

@@ -26,3 +26,8 @@ CLASS net/minecraft/class_1_1204 net/minecraft/world/BlockQueries
 		ARG 6 maxZ
 		ARG 7 blockStatePredicate
 		ARG 8 callback
+	METHOD method_1_8774 iterateOverPositions (Lnet/minecraft/class_4538;Ljava/lang/Iterable;Ljava/util/function/Predicate;Lnet/minecraft/class_1_1221;)Z
+		ARG 0 world
+		ARG 1 positions
+		ARG 2 blockStatePredicate
+		ARG 3 callback

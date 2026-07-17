@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1_1345 net/minecraft/client/texture/ForceFieldTexture
+	FIELD field_1_9186 maxMipmapLevels I
+	METHOD <init> (Lnet/minecraft/class_2960;I)V
+		ARG 1 id
+		ARG 2 maxMipmapLevels
+	METHOD method_1_8850 getMipmapLevels (II)I
+		ARG 1 width
+		ARG 2 height

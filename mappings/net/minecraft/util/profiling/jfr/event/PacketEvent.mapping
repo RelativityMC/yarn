@@ -1,4 +1,9 @@
 CLASS net/minecraft/class_6509 net/minecraft/util/profiling/jfr/event/PacketEvent
+	FIELD field_1_1 bytes I
+	FIELD field_1_2 packetDirection Ljava/lang/String;
+	FIELD field_1_3 packedId Ljava/lang/String;
+	FIELD field_1_4 protocolId Ljava/lang/String;
+	FIELD field_1_5 remoteAddress Ljava/lang/String;
 	METHOD <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/net/SocketAddress;I)V
 		ARG 1 protocolId
 		ARG 2 packetDirection

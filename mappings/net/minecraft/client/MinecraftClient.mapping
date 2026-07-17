@@ -50,6 +50,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_1_6364 friendListManager Lnet/minecraft/class_1_1004;
 	FIELD field_1_7135 monitorTracker Lnet/minecraft/class_323;
 	FIELD field_1_7205 paletteManager Lnet/minecraft/class_1_1126;
+	FIELD field_1_8782 windowEventListener Lnet/minecraft/class_1_1312;
 	FIELD field_1687 world Lnet/minecraft/class_638;
 		COMMENT Represents the world the client is currently viewing.
 		COMMENT This field is not null when in game.
@@ -168,7 +169,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD <init> (Lnet/minecraft/class_542;)V
 		ARG 1 args
 	METHOD method_1_367 render (Z)V
-		ARG 1 tick
+		ARG 1 memoryOk
 	METHOD method_1_368 addLowDiskSpaceWarning ()V
 	METHOD method_1_2117 isOtherPlayer (Ljava/util/UUID;)Z
 		ARG 1 sender
@@ -238,7 +239,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_1520 getResourcePackManager ()Lnet/minecraft/class_3283;
 	METHOD method_1521 reloadResources ()Ljava/util/concurrent/CompletableFuture;
 	METHOD method_1523 frame (Z)V
-		ARG 1 tick
+		ARG 1 memoryOk
 	METHOD method_1526 getLanguageManager ()Lnet/minecraft/class_1076;
 	METHOD method_1530 isDemo ()Z
 	METHOD method_1531 getTextureManager ()Lnet/minecraft/class_1060;

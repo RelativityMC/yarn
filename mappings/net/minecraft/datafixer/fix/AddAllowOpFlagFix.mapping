@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1324 net/minecraft/datafixer/fix/AddAllowOpFlagFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD method_1_8699 makeRule (Ljava/lang/String;)Lcom/mojang/datafixers/TypeRewriteRule;
+		ARG 1 blockEntityId

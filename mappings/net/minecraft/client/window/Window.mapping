@@ -2,6 +2,9 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	FIELD field_1_2251 backend Lnet/minecraft/class_1_11;
 	FIELD field_1_2592 focused Z
 	FIELD field_1_7137 exclusiveFullscreen Z
+	FIELD field_1_8784 MIN_HEIGHT I
+	FIELD field_1_8785 MIN_WIDTH I
+	FIELD field_1_8786 closeCallback Ljava/lang/Runnable;
 	FIELD field_5174 windowedWidth I
 	FIELD field_5175 windowedX I
 	FIELD field_5176 eventHandler Lnet/minecraft/class_3678;
@@ -40,14 +43,47 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 		ARG 7 backend
 	METHOD method_1_2661 getBackend ()Lnet/minecraft/class_1_11;
 	METHOD method_1_2662 createHandle (Lnet/minecraft/class_1_11;IILjava/lang/String;)J
+		ARG 1 windowBackend
 		ARG 2 width
 		ARG 3 height
 		ARG 4 title
 	METHOD method_1_2666 updateFullscreenIfNeeded ()V
-	METHOD method_1_3099 clampToPositive (II)I
-		ARG 0 x
+	METHOD method_1_3099 clampToAtLeast (II)I
+		ARG 0 value
+		ARG 1 minimum
 	METHOD method_1_3138 isFocused ()Z
-	METHOD method_1_6373 shouldReserveOneRow ()Z
+	METHOD method_1_6373 isExclusiveFullscreen ()Z
+	METHOD method_1_8434 addAlternateIcon (Lorg/lwjgl/sdl/SDL_Surface;Lnet/minecraft/class_7367;)V
+		ARG 1 surface
+		ARG 2 icon
+	METHOD method_1_8436 setBorderlessFullscreen ()Z
+	METHOD method_1_8437 setFullscreen ()Z
+	METHOD method_1_8438 setFullscreenMode ()Z
+	METHOD method_1_8439 setWindowed ()Z
+	METHOD method_1_8440 createSurfaceFrom (Lnet/minecraft/class_1011;)Lorg/lwjgl/sdl/SDL_Surface;
+		ARG 0 image
+	METHOD method_1_8441 getSdlDisplayMode ()Lorg/lwjgl/sdl/SDL_DisplayMode;
+	METHOD method_1_8442 getVideoMode ()Lnet/minecraft/class_319;
+	METHOD method_1_8443 getPhase ()Ljava/lang/String;
+	METHOD method_1_8444 getPixelDensity ()F
+	METHOD method_1_8445 onEvent (Lorg/lwjgl/sdl/SDL_Event;)V
+		ARG 1 event
+	METHOD method_1_8446 isWindowExclusiveFullscreen ()Z
+	METHOD method_1_8447 isWindowFullscreen ()Z
+	METHOD method_1_8448 onFullscreenChanged (Z)V
+		ARG 1 fullscreen
+	METHOD method_1_8449 getSize ()Lnet/minecraft/class_1041$class_1_1301;
+	METHOD method_1_8450 onQuit ()V
+	METHOD method_1_8451 setExclusiveFullscreen (Z)V
+		ARG 1 exclusiveFullscreen
+	METHOD method_1_8452 setFullscreen (Z)V
+		ARG 1 fullscreen
+	METHOD method_1_8453 setIcon (Ljava/util/List;)V
+		ARG 1 icons
+	METHOD method_1_8454 setMaximumSize (II)V
+		ARG 1 width
+		ARG 2 height
+	METHOD method_1_8455 show ()V
 	METHOD method_4474 setPhase (Ljava/lang/String;)V
 		ARG 1 phase
 	METHOD method_4475 applyFullscreenVideoMode ()V
@@ -68,6 +104,7 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	METHOD method_4489 getFramebufferWidth ()I
 	METHOD method_4490 getHandle ()J
 	METHOD method_4491 setIcon (Lnet/minecraft/class_1_1068;Lnet/minecraft/class_8518;)V
+		ARG 1 resourceResolver
 		ARG 2 icons
 	METHOD method_4494 onWindowFocusChanged (Z)V
 		ARG 1 focused
@@ -107,6 +144,7 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	METHOD method_74030 setAllowCursorChanges (Z)V
 		ARG 1 allowCursorChanges
 	METHOD method_75291 getMinimumLineWidth ()F
-	CLASS class_4716 GlfwErroredException
+	CLASS class_1_1301 Size
+	CLASS class_4716 SdlErroredException
 		METHOD <init> (Ljava/lang/String;)V
 			ARG 1 message

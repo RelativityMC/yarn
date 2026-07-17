@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_1_1323 com/mojang/blaze3d/buffers/Std140SizeCalculator
+	FIELD field_1_9087 size I
+	METHOD method_1_8684 align (I)Lnet/minecraft/class_1_1323;
+		ARG 1 alignedSize
+	METHOD method_1_8685 get ()I
+	METHOD method_1_8686 putFloat ()Lnet/minecraft/class_1_1323;
+	METHOD method_1_8687 putIVec2 ()Lnet/minecraft/class_1_1323;
+	METHOD method_1_8688 putIVec3 ()Lnet/minecraft/class_1_1323;
+	METHOD method_1_8689 putIVec4 ()Lnet/minecraft/class_1_1323;
+	METHOD method_1_8690 putInt ()Lnet/minecraft/class_1_1323;
+	METHOD method_1_8691 putMat4f ()Lnet/minecraft/class_1_1323;
+	METHOD method_1_8692 putVec2 ()Lnet/minecraft/class_1_1323;
+	METHOD method_1_8693 putVec3 ()Lnet/minecraft/class_1_1323;
+	METHOD method_1_8694 putVec4 ()Lnet/minecraft/class_1_1323;

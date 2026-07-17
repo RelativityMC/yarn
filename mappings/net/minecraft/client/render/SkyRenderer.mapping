@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_9975 net/minecraft/client/render/SkyRenderer
+	FIELD field_1_5604 framebuffer Lnet/minecraft/class_276;
 	FIELD field_53143 END_SKY_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_53145 starVertexBuffer Lnet/minecraft/class_1_1211;
 	FIELD field_53146 topSkyVertexBuffer Lnet/minecraft/class_1_1211;
@@ -17,7 +18,9 @@ CLASS net/minecraft/class_9975 net/minecraft/client/render/SkyRenderer
 	METHOD <init> (Lnet/minecraft/class_1060;Lnet/minecraft/class_11697;Lnet/minecraft/class_276;)V
 		ARG 1 textureManager
 		ARG 2 atlasManager
+		ARG 3 framebuffer
 	METHOD method_62302 renderTopSky (I)V
+		ARG 1 color
 	METHOD method_62303 renderSun (FLnet/minecraft/class_4587;)V
 		ARG 1 alpha
 		ARG 2 matrices

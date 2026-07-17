@@ -18,6 +18,9 @@ CLASS net/minecraft/class_309 net/minecraft/client/Keyboard
 	METHOD method_1_3101 onImePreEdit (Lnet/minecraft/class_364;Lnet/minecraft/class_1_359;)V
 		ARG 0 element
 		ARG 1 preEdit
+	METHOD method_1_8463 onTextInput (JLjava/lang/String;)V
+		ARG 1 window
+		ARG 3 input
 	METHOD method_1455 setClipboard (Ljava/lang/String;)V
 		ARG 1 clipboard
 	METHOD method_1456 debugError (Lnet/minecraft/class_2561;)V
@@ -50,6 +53,8 @@ CLASS net/minecraft/class_309 net/minecraft/client/Keyboard
 		ARG 1 state
 		ARG 2 pos
 		ARG 3 nbt
+	METHOD method_22677 (JI)V
+		ARG 3 codePoint
 	METHOD method_35696 processDebugKeys (Lnet/minecraft/class_11908;)Z
 		ARG 1 input
 	METHOD method_37272 debugLog (Lnet/minecraft/class_2561;)V

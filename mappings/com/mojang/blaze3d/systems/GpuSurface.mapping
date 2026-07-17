@@ -1,11 +1,19 @@
-CLASS net/minecraft/class_1_665 com/mojang/blaze3d/systems/GpuSurface
-	COMMENT Wraps a {@link com.mojang.blaze3d.systems.GpuSurfaceBackend} to provide extra
-	COMMENT run-time checks.
-	FIELD field_1_3401 backend Lnet/minecraft/class_1_713;
-	FIELD field_1_3402 settings Ljava/util/Optional;
-	FIELD field_1_3403 blitted Z
-	FIELD field_1_3404 acquired Z
-	METHOD <init> (Lnet/minecraft/class_1_713;)V
-		ARG 1 backend
-	METHOD method_1_3991 (Lnet/minecraft/class_1_1314$class_1_666;)V
+CLASS net/minecraft/class_1_1314 com/mojang/blaze3d/systems/GpuSurface
+	METHOD method_1_3989 acquire ()V
+	METHOD method_1_3990 blit (Lnet/minecraft/class_1_1329;Lnet/minecraft/class_1_1330;)V
+		ARG 1 encoder
+		ARG 2 texture
+	METHOD method_1_3991 configure (Lnet/minecraft/class_1_1314$class_1_666;)V
 		ARG 1 settings
+	METHOD method_1_3992 getSettings ()Ljava/util/Optional;
+	METHOD method_1_3993 isAcquired ()Z
+	METHOD method_1_3994 needsReconfigure ()Z
+	METHOD method_1_3995 present ()V
+	METHOD method_1_4675 getSupportedPresentModes ()Ljava/util/Collection;
+	CLASS class_1_666 Settings
+	CLASS class_1_774 PresentMode
+		FIELD field_1_3849 VSYNC_PRESENT_MODES [Lnet/minecraft/class_1_1314$class_1_774;
+		FIELD field_1_3850 NO_VSYNC_PRESENT_MODES [Lnet/minecraft/class_1_1314$class_1_774;
+		METHOD method_1_4677 choose (Ljava/util/Collection;Z)Lnet/minecraft/class_1_1314$class_1_774;
+			ARG 0 supported
+			ARG 1 vsync

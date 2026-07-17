@@ -1,9 +1,14 @@
 CLASS net/minecraft/class_1_370 net/minecraft/entity/EntityFluidController
+	FIELD field_1_9120 effectsByFluid Lit/unimi/dsi/fastutil/objects/Reference2ObjectMap;
+	FIELD field_1_9121 collisions Ljava/util/List;
+	METHOD <init> (Ljava/util/Set;)V
+		ARG 1 fluids
 	METHOD method_1_2531 pushEntityFromFluid (Lnet/minecraft/class_6862;Lnet/minecraft/class_1297;D)V
 		ARG 1 fluidTag
 		ARG 2 entity
 		ARG 3 pushStrength
 	METHOD method_1_2532 getFeetSubmergence (Lnet/minecraft/class_6862;)D
+		ARG 1 fluidKey
 	METHOD method_1_2534 regionMightContainFluids (Lnet/minecraft/class_1937;IIIIII)Z
 		ARG 0 world
 		ARG 1 minX
@@ -13,11 +18,16 @@ CLASS net/minecraft/class_1_370 net/minecraft/entity/EntityFluidController
 		ARG 5 maxY
 		ARG 6 maxZ
 	METHOD method_1_2535 areEyesSubmergedIn (Lnet/minecraft/class_6862;)Z
+		ARG 1 fluidKey
 	METHOD method_1_2536 areFeetSubmergedIn (Lnet/minecraft/class_6862;)Z
 		ARG 1 fluidKey
 	METHOD method_1_2537 calculateFluidEffects (Lnet/minecraft/class_1297;Z)Z
 		ARG 1 entity
 		ARG 2 notPushedByFluids
+	METHOD method_1_8755 getEffect (Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_370$class_1_371;
+		ARG 1 fluidKey
+	METHOD method_1_8756 getCollision (Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_370$class_1_1328;
+		ARG 1 fluidKey
 	CLASS class_1_371 Effect
 		FIELD field_1_2086 totalFluidVelocity Lnet/minecraft/class_243;
 		FIELD field_1_2087 affectingBlockCount I
@@ -28,3 +38,10 @@ CLASS net/minecraft/class_1_370 net/minecraft/entity/EntityFluidController
 			ARG 1 entity
 			ARG 2 strength
 		METHOD method_1_2540 reset ()V
+	CLASS class_1_1328 Collision
+		FIELD field_1_9122 eyesSubmerged Z
+		FIELD field_1_9123 fluidKey Lnet/minecraft/class_6880;
+		FIELD field_1_9124 feetSubmergence D
+		METHOD <init> (Lnet/minecraft/class_6880;)V
+			ARG 1 fluidKey
+		METHOD method_1_8757 shouldRemove ()Z

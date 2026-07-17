@@ -6,6 +6,12 @@ CLASS net/minecraft/class_85 net/minecraft/loot/entry/LeafEntry
 	METHOD <init> (IILjava/util/Optional;Ljava/util/Optional;)V
 		ARG 1 weight
 		ARG 2 quality
+		ARG 3 condition
+		ARG 4 modifier
+	METHOD method_1_8957 (Lnet/minecraft/class_85;)Ljava/util/Optional;
+		ARG 0 entry
+	METHOD method_1_8958 createCommonCodecFields (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/Products$P4;
+		ARG 0 instance
 	METHOD method_434 builder (Lnet/minecraft/class_85$class_89;)Lnet/minecraft/class_85$class_86;
 		ARG 0 factory
 	METHOD method_53291 (Lnet/minecraft/class_85;)Ljava/lang/Integer;
@@ -26,3 +32,7 @@ CLASS net/minecraft/class_85 net/minecraft/loot/entry/LeafEntry
 	CLASS class_88 Choice
 	CLASS class_89 Factory
 		METHOD method_1_350 build (IILjava/util/Optional;Ljava/util/Optional;)Lnet/minecraft/class_85;
+			ARG 1 weight
+			ARG 2 quality
+			ARG 3 condition
+			ARG 4 modifier

@@ -1,5 +1,13 @@
 CLASS net/minecraft/class_323 net/minecraft/client/util/MonitorTracker
-	FIELD field_1993 pointerToMonitorMap Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+	FIELD field_1993 idToMonitorMap Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
 	FIELD field_37266 LOGGER Lorg/slf4j/Logger;
+	METHOD method_1_8576 registerMonitor (I)Lnet/minecraft/class_313;
+		ARG 1 id
+	METHOD method_1_8577 onConnectMonitor (I)V
+		ARG 1 id
+	METHOD method_1_8578 onDisconnectMonitor (I)V
+		ARG 1 id
 	METHOD method_1680 getMonitor (I)Lnet/minecraft/class_313;
+		ARG 1 id
 	METHOD method_1681 getMonitor (Lnet/minecraft/class_1041;)Lnet/minecraft/class_313;
+		ARG 1 window

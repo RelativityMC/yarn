@@ -9,3 +9,5 @@ CLASS net/minecraft/class_1659 net/minecraft/network/message/ChatVisibility
 	METHOD method_76454 getText ()Lnet/minecraft/class_2561;
 	METHOD method_76455 (Lnet/minecraft/class_1659;)Ljava/lang/Integer;
 		ARG 0 visibility
+	METHOD method_76456 (Lnet/minecraft/class_1659;)I
+		ARG 0 visibility

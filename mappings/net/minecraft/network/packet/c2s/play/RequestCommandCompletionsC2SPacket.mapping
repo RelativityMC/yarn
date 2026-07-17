@@ -1,6 +1,11 @@
 CLASS net/minecraft/class_2805 net/minecraft/network/packet/c2s/play/RequestCommandCompletionsC2SPacket
 	FIELD comp_1_1425 partialCommand Ljava/lang/String;
 	FIELD comp_1_1426 completionId I
+	FIELD field_1_9291 NON_OP_CODEC Lnet/minecraft/class_9139;
 	FIELD field_48185 CODEC Lnet/minecraft/class_9139;
 	METHOD comp_1_1425 partialCommand ()Ljava/lang/String;
 	METHOD comp_1_1426 completionId ()I
+	METHOD method_1_8968 createCodec (I)Lnet/minecraft/class_9139;
+		ARG 0 maxLength
+	CLASS 1 1
+		FIELD field_1_9292 delegate Lnet/minecraft/class_9139;

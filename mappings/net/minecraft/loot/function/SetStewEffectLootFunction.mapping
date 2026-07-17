@@ -3,6 +3,7 @@ CLASS net/minecraft/class_152 net/minecraft/loot/function/SetStewEffectLootFunct
 	FIELD field_45852 STEW_EFFECT_LIST_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_45853 stewEffects Ljava/util/List;
 	METHOD <init> (Ljava/util/Optional;Ljava/util/List;)V
+		ARG 1 condition
 		ARG 2 stewEffects
 	METHOD method_637 builder ()Lnet/minecraft/class_152$class_153;
 	METHOD method_53395 (Lnet/minecraft/class_152;)Ljava/util/List;
@@ -15,5 +16,8 @@ CLASS net/minecraft/class_152 net/minecraft/loot/function/SetStewEffectLootFunct
 		FIELD field_1123 map Lcom/google/common/collect/ImmutableList$Builder;
 		METHOD method_640 withEffect (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)Lnet/minecraft/class_152$class_153;
 			ARG 1 effect
+			ARG 2 duration
 	CLASS class_8754 StewEffect
 		FIELD field_45854 CODEC Lcom/mojang/serialization/Codec;
+		METHOD method_53399 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance

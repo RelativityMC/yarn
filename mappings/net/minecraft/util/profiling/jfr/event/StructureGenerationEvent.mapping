@@ -1,0 +1,18 @@
+CLASS net/minecraft/class_1_1365 net/minecraft/util/profiling/jfr/event/StructureGenerationEvent
+	FIELD field_1_9265 NAME Ljava/lang/String;
+	FIELD field_1_9266 EVENT_TYPE Ljdk/jfr/EventType;
+	FIELD field_1_9267 chunkPosX I
+	FIELD field_1_9268 chunkPosZ I
+	FIELD field_1_9269 level Ljava/lang/String;
+	FIELD field_1_9270 structure Ljava/lang/String;
+	FIELD field_1_9271 success Z
+	METHOD <init> (Lnet/minecraft/class_1923;Lnet/minecraft/class_6880;Lnet/minecraft/class_5321;)V
+		ARG 1 chunkPos
+		ARG 2 structure
+		ARG 3 dimension
+	CLASS class_10385 Names
+		FIELD field_55171 CHUNK_POS_X Ljava/lang/String;
+		FIELD field_55172 CHUNK_POS_Z Ljava/lang/String;
+		FIELD field_55173 STRUCTURE Ljava/lang/String;
+		FIELD field_55174 LEVEL Ljava/lang/String;
+		FIELD field_55175 SUCCESS Ljava/lang/String;

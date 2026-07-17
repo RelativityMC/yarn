@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_636 net/minecraft/client/network/ClientPlayerInteractionManager
+	FIELD field_1_7542 BLOCK_BREAKING_COOLDOWN I
 	FIELD field_3712 client Lnet/minecraft/class_310;
 	FIELD field_3713 blockBreakingSoundCooldown F
 	FIELD field_3714 currentBreakingPos Lnet/minecraft/class_2338;

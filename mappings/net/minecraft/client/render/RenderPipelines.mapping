@@ -83,6 +83,8 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_1_8065 TEXT_BACKGROUND_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_1_8066 WATER_MASK_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_1_8067 WEATHER Lnet/minecraft/class_1_1257;
+	FIELD field_1_9052 INTEGRATE_DEPTH Lnet/minecraft/class_1_1257;
+	FIELD field_1_9053 OIT_DEPTH_BOUNDS_CULL Lnet/minecraft/class_1_1257;
 	FIELD field_56812 BEACON_BEAM_TRANSLUCENT Lnet/minecraft/class_1_1257;
 	FIELD field_56814 RENDERTYPE_LEASH Lnet/minecraft/class_1_1257;
 	FIELD field_56815 RENDERTYPE_WATER_MASK Lnet/minecraft/class_1_1257;

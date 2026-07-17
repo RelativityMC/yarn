@@ -10,7 +10,11 @@ CLASS net/minecraft/class_2037 net/minecraft/advancement/criterion/EnterBlockCri
 		METHOD <init> (Ljava/util/Optional;Ljava/util/Optional;Ljava/util/Optional;)V
 			ARG 1 playerPredicate
 			ARG 3 state
-		METHOD method_8890 block (Lnet/minecraft/class_6885;)Lnet/minecraft/class_175;
+		METHOD method_1_8847 block (Lnet/minecraft/class_7871;Lnet/minecraft/class_2248;)Lnet/minecraft/class_175;
+			ARG 0 blockLookup
+			ARG 1 block
+		METHOD method_8890 blocks (Lnet/minecraft/class_6885;)Lnet/minecraft/class_175;
+			ARG 0 blocks
 		METHOD method_8891 matches (Lnet/minecraft/class_2680;)Z
 			ARG 1 state
 		METHOD method_54981 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

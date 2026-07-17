@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_279 net/minecraft/client/render/effect/PostEffectProcessor
 	FIELD field_1_1781 projectionMatrix Lnet/minecraft/class_11279;
+	FIELD field_1_8830 id Lnet/minecraft/class_2960;
 	FIELD field_1497 passes Ljava/util/List;
 	FIELD field_53104 MAIN Lnet/minecraft/class_2960;
 	FIELD field_53106 internalTargets Ljava/util/Map;
@@ -7,10 +8,13 @@ CLASS net/minecraft/class_279 net/minecraft/client/render/effect/PostEffectProce
 	FIELD field_60119 framebuffers Ljava/util/Map;
 	FIELD field_60120 projectionBuffer Lnet/minecraft/class_11278;
 	METHOD <init> (Lnet/minecraft/class_2960;Ljava/util/List;Ljava/util/Map;Ljava/util/Set;Lnet/minecraft/class_11279;Lnet/minecraft/class_11278;)V
+		ARG 1 id
+		ARG 2 passes
 		ARG 3 internalTargets
 		ARG 4 externalTargets
 		ARG 5 projectionMatrix
 		ARG 6 projectionBuffer
+	METHOD method_1_8539 getId ()Lnet/minecraft/class_2960;
 	METHOD method_1256 parseEffect (Lnet/minecraft/class_9962;Lnet/minecraft/class_1060;Ljava/util/Set;Lnet/minecraft/class_2960;Lnet/minecraft/class_11279;Lnet/minecraft/class_11278;)Lnet/minecraft/class_279;
 		ARG 0 pipeline
 		ARG 1 textureManager

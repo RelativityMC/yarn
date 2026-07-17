@@ -1,5 +1,10 @@
 CLASS net/minecraft/class_116 net/minecraft/loot/function/LootFunctionConsumingBuilder
-	METHOD method_511 apply (Lnet/minecraft/class_6880;)Lnet/minecraft/class_116;
+	METHOD method_1_8959 modifier (Lnet/minecraft/class_117$class_118;)Lnet/minecraft/class_116;
+		ARG 1 builder
+	METHOD method_1_8960 combineLootFunctions (Ljava/util/List;)Ljava/util/Optional;
+		ARG 0 functions
+	METHOD method_511 modifier (Lnet/minecraft/class_6880;)Lnet/minecraft/class_116;
+		ARG 1 function
 	METHOD method_43732 getThisFunctionConsumingBuilder ()Lnet/minecraft/class_116;
 	METHOD method_43739 apply (Ljava/lang/Iterable;Ljava/util/function/Function;)Lnet/minecraft/class_116;
 		ARG 1 functions

@@ -12,10 +12,14 @@ CLASS net/minecraft/class_313 net/minecraft/client/util/Monitor
 	METHOD comp_1_899 y ()I
 	METHOD comp_1_1352 handle ()I
 	METHOD method_1_6374 describeMonitor (I)Ljava/lang/String;
-	METHOD method_1_6375 fromPointer (I)Lnet/minecraft/class_313;
+		ARG 0 id
+	METHOD method_1_6375 fromId (I)Lnet/minecraft/class_313;
+		ARG 0 id
+	METHOD method_1_8458 getFirstAvailableVideoMode ()Lnet/minecraft/class_319;
 	METHOD method_1614 findClosestVideoMode (Ljava/util/Optional;)Lnet/minecraft/class_319;
 		ARG 1 videoMode
-	METHOD method_1619 findClosestVideoModeIndex (Lnet/minecraft/class_319;)I
+	METHOD method_1619 findVideoModeIndex (Lnet/minecraft/class_319;)I
+		ARG 1 videoMode
 	METHOD method_1620 getVideoMode (I)Lnet/minecraft/class_319;
 		ARG 1 index
 	METHOD method_1621 getVideoModeCount ()I

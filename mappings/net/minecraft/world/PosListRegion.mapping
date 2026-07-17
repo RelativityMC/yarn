@@ -1,0 +1,24 @@
+CLASS net/minecraft/class_1_1349 net/minecraft/world/PosListRegion
+	FIELD field_1_9200 positions Ljava/lang/Iterable;
+	METHOD <init> (Lnet/minecraft/class_4538;Ljava/lang/Iterable;)V
+		ARG 1 world
+		ARG 2 positions
+	METHOD method_1_8864 filter (Ljava/util/function/Predicate;)Lnet/minecraft/class_1_1349;
+		ARG 1 positionPredicate
+	METHOD method_1_8866 getFirst ()Ljava/util/Optional;
+	METHOD method_1_8867 getFirstMatching (Ljava/util/function/BiPredicate;)Ljava/util/Optional;
+		ARG 1 predicate
+	METHOD method_1_8868 (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Lnet/minecraft/class_7928;
+		ARG 0 pos
+		ARG 1 state
+	METHOD method_1_8869 (Lorg/apache/commons/lang3/mutable/MutableObject;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Lnet/minecraft/class_7928;
+		ARG 1 pos
+		ARG 2 state
+	METHOD method_1_8870 (Ljava/util/function/BiPredicate;Lorg/apache/commons/lang3/mutable/MutableObject;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Lnet/minecraft/class_7928;
+		ARG 2 pos
+		ARG 3 state
+	METHOD method_1_8871 (Ljava/util/function/BiConsumer;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Lnet/minecraft/class_7928;
+		ARG 1 pos
+		ARG 2 state
+	CLASS 1 1
+		FIELD field_1_9201 count I

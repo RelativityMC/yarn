@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_1613 net/minecraft/entity/mob/SkeletonEntity
+	FIELD field_1_9176 conversionManager Lnet/minecraft/class_1_1316;
 	FIELD field_28642 CONVERTING Lnet/minecraft/class_2940;
 	METHOD method_33589 setConversionTime (I)V
 		ARG 1 time

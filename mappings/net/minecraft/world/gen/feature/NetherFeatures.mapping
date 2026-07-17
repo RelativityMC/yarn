@@ -17,5 +17,11 @@ CLASS net/minecraft/class_6805 net/minecraft/world/gen/feature/NetherFeatures
 	FIELD field_35838 SPRING_NETHER_OPEN Lnet/minecraft/class_5321;
 	FIELD field_35839 PATCH_FIRE Lnet/minecraft/class_5321;
 	FIELD field_35840 PATCH_SOUL_FIRE Lnet/minecraft/class_5321;
+	METHOD method_1_8800 vines (IILnet/minecraft/class_2350;Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)Lnet/minecraft/class_3031;
+		ARG 0 minHeight
+		ARG 1 maxHeight
+		ARG 2 direction
+		ARG 3 plant
+		ARG 4 vines
 	METHOD method_46854 bootstrap (Lnet/minecraft/class_7891;)V
 		ARG 0 featureRegisterable

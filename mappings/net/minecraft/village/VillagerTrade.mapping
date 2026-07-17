@@ -2,7 +2,7 @@ CLASS net/minecraft/class_1_30 net/minecraft/village/VillagerTrade
 	FIELD field_1_226 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_1_227 additionalWants Ljava/util/Optional;
 	FIELD field_1_228 doubleTradePriceEnchantments Ljava/util/Optional;
-	FIELD field_1_229 givenItemModifiers Ljava/util/Optional;
+	FIELD field_1_229 givenItemModifier Ljava/util/Optional;
 	FIELD field_1_230 gives Lnet/minecraft/class_1_107;
 	FIELD field_1_231 maxUses Lnet/minecraft/class_6880;
 	FIELD field_1_232 merchantPredicate Ljava/util/Optional;
@@ -11,10 +11,77 @@ CLASS net/minecraft/class_1_30 net/minecraft/village/VillagerTrade
 	FIELD field_1_235 xp Lnet/minecraft/class_6880;
 	METHOD <init> (Lnet/minecraft/class_1_25;Ljava/util/Optional;Lnet/minecraft/class_1_107;Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;Ljava/util/Optional;Ljava/util/Optional;Ljava/util/Optional;)V
 		ARG 1 wants
+		ARG 2 additionalWants
+		ARG 3 gives
+		ARG 4 maxUses
+		ARG 5 xp
+		ARG 6 reputationDiscount
 		ARG 7 merchantPredicate
+		ARG 8 givenItemModifier
+		ARG 9 doubleTradePriceEnchantments
 	METHOD method_1_513 createOffer (Lnet/minecraft/class_47;)Lnet/minecraft/class_1914;
 		ARG 1 context
 	METHOD method_1_514 (Lnet/minecraft/class_47;Lnet/minecraft/class_1_25;)Lnet/minecraft/class_9306;
 		ARG 1 additionalWant
 	METHOD method_1_515 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
+	METHOD method_1_516 (Lnet/minecraft/class_1_30;)Lnet/minecraft/class_1_25;
+		ARG 0 trade
+	METHOD method_1_517 (Lnet/minecraft/class_1_30;)Ljava/util/Optional;
+		ARG 0 trade
+	METHOD method_1_518 (Lnet/minecraft/class_1_30;)Lnet/minecraft/class_1_107;
+		ARG 0 trade
+	METHOD method_1_519 (Lnet/minecraft/class_1_30;)Lnet/minecraft/class_6880;
+		ARG 0 trade
+	METHOD method_1_520 (Lnet/minecraft/class_1_30;)Lnet/minecraft/class_6880;
+		ARG 0 trade
+	METHOD method_1_521 (Lnet/minecraft/class_1_30;)Lnet/minecraft/class_6880;
+		ARG 0 trade
+	METHOD method_1_522 (Lnet/minecraft/class_1_30;)Ljava/util/Optional;
+		ARG 0 trade
+	METHOD method_1_523 (Lnet/minecraft/class_1_30;)Ljava/util/Optional;
+		ARG 0 trade
+	METHOD method_1_524 (Lnet/minecraft/class_1_30;)Ljava/util/Optional;
+		ARG 0 trade
+	METHOD method_1_8670 builder (Lnet/minecraft/class_1_25;Lnet/minecraft/class_1_107;IIF)Lnet/minecraft/class_1_30$class_1_1321;
+		ARG 0 wants
+		ARG 1 gives
+		ARG 2 maxUses
+		ARG 3 xp
+		ARG 4 reputationDiscount
+	METHOD method_1_8671 builder (Lnet/minecraft/class_1_25;Lnet/minecraft/class_1_25;Lnet/minecraft/class_1_107;IIF)Lnet/minecraft/class_1_30$class_1_1321;
+		ARG 0 wants
+		ARG 1 additionalWants
+		ARG 2 gives
+		ARG 3 maxUses
+		ARG 4 xp
+		ARG 5 reputationDiscount
+	CLASS class_1_1321 Builder
+		FIELD field_1_9072 additionalWants Ljava/util/Optional;
+		FIELD field_1_9073 doubleTradePriceEnchantments Ljava/util/Optional;
+		FIELD field_1_9074 givenItemModifiers Lcom/google/common/collect/ImmutableList$Builder;
+		FIELD field_1_9075 gives Lnet/minecraft/class_1_107;
+		FIELD field_1_9076 maxUses Lnet/minecraft/class_6880;
+		FIELD field_1_9077 merchantPredicate Ljava/util/Optional;
+		FIELD field_1_9078 reputationDiscount Lnet/minecraft/class_6880;
+		FIELD field_1_9079 wants Lnet/minecraft/class_1_25;
+		FIELD field_1_9080 xp Lnet/minecraft/class_6880;
+		METHOD <init> (Lnet/minecraft/class_1_25;Lnet/minecraft/class_1_107;Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)V
+			ARG 1 wants
+			ARG 2 gives
+			ARG 3 maxUses
+			ARG 4 xp
+			ARG 5 reputationDiscount
+		METHOD method_1_8672 givenItemModifier (Lnet/minecraft/class_117$class_118;)Lnet/minecraft/class_1_30$class_1_1321;
+			ARG 1 modifier
+		METHOD method_1_8673 givenItemModifiers (Ljava/util/Collection;)Lnet/minecraft/class_1_30$class_1_1321;
+			ARG 1 modifiers
+		METHOD method_1_8674 givenItemModifiers ([Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_30$class_1_1321;
+			ARG 1 modifiers
+		METHOD method_1_8675 additionalWants (Lnet/minecraft/class_1_25;)Lnet/minecraft/class_1_30$class_1_1321;
+			ARG 1 additionalWants
+		METHOD method_1_8676 build ()Lnet/minecraft/class_1_30;
+		METHOD method_1_8677 doubleTradePriceEnchantments (Lnet/minecraft/class_6885;)Lnet/minecraft/class_1_30$class_1_1321;
+			ARG 1 doubleTradePriceEnchantments
+		METHOD method_1_8678 merchantPredicate (Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_30$class_1_1321;
+			ARG 1 merchantPredicate

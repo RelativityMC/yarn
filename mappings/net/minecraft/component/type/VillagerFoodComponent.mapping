@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_1304 net/minecraft/component/type/VillagerFoodComponent
+	FIELD field_1_8796 PACKET_CODEC Lnet/minecraft/class_9139;
+	METHOD method_1_8468 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

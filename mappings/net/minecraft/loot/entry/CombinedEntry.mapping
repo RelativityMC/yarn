@@ -4,6 +4,8 @@ CLASS net/minecraft/class_69 net/minecraft/loot/entry/CombinedEntry
 	FIELD field_60421 EMPTY_CHILDREN_LIST_ERROR Lnet/minecraft/class_8942$class_11337;
 	METHOD <init> (Ljava/util/List;Ljava/util/Optional;Ljava/util/Optional;)V
 		ARG 1 terms
+		ARG 2 condition
+		ARG 3 modifier
 	METHOD method_394 combine (Ljava/util/List;)Lnet/minecraft/class_64;
 		ARG 1 terms
 	METHOD method_53279 createCodec (Lnet/minecraft/class_69$class_70;)Lcom/mojang/serialization/MapCodec;
@@ -12,5 +14,16 @@ CLASS net/minecraft/class_69 net/minecraft/loot/entry/CombinedEntry
 		ARG 1 instance
 	METHOD method_53281 (Lnet/minecraft/class_69;)Ljava/util/List;
 		ARG 0 entry
+	CLASS class_1_1368 Builder
+		FIELD field_1_9280 pools Lcom/google/common/collect/ImmutableList$Builder;
+		METHOD <init> ([Lnet/minecraft/class_79$class_80;)V
+			ARG 1 pools
+		METHOD method_1_8939 pool (Lnet/minecraft/class_79$class_80;)Lcom/google/common/collect/ImmutableList$Builder;
+			ARG 1 pool
+		METHOD method_1_8940 build (Lnet/minecraft/class_69$class_70;)Lnet/minecraft/class_69;
+			ARG 1 factory
 	CLASS class_70 Factory
 		METHOD method_1_316 create (Ljava/util/List;Ljava/util/Optional;Ljava/util/Optional;)Lnet/minecraft/class_69;
+			ARG 1 pools
+			ARG 2 condition
+			ARG 3 modifier

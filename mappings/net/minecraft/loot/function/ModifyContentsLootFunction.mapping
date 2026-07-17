@@ -3,7 +3,9 @@ CLASS net/minecraft/class_9669 net/minecraft/loot/function/ModifyContentsLootFun
 	FIELD field_51430 component Lnet/minecraft/class_9666;
 	FIELD field_51431 modifier Lnet/minecraft/class_6880;
 	METHOD <init> (Ljava/util/Optional;Lnet/minecraft/class_9666;Lnet/minecraft/class_6880;)V
+		ARG 1 condition
 		ARG 2 component
+		ARG 3 modifier
 	METHOD method_59743 (Lnet/minecraft/class_47;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1799;
 		ARG 2 content
 	METHOD method_59744 (Lnet/minecraft/class_9669;)Lnet/minecraft/class_6880;

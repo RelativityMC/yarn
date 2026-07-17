@@ -1,5 +1,12 @@
 CLASS net/minecraft/class_3675 net/minecraft/client/util/InputUtil
+	FIELD field_1_8995 LOGGER Lorg/slf4j/Logger;
 	FIELD field_16237 UNKNOWN_KEY Lnet/minecraft/class_3675$class_306;
+	METHOD method_1_8574 enableRelativeMouseMode (Lnet/minecraft/class_1041;)V
+		ARG 0 window
+	METHOD method_1_8575 disableRelativeMouseMode (Lnet/minecraft/class_1041;DD)V
+		ARG 0 window
+		ARG 1 x
+		ARG 3 y
 	METHOD method_15981 fromTranslationKey (Ljava/lang/String;)Lnet/minecraft/class_3675$class_306;
 		ARG 0 translationKey
 	METHOD method_15985 fromKeyCode (Lnet/minecraft/class_11908;)Lnet/minecraft/class_3675$class_306;
@@ -44,4 +51,4 @@ CLASS net/minecraft/class_3675 net/minecraft/client/util/InputUtil
 		METHOD method_27450 (Ljava/lang/Integer;Ljava/lang/String;)Lnet/minecraft/class_2561;
 			ARG 0 keyCode
 			ARG 1 translationKey
-	CLASS class_12135 Keycode
+	CLASS class_12135 Scancode

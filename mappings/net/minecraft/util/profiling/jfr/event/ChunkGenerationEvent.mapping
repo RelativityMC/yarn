@@ -1,0 +1,20 @@
+CLASS net/minecraft/class_1_1357 net/minecraft/util/profiling/jfr/event/ChunkGenerationEvent
+	FIELD field_1_9229 NAME Ljava/lang/String;
+	FIELD field_1_9230 EVENT_TYPE Ljdk/jfr/EventType;
+	FIELD field_1_9231 chunkPosX I
+	FIELD field_1_9232 chunkPosZ I
+	FIELD field_1_9233 level Ljava/lang/String;
+	FIELD field_1_9234 status Ljava/lang/String;
+	FIELD field_1_9235 worldPosX I
+	FIELD field_1_9236 worldPosZ I
+	METHOD <init> (Lnet/minecraft/class_1923;Lnet/minecraft/class_5321;Ljava/lang/String;)V
+		ARG 1 chunkPos
+		ARG 2 world
+		ARG 3 targetStatus
+	CLASS class_6602 Names
+		FIELD field_34855 WORLD_POS_X Ljava/lang/String;
+		FIELD field_34856 WORLD_POS_Z Ljava/lang/String;
+		FIELD field_34857 CHUNK_POS_X Ljava/lang/String;
+		FIELD field_34858 CHUNK_POS_Z Ljava/lang/String;
+		FIELD field_34859 STATUS Ljava/lang/String;
+		FIELD field_34861 LEVEL Ljava/lang/String;

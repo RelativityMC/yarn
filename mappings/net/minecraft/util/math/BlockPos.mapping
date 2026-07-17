@@ -24,6 +24,40 @@ CLASS net/minecraft/class_2338 net/minecraft/util/math/BlockPos
 		ARG 1 startY
 		ARG 2 startZ
 		ARG 3 targetY
+	METHOD method_1_8236 iterateOutwards (Lnet/minecraft/class_2338;IIII)Ljava/lang/Iterable;
+		COMMENT Iterates block positions around the {@code center}. The iteration order
+		COMMENT is mainly based on the Manhattan distance of the position from the
+		COMMENT center.
+		COMMENT
+		COMMENT <p>For the same manhattan distance, the positions are iterated by y
+		COMMENT offset, from negative to positive. For the same y offset, the positions
+		COMMENT are iterated by x offset, from negative to positive. For the two
+		COMMENT positions with the same x and y offsets and the same manhattan distance,
+		COMMENT the one with a positive z offset is visited first before the one with a
+		COMMENT negative z offset.
+		ARG 0 center
+			COMMENT the center of iteration
+		ARG 1 rangeX
+			COMMENT the maximum x difference from the center
+		ARG 2 rangeY
+			COMMENT the maximum y difference from the center
+		ARG 3 rangeZ
+			COMMENT the maximum z difference from the center
+		ARG 4 maxDistance
+			COMMENT the maximum Manhattan distance from the center
+	METHOD method_1_8237 iterateOutwardsC (Lnet/minecraft/class_2338;III)Ljava/lang/Iterable;
+		ARG 0 center
+		ARG 1 rangeX
+		ARG 2 rangeY
+		ARG 3 rangeZ
+	METHOD method_1_8238 iterateOutwardsO (Lnet/minecraft/class_2338;III)Ljava/lang/Iterable;
+		ARG 0 center
+		ARG 1 rangeX
+		ARG 2 rangeY
+		ARG 3 rangeZ
+	METHOD method_1_8239 iterateOutwardsO (Lnet/minecraft/class_2338;I)Ljava/lang/Iterable;
+		ARG 0 center
+		ARG 1 maxDistance
 	METHOD method_10060 offset (JLnet/minecraft/class_2350;)J
 		ARG 0 value
 		ARG 2 direction

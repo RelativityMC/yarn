@@ -4,6 +4,7 @@ CLASS net/minecraft/class_10660 net/minecraft/test/TestInstance
 	METHOD <init> (Lnet/minecraft/class_10664;)V
 		ARG 1 data
 	METHOD method_1_793 getPadding ()I
+	METHOD method_1_8748 getDimension ()Lnet/minecraft/class_5321;
 	METHOD method_66905 getCodec ()Lcom/mojang/serialization/MapCodec;
 	METHOD method_66907 start (Lnet/minecraft/class_4516;)V
 		ARG 1 context

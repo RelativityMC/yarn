@@ -395,3 +395,4 @@ CLASS net/minecraft/class_6088 net/minecraft/world/WorldEvents
 		COMMENT <br>Spawns dust pillar particles.
 		COMMENT <p>The amount of particles to spawn must be supplied as extra data.
 		COMMENT <p>Called by {@link net.minecraft.item.MaceItem#knockbackNearbyEntities}
+	CLASS class_1_1310 Event

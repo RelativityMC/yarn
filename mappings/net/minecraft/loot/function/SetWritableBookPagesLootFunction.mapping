@@ -3,6 +3,7 @@ CLASS net/minecraft/class_9377 net/minecraft/loot/function/SetWritableBookPagesL
 	FIELD field_49887 pages Ljava/util/List;
 	FIELD field_49888 operation Lnet/minecraft/class_9368;
 	METHOD <init> (Ljava/util/Optional;Ljava/util/List;Lnet/minecraft/class_9368;)V
+		ARG 1 condition
 		ARG 2 pages
 		ARG 3 operation
 	METHOD method_58217 apply (Lnet/minecraft/class_9301;)Lnet/minecraft/class_9301;

@@ -1,5 +1,7 @@
 CLASS net/minecraft/class_104 net/minecraft/loot/function/ExplosionDecayLootFunction
 	FIELD field_45815 CODEC Lcom/mojang/serialization/MapCodec;
+	METHOD <init> (Ljava/util/Optional;)V
+		ARG 1 condition
 	METHOD method_478 builder ()Lnet/minecraft/class_120$class_121;
 	METHOD method_53309 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance

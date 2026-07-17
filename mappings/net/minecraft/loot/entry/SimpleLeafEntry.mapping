@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1370 net/minecraft/loot/entry/SimpleLeafEntry
+	FIELD field_1_9298 choice Lnet/minecraft/class_82;
+	METHOD method_433 generateLoot (Ljava/util/function/Consumer;Lnet/minecraft/class_47;)V
+		ARG 1 lootConsumer
+		ARG 2 context

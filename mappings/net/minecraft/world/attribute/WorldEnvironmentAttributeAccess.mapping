@@ -2,6 +2,9 @@ CLASS net/minecraft/class_12205 net/minecraft/world/attribute/WorldEnvironmentAt
 	FIELD field_64321 entries Ljava/util/Map;
 	METHOD <init> (Ljava/util/Map;)V
 		ARG 1 modificationsByAttribute
+	METHOD method_1_8878 addModifiersFromWorld (Lnet/minecraft/class_12205$class_12314;Lnet/minecraft/class_1936;)V
+		ARG 0 builder
+		ARG 1 world
 	METHOD method_76394 builder ()Lnet/minecraft/class_12205$class_12314;
 	METHOD method_76395 (Lnet/minecraft/class_12197;Lnet/minecraft/class_4543;Ljava/lang/Object;Lnet/minecraft/class_243;Lnet/minecraft/class_12211;)Ljava/lang/Object;
 		ARG 2 value
@@ -16,7 +19,7 @@ CLASS net/minecraft/class_12205 net/minecraft/world/attribute/WorldEnvironmentAt
 		ARG 0 builder
 		ARG 1 attribute
 		ARG 2 biomeAccess
-	METHOD method_76399 addModifiersFromWorld (Lnet/minecraft/class_12205$class_12314;Lnet/minecraft/class_1937;)V
+	METHOD method_76399 addTimelinesFromWorld (Lnet/minecraft/class_12205$class_12314;Lnet/minecraft/class_1937;)V
 		ARG 0 builder
 		ARG 1 world
 	METHOD method_76400 (Lnet/minecraft/class_12205$class_12314;Lnet/minecraft/class_4543;Lnet/minecraft/class_12197;)V
@@ -44,6 +47,10 @@ CLASS net/minecraft/class_12205 net/minecraft/world/attribute/WorldEnvironmentAt
 		ARG 1 attribute
 	CLASS class_12314 Builder
 		FIELD field_64322 modifications Ljava/util/Map;
+		METHOD method_1_8879 addTimelinesFromWorld (Lnet/minecraft/class_1937;)Lnet/minecraft/class_12205$class_12314;
+			ARG 1 world
+		METHOD method_1_8880 addModifiersFromWorld (Lnet/minecraft/class_1936;)Lnet/minecraft/class_12205$class_12314;
+			ARG 1 world
 		METHOD method_76410 build ()Lnet/minecraft/class_12205;
 		METHOD method_76411 (Lnet/minecraft/class_12197;)Ljava/util/List;
 			ARG 0 attr
@@ -69,8 +76,10 @@ CLASS net/minecraft/class_12205 net/minecraft/world/attribute/WorldEnvironmentAt
 		METHOD method_76419 addModificationFromTimeline (Lnet/minecraft/class_6880;Lnet/minecraft/class_12197;Lnet/minecraft/class_1_98;)V
 			ARG 1 timeline
 			ARG 2 attribute
+			ARG 3 clocks
 		METHOD method_76420 addFromTimeline (Lnet/minecraft/class_6880;Lnet/minecraft/class_1_98;)Lnet/minecraft/class_12205$class_12314;
 			ARG 1 timeline
+			ARG 2 clocks
 	CLASS class_12315 Entry
 		FIELD field_64323 attribute Lnet/minecraft/class_12197;
 		FIELD field_64324 defaultValue Ljava/lang/Object;

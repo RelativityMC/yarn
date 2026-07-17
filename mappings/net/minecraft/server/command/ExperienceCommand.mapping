@@ -33,6 +33,9 @@ CLASS net/minecraft/class_3054 net/minecraft/server/command/ExperienceCommand
 	METHOD method_13339 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	CLASS class_3055 Component
+		FIELD field_1_7453 addReporter Lnet/minecraft/class_1_1083$class_1_1092;
+		FIELD field_1_7454 translationKey Ljava/lang/String;
+		FIELD field_1_7455 setReporter Lnet/minecraft/class_1_1083$class_1_1092;
 		FIELD field_13639 adder Ljava/util/function/BiConsumer;
 		FIELD field_13642 setter Ljava/util/function/BiPredicate;
 		FIELD field_13645 getter Ljava/util/function/ToIntFunction;
@@ -40,6 +43,26 @@ CLASS net/minecraft/class_3054 net/minecraft/server/command/ExperienceCommand
 			ARG 3 name
 			ARG 4 adder
 			ARG 5 setter
+			ARG 6 getter
+		METHOD method_1_6750 (Ljava/lang/String;Lnet/minecraft/class_3222;ILjava/lang/Integer;)Lnet/minecraft/class_2561;
+			ARG 1 player
+			ARG 2 total
+			ARG 3 amount
+		METHOD method_1_6751 (Ljava/lang/String;IILjava/lang/Integer;)Lnet/minecraft/class_2561;
+			ARG 1 targets
+			ARG 2 total
+			ARG 3 amount
+		METHOD method_1_6752 (Ljava/lang/String;Lnet/minecraft/class_3222;ILjava/lang/Integer;)Lnet/minecraft/class_2561;
+			ARG 1 player
+			ARG 2 total
+			ARG 3 amount
+		METHOD method_1_6753 (Ljava/lang/String;IILjava/lang/Integer;)Lnet/minecraft/class_2561;
+			ARG 1 targets
+			ARG 2 total
+			ARG 3 amount
+		METHOD method_1_6754 getQueryText (Lnet/minecraft/class_3222;I)Lnet/minecraft/class_2561;
+			ARG 1 player
+			ARG 2 amount
 		METHOD method_13340 (Lnet/minecraft/class_3222;)I
 			ARG 0 player
 		METHOD method_13341 (Lnet/minecraft/class_3222;)I

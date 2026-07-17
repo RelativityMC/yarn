@@ -4,3 +4,6 @@ CLASS net/minecraft/class_9299 net/minecraft/item/tooltip/TooltipAppender
 		ARG 2 textConsumer
 		ARG 3 type
 		ARG 4 components
+	CLASS class_1_1332 Getter
+		METHOD method_1_8773 get (Ljava/lang/Object;)Lnet/minecraft/class_9299;
+			ARG 1 object

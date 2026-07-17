@@ -1,8 +1,14 @@
 CLASS net/minecraft/class_9476 net/minecraft/loot/function/SetOminousBottleAmplifierLootFunction
 	FIELD field_50215 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_50216 amplifier Lnet/minecraft/class_6880;
+	METHOD <init> (Ljava/util/Optional;Lnet/minecraft/class_6880;)V
+		ARG 1 condition
+		ARG 2 amplifier
 	METHOD method_58736 (Lnet/minecraft/class_9476;)Lnet/minecraft/class_6880;
 		ARG 0 lootFunction
 	METHOD method_58737 builder (Lnet/minecraft/class_6880;)Lnet/minecraft/class_120$class_121;
+		ARG 0 amplifier
+	METHOD method_58738 (Lnet/minecraft/class_6880;Ljava/util/Optional;)Lnet/minecraft/class_117;
+		ARG 1 condition
 	METHOD method_58739 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance

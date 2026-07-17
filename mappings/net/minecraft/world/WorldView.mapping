@@ -2,13 +2,25 @@ CLASS net/minecraft/class_4538 net/minecraft/world/WorldView
 	COMMENT Represents a scoped, read-only view of a world like structure that contains biomes, chunks and is bound to a dimension.
 	METHOD method_1_1680 getSkyLightLevel (Lnet/minecraft/class_2338;)I
 		ARG 1 pos
-	METHOD method_1_7628 getRegion (Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;)Lnet/minecraft/class_1_1205;
+	METHOD method_1_7628 boxRegion (Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;)Lnet/minecraft/class_1_1205;
 		ARG 1 minCorner
 		ARG 2 maxCorner
-	METHOD method_1_7629 getRegion (Lnet/minecraft/class_238;)Lnet/minecraft/class_1_1205;
+	METHOD method_1_7629 boxRegion (Lnet/minecraft/class_238;)Lnet/minecraft/class_1_1205;
 		ARG 1 box
 	METHOD method_1_7630 (Lnet/minecraft/class_2680;)Z
 		ARG 0 state
+	METHOD method_1_8469 posListRegion (Ljava/lang/Iterable;)Lnet/minecraft/class_1_1349;
+		ARG 1 positions
+	METHOD method_1_8470 cubicRegion (Lnet/minecraft/class_2338;I)Lnet/minecraft/class_1_1349;
+		ARG 1 center
+		ARG 2 range
+	METHOD method_1_8471 cubicRegion (Lnet/minecraft/class_2338;II)Lnet/minecraft/class_1_1349;
+		ARG 1 center
+		ARG 2 rangeXz
+		ARG 3 rangeY
+	METHOD method_1_8472 octahedralRegion (Lnet/minecraft/class_2338;I)Lnet/minecraft/class_1_1349;
+		ARG 1 center
+		ARG 2 range
 	METHOD method_8392 getChunk (II)Lnet/minecraft/class_2791;
 		COMMENT {@return the chunk with position {@code chunkX} and {@code chunkZ}}
 		ARG 1 chunkX

@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_1335 net/minecraft/world/attribute/ListModifier
+	METHOD method_1_8801 append ()Lnet/minecraft/class_1_1335;
+	CLASS class_1_1336 Append
+		FIELD field_1_9147 INSTANCE Lnet/minecraft/class_1_1335$class_1_1336;

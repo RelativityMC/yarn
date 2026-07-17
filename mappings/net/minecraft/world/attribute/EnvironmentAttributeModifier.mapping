@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_12212 net/minecraft/world/attribute/EnvironmentAttributeModifier
 	FIELD field_1_2535 INT_MODIFIERS Ljava/util/Map;
+	FIELD field_1_9204 SPAWN_SETTINGS_MODIFIERS Ljava/util/Map;
 	FIELD field_63768 BOOLEAN_MODIFIERS Ljava/util/Map;
 	FIELD field_63769 FLOAT_MODIFIERS Ljava/util/Map;
 	FIELD field_64127 RGB_MODIFIERS Ljava/util/Map;
@@ -11,6 +12,7 @@ CLASS net/minecraft/class_12212 net/minecraft/world/attribute/EnvironmentAttribu
 		ARG 1 attribute
 	METHOD method_1_280 argumentKeyframeLerp (Lnet/minecraft/class_12197;)Lnet/minecraft/class_12210;
 		ARG 1 attribute
+	METHOD method_1_8881 append ()Ljava/util/Map;
 	METHOD method_75713 override ()Lnet/minecraft/class_12212;
 	CLASS class_12213 Type
 		FIELD field_63785 name Ljava/lang/String;

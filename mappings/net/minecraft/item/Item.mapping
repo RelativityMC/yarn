@@ -387,6 +387,17 @@ CLASS net/minecraft/class_1792 net/minecraft/item/Item
 			ARG 0 registries
 		METHOD method_1_7584 compostable (Lnet/minecraft/class_5321;)Lnet/minecraft/class_1792$class_1793;
 			ARG 1 layers
+		METHOD method_1_8245 brewingFuel (Lnet/minecraft/class_5321;)Lnet/minecraft/class_1792$class_1793;
+			ARG 1 uses
+		METHOD method_1_8246 cookingFuel (Lnet/minecraft/class_5321;)Lnet/minecraft/class_1792$class_1793;
+			ARG 1 burnTime
+		METHOD method_1_8247 ([Lnet/minecraft/class_5321;Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_1_1326;
+			ARG 1 registries
+		METHOD method_1_8248 reducedMobVisibility ([Lnet/minecraft/class_5321;)Lnet/minecraft/class_1792$class_1793;
+			ARG 1 entityTypes
+		METHOD method_1_8249 supportsSignText ()Lnet/minecraft/class_1792$class_1793;
+		METHOD method_1_8250 villagerFood (I)Lnet/minecraft/class_1792$class_1793;
+			ARG 1 nutrition
 		METHOD method_7889 maxCount (I)Lnet/minecraft/class_1792$class_1793;
 			COMMENT Sets the maximum stack count of any ItemStack with an Item using this Settings instance.
 			COMMENT

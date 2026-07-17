@@ -35,6 +35,8 @@ CLASS net/minecraft/class_312 net/minecraft/client/Mouse
 		ARG 1 window
 		ARG 3 x
 		ARG 5 y
+		ARG 7 dx
+		ARG 9 dy
 	METHOD method_1601 onMouseButton (JLnet/minecraft/class_11910;I)V
 		ARG 1 window
 		ARG 3 input
@@ -50,6 +52,7 @@ CLASS net/minecraft/class_312 net/minecraft/client/Mouse
 	METHOD method_1613 isCursorLocked ()Z
 	METHOD method_29616 onFilesDropped (JLjava/util/List;)V
 		ARG 1 window
+		ARG 3 files
 	METHOD method_30134 setResolutionChanged ()V
 	METHOD method_35707 wasMiddleButtonClicked ()Z
 	METHOD method_55793 tick ()V

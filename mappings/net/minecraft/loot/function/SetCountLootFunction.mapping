@@ -1,12 +1,20 @@
 CLASS net/minecraft/class_141 net/minecraft/loot/function/SetCountLootFunction
-	FIELD field_1114 countRange Lnet/minecraft/class_6880;
+	FIELD field_1114 count Lnet/minecraft/class_6880;
 	FIELD field_27909 add Z
 	FIELD field_45845 CODEC Lcom/mojang/serialization/MapCodec;
 	METHOD <init> (Ljava/util/Optional;Lnet/minecraft/class_6880;Z)V
+		ARG 1 condition
+		ARG 2 count
 		ARG 3 add
+	METHOD method_1_8967 (Lnet/minecraft/class_6880;Ljava/util/Optional;)Lnet/minecraft/class_117;
+		ARG 1 condition
 	METHOD method_621 builder (Lnet/minecraft/class_6880;)Lnet/minecraft/class_120$class_121;
+		ARG 0 count
 	METHOD method_35540 builder (Lnet/minecraft/class_6880;Z)Lnet/minecraft/class_120$class_121;
+		ARG 0 count
 		ARG 1 add
+	METHOD method_35541 (Lnet/minecraft/class_6880;ZLjava/util/Optional;)Lnet/minecraft/class_117;
+		ARG 2 condition
 	METHOD method_53375 (Lnet/minecraft/class_141;)Ljava/lang/Boolean;
 		ARG 0 function
 	METHOD method_53376 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

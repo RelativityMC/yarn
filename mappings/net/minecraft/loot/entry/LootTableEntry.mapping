@@ -1,10 +1,26 @@
 CLASS net/minecraft/class_83 net/minecraft/loot/entry/LootTableEntry
 	FIELD field_45803 MAP_CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_49429 value Lnet/minecraft/class_6885;
+	METHOD <init> (Lnet/minecraft/class_6885;ZIILjava/util/Optional;Ljava/util/Optional;)V
+		ARG 1 value
+		ARG 2 expand
+		ARG 3 weight
+		ARG 4 quality
+		ARG 5 condition
+		ARG 6 modifier
+	METHOD method_1_8920 (Lnet/minecraft/class_6880;IILjava/util/Optional;Ljava/util/Optional;)Lnet/minecraft/class_85;
+		ARG 1 weight
+		ARG 2 quality
+		ARG 3 condition
+		ARG 4 modifier
 	METHOD method_428 builder (Lnet/minecraft/class_6880;)Lnet/minecraft/class_85$class_86;
+		ARG 0 table
 	METHOD method_53293 (Lnet/minecraft/class_83;)Lnet/minecraft/class_6885;
 		ARG 0 entry
 	METHOD method_53294 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
 	METHOD method_57631 builder (Lnet/minecraft/class_52;)Lnet/minecraft/class_85$class_86;
 		ARG 0 table
+	CLASS 2 2
+		METHOD method_1_8921 (Lnet/minecraft/class_47;Ljava/util/function/Consumer;Lnet/minecraft/class_6880;)V
+			ARG 2 entry

@@ -2,7 +2,14 @@ CLASS net/minecraft/class_186 net/minecraft/loot/condition/AlternativeLootCondit
 	FIELD field_1246 terms Lnet/minecraft/class_6885;
 	FIELD field_1247 predicate Ljava/util/function/Predicate;
 	METHOD <init> (Lnet/minecraft/class_6885;Ljava/util/function/Predicate;)V
+		ARG 1 terms
 		ARG 2 predicate
+	METHOD method_1_8988 conditionToPredicate (Lnet/minecraft/class_6880;)Ljava/util/function/Predicate;
+		ARG 0 condition
+	METHOD method_1_8989 conditionsToPredicates (Lnet/minecraft/class_6885;)Ljava/util/List;
+		ARG 0 conditions
+	METHOD method_1_8990 (Lnet/minecraft/class_6880;Lnet/minecraft/class_47;)Z
+		ARG 1 context
 	METHOD method_53407 createCodec (Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;
 		ARG 0 termsToCondition
 	METHOD method_53408 (Ljava/util/function/Function;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
@@ -15,6 +22,9 @@ CLASS net/minecraft/class_186 net/minecraft/loot/condition/AlternativeLootCondit
 		FIELD field_1248 terms Lcom/google/common/collect/ImmutableList$Builder;
 		METHOD <init> ([Lnet/minecraft/class_5341$class_210;)V
 			ARG 1 terms
+		METHOD method_1_8991 add (Lnet/minecraft/class_6880;)V
+			ARG 1 condition
 		METHOD method_51724 build (Lnet/minecraft/class_6885;)Lnet/minecraft/class_5341;
+			ARG 1 terms
 		METHOD method_51730 add (Lnet/minecraft/class_5341$class_210;)V
 			ARG 1 builder

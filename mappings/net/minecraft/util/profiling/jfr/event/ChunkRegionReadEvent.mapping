@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_1358 net/minecraft/util/profiling/jfr/event/ChunkRegionReadEvent
+	FIELD field_1_9237 NAME Ljava/lang/String;
+	FIELD field_1_9238 EVENT_TYPE Ljdk/jfr/EventType;

@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_1642 net/minecraft/entity/mob/ZombieEntity
+	FIELD field_1_9107 conversionManager Lnet/minecraft/class_1_1316;
 	FIELD field_7425 CONVERTING_IN_WATER Lnet/minecraft/class_2940;
 	FIELD field_7427 ZOMBIE_TYPE Lnet/minecraft/class_2940;
 		COMMENT Unused tracked data, left over from 1.10 when zombies, zombie villagers and husks were all the same type of entity.
@@ -18,6 +19,11 @@ CLASS net/minecraft/class_1642 net/minecraft/entity/mob/ZombieEntity
 	METHOD <init> (Lnet/minecraft/class_1937;)V
 		ARG 1 world
 	METHOD method_1_7438 isTargetingOutsideMeleeRange ()Z
+	METHOD method_1_8729 getConversionResult ()Lnet/minecraft/class_1299;
+	METHOD method_1_8730 getConversionWorldEvent ()I
+	METHOD method_1_8732 (Lnet/minecraft/class_1642;Lnet/minecraft/class_3218;)V
+		ARG 0 mob
+		ARG 1 world
 	METHOD method_6001 initAttributes ()V
 	METHOD method_7201 setCanBreakDoors (Z)V
 		ARG 1 canBreakDoors

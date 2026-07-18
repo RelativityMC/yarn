@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_1334 net/minecraft/world/gen/WorldgenNames
+	FIELD field_1_9142 DEFAULT Ljava/lang/String;
+	FIELD field_1_9143 END Ljava/lang/String;
+	FIELD field_1_9144 NETHER Ljava/lang/String;

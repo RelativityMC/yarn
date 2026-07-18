@@ -2,6 +2,8 @@ CLASS net/minecraft/class_1708 net/minecraft/screen/BrewingStandScreenHandler
 	FIELD field_7787 ingredientSlot Lnet/minecraft/class_1735;
 	FIELD field_7788 inventory Lnet/minecraft/class_1263;
 	FIELD field_17292 propertyDelegate Lnet/minecraft/class_3913;
+	FIELD field_30763 POTION_SLOT_START I
+	FIELD field_30764 POTION_SLOT_END I
 	FIELD field_30765 INGREDIENT_SLOT_ID I
 	FIELD field_30766 FUEL_SLOT_ID I
 	FIELD field_30767 BREWING_STAND_INVENTORY_SIZE I
@@ -20,15 +22,26 @@ CLASS net/minecraft/class_1708 net/minecraft/screen/BrewingStandScreenHandler
 		ARG 2 playerInventory
 		ARG 3 inventory
 		ARG 4 propertyDelegate
+	METHOD method_1_8666 getTotalBrewTime ()I
+	METHOD method_1_8667 getTotalFuel ()I
 	METHOD method_17377 getFuel ()I
 	METHOD method_17378 getBrewTime ()I
 	CLASS class_1709 FuelSlot
 		METHOD method_7630 matches (Lnet/minecraft/class_1799;)Z
 			ARG 0 stack
 	CLASS class_1710 IngredientSlot
+		FIELD field_1_8564 recipePropertySet Lnet/minecraft/class_10290;
 		METHOD <init> (Lnet/minecraft/class_10290;Lnet/minecraft/class_1263;III)V
+			ARG 1 recipePropertySet
 			ARG 2 inventory
 			ARG 3 index
 			ARG 4 x
 			ARG 5 y
 	CLASS class_1711 PotionSlot
+		FIELD field_1_8565 recipePropertySet Lnet/minecraft/class_10290;
+		METHOD <init> (Lnet/minecraft/class_10290;Lnet/minecraft/class_1263;III)V
+			ARG 1 recipePropertySet
+			ARG 2 inventory
+			ARG 3 index
+			ARG 4 x
+			ARG 5 y

@@ -4,5 +4,34 @@ CLASS net/minecraft/class_1_1279 net/minecraft/entity/movement/PathingPositionIn
 	CLASS class_1_1280 Destination
 		FIELD field_1_8707 progress F
 		FIELD field_1_8710 steps Ljava/util/LinkedList;
+		FIELD field_1_9192 ticksLeft F
+		FIELD field_1_9193 lastStance Lnet/minecraft/class_1_1193$class_1_1195;
+		FIELD field_1_9194 totalDuration F
 		METHOD method_1_8149 setMotionPath (Lnet/minecraft/class_1_1198;FFI)V
+			ARG 1 motion
+			ARG 2 yaw
+			ARG 3 pitch
+			ARG 4 lerpDuration
+		METHOD method_1_8853 addMotionStep (Lnet/minecraft/class_243;FFI)V
+			ARG 1 pos
+			ARG 2 yaw
+			ARG 3 pitch
+			ARG 4 lerpDuration
+		METHOD method_1_8854 updateTimes (FI)V
+			ARG 1 entityMotionRate
+			ARG 2 lerpDuration
+		METHOD method_1_8855 getTotalTickOffset (Ljava/util/List;)I
+			ARG 0 steps
+		METHOD method_1_8856 getInterpolatedStance ()Lnet/minecraft/class_1_1193;
+		METHOD method_1_8857 clear ()V
+		METHOD method_1_8858 teleport (Lnet/minecraft/class_243;FF)V
+			ARG 1 pos
+			ARG 2 yaw
+			ARG 3 pitch
+	CLASS class_1_1347 Step
+		FIELD field_1_9195 lerpDuration I
+		METHOD <init> (Lnet/minecraft/class_243;FFI)V
+			ARG 1 pos
+			ARG 2 yaw
+			ARG 3 pitch
 			ARG 4 lerpDuration

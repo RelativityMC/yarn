@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_1333 com/mojang/blaze3d/buffers/GpuBufferImpl
+	FIELD field_1_9134 size J
+	FIELD field_1_9135 usage I
+	METHOD <init> (IJ)V
+		ARG 1 usage
+		ARG 2 size
+	METHOD method_1_6142 assertUsable ()V

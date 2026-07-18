@@ -1,5 +1,9 @@
 CLASS net/minecraft/class_8173 net/minecraft/block/DecoratedPotPatterns
+	FIELD field_1_7766 PACKET_CODEC Lnet/minecraft/class_9139;
 	METHOD method_49207 registerAndGetDefault (Lnet/minecraft/class_7891;)V
+		ARG 0 registry
 	METHOD method_49208 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
 		ARG 0 path
 	METHOD method_60512 register (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;)V
+		ARG 0 registry
+		ARG 1 pattern

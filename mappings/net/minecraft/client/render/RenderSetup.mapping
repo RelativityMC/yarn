@@ -25,6 +25,8 @@ CLASS net/minecraft/class_12247 net/minecraft/client/render/RenderSetup
 	METHOD method_75926 resolveTextures (Lnet/minecraft/class_1060;Lnet/minecraft/class_12136;Lnet/minecraft/class_1_1330;Lnet/minecraft/class_1_1330;)Ljava/util/List;
 		ARG 1 textureManager
 		ARG 2 samplerCache
+		ARG 3 overlay
+		ARG 4 lightmap
 	METHOD method_75927 builder (Lnet/minecraft/class_1_1257;)Lnet/minecraft/class_12247$class_12248;
 		ARG 0 renderPipeline
 	CLASS class_4750 OutlineMode

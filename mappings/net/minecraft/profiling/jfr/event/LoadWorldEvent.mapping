@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_1363 net/minecraft/profiling/jfr/event/LoadWorldEvent
+	FIELD field_1_9250 NAME Ljava/lang/String;
+	FIELD field_1_9251 EVENT_TYPE Ljdk/jfr/EventType;

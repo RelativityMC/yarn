@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_1_1369 net/minecraft/loot/entry/ExpandableLeafEntry
+	FIELD field_1_9294 expand Z
+	METHOD <init> (ZIILjava/util/Optional;Ljava/util/Optional;)V
+		ARG 1 expand
+		ARG 2 weight
+		ARG 3 quality
+		ARG 4 condition
+		ARG 5 modifier
+	METHOD method_1_8971 growNonExpand (Ljava/util/function/Consumer;)Z
+		ARG 1 choiceConsumer
+	METHOD method_1_8972 createCommonCodecFields (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/Products$P5;
+		ARG 0 instance
+	METHOD method_1_8973 (Lnet/minecraft/class_1_1369;)Ljava/lang/Boolean;
+		ARG 0 entry
+	METHOD method_447 growExpand (Ljava/util/function/Consumer;)Z
+		ARG 1 choiceConsumer

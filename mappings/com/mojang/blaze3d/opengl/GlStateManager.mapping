@@ -14,6 +14,7 @@ CLASS net/minecraft/class_1_1267 com/mojang/blaze3d/opengl/GlStateManager
 	FIELD field_1_8681 numTextures I
 	FIELD field_1_8682 currentReadFramebuffer I
 	FIELD field_1_8683 currentDrawFramebuffer I
+	FIELD field_1_9168 IS_MAC_OS Z
 	METHOD method_1_8022 activeTexture (I)V
 		ARG 0 texture
 	METHOD method_1_8023 bindTexture (I)V
@@ -129,13 +130,27 @@ CLASS net/minecraft/class_1_1267 com/mojang/blaze3d/opengl/GlStateManager
 		ARG 2 width
 		ARG 3 height
 	METHOD method_1_8081 texImage2D (IIIIIIIILjava/nio/ByteBuffer;)V
+		ARG 0 target
+		ARG 1 level
 		ARG 2 internalFormat
+		ARG 3 width
+		ARG 4 height
+		ARG 5 border
+		ARG 6 format
+		ARG 7 type
+		ARG 8 pixels
 	METHOD method_1_8082 texParameter (III)V
 		ARG 1 pname
 		ARG 2 param
 	METHOD method_1_8083 texSubImage2D (IIIIIIIIJ)V
+		ARG 0 target
+		ARG 1 level
 		ARG 2 offsetX
 		ARG 3 offsetY
+		ARG 4 width
+		ARG 5 height
+		ARG 6 format
+		ARG 7 type
 	METHOD method_1_8084 texSubImage2D (IIIIIIIILjava/nio/ByteBuffer;)V
 		ARG 2 offsetX
 		ARG 3 offsetY

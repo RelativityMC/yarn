@@ -1,9 +1,16 @@
 CLASS net/minecraft/class_12210 net/minecraft/util/math/Interpolator
+	FIELD field_1_7071 FIRST Lnet/minecraft/class_12210;
 	METHOD method_1_103 apply (FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 		ARG 1 t
 		ARG 2 a
 		ARG 3 b
 	METHOD method_1_2943 ofInt ()Lnet/minecraft/class_12210;
+	METHOD method_1_8583 (Lnet/minecraft/class_12210$class_1_1309;FLjava/util/List;Ljava/util/List;)Ljava/util/List;
+		ARG 1 t
+		ARG 2 as
+		ARG 3 bs
+	METHOD method_1_8584 mix (Lnet/minecraft/class_12210$class_1_1309;)Lnet/minecraft/class_12210;
+		ARG 0 scaler
 	METHOD method_75706 ofFloat ()Lnet/minecraft/class_12210;
 	METHOD method_75707 threshold (F)Lnet/minecraft/class_12210;
 		ARG 0 threshold
@@ -19,3 +26,7 @@ CLASS net/minecraft/class_12210 net/minecraft/util/math/Interpolator
 		ARG 2 a
 		ARG 3 b
 	METHOD method_76429 first ()Lnet/minecraft/class_12210;
+	CLASS class_1_1309 Scaler
+		METHOD method_1_8585 scale (Ljava/lang/Object;F)Ljava/lang/Object;
+			ARG 1 value
+			ARG 2 factor

@@ -84,6 +84,15 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 		ARG 3 components
 	METHOD method_1_842 validateContainedItemStackViews (Ljava/lang/Iterable;)Lcom/mojang/serialization/DataResult;
 		ARG 0 itemStackViews
+	METHOD method_1_8456 appendComponentTooltip (Lnet/minecraft/class_9331;Lnet/minecraft/class_1792$class_9635;Lnet/minecraft/class_10712;Ljava/util/function/Consumer;Lnet/minecraft/class_1836;)V
+		COMMENT Used when the component itself implements {@link TooltipAppender}.
+		ARG 1 componentType
+		ARG 2 context
+		ARG 3 displayComponent
+		ARG 4 textConsumer
+		ARG 5 type
+	METHOD method_1_8457 (Lnet/minecraft/class_9299;)Lnet/minecraft/class_9299;
+		ARG 0 component
 	METHOD method_7909 getItem ()Lnet/minecraft/class_1792;
 		COMMENT {@return the item of this stack}
 		COMMENT
@@ -447,6 +456,7 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 		ARG 3 applier
 	METHOD method_57369 appendComponentTooltip (Lnet/minecraft/class_9331;Lnet/minecraft/class_9299$class_1_1332;Lnet/minecraft/class_1792$class_9635;Lnet/minecraft/class_10712;Ljava/util/function/Consumer;Lnet/minecraft/class_1836;)V
 		ARG 1 componentType
+		ARG 2 tooltipGetter
 		ARG 3 context
 		ARG 4 displayComponent
 		ARG 5 textConsumer

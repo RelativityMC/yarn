@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1348 net/minecraft/client/render/model/ClassifiedQuadList
+	FIELD field_1_9199 EMPTY Lnet/minecraft/class_1_1348;
+	METHOD method_1_8862 isEmpty ()Z
+	METHOD method_1_8863 from (Ljava/util/List;)Lnet/minecraft/class_1_1348;
+		ARG 0 quads

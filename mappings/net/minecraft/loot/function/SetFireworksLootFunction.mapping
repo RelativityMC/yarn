@@ -4,6 +4,7 @@ CLASS net/minecraft/class_9376 net/minecraft/loot/function/SetFireworksLootFunct
 	FIELD field_49883 explosions Ljava/util/Optional;
 	FIELD field_49885 flightDuration Ljava/util/Optional;
 	METHOD <init> (Ljava/util/Optional;Ljava/util/Optional;Ljava/util/Optional;)V
+		ARG 1 condition
 		ARG 2 explosions
 		ARG 3 flightDuration
 	METHOD method_58212 apply (Lnet/minecraft/class_9284;)Lnet/minecraft/class_9284;

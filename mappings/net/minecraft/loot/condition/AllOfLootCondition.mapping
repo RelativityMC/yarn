@@ -1,6 +1,13 @@
 CLASS net/minecraft/class_8548 net/minecraft/loot/condition/AllOfLootCondition
 	FIELD field_45857 CODEC Lcom/mojang/serialization/MapCodec;
+	METHOD <init> (Lnet/minecraft/class_6885;)V
+		ARG 1 terms
+	METHOD method_1_8926 termsToPredicate (Lnet/minecraft/class_6885;)Ljava/util/function/Predicate;
+		ARG 0 terms
+	METHOD method_1_8927 (Lnet/minecraft/class_6885;Lnet/minecraft/class_47;)Z
+		ARG 1 context
 	METHOD method_51723 builder ([Lnet/minecraft/class_5341$class_210;)Lnet/minecraft/class_8548$class_8549;
 		ARG 0 terms
 	METHOD method_53404 create (Lnet/minecraft/class_6885;)Lnet/minecraft/class_8548;
+		ARG 0 terms
 	CLASS class_8549 Builder

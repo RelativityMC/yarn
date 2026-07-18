@@ -2,6 +2,7 @@ CLASS net/minecraft/class_5341 net/minecraft/loot/condition/LootCondition
 	COMMENT Loot conditions, officially {@index predicate}s, are JSON-based conditions to test
 	COMMENT against in world. It's used in loot tables, advancements, and commands, and can be
 	COMMENT defined by data packs.
+	FIELD field_1_9286 ENTRY_LIST_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_51809 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_51810 ENTRY_CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_1_745 getCodec ()Lcom/mojang/serialization/MapCodec;

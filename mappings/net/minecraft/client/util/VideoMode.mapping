@@ -1,10 +1,19 @@
 CLASS net/minecraft/class_319 net/minecraft/client/util/VideoMode
+	FIELD field_1_8793 GSON Lcom/google/gson/Gson;
+	FIELD field_1_8794 LOGGER Lorg/slf4j/Logger;
 	FIELD field_1975 refreshRate F
 	FIELD field_1976 blueBits I
 	FIELD field_1977 greenBits I
 	FIELD field_1978 redBits I
 	FIELD field_1979 height I
 	FIELD field_1980 width I
+	METHOD <init> (IIIIIF)V
+		ARG 1 width
+		ARG 2 height
+		ARG 3 redBits
+		ARG 4 greenBits
+		ARG 5 blueBits
+		ARG 6 refreshRate
 	METHOD <init> (IIIIII)V
 		ARG 1 width
 		ARG 2 height
@@ -12,8 +21,15 @@ CLASS net/minecraft/class_319 net/minecraft/client/util/VideoMode
 		ARG 4 greenBits
 		ARG 5 blueBits
 		ARG 6 refreshRate
+	METHOD <init> (Lorg/lwjgl/sdl/SDL_DisplayMode;)V
+		ARG 1 sdlDisplayMode
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
+	METHOD method_1_8465 (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 message
+	METHOD method_1_8466 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_8467 getFormattedRefreshRate ()Ljava/lang/String;
 	METHOD method_1665 fromString (Ljava/lang/String;)Ljava/util/Optional;
 		ARG 0 string
 	METHOD method_1666 getRedBits ()I

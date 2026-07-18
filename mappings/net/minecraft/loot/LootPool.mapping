@@ -1,11 +1,16 @@
 CLASS net/minecraft/class_55 net/minecraft/loot/LootPool
+	FIELD field_1_9106 modifier Ljava/util/Optional;
 	FIELD field_953 entries Ljava/util/List;
-	FIELD field_954 conditions Ljava/util/Optional;
+	FIELD field_954 condition Ljava/util/Optional;
 	FIELD field_957 rolls Lnet/minecraft/class_6880;
 	FIELD field_958 bonusRolls Lnet/minecraft/class_6880;
 	FIELD field_45795 CODEC Lcom/mojang/serialization/Codec;
 	METHOD <init> (Ljava/util/List;Ljava/util/Optional;Ljava/util/Optional;Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)V
 		ARG 1 entries
+		ARG 2 condition
+		ARG 3 modifier
+		ARG 4 rolls
+		ARG 5 bonusRolls
 	METHOD method_341 addGeneratedLoot (Ljava/util/function/Consumer;Lnet/minecraft/class_47;)V
 		ARG 1 lootConsumer
 		ARG 2 context
@@ -38,5 +43,7 @@ CLASS net/minecraft/class_55 net/minecraft/loot/LootPool
 		METHOD method_351 with (Lnet/minecraft/class_79$class_80;)Lnet/minecraft/class_55$class_56;
 			ARG 1 entry
 		METHOD method_352 rolls (Lnet/minecraft/class_6880;)Lnet/minecraft/class_55$class_56;
+			ARG 1 rolls
 		METHOD method_355 build ()Lnet/minecraft/class_55;
 		METHOD method_35509 bonusRolls (Lnet/minecraft/class_6880;)Lnet/minecraft/class_55$class_56;
+			ARG 1 bonusRollsRange

@@ -1,2 +1,6 @@
 CLASS net/minecraft/class_11908 net/minecraft/client/input/KeyInput
+	FIELD comp_4795 scancode I
+	FIELD comp_4796 key I
+	METHOD comp_4795 scancode ()I
+	METHOD comp_4796 key ()I
 	CLASS class_12146 KeyAction

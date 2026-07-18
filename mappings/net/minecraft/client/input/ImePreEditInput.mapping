@@ -6,3 +6,7 @@ CLASS net/minecraft/class_1_359 net/minecraft/client/input/ImePreEditInput
 		ARG 4 focusedBlock
 	METHOD method_1_2488 toText (Lnet/minecraft/class_2583;)Lnet/minecraft/class_5250;
 		ARG 1 focusedStyle
+	METHOD method_1_8538 fromSdlEvent (Ljava/lang/String;II)Lnet/minecraft/class_1_359;
+		ARG 0 fullText
+		ARG 1 caretPositionCodePoints
+		ARG 2 lengthCodePoints

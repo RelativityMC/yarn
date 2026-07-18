@@ -26,10 +26,14 @@ CLASS net/minecraft/class_1_900 com/mojang/blaze3d/pipeline/RenderPassDescriptio
 			ARG 0 colorAttachments
 			ARG 1 depthAttachments
 		METHOD method_1_7412 colorAttachment (Lnet/minecraft/class_1_1330;)Lnet/minecraft/class_1_900$class_1_1164;
+			ARG 1 colorAttachment
 		METHOD method_1_7413 colorAttachment (Lnet/minecraft/class_1_1330;Ljava/util/Optional;)Lnet/minecraft/class_1_900$class_1_1164;
+			ARG 1 colorAttachment
 			ARG 2 clearColor
 		METHOD method_1_7414 depthAttachment (Lnet/minecraft/class_1_1330;)Lnet/minecraft/class_1_900$class_1_1164;
+			ARG 1 depthAttachment
 		METHOD method_1_7415 depthAttachment (Lnet/minecraft/class_1_1330;Ljava/util/OptionalDouble;)Lnet/minecraft/class_1_900$class_1_1164;
+			ARG 1 depthAttachment
 			ARG 2 clearDepth
 		METHOD method_1_7416 renderArea (Lnet/minecraft/class_1_1317$class_1_837;)Lnet/minecraft/class_1_900$class_1_1164;
 			ARG 1 renderArea

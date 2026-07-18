@@ -11,6 +11,7 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	FIELD field_1_8332 erroredPostEffects Ljava/util/List;
 	FIELD field_1_8333 postEffects Ljava/util/List;
 	FIELD field_1_8334 reloadedResources Z
+	FIELD field_1_9013 hud3dDepthFramebuffer Lnet/minecraft/class_276;
 	FIELD field_3993 LOGGER Lorg/slf4j/Logger;
 	FIELD field_3994 random Lnet/minecraft/class_5819;
 	FIELD field_3997 lastSkyDarkness F
@@ -48,7 +49,7 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	METHOD method_1_431 getLightmapTextureView ()Lnet/minecraft/class_1_1330;
 	METHOD method_1_2674 extract (Lnet/minecraft/class_9779;Z)V
 		ARG 1 renderTickCounter
-		ARG 2 tick
+		ARG 2 memoryOk
 	METHOD method_1_2676 updateOptionsRenderState ()V
 	METHOD method_1_2677 updateWindowRenderState ()V
 	METHOD method_1_2678 registerPanoramaTextures (Lnet/minecraft/class_1060;)V
@@ -65,13 +66,20 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	METHOD method_1_7691 getPostEffects ()Ljava/util/List;
 	METHOD method_1_7692 (Lnet/minecraft/class_3300;)V
 		ARG 1 manager
+	METHOD method_1_8579 integrate3dHudDepth ()V
+	METHOD method_1_8581 refreshPostEffects ()V
+	METHOD method_1_8582 renderWorldEffects (Lnet/minecraft/class_12075;Lnet/minecraft/class_1_421;Z)V
+		ARG 1 cameraRenderState
+		ARG 2 optionsRenderState
+		ARG 3 hasPostEffects
 	METHOD method_3167 onCameraEntitySet (Lnet/minecraft/class_1297;)V
 		ARG 1 entity
 	METHOD method_3169 onResized (II)V
 		ARG 1 width
 		ARG 2 height
-	METHOD method_3172 renderHand (Lnet/minecraft/class_12075;Lnet/minecraft/class_1_1330;)V
+	METHOD method_3172 renderItemInHand (Lnet/minecraft/class_12075;Lnet/minecraft/class_1_1330;)V
 		ARG 1 cameraRenderState
+		ARG 2 depthAttachmentView
 	METHOD method_3174 getNightVisionStrength (Lnet/minecraft/class_1309;F)F
 		ARG 0 entity
 		ARG 1 tickProgress

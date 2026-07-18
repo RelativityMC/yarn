@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_1_1225 net/minecraft/entity/decoration/CushionEntity
 	FIELD field_1_8511 COLOR Lnet/minecraft/class_2940;
 	FIELD field_1_8512 DEFAULT_COLOR Lnet/minecraft/class_1767;
+	FIELD field_1_9057 TIME_UNTIL_REGEN_ON_LIGHTNING_STRIKE I
 	METHOD method_1_7782 getColor ()Lnet/minecraft/class_1767;
 	METHOD method_1_7783 setColor (Lnet/minecraft/class_1767;)V
 		ARG 1 color
@@ -8,3 +9,14 @@ CLASS net/minecraft/class_1_1225 net/minecraft/entity/decoration/CushionEntity
 	METHOD method_1_7785 canBePlacedOn (Lnet/minecraft/class_1937;Lnet/minecraft/class_238;)Z
 		ARG 0 world
 		ARG 1 cushionBox
+	METHOD method_1_8660 handleFireCollisions (Lnet/minecraft/class_3218;)V
+		ARG 1 world
+	METHOD method_1_8661 getItemStack ()Lnet/minecraft/class_1799;
+	METHOD method_1_8662 (Lnet/minecraft/class_2680;)Z
+		ARG 0 state
+	METHOD method_1_8663 (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Lnet/minecraft/class_7928;
+		ARG 2 pos
+		ARG 3 state
+	METHOD method_1_8664 (Lnet/minecraft/class_1937;Lnet/minecraft/class_238;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Lnet/minecraft/class_7928;
+		ARG 2 pos
+		ARG 3 state

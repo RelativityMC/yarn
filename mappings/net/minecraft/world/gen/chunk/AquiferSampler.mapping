@@ -5,7 +5,22 @@ CLASS net/minecraft/class_6350 net/minecraft/world/gen/chunk/AquiferSampler
 	METHOD method_38317 apply (Lnet/minecraft/class_6910$class_6912;D)Lnet/minecraft/class_2680;
 		ARG 1 pos
 		ARG 2 density
+	CLASS class_1_1311 Config
+		METHOD method_1_8587 createSampler (Lnet/minecraft/class_6568;Lnet/minecraft/class_1923;Lnet/minecraft/class_6574;IILnet/minecraft/class_6350$class_6565;)Lnet/minecraft/class_6350;
+			ARG 1 chunkNoiseSampler
+			ARG 2 chunkPos
+			ARG 3 randomSplitter
+			ARG 4 minimumY
+			ARG 5 height
+			ARG 6 fluidLevelSampler
+		METHOD method_1_8588 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+		METHOD method_1_8589 apply (Lnet/minecraft/class_6910$class_6915;)Lnet/minecraft/class_6350$class_1_1311;
+			ARG 1 visitor
 	CLASS class_5832 Impl
+		FIELD field_1_9016 exclusion Lnet/minecraft/class_6910;
+		FIELD field_1_9017 surfaceLevelCache Lit/unimi/dsi/fastutil/longs/Long2IntMap;
+		FIELD field_1_9018 surfaceLevel Lnet/minecraft/class_6910;
 		FIELD field_28813 barrierNoise Lnet/minecraft/class_6910;
 		FIELD field_28816 waterLevels [Lnet/minecraft/class_6350$class_6351;
 		FIELD field_28817 blockPositions [J
@@ -31,11 +46,23 @@ CLASS net/minecraft/class_6350 net/minecraft/world/gen/chunk/AquiferSampler
 		FIELD field_36221 FLUID_TICK_DENSITY_FACTOR_THRESHOLD D
 		FIELD field_61452 maxY I
 		METHOD <init> (Lnet/minecraft/class_6568;Lnet/minecraft/class_1923;Lnet/minecraft/class_6350$class_1_1311;Lnet/minecraft/class_6574;IILnet/minecraft/class_6350$class_6565;)V
+			ARG 1 chunkNoiseSampler
 			ARG 2 chunkPos
+			ARG 3 config
 			ARG 4 randomSplitter
 			ARG 5 minimumY
 			ARG 6 height
 			ARG 7 fluidLevelSampler
+		METHOD method_1_8590 (IIJ)I
+			ARG 3 pos
+		METHOD method_1_8591 getMaxSurfaceLevel (IIII)I
+			ARG 1 minX
+			ARG 2 minZ
+			ARG 3 maxX
+			ARG 4 maxZ
+		METHOD method_1_8592 getSurfaceLevel (II)I
+			ARG 1 x
+			ARG 2 z
 		METHOD method_33734 getCellX (I)I
 			ARG 0 x
 		METHOD method_33735 calculateDensity (Lnet/minecraft/class_6910$class_6912;Lorg/apache/commons/lang3/mutable/MutableDouble;Lnet/minecraft/class_6350$class_6351;Lnet/minecraft/class_6350$class_6351;)D

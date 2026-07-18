@@ -101,6 +101,7 @@ CLASS net/minecraft/class_1_31 net/minecraft/village/VillagerTrades
 		ARG 0 registries
 		ARG 1 items
 		ARG 2 villagerTypes
+		ARG 3 structures
 	METHOD method_1_4384 bootstrapShepherdCarpetSales (Lnet/minecraft/class_7891;)V
 		ARG 0 registries
 	METHOD method_1_4385 bootstrapMasonColoredBlockSales (Lnet/minecraft/class_7891;)V
@@ -117,5 +118,46 @@ CLASS net/minecraft/class_1_31 net/minecraft/village/VillagerTrades
 		ARG 0 registries
 	METHOD method_1_4391 bootstrapMasonColoredBlockSales (Lnet/minecraft/class_7891;Lnet/minecraft/class_1_727;Lnet/minecraft/class_1_727;)V
 		ARG 0 registries
+		ARG 1 trades
+		ARG 2 items
 	METHOD method_1_4392 bootstrapShepherdWoolSales (Lnet/minecraft/class_7891;)V
 		ARG 0 registries
+	METHOD method_1_4903 (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_1792;)V
+		ARG 1 trade
+		ARG 2 item
+	METHOD method_1_4904 (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_1792;)V
+		ARG 1 trade
+		ARG 2 item
+	METHOD method_1_4905 (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_1792;)V
+		ARG 1 trade
+		ARG 2 item
+	METHOD method_1_4906 (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_1792;)V
+		ARG 1 trade
+		ARG 2 dye
+	METHOD method_1_4907 (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_1792;)V
+		ARG 1 trade
+		ARG 2 item
+	METHOD method_1_4908 (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_1792;)V
+		ARG 1 trade
+		ARG 2 tem
+	METHOD method_1_4909 (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 color
+	METHOD method_1_4910 (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 color
+	METHOD method_1_4911 (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 color
+	METHOD method_1_4912 (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 color
+	METHOD method_1_4913 (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 color
+	METHOD method_1_4914 (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 color
+	METHOD method_1_4915 (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 color
+	METHOD method_1_8700 filledMapPredicate (Lnet/minecraft/class_7871;)Lnet/minecraft/class_2073$class_2074;
+		ARG 0 itemRegistry
+	METHOD method_1_8701 filter (Lnet/minecraft/class_2073$class_2074;)Lnet/minecraft/class_6880;
+		ARG 0 predicate
+	METHOD method_1_8702 modifyAndFilter (Lnet/minecraft/class_117$class_118;Lnet/minecraft/class_2073$class_2074;)Ljava/util/List;
+		ARG 0 modifier
+		ARG 1 filter

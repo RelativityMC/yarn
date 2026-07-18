@@ -120,6 +120,7 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 		ARG 1 state
 	METHOD method_7311 openEditSignScreen (Lnet/minecraft/class_2625;Lnet/minecraft/class_1_1337;)V
 		ARG 1 sign
+		ARG 2 side
 	METHOD method_7315 useBook (Lnet/minecraft/class_1799;Lnet/minecraft/class_1268;)V
 		COMMENT Called when the player uses (defaults to right click) a writable or written
 		COMMENT book item.

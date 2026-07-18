@@ -1,6 +1,20 @@
 CLASS net/minecraft/class_12264 net/minecraft/loot/slot/CombinedSlotSource
 	FIELD field_64147 terms Lnet/minecraft/class_6885;
 	FIELD field_64148 source Ljava/util/function/Function;
+	METHOD <init> (Lnet/minecraft/class_6885;)V
+		ARG 1 terms
+	METHOD method_1_8758 combineTerms (Lnet/minecraft/class_6885;)Ljava/util/function/Function;
+		ARG 0 terms
+	METHOD method_1_8759 (Lnet/minecraft/class_6885;Lnet/minecraft/class_47;)Lnet/minecraft/class_12271;
+		ARG 1 context
+	METHOD method_1_8760 (Lnet/minecraft/class_47;)Lnet/minecraft/class_12271;
+		ARG 0 context
+	METHOD method_1_8761 (Lnet/minecraft/class_6880;Lnet/minecraft/class_47;)Lnet/minecraft/class_12271;
+		ARG 1 context
+	METHOD method_1_8762 (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;Lnet/minecraft/class_47;)Lnet/minecraft/class_12271;
+		ARG 2 context
+	METHOD method_1_8763 (Lnet/minecraft/class_6885;Lnet/minecraft/class_47;)Lnet/minecraft/class_12271;
+		ARG 1 context
 	METHOD method_76107 (Lnet/minecraft/class_12264;)Lnet/minecraft/class_6885;
 		ARG 0 source
 	METHOD method_76109 createCodec (Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;

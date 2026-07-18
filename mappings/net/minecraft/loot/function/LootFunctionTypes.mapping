@@ -1,4 +1,17 @@
 CLASS net/minecraft/class_131 net/minecraft/loot/function/LootFunctionTypes
+	FIELD field_1_9284 ENTRY_LIST_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_9285 FULL_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_45832 ENTRY_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_50023 CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_1_743 register (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 registry
+	METHOD method_1_744 (Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 mapCodec
+	METHOD method_1_8953 (Lcom/mojang/datafixers/util/Either;)Lnet/minecraft/class_117;
+		ARG 0 either
+	METHOD method_1_8954 (Lnet/minecraft/class_117;)Lnet/minecraft/class_117;
+		ARG 0 codec
+	METHOD method_1_8955 (Lnet/minecraft/class_5641;)Lnet/minecraft/class_117;
+		ARG 0 andCodec
+	METHOD method_1_8956 (Lnet/minecraft/class_117;)Lcom/mojang/datafixers/util/Either;
+		ARG 0 function

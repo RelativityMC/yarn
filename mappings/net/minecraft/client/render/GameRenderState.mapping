@@ -6,3 +6,4 @@ CLASS net/minecraft/class_1_405 net/minecraft/client/render/GameRenderState
 	FIELD field_1_2300 options Lnet/minecraft/class_1_421;
 	FIELD field_1_2301 window Lnet/minecraft/class_1_416;
 	FIELD field_1_8661 postEffects Ljava/util/List;
+	FIELD field_1_9140 finishedLoading Z

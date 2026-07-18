@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_1320 net/minecraft/component/type/CookingFuelComponent
+	FIELD field_1_9071 PACKET_CODEC Lnet/minecraft/class_9139;
+	METHOD method_1_8669 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

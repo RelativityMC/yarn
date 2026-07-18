@@ -1,6 +1,14 @@
 CLASS net/minecraft/class_1_72 net/minecraft/loot/function/SetRandomPotionLootFunction
 	FIELD field_1_820 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_1_821 potions Ljava/util/Optional;
+	METHOD <init> (Ljava/util/Optional;Ljava/util/Optional;)V
+		ARG 1 condition
+		ARG 2 potions
 	METHOD method_1_765 builder (Lnet/minecraft/class_6885;)Lnet/minecraft/class_120$class_121;
+		ARG 0 potions
+	METHOD method_1_766 (Lnet/minecraft/class_6885;Ljava/util/Optional;)Lnet/minecraft/class_117;
+		ARG 1 condition
 	METHOD method_1_767 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
+	METHOD method_1_768 (Lnet/minecraft/class_1_72;)Ljava/util/Optional;
+		ARG 0 function

@@ -1,0 +1,18 @@
+CLASS net/minecraft/class_1_1338 net/minecraft/world/BoxRegion
+	FIELD field_1_9155 minPos Lnet/minecraft/class_2338;
+	FIELD field_1_9156 maxPos Lnet/minecraft/class_2338;
+	METHOD <init> (Lnet/minecraft/class_4538;Lnet/minecraft/class_238;)V
+		ARG 1 world
+		ARG 2 box
+	METHOD <init> (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;)V
+		ARG 1 world
+		ARG 2 minPos
+		ARG 3 maxPos
+	METHOD method_1_8815 (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Lnet/minecraft/class_7928;
+		ARG 0 pos
+		ARG 1 state
+	METHOD method_1_8816 (Ljava/util/function/BiConsumer;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Lnet/minecraft/class_7928;
+		ARG 1 pos
+		ARG 2 state
+	CLASS 1 1
+		FIELD field_1_8308 count I

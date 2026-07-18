@@ -6,7 +6,12 @@ CLASS net/minecraft/class_5483 net/minecraft/world/biome/SpawnSettings
 	FIELD field_26646 INSTANCE Lnet/minecraft/class_5483;
 	FIELD field_30982 EMPTY_ENTRY_POOL Lnet/minecraft/class_6012;
 	METHOD <init> (Ljava/util/Map;Ljava/util/Map;)V
+		ARG 1 spawners
 		ARG 2 spawnCosts
+	METHOD method_1_8734 getSpawnCosts ()Ljava/util/Map;
+	METHOD method_1_8735 getSpawnGroups ()Ljava/util/Set;
+	METHOD method_1_8736 getSpawnEntriesOptional (Lnet/minecraft/class_1311;)Lnet/minecraft/class_6012;
+		ARG 1 spawnGroup
 	METHOD method_30791 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
 	METHOD method_30794 (Lnet/minecraft/class_5483;)Ljava/util/Map;
@@ -23,6 +28,8 @@ CLASS net/minecraft/class_5483 net/minecraft/world/biome/SpawnSettings
 		METHOD <init> (Lnet/minecraft/class_1299;Lnet/minecraft/class_6017;)V
 			ARG 1 type
 		METHOD comp_3488 type ()Lnet/minecraft/class_1299;
+		METHOD method_1_8745 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
 	CLASS class_5265 SpawnDensity
 		COMMENT Embodies the density limit information of a type of entity in entity
 		COMMENT spawning logic. The density field is generated for all entities spawned
@@ -50,13 +57,37 @@ CLASS net/minecraft/class_5483 net/minecraft/world/biome/SpawnSettings
 	CLASS class_5496 Builder
 		FIELD field_26647 spawners Ljava/util/Map;
 		FIELD field_26648 spawnCosts Ljava/util/Map;
+		METHOD method_1_8737 spawnCosts (Ljava/util/Map;)Lnet/minecraft/class_5483$class_5496;
+			ARG 1 spawnCosts
+		METHOD method_1_8738 spawns (Lnet/minecraft/class_1311;Lnet/minecraft/class_6012;)Lnet/minecraft/class_5483$class_5496;
+			ARG 1 group
+			ARG 2 entries
+		METHOD method_1_8739 spawn (Lnet/minecraft/class_1299;III)Lnet/minecraft/class_5483$class_5496;
+			ARG 1 entityType
+			ARG 2 weight
+			ARG 3 min
+			ARG 4 max
+		METHOD method_1_8740 spawn (Lnet/minecraft/class_1299;ILnet/minecraft/class_6017;)Lnet/minecraft/class_5483$class_5496;
+			ARG 1 entityType
+			ARG 2 weight
+			ARG 3 count
+		METHOD method_1_8741 removeGroup (Lnet/minecraft/class_1311;)Lnet/minecraft/class_5483$class_5496;
+			ARG 1 group
+		METHOD method_1_8742 getSpawner (Lnet/minecraft/class_1311;)Lnet/minecraft/class_6012$class_6006;
+			ARG 1 spawnGroup
+		METHOD method_1_8743 (Lnet/minecraft/class_1311;)Lnet/minecraft/class_6012$class_6006;
+			ARG 0 g
+		METHOD method_1_8744 resetGroup (Lnet/minecraft/class_1311;)Lnet/minecraft/class_5483$class_5496;
+			ARG 1 group
 		METHOD method_31007 build ()Lnet/minecraft/class_5483;
 		METHOD method_31009 spawnCost (Lnet/minecraft/class_1299;DD)Lnet/minecraft/class_5483$class_5496;
 			ARG 1 entityType
 			ARG 2 mass
 			ARG 4 gravityLimit
 		METHOD method_31011 spawn (Lnet/minecraft/class_1299;Lnet/minecraft/class_1311;ILnet/minecraft/class_6017;)Lnet/minecraft/class_5483$class_5496;
+			ARG 1 entityType
 			ARG 2 spawnGroup
 			ARG 3 weight
+			ARG 4 count
 		METHOD method_31012 (Ljava/util/Map$Entry;)Lnet/minecraft/class_6012;
 			ARG 0 spawner

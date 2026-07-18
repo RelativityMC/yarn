@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_1_1205 net/minecraft/world/Region
 	FIELD field_1_8305 world Lnet/minecraft/class_4538;
 	FIELD field_1_8306 blockStatePredicate Ljava/util/function/Predicate;
+	FIELD field_1_9112 ANY_STATE Ljava/util/function/Predicate;
 	METHOD <init> (Lnet/minecraft/class_4538;)V
 		ARG 1 world
 	METHOD method_1_7663 allBlocksMatch ()Z
@@ -18,3 +19,7 @@ CLASS net/minecraft/class_1_1205 net/minecraft/world/Region
 	METHOD method_1_7670 (Lnet/minecraft/class_2680;)Z
 		ARG 1 state
 	METHOD method_1_7674 containsNone ()Z
+	METHOD method_1_8746 containsAnyOf (Ljava/util/function/Predicate;)Z
+		ARG 1 predicate
+	METHOD method_1_8747 (Lnet/minecraft/class_2680;)Z
+		ARG 0 state

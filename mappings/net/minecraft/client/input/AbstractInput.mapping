@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_11907 net/minecraft/client/input/AbstractInput
 	FIELD field_62593 NOT_A_NUMBER I
-	METHOD method_74228 getKeycode ()I
+	METHOD method_1_8658 getKey ()I
+	METHOD method_74228 getScancode ()I
 	METHOD method_74229 isEnterOrSpace ()Z
 	METHOD method_74230 isEnter ()Z
 	METHOD method_74231 isEscape ()Z

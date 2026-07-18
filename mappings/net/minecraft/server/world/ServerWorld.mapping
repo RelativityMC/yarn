@@ -57,6 +57,11 @@ CLASS net/minecraft/class_3218 net/minecraft/server/world/ServerWorld
 		ARG 1 weatherState
 	METHOD method_1_2673 setEnvironmentAttributeAccess (Lnet/minecraft/class_12205;)Lnet/minecraft/class_12205;
 		ARG 1 environmentAttributeAccess
+	METHOD method_1_8478 locateStructure (Lnet/minecraft/class_6885;Lnet/minecraft/class_2338;IZ)Lnet/minecraft/class_2338;
+		ARG 1 structures
+		ARG 2 pos
+		ARG 3 radius
+		ARG 4 skipReferencedStructures
 	METHOD method_8448 updateSleepingPlayers ()V
 	METHOD method_8487 locateStructure (Lnet/minecraft/class_6862;Lnet/minecraft/class_2338;IZ)Lnet/minecraft/class_2338;
 		COMMENT Tries to find the closest structure of a given type near a given block.

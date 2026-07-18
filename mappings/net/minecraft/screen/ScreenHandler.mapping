@@ -147,6 +147,10 @@ CLASS net/minecraft/class_1703 net/minecraft/screen/ScreenHandler
 	METHOD <init> (Lnet/minecraft/class_3917;I)V
 		ARG 1 type
 		ARG 2 syncId
+	METHOD method_1_8806 getClickType (I)Lnet/minecraft/class_5536;
+		ARG 0 button
+	METHOD method_1_8807 isClick (I)Z
+		ARG 0 button
 	METHOD method_7591 packQuickCraftData (II)I
 		ARG 0 quickCraftStage
 		ARG 1 buttonId
@@ -158,6 +162,7 @@ CLASS net/minecraft/class_1703 net/minecraft/screen/ScreenHandler
 		COMMENT Performs a slot click. This can behave in many different ways depending mainly on the action type.
 		ARG 1 slotIndex
 		ARG 2 button
+		ARG 3 actionType
 		ARG 4 player
 	METHOD method_7594 unpackQuickCraftStage (I)I
 		ARG 0 quickCraftData
@@ -281,7 +286,8 @@ CLASS net/minecraft/class_1703 net/minecraft/screen/ScreenHandler
 		ARG 3 endIndex
 		ARG 4 fromLast
 	METHOD method_7617 calculateStackSize (IILnet/minecraft/class_1799;)I
-		ARG 1 mode
+		ARG 0 numSlots
+		ARG 1 heldButtonType
 		ARG 2 stack
 	METHOD method_7618 calculateComparatorOutput (Lnet/minecraft/class_1263;)I
 		ARG 0 inventory

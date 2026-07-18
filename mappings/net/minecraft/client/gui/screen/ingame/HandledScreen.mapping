@@ -37,6 +37,13 @@ CLASS net/minecraft/class_465 net/minecraft/client/gui/screen/ingame/HandledScre
 	METHOD method_1_742 canDrag (Lnet/minecraft/class_1735;Lnet/minecraft/class_1799;)Z
 		ARG 1 slot
 		ARG 2 stack
+	METHOD method_1_8948 getClickedButton (Lnet/minecraft/class_11909;)I
+		ARG 0 click
+	METHOD method_1_8949 onMouseClick (Lnet/minecraft/class_1735;ILnet/minecraft/class_11909;Lnet/minecraft/class_1713;)V
+		ARG 1 slot
+		ARG 2 slotId
+		ARG 3 click
+		ARG 4 actionType
 	METHOD method_2378 isPointWithinBounds (IIIIDD)Z
 		ARG 1 x
 		ARG 2 y

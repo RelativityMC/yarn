@@ -1,0 +1,32 @@
+CLASS net/minecraft/class_1_1306 net/minecraft/client/texture/ImageHelper
+	FIELD field_1_8799 DEFAULT_BUFFER_SIZE I
+	FIELD field_1_8800 CARDINAL_OFFSETS [[I
+	FIELD field_1_8801 LOGGER Lorg/slf4j/Logger;
+	METHOD method_1_8480 recolorTransparentPixelsDark (Lnet/minecraft/class_1011;)V
+		ARG 0 image
+	METHOD method_1_8481 getDebugTexturesDir ()Ljava/nio/file/Path;
+	METHOD method_1_8482 getDebugTexturesDir (Ljava/nio/file/Path;)Ljava/nio/file/Path;
+		ARG 0 gameRoot
+	METHOD method_1_8486 packPixelPos (III)I
+		ARG 0 x
+		ARG 1 y
+		ARG 2 width
+	METHOD method_1_8487 readAll (Ljava/io/InputStream;)Ljava/nio/ByteBuffer;
+		ARG 0 input
+	METHOD method_1_8488 readAll (Ljava/nio/channels/ReadableByteChannel;I)Ljava/nio/ByteBuffer;
+		ARG 0 channel
+		ARG 1 bufSize
+	METHOD method_1_8489 recolorTransparentPixels (Lnet/minecraft/class_1011;)V
+		ARG 0 image
+	METHOD method_1_8490 saveTexture (Ljava/nio/file/Path;Ljava/lang/String;Lnet/minecraft/class_1_1318;ILjava/util/function/IntUnaryOperator;)V
+		ARG 0 directory
+		ARG 1 filePrefix
+		ARG 2 texture
+		ARG 3 scales
+		ARG 4 colorFunction
+	METHOD method_1_8491 unpackX (II)I
+		ARG 0 packed
+		ARG 1 width
+	METHOD method_1_8492 unpackY (II)I
+		ARG 0 packed
+		ARG 1 width

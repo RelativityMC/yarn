@@ -61,3 +61,4 @@ CLASS net/minecraft/class_6024 net/minecraft/entity/EntityStatuses
 	FIELD field_55945 BREAK_SADDLE B
 	FIELD field_60536 RAVAGER_ROAR B
 	FIELD field_63949 KINETIC_ATTACK B
+	CLASS class_1_1305 Status

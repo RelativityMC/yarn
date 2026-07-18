@@ -2,6 +2,8 @@ CLASS net/minecraft/class_10537 net/minecraft/client/texture/ReloadableTexture
 	FIELD field_55529 textureId Lnet/minecraft/class_2960;
 	METHOD <init> (Lnet/minecraft/class_2960;)V
 		ARG 1 textureId
+	METHOD method_1_8861 updateSampler (Lnet/minecraft/class_10539;)V
+		ARG 1 textureContents
 	METHOD method_65809 loadContents (Lnet/minecraft/class_3300;)Lnet/minecraft/class_10539;
 		ARG 1 resourceManager
 	METHOD method_65856 load (Lnet/minecraft/class_1011;)V

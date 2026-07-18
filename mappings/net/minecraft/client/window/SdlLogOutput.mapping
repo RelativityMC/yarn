@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_1_1303 net/minecraft/client/window/SdlLogOutput
+	FIELD field_1_8788 LOG_OUTPUT_FUNCTION Lorg/lwjgl/sdl/SDL_LogOutputFunction;
+	FIELD field_1_8789 HEX_FORMAT Ljava/util/HexFormat;
+	FIELD field_1_8790 LOGGER Lorg/slf4j/Logger;
+	METHOD method_1_8459 describeCategory (I)Ljava/lang/String;
+		ARG 0 category
+	METHOD method_1_8460 initialize ()V
+	METHOD method_1_8461 logOutput (JIIJ)V
+		ARG 0 userdata
+		ARG 2 category
+		ARG 3 priority
+		ARG 4 message
+	METHOD method_1_8462 describeUnknownCategory (I)Ljava/lang/String;
+		ARG 0 category

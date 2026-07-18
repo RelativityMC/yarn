@@ -3,17 +3,21 @@ CLASS net/minecraft/class_137 net/minecraft/loot/function/SetAttributesLootFunct
 	FIELD field_45836 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_51360 replace Z
 	METHOD <init> (Ljava/util/Optional;Ljava/util/List;Z)V
+		ARG 1 condition
 		ARG 2 attributes
 		ARG 3 replace
 	METHOD method_35524 attributeBuilder (Lnet/minecraft/class_2960;Lnet/minecraft/class_6880;Lnet/minecraft/class_1322$class_1323;Lnet/minecraft/class_6880;)Lnet/minecraft/class_137$class_6156;
 		ARG 0 id
 		ARG 1 attribute
 		ARG 2 operation
+		ARG 3 amount
 	METHOD method_35525 builder ()Lnet/minecraft/class_137$class_6155;
 	METHOD method_53355 (Lnet/minecraft/class_137;)Ljava/util/List;
 		ARG 0 function
 	METHOD method_53356 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
+	METHOD method_57647 (Lnet/minecraft/class_47;Lnet/minecraft/class_9285;)Lnet/minecraft/class_9285;
+		ARG 2 component
 	METHOD method_59544 applyTo (Lnet/minecraft/class_47;Lnet/minecraft/class_9285;)Lnet/minecraft/class_9285;
 		ARG 1 context
 		ARG 2 attributeModifiersComponent
@@ -53,6 +57,7 @@ CLASS net/minecraft/class_137 net/minecraft/loot/function/SetAttributesLootFunct
 			ARG 1 id
 			ARG 2 attribute
 			ARG 3 operation
+			ARG 4 amount
 		METHOD method_35528 build ()Lnet/minecraft/class_137$class_138;
 		METHOD method_35529 slot (Lnet/minecraft/class_9274;)Lnet/minecraft/class_137$class_6156;
 			ARG 1 slot

@@ -1,12 +1,9 @@
-CLASS net/minecraft/class_1_1260 com/mojang/blaze3d/textures/GpuTextureView
-	FIELD field_1_8652 baseMipLevel I
-	FIELD field_1_8653 mipLevel I
-	FIELD field_1_8654 texture Lnet/minecraft/class_1_1318;
-	METHOD <init> (Lnet/minecraft/class_1_1318;II)V
-		ARG 1 texture
-		ARG 2 baseMipLevel
-		ARG 3 mipLevel
-	METHOD method_1_8001 (I)I
+CLASS net/minecraft/class_1_1330 com/mojang/blaze3d/textures/GpuTextureView
+	METHOD method_1_8000 baseMipLevel ()I
+	METHOD method_1_8001 getHeight (I)I
 		ARG 1 mipmap
-	METHOD method_1_8002 (I)I
+	METHOD method_1_8002 getWidth (I)I
 		ARG 1 mipmap
+	METHOD method_1_8003 isClosed ()Z
+	METHOD method_1_8004 mipLevel ()I
+	METHOD method_1_8005 getTexture ()Lnet/minecraft/class_1_1318;

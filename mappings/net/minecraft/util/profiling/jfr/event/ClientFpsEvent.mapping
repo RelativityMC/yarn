@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1_1344 net/minecraft/util/profiling/jfr/event/ClientFpsEvent
+	FIELD field_1_9183 NAME Ljava/lang/String;
+	FIELD field_1_9184 EVENT_TYPE Ljdk/jfr/EventType;
+	FIELD field_1_9185 fps I
+	METHOD <init> (I)V
+		ARG 1 fps
+	CLASS class_12171 Names
+		FIELD field_63651 FPS Ljava/lang/String;

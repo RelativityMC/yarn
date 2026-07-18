@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_1_1360 net/minecraft/loot/condition/MatchBlockLootCondition
+	METHOD method_1_8901 builder (Lnet/minecraft/class_4550$class_4710;)Lnet/minecraft/class_5341$class_210;
+		ARG 0 predicateBuilder
+	METHOD method_1_8902 builder (Lnet/minecraft/class_7871;Lnet/minecraft/class_2248;)Lnet/minecraft/class_5341$class_210;
+		ARG 0 blockRegistry
+		ARG 1 block
+	METHOD method_1_8903 builder (Lnet/minecraft/class_7871;Lnet/minecraft/class_2248;Lnet/minecraft/class_4559$class_4560;)Lnet/minecraft/class_5341$class_210;
+		ARG 0 blockRegistry
+		ARG 1 block
+		ARG 2 state
+	METHOD test (Ljava/lang/Object;)Z
+		ARG 1 context

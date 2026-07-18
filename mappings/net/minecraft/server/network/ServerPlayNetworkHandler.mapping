@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_3244 net/minecraft/server/network/ServerPlayNetworkHandler
 	FIELD field_1_7094 commandCooldown Lnet/minecraft/class_10222;
+	FIELD field_1_9212 suggestionsManager Lnet/minecraft/class_1_1361;
 	FIELD field_14117 movePacketsCount I
 	FIELD field_14118 ticks I
 	FIELD field_14119 requestedTeleportPos Lnet/minecraft/class_243;
@@ -72,6 +73,8 @@ CLASS net/minecraft/class_3244 net/minecraft/server/network/ServerPlayNetworkHan
 		ARG 3 value
 	METHOD method_1_6319 checkForChatSpam ()V
 	METHOD method_1_6320 checkForCommandSpam ()V
+	METHOD method_1_8894 (ILcom/mojang/brigadier/suggestion/Suggestions;)V
+		ARG 2 suggestions
 	METHOD method_14360 requestTeleport (Lnet/minecraft/class_10182;Ljava/util/Set;)V
 		ARG 1 pos
 		ARG 2 flags
@@ -218,6 +221,8 @@ CLASS net/minecraft/class_3244 net/minecraft/server/network/ServerPlayNetworkHan
 		ARG 1 world
 		ARG 2 pos
 		ARG 3 stack
+	METHOD method_66589 (Lnet/minecraft/class_5321;)Ljava/util/Optional;
+		ARG 1 test
 	METHOD method_73086 tickMovement ()Z
 		COMMENT Ticks player position updating.
 		COMMENT

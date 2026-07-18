@@ -117,6 +117,24 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 		COMMENT @see net.minecraft.network.PacketByteBuf#writeLongArray(long[])
 	FIELD field_59990 RGB Lnet/minecraft/class_9139;
 	FIELD field_62276 PLAYER_NAME Lnet/minecraft/class_9139;
+	METHOD method_1_6418 toCollection (Ljava/util/function/IntFunction;I)Lnet/minecraft/class_9139$class_9140;
+		ARG 0 collectionFactory
+		ARG 1 maxSize
+	METHOD method_1_6419 (Ljava/util/function/IntFunction;ILnet/minecraft/class_9139;)Lnet/minecraft/class_9139;
+		ARG 2 codec
+	METHOD method_1_8560 fixedLengthCollection (Ljava/util/function/IntFunction;I)Lnet/minecraft/class_9139$class_9140;
+		ARG 0 collectionFactory
+		ARG 1 count
+	METHOD method_1_8561 fixedLengthCollection (Ljava/util/function/IntFunction;Lnet/minecraft/class_9139;I)Lnet/minecraft/class_9139;
+		ARG 0 collectionFactory
+		ARG 1 elementCodec
+		ARG 2 count
+	METHOD method_1_8562 fixedLengthList (I)Lnet/minecraft/class_9139$class_9140;
+		ARG 0 count
+	METHOD method_1_8563 (Ljava/util/function/IntFunction;ILnet/minecraft/class_9139;)Lnet/minecraft/class_9139;
+		ARG 2 codec
+	METHOD method_1_8564 (ILnet/minecraft/class_9139;)Lnet/minecraft/class_9139;
+		ARG 1 codec
 	METHOD method_56363 toList ()Lnet/minecraft/class_9139$class_9140;
 		COMMENT Used to make a codec for a list of values using {@link PacketCodec#collect}.
 		COMMENT This creates an {@link java.util.ArrayList}, so the decoded result can be modified.
@@ -278,7 +296,7 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 	METHOD method_57991 collection (Ljava/util/function/IntFunction;Lnet/minecraft/class_9139;I)Lnet/minecraft/class_9139;
 		ARG 0 factory
 		ARG 1 elementCodec
-		ARG 2 maxSize
+		ARG 2 maxCount
 	METHOD method_57992 map (Ljava/util/function/IntFunction;Lnet/minecraft/class_9139;Lnet/minecraft/class_9139;I)Lnet/minecraft/class_9139;
 		ARG 0 factory
 		ARG 1 keyCodec
@@ -297,7 +315,7 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 	METHOD method_57998 nbtCompound (Ljava/util/function/Supplier;)Lnet/minecraft/class_9139;
 		ARG 0 sizeTracker
 	METHOD method_58000 toList (I)Lnet/minecraft/class_9139$class_9140;
-		ARG 0 maxLength
+		ARG 0 maxCount
 	METHOD method_58001 registryEntryList (Lnet/minecraft/class_5321;)Lnet/minecraft/class_9139;
 		ARG 0 registryRef
 	METHOD method_58002 unlimitedRegistryCodec (Lcom/mojang/serialization/Codec;)Lnet/minecraft/class_9139;
@@ -368,3 +386,5 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 		METHOD method_71596 (Lio/netty/buffer/ByteBuf;Ljava/lang/String;)V
 			ARG 0 buf
 			ARG 1 signature
+	CLASS 35 35
+		FIELD field_60514 GSON Lcom/google/gson/Gson;

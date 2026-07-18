@@ -1,0 +1,28 @@
+CLASS net/minecraft/class_1_1293 net/minecraft/component/type/FuelComponents
+	FIELD field_1_8761 NUMBER_PROVIDER_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_9321 NUMBER_PROVIDER_LIST_CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_1_8202 bootstrap (Lnet/minecraft/class_7891;)V
+		ARG 0 registry
+	METHOD method_1_8203 composting (Lnet/minecraft/class_7871;I)Lnet/minecraft/class_5658;
+		ARG 0 blockLookup
+		ARG 1 percentage
+	METHOD method_1_8204 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 path
+	METHOD method_1_8206 (Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 mapCodec
+	METHOD method_1_8207 (Lnet/minecraft/class_5658;)Lcom/mojang/datafixers/util/Either;
+		ARG 0 provider
+	METHOD method_1_8983 cooking (Lnet/minecraft/class_7871;I)Lnet/minecraft/class_5658;
+		ARG 0 lootConditionLookup
+		ARG 1 ticks
+	METHOD method_1_8984 getValue (Lnet/minecraft/class_3218;Ljava/lang/Object;Ljava/util/function/Function;)Ljava/util/Optional;
+		ARG 0 world
+		ARG 1 component
+		ARG 2 getter
+	METHOD method_1_8985 getValue (Lnet/minecraft/class_3218;Lnet/minecraft/class_1799;Lnet/minecraft/class_9331;Ljava/util/function/Function;)Ljava/util/Optional;
+		ARG 0 world
+		ARG 1 stack
+		ARG 2 componentType
+		ARG 3 getter
+	METHOD method_1_8986 (Ljava/util/function/Function;Ljava/lang/Object;Lnet/minecraft/class_7225$class_7226;)Ljava/util/Optional;
+		ARG 2 providers

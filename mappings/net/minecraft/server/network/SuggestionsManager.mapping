@@ -1,0 +1,22 @@
+CLASS net/minecraft/class_1_1361 net/minecraft/server/network/SuggestionsManager
+	FIELD field_1_9243 MAX_SUGGESTIONS I
+	FIELD field_1_9244 RECOMPUTE_INTERVAL_TICKS I
+	FIELD field_1_9245 recompute Z
+	FIELD field_1_9246 queuedTask Ljava/util/concurrent/atomic/AtomicReference;
+	FIELD field_1_9247 player Lnet/minecraft/class_3222;
+	METHOD <init> (Lnet/minecraft/class_3222;)V
+		ARG 1 player
+	METHOD method_1_8908 (Lnet/minecraft/class_1_1361$class_1_1362;Lcom/mojang/brigadier/suggestion/Suggestions;)V
+		ARG 1 suggestions
+	METHOD method_1_8909 truncateSuggestions (Lcom/mojang/brigadier/suggestion/Suggestions;)Lcom/mojang/brigadier/suggestion/Suggestions;
+		ARG 0 suggestions
+	METHOD method_1_8910 getSuggestions (Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 input
+	METHOD method_1_8911 tick ()V
+	METHOD method_1_8912 recomputeSuggestions ()V
+	METHOD method_1_8913 scheduleRecomputeIfNeeded ()V
+	CLASS class_1_1362 Task
+		FIELD field_1_9248 input Ljava/lang/String;
+		FIELD field_1_9249 suggestionsFuture Ljava/util/concurrent/CompletableFuture;
+		METHOD <init> (Ljava/lang/String;)V
+			ARG 1 input

@@ -1,0 +1,18 @@
+CLASS net/minecraft/class_1_1351 net/minecraft/world/FilteredBlockView
+	FIELD field_1_9207 world Lnet/minecraft/class_4538;
+	FIELD field_1_9208 cache [Lnet/minecraft/class_1_1351$class_1_1352;
+	FIELD field_1_9209 blockStatePredicate Ljava/util/function/Predicate;
+	METHOD <init> (Lnet/minecraft/class_4538;Ljava/util/function/Predicate;)V
+		ARG 1 world
+		ARG 2 blockStatePredicate
+	METHOD method_1_8885 getBlockState (Lnet/minecraft/class_2338;)Lnet/minecraft/class_2680;
+		ARG 1 pos
+	METHOD method_1_8886 getCacheIndex (III)I
+		ARG 1 sectionX
+		ARG 2 sectionY
+		ARG 3 sectionZ
+	METHOD method_1_8887 getSection (III)Lnet/minecraft/class_2826;
+		ARG 1 sectionX
+		ARG 2 sectionY
+		ARG 3 sectionZ
+	CLASS class_1_1352 CacheEntry

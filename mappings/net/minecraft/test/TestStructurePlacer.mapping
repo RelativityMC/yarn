@@ -1,11 +1,25 @@
 CLASS net/minecraft/class_9120 net/minecraft/test/TestStructurePlacer
+	FIELD field_1_9177 statesByWorld Ljava/util/Map;
 	FIELD field_48497 MARGIN_X I
 	FIELD field_48498 MARGIN_Z I
 	FIELD field_48499 testsPerRow I
 	FIELD field_48503 origin Ljava/util/function/Function;
 	FIELD field_52281 clearBeforeBatch Z
 	METHOD <init> (Ljava/util/function/Function;IZ)V
+		ARG 1 origin
 		ARG 2 testsPerRow
 		ARG 3 clearBeforeBatch
+	METHOD method_1_8848 getPlacerState (Lnet/minecraft/class_4517;)Lnet/minecraft/class_9120$class_1_1343;
+		ARG 1 state
+	METHOD method_1_8849 (Lnet/minecraft/class_5321;)Lnet/minecraft/class_9120$class_1_1343;
+		ARG 1 s
 	METHOD method_61101 (Lnet/minecraft/class_4517;)V
 		ARG 0 state
+	CLASS class_1_1343 State
+		FIELD field_1_9178 testsInRow I
+		FIELD field_1_9179 origin Lnet/minecraft/class_2338;
+		FIELD field_1_9180 nextPos Lnet/minecraft/class_2338$class_2339;
+		FIELD field_1_9181 rowBox Lnet/minecraft/class_238;
+		FIELD field_1_9182 testStates Ljava/util/Collection;
+		METHOD <init> (Lnet/minecraft/class_2338;)V
+			ARG 1 origin

@@ -42,6 +42,7 @@ CLASS net/minecraft/class_3222 net/minecraft/server/network/ServerPlayerEntity
 	FIELD field_26821 textStream Lnet/minecraft/class_5513;
 	FIELD field_29180 screenHandlerSyncHandler Lnet/minecraft/class_5916;
 	FIELD field_29181 screenHandlerListener Lnet/minecraft/class_1712;
+	FIELD field_29769 FORGIVE_MOB_ANGER_RANGE I
 	FIELD field_35007 fallStartPos Lnet/minecraft/class_243;
 	FIELD field_35008 vehicleInLavaRidingPos Lnet/minecraft/class_243;
 	FIELD field_35566 allowServerListing Z
@@ -50,6 +51,7 @@ CLASS net/minecraft/class_3222 net/minecraft/server/network/ServerPlayerEntity
 	FIELD field_44990 viewDistance I
 	FIELD field_44991 chunkFilter Lnet/minecraft/class_8603;
 	FIELD field_46156 language Ljava/lang/String;
+	FIELD field_46928 MINIMUM_FLIGHT_STAT_INCREMENT I
 	FIELD field_47709 CREATIVE_BLOCK_INTERACTION_RANGE_MODIFIER Lnet/minecraft/class_1322;
 	FIELD field_47710 CREATIVE_ENTITY_INTERACTION_RANGE_MODIFIER Lnet/minecraft/class_1322;
 	FIELD field_49776 spawnExtraParticlesOnFall Z
@@ -89,7 +91,9 @@ CLASS net/minecraft/class_3222 net/minecraft/server/network/ServerPlayerEntity
 		ARG 1 effect
 	METHOD method_1_7647 sendPostEffectsPacket ()V
 	METHOD method_7333 lockRecipes (Ljava/util/Collection;)I
+		ARG 1 recipes
 	METHOD method_7335 unlockRecipes (Ljava/util/List;)V
+		ARG 1 recipes
 	METHOD method_7336 changeGameMode (Lnet/minecraft/class_1934;)Z
 		ARG 1 gameMode
 	METHOD method_14203 copyFrom (Lnet/minecraft/class_3222;Z)V
@@ -119,6 +123,7 @@ CLASS net/minecraft/class_3222 net/minecraft/server/network/ServerPlayerEntity
 	METHOD method_14227 updateScoreboardScore (Lnet/minecraft/class_9015;Lnet/minecraft/class_9015;Ljava/util/Map;)V
 		ARG 1 targetScoreHolder
 		ARG 2 aboutScoreHolder
+		ARG 3 criteriaByColor
 	METHOD method_14228 setExperiencePoints (I)V
 		ARG 1 points
 	METHOD method_14230 isPvpEnabled ()Z

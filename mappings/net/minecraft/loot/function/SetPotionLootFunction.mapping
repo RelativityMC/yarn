@@ -2,9 +2,12 @@ CLASS net/minecraft/class_6662 net/minecraft/loot/function/SetPotionLootFunction
 	FIELD field_35080 potion Lnet/minecraft/class_6880;
 	FIELD field_45850 CODEC Lcom/mojang/serialization/MapCodec;
 	METHOD <init> (Ljava/util/Optional;Lnet/minecraft/class_6880;)V
+		ARG 1 condition
 		ARG 2 potion
 	METHOD method_38927 builder (Lnet/minecraft/class_6880;)Lnet/minecraft/class_120$class_121;
 		ARG 0 potion
+	METHOD method_38928 (Lnet/minecraft/class_6880;Ljava/util/Optional;)Lnet/minecraft/class_117;
+		ARG 1 condition
 	METHOD method_53393 (Lnet/minecraft/class_6662;)Lnet/minecraft/class_6880;
 		ARG 0 function
 	METHOD method_53394 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

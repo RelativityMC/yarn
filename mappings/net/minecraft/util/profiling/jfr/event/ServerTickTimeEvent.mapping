@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1_1356 net/minecraft/util/profiling/jfr/event/ServerTickTimeEvent
+	FIELD field_1_9225 NAME Ljava/lang/String;
+	FIELD field_1_9226 EVENT_TYPE Ljdk/jfr/EventType;
+	FIELD field_1_9227 averageTickDuration J
+	METHOD <init> (F)V
+		ARG 1 averageTickMilliseconds
+	CLASS class_6601 Names
+		FIELD field_34854 AVERAGE_TICK_DURATION Ljava/lang/String;

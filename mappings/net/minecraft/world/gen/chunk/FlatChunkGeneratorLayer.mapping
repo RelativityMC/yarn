@@ -5,6 +5,11 @@ CLASS net/minecraft/class_3229 net/minecraft/world/gen/chunk/FlatChunkGeneratorL
 	METHOD <init> (ILnet/minecraft/class_2248;)V
 		ARG 1 thickness
 		ARG 2 block
+	METHOD <init> (ILnet/minecraft/class_6880;)V
+		ARG 1 thickness
+		ARG 2 block
+	METHOD method_1_5254 (Lnet/minecraft/class_3229;)Lnet/minecraft/class_6880;
+		ARG 0 layer
 	METHOD method_14286 getBlockState ()Lnet/minecraft/class_2680;
 	METHOD method_14289 getThickness ()I
 	METHOD method_28909 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

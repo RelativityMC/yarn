@@ -8,6 +8,7 @@ CLASS net/minecraft/class_4725 net/minecraft/client/texture/MipmapHelper
 		ARG 2 mipmapLevels
 		ARG 3 strategy
 		ARG 4 cutoffBias
+		ARG 5 transparency
 	METHOD method_75486 blendDarkenedCutout (IIII)I
 		ARG 0 nw
 		ARG 1 ne

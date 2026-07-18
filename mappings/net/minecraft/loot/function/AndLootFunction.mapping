@@ -1,8 +1,32 @@
 CLASS net/minecraft/class_5641 net/minecraft/loot/function/AndLootFunction
+	FIELD field_1_9281 NO_MODIFIERS Ljava/util/function/BiFunction;
 	FIELD field_27904 terms Lnet/minecraft/class_6885;
 	FIELD field_27905 applier Ljava/util/function/BiFunction;
 	FIELD field_45834 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_45835 INLINE_CODEC Lcom/mojang/serialization/Codec;
+	METHOD <init> (Ljava/util/Optional;Lnet/minecraft/class_6885;)V
+		ARG 1 condition
+		ARG 2 terms
+	METHOD <init> (Lnet/minecraft/class_6885;)V
+		ARG 1 terms
+	METHOD method_1_8941 isEmpty ()Z
+	METHOD method_1_8942 applierFromTerms (Lnet/minecraft/class_6885;)Ljava/util/function/BiFunction;
+		ARG 0 terms
+	METHOD method_1_8943 (Lnet/minecraft/class_6885;Lnet/minecraft/class_1799;Lnet/minecraft/class_47;)Lnet/minecraft/class_1799;
+		ARG 1 stack
+		ARG 2 context
+	METHOD method_1_8944 (Lnet/minecraft/class_6880;Lnet/minecraft/class_1799;Lnet/minecraft/class_47;)Lnet/minecraft/class_1799;
+		ARG 1 stack
+		ARG 2 context
+	METHOD method_1_8945 (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;Lnet/minecraft/class_1799;Lnet/minecraft/class_47;)Lnet/minecraft/class_1799;
+		ARG 2 stack
+		ARG 3 context
+	METHOD method_1_8946 (Lnet/minecraft/class_6885;Lnet/minecraft/class_1799;Lnet/minecraft/class_47;)Lnet/minecraft/class_1799;
+		ARG 1 stack
+		ARG 2 context
+	METHOD method_1_8947 (Lnet/minecraft/class_1799;Lnet/minecraft/class_47;)Lnet/minecraft/class_1799;
+		ARG 0 stack
+		ARG 1 context
 	METHOD method_53351 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
 	METHOD method_53352 (Lnet/minecraft/class_5641;)Lnet/minecraft/class_6885;

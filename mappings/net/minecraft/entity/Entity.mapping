@@ -84,6 +84,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	COMMENT To kill entities and drop loot, call {@link #kill} or {@link damage} (with large enough damage amount).
 	FIELD field_1_2019 fluidController Lnet/minecraft/class_1_370;
 	FIELD field_1_6915 bounced Z
+	FIELD field_1_8783 FLUID_CATEGORIES Ljava/util/Set;
 	FIELD field_5951 ridingCooldown I
 	FIELD field_5952 onGround Z
 	FIELD field_5953 firstUpdate Z
@@ -267,6 +268,8 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_1_7595 canHurt (Lnet/minecraft/class_1297;)Z
 		ARG 1 other
 	METHOD method_1_7596 getMovementSide ()Lnet/minecraft/class_1_1224;
+	METHOD method_1_7597 (Ljava/lang/String;)V
+		ARG 1 team
 	METHOD method_1_7598 updateTrackedPositionAndAngles (Lnet/minecraft/class_243;FF)V
 		ARG 1 pos
 		ARG 2 yaw
@@ -277,6 +280,13 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 1 movementType
 		ARG 2 movement
 	METHOD method_1_7601 getStance ()Lnet/minecraft/class_1_1193;
+	METHOD method_1_8431 rotationToQuaternion (FF)Lorg/joml/Quaternionf;
+		ARG 0 pitch
+		ARG 1 yaw
+	METHOD method_1_8432 getRotationQuaternion ()Lorg/joml/Quaternionf;
+	METHOD method_1_8433 teleportByPortal (Lnet/minecraft/class_3218;Lnet/minecraft/class_5454;)V
+		ARG 1 world
+		ARG 2 teleportTarget
 	METHOD method_5622 onBlockCollision (Lnet/minecraft/class_2680;)V
 		COMMENT Called when this entity's collision box intersects {@code state}.
 		COMMENT

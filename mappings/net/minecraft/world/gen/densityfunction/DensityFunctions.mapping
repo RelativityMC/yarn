@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_6954 net/minecraft/world/gen/densityfunction/DensityFunctions
+	FIELD field_1_9125 OVERWORLD_AMPLIFIED Lnet/minecraft/class_1_1350;
+	FIELD field_1_9126 OVERWORLD_LARGE_BIOMES Lnet/minecraft/class_1_1350;
+	FIELD field_1_9133 OVERWORLD_DEFAULT Lnet/minecraft/class_1_1350;
 	FIELD field_36618 TEN_FUNCTION Lnet/minecraft/class_6910;
 	FIELD field_36619 ZERO_FUNCTION Lnet/minecraft/class_6910;
 	FIELD field_61475 WORLD_BOTTOM_Y I
@@ -8,6 +11,28 @@ CLASS net/minecraft/class_6954 net/minecraft/world/gen/densityfunction/DensityFu
 	FIELD field_61479 BOTTOM_RELATIVE_SLIDE_MAX_Y I
 	METHOD method_1_2720 createVeinGapRouter (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6953;
 		ARG 0 function
+	METHOD method_1_8785 createOreVeinMaskNoise (Lnet/minecraft/class_7871;Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;II)Lnet/minecraft/class_6910;
+		ARG 0 noiseParameterLookup
+		ARG 1 y
+		ARG 2 oreVeinToggleOverworld
+		ARG 3 minCellY
+		ARG 4 maxCellY
+	METHOD method_1_8786 createOreVeinDensityNoise (Lnet/minecraft/class_6955$class_6354;Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;Z)Lnet/minecraft/class_6910;
+		ARG 0 veinType
+		ARG 1 y
+		ARG 2 oreVeinToggleOverworld
+		ARG 3 oreVeinMaskOverworld
+		ARG 4 noInvertOreVeinToggle
+	METHOD method_1_8787 (Lnet/minecraft/class_7871;Lnet/minecraft/class_5321;)Lnet/minecraft/class_6910;
+		ARG 1 registryKey
+	METHOD method_1_8788 createAquiferConfig (Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;Lnet/minecraft/class_1_1350;)Lnet/minecraft/class_6350$class_1_1311;
+		ARG 0 densityFunctionLookup
+		ARG 1 noiseParameterLookup
+		ARG 2 noiseSet
+	METHOD method_1_8789 createOreVeinConfigs (Lnet/minecraft/class_7871;)Ljava/util/List;
+		ARG 0 densityFunctionLookup
+	METHOD method_1_8790 registerOreVeinFunctions (Lnet/minecraft/class_7891;)V
+		ARG 0 densityFunctionRegisterable
 	METHOD method_40539 verticalRangeChoice (Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;III)Lnet/minecraft/class_6910;
 		ARG 0 y
 		ARG 1 whenInRange
@@ -32,6 +57,7 @@ CLASS net/minecraft/class_6954 net/minecraft/world/gen/densityfunction/DensityFu
 		COMMENT @return the created {@code NoiseRouter}
 		ARG 0 densityFunctionLookup
 		ARG 1 noiseParametersLookup
+		ARG 2 noiseSet
 		ARG 3 amplified
 	METHOD method_41109 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
 		ARG 0 id
@@ -76,6 +102,7 @@ CLASS net/minecraft/class_6954 net/minecraft/world/gen/densityfunction/DensityFu
 		ARG 2 jaggedNoise
 		ARG 3 continents
 		ARG 4 erosion
+		ARG 5 noiseSet
 		ARG 6 amplified
 	METHOD method_41549 createCavesNoiseRouter (Lnet/minecraft/class_7871;)Lnet/minecraft/class_6953;
 		COMMENT Creates the {@link NoiseRouter} for the caves world type.

@@ -51,6 +51,8 @@ CLASS net/minecraft/class_10444 net/minecraft/client/render/item/ItemRenderState
 			ARG 1 matrix
 		METHOD method_1_2808 setModelTransform (Lorg/joml/Matrix4fc;)V
 			ARG 1 modelTransform
+		METHOD method_1_8860 setQuads (Lnet/minecraft/class_1_1348;)V
+			ARG 1 quads
 		METHOD method_65612 clear ()V
 		METHOD method_65613 initTints ()Lit/unimi/dsi/fastutil/ints/IntList;
 		METHOD method_65614 render (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;III)V

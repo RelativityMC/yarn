@@ -1,4 +1,8 @@
 CLASS net/minecraft/class_2589 net/minecraft/block/entity/BrewingStandBlockEntity
+	FIELD field_1_8732 matchGetter Lnet/minecraft/class_1863$class_7266;
+	FIELD field_1_9256 speedMultiplier F
+	FIELD field_1_9257 totalBrewTime I
+	FIELD field_1_9258 totalFuel I
 	FIELD field_11878 brewTime I
 	FIELD field_11879 BOTTOM_SLOTS [I
 	FIELD field_11880 SIDE_SLOTS [I
@@ -20,11 +24,34 @@ CLASS net/minecraft/class_2589 net/minecraft/block/entity/BrewingStandBlockEntit
 	METHOD <init> (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
 		ARG 1 pos
 		ARG 2 state
+	METHOD method_1_8915 createContext (Lnet/minecraft/class_3218;)Lnet/minecraft/class_47;
+		ARG 1 world
+	METHOD method_1_8916 getValue (Lnet/minecraft/class_3218;Ljava/lang/Object;Ljava/util/function/Function;F)F
+		ARG 1 world
+		ARG 2 component
+		ARG 3 getter
+		ARG 4 defaultValue
+	METHOD method_1_8917 getValue (Lnet/minecraft/class_3218;Ljava/lang/Object;Ljava/util/function/Function;I)I
+		ARG 1 world
+		ARG 2 component
+		ARG 3 getter
+		ARG 4 defaultValue
+	METHOD method_1_8918 getSpeedMultiplier (Lnet/minecraft/class_3218;Lnet/minecraft/class_1_1319;)F
+		ARG 1 world
+		ARG 2 component
+	METHOD method_1_8919 getUses (Lnet/minecraft/class_3218;Lnet/minecraft/class_1_1319;)I
+		ARG 1 world
+		ARG 2 component
 	METHOD method_11027 canCraft (Lnet/minecraft/class_3218;Lnet/minecraft/class_2589;)Z
+		ARG 0 world
+		ARG 1 blockEntity
 	METHOD method_11028 getSlotsEmpty ()[Z
 	METHOD method_11029 craft (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_2589;)V
+		ARG 0 world
 		ARG 1 pos
+		ARG 2 blockEntity
 	METHOD method_31665 tick (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2589;)V
+		ARG 0 world
 		ARG 1 pos
 		ARG 2 state
 		ARG 3 blockEntity

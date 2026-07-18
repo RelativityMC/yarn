@@ -6,6 +6,9 @@ CLASS net/minecraft/class_12193 net/minecraft/world/attribute/EnvironmentAttribu
 		ARG 0 angle
 	METHOD method_1_2953 (Ljava/lang/Integer;)F
 		ARG 0 value
+	METHOD method_1_8646 (Lnet/minecraft/class_4761;F)Lnet/minecraft/class_4761;
+		ARG 0 particle
+		ARG 1 factor
 	METHOD method_75636 register (Ljava/lang/String;Lnet/minecraft/class_12192;)Lnet/minecraft/class_12192;
 		ARG 0 path
 		ARG 1 type

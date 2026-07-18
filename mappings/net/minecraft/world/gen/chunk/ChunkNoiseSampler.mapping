@@ -106,6 +106,8 @@ CLASS net/minecraft/class_6568 net/minecraft/world/gen/chunk/ChunkNoiseSampler
 		ARG 4 fluidLevelSampler
 		ARG 5 blender
 	METHOD method_39899 calculateSurfaceHeightEstimate (II)I
+		ARG 1 x
+		ARG 2 z
 	METHOD method_40529 getActualDensityFunction (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
 		COMMENT {@return the actual density function for a given density function}
 		COMMENT
@@ -181,6 +183,9 @@ CLASS net/minecraft/class_6568 net/minecraft/world/gen/chunk/ChunkNoiseSampler
 		METHOD method_1_150 sample (Lnet/minecraft/class_6910$class_6912;)Lnet/minecraft/class_2680;
 			ARG 1 pos
 	CLASS class_6920 BlendDensity
+		FIELD field_1_6076 delegate Lnet/minecraft/class_6910;
+		METHOD <init> (Lnet/minecraft/class_6568;Lnet/minecraft/class_6910;)V
+			ARG 2 delegate
 	CLASS class_6946 BlendAlphaDensityFunction
 	CLASS class_6947 BlendOffsetDensityFunction
 	CLASS class_6948 Cache2D

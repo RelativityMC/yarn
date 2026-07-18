@@ -1,0 +1,87 @@
+CLASS net/minecraft/class_1_1227 com/mojang/blaze3d/systems/RenderPassImpl
+	COMMENT Wraps a {@link com.mojang.blaze3d.systems.RenderPassBackend} to provide
+	COMMENT extra run-time checks.
+	FIELD field_1_8520 backend Lnet/minecraft/class_1_149;
+	FIELD field_1_8521 colorAttachments Ljava/util/List;
+	FIELD field_1_8522 features Lnet/minecraft/class_1_893;
+	FIELD field_1_8523 gpuBackend Lnet/minecraft/class_1_147;
+	FIELD field_1_8524 limits Lnet/minecraft/class_1_684;
+	FIELD field_1_8525 closed Z
+	FIELD field_1_8526 onFinish Ljava/lang/Runnable;
+	FIELD field_1_8527 numPushedDebugGroups I
+	FIELD field_1_8528 renderArea Lnet/minecraft/class_1_1317$class_1_837;
+	METHOD <init> (Lnet/minecraft/class_1_149;Lnet/minecraft/class_1_147;Ljava/util/List;Ljava/lang/Runnable;Lnet/minecraft/class_1_1317$class_1_837;)V
+		ARG 1 backend
+		ARG 2 device
+		ARG 3 colorAttachments
+		ARG 4 onFinish
+		ARG 5 renderArea
+	METHOD method_1_7792 (Ljava/lang/String;Lnet/minecraft/class_1_1330;Lnet/minecraft/class_12137;)V
+		ARG 1 name
+		ARG 3 sampler
+	METHOD method_1_7794 (IIII)V
+		ARG 1 vertexCount
+		ARG 2 instanceCount
+		ARG 3 firstVertex
+		ARG 4 firstInstance
+	METHOD method_1_7795 (IIIII)V
+		ARG 1 indexCount
+		ARG 2 instanceCount
+		ARG 3 firstIndex
+		ARG 4 vertexOffset
+		ARG 5 firstInstance
+	METHOD method_1_7796 (Lnet/minecraft/class_1_1254;I)V
+		ARG 1 buffer
+		ARG 2 drawCount
+	METHOD method_1_7797 (Lnet/minecraft/class_1_1254;I)V
+		ARG 1 buffer
+		ARG 2 drawCount
+	METHOD method_1_7798 (Ljava/util/Collection;Lnet/minecraft/class_1_1211;Lnet/minecraft/class_5595;Ljava/util/Collection;Ljava/lang/Object;)V
+		ARG 1 objects
+		ARG 2 buffer
+		ARG 3 indexType
+		ARG 4 validationSkippedUniforms
+		ARG 5 uniformArgument
+	METHOD method_1_7799 (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+	METHOD method_1_7800 (Ljava/nio/IntBuffer;III)V
+		ARG 1 vertexInfo
+		ARG 2 instanceCount
+		ARG 3 firstInstance
+		ARG 4 drawCount
+	METHOD method_1_7801 (Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;I)V
+		ARG 1 first
+		ARG 2 count
+		ARG 3 drawCount
+	METHOD method_1_7802 (Ljava/nio/IntBuffer;III)V
+		ARG 1 indexInfo
+		ARG 2 instanceCount
+		ARG 3 firstInstance
+		ARG 4 drawCount
+	METHOD method_1_7803 (Lorg/lwjgl/PointerBuffer;Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;I)V
+		ARG 1 indices
+		ARG 2 count
+		ARG 3 first
+		ARG 4 drawCount
+	METHOD method_1_7805 (Ljava/util/function/Supplier;)V
+		ARG 1 labelGetter
+	METHOD method_1_7806 (Lnet/minecraft/class_1_1211;Lnet/minecraft/class_5595;)V
+		ARG 1 indexBuffer
+		ARG 2 indexType
+	METHOD method_1_7807 (Lnet/minecraft/class_1_1285;)V
+		ARG 1 compiledPipeline
+	METHOD method_1_7808 (Ljava/lang/String;Lnet/minecraft/class_1_1211;)V
+		ARG 1 name
+		ARG 2 buffer
+	METHOD method_1_7809 (Ljava/lang/String;Lnet/minecraft/class_1_1254;)V
+		ARG 1 name
+		ARG 2 slice
+	METHOD method_1_7810 (ILnet/minecraft/class_1_1254;)V
+		ARG 1 slot
+		ARG 2 vertexBuffer
+	METHOD method_1_7811 (Lnet/minecraft/class_1_685;I)V
+		ARG 1 timestampQueryPool
+		ARG 2 index

@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_1346 net/minecraft/util/profiling/jfr/event/PacketSentEvent
+	FIELD field_1_9190 NAME Ljava/lang/String;
+	FIELD field_1_9191 EVENT_TYPE Ljdk/jfr/EventType;

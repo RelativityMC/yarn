@@ -47,6 +47,8 @@ CLASS net/minecraft/class_6012 net/minecraft/util/collection/WeightedPool
 		ARG 0 entryCodec
 	CLASS class_6006 Builder
 		FIELD field_29926 entries Lcom/google/common/collect/ImmutableList$Builder;
+		METHOD method_1_8479 addAll (Lnet/minecraft/class_6012;)Lnet/minecraft/class_6012$class_6006;
+			ARG 1 pool
 		METHOD method_34974 build ()Lnet/minecraft/class_6012;
 		METHOD method_34975 add (Ljava/lang/Object;I)Lnet/minecraft/class_6012$class_6006;
 			ARG 1 object

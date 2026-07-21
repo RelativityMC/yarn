@@ -1,8 +1,4 @@
 CLASS net/minecraft/class_1_149 com/mojang/blaze3d/systems/RenderPassBackend
-	METHOD method_1_1325 bindTexture (Ljava/lang/String;Lnet/minecraft/class_1_1330;Lnet/minecraft/class_12137;)V
-		ARG 1 name
-		ARG 2 textureView
-		ARG 3 sampler
 	METHOD method_1_1326 disableScissor ()V
 	METHOD method_1_1327 draw (IIII)V
 		ARG 1 vertexCount
@@ -15,12 +11,6 @@ CLASS net/minecraft/class_1_149 com/mojang/blaze3d/systems/RenderPassBackend
 		ARG 3 firstIndex
 		ARG 4 vertexOffset
 		ARG 5 firstInstance
-	METHOD method_1_1329 drawMultipleIndexed (Ljava/util/Collection;Lnet/minecraft/class_1_1211;Lnet/minecraft/class_5595;Ljava/util/Collection;Ljava/lang/Object;)V
-		ARG 1 objects
-		ARG 2 buffer
-		ARG 3 indexType
-		ARG 4 validationSkippedUniforms
-		ARG 5 uniformArgument
 	METHOD method_1_1330 enableScissor (IIII)V
 		ARG 1 x
 		ARG 2 y
@@ -32,14 +22,8 @@ CLASS net/minecraft/class_1_149 com/mojang/blaze3d/systems/RenderPassBackend
 	METHOD method_1_1334 setIndexBuffer (Lnet/minecraft/class_1_1211;Lnet/minecraft/class_5595;)V
 		ARG 1 indexBuffer
 		ARG 2 indexType
-	METHOD method_1_1335 setPipeline (Lnet/minecraft/class_1_1285;)V
+	METHOD method_1_1335 setPipeline (Lnet/minecraft/class_1_1386;)V
 		ARG 1 pipeline
-	METHOD method_1_1336 setUniform (Ljava/lang/String;Lnet/minecraft/class_1_1211;)V
-		ARG 1 name
-		ARG 2 buffer
-	METHOD method_1_1337 setUniform (Ljava/lang/String;Lnet/minecraft/class_1_1254;)V
-		ARG 1 name
-		ARG 2 slice
 	METHOD method_1_1338 setVertexBuffer (ILnet/minecraft/class_1_1254;)V
 		ARG 1 slot
 		ARG 2 vertexBuffer

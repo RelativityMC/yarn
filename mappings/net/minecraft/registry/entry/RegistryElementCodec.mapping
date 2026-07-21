@@ -24,10 +24,7 @@ CLASS net/minecraft/class_5381 net/minecraft/registry/entry/RegistryElementCodec
 		ARG 3 prefix
 	METHOD method_29746 (Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/datafixers/util/Pair;
 		ARG 0 pair
-	METHOD method_29749 of (Lnet/minecraft/class_5321;Lcom/mojang/serialization/Codec;)Lnet/minecraft/class_5381;
-		ARG 0 registryRef
-		ARG 1 elementCodec
-	METHOD method_31192 of (Lnet/minecraft/class_5321;Lcom/mojang/serialization/Codec;Z)Lnet/minecraft/class_5381;
+	METHOD method_31192 of (Lnet/minecraft/class_5321;Lcom/mojang/serialization/Codec;Z)Lcom/mojang/serialization/Codec;
 		ARG 0 registryRef
 		ARG 1 elementCodec
 		ARG 2 allowInlineDefinitions

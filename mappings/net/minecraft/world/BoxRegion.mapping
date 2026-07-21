@@ -1,9 +1,6 @@
 CLASS net/minecraft/class_1_1338 net/minecraft/world/BoxRegion
 	FIELD field_1_9155 minPos Lnet/minecraft/class_2338;
 	FIELD field_1_9156 maxPos Lnet/minecraft/class_2338;
-	METHOD <init> (Lnet/minecraft/class_4538;Lnet/minecraft/class_238;)V
-		ARG 1 world
-		ARG 2 box
 	METHOD <init> (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;)V
 		ARG 1 world
 		ARG 2 minPos

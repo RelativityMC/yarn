@@ -1,28 +1,2 @@
 CLASS net/minecraft/class_1_709 net/minecraft/client/vulkan/SpirvShaderCompiler
-	FIELD field_1_3639 defines Lnet/minecraft/class_10149;
 	FIELD field_1_3640 compiler J
-	FIELD field_1_3641 compileOptions J
-	METHOD method_1_4228 extractPipelineLayoutEntries (Ljava/util/List;Lnet/minecraft/class_1_753;Lnet/minecraft/class_1_1257;)V
-		ARG 0 pipelineLayoutEntriesOut
-		ARG 1 shader
-		ARG 2 pipeline
-	METHOD method_1_4229 createShaderPipeline (Lnet/minecraft/class_1_679;Lnet/minecraft/class_1_1257;Lnet/minecraft/class_1_753;Lnet/minecraft/class_1_753;)Lnet/minecraft/class_1_709$class_1_710;
-		ARG 1 backend
-		ARG 2 pipeline
-		ARG 3 vertexShader
-		ARG 4 fragmentShader
-	METHOD method_1_4230 compile (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/class_1_1229;)Lnet/minecraft/class_1_753;
-		ARG 1 name
-		ARG 2 source
-		ARG 3 shaderType
-	METHOD method_1_4231 (Ljava/lang/String;Lnet/minecraft/class_1_794$class_1_796;)Z
-		ARG 1 uniform
-	METHOD method_1_4232 (Ljava/lang/String;Lnet/minecraft/class_1_721$class_1_722;)Z
-		ARG 1 entry
-	METHOD method_1_4233 (Ljava/lang/String;Lnet/minecraft/class_1_794$class_1_796;)Z
-		ARG 1 uniform
-	METHOD method_1_4234 (Ljava/lang/String;Lnet/minecraft/class_1_721$class_1_722;)Z
-		ARG 1 entry
-	METHOD method_1_4235 (Ljava/lang/String;Lnet/minecraft/class_1_721$class_1_722;)Z
-		ARG 1 entry
-	CLASS class_1_710 ShaderPipeline

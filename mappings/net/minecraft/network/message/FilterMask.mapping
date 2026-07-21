@@ -6,9 +6,6 @@ CLASS net/minecraft/class_7649 net/minecraft/network/message/FilterMask
 	FIELD field_39945 status Lnet/minecraft/class_7649$class_7650;
 	FIELD field_40674 FILTERED_STYLE Lnet/minecraft/class_2583;
 	FIELD field_40837 CODEC Lcom/mojang/serialization/Codec;
-	FIELD field_40838 PASS_THROUGH_CODEC Lcom/mojang/serialization/MapCodec;
-	FIELD field_40839 FULLY_FILTERED_CODEC Lcom/mojang/serialization/MapCodec;
-	FIELD field_40840 PARTIALLY_FILTERED_CODEC Lcom/mojang/serialization/MapCodec;
 	METHOD <init> (I)V
 		ARG 1 length
 	METHOD <init> (Ljava/util/BitSet;)V
@@ -23,11 +20,6 @@ CLASS net/minecraft/class_7649 net/minecraft/network/message/FilterMask
 		ARG 1 index
 	METHOD method_45089 filter (Ljava/lang/String;)Ljava/lang/String;
 		ARG 1 raw
-	METHOD method_45090 readMask (Lnet/minecraft/class_2540;)Lnet/minecraft/class_7649;
-		ARG 0 buf
-	METHOD method_45091 writeMask (Lnet/minecraft/class_2540;Lnet/minecraft/class_7649;)V
-		ARG 0 buf
-		ARG 1 mask
 	METHOD method_45093 isFullyFiltered ()Z
 	METHOD method_46256 getFilteredText (Ljava/lang/String;)Lnet/minecraft/class_2561;
 		ARG 1 message
@@ -36,7 +28,6 @@ CLASS net/minecraft/class_7649 net/minecraft/network/message/FilterMask
 	CLASS class_7650 FilterStatus
 		FIELD field_40841 id Ljava/lang/String;
 		FIELD field_40842 codecSupplier Ljava/util/function/Supplier;
-		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Ljava/util/function/Supplier;)V
-			ARG 3 id
-			ARG 4 codecSupplier
+		METHOD <init> (Ljava/lang/String;IILjava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Supplier;)V
+			ARG 5 codecSupplier
 		METHOD method_46602 getCodec ()Lcom/mojang/serialization/MapCodec;

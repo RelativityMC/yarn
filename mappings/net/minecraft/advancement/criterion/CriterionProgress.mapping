@@ -3,10 +3,6 @@ CLASS net/minecraft/class_178 net/minecraft/advancement/criterion/CriterionProgr
 	METHOD <init> (Ljava/time/Instant;)V
 		ARG 1 obtainedTime
 	METHOD method_784 isObtained ()Z
-	METHOD method_785 fromPacket (Lnet/minecraft/class_2540;)Lnet/minecraft/class_178;
-		ARG 0 buf
 	METHOD method_786 getObtainedTime ()Ljava/time/Instant;
-	METHOD method_787 toPacket (Lnet/minecraft/class_2540;)V
-		ARG 1 buf
 	METHOD method_789 obtain ()V
 	METHOD method_790 reset ()V

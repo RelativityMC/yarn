@@ -1,10 +1,7 @@
 CLASS net/minecraft/class_10867 net/minecraft/client/gl/GlCompiledRenderPipeline
 	FIELD field_1_7975 closed Z
 	FIELD field_1_7976 backend Lnet/minecraft/class_10865;
-	FIELD field_1_7977 renderPipeline Lnet/minecraft/class_1_1257;
 	FIELD field_1_7978 shaderProgram Lnet/minecraft/class_5944;
-	METHOD <init> (Lnet/minecraft/class_10865;Lnet/minecraft/class_1_1257;Lnet/minecraft/class_5944;)V
+	METHOD <init> (Lnet/minecraft/class_10865;Lnet/minecraft/class_1_1386$class_1_1387;Lnet/minecraft/class_5944;Lnet/minecraft/class_10869;)V
 		ARG 1 backend
-		ARG 2 renderPipeline
-		ARG 3 shaderProgram
 	METHOD method_1_7327 getShaderProgram ()Lnet/minecraft/class_5944;

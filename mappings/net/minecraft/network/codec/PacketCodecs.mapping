@@ -349,42 +349,42 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 	CLASS 5 5
 	CLASS 9 9
 	CLASS 10 10
-	CLASS 17 17
+	CLASS 19 19
 		METHOD method_71604 (Ljava/lang/Object;Ljava/lang/String;)Lio/netty/handler/codec/EncoderException;
 			ARG 1 error
 		METHOD method_71605 (Ljava/lang/Object;Ljava/lang/String;)Lio/netty/handler/codec/DecoderException;
 			ARG 1 error
-	CLASS 18 18
+	CLASS 20 20
 		METHOD method_71606 (Ljava/lang/Object;Ljava/lang/String;)Lio/netty/handler/codec/EncoderException;
 			ARG 1 error
 		METHOD method_71607 (Lnet/minecraft/class_2520;Ljava/lang/String;)Lio/netty/handler/codec/DecoderException;
 			ARG 1 error
-	CLASS 19 19
-	CLASS 22 22
+	CLASS 21 21
 	CLASS 24 24
 	CLASS 26 26
+	CLASS 28 28
 		METHOD method_72190 (Lnet/minecraft/class_9139;Lio/netty/buffer/ByteBuf;Lnet/minecraft/class_9139;Ljava/lang/Object;Ljava/lang/Object;)V
 			ARG 3 k
 			ARG 4 v
-	CLASS 27 27
+	CLASS 29 29
 		METHOD method_71582 (Lio/netty/buffer/ByteBuf;Lnet/minecraft/class_9139;Ljava/lang/Object;)V
 			ARG 2 right
 		METHOD method_71583 (Lio/netty/buffer/ByteBuf;Lnet/minecraft/class_9139;Ljava/lang/Object;)V
 			ARG 2 left
-	CLASS 29 29
-	CLASS 30 30
+	CLASS 31 31
+	CLASS 32 32
 		METHOD method_71590 getRegistryContents (Lnet/minecraft/class_9129;)Lnet/minecraft/class_2359;
 			ARG 1 buf
-	CLASS 31 31
+	CLASS 33 33
 		FIELD field_61045 DIRECT_ID I
 		METHOD method_72191 getRegistryContents (Lnet/minecraft/class_9129;)Lnet/minecraft/class_2359;
 			ARG 1 buf
-	CLASS 32 32
+	CLASS 34 34
 		FIELD field_61046 TAG I
 		FIELD field_61047 ELEMENT_CODEC Lnet/minecraft/class_9139;
-	CLASS 33 33
+	CLASS 35 35
 		METHOD method_71596 (Lio/netty/buffer/ByteBuf;Ljava/lang/String;)V
 			ARG 0 buf
 			ARG 1 signature
-	CLASS 35 35
+	CLASS 37 37
 		FIELD field_60514 GSON Lcom/google/gson/Gson;

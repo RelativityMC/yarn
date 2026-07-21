@@ -21,9 +21,8 @@ CLASS net/minecraft/class_9335 net/minecraft/component/MergedComponentMap
 		ARG 1 changes
 	METHOD method_57936 applyChanges (Lnet/minecraft/class_9326;)V
 		ARG 1 changes
-	METHOD method_57937 applyChange (Lnet/minecraft/class_9331;Ljava/util/Optional;)V
+	METHOD method_57937 applyChange (Lnet/minecraft/class_9331;Ljava/lang/Object;)V
 		ARG 1 type
-		ARG 2 optional
 	METHOD method_57938 set (Lnet/minecraft/class_9331;Ljava/lang/Object;)Ljava/lang/Object;
 		ARG 1 type
 		ARG 2 value

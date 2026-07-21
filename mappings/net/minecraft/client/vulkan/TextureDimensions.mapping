@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_1_690 net/minecraft/client/vulkan/TextureDimensions
-	METHOD method_1_4161 describeDimensions (I)Ljava/lang/String;
-		ARG 0 dimensions

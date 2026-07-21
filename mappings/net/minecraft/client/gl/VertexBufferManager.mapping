@@ -1,30 +1,8 @@
 CLASS net/minecraft/class_10869 net/minecraft/client/gl/VertexBufferManager
-	METHOD method_68428 setupBuffer ([Lnet/minecraft/class_1_1232;[Lnet/minecraft/class_1_1254;Lnet/minecraft/class_10869$class_10872;)Lnet/minecraft/class_10869$class_10872;
-		ARG 1 vertexFormatBindings
-		ARG 2 vertexBuffers
-		ARG 3 previousBuffer
-	METHOD method_68429 create (Lorg/lwjgl/opengl/GLCapabilities;Lnet/minecraft/class_10861;Ljava/util/Set;)Lnet/minecraft/class_10869;
+	METHOD method_68428 setupBuffer ([Lnet/minecraft/class_1_1254;)V
+	METHOD method_68429 create (Lorg/lwjgl/opengl/GLCapabilities;Ljava/util/Set;)Ljava/util/function/BiFunction;
 		ARG 0 capabilities
-		ARG 1 labeler
-		ARG 2 usedCapabilities
+		ARG 1 usedCapabilities
 	CLASS class_10870 DefaultVertexBufferManager
-		FIELD field_57889 cache Ljava/util/Map;
-		FIELD field_57890 labeler Lnet/minecraft/class_10861;
-		METHOD <init> (Lnet/minecraft/class_10861;)V
-			ARG 1 labeler
-		METHOD method_68430 setupBuffer ([Lnet/minecraft/class_1_1232;Z[Lnet/minecraft/class_1_1254;)V
-			ARG 0 vertexFormatBindings
-			ARG 1 vbaIsNew
-			ARG 2 vertexBuffers
 	CLASS class_10871 ARBVertexBufferManager
-		FIELD field_57891 cache Ljava/util/Map;
-		FIELD field_57892 labeler Lnet/minecraft/class_10861;
 		FIELD field_60021 applyMesaWorkaround Z
-		METHOD <init> (Lnet/minecraft/class_10861;)V
-			ARG 1 labeler
-	CLASS class_10872 AllocatedBuffer
-		FIELD field_1_6300 vertexFormatDescription Ljava/lang/String;
-		FIELD field_57893 glId I
-		METHOD <init> (I[Lnet/minecraft/class_1_1232;)V
-			ARG 1 glId
-			ARG 2 vertexFormats

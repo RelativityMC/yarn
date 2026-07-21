@@ -23,8 +23,4 @@ CLASS net/minecraft/class_9449 net/minecraft/network/packet/c2s/play/ChatCommand
 	COMMENT @see net.minecraft.server.network.ServerPlayNetworkHandler#onCommandExecution
 	FIELD comp_2533 timestamp Ljava/time/Instant;
 	FIELD field_50087 CODEC Lnet/minecraft/class_9139;
-	METHOD <init> (Lnet/minecraft/class_2540;)V
-		ARG 1 buf
 	METHOD comp_2533 timestamp ()Ljava/time/Instant;
-	METHOD method_58582 write (Lnet/minecraft/class_2540;)V
-		ARG 1 buf

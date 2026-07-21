@@ -55,8 +55,6 @@ CLASS net/minecraft/class_7594 net/minecraft/client/network/message/MessageHandl
 		COMMENT @see net.minecraft.client.util.NarratorManager#narrateChatMessage
 		ARG 1 params
 		ARG 2 message
-	METHOD method_44775 shouldDelay ()Z
-		COMMENT {@return if the chat delay is set and the message should be delayed}
 	METHOD method_44818 process (Lnet/minecraft/class_7469;Ljava/util/function/BooleanSupplier;)V
 		COMMENT Queues {@code processor} during {@linkplain #shouldDelay the chat delay},
 		COMMENT otherwise runs the processor.

@@ -24,8 +24,6 @@ CLASS net/minecraft/class_7428 net/minecraft/network/encryption/PlayerPublicKey
 	CLASS class_7443 PublicKeyData
 		FIELD field_39119 CODEC Lcom/mojang/serialization/Codec;
 		FIELD field_39309 KEY_SIGNATURE_MAX_SIZE I
-		METHOD <init> (Lnet/minecraft/class_2540;)V
-			ARG 1 buf
 		METHOD equals (Ljava/lang/Object;)Z
 			ARG 1 o
 		METHOD method_43701 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
@@ -33,8 +31,6 @@ CLASS net/minecraft/class_7428 net/minecraft/network/encryption/PlayerPublicKey
 		METHOD method_43702 toSerializedString (Ljava/util/UUID;)[B
 			ARG 1 playerUuid
 		METHOD method_43704 isExpired ()Z
-		METHOD method_44011 write (Lnet/minecraft/class_2540;)V
-			ARG 1 buf
 		METHOD method_44205 verifyKey (Lnet/minecraft/class_7500;Ljava/util/UUID;)Z
 			ARG 1 servicesSignatureVerifier
 			ARG 2 playerUuid

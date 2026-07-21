@@ -4,7 +4,6 @@ CLASS net/minecraft/class_1934 net/minecraft/world/GameMode
 	FIELD field_28045 DEFAULT Lnet/minecraft/class_1934;
 	FIELD field_28046 simpleTranslatableName Lnet/minecraft/class_2561;
 	FIELD field_28047 translatableName Lnet/minecraft/class_2561;
-	FIELD field_30964 UNKNOWN I
 	FIELD field_41676 CODEC Lnet/minecraft/class_3542$class_7292;
 	FIELD field_41677 INDEX_MAPPER Ljava/util/function/IntFunction;
 	FIELD field_56668 INDEX_CODEC Lcom/mojang/serialization/Codec;
@@ -27,10 +26,6 @@ CLASS net/minecraft/class_1934 net/minecraft/world/GameMode
 	METHOD method_8386 isCreative ()Z
 	METHOD method_8387 isBlockBreakingRestricted ()Z
 	METHOD method_8388 isSurvivalLike ()Z
-	METHOD method_32761 getId (Lnet/minecraft/class_1934;)I
-		ARG 0 gameMode
-	METHOD method_32762 getOrNull (I)Lnet/minecraft/class_1934;
-		ARG 0 index
 	METHOD method_32763 getSimpleTranslatableName ()Lnet/minecraft/class_2561;
 	METHOD method_64759 (ILnet/minecraft/class_1934;)Z
 		ARG 1 gameMode

@@ -3,27 +3,21 @@ CLASS net/minecraft/class_10866 net/minecraft/client/gl/GlRenderPassBackend
 	FIELD field_1_5954 defaultScissorState Lnet/minecraft/class_11219;
 	FIELD field_1_6269 numColorAttachments I
 	FIELD field_1_6270 dirty Z
-	FIELD field_57867 IS_DEVELOPMENT Z
 	FIELD field_57868 pipeline Lnet/minecraft/class_10867;
 	FIELD field_57869 vertexBuffers [Lnet/minecraft/class_1_1254;
 	FIELD field_57870 indexBuffer Lnet/minecraft/class_1_1211;
 	FIELD field_57871 indexType Lnet/minecraft/class_5595;
 	FIELD field_57872 scissorState Lnet/minecraft/class_11219;
-	FIELD field_57873 simpleUniforms Ljava/util/HashMap;
-	FIELD field_57874 samplerUniforms Ljava/util/HashMap;
-	FIELD field_57875 setSimpleUniforms Ljava/util/Set;
+	FIELD field_57873 simpleUniforms Lit/unimi/dsi/fastutil/objects/ReferenceList;
+	FIELD field_57875 setSimpleUniforms Lit/unimi/dsi/fastutil/booleans/BooleanList;
 	FIELD field_57877 commandEncoder Lnet/minecraft/class_10860;
-	FIELD field_57878 hasDepth Z
-	METHOD <init> (Lnet/minecraft/class_10860;Lnet/minecraft/class_10865;ZILnet/minecraft/class_11219;)V
+	METHOD <init> (Lnet/minecraft/class_10860;Lnet/minecraft/class_10865;ILnet/minecraft/class_11219;)V
 		ARG 1 commandEncoder
 		ARG 2 device
-		ARG 3 hasDepth
-		ARG 4 numColorAttachments
-		ARG 5 defaultScissorState
-	METHOD method_68407 hasDepth ()Z
+		ARG 3 numColorAttachments
+		ARG 4 defaultScissorState
 	METHOD method_70808 isScissorEnabled ()Z
 	METHOD method_70809 getScissorX ()I
 	METHOD method_70810 getScissorY ()I
 	METHOD method_70811 getScissorWidth ()I
 	METHOD method_70812 getScissorHeight ()I
-	CLASS class_12133 SamplerUniform

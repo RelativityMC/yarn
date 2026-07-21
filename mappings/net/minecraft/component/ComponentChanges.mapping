@@ -23,14 +23,12 @@ CLASS net/minecraft/class_9326 net/minecraft/component/ComponentChanges
 		ARG 0 changes
 	METHOD method_57844 (Lnet/minecraft/class_9326;)Ljava/util/Map;
 		ARG 0 changes
-	METHOD method_57846 entrySet ()Ljava/util/Set;
 	METHOD method_57847 size ()I
 	METHOD method_57848 isEmpty ()Z
 	METHOD method_58757 withRemovedIf (Ljava/util/function/Predicate;)Lnet/minecraft/class_9326;
 		ARG 1 removedTypePredicate
-	METHOD method_58758 (Lnet/minecraft/class_9323$class_9324;Ljava/util/Set;Lnet/minecraft/class_9331;Ljava/util/Optional;)V
+	METHOD method_58758 (Lnet/minecraft/class_9323$class_9324;Ljava/util/Set;Lnet/minecraft/class_9331;Ljava/lang/Object;)V
 		ARG 2 type
-		ARG 3 value
 	METHOD method_58759 toAddedRemovedPair ()Lnet/minecraft/class_9326$class_9484;
 	METHOD method_68840 createPacketCodec (Lnet/minecraft/class_9326$class_10935;)Lnet/minecraft/class_9139;
 		ARG 0 packetCodecFunction

@@ -1,11 +1,5 @@
 CLASS net/minecraft/class_4896 net/minecraft/client/render/entity/model/ArmPosing
 	COMMENT Utility class to help posing arms.
-	METHOD method_1_4180 zombieArms (Lnet/minecraft/class_630;Lnet/minecraft/class_630;FZF)V
-		ARG 0 leftArm
-		ARG 1 rightArm
-		ARG 2 handSwingProgress
-		ARG 3 reverseYaw
-		ARG 4 pitch
 	METHOD method_25446 charge (Lnet/minecraft/class_630;Lnet/minecraft/class_630;FFZ)V
 		ARG 0 holdingArm
 		ARG 1 pullingArm

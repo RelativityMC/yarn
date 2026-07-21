@@ -13,8 +13,3 @@ CLASS net/minecraft/class_7822 net/minecraft/network/encryption/PublicPlayerSess
 		METHOD method_46300 toSession (Lcom/mojang/authlib/GameProfile;Lnet/minecraft/class_7500;)Lnet/minecraft/class_7822;
 			ARG 1 gameProfile
 			ARG 2 servicesSignatureVerifier
-		METHOD method_46301 fromBuf (Lnet/minecraft/class_2540;)Lnet/minecraft/class_7822$class_7823;
-			ARG 0 buf
-		METHOD method_46303 write (Lnet/minecraft/class_2540;Lnet/minecraft/class_7822$class_7823;)V
-			ARG 0 buf
-			ARG 1 serialized

@@ -3,7 +3,7 @@ CLASS net/minecraft/class_5900 net/minecraft/network/packet/s2c/play/TeamS2CPack
 		COMMENT Indicates the type of this packet. Is one of {@link #ADD}, {@link #REMOVE},
 		COMMENT {@link #UPDATE}, {@link #ADD_PLAYERS}, or {@link #REMOVE_PLAYERS}.
 	FIELD field_29152 teamName Ljava/lang/String;
-	FIELD field_29153 playerNames Ljava/util/Collection;
+	FIELD field_29153 playerNames Ljava/util/List;
 	FIELD field_29154 team Ljava/util/Optional;
 	FIELD field_33346 ADD I
 		COMMENT The {@link #packetType} that creates a new team with a few players. Has value

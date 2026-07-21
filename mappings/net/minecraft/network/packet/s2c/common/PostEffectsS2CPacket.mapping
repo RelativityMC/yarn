@@ -1,6 +1,2 @@
 CLASS net/minecraft/class_1_1290 net/minecraft/network/packet/s2c/common/PostEffectsS2CPacket
 	FIELD field_1_8757 PACKET_CODEC Lnet/minecraft/class_9139;
-	METHOD <init> (Lnet/minecraft/class_2540;)V
-		ARG 1 buf
-	METHOD method_1_8186 write (Lnet/minecraft/class_2540;)V
-		ARG 1 buf

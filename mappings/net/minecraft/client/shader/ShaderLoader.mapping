@@ -21,9 +21,6 @@ CLASS net/minecraft/class_10151 net/minecraft/client/shader/ShaderLoader
 	METHOD method_62941 loadPostEffect (Lnet/minecraft/class_2960;Ljava/util/Set;)Lnet/minecraft/class_279;
 		ARG 1 id
 		ARG 2 availableExternalTargets
-	METHOD method_62950 createImportProcessor (Ljava/util/Map;Lnet/minecraft/class_2960;)Lnet/minecraft/class_5913;
-		ARG 0 allResources
-		ARG 1 id
 	METHOD method_62952 isShaderSource (Lnet/minecraft/class_2960;)Z
 		ARG 0 id
 	METHOD method_62953 loadPostEffect (Lnet/minecraft/class_2960;Lnet/minecraft/class_3298;Lcom/google/common/collect/ImmutableMap$Builder;)V
@@ -34,10 +31,6 @@ CLASS net/minecraft/class_10151 net/minecraft/client/shader/ShaderLoader
 		ARG 1 exception
 	METHOD method_68497 (Lnet/minecraft/class_2960;)Ljava/lang/String;
 		ARG 0 id
-	CLASS 1 1
-		FIELD field_53947 processed Ljava/util/Set;
-		METHOD method_62957 (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-			ARG 1 path
 	CLASS class_10152 LoadException
 		METHOD <init> (Ljava/lang/String;)V
 			ARG 1 message

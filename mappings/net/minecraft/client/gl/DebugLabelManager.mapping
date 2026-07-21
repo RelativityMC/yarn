@@ -8,8 +8,6 @@ CLASS net/minecraft/class_10861 net/minecraft/client/gl/DebugLabelManager
 		ARG 1 shader
 	METHOD method_68374 labelGlTexture (Lnet/minecraft/class_10868;)V
 		ARG 1 texture
-	METHOD method_68375 labelAllocatedBuffer (Lnet/minecraft/class_10869$class_10872;)V
-		ARG 1 buffer
 	METHOD method_68376 create (Lorg/lwjgl/opengl/GLCapabilities;ZLjava/util/Set;)Lnet/minecraft/class_10861;
 		ARG 0 capabilities
 		ARG 1 debugEnabled

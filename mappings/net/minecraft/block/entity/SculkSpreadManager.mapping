@@ -72,7 +72,7 @@ CLASS net/minecraft/class_7128 net/minecraft/block/entity/SculkSpreadManager
 			ARG 0 world
 			ARG 1 pos
 			ARG 2 direction
-		METHOD method_41498 getSpreadPos (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)Lnet/minecraft/class_2338;
+		METHOD method_41498 getSpreadPos (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338;Lnet/minecraft/class_7128;)Lnet/minecraft/class_2338;
 			ARG 0 world
 			ARG 1 pos
 			ARG 2 random

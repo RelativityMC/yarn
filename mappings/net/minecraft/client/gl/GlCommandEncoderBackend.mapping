@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_10860 net/minecraft/client/gl/GlCommandEncoderBackend
-	FIELD field_1_6298 vertexBuffer Lnet/minecraft/class_10869$class_10872;
+	FIELD field_1_6298 vertexBuffer Lnet/minecraft/class_10867;
 	FIELD field_1_6299 colorAttachmentTextures Ljava/util/List;
 	FIELD field_1_6939 gpuBufferAllocator Lnet/minecraft/class_1_1014;
 	FIELD field_1_7067 NUM_SYNC_OBJECTS I
@@ -9,7 +9,6 @@ CLASS net/minecraft/class_10860 net/minecraft/client/gl/GlCommandEncoderBackend
 	FIELD field_57844 backend Lnet/minecraft/class_10865;
 	FIELD field_57845 temporaryFb1 I
 	FIELD field_57846 temporaryFb2 I
-	FIELD field_57847 currentPipeline Lnet/minecraft/class_1_1257;
 	FIELD field_57849 currentProgram Lnet/minecraft/class_5944;
 	METHOD <init> (Lnet/minecraft/class_10865;)V
 		ARG 1 backend
@@ -22,9 +21,6 @@ CLASS net/minecraft/class_10860 net/minecraft/client/gl/GlCommandEncoderBackend
 		ARG 3 buffer
 		ARG 4 offset
 		ARG 6 drawCount
-	METHOD method_1_5503 assertUsable (Lnet/minecraft/class_10866;Lnet/minecraft/class_5595;)V
-		ARG 1 renderPass
-		ARG 2 indexType
 	METHOD method_1_6148 multiDraw (Lnet/minecraft/class_10866;Lnet/minecraft/class_5595;Lorg/lwjgl/PointerBuffer;Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;I)V
 		ARG 1 pass
 		ARG 2 indexType
@@ -36,34 +32,9 @@ CLASS net/minecraft/class_10860 net/minecraft/client/gl/GlCommandEncoderBackend
 		ARG 1 index
 	METHOD method_1_6295 getSubmitIndex ()J
 	METHOD method_1_6296 getCurrentSyncIndex ()I
-	METHOD method_68351 setupRenderPass (Lnet/minecraft/class_10866;Ljava/util/Collection;)Z
+	METHOD method_68351 setupRenderPass (Lnet/minecraft/class_10866;)V
 		ARG 1 pass
-		ARG 2 validationSkippedUniforms
 	METHOD method_68352 draw (Lnet/minecraft/class_10866;IIILnet/minecraft/class_5595;II)V
 		ARG 1 pass
 		ARG 2 baseVertex
-		ARG 3 firstIndex
-		ARG 4 count
 		ARG 5 indexType
-		ARG 6 instanceCount
-		ARG 7 firstInstance
-	METHOD method_68353 drawObjectWithRenderPass (Lnet/minecraft/class_10866;IIILnet/minecraft/class_5595;Lnet/minecraft/class_10867;II)V
-		ARG 1 pass
-		ARG 2 baseVertex
-		ARG 3 firstIndex
-		ARG 4 count
-		ARG 5 indexType
-		ARG 6 pipeline
-		ARG 7 instanceCount
-		ARG 8 firstInstance
-	METHOD method_68354 (Lnet/minecraft/class_10866;Ljava/lang/String;Lnet/minecraft/class_1_1254;)V
-		ARG 1 name
-		ARG 2 bufferSlice
-	METHOD method_68355 drawObjectsWithRenderPass (Lnet/minecraft/class_10866;Ljava/util/Collection;Lnet/minecraft/class_1_1211;Lnet/minecraft/class_5595;Ljava/util/Collection;Ljava/lang/Object;)V
-		ARG 1 pass
-		ARG 2 objects
-		ARG 3 indexBuffer
-		ARG 4 indexType
-		ARG 5 validationSkippedUniforms
-	METHOD method_68356 setPipelineAndApplyState (Lnet/minecraft/class_1_1257;)V
-		ARG 1 pipeline

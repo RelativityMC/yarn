@@ -22,14 +22,10 @@ CLASS net/minecraft/class_6864 net/minecraft/registry/tag/TagPacketSerializer
 		COMMENT
 		COMMENT <p>This stores tag entries with raw integer IDs and requires a registry
 		COMMENT for raw ID access to serialize or deserialize tags.
-		FIELD field_28304 contents Ljava/util/Map;
+		FIELD comp_1_1428 contents Ljava/util/Map;
 		FIELD field_52388 NONE Lnet/minecraft/class_6864$class_5748;
 		METHOD <init> (Ljava/util/Map;)V
 			ARG 1 contents
-		METHOD method_33159 writeBuf (Lnet/minecraft/class_2540;)V
-			ARG 1 buf
-		METHOD method_33160 fromBuf (Lnet/minecraft/class_2540;)Lnet/minecraft/class_6864$class_5748;
-			ARG 0 buf
 		METHOD method_61315 isEmpty ()Z
 		METHOD method_61316 toRegistryTags (Lnet/minecraft/class_2378;)Lnet/minecraft/class_3503$class_6863;
 			ARG 1 registry

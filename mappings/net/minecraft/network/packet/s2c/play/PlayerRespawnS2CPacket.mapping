@@ -7,4 +7,3 @@ CLASS net/minecraft/class_2724 net/minecraft/network/packet/s2c/play/PlayerRespa
 	METHOD comp_1729 flag ()B
 	METHOD method_48016 hasFlag (B)Z
 		ARG 1 flag
-	METHOD method_55909 write (Lnet/minecraft/class_9129;)V

@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_1_704 net/minecraft/client/vulkan/VulkanRenderPassBackend
-	FIELD field_1_3614 IS_DEVELOPMENT Z
 	FIELD field_1_3615 shaderParamsDirty Z
 	FIELD field_1_3617 device Lnet/minecraft/class_1_679;
 	FIELD field_1_3619 hasDepth Z
@@ -7,8 +6,7 @@ CLASS net/minecraft/class_1_704 net/minecraft/client/vulkan/VulkanRenderPassBack
 	FIELD field_1_3621 width I
 	FIELD field_1_3622 pipeline Lnet/minecraft/class_1_718;
 	FIELD field_1_3624 numDebugGroups I
-	FIELD field_1_3626 boundTextures Ljava/util/HashMap;
-	FIELD field_1_3627 uniforms Ljava/util/HashMap;
+	FIELD field_1_3627 uniforms Lit/unimi/dsi/fastutil/objects/ReferenceList;
 	FIELD field_1_5956 renderArea Lnet/minecraft/class_1_1317$class_1_837;
 	FIELD field_1_6399 markerRecorderQueue Lnet/minecraft/class_1_970$class_1_971;
 	FIELD field_1_6400 commandBuffer Lorg/lwjgl/vulkan/VkCommandBuffer;
@@ -34,4 +32,3 @@ CLASS net/minecraft/class_1_704 net/minecraft/client/vulkan/VulkanRenderPassBack
 		ARG 4 width
 		ARG 5 height
 	METHOD method_1_5504 getLabelGetter ()Ljava/util/function/Supplier;
-	CLASS class_1_705 BoundTexture

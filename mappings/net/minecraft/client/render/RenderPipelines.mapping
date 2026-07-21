@@ -64,7 +64,6 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_1_8045 OIT_LINES_TRANSLUCENT Lnet/minecraft/class_1_1165;
 	FIELD field_1_8047 OIT_PARTICLE Lnet/minecraft/class_1_1165;
 	FIELD field_1_8048 DYNAMIC_TRANSFORM_PARTICLE_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_8049 OIT_SECONDARY_BLOCK_OUTLINE Lnet/minecraft/class_1_1165;
 	FIELD field_1_8050 OIT_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_1_8051 OIT_TERRAIN Lnet/minecraft/class_1_1165;
 	FIELD field_1_8052 OIT_TEXT Lnet/minecraft/class_1_1165;
@@ -189,8 +188,6 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	METHOD method_1_7364 (Lnet/minecraft/class_1_1257$class_1_1258;)V
 		ARG 0 builder
 	METHOD method_1_7365 (Lnet/minecraft/class_1_1257$class_1_1258;)V
-		ARG 0 builder
-	METHOD method_1_7366 (Lnet/minecraft/class_1_1257$class_1_1258;)V
 		ARG 0 builder
 	METHOD method_1_7367 (Lnet/minecraft/class_1_1257$class_1_1258;)V
 		ARG 0 builder

@@ -17,10 +17,6 @@ CLASS net/minecraft/class_167 net/minecraft/advancement/AdvancementProgress
 	METHOD method_730 (Ljava/util/Set;Ljava/util/Map$Entry;)Z
 		ARG 1 progress
 	METHOD method_731 getUnobtainedCriteria ()Ljava/lang/Iterable;
-	METHOD method_732 fromPacket (Lnet/minecraft/class_2540;)Lnet/minecraft/class_167;
-		ARG 0 buf
-	METHOD method_733 toPacket (Lnet/minecraft/class_2540;)V
-		ARG 1 buf
 	METHOD method_734 getObtainedCriteria ()Ljava/lang/Iterable;
 	METHOD method_735 getProgressBarPercentage ()F
 	METHOD method_736 countObtainedRequirements ()I
@@ -31,9 +27,6 @@ CLASS net/minecraft/class_167 net/minecraft/advancement/AdvancementProgress
 	METHOD method_742 isAnyObtained ()Z
 	METHOD method_743 obtain (Ljava/lang/String;)Z
 		ARG 1 name
-	METHOD method_33895 (Lnet/minecraft/class_2540;Lnet/minecraft/class_178;)V
-		ARG 0 bufx
-		ARG 1 progresses
 	METHOD method_53654 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
 	METHOD method_53655 (Ljava/time/Instant;)Ljava/time/temporal/TemporalAccessor;

@@ -13,7 +13,7 @@ CLASS net/minecraft/class_6899 net/minecraft/registry/entry/RegistryFixedCodec
 		ARG 2 registryKey
 	METHOD method_40397 (Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
 		ARG 1 value
-	METHOD method_40400 of (Lnet/minecraft/class_5321;)Lnet/minecraft/class_6899;
+	METHOD method_40400 of (Lnet/minecraft/class_5321;)Lcom/mojang/serialization/Codec;
 		ARG 0 registry
 	METHOD method_44141 (Lcom/mojang/datafixers/util/Pair;Lnet/minecraft/class_6880$class_6883;)Lcom/mojang/datafixers/util/Pair;
 		ARG 1 value

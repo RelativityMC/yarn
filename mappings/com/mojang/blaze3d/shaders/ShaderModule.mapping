@@ -1,0 +1,38 @@
+CLASS net/minecraft/class_1_1372 com/mojang/blaze3d/shaders/ShaderModule
+	METHOD method_1_9048 getBindingsNullable ()Lnet/minecraft/class_1_1372$class_1_1373;
+	METHOD method_1_9049 getBindings ()Lnet/minecraft/class_1_1372$class_1_1373;
+	METHOD method_1_9050 getSpirv ()Ljava/nio/ByteBuffer;
+	METHOD method_1_9051 getType ()Lnet/minecraft/class_1_1229;
+	CLASS class_1_1373 Bindings
+		METHOD method_1_9052 getUniformBindings ()Ljava/util/List;
+		METHOD method_1_9053 getUniformBindings (I)Ljava/util/List;
+			ARG 1 type
+		METHOD method_1_9054 getInputBindings ()Ljava/util/List;
+		METHOD method_1_9055 getOutputBindings ()Ljava/util/List;
+		CLASS class_1_1374 Uniform
+			METHOD method_1_9056 getBindingIndex ()I
+			METHOD method_1_9057 setBindingIndex (I)V
+				ARG 1 index
+			METHOD method_1_9058 getDescriptorSetIndex ()I
+			METHOD method_1_9059 setDescriptorSetIndex (I)V
+				ARG 1 index
+			METHOD method_1_9060 getName ()Ljava/lang/String;
+			METHOD method_1_9061 getResourceType ()I
+			METHOD method_1_9062 getType ()Lnet/minecraft/class_1_1372$class_1_1373$class_1_1376;
+		CLASS class_1_1375 Varying
+			METHOD method_1_9063 getDecoration (I)I
+				ARG 1 decoration
+			METHOD method_1_9064 hasDecoration (I)Z
+				ARG 1 decoration
+			METHOD method_1_9065 getIndex ()I
+			METHOD method_1_9066 setIndex (I)V
+				ARG 1 index
+			METHOD method_1_9067 getName ()Ljava/lang/String;
+			METHOD method_1_9068 getType ()Lnet/minecraft/class_1_1372$class_1_1373$class_1_1376;
+		CLASS class_1_1376 Type
+			METHOD method_1_9069 getArrayRank ()I
+			METHOD method_1_9070 getArrayLength (I)I
+				ARG 1 axis
+			METHOD method_1_9071 getBaseType ()I
+			METHOD method_1_9072 getImageDimension ()I
+			METHOD method_1_9073 getVectorLength ()I

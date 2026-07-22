@@ -1,8 +1,0 @@
-CLASS net/minecraft/class_10869 net/minecraft/client/gl/VertexBufferManager
-	METHOD method_68428 setupBuffer ([Lnet/minecraft/class_1_1254;)V
-	METHOD method_68429 create (Lorg/lwjgl/opengl/GLCapabilities;Ljava/util/Set;)Ljava/util/function/BiFunction;
-		ARG 0 capabilities
-		ARG 1 usedCapabilities
-	CLASS class_10870 DefaultVertexBufferManager
-	CLASS class_10871 ARBVertexBufferManager
-		FIELD field_60021 applyMesaWorkaround Z

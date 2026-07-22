@@ -1,0 +1,15 @@
+CLASS net/minecraft/class_10872 net/minecraft/component/Removed
+	COMMENT Denotes an item component that is explicitly removed.
+	FIELD field_1_9326 INSTANCE Lnet/minecraft/class_10872;
+	METHOD method_1_9007 isExtant (Ljava/lang/Object;)Z
+		ARG 0 component
+	METHOD method_1_9008 isRemoved (Ljava/lang/Object;)Z
+		ARG 0 component
+	METHOD method_1_9009 fromNullable (Ljava/lang/Object;)Ljava/lang/Object;
+		COMMENT {@return {@link INSTANCE} for null {@code component}s and {@code component}
+		COMMENT itself for non-null}
+		ARG 0 component
+	METHOD method_1_9010 toNullable (Ljava/lang/Object;)Ljava/lang/Object;
+		COMMENT {@return null for a removed {@link component} and {@code component} itself
+		COMMENT for anything else}
+		ARG 0 component

@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_7140 net/minecraft/world/gen/feature/SculkPatchFeature
+	METHOD method_1_7121 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
 	METHOD method_41571 canGenerate (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;)Z
 		ARG 1 world
 		ARG 2 pos

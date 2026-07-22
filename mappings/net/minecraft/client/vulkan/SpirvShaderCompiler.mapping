@@ -1,2 +1,0 @@
-CLASS net/minecraft/class_1_709 net/minecraft/client/vulkan/SpirvShaderCompiler
-	FIELD field_1_3640 compiler J

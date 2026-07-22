@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_1386 com/mojang/blaze3d/pipeline/BackendRenderPipeline
+	METHOD method_1_8167 isClosed ()Z
+	CLASS class_1_1387 Layout
+		CLASS class_1_1388 AttributeBinding
+		CLASS class_1_1389 Shader
+		CLASS class_1_1390 VertexBuffer

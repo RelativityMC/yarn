@@ -1,0 +1,22 @@
+CLASS net/minecraft/class_1_1384 net/minecraft/client/render/RenderPipelineCompiler
+	FIELD field_1_9496 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_9497 device Lnet/minecraft/class_1_147;
+	FIELD field_1_9498 shaderCompiler Lnet/minecraft/class_1_709;
+	METHOD <init> (Lnet/minecraft/class_1_147;)V
+		ARG 1 device
+	METHOD method_1_9120 compile (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_12289;)Lnet/minecraft/class_1_1285;
+		ARG 1 pipeline
+		ARG 2 sourceGetter
+	METHOD method_1_9121 getInterfaceVars (Ljava/util/List;Ljava/lang/String;Lnet/minecraft/class_1_1229;)Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+		ARG 0 interfaceBindings
+		ARG 1 shaderId
+		ARG 2 shaderType
+	METHOD method_1_9122 (Lit/unimi/dsi/fastutil/objects/Object2IntOpenHashMap;Ljava/lang/Object;)I
+		ARG 1 name
+	METHOD method_1_9123 (Lnet/minecraft/class_1_1386$class_1_1387$class_1_1389;)V
+		ARG 0 shader
+	METHOD method_1_9124 getSource (Lnet/minecraft/class_2960;Lnet/minecraft/class_1_1229;Lnet/minecraft/class_12289;)Ljava/lang/String;
+		ARG 0 id
+		ARG 1 type
+		ARG 2 sourceGetter
+	CLASS class_1_1385 InterfaceVar

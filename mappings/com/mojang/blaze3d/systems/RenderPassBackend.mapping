@@ -55,3 +55,6 @@ CLASS net/minecraft/class_1_149 com/mojang/blaze3d/systems/RenderPassBackend
 		ARG 2 count
 		ARG 3 first
 		ARG 4 drawCount
+	METHOD method_1_9105 setUniform (ILjava/lang/Object;)V
+		ARG 1 index
+		ARG 2 value

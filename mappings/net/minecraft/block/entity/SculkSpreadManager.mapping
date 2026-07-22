@@ -63,6 +63,10 @@ CLASS net/minecraft/class_7128 net/minecraft/block/entity/SculkSpreadManager
 			ARG 3 decay
 			ARG 4 update
 			ARG 5 faces
+		METHOD method_1_9078 isWithinSpreadRange (Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;Lnet/minecraft/class_7128;)Z
+			ARG 0 origin
+			ARG 1 pos
+			ARG 2 spreadManager
 		METHOD method_41495 getPos ()Lnet/minecraft/class_2338;
 		METHOD method_41496 canSpread (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;)Z
 			ARG 0 world
@@ -76,9 +80,11 @@ CLASS net/minecraft/class_7128 net/minecraft/block/entity/SculkSpreadManager
 			ARG 0 world
 			ARG 1 pos
 			ARG 2 random
+			ARG 3 origin
+			ARG 4 spreadManager
 		METHOD method_41499 spread (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;Lnet/minecraft/class_7128;Z)V
 			ARG 1 world
-			ARG 2 pos
+			ARG 2 origin
 			ARG 3 random
 			ARG 4 spreadManager
 			ARG 5 shouldConvertToBlock

@@ -1,0 +1,30 @@
+CLASS net/minecraft/class_10867 net/minecraft/client/gl/GlBackendRenderPipeline
+	FIELD field_1_7975 closed Z
+	FIELD field_1_7976 backend Lnet/minecraft/class_10865;
+	FIELD field_1_7978 shaderProgram Lnet/minecraft/class_5944;
+	FIELD field_1_9478 hasBlend Z
+	FIELD field_1_9479 cull Z
+	FIELD field_1_9480 depthBiasConstant F
+	FIELD field_1_9481 depthBiasScaleFactor F
+	FIELD field_1_9482 hasDepth Z
+	FIELD field_1_9483 glDepthTest I
+	FIELD field_1_9484 glAlphaDestFactor I
+	FIELD field_1_9485 glColorDestFactor I
+	FIELD field_1_9486 glAlphaOp I
+	FIELD field_1_9487 glColorOp I
+	FIELD field_1_9488 glPolygonMode I
+	FIELD field_1_9489 glDrawMode I
+	FIELD field_1_9490 glAlphaSourceFactor I
+	FIELD field_1_9491 glColorSourceFactor I
+	FIELD field_1_9492 vertexArray Lnet/minecraft/class_10869;
+	FIELD field_1_9493 writeDepth Z
+	FIELD field_1_9494 colorTargetStates [I
+	METHOD <init> (Lnet/minecraft/class_10865;Lnet/minecraft/class_1_1386$class_1_1387;Lnet/minecraft/class_5944;Lnet/minecraft/class_10869;)V
+		ARG 1 backend
+		ARG 2 layout
+		ARG 3 shaderProgram
+		ARG 4 vertexArray
+	METHOD method_1_7327 getShaderProgram ()Lnet/minecraft/class_5944;
+	METHOD method_1_9115 setup ()V
+	METHOD method_1_9116 getGlDrawMode ()I
+	METHOD method_1_9117 getVertexArray ()Lnet/minecraft/class_10869;

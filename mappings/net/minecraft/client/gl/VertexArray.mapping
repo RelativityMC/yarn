@@ -1,0 +1,25 @@
+CLASS net/minecraft/class_10869 net/minecraft/client/gl/VertexArray
+	FIELD field_1_9420 vertexArray I
+	METHOD method_68428 setupBuffer ([Lnet/minecraft/class_1_1254;)V
+		ARG 1 buffers
+	METHOD method_68429 createFactory (Lorg/lwjgl/opengl/GLCapabilities;Ljava/util/Set;)Ljava/util/function/BiFunction;
+		ARG 0 capabilities
+		ARG 1 usedCapabilities
+	CLASS class_10870 Default
+		FIELD field_1_9421 vertexStepRates [I
+		FIELD field_1_9422 attribSlots [I
+		FIELD field_1_9423 vertexStrides [I
+		FIELD field_1_9424 attribFormatChannelCounts [I
+		FIELD field_1_9425 attribOffsets [I
+		FIELD field_1_9426 attribFormatTypes [I
+		FIELD field_1_9427 attribFormatsAreIntegers [Z
+		FIELD field_1_9428 attribFormatsNormalized [Z
+		METHOD <init> (Lnet/minecraft/class_5944;Lnet/minecraft/class_1_1386$class_1_1387;)V
+			ARG 1 shaderProgram
+			ARG 2 layout
+	CLASS class_10871 Arb
+		FIELD field_1_9429 vertexStrides [I
+		FIELD field_60021 applyMesaWorkaround Z
+		METHOD <init> (Lnet/minecraft/class_5944;Lnet/minecraft/class_1_1386$class_1_1387;)V
+			ARG 1 shaderProgram
+			ARG 2 layout

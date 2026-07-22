@@ -1,9 +1,13 @@
 CLASS net/minecraft/class_10141 net/minecraft/client/gl/GlCompiledShader
+	FIELD field_1_9470 pipelineName Ljava/lang/String;
 	FIELD field_53827 CLOSED I
 	FIELD field_53829 handle I
 	FIELD field_57880 INVALID_SHADER Lnet/minecraft/class_10141;
 	FIELD field_57881 shaderType Lnet/minecraft/class_1_1229;
 	METHOD <init> (ILjava/lang/String;Lnet/minecraft/class_1_1229;)V
 		ARG 1 handle
+		ARG 2 pipelineName
 		ARG 3 shaderType
+	METHOD method_1_9106 getPipelineName ()Ljava/lang/String;
+	METHOD method_1_9107 getType ()Lnet/minecraft/class_1_1229;
 	METHOD method_62883 getHandle ()I

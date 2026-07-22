@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_1285 com/mojang/blaze3d/pipeline/CompiledRenderPipeline
+	METHOD method_1_9125 isClosed ()Z

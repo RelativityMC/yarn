@@ -4,6 +4,9 @@ CLASS net/minecraft/class_1_1209 com/mojang/blaze3d/systems/GpuDeviceImpl
 	FIELD field_1_8343 backend Lnet/minecraft/class_1_147;
 	FIELD field_1_8344 commandEncoder Lnet/minecraft/class_1_1329;
 	FIELD field_1_8345 profiler Lnet/minecraft/class_1_708;
+	FIELD field_1_9431 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_9432 EXTRA_ASSERTIONS Z
+	FIELD field_1_9433 pipelineCompiler Lnet/minecraft/class_1_1384;
 	METHOD <init> (Lnet/minecraft/class_1_147;)V
 		ARG 1 backend
 	METHOD method_1_7706 (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_12289;)Lnet/minecraft/class_1_1285;

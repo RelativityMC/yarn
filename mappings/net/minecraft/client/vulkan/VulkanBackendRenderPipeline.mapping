@@ -1,20 +1,28 @@
-CLASS net/minecraft/class_1_718 net/minecraft/client/vulkan/VulkanCompiledRenderPipeline
+CLASS net/minecraft/class_1_718 net/minecraft/client/vulkan/VulkanBackendRenderPipeline
 	FIELD field_1_8112 closed Z
 	FIELD field_1_8113 backend Lnet/minecraft/class_1_679;
-	FIELD field_1_8117 rawLayout J
+	FIELD field_1_8117 pipelineLayout J
 	FIELD field_1_8119 depthPipeline J
 	FIELD field_1_8120 noDepthPipeline J
+	FIELD field_1_9510 descriptorSetLayout J
+	FIELD field_1_9511 shaderModules Lit/unimi/dsi/fastutil/longs/LongList;
+	FIELD field_1_9512 uniforms Ljava/util/List;
 	METHOD <init> (Lnet/minecraft/class_1_679;JJJJLit/unimi/dsi/fastutil/longs/LongList;Ljava/util/List;)V
 		ARG 1 backend
 		ARG 2 depthPipeline
 		ARG 4 noDepthPipeline
-		ARG 6 rawLayout
+		ARG 6 pipelineLayout
+		ARG 8 descriptorSetLayout
+		ARG 10 shaderModules
+		ARG 11 uniforms
 	METHOD method_1_4294 setBlendFunction (Lorg/lwjgl/vulkan/VkPipelineColorBlendAttachmentState$Buffer;Lnet/minecraft/class_1_1255;)V
 		ARG 0 colorBlendAttachmentState
 		ARG 1 blendFunction
 	METHOD method_1_4295 create (Lnet/minecraft/class_1_679;Lnet/minecraft/class_1_1386$class_1_1387;)Lnet/minecraft/class_1_718;
 		ARG 0 device
+		ARG 1 layout
 	METHOD method_1_7399 getBackend ()Lnet/minecraft/class_1_679;
 	METHOD method_1_7402 getRawLayout ()J
 	METHOD method_1_7404 getDepthPipeline ()J
 	METHOD method_1_7405 getNoDepthPipeline ()J
+	METHOD method_1_9131 getUniforms ()Ljava/util/List;

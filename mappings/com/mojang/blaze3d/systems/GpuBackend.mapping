@@ -41,6 +41,7 @@ CLASS net/minecraft/class_1_147 com/mojang/blaze3d/systems/GpuBackend
 	METHOD method_1_1297 getLastDebugMessages ()Ljava/util/List;
 	METHOD method_1_1304 isDebuggingEnabled ()Z
 	METHOD method_1_1306 getCompiledPipeline (Lnet/minecraft/class_1_1386$class_1_1387;)Lnet/minecraft/class_1_1386;
+		ARG 1 pipelineLayout
 	METHOD method_1_4219 createSurface (J)Lnet/minecraft/class_1_713;
 		ARG 1 window
 	METHOD method_1_4220 createTimestampQueryPool (I)Lnet/minecraft/class_1_685;

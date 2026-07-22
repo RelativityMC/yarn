@@ -163,6 +163,8 @@ CLASS net/minecraft/class_1_1267 com/mojang/blaze3d/opengl/GlStateManager
 	METHOD method_1_8089 getFrameBuffer (I)I
 		ARG 0 target
 	METHOD method_1_8090 attachShader (II)V
+		ARG 0 program
+		ARG 1 shader
 	METHOD method_1_8091 glBlendEquationSeparate (II)V
 		ARG 0 opRgb
 		ARG 1 opAlpha

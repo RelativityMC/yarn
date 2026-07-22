@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_1_1377 com/mojang/blaze3d/shaders/SpvcHelper
+	FIELD field_1_9418 UNIFORM_RESOURCE_TYPES Lit/unimi/dsi/fastutil/ints/IntList;
+	METHOD method_1_9086 describeBaseType (I)Ljava/lang/String;
+		ARG 0 baseType
+	METHOD method_1_9087 reportStateError (ILjava/lang/String;)V
+		ARG 0 status
+		ARG 1 message
+	METHOD method_1_9088 getVarOffset (JLorg/lwjgl/util/spvc/SpvcReflectedResource;ILjava/nio/IntBuffer;)I
+		ARG 0 compiler
+		ARG 2 variable
+		ARG 3 decoration
+		ARG 4 wordOffset
+	METHOD method_1_9089 toResourceType (Lnet/minecraft/class_10789;)I
+		ARG 0 uniformType
+	METHOD method_1_9090 describeError (I)Ljava/lang/String;
+		ARG 0 status
+	METHOD method_1_9091 reportShaderCompileError (ILjava/lang/String;)V
+		ARG 0 status
+		ARG 1 message

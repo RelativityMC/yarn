@@ -1,10 +1,9 @@
 CLASS net/minecraft/class_5822 net/minecraft/util/math/noise/InterpolatedNoiseSampler
-	FIELD field_28774 lowerInterpolatedNoise Lnet/minecraft/class_3537;
-	FIELD field_28775 upperInterpolatedNoise Lnet/minecraft/class_3537;
-	FIELD field_28776 interpolationNoise Lnet/minecraft/class_3537;
+	FIELD field_28774 lowerInterpolatedNoise Lnet/minecraft/class_1_1403;
+	FIELD field_28775 upperInterpolatedNoise Lnet/minecraft/class_1_1403;
+	FIELD field_28776 interpolationNoise Lnet/minecraft/class_1_1403;
 	FIELD field_34752 xzScale D
 	FIELD field_34753 yScale D
-	FIELD field_36630 maxValue D
 	FIELD field_37206 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_38269 SCALE_AND_FACTOR_RANGE Lcom/mojang/serialization/Codec;
 	FIELD field_38271 scaledXzScale D
@@ -12,7 +11,7 @@ CLASS net/minecraft/class_5822 net/minecraft/util/math/noise/InterpolatedNoiseSa
 	FIELD field_38273 xzFactor D
 	FIELD field_38274 yFactor D
 	FIELD field_38275 smearScaleMultiplier D
-	METHOD <init> (Lnet/minecraft/class_3537;Lnet/minecraft/class_3537;Lnet/minecraft/class_3537;DDDDD)V
+	METHOD <init> (Lnet/minecraft/class_1_1403;Lnet/minecraft/class_1_1403;Lnet/minecraft/class_1_1403;DDDDD)V
 		ARG 1 lowerInterpolatedNoise
 		ARG 2 upperInterpolatedNoise
 		ARG 3 interpolationNoise

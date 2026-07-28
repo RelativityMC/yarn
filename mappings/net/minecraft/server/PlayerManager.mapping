@@ -5,7 +5,6 @@ CLASS net/minecraft/class_3324 net/minecraft/server/PlayerManager
 	FIELD field_14346 advancementTrackers Ljava/util/Map;
 	FIELD field_14348 OPERATORS_FILE Ljava/io/File;
 	FIELD field_14349 LOGGER Lorg/slf4j/Logger;
-	FIELD field_14350 allowCommands Z
 	FIELD field_14351 players Ljava/util/List;
 	FIELD field_14353 ops Lnet/minecraft/class_3326;
 	FIELD field_14354 playerMap Ljava/util/Map;
@@ -64,7 +63,6 @@ CLASS net/minecraft/class_3324 net/minecraft/server/PlayerManager
 		ARG 1 player
 	METHOD method_14578 getAdvancementTracker (Lnet/minecraft/class_3222;)Lnet/minecraft/class_2985;
 		ARG 1 player
-	METHOD method_14579 areCheatsAllowed ()Z
 	METHOD method_14580 getPlayerNames ()[Ljava/lang/String;
 	METHOD method_14581 sendToAll (Lnet/minecraft/class_2596;)V
 		ARG 1 packet
@@ -115,8 +113,6 @@ CLASS net/minecraft/class_3324 net/minecraft/server/PlayerManager
 	METHOD method_14606 sendWorldInfo (Lnet/minecraft/class_3222;Lnet/minecraft/class_3218;)V
 		ARG 1 player
 		ARG 2 world
-	METHOD method_14607 setAllowCommands (Z)V
-		ARG 1 setAllowCommands
 	METHOD method_14608 setViewDistance (I)V
 		ARG 1 viewDistance
 	METHOD method_14609 canBypassPlayerLimit (Lnet/minecraft/class_11560;)Z

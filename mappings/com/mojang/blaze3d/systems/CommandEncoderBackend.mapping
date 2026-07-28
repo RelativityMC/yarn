@@ -4,15 +4,7 @@ CLASS net/minecraft/class_1_154 com/mojang/blaze3d/systems/CommandEncoderBackend
 		ARG 2 clearColor
 		ARG 3 depthAttachment
 		ARG 4 depth
-	METHOD method_1_1382 clearColorAndDepthTextures (Lnet/minecraft/class_1_1318;Lorg/joml/Vector4fc;Lnet/minecraft/class_1_1318;DIIII)V
-		ARG 1 colorAttachment
-		ARG 2 clearColor
-		ARG 3 depthAttachment
-		ARG 4 depth
-		ARG 6 scissorX
-		ARG 7 scissorY
-		ARG 8 scissorWidth
-		ARG 9 scissorHeight
+	METHOD method_1_1382 clearColorAndDepthTextures (Lnet/minecraft/class_1_1318;Lorg/joml/Vector4fc;Lnet/minecraft/class_1_1318;DIIIII)V
 	METHOD method_1_1383 clearColorTexture (Lnet/minecraft/class_1_1318;Lorg/joml/Vector4fc;)V
 		ARG 1 texture
 		ARG 2 clearColor

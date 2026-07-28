@@ -42,9 +42,9 @@ CLASS net/minecraft/class_7138 net/minecraft/world/gen/noise/NoiseConfig
 		ARG 0 noiseParametersLookup
 		ARG 1 legacyWorldSeed
 		ARG 3 chunkGeneratorSettings
-	METHOD method_41558 getOrCreateSampler (Lnet/minecraft/class_5321;)Lnet/minecraft/class_5216;
+	METHOD method_41558 getOrCreateSampler (Lnet/minecraft/class_5321;)Lnet/minecraft/class_1_1397;
 		ARG 1 noiseParametersKey
-	METHOD method_41559 (Lnet/minecraft/class_5321;Lnet/minecraft/class_5321;)Lnet/minecraft/class_5216;
+	METHOD method_41559 (Lnet/minecraft/class_5321;Lnet/minecraft/class_5321;)Lnet/minecraft/class_1_1397;
 		ARG 2 key
 	METHOD method_41560 getOrCreateRandomDeriver (Lnet/minecraft/class_2960;)Lnet/minecraft/class_6574;
 		ARG 1 id

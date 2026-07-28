@@ -28,7 +28,7 @@ CLASS net/minecraft/class_446 net/minecraft/client/gui/screen/option/VideoOption
 	METHOD method_75371 updateImprovedTransparencyButtonValue ()V
 	METHOD method_75372 getQualityOptions (Lnet/minecraft/class_315;)[Lnet/minecraft/class_7172;
 		ARG 0 options
-	METHOD method_75373 getDisplayOptions (Lnet/minecraft/class_315;)[Lnet/minecraft/class_7172;
+	METHOD method_75373 getDisplayOptions (Lnet/minecraft/class_315;Z)[Lnet/minecraft/class_7172;
 		ARG 0 options
 	METHOD method_75374 getInterfaceOptions (Lnet/minecraft/class_315;)[Lnet/minecraft/class_7172;
 		ARG 0 options

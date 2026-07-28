@@ -35,6 +35,10 @@ CLASS net/minecraft/class_6603 net/minecraft/network/packet/s2c/play/ChunkData
 		FIELD comp_1_1468 type Lnet/minecraft/class_2591;
 		FIELD comp_1_1469 y S
 		FIELD field_47931 PACKET_CODEC Lnet/minecraft/class_9139;
+		METHOD comp_1_1466 localXz ()B
+		METHOD comp_1_1467 nbt ()Ljava/util/Optional;
+		METHOD comp_1_1468 type ()Lnet/minecraft/class_2591;
+		METHOD comp_1_1469 y ()S
 		METHOD method_38596 of (Lnet/minecraft/class_2586;)Lnet/minecraft/class_6603$class_6604;
 			ARG 0 blockEntity
 	CLASS class_6605 BlockEntityVisitor

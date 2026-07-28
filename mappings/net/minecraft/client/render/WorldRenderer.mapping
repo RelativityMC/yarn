@@ -45,10 +45,6 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 7 gameRenderer
 		ARG 8 width
 		ARG 9 height
-	METHOD method_1_2232 (I)Ljava/util/List;
-		ARG 0 hash
-	METHOD method_1_2233 createSectionRenderState (Lorg/joml/Matrix4fc;)Lnet/minecraft/class_11532;
-		ARG 1 rotationMatrix
 	METHOD method_1_2234 prepareForRender (Lnet/minecraft/class_12075;)V
 		ARG 1 cameraRenderState
 	METHOD method_1_4858 addGizmos (Ljava/util/List;)V
@@ -85,7 +81,6 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_1_7341 drawOutlines (Lnet/minecraft/class_11684$class_1_875;)V
 		ARG 1 preparedFrame
 	METHOD method_1_7342 renderSolidGeometry (Lnet/minecraft/class_11532;Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_1_1317;)V
-		ARG 1 sectionRenderState
 		ARG 2 preparedFrame
 		ARG 3 pass
 	METHOD method_1_7350 prepare ()V

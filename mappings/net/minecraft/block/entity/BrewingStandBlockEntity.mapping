@@ -24,24 +24,8 @@ CLASS net/minecraft/class_2589 net/minecraft/block/entity/BrewingStandBlockEntit
 	METHOD <init> (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
 		ARG 1 pos
 		ARG 2 state
-	METHOD method_1_8915 createContext (Lnet/minecraft/class_3218;)Lnet/minecraft/class_47;
-		ARG 1 world
-	METHOD method_1_8916 getValue (Lnet/minecraft/class_3218;Ljava/lang/Object;Ljava/util/function/Function;F)F
-		ARG 1 world
-		ARG 2 component
-		ARG 3 getter
-		ARG 4 defaultValue
-	METHOD method_1_8917 getValue (Lnet/minecraft/class_3218;Ljava/lang/Object;Ljava/util/function/Function;I)I
-		ARG 1 world
-		ARG 2 component
-		ARG 3 getter
-		ARG 4 defaultValue
 	METHOD method_1_8918 getSpeedMultiplier (Lnet/minecraft/class_3218;Lnet/minecraft/class_1_1319;)F
-		ARG 1 world
-		ARG 2 component
 	METHOD method_1_8919 getUses (Lnet/minecraft/class_3218;Lnet/minecraft/class_1_1319;)I
-		ARG 1 world
-		ARG 2 component
 	METHOD method_11027 canCraft (Lnet/minecraft/class_3218;Lnet/minecraft/class_2589;)Z
 		ARG 0 world
 		ARG 1 blockEntity

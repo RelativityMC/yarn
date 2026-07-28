@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_1_1022 net/minecraft/client/util/memory/Arena
 	FIELD field_1_6964 rawAllocator Lnet/minecraft/class_1_1022$class_1_1024;
 	FIELD field_1_6965 blockSize J
-	FIELD field_1_6966 partialBlock Ljava/lang/Object;
+	FIELD field_1_6966 partialBlock Lnet/minecraft/class_1_1022$class_1_1024$class_1_1419;
 		COMMENT A block that is partially occupied.
 		COMMENT
 		COMMENT This should also be found in {@link occupiedBlocks}, so it should not be
@@ -27,7 +27,7 @@ CLASS net/minecraft/class_1_1022 net/minecraft/client/util/memory/Arena
 		ARG 3 alignment
 		ARG 5 minimumSize
 		ARG 7 sizeAlignment
-	METHOD method_1_6202 allocateBlock ()Ljava/lang/Object;
+	METHOD method_1_6202 allocateBlock ()Lnet/minecraft/class_1_1022$class_1_1024$class_1_1419;
 	METHOD method_1_6203 getBlockSize ()J
 	METHOD method_1_6204 fitsInBlock (JJ)Z
 		ARG 1 size
@@ -35,15 +35,12 @@ CLASS net/minecraft/class_1_1022 net/minecraft/client/util/memory/Arena
 	METHOD method_1_6205 fitsInPartialBlock (JJ)Z
 		ARG 1 size
 		ARG 3 alignment
-	METHOD method_1_6206 (Ljava/lang/Object;)V
-		ARG 0 block
 	METHOD method_1_6209 startClearing ()Ljava/lang/Runnable;
 	CLASS class_1_1023 Region
 	CLASS class_1_1024 Allocator
-		METHOD method_1_6210 alloc (J)Ljava/lang/Object;
+		METHOD method_1_6210 alloc (J)Lnet/minecraft/class_1_1022$class_1_1024$class_1_1419;
 			ARG 1 size
 		METHOD method_1_6211 fromFunctions (Ljava/util/function/LongFunction;Ljava/util/function/Consumer;)Lnet/minecraft/class_1_1022$class_1_1024;
 			ARG 0 alloc
 			ARG 1 free
-		METHOD method_1_6212 free (Ljava/lang/Object;)V
-			ARG 1 object
+		METHOD method_1_6212 free (Lnet/minecraft/class_1_1022$class_1_1024$class_1_1419;)V

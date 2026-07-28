@@ -91,8 +91,8 @@ CLASS net/minecraft/class_2168 net/minecraft/server/command/ServerCommandSource
 		ARG 1 entity
 	METHOD method_36321 withOutput (Lnet/minecraft/class_2165;)Lnet/minecraft/class_2168;
 		ARG 1 output
-	METHOD method_41212 (Lnet/minecraft/class_2172$class_7078;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Lnet/minecraft/class_7225;)Ljava/util/concurrent/CompletableFuture;
-		ARG 3 registry
+	METHOD method_41212 (Lnet/minecraft/class_2172$class_7078;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Ljava/util/function/Predicate;Lnet/minecraft/class_7225;)Ljava/util/concurrent/CompletableFuture;
+		ARG 4 registry
 	METHOD method_43735 withSignedArguments (Lnet/minecraft/class_7448;Lnet/minecraft/class_7620;)Lnet/minecraft/class_2168;
 		ARG 1 signedArguments
 		ARG 2 messageChainTaskQueue

@@ -8,7 +8,6 @@ CLASS net/minecraft/class_11282 com/mojang/blaze3d/shaders/DynamicUniforms
 	FIELD field_64216 CHUNK_SECTIONS_SIZE I
 	FIELD field_64217 chunkSectionsStorage Lnet/minecraft/class_11280;
 	METHOD method_1_4251 write (Lnet/minecraft/class_11282$class_11283;)Lnet/minecraft/class_1_1254;
-		ARG 1 transforms
 	METHOD method_1_4252 write (Lorg/joml/Matrix4f;)Lnet/minecraft/class_1_1254;
 		ARG 1 modelView
 	METHOD method_1_4253 write (Lorg/joml/Matrix4f;Lorg/joml/Matrix4f;)Lnet/minecraft/class_1_1254;
@@ -26,6 +25,5 @@ CLASS net/minecraft/class_11282 com/mojang/blaze3d/shaders/DynamicUniforms
 	METHOD method_71107 writeTransforms ([Lnet/minecraft/class_11282$class_11283;)[Lnet/minecraft/class_1_1254;
 		ARG 1 values
 	METHOD method_76294 writeChunkSections ([Lnet/minecraft/class_11282$class_12294;)[Lnet/minecraft/class_1_1254;
-		ARG 1 values
 	CLASS class_11283 TransformsValue
 	CLASS class_12294 ChunkSectionsValue

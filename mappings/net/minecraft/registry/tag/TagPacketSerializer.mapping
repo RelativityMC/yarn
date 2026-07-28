@@ -26,6 +26,7 @@ CLASS net/minecraft/class_6864 net/minecraft/registry/tag/TagPacketSerializer
 		FIELD field_52388 NONE Lnet/minecraft/class_6864$class_5748;
 		METHOD <init> (Ljava/util/Map;)V
 			ARG 1 contents
+		METHOD comp_1_1428 contents ()Ljava/util/Map;
 		METHOD method_61315 isEmpty ()Z
 		METHOD method_61316 toRegistryTags (Lnet/minecraft/class_2378;)Lnet/minecraft/class_3503$class_6863;
 			ARG 1 registry

@@ -14,7 +14,7 @@ CLASS net/minecraft/class_1_1256 com/mojang/blaze3d/systems/CommandEncoderImpl
 	METHOD method_1_7934 (Lnet/minecraft/class_1_1318;Lorg/joml/Vector4fc;Lnet/minecraft/class_1_1318;D)V
 		ARG 2 clearColor
 		ARG 4 depth
-	METHOD method_1_7935 (Lnet/minecraft/class_1_1318;Lorg/joml/Vector4fc;Lnet/minecraft/class_1_1318;DIIII)V
+	METHOD method_1_7935 (Lnet/minecraft/class_1_1318;Lorg/joml/Vector4fc;Lnet/minecraft/class_1_1318;DIIIII)V
 		ARG 2 clearColor
 		ARG 4 depth
 		ARG 6 scissorX
@@ -83,7 +83,7 @@ CLASS net/minecraft/class_1_1256 com/mojang/blaze3d/systems/CommandEncoderImpl
 		ARG 1 texture
 	METHOD method_1_7953 assertClearableDepthTexture (Lnet/minecraft/class_1_1318;)V
 		ARG 1 texture
-	METHOD method_1_7954 assertValidRegion (Lnet/minecraft/class_1_1318;IIII)V
+	METHOD method_1_7954 assertValidRegion (Lnet/minecraft/class_1_1318;IIIII)V
 		ARG 1 texture
 		ARG 2 regionX
 		ARG 3 regionY

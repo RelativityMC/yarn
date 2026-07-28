@@ -15,14 +15,3 @@ CLASS net/minecraft/class_1_1293 net/minecraft/component/type/FuelComponents
 	METHOD method_1_8983 cooking (Lnet/minecraft/class_7871;I)Lnet/minecraft/class_5658;
 		ARG 0 lootConditionLookup
 		ARG 1 ticks
-	METHOD method_1_8984 getValue (Lnet/minecraft/class_3218;Ljava/lang/Object;Ljava/util/function/Function;)Ljava/util/Optional;
-		ARG 0 world
-		ARG 1 component
-		ARG 2 getter
-	METHOD method_1_8985 getValue (Lnet/minecraft/class_3218;Lnet/minecraft/class_1799;Lnet/minecraft/class_9331;Ljava/util/function/Function;)Ljava/util/Optional;
-		ARG 0 world
-		ARG 1 stack
-		ARG 2 componentType
-		ARG 3 getter
-	METHOD method_1_8986 (Ljava/util/function/Function;Ljava/lang/Object;Lnet/minecraft/class_7225$class_7226;)Ljava/util/Optional;
-		ARG 2 providers

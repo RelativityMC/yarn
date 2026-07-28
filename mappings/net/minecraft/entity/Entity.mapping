@@ -522,7 +522,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		COMMENT
 		COMMENT @see #isInvulnerableTo
 		COMMENT @see #isInvulnerable
-		ARG 1 invulnerable
 	METHOD method_5685 getPassengerList ()Ljava/util/List;
 		COMMENT {@return the list of passengers of this entity}
 		COMMENT

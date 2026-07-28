@@ -205,12 +205,10 @@ CLASS net/minecraft/server/MinecraftServer
 	METHOD method_3760 getPlayerManager ()Lnet/minecraft/class_3324;
 	METHOD method_3761 getForcedGameMode ()Lnet/minecraft/class_1934;
 		COMMENT Returns the game mode a player should be set to when connecting to the server, or {@code null} if none is set.
-	METHOD method_3763 publish (Lnet/minecraft/server/MinecraftServer$class_1_908;Lnet/minecraft/class_1934;ZI)Z
+	METHOD method_3763 publish (Lnet/minecraft/server/MinecraftServer$class_1_908;ZI)Z
 		ARG 1 shareSetting
-		ARG 2 gameMode
-			COMMENT the game mode connecting players will have set by default
-		ARG 3 allowCommands
-		ARG 4 port
+		ARG 2 allowCommands
+		ARG 3 port
 			COMMENT the port to open up to LAN connections
 	METHOD method_3764 setPreventProxyConnections (Z)V
 		ARG 1 preventProxyConnections

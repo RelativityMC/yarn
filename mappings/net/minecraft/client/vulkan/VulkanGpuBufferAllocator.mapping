@@ -15,15 +15,14 @@ CLASS net/minecraft/class_1_1025 net/minecraft/client/vulkan/VulkanGpuBufferAllo
 	METHOD <init> (Lnet/minecraft/class_1_679;Lnet/minecraft/class_1_715;)V
 		ARG 1 device
 		ARG 2 commandEncoder
-	METHOD method_1_6213 allocateHostDeviceBufferPair (J)Lit/unimi/dsi/fastutil/Pair;
+	METHOD method_1_6213 allocateHostDeviceBufferPair (J)Lnet/minecraft/class_1_1025$class_1_1421;
 		ARG 1 size
 	METHOD method_1_6214 allocateTransientMemoryBuffer (JZ)Lnet/minecraft/class_1_1025$class_1_1027;
 		ARG 1 size
 		ARG 3 preferHost
 	METHOD method_1_6215 start ()V
 	METHOD method_1_6216 finish ()V
-	METHOD method_1_6217 deallocateHostDeviceBufferPair (Lit/unimi/dsi/fastutil/Pair;)V
-		ARG 1 pair
+	METHOD method_1_6217 deallocateHostDeviceBufferPair (Lnet/minecraft/class_1_1025$class_1_1421;)V
 	METHOD method_1_6218 destroyNow (Lnet/minecraft/class_1_1025$class_1_1027;)V
 		ARG 1 buffer
 	METHOD method_1_6221 (Ljava/util/List;I)Ljava/lang/Integer;
@@ -39,8 +38,7 @@ CLASS net/minecraft/class_1_1025 net/minecraft/client/vulkan/VulkanGpuBufferAllo
 		ARG 5 hostOnly
 	METHOD method_1_6226 destroyLater (Lnet/minecraft/class_1_1025$class_1_1027;)V
 		ARG 1 buffer
-	METHOD method_1_6227 copyHostToDeviceBuffer (Lit/unimi/dsi/fastutil/Pair;)V
-		ARG 1 pair
+	METHOD method_1_6227 copyHostToDeviceBuffer (Lnet/minecraft/class_1_1025$class_1_1421;)V
 	METHOD method_1_6228 allocateMappedBuffer (Ljava/util/List;JIJJZ)Lnet/minecraft/class_1_1254;
 		ARG 1 contents
 		ARG 2 alignment

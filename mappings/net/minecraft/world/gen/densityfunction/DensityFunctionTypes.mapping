@@ -255,10 +255,6 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 		FIELD field_37097 CODEC_HOLDER Lcom/mojang/serialization/MapCodec;
 		METHOD method_41090 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance
-	CLASS class_6945 YClampedGradient
-		FIELD field_37074 CODEC_HOLDER Lcom/mojang/serialization/MapCodec;
-		METHOD method_41076 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-			ARG 0 instance
 	CLASS class_7049 Beardifier
 	CLASS class_7050 Beardifying
 		FIELD field_37078 CODEC_HOLDER Lcom/mojang/serialization/MapCodec;

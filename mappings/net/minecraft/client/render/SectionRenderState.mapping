@@ -1,14 +1,12 @@
 CLASS net/minecraft/class_11532 net/minecraft/client/render/SectionRenderState
-	METHOD method_1_7510 draw (Lnet/minecraft/class_11531;Lnet/minecraft/class_1_1317;Lnet/minecraft/class_12137;Z)V
+	METHOD method_1_7510 draw (Lnet/minecraft/class_11531;Lnet/minecraft/class_1_1317;Lnet/minecraft/class_12137;Lnet/minecraft/class_1_1330;Z)V
 		ARG 1 blockRenderLayerGroup
 		ARG 3 terrainSampler
-		ARG 4 wireframe
-	METHOD method_1_7511 draw ([Lnet/minecraft/class_11515;Lnet/minecraft/class_12137;Lnet/minecraft/class_1_1317;Lnet/minecraft/class_1_1330;Lnet/minecraft/class_1_1257;Z)V
+		ARG 5 wireframe
+	METHOD method_1_7511 draw ([Lnet/minecraft/class_11515;Lnet/minecraft/class_12137;Lnet/minecraft/class_1_1317;Lnet/minecraft/class_1_1330;Lnet/minecraft/class_1_1330;Lnet/minecraft/class_1_1257;Lnet/minecraft/class_1_1257;)V
 		ARG 1 blockRenderLayers
-		ARG 2 terrainSampler
-		ARG 5 pipeline
-		ARG 6 reverseTranslucent
-	METHOD method_1_7512 draw (Lnet/minecraft/class_12137;Lnet/minecraft/class_1_1153;Lnet/minecraft/class_1_1174$class_1_1175;Lnet/minecraft/class_1_1330;)V
+		ARG 6 pipeline
+	METHOD method_1_7512 draw (Lnet/minecraft/class_12137;Lnet/minecraft/class_1_1153;Lnet/minecraft/class_1_1174$class_1_1175;Lnet/minecraft/class_1_1330;Lnet/minecraft/class_1_1330;)V
 		ARG 1 terrainSampler
 		ARG 2 oitStage
 		ARG 3 oitTextures

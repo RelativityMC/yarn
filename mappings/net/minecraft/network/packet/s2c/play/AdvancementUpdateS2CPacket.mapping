@@ -11,8 +11,8 @@ CLASS net/minecraft/class_2779 net/minecraft/network/packet/s2c/play/Advancement
 		ARG 3 toRemove
 		ARG 4 toSetProgress
 		ARG 5 showToast
-	METHOD comp_1_1477 getAdvancementsToEarn ()Ljava/util/List;
-	METHOD comp_1_1478 getAdvancementsToProgress ()Ljava/util/Map;
-	METHOD comp_1_1479 getAdvancementIdsToRemove ()Ljava/util/Set;
-	METHOD comp_1_1480 shouldClearCurrent ()Z
-	METHOD comp_1_1481 shouldShowToast ()Z
+	METHOD comp_1_1477 toEarn ()Ljava/util/List;
+	METHOD comp_1_1478 toSetProgress ()Ljava/util/Map;
+	METHOD comp_1_1479 toRemove ()Ljava/util/Set;
+	METHOD comp_1_1480 clearCurrent ()Z
+	METHOD comp_1_1481 showToast ()Z

@@ -11,12 +11,12 @@ CLASS net/minecraft/class_6606 net/minecraft/network/packet/s2c/play/LightData
 		ARG 2 lightProvider
 		ARG 3 skyBits
 		ARG 4 blockBits
-	METHOD comp_1_1471 getBlockNibbles ()Ljava/util/List;
-	METHOD comp_1_1472 getInitedBlock ()Ljava/util/BitSet;
-	METHOD comp_1_1473 getUninitedBlock ()Ljava/util/BitSet;
-	METHOD comp_1_1474 getUninitedSky ()Ljava/util/BitSet;
-	METHOD comp_1_1475 getSkyNibbles ()Ljava/util/List;
-	METHOD comp_1_1476 getInitedSky ()Ljava/util/BitSet;
+	METHOD comp_1_1471 blockNibbles ()Ljava/util/List;
+	METHOD comp_1_1472 initedBlock ()Ljava/util/BitSet;
+	METHOD comp_1_1473 uninitedBlock ()Ljava/util/BitSet;
+	METHOD comp_1_1474 uninitedSky ()Ljava/util/BitSet;
+	METHOD comp_1_1475 skyNibbles ()Ljava/util/List;
+	METHOD comp_1_1476 initedSky ()Ljava/util/BitSet;
 	METHOD method_38602 putChunk (Lnet/minecraft/class_1923;Lnet/minecraft/class_3568;Lnet/minecraft/class_1944;ILjava/util/BitSet;Ljava/util/BitSet;Ljava/util/List;)V
 		ARG 1 pos
 		ARG 2 lightProvider

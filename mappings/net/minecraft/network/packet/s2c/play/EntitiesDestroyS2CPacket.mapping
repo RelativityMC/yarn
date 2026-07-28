@@ -3,4 +3,4 @@ CLASS net/minecraft/class_2716 net/minecraft/network/packet/s2c/play/EntitiesDes
 	FIELD field_47959 CODEC Lnet/minecraft/class_9139;
 	METHOD <init> ([I)V
 		ARG 1 entityIds
-	METHOD comp_1_1470 getEntityIds ()Lit/unimi/dsi/fastutil/ints/IntList;
+	METHOD comp_1_1470 entityIds ()Lit/unimi/dsi/fastutil/ints/IntList;

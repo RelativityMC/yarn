@@ -3,7 +3,7 @@ CLASS net/minecraft/class_6748 net/minecraft/world/gen/chunk/Blender
 	FIELD field_35502 BLENDING_BIOME_DISTANCE_THRESHOLD I
 	FIELD field_35503 BLENDING_CHUNK_DISTANCE_THRESHOLD I
 	FIELD field_35505 CLOSE_BLENDING_DISTANCE_THRESHOLD I
-	FIELD field_35681 OFFSET_NOISE Lnet/minecraft/class_5216;
+	FIELD field_35681 OFFSET_NOISE Lnet/minecraft/class_1_1397;
 	FIELD field_36343 blendingData Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;
 	FIELD field_36344 closeBlendingData Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;
 	METHOD <init> (Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;)V

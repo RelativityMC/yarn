@@ -9,7 +9,7 @@ CLASS net/minecraft/class_2672 net/minecraft/network/packet/s2c/play/ChunkDataS2
 		ARG 2 lightProvider
 		ARG 3 skyBits
 		ARG 4 blockBits
-	METHOD comp_1_1482 getChunkData ()Lnet/minecraft/class_6603;
-	METHOD comp_1_1483 getLightData ()Lnet/minecraft/class_6606;
-	METHOD comp_1_1484 getChunkX ()I
-	METHOD comp_1_1485 getChunkZ ()I
+	METHOD comp_1_1482 chunkData ()Lnet/minecraft/class_6603;
+	METHOD comp_1_1483 lightData ()Lnet/minecraft/class_6606;
+	METHOD comp_1_1484 chunkX ()I
+	METHOD comp_1_1485 chunkZ ()I

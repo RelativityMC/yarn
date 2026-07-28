@@ -15,7 +15,6 @@ CLASS net/minecraft/class_10866 net/minecraft/client/gl/GlRenderPassBackend
 	FIELD field_57875 setSimpleUniforms Lit/unimi/dsi/fastutil/booleans/BooleanList;
 	FIELD field_57877 commandEncoder Lnet/minecraft/class_10860;
 	METHOD <init> (Lnet/minecraft/class_10860;Lnet/minecraft/class_10865;ILnet/minecraft/class_11219;)V
-		ARG 1 commandEncoder
 		ARG 2 device
 		ARG 3 numColorAttachments
 		ARG 4 defaultScissorState

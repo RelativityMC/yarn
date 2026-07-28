@@ -8,6 +8,6 @@ CLASS net/minecraft/class_2676 net/minecraft/network/packet/s2c/play/LightUpdate
 		ARG 2 lightProvider
 		ARG 3 skyBits
 		ARG 4 blockBits
-	METHOD comp_1_1462 getData ()Lnet/minecraft/class_6606;
-	METHOD comp_1_1463 getChunkX ()I
-	METHOD comp_1_1464 getChunkZ ()I
+	METHOD comp_1_1462 data ()Lnet/minecraft/class_6606;
+	METHOD comp_1_1463 chunkX ()I
+	METHOD comp_1_1464 chunkZ ()I

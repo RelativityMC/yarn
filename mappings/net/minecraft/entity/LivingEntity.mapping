@@ -129,9 +129,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_1_6521 getRecentDamageSource (I)Lnet/minecraft/class_1282;
 		ARG 1 maxTicksSinceDamage
 	METHOD method_1_6522 isHurting ()Z
-	METHOD method_1_7652 setPositionInBed (Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;)V
-		ARG 1 state
-		ARG 2 pos
+	METHOD method_1_7652 setPositionInBed (Lnet/minecraft/class_2338;)Z
 	METHOD method_5673 setEquipment (Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;)V
 		ARG 1 slot
 		ARG 2 stack
@@ -451,7 +449,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_18401 getSleepingDirection ()Lnet/minecraft/class_2350;
 	METHOD method_18402 setSleepingPosition (Lnet/minecraft/class_2338;)V
 		ARG 1 pos
-	METHOD method_18403 sleep (Lnet/minecraft/class_2338;)V
+	METHOD method_18403 sleep (Lnet/minecraft/class_2338;)Z
 		ARG 1 pos
 	METHOD method_18404 (Lnet/minecraft/class_2338;)V
 		ARG 1 pos

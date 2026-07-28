@@ -31,8 +31,6 @@ CLASS net/minecraft/class_1542 net/minecraft/entity/ItemEntity
 		ARG 9 velocityX
 		ARG 11 velocityY
 		ARG 13 velocityZ
-	METHOD method_1_8586 setTimeUntilRegen (I)V
-		ARG 1 timeUntilRegen
 	METHOD method_6972 tryMerge (Lnet/minecraft/class_1542;)V
 		ARG 1 other
 	METHOD method_6973 tryMerge ()V

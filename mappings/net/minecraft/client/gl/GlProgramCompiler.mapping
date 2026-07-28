@@ -17,14 +17,12 @@ CLASS net/minecraft/class_1_1391 net/minecraft/client/gl/GlProgramCompiler
 		ARG 3 source
 	METHOD method_1_9128 decompileToGlsl (Lnet/minecraft/class_1_1386$class_1_1387$class_1_1389;)Ljava/lang/String;
 		ARG 1 shader
-	METHOD method_1_9129 assignUniformResourceNames (JJLjava/nio/IntBuffer;I)V
+	METHOD method_1_9129 assignUniformResourceNames (JJI)V
 		ARG 1 compiler
 		ARG 3 resources
-		ARG 5 spirv
-		ARG 6 resourceType
-	METHOD method_1_9130 assignResourceNames (JJLjava/nio/IntBuffer;ILjava/lang/String;)V
+		ARG 5 resourceType
+	METHOD method_1_9130 assignResourceNames (JJILjava/lang/String;)V
 		ARG 1 compiler
 		ARG 3 resources
-		ARG 5 spirv
-		ARG 6 resourceType
-		ARG 7 nameFormat
+		ARG 5 resourceType
+		ARG 6 nameFormat

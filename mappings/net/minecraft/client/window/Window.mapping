@@ -70,8 +70,7 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 		ARG 1 event
 	METHOD method_1_8446 isWindowExclusiveFullscreen ()Z
 	METHOD method_1_8447 isWindowFullscreen ()Z
-	METHOD method_1_8448 onFullscreenChanged (Z)V
-		ARG 1 fullscreen
+	METHOD method_1_8448 onFullscreenChanged ()V
 	METHOD method_1_8449 getSize ()Lnet/minecraft/class_1041$class_1_1301;
 	METHOD method_1_8450 onQuit ()V
 	METHOD method_1_8451 setExclusiveFullscreen (Z)V

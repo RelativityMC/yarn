@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_11907 net/minecraft/client/input/AbstractInput
-	FIELD field_62593 NOT_A_NUMBER I
 	METHOD method_1_8658 getKey ()I
 	METHOD method_74228 getScancode ()I
 	METHOD method_74229 isEnterOrSpace ()Z
@@ -10,7 +9,6 @@ CLASS net/minecraft/class_11907 net/minecraft/client/input/AbstractInput
 	METHOD method_74234 isUp ()Z
 	METHOD method_74235 isDown ()Z
 	METHOD method_74236 isTab ()Z
-	METHOD method_74237 asNumber ()I
 	METHOD method_74238 hasAlt ()Z
 	METHOD method_74239 hasShift ()Z
 	METHOD method_74240 hasCtrl ()Z

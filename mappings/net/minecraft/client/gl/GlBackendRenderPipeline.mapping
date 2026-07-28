@@ -2,7 +2,7 @@ CLASS net/minecraft/class_10867 net/minecraft/client/gl/GlBackendRenderPipeline
 	FIELD field_1_7975 closed Z
 	FIELD field_1_7976 backend Lnet/minecraft/class_10865;
 	FIELD field_1_7978 shaderProgram Lnet/minecraft/class_5944;
-	FIELD field_1_9478 hasBlend Z
+	FIELD field_1_9478 hasBlend [Z
 	FIELD field_1_9479 cull Z
 	FIELD field_1_9480 depthBiasConstant F
 	FIELD field_1_9481 depthBiasScaleFactor F

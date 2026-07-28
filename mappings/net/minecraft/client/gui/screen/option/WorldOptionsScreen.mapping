@@ -5,7 +5,7 @@ CLASS net/minecraft/class_1_125 net/minecraft/client/gui/screen/option/WorldOpti
 	FIELD field_1_1052 parent Lnet/minecraft/class_437;
 	FIELD field_1_1053 layoutWidget Lnet/minecraft/class_8132;
 	FIELD field_1_1970 RESTRICTIONS_SCREEN_BUTTON_TEXT Lnet/minecraft/class_2561;
-	FIELD field_1_2542 difficultySelection Lnet/minecraft/class_1_181;
+	FIELD field_1_2542 difficultySelection Lnet/minecraft/class_1_125$class_1_181;
 	FIELD field_1_7150 ALLOW_COMMANDS_TEXT Lnet/minecraft/class_2561;
 	FIELD field_1_7151 GAME_MODE_TEXT Lnet/minecraft/class_2561;
 	FIELD field_1_7160 ALLOW_COMMANDS_DISABLED_TOOLTIP Lnet/minecraft/class_7919;
@@ -15,7 +15,6 @@ CLASS net/minecraft/class_1_125 net/minecraft/client/gui/screen/option/WorldOpti
 	FIELD field_1_7164 gameModeButton Lnet/minecraft/class_5676;
 	FIELD field_1_7165 gameRulesButton Lnet/minecraft/class_4185;
 	METHOD <init> (Lnet/minecraft/class_437;Lnet/minecraft/class_1937;)V
-		ARG 1 parent
 		ARG 2 world
 	METHOD method_1_1103 createGameRulesButton (Lnet/minecraft/class_1132;)Lnet/minecraft/class_4185;
 		ARG 1 server
@@ -25,8 +24,6 @@ CLASS net/minecraft/class_1_125 net/minecraft/client/gui/screen/option/WorldOpti
 		ARG 1 ruleSave
 	METHOD method_1_1108 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
-	METHOD method_1_1109 (Lnet/minecraft/class_1_125;Lnet/minecraft/class_339;)V
-		ARG 1 child
 	METHOD method_1_2399 createRestrictionsScreenButton ()Lnet/minecraft/class_4185;
 	METHOD method_1_2400 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
@@ -34,14 +31,15 @@ CLASS net/minecraft/class_1_125 net/minecraft/client/gui/screen/option/WorldOpti
 		ARG 1 server
 	METHOD method_1_6404 createGameModeButton (Lnet/minecraft/class_1132;)Lnet/minecraft/class_5676;
 		ARG 1 server
-	METHOD method_1_6405 (Lnet/minecraft/class_1132;Lnet/minecraft/class_5676;Ljava/lang/Boolean;)V
-		ARG 1 button
-		ARG 2 value
-	METHOD method_1_6406 (Lnet/minecraft/class_1132;Lnet/minecraft/class_5676;Lnet/minecraft/class_1934;)V
-		ARG 1 button
-		ARG 2 value
 	METHOD method_1_6416 configureGameplaySelector (Lnet/minecraft/class_339;Lnet/minecraft/class_1132;Lnet/minecraft/class_7919;Lnet/minecraft/class_7919;)V
 		ARG 1 selectorWidget
 		ARG 2 server
 		ARG 3 hardcoreTooltip
 		ARG 4 insufficientPermissionsTooltip
+	CLASS class_1_181 DifficultySelection
+		METHOD method_1_1620 createDifficultySelector (Lnet/minecraft/class_310;Lnet/minecraft/class_1937;Lnet/minecraft/class_1_125;)Lnet/minecraft/class_1_125$class_1_181;
+			ARG 0 client
+			ARG 1 world
+		METHOD method_1_1621 isDifficultyLocked (Lnet/minecraft/class_1937;)Z
+			ARG 0 world
+		METHOD method_1_3057 update (Lnet/minecraft/class_310;)V

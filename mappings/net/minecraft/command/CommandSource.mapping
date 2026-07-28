@@ -90,12 +90,8 @@ CLASS net/minecraft/class_2172 net/minecraft/command/CommandSource
 		ARG 0 candidates
 		ARG 1 builder
 		ARG 2 prefix
-	METHOD method_41213 listIdSuggestions (Lnet/minecraft/class_5321;Lnet/minecraft/class_2172$class_7078;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Lcom/mojang/brigadier/context/CommandContext;)Ljava/util/concurrent/CompletableFuture;
-		ARG 1 registryRef
-		ARG 2 suggestedIdType
-		ARG 3 builder
-		ARG 4 context
-	METHOD method_41214 suggestIdentifiers (Lnet/minecraft/class_7225;Lnet/minecraft/class_2172$class_7078;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)V
+	METHOD method_41213 listIdSuggestions (Lnet/minecraft/class_5321;Lnet/minecraft/class_2172$class_7078;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Lcom/mojang/brigadier/context/CommandContext;Ljava/util/function/Predicate;)Ljava/util/concurrent/CompletableFuture;
+	METHOD method_41214 suggestIdentifiers (Lnet/minecraft/class_7225;Lnet/minecraft/class_2172$class_7078;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Ljava/util/function/Predicate;)V
 		ARG 1 registry
 		ARG 2 suggestedIdType
 		ARG 3 builder

@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_1423 net/minecraft/world/gen/densityfunction/Tiling
+	FIELD field_1_9691 name Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+		ARG 3 name

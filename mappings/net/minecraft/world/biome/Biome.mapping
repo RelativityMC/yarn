@@ -14,7 +14,9 @@ CLASS net/minecraft/class_1959 net/minecraft/world/biome/Biome
 	FIELD field_63809 environmentAttributes Lnet/minecraft/class_12199;
 	METHOD <init> (Lnet/minecraft/class_1959$class_5482;Lnet/minecraft/class_12199;Lnet/minecraft/class_4763;Lnet/minecraft/class_5485;)V
 		ARG 1 weather
-		ARG 3 biomeEffects
+		ARG 2 environmentAttributes
+		ARG 3 effects
+		ARG 4 generationSettings
 	METHOD method_8685 canSetIce (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;Z)Z
 		ARG 1 world
 		ARG 2 pos

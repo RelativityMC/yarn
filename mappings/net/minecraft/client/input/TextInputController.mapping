@@ -1,10 +1,17 @@
-CLASS net/minecraft/class_1_490 net/minecraft/client/input/ImeStatusController
+CLASS net/minecraft/class_1_490 net/minecraft/client/input/TextInputController
 	FIELD field_1_2577 editing Z
 		COMMENT Whether the player is currently editing some text.
 	FIELD field_1_2578 window Lnet/minecraft/class_1041;
+	FIELD field_1_9032 element Ljava/lang/Object;
+	FIELD field_1_9537 height I
+	FIELD field_1_9538 width I
+	FIELD field_1_9539 x I
+	FIELD field_1_9540 y I
+	FIELD field_1_9541 initialized Z
 	METHOD <init> (Lnet/minecraft/class_1041;)V
 		ARG 1 window
 	METHOD method_1_3109 setEditing (Ljava/lang/Object;Z)V
+		ARG 1 element
 		ARG 2 editing
 	METHOD method_1_3111 setCursorRectangle (IIII)V
 		ARG 1 left
@@ -12,4 +19,8 @@ CLASS net/minecraft/class_1_490 net/minecraft/client/input/ImeStatusController
 		ARG 3 right
 		ARG 4 bottom
 	METHOD method_1_3112 startEditing (Ljava/lang/Object;)V
+		ARG 1 element
 	METHOD method_1_3113 stopEditing ()V
+	METHOD method_1_8635 stopEditing (Ljava/lang/Object;)V
+		ARG 1 element
+	METHOD method_1_9188 setTextInputArea ()V

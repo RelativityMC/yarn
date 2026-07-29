@@ -11,6 +11,7 @@ CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 	FIELD field_1_8193 ITEM_TRANSLUCENT_GLINT_SPECIAL Ljava/util/function/Function;
 	FIELD field_1_8194 LINES_TRANSLUCENT_DEPTH_BIAS Lnet/minecraft/class_1921;
 	FIELD field_1_8195 OIT_WATER_MASK Lnet/minecraft/class_1921;
+	FIELD field_1_9477 LINES_TRANSLUCENT_NO_DEPTH_WRITE Lnet/minecraft/class_1921;
 	FIELD field_64017 ENTITY_GLINT Lnet/minecraft/class_1921;
 	FIELD field_64018 CRUMBLING Ljava/util/function/Function;
 	FIELD field_64019 TEXT Ljava/util/function/Function;
@@ -108,6 +109,7 @@ CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 	METHOD method_1_7484 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
 	METHOD method_1_7485 lintsTranslucentDepthBias ()Lnet/minecraft/class_1921;
+	METHOD method_1_9112 linesTranslucentNoDepthWrite ()Lnet/minecraft/class_1921;
 	METHOD method_75942 blockScreenEffect (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
 	METHOD method_75943 fireScreenEffect (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;

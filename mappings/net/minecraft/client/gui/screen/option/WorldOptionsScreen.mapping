@@ -14,10 +14,45 @@ CLASS net/minecraft/class_1_125 net/minecraft/client/gui/screen/option/WorldOpti
 	FIELD field_1_7163 GAME_MODE_DISABLED_OPERATOR_TOOLTIP Lnet/minecraft/class_7919;
 	FIELD field_1_7164 gameModeButton Lnet/minecraft/class_5676;
 	FIELD field_1_7165 gameRulesButton Lnet/minecraft/class_4185;
+	FIELD field_1_9577 ALLOW_COMMANDS_DISABLED_DEMO_TOOLTIP Lnet/minecraft/class_7919;
+	FIELD field_1_9578 APPLY_CHANGES_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_9579 WORLD_OPTIONS_GENERAL_TITLE Lnet/minecraft/class_2561;
+	FIELD field_1_9580 GUEST_COMMAND_ACCESS_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_9581 GUEST_COMMAND_ACCESS_DISABLED_COMMANDS_TOOLTIP Lnet/minecraft/class_7919;
+	FIELD field_1_9582 GUEST_COMMAND_ACCESS_DISABLED_SCOPE_TOOLTIP Lnet/minecraft/class_7919;
+	FIELD field_1_9583 GUEST_COMMAND_ACCESS_TOOLTIP Lnet/minecraft/class_7919;
+	FIELD field_1_9584 LAN_SERVER_PORT_INVALID_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_9585 MULTIPLAYER_TITLE Lnet/minecraft/class_2561;
+	FIELD field_1_9586 MAX_PORT I
+	FIELD field_1_9587 LAN_SERVER_PORT_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_9588 MIN_PORT I
+	FIELD field_1_9589 LAN_SERVER_PORT_UNAVAILABLE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_9590 applyChangesButton Lnet/minecraft/class_4185;
+	FIELD field_1_9591 guestCommandAccessButton Lnet/minecraft/class_5676;
+	FIELD field_1_9592 lastSavedAllowCommands Ljava/lang/Boolean;
+	FIELD field_1_9593 lastDifficulty Lnet/minecraft/class_1267;
+	FIELD field_1_9594 lastDifficultyLocked Ljava/lang/Boolean;
+	FIELD field_1_9595 lastGameMode Lnet/minecraft/class_1934;
+	FIELD field_1_9596 lastAllowCommandsTemporarily Ljava/lang/Boolean;
+	FIELD field_1_9597 lastShareSetting Lnet/minecraft/server/MinecraftServer$class_1_908;
+	FIELD field_1_9598 lastPort I
+	FIELD field_1_9599 world Lnet/minecraft/class_1937;
+	FIELD field_1_9600 lanServerPortField Lnet/minecraft/class_342;
+	FIELD field_1_9601 port I
+	FIELD field_1_9602 lanServerPortLabel Lnet/minecraft/class_7842;
+	FIELD field_1_9603 portValid Z
+	FIELD field_1_9604 scrollableBody Lnet/minecraft/class_11467;
+	FIELD field_1_9605 savedAllowCommands Ljava/lang/Boolean;
+	FIELD field_1_9606 difficulty Lnet/minecraft/class_1267;
+	FIELD field_1_9607 difficultyLocked Ljava/lang/Boolean;
+	FIELD field_1_9608 gameMode Lnet/minecraft/class_1934;
+	FIELD field_1_9609 allowCommandsTemporarily Ljava/lang/Boolean;
+	FIELD field_1_9610 shareSetting Lnet/minecraft/server/MinecraftServer$class_1_908;
 	METHOD <init> (Lnet/minecraft/class_437;Lnet/minecraft/class_1937;)V
+		ARG 1 parent
 		ARG 2 world
 	METHOD method_1_1103 createGameRulesButton (Lnet/minecraft/class_1132;)Lnet/minecraft/class_4185;
-		ARG 1 server
+		ARG 1 integratedServer
 	METHOD method_1_1106 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
 	METHOD method_1_1107 (Ljava/util/Optional;)V
@@ -31,15 +66,84 @@ CLASS net/minecraft/class_1_125 net/minecraft/client/gui/screen/option/WorldOpti
 		ARG 1 server
 	METHOD method_1_6404 createGameModeButton (Lnet/minecraft/class_1132;)Lnet/minecraft/class_5676;
 		ARG 1 server
+	METHOD method_1_6405 (Lnet/minecraft/class_1132;Lnet/minecraft/class_5676;Ljava/lang/Boolean;)V
+		ARG 2 button
+		ARG 3 value
 	METHOD method_1_6416 configureGameplaySelector (Lnet/minecraft/class_339;Lnet/minecraft/class_1132;Lnet/minecraft/class_7919;Lnet/minecraft/class_7919;)V
 		ARG 1 selectorWidget
 		ARG 2 server
 		ARG 3 hardcoreTooltip
 		ARG 4 insufficientPermissionsTooltip
+	METHOD method_1_9223 applyChanges (Lnet/minecraft/class_1132;)V
+		ARG 1 integratedServer
+	METHOD method_1_9224 changeShareSetting (Lnet/minecraft/class_1132;)V
+		ARG 1 integratedServer
+	METHOD method_1_9225 addBaseContents (Lnet/minecraft/class_8667;Lnet/minecraft/class_1132;)V
+		ARG 1 body
+		ARG 2 integratedServer
+	METHOD method_1_9226 canApplyChanges ()Z
+	METHOD method_1_9227 isChanged ()Z
+	METHOD method_1_9228 (Lnet/minecraft/class_5676;Lnet/minecraft/class_1934;)V
+		ARG 1 button
+		ARG 2 value
+	METHOD method_1_9229 (Lnet/minecraft/class_1132;Lnet/minecraft/class_4185;)V
+		ARG 2 button
+	METHOD method_1_9230 (Ljava/lang/Boolean;)Lnet/minecraft/class_7919;
+		ARG 0 on
+	METHOD method_1_9231 (Lnet/minecraft/class_1132;Lnet/minecraft/class_5676;Ljava/lang/Boolean;)V
+		ARG 2 button
+		ARG 3 value
+	METHOD method_1_9232 (Ljava/lang/Boolean;)Lnet/minecraft/class_7919;
+		ARG 0 value
+	METHOD method_1_9233 (Lnet/minecraft/class_5676;Ljava/lang/Boolean;)V
+		ARG 1 button
+		ARG 2 value
+	METHOD method_1_9234 (Ljava/lang/String;)V
+		ARG 1 value
+	METHOD method_1_9235 changedLanPort ()Z
+	METHOD method_1_9236 addIntegratedServerSpecificContents (Lnet/minecraft/class_8667;Lnet/minecraft/class_1132;)V
+		ARG 1 body
+		ARG 2 server
+	METHOD method_1_9237 isSharedToLan ()Z
+	METHOD method_1_9238 publish (Lnet/minecraft/class_1132;Lnet/minecraft/server/MinecraftServer$class_1_908;)V
+		ARG 1 integratedServer
+		ARG 2 shareSetting
+	METHOD method_1_9239 notifyShareSettingChange (Lnet/minecraft/class_2561;)V
+		ARG 1 message
+	METHOD method_1_9240 setLanServerPortError (Lnet/minecraft/class_342;Lnet/minecraft/class_2561;)V
+		ARG 1 textField
+		ARG 2 error
+	METHOD method_1_9241 parsePort (Ljava/lang/String;)Lnet/minecraft/class_2561;
+		ARG 1 portString
+	METHOD method_1_9242 updateApplyChangesButton ()V
+	METHOD method_1_9243 updateGuestCommandAccess (Lnet/minecraft/class_1132;)V
+		ARG 1 integratedServer
+	METHOD method_1_9244 updateLanServerPortField ()V
 	CLASS class_1_181 DifficultySelection
+		FIELD field_1_9611 DISABLED_HARDCORE_TOOLTIP Lnet/minecraft/class_7919;
+		FIELD field_1_9612 DISABLED_LOCKED_TOOLTIP Lnet/minecraft/class_7919;
+		FIELD field_1_9613 DISABLED_OPERATOR_TOOLTIP Lnet/minecraft/class_7919;
+		FIELD field_1_9614 DIFFICULTY_LOCK_TITLE Lnet/minecraft/class_2561;
+		FIELD field_1_9615 DIFFICULTY_TEXT Lnet/minecraft/class_2561;
 		METHOD method_1_1620 createDifficultySelector (Lnet/minecraft/class_310;Lnet/minecraft/class_1937;Lnet/minecraft/class_1_125;)Lnet/minecraft/class_1_125$class_1_181;
 			ARG 0 client
 			ARG 1 world
+			ARG 2 screen
 		METHOD method_1_1621 isDifficultyLocked (Lnet/minecraft/class_1937;)Z
 			ARG 0 world
 		METHOD method_1_3057 update (Lnet/minecraft/class_310;)V
+			ARG 1 client
+		METHOD method_1_9245 (Lnet/minecraft/class_1_125;Lnet/minecraft/class_5676;Lnet/minecraft/class_1267;)V
+			ARG 1 button
+			ARG 2 value
+		METHOD method_1_9246 (Lnet/minecraft/class_310;Lnet/minecraft/class_1_125;Lnet/minecraft/class_1937;Lnet/minecraft/class_4185;)V
+			ARG 3 button
+		METHOD method_1_9247 (Lnet/minecraft/class_310;Lnet/minecraft/class_1_125;Lnet/minecraft/class_4185;Lnet/minecraft/class_8816;)V
+			ARG 3 screen
+		METHOD method_1_9248 (Lnet/minecraft/class_310;Lnet/minecraft/class_1_125;Lnet/minecraft/class_4185;Lnet/minecraft/class_8816;)V
+			ARG 3 screen
+		METHOD method_1_9249 update (Lnet/minecraft/class_310;Lnet/minecraft/class_1937;Lnet/minecraft/class_5676;Lnet/minecraft/class_347;)V
+			ARG 0 client
+			ARG 1 world
+			ARG 2 difficultyButton
+			ARG 3 lockButton

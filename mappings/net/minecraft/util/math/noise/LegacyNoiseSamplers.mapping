@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_1424 net/minecraft/util/math/noise/LegacyNoiseSamplers
+	METHOD method_1_9340 createComposite (Lnet/minecraft/class_5819;ILit/unimi/dsi/fastutil/doubles/DoubleList;)Lnet/minecraft/class_1_1403;
+		ARG 0 random
+		ARG 1 baseOctave
+		ARG 2 amplitudeModifiers
+	METHOD method_1_9341 (Ljava/lang/Double;)Z
+		ARG 0 amplitudeModifier
+	METHOD method_1_9342 skip (Lnet/minecraft/class_5819;)V
+		ARG 0 random

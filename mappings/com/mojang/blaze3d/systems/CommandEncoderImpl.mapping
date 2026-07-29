@@ -89,6 +89,7 @@ CLASS net/minecraft/class_1_1256 com/mojang/blaze3d/systems/CommandEncoderImpl
 		ARG 3 regionY
 		ARG 4 regionWidth
 		ARG 5 regionHeight
+		ARG 6 mipLevel
 	METHOD method_1_7955 (Lnet/minecraft/class_1_685;I)V
 		ARG 1 timestampQueryPool
 		ARG 2 index

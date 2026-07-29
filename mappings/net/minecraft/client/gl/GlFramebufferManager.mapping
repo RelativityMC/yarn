@@ -5,9 +5,17 @@ CLASS net/minecraft/class_1_894 net/minecraft/client/gl/GlFramebufferManager
 		ARG 2 bufferManager
 		ARG 3 colorTextures
 		ARG 4 depthTexture
+		ARG 5 mipLevel
 	METHOD method_1_5413 remove (Lnet/minecraft/class_1_894$class_1_895;)V
 		ARG 1 key
 	METHOD method_1_5414 get (Lnet/minecraft/class_10874;Ljava/util/List;Lnet/minecraft/class_1_899;I)I
+		ARG 1 bufferManager
+		ARG 2 colorTextures
+		ARG 3 depthTexture
+		ARG 4 mipLevel
+	METHOD method_1_5415 (Lnet/minecraft/class_1_894$class_1_895;Lnet/minecraft/class_10874;Ljava/util/List;Lnet/minecraft/class_1_899;ILjava/lang/Object;)I
+		ARG 6 key
+	METHOD method_1_9317 get (Lnet/minecraft/class_10874;Ljava/util/List;Lnet/minecraft/class_1_899;)I
 		ARG 1 bufferManager
 		ARG 2 colorTextures
 		ARG 3 depthTexture
@@ -19,5 +27,6 @@ CLASS net/minecraft/class_1_894 net/minecraft/client/gl/GlFramebufferManager
 		METHOD <init> (Ljava/util/List;Lnet/minecraft/class_1_899;I)V
 			ARG 1 colorTextures
 			ARG 2 depthTexture
+			ARG 3 mipLevel
 		METHOD equals (Ljava/lang/Object;)Z
 			ARG 1 other

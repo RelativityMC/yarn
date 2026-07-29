@@ -1,6 +1,8 @@
 CLASS net/minecraft/class_5761 net/minecraft/entity/Bucketable
 	METHOD method_1_4044 canBeBucketedBy (Lnet/minecraft/class_1799;)Z
 		ARG 1 stack
+	METHOD method_1_5403 (Lnet/minecraft/class_1308;Ljava/lang/Boolean;)V
+		ARG 1 persistent
 	METHOD method_6452 getBucketItem ()Lnet/minecraft/class_1799;
 	METHOD method_6453 isFromBucket ()Z
 	METHOD method_6454 setFromBucket (Z)V

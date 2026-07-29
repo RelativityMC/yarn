@@ -55,3 +55,4 @@ CLASS net/minecraft/class_1_1025 net/minecraft/client/vulkan/VulkanGpuBufferAllo
 			ARG 5 size
 			ARG 6 commandBufferIndex
 	CLASS class_1_1027 MappedVkBuffer
+	CLASS class_1_1421 HostDeviceMappedBuffer

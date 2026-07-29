@@ -26,6 +26,26 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 	METHOD method_1_8821 sub (Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
 		ARG 0 a
 		ARG 1 b
+	METHOD method_1_9253 distanceToPoint (Lnet/minecraft/class_2382;Lnet/minecraft/class_1_1426;)Lnet/minecraft/class_6910;
+		ARG 0 point
+		ARG 1 metric
+	METHOD method_1_9254 gradient (Lnet/minecraft/class_2350$class_2351;Lnet/minecraft/class_1_1423;IIDD)Lnet/minecraft/class_6910;
+		ARG 0 axis
+		ARG 1 tiling
+		ARG 2 fromCoordinate
+		ARG 3 toCoordinate
+		ARG 4 fromValue
+		ARG 6 toValue
+	METHOD method_1_9255 pow (Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 a
+		ARG 1 b
+	METHOD method_1_9256 slice (Lnet/minecraft/class_2350$class_2351;ILnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 axis
+		ARG 1 coordinate
+		ARG 2 input
+	METHOD method_1_9257 sliceY (Lnet/minecraft/class_6910;I)Lnet/minecraft/class_6910;
+		ARG 0 input
+		ARG 1 y
 	METHOD method_40479 zero ()Lnet/minecraft/class_6910;
 	METHOD method_40480 constant (D)Lnet/minecraft/class_6910;
 		ARG 0 density
@@ -166,11 +186,27 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 			METHOD method_1_8831 (Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6916$class_1_1340;
 				ARG 1 input
 				ARG 2 multiple
+	CLASS class_1_1399 DistanceToPoint
+		METHOD method_1_9258 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+	CLASS class_1_1400 Gradient
+		METHOD method_1_9259 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+		METHOD method_1_9261 validate (Lnet/minecraft/class_6916$class_1_1400;)Lcom/mojang/serialization/DataResult;
+			ARG 0 density
+	CLASS class_1_1401 Pow
+		METHOD method_1_9262 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+	CLASS class_1_1402 Slice
+		METHOD method_1_9263 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
 	CLASS class_6917 BinaryOperation
 		METHOD <init> (Lnet/minecraft/class_6916$class_7055$class_6918;Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;)V
 			ARG 1 type
 			ARG 2 left
 			ARG 3 right
+		METHOD equals (Ljava/lang/Object;)Z
+			ARG 1 other
 	CLASS class_6919 BlendAlpha
 		FIELD field_37079 CODEC Lcom/mojang/serialization/MapCodec;
 	CLASS class_6921 BlendOffset
@@ -192,6 +228,8 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 		FIELD field_37677 THRESHOLD F
 		METHOD <init> (J)V
 			ARG 1 seed
+		METHOD equals (Ljava/lang/Object;)Z
+			ARG 1 other
 		METHOD method_41529 sample (Lnet/minecraft/class_3541;II)F
 			ARG 0 sampler
 			ARG 1 x
@@ -286,6 +324,8 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 		METHOD equals (Ljava/lang/Object;)Z
 			ARG 1 other
 		METHOD method_1_4461 getSpline ()Lnet/minecraft/class_6492;
+		METHOD method_1_9264 (Lorg/apache/commons/lang3/mutable/MutableInt;Lnet/minecraft/class_6916$class_7076$class_7135;)V
+			ARG 1 densityFunction
 		METHOD method_41197 (Lnet/minecraft/class_6910$class_6915;Lnet/minecraft/class_6916$class_7076$class_7135;)Lnet/minecraft/class_6916$class_7076$class_7135;
 			ARG 1 densityFunctionWrapper
 		CLASS class_7135 DensityFunctionWrapper

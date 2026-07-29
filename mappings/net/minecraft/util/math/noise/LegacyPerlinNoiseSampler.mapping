@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_1422 net/minecraft/util/math/noise/LegacyPerlinNoiseSampler
+	COMMENT @implNote Used for the components of {@link net.minecraft.util.math.noise.InterpolatedNoiseSampler}.
+	FIELD field_1_9686 offsetScale D

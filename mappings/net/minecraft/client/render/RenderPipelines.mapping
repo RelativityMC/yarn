@@ -84,6 +84,14 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_1_8067 WEATHER Lnet/minecraft/class_1_1257;
 	FIELD field_1_9052 INTEGRATE_DEPTH Lnet/minecraft/class_1_1257;
 	FIELD field_1_9053 OIT_DEPTH_BOUNDS_CULL Lnet/minecraft/class_1_1257;
+	FIELD field_1_9408 LINES_TRANSLUCENT_NO_DEPTH_WRITE Lnet/minecraft/class_1_1257;
+	FIELD field_1_9552 CUTOUT_TERRAIN_MULTIDRAW Lnet/minecraft/class_1_1257;
+	FIELD field_1_9553 MULTIDRAW_TERRAIN_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
+	FIELD field_1_9554 OIT_TERRAIN_MULTIDRAW Lnet/minecraft/class_1_1165;
+	FIELD field_1_9555 OPTIONAL_PIPELINES Ljava/util/Map;
+	FIELD field_1_9556 SOLID_TERRAIN_MULTIDRAW Lnet/minecraft/class_1_1257;
+	FIELD field_1_9557 TRANSLUCENT_TERRAIN_MULTIDRAW Lnet/minecraft/class_1_1257;
+	FIELD field_1_9558 WIREFRAME_MULTIDRAW Lnet/minecraft/class_1_1257;
 	FIELD field_56812 BEACON_BEAM_TRANSLUCENT Lnet/minecraft/class_1_1257;
 	FIELD field_56814 RENDERTYPE_LEASH Lnet/minecraft/class_1_1257;
 	FIELD field_56815 RENDERTYPE_WATER_MASK Lnet/minecraft/class_1_1257;
@@ -110,7 +118,7 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_56842 OUTLINE_CULL Lnet/minecraft/class_1_1257;
 	FIELD field_56843 OUTLINE_NO_CULL Lnet/minecraft/class_1_1257;
 	FIELD field_56844 BILT_SCREEN_LIGHTMAP Lnet/minecraft/class_1_1257;
-	FIELD field_56845 PIPELINES Ljava/util/Map;
+	FIELD field_56845 REQUIRED_PIPELINES Ljava/util/Map;
 	FIELD field_56853 TERRAIN_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_56854 ENTITY_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_56855 RENDERTYPE_BEACON_BEAM_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
@@ -197,6 +205,15 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 		ARG 0 builder
 	METHOD method_1_7370 register (Lnet/minecraft/class_1_1165;)Lnet/minecraft/class_1_1165;
 		ARG 0 oitPipelineSet
-	METHOD method_67886 getAll ()Ljava/util/List;
+	METHOD method_1_9076 (Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 0 builder
+	METHOD method_1_9077 (Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 0 builder
+	METHOD method_1_9199 (Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 0 builder
+	METHOD method_1_9200 getOptional ()Ljava/util/List;
+	METHOD method_1_9201 registerOptional (Lnet/minecraft/class_1_1257;)Lnet/minecraft/class_1_1257;
+		ARG 0 pipeline
+	METHOD method_67886 getRequired ()Ljava/util/List;
 	METHOD method_67887 register (Lnet/minecraft/class_1_1257;)Lnet/minecraft/class_1_1257;
 		ARG 0 pipeline

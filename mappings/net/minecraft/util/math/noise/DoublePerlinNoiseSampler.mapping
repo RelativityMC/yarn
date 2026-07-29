@@ -1,7 +1,0 @@
-CLASS net/minecraft/class_5216 net/minecraft/util/math/noise/DoublePerlinNoiseSampler
-	FIELD field_31702 DOMAIN_SCALE D
-	FIELD field_37207 parameters Lnet/minecraft/class_5216$class_1_1411;
-	METHOD method_27407 createAmplitude (I)D
-		ARG 0 octaves
-	METHOD method_39124 addDebugInfo (Ljava/lang/StringBuilder;Lnet/minecraft/class_5819;)V
-	METHOD method_40554 getMaxValue ()Lnet/minecraft/class_1_1150;

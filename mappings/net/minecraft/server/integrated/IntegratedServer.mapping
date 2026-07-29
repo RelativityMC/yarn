@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_1132 net/minecraft/server/integrated/IntegratedServer
 	FIELD field_1_6415 shareSetting Lnet/minecraft/server/MinecraftServer$class_1_908;
+	FIELD field_1_9546 allowCommands Z
 	FIELD field_5518 client Lnet/minecraft/class_310;
 	FIELD field_5519 lanPinger Lnet/minecraft/class_1133;
 	FIELD field_5520 LOGGER Lorg/slf4j/Logger;
@@ -29,10 +30,15 @@ CLASS net/minecraft/class_1132 net/minecraft/server/integrated/IntegratedServer
 		ARG 1 shareSetting
 		ARG 2 lanPort
 	METHOD method_1_6386 setAllowCommandsTemporarily (Z)V
+		ARG 1 allowCommands
 	METHOD method_1_6388 setSavedAllowCommands (Z)V
 		ARG 1 allowCommands
 	METHOD method_1_6389 setSavedGameMode (Lnet/minecraft/class_1934;)V
 		ARG 1 gameMode
+	METHOD method_1_9194 getLeveledPermissionPredicate ()Lnet/minecraft/class_12086;
+	METHOD method_1_9195 areCommandsAllowed ()Z
+	METHOD method_1_9196 resetPlayerGameModes ()I
+	METHOD method_1_9197 resendCommandTrees ()V
 	METHOD method_4817 setLocalPlayerUuid (Ljava/util/UUID;)V
 		ARG 1 localPlayerUuid
 	METHOD method_36439 incrementTotalWorldTimeStat ()V

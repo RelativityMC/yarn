@@ -16,6 +16,8 @@ CLASS net/minecraft/class_1860 net/minecraft/recipe/Recipe
 	COMMENT <p>A few of the methods in this class are dedicated to crafting recipes
 	COMMENT or recipe books. Users can have stub implementations if they do not use
 	COMMENT those functionalities.
+	FIELD field_1_8837 ENTRY_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_8838 ENTRY_LIST_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_47319 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_48356 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_56667 KEY_CODEC Lcom/mojang/serialization/Codec;

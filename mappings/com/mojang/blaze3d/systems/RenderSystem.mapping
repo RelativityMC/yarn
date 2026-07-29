@@ -95,6 +95,7 @@ CLASS net/minecraft/class_1_1307 com/mojang/blaze3d/systems/RenderSystem
 		ARG 0 window
 	METHOD method_1_8536 getDeviceOptional ()Lnet/minecraft/class_1_1313;
 	METHOD method_1_8537 unloadWindow ()V
+	METHOD method_1_9176 isWireframeSupported ()Z
 	CLASS class_5590 ShapeIndexBuffer
 		COMMENT An index buffer that holds a pre-made indices for a specific shape. If
 		COMMENT this buffer is not large enough for the required number of indices when

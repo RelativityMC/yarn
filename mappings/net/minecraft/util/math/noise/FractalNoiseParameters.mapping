@@ -1,0 +1,107 @@
+CLASS net/minecraft/class_5216 net/minecraft/util/math/noise/FractalNoiseParameters
+	FIELD field_1_9632 ENTRY_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_9633 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_9634 SUCCESSIVE_OCTAVES_FREQUENCY_FACTOR D
+	FIELD field_1_9635 MAX_AMPLITUDE_MODIFIER D
+	FIELD field_1_9636 MAX_OCTAVES I
+	FIELD field_1_9637 SUCCESSIVE_OCTAVES_AMPLITUDE_FACTOR D
+	FIELD field_1_9639 normalizationFactor D
+	FIELD field_1_9640 octaves Ljava/util/List;
+	FIELD field_1_9641 range Lnet/minecraft/class_1_1150;
+	FIELD field_31702 DOMAIN_SCALE D
+	FIELD field_37207 parameters Lnet/minecraft/class_5216$class_1_1411;
+	METHOD <init> (Lnet/minecraft/class_5216$class_1_1411;)V
+		ARG 1 parameters
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other
+	METHOD method_1_9278 getOctaves (IDIZLit/unimi/dsi/fastutil/doubles/DoubleList;)Ljava/util/List;
+		ARG 0 baseOctave
+		ARG 1 baseAmplitude
+		ARG 3 octaveCount
+		ARG 4 normalize
+		ARG 5 amplitudeModifiers
+	METHOD method_1_9279 builder ()Lnet/minecraft/class_5216$class_1_1408;
+	METHOD method_1_9280 getNormalizationFactor (DLjava/util/List;)D
+		ARG 0 totalAmplitude
+		ARG 2 octaves
+	METHOD method_1_9281 getLegacyToModernNormalizationFactor (ILit/unimi/dsi/fastutil/doubles/DoubleList;)D
+		ARG 0 baseOctave
+		ARG 1 amplitudeModifiers
+	METHOD method_1_9282 getLegacyNormalizationFactor (DILit/unimi/dsi/fastutil/doubles/DoubleList;)D
+		ARG 0 baseAmplitude
+		ARG 2 octaveCount
+		ARG 3 amplitudeModifiers
+	METHOD method_1_9283 createSampler (Lnet/minecraft/class_5819;)Lnet/minecraft/class_1_1397;
+		ARG 1 random
+	METHOD method_1_9284 createLegacySampler (Lnet/minecraft/class_5819;)Lnet/minecraft/class_1_1397;
+		COMMENT @apiNote Used for Nether temperature and vegetation noises.
+		ARG 1 random
+	METHOD method_1_9285 ofLegacy (ILit/unimi/dsi/fastutil/doubles/DoubleList;)Lnet/minecraft/class_5216;
+		ARG 0 baseOctave
+		ARG 1 amplitudeModifiers
+	METHOD method_1_9286 ofLegacy (I[D)Lnet/minecraft/class_5216;
+		ARG 0 baseOctave
+		ARG 1 amplitudeModifiers
+	METHOD method_1_9287 getScaledRmsAmplitude (Ljava/util/List;)D
+		ARG 0 octaves
+	METHOD method_1_9288 getAmplitudeModifier (Lit/unimi/dsi/fastutil/doubles/DoubleList;I)D
+		ARG 0 amplitudeModifiers
+		ARG 1 octave
+	METHOD method_1_9289 (I)D
+		ARG 1 octave
+	METHOD method_1_9290 (D)Ljava/lang/String;
+		ARG 0 amplitudeModifier
+	METHOD method_1_9291 (ILnet/minecraft/class_5216$class_1_1410;)Z
+		ARG 1 octave
+	METHOD method_1_9292 (Lnet/minecraft/class_5216;)Lnet/minecraft/class_5216$class_1_1411;
+		ARG 0 sampler
+	METHOD method_1_9293 addComponentDebugInfo (Ljava/lang/StringBuilder;Lnet/minecraft/class_5819;)V
+		ARG 1 info
+		ARG 2 random
+	METHOD method_27407 createAmplitude (I)D
+		ARG 0 octaves
+	METHOD method_39124 addDebugInfo (Ljava/lang/StringBuilder;Lnet/minecraft/class_5819;)V
+		ARG 1 info
+		ARG 2 random
+	METHOD method_40554 getRange ()Lnet/minecraft/class_1_1150;
+	CLASS class_1_1408 Builder
+		FIELD field_1_9642 amplitudeModifiers Lit/unimi/dsi/fastutil/doubles/DoubleList;
+		FIELD field_1_9643 baseAmplitude D
+		FIELD field_1_9644 baseOctave I
+		FIELD field_1_9645 normalize Lnet/minecraft/class_5216$class_1_1409;
+		FIELD field_1_9646 octaveCount I
+		METHOD method_1_9294 build ()Lnet/minecraft/class_5216;
+		METHOD method_1_9295 amplitudeModifier (ID)Lnet/minecraft/class_5216$class_1_1408;
+			ARG 1 octave
+			ARG 2 amplitudeModifier
+		METHOD method_1_9296 baseAmplitude (D)Lnet/minecraft/class_5216$class_1_1408;
+			ARG 1 baseAmplitude
+		METHOD method_1_9297 baseOctave (I)Lnet/minecraft/class_5216$class_1_1408;
+			ARG 1 baseOctave
+		METHOD method_1_9298 legacyNormalize ()Lnet/minecraft/class_5216$class_1_1408;
+		METHOD method_1_9299 normalize (Z)Lnet/minecraft/class_5216$class_1_1408;
+			ARG 1 normalize
+		METHOD method_1_9300 octaveCount (I)Lnet/minecraft/class_5216$class_1_1408;
+			ARG 1 octaveCount
+	CLASS class_1_1409 Normalize
+		FIELD field_1_9647 CODEC Lcom/mojang/serialization/Codec;
+		METHOD method_1_9302 (Ljava/lang/String;)Lcom/mojang/serialization/DataResult;
+			ARG 0 string
+		METHOD method_1_9304 (Lcom/mojang/datafixers/util/Either;)Lnet/minecraft/class_5216$class_1_1409;
+			ARG 0 either
+		METHOD method_1_9305 (Ljava/lang/Boolean;)Lnet/minecraft/class_5216$class_1_1409;
+			ARG 0 enabled
+		METHOD method_1_9306 (Ljava/lang/String;)Lnet/minecraft/class_5216$class_1_1409;
+			ARG 0 string
+		METHOD method_1_9307 (Lnet/minecraft/class_5216$class_1_1409;)Lcom/mojang/datafixers/util/Either;
+			ARG 0 mode
+	CLASS class_1_1410 Octave
+		METHOD method_1_9308 getAbsoluteAmplitude ()D
+		METHOD method_1_9309 getOctaveName ()Ljava/lang/String;
+	CLASS class_1_1411 Parameters
+		FIELD field_1_9651 AMPLITUDE_MODIFIERS_CODEC Lcom/mojang/serialization/Codec;
+		FIELD field_1_9652 CODEC Lcom/mojang/serialization/Codec;
+		METHOD method_1_9310 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+		METHOD method_1_9312 validate (Lnet/minecraft/class_5216$class_1_1411;)Lcom/mojang/serialization/DataResult;
+			ARG 0 parameters

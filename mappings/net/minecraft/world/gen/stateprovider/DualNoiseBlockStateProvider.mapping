@@ -12,5 +12,13 @@ CLASS net/minecraft/class_6578 net/minecraft/world/gen/stateprovider/DualNoiseBl
 		ARG 6 noiseParameters
 		ARG 7 scale
 		ARG 8 states
+	METHOD method_38434 (Lnet/minecraft/class_6578;)Ljava/lang/Float;
+		ARG 0 provider
 	METHOD method_38435 getSlowNoiseValue (Lnet/minecraft/class_2338;)D
 		ARG 1 pos
+	METHOD method_38436 (Lnet/minecraft/class_6578;)Lnet/minecraft/class_5216;
+		ARG 0 provider
+	METHOD method_38437 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_38438 (Lnet/minecraft/class_6578;)Lnet/minecraft/class_6497;
+		ARG 0 provider

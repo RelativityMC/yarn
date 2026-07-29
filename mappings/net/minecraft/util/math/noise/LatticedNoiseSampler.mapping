@@ -1,0 +1,26 @@
+CLASS net/minecraft/class_1_1412 net/minecraft/util/math/noise/LatticedNoiseSampler
+	FIELD field_1_9664 LATTICE_DIRS [Lnet/minecraft/class_1_1412$class_1_1413;
+	FIELD field_1_9665 COORDINATE_PERIOD I
+	FIELD field_1_9666 originX D
+	FIELD field_1_9667 originY D
+	FIELD field_1_9668 originZ D
+	FIELD field_1_9669 permutation [B
+	METHOD <init> (Lnet/minecraft/class_5819;)V
+		ARG 1 random
+	METHOD <init> (Lnet/minecraft/class_5819;D)V
+		ARG 1 random
+		ARG 2 offsetScale
+	METHOD method_1_9318 getLatticePointContribution (IDDD)D
+		ARG 0 index
+		ARG 1 dx
+		ARG 3 dy
+		ARG 5 dz
+	METHOD method_1_9319 permuteIndex (I)I
+		ARG 1 cellCoord
+	METHOD method_1_9320 wrapCoord (D)D
+		ARG 0 coordinate
+	CLASS class_1_1413 LatticePointDirection
+		METHOD method_1_9321 dot (DDD)D
+			ARG 1 x
+			ARG 3 y
+			ARG 5 z

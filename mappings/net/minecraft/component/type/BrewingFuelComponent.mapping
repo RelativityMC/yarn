@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_1_1319 net/minecraft/component/type/BrewingFuelComponent
 	FIELD field_1_9069 PACKET_CODEC Lnet/minecraft/class_9139;
+	METHOD <init> (Lnet/minecraft/class_5321;Lnet/minecraft/class_5321;)V
+		ARG 1 uses
+		ARG 2 speedMultiplier
 	METHOD method_1_8668 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance

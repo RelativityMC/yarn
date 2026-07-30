@@ -29,6 +29,10 @@ CLASS net/minecraft/class_8679 net/minecraft/client/render/ChunkRenderingDataPre
 		ARG 1 newSections
 		ARG 2 updatedSections
 	METHOD method_1_6235 getLoadedChunkPositions ()Lit/unimi/dsi/fastutil/longs/LongCollection;
+	METHOD method_1_6236 (Lnet/minecraft/class_8679$class_8681;J)V
+		ARG 2 chunkPos
+	METHOD method_1_6237 (J)V
+		ARG 1 sectionPos
 	METHOD method_1_6238 (J)Lit/unimi/dsi/fastutil/longs/LongList;
 		ARG 0 chunkPos
 	METHOD method_1_6239 updateLoadedChunks (Lit/unimi/dsi/fastutil/longs/LongOpenHashSet;Lit/unimi/dsi/fastutil/longs/LongOpenHashSet;)V
@@ -72,6 +76,7 @@ CLASS net/minecraft/class_8679 net/minecraft/client/render/ChunkRenderingDataPre
 		ARG 3 chunkManagerRenderState
 	METHOD method_52835 updateNow (Lnet/minecraft/class_12075;Lit/unimi/dsi/fastutil/longs/LongSet;)V
 		ARG 1 cameraRenderState
+		ARG 2 loadedChunkPositions
 	METHOD method_52836 updateFrustum ()Z
 	METHOD method_52837 getInfo (Lnet/minecraft/class_846$class_851;)Lnet/minecraft/class_8679$class_762;
 		ARG 1 chunk

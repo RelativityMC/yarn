@@ -39,7 +39,7 @@ CLASS net/minecraft/class_11532 net/minecraft/client/render/SectionRenderState
 			ARG 2 indirectDrawsByLayer
 			ARG 3 maxIndexCount
 			ARG 4 instancedChunkSectionsUniform
-	CLASS class_1_1417 Fabllback
+	CLASS class_1_1417 Fallback
 		FIELD field_1_9679 chunkSections [Lnet/minecraft/class_1_1254;
 		FIELD field_1_9680 renderObjectsByLayer Ljava/util/Map;
 		METHOD <init> (Lnet/minecraft/class_1_1254;Ljava/util/Map;I[Lnet/minecraft/class_1_1254;)V

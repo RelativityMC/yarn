@@ -51,12 +51,12 @@ CLASS net/minecraft/class_4603 net/minecraft/client/gui/hud/InGameOverlayRendere
 		ARG 1 matrices
 		ARG 2 queue
 		ARG 3 color
-	METHOD method_23067 renderOverlays (ZZFLnet/minecraft/class_11659;Z)V
-		ARG 1 firstPerson
-		ARG 2 sleeping
-		ARG 3 tickProgress
-		ARG 4 queue
-		ARG 5 hideGui
+	METHOD method_23067 renderOverlays (Lnet/minecraft/class_4604;ZZFLnet/minecraft/class_11659;Z)V
+		ARG 2 firstPerson
+		ARG 3 sleeping
+		ARG 4 tickProgress
+		ARG 5 queue
+		ARG 6 hideGui
 	METHOD method_23069 renderUnderwaterOverlay (Lnet/minecraft/class_310;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;)V
 		ARG 0 client
 		ARG 1 matrices
@@ -65,7 +65,7 @@ CLASS net/minecraft/class_4603 net/minecraft/client/gui/hud/InGameOverlayRendere
 		ARG 0 matrices
 		ARG 1 queue
 		ARG 2 sprite
-	METHOD method_24225 getInWallBlockState (Lnet/minecraft/class_1657;)Lnet/minecraft/class_2680;
+	METHOD method_24225 getInWallBlockState (Lnet/minecraft/class_1657;Lnet/minecraft/class_4604;)Lnet/minecraft/class_2680;
 		ARG 0 player
 	METHOD method_70937 tickFloatingItemTimer ()V
 	METHOD method_70938 setFloatingItem (Lnet/minecraft/class_1799;Lnet/minecraft/class_5819;)V

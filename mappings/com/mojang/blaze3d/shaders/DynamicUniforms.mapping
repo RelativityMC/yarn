@@ -2,34 +2,22 @@ CLASS net/minecraft/class_11282 com/mojang/blaze3d/shaders/DynamicUniforms
 	FIELD field_1_3648 DEFAULT_TEXTURE_MATRIX Lorg/joml/Matrix4fc;
 	FIELD field_1_3649 DEFAULT_MODEL_OFFSET Lorg/joml/Vector3fc;
 	FIELD field_1_3650 DEFAULT_COLOR_MODULATOR Lorg/joml/Vector4fc;
-	FIELD field_1_9543 TERRAIN_SIZE I
-	FIELD field_1_9544 chunkSectionDrawStorage Lnet/minecraft/class_11280;
-	FIELD field_1_9545 terrainStorage Lnet/minecraft/class_11280;
 	FIELD field_60093 TRANSFORMS_SIZE I
 	FIELD field_60094 DEFAULT_CAPACITY I
 	FIELD field_60095 transformsStorage Lnet/minecraft/class_11280;
 	FIELD field_64216 CHUNK_SECTIONS_SIZE I
 	FIELD field_64217 chunkSectionsStorage Lnet/minecraft/class_11280;
-	METHOD method_1_4251 writeTransforms (Lnet/minecraft/class_11282$class_11283;)Lnet/minecraft/class_1_1254;
-		ARG 1 value
-	METHOD method_1_4252 writeTransforms (Lorg/joml/Matrix4f;)Lnet/minecraft/class_1_1254;
+	METHOD method_1_4251 write (Lnet/minecraft/class_11282$class_11283;)Lnet/minecraft/class_1_1254;
+	METHOD method_1_4252 write (Lorg/joml/Matrix4f;)Lnet/minecraft/class_1_1254;
 		ARG 1 modelView
-	METHOD method_1_4253 writeTransforms (Lorg/joml/Matrix4f;Lorg/joml/Matrix4f;)Lnet/minecraft/class_1_1254;
+	METHOD method_1_4253 write (Lorg/joml/Matrix4f;Lorg/joml/Matrix4f;)Lnet/minecraft/class_1_1254;
 		ARG 1 modelView
 		ARG 2 textureMatrix
-	METHOD method_1_4254 writeTransforms (Lorg/joml/Matrix4f;Lorg/joml/Vector4f;)Lnet/minecraft/class_1_1254;
+	METHOD method_1_4254 write (Lorg/joml/Matrix4f;Lorg/joml/Vector4f;)Lnet/minecraft/class_1_1254;
 		ARG 1 modelView
 		ARG 2 colorModulator
-	METHOD method_1_9191 writeChunkSectionDraws (Ljava/util/List;)[Lnet/minecraft/class_1_1254;
-		ARG 1 draws
-	METHOD method_1_9192 writeChunkSectionsInstanced (Ljava/util/List;)Lnet/minecraft/class_1_1254;
-		ARG 1 chunkSectionValues
-	METHOD method_1_9193 writeTerrain (Lorg/joml/Matrix4fc;II)Lnet/minecraft/class_1_1254;
-		ARG 1 modelView
-		ARG 2 textureAtlasWidth
-		ARG 3 textureAtlasHeight
 	METHOD method_71105 clear ()V
-	METHOD method_71106 writeTransforms (Lorg/joml/Matrix4f;Lorg/joml/Vector4f;Lorg/joml/Vector3f;Lorg/joml/Matrix4f;)Lnet/minecraft/class_1_1254;
+	METHOD method_71106 write (Lorg/joml/Matrix4f;Lorg/joml/Vector4f;Lorg/joml/Vector3f;Lorg/joml/Matrix4f;)Lnet/minecraft/class_1_1254;
 		ARG 1 modelView
 		ARG 2 colorModulator
 		ARG 3 modelOffset
@@ -37,8 +25,5 @@ CLASS net/minecraft/class_11282 com/mojang/blaze3d/shaders/DynamicUniforms
 	METHOD method_71107 writeTransforms ([Lnet/minecraft/class_11282$class_11283;)[Lnet/minecraft/class_1_1254;
 		ARG 1 values
 	METHOD method_76294 writeChunkSections ([Lnet/minecraft/class_11282$class_12294;)[Lnet/minecraft/class_1_1254;
-		ARG 1 chunkSectionValues
-	CLASS class_1_1394 DrawValue
-	CLASS class_1_1395 TerrainValue
 	CLASS class_11283 TransformsValue
 	CLASS class_12294 ChunkSectionsValue

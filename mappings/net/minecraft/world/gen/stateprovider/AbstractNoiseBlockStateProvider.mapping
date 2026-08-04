@@ -9,12 +9,6 @@ CLASS net/minecraft/class_6579 net/minecraft/world/gen/stateprovider/AbstractNoi
 		ARG 4 scale
 	METHOD method_38439 fillCodecFields (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/Products$P3;
 		ARG 0 instance
-	METHOD method_38440 (Lnet/minecraft/class_6579;)Ljava/lang/Float;
-		ARG 0 provider
-	METHOD method_38441 getNoiseValue (Lnet/minecraft/class_2338;D)D
+	METHOD method_38441 getNoiseValue (Lnet/minecraft/class_2338;D)F
 		ARG 1 pos
 		ARG 2 scale
-	METHOD method_38442 (Lnet/minecraft/class_6579;)Lnet/minecraft/class_5216;
-		ARG 0 provider
-	METHOD method_38443 (Lnet/minecraft/class_6579;)Ljava/lang/Long;
-		ARG 0 provider

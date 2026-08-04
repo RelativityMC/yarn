@@ -7,7 +7,6 @@ CLASS net/minecraft/class_5797 net/minecraft/data/recipe/CraftingRecipeJsonBuild
 	METHOD method_1_1258 settings (Z)Lnet/minecraft/class_1860$class_1_145;
 		ARG 0 showNotification
 	METHOD method_10431 offerTo (Lnet/minecraft/class_8790;)V
-		ARG 1 exporter
 	METHOD method_17972 offerTo (Lnet/minecraft/class_8790;Lnet/minecraft/class_5321;)V
 		ARG 1 exporter
 		ARG 2 recipeKey

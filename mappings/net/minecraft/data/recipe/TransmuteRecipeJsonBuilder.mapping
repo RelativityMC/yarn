@@ -3,23 +3,21 @@ CLASS net/minecraft/class_10243 net/minecraft/data/recipe/TransmuteRecipeJsonBui
 	FIELD field_1_1208 advancementBuilder Lnet/minecraft/class_1_180;
 	FIELD field_1_1209 materialCount Lnet/minecraft/class_2096$class_2100;
 	FIELD field_54396 category Lnet/minecraft/class_7800;
-	FIELD field_54397 result Lnet/minecraft/class_1_107;
+	FIELD field_54397 result Lnet/minecraft/class_1_1434;
 	FIELD field_54398 input Lnet/minecraft/class_1856;
 	FIELD field_54399 material Lnet/minecraft/class_1856;
 	FIELD field_54401 group Ljava/lang/String;
-	METHOD <init> (Lnet/minecraft/class_7800;Lnet/minecraft/class_1_107;Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;)V
+	METHOD <init> (Lnet/minecraft/class_7800;Lnet/minecraft/class_1_1434;Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;)V
 		ARG 1 category
-		ARG 2 result
 		ARG 3 input
 		ARG 4 material
 	METHOD method_1_1407 addMaterialCountToResult ()Lnet/minecraft/class_10243;
 	METHOD method_1_1408 materialCount (Lnet/minecraft/class_2096$class_2100;)Lnet/minecraft/class_10243;
 		ARG 1 materialCount
-	METHOD method_1_1409 create (Lnet/minecraft/class_7800;Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_1_107;)Lnet/minecraft/class_10243;
+	METHOD method_1_1409 create (Lnet/minecraft/class_7800;Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_1_1434;)Lnet/minecraft/class_10243;
 		ARG 0 category
 		ARG 1 input
 		ARG 2 material
-		ARG 3 result
 	METHOD method_64380 create (Lnet/minecraft/class_7800;Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_1792;)Lnet/minecraft/class_10243;
 		ARG 0 category
 		ARG 1 input

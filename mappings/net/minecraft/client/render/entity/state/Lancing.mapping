@@ -14,13 +14,11 @@ CLASS net/minecraft/class_12152 net/minecraft/client/render/entity/state/Lancing
 		ARG 2 useTime
 		ARG 3 arm
 		ARG 4 stack
-	METHOD method_75393 setStabbingAngles (Lnet/minecraft/class_572;Lnet/minecraft/class_10034;)V
+	METHOD method_75393 setStabbingAngles (Lnet/minecraft/class_572;FLnet/minecraft/class_1306;)V
 		ARG 0 model
-		ARG 1 state
-	METHOD method_75394 positionArmForSpear (Lnet/minecraft/class_630;Lnet/minecraft/class_630;ZLnet/minecraft/class_1799;Lnet/minecraft/class_10034;)V
+	METHOD method_75394 positionArmForSpear (Lnet/minecraft/class_630;Lnet/minecraft/class_630;Lnet/minecraft/class_1306;Lnet/minecraft/class_1799;Lnet/minecraft/class_10034;)V
 		ARG 0 arm
 		ARG 1 head
-		ARG 2 right
 		ARG 3 itemStack
 		ARG 4 state
 	METHOD method_75395 applyStabbingTransformation (Lnet/minecraft/class_10426;Lnet/minecraft/class_4587;)V

@@ -17,11 +17,6 @@ CLASS net/minecraft/class_290 net/minecraft/client/render/VertexFormats
 	FIELD field_1_7989 POSITION_COLOR_TEXTURE_OVERLAY_LIGHT_GLINT_NORMAL Lnet/minecraft/class_1_1232;
 	FIELD field_1_7990 UV3_FORMAT Lnet/minecraft/class_1_658;
 	FIELD field_1_7991 UV3_KEY Ljava/lang/String;
-	FIELD field_1_9547 CHUNK_POSITION_VISIBILITY Lnet/minecraft/class_1_1232;
-	FIELD field_1_9548 CHUNK_POSITION_FORMAT Lnet/minecraft/class_1_658;
-	FIELD field_1_9549 CHUNK_POSITION_KEY Ljava/lang/String;
-	FIELD field_1_9550 IN_CHUNK_VISIBILITY_FORMAT Lnet/minecraft/class_1_658;
-	FIELD field_1_9551 IN_CHUNK_VISIBILITY_KEY Ljava/lang/String;
 	FIELD field_1575 POSITION_TEXTURE_COLOR Lnet/minecraft/class_1_1232;
 	FIELD field_1576 POSITION_COLOR Lnet/minecraft/class_1_1232;
 	FIELD field_1577 POSITION_TEXTURE_COLOR_NORMAL Lnet/minecraft/class_1_1232;

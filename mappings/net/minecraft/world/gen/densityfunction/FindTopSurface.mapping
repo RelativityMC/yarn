@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_11599 net/minecraft/world/gen/densityfunction/FindTopSurface
+	FIELD field_61468 CODEC_HOLDER Lcom/mojang/serialization/MapCodec;
+	METHOD method_72684 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

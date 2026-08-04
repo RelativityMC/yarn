@@ -15,7 +15,7 @@ CLASS net/minecraft/class_31 net/minecraft/world/level/LevelProperties
 	FIELD field_43352 removedFeatures Ljava/util/Set;
 	FIELD field_46838 LEVEL_NAME_KEY Ljava/lang/String;
 	FIELD field_63052 spawnPoint Lnet/minecraft/class_5217$class_12064;
-	METHOD <init> (Ljava/util/UUID;ZLnet/minecraft/class_5217$class_12064;JIZLjava/util/Set;Ljava/util/Set;Lnet/minecraft/class_1940;Lnet/minecraft/class_31$class_7729;Lcom/mojang/serialization/Lifecycle;)V
+	METHOD <init> (Ljava/util/UUID;ZLnet/minecraft/class_5217$class_12064;JIZLjava/util/Set;Ljava/util/Set;Lnet/minecraft/class_1940;Lnet/minecraft/class_31$class_7729;Lcom/mojang/serialization/Lifecycle;Ljava/util/List;)V
 		ARG 1 singleplayerUuid
 		ARG 2 modded
 		ARG 3 spawnPoint

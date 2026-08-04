@@ -35,7 +35,6 @@ CLASS net/minecraft/class_1_715 net/minecraft/client/vulkan/VulkanCommandEncoder
 		ARG 1 vkSemaphore
 		ARG 3 value
 		ARG 5 stageMask
-	METHOD method_1_4274 getCommandBuffer ()Lorg/lwjgl/vulkan/VkCommandBuffer;
 	METHOD method_1_4275 addWait (JJJ)V
 		ARG 1 vkSemaphore
 		ARG 3 value

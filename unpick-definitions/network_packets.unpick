@@ -16,8 +16,6 @@ group int s2c_animation_id
 	net.minecraft.network.packet.s2c.play.EntityAnimationS2CPacket.SWING_MAIN_HAND
 	net.minecraft.network.packet.s2c.play.EntityAnimationS2CPacket.WAKE_UP
 	net.minecraft.network.packet.s2c.play.EntityAnimationS2CPacket.SWING_OFF_HAND
-	net.minecraft.network.packet.s2c.play.EntityAnimationS2CPacket.CRIT
-	net.minecraft.network.packet.s2c.play.EntityAnimationS2CPacket.ENCHANTED_HIT
 
 target_method net.minecraft.network.packet.s2c.play.EntityAnimationS2CPacket <init> (Lnet/minecraft/entity/Entity;I)V
 	param 1 s2c_animation_id

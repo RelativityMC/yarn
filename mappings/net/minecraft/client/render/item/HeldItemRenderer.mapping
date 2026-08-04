@@ -87,7 +87,6 @@ CLASS net/minecraft/class_759 net/minecraft/client/render/item/HeldItemRenderer
 		ARG 2 tickProgress
 		ARG 3 pitch
 		ARG 4 hand
-		ARG 5 swingProgress
 		ARG 6 item
 		ARG 7 equipProgress
 		ARG 8 matrices
@@ -125,7 +124,6 @@ CLASS net/minecraft/class_759 net/minecraft/client/render/item/HeldItemRenderer
 		ARG 3 arm
 		ARG 4 player
 	METHOD method_65816 swingArm (FLnet/minecraft/class_4587;ILnet/minecraft/class_1306;)V
-		ARG 1 swingProgress
 		ARG 2 matrices
 		ARG 3 side
 			COMMENT {@code 1} for the right arm; {@code 1} for the left arm

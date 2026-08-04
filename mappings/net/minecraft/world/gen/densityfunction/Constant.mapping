@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_6923 net/minecraft/world/gen/densityfunction/Constant
+	FIELD field_37084 CODEC_HOLDER Lcom/mojang/serialization/MapCodec;
+	METHOD method_1_8822 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

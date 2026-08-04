@@ -83,7 +83,7 @@ CLASS net/minecraft/class_746 net/minecraft/client/network/ClientPlayerEntity
 		ARG 2 dz
 	METHOD method_3149 isAutoJumpEnabled ()Z
 	METHOD method_3151 getMountJumpStrength ()F
-	METHOD method_7290 dropSelectedItem (Z)Z
+	METHOD method_7290 dropSelectedItem (Z)V
 		ARG 1 entireStack
 	METHOD method_7331 requestRespawn ()V
 	METHOD method_20303 shouldSlowDown ()Z

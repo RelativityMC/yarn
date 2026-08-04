@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_860 net/minecraft/world/gen/densityfunction/IntervalSelect
+	FIELD field_1_6136 THRESHOLDS_CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_1_5229 sample (Lnet/minecraft/class_6910$class_6912;F)F
+		ARG 1 pos
+	METHOD method_1_5230 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_5233 validate ()Lcom/mojang/serialization/DataResult;

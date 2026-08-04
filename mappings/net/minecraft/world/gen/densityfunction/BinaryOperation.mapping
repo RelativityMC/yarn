@@ -1,0 +1,15 @@
+CLASS net/minecraft/class_6917 net/minecraft/world/gen/densityfunction/BinaryOperation
+	METHOD <init> (Lnet/minecraft/class_6917$class_6918;Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;)V
+		ARG 1 type
+		ARG 2 left
+		ARG 3 right
+	CLASS class_6918 Type
+		FIELD field_37111 codecHolder Lcom/mojang/serialization/MapCodec;
+		FIELD field_37112 name Ljava/lang/String;
+		METHOD method_1_8835 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 1 instance
+		METHOD method_1_8836 (Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6917;
+			ARG 1 left
+			ARG 2 right
+	CLASS class_6929 LinearOperation
+		CLASS class_6930 SpecificType

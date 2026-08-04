@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_10426 net/minecraft/client/render/entity/state/ArmedEntityRenderState
-	FIELD field_1_1069 preferredArm Lnet/minecraft/class_1306;
 	FIELD field_55303 mainArm Lnet/minecraft/class_1306;
 	FIELD field_55304 rightArmPose Lnet/minecraft/class_572$class_573;
 	FIELD field_55305 rightHandItemState Lnet/minecraft/class_10444;
@@ -7,7 +6,6 @@ CLASS net/minecraft/class_10426 net/minecraft/client/render/entity/state/ArmedEn
 	FIELD field_55307 leftHandItemState Lnet/minecraft/class_10444;
 	FIELD field_63601 rightHandItem Lnet/minecraft/class_1799;
 	FIELD field_63602 leftHandItem Lnet/minecraft/class_1799;
-	FIELD field_63603 swingAnimationType Lnet/minecraft/class_12122;
 	FIELD field_63604 handSwingProgress F
 	METHOD method_65577 updateRenderState (Lnet/minecraft/class_1309;Lnet/minecraft/class_10426;Lnet/minecraft/class_10442;F)V
 		ARG 0 entity

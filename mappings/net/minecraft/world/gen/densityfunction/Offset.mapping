@@ -1,0 +1,17 @@
+CLASS net/minecraft/class_6939 net/minecraft/world/gen/densityfunction/Offset
+	METHOD method_40525 sample (DDD)F
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	CLASS class_6934 Shift
+		FIELD field_37094 CODEC_HOLDER Lcom/mojang/serialization/MapCodec;
+		METHOD method_1_8832 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+	CLASS class_6937 ShiftA
+		FIELD field_37095 CODEC_HOLDER Lcom/mojang/serialization/MapCodec;
+		METHOD method_1_8833 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+	CLASS class_6938 ShiftB
+		FIELD field_37096 CODEC_HOLDER Lcom/mojang/serialization/MapCodec;
+		METHOD method_1_8834 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance

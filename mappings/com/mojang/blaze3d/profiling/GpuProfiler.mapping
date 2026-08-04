@@ -4,8 +4,6 @@ CLASS net/minecraft/class_1_708 com/mojang/blaze3d/profiling/GpuProfiler
 	FIELD field_1_3636 nextTimestampIndex I
 	FIELD field_1_3637 timestampQueryPool Lnet/minecraft/class_1_685;
 	FIELD field_1_3638 lastSubmitTimestampIndex I
-	METHOD <init> (Lnet/minecraft/class_1_1209;)V
-		ARG 1 device
 	METHOD method_1_4223 close ()V
 	METHOD method_1_4224 submitQueryTimestamps ()V
 	METHOD method_1_4225 nextTimestampIndex ()I

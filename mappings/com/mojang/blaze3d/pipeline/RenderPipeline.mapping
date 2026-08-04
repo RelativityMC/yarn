@@ -11,7 +11,6 @@ CLASS net/minecraft/class_1_1257 com/mojang/blaze3d/pipeline/RenderPipeline
 	FIELD field_1_8636 randomValue I
 	FIELD field_1_8637 vertexFormats Ljava/util/List;
 	FIELD field_1_9434 shaders Ljava/util/Map;
-	FIELD field_1_9564 pushConstantSize I
 	METHOD <init> (Lnet/minecraft/class_2960;Ljava/util/Map;Lnet/minecraft/class_10149;Ljava/util/Collection;[Lnet/minecraft/class_1_384;Lnet/minecraft/class_1_386;Lnet/minecraft/class_1_1238;Z[Lnet/minecraft/class_1_1232;Lnet/minecraft/class_5596;II)V
 		ARG 1 location
 		ARG 2 shaders
@@ -23,8 +22,6 @@ CLASS net/minecraft/class_1_1257 com/mojang/blaze3d/pipeline/RenderPipeline
 		ARG 8 cull
 		ARG 9 vertexFormats
 		ARG 10 drawMode
-		ARG 11 pushConstantSize
-		ARG 12 sortKey
 	METHOD method_1_7960 builder ([Lnet/minecraft/class_1_1257$class_1_1259;)Lnet/minecraft/class_1_1257$class_1_1258;
 		ARG 0 snippets
 	METHOD method_1_7961 getBindGroupLayouts ()Ljava/util/List;
@@ -42,7 +39,6 @@ CLASS net/minecraft/class_1_1257 com/mojang/blaze3d/pipeline/RenderPipeline
 	METHOD method_1_7974 randomize ()V
 	METHOD method_1_7975 hasDepthStencil ()Z
 	METHOD method_1_9095 getShaders ()Ljava/util/Map;
-	METHOD method_1_9210 getPushConstantSize ()I
 	CLASS class_1_1258 Builder
 		FIELD field_1_8639 numColorTargetStates I
 		FIELD field_1_8640 bindGroupLayouts Ljava/util/Optional;
@@ -56,7 +52,6 @@ CLASS net/minecraft/class_1_1257 com/mojang/blaze3d/pipeline/RenderPipeline
 		FIELD field_1_8649 drawMode Ljava/util/Optional;
 		FIELD field_1_8650 vertexFormats [Lnet/minecraft/class_1_1232;
 		FIELD field_1_9435 shaders Ljava/util/Map;
-		FIELD field_1_9565 pushConstantSize I
 		METHOD method_1_7976 build ()Lnet/minecraft/class_1_1257;
 		METHOD method_1_7977 buildSnippet ()Lnet/minecraft/class_1_1257$class_1_1259;
 		METHOD method_1_7978 (Ljava/util/List;)V
@@ -109,6 +104,4 @@ CLASS net/minecraft/class_1_1257 com/mojang/blaze3d/pipeline/RenderPipeline
 			ARG 1 vertexShader
 		METHOD method_1_7999 vertexShader (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_1257$class_1_1258;
 			ARG 1 vertexShader
-		METHOD method_1_9211 pushConstantSize (I)Lnet/minecraft/class_1_1257$class_1_1258;
-			ARG 1 pushConstantSize
 	CLASS class_1_1259 Snippet

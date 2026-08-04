@@ -49,10 +49,6 @@ CLASS net/minecraft/class_631 net/minecraft/client/world/ClientChunkManager
 		FIELD field_19205 centerChunkZ I
 		METHOD <init> (Lnet/minecraft/class_631;I)V
 			ARG 2 radius
-		METHOD method_1_9093 markNew (J)V
-			ARG 1 sectionPos
-		METHOD method_1_9094 markUpdated (J)V
-			ARG 1 sectionPos
 		METHOD method_16027 getIndex (II)I
 			ARG 1 chunkX
 			ARG 2 chunkZ

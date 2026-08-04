@@ -6,8 +6,8 @@ CLASS net/minecraft/class_6954 net/minecraft/world/gen/densityfunction/DensityFu
 	FIELD field_36619 ZERO_FUNCTION Lnet/minecraft/class_6910;
 	FIELD field_61475 WORLD_BOTTOM_Y I
 	FIELD field_61476 WORLD_TOP_HEIGHT I
-	FIELD field_61477 WORLD_BOTTOM_OFFSET D
-	FIELD field_61478 WORLD_TOP_OFFSET D
+	FIELD field_61477 WORLD_BOTTOM_OFFSET F
+	FIELD field_61478 WORLD_TOP_OFFSET F
 	FIELD field_61479 BOTTOM_RELATIVE_SLIDE_MAX_Y I
 	METHOD method_1_2720 createVeinGapRouter (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6953;
 		ARG 0 function
@@ -139,7 +139,7 @@ CLASS net/minecraft/class_6954 net/minecraft/world/gen/densityfunction/DensityFu
 			COMMENT the minimum block Y coordinate of the world
 		ARG 2 maxY
 			COMMENT the maximum block Y coordinate of the world
-	METHOD method_42365 applySlides (Lnet/minecraft/class_6910;IIIIDIID)Lnet/minecraft/class_6910;
+	METHOD method_42365 applySlides (Lnet/minecraft/class_6910;IIIIFIIF)Lnet/minecraft/class_6910;
 		COMMENT Interpolates the density at the top and bottom of the world.
 		COMMENT
 		COMMENT @return the created density function
@@ -153,14 +153,10 @@ CLASS net/minecraft/class_6954 net/minecraft/world/gen/densityfunction/DensityFu
 			COMMENT the minimum block Y of the top slide, subtracted from the top height
 		ARG 4 topRelativeMaxY
 			COMMENT the maximum block Y of the top slide, subtracted from the top height
-		ARG 5 topDensity
-			COMMENT the density at the top of the world. For height levels between the top-relative minimum and maximum heights, this is interpolated with the actual density
-		ARG 7 bottomRelativeMinY
+		ARG 6 bottomRelativeMinY
 			COMMENT the minimum block Y of the bottom slide, added to the bottom height
-		ARG 8 bottomRelativeMaxY
+		ARG 7 bottomRelativeMaxY
 			COMMENT the maximum block Y of the bottom slide, added to the bottom height
-		ARG 9 bottomDensity
-			COMMENT the density at the bottom of the world. For height levels between the bottom-relative minimum and maximum heights, this is interpolated with the actual density
 	METHOD method_42366 applySurfaceSlides (ZLnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
 		COMMENT Applies the slides for the overworld and the surface world type.
 		COMMENT
@@ -187,9 +183,8 @@ CLASS net/minecraft/class_6954 net/minecraft/world/gen/densityfunction/DensityFu
 		COMMENT function.
 		COMMENT
 		COMMENT @see https://www.minecraft.net/en-us/article/minecraft-26-2-snapshot-5
-		METHOD method_1_5223 selectorFunction (Lnet/minecraft/class_6880;D)Lnet/minecraft/class_6910;
+		METHOD method_1_5223 selectorFunction (Lnet/minecraft/class_6880;F)Lnet/minecraft/class_6910;
 			ARG 0 noiseParameters
-			ARG 1 rarity
 		METHOD method_1_5224 rarityValueMapperType1 (Lnet/minecraft/class_6910;Lnet/minecraft/class_6880;)Lnet/minecraft/class_6910;
 			ARG 0 input
 			ARG 1 noiseParameters

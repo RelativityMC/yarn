@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_6933 net/minecraft/world/gen/densityfunction/RangeChoice
+	FIELD field_37092 RANGE_CHOICE_CODEC Lcom/mojang/serialization/MapCodec;
+	METHOD method_41085 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

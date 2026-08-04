@@ -15,9 +15,6 @@ CLASS net/minecraft/class_1_1156 net/minecraft/component/type/BlockTransformerCo
 		METHOD method_1_7375 builder (Lnet/minecraft/class_6646;Lnet/minecraft/class_2248;)Lnet/minecraft/class_1_1156$class_1_1157$class_1_1158;
 			ARG 0 ifTrue
 			ARG 1 then
-		METHOD method_1_7376 builder (Lnet/minecraft/class_6646;Lnet/minecraft/class_4651;)Lnet/minecraft/class_1_1156$class_1_1157$class_1_1158;
-			ARG 0 ifTrue
-			ARG 1 then
 		METHOD method_1_7377 builder (Lnet/minecraft/class_4651;)Lnet/minecraft/class_1_1156$class_1_1157$class_1_1158;
 			ARG 0 blockStateProvider
 		METHOD method_1_7378 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

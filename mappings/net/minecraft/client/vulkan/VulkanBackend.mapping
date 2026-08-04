@@ -16,7 +16,6 @@ CLASS net/minecraft/class_1_679 net/minecraft/client/vulkan/VulkanBackend
 		ARG 3 featureSet
 		ARG 4 device
 		ARG 5 vmaAllocator
-		ARG 7 markerRecorder
 	METHOD method_1_4048 getComputeQueue ()Lnet/minecraft/class_1_674;
 	METHOD method_1_4052 getGraphicsAndComputeQueue ()Lnet/minecraft/class_1_674;
 	METHOD method_1_4053 getInstance ()Lnet/minecraft/class_1_691;

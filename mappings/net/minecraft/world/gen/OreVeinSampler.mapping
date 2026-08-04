@@ -4,7 +4,7 @@ CLASS net/minecraft/class_6955 net/minecraft/world/gen/OreVeinSampler
 	FIELD field_36621 MAX_DENSITY_INTRUSION I
 		COMMENT The number of blocks away from the minimum or maximum height at which
 		COMMENT ores in an ore vein generates at the maximum density.
-	FIELD field_36622 LIMINAL_DENSITY_REDUCTION D
+	FIELD field_36622 LIMINAL_DENSITY_REDUCTION F
 		COMMENT The decrease in density at the minimum or maximum height compared to the
 		COMMENT maximum density.
 	FIELD field_36623 BLOCK_GENERATION_CHANCE F

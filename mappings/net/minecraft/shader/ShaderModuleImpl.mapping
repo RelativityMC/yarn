@@ -17,7 +17,4 @@ CLASS net/minecraft/class_1_1380 net/minecraft/shader/ShaderModuleImpl
 		ARG 2 resources
 		ARG 4 spirv
 		ARG 5 resourceType
-	METHOD method_1_9221 getPushConstants (JJ)Ljava/util/List;
-		ARG 0 compiler
-		ARG 2 resources
 	CLASS class_1_1381 Type

@@ -4,11 +4,10 @@ CLASS net/minecraft/class_1_164 net/minecraft/recipe/crafting/MapExtendingRecipe
 	FIELD field_1_1283 map Lnet/minecraft/class_1856;
 	FIELD field_1_1284 material Lnet/minecraft/class_1856;
 	FIELD field_1_1285 underlying Lnet/minecraft/class_8957;
-	FIELD field_1_1286 result Lnet/minecraft/class_1_107;
-	METHOD <init> (Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_1_107;)V
+	FIELD field_1_1286 result Lnet/minecraft/class_1_1434;
+	METHOD <init> (Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_1_1434;)V
 		ARG 1 map
 		ARG 2 material
-		ARG 3 result
 	METHOD method_1_1503 getMapItem (Lnet/minecraft/class_9694;)Lnet/minecraft/class_1799;
 		ARG 0 input
 	METHOD method_1_1504 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
@@ -17,11 +16,11 @@ CLASS net/minecraft/class_1_164 net/minecraft/recipe/crafting/MapExtendingRecipe
 		ARG 0 recipe
 	METHOD method_1_1506 (Lnet/minecraft/class_1_164;)Lnet/minecraft/class_1856;
 		ARG 0 recipe
-	METHOD method_1_1507 (Lnet/minecraft/class_1_164;)Lnet/minecraft/class_1_107;
+	METHOD method_1_1507 (Lnet/minecraft/class_1_164;)Lnet/minecraft/class_1_1434;
 		ARG 0 recipe
 	METHOD method_1_1508 (Lnet/minecraft/class_1_164;)Lnet/minecraft/class_1856;
 		ARG 0 recipe
 	METHOD method_1_1509 (Lnet/minecraft/class_1_164;)Lnet/minecraft/class_1856;
 		ARG 0 recipe
-	METHOD method_1_1510 (Lnet/minecraft/class_1_164;)Lnet/minecraft/class_1_107;
+	METHOD method_1_1510 (Lnet/minecraft/class_1_164;)Lnet/minecraft/class_1_1434;
 		ARG 0 recipe

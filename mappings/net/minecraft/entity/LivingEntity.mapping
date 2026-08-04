@@ -12,7 +12,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	FIELD field_6226 lastDamageTime J
 	FIELD field_6227 upwardSpeed F
 	FIELD field_6228 jumpingCooldown I
-	FIELD field_6229 lastHandSwingProgress F
 	FIELD field_6230 lastAttackedTime I
 	FIELD field_6231 SPRINTING_SPEED_BOOST Lnet/minecraft/class_1322;
 	FIELD field_6235 hurtTime I
@@ -24,8 +23,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	FIELD field_6246 absorptionAmount F
 	FIELD field_6247 HEALTH Lnet/minecraft/class_2940;
 	FIELD field_6250 forwardSpeed F
-	FIELD field_6251 handSwingProgress F
-	FIELD field_6252 handSwinging Z
 	FIELD field_6253 lastDamageTaken F
 	FIELD field_6254 maxHurtTime I
 	FIELD field_6256 damageTracker Lnet/minecraft/class_1283;
@@ -36,7 +33,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	FIELD field_6261 riptideTicks I
 	FIELD field_6264 lastLeaningPitch F
 	FIELD field_6265 headTrackingIncrements I
-	FIELD field_6266 preferredHand Lnet/minecraft/class_1268;
 	FIELD field_6268 lastBlockPos Lnet/minecraft/class_2338;
 	FIELD field_6270 lastAttackTime I
 	FIELD field_6272 dead Z
@@ -44,7 +40,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	FIELD field_6276 lastDamageSource Lnet/minecraft/class_1282;
 	FIELD field_6277 activeItemStack Lnet/minecraft/class_1799;
 	FIELD field_6278 despawnCounter I
-	FIELD field_6279 handSwingTicks I
 	FIELD field_6280 activeStatusEffects Ljava/util/Map;
 	FIELD field_6282 jumping Z
 	FIELD field_6283 bodyYaw F
@@ -201,7 +196,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 amount
 	METHOD method_6026 getStatusEffects ()Ljava/util/Collection;
 	METHOD method_6027 updatePotionVisibility ()V
-	METHOD method_6028 getHandSwingDuration ()I
 	METHOD method_6029 getMovementSpeed ()F
 	METHOD method_6030 getActiveItem ()Lnet/minecraft/class_1799;
 	METHOD method_6031 turnHead (F)V
@@ -254,7 +248,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		COMMENT @see #shouldAlwaysDropExperience()
 		COMMENT @see #getExperienceToDrop()
 	METHOD method_6055 getHandSwingProgress (F)F
-		ARG 1 tickProgress
 	METHOD method_6057 canSee (Lnet/minecraft/class_1297;)Z
 		ARG 1 entity
 	METHOD method_6058 getActiveHand ()Lnet/minecraft/class_1268;
@@ -354,7 +347,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_6103 sendPickup (Lnet/minecraft/class_1297;I)V
 		ARG 1 item
 		ARG 2 count
-	METHOD method_6104 swingHand (Lnet/minecraft/class_1268;)V
+	METHOD method_6104 swingHand (Lnet/minecraft/class_1268;Lnet/minecraft/class_12126;Z)V
 		ARG 1 hand
 	METHOD method_6105 damageArmor (Lnet/minecraft/class_1282;F)V
 		ARG 1 source
@@ -392,7 +385,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_6117 getLastAttackedTime ()I
 	METHOD method_6118 getEquipment (Lnet/minecraft/class_1304;)Lnet/minecraft/class_1799;
 		ARG 1 slot
-	METHOD method_6119 tickHandSwing ()V
 	METHOD method_6120 getBaseWaterMovementSpeedMultiplier ()F
 	METHOD method_6121 tryAttack (Lnet/minecraft/class_3218;Lnet/minecraft/class_1297;)Z
 		ARG 1 world
@@ -418,10 +410,9 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 source
 		ARG 2 amount
 	METHOD method_7292 getLuck ()F
-	METHOD method_7329 dropItem (Lnet/minecraft/class_1799;ZZ)Lnet/minecraft/class_1542;
+	METHOD method_7329 dropItem (Lnet/minecraft/class_1799;ZLnet/minecraft/class_1_1430;)Lnet/minecraft/class_1542;
 		ARG 1 stack
-		ARG 2 dropAtSelf
-		ARG 3 retainOwnership
+		ARG 2 retainOwnership
 	METHOD method_16077 dropLoot (Lnet/minecraft/class_3218;Lnet/minecraft/class_1282;Z)V
 		ARG 1 world
 		ARG 2 damageSource
@@ -480,9 +471,9 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_23329 computeFallDamage (DF)I
 		ARG 1 fallDistance
 		ARG 3 damagePerDistance
-	METHOD method_23667 swingHand (Lnet/minecraft/class_1268;Z)V
+	METHOD method_23667 swingHand (Lnet/minecraft/class_1268;Lnet/minecraft/class_12126;Z)Z
 		ARG 1 hand
-		ARG 2 fromServerPlayer
+		ARG 3 fromServerPlayer
 	METHOD method_23733 onKilledBy (Lnet/minecraft/class_1309;)V
 		COMMENT Performs secondary effects after this mob has been killed.
 		COMMENT

@@ -24,4 +24,3 @@ CLASS net/minecraft/class_1_804 net/minecraft/client/render/BindGroupLayouts
 	FIELD field_1_8124 DEPTH_BOUNDS_SAMPLER_OIT Lnet/minecraft/class_1_794;
 	FIELD field_1_8125 SAMPLER_0_OIT Lnet/minecraft/class_1_794;
 	FIELD field_1_8126 SAMPLER_02_WOIT Lnet/minecraft/class_1_794;
-	FIELD field_1_9561 TERRAIN_UNIFORM Lnet/minecraft/class_1_794;

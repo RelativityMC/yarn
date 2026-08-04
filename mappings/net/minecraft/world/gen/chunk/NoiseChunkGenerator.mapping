@@ -6,7 +6,7 @@ CLASS net/minecraft/class_3754 net/minecraft/world/gen/chunk/NoiseChunkGenerator
 	METHOD <init> (Lnet/minecraft/class_1966;Lnet/minecraft/class_6880;)V
 		ARG 1 biomeSource
 		ARG 2 settings
-	METHOD method_1_3060 sampleDensity (Lnet/minecraft/class_7138;Lnet/minecraft/class_6910$class_6912;)D
+	METHOD method_1_3060 sampleDensity (Lnet/minecraft/class_7138;Lnet/minecraft/class_6910$class_6912;)F
 		ARG 1 noiseConfig
 		ARG 2 noisePos
 	METHOD method_1_5150 getBiomesAround (Lnet/minecraft/class_3233;I)Ljava/util/Set;

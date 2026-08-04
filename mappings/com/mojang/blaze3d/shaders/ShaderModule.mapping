@@ -9,7 +9,6 @@ CLASS net/minecraft/class_1_1372 com/mojang/blaze3d/shaders/ShaderModule
 			ARG 1 type
 		METHOD method_1_9054 getInputBindings ()Ljava/util/List;
 		METHOD method_1_9055 getOutputBindings ()Ljava/util/List;
-		METHOD method_1_9189 getPushConstants ()Ljava/util/List;
 		CLASS class_1_1374 Uniform
 			METHOD method_1_9056 getBindingIndex ()I
 			METHOD method_1_9057 setBindingIndex (I)V
@@ -37,5 +36,3 @@ CLASS net/minecraft/class_1_1372 com/mojang/blaze3d/shaders/ShaderModule
 			METHOD method_1_9071 getBaseType ()I
 			METHOD method_1_9072 getImageDimension ()I
 			METHOD method_1_9073 getVectorLength ()I
-		CLASS class_1_1393 PushConstant
-			METHOD method_1_9190 getSize ()I

@@ -6,9 +6,8 @@ CLASS net/minecraft/class_6580 net/minecraft/world/gen/stateprovider/NoiseBlockS
 		ARG 3 noiseParameters
 		ARG 4 scale
 		ARG 5 states
-	METHOD method_38445 getStateAtValue (Ljava/util/List;D)Lnet/minecraft/class_2680;
+	METHOD method_38445 getStateAtValue (Ljava/util/List;F)Lnet/minecraft/class_2680;
 		ARG 1 states
-		ARG 2 value
 	METHOD method_38446 getStateFromList (Ljava/util/List;Lnet/minecraft/class_2338;D)Lnet/minecraft/class_2680;
 		ARG 1 states
 		ARG 2 pos

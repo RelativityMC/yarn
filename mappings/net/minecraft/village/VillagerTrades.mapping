@@ -63,12 +63,10 @@ CLASS net/minecraft/class_1_31 net/minecraft/village/VillagerTrades
 		ARG 1 villagerType
 	METHOD method_1_563 villagerTypesCondition (Lnet/minecraft/class_6885;)Lnet/minecraft/class_6880;
 		ARG 0 villagerTypes
-	METHOD method_1_4364 cartographerLevel2ExplorerMapSale (Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;Lnet/minecraft/class_6862;Lnet/minecraft/class_6880;Ljava/lang/String;Ljava/util/List;)Lnet/minecraft/class_1_30;
-		ARG 0 items
-		ARG 1 villagerTypes
-		ARG 4 decoration
-		ARG 5 name
-		ARG 6 allowedVillagerTypes
+	METHOD method_1_4364 cartographerLevel2ExplorerMapSale (Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;Lnet/minecraft/class_6862;Lnet/minecraft/class_6880;Lnet/minecraft/class_1792;Ljava/util/List;)Lnet/minecraft/class_1_30;
+		ARG 0 villagerTypes
+		ARG 3 decoration
+		ARG 5 allowedVillagerTypes
 	METHOD method_1_4365 cartographerBannerSale (Lnet/minecraft/class_7871;Lnet/minecraft/class_1792;Ljava/util/List;)Lnet/minecraft/class_1_30;
 		ARG 0 villagerTypes
 		ARG 1 banner
@@ -97,11 +95,10 @@ CLASS net/minecraft/class_1_31 net/minecraft/village/VillagerTrades
 	METHOD method_1_4375 enchantedBookFunctions (Lnet/minecraft/class_7871;Lnet/minecraft/class_6885;)Ljava/util/List;
 		ARG 0 items
 		ARG 1 allowedEnchantments
-	METHOD method_1_4383 bootstrapCartographerLevel2ExplorerMaps (Lnet/minecraft/class_7891;Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;)V
+	METHOD method_1_4383 bootstrapCartographerLevel2ExplorerMaps (Lnet/minecraft/class_7891;Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;)V
 		ARG 0 registries
-		ARG 1 items
-		ARG 2 villagerTypes
-		ARG 3 structures
+		ARG 1 villagerTypes
+		ARG 2 structures
 	METHOD method_1_4384 bootstrapShepherdCarpetSales (Lnet/minecraft/class_7891;)V
 		ARG 0 registries
 	METHOD method_1_4385 bootstrapMasonColoredBlockSales (Lnet/minecraft/class_7891;)V
@@ -154,8 +151,7 @@ CLASS net/minecraft/class_1_31 net/minecraft/village/VillagerTrades
 		ARG 0 color
 	METHOD method_1_4915 (Ljava/lang/String;)Lnet/minecraft/class_5321;
 		ARG 0 color
-	METHOD method_1_8700 filledMapPredicate (Lnet/minecraft/class_7871;)Lnet/minecraft/class_2073$class_2074;
-		ARG 0 itemRegistry
+	METHOD method_1_8700 filledMapPredicate ()Lnet/minecraft/class_2073$class_2074;
 	METHOD method_1_8701 filter (Lnet/minecraft/class_2073$class_2074;)Lnet/minecraft/class_6880;
 		ARG 0 predicate
 	METHOD method_1_8702 modifyAndFilter (Lnet/minecraft/class_117$class_118;Lnet/minecraft/class_2073$class_2074;)Ljava/util/List;

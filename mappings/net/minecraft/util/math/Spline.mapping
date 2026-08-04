@@ -7,8 +7,6 @@ CLASS net/minecraft/class_6492 net/minecraft/util/math/Spline
 		ARG 0 spline
 		ARG 1 context
 	METHOD method_1_7297 getRange ()Lnet/minecraft/class_1_1150;
-	METHOD method_1_9161 visit (Ljava/util/function/Consumer;)V
-		ARG 1 visitor
 	METHOD method_37918 builder (Lnet/minecraft/class_6501;)Lnet/minecraft/class_6492$class_6493;
 		ARG 0 locationFunction
 	METHOD method_39225 getDebugString ()Ljava/lang/String;
@@ -25,9 +23,8 @@ CLASS net/minecraft/class_6492 net/minecraft/util/math/Spline
 	METHOD method_39502 builder (Lnet/minecraft/class_6501;Lit/unimi/dsi/fastutil/floats/Float2FloatFunction;)Lnet/minecraft/class_6492$class_6493;
 		ARG 0 locationFunction
 		ARG 1 amplifier
-	METHOD method_41187 mapLocation (Ljava/util/function/UnaryOperator;)Lnet/minecraft/class_6492;
+	METHOD method_41187 mapLocation (Ljava/util/function/Function;)Lnet/minecraft/class_6492;
 		COMMENT {@return a new {@link Spline} with a location function which applies the location function of the old spline followed by {@code f}}
-		ARG 1 f
 	CLASS class_6493 Builder
 		FIELD field_34382 locationFunction Lnet/minecraft/class_6501;
 		FIELD field_34383 locations Lit/unimi/dsi/fastutil/floats/FloatList;
@@ -67,8 +64,6 @@ CLASS net/minecraft/class_6492 net/minecraft/util/math/Spline
 			ARG 3 values
 			ARG 4 derivatives
 		METHOD comp_229 locationFunction ()Lnet/minecraft/class_6501;
-		METHOD equals (Ljava/lang/Object;)Z
-			ARG 1 other
 		METHOD method_1_3945 createFullCodec (Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
 			ARG 0 locationFunctionCodec
 			ARG 1 selfCodec
@@ -93,7 +88,7 @@ CLASS net/minecraft/class_6492 net/minecraft/util/math/Spline
 			ARG 0 values
 		METHOD method_39239 ([FI)D
 			ARG 1 index
-		METHOD method_41188 (Ljava/util/function/UnaryOperator;Lnet/minecraft/class_6492;)Lnet/minecraft/class_6492;
+		METHOD method_41188 (Ljava/util/function/Function;Lnet/minecraft/class_6492;)Lnet/minecraft/class_6492;
 			ARG 1 value
 		METHOD method_41297 sampleOutsideRange (F[FF[FI)F
 			ARG 0 point

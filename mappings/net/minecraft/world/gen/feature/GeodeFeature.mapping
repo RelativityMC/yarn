@@ -1,8 +1,3 @@
 CLASS net/minecraft/class_5588 net/minecraft/world/gen/feature/GeodeFeature
 	FIELD field_1_7648 CODEC Lcom/mojang/serialization/MapCodec;
-	FIELD field_1_9672 NOISE_PARAMS Lnet/minecraft/class_5216;
 	FIELD field_27313 DIRECTIONS [Lnet/minecraft/class_2350;
-	METHOD method_1_4566 (Lnet/minecraft/class_6885;Lnet/minecraft/class_2680;)Z
-		ARG 1 state
-	METHOD method_1_7048 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance

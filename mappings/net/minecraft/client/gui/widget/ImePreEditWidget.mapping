@@ -17,9 +17,3 @@ CLASS net/minecraft/class_1_374 net/minecraft/client/gui/widget/ImePreEditWidget
 	METHOD method_1_2549 setPosition (II)V
 		ARG 1 x
 		ARG 2 y
-	METHOD method_1_9313 renderCandidates (Lnet/minecraft/class_332;Lnet/minecraft/class_1_1396;III)V
-		ARG 1 context
-		ARG 2 candidates
-		ARG 3 x
-		ARG 4 minY
-		ARG 5 maxY

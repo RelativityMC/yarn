@@ -36,8 +36,6 @@ CLASS net/minecraft/class_1_1022 net/minecraft/client/util/memory/Arena
 		ARG 1 size
 		ARG 3 alignment
 	METHOD method_1_6209 startClearing ()Ljava/lang/Runnable;
-	METHOD method_1_9334 (Lnet/minecraft/class_1_1022$class_1_1024$class_1_1419;)V
-		ARG 0 block
 	CLASS class_1_1023 Region
 	CLASS class_1_1024 Allocator
 		METHOD method_1_6210 alloc (J)Lnet/minecraft/class_1_1022$class_1_1024$class_1_1419;
@@ -46,13 +44,3 @@ CLASS net/minecraft/class_1_1022 net/minecraft/client/util/memory/Arena
 			ARG 0 alloc
 			ARG 1 free
 		METHOD method_1_6212 free (Lnet/minecraft/class_1_1022$class_1_1024$class_1_1419;)V
-			ARG 1 block
-		CLASS class_1_1419 Block
-		CLASS class_1_1420 CpuBlock
-			METHOD <init> (J)V
-				ARG 1 address
-			METHOD method_1_9335 (J)Lnet/minecraft/class_1_1022$class_1_1024$class_1_1420;
-				ARG 0 size
-			METHOD method_1_9336 (Lnet/minecraft/class_1_1022$class_1_1024$class_1_1420;)V
-				ARG 0 block
-			METHOD method_1_9337 create ()Lnet/minecraft/class_1_1022$class_1_1024;

@@ -6,8 +6,6 @@ CLASS net/minecraft/class_10866 net/minecraft/client/gl/GlRenderPassBackend
 	FIELD field_1_9436 shaderParamsDirty Z
 	FIELD field_1_9437 indexBufferDirty Z
 	FIELD field_1_9438 scissorDirty Z
-	FIELD field_1_9566 pushedConstants Z
-	FIELD field_1_9567 pushConstantsBuffer Lnet/minecraft/class_1_1254;
 	FIELD field_57868 pipeline Lnet/minecraft/class_10867;
 	FIELD field_57869 vertexBuffers [Lnet/minecraft/class_1_1254;
 	FIELD field_57870 indexBuffer Lnet/minecraft/class_1_1211;
@@ -17,7 +15,6 @@ CLASS net/minecraft/class_10866 net/minecraft/client/gl/GlRenderPassBackend
 	FIELD field_57875 setSimpleUniforms Lit/unimi/dsi/fastutil/booleans/BooleanList;
 	FIELD field_57877 commandEncoder Lnet/minecraft/class_10860;
 	METHOD <init> (Lnet/minecraft/class_10860;Lnet/minecraft/class_10865;ILnet/minecraft/class_11219;)V
-		ARG 1 commandEncoder
 		ARG 2 device
 		ARG 3 numColorAttachments
 		ARG 4 defaultScissorState

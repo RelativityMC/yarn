@@ -42,29 +42,26 @@ CLASS net/minecraft/class_6568 net/minecraft/world/gen/chunk/ChunkNoiseSampler
 	FIELD field_36592 isInInterpolationLoop Z
 	FIELD field_36593 isSamplingForCaches Z
 	FIELD field_36594 startBlockX I
-	FIELD field_37113 beardifying Lnet/minecraft/class_6916$class_7050;
+	FIELD field_37113 beardifying Lnet/minecraft/class_5817;
 	FIELD field_61472 preliminarySurfaceLevel Lnet/minecraft/class_6910;
-	METHOD <init> (ILnet/minecraft/class_7138;IILnet/minecraft/class_5309;Lnet/minecraft/class_6916$class_7050;Lnet/minecraft/class_5284;Lnet/minecraft/class_6350$class_6565;Lnet/minecraft/class_6748;)V
+	METHOD <init> (ILnet/minecraft/class_7138;IILnet/minecraft/class_5309;Lnet/minecraft/class_5817;Lnet/minecraft/class_5284;Lnet/minecraft/class_6350$class_6565;Lnet/minecraft/class_6748;)V
 		ARG 1 horizontalCellCount
 		ARG 2 noiseConfig
 		ARG 3 startBlockX
 		ARG 4 startBlockZ
 		ARG 5 generationShapeConfig
-		ARG 6 beardifying
 		ARG 7 chunkGeneratorSettings
 		ARG 8 fluidLevelSampler
 		ARG 9 blender
-	METHOD method_1_2958 sampleDensity ()D
+	METHOD method_1_2958 sampleDensity ()F
 	METHOD method_38336 sampleStartDensity ()V
 		COMMENT Samples the density values for all cells in the chunk with the first X coordinate.
 		COMMENT This is done for every {@code interpolated} function. The resulting density values
 		COMMENT will be stored in the interpolator's start density buffer.
-	METHOD method_38337 interpolateY (ID)V
+	METHOD method_38337 interpolateY (IF)V
 		COMMENT Interpolates density values on the Y axis for every interpolator.
 		ARG 1 blockY
 			COMMENT the absolute block Y coordinate
-		ARG 2 deltaY
-			COMMENT the cell-local block Y coordinate divided by the number of blocks in a cell vertically
 	METHOD method_38339 sampleEndDensity (I)V
 		COMMENT Samples the density values for all cells in the chunk with the given X coordinate.
 		COMMENT This is done for every {@code interpolated} function. The resulting density values
@@ -73,19 +70,15 @@ CLASS net/minecraft/class_6568 net/minecraft/world/gen/chunk/ChunkNoiseSampler
 			COMMENT the chunk-local cell X coordinate
 	METHOD method_38348 swapBuffers ()V
 		COMMENT Swaps the start and end density buffers of every interpolator.
-	METHOD method_38349 interpolateX (ID)V
+	METHOD method_38349 interpolateX (IF)V
 		COMMENT Interpolates density values on the X axis for every interpolator.
 		ARG 1 blockX
 			COMMENT the absolute block X coordinate
-		ARG 2 deltaX
-			COMMENT the cell-local block X coordinate divided by the number of blocks in a cell horizontally
 	METHOD method_38354 getAquiferSampler ()Lnet/minecraft/class_6350;
-	METHOD method_38355 interpolateZ (ID)V
+	METHOD method_38355 interpolateZ (IF)V
 		COMMENT Interpolates density values on the Z axis for every interpolator.
 		ARG 1 blockZ
 			COMMENT the absolute block Z coordinate
-		ARG 2 deltaZ
-			COMMENT the cell-local block Z coordinate divided by the number of blocks in a cell vertically
 	METHOD method_38362 onSampledCellCorners (II)V
 		COMMENT This should be called when the start and end density buffers are
 		COMMENT correctly filled for the current cell.
@@ -98,10 +91,9 @@ CLASS net/minecraft/class_6568 net/minecraft/world/gen/chunk/ChunkNoiseSampler
 			COMMENT the chunk-local cell Y coordinate
 		ARG 2 cellZ
 			COMMENT the chunk-local cell Z coordinate
-	METHOD method_39543 create (Lnet/minecraft/class_2791;Lnet/minecraft/class_7138;Lnet/minecraft/class_6916$class_7050;Lnet/minecraft/class_5284;Lnet/minecraft/class_6350$class_6565;Lnet/minecraft/class_6748;)Lnet/minecraft/class_6568;
+	METHOD method_39543 create (Lnet/minecraft/class_2791;Lnet/minecraft/class_7138;Lnet/minecraft/class_5817;Lnet/minecraft/class_5284;Lnet/minecraft/class_6350$class_6565;Lnet/minecraft/class_6748;)Lnet/minecraft/class_6568;
 		ARG 0 chunk
 		ARG 1 noiseConfig
-		ARG 2 beardifying
 		ARG 3 chunkGeneratorSettings
 		ARG 4 fluidLevelSampler
 		ARG 5 blender
@@ -129,7 +121,6 @@ CLASS net/minecraft/class_6568 net/minecraft/world/gen/chunk/ChunkNoiseSampler
 			COMMENT the current cell X coordinate
 	METHOD method_40533 getActualDensityFunctionImpl (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
 		COMMENT {@return the actual density function for a given density function}
-		ARG 1 function
 	METHOD method_40535 calculateBlendResult (II)Lnet/minecraft/class_6748$class_6956;
 		ARG 1 blockX
 		ARG 2 blockZ
@@ -139,27 +130,27 @@ CLASS net/minecraft/class_6568 net/minecraft/world/gen/chunk/ChunkNoiseSampler
 	METHOD method_42361 getHorizontalCellBlockCount ()I
 	METHOD method_42362 getVerticalCellBlockCount ()I
 	CLASS class_5917 DensityInterpolator
-		FIELD field_29227 startDensityBuffer [[D
-		FIELD field_29228 endDensityBuffer [[D
-		FIELD field_29233 x0y0z0 D
-		FIELD field_29234 x0y0z1 D
-		FIELD field_29235 x1y0z0 D
-		FIELD field_29236 x1y0z1 D
-		FIELD field_29237 x0y1z0 D
-		FIELD field_29238 x0y1z1 D
-		FIELD field_29239 x1y1z0 D
-		FIELD field_29240 x1y1z1 D
-		FIELD field_29241 x0z0 D
-		FIELD field_29242 x1z0 D
-		FIELD field_29243 x0z1 D
-		FIELD field_29244 x1z1 D
-		FIELD field_29245 z0 D
-		FIELD field_29246 z1 D
+		FIELD field_29227 startDensityBuffer [[F
+		FIELD field_29228 endDensityBuffer [[F
+		FIELD field_29233 x0y0z0 F
+		FIELD field_29234 x0y0z1 F
+		FIELD field_29235 x1y0z0 F
+		FIELD field_29236 x1y0z1 F
+		FIELD field_29237 x0y1z0 F
+		FIELD field_29238 x0y1z1 F
+		FIELD field_29239 x1y1z0 F
+		FIELD field_29240 x1y1z1 F
+		FIELD field_29241 x0z0 F
+		FIELD field_29242 x1z0 F
+		FIELD field_29243 x0z1 F
+		FIELD field_29244 x1z1 F
+		FIELD field_29245 z0 F
+		FIELD field_29246 z1 F
 		FIELD field_34623 delegate Lnet/minecraft/class_6910;
-		FIELD field_34624 result D
+		FIELD field_34624 result F
 		METHOD <init> (Lnet/minecraft/class_6568;Lnet/minecraft/class_6910;)V
 			ARG 2 delegate
-		METHOD method_34287 interpolateY (D)V
+		METHOD method_34287 interpolateY (F)V
 			COMMENT Interpolates the eight densities on the Y axis.
 			ARG 1 deltaY
 		METHOD method_34289 onSampledCellCorners (II)V
@@ -170,13 +161,13 @@ CLASS net/minecraft/class_6568 net/minecraft/world/gen/chunk/ChunkNoiseSampler
 			ARG 2 cellZ
 				COMMENT the cell's chunk-local Z coordinate
 		METHOD method_34291 swapBuffers ()V
-		METHOD method_34292 interpolateX (D)V
+		METHOD method_34292 interpolateX (F)V
 			COMMENT Interpolates the four remaining densities on the X axis.
 			ARG 1 deltaX
-		METHOD method_34293 createBuffer (II)[[D
+		METHOD method_34293 createBuffer (II)[[F
 			ARG 1 sizeZ
 			ARG 2 sizeX
-		METHOD method_38363 interpolateZ (D)V
+		METHOD method_38363 interpolateZ (F)V
 			COMMENT Interpolates the two remaining densities on the Z axis.
 			ARG 1 deltaZ
 	CLASS class_6569 BlockStateSampler
@@ -191,25 +182,25 @@ CLASS net/minecraft/class_6568 net/minecraft/world/gen/chunk/ChunkNoiseSampler
 	CLASS class_6948 Cache2D
 		FIELD field_36599 delegate Lnet/minecraft/class_6910;
 		FIELD field_36600 lastSamplingColumnPos J
-		FIELD field_36601 lastSamplingResult D
+		FIELD field_36601 lastSamplingResult F
 		METHOD <init> (Lnet/minecraft/class_6910;)V
 			ARG 1 delegate
 	CLASS class_6949 CellCache
 		FIELD field_36603 delegate Lnet/minecraft/class_6910;
-		FIELD field_36604 cache [D
+		FIELD field_36604 cache [F
 		METHOD <init> (Lnet/minecraft/class_6568;Lnet/minecraft/class_6910;)V
 			ARG 2 delegate
 	CLASS class_6950 CacheOnce
 		FIELD field_36606 delegate Lnet/minecraft/class_6910;
 		FIELD field_36607 sampleUniqueIndex J
 		FIELD field_36608 cacheOnceUniqueIndex J
-		FIELD field_36609 lastSamplingResult D
-		FIELD field_36610 cache [D
+		FIELD field_36609 lastSamplingResult F
+		FIELD field_36610 cache [F
 		METHOD <init> (Lnet/minecraft/class_6568;Lnet/minecraft/class_6910;)V
 			ARG 2 delegate
 	CLASS class_6951 FlatCache
 		FIELD field_36612 delegate Lnet/minecraft/class_6910;
-		FIELD field_36613 cache [D
+		FIELD field_36613 cache [F
 		FIELD field_61473 horizontalCacheSize I
 		METHOD <init> (Lnet/minecraft/class_6568;Lnet/minecraft/class_6910;Z)V
 			ARG 2 delegate

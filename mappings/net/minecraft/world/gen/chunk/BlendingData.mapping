@@ -8,8 +8,8 @@ CLASS net/minecraft/class_6749 net/minecraft/world/gen/chunk/BlendingData
 	FIELD field_35686 NORTH_WEST_END_INDEX I
 	FIELD field_35687 SOUTH_EAST_END_INDEX_PART I
 	FIELD field_35690 initializedBlendingData Z
-	FIELD field_35692 surfaceHeights [D
-	FIELD field_35693 collidableBlockDensities [[D
+	FIELD field_35692 surfaceHeights [F
+	FIELD field_35693 collidableBlockDensities [[F
 	FIELD field_36345 biomes Ljava/util/List;
 	METHOD <init> (IILjava/util/Optional;)V
 		ARG 1 oldBottomSectionY
@@ -17,11 +17,11 @@ CLASS net/minecraft/class_6749 net/minecraft/world/gen/chunk/BlendingData
 		ARG 3 heights
 	METHOD method_39343 getX (I)I
 		ARG 0 index
-	METHOD method_39344 getHeight (III)D
+	METHOD method_39344 getHeight (III)F
 		ARG 1 biomeX
 		ARG 2 biomeY
 		ARG 3 biomeZ
-	METHOD method_39345 getCollidableBlockDensity (III)D
+	METHOD method_39345 getCollidableBlockDensity (III)F
 		ARG 1 chunkBiomeX
 		ARG 2 halfSectionY
 		ARG 3 chunkBiomeZ
@@ -49,7 +49,7 @@ CLASS net/minecraft/class_6749 net/minecraft/world/gen/chunk/BlendingData
 		ARG 3 consumer
 	METHOD method_39352 getZ (I)I
 		ARG 0 index
-	METHOD method_39354 calculateCollidableBlockDensityColumn (Lnet/minecraft/class_2791;III)[D
+	METHOD method_39354 calculateCollidableBlockDensityColumn (Lnet/minecraft/class_2791;III)[F
 		ARG 1 chunk
 		ARG 2 chunkBlockX
 		ARG 3 chunkBlockZ
@@ -63,8 +63,7 @@ CLASS net/minecraft/class_6749 net/minecraft/world/gen/chunk/BlendingData
 	METHOD method_39572 initChunkBlendingData (Lnet/minecraft/class_2791;Ljava/util/Set;)V
 		ARG 1 chunk
 		ARG 2 newNoiseChunkDirections
-	METHOD method_39575 getCollidableBlockDensity ([DI)D
-		ARG 1 collidableBlockDensityColumn
+	METHOD method_39575 getCollidableBlockDensity ([FI)F
 		ARG 2 halfSectionY
 	METHOD method_39576 getVerticalHalfSectionCount ()I
 	METHOD method_39578 getNorthWestIndex (II)I
@@ -93,12 +92,12 @@ CLASS net/minecraft/class_6749 net/minecraft/world/gen/chunk/BlendingData
 		ARG 1 chunkBiomeZ
 			COMMENT the chunk-local biome Z coordinate
 	METHOD method_39583 getBottomHalfSectionY ()I
-	METHOD method_39905 getAboveCollidableBlockValue (Lnet/minecraft/class_2791;Lnet/minecraft/class_2338$class_2339;)D
+	METHOD method_39905 getAboveCollidableBlockValue (Lnet/minecraft/class_2791;Lnet/minecraft/class_2338$class_2339;)F
 		COMMENT {@return {@code 1.0} if there is a collidable block below, otherwise {@code -1}}
 		ARG 0 chunk
 		ARG 1 mutablePos
 			COMMENT will be moved down by one block by this method
-	METHOD method_39906 getCollidableBlockDensityBelow (Lnet/minecraft/class_2791;Lnet/minecraft/class_2338$class_2339;)D
+	METHOD method_39906 getCollidableBlockDensityBelow (Lnet/minecraft/class_2791;Lnet/minecraft/class_2338$class_2339;)F
 		ARG 0 chunk
 		ARG 1 mutablePos
 			COMMENT will be moved down by seven blocks by this method
@@ -119,16 +118,14 @@ CLASS net/minecraft/class_6749 net/minecraft/world/gen/chunk/BlendingData
 	METHOD method_61807 fromSerialized (Lnet/minecraft/class_6749$class_9899;)Lnet/minecraft/class_6749;
 		ARG 0 serialized
 	CLASS class_6750 CollidableBlockDensityConsumer
-		METHOD method_1_283 consume (IIID)V
+		METHOD method_1_283 consume (IIIF)V
 			ARG 1 biomeX
 			ARG 2 halfSectionY
 			ARG 3 biomeZ
-			ARG 4 collidableBlockDensity
 	CLASS class_6751 HeightConsumer
-		METHOD method_1_284 consume (IID)V
+		METHOD method_1_284 consume (IIF)V
 			ARG 1 biomeX
 			ARG 2 biomeZ
-			ARG 3 height
 	CLASS class_6853 BiomeConsumer
 		METHOD method_1_282 consume (IILnet/minecraft/class_6880;)V
 			ARG 1 biomeX

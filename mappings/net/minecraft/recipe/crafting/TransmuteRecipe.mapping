@@ -10,14 +10,13 @@ CLASS net/minecraft/class_10223 net/minecraft/recipe/crafting/TransmuteRecipe
 	FIELD field_1_1232 materialCount Lnet/minecraft/class_2096$class_2100;
 	FIELD field_54321 input Lnet/minecraft/class_1856;
 	FIELD field_54322 material Lnet/minecraft/class_1856;
-	FIELD field_54323 result Lnet/minecraft/class_1_107;
-	METHOD <init> (Lnet/minecraft/class_1860$class_1_145;Lnet/minecraft/class_3955$class_1_155;Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_2096$class_2100;Lnet/minecraft/class_1_107;Z)V
+	FIELD field_54323 result Lnet/minecraft/class_1_1434;
+	METHOD <init> (Lnet/minecraft/class_1860$class_1_145;Lnet/minecraft/class_3955$class_1_155;Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_2096$class_2100;Lnet/minecraft/class_1_1434;Z)V
 		ARG 1 settings
 		ARG 2 location
 		ARG 3 input
 		ARG 4 material
 		ARG 5 materialCount
-		ARG 6 result
 		ARG 7 addMaterialCountToResult
 	METHOD method_1_1424 createResult (Lnet/minecraft/class_1799;I)Lnet/minecraft/class_1799;
 		ARG 1 input
@@ -41,7 +40,7 @@ CLASS net/minecraft/class_10223 net/minecraft/recipe/crafting/TransmuteRecipe
 		ARG 0 recipe
 	METHOD method_1_1432 (Lnet/minecraft/class_10223;)Lnet/minecraft/class_2096$class_2100;
 		ARG 0 recipe
-	METHOD method_1_1433 (Lnet/minecraft/class_10223;)Lnet/minecraft/class_1_107;
+	METHOD method_1_1433 (Lnet/minecraft/class_10223;)Lnet/minecraft/class_1_1434;
 		ARG 0 recipe
 	METHOD method_1_1434 (Lnet/minecraft/class_10223;)Ljava/lang/Boolean;
 		ARG 0 recipe
@@ -53,7 +52,7 @@ CLASS net/minecraft/class_10223 net/minecraft/recipe/crafting/TransmuteRecipe
 		ARG 0 material
 	METHOD method_1_1438 (Lnet/minecraft/class_10223;)Lnet/minecraft/class_2096$class_2100;
 		ARG 0 recipe
-	METHOD method_1_1439 (Lnet/minecraft/class_10223;)Lnet/minecraft/class_1_107;
+	METHOD method_1_1439 (Lnet/minecraft/class_10223;)Lnet/minecraft/class_1_1434;
 		ARG 0 recipe
 	METHOD method_1_1440 (Lnet/minecraft/class_10223;)Ljava/lang/Boolean;
 		ARG 0 recipe

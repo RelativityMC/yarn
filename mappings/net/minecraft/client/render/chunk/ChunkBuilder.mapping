@@ -2,7 +2,6 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 	FIELD field_1_1971 geometryByBlockRenderLayer Ljava/util/Map;
 	FIELD field_1_1972 lock Ljava/util/concurrent/locks/ReentrantLock;
 	FIELD field_1_3813 chunkStagingBuffer Lnet/minecraft/class_1_686;
-	FIELD field_1_5922 onChunkChanged Ljava/util/function/Consumer;
 	FIELD field_18766 cameraPosition Ljava/util/concurrent/atomic/AtomicReference;
 	FIELD field_20828 buffers Lnet/minecraft/class_750;
 	FIELD field_20830 executor Lnet/minecraft/class_10207;
@@ -14,7 +13,6 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 		ARG 1 executor
 		ARG 2 bufferBuilderStorage
 		ARG 3 sectionBuilder
-		ARG 4 onChunkChanged
 	METHOD method_1_2401 getOffsetGeometryBuffers (Lnet/minecraft/class_11517;Lnet/minecraft/class_11515;)Lnet/minecraft/class_846$class_1_342;
 		ARG 1 renderData
 		ARG 2 blockRenderLayer

@@ -900,7 +900,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		FIELD field_23181 allowsSpawningPredicate Lnet/minecraft/class_4970$class_4972;
 		FIELD field_23182 solidBlockPredicate Lnet/minecraft/class_4970$class_4973;
 		FIELD field_23183 suffocationPredicate Lnet/minecraft/class_4970$class_4973;
-		FIELD field_23184 blockVisionPredicate Lnet/minecraft/class_4970$class_4973;
+		FIELD field_23184 blockVisionPredicate Lnet/minecraft/class_4970$class_4972;
 		FIELD field_23185 postProcessPredicate Lnet/minecraft/class_4970$class_1_474;
 		FIELD field_23186 emissiveLightingPredicate Ljava/util/function/Predicate;
 		FIELD field_25185 toolRequired Z
@@ -976,8 +976,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		METHOD method_26243 suffocates (Lnet/minecraft/class_4970$class_4973;)Lnet/minecraft/class_4970$class_2251;
 			COMMENT Specifies logic that calculates whether an entity should suffocate if inside of a block.
 			ARG 1 predicate
-		METHOD method_26245 blockVision (Lnet/minecraft/class_4970$class_4973;)Lnet/minecraft/class_4970$class_2251;
-			ARG 1 predicate
+		METHOD method_26245 blockVision (Lnet/minecraft/class_4970$class_4972;)Lnet/minecraft/class_4970$class_2251;
 		METHOD method_26246 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z
 			ARG 0 state
 			ARG 1 world
@@ -1050,7 +1049,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		FIELD field_23173 opaque Z
 		FIELD field_23174 solidBlockPredicate Lnet/minecraft/class_4970$class_4973;
 		FIELD field_23175 suffocationPredicate Lnet/minecraft/class_4970$class_4973;
-		FIELD field_23176 blockVisionPredicate Lnet/minecraft/class_4970$class_4973;
+		FIELD field_23176 blockVisionPredicate Lnet/minecraft/class_4970$class_4972;
 		FIELD field_23178 emissiveLightingPredicate Ljava/util/function/Predicate;
 		FIELD field_25184 toolRequired Z
 		FIELD field_40338 blockBreakParticles Z
@@ -1279,9 +1278,8 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 			ARG 1 world
 			ARG 2 pos
 		METHOD method_26229 hasRandomTicks ()Z
-		METHOD method_26230 shouldBlockVision (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z
+		METHOD method_26230 shouldBlockVision (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_238;)Z
 			ARG 1 world
-			ARG 2 pos
 		METHOD method_26231 getSoundGroup ()Lnet/minecraft/class_2498;
 		METHOD method_26233 asBlockState ()Lnet/minecraft/class_2680;
 		METHOD method_26234 isFullCube (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z

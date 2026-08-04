@@ -40,7 +40,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	COMMENT @see net.minecraft.server.integrated.IntegratedServer
 	COMMENT @see net.minecraft.client.render.GameRenderer
 	FIELD field_1_2249 lastWindowFocusTime J
-	FIELD field_1_2571 textInputController Lnet/minecraft/class_1_490;
+	FIELD field_1_2571 imeStatusController Lnet/minecraft/class_1_490;
 	FIELD field_1_3288 backendFailure Lnet/minecraft/class_1_739;
 	FIELD field_1_3290 surfaceConfigureFailed Z
 	FIELD field_1_3291 gpuTimestampProfiler Lnet/minecraft/class_1_667;
@@ -184,7 +184,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_1_3096 startEditingTextWidget (Lnet/minecraft/class_364;Z)V
 		ARG 1 element
 		ARG 2 focused
-	METHOD method_1_3097 getTextInputController ()Lnet/minecraft/class_1_490;
+	METHOD method_1_3097 getImeStatusController ()Lnet/minecraft/class_1_490;
 	METHOD method_1_3935 getYggdrasilGameProfileResult ()Lcom/mojang/authlib/services/ProfileResult;
 	METHOD method_1_3936 markSurfaceForUpdate ()V
 	METHOD method_1_3939 printCrashReport (Ljava/io/File;Lnet/minecraft/class_128;)V

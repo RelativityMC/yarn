@@ -19,8 +19,6 @@ CLASS net/minecraft/class_909 net/minecraft/client/render/entity/BipedEntityRend
 		ARG 1 state
 		ARG 2 tickProgress
 		ARG 3 itemModelResolver
-	METHOD method_62462 getPreferredArm (Lnet/minecraft/class_1309;)Lnet/minecraft/class_1306;
-		ARG 0 entity
 	METHOD method_65564 getArmPose (Lnet/minecraft/class_1308;Lnet/minecraft/class_1306;)Lnet/minecraft/class_572$class_573;
 		ARG 1 entity
 		ARG 2 arm

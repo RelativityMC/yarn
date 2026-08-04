@@ -1,11 +1,9 @@
 CLASS net/minecraft/class_3541 net/minecraft/util/math/noise/SimplexNoiseSampler
-	FIELD field_1_9662 RANGE Lnet/minecraft/class_1_1150;
 	FIELD field_15764 SQRT_3 D
 	FIELD field_15767 UNSKEW_FACTOR_2D D
 	FIELD field_15768 SKEW_FACTOR_2D D
 	METHOD <init> (Lnet/minecraft/class_5819;Z)V
 		ARG 1 random
-		ARG 2 offset
 	METHOD method_16455 grad (IDDDD)D
 		ARG 1 hash
 		ARG 2 x

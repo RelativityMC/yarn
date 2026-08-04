@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_6924 net/minecraft/world/gen/densityfunction/EndIslands
+	FIELD field_36554 sampler Lnet/minecraft/class_3541;
+	FIELD field_37085 CODEC_HOLDER Lcom/mojang/serialization/MapCodec;
+	FIELD field_37677 THRESHOLD F
+	METHOD <init> (J)V
+		ARG 1 seed
+	METHOD method_41529 sample (Lnet/minecraft/class_3541;II)F
+		ARG 0 sampler
+		ARG 1 x
+		ARG 2 z

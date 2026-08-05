@@ -1,7 +1,9 @@
 CLASS net/minecraft/class_10352 net/minecraft/util/context/ContextParameterMap
+	FIELD field_1_9766 EMPTY Lnet/minecraft/class_10352;
 	FIELD field_54893 map Ljava/util/Map;
 	METHOD <init> (Ljava/util/Map;)V
 		ARG 1 map
+	METHOD method_1_9397 builder ()Lnet/minecraft/class_10352$class_10353;
 	METHOD method_64965 contains (Lnet/minecraft/class_169;)Z
 		ARG 1 parameter
 	METHOD method_64966 getOrDefault (Lnet/minecraft/class_169;Ljava/lang/Object;)Ljava/lang/Object;
@@ -12,6 +14,11 @@ CLASS net/minecraft/class_10352 net/minecraft/util/context/ContextParameterMap
 	METHOD method_64968 getNullable (Lnet/minecraft/class_169;)Ljava/lang/Object;
 		ARG 1 parameter
 	CLASS class_10353 Builder
+		FIELD field_1_9767 map Ljava/util/Map;
+		METHOD method_1_9398 build ()Lnet/minecraft/class_10352;
+		METHOD method_1_9399 param (Lnet/minecraft/class_169;Ljava/lang/Object;)Lnet/minecraft/class_10352$class_10353;
+			ARG 1 parameter
+			ARG 2 value
 		METHOD method_64971 build (Lnet/minecraft/class_176;)Lnet/minecraft/class_10352;
 			ARG 1 type
 		METHOD method_64972 getNullable (Lnet/minecraft/class_169;)Ljava/lang/Object;

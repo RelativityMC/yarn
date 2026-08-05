@@ -10,7 +10,11 @@ CLASS net/minecraft/class_4713 net/minecraft/advancement/criterion/SlideDownBloc
 		METHOD <init> (Ljava/util/Optional;Ljava/util/Optional;Ljava/util/Optional;)V
 			ARG 1 playerPredicate
 			ARG 3 state
+		METHOD method_1_8893 create (Lnet/minecraft/class_7871;Lnet/minecraft/class_2248;)Lnet/minecraft/class_175;
+			ARG 0 blocksLookup
+			ARG 1 block
 		METHOD method_23912 create (Lnet/minecraft/class_6885;)Lnet/minecraft/class_175;
+			ARG 0 blocks
 		METHOD method_23913 test (Lnet/minecraft/class_2680;)Z
 			ARG 1 state
 		METHOD method_55125 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

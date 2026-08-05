@@ -1,6 +1,16 @@
 CLASS net/minecraft/class_2172 net/minecraft/command/CommandSource
 	FIELD field_55224 SUGGESTION_MATCH_PREFIX Lcom/google/common/base/CharMatcher;
 	METHOD method_1_7846 getPostEffects ()Ljava/util/stream/Stream;
+	METHOD method_1_9205 (Ljava/lang/Object;)Z
+		ARG 0 value
+	METHOD method_1_9206 (Ljava/util/function/Predicate;Lnet/minecraft/class_6880$class_6883;)Z
+		ARG 1 entry
+	METHOD method_1_9207 listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Lnet/minecraft/class_5321;Lnet/minecraft/class_2172$class_7078;Ljava/util/function/Predicate;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 context
+		ARG 1 builder
+		ARG 2 registryRef
+		ARG 3 suggestedIdType
+		ARG 4 filter
 	METHOD method_9250 forEachMatching (Ljava/lang/Iterable;Ljava/lang/String;Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Consumer;)V
 		ARG 0 candidates
 		ARG 1 remaining
@@ -91,10 +101,16 @@ CLASS net/minecraft/class_2172 net/minecraft/command/CommandSource
 		ARG 1 builder
 		ARG 2 prefix
 	METHOD method_41213 listIdSuggestions (Lnet/minecraft/class_5321;Lnet/minecraft/class_2172$class_7078;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Lcom/mojang/brigadier/context/CommandContext;Ljava/util/function/Predicate;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 registryRef
+		ARG 2 suggestedIdType
+		ARG 3 builder
+		ARG 4 context
+		ARG 5 filter
 	METHOD method_41214 suggestIdentifiers (Lnet/minecraft/class_7225;Lnet/minecraft/class_2172$class_7078;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Ljava/util/function/Predicate;)V
 		ARG 1 registry
 		ARG 2 suggestedIdType
 		ARG 3 builder
+		ARG 4 filter
 	METHOD method_44750 getChatSuggestions ()Ljava/util/Collection;
 	METHOD method_45549 getEnabledFeatures ()Lnet/minecraft/class_7699;
 	METHOD method_71777 listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Lnet/minecraft/class_5321;Lnet/minecraft/class_2172$class_7078;)Ljava/util/concurrent/CompletableFuture;

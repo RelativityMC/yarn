@@ -2,6 +2,7 @@ CLASS net/minecraft/class_1863 net/minecraft/recipe/ServerRecipeManager
 	COMMENT A recipe manager allows easier use of recipes, such as finding matches and
 	COMMENT remainders. It is also integrated with a recipe loader, which loads recipes
 	COMMENT from data packs' JSON files.
+	FIELD field_1_9563 recipesInBook Ljava/util/Collection;
 	FIELD field_9027 LOGGER Lorg/slf4j/Logger;
 	FIELD field_54638 preparedRecipes Lnet/minecraft/class_10289;
 	FIELD field_54639 propertySets Ljava/util/Map;
@@ -9,7 +10,16 @@ CLASS net/minecraft/class_1863 net/minecraft/recipe/ServerRecipeManager
 	FIELD field_54641 recipes Ljava/util/List;
 	FIELD field_54642 recipesByKey Ljava/util/Map;
 	FIELD field_54897 SOLE_INGREDIENT_GETTERS Ljava/util/Map;
-	METHOD method_8126 values ()Ljava/util/Collection;
+	METHOD <init> (Lnet/minecraft/class_7225$class_7874;)V
+		ARG 1 registries
+	METHOD method_1_7911 (Lnet/minecraft/class_1860;)Ljava/util/Optional;
+		ARG 0 recipe
+	METHOD method_1_7912 (Lnet/minecraft/class_1860;)Ljava/util/Optional;
+		ARG 0 recipe
+	METHOD method_1_9208 getRecipesInBook ()Ljava/util/Collection;
+	METHOD method_1_9209 (Lnet/minecraft/class_8786;)Z
+		ARG 0 recipe
+	METHOD method_8126 getAllRecipes ()Ljava/util/Collection;
 		COMMENT {@return all recipes in this manager}
 		COMMENT
 		COMMENT <p>The returned set does not update with the manager. Modifications to the

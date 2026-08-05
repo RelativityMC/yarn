@@ -1,7 +1,34 @@
 CLASS net/minecraft/class_1_24 net/minecraft/server/command/SwingCommand
 	FIELD field_1_135 NOT_LIVING_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
+	FIELD field_1_7379 SWING_REPORTER Lnet/minecraft/class_1_1083$class_1_1091;
 	METHOD method_1_466 register (Lcom/mojang/brigadier/CommandDispatcher;)V
 		ARG 0 dispatcher
 	METHOD method_1_467 execute (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_1268;Lnet/minecraft/class_12122;I)I
 		ARG 0 source
+		ARG 1 targets
+		ARG 2 hand
+		ARG 3 animation
+		ARG 4 duration
+	METHOD method_1_955 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD method_1_6587 (Lnet/minecraft/class_1309;I)Lnet/minecraft/class_2561;
+		ARG 0 entity
+		ARG 1 total
+	METHOD method_1_6588 (II)Lnet/minecraft/class_2561;
+		ARG 0 count
+		ARG 1 total
+	METHOD method_1_9427 createHandSpecificTree (Ljava/lang/String;Lnet/minecraft/class_1268;)Lcom/mojang/brigadier/builder/LiteralArgumentBuilder;
+		ARG 0 handName
+		ARG 1 hand
+	METHOD method_1_9428 (Lnet/minecraft/class_1268;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 1 context
+	METHOD method_1_9429 (Lnet/minecraft/class_1268;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 1 context
+	METHOD method_1_9430 (Lnet/minecraft/class_1268;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 1 context
+	METHOD method_1_9431 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD method_1_9432 execute (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_1268;)I
+		ARG 0 source
+		ARG 1 targets
 		ARG 2 hand

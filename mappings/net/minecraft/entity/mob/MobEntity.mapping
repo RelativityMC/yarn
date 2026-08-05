@@ -79,6 +79,11 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 		ARG 3 shears
 		ARG 4 slot
 		ARG 5 equipment
+	METHOD method_1_9365 swingHand (Lnet/minecraft/class_1268;Lnet/minecraft/class_12126;)V
+		ARG 1 hand
+		ARG 2 animation
+	METHOD method_1_9366 swingHand (Lnet/minecraft/class_1268;)V
+		ARG 1 hand
 	METHOD method_5930 setForwardSpeed (F)V
 		ARG 1 forwardSpeed
 	METHOD method_5937 setLeftHanded (Z)V

@@ -6,8 +6,10 @@ CLASS net/minecraft/class_1_951 net/minecraft/client/friend/InvitationManager
 	FIELD field_1_6636 client Lnet/minecraft/class_310;
 	FIELD field_1_6638 dirty Z
 	FIELD field_1_7149 UPDATE_INTERVAL_MULTIPLIER_WHEN_NOT_DIRTY J
+	FIELD field_1_9671 LOGGER Lorg/slf4j/Logger;
 	METHOD <init> (Lnet/minecraft/class_310;Lcom/mojang/authlib/services/FriendsService;)V
 		ARG 1 client
+		ARG 2 friendsService
 	METHOD method_1_5778 getPresenceResponse ()Lcom/mojang/authlib/services/response/PresenceResponse;
 	METHOD method_1_5779 getPresenceStatus ()Lcom/mojang/authlib/services/response/PresenceStatus;
 	METHOD method_1_5794 shouldUpdatePresenceStatus ()Z
@@ -15,3 +17,7 @@ CLASS net/minecraft/class_1_951 net/minecraft/client/friend/InvitationManager
 	METHOD method_1_5796 markDirty ()V
 	METHOD method_1_5797 updatePresenceStatus ()V
 	METHOD method_1_6258 getActualPresenceStatus ()Lcom/mojang/authlib/services/response/PresenceStatus;
+	METHOD method_1_9322 isFriendsListEmpty ()Z
+	METHOD method_1_9324 postPresence (Lcom/mojang/authlib/services/response/PresenceStatus;)Lcom/mojang/authlib/services/response/PresenceResponse;
+		ARG 1 presenceStatus
+	METHOD method_1_9325 shutdown ()V

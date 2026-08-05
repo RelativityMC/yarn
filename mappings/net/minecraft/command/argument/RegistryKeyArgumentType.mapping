@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_7079 net/minecraft/command/argument/RegistryKeyArgumentType
+	FIELD field_1_9631 filter Ljava/util/function/Predicate;
 	FIELD field_37269 EXAMPLES Ljava/util/Collection;
 	FIELD field_37272 registryRef Lnet/minecraft/class_5321;
 	FIELD field_39191 INVALID_STRUCTURE_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
@@ -7,9 +8,19 @@ CLASS net/minecraft/class_7079 net/minecraft/command/argument/RegistryKeyArgumen
 	FIELD field_54826 ADVANCEMENT_NOT_FOUND_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	METHOD <init> (Lnet/minecraft/class_5321;)V
 		ARG 1 registryRef
+	METHOD <init> (Lnet/minecraft/class_5321;Ljava/util/function/Predicate;)V
+		ARG 1 registryRef
+		ARG 2 filter
 	METHOD listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 context
 		ARG 2 builder
+	METHOD method_1_9275 registryKey (Lnet/minecraft/class_5321;Ljava/util/function/Predicate;)Lnet/minecraft/class_7079;
+		ARG 0 registryRef
+		ARG 1 filter
+	METHOD method_1_9276 (Lnet/minecraft/class_8786;)Z
+		ARG 0 recipe
+	METHOD method_1_9277 (Ljava/lang/Object;)Z
+		ARG 0 value
 	METHOD method_41220 getKey (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;Lnet/minecraft/class_5321;Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;)Lnet/minecraft/class_5321;
 		ARG 0 context
 		ARG 1 name

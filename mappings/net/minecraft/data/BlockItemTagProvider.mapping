@@ -18,3 +18,5 @@ CLASS net/minecraft/class_1_802 net/minecraft/data/BlockItemTagProvider
 			ARG 1 keys
 		METHOD method_1_4892 addTag (Lnet/minecraft/class_1_782;)Lnet/minecraft/class_1_802$class_1_803;
 			ARG 1 tagKey
+		METHOD method_1_9439 addTags ([Lnet/minecraft/class_1_782;)Lnet/minecraft/class_1_802$class_1_803;
+			ARG 1 tagKeys

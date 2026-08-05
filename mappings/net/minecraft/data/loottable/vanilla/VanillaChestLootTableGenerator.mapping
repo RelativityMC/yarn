@@ -1,5 +1,29 @@
 CLASS net/minecraft/class_2432 net/minecraft/data/loottable/vanilla/VanillaChestLootTableGenerator
+	FIELD field_1_8559 biomesLookup Lnet/minecraft/class_7871;
+	FIELD field_1_8560 enchantmentsLookup Lnet/minecraft/class_7871;
+	FIELD field_1_8561 instrumentsLookup Lnet/minecraft/class_7871;
+	FIELD field_1_8562 output Lnet/minecraft/class_7791$class_1_1214;
+	FIELD field_1_9067 structuresLookup Lnet/minecraft/class_7871;
+	METHOD <init> (Lnet/minecraft/class_7791$class_1_1214;)V
+		ARG 1 output
 	METHOD method_1_6728 acceptAbandonedCampTables ()V
+	METHOD method_1_9468 buriedTreasureMapEntry ()Lnet/minecraft/class_85$class_86;
+	METHOD method_1_9469 filledMapFilter ()Lnet/minecraft/class_9668$class_12244;
+	METHOD method_1_9470 explorerMap (Lnet/minecraft/class_6862;Lnet/minecraft/class_6880;Lnet/minecraft/class_1792;)Lnet/minecraft/class_85$class_86;
+		ARG 1 structures
+		ARG 2 decoration
+		ARG 3 item
+	METHOD method_1_9471 explorerMap (Lnet/minecraft/class_6862;Lnet/minecraft/class_6880;Lnet/minecraft/class_1792;Ljava/lang/String;)Lnet/minecraft/class_85$class_86;
+		ARG 1 structures
+		ARG 2 decoration
+		ARG 3 item
+		ARG 4 translationKey
+	METHOD method_1_9472 abandonedCampExplorerMap (Lnet/minecraft/class_6862;Lnet/minecraft/class_6880;Lnet/minecraft/class_1792;Ljava/lang/String;Lnet/minecraft/class_6880;)Lnet/minecraft/class_85$class_86;
+		ARG 1 structures
+		ARG 2 decoration
+		ARG 3 item
+		ARG 4 translationKey
+		ARG 5 disallowedBiomes
 	METHOD method_48499 createShipwreckSupplyChestTableBuilder ()Lnet/minecraft/class_52$class_53;
 	METHOD method_48500 createShipwreckMapChestTableBuilder ()Lnet/minecraft/class_52$class_53;
 	METHOD method_48501 createBastionHoglinStableChestTableBuilder ()Lnet/minecraft/class_52$class_53;

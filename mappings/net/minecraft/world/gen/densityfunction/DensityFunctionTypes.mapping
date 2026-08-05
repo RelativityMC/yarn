@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFunctionTypes
+	FIELD field_1_9806 ZERO Lnet/minecraft/class_6923;
 	FIELD field_37060 MAX_CONSTANT_VALUE F
 	FIELD field_37061 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_37062 DYNAMIC_RANGE Lcom/mojang/serialization/Codec;
@@ -46,8 +47,62 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 	METHOD method_1_9257 sliceY (Lnet/minecraft/class_6910;I)Lnet/minecraft/class_6910;
 		ARG 0 input
 		ARG 1 y
+	METHOD method_1_9497 abs (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 input
+	METHOD method_1_9498 ceil (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 input
+	METHOD method_1_9499 ceil (Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 input
+		ARG 1 multiplier
+	METHOD method_1_9500 clamp (Lnet/minecraft/class_6910;FF)Lnet/minecraft/class_6910;
+		ARG 0 input
+		ARG 1 min
+		ARG 2 max
+	METHOD method_1_9501 cube (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 input
+	METHOD method_1_9502 floor (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 input
+	METHOD method_1_9503 floor (Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 input
+		ARG 1 multiplier
+	METHOD method_1_9504 halfNegative (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 input
+	METHOD method_1_9505 log (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 input
+	METHOD method_1_9506 negate (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 input
+	METHOD method_1_9507 quarterNegative (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 input
+	METHOD method_1_9508 reciprocaL (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 input
+	METHOD method_1_9509 round (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 input
+	METHOD method_1_9510 round (Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 input
+		ARG 1 multiplier
+	METHOD method_1_9511 round (Lnet/minecraft/class_1_1340$class_1_1341;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 mode
+		ARG 1 input
+	METHOD method_1_9512 round (Lnet/minecraft/class_1_1340$class_1_1341;Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 mode
+		ARG 1 input
+		ARG 2 multiplier
+	METHOD method_1_9513 sign (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 input
+	METHOD method_1_9514 sqrt (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 input
+	METHOD method_1_9515 square (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 input
+	METHOD method_1_9516 squeeze (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 input
+	METHOD method_1_9517 truncate (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 input
+	METHOD method_1_9518 truncate (Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 input
+		ARG 1 multiplier
 	METHOD method_40479 zero ()Lnet/minecraft/class_6910;
 	METHOD method_40480 constant (F)Lnet/minecraft/class_6910;
+		ARG 0 value
 	METHOD method_40481 yClampedGradient (IIFF)Lnet/minecraft/class_6910;
 		ARG 0 fromY
 		ARG 1 toY
@@ -93,6 +148,8 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 		ARG 0 noiseParameters
 		ARG 1 scaleXz
 		ARG 3 scaleY
+		ARG 5 minOutput
+		ARG 6 maxOutput
 	METHOD method_40497 noiseInRange (Lnet/minecraft/class_6880;DFF)Lnet/minecraft/class_6910;
 		ARG 0 noiseParameters
 		ARG 1 scaleY

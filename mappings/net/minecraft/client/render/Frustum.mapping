@@ -14,6 +14,7 @@ CLASS net/minecraft/class_4604 net/minecraft/client/render/Frustum
 		ARG 2 projectionMatrix
 	METHOD method_1_2256 copyFrom (Lnet/minecraft/class_4604;)V
 		ARG 1 frustum
+	METHOD method_1_9438 getBoundingBox ()Lnet/minecraft/class_238;
 	METHOD method_23088 setPosition (DDD)V
 		ARG 1 cameraX
 		ARG 3 cameraY

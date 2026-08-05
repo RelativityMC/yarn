@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1442 net/minecraft/client/resource/language/TranslationNotFoundException
+	FIELD field_1_9824 languageCode Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;)V
+		ARG 1 languageCode
+	METHOD method_1_9549 getLanguageCode ()Ljava/lang/String;

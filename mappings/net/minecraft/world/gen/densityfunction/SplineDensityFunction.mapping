@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_7076 net/minecraft/world/gen/densityfunction/Spline
+CLASS net/minecraft/class_7076 net/minecraft/world/gen/densityfunction/SplineDensityFunction
 	FIELD field_1_3760 function Lnet/minecraft/class_6501;
 	FIELD field_1_3761 spline Lnet/minecraft/class_6492;
 	FIELD field_37255 CODEC_HOLDER Lcom/mojang/serialization/MapCodec;

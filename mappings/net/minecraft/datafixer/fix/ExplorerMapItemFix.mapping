@@ -1,0 +1,18 @@
+CLASS net/minecraft/class_1_1435 net/minecraft/datafixer/fix/ExplorerMapItemFix
+	FIELD field_1_9802 DEFAULT_DECORATION_KEY Ljava/lang/String;
+	FIELD field_1_9803 MAP_TYPE_TO_NEW_ITEM_ID Ljava/util/Map;
+	FIELD field_1_9804 MAP_TYPE_TO_NAME_KEY Ljava/util/Map;
+	FIELD field_1_9805 ITEM_NAME_COMPONENT_KEY Ljava/lang/String;
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD method_1_9492 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 2 stack
+	METHOD method_1_9493 (Ljava/lang/String;Ljava/lang/String;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 2 stack1
+	METHOD method_1_9494 (Ljava/lang/String;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 components
+	METHOD method_1_9495 (Ljava/lang/String;Ljava/lang/String;)Z
+		ARG 1 key
+	METHOD method_1_9496 removeDefaultName (Lcom/mojang/serialization/Dynamic;Ljava/lang/String;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 oldComponents
+		ARG 1 nameKey

@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_1444 net/minecraft/network/packet/s2c/play/SwingAnimationS2CPacket
+	FIELD field_1_9825 CODEC Lnet/minecraft/class_9139;
+	METHOD <init> (Lnet/minecraft/class_1297;Lnet/minecraft/class_1268;Lnet/minecraft/class_12126;)V
+		ARG 1 entity
+		ARG 2 hand
+		ARG 3 animation

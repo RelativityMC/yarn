@@ -13,6 +13,11 @@ CLASS net/minecraft/class_315 net/minecraft/client/option/GameOptions
 	FIELD field_1_7122 EXCLUSIVE_FULLSCREEN_OFF_TOOLTIP Lnet/minecraft/class_2561;
 	FIELD field_1_7123 EXCLUSIVE_FULLSCREEN_ON_TOOLTIP Lnet/minecraft/class_2561;
 	FIELD field_1_7948 debugImprovedTransparency Lnet/minecraft/class_304;
+	FIELD field_1_8778 DEBUG_GUI_SCALE_TOOLTIP Lnet/minecraft/class_2561;
+	FIELD field_1_8779 DEBUG_GUI_SCALE_UNCHANGED I
+	FIELD field_1_8780 debugGuiScale Lnet/minecraft/class_7172;
+	FIELD field_1_9527 QUIT_SHORTCUTS_TOOLTIP Lnet/minecraft/class_2561;
+	FIELD field_1_9528 quitShortcuts Lnet/minecraft/class_7172;
 	FIELD field_1814 cloudRenderMode Lnet/minecraft/class_7172;
 	FIELD field_1815 hideServerAddress Z
 	FIELD field_1816 smoothCameraKey Lnet/minecraft/class_304;
@@ -337,6 +342,17 @@ CLASS net/minecraft/class_315 net/minecraft/client/option/GameOptions
 	METHOD method_1_5465 (Lnet/minecraft/class_1_698;)Lnet/minecraft/class_7919;
 		ARG 1 value
 	METHOD method_1_5466 getSharePresence ()Lnet/minecraft/class_7172;
+	METHOD method_1_8240 getDebugGuiScale ()Lnet/minecraft/class_7172;
+	METHOD method_1_8241 (Ljava/lang/Boolean;)Lnet/minecraft/class_7919;
+		ARG 0 value
+	METHOD method_1_8242 (Lnet/minecraft/class_2561;Ljava/lang/Integer;)Lnet/minecraft/class_2561;
+		ARG 0 button
+		ARG 1 value
+	METHOD method_1_8244 (Ljava/lang/Integer;)V
+		ARG 0 value
+	METHOD method_1_9159 (Ljava/lang/Boolean;)V
+		ARG 0 vlaue
+	METHOD method_1_9160 getQuitShortcuts ()Lnet/minecraft/class_7172;
 	METHOD method_1626 update (Lnet/minecraft/class_2487;)Lnet/minecraft/class_2487;
 		ARG 1 nbt
 	METHOD method_1627 addResourcePackProfilesToManager (Lnet/minecraft/class_3283;)V

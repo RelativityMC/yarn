@@ -1,7 +1,13 @@
 CLASS net/minecraft/class_11906 net/minecraft/client/input/SystemUiFlags
 	FIELD field_1_8797 TREAT_HORIZONTAL_SCROLL_WITH_SHIFT_AS_VERTICAL Z
+	FIELD field_1_9770 INPUT_TRANSLATION_KEY_RENAMES Ljava/util/Map;
+	FIELD field_1_9771 IS_WINDOWS Z
+	FIELD field_1_9772 OS Lnet/minecraft/class_156$class_158;
 	FIELD field_62586 IS_MAC_OS Z
 	FIELD field_62589 CTRL_MOD I
 	FIELD field_62590 USE_LONG_LEFT_PRESS Z
 	FIELD field_62591 UPDATE_PRESSED_STATE_ON_MOUSE_GRAB Z
 	FIELD field_62592 IS_MAC_OS_IMPL Z
+	METHOD method_1_9175 isExitKeyCombinationPressed ()Z
+	METHOD method_1_9401 fixInputTranslationKey (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 translationKey

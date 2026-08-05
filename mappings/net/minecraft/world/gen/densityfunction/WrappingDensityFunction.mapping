@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_6927 net/minecraft/world/gen/densityfunction/Wrapping
+CLASS net/minecraft/class_6927 net/minecraft/world/gen/densityfunction/WrappingDensityFunction
 	CLASS class_6928 Type
 		FIELD field_37088 name Ljava/lang/String;
 		FIELD field_37089 codec Lcom/mojang/serialization/MapCodec;

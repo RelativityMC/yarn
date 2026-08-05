@@ -6,7 +6,7 @@ CLASS net/minecraft/class_1_1225 net/minecraft/entity/decoration/CushionEntity
 	METHOD method_1_7783 setColor (Lnet/minecraft/class_1767;)V
 		ARG 1 color
 	METHOD method_1_7784 spawnBreakParticles ()V
-	METHOD method_1_7785 canBePlacedOn (Lnet/minecraft/class_1937;Lnet/minecraft/class_238;)Z
+	METHOD method_1_7785 isSupported (Lnet/minecraft/class_1937;Lnet/minecraft/class_238;)Z
 		ARG 0 world
 		ARG 1 cushionBox
 	METHOD method_1_8660 handleFireCollisions (Lnet/minecraft/class_3218;)V
@@ -20,3 +20,15 @@ CLASS net/minecraft/class_1_1225 net/minecraft/entity/decoration/CushionEntity
 	METHOD method_1_8664 (Lnet/minecraft/class_1937;Lnet/minecraft/class_238;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Lnet/minecraft/class_7928;
 		ARG 2 pos
 		ARG 3 state
+	METHOD method_1_9440 canBePlaced (Lnet/minecraft/class_1937;Lnet/minecraft/class_238;)Z
+		ARG 0 world
+		ARG 1 box
+	METHOD method_1_9441 isBottomCompletelyObstructed (Lnet/minecraft/class_1937;Lnet/minecraft/class_238;)Z
+		ARG 0 world
+		ARG 1 box
+	METHOD method_1_9442 isCompletelyObstructedByFullBlocks (Lnet/minecraft/class_1937;Lnet/minecraft/class_238;)Z
+		ARG 0 world
+		ARG 1 box
+	METHOD method_1_9443 canStayAttached (Lnet/minecraft/class_1937;Lnet/minecraft/class_238;)Z
+		ARG 0 world
+		ARG 1 box

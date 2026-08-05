@@ -50,6 +50,7 @@ CLASS net/minecraft/class_6568 net/minecraft/world/gen/chunk/ChunkNoiseSampler
 		ARG 3 startBlockX
 		ARG 4 startBlockZ
 		ARG 5 generationShapeConfig
+		ARG 6 structureWeightSampler
 		ARG 7 chunkGeneratorSettings
 		ARG 8 fluidLevelSampler
 		ARG 9 blender
@@ -62,6 +63,7 @@ CLASS net/minecraft/class_6568 net/minecraft/world/gen/chunk/ChunkNoiseSampler
 		COMMENT Interpolates density values on the Y axis for every interpolator.
 		ARG 1 blockY
 			COMMENT the absolute block Y coordinate
+		ARG 2 cellLocalY
 	METHOD method_38339 sampleEndDensity (I)V
 		COMMENT Samples the density values for all cells in the chunk with the given X coordinate.
 		COMMENT This is done for every {@code interpolated} function. The resulting density values
@@ -74,11 +76,13 @@ CLASS net/minecraft/class_6568 net/minecraft/world/gen/chunk/ChunkNoiseSampler
 		COMMENT Interpolates density values on the X axis for every interpolator.
 		ARG 1 blockX
 			COMMENT the absolute block X coordinate
+		ARG 2 cellLocalX
 	METHOD method_38354 getAquiferSampler ()Lnet/minecraft/class_6350;
 	METHOD method_38355 interpolateZ (IF)V
 		COMMENT Interpolates density values on the Z axis for every interpolator.
 		ARG 1 blockZ
 			COMMENT the absolute block Z coordinate
+		ARG 2 cellLocalZ
 	METHOD method_38362 onSampledCellCorners (II)V
 		COMMENT This should be called when the start and end density buffers are
 		COMMENT correctly filled for the current cell.
@@ -94,6 +98,7 @@ CLASS net/minecraft/class_6568 net/minecraft/world/gen/chunk/ChunkNoiseSampler
 	METHOD method_39543 create (Lnet/minecraft/class_2791;Lnet/minecraft/class_7138;Lnet/minecraft/class_5817;Lnet/minecraft/class_5284;Lnet/minecraft/class_6350$class_6565;Lnet/minecraft/class_6748;)Lnet/minecraft/class_6568;
 		ARG 0 chunk
 		ARG 1 noiseConfig
+		ARG 2 structureWeightSampler
 		ARG 3 chunkGeneratorSettings
 		ARG 4 fluidLevelSampler
 		ARG 5 blender
@@ -121,6 +126,7 @@ CLASS net/minecraft/class_6568 net/minecraft/world/gen/chunk/ChunkNoiseSampler
 			COMMENT the current cell X coordinate
 	METHOD method_40533 getActualDensityFunctionImpl (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
 		COMMENT {@return the actual density function for a given density function}
+		ARG 1 function
 	METHOD method_40535 calculateBlendResult (II)Lnet/minecraft/class_6748$class_6956;
 		ARG 1 blockX
 		ARG 2 blockZ
@@ -206,3 +212,4 @@ CLASS net/minecraft/class_6568 net/minecraft/world/gen/chunk/ChunkNoiseSampler
 			ARG 2 delegate
 			ARG 3 sample
 	CLASS class_6952 ParentedNoiseType
+		METHOD method_1_9444 getDelegate ()Lnet/minecraft/class_6910;

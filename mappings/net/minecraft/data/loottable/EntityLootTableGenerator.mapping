@@ -1,12 +1,22 @@
 CLASS net/minecraft/class_7789 net/minecraft/data/loottable/EntityLootTableGenerator
+	FIELD field_1_8500 enchantmentsLookup Lnet/minecraft/class_7871;
+	FIELD field_1_8501 entityTypesLookup Lnet/minecraft/class_7871;
+	FIELD field_1_8502 frogVariantsLookup Lnet/minecraft/class_7871;
+	FIELD field_1_8503 output Lnet/minecraft/class_7791$class_1_1214;
+	FIELD field_1_9054 damageTypesLookup Lnet/minecraft/class_7871;
+	FIELD field_1_9055 itemsLookup Lnet/minecraft/class_7871;
+	FIELD field_1_9056 lootTablesLookup Lnet/minecraft/class_7871;
 	FIELD field_40615 lootTables Ljava/util/Map;
 	FIELD field_42084 requiredFeatures Lnet/minecraft/class_7699;
 	FIELD field_42085 featureSet Lnet/minecraft/class_7699;
 	METHOD <init> (Lnet/minecraft/class_7699;Lnet/minecraft/class_7699;Lnet/minecraft/class_7791$class_1_1214;)V
 		ARG 1 requiredFeatures
 		ARG 2 featureSet
+		ARG 3 output
 	METHOD <init> (Lnet/minecraft/class_7699;Lnet/minecraft/class_7791$class_1_1214;)V
 		ARG 1 requiredFeatures
+		ARG 2 output
+	METHOD method_1_8659 projectileDamageSource ()Lnet/minecraft/class_2022$class_2023;
 	METHOD method_10400 generate ()V
 	METHOD method_46028 register (Lnet/minecraft/class_1299;Lnet/minecraft/class_5321;Lnet/minecraft/class_52$class_53;)V
 		ARG 1 entityType
@@ -18,6 +28,7 @@ CLASS net/minecraft/class_7789 net/minecraft/data/loottable/EntityLootTableGener
 	METHOD method_46030 killedByFrog (Lnet/minecraft/class_5321;)Lnet/minecraft/class_5341$class_210;
 		ARG 1 frogVariant
 	METHOD method_46031 createForSheep (Lnet/minecraft/class_1_727;)Lnet/minecraft/class_55$class_56;
+		ARG 0 lootTablesByColor
 	METHOD method_46032 (Ljava/util/Set;Lnet/minecraft/class_6880$class_6883;Lnet/minecraft/class_5321;Lnet/minecraft/class_52$class_53;)V
 		ARG 3 tableKey
 		ARG 4 lootTableBuilder

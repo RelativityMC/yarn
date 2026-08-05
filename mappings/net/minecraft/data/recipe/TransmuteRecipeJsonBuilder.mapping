@@ -9,6 +9,7 @@ CLASS net/minecraft/class_10243 net/minecraft/data/recipe/TransmuteRecipeJsonBui
 	FIELD field_54401 group Ljava/lang/String;
 	METHOD <init> (Lnet/minecraft/class_7800;Lnet/minecraft/class_1_1434;Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;)V
 		ARG 1 category
+		ARG 2 result
 		ARG 3 input
 		ARG 4 material
 	METHOD method_1_1407 addMaterialCountToResult ()Lnet/minecraft/class_10243;
@@ -18,6 +19,14 @@ CLASS net/minecraft/class_10243 net/minecraft/data/recipe/TransmuteRecipeJsonBui
 		ARG 0 category
 		ARG 1 input
 		ARG 2 material
+		ARG 3 result
+	METHOD method_1_9477 (Lnet/minecraft/class_6880;)Lnet/minecraft/class_5321;
+		ARG 1 item
+	METHOD method_1_9478 create (Lnet/minecraft/class_7800;Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_1_107;)Lnet/minecraft/class_10243;
+		ARG 0 category
+		ARG 1 input
+		ARG 2 material
+		ARG 3 result
 	METHOD method_64380 create (Lnet/minecraft/class_7800;Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_1792;)Lnet/minecraft/class_10243;
 		ARG 0 category
 		ARG 1 input

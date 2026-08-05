@@ -2,6 +2,12 @@ CLASS net/minecraft/class_8526 net/minecraft/block/entity/Sherds
 	FIELD field_44707 DEFAULT Lnet/minecraft/class_8526;
 	FIELD field_49414 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_49415 PACKET_CODEC Lnet/minecraft/class_9139;
+	METHOD method_1_7006 (Ljava/util/function/Consumer;Lnet/minecraft/class_1_107;)V
+		ARG 1 item
+	METHOD method_1_7007 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_9114 empty (Lnet/minecraft/class_7871;)Lnet/minecraft/class_8526;
+		ARG 0 itemsLookup
 	METHOD method_67242 appendSherdTooltip (Ljava/util/function/Consumer;Ljava/util/Optional;)V
 		ARG 0 textConsumer
 		ARG 1 sherdItem

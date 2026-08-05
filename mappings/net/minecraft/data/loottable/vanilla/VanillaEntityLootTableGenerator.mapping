@@ -1,2 +1,7 @@
 CLASS net/minecraft/class_2434 net/minecraft/data/loottable/vanilla/VanillaEntityLootTableGenerator
+	METHOD <init> (Lnet/minecraft/class_7791$class_1_1214;)V
+		ARG 1 output
+	METHOD method_1_4347 (Lnet/minecraft/class_5321;Lnet/minecraft/class_2248;)V
+		ARG 1 table
+		ARG 2 wool
 	METHOD method_48515 createElderGuardianTableBuilder ()Lnet/minecraft/class_52$class_53;

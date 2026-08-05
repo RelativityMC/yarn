@@ -73,6 +73,7 @@ CLASS net/minecraft/class_1661 net/minecraft/entity/player/PlayerInventory
 		ARG 1 list
 	METHOD method_7398 offerOrDrop (Lnet/minecraft/class_1799;Lnet/minecraft/class_1_1430;)V
 		ARG 1 stack
+		ARG 2 dropType
 	METHOD method_29280 remove (Ljava/util/function/Predicate;ILnet/minecraft/class_1263;)I
 		ARG 1 shouldRemove
 		ARG 2 maxCount
@@ -80,6 +81,7 @@ CLASS net/minecraft/class_1661 net/minecraft/entity/player/PlayerInventory
 	METHOD method_32338 offer (Lnet/minecraft/class_1799;ZLnet/minecraft/class_1_1430;)V
 		ARG 1 stack
 		ARG 2 notifiesClient
+		ARG 3 dropType
 	METHOD method_37417 dropSelectedItem (Z)Lnet/minecraft/class_1799;
 		ARG 1 entireStack
 	METHOD method_55753 contains (Ljava/util/function/Predicate;)Z

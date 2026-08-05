@@ -8,6 +8,7 @@ CLASS net/minecraft/class_1_164 net/minecraft/recipe/crafting/MapExtendingRecipe
 	METHOD <init> (Lnet/minecraft/class_1856;Lnet/minecraft/class_1856;Lnet/minecraft/class_1_1434;)V
 		ARG 1 map
 		ARG 2 material
+		ARG 3 result
 	METHOD method_1_1503 getMapItem (Lnet/minecraft/class_9694;)Lnet/minecraft/class_1799;
 		ARG 0 input
 	METHOD method_1_1504 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

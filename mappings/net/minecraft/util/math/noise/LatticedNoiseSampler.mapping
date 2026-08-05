@@ -12,12 +12,24 @@ CLASS net/minecraft/class_1_1412 net/minecraft/util/math/noise/LatticedNoiseSamp
 		ARG 2 offsetScale
 	METHOD method_1_9318 getLatticePointContribution (IFFF)F
 		ARG 0 index
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_1_9319 permuteIndex (I)I
 		ARG 1 cellCoord
 	METHOD method_1_9320 wrapCoord (D)D
 		ARG 0 coordinate
+	METHOD method_1_9523 getLatticePointDirection (I)Lnet/minecraft/class_1_1412$class_1_1413;
+		ARG 1 cellCoord
 	CLASS class_1_1413 LatticePointDirection
 		METHOD method_1_9321 dot (DDD)D
 			ARG 1 x
 			ARG 3 y
 			ARG 5 z
+		METHOD method_1_9524 dot (FFF)F
+			ARG 1 x
+			ARG 2 y
+			ARG 3 z
+		METHOD method_1_9525 dotXz (FF)F
+			ARG 1 x
+			ARG 2 z

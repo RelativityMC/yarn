@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_6939 net/minecraft/world/gen/densityfunction/Offset
+CLASS net/minecraft/class_6939 net/minecraft/world/gen/densityfunction/OffsetDensityFunction
 	METHOD method_40525 sample (DDD)F
 		ARG 1 x
 		ARG 3 y

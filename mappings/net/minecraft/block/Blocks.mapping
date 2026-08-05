@@ -28,6 +28,9 @@ CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 	FIELD field_1_3504 WOOLS Lnet/minecraft/class_1_727;
 	FIELD field_1_7340 WOOL_SLABS Lnet/minecraft/class_1_727;
 	FIELD field_1_7341 WOOL_STAIRS Lnet/minecraft/class_1_727;
+	FIELD field_1_9774 CONCRETE_SLABS Lnet/minecraft/class_1_727;
+	FIELD field_1_9775 CONCRETE_STAIRS Lnet/minecraft/class_1_727;
+	FIELD field_1_9776 BLOCKS_VISION_PREDICATE Lnet/minecraft/class_4970$class_4972;
 	FIELD field_10566 DIRT Lnet/minecraft/class_2248;
 	FIELD field_23985 IRON_CHAIN Lnet/minecraft/class_2248;
 	FIELD field_46282 PUMPKIN Lnet/minecraft/class_2248;
@@ -287,6 +290,43 @@ CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 		ARG 1 base
 		ARG 2 hardness
 		ARG 3 resistance
+	METHOD method_1_9402 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_238;)Z
+		ARG 0 state
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 type
+	METHOD method_1_9403 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_1_9404 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_1_9405 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_1_9406 (Lnet/minecraft/class_1767;Lnet/minecraft/class_1_784;)Lnet/minecraft/class_2248;
+		ARG 0 color
+		ARG 1 settings
+	METHOD method_1_9407 (Lnet/minecraft/class_1767;Lnet/minecraft/class_1_784;)Lnet/minecraft/class_2248;
+		ARG 0 color
+		ARG 1 settings
+	METHOD method_1_9408 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_1_9409 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_1_9410 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_1_9411 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_1_9412 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_1_9413 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_1_9414 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_1_9415 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
+	METHOD method_1_9416 (Lnet/minecraft/class_5955$class_5811;Lnet/minecraft/class_2680;)Lnet/minecraft/class_3620;
+		ARG 1 state
+	METHOD method_1_9417 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
+		ARG 0 settings
 	METHOD method_9492 register (Lnet/minecraft/class_1_784;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
 		ARG 0 key
 		ARG 1 settings
@@ -406,6 +446,7 @@ CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 		ARG 0 state
 		ARG 1 world
 		ARG 2 pos
+		ARG 3 type
 	METHOD method_41421 (Lnet/minecraft/class_2680;)I
 		ARG 0 state
 	METHOD method_41422 (Lnet/minecraft/class_2680;)I

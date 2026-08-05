@@ -1,1 +1,8 @@
 CLASS net/minecraft/class_9340 net/minecraft/data/loottable/vanilla/VanillaShearingLootTableGenerator
+	FIELD field_1_8617 output Lnet/minecraft/class_7791$class_1_1214;
+	FIELD field_1_9117 lootTablesLookup Lnet/minecraft/class_7871;
+	METHOD <init> (Lnet/minecraft/class_7791$class_1_1214;)V
+		ARG 1 output
+	METHOD method_1_7926 (Lnet/minecraft/class_5321;Lnet/minecraft/class_2248;)V
+		ARG 1 table
+		ARG 2 wool

@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_6940 net/minecraft/world/gen/densityfunction/ShiftedNoise
+CLASS net/minecraft/class_6940 net/minecraft/world/gen/densityfunction/ShiftedNoiseDensityFunction
 	FIELD field_37097 CODEC_HOLDER Lcom/mojang/serialization/MapCodec;
 	METHOD method_41090 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance

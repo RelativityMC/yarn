@@ -2,6 +2,8 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	COMMENT Represents an entity which has a health value and can receive damage.
 	FIELD field_1_848 currentImpulseContextResetGraceTime I
 	FIELD field_1_849 currentExplosionImpactPos Lnet/minecraft/class_243;
+	FIELD field_1_9534 heartJumpTime I
+	FIELD field_1_9777 handSwingState Lnet/minecraft/class_1309$class_1_1433;
 	FIELD field_6212 sidewaysSpeed F
 	FIELD field_6213 deathTime I
 	FIELD field_6214 POTION_SWIRLS_AMBIENT Lnet/minecraft/class_2940;
@@ -125,6 +127,14 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 maxTicksSinceDamage
 	METHOD method_1_6522 isHurting ()Z
 	METHOD method_1_7652 setPositionInBed (Lnet/minecraft/class_2338;)Z
+		ARG 1 pos
+	METHOD method_1_9177 setPositionInBed (DLnet/minecraft/class_2338;)V
+		ARG 1 bedHeight
+		ARG 3 bedPos
+	METHOD method_1_9419 getCurrentHandSwing ()Lnet/minecraft/class_1309$class_1_1432;
+	METHOD method_1_9420 getDurationTicks (Lnet/minecraft/class_12126;)I
+		ARG 1 animation
+	METHOD method_1_9421 isSwingingHand ()Z
 	METHOD method_5673 setEquipment (Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;)V
 		ARG 1 slot
 		ARG 2 stack
@@ -248,6 +258,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		COMMENT @see #shouldAlwaysDropExperience()
 		COMMENT @see #getExperienceToDrop()
 	METHOD method_6055 getHandSwingProgress (F)F
+		ARG 1 tickProgress
 	METHOD method_6057 canSee (Lnet/minecraft/class_1297;)Z
 		ARG 1 entity
 	METHOD method_6058 getActiveHand ()Lnet/minecraft/class_1268;
@@ -347,8 +358,10 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_6103 sendPickup (Lnet/minecraft/class_1297;I)V
 		ARG 1 item
 		ARG 2 count
-	METHOD method_6104 swingHand (Lnet/minecraft/class_1268;Lnet/minecraft/class_12126;Z)V
+	METHOD method_6104 doSwingHand (Lnet/minecraft/class_1268;Lnet/minecraft/class_12126;Z)V
 		ARG 1 hand
+		ARG 2 animation
+		ARG 3 fromServerPlayer
 	METHOD method_6105 damageArmor (Lnet/minecraft/class_1282;F)V
 		ARG 1 source
 		ARG 2 amount
@@ -413,6 +426,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_7329 dropItem (Lnet/minecraft/class_1799;ZLnet/minecraft/class_1_1430;)Lnet/minecraft/class_1542;
 		ARG 1 stack
 		ARG 2 retainOwnership
+		ARG 3 dropType
 	METHOD method_16077 dropLoot (Lnet/minecraft/class_3218;Lnet/minecraft/class_1282;Z)V
 		ARG 1 world
 		ARG 2 damageSource
@@ -426,6 +440,8 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 despawnCounter
 	METHOD method_17825 getScaleFactor ()F
 	METHOD method_18390 getAttackDistanceScalingFactor (Lnet/minecraft/class_3218;Lnet/minecraft/class_1297;)D
+		ARG 1 world
+		ARG 2 tester
 	METHOD method_18392 setPositionInBed (Lnet/minecraft/class_2338;)V
 		ARG 1 pos
 	METHOD method_18395 canTarget (Lnet/minecraft/class_1309;)Z
@@ -473,6 +489,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 3 damagePerDistance
 	METHOD method_23667 swingHand (Lnet/minecraft/class_1268;Lnet/minecraft/class_12126;Z)Z
 		ARG 1 hand
+		ARG 2 animation
 		ARG 3 fromServerPlayer
 	METHOD method_23733 onKilledBy (Lnet/minecraft/class_1309;)V
 		COMMENT Performs secondary effects after this mob has been killed.
@@ -877,4 +894,22 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 predicate
 	METHOD method_76694 getActiveOrMainHandStack ()Lnet/minecraft/class_1799;
 	METHOD method_76773 playKineticHitSound ()V
+	CLASS class_1_1432 HandSwing
+	CLASS class_1_1433 HandSwingState
+		FIELD field_1_9778 swingProgress F
+		FIELD field_1_9779 currentSwing Lnet/minecraft/class_1309$class_1_1432;
+		FIELD field_1_9780 lastSwingProgress F
+		FIELD field_1_9781 ticksSinceLastSwing I
+		METHOD method_1_9422 getProgress (F)F
+			ARG 1 tickProgress
+		METHOD method_1_9423 isSwinging ()Z
+		METHOD method_1_9424 swing (Lnet/minecraft/class_1268;Lnet/minecraft/class_12126;I)V
+			ARG 1 hand
+			ARG 2 animation
+			ARG 3 durationTicks
+		METHOD method_1_9425 trySwing (Lnet/minecraft/class_1268;Lnet/minecraft/class_12126;I)Z
+			ARG 1 hand
+			ARG 2 animation
+			ARG 3 durationTicks
+		METHOD method_1_9426 tick ()V
 	CLASS class_6823 FallSounds

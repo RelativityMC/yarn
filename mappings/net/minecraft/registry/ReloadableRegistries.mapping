@@ -6,8 +6,11 @@ CLASS net/minecraft/class_9383 net/minecraft/registry/ReloadableRegistries
 		ARG 1 pendingTagLoads
 		ARG 2 resourceManager
 		ARG 3 prepareExecutor
+	METHOD method_61241 (Lnet/minecraft/class_8944;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_8490;)V
+		ARG 2 type
 	METHOD method_61242 (Ljava/lang/String;Lnet/minecraft/class_8942$class_11337;)V
 		ARG 0 id
+		ARG 1 error
 	METHOD method_61243 validate (Lnet/minecraft/class_7225$class_7874;)V
 		ARG 0 registries
 	METHOD method_61244 concat (Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_7225$class_7874;

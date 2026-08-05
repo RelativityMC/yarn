@@ -16,6 +16,7 @@ CLASS net/minecraft/class_8942 net/minecraft/util/ErrorReporter
 			ARG 2 context
 		METHOD <init> (Lnet/minecraft/class_8942$class_11336;)V
 			ARG 1 context
+		METHOD method_1_9169 hasGlobalErrors ()Z
 		METHOD method_59905 (Ljava/util/Map$Entry;)Ljava/lang/String;
 			ARG 0 entry
 		METHOD method_59906 getErrorsAsString ()Ljava/lang/String;
@@ -53,6 +54,7 @@ CLASS net/minecraft/class_8942 net/minecraft/util/ErrorReporter
 	CLASS class_11336 Context
 		METHOD method_1_25 getName ()Ljava/lang/String;
 	CLASS class_11337 Error
+		METHOD method_1_9170 isGlobal ()Z
 		METHOD method_71358 getMessage ()Ljava/lang/String;
 	CLASS class_11338 LootTableContext
 	CLASS class_11339 CriterionContext

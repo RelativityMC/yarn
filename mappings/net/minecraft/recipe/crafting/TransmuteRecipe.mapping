@@ -17,6 +17,7 @@ CLASS net/minecraft/class_10223 net/minecraft/recipe/crafting/TransmuteRecipe
 		ARG 3 input
 		ARG 4 material
 		ARG 5 materialCount
+		ARG 6 result
 		ARG 7 addMaterialCountToResult
 	METHOD method_1_1424 createResult (Lnet/minecraft/class_1799;I)Lnet/minecraft/class_1799;
 		ARG 1 input
@@ -62,3 +63,12 @@ CLASS net/minecraft/class_10223 net/minecraft/recipe/crafting/TransmuteRecipe
 		ARG 0 recipe
 	METHOD method_1_1443 getMaxMaterialCount ()I
 	METHOD method_1_1444 getMinMaterialCount ()I
+	METHOD method_1_9479 (ILnet/minecraft/class_6880;)Lnet/minecraft/class_10302;
+		ARG 2 resultItem
+	METHOD method_1_9481 (ILnet/minecraft/class_6880;)Lnet/minecraft/class_10302;
+		ARG 2 inputItem
+	METHOD method_1_9482 getResultDisplay (I)Lnet/minecraft/class_10302;
+		ARG 1 resultCount
+	METHOD method_1_9483 getResultDisplay (Lnet/minecraft/class_6880;I)Lnet/minecraft/class_10302;
+		ARG 1 resultItem
+		ARG 2 resultCount

@@ -60,6 +60,32 @@ CLASS net/minecraft/class_3532 net/minecraft/util/math/MathHelper
 	METHOD method_1_6136 roundUpToMultiple (JJ)J
 		ARG 0 a
 		ARG 2 b
+	METHOD method_1_9359 magnitude (FFF)F
+		ARG 0 a
+		ARG 1 b
+		ARG 2 c
+	METHOD method_1_9360 quaredHypot (FF)F
+		ARG 0 a
+		ARG 1 b
+	METHOD method_1_9361 lerp2 (FFFFFF)F
+		ARG 0 deltaX
+		ARG 1 deltaY
+		ARG 2 x0y0
+		ARG 3 x1y0
+		ARG 4 x0y1
+		ARG 5 x1y1
+	METHOD method_1_9362 lerp3 (FFFFFFFFFFF)F
+		ARG 0 deltaX
+		ARG 1 deltaY
+		ARG 2 deltaZ
+		ARG 3 x0y0z0
+		ARG 4 x1y0z0
+		ARG 5 x0y1z0
+		ARG 6 x1y1z0
+		ARG 7 x0y0z1
+		ARG 8 x1y0z1
+		ARG 9 x0y1z1
+		ARG 10 x1y1z1
 	METHOD method_15338 wrapDegrees (D)D
 		COMMENT Wraps an angle in degrees to the interval {@code [-180, 180)}.
 		ARG 0 degrees
@@ -531,7 +557,7 @@ CLASS net/minecraft/class_3532 net/minecraft/util/math/MathHelper
 		ARG 1 saturation
 		ARG 2 value
 		ARG 3 alpha
-	METHOD method_60677 magnitude (FFF)F
+	METHOD method_60677 squaredMagnitude (FFF)F
 		ARG 0 a
 		ARG 1 b
 		ARG 2 c

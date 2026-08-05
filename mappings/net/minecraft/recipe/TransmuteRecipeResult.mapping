@@ -1,0 +1,18 @@
+CLASS net/minecraft/class_1_1434 net/minecraft/recipe/TransmuteRecipeResult
+	FIELD field_1_9794 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_9795 EMPTY Lnet/minecraft/class_1_1434;
+	FIELD field_1_9796 FULL_CODEC Lcom/mojang/serialization/MapCodec;
+	FIELD field_1_9797 PACKET_CODEC Lnet/minecraft/class_9139;
+	METHOD <init> (Lnet/minecraft/class_1792;)V
+		ARG 1 item
+	METHOD <init> (Lnet/minecraft/class_6880;)V
+		ARG 1 item
+	METHOD method_1_9484 of (Lnet/minecraft/class_1_107;)Lnet/minecraft/class_1_1434;
+		ARG 0 stack
+	METHOD method_1_9485 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_9486 transmute (Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_107;
+		ARG 1 defaultItem
+	METHOD method_1_9487 transmute (Lnet/minecraft/class_6880;I)Lnet/minecraft/class_1_107;
+		ARG 1 defaultItem
+		ARG 2 count

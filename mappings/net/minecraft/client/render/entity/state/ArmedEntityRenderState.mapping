@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_10426 net/minecraft/client/render/entity/state/ArmedEntityRenderState
+	FIELD field_1_9822 currentHandSwing Lnet/minecraft/class_1309$class_1_1432;
 	FIELD field_55303 mainArm Lnet/minecraft/class_1306;
 	FIELD field_55304 rightArmPose Lnet/minecraft/class_572$class_573;
 	FIELD field_55305 rightHandItemState Lnet/minecraft/class_10444;
@@ -7,6 +8,8 @@ CLASS net/minecraft/class_10426 net/minecraft/client/render/entity/state/ArmedEn
 	FIELD field_63601 rightHandItem Lnet/minecraft/class_1799;
 	FIELD field_63602 leftHandItem Lnet/minecraft/class_1799;
 	FIELD field_63604 handSwingProgress F
+	METHOD method_1_9548 getArmPose (Lnet/minecraft/class_1306;)Lnet/minecraft/class_572$class_573;
+		ARG 1 arm
 	METHOD method_65577 updateRenderState (Lnet/minecraft/class_1309;Lnet/minecraft/class_10426;Lnet/minecraft/class_10442;F)V
 		ARG 0 entity
 		ARG 1 state

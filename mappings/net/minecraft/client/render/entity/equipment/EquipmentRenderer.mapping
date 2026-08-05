@@ -6,6 +6,8 @@ CLASS net/minecraft/class_10197 net/minecraft/client/render/entity/equipment/Equ
 	METHOD <init> (Lnet/minecraft/class_10201;Lnet/minecraft/class_1_1126;)V
 		ARG 1 equipmentModelLoader
 		ARG 2 palettedTextureManager
+	METHOD method_1_7187 (Lnet/minecraft/class_1_1126;Lnet/minecraft/class_10197$class_10199;)Lnet/minecraft/class_1_1126$class_1_1129;
+		ARG 1 key
 	METHOD method_64076 getDyeColor (Lnet/minecraft/class_10186$class_10189;I)I
 		ARG 0 layer
 		ARG 1 dyeColor
@@ -37,3 +39,9 @@ CLASS net/minecraft/class_10197 net/minecraft/client/render/entity/equipment/Equ
 	CLASS class_10199 TrimSpriteKey
 		METHOD method_1_7189 (Ljava/lang/String;)Ljava/lang/String;
 			ARG 1 path
+		METHOD method_1_9347 getSprite (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_1126$class_1_1129;
+			ARG 0 texture
+		METHOD method_1_9348 getSprite (Lnet/minecraft/class_1_1126;)Lnet/minecraft/class_1_1126$class_1_1129;
+			ARG 1 palettedTextureManager
+		METHOD method_1_9349 (Ljava/lang/String;)Ljava/lang/String;
+			ARG 0 path

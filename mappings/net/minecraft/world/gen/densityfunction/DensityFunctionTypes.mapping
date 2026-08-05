@@ -26,6 +26,26 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 	METHOD method_1_8821 sub (Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
 		ARG 0 a
 		ARG 1 b
+	METHOD method_1_9253 distanceToPoint (Lnet/minecraft/class_2382;Lnet/minecraft/class_1_1426;)Lnet/minecraft/class_6910;
+		ARG 0 point
+		ARG 1 metric
+	METHOD method_1_9254 gradient (Lnet/minecraft/class_2350$class_2351;Lnet/minecraft/class_1_1423;IIFF)Lnet/minecraft/class_6910;
+		ARG 0 axis
+		ARG 1 tiling
+		ARG 2 fromCoordinate
+		ARG 3 toCoordinate
+		ARG 4 fromValue
+		ARG 5 toValue
+	METHOD method_1_9255 pow (Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 a
+		ARG 1 b
+	METHOD method_1_9256 slice (Lnet/minecraft/class_2350$class_2351;ILnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 axis
+		ARG 1 coordinate
+		ARG 2 input
+	METHOD method_1_9257 sliceY (Lnet/minecraft/class_6910;I)Lnet/minecraft/class_6910;
+		ARG 0 input
+		ARG 1 y
 	METHOD method_40479 zero ()Lnet/minecraft/class_6910;
 	METHOD method_40480 constant (F)Lnet/minecraft/class_6910;
 	METHOD method_40481 yClampedGradient (IIFF)Lnet/minecraft/class_6910;

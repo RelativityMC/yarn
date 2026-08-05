@@ -85,6 +85,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	FIELD field_1_2019 fluidController Lnet/minecraft/class_1_370;
 	FIELD field_1_6915 bounced Z
 	FIELD field_1_8783 FLUID_CATEGORIES Ljava/util/Set;
+	FIELD field_1_9530 INVULNERABLE_TIME_KEY Ljava/lang/String;
 	FIELD field_5951 ridingCooldown I
 	FIELD field_5952 onGround Z
 	FIELD field_5953 firstUpdate Z
@@ -122,7 +123,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	FIELD field_6003 nextStepSoundDistance F
 	FIELD field_6004 lastPitch F
 	FIELD field_6005 boundingBox Lnet/minecraft/class_238;
-	FIELD field_6008 timeUntilRegen I
+	FIELD field_6008 invulnerableTime I
 	FIELD field_6009 invulnerable Z
 	FIELD field_6011 dataTracker Lnet/minecraft/class_2945;
 	FIELD field_6012 age I
@@ -287,6 +288,10 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_1_8433 teleportByPortal (Lnet/minecraft/class_3218;Lnet/minecraft/class_5454;)V
 		ARG 1 world
 		ARG 2 teleportTarget
+	METHOD method_1_9162 isInvulnerable ()Z
+	METHOD method_1_9163 isInvulnerableTimeSet ()Z
+	METHOD method_1_9164 setInvulnerableTime (I)V
+		ARG 1 invulnerableTime
 	METHOD method_5622 onBlockCollision (Lnet/minecraft/class_2680;)V
 		COMMENT Called when this entity's collision box intersects {@code state}.
 		COMMENT
@@ -426,7 +431,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 1 offsetX
 		ARG 3 offsetY
 		ARG 5 offsetZ
-	METHOD method_5655 isInvulnerable ()Z
+	METHOD method_5655 isInvulnerableSet ()Z
 		COMMENT {@return whether the entity is invulnerable}
 		COMMENT
 		COMMENT <p>This is saved on the {@code Invulnerable} NBT key.
@@ -522,6 +527,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		COMMENT
 		COMMENT @see #isInvulnerableTo
 		COMMENT @see #isInvulnerable
+		ARG 1 invulnerable
 	METHOD method_5685 getPassengerList ()Ljava/util/List;
 		COMMENT {@return the list of passengers of this entity}
 		COMMENT

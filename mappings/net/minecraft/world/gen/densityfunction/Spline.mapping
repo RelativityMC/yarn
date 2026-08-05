@@ -8,6 +8,8 @@ CLASS net/minecraft/class_7076 net/minecraft/world/gen/densityfunction/Spline
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 other
 	METHOD method_1_4461 getSpline ()Lnet/minecraft/class_6492;
+	METHOD method_1_9264 (Lorg/apache/commons/lang3/mutable/MutableInt;Lnet/minecraft/class_7076$class_7135;)V
+		ARG 1 densityFunction
 	METHOD method_41197 (Lnet/minecraft/class_6910$class_6915;Lnet/minecraft/class_7076$class_7135;)Lnet/minecraft/class_7076$class_7135;
 		ARG 1 densityFunctionWrapper
 	CLASS class_7135 DensityFunctionWrapper

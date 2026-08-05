@@ -92,7 +92,7 @@ CLASS net/minecraft/class_1_291 net/minecraft/client/render/AllocationManager
 		FIELD field_1_1759 left Lnet/minecraft/class_1_291$class_1_293;
 		FIELD field_1_1760 flags J
 			COMMENT The size of this block (must be a multiple of 2), bitwise-or’ed with 1 if
-			COMMENT this block is currently allocated.
+			COMMENT this block is currently free.
 		METHOD <init> (JLnet/minecraft/class_1_291$class_1_294;JLnet/minecraft/class_1_291$class_1_293;Lnet/minecraft/class_1_291$class_1_293;Lnet/minecraft/class_1_291$class_1_293;Lnet/minecraft/class_1_291$class_1_293;)V
 			ARG 1 size
 			ARG 3 parentAllocationInfo

@@ -1,11 +1,12 @@
 CLASS net/minecraft/class_5822 net/minecraft/util/math/noise/InterpolatedNoiseSampler
+	FIELD field_1_9659 SCALE D
 	FIELD field_28774 lowerInterpolatedNoise Lnet/minecraft/class_1_1403;
 	FIELD field_28775 upperInterpolatedNoise Lnet/minecraft/class_1_1403;
 	FIELD field_28776 interpolationNoise Lnet/minecraft/class_1_1403;
 	FIELD field_34752 xzScale D
 	FIELD field_34753 yScale D
 	FIELD field_37206 CODEC Lcom/mojang/serialization/MapCodec;
-	FIELD field_38269 SCALE_AND_FACTOR_RANGE Lcom/mojang/serialization/Codec;
+	FIELD field_38269 SCALE_AND_FACTOR_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_38271 scaledXzScale D
 	FIELD field_38272 scaledYScale D
 	FIELD field_38273 xzFactor D
@@ -27,6 +28,16 @@ CLASS net/minecraft/class_5822 net/minecraft/util/math/noise/InterpolatedNoiseSa
 		ARG 6 xzFactor
 		ARG 8 yFactor
 		ARG 10 smearScaleMultiplier
+	METHOD method_1_9314 createComponentNoise (Lnet/minecraft/class_5819;IDD)Lnet/minecraft/class_1_1403;
+		ARG 0 random
+		ARG 1 firstOctave
+		ARG 2 offsetScale
+		ARG 4 frequency
+	METHOD method_1_9315 (I)Ljava/lang/String;
+		ARG 0 octave
+	METHOD method_1_9316 addDebugInfo (Ljava/lang/StringBuilder;Lnet/minecraft/class_1_1403;)V
+		ARG 1 info
+		ARG 2 compositeNoise
 	METHOD method_39117 addDebugInfo (Ljava/lang/StringBuilder;)V
 		ARG 1 info
 	METHOD method_42384 createBase3dNoiseFunction (DDDDD)Lnet/minecraft/class_5822;
@@ -35,5 +46,17 @@ CLASS net/minecraft/class_5822 net/minecraft/util/math/noise/InterpolatedNoiseSa
 		ARG 4 xzFactor
 		ARG 6 yFactor
 		ARG 8 smearScaleMultiplier
+	METHOD method_42385 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
 	METHOD method_42386 copyWithRandom (Lnet/minecraft/class_5819;)Lnet/minecraft/class_5822;
 		ARG 1 random
+	METHOD method_42387 (Lnet/minecraft/class_5822;)Ljava/lang/Double;
+		ARG 0 sampler
+	METHOD method_42388 (Lnet/minecraft/class_5822;)Ljava/lang/Double;
+		ARG 0 sampler
+	METHOD method_42389 (Lnet/minecraft/class_5822;)Ljava/lang/Double;
+		ARG 0 sampler
+	METHOD method_42390 (Lnet/minecraft/class_5822;)Ljava/lang/Double;
+		ARG 0 sampler
+	METHOD method_42391 (Lnet/minecraft/class_5822;)Ljava/lang/Double;
+		ARG 0 sampler

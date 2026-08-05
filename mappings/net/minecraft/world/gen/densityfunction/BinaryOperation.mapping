@@ -3,6 +3,8 @@ CLASS net/minecraft/class_6917 net/minecraft/world/gen/densityfunction/BinaryOpe
 		ARG 1 type
 		ARG 2 left
 		ARG 3 right
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other
 	CLASS class_6918 Type
 		FIELD field_37111 codecHolder Lcom/mojang/serialization/MapCodec;
 		FIELD field_37112 name Ljava/lang/String;

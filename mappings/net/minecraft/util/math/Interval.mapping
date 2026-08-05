@@ -89,3 +89,27 @@ CLASS net/minecraft/class_1_1150 net/minecraft/util/math/Interval
 	METHOD method_1_7293 subtract (Lnet/minecraft/class_1_1150;Lnet/minecraft/class_1_1150;)Lnet/minecraft/class_1_1150;
 		ARG 0 first
 		ARG 1 second
+	METHOD method_1_9150 containing (Lnet/minecraft/class_1_1150;F)Lnet/minecraft/class_1_1150;
+		ARG 0 interval
+		ARG 1 value
+	METHOD method_1_9151 log (Lnet/minecraft/class_1_1150;)Lnet/minecraft/class_1_1150;
+		ARG 0 interval
+	METHOD method_1_9152 pow (FLnet/minecraft/class_1_1150;)Lnet/minecraft/class_1_1150;
+		ARG 0 base
+		ARG 1 exponent
+	METHOD method_1_9153 pow (Lnet/minecraft/class_1_1150;Lnet/minecraft/class_1_1150;)Lnet/minecraft/class_1_1150;
+		ARG 0 base
+		ARG 1 exponent
+	METHOD method_1_9154 powWithPositiveBaseAndUnboundedExponent (FLnet/minecraft/class_1_1150;)Lnet/minecraft/class_1_1150;
+		ARG 0 base
+		ARG 1 exponent
+	METHOD method_1_9155 powWithNegativeBase (FLnet/minecraft/class_1_1150;)Lnet/minecraft/class_1_1150;
+		ARG 0 base
+		ARG 1 exponent
+	METHOD method_1_9156 powWithPositiveBase (FLnet/minecraft/class_1_1150;)Lnet/minecraft/class_1_1150;
+		ARG 0 base
+		ARG 1 exponent
+	METHOD method_1_9157 pow0 (Lnet/minecraft/class_1_1150;)Lnet/minecraft/class_1_1150;
+		ARG 0 exponent
+	METHOD method_1_9158 signum (Lnet/minecraft/class_1_1150;)Lnet/minecraft/class_1_1150;
+		ARG 0 interval

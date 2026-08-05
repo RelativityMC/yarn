@@ -5,6 +5,15 @@ CLASS net/minecraft/class_1_1329 com/mojang/blaze3d/systems/CommandEncoder
 		ARG 3 depthAttachment
 		ARG 4 clearDepth
 	METHOD method_1_7935 clearColorAndDepthTextures (Lnet/minecraft/class_1_1318;Lorg/joml/Vector4fc;Lnet/minecraft/class_1_1318;DIIIII)V
+		ARG 1 colorTexture
+		ARG 2 color
+		ARG 3 depthTexture
+		ARG 4 clearDepth
+		ARG 6 x
+		ARG 7 y
+		ARG 8 width
+		ARG 9 height
+		ARG 10 mipLevel
 	METHOD method_1_7936 clearColorTexture (Lnet/minecraft/class_1_1318;Lorg/joml/Vector4fc;)V
 		ARG 1 texture
 		ARG 2 clearColor

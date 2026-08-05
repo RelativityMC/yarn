@@ -2,6 +2,9 @@ CLASS net/minecraft/class_7743 net/minecraft/client/gui/screen/ingame/AbstractSi
 	FIELD field_1_2129 lastSwitchFocusTime J
 	FIELD field_1_2130 cursorPos Lorg/joml/Vector2f;
 	FIELD field_1_2131 preEditWidget Lnet/minecraft/class_1_374;
+	FIELD field_1_9275 NUM_LINES I
+	FIELD field_1_9276 side Lnet/minecraft/class_1_1337;
+	FIELD field_1_9277 color I
 	FIELD field_40424 blockEntity Lnet/minecraft/class_2625;
 	FIELD field_40425 messages [Ljava/lang/String;
 	FIELD field_40426 signType Lnet/minecraft/class_4719;
@@ -10,19 +13,27 @@ CLASS net/minecraft/class_7743 net/minecraft/client/gui/screen/ingame/AbstractSi
 	FIELD field_43362 text Lnet/minecraft/class_8242$class_1_1325;
 	METHOD <init> (Lnet/minecraft/class_2625;Lnet/minecraft/class_1_1337;Z)V
 		ARG 1 blockEntity
+		ARG 2 side
 		ARG 3 filtered
 	METHOD <init> (Lnet/minecraft/class_2625;Lnet/minecraft/class_1_1337;ZLnet/minecraft/class_2561;)V
+		ARG 1 blockEntity
+		ARG 2 side
 		ARG 3 filtered
 		ARG 4 title
+	METHOD method_1_8932 (Lnet/minecraft/class_2625;Ljava/lang/String;)Z
+		ARG 2 string
 	METHOD method_45655 renderSignText (Lnet/minecraft/class_332;Lorg/joml/Vector2f;)V
 		ARG 1 context
 		ARG 2 cursorPosOut
 	METHOD method_45656 renderSignBackground (Lnet/minecraft/class_332;)V
 		ARG 1 context
+	METHOD method_45657 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
 	METHOD method_45659 renderSign (Lnet/minecraft/class_332;)V
 		ARG 1 context
 	METHOD method_45661 getTextScale ()Lorg/joml/Vector3fc;
 	METHOD method_45662 finishEditing ()V
 	METHOD method_49912 canEdit ()Z
 	METHOD method_49913 setCurrentRowMessage (Ljava/lang/String;)V
+		ARG 1 message
 	METHOD method_70927 getYOffset ()F

@@ -11,6 +11,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	FIELD field_1_7983 COEFF_COUNT I
 	FIELD field_1_7984 COEFF_ATTACHMENT_COUNT I
 	FIELD field_1_8347 drawOutlines Z
+	FIELD field_1_9535 useMultiDrawTerrainRendering Z
 	FIELD field_4109 entityRenderManager Lnet/minecraft/class_898;
 	FIELD field_4112 chunks Lnet/minecraft/class_769;
 	FIELD field_20951 bufferBuilders Lnet/minecraft/class_4599;
@@ -81,6 +82,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_1_7341 drawOutlines (Lnet/minecraft/class_11684$class_1_875;)V
 		ARG 1 preparedFrame
 	METHOD method_1_7342 renderSolidGeometry (Lnet/minecraft/class_11532;Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_1_1317;)V
+		ARG 1 sectionRenderState
 		ARG 2 preparedFrame
 		ARG 3 pass
 	METHOD method_1_7350 prepare ()V
@@ -93,6 +95,21 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 3 hasPostEffects
 	METHOD method_1_8617 oitCullDepthBounds ()V
 	METHOD method_1_8618 hasAlwaysOnTopPrimitives ()Z
+	METHOD method_1_9180 getSectionGeomtries (ZLjava/util/List;Ljava/util/Map;)I
+		ARG 1 sortTranslucent
+		ARG 2 chunkSectionValuesOut
+		ARG 3 sectionGeometriesByLayerOut
+	METHOD method_1_9181 usesMultiDrawTerrainRendering ()Z
+	METHOD method_1_9182 (Lnet/minecraft/class_11515;)Ljava/util/List;
+		ARG 0 blockRenderLayer
+	METHOD method_1_9183 (Lnet/minecraft/class_11515;)Ljava/util/List;
+		ARG 0 blockRenderLayer
+	METHOD method_1_9184 createSectionRenderStateFallback (Lorg/joml/Matrix4fc;Z)Lnet/minecraft/class_11532;
+		ARG 1 modelView
+		ARG 2 sortTranslucent
+	METHOD method_1_9185 createSectionRenderStateMultidraw (Lorg/joml/Matrix4fc;Z)Lnet/minecraft/class_11532;
+		ARG 1 modelView
+		ARG 2 sortTranslucent
 	METHOD method_3242 onResized (II)V
 		ARG 1 width
 		ARG 2 height
@@ -168,4 +185,5 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 3 queue
 	METHOD method_75414 startDrawingGizmos ()Lnet/minecraft/class_12180$class_12181;
 	METHOD method_76647 collectGizmos ()V
+	CLASS class_1_1392 SectionGeometry
 	CLASS class_12351 Gizmos

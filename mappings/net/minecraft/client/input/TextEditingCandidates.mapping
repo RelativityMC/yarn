@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_1396 net/minecraft/client/input/TextEditingCandidates
+	METHOD method_1_9198 fromRaw (Lorg/lwjgl/PointerBuffer;IIZ)Lnet/minecraft/class_1_1396;
+		ARG 0 candidate
+		ARG 1 numCandidates
+		ARG 2 selectedCandidate
+		ARG 3 horizontal

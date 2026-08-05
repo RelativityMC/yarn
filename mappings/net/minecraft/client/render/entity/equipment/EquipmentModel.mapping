@@ -6,10 +6,25 @@ CLASS net/minecraft/class_10186 net/minecraft/client/render/entity/equipment/Equ
 		ARG 0 instance
 	METHOD method_63996 getLayers (Lnet/minecraft/class_10186$class_10190;)Ljava/util/List;
 		ARG 1 layerType
+	CLASS class_1_1414 TrimOverride
+		FIELD field_1_9673 CODEC Lcom/mojang/serialization/Codec;
+		METHOD method_1_9326 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+		METHOD method_1_9328 validate (Lnet/minecraft/class_10186$class_1_1414;)Lcom/mojang/serialization/DataResult;
+			ARG 0 trimOVerride
+	CLASS class_1_1415 Predicate
+		FIELD field_1_9674 CODEC Lcom/mojang/serialization/Codec;
+		METHOD method_1_9329 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+		METHOD method_1_9331 test (Lnet/minecraft/class_8053;)Z
+			ARG 1 armorTrim
+		METHOD method_1_9332 validate (Lnet/minecraft/class_10186$class_1_1415;)Lcom/mojang/serialization/DataResult;
+			ARG 0 predicate
 	CLASS class_10187 Builder
 		FIELD field_1_7652 darkenedPalettesByBase Lcom/google/common/collect/ImmutableList$Builder;
 		FIELD field_54122 layers Ljava/util/Map;
 		METHOD method_1_7050 addPalettes (Lnet/minecraft/class_5321;Lnet/minecraft/class_2960;)Lnet/minecraft/class_10186$class_10187;
+			ARG 1 trimMaterial
 			ARG 2 darkerPaletteId
 		METHOD method_63997 build ()Lnet/minecraft/class_10186;
 		METHOD method_63998 addHumanoidLayers (Lnet/minecraft/class_2960;)Lnet/minecraft/class_10186$class_10187;
@@ -22,6 +37,8 @@ CLASS net/minecraft/class_10186 net/minecraft/client/render/entity/equipment/Equ
 		METHOD method_64001 addLayers (Lnet/minecraft/class_10186$class_10190;[Lnet/minecraft/class_10186$class_10189;)Lnet/minecraft/class_10186$class_10187;
 			ARG 1 layerType
 			ARG 2 layers
+		METHOD method_64002 (Ljava/util/Map$Entry;)Ljava/util/List;
+			ARG 0 entry
 		METHOD method_64003 addMainHumanoidLayer (Lnet/minecraft/class_2960;Z)Lnet/minecraft/class_10186$class_10187;
 			ARG 1 textureId
 			ARG 2 dyeable

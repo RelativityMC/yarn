@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_1440 net/minecraft/datafixer/fix/SwingAnimationComponentSplitFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD method_1_9541 (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 0 component
+	METHOD method_1_9542 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 component1

@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_1437 net/minecraft/datafixer/fix/BlockStateFieldNamesFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD method_1_9531 (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 0 state
+	METHOD method_1_9532 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 state1

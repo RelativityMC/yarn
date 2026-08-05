@@ -5,6 +5,7 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	FIELD field_1_8784 MIN_HEIGHT I
 	FIELD field_1_8785 MIN_WIDTH I
 	FIELD field_1_8786 closeCallback Ljava/lang/Runnable;
+	FIELD field_1_9531 enableQuitShortcuts Z
 	FIELD field_5174 windowedWidth I
 	FIELD field_5175 windowedX I
 	FIELD field_5176 eventHandler Lnet/minecraft/class_3678;
@@ -52,13 +53,13 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 		ARG 0 value
 		ARG 1 minimum
 	METHOD method_1_3138 isFocused ()Z
-	METHOD method_1_6373 isExclusiveFullscreen ()Z
+	METHOD method_1_6373 supportsExclusiveFullscreen ()Z
 	METHOD method_1_8434 addAlternateIcon (Lorg/lwjgl/sdl/SDL_Surface;Lnet/minecraft/class_7367;)V
 		ARG 1 surface
 		ARG 2 icon
 	METHOD method_1_8436 setBorderlessFullscreen ()Z
 	METHOD method_1_8437 setFullscreen ()Z
-	METHOD method_1_8438 setFullscreenMode ()Z
+	METHOD method_1_8438 setExclusiveFullscreen ()Z
 	METHOD method_1_8439 setWindowed ()Z
 	METHOD method_1_8440 createSurfaceFrom (Lnet/minecraft/class_1011;)Lorg/lwjgl/sdl/SDL_Surface;
 		ARG 0 image
@@ -72,7 +73,7 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	METHOD method_1_8447 isWindowFullscreen ()Z
 	METHOD method_1_8448 onFullscreenChanged ()V
 	METHOD method_1_8449 getSize ()Lnet/minecraft/class_1041$class_1_1301;
-	METHOD method_1_8450 onQuit ()V
+	METHOD method_1_8450 onTerminate ()V
 	METHOD method_1_8451 setExclusiveFullscreen (Z)V
 		ARG 1 exclusiveFullscreen
 	METHOD method_1_8452 setFullscreen (Z)V
@@ -83,6 +84,12 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 		ARG 1 width
 		ARG 2 height
 	METHOD method_1_8455 show ()V
+	METHOD method_1_9165 setFullscreenMode ()Z
+	METHOD method_1_9166 onQuit ()V
+	METHOD method_1_9167 setEnableQuitShortcuts (Z)V
+		ARG 1 enableQuitShortcuts
+	METHOD method_1_9168 isExclusiveFullscreen ()Z
+	METHOD method_1_9393 onCurrentModeChanged ()V
 	METHOD method_4474 setPhase (Ljava/lang/String;)V
 		ARG 1 phase
 	METHOD method_4475 applyFullscreenVideoMode ()V

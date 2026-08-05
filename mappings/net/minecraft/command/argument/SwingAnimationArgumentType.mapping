@@ -1,0 +1,15 @@
+CLASS net/minecraft/class_1_1436 net/minecraft/command/argument/SwingAnimationArgumentType
+	FIELD field_1_9810 INVALID_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
+	FIELD field_1_9811 NAMES Ljava/util/Collection;
+	FIELD field_1_9812 VALUES [Lnet/minecraft/class_12122;
+	METHOD listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 context
+		ARG 2 suggestionsBuilder
+	METHOD method_1_9526 getSwingAnimation (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_12122;
+		ARG 0 context
+		ARG 1 name
+	METHOD method_1_9527 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 value
+	METHOD method_1_9529 swingAnimation ()Lnet/minecraft/class_1_1436;
+	METHOD parse (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
+		ARG 1 reader

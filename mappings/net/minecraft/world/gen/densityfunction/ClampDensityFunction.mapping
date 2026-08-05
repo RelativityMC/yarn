@@ -1,7 +1,8 @@
-CLASS net/minecraft/class_6922 net/minecraft/world/gen/densityfunction/Clamp
+CLASS net/minecraft/class_6922 net/minecraft/world/gen/densityfunction/ClampDensityFunction
 	FIELD field_37082 CODEC_HOLDER Lcom/mojang/serialization/MapCodec;
 	METHOD method_1_7465 validate (Lnet/minecraft/class_6922;)Lcom/mojang/serialization/DataResult;
 		ARG 0 densityFunction
 	METHOD method_40520 apply (F)F
+		ARG 1 value
 	METHOD method_41078 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance

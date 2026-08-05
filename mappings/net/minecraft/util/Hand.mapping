@@ -12,4 +12,6 @@ CLASS net/minecraft/class_1268 net/minecraft/util/Hand
 		ARG 0 hand
 	METHOD method_1_844 (Lnet/minecraft/class_1268;)I
 		ARG 0 hand
+	METHOD method_1_9395 toArm (Lnet/minecraft/class_1306;)Lnet/minecraft/class_1306;
+		ARG 1 dominant
 	METHOD method_73186 getEquipmentSlot ()Lnet/minecraft/class_1304;

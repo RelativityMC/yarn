@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_1_1441 net/minecraft/util/math/noise/SamplingRegion
+	METHOD method_1_9543 translateX (I)I
+		ARG 1 localX
+	METHOD method_1_9544 translateY (I)I
+		ARG 1 localY
+	METHOD method_1_9545 translateZ (I)I
+		ARG 1 localZ
+	METHOD method_1_9546 getIndex (III)I
+		ARG 1 localX
+		ARG 2 localY
+		ARG 3 localZ
+	METHOD method_1_9547 getVolume ()I

@@ -1,3 +1,3 @@
-CLASS net/minecraft/class_1_1339 net/minecraft/world/gen/densityfunction/Lerp
+CLASS net/minecraft/class_1_1339 net/minecraft/world/gen/densityfunction/LerpDensityFunction
 	METHOD method_1_8823 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance

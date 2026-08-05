@@ -1,9 +1,14 @@
-CLASS net/minecraft/class_6925 net/minecraft/world/gen/densityfunction/UnaryOperation
+CLASS net/minecraft/class_6925 net/minecraft/world/gen/densityfunction/UnaryOperationDensityFunction
+	METHOD method_1_7466 (F)F
+		ARG 1 value
 	METHOD method_40521 apply (Lnet/minecraft/class_6925$class_6926;F)F
 		ARG 0 type
+		ARG 1 value
 	CLASS class_6926 Type
 		FIELD field_37086 name Ljava/lang/String;
 		FIELD field_37087 codecHolder Lcom/mojang/serialization/MapCodec;
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 name
 		METHOD method_1_8824 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 1 instance
 		METHOD method_1_8825 (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6925;

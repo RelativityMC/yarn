@@ -1,4 +1,10 @@
 CLASS net/minecraft/class_9228 net/minecraft/datafixer/FixUtil
+	METHOD method_1_9435 getTranslateKey (Lcom/mojang/serialization/Dynamic;)Ljava/util/Optional;
+		ARG 0 dynamic
+	METHOD method_1_9436 (Ljava/util/Map;)Z
+		ARG 0 map
+	METHOD method_1_9437 (Lcom/mojang/serialization/Dynamic;Ljava/util/Map;)Ljava/util/Optional;
+		ARG 1 map
 	METHOD method_56943 fixBlockPos (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
 		ARG 0 dynamic
 	METHOD method_57182 withType (Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;

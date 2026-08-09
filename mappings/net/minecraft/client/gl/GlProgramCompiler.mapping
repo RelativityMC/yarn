@@ -3,6 +3,7 @@ CLASS net/minecraft/class_1_1391 net/minecraft/client/gl/GlProgramCompiler
 	FIELD field_1_9502 LOGGER Lorg/slf4j/Logger;
 	FIELD field_1_9503 MAX_INFO_LOG_SIZE I
 	FIELD field_1_9504 PUSH_CONSTANTS_NAME Ljava/lang/String;
+	FIELD field_1_9505 DEBUG Z
 	FIELD field_1_9506 UNIFORM_FORMAT Ljava/lang/String;
 	FIELD field_1_9507 debugLabelManager Lnet/minecraft/class_10861;
 	FIELD field_1_9508 supportNonzeroBaseInstance Z

@@ -5,6 +5,7 @@ CLASS net/minecraft/class_1_709 net/minecraft/client/shader/SpirvShaderCompiler
 	FIELD field_1_9474 resolveResultReleaser Lorg/lwjgl/util/shaderc/ShadercIncludeResultRelease;
 	FIELD field_1_9475 zZeroToOne Z
 	FIELD field_1_9476 hasShaderDrawParameters Z
+	FIELD field_1_9630 LOGGER Lorg/slf4j/Logger;
 	METHOD <init> (ZZ)V
 		ARG 1 zZeroToOne
 		ARG 2 hasShaderDrawParameters

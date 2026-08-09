@@ -12,6 +12,8 @@ CLASS net/minecraft/class_1_1055 net/minecraft/client/vulkan/VulkanFeatureSets
 	FIELD field_1_7406 PHYSICAL_DEVICE_FEATURES_2 Lnet/minecraft/class_1_730;
 	FIELD field_1_7407 PHYSICAL_DEVICE_VULKAN_11_FEATURES Lnet/minecraft/class_1_730;
 	FIELD field_1_7408 PHYSICAL_DEVICE_VULKAN_12_FEATURES Lnet/minecraft/class_1_730;
+	FIELD field_1_9670 WIREFRAME Lnet/minecraft/class_1_1045;
+	FIELD field_1_9808 CALIBRATED_TIMESTAMPS Lnet/minecraft/class_1_1045;
 	METHOD method_1_6617 initialize ()V
 	METHOD method_1_6618 (Lorg/lwjgl/vulkan/VkPhysicalDevice;)Z
 		ARG 0 physicalDevice

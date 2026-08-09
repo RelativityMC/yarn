@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_7469 net/minecraft/network/message/MessageSignatureData
 	COMMENT A message signature data that can be verified.
 	FIELD comp_925 data [B
+	FIELD field_1_9402 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_40683 SIZE I
 	FIELD field_40844 CODEC Lcom/mojang/serialization/Codec;
 	METHOD comp_925 data ()[B
@@ -12,23 +13,28 @@ CLASS net/minecraft/class_7469 net/minecraft/network/message/MessageSignatureDat
 			COMMENT the verifier that is created with the sender's public key
 		ARG 2 updatable
 	METHOD method_44845 write (Lio/netty/buffer/ByteBuf;Lnet/minecraft/class_7469;)V
+		ARG 0 buf
 		ARG 1 signature
 	METHOD method_44994 toByteBuffer ()Ljava/nio/ByteBuffer;
 		COMMENT {@return the byte buffer containing the signature data}
 	METHOD method_46276 fromBuf (Lio/netty/buffer/ByteBuf;)Lnet/minecraft/class_7469;
+		ARG 0 buf
 	METHOD method_46277 pack (Lnet/minecraft/class_7561;)Lnet/minecraft/class_7469$class_7819;
 		ARG 1 storage
 	METHOD method_68857 toString (Lnet/minecraft/class_7469;)Ljava/lang/String;
 		ARG 0 signature
 	METHOD method_68858 calculateChecksum ()I
 	CLASS class_7819 Indexed
+		FIELD field_1_9403 PACKET_CODEC Lnet/minecraft/class_9139;
 		FIELD field_40684 MISSING_ID I
 		METHOD <init> (I)V
 			ARG 1 id
 		METHOD <init> (Lnet/minecraft/class_7469;)V
 			ARG 1 signature
 		METHOD method_46278 fromBuf (Lio/netty/buffer/ByteBuf;)Lnet/minecraft/class_7469$class_7819;
+			ARG 0 buf
 		METHOD method_46279 write (Lio/netty/buffer/ByteBuf;Lnet/minecraft/class_7469$class_7819;)V
+			ARG 0 buf
 			ARG 1 indexed
 		METHOD method_46280 getSignature (Lnet/minecraft/class_7561;)Ljava/util/Optional;
 			ARG 1 storage

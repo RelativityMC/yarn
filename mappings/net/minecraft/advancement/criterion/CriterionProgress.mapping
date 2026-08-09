@@ -1,7 +1,12 @@
 CLASS net/minecraft/class_178 net/minecraft/advancement/criterion/CriterionProgress
+	FIELD field_1_9405 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_1219 obtainedTime Ljava/time/Instant;
 	METHOD <init> (Ljava/time/Instant;)V
 		ARG 1 obtainedTime
+	METHOD method_1_9074 (Ljava/util/Optional;)Lnet/minecraft/class_178;
+		ARG 0 optionalInstant
+	METHOD method_1_9075 (Lnet/minecraft/class_178;)Ljava/util/Optional;
+		ARG 0 progress
 	METHOD method_784 isObtained ()Z
 	METHOD method_786 getObtainedTime ()Ljava/time/Instant;
 	METHOD method_789 obtain ()V

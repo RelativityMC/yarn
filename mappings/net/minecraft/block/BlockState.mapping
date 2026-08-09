@@ -1,1 +1,9 @@
 CLASS net/minecraft/class_2680 net/minecraft/block/BlockState
+	FIELD field_1_9793 BLOCK_OR_STATE_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_24734 CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_1_9474 (Lcom/mojang/datafixers/util/Either;)Lnet/minecraft/class_2680;
+		ARG 0 either
+	METHOD method_1_9475 (Lnet/minecraft/class_2680;)Lnet/minecraft/class_2680;
+		ARG 0 state
+	METHOD method_1_9476 (Lnet/minecraft/class_2680;)Lcom/mojang/datafixers/util/Either;
+		ARG 0 state

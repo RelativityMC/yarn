@@ -1382,7 +1382,7 @@ CLASS net/minecraft/class_1802 net/minecraft/item/Items
 	METHOD method_1_9003 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
 		ARG 0 settings
 	METHOD method_1_9004 (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_8526;
-		ARG 0 settings
+		ARG 0 registries
 	METHOD method_1_9367 (Lnet/minecraft/class_1_784;Lnet/minecraft/class_2248;Lnet/minecraft/class_1767;)Lnet/minecraft/class_1792;
 		ARG 0 id
 		ARG 1 block

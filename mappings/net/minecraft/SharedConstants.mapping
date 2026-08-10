@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_155 net/minecraft/SharedConstants
-	FIELD field_1124 RESOURCE_LEAK_DETECTOR_DISABLED Lio/netty/util/ResourceLeakDetector$Level;
+	FIELD field_1_9711 SHADER_DECOMPILATION_OUTPUT_DEBUG Z
+	FIELD field_1124 RESOURCE_LEAK_DETECTOR_LEVEL Lio/netty/util/ResourceLeakDetector$Level;
 	FIELD field_1125 isDevelopment Z
 	FIELD field_1126 INVALID_CHARS_LEVEL_NAME [C
 	FIELD field_16742 gameVersion Lnet/minecraft/class_6489;
@@ -23,6 +24,7 @@ CLASS net/minecraft/class_155 net/minecraft/SharedConstants
 	FIELD field_34371 DEBUG_BIOME_SOURCE Z
 	FIELD field_34373 CURRENT_SERIES Ljava/lang/String;
 	FIELD field_36325 CRASH_ON_UNCAUGHT_THREAD_EXCEPTION Z
+	FIELD field_49016 MILLISECONDS_PER_HOUR F
 	FIELD field_49017 EXPANDED_MACRO_COMMAND_MAX_LENGTH I
 	FIELD field_62774 DEBUG_PRINT_PROPERTIES Z
 	FIELD field_62775 DEBUG_PREFIX Ljava/lang/String;

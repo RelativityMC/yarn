@@ -1,5 +1,10 @@
 CLASS net/minecraft/class_6053 net/minecraft/entity/passive/GoatEntity
 	FIELD field_1_1160 PROFILE Lnet/minecraft/class_4095$class_5303;
+	FIELD field_1_1449 BABY_SCALE_FACTOR F
+	FIELD field_1_2267 BABY_HEAD_PITCH_ADJUSTMENT F
+	FIELD field_1_2268 HEAD_PITCH F
+	FIELD field_1_6064 BABY_DIMENSIONS Lnet/minecraft/class_4048;
+	FIELD field_1_6065 LONG_JUMPING_POSE_SCALE F
 	FIELD field_30402 FALL_DAMAGE_SUBTRACTOR I
 	FIELD field_30403 SCREAMING_CHANCE D
 	FIELD field_33486 SCREAMING Lnet/minecraft/class_2940;
@@ -7,6 +12,7 @@ CLASS net/minecraft/class_6053 net/minecraft/entity/passive/GoatEntity
 	FIELD field_33488 headPitch I
 	FIELD field_34022 DEFAULT_ATTACK_DAMAGE I
 	FIELD field_34023 BABY_ATTACK_DAMAGE I
+	FIELD field_39046 SPAWN_WITH_MISSING_HORN_CHANCE D
 	FIELD field_39047 LEFT_HORN Lnet/minecraft/class_2940;
 	FIELD field_39048 RIGHT_HORN Lnet/minecraft/class_2940;
 	FIELD field_57626 DEFAULT_SCREAMING Z

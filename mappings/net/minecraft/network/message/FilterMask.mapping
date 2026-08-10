@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_7649 net/minecraft/network/message/FilterMask
+	FIELD field_1_9327 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_39941 FULLY_FILTERED Lnet/minecraft/class_7649;
 	FIELD field_39942 PASS_THROUGH Lnet/minecraft/class_7649;
 	FIELD field_39943 FILTERED C
@@ -26,8 +27,20 @@ CLASS net/minecraft/class_7649 net/minecraft/network/message/FilterMask
 	METHOD method_46600 getStatus ()Lnet/minecraft/class_7649$class_7650;
 	METHOD method_46601 getMask ()Ljava/util/BitSet;
 	CLASS class_7650 FilterStatus
-		FIELD field_40841 id Ljava/lang/String;
+		FIELD field_1_9328 INDEX_TO_VALUE Ljava/util/function/IntFunction;
+		FIELD field_1_9329 PACKET_CODEC Lnet/minecraft/class_9139;
+		FIELD field_1_9330 index I
+		FIELD field_1_9331 packetCodecSupplier Ljava/util/function/Supplier;
+		FIELD field_40841 name Ljava/lang/String;
 		FIELD field_40842 codecSupplier Ljava/util/function/Supplier;
 		METHOD <init> (Ljava/lang/String;IILjava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Supplier;)V
+			ARG 3 index
+			ARG 4 name
 			ARG 5 codecSupplier
+			ARG 6 packetCodecSupplier
+		METHOD method_1_9019 (Lnet/minecraft/class_7649$class_7650;)I
+			ARG 0 status
+		METHOD method_1_9020 (Lnet/minecraft/class_7649$class_7650;)I
+			ARG 0 status
+		METHOD method_1_9021 getPacketCodec ()Lnet/minecraft/class_9139;
 		METHOD method_46602 getCodec ()Lcom/mojang/serialization/MapCodec;

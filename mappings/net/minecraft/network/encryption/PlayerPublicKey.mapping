@@ -22,6 +22,7 @@ CLASS net/minecraft/class_7428 net/minecraft/network/encryption/PlayerPublicKey
 		ARG 2 publicKeyData
 	METHOD method_43697 createSignatureInstance ()Lnet/minecraft/class_7500;
 	CLASS class_7443 PublicKeyData
+		FIELD field_1_9447 PACKET_CODEC Lnet/minecraft/class_9139;
 		FIELD field_39119 CODEC Lcom/mojang/serialization/Codec;
 		FIELD field_39309 KEY_SIGNATURE_MAX_SIZE I
 		METHOD equals (Ljava/lang/Object;)Z

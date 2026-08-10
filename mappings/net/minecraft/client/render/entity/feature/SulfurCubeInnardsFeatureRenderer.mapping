@@ -1,6 +1,8 @@
 CLASS net/minecraft/class_1_763 net/minecraft/client/render/entity/feature/SulfurCubeInnardsFeatureRenderer
 	FIELD field_1_3818 INNER_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_1_3819 model Lnet/minecraft/class_1_756;
+	FIELD field_1_7096 INNER_TEXTURE_SMALL Lnet/minecraft/class_2960;
+	FIELD field_1_7097 smallModel Lnet/minecraft/class_1_756;
 	METHOD <init> (Lnet/minecraft/class_3883;Lnet/minecraft/class_5599;)V
 		ARG 1 ctx
 		ARG 2 models

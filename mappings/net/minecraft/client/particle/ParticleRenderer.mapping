@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_11938 net/minecraft/client/particle/ParticleRenderer
+	FIELD field_1_7142 SPAWN_CHANCE_DECAY_INTERVAL I
+	FIELD field_1_7143 SPAWN_CHANCE_DECAY_THRESHOLD I
 	FIELD field_62619 particleManager Lnet/minecraft/class_702;
 	FIELD field_62620 particles Ljava/util/Queue;
 	FIELD field_62621 QUEUE_SIZE I
@@ -10,6 +12,7 @@ CLASS net/minecraft/class_11938 net/minecraft/client/particle/ParticleRenderer
 		ARG 3 tickProgress
 	METHOD method_74284 isEmpty ()Z
 	METHOD method_74285 add (Lnet/minecraft/class_703;)Z
+		ARG 1 particle
 	METHOD method_74286 (Lnet/minecraft/class_5878;)V
 		ARG 1 group
 	METHOD method_74287 tick ()V

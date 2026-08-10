@@ -36,10 +36,25 @@ CLASS net/minecraft/class_2703 net/minecraft/network/packet/s2c/play/PlayerListS
 		METHOD comp_1110 gameMode ()Lnet/minecraft/class_1934;
 		METHOD comp_1111 displayName ()Lnet/minecraft/class_2561;
 	CLASS class_5893 Action
+		FIELD field_1_9521 INDEX_TO_VALUE Ljava/util/function/IntFunction;
+		FIELD field_1_9522 PACKET_CODEC Lnet/minecraft/class_9139;
+		FIELD field_1_9523 index I
 		FIELD field_40701 reader Lnet/minecraft/class_2703$class_5893$class_7829;
 		FIELD field_40702 writer Lnet/minecraft/class_2703$class_5893$class_7830;
 		METHOD <init> (Ljava/lang/String;IILnet/minecraft/class_2703$class_5893$class_7829;Lnet/minecraft/class_2703$class_5893$class_7830;)V
+			ARG 3 index
+			ARG 4 reader
 			ARG 5 writer
+		METHOD method_1_9143 (Lnet/minecraft/class_2703$class_5893;)I
+			ARG 0 action
+		METHOD method_1_9144 (Lnet/minecraft/class_2703$class_5893;)I
+			ARG 0 action
+		METHOD method_1_9145 (Lnet/minecraft/class_2703$class_7831;Lnet/minecraft/class_9129;)V
+			ARG 0 serialized
+			ARG 1 buf
+		METHOD method_1_9146 (Lnet/minecraft/class_9129;Lnet/minecraft/class_2703$class_2705;)V
+			ARG 0 buf
+			ARG 1 entry
 		METHOD method_46331 (Lnet/minecraft/class_9129;Lnet/minecraft/class_2703$class_2705;)V
 			ARG 0 buf
 			ARG 1 entry

@@ -2,6 +2,10 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 	COMMENT A set of pre-defined packet codecs.
 	COMMENT
 	COMMENT @see PacketCodec
+	FIELD field_1_9388 BIT_SET Lnet/minecraft/class_9139;
+	FIELD field_1_9389 INSTANT_MS Lnet/minecraft/class_9139;
+	FIELD field_1_9391 RSA_PUBLIC_KEY_LENGTH I
+	FIELD field_1_9392 RSA_PUBLIC_KEY Lnet/minecraft/class_9139;
 	FIELD field_48547 BOOLEAN Lnet/minecraft/class_9139;
 		COMMENT A codec for a boolean value.
 		COMMENT
@@ -135,6 +139,10 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 		ARG 2 codec
 	METHOD method_1_8564 (ILnet/minecraft/class_9139;)Lnet/minecraft/class_9139;
 		ARG 1 codec
+	METHOD method_1_9026 bitSet (I)Lnet/minecraft/class_9139;
+		ARG 0 maxLength
+	METHOD method_1_9027 ([B)Ljava/security/PublicKey;
+		ARG 0 bytes
 	METHOD method_56363 toList ()Lnet/minecraft/class_9139$class_9140;
 		COMMENT Used to make a codec for a list of values using {@link PacketCodec#collect}.
 		COMMENT This creates an {@link java.util.ArrayList}, so the decoded result can be modified.
@@ -386,5 +394,7 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 		METHOD method_71596 (Lio/netty/buffer/ByteBuf;Ljava/lang/String;)V
 			ARG 0 buf
 			ARG 1 signature
+		METHOD method_71597 (Lio/netty/buffer/ByteBuf;)Ljava/lang/String;
+			ARG 0 buf1
 	CLASS 37 37
 		FIELD field_60514 GSON Lcom/google/gson/Gson;

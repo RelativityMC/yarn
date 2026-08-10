@@ -1,14 +1,120 @@
 CLASS net/minecraft/class_3115 net/minecraft/server/command/ScoreboardCommand
+	FIELD field_1_7456 NAME_CLEAR_REPORTER Lnet/minecraft/class_1_1083$class_1_1092;
+	FIELD field_1_7457 NAME_SET_REPORTER Lnet/minecraft/class_1_1083$class_1_1093;
+	FIELD field_1_7458 ENABLE_REPORTER Lnet/minecraft/class_1_1083$class_1_1092;
+	FIELD field_1_7459 NUMBER_FORMAT_CLEAR_REPORTER Lnet/minecraft/class_1_1083$class_1_1092;
+	FIELD field_1_7460 NUMBER_FORMAT_SET_REPORTER Lnet/minecraft/class_1_1083$class_1_1092;
+	FIELD field_1_7461 ADD_REPORTER Lnet/minecraft/class_1_1083$class_1_1093;
+	FIELD field_1_7462 OPERATION_REPORTER Lnet/minecraft/class_1_1083$class_1_1092;
+	FIELD field_1_7463 REMOVE_REPORTER Lnet/minecraft/class_1_1083$class_1_1093;
+	FIELD field_1_7464 RESET_SPECIFIC_REPORTER Lnet/minecraft/class_1_1083$class_1_1092;
+	FIELD field_1_7465 RESET_ALL_REPORTER Lnet/minecraft/class_1_1083$class_1_1091;
+	FIELD field_1_7466 SET_REPORTER Lnet/minecraft/class_1_1083$class_1_1093;
 	FIELD field_13710 PLAYERS_ENABLE_INVALID_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_13711 PLAYERS_GET_NULL_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
 	FIELD field_13712 OBJECTIVES_ADD_DUPLICATE_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_13713 OBJECTIVES_DISPLAY_ALREADY_SET_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_13714 PLAYERS_ENABLE_FAILED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_13715 OBJECTIVES_DISPLAY_ALREADY_EMPTY_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
+	METHOD method_1_6755 (Lnet/minecraft/class_9015;ILnet/minecraft/class_266;)Lnet/minecraft/class_2561;
+		ARG 0 holder
+		ARG 1 total
+		ARG 2 objective
+	METHOD method_1_6756 (IILnet/minecraft/class_266;Ljava/lang/Integer;)Lnet/minecraft/class_2561;
+		ARG 0 count
+		ARG 1 total
+		ARG 2 objective
+		ARG 3 score
+	METHOD method_1_6757 (Lnet/minecraft/class_9015;ILnet/minecraft/class_266;Ljava/lang/Integer;)Lnet/minecraft/class_2561;
+		ARG 0 holder
+		ARG 1 total
+		ARG 2 objective
+		ARG 3 score
+	METHOD method_1_6758 (IILnet/minecraft/class_266;Ljava/lang/Integer;)Lnet/minecraft/class_2561;
+		ARG 0 count
+		ARG 1 total
+		ARG 2 objective
+		ARG 3 score
+	METHOD method_1_6759 (Lnet/minecraft/class_9015;ILnet/minecraft/class_266;)Lnet/minecraft/class_2561;
+		ARG 0 holder
+		ARG 1 total
+		ARG 2 objective
+	METHOD method_1_6760 (IILnet/minecraft/class_266;)Lnet/minecraft/class_2561;
+		ARG 0 count
+		ARG 1 total
+		ARG 2 objective
+	METHOD method_1_6761 (Lnet/minecraft/class_9015;ILnet/minecraft/class_266;)Lnet/minecraft/class_2561;
+		ARG 0 holder
+		ARG 1 total
+		ARG 2 objective
+	METHOD method_1_6762 (IILnet/minecraft/class_266;)Lnet/minecraft/class_2561;
+		ARG 0 count
+		ARG 1 total
+		ARG 2 objective
+	METHOD method_1_6763 (Lnet/minecraft/class_9015;ILnet/minecraft/class_266;)Lnet/minecraft/class_2561;
+		ARG 0 holder
+		ARG 1 total
+		ARG 2 objective
+	METHOD method_1_6764 (IILnet/minecraft/class_266;)Lnet/minecraft/class_2561;
+		ARG 0 count
+		ARG 1 total
+		ARG 2 objective
+	METHOD method_1_6765 (Lnet/minecraft/class_9015;ILnet/minecraft/class_266;)Lnet/minecraft/class_2561;
+		ARG 0 holder
+		ARG 1 total
+		ARG 2 objective
+	METHOD method_1_6766 (IILnet/minecraft/class_266;)Lnet/minecraft/class_2561;
+		ARG 0 count
+		ARG 1 total
+		ARG 2 objective
+	METHOD method_1_6767 (IILnet/minecraft/class_266;)Lnet/minecraft/class_2561;
+		ARG 0 count
+		ARG 1 total
+		ARG 2 objective
+	METHOD method_1_6768 (Lnet/minecraft/class_9015;ILnet/minecraft/class_266;Lnet/minecraft/class_2561;)Lnet/minecraft/class_2561;
+		ARG 0 holder
+		ARG 1 total
+		ARG 2 objective
+		ARG 3 nmae
+	METHOD method_1_6769 (IILnet/minecraft/class_266;Lnet/minecraft/class_2561;)Lnet/minecraft/class_2561;
+		ARG 0 count
+		ARG 1 total
+		ARG 2 objective
+		ARG 3 name
+	METHOD method_1_6770 (Lnet/minecraft/class_9015;I)Lnet/minecraft/class_2561;
+		ARG 0 holder
+		ARG 1 total
+	METHOD method_1_6771 (II)Lnet/minecraft/class_2561;
+		ARG 0 count
+		ARG 1 total
+	METHOD method_1_6772 (Lnet/minecraft/class_9015;ILnet/minecraft/class_266;)Lnet/minecraft/class_2561;
+		ARG 0 holder
+		ARG 1 total
+		ARG 2 objective
+	METHOD method_1_6773 (IILnet/minecraft/class_266;)Lnet/minecraft/class_2561;
+		ARG 0 count
+		ARG 1 total
+		ARG 2 objective
+	METHOD method_1_6774 (Lnet/minecraft/class_9015;ILnet/minecraft/class_266;Ljava/lang/Integer;)Lnet/minecraft/class_2561;
+		ARG 0 holder
+		ARG 1 total
+		ARG 2 objective
+		ARG 3 score
+	METHOD method_1_6775 (IILnet/minecraft/class_266;Ljava/lang/Integer;)Lnet/minecraft/class_2561;
+		ARG 0 count
+		ARG 1 total
+		ARG 2 objective
+		ARG 3 score
+	METHOD method_1_6776 (Lnet/minecraft/class_9015;ILnet/minecraft/class_266;Ljava/lang/Integer;)Lnet/minecraft/class_2561;
+		ARG 0 holder
+		ARG 1 total
+		ARG 2 objective
+		ARG 3 score
 	METHOD method_13574 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_13575 executeReset (Lnet/minecraft/class_2168;Ljava/util/Collection;)I
 		ARG 0 source
+		ARG 1 targets
 	METHOD method_13576 executeModifyObjective (Lnet/minecraft/class_2168;Lnet/minecraft/class_266;Lnet/minecraft/class_2561;)I
 		ARG 0 source
 		ARG 1 objective
@@ -17,6 +123,7 @@ CLASS net/minecraft/class_3115 net/minecraft/server/command/ScoreboardCommand
 		ARG 0 context
 	METHOD method_13578 executeAdd (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_266;I)I
 		ARG 0 source
+		ARG 1 targets
 		ARG 2 objective
 		ARG 3 score
 	METHOD method_13579 (Lcom/mojang/brigadier/context/CommandContext;)I
@@ -40,6 +147,7 @@ CLASS net/minecraft/class_3115 net/minecraft/server/command/ScoreboardCommand
 		ARG 5 sourceObjectives
 	METHOD method_13586 executeReset (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_266;)I
 		ARG 0 source
+		ARG 1 targets
 		ARG 2 objective
 	METHOD method_13587 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 0 context
@@ -74,6 +182,7 @@ CLASS net/minecraft/class_3115 net/minecraft/server/command/ScoreboardCommand
 		ARG 0 context
 	METHOD method_13600 executeRemove (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_266;I)I
 		ARG 0 source
+		ARG 1 targets
 		ARG 2 objective
 		ARG 3 score
 	METHOD method_13601 (Lnet/minecraft/class_274$class_275;Lcom/mojang/brigadier/context/CommandContext;)I
@@ -85,6 +194,7 @@ CLASS net/minecraft/class_3115 net/minecraft/server/command/ScoreboardCommand
 		ARG 0 context
 	METHOD method_13604 executeSet (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_266;I)I
 		ARG 0 source
+		ARG 1 targets
 		ARG 2 objective
 		ARG 3 score
 	METHOD method_13605 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
@@ -99,6 +209,7 @@ CLASS net/minecraft/class_3115 net/minecraft/server/command/ScoreboardCommand
 		ARG 0 context
 	METHOD method_13609 executeEnable (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_266;)I
 		ARG 0 source
+		ARG 1 targets
 		ARG 2 objective
 	METHOD method_13610 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
@@ -116,12 +227,17 @@ CLASS net/minecraft/class_3115 net/minecraft/server/command/ScoreboardCommand
 	METHOD method_13614 executeListScores (Lnet/minecraft/class_2168;Lnet/minecraft/class_9015;)I
 		ARG 0 source
 		ARG 1 scoreHolder
+	METHOD method_52058 (Lnet/minecraft/class_2168;Lit/unimi/dsi/fastutil/objects/Object2IntMap$Entry;)V
+		ARG 1 entry
 	METHOD method_55344 (Lnet/minecraft/class_3115$class_9008;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 1 context
 	METHOD method_55345 makeNumberFormatArguments (Lnet/minecraft/class_7157;Lcom/mojang/brigadier/builder/ArgumentBuilder;Lnet/minecraft/class_3115$class_9008;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
 		ARG 0 registryAccess
 		ARG 1 argumentBuilder
 		ARG 2 executor
+	METHOD method_55346 (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_9022;)I
+		ARG 0 context
+		ARG 1 numberFormat
 	METHOD method_55347 executeModifyObjectiveFormat (Lnet/minecraft/class_2168;Lnet/minecraft/class_266;Lnet/minecraft/class_9022;)I
 		ARG 0 source
 		ARG 1 objective
@@ -132,18 +248,29 @@ CLASS net/minecraft/class_3115 net/minecraft/server/command/ScoreboardCommand
 		ARG 2 enable
 	METHOD method_55349 executeSetDisplayName (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_266;Lnet/minecraft/class_2561;)I
 		ARG 0 source
+		ARG 1 targets
 		ARG 2 objective
 		ARG 3 displayName
 	METHOD method_55350 executeSetNumberFormat (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_266;Lnet/minecraft/class_9022;)I
 		ARG 0 source
+		ARG 1 targets
 		ARG 2 objective
 		ARG 3 numberFormat
 	METHOD method_55355 (Lnet/minecraft/class_3115$class_9008;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 1 context
+	METHOD method_55356 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD method_55357 (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_9022;)I
+		ARG 0 context
+		ARG 1 numberFormat
 	METHOD method_55360 (Lnet/minecraft/class_3115$class_9008;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 1 context
+	METHOD method_55361 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
 	METHOD method_55363 (Lnet/minecraft/class_3115$class_9008;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 1 context
+	METHOD method_55371 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
 	CLASS class_9008 NumberFormatCommandExecutor
 		METHOD method_1_172 run (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_9022;)I
 			ARG 1 context

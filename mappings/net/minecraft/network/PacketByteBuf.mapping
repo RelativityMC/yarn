@@ -252,6 +252,22 @@ CLASS net/minecraft/class_2540 net/minecraft/network/PacketByteBuf
 		ARG 1 size
 	METHOD isWritable (I)Z
 		ARG 1 size
+	METHOD method_1_9011 readBitSet (Lio/netty/buffer/ByteBuf;I)Ljava/util/BitSet;
+		COMMENT Reads a bit set from {@code buf}. A bit set is represented using its byte array representation.
+		COMMENT
+		COMMENT @see BitSet#valueOf
+		COMMENT @see #writeBitSet
+		ARG 0 buf
+		ARG 1 size
+	METHOD method_1_9012 writeBitSet (Ljava/util/BitSet;I)V
+		COMMENT Writes a bit set to this buf. A bit set is represented using its byte array representation.
+		COMMENT
+		COMMENT @throws io.netty.handler.codec.EncoderException if the bit set's length is above {@code size}
+		COMMENT
+		COMMENT @see BitSet#toByteArray
+		COMMENT @see #readBitSet
+		ARG 1 bitSet
+		ARG 2 size
 	METHOD method_10787 readIntArray ()[I
 		COMMENT Reads an array of primitive ints from this buf. The array first has a
 		COMMENT var int indicating its length, followed by the var int entries. The array
@@ -675,12 +691,13 @@ CLASS net/minecraft/class_2540 net/minecraft/network/PacketByteBuf
 		ARG 1 type
 			COMMENT the type of the enum
 	METHOD method_46252 writeBitSet (Lio/netty/buffer/ByteBuf;Ljava/util/BitSet;I)V
-		COMMENT Writes a bit set to this buf. A bit set is represented using its byte array representation.
+		COMMENT Writes a bit set to {@code buf}. A bit set is represented using its byte array representation.
 		COMMENT
 		COMMENT @throws io.netty.handler.codec.EncoderException if the bit set's length is above {@code size}
 		COMMENT
 		COMMENT @see BitSet#toByteArray
 		COMMENT @see #readBitSet
+		ARG 0 buf
 		ARG 1 bitSet
 		ARG 2 size
 			COMMENT the maximum size of the bit set
@@ -901,6 +918,9 @@ CLASS net/minecraft/class_2540 net/minecraft/network/PacketByteBuf
 		ARG 1 length
 	METHOD readSlice (I)Lio/netty/buffer/ByteBuf;
 		ARG 1 length
+	METHOD readString (ILjava/nio/charset/Charset;)Ljava/lang/String;
+		ARG 1 length
+		ARG 2 charset
 	METHOD release (I)Z
 		ARG 1 decrement
 	METHOD retain (I)Lio/netty/buffer/ByteBuf;

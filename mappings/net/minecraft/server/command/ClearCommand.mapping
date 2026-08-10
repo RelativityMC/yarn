@@ -1,6 +1,27 @@
 CLASS net/minecraft/class_3020 net/minecraft/server/command/ClearCommand
+	FIELD field_1_7549 CLEAR_FAILED_REPORTER Lnet/minecraft/class_1_1083$class_1_1084;
+	FIELD field_1_7550 CLEAR_SUCCESS_REPORTER Lnet/minecraft/class_1_1083$class_1_1091;
+	FIELD field_1_7551 CLEAR_TEST_REPORTER Lnet/minecraft/class_1_1083$class_1_1091;
 	FIELD field_13487 FAILED_SINGLE_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_13488 FAILED_MULTIPLE_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
+	METHOD method_1_6902 (Lnet/minecraft/class_3222;I)Lnet/minecraft/class_2561;
+		ARG 0 player
+		ARG 1 items
+	METHOD method_1_6903 (II)Lnet/minecraft/class_2561;
+		ARG 0 count
+		ARG 1 items
+	METHOD method_1_6904 (Lnet/minecraft/class_3222;I)Lnet/minecraft/class_2561;
+		ARG 0 player
+		ARG 1 items
+	METHOD method_1_6905 (II)Lnet/minecraft/class_2561;
+		ARG 0 count
+		ARG 1 items
+	METHOD method_1_6906 (Lnet/minecraft/class_3222;I)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+		ARG 0 player
+		ARG 1 items
+	METHOD method_1_6907 (II)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+		ARG 0 count
+		ARG 1 items
 	METHOD method_13073 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_13074 (Lcom/mojang/brigadier/context/CommandContext;)I
@@ -21,6 +42,10 @@ CLASS net/minecraft/class_3020 net/minecraft/server/command/ClearCommand
 		ARG 0 playerCount
 	METHOD method_13080 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
+	METHOD method_13081 (Lnet/minecraft/class_1799;)Z
+		ARG 0 stack
+	METHOD method_13083 (Lnet/minecraft/class_1799;)Z
+		ARG 0 stack
 	METHOD method_58032 execute (Lnet/minecraft/class_2168;Ljava/util/Collection;Ljava/util/function/Predicate;)I
 		ARG 0 source
 		ARG 1 targets

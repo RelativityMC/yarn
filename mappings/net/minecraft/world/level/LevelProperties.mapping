@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_31 net/minecraft/world/level/LevelProperties
 	FIELD field_1_1559 SINGLEPLAYER_UUID Ljava/lang/String;
 	FIELD field_1_1560 singleplayerUuid Ljava/util/UUID;
+	FIELD field_1_9799 versionHistory Ljava/util/List;
 	FIELD field_158 version I
 	FIELD field_185 initialized Z
 	FIELD field_189 time J
@@ -27,6 +28,7 @@ CLASS net/minecraft/class_31 net/minecraft/world/level/LevelProperties
 		ARG 10 levelInfo
 		ARG 11 specialProperty
 		ARG 12 lifecycle
+		ARG 13 versionHistory
 	METHOD <init> (Lnet/minecraft/class_1940;Lnet/minecraft/class_31$class_7729;Lcom/mojang/serialization/Lifecycle;)V
 		ARG 1 levelInfo
 		ARG 2 specialProperty
@@ -47,6 +49,10 @@ CLASS net/minecraft/class_31 net/minecraft/world/level/LevelProperties
 		ARG 0 dynamic
 	METHOD method_1_1854 writeVersionInfo (Lnet/minecraft/class_2487;)V
 		ARG 0 tagOut
+	METHOD method_1_9490 (Lcom/mojang/serialization/Dynamic;)Ljava/lang/Integer;
+		ARG 0 dynamic
+	METHOD method_1_9491 writeVersionHistory (Lnet/minecraft/class_2487;)V
+		ARG 1 tagOut
 	METHOD method_29032 (Lcom/mojang/serialization/Dynamic;)Ljava/util/stream/Stream;
 		ARG 0 removedFeatures
 	METHOD method_49901 (Lcom/mojang/serialization/Dynamic;)Ljava/util/stream/Stream;

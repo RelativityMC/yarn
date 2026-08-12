@@ -7,8 +7,6 @@ CLASS net/minecraft/class_11691 net/minecraft/client/render/command/TextCommandR
 		FIELD field_1_5978 matrix Lorg/joml/Matrix4f;
 	CLASS class_11674 TextCommand
 		FIELD comp_4525 matricesEntry Lorg/joml/Matrix4fc;
-		FIELD comp_4528 text Lnet/minecraft/class_5481;
 		FIELD comp_4530 layerType Lnet/minecraft/class_327$class_6415;
 		METHOD comp_4525 matricesEntry ()Lorg/joml/Matrix4fc;
-		METHOD comp_4528 text ()Lnet/minecraft/class_5481;
 		METHOD comp_4530 layerType ()Lnet/minecraft/class_327$class_6415;

@@ -82,8 +82,7 @@ CLASS net/minecraft/class_1676 net/minecraft/entity/projectile/ProjectileEntity
 		ARG 8 uncertainty
 	METHOD method_59525 onDeflected (Z)V
 		ARG 1 fromAttack
-	METHOD method_59859 deflect (Lnet/minecraft/class_9109;Lnet/minecraft/class_1297;Lnet/minecraft/class_10583;Z)Z
-		ARG 1 deflection
+	METHOD method_59859 deflect (Lnet/minecraft/class_9109;Lnet/minecraft/class_1297;Lnet/minecraft/class_10583;ZLnet/minecraft/class_243;)Z
 		ARG 2 deflector
 		ARG 3 owner
 		ARG 4 fromAttack

@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_1_1247 net/minecraft/entity/movement/MovementTracker
-	METHOD method_1_7894 clear ()V
 	METHOD method_1_7895 getMotionToSyncedPos (Lnet/minecraft/class_243;)Lnet/minecraft/class_1_1198;
 		ARG 1 syncedPos
 	METHOD method_1_7896 commitTickMovement (Lnet/minecraft/class_243;)V

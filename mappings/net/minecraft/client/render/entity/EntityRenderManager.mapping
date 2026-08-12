@@ -8,27 +8,25 @@ CLASS net/minecraft/class_898 net/minecraft/client/render/entity/EntityRenderMan
 	FIELD field_4696 renderers Ljava/util/Map;
 	FIELD field_27760 entityModelsGetter Ljava/util/function/Supplier;
 	FIELD field_38886 blockRenderManager Lnet/minecraft/class_1_394;
-	FIELD field_38887 heldItemRenderer Lnet/minecraft/class_759;
 	FIELD field_53188 mapRenderer Lnet/minecraft/class_330;
 	FIELD field_55289 itemModelManager Lnet/minecraft/class_10442;
 	FIELD field_55290 equipmentModelLoader Lnet/minecraft/class_10201;
 	FIELD field_61796 atlasManager Lnet/minecraft/class_11697;
 	FIELD field_62254 skinCache Lnet/minecraft/class_11786;
 	FIELD field_62757 mannequinRenderers Ljava/util/Map;
-	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_1060;Lnet/minecraft/class_1_394;Lnet/minecraft/class_10442;Lnet/minecraft/class_330;Lnet/minecraft/class_11697;Lnet/minecraft/class_327;Lnet/minecraft/class_315;Ljava/util/function/Supplier;Lnet/minecraft/class_10201;Lnet/minecraft/class_11786;Lnet/minecraft/class_1_1126;)V
-		ARG 1 client
-		ARG 2 textureManager
-		ARG 5 mapRenderer
-		ARG 6 atlasManager
-		ARG 7 textRenderer
-		ARG 8 gameOptions
-		ARG 9 entityModelsGetter
-		ARG 10 equipmentModelLoader
-		ARG 11 skinCache
+	METHOD <init> (Lnet/minecraft/class_1060;Lnet/minecraft/class_1_394;Lnet/minecraft/class_10442;Lnet/minecraft/class_330;Lnet/minecraft/class_11697;Lnet/minecraft/class_327;Lnet/minecraft/class_315;Ljava/util/function/Supplier;Lnet/minecraft/class_10201;Lnet/minecraft/class_11786;Lnet/minecraft/class_1_1126;)V
+		ARG 1 textureManager
+		ARG 4 mapRenderer
+		ARG 5 atlasManager
+		ARG 6 textRenderer
+		ARG 7 gameOptions
+		ARG 8 entityModelsGetter
+		ARG 9 equipmentModelLoader
+		ARG 10 skinCache
 	METHOD method_3941 configure (Lnet/minecraft/class_4184;Lnet/minecraft/class_1297;)V
 		ARG 1 camera
 		ARG 2 targetedEntity
-	METHOD method_3950 shouldRender (Lnet/minecraft/class_1297;Lnet/minecraft/class_4604;DDD)Z
+	METHOD method_3950 shouldRender (Lnet/minecraft/class_1297;Lnet/minecraft/class_4604;DDDF)Z
 		ARG 1 entity
 		ARG 2 frustum
 		ARG 3 x
@@ -41,7 +39,6 @@ CLASS net/minecraft/class_898 net/minecraft/client/render/entity/EntityRenderMan
 	METHOD method_23839 getLight (Lnet/minecraft/class_1297;F)I
 		ARG 1 entity
 		ARG 2 tickProgress
-	METHOD method_43336 getHeldItemRenderer ()Lnet/minecraft/class_759;
 	METHOD method_68829 addRendererDetails (Lnet/minecraft/class_897;Lnet/minecraft/class_128;)Lnet/minecraft/class_129;
 		ARG 1 renderer
 		ARG 2 crashReport
@@ -59,8 +56,6 @@ CLASS net/minecraft/class_898 net/minecraft/client/render/entity/EntityRenderMan
 	METHOD method_72977 getAndUpdateRenderState (Lnet/minecraft/class_1297;F)Lnet/minecraft/class_10017;
 		ARG 1 entity
 		ARG 2 tickProgress
-	METHOD method_74405 getPlayerRenderer (Lnet/minecraft/class_742;)Lnet/minecraft/class_1007;
-		ARG 1 player
 	METHOD method_74406 getPlayerRenderer (Ljava/util/Map;Lnet/minecraft/class_11890;)Lnet/minecraft/class_1007;
 		ARG 1 skinTypeToRenderer
 		ARG 2 player

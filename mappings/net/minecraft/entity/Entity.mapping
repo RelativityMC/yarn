@@ -275,7 +275,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 1 pos
 		ARG 2 yaw
 		ARG 3 pitch
-	METHOD method_1_7599 onLerp (Lnet/minecraft/class_10584;)V
+	METHOD method_1_7599 onLerp (Lnet/minecraft/class_1_1451;)V
 		ARG 1 interpolator
 	METHOD method_1_7600 moveRaw (Lnet/minecraft/class_1313;Lnet/minecraft/class_243;)V
 		ARG 1 movementType
@@ -2243,8 +2243,8 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_64611 teleportSameDimension (Lnet/minecraft/class_3218;Lnet/minecraft/class_5454;)Lnet/minecraft/class_1297;
 		ARG 1 world
 		ARG 2 teleportTarget
-	METHOD method_64612 sendTeleportPacket (Lnet/minecraft/class_5454;)V
-		ARG 1 teleportTarget
+	METHOD method_64612 sendTeleportPacket (Lnet/minecraft/class_3218;Lnet/minecraft/class_5454;)V
+		ARG 2 teleportTarget
 	METHOD method_64613 getPassengerTeleportTarget (Lnet/minecraft/class_5454;Lnet/minecraft/class_1297;)Lnet/minecraft/class_5454;
 		ARG 1 teleportTarget
 		ARG 2 passenger
@@ -2269,7 +2269,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 3 yDifference
 		ARG 5 zDifference
 		ARG 7 onGround
-	METHOD method_66233 getInterpolator ()Lnet/minecraft/class_10584;
+	METHOD method_66233 getInterpolator ()Lnet/minecraft/class_1_1451;
 	METHOD method_66245 isInterpolating ()Z
 	METHOD method_66246 updateTrackedPositionAndAngles (Lnet/minecraft/class_1_1198;FF)V
 		ARG 1 motionPath

@@ -9,9 +9,6 @@ CLASS net/minecraft/class_3754 net/minecraft/world/gen/chunk/NoiseChunkGenerator
 	METHOD method_1_3060 sampleDensity (Lnet/minecraft/class_7138;Lnet/minecraft/class_6910$class_6912;)F
 		ARG 1 noiseConfig
 		ARG 2 noisePos
-	METHOD method_1_5150 getBiomesAround (Lnet/minecraft/class_3233;I)Ljava/util/Set;
-		ARG 0 region
-		ARG 1 radiusChunks
 	METHOD method_1_7538 carve (Lnet/minecraft/class_2791;Lnet/minecraft/class_6643;Lnet/minecraft/class_7138;Lnet/minecraft/class_5868;Lnet/minecraft/class_6568;Ljava/util/function/Function;Lnet/minecraft/class_6643$class_6828;)V
 		ARG 1 chunk
 		ARG 2 carvingMask
@@ -49,10 +46,6 @@ CLASS net/minecraft/class_3754 net/minecraft/world/gen/chunk/NoiseChunkGenerator
 		ARG 4 chunk
 		ARG 5 minimumCellY
 		ARG 6 cellHeight
-	METHOD method_38322 (Lnet/minecraft/class_7138;III)Lnet/minecraft/class_6880;
-		ARG 2 biomeX
-		ARG 3 biomeY
-		ARG 4 biomeZ
 	METHOD method_38323 getBlockState (Lnet/minecraft/class_6568;IIILnet/minecraft/class_2680;)Lnet/minecraft/class_2680;
 		ARG 1 chunkNoiseSampler
 		ARG 2 x
@@ -64,7 +57,7 @@ CLASS net/minecraft/class_3754 net/minecraft/world/gen/chunk/NoiseChunkGenerator
 		ARG 2 noiseConfig
 		ARG 3 structureAccessor
 		ARG 4 chunk
-	METHOD method_41535 (Lnet/minecraft/class_5138;Lnet/minecraft/class_3233;Lnet/minecraft/class_7138;Lnet/minecraft/class_2791;)Lnet/minecraft/class_6568;
+	METHOD method_41535 (Lnet/minecraft/class_5138;Lnet/minecraft/class_6748;Lnet/minecraft/class_7138;Lnet/minecraft/class_2791;)Lnet/minecraft/class_6568;
 		ARG 4 chunkx
 	METHOD method_41536 (Lnet/minecraft/class_5138;Lnet/minecraft/class_6748;Lnet/minecraft/class_7138;Lnet/minecraft/class_2791;)Lnet/minecraft/class_6568;
 		ARG 4 chunkx

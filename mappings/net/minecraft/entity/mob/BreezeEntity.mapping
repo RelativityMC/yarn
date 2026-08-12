@@ -18,7 +18,7 @@ CLASS net/minecraft/class_8949 net/minecraft/entity/mob/BreezeEntity
 	METHOD method_55014 createBreezeAttributes ()Lnet/minecraft/class_5132$class_5133;
 	METHOD method_55015 resetLongJumpingParticleAddCount ()Lnet/minecraft/class_8949;
 	METHOD method_55747 playWhirlSound ()V
-	METHOD method_56087 (Lnet/minecraft/class_1676;Lnet/minecraft/class_1297;Lnet/minecraft/class_5819;)V
+	METHOD method_56087 (Lnet/minecraft/class_1676;Lnet/minecraft/class_1297;Lnet/minecraft/class_5819;Lnet/minecraft/class_243;)V
 		ARG 0 projectile
 		ARG 1 hitEntity
 		ARG 2 random

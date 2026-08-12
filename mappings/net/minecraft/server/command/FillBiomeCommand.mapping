@@ -18,7 +18,7 @@ CLASS net/minecraft/class_7926 net/minecraft/server/command/FillBiomeCommand
 		ARG 2 to
 		ARG 3 biome
 		ARG 4 filter
-	METHOD method_47534 (Lnet/minecraft/class_2791;Lnet/minecraft/class_3341;Ljava/util/function/Predicate;Lnet/minecraft/class_6880;Lorg/apache/commons/lang3/mutable/MutableInt;IIILnet/minecraft/class_6544$class_6552;)Lnet/minecraft/class_6880;
+	METHOD method_47534 (Lnet/minecraft/class_2791;Lnet/minecraft/class_3341;Ljava/util/function/Predicate;Lnet/minecraft/class_6880;Lorg/apache/commons/lang3/mutable/MutableInt;III)Lnet/minecraft/class_6880;
 		ARG 5 x
 		ARG 6 y
 		ARG 7 z

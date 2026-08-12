@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_3231 net/minecraft/server/network/EntityTrackerEntry
 	FIELD field_14036 lastOnGround Z
-	FIELD field_14037 tickInterval I
+	FIELD field_14037 tickInterval Lnet/minecraft/class_1_1448;
 	FIELD field_14039 alwaysUpdateVelocity Z
 	FIELD field_14040 trackingTick I
 	FIELD field_14041 LOGGER Lorg/slf4j/Logger;
@@ -21,10 +21,9 @@ CLASS net/minecraft/class_3231 net/minecraft/server/network/EntityTrackerEntry
 		COMMENT Minimum squared distance the entity must have moved from its last synced
 		COMMENT position in order to sync positions again, if no other conditions are met.
 	FIELD field_62840 packetSender Lnet/minecraft/class_3231$class_12004;
-	METHOD <init> (Lnet/minecraft/class_3218;Lnet/minecraft/class_1297;IZLnet/minecraft/class_3231$class_12004;)V
+	METHOD <init> (Lnet/minecraft/class_3218;Lnet/minecraft/class_1297;Lnet/minecraft/class_1_1448;ZLnet/minecraft/class_3231$class_12004;)V
 		ARG 1 world
 		ARG 2 entity
-		ARG 3 tickInterval
 		ARG 4 alwaysUpdateVelocity
 		ARG 5 packetSender
 	METHOD method_1_7641 createMovementPacket (Lnet/minecraft/class_1_1198;BBZZ)Lnet/minecraft/class_1_1263;
@@ -56,8 +55,6 @@ CLASS net/minecraft/class_3231 net/minecraft/server/network/EntityTrackerEntry
 		ARG 2 yaw
 		ARG 3 pitch
 		ARG 4 changedAngles
-	METHOD method_74532 (Ljava/util/List;Lnet/minecraft/class_3222;)Z
-		ARG 2 player
 	CLASS class_12004 TrackerPacketSender
 		METHOD method_18730 sendToListeners (Lnet/minecraft/class_2596;)V
 			ARG 1 packet

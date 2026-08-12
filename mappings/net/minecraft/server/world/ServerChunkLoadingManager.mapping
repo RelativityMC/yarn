@@ -337,10 +337,9 @@ CLASS net/minecraft/class_3898 net/minecraft/server/world/ServerChunkLoadingMana
 			COMMENT tickEntityMovement()} to bypass unnecessary status updates before calling
 			COMMENT {@link #updateTrackedStatus(ServerPlayerEntity) updateTrackedStatus()}.
 		FIELD field_18250 listeners Ljava/util/Set;
-		METHOD <init> (Lnet/minecraft/class_3898;Lnet/minecraft/class_1297;IIZ)V
+		METHOD <init> (Lnet/minecraft/class_3898;Lnet/minecraft/class_1297;ILnet/minecraft/class_1_1448;Z)V
 			ARG 2 entity
 			ARG 3 maxDistance
-			ARG 4 tickInterval
 			ARG 5 alwaysUpdateVelocity
 		METHOD equals (Ljava/lang/Object;)Z
 			ARG 1 o

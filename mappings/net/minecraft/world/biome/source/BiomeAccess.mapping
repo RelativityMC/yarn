@@ -1,8 +1,8 @@
 CLASS net/minecraft/class_4543 net/minecraft/world/biome/source/BiomeAccess
-	FIELD field_20640 storage Lnet/minecraft/class_4543$class_4544;
+	FIELD field_20640 storage Lnet/minecraft/class_6780;
 	FIELD field_20641 seed J
 	FIELD field_28106 CHUNK_CENTER_OFFSET I
-	METHOD <init> (Lnet/minecraft/class_4543$class_4544;J)V
+	METHOD <init> (Lnet/minecraft/class_6780;J)V
 		ARG 1 storage
 		ARG 2 seed
 	METHOD method_22393 getBiome (Lnet/minecraft/class_2338;)Lnet/minecraft/class_6880;
@@ -19,10 +19,5 @@ CLASS net/minecraft/class_4543 net/minecraft/world/biome/source/BiomeAccess
 		ARG 1 pos
 	METHOD method_27984 hashSeed (J)J
 		ARG 0 seed
-	METHOD method_38107 withSource (Lnet/minecraft/class_4543$class_4544;)Lnet/minecraft/class_4543;
+	METHOD method_38107 withSource (Lnet/minecraft/class_6780;)Lnet/minecraft/class_4543;
 		ARG 1 storage
-	CLASS class_4544 Storage
-		METHOD method_16359 getBiomeForNoiseGen (III)Lnet/minecraft/class_6880;
-			ARG 1 biomeX
-			ARG 2 biomeY
-			ARG 3 biomeZ

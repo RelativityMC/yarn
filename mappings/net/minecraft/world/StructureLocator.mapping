@@ -7,7 +7,6 @@ CLASS net/minecraft/class_6832 net/minecraft/world/StructureLocator
 	FIELD field_36231 worldKey Lnet/minecraft/class_5321;
 	FIELD field_36232 chunkGenerator Lnet/minecraft/class_2794;
 	FIELD field_36233 world Lnet/minecraft/class_5539;
-	FIELD field_36234 biomeSource Lnet/minecraft/class_1966;
 	FIELD field_36235 seed J
 	FIELD field_36236 dataFixer Lcom/mojang/datafixers/DataFixer;
 	FIELD field_36237 cachedStructuresByChunkPos Lit/unimi/dsi/fastutil/longs/Long2ObjectMap;

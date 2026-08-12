@@ -34,12 +34,11 @@ CLASS net/minecraft/class_3195 net/minecraft/world/gen/structure/Structure
 	METHOD method_41613 isBiomeValid (Lnet/minecraft/class_3195$class_7150;Lnet/minecraft/class_3195$class_7149;)Z
 		ARG 0 result
 		ARG 1 context
-	METHOD method_41614 createStructureStart (Lnet/minecraft/class_6880;Lnet/minecraft/class_5321;Lnet/minecraft/class_5455;Lnet/minecraft/class_2794;Lnet/minecraft/class_1966;Lnet/minecraft/class_7138;Lnet/minecraft/class_3485;JLnet/minecraft/class_1923;ILnet/minecraft/class_5539;Ljava/util/function/Predicate;)Lnet/minecraft/class_3449;
+	METHOD method_41614 createStructureStart (Lnet/minecraft/class_6880;Lnet/minecraft/class_5321;Lnet/minecraft/class_5455;Lnet/minecraft/class_2794;Lnet/minecraft/class_6780;Lnet/minecraft/class_7138;Lnet/minecraft/class_3485;JLnet/minecraft/class_1923;ILnet/minecraft/class_5539;Ljava/util/function/Predicate;)Lnet/minecraft/class_3449;
 		ARG 1 structure
 		ARG 2 dimension
 		ARG 3 dynamicRegistryManager
 		ARG 4 chunkGenerator
-		ARG 5 biomeSource
 		ARG 6 noiseConfig
 		ARG 7 structureTemplateManager
 		ARG 8 seed
@@ -83,10 +82,9 @@ CLASS net/minecraft/class_3195 net/minecraft/world/gen/structure/Structure
 		FIELD comp_564 noiseConfig Lnet/minecraft/class_7138;
 		FIELD comp_569 world Lnet/minecraft/class_5539;
 		FIELD comp_570 biomePredicate Ljava/util/function/Predicate;
-		METHOD <init> (Lnet/minecraft/class_5455;Lnet/minecraft/class_2794;Lnet/minecraft/class_1966;Lnet/minecraft/class_7138;Lnet/minecraft/class_3485;JLnet/minecraft/class_1923;Lnet/minecraft/class_5539;Ljava/util/function/Predicate;)V
+		METHOD <init> (Lnet/minecraft/class_5455;Lnet/minecraft/class_2794;Lnet/minecraft/class_6780;Lnet/minecraft/class_7138;Lnet/minecraft/class_3485;JLnet/minecraft/class_1923;Lnet/minecraft/class_5539;Ljava/util/function/Predicate;)V
 			ARG 1 dynamicRegistryManager
 			ARG 2 chunkGenerator
-			ARG 3 biomeSource
 			ARG 4 noiseConfig
 			ARG 5 structureTemplateManager
 			ARG 6 seed

@@ -46,9 +46,7 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 		FIELD field_29641 index I
 		FIELD field_53958 sectionPos J
 		FIELD field_60949 currentRenderData Ljava/util/concurrent/atomic/AtomicReference;
-		FIELD field_64231 appearanceTimeMs J
 		FIELD field_64453 fadeInTimeMs J
-		FIELD field_64454 unloaded Z
 		METHOD <init> (Lnet/minecraft/class_846;IJ)V
 			ARG 2 index
 			ARG 3 sectionPos
@@ -95,13 +93,8 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 		METHOD method_72049 setCurrentRenderData (Lnet/minecraft/class_11517;)Lnet/minecraft/class_11517;
 			ARG 1 data
 		METHOD method_72052 getCurrentRenderData ()Lnet/minecraft/class_11517;
-		METHOD method_76298 getOpacity (J)F
+		METHOD method_76298 getOpacity (JJ)F
 			ARG 1 timeMs
-		METHOD method_76546 wasUnloaded ()Z
-		METHOD method_76547 setUnloaded (Z)V
-			ARG 1 unloaded
-		METHOD method_76548 setFadeInTime (J)V
-			ARG 1 fadeInTimeMs
 		CLASS class_4577 Task
 			FIELD field_20836 cancelled Ljava/util/concurrent/atomic/AtomicBoolean;
 			FIELD field_53959 prioritized Z

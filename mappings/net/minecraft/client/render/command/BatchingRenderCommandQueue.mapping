@@ -4,7 +4,6 @@ CLASS net/minecraft/class_11788 net/minecraft/client/render/command/BatchingRend
 	FIELD field_1_6118 crumbling Lnet/minecraft/class_1_886;
 	FIELD field_1_6120 labelsNormal Lnet/minecraft/class_1_886;
 	FIELD field_1_6121 outline Lnet/minecraft/class_1_886;
-	FIELD field_1_6122 labelsSeeThrough Lnet/minecraft/class_1_877;
 	FIELD field_1_6123 shadowPieces Lnet/minecraft/class_1_886;
 	FIELD field_1_6124 modelPart Lnet/minecraft/class_1_886;
 	FIELD field_1_6125 worldOpaque Lnet/minecraft/class_1_886;
@@ -16,13 +15,10 @@ CLASS net/minecraft/class_11788 net/minecraft/client/render/command/BatchingRend
 	FIELD field_1_8162 gizmosOnTop Lnet/minecraft/class_1_886;
 	FIELD field_1_8163 improvedTranslucencyRenderCommandContainer Lnet/minecraft/class_1_886;
 	FIELD field_1_8164 gizmos Lnet/minecraft/class_1_886;
-	METHOD <init> (Z)V
+	METHOD <init> (ZLnet/minecraft/class_1_889;)V
 		ARG 1 improvedTransparency
 	METHOD method_1_5213 getRenderCommandContainers ()Ljava/util/List;
 	METHOD method_1_5214 getOutlineLayer (Lnet/minecraft/class_1921;)Lnet/minecraft/class_1921;
 		ARG 0 renderLayer
-	METHOD method_1_7453 labelIsOpaque (II)Z
-		ARG 0 textColor
-		ARG 1 backgroundColor
-	METHOD method_1_7454 submitLabel (Lnet/minecraft/class_11689$class_11672;)V
+	METHOD method_1_7454 submitLabel (Lnet/minecraft/class_11691$class_11674;)V
 		ARG 1 command

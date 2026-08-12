@@ -177,10 +177,9 @@ CLASS net/minecraft/class_4341 net/minecraft/client/realms/RealmsClient
 		FIELD field_19589 baseUrl Ljava/lang/String;
 		FIELD field_19590 protocol Ljava/lang/String;
 		FIELD field_57919 aksUrl Ljava/lang/String;
-		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 			ARG 3 baseUrl
 			ARG 4 aksUrl
-			ARG 5 protocol
 		METHOD method_52215 fromName (Ljava/lang/String;)Ljava/util/Optional;
 			ARG 0 name
 		METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/class_4341$class_4343;

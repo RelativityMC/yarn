@@ -6,7 +6,7 @@ CLASS net/minecraft/class_6748 net/minecraft/world/gen/chunk/Blender
 	FIELD field_35681 OFFSET_NOISE Lnet/minecraft/class_1_1397;
 	FIELD field_36343 blendingData Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;
 	FIELD field_36344 closeBlendingData Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;
-	METHOD <init> (Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;)V
+	METHOD <init> (Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;Lnet/minecraft/class_6643$class_6828;)V
 		ARG 1 blendingData
 		ARG 2 closeBlendingData
 	METHOD method_39336 getNoBlending ()Lnet/minecraft/class_6748;
@@ -40,11 +40,10 @@ CLASS net/minecraft/class_6748 net/minecraft/world/gen/chunk/Blender
 		ARG 4 sampler
 	METHOD method_39563 getBiomeSupplier (Lnet/minecraft/class_6780;)Lnet/minecraft/class_6780;
 		ARG 1 biomeSupplier
-	METHOD method_39564 (Lnet/minecraft/class_6780;IIILnet/minecraft/class_6544$class_6552;)Lnet/minecraft/class_6880;
+	METHOD method_39564 (Lnet/minecraft/class_6780;III)Lnet/minecraft/class_6880;
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-		ARG 5 noise
 	METHOD method_39565 sample (Lnet/minecraft/class_6748$class_6781;IIIII)F
 		ARG 1 sampler
 		ARG 2 chunkX
@@ -69,9 +68,8 @@ CLASS net/minecraft/class_6748 net/minecraft/world/gen/chunk/Blender
 		ARG 6 x2
 		ARG 8 y2
 		ARG 10 z2
-	METHOD method_39809 createCarvingMasks (Lnet/minecraft/class_5281;Lnet/minecraft/class_2839;)Lnet/minecraft/class_6643$class_6828;
+	METHOD method_39809 createCarvingMasks (Lnet/minecraft/class_5281;Lnet/minecraft/class_2791;)Lnet/minecraft/class_6643$class_6828;
 		ARG 0 world
-		ARG 1 chunk
 	METHOD method_39811 (Lnet/minecraft/class_6748$class_6831;III)Z
 		ARG 1 offsetX
 		ARG 2 y

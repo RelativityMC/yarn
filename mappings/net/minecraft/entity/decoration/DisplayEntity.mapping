@@ -37,10 +37,8 @@ CLASS net/minecraft/class_8113 net/minecraft/entity/decoration/DisplayEntity
 	FIELD field_45113 INTERPOLATION_DURATION Lnet/minecraft/class_2940;
 	FIELD field_45114 TELEPORT_DURATION Lnet/minecraft/class_2940;
 	FIELD field_52434 tooSmallToRender Z
-	FIELD field_55654 interpolator Lnet/minecraft/class_1_1273;
 	FIELD field_57573 DEFAULT_INTERPOLATION_DURATION I
 	FIELD field_57574 DEFAULT_START_INTERPOLATION I
-	METHOD method_5830 getVisibilityBoundingBox ()Lnet/minecraft/class_238;
 	METHOD method_48844 getLerpProgress (F)F
 		ARG 1 tickProgress
 	METHOD method_48845 getTransformation (Lnet/minecraft/class_2945;)Lnet/minecraft/class_4590;

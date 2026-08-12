@@ -150,9 +150,9 @@ CLASS net/minecraft/class_6544 net/minecraft/world/biome/source/util/MultiNoiseU
 			ARG 1 firstNode
 		METHOD method_38146 (ILnet/minecraft/class_6544$class_6548$class_6550;)J
 			ARG 1 node
-		METHOD method_38147 (ILnet/minecraft/class_6544$class_6548$class_6551;)Lnet/minecraft/class_6544$class_6548$class_6550;
-			ARG 1 node
-		METHOD method_38148 createNode (ILjava/util/List;)Lnet/minecraft/class_6544$class_6548$class_6550;
+		METHOD method_38147 (IILnet/minecraft/class_6544$class_6548$class_6551;)Lnet/minecraft/class_6544$class_6548$class_6550;
+			ARG 2 node
+		METHOD method_38148 createNode (ILjava/util/List;I)Lnet/minecraft/class_6544$class_6548$class_6550;
 			ARG 0 parameterNumber
 			ARG 1 subTree
 		METHOD method_38149 createNodeComparator (IZ)Ljava/util/Comparator;
@@ -163,7 +163,7 @@ CLASS net/minecraft/class_6544 net/minecraft/world/biome/source/util/MultiNoiseU
 			ARG 2 distanceFunction
 		METHOD method_38152 (Lcom/mojang/datafixers/util/Pair;)Lnet/minecraft/class_6544$class_6548$class_6549;
 			ARG 0 entry
-		METHOD method_38153 create (Ljava/util/List;)Lnet/minecraft/class_6544$class_6548;
+		METHOD method_38153 create (Ljava/util/List;I)Lnet/minecraft/class_6544$class_6548;
 			ARG 0 entries
 		METHOD method_38154 sortTree (Ljava/util/List;IIZ)V
 			ARG 0 subTree
@@ -172,7 +172,7 @@ CLASS net/minecraft/class_6544 net/minecraft/world/biome/source/util/MultiNoiseU
 			ARG 3 abs
 		METHOD method_38155 getRangeLengthSum ([Lnet/minecraft/class_6544$class_6546;)J
 			ARG 0 parameters
-		METHOD method_38156 getBatchedTree (Ljava/util/List;)Ljava/util/List;
+		METHOD method_38156 getBatchedTree (Ljava/util/List;I)Ljava/util/List;
 			ARG 0 nodes
 		METHOD method_38157 getEnclosingParameters (Ljava/util/List;)Ljava/util/List;
 			ARG 0 subTree

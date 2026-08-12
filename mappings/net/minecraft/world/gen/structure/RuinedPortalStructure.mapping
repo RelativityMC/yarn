@@ -34,8 +34,8 @@ CLASS net/minecraft/class_5183 net/minecraft/world/gen/structure/RuinedPortalStr
 	METHOD method_41682 shouldPlaceAirPocket (Lnet/minecraft/class_2919;F)Z
 		ARG 0 random
 		ARG 1 probability
-	METHOD method_41683 (Lnet/minecraft/class_5183$class_7155;Lnet/minecraft/class_2338;Lnet/minecraft/class_3195$class_7149;Lnet/minecraft/class_7138;Lnet/minecraft/class_2794;ZLnet/minecraft/class_2960;Lnet/minecraft/class_3499;Lnet/minecraft/class_2470;Lnet/minecraft/class_2415;Lnet/minecraft/class_2338;Lnet/minecraft/class_6626;)V
-		ARG 11 collector
+	METHOD method_41683 (Lnet/minecraft/class_5183$class_7155;Lnet/minecraft/class_2338;Lnet/minecraft/class_3195$class_7149;Lnet/minecraft/class_2794;ZLnet/minecraft/class_2960;Lnet/minecraft/class_3499;Lnet/minecraft/class_2470;Lnet/minecraft/class_2415;Lnet/minecraft/class_2338;Lnet/minecraft/class_6626;)V
+		ARG 10 collector
 	METHOD method_41684 (Lnet/minecraft/class_5183;)Ljava/util/List;
 		ARG 0 structure
 	METHOD method_41685 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

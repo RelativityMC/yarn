@@ -139,7 +139,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_29361 getDepthBoundsFramebuffer ()Lnet/minecraft/class_276;
 	METHOD method_29363 getTerrainDepthFramebuffer ()Lnet/minecraft/class_276;
 	METHOD method_34810 getChunkBuilder ()Lnet/minecraft/class_846;
-	METHOD method_40050 isRenderingReady (Lnet/minecraft/class_2338;)Z
+	METHOD method_40050 isRenderingReady (Lnet/minecraft/class_2338;J)Z
 		ARG 1 pos
 	METHOD method_62196 getCloudRenderer ()Lnet/minecraft/class_9955;
 	METHOD method_62198 translucencySort (Lnet/minecraft/class_243;)V

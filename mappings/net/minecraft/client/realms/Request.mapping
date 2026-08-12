@@ -56,8 +56,8 @@ CLASS net/minecraft/class_4346 net/minecraft/client/realms/Request
 	METHOD method_21054 connect ()Lnet/minecraft/class_4346;
 	METHOD method_21055 doConnect ()Lnet/minecraft/class_4346;
 	METHOD method_21056 dispose ()V
-	METHOD method_54362 prerelease (IZ)V
-		ARG 2 prerelease
+	METHOD method_54362 prerelease (Ljava/lang/String;IZ)V
+		ARG 3 prerelease
 	CLASS class_4347 Delete
 	CLASS class_4348 Get
 	CLASS class_4349 Post

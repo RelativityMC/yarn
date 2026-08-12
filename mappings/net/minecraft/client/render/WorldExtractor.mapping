@@ -48,8 +48,6 @@ CLASS net/minecraft/class_1_816 net/minecraft/client/render/WorldExtractor
 		ARG 3 worldRenderState
 	METHOD method_1_5008 extractEntities (Lnet/minecraft/class_4184;Lnet/minecraft/class_4604;Lnet/minecraft/class_9779;Lnet/minecraft/class_11658;)V
 		ARG 1 camera
-		ARG 2 frustum
-		ARG 3 tickCounter
 		ARG 4 worldRenderState
 	METHOD method_1_5009 getLastViewDistance ()D
 	METHOD method_1_5010 recreateTerrainSampler ()V
@@ -90,12 +88,12 @@ CLASS net/minecraft/class_1_816 net/minecraft/client/render/WorldExtractor
 		ARG 4 maxSectionX
 		ARG 5 maxSectionY
 		ARG 6 maxSectionZ
-	METHOD method_1_5020 shouldDrawEntityOutlines (Lnet/minecraft/class_4184;)Z
-		ARG 1 camera
+	METHOD method_1_5020 shouldDrawEntityOutlines (Lnet/minecraft/class_4184;Lnet/minecraft/class_1_1460;)Z
+		ARG 0 camera
 	METHOD method_1_5021 getSectionCount ()D
 	METHOD method_1_6240 (Lnet/minecraft/class_631;J)V
 		ARG 2 chunkPos
-	METHOD method_1_6398 shouldRenderEntity (Lnet/minecraft/class_1297;Lnet/minecraft/class_4604;DDD)Z
+	METHOD method_1_6398 shouldRenderEntity (Lnet/minecraft/class_1297;Lnet/minecraft/class_4604;DDDFJ)Z
 		ARG 1 entity
 		ARG 2 frustum
 		ARG 3 x

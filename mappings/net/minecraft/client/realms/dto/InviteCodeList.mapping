@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_1449 net/minecraft/client/realms/dto/InviteCodeList
+	FIELD field_1_9856 LOGGER Lorg/slf4j/Logger;
+	METHOD method_1_9585 getArrayResult (Lcom/google/gson/JsonElement;)Lcom/google/gson/JsonArray;
+		ARG 0 element
+	METHOD method_1_9586 parse (Ljava/lang/String;)Lnet/minecraft/class_1_1449;
+		ARG 0 json

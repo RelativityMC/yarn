@@ -52,6 +52,10 @@ CLASS net/minecraft/class_572 net/minecraft/client/render/entity/model/BipedEnti
 		ARG 2 modelTransform
 	METHOD method_1_2200 (Lnet/minecraft/class_5603;Lnet/minecraft/class_5605;)Lnet/minecraft/class_5609;
 		ARG 1 dilation
+	METHOD method_1_9025 setLimbAngles (Lnet/minecraft/class_10034;FF)V
+		ARG 1 state
+		ARG 2 limbSwingAnimationProgress
+		ARG 3 leaningPitch
 	METHOD method_2807 getArmRollProgress (F)F
 		ARG 1 perquattuordecimage
 	METHOD method_2808 getArm (Lnet/minecraft/class_1306;)Lnet/minecraft/class_630;

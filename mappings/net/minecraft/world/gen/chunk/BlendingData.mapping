@@ -64,6 +64,7 @@ CLASS net/minecraft/class_6749 net/minecraft/world/gen/chunk/BlendingData
 		ARG 1 chunk
 		ARG 2 newNoiseChunkDirections
 	METHOD method_39575 getCollidableBlockDensity ([FI)F
+		ARG 1 collidableBlockDensities
 		ARG 2 halfSectionY
 	METHOD method_39576 getVerticalHalfSectionCount ()I
 	METHOD method_39578 getNorthWestIndex (II)I
@@ -122,10 +123,12 @@ CLASS net/minecraft/class_6749 net/minecraft/world/gen/chunk/BlendingData
 			ARG 1 biomeX
 			ARG 2 halfSectionY
 			ARG 3 biomeZ
+			ARG 4 density
 	CLASS class_6751 HeightConsumer
 		METHOD method_1_284 consume (IIF)V
 			ARG 1 biomeX
 			ARG 2 biomeZ
+			ARG 3 surfaceHeight
 	CLASS class_6853 BiomeConsumer
 		METHOD method_1_282 consume (IILnet/minecraft/class_6880;)V
 			ARG 1 biomeX

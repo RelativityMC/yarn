@@ -4,12 +4,27 @@ CLASS net/minecraft/class_9109 net/minecraft/entity/ProjectileDeflection
 	FIELD field_51509 REDIRECTED Lnet/minecraft/class_9109;
 	FIELD field_51510 TRANSFER_VELOCITY_DIRECTION Lnet/minecraft/class_9109;
 	METHOD method_1_291 deflect (Lnet/minecraft/class_1676;Lnet/minecraft/class_1297;Lnet/minecraft/class_5819;Lnet/minecraft/class_243;)V
+		ARG 1 projectile
+		ARG 2 deflector
+		ARG 3 random
+		ARG 4 velocityMultiplier
 	METHOD method_56095 (Lnet/minecraft/class_1676;Lnet/minecraft/class_1297;Lnet/minecraft/class_5819;Lnet/minecraft/class_243;)V
 		ARG 0 projectile
+		ARG 1 deflector
 		ARG 2 random
+		ARG 3 velocityMultiplier
+	METHOD method_56096 (Lnet/minecraft/class_1676;Lnet/minecraft/class_1297;Lnet/minecraft/class_5819;Lnet/minecraft/class_243;)V
+		ARG 0 projectile
+		ARG 1 deflector
+		ARG 2 random
+		ARG 3 velocityMultiplier
 	METHOD method_59861 (Lnet/minecraft/class_1676;Lnet/minecraft/class_1297;Lnet/minecraft/class_5819;Lnet/minecraft/class_243;)V
 		ARG 0 projectile
 		ARG 1 hitEntity
+		ARG 2 random
+		ARG 3 velocityMultiplier
 	METHOD method_59862 (Lnet/minecraft/class_1676;Lnet/minecraft/class_1297;Lnet/minecraft/class_5819;Lnet/minecraft/class_243;)V
 		ARG 0 projectile
 		ARG 1 hitEntity
+		ARG 2 random
+		ARG 3 velocityMultiplier

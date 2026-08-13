@@ -15,10 +15,28 @@ CLASS net/minecraft/class_11788 net/minecraft/client/render/command/BatchingRend
 	FIELD field_1_8162 gizmosOnTop Lnet/minecraft/class_1_886;
 	FIELD field_1_8163 improvedTranslucencyRenderCommandContainer Lnet/minecraft/class_1_886;
 	FIELD field_1_8164 gizmos Lnet/minecraft/class_1_886;
+	FIELD field_1_9884 seeThroughFeatures Lnet/minecraft/class_1_889;
 	METHOD <init> (ZLnet/minecraft/class_1_889;)V
 		ARG 1 improvedTransparency
+		ARG 2 seeThroughFeatures
 	METHOD method_1_5213 getRenderCommandContainers ()Ljava/util/List;
 	METHOD method_1_5214 getOutlineLayer (Lnet/minecraft/class_1921;)Lnet/minecraft/class_1921;
 		ARG 0 renderLayer
 	METHOD method_1_7454 submitLabel (Lnet/minecraft/class_11691$class_11674;)V
 		ARG 1 command
+	METHOD method_1_9625 isOpaque (Lnet/minecraft/class_11691$class_1_1457;)Z
+		ARG 0 command
+	METHOD method_1_9626 createLabelCommand (Lorg/joml/Matrix4f;FFLnet/minecraft/class_5481;IIILnet/minecraft/class_327$class_6415;)Lnet/minecraft/class_11691$class_11674;
+		ARG 0 matrices
+		ARG 1 x
+		ARG 2 y
+		ARG 3 text
+		ARG 4 light
+		ARG 5 color
+		ARG 6 backgroundColor
+		ARG 7 layerType
+	METHOD method_1_9627 submitTextCommand (Lnet/minecraft/class_4587;Lnet/minecraft/class_327$class_6415;ILnet/minecraft/class_11691$class_1_1457;)V
+		ARG 1 matrices
+		ARG 2 layerType
+		ARG 3 light
+		ARG 4 command

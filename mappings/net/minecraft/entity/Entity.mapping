@@ -86,6 +86,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	FIELD field_1_6915 bounced Z
 	FIELD field_1_8783 FLUID_CATEGORIES Ljava/util/Set;
 	FIELD field_1_9530 INVULNERABLE_TIME_KEY Ljava/lang/String;
+	FIELD field_1_9837 positionInterpolator Lnet/minecraft/class_1_1451;
 	FIELD field_5951 ridingCooldown I
 	FIELD field_5952 onGround Z
 	FIELD field_5953 firstUpdate Z
@@ -292,6 +293,18 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_1_9163 isInvulnerableTimeSet ()Z
 	METHOD method_1_9164 setInvulnerableTime (I)V
 		ARG 1 invulnerableTime
+	METHOD method_1_9558 tickTimers ()V
+	METHOD method_1_9559 getInterpolationDestinationPos ()Lnet/minecraft/class_243;
+	METHOD method_1_9560 getInterpolationDestination ()Lnet/minecraft/class_1_1193;
+	METHOD method_1_9561 getRenderBoundingBox (F)Lnet/minecraft/class_238;
+		ARG 1 tickProgress
+	METHOD method_1_9562 getInterpolator ()Lnet/minecraft/class_1_1451;
+	METHOD method_1_9563 (Ljava/util/List;Lnet/minecraft/class_3222;)Z
+		ARG 1 player
+	METHOD method_1_9564 addVelocity (Lnet/minecraft/class_243;)V
+		COMMENT I guess that’s what happens when you vibe-code the world’s most popular
+		COMMENT video game!
+		ARG 1 vec
 	METHOD method_5622 onBlockCollision (Lnet/minecraft/class_2680;)V
 		COMMENT Called when this entity's collision box intersects {@code state}.
 		COMMENT
@@ -2143,7 +2156,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_60478 getMovement ()Lnet/minecraft/class_243;
 	METHOD method_60490 recalculateDimensions (Lnet/minecraft/class_4048;)Z
 		ARG 1 previous
-	METHOD method_60491 addVelocity (Lnet/minecraft/class_243;)V
+	METHOD method_60491 addVelocityImpl (Lnet/minecraft/class_243;)V
 		ARG 1 vec
 	METHOD method_60607 setMovement (ZZLnet/minecraft/class_243;)V
 		ARG 1 onGround
@@ -2244,6 +2257,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 1 world
 		ARG 2 teleportTarget
 	METHOD method_64612 sendTeleportPacket (Lnet/minecraft/class_3218;Lnet/minecraft/class_5454;)V
+		ARG 1 world
 		ARG 2 teleportTarget
 	METHOD method_64613 getPassengerTeleportTarget (Lnet/minecraft/class_5454;Lnet/minecraft/class_1297;)Lnet/minecraft/class_5454;
 		ARG 1 teleportTarget
@@ -2269,7 +2283,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 3 yDifference
 		ARG 5 zDifference
 		ARG 7 onGround
-	METHOD method_66233 getInterpolator ()Lnet/minecraft/class_1_1451;
+	METHOD method_66233 createInterpolator ()Lnet/minecraft/class_1_1451;
 	METHOD method_66245 isInterpolating ()Z
 	METHOD method_66246 updateTrackedPositionAndAngles (Lnet/minecraft/class_1_1198;FF)V
 		ARG 1 motionPath

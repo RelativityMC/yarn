@@ -1,7 +1,9 @@
 CLASS net/minecraft/class_4603 net/minecraft/client/gui/hud/InGameOverlayRenderer
+	FIELD field_1_9883 gameRenderer Lnet/minecraft/class_757;
 	FIELD field_20986 UNDERWATER_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_61744 spriteHolder Lnet/minecraft/class_11701;
 	METHOD <init> (Lnet/minecraft/class_757;Lnet/minecraft/class_11701;)V
+		ARG 1 gameRenderer
 		ARG 2 spriteHolder
 	METHOD method_1_4449 renderFireOverlayPart (Lnet/minecraft/class_1058;Lnet/minecraft/class_4588;Lorg/joml/Matrix4f;)V
 		ARG 0 sprite
@@ -37,14 +39,25 @@ CLASS net/minecraft/class_4603 net/minecraft/client/gui/hud/InGameOverlayRendere
 		ARG 5 matricesEntry
 		ARG 6 vertexConsumer
 	METHOD method_1_4455 renderOverlay (Lnet/minecraft/class_2960;FFFFLnet/minecraft/class_4587;Lnet/minecraft/class_11659;I)V
+		ARG 0 texture
+		ARG 1 u2
+		ARG 2 v2
+		ARG 3 u1
+		ARG 4 v1
 		ARG 5 matrices
 		ARG 6 queue
 		ARG 7 color
+	METHOD method_1_9624 (Lnet/minecraft/class_1_1460$class_1_1463;Lnet/minecraft/class_4587$class_4665;Lnet/minecraft/class_4588;)V
+		ARG 1 matricesEntry
+		ARG 2 vertexConsumer
 	METHOD method_23067 renderOverlays (FLnet/minecraft/class_11659;Lnet/minecraft/class_1_1460;Lnet/minecraft/class_12075;Z)V
 		ARG 1 tickProgress
 		ARG 2 queue
+		ARG 3 overlayRenderState
+		ARG 4 cameraRenderState
 		ARG 5 hideGui
 	METHOD method_23069 renderUnderwaterOverlay (Lnet/minecraft/class_1_1460$class_1_1463;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;)V
+		ARG 0 underwaterOverlay
 		ARG 1 matrices
 		ARG 2 queue
 	METHOD method_23070 renderFireOverlay (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;Lnet/minecraft/class_1058;)V
@@ -52,6 +65,7 @@ CLASS net/minecraft/class_4603 net/minecraft/client/gui/hud/InGameOverlayRendere
 		ARG 1 queue
 		ARG 2 sprite
 	METHOD method_70939 renderFloatingItem (Lnet/minecraft/class_1_1460;Lnet/minecraft/class_4587;FLnet/minecraft/class_11659;)V
+		ARG 1 overlayRenderState
 		ARG 2 matrices
 		ARG 3 tickProgress
 		ARG 4 queue

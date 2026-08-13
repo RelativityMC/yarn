@@ -1,8 +1,17 @@
 CLASS net/minecraft/class_1_761 net/minecraft/world/gen/feature/TemplateFeature
+	METHOD <init> (Lnet/minecraft/class_6012;)V
+		ARG 1 templates
 	METHOD method_1_4614 getCenteringComponent (Lnet/minecraft/class_2470;Lnet/minecraft/class_2350$class_2351;Lnet/minecraft/class_3499;)Lnet/minecraft/class_2382;
 		ARG 1 rotation
 		ARG 2 axis
 		ARG 3 template
+	METHOD method_1_7089 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_9668 of (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_761;
+		ARG 0 templateId
+	METHOD method_1_9669 of (Lnet/minecraft/class_2960;Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_761;
+		ARG 0 templateId
+		ARG 1 processors
 	CLASS class_1_771 RotatableTemplate
 		METHOD method_1_4652 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance

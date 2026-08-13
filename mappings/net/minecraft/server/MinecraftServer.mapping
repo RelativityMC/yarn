@@ -1,4 +1,4 @@
-CLASS net/minecraft/server/MinecraftServer
+CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
 	COMMENT Represents a logical Minecraft server.
 	COMMENT
 	COMMENT <p>Since Minecraft uses a Client-Server architecture for the game, the server processes all logical game functions.
@@ -494,10 +494,11 @@ CLASS net/minecraft/server/MinecraftServer
 	METHOD method_73282 getCodeOfConductLanguages ()Ljava/util/Map;
 	METHOD method_73550 getApiServices ()Lnet/minecraft/class_7497;
 	METHOD method_73568 getUseAllowlist ()Z
-	METHOD method_73573 getForceGameMode ()Z
+	METHOD method_73573 isGameModeForced ()Z
 	METHOD method_73589 setUseAllowlist (Z)V
 		ARG 1 useAllowlist
 	METHOD method_73601 setForceGameMode (Z)V
+		ARG 1 gameMode
 	METHOD method_74055 getManagementListener ()Lnet/minecraft/class_11870;
 	METHOD method_74058 onGameRuleUpdated (Lnet/minecraft/class_12279;Ljava/lang/Object;)V
 		ARG 1 gameRule
@@ -524,7 +525,7 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 1 world
 	METHOD method_76677 processPacketsAndTick (Z)V
 		ARG 1 sprint
-	CLASS 1
+	CLASS 1 1
 		FIELD field_61875 chunkLoadingManager Lnet/minecraft/class_3898;
 		FIELD field_61876 spawnChunkX I
 		FIELD field_61877 spawnChunkZ I

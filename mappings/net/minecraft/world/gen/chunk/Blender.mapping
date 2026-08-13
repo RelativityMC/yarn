@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_6748 net/minecraft/world/gen/chunk/Blender
+	FIELD field_1_9902 maskPredicate Lnet/minecraft/class_6643$class_6828;
 	FIELD field_35501 NO_BLENDING Lnet/minecraft/class_6748;
 	FIELD field_35502 BLENDING_BIOME_DISTANCE_THRESHOLD I
 	FIELD field_35503 BLENDING_CHUNK_DISTANCE_THRESHOLD I
@@ -9,21 +10,26 @@ CLASS net/minecraft/class_6748 net/minecraft/world/gen/chunk/Blender
 	METHOD <init> (Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;Lnet/minecraft/class_6643$class_6828;)V
 		ARG 1 blendingData
 		ARG 2 closeBlendingData
+		ARG 3 maskPredicate
+	METHOD method_1_9637 getMaskPredicate ()Lnet/minecraft/class_6643$class_6828;
 	METHOD method_39336 getNoBlending ()Lnet/minecraft/class_6748;
 	METHOD method_39337 getBlendOffset (D)D
 		ARG 0 height
 	METHOD method_39338 applyBlendDensity (Lnet/minecraft/class_6910$class_6912;F)F
 		ARG 1 pos
+		ARG 2 density
 	METHOD method_39339 (IIILorg/apache/commons/lang3/mutable/MutableDouble;Lorg/apache/commons/lang3/mutable/MutableDouble;Lorg/apache/commons/lang3/mutable/MutableDouble;IIIF)V
 		ARG 6 biomeX
 		ARG 7 halfSectionY
 		ARG 8 biomeZ
+		ARG 9 density
 	METHOD method_39340 calculate (II)Lnet/minecraft/class_6748$class_6956;
 		ARG 1 blockX
 		ARG 2 blockZ
 	METHOD method_39341 (IILorg/apache/commons/lang3/mutable/MutableDouble;Lorg/apache/commons/lang3/mutable/MutableDouble;Lorg/apache/commons/lang3/mutable/MutableDouble;IIF)V
 		ARG 5 biomeX
 		ARG 6 biomeZ
+		ARG 7 height
 	METHOD method_39342 getBlender (Lnet/minecraft/class_3233;)Lnet/minecraft/class_6748;
 		ARG 0 chunkRegion
 	METHOD method_39560 (IIILorg/apache/commons/lang3/mutable/MutableFloat;Lorg/apache/commons/lang3/mutable/MutableObject;JLnet/minecraft/class_6749;)V
@@ -70,6 +76,7 @@ CLASS net/minecraft/class_6748 net/minecraft/world/gen/chunk/Blender
 		ARG 10 z2
 	METHOD method_39809 createCarvingMasks (Lnet/minecraft/class_5281;Lnet/minecraft/class_2791;)Lnet/minecraft/class_6643$class_6828;
 		ARG 0 world
+		ARG 1 chunk
 	METHOD method_39811 (Lnet/minecraft/class_6748$class_6831;III)Z
 		ARG 1 offsetX
 		ARG 2 y

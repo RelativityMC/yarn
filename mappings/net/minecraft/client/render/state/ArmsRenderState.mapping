@@ -1,0 +1,35 @@
+CLASS net/minecraft/class_1_1475 net/minecraft/client/render/state/ArmsRenderState
+	FIELD field_1_10019 hand Lnet/minecraft/class_1268;
+	FIELD field_1_10020 handRenderType Lnet/minecraft/class_1_1475$class_5773;
+	FIELD field_1_10021 mainHandMapFilled Z
+	FIELD field_1_10022 offHandMapFilled Z
+	FIELD field_1_10023 usingSpyglass Z
+	FIELD field_1_10024 mainHandPullTime I
+	FIELD field_1_10025 mainHandReadyProgress F
+	FIELD field_1_10026 mainHandStack Lnet/minecraft/class_1799;
+	FIELD field_1_10027 mainHandMap Lnet/minecraft/class_10090;
+	FIELD field_1_10028 mainHandStackState Lnet/minecraft/class_10444;
+	FIELD field_1_10029 mainHandSwapAnimationScale F
+	FIELD field_1_10030 mainHandMaxUseTime I
+	FIELD field_1_10031 offHandPullTime I
+	FIELD field_1_10032 offHandReadyProgress F
+	FIELD field_1_10033 offHandStack Lnet/minecraft/class_1799;
+	FIELD field_1_10034 offHandMap Lnet/minecraft/class_10090;
+	FIELD field_1_10035 offHandStackState Lnet/minecraft/class_10444;
+	FIELD field_1_10036 offHandSwapAnimationScale F
+	FIELD field_1_10037 offHandMaxUseTime I
+	FIELD field_1_10038 lastMainHandReadyProgress F
+	FIELD field_1_10039 lastOffHandReadyProgress F
+	FIELD field_1_10040 itemUseTimeLeft I
+	FIELD field_1_10041 pitch F
+	FIELD field_1_10042 yaw F
+	FIELD field_1_10043 renderPitch F
+	FIELD field_1_10044 renderYaw F
+	CLASS class_5773 HandRenderType
+		FIELD field_28387 renderMainHand Z
+		FIELD field_28388 renderOffHand Z
+		METHOD <init> (Ljava/lang/String;IZZ)V
+			ARG 3 renderMainHand
+			ARG 4 renderOffHand
+		METHOD method_33305 shouldOnlyRender (Lnet/minecraft/class_1268;)Lnet/minecraft/class_1_1475$class_5773;
+			ARG 0 hand

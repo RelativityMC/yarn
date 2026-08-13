@@ -1,4 +1,12 @@
 CLASS net/minecraft/class_4341 net/minecraft/client/realms/RealmsClient
+	FIELD field_1_9863 ACCEPT_KEY Ljava/lang/String;
+	FIELD field_1_9864 JSON_MIME_TYPE Ljava/lang/String;
+	FIELD field_1_9865 INVITE_CODES_ENDPOINT Ljava/lang/String;
+	FIELD field_1_9866 MOJANGAUTH_KEY Ljava/lang/String;
+	FIELD field_1_9867 INVITE_CODES_DELETE_PATH Ljava/lang/String;
+	FIELD field_1_9868 INVITE_CODES_UPDATE_PATH Ljava/lang/String;
+	FIELD field_1_9869 INVITE_CODES_USE_PATH Ljava/lang/String;
+	FIELD field_1_9870 REALMS_PLATFORM_KEY Ljava/lang/String;
 	FIELD field_19578 LOGGER Lorg/slf4j/Logger;
 	FIELD field_19579 sessionId Ljava/lang/String;
 	FIELD field_19580 username Ljava/lang/String;
@@ -54,6 +62,29 @@ CLASS net/minecraft/class_4341 net/minecraft/client/realms/RealmsClient
 		ARG 1 sessionId
 		ARG 2 username
 		ARG 3 client
+	METHOD method_1_9595 createInviteCode (JZLjava/time/Instant;)V
+		ARG 1 serverId
+		ARG 3 enabled
+		ARG 4 expirationDate
+	METHOD method_1_9596 deleteInviteCode (Ljava/lang/String;)V
+		ARG 1 code
+	METHOD method_1_9597 setAccessToken (Lnet/minecraft/class_4346;Ljava/lang/String;)Lnet/minecraft/class_4346;
+		ARG 0 request
+		ARG 1 accessToken
+	METHOD method_1_9598 frontend2Url (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 path
+		ARG 1 queryString
+	METHOD method_1_9599 getInviteCodes (J)Lnet/minecraft/class_1_1449;
+		ARG 1 serverId
+	METHOD method_1_9600 getRequestForInviteCodes (J)Lnet/minecraft/class_4346;
+		ARG 1 serverId
+	METHOD method_1_9601 useInviteCode (Ljava/lang/String;)V
+		ARG 1 code
+	METHOD method_1_9602 updateInviteCode (JLjava/lang/String;ZLjava/time/Instant;)V
+		ARG 1 serverId
+		ARG 3 code
+		ARG 4 enabled
+		ARG 5 expirationDate
 	METHOD method_20989 createRealmsClient (Lnet/minecraft/class_310;)Lnet/minecraft/class_4341;
 		ARG 0 client
 	METHOD method_20990 fetchWorldTemplates (IILnet/minecraft/class_4877$class_4321;)Lnet/minecraft/class_4891;
@@ -171,6 +202,8 @@ CLASS net/minecraft/class_4341 net/minecraft/client/realms/RealmsClient
 		METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/class_4341$class_4342;
 			ARG 0 name
 	CLASS class_4343 Environment
+		FIELD field_1_9871 frontend2Url Ljava/lang/String;
+			COMMENT As of 26.3-snapshot-8, this URL is used for getting invite codes.
 		FIELD field_19586 PRODUCTION Lnet/minecraft/class_4341$class_4343;
 		FIELD field_19587 STAGE Lnet/minecraft/class_4341$class_4343;
 		FIELD field_19588 LOCAL Lnet/minecraft/class_4341$class_4343;
@@ -180,6 +213,8 @@ CLASS net/minecraft/class_4341 net/minecraft/client/realms/RealmsClient
 		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 			ARG 3 baseUrl
 			ARG 4 aksUrl
+			ARG 5 frontend2Url
+			ARG 6 protocol
 		METHOD method_52215 fromName (Ljava/lang/String;)Ljava/util/Optional;
 			ARG 0 name
 		METHOD valueOf (Ljava/lang/String;)Lnet/minecraft/class_4341$class_4343;

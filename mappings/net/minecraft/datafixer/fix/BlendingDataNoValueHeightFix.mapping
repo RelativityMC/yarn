@@ -1,0 +1,13 @@
+CLASS net/minecraft/class_1_1465 net/minecraft/datafixer/fix/BlendingDataNoValueHeightFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD method_1_9679 fixBlendingData (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 chunk
+	METHOD method_1_9680 convertHeightToFloat (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 height
+	METHOD method_1_9681 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 blendingData
+	METHOD method_1_9682 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 heights
+	METHOD method_1_9683 (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 0 chunk

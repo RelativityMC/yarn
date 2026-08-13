@@ -33,14 +33,21 @@ CLASS net/minecraft/class_156 net/minecraft/util/Util
 		ARG 0 list
 		ARG 1 valuesToAppend
 	METHOD method_1_3882 join ([Ljava/util/Collection;)Ljava/util/List;
+		ARG 0 collections
 	METHOD method_1_4709 getThreadInfos ()[Ljava/lang/management/ThreadInfo;
 	METHOD method_1_4710 join (Ljava/util/Collection;Ljava/util/Collection;)Ljava/util/List;
+		ARG 0 first
+		ARG 1 second
 	METHOD method_1_5113 (Lcom/google/common/escape/Escapers$Builder;)V
 		ARG 0 builder
 	METHOD method_1_6330 setNanoTimeSupplier (Lnet/minecraft/class_7576$class_7577;)V
 		ARG 0 nanoTimeSupplier
 	METHOD method_1_6331 freezeNanoTimeSupplier ()V
 	METHOD method_1_6332 getNanoTimeSupplier ()Lnet/minecraft/class_7576$class_7577;
+	METHOD method_1_9149 rendererRequiresExplicitDepth (Ljava/lang/String;)Z
+		ARG 0 renderer
+	METHOD method_1_9556 secondsToMs (D)J
+		ARG 0 seconds
 	METHOD method_645 previous (Ljava/lang/Iterable;Ljava/lang/Object;)Ljava/lang/Object;
 		COMMENT {@return the item preceding {@code object} in {@code iterable}}
 		COMMENT

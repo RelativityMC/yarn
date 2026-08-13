@@ -11,6 +11,15 @@ CLASS net/minecraft/class_2169 net/minecraft/world/biome/source/TheEndBiomeSourc
 		ARG 3 midlandsBiome
 		ARG 4 smallIslandsBiome
 		ARG 5 barrensBiome
+	METHOD method_1_9622 getBiome (IIILnet/minecraft/class_6544$class_6552;)Lnet/minecraft/class_6880;
+		ARG 1 biomeX
+		ARG 2 biomeY
+		ARG 3 biomeZ
+		ARG 4 sampler
+	METHOD method_1_9623 (Lnet/minecraft/class_6544$class_6552;III)Lnet/minecraft/class_6880;
+		ARG 2 biomeX
+		ARG 3 biomeY
+		ARG 4 biomeZ
 	METHOD method_46679 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
 	METHOD method_46680 createVanilla (Lnet/minecraft/class_7871;)Lnet/minecraft/class_2169;

@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1468 net/minecraft/world/gen/placementmodifier/RandomlySelectedPlacementModifier
+	METHOD <init> ([Lnet/minecraft/class_6797;)V
+		ARG 1 placements
+	METHOD method_1_9701 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

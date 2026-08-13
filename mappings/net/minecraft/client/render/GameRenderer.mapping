@@ -40,7 +40,9 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	FIELD field_61734 entityRenderDispatcher Lnet/minecraft/class_11684;
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_759;Lnet/minecraft/class_1092;Lnet/minecraft/class_10442;)V
 		ARG 1 client
+		ARG 2 firstPersonRenderer
 		ARG 3 bakedModelManager
+		ARG 4 itemModelManager
 	METHOD method_1_430 getWorldLightmapTextureView ()Lnet/minecraft/class_1_1330;
 	METHOD method_1_431 getLightmapTextureView ()Lnet/minecraft/class_1_1330;
 	METHOD method_1_2674 extract (Lnet/minecraft/class_9779;Z)V
@@ -66,6 +68,7 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	METHOD method_1_8581 refreshPostEffects ()V
 	METHOD method_1_8582 renderWorldEffects (Lnet/minecraft/class_12075;Lnet/minecraft/class_1_1460;Lnet/minecraft/class_1_421;Z)V
 		ARG 1 cameraRenderState
+		ARG 2 overlayRenderState
 		ARG 3 optionsRenderState
 		ARG 4 hasPostEffects
 	METHOD method_3167 onCameraEntitySet (Lnet/minecraft/class_1297;)V
@@ -75,6 +78,7 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 		ARG 2 height
 	METHOD method_3172 renderItemInHand (Lnet/minecraft/class_12075;Lnet/minecraft/class_1_1460;Lnet/minecraft/class_1_1330;)V
 		ARG 1 cameraRenderState
+		ARG 2 overlayRenderState
 		ARG 3 depthAttachmentView
 	METHOD method_3174 getNightVisionStrength (Lnet/minecraft/class_1309;F)F
 		ARG 0 entity

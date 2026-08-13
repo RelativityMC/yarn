@@ -1,5 +1,9 @@
 CLASS net/minecraft/class_1_1279 net/minecraft/entity/movement/PathingPositionInterpolator
 	FIELD field_1_8705 destination Lnet/minecraft/class_1_1279$class_1_1280;
+	METHOD <init> (Lnet/minecraft/class_1297;)V
+		ARG 1 entity
+	METHOD method_1_9659 ifServer (Lnet/minecraft/class_1297;)Lnet/minecraft/class_1_1451;
+		ARG 0 entity
 	CLASS class_1_1280 Destination
 		FIELD field_1_8707 progress F
 		FIELD field_1_8710 steps Ljava/util/LinkedList;

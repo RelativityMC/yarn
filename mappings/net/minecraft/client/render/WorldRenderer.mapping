@@ -12,6 +12,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	FIELD field_1_7984 COEFF_ATTACHMENT_COUNT I
 	FIELD field_1_8347 drawOutlines Z
 	FIELD field_1_9535 useMultiDrawTerrainRendering Z
+	FIELD field_1_9872 multiDrawIndirectSupported Z
 	FIELD field_4109 entityRenderManager Lnet/minecraft/class_898;
 	FIELD field_4112 chunks Lnet/minecraft/class_769;
 	FIELD field_20951 bufferBuilders Lnet/minecraft/class_4599;
@@ -110,6 +111,9 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_1_9185 createSectionRenderStateMultidraw (Lorg/joml/Matrix4fc;Z)Lnet/minecraft/class_11532;
 		ARG 1 modelView
 		ARG 2 sortTranslucent
+	METHOD method_1_9603 renderSeeThroughFeatures (Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_276;)V
+		ARG 1 preparedFrame
+		ARG 2 mainFramebuffer
 	METHOD method_3242 onResized (II)V
 		ARG 1 width
 		ARG 2 height
@@ -141,6 +145,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_34810 getChunkBuilder ()Lnet/minecraft/class_846;
 	METHOD method_40050 isRenderingReady (Lnet/minecraft/class_2338;J)Z
 		ARG 1 pos
+		ARG 2 chunkFadeMs
 	METHOD method_62196 getCloudRenderer ()Lnet/minecraft/class_9955;
 	METHOD method_62198 translucencySort (Lnet/minecraft/class_243;)V
 		ARG 1 cameraPos

@@ -14,6 +14,10 @@ CLASS net/minecraft/class_909 net/minecraft/client/render/entity/BipedEntityRend
 		ARG 3 babyModel
 		ARG 4 scale
 		ARG 5 headTransformation
+	METHOD method_1_9530 isStabbing (Lnet/minecraft/class_1799;Lnet/minecraft/class_1306;Lnet/minecraft/class_1309;)Z
+		ARG 0 heldStack
+		ARG 1 arm
+		ARG 2 holder
 	METHOD method_62461 updateBipedRenderState (Lnet/minecraft/class_1309;Lnet/minecraft/class_10034;FLnet/minecraft/class_10442;)V
 		ARG 0 entity
 		ARG 1 state

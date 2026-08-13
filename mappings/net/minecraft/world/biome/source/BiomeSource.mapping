@@ -1,6 +1,8 @@
 CLASS net/minecraft/class_1966 net/minecraft/world/biome/source/BiomeSource
 	FIELD field_20643 biomes Ljava/util/function/Supplier;
 	FIELD field_24713 CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_1_9606 getBiomeSupplier (Lnet/minecraft/class_6544$class_6552;)Lnet/minecraft/class_6780;
+		ARG 1 sampler
 	METHOD method_8762 locateBiome (IIIILjava/util/function/Predicate;Lnet/minecraft/class_5819;Lnet/minecraft/class_6544$class_6552;)Lcom/mojang/datafixers/util/Pair;
 		ARG 1 x
 		ARG 2 y
@@ -17,6 +19,9 @@ CLASS net/minecraft/class_1966 net/minecraft/world/biome/source/BiomeSource
 		ARG 5 blockCheckInterval
 		ARG 6 predicate
 		ARG 7 random
+		ARG 8 orderByIncreasingDistance
+			COMMENT Whether to search candidates by increasing Chebyshev distance from the
+			COMMENT center of the search.
 		ARG 9 noiseSampler
 	METHOD method_28442 getCodec ()Lcom/mojang/serialization/MapCodec;
 	METHOD method_28443 getBiomes ()Ljava/util/Set;

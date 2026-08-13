@@ -1,10 +1,14 @@
-CLASS net/minecraft/class_5822 net/minecraft/util/math/noise/InterpolatedNoiseSampler
+CLASS net/minecraft/class_5822 net/minecraft/util/math/noise/BlendedNoiseSampler
 	FIELD comp_1_1579 smearScaleMultiplier D
 	FIELD comp_1_1580 xzFactor D
 	FIELD comp_1_1581 xzScale D
 	FIELD comp_1_1582 yFactor D
 	FIELD comp_1_1583 yScale D
 	FIELD field_1_9659 SCALE D
+	FIELD field_1_9660 LIMIT_NOISE_FREQUENCY D
+	FIELD field_1_9661 MAIN_NOISE_FREQUENCY D
+	FIELD field_1_9910 LIMIT_NOISE_FIRST_OCTAVE I
+	FIELD field_1_9911 MAIN_NOISE_FIRST_OCTAVE I
 	FIELD field_37206 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_38269 SCALE_AND_FACTOR_CODEC Lcom/mojang/serialization/Codec;
 	METHOD <init> (DDDDD)V
@@ -20,6 +24,23 @@ CLASS net/minecraft/class_5822 net/minecraft/util/math/noise/InterpolatedNoiseSa
 		ARG 1 firstOctave
 		ARG 2 offsetScale
 		ARG 4 frequency
+	METHOD method_1_9652 getRange (IDD)Lnet/minecraft/class_1_1150;
+		ARG 0 firstOctave
+		ARG 1 scaledSmearScaleMultiplier
+		ARG 3 frequency
+	METHOD method_1_9653 createBlendedNoise (Lnet/minecraft/class_5819;)Lnet/minecraft/class_5822$class_1_1456;
+		ARG 1 random
+	METHOD method_1_9654 getScaledXzScale ()D
+	METHOD method_1_9655 getScaledYScale ()D
 	METHOD method_42385 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
 	METHOD method_42386 copyWithRandom (Lnet/minecraft/class_5819;)Lnet/minecraft/class_6910;
+		ARG 1 random
+	CLASS class_1_1456 BlendedNoise
+		METHOD method_1_9656 (I)Ljava/lang/String;
+			ARG 0 octave
+		METHOD method_1_9657 debug (Ljava/lang/StringBuilder;)V
+			ARG 1 builder
+		METHOD method_1_9658 debug (Ljava/lang/StringBuilder;Lnet/minecraft/class_1_1403;)V
+			ARG 1 builder
+			ARG 2 noise

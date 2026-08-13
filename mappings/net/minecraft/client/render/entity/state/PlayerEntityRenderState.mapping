@@ -9,6 +9,9 @@ CLASS net/minecraft/class_10055 net/minecraft/client/render/entity/state/PlayerE
 	FIELD field_53532 capeVisible Z
 	FIELD field_53534 glidingTicks F
 	FIELD field_53535 applyFlyingRotation Z
+	FIELD field_53536 capeFall F
+	FIELD field_53537 capeRun F
+	FIELD field_53538 capeTwist F
 	FIELD field_53539 stuckArrowCount I
 	FIELD field_53540 stingerCount I
 	FIELD field_53542 spectator Z

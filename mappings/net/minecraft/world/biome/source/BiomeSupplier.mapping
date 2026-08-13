@@ -1,2 +1,10 @@
 CLASS net/minecraft/class_6780 net/minecraft/world/biome/source/BiomeSupplier
+	METHOD method_1_9611 getBiomes (IIII)Ljava/util/Set;
+		ARG 1 blockX
+		ARG 2 blockY
+		ARG 3 blockZ
+		ARG 4 range
 	METHOD method_16359 getBiomeForNoiseGen (III)Lnet/minecraft/class_6880;
+		ARG 1 biomeX
+		ARG 2 biomeY
+		ARG 3 biomeZ

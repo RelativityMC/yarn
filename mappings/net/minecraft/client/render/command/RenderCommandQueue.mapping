@@ -49,6 +49,15 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 5 overlay
 		ARG 6 color
 		ARG 7 crumblingOverlayCommand
+	METHOD method_1_9662 submitTextRect (Lnet/minecraft/class_4587;FFFFILnet/minecraft/class_327$class_6415;I)V
+		ARG 1 matrices
+		ARG 2 x0
+		ARG 3 y0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 color
+		ARG 7 layerType
+		ARG 8 light
 	METHOD method_73478 submitText (Lnet/minecraft/class_4587;FFLnet/minecraft/class_5481;ZLnet/minecraft/class_327$class_6415;IIII)V
 		ARG 1 matrices
 		ARG 2 x
@@ -71,6 +80,7 @@ CLASS net/minecraft/class_11785 net/minecraft/client/render/command/RenderComman
 		ARG 4 overlay
 		ARG 5 outlineColor
 		ARG 6 tintLayers
+		ARG 7 quads
 		ARG 8 glintType
 	METHOD method_73482 submitLabel (Lnet/minecraft/class_4587;Lnet/minecraft/class_243;ILnet/minecraft/class_2561;ZILnet/minecraft/class_12075;)V
 		ARG 1 matrices

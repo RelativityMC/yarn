@@ -13,6 +13,7 @@ CLASS net/minecraft/class_12075 net/minecraft/client/render/state/CameraRenderSt
 	FIELD field_1_5923 hasCapturedFrustum Z
 	FIELD field_1_5924 chunkCullingEnabled Z
 	FIELD field_1_9228 tickProgress F
+	FIELD field_1_9919 firstPerson Z
 	FIELD field_63077 blockPos Lnet/minecraft/class_2338;
 	FIELD field_63078 pos Lnet/minecraft/class_243;
 	FIELD field_63079 initialized Z

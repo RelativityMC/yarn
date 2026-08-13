@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_11661 net/minecraft/client/render/command/OrderedRenderCommandQueueImpl
 	FIELD field_1_8140 improvedTransparency Z
+	FIELD field_1_9876 seeThroughFeatures Lnet/minecraft/class_1_889;
 	FIELD field_62244 batchingQueues Lit/unimi/dsi/fastutil/ints/Int2ObjectAVLTreeMap;
 	METHOD method_1_5202 forEachContainer (Ljava/util/function/Consumer;)V
 		ARG 1 callback
@@ -9,4 +10,5 @@ CLASS net/minecraft/class_11661 net/minecraft/client/render/command/OrderedRende
 		ARG 1 o
 	METHOD method_1_7418 setImprovedTransparency (Z)V
 		ARG 1 improvedTransparency
+	METHOD method_1_9613 getSeeThroughFeaturesContainer ()Lnet/minecraft/class_1_889;
 	METHOD method_73532 getBatchingQueues ()Lit/unimi/dsi/fastutil/ints/Int2ObjectAVLTreeMap;

@@ -1,0 +1,77 @@
+CLASS net/minecraft/class_1_1470 net/minecraft/client/realms/gui/screen/RealmsInviteCodesScreen
+	FIELD field_1_9966 LOWER_BUTTON_WIDTH I
+	FIELD field_1_9967 WIDTH I
+	FIELD field_1_9968 INVITE_CODES_COPY_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_9969 INVITE_CODES_CREATE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_9970 INVITE_CODES_DELETE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_9971 INVITE_CODES_EDIT_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_9972 ITEM_HEIGHT I
+	FIELD field_1_9973 FOOTER_HEIGHT I
+	FIELD field_1_9974 INVITE_CODES_LOADING_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_9975 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_9976 MAX_INVITE_CODES I
+	FIELD field_1_9977 SPACING I
+	FIELD field_1_9978 INVITE_CODES_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_9979 UPPER_BUTTON_WIDTH I
+	FIELD field_1_9980 backButton Lnet/minecraft/class_4185;
+	FIELD field_1_9981 configureWorldScreen Lnet/minecraft/class_4388;
+	FIELD field_1_9982 copyButton Lnet/minecraft/class_4185;
+	FIELD field_1_9983 createButton Lnet/minecraft/class_4185;
+	FIELD field_1_9984 deleteButton Lnet/minecraft/class_4185;
+	FIELD field_1_9985 editButton Lnet/minecraft/class_4185;
+	FIELD field_1_9986 loaded Z
+	FIELD field_1_9987 list Lnet/minecraft/class_1_1470$class_1_1471;
+	FIELD field_1_9988 inviteCodes Ljava/util/List;
+	FIELD field_1_9989 serverId J
+	METHOD <init> (Lnet/minecraft/class_4388;Lnet/minecraft/class_4877;)V
+		ARG 1 configureWorldScreen
+		ARG 2 server
+	METHOD method_1_9710 getInviteCodes ()V
+	METHOD method_1_9711 reportException (Lnet/minecraft/class_4355;Ljava/lang/String;Lnet/minecraft/class_437;)V
+		ARG 1 ex
+		ARG 2 message
+		ARG 3 errorScreenParent
+	METHOD method_1_9712 (Lnet/minecraft/class_4341;)Lnet/minecraft/class_1_1449;
+		ARG 1 client
+	METHOD method_1_9713 (Lnet/minecraft/class_437;Lnet/minecraft/class_4355;)V
+		ARG 2 ex
+	METHOD method_1_9714 (Lnet/minecraft/class_1_1449;)V
+		ARG 1 codes
+	METHOD method_1_9716 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_1_9717 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_1_9718 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_1_9719 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_1_9720 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_1_9721 (Lnet/minecraft/class_1_1470;Lnet/minecraft/class_339;)V
+		ARG 1 child
+	METHOD method_1_9722 (Lnet/minecraft/class_4341;)V
+		ARG 1 client
+	METHOD method_1_9723 (Lnet/minecraft/class_4355;)V
+		ARG 1 ex
+	METHOD method_1_9725 (Lnet/minecraft/class_1_1447;Lnet/minecraft/class_4341;)V
+		ARG 1 client
+	METHOD method_1_9726 (Lnet/minecraft/class_4355;)V
+		ARG 1 ex
+	METHOD method_1_9728 copySelectedCode ()V
+	METHOD method_1_9729 createCode ()V
+	METHOD method_1_9730 deleteSelectedCode ()V
+	METHOD method_1_9731 editSelectedCode ()V
+	METHOD method_1_9732 refreshInviteCodes ()V
+	METHOD method_1_9733 setActive (Z)V
+		ARG 1 active
+	METHOD method_1_9734 onActivate ()V
+	CLASS class_1_1471 InviteCodeListWidget
+		METHOD <init> (Lnet/minecraft/class_1_1470;Ljava/util/List;)V
+			ARG 2 codes
+		METHOD method_1_9735 getSelectedCode ()Lnet/minecraft/class_1_1447;
+		METHOD method_1_9736 (Lnet/minecraft/class_1_1447;)V
+			ARG 1 code
+		CLASS class_1_1472 Entry
+			FIELD field_1_9991 code Lnet/minecraft/class_1_1447;
+			METHOD <init> (Lnet/minecraft/class_1_1470$class_1_1471;Lnet/minecraft/class_1_1447;)V
+				ARG 2 code

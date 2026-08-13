@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_1_1467 net/minecraft/client/realms/InviteCodeExpiration
+	FIELD field_1_9961 duration Ljava/time/Duration;
+	FIELD field_1_9962 text Lnet/minecraft/class_2561;
+	METHOD <init> (Ljava/lang/String;ILnet/minecraft/class_2561;Ljava/time/Duration;)V
+		ARG 3 text
+		ARG 4 duration
+	METHOD method_1_9698 getClosestSince (Ljava/time/Instant;)Lnet/minecraft/class_1_1467;
+		ARG 0 issuance
+	METHOD method_1_9699 getText ()Lnet/minecraft/class_2561;
+	METHOD method_1_9700 getNewExpirationDate (Ljava/time/Instant;Lnet/minecraft/class_1_1467;ZLjava/time/Instant;)Ljava/time/Instant;
+		ARG 0 expirationDate
+		ARG 1 expiration
+		ARG 2 dirty
+		ARG 3 now

@@ -269,6 +269,9 @@ CLASS net/minecraft/class_3898 net/minecraft/server/world/ServerChunkLoadingMana
 		ARG 2 chunks
 	METHOD method_61258 (Lnet/minecraft/class_1923;Lnet/minecraft/class_2487;)Lnet/minecraft/class_2852;
 		ARG 2 updatedChunk
+	METHOD method_61259 (Ljava/util/Optional;Ljava/lang/Object;)Ljava/util/Optional;
+		ARG 0 chunkNbt
+		ARG 1 poiNbt
 	METHOD method_61261 isAnyPlayerTicking (Lnet/minecraft/class_1923;)Z
 		ARG 1 pos
 	METHOD method_63545 updateLevel (Lnet/minecraft/class_1923;Ljava/util/function/IntSupplier;ILjava/util/function/IntConsumer;)V
@@ -340,6 +343,7 @@ CLASS net/minecraft/class_3898 net/minecraft/server/world/ServerChunkLoadingMana
 		METHOD <init> (Lnet/minecraft/class_3898;Lnet/minecraft/class_1297;ILnet/minecraft/class_1_1448;Z)V
 			ARG 2 entity
 			ARG 3 maxDistance
+			ARG 4 tickInterval
 			ARG 5 alwaysUpdateVelocity
 		METHOD equals (Ljava/lang/Object;)Z
 			ARG 1 o

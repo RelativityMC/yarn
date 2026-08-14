@@ -1,6 +1,15 @@
 CLASS net/minecraft/class_1_1273 net/minecraft/entity/movement/LinearPositionInterpolator
 	FIELD field_1_8698 destination Lnet/minecraft/class_1_1273$class_1_1274;
+	FIELD field_1_9909 DEFAULT_INTERVAL I
+	METHOD <init> (Lnet/minecraft/class_1297;I)V
+		ARG 1 entity
+		ARG 2 trackTickInterval
 	METHOD method_1_8143 setLerpDuration (I)V
 		ARG 1 lerpDuration
+	METHOD method_1_9649 ifServer (Lnet/minecraft/class_1297;)Lnet/minecraft/class_1_1451;
+		ARG 0 entity
+	METHOD method_1_9650 ifServer (Lnet/minecraft/class_1297;I)Lnet/minecraft/class_1_1451;
+		ARG 0 entity
+		ARG 1 trackTickInterval
 	CLASS class_1_1274 Destination
 		FIELD field_1_8699 lerpDuration I

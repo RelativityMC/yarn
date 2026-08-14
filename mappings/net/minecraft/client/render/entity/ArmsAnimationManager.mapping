@@ -1,0 +1,27 @@
+CLASS net/minecraft/class_1_1455 net/minecraft/client/render/entity/ArmsAnimationManager
+	FIELD field_1_9903 mainHandReadyProgress F
+	FIELD field_1_9904 mainHandStack Lnet/minecraft/class_1799;
+	FIELD field_1_9905 lastMainHandReadyProgress F
+	FIELD field_1_9906 lastOffHandReadyProgress F
+	FIELD field_1_9907 offHandReadyProgress F
+	FIELD field_1_9908 offHandStack Lnet/minecraft/class_1799;
+	METHOD method_1_9638 getHandRenderType (Lnet/minecraft/class_746;)Lnet/minecraft/class_1_1475$class_5773;
+		ARG 0 player
+	METHOD method_1_9639 extractMapState (Lnet/minecraft/class_746;Lnet/minecraft/class_1799;Lnet/minecraft/class_10090;)Z
+		ARG 1 player
+		ARG 2 heldStack
+		ARG 3 mapRenderState
+	METHOD method_1_9640 extract (Lnet/minecraft/class_746;FLnet/minecraft/class_1_1475;)V
+		ARG 1 player
+		ARG 2 tickProgress
+		ARG 3 armsRenderState
+	METHOD method_1_9641 isChargedCrossbow (Lnet/minecraft/class_1799;)Z
+		ARG 0 stack
+	METHOD method_1_9642 resetHandReadyProgress (Lnet/minecraft/class_1268;)V
+		ARG 1 hand
+	METHOD method_1_9643 shouldSkipHandAnimationOnSwap (Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;Lnet/minecraft/class_746;)Z
+		ARG 1 currentStack
+		ARG 2 newStack
+		ARG 3 player
+	METHOD method_1_9644 tick (Lnet/minecraft/class_746;)V
+		ARG 1 player

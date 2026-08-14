@@ -79,6 +79,9 @@ CLASS net/minecraft/class_11684 net/minecraft/client/render/command/RenderDispat
 			ARG 1 pass
 		METHOD method_1_7560 hasAnyWaterMasks ()Z
 		METHOD method_1_8906 isEmpty ()Z
+		METHOD method_1_9677 renderSeeThroughFeatures (Lnet/minecraft/class_1_1317;)V
+			ARG 1 pass
+		METHOD method_1_9678 hasAnySeeThroughFeatures ()Z
 	CLASS class_1_876 Group
 		FIELD field_1_6185 groupIndex I
 		FIELD field_1_6186 type Lnet/minecraft/class_1_867;

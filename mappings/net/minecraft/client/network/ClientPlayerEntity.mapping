@@ -1,6 +1,10 @@
 CLASS net/minecraft/class_746 net/minecraft/client/network/ClientPlayerEntity
 	COMMENT Represents the client's own player entity.
 	FIELD field_1_1780 chatRestrictions Lnet/minecraft/class_1_317;
+	FIELD field_1_9844 armsAnimationManager Lnet/minecraft/class_1_1455;
+	FIELD field_1_9845 floatingItemAnimationManager Lnet/minecraft/class_1_1450;
+	FIELD field_1_9846 nauseaWobbleAngleChange F
+	FIELD field_1_9847 nauseaWobbleAngle F
 	FIELD field_3913 input Lnet/minecraft/class_744;
 	FIELD field_3914 lastRenderPitch F
 	FIELD field_3915 usingItem Z
@@ -57,6 +61,16 @@ CLASS net/minecraft/class_746 net/minecraft/client/network/ClientPlayerEntity
 	METHOD method_1_7639 getPostEffects ()Ljava/util/List;
 	METHOD method_1_7640 setPostEffects (Ljava/util/List;)V
 		ARG 1 postEffects
+	METHOD method_1_9571 onLifeSaved (Lnet/minecraft/class_1799;)V
+		ARG 1 deathProtector
+	METHOD method_1_9572 getArmsAnimationManager ()Lnet/minecraft/class_1_1455;
+	METHOD method_1_9573 getNauseaWobbleAngle (F)F
+		ARG 1 tickProgress
+	METHOD method_1_9574 getFloatingItemAnimationManager ()Lnet/minecraft/class_1_1450;
+	METHOD method_1_9575 resetHandReadyProgreess (Lnet/minecraft/class_1268;)V
+		ARG 1 hand
+	METHOD method_1_9576 resetRendering ()V
+	METHOD method_1_9577 updateNauseaWobbleAngle ()V
 	METHOD method_3130 getRecipeBook ()Lnet/minecraft/class_299;
 	METHOD method_3132 openRidingInventory ()V
 	METHOD method_3133 startRidingJump ()V

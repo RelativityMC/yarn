@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_1464 net/minecraft/client/realms/gui/screen/MenuListRealmsScreen
+	FIELD field_1_9939 MENU_LIST_BACKGROUND_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_9940 contents Lnet/minecraft/class_8132;
+	METHOD method_1_9676 drawsBackgroundAndSeparators ()Z

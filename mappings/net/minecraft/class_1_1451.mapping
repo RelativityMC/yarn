@@ -1,5 +1,0 @@
-CLASS net/minecraft/class_1_1451
-	METHOD method_1_7887 move (Lnet/minecraft/class_243;)V
-	METHOD method_1_7889 getStance ()Lnet/minecraft/class_1_1193;
-	METHOD method_66270 isInterpolating ()Z
-	METHOD method_66271 tick ()V

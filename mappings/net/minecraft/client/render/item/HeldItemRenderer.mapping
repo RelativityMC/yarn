@@ -27,18 +27,28 @@ CLASS net/minecraft/class_759 net/minecraft/client/render/item/HeldItemRenderer
 	FIELD field_32758 ARM_HOLDING_ITEM_SECOND_Y_ANGLE_MULTIPLIER F
 	METHOD <init> (Lnet/minecraft/class_310;)V
 		ARG 1 client
-	METHOD method_3216 renderArm (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;ILnet/minecraft/class_1306;Lnet/minecraft/class_1_1460;)V
+	METHOD method_1_9684 renderArm (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;ILnet/minecraft/class_1306;Lnet/minecraft/class_1_1460;)V
 		ARG 1 matrices
 		ARG 2 queue
 		ARG 3 light
 		ARG 4 arm
+		ARG 5 overlayRenderState
+	METHOD method_3216 renderArmHoldingMap (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;ILnet/minecraft/class_1306;Lnet/minecraft/class_1_1460;)V
+		ARG 1 matrices
+		ARG 2 queue
+		ARG 3 light
+		ARG 4 arm
+		ARG 5 overlayRenderState
 	METHOD method_3217 applySwingOffset (Lnet/minecraft/class_4587;Lnet/minecraft/class_1306;F)V
 		ARG 1 matrices
 		ARG 2 arm
 		ARG 3 swingProgress
 	METHOD method_3218 applyEatOrDrinkTransformation (Lnet/minecraft/class_4587;FLnet/minecraft/class_1306;FI)V
 		ARG 1 matrices
+		ARG 2 tickProgress
 		ARG 3 arm
+		ARG 4 useTimeLeft
+		ARG 5 maxUseTime
 	METHOD method_3219 renderArmHoldingItem (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;IFFLnet/minecraft/class_1306;Lnet/minecraft/class_1_1460;)V
 		ARG 1 matrices
 		ARG 2 queue
@@ -46,6 +56,7 @@ CLASS net/minecraft/class_759 net/minecraft/client/render/item/HeldItemRenderer
 		ARG 4 equipProgress
 		ARG 5 swingProgress
 		ARG 6 arm
+		ARG 7 overlayRenderState
 	METHOD method_3222 renderMapInOneHand (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;IFLnet/minecraft/class_1306;FLnet/minecraft/class_1799;Lnet/minecraft/class_1_1460;Lnet/minecraft/class_1_1475;)V
 		ARG 1 matrices
 		ARG 2 queue
@@ -54,11 +65,15 @@ CLASS net/minecraft/class_759 net/minecraft/client/render/item/HeldItemRenderer
 		ARG 5 arm
 		ARG 6 swingProgress
 		ARG 7 stack
+		ARG 8 overlayRenderState
+		ARG 9 armsRenderState
 	METHOD method_3223 renderFirstPersonMap (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;ILnet/minecraft/class_1799;ZLnet/minecraft/class_1_1475;)V
 		ARG 1 matrices
 		ARG 2 queue
 		ARG 3 swingProgress
 		ARG 4 stack
+		ARG 5 main
+		ARG 6 armsRenderState
 	METHOD method_3224 applyEquipOffset (Lnet/minecraft/class_4587;Lnet/minecraft/class_1306;F)V
 		ARG 1 matrices
 		ARG 2 arm
@@ -66,8 +81,12 @@ CLASS net/minecraft/class_759 net/minecraft/client/render/item/HeldItemRenderer
 	METHOD method_3227 getMapAngle (F)F
 		ARG 1 tickProgress
 	METHOD method_3228 renderFirstPersonItem (Lnet/minecraft/class_1_1460;Lnet/minecraft/class_1_1475;FFLnet/minecraft/class_1268;FLnet/minecraft/class_1799;FLnet/minecraft/class_4587;Lnet/minecraft/class_11659;I)V
+		ARG 1 overlayRenderState
+		ARG 2 armsRenderState
+		ARG 3 tickProgress
 		ARG 4 pitch
 		ARG 5 hand
+		ARG 6 swingProgress
 		ARG 7 item
 		ARG 8 equipProgress
 		ARG 9 matrices
@@ -80,15 +99,21 @@ CLASS net/minecraft/class_759 net/minecraft/client/render/item/HeldItemRenderer
 		ARG 4 pitch
 		ARG 5 equipProgress
 		ARG 6 swingProgress
+		ARG 7 overlayRenderState
+		ARG 8 armsRenderState
 	METHOD method_22976 renderItem (FLnet/minecraft/class_4587;Lnet/minecraft/class_11659;Lnet/minecraft/class_1_1460;Lnet/minecraft/class_1_1475;)V
 		ARG 1 tickProgress
 		ARG 2 matrices
 		ARG 3 queue
+		ARG 4 overlayRenderState
+		ARG 5 armsRenderState
 	METHOD method_49340 applyBrushTransformation (Lnet/minecraft/class_4587;FLnet/minecraft/class_1306;F)V
 		ARG 1 matrices
 		ARG 2 tickProgress
 		ARG 3 arm
+		ARG 4 useTimeLeft
 	METHOD method_65816 swingArm (FLnet/minecraft/class_4587;ILnet/minecraft/class_1306;)V
+		ARG 1 swingProgress
 		ARG 2 matrices
 		ARG 3 side
 			COMMENT {@code 1} for the right arm; {@code 1} for the left arm

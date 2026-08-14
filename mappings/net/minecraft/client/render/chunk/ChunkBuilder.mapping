@@ -72,6 +72,7 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 			ARG 2 blockRenderLayer
 		METHOD method_1_5084 rebuildAsync (Lnet/minecraft/class_853;)V
 			ARG 1 region
+		METHOD method_1_9670 setFadeInTime ()V
 		METHOD method_3663 cancel ()V
 		METHOD method_3670 getOrigin ()Lnet/minecraft/class_2338;
 		METHOD method_3674 createRebuildTask (Lnet/minecraft/class_853;)Lnet/minecraft/class_846$class_851$class_4577;
@@ -95,6 +96,7 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 		METHOD method_72052 getCurrentRenderData ()Lnet/minecraft/class_11517;
 		METHOD method_76298 getOpacity (JJ)F
 			ARG 1 timeMs
+			ARG 3 chunkFadeMs
 		CLASS class_4577 Task
 			FIELD field_20836 cancelled Ljava/util/concurrent/atomic/AtomicBoolean;
 			FIELD field_53959 prioritized Z

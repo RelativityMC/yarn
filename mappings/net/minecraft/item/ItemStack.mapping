@@ -93,6 +93,7 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 		ARG 5 type
 	METHOD method_1_8457 (Lnet/minecraft/class_9299;)Lnet/minecraft/class_9299;
 		ARG 0 component
+	METHOD method_1_9394 getInteractAnimation ()Lnet/minecraft/class_12126;
 	METHOD method_7909 getItem ()Lnet/minecraft/class_1792;
 		COMMENT {@return the item of this stack}
 		COMMENT
@@ -583,7 +584,7 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 		ARG 3 hand
 	METHOD method_74887 set (Lnet/minecraft/class_9336;)Ljava/lang/Object;
 		ARG 1 component
-	METHOD method_75218 getSwingAnimation ()Lnet/minecraft/class_12126;
+	METHOD method_75218 getAttackAnimation ()Lnet/minecraft/class_12126;
 	METHOD method_75220 getDamageSource (Lnet/minecraft/class_1309;)Lnet/minecraft/class_1282;
 		ARG 1 attacker
 	METHOD method_75221 (Lnet/minecraft/class_1309;Lnet/minecraft/class_6880;)Lnet/minecraft/class_1282;

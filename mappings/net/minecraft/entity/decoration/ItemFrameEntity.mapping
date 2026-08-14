@@ -3,6 +3,10 @@ CLASS net/minecraft/class_1533 net/minecraft/entity/decoration/ItemFrameEntity
 	FIELD field_7130 ITEM_STACK Lnet/minecraft/class_2940;
 	FIELD field_7132 ROTATION Lnet/minecraft/class_2940;
 	FIELD field_22476 fixed Z
+	FIELD field_30454 NUM_ROTATIONS I
+	FIELD field_51592 THICKNESS F
+	FIELD field_51593 SIZE_XZ F
+	FIELD field_51594 SIZE_Y F
 	FIELD field_57650 DEFAULT_ITEM_ROTATION B
 	FIELD field_57651 DEFAULT_ITEM_DROP_CHANCE F
 	FIELD field_57652 DEFAULT_INVISIBLE Z

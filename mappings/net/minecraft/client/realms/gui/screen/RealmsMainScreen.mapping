@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMainScreen
+	FIELD field_1_9849 PURCHASE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_9850 JOIN_REALM_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_9851 joinRealmButton Lnet/minecraft/class_4185;
 	FIELD field_19464 regionsPinged Z
 	FIELD field_19475 LOGGER Lorg/slf4j/Logger;
 	FIELD field_19477 rateLimiter Lcom/google/common/util/concurrent/RateLimiter;
@@ -57,6 +60,9 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 	FIELD field_54806 HARDCORE_ICON_TEXTURE Lnet/minecraft/class_2960;
 	METHOD <init> (Lnet/minecraft/class_437;)V
 		ARG 1 parent
+	METHOD method_1_9580 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_1_9581 showJoinRealmsScreen ()V
 	METHOD method_20853 play (Lnet/minecraft/class_4877;Lnet/minecraft/class_437;)V
 		ARG 0 serverData
 		ARG 1 parent
@@ -77,6 +83,8 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 	METHOD method_25001 isOwnedNotExpired (Lnet/minecraft/class_4877;)Z
 		ARG 1 serverData
 	METHOD method_38503 getSelectedServer ()Lnet/minecraft/class_4877;
+	METHOD method_38504 (Lnet/minecraft/class_4877;Lnet/minecraft/class_8816;)V
+		ARG 2 popup
 	METHOD method_38505 removeSelection ()V
 	METHOD method_44611 createPeriodicRunnersManager (Lnet/minecraft/class_7578;)Lnet/minecraft/class_7581$class_7584;
 		ARG 1 periodicCheckers
@@ -113,6 +121,8 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 		ARG 1 availabilityInfo
 	METHOD method_52635 onLoadStatusChange (Lnet/minecraft/class_4325$class_8650;)V
 		ARG 1 loadStatus
+	METHOD method_52636 (Lnet/minecraft/class_4325;Lnet/minecraft/class_339;)V
+		ARG 1 child
 	METHOD method_52637 drawEnvironmentText (Lnet/minecraft/class_332;Ljava/lang/String;I)V
 		ARG 1 context
 		ARG 2 text
@@ -121,8 +131,12 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 		ARG 1 button
 	METHOD method_52639 (Ljava/lang/Boolean;)V
 		ARG 1 trialAvailable
+	METHOD method_52640 (Lnet/minecraft/class_2561;Lnet/minecraft/class_4185;)V
+		ARG 2 button
 	METHOD method_52641 makeLayoutFor (Lnet/minecraft/class_4325$class_8650;)Lnet/minecraft/class_8132;
 		ARG 1 loadStatus
+	METHOD method_52642 (Lnet/minecraft/class_4325;Lnet/minecraft/class_339;)V
+		ARG 1 child
 	METHOD method_52643 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
 	METHOD method_52644 makeInnerLayout (Lnet/minecraft/class_4325$class_8650;)Lnet/minecraft/class_8133;
@@ -161,6 +175,8 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 	METHOD method_54328 (Lnet/minecraft/class_5676;Ljava/lang/Boolean;)V
 		ARG 1 button
 		ARG 2 snapshot
+	METHOD method_54329 (Lnet/minecraft/class_437;Lnet/minecraft/class_4877;Lnet/minecraft/class_8816;)V
+		ARG 2 button
 	METHOD method_54330 isSnapshotRealmsEligible ()Z
 	METHOD method_54561 getVersionText (Ljava/lang/String;I)Lnet/minecraft/class_2561;
 		ARG 0 version
@@ -176,6 +192,8 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 	METHOD method_64834 getGameModeText (IZ)Lnet/minecraft/class_2561;
 		ARG 0 id
 		ARG 1 hardcore
+	METHOD method_73335 (Ljava/lang/String;Z)V
+		ARG 2 confirmed
 	CLASS class_4329 RealmSelectionList
 		METHOD method_64840 refresh (Lnet/minecraft/class_4325;)V
 			ARG 1 mainScreen
@@ -321,6 +339,8 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 		FIELD field_46679 server Lnet/minecraft/class_4877;
 		METHOD <init> (Lnet/minecraft/class_4325;Lnet/minecraft/class_4877;)V
 			ARG 2 server
+		METHOD method_54343 (Lnet/minecraft/class_8816;)V
+			ARG 1 button
 		METHOD method_54344 showPopup ()V
 	CLASS class_8841 ParentRealmSelectionListEntry
 		FIELD field_46684 server Lnet/minecraft/class_4877;

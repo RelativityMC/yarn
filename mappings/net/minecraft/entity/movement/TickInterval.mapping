@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1_1448 net/minecraft/entity/movement/TickInterval
+	FIELD field_1_9853 UNTRACKED Lnet/minecraft/class_1_1448;
+	METHOD method_1_9582 getNextTrackingTick (I)I
+		ARG 1 tick
+	METHOD method_1_9583 of (I)Lnet/minecraft/class_1_1448;
+		ARG 0 intervalTicks
+	METHOD method_1_9584 isTrackingTick (I)Z
+		ARG 1 tick

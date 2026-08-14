@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_1_1450 net/minecraft/client/render/entity/FloatingItemAnimationManager
+	FIELD field_1_9857 LIFESPAN_TICKS I
+	FIELD field_1_9858 deathProtector Lnet/minecraft/class_1799;
+	FIELD field_1_9859 offsetX F
+	FIELD field_1_9860 offsetY F
+	FIELD field_1_9861 ticksRemaining I
+	METHOD method_1_9587 setItem (Lnet/minecraft/class_1799;Lnet/minecraft/class_5819;)V
+		ARG 1 deathProtector
+		ARG 2 random
+	METHOD method_1_9588 isActive ()Z
+	METHOD method_1_9589 getItem ()Lnet/minecraft/class_1799;
+	METHOD method_1_9590 getXOffset ()F
+	METHOD method_1_9591 getYOffset ()F
+	METHOD method_1_9592 reset ()V
+	METHOD method_1_9593 tick ()V
+	METHOD method_1_9594 getRemainingTicks ()I

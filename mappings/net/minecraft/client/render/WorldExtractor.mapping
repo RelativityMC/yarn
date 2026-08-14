@@ -48,6 +48,8 @@ CLASS net/minecraft/class_1_816 net/minecraft/client/render/WorldExtractor
 		ARG 3 worldRenderState
 	METHOD method_1_5008 extractEntities (Lnet/minecraft/class_4184;Lnet/minecraft/class_4604;Lnet/minecraft/class_9779;Lnet/minecraft/class_11658;)V
 		ARG 1 camera
+		ARG 2 frustum
+		ARG 3 renderTickCounter
 		ARG 4 worldRenderState
 	METHOD method_1_5009 getLastViewDistance ()D
 	METHOD method_1_5010 recreateTerrainSampler ()V
@@ -90,6 +92,7 @@ CLASS net/minecraft/class_1_816 net/minecraft/client/render/WorldExtractor
 		ARG 6 maxSectionZ
 	METHOD method_1_5020 shouldDrawEntityOutlines (Lnet/minecraft/class_4184;Lnet/minecraft/class_1_1460;)Z
 		ARG 0 camera
+		ARG 1 overlayRenderState
 	METHOD method_1_5021 getSectionCount ()D
 	METHOD method_1_6240 (Lnet/minecraft/class_631;J)V
 		ARG 2 chunkPos
@@ -99,3 +102,17 @@ CLASS net/minecraft/class_1_816 net/minecraft/client/render/WorldExtractor
 		ARG 3 x
 		ARG 5 y
 		ARG 7 z
+		ARG 9 tickProgress
+		ARG 10 chunkFadeMs
+	METHOD method_1_9645 extractOverlays (Lnet/minecraft/class_4184;FLnet/minecraft/class_1_1460;)V
+		ARG 1 camera
+		ARG 2 tickProgress
+		ARG 3 overlayRenderState
+	METHOD method_1_9646 getVisionObstructingBlock (Lnet/minecraft/class_746;Lnet/minecraft/class_4604;)Lnet/minecraft/class_2680;
+		ARG 0 player
+		ARG 1 frustum
+	METHOD method_1_9647 (Lnet/minecraft/class_2680;)Z
+		ARG 0 state
+	METHOD method_1_9648 (Lnet/minecraft/class_1937;Lnet/minecraft/class_238;[Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Lnet/minecraft/class_7928;
+		ARG 3 pos
+		ARG 4 state

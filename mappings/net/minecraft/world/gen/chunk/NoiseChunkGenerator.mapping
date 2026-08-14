@@ -24,6 +24,9 @@ CLASS net/minecraft/class_3754 net/minecraft/world/gen/chunk/NoiseChunkGenerator
 		ARG 14 endY
 	METHOD method_1_7540 (Lnet/minecraft/class_2791;Lnet/minecraft/class_2338$class_2339;Lnet/minecraft/class_2680;)V
 		ARG 2 state
+	METHOD method_1_9673 getGenerationSettings (Lnet/minecraft/class_6780;Lnet/minecraft/class_1923;)Lnet/minecraft/class_5485;
+		ARG 1 biomeSupplier
+		ARG 2 chunkPos
 	METHOD method_26263 sampleHeightmap (Lnet/minecraft/class_5539;Lnet/minecraft/class_7138;IILorg/apache/commons/lang3/mutable/MutableObject;Ljava/util/function/Predicate;)Ljava/util/OptionalInt;
 		ARG 1 world
 		ARG 2 noiseConfig

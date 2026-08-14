@@ -13,6 +13,14 @@ CLASS net/minecraft/class_1676 net/minecraft/entity/projectile/ProjectileEntity
 	FIELD field_63116 checkedForLeftOwner Z
 	METHOD method_1_7439 canBreakBlockAt (Lnet/minecraft/class_2694;)Z
 		ARG 1 pos
+	METHOD method_1_9617 deflect (Lnet/minecraft/class_9109;Lnet/minecraft/class_1297;Lnet/minecraft/class_10583;ZD)Z
+		ARG 1 deflection
+		ARG 2 deflector
+		ARG 3 owner
+		ARG 4 fromAttacker
+		ARG 5 velocityMultiplier
+	METHOD method_1_9618 deflect (Lnet/minecraft/class_1676;)V
+		ARG 1 projectile
 	METHOD method_7432 setOwner (Lnet/minecraft/class_1297;)V
 		ARG 1 owner
 	METHOD method_7454 onEntityHit (Lnet/minecraft/class_3966;)V
@@ -83,9 +91,11 @@ CLASS net/minecraft/class_1676 net/minecraft/entity/projectile/ProjectileEntity
 	METHOD method_59525 onDeflected (Z)V
 		ARG 1 fromAttack
 	METHOD method_59859 deflect (Lnet/minecraft/class_9109;Lnet/minecraft/class_1297;Lnet/minecraft/class_10583;ZLnet/minecraft/class_243;)Z
+		ARG 1 deflection
 		ARG 2 deflector
 		ARG 3 owner
 		ARG 4 fromAttack
+		ARG 5 velocityMultiplier
 	METHOD method_59860 hitOrDeflect (Lnet/minecraft/class_239;)Lnet/minecraft/class_9109;
 		ARG 1 hitResult
 	METHOD method_59959 getKnockback (Lnet/minecraft/class_1309;Lnet/minecraft/class_1282;)Lit/unimi/dsi/fastutil/doubles/DoubleDoubleImmutablePair;

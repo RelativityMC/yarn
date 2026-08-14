@@ -2,6 +2,7 @@ CLASS net/minecraft/class_7138 net/minecraft/world/gen/noise/NoiseConfig
 	FIELD field_1_8127 spawnTargets Ljava/util/List;
 	FIELD field_1_9085 aquifer Ljava/util/Optional;
 	FIELD field_1_9086 oreVeins Ljava/util/List;
+	FIELD field_1_9875 seed J
 	FIELD field_38254 randomDeriver Lnet/minecraft/class_6574;
 	FIELD field_38256 noiseParametersRegistry Lnet/minecraft/class_7871;
 	FIELD field_38257 noiseRouter Lnet/minecraft/class_6953;
@@ -28,6 +29,7 @@ CLASS net/minecraft/class_7138 net/minecraft/world/gen/noise/NoiseConfig
 	METHOD method_1_8682 (Lnet/minecraft/class_7138$class_7271;Lnet/minecraft/class_6955;)Lnet/minecraft/class_6955;
 		ARG 1 vein
 	METHOD method_1_8683 getOreVeins ()Ljava/util/List;
+	METHOD method_1_9612 getSeed ()J
 	METHOD method_41556 create (Lnet/minecraft/class_7871;JZLnet/minecraft/class_2680;ILnet/minecraft/class_6953;Ljava/util/List;Ljava/util/Optional;Ljava/util/List;)Lnet/minecraft/class_7138;
 		ARG 0 noiseParametersLookup
 		ARG 1 seed

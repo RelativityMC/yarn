@@ -30,6 +30,10 @@ CLASS net/minecraft/class_3215 net/minecraft/server/world/ServerChunkManager
 		ARG 10 chunkStatusChangeListener
 	METHOD method_1_6297 isTrackingEntity (I)Z
 		ARG 1 entityId
+	METHOD method_1_9605 sendToOtherNearbyPlayersIf (Lnet/minecraft/class_1297;Lnet/minecraft/class_2596;Ljava/util/function/Predicate;)V
+		ARG 1 entity
+		ARG 2 packet
+		ARG 3 predicate
 	METHOD method_12129 getChunkGenerator ()Lnet/minecraft/class_2794;
 	METHOD method_14096 updatePosition (Lnet/minecraft/class_3222;)V
 		COMMENT Updates the chunk section position of the {@code player}. This can either be a

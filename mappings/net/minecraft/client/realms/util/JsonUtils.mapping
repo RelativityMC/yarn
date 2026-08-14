@@ -1,5 +1,9 @@
 CLASS net/minecraft/class_4431 net/minecraft/client/realms/util/JsonUtils
-	METHOD method_21544 getInstantOr (Ljava/lang/String;Lcom/google/gson/JsonObject;)Ljava/time/Instant;
+	METHOD method_1_9569 getInstantOr (Ljava/lang/String;Lcom/google/gson/JsonObject;Ljava/time/Instant;)Ljava/time/Instant;
+		ARG 0 key
+		ARG 1 node
+		ARG 2 defaultValue
+	METHOD method_21544 getInstantOrEpoch (Ljava/lang/String;Lcom/google/gson/JsonObject;)Ljava/time/Instant;
 		ARG 0 key
 		ARG 1 node
 	METHOD method_21545 getIntOr (Ljava/lang/String;Lcom/google/gson/JsonObject;I)I

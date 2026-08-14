@@ -1,5 +1,8 @@
 CLASS net/minecraft/class_1_1247 net/minecraft/entity/movement/MovementTracker
+	FIELD field_1_9878 TRIVIAL Lnet/minecraft/class_1_1247;
+	METHOD method_1_7894 reset ()V
 	METHOD method_1_7895 getMotionToSyncedPos (Lnet/minecraft/class_243;)Lnet/minecraft/class_1_1198;
 		ARG 1 syncedPos
 	METHOD method_1_7896 commitTickMovement (Lnet/minecraft/class_243;)V
 		ARG 1 syncedPos
+	CLASS class_1_1453 Trivial

@@ -1,0 +1,67 @@
+CLASS net/minecraft/class_1_1473 net/minecraft/client/realms/gui/screen/RealmsInviteCodeEditScreen
+	FIELD field_1_9993 EDIT_ACTIVE_BUTTON_WIDTH I
+	FIELD field_1_9994 INVITE_CODES_EDIT_ACTIVE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_9995 SPACER_WIDTH I
+	FIELD field_1_9996 SLIDER_WIDTH I
+	FIELD field_1_9997 INVITE_CODES_COPY_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_9998 DATE_TIME_FORMATTER Ljava/time/format/DateTimeFormatter;
+	FIELD field_1_9999 INVITE_CODES_DELETE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_10000 INVITE_CODES_EDIT_EXPIRATION_DATE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_10001 FOOTER_HEIGHT I
+	FIELD field_1_10002 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_10003 INVITE_CODES_NEVER_EXPIRES_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_10004 GRID_SPACING I
+	FIELD field_1_10005 INVITE_CODES_EDIT_TITLE Lnet/minecraft/class_2561;
+	FIELD field_1_10006 editActiveButton Lnet/minecraft/class_5676;
+	FIELD field_1_10007 enabled Z
+	FIELD field_1_10008 backButton Lnet/minecraft/class_4185;
+	FIELD field_1_10009 deleteCodeButton Lnet/minecraft/class_4185;
+	FIELD field_1_10010 dirty Z
+	FIELD field_1_10011 expiration Lnet/minecraft/class_1_1467;
+	FIELD field_1_10012 expirationSlider Lnet/minecraft/class_1_1473$class_1_1474;
+	FIELD field_1_10013 code Lnet/minecraft/class_1_1447;
+	FIELD field_1_10014 parent Lnet/minecraft/class_1_1470;
+	FIELD field_1_10015 serverId J
+	FIELD field_1_10016 doneButton Lnet/minecraft/class_4185;
+	METHOD <init> (Lnet/minecraft/class_1_1470;JLnet/minecraft/class_1_1447;)V
+		ARG 1 parent
+		ARG 2 serverId
+		ARG 4 code
+	METHOD method_1_9738 getExpirationTimeText ()Lnet/minecraft/class_2561;
+	METHOD method_1_9739 reportException (Lnet/minecraft/class_4355;Ljava/lang/String;)V
+		ARG 1 ex
+		ARG 2 message
+	METHOD method_1_9741 (Lnet/minecraft/class_5676;Ljava/lang/Boolean;)V
+		ARG 1 button
+		ARG 2 value
+	METHOD method_1_9742 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_1_9743 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_1_9744 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_1_9745 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_1_9746 (Lnet/minecraft/class_1_1473;Lnet/minecraft/class_339;)V
+		ARG 1 child
+	METHOD method_1_9747 (Lnet/minecraft/class_4341;)V
+		ARG 1 client
+	METHOD method_1_9748 (Lnet/minecraft/class_4355;)V
+		ARG 1 ex
+	METHOD method_1_9750 (Ljava/time/Instant;Lnet/minecraft/class_4341;)V
+		ARG 2 client
+	METHOD method_1_9751 (Lnet/minecraft/class_4355;)V
+		ARG 1 ex
+	METHOD method_1_9753 copyInviteCode ()V
+	METHOD method_1_9754 deleteInviteCode ()V
+	METHOD method_1_9755 onDone ()V
+	METHOD method_1_9756 setInviteCodeActive (Z)V
+		ARG 1 active
+	METHOD method_1_9757 setActive (Z)V
+		ARG 1 active
+	CLASS class_1_1474 ExpirationSliderWidget
+		FIELD field_1_10018 values [Lnet/minecraft/class_1_1467;
+		METHOD <init> (Lnet/minecraft/class_1_1473;I)V
+			ARG 2 width
+		METHOD method_1_9758 getVisualProgress (I)D
+			ARG 1 ordinal

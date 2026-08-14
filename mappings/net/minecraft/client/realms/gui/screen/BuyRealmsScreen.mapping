@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_8656 net/minecraft/client/realms/gui/screen/BuyRealmsScreen
+	FIELD field_1_7613 IMAGE_RESOURCE_FINDER Lnet/minecraft/class_7654;
 	FIELD field_45267 realmsImages Ljava/util/List;
 	FIELD field_45268 parent Lnet/minecraft/class_437;
 	FIELD field_45269 trialAvailable Z

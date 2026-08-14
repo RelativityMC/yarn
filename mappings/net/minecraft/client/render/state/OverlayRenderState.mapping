@@ -1,0 +1,28 @@
+CLASS net/minecraft/class_1_1460 net/minecraft/client/render/state/OverlayRenderState
+	FIELD field_1_9920 player Lnet/minecraft/class_10055;
+	FIELD field_1_9921 obstructionOverlay Lnet/minecraft/class_1_1460$class_1_1461;
+	FIELD field_1_9922 cameraY D
+	FIELD field_1_9923 arms Lnet/minecraft/class_1_1475;
+	FIELD field_1_9924 hasPlayer Z
+	FIELD field_1_9925 showUnderwaterOverlay Z
+	FIELD field_1_9926 onFire Z
+	FIELD field_1_9927 submergedInWater Z
+	FIELD field_1_9928 floatingItem Lnet/minecraft/class_1_1460$class_1_1462;
+	FIELD field_1_9929 nauseaFadeFactor F
+	FIELD field_1_9930 nauseaIntensity F
+	FIELD field_1_9931 nauseaWobbleAngle F
+	FIELD field_1_9932 underwaterOverlay Lnet/minecraft/class_1_1460$class_1_1463;
+	METHOD method_1_9672 clear ()V
+	CLASS class_1_1461 ObstructionOverlay
+	CLASS class_1_1462 FloatingItemOverlay
+		FIELD field_1_9933 item Lnet/minecraft/class_1799;
+		FIELD field_1_9934 itemState Lnet/minecraft/class_10444;
+		FIELD field_1_9935 offsetX F
+		FIELD field_1_9936 offsetY F
+		FIELD field_1_9937 remainingTicks I
+		METHOD <init> (Lnet/minecraft/class_1799;IFF)V
+			ARG 1 item
+			ARG 2 remainingTicks
+			ARG 3 offsetX
+			ARG 4 offsetY
+	CLASS class_1_1463 UnderwaterOverlay

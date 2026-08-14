@@ -7,6 +7,10 @@ CLASS net/minecraft/class_4766 net/minecraft/world/biome/source/MultiNoiseBiomeS
 	FIELD field_42985 PRESET_CODEC Lcom/mojang/serialization/MapCodec;
 	METHOD <init> (Lcom/mojang/datafixers/util/Either;)V
 		ARG 1 biomeEntries
+	METHOD method_1_9651 (Lnet/minecraft/class_6544$class_6552;III)Lnet/minecraft/class_6880;
+		ARG 2 biomeX
+		ARG 3 biomeY
+		ARG 4 biomeZ
 	METHOD method_38167 getBiomeAtPoint (Lnet/minecraft/class_6544$class_6553;)Lnet/minecraft/class_6880;
 		ARG 1 point
 	METHOD method_38168 matchesInstance (Lnet/minecraft/class_5321;)Z

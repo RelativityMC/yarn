@@ -94,6 +94,11 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 3 layer1
 	METHOD method_1_6974 (Lnet/minecraft/class_4944;)V
 		ARG 0 textureMap
+	METHOD method_1_8137 registerStrawBed ()V
+	METHOD method_1_8138 createStrawBedBlockState (Lnet/minecraft/class_2248;Lnet/minecraft/class_807;Lnet/minecraft/class_807;)Lnet/minecraft/class_4917;
+		ARG 0 strawBedBlock
+		ARG 1 headModel
+		ARG 2 footModel
 	METHOD method_25508 registerChorusPlant ()V
 	METHOD method_25509 registerComposter ()V
 	METHOD method_25510 registerDaylightDetector ()V

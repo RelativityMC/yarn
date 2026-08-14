@@ -14,6 +14,12 @@ CLASS net/minecraft/class_327 net/minecraft/client/font/TextRenderer
 	FIELD field_61529 fonts Lnet/minecraft/class_327$class_11602;
 	METHOD <init> (Lnet/minecraft/class_327$class_11602;)V
 		ARG 1 fonts
+	METHOD method_1_9557 createDrawableRect (FFFFI)Lnet/minecraft/class_11767;
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 x1
+		ARG 4 y1
+		ARG 5 color
 	METHOD method_1714 trimToWidth (Lnet/minecraft/class_5348;I)Lnet/minecraft/class_5348;
 		COMMENT Trims a string to be at most {@code maxWidth} wide.
 		COMMENT

@@ -302,8 +302,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_1_9563 (Ljava/util/List;Lnet/minecraft/class_3222;)Z
 		ARG 1 player
 	METHOD method_1_9564 addVelocity (Lnet/minecraft/class_243;)V
-		COMMENT I guess that’s what happens when you vibe-code the world’s most popular
-		COMMENT video game!
 		ARG 1 vec
 	METHOD method_5622 onBlockCollision (Lnet/minecraft/class_2680;)V
 		COMMENT Called when this entity's collision box intersects {@code state}.

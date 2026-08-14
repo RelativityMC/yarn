@@ -1,4 +1,4 @@
-CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
+CLASS net/minecraft/server/MinecraftServer
 	COMMENT Represents a logical Minecraft server.
 	COMMENT
 	COMMENT <p>Since Minecraft uses a Client-Server architecture for the game, the server processes all logical game functions.
@@ -525,7 +525,7 @@ CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
 		ARG 1 world
 	METHOD method_76677 processPacketsAndTick (Z)V
 		ARG 1 sprint
-	CLASS 1 1
+	CLASS 1
 		FIELD field_61875 chunkLoadingManager Lnet/minecraft/class_3898;
 		FIELD field_61876 spawnChunkX I
 		FIELD field_61877 spawnChunkZ I

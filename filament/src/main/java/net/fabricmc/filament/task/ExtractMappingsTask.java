@@ -25,6 +25,6 @@ public abstract class ExtractMappingsTask extends FilamentTask implements WithFi
 	@TaskAction
 	public void run() throws IOException {
 		File mappingsJar = getInputFiles().getSingleFile();
-		Files.write(this.getOutputPath(), ZipUtils.unpack(mappingsJar.toPath(), "mappings/mappings.tiny"), StandardOpenOption.CREATE_NEW, StandardOpenOption.TRUNCATE_EXISTING);
+		Files.write(this.getOutputPath(), ZipUtils.unpack(mappingsJar.toPath(), "mappings/mappings.tiny"), StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
 	}
 }

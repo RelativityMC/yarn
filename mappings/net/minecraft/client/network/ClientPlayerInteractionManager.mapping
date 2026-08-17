@@ -35,7 +35,7 @@ CLASS net/minecraft/class_636 net/minecraft/client/network/ClientPlayerInteracti
 	METHOD method_2900 clickButton (II)V
 		ARG 1 syncId
 		ARG 2 buttonId
-	METHOD method_2901 createPlayer (Lnet/minecraft/class_638;Lnet/minecraft/class_3469;Lnet/minecraft/class_299;Lnet/minecraft/class_10185;Z)Lnet/minecraft/class_746;
+	METHOD method_2901 createPlayer (Lnet/minecraft/class_638;Lnet/minecraft/class_3469;Lnet/minecraft/class_299;Lnet/minecraft/class_10185;ZLnet/minecraft/class_1_1450;)Lnet/minecraft/class_746;
 		ARG 1 world
 		ARG 2 statHandler
 		ARG 3 recipeBook
@@ -88,7 +88,7 @@ CLASS net/minecraft/class_636 net/minecraft/client/network/ClientPlayerInteracti
 	METHOD method_2927 tick ()V
 	METHOD method_2928 isFlyingLocked ()Z
 	METHOD method_28107 getPreviousGameMode ()Lnet/minecraft/class_1934;
-	METHOD method_29357 createPlayer (Lnet/minecraft/class_638;Lnet/minecraft/class_3469;Lnet/minecraft/class_299;)Lnet/minecraft/class_746;
+	METHOD method_29357 createPlayer (Lnet/minecraft/class_638;Lnet/minecraft/class_3469;Lnet/minecraft/class_299;Lnet/minecraft/class_1_1450;)Lnet/minecraft/class_746;
 		ARG 1 world
 		ARG 2 statHandler
 		ARG 3 recipeBook

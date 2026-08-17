@@ -81,8 +81,6 @@ CLASS net/minecraft/class_2586 net/minecraft/block/entity/BlockEntity
 		COMMENT <p>This is used during chunk loading. This can fail if {@code nbt} has an improper or
 		COMMENT unregistered {@code id}, or if {@link #readNbt} throws an exception; in these cases,
 		COMMENT this logs an error and returns {@code null}.
-		ARG 0 pos
-		ARG 1 state
 		ARG 2 nbt
 		ARG 3 registries
 	METHOD method_11007 writeData (Lnet/minecraft/class_11372;)V

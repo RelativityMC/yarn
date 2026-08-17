@@ -1,16 +1,8 @@
 CLASS net/minecraft/class_2885 net/minecraft/network/packet/c2s/play/PlayerInteractBlockC2SPacket
-	FIELD field_13134 hand Lnet/minecraft/class_1268;
-	FIELD field_17602 blockHitResult Lnet/minecraft/class_3965;
-	FIELD field_38049 sequence I
+	FIELD comp_1_1634 hand Lnet/minecraft/class_1268;
+	FIELD comp_1_1635 blockHitResult Lnet/minecraft/class_3965;
+	FIELD comp_1_1636 sequence I
 	FIELD field_48225 CODEC Lnet/minecraft/class_9139;
-	METHOD <init> (Lnet/minecraft/class_1268;Lnet/minecraft/class_3965;I)V
-		ARG 1 hand
-		ARG 2 blockHitResult
-		ARG 3 sequence
-	METHOD <init> (Lnet/minecraft/class_2540;)V
-		ARG 1 buf
-	METHOD method_12543 getBlockHitResult ()Lnet/minecraft/class_3965;
-	METHOD method_12546 getHand ()Lnet/minecraft/class_1268;
-	METHOD method_42080 getSequence ()I
-	METHOD method_56005 write (Lnet/minecraft/class_2540;)V
-		ARG 1 buf
+	METHOD comp_1_1634 hand ()Lnet/minecraft/class_1268;
+	METHOD comp_1_1635 blockHitResult ()Lnet/minecraft/class_3965;
+	METHOD comp_1_1636 sequence ()I

@@ -19,7 +19,7 @@ plugins {
 	id 'net.fabricmc.filament'
 }
 
-def minecraft_version = "26.3-snapshot-8"
+def minecraft_version = "26.3-snapshot-9"
 
 filament {
 	minecraftVersion = minecraft_version
@@ -54,11 +54,16 @@ repositories {
 		name = "Mojang"
 		url = 'https://libraries.minecraft.net/'
 	}
+	maven {
+		name = "RelativityMC Repository"
+		url = "https://repo.codemc.io/repository/relativitymc/"
+	}
 	mavenLocal()
 }
 
 configurations {
 	asm
+	intermediaryMappings
 	enigmaRuntime {
 		extendsFrom asm
 	}
@@ -70,6 +75,8 @@ def unpickMetaFile = file("unpick-definitions/unpick.json")
 
 dependencies {
 	minecraftLibraries "org.jetbrains:annotations:${project.jetbrains_annotations_version}"
+
+	intermediaryMappings "org.relativitymc:intermediary:${minecraft_version}"
 
 	enigmaRuntime "cuchaz:enigma-swing:${project.enigma_version}"
 	enigmaRuntime "net.fabricmc:cfr:${project.cfr_version}"
@@ -106,6 +113,7 @@ def minecraftLibraries = configurations.minecraftLibraries
 
 import cuchaz.enigma.command.CheckMappingsCommand
 import net.fabricmc.filament.task.DownloadTask
+import net.fabricmc.filament.task.ExtractMappingsTask
 import net.fabricmc.filament.task.MapJarTask
 import net.fabricmc.filament.task.annotations.CheckAnnotationsTask
 import net.fabricmc.filament.task.annotations.RemapAnnotationsTask
@@ -130,10 +138,20 @@ import groovy.xml.XmlSlurper
 
 import java.util.zip.GZIPOutputStream
 
-tasks.register('downloadIntermediary', DownloadTask) {
-	group = buildMappingGroup
-	url = "https://github.com/RelativityMC/intermediary/raw/master/mappings/${minecraft_version}.tiny"
-	output = new File(cacheFilesMinecraft, "${minecraft_version}-intermediary.tiny")
+def useMavenForIntermediary = true
+
+if (useMavenForIntermediary) {
+	tasks.register('downloadIntermediary', ExtractMappingsTask) {
+		group = buildMappingGroup
+		inputFiles.from(configurations.intermediaryMappings)
+		output = new File(cacheFilesMinecraft, "${minecraft_version}-intermediary.tiny")
+	}
+} else {
+	tasks.register('downloadIntermediary', DownloadTask) {
+		group = buildMappingGroup
+		url = "https://github.com/RelativityMC/intermediary/raw/master/mappings/${minecraft_version}.tiny"
+		output = new File(cacheFilesMinecraft, "${minecraft_version}-intermediary.tiny")
+	}
 }
 
 tasks.register('mapIntermediaryJar', MapJarTask) {

@@ -11,8 +11,8 @@ CLASS net/minecraft/class_1676 net/minecraft/entity/projectile/ProjectileEntity
 	FIELD field_57743 DEFAULT_SHOT Z
 	FIELD field_60558 owner Lnet/minecraft/class_10583;
 	FIELD field_63116 checkedForLeftOwner Z
-	METHOD method_1_7439 canBreakBlockAt (Lnet/minecraft/class_2694;)Z
-		ARG 1 pos
+	METHOD method_1_7439 canBreakBlockAt (Lnet/minecraft/class_3218;Lnet/minecraft/class_2694;)Z
+		ARG 2 pos
 	METHOD method_1_9617 deflect (Lnet/minecraft/class_9109;Lnet/minecraft/class_1297;Lnet/minecraft/class_10583;ZD)Z
 		ARG 1 deflection
 		ARG 2 deflector

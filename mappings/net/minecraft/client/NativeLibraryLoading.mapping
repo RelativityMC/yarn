@@ -22,7 +22,6 @@ CLASS net/minecraft/class_1_741 net/minecraft/client/NativeLibraryLoading
 	METHOD method_1_4476 loadOpenAl ()V
 	METHOD method_1_4477 loadOpenGl ()V
 	METHOD method_1_4478 loadStb ()V
-	METHOD method_1_4479 loadTinyFd ()V
 	METHOD method_1_4480 getStdoutSupplier ()Ljava/util/function/Supplier;
 	METHOD method_1_4481 createFileLock (Ljava/nio/channels/FileChannel;)Ljava/nio/channels/FileLock;
 		ARG 0 channel

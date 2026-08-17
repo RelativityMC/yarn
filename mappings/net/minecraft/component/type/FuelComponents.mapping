@@ -12,6 +12,6 @@ CLASS net/minecraft/class_1_1293 net/minecraft/component/type/FuelComponents
 		ARG 0 mapCodec
 	METHOD method_1_8207 (Lnet/minecraft/class_5658;)Lcom/mojang/datafixers/util/Either;
 		ARG 0 provider
-	METHOD method_1_8983 cooking (Lnet/minecraft/class_7871;I)Lnet/minecraft/class_5658;
+	METHOD method_1_8983 cooking (Lnet/minecraft/class_7871;Lnet/minecraft/class_6880$class_6883;Lnet/minecraft/class_6880$class_6883;I)Lnet/minecraft/class_5658;
 		ARG 0 lootConditionLookup
-		ARG 1 ticks
+		ARG 3 ticks

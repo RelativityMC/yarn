@@ -518,21 +518,6 @@ CLASS net/minecraft/class_2540 net/minecraft/network/PacketByteBuf
 		COMMENT @see #writeEnumConstant(Enum)
 		ARG 1 enumClass
 			COMMENT the enum class, for constant lookup
-	METHOD method_17813 writeBlockHitResult (Lnet/minecraft/class_3965;)V
-		COMMENT Writes a block hit result to this buf. A block hit result is represented
-		COMMENT by a block position, a direction enum constant, 3 floats for the hit
-		COMMENT offset position, and a boolean for whether the hit was inside a block.
-		COMMENT
-		COMMENT @see #readBlockHitResult()
-		ARG 1 hitResult
-			COMMENT the block hit result to write
-	METHOD method_17814 readBlockHitResult ()Lnet/minecraft/class_3965;
-		COMMENT Reads a block hit result from this buf. A block hit result is represented
-		COMMENT by a block position, a direction enum constant, 3 floats for the hit
-		COMMENT offset position, and a boolean for whether the hit was inside a block.
-		COMMENT
-		COMMENT @return the read block hit result
-		COMMENT @see #writeBlockHitResult(BlockHitResult)
 	METHOD method_19772 readString ()Ljava/lang/String;
 		COMMENT Reads a string from this buf. A string is represented by a byte array of
 		COMMENT its UTF-8 data. The string can have a maximum length of {@value

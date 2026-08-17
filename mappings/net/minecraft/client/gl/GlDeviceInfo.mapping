@@ -4,7 +4,7 @@ CLASS net/minecraft/class_11541 net/minecraft/client/gl/GlDeviceInfo
 	FIELD field_1_5275 VIRTUAL_DEVICES Ljava/util/List;
 	FIELD field_63062 writeToBufferIsSlow Z
 	FIELD field_64657 anisotropyHasKnownIssue Z
-	METHOD <init> (Ljava/lang/String;)V
+	METHOD <init> (Ljava/lang/String;Ljava/lang/String;)V
 		ARG 1 glRenderer
 	METHOD method_1_4679 getGpuDeviceInfo (Lorg/lwjgl/opengl/GLCapabilities;ILjava/util/Set;)Lnet/minecraft/class_1_664;
 		ARG 1 capabilities

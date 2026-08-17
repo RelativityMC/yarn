@@ -102,14 +102,12 @@ CLASS net/minecraft/class_759 net/minecraft/client/render/item/HeldItemRenderer
 		ARG 7 overlayRenderState
 		ARG 8 armsRenderState
 	METHOD method_22976 renderItem (FLnet/minecraft/class_4587;Lnet/minecraft/class_11659;Lnet/minecraft/class_1_1460;Lnet/minecraft/class_1_1475;)V
-		ARG 1 tickProgress
 		ARG 2 matrices
 		ARG 3 queue
 		ARG 4 overlayRenderState
 		ARG 5 armsRenderState
 	METHOD method_49340 applyBrushTransformation (Lnet/minecraft/class_4587;FLnet/minecraft/class_1306;F)V
 		ARG 1 matrices
-		ARG 2 tickProgress
 		ARG 3 arm
 		ARG 4 useTimeLeft
 	METHOD method_65816 swingArm (FLnet/minecraft/class_4587;ILnet/minecraft/class_1306;)V

@@ -22,9 +22,8 @@ CLASS net/minecraft/class_10865 net/minecraft/client/gl/GlBackend
 	FIELD field_58039 allowGlArbDirectAccess Z
 	FIELD field_60016 allowGlBufferStorage Z
 	FIELD field_60017 gpuBufferManager Lnet/minecraft/class_11266;
-	METHOD <init> (JLnet/minecraft/class_1_16;)V
-		ARG 1 window
-		ARG 3 debugOptions
+	METHOD <init> (Lnet/minecraft/class_1_9;Lnet/minecraft/class_1_16;)V
+		ARG 2 debugOptions
 	METHOD method_1_5402 getFramebufferManager ()Lnet/minecraft/class_1_894;
 	METHOD method_1_7302 onCompiledPipelineClose ()V
 	METHOD method_68377 getDebugLabelManager ()Lnet/minecraft/class_10861;

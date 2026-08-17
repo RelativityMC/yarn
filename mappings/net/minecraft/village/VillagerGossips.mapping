@@ -6,7 +6,7 @@ CLASS net/minecraft/class_4136 net/minecraft/village/VillagerGossips
 	METHOD method_19059 max (II)I
 		ARG 0 left
 		ARG 1 right
-	METHOD method_19061 shareGossipFrom (Lnet/minecraft/class_4136;Lnet/minecraft/class_5819;I)V
+	METHOD method_19061 shareGossipFrom (Lnet/minecraft/class_4136;Lnet/minecraft/class_5819;I)I
 		ARG 1 from
 		ARG 2 random
 		ARG 3 count

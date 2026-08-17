@@ -1,11 +1,6 @@
 CLASS net/minecraft/class_1_11 net/minecraft/client/window/WindowBackend
 	METHOD method_1_405 getName ()Ljava/lang/String;
-	METHOD method_1_2669 createDevice (JLnet/minecraft/class_1_16;)Lnet/minecraft/class_1_1313;
-		ARG 1 window
-		ARG 3 debugOptions
-	METHOD method_1_2670 reportError (Ljava/lang/String;)V
-		ARG 1 message
-	METHOD method_1_2671 setHints ()V
-	METHOD method_1_8636 getWindowCreationFlags ()J
+	METHOD method_1_2669 createDevice (Lnet/minecraft/class_1_16;)Lnet/minecraft/class_1_1313;
+		ARG 1 debugOptions
 	METHOD method_1_8637 loadGraphics ()V
 	METHOD method_1_8638 unloadGraphics ()V

@@ -21,5 +21,5 @@ CLASS net/minecraft/class_1686 net/minecraft/entity/projectile/thrown/PotionEnti
 		ARG 1 world
 		ARG 2 stack
 		ARG 3 hitResult
-	METHOD method_67149 explodeWaterPotion (Lnet/minecraft/class_3218;)V
+	METHOD method_67149 explodeWaterPotion (Lnet/minecraft/class_3218;Lnet/minecraft/class_1844;)V
 		ARG 1 world

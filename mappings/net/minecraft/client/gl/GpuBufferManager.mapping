@@ -7,7 +7,7 @@ CLASS net/minecraft/class_11266 net/minecraft/client/gl/GpuBufferManager
 		ARG 1 bufferManager
 		ARG 2 usage
 		ARG 3 data
-	METHOD method_71019 create (Lorg/lwjgl/opengl/GLCapabilities;Ljava/util/Set;)Lnet/minecraft/class_11266;
+	METHOD method_71019 create (Lorg/lwjgl/opengl/GLCapabilities;Ljava/util/Set;Z)Lnet/minecraft/class_11266;
 		ARG 0 capabilities
 		ARG 1 usedCapabilities
 	CLASS class_11267 ARBGpuBufferManager

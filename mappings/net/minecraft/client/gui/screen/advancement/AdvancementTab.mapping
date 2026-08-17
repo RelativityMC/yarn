@@ -14,17 +14,13 @@ CLASS net/minecraft/class_454 net/minecraft/client/gui/screen/advancement/Advanc
 	FIELD field_2692 maxPanX I
 	FIELD field_2693 minPanY I
 	FIELD field_2694 minPanX I
-	FIELD field_2695 display Lnet/minecraft/class_185;
 	FIELD field_2696 rootWidget Lnet/minecraft/class_456;
 	FIELD field_2697 icon Lnet/minecraft/class_1799;
-	FIELD field_46142 root Lnet/minecraft/class_8781;
-	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_457;Lnet/minecraft/class_453;ILnet/minecraft/class_8781;Lnet/minecraft/class_185;)V
+	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_457;Lnet/minecraft/class_453;ILnet/minecraft/class_456;Lnet/minecraft/class_1_107;Lnet/minecraft/class_2561;Lnet/minecraft/class_2960;)V
 		ARG 1 client
 		ARG 2 screen
 		ARG 3 type
 		ARG 4 index
-		ARG 5 root
-		ARG 6 display
 	METHOD method_1_6368 tick (II)V
 		ARG 1 x
 		ARG 2 y
@@ -65,13 +61,9 @@ CLASS net/minecraft/class_454 net/minecraft/client/gui/screen/advancement/Advanc
 		ARG 2 index
 		ARG 3 root
 	METHOD method_2318 addAdvancement (Lnet/minecraft/class_8781;)V
-		ARG 1 advancement
-	METHOD method_2319 addWidget (Lnet/minecraft/class_456;Lnet/minecraft/class_8779;)V
+	METHOD method_2319 addWidget (Lnet/minecraft/class_456;)V
 		ARG 1 widget
-		ARG 2 advancement
 	METHOD method_35734 getType ()Lnet/minecraft/class_453;
 	METHOD method_35735 getIndex ()I
-	METHOD method_35736 getDisplay ()Lnet/minecraft/class_185;
-	METHOD method_53813 getRoot ()Lnet/minecraft/class_8781;
 	METHOD method_76273 canScrollHorizontally ()Z
 	METHOD method_76274 canScrollVertically ()Z

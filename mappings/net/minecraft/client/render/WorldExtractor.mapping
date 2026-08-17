@@ -31,7 +31,6 @@ CLASS net/minecraft/class_1_816 net/minecraft/client/render/WorldExtractor
 	METHOD method_1_5002 extract (Lnet/minecraft/class_9779;Lnet/minecraft/class_4184;F)V
 		ARG 1 tickCounter
 		ARG 2 camera
-		ARG 3 tickProgress
 	METHOD method_1_5003 extractBlockBreaking (Lnet/minecraft/class_4184;Lnet/minecraft/class_11658;)V
 		ARG 1 camera
 		ARG 2 worldRenderStateOut
@@ -104,10 +103,9 @@ CLASS net/minecraft/class_1_816 net/minecraft/client/render/WorldExtractor
 		ARG 7 z
 		ARG 9 tickProgress
 		ARG 10 chunkFadeMs
-	METHOD method_1_9645 extractOverlays (Lnet/minecraft/class_4184;FLnet/minecraft/class_1_1460;)V
+	METHOD method_1_9645 extractOverlays (Lnet/minecraft/class_4184;Lnet/minecraft/class_9779;FLnet/minecraft/class_1_1460;)V
 		ARG 1 camera
-		ARG 2 tickProgress
-		ARG 3 overlayRenderState
+		ARG 4 overlayRenderState
 	METHOD method_1_9646 getVisionObstructingBlock (Lnet/minecraft/class_746;Lnet/minecraft/class_4604;)Lnet/minecraft/class_2680;
 		ARG 0 player
 		ARG 1 frustum

@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
-	FIELD field_1_2251 backend Lnet/minecraft/class_1_11;
 	FIELD field_1_2592 focused Z
 	FIELD field_1_7137 exclusiveFullscreen Z
 	FIELD field_1_8784 MIN_HEIGHT I
@@ -42,7 +41,6 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 		ARG 5 title
 		ARG 6 monitorTracker
 		ARG 7 backend
-	METHOD method_1_2661 getBackend ()Lnet/minecraft/class_1_11;
 	METHOD method_1_2662 createHandle (Lnet/minecraft/class_1_11;IILjava/lang/String;)J
 		ARG 1 windowBackend
 		ARG 2 width
@@ -54,9 +52,6 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 		ARG 1 minimum
 	METHOD method_1_3138 isFocused ()Z
 	METHOD method_1_6373 supportsExclusiveFullscreen ()Z
-	METHOD method_1_8434 addAlternateIcon (Lorg/lwjgl/sdl/SDL_Surface;Lnet/minecraft/class_7367;)V
-		ARG 1 surface
-		ARG 2 icon
 	METHOD method_1_8436 setBorderlessFullscreen ()Z
 	METHOD method_1_8437 setFullscreen ()Z
 	METHOD method_1_8438 setExclusiveFullscreen ()Z
@@ -83,7 +78,6 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	METHOD method_1_8454 setMaximumSize (II)V
 		ARG 1 width
 		ARG 2 height
-	METHOD method_1_8455 show ()V
 	METHOD method_1_9165 setFullscreenMode ()Z
 	METHOD method_1_9166 onQuit ()V
 	METHOD method_1_9167 setEnableQuitShortcuts (Z)V

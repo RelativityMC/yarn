@@ -134,6 +134,26 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_1_9420 getDurationTicks (Lnet/minecraft/class_12126;)I
 		ARG 1 animation
 	METHOD method_1_9421 isSwingingHand ()Z
+	METHOD method_1_9768 canTeleportToPos (DDD)Z
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_1_9769 doTeleport (DDDZLjava/util/function/Predicate;Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;)Z
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 particleEffects
+		ARG 8 cannotTeleportTo
+		ARG 9 destState
+		ARG 10 world
+	METHOD method_1_9770 (Lnet/minecraft/class_6862;Lnet/minecraft/class_2680;)Z
+		ARG 1 state
+	METHOD method_1_9771 teleport (DDDZLnet/minecraft/class_6862;)Z
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 particleEffects
+		ARG 8 cannotTeleportTo
 	METHOD method_5673 setEquipment (Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;)V
 		ARG 1 slot
 		ARG 2 stack
@@ -304,6 +324,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 3 y
 		ARG 5 z
 		ARG 7 particleEffects
+		ARG 8 cannotTeleportTo
 	METHOD method_6083 getLastAttackTime ()I
 	METHOD method_6084 hasStackEquipped (Lnet/minecraft/class_1304;)Z
 		ARG 1 slot

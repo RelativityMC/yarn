@@ -25,7 +25,11 @@ CLASS net/minecraft/class_2589 net/minecraft/block/entity/BrewingStandBlockEntit
 		ARG 1 pos
 		ARG 2 state
 	METHOD method_1_8918 getSpeedMultiplier (Lnet/minecraft/class_3218;Lnet/minecraft/class_1_1319;)F
+		ARG 1 world
+		ARG 2 fuelComponent
 	METHOD method_1_8919 getUses (Lnet/minecraft/class_3218;Lnet/minecraft/class_1_1319;)I
+		ARG 1 world
+		ARG 2 fuelComponent
 	METHOD method_11027 canCraft (Lnet/minecraft/class_3218;Lnet/minecraft/class_2589;)Z
 		ARG 0 world
 		ARG 1 blockEntity

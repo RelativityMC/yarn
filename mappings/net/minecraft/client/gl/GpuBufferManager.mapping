@@ -10,5 +10,6 @@ CLASS net/minecraft/class_11266 net/minecraft/client/gl/GpuBufferManager
 	METHOD method_71019 create (Lorg/lwjgl/opengl/GLCapabilities;Ljava/util/Set;Z)Lnet/minecraft/class_11266;
 		ARG 0 capabilities
 		ARG 1 usedCapabilities
+		ARG 2 forceDirect
 	CLASS class_11267 ARBGpuBufferManager
 	CLASS class_11268 DirectGpuBufferManager

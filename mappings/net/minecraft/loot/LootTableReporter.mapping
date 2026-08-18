@@ -45,5 +45,6 @@ CLASS net/minecraft/class_58 net/minecraft/loot/LootTableReporter
 	METHOD method_51220 getDataLookup ()Lnet/minecraft/class_7871$class_7872;
 	METHOD method_60288 getErrorReporter ()Lnet/minecraft/class_8942;
 	CLASS class_1_1353 TagRecursionError
+	CLASS class_1_1478 NotEnoughElementsError
 	CLASS class_11376 ParametersNotProvidedError
 	CLASS class_11377 RecursionError

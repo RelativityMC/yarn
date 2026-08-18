@@ -4,3 +4,8 @@ CLASS net/minecraft/class_1_11 net/minecraft/client/window/WindowBackend
 		ARG 1 debugOptions
 	METHOD method_1_8637 loadGraphics ()V
 	METHOD method_1_8638 unloadGraphics ()V
+	METHOD method_1_9788 createWindow (Ljava/lang/String;IIJ)J
+		ARG 1 title
+		ARG 2 width
+		ARG 3 height
+		ARG 4 flags

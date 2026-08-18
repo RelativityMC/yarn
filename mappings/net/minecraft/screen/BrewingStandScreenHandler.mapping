@@ -38,7 +38,9 @@ CLASS net/minecraft/class_1708 net/minecraft/screen/BrewingStandScreenHandler
 			ARG 4 x
 			ARG 5 y
 	CLASS class_1711 PotionSlot
+		FIELD field_1_10077 recipeManager Lnet/minecraft/class_10286;
 		METHOD <init> (Lnet/minecraft/class_10286;Lnet/minecraft/class_1263;III)V
+			ARG 1 recipeManager
 			ARG 2 inventory
 			ARG 3 index
 			ARG 4 x

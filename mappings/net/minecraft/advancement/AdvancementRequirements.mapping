@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_8782 net/minecraft/advancement/AdvancementRequirements
+	FIELD field_1_9446 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_46084 EMPTY Lnet/minecraft/class_8782;
 	FIELD field_47184 CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_53664 getLength ()I

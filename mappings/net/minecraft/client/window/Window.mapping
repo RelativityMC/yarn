@@ -56,7 +56,7 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	METHOD method_1_8437 setFullscreen ()Z
 	METHOD method_1_8438 setExclusiveFullscreen ()Z
 	METHOD method_1_8439 setWindowed ()Z
-	METHOD method_1_8440 createSurfaceFrom (Lnet/minecraft/class_1011;)Lorg/lwjgl/sdl/SDL_Surface;
+	METHOD method_1_8440 createSdlSurfaceFrom (Lnet/minecraft/class_1011;)Lorg/lwjgl/sdl/SDL_Surface;
 		ARG 0 image
 	METHOD method_1_8441 getSdlDisplayMode ()Lorg/lwjgl/sdl/SDL_DisplayMode;
 	METHOD method_1_8442 getVideoMode ()Lnet/minecraft/class_319;
@@ -84,6 +84,11 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 		ARG 1 enableQuitShortcuts
 	METHOD method_1_9168 isExclusiveFullscreen ()Z
 	METHOD method_1_9393 onCurrentModeChanged ()V
+	METHOD method_1_9762 readAsSdlSurface (Lnet/minecraft/class_7367;Ljava/util/List;)Lorg/lwjgl/sdl/SDL_Surface;
+		ARG 0 icon
+		ARG 1 imagesToCloseOut
+	METHOD method_1_9763 setEmulateRightClick (Z)V
+		ARG 1 emulateRightClick
 	METHOD method_4474 setPhase (Ljava/lang/String;)V
 		ARG 1 phase
 	METHOD method_4475 applyFullscreenVideoMode ()V
@@ -132,7 +137,7 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	METHOD method_36813 setWindowedSize (II)V
 		ARG 1 width
 		ARG 2 height
-	METHOD method_60793 getGlfwPlatform ()Ljava/lang/String;
+	METHOD method_60793 getPlatform ()Ljava/lang/String;
 	METHOD method_61943 setCloseCallback (Ljava/lang/Runnable;)V
 		ARG 1 callback
 	METHOD method_61945 onMinimizeChanged (Z)V

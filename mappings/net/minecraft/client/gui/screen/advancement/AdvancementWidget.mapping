@@ -24,6 +24,11 @@ CLASS net/minecraft/class_456 net/minecraft/client/gui/screen/advancement/Advanc
 		ARG 1 client
 		ARG 2 advancement
 		ARG 3 display
+	METHOD method_1_9810 create (Lnet/minecraft/class_310;Lnet/minecraft/class_8781;)Lnet/minecraft/class_456;
+		ARG 0 client
+		ARG 1 advancement
+	METHOD method_1_9811 getEntry ()Lnet/minecraft/class_8779;
+	METHOD method_1_9812 getDisplay ()Lnet/minecraft/class_185;
 	METHOD method_2322 addChild (Lnet/minecraft/class_456;)V
 		ARG 1 widget
 	METHOD method_2323 renderLines (Lnet/minecraft/class_332;IIZ)V
@@ -54,7 +59,9 @@ CLASS net/minecraft/class_456 net/minecraft/client/gui/screen/advancement/Advanc
 		ARG 4 alpha
 		ARG 5 x
 		ARG 6 y
+		ARG 7 screenWidth
 	METHOD method_2332 addToTree (Lnet/minecraft/class_454;)V
+		ARG 1 tab
 	METHOD method_2333 setProgress (Lnet/minecraft/class_167;)V
 		ARG 1 progress
 	METHOD method_27572 getMaxWidth (Lnet/minecraft/class_5225;Ljava/util/List;)F

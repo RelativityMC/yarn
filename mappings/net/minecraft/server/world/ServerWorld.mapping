@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_3218 net/minecraft/server/world/ServerWorld
 	FIELD field_1_7066 lastEntityId Ljava/util/concurrent/atomic/AtomicInteger;
 	FIELD field_1_8798 sleepManager Lnet/minecraft/class_5838;
+	FIELD field_1_9841 biomeSupplier Lnet/minecraft/class_6780;
 	FIELD field_13948 idleTimeout I
 	FIELD field_13949 blockTickScheduler Lnet/minecraft/class_6757;
 	FIELD field_13950 syncedBlockEventQueue Lit/unimi/dsi/fastutil/objects/ObjectLinkedOpenHashSet;
@@ -62,6 +63,7 @@ CLASS net/minecraft/class_3218 net/minecraft/server/world/ServerWorld
 		ARG 2 pos
 		ARG 3 radius
 		ARG 4 skipReferencedStructures
+	METHOD method_1_9570 getBiomeSupplier ()Lnet/minecraft/class_6780;
 	METHOD method_8448 updateSleepingPlayers ()V
 	METHOD method_8487 locateStructure (Lnet/minecraft/class_6862;Lnet/minecraft/class_2338;IZ)Lnet/minecraft/class_2338;
 		COMMENT Tries to find the closest structure of a given type near a given block.

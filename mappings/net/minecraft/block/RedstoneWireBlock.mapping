@@ -17,9 +17,14 @@ CLASS net/minecraft/class_2457 net/minecraft/block/RedstoneWireBlock
 	METHOD method_10479 updateNeighbors (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)V
 		ARG 1 world
 		ARG 2 pos
-	METHOD method_10482 connectsTo (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;)Z
+	METHOD method_10482 wireConnectsTo (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;)Z
+		ARG 0 state
+		ARG 1 view
+		ARG 2 pos
 		ARG 3 dir
-	METHOD method_10484 connectsTo (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z
+	METHOD method_10484 wireConnectsTo (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z
+		ARG 0 view
+		ARG 1 pos
 	METHOD method_10485 update (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_9904;Z)V
 		ARG 1 world
 		ARG 2 pos
@@ -36,6 +41,7 @@ CLASS net/minecraft/class_2457 net/minecraft/block/RedstoneWireBlock
 		ARG 1 world
 		ARG 2 pos
 		ARG 3 direction
+		ARG 4 canConnectUp
 	METHOD method_27843 getDefaultWireState (Lnet/minecraft/class_1922;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;)Lnet/minecraft/class_2680;
 		ARG 1 world
 		ARG 2 state

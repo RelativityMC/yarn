@@ -9,6 +9,7 @@ CLASS net/minecraft/class_632 net/minecraft/client/network/ClientAdvancementMana
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_7975;)V
 		ARG 1 client
 		ARG 2 worldSession
+	METHOD method_1_9800 getAdvancementProgresses ()Ljava/util/Map;
 	METHOD method_2861 onAdvancements (Lnet/minecraft/class_2779;)V
 		ARG 1 packet
 	METHOD method_2862 setListener (Lnet/minecraft/class_632$class_633;)V
@@ -20,6 +21,7 @@ CLASS net/minecraft/class_632 net/minecraft/client/network/ClientAdvancementMana
 	METHOD method_53815 get (Lnet/minecraft/class_2960;)Lnet/minecraft/class_8779;
 		ARG 1 id
 	CLASS class_633 Listener
+		METHOD method_1_9801 refreshAdvancements ()V
 		METHOD method_722 onClear ()V
 		METHOD method_2866 selectTab (Lnet/minecraft/class_8779;)V
 			ARG 1 advancement

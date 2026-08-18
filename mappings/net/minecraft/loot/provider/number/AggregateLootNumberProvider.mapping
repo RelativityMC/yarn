@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1484 net/minecraft/loot/provider/number/AggregateLootNumberProvider
+	METHOD method_1_9819 createCodec (Ljava/util/function/Function;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 constructor
+	METHOD method_1_9820 (Ljava/util/function/Function;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 1 instance

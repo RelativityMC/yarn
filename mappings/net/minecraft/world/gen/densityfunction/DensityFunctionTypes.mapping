@@ -73,7 +73,7 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 		ARG 0 input
 	METHOD method_1_9507 quarterNegative (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
 		ARG 0 input
-	METHOD method_1_9508 reciprocaL (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+	METHOD method_1_9508 reciprocal (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
 		ARG 0 input
 	METHOD method_1_9509 round (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
 		ARG 0 input

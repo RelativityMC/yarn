@@ -1,10 +1,19 @@
 CLASS net/minecraft/class_189 net/minecraft/advancement/AdvancementFrame
-	FIELD field_1251 id Ljava/lang/String;
+	FIELD field_1_10069 INDEX_TO_VALUE Ljava/util/function/IntFunction;
+	FIELD field_1_10070 PACKET_CODEC Lnet/minecraft/class_9139;
+	FIELD field_1_10071 index I
+	FIELD field_1251 name Ljava/lang/String;
 	FIELD field_1255 titleFormat Lnet/minecraft/class_124;
 	FIELD field_26386 toastText Lnet/minecraft/class_2561;
 	FIELD field_47186 CODEC Lcom/mojang/serialization/Codec;
 	METHOD <init> (Ljava/lang/String;IILjava/lang/String;Lnet/minecraft/class_124;)V
+		ARG 3 index
+		ARG 4 name
 		ARG 5 titleFormat
+	METHOD method_1_9782 (Lnet/minecraft/class_189;)I
+		ARG 0 frame
+	METHOD method_1_9783 (Lnet/minecraft/class_189;)I
+		ARG 0 frame
 	METHOD method_830 getTitleFormat ()Lnet/minecraft/class_124;
 	METHOD method_30756 getToastText ()Lnet/minecraft/class_2561;
 	METHOD method_54932 getChatAnnouncementText (Lnet/minecraft/class_8779;Lnet/minecraft/class_3222;)Lnet/minecraft/class_5250;

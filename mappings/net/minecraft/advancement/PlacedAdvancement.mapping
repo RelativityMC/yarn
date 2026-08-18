@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_8781 net/minecraft/advancement/PlacedAdvancement
+	FIELD field_1_10067 x F
+	FIELD field_1_10068 y F
 	FIELD field_46077 advancementEntry Lnet/minecraft/class_8779;
 	FIELD field_46078 parent Lnet/minecraft/class_8781;
 	FIELD field_46079 children Ljava/util/Set;
@@ -7,6 +9,13 @@ CLASS net/minecraft/class_8781 net/minecraft/advancement/PlacedAdvancement
 		ARG 2 parent
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
+	METHOD method_1_9775 isRoot ()Z
+	METHOD method_1_9776 hasParent ()Z
+	METHOD method_1_9777 setPosition (FF)V
+		ARG 1 x
+		ARG 2 y
+	METHOD method_1_9778 getX ()F
+	METHOD method_1_9779 getY ()F
 	METHOD method_53647 getAdvancement ()Lnet/minecraft/class_161;
 	METHOD method_53648 findRoot (Lnet/minecraft/class_8781;)Lnet/minecraft/class_8781;
 		ARG 0 advancement

@@ -11,6 +11,10 @@ CLASS net/minecraft/class_6646 net/minecraft/world/gen/blockpredicate/BlockPredi
 	METHOD method_1_9136 hasSturdyFace (Lnet/minecraft/class_1_1038;Lnet/minecraft/class_2350;)Lnet/minecraft/class_6646;
 		ARG 0 offset
 		ARG 1 face
+	METHOD method_1_9695 volumeMatch (Lnet/minecraft/class_2382;Lnet/minecraft/class_2382;Lnet/minecraft/class_6646;)Lnet/minecraft/class_6646;
+		ARG 0 min
+		ARG 1 max
+		ARG 2 match
 	METHOD method_38873 getType ()Lnet/minecraft/class_6647;
 	METHOD method_38877 not (Lnet/minecraft/class_6646;)Lnet/minecraft/class_6646;
 		ARG 0 predicate

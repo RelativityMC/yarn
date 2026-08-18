@@ -2,10 +2,13 @@ CLASS net/minecraft/class_11541 net/minecraft/client/gl/GlDeviceInfo
 	FIELD field_1_3852 LOGGER Lorg/slf4j/Logger;
 	FIELD field_1_5274 CPU_DEVICES Ljava/util/List;
 	FIELD field_1_5275 VIRTUAL_DEVICES Ljava/util/List;
+	FIELD field_1_10079 forceDisableArbBufferStorage Z
+	FIELD field_1_10080 nvidia Z
 	FIELD field_63062 writeToBufferIsSlow Z
-	FIELD field_64657 anisotropyHasKnownIssue Z
+	FIELD field_64657 anisotropyHasKnownIssues Z
 	METHOD <init> (Ljava/lang/String;Ljava/lang/String;)V
 		ARG 1 glRenderer
+		ARG 2 glVendor
 	METHOD method_1_4679 getGpuDeviceInfo (Lorg/lwjgl/opengl/GLCapabilities;ILjava/util/Set;)Lnet/minecraft/class_1_664;
 		ARG 1 capabilities
 		ARG 2 maxAnisotropy
@@ -14,9 +17,16 @@ CLASS net/minecraft/class_11541 net/minecraft/client/gl/GlDeviceInfo
 	METHOD method_1_4763 getDeviceType (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/class_1_785;
 		ARG 1 renderer
 		ARG 2 vendor
+	METHOD method_1_9793 forceDisableArbBufferStorage ()Z
+	METHOD method_1_9794 forceDisableArbBufferStorage (Ljava/lang/String;Ljava/lang/String;)Z
+		ARG 0 glRenderer
+		ARG 1 glVendor
+	METHOD method_1_9795 isNvidia ()Z
+	METHOD method_1_9796 isNvidia (Ljava/lang/String;)Z
+		ARG 0 glRenderer
 	METHOD method_74912 writeToBufferIsSlow ()Z
-	METHOD method_74913 shouldDisableArbDirectAccess (Ljava/lang/String;)Z
+	METHOD method_74913 writeToBufferIsSlow (Ljava/lang/String;)Z
 		ARG 0 glRenderer
 	METHOD method_76745 anisotropyHasKnownIssues ()Z
-	METHOD method_76746 shouldUseRgssOnFabulous (Ljava/lang/String;)Z
+	METHOD method_76746 anisotropyHasKnownIssues (Ljava/lang/String;)Z
 		ARG 0 glRenderer

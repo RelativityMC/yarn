@@ -18,6 +18,8 @@ CLASS net/minecraft/class_315 net/minecraft/client/option/GameOptions
 	FIELD field_1_8780 debugGuiScale Lnet/minecraft/class_7172;
 	FIELD field_1_9527 QUIT_SHORTCUTS_TOOLTIP Lnet/minecraft/class_2561;
 	FIELD field_1_9528 quitShortcuts Lnet/minecraft/class_7172;
+	FIELD field_1_10046 CTRL_CLICK_EMULATES_RIGHT_CLICK_TOOLTIP Lnet/minecraft/class_2561;
+	FIELD field_1_10047 ctrlClickEmulatesRightClick Lnet/minecraft/class_7172;
 	FIELD field_1814 cloudRenderMode Lnet/minecraft/class_7172;
 	FIELD field_1815 hideServerAddress Z
 	FIELD field_1816 smoothCameraKey Lnet/minecraft/class_304;
@@ -353,6 +355,9 @@ CLASS net/minecraft/class_315 net/minecraft/client/option/GameOptions
 	METHOD method_1_9159 (Ljava/lang/Boolean;)V
 		ARG 0 vlaue
 	METHOD method_1_9160 getQuitShortcuts ()Lnet/minecraft/class_7172;
+	METHOD method_1_9759 getCtrlClickEmulatesRightClick ()Lnet/minecraft/class_7172;
+	METHOD method_1_9760 (Ljava/lang/Boolean;)V
+		ARG 0 value
 	METHOD method_1626 update (Lnet/minecraft/class_2487;)Lnet/minecraft/class_2487;
 		ARG 1 nbt
 	METHOD method_1627 addResourcePackProfilesToManager (Lnet/minecraft/class_3283;)V

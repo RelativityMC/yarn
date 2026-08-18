@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_1399 net/minecraft/entity/ai/goal/RevengeGoal
+	FIELD field_1_9918 callPredicate Ljava/util/function/BooleanSupplier;
 	FIELD field_6637 noRevengeTypes [Ljava/lang/Class;
 	FIELD field_6638 lastAttackedTime I
 	FIELD field_6639 groupRevenge Z
@@ -8,6 +9,8 @@ CLASS net/minecraft/class_1399 net/minecraft/entity/ai/goal/RevengeGoal
 	METHOD <init> (Lnet/minecraft/class_1314;[Ljava/lang/Class;)V
 		ARG 1 mob
 		ARG 2 noRevengeTypes
+	METHOD method_1_9667 setCallPredicate (Ljava/util/function/BooleanSupplier;)Lnet/minecraft/class_1399;
+		ARG 1 callPredicate
 	METHOD method_6317 callSameTypeForRevenge ()V
 	METHOD method_6318 setGroupRevenge ([Ljava/lang/Class;)Lnet/minecraft/class_1399;
 		ARG 1 noHelpTypes

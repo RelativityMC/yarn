@@ -10,6 +10,7 @@ CLASS net/minecraft/class_10865 net/minecraft/client/gl/GlBackend
 	FIELD field_1_9066 window J
 	FIELD field_1_9413 programCompiler Lnet/minecraft/class_1_1391;
 	FIELD field_1_9414 vertexArrayFactory Ljava/util/function/BiFunction;
+	FIELD field_1_10076 currentWindow J
 	FIELD field_57853 LOGGER Lorg/slf4j/Logger;
 	FIELD field_57854 commandEncoder Lnet/minecraft/class_10860;
 	FIELD field_57855 glDebug Lnet/minecraft/class_1008;
@@ -23,9 +24,12 @@ CLASS net/minecraft/class_10865 net/minecraft/client/gl/GlBackend
 	FIELD field_60016 allowGlBufferStorage Z
 	FIELD field_60017 gpuBufferManager Lnet/minecraft/class_11266;
 	METHOD <init> (Lnet/minecraft/class_1_9;Lnet/minecraft/class_1_16;)V
+		ARG 1 window
 		ARG 2 debugOptions
 	METHOD method_1_5402 getFramebufferManager ()Lnet/minecraft/class_1_894;
 	METHOD method_1_7302 onCompiledPipelineClose ()V
+	METHOD method_1_9789 makeWindowCurrent (J)V
+		ARG 1 window
 	METHOD method_68377 getDebugLabelManager ()Lnet/minecraft/class_10861;
 	METHOD method_68401 getBufferManager ()Lnet/minecraft/class_10874;
 	METHOD method_71032 getGpuBufferManager ()Lnet/minecraft/class_11266;

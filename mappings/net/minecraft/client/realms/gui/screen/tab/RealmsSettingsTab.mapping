@@ -1,5 +1,15 @@
 CLASS net/minecraft/class_11319 net/minecraft/client/realms/gui/screen/tab/RealmsSettingsTab
+	FIELD field_1_10093 RENDER_DISTANCE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_10094 RENDER_DISTANCE_TOOLTIP Lnet/minecraft/class_2561;
+	FIELD field_1_10095 SIMULATION_DISTANCE Lnet/minecraft/class_2561;
+	FIELD field_1_10096 SIMULATION_DISTANCE_TOOLTIP Lnet/minecraft/class_2561;
+	FIELD field_1_10097 renderDistance I
+	FIELD field_1_10098 simDistance I
+	FIELD field_1_10099 renderDistanceOption Lnet/minecraft/class_7172;
+	FIELD field_1_10100 content Lnet/minecraft/class_11467;
+	FIELD field_1_10101 simDistanceOption Lnet/minecraft/class_7172;
 	FIELD field_60266 switchStateButton Lnet/minecraft/class_4185;
+	FIELD field_60267 WORLD_NAME_TEXT_FIELD_WIDTH I
 	FIELD field_60270 TITLE_TEXT Lnet/minecraft/class_2561;
 	FIELD field_60271 WORLD_NAME_TEXT Lnet/minecraft/class_2561;
 	FIELD field_60272 DESCRIPTION_TEXT Lnet/minecraft/class_2561;
@@ -18,7 +28,20 @@ CLASS net/minecraft/class_11319 net/minecraft/client/realms/gui/screen/tab/Realm
 		ARG 1 screen
 		ARG 2 client
 		ARG 3 server
+		ARG 4 viewDistanceSettings
 		ARG 5 availableRegions
+	METHOD method_1_9821 createDistanceOption (Ljava/lang/String;Lnet/minecraft/class_2561;Lnet/minecraft/class_1_1476$class_1_1477;I)Lnet/minecraft/class_7172;
+		ARG 0 translationKey
+		ARG 1 tooltipText
+		ARG 2 distances
+		ARG 3 current
+	METHOD method_1_9822 getCurrentDistance (Lnet/minecraft/class_1_1476$class_1_1477;)I
+		ARG 0 distances
+	METHOD method_1_9823 (Lnet/minecraft/class_2561;Ljava/lang/Integer;)Lnet/minecraft/class_2561;
+		ARG 0 optionText
+		ARG 1 value
+	METHOD method_1_9824 (Ljava/lang/Integer;)V
+		ARG 0 value
 	METHOD method_71231 saveSettings ()Z
 	METHOD method_71232 (Lnet/minecraft/class_4877;Lnet/minecraft/class_11303;)V
 		ARG 1 region

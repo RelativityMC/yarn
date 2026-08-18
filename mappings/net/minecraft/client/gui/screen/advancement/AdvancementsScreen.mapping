@@ -24,6 +24,9 @@ CLASS net/minecraft/class_457 net/minecraft/client/gui/screen/advancement/Advanc
 	METHOD <init> (Lnet/minecraft/class_632;Lnet/minecraft/class_437;)V
 		ARG 1 advancementHandler
 		ARG 2 parent
+	METHOD method_1_9817 (Lnet/minecraft/class_163;Lnet/minecraft/class_8779;Lnet/minecraft/class_167;)V
+		ARG 2 advancement
+		ARG 3 progress
 	METHOD method_2334 drawWindow (Lnet/minecraft/class_332;II)V
 		ARG 1 context
 		ARG 2 mouseX

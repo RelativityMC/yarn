@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_454 net/minecraft/client/gui/screen/advancement/AdvancementTab
 	FIELD field_1_7132 hoveredWidget Lnet/minecraft/class_456;
+	FIELD field_1_10081 background Lnet/minecraft/class_2960;
 	FIELD field_2680 client Lnet/minecraft/class_310;
 	FIELD field_2681 index I
 	FIELD field_2683 initialized Z
@@ -21,9 +22,16 @@ CLASS net/minecraft/class_454 net/minecraft/client/gui/screen/advancement/Advanc
 		ARG 2 screen
 		ARG 3 type
 		ARG 4 index
+		ARG 5 rootWidget
+		ARG 6 icon
+		ARG 7 title
+		ARG 8 background
 	METHOD method_1_6368 tick (II)V
 		ARG 1 x
 		ARG 2 y
+	METHOD method_1_9805 copyPositioning (Lnet/minecraft/class_454;)V
+		ARG 1 source
+	METHOD method_1_9806 getRootEntry ()Lnet/minecraft/class_8779;
 	METHOD method_2308 getWidget (Lnet/minecraft/class_8779;)Lnet/minecraft/class_456;
 		ARG 1 advancement
 	METHOD method_2309 getTitle ()Lnet/minecraft/class_2561;
@@ -61,6 +69,7 @@ CLASS net/minecraft/class_454 net/minecraft/client/gui/screen/advancement/Advanc
 		ARG 2 index
 		ARG 3 root
 	METHOD method_2318 addAdvancement (Lnet/minecraft/class_8781;)V
+		ARG 1 advancement
 	METHOD method_2319 addWidget (Lnet/minecraft/class_456;)V
 		ARG 1 widget
 	METHOD method_35734 getType ()Lnet/minecraft/class_453;

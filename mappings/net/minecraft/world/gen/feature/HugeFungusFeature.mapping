@@ -1,4 +1,14 @@
 CLASS net/minecraft/class_4781 net/minecraft/world/gen/feature/HugeFungusFeature
+	FIELD field_31507 THICK_STEM_CHANCE F
+	METHOD method_1_7119 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_8900 generateVines (Lnet/minecraft/class_1936;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338;III)V
+		ARG 0 world
+		ARG 1 random
+		ARG 2 pos
+		ARG 3 height
+		ARG 4 minAge
+		ARG 5 maxAge
 	METHOD method_24439 placeHatBlock (Lnet/minecraft/class_1936;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338$class_2339;FFF)V
 		ARG 1 world
 		ARG 2 random

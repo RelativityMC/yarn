@@ -15,5 +15,8 @@ CLASS net/minecraft/class_1_1264 net/minecraft/recipe/BrewingIngredient
 	METHOD method_1_8014 of (Lnet/minecraft/class_1792;Lnet/minecraft/class_9359;)Lnet/minecraft/class_1_1264;
 		ARG 0 item
 		ARG 1 contents
+	METHOD method_1_9797 canInsert (Lnet/minecraft/class_1799;Lnet/minecraft/class_10286;)Z
+		ARG 0 input
+		ARG 1 recipeManager
 	METHOD test (Ljava/lang/Object;)Z
 		ARG 1 stack

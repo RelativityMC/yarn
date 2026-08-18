@@ -48,5 +48,10 @@ CLASS net/minecraft/class_1_38 net/minecraft/loot/LootTableReportable
 	METHOD method_1_8797 reportEntries (Lnet/minecraft/class_58;Lnet/minecraft/class_6885;)V
 		ARG 0 reporter
 		ARG 1 entries
+	METHOD method_1_9798 reportChildEntries (Lnet/minecraft/class_58;Ljava/lang/String;Lnet/minecraft/class_6885;I)V
+		ARG 0 reporter
+		ARG 1 key
+		ARG 2 entries
+		ARG 3 minCount
 	METHOD method_292 report (Lnet/minecraft/class_58;)V
 		ARG 1 reporter

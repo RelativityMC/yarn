@@ -10,3 +10,7 @@ CLASS net/minecraft/class_2779 net/minecraft/network/packet/s2c/play/Advancement
 	METHOD comp_1_1479 toRemove ()Ljava/util/Set;
 	METHOD comp_1_1480 clearCurrent ()Z
 	METHOD comp_1_1481 showToast ()Z
+	CLASS class_1_1485 Entry
+		FIELD field_1_10102 CODEC Lnet/minecraft/class_9139;
+		METHOD method_1_9825 of (Lnet/minecraft/class_8781;)Lnet/minecraft/class_2779$class_1_1485;
+			ARG 0 placedAdvancement

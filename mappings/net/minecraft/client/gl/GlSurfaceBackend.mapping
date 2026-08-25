@@ -3,5 +3,5 @@ CLASS net/minecraft/class_1_661 net/minecraft/client/gl/GlSurfaceBackend
 	FIELD field_1_3842 SUPPORTED_PRESENT_MODES Ljava/util/Set;
 	FIELD field_1_7138 height I
 	FIELD field_1_7139 width I
-	METHOD <init> (J)V
+	METHOD <init> (JLjava/util/function/BooleanSupplier;)V
 		ARG 1 window

@@ -3,6 +3,8 @@ CLASS net/minecraft/class_6626 net/minecraft/structure/StructurePiecesCollector
 	COMMENT
 	COMMENT @see StructurePiecesList
 	FIELD field_34944 pieces Ljava/util/List;
+	METHOD method_35461 getIntersecting (Lnet/minecraft/class_3341;)Lnet/minecraft/class_3443;
+	METHOD method_35462 addPiece (Lnet/minecraft/class_3443;)V
 	METHOD method_38714 toList ()Lnet/minecraft/class_6624;
 	METHOD method_38715 shift (I)V
 		ARG 1 y

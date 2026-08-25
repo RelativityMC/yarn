@@ -1,0 +1,61 @@
+CLASS net/minecraft/class_6694 net/minecraft/world/gen/surfacebuilder/MaterialRuleContext
+	FIELD field_1_5962 currentBiome Lnet/minecraft/class_6880;
+	FIELD field_1_5963 includedBiomes Ljava/util/Set;
+		COMMENT Used for optimizing {@link BiomeMaterialRule}.
+	FIELD field_1_6330 cache2d Ljava/util/Map;
+	FIELD field_1_6331 cache3d Ljava/util/Map;
+	FIELD field_35233 surfaceBuilder Lnet/minecraft/class_6724;
+	FIELD field_35241 heightContext Lnet/minecraft/class_5868;
+	FIELD field_35606 posToBiome Ljava/util/function/Function;
+	FIELD field_35608 uniqueHorizontalPosValue J
+	FIELD field_35609 blockX I
+	FIELD field_35610 blockZ I
+	FIELD field_35611 runDepth I
+	FIELD field_35612 uniquePosValue J
+	FIELD field_35613 pos Lnet/minecraft/class_2338$class_2339;
+	FIELD field_35616 surfaceMinY I
+	FIELD field_35617 blockY I
+	FIELD field_35618 fluidHeight I
+	FIELD field_35619 stoneDepthBelow I
+	FIELD field_35620 stoneDepthAbove I
+	FIELD field_35677 lastQueriesUniqueHorizontalPosValueForSecondaryDepth J
+	FIELD field_35678 secondaryDepth D
+	FIELD field_35679 lastQueriesUniqueHorizontalPosValueForEstimatedSurfaceHeight J
+	FIELD field_37703 noiseConfig Lnet/minecraft/class_7138;
+	METHOD <init> (Lnet/minecraft/class_6724;Lnet/minecraft/class_7138;Lnet/minecraft/class_1_1441;Lnet/minecraft/class_1_1552;Ljava/util/function/Function;Lnet/minecraft/class_5868;Ljava/util/Set;)V
+		ARG 1 surfaceBuilder
+		ARG 2 noiseConfig
+		ARG 5 posToBiome
+		ARG 6 heightContext
+		ARG 7 includedBiomes
+	METHOD method_1_5130 getCurrentBiome ()Lnet/minecraft/class_6880;
+	METHOD method_1_5439 computeSupplier2d (Lnet/minecraft/class_5321;)Ljava/util/function/DoubleSupplier;
+		ARG 1 noise
+	METHOD method_1_5440 computeSupplier3d (Lnet/minecraft/class_5321;)Ljava/util/function/DoubleSupplier;
+		ARG 1 noise
+	METHOD method_1_5441 getSupplier (Lnet/minecraft/class_5321;Z)Ljava/util/function/DoubleSupplier;
+		ARG 1 noiseParams
+		ARG 2 is3d
+	METHOD method_39072 initHorizontalContext (IIII)V
+		ARG 1 blockX
+		ARG 2 blockZ
+	METHOD method_39073 initVerticalContext (IIII)V
+		ARG 1 stoneDepthAbove
+		ARG 2 stoneDepthBelow
+		ARG 3 fluidHeight
+		ARG 4 blockY
+	METHOD method_39550 getSecondaryDepth ()D
+	METHOD method_39551 estimateSurfaceHeight ()I
+	METHOD method_61804 getSeaLevel ()I
+	CLASS 1 1
+		FIELD field_1_6332 lastQueriedValue D
+		FIELD field_1_6333 lastQueriedPos J
+	CLASS 2 2
+		FIELD field_1_6336 lastQueriedValue D
+		FIELD field_1_6337 lastQueriedPos J
+	CLASS class_6702 LazyAbstractPredicate
+		FIELD field_35246 result Ljava/lang/Boolean;
+		FIELD field_35622 uniqueValue J
+		FIELD field_35623 context Lnet/minecraft/class_6694;
+	CLASS class_6774 FullLazyAbstractPredicate
+		METHOD method_39074 test ()Z

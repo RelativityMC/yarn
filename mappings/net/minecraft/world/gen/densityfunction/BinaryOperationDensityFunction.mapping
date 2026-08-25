@@ -1,12 +1,5 @@
 CLASS net/minecraft/class_6917 net/minecraft/world/gen/densityfunction/BinaryOperationDensityFunction
 	FIELD field_1_9827 LOGGER Lorg/slf4j/Logger;
-	METHOD <init> (Lnet/minecraft/class_6917$class_6918;Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;)V
-		ARG 1 type
-		ARG 2 left
-		ARG 3 right
-	METHOD equals (Ljava/lang/Object;)Z
-		ARG 1 other
-	METHOD method_1_9552 optimize ()Lnet/minecraft/class_6910;
 	CLASS class_6918 Type
 		FIELD field_37111 codecHolder Lcom/mojang/serialization/MapCodec;
 		FIELD field_37112 name Ljava/lang/String;
@@ -17,5 +10,3 @@ CLASS net/minecraft/class_6917 net/minecraft/world/gen/densityfunction/BinaryOpe
 		METHOD method_1_8836 (Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6917;
 			ARG 1 left
 			ARG 2 right
-	CLASS class_6929 LinearOperation
-		CLASS class_6930 SpecificType

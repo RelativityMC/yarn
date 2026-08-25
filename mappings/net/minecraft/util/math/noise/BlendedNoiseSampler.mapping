@@ -34,8 +34,6 @@ CLASS net/minecraft/class_5822 net/minecraft/util/math/noise/BlendedNoiseSampler
 	METHOD method_1_9655 getScaledYScale ()D
 	METHOD method_42385 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
-	METHOD method_42386 copyWithRandom (Lnet/minecraft/class_5819;)Lnet/minecraft/class_6910;
-		ARG 1 random
 	CLASS class_1_1456 BlendedNoise
 		METHOD method_1_9656 (I)Ljava/lang/String;
 			ARG 0 octave

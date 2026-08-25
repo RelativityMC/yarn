@@ -27,25 +27,17 @@ CLASS net/minecraft/class_3195 net/minecraft/world/gen/structure/Structure
 		ARG 2 width
 		ARG 3 z
 		ARG 4 height
-	METHOD method_41612 getStructurePosition (Lnet/minecraft/class_3195$class_7149;Lnet/minecraft/class_2902$class_2903;Ljava/util/function/Consumer;)Ljava/util/Optional;
-		ARG 0 context
-		ARG 1 heightmap
-		ARG 2 generator
-	METHOD method_41613 isBiomeValid (Lnet/minecraft/class_3195$class_7150;Lnet/minecraft/class_3195$class_7149;)Z
-		ARG 0 result
-		ARG 1 context
-	METHOD method_41614 createStructureStart (Lnet/minecraft/class_6880;Lnet/minecraft/class_5321;Lnet/minecraft/class_5455;Lnet/minecraft/class_2794;Lnet/minecraft/class_6780;Lnet/minecraft/class_7138;Lnet/minecraft/class_3485;JLnet/minecraft/class_1923;ILnet/minecraft/class_5539;Ljava/util/function/Predicate;)Lnet/minecraft/class_3449;
+	METHOD method_41614 createStructureStart (Lnet/minecraft/class_6880;Lnet/minecraft/class_5321;Lnet/minecraft/class_5455;Lnet/minecraft/class_2794;Lnet/minecraft/class_1966;Lnet/minecraft/class_6544$class_6552;Lnet/minecraft/class_7138;Lnet/minecraft/class_3485;JLnet/minecraft/class_1923;ILnet/minecraft/class_5539;Ljava/util/function/Predicate;)Lnet/minecraft/class_3449;
 		ARG 1 structure
 		ARG 2 dimension
 		ARG 3 dynamicRegistryManager
 		ARG 4 chunkGenerator
-		ARG 6 noiseConfig
-		ARG 7 structureTemplateManager
-		ARG 8 seed
-		ARG 10 chunkPos
-		ARG 11 references
-		ARG 12 world
-		ARG 13 validBiomes
+		ARG 8 structureTemplateManager
+		ARG 9 seed
+		ARG 11 chunkPos
+		ARG 12 references
+		ARG 13 world
+		ARG 14 validBiomes
 	METHOD method_41615 getStructureSpawns ()Ljava/util/Map;
 	METHOD method_41616 getFeatureGenerationStep ()Lnet/minecraft/class_2893$class_2895;
 	METHOD method_41618 getType ()Lnet/minecraft/class_7151;
@@ -55,9 +47,9 @@ CLASS net/minecraft/class_3195 net/minecraft/world/gen/structure/Structure
 		ARG 2 z
 		ARG 3 width
 		ARG 4 height
-	METHOD method_42382 getShiftedPos (Lnet/minecraft/class_3195$class_7149;Lnet/minecraft/class_2470;)Lnet/minecraft/class_2338;
+	METHOD method_42382 getShiftedPos (Lnet/minecraft/class_3195$class_7149;IILnet/minecraft/class_2470;)Lnet/minecraft/class_2338;
 		ARG 1 context
-		ARG 2 rotation
+		ARG 4 rotation
 	METHOD method_42697 configCodecBuilder (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;
 		ARG 0 instance
 	METHOD method_42698 (Lnet/minecraft/class_3195;)Lnet/minecraft/class_3195$class_7302;
@@ -67,8 +59,6 @@ CLASS net/minecraft/class_3195 net/minecraft/world/gen/structure/Structure
 	METHOD method_42700 (Ljava/util/function/Function;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 1 instance
 	METHOD method_42701 getTerrainAdaptation ()Lnet/minecraft/class_5847;
-	METHOD method_47931 (Lnet/minecraft/class_3195$class_7149;Lnet/minecraft/class_3195$class_7150;)Z
-		ARG 1 position
 	METHOD method_47932 getValidStructurePosition (Lnet/minecraft/class_3195$class_7149;)Ljava/util/Optional;
 		ARG 1 context
 	METHOD method_59863 getAverageCornerHeights (Lnet/minecraft/class_3195$class_7149;IIII)I
@@ -82,15 +72,14 @@ CLASS net/minecraft/class_3195 net/minecraft/world/gen/structure/Structure
 		FIELD comp_564 noiseConfig Lnet/minecraft/class_7138;
 		FIELD comp_569 world Lnet/minecraft/class_5539;
 		FIELD comp_570 biomePredicate Ljava/util/function/Predicate;
-		METHOD <init> (Lnet/minecraft/class_5455;Lnet/minecraft/class_2794;Lnet/minecraft/class_6780;Lnet/minecraft/class_7138;Lnet/minecraft/class_3485;JLnet/minecraft/class_1923;Lnet/minecraft/class_5539;Ljava/util/function/Predicate;)V
+		METHOD <init> (Lnet/minecraft/class_5455;Lnet/minecraft/class_2794;Lnet/minecraft/class_1966;Lnet/minecraft/class_6544$class_6552;Lnet/minecraft/class_7138;Lnet/minecraft/class_3485;JLnet/minecraft/class_1923;Lnet/minecraft/class_5539;Ljava/util/function/Predicate;)V
 			ARG 1 dynamicRegistryManager
 			ARG 2 chunkGenerator
-			ARG 4 noiseConfig
-			ARG 5 structureTemplateManager
-			ARG 6 seed
-			ARG 8 chunkPos
-			ARG 9 world
-			ARG 10 biomePredicate
+			ARG 6 structureTemplateManager
+			ARG 7 seed
+			ARG 9 chunkPos
+			ARG 10 world
+			ARG 11 biomePredicate
 		METHOD comp_561 dynamicRegistryManager ()Lnet/minecraft/class_5455;
 		METHOD comp_564 noiseConfig ()Lnet/minecraft/class_7138;
 		METHOD comp_569 world ()Lnet/minecraft/class_5539;

@@ -5,9 +5,9 @@ CLASS net/minecraft/class_11676 net/minecraft/client/render/block/entity/ShelfBl
 	METHOD <init> (Lnet/minecraft/class_5614$class_5615;)V
 		ARG 1 context
 	METHOD method_72957 renderItem (Lnet/minecraft/class_11969;Lnet/minecraft/class_10444;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;IF)V
-		ARG 1 state
-		ARG 2 itemRenderState
-		ARG 3 matrices
-		ARG 4 queue
-		ARG 5 overlay
-		ARG 6 rotationDegrees
+		ARG 0 state
+		ARG 1 itemRenderState
+		ARG 2 matrices
+		ARG 3 queue
+		ARG 4 overlay
+		ARG 5 rotationDegrees

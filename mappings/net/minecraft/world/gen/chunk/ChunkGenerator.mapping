@@ -13,12 +13,6 @@ CLASS net/minecraft/class_2794 net/minecraft/world/gen/chunk/ChunkGenerator
 		ARG 2 generationSettingsGetter
 	METHOD method_1_6742 getSpawnPos (Lnet/minecraft/class_7138;)Lnet/minecraft/class_1923;
 		ARG 1 noiseConfig
-	METHOD method_12088 populateNoise (Lnet/minecraft/class_6748;Lnet/minecraft/class_7138;Lnet/minecraft/class_5138;Lnet/minecraft/class_2791;)Ljava/util/concurrent/CompletableFuture;
-		COMMENT Generates the base shape of the chunk out of the basic block states as decided by this chunk generator's config.
-		ARG 1 blender
-		ARG 2 noiseConfig
-		ARG 3 structureAccessor
-		ARG 4 chunk
 	METHOD method_12098 getBiomeSource ()Lnet/minecraft/class_1966;
 	METHOD method_12100 getSpawnHeight (Lnet/minecraft/class_5539;)I
 		ARG 1 world
@@ -45,22 +39,6 @@ CLASS net/minecraft/class_2794 net/minecraft/world/gen/chunk/ChunkGenerator
 	METHOD method_12104 getWorldHeight ()I
 	METHOD method_12107 populateEntities (Lnet/minecraft/class_3233;)V
 		ARG 1 region
-	METHOD method_12108 carve (Lnet/minecraft/class_3233;Lnet/minecraft/class_7138;Lnet/minecraft/class_4543;Lnet/minecraft/class_5138;Lnet/minecraft/class_2791;Lnet/minecraft/class_6748;)V
-		COMMENT Generates caves for the given chunk.
-		ARG 1 chunkRegion
-		ARG 2 noiseConfig
-		ARG 3 world
-		ARG 4 structureAccessor
-		ARG 5 chunk
-		ARG 6 blender
-	METHOD method_12110 buildSurface (Lnet/minecraft/class_5138;Lnet/minecraft/class_7138;Lnet/minecraft/class_2791;Lnet/minecraft/class_4543;Lnet/minecraft/class_6748;Ljava/util/Set;)V
-		COMMENT Places the surface blocks of the biomes after the noise has been generated.
-		ARG 1 structureAccessor
-		ARG 2 noiseConfig
-		ARG 3 chunk
-		ARG 4 world
-		ARG 5 blender
-		ARG 6 includedBiomes
 	METHOD method_12113 getEntitySpawnList (Lnet/minecraft/class_1937;Lnet/minecraft/class_5138;Lnet/minecraft/class_1311;Lnet/minecraft/class_2338;)Lnet/minecraft/class_6012;
 		ARG 2 accessor
 		ARG 3 group
@@ -107,11 +85,10 @@ CLASS net/minecraft/class_2794 net/minecraft/world/gen/chunk/ChunkGenerator
 		ARG 4 noiseConfig
 	METHOD method_28506 getCodec ()Lcom/mojang/serialization/MapCodec;
 	METHOD method_33730 getMinimumY ()I
-	METHOD method_38264 getStructureReferences (Lnet/minecraft/class_5138;Lnet/minecraft/class_2791;Lnet/minecraft/class_4076;Lnet/minecraft/class_3195;)I
+	METHOD method_38264 getStructureReferences (Lnet/minecraft/class_5138;Lnet/minecraft/class_2791;Lnet/minecraft/class_3195;)I
 		ARG 0 structureAccessor
 		ARG 1 chunk
-		ARG 2 sectionPos
-		ARG 3 structure
+		ARG 2 structure
 	METHOD method_38265 (Lnet/minecraft/class_5281;Lnet/minecraft/class_5138;Lnet/minecraft/class_2919;Lnet/minecraft/class_2791;Lnet/minecraft/class_1923;Lnet/minecraft/class_3449;)V
 		ARG 6 start
 	METHOD method_38268 (Lnet/minecraft/class_3195;)Ljava/lang/Integer;
@@ -145,25 +122,20 @@ CLASS net/minecraft/class_2794 net/minecraft/world/gen/chunk/ChunkGenerator
 		ARG 4 center
 		ARG 5 skipReferencedStructures
 		ARG 6 placement
-	METHOD method_40450 appendDebugHudText (Ljava/util/List;Lnet/minecraft/class_7138;Lnet/minecraft/class_2338;)V
-		ARG 1 text
-		ARG 2 noiseConfig
-		ARG 3 pos
+	METHOD method_40450 appendDebugHudText (Ljava/util/List;Lnet/minecraft/class_7138;Lnet/minecraft/class_2338;Lnet/minecraft/class_1_1521;)V
 	METHOD method_41040 (Lnet/minecraft/class_5138;Lnet/minecraft/class_2338;Lnet/minecraft/class_3449;)Z
 		ARG 2 start
-	METHOD method_41041 (Lnet/minecraft/class_5138;Lnet/minecraft/class_4076;Lnet/minecraft/class_2791;Lnet/minecraft/class_7869;Lnet/minecraft/class_1923;Lnet/minecraft/class_5455;Lnet/minecraft/class_7138;Lnet/minecraft/class_3485;Lnet/minecraft/class_5321;Lnet/minecraft/class_6780;Lnet/minecraft/class_6880;)V
-		ARG 11 structureSet
-	METHOD method_41044 trySetStructureStart (Lnet/minecraft/class_7059$class_7060;Lnet/minecraft/class_5138;Lnet/minecraft/class_5455;Lnet/minecraft/class_7138;Lnet/minecraft/class_3485;JLnet/minecraft/class_2791;Lnet/minecraft/class_1923;Lnet/minecraft/class_4076;Lnet/minecraft/class_5321;Lnet/minecraft/class_6780;)Z
+	METHOD method_41041 (Lnet/minecraft/class_5138;Lnet/minecraft/class_2791;Lnet/minecraft/class_7869;Lnet/minecraft/class_1923;Lnet/minecraft/class_5455;Lnet/minecraft/class_7138;Lnet/minecraft/class_3485;Lnet/minecraft/class_5321;Lnet/minecraft/class_6544$class_6552;Lnet/minecraft/class_6880;)V
+		ARG 10 structureSet
+	METHOD method_41044 trySetStructureStart (Lnet/minecraft/class_7059$class_7060;Lnet/minecraft/class_5138;Lnet/minecraft/class_5455;Lnet/minecraft/class_7138;Lnet/minecraft/class_3485;JLnet/minecraft/class_2791;Lnet/minecraft/class_1923;Lnet/minecraft/class_5321;Lnet/minecraft/class_6544$class_6552;)Z
 		ARG 1 weightedEntry
 		ARG 2 structureAccessor
 		ARG 3 dynamicRegistryManager
-		ARG 4 noiseConfig
 		ARG 5 structureManager
 		ARG 6 seed
 		ARG 8 chunk
 		ARG 9 pos
-		ARG 10 sectionPos
-		ARG 11 dimension
+		ARG 10 dimension
 	METHOD method_41045 (Lnet/minecraft/class_3449;Lnet/minecraft/class_2378;)Ljava/lang/String;
 		ARG 1 structureTypeRegistry
 	METHOD method_41047 (Lnet/minecraft/class_2338;Lnet/minecraft/class_3449;)Z

@@ -379,12 +379,6 @@ CLASS net/minecraft/class_1792 net/minecraft/item/Item
 			ARG 1 registries
 		METHOD method_1_6427 potteryPattern (Lnet/minecraft/class_5321;)Lnet/minecraft/class_1792$class_1793;
 			ARG 1 pattern
-		METHOD method_1_7294 (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_1_1156;
-			ARG 0 registries
-		METHOD method_1_7295 (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_1_1156;
-			ARG 0 registries
-		METHOD method_1_7296 (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_1_1156;
-			ARG 0 registries
 		METHOD method_1_7584 compostable (Lnet/minecraft/class_5321;)Lnet/minecraft/class_1792$class_1793;
 			ARG 1 layers
 		METHOD method_1_8245 brewingFuel (Lnet/minecraft/class_5321;)Lnet/minecraft/class_1792$class_1793;

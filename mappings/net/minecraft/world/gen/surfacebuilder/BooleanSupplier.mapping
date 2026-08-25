@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_6692 net/minecraft/world/gen/surfacebuilder/BooleanSupplier
+	METHOD method_39069 get ()Z

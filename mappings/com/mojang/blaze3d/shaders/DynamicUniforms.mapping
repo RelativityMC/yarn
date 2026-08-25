@@ -9,7 +9,7 @@ CLASS net/minecraft/class_11282 com/mojang/blaze3d/shaders/DynamicUniforms
 	FIELD field_60094 DEFAULT_CAPACITY I
 	FIELD field_60095 transformsStorage Lnet/minecraft/class_11280;
 	FIELD field_64216 CHUNK_SECTIONS_SIZE I
-	FIELD field_64217 chunkSectionsStorage Lnet/minecraft/class_11280;
+	FIELD field_64217 chunkSectionsStorage Lnet/minecraft/class_1_1502;
 	METHOD method_1_4251 writeTransforms (Lnet/minecraft/class_11282$class_11283;)Lnet/minecraft/class_1_1254;
 		ARG 1 value
 	METHOD method_1_4252 writeTransforms (Lorg/joml/Matrix4f;)Lnet/minecraft/class_1_1254;

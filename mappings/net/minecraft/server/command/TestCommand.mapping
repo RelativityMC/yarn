@@ -10,8 +10,6 @@ CLASS net/minecraft/class_4527 net/minecraft/server/command/TestCommand
 		ARG 4 style
 	METHOD method_1_6642 (Ljava/lang/String;Lnet/minecraft/class_4527$class_1_1056;Lnet/minecraft/class_2583;)Lnet/minecraft/class_2583;
 		ARG 2 style
-	METHOD method_1_6644 sendCoordinates (Lnet/minecraft/class_2168;Ljava/util/Set;)V
-		ARG 0 source
 	METHOD method_1_6645 getTestInfo (Lnet/minecraft/class_2168;Lnet/minecraft/class_5321;)Lnet/minecraft/class_4527$class_1_1056;
 		ARG 0 source
 	METHOD method_22264 executePos (Lnet/minecraft/class_2168;Ljava/lang/String;)I

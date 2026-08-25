@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_838 net/minecraft/world/gen/surfacebuilder/BiomeMaterialRule
+	METHOD method_1_5125 isDisjoint (Ljava/util/Set;)Z
+		ARG 1 contextBiomes
+	METHOD method_1_5128 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_5129 isSuperset (Ljava/util/Set;)Z
+		ARG 1 contextBiomes

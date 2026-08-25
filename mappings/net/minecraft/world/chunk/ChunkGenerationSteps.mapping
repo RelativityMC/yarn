@@ -7,17 +7,11 @@ CLASS net/minecraft/class_9768 net/minecraft/world/chunk/ChunkGenerationSteps
 		ARG 1 status
 	METHOD method_60519 (Lnet/minecraft/class_9770$class_9771;)Lnet/minecraft/class_9770$class_9771;
 		ARG 0 builder
-	METHOD method_60520 (Lnet/minecraft/class_9770$class_9771;)Lnet/minecraft/class_9770$class_9771;
-		ARG 0 builder
 	METHOD method_60521 (Lnet/minecraft/class_9770$class_9771;)Lnet/minecraft/class_9770$class_9771;
 		ARG 0 builder
 	METHOD method_60522 (Lnet/minecraft/class_9770$class_9771;)Lnet/minecraft/class_9770$class_9771;
 		ARG 0 builder
-	METHOD method_60523 (Lnet/minecraft/class_9770$class_9771;)Lnet/minecraft/class_9770$class_9771;
-		ARG 0 builder
 	METHOD method_60524 (Lnet/minecraft/class_9770$class_9771;)Lnet/minecraft/class_9770$class_9771;
-		ARG 0 builder
-	METHOD method_60525 (Lnet/minecraft/class_9770$class_9771;)Lnet/minecraft/class_9770$class_9771;
 		ARG 0 builder
 	METHOD method_60526 (Lnet/minecraft/class_9770$class_9771;)Lnet/minecraft/class_9770$class_9771;
 		ARG 0 builder
@@ -39,11 +33,7 @@ CLASS net/minecraft/class_9768 net/minecraft/world/chunk/ChunkGenerationSteps
 		ARG 0 builder
 	METHOD method_60535 (Lnet/minecraft/class_9770$class_9771;)Lnet/minecraft/class_9770$class_9771;
 		ARG 0 builder
-	METHOD method_60536 (Lnet/minecraft/class_9770$class_9771;)Lnet/minecraft/class_9770$class_9771;
-		ARG 0 builder
 	METHOD method_60537 (Lnet/minecraft/class_9770$class_9771;)Lnet/minecraft/class_9770$class_9771;
-		ARG 0 builder
-	METHOD method_60538 (Lnet/minecraft/class_9770$class_9771;)Lnet/minecraft/class_9770$class_9771;
 		ARG 0 builder
 	METHOD method_60539 (Lnet/minecraft/class_9770$class_9771;)Lnet/minecraft/class_9770$class_9771;
 		ARG 0 builder

@@ -55,8 +55,5 @@ CLASS net/minecraft/class_10151 net/minecraft/client/shader/ShaderLoader
 		METHOD method_63527 loadProcessor (Lnet/minecraft/class_2960;Ljava/util/Set;)Lnet/minecraft/class_279;
 			ARG 1 id
 			ARG 2 availableExternalTargets
-		METHOD method_68498 getSource (Lnet/minecraft/class_2960;Lnet/minecraft/class_1_1229;)Ljava/lang/String;
-			ARG 1 id
-			ARG 2 type
 		METHOD method_71129 (Ljava/util/Optional;)V
 			ARG 0 processor

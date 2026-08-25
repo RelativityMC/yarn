@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_1_1397 net/minecraft/util/math/noise/NoiseSampler
 	METHOD method_1_9203 getRange ()Lnet/minecraft/class_1_1150;
-	METHOD method_1_9473 fill ([FLnet/minecraft/class_1_1441;DDF)V
+	METHOD method_1_9473 fill (Lnet/minecraft/class_1_1516;Lnet/minecraft/class_1_1441;DDF)V
 		COMMENT Samples multiple values from this noise sampler, adding
 		COMMENT {@code outputScale * this.sample(x * scaleXz, y * scaleY, z * scaleXz)}
 		COMMENT for every point {@code (x, y, z)} in {@code region} to the corresponding
@@ -8,7 +8,6 @@ CLASS net/minecraft/class_1_1397 net/minecraft/util/math/noise/NoiseSampler
 		COMMENT
 		COMMENT This can be more performant than calling {@link #sample(double, double, double)}
 		COMMENT repeatedly.
-		ARG 1 samplesOut
 		ARG 2 region
 		ARG 3 scaleXz
 		ARG 5 scaleY

@@ -15,9 +15,8 @@ CLASS net/minecraft/class_6748 net/minecraft/world/gen/chunk/Blender
 	METHOD method_39336 getNoBlending ()Lnet/minecraft/class_6748;
 	METHOD method_39337 getBlendOffset (D)D
 		ARG 0 height
-	METHOD method_39338 applyBlendDensity (Lnet/minecraft/class_6910$class_6912;F)F
-		ARG 1 pos
-		ARG 2 density
+	METHOD method_39338 applyBlendDensity (IIIF)F
+		ARG 4 density
 	METHOD method_39339 (IIILorg/apache/commons/lang3/mutable/MutableDouble;Lorg/apache/commons/lang3/mutable/MutableDouble;Lorg/apache/commons/lang3/mutable/MutableDouble;IIIF)V
 		ARG 6 biomeX
 		ARG 7 halfSectionY

@@ -364,8 +364,6 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 	METHOD method_51164 copyAndEmpty ()Lnet/minecraft/class_1799;
 	METHOD method_54466 onCraftByCrafter (Lnet/minecraft/class_1937;)V
 		ARG 1 world
-	METHOD method_56097 (Lnet/minecraft/class_1309;Lnet/minecraft/class_1304;Lnet/minecraft/class_1792;)V
-		ARG 2 item
 	METHOD method_56700 (Lnet/minecraft/class_1799;)Ljava/util/Optional;
 		ARG 0 stack
 	METHOD method_56701 copyComponentsToNewStack (Lnet/minecraft/class_1935;I)Lnet/minecraft/class_1799;
@@ -543,8 +541,6 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 	METHOD method_61653 damage (ILnet/minecraft/class_1657;)V
 		ARG 1 amount
 		ARG 2 player
-	METHOD method_61654 (Lnet/minecraft/class_1792;)V
-		ARG 0 item
 	METHOD method_61655 canRepairWith (Lnet/minecraft/class_1799;)Z
 		ARG 1 ingredient
 	METHOD method_61657 shouldBreak ()Z

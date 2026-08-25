@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_1_709 net/minecraft/client/shader/SpirvShaderCompiler
-	FIELD field_1_3640 compiler J
-	FIELD field_1_9472 shaderSourceGetter Lnet/minecraft/class_12289;
+	FIELD field_1_3640 compiler Lit/unimi/dsi/fastutil/longs/LongArrayList;
 	FIELD field_1_9473 resolver Lorg/lwjgl/util/shaderc/ShadercIncludeResolve;
 	FIELD field_1_9474 resolveResultReleaser Lorg/lwjgl/util/shaderc/ShadercIncludeResultRelease;
 	FIELD field_1_9475 zZeroToOne Z
@@ -9,19 +8,12 @@ CLASS net/minecraft/class_1_709 net/minecraft/client/shader/SpirvShaderCompiler
 	METHOD <init> (ZZ)V
 		ARG 1 zZeroToOne
 		ARG 2 hasShaderDrawParameters
-	METHOD method_1_9108 compile (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/class_1_1229;Lnet/minecraft/class_10149;Lnet/minecraft/class_12289;)Lnet/minecraft/class_1_1372;
+	METHOD method_1_9108 compile (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/class_1_1229;Lnet/minecraft/class_10149;)Lnet/minecraft/class_1_1372;
 		ARG 1 fileName
 		ARG 2 source
 		ARG 3 type
 		ARG 4 defines
-		ARG 5 shaderSourceGetter
 	METHOD method_1_9109 createCompileOptions ()J
-	METHOD method_1_9110 (JJIJJ)J
-		ARG 1 userData
-		ARG 3 requestedSource
-		ARG 5 type
-		ARG 6 requestingSource
-		ARG 8 includeDepth
 	METHOD method_1_9111 (JJ)V
 		ARG 0 userData
 		ARG 2 includeResult

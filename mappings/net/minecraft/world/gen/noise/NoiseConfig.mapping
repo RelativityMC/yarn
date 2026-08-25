@@ -1,45 +1,25 @@
 CLASS net/minecraft/class_7138 net/minecraft/world/gen/noise/NoiseConfig
-	FIELD field_1_8127 spawnTargets Ljava/util/List;
-	FIELD field_1_9085 aquifer Ljava/util/Optional;
-	FIELD field_1_9086 oreVeins Ljava/util/List;
 	FIELD field_1_9875 seed J
 	FIELD field_38254 randomDeriver Lnet/minecraft/class_6574;
 	FIELD field_38256 noiseParametersRegistry Lnet/minecraft/class_7871;
 	FIELD field_38257 noiseRouter Lnet/minecraft/class_6953;
-	FIELD field_38258 multiNoiseSampler Lnet/minecraft/class_6544$class_6552;
 	FIELD field_38259 surfaceBuilder Lnet/minecraft/class_6724;
 	FIELD field_38262 noises Ljava/util/Map;
 	FIELD field_38263 randomDerivers Ljava/util/Map;
-	METHOD <init> (Lnet/minecraft/class_7871;JZLnet/minecraft/class_2680;ILnet/minecraft/class_6953;Ljava/util/List;Ljava/util/Optional;Ljava/util/List;)V
+	METHOD <init> (Lnet/minecraft/class_7871;JZLnet/minecraft/class_2680;ILnet/minecraft/class_6953;)V
 		ARG 1 noiseParametersLookup
 		ARG 2 seed
 		ARG 4 legacyRandom
 		ARG 5 defaultState
 		ARG 6 seaLevel
-		ARG 7 noiseRouter
-		ARG 8 spawnTargets
-		ARG 9 aquifer
-		ARG 10 oreVeins
-	METHOD method_1_7406 (Lnet/minecraft/class_7138$class_7271;Lnet/minecraft/class_6910$class_6915;Lnet/minecraft/class_1_1172;)Lnet/minecraft/class_1_1172$class_1_1173;
-		ARG 2 spawnTarget
-	METHOD method_1_7407 getSpawnTargets ()Ljava/util/List;
-	METHOD method_1_8680 getAquifer ()Ljava/util/Optional;
-	METHOD method_1_8681 (Lnet/minecraft/class_7138$class_7271;Lnet/minecraft/class_6350$class_1_1311;)Lnet/minecraft/class_6350$class_1_1311;
-		ARG 1 aq
-	METHOD method_1_8682 (Lnet/minecraft/class_7138$class_7271;Lnet/minecraft/class_6955;)Lnet/minecraft/class_6955;
-		ARG 1 vein
-	METHOD method_1_8683 getOreVeins ()Ljava/util/List;
 	METHOD method_1_9612 getSeed ()J
-	METHOD method_41556 create (Lnet/minecraft/class_7871;JZLnet/minecraft/class_2680;ILnet/minecraft/class_6953;Ljava/util/List;Ljava/util/Optional;Ljava/util/List;)Lnet/minecraft/class_7138;
+	METHOD method_41556 create (Lnet/minecraft/class_7871;JZLnet/minecraft/class_2680;ILnet/minecraft/class_6953;)Lnet/minecraft/class_7138;
 		ARG 0 noiseParametersLookup
 		ARG 1 seed
 		ARG 3 legacyRandom
 		ARG 4 defaultState
 		ARG 5 seaLevel
 		ARG 6 noiseRouter
-		ARG 7 spawnTargets
-		ARG 8 aquifer
-		ARG 9 oreVeins
 	METHOD method_41557 create (Lnet/minecraft/class_7871;JLnet/minecraft/class_5284;)Lnet/minecraft/class_7138;
 		ARG 0 noiseParametersLookup
 		ARG 1 legacyWorldSeed
@@ -52,16 +32,7 @@ CLASS net/minecraft/class_7138 net/minecraft/world/gen/noise/NoiseConfig
 		ARG 1 id
 	METHOD method_41561 (Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;)Lnet/minecraft/class_6574;
 		ARG 2 id2
-	METHOD method_42370 getNoiseRouter ()Lnet/minecraft/class_6953;
-	METHOD method_42371 getMultiNoiseSampler ()Lnet/minecraft/class_6544$class_6552;
 	METHOD method_42372 getSurfaceBuilder ()Lnet/minecraft/class_6724;
 	CLASS 1 1
-		FIELD field_40362 unwrapped Ljava/util/Map;
-		METHOD method_45512 unwrap (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
-			ARG 1 densityFunction
-	CLASS class_7271 LegacyNoiseDensityFunctionVisitor
-		FIELD field_38267 cache Ljava/util/Map;
 		METHOD method_42375 createRandom (J)Lnet/minecraft/class_5819;
 			ARG 1 seed
-		METHOD method_42376 applyNotCached (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
-			ARG 1 densityFunction

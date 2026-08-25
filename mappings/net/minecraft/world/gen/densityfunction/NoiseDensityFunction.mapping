@@ -1,4 +1,0 @@
-CLASS net/minecraft/class_6931 net/minecraft/world/gen/densityfunction/NoiseDensityFunction
-	FIELD field_37090 NOISE_CODEC Lcom/mojang/serialization/MapCodec;
-	METHOD method_41083 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance

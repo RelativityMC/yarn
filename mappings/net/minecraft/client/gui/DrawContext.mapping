@@ -289,7 +289,7 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 4 y
 		ARG 5 color
 		ARG 6 shadow
-	METHOD method_51440 drawWrappedText (Lnet/minecraft/class_327;Lnet/minecraft/class_5348;IIIIZ)V
+	METHOD method_51440 drawWrappedText (Lnet/minecraft/class_327;Lnet/minecraft/class_5348;IIIIZ)I
 		ARG 1 textRenderer
 		ARG 2 text
 		ARG 3 x
@@ -489,7 +489,7 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 1 stack
 		ARG 2 x
 		ARG 3 y
-	METHOD method_65179 drawWrappedTextWithShadow (Lnet/minecraft/class_327;Lnet/minecraft/class_5348;IIII)V
+	METHOD method_65179 drawWrappedTextWithShadow (Lnet/minecraft/class_327;Lnet/minecraft/class_5348;IIII)I
 		ARG 1 textRenderer
 		ARG 2 text
 		ARG 3 x

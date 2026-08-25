@@ -4,7 +4,6 @@ CLASS net/minecraft/class_11398 net/minecraft/client/render/fog/AtmosphericFogMo
 		ARG 1 camera
 		ARG 2 world
 		ARG 3 renderTickCounter
-	METHOD method_76556 adjustFogColorFromWeather (IFF)I
-		ARG 0 color
+	METHOD method_76556 adjustFogColorFromWeather (Lorg/joml/Vector3fc;FF)Lorg/joml/Vector3fc;
 		ARG 1 rainGradient
 		ARG 2 thunderGradient

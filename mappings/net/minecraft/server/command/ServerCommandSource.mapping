@@ -11,39 +11,25 @@ CLASS net/minecraft/class_2168 net/minecraft/server/command/ServerCommandSource
 	FIELD field_9822 rotation Lnet/minecraft/class_241;
 	FIELD field_9823 silent Z
 	FIELD field_9824 REQUIRES_PLAYER_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
-	FIELD field_9825 displayName Lnet/minecraft/class_2561;
-	FIELD field_9826 name Ljava/lang/String;
 	FIELD field_9827 REQUIRES_ENTITY_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_9828 world Lnet/minecraft/class_3218;
 	FIELD field_39183 signedArguments Lnet/minecraft/class_7448;
 	FIELD field_39834 messageChainTaskQueue Lnet/minecraft/class_7620;
 	FIELD field_47159 returnValueConsumer Lnet/minecraft/class_8935;
 	FIELD field_63437 permissions Lnet/minecraft/class_12096;
-	METHOD <init> (Lnet/minecraft/class_2165;Lnet/minecraft/class_243;Lnet/minecraft/class_241;Lnet/minecraft/class_3218;Lnet/minecraft/class_12096;Ljava/lang/String;Lnet/minecraft/class_2561;Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_1297;)V
+	METHOD <init> (Lnet/minecraft/class_2165;Lnet/minecraft/class_243;Lnet/minecraft/class_241;Lnet/minecraft/class_3218;Lnet/minecraft/class_12096;Lnet/minecraft/class_2168$class_1_1487;Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_1297;ZLnet/minecraft/class_8935;Lnet/minecraft/class_2183$class_2184;Lnet/minecraft/class_7448;Lnet/minecraft/class_7620;)V
 		ARG 1 output
 		ARG 2 pos
 		ARG 3 rot
 		ARG 4 world
 		ARG 5 permissions
-		ARG 6 name
-		ARG 7 displayName
-		ARG 8 server
-		ARG 9 entity
-	METHOD <init> (Lnet/minecraft/class_2165;Lnet/minecraft/class_243;Lnet/minecraft/class_241;Lnet/minecraft/class_3218;Lnet/minecraft/class_12096;Ljava/lang/String;Lnet/minecraft/class_2561;Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_1297;ZLnet/minecraft/class_8935;Lnet/minecraft/class_2183$class_2184;Lnet/minecraft/class_7448;Lnet/minecraft/class_7620;)V
-		ARG 1 output
-		ARG 2 pos
-		ARG 3 rot
-		ARG 4 world
-		ARG 5 permissions
-		ARG 6 name
-		ARG 7 displayName
-		ARG 8 server
-		ARG 9 entity
-		ARG 10 silent
-		ARG 11 resultStorer
-		ARG 12 entityAnchor
-		ARG 13 signedArguments
-		ARG 14 messageChainTaskQueue
+		ARG 7 server
+		ARG 8 entity
+		ARG 9 silent
+		ARG 10 resultStorer
+		ARG 11 entityAnchor
+		ARG 12 signedArguments
+		ARG 13 messageChainTaskQueue
 	METHOD method_9206 withPermissions (Lnet/minecraft/class_12096;)Lnet/minecraft/class_2168;
 		ARG 1 permissions
 	METHOD method_9207 getPlayerOrThrow ()Lnet/minecraft/class_3222;

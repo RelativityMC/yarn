@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_6715 net/minecraft/world/gen/surfacebuilder/BlockStateRule
+	COMMENT Returns a {@link BlockState} to generate at a given position, or {@code null}.
+	METHOD method_1_181 tryApply (III)Lnet/minecraft/class_2680;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

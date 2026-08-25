@@ -1,7 +1,5 @@
 CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMainScreen
 	FIELD field_1_9849 PURCHASE_TEXT Lnet/minecraft/class_2561;
-	FIELD field_1_9850 JOIN_REALM_TEXT Lnet/minecraft/class_2561;
-	FIELD field_1_9851 joinRealmButton Lnet/minecraft/class_4185;
 	FIELD field_19464 regionsPinged Z
 	FIELD field_19475 LOGGER Lorg/slf4j/Logger;
 	FIELD field_19477 rateLimiter Lcom/google/common/util/concurrent/RateLimiter;
@@ -29,19 +27,12 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 	FIELD field_42996 seenNotifications Ljava/util/Set;
 	FIELD field_42997 notifications Ljava/util/List;
 	FIELD field_45191 CLOSED_STATUS_TEXTURE Lnet/minecraft/class_2960;
-	FIELD field_45192 INVITE_ICON_TEXTURE Lnet/minecraft/class_2960;
-	FIELD field_45193 NEWS_ICON_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_45195 NO_REALMS_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_45196 MENU_TEXT Lnet/minecraft/class_2561;
 	FIELD field_45197 LOADING_TEXT Lnet/minecraft/class_2561;
 	FIELD field_45198 NO_REALMS_TEXT Lnet/minecraft/class_2561;
-	FIELD field_45199 NO_PENDING_TOOLTIP Lnet/minecraft/class_2561;
-	FIELD field_45200 PENDING_TOOLTIP Lnet/minecraft/class_2561;
 	FIELD field_45201 INFO_ICON_TEXTURE Lnet/minecraft/class_2960;
-	FIELD field_45203 newsLink Ljava/lang/String;
 	FIELD field_45204 purchaseButton Lnet/minecraft/class_4185;
-	FIELD field_45205 inviteButton Lnet/minecraft/class_4325$class_8651;
-	FIELD field_45206 newsButton Lnet/minecraft/class_4325$class_8651;
 	FIELD field_45207 loadStatus Lnet/minecraft/class_4325$class_8650;
 	FIELD field_45208 layout Lnet/minecraft/class_8132;
 	FIELD field_45213 availabilityInfo Ljava/util/concurrent/CompletableFuture;
@@ -60,8 +51,6 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 	FIELD field_54806 HARDCORE_ICON_TEXTURE Lnet/minecraft/class_2960;
 	METHOD <init> (Lnet/minecraft/class_437;)V
 		ARG 1 parent
-	METHOD method_1_9580 (Lnet/minecraft/class_4185;)V
-		ARG 1 button
 	METHOD method_1_9581 showJoinRealmsScreen ()V
 	METHOD method_20853 play (Lnet/minecraft/class_4877;Lnet/minecraft/class_437;)V
 		ARG 0 serverData
@@ -119,7 +108,7 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 	METHOD method_52632 refreshButtons ()V
 	METHOD method_52634 (Lnet/minecraft/class_8647$class_8648;)V
 		ARG 1 availabilityInfo
-	METHOD method_52635 onLoadStatusChange (Lnet/minecraft/class_4325$class_8650;)V
+	METHOD method_52635 onLoadStatusChange (Lnet/minecraft/class_4325$class_8650;Z)V
 		ARG 1 loadStatus
 	METHOD method_52636 (Lnet/minecraft/class_4325;Lnet/minecraft/class_339;)V
 		ARG 1 child
@@ -129,16 +118,10 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 		ARG 3 color
 	METHOD method_52638 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
-	METHOD method_52639 (Ljava/lang/Boolean;)V
-		ARG 1 trialAvailable
-	METHOD method_52640 (Lnet/minecraft/class_2561;Lnet/minecraft/class_4185;)V
-		ARG 2 button
 	METHOD method_52641 makeLayoutFor (Lnet/minecraft/class_4325$class_8650;)Lnet/minecraft/class_8132;
 		ARG 1 loadStatus
 	METHOD method_52642 (Lnet/minecraft/class_4325;Lnet/minecraft/class_339;)V
 		ARG 1 child
-	METHOD method_52643 (Lnet/minecraft/class_4185;)V
-		ARG 1 button
 	METHOD method_52644 makeInnerLayout (Lnet/minecraft/class_4325$class_8650;)Lnet/minecraft/class_8133;
 		ARG 1 loadStatus
 	METHOD method_52645 (Lnet/minecraft/class_4185;)V
@@ -148,8 +131,6 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 	METHOD method_52647 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
 	METHOD method_52648 (Lnet/minecraft/class_4185;)V
-		ARG 1 button
-	METHOD method_52649 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
 	METHOD method_53791 showBuyRealmsScreen ()V
 	METHOD method_53792 resetPendingInvitesCount ()V
@@ -318,21 +299,6 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 		METHOD method_1_71 request (Lnet/minecraft/class_4341;)Ljava/lang/Object;
 			ARG 1 client
 	CLASS class_8650 LoadStatus
-	CLASS class_8651 NotificationButtonWidget
-		FIELD field_45227 TEXTURES [Lnet/minecraft/class_2960;
-		FIELD field_45229 SIZE I
-		FIELD field_45230 TEXTURE_SIZE I
-		FIELD field_45231 notificationCount I
-		METHOD <init> (Lnet/minecraft/class_2561;Lnet/minecraft/class_2960;Lnet/minecraft/class_4185$class_4241;Lnet/minecraft/class_2561;)V
-			ARG 1 message
-			ARG 2 texture
-			ARG 3 onPress
-			ARG 4 tooltip
-		METHOD method_52651 setNotificationCount (I)V
-			ARG 1 notificationCount
-		METHOD method_52652 render (Lnet/minecraft/class_332;)V
-			ARG 1 context
-		METHOD method_53794 getNotificationCount ()I
 	CLASS class_8840 SnapshotEntry
 		FIELD field_46676 START_TEXT Lnet/minecraft/class_2561;
 		FIELD field_46678 tooltip Lnet/minecraft/class_9110;

@@ -33,9 +33,8 @@ CLASS net/minecraft/class_3443 net/minecraft/structure/StructurePiece
 		ARG 4 y
 		ARG 5 z
 		ARG 6 box
-	METHOD method_14918 fillOpenings (Lnet/minecraft/class_3443;Lnet/minecraft/class_6130;Lnet/minecraft/class_5819;)V
+	METHOD method_14918 fillOpenings (Lnet/minecraft/class_3443;Lnet/minecraft/class_6626;Lnet/minecraft/class_5819;)V
 		ARG 1 start
-		ARG 2 holder
 		ARG 3 random
 	METHOD method_14919 fillHalfEllipsoid (Lnet/minecraft/class_5281;Lnet/minecraft/class_3341;IIIIIILnet/minecraft/class_2680;Z)V
 		ARG 1 world

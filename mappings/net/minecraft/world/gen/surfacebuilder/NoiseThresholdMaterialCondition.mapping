@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_6703 net/minecraft/world/gen/surfacebuilder/NoiseThresholdMaterialCondition
+	FIELD field_35248 CODEC Lcom/mojang/serialization/MapCodec;
+	METHOD method_39081 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

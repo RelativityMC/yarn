@@ -492,8 +492,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_18867 deserializeBrain (Lnet/minecraft/class_4095$class_1_142;)Lnet/minecraft/class_4095;
 		ARG 1 state
 	METHOD method_18868 getBrain ()Lnet/minecraft/class_4095;
-	METHOD method_20235 sendEquipmentBreakStatus (Lnet/minecraft/class_1792;Lnet/minecraft/class_1304;)V
-		ARG 1 item
+	METHOD method_20235 sendEquipmentBreakStatus (Lnet/minecraft/class_1799;Lnet/minecraft/class_1304;)V
 		ARG 2 slot
 	METHOD method_20237 getEquipmentBreakStatus (Lnet/minecraft/class_1304;)B
 		ARG 0 slot
@@ -895,7 +894,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_75126 handleEffectsChanged ()V
 	METHOD method_75879 getTimeSinceLastKineticAttack (F)F
 		ARG 1 tickProgress
-	METHOD method_76086 floatIfRidden ()V
 	METHOD method_76087 travelInWater (Lnet/minecraft/class_243;DZD)V
 		ARG 1 movementInput
 		ARG 2 gravity

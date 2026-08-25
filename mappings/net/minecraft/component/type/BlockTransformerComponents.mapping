@@ -1,9 +1,4 @@
 CLASS net/minecraft/class_1_1180 net/minecraft/component/type/BlockTransformerComponents
-	FIELD field_1_8225 AXE Lnet/minecraft/class_1_1156;
-	FIELD field_1_8226 WOOD_STRIPPING_RULES Lnet/minecraft/class_1_1156$class_1_1157;
-	FIELD field_1_8228 HOE Lnet/minecraft/class_1_1156;
-	FIELD field_1_8230 ROOTED_DIRT_TILLING Lnet/minecraft/class_1_1156$class_1_1157;
-	FIELD field_1_8231 SHOVEL Lnet/minecraft/class_1_1156;
 	METHOD method_1_7536 rules (Ljava/util/Set;Lnet/minecraft/class_6880;Lnet/minecraft/class_1_1156$class_1_1161;)Ljava/util/List;
 		ARG 0 transformations
 		ARG 1 soundEvent

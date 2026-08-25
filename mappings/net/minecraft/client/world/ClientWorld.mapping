@@ -200,9 +200,6 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 		ARG 10 velocityX
 		ARG 12 velocityY
 		ARG 14 velocityZ
-	METHOD method_76540 (ILjava/lang/Integer;I)Ljava/lang/Integer;
-		ARG 2 color
-		ARG 3 time
 	METHOD method_76541 addClientSideAttributes (Lnet/minecraft/class_12205$class_12314;)Lnet/minecraft/class_12205$class_12314;
 		ARG 1 builder
 	METHOD method_76542 (Ljava/lang/Float;I)Ljava/lang/Float;

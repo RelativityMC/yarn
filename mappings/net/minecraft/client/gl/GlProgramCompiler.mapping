@@ -10,7 +10,7 @@ CLASS net/minecraft/class_1_1391 net/minecraft/client/gl/GlProgramCompiler
 	METHOD <init> (Lnet/minecraft/class_10861;Z)V
 		ARG 1 debugLabelManager
 		ARG 2 supportNonzeroBaseInstance
-	METHOD method_1_9126 compileProgram (Lnet/minecraft/class_1_1386$class_1_1387;)Lnet/minecraft/class_5944;
+	METHOD method_1_9126 compileProgram (Lnet/minecraft/class_1_1386$class_1_1387;Ljava/util/Map;)Lnet/minecraft/class_5944;
 		ARG 1 pipelineLayout
 	METHOD method_1_9127 compileShader (Ljava/lang/String;Lnet/minecraft/class_1_1229;Ljava/lang/String;)Lnet/minecraft/class_10141;
 		ARG 1 pipelineName

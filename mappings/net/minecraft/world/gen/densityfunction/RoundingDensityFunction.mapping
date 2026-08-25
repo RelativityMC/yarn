@@ -1,6 +1,6 @@
 CLASS net/minecraft/class_1_1340 net/minecraft/world/gen/densityfunction/RoundingDensityFunction
-	METHOD method_1_8828 round (F)F
-		ARG 1 value
+	METHOD method_1_8828 round (FLnet/minecraft/class_1_1340$class_1_1341;)F
+		ARG 0 value
 	METHOD method_1_9551 (F)F
 		ARG 1 value
 	CLASS class_1_1341 Mode

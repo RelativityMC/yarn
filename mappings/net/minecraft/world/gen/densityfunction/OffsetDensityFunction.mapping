@@ -1,8 +1,4 @@
 CLASS net/minecraft/class_6939 net/minecraft/world/gen/densityfunction/OffsetDensityFunction
-	METHOD method_40525 sample (DDD)F
-		ARG 1 x
-		ARG 3 y
-		ARG 5 z
 	CLASS class_6934 Shift
 		FIELD field_37094 CODEC_HOLDER Lcom/mojang/serialization/MapCodec;
 		METHOD method_1_8832 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

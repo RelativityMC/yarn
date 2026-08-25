@@ -21,11 +21,10 @@ CLASS net/minecraft/class_6724 net/minecraft/world/gen/surfacebuilder/SurfaceBui
 	FIELD field_35499 icebergPillarRoofNoise Lnet/minecraft/class_1_1397;
 	FIELD field_35500 icebergSurfaceNoise Lnet/minecraft/class_1_1397;
 	FIELD field_35680 surfaceSecondaryNoise Lnet/minecraft/class_1_1397;
-	METHOD <init> (Lnet/minecraft/class_7138;Lnet/minecraft/class_2680;ILnet/minecraft/class_6574;)V
+	METHOD <init> (Lnet/minecraft/class_7138;Lnet/minecraft/class_2680;ILnet/minecraft/class_6910;Lnet/minecraft/class_6574;)V
 		ARG 1 noiseConfig
 		ARG 2 defaultState
 		ARG 3 seaLevel
-		ARG 4 randomDeriver
 	METHOD method_39102 placeBadlandsPillar (Lnet/minecraft/class_6557;IIILnet/minecraft/class_5539;)V
 		ARG 1 column
 		ARG 2 x
@@ -44,7 +43,7 @@ CLASS net/minecraft/class_6724 net/minecraft/world/gen/surfacebuilder/SurfaceBui
 		ARG 5 x
 		ARG 6 z
 		ARG 7 surfaceY
-	METHOD method_39106 buildSurface (Lnet/minecraft/class_7138;Lnet/minecraft/class_4543;Lnet/minecraft/class_5868;Lnet/minecraft/class_2791;Lnet/minecraft/class_6568;Lnet/minecraft/class_6686$class_6708;Ljava/util/Set;)V
+	METHOD method_39106 buildSurface (Lnet/minecraft/class_7138;Lnet/minecraft/class_4543;Lnet/minecraft/class_5868;Lnet/minecraft/class_2791;Lnet/minecraft/class_1_1490;Lnet/minecraft/class_6708;Ljava/util/Set;)V
 		ARG 1 noiseConfig
 		ARG 2 biomeAccess
 		ARG 3 heightContext
@@ -59,13 +58,12 @@ CLASS net/minecraft/class_6724 net/minecraft/world/gen/surfacebuilder/SurfaceBui
 		ARG 1 terracottaBands
 		ARG 2 minBandSize
 		ARG 3 state
-	METHOD method_39110 applyMaterialRule (Lnet/minecraft/class_6686$class_6708;Lnet/minecraft/class_7138;Lnet/minecraft/class_5868;Ljava/util/function/Function;Lnet/minecraft/class_2791;Lnet/minecraft/class_6568;Lnet/minecraft/class_2338;Z)Ljava/util/Optional;
+	METHOD method_39110 applyMaterialRule (Lnet/minecraft/class_6708;Lnet/minecraft/class_7138;Lnet/minecraft/class_5868;Ljava/util/function/Function;Lnet/minecraft/class_2791;Lnet/minecraft/class_1_1552;Lnet/minecraft/class_2338;Z)Ljava/util/Optional;
 		ARG 1 rule
 		ARG 2 noiseConfig
 		ARG 3 heightContext
 		ARG 4 posToBiome
 		ARG 5 chunk
-		ARG 6 chunkNoiseSampler
 		ARG 7 pos
 		ARG 8 hasFluid
 	METHOD method_39333 isDefaultBlock (Lnet/minecraft/class_2680;)Z

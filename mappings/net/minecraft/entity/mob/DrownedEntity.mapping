@@ -1,15 +1,10 @@
 CLASS net/minecraft/class_1551 net/minecraft/entity/mob/DrownedEntity
 	FIELD field_1_1865 DIMENSIONS Lnet/minecraft/class_4048;
 	FIELD field_1_8159 shotDivergence F
-	FIELD field_1_9880 ANGER_TIME_PROVIDER Lnet/minecraft/class_6019;
-	FIELD field_1_9881 angerEndTime J
-	FIELD field_1_9882 angryAt Lnet/minecraft/class_10583;
 	FIELD field_7233 targetingUnderwater Z
 	METHOD method_1_4443 isExplicitlyTargetingUnderwater ()Z
 	METHOD method_1_7448 setShotDivergence (F)V
 		ARG 1 shotDivergence
-	METHOD method_1_7930 canTargetWithTrident ()Z
-	METHOD method_1_9621 shouldStopPursuingTarget ()Z
 	METHOD method_7013 setTargetingUnderwater (Z)V
 		ARG 1 targetingUnderwater
 	METHOD method_7016 hasFinishedCurrentPath ()Z
@@ -25,7 +20,6 @@ CLASS net/minecraft/class_1551 net/minecraft/entity/mob/DrownedEntity
 		ARG 4 random
 	METHOD method_55746 createDrownedAttributes ()Lnet/minecraft/class_5132$class_5133;
 	METHOD method_64461 canTarget (Lnet/minecraft/class_1309;Lnet/minecraft/class_3218;)Z
-		ARG 1 target
 		ARG 2 world
 	CLASS class_1552 DrownedAttackGoal
 		FIELD field_7235 drowned Lnet/minecraft/class_1551;

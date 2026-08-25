@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_1_1502
+	METHOD method_1_9250 getUsage ()I
+	METHOD method_1_9251 extend (Ljava/util/List;)Lnet/minecraft/class_1_1254;
+	METHOD method_1_9252 extendMultiple (Ljava/util/List;)[Lnet/minecraft/class_1_1254;
+	METHOD method_71100 clear ()V
+	METHOD method_71102 write (Lnet/minecraft/class_1_1502$class_11281;)Lnet/minecraft/class_1_1254;
+	METHOD method_71103 writeAll ([Lnet/minecraft/class_1_1502$class_11281;)[Lnet/minecraft/class_1_1254;
+	CLASS class_11281 Uploadable
+		METHOD method_71104 write (Ljava/nio/ByteBuffer;)V
+			ARG 1 buffer

@@ -12,8 +12,6 @@ CLASS net/minecraft/class_2268 net/minecraft/command/argument/LocalPosArgument
 	METHOD comp_4923 z ()D
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
-	METHOD method_1_8907 rotationToQuaternion (Lnet/minecraft/class_241;)Lorg/joml/Quaterniond;
-		ARG 0 rotation
 	METHOD method_9710 readCoordinate (Lcom/mojang/brigadier/StringReader;I)D
 		ARG 0 reader
 		ARG 1 startingCursorPos

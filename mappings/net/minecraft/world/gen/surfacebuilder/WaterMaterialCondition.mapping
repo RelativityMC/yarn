@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_6720 net/minecraft/world/gen/surfacebuilder/WaterMaterialCondition
+	FIELD field_35264 CODEC Lcom/mojang/serialization/MapCodec;
+	METHOD method_39096 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

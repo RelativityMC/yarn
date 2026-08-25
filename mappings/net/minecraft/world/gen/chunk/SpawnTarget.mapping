@@ -1,9 +1,1 @@
 CLASS net/minecraft/class_1_1172 net/minecraft/world/gen/chunk/SpawnTarget
-	METHOD method_1_7468 (Lnet/minecraft/class_6910$class_6915;Lnet/minecraft/class_6910$class_6915;Ljava/util/Map$Entry;)Lcom/mojang/datafixers/util/Pair;
-		ARG 2 entry
-	METHOD method_1_7469 prepare (Lnet/minecraft/class_6910$class_6915;Lnet/minecraft/class_6910$class_6915;)Lnet/minecraft/class_1_1172$class_1_1173;
-		ARG 1 legacyNoiseVisitor
-		ARG 2 parameterVisitor
-	CLASS class_1_1173 Prepared
-		METHOD method_1_7470 getSquaredDistance (Lnet/minecraft/class_6910$class_6914;)J
-			ARG 1 pos

@@ -3,7 +3,6 @@ CLASS net/minecraft/class_2791 net/minecraft/world/chunk/Chunk
 	FIELD field_34536 postProcessingLists [Lit/unimi/dsi/fastutil/shorts/ShortList;
 	FIELD field_34537 needsSaving Z
 	FIELD field_34538 pos Lnet/minecraft/class_1923;
-	FIELD field_34539 chunkNoiseSampler Lnet/minecraft/class_6568;
 	FIELD field_34540 upgradeData Lnet/minecraft/class_2843;
 	FIELD field_34541 heightmaps Ljava/util/Map;
 	FIELD field_34542 blockEntityNbts Ljava/util/Map;
@@ -91,8 +90,6 @@ CLASS net/minecraft/class_2791 net/minecraft/world/chunk/Chunk
 		ARG 2 registries
 	METHOD method_32914 getGameEventDispatcher (I)Lnet/minecraft/class_5713;
 		ARG 1 ySectionCoord
-	METHOD method_38255 getOrCreateChunkNoiseSampler (Ljava/util/function/Function;)Lnet/minecraft/class_6568;
-		ARG 1 chunkNoiseSamplerCreator
 	METHOD method_38256 fillSectionArray (Lnet/minecraft/class_11897;[Lnet/minecraft/class_2826;)V
 		ARG 0 palettesFactory
 		ARG 1 sectionArray
@@ -106,7 +103,6 @@ CLASS net/minecraft/class_2791 net/minecraft/world/chunk/Chunk
 		ARG 0 type2
 	METHOD method_38870 increaseInhabitedTime (J)V
 		ARG 1 timeDelta
-	METHOD method_38871 hasStructureReferences ()Z
 	METHOD method_39295 hasHeightmap (Lnet/minecraft/class_2902$class_2903;)Z
 		ARG 1 type
 	METHOD method_39296 getTickSchedulers (J)Lnet/minecraft/class_2791$class_6745;

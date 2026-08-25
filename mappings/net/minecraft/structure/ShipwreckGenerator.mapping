@@ -4,11 +4,10 @@ CLASS net/minecraft/class_3415 net/minecraft/structure/ShipwreckGenerator
 	FIELD field_14536 DEFAULT_POSITION Lnet/minecraft/class_2338;
 	FIELD field_34939 LOOT_TABLES Ljava/util/Map;
 	FIELD field_51512 LARGE_SIZE_LIMIT I
-	METHOD method_59864 addParts (Lnet/minecraft/class_3485;Lnet/minecraft/class_2338;Lnet/minecraft/class_2470;Lnet/minecraft/class_6130;Lnet/minecraft/class_5819;Z)Lnet/minecraft/class_3415$class_3416;
+	METHOD method_59864 addParts (Lnet/minecraft/class_3485;Lnet/minecraft/class_2338;Lnet/minecraft/class_2470;Lnet/minecraft/class_6626;Lnet/minecraft/class_5819;Z)Lnet/minecraft/class_3415$class_3416;
 		ARG 0 structureTemplateManager
 		ARG 1 pos
 		ARG 2 rotation
-		ARG 3 holder
 		ARG 4 random
 		ARG 5 beached
 	CLASS class_3416 Piece

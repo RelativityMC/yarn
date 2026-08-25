@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_6708 net/minecraft/world/gen/surfacebuilder/MaterialRule
+	FIELD field_1_7484 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_7485 ENTRY_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_35252 BASE_CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_1_6820 (Lnet/minecraft/class_6880;)Lnet/minecraft/class_6708;
+		ARG 0 registryEntry
+	METHOD method_1_6821 (Lnet/minecraft/class_6708;)Lnet/minecraft/class_6880;
+		ARG 0 rule
+	METHOD method_39061 codec ()Lcom/mojang/serialization/MapCodec;
+	CLASS class_1_1067 RegisteredRule

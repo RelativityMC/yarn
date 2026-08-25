@@ -3,8 +3,6 @@ CLASS net/minecraft/class_1646 net/minecraft/entity/passive/VillagerEntity
 	FIELD field_1_1197 PROFILE Lnet/minecraft/class_4095$class_5303;
 	FIELD field_1_1851 BABY_DIMENSIONS Lnet/minecraft/class_4048;
 	FIELD field_7445 VILLAGER_DATA Lnet/minecraft/class_2940;
-	FIELD field_18528 levelUpTimer I
-	FIELD field_18529 levelingUp Z
 	FIELD field_18530 lastCustomer Lnet/minecraft/class_1657;
 	FIELD field_18533 foodLevel I
 	FIELD field_18534 gossip Lnet/minecraft/class_4136;
@@ -48,7 +46,6 @@ CLASS net/minecraft/class_1646 net/minecraft/entity/passive/VillagerEntity
 	METHOD method_19191 beginTradeWith (Lnet/minecraft/class_1657;)V
 		ARG 1 customer
 	METHOD method_19192 prepareOffersFor (Lnet/minecraft/class_1657;)V
-		ARG 1 player
 	METHOD method_19193 depleteFood (I)V
 		ARG 1 amount
 	METHOD method_19520 (Lnet/minecraft/class_1646;Lnet/minecraft/class_6880;)Z

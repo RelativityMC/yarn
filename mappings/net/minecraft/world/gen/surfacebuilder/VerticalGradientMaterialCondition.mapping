@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_6775 net/minecraft/world/gen/surfacebuilder/VerticalGradientMaterialCondition
+	FIELD field_35626 CODEC Lcom/mojang/serialization/MapCodec;
+	METHOD method_39480 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

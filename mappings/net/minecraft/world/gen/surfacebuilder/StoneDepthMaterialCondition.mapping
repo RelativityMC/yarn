@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_6713 net/minecraft/world/gen/surfacebuilder/StoneDepthMaterialCondition
+	FIELD field_35257 CODEC Lcom/mojang/serialization/MapCodec;
+	METHOD method_39089 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

@@ -4,4 +4,3 @@ CLASS net/minecraft/class_1_1446 net/minecraft/world/gen/densityfunction/BlendDe
 	METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
 		ARG 3 name
 	METHOD method_1_9554 getName ()Ljava/lang/String;
-	METHOD method_1_9555 sample ()F

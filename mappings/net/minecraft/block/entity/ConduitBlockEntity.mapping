@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_2597 net/minecraft/block/entity/ConduitBlockEntity
-	FIELD field_11931 ACTIVATING_BLOCKS [Lnet/minecraft/class_2248;
 	FIELD field_11932 ticksActive F
 	FIELD field_11933 eyeOpen Z
 	FIELD field_11934 active Z

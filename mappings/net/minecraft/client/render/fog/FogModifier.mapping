@@ -12,7 +12,7 @@ CLASS net/minecraft/class_11400 net/minecraft/client/render/fog/FogModifier
 	METHOD method_42593 shouldApply (Lnet/minecraft/class_5636;Lnet/minecraft/class_1297;)Z
 		ARG 1 submersionType
 		ARG 2 cameraEntity
-	METHOD method_71654 getFogColor (Lnet/minecraft/class_638;Lnet/minecraft/class_4184;IF)I
+	METHOD method_71654 getFogColor (Lnet/minecraft/class_638;Lnet/minecraft/class_4184;IF)Lorg/joml/Vector3fc;
 		ARG 1 world
 		ARG 2 camera
 		ARG 3 viewDistance

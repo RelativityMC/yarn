@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_6716 net/minecraft/world/gen/surfacebuilder/TemperatureMaterialCondition
+	FIELD field_35261 CODEC Lcom/mojang/serialization/MapCodec;

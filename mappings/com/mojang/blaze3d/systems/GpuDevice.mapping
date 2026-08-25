@@ -1,8 +1,6 @@
 CLASS net/minecraft/class_1_1313 com/mojang/blaze3d/systems/GpuDevice
 	METHOD method_1_7705 close ()V
-	METHOD method_1_7706 getCompiledPipeline (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_12289;)Lnet/minecraft/class_1_1285;
-		ARG 1 pipeline
-		ARG 2 sourceGetter
+	METHOD method_1_7706 getCompiledPipeline (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_12289;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
 	METHOD method_1_7707 createBuffer (Ljava/util/function/Supplier;IJ)Lnet/minecraft/class_1_1211;
 		ARG 1 labelGetter
 		ARG 2 usage
@@ -19,8 +17,7 @@ CLASS net/minecraft/class_1_1313 com/mojang/blaze3d/systems/GpuDevice
 		ARG 4 magFilterMode
 		ARG 5 maxAnisotropy
 		ARG 6 maxLevelOfDetail
-	METHOD method_1_7711 createSurface (J)Lnet/minecraft/class_1_1314;
-		ARG 1 window
+	METHOD method_1_7711 createSurface (JLjava/util/function/BooleanSupplier;)Lnet/minecraft/class_1_1314;
 	METHOD method_1_7712 createTexture (Ljava/lang/String;ILnet/minecraft/class_1_658;IIII)Lnet/minecraft/class_1_1318;
 		ARG 1 labelGetter
 		ARG 2 usage

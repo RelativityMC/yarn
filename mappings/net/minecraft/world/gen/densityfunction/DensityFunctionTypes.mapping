@@ -108,9 +108,8 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 		ARG 1 toY
 		ARG 2 fromValue
 		ARG 3 toValue
-	METHOD method_40482 endIslands (J)Lnet/minecraft/class_6910;
-		ARG 0 seed
-	METHOD method_40483 interpolated (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+	METHOD method_40482 endIslands ()Lnet/minecraft/class_6910;
+	METHOD method_40483 interpolated (Lnet/minecraft/class_6910;II)Lnet/minecraft/class_6910;
 		ARG 0 inputFunction
 	METHOD method_40485 rangeChoice (Lnet/minecraft/class_6910;FFLnet/minecraft/class_6910;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
 		ARG 0 input
@@ -156,8 +155,6 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 		ARG 3 min
 		ARG 4 max
 	METHOD method_40498 blendAlpha ()Lnet/minecraft/class_6910;
-	METHOD method_40499 flatCache (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
-		ARG 0 inputFunction
 	METHOD method_40500 mul (Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
 		ARG 0 a
 		ARG 1 b
@@ -168,8 +165,6 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 		ARG 1 scaleXz
 		ARG 3 scaleY
 	METHOD method_40503 blendOffset ()Lnet/minecraft/class_6910;
-	METHOD method_40504 cache2d (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
-		ARG 0 inputFunction
 	METHOD method_40505 min (Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
 		ARG 0 a
 		ARG 1 b
@@ -182,8 +177,6 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 		ARG 1 b
 	METHOD method_40509 shift (Lnet/minecraft/class_6880;)Lnet/minecraft/class_6910;
 		ARG 0 noiseParameters
-	METHOD method_40510 cacheAllInCell (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
-		ARG 0 inputFunction
 	METHOD method_40512 blendDensity (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
 		ARG 0 input
 	METHOD method_41063 (Lcom/mojang/datafixers/util/Either;)Lnet/minecraft/class_6910;

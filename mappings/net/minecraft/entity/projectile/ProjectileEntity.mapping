@@ -101,8 +101,7 @@ CLASS net/minecraft/class_1676 net/minecraft/entity/projectile/ProjectileEntity
 	METHOD method_59959 getKnockback (Lnet/minecraft/class_1309;Lnet/minecraft/class_1282;)Lit/unimi/dsi/fastutil/doubles/DoubleDoubleImmutablePair;
 		ARG 1 target
 		ARG 2 source
-	METHOD method_61544 onBroken (Lnet/minecraft/class_1792;)V
-		ARG 1 item
+	METHOD method_61544 onBroken (Lnet/minecraft/class_1799;)V
 	METHOD method_61545 (DDDFFLnet/minecraft/class_1676;)V
 		ARG 8 entity
 	METHOD method_61546 triggerProjectileSpawned (Lnet/minecraft/class_3218;Lnet/minecraft/class_1799;)V
@@ -150,8 +149,6 @@ CLASS net/minecraft/class_1676 net/minecraft/entity/projectile/ProjectileEntity
 		ARG 3 beforeSpawn
 	METHOD method_61554 (Lnet/minecraft/class_1676;)V
 		ARG 0 entity
-	METHOD method_61556 (Lnet/minecraft/class_1792;)V
-		ARG 0 item
 	METHOD method_62823 deflectsAgainstWorldBorder ()Z
 	METHOD method_71623 setOwner (Lnet/minecraft/class_10583;)V
 		ARG 1 owner

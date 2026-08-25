@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_6691 net/minecraft/world/gen/surfacebuilder/BlockMaterialRule
+	FIELD field_35231 CODEC Lcom/mojang/serialization/MapCodec;

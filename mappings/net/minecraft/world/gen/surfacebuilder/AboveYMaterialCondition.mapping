@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_6722 net/minecraft/world/gen/surfacebuilder/AboveYMaterialCondition
+	FIELD field_35266 CODEC Lcom/mojang/serialization/MapCodec;
+	METHOD method_39099 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

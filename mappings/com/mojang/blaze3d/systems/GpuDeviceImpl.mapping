@@ -9,7 +9,7 @@ CLASS net/minecraft/class_1_1209 com/mojang/blaze3d/systems/GpuDeviceImpl
 	FIELD field_1_9433 pipelineCompiler Lnet/minecraft/class_1_1384;
 	METHOD <init> (Lnet/minecraft/class_1_147;)V
 		ARG 1 backend
-	METHOD method_1_7706 (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_12289;)Lnet/minecraft/class_1_1285;
+	METHOD method_1_7706 (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_12289;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 pipeline
 		ARG 2 sourceGetter
 	METHOD method_1_7707 (Ljava/util/function/Supplier;IJ)Lnet/minecraft/class_1_1211;
@@ -27,7 +27,7 @@ CLASS net/minecraft/class_1_1209 com/mojang/blaze3d/systems/GpuDeviceImpl
 		ARG 4 filterModeV
 		ARG 5 maxAnisotropy
 		ARG 6 maxLevelOfDetail
-	METHOD method_1_7711 (J)Lnet/minecraft/class_1_1314;
+	METHOD method_1_7711 (JLjava/util/function/BooleanSupplier;)Lnet/minecraft/class_1_1314;
 		ARG 1 window
 	METHOD method_1_7712 (Ljava/lang/String;ILnet/minecraft/class_1_658;IIII)Lnet/minecraft/class_1_1318;
 		ARG 1 label

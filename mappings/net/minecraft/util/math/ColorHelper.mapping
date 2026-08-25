@@ -129,9 +129,7 @@ CLASS net/minecraft/class_9848 net/minecraft/util/math/ColorHelper
 		ARG 1 b
 	METHOD method_75607 toAlpha (F)I
 		ARG 0 alpha
-	METHOD method_75608 subtract (II)I
-		ARG 0 a
-		ARG 1 b
+	METHOD method_75608 subtract (Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
 	METHOD method_75609 averageSrgbIntensities (IIII)I
 		ARG 0 a
 		ARG 1 b

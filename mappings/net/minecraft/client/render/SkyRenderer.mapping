@@ -19,42 +19,39 @@ CLASS net/minecraft/class_9975 net/minecraft/client/render/SkyRenderer
 		ARG 1 textureManager
 		ARG 2 atlasManager
 		ARG 3 framebuffer
-	METHOD method_62302 renderTopSky (I)V
-		ARG 1 color
-	METHOD method_62303 renderSun (FLnet/minecraft/class_4587;)V
-		ARG 1 alpha
-		ARG 2 matrices
-	METHOD method_62304 renderMoon (Lnet/minecraft/class_12131;FLnet/minecraft/class_4587;)V
-		ARG 1 moonPhase
+	METHOD method_62302 renderTopSky (Lnet/minecraft/class_1_1317;Lorg/joml/Vector3fc;)V
+	METHOD method_62303 renderSun (Lnet/minecraft/class_1_1317;FLnet/minecraft/class_4587;)V
 		ARG 2 alpha
 		ARG 3 matrices
-	METHOD method_62305 renderSkyDark ()V
-	METHOD method_62306 renderGlowingSky (Lnet/minecraft/class_4587;FI)V
-		ARG 1 matrices
-		ARG 2 solarAngle
-		ARG 3 color
-	METHOD method_62307 renderCelestialBodies (Lnet/minecraft/class_4587;FFFLnet/minecraft/class_12131;FF)V
-		ARG 1 matrices
-		ARG 2 sunAngle
-		ARG 3 moonAngle
-		ARG 4 starAngle
-		ARG 5 moonPhase
-		ARG 6 alpha
-		ARG 7 starBrightness
+	METHOD method_62304 renderMoon (Lnet/minecraft/class_1_1317;Lnet/minecraft/class_12131;FLnet/minecraft/class_4587;)V
+		ARG 2 moonPhase
+		ARG 3 alpha
+		ARG 4 matrices
+	METHOD method_62305 renderSkyDark (Lnet/minecraft/class_1_1317;)V
+	METHOD method_62306 renderGlowingSky (Lnet/minecraft/class_1_1317;Lnet/minecraft/class_4587;FLorg/joml/Vector4fc;)V
+		ARG 2 matrices
+		ARG 3 solarAngle
+	METHOD method_62307 renderCelestialBodies (Lnet/minecraft/class_1_1317;Lnet/minecraft/class_4587;FFFLnet/minecraft/class_12131;FF)V
+		ARG 2 matrices
+		ARG 3 sunAngle
+		ARG 4 moonAngle
+		ARG 5 starAngle
+		ARG 7 alpha
+		ARG 8 starBrightness
 	METHOD method_62309 createSky (Lnet/minecraft/class_4588;F)V
 		ARG 1 vertexConsumer
 		ARG 2 height
-	METHOD method_62310 renderStars (FLnet/minecraft/class_4587;)V
-		ARG 1 brightness
-		ARG 2 matrices
-	METHOD method_62312 renderEndSky ()V
+	METHOD method_62310 renderStars (Lnet/minecraft/class_1_1317;FLnet/minecraft/class_4587;)V
+		ARG 2 brightness
+		ARG 3 matrices
+	METHOD method_62312 renderEndSky (Lnet/minecraft/class_1_1317;)V
 	METHOD method_65233 createStars ()Lnet/minecraft/class_1_1211;
 	METHOD method_65234 createEndSky ()Lnet/minecraft/class_1_1211;
-	METHOD method_73244 drawEndLightFlash (Lnet/minecraft/class_4587;FFF)V
-		ARG 1 matrices
-		ARG 2 intensity
-		ARG 3 pitch
-		ARG 4 yaw
+	METHOD method_73244 drawEndLightFlash (Lnet/minecraft/class_1_1317;Lnet/minecraft/class_4587;FFF)V
+		ARG 2 matrices
+		ARG 3 intensity
+		ARG 4 pitch
+		ARG 5 yaw
 	METHOD method_74757 bindTexture (Lnet/minecraft/class_1060;Lnet/minecraft/class_2960;)Lnet/minecraft/class_1044;
 		ARG 1 textureManager
 		ARG 2 texture

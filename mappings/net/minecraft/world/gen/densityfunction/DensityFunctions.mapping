@@ -29,11 +29,9 @@ CLASS net/minecraft/class_6954 net/minecraft/world/gen/densityfunction/DensityFu
 		ARG 0 densityFunctionLookup
 		ARG 1 noiseParameterLookup
 		ARG 2 noiseSet
-	METHOD method_1_8789 createOreVeinConfigs (Lnet/minecraft/class_7871;)Ljava/util/List;
-		ARG 0 densityFunctionLookup
 	METHOD method_1_8790 registerOreVeinFunctions (Lnet/minecraft/class_7891;)V
 		ARG 0 densityFunctionRegisterable
-	METHOD method_40539 verticalRangeChoice (Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;III)Lnet/minecraft/class_6910;
+	METHOD method_40539 verticalRangeChoice (Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;IIIII)Lnet/minecraft/class_6910;
 		ARG 0 y
 		ARG 1 whenInRange
 		ARG 2 minInclusive
@@ -86,7 +84,7 @@ CLASS net/minecraft/class_6954 net/minecraft/world/gen/densityfunction/DensityFu
 	METHOD method_41122 createCavesSpaghetti2dOverworldFunction (Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;)Lnet/minecraft/class_6910;
 		ARG 0 densityFunctionLookup
 		ARG 1 noiseParametersLookup
-	METHOD method_41207 applyBlendDensity (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+	METHOD method_41207 applyBlendDensity (Lnet/minecraft/class_6910;II)Lnet/minecraft/class_6910;
 		ARG 0 density
 	METHOD method_41546 getPeaksValleysNoise (F)F
 		ARG 0 weirdness

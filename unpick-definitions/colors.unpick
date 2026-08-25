@@ -84,10 +84,6 @@ target_method net.minecraft.client.gui.DrawContext drawTextWithShadow (Lnet/mine
 	param 4 argb_color
 target_method net.minecraft.client.gui.DrawContext drawText (Lnet/minecraft/client/font/TextRenderer;Lnet/minecraft/text/Text;IIIZ)V
 	param 4 argb_color
-target_method net.minecraft.client.gui.DrawContext drawWrappedText (Lnet/minecraft/client/font/TextRenderer;Lnet/minecraft/text/StringVisitable;IIIIZ)V
-	param 5 argb_color
-target_method net.minecraft.client.gui.DrawContext drawWrappedTextWithShadow (Lnet/minecraft/client/font/TextRenderer;Lnet/minecraft/text/StringVisitable;IIII)V
-	param 5 argb_color
 
 # Accepts ARGB (non-TextRenderer)
 target_method net.minecraft.client.gui.DrawContext drawHorizontalLine (IIII)V

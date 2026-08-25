@@ -10,18 +10,17 @@ CLASS net/minecraft/class_12247 net/minecraft/client/render/RenderSetup
 	FIELD field_63993 opaque Z
 	FIELD field_63994 translucent Z
 	FIELD field_63996 layeringTransform Lnet/minecraft/class_12245;
-	METHOD <init> (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_1_1165;Ljava/util/Map;ZZLnet/minecraft/class_12245;Lnet/minecraft/class_12250;Lnet/minecraft/class_12247$class_4750;ZZZ)V
+	METHOD <init> (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_1_1165;Ljava/util/Map;ZZLnet/minecraft/class_12245;Lnet/minecraft/class_12250;Lnet/minecraft/class_12247$class_4750;Ljava/lang/String;ZZZ)V
 		ARG 1 pipeline
 		ARG 2 oitPipelineSet
 		ARG 3 textures
 		ARG 4 useLightmap
 		ARG 5 useOverlay
-		ARG 6 layeringTransform
 		ARG 7 textureTransform
 		ARG 8 outlineMode
-		ARG 9 hasCrumbling
-		ARG 10 translucent
-		ARG 11 opaque
+		ARG 10 hasCrumbling
+		ARG 11 translucent
+		ARG 12 opaque
 	METHOD method_75926 resolveTextures (Lnet/minecraft/class_1060;Lnet/minecraft/class_12136;Lnet/minecraft/class_1_1330;Lnet/minecraft/class_1_1330;)Ljava/util/List;
 		ARG 1 textureManager
 		ARG 2 samplerCache

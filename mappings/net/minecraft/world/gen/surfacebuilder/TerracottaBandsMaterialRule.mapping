@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_6687 net/minecraft/world/gen/surfacebuilder/TerracottaBandsMaterialRule
+	FIELD field_35226 CODEC Lcom/mojang/serialization/MapCodec;

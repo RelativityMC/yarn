@@ -7,20 +7,12 @@ CLASS net/minecraft/class_6603 net/minecraft/network/packet/s2c/play/ChunkData
 	METHOD <init> (Lnet/minecraft/class_2818;)V
 		ARG 1 chunk
 	METHOD method_38586 getSectionsDataBuf ()Lnet/minecraft/class_2540;
-	METHOD method_38587 getBlockEntities (II)Ljava/util/function/Consumer;
-		ARG 1 x
-		ARG 2 z
-	METHOD method_38588 (IILnet/minecraft/class_6603$class_6605;)V
-		ARG 3 visitor
 	METHOD method_38589 getSectionsPacketSize (Lnet/minecraft/class_2818;)I
 		ARG 0 chunk
 	METHOD method_38591 writeSections (Lnet/minecraft/class_2540;Lnet/minecraft/class_2818;)V
 		ARG 0 buf
 		ARG 1 chunk
-	METHOD method_38593 iterateBlockEntities (Lnet/minecraft/class_6603$class_6605;II)V
-		ARG 1 consumer
-		ARG 2 x
-		ARG 3 z
+	METHOD method_38593 iterateBlockEntities (IILnet/minecraft/class_6603$class_6605;)V
 	METHOD method_38594 getHeightmap ()Ljava/util/Map;
 	METHOD method_38595 getWritableSectionsDataBuf ()Lio/netty/buffer/ByteBuf;
 	METHOD method_67557 (I)Ljava/util/Map;

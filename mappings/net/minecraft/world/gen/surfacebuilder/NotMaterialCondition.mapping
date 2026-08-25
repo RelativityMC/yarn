@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_6707 net/minecraft/world/gen/surfacebuilder/NotMaterialCondition
+	FIELD field_35251 CODEC Lcom/mojang/serialization/MapCodec;

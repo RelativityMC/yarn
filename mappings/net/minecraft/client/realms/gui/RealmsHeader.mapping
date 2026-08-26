@@ -1,0 +1,51 @@
+CLASS net/minecraft/class_1_1486 net/minecraft/client/realms/gui/RealmsHeader
+	FIELD field_1_10130 HEADER_WIDTH I
+	FIELD field_1_10131 INVITES_TITLE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_10132 INVITE_ICON_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_10133 JOIN_REALM_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_10134 NEWS_ICON_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_10135 NEWS_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_10136 INVITES_NOPENDING_TOOLTIP Lnet/minecraft/class_7919;
+	FIELD field_1_10137 INVITES_PENDING_TOOLTIP Lnet/minecraft/class_7919;
+	FIELD field_1_10138 joinRealmButton Lnet/minecraft/class_4185;
+	FIELD field_1_10139 client Lnet/minecraft/class_310;
+	FIELD field_1_10140 newsNotificationButton Lnet/minecraft/class_1_1486$class_8651;
+	FIELD field_1_10141 newsLink Ljava/lang/String;
+	FIELD field_1_10142 invitesNotificationButton Lnet/minecraft/class_1_1486$class_8651;
+	FIELD field_1_10143 parent Lnet/minecraft/class_437;
+	METHOD <init> (Lnet/minecraft/class_437;Ljava/lang/Runnable;)V
+		ARG 1 parent
+		ARG 2 showJoinRealmsScreen
+	METHOD method_1_9882 makeWidget (Lnet/minecraft/class_8208;II)Lnet/minecraft/class_8133;
+		ARG 1 iconWidget
+		ARG 2 height
+		ARG 3 spacing
+	METHOD method_1_9883 (Lnet/minecraft/class_437;Lnet/minecraft/class_4185;)V
+		ARG 2 button
+	METHOD method_1_9884 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_1_9885 (Ljava/lang/Runnable;Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_1_9886 openNews ()V
+	METHOD method_1_9887 setJoinRealmButtonEnabled (Z)V
+		ARG 1 enabled
+	METHOD method_1_9888 updateNewsStatus (Ljava/lang/String;Z)V
+		ARG 1 newsLink
+		ARG 2 hasUnreadNews
+	METHOD method_1_9889 setPendingInviteCount (I)V
+		ARG 1 pendingInviteCount
+	CLASS class_8651 NotificationButtonWidget
+		FIELD field_45227 TEXTURES [Lnet/minecraft/class_2960;
+		FIELD field_45229 SIZE I
+		FIELD field_45230 TEXTURE_SIZE I
+		FIELD field_45231 notificationCount I
+		METHOD <init> (Lnet/minecraft/class_2561;Lnet/minecraft/class_2960;Lnet/minecraft/class_4185$class_4241;Lnet/minecraft/class_2561;)V
+			ARG 1 message
+			ARG 2 texture
+			ARG 3 onPress
+			ARG 4 tooltip
+		METHOD method_52651 setNotificationCount (I)V
+			ARG 1 notificationCount
+		METHOD method_52652 render (Lnet/minecraft/class_332;)V
+			ARG 1 context
+		METHOD method_53794 getNotificationCount ()I

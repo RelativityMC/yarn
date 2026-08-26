@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_1_1572 net/minecraft/world/gen/sampler/PooledSampleBuffer
+	FIELD field_1_10330 age I
+	FIELD field_1_10331 pool Lnet/minecraft/class_1_1570;
+	FIELD field_1_10332 resizable Z
+	METHOD <init> (Lnet/minecraft/class_1_1570;II)V
+		ARG 1 pool
+		ARG 2 capacity
+		ARG 3 count
+	METHOD method_1_10192 advanceAge ()I
+	METHOD method_1_10193 setCount (I)V
+		ARG 1 count

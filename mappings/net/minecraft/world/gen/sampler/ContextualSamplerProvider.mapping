@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1_1552 net/minecraft/world/gen/sampler/ContextualSamplerProvider
+	METHOD method_1_10180 getSampler (Lnet/minecraft/class_6910;)Lnet/minecraft/class_1_1519$class_1_1520;
+		ARG 1 func
+	METHOD method_1_10181 sample (Lnet/minecraft/class_6910;III)F
+		ARG 1 func
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

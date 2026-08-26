@@ -1,1 +1,6 @@
 CLASS net/minecraft/class_1_1172 net/minecraft/world/gen/chunk/SpawnTarget
+	METHOD method_1_10015 getDistance (Lnet/minecraft/class_1_1552;III)J
+		ARG 1 contextualSamplerProvider
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

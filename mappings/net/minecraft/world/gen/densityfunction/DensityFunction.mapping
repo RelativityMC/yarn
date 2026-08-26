@@ -50,17 +50,17 @@ CLASS net/minecraft/class_6910 net/minecraft/world/gen/densityfunction/DensityFu
 		ARG 1 exponent
 	METHOD method_1_9217 sign ()Lnet/minecraft/class_6910;
 	METHOD method_1_9218 sqrt ()Lnet/minecraft/class_6910;
-	METHOD method_40464 sample (Lnet/minecraft/class_6910$class_1_1527;)Lnet/minecraft/class_1_1519;
-		COMMENT {@return the density value for the given block position}
-		ARG 1 pos
-			COMMENT the block position
+	METHOD method_40464 compile (Lnet/minecraft/class_6910$class_1_1527;)Lnet/minecraft/class_1_1519;
+		COMMENT Creates a {@link Sampler} from this density function.
+		ARG 1 context
 	METHOD method_40468 clamp (FF)Lnet/minecraft/class_6910;
 		ARG 1 min
 		ARG 2 max
-	METHOD method_40469 applyInternal (Lnet/minecraft/class_1_1517;)Lnet/minecraft/class_6910;
+	METHOD method_40469 accept (Lnet/minecraft/class_1_1517;)Lnet/minecraft/class_6910;
 		COMMENT Applies the visitor to every child density function and {@code this}.
 		COMMENT
 		COMMENT @return the resulting density function
+		ARG 1 visitor
 	METHOD method_40471 abs ()Lnet/minecraft/class_6910;
 	METHOD method_40472 square ()Lnet/minecraft/class_6910;
 	METHOD method_40473 cube ()Lnet/minecraft/class_6910;
@@ -71,3 +71,9 @@ CLASS net/minecraft/class_6910 net/minecraft/world/gen/densityfunction/DensityFu
 		ARG 0 function
 	METHOD method_41062 getCodec ()Lcom/mojang/serialization/MapCodec;
 	CLASS class_1_1398 Axes
+	CLASS class_1_1527 CompileContext
+		METHOD method_1_10160 getRandom ()Lnet/minecraft/class_5819;
+		METHOD method_1_10161 getNoiseSampler (Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_1397;
+			ARG 1 params
+		METHOD method_1_10162 getRandom (Lnet/minecraft/class_2960;)Lnet/minecraft/class_5819;
+			ARG 1 generatorId

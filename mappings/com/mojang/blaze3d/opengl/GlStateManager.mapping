@@ -15,6 +15,7 @@ CLASS net/minecraft/class_1_1267 com/mojang/blaze3d/opengl/GlStateManager
 	FIELD field_1_8682 currentReadFramebuffer I
 	FIELD field_1_8683 currentDrawFramebuffer I
 	FIELD field_1_9168 IS_MAC_OS Z
+	FIELD field_1_9629 blend [Z
 	METHOD method_1_8022 activeTexture (I)V
 		ARG 0 texture
 	METHOD method_1_8023 bindTexture (I)V
@@ -71,6 +72,8 @@ CLASS net/minecraft/class_1_1267 com/mojang/blaze3d/opengl/GlStateManager
 	METHOD method_1_8052 getString (I)Ljava/lang/String;
 		ARG 0 name
 	METHOD method_1_8053 getTexLevelParameter (III)I
+		ARG 0 target
+		ARG 1 level
 		ARG 2 pname
 	METHOD method_1_8054 bindAttribLocation (IILjava/lang/CharSequence;)V
 		ARG 1 index
@@ -81,6 +84,16 @@ CLASS net/minecraft/class_1_1267 com/mojang/blaze3d/opengl/GlStateManager
 	METHOD method_1_8057 bindVertexArray (I)V
 		ARG 0 array
 	METHOD method_1_8058 blitFrameBuffer (IIIIIIIIII)V
+		ARG 0 srcX0
+		ARG 1 srcY0
+		ARG 2 srcX1
+		ARG 3 srcY1
+		ARG 4 dstX0
+		ARG 5 dstY0
+		ARG 6 dstX1
+		ARG 7 dstY1
+		ARG 8 mask
+		ARG 9 filter
 	METHOD method_1_8059 bufferData (IJI)V
 	METHOD method_1_8060 bufferData (ILjava/nio/ByteBuffer;I)V
 	METHOD method_1_8061 bufferSubData (IJLjava/nio/ByteBuffer;)V
@@ -113,6 +126,8 @@ CLASS net/minecraft/class_1_1267 com/mojang/blaze3d/opengl/GlStateManager
 		ARG 0 pname
 		ARG 1 param
 	METHOD method_1_8077 polygonMode (II)V
+		ARG 0 face
+		ARG 1 mode
 	METHOD method_1_8078 polygonOffset (FF)V
 		ARG 0 factor
 		ARG 1 units
@@ -140,6 +155,7 @@ CLASS net/minecraft/class_1_1267 com/mojang/blaze3d/opengl/GlStateManager
 		ARG 7 type
 		ARG 8 pixels
 	METHOD method_1_8082 texParameter (III)V
+		ARG 0 target
 		ARG 1 pname
 		ARG 2 param
 	METHOD method_1_8083 texSubImage2D (IIIIIIIIJ)V
@@ -180,8 +196,12 @@ CLASS net/minecraft/class_1_1267 com/mojang/blaze3d/opengl/GlStateManager
 	METHOD method_1_8097 deleteShadder (I)V
 	METHOD method_1_8098 genFramebuffers ()I
 	METHOD method_1_8099 getProgramInfoLog (II)Ljava/lang/String;
+		ARG 0 program
+		ARG 1 maxLength
 	METHOD method_1_8100 getProgram (II)I
 	METHOD method_1_8101 getShaderInfoLog (II)Ljava/lang/String;
+		ARG 0 shader
+		ARG 1 maxLength
 	METHOD method_1_8102 getShader (II)I
 	METHOD method_1_8103 linkProgram (I)V
 	METHOD method_1_8104 shaderSource (ILjava/lang/String;)V
@@ -191,6 +211,8 @@ CLASS net/minecraft/class_1_1267 com/mojang/blaze3d/opengl/GlStateManager
 		ARG 0 index
 	METHOD method_1_8108 (I)I
 		ARG 0 index
+	METHOD method_1_10022 readBuffer (I)V
+		ARG 0 src
 	CLASS class_1017 BlendFuncState
 		FIELD field_1_3543 opAlpha I
 		FIELD field_1_3544 opRgb I

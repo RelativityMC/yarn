@@ -1,4 +1,0 @@
-CLASS net/minecraft/class_1_1576
-	CLASS class_1_1577
-		FIELD comp_1_1678 getVariantAxes I
-		FIELD comp_1_1679 getRange Lnet/minecraft/class_1_1150;

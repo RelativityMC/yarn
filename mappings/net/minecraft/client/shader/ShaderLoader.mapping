@@ -17,6 +17,21 @@ CLASS net/minecraft/class_10151 net/minecraft/client/shader/ShaderLoader
 	METHOD method_1_9433 canApplyPostEffect (Lnet/minecraft/class_2960;Ljava/util/Set;)Z
 		ARG 1 postEffect
 		ARG 2 accessibleTargets
+	METHOD method_1_9902 getCompiledPipelines (Lnet/minecraft/class_1_1313;Lnet/minecraft/class_12289;Ljava/util/List;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 device
+		ARG 1 shaderSourceGetter
+		ARG 2 pipelines
+		ARG 3 prepareExecutor
+		ARG 4 applyExecutor
+	METHOD method_1_9903 (Lnet/minecraft/class_1_1313;Lnet/minecraft/class_12289;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;Lnet/minecraft/class_1_1257;)Ljava/util/concurrent/CompletableFuture;
+		ARG 4 pipeline
+	METHOD method_1_9905 (Lnet/minecraft/class_1_1313;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;Lnet/minecraft/class_10151$class_10153;)Ljava/util/concurrent/CompletionStage;
+		ARG 3 definitions
+	METHOD method_1_9906 (Lnet/minecraft/class_10151$class_10153;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Lnet/minecraft/class_10151$class_1_1488;
+		ARG 3 compiledRequiredPipelines
+		ARG 4 compiledOptionalPipelines
+	METHOD method_1_9907 (Lnet/minecraft/class_1_1313;Lnet/minecraft/class_10151$class_1_1488;)V
+		ARG 2 preparation
 	METHOD method_62939 loadShaderSource (Lnet/minecraft/class_2960;Lnet/minecraft/class_3298;Lnet/minecraft/class_1_1229;Ljava/util/Map;Lcom/google/common/collect/ImmutableMap$Builder;)V
 		ARG 0 id
 		ARG 1 resource
@@ -26,6 +41,11 @@ CLASS net/minecraft/class_10151 net/minecraft/client/shader/ShaderLoader
 	METHOD method_62941 loadPostEffect (Lnet/minecraft/class_2960;Ljava/util/Set;)Lnet/minecraft/class_279;
 		ARG 1 id
 		ARG 2 availableExternalTargets
+	METHOD method_62942 loadShaderDefinitions (Lnet/minecraft/class_3300;)Lnet/minecraft/class_10151$class_10153;
+		ARG 1 resourceManager
+	METHOD method_62945 apply (Lnet/minecraft/class_1_1313;Lnet/minecraft/class_10151$class_1_1488;)V
+		ARG 1 device
+		ARG 2 preparation
 	METHOD method_62952 isShaderSource (Lnet/minecraft/class_2960;)Z
 		ARG 0 id
 	METHOD method_62953 loadPostEffect (Lnet/minecraft/class_2960;Lnet/minecraft/class_3298;Lcom/google/common/collect/ImmutableMap$Builder;)V
@@ -36,6 +56,7 @@ CLASS net/minecraft/class_10151 net/minecraft/client/shader/ShaderLoader
 		ARG 1 exception
 	METHOD method_68497 (Lnet/minecraft/class_2960;)Ljava/lang/String;
 		ARG 0 id
+	CLASS class_1_1488 Preparation
 	CLASS class_10152 LoadException
 		METHOD <init> (Ljava/lang/String;)V
 			ARG 1 message

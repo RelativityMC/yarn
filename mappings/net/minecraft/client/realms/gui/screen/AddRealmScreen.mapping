@@ -1,0 +1,82 @@
+CLASS net/minecraft/class_1_1496 net/minecraft/client/realms/gui/screen/AddRealmScreen
+	FIELD field_1_10181 FRIENDS_DESCRIPTION_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_10182 FRIENDS_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_10183 FRIENDS_TITLE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_10188 MINIGAMES_DESCRIPTION_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_10189 MINIGAMES_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_10190 MINIGAMES_TITLE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_10191 PRIVATE_BACKUPS_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_10192 PRIVATE_EASY_TO_MANAGE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_10193 PRIVATE_SERVER_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_10194 PRIVATE_SECURE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_10195 PRIVATE_TITLE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_10196 PRIVATE_WORLD_SLOTS_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_10200 SELECT_SERVER_PURCHASE_TITLE Lnet/minecraft/class_2561;
+	FIELD field_1_10201 TRIAL_AVAILABLE_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_10202 TRIAL_DESCRIPTION_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_10203 TRIAL_TITLE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_10204 TRY_FOR_FREE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_10205 runnersManager Lnet/minecraft/class_7581$class_7584;
+	FIELD field_1_10206 header Lnet/minecraft/class_1_1486;
+	FIELD field_1_10207 parent Lnet/minecraft/class_437;
+	FIELD field_1_10208 contents Lnet/minecraft/class_8132;
+	FIELD field_1_10209 onServersAvailable Ljava/lang/Runnable;
+	FIELD field_1_10210 body Lnet/minecraft/class_1_1496$class_1_1501;
+	FIELD field_1_10211 hasAvailableServers Z
+	FIELD field_1_10212 serversAvailableCallbackRun Z
+	FIELD field_1_10213 trialAvailable Z
+	METHOD <init> (Lnet/minecraft/class_437;ZLjava/lang/Runnable;)V
+		ARG 1 parent
+		ARG 2 trialAvailable
+		ARG 3 showJoinRealmsScreen
+	METHOD <init> (Lnet/minecraft/class_437;ZLjava/lang/Runnable;Ljava/lang/Runnable;)V
+		ARG 1 parent
+		ARG 2 trialAvailable
+		ARG 3 showJoinRealmsScreen
+		ARG 4 onServersAvailable
+	METHOD method_1_9993 createRunnersManager (Lnet/minecraft/class_7578;)Lnet/minecraft/class_7581$class_7584;
+		ARG 1 periodicCheckers
+	METHOD method_1_9994 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_1_9995 (Lnet/minecraft/class_1_1496;Lnet/minecraft/class_339;)V
+		ARG 1 child
+	METHOD method_1_9996 (Lnet/minecraft/class_7578$class_8843;)V
+		ARG 1 availableServers
+	METHOD method_1_9997 (Ljava/lang/Boolean;)V
+		ARG 1 trialAvailable
+	METHOD method_1_9998 (Lnet/minecraft/class_7578;Lnet/minecraft/class_4876;)V
+		ARG 2 news
+	CLASS class_1_1497 Entry
+		FIELD field_1_10214 title Lnet/minecraft/class_2561;
+		METHOD <init> (Lnet/minecraft/class_2561;)V
+			ARG 1 title
+	CLASS class_1_1498 Paragraph
+		FIELD field_1_10215 description Ljava/util/List;
+		FIELD field_1_10216 icon Lnet/minecraft/class_2960;
+		METHOD <init> (Lnet/minecraft/class_1_1496;Lnet/minecraft/class_2960;Lnet/minecraft/class_2561;[Lnet/minecraft/class_2561;)V
+			ARG 2 icon
+			ARG 3 title
+			ARG 4 description
+		METHOD method_1_9999 getPaddedHeight ()I
+		METHOD method_1_10000 getTextHeight ()I
+		METHOD method_1_10001 getTextX ()I
+	CLASS class_1_1499 Title
+		FIELD field_1_10218 ICON_SIZE I
+		FIELD field_1_10219 subtitle Lnet/minecraft/class_1_1496$class_1_1499$class_1_1500;
+		METHOD <init> (Lnet/minecraft/class_1_1496;Lnet/minecraft/class_2561;Lnet/minecraft/class_1_1496$class_1_1499$class_1_1500;)V
+			ARG 2 title
+			ARG 3 subtitle
+		METHOD method_1_10002 getPaddedHeight ()I
+		METHOD method_1_10003 getTextHeight ()I
+		METHOD method_1_10004 getTextX ()I
+		CLASS class_1_1500 Subtitle
+	CLASS class_1_1501 Body
+		METHOD <init> (Lnet/minecraft/class_1_1496;Lnet/minecraft/class_310;)V
+			ARG 2 client
+		METHOD method_1_10005 addParagraph (Lnet/minecraft/class_2960;Lnet/minecraft/class_2561;[Lnet/minecraft/class_2561;)V
+			ARG 1 icon
+			ARG 2 title
+			ARG 3 description
+		METHOD method_1_10006 addTitle (Lnet/minecraft/class_2561;Lnet/minecraft/class_1_1496$class_1_1499$class_1_1500;)V
+			ARG 1 title
+			ARG 2 subtitle

@@ -10,6 +10,10 @@ CLASS net/minecraft/class_9959 net/minecraft/client/world/WorldEventHandler
 		ARG 2 pos
 		ARG 3 data
 		ARG 4 random
+	METHOD method_1_9962 addTeleportTrailParticles (Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338;)V
+		ARG 1 source
+		ARG 2 random
+		ARG 3 dest
 	METHOD method_62187 processGlobalEvent (ILnet/minecraft/class_2338;I)V
 		ARG 1 eventId
 		ARG 2 pos

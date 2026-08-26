@@ -4,3 +4,6 @@ CLASS net/minecraft/class_1_1386 com/mojang/blaze3d/pipeline/BackendRenderPipeli
 		CLASS class_1_1388 AttributeBinding
 		CLASS class_1_1389 Shader
 		CLASS class_1_1390 VertexBuffer
+	CLASS class_1_1505 Supplier
+		FIELD field_1_10251 EMPTY Lnet/minecraft/class_1_1386$class_1_1505;
+		METHOD method_1_10054 get ()Lnet/minecraft/class_1_1386;

@@ -4,7 +4,7 @@ CLASS net/minecraft/class_6501 net/minecraft/util/function/ToFloatFunction
 	METHOD method_1_4162 constant (F)Lnet/minecraft/class_6501;
 		ARG 0 value
 	METHOD method_41296 apply (Ljava/lang/Object;)F
-		ARG 1 x
+		ARG 1 strategy
 	METHOD method_41309 compose (Ljava/util/function/Function;)Lnet/minecraft/class_6501;
 		COMMENT {@return a composed function that first applies the before function to its input,
 		COMMENT and then applies this function} to the result.

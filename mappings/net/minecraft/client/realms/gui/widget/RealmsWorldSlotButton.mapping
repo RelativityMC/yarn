@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_4367 net/minecraft/client/realms/gui/RealmsWorldSlotButton
+CLASS net/minecraft/class_4367 net/minecraft/client/realms/gui/widget/RealmsWorldSlotButton
 	FIELD field_1_2287 nameWidget Lnet/minecraft/class_7842;
 	FIELD field_1_3718 screen Lnet/minecraft/class_4388;
 	FIELD field_19675 slotIndex I

@@ -7,6 +7,7 @@ CLASS net/minecraft/class_1_1384 net/minecraft/client/render/RenderPipelineCompi
 	METHOD method_1_9120 compile (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_12289;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 pipeline
 		ARG 2 sourceGetter
+		ARG 3 executor
 	METHOD method_1_9121 getInterfaceVars (Ljava/util/List;Ljava/lang/String;Lnet/minecraft/class_1_1229;)Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
 		ARG 0 interfaceBindings
 		ARG 1 shaderId
@@ -17,4 +18,13 @@ CLASS net/minecraft/class_1_1384 net/minecraft/client/render/RenderPipelineCompi
 		ARG 0 id
 		ARG 1 type
 		ARG 2 sourceGetter
+	METHOD method_1_10048 compile (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_12289;Lit/unimi/dsi/fastutil/objects/ReferenceArrayList;Lit/unimi/dsi/fastutil/objects/Object2IntOpenHashMap;)Lnet/minecraft/class_1_1386$class_1_1387;
+		ARG 1 pipeline
+		ARG 2 shaderSourceGetter
+		ARG 3 compiledShadersOut
+		ARG 4 uniformIndicesOut
+	METHOD method_1_10052 (Lnet/minecraft/class_1_1386$class_1_1387$class_1_1389;)V
+		ARG 0 shader
+	METHOD method_1_10053 (Lnet/minecraft/class_1_1386$class_1_1387$class_1_1389;)V
+		ARG 0 shader
 	CLASS class_1_1385 InterfaceVar

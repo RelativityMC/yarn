@@ -8,6 +8,67 @@ CLASS net/minecraft/class_9848 net/minecraft/util/math/ColorHelper
 	METHOD method_1_5395 setRgbaVector (Lorg/joml/Vector4f;I)Lorg/joml/Vector4f;
 		ARG 0 vec
 		ARG 1 argb
+	METHOD method_1_9833 add (Lorg/joml/Vector3fc;Lorg/joml/Vector3fc;)Lorg/joml/Vector3fc;
+		ARG 0 a
+		ARG 1 b
+	METHOD method_1_9834 add (Lorg/joml/Vector4fc;Lorg/joml/Vector3fc;)Lorg/joml/Vector4fc;
+		ARG 0 a
+		ARG 1 b
+	METHOD method_1_9835 alphaBlend (Lorg/joml/Vector3fc;Lorg/joml/Vector4fc;)Lorg/joml/Vector3fc;
+		ARG 0 a
+		ARG 1 b
+	METHOD method_1_9836 alphaBlend (Lorg/joml/Vector4fc;Lorg/joml/Vector4fc;)Lorg/joml/Vector4fc;
+		ARG 0 a
+		ARG 1 b
+	METHOD method_1_9837 blend (FFFF)F
+		ARG 0 blendedAlpha
+		ARG 1 alpha
+		ARG 2 a
+		ARG 3 b
+	METHOD method_1_9838 fromVec3 (Lorg/joml/Vector3fc;)I
+		ARG 0 rgb
+	METHOD method_1_9839 fromVec4 (Lorg/joml/Vector4fc;)I
+		ARG 0 argb
+	METHOD method_1_9840 grayscale (Lorg/joml/Vector3fc;)Lorg/joml/Vector3fc;
+		ARG 0 rgb
+	METHOD method_1_9841 grayscale (Lorg/joml/Vector4fc;)Lorg/joml/Vector4fc;
+		ARG 0 argb
+	METHOD method_1_9842 multiply (Lorg/joml/Vector3fc;Lorg/joml/Vector3fc;)Lorg/joml/Vector3fc;
+		ARG 0 a
+		ARG 1 b
+	METHOD method_1_9843 multiply (Lorg/joml/Vector4fc;Lorg/joml/Vector4fc;)Lorg/joml/Vector4fc;
+		ARG 0 a
+		ARG 1 b
+	METHOD method_1_9844 scaleRgb (Lorg/joml/Vector3fc;F)Lorg/joml/Vector3fc;
+		ARG 0 rgb
+		ARG 1 scale
+	METHOD method_1_9845 scaleRgb (Lorg/joml/Vector3fc;FFF)Lorg/joml/Vector3fc;
+		ARG 0 rgb
+		ARG 1 redScale
+		ARG 2 greenScale
+		ARG 3 blueScale
+	METHOD method_1_9846 scaleArgb (Lorg/joml/Vector4fc;F)Lorg/joml/Vector4fc;
+		ARG 0 argb
+		ARG 1 scale
+	METHOD method_1_9847 scaleArgb (Lorg/joml/Vector4fc;FFF)Lorg/joml/Vector4fc;
+		ARG 0 argb
+		ARG 1 redScale
+		ARG 2 greenScale
+		ARG 3 blueScale
+	METHOD method_1_9848 lerp (FLorg/joml/Vector3fc;Lorg/joml/Vector3fc;)Lorg/joml/Vector3fc;
+		ARG 0 delta
+		ARG 1 start
+		ARG 2 end
+	METHOD method_1_9849 lerp (FLorg/joml/Vector4fc;Lorg/joml/Vector4fc;)Lorg/joml/Vector4fc;
+		ARG 0 delta
+		ARG 1 start
+		ARG 2 end
+	METHOD method_1_9850 subtract (Lorg/joml/Vector3fc;Lorg/joml/Vector3fc;)Lorg/joml/Vector3fc;
+		ARG 0 a
+		ARG 1 b
+	METHOD method_1_9851 subtract (Lorg/joml/Vector4fc;Lorg/joml/Vector3fc;)Lorg/joml/Vector4fc;
+		ARG 0 a
+		ARG 1 b
 	METHOD method_61317 getWhite (F)I
 		ARG 0 alpha
 	METHOD method_61318 fromFloats (FFFF)I
@@ -130,6 +191,8 @@ CLASS net/minecraft/class_9848 net/minecraft/util/math/ColorHelper
 	METHOD method_75607 toAlpha (F)I
 		ARG 0 alpha
 	METHOD method_75608 subtract (Ljava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
+		ARG 0 a
+		ARG 1 b
 	METHOD method_75609 averageSrgbIntensities (IIII)I
 		ARG 0 a
 		ARG 1 b

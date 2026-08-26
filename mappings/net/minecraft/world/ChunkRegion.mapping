@@ -2,6 +2,8 @@ CLASS net/minecraft/class_3233 net/minecraft/world/ChunkRegion
 	FIELD field_1_6290 centerX I
 	FIELD field_1_6291 centerZ I
 	FIELD field_1_6292 blockStateWriteRadius I
+	FIELD field_1_8842 worldEnvironmentAttributes Lnet/minecraft/class_12205;
+	FIELD field_1_9852 biomeSupplier Lnet/minecraft/class_6780;
 	FIELD field_14087 seed J
 	FIELD field_14091 random Lnet/minecraft/class_5819;
 	FIELD field_14092 LOGGER Lorg/slf4j/Logger;
@@ -30,6 +32,10 @@ CLASS net/minecraft/class_3233 net/minecraft/world/ChunkRegion
 	METHOD method_1_5411 assertInSafeArea (II)V
 		ARG 1 chunkX
 		ARG 2 chunkZ
+	METHOD method_1_7326 (Lnet/minecraft/class_2791;Lnet/minecraft/class_9770;Lnet/minecraft/class_9761;II)Lnet/minecraft/class_2791;
+		ARG 2 chunk
+		ARG 3 chunkX
+		ARG 4 chunkZ
 	METHOD method_14337 (Lnet/minecraft/class_2338;)Lnet/minecraft/class_6763;
 		ARG 1 pos
 	METHOD method_14338 markBlockForPostProcessing (Lnet/minecraft/class_2338;)V

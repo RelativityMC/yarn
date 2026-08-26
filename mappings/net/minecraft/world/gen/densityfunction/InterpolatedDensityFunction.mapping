@@ -1,0 +1,27 @@
+CLASS net/minecraft/class_1_1583 net/minecraft/world/gen/densityfunction/InterpolatedDensityFunction
+	METHOD method_1_10206 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	CLASS class_1_1584 Sampler
+		METHOD method_1_10207 interpolate (Lnet/minecraft/class_1_1516;Lnet/minecraft/class_1_1441;Lnet/minecraft/class_1_1441;IIIFFFFFFFF)V
+			ARG 1 output
+			ARG 2 outputRegion
+			ARG 3 inputRegion
+			ARG 4 cellX
+			ARG 5 cellY
+			ARG 6 cellZ
+			ARG 7 a000
+			ARG 8 a100
+			ARG 9 a010
+			ARG 10 a110
+			ARG 11 a001
+			ARG 12 a101
+			ARG 13 a011
+			ARG 14 a111
+		METHOD method_1_10208 fillContiguous (Lnet/minecraft/class_1_1521;Lnet/minecraft/class_1_1516;Lnet/minecraft/class_1_1441;)V
+			ARG 1 context
+			ARG 2 output
+			ARG 3 region
+		METHOD method_1_10209 fillStepped (Lnet/minecraft/class_1_1521;Lnet/minecraft/class_1_1516;Lnet/minecraft/class_1_1441;)V
+			ARG 1 context
+			ARG 2 output
+			ARG 3 region

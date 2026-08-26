@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_1492 net/minecraft/client/realms/gui/widget/RealmsButton
+	FIELD field_1_10177 BUTTON_TEXTURES Lnet/minecraft/class_8666;
+	METHOD <init> (IIIILnet/minecraft/class_2561;Lnet/minecraft/class_4185$class_4241;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+		ARG 5 message
+		ARG 6 onPress

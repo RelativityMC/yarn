@@ -1,0 +1,36 @@
+CLASS net/minecraft/class_1_1511 net/minecraft/datafixer/fix/MergeTerrainChunkStatusFix
+	FIELD field_1_10265 BIOMES_STATUS_ID Ljava/lang/String;
+	FIELD field_1_10266 CARVERS_STATUS_ID Ljava/lang/String;
+	FIELD field_1_10267 STATUSES_RENAMED_TO_BIOMES Ljava/util/Set;
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD method_1_10077 convertStatusName (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 id
+	METHOD method_1_10078 renameStatuses (Lcom/mojang/datafixers/Typed;)Lnet/minecraft/class_1_1511$class_1_1512;
+		ARG 1 chunk
+	METHOD method_1_10079 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 3 chunk
+	METHOD method_1_10080 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 remainder
+	METHOD method_1_10081 (Lcom/mojang/datafixers/OpticFinder;ZLcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 2 sections
+	METHOD method_1_10082 (ZLcom/mojang/datafixers/util/Pair;)Lcom/mojang/datafixers/util/Pair;
+		ARG 1 biomesAndBlockStates
+	METHOD method_1_10083 (Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/datafixers/util/Pair;
+		ARG 0 blockStates
+	METHOD method_1_10084 (Lcom/mojang/datafixers/util/Either;)Lcom/mojang/datafixers/util/Either;
+		ARG 0 blockStates1
+	METHOD method_1_10086 makeRule (Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/types/Type;)Lcom/mojang/datafixers/TypeRewriteRule;
+		ARG 1 chunkType
+		ARG 2 sectionsFieldFinder
+		ARG 3 sectionsFieldType
+		ARG 4 biomesFieldType
+		ARG 5 blockStatesFieldType
+	METHOD method_1_10087 fixBlockStates (Lcom/mojang/datafixers/Typed;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Z)Lcom/mojang/datafixers/Typed;
+		ARG 0 chunk
+		ARG 1 sectionsFieldFinder
+		ARG 2 biomesAndBlockStatesFinder
+		ARG 3 targetStatusNotBiome
+	METHOD method_1_10088 getId (Lcom/mojang/serialization/OptionalDynamic;)Ljava/lang/String;
+		ARG 0 value
+	CLASS class_1_1512 StatusRenameResult

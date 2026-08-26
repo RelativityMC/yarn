@@ -1,5 +1,13 @@
 CLASS net/minecraft/class_7 net/minecraft/entity/ai/pathing/PathNodeType
+	FIELD field_1_9410 INDEX_TO_VALUE Ljava/util/function/IntFunction;
+	FIELD field_1_9411 PACKET_CODEC Lnet/minecraft/class_9139;
+	FIELD field_1_9412 index I
 	FIELD field_13 defaultPenalty F
 	METHOD <init> (Ljava/lang/String;IIF)V
+		ARG 3 index
 		ARG 4 defaultPenalty
+	METHOD method_1_9079 (Lnet/minecraft/class_7;)I
+		ARG 0 type
+	METHOD method_1_9080 (Lnet/minecraft/class_7;)I
+		ARG 0 type
 	METHOD method_11 getDefaultPenalty ()F

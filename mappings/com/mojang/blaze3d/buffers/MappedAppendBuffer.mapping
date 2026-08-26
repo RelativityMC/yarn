@@ -1,16 +1,16 @@
-CLASS net/minecraft/class_11280 com/mojang/blaze3d/shaders/DynamicUniformStorage
+CLASS net/minecraft/class_11280 com/mojang/blaze3d/buffers/MappedAppendBuffer
 	FIELD field_1_9616 usage I
 	FIELD field_60085 LOGGER Lorg/slf4j/Logger;
 	FIELD field_60086 oldBuffers Ljava/util/List;
 	FIELD field_60087 blockSize I
 	FIELD field_60088 buffer Lnet/minecraft/class_11285;
-	FIELD field_60089 size I
+	FIELD field_60089 count I
 	FIELD field_60090 capacity I
 	FIELD field_60091 lastWrittenValue Lnet/minecraft/class_1_1502$class_11281;
 	FIELD field_60092 name Ljava/lang/String;
 	METHOD <init> (Ljava/lang/String;III)V
 		ARG 1 name
-		ARG 2 size
+		ARG 2 blockSize
 		ARG 3 usage
 		ARG 4 capacity
 	METHOD method_1_9251 (Ljava/util/List;)Lnet/minecraft/class_1_1254;

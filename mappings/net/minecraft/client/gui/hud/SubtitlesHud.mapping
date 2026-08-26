@@ -9,6 +9,7 @@ CLASS net/minecraft/class_359 net/minecraft/client/gui/hud/SubtitlesHud
 	METHOD method_1957 render (Lnet/minecraft/class_332;)V
 		ARG 1 context
 	CLASS class_360 SubtitleEntry
+		FIELD field_1_10223 repeatable Z
 		FIELD field_2188 text Lnet/minecraft/class_2561;
 		FIELD field_47673 range F
 		FIELD field_51913 sounds Ljava/util/List;
@@ -16,6 +17,12 @@ CLASS net/minecraft/class_359 net/minecraft/client/gui/hud/SubtitlesHud
 			ARG 1 text
 			ARG 2 range
 			ARG 3 pos
+			ARG 4 repeatable
+		METHOD method_1_10007 getTextBrightness (Lnet/minecraft/class_359$class_9772;D)I
+			ARG 1 nearestSound
+			ARG 2 notificationDisplayTime
+		METHOD method_1_10008 (Lnet/minecraft/class_243;Lnet/minecraft/class_359$class_9772;)Z
+			ARG 2 sound
 		METHOD method_1958 reset (Lnet/minecraft/class_243;)V
 			ARG 1 pos
 		METHOD method_1960 getText ()Lnet/minecraft/class_2561;
@@ -26,7 +33,10 @@ CLASS net/minecraft/class_359 net/minecraft/client/gui/hud/SubtitlesHud
 		METHOD method_60571 (JDLnet/minecraft/class_359$class_9772;)Z
 			ARG 4 sound
 		METHOD method_60572 getNearestSound (Lnet/minecraft/class_243;)Lnet/minecraft/class_359$class_9772;
+			ARG 1 pos
 		METHOD method_60573 (Lnet/minecraft/class_243;Lnet/minecraft/class_359$class_9772;)Z
 			ARG 1 sound
 		METHOD method_60574 hasSounds ()Z
+		METHOD method_60575 (Lnet/minecraft/class_243;Lnet/minecraft/class_359$class_9772;)D
+			ARG 1 sound
 	CLASS class_9772 SoundEntry

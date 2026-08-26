@@ -9,6 +9,14 @@ CLASS net/minecraft/class_3164 net/minecraft/server/command/DataCommand
 	FIELD field_13798 TARGET_OBJECT_TYPES Ljava/util/List;
 	FIELD field_41747 MODIFY_EXPECTED_VALUE_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_44916 MODIFY_INVALID_SUBSTRING_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
+	METHOD method_1_9963 (Lnet/minecraft/class_7157;Lnet/minecraft/class_1_1047;Lnet/minecraft/class_3164$class_3165;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+		ARG 2 modifier
+	METHOD method_1_9964 (Lnet/minecraft/class_7157;Lnet/minecraft/class_1_1047;Lnet/minecraft/class_3164$class_3165;Lnet/minecraft/class_1_1493$class_1_1494;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+		ARG 3 target
+	METHOD method_1_9965 (Lnet/minecraft/class_1_1493$class_1_1494;Lnet/minecraft/class_1_1047;Lnet/minecraft/class_3164$class_3165;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 3 context
+	METHOD method_1_9966 (Lnet/minecraft/class_1_1493$class_1_1494;Lnet/minecraft/class_1_1047;Lnet/minecraft/class_3164$class_3165;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 3 context
 	METHOD method_13885 executeRemove (Lnet/minecraft/class_2168;Lnet/minecraft/class_3162;Lnet/minecraft/class_2203$class_2209;)I
 		ARG 0 source
 		ARG 1 object
@@ -39,6 +47,7 @@ CLASS net/minecraft/class_3164 net/minecraft/server/command/DataCommand
 	METHOD method_13896 (Lnet/minecraft/class_1_1047;Lcom/mojang/brigadier/builder/ArgumentBuilder;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
 		ARG 1 builder
 	METHOD method_13898 addModifyArgument (Lnet/minecraft/class_7157;Ljava/util/function/BiConsumer;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+		ARG 0 registryAccess
 		ARG 1 subArgumentAdder
 	METHOD method_13899 (Lnet/minecraft/class_1_1047;Lnet/minecraft/class_3164$class_3165;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
 		ARG 1 modifier
@@ -59,6 +68,7 @@ CLASS net/minecraft/class_3164 net/minecraft/server/command/DataCommand
 		ARG 1 context
 	METHOD method_13905 register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/class_7157;)V
 		ARG 0 dispatcher
+		ARG 1 registryAccess
 	METHOD method_13907 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 nbt
 	METHOD method_13908 executeGet (Lnet/minecraft/class_2168;Lnet/minecraft/class_3162;)I

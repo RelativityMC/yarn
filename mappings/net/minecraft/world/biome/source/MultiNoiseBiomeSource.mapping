@@ -11,6 +11,10 @@ CLASS net/minecraft/class_4766 net/minecraft/world/biome/source/MultiNoiseBiomeS
 		ARG 2 biomeX
 		ARG 3 biomeY
 		ARG 4 biomeZ
+	METHOD method_1_10039 (Lnet/minecraft/class_1_1441;IIILnet/minecraft/class_1_1516;Lnet/minecraft/class_1_1516;Lnet/minecraft/class_1_1516;Lnet/minecraft/class_1_1516;Lnet/minecraft/class_1_1516;Lnet/minecraft/class_1_1516;III)Lnet/minecraft/class_6880;
+		ARG 11 x
+		ARG 12 y
+		ARG 13 z
 	METHOD method_38167 getBiomeAtPoint (Lnet/minecraft/class_6544$class_6553;)Lnet/minecraft/class_6880;
 		ARG 1 point
 	METHOD method_38168 matchesInstance (Lnet/minecraft/class_5321;)Z

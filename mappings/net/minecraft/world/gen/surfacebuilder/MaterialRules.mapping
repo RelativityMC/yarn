@@ -20,6 +20,12 @@ CLASS net/minecraft/class_6686 net/minecraft/world/gen/surfacebuilder/MaterialRu
 		ARG 0 registry
 		ARG 1 key
 		ARG 2 rule
+	METHOD method_1_10065 registerMaterialConditions (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 registry
+	METHOD method_1_10066 registerMaterialRules (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 registry
+	METHOD method_1_10067 sequence (Ljava/util/List;)Lnet/minecraft/class_6708;
+		ARG 0 rules
 	METHOD method_39045 steepSlope ()Lnet/minecraft/class_6693;
 	METHOD method_39046 water (II)Lnet/minecraft/class_6693;
 		ARG 0 offset
@@ -73,3 +79,5 @@ CLASS net/minecraft/class_6686 net/minecraft/world/gen/surfacebuilder/MaterialRu
 		ARG 0 registry
 		ARG 1 id
 		ARG 2 codec
+	CLASS class_1_1508 DensityProvider
+		METHOD method_1_10068 get ()F

@@ -17,6 +17,8 @@ CLASS net/minecraft/class_1111 net/minecraft/client/sound/Sound
 		ARG 6 stream
 		ARG 7 preload
 		ARG 8 attenuation
+	METHOD method_1_9908 getResultingVolume (F)F
+		ARG 1 volume
 	METHOD method_4764 isPreloaded ()Z
 	METHOD method_4766 getLocation ()Lnet/minecraft/class_2960;
 	METHOD method_4767 getIdentifier ()Lnet/minecraft/class_2960;

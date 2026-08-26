@@ -4,3 +4,4 @@ CLASS net/minecraft/class_6922 net/minecraft/world/gen/densityfunction/ClampDens
 		ARG 0 densityFunction
 	METHOD method_41078 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
+	CLASS class_1_1534 Sampler

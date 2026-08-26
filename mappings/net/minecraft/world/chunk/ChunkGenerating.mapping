@@ -1,5 +1,8 @@
 CLASS net/minecraft/class_9310 net/minecraft/world/chunk/ChunkGenerating
 	FIELD field_60378 LOGGER Lorg/slf4j/Logger;
+	METHOD method_1_9661 getBiomes (Lnet/minecraft/class_3233;I)Ljava/util/Set;
+		ARG 0 chunkRegion
+		ARG 1 rangeChunks
 	METHOD method_57594 initializeLight (Lnet/minecraft/class_9312;Lnet/minecraft/class_9770;Lnet/minecraft/class_9762;Lnet/minecraft/class_2791;)Ljava/util/concurrent/CompletableFuture;
 		ARG 0 context
 		ARG 1 step

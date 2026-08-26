@@ -1,5 +1,34 @@
 CLASS net/minecraft/class_5459 net/minecraft/world/BlockLocating
 	COMMENT A few utilities to find block positions matching certain conditions.
+	FIELD field_1_10117 MAX_TELEPORT_RANGE I
+	METHOD method_1_9852 getOffsetOrThrow (II)I
+		ARG 0 dest
+		ARG 1 source
+	METHOD method_1_9853 packTeleportOffsetClamped (Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;III)I
+		ARG 0 source
+		ARG 1 dest
+		ARG 2 rangeX
+		ARG 3 rangeY
+		ARG 4 rangeZ
+	METHOD method_1_9854 packTeleportOffsetThrowing (Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;III)I
+		ARG 0 source
+		ARG 1 dest
+		ARG 2 rangeX
+		ARG 3 rangeY
+		ARG 4 rangeZ
+	METHOD method_1_9855 packTeleportOffset (IIIIII)I
+		ARG 0 rangeX
+		ARG 1 rangeY
+		ARG 2 rangeZ
+		ARG 3 dx
+		ARG 4 dy
+		ARG 5 dz
+	METHOD method_1_9856 unpackTeleportDestination (Lnet/minecraft/class_2338;IIII)Lnet/minecraft/class_2338;
+		ARG 0 source
+		ARG 1 data
+		ARG 2 rangeX
+		ARG 3 rangeY
+		ARG 4 rangeZ
 	METHOD method_30574 getLargestRectangle (Lnet/minecraft/class_2338;Lnet/minecraft/class_2350$class_2351;ILnet/minecraft/class_2350$class_2351;ILjava/util/function/Predicate;)Lnet/minecraft/class_5459$class_5460;
 		COMMENT Gets the largest rectangle of blocks along two axes for which all blocks meet a predicate.
 		COMMENT Used for getting rectangles of Nether portal blocks.

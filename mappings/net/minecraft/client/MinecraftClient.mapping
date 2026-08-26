@@ -52,6 +52,8 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_1_7205 paletteManager Lnet/minecraft/class_1_1126;
 	FIELD field_1_8782 windowEventListener Lnet/minecraft/class_1_1312;
 	FIELD field_1_9834 multiDrawIndirectEnabled Z
+	FIELD field_1_10060 LEVEL_SECTION_CATEGORY Lcom/mojang/jtracy/SectionCategory;
+	FIELD field_1_10061 levelSection Lcom/mojang/jtracy/Section;
 	FIELD field_1687 world Lnet/minecraft/class_638;
 		COMMENT Represents the world the client is currently viewing.
 		COMMENT This field is not null when in game.

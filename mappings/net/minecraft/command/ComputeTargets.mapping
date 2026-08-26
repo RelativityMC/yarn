@@ -1,0 +1,24 @@
+CLASS net/minecraft/class_1_1493 net/minecraft/command/ComputeTargets
+	METHOD method_1_9968 thenComputeTarget (Lcom/mojang/brigadier/builder/ArgumentBuilder;Lnet/minecraft/class_1_1493$class_1_1495;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+		ARG 0 before
+		ARG 1 after
+	METHOD method_1_9969 (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_8567$class_8568;)Lnet/minecraft/class_8567;
+		ARG 0 context
+		ARG 1 lootContextBuilder
+	METHOD method_1_9970 (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_8567$class_8568;)Lnet/minecraft/class_8567;
+		ARG 0 context
+		ARG 1 lootContextBuilder
+	METHOD method_1_9971 (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_8567$class_8568;)Lnet/minecraft/class_8567;
+		ARG 0 context
+		ARG 1 lootContextBuilder
+	CLASS class_1_1494 ComputeTarget
+		METHOD method_1_9972 getLootContext (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/class_47;
+			ARG 1 context
+		METHOD method_1_9973 getLootWorldContext (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/class_8567;
+			ARG 1 context
+		METHOD method_1_9974 addLootParams (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_8567$class_8568;)Lnet/minecraft/class_8567;
+			ARG 1 context
+			ARG 2 builder
+	CLASS class_1_1495 PostAction
+		METHOD method_1_9975 get (Lnet/minecraft/class_1_1493$class_1_1494;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+			ARG 1 target

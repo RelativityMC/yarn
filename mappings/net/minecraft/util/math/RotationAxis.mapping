@@ -9,4 +9,17 @@ CLASS net/minecraft/class_7833 net/minecraft/util/math/RotationAxis
 		ARG 1 rad
 	METHOD method_1_2 rotationDegrees (F)Lorg/joml/Quaternionf;
 		ARG 1 deg
+	METHOD method_1_9829 rotate (Lorg/joml/Matrix3f;F)Lorg/joml/Matrix3f;
+		ARG 1 mat
+		ARG 2 rad
+	METHOD method_1_9830 rotate (Lorg/joml/Matrix4f;F)Lorg/joml/Matrix4f;
+		ARG 1 mat
+		ARG 2 rad
+	METHOD method_1_9831 rotateDegrees (Lorg/joml/Matrix3f;F)Lorg/joml/Matrix3f;
+		ARG 1 mat
+		ARG 2 deg
+	METHOD method_1_9832 rotateDegrees (Lorg/joml/Matrix4f;F)Lorg/joml/Matrix4f;
+		ARG 1 mat
+		ARG 2 deg
 	METHOD method_46356 of (Lorg/joml/Vector3fc;)Lnet/minecraft/class_7833;
+		ARG 0 axis

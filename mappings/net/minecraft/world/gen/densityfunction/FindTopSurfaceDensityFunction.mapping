@@ -2,3 +2,9 @@ CLASS net/minecraft/class_11599 net/minecraft/world/gen/densityfunction/FindTopS
 	FIELD field_61468 CODEC_HOLDER Lcom/mojang/serialization/MapCodec;
 	METHOD method_72684 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
+	CLASS class_1_1585 Sampler
+		METHOD method_1_10211 adjustY (Lnet/minecraft/class_1_1521;IIF)I
+			ARG 1 context
+			ARG 2 x
+			ARG 3 z
+			ARG 4 upperBound

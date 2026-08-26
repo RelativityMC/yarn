@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_6724 net/minecraft/world/gen/surfacebuilder/SurfaceBuilder
+	FIELD field_1_10259 chunkSurfaceLevel Lnet/minecraft/class_6910;
 	FIELD field_35275 WHITE_TERRACOTTA Lnet/minecraft/class_2680;
 	FIELD field_35276 ORANGE_TERRACOTTA Lnet/minecraft/class_2680;
 	FIELD field_35277 TERRACOTTA Lnet/minecraft/class_2680;
@@ -25,6 +26,17 @@ CLASS net/minecraft/class_6724 net/minecraft/world/gen/surfacebuilder/SurfaceBui
 		ARG 1 noiseConfig
 		ARG 2 defaultState
 		ARG 3 seaLevel
+		ARG 4 chunkSurfaceLevel
+		ARG 5 randomDeriver
+	METHOD method_1_10072 getSteepnessX (Lnet/minecraft/class_2791;II)I
+		ARG 0 chunk
+		ARG 1 localX
+		ARG 2 localZ
+	METHOD method_1_10073 getSteepnessZ (Lnet/minecraft/class_2791;II)I
+		ARG 0 chunk
+		ARG 1 localX
+		ARG 2 localZ
+	METHOD method_1_10074 getChunkSurfaceLevel ()Lnet/minecraft/class_6910;
 	METHOD method_39102 placeBadlandsPillar (Lnet/minecraft/class_6557;IIILnet/minecraft/class_5539;)V
 		ARG 1 column
 		ARG 2 x
@@ -64,6 +76,7 @@ CLASS net/minecraft/class_6724 net/minecraft/world/gen/surfacebuilder/SurfaceBui
 		ARG 3 heightContext
 		ARG 4 posToBiome
 		ARG 5 chunk
+		ARG 6 contextualSamplerProvider
 		ARG 7 pos
 		ARG 8 hasFluid
 	METHOD method_39333 isDefaultBlock (Lnet/minecraft/class_2680;)Z

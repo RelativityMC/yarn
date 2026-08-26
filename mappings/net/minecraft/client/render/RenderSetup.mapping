@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_12247 net/minecraft/client/render/RenderSetup
 	FIELD field_1_8182 hasCrumbling Z
+	FIELD field_1_10233 outlineSampler Ljava/lang/String;
 	FIELD field_63986 pipeline Lnet/minecraft/class_1_1257;
 	FIELD field_63987 textures Ljava/util/Map;
 	FIELD field_63988 textureTransform Lnet/minecraft/class_12250;
@@ -16,8 +17,10 @@ CLASS net/minecraft/class_12247 net/minecraft/client/render/RenderSetup
 		ARG 3 textures
 		ARG 4 useLightmap
 		ARG 5 useOverlay
+		ARG 6 layeringTransform
 		ARG 7 textureTransform
 		ARG 8 outlineMode
+		ARG 9 outlineSampler
 		ARG 10 hasCrumbling
 		ARG 11 translucent
 		ARG 12 opaque
@@ -35,6 +38,7 @@ CLASS net/minecraft/class_12247 net/minecraft/client/render/RenderSetup
 	CLASS class_12248 Builder
 		FIELD field_1_8184 opaque Z
 		FIELD field_1_8186 oitPipelineSet Lnet/minecraft/class_1_1165;
+		FIELD field_1_10234 outlineSampler Ljava/lang/String;
 		FIELD field_63997 pipeline Lnet/minecraft/class_1_1257;
 		FIELD field_63998 useLightmap Z
 		FIELD field_63999 useOverlay Z
@@ -47,6 +51,9 @@ CLASS net/minecraft/class_12247 net/minecraft/client/render/RenderSetup
 		METHOD <init> (Lnet/minecraft/class_1_1257;)V
 			ARG 1 pipeline
 		METHOD method_1_7472 opaque ()Lnet/minecraft/class_12247$class_12248;
+		METHOD method_1_10029 outlineMode (Lnet/minecraft/class_12247$class_4750;Ljava/lang/String;)Lnet/minecraft/class_12247$class_12248;
+			ARG 1 outlineMode
+			ARG 2 outlineSampler
 		METHOD method_75928 useLightmap ()Lnet/minecraft/class_12247$class_12248;
 		METHOD method_75930 layeringTransform (Lnet/minecraft/class_12245;)Lnet/minecraft/class_12247$class_12248;
 			ARG 1 layeringTransform

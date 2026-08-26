@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_6940 net/minecraft/world/gen/densityfunction/NoiseDensityFunction
+	FIELD field_37097 CODEC_HOLDER Lcom/mojang/serialization/MapCodec;
+	METHOD method_41090 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	CLASS class_1_1578 UnshiftedSampler
+	CLASS class_1_1579 XyzShiftedSampler
+	CLASS class_1_1580 XzShiftedSampler

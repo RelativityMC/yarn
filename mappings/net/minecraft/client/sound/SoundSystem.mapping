@@ -35,6 +35,14 @@ CLASS net/minecraft/class_1140 net/minecraft/client/sound/SoundSystem
 		ARG 3 resourceFactory
 	METHOD method_1_2593 forLoadedSounds (Lnet/minecraft/class_4237$class_1_387;)V
 		ARG 1 callback
+	METHOD method_1_9871 getVolumeForListeners (ZLnet/minecraft/class_1113$class_1114;F)F
+		ARG 0 relative
+		ARG 1 attenuationType
+		ARG 2 volume
+	METHOD method_1_9872 notifySoundInstanceListeners (Lnet/minecraft/class_1113;Lnet/minecraft/class_1146;F)V
+		ARG 1 sound
+		ARG 2 soundSet
+		ARG 3 volume
 	METHOD method_4835 isPlaying (Lnet/minecraft/class_1113;)Z
 		ARG 1 sound
 	METHOD method_4837 reloadSounds ()V

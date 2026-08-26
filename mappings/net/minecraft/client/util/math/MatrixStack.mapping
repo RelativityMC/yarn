@@ -17,6 +17,12 @@ CLASS net/minecraft/class_4587 net/minecraft/client/util/math/MatrixStack
 	FIELD field_55850 stackDepth I
 	METHOD method_1_2667 apply (Lnet/minecraft/class_4590;)V
 		ARG 1 transformation
+	METHOD method_1_9866 rotate (Lnet/minecraft/class_7833;F)V
+		ARG 1 axis
+		ARG 2 rad
+	METHOD method_1_9867 rotateDegrees (Lnet/minecraft/class_7833;F)V
+		ARG 1 axis
+		ARG 2 deg
 	METHOD method_22903 push ()V
 		COMMENT Pushes a copy of the top entry onto this stack.
 	METHOD method_22904 translate (DDD)V
@@ -65,6 +71,12 @@ CLASS net/minecraft/class_4587 net/minecraft/client/util/math/MatrixStack
 		FIELD field_48930 canSkipNormalization Z
 		METHOD method_1_2668 apply (Lnet/minecraft/class_4590;)V
 			ARG 1 transformation
+		METHOD method_1_9868 rotate (Lnet/minecraft/class_7833;F)V
+			ARG 1 axis
+			ARG 2 rad
+		METHOD method_1_9869 rotateDegrees (Lnet/minecraft/class_7833;F)V
+			ARG 1 axis
+			ARG 2 deg
 		METHOD method_23761 getPositionMatrix ()Lorg/joml/Matrix4f;
 			COMMENT {@return the matrix used to transform positions}
 		METHOD method_23762 getNormalMatrix ()Lorg/joml/Matrix3f;

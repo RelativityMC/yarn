@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_1_1517 net/minecraft/world/gen/densityfunction/DensityFunctionVisitor
+	FIELD field_1_10295 INLINING Lnet/minecraft/class_1_1517;
+	FIELD field_1_10296 NORMALIZE_DOMAIN Lnet/minecraft/class_1_1517;
+	METHOD method_1_10135 ([Lnet/minecraft/class_1_1517;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 1 func
+	METHOD method_1_10136 (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 0 func
+	METHOD method_1_10137 visit (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 1 func
+	METHOD method_1_10138 chain ([Lnet/minecraft/class_1_1517;)Lnet/minecraft/class_1_1517;
+		ARG 0 visitors
+	CLASS class_1_1518 NormalizeDomain
+		METHOD method_1_10139 getSlicingAxes (Lnet/minecraft/class_6910;)I
+			ARG 0 func
+		METHOD method_1_10140 slice (Lnet/minecraft/class_6910;I)Lnet/minecraft/class_6910;
+			ARG 1 func
+			ARG 2 axes
+		METHOD method_1_10141 isAlreadyNormalized (Lnet/minecraft/class_6910;)Z
+			ARG 0 func

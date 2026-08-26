@@ -1,3 +1,7 @@
 CLASS net/minecraft/class_1_1402 net/minecraft/world/gen/densityfunction/SliceDensityFunction
 	METHOD method_1_9263 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
+	CLASS class_1_1537 SamplerX
+	CLASS class_1_1538 SamplerXz
+	CLASS class_1_1539 SamplerY
+	CLASS class_1_1540 SamplerZ

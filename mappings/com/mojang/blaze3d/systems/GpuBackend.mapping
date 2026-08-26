@@ -33,6 +33,8 @@ CLASS net/minecraft/class_1_147 com/mojang/blaze3d/systems/GpuBackend
 	METHOD method_1_1306 getCompiledPipeline (Lnet/minecraft/class_1_1386$class_1_1387;)Lnet/minecraft/class_1_1386$class_1_1505;
 		ARG 1 pipelineLayout
 	METHOD method_1_4219 createSurface (JLjava/util/function/BooleanSupplier;)Lnet/minecraft/class_1_713;
+		ARG 1 window
+		ARG 3 minimized
 	METHOD method_1_4220 createTimestampQueryPool (I)Lnet/minecraft/class_1_685;
 		ARG 1 size
 	METHOD method_1_4221 getDeviceInfo ()Lnet/minecraft/class_1_664;

@@ -15,6 +15,10 @@ CLASS net/minecraft/class_6088 net/minecraft/world/WorldEvents
 		COMMENT <br>Spawns block breaking particles.
 		COMMENT <p>The network ID of the block state must be supplied as extra data.
 		COMMENT <p>Called by {@link net.minecraft.block.Block#spawnBreakParticles}
+	FIELD field_1_9014 DRAGON_EGG_TELEPORT I
+	FIELD field_1_10151 CHORUS_FRUIT_TELEPORT I
+	FIELD field_1_10152 ENDERMAN_TELEPORT I
+	FIELD field_1_10153 SHULKER_TELEPORT I
 	FIELD field_31114 ZOMBIE_INFECTS_VILLAGER I
 		COMMENT A zombie infects a villager.
 		COMMENT <br>Plays the zombie infect villager sound event.

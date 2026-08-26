@@ -1,3 +1,9 @@
 CLASS net/minecraft/class_1_1401 net/minecraft/world/gen/densityfunction/PowerDensityFunction
 	METHOD method_1_9262 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
+	METHOD method_1_10159 samplerCV (Lnet/minecraft/class_1_1519;F)Lnet/minecraft/class_1_1519;
+		ARG 0 base
+		ARG 1 exponent
+	CLASS class_1_1524 SamplerVC
+	CLASS class_1_1525 SamplerCV
+	CLASS class_1_1526 SamplerVV

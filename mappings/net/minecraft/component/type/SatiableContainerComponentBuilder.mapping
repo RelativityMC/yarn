@@ -1,3 +1,4 @@
-CLASS net/minecraft/class_1_1513
+CLASS net/minecraft/class_1_1513 net/minecraft/component/type/SatiableContainerComponentBuilder
 	METHOD method_1_7067 addItemStack (Lnet/minecraft/class_1_1040;)Z
+		ARG 1 from
 	METHOD method_1_7068 canAcceptMoreItems ()Z

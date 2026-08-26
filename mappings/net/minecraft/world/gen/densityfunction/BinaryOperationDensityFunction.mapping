@@ -1,5 +1,18 @@
 CLASS net/minecraft/class_6917 net/minecraft/world/gen/densityfunction/BinaryOperationDensityFunction
 	FIELD field_1_9827 LOGGER Lorg/slf4j/Logger;
+	METHOD method_1_10182 warnNonOverlappingInputs ()V
+	CLASS class_1_1553 AddSampler
+	CLASS class_1_1554 OffsetSampler
+	CLASS class_1_1555 ReciprocalSampler
+	CLASS class_1_1556 ClampAbove
+	CLASS class_1_1557 ClampBelow
+	CLASS class_1_1558 ScaleSampler
+	CLASS class_1_1559 InvertSampler
+	CLASS class_1_1560 DivideSampler
+	CLASS class_1_1561 Max
+	CLASS class_1_1562 Min
+	CLASS class_1_1563 MultiplySampler
+	CLASS class_1_1564 SubtractSampler
 	CLASS class_6918 Type
 		FIELD field_37111 codecHolder Lcom/mojang/serialization/MapCodec;
 		FIELD field_37112 name Ljava/lang/String;

@@ -3,3 +3,8 @@ CLASS net/minecraft/class_1_1180 net/minecraft/component/type/BlockTransformerCo
 		ARG 0 transformations
 		ARG 1 soundEvent
 		ARG 2 particle
+	METHOD method_1_10034 axeTransform ()Lnet/minecraft/class_1_1156$class_1_1157;
+	METHOD method_1_10035 bootstrap (Lnet/minecraft/class_7891;)V
+		ARG 0 registry
+	METHOD method_1_10036 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 path

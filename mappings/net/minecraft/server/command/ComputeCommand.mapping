@@ -1,0 +1,34 @@
+CLASS net/minecraft/class_1_1489 net/minecraft/server/command/ComputeCommand
+	METHOD method_1_9927 execute (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_1_1493$class_1_1494;Lnet/minecraft/class_6880;F)I
+		ARG 0 context
+		ARG 1 target
+		ARG 2 provider
+		ARG 3 scale
+	METHOD method_1_9928 executeInteger (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_1_1493$class_1_1494;Lnet/minecraft/class_6880;)I
+		ARG 0 context
+		ARG 1 target
+		ARG 2 provider
+	METHOD method_1_9930 (ILnet/minecraft/class_5321;)Lnet/minecraft/class_5250;
+		ARG 1 key
+	METHOD method_1_9933 (FILnet/minecraft/class_5321;)Lnet/minecraft/class_5250;
+		ARG 2 key
+	METHOD method_1_9935 (Lnet/minecraft/class_7157;Lnet/minecraft/class_1_1493$class_1_1494;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+		ARG 1 target
+	METHOD method_1_9936 (Lnet/minecraft/class_1_1493$class_1_1494;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 1 context
+	METHOD method_1_9937 (Lnet/minecraft/class_1_1493$class_1_1494;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 1 context
+	METHOD method_1_9938 (Lnet/minecraft/class_1_1493$class_1_1494;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 1 context
+	METHOD method_1_9939 sendFeedbackExact (Lnet/minecraft/class_2168;Lnet/minecraft/class_6880;I)V
+		ARG 0 source
+		ARG 1 provider
+		ARG 2 scale
+	METHOD method_1_9940 sendFeedbackRounded (Lnet/minecraft/class_2168;Lnet/minecraft/class_6880;IF)V
+		ARG 0 source
+		ARG 1 provider
+		ARG 2 rounded
+		ARG 3 exact
+	METHOD method_1_9941 register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/class_7157;)V
+		ARG 0 dispatcher
+		ARG 1 registryAccess

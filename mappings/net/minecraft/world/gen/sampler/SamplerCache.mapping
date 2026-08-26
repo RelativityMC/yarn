@@ -1,0 +1,21 @@
+CLASS net/minecraft/class_1_1576 net/minecraft/world/gen/sampler/SamplerCache
+	FIELD field_1_10337 compileLock Ljava/util/concurrent/locks/ReentrantLock;
+	FIELD field_1_10338 context Lnet/minecraft/class_6910$class_1_1527;
+	FIELD field_1_10339 nextPreparedCacheId I
+	FIELD field_1_10340 compileFunc Ljava/util/function/Function;
+	FIELD field_1_10341 CACHING_VISITOR Lnet/minecraft/class_1_1517;
+	FIELD field_1_10342 preparedCachesByFunc Ljava/util/Map;
+	FIELD field_1_10343 compileCache Ljava/util/Map;
+	METHOD <init> (Lnet/minecraft/class_6910$class_1_1527;)V
+		ARG 1 context
+	METHOD method_1_10201 getOrCompile (Lnet/minecraft/class_6910;)Lnet/minecraft/class_1_1519;
+		ARG 1 func
+	METHOD method_1_10202 compile (Lnet/minecraft/class_6910;)Lnet/minecraft/class_1_1519;
+		ARG 1 func
+	METHOD method_1_10203 prepareCache (Lnet/minecraft/class_1_1533;)Lnet/minecraft/class_1_1576$class_1_1577;
+		ARG 1 func
+	METHOD method_1_10204 getOrPrepareCache (Lnet/minecraft/class_1_1533;)Lnet/minecraft/class_6910;
+		ARG 1 func
+	CLASS class_1_1577 PreparedCache
+		FIELD comp_1_1678 getVariantAxes I
+		FIELD comp_1_1679 getRange Lnet/minecraft/class_1_1150;

@@ -1,0 +1,25 @@
+CLASS net/minecraft/class_1_1516 net/minecraft/world/gen/sampler/SampleBuffer
+	FIELD field_1_10292 count I
+	FIELD field_1_10293 elems [F
+	METHOD <init> (I)V
+		ARG 1 count
+	METHOD method_1_10120 add (IF)V
+		ARG 1 index
+		ARG 2 value
+	METHOD method_1_10121 capacity ()I
+	METHOD method_1_10122 copyFrom (Lnet/minecraft/class_1_1516;)V
+		ARG 1 source
+	METHOD method_1_10123 withCount (I)Lnet/minecraft/class_1_1516;
+		ARG 0 count
+	METHOD method_1_10124 fill (F)V
+		ARG 1 value
+	METHOD method_1_10125 get (I)F
+		ARG 1 index
+	METHOD method_1_10126 set (IF)V
+		ARG 1 index
+		ARG 2 value
+	METHOD method_1_10127 fill (IIF)V
+		ARG 1 start
+		ARG 2 count
+		ARG 3 value
+	METHOD method_1_10128 count ()I

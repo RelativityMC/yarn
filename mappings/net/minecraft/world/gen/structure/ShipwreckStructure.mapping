@@ -9,3 +9,7 @@ CLASS net/minecraft/class_3170 net/minecraft/world/gen/structure/ShipwreckStruct
 		ARG 2 context
 	METHOD method_41687 (Lnet/minecraft/class_3195$class_7149;Lnet/minecraft/class_6626;)V
 		ARG 2 collector
+	METHOD method_41688 (Lnet/minecraft/class_3170;)Ljava/lang/Boolean;
+		ARG 0 structure
+	METHOD method_41689 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

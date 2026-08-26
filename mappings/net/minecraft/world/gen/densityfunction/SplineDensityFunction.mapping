@@ -7,7 +7,43 @@ CLASS net/minecraft/class_7076 net/minecraft/world/gen/densityfunction/SplineDen
 	METHOD comp_1_1744 spline ()Lnet/minecraft/class_6492;
 	METHOD method_1_9264 (Lorg/apache/commons/lang3/mutable/MutableInt;Lnet/minecraft/class_7076$class_7135;)V
 		ARG 1 densityFunction
-	CLASS class_1_1568 class_1_1568
-		FIELD comp_1_1640 getRange Lnet/minecraft/class_1_1150;
+	METHOD method_1_10183 (Lnet/minecraft/class_1_1517;Lorg/apache/commons/lang3/mutable/MutableBoolean;Lnet/minecraft/class_7076$class_7135;)Lnet/minecraft/class_7076$class_7135;
+		ARG 2 func
+	CLASS class_1_1565 BatchStrategy
+		FIELD field_1_10316 subsamplerOutput [Lnet/minecraft/class_1_1572;
+		FIELD field_1_10317 context Lnet/minecraft/class_1_1521;
+		FIELD field_1_10318 outputIndex I
+		FIELD field_1_10319 region Lnet/minecraft/class_1_1441;
+		METHOD <init> (Lnet/minecraft/class_1_1521;Lnet/minecraft/class_1_1441;I)V
+			ARG 1 context
+			ARG 2 region
+			ARG 3 subsamplerCount
+	CLASS class_1_1566 SingleStrategy
+		FIELD field_1_10320 x I
+		FIELD field_1_10321 y I
+		FIELD field_1_10322 z I
+		FIELD field_1_10323 subsamples [F
+		FIELD field_1_10324 context Lnet/minecraft/class_1_1521;
+		METHOD <init> (Lnet/minecraft/class_1_1521;IIII)V
+			ARG 1 context
+			ARG 2 x
+			ARG 3 y
+			ARG 4 z
+			ARG 5 subsamplerCount
+	CLASS class_1_1567 Sampler
+		FIELD field_1_10325 subsamplerCount I
+		FIELD field_1_10326 evaluator Lnet/minecraft/class_6501;
+		METHOD <init> (Lnet/minecraft/class_6910$class_1_1527;Lnet/minecraft/class_6492;)V
+			ARG 1 context
+			ARG 2 spline
+		METHOD method_1_10185 (Ljava/util/Map;Lnet/minecraft/class_6910$class_1_1527;Lnet/minecraft/class_7076$class_7135;)Lnet/minecraft/class_7076$class_1_1568;
+			ARG 2 funcWrapper
+		METHOD method_1_10186 (Ljava/util/Map;Lnet/minecraft/class_6910$class_1_1527;Lnet/minecraft/class_6910;)Lnet/minecraft/class_7076$class_1_1568;
+			ARG 2 func
+	CLASS class_1_1568 Subsampler
+	CLASS class_1_1569 SamplingStrategy
+		METHOD method_1_10188 get (Lnet/minecraft/class_1_1519;I)F
+			ARG 1 subsampler
+			ARG 2 subsamplerIndex
 	CLASS class_7135 DensityFunctionWrapper
 		FIELD field_37679 CODEC Lcom/mojang/serialization/Codec;

@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_9 net/minecraft/entity/ai/pathing/PathNode
+	FIELD field_1_9395 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_34 distanceToNearestTarget F
 	FIELD field_35 previous Lnet/minecraft/class_9;
 	FIELD field_36 penalizedPathLength F
@@ -18,6 +19,33 @@ CLASS net/minecraft/class_9 net/minecraft/entity/ai/pathing/PathNode
 		ARG 3 z
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
+	METHOD method_1_9032 createPacketCodec (Lcom/mojang/datafixers/util/Function3;)Lnet/minecraft/class_9139;
+		ARG 0 constructor
+	METHOD method_1_9033 (Lnet/minecraft/class_9;)Ljava/lang/Integer;
+		ARG 0 node
+	METHOD method_1_9034 (Lnet/minecraft/class_9;)Ljava/lang/Integer;
+		ARG 0 node
+	METHOD method_1_9035 (Lnet/minecraft/class_9;)Ljava/lang/Integer;
+		ARG 0 node
+	METHOD method_1_9036 (Lnet/minecraft/class_9;)Ljava/lang/Float;
+		ARG 0 node
+	METHOD method_1_9037 (Lnet/minecraft/class_9;)Ljava/lang/Float;
+		ARG 0 node
+	METHOD method_1_9038 (Lnet/minecraft/class_9;)Ljava/lang/Boolean;
+		ARG 0 node
+	METHOD method_1_9039 (Lnet/minecraft/class_9;)Lnet/minecraft/class_7;
+		ARG 0 node
+	METHOD method_1_9040 (Lnet/minecraft/class_9;)Ljava/lang/Float;
+		ARG 0 node
+	METHOD method_1_9041 (Lcom/mojang/datafixers/util/Function3;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Float;Ljava/lang/Float;Ljava/lang/Boolean;Lnet/minecraft/class_7;Ljava/lang/Float;)Lnet/minecraft/class_9;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 pathLength
+		ARG 5 penalty
+		ARG 6 visited
+		ARG 7 type
+		ARG 8 heapWeight
 	METHOD method_26 copyWithNewPosition (III)Lnet/minecraft/class_9;
 		ARG 1 x
 		ARG 2 y

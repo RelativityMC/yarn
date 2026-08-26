@@ -1,6 +1,8 @@
 CLASS net/minecraft/class_3244 net/minecraft/server/network/ServerPlayNetworkHandler
 	FIELD field_1_7094 commandCooldown Lnet/minecraft/class_10222;
 	FIELD field_1_9212 suggestionsManager Lnet/minecraft/class_1_1361;
+	FIELD field_1_10253 lastForceSendBlocksBelow I
+	FIELD field_1_10254 changedPositionThisTick Z
 	FIELD field_14117 movePacketsCount I
 	FIELD field_14118 ticks I
 	FIELD field_14119 requestedTeleportPos Lnet/minecraft/class_243;
@@ -75,6 +77,17 @@ CLASS net/minecraft/class_3244 net/minecraft/server/network/ServerPlayNetworkHan
 	METHOD method_1_6320 checkForCommandSpam ()V
 	METHOD method_1_8894 (ILcom/mojang/brigadier/suggestion/Suggestions;)V
 		ARG 2 suggestions
+	METHOD method_1_10057 tickInAir ()V
+	METHOD method_1_10058 move (DDDFFZZ)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 yaw
+		ARG 8 pitch
+		ARG 9 onGround
+		ARG 10 horizontalCollision
+	METHOD method_1_10059 (Lnet/minecraft/class_2338;)V
+		ARG 1 pos
 	METHOD method_14360 requestTeleport (Lnet/minecraft/class_10182;Ljava/util/Set;)V
 		ARG 1 pos
 		ARG 2 flags

@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_1_1551 net/minecraft/world/gen/sampler/SampleBufferPool
+	FIELD field_1_10312 BUCKET_SIZE I
+	FIELD field_1_10313 MAX_TO_MIN_SEARCH_CAPACITY_RATIO I
+	FIELD field_1_10314 reclaimedBuffers Ljava/util/List;
+	FIELD field_1_10315 maxAge I
+	METHOD <init> (I)V
+		ARG 1 maxAge
+	METHOD method_1_10174 clear ()V
+	METHOD method_1_10175 cleanup ()V
+	METHOD method_1_10176 hasNoReclaimedBuffers ()Z
+	METHOD method_1_10177 (Lnet/minecraft/class_1_1572;)Z
+		ARG 1 buf
+	METHOD method_1_10178 numReclaimedBuffers ()I
+	METHOD method_1_10179 findReclaimedBuffer (II)Lnet/minecraft/class_1_1572;
+		ARG 1 minCapacity
+		ARG 2 maxCapacity

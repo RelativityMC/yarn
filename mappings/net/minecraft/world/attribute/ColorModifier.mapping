@@ -1,12 +1,21 @@
 CLASS net/minecraft/class_12216 net/minecraft/world/attribute/ColorModifier
-	FIELD field_63796 ADD Lnet/minecraft/class_12216$class_12217;
-	FIELD field_63797 SUBTRACT Lnet/minecraft/class_12216$class_12217;
+	FIELD field_1_10235 ADD_ARGB Lnet/minecraft/class_12216$class_12217;
+	FIELD field_1_10236 ALPHA_BLEND_ARGB Lnet/minecraft/class_12216$class_12258;
+	FIELD field_1_10237 ALPHA_BLEND_RGB Lnet/minecraft/class_12216$class_12258;
+	FIELD field_1_10238 BLEND_TO_GRAY_RGB Lnet/minecraft/class_12216;
+	FIELD field_1_10239 SUBTRACT_ARGB Lnet/minecraft/class_12216$class_12217;
+	FIELD field_63796 ADD_RGB Lnet/minecraft/class_12216$class_12217;
+	FIELD field_63797 SUBTRACT_RGB Lnet/minecraft/class_12216$class_12217;
 	FIELD field_63798 MULTIPLY_RGB Lnet/minecraft/class_12216$class_12217;
 	FIELD field_64129 MULTIPLY_ARGB Lnet/minecraft/class_12216$class_12258;
-	FIELD field_64354 BLEND_TO_GRAY Lnet/minecraft/class_12216;
+	FIELD field_64354 BLEND_TO_GRAY_ARGB Lnet/minecraft/class_12216;
 	CLASS 2 2
 	CLASS class_12217 Rgb
 	CLASS class_12258 Argb
 	CLASS class_12318 BlendToGrayArg
+		METHOD method_1_10032 lerp (FLnet/minecraft/class_12216$class_12318;Lnet/minecraft/class_12216$class_12318;)Lnet/minecraft/class_12216$class_12318;
+			ARG 0 t
+			ARG 1 a
+			ARG 2 b
 		METHOD method_76438 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance

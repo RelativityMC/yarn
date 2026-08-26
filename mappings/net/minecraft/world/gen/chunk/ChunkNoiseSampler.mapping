@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_1_1490 net/minecraft/world/gen/chunk/ChunkNoiseSampler
+	FIELD field_1_10161 aquiferSampler Lnet/minecraft/class_6350;
+	FIELD field_1_10162 pool Lnet/minecraft/class_1_1551;
+	FIELD field_1_10163 contextualSamplerProvider Lnet/minecraft/class_1_1552;
+	FIELD field_1_10164 noiseConfig Lnet/minecraft/class_7138;
+	FIELD field_1_10165 region Lnet/minecraft/class_1_1441;
+	METHOD <init> (Lnet/minecraft/class_7138;Lnet/minecraft/class_5817;Lnet/minecraft/class_5284;Lnet/minecraft/class_6350$class_6565;Lnet/minecraft/class_6748;Lnet/minecraft/class_1_1441;)V
+		ARG 1 noiseConfig
+		ARG 2 structureWeightSampler
+		ARG 3 settings
+		ARG 4 fluidLevelSampler
+		ARG 5 blender
+		ARG 6 region
+	METHOD method_1_9945 getAquiferSampler ()Lnet/minecraft/class_6350;
+	METHOD method_1_9946 getContextualSamplerProvider ()Lnet/minecraft/class_1_1552;
+	METHOD method_1_9947 getRegion ()Lnet/minecraft/class_1_1441;

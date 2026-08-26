@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_1_1340 net/minecraft/world/gen/densityfunction/RoundingDensityFunction
 	METHOD method_1_8828 round (FLnet/minecraft/class_1_1340$class_1_1341;)F
 		ARG 0 value
+		ARG 1 mode
 	METHOD method_1_9551 (F)F
 		ARG 1 value
 	CLASS class_1_1341 Mode
@@ -11,5 +12,10 @@ CLASS net/minecraft/class_1_1340 net/minecraft/world/gen/densityfunction/Roundin
 		METHOD method_1_8830 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 1 instance
 		METHOD method_1_8831 (Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;)Lnet/minecraft/class_1_1340;
+			ARG 1 input
+			ARG 2 multiple
+	CLASS class_1_1535 UnitSampler
+	CLASS class_1_1536 ScaledSampler
+		METHOD method_1_10168 round (FF)F
 			ARG 1 input
 			ARG 2 multiple

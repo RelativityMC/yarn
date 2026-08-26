@@ -27,6 +27,7 @@ CLASS net/minecraft/class_6492 net/minecraft/util/math/Spline
 		ARG 1 amplifier
 	METHOD method_41187 mapLocation (Ljava/util/function/Function;)Lnet/minecraft/class_6492;
 		COMMENT {@return a new {@link Spline} with a location function which applies the location function of the old spline followed by {@code f}}
+		ARG 1 f
 	CLASS class_6493 Builder
 		FIELD field_34382 locationFunction Lnet/minecraft/class_6501;
 		FIELD field_34383 locations Lit/unimi/dsi/fastutil/floats/FloatList;

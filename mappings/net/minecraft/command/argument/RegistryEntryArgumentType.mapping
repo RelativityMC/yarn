@@ -20,6 +20,11 @@ CLASS net/minecraft/class_9433 net/minecraft/command/argument/RegistryEntryArgum
 	METHOD method_1_8141 getFeature (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880;
 		ARG 0 context
 		ARG 1 argument
+	METHOD method_1_10037 getLootNumberProvider (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880;
+		ARG 0 context
+		ARG 1 argument
+	METHOD method_1_10038 lootNumberProvider (Lnet/minecraft/class_7157;)Lnet/minecraft/class_9433$class_1_1504;
+		ARG 0 registryAccess
 	METHOD method_58481 getLootTable (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880;
 		ARG 0 context
 		ARG 1 argument
@@ -58,6 +63,9 @@ CLASS net/minecraft/class_9433 net/minecraft/command/argument/RegistryEntryArgum
 	METHOD method_71780 dialog (Lnet/minecraft/class_7157;)Lnet/minecraft/class_9433$class_11458;
 		ARG 0 registryAccess
 	CLASS class_1_1272 FeatureArgumentType
+		METHOD <init> (Lnet/minecraft/class_7157;)V
+			ARG 1 registryAccess
+	CLASS class_1_1504 LootNumberProviderArgumentType
 		METHOD <init> (Lnet/minecraft/class_7157;)V
 			ARG 1 registryAccess
 	CLASS class_9434 LootFunctionArgumentType

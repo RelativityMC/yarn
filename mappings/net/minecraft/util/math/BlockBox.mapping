@@ -31,6 +31,13 @@ CLASS net/minecraft/class_3341 net/minecraft/util/math/BlockBox
 		ARG 1 pos
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
+	METHOD method_1_10056 intersects (IIIIII)Z
+		ARG 1 minX
+		ARG 2 minY
+		ARG 3 minZ
+		ARG 4 maxX
+		ARG 5 maxY
+		ARG 6 maxZ
 	METHOD method_14657 intersects (Lnet/minecraft/class_3341;)Z
 		COMMENT {@return whether {@code other} intersects with this box}
 		ARG 1 other

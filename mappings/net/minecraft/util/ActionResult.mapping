@@ -32,6 +32,7 @@ CLASS net/minecraft/class_1269 net/minecraft/util/ActionResult
 		METHOD comp_2908 newHandStack ()Lnet/minecraft/class_1799;
 	CLASS class_9859 Pass
 	CLASS class_9860 Success
+		METHOD method_1_9400 shouldSwing ()Z
 		METHOD method_61393 withNewHandStack (Lnet/minecraft/class_1799;)Lnet/minecraft/class_1269$class_9860;
 			ARG 1 newHandStack
 		METHOD method_61394 noIncrementStat ()Lnet/minecraft/class_1269$class_9860;

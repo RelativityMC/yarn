@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_1570 net/minecraft/world/gen/sampler/SampleBufferProvider
+	FIELD field_1_10329 UNPOOLED Lnet/minecraft/class_1_1570;
+	METHOD method_1_10190 allocate (I)Lnet/minecraft/class_1_1572;
+		ARG 1 count
+	METHOD method_1_10191 reclaim (Lnet/minecraft/class_1_1572;)V
+		ARG 1 buf

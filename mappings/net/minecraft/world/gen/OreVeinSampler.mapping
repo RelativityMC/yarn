@@ -17,6 +17,14 @@ CLASS net/minecraft/class_6955 net/minecraft/world/gen/OreVeinSampler
 	FIELD field_36628 VEIN_GAP_THRESHOLD F
 	METHOD method_1_8726 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
+	METHOD method_1_10095 (III)Lnet/minecraft/class_2680;
+		ARG 0 x
+		ARG 1 y
+		ARG 2 z
+	METHOD method_1_10096 (Lnet/minecraft/class_6686$class_1_1508;Lnet/minecraft/class_2680;Lnet/minecraft/class_6574;Lnet/minecraft/class_6686$class_1_1508;Lnet/minecraft/class_6686$class_1_1508;Lnet/minecraft/class_2680;III)Lnet/minecraft/class_2680;
+		ARG 7 x
+		ARG 8 y
+		ARG 9 z
 	CLASS class_6354 VeinType
 		FIELD field_33605 ore Lnet/minecraft/class_2680;
 		FIELD field_33606 stone Lnet/minecraft/class_2680;

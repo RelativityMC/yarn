@@ -1,0 +1,46 @@
+CLASS net/minecraft/class_1_1521 net/minecraft/world/gen/sampler/SamplingContext
+	FIELD field_1_10297 CACHE_ENTRY_COUNT_DIVISOR I
+	FIELD field_1_10298 EMPTY Lnet/minecraft/class_1_1521;
+	FIELD field_1_10299 pool Lnet/minecraft/class_1_1570;
+	FIELD field_1_10300 cache [Lnet/minecraft/class_1_1521$class_1_1523;
+	FIELD field_1_10301 params Lnet/minecraft/class_10352;
+	METHOD <init> (Lnet/minecraft/class_10352;Lnet/minecraft/class_1_1570;Z)V
+		ARG 1 params
+		ARG 2 pool
+		ARG 3 cached
+	METHOD method_1_10148 allocateBufferFor (Lnet/minecraft/class_1_1441;)Lnet/minecraft/class_1_1572;
+		ARG 1 region
+	METHOD method_1_10149 builder ()Lnet/minecraft/class_1_1521$class_1_1522;
+	METHOD method_1_10150 getOrCreateCacheEntry (I)Lnet/minecraft/class_1_1521$class_1_1523;
+		ARG 1 id
+	METHOD method_1_10151 getNullable (Lnet/minecraft/class_169;)Ljava/lang/Object;
+		ARG 1 param
+	METHOD method_1_10152 get (Lnet/minecraft/class_169;Ljava/lang/Object;)Ljava/lang/Object;
+		ARG 1 param
+		ARG 2 fallback
+	METHOD method_1_10153 sampleCached (ILnet/minecraft/class_1_1519;III)F
+		ARG 1 id
+		ARG 2 input
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+	METHOD method_1_10154 fillCached (ILnet/minecraft/class_1_1519;Lnet/minecraft/class_1_1516;Lnet/minecraft/class_1_1441;)V
+		ARG 1 id
+		ARG 2 input
+		ARG 3 output
+		ARG 4 region
+	CLASS class_1_1522 Builder
+		FIELD field_1_10302 pool Lnet/minecraft/class_1_1570;
+		FIELD field_1_10303 cached Z
+		FIELD field_1_10304 params Lnet/minecraft/class_10352;
+		METHOD method_1_10155 build ()Lnet/minecraft/class_1_1521;
+		METHOD method_1_10156 cached ()Lnet/minecraft/class_1_1521$class_1_1522;
+		METHOD method_1_10157 params (Lnet/minecraft/class_10352;)Lnet/minecraft/class_1_1521$class_1_1522;
+			ARG 1 params
+		METHOD method_1_10158 pool (Lnet/minecraft/class_1_1570;)Lnet/minecraft/class_1_1521$class_1_1522;
+			ARG 1 pool
+	CLASS class_1_1523 CacheEntry
+		FIELD field_1_10305 buf Lnet/minecraft/class_1_1572;
+		FIELD field_1_10306 lastSampledValue F
+		FIELD field_1_10307 lastSampledPos J
+		FIELD field_1_10308 region Lnet/minecraft/class_1_1441;

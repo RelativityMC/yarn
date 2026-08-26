@@ -61,6 +61,8 @@ CLASS net/minecraft/class_1_125 net/minecraft/client/gui/screen/option/WorldOpti
 	FIELD field_1_9898 gameMode Lnet/minecraft/class_1934;
 	FIELD field_1_9899 forceGameMode Ljava/lang/Boolean;
 	FIELD field_1_9900 personalGameMode Lnet/minecraft/class_1934;
+	FIELD field_1_10224 FORCE_GAME_MODE_OFF_HARDCORE_TOOLTIP Lnet/minecraft/class_7919;
+	FIELD field_1_10225 FORCE_GAME_MODE_OFF_SCOPE_TOOLTIP Lnet/minecraft/class_7919;
 	METHOD <init> (Lnet/minecraft/class_437;Lnet/minecraft/class_1937;)V
 		ARG 1 parent
 		ARG 2 world
@@ -152,6 +154,15 @@ CLASS net/minecraft/class_1_125 net/minecraft/client/gui/screen/option/WorldOpti
 		ARG 1 integratedServer
 	METHOD method_1_9635 setPersonalGameMode (Lnet/minecraft/class_1934;)V
 		ARG 1 gameMode
+	METHOD method_1_9799 createTitle (Lnet/minecraft/class_2561;)Lnet/minecraft/class_8019;
+		ARG 1 title
+	METHOD method_1_10009 (Ljava/lang/Boolean;)Lnet/minecraft/class_7919;
+		ARG 0 value
+	METHOD method_1_10010 setDefaultGameMode (Lnet/minecraft/class_1934;)V
+		ARG 1 defaultGameMode
+	METHOD method_1_10011 updateOpStatus (Lnet/minecraft/class_1132;Z)V
+		ARG 1 integratedServer
+		ARG 2 op
 	CLASS class_1_181 DifficultySelection
 		FIELD field_1_9611 DISABLED_HARDCORE_TOOLTIP Lnet/minecraft/class_7919;
 		FIELD field_1_9612 DISABLED_LOCKED_TOOLTIP Lnet/minecraft/class_7919;
@@ -167,6 +178,7 @@ CLASS net/minecraft/class_1_125 net/minecraft/client/gui/screen/option/WorldOpti
 		METHOD method_1_3057 update (Lnet/minecraft/class_310;Lnet/minecraft/class_1_125;Z)V
 			ARG 1 client
 			ARG 2 parent
+			ARG 3 revertDifficulty
 		METHOD method_1_9245 (Lnet/minecraft/class_1_125;Lnet/minecraft/class_5676;Lnet/minecraft/class_1267;)V
 			ARG 1 button
 			ARG 2 value
@@ -181,3 +193,6 @@ CLASS net/minecraft/class_1_125 net/minecraft/client/gui/screen/option/WorldOpti
 			ARG 1 world
 			ARG 2 difficultyButton
 			ARG 3 lockButton
+		METHOD method_1_10012 update (Lnet/minecraft/class_310;Lnet/minecraft/class_1_125;)V
+			ARG 1 client
+			ARG 2 parent

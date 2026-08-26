@@ -9,6 +9,7 @@ CLASS net/minecraft/class_5822 net/minecraft/util/math/noise/BlendedNoiseSampler
 	FIELD field_1_9661 MAIN_NOISE_FREQUENCY D
 	FIELD field_1_9910 LIMIT_NOISE_FIRST_OCTAVE I
 	FIELD field_1_9911 MAIN_NOISE_FIRST_OCTAVE I
+	FIELD field_1_10250 RANDOM_GENERATOR_ID Lnet/minecraft/class_2960;
 	FIELD field_37206 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_38269 SCALE_AND_FACTOR_CODEC Lcom/mojang/serialization/Codec;
 	METHOD <init> (DDDDD)V
@@ -32,6 +33,8 @@ CLASS net/minecraft/class_5822 net/minecraft/util/math/noise/BlendedNoiseSampler
 		ARG 1 random
 	METHOD method_1_9654 getScaledXzScale ()D
 	METHOD method_1_9655 getScaledYScale ()D
+	METHOD method_1_10040 Sampler (Lnet/minecraft/class_5819;)Lnet/minecraft/class_1_1519;
+		ARG 1 random
 	METHOD method_42385 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
 	CLASS class_1_1456 BlendedNoise

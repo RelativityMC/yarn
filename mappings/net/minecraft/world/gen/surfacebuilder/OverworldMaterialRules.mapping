@@ -35,9 +35,12 @@ CLASS net/minecraft/class_1_1122 net/minecraft/world/gen/surfacebuilder/Overworl
 		ARG 3 hasBedrockFloor
 		ARG 4 surfaceRule
 		ARG 5 undergroundRule
+		ARG 6 oreVeinRules
 	METHOD method_1_7095 block (Lnet/minecraft/class_2248;)Lnet/minecraft/class_6708;
 		ARG 0 block
 	METHOD method_1_7096 createSurfaceRule (Lnet/minecraft/class_7891;Lnet/minecraft/class_6708;)Lnet/minecraft/class_6708;
 		ARG 0 registry
 		ARG 1 sulfurCaveBandsRule
 	METHOD method_1_7097 surfaceNoiseThreshold (D)Lnet/minecraft/class_6693;
+	METHOD method_1_10076 createOreVeinRules (Lnet/minecraft/class_7891;)Ljava/util/List;
+		ARG 0 registry

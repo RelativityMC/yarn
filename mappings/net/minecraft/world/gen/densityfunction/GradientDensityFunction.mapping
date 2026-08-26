@@ -3,3 +3,13 @@ CLASS net/minecraft/class_1_1400 net/minecraft/world/gen/densityfunction/Gradien
 		ARG 0 instance
 	METHOD method_1_9261 validate (Lnet/minecraft/class_1_1400;)Lcom/mojang/serialization/DataResult;
 		ARG 0 density
+	CLASS class_1_1589 ClampToEdgeSampler
+	CLASS class_1_1590 AxisSampler
+		METHOD method_1_10216 sample (I)F
+			ARG 1 coord
+		METHOD method_1_10217 fill (Lnet/minecraft/class_1_1400$class_1_1590;Lnet/minecraft/class_1_1516;Lnet/minecraft/class_1_1441;)V
+			ARG 0 sampler
+			ARG 1 output
+			ARG 2 region
+	CLASS class_1_1591 MirroredRepeatSampler
+	CLASS class_1_1592 RepeatSampler

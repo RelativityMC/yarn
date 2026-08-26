@@ -4,6 +4,10 @@ CLASS net/minecraft/class_5699 net/minecraft/util/dynamic/Codecs
 	COMMENT <p>It has a few methods to create checkers for {@code Codec.flatXmap} to add
 	COMMENT extra value validation to encoding and decoding. See the implementation of
 	COMMENT {@link #nonEmptyList(Codec)}.
+	FIELD field_1_10118 ARGB_VEC4 Lcom/mojang/serialization/Codec;
+	FIELD field_1_10119 RGB_VEC3 Lcom/mojang/serialization/Codec;
+	FIELD field_1_10120 HEX_ARGB_VEC4 Lcom/mojang/serialization/Codec;
+	FIELD field_1_10121 HEX_RGB_VEC3 Lcom/mojang/serialization/Codec;
 	FIELD field_33441 NON_NEGATIVE_INT Lcom/mojang/serialization/Codec;
 	FIELD field_33442 POSITIVE_INT Lcom/mojang/serialization/Codec;
 	FIELD field_34387 POSITIVE_FLOAT Lcom/mojang/serialization/Codec;

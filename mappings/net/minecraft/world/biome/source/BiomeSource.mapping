@@ -3,6 +3,18 @@ CLASS net/minecraft/class_1966 net/minecraft/world/biome/source/BiomeSource
 	FIELD field_24713 CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_1_9606 getBiomeSupplier (Lnet/minecraft/class_6544$class_6552;)Lnet/minecraft/class_6780;
 		ARG 1 sampler
+	METHOD method_1_9909 getCachedBiomeSupplier (Lnet/minecraft/class_7138;)Lnet/minecraft/class_6780;
+		ARG 1 noiseConfig
+	METHOD method_1_9910 getBoundedBiomeSupplier (Lnet/minecraft/class_6544$class_6552;IIIIII)Lnet/minecraft/class_6780;
+		ARG 1 sampler
+		ARG 2 minX
+		ARG 3 minY
+		ARG 4 minZ
+		ARG 5 sizeX
+		ARG 6 sizeY
+		ARG 7 sizeZ
+	METHOD method_1_9911 getBiomeSupplier (Lnet/minecraft/class_7138;)Lnet/minecraft/class_6780;
+		ARG 1 noiseConfig
 	METHOD method_8762 locateBiome (IIIILjava/util/function/Predicate;Lnet/minecraft/class_5819;Lnet/minecraft/class_7138;)Lcom/mojang/datafixers/util/Pair;
 		ARG 1 x
 		ARG 2 y
@@ -10,6 +22,7 @@ CLASS net/minecraft/class_1966 net/minecraft/world/biome/source/BiomeSource
 		ARG 4 radius
 		ARG 5 predicate
 		ARG 6 random
+		ARG 7 noiseConfig
 	METHOD method_24385 locateBiome (IIIIILjava/util/function/Predicate;Lnet/minecraft/class_5819;ZLnet/minecraft/class_7138;)Lcom/mojang/datafixers/util/Pair;
 		ARG 1 x
 		ARG 2 y
@@ -21,6 +34,7 @@ CLASS net/minecraft/class_1966 net/minecraft/world/biome/source/BiomeSource
 		ARG 8 orderByIncreasingDistance
 			COMMENT whether to search candidates by increasing Chebyshev distance from the
 			COMMENT center of the search
+		ARG 9 noiseConfig
 	METHOD method_28442 getCodec ()Lcom/mojang/serialization/MapCodec;
 	METHOD method_28443 getBiomes ()Ljava/util/Set;
 	METHOD method_38114 addDebugInfo (Ljava/util/List;Lnet/minecraft/class_2338;Lnet/minecraft/class_6544$class_6552;)V
@@ -33,5 +47,6 @@ CLASS net/minecraft/class_1966 net/minecraft/world/biome/source/BiomeSource
 		ARG 3 horizontalBlockCheckInterval
 		ARG 4 verticalBlockCheckInterval
 		ARG 5 predicate
+		ARG 6 noiseConfig
 		ARG 7 world
 	METHOD method_49494 biomeStream ()Ljava/util/stream/Stream;

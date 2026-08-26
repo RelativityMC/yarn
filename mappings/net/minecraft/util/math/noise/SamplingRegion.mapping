@@ -1,9 +1,43 @@
 CLASS net/minecraft/class_1_1441 net/minecraft/util/math/noise/SamplingRegion
+	FIELD field_1_10294 NOT_IN_REGION I
+	METHOD <init> (IIIIII)V
+		ARG 1 sizeX
+		ARG 2 sizeY
+		ARG 3 sizeZ
+		ARG 4 minBlockX
+		ARG 5 minBlockY
+		ARG 6 minBlockZ
+	METHOD <init> (IIIIIIIII)V
+		ARG 1 sizeX
+		ARG 2 sizeY
+		ARG 3 sizeZ
+		ARG 4 minBlockX
+		ARG 5 minBlockY
+		ARG 6 minBlockZ
+		ARG 7 stepBlockX
+		ARG 8 stepBlockY
+		ARG 9 stepBlockZ
 	METHOD method_1_9543 translateX (I)I
+		ARG 1 cellX
 	METHOD method_1_9544 translateY (I)I
+		ARG 1 cellY
 	METHOD method_1_9545 translateZ (I)I
+		ARG 1 cellZ
 	METHOD method_1_9546 getIndex (III)I
+		ARG 1 cellX
+		ARG 2 cellY
+		ARG 3 cellZ
+	METHOD method_1_9547 getVolume ()I
+	METHOD method_1_10129 preciselyContains (III)Z
 		ARG 1 localX
 		ARG 2 localY
 		ARG 3 localZ
-	METHOD method_1_9547 getVolume ()I
+	METHOD method_1_10130 getIndexFromBlockCoords (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_1_10131 intersects (Lnet/minecraft/class_3341;)Z
+		ARG 1 box
+	METHOD method_1_10132 maxBlockX ()I
+	METHOD method_1_10133 maxBlockY ()I
+	METHOD method_1_10134 maxBlockZ ()I

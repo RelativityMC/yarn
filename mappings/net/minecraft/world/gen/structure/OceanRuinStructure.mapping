@@ -15,6 +15,8 @@ CLASS net/minecraft/class_3411 net/minecraft/world/gen/structure/OceanRuinStruct
 		ARG 2 collector
 	METHOD method_41678 (Lnet/minecraft/class_3411;)Ljava/lang/Float;
 		ARG 0 structure
+	METHOD method_41679 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
 	METHOD method_41680 (Lnet/minecraft/class_3411;)Ljava/lang/Float;
 		ARG 0 structure
 	METHOD method_41681 (Lnet/minecraft/class_3411;)Lnet/minecraft/class_3411$class_3413;

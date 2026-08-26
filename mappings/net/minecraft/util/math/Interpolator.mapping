@@ -11,6 +11,8 @@ CLASS net/minecraft/class_12210 net/minecraft/util/math/Interpolator
 		ARG 3 bs
 	METHOD method_1_8584 mix (Lnet/minecraft/class_12210$class_1_1309;)Lnet/minecraft/class_12210;
 		ARG 0 scaler
+	METHOD method_1_9899 ofColorVec3 ()Lnet/minecraft/class_12210;
+	METHOD method_1_9900 ofColorVec4 ()Lnet/minecraft/class_12210;
 	METHOD method_75706 ofFloat ()Lnet/minecraft/class_12210;
 	METHOD method_75707 threshold (F)Lnet/minecraft/class_12210;
 		ARG 0 threshold

@@ -1,18 +1,39 @@
 CLASS net/minecraft/class_7138 net/minecraft/world/gen/noise/NoiseConfig
 	FIELD field_1_9875 seed J
+	FIELD field_1_10168 poolLock Ljava/util/concurrent/locks/ReentrantLock;
+	FIELD field_1_10169 reclaimedPools Ljava/util/List;
+	FIELD field_1_10170 cache Lnet/minecraft/class_1_1576;
 	FIELD field_38254 randomDeriver Lnet/minecraft/class_6574;
 	FIELD field_38256 noiseParametersRegistry Lnet/minecraft/class_7871;
 	FIELD field_38257 noiseRouter Lnet/minecraft/class_6953;
 	FIELD field_38259 surfaceBuilder Lnet/minecraft/class_6724;
 	FIELD field_38262 noises Ljava/util/Map;
-	FIELD field_38263 randomDerivers Ljava/util/Map;
+	FIELD field_38263 randomSplitters Ljava/util/Map;
 	METHOD <init> (Lnet/minecraft/class_7871;JZLnet/minecraft/class_2680;ILnet/minecraft/class_6953;)V
 		ARG 1 noiseParametersLookup
 		ARG 2 seed
 		ARG 4 legacyRandom
 		ARG 5 defaultState
 		ARG 6 seaLevel
+		ARG 7 noiseRouter
 	METHOD method_1_9612 getSeed ()J
+	METHOD method_1_9954 allocatePool ()Lnet/minecraft/class_1_1551;
+	METHOD method_1_9955 toSampler (Lnet/minecraft/class_1_1521;)Lnet/minecraft/class_6544$class_6552;
+		ARG 1 context
+	METHOD method_1_9956 cleanupPools ()V
+	METHOD method_1_9957 getOrBake (Lnet/minecraft/class_6910;)Lnet/minecraft/class_1_1519;
+		ARG 1 func
+	METHOD method_1_9958 (Lnet/minecraft/class_1_1551;)Z
+		ARG 0 pool
+	METHOD method_1_9959 reclaimPool (Lnet/minecraft/class_1_1551;)V
+		ARG 1 pool
+	METHOD method_1_9960 sample (Lnet/minecraft/class_6910;III)F
+		ARG 1 func
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1_9961 contextToSampleProvider (Lnet/minecraft/class_1_1521;)Lnet/minecraft/class_1_1552;
+		ARG 1 context
 	METHOD method_41556 create (Lnet/minecraft/class_7871;JZLnet/minecraft/class_2680;ILnet/minecraft/class_6953;)Lnet/minecraft/class_7138;
 		ARG 0 noiseParametersLookup
 		ARG 1 seed
@@ -28,7 +49,7 @@ CLASS net/minecraft/class_7138 net/minecraft/world/gen/noise/NoiseConfig
 		ARG 1 noiseParametersKey
 	METHOD method_41559 (Lnet/minecraft/class_5321;Lnet/minecraft/class_5321;)Lnet/minecraft/class_1_1397;
 		ARG 2 key
-	METHOD method_41560 getOrCreateRandomDeriver (Lnet/minecraft/class_2960;)Lnet/minecraft/class_6574;
+	METHOD method_41560 getOrCreateRandomSplitter (Lnet/minecraft/class_2960;)Lnet/minecraft/class_6574;
 		ARG 1 id
 	METHOD method_41561 (Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;)Lnet/minecraft/class_6574;
 		ARG 2 id2

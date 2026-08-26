@@ -1,2 +1,5 @@
 CLASS net/minecraft/class_1_1285 com/mojang/blaze3d/pipeline/CompiledRenderPipeline
 	METHOD method_1_9125 isClosed ()Z
+	CLASS class_1_1509 Supplier
+		FIELD field_1_10258 EMPTY Lnet/minecraft/class_1_1285$class_1_1509;
+		METHOD method_1_10069 get ()Lnet/minecraft/class_1_1285;

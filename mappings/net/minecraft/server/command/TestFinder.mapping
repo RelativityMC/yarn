@@ -11,10 +11,19 @@ CLASS net/minecraft/class_9123 net/minecraft/server/command/TestFinder
 	METHOD method_56305 getCommandSource ()Lnet/minecraft/class_2168;
 	METHOD method_67070 builder ()Lnet/minecraft/class_9123$class_9124;
 	CLASS class_9124 Builder
+		FIELD field_1_9030 testInstanceBlockFinderMapper Ljava/util/function/UnaryOperator;
 		FIELD field_56220 testInstanceFinderMapper Ljava/util/function/UnaryOperator;
 		METHOD <init> (Ljava/util/function/UnaryOperator;Ljava/util/function/UnaryOperator;)V
 			ARG 1 testInstanceFinderMapper
 			ARG 2 testInstanceBlockFinderMapper
+		METHOD method_1_8629 (Lnet/minecraft/class_2168;Lnet/minecraft/class_2338;)Lnet/minecraft/class_4208;
+			ARG 1 pos
+		METHOD method_1_8631 (Lnet/minecraft/class_2168;Lnet/minecraft/class_2338;)Lnet/minecraft/class_4208;
+			ARG 1 pos
+		METHOD method_1_8632 (Lnet/minecraft/class_2168;Lnet/minecraft/class_2338;)Lnet/minecraft/class_4208;
+			ARG 1 pos
+		METHOD method_1_8633 (Lnet/minecraft/class_2168;Lnet/minecraft/class_2338;)Lnet/minecraft/class_4208;
+			ARG 1 pos
 		METHOD method_56309 nearest (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/class_9123;
 			ARG 1 context
 		METHOD method_56310 surface (Lcom/mojang/brigadier/context/CommandContext;I)Lnet/minecraft/class_9123;

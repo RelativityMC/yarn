@@ -13,6 +13,22 @@ CLASS net/minecraft/class_2794 net/minecraft/world/gen/chunk/ChunkGenerator
 		ARG 2 generationSettingsGetter
 	METHOD method_1_6742 getSpawnPos (Lnet/minecraft/class_7138;)Lnet/minecraft/class_1923;
 		ARG 1 noiseConfig
+	METHOD method_1_9949 buildTerrain (Lnet/minecraft/class_2791;Lnet/minecraft/class_6748;Lnet/minecraft/class_7138;Lnet/minecraft/class_5138;Lnet/minecraft/class_4543;Lnet/minecraft/class_3233;Ljava/util/Set;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 chunk
+		ARG 2 blender
+		ARG 3 noiseConfig
+		ARG 4 world
+		ARG 5 biomes
+		ARG 6 chunkRegion
+		ARG 7 includedBiomes
+	METHOD method_1_9950 modifyBiomeSupplier (Lnet/minecraft/class_6748;Lnet/minecraft/class_2791;Lnet/minecraft/class_6780;)Lnet/minecraft/class_6780;
+		ARG 1 blender
+		ARG 2 chunk
+		ARG 3 biomeSupplier
+	METHOD method_1_9951 populateBiomesSync (Lnet/minecraft/class_6748;Lnet/minecraft/class_7138;Lnet/minecraft/class_2791;)V
+		ARG 1 blender
+		ARG 2 noiseConfig
+		ARG 3 chunk
 	METHOD method_12098 getBiomeSource ()Lnet/minecraft/class_1966;
 	METHOD method_12100 getSpawnHeight (Lnet/minecraft/class_5539;)I
 		ARG 1 world
@@ -40,6 +56,7 @@ CLASS net/minecraft/class_2794 net/minecraft/world/gen/chunk/ChunkGenerator
 	METHOD method_12107 populateEntities (Lnet/minecraft/class_3233;)V
 		ARG 1 region
 	METHOD method_12113 getEntitySpawnList (Lnet/minecraft/class_1937;Lnet/minecraft/class_5138;Lnet/minecraft/class_1311;Lnet/minecraft/class_2338;)Lnet/minecraft/class_6012;
+		ARG 1 world
 		ARG 2 accessor
 		ARG 3 group
 		ARG 4 pos
@@ -123,6 +140,10 @@ CLASS net/minecraft/class_2794 net/minecraft/world/gen/chunk/ChunkGenerator
 		ARG 5 skipReferencedStructures
 		ARG 6 placement
 	METHOD method_40450 appendDebugHudText (Ljava/util/List;Lnet/minecraft/class_7138;Lnet/minecraft/class_2338;Lnet/minecraft/class_1_1521;)V
+		ARG 1 lines
+		ARG 2 noiseConfig
+		ARG 3 pos
+		ARG 4 context
 	METHOD method_41040 (Lnet/minecraft/class_5138;Lnet/minecraft/class_2338;Lnet/minecraft/class_3449;)Z
 		ARG 2 start
 	METHOD method_41041 (Lnet/minecraft/class_5138;Lnet/minecraft/class_2791;Lnet/minecraft/class_7869;Lnet/minecraft/class_1923;Lnet/minecraft/class_5455;Lnet/minecraft/class_7138;Lnet/minecraft/class_3485;Lnet/minecraft/class_5321;Lnet/minecraft/class_6544$class_6552;Lnet/minecraft/class_6880;)V
@@ -131,11 +152,13 @@ CLASS net/minecraft/class_2794 net/minecraft/world/gen/chunk/ChunkGenerator
 		ARG 1 weightedEntry
 		ARG 2 structureAccessor
 		ARG 3 dynamicRegistryManager
+		ARG 4 noiseConfig
 		ARG 5 structureManager
 		ARG 6 seed
 		ARG 8 chunk
 		ARG 9 pos
 		ARG 10 dimension
+		ARG 11 multiNoiseSampler
 	METHOD method_41045 (Lnet/minecraft/class_3449;Lnet/minecraft/class_2378;)Ljava/lang/String;
 		ARG 1 structureTypeRegistry
 	METHOD method_41047 (Lnet/minecraft/class_2338;Lnet/minecraft/class_3449;)Z
@@ -150,6 +173,7 @@ CLASS net/minecraft/class_2794 net/minecraft/world/gen/chunk/ChunkGenerator
 		ARG 1 world
 		ARG 2 structureAccessor
 		ARG 3 skipReferencedStructures
+		ARG 4 placement
 		ARG 5 pos
 	METHOD method_44216 getGenerationSettings (Lnet/minecraft/class_6880;)Lnet/minecraft/class_5485;
 		ARG 1 biomeEntry

@@ -6,5 +6,7 @@ CLASS net/minecraft/class_6708 net/minecraft/world/gen/surfacebuilder/MaterialRu
 		ARG 0 registryEntry
 	METHOD method_1_6821 (Lnet/minecraft/class_6708;)Lnet/minecraft/class_6880;
 		ARG 0 rule
+	METHOD method_1_10098 getBlockStateRule (Lnet/minecraft/class_6694;)Lnet/minecraft/class_6715;
+		ARG 1 context
 	METHOD method_39061 codec ()Lcom/mojang/serialization/MapCodec;
 	CLASS class_1_1067 RegisteredRule

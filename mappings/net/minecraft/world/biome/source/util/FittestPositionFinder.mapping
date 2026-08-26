@@ -1,12 +1,19 @@
 CLASS net/minecraft/class_6729 net/minecraft/world/biome/source/util/FittestPositionFinder
 	FIELD field_35360 bestResult Lnet/minecraft/class_6729$class_6730;
 	FIELD field_54705 MAX_DISTANCE J
+	METHOD <init> (Ljava/util/List;Lnet/minecraft/class_1_1552;)V
+		ARG 1 spawnTargets
+		ARG 2 contextualSamplerProvider
 	METHOD method_1_7467 findFittestPosition (Ljava/util/List;Lnet/minecraft/class_1_1552;)Lnet/minecraft/class_2338;
 		ARG 0 spawnTargets
+		ARG 1 contextualSamplerProvider
 	METHOD method_39166 findFittest (Lnet/minecraft/class_1_1552;Ljava/util/List;FF)V
+		ARG 1 contextualSamplerProvider
+		ARG 2 spawnTargets
 		ARG 3 maxDistance
 		ARG 4 step
 	METHOD method_39167 calculateFitness (Lnet/minecraft/class_1_1552;Ljava/util/List;II)Lnet/minecraft/class_6729$class_6730;
+		ARG 0 contextualSamplerProvider
 		ARG 1 spawnTargets
 		ARG 2 x
 		ARG 3 z

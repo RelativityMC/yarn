@@ -111,6 +111,8 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 	METHOD method_40482 endIslands ()Lnet/minecraft/class_6910;
 	METHOD method_40483 interpolated (Lnet/minecraft/class_6910;II)Lnet/minecraft/class_6910;
 		ARG 0 inputFunction
+		ARG 1 cellSizeXz
+		ARG 2 cellSizeY
 	METHOD method_40485 rangeChoice (Lnet/minecraft/class_6910;FFLnet/minecraft/class_6910;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
 		ARG 0 input
 		ARG 1 minInclusive

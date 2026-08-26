@@ -40,3 +40,9 @@ CLASS net/minecraft/class_5284 net/minecraft/world/gen/chunk/ChunkGeneratorSetti
 		ARG 0 registerable
 	METHOD method_39902 createFloatingIslandsSettings (Lnet/minecraft/class_7891;)Lnet/minecraft/class_5284;
 		ARG 0 registerable
+	CLASS class_1_1506 DebugFunction
+		METHOD method_1_10064 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+	CLASS class_1_1507 DebugFunctions
+		FIELD field_1_10256 CODEC Lcom/mojang/serialization/Codec;
+		FIELD field_1_10257 EMPTY Lnet/minecraft/class_5284$class_1_1507;

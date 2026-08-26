@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_3754 net/minecraft/world/gen/chunk/NoiseChunkGenerator
+	FIELD field_1_10268 SAMPLE_VALUE_DEBUG_FORMAT Ljava/text/DecimalFormat;
 	FIELD field_16648 AIR Lnet/minecraft/class_2680;
 	FIELD field_24773 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_24774 settings Lnet/minecraft/class_6880;
@@ -10,6 +11,7 @@ CLASS net/minecraft/class_3754 net/minecraft/world/gen/chunk/NoiseChunkGenerator
 		ARG 1 chunk
 		ARG 2 carvingMask
 		ARG 3 noiseConfig
+		ARG 4 materialRule
 		ARG 5 heightcontext
 		ARG 6 noiseSampler
 		ARG 7 biomeGetter
@@ -24,12 +26,24 @@ CLASS net/minecraft/class_3754 net/minecraft/world/gen/chunk/NoiseChunkGenerator
 	METHOD method_1_9673 getGenerationSettings (Lnet/minecraft/class_6780;Lnet/minecraft/class_1923;)Lnet/minecraft/class_5485;
 		ARG 1 biomeSupplier
 		ARG 2 chunkPos
+	METHOD method_1_10089 chunkSamplingRegion (Lnet/minecraft/class_2791;Lnet/minecraft/class_5309;)Lnet/minecraft/class_1_1441;
+		ARG 0 chunk
+		ARG 1 generationShapeConfig
+	METHOD method_1_10090 generateCarvers (Lnet/minecraft/class_2791;Lnet/minecraft/class_6748;Lnet/minecraft/class_1_1490;Lnet/minecraft/class_7138;Lnet/minecraft/class_4543;Lnet/minecraft/class_3233;Lnet/minecraft/class_6708;)V
+		ARG 1 chunk
+		ARG 2 blender
+		ARG 3 chunkNoiseSampler
+		ARG 4 noiseConfig
+		ARG 5 biomes
+		ARG 6 chunkRegion
+		ARG 7 materialRule
 	METHOD method_26263 sampleHeightmap (Lnet/minecraft/class_5539;Lnet/minecraft/class_7138;IILorg/apache/commons/lang3/mutable/MutableObject;Ljava/util/function/Predicate;)Ljava/util/OptionalInt;
 		ARG 1 world
 		ARG 2 noiseConfig
 		ARG 3 x
 		ARG 4 z
 		ARG 5 columnSample
+		ARG 6 blockPredicate
 	METHOD method_28548 matchesSettings (Lnet/minecraft/class_5321;)Z
 		ARG 1 settings
 	METHOD method_28549 (Lnet/minecraft/class_3754;)Lnet/minecraft/class_6880;
@@ -39,7 +53,10 @@ CLASS net/minecraft/class_3754 net/minecraft/world/gen/chunk/NoiseChunkGenerator
 	METHOD method_28554 (Lnet/minecraft/class_3754;)Lnet/minecraft/class_1966;
 		ARG 0 generator
 	METHOD method_33754 populateNoise (Lnet/minecraft/class_1_1490;Lnet/minecraft/class_2791;)V
+		ARG 1 chunkNoiseSampler
+		ARG 2 chunk
 	METHOD method_38323 getBlockState (Lnet/minecraft/class_1_1490;IIILnet/minecraft/class_2680;)Lnet/minecraft/class_2680;
+		ARG 1 chunkNoiseSampler
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
@@ -49,11 +66,14 @@ CLASS net/minecraft/class_3754 net/minecraft/world/gen/chunk/NoiseChunkGenerator
 		ARG 2 world
 		ARG 3 blender
 		ARG 4 noiseConfig
+		ARG 5 generationShapeConfig
 	METHOD method_41538 buildSurface (Lnet/minecraft/class_2791;Lnet/minecraft/class_1_1490;Lnet/minecraft/class_7138;Lnet/minecraft/class_4543;Ljava/util/Set;Lnet/minecraft/class_6708;)V
 		ARG 1 chunk
+		ARG 2 chunkNoiseSampler
 		ARG 3 noiseConfig
 		ARG 4 biomeAccess
 		ARG 5 includedBiomes
+		ARG 6 materialRule
 	METHOD method_41541 getSettings ()Lnet/minecraft/class_6880;
 	METHOD method_45509 (Lnet/minecraft/class_6350$class_6351;ILnet/minecraft/class_6350$class_6351;Lnet/minecraft/class_6350$class_6351;III)Lnet/minecraft/class_6350$class_6351;
 		ARG 4 x

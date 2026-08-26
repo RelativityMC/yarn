@@ -1,10 +1,13 @@
 CLASS net/minecraft/class_3093 net/minecraft/server/command/PublishCommand
 	FIELD field_13679 ALREADY_PUBLISHED_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_13680 FAILED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
+	METHOD method_1_6192 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
 	METHOD method_13508 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_13509 execute (Lnet/minecraft/class_2168;IZ)I
 		ARG 0 source
+		ARG 1 port
 		ARG 2 allowCommands
 	METHOD method_13510 register (Lcom/mojang/brigadier/CommandDispatcher;)V
 		ARG 0 dispatcher
@@ -13,3 +16,4 @@ CLASS net/minecraft/class_3093 net/minecraft/server/command/PublishCommand
 	METHOD method_13512 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_46869 getStartedText (I)Lnet/minecraft/class_5250;
+		ARG 0 port

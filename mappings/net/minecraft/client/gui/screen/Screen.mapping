@@ -35,6 +35,7 @@ CLASS net/minecraft/class_437 net/minecraft/client/gui/screen/Screen
 	METHOD <init> (Lnet/minecraft/class_2561;)V
 		ARG 1 title
 	METHOD method_1_7314 shouldIgnoreFriendsKey ()Z
+	METHOD method_1_9870 applySystemNarratorDelay ()V
 	METHOD method_25393 tick ()V
 	METHOD method_25408 getTooltipFromItem (Lnet/minecraft/class_310;Lnet/minecraft/class_1799;)Ljava/util/List;
 		ARG 0 client

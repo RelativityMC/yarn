@@ -1,0 +1,30 @@
+CLASS net/minecraft/class_1_1519 net/minecraft/world/gen/sampler/Sampler
+	METHOD method_1_10142 withContext (Lnet/minecraft/class_1_1521;)Lnet/minecraft/class_1_1519$class_1_1520;
+		ARG 1 context
+	METHOD method_1_10143 sample (Lnet/minecraft/class_1_1521;III)F
+		ARG 1 context
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_1_10144 fillFromSample (Lnet/minecraft/class_1_1521;Lnet/minecraft/class_1_1516;Lnet/minecraft/class_1_1441;Lnet/minecraft/class_1_1519;)V
+		ARG 0 context
+		ARG 1 output
+		ARG 2 region
+		ARG 3 sampler
+	METHOD method_40470 fill (Lnet/minecraft/class_1_1521;Lnet/minecraft/class_1_1516;Lnet/minecraft/class_1_1441;)V
+		COMMENT Samples multiple values from this sampler.
+		COMMENT
+		COMMENT This can be more efficient than calling {@link #sample} repeatedly.
+		ARG 1 context
+		ARG 2 output
+		ARG 3 region
+	CLASS class_1_1520 Contextual
+		METHOD method_1_10145 sample (III)F
+			ARG 1 x
+			ARG 2 y
+			ARG 3 z
+		METHOD method_1_10146 fill (Lnet/minecraft/class_1_1516;Lnet/minecraft/class_1_1441;)V
+			ARG 1 buf
+			ARG 2 region
+		METHOD method_1_10147 getFilledBuffer (Lnet/minecraft/class_1_1441;)Lnet/minecraft/class_1_1572;
+			ARG 1 region

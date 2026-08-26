@@ -1,8 +1,11 @@
 CLASS net/minecraft/class_6693 net/minecraft/world/gen/surfacebuilder/MaterialCondition
+	FIELD field_1_7483 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_35232 BASE_CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_1_6816 (Lnet/minecraft/class_6880;)Lnet/minecraft/class_6693;
 		ARG 0 registryEntry
 	METHOD method_1_6817 (Lnet/minecraft/class_6693;)Lnet/minecraft/class_6880;
 		ARG 0 rule
+	METHOD method_1_10199 getPredicate (Lnet/minecraft/class_6694;)Lnet/minecraft/class_6692;
+		ARG 1 context
 	METHOD method_39064 codec ()Lcom/mojang/serialization/MapCodec;
 	CLASS class_1_1066 RegisteredCondition

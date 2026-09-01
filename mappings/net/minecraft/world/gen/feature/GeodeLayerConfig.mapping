@@ -1,27 +1,22 @@
 CLASS net/minecraft/class_5585 net/minecraft/world/gen/feature/GeodeLayerConfig
-	FIELD comp_1_565 alternateInnerLayerProvider Lnet/minecraft/class_4651;
+	FIELD comp_1_565 alternateInnerLayerProvider Lnet/minecraft/class_6880;
 	FIELD comp_1_566 cannotReplace Lnet/minecraft/class_6885;
-	FIELD comp_1_567 fillingProvider Lnet/minecraft/class_4651;
-	FIELD comp_1_568 innerLayerProvider Lnet/minecraft/class_4651;
+	FIELD comp_1_567 fillingProvider Lnet/minecraft/class_6880;
+	FIELD comp_1_568 innerLayerProvider Lnet/minecraft/class_6880;
 	FIELD comp_1_569 innerBlocks Ljava/util/List;
 	FIELD comp_1_570 invalidBlocks Lnet/minecraft/class_6885;
-	FIELD comp_1_571 middleLayerProvider Lnet/minecraft/class_4651;
-	FIELD comp_1_572 outerLayerProvider Lnet/minecraft/class_4651;
+	FIELD comp_1_571 middleLayerProvider Lnet/minecraft/class_6880;
+	FIELD comp_1_572 outerLayerProvider Lnet/minecraft/class_6880;
 	FIELD field_27301 CODEC Lcom/mojang/serialization/Codec;
-	METHOD <init> (Lnet/minecraft/class_4651;Lnet/minecraft/class_4651;Lnet/minecraft/class_4651;Lnet/minecraft/class_4651;Lnet/minecraft/class_4651;Ljava/util/List;Lnet/minecraft/class_6885;Lnet/minecraft/class_6885;)V
-		ARG 1 fillingProvider
-		ARG 2 innerLayerProvider
-		ARG 3 alternateInnerLayerProvider
-		ARG 4 middleLayerProvider
-		ARG 5 outerLayerProvider
+	METHOD <init> (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;Ljava/util/List;Lnet/minecraft/class_6885;Lnet/minecraft/class_6885;)V
 		ARG 6 innerBlocks
-	METHOD comp_1_565 alternateInnerLayerProvider ()Lnet/minecraft/class_4651;
+	METHOD comp_1_565 alternateInnerLayerProvider ()Lnet/minecraft/class_6880;
 	METHOD comp_1_566 cannotReplace ()Lnet/minecraft/class_6885;
-	METHOD comp_1_567 fillingProvider ()Lnet/minecraft/class_4651;
-	METHOD comp_1_568 innerLayerProvider ()Lnet/minecraft/class_4651;
+	METHOD comp_1_567 fillingProvider ()Lnet/minecraft/class_6880;
+	METHOD comp_1_568 innerLayerProvider ()Lnet/minecraft/class_6880;
 	METHOD comp_1_569 innerBlocks ()Ljava/util/List;
 	METHOD comp_1_570 invalidBlocks ()Lnet/minecraft/class_6885;
-	METHOD comp_1_571 middleLayerProvider ()Lnet/minecraft/class_4651;
-	METHOD comp_1_572 outerLayerProvider ()Lnet/minecraft/class_4651;
+	METHOD comp_1_571 middleLayerProvider ()Lnet/minecraft/class_6880;
+	METHOD comp_1_572 outerLayerProvider ()Lnet/minecraft/class_6880;
 	METHOD method_31887 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance

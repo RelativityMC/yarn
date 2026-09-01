@@ -44,7 +44,6 @@ CLASS net/minecraft/class_5235 net/minecraft/client/gui/screen/world/EditGameRul
 			ARG 2 button
 			ARG 3 value
 	CLASS class_5237 RuleCategoryWidget
-		FIELD field_24306 name Lnet/minecraft/class_2561;
 		METHOD <init> (Lnet/minecraft/class_5235;Lnet/minecraft/class_2561;)V
 			ARG 2 text
 	CLASS class_5238 RuleWidgetFactory

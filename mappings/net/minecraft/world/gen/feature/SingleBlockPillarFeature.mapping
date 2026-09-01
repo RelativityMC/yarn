@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_1_1182 net/minecraft/world/gen/feature/SingleBlockPillarFeature
-	METHOD <init> (Lnet/minecraft/class_4651;Lnet/minecraft/class_6646;Lnet/minecraft/class_2350;F)V
-		ARG 1 block
+	METHOD <init> (Lnet/minecraft/class_6880;Lnet/minecraft/class_6646;Lnet/minecraft/class_2350;F)V
 		ARG 2 canReplace
 		ARG 3 direction
 		ARG 4 chanceToContinue

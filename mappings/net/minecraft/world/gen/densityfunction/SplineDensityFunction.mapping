@@ -41,6 +41,7 @@ CLASS net/minecraft/class_7076 net/minecraft/world/gen/densityfunction/SplineDen
 		METHOD method_1_10186 (Ljava/util/Map;Lnet/minecraft/class_6910$class_1_1527;Lnet/minecraft/class_6910;)Lnet/minecraft/class_7076$class_1_1568;
 			ARG 2 func
 	CLASS class_1_1568 Subsampler
+		FIELD comp_1_1640 getRange Lnet/minecraft/class_1_1150;
 	CLASS class_1_1569 SamplingStrategy
 		METHOD method_1_10188 get (Lnet/minecraft/class_1_1519;I)F
 			ARG 1 subsampler

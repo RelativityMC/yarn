@@ -1,15 +1,7 @@
 CLASS net/minecraft/class_5660 net/minecraft/loot/provider/number/ScoreLootNumberProvider
 	FIELD field_45890 CODEC Lcom/mojang/serialization/MapCodec;
-	METHOD <init> (Lnet/minecraft/class_5670;Ljava/lang/String;F)V
+	METHOD <init> (Lnet/minecraft/class_5670;Ljava/lang/String;Lnet/minecraft/class_6880;)V
 		ARG 1 target
 		ARG 2 score
-		ARG 3 scale
-	METHOD method_35569 create (Lnet/minecraft/class_47$class_50;Ljava/lang/String;)Lnet/minecraft/class_5660;
-		ARG 0 target
-		ARG 1 score
-	METHOD method_35570 create (Lnet/minecraft/class_47$class_50;Ljava/lang/String;F)Lnet/minecraft/class_5660;
-		ARG 0 target
-		ARG 1 score
-		ARG 2 scale
 	METHOD method_53443 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance

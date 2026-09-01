@@ -79,11 +79,6 @@ CLASS net/minecraft/class_3244 net/minecraft/server/network/ServerPlayNetworkHan
 		ARG 2 suggestions
 	METHOD method_1_10057 tickInAir ()V
 	METHOD method_1_10058 move (DDDFFZZ)V
-		ARG 1 x
-		ARG 3 y
-		ARG 5 z
-		ARG 7 yaw
-		ARG 8 pitch
 		ARG 9 onGround
 		ARG 10 horizontalCollision
 	METHOD method_1_10059 (Lnet/minecraft/class_2338;)V

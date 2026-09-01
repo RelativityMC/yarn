@@ -23,7 +23,6 @@ CLASS net/minecraft/class_11644 net/minecraft/client/gui/screen/DebugOptionsScre
 	CLASS class_11645 AbstractEntry
 		METHOD method_72814 init ()V
 	CLASS class_11646 Category
-		FIELD field_61647 label Lnet/minecraft/class_2561;
 		METHOD <init> (Lnet/minecraft/class_11644;Lnet/minecraft/class_2561;)V
 			ARG 2 label
 	CLASS class_11647 Entry

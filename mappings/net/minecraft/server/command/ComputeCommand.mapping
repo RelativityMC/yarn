@@ -12,7 +12,7 @@ CLASS net/minecraft/class_1_1489 net/minecraft/server/command/ComputeCommand
 		ARG 1 key
 	METHOD method_1_9933 (FILnet/minecraft/class_5321;)Lnet/minecraft/class_5250;
 		ARG 2 key
-	METHOD method_1_9935 (Lnet/minecraft/class_7157;Lnet/minecraft/class_1_1493$class_1_1494;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+	METHOD method_1_9935 (Lnet/minecraft/class_7157;Lnet/minecraft/class_1_1493$class_1_1494;Ljava/util/function/Consumer;)V
 		ARG 1 target
 	METHOD method_1_9936 (Lnet/minecraft/class_1_1493$class_1_1494;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 1 context

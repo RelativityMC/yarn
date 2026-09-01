@@ -15,7 +15,6 @@ CLASS net/minecraft/class_313 net/minecraft/client/util/Monitor
 		ARG 0 id
 	METHOD method_1_6375 fromId (I)Lnet/minecraft/class_313;
 		ARG 0 id
-	METHOD method_1_8458 getFirstAvailableVideoMode ()Lnet/minecraft/class_319;
 	METHOD method_1614 findClosestVideoMode (Ljava/util/Optional;)Lnet/minecraft/class_319;
 		ARG 1 videoMode
 	METHOD method_1619 findVideoModeIndex (Lnet/minecraft/class_319;)I

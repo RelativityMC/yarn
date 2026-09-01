@@ -1,10 +1,8 @@
 CLASS net/minecraft/class_10107 net/minecraft/data/report/DataPackStructureProvider
 	FIELD field_53697 output Lnet/minecraft/class_7784;
-	FIELD field_53698 RELOADABLE_REGISTRY Lnet/minecraft/class_10107$class_10109;
 	FIELD field_53699 RELOADABLE_REGISTRY_WITH_TAGS Lnet/minecraft/class_10107$class_10109;
 	FIELD field_53700 DYNAMIC_REGISTRY Lnet/minecraft/class_10107$class_10109;
 	FIELD field_53701 STATIC_REGISTRY Lnet/minecraft/class_10107$class_10109;
-	FIELD field_53702 RELOADABLE_REGISTRIES Ljava/util/Map;
 	FIELD field_53703 FAKE_REGISTRIES Ljava/util/Map;
 	FIELD field_53704 REGISTRY_KEY_CODEC Lcom/mojang/serialization/Codec;
 	METHOD <init> (Lnet/minecraft/class_7784;)V
@@ -20,9 +18,6 @@ CLASS net/minecraft/class_10107 net/minecraft/data/report/DataPackStructureProvi
 	METHOD method_62720 buildEntries ()Ljava/util/Map;
 	METHOD method_62721 (Ljava/util/Map;Lnet/minecraft/class_7655$class_7657;)V
 		ARG 2 registry
-	METHOD method_62722 (Ljava/util/Map;Lnet/minecraft/class_5321;Lnet/minecraft/class_10107$class_10109;)V
-		ARG 2 key
-		ARG 3 entry
 	CLASS class_10108 FakeRegistry
 		FIELD field_53705 CODEC Lcom/mojang/serialization/Codec;
 		METHOD method_62723 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

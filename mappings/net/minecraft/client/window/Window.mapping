@@ -51,7 +51,6 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 		ARG 0 value
 		ARG 1 minimum
 	METHOD method_1_3138 isFocused ()Z
-	METHOD method_1_6373 supportsExclusiveFullscreen ()Z
 	METHOD method_1_8436 setBorderlessFullscreen ()Z
 	METHOD method_1_8437 setFullscreen ()Z
 	METHOD method_1_8438 setExclusiveFullscreen ()Z
@@ -82,13 +81,10 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	METHOD method_1_9166 onQuit ()V
 	METHOD method_1_9167 setEnableQuitShortcuts (Z)V
 		ARG 1 enableQuitShortcuts
-	METHOD method_1_9168 isExclusiveFullscreen ()Z
-	METHOD method_1_9393 onCurrentModeChanged ()V
+	METHOD method_1_9393 onCurrentModeChanged (I)V
 	METHOD method_1_9762 readAsSdlSurface (Lnet/minecraft/class_7367;Ljava/util/List;)Lorg/lwjgl/sdl/SDL_Surface;
 		ARG 0 icon
 		ARG 1 imagesToCloseOut
-	METHOD method_1_9763 setEmulateRightClick (Z)V
-		ARG 1 emulateRightClick
 	METHOD method_4474 setPhase (Ljava/lang/String;)V
 		ARG 1 phase
 	METHOD method_4475 applyFullscreenVideoMode ()V

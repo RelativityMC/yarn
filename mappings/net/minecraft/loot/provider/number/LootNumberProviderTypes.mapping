@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_5659 net/minecraft/loot/provider/number/LootNumberProviderTypes
-	METHOD method_1_757 register (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
-		ARG 0 registry

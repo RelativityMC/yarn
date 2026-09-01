@@ -2,16 +2,15 @@ CLASS net/minecraft/class_5922 net/minecraft/world/gen/feature/VegetationPatchFe
 	FIELD field_1_7877 depth Lnet/minecraft/class_6017;
 	FIELD field_1_7878 extraBottomBlockChance F
 	FIELD field_1_7879 extraEdgeColumnChance F
-	FIELD field_1_7880 groundState Lnet/minecraft/class_4651;
+	FIELD field_1_7880 groundState Lnet/minecraft/class_6880;
 	FIELD field_1_7881 replaceable Lnet/minecraft/class_6885;
 	FIELD field_1_7882 surface Lnet/minecraft/class_5932;
 	FIELD field_1_7883 vegetationChance F
 	FIELD field_1_7884 vegetationFeature Lnet/minecraft/class_6880;
 	FIELD field_1_7885 verticalRange I
 	FIELD field_1_7886 xzRadius Lnet/minecraft/class_6017;
-	METHOD <init> (Lnet/minecraft/class_6885;Lnet/minecraft/class_4651;Lnet/minecraft/class_6880;Lnet/minecraft/class_5932;Lnet/minecraft/class_6017;FIFLnet/minecraft/class_6017;F)V
+	METHOD <init> (Lnet/minecraft/class_6885;Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;Lnet/minecraft/class_5932;Lnet/minecraft/class_6017;FIFLnet/minecraft/class_6017;F)V
 		ARG 1 replaceable
-		ARG 2 groundState
 		ARG 3 vegetationFeature
 		ARG 4 surface
 		ARG 5 depth
@@ -26,7 +25,7 @@ CLASS net/minecraft/class_5922 net/minecraft/world/gen/feature/VegetationPatchFe
 		ARG 0 feature
 	METHOD method_1_7177 (Lnet/minecraft/class_5922;)Ljava/lang/Float;
 		ARG 0 feature
-	METHOD method_1_7178 (Lnet/minecraft/class_5922;)Lnet/minecraft/class_4651;
+	METHOD method_1_7178 (Lnet/minecraft/class_5922;)Lnet/minecraft/class_6880;
 		ARG 0 feature
 	METHOD method_1_7179 (Lnet/minecraft/class_5922;)Lnet/minecraft/class_6880;
 		ARG 0 feature

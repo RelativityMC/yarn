@@ -137,7 +137,6 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 	METHOD method_52642 (Lnet/minecraft/class_4325;Lnet/minecraft/class_339;)V
 		ARG 1 child
 	METHOD method_52644 makeInnerLayout (Lnet/minecraft/class_4325$class_8650;)Lnet/minecraft/class_8133;
-		ARG 1 loadStatus
 	METHOD method_52645 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
 	METHOD method_52646 (Lnet/minecraft/class_4185;)V

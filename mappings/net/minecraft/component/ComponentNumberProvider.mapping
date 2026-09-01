@@ -12,15 +12,6 @@ CLASS net/minecraft/class_1_1427 net/minecraft/component/ComponentNumberProvider
 		ARG 2 getter
 		ARG 3 context
 		ARG 4 fallback
-	METHOD method_1_9353 getInt (Lnet/minecraft/class_47;I)I
-		ARG 1 context
-		ARG 2 fallback
-	METHOD method_1_9354 getInt (Lnet/minecraft/class_1799;Lnet/minecraft/class_9331;Ljava/util/function/Function;Lnet/minecraft/class_47;I)I
-		ARG 0 stack
-		ARG 1 componentType
-		ARG 2 getter
-		ARG 3 context
-		ARG 4 fallback
 	METHOD method_1_9355 toEither (Lnet/minecraft/class_1_1427;)Lcom/mojang/datafixers/util/Either;
 		ARG 0 value
 	CLASS class_1_1428 Constant
@@ -32,6 +23,4 @@ CLASS net/minecraft/class_1_1427 net/minecraft/component/ComponentNumberProvider
 		METHOD method_1_9356 getNumberProvider (Lnet/minecraft/class_47;)Ljava/util/Optional;
 			ARG 1 context
 		METHOD method_1_9357 (Lnet/minecraft/class_47;Lnet/minecraft/class_5658;)Ljava/lang/Float;
-			ARG 1 provider
-		METHOD method_1_9358 (Lnet/minecraft/class_47;Lnet/minecraft/class_5658;)Ljava/lang/Integer;
 			ARG 1 provider

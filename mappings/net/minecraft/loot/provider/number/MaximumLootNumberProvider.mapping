@@ -1,3 +1,1 @@
 CLASS net/minecraft/class_1_1481 net/minecraft/loot/provider/number/MaximumLootNumberProvider
-	METHOD method_1_9814 of ([Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
-		ARG 0 operands

@@ -18,17 +18,12 @@ CLASS net/minecraft/class_446 net/minecraft/client/gui/screen/option/VideoOption
 		ARG 1 button
 	METHOD method_30053 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
-	METHOD method_60338 (Lnet/minecraft/class_313;Lnet/minecraft/class_1041;Ljava/lang/Integer;)V
-		ARG 2 value
-	METHOD method_60339 (Lnet/minecraft/class_313;Lnet/minecraft/class_2561;Ljava/lang/Integer;)Lnet/minecraft/class_2561;
-		ARG 1 optionText
-		ARG 2 value
 	METHOD method_67265 updateFullscreenButtonValue (Z)V
 		ARG 1 fullscreen
 	METHOD method_75371 updateImprovedTransparencyButtonValue ()V
 	METHOD method_75372 getQualityOptions (Lnet/minecraft/class_315;)[Lnet/minecraft/class_7172;
 		ARG 0 options
-	METHOD method_75373 getDisplayOptions (Lnet/minecraft/class_315;Z)[Lnet/minecraft/class_7172;
+	METHOD method_75373 getDisplayOptions (Lnet/minecraft/class_315;)[Lnet/minecraft/class_7172;
 		ARG 0 options
 	METHOD method_75374 getInterfaceOptions (Lnet/minecraft/class_315;)[Lnet/minecraft/class_7172;
 		ARG 0 options

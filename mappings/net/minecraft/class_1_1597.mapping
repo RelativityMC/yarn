@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1597
+	CLASS class_5639 Applier
+		METHOD method_1_183 apply (Lnet/minecraft/class_47;I)I
+			ARG 1 context
+			ARG 2 value

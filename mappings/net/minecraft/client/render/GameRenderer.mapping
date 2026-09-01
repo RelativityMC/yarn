@@ -62,7 +62,7 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	METHOD method_1_7690 getAppliedPostEffects ()Ljava/util/List;
 	METHOD method_1_7691 getPostEffects ()Ljava/util/List;
 	METHOD method_1_8579 integrate3dHudDepth ()V
-	METHOD method_1_8581 refreshPostEffects ()V
+	METHOD method_1_8581 refreshPostEffects (Ljava/util/List;)V
 	METHOD method_1_8582 renderWorldEffects (Lnet/minecraft/class_12075;Lnet/minecraft/class_1_1460;Lnet/minecraft/class_1_421;Z)V
 		ARG 1 cameraRenderState
 		ARG 2 overlayRenderState
@@ -97,8 +97,7 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	METHOD method_3203 reset ()V
 	METHOD method_19418 getCamera ()Lnet/minecraft/class_4184;
 	METHOD method_22975 getOverlayTexture ()Lnet/minecraft/class_4608;
-	METHOD method_34521 preloadPrograms (Lnet/minecraft/class_5912;)V
-		ARG 1 factory
+	METHOD method_34521 preloadPrograms (Lnet/minecraft/class_3300;)V
 	METHOD method_35769 setBlockOutlineEnabled (Z)V
 		ARG 1 blockOutlineEnabled
 	METHOD method_37473 updateWorldIcon ()V
@@ -111,9 +110,6 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	METHOD method_62906 getPostProcessorId ()Lnet/minecraft/class_2960;
 	METHOD method_68164 (Ljava/nio/file/Path;Lnet/minecraft/class_1011;)V
 		ARG 1 screenshot
-	METHOD method_68479 (Lnet/minecraft/class_5912;Lnet/minecraft/class_2960;Lnet/minecraft/class_1_1229;)Ljava/lang/String;
-		ARG 1 id
-		ARG 2 type
 	METHOD method_71112 setWorld (Lnet/minecraft/class_638;)V
 		ARG 1 world
 	METHOD method_71114 getDiffuseLighting ()Lnet/minecraft/class_308;

@@ -69,7 +69,6 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 2 queue
 		ARG 3 renderBlockOutline
 	METHOD method_1_6185 getLoadedChunkPositions ()Lit/unimi/dsi/fastutil/longs/LongCollection;
-	METHOD method_1_7337 getAccumulateFramebuffer ()Lnet/minecraft/class_276;
 	METHOD method_1_7338 drawTranslucentGeometry (Lnet/minecraft/class_11532;Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_1_1317;)V
 		ARG 1 state
 		ARG 2 preparedFrame
@@ -87,9 +86,6 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 2 preparedFrame
 		ARG 3 pass
 	METHOD method_1_7350 prepare ()V
-	METHOD method_1_7351 getTransmittanceTargetFramebuffer (I)Lnet/minecraft/class_276;
-		ARG 1 index
-	METHOD method_1_8615 getDepthBoundsCopyFramebuffer ()Lnet/minecraft/class_276;
 	METHOD method_1_8616 renderAlwaysOnTopFeatures (Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_276;Z)V
 		ARG 1 preparedFrame
 		ARG 2 framebuffer
@@ -139,9 +135,6 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 7 afterTerrain
 	METHOD method_22979 checkEmpty (Lnet/minecraft/class_4587;)V
 		ARG 1 matrices
-	METHOD method_22990 getOutlineFramebuffer ()Lnet/minecraft/class_276;
-	METHOD method_29361 getDepthBoundsFramebuffer ()Lnet/minecraft/class_276;
-	METHOD method_29363 getTerrainDepthFramebuffer ()Lnet/minecraft/class_276;
 	METHOD method_34810 getChunkBuilder ()Lnet/minecraft/class_846;
 	METHOD method_40050 isRenderingReady (Lnet/minecraft/class_2338;J)Z
 		ARG 1 pos

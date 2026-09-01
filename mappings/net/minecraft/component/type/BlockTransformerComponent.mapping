@@ -26,11 +26,9 @@ CLASS net/minecraft/class_1_1156 net/minecraft/component/type/BlockTransformerCo
 			FIELD field_1_8076 loot Ljava/util/Optional;
 			FIELD field_1_8077 particle Lnet/minecraft/class_1_1156$class_1_1161;
 			FIELD field_1_8078 sound Lnet/minecraft/class_6880;
-			FIELD field_1_8079 blockStateProvider Lnet/minecraft/class_4651;
+			FIELD field_1_8079 blockStateProvider Lnet/minecraft/class_6880;
 			FIELD field_1_8080 transformType Lnet/minecraft/class_1_1156$class_1_1162;
 			FIELD field_1_8496 updateFromNeighbors Z
-			METHOD <init> (Lnet/minecraft/class_4651;)V
-				ARG 1 blockStateProvider
 			METHOD method_1_7379 build ()Lnet/minecraft/class_1_1156$class_1_1157;
 			METHOD method_1_7380 consumeOnUse (Z)Lnet/minecraft/class_1_1156$class_1_1157$class_1_1158;
 				ARG 1 consumeOnUse

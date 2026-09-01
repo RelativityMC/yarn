@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_1_1188 net/minecraft/world/gen/stateprovider/CopyPropertiesProvider
-	FIELD comp_1_1346 sourceBlockStateProvider Lnet/minecraft/class_4651;
+	FIELD comp_1_1346 sourceBlockStateProvider Lnet/minecraft/class_6880;
 	METHOD <init> (Lnet/minecraft/class_2248;)V
 		ARG 1 block
-	METHOD comp_1_1346 sourceBlockStateProvider ()Lnet/minecraft/class_4651;
+	METHOD comp_1_1346 sourceBlockStateProvider ()Lnet/minecraft/class_6880;
 	METHOD method_1_7583 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance

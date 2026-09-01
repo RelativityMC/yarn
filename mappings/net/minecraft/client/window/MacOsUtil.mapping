@@ -1,3 +1,2 @@
 CLASS net/minecraft/class_1_1431 net/minecraft/client/window/MacOsUtil
-	FIELD field_1_9763 CLOSE_METHOD_SELECTORS Ljava/util/Set;
 	METHOD method_1_9396 disableClosingMenuActions ()V

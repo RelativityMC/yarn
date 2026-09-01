@@ -160,14 +160,13 @@ CLASS net/minecraft/class_1_125 net/minecraft/client/gui/screen/option/WorldOpti
 		ARG 0 value
 	METHOD method_1_10010 setDefaultGameMode (Lnet/minecraft/class_1934;)V
 		ARG 1 defaultGameMode
-	METHOD method_1_10011 updateOpStatus (Lnet/minecraft/class_1132;Z)V
+	METHOD method_1_10011 updateOpStatus (Lnet/minecraft/class_1132;ZZ)V
 		ARG 1 integratedServer
 		ARG 2 op
 	CLASS class_1_181 DifficultySelection
 		FIELD field_1_9611 DISABLED_HARDCORE_TOOLTIP Lnet/minecraft/class_7919;
 		FIELD field_1_9612 DISABLED_LOCKED_TOOLTIP Lnet/minecraft/class_7919;
 		FIELD field_1_9613 DISABLED_OPERATOR_TOOLTIP Lnet/minecraft/class_7919;
-		FIELD field_1_9614 DIFFICULTY_LOCK_TITLE Lnet/minecraft/class_2561;
 		FIELD field_1_9615 DIFFICULTY_TEXT Lnet/minecraft/class_2561;
 		METHOD method_1_1620 createDifficultySelector (Lnet/minecraft/class_310;Lnet/minecraft/class_1937;Lnet/minecraft/class_1_125;)Lnet/minecraft/class_1_125$class_1_181;
 			ARG 0 client
@@ -182,12 +181,6 @@ CLASS net/minecraft/class_1_125 net/minecraft/client/gui/screen/option/WorldOpti
 		METHOD method_1_9245 (Lnet/minecraft/class_1_125;Lnet/minecraft/class_5676;Lnet/minecraft/class_1267;)V
 			ARG 1 button
 			ARG 2 value
-		METHOD method_1_9246 (Lnet/minecraft/class_1_125;Lnet/minecraft/class_1937;Lnet/minecraft/class_310;Lnet/minecraft/class_4185;)V
-			ARG 3 button
-		METHOD method_1_9247 (Lnet/minecraft/class_4185;Lnet/minecraft/class_1_125;Lnet/minecraft/class_310;Lnet/minecraft/class_8816;)V
-			ARG 3 screen
-		METHOD method_1_9248 (Lnet/minecraft/class_4185;Lnet/minecraft/class_1_125;Lnet/minecraft/class_310;Lnet/minecraft/class_8816;)V
-			ARG 3 screen
 		METHOD method_1_9249 update (Lnet/minecraft/class_310;Lnet/minecraft/class_1937;Lnet/minecraft/class_5676;Lnet/minecraft/class_347;)V
 			ARG 0 client
 			ARG 1 world

@@ -1,11 +1,7 @@
 CLASS net/minecraft/class_1_488 net/minecraft/loot/provider/number/EnvironmentAttributeLootNumberProvider
 	FIELD field_1_2565 FLOAT_CONVERTIBLE_ATTRIBUTE_CODEC Lcom/mojang/serialization/Codec;
-	METHOD method_1_3088 of (Lnet/minecraft/class_12197;)Lnet/minecraft/class_1_488;
-		ARG 0 attribute
 	METHOD method_1_3089 getFloat (Lnet/minecraft/class_47;Lnet/minecraft/class_12197;)F
 		ARG 0 context
 		ARG 1 attribute
 	METHOD method_1_3090 (Lnet/minecraft/class_12197;)Lcom/mojang/serialization/DataResult;
 		ARG 0 attribute
-	METHOD method_1_3092 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance

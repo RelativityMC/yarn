@@ -15,10 +15,10 @@ CLASS net/minecraft/class_9955 net/minecraft/client/render/CloudRenderer
 		ARG 2 pipeline
 	METHOD method_1_7335 draw (Lnet/minecraft/class_4063;Lnet/minecraft/class_1_1317;)V
 		ARG 1 cloudRenderMode
-	METHOD method_1_7336 drawOit (Lnet/minecraft/class_4063;Lnet/minecraft/class_1_1153;Lnet/minecraft/class_1_1174$class_1_1175;)V
+	METHOD method_1_7336 drawOit (Lnet/minecraft/class_4063;Lnet/minecraft/class_1_1153;Lnet/minecraft/class_1_1330;Lnet/minecraft/class_1_1174$class_1_1175;)V
 		ARG 1 cloudRenderMode
 		ARG 2 oitStage
-		ARG 3 textureSet
+		ARG 4 textureSet
 	METHOD method_62166 scheduleTerrainUpdate ()V
 	METHOD method_62167 isEmpty (I)Z
 		ARG 0 color

@@ -3,15 +3,14 @@ CLASS net/minecraft/class_10600 net/minecraft/world/gen/treedecorator/PlaceOnGro
 	FIELD field_55837 tries I
 	FIELD field_55838 radius I
 	FIELD field_55839 height I
-	FIELD field_55840 blockStateProvider Lnet/minecraft/class_4651;
-	METHOD <init> (IIILnet/minecraft/class_4651;)V
+	FIELD field_55840 blockStateProvider Lnet/minecraft/class_6880;
+	METHOD <init> (IIILnet/minecraft/class_6880;)V
 		ARG 1 tries
 		ARG 2 radius
 		ARG 3 height
-		ARG 4 blockStateProvider
 	METHOD method_66483 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
-	METHOD method_66484 (Lnet/minecraft/class_10600;)Lnet/minecraft/class_4651;
+	METHOD method_66484 (Lnet/minecraft/class_10600;)Lnet/minecraft/class_6880;
 		ARG 0 treeDecorator
 	METHOD method_66485 generate (Lnet/minecraft/class_4662$class_7402;Lnet/minecraft/class_2338;)V
 		ARG 1 generator

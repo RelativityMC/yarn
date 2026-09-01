@@ -75,8 +75,8 @@ CLASS net/minecraft/class_2512 net/minecraft/nbt/NbtHelper
 		COMMENT @see net.minecraft.data.SnbtProvider
 		COMMENT @see #toNbtProviderString
 		ARG 0 string
-	METHOD method_32261 (Ljava/util/Map;Lnet/minecraft/class_2487;)Lnet/minecraft/class_2499;
-		ARG 1 nbt
+	METHOD method_32261 (Ljava/util/Map;ILnet/minecraft/class_2487;)Lnet/minecraft/class_2499;
+		ARG 2 nbt
 	METHOD method_32262 (Ljava/lang/StringBuilder;Lnet/minecraft/class_2487;)V
 		ARG 1 properties
 	METHOD method_32263 (Lnet/minecraft/class_2487;Ljava/lang/String;Ljava/lang/String;)V
@@ -85,9 +85,9 @@ CLASS net/minecraft/class_2512 net/minecraft/nbt/NbtHelper
 		ARG 0 nbt
 	METHOD method_32265 (Lnet/minecraft/class_2499;Lnet/minecraft/class_2487;)V
 		ARG 1 nbt
-	METHOD method_32266 (Lnet/minecraft/class_2499;Lnet/minecraft/class_2499;Lnet/minecraft/class_2499;)V
-		ARG 2 nbt
-	METHOD method_32267 fromNbtProviderFormattedPalette (Ljava/lang/String;)Lnet/minecraft/class_2487;
+	METHOD method_32266 (Lnet/minecraft/class_2499;ILnet/minecraft/class_2499;Lnet/minecraft/class_2499;)V
+		ARG 3 nbt
+	METHOD method_32267 fromNbtProviderFormattedPalette (Ljava/lang/String;I)Lnet/minecraft/class_2487;
 		ARG 0 string
 	METHOD method_32268 (Lnet/minecraft/class_2499;)D
 		ARG 0 nbt
@@ -121,29 +121,12 @@ CLASS net/minecraft/class_2512 net/minecraft/nbt/NbtHelper
 		ARG 0 compound
 	METHOD method_32276 (Lnet/minecraft/class_2499;)I
 		ARG 0 nbt
-	METHOD method_32277 toNbtProviderFormattedPalette (Lnet/minecraft/class_2487;)Ljava/lang/String;
+	METHOD method_32277 toNbtProviderFormattedPalette (Lnet/minecraft/class_2487;I)Ljava/lang/String;
 		ARG 0 compound
 	METHOD method_32278 (Lnet/minecraft/class_2487;)Ljava/util/Optional;
 		ARG 0 nbt
 	METHOD method_32279 (Lnet/minecraft/class_2487;)Ljava/util/Optional;
 		ARG 0 nbt
-	METHOD method_36114 appendIndent (ILjava/lang/StringBuilder;)Ljava/lang/StringBuilder;
-		ARG 0 depth
-		ARG 1 stringBuilder
-	METHOD method_36115 fromFluidState (Lnet/minecraft/class_3610;)Lnet/minecraft/class_2487;
-		COMMENT {@return the serialized fluid state}
-		ARG 0 state
-	METHOD method_36116 appendFormattedString (Ljava/lang/StringBuilder;Lnet/minecraft/class_2520;IZ)Ljava/lang/StringBuilder;
-		ARG 0 stringBuilder
-		ARG 1 nbt
-		ARG 2 depth
-		ARG 3 withArrayContents
-	METHOD method_36117 toFormattedString (Lnet/minecraft/class_2520;Z)Ljava/lang/String;
-		COMMENT {@return the human-readable, non-deserializable representation of {@code nbt}}
-		ARG 0 nbt
-		ARG 1 withArrayContents
-			COMMENT whether to include contents of {@link NbtByteArray}, {@link NbtIntArray},
-			COMMENT and {@link NbtLongArray}
 	METHOD method_48308 putDataVersion (Lnet/minecraft/class_2487;I)Lnet/minecraft/class_2487;
 		ARG 0 nbt
 		ARG 1 dataVersion

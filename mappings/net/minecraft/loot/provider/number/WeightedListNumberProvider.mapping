@@ -1,5 +1,1 @@
 CLASS net/minecraft/class_1_1298 net/minecraft/loot/provider/number/WeightedListNumberProvider
-	METHOD method_1_8222 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance
-	METHOD method_1_8223 (Lnet/minecraft/class_1_1298;)Lnet/minecraft/class_6012;
-		ARG 0 provider

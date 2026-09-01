@@ -1,13 +1,12 @@
 CLASS net/minecraft/class_1_459 net/minecraft/world/gen/stateprovider/RuleBasedStateProvider
-	FIELD comp_1_1347 fallback Lnet/minecraft/class_4651;
+	FIELD comp_1_1347 fallback Lnet/minecraft/class_6880;
 	FIELD comp_1_1348 rules Ljava/util/List;
 	METHOD <init> (Ljava/util/Optional;Ljava/util/List;)V
 		ARG 1 fallback
 		ARG 2 rules
-	METHOD <init> (Lnet/minecraft/class_4651;Ljava/util/List;)V
-		ARG 1 fallback
+	METHOD <init> (Lnet/minecraft/class_6880;Ljava/util/List;)V
 		ARG 2 rules
-	METHOD comp_1_1347 fallback ()Lnet/minecraft/class_4651;
+	METHOD comp_1_1347 fallback ()Lnet/minecraft/class_6880;
 	METHOD comp_1_1348 rules ()Ljava/util/List;
 	METHOD method_1_2897 builder ()Lnet/minecraft/class_1_459$class_1_460;
 	METHOD method_1_2898 builder (Lnet/minecraft/class_4651;)Lnet/minecraft/class_1_459$class_1_460;

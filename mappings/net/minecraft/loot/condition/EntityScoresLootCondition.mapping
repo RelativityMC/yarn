@@ -5,10 +5,10 @@ CLASS net/minecraft/class_199 net/minecraft/loot/condition/EntityScoresLootCondi
 		ARG 1 scores
 		ARG 2 target
 	METHOD comp_1872 entity ()Lnet/minecraft/class_47$class_50;
-	METHOD method_1_769 (Lnet/minecraft/class_58;Ljava/lang/String;Lnet/minecraft/class_42;)V
+	METHOD method_1_769 (Lnet/minecraft/class_58;Ljava/lang/String;Lnet/minecraft/class_1_1601;)V
 		ARG 1 name
 		ARG 2 value
-	METHOD method_865 entityScoreIsInRange (Lnet/minecraft/class_47;Lnet/minecraft/class_1297;Lnet/minecraft/class_269;Ljava/lang/String;Lnet/minecraft/class_42;)Z
+	METHOD method_865 entityScoreIsInRange (Lnet/minecraft/class_47;Lnet/minecraft/class_1297;Lnet/minecraft/class_269;Ljava/lang/String;Lnet/minecraft/class_1_1601;)Z
 		ARG 1 context
 		ARG 2 entity
 		ARG 3 scoreboard
@@ -25,6 +25,6 @@ CLASS net/minecraft/class_199 net/minecraft/loot/condition/EntityScoresLootCondi
 		FIELD field_31870 target Lnet/minecraft/class_47$class_50;
 		METHOD <init> (Lnet/minecraft/class_47$class_50;)V
 			ARG 1 target
-		METHOD method_35558 score (Ljava/lang/String;Lnet/minecraft/class_42;)Lnet/minecraft/class_199$class_6163;
+		METHOD method_35558 score (Ljava/lang/String;Lnet/minecraft/class_1_1601;)Lnet/minecraft/class_199$class_6163;
 			ARG 1 name
 			ARG 2 value

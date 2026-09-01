@@ -1,11 +1,10 @@
 CLASS net/minecraft/class_7387 net/minecraft/world/gen/root/RootPlacer
 	FIELD field_38779 TYPE_CODEC Lcom/mojang/serialization/Codec;
-	FIELD field_38780 rootProvider Lnet/minecraft/class_4651;
+	FIELD field_38780 rootProvider Lnet/minecraft/class_6880;
 	FIELD field_38868 trunkOffsetY Lnet/minecraft/class_6017;
 	FIELD field_38869 aboveRootPlacement Ljava/util/Optional;
-	METHOD <init> (Lnet/minecraft/class_6017;Lnet/minecraft/class_4651;Ljava/util/Optional;)V
+	METHOD <init> (Lnet/minecraft/class_6017;Lnet/minecraft/class_6880;Ljava/util/Optional;)V
 		ARG 1 trunkOffsetY
-		ARG 2 rootProvider
 		ARG 3 aboveRootPlacement
 	METHOD method_43165 getType ()Lnet/minecraft/class_7388;
 	METHOD method_43167 canGrowThrough (Lnet/minecraft/class_3746;Lnet/minecraft/class_2338;)Z
@@ -21,7 +20,7 @@ CLASS net/minecraft/class_7387 net/minecraft/world/gen/root/RootPlacer
 		ARG 3 state
 	METHOD method_43182 createCodecParts (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/Products$P3;
 		ARG 0 instance
-	METHOD method_43183 (Lnet/minecraft/class_7387;)Lnet/minecraft/class_4651;
+	METHOD method_43183 (Lnet/minecraft/class_7387;)Lnet/minecraft/class_6880;
 		ARG 0 rootPlacer
 	METHOD method_43184 (Lnet/minecraft/class_3610;)Z
 		ARG 0 fluidState

@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_1_1156 net/minecraft/component/type/BlockTransformerComponent
 	FIELD field_1_8068 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_1_8069 PACKET_CODEC Lnet/minecraft/class_9139;
+	FIELD field_1_10159 ENTRY_CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_1_7371 (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_1799;Lnet/minecraft/class_1657;Lnet/minecraft/class_1_1156$class_1_1157;Lnet/minecraft/class_2350;Lnet/minecraft/class_5321;)V
 		ARG 8 lootTable
 	METHOD method_1_7372 (Lnet/minecraft/class_1_1156$class_1_1157;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;Lnet/minecraft/class_3218;Lnet/minecraft/class_1799;)V

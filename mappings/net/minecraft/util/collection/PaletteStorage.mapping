@@ -1,5 +1,7 @@
 CLASS net/minecraft/class_6490 net/minecraft/util/collection/PaletteStorage
 	COMMENT A storage whose values are raw IDs held by palettes.
+	METHOD method_1_9857 fill (I)V
+		ARG 1 value
 	METHOD method_15210 set (II)V
 		COMMENT Sets {@code value} to {@code index} in this storage.
 		ARG 1 index

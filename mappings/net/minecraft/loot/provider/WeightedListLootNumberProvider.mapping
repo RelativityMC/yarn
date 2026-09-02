@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_1660 net/minecraft/loot/provider/WeightedListLootNumberProvider
+	METHOD method_1_10376 (Lcom/mojang/serialization/Codec;Lnet/minecraft/class_1_1660$class_1_1661;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 2 instance
+	METHOD method_1_10377 createCodec (Lcom/mojang/serialization/Codec;Lnet/minecraft/class_1_1660$class_1_1661;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 valueCodec
+		ARG 1 factory
+	CLASS class_1_1661 Factory
+		METHOD method_1_10378 create (Lnet/minecraft/class_6012;)Lnet/minecraft/class_1_1660;
+			ARG 1 distribution

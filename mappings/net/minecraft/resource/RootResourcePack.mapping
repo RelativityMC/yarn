@@ -10,3 +10,4 @@ CLASS net/minecraft/class_1_1065 net/minecraft/resource/RootResourcePack
 		ARG 1 type
 		ARG 2 path
 		ARG 3 consumer
+	METHOD method_1_10261 createDefaultResourceManager ()Lnet/minecraft/class_3300;

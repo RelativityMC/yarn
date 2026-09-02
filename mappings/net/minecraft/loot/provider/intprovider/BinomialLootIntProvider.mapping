@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_40 net/minecraft/loot/provider/intprovider/BinomialLootIntProvider
+	FIELD field_45885 CODEC Lcom/mojang/serialization/MapCodec;
+	METHOD method_53438 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

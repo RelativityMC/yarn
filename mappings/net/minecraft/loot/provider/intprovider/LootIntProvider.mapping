@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_1_1666 net/minecraft/loot/provider/intprovider/LootIntProvider
+	METHOD method_1_10380 getCodec ()Lcom/mojang/serialization/MapCodec;
+	METHOD method_1_10381 floatToInt (F)I
+		ARG 0 x
+	METHOD method_1_10382 nextIntOrZero (Lnet/minecraft/class_47;)I
+		ARG 1 context
+	METHOD method_1_10383 nextInt (Lnet/minecraft/class_47;)I
+		ARG 1 context
+	METHOD method_1_10384 longToInt (J)I
+		ARG 0 n
+	METHOD method_1_10385 assertFinite (F)F
+		ARG 0 x

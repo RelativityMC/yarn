@@ -7,6 +7,9 @@ CLASS net/minecraft/class_6654 net/minecraft/world/gen/feature/BlockColumnFeatur
 	METHOD method_1_7147 up (Lnet/minecraft/class_6017;Lnet/minecraft/class_4651;)Lnet/minecraft/class_6654;
 		ARG 0 height
 		ARG 1 state
+	METHOD method_1_10330 layer (Lnet/minecraft/class_6017;Lnet/minecraft/class_6880;)Lnet/minecraft/class_6654$class_6656;
+		ARG 0 height
+		ARG 1 state
 	METHOD method_38906 adjustLayerHeights ([IIIZ)V
 		ARG 0 layerHeights
 		ARG 1 expectedHeight

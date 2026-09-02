@@ -1,0 +1,20 @@
+CLASS net/minecraft/class_1_1649 net/minecraft/loot/provider/NumberDispatcherLootNumberProvider
+	METHOD method_1_10353 (Lcom/mojang/serialization/Codec;Lnet/minecraft/class_6880;Lnet/minecraft/class_1_1649$class_1_1650;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 3 instance
+	METHOD method_1_10354 createCodec (Lcom/mojang/serialization/Codec;Lnet/minecraft/class_6880;Lnet/minecraft/class_1_1649$class_1_1650;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 valueCodec
+		ARG 1 zero
+		ARG 2 factory
+	METHOD method_1_10355 getBranch (Lnet/minecraft/class_47;)Lnet/minecraft/class_6880;
+		ARG 1 context
+	CLASS class_1_1296 Case
+		METHOD method_1_8220 test (Lnet/minecraft/class_47;)Z
+			ARG 1 context
+		METHOD method_1_10356 createCodec (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
+			ARG 0 valueCodec
+		METHOD method_1_10357 (Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 1 instance
+	CLASS class_1_1650 Factory
+		METHOD method_1_10358 create (Ljava/util/List;Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_1649;
+			ARG 1 cases
+			ARG 2 defaultValue

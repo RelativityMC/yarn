@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_5658 net/minecraft/loot/provider/floatprovider/LootFloatProvider
+	METHOD method_1_755 getCodec ()Lcom/mojang/serialization/MapCodec;
+	METHOD method_1_10410 nextFloatOrZero (Lnet/minecraft/class_47;)F
+		ARG 1 context
+	METHOD method_1_10411 fromInt (I)F
+		ARG 0 n
+	METHOD method_32454 nextFloat (Lnet/minecraft/class_47;)F
+		ARG 1 context

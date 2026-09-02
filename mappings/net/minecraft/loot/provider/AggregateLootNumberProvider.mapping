@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_1484 net/minecraft/loot/provider/AggregateLootNumberProvider
+	METHOD method_1_10349 (Lcom/mojang/serialization/Codec;Lnet/minecraft/class_1_1484$class_1_1643;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 2 instance
+	METHOD method_1_10350 createCodec (Lcom/mojang/serialization/Codec;Lnet/minecraft/class_1_1484$class_1_1643;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 inputsCodec
+		ARG 1 factory
+	CLASS class_1_1643 Factory
+		METHOD method_1_10351 create (Lnet/minecraft/class_6885;)Lnet/minecraft/class_1_1484;
+			ARG 1 inputs

@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_1_1622 net/minecraft/loot/provider/PowLootNumberProvider
+	METHOD method_1_10335 (Lcom/mojang/serialization/Codec;Lnet/minecraft/class_1_1622$class_1_1623;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 2 instance
+	METHOD method_1_10336 createCodec (Lcom/mojang/serialization/Codec;Lnet/minecraft/class_1_1622$class_1_1623;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 operandCodec
+		ARG 1 factory
+	CLASS class_1_1623 Factory
+		METHOD method_1_10337 create (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_1622;
+			ARG 1 base
+			ARG 2 exponent

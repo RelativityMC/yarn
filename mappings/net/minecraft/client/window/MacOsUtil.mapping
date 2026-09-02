@@ -1,2 +1,9 @@
 CLASS net/minecraft/class_1_1431 net/minecraft/client/window/MacOsUtil
+	FIELD field_1_10356 IS_MACOS Z
 	METHOD method_1_9396 disableClosingMenuActions ()V
+	METHOD method_1_10229 setCtrlClickEmulateRightClick (Z)V
+		ARG 0 ctrlClickEmulatesRightClick
+	METHOD method_1_10230 setFullscreenMenuVisibility (Z)V
+		ARG 0 visible
+	CLASS class_1_1595 MethodSelectors
+		FIELD field_1_10357 CLOSE_METHOD_SELECTORS Ljava/util/Set;

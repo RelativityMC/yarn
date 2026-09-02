@@ -1,0 +1,53 @@
+CLASS net/minecraft/class_1_1601 net/minecraft/loot/condition/IntValueCheck
+	FIELD field_1_10399 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_10400 RANGE_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_10401 VALUE_CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_1_10291 of (I)Lnet/minecraft/class_1_1601;
+		ARG 0 value
+	METHOD method_1_10292 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_10293 (Lnet/minecraft/class_1_1601$class_1_1602;)Ljava/util/Optional;
+		ARG 0 range
+	METHOD method_1_10294 (Lnet/minecraft/class_1_1601$class_1_1602;)Ljava/util/Optional;
+		ARG 0 range
+	METHOD method_1_10295 (Lnet/minecraft/class_1_1601;)Lcom/mojang/datafixers/util/Either;
+		ARG 0 check
+	METHOD method_1_10296 atLeast (I)Lnet/minecraft/class_1_1601;
+		ARG 0 min
+	METHOD method_1_10297 between (II)Lnet/minecraft/class_1_1601;
+		ARG 0 min
+		ARG 1 max
+	METHOD method_1_10298 test (Lnet/minecraft/class_47;I)Z
+		ARG 1 context
+		ARG 2 value
+	METHOD method_1_10299 test (Lnet/minecraft/class_47;Lnet/minecraft/class_1_1666;)Z
+		ARG 1 context
+		ARG 2 value
+	METHOD method_1_10300 atMost (I)Lnet/minecraft/class_1_1601;
+		ARG 0 max
+	CLASS class_1_1602 Range
+		FIELD field_1_10402 max Ljava/util/Optional;
+		FIELD field_1_10403 min Ljava/util/Optional;
+		FIELD field_1_10404 tester Lnet/minecraft/class_1_1601$class_1_1602$class_5638;
+		METHOD <init> (Ljava/util/Optional;Ljava/util/Optional;)V
+			ARG 1 min
+			ARG 2 max
+		METHOD method_1_10301 createTester (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_1601$class_1_1602$class_5638;
+			ARG 0 min
+			ARG 1 max
+		METHOD method_1_10302 (Lnet/minecraft/class_6880;Lnet/minecraft/class_47;I)Z
+			ARG 1 context
+			ARG 2 value
+		METHOD method_1_10303 (Lnet/minecraft/class_6880;Lnet/minecraft/class_47;I)Z
+			ARG 1 context
+			ARG 2 value
+		METHOD method_1_10304 (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;Lnet/minecraft/class_47;I)Z
+			ARG 2 context
+			ARG 3 value
+		CLASS class_5638 Tester
+			METHOD method_1_182 test (Lnet/minecraft/class_47;I)Z
+				ARG 1 context
+				ARG 2 value
+	CLASS class_1_1603 Value
+		METHOD method_1_10305 getMatchValue (Lnet/minecraft/class_47;)I
+			ARG 1 context

@@ -1,0 +1,17 @@
+CLASS net/minecraft/class_1_1608 net/minecraft/datafixer/fix/UnfilledBuriedTreasureMapFix
+	FIELD field_1_10416 BURIED_TREASURE_MAP_NEW_TRANSLATE_KEY Ljava/lang/String;
+	FIELD field_1_10417 BURIED_TREASURE_MAP_OLD_TRANSLATE_KEY Ljava/lang/String;
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD method_1_10324 fix (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 0 components
+	METHOD method_1_10325 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 dynamic
+	METHOD method_1_10326 (Ljava/lang/String;)Z
+		ARG 0 key
+	METHOD method_1_10327 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 itemName
+	METHOD method_1_10328 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 2 components
+	METHOD method_1_10329 (Ljava/lang/String;)Z
+		ARG 0 id

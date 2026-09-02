@@ -1,4 +1,0 @@
-CLASS net/minecraft/class_1_1649
-	CLASS class_1_1296 Case
-		METHOD method_1_8220 test (Lnet/minecraft/class_47;)Z
-			ARG 1 context

@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_9753 net/minecraft/loot/provider/floatprovider/EnchantmentLevelLootFloatProvider
+	FIELD field_51813 CODEC Lcom/mojang/serialization/MapCodec;
+	METHOD method_60312 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

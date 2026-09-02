@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_1294 net/minecraft/loot/provider/floatprovider/ConditionalLootFloatProvider
+	FIELD field_1_8770 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_8771 MAP_CODEC Lcom/mojang/serialization/MapCodec;

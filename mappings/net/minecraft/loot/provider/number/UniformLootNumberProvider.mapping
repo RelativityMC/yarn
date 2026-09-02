@@ -1,2 +1,0 @@
-CLASS net/minecraft/class_5662 net/minecraft/loot/provider/number/UniformLootNumberProvider
-	FIELD field_45891 CODEC Lcom/mojang/serialization/MapCodec;

@@ -16,6 +16,9 @@ CLASS net/minecraft/class_111 net/minecraft/loot/function/ExplorationMapLootFunc
 		ARG 4 zoom
 		ARG 5 searchRadius
 		ARG 6 skipExistingChunks
+	METHOD method_1_10348 addFirstReferenceToStructureStart (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;)V
+		ARG 1 world
+		ARG 2 pos
 	METHOD method_492 builder (Lnet/minecraft/class_6885;)Lnet/minecraft/class_111$class_112;
 		ARG 0 destination
 	METHOD method_53332 (Lnet/minecraft/class_111;)Ljava/lang/Boolean;

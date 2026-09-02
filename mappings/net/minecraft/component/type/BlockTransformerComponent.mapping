@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_1_1156 net/minecraft/component/type/BlockTransformerComponent
+	FIELD field_1_8068 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_1_8069 PACKET_CODEC Lnet/minecraft/class_9139;
 	METHOD method_1_7371 (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_1799;Lnet/minecraft/class_1657;Lnet/minecraft/class_1_1156$class_1_1157;Lnet/minecraft/class_2350;Lnet/minecraft/class_5321;)V
 		ARG 8 lootTable
@@ -18,6 +19,8 @@ CLASS net/minecraft/class_1_1156 net/minecraft/component/type/BlockTransformerCo
 			ARG 0 blockStateProvider
 		METHOD method_1_7378 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance
+		METHOD method_1_10255 builder (Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_1156$class_1_1157$class_1_1158;
+			ARG 0 blockStateProvider
 		CLASS class_1_1158 Builder
 			FIELD field_1_8072 consumeOnUse Z
 			FIELD field_1_8073 disallowedFaces Ljava/util/List;
@@ -29,6 +32,8 @@ CLASS net/minecraft/class_1_1156 net/minecraft/component/type/BlockTransformerCo
 			FIELD field_1_8079 blockStateProvider Lnet/minecraft/class_6880;
 			FIELD field_1_8080 transformType Lnet/minecraft/class_1_1156$class_1_1162;
 			FIELD field_1_8496 updateFromNeighbors Z
+			METHOD <init> (Lnet/minecraft/class_6880;)V
+				ARG 1 blockStateProvider
 			METHOD method_1_7379 build ()Lnet/minecraft/class_1_1156$class_1_1157;
 			METHOD method_1_7380 consumeOnUse (Z)Lnet/minecraft/class_1_1156$class_1_1157$class_1_1158;
 				ARG 1 consumeOnUse

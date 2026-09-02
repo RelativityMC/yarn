@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1_1610 net/minecraft/loot/condition/FloatValueCheckLootCondition
+	METHOD method_1_10331 builder (Lnet/minecraft/class_6880;Lnet/minecraft/class_1_1604;)Lnet/minecraft/class_5341$class_210;
+		ARG 0 value
+		ARG 1 range
+	METHOD method_1_10333 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD test (Ljava/lang/Object;)Z
+		ARG 1 context

@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_1_1656 net/minecraft/loot/provider/ConditionalLootNumberProvider
+	METHOD method_1_10366 (Lcom/mojang/serialization/Codec;Lnet/minecraft/class_6880;Lnet/minecraft/class_1_1656$class_1_1657;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 3 instance
+	METHOD method_1_10367 createCodec (Lcom/mojang/serialization/Codec;Lnet/minecraft/class_6880;Lnet/minecraft/class_1_1656$class_1_1657;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 branchCodec
+		ARG 1 zero
+		ARG 2 factory
+	METHOD method_1_10368 getBranch (Lnet/minecraft/class_47;)Lnet/minecraft/class_6880;
+		ARG 1 context
+	CLASS class_1_1657 Factory
+		METHOD method_1_10369 create (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_1656;
+			ARG 1 condition
+			ARG 2 onTrue
+			ARG 3 onFalse

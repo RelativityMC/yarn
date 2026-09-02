@@ -30,6 +30,7 @@ CLASS net/minecraft/class_1_741 net/minecraft/client/NativeLibraryLoading
 	METHOD method_1_4695 loadVma ()V
 	METHOD method_1_5135 isVulkanLoaded ()Z
 	METHOD method_1_5139 loadVulkanLoader ()Z
+	METHOD method_1_10282 loadSpng ()V
 	CLASS class_1_742 ToggledRecordingPrintStream
 		FIELD field_1_3764 byteOutput Lnet/minecraft/class_1_741$class_1_743;
 		METHOD <init> (Ljava/io/OutputStream;)V

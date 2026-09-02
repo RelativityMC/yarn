@@ -1,0 +1,42 @@
+CLASS net/minecraft/class_1_1597 net/minecraft/loot/function/ClampingRange
+	FIELD field_1_10386 applier Lnet/minecraft/class_1_1597$class_5639;
+	FIELD field_1_10387 max Ljava/util/Optional;
+	FIELD field_1_10388 min Ljava/util/Optional;
+	METHOD <init> (Ljava/util/Optional;Ljava/util/Optional;)V
+		ARG 1 min
+		ARG 2 max
+	METHOD method_1_10262 apply (Lnet/minecraft/class_47;I)I
+		ARG 1 context
+		ARG 2 value
+	METHOD method_1_10263 createApplier (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_1597$class_5639;
+		ARG 0 min
+		ARG 1 max
+	METHOD method_1_10264 (Lnet/minecraft/class_47;I)I
+		ARG 0 context
+		ARG 1 value
+	METHOD method_1_10265 (Lnet/minecraft/class_6880;Lnet/minecraft/class_47;I)I
+		ARG 1 context
+		ARG 2 value
+	METHOD method_1_10266 (Lnet/minecraft/class_6880;Lnet/minecraft/class_47;I)I
+		ARG 1 context
+		ARG 2 value
+	METHOD method_1_10267 (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;Lnet/minecraft/class_47;I)I
+		ARG 2 context
+		ARG 3 value
+	METHOD method_1_10268 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_10269 (Lnet/minecraft/class_1_1597;)Ljava/util/Optional;
+		ARG 0 range
+	METHOD method_1_10270 (Lnet/minecraft/class_1_1597;)Ljava/util/Optional;
+		ARG 0 range
+	METHOD method_1_10271 atLeast (I)Lnet/minecraft/class_1_1597;
+		ARG 0 min
+	METHOD method_1_10272 between (II)Lnet/minecraft/class_1_1597;
+		ARG 0 min
+		ARG 1 max
+	METHOD method_1_10273 atMost (I)Lnet/minecraft/class_1_1597;
+		ARG 0 max
+	CLASS class_5639 Applier
+		METHOD method_1_183 apply (Lnet/minecraft/class_47;I)I
+			ARG 1 context
+			ARG 2 value

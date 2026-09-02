@@ -63,6 +63,7 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	METHOD method_1_7691 getPostEffects ()Ljava/util/List;
 	METHOD method_1_8579 integrate3dHudDepth ()V
 	METHOD method_1_8581 refreshPostEffects (Ljava/util/List;)V
+		ARG 1 postEffects
 	METHOD method_1_8582 renderWorldEffects (Lnet/minecraft/class_12075;Lnet/minecraft/class_1_1460;Lnet/minecraft/class_1_421;Z)V
 		ARG 1 cameraRenderState
 		ARG 2 overlayRenderState
@@ -98,6 +99,7 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	METHOD method_19418 getCamera ()Lnet/minecraft/class_4184;
 	METHOD method_22975 getOverlayTexture ()Lnet/minecraft/class_4608;
 	METHOD method_34521 preloadPrograms (Lnet/minecraft/class_3300;)V
+		ARG 0 resourceManager
 	METHOD method_35769 setBlockOutlineEnabled (Z)V
 		ARG 1 blockOutlineEnabled
 	METHOD method_37473 updateWorldIcon ()V

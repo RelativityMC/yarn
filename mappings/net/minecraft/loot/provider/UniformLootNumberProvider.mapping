@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_1_1624 net/minecraft/loot/provider/UniformLootNumberProvider
+	METHOD method_1_10338 (Lcom/mojang/serialization/Codec;Lnet/minecraft/class_1_1624$class_1_1625;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 2 instance
+	METHOD method_1_10339 createCodec (Lcom/mojang/serialization/Codec;Lnet/minecraft/class_1_1624$class_1_1625;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 valueCodec
+		ARG 1 factory
+	CLASS class_1_1625 Factory
+		METHOD method_1_10340 create (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_1624;
+			ARG 1 min
+			ARG 2 max

@@ -1,5 +1,8 @@
 CLASS net/minecraft/class_4651 net/minecraft/world/gen/stateprovider/BlockStateProvider
 	COMMENT A provider for {@linkplain BlockState block states}. Results may be random or based on a block position.
+	FIELD field_1_10460 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_10461 EITHER_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_10462 BASE_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_24937 TYPE_CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_1_2896 getOrNull (Lnet/minecraft/class_1936;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338;)Lnet/minecraft/class_2680;
 		ARG 1 world
@@ -8,6 +11,16 @@ CLASS net/minecraft/class_4651 net/minecraft/world/gen/stateprovider/BlockStateP
 	METHOD method_1_8224 getCodec ()Lcom/mojang/serialization/MapCodec;
 	METHOD method_1_8225 (Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
 		ARG 0 mapCodec
+	METHOD method_1_10371 entryOf (Lnet/minecraft/class_2248;)Lnet/minecraft/class_6880;
+		ARG 0 block
+	METHOD method_1_10372 entryOf (Lnet/minecraft/class_2680;)Lnet/minecraft/class_6880;
+		ARG 0 block
+	METHOD method_1_10373 (Lcom/mojang/datafixers/util/Either;)Lnet/minecraft/class_4651;
+		ARG 0 either
+	METHOD method_1_10374 (Lnet/minecraft/class_4651;)Lnet/minecraft/class_4651;
+		ARG 0 provider
+	METHOD method_1_10375 (Lnet/minecraft/class_4651;)Lcom/mojang/datafixers/util/Either;
+		ARG 0 provider
 	METHOD method_23455 get (Lnet/minecraft/class_1936;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338;)Lnet/minecraft/class_2680;
 		COMMENT {@return a provided block state}
 		ARG 1 world

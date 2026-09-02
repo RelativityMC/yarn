@@ -5,6 +5,10 @@ CLASS net/minecraft/class_4543 net/minecraft/world/biome/source/BiomeAccess
 	METHOD <init> (Lnet/minecraft/class_6780;J)V
 		ARG 1 storage
 		ARG 2 seed
+	METHOD method_1_9942 getBiome (III)Lnet/minecraft/class_6880;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_22393 getBiome (Lnet/minecraft/class_2338;)Lnet/minecraft/class_6880;
 		ARG 1 pos
 	METHOD method_24854 getBiomeForNoiseGen (III)Lnet/minecraft/class_6880;
@@ -19,5 +23,15 @@ CLASS net/minecraft/class_4543 net/minecraft/world/biome/source/BiomeAccess
 		ARG 1 pos
 	METHOD method_27984 hashSeed (J)J
 		ARG 0 seed
+	METHOD method_38106 distanceToLatticePoint (JIIIDDD)D
+		ARG 0 seed
+		ARG 2 biomeX
+		ARG 3 biomeY
+		ARG 4 biomeZ
+		ARG 5 biomeXFrac
+		ARG 7 biomeYFrac
+		ARG 9 biomeZFrac
 	METHOD method_38107 withSource (Lnet/minecraft/class_6780;)Lnet/minecraft/class_4543;
 		ARG 1 storage
+	METHOD method_38108 latticePointJitter (J)D
+		ARG 0 seed

@@ -19,7 +19,12 @@ CLASS net/minecraft/class_9975 net/minecraft/client/render/SkyRenderer
 		ARG 1 textureManager
 		ARG 2 atlasManager
 		ARG 3 framebuffer
+	METHOD method_1_9895 renderSky (Lnet/minecraft/class_1_1254;Lnet/minecraft/class_12076;)V
+		ARG 1 fogBuffer
+		ARG 2 renderState
 	METHOD method_62302 renderTopSky (Lnet/minecraft/class_1_1317;Lorg/joml/Vector3fc;)V
+		ARG 1 pass
+		ARG 2 skyColor
 	METHOD method_62303 renderSun (Lnet/minecraft/class_1_1317;FLnet/minecraft/class_4587;)V
 		ARG 2 alpha
 		ARG 3 matrices
@@ -28,10 +33,12 @@ CLASS net/minecraft/class_9975 net/minecraft/client/render/SkyRenderer
 		ARG 3 alpha
 		ARG 4 matrices
 	METHOD method_62305 renderSkyDark (Lnet/minecraft/class_1_1317;)V
+		ARG 1 pass
 	METHOD method_62306 renderGlowingSky (Lnet/minecraft/class_1_1317;Lnet/minecraft/class_4587;FLorg/joml/Vector4fc;)V
 		ARG 2 matrices
 		ARG 3 solarAngle
 	METHOD method_62307 renderCelestialBodies (Lnet/minecraft/class_1_1317;Lnet/minecraft/class_4587;FFFLnet/minecraft/class_12131;FF)V
+		ARG 1 pass
 		ARG 2 matrices
 		ARG 3 sunAngle
 		ARG 4 moonAngle

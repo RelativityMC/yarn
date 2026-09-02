@@ -1,7 +1,10 @@
 CLASS net/minecraft/class_1_358 net/minecraft/client/util/Dialogs
 	FIELD field_1_2027 DEFAULT_NO I
-	FIELD field_1_2028 DEFAULT_OK I
+	FIELD field_1_2028 DEFAULT_YES I
 	FIELD field_1_2029 DIALOG_TITLE Ljava/lang/String;
+	FIELD field_1_10062 LABEL_NO Ljava/lang/String;
+	FIELD field_1_10063 LABEL_YES Ljava/lang/String;
+	FIELD field_1_10064 LOGGER Lorg/slf4j/Logger;
 	METHOD method_1_2484 showMessageBox (Ljava/lang/String;)V
 		ARG 0 message
 	METHOD method_1_2485 promptYesOrNo (Ljava/lang/String;)Z

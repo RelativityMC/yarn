@@ -33,7 +33,7 @@ CLASS net/minecraft/class_5822 net/minecraft/util/math/noise/BlendedNoiseSampler
 		ARG 1 random
 	METHOD method_1_9654 getScaledXzScale ()D
 	METHOD method_1_9655 getScaledYScale ()D
-	METHOD method_1_10040 Sampler (Lnet/minecraft/class_5819;)Lnet/minecraft/class_1_1519;
+	METHOD method_1_10040 createSampler (Lnet/minecraft/class_5819;)Lnet/minecraft/class_1_1519;
 		ARG 1 random
 	METHOD method_42385 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance

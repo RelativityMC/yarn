@@ -32,6 +32,8 @@ CLASS net/minecraft/class_1560 net/minecraft/entity/mob/EndermanEntity
 		ARG 2 source
 		ARG 3 potion
 		ARG 4 amount
+	METHOD method_67670 (Lnet/minecraft/class_2680;)Z
+		ARG 0 state
 	CLASS class_1561 PlaceBlockGoal
 		FIELD field_7258 enderman Lnet/minecraft/class_1560;
 		METHOD <init> (Lnet/minecraft/class_1560;)V

@@ -1,4 +1,12 @@
 CLASS net/minecraft/class_12289 net/minecraft/client/shader/ShaderSourceGetter
-	METHOD method_1_55 get (Lnet/minecraft/class_2960;Lnet/minecraft/class_1_1229;)Ljava/lang/String;
+	METHOD method_1_55 getShader (Lnet/minecraft/class_2960;Lnet/minecraft/class_1_1229;)Ljava/lang/String;
 		ARG 1 id
 		ARG 2 type
+	METHOD method_1_10274 getInclude (Lnet/minecraft/class_2960;)Lnet/minecraft/class_12289$class_1_1598;
+		ARG 1 id
+	CLASS class_1_1598 IncludeResult
+		METHOD method_1_10275 create (Lnet/minecraft/class_2960;Ljava/lang/String;)Lnet/minecraft/class_12289$class_1_1598;
+			ARG 0 id
+			ARG 1 source
+		METHOD method_1_10276 createUnnamed (Ljava/lang/String;)Lnet/minecraft/class_12289$class_1_1598;
+			ARG 0 source

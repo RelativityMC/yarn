@@ -87,6 +87,9 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_1_9556 SOLID_TERRAIN_MULTIDRAW Lnet/minecraft/class_1_1257;
 	FIELD field_1_9557 TRANSLUCENT_TERRAIN_MULTIDRAW Lnet/minecraft/class_1_1257;
 	FIELD field_1_9558 WIREFRAME_MULTIDRAW Lnet/minecraft/class_1_1257;
+	FIELD field_1_10373 BLIT_DEPTH Lnet/minecraft/class_1_1257;
+	FIELD field_1_10374 BLIT_DEPTH_BOUNDS Lnet/minecraft/class_1_1257;
+	FIELD field_1_10375 BLIT_DEPTH_DURING_DEPTH_BOUNDS Lnet/minecraft/class_1_1257;
 	FIELD field_56812 BEACON_BEAM_TRANSLUCENT Lnet/minecraft/class_1_1257;
 	FIELD field_56814 RENDERTYPE_LEASH Lnet/minecraft/class_1_1257;
 	FIELD field_56815 RENDERTYPE_WATER_MASK Lnet/minecraft/class_1_1257;

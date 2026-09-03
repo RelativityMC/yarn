@@ -3,6 +3,8 @@ CLASS net/minecraft/class_1_709 net/minecraft/client/shader/SpirvShaderCompiler
 	FIELD field_1_9474 resolveResultReleaser Lorg/lwjgl/util/shaderc/ShadercIncludeResultRelease;
 	FIELD field_1_9475 zZeroToOne Z
 	FIELD field_1_9476 hasShaderDrawParameters Z
+	FIELD field_1_10392 INCLUDE_MALFORMED_ID Lnet/minecraft/class_12289$class_1_1598;
+	FIELD field_1_10393 INCLUDE_NOT_FOUND Lnet/minecraft/class_12289$class_1_1598;
 	METHOD <init> (ZZ)V
 		ARG 1 zZeroToOne
 		ARG 2 hasShaderDrawParameters
@@ -11,11 +13,22 @@ CLASS net/minecraft/class_1_709 net/minecraft/client/shader/SpirvShaderCompiler
 		ARG 2 source
 		ARG 3 type
 		ARG 4 defines
+		ARG 5 shaderSourceGetter
 	METHOD method_1_9109 createCompileOptions ()J
 	METHOD method_1_9111 releaseResolveResult (JJ)V
 		ARG 0 userData
 		ARG 2 includeResult
 	METHOD method_1_10023 acquireCompiler ()J
 	METHOD method_1_10026 resolve (Lnet/minecraft/class_12289;Ljava/lang/String;)Lnet/minecraft/class_12289$class_1_1598;
+		ARG 1 shaderSourceGetter
+		ARG 2 path
 	METHOD method_1_10027 releaseCompiler (J)V
 		ARG 1 compiler
+	METHOD method_1_10283 createResolver (Lnet/minecraft/class_12289;)Lorg/lwjgl/util/shaderc/ShadercIncludeResolve;
+		ARG 1 shaderSourceGetter
+	METHOD method_1_10284 (Lnet/minecraft/class_12289;JJIJJ)J
+		ARG 2 userData
+		ARG 4 requestedSource
+		ARG 6 type
+		ARG 7 requestingSource
+		ARG 9 includeDepth

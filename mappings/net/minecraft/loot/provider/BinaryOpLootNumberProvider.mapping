@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_1_1633 net/minecraft/loot/provider/BinaryOpLootNumberProvider
+	METHOD method_1_10345 (Lcom/mojang/serialization/Codec;Lnet/minecraft/class_1_1633$class_1_1634;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 2 instance
+	METHOD method_1_10346 createCodec (Lcom/mojang/serialization/Codec;Lnet/minecraft/class_1_1633$class_1_1634;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 operandCodec
+		ARG 1 factory
+	CLASS class_1_1634 Factory
+		METHOD method_1_10347 create (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_1633;
+			ARG 1 left
+			ARG 2 right

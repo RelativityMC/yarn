@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1596 net/minecraft/world/gen/stateprovider/BlockStateProviders
+	METHOD method_1_10258 bootstrap (Lnet/minecraft/class_7891;)V
+		ARG 0 registry
+	METHOD method_1_10259 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 path

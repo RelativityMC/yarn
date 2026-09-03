@@ -1,0 +1,60 @@
+CLASS net/minecraft/class_1_1670 net/minecraft/loot/provider/floatprovider/LootFloatProviders
+	FIELD field_1_10498 ENTRY_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_10503 ENTRY_LIST_CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_1_10415 abs (Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 input
+	METHOD method_1_10416 sum ([Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 inputs
+	METHOD method_1_10417 average ([Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 inputs
+	METHOD method_1_10418 uniform (FF)Lnet/minecraft/class_6880;
+		ARG 0 min
+		ARG 1 max
+	METHOD method_1_10419 bootstrap (Lnet/minecraft/class_7891;)V
+		ARG 0 registry
+	METHOD method_1_10420 ceil (Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 input
+	METHOD method_1_10421 cos (Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 input
+	METHOD method_1_10422 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 path
+	METHOD method_1_10423 div (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 left
+		ARG 1 right
+	METHOD method_1_10424 constant (F)Lnet/minecraft/class_6880;
+		ARG 0 value
+	METHOD method_1_10425 enchantmentLevel (Lnet/minecraft/class_9704;)Lnet/minecraft/class_6880;
+		ARG 0 amount
+	METHOD method_1_10426 environmentAttribute (Lnet/minecraft/class_12197;)Lnet/minecraft/class_6880;
+		ARG 0 attribute
+	METHOD method_1_10428 (Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 mapCodec
+	METHOD method_1_10429 (Lnet/minecraft/class_5658;)Lcom/mojang/datafixers/util/Either;
+		ARG 0 provider
+	METHOD method_1_10430 length ([Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 inputs
+	METHOD method_1_10431 max ([Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 inputs
+	METHOD method_1_10432 min ([Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 inputs
+	METHOD method_1_10433 mod (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 left
+		ARG 1 right
+	METHOD method_1_10434 product ([Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 inputs
+	METHOD method_1_10435 negate (Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 input
+	METHOD method_1_10436 pow (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 base
+		ARG 1 exponent
+	METHOD method_1_10437 round (Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 input
+	METHOD method_1_10438 sin (Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 input
+	METHOD method_1_10439 sqrt (Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 input
+	METHOD method_1_10440 sub (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 left
+		ARG 1 right
+	METHOD method_1_10441 truncate (Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 input

@@ -1,0 +1,13 @@
+CLASS net/minecraft/class_5644 net/minecraft/loot/condition/IntValueCheckLootCondition
+	FIELD comp_1887 value Lnet/minecraft/class_6880;
+	FIELD field_45877 CODEC Lcom/mojang/serialization/MapCodec;
+	METHOD <init> (Lnet/minecraft/class_6880;Lnet/minecraft/class_1_1601;)V
+		ARG 2 range
+	METHOD comp_1887 value ()Lnet/minecraft/class_6880;
+	METHOD method_35562 builder (Lnet/minecraft/class_6880;Lnet/minecraft/class_1_1601;)Lnet/minecraft/class_5341$class_210;
+		ARG 0 value
+		ARG 1 range
+	METHOD method_53428 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD test (Ljava/lang/Object;)Z
+		ARG 1 context

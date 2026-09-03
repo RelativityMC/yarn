@@ -1,5 +1,7 @@
 CLASS net/minecraft/class_10151 net/minecraft/client/shader/ShaderLoader
 	FIELD field_1_1822 projectionMatrix Lnet/minecraft/class_11279;
+	FIELD field_1_10369 INCLUDE_FINDER Lnet/minecraft/class_7654;
+	FIELD field_1_10370 EXTENSION Ljava/lang/String;
 	FIELD field_53934 SHADERS_PATH Ljava/lang/String;
 	FIELD field_53935 INCLUDE_PATH Ljava/lang/String;
 	FIELD field_53937 LOGGER Lorg/slf4j/Logger;
@@ -32,6 +34,19 @@ CLASS net/minecraft/class_10151 net/minecraft/client/shader/ShaderLoader
 		ARG 4 compiledOptionalPipelines
 	METHOD method_1_9907 (Lnet/minecraft/class_1_1313;Lnet/minecraft/class_10151$class_1_1488;)V
 		ARG 2 preparation
+	METHOD method_1_10243 includeFileToShadercId (Lnet/minecraft/class_2960;)Lnet/minecraft/class_2960;
+		ARG 0 id
+	METHOD method_1_10244 (Ljava/util/Map;Lnet/minecraft/class_2960;Lnet/minecraft/class_3298;)V
+		ARG 1 id
+		ARG 2 resource
+	METHOD method_1_10245 (Lnet/minecraft/class_2960;)Z
+		ARG 0 id
+	METHOD method_1_10246 loadIncludes (Lnet/minecraft/class_3300;)Ljava/util/Map;
+		ARG 0 resourceManager
+	METHOD method_1_10247 loadInclude (Lnet/minecraft/class_2960;Lnet/minecraft/class_3298;Lcom/google/common/collect/ImmutableMap$Builder;)V
+		ARG 0 id
+		ARG 1 resource
+		ARG 2 builder
 	METHOD method_62939 loadShaderSource (Lnet/minecraft/class_2960;Lnet/minecraft/class_3298;Lnet/minecraft/class_1_1229;Lcom/google/common/collect/ImmutableMap$Builder;)V
 		ARG 0 id
 		ARG 1 resource

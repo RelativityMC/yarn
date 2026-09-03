@@ -16,6 +16,7 @@ CLASS net/minecraft/class_3298 net/minecraft/resource/Resource
 		ARG 1 pack
 		ARG 2 inputSupplier
 		ARG 3 metadataSupplier
+	METHOD method_1_10256 readAllAsString ()Ljava/lang/String;
 	METHOD method_14480 getPackId ()Ljava/lang/String;
 		COMMENT {@return the ID of the pack this resource is from}
 	METHOD method_14481 getMetadata ()Lnet/minecraft/class_7368;

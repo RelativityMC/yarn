@@ -4,7 +4,7 @@ CLASS net/minecraft/class_1_1174 net/minecraft/client/render/oit/OitRenderPasses
 		ARG 1 textureSet
 	METHOD method_1_7494 createDepthBoundsRenderPass (Ljava/util/function/Supplier;Lnet/minecraft/class_1_1174$class_1_1175;)Lnet/minecraft/class_1_1317;
 		ARG 0 labelGetter
-		ARG 1 textureset
+		ARG 1 textureSet
 	METHOD method_1_7495 create (Lnet/minecraft/class_1_1153;Ljava/util/function/Supplier;Lnet/minecraft/class_1_1174$class_1_1175;)Lnet/minecraft/class_1_1317;
 		ARG 0 stage
 		ARG 1 labelGetter
@@ -13,3 +13,14 @@ CLASS net/minecraft/class_1_1174 net/minecraft/client/render/oit/OitRenderPasses
 		ARG 0 labelGetter
 		ARG 1 textureSet
 	CLASS class_1_1175 TextureSet
+		FIELD field_1_10395 accumulate Lnet/minecraft/class_1_1330;
+		FIELD field_1_10396 depthBounds Lnet/minecraft/class_1_1330;
+		FIELD field_1_10397 depth Lnet/minecraft/class_1_1330;
+		FIELD field_1_10398 transmittance [Lnet/minecraft/class_1_1330;
+		METHOD <init> (Lnet/minecraft/class_1_1330;[Lnet/minecraft/class_1_1330;Lnet/minecraft/class_1_1330;Lnet/minecraft/class_1_1330;)V
+			ARG 1 depthBounds
+			ARG 2 transmittance
+			ARG 3 accumulate
+			ARG 4 depth
+		METHOD method_1_10290 setDepthBoundsColor (Lnet/minecraft/class_1_1330;)V
+			ARG 1 depthBounds

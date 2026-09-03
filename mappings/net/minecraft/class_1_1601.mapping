@@ -1,6 +1,0 @@
-CLASS net/minecraft/class_1_1601
-	CLASS class_1_1602
-		CLASS class_5638 Tester
-			METHOD method_1_182 test (Lnet/minecraft/class_47;I)Z
-				ARG 1 context
-				ARG 2 value

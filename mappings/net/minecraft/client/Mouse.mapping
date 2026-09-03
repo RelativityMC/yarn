@@ -21,6 +21,7 @@ CLASS net/minecraft/class_312 net/minecraft/client/Mouse
 	FIELD field_64192 lastMouseClick Lnet/minecraft/class_312$class_12291;
 	METHOD <init> (Lnet/minecraft/class_310;)V
 		ARG 1 client
+	METHOD method_1_10225 updatePosition ()V
 	METHOD method_1598 onMouseScroll (JDD)V
 		COMMENT Called when a mouse is used to scroll.
 		ARG 1 window

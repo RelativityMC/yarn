@@ -1,7 +1,0 @@
-CLASS net/minecraft/class_5660 net/minecraft/loot/provider/number/ScoreLootNumberProvider
-	FIELD field_45890 CODEC Lcom/mojang/serialization/MapCodec;
-	METHOD <init> (Lnet/minecraft/class_5670;Ljava/lang/String;Lnet/minecraft/class_6880;)V
-		ARG 1 target
-		ARG 2 score
-	METHOD method_53443 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
-		ARG 0 instance

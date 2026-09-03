@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_1662 net/minecraft/loot/provider/intprovider/ConditionalLootIntProvider
+	FIELD field_1_10463 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_10464 MAP_CODEC Lcom/mojang/serialization/MapCodec;

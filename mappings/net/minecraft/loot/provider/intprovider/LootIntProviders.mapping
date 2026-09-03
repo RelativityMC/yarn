@@ -1,0 +1,61 @@
+CLASS net/minecraft/class_1_1667 net/minecraft/loot/provider/intprovider/LootIntProviders
+	FIELD field_1_10469 ENTRY_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_10496 ENTRY_LIST_CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_1_10386 sum ([Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 inputs
+	METHOD method_1_10387 average ([Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 inputs
+	METHOD method_1_10388 uniform (II)Lnet/minecraft/class_6880;
+		ARG 0 min
+		ARG 1 max
+	METHOD method_1_10389 binomial (IF)Lnet/minecraft/class_6880;
+		ARG 0 n
+		ARG 1 p
+	METHOD method_1_10390 bootstrap (Lnet/minecraft/class_7891;)V
+		ARG 0 registry
+	METHOD method_1_10391 compostable (Lnet/minecraft/class_7871;I)Lnet/minecraft/class_1_1666;
+		ARG 0 blocks
+		ARG 1 percentage
+	METHOD method_1_10392 cooking (Lnet/minecraft/class_7871;Lnet/minecraft/class_6880$class_6883;Lnet/minecraft/class_6880$class_6883;I)Lnet/minecraft/class_1_1666;
+		ARG 0 predicates
+		ARG 1 normalBurnTimeReductionFactor
+		ARG 2 fastBurnTimeReductionFactor
+		ARG 3 ticks
+	METHOD method_1_10393 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 path
+	METHOD method_1_10394 div (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 left
+		ARG 1 right
+	METHOD method_1_10395 constant (I)Lnet/minecraft/class_6880;
+		ARG 0 value
+	METHOD method_1_10396 floorDiv (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 left
+		ARG 1 Right
+	METHOD method_1_10397 floorMod (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 left
+		ARG 1 right
+	METHOD method_1_10398 fromFloat (Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 input
+	METHOD method_1_10399 score (Lnet/minecraft/class_47$class_50;Ljava/lang/String;)Lnet/minecraft/class_6880;
+		ARG 0 target
+		ARG 1 score
+	METHOD method_1_10401 (Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 mapCodec
+	METHOD method_1_10402 (Lnet/minecraft/class_1_1666;)Lcom/mojang/datafixers/util/Either;
+		ARG 0 provider
+	METHOD method_1_10403 max ([Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 inputs
+	METHOD method_1_10404 min ([Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 inputs
+	METHOD method_1_10405 mod (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 left
+		ARG 1 right
+	METHOD method_1_10406 product ([Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 inputs
+	METHOD method_1_10407 negate (Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 input
+	METHOD method_1_10408 sub (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)Lnet/minecraft/class_6880;
+		ARG 0 left
+		ARG 1 right
+	METHOD method_1_10409 weightedList (Lnet/minecraft/class_6012;)Lnet/minecraft/class_6880;
+		ARG 0 distribution

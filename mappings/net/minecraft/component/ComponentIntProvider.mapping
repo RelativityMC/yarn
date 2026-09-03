@@ -1,0 +1,26 @@
+CLASS net/minecraft/class_1_1653 net/minecraft/component/ComponentIntProvider
+	FIELD field_1_10453 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_10454 PACKET_CODEC Lnet/minecraft/class_9139;
+	METHOD method_1_10360 reference (Lnet/minecraft/class_5321;)Lnet/minecraft/class_1_1653;
+		ARG 0 key
+	METHOD method_1_10361 get (Lnet/minecraft/class_47;I)I
+		ARG 1 context
+		ARG 2 fallback
+	METHOD method_1_10362 get (Lnet/minecraft/class_1799;Lnet/minecraft/class_9331;Ljava/util/function/Function;Lnet/minecraft/class_47;I)I
+		ARG 0 stack
+		ARG 1 componentType
+		ARG 2 getter
+		ARG 3 context
+		ARG 4 fallback
+	METHOD method_1_10363 toEither (Lnet/minecraft/class_1_1653;)Lcom/mojang/datafixers/util/Either;
+		ARG 0 value
+	CLASS class_1_1654 Constant
+		FIELD field_1_10455 CODEC Lcom/mojang/serialization/Codec;
+		FIELD field_1_10456 PACKET_CODEC Lnet/minecraft/class_9139;
+	CLASS class_1_1655 Reference
+		FIELD field_1_10457 CODEC Lcom/mojang/serialization/Codec;
+		FIELD field_1_10458 PACKET_CODEC Lnet/minecraft/class_9139;
+		METHOD method_1_10364 getProvider (Lnet/minecraft/class_47;)Ljava/util/Optional;
+			ARG 1 context
+		METHOD method_1_10365 (Lnet/minecraft/class_47;Lnet/minecraft/class_1_1666;)Ljava/lang/Integer;
+			ARG 1 provider

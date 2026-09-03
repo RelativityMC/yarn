@@ -7,6 +7,8 @@ CLASS net/minecraft/class_323 net/minecraft/client/util/MonitorTracker
 		ARG 1 id
 	METHOD method_1_8578 onDisconnectMonitor (I)V
 		ARG 1 id
+	METHOD method_1_10239 onMonitorModeChanged (I)V
+		ARG 1 id
 	METHOD method_1680 getMonitor (I)Lnet/minecraft/class_313;
 		ARG 1 id
 	METHOD method_1681 getMonitor (Lnet/minecraft/class_1041;)Lnet/minecraft/class_313;

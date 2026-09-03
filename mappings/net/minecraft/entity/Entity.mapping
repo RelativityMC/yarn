@@ -305,6 +305,8 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 1 vec
 	METHOD method_1_9761 onSetNbt ()V
 		COMMENT Called when the entity’s NBT is modified through commands.
+	METHOD method_1_10226 shouldProcessProjectileDeflection (Z)Z
+		ARG 1 damageSucceeded
 	METHOD method_5622 onBlockCollision (Lnet/minecraft/class_2680;)V
 		COMMENT Called when this entity's collision box intersects {@code state}.
 		COMMENT

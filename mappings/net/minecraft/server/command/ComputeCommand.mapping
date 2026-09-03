@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_1_1489 net/minecraft/server/command/ComputeCommand
+	FIELD field_1_10371 NAMED_INVALID_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
+	FIELD field_1_10372 UNNAMED_INVALID_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	METHOD method_1_9927 execute (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_1_1493$class_1_1494;Lnet/minecraft/class_6880;F)I
 		ARG 0 context
 		ARG 1 target
@@ -14,6 +16,7 @@ CLASS net/minecraft/class_1_1489 net/minecraft/server/command/ComputeCommand
 		ARG 2 key
 	METHOD method_1_9935 (Lnet/minecraft/class_7157;Lnet/minecraft/class_1_1493$class_1_1494;Ljava/util/function/Consumer;)V
 		ARG 1 target
+		ARG 2 then
 	METHOD method_1_9936 (Lnet/minecraft/class_1_1493$class_1_1494;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 1 context
 	METHOD method_1_9937 (Lnet/minecraft/class_1_1493$class_1_1494;Lcom/mojang/brigadier/context/CommandContext;)I
@@ -32,3 +35,13 @@ CLASS net/minecraft/class_1_1489 net/minecraft/server/command/ComputeCommand
 	METHOD method_1_9941 register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/class_7157;)V
 		ARG 0 dispatcher
 		ARG 1 registryAccess
+	METHOD method_1_10249 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 name
+		ARG 1 message
+	METHOD method_1_10250 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 message
+	METHOD method_1_10251 (Ljava/lang/String;Lnet/minecraft/class_5321;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+		ARG 1 key
+	METHOD method_1_10253 invalidException (Lnet/minecraft/class_6880;Ljava/lang/String;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+		ARG 0 provider
+		ARG 1 message

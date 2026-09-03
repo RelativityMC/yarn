@@ -10,6 +10,11 @@ CLASS net/minecraft/class_5138 net/minecraft/world/gen/StructureAccessor
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_1_10240 getStructureAt (Lnet/minecraft/class_2338;Lnet/minecraft/class_6885;)Lnet/minecraft/class_3449;
+		ARG 1 pos
+		ARG 2 structures
+	METHOD method_1_10241 getStructureMatchPredicate (Ljava/util/function/Predicate;)Ljava/util/function/Predicate;
+		ARG 1 predicate
 	METHOD method_26973 addStructureReference (Lnet/minecraft/class_3195;JLnet/minecraft/class_2810;)V
 		ARG 1 structure
 		ARG 2 reference
@@ -74,6 +79,8 @@ CLASS net/minecraft/class_5138 net/minecraft/world/gen/StructureAccessor
 	METHOD method_41413 getStructureContaining (Lnet/minecraft/class_2338;Ljava/util/function/Predicate;)Lnet/minecraft/class_3449;
 		ARG 1 pos
 		ARG 2 predicate
+	METHOD method_41414 (Lnet/minecraft/class_2378;Ljava/util/function/Predicate;Lnet/minecraft/class_3195;)Z
+		ARG 2 structure
 	METHOD method_57559 (Lnet/minecraft/class_6862;Lnet/minecraft/class_6880;)Z
 		ARG 1 structure
 	METHOD method_57560 getStructureContaining (Lnet/minecraft/class_2338;Lnet/minecraft/class_6862;)Lnet/minecraft/class_3449;

@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_1668 net/minecraft/loot/provider/EnvironmentAttributeLootNumberProvider
+	METHOD method_1_10412 (Lcom/mojang/serialization/Codec;Lnet/minecraft/class_1_1668$class_1_1669;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 2 instance
+	METHOD method_1_10413 createCodec (Lcom/mojang/serialization/Codec;Lnet/minecraft/class_1_1668$class_1_1669;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 attributeCodec
+		ARG 1 factory
+	CLASS class_1_1669 Factory
+		METHOD method_1_10414 create (Lnet/minecraft/class_12197;)Lnet/minecraft/class_1_1668;
+			ARG 1 attribute

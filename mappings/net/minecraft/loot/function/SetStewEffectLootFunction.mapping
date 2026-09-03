@@ -14,6 +14,9 @@ CLASS net/minecraft/class_152 net/minecraft/loot/function/SetStewEffectLootFunct
 		ARG 0 instance
 	CLASS class_153 Builder
 		FIELD field_1123 map Lcom/google/common/collect/ImmutableList$Builder;
+		METHOD method_1_10344 withEffect (Lnet/minecraft/class_6880;I)Lnet/minecraft/class_152$class_153;
+			ARG 1 effect
+			ARG 2 duration
 		METHOD method_640 withEffect (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)Lnet/minecraft/class_152$class_153;
 			ARG 1 effect
 			ARG 2 duration

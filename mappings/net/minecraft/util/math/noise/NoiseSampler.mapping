@@ -8,6 +8,7 @@ CLASS net/minecraft/class_1_1397 net/minecraft/util/math/noise/NoiseSampler
 		COMMENT
 		COMMENT This can be more performant than calling {@link #sample(double, double, double)}
 		COMMENT repeatedly.
+		ARG 1 buf
 		ARG 2 region
 		ARG 3 scaleXz
 		ARG 5 scaleY

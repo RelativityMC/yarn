@@ -1,0 +1,9 @@
+unpick v4
+
+group int density_function_axes
+	@flags
+	net.minecraft.world.gen.densityfunction.DensityFunction.AXIS_X
+	net.minecraft.world.gen.densityfunction.DensityFunction.AXIS_Y
+	net.minecraft.world.gen.densityfunction.DensityFunction.AXIS_Z
+
+target_annotation net.minecraft.world.gen.densityfunction.DensityFunction$Axes density_function_axes

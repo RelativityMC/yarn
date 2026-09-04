@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_3215 net/minecraft/server/world/ServerChunkManager
 	FIELD field_13921 lightingProvider Lnet/minecraft/class_3227;
-	FIELD field_13928 lastTickTime J
 	FIELD field_13929 spawnMonsters Z
 	FIELD field_13945 world Lnet/minecraft/class_3218;
 	FIELD field_17252 levelManager Lnet/minecraft/class_3204;
@@ -102,9 +101,8 @@ CLASS net/minecraft/class_3215 net/minecraft/server/world/ServerChunkManager
 	METHOD method_46642 getStructurePlacementCalculator ()Lnet/minecraft/class_7869;
 	METHOD method_61264 broadcastUpdates (Lnet/minecraft/class_3695;)V
 		ARG 1 profiler
-	METHOD method_61265 tickChunks (Lnet/minecraft/class_3695;J)V
+	METHOD method_61265 tickChunks (Lnet/minecraft/class_3695;)V
 		ARG 1 profiler
-		ARG 2 timeDelta
 	METHOD method_65078 markForUpdate (Lnet/minecraft/class_3193;)V
 		ARG 1 chunkHolder
 	METHOD method_66008 addTicket (Lnet/minecraft/class_3228;Lnet/minecraft/class_1923;)V
@@ -121,11 +119,10 @@ CLASS net/minecraft/class_3215 net/minecraft/server/world/ServerChunkManager
 	METHOD method_66012 shutdown ()V
 	METHOD method_67501 (ILnet/minecraft/class_2818;)V
 		ARG 2 chunk
-	METHOD method_67502 tickSpawningChunk (Lnet/minecraft/class_2818;JLjava/util/List;Lnet/minecraft/class_1948$class_5262;)V
+	METHOD method_67502 tickSpawningChunk (Lnet/minecraft/class_2818;Ljava/util/List;Lnet/minecraft/class_1948$class_5262;)V
 		ARG 1 chunk
-		ARG 2 timeDelta
-		ARG 4 spawnableGroups
-		ARG 5 info
+		ARG 2 spawnableGroups
+		ARG 3 info
 	METHOD method_72267 addChunkLoadingTicket (Lnet/minecraft/class_3230;Lnet/minecraft/class_1923;I)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 ticketType
 		ARG 2 pos

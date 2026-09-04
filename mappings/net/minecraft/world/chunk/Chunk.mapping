@@ -101,8 +101,7 @@ CLASS net/minecraft/class_2791 net/minecraft/world/chunk/Chunk
 		ARG 1 type2
 	METHOD method_38261 (Lnet/minecraft/class_3195;)Lit/unimi/dsi/fastutil/longs/LongSet;
 		ARG 0 type2
-	METHOD method_38870 increaseInhabitedTime (J)V
-		ARG 1 timeDelta
+	METHOD method_38870 increaseInhabitedTime ()V
 	METHOD method_39295 hasHeightmap (Lnet/minecraft/class_2902$class_2903;)Z
 		ARG 1 type
 	METHOD method_39296 getTickSchedulers (J)Lnet/minecraft/class_2791$class_6745;

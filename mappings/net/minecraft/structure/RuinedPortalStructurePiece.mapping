@@ -21,8 +21,6 @@ CLASS net/minecraft/class_5189 net/minecraft/structure/RuinedPortalStructurePiec
 		ARG 2 y
 		ARG 3 verticalPlacement
 	METHOD method_27238 canFillNetherrack (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;)Z
-		ARG 1 world
-		ARG 2 pos
 	METHOD method_27239 createReplacementRule (Lnet/minecraft/class_2248;FLnet/minecraft/class_2248;)Lnet/minecraft/class_3821;
 		ARG 0 old
 		ARG 1 chance

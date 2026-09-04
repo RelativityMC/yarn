@@ -7,7 +7,7 @@ CLASS net/minecraft/class_1_31 net/minecraft/village/VillagerTrades
 	FIELD field_1_3709 SHEPHERD_4_EMERALD_BANNERS Lnet/minecraft/class_1_727;
 	FIELD field_1_3710 WANDERING_TRADER_EMERALD_DYES Lnet/minecraft/class_1_727;
 	METHOD method_1_530 randomDyesFunction ()Lnet/minecraft/class_117$class_118;
-	METHOD method_1_531 bootstrap (Lnet/minecraft/class_7891;)Lnet/minecraft/class_6880;
+	METHOD method_1_531 bootstrap (Lnet/minecraft/class_7891;)V
 		ARG 0 registries
 	METHOD method_1_532 randomDyesFunction (Lnet/minecraft/class_7871;Lnet/minecraft/class_1792;)Ljava/util/List;
 		ARG 0 itemRegistry

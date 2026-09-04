@@ -14,12 +14,12 @@ CLASS net/minecraft/class_1_1010 net/minecraft/client/gl/GlGpuBuffer
 		FIELD field_57839 closed Z
 		FIELD field_60010 mappedBuffer Ljava/nio/ByteBuffer;
 		FIELD field_60011 bufferManager Lnet/minecraft/class_10874;
-		METHOD <init> (Lnet/minecraft/class_10874;IJIZ)V
-			ARG 1 bufferManager
-			ARG 2 usage
-			ARG 3 size
-			ARG 5 glId
-			ARG 6 supportsPersistentMapping
+		METHOD <init> (Lnet/minecraft/class_11541;Lnet/minecraft/class_10874;IJIZ)V
+			ARG 2 bufferManager
+			ARG 3 usage
+			ARG 4 size
+			ARG 6 glId
+			ARG 7 supportsPersistentMapping
 		METHOD method_1_5401 decrementMapCount ()V
 		CLASS 1 1
 			FIELD field_1_6264 closed Z

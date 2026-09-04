@@ -86,7 +86,6 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	METHOD method_1_9762 readAsSdlSurface (Lnet/minecraft/class_7367;Ljava/util/List;)Lorg/lwjgl/sdl/SDL_Surface;
 		ARG 0 icon
 		ARG 1 imagesToCloseOut
-	METHOD method_1_10227 show ()V
 	METHOD method_1_10228 updateWindowMouseGrab ()V
 	METHOD method_4474 setPhase (Ljava/lang/String;)V
 		ARG 1 phase

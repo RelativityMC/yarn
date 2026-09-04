@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_1_63 net/minecraft/village/RebalancedVillagerTrades
-	METHOD method_1_704 bootstrap (Lnet/minecraft/class_7891;)Lnet/minecraft/class_6880;
+	METHOD method_1_704 bootstrap (Lnet/minecraft/class_7891;)V
 		ARG 0 registries
 	METHOD method_1_4622 level1EnchantedBookSale (Lnet/minecraft/class_7871;Lnet/minecraft/class_6885;Lnet/minecraft/class_6885;Lnet/minecraft/class_6885;)Lnet/minecraft/class_1_30;
 		ARG 0 items

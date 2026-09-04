@@ -111,6 +111,6 @@ CLASS net/minecraft/class_1_816 net/minecraft/client/render/WorldExtractor
 		ARG 1 frustum
 	METHOD method_1_9647 (Lnet/minecraft/class_2680;)Z
 		ARG 0 state
-	METHOD method_1_9648 (Lnet/minecraft/class_1937;Lnet/minecraft/class_238;[Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Lnet/minecraft/class_7928;
+	METHOD method_1_9648 (Lnet/minecraft/class_1937;Lnet/minecraft/class_238;Lorg/apache/commons/lang3/mutable/MutableObject;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Lnet/minecraft/class_7928;
 		ARG 3 pos
 		ARG 4 state

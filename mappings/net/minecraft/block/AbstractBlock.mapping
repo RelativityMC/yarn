@@ -936,7 +936,6 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 			ARG 1 state
 			ARG 2 world
 			ARG 3 pos
-			ARG 4 type
 		METHOD method_9618 breakInstantly ()Lnet/minecraft/class_4970$class_2251;
 			COMMENT Specifies that a block is broken instantly.
 		METHOD method_9624 dynamicBounds ()Lnet/minecraft/class_4970$class_2251;

@@ -1,12 +1,12 @@
 CLASS net/minecraft/class_11266 net/minecraft/client/gl/GpuBufferManager
-	METHOD method_71017 createBuffer (Lnet/minecraft/class_10874;IJ)Lnet/minecraft/class_1_1010;
-		ARG 1 bufferManager
-		ARG 2 usage
-		ARG 3 size
-	METHOD method_71018 createBuffer (Lnet/minecraft/class_10874;ILjava/nio/ByteBuffer;)Lnet/minecraft/class_1_1010;
-		ARG 1 bufferManager
-		ARG 2 usage
-		ARG 3 data
+	METHOD method_71017 createBuffer (Lnet/minecraft/class_11541;Lnet/minecraft/class_10874;IJ)Lnet/minecraft/class_1_1010;
+		ARG 2 bufferManager
+		ARG 3 usage
+		ARG 4 size
+	METHOD method_71018 createBuffer (Lnet/minecraft/class_11541;Lnet/minecraft/class_10874;ILjava/nio/ByteBuffer;)Lnet/minecraft/class_1_1010;
+		ARG 2 bufferManager
+		ARG 3 usage
+		ARG 4 data
 	METHOD method_71019 create (Lorg/lwjgl/opengl/GLCapabilities;Ljava/util/Set;Z)Lnet/minecraft/class_11266;
 		ARG 0 capabilities
 		ARG 1 usedCapabilities

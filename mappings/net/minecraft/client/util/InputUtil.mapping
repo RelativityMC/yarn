@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_3675 net/minecraft/client/util/InputUtil
 	FIELD field_1_8995 LOGGER Lorg/slf4j/Logger;
 	FIELD field_16237 UNKNOWN_KEY Lnet/minecraft/class_3675$class_306;
-	METHOD method_1_8574 enableRelativeMouseMode (Lnet/minecraft/class_1041;)V
+	METHOD method_1_8574 enableRelativeMouseMode (Lnet/minecraft/class_1041;DD)V
 		ARG 0 window
 	METHOD method_1_8575 disableRelativeMouseMode (Lnet/minecraft/class_1041;DD)V
 		ARG 0 window

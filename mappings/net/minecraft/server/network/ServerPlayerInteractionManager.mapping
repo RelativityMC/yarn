@@ -43,9 +43,7 @@ CLASS net/minecraft/class_3225 net/minecraft/server/network/ServerPlayerInteract
 	METHOD method_14267 isSurvivalLike ()Z
 	METHOD method_14268 isCreative ()Z
 	METHOD method_21716 continueMining (Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;I)F
-		ARG 1 state
 		ARG 2 pos
-		ARG 3 failedStartMiningTime
 	METHOD method_21717 finishMining (Lnet/minecraft/class_2338;ILjava/lang/String;)V
 		ARG 1 pos
 		ARG 2 sequence

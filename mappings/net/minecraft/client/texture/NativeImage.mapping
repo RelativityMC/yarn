@@ -11,16 +11,16 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 		ARG 1 width
 		ARG 2 height
 		ARG 3 useStb
-	METHOD <init> (Lnet/minecraft/class_1011$class_1012;IIJ)V
-		ARG 1 format
-		ARG 2 width
-		ARG 3 height
-		ARG 4 pointer
 	METHOD <init> (Lnet/minecraft/class_1011$class_1012;IIZ)V
 		ARG 1 format
 		ARG 2 width
 		ARG 3 height
 		ARG 4 useStb
+	METHOD <init> (Lnet/minecraft/class_1011$class_1012;IIZJ)V
+		ARG 1 format
+		ARG 2 width
+		ARG 3 height
+		ARG 5 pointer
 	METHOD method_1_415 isClosed ()Z
 	METHOD method_1_2144 getTransparency ()Lnet/minecraft/class_1_303;
 	METHOD method_1_2145 getRegionTransparency (IIII)Lnet/minecraft/class_1_303;
@@ -30,9 +30,6 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 		ARG 4 bottom
 	METHOD method_1_6357 getImageData ()Ljava/nio/ByteBuffer;
 		COMMENT {@return a {@link ByteBuffer} owned by this {@link NativeImage}}
-	METHOD method_1_10231 reportSpngResult (Ljava/lang/String;I)V
-		ARG 0 operation
-		ARG 1 result
 	METHOD method_4300 resizeSubRectTo (IIIILnet/minecraft/class_1011;)V
 		ARG 1 x
 		ARG 2 y
@@ -128,7 +125,6 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 		ARG 1 bytes
 	METHOD method_67769 imageId ()J
 	CLASS class_1012 Format
-		FIELD field_1_10358 pngColorType I
 		FIELD field_4994 channelCount I
 		FIELD field_4997 RGBA Lnet/minecraft/class_1011$class_1012;
 			COMMENT The format stores RGBA in little endian order, so it's ABGR from the biggest to
@@ -149,7 +145,7 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 		FIELD field_5008 blueOffset I
 		FIELD field_5009 greenOffset I
 		FIELD field_5010 redOffset I
-		METHOD <init> (Ljava/lang/String;IIZZZZZIIIIII)V
+		METHOD <init> (Ljava/lang/String;IIZZZZZIIIII)V
 			ARG 3 channelCount
 			ARG 4 hasRed
 			ARG 5 hasGreen
@@ -161,7 +157,6 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 			ARG 11 blueOffset
 			ARG 12 luminanceOffset
 			ARG 13 alphaOffset
-			ARG 14 pngColorType
 		METHOD method_4329 hasAlpha ()Z
 		METHOD method_4330 getOpacityChannelOffset ()I
 			COMMENT @apiNote For luminance-alpha format, this would return the luminance offset
@@ -184,19 +179,8 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 		METHOD method_35640 getGreenChannelOffset ()I
 		METHOD method_35641 getBlueChannelOffset ()I
 	CLASS class_1014 WriteCallback
-		FIELD field_1_10359 SPNG_RW_FN_SIGNATURE Ljava/lang/foreign/FunctionDescriptor;
-		FIELD field_1_10360 HANDLE Ljava/lang/invoke/MethodHandle;
-		FIELD field_1_10361 LINKER Ljava/lang/foreign/Linker;
 		FIELD field_5018 channel Ljava/nio/channels/WritableByteChannel;
 		FIELD field_5019 exception Ljava/io/IOException;
 		METHOD <init> (Ljava/nio/channels/WritableByteChannel;)V
 			ARG 1 channel
-		METHOD method_1_10232 createUpcallStub (Ljava/lang/foreign/Arena;)Ljava/lang/foreign/MemorySegment;
-			ARG 1 arena
-		METHOD method_1_10233 createHandleToInvoke ()Ljava/lang/invoke/MethodHandle;
-		METHOD method_1_10234 invoke (Ljava/lang/foreign/MemorySegment;Ljava/lang/foreign/MemorySegment;Ljava/lang/foreign/MemorySegment;J)I
-			ARG 1 ctx
-			ARG 2 user
-			ARG 3 dest
-			ARG 4 length
 		METHOD method_4342 throwStoredException ()V

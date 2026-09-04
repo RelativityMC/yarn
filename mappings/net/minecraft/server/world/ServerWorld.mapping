@@ -143,24 +143,6 @@ CLASS net/minecraft/class_3218 net/minecraft/server/world/ServerWorld
 	METHOD method_14192 processSyncedBlockEvents ()V
 	METHOD method_14195 resetWeather ()V
 	METHOD method_14197 resetIdleTimeout ()V
-	METHOD method_14199 spawnParticles (Lnet/minecraft/class_2394;ZZDDDIDDDD)I
-		COMMENT Spawns a particle visible to nearby players.
-		COMMENT
-		COMMENT @return the number of players the particle packet was sent to
-		COMMENT
-		COMMENT @implNote If {@code count} is {@code 0}, a single particle will be spawned with its
-		COMMENT velocity being {@code deltaX},{@code deltaY},{@code deltaZ} multiplied by {@code speed}.
-		ARG 1 parameters
-		ARG 2 force
-		ARG 3 important
-		ARG 4 x
-		ARG 6 y
-		ARG 8 z
-		ARG 10 count
-		ARG 11 offsetX
-		ARG 13 offsetY
-		ARG 15 offsetZ
-		ARG 17 speed
 	METHOD method_17889 increaseAndGetMapId ()Lnet/minecraft/class_9209;
 	METHOD method_17890 putMapState (Lnet/minecraft/class_9209;Lnet/minecraft/class_22;)V
 		ARG 1 id

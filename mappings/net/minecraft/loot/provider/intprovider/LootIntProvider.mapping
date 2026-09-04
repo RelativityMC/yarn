@@ -8,5 +8,3 @@ CLASS net/minecraft/class_1_1666 net/minecraft/loot/provider/intprovider/LootInt
 		ARG 1 context
 	METHOD method_1_10384 longToInt (J)I
 		ARG 0 n
-	METHOD method_1_10385 assertFinite (F)F
-		ARG 0 x

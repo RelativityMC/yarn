@@ -185,9 +185,6 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 		ARG 9 maxX
 		ARG 11 maxY
 		ARG 13 maxZ
-	METHOD method_74254 spawnBlockBreakingParticle (Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;)V
-		ARG 1 pos
-		ARG 2 direction
 	METHOD method_74918 getParticlesMode (Z)Lnet/minecraft/class_4066;
 		ARG 1 canSpawnOnMinimal
 	METHOD method_74919 addParticle (Lnet/minecraft/class_2394;ZZDDDDDD)V

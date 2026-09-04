@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_1_26 net/minecraft/village/TradeSets
-	METHOD method_1_470 bootstrap (Lnet/minecraft/class_7891;)Lnet/minecraft/class_6880;
+	METHOD method_1_470 bootstrap (Lnet/minecraft/class_7891;)V
 		ARG 0 registries
 	METHOD method_1_471 register (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_6862;)Lnet/minecraft/class_6880$class_6883;
 		ARG 0 registries

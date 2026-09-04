@@ -1,16 +1,15 @@
 CLASS net/minecraft/class_2675 net/minecraft/network/packet/s2c/play/ParticleS2CPacket
-	FIELD field_12251 offsetZ F
-	FIELD field_12252 offsetY F
-	FIELD field_12253 count I
-	FIELD field_12254 forceSpawn Z
-	FIELD field_12255 offsetX F
-	FIELD field_12256 z D
-	FIELD field_12257 y D
-	FIELD field_12258 x D
-	FIELD field_12259 parameters Lnet/minecraft/class_2394;
-	FIELD field_12260 speed F
+	FIELD comp_1_1852 important Z
+	FIELD comp_1_1853 count I
+	FIELD comp_1_1854 forceSpawn Z
+	FIELD comp_1_1855 parameters Lnet/minecraft/class_2394;
+	FIELD comp_1_1857 x D
+	FIELD comp_1_1858 offsetX F
+	FIELD comp_1_1860 y D
+	FIELD comp_1_1861 offsetY F
+	FIELD comp_1_1863 z D
+	FIELD comp_1_1864 offsetZ F
 	FIELD field_47935 CODEC Lnet/minecraft/class_9139;
-	FIELD field_54980 important Z
 	METHOD <init> (Lnet/minecraft/class_2394;ZZDDDFFFFI)V
 		ARG 1 parameters
 		ARG 2 forceSpawn
@@ -23,18 +22,13 @@ CLASS net/minecraft/class_2675 net/minecraft/network/packet/s2c/play/ParticleS2C
 		ARG 12 offsetZ
 		ARG 13 speed
 		ARG 14 count
-	METHOD <init> (Lnet/minecraft/class_9129;)V
-		ARG 1 buf
-	METHOD method_11543 getSpeed ()F
-	METHOD method_11544 getX ()D
-	METHOD method_11545 getCount ()I
-	METHOD method_11546 getZ ()D
-	METHOD method_11547 getY ()D
-	METHOD method_11548 getOffsetX ()F
-	METHOD method_11549 getOffsetY ()F
-	METHOD method_11550 getOffsetZ ()F
-	METHOD method_11551 getParameters ()Lnet/minecraft/class_2394;
-	METHOD method_11552 shouldForceSpawn ()Z
-	METHOD method_55885 write (Lnet/minecraft/class_9129;)V
-		ARG 1 buf
-	METHOD method_65082 isImportant ()Z
+	METHOD comp_1_1852 important ()Z
+	METHOD comp_1_1853 count ()I
+	METHOD comp_1_1854 forceSpawn ()Z
+	METHOD comp_1_1855 parameters ()Lnet/minecraft/class_2394;
+	METHOD comp_1_1857 x ()D
+	METHOD comp_1_1858 offsetX ()F
+	METHOD comp_1_1860 y ()D
+	METHOD comp_1_1861 offsetY ()F
+	METHOD comp_1_1863 z ()D
+	METHOD comp_1_1864 offsetZ ()F

@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_3225 net/minecraft/server/network/ServerPlayerInteractionManager
+	FIELD field_1_10522 miningDir Lnet/minecraft/class_2350;
 	FIELD field_14000 tickCounter I
 	FIELD field_14003 mining Z
 	FIELD field_14005 gameMode Lnet/minecraft/class_1934;
@@ -14,6 +15,8 @@ CLASS net/minecraft/class_3225 net/minecraft/server/network/ServerPlayerInteract
 	FIELD field_25715 previousGameMode Lnet/minecraft/class_1934;
 	METHOD <init> (Lnet/minecraft/class_3222;)V
 		ARG 1 player
+	METHOD method_1_9967 (Lnet/minecraft/class_1799;)V
+		ARG 1 digger
 	METHOD method_14256 interactItem (Lnet/minecraft/class_3222;Lnet/minecraft/class_1937;Lnet/minecraft/class_1799;Lnet/minecraft/class_1268;)Lnet/minecraft/class_1269;
 		ARG 1 player
 		ARG 2 world
@@ -43,7 +46,9 @@ CLASS net/minecraft/class_3225 net/minecraft/server/network/ServerPlayerInteract
 	METHOD method_14267 isSurvivalLike ()Z
 	METHOD method_14268 isCreative ()Z
 	METHOD method_21716 continueMining (Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;I)F
+		ARG 1 state
 		ARG 2 pos
+		ARG 3 failedStartMiningTime
 	METHOD method_21717 finishMining (Lnet/minecraft/class_2338;ILjava/lang/String;)V
 		ARG 1 pos
 		ARG 2 sequence

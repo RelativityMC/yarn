@@ -15,12 +15,16 @@ CLASS net/minecraft/class_5189 net/minecraft/structure/RuinedPortalStructurePiec
 		ARG 8 rotation
 		ARG 9 mirror
 		ARG 10 placementPos
+	METHOD method_1_10480 canFillNetherrack (Lnet/minecraft/class_2680;)Z
+		ARG 1 state
 	METHOD method_27237 getBaseHeight (Lnet/minecraft/class_1936;IILnet/minecraft/class_5189$class_5191;)I
 		ARG 0 world
 		ARG 1 x
 		ARG 2 y
 		ARG 3 verticalPlacement
 	METHOD method_27238 canFillNetherrack (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;)Z
+		ARG 1 world
+		ARG 2 pos
 	METHOD method_27239 createReplacementRule (Lnet/minecraft/class_2248;FLnet/minecraft/class_2248;)Lnet/minecraft/class_3821;
 		ARG 0 old
 		ARG 1 chance

@@ -22,6 +22,7 @@ CLASS net/minecraft/class_1728 net/minecraft/screen/MerchantScreenHandler
 		ARG 1 syncId
 		ARG 2 playerInventory
 		ARG 3 merchant
+	METHOD method_1_10465 updateOffers ()V
 	METHOD method_7650 setRecipeIndex (I)V
 		ARG 1 index
 	METHOD method_17437 setOffers (Lnet/minecraft/class_1916;)V

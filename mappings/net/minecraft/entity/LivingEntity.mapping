@@ -154,6 +154,14 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 5 z
 		ARG 7 particleEffects
 		ARG 8 cannotTeleportTo
+	METHOD method_1_9873 floatInFluid (Lnet/minecraft/class_6862;)V
+		ARG 1 fluids
+	METHOD method_1_9874 isDeepEnoughToSwim (DLnet/minecraft/class_6862;)Z
+		ARG 1 swimHeight
+		ARG 3 fluids
+	METHOD method_1_10464 sendEquipmentChanges (Lnet/minecraft/class_3218;Ljava/util/List;)V
+		ARG 1 world
+		ARG 2 equipmentChanges
 	METHOD method_5673 setEquipment (Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;)V
 		ARG 1 slot
 		ARG 2 stack
@@ -493,6 +501,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 state
 	METHOD method_18868 getBrain ()Lnet/minecraft/class_4095;
 	METHOD method_20235 sendEquipmentBreakStatus (Lnet/minecraft/class_1799;Lnet/minecraft/class_1304;)V
+		ARG 1 stack
 		ARG 2 slot
 	METHOD method_20237 getEquipmentBreakStatus (Lnet/minecraft/class_1304;)B
 		ARG 0 slot

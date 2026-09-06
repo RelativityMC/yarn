@@ -64,6 +64,82 @@ CLASS net/minecraft/class_3218 net/minecraft/server/world/ServerWorld
 		ARG 3 radius
 		ARG 4 skipReferencedStructures
 	METHOD method_1_9570 getBiomeSupplier ()Lnet/minecraft/class_6780;
+	METHOD method_1_10456 spawnParticles (Lnet/minecraft/class_2394;DDDIDDDDDD)I
+		ARG 1 parameters
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 count
+		ARG 9 offsetX
+		ARG 11 offsetY
+		ARG 13 offsetZ
+		ARG 15 xMaxSpeed
+		ARG 17 yMaxSpeed
+		ARG 19 zMaxSpeed
+	METHOD method_1_10457 spawnParticles (Lnet/minecraft/class_2394;DDDIDDDDDDLnet/minecraft/class_2675$class_1_1674;)I
+		ARG 1 parameters
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 count
+		ARG 9 offsetX
+		ARG 11 offsetY
+		ARG 13 offsetZ
+		ARG 15 xMaxSpeed
+		ARG 17 yMaxSpeed
+		ARG 19 zMaxSpeed
+		ARG 21 randomizationType
+	METHOD method_1_10458 spawnParticles (Lnet/minecraft/class_2394;DDDIDDDDLnet/minecraft/class_2675$class_1_1674;)I
+		ARG 1 parameters
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 count
+		ARG 9 offsetX
+		ARG 11 offsetY
+		ARG 13 offsetZ
+		ARG 15 maxSpeed
+		ARG 17 randomizationType
+	METHOD method_1_10459 spawnParticles (Lnet/minecraft/class_2394;ZZDDDIDDDD)I
+		ARG 1 parameters
+		ARG 2 forceSpawn
+		ARG 3 important
+		ARG 4 x
+		ARG 6 y
+		ARG 8 z
+		ARG 10 count
+		ARG 11 offsetX
+		ARG 13 offsetY
+		ARG 15 offsetZ
+		ARG 17 maxSpeed
+	METHOD method_1_10460 spawnParticles (Lnet/minecraft/class_2394;ZZDDDIDDDDDDLnet/minecraft/class_2675$class_1_1674;)I
+		ARG 1 parameters
+		ARG 2 forceSpawn
+		ARG 3 important
+		ARG 4 x
+		ARG 6 y
+		ARG 8 z
+		ARG 10 count
+		ARG 11 offsetX
+		ARG 13 offsetY
+		ARG 15 offsetZ
+		ARG 17 xMaxSpeed
+		ARG 19 yMaxSpeed
+		ARG 21 zMaxSpeed
+		ARG 23 randomizationType
+	METHOD method_1_10461 spawnParticles (Lnet/minecraft/class_2394;ZZDDDIDDDDLnet/minecraft/class_2675$class_1_1674;)I
+		ARG 1 parameters
+		ARG 2 forceSpawn
+		ARG 3 important
+		ARG 4 x
+		ARG 6 y
+		ARG 8 z
+		ARG 10 count
+		ARG 11 offsetX
+		ARG 13 offsetY
+		ARG 15 offsetZ
+		ARG 17 maxSpeed
+		ARG 19 randomizationType
 	METHOD method_8448 updateSleepingPlayers ()V
 	METHOD method_8487 locateStructure (Lnet/minecraft/class_6862;Lnet/minecraft/class_2338;IZ)Lnet/minecraft/class_2338;
 		COMMENT Tries to find the closest structure of a given type near a given block.

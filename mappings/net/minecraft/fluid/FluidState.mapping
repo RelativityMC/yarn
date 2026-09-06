@@ -7,6 +7,9 @@ CLASS net/minecraft/class_3610 net/minecraft/fluid/FluidState
 		ARG 2 properties
 		ARG 3 values
 	METHOD method_1_996 isFull ()Z
+	METHOD method_1_10469 getSubmersionHeight (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)F
+		ARG 1 world
+		ARG 2 pos
 	METHOD method_15756 canFlowTo (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z
 		ARG 1 world
 		ARG 2 pos

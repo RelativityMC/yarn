@@ -10,15 +10,46 @@ CLASS net/minecraft/class_6088 net/minecraft/world/WorldEvents
 	COMMENT {@link net.minecraft.client.world.ClientWorld#syncGlobalEvent(int, net.minecraft.util.math.BlockPos, int) ClientWorld#syncGlobalEvent} (for regular and global events respectively), and
 	COMMENT finally processed by {@link net.minecraft.client.world.WorldEventHandler#processWorldEvent(int, net.minecraft.util.math.BlockPos, int) WorldRenderer#processWorldEvent} and
 	COMMENT {@link net.minecraft.client.world.WorldEventHandler#processGlobalEvent(int, net.minecraft.util.math.BlockPos, int) WorldRenderer#processGlobalEvent} (for regular and global events respectively).
-	FIELD field_1_8340 BLOCK_BREAK I
-		COMMENT A block is broken.
-		COMMENT <br>Spawns block breaking particles.
+	FIELD field_1_6062 SULFUR_SPIKE_LANDS I
+		COMMENT A sulfur spike lands after falling.
+		COMMENT <br>Plays the sulfurSpike landing sound event.
+		COMMENT <p>Called by {@link net.minecraft.block.SpeleothemBlock#onDestroyedOnLanding(net.minecraft.world.World, net.minecraft.util.math.BlockPos, net.minecraft.entity.FallingBlockEntity) PointedDripstoneBlock#onDestroyedOnLanding}
+	FIELD field_1_8340 STRAW_BED_BROKEN I
+		COMMENT A straw bed is broken.
+		COMMENT <br>Spawns block breaking particles but does not play a sound.
 		COMMENT <p>The network ID of the block state must be supplied as extra data.
-		COMMENT <p>Called by {@link net.minecraft.block.Block#spawnBreakParticles}
-	FIELD field_1_9014 DRAGON_EGG_TELEPORT I
-	FIELD field_1_10151 CHORUS_FRUIT_TELEPORT I
-	FIELD field_1_10152 ENDERMAN_TELEPORT I
-	FIELD field_1_10153 SHULKER_TELEPORT I
+		COMMENT <p>Called by {@link net.minecraft.block.StrawBedBlock#spawnBreakParticles}
+	FIELD field_1_8341 INSTANT_SPLASH_POTION_BREAKS I
+		COMMENT An instant splash potion is splashed.
+		COMMENT <br>Plays the splash potion breaking sound event.
+		COMMENT <p>For non-instant effects, use {@link #SPLASH_POTION_BREAKS}.
+		COMMENT <p>Called by {@link net.minecraft.entity.projectile.thrown.PotionEntity#onCollision(net.minecraft.util.hit.HitResult) PotionEntity#onCollision}
+	FIELD field_1_8342 SPLASH_POTION_BREAKS I
+		COMMENT A non-instant splash potion is splashed.
+		COMMENT <br>Plays the splash potion breaking sound event.
+		COMMENT <p>For instant effects such as Instant Health and Instant Damage, use {@link #INSTANT_SPLASH_POTION_BREAKS}.
+		COMMENT <p>Called by {@link net.minecraft.entity.projectile.thrown.ExperienceBottleEntity#onCollision(net.minecraft.util.hit.HitResult) ExperienceBottleEntity#onCollision},
+		COMMENT and {@link net.minecraft.entity.projectile.thrown.PotionEntity#onCollision(net.minecraft.util.hit.HitResult) PotionEntity#onCollision}
+	FIELD field_1_9014 DRAGON_EGG_TELEPORTS I
+	FIELD field_1_10151 CHORUS_FRUIT_TELEPORTS I
+	FIELD field_1_10152 ENDERMAN_TELEPORTS I
+		COMMENT An enderman teleports.
+		COMMENT <br>Spawns trail particles.
+		COMMENT <p>Called by {@link net.minecraft.entity.mob.EndermanEntity#teleportTo(double, double, double)}.
+	FIELD field_1_10153 SHULKER_TELEPORTS I
+		COMMENT A shulker teleports.
+		COMMENT <br>Spawns trail particles.
+		COMMENT <p>Called by {@link net.minecraft.entity.mob.ShulkerEntity#tryTeleport()}.
+	FIELD field_1_10518 BLOCK_HIT_LOUD I
+		COMMENT A block is being broken.
+		COMMENT <br>Spawns a block breaking particle and plays a sound.
+		COMMENT <p>The face of the block (using {@link Direction#ordinal()}) must be supplied as extra data.
+		COMMENT <p>Called by {@link net.minecraft.server.network.ServerPlayerInteractionManager#update}.
+	FIELD field_1_10519 BLOCK_HIT I
+		COMMENT A block is being broken.
+		COMMENT <br>Spawns a block breaking particle.
+		COMMENT <p>The face of the block (using {@link Direction#ordinal()}) must be supplied as extra data.
+		COMMENT <p>Called by {@link net.minecraft.server.network.ServerPlayerInteractionManager#update}.
 	FIELD field_31114 ZOMBIE_INFECTS_VILLAGER I
 		COMMENT A zombie infects a villager.
 		COMMENT <br>Plays the zombie infect villager sound event.
@@ -93,7 +124,7 @@ CLASS net/minecraft/class_6088 net/minecraft/world/WorldEvents
 	FIELD field_31133 POINTED_DRIPSTONE_LANDS I
 		COMMENT A pointed dripstone lands after falling.
 		COMMENT <br>Plays the pointed dripstone landing sound event.
-		COMMENT <p>Called by {@link net.minecraft.block.PointedDripstoneBlock#onDestroyedOnLanding(net.minecraft.world.World, net.minecraft.util.math.BlockPos, net.minecraft.entity.FallingBlockEntity) PointedDripstoneBlock#onDestroyedOnLanding}
+		COMMENT <p>Called by {@link net.minecraft.block.SpeleothemBlock#onDestroyedOnLanding(net.minecraft.world.World, net.minecraft.util.math.BlockPos, net.minecraft.entity.FallingBlockEntity) PointedDripstoneBlock#onDestroyedOnLanding}
 	FIELD field_31134 POINTED_DRIPSTONE_DRIPS_LAVA_INTO_CAULDRON I
 		COMMENT A pointed dripstone drips lava into a cauldron.
 		COMMENT <br>Plays the pointed dripstone dripping lava into cauldron sound event.
@@ -182,7 +213,7 @@ CLASS net/minecraft/class_6088 net/minecraft/world/WorldEvents
 		COMMENT <p>Called by {@link net.minecraft.entity.projectile.DragonFireballEntity#onCollision(net.minecraft.util.hit.HitResult) DragonFireballEntity#onCollision}
 	FIELD field_31150 INSTANT_SPLASH_POTION_SPLASHED I
 		COMMENT An instant splash potion is splashed.
-		COMMENT <br>Plays the splash potion breaking sound event and spawns instant splash potion particles.
+		COMMENT <br>Spawns instant splash potion particles.
 		COMMENT <p>The hex color of the potion must be supplied as extra data.
 		COMMENT <p>For non-instant effects, use {@link #SPLASH_POTION_SPLASHED}.
 		COMMENT <p>Called by {@link net.minecraft.entity.projectile.thrown.PotionEntity#onCollision(net.minecraft.util.hit.HitResult) PotionEntity#onCollision}
@@ -399,4 +430,8 @@ CLASS net/minecraft/class_6088 net/minecraft/world/WorldEvents
 		COMMENT <br>Spawns dust pillar particles.
 		COMMENT <p>The amount of particles to spawn must be supplied as extra data.
 		COMMENT <p>Called by {@link net.minecraft.item.MaceItem#knockbackNearbyEntities}
+	FIELD field_51787 DISPENSER_LAUNCHES_WIND_CHARGE I
+		COMMENT A dispenser launches a wind charge.
+		COMMENT <br>Plays the wind charge throw sound event.
+		COMMENT <p>Set by {@link net.minecraft.item.WindChargeItem getProjectileSettings()}.
 	CLASS class_1_1310 Event

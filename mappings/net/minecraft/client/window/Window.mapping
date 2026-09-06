@@ -5,6 +5,7 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	FIELD field_1_8785 MIN_WIDTH I
 	FIELD field_1_8786 closeCallback Ljava/lang/Runnable;
 	FIELD field_1_9531 enableQuitShortcuts Z
+	FIELD field_1_10515 borderlessFullscreen Z
 	FIELD field_5174 windowedWidth I
 	FIELD field_5175 windowedX I
 	FIELD field_5176 eventHandler Lnet/minecraft/class_3678;
@@ -51,7 +52,7 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 		ARG 0 value
 		ARG 1 minimum
 	METHOD method_1_3138 isFocused ()Z
-	METHOD method_1_8436 setBorderlessFullscreen ()Z
+	METHOD method_1_8436 setBorderlessFullscreenMode ()Z
 	METHOD method_1_8437 setFullscreen ()Z
 	METHOD method_1_8438 setExclusiveFullscreen ()Z
 	METHOD method_1_8439 setWindowed ()Z
@@ -87,6 +88,16 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 		ARG 0 icon
 		ARG 1 imagesToCloseOut
 	METHOD method_1_10228 updateWindowMouseGrab ()V
+	METHOD method_1_10450 setBorderlessFullscreen ()Z
+	METHOD method_1_10451 setBorderlessFullscreenSdl ()Z
+	METHOD method_1_10452 getReservedWidth ()I
+	METHOD method_1_10453 setWindowBordered ()V
+	METHOD method_1_10454 setWindowGeometry (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+	METHOD method_1_10455 isFullscreenBorderless ()Z
 	METHOD method_4474 setPhase (Ljava/lang/String;)V
 		ARG 1 phase
 	METHOD method_4475 applyFullscreenVideoMode ()V

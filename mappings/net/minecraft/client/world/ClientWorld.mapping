@@ -48,6 +48,17 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 	METHOD method_1_4875 removeBlockBreakingInfo (Lnet/minecraft/class_3191;)V
 		ARG 1 info
 	METHOD method_1_4876 addRainEffects ()V
+	METHOD method_1_10466 onBlockHit (Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;Z)V
+		ARG 1 pos
+		ARG 2 direction
+		ARG 3 playSound
+	METHOD method_1_10467 addBlockHitParticle (Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;Lnet/minecraft/class_2680;)V
+		ARG 1 pos
+		ARG 2 direction
+		ARG 3 state
+	METHOD method_1_10468 playBlockHitSound (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
+		ARG 1 pos
+		ARG 2 state
 	METHOD method_2932 addParticle (DDDDDLnet/minecraft/class_2394;)V
 		ARG 1 minX
 		ARG 3 maxX

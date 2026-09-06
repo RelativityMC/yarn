@@ -4,5 +4,7 @@ CLASS net/minecraft/class_5658 net/minecraft/loot/provider/floatprovider/LootFlo
 		ARG 1 context
 	METHOD method_1_10411 fromInt (I)F
 		ARG 0 n
+	METHOD method_1_10481 nextFiniteFloat (Lnet/minecraft/class_47;)F
+		ARG 1 context
 	METHOD method_32454 nextFloat (Lnet/minecraft/class_47;)F
 		ARG 1 context

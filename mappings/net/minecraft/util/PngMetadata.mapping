@@ -3,6 +3,15 @@ CLASS net/minecraft/class_8800 net/minecraft/util/PngMetadata
 	FIELD field_46202 IHDR_CHUNK_TYPE I
 	FIELD field_46203 IHDR_CHUNK_LENGTH I
 	FIELD field_55543 HEX_FORMAT Ljava/util/HexFormat;
+	METHOD method_1_10447 isValidBitDepth (I)Z
+		ARG 0 bitDepth
+	METHOD method_1_10448 isSizeInBounds (IIBB)Z
+		ARG 0 width
+		ARG 1 height
+		ARG 2 bitDepth
+		ARG 3 colorType
+	METHOD method_1_10449 isValidColorType (I)Z
+		ARG 0 colorType
 	METHOD method_53877 fromStream (Ljava/io/InputStream;)Lnet/minecraft/class_8800;
 		ARG 0 stream
 	METHOD method_53878 fromBytes ([B)Lnet/minecraft/class_8800;

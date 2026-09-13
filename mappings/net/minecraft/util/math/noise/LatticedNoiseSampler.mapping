@@ -5,6 +5,7 @@ CLASS net/minecraft/class_1_1412 net/minecraft/util/math/noise/LatticedNoiseSamp
 	FIELD field_1_9667 originY D
 	FIELD field_1_9668 originZ D
 	FIELD field_1_9669 permutation [B
+	FIELD field_1_10394 MAX_SAFE_ABS_COORDINATE D
 	METHOD <init> (Lnet/minecraft/class_5819;)V
 		ARG 1 random
 	METHOD <init> (Lnet/minecraft/class_5819;D)V

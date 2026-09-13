@@ -2,7 +2,9 @@ CLASS net/minecraft/class_3673 net/minecraft/client/util/SdlUtil
 	FIELD field_1_10532 LOGGER Lorg/slf4j/Logger;
 	METHOD method_1_10482 openPath (Ljava/nio/file/Path;)V
 		ARG 0 path
-	METHOD method_1_10483 openUri (Ljava/net/URI;)V
+	METHOD method_1_10483 (Ljava/net/URI;)V
+		ARG 0 uri
+	METHOD method_1_10506 openUri (Ljava/net/URI;)V
 		ARG 0 uri
 	METHOD method_15973 makeJvmCrash ()V
 	METHOD method_15974 getTime ()D

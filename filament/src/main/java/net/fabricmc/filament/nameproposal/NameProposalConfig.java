@@ -48,18 +48,24 @@ public record NameProposalConfig(FieldNameProvider fieldNameProvider) {
 	);
 
 	public static final NameProposalConfig DEFAULT = new NameProposalConfig(new SequenceFieldNameProvider(List.of(
-			new ConditionalFieldNameProvider(
-					StringArgumentFieldNameProvider.INSTANCE,
-					List.of(
-							new StaticFieldPredicate(true),
-							InternalInitFieldPredicate.INSTANCE
-					)
+			new ModifyingFieldNameProvider(
+					new ConditionalFieldNameProvider(
+							StringArgumentFieldNameProvider.INSTANCE,
+							List.of(
+									new StaticFieldPredicate(true),
+									InternalInitFieldPredicate.INSTANCE
+							)
+					),
+					(name, field) -> switch (field.methodName()) {
+					case "method_74453" -> "DEBUG_" + name;
+					default -> name;
+					}
 			),
 			new ModifyingFieldNameProvider(new ConditionalFieldNameProvider(
 					new RecursiveArgumentFieldNameProvider(TRUSTED_ID_OWNERS::contains),
 					List.of(
 							new StaticFieldPredicate(true),
-						InternalInitFieldPredicate.INSTANCE
+							InternalInitFieldPredicate.INSTANCE
 					)
 			), (name, field) -> switch (field.methodName()) {
 			case "method_1_4731" -> name + "_SMITHING_TEMPLATE";

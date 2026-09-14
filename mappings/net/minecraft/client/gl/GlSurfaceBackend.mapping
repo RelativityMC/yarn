@@ -4,6 +4,6 @@ CLASS net/minecraft/class_1_661 net/minecraft/client/gl/GlSurfaceBackend
 	FIELD field_1_7138 height I
 	FIELD field_1_7139 width I
 	FIELD field_1_10173 minimized Ljava/util/function/BooleanSupplier;
-	METHOD <init> (JLjava/util/function/BooleanSupplier;)V
-		ARG 1 window
-		ARG 3 minimized
+	METHOD <init> (Lnet/minecraft/class_10865;JLjava/util/function/BooleanSupplier;)V
+		ARG 2 window
+		ARG 4 minimized

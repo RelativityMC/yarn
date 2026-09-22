@@ -19,7 +19,7 @@ CLASS net/minecraft/class_10867 net/minecraft/client/gl/GlBackendRenderPipeline
 	FIELD field_1_9492 vertexArray Lnet/minecraft/class_10869;
 	FIELD field_1_9493 writeDepth Z
 	FIELD field_1_9494 colorTargetStates [I
-	METHOD <init> (Lnet/minecraft/class_10865;Lnet/minecraft/class_1_1386$class_1_1387;Lnet/minecraft/class_5944;Lnet/minecraft/class_10869;)V
+	METHOD <init> (Lnet/minecraft/class_10865;Lnet/minecraft/class_1_1285$class_1_1387;Lnet/minecraft/class_5944;Lnet/minecraft/class_10869;)V
 		ARG 1 backend
 		ARG 2 layout
 		ARG 3 shaderProgram

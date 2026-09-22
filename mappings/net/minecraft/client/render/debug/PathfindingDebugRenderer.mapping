@@ -6,18 +6,18 @@ CLASS net/minecraft/class_868 net/minecraft/client/render/debug/PathfindingDebug
 		ARG 1 cameraX
 		ARG 3 cameraY
 		ARG 5 cameraZ
-	METHOD method_23118 drawPath (Lnet/minecraft/class_11;FZZDDD)V
+	METHOD method_23118 drawPath (Lnet/minecraft/class_11;FIZZDDD)V
 		ARG 0 path
 		ARG 1 maxNodeDistance
-		ARG 4 cameraX
-		ARG 6 cameraY
-		ARG 8 cameraZ
+		ARG 5 cameraX
+		ARG 7 cameraY
+		ARG 9 cameraZ
 	METHOD method_23119 getManhattanDistance (Lnet/minecraft/class_2338;DDD)F
 		ARG 0 pos
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD method_74798 render (DDDLnet/minecraft/class_11;F)V
+	METHOD method_74798 render (DDDLnet/minecraft/class_11;FI)V
 		ARG 0 cameraX
 		ARG 2 cameraY
 		ARG 4 cameraZ

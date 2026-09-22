@@ -9,9 +9,8 @@ CLASS net/minecraft/class_1462 net/minecraft/entity/passive/SalmonEntity
 		FIELD field_52473 CODEC Lcom/mojang/serialization/Codec;
 		FIELD field_52474 id Ljava/lang/String;
 		FIELD field_53975 scale F
-		FIELD field_55008 FROM_INDEX Ljava/util/function/IntFunction;
 		FIELD field_55009 index I
-		FIELD field_55967 PACKET_CODEC Lnet/minecraft/class_9139;
+		FIELD field_55967 PACKET_CODEC Lnet/minecraft/class_1_1686;
 		FIELD field_57618 DEFAULT Lnet/minecraft/class_1462$class_9869;
 		METHOD <init> (Ljava/lang/String;ILjava/lang/String;IF)V
 			ARG 3 id

@@ -30,7 +30,7 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 	FIELD field_62027 blockParticlesManager Lnet/minecraft/class_11741;
 	FIELD field_62596 worldBorder Lnet/minecraft/class_2784;
 	FIELD field_64444 environmentAttributeAccess Lnet/minecraft/class_12205;
-	METHOD <init> (Lnet/minecraft/class_634;Lnet/minecraft/class_638$class_5271;Lnet/minecraft/class_5321;Lnet/minecraft/class_6880;IILnet/minecraft/class_1_816;ZJI)V
+	METHOD <init> (Lnet/minecraft/class_634;Lnet/minecraft/class_638$class_5271;Lnet/minecraft/class_5321;Lnet/minecraft/class_6880;IILnet/minecraft/class_1_816;ZI)V
 		ARG 1 networkHandler
 		ARG 2 properties
 		ARG 3 registryRef
@@ -38,8 +38,7 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 		ARG 5 loadDistance
 		ARG 6 simulationDistance
 		ARG 8 debugWorld
-		ARG 9 seed
-		ARG 11 seaLevel
+		ARG 9 seaLevel
 	METHOD method_1_2685 runLightUpdates ()V
 	METHOD method_1_4871 getBlockBreakingInfoByPos ()Lit/unimi/dsi/fastutil/longs/Long2ObjectMap;
 	METHOD method_1_4872 getPrecipitationAt (Lnet/minecraft/class_2338;)Lnet/minecraft/class_1959$class_1963;

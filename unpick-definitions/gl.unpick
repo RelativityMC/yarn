@@ -486,43 +486,16 @@ target_method com.mojang.blaze3d.opengl.GlStateManager bindFramebuffer (II)V
 	param 0 gl_framebuffer_target
 target_method com.mojang.blaze3d.opengl.GlStateManager getFrameBuffer (I)I
 	param 0 gl_framebuffer_target
-target_method com.mojang.blaze3d.opengl.GlStateManager framebufferTexture2D (IIIII)V
-	param 0 gl_framebuffer_target
-	param 1 gl_framebuffer_attachment
-	param 2 gl_tex_target
 target_method org.lwjgl.opengl.ARBDirectStateAccess glNamedFramebufferTexture (IIII)V
 	param 1 gl_framebuffer_attachment
 target_method net.minecraft.client.gl.GlBufferManager setupFramebuffer (I[I[IIII)V
 	param 4 gl_framebuffer_target
 
-target_method com.mojang.blaze3d.opengl.GlStateManager blitFrameBuffer (IIIIIIIIII)V
-	param 8 gl_buffer_mask
-	param 9 gl_filter
 target_method net.minecraft.client.gl.GlBufferManager setupBlitFramebuffer (IIIIIIIIIIII)V
 	param 10 gl_buffer_mask
 	param 11 gl_filter
 
-target_method com.mojang.blaze3d.opengl.GlStateManager texParameter (III)V
-	param 0 gl_tex_target
-	param 1 gl_tex_parameter_pname
-	param 2 gl_tex_parameter_value
-target_method com.mojang.blaze3d.opengl.GlStateManager texImage2D (IIIIIIIILjava/nio/ByteBuffer;)V
-	param 0 gl_tex_target
-	param 2 gl_tex_format
-	param 6 gl_tex_format
-	param 7 gl_type
 
-target_method com.mojang.blaze3d.opengl.GlStateManager texSubImage2D (IIIIIIIIJ)V
-	param 0 gl_tex_target
-	param 6 gl_tex_format
-	param 7 gl_type
-target_method com.mojang.blaze3d.opengl.GlStateManager texSubImage2D (IIIIIIIILjava/nio/ByteBuffer;)V
-	param 0 gl_tex_target
-	param 6 gl_tex_format
-	param 7 gl_type
-target_method com.mojang.blaze3d.opengl.GlStateManager getTexLevelParameter (III)I
-	param 0 gl_tex_target
-	param 2 gl_tex_level_parameter_pname
 target_method org.lwjgl.opengl.GL11 glBindTexture (II)V
 	param 0 gl_tex_target
 target_method org.lwjgl.opengl.GL11C glBindTexture (II)V
@@ -535,10 +508,6 @@ target_method org.lwjgl.opengl.GL11 glTexParameteri (III)V
 	param 0 gl_tex_target
 target_method org.lwjgl.opengl.GL31 glTexBuffer (III)V
 	param 0 gl_tex_target
-
-target_method com.mojang.blaze3d.opengl.GlStateManager readPixels (IIIIIIJ)V
-	param 4 gl_tex_format
-	param 5 gl_type
 
 target_method net.minecraft.client.gl.GlDebug getSource (I)Ljava/lang/String;
 	param 0 gl_debug_source
@@ -571,22 +540,8 @@ target_method org.lwjgl.opengl.ARBDebugOutput glDebugMessageControlARB (III[IZ)V
 	param 0 gl_hint_mode
 	param 1 gl_hint_mode
 
-target_method com.mojang.blaze3d.opengl.GlStateManager fenceSync (II)J
-	param 0 gl_fence_sync_condition
-
-target_method com.mojang.blaze3d.opengl.GlStateManager clientWaitSync (JIJ)I
-	return gl_client_wait_sync_result
-
 target_method org.lwjgl.opengl.GL11 glDrawBuffer (I)V
 	param 0 gl_draw_buffer_buf
-
-target_method com.mojang.blaze3d.opengl.GlStateManager polygonMode (II)V
-	param 0 gl_polygon_mode_face
-
-target_method com.mojang.blaze3d.opengl.GlStateManager getProgram (II)I
-	param 1 gl_program_pname
-target_method com.mojang.blaze3d.opengl.GlStateManager getShader (II)I
-	param 1 gl_program_pname
 
 target_method org.lwjgl.opengl.GL15C glBeginQuery (II)V
 	param 0 gl_query_target
@@ -598,16 +553,6 @@ target_method org.lwjgl.opengl.GL15C glGetQueryObjecti (II)I
 target_method org.lwjgl.opengl.ARBTimerQuery glGetQueryObjecti64 (II)J
 	param 1 gl_query_object_pname
 
-target_method com.mojang.blaze3d.opengl.GlStateManager bindBuffer (II)V
-	param 0 gl_buffer_target
-target_method com.mojang.blaze3d.opengl.GlStateManager bufferData (IJI)V
-	param 0 gl_buffer_target
-	param 2 gl_buffer_data_usage
-target_method com.mojang.blaze3d.opengl.GlStateManager bufferData (ILjava/nio/ByteBuffer;I)V
-	param 0 gl_buffer_target
-	param 2 gl_buffer_data_usage
-target_method com.mojang.blaze3d.opengl.GlStateManager unmapBuffer (I)V
-	param 0 gl_buffer_target
 target_method org.lwjgl.opengl.GL15 glBindBuffer (II)V
 	param 0 gl_buffer_target
 target_method org.lwjgl.opengl.GL15 glBufferData (IJI)V
@@ -629,22 +574,9 @@ target_method org.lwjgl.opengl.ARBBufferStorage glBufferStorage (ILjava/nio/Byte
 	param 0 gl_buffer_target
 	param 2 gl_arb_buffer_flags
 
-target_method com.mojang.blaze3d.opengl.GlStateManager getError ()I
-	return gl_error
-
-target_method com.mojang.blaze3d.opengl.GlStateManager getString (I)Ljava/lang/String;
-	param 0 gl_get_string_name
-
-target_method com.mojang.blaze3d.opengl.GlStateManager getInteger (I)I
-	param 0 gl_get_integer_pname
 target_method org.lwjgl.opengl.GL11 glGetInteger (I)I
 	param 0 gl_get_integer_pname
 
-target_method com.mojang.blaze3d.opengl.GlStateManager logicOp (I)V
-	param 0 gl_logic_op
-
-target_method com.mojang.blaze3d.opengl.GlStateManager pixelStore (II)V
-	param 0 gl_pixel_store_pname
 target_method org.lwjgl.opengl.GL11 glPixelStorei (II)V
 	param 0 gl_pixel_store_pname
 
@@ -654,9 +586,6 @@ target_method org.lwjgl.opengl.KHRDebug glObjectLabel (IILjava/lang/CharSequence
 target_method org.lwjgl.opengl.EXTDebugLabel glLabelObjectEXT (IILjava/lang/CharSequence;)V
 	param 0 gl_ext_label_identifier
 
-target_method com.mojang.blaze3d.opengl.GlStateManager createShader (I)I
-	param 0 gl_program_type
-
 target_method com.mojang.blaze3d.opengl.GlStateManager clear (I)V
 	param 0 gl_clear_flags
 
@@ -664,7 +593,6 @@ target_method com.mojang.blaze3d.opengl.GlStateManager activeTexture (I)V
 	param 0 gl_texture
 
 target_field com.mojang.blaze3d.opengl.GlStateManager$DepthTestState func I gl_depth_test_function
-target_field com.mojang.blaze3d.opengl.GlStateManager$LogicOpState op I gl_logic_op
 
 target_method org.lwjgl.opengl.GL11 glGetFloat (I)F
 	param 0 gl_get_pname

@@ -46,16 +46,8 @@ CLASS net/minecraft/class_2826 net/minecraft/world/chunk/ChunkSection
 	METHOD method_16677 unlock ()V
 	METHOD method_19523 hasAny (Ljava/util/function/Predicate;)Z
 		ARG 1 predicate
-	METHOD method_38291 populateBiomes (Lnet/minecraft/class_6780;III)V
-		ARG 1 biomeSupplier
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z
 	METHOD method_38292 isEmpty ()Z
 	METHOD method_38293 getBiome (III)Lnet/minecraft/class_6880;
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
 	METHOD method_38294 getBiomeContainer ()Lnet/minecraft/class_7522;
 	METHOD method_49526 readBiomePacket (Lnet/minecraft/class_2540;)V
 		ARG 1 buf

@@ -6,7 +6,7 @@ CLASS net/minecraft/class_2939 net/minecraft/world/gen/carver/Carver
 	METHOD method_12710 getBranchFactor ()I
 	METHOD method_33959 passesProbabilityCheck (Lnet/minecraft/class_5819;)Z
 		ARG 1 random
-	METHOD method_33962 carve (Lnet/minecraft/class_5868;Lnet/minecraft/class_5819;Lnet/minecraft/class_1923;Lnet/minecraft/class_1923;Lnet/minecraft/class_1_1155;)Z
+	METHOD method_33962 carve (Lnet/minecraft/class_5843$class_1_1694;Lnet/minecraft/class_5819;Lnet/minecraft/class_1923;Lnet/minecraft/class_1923;Lnet/minecraft/class_1_1155;)Z
 		ARG 1 heightContext
 		ARG 2 random
 		ARG 3 chunkPos

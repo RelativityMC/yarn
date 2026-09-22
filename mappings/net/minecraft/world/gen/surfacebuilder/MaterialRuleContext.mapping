@@ -11,8 +11,8 @@ CLASS net/minecraft/class_6694 net/minecraft/world/gen/surfacebuilder/MaterialRu
 	FIELD field_1_10287 steepnessX I
 	FIELD field_1_10288 steepnessZ I
 	FIELD field_35233 surfaceBuilder Lnet/minecraft/class_6724;
-	FIELD field_35241 heightContext Lnet/minecraft/class_5868;
-	FIELD field_35606 posToBiome Ljava/util/function/Function;
+	FIELD field_35241 heightContext Lnet/minecraft/class_5843$class_1_1694;
+	FIELD field_35606 posToBiome Lnet/minecraft/class_1_1690;
 	FIELD field_35608 uniqueHorizontalPosValue J
 	FIELD field_35609 blockX I
 	FIELD field_35610 blockZ I
@@ -28,13 +28,11 @@ CLASS net/minecraft/class_6694 net/minecraft/world/gen/surfacebuilder/MaterialRu
 	FIELD field_35678 secondaryDepth D
 	FIELD field_35679 lastQueriesUniqueHorizontalPosValueForEstimatedSurfaceHeight J
 	FIELD field_37703 noiseConfig Lnet/minecraft/class_7138;
-	METHOD <init> (Lnet/minecraft/class_6724;Lnet/minecraft/class_7138;Lnet/minecraft/class_1_1441;Lnet/minecraft/class_1_1552;Ljava/util/function/Function;Lnet/minecraft/class_5868;Ljava/util/Set;)V
+	METHOD <init> (Lnet/minecraft/class_6724;Lnet/minecraft/class_7138;Lnet/minecraft/class_1_1441;Lnet/minecraft/class_1_1552;Lnet/minecraft/class_1_1690;Lnet/minecraft/class_5843$class_1_1694;Ljava/util/Set;)V
 		ARG 1 surfaceBuilder
 		ARG 2 noiseConfig
 		ARG 3 region
 		ARG 4 contextualSamplerProvider
-		ARG 5 posToBiome
-		ARG 6 heightContext
 		ARG 7 includedBiomes
 	METHOD method_1_5130 getCurrentBiome ()Lnet/minecraft/class_6880;
 	METHOD method_1_5439 computeSupplier2d (Lnet/minecraft/class_5321;)Ljava/util/function/DoubleSupplier;

@@ -6,8 +6,6 @@ CLASS net/minecraft/class_10529 net/minecraft/client/render/block/entity/Abstrac
 		ARG 1 context
 	METHOD method_65819 (Lnet/minecraft/class_11971;Lnet/minecraft/class_2561;)Lnet/minecraft/class_5481;
 		ARG 2 textx
-	METHOD method_65822 getTextColor (Lnet/minecraft/class_8242;)I
-		ARG 0 text
 	METHOD method_65827 shouldRenderTextOutline (Lnet/minecraft/class_2338;)Z
 		ARG 0 pos
 	METHOD method_65828 renderText (Lnet/minecraft/class_11971;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;Lnet/minecraft/class_8242;)V

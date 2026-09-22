@@ -11,7 +11,7 @@ CLASS net/minecraft/class_10197 net/minecraft/client/render/entity/equipment/Equ
 	METHOD method_64076 getDyeColor (Lnet/minecraft/class_10186$class_10189;I)I
 		ARG 0 layer
 		ARG 1 dyeColor
-	METHOD method_64077 render (Lnet/minecraft/class_10186$class_10190;Lnet/minecraft/class_5321;Lnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_1799;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;II)V
+	METHOD method_64077 render (Lnet/minecraft/class_10186$class_10190;Lnet/minecraft/class_5321;Lnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_1799;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;II)I
 		ARG 1 layerType
 		ARG 2 assetKey
 		ARG 3 model
@@ -21,7 +21,7 @@ CLASS net/minecraft/class_10197 net/minecraft/client/render/entity/equipment/Equ
 		ARG 7 queue
 		ARG 8 light
 		ARG 9 outlineColor
-	METHOD method_64078 render (Lnet/minecraft/class_10186$class_10190;Lnet/minecraft/class_5321;Lnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_1799;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;ILnet/minecraft/class_2960;II)V
+	METHOD method_64078 render (Lnet/minecraft/class_10186$class_10190;Lnet/minecraft/class_5321;Lnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_1799;Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;ILnet/minecraft/class_2960;II)I
 		ARG 1 layerType
 		ARG 2 assetKey
 		ARG 3 model

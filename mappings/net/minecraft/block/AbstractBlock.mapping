@@ -270,8 +270,6 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		COMMENT
 		COMMENT @see net.minecraft.resource.featuretoggle.FeatureFlags
 	FIELD field_54005 translationKey Ljava/lang/String;
-	METHOD <init> (Lnet/minecraft/class_4970$class_2251;)V
-		ARG 1 settings
 	METHOD method_1_5240 getWeakRedstonePower (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)I
 		ARG 1 state
 		ARG 2 view
@@ -553,7 +551,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		COMMENT @see net.minecraft.loot.context.LootContextParameters
 		ARG 1 state
 		ARG 2 builder
-	METHOD method_9565 onStacksDropped (Lnet/minecraft/class_2680;Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_1799;Z)V
+	METHOD method_9565 onStacksDropped (Lnet/minecraft/class_2680;Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_1799;ZLnet/minecraft/class_1297;)V
 		COMMENT Called server-side when the stacks are dropped by mining or explosion. This is mostly
 		COMMENT overridden to drop experience orbs. To change the dropped item stacks, use loot tables
 		COMMENT or {@link #getDroppedStacks}. To drop inventory contents, use {@link #onStateReplaced}
@@ -1024,12 +1022,6 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		METHOD method_51369 solid ()Lnet/minecraft/class_4970$class_2251;
 		METHOD method_51370 notSolid ()Lnet/minecraft/class_4970$class_2251;
 		METHOD method_51371 replaceable ()Lnet/minecraft/class_4970$class_2251;
-		METHOD method_51517 mapColor (Lnet/minecraft/class_1767;)Lnet/minecraft/class_4970$class_2251;
-			ARG 1 color
-		METHOD method_51518 (Lnet/minecraft/class_1767;Lnet/minecraft/class_2680;)Lnet/minecraft/class_3620;
-			ARG 1 state
-		METHOD method_51519 (Lnet/minecraft/class_3620;Lnet/minecraft/class_2680;)Lnet/minecraft/class_3620;
-			ARG 1 state
 		METHOD method_51520 mapColor (Ljava/util/function/Function;)Lnet/minecraft/class_4970$class_2251;
 			ARG 1 mapColorProvider
 		METHOD method_51521 (Lnet/minecraft/class_2680;)Lnet/minecraft/class_3620;
@@ -1157,7 +1149,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 			ARG 1 world
 			ARG 2 pos
 			ARG 3 player
-		METHOD method_26180 onStacksDropped (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_1799;Z)V
+		METHOD method_26180 onStacksDropped (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_1799;ZLnet/minecraft/class_1297;)V
 			ARG 1 world
 			ARG 2 pos
 			ARG 3 tool

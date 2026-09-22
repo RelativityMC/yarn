@@ -10,7 +10,6 @@ CLASS net/minecraft/class_10865 net/minecraft/client/gl/GlBackend
 	FIELD field_1_9066 window J
 	FIELD field_1_9413 programCompiler Lnet/minecraft/class_1_1391;
 	FIELD field_1_9414 vertexArrayFactory Ljava/util/function/BiFunction;
-	FIELD field_1_10076 currentWindow J
 	FIELD field_1_10520 glDeviceInfo Lnet/minecraft/class_11541;
 	FIELD field_57853 LOGGER Lorg/slf4j/Logger;
 	FIELD field_57854 commandEncoder Lnet/minecraft/class_10860;

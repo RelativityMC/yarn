@@ -1,7 +1,6 @@
 CLASS net/minecraft/class_12122 net/minecraft/util/SwingAnimationType
 	FIELD field_63401 CODEC Lnet/minecraft/class_3542$class_7292;
 	FIELD field_63402 PACKET_CODEC Lnet/minecraft/class_9139;
-	FIELD field_63403 BY_PACKET_ID Ljava/util/function/IntFunction;
 	FIELD field_63404 packetId I
 	FIELD field_63405 name Ljava/lang/String;
 	METHOD <init> (Ljava/lang/String;IILjava/lang/String;)V

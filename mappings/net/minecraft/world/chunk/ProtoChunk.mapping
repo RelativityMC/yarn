@@ -37,6 +37,5 @@ CLASS net/minecraft/class_2839 net/minecraft/world/chunk/ProtoChunk
 	METHOD method_39307 getBlockProtoTickScheduler ()Lnet/minecraft/class_6755;
 	METHOD method_39308 getFluidProtoTickScheduler ()Lnet/minecraft/class_6755;
 	METHOD method_39309 setBelowZeroRetrogen (Lnet/minecraft/class_6746;)V
-		ARG 1 belowZeroRetrogen
 	METHOD method_39310 createProtoTickScheduler (Lnet/minecraft/class_4296;)Lnet/minecraft/class_6755;
 		ARG 0 tickScheduler

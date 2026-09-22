@@ -1,26 +1,13 @@
 CLASS net/minecraft/class_4543 net/minecraft/world/biome/source/BiomeAccess
 	FIELD field_20640 storage Lnet/minecraft/class_6780;
 	FIELD field_20641 seed J
-	FIELD field_28106 CHUNK_CENTER_OFFSET I
 	METHOD <init> (Lnet/minecraft/class_6780;J)V
 		ARG 1 storage
 		ARG 2 seed
-	METHOD method_1_9942 getBiome (III)Lnet/minecraft/class_6880;
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
-	METHOD method_22393 getBiome (Lnet/minecraft/class_2338;)Lnet/minecraft/class_6880;
-		ARG 1 pos
-	METHOD method_24854 getBiomeForNoiseGen (III)Lnet/minecraft/class_6880;
+	METHOD method_24854 (III)Lnet/minecraft/class_6880;
 		ARG 1 biomeX
 		ARG 2 biomeY
 		ARG 3 biomeZ
-	METHOD method_24938 getBiomeForNoiseGen (DDD)Lnet/minecraft/class_6880;
-		ARG 1 x
-		ARG 3 y
-		ARG 5 z
-	METHOD method_27344 getBiomeForNoiseGen (Lnet/minecraft/class_2338;)Lnet/minecraft/class_6880;
-		ARG 1 pos
 	METHOD method_27984 hashSeed (J)J
 		ARG 0 seed
 	METHOD method_38106 distanceToLatticePoint (JIIIDDD)D
@@ -31,7 +18,5 @@ CLASS net/minecraft/class_4543 net/minecraft/world/biome/source/BiomeAccess
 		ARG 5 biomeXFrac
 		ARG 7 biomeYFrac
 		ARG 9 biomeZFrac
-	METHOD method_38107 withSource (Lnet/minecraft/class_6780;)Lnet/minecraft/class_4543;
-		ARG 1 storage
 	METHOD method_38108 latticePointJitter (J)D
 		ARG 0 seed

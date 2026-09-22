@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_1_1317 com/mojang/blaze3d/systems/RenderPass
-	FIELD field_1_9059 MAX_VERTEX_BUFFERS I
 	METHOD method_1_7792 bindTexture (Ljava/lang/String;Lnet/minecraft/class_1_1330;Lnet/minecraft/class_12137;)V
 		ARG 1 name
 		ARG 2 textureView

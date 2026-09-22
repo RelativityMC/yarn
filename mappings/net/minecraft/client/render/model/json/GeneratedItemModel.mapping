@@ -16,15 +16,6 @@ CLASS net/minecraft/class_801 net/minecraft/client/render/model/json/GeneratedIt
 		ARG 1 interner
 		ARG 2 settings
 		ARG 3 spriteInfo
-	METHOD method_3476 getEdgePixels (Lnet/minecraft/class_801$class_803;Ljava/util/Set;Lnet/minecraft/class_7764;IIIII)V
-		ARG 0 side
-		ARG 1 edgePixelsOut
-		ARG 2 spriteContents
-		ARG 3 frame
-		ARG 4 x
-		ARG 5 y
-		ARG 6 width
-		ARG 7 height
 	METHOD method_3477 isPixelTransparent (Lnet/minecraft/class_7764;IIIII)Z
 		ARG 0 spriteContents
 		ARG 1 frame
@@ -32,15 +23,13 @@ CLASS net/minecraft/class_801 net/minecraft/client/render/model/json/GeneratedIt
 		ARG 3 y
 		ARG 4 width
 		ARG 5 height
-	METHOD method_3478 getEdgePixels (Lnet/minecraft/class_7764;)Ljava/util/Collection;
+	METHOD method_3478 getEdgePixels (Lnet/minecraft/class_7764;)Ljava/util/List;
 		ARG 0 spriteContents
 	METHOD method_3479 bakeGeometry (Lnet/minecraft/class_10419;Lnet/minecraft/class_7775;Lnet/minecraft/class_3665;Lnet/minecraft/class_10813;)Lnet/minecraft/class_10817;
 		ARG 0 textures
 		ARG 1 baker
 		ARG 2 settings
 		ARG 3 model
-	METHOD method_76297 (IILnet/minecraft/class_7764;Ljava/util/Set;I)V
-		ARG 4 frame
 	CLASS class_1_345 Settings
 	CLASS class_803 Side
 		FIELD field_4276 direction Lnet/minecraft/class_2350;

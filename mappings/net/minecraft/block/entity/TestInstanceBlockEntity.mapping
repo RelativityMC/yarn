@@ -102,18 +102,11 @@ CLASS net/minecraft/class_10638 net/minecraft/block/entity/TestInstanceBlockEnti
 	CLASS class_10640 Status
 		FIELD field_56017 CODEC Lcom/mojang/serialization/Codec;
 		FIELD field_56018 PACKET_CODEC Lnet/minecraft/class_9139;
-		FIELD field_56019 INDEX_MAPPER Ljava/util/function/IntFunction;
 		FIELD field_56020 id Ljava/lang/String;
 		FIELD field_56021 index I
 		METHOD <init> (Ljava/lang/String;ILjava/lang/String;I)V
 			ARG 3 id
 			ARG 4 index
-		METHOD method_66778 fromIndex (I)Lnet/minecraft/class_10638$class_10640;
-			ARG 0 index
-		METHOD method_66779 (Lnet/minecraft/class_10638$class_10640;)I
-			ARG 0 status
-		METHOD method_66780 (Lnet/minecraft/class_10638$class_10640;)I
-			ARG 0 status
 	CLASS class_12034 Error
 		FIELD field_62919 CODEC Lcom/mojang/serialization/Codec;
 		FIELD field_62920 LIST_CODEC Lcom/mojang/serialization/Codec;

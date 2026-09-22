@@ -3,7 +3,6 @@ CLASS net/minecraft/class_3233 net/minecraft/world/ChunkRegion
 	FIELD field_1_6291 centerZ I
 	FIELD field_1_6292 blockStateWriteRadius I
 	FIELD field_1_8842 worldEnvironmentAttributes Lnet/minecraft/class_12205;
-	FIELD field_1_9852 biomeSupplier Lnet/minecraft/class_6780;
 	FIELD field_14087 seed J
 	FIELD field_14091 random Lnet/minecraft/class_5819;
 	FIELD field_14092 LOGGER Lorg/slf4j/Logger;
@@ -13,7 +12,6 @@ CLASS net/minecraft/class_3233 net/minecraft/world/ChunkRegion
 	FIELD field_14097 levelProperties Lnet/minecraft/class_5217;
 	FIELD field_14098 chunks Lnet/minecraft/class_9762;
 	FIELD field_14099 blockTickScheduler Lnet/minecraft/class_3235;
-	FIELD field_20668 biomeAccess Lnet/minecraft/class_4543;
 	FIELD field_28557 centerPos Lnet/minecraft/class_2791;
 	FIELD field_33756 currentlyGeneratingStructureName Ljava/util/function/Supplier;
 	FIELD field_35442 tickOrder Ljava/util/concurrent/atomic/AtomicLong;

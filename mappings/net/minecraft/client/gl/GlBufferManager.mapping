@@ -26,10 +26,10 @@ CLASS net/minecraft/class_10874 net/minecraft/client/gl/GlBufferManager
 		ARG 10 dstY1
 		ARG 11 mask
 		ARG 12 filter
-	METHOD method_68813 create (Lorg/lwjgl/opengl/GLCapabilities;Ljava/util/Set;Lnet/minecraft/class_11541;)Lnet/minecraft/class_10874;
-		ARG 0 capabilities
-		ARG 1 usedCapabilities
-		ARG 2 deviceInfo
+	METHOD method_68813 create (Lnet/minecraft/class_1_1267;Lorg/lwjgl/opengl/GLCapabilities;Ljava/util/Set;Lnet/minecraft/class_11541;)Lnet/minecraft/class_10874;
+		ARG 1 capabilities
+		ARG 2 usedCapabilities
+		ARG 3 deviceInfo
 	METHOD method_71023 createBuffer ()I
 	METHOD method_71024 unmapBuffer (II)V
 		ARG 1 buffer

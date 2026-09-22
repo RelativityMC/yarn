@@ -8,8 +8,6 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	FIELD field_1_5677 textureManager Lnet/minecraft/class_1060;
 	FIELD field_1_6301 ENTITY_OUTLINE_FRAMEBUFFER_CLEAR_COLOR Lorg/joml/Vector4fc;
 	FIELD field_1_6302 FRAMEBUFFER_CLEAR_COLOR Lorg/joml/Vector4fc;
-	FIELD field_1_7983 COEFF_COUNT I
-	FIELD field_1_7984 COEFF_ATTACHMENT_COUNT I
 	FIELD field_1_8347 drawOutlines Z
 	FIELD field_1_9535 useMultiDrawTerrainRendering Z
 	FIELD field_1_9872 multiDrawIndirectSupported Z

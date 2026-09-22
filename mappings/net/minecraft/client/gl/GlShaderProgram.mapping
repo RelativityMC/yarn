@@ -9,7 +9,7 @@ CLASS net/minecraft/class_5944 net/minecraft/client/gl/GlShaderProgram
 	COMMENT
 	COMMENT @see <a href="https://www.khronos.org/opengl/wiki/GLSL_Object#Program_objects">
 	COMMENT GLSL Object - OpenGL Wiki (Program objects)</a>
-	FIELD field_1_9417 uniformBindings Ljava/util/List;
+	FIELD field_1_9417 uniformBindings Lit/unimi/dsi/fastutil/ints/Int2ReferenceMap;
 	FIELD field_1_9562 pushConstantsBuffer Lnet/minecraft/class_284$class_11272;
 	FIELD field_29493 glRef I
 	FIELD field_57865 debugLabel Ljava/lang/String;
@@ -17,10 +17,9 @@ CLASS net/minecraft/class_5944 net/minecraft/client/gl/GlShaderProgram
 	METHOD <init> (ILjava/lang/String;)V
 		ARG 1 glRef
 		ARG 2 debugLabel
-	METHOD method_1_4748 resolveResources (Ljava/util/List;)V
-		ARG 1 bindings
+	METHOD method_1_4748 resolveResources (Lnet/minecraft/class_1_1267;Ljava/util/List;)V
+		ARG 2 bindings
 	METHOD method_1_9082 getUniformBinding (I)Lnet/minecraft/class_284;
-		ARG 1 index
 	METHOD method_1_9083 (Lnet/minecraft/class_10141;)Ljava/lang/String;
 		ARG 0 compiledShader
 	METHOD method_1_9084 describeConstituents (Ljava/util/List;)Ljava/lang/String;

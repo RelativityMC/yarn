@@ -77,7 +77,6 @@ CLASS net/minecraft/class_9285 net/minecraft/component/type/AttributeModifiersCo
 				ARG 0 instance
 		CLASS class_11197 Type
 			FIELD field_59742 CODEC Lcom/mojang/serialization/Codec;
-			FIELD field_59743 INDEX_MAPPER Ljava/util/function/IntFunction;
 			FIELD field_59744 PACKET_CODEC Lnet/minecraft/class_9139;
 			FIELD field_59745 id Ljava/lang/String;
 			FIELD field_59746 index I

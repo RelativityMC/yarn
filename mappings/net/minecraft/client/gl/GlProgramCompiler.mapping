@@ -7,18 +7,16 @@ CLASS net/minecraft/class_1_1391 net/minecraft/client/gl/GlProgramCompiler
 	FIELD field_1_9506 UNIFORM_FORMAT Ljava/lang/String;
 	FIELD field_1_9507 debugLabelManager Lnet/minecraft/class_10861;
 	FIELD field_1_9508 supportNonzeroBaseInstance Z
-	METHOD <init> (Lnet/minecraft/class_10861;Z)V
-		ARG 1 debugLabelManager
-		ARG 2 supportNonzeroBaseInstance
-	METHOD method_1_9126 compileProgram (Lnet/minecraft/class_1_1386$class_1_1387;Ljava/util/Map;)Lnet/minecraft/class_5944;
+	METHOD <init> (Lnet/minecraft/class_1_1267;Lnet/minecraft/class_10861;Z)V
+		ARG 3 supportNonzeroBaseInstance
+	METHOD method_1_9126 compileProgram (Lnet/minecraft/class_1_1285$class_1_1387;Ljava/util/Map;)Lnet/minecraft/class_5944;
 		ARG 1 pipelineLayout
 		ARG 2 shaderSources
 	METHOD method_1_9127 compileShader (Ljava/lang/String;Lnet/minecraft/class_1_1229;Ljava/lang/String;)Lnet/minecraft/class_10141;
 		ARG 1 pipelineName
 		ARG 2 type
 		ARG 3 source
-	METHOD method_1_9128 decompileToGlsl (Lnet/minecraft/class_1_1386$class_1_1387$class_1_1389;)Ljava/lang/String;
-		ARG 1 shader
+	METHOD method_1_9128 decompileToGlsl (Lnet/minecraft/class_1_1372;)Ljava/lang/String;
 	METHOD method_1_9129 assignUniformResourceNames (JJI)V
 		ARG 1 compiler
 		ARG 3 resources
@@ -28,5 +26,5 @@ CLASS net/minecraft/class_1_1391 net/minecraft/client/gl/GlProgramCompiler
 		ARG 3 resources
 		ARG 5 resourceType
 		ARG 6 nameFormat
-	METHOD method_1_10071 decompileShaders (Lnet/minecraft/class_1_1386$class_1_1387;)Ljava/util/Map;
+	METHOD method_1_10071 decompileShaders (Lnet/minecraft/class_1_1285$class_1_1387;)Ljava/util/Map;
 		ARG 1 pipelineLayout

@@ -101,11 +101,6 @@ CLASS net/minecraft/class_6492 net/minecraft/util/math/Spline
 			ARG 2 value
 			ARG 3 derivatives
 			ARG 4 i
-		METHOD method_41298 (F[FI)Z
-			ARG 2 i
-		METHOD method_41300 findRangeForLocation ([FF)I
-			ARG 0 locations
-			ARG 1 x
 		METHOD method_41301 assertParametersValid ([FLjava/util/List;[F)V
 			ARG 0 locations
 			ARG 1 values

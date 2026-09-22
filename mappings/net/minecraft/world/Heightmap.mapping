@@ -44,7 +44,6 @@ CLASS net/minecraft/class_2902 net/minecraft/world/Heightmap
 		FIELD field_16568 blockPredicate Ljava/util/function/Predicate;
 		FIELD field_24772 CODEC Lcom/mojang/serialization/Codec;
 		FIELD field_56679 PACKET_CODEC Lnet/minecraft/class_9139;
-		FIELD field_56680 INDEX_MAPPER Ljava/util/function/IntFunction;
 		FIELD field_56681 index I
 		METHOD <init> (Ljava/lang/String;IILjava/lang/String;Lnet/minecraft/class_2902$class_2904;Ljava/util/function/Predicate;)V
 			ARG 3 index
@@ -59,8 +58,4 @@ CLASS net/minecraft/class_2902 net/minecraft/world/Heightmap
 		METHOD method_16686 (Lnet/minecraft/class_2680;)Z
 			ARG 0 state
 		METHOD method_20454 isStoredServerSide ()Z
-		METHOD method_67686 (Lnet/minecraft/class_2902$class_2903;)I
-			ARG 0 type
-		METHOD method_67687 (Lnet/minecraft/class_2902$class_2903;)I
-			ARG 0 type
 	CLASS class_2904 Purpose

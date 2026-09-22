@@ -3,9 +3,8 @@ CLASS net/minecraft/class_1_1380 net/minecraft/shader/ShaderModuleImpl
 	FIELD field_1_9449 spirv Ljava/nio/ByteBuffer;
 	FIELD field_1_9450 spvcContext J
 	FIELD field_1_9451 shaderType Lnet/minecraft/class_1_1229;
-	METHOD <init> (Ljava/nio/ByteBuffer;Lnet/minecraft/class_1_1229;)V
-		ARG 1 spirv
-		ARG 2 shaderType
+	METHOD <init> (Ljava/lang/String;Ljava/nio/ByteBuffer;Lnet/minecraft/class_1_1229;Ljava/lang/String;)V
+		ARG 3 shaderType
 	METHOD method_1_9102 compile ()V
 	METHOD method_1_9103 getUniformBindings (JJLjava/nio/IntBuffer;I)Ljava/util/List;
 		ARG 0 compiler

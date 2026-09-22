@@ -1,20 +1,17 @@
 CLASS net/minecraft/class_12197 net/minecraft/world/attribute/EnvironmentAttribute
-	FIELD field_1_10178 requiresPreciseBiomeCheck Z
 	FIELD field_63712 type Lnet/minecraft/class_12192;
 	FIELD field_63713 defaultValue Ljava/lang/Object;
 	FIELD field_63714 validator Lnet/minecraft/class_12191;
 	FIELD field_63715 synced Z
 	FIELD field_63716 positional Z
 	FIELD field_63717 interpolated Z
-	METHOD <init> (Lnet/minecraft/class_12192;Ljava/lang/Object;Lnet/minecraft/class_12191;ZZZZ)V
+	METHOD <init> (Lnet/minecraft/class_12192;Ljava/lang/Object;Lnet/minecraft/class_12191;ZZZ)V
 		ARG 1 type
 		ARG 2 defaultValue
 		ARG 3 validator
 		ARG 4 synced
 		ARG 5 positional
 		ARG 6 interpolated
-		ARG 7 requiresPreciseBiomeCheck
-	METHOD method_1_9979 requiresPreciseBiomeCheck ()Z
 	METHOD method_75647 getType ()Lnet/minecraft/class_12192;
 	METHOD method_75648 builder (Lnet/minecraft/class_12192;)Lnet/minecraft/class_12197$class_12198;
 		ARG 0 type
@@ -26,7 +23,6 @@ CLASS net/minecraft/class_12197 net/minecraft/world/attribute/EnvironmentAttribu
 	METHOD method_75653 isPositional ()Z
 	METHOD method_75654 isInterpolated ()Z
 	CLASS class_12198 Builder
-		FIELD field_1_10179 requiresPreciseBiomeCheck Z
 		FIELD field_63718 type Lnet/minecraft/class_12192;
 		FIELD field_63719 defaultValue Ljava/lang/Object;
 		FIELD field_63720 validator Lnet/minecraft/class_12191;
@@ -35,7 +31,6 @@ CLASS net/minecraft/class_12197 net/minecraft/world/attribute/EnvironmentAttribu
 		FIELD field_63723 interpolated Z
 		METHOD <init> (Lnet/minecraft/class_12192;)V
 			ARG 1 type
-		METHOD method_1_9980 requiresPreciseBiomeCheck ()Lnet/minecraft/class_12197$class_12198;
 		METHOD method_75655 synced ()Lnet/minecraft/class_12197$class_12198;
 		METHOD method_75656 validator (Lnet/minecraft/class_12191;)Lnet/minecraft/class_12197$class_12198;
 			ARG 1 validator

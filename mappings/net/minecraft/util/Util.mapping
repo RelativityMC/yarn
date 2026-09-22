@@ -407,17 +407,6 @@ CLASS net/minecraft/class_156 net/minecraft/util/Util
 		COMMENT
 		COMMENT @see #lastIndexGetter
 		ARG 0 values
-	METHOD method_54907 apply (Lcom/mojang/datafixers/Typed;Lcom/mojang/datafixers/types/Type;Ljava/util/function/UnaryOperator;)Lcom/mojang/datafixers/Typed;
-		ARG 0 typed
-		ARG 1 type
-		ARG 2 modifier
-	METHOD method_54908 readTyped (Lcom/mojang/datafixers/types/Type;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/datafixers/Typed;
-		ARG 0 type
-		ARG 1 value
-	METHOD method_55333 readTyped (Lcom/mojang/datafixers/types/Type;Lcom/mojang/serialization/Dynamic;Z)Lcom/mojang/datafixers/Typed;
-		ARG 0 type
-		ARG 1 value
-		ARG 2 allowPartial
 	METHOD method_55473 getDownloadWorkerExecutor ()Lnet/minecraft/class_10207;
 		COMMENT {@return the executor for download tasks}
 	METHOD method_56612 (Ljava/lang/Object;)Z

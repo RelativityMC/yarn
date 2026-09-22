@@ -7,11 +7,10 @@ CLASS net/minecraft/class_12134 net/minecraft/client/gl/GlSampler
 	FIELD field_63446 closed Z
 	FIELD field_64186 maxAnisotropy I
 	FIELD field_64416 maxLevelOfDetail Ljava/util/OptionalDouble;
-	METHOD <init> (Lnet/minecraft/class_1_1239;Lnet/minecraft/class_1_1239;Lnet/minecraft/class_1_1230;Lnet/minecraft/class_1_1230;ILjava/util/OptionalDouble;)V
-		ARG 1 addressModeU
-		ARG 2 addressModeV
-		ARG 3 minFilterMode
-		ARG 4 magFilterMode
-		ARG 5 maxAnisotropy
-		ARG 6 maxLevelOfDetail
+	METHOD <init> (Lnet/minecraft/class_10865;Lnet/minecraft/class_1_1239;Lnet/minecraft/class_1_1239;Lnet/minecraft/class_1_1230;Lnet/minecraft/class_1_1230;ILjava/util/OptionalDouble;)V
+		ARG 3 addressModeV
+		ARG 4 minFilterMode
+		ARG 5 magFilterMode
+		ARG 6 maxAnisotropy
+		ARG 7 maxLevelOfDetail
 	METHOD method_75285 getSamplerId ()I

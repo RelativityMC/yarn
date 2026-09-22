@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_1_1055 net/minecraft/client/vulkan/VulkanFeatureSets
 	FIELD field_1_7396 AMD_BUFFER_MARKER Lnet/minecraft/class_1_1045;
-	FIELD field_1_7397 PHYSICAL_DEVICE_DYNAMIC_RENDERING_FEATURES Lnet/minecraft/class_1_730;
 	FIELD field_1_7398 EXT_MULTIDRAW Lnet/minecraft/class_1_1045;
 	FIELD field_1_7399 PHYSICAL_DEVICE_MULTI_DRAW_FEATURES Lnet/minecraft/class_1_730;
 	FIELD field_1_7400 NV_DIAGNOSTIC_CHECKPOINT Lnet/minecraft/class_1_1045;

@@ -38,7 +38,6 @@ CLASS net/minecraft/class_9069 net/minecraft/entity/passive/ArmadilloEntity
 		FIELD field_47793 name Ljava/lang/String;
 		FIELD field_47794 CODEC Lcom/mojang/serialization/Codec;
 		FIELD field_48335 PACKET_CODEC Lnet/minecraft/class_9139;
-		FIELD field_48336 INDEX_TO_VALUE Ljava/util/function/IntFunction;
 		FIELD field_48337 index I
 		FIELD field_49085 runRollUpTask Z
 		FIELD field_49086 lengthInTicks I

@@ -9,13 +9,12 @@ CLASS net/minecraft/class_7138 net/minecraft/world/gen/noise/NoiseConfig
 	FIELD field_38259 surfaceBuilder Lnet/minecraft/class_6724;
 	FIELD field_38262 noises Ljava/util/Map;
 	FIELD field_38263 randomSplitters Ljava/util/Map;
-	METHOD <init> (Lnet/minecraft/class_7871;JZLnet/minecraft/class_2680;ILnet/minecraft/class_6953;)V
+	METHOD <init> (Lnet/minecraft/class_7871;JZILnet/minecraft/class_6953;)V
 		ARG 1 noiseParametersLookup
 		ARG 2 seed
 		ARG 4 legacyRandom
-		ARG 5 defaultState
-		ARG 6 seaLevel
-		ARG 7 noiseRouter
+		ARG 5 seaLevel
+		ARG 6 noiseRouter
 	METHOD method_1_9612 getSeed ()J
 	METHOD method_1_9954 allocatePool ()Lnet/minecraft/class_1_1551;
 	METHOD method_1_9955 toSampler (Lnet/minecraft/class_1_1521;)Lnet/minecraft/class_6544$class_6552;
@@ -34,13 +33,12 @@ CLASS net/minecraft/class_7138 net/minecraft/world/gen/noise/NoiseConfig
 		ARG 4 z
 	METHOD method_1_9961 contextToSampleProvider (Lnet/minecraft/class_1_1521;)Lnet/minecraft/class_1_1552;
 		ARG 1 context
-	METHOD method_41556 create (Lnet/minecraft/class_7871;JZLnet/minecraft/class_2680;ILnet/minecraft/class_6953;)Lnet/minecraft/class_7138;
+	METHOD method_41556 create (Lnet/minecraft/class_7871;JZILnet/minecraft/class_6953;)Lnet/minecraft/class_7138;
 		ARG 0 noiseParametersLookup
 		ARG 1 seed
 		ARG 3 legacyRandom
-		ARG 4 defaultState
-		ARG 5 seaLevel
-		ARG 6 noiseRouter
+		ARG 4 seaLevel
+		ARG 5 noiseRouter
 	METHOD method_41557 create (Lnet/minecraft/class_7871;JLnet/minecraft/class_5284;)Lnet/minecraft/class_7138;
 		ARG 0 noiseParametersLookup
 		ARG 1 legacyWorldSeed

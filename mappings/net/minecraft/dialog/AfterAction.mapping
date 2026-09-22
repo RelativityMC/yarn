@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_11520 net/minecraft/dialog/AfterAction
-	FIELD field_60965 INDEX_MAPPER Ljava/util/function/IntFunction;
 	FIELD field_60966 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_60967 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_60968 index I
@@ -8,7 +7,3 @@ CLASS net/minecraft/class_11520 net/minecraft/dialog/AfterAction
 		ARG 3 index
 		ARG 4 id
 	METHOD method_72063 canUnpause ()Z
-	METHOD method_72064 (Lnet/minecraft/class_11520;)I
-		ARG 0 afterAction
-	METHOD method_72066 (Lnet/minecraft/class_11520;)I
-		ARG 0 afterAction

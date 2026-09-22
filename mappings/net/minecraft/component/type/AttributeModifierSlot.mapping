@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_9274 net/minecraft/component/type/AttributeModifierSlot
-	FIELD field_49225 ID_TO_VALUE Ljava/util/function/IntFunction;
 	FIELD field_49226 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_49227 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_49228 id I
@@ -18,12 +17,8 @@ CLASS net/minecraft/class_9274 net/minecraft/component/type/AttributeModifierSlo
 		ARG 1 slot
 	METHOD method_57287 (Lnet/minecraft/class_1304;Lnet/minecraft/class_1304;)Z
 		ARG 1 slotx
-	METHOD method_57288 (Lnet/minecraft/class_9274;)I
-		ARG 0 id
 	METHOD method_57289 (Lnet/minecraft/class_1304;)Z
 		ARG 0 slot
-	METHOD method_57290 (Lnet/minecraft/class_9274;)I
-		ARG 0 id
 	METHOD method_57291 (Lnet/minecraft/class_1304;)Z
 		ARG 0 slot
 	METHOD method_59524 forEquipmentSlot (Lnet/minecraft/class_1304;)Lnet/minecraft/class_9274;

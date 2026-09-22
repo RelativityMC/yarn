@@ -6,7 +6,7 @@ CLASS net/minecraft/class_12205 net/minecraft/world/attribute/WorldEnvironmentAt
 		ARG 0 builder
 		ARG 1 world
 	METHOD method_76394 builder ()Lnet/minecraft/class_12205$class_12314;
-	METHOD method_76395 (Lnet/minecraft/class_12197;Lnet/minecraft/class_4543;Ljava/lang/Object;Lnet/minecraft/class_243;Lnet/minecraft/class_12211;)Ljava/lang/Object;
+	METHOD method_76395 (Lnet/minecraft/class_12197;Lnet/minecraft/class_1_1690;Ljava/lang/Object;Lnet/minecraft/class_243;Lnet/minecraft/class_12211;)Ljava/lang/Object;
 		ARG 2 value
 		ARG 3 pos
 		ARG 4 weightedAttributeList
@@ -15,24 +15,22 @@ CLASS net/minecraft/class_12205 net/minecraft/world/attribute/WorldEnvironmentAt
 		ARG 2 mods
 	METHOD method_76397 (Lnet/minecraft/class_12310;)Z
 		ARG 0 function
-	METHOD method_76398 addModifiersFromBiomes (Lnet/minecraft/class_12205$class_12314;Lnet/minecraft/class_12197;Lnet/minecraft/class_4543;)V
+	METHOD method_76398 addModifiersFromBiomes (Lnet/minecraft/class_12205$class_12314;Lnet/minecraft/class_12197;Lnet/minecraft/class_1_1690;)V
 		ARG 0 builder
 		ARG 1 attribute
-		ARG 2 biomeAccess
 	METHOD method_76399 addTimelinesFromWorld (Lnet/minecraft/class_12205$class_12314;Lnet/minecraft/class_1937;)V
 		ARG 0 builder
 		ARG 1 world
-	METHOD method_76400 (Lnet/minecraft/class_12205$class_12314;Lnet/minecraft/class_4543;Lnet/minecraft/class_12197;)V
+	METHOD method_76400 (Lnet/minecraft/class_12205$class_12314;Lnet/minecraft/class_1_1690;Lnet/minecraft/class_12197;)V
 		ARG 2 attribute
 	METHOD method_76401 addModifiersFromDimension (Lnet/minecraft/class_12205$class_12314;Lnet/minecraft/class_2874;)V
 		ARG 0 builder
 		ARG 1 dimensionType
 	METHOD method_76402 (Lnet/minecraft/class_12205$class_12314;Lnet/minecraft/class_1_98;Lnet/minecraft/class_6880;)V
 		ARG 2 attribute
-	METHOD method_76403 addModifiersFromBiomes (Lnet/minecraft/class_12205$class_12314;Lnet/minecraft/class_7225;Lnet/minecraft/class_4543;)V
+	METHOD method_76403 addModifiersFromBiomes (Lnet/minecraft/class_12205$class_12314;Lnet/minecraft/class_7225;Lnet/minecraft/class_1_1690;)V
 		ARG 0 builder
 		ARG 1 biome
-		ARG 2 biomeAccess
 	METHOD method_76404 (Lnet/minecraft/class_6880$class_6883;)Ljava/util/stream/Stream;
 		ARG 0 biome
 	METHOD method_76405 tick ()V

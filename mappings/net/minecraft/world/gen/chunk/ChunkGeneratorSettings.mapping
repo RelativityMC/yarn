@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_5284 net/minecraft/world/gen/chunk/ChunkGeneratorSettings
 	FIELD comp_474 generationShapeConfig Lnet/minecraft/class_5309;
-	FIELD comp_475 defaultBlock Lnet/minecraft/class_2680;
 	FIELD comp_476 defaultFluid Lnet/minecraft/class_2680;
 	FIELD comp_479 seaLevel I
 	FIELD comp_480 mobGenerationDisabled Z
@@ -15,7 +14,6 @@ CLASS net/minecraft/class_5284 net/minecraft/world/gen/chunk/ChunkGeneratorSetti
 	FIELD field_26360 FLOATING_ISLANDS Lnet/minecraft/class_5321;
 	FIELD field_35051 LARGE_BIOMES Lnet/minecraft/class_5321;
 	METHOD comp_474 generationShapeConfig ()Lnet/minecraft/class_5309;
-	METHOD comp_475 defaultBlock ()Lnet/minecraft/class_2680;
 	METHOD comp_476 defaultFluid ()Lnet/minecraft/class_2680;
 	METHOD comp_479 seaLevel ()I
 	METHOD comp_480 mobGenerationDisabled ()Z

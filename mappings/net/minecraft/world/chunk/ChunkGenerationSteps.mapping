@@ -27,8 +27,6 @@ CLASS net/minecraft/class_9768 net/minecraft/world/chunk/ChunkGenerationSteps
 		ARG 0 builder
 	METHOD method_60532 (Lnet/minecraft/class_9770$class_9771;)Lnet/minecraft/class_9770$class_9771;
 		ARG 0 builder
-	METHOD method_60533 (Lnet/minecraft/class_9770$class_9771;)Lnet/minecraft/class_9770$class_9771;
-		ARG 0 builder
 	METHOD method_60534 (Lnet/minecraft/class_9770$class_9771;)Lnet/minecraft/class_9770$class_9771;
 		ARG 0 builder
 	METHOD method_60535 (Lnet/minecraft/class_9770$class_9771;)Lnet/minecraft/class_9770$class_9771;

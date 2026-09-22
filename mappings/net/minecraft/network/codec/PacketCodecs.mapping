@@ -194,11 +194,6 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 		COMMENT <p>Internally, the data is serialized as an NBT element of up to {@code 200000L}
 		COMMENT bytes.
 		ARG 0 codec
-	METHOD method_56371 entryOf (Lnet/minecraft/class_2359;)Lnet/minecraft/class_9139;
-		COMMENT {@return a codec for an entry of {@code iterable}}
-		COMMENT
-		COMMENT @see #indexed
-		ARG 0 iterable
 	METHOD method_56372 (Lnet/minecraft/class_2378;)Lnet/minecraft/class_2359;
 		ARG 0 registry
 	METHOD method_56374 toCollection (Ljava/util/function/IntFunction;)Lnet/minecraft/class_9139$class_9140;

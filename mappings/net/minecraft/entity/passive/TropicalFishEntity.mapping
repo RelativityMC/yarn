@@ -35,12 +35,11 @@ CLASS net/minecraft/class_1474 net/minecraft/entity/passive/TropicalFishEntity
 	METHOD method_66681 getVariety ()Lnet/minecraft/class_1474$class_1475;
 	CLASS class_1475 Pattern
 		FIELD field_41578 CODEC Lcom/mojang/serialization/Codec;
-		FIELD field_41579 INDEX_MAPPER Ljava/util/function/IntFunction;
 		FIELD field_41580 id Ljava/lang/String;
 		FIELD field_41581 text Lnet/minecraft/class_2561;
 		FIELD field_41582 size Lnet/minecraft/class_1474$class_7991;
 		FIELD field_41583 index I
-		FIELD field_55969 PACKET_CODEC Lnet/minecraft/class_9139;
+		FIELD field_55969 PACKET_CODEC Lnet/minecraft/class_1_1686;
 		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Lnet/minecraft/class_1474$class_7991;I)V
 			ARG 3 id
 			ARG 4 size

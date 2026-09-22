@@ -55,7 +55,6 @@ CLASS net/minecraft/class_1_1156 net/minecraft/component/type/BlockTransformerCo
 			METHOD method_1_7770 updateFromNeighbors (Z)Lnet/minecraft/class_1_1156$class_1_1157$class_1_1158;
 				ARG 1 updateFromNeighbors
 	CLASS class_1_1159 DropStrategy
-		FIELD field_1_8082 INDEX_TO_VALUE Ljava/util/function/IntFunction;
 		FIELD field_1_8086 PACKET_CODEC Lnet/minecraft/class_9139;
 		FIELD field_1_8087 id I
 		FIELD field_1_8088 name Ljava/lang/String;
@@ -84,7 +83,6 @@ CLASS net/minecraft/class_1_1156 net/minecraft/component/type/BlockTransformerCo
 				ARG 3 direction
 				ARG 4 stack
 	CLASS class_1_1161 Particle
-		FIELD field_1_8093 INDEX_TO_VALUE Ljava/util/function/IntFunction;
 		FIELD field_1_8097 PACKET_CODEC Lnet/minecraft/class_9139;
 		FIELD field_1_8100 id I
 		FIELD field_1_8101 event I
@@ -100,7 +98,6 @@ CLASS net/minecraft/class_1_1156 net/minecraft/component/type/BlockTransformerCo
 			ARG 2 entity
 			ARG 3 blockPos
 	CLASS class_1_1162 TransformType
-		FIELD field_1_8104 INDEX_TO_VALUE Ljava/util/function/IntFunction;
 		FIELD field_1_8108 PACKET_CODEC Lnet/minecraft/class_9139;
 		FIELD field_1_8109 id I
 		FIELD field_1_8110 name Ljava/lang/String;

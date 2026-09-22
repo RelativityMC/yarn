@@ -9,7 +9,6 @@ CLASS net/minecraft/class_1_1014 net/minecraft/client/gl/GlGpuBufferAllocator
 	FIELD field_1_7072 commandEncoder Lnet/minecraft/class_10860;
 	METHOD <init> (Lnet/minecraft/class_10865;Lnet/minecraft/class_10860;)V
 		ARG 1 device
-		ARG 2 commandEncoder
 	METHOD method_1_6167 start ()V
 	CLASS class_1_1015 Fallback
 		FIELD field_1_6949 arena Lnet/minecraft/class_1_1022;
@@ -56,7 +55,7 @@ CLASS net/minecraft/class_1_1014 net/minecraft/client/gl/GlGpuBufferAllocator
 	CLASS class_1_1020 TransientBuffer
 		FIELD field_1_6956 commandBufferIndex J
 		FIELD field_1_6957 closed Z
-		METHOD <init> (Lnet/minecraft/class_1_1014;IIJ)V
-			ARG 2 glId
-			ARG 3 usage
-			ARG 4 size
+		METHOD <init> (Lnet/minecraft/class_1_1014;Lnet/minecraft/class_10865;IIJ)V
+			ARG 3 glId
+			ARG 4 usage
+			ARG 5 size

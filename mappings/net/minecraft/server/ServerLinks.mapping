@@ -26,18 +26,13 @@ CLASS net/minecraft/class_9782 net/minecraft/server/ServerLinks
 			ARG 1 link
 	CLASS class_9784 Known
 		FIELD field_51982 CODEC Lnet/minecraft/class_9139;
-		FIELD field_51983 FROM_ID Ljava/util/function/IntFunction;
 		FIELD field_51984 id I
 		FIELD field_51985 name Ljava/lang/String;
 		METHOD <init> (Ljava/lang/String;IILjava/lang/String;)V
 			ARG 3 id
 			ARG 4 name
 		METHOD method_60666 getText ()Lnet/minecraft/class_2561;
-		METHOD method_60667 (Lnet/minecraft/class_9782$class_9784;)I
-			ARG 0 known
 		METHOD method_60668 createEntry (Ljava/net/URI;)Lnet/minecraft/class_9782$class_9783;
 			ARG 1 link
-		METHOD method_60670 (Lnet/minecraft/class_9782$class_9784;)I
-			ARG 0 known
 	CLASS class_9816 StringifiedEntry
 		FIELD field_52214 CODEC Lnet/minecraft/class_9139;

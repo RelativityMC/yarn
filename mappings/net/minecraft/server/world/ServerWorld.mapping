@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_3218 net/minecraft/server/world/ServerWorld
 	FIELD field_1_7066 lastEntityId Ljava/util/concurrent/atomic/AtomicInteger;
 	FIELD field_1_8798 sleepManager Lnet/minecraft/class_5838;
-	FIELD field_1_9841 biomeSupplier Lnet/minecraft/class_6780;
+	FIELD field_1_9841 biomeSupplier Lnet/minecraft/class_4543;
 	FIELD field_13948 idleTimeout I
 	FIELD field_13949 blockTickScheduler Lnet/minecraft/class_6757;
 	FIELD field_13950 syncedBlockEventQueue Lit/unimi/dsi/fastutil/objects/ObjectLinkedOpenHashSet;
@@ -40,7 +40,7 @@ CLASS net/minecraft/class_3218 net/minecraft/server/world/ServerWorld
 	FIELD field_59630 waypointHandler Lnet/minecraft/class_11179;
 	FIELD field_62841 subscriptionTracker Lnet/minecraft/class_12026;
 	FIELD field_64261 environmentAttributeAccess Lnet/minecraft/class_12205;
-	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Ljava/util/concurrent/Executor;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_5268;Lnet/minecraft/class_5321;Lnet/minecraft/class_5363;ZJLjava/util/List;Z)V
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Ljava/util/concurrent/Executor;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_5268;Lnet/minecraft/class_5321;Lnet/minecraft/class_5363;ZLjava/util/List;Z)V
 		ARG 1 server
 		ARG 2 workerExecutor
 		ARG 3 session
@@ -48,9 +48,8 @@ CLASS net/minecraft/class_3218 net/minecraft/server/world/ServerWorld
 		ARG 5 worldKey
 		ARG 6 dimensionOptions
 		ARG 7 debugWorld
-		ARG 8 seed
-		ARG 10 spawners
-		ARG 11 shouldTickTime
+		ARG 8 spawners
+		ARG 9 shouldTickTime
 	METHOD method_1_413 (Lnet/minecraft/class_1297;)Ljava/lang/String;
 		ARG 0 entity
 	METHOD method_1_1681 getWeatherState ()Lnet/minecraft/class_1_216;
@@ -63,7 +62,6 @@ CLASS net/minecraft/class_3218 net/minecraft/server/world/ServerWorld
 		ARG 2 pos
 		ARG 3 radius
 		ARG 4 skipReferencedStructures
-	METHOD method_1_9570 getBiomeSupplier ()Lnet/minecraft/class_6780;
 	METHOD method_1_10456 spawnParticles (Lnet/minecraft/class_2394;DDDIDDDDDD)I
 		ARG 1 parameters
 		ARG 2 x

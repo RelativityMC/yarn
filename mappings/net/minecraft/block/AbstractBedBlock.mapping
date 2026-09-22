@@ -1,8 +1,6 @@
 CLASS net/minecraft/class_2244 net/minecraft/block/AbstractBedBlock
 	FIELD field_9967 PART Lnet/minecraft/class_2754;
 	FIELD field_9968 OCCUPIED Lnet/minecraft/class_2746;
-	METHOD <init> (Lnet/minecraft/class_4970$class_2251;)V
-		ARG 1 settings
 	METHOD method_1_7917 destroyOnLeave (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)V
 		ARG 1 world
 		ARG 2 pos

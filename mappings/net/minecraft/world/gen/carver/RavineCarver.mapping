@@ -14,7 +14,7 @@ CLASS net/minecraft/class_5870 net/minecraft/world/gen/carver/RavineCarver
 		ARG 2 pitch
 		ARG 4 branchCount
 		ARG 5 branchIndex
-	METHOD method_33961 carveRavine (Lnet/minecraft/class_5868;Lnet/minecraft/class_1923;JDDDFFFIIDLnet/minecraft/class_1_1155;)V
+	METHOD method_33961 carveRavine (Lnet/minecraft/class_5843$class_1_1694;Lnet/minecraft/class_1923;JDDDFFFIIDLnet/minecraft/class_1_1155;)V
 		ARG 1 heightContext
 		ARG 2 chunkPos
 		ARG 3 seed
@@ -28,19 +28,19 @@ CLASS net/minecraft/class_5870 net/minecraft/world/gen/carver/RavineCarver
 		ARG 15 branchCount
 		ARG 16 yawPitchRatio
 		ARG 18 carvingMask
-	METHOD method_33964 isPositionExcluded (Lnet/minecraft/class_5868;[FDDDI)Z
+	METHOD method_33964 isPositionExcluded (Lnet/minecraft/class_5843$class_1_1694;[FDDDI)Z
 		ARG 1 heightContext
 		ARG 2 horizontalStretchFactors
 		ARG 3 scaledRelativeX
 		ARG 5 scaledRelativeY
 		ARG 7 scaledRelativeZ
 		ARG 9 y
-	METHOD method_33965 (Lnet/minecraft/class_5868;[FDDDI)Z
+	METHOD method_33965 (Lnet/minecraft/class_5843$class_1_1694;[FDDDI)Z
 		ARG 3 scaledRelativeX
 		ARG 5 scaledRelativeY
 		ARG 7 scaledRelativeZ
 		ARG 9 yx
-	METHOD method_33966 createHorizontalStretchFactors (Lnet/minecraft/class_5868;Lnet/minecraft/class_5819;)[F
+	METHOD method_33966 createHorizontalStretchFactors (Lnet/minecraft/class_5843$class_1_1694;Lnet/minecraft/class_5819;)[F
 		ARG 1 heightContext
 		ARG 2 random
 	CLASS class_1_1181 Shape

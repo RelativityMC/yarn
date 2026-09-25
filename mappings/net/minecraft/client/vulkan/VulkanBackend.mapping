@@ -11,6 +11,7 @@ CLASS net/minecraft/class_1_679 net/minecraft/client/vulkan/VulkanBackend
 	FIELD field_1_3449 vmaAllocator J
 	FIELD field_1_6395 markerRecorder Lnet/minecraft/class_1_970;
 	FIELD field_1_9798 featureSet Lnet/minecraft/class_1_1045;
+	FIELD field_1_10643 renderPassManager Lnet/minecraft/class_1_1700;
 	METHOD <init> (Lnet/minecraft/class_1_691;Lnet/minecraft/class_1_717;Lnet/minecraft/class_1_1045;Lorg/lwjgl/vulkan/VkDevice;JLnet/minecraft/class_1_970;)V
 		ARG 1 instance
 		ARG 2 physicalDevice
@@ -25,3 +26,4 @@ CLASS net/minecraft/class_1_679 net/minecraft/client/vulkan/VulkanBackend
 	METHOD method_1_4058 getRawDevice ()Lorg/lwjgl/vulkan/VkDevice;
 	METHOD method_1_4059 getVmaAllocator ()J
 	METHOD method_1_5492 getMarkerRecorder ()Lnet/minecraft/class_1_970;
+	METHOD method_1_10696 getRenderPassManager ()Lnet/minecraft/class_1_1700;

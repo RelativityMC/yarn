@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_1706 com/mojang/blaze3d/pipeline/PipelineValidation
+	METHOD method_1_10769 getInterfaceVarLayout (Ljava/util/List;Ljava/lang/String;Lnet/minecraft/class_1_1229;)Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+		ARG 0 interfaceBindings
+		ARG 1 id
+		ARG 2 shaderType
+	METHOD method_1_10770 assertPipelineLayoutSupported (Lnet/minecraft/class_1_664;Lnet/minecraft/class_1_1285$class_1_1387;)V
+		ARG 0 deviceInfo
+		ARG 1 pipelineLayout
+	CLASS class_1_1385 InterfaceVar

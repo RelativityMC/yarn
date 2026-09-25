@@ -1,10 +1,21 @@
 CLASS net/minecraft/class_9283 net/minecraft/component/type/FireworkExplosionComponent
+	FIELD field_1_10669 DYE_COLORS_BY_RGB Lit/unimi/dsi/fastutil/ints/Int2ObjectOpenHashMap;
+	FIELD field_1_10670 COLOR_TEXTS Lnet/minecraft/class_1_727;
+	FIELD field_1_10671 RGB_BY_DYE_COLOR Lnet/minecraft/class_1_727;
 	FIELD field_49315 DEFAULT Lnet/minecraft/class_9283;
 	FIELD field_49316 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_49317 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_49318 COLORS_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_49319 COLORS_PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_49320 CUSTOM_COLOR_TEXT Lnet/minecraft/class_2561;
+	METHOD method_1_10722 getDyeColor (I)Lnet/minecraft/class_1767;
+		ARG 0 rgb
+	METHOD method_1_10723 getRgb (Lnet/minecraft/class_1767;)I
+		ARG 0 dyeColor
+	METHOD method_1_10724 (Lit/unimi/dsi/fastutil/ints/Int2ObjectOpenHashMap;)V
+		ARG 0 map
+	METHOD method_1_10725 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_2561;
+		ARG 0 color
 	METHOD method_57472 getColorText (I)Lnet/minecraft/class_2561;
 		ARG 0 color
 	METHOD method_57473 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

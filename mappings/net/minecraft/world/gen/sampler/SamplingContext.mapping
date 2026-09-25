@@ -29,6 +29,7 @@ CLASS net/minecraft/class_1_1521 net/minecraft/world/gen/sampler/SamplingContext
 		ARG 2 input
 		ARG 3 output
 		ARG 4 region
+	METHOD method_1_10807 clearCaches ()V
 	CLASS class_1_1522 Builder
 		FIELD field_1_10302 pool Lnet/minecraft/class_1_1570;
 		FIELD field_1_10303 cached Z
@@ -44,3 +45,4 @@ CLASS net/minecraft/class_1_1521 net/minecraft/world/gen/sampler/SamplingContext
 		FIELD field_1_10306 lastSampledValue F
 		FIELD field_1_10307 lastSampledPos J
 		FIELD field_1_10308 region Lnet/minecraft/class_1_1441;
+		METHOD method_1_10808 clear ()V

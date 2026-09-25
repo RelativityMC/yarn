@@ -58,6 +58,8 @@ CLASS net/minecraft/class_1937 net/minecraft/world/World
 		ARG 5 volume
 		ARG 6 pitch
 	METHOD method_1_7594 getEntityMotionRate ()F
+	METHOD method_1_10517 (Lnet/minecraft/class_1657;)Ljava/lang/String;
+		ARG 0 player
 	METHOD method_8413 updateListeners (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;I)V
 		ARG 1 pos
 		ARG 2 oldState

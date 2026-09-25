@@ -11,6 +11,8 @@ CLASS net/minecraft/class_1_715 net/minecraft/client/vulkan/VulkanCommandEncoder
 	FIELD field_1_6425 commandPools [Lnet/minecraft/class_1_907;
 	FIELD field_1_6961 gpuBufferAllocator Lnet/minecraft/class_1_1025;
 	FIELD field_1_9813 copyCommandBuffer Lorg/lwjgl/vulkan/VkCommandBuffer;
+	FIELD field_1_10738 currentDescriptorPool Lnet/minecraft/class_1_1698;
+	FIELD field_1_10739 freeDescriptorPools Lit/unimi/dsi/fastutil/objects/ReferenceList;
 	METHOD <init> (Lnet/minecraft/class_1_679;)V
 		ARG 1 device
 	METHOD method_1_4258 wait (JJ)Z
@@ -46,6 +48,9 @@ CLASS net/minecraft/class_1_715 net/minecraft/client/vulkan/VulkanCommandEncoder
 		ARG 0 commandBuffer
 		ARG 1 memoryStack
 	METHOD method_1_9537 getCopyCommandBuffer ()Lorg/lwjgl/vulkan/VkCommandBuffer;
+	METHOD method_1_10771 allocateDescriptorSet (J)J
+		ARG 1 descriptorSetLayout
+	METHOD method_1_10772 getDescriptorPool ()Lnet/minecraft/class_1_1698;
 	CLASS 1 1
 		FIELD field_1_3671 done Z
 		FIELD field_1_3672 waitValue J

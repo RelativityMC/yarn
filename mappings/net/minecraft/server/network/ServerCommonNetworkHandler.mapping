@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_8609 net/minecraft/server/network/ServerCommonNetworkHandler
+	FIELD field_1_10748 debugInfo Lnet/minecraft/class_1_1688;
 	FIELD field_45011 KEEP_ALIVE_INTERVAL I
 	FIELD field_45012 server Lnet/minecraft/server/MinecraftServer;
 	FIELD field_45013 connection Lnet/minecraft/class_2535;
@@ -18,10 +19,12 @@ CLASS net/minecraft/class_8609 net/minecraft/server/network/ServerCommonNetworkH
 		ARG 1 server
 		ARG 2 connection
 		ARG 3 clientData
+	METHOD method_1_10780 getClientDebugInfo ()Lnet/minecraft/class_1_1688;
 	METHOD method_14364 sendPacket (Lnet/minecraft/class_2596;)V
 		ARG 1 packet
 	METHOD method_52391 send (Lnet/minecraft/class_2596;Lio/netty/channel/ChannelFutureListener;)V
 		ARG 1 packet
+		ARG 2 listener
 	METHOD method_52396 disconnect (Lnet/minecraft/class_2561;)V
 		ARG 1 reason
 	METHOD method_52400 baseTick ()V

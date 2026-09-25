@@ -9,3 +9,5 @@ CLASS net/minecraft/class_4785 net/minecraft/world/gen/structure/NetherFossilStr
 		ARG 3 holder
 	METHOD method_41673 (Lnet/minecraft/class_4785;)Lnet/minecraft/class_6122;
 		ARG 0 structure
+	METHOD method_41674 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

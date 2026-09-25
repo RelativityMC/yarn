@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_6724 net/minecraft/world/gen/surfacebuilder/SurfaceBuilder
 	FIELD field_1_10259 chunkSurfaceLevel Lnet/minecraft/class_6910;
+	FIELD field_1_10743 biomeSurfaceSampler Lnet/minecraft/class_1_1699;
 	FIELD field_35275 WHITE_TERRACOTTA Lnet/minecraft/class_2680;
 	FIELD field_35276 ORANGE_TERRACOTTA Lnet/minecraft/class_2680;
 	FIELD field_35277 TERRACOTTA Lnet/minecraft/class_2680;
@@ -19,6 +20,7 @@ CLASS net/minecraft/class_6724 net/minecraft/world/gen/surfacebuilder/SurfaceBui
 		ARG 3 chunkSurfaceLevel
 		ARG 4 randomDeriver
 	METHOD method_1_10074 getChunkSurfaceLevel ()Lnet/minecraft/class_6910;
+	METHOD method_1_10778 getBiomeSurfaceSampler ()Lnet/minecraft/class_1_1699;
 	METHOD method_39103 getTerracottaBlock (III)Lnet/minecraft/class_2680;
 		ARG 1 x
 		ARG 2 y

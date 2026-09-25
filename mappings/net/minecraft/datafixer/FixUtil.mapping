@@ -5,6 +5,17 @@ CLASS net/minecraft/class_9228 net/minecraft/datafixer/FixUtil
 		ARG 0 map
 	METHOD method_1_9437 (Lcom/mojang/serialization/Dynamic;Ljava/util/Map;)Ljava/util/Optional;
 		ARG 1 map
+	METHOD method_1_10621 getTypedOrThrow (Lcom/mojang/datafixers/types/Type;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/datafixers/Typed;
+		ARG 0 type
+		ARG 1 dynamic
+	METHOD method_1_10622 getTypedOrThrow (Lcom/mojang/datafixers/types/Type;Lcom/mojang/serialization/Dynamic;Z)Lcom/mojang/datafixers/Typed;
+		ARG 0 type
+		ARG 1 dynamic
+		ARG 2 allowPartial
+	METHOD method_1_10623 transformOverDynamic (Lcom/mojang/datafixers/Typed;Lcom/mojang/datafixers/types/Type;Ljava/util/function/UnaryOperator;)Lcom/mojang/datafixers/Typed;
+		ARG 0 input
+		ARG 1 type
+		ARG 2 op
 	METHOD method_56943 fixBlockPos (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
 		ARG 0 dynamic
 	METHOD method_57182 withType (Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;

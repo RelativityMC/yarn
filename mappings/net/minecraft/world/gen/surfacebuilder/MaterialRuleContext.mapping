@@ -10,6 +10,7 @@ CLASS net/minecraft/class_6694 net/minecraft/world/gen/surfacebuilder/MaterialRu
 	FIELD field_1_10286 flatRegion Lnet/minecraft/class_1_1441;
 	FIELD field_1_10287 steepnessX I
 	FIELD field_1_10288 steepnessZ I
+	FIELD field_1_10762 cachedDensityProviders Ljava/util/Map;
 	FIELD field_35233 surfaceBuilder Lnet/minecraft/class_6724;
 	FIELD field_35241 heightContext Lnet/minecraft/class_5843$class_1_1694;
 	FIELD field_35606 posToBiome Lnet/minecraft/class_1_1690;
@@ -33,6 +34,8 @@ CLASS net/minecraft/class_6694 net/minecraft/world/gen/surfacebuilder/MaterialRu
 		ARG 2 noiseConfig
 		ARG 3 region
 		ARG 4 contextualSamplerProvider
+		ARG 5 posToBiome
+		ARG 6 heightContext
 		ARG 7 includedBiomes
 	METHOD method_1_5130 getCurrentBiome ()Lnet/minecraft/class_6880;
 	METHOD method_1_5439 computeSupplier2d (Lnet/minecraft/class_5321;)Ljava/util/function/DoubleSupplier;
@@ -64,6 +67,8 @@ CLASS net/minecraft/class_6694 net/minecraft/world/gen/surfacebuilder/MaterialRu
 	METHOD method_1_10116 getSteepnessX ()I
 	METHOD method_1_10117 getSteepnessZ ()I
 	METHOD method_1_10118 getFluidHeight ()I
+	METHOD method_1_10797 (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6694$class_1_1710;
+		ARG 1 f
 	METHOD method_39072 initHorizontalContext (IIII)V
 		ARG 1 blockX
 		ARG 2 blockZ
@@ -83,6 +88,18 @@ CLASS net/minecraft/class_6694 net/minecraft/world/gen/surfacebuilder/MaterialRu
 	CLASS 2 2
 		FIELD field_1_6336 lastQueriedValue D
 		FIELD field_1_6337 lastQueriedPos J
+	CLASS class_1_1710 DensityProvider
+		FIELD field_1_10763 yVariant Z
+		FIELD field_1_10764 lastQueriedPosValue J
+		FIELD field_1_10765 sampleOfLastQueriedPosValue F
+		FIELD field_1_10766 buf Lnet/minecraft/class_1_1516;
+		FIELD field_1_10767 region Lnet/minecraft/class_1_1441;
+		FIELD field_1_10768 sampler Lnet/minecraft/class_1_1519$class_1_1520;
+		METHOD <init> (Lnet/minecraft/class_6694;Lnet/minecraft/class_1_1519$class_1_1520;ZLnet/minecraft/class_1_1441;)V
+			ARG 2 sampler
+			ARG 3 yVariant
+			ARG 4 region
+		METHOD method_1_10798 populate ()V
 	CLASS class_6702 LazyAbstractPredicate
 		FIELD field_35246 result Ljava/lang/Boolean;
 		FIELD field_35622 uniqueValue J

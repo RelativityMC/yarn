@@ -20,11 +20,19 @@ CLASS net/minecraft/class_2794 net/minecraft/world/gen/chunk/ChunkGenerator
 		ARG 4 world
 		ARG 5 chunkRegion
 		ARG 6 includedBiomes
-	METHOD method_1_9950 modifyBiomeSupplier (Lnet/minecraft/class_6748;Lnet/minecraft/class_2839;Lnet/minecraft/class_6780;)Lnet/minecraft/class_6780;
+	METHOD method_1_9950 applyBlendingAndRetrogen (Lnet/minecraft/class_6748;Lnet/minecraft/class_2839;Lnet/minecraft/class_6780;)Lnet/minecraft/class_6780;
 		ARG 1 blender
+		ARG 2 protoChunk
 		ARG 3 biomeSupplier
 	METHOD method_1_9951 populateBiomesSync (Lnet/minecraft/class_6748;Lnet/minecraft/class_7138;Lnet/minecraft/class_2839;Lnet/minecraft/class_11897;)V
+		ARG 1 blender
 		ARG 2 noiseConfig
+		ARG 3 protoChunk
+		ARG 4 palettesFactory
+	METHOD method_1_10652 createBiomes (Lnet/minecraft/class_6780;Lnet/minecraft/class_7138;Lnet/minecraft/class_2791;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 biomeSupplier
+		ARG 2 noiseConfig
+		ARG 3 chunk
 	METHOD method_12098 getBiomeSource ()Lnet/minecraft/class_1966;
 	METHOD method_12100 getSpawnHeight (Lnet/minecraft/class_5539;)I
 		ARG 1 world
@@ -80,6 +88,9 @@ CLASS net/minecraft/class_2794 net/minecraft/world/gen/chunk/ChunkGenerator
 	METHOD method_20402 getHeightOnGround (IILnet/minecraft/class_2902$class_2903;Lnet/minecraft/class_5539;Lnet/minecraft/class_7138;)I
 		ARG 1 x
 		ARG 2 z
+		ARG 3 heightmapType
+		ARG 4 world
+		ARG 5 noiseConfig
 	METHOD method_26261 getColumnSample (IILnet/minecraft/class_5539;Lnet/minecraft/class_7138;)Lnet/minecraft/class_4966;
 		COMMENT Returns a sample of all the block states in a column for use in structure generation.
 		ARG 1 x
@@ -96,9 +107,11 @@ CLASS net/minecraft/class_2794 net/minecraft/world/gen/chunk/ChunkGenerator
 		ARG 6 start
 	METHOD method_38268 (Lnet/minecraft/class_3195;)Ljava/lang/Integer;
 		ARG 0 structureType
-	METHOD method_38275 populateBiomes (Lnet/minecraft/class_7138;Lnet/minecraft/class_6748;Lnet/minecraft/class_2839;Lnet/minecraft/class_11897;)Ljava/util/concurrent/CompletableFuture;
+	METHOD method_38275 createNoiseBiomes (Lnet/minecraft/class_7138;Lnet/minecraft/class_6748;Lnet/minecraft/class_2839;Lnet/minecraft/class_11897;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 noiseConfig
 		ARG 2 blender
+		ARG 3 protoChunk
+		ARG 4 palettesFactory
 	METHOD method_39301 getCodecKey ()Ljava/util/Optional;
 	METHOD method_39462 getBlockBoxForChunk (Lnet/minecraft/class_2791;)Lnet/minecraft/class_3341;
 		ARG 0 chunk
@@ -145,6 +158,8 @@ CLASS net/minecraft/class_2794 net/minecraft/world/gen/chunk/ChunkGenerator
 		ARG 11 multiNoiseSampler
 	METHOD method_41045 (Lnet/minecraft/class_3449;Lnet/minecraft/class_2378;)Ljava/lang/String;
 		ARG 1 structureTypeRegistry
+	METHOD method_41046 (Lnet/minecraft/class_1_1143;)Ljava/util/Set;
+		ARG 0 placement
 	METHOD method_41047 (Lnet/minecraft/class_2338;Lnet/minecraft/class_3449;)Z
 		ARG 1 start
 	METHOD method_41052 (Lorg/apache/commons/lang3/mutable/MutableBoolean;Ljava/util/function/Predicate;Lnet/minecraft/class_3449;)V

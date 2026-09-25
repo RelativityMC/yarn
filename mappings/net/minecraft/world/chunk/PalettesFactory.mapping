@@ -1,4 +1,9 @@
 CLASS net/minecraft/class_11897 net/minecraft/world/chunk/PalettesFactory
+	METHOD method_1_10766 fromRegistries (Lnet/minecraft/class_2378;)Lnet/minecraft/class_11897;
+		ARG 0 biomes
+	METHOD method_1_10767 getBiomeContainerWithNoiseBiomeProvider ()Lnet/minecraft/class_2841;
+	METHOD method_1_10768 getNoiseBiomeContainer (Lnet/minecraft/class_2841$class_1_1693;)Lnet/minecraft/class_2841;
+		ARG 1 initializer
 	METHOD method_74158 getBlockStateContainer ()Lnet/minecraft/class_2841;
 	METHOD method_74159 fromRegistryManager (Lnet/minecraft/class_5455;)Lnet/minecraft/class_11897;
 		ARG 0 registryManager

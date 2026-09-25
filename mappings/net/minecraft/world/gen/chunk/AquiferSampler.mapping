@@ -3,12 +3,20 @@ CLASS net/minecraft/class_6350 net/minecraft/world/gen/chunk/AquiferSampler
 	METHOD method_36381 seaLevel (Lnet/minecraft/class_6350$class_6565;)Lnet/minecraft/class_6350;
 		ARG 0 fluidLevelSampler
 	METHOD method_38317 apply (IIID)Lnet/minecraft/class_2680;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 		ARG 4 density
 	CLASS class_1_1311 Config
 		METHOD method_1_8587 createSampler (Lnet/minecraft/class_1_1552;Lnet/minecraft/class_6574;Lnet/minecraft/class_1_1441;Lnet/minecraft/class_6350$class_6565;)Lnet/minecraft/class_6350;
+			ARG 1 samplerProvider
+			ARG 2 splitter
+			ARG 3 region
 			ARG 4 fluidLevelSampler
 		METHOD method_1_8588 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance
+		METHOD method_1_10591 visit (Lnet/minecraft/class_1_1517;)Lnet/minecraft/class_6350$class_1_1311;
+			ARG 1 visitor
 	CLASS class_5832 Impl
 		FIELD field_1_9016 exclusion Lnet/minecraft/class_1_1519$class_1_1520;
 		FIELD field_1_9017 surfaceLevelCache Lit/unimi/dsi/fastutil/longs/Long2IntMap;
@@ -37,7 +45,10 @@ CLASS net/minecraft/class_6350 net/minecraft/world/gen/chunk/AquiferSampler
 		FIELD field_36221 FLUID_TICK_DENSITY_FACTOR_THRESHOLD D
 		FIELD field_61452 maxY I
 		METHOD <init> (Lnet/minecraft/class_1_1552;Lnet/minecraft/class_6350$class_1_1311;Lnet/minecraft/class_6574;Lnet/minecraft/class_1_1441;Lnet/minecraft/class_6350$class_6565;)V
+			ARG 1 samplerProvider
+			ARG 2 config
 			ARG 3 randomSplitter
+			ARG 4 region
 			ARG 5 fluidLevelSampler
 		METHOD method_1_8590 (IIJ)I
 			ARG 3 pos
@@ -52,6 +63,9 @@ CLASS net/minecraft/class_6350 net/minecraft/world/gen/chunk/AquiferSampler
 		METHOD method_33734 getCellX (I)I
 			ARG 0 x
 		METHOD method_33735 calculateDensity (IIILorg/apache/commons/lang3/mutable/MutableDouble;Lnet/minecraft/class_6350$class_6351;Lnet/minecraft/class_6350$class_6351;)D
+			ARG 1 x
+			ARG 2 y
+			ARG 3 z
 			ARG 4 cachedBarrierNoiseValue
 			ARG 5 nearerLevel
 			ARG 6 fartherLevel
@@ -87,6 +101,7 @@ CLASS net/minecraft/class_6350 net/minecraft/world/gen/chunk/AquiferSampler
 			ARG 2 blockY
 			ARG 3 blockZ
 			ARG 4 defaultFluidLevel
+			ARG 5 minSurfaceLevel
 		METHOD method_72677 reconstructX (II)I
 			ARG 0 cellX
 			ARG 1 cellLocalX

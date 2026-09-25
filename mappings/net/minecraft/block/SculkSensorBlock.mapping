@@ -3,7 +3,9 @@ CLASS net/minecraft/class_5703 net/minecraft/block/SculkSensorBlock
 	FIELD field_28112 POWER Lnet/minecraft/class_2758;
 	FIELD field_28113 WATERLOGGED Lnet/minecraft/class_2746;
 	FIELD field_28114 OUTLINE_SHAPE Lnet/minecraft/class_265;
+	FIELD field_31239 COOLDOWN_TICKS I
 	FIELD field_43248 RESONATION_NOTE_PITCHES [F
+	FIELD field_44607 BLOCK_TICK_DELAY_TICKS I
 	METHOD method_32902 updateNeighbors (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
 		ARG 0 world
 		ARG 1 pos

@@ -143,6 +143,17 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 		ARG 0 maxLength
 	METHOD method_1_9027 ([B)Ljava/security/PublicKey;
 		ARG 0 bytes
+	METHOD method_1_10580 ofEnum (Ljava/lang/Class;Ljava/util/function/ToIntFunction;)Lnet/minecraft/class_1_1686;
+		ARG 0 clazz
+		ARG 1 toId
+	METHOD method_1_10581 ofEnum (Ljava/lang/Class;Ljava/util/function/ToIntFunction;Lnet/minecraft/class_7995$class_7996;)Lnet/minecraft/class_1_1686;
+		ARG 0 clazz
+		ARG 1 toId
+		ARG 2 outOfBoundsHandling
+	METHOD method_1_10582 ofEnum (Ljava/lang/Class;Ljava/util/function/ToIntFunction;Ljava/lang/Enum;)Lnet/minecraft/class_1_1686;
+		ARG 0 clazz
+		ARG 1 toId
+		ARG 2 fallback
 	METHOD method_56363 toList ()Lnet/minecraft/class_9139$class_9140;
 		COMMENT Used to make a codec for a list of values using {@link PacketCodec#collect}.
 		COMMENT This creates an {@link java.util.ArrayList}, so the decoded result can be modified.
@@ -333,7 +344,8 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 	METHOD method_68862 (ILjava/util/function/BiFunction;Lnet/minecraft/class_9139;)Lnet/minecraft/class_9139;
 		ARG 2 codec
 	METHOD method_68863 (Lio/netty/buffer/ByteBuf;Lio/netty/buffer/ByteBuf;)Lio/netty/buffer/ByteBuf;
-		ARG 1 bufToWrap
+		ARG 0 entire
+		ARG 1 slice
 	METHOD method_68864 lengthPrepended (I)Lnet/minecraft/class_9139$class_9140;
 		ARG 0 maxSize
 	METHOD method_71570 (Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/DynamicOps;Lnet/minecraft/class_9139;)Lnet/minecraft/class_9139;
@@ -345,6 +357,9 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 		ARG 0 maxLength
 	METHOD method_72185 nbtElement (Ljava/util/function/Supplier;)Lnet/minecraft/class_9139;
 		ARG 0 sizeTrackerSupplier
+	METHOD method_72186 (Lnet/minecraft/class_9129;Lio/netty/buffer/ByteBuf;)Lnet/minecraft/class_9129;
+		ARG 0 entire
+		ARG 1 slice
 	METHOD method_72187 lengthPrependedRegistry (I)Lnet/minecraft/class_9139$class_9140;
 		ARG 0 maxSize
 	CLASS 3 3

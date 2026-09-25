@@ -16,6 +16,29 @@ CLASS net/minecraft/class_801 net/minecraft/client/render/model/json/GeneratedIt
 		ARG 1 interner
 		ARG 2 settings
 		ARG 3 spriteInfo
+	METHOD method_1_10788 addVerticalEdges (Lnet/minecraft/class_7764;Lnet/minecraft/class_801$class_1_1709;Lnet/minecraft/class_801$class_1_1709;Ljava/util/BitSet;Ljava/util/BitSet;)V
+		ARG 0 spriteContents
+		ARG 1 left
+		ARG 2 right
+		ARG 3 leftEdges
+		ARG 4 rightEdges
+	METHOD method_1_10789 addHorizontalEdges (Lnet/minecraft/class_7764;ILnet/minecraft/class_801$class_1_1709;Lnet/minecraft/class_801$class_1_1709;Ljava/util/BitSet;Ljava/util/BitSet;)V
+		ARG 0 spriteContents
+		ARG 1 frame
+		ARG 2 up
+		ARG 3 down
+		ARG 4 leftEdgesOut
+		ARG 5 rightEdgesOut
+	METHOD method_1_10790 isBorderSide (Lnet/minecraft/class_801$class_803;Lnet/minecraft/class_7764;IIIII)Z
+		ARG 0 side
+		ARG 1 spriteContents
+		ARG 2 frame
+		ARG 3 x
+		ARG 4 y
+		ARG 5 width
+		ARG 6 height
+	METHOD method_1_10791 (Ljava/util/BitSet;Ljava/util/BitSet;Lnet/minecraft/class_7764;Lnet/minecraft/class_801$class_1_1709;Lnet/minecraft/class_801$class_1_1709;Lnet/minecraft/class_801$class_1_1709;Lnet/minecraft/class_801$class_1_1709;I)V
+		ARG 7 frame
 	METHOD method_3477 isPixelTransparent (Lnet/minecraft/class_7764;IIIII)Z
 		ARG 0 spriteContents
 		ARG 1 frame
@@ -31,6 +54,20 @@ CLASS net/minecraft/class_801 net/minecraft/client/render/model/json/GeneratedIt
 		ARG 2 settings
 		ARG 3 model
 	CLASS class_1_345 Settings
+	CLASS class_1_1709 EdgePixelTracker
+		FIELD field_1_10753 side Lnet/minecraft/class_801$class_803;
+		FIELD field_1_10754 width I
+		FIELD field_1_10755 edgePixelsOut Ljava/util/Collection;
+		FIELD field_1_10756 startX I
+		FIELD field_1_10757 startY I
+		METHOD <init> (Lnet/minecraft/class_801$class_803;Ljava/util/Collection;)V
+			ARG 1 side
+			ARG 2 edgePixelsOut
+		METHOD method_1_10792 finish ()V
+		METHOD method_1_10793 addEdge (IIZ)V
+			ARG 1 x
+			ARG 2 y
+			ARG 3 edge
 	CLASS class_803 Side
 		FIELD field_4276 direction Lnet/minecraft/class_2350;
 		METHOD <init> (Ljava/lang/String;ILnet/minecraft/class_2350;)V

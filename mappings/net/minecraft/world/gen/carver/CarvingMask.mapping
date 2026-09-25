@@ -7,6 +7,14 @@ CLASS net/minecraft/class_6643 net/minecraft/world/gen/carver/CarvingMask
 		ARG 1 bottomY
 		ARG 2 topY
 	METHOD method_1_7353 isEmpty ()Z
+	METHOD method_1_10605 retain (Lnet/minecraft/class_6643$class_6828;)V
+		ARG 1 predicate
+	METHOD method_1_10606 getColumn (II)Lnet/minecraft/class_6643$class_1_1687;
+		ARG 1 offsetX
+		ARG 2 offsetZ
+	METHOD method_1_10607 getIndexXz (II)I
+		ARG 1 offsetX
+		ARG 2 offsetZ
 	METHOD method_38865 (III)V
 		ARG 1 offsetX
 		ARG 2 y
@@ -15,6 +23,12 @@ CLASS net/minecraft/class_6643 net/minecraft/world/gen/carver/CarvingMask
 		ARG 1 offsetX
 		ARG 2 y
 		ARG 3 offsetZ
+	CLASS class_1_1687 Column
+		FIELD field_1_10585 indexXz I
+		METHOD <init> (Lnet/minecraft/class_6643;I)V
+			ARG 2 index
+		METHOD method_1_10608 get (I)Z
+			ARG 1 y
 	CLASS class_6828 MaskPredicate
 		METHOD method_1_117 test (III)Z
 			ARG 1 offsetX

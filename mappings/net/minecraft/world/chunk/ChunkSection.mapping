@@ -13,6 +13,11 @@ CLASS net/minecraft/class_2826 net/minecraft/world/chunk/ChunkSection
 	METHOD <init> (Lnet/minecraft/class_11897;)V
 		ARG 1 palettesFactory
 	METHOD method_1_2542 hasFluids ()Z
+	METHOD method_1_10684 populateBiomes (Lnet/minecraft/class_1_1690;III)V
+		ARG 1 biomeView
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_12253 calculateCounts ()V
 	METHOD method_12254 getBlockState (III)Lnet/minecraft/class_2680;
 		ARG 1 x
@@ -48,6 +53,9 @@ CLASS net/minecraft/class_2826 net/minecraft/world/chunk/ChunkSection
 		ARG 1 predicate
 	METHOD method_38292 isEmpty ()Z
 	METHOD method_38293 getBiome (III)Lnet/minecraft/class_6880;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_38294 getBiomeContainer ()Lnet/minecraft/class_7522;
 	METHOD method_49526 readBiomePacket (Lnet/minecraft/class_2540;)V
 		ARG 1 buf

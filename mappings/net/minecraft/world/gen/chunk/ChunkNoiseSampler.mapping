@@ -4,8 +4,31 @@ CLASS net/minecraft/class_1_1490 net/minecraft/world/gen/chunk/ChunkNoiseSampler
 	FIELD field_1_10163 contextualSamplerProvider Lnet/minecraft/class_1_1552;
 	FIELD field_1_10164 noiseConfig Lnet/minecraft/class_7138;
 	FIELD field_1_10165 region Lnet/minecraft/class_1_1441;
+	FIELD field_1_10599 maxYs [I
+	FIELD field_1_10600 densityBuffer Lnet/minecraft/class_1_1572;
+	FIELD field_1_10601 verticalBlockSample Lnet/minecraft/class_4966;
+	FIELD field_1_10602 samplingContext Lnet/minecraft/class_1_1521;
 	METHOD <init> (Lnet/minecraft/class_7138;Lnet/minecraft/class_1_1441;Lnet/minecraft/class_10352;Lnet/minecraft/class_6910;Lnet/minecraft/class_6350$class_1_1311;Lnet/minecraft/class_6350$class_6565;)V
 		ARG 1 noiseConfig
+		ARG 2 region
+		ARG 3 params
+		ARG 4 densityFunction
+		ARG 5 aquifers
+		ARG 6 fluidLevelSampler
 	METHOD method_1_9945 getAquiferSampler ()Lnet/minecraft/class_6350;
 	METHOD method_1_9946 getContextualSamplerProvider ()Lnet/minecraft/class_1_1552;
 	METHOD method_1_9947 getRegion ()Lnet/minecraft/class_1_1441;
+	METHOD method_1_10644 findMaxY (Lnet/minecraft/class_1_1441;IILnet/minecraft/class_1_1572;Lnet/minecraft/class_6350;)I
+		ARG 0 region
+		ARG 1 regionX
+		ARG 2 regionZ
+		ARG 3 densityBuffer
+		ARG 4 aquiferSampler
+	METHOD method_1_10645 getMaxY (II)I
+		ARG 1 regionX
+		ARG 2 regionZ
+	METHOD method_1_10646 getMaxAbsoluteY ()I
+	METHOD method_1_10647 getColumnSample (II)Lnet/minecraft/class_4966;
+		ARG 1 x
+		ARG 2 z
+	METHOD method_1_10648 getYTruncatedRegion ()Lnet/minecraft/class_1_1441;

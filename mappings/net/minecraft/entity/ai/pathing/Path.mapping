@@ -12,6 +12,22 @@ CLASS net/minecraft/class_11 net/minecraft/entity/ai/pathing/Path
 		ARG 3 reachesTarget
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
+	METHOD method_1_9042 (Lnet/minecraft/class_11;)Ljava/lang/Boolean;
+		ARG 0 path
+	METHOD method_1_9043 (Lnet/minecraft/class_11;)Ljava/lang/Integer;
+		ARG 0 path
+	METHOD method_1_9044 (Lnet/minecraft/class_11;)Lnet/minecraft/class_2338;
+		ARG 0 path
+	METHOD method_1_9045 (Lnet/minecraft/class_11;)Ljava/util/List;
+		ARG 0 path
+	METHOD method_1_9046 (Lnet/minecraft/class_11;)Lnet/minecraft/class_11$class_8644;
+		ARG 0 path
+	METHOD method_1_9047 (Ljava/lang/Boolean;Ljava/lang/Integer;Lnet/minecraft/class_2338;Ljava/util/List;Lnet/minecraft/class_11$class_8644;)Lnet/minecraft/class_11;
+		ARG 0 reachestTarget
+		ARG 1 currentNodeIndex
+		ARG 2 target
+		ARG 3 nodes
+		ARG 4 debugNodeInfos
 	METHOD method_33 setNode (ILnet/minecraft/class_9;)V
 		ARG 1 index
 		ARG 2 node
@@ -43,7 +59,10 @@ CLASS net/minecraft/class_11 net/minecraft/entity/ai/pathing/Path
 		ARG 1 index
 	METHOD method_31032 getCurrentNodePos ()Lnet/minecraft/class_2338;
 	METHOD method_35500 setDebugInfo (Ljava/util/List;Ljava/util/List;Ljava/util/Set;)V
+		ARG 1 openSet
+		ARG 2 closedSet
 		ARG 3 debugTargetNodes
 	METHOD method_52604 getDebugNodeInfos ()Lnet/minecraft/class_11$class_8644;
 	METHOD method_52605 copy ()Lnet/minecraft/class_11;
 	CLASS class_8644 DebugNodeInfo
+		FIELD field_1_9396 PACKET_CODEC Lnet/minecraft/class_9139;

@@ -1,0 +1,30 @@
+CLASS net/minecraft/class_1_1682 net/minecraft/network/HostParameters
+	FIELD field_1_10563 EMPTY Lnet/minecraft/class_1_1682;
+	FIELD field_1_10564 AMPERSAND_SPLITTER Lcom/google/common/base/Splitter;
+	FIELD field_1_10565 stringified Ljava/lang/String;
+	FIELD field_1_10566 parsed Ljava/util/Map;
+	METHOD <init> (Ljava/lang/String;Ljava/util/Map;)V
+		ARG 1 stringified
+		ARG 2 parsed
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other
+	METHOD method_1_10529 getParsed ()Ljava/util/Map;
+	METHOD method_1_10530 getStringified ()Ljava/lang/String;
+	METHOD method_1_10531 escape (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 unescaped
+	METHOD method_1_10532 copy ()Lnet/minecraft/class_1_1682;
+	METHOD method_1_10533 ofMap (Ljava/util/Map;)Lnet/minecraft/class_1_1682;
+		ARG 0 properties
+	METHOD method_1_10534 ofString (Ljava/lang/String;)Lnet/minecraft/class_1_1682;
+		ARG 0 string
+	METHOD method_1_10535 get (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 key
+	METHOD method_1_10536 isEmpty ()Z
+	METHOD method_1_10537 addParameter (Ljava/lang/String;Lcom/google/common/collect/ImmutableMap$Builder;)V
+		ARG 0 entry
+		ARG 1 mapBuilder
+	METHOD method_1_10538 unescape (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 escaped
+	METHOD method_1_10539 with (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/class_1_1682;
+		ARG 1 key
+		ARG 2 value

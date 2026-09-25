@@ -1,6 +1,8 @@
 CLASS net/minecraft/class_5955 net/minecraft/block/Oxidizable
 	FIELD field_29564 OXIDATION_LEVEL_INCREASES Ljava/util/function/Supplier;
 	FIELD field_29565 OXIDATION_LEVEL_DECREASES Ljava/util/function/Supplier;
+	METHOD method_1_4976 (Lcom/google/common/collect/ImmutableBiMap$Builder;Lnet/minecraft/class_1_758;)V
+		ARG 1 block
 	METHOD method_34732 getDecreasedOxidationBlock (Lnet/minecraft/class_2248;)Ljava/util/Optional;
 		ARG 0 block
 	METHOD method_34733 (Lnet/minecraft/class_2680;Lnet/minecraft/class_2248;)Lnet/minecraft/class_2680;
@@ -16,10 +18,15 @@ CLASS net/minecraft/class_5955 net/minecraft/block/Oxidizable
 	METHOD method_34738 getUnaffectedOxidationState (Lnet/minecraft/class_2680;)Lnet/minecraft/class_2680;
 		ARG 0 state
 	CLASS class_5811 OxidationLevel
+		FIELD field_1_10633 index I
 		FIELD field_46493 CODEC Lcom/mojang/serialization/Codec;
-		FIELD field_46494 id Ljava/lang/String;
+		FIELD field_46494 name Ljava/lang/String;
 		FIELD field_61432 PACKET_CODEC Lnet/minecraft/class_1_1686;
+		METHOD <init> (Ljava/lang/String;IILjava/lang/String;)V
+			ARG 3 index
+			ARG 4 name
 		METHOD method_1_4432 forEach (Ljava/util/function/Consumer;)V
 			ARG 0 callback
+		METHOD method_1_10682 getIndex ()I
 		METHOD method_72643 getIncreased ()Lnet/minecraft/class_5955$class_5811;
 		METHOD method_72644 getDecreased ()Lnet/minecraft/class_5955$class_5811;

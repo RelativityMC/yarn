@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_1_1690 net/minecraft/world/BiomeView
+	METHOD method_1_10641 generateBiomes (Lnet/minecraft/class_7522;III)Lnet/minecraft/class_2841;
+		COMMENT Generates biomes for the region from {@code (west, bottom, north)} to
+		COMMENT {@code (west + 15, bottom + 15, north + 15)}} at once.
+		COMMENT
+		COMMENT Some implementations might do this more efficiently than calling
+		COMMENT {@link #getBiome(int, int, int)} repeatedly.
+		COMMENT
+		COMMENT {@return a {@link PalettedContainer} of these biomes}
+		ARG 1 template
+		ARG 2 west
+		ARG 3 bottom
+		ARG 4 north
+	METHOD method_1_10642 getBiome (Lnet/minecraft/class_2338;)Lnet/minecraft/class_6880;
+		ARG 1 pos
+	METHOD method_16359 getBiome (III)Lnet/minecraft/class_6880;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

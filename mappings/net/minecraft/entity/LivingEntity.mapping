@@ -295,6 +295,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 target
 		ARG 2 source
 		ARG 3 damageAmount
+		ARG 4 resisted
 	METHOD method_6062 isImmobile ()Z
 	METHOD method_6063 getMaxHealth ()F
 	METHOD method_6064 getNextAirOnLand (I)I
@@ -350,6 +351,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 2 attacker
 		ARG 3 source
 		ARG 4 damageAmount
+		ARG 5 resistKnockback
 	METHOD method_6091 travel (Lnet/minecraft/class_243;)V
 		COMMENT Allows you to do certain speed and velocity calculations. This is useful for custom vehicle behavior, or custom entity movement. This is not to be confused with AI.
 		COMMENT

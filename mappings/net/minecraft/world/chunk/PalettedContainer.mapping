@@ -9,14 +9,40 @@ CLASS net/minecraft/class_2841 net/minecraft/world/chunk/PalettedContainer
 	METHOD <init> (Ljava/lang/Object;Lnet/minecraft/class_6563;)V
 		ARG 1 defaultValue
 		ARG 2 paletteProvider
+	METHOD <init> (Ljava/lang/Object;Lnet/minecraft/class_6563;I)V
+		ARG 1 defaultValue
+		ARG 2 paletteProvider
+		ARG 3 bits
 	METHOD <init> (Lnet/minecraft/class_2841;)V
 		ARG 1 container
+	METHOD <init> (Lnet/minecraft/class_6563;I)V
+		ARG 1 paletteProvider
+		ARG 2 bits
 	METHOD <init> (Lnet/minecraft/class_6563;Lnet/minecraft/class_11895;Lnet/minecraft/class_6490;Lnet/minecraft/class_2837;)V
 		ARG 1 paletteProvider
 		ARG 2 type
 		ARG 3 storage
 		ARG 4 palette
-	METHOD method_12322 set (ILjava/lang/Object;)V
+	METHOD method_1_10685 fillUnsafe (IIIIIILjava/lang/Object;)V
+		ARG 1 minX
+		ARG 2 minY
+		ARG 3 minZ
+		ARG 4 maxX
+		ARG 5 maxY
+		ARG 6 maxZ
+		ARG 7 value
+	METHOD method_1_10686 create (Lnet/minecraft/class_6563;Lnet/minecraft/class_2841$class_1_1693;)Lnet/minecraft/class_2841;
+		ARG 0 paletteProvider
+		ARG 1 initializer
+	METHOD method_1_10687 (Ljava/util/function/Consumer;Ljava/lang/Object;I)V
+		ARG 1 object
+		ARG 2 count
+	METHOD method_1_10688 setUnsafe (IIILjava/lang/Object;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 value
+	METHOD method_12322 setInternal (ILjava/lang/Object;)V
 		ARG 1 index
 		ARG 2 value
 	METHOD method_12326 readPacket (Lnet/minecraft/class_2540;)V
@@ -97,6 +123,11 @@ CLASS net/minecraft/class_2841 net/minecraft/world/chunk/PalettedContainer
 		ARG 0 storage
 		ARG 1 oldPalette
 		ARG 2 newPalette
+	CLASS class_1_1693 Initializer
+		METHOD method_1_10689 get (III)Ljava/lang/Object;
+			ARG 1 x
+			ARG 2 y
+			ARG 3 z
 	CLASS class_4464 Counter
 		COMMENT A counter that receives a palette entry and its number of occurrences
 		COMMENT in the container.

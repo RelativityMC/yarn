@@ -1,0 +1,22 @@
+CLASS net/minecraft/class_1_1685 com/mojang/blaze3d/pipeline/RenderPipelineCompiler
+	FIELD field_1_10579 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_10580 compiler Lnet/minecraft/class_1_709;
+	FIELD field_1_10581 device Lnet/minecraft/class_1_1313;
+	METHOD <init> (Lnet/minecraft/class_1_1313;)V
+		ARG 1 device
+	METHOD method_1_10592 getCompiledSupplier (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_12289;)Lnet/minecraft/class_1_1285$class_1_1509;
+		ARG 1 pipeline
+		ARG 2 sourceGetter
+	METHOD method_1_10593 getCompiledSupplier (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_12289;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 pipeline
+		ARG 2 sourceGetter
+		ARG 3 executor
+	METHOD method_1_10594 frontendCompile (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_12289;)Lnet/minecraft/class_1_1285$class_1_1387;
+		ARG 1 pipeline
+		ARG 2 sourceGetter
+	METHOD method_1_10596 (Lit/unimi/dsi/fastutil/objects/Object2IntOpenHashMap;Ljava/lang/Object;)I
+		ARG 1 uniformName
+	METHOD method_1_10597 getShaderSource (Lnet/minecraft/class_2960;Lnet/minecraft/class_1_1229;Lnet/minecraft/class_12289;)Ljava/lang/String;
+		ARG 0 id
+		ARG 1 shaderType
+		ARG 2 sourceGetter

@@ -1,6 +1,10 @@
 CLASS net/minecraft/class_3806 net/minecraft/server/dedicated/ServerPropertiesHandler
 	FIELD field_1_7091 chatSpamThresholdSeconds I
 	FIELD field_1_7092 commandSpamThresholdSeconds I
+	FIELD field_1_10712 EMPTYLESS_COMMA_SPLITTER Lcom/google/common/base/Splitter;
+	FIELD field_1_10713 allowedConnectionIds Ljava/lang/String;
+	FIELD field_1_10714 enableLegacyStatus Z
+	FIELD field_1_10715 statusConnectDetails Ljava/lang/String;
 	FIELD field_16802 broadcastConsoleToOps Z
 	FIELD field_16804 whiteList Lnet/minecraft/class_3808$class_3809;
 	FIELD field_16805 enforceWhitelist Lnet/minecraft/class_3808$class_3809;
@@ -68,6 +72,8 @@ CLASS net/minecraft/class_3806 net/minecraft/server/dedicated/ServerPropertiesHa
 	FIELD field_63171 opPermissionLevel Lnet/minecraft/class_3808$class_3809;
 	FIELD field_63172 functionPermissionLevel Lnet/minecraft/class_12086;
 	FIELD field_63666 managementServerAllowedOrigin Ljava/lang/String;
+	METHOD method_1_10754 isConnectionIdAllowed (Ljava/lang/String;)Z
+		ARG 1 connectionId
 	METHOD method_16714 load (Ljava/nio/file/Path;)Lnet/minecraft/class_3806;
 		ARG 0 path
 	METHOD method_16715 (Ljava/lang/Integer;)Ljava/lang/Integer;

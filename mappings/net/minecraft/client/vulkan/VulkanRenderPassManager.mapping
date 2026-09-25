@@ -1,0 +1,18 @@
+CLASS net/minecraft/class_1_1700 net/minecraft/client/vulkan/VulkanRenderPassManager
+	FIELD field_1_10682 device Lnet/minecraft/class_1_679;
+	FIELD field_1_10683 renderPasses Lit/unimi/dsi/fastutil/objects/Object2LongOpenHashMap;
+	METHOD <init> (Lnet/minecraft/class_1_679;)V
+		ARG 1 device
+	METHOD method_1_10728 createRenderPass (Lnet/minecraft/class_1_1700$class_1_1702;)J
+		ARG 1 layout
+	METHOD method_1_10729 getRenderPass (ILjava/util/List;)J
+		ARG 1 depthFormat
+		ARG 2 colorTargetStates
+	METHOD method_1_10730 getRenderPass (Lnet/minecraft/class_1_900;)J
+		ARG 1 description
+	METHOD method_1_10731 getOrCreateRenderPass (Lnet/minecraft/class_1_1700$class_1_1702;)J
+		ARG 1 layout
+	METHOD method_1_10732 (J)V
+		ARG 1 renderPass
+	CLASS class_1_1701 Attachment
+	CLASS class_1_1702 Layout

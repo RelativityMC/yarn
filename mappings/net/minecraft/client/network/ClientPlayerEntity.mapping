@@ -5,6 +5,7 @@ CLASS net/minecraft/class_746 net/minecraft/client/network/ClientPlayerEntity
 	FIELD field_1_9845 floatingItemAnimationManager Lnet/minecraft/class_1_1450;
 	FIELD field_1_9846 nauseaWobbleAngleChange F
 	FIELD field_1_9847 nauseaWobbleAngle F
+	FIELD field_1_10573 ridingId I
 	FIELD field_3913 input Lnet/minecraft/class_744;
 	FIELD field_3914 lastRenderPitch F
 	FIELD field_3915 usingItem Z
@@ -55,6 +56,7 @@ CLASS net/minecraft/class_746 net/minecraft/client/network/ClientPlayerEntity
 		ARG 6 lastPlayerInput
 		ARG 7 lastSprinting
 		ARG 8 chatRestrictions
+		ARG 9 floatingItemAnimationManager
 	METHOD method_1_2187 getChatRestrictions ()Lnet/minecraft/class_1_317;
 	METHOD method_1_2188 setChatRestrictionsFromClient ()V
 	METHOD method_1_6520 sync ()V
@@ -71,6 +73,7 @@ CLASS net/minecraft/class_746 net/minecraft/client/network/ClientPlayerEntity
 		ARG 1 hand
 	METHOD method_1_9576 resetRendering ()V
 	METHOD method_1_9577 updateNauseaWobbleAngle ()V
+	METHOD method_1_10568 getRidingId ()I
 	METHOD method_3130 getRecipeBook ()Lnet/minecraft/class_299;
 	METHOD method_3132 openRidingInventory ()V
 	METHOD method_3133 startRidingJump ()V

@@ -80,6 +80,10 @@ CLASS net/minecraft/class_5699 net/minecraft/util/dynamic/Codecs
 		ARG 1 fieldName
 		ARG 2 defaultValue
 		ARG 3 lenient
+	METHOD method_1_10508 singleKeyDispatched (Lcom/mojang/serialization/Codec;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;
+		ARG 0 typeCodec
+		ARG 1 getType
+		ARG 2 typeToCodec
 	METHOD method_36241 rangedInt (IILjava/util/function/Function;)Lcom/mojang/serialization/Codec;
 		ARG 0 min
 		ARG 1 max
@@ -434,6 +438,23 @@ CLASS net/minecraft/class_5699 net/minecraft/util/dynamic/Codecs
 		METHOD method_58593 isEmpty (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Z
 			ARG 0 ops
 			ARG 1 input
+	CLASS 8 8
+		METHOD decode (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
+			ARG 1 ops
+			ARG 2 input
+		METHOD encode (Ljava/lang/Object;Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
+			ARG 1 input
+			ARG 2 ops
+			ARG 3 prefix
+		METHOD method_1_10509 (Ljava/lang/Object;Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/DynamicOps;Ljava/util/function/Function;Lcom/mojang/serialization/MapLike;)Lcom/mojang/serialization/DataResult;
+			ARG 4 map
+		METHOD method_1_10511 (Ljava/util/function/Function;Lcom/mojang/serialization/DynamicOps;Lcom/mojang/datafixers/util/Pair;Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
+			ARG 4 key
+		METHOD method_1_10512 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/datafixers/util/Pair;
+			ARG 1 value
+		METHOD method_1_10514 (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+			ARG 1 key
+			ARG 2 value
 	CLASS class_6866 ContextRetrievalCodec
 		FIELD field_36397 retriever Ljava/util/function/Function;
 		METHOD <init> (Ljava/util/function/Function;)V

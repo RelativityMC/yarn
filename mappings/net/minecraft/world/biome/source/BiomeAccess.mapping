@@ -4,6 +4,14 @@ CLASS net/minecraft/class_4543 net/minecraft/world/biome/source/BiomeAccess
 	METHOD <init> (Lnet/minecraft/class_6780;J)V
 		ARG 1 storage
 		ARG 2 seed
+	METHOD method_1_10624 mixSeed2 (JJ)J
+		ARG 0 seed
+		ARG 2 mixed
+	METHOD method_1_10625 mixSeed1 (JIII)J
+		ARG 0 seed
+		ARG 2 biomeX
+		ARG 3 biomeY
+		ARG 4 biomeZ
 	METHOD method_24854 (III)Lnet/minecraft/class_6880;
 		ARG 1 biomeX
 		ARG 2 biomeY

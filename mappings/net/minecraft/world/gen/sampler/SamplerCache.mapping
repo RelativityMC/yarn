@@ -16,6 +16,8 @@ CLASS net/minecraft/class_1_1576 net/minecraft/world/gen/sampler/SamplerCache
 		ARG 1 func
 	METHOD method_1_10204 getOrPrepareCache (Lnet/minecraft/class_1_1533;)Lnet/minecraft/class_6910;
 		ARG 1 func
+	METHOD method_1_10817 profiled (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
+		ARG 1 func
 	CLASS class_1_1577 PreparedCache
 		FIELD comp_1_1678 getVariantAxes I
 		FIELD comp_1_1679 getRange Lnet/minecraft/class_1_1150;

@@ -3,6 +3,14 @@ CLASS net/minecraft/class_9768 net/minecraft/world/chunk/ChunkGenerationSteps
 	FIELD field_1_6342 LOADING_PADDING I
 	FIELD field_51900 GENERATION Lnet/minecraft/class_9768;
 	FIELD field_51901 LOADING Lnet/minecraft/class_9768;
+	METHOD method_1_10014 (Lnet/minecraft/class_9770$class_9771;)Lnet/minecraft/class_9770$class_9771;
+		ARG 0 builder
+	METHOD method_1_10714 (Lnet/minecraft/class_9770$class_9771;)Lnet/minecraft/class_9770$class_9771;
+		ARG 0 builder
+	METHOD method_1_10715 (Lnet/minecraft/class_9770$class_9771;)Lnet/minecraft/class_9770$class_9771;
+		ARG 0 builder
+	METHOD method_1_10716 (Lnet/minecraft/class_9770$class_9771;)Lnet/minecraft/class_9770$class_9771;
+		ARG 0 builder
 	METHOD method_60518 get (Lnet/minecraft/class_2806;)Lnet/minecraft/class_9770;
 		ARG 1 status
 	METHOD method_60519 (Lnet/minecraft/class_9770$class_9771;)Lnet/minecraft/class_9770$class_9771;

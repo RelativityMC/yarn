@@ -1,0 +1,39 @@
+CLASS net/minecraft/class_1_1703 net/minecraft/world/gen/surfacebuilder/SurfaceSampler
+	FIELD field_1_10689 STONE_RULE Lnet/minecraft/class_6708;
+	FIELD field_1_10690 tempPos Lnet/minecraft/class_2338$class_2339;
+	FIELD field_1_10691 materialRuleContext Lnet/minecraft/class_6694;
+	FIELD field_1_10692 blockStateRule Lnet/minecraft/class_6715;
+	FIELD field_1_10693 biomeSurfaceSampler Lnet/minecraft/class_1_1699;
+	METHOD <init> (Lnet/minecraft/class_7138;Lnet/minecraft/class_1_1552;Lnet/minecraft/class_1_1441;Lnet/minecraft/class_5843$class_1_1694;Lnet/minecraft/class_6708;Lnet/minecraft/class_1_1690;Ljava/util/Set;)V
+		ARG 1 noiseConfig
+		ARG 2 contextualSamplerProvider
+		ARG 3 region
+		ARG 4 heightContext
+		ARG 5 materialRule
+		ARG 6 posToBiome
+		ARG 7 includedBiomes
+	METHOD method_1_10735 getCarverFilteredColumn (Lnet/minecraft/class_2791;IILnet/minecraft/class_6643$class_1_1687;)Lnet/minecraft/class_6557;
+		COMMENT {@return a {@link BlockColumn} that ignores writes to carved positions}
+		ARG 1 chunk
+		ARG 2 x
+		ARG 3 z
+		ARG 4 carvingColumn
+	METHOD method_1_10736 fillChunk (Lnet/minecraft/class_2791;Lnet/minecraft/class_1_1490;Lnet/minecraft/class_6643;)V
+		ARG 1 chunk
+		ARG 2 chunkNoiseSampler
+		ARG 3 carvingMask
+	METHOD method_1_10737 populateAquifers (Lnet/minecraft/class_2791;Lnet/minecraft/class_4966;IILnet/minecraft/class_6643$class_1_1687;Lnet/minecraft/class_6350;)V
+		ARG 1 chunk
+		ARG 2 columnSample
+		ARG 3 x
+		ARG 4 z
+		ARG 5 carvingColumn
+		ARG 6 aquiferSampler
+	METHOD method_1_10738 setState (Lnet/minecraft/class_2791;IIILnet/minecraft/class_2680;)V
+		ARG 0 chunk
+		ARG 1 localX
+		ARG 2 y
+		ARG 3 localZ
+		ARG 4 state
+	CLASS 1 1
+		FIELD field_1_10694 pos Lnet/minecraft/class_2338$class_2339;

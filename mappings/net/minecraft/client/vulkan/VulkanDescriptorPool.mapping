@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1_1698 net/minecraft/client/vulkan/VulkanDescriptorPool
+	FIELD field_1_10667 device Lnet/minecraft/class_1_679;
+	FIELD field_1_10668 descriptorPool J
+	METHOD <init> (Lnet/minecraft/class_1_679;)V
+		ARG 1 device
+	METHOD method_1_10720 allocateDescriptorSet (J)J
+		ARG 1 descriptorSetLayout
+	METHOD method_1_10721 reset ()V

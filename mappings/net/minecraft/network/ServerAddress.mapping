@@ -1,0 +1,26 @@
+CLASS net/minecraft/class_1_1689 net/minecraft/network/ServerAddress
+	FIELD field_1_10594 CONNECTION_ID_KEY Ljava/lang/String;
+	FIELD field_1_10595 ORIGIN_KEY Ljava/lang/String;
+	FIELD field_1_10596 PARAM_KV_SEPARATOR C
+	FIELD field_1_10597 PARAM_SEPARATOR C
+	FIELD field_1_10598 PARAM_INITIATOR C
+	METHOD method_1_10630 withParams (Ljava/lang/String;I)Lnet/minecraft/class_1_1689;
+		ARG 0 fullHost
+		ARG 1 port
+	METHOD method_1_10631 fromHandshake (Lnet/minecraft/class_2889;)Lnet/minecraft/class_1_1689;
+		ARG 0 packet
+	METHOD method_1_10632 getFullHostString ()Ljava/lang/String;
+	METHOD method_1_10633 (Ljava/lang/String;)Z
+		ARG 0 key
+	METHOD method_1_10634 fromSocketAddr (Ljava/net/SocketAddress;)Lnet/minecraft/class_1_1689;
+		ARG 0 socketAddress
+	METHOD method_1_10635 withoutParams (Ljava/lang/String;I)Lnet/minecraft/class_1_1689;
+		ARG 0 host
+		ARG 1 port
+	METHOD method_1_10636 fromInetAddr (Ljava/net/InetSocketAddress;)Lnet/minecraft/class_1_1689;
+		ARG 0 inetSocketAddress
+	METHOD method_1_10637 transferred (Ljava/lang/String;ILjava/net/InetSocketAddress;Lnet/minecraft/class_1_1682;)Lnet/minecraft/class_1_1689;
+		ARG 0 sourceHost
+		ARG 1 sourcePort
+		ARG 2 dest
+		ARG 3 properties

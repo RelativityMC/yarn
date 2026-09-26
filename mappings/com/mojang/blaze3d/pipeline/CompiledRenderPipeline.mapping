@@ -1,6 +1,9 @@
 CLASS net/minecraft/class_1_1285 com/mojang/blaze3d/pipeline/CompiledRenderPipeline
 	METHOD method_1_9125 isClosed ()Z
 	CLASS class_1_1387 Layout
+		FIELD field_1_10734 MAX_VERTEX_ATTRIBUTES I
+		FIELD field_1_10735 MAX_VERTEX_FORMATS I
+		FIELD field_1_10736 MIN_VERTEX_BUFFER_STRIDE_ALIGNMENT I
 		CLASS class_1_1388 AttributeBinding
 		CLASS class_1_1389 Shader
 		CLASS class_1_1390 VertexBuffer

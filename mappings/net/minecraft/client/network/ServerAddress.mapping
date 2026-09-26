@@ -1,10 +1,22 @@
 CLASS net/minecraft/class_639 net/minecraft/client/network/ServerAddress
+	FIELD field_1_10703 ID_SEPARATOR C
+	FIELD field_1_10704 params Lnet/minecraft/class_1_1682;
 	FIELD field_33416 LOGGER Lorg/slf4j/Logger;
 	FIELD field_33417 hostAndPort Lcom/google/common/net/HostAndPort;
 	FIELD field_33418 INVALID Lnet/minecraft/class_639;
 	METHOD <init> (Lcom/google/common/net/HostAndPort;Lnet/minecraft/class_1_1682;)V
 		ARG 1 hostAndPort
+		ARG 2 params
 	METHOD <init> (Ljava/lang/String;ILnet/minecraft/class_1_1682;)V
+		ARG 1 host
+		ARG 2 port
+		ARG 3 params
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other
+	METHOD method_1_10739 transferred (Ljava/net/InetSocketAddress;)Lnet/minecraft/class_1_1689;
+		ARG 1 dest
+	METHOD method_1_10740 getParams ()Lnet/minecraft/class_1_1682;
+	METHOD method_1_10741 withHostAndPort (Ljava/lang/String;I)Lnet/minecraft/class_639;
 		ARG 1 host
 		ARG 2 port
 	METHOD method_2950 parse (Ljava/lang/String;)Lnet/minecraft/class_639;

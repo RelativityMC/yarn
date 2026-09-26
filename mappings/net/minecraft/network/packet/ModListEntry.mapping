@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_1704 net/minecraft/network/packet/ModListEntry
+	FIELD field_1_10710 MAX_PROPERTIES I
+	FIELD field_1_10711 CODEC Lnet/minecraft/class_9139;

@@ -1,2 +1,12 @@
 CLASS net/minecraft/class_5140 net/minecraft/world/gen/trunk/StraightTrunkPlacer
+	FIELD field_1_10776 trunkWidth Lnet/minecraft/class_6017;
 	FIELD field_24971 CODEC Lcom/mojang/serialization/MapCodec;
+	METHOD <init> (IIILnet/minecraft/class_6017;)V
+		ARG 1 baseHeight
+		ARG 2 firstRandomHeight
+		ARG 3 secondRandomHeight
+		ARG 4 trunkWidth
+	METHOD method_1_10818 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_10819 (Lnet/minecraft/class_5140;)Lnet/minecraft/class_6017;
+		ARG 0 placer

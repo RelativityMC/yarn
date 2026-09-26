@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_2852 net/minecraft/world/chunk/SerializedChunk
+	FIELD field_1_10749 STATUS_KEY Ljava/lang/String;
 	FIELD field_13001 LOGGER Lorg/slf4j/Logger;
 	FIELD field_31413 UPGRADE_DATA_KEY Ljava/lang/String;
 	FIELD field_35476 BLOCK_TICKS Ljava/lang/String;
@@ -12,6 +13,12 @@ CLASS net/minecraft/class_2852 net/minecraft/world/chunk/SerializedChunk
 	FIELD field_37665 SKY_LIGHT_KEY Ljava/lang/String;
 	FIELD field_56677 BLOCK_TICKS_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_56678 FLUID_TICKS_CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_1_10784 (Lcom/mojang/serialization/Codec;Lnet/minecraft/class_1923;ILnet/minecraft/class_2487;)Lnet/minecraft/class_7522;
+		ARG 3 noiseBiomes
+	METHOD method_1_10785 (Lnet/minecraft/class_1923;ILjava/lang/String;)V
+		ARG 2 error
+	METHOD method_1_10786 (Lnet/minecraft/class_1_1691$class_1_1692;ILnet/minecraft/class_7522;)V
+		ARG 2 noiseBiomes
 	METHOD method_12385 writeStructures (Lnet/minecraft/class_6625;Lnet/minecraft/class_1923;Ljava/util/Map;Ljava/util/Map;)Lnet/minecraft/class_2487;
 		ARG 0 context
 		ARG 1 pos

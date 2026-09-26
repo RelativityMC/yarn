@@ -1,0 +1,26 @@
+CLASS net/minecraft/class_1_1699 net/minecraft/world/gen/surfacebuilder/BiomeSurfaceSampler
+	FIELD field_1_10672 PACKED_ICE Lnet/minecraft/class_2680;
+	FIELD field_1_10673 SNOW_BLOCK Lnet/minecraft/class_2680;
+	FIELD field_1_10674 badlandsPillar Lnet/minecraft/class_1_1397;
+	FIELD field_1_10675 badlandsPillarRoof Lnet/minecraft/class_1_1397;
+	FIELD field_1_10676 badlandsSurface Lnet/minecraft/class_1_1397;
+	FIELD field_1_10677 icebergPillar Lnet/minecraft/class_1_1397;
+	FIELD field_1_10678 icebergPillarRoof Lnet/minecraft/class_1_1397;
+	FIELD field_1_10679 icebergSurface Lnet/minecraft/class_1_1397;
+	FIELD field_1_10680 splitter Lnet/minecraft/class_6574;
+	FIELD field_1_10681 seaLevel I
+	METHOD <init> (Lnet/minecraft/class_7138;ILnet/minecraft/class_6574;)V
+		ARG 1 noiseConfig
+		ARG 2 seaLevel
+		ARG 3 splitter
+	METHOD method_1_10726 sampleErodedBadlands (Lnet/minecraft/class_4966;II)V
+		ARG 1 verticalBlockSample
+		ARG 2 x
+		ARG 3 z
+	METHOD method_1_10727 sampleFrozenOcean (ILnet/minecraft/class_1959;Lnet/minecraft/class_6557;III)V
+		ARG 1 estimatedSurfaceHeight
+		ARG 2 biome
+		ARG 3 column
+		ARG 4 x
+		ARG 5 z
+		ARG 6 y

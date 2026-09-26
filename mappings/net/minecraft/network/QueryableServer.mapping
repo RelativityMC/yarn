@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_8599 net/minecraft/network/QueryableServer
+	METHOD method_1_10515 shouldAcceptConnection (Lnet/minecraft/class_2535;Lnet/minecraft/class_1_1689;)Z
+		ARG 1 connection
+		ARG 2 handshakeAddress
 	METHOD method_3788 getCurrentPlayerCount ()I
 	METHOD method_3802 getMaxPlayerCount ()I
 	METHOD method_3818 getServerMotd ()Ljava/lang/String;

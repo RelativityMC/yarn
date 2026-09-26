@@ -31,6 +31,8 @@ CLASS net/minecraft/class_1531 net/minecraft/entity/decoration/ArmorStandEntity
 	METHOD method_1_9616 kill (Lnet/minecraft/class_3218;Lnet/minecraft/class_1297;)V
 		ARG 1 world
 		ARG 2 attacker
+	METHOD method_1_10681 setBodyAndHeadYaw (F)V
+		ARG 1 yaw
 	METHOD method_6898 spawnBreakParticles ()V
 	METHOD method_6900 getRightLegRotation ()Lnet/minecraft/class_2379;
 	METHOD method_6902 setMarker (Z)V

@@ -16,4 +16,6 @@ CLASS net/minecraft/class_1462 net/minecraft/entity/passive/SalmonEntity
 			ARG 3 id
 			ARG 4 index
 			ARG 5 scale
+		METHOD method_1_10640 byId (I)Lnet/minecraft/class_1462$class_9869;
+			ARG 0 id
 		METHOD method_65116 getIndex ()I

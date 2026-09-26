@@ -1,0 +1,38 @@
+CLASS net/minecraft/class_1_1697 net/minecraft/datafixer/fix/ChunkStatusFix3
+	FIELD field_1_10654 STATUSES Ljava/util/List;
+	FIELD field_1_10655 EARLY_STATUSES Ljava/util/Set;
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD method_1_10702 getStatusesToRerun (Ljava/lang/String;Ljava/lang/String;Z)Ljava/util/List;
+		ARG 0 status
+		ARG 1 targetStatus
+		ARG 2 forceBiomesStatus
+	METHOD method_1_10703 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 5 chunk
+	METHOD method_1_10704 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 2 sections
+	METHOD method_1_10705 (Lcom/mojang/datafixers/util/Pair;)Lcom/mojang/datafixers/util/Pair;
+		ARG 0 fields
+	METHOD method_1_10706 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 remainder
+	METHOD method_1_10707 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 chunk
+	METHOD method_1_10708 makeRule (Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/types/Type;)Lcom/mojang/datafixers/TypeRewriteRule;
+		ARG 1 inputChunkType
+		ARG 2 inputChunkSectionsFinder
+		ARG 3 inputChunkSectionType
+		ARG 4 sectionBiomesFinder
+		ARG 5 sectionBlockStatesFinder
+		ARG 6 outputChunkType
+		ARG 7 outputChunkSectionsFinder
+		ARG 8 outputChunkSectionType
+	METHOD method_1_10709 removeBiomesField (Lcom/mojang/datafixers/Typed;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/types/Type;)Lcom/mojang/datafixers/Typed;
+		ARG 0 chunk
+		ARG 1 inputSectionsFinder
+		ARG 2 fieldsFinder
+		ARG 3 outputSectionsFinder
+		ARG 4 fieldsType
+	METHOD method_1_10710 fixStatusName (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 status
+	METHOD method_1_10711 fixStatus (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 1 chunkTyped

@@ -4,6 +4,8 @@ CLASS net/minecraft/class_1107 net/minecraft/client/sound/MinecartInsideSoundIns
 	FIELD field_5457 player Lnet/minecraft/class_746;
 	FIELD field_27773 underwater Z
 	METHOD <init> (Lnet/minecraft/class_746;ILnet/minecraft/class_1688;ZLnet/minecraft/class_3414;FFF)V
+		ARG 1 player
+		ARG 2 ridingId
 		ARG 3 minecart
 		ARG 4 underwater
 		ARG 5 sound

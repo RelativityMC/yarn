@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1708 net/minecraft/network/packet/ModListCustomPayload
+	FIELD field_1_10745 MAX_ENTRIES I
+	FIELD field_1_10746 CODEC Lnet/minecraft/class_9139;
+	FIELD field_1_10747 ID Lnet/minecraft/class_8710$class_9154;
+	METHOD method_1_10779 empty ()Lnet/minecraft/class_1_1708;

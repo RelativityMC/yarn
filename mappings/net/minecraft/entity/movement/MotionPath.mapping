@@ -14,4 +14,9 @@ CLASS net/minecraft/class_1_1198 net/minecraft/entity/movement/MotionPath
 	CLASS class_1_1201 Type
 		FIELD field_1_8298 PACKET_CODEC Lnet/minecraft/class_9139;
 		FIELD field_1_8299 packetCodec Lnet/minecraft/class_9139;
+		FIELD field_1_10574 index I
+		METHOD <init> (Ljava/lang/String;IILnet/minecraft/class_9139;)V
+			ARG 3 index
+			ARG 4 packetCodec
 		METHOD method_1_7657 getPacketCodec ()Lnet/minecraft/class_9139;
+		METHOD method_1_10569 getIndex ()I

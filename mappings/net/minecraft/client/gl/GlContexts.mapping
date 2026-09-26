@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_1_1696 net/minecraft/client/gl/GlContexts
+	FIELD field_1_10647 lastContext J
+	FIELD field_1_10648 lastWindow J
+	METHOD method_1_10699 isContextCurrent (J)Z
+		ARG 0 context
+	METHOD method_1_10700 isWindowCurrent (J)Z
+		ARG 0 window
+	METHOD method_1_10701 setWindowAndContext (JJ)V
+		ARG 0 window
+		ARG 2 context

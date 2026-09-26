@@ -137,6 +137,10 @@ CLASS net/minecraft/server/MinecraftServer
 	METHOD method_1_5531 unpublish ()Z
 	METHOD method_1_6279 getChatSpamThreshold ()I
 	METHOD method_1_6280 getCommandSpamThreshold ()I
+	METHOD method_1_10525 shouldEnableLegacyStatus ()Z
+	METHOD method_1_10526 (Lnet/minecraft/class_3222;)Ljava/lang/String;
+		ARG 0 player
+	METHOD method_1_10527 getStatusConnectDetails ()Ljava/lang/String;
 	METHOD method_3716 getKeyPair ()Ljava/security/KeyPair;
 	METHOD method_3718 isFlightEnabled ()Z
 	METHOD method_3723 save (ZZZ)Z

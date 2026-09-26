@@ -1,6 +1,9 @@
 CLASS net/minecraft/class_7522 net/minecraft/world/chunk/ReadableContainer
 	METHOD method_1_5134 forPaletteElements (Ljava/util/function/Consumer;)V
 		ARG 1 callback
+	METHOD method_1_10713 recreate (Ljava/lang/Object;I)Lnet/minecraft/class_2841;
+		ARG 1 defaultValue
+		ARG 2 bits
 	METHOD method_12321 get (III)Ljava/lang/Object;
 		ARG 1 x
 		ARG 2 y

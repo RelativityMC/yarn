@@ -8,6 +8,12 @@ CLASS net/minecraft/class_2902 net/minecraft/world/Heightmap
 	METHOD <init> (Lnet/minecraft/class_2791;Lnet/minecraft/class_2902$class_2903;)V
 		ARG 1 chunk
 		ARG 2 type
+	METHOD method_1_6671 (Lnet/minecraft/class_2680;)Z
+		ARG 0 state
+	METHOD method_1_10626 copy (Lnet/minecraft/class_2791;Lnet/minecraft/class_2902$class_2903;Lnet/minecraft/class_2902$class_2903;)V
+		ARG 0 chunk
+		ARG 1 srcType
+		ARG 2 destType
 	METHOD method_12595 toIndex (II)I
 		ARG 0 x
 		ARG 1 z
@@ -50,6 +56,8 @@ CLASS net/minecraft/class_2902 net/minecraft/world/Heightmap
 			ARG 4 id
 			ARG 5 purpose
 			ARG 6 blockPredicate
+		METHOD method_1_10627 (Lnet/minecraft/class_2902$class_2903;)I
+			ARG 0 type
 		METHOD method_12605 getId ()Ljava/lang/String;
 		METHOD method_16137 shouldSendToClient ()Z
 		METHOD method_16402 getBlockPredicate ()Ljava/util/function/Predicate;

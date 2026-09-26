@@ -1,9 +1,21 @@
 CLASS net/minecraft/class_1_1267 com/mojang/blaze3d/opengl/GlStateManager
 	FIELD field_1_8673 BUFFERS_PLOT Lcom/mojang/jtracy/Plot;
 	FIELD field_1_8674 TEXTURES_PLOT Lcom/mojang/jtracy/Plot;
+	FIELD field_1_8678 MAX_ACTIVE_TEXTURES I
 	FIELD field_1_8680 numBuffers I
 	FIELD field_1_8681 numTextures I
 	FIELD field_1_9168 IS_MAC_OS Z
+	FIELD field_1_10656 writeMasks [I
+	FIELD field_1_10657 textures [Lnet/minecraft/class_1_1267$class_1039;
+	FIELD field_1_10658 activeTexture I
+	FIELD field_1_10659 blendEnabled [Z
+	FIELD field_1_10660 blend Lnet/minecraft/class_1_1267$class_1017;
+	FIELD field_1_10661 cullFace Lnet/minecraft/class_1_1267$class_1025;
+	FIELD field_1_10662 depthTest Lnet/minecraft/class_1_1267$class_1026;
+	FIELD field_1_10663 polygonOffset Lnet/minecraft/class_1_1267$class_1031;
+	FIELD field_1_10664 readFramebuffer I
+	FIELD field_1_10665 scissorTest Lnet/minecraft/class_1_1267$class_5518;
+	FIELD field_1_10666 drawFramebuffer I
 	METHOD method_1_8022 activeTexture (I)V
 		ARG 1 texture
 	METHOD method_1_8023 bindTexture (I)V
@@ -62,8 +74,13 @@ CLASS net/minecraft/class_1_1267 com/mojang/blaze3d/opengl/GlStateManager
 	METHOD method_1_8089 getFrameBuffer (I)I
 		ARG 1 target
 	METHOD method_1_8104 shaderSource (ILjava/lang/String;)V
+		ARG 1 shader
 		ARG 2 source
 	METHOD method_1_8105 onCreateBuffer ()V
+	METHOD method_1_10718 (I)Lnet/minecraft/class_1_1267$class_1039;
+		ARG 0 i
+	METHOD method_1_10719 (I)I
+		ARG 0 i
 	CLASS class_1017 BlendFuncState
 		FIELD field_1_3543 opAlpha I
 		FIELD field_1_3544 opRgb I

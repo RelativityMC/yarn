@@ -138,6 +138,14 @@ CLASS net/minecraft/class_6544 net/minecraft/world/biome/source/util/MultiNoiseU
 			ARG 2 maxRootNodes
 		METHOD method_1_9578 create (I)Lnet/minecraft/class_6544$class_6547;
 			ARG 1 maxRootNodes
+		METHOD method_1_10570 hypercubesOverlap (Lnet/minecraft/class_6544$class_4762;Lnet/minecraft/class_6544$class_4762;)Z
+			ARG 0 first
+			ARG 1 second
+		METHOD method_1_10572 rangesOverlap (Lnet/minecraft/class_6544$class_6546;Lnet/minecraft/class_6544$class_6546;)Z
+			ARG 0 first
+			ARG 1 second
+		METHOD method_1_10573 validate (Ljava/util/List;)Lcom/mojang/serialization/DataResult;
+			ARG 0 entries
 		METHOD method_38128 getEntries ()Ljava/util/List;
 		METHOD method_39527 getValue (Lnet/minecraft/class_6544$class_6553;)Ljava/lang/Object;
 			COMMENT {@return the closest entry at the given point}.

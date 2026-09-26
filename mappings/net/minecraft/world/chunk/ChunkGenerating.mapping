@@ -1,5 +1,33 @@
 CLASS net/minecraft/class_9310 net/minecraft/world/chunk/ChunkGenerating
 	FIELD field_60378 LOGGER Lorg/slf4j/Logger;
+	METHOD method_1_10746 resetProtoChunkBiomes (Lnet/minecraft/class_2791;)V
+		ARG 0 chunk
+	METHOD method_1_10747 loadFeatures (Lnet/minecraft/class_9312;Lnet/minecraft/class_9770;Lnet/minecraft/class_9762;Lnet/minecraft/class_2791;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 context
+		ARG 1 step
+		ARG 2 chunks
+		ARG 3 chunk
+	METHOD method_1_10748 (Lnet/minecraft/class_2791;Lnet/minecraft/class_2791;)Lnet/minecraft/class_2791;
+		ARG 1 chunk1
+	METHOD method_1_10749 (Lnet/minecraft/class_9762;II)Lnet/minecraft/class_6780;
+		ARG 1 x
+		ARG 2 z
+	METHOD method_1_10750 (Lnet/minecraft/class_2791;III)Lnet/minecraft/class_6880;
+		ARG 1 biomeX
+		ARG 2 biomeY
+		ARG 3 biomeZ
+	METHOD method_1_10751 (Lnet/minecraft/class_9762;III)Lnet/minecraft/class_6880;
+		ARG 1 biomeX
+		ARG 2 biomeY
+		ARG 3 biomeZ
+	METHOD method_1_10752 getBiomeSupplierFromChunks (Lnet/minecraft/class_1923;Lnet/minecraft/class_9762;)Lnet/minecraft/class_6780;
+		ARG 0 chunkPos
+		ARG 1 chunks
+	METHOD method_1_10753 populateBiomes (Lnet/minecraft/class_9312;Lnet/minecraft/class_9770;Lnet/minecraft/class_9762;Lnet/minecraft/class_2791;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 context
+		ARG 1 step
+		ARG 2 chunks
+		ARG 3 chunk
 	METHOD method_57594 initializeLight (Lnet/minecraft/class_9312;Lnet/minecraft/class_9770;Lnet/minecraft/class_9762;Lnet/minecraft/class_2791;)Ljava/util/concurrent/CompletableFuture;
 		ARG 0 context
 		ARG 1 step
@@ -27,7 +55,7 @@ CLASS net/minecraft/class_9310 net/minecraft/world/chunk/ChunkGenerating
 		ARG 1 step
 		ARG 2 chunks
 		ARG 3 chunk
-	METHOD method_57605 populateBiomes (Lnet/minecraft/class_9312;Lnet/minecraft/class_9770;Lnet/minecraft/class_9762;Lnet/minecraft/class_2791;)Ljava/util/concurrent/CompletableFuture;
+	METHOD method_57605 populateNoiseBiomes (Lnet/minecraft/class_9312;Lnet/minecraft/class_9770;Lnet/minecraft/class_9762;Lnet/minecraft/class_2791;)Ljava/util/concurrent/CompletableFuture;
 		ARG 0 context
 		ARG 1 step
 		ARG 2 chunks

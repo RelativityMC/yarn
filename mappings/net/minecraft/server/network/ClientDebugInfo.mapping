@@ -1,0 +1,15 @@
+CLASS net/minecraft/class_1_1688 net/minecraft/server/network/ClientDebugInfo
+	FIELD field_1_10591 MAX_MOD_PROPERTIES I
+	FIELD field_1_10592 brand Ljava/lang/String;
+	FIELD field_1_10593 properties Lcom/google/common/collect/Table;
+	METHOD method_1_10616 addModListEntries (Ljava/util/Map;)V
+		ARG 1 entries
+	METHOD method_1_10617 (Lnet/minecraft/class_2960;Lnet/minecraft/class_1_1704;)V
+		ARG 1 modId
+		ARG 2 entry
+	METHOD method_1_10618 (Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;Ljava/lang/String;)V
+		ARG 2 key
+		ARG 3 value
+	METHOD method_1_10619 getBrand ()Ljava/lang/String;
+	METHOD method_1_10620 setBrand (Ljava/lang/String;)V
+		ARG 1 brand

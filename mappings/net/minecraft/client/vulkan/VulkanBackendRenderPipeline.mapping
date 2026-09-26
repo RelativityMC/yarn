@@ -7,6 +7,7 @@ CLASS net/minecraft/class_1_718 net/minecraft/client/vulkan/VulkanBackendRenderP
 	FIELD field_1_9510 descriptorSetLayout J
 	FIELD field_1_9511 shaderModules Lit/unimi/dsi/fastutil/longs/LongList;
 	FIELD field_1_9512 uniforms Ljava/util/List;
+	FIELD field_1_10740 maxUniform I
 	METHOD <init> (Lnet/minecraft/class_1_679;JJJJLit/unimi/dsi/fastutil/longs/LongList;Ljava/util/List;)V
 		ARG 1 backend
 		ARG 2 depthPipeline
@@ -26,3 +27,5 @@ CLASS net/minecraft/class_1_718 net/minecraft/client/vulkan/VulkanBackendRenderP
 	METHOD method_1_7404 getDepthPipeline ()J
 	METHOD method_1_7405 getNoDepthPipeline ()J
 	METHOD method_1_9131 getUniforms ()Ljava/util/List;
+	METHOD method_1_10776 getDescriptorSetLayout ()J
+	METHOD method_1_10777 getMaxUniform ()I

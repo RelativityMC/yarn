@@ -40,6 +40,8 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 		ARG 2 profile
 	METHOD method_1_2490 permissionAsString (Lnet/minecraft/class_12096;)Ljava/lang/String;
 		ARG 0 premissions
+	METHOD method_1_10577 toStringHelper (Z)Lcom/google/common/base/MoreObjects$ToStringHelper;
+		ARG 1 server
 	METHOD method_7254 unlockRecipes (Ljava/util/Collection;)I
 		ARG 1 recipes
 	METHOD method_7255 addExperience (I)V
@@ -298,6 +300,7 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 		ARG 1 pos
 	METHOD method_68876 getGameMode ()Lnet/minecraft/class_1934;
 	METHOD method_68877 asString (Z)Ljava/lang/String;
+		ARG 1 server
 	METHOD method_68878 isCreative ()Z
 	METHOD method_71753 openDialog (Lnet/minecraft/class_6880;)V
 		ARG 1 dialog

@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_4459 net/minecraft/entity/ai/pathing/TargetPathNode
+	FIELD field_1_9404 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_20304 nearestNodeDistance F
 	FIELD field_20305 nearestNode Lnet/minecraft/class_9;
 	FIELD field_20306 reached Z

@@ -5,3 +5,6 @@ CLASS net/minecraft/class_6780 net/minecraft/world/biome/source/BiomeSupplier
 		ARG 3 blockZ
 		ARG 4 range
 	METHOD method_24854 getBiomeForNoiseGen (III)Lnet/minecraft/class_6880;
+		ARG 1 biomeX
+		ARG 2 biomeY
+		ARG 3 biomeZ

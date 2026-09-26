@@ -3,6 +3,8 @@ CLASS net/minecraft/class_1_1372 com/mojang/blaze3d/shaders/ShaderModule
 	METHOD method_1_9049 getBindings ()Lnet/minecraft/class_1_1372$class_1_1373;
 	METHOD method_1_9050 getSpirv ()Ljava/nio/ByteBuffer;
 	METHOD method_1_9051 getType ()Lnet/minecraft/class_1_1229;
+	METHOD method_1_10628 getEntryPointName ()Ljava/lang/String;
+	METHOD method_1_10629 getId ()Ljava/lang/String;
 	CLASS class_1_1373 Bindings
 		METHOD method_1_9052 getUniformBindings ()Ljava/util/List;
 		METHOD method_1_9053 getUniformBindings (I)Ljava/util/List;

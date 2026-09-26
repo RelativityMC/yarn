@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_2839 net/minecraft/world/chunk/ProtoChunk
+	FIELD field_1_10578 biomeSupplier Lnet/minecraft/class_1_1691;
 	FIELD field_12918 status Lnet/minecraft/class_2806;
 	FIELD field_12929 entities Ljava/util/List;
 	FIELD field_17105 lightingProvider Lnet/minecraft/class_3568;
@@ -21,14 +22,24 @@ CLASS net/minecraft/class_2839 net/minecraft/world/chunk/ProtoChunk
 		ARG 3 world
 		ARG 4 palettesFactory
 		ARG 5 blendingData
+	METHOD method_1_10587 populateBiomes (Lnet/minecraft/class_11897;Lnet/minecraft/class_6780;)V
+		ARG 1 palettesFactory
+		ARG 2 biomeSupplier
+	METHOD method_1_10588 getBiomeSupplier ()Lnet/minecraft/class_1_1691;
+	METHOD method_1_10589 setBiomeSupplier (Lnet/minecraft/class_1_1691;)V
+		ARG 1 biomeSupplier
+	METHOD method_1_10590 getFinalizedStatus (Lnet/minecraft/class_2806;)Lnet/minecraft/class_2806;
+		ARG 1 targetStatus
 	METHOD method_12295 getEntities ()Ljava/util/List;
 	METHOD method_12300 getPackedSectionRelative (Lnet/minecraft/class_2338;)S
+		ARG 0 pos
 	METHOD method_12302 addEntity (Lnet/minecraft/class_2487;)V
 		ARG 1 entityNbt
 	METHOD method_12308 setStatus (Lnet/minecraft/class_2806;)V
 		ARG 1 status
 	METHOD method_12309 getBlockEntities ()Ljava/util/Map;
 	METHOD method_12314 joinBlockPos (SILnet/minecraft/class_1923;)Lnet/minecraft/class_2338;
+		ARG 0 postProcessingPos
 		ARG 1 sectionY
 		ARG 2 chunkPos
 	METHOD method_12316 getBlockEntityNbts ()Ljava/util/Map;
@@ -37,5 +48,6 @@ CLASS net/minecraft/class_2839 net/minecraft/world/chunk/ProtoChunk
 	METHOD method_39307 getBlockProtoTickScheduler ()Lnet/minecraft/class_6755;
 	METHOD method_39308 getFluidProtoTickScheduler ()Lnet/minecraft/class_6755;
 	METHOD method_39309 setBelowZeroRetrogen (Lnet/minecraft/class_6746;)V
+		ARG 1 belowZeroRetrogen
 	METHOD method_39310 createProtoTickScheduler (Lnet/minecraft/class_4296;)Lnet/minecraft/class_6755;
 		ARG 0 tickScheduler

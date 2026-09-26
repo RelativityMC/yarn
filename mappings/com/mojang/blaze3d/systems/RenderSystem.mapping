@@ -24,6 +24,7 @@ CLASS net/minecraft/class_1_1307 com/mojang/blaze3d/systems/RenderSystem
 	FIELD field_1_8827 DEFAULT_SHAPE_INDEX_BUFFER Lnet/minecraft/class_1_1307$class_5590;
 	FIELD field_1_8828 LINES_SHAPE_INDEX_BUFFER Lnet/minecraft/class_1_1307$class_5590;
 	FIELD field_1_8829 QUADS_SHAPE_INDEX_BUFFER Lnet/minecraft/class_1_1307$class_5590;
+	FIELD field_1_10572 renderPipelineCompiler Lnet/minecraft/class_1_1685;
 	METHOD method_1_8493 assertOnRenderThread ()V
 	METHOD method_1_8494 saveProjection ()V
 		COMMENT @apiNote This only saves one level.
@@ -96,6 +97,7 @@ CLASS net/minecraft/class_1_1307 com/mojang/blaze3d/systems/RenderSystem
 	METHOD method_1_8536 getDeviceOptional ()Lnet/minecraft/class_1_1313;
 	METHOD method_1_8537 unloadWindow ()V
 	METHOD method_1_9176 isWireframeSupported ()Z
+	METHOD method_1_10567 getRenderPipelineCompiler ()Lnet/minecraft/class_1_1685;
 	CLASS class_5590 ShapeIndexBuffer
 		COMMENT An index buffer that holds a pre-made indices for a specific shape. If
 		COMMENT this buffer is not large enough for the required number of indices when

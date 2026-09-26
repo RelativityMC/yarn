@@ -22,6 +22,9 @@ CLASS net/minecraft/class_6563 net/minecraft/world/chunk/PaletteProvider
 	METHOD <init> (Lnet/minecraft/class_2359;I)V
 		ARG 1 idList
 		ARG 2 bitsPerAxis
+	METHOD method_1_10578 getSideLength ()I
+	METHOD method_1_10579 forNoiseBiomes (Lnet/minecraft/class_2359;)Lnet/minecraft/class_6563;
+		ARG 0 idList
 	METHOD method_38313 computeIndex (III)I
 		COMMENT {@return the index of an object in the storage given its x, y, z coordinates}
 		ARG 1 x

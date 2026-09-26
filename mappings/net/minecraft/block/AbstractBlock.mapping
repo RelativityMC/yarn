@@ -571,6 +571,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		ARG 3 pos
 		ARG 4 tool
 		ARG 5 dropExperience
+		ARG 6 entity
 	METHOD method_9569 mirror (Lnet/minecraft/class_2680;Lnet/minecraft/class_2415;)Lnet/minecraft/class_2680;
 		COMMENT {@return {@code state} mirrored by {@code mirror}}
 		COMMENT
@@ -1154,6 +1155,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 			ARG 2 pos
 			ARG 3 tool
 			ARG 4 dropExperience
+			ARG 5 entity
 		METHOD method_26181 neighborUpdate (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2248;Lnet/minecraft/class_9904;Z)V
 			ARG 1 world
 			ARG 2 pos

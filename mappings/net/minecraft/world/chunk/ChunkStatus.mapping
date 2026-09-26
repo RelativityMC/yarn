@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_2806 net/minecraft/world/chunk/ChunkStatus
+	FIELD field_1_10645 SUCCESSORS Ljava/util/Map;
 	FIELD field_12787 chunkType Lnet/minecraft/class_2808;
 	FIELD field_12793 heightMapTypes Ljava/util/EnumSet;
 	FIELD field_16646 index I
@@ -10,6 +11,9 @@ CLASS net/minecraft/class_2806 net/minecraft/world/chunk/ChunkStatus
 		ARG 1 previous
 		ARG 2 heightMapTypes
 		ARG 3 chunkType
+	METHOD method_1_10697 getNext ()Lnet/minecraft/class_2806;
+	METHOD method_1_10698 (Ljava/util/HashMap;)V
+		ARG 0 map
 	METHOD method_12160 getHeightmapTypes ()Ljava/util/EnumSet;
 	METHOD method_12164 getChunkType ()Lnet/minecraft/class_2808;
 	METHOD method_12165 isAtLeast (Lnet/minecraft/class_2806;)Z

@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_2535 net/minecraft/network/ClientConnection
 	COMMENT A connection backed by a netty channel. It can be one to a client on the
 	COMMENT server or one to a server on a client.
+	FIELD field_1_10558 verification Lnet/minecraft/class_2535$class_1_1681;
 	FIELD field_11639 NETWORK_PACKETS_MARKER Lorg/slf4j/Marker;
 	FIELD field_11640 errored Z
 	FIELD field_11641 NETWORK_MARKER Lorg/slf4j/Marker;
@@ -123,10 +124,13 @@ CLASS net/minecraft/class_2535 net/minecraft/network/ClientConnection
 	METHOD method_52900 (Lnet/minecraft/class_9127;Lnet/minecraft/class_8697;Lnet/minecraft/class_1_1689;Lnet/minecraft/class_8592;Lnet/minecraft/class_9127;Lnet/minecraft/class_2535;)V
 		ARG 6 connection
 	METHOD method_52902 connect (Lnet/minecraft/class_1_1689;Lnet/minecraft/class_2896;)V
+		ARG 1 address
 		ARG 2 listener
 	METHOD method_52903 connect (Lnet/minecraft/class_1_1689;Lnet/minecraft/class_2921;)V
+		ARG 1 address
 		ARG 2 listener
 	METHOD method_52904 connect (Lnet/minecraft/class_1_1689;Lnet/minecraft/class_9127;Lnet/minecraft/class_9127;Lnet/minecraft/class_8697;Lnet/minecraft/class_8592;)V
+		ARG 1 address
 		ARG 2 outboundState
 		ARG 3 inboundState
 		ARG 4 prePlayStateListener
@@ -158,6 +162,7 @@ CLASS net/minecraft/class_2535 net/minecraft/network/ClientConnection
 	METHOD method_53859 addFlowControlHandler (Lio/netty/channel/ChannelPipeline;)V
 		ARG 1 pipeline
 	METHOD method_56326 connect (Lnet/minecraft/class_1_1689;Lnet/minecraft/class_9127;Lnet/minecraft/class_9127;Lnet/minecraft/class_8697;Z)V
+		ARG 1 address
 		ARG 2 outboundState
 		ARG 3 inboundState
 		ARG 4 prePlayStateListener
@@ -199,3 +204,4 @@ CLASS net/minecraft/class_2535 net/minecraft/network/ClientConnection
 	CLASS 3 3
 		METHOD initChannel (Lio/netty/channel/Channel;)V
 			ARG 1 channel
+	CLASS class_1_1681 Verification

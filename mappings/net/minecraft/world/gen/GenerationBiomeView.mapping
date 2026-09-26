@@ -1,0 +1,61 @@
+CLASS net/minecraft/class_1_1705 net/minecraft/world/gen/GenerationBiomeView
+	FIELD field_1_10716 JITTER_STRIDE I
+	FIELD field_1_10717 MARGIN I
+	FIELD field_1_10719 XZ_CELLS I
+	FIELD field_1_10720 JITTER_X I
+	FIELD field_1_10721 JITTER_Y I
+	FIELD field_1_10722 JITTER_Z I
+	FIELD field_1_10723 jitters [D
+	FIELD field_1_10724 baseBiomeX I
+	FIELD field_1_10725 baseBiomeY I
+	FIELD field_1_10726 baseBiomeZ I
+	FIELD field_1_10727 biomes [Lnet/minecraft/class_6880;
+	FIELD field_1_10728 biomeHeight I
+	METHOD <init> (Lnet/minecraft/class_2791;Lnet/minecraft/class_6780;J)V
+		ARG 1 chunk
+		ARG 2 biomeSupplier
+		ARG 3 seed
+	METHOD method_1_10755 getBiomeCountInExtendedSection (I)I
+		ARG 1 localBiomeY
+	METHOD method_1_10756 generate (Lnet/minecraft/class_6780;J)V
+		ARG 1 biomeSupplier
+		ARG 2 seed
+	METHOD method_1_10757 fillBiomes (Lnet/minecraft/class_2841;III)V
+		ARG 1 biomesOut
+		ARG 2 west
+		ARG 3 bottom
+		ARG 4 north
+	METHOD method_1_10758 fillBiomeCellSlow (Lnet/minecraft/class_2841;IIIIIIIII)V
+		ARG 1 biomesOut
+		ARG 2 west
+		ARG 3 bottom
+		ARG 4 north
+		ARG 5 minX
+		ARG 6 minY
+		ARG 7 minZ
+		ARG 8 maxX
+		ARG 9 maxY
+		ARG 10 maxZ
+	METHOD method_1_10759 getJitterArrayIndex (I)I
+		ARG 0 biomeCellIndex
+	METHOD method_1_10760 getLatticePointDistance (IDDD)D
+		ARG 1 biomeCellIndex
+		ARG 2 cellLocalX
+		ARG 4 cellLocalY
+		ARG 6 cellLocalZ
+	METHOD method_1_10761 getBiomeCellIndex (III)I
+		ARG 1 biomeX
+		ARG 2 biomeY
+		ARG 3 biomeZ
+	METHOD method_1_10762 getMaxLocalBlockCoord (I)I
+		ARG 0 localBiomeCoord
+	METHOD method_1_10763 getMinLocalBlockCoord (I)I
+		ARG 0 localBiomeCoord
+	METHOD method_1_10764 getLocalBiome (III)Lnet/minecraft/class_6880;
+		ARG 1 biomeX
+		ARG 2 biomeY
+		ARG 3 biomeZ
+	METHOD method_1_10765 isBiomeUniform (III)Z
+		ARG 1 biomeWest
+		ARG 2 biomeBottom
+		ARG 3 biomeNorth

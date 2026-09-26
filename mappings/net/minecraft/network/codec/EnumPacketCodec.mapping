@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_1_1686 net/minecraft/network/codec/EnumPacketCodec
+	FIELD field_1_10583 fromId Ljava/util/function/IntFunction;
+	FIELD field_1_10584 delegate Lnet/minecraft/class_9139;
+	METHOD <init> (Ljava/util/function/IntFunction;Lnet/minecraft/class_9139;)V
+		ARG 1 fromId
+		ARG 2 delegate
+	METHOD method_1_10599 byId (I)Ljava/lang/Enum;
+		ARG 1 id
+	METHOD method_1_10600 of (Ljava/lang/Class;Ljava/util/function/ToIntFunction;Lnet/minecraft/class_7995$class_7996;)Lnet/minecraft/class_1_1686;
+		ARG 0 clazz
+		ARG 1 toId
+		ARG 2 outOfBoundsHandling
+	METHOD method_1_10601 of (Ljava/util/function/ToIntFunction;Ljava/util/function/IntFunction;)Lnet/minecraft/class_1_1686;
+		ARG 0 toId
+		ARG 1 fromId
+	METHOD method_1_10604 of (Ljava/lang/Class;Ljava/util/function/ToIntFunction;Ljava/lang/Enum;)Lnet/minecraft/class_1_1686;
+		ARG 0 clazz
+		ARG 1 toId
+		ARG 2 fallback

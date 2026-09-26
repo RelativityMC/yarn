@@ -1,2 +1,41 @@
 CLASS net/minecraft/class_4966 net/minecraft/world/gen/chunk/VerticalBlockSample
+	FIELD field_1_10606 AIR Lnet/minecraft/class_2680;
+	FIELD field_1_10607 GROUND Lnet/minecraft/class_2680;
+	FIELD field_1_10608 states [Lnet/minecraft/class_2680;
+	FIELD field_1_10609 fluidUpdates Ljava/util/BitSet;
+	FIELD field_1_10610 dydx I
+	FIELD field_1_10611 dydz I
+	FIELD field_1_10612 maxSetIndex I
 	FIELD field_28105 startY I
+	METHOD <init> (II)V
+		ARG 1 startY
+		ARG 2 height
+	METHOD method_1_10654 getY (I)I
+		ARG 1 index
+	METHOD method_1_10655 getUppermostGroundY ()I
+	METHOD method_1_10656 getStateSafe (I)Lnet/minecraft/class_2680;
+		ARG 1 y
+	METHOD method_1_10657 getState (I)Lnet/minecraft/class_2680;
+		ARG 1 index
+	METHOD method_1_10658 getUppermostExplicitBlock (I)I
+		ARG 1 topIndex
+	METHOD method_1_10659 isAir (I)Z
+		ARG 1 y
+	METHOD method_1_10660 isGround (I)Z
+		ARG 1 y
+	METHOD method_1_10661 getStartY ()I
+	METHOD method_1_10662 needsFluidUpdate (I)Z
+		ARG 1 index
+	METHOD method_1_10663 set (ILnet/minecraft/class_2680;)V
+		ARG 1 y
+		ARG 2 state
+	METHOD method_1_10664 setInternal (ILnet/minecraft/class_2680;)V
+		ARG 1 y
+		ARG 2 state
+	METHOD method_1_10665 setGround (I)V
+		ARG 1 y
+	METHOD method_1_10666 getHeight ()I
+	METHOD method_1_10667 getDydx ()I
+	METHOD method_1_10668 getDydz ()I
+	METHOD method_1_10669 getMaxSetY ()I
+	METHOD method_1_10670 getMaxSetIndex ()I

@@ -1,0 +1,40 @@
+CLASS net/minecraft/class_1_1691 net/minecraft/world/biome/source/ChunkBiomeSupplier
+	FIELD field_1_10622 baseBiomeX I
+	FIELD field_1_10623 baseBiomeY I
+	FIELD field_1_10624 baseBiomeZ I
+	FIELD field_1_10625 biomesBySection [Lnet/minecraft/class_7522;
+	FIELD field_1_10626 biomeHeight I
+	METHOD <init> (Lnet/minecraft/class_1923;Lnet/minecraft/class_5539;[Lnet/minecraft/class_7522;)V
+		ARG 1 chunkPos
+		ARG 2 heightLimitView
+		ARG 3 biomesBySection
+	METHOD <init> (Lnet/minecraft/class_5539;Lnet/minecraft/class_1923;Lnet/minecraft/class_11897;)V
+		ARG 1 heightLimitView
+		ARG 2 chunkPos
+		ARG 3 palettesFactory
+	METHOD method_1_10674 initialize (Lnet/minecraft/class_11897;Lnet/minecraft/class_6780;Lnet/minecraft/class_5539;)V
+		ARG 1 palettesFactory
+		ARG 2 biomeSupplier
+		ARG 3 heightLimitView
+	METHOD method_1_10675 getBiomePalette (I)Lnet/minecraft/class_7522;
+		ARG 1 sectionY
+	METHOD method_1_10676 (Lnet/minecraft/class_6780;IIII)Lnet/minecraft/class_6880;
+		ARG 3 biomeX
+		ARG 4 biomeY
+		ARG 5 biomeZ
+	METHOD method_1_10677 createBiomePaletteArray (Lnet/minecraft/class_11897;I)[Lnet/minecraft/class_7522;
+		ARG 0 palettesFactory
+		ARG 1 numVerticalSections
+	CLASS class_1_1692 Builder
+		FIELD field_1_10627 dirty Z
+		FIELD field_1_10628 heightLimitView Lnet/minecraft/class_5539;
+		FIELD field_1_10629 biomesBySection [Lnet/minecraft/class_7522;
+		FIELD field_1_10630 chunkPos Lnet/minecraft/class_1923;
+		METHOD <init> (Lnet/minecraft/class_5539;Lnet/minecraft/class_1923;)V
+			ARG 1 heightLimitView
+			ARG 2 chunkPos
+		METHOD method_1_10678 setBiomePalette (ILnet/minecraft/class_7522;)Lnet/minecraft/class_1_1691$class_1_1692;
+			ARG 1 sectionY
+			ARG 2 biomePalette
+		METHOD method_1_10679 build (Lnet/minecraft/class_11897;)Lnet/minecraft/class_1_1691;
+			ARG 1 palettesFactory

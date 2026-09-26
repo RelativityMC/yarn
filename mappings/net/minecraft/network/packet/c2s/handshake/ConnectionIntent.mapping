@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_8592 net/minecraft/network/packet/c2s/handshake/ConnectionIntent
+	FIELD field_1_10684 CODEC Lnet/minecraft/class_9139;
 	FIELD field_44976 STATUS_ID I
 	FIELD field_44977 LOGIN_ID I
 	FIELD field_48228 TRANSFER_ID I

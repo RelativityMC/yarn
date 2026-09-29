@@ -41,10 +41,6 @@ CLASS net/minecraft/class_340 net/minecraft/client/gui/hud/DebugHud
 	METHOD method_20541 (Lnet/minecraft/class_9259;)Lnet/minecraft/class_2818;
 		ARG 0 chunk
 	METHOD method_20603 getServerWorld ()Lnet/minecraft/class_3218;
-	METHOD method_51745 drawText (Lnet/minecraft/class_332;Ljava/util/List;ZI)V
-		ARG 1 context
-		ARG 2 text
-		ARG 3 left
 	METHOD method_53534 pushToFrameLog (J)V
 		ARG 1 value
 	METHOD method_53536 shouldShowDebugHud ()Z
@@ -63,7 +59,3 @@ CLASS net/minecraft/class_340 net/minecraft/client/gui/hud/DebugHud
 	METHOD method_56829 shouldRenderTickCharts ()Z
 	METHOD method_61981 getPieChart ()Lnet/minecraft/class_9931;
 	CLASS 1 1
-		METHOD method_72742 (Lnet/minecraft/class_2960;)Ljava/util/Collection;
-			ARG 0 sectionLines
-		METHOD method_72746 (Lnet/minecraft/class_2960;)Ljava/util/Collection;
-			ARG 0 sectionLines

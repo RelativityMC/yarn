@@ -6,7 +6,7 @@ CLASS net/minecraft/class_3122 net/minecraft/world/gen/feature/OreFeature
 		ARG 1 target
 		ARG 2 state
 		ARG 3 size
-	METHOD method_13629 generateVeinPart (Lnet/minecraft/class_5281;Lnet/minecraft/class_5819;DDDDDDIIIII)Z
+	METHOD method_13629 generateVeinPart (Lnet/minecraft/class_5281;Lnet/minecraft/class_5819;DDDDDDIII)Z
 		ARG 1 world
 		ARG 2 random
 		ARG 3 startX
@@ -16,7 +16,5 @@ CLASS net/minecraft/class_3122 net/minecraft/world/gen/feature/OreFeature
 		ARG 11 startY
 		ARG 13 endY
 		ARG 15 x
-		ARG 16 y
-		ARG 17 z
-		ARG 18 horizontalSize
-		ARG 19 verticalSize
+		ARG 16 z
+		ARG 17 horizontalSize

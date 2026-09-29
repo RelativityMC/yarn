@@ -82,7 +82,6 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_1_7341 drawOutlines (Lnet/minecraft/class_11684$class_1_875;)V
 		ARG 1 preparedFrame
 	METHOD method_1_7342 renderSolidGeometry (Lnet/minecraft/class_11532;Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_1_1317;)V
-		ARG 1 sectionRenderState
 		ARG 2 preparedFrame
 		ARG 3 pass
 	METHOD method_1_7350 prepare ()V
@@ -128,14 +127,11 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_3269 updateChunks (Lnet/minecraft/class_12075;)V
 		ARG 1 cameraRenderState
 	METHOD method_3281 isTerrainRenderComplete ()Z
-	METHOD method_22710 render (Lnet/minecraft/class_9922;ZLnet/minecraft/class_12075;Lnet/minecraft/class_1_1254;Lorg/joml/Vector4f;ZZ)V
+	METHOD method_22710 render (Lnet/minecraft/class_9922;ZLnet/minecraft/class_12075;Lnet/minecraft/class_1_1254;Z)V
 		ARG 1 allocator
 		ARG 2 renderBlockOutline
 		ARG 3 cameraRenderState
-		ARG 4 fogBuffer
-		ARG 5 fogColor
-		ARG 6 renderSky
-		ARG 7 hasPostEffects
+		ARG 5 hasPostEffects
 	METHOD method_22712 drawBlockOutline (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;Lnet/minecraft/class_1921;Lnet/minecraft/class_12074;IFZ)V
 		ARG 1 matrices
 		ARG 2 queue
@@ -153,14 +149,11 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_62196 getCloudRenderer ()Lnet/minecraft/class_9955;
 	METHOD method_62198 translucencySort (Lnet/minecraft/class_243;)V
 		ARG 1 cameraPos
-	METHOD method_62200 renderSky (Lnet/minecraft/class_9909;Lnet/minecraft/class_12075;Lnet/minecraft/class_1_1254;)V
+	METHOD method_62200 renderSky (Lnet/minecraft/class_9909;Lnet/minecraft/class_1_1254;)V
 		ARG 1 frameGraphBuilder
-		ARG 2 cameraRenderState
-		ARG 3 fogBuffer
 	METHOD method_62202 renderMain (Lnet/minecraft/class_9909;Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_1_1254;Lnet/minecraft/class_11532;Z)V
 		ARG 1 frameGraphBuilder
 		ARG 2 preparedFrame
-		ARG 3 fogBuffer
 		ARG 4 sectionRenderState
 		ARG 5 hasPostEffects
 	METHOD method_62206 renderBlockDamage (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;Lnet/minecraft/class_11658;)V

@@ -1,7 +1,6 @@
 CLASS net/minecraft/class_1_704 net/minecraft/client/vulkan/VulkanRenderPassBackend
 	FIELD field_1_3615 shaderParamsDirty Z
 	FIELD field_1_3617 device Lnet/minecraft/class_1_679;
-	FIELD field_1_3619 hasDepth Z
 	FIELD field_1_3620 height I
 	FIELD field_1_3621 width I
 	FIELD field_1_3622 pipeline Lnet/minecraft/class_1_718;
@@ -12,7 +11,7 @@ CLASS net/minecraft/class_1_704 net/minecraft/client/vulkan/VulkanRenderPassBack
 	FIELD field_1_6400 commandBuffer Lorg/lwjgl/vulkan/VkCommandBuffer;
 	FIELD field_1_6401 commandEncoder Lnet/minecraft/class_1_715;
 	FIELD field_1_6402 labelGetter Ljava/util/function/Supplier;
-	METHOD <init> (Lnet/minecraft/class_1_679;Lnet/minecraft/class_1_715;Lorg/lwjgl/vulkan/VkCommandBuffer;Lnet/minecraft/class_1_970$class_1_971;Lnet/minecraft/class_1_1317$class_1_837;IIZLjava/util/function/Supplier;)V
+	METHOD <init> (Lnet/minecraft/class_1_679;Lnet/minecraft/class_1_715;Lorg/lwjgl/vulkan/VkCommandBuffer;Lnet/minecraft/class_1_970$class_1_971;Lnet/minecraft/class_1_1317$class_1_837;IILjava/util/function/Supplier;)V
 		ARG 1 device
 		ARG 2 commandEncoder
 		ARG 3 commandBuffer
@@ -20,8 +19,7 @@ CLASS net/minecraft/class_1_704 net/minecraft/client/vulkan/VulkanRenderPassBack
 		ARG 5 renderArea
 		ARG 6 width
 		ARG 7 height
-		ARG 8 hasDepth
-		ARG 9 labelGetter
+		ARG 8 labelGetter
 	METHOD method_1_4212 createCommandBuffer ()Lorg/lwjgl/vulkan/VkCommandBuffer;
 	METHOD method_1_4217 updateShaderParams ()V
 	METHOD method_1_5120 setScissor (Lorg/lwjgl/system/MemoryStack;Lorg/lwjgl/vulkan/VkCommandBuffer;IIII)V

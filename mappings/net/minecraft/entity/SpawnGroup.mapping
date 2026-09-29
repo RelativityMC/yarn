@@ -18,7 +18,6 @@ CLASS net/minecraft/class_1311 net/minecraft/entity/SpawnGroup
 		COMMENT {@linkplain #getName() name} string.
 	METHOD <init> (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;IZZI)V
 		ARG 3 name
-		ARG 4 abbreviation
 		ARG 5 spawnCap
 		ARG 6 peaceful
 		ARG 7 rare

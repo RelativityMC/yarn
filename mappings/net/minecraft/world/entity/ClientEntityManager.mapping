@@ -27,7 +27,6 @@ CLASS net/minecraft/class_5582 net/minecraft/world/entity/ClientEntityManager
 		ARG 0 e
 	METHOD method_31877 (Lnet/minecraft/class_5572;)V
 		ARG 1 sections
-	METHOD method_31879 getDebugString ()Ljava/lang/String;
 	METHOD method_31880 (Lnet/minecraft/class_5568;)Z
 		ARG 0 e
 	CLASS class_5583 Listener

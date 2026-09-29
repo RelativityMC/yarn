@@ -39,11 +39,6 @@ CLASS net/minecraft/class_465 net/minecraft/client/gui/screen/ingame/HandledScre
 		ARG 2 stack
 	METHOD method_1_8948 getClickedButton (Lnet/minecraft/class_11909;)I
 		ARG 0 click
-	METHOD method_1_8949 onMouseClick (Lnet/minecraft/class_1735;ILnet/minecraft/class_11909;Lnet/minecraft/class_1713;)V
-		ARG 1 slot
-		ARG 2 slotId
-		ARG 3 click
-		ARG 4 actionType
 	METHOD method_2378 isPointWithinBounds (IIIIDD)Z
 		ARG 1 x
 		ARG 2 y
@@ -56,11 +51,9 @@ CLASS net/minecraft/class_465 net/minecraft/client/gui/screen/ingame/HandledScre
 		ARG 1 context
 		ARG 2 x
 		ARG 3 y
-	METHOD method_2381 isClickOutsideBounds (DDII)Z
+	METHOD method_2381 isClickOutsideBounds (DD)Z
 		ARG 1 mouseX
 		ARG 3 mouseY
-		ARG 5 left
-		ARG 6 top
 	METHOD method_2382 drawItem (Lnet/minecraft/class_332;Lnet/minecraft/class_1799;IILjava/lang/String;)V
 		ARG 1 context
 		ARG 2 stack
@@ -88,8 +81,6 @@ CLASS net/minecraft/class_465 net/minecraft/client/gui/screen/ingame/HandledScre
 		ARG 1 context
 		ARG 2 mouseX
 		ARG 3 mouseY
-	METHOD method_30107 onMouseClick (Lnet/minecraft/class_11909;)V
-		ARG 1 click
 	METHOD method_37432 handledScreenTick ()V
 	METHOD method_51454 getTooltipFromItem (Lnet/minecraft/class_1799;)Ljava/util/List;
 		ARG 1 stack

@@ -25,9 +25,6 @@ CLASS net/minecraft/class_1_1312 net/minecraft/client/window/WindowEventListener
 		ARG 1 event
 	METHOD method_1_8603 onTextInput (Lorg/lwjgl/sdl/SDL_Event;)V
 		ARG 1 event
-	METHOD method_1_8604 treatHorizontalScrollAsVertical (DD)Z
-		ARG 0 vertical
-		ARG 2 horizontal
 	METHOD method_1_8613 poll ()V
 	METHOD method_1_8614 flushEvents ()V
 	METHOD method_1_10242 flushEventsAndPoll ()V

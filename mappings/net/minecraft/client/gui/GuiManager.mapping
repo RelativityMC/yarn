@@ -57,7 +57,6 @@ CLASS net/minecraft/class_1_659 net/minecraft/client/gui/GuiManager
 		ARG 1 pauseOnly
 		ARG 2 singleplayer
 	METHOD method_1_3923 setScreen (Lnet/minecraft/class_437;)V
-		ARG 1 screen
 	METHOD method_1_3924 getSplashTextSupplier ()Lnet/minecraft/class_4008;
 	METHOD method_1_3925 tick ()V
 	METHOD method_1_3926 getToastManager ()Lnet/minecraft/class_374;

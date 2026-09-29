@@ -92,7 +92,7 @@ CLASS net/minecraft/class_1140 net/minecraft/client/sound/SoundSystem
 	METHOD method_19762 resumeAll ()V
 	METHOD method_20185 tick (Z)V
 		ARG 1 paused
-	METHOD method_20304 getDebugString ()Ljava/lang/String;
+	METHOD method_20304 getDebugString (Lnet/minecraft/class_1_1714;)V
 	METHOD method_22139 playNextTick (Lnet/minecraft/class_1117;)V
 		ARG 1 sound
 	METHOD method_24878 hasRepeatDelay (Lnet/minecraft/class_1113;)Z

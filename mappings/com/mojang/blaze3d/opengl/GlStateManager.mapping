@@ -4,7 +4,6 @@ CLASS net/minecraft/class_1_1267 com/mojang/blaze3d/opengl/GlStateManager
 	FIELD field_1_8678 MAX_ACTIVE_TEXTURES I
 	FIELD field_1_8680 numBuffers I
 	FIELD field_1_8681 numTextures I
-	FIELD field_1_9168 IS_MAC_OS Z
 	FIELD field_1_10656 writeMasks [I
 	FIELD field_1_10657 textures [Lnet/minecraft/class_1_1267$class_1039;
 	FIELD field_1_10658 activeTexture I

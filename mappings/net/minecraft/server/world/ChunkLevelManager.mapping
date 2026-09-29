@@ -83,14 +83,12 @@ CLASS net/minecraft/class_3204 net/minecraft/server/world/ChunkLevelManager
 	CLASS class_3948 NearbyChunkTicketUpdater
 		FIELD field_17464 watchDistance I
 		FIELD field_17465 distances Lit/unimi/dsi/fastutil/longs/Long2IntMap;
-		FIELD field_17466 positionsAffected Lit/unimi/dsi/fastutil/longs/LongSet;
 		METHOD method_17658 setWatchDistance (I)V
 			ARG 1 watchDistance
-		METHOD method_17660 updateTicket (JIZZ)V
+		METHOD method_17660 updateTicket (JZZ)V
 			ARG 1 pos
-			ARG 3 distance
-			ARG 4 oldWithinViewDistance
-			ARG 5 withinViewDistance
+			ARG 3 oldWithinViewDistance
+			ARG 4 withinViewDistance
 		METHOD method_17662 (JI)V
 			ARG 3 level
 		METHOD method_17664 isWithinViewDistance (I)Z

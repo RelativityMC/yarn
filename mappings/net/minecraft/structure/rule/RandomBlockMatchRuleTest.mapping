@@ -1,10 +1,12 @@
 CLASS net/minecraft/class_3824 net/minecraft/structure/rule/RandomBlockMatchRuleTest
-	FIELD field_16879 probability F
-	FIELD field_16880 block Lnet/minecraft/class_2248;
+	FIELD comp_1_1933 block Lnet/minecraft/class_2248;
+	FIELD comp_1_1934 probability F
 	FIELD field_25009 CODEC Lcom/mojang/serialization/MapCodec;
 	METHOD <init> (Lnet/minecraft/class_2248;F)V
 		ARG 1 block
 		ARG 2 probability
+	METHOD comp_1_1933 block ()Lnet/minecraft/class_2248;
+	METHOD comp_1_1934 probability ()F
 	METHOD method_28990 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
 	METHOD method_28991 (Lnet/minecraft/class_3824;)Ljava/lang/Float;

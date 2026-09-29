@@ -44,8 +44,6 @@ CLASS net/minecraft/class_156 net/minecraft/util/Util
 		ARG 0 nanoTimeSupplier
 	METHOD method_1_6331 freezeNanoTimeSupplier ()V
 	METHOD method_1_6332 getNanoTimeSupplier ()Lnet/minecraft/class_7576$class_7577;
-	METHOD method_1_9149 rendererRequiresExplicitDepth (Ljava/lang/String;)Z
-		ARG 0 renderer
 	METHOD method_1_9556 secondsToMs (D)J
 		ARG 0 seconds
 	METHOD method_645 previous (Ljava/lang/Iterable;Ljava/lang/Object;)Ljava/lang/Object;
@@ -522,7 +520,6 @@ CLASS net/minecraft/class_156 net/minecraft/util/Util
 		COMMENT {@return the optimal capacity of a collection given the current capacity}
 		ARG 0 current
 		ARG 1 min
-	METHOD method_72236 isOnAarch64 ()Z
 	METHOD method_75862 getDefaultLocaleFormatter (Ljava/time/format/FormatStyle;)Ljava/time/format/DateTimeFormatter;
 		ARG 0 style
 	CLASS 2 2

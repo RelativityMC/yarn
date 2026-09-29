@@ -25,8 +25,6 @@ CLASS net/minecraft/class_3485 net/minecraft/structure/StructureTemplateManager
 	METHOD method_1_2081 getGeneratedResourceTree ()Lnet/minecraft/class_1_286;
 	METHOD method_15087 unloadTemplate (Lnet/minecraft/class_2960;)V
 		ARG 1 id
-	METHOD method_15091 getTemplateOrBlank (Lnet/minecraft/class_2960;)Lnet/minecraft/class_3499;
-		ARG 1 id
 	METHOD method_15093 saveTemplate (Lnet/minecraft/class_2960;)Z
 		ARG 1 id
 	METHOD method_15094 getTemplate (Lnet/minecraft/class_2960;)Ljava/util/Optional;

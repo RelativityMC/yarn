@@ -6,7 +6,7 @@ CLASS net/minecraft/class_758 net/minecraft/client/render/fog/FogRenderer
 	FIELD field_60586 FOG_MODIFIERS Ljava/util/List;
 	METHOD method_1_2257 applyFog (Lnet/minecraft/class_7285;)V
 		ARG 1 fogData
-	METHOD method_3211 prepareFog (Lnet/minecraft/class_4184;ILnet/minecraft/class_9779;FLnet/minecraft/class_638;)Lnet/minecraft/class_7285;
+	METHOD method_3211 prepareFog (Lnet/minecraft/class_4184;ILnet/minecraft/class_9779;FLnet/minecraft/class_638;Z)Lnet/minecraft/class_7285;
 		ARG 1 camera
 		ARG 2 viewDistance
 		ARG 3 renderTickCounter

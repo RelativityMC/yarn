@@ -31,7 +31,6 @@ CLASS net/minecraft/class_7764 net/minecraft/client/texture/SpriteContents
 	METHOD method_45808 generateMipmaps (I)V
 		ARG 1 mipmapLevels
 	METHOD method_45809 upload (Lnet/minecraft/class_1_1318;I)V
-		ARG 1 texture
 		ARG 2 mipmap
 	METHOD method_45810 isPixelTransparent (III)Z
 		ARG 1 frame

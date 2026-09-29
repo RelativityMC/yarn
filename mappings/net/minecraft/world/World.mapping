@@ -365,7 +365,6 @@ CLASS net/minecraft/class_1937 net/minecraft/world/World
 		COMMENT
 		COMMENT @see net.minecraft.world.gen.chunk.DebugChunkGenerator
 	METHOD method_27983 getRegistryKey ()Lnet/minecraft/class_5321;
-	METHOD method_31419 asString ()Ljava/lang/String;
 	METHOD method_31592 getEntityLookup ()Lnet/minecraft/class_5577;
 	METHOD method_31593 (Lnet/minecraft/class_1297;Ljava/util/function/Predicate;Ljava/util/List;Lnet/minecraft/class_1297;)V
 		ARG 3 entity

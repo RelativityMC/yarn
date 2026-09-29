@@ -24,7 +24,6 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 	METHOD method_1_4615 (Lnet/minecraft/class_11515;)Lnet/minecraft/class_846$class_1_343;
 		ARG 1 blockRenderLayer
 	METHOD method_3619 stop ()V
-	METHOD method_3622 getDebugString ()Ljava/lang/String;
 	METHOD method_3630 isEmpty ()Z
 	METHOD method_19419 setCameraPosition (Lnet/minecraft/class_243;)V
 		ARG 1 cameraPosition

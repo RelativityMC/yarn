@@ -34,23 +34,12 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	FIELD field_55579 minimized Z
 	FIELD field_62447 allowCursorChanges Z
 	FIELD field_62448 cursor Lnet/minecraft/class_11875;
-	METHOD <init> (Lnet/minecraft/class_3678;Lnet/minecraft/class_543;Ljava/lang/String;ZLjava/lang/String;Lnet/minecraft/class_323;Lnet/minecraft/class_1_11;)V
-		ARG 1 eventHandler
-		ARG 2 settings
-		ARG 3 fullscreenVideoMode
-		ARG 4 exclusiveFullscreen
-		ARG 5 title
-		ARG 6 monitorTracker
-		ARG 7 backend
 	METHOD method_1_2662 createHandle (Lnet/minecraft/class_1_11;IILjava/lang/String;)J
 		ARG 1 windowBackend
 		ARG 2 width
 		ARG 3 height
 		ARG 4 title
 	METHOD method_1_2666 updateFullscreenIfNeeded ()V
-	METHOD method_1_3099 clampToAtLeast (II)I
-		ARG 0 value
-		ARG 1 minimum
 	METHOD method_1_3138 isFocused ()Z
 	METHOD method_1_8436 setBorderlessFullscreenMode ()Z
 	METHOD method_1_8437 setFullscreen ()Z

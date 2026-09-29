@@ -8,10 +8,8 @@ CLASS net/minecraft/class_1_923 net/minecraft/client/gui/widget/SimpleTabNavigat
 		METHOD <init> (Lnet/minecraft/class_8088;I)V
 			ARG 1 tabManager
 			ARG 2 width
-		METHOD method_1_5621 tab (Lnet/minecraft/class_8087;)Lnet/minecraft/class_1_923$class_1_924;
-			ARG 1 tab
-		METHOD method_1_5622 tabs ([Lnet/minecraft/class_8087;)Lnet/minecraft/class_1_923$class_1_924;
-			ARG 1 tabs
+		METHOD method_1_5621 tab (Lnet/minecraft/class_2561;Lnet/minecraft/class_8087;)Lnet/minecraft/class_1_923$class_1_924;
+			ARG 2 tab
 	CLASS class_1_925 Button
 		FIELD field_1_6500 BUTTON_TEXTURES Lnet/minecraft/class_8666;
 		METHOD method_1_5624 drawCurrentTabBackground (Lnet/minecraft/class_332;Lnet/minecraft/class_327;I)V

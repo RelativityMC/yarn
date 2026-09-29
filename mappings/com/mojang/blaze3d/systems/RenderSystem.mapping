@@ -18,7 +18,6 @@ CLASS net/minecraft/class_1_1307 com/mojang/blaze3d/systems/RenderSystem
 	FIELD field_1_8821 SAMPLER_CACHE Lnet/minecraft/class_12136;
 	FIELD field_1_8822 savedProjectionBuffer Lnet/minecraft/class_1_1254;
 	FIELD field_1_8823 savedProjectionType Lnet/minecraft/class_10366;
-	FIELD field_1_8824 SCISSOR_STATE Lnet/minecraft/class_11219;
 	FIELD field_1_8825 fogBuffer Lnet/minecraft/class_1_1254;
 	FIELD field_1_8826 lightingBuffer Lnet/minecraft/class_1_1254;
 	FIELD field_1_8827 DEFAULT_SHAPE_INDEX_BUFFER Lnet/minecraft/class_1_1307$class_5590;
@@ -31,12 +30,6 @@ CLASS net/minecraft/class_1_1307 com/mojang/blaze3d/systems/RenderSystem
 	METHOD method_1_8495 setDefaultUniforms (Lnet/minecraft/class_1_1317;)V
 		ARG 0 pass
 	METHOD method_1_8496 wrongThreadException ()Ljava/lang/IllegalStateException;
-	METHOD method_1_8497 disableScissor ()V
-	METHOD method_1_8498 enableScissor (IIII)V
-		ARG 0 x
-		ARG 1 y
-		ARG 2 width
-		ARG 3 height
 	METHOD method_1_8499 runGpuAsyncTasks ()V
 	METHOD method_1_8500 getFormattedLwjglVersion ()Ljava/lang/String;
 	METHOD method_1_8501 compilePipeline (Lnet/minecraft/class_1_1257;)Lnet/minecraft/class_1_1285;
@@ -51,7 +44,6 @@ CLASS net/minecraft/class_1_1307 com/mojang/blaze3d/systems/RenderSystem
 	METHOD method_1_8508 getProjectionBuffer ()Lnet/minecraft/class_1_1254;
 	METHOD method_1_8509 getProjectionType ()Lnet/minecraft/class_10366;
 	METHOD method_1_8510 getSamplerCache ()Lnet/minecraft/class_12136;
-	METHOD method_1_8511 getScissorState ()Lnet/minecraft/class_11219;
 	METHOD method_1_8512 getShapeIndexBufferFor (Lnet/minecraft/class_5596;)Lnet/minecraft/class_1_1307$class_5590;
 		ARG 0 drawMode
 	METHOD method_1_8513 getFogBuffer ()Lnet/minecraft/class_1_1254;

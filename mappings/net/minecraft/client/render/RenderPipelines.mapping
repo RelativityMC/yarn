@@ -37,7 +37,6 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_1_8018 OIT_BEACON_BEAM Lnet/minecraft/class_1_1165;
 	FIELD field_1_8019 OIT_BREEZE_WIND Lnet/minecraft/class_1_1165;
 	FIELD field_1_8020 OIT_CLOUDS Lnet/minecraft/class_1_1165;
-	FIELD field_1_8021 CLOUDS_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_1_8022 OIT_COMPOSITE Lnet/minecraft/class_1_1257;
 	FIELD field_1_8023 OIT_CRUMBLING Lnet/minecraft/class_1_1165;
 	FIELD field_1_8024 OIT_DEBUG_FILLED_BOX Lnet/minecraft/class_1_1165;
@@ -54,7 +53,6 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_1_8035 OIT_ENTITY_SHADOW Lnet/minecraft/class_1_1165;
 	FIELD field_1_8036 ENTITY_ALPHA_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_1_8037 OIT_EYES Lnet/minecraft/class_1_1165;
-	FIELD field_1_8038 OIT_FLAT_CLOUDS Lnet/minecraft/class_1_1165;
 	FIELD field_1_8039 OIT_ITEM Lnet/minecraft/class_1_1165;
 	FIELD field_1_8040 OIT_ITEM_GLINT Lnet/minecraft/class_1_1165;
 	FIELD field_1_8041 OIT_ITEM_GLINT_SPECIAL Lnet/minecraft/class_1_1165;
@@ -89,7 +87,6 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_1_9558 WIREFRAME_MULTIDRAW Lnet/minecraft/class_1_1257;
 	FIELD field_1_10373 BLIT_DEPTH Lnet/minecraft/class_1_1257;
 	FIELD field_1_10374 BLIT_DEPTH_BOUNDS Lnet/minecraft/class_1_1257;
-	FIELD field_1_10375 BLIT_DEPTH_DURING_DEPTH_BOUNDS Lnet/minecraft/class_1_1257;
 	FIELD field_56812 BEACON_BEAM_TRANSLUCENT Lnet/minecraft/class_1_1257;
 	FIELD field_56814 RENDERTYPE_LEASH Lnet/minecraft/class_1_1257;
 	FIELD field_56815 RENDERTYPE_WATER_MASK Lnet/minecraft/class_1_1257;
@@ -183,8 +180,6 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_64226 CUTOUT_BLOCK Lnet/minecraft/class_1_1257;
 	FIELD field_64227 CUTOUT_TERRAIN Lnet/minecraft/class_1_1257;
 	FIELD field_64567 LINES_TRANSLUCENT Lnet/minecraft/class_1_1257;
-	METHOD method_1_7361 (Lnet/minecraft/class_1_1257$class_1_1258;)V
-		ARG 0 builder
 	METHOD method_1_7362 (Lnet/minecraft/class_1_1257$class_1_1258;)V
 		ARG 0 builder
 	METHOD method_1_7363 (Lnet/minecraft/class_1_1257$class_1_1258;)V
@@ -197,12 +192,8 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 		ARG 0 builder
 	METHOD method_1_7368 (Lnet/minecraft/class_1_1257$class_1_1258;)V
 		ARG 0 builder
-	METHOD method_1_7369 (Lnet/minecraft/class_1_1257$class_1_1258;)V
-		ARG 0 builder
 	METHOD method_1_7370 register (Lnet/minecraft/class_1_1165;)Lnet/minecraft/class_1_1165;
 		ARG 0 oitPipelineSet
-	METHOD method_1_9076 (Lnet/minecraft/class_1_1257$class_1_1258;)V
-		ARG 0 builder
 	METHOD method_1_9077 (Lnet/minecraft/class_1_1257$class_1_1258;)V
 		ARG 0 builder
 	METHOD method_1_9199 (Lnet/minecraft/class_1_1257$class_1_1258;)V

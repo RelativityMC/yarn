@@ -50,7 +50,6 @@ CLASS net/minecraft/class_7923 net/minecraft/registry/Registries
 	FIELD field_41181 BLOCK_ENTITY_TYPE Lnet/minecraft/class_2378;
 	FIELD field_41183 CUSTOM_STAT Lnet/minecraft/class_2378;
 	FIELD field_41184 CHUNK_STATUS Lnet/minecraft/class_7922;
-	FIELD field_41185 RULE_TEST Lnet/minecraft/class_2378;
 	FIELD field_41186 POS_RULE_TEST Lnet/minecraft/class_2378;
 	FIELD field_41187 SCREEN_HANDLER Lnet/minecraft/class_2378;
 	FIELD field_41188 RECIPE_TYPE Lnet/minecraft/class_2378;

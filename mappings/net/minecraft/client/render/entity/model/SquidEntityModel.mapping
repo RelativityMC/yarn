@@ -37,7 +37,6 @@ CLASS net/minecraft/class_610 net/minecraft/client/render/entity/model/SquidEnti
 	COMMENT </table>
 	COMMENT </div>
 	FIELD field_3574 tentacles [Lnet/minecraft/class_630;
-	FIELD field_52939 BABY_TRANSFORMER Lnet/minecraft/class_9953;
 	METHOD method_32055 getTexturedModelData ()Lnet/minecraft/class_5607;
 	METHOD method_32056 getTentacleName (I)Ljava/lang/String;
 		ARG 0 index

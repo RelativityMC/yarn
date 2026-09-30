@@ -138,6 +138,7 @@ CLASS net/minecraft/class_3218 net/minecraft/server/world/ServerWorld
 		ARG 15 offsetZ
 		ARG 17 maxSpeed
 		ARG 19 randomizationType
+	METHOD method_1_10830 getEntityManager ()Lnet/minecraft/class_5579;
 	METHOD method_8448 updateSleepingPlayers ()V
 	METHOD method_8487 locateStructure (Lnet/minecraft/class_6862;Lnet/minecraft/class_2338;IZ)Lnet/minecraft/class_2338;
 		COMMENT Tries to find the closest structure of a given type near a given block.

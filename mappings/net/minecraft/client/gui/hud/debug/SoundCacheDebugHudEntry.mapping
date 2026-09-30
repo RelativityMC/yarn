@@ -1,3 +1,5 @@
 CLASS net/minecraft/class_1_396 net/minecraft/client/gui/hud/debug/SoundCacheDebugHudEntry
 	METHOD method_1_2656 toMegabytes (J)J
 		ARG 0 bytes
+	METHOD method_1_10953 (Lnet/minecraft/class_4237$class_1_387$class_1_388;Lnet/minecraft/class_1_1714;)V
+		ARG 1 fact

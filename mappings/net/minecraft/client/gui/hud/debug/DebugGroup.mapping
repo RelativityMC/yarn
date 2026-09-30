@@ -1,0 +1,27 @@
+CLASS net/minecraft/class_1_1716 net/minecraft/client/gui/hud/debug/DebugGroup
+	FIELD field_1_10837 highlightColor Ljava/util/OptionalInt;
+	FIELD field_1_10838 side Ljava/util/Optional;
+	FIELD field_1_10839 title Lnet/minecraft/class_2561;
+	METHOD <init> (Lnet/minecraft/class_2561;Ljava/util/OptionalInt;Ljava/util/Optional;)V
+		ARG 1 title
+		ARG 2 highlightColor
+		ARG 3 side
+	METHOD method_1_10877 getHighlightColor ()Ljava/util/OptionalInt;
+	METHOD method_1_10878 getSide ()Ljava/util/Optional;
+	METHOD method_1_10879 getTitle ()Lnet/minecraft/class_2561;
+	CLASS class_1_1717 Builder
+		FIELD field_1_10840 highlightColor Ljava/util/OptionalInt;
+		FIELD field_1_10841 side Ljava/util/Optional;
+		FIELD field_1_10842 title Lnet/minecraft/class_2561;
+		METHOD <init> (Lnet/minecraft/class_2561;)V
+			ARG 1 title
+		METHOD method_1_10880 build ()Lnet/minecraft/class_1_1716;
+		METHOD method_1_10881 titled (Ljava/lang/String;)Lnet/minecraft/class_1_1716$class_1_1717;
+			ARG 0 title
+		METHOD method_1_10882 titled (Lnet/minecraft/class_2561;)Lnet/minecraft/class_1_1716$class_1_1717;
+			ARG 0 title
+		METHOD method_1_10883 untitled ()Lnet/minecraft/class_1_1716$class_1_1717;
+		METHOD method_1_10884 highlightColor (I)Lnet/minecraft/class_1_1716$class_1_1717;
+			ARG 1 highlightColor
+		METHOD method_1_10885 side (Lnet/minecraft/class_1_1718$class_1_1719;)Lnet/minecraft/class_1_1716$class_1_1717;
+			ARG 1 side

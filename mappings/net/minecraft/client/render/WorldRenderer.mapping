@@ -82,6 +82,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_1_7341 drawOutlines (Lnet/minecraft/class_11684$class_1_875;)V
 		ARG 1 preparedFrame
 	METHOD method_1_7342 renderSolidGeometry (Lnet/minecraft/class_11532;Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_1_1317;)V
+		ARG 1 sectionRenderState
 		ARG 2 preparedFrame
 		ARG 3 pass
 	METHOD method_1_7350 prepare ()V
@@ -120,6 +121,17 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 1 matrices
 		ARG 2 queue
 		ARG 3 renderStates
+	METHOD method_1_10840 renderClouds (Lnet/minecraft/class_9909;Lnet/minecraft/class_1_1254;)V
+		ARG 1 frameGraphBuilder
+		ARG 2 fogBuffer
+	METHOD method_1_10841 blitClouds (Lnet/minecraft/class_1_1153;Lnet/minecraft/class_1_1317;)V
+		ARG 1 oitStage
+		ARG 2 pass
+	METHOD method_1_10842 blitSky (Lnet/minecraft/class_1_1317;Lnet/minecraft/class_12137;)V
+		ARG 1 pass
+		ARG 2 inSampler
+	METHOD method_1_10851 shouldRenderClouds ()Z
+	METHOD method_1_10852 shouldRenderSky ()Z
 	METHOD method_3242 onResized (II)V
 		ARG 1 width
 		ARG 2 height
@@ -131,6 +143,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 1 allocator
 		ARG 2 renderBlockOutline
 		ARG 3 cameraRenderState
+		ARG 4 fogBuffer
 		ARG 5 hasPostEffects
 	METHOD method_22712 drawBlockOutline (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;Lnet/minecraft/class_1921;Lnet/minecraft/class_12074;IFZ)V
 		ARG 1 matrices
@@ -151,9 +164,11 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 1 cameraPos
 	METHOD method_62200 renderSky (Lnet/minecraft/class_9909;Lnet/minecraft/class_1_1254;)V
 		ARG 1 frameGraphBuilder
+		ARG 2 fogBuffer
 	METHOD method_62202 renderMain (Lnet/minecraft/class_9909;Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_1_1254;Lnet/minecraft/class_11532;Z)V
 		ARG 1 frameGraphBuilder
 		ARG 2 preparedFrame
+		ARG 3 fogBuffer
 		ARG 4 sectionRenderState
 		ARG 5 hasPostEffects
 	METHOD method_62206 renderBlockDamage (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;Lnet/minecraft/class_11658;)V

@@ -6,9 +6,14 @@ CLASS net/minecraft/class_11633 net/minecraft/client/gui/hud/debug/DebugHudProfi
 	FIELD field_61589 type Lnet/minecraft/class_11636;
 	FIELD field_61590 file Ljava/io/File;
 	FIELD field_63063 version J
+	FIELD field_63526 CURRENT_DATA_VERSION I
 	FIELD field_63527 codec Lcom/mojang/serialization/Codec;
 	METHOD <init> (Ljava/io/File;Lcom/mojang/datafixers/DataFixer;)V
 		ARG 1 file
+		ARG 2 dataFixer
+	METHOD method_1_1118 (ZLnet/minecraft/class_2960;Lnet/minecraft/class_11635;)V
+		ARG 2 id
+		ARG 3 visibility
 	METHOD method_1_1119 updateProfileType (Lnet/minecraft/class_11636;)V
 		ARG 1 type
 	METHOD method_1_1120 setVisibilities (Ljava/util/Map;)V

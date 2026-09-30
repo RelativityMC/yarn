@@ -23,3 +23,4 @@ CLASS net/minecraft/class_1_689 net/minecraft/client/window/VulkanWindowBackend
 		ARG 0 physicalDevice
 	METHOD method_1_6284 getPilotWindowException ()Lnet/minecraft/class_1_739;
 	METHOD method_1_8798 getPilotDeviceException ()Lnet/minecraft/class_1_739;
+	METHOD method_1_10866 isVulkanLoaderPresent ()Z

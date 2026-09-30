@@ -32,3 +32,8 @@ CLASS net/minecraft/class_4942 net/minecraft/client/data/Model
 		ARG 3 modelCollector
 	METHOD method_54828 getBlockSubModelId (Lnet/minecraft/class_2248;)Lnet/minecraft/class_2960;
 		ARG 1 block
+	METHOD method_65501 (Lcom/google/gson/JsonObject;Lnet/minecraft/class_2960;)V
+		ARG 1 p
+	METHOD method_65502 (Lcom/google/gson/JsonObject;Lnet/minecraft/class_4945;Lnet/minecraft/class_1_314;)V
+		ARG 1 key
+		ARG 2 texture

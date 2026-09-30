@@ -3,3 +3,9 @@ CLASS net/minecraft/class_11606 net/minecraft/client/gui/hud/debug/ChunkGenerati
 		ARG 1 chunk
 		ARG 2 pos
 		ARG 3 world
+		ARG 4 lines
+	METHOD method_1_10980 (Lnet/minecraft/class_11630;Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 label
+		ARG 2 value
+	METHOD method_1_10981 (Ljava/lang/String;Lnet/minecraft/class_1_1714;)V
+		ARG 1 fact

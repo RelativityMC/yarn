@@ -1,1 +1,5 @@
 CLASS net/minecraft/class_11609 net/minecraft/client/gui/hud/debug/EntityRenderStatsDebugHudEntry
+	METHOD method_1_10993 (Lnet/minecraft/class_1_816;Lnet/minecraft/class_1_1714;)V
+		ARG 1 fact
+	METHOD method_1_10994 (Lnet/minecraft/class_638;Lnet/minecraft/class_1_1714;)V
+		ARG 1 fact

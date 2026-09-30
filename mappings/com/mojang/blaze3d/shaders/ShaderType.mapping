@@ -5,3 +5,4 @@ CLASS net/minecraft/class_1_1229 com/mojang/blaze3d/shaders/ShaderType
 		ARG 3 name
 		ARG 4 extension
 	METHOD method_1_7814 getName ()Ljava/lang/String;
+	METHOD method_1_10858 getExtension ()Ljava/lang/String;

@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_1_1715 net/minecraft/client/gui/UnusedTextStyling
+	COMMENT Holds unused methods returning {@link Text} instances.
+	COMMENT <p>
+	COMMENT This seems to parallel the styling found in
+	COMMENT {@link net.minecraft.gui.hud.debug.FactBuilder}.
+	FIELD field_1_10836 STYLE Lnet/minecraft/class_2583;
+	METHOD method_1_10874 plain (Ljava/lang/String;)Lnet/minecraft/class_2561;
+		ARG 0 string
+	METHOD method_1_10875 styled (I)Lnet/minecraft/class_2561;
+		ARG 0 n
+	METHOD method_1_10876 styled (Ljava/lang/String;)Lnet/minecraft/class_2561;
+		ARG 0 string

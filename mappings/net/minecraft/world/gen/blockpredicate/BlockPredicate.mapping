@@ -15,6 +15,8 @@ CLASS net/minecraft/class_6646 net/minecraft/world/gen/blockpredicate/BlockPredi
 		ARG 0 min
 		ARG 1 max
 		ARG 2 match
+	METHOD method_1_10966 belowHeightmap (Lnet/minecraft/class_2902$class_2903;)Lnet/minecraft/class_6646;
+		ARG 0 heightmap
 	METHOD method_38873 getType ()Lnet/minecraft/class_6647;
 	METHOD method_38877 not (Lnet/minecraft/class_6646;)Lnet/minecraft/class_6646;
 		ARG 0 predicate

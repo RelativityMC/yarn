@@ -12,6 +12,7 @@ CLASS net/minecraft/class_758 net/minecraft/client/render/fog/FogRenderer
 		ARG 3 renderTickCounter
 		ARG 4 skyDarkness
 		ARG 5 world
+		ARG 6 thicken
 	METHOD method_62185 getFogColor (Lnet/minecraft/class_4184;FLnet/minecraft/class_638;IFLorg/joml/Vector4f;)V
 		ARG 1 camera
 		ARG 2 tickProgress

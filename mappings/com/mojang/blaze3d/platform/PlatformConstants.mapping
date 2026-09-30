@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_1713 com/mojang/blaze3d/platform/PlatformConstants
+	FIELD field_1_10781 IS_ARM64 Z
+	FIELD field_1_10782 IS_MACOS Z
+	FIELD field_1_10783 IS_WINDOWS Z
+	METHOD method_1_10833 isAppleDevice (Ljava/lang/String;)Z
+		ARG 0 deviceName

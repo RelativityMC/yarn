@@ -1,5 +1,7 @@
 CLASS net/minecraft/class_12076 net/minecraft/client/render/state/SkyRenderState
-	FIELD field_63090 shouldRenderSkyDark Z
+	FIELD field_1_10889 occlusionEndAngle F
+	FIELD field_1_10890 occlusionStartAngle F
+	FIELD field_63090 shouldRenderSkyOccluder Z
 	FIELD field_63091 sunAngle F
 	FIELD field_63093 rainGradient F
 	FIELD field_63094 starBrightness F

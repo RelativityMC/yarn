@@ -1,0 +1,13 @@
+CLASS net/minecraft/class_1_1721 net/minecraft/client/render/entity/model/SmallArmorStandModelTransformer
+	FIELD field_1_10866 BASE Lnet/minecraft/class_9953;
+	FIELD field_1_10867 EQUIPMENT Lnet/minecraft/class_9953;
+	FIELD field_1_10868 BODY_TRANSLATE_Y F
+	FIELD field_1_10870 HEAD_TRANSLATE_Y F
+	FIELD field_1_10871 SCALING_DENOMINATOR F
+	FIELD field_1_10874 equipment Z
+	METHOD <init> (Z)V
+		ARG 1 equipment
+	METHOD method_1_10900 (FLnet/minecraft/class_5603;)Lnet/minecraft/class_5603;
+		ARG 1 transform
+	METHOD method_1_10901 (Lnet/minecraft/class_5603;)Lnet/minecraft/class_5603;
+		ARG 0 transform

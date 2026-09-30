@@ -1,0 +1,25 @@
+CLASS net/minecraft/class_1_1718 net/minecraft/gui/hud/debug/DebugGroupTracker
+	COMMENT Tracks displayed {@link DebugGroup debug groups} across frames, ensuring
+	COMMENT that the order of existing groups is preserved when groups are added or
+	COMMENT removed.
+	FIELD field_1_10844 START_Y I
+	FIELD field_1_10845 drawnGroups Ljava/util/List;
+	FIELD field_1_10846 y I
+	FIELD field_1_10847 groupsToDraw Ljava/util/List;
+	FIELD field_1_10848 side Lnet/minecraft/class_1_1718$class_1_1719;
+	METHOD <init> (Lnet/minecraft/class_1_1718$class_1_1719;)V
+		ARG 1 side
+	METHOD method_1_10892 draw (Lnet/minecraft/class_1_1723;Lnet/minecraft/class_332;Lnet/minecraft/class_327;I)V
+		ARG 1 section
+		ARG 2 context
+		ARG 3 textRenderer
+		ARG 4 windowWidth
+	METHOD method_1_10893 clear ()V
+	METHOD method_1_10894 contains (Lnet/minecraft/class_1_1716;)Z
+		ARG 1 group
+	METHOD method_1_10895 getCurrentY ()I
+	METHOD method_1_10896 getGroupsToDraw ()Ljava/util/List;
+	METHOD method_1_10897 isSpaceExhausted (I)Z
+		ARG 1 windowHeight
+	METHOD method_1_10898 beginFrame ()V
+	CLASS class_1_1719 Side

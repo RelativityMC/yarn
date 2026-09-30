@@ -23,6 +23,11 @@ CLASS net/minecraft/class_3485 net/minecraft/structure/StructureTemplateManager
 		ARG 2 snbt
 	METHOD method_1_2080 getTestResourceTree ()Lnet/minecraft/class_1_286;
 	METHOD method_1_2081 getGeneratedResourceTree ()Lnet/minecraft/class_1_286;
+	METHOD method_1_11008 getTemplateOrEmpty (Lnet/minecraft/class_2960;)Lnet/minecraft/class_3499;
+		ARG 1 id
+	METHOD method_1_11009 add (Lnet/minecraft/class_2960;Lnet/minecraft/class_3499;)V
+		ARG 1 id
+		ARG 2 template
 	METHOD method_15087 unloadTemplate (Lnet/minecraft/class_2960;)V
 		ARG 1 id
 	METHOD method_15093 saveTemplate (Lnet/minecraft/class_2960;)Z

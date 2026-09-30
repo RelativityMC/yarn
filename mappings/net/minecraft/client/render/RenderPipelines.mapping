@@ -87,6 +87,32 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_1_9558 WIREFRAME_MULTIDRAW Lnet/minecraft/class_1_1257;
 	FIELD field_1_10373 BLIT_DEPTH Lnet/minecraft/class_1_1257;
 	FIELD field_1_10374 BLIT_DEPTH_BOUNDS Lnet/minecraft/class_1_1257;
+	FIELD field_1_10798 BLIT_SKY Lnet/minecraft/class_1_1257;
+	FIELD field_1_10799 CELESTIAL_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
+	FIELD field_1_10800 CELESTIAL_WITH_DEPTH_ATTACHMENT Lnet/minecraft/class_1_1257;
+	FIELD field_1_10801 CUTOUT_TERRAIN_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
+	FIELD field_1_10802 CUTOUT_TERRAIN_IMPROVED_FOG Lnet/minecraft/class_1_1257;
+	FIELD field_1_10803 CUTOUT_TERRAIN_IMPROVED_FOG_MULTIDRAW Lnet/minecraft/class_1_1257;
+	FIELD field_1_10804 END_PORTAL_GUI Lnet/minecraft/class_1_1257;
+	FIELD field_1_10805 END_SKY_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
+	FIELD field_1_10806 END_SKY_WITH_DEPTH_ATTACHMENT Lnet/minecraft/class_1_1257;
+	FIELD field_1_10807 IMPROVED_FOG_SKY_AND_CLOUDS_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
+	FIELD field_1_10808 BLIT_CLOUDS_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
+	FIELD field_1_10809 CHUNK_SECTION_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
+	FIELD field_1_10810 SKY_OCCLUDER Lnet/minecraft/class_1_1257;
+	FIELD field_1_10811 SKY_OCCLUDER_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
+	FIELD field_1_10812 SKY_OCCLUDER_WITH_DEPTH_ATTACHMENT Lnet/minecraft/class_1_1257;
+	FIELD field_1_10813 SKYT_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
+	FIELD field_1_10814 SKY_WIDTH_DEPTH_ATTACHMENT Lnet/minecraft/class_1_1257;
+	FIELD field_1_10815 SOLID_TERRAIN_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
+	FIELD field_1_10816 SOLID_TERRAIN_IMPROVED_FOG Lnet/minecraft/class_1_1257;
+	FIELD field_1_10817 SOLID_TERRAIN_IMPROVED_FOG_MULTIDRAW Lnet/minecraft/class_1_1257;
+	FIELD field_1_10818 STARS_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
+	FIELD field_1_10819 STARS_WITH_DEPTH_ATTACHMENT Lnet/minecraft/class_1_1257;
+	FIELD field_1_10820 SUNRISE_SUNSET_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
+	FIELD field_1_10821 SUNRISE_SUNSET_WITH_DEPTH_ATTACHMENT Lnet/minecraft/class_1_1257;
+	FIELD field_1_10822 TRANSLUCENT_TERRAIN_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
+	FIELD field_1_10823 WIREFRAME_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_56812 BEACON_BEAM_TRANSLUCENT Lnet/minecraft/class_1_1257;
 	FIELD field_56814 RENDERTYPE_LEASH Lnet/minecraft/class_1_1257;
 	FIELD field_56815 RENDERTYPE_WATER_MASK Lnet/minecraft/class_1_1257;
@@ -130,10 +156,10 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_56870 OPAQUE_PARTICLE Lnet/minecraft/class_1_1257;
 	FIELD field_56871 TRANSLUCENT_PARTICLE Lnet/minecraft/class_1_1257;
 	FIELD field_56874 POSITION_SKY Lnet/minecraft/class_1_1257;
-	FIELD field_56875 POSITION_TEX_COLOR_END_SKY Lnet/minecraft/class_1_1257;
-	FIELD field_56876 POSITION_COLOR_SUNRISE_SUNSET Lnet/minecraft/class_1_1257;
-	FIELD field_56877 POSITION_STARS Lnet/minecraft/class_1_1257;
-	FIELD field_56878 POSITION_TEX_COLOR_CELESTIAL Lnet/minecraft/class_1_1257;
+	FIELD field_56875 END_SKY Lnet/minecraft/class_1_1257;
+	FIELD field_56876 SUNRISE_SUNSET Lnet/minecraft/class_1_1257;
+	FIELD field_56877 STARS Lnet/minecraft/class_1_1257;
+	FIELD field_56878 CELESTIAL Lnet/minecraft/class_1_1257;
 	FIELD field_56879 GUI Lnet/minecraft/class_1_1257;
 	FIELD field_56881 GUI_TEXT_HIGHLIGHT Lnet/minecraft/class_1_1257;
 	FIELD field_56883 GUI_TEXTURED Lnet/minecraft/class_1_1257;
@@ -201,6 +227,10 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	METHOD method_1_9200 getOptional ()Ljava/util/List;
 	METHOD method_1_9201 registerOptional (Lnet/minecraft/class_1_1257;)Lnet/minecraft/class_1_1257;
 		ARG 0 pipeline
+	METHOD method_1_10856 (Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 0 builder
+	METHOD method_1_10857 (Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 0 builder
 	METHOD method_67886 getRequired ()Ljava/util/List;
 	METHOD method_67887 register (Lnet/minecraft/class_1_1257;)Lnet/minecraft/class_1_1257;
 		ARG 0 pipeline

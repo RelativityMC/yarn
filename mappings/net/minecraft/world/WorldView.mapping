@@ -21,6 +21,14 @@ CLASS net/minecraft/class_4538 net/minecraft/world/WorldView
 	METHOD method_1_8472 octahedralRegion (Lnet/minecraft/class_2338;I)Lnet/minecraft/class_1_1349;
 		ARG 1 center
 		ARG 2 range
+	METHOD method_1_10829 containsYRangeInArea (Lnet/minecraft/class_2902$class_2903;IIIIII)Z
+		ARG 1 heightmap
+		ARG 2 minX
+		ARG 3 minZ
+		ARG 4 maxX
+		ARG 5 maxZ
+		ARG 6 minY
+		ARG 7 maxY
 	METHOD method_8392 getChunk (II)Lnet/minecraft/class_2791;
 		COMMENT {@return the chunk with position {@code chunkX} and {@code chunkZ}}
 		ARG 1 chunkX
@@ -94,6 +102,9 @@ CLASS net/minecraft/class_4538 net/minecraft/world/WorldView
 	METHOD method_22351 isWater (Lnet/minecraft/class_2338;)Z
 		ARG 1 pos
 	METHOD method_22387 getGeneratorStoredBiome (III)Lnet/minecraft/class_6880;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_29556 getStatesInBoxIfLoaded (Lnet/minecraft/class_238;)Ljava/util/stream/Stream;
 		ARG 1 box
 	METHOD method_30349 getRegistryManager ()Lnet/minecraft/class_5455;

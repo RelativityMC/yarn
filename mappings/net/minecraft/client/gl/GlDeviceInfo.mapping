@@ -4,6 +4,7 @@ CLASS net/minecraft/class_11541 net/minecraft/client/gl/GlDeviceInfo
 	FIELD field_1_5275 VIRTUAL_DEVICES Ljava/util/List;
 	FIELD field_1_10079 forceDisableArbBufferStorage Z
 	FIELD field_1_10080 nvidia Z
+	FIELD field_1_10832 MIN_REQUIRED_TEXTURE_SIZE I
 	FIELD field_63062 writeToBufferIsSlow Z
 	FIELD field_64657 anisotropyHasKnownIssues Z
 	METHOD <init> (Ljava/lang/String;Ljava/lang/String;)V

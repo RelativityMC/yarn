@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_1_1723 net/minecraft/gui/hud/debug/DebugSection
+	METHOD <init> (Lnet/minecraft/class_1_1716;)V
+		ARG 1 group
+	METHOD method_1_10939 addCustomRenderer (Lnet/minecraft/class_1_1724;)V
+		ARG 1 customRenderer
+	METHOD method_1_10940 addFact (Ljava/lang/String;Lnet/minecraft/class_2561;)V
+		ARG 1 label
+		ARG 2 value
+	METHOD method_1_10941 draw (Lnet/minecraft/class_332;ILnet/minecraft/class_327;Lnet/minecraft/class_1_1718$class_1_1719;I)Lnet/minecraft/class_768;
+		ARG 1 context
+		ARG 2 y
+		ARG 3 textRenderer
+		ARG 4 side
+		ARG 5 windowWidth
+	METHOD method_1_10942 (Lnet/minecraft/class_327;Lcom/mojang/datafixers/util/Pair;)I
+		ARG 1 fact

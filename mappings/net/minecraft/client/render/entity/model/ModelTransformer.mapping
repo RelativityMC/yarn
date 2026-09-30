@@ -4,6 +4,23 @@ CLASS net/minecraft/class_9953 net/minecraft/client/render/entity/model/ModelTra
 		ARG 1 modelData
 	METHOD method_1_273 scaling (F)Lnet/minecraft/class_9953;
 		ARG 0 scale
+	METHOD method_1_10911 (FLnet/minecraft/class_5609;)Lnet/minecraft/class_5609;
+		ARG 1 data
+	METHOD method_1_10912 (FLnet/minecraft/class_5603;)Lnet/minecraft/class_5603;
+		ARG 1 transform
+	METHOD method_1_10913 (FFFLnet/minecraft/class_5609;)Lnet/minecraft/class_5609;
+		ARG 3 data
+	METHOD method_1_10914 (FFFLnet/minecraft/class_5603;)Lnet/minecraft/class_5603;
+		ARG 3 transform
+	METHOD method_1_10915 scalingRaw (F)Lnet/minecraft/class_9953;
+		COMMENT Similar to {@link #scaling(float)}, but without a compensating <var>y</var>-translation.
+		COMMENT
+		COMMENT This is used by {@link net.minecraft.client.render.entity.model.ArrowEntityModel}.
+		ARG 0 scale
+	METHOD method_1_10916 translating (FFF)Lnet/minecraft/class_9953;
+		ARG 0 dx
+		ARG 1 dy
+		ARG 2 dz
 	METHOD method_62139 (FFLnet/minecraft/class_5603;)Lnet/minecraft/class_5603;
 		ARG 2 transform
 	METHOD method_62140 (FFLnet/minecraft/class_5609;)Lnet/minecraft/class_5609;

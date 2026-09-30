@@ -1,5 +1,8 @@
 CLASS net/minecraft/class_340 net/minecraft/client/gui/hud/DebugHud
 	FIELD field_1_679 lightmapTextureVisible Z
+	FIELD field_1_10882 entryListVersion J
+	FIELD field_1_10883 left Lnet/minecraft/class_1_1718;
+	FIELD field_1_10884 right Lnet/minecraft/class_1_1718;
 	FIELD field_2079 client Lnet/minecraft/class_310;
 	FIELD field_2080 chunkFuture Ljava/util/concurrent/CompletableFuture;
 	FIELD field_2081 textRenderer Lnet/minecraft/class_327;
@@ -30,6 +33,9 @@ CLASS net/minecraft/class_340 net/minecraft/client/gui/hud/DebugHud
 		ARG 1 chartKey
 	METHOD method_1_646 shouldRenderLightmapTexture ()Z
 	METHOD method_1_647 toggleLightmapTexture ()V
+	METHOD method_1_10902 reset ()V
+	METHOD method_1_10903 (Lnet/minecraft/class_1_1723;)Z
+		ARG 0 section
 	METHOD method_1834 getChunk ()Lnet/minecraft/class_2818;
 	METHOD method_1836 getClientChunk ()Lnet/minecraft/class_2818;
 	METHOD method_1840 getWorld ()Lnet/minecraft/class_1937;
@@ -59,3 +65,11 @@ CLASS net/minecraft/class_340 net/minecraft/client/gui/hud/DebugHud
 	METHOD method_56829 shouldRenderTickCharts ()Z
 	METHOD method_61981 getPieChart ()Lnet/minecraft/class_9931;
 	CLASS 1 1
+		METHOD method_1_10904 (Lnet/minecraft/class_1_1716;Lnet/minecraft/class_1_1716;)Lnet/minecraft/class_1_1723;
+			ARG 1 gr
+		METHOD method_1_10905 (Lnet/minecraft/class_1_1716;Lnet/minecraft/class_1_1716;)Lnet/minecraft/class_1_1723;
+			ARG 1 gr
+		METHOD method_1_10906 (Lnet/minecraft/class_1_1716;Lnet/minecraft/class_1_1716;)Lnet/minecraft/class_1_1723;
+			ARG 1 gr
+		METHOD method_1_10907 (Lnet/minecraft/class_1_1716;Lnet/minecraft/class_1_1716;)Lnet/minecraft/class_1_1723;
+			ARG 1 gr

@@ -2,6 +2,7 @@ CLASS net/minecraft/class_10151 net/minecraft/client/shader/ShaderLoader
 	FIELD field_1_1822 projectionMatrix Lnet/minecraft/class_11279;
 	FIELD field_1_10369 INCLUDE_FINDER Lnet/minecraft/class_7654;
 	FIELD field_1_10370 EXTENSION Ljava/lang/String;
+	FIELD field_1_10797 SHADER_TYPES [Lnet/minecraft/class_1_1229;
 	FIELD field_53934 SHADERS_PATH Ljava/lang/String;
 	FIELD field_53935 INCLUDE_PATH Ljava/lang/String;
 	FIELD field_53937 LOGGER Lorg/slf4j/Logger;
@@ -20,6 +21,7 @@ CLASS net/minecraft/class_10151 net/minecraft/client/shader/ShaderLoader
 		ARG 1 postEffect
 		ARG 2 accessibleTargets
 	METHOD method_1_9902 getCompiledPipelines (Lnet/minecraft/class_1_1685;Lnet/minecraft/class_12289;Ljava/util/List;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 pipelineCompiler
 		ARG 1 shaderSourceGetter
 		ARG 2 pipelines
 		ARG 3 prepareExecutor
@@ -46,6 +48,8 @@ CLASS net/minecraft/class_10151 net/minecraft/client/shader/ShaderLoader
 		ARG 0 id
 		ARG 1 resource
 		ARG 2 builder
+	METHOD method_1_10853 getShaderTypeByExtension (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_1229;
+		ARG 0 id
 	METHOD method_62939 loadShaderSource (Lnet/minecraft/class_2960;Lnet/minecraft/class_3298;Lnet/minecraft/class_1_1229;Lcom/google/common/collect/ImmutableMap$Builder;)V
 		ARG 0 id
 		ARG 1 resource
@@ -57,6 +61,7 @@ CLASS net/minecraft/class_10151 net/minecraft/client/shader/ShaderLoader
 	METHOD method_62942 loadShaderDefinitions (Lnet/minecraft/class_3300;)Lnet/minecraft/class_10151$class_10153;
 		ARG 0 resourceManager
 	METHOD method_62945 apply (Lnet/minecraft/class_1_1685;Lnet/minecraft/class_10151$class_1_1488;)V
+		ARG 1 pipelineCompiler
 		ARG 2 preparation
 	METHOD method_62953 loadPostEffect (Lnet/minecraft/class_2960;Lnet/minecraft/class_3298;Lcom/google/common/collect/ImmutableMap$Builder;)V
 		ARG 0 id

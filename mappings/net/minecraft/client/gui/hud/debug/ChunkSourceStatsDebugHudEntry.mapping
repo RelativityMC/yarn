@@ -1,1 +1,9 @@
 CLASS net/minecraft/class_11608 net/minecraft/client/gui/hud/debug/ChunkSourceStatsDebugHudEntry
+	METHOD method_1_10987 (Lnet/minecraft/class_310;Lnet/minecraft/class_1_1714;)V
+		ARG 1 fact
+	METHOD method_1_10988 (Lnet/minecraft/class_5582;Lnet/minecraft/class_1_1714;)V
+		ARG 1 fact
+	METHOD method_1_10989 (Lnet/minecraft/class_3218;Lnet/minecraft/class_1_1714;)V
+		ARG 1 fact
+	METHOD method_1_10990 (Lnet/minecraft/class_3218;Lnet/minecraft/class_1_1714;)V
+		ARG 1 fact

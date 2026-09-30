@@ -1,7 +1,16 @@
 CLASS net/minecraft/class_11630 net/minecraft/client/gui/hud/debug/DebugHudLines
-	METHOD method_72743 addLineToSection (Lnet/minecraft/class_1_1716;Ljava/lang/String;)V
+	METHOD method_1_10954 addFact (Lnet/minecraft/class_1_1716;Ljava/lang/String;Ljava/util/function/Consumer;)V
+		ARG 1 group
+		ARG 2 label
+		ARG 3 value
+	METHOD method_1_10955 addCustomRenderer (Lnet/minecraft/class_1_1716;Lnet/minecraft/class_1_1724;)V
+		ARG 1 group
+		ARG 2 customRenderer
+	METHOD method_72743 addLine (Lnet/minecraft/class_1_1716;Ljava/lang/String;)V
+		ARG 1 group
 		ARG 2 line
-	METHOD method_72744 addLinesToSection (Lnet/minecraft/class_1_1716;Ljava/util/Collection;)V
+	METHOD method_72744 addLines (Lnet/minecraft/class_1_1716;Ljava/util/Collection;)V
+		ARG 1 group
 		ARG 2 lines
 	METHOD method_72745 addPriorityLine (Ljava/lang/String;)V
 		ARG 1 line

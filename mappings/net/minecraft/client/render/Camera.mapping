@@ -19,6 +19,7 @@ CLASS net/minecraft/class_4184 net/minecraft/client/render/Camera
 	FIELD field_1_1712 lastFovMultiplier F
 	FIELD field_1_1713 panoramaHorizontalPlane Lorg/joml/Vector3f;
 	FIELD field_1_1714 projection Lnet/minecraft/class_11279;
+	FIELD field_1_10778 submersionType Lnet/minecraft/class_5636;
 	FIELD field_18709 ready Z
 	FIELD field_18710 area Lnet/minecraft/class_1937;
 	FIELD field_18711 focusedEntity Lnet/minecraft/class_1297;
@@ -88,6 +89,7 @@ CLASS net/minecraft/class_4184 net/minecraft/client/render/Camera
 		ARG 1 renderTickCounter
 	METHOD method_1_2452 getTickProgressForFocusedEntity (Lnet/minecraft/class_9779;)F
 		ARG 1 renderTickCounter
+	METHOD method_1_10823 getSubmersionType ()Lnet/minecraft/class_5636;
 	METHOD method_19317 updateEyeHeight ()V
 	METHOD method_19318 clipToSpace (F)F
 		ARG 1 distance
@@ -110,7 +112,7 @@ CLASS net/minecraft/class_4184 net/minecraft/client/render/Camera
 	METHOD method_19331 getFocusedEntity ()Lnet/minecraft/class_1297;
 	METHOD method_19332 isReady ()Z
 	METHOD method_19333 isThirdPerson ()Z
-	METHOD method_19334 getSubmersionType ()Lnet/minecraft/class_5636;
+	METHOD method_19334 computeSubmersionType ()Lnet/minecraft/class_5636;
 	METHOD method_19335 getHorizontalPlane ()Lorg/joml/Vector3fc;
 	METHOD method_19336 getVerticalPlane ()Lorg/joml/Vector3fc;
 	METHOD method_19337 reset ()V

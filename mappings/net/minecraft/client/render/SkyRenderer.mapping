@@ -1,4 +1,8 @@
 CLASS net/minecraft/class_9975 net/minecraft/client/render/SkyRenderer
+	FIELD field_1_10787 SKY_OCCLUDER_BUFFER_SIZE I
+	FIELD field_1_10792 lastOcclusionEndAngle F
+	FIELD field_1_10793 lastOcclusionStartAngle F
+	FIELD field_1_10794 skyOccluderUniformBuffer Lnet/minecraft/class_11285;
 	FIELD field_53143 END_SKY_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_53145 starVertexBuffer Lnet/minecraft/class_1_1211;
 	FIELD field_53146 topSkyVertexBuffer Lnet/minecraft/class_1_1211;
@@ -16,42 +20,82 @@ CLASS net/minecraft/class_9975 net/minecraft/client/render/SkyRenderer
 	METHOD <init> (Lnet/minecraft/class_1060;Lnet/minecraft/class_11697;)V
 		ARG 1 textureManager
 		ARG 2 atlasManager
+	METHOD method_1_9891 computePositionMatrix (Lnet/minecraft/class_4587;FF)Lorg/joml/Matrix4f;
+		ARG 1 matrices
+		ARG 2 altitude
+		ARG 3 scale
+	METHOD method_1_9892 renderCelestialBody (Ljava/util/function/Supplier;Lnet/minecraft/class_1_1317;Lnet/minecraft/class_1_1254;Lnet/minecraft/class_1_1211;Lnet/minecraft/class_1_1211;IZ)V
+		ARG 1 labelGetter
+		ARG 2 pass
+		ARG 3 transforms
+		ARG 4 indexBuffer
+		ARG 5 vertexBuffer
+		ARG 6 vertexOffset
+		ARG 7 withDepthAttachment
 	METHOD method_1_9895 renderSky (Lnet/minecraft/class_12076;Lnet/minecraft/class_1_1317;Lorg/joml/Vector4f;Z)V
+		ARG 1 state
+		ARG 2 pass
+		ARG 3 fogColor
+		ARG 4 withDepthAttachment
+	METHOD method_1_10834 isSubmergedInWater (Lnet/minecraft/class_4184;)Z
+		ARG 1 camera
+	METHOD method_1_10835 updateSkyOccluderUniforms (Lnet/minecraft/class_12076;)V
+		ARG 1 state
+	METHOD method_1_10836 renderSkyOccluder (Lnet/minecraft/class_1_1317;Lorg/joml/Vector4f;Z)V
+		ARG 1 pass
+		ARG 2 fogColor
+		ARG 3 withDepthAttachment
 	METHOD method_62302 renderTopSky (Lnet/minecraft/class_1_1317;Lorg/joml/Vector3fc;Z)V
 		ARG 1 pass
 		ARG 2 skyColor
+		ARG 3 withDepthAttachment
 	METHOD method_62303 renderSun (Lnet/minecraft/class_1_1317;FLnet/minecraft/class_4587;Z)V
+		ARG 1 pass
 		ARG 2 alpha
 		ARG 3 matrices
+		ARG 4 withDepthAttachment
 	METHOD method_62304 renderMoon (Lnet/minecraft/class_1_1317;Lnet/minecraft/class_12131;FLnet/minecraft/class_4587;Z)V
+		ARG 1 pass
 		ARG 2 moonPhase
 		ARG 3 alpha
 		ARG 4 matrices
+		ARG 5 withDepthAttachment
 	METHOD method_62306 renderGlowingSky (Lnet/minecraft/class_1_1317;Lnet/minecraft/class_4587;FLorg/joml/Vector4fc;Z)V
+		ARG 1 pass
 		ARG 2 matrices
 		ARG 3 solarAngle
+		ARG 4 color
+		ARG 5 withDepthAttachment
 	METHOD method_62307 renderCelestialBodies (Lnet/minecraft/class_1_1317;Lnet/minecraft/class_4587;FFFLnet/minecraft/class_12131;FFZ)V
 		ARG 1 pass
 		ARG 2 matrices
 		ARG 3 sunAngle
 		ARG 4 moonAngle
 		ARG 5 starAngle
+		ARG 6 moonPhase
 		ARG 7 alpha
 		ARG 8 starBrightness
+		ARG 9 withDepthAttachment
 	METHOD method_62309 createSky (Lnet/minecraft/class_4588;F)V
 		ARG 1 vertexConsumer
 		ARG 2 height
 	METHOD method_62310 renderStars (Lnet/minecraft/class_1_1317;FLnet/minecraft/class_4587;Z)V
+		ARG 1 pass
 		ARG 2 brightness
 		ARG 3 matrices
+		ARG 4 withDepthAttachment
 	METHOD method_62312 renderEndSky (Lnet/minecraft/class_1_1317;Z)V
+		ARG 1 pass
+		ARG 2 withDepthAttachment
 	METHOD method_65233 createStars ()Lnet/minecraft/class_1_1211;
 	METHOD method_65234 createEndSky ()Lnet/minecraft/class_1_1211;
 	METHOD method_73244 drawEndLightFlash (Lnet/minecraft/class_1_1317;Lnet/minecraft/class_4587;FFFZ)V
+		ARG 1 pass
 		ARG 2 matrices
 		ARG 3 intensity
 		ARG 4 pitch
 		ARG 5 yaw
+		ARG 6 withDepthAttachment
 	METHOD method_74757 bindTexture (Lnet/minecraft/class_1060;Lnet/minecraft/class_2960;)Lnet/minecraft/class_1044;
 		ARG 1 textureManager
 		ARG 2 texture

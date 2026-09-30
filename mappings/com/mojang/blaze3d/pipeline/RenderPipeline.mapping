@@ -46,6 +46,9 @@ CLASS net/minecraft/class_1_1257 com/mojang/blaze3d/pipeline/RenderPipeline
 	METHOD method_1_9095 getShaders ()Ljava/util/Map;
 	METHOD method_1_9210 getPushConstantSize ()I
 	METHOD method_1_10584 getDepthStencilFormat ()Lnet/minecraft/class_1_658;
+	METHOD method_1_10837 of (Ljava/lang/String;[Lnet/minecraft/class_1_1257$class_1_1259;)Lnet/minecraft/class_1_1257;
+		ARG 0 id
+		ARG 1 snippets
 	CLASS class_1_1258 Builder
 		FIELD field_1_8639 numColorTargetStates I
 		FIELD field_1_8640 bindGroupLayouts Ljava/util/Optional;

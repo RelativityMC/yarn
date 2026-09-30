@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_9691 net/minecraft/entity/decoration/BlockAttachedEntity
 	FIELD field_1_8723 ATTACH_CHECK_PERIOD_TICKS I
 	FIELD field_1_9213 BLOCK_POS_KEY Ljava/lang/String;
+	FIELD field_1_10891 recentDamageSource Lnet/minecraft/class_1282;
 	FIELD field_51589 attachedBlockPos Lnet/minecraft/class_2338;
 	FIELD field_51590 LOGGER Lorg/slf4j/Logger;
 	FIELD field_51591 attachCheckTimer I
@@ -9,6 +10,10 @@ CLASS net/minecraft/class_9691 net/minecraft/entity/decoration/BlockAttachedEnti
 		ARG 2 world
 		ARG 3 attachedBlockPos
 	METHOD method_1_8162 handleFluidCollisions ()V
+	METHOD method_1_10925 getRecentDamageSource ()Lnet/minecraft/class_1282;
+	METHOD method_1_10926 kill (Lnet/minecraft/class_3218;Lnet/minecraft/class_1282;)V
+		ARG 1 world
+		ARG 2 source
 	METHOD method_6888 canStayAttached ()Z
 	METHOD method_6889 onBreak (Lnet/minecraft/class_3218;Lnet/minecraft/class_1297;)V
 		ARG 1 world

@@ -34,6 +34,16 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 		COMMENT {@return a {@link ByteBuffer} owned by this {@link NativeImage}}
 	METHOD method_1_10462 writeTo (Ljava/nio/channels/WritableByteChannel;)Z
 		ARG 1 channel
+	METHOD method_1_10831 writeTo (Lnet/minecraft/class_1_1329;Lnet/minecraft/class_1_1318;)V
+		ARG 1 commandEncoder
+		ARG 2 dest
+	METHOD method_1_10832 writeTo (Lnet/minecraft/class_1_1329;Lnet/minecraft/class_1_1318;IIII)V
+		ARG 1 commandEncoder
+		ARG 2 dest
+		ARG 3 offsetX
+		ARG 4 offsetY
+		ARG 5 width
+		ARG 6 height
 	METHOD method_4300 resizeSubRectTo (IIIILnet/minecraft/class_1011;)V
 		ARG 1 x
 		ARG 2 y

@@ -3,6 +3,7 @@ CLASS net/minecraft/class_12116 net/minecraft/entity/passive/AbstractNautilusEnt
 	FIELD field_63337 DASHING Lnet/minecraft/class_2940;
 	FIELD field_63342 jumpCooldown I
 	FIELD field_64483 inventory Lnet/minecraft/class_1277;
+	METHOD method_1_10931 getRidingSound ()Lnet/minecraft/class_3414;
 	METHOD method_75151 setDashing (Z)V
 		ARG 1 dashing
 	METHOD method_75152 dash (FLnet/minecraft/class_1657;)V

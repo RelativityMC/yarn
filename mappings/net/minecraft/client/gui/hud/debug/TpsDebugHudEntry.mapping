@@ -1,1 +1,5 @@
 CLASS net/minecraft/class_11628 net/minecraft/client/gui/hud/debug/TpsDebugHudEntry
+	METHOD method_1_10908 (Lnet/minecraft/class_1937;Lnet/minecraft/class_1132;Lnet/minecraft/class_634;Lnet/minecraft/class_1_1714;)V
+		ARG 3 fact
+	METHOD method_1_10909 (FFLnet/minecraft/class_1_1714;)V
+		ARG 2 fact

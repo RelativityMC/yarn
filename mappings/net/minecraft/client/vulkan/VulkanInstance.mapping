@@ -6,6 +6,8 @@ CLASS net/minecraft/class_1_691 net/minecraft/client/vulkan/VulkanInstance
 	FIELD field_1_3551 enabledExtensions Ljava/util/Set;
 	FIELD field_1_3552 rawInstance Lorg/lwjgl/vulkan/VkInstance;
 	METHOD <init> (Ljava/lang/String;IIZZ)V
+		ARG 1 applicationName
+		ARG 2 applicationVersion
 		ARG 3 logLevel
 		ARG 4 useLabels
 		ARG 5 enableValidationLayer

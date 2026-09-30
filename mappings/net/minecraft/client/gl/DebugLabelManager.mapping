@@ -1,7 +1,13 @@
 CLASS net/minecraft/class_10861 net/minecraft/client/gl/DebugLabelManager
 	FIELD field_57851 LOGGER Lorg/slf4j/Logger;
+	METHOD method_1_10863 truncate (Ljava/lang/String;IZ)Ljava/lang/String;
+		ARG 0 string
+		ARG 1 maxLength
+		ARG 2 ellipses
 	METHOD method_68370 isUsable ()Z
 	METHOD method_68371 labelGlGpuBuffer (Lnet/minecraft/class_1_1010;Ljava/util/function/Supplier;)V
+		ARG 1 buffer
+		ARG 2 labelGetter
 	METHOD method_68372 labelShaderProgram (Lnet/minecraft/class_5944;)V
 		ARG 1 program
 	METHOD method_68373 labelCompiledShader (Lnet/minecraft/class_10141;)V

@@ -1,0 +1,17 @@
+CLASS net/minecraft/class_1_1714 net/minecraft/gui/hud/debug/FactBuilder
+	FIELD field_1_10833 VALUE_STYLE Lnet/minecraft/class_2583;
+	FIELD field_1_10834 text Lnet/minecraft/class_5250;
+	METHOD method_1_10867 value (Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/class_1_1714;
+		ARG 1 format
+		ARG 2 args
+	METHOD method_1_10868 getText ()Lnet/minecraft/class_2561;
+	METHOD method_1_10869 text (Ljava/lang/String;)Lnet/minecraft/class_1_1714;
+		ARG 1 string
+	METHOD method_1_10870 text (Lnet/minecraft/class_2561;)Lnet/minecraft/class_1_1714;
+		ARG 1 text
+	METHOD method_1_10871 value (I)Lnet/minecraft/class_1_1714;
+		ARG 1 n
+	METHOD method_1_10872 value (J)Lnet/minecraft/class_1_1714;
+		ARG 1 n
+	METHOD method_1_10873 value (Ljava/lang/String;)Lnet/minecraft/class_1_1714;
+		ARG 1 string

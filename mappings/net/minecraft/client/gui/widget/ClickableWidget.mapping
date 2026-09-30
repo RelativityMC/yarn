@@ -24,6 +24,9 @@ CLASS net/minecraft/class_339 net/minecraft/client/gui/widget/ClickableWidget
 		ARG 1 context
 		ARG 2 mouseX
 		ARG 3 mouseY
+	METHOD method_1_10864 isVisible ()Z
+	METHOD method_1_10865 setVisible (Z)V
+		ARG 1 visible
 	METHOD method_25348 onClick (Lnet/minecraft/class_11909;Z)V
 		ARG 1 click
 		ARG 2 doubled

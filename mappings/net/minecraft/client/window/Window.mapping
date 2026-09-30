@@ -6,6 +6,7 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	FIELD field_1_8786 closeCallback Ljava/lang/Runnable;
 	FIELD field_1_9531 enableQuitShortcuts Z
 	FIELD field_1_10515 borderlessFullscreen Z
+	FIELD field_1_10780 wayland Z
 	FIELD field_5174 windowedWidth I
 	FIELD field_5175 windowedX I
 	FIELD field_5176 eventHandler Lnet/minecraft/class_3678;
@@ -34,6 +35,15 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	FIELD field_55579 minimized Z
 	FIELD field_62447 allowCursorChanges Z
 	FIELD field_62448 cursor Lnet/minecraft/class_11875;
+	METHOD <init> (Lnet/minecraft/class_3678;Lnet/minecraft/class_543;Ljava/lang/String;ZLjava/lang/String;Lnet/minecraft/class_323;Lnet/minecraft/class_1_11;I)V
+		ARG 1 eventHandler
+		ARG 2 settings
+		ARG 3 fullscreenResolution
+		ARG 4 exclusiveFullscreen
+		ARG 5 title
+		ARG 6 monitorTracker
+		ARG 7 backend
+		ARG 8 maxTextureSize
 	METHOD method_1_2662 createHandle (Lnet/minecraft/class_1_11;IILjava/lang/String;)J
 		ARG 1 windowBackend
 		ARG 2 width
@@ -89,6 +99,12 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	METHOD method_1_10455 isFullscreenBorderless ()Z
 	METHOD method_1_10485 restoreWindow ()V
 	METHOD method_1_10486 syncWindow ()V
+	METHOD method_1_10825 isWayland ()Z
+	METHOD method_1_10826 onDisplayChanged ()V
+	METHOD method_1_10827 updateCursorLock ()V
+	METHOD method_1_10828 setStoredWindowSize (II)V
+		ARG 1 width
+		ARG 2 height
 	METHOD method_4474 setPhase (Ljava/lang/String;)V
 		ARG 1 phase
 	METHOD method_4475 applyFullscreenVideoMode ()V

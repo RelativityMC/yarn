@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_1724 net/minecraft/client/gui/hud/debug/DebugCustomRenderer
+	METHOD method_1_10943 draw (Lnet/minecraft/class_332;IILnet/minecraft/class_1_1718$class_1_1719;)V
+		ARG 1 context
+		ARG 2 x
+		ARG 3 y
+		ARG 4 side
+	METHOD method_1_10944 getHeight ()I
+	METHOD method_1_10945 getWidth (I)I
+		ARG 1 cumulativeWidth

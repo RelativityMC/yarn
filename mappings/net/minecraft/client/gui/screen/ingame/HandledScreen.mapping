@@ -39,6 +39,41 @@ CLASS net/minecraft/class_465 net/minecraft/client/gui/screen/ingame/HandledScre
 		ARG 2 stack
 	METHOD method_1_8948 getClickedButton (Lnet/minecraft/class_11909;)I
 		ARG 0 click
+	METHOD method_1_10970 handleHotbarKeys (Ljava/util/function/Predicate;)Z
+		ARG 1 predicate
+	METHOD method_1_10971 onMouseRelease (Lnet/minecraft/class_1735;IZZZI)Z
+		ARG 1 slot
+		ARG 2 id
+		ARG 3 doubleClicking
+		ARG 4 left
+		ARG 5 shift
+		ARG 6 button
+	METHOD method_1_10972 isCursorDragging ()Z
+	METHOD method_1_10973 (Lnet/minecraft/class_11908;Lnet/minecraft/class_304;)Z
+		ARG 1 keybind
+	METHOD method_1_10974 (Lnet/minecraft/class_11909;Lnet/minecraft/class_304;)Z
+		ARG 1 keybind
+	METHOD method_1_10975 onReleaseStack (Lnet/minecraft/class_1735;IIZZ)V
+		ARG 1 slot
+		ARG 2 id
+		ARG 3 button
+		ARG 4 pickItem
+		ARG 5 shift
+	METHOD method_1_10976 setCursorDragging (Z)V
+		ARG 1 cursorDragging
+	METHOD method_1_10977 onMouseDrag (ZZZI)V
+		ARG 1 left
+		ARG 2 right
+		ARG 3 clone
+		ARG 4 button
+	METHOD method_1_10978 onMouseClick (Lnet/minecraft/class_1735;IIZZ)V
+		ARG 1 slot
+		ARG 2 id
+		ARG 3 button
+		ARG 4 clone
+		ARG 5 quickMove
+	METHOD method_1_10979 setQuickMovingStack (Lnet/minecraft/class_1735;)V
+		ARG 1 slot
 	METHOD method_2378 isPointWithinBounds (IIIIDD)Z
 		ARG 1 x
 		ARG 2 y
@@ -60,7 +95,7 @@ CLASS net/minecraft/class_465 net/minecraft/client/gui/screen/ingame/HandledScre
 		ARG 3 x
 		ARG 4 y
 		ARG 5 amountText
-	METHOD method_2383 onMouseClick (Lnet/minecraft/class_1735;IILnet/minecraft/class_1713;)V
+	METHOD method_2383 onSlotClick (Lnet/minecraft/class_1735;IILnet/minecraft/class_1713;)V
 		COMMENT @see net.minecraft.screen.ScreenHandler#onSlotClick(int, int, net.minecraft.screen.slot.SlotActionType, net.minecraft.entity.player.PlayerEntity)
 		ARG 1 slot
 		ARG 2 slotId

@@ -1,1 +1,13 @@
 CLASS net/minecraft/class_11613 net/minecraft/client/gui/hud/debug/LightLevelsDebugHudEntry
+	METHOD method_1_10920 (Lnet/minecraft/class_3568;Lnet/minecraft/class_2338;Lnet/minecraft/class_1_1714;)V
+		ARG 2 fact
+	METHOD method_1_10921 (Lnet/minecraft/class_1_1714;)V
+		ARG 0 fact
+	METHOD method_1_10922 (Lnet/minecraft/class_310;Lnet/minecraft/class_2338;Lnet/minecraft/class_1_1714;)V
+		ARG 2 fact
+	METHOD method_1_10923 (Lnet/minecraft/class_310;Lnet/minecraft/class_2338;Lnet/minecraft/class_1_1714;)V
+		ARG 2 fact
+	METHOD method_1_10924 addClientLightInfo (Lnet/minecraft/class_1_1714;Lnet/minecraft/class_310;Lnet/minecraft/class_2338;)Lnet/minecraft/class_1_1714;
+		ARG 0 factBuilder
+		ARG 1 client
+		ARG 2 pos

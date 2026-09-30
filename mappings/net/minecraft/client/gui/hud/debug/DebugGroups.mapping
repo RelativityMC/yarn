@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_1_1720 net/minecraft/client/gui/hud/debug/DebugGroups
+	FIELD field_1_10851 CHUNK_GENERATION Lnet/minecraft/class_1_1716;
+	FIELD field_1_10852 CHUNK_RENDERING Lnet/minecraft/class_1_1716;
+	FIELD field_1_10853 HEIGHTMAP Lnet/minecraft/class_1_1716;
+	FIELD field_1_10854 HELP Lnet/minecraft/class_1_1716;
+	FIELD field_1_10855 LIGHT Lnet/minecraft/class_1_1716;
+	FIELD field_1_10856 LOOKING_AT_BLOCK Lnet/minecraft/class_1_1716;
+	FIELD field_1_10857 LOOKING_AT_ENTITY Lnet/minecraft/class_1_1716;
+	FIELD field_1_10858 LOOKING_AT_FLUID Lnet/minecraft/class_1_1716;
+	FIELD field_1_10859 MEMORY Lnet/minecraft/class_1_1716;
+	FIELD field_1_10860 MISC Lnet/minecraft/class_1_1716;
+	FIELD field_1_10861 PERFORMANCE_IMPACTORS Lnet/minecraft/class_1_1716;
+	FIELD field_1_10862 POSITION Lnet/minecraft/class_1_1716;
+	FIELD field_1_10863 PRIORITY Lnet/minecraft/class_1_1716;
+	FIELD field_1_10864 ENTITY_SPAWN_COUNTS Lnet/minecraft/class_1_1716;
+	FIELD field_1_10865 SYSTEM_SPECS Lnet/minecraft/class_1_1716;

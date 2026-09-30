@@ -16,6 +16,7 @@ CLASS net/minecraft/class_2633 net/minecraft/block/entity/StructureBlockBlockEnt
 	FIELD field_31364 MAX_ABSOLUTE_POS I
 	FIELD field_31365 MAX_SIZE I
 	FIELD field_31366 AUTHOR_KEY Ljava/lang/String;
+	FIELD field_31367 SEARCH_RADIUS I
 	FIELD field_55823 strict Z
 	FIELD field_57787 DEFAULT_AUTHOR Ljava/lang/String;
 	FIELD field_57788 DEFAULT_METADATA Ljava/lang/String;
@@ -33,6 +34,13 @@ CLASS net/minecraft/class_2633 net/minecraft/block/entity/StructureBlockBlockEnt
 	METHOD <init> (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
 		ARG 1 pos
 		ARG 2 state
+	METHOD method_1_8170 (Lnet/minecraft/class_2680;)Z
+		ARG 0 state
+	METHOD method_1_8171 (Lnet/minecraft/class_1937;Lnet/minecraft/class_2960;Lorg/apache/commons/lang3/mutable/MutableInt;Lorg/apache/commons/lang3/mutable/MutableObject;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
+		ARG 4 pos
+		ARG 5 state
+	METHOD method_1_8172 (Lnet/minecraft/class_2960;Lorg/apache/commons/lang3/mutable/MutableInt;Lorg/apache/commons/lang3/mutable/MutableObject;Lnet/minecraft/class_2338;Lnet/minecraft/class_2633;)V
+		ARG 4 blockEntity
 	METHOD method_11343 setTemplateName (Ljava/lang/String;)V
 		ARG 1 templateName
 	METHOD method_11344 setTemplateName (Lnet/minecraft/class_2960;)V
@@ -93,6 +101,9 @@ CLASS net/minecraft/class_2633 net/minecraft/block/entity/StructureBlockBlockEnt
 	METHOD method_34275 (Lnet/minecraft/class_2338;Lnet/minecraft/class_3341;)Z
 		ARG 2 box
 	METHOD method_34277 getStructureBox (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2960;)Ljava/util/Optional;
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 templateName
 	METHOD method_54874 loadAndTryPlaceStructure (Lnet/minecraft/class_3218;)Z
 		ARG 1 world
 	METHOD method_54875 loadAndPlaceStructure (Lnet/minecraft/class_3218;Lnet/minecraft/class_3499;)V

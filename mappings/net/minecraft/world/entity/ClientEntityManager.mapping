@@ -3,11 +3,13 @@ CLASS net/minecraft/class_5582 net/minecraft/world/entity/ClientEntityManager
 	FIELD field_27280 handler Lnet/minecraft/class_5576;
 	FIELD field_27281 index Lnet/minecraft/class_5570;
 	FIELD field_27282 cache Lnet/minecraft/class_5573;
-	FIELD field_27283 tickingChunkSections Lit/unimi/dsi/fastutil/longs/LongSet;
+	FIELD field_27283 tickingChunks Lit/unimi/dsi/fastutil/longs/LongSet;
 	FIELD field_27284 lookup Lnet/minecraft/class_5577;
 	METHOD <init> (Ljava/lang/Class;Lnet/minecraft/class_5576;)V
 		ARG 1 entityClass
 		ARG 2 handler
+	METHOD method_1_10956 getCachedSectionCount ()I
+	METHOD method_1_10957 getTickingChunkCount ()I
 	METHOD method_31866 getLookup ()Lnet/minecraft/class_5577;
 	METHOD method_31867 (J)Lnet/minecraft/class_5584;
 		ARG 1 pos

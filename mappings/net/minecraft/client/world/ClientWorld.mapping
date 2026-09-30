@@ -58,6 +58,7 @@ CLASS net/minecraft/class_638 net/minecraft/client/world/ClientWorld
 	METHOD method_1_10468 playBlockHitSound (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
 		ARG 1 pos
 		ARG 2 state
+	METHOD method_1_10855 fact ()Lnet/minecraft/class_5582;
 	METHOD method_2932 addParticle (DDDDDLnet/minecraft/class_2394;)V
 		ARG 1 minX
 		ARG 3 maxX

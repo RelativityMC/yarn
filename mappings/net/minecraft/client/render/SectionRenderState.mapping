@@ -9,12 +9,15 @@ CLASS net/minecraft/class_11532 net/minecraft/client/render/SectionRenderState
 		ARG 2 pass
 		ARG 3 terrainSampler
 		ARG 4 terrainTextureView
+		ARG 5 skyAndClouds
 		ARG 6 wireframe
 	METHOD method_1_7511 draw ([Lnet/minecraft/class_11515;Lnet/minecraft/class_12137;Lnet/minecraft/class_1_1317;Lnet/minecraft/class_1_1330;Lnet/minecraft/class_1_1330;Lnet/minecraft/class_11532$class_1_1722;Lnet/minecraft/class_1_1257;Lnet/minecraft/class_1_1257;)V
+		ARG 1 blockRenderLayers
 		ARG 2 terrainSampler
 		ARG 3 pass
 		ARG 4 terrainTextureView
 		ARG 5 lightmapTextureView
+		ARG 6 skyAndClouds
 		ARG 7 pipeline
 		ARG 8 multidrawPipeline
 	METHOD method_1_9333 drawInternal (Lnet/minecraft/class_11515;Lnet/minecraft/class_1_1317;Lnet/minecraft/class_1_1211;Lnet/minecraft/class_5595;ZLnet/minecraft/class_1_1257;Lnet/minecraft/class_1_1257;)V
@@ -22,6 +25,7 @@ CLASS net/minecraft/class_11532 net/minecraft/client/render/SectionRenderState
 		ARG 2 pass
 		ARG 3 indexBuffer
 		ARG 4 indexType
+		ARG 5 improvedFog
 		ARG 6 multidrawPipeline
 		ARG 7 pipeline
 	CLASS class_1_1416 Multidraw
@@ -41,3 +45,4 @@ CLASS net/minecraft/class_11532 net/minecraft/client/render/SectionRenderState
 			ARG 3 maxIndexCount
 			ARG 4 chunkSections
 	CLASS class_1_1418 IndirectDraw
+	CLASS class_1_1722 SkyAndClouds

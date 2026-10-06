@@ -1,0 +1,57 @@
+CLASS net/minecraft/class_1_1747
+	CLASS class_5677 Builder
+		COMMENT A builder to easily create cycling button widgets.
+		COMMENT
+		COMMENT Each builder must have at least one of its {@code values} methods called
+		COMMENT with at least one default (non-alternative) value in the list before
+		COMMENT building.
+		COMMENT
+		COMMENT @see CyclingButtonWidget#builder(Function)
+		FIELD field_27976 narrationMessageFactory Ljava/util/function/Function;
+		FIELD field_64537 icon Lnet/minecraft/class_1_1747$class_12347;
+		FIELD field_64538 labelType Lnet/minecraft/class_1_1747$class_12346;
+		METHOD <init> (Ljava/util/function/Function;Ljava/util/function/Supplier;)V
+			COMMENT Creates a builder.
+			COMMENT
+			COMMENT @see CyclingButtonWidget#builder(Function)
+			ARG 1 valueToText
+			ARG 2 valueSupplier
+		METHOD method_32616 omitKeyText ()Lnet/minecraft/class_1_1747$class_5677;
+			COMMENT Makes the built button omit the option and only display the current value
+			COMMENT for its text, such as showing "Jump Mode" than "Mode: Jump Mode".
+		METHOD method_32617 build (IIIILnet/minecraft/class_2561;Lnet/minecraft/class_5676$class_5678;)Lnet/minecraft/class_1_1747;
+			COMMENT Builds a cycling button widget.
+			COMMENT
+			COMMENT @throws IllegalStateException if no {@code values} call is made, or the
+			COMMENT {@code values} has no default values available
+			ARG 1 x
+			ARG 2 y
+			ARG 3 width
+			ARG 4 height
+			ARG 5 optionText
+			ARG 6 callback
+		METHOD method_32623 narration (Ljava/util/function/Function;)Lnet/minecraft/class_1_1747$class_5677;
+			COMMENT Overrides the narration message of the button to build.
+			COMMENT
+			COMMENT <p>If this is not called, the button will use
+			COMMENT {@link CyclingButtonWidget#getGenericNarrationMessage()} for narration
+			COMMENT messages.
+			ARG 1 narrationMessageFactory
+		METHOD method_35723 build (IIIILnet/minecraft/class_2561;)Lnet/minecraft/class_1_1747;
+			ARG 1 x
+			ARG 2 y
+			ARG 3 width
+			ARG 4 height
+			ARG 5 optionText
+		METHOD method_57720 build (Lnet/minecraft/class_2561;Lnet/minecraft/class_5676$class_5678;)Lnet/minecraft/class_1_1747;
+			ARG 1 optionText
+			ARG 2 callback
+		METHOD method_76614 labelType (Lnet/minecraft/class_1_1747$class_12346;)Lnet/minecraft/class_1_1747$class_5677;
+			ARG 1 labelType
+		METHOD method_76615 icon (Lnet/minecraft/class_1_1747$class_12347;)Lnet/minecraft/class_1_1747$class_5677;
+			ARG 1 icon
+	CLASS class_12346 LabelType
+	CLASS class_12347 IconGetter
+		METHOD method_1_162 apply (Lnet/minecraft/class_1_1747;Ljava/lang/Object;)Lnet/minecraft/class_2960;
+			ARG 1 button
+			ARG 2 value

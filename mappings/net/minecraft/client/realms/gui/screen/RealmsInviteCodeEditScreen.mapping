@@ -12,7 +12,7 @@ CLASS net/minecraft/class_1_1473 net/minecraft/client/realms/gui/screen/RealmsIn
 	FIELD field_1_10003 INVITE_CODES_NEVER_EXPIRES_TEXT Lnet/minecraft/class_2561;
 	FIELD field_1_10004 GRID_SPACING I
 	FIELD field_1_10005 INVITE_CODES_EDIT_TITLE Lnet/minecraft/class_2561;
-	FIELD field_1_10006 editActiveButton Lnet/minecraft/class_5676;
+	FIELD field_1_10006 editActiveButton Lnet/minecraft/class_1_1747;
 	FIELD field_1_10007 enabled Z
 	FIELD field_1_10008 backButton Lnet/minecraft/class_4185;
 	FIELD field_1_10009 deleteCodeButton Lnet/minecraft/class_4185;

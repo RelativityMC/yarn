@@ -26,7 +26,7 @@ CLASS net/minecraft/class_1_125 net/minecraft/client/gui/screen/option/WorldOpti
 	FIELD field_1_9588 MIN_PORT I
 	FIELD field_1_9589 LAN_SERVER_PORT_UNAVAILABLE_TEXT Lnet/minecraft/class_2561;
 	FIELD field_1_9590 applyChangesButton Lnet/minecraft/class_4185;
-	FIELD field_1_9591 guestCommandAccessButton Lnet/minecraft/class_5676;
+	FIELD field_1_9591 guestCommandAccessButton Lnet/minecraft/class_1_1747;
 	FIELD field_1_9592 lastSavedAllowCommands Ljava/lang/Boolean;
 	FIELD field_1_9593 lastDifficulty Lnet/minecraft/class_1267;
 	FIELD field_1_9594 lastDifficultyLocked Ljava/lang/Boolean;
@@ -54,10 +54,10 @@ CLASS net/minecraft/class_1_125 net/minecraft/client/gui/screen/option/WorldOpti
 	FIELD field_1_9891 FORCE_GAME_MODE_ON_TOOLTIP Lnet/minecraft/class_7919;
 	FIELD field_1_9892 PERSONAL_GAME_MODE_TEXT Lnet/minecraft/class_2561;
 	FIELD field_1_9893 PERSONAL_GAME_MODE_TOOLTIP Lnet/minecraft/class_7919;
-	FIELD field_1_9894 gameModeButton Lnet/minecraft/class_5676;
-	FIELD field_1_9895 forceGameModeButton Lnet/minecraft/class_5676;
+	FIELD field_1_9894 gameModeButton Lnet/minecraft/class_1_1747;
+	FIELD field_1_9895 forceGameModeButton Lnet/minecraft/class_1_1747;
 	FIELD field_1_9896 lastForceGameMode Ljava/lang/Boolean;
-	FIELD field_1_9897 personalGameModeButton Lnet/minecraft/class_5676;
+	FIELD field_1_9897 personalGameModeButton Lnet/minecraft/class_1_1747;
 	FIELD field_1_9898 gameMode Lnet/minecraft/class_1934;
 	FIELD field_1_9899 forceGameMode Ljava/lang/Boolean;
 	FIELD field_1_9900 personalGameMode Lnet/minecraft/class_1934;
@@ -77,9 +77,9 @@ CLASS net/minecraft/class_1_125 net/minecraft/client/gui/screen/option/WorldOpti
 	METHOD method_1_2399 createRestrictionsScreenButton ()Lnet/minecraft/class_4185;
 	METHOD method_1_2400 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
-	METHOD method_1_6403 createAllowCommandsButton (Lnet/minecraft/class_1132;)Lnet/minecraft/class_5676;
+	METHOD method_1_6403 createAllowCommandsButton (Lnet/minecraft/class_1132;)Lnet/minecraft/class_1_1747;
 		ARG 1 server
-	METHOD method_1_6404 createGameModeButton (Lnet/minecraft/class_1132;Lnet/minecraft/class_2561;Lnet/minecraft/class_7919;Lnet/minecraft/class_1934;Ljava/util/function/Consumer;)Lnet/minecraft/class_5676;
+	METHOD method_1_6404 createGameModeButton (Lnet/minecraft/class_1132;Lnet/minecraft/class_2561;Lnet/minecraft/class_7919;Lnet/minecraft/class_1934;Ljava/util/function/Consumer;)Lnet/minecraft/class_1_1747;
 		ARG 1 integratedServer
 		ARG 2 label
 		ARG 3 tooltip
@@ -181,7 +181,7 @@ CLASS net/minecraft/class_1_125 net/minecraft/client/gui/screen/option/WorldOpti
 		METHOD method_1_9245 (Lnet/minecraft/class_1_125;Lnet/minecraft/class_5676;Lnet/minecraft/class_1267;)V
 			ARG 1 button
 			ARG 2 value
-		METHOD method_1_9249 update (Lnet/minecraft/class_310;Lnet/minecraft/class_1937;Lnet/minecraft/class_5676;Lnet/minecraft/class_347;)V
+		METHOD method_1_9249 update (Lnet/minecraft/class_310;Lnet/minecraft/class_1937;Lnet/minecraft/class_1_1747;Lnet/minecraft/class_347;)V
 			ARG 0 client
 			ARG 1 world
 			ARG 2 difficultyButton

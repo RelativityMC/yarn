@@ -5,20 +5,12 @@ CLASS net/minecraft/class_1_926 net/minecraft/client/friend/gui/tab/FriendsTab
 	FIELD field_1_6508 EMPTY_STATE_LINK Lnet/minecraft/class_2561;
 	FIELD field_1_6509 TAB_FRIENDS_TEXT Lnet/minecraft/class_2561;
 	FIELD field_1_6510 header Lnet/minecraft/class_1_964;
-	FIELD field_1_6511 body Lnet/minecraft/class_8667;
-	FIELD field_1_6512 root Lnet/minecraft/class_8667;
 	FIELD field_1_6513 loadingWidget Lnet/minecraft/class_8661;
 	FIELD field_1_6515 friendsScreen Lnet/minecraft/class_1_986;
-	FIELD field_1_6516 scrollable Lnet/minecraft/class_11467;
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_8661;Lnet/minecraft/class_1_986;II)V
-		ARG 1 client
 		ARG 2 loadingWidget
-		ARG 3 friendsScreen
 		ARG 4 width
 		ARG 5 height
-	METHOD method_1_5630 getFooter ()Lnet/minecraft/class_7843;
-	METHOD method_1_5631 (Lnet/minecraft/class_2583;)V
-		ARG 1 widget
 	METHOD method_1_5633 (Lnet/minecraft/class_2583;)V
 		ARG 1 widget
 	METHOD method_1_5634 (Lnet/minecraft/class_2583;)Lnet/minecraft/class_2583;

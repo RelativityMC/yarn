@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_1049 net/minecraft/client/texture/ResourceTexture
-	METHOD <init> (Lnet/minecraft/class_2960;)V
-		ARG 1 location

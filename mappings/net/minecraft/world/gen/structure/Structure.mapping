@@ -35,7 +35,7 @@ CLASS net/minecraft/class_3195 net/minecraft/world/gen/structure/Structure
 		ARG 2 width
 		ARG 3 z
 		ARG 4 height
-	METHOD method_41614 createStructureStart (Lnet/minecraft/class_6880;Lnet/minecraft/class_5321;Lnet/minecraft/class_5455;Lnet/minecraft/class_2794;Lnet/minecraft/class_1966;Lnet/minecraft/class_6544$class_6552;Lnet/minecraft/class_7138;Lnet/minecraft/class_3485;JLnet/minecraft/class_1923;ILnet/minecraft/class_5539;Ljava/util/function/Predicate;)Lnet/minecraft/class_3449;
+	METHOD method_41614 createStructureStart (Lnet/minecraft/class_6880;Lnet/minecraft/class_5321;Lnet/minecraft/class_5455;Lnet/minecraft/class_2794;Lnet/minecraft/class_1966;Lnet/minecraft/class_6544$class_6552;Lnet/minecraft/class_7138;Lnet/minecraft/class_3485;JLnet/minecraft/class_1923;Lnet/minecraft/class_5539;Ljava/util/function/Predicate;)Lnet/minecraft/class_3449;
 		ARG 1 structure
 		ARG 2 dimension
 		ARG 3 dynamicRegistryManager
@@ -46,9 +46,8 @@ CLASS net/minecraft/class_3195 net/minecraft/world/gen/structure/Structure
 		ARG 8 structureTemplateManager
 		ARG 9 seed
 		ARG 11 chunkPos
-		ARG 12 references
-		ARG 13 world
-		ARG 14 validBiomes
+		ARG 12 world
+		ARG 13 validBiomes
 	METHOD method_41615 getStructureSpawns ()Ljava/util/Map;
 	METHOD method_41616 getFeatureGenerationStep ()Lnet/minecraft/class_2893$class_2895;
 	METHOD method_41618 getType ()Lnet/minecraft/class_7151;

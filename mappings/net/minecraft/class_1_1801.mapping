@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_1801
+	METHOD method_1_6407 queryPresenceResponse (Lcom/mojang/authlib/services/response/PresenceResponse;)V

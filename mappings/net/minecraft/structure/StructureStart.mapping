@@ -10,10 +10,8 @@ CLASS net/minecraft/class_3449 net/minecraft/structure/StructureStart
 		COMMENT intersecting chunks, since it is only updated when an actual reference
 		COMMENT is created in such chunks (when they enter the corresponding chunk generation
 		COMMENT phase).
-	FIELD field_16713 DEFAULT Lnet/minecraft/class_3449;
 	FIELD field_16714 structure Lnet/minecraft/class_3195;
 	FIELD field_29070 pos Lnet/minecraft/class_1923;
-	FIELD field_31662 INVALID Ljava/lang/String;
 	FIELD field_31663 boundingBox Lnet/minecraft/class_3341;
 	FIELD field_34940 children Lnet/minecraft/class_6624;
 	FIELD field_37751 LOGGER Lorg/slf4j/Logger;
@@ -38,10 +36,8 @@ CLASS net/minecraft/class_3449 net/minecraft/structure/StructureStart
 		ARG 6 chunkPos
 	METHOD method_14979 isNeverReferenced ()Z
 	METHOD method_16656 getStructure ()Lnet/minecraft/class_3195;
-	METHOD method_16657 hasChildren ()Z
 	METHOD method_23676 getReferences ()I
 	METHOD method_34000 getPos ()Lnet/minecraft/class_1923;
-	METHOD method_41621 fromNbt (Lnet/minecraft/class_6625;Lnet/minecraft/class_2487;J)Lnet/minecraft/class_3449;
-		ARG 0 context
+	METHOD method_41621 fromNbt (Lnet/minecraft/class_6625;Lnet/minecraft/class_2487;JLnet/minecraft/class_3195;)Lnet/minecraft/class_3449;
 		ARG 1 nbt
 		ARG 2 seed

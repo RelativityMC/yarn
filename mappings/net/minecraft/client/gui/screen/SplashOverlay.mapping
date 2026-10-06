@@ -33,4 +33,3 @@ CLASS net/minecraft/class_425 net/minecraft/client/gui/screen/SplashOverlay
 		ARG 0 color
 		ARG 1 alpha
 	METHOD method_74218 isInGracePeriod ()Z
-	CLASS class_4070 LogoTexture

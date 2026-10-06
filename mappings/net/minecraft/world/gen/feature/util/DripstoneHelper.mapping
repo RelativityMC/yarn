@@ -26,7 +26,7 @@ CLASS net/minecraft/class_5726 net/minecraft/world/gen/feature/util/DripstoneHel
 		ARG 0 world
 		ARG 1 pos
 		ARG 2 height
-	METHOD method_33010 generateSpeleothem (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;IZLnet/minecraft/class_2248;Lnet/minecraft/class_2248;Lnet/minecraft/class_6885;)V
+	METHOD method_33010 generateSpeleothem (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;IZLnet/minecraft/class_2248;Lnet/minecraft/class_2248;Lnet/minecraft/class_6885;Lnet/minecraft/class_5726$class_1_1795;)V
 		ARG 0 world
 		ARG 1 pos
 		ARG 2 direction

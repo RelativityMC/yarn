@@ -205,8 +205,6 @@ CLASS net/minecraft/class_7172 net/minecraft/client/option/SimpleOption
 		METHOD method_41765 toSliderProgress (Ljava/lang/Object;)D
 			COMMENT {@return the progress ({@code 0.0} to {@code 1.0}, both inclusive) of the slider}
 			ARG 1 value
-		METHOD method_42725 (Lnet/minecraft/class_315;IIILnet/minecraft/class_7172$class_7277;Lnet/minecraft/class_7172$class_1_783;Lnet/minecraft/class_7172;)Lnet/minecraft/class_339;
-			ARG 7 option
 		METHOD method_75311 getPrevious (Ljava/lang/Object;)Ljava/util/Optional;
 			ARG 1 value
 		METHOD method_75313 getNext (Ljava/lang/Object;)Ljava/util/Optional;
@@ -229,17 +227,6 @@ CLASS net/minecraft/class_7172 net/minecraft/client/option/SimpleOption
 		COMMENT A set of callbacks to customize an option's behavior.
 		COMMENT
 		COMMENT @see <a href="SimpleOption.html#callbacks">Callbacks</a>
-		METHOD method_41756 getWidgetCreator (Lnet/minecraft/class_7172$class_7277;Lnet/minecraft/class_315;IIILnet/minecraft/class_7172$class_1_783;)Ljava/util/function/Function;
-			COMMENT {@return the widget creator}
-			COMMENT
-			COMMENT <p>Widget creators are responsible for rendering the option into
-			COMMENT a {@link ClickableWidget}.
-			ARG 1 tooltipFactory
-			ARG 2 gameOptions
-			ARG 3 x
-			ARG 4 y
-			ARG 5 width
-			ARG 6 changeCallback
 		METHOD method_41758 validate (Ljava/lang/Object;)Ljava/util/Optional;
 			COMMENT {@return the validated value}
 			COMMENT
@@ -282,15 +269,4 @@ CLASS net/minecraft/class_7172 net/minecraft/client/option/SimpleOption
 			ARG 1 value
 	CLASS class_7305 CyclingCallbacks
 		METHOD method_42721 getValues ()Lnet/minecraft/class_5676$class_5680;
-		METHOD method_42723 (Lnet/minecraft/class_7172$class_7277;IIILnet/minecraft/class_315;Lnet/minecraft/class_7172$class_1_783;Lnet/minecraft/class_7172;)Lnet/minecraft/class_339;
-			ARG 7 option
-		METHOD method_42724 (Lnet/minecraft/class_7172;Lnet/minecraft/class_315;Lnet/minecraft/class_7172$class_1_783;Lnet/minecraft/class_5676;Ljava/lang/Object;)V
-			ARG 4 text
-			ARG 5 value
-		CLASS class_7274 ValueSetter
-			METHOD method_1_32 set (Lnet/minecraft/class_7172;Ljava/lang/Object;)V
-				ARG 1 option
-				ARG 2 value
-	CLASS class_7306 TypeChangeableCallbacks
-		METHOD method_42722 isCycling ()Z
 	CLASS class_12139 CategoricalSliderCallbacks

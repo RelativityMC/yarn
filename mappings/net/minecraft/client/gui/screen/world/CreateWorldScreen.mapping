@@ -187,7 +187,7 @@ CLASS net/minecraft/class_525 net/minecraft/client/gui/screen/world/CreateWorldS
 		METHOD method_48659 (Lnet/minecraft/class_525;Lnet/minecraft/class_5676;Lnet/minecraft/class_8100$class_4539;)V
 			ARG 1 button
 			ARG 2 value
-		METHOD method_48660 (Lnet/minecraft/class_5676;Lnet/minecraft/class_525;Lnet/minecraft/class_8100;)V
+		METHOD method_48660 (Lnet/minecraft/class_1_1747;Lnet/minecraft/class_525;Lnet/minecraft/class_8100;)V
 			ARG 2 creator
 		METHOD method_48661 (Lnet/minecraft/class_525;Lnet/minecraft/class_5676;Ljava/lang/Boolean;)V
 			ARG 1 button
@@ -196,9 +196,9 @@ CLASS net/minecraft/class_525 net/minecraft/client/gui/screen/world/CreateWorldS
 			ARG 0 value
 		METHOD method_48663 (Ljava/lang/Boolean;)Lnet/minecraft/class_7919;
 			ARG 0 value
-		METHOD method_48664 (Lnet/minecraft/class_5676;Lnet/minecraft/class_525;Lnet/minecraft/class_8100;)V
+		METHOD method_48664 (Lnet/minecraft/class_1_1747;Lnet/minecraft/class_525;Lnet/minecraft/class_8100;)V
 			ARG 2 creator
-		METHOD method_48665 (Lnet/minecraft/class_5676;Lnet/minecraft/class_8100;)V
+		METHOD method_48665 (Lnet/minecraft/class_1_1747;Lnet/minecraft/class_8100;)V
 			ARG 1 creator
 		METHOD method_49702 (Lnet/minecraft/class_8100;)V
 			ARG 1 creator
@@ -230,7 +230,7 @@ CLASS net/minecraft/class_525 net/minecraft/client/gui/screen/world/CreateWorldS
 		METHOD method_48672 (Lnet/minecraft/class_525;Lnet/minecraft/class_5676;Lnet/minecraft/class_8100$class_8101;)V
 			ARG 1 button
 			ARG 2 worldType
-		METHOD method_48673 (Lnet/minecraft/class_5676;Lnet/minecraft/class_525;Lnet/minecraft/class_8100;)V
+		METHOD method_48673 (Lnet/minecraft/class_1_1747;Lnet/minecraft/class_525;Lnet/minecraft/class_8100;)V
 			ARG 2 creator
 		METHOD method_48675 (Lnet/minecraft/class_8096;Lnet/minecraft/class_8100;)V
 			ARG 1 creator

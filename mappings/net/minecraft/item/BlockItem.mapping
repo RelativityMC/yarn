@@ -31,8 +31,7 @@ CLASS net/minecraft/class_1747 net/minecraft/item/BlockItem
 		ARG 1 world
 		ARG 2 stack
 		ARG 3 state
-	METHOD method_19260 getPlaceSound (Lnet/minecraft/class_2680;)Lnet/minecraft/class_3414;
-		ARG 1 state
+	METHOD method_19260 getPlaceSound (Lnet/minecraft/class_1_1769;)Lnet/minecraft/class_6880;
 	METHOD method_20360 checkStatePlacement ()Z
 	METHOD method_57338 setBlockEntityData (Lnet/minecraft/class_1799;Lnet/minecraft/class_2591;Lnet/minecraft/class_11362;)V
 		ARG 0 stack

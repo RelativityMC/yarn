@@ -35,7 +35,7 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	FIELD field_55579 minimized Z
 	FIELD field_62447 allowCursorChanges Z
 	FIELD field_62448 cursor Lnet/minecraft/class_11875;
-	METHOD <init> (Lnet/minecraft/class_3678;Lnet/minecraft/class_543;Ljava/lang/String;ZLjava/lang/String;Lnet/minecraft/class_323;Lnet/minecraft/class_1_11;I)V
+	METHOD <init> (Lnet/minecraft/class_3678;Lnet/minecraft/class_543;Ljava/lang/String;ZLjava/lang/String;Lnet/minecraft/class_323;Lnet/minecraft/class_1_11;Lnet/minecraft/class_1_1313;I)V
 		ARG 1 eventHandler
 		ARG 2 settings
 		ARG 3 fullscreenResolution
@@ -43,7 +43,7 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 		ARG 5 title
 		ARG 6 monitorTracker
 		ARG 7 backend
-		ARG 8 maxTextureSize
+		ARG 9 maxTextureSize
 	METHOD method_1_2662 createHandle (Lnet/minecraft/class_1_11;IILjava/lang/String;)J
 		ARG 1 windowBackend
 		ARG 2 width

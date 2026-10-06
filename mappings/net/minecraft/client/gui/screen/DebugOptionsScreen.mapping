@@ -28,9 +28,9 @@ CLASS net/minecraft/class_11644 net/minecraft/client/gui/screen/DebugOptionsScre
 	CLASS class_11647 Entry
 		FIELD field_61649 widgets Ljava/util/List;
 		FIELD field_61651 label Lnet/minecraft/class_2960;
-		FIELD field_61652 alwaysOnButton Lnet/minecraft/class_5676;
-		FIELD field_61653 inF3Button Lnet/minecraft/class_5676;
-		FIELD field_61654 neverButton Lnet/minecraft/class_5676;
+		FIELD field_61652 alwaysOnButton Lnet/minecraft/class_1_1747;
+		FIELD field_61653 inF3Button Lnet/minecraft/class_1_1747;
+		FIELD field_61654 neverButton Lnet/minecraft/class_1_1747;
 		FIELD field_61655 renderedLabel Ljava/lang/String;
 		FIELD field_61656 canShow Z
 		METHOD <init> (Lnet/minecraft/class_11644;Lnet/minecraft/class_2960;)V
@@ -41,7 +41,7 @@ CLASS net/minecraft/class_11644 net/minecraft/client/gui/screen/DebugOptionsScre
 		METHOD method_72816 setEntryVisibility (Lnet/minecraft/class_2960;Lnet/minecraft/class_11635;)V
 			ARG 1 label
 			ARG 2 visibility
-		METHOD method_72817 getNarrationMessage (Lnet/minecraft/class_5676;)Lnet/minecraft/class_5250;
+		METHOD method_72817 getNarrationMessage (Lnet/minecraft/class_1_1747;)Lnet/minecraft/class_5250;
 			ARG 1 widget
 		METHOD method_72818 (Lnet/minecraft/class_2960;Lnet/minecraft/class_5676;Ljava/lang/Boolean;)V
 			ARG 2 button

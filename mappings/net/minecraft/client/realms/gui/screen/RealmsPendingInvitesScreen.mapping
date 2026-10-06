@@ -36,11 +36,7 @@ CLASS net/minecraft/class_4401 net/minecraft/client/realms/gui/screen/RealmsPend
 			ARG 1 invite
 		METHOD method_73345 (Lnet/minecraft/class_4871;Ljava/util/function/Supplier;)Lnet/minecraft/class_5250;
 			ARG 1 textSupplier
-		METHOD method_73346 (Lnet/minecraft/class_4185;)V
-			ARG 1 button
 		METHOD method_73347 (ZLjava/lang/Boolean;)V
 			ARG 2 processed
-		METHOD method_73349 (Lnet/minecraft/class_4185;)V
-			ARG 1 button
 		METHOD method_73350 handle (Z)V
 			ARG 1 accepted

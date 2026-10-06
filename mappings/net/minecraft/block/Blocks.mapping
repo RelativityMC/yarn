@@ -477,16 +477,14 @@ CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 	METHOD method_63057 copyLootTable (Lnet/minecraft/class_2248;Z)Lnet/minecraft/class_4970$class_2251;
 		ARG 0 block
 		ARG 1 copyTranslationKey
-	METHOD method_63058 createLeavesSettings (Lnet/minecraft/class_2498;)Lnet/minecraft/class_4970$class_2251;
-		ARG 0 sounds
+	METHOD method_63058 createLeavesSettings (Lnet/minecraft/class_5321;)Lnet/minecraft/class_4970$class_2251;
 	METHOD method_63059 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
 		ARG 0 settings
 	METHOD method_63060 (Lnet/minecraft/class_3620;Lnet/minecraft/class_2680;)Lnet/minecraft/class_3620;
 		ARG 1 state
-	METHOD method_63061 createLogSettings (Lnet/minecraft/class_3620;Lnet/minecraft/class_3620;Lnet/minecraft/class_2498;)Lnet/minecraft/class_4970$class_2251;
+	METHOD method_63061 createLogSettings (Lnet/minecraft/class_3620;Lnet/minecraft/class_3620;Lnet/minecraft/class_5321;)Lnet/minecraft/class_4970$class_2251;
 		ARG 0 topMapColor
 		ARG 1 sideMapColor
-		ARG 2 sounds
 	METHOD method_63062 (Lnet/minecraft/class_3620;Lnet/minecraft/class_3620;Lnet/minecraft/class_2680;)Lnet/minecraft/class_3620;
 		ARG 2 state
 	METHOD method_63064 register (Lnet/minecraft/class_1_784;Ljava/util/function/Function;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;

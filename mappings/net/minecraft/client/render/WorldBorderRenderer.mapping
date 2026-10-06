@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_9978 net/minecraft/client/render/WorldBorderRenderer
-	FIELD field_1_8154 forceFieldTexture Lnet/minecraft/class_1044;
+	FIELD field_1_8154 forceFieldTexture Lnet/minecraft/class_1_1762;
 	FIELD field_1_8155 textureManager Lnet/minecraft/class_1060;
 	FIELD field_53157 FORCEFIELD Lnet/minecraft/class_2960;
 	FIELD field_56586 forceRefreshBuffers Z
@@ -26,11 +26,10 @@ CLASS net/minecraft/class_9978 net/minecraft/client/render/WorldBorderRenderer
 	METHOD method_1_7442 writeDynamicUniforms (Lnet/minecraft/class_12078;Lnet/minecraft/class_243;)Lnet/minecraft/class_1_1254;
 		ARG 1 state
 		ARG 2 cameraPos
-	METHOD method_1_7443 setRenderPassProperties (Lnet/minecraft/class_1_1317;Lnet/minecraft/class_1_1254;Lnet/minecraft/class_1_1211;Lnet/minecraft/class_1044;)V
+	METHOD method_1_7443 setRenderPassProperties (Lnet/minecraft/class_1_1317;Lnet/minecraft/class_1_1254;Lnet/minecraft/class_1_1211;Lnet/minecraft/class_1_1762;)V
 		ARG 1 pass
 		ARG 2 dynamicTransforms
 		ARG 3 indexBuffer
-		ARG 4 forceFieldTexture
 	METHOD method_1_7444 draw (Lnet/minecraft/class_12078;Lnet/minecraft/class_1_1317;Lnet/minecraft/class_243;D)V
 		ARG 1 state
 		ARG 2 pass

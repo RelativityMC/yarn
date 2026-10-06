@@ -246,10 +246,6 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		COMMENT
 		COMMENT @see Block#hasRandomTicks
 		COMMENT @see net.minecraft.server.world.ServerWorld#tickChunk
-	FIELD field_23162 soundGroup Lnet/minecraft/class_2498;
-		COMMENT The collection of sounds played when breaking, stepping on, placing, hitting (with a projectile), or falling on this block.
-		COMMENT
-		COMMENT @see #getSoundGroup
 	FIELD field_23163 slipperiness F
 		COMMENT A speed reduction applied to a {@link net.minecraft.entity.LivingEntity} that tries to move across this block.
 		COMMENT
@@ -594,7 +590,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		ARG 2 world
 		ARG 3 pos
 		ARG 4 direction
-	METHOD method_9573 getSoundGroup (Lnet/minecraft/class_2680;)Lnet/minecraft/class_2498;
+	METHOD method_9573 getSoundGroup (Lnet/minecraft/class_2680;)Ljava/util/Optional;
 		ARG 1 state
 	METHOD method_9574 getPickStack (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Z)Lnet/minecraft/class_1799;
 		ARG 1 world
@@ -893,7 +889,6 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		FIELD field_10662 mapColorProvider Ljava/util/function/Function;
 		FIELD field_10663 luminance Ljava/util/function/ToIntFunction;
 		FIELD field_10664 collidable Z
-		FIELD field_10665 soundGroup Lnet/minecraft/class_2498;
 		FIELD field_10667 slipperiness F
 		FIELD field_10669 hardness F
 		FIELD field_10670 dynamicBounds Z
@@ -941,8 +936,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 			COMMENT Specifies that a block's collision bounds can dynamically resize.
 			COMMENT By default, block collision bounds are cached for performance.
 			COMMENT By invoking this method, the game will not cache the block collision bounds and instead calculate the collision bounds when needed.
-		METHOD method_9626 sounds (Lnet/minecraft/class_2498;)Lnet/minecraft/class_4970$class_2251;
-			ARG 1 soundGroup
+		METHOD method_9626 sounds (Lnet/minecraft/class_5321;)Lnet/minecraft/class_4970$class_2251;
 		METHOD method_9628 slipperiness (F)Lnet/minecraft/class_4970$class_2251;
 			ARG 1 slipperiness
 		METHOD method_9629 strength (FF)Lnet/minecraft/class_4970$class_2251;
@@ -1291,7 +1285,6 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 			ARG 1 world
 			ARG 2 pos
 			ARG 3 box
-		METHOD method_26231 getSoundGroup ()Lnet/minecraft/class_2498;
 		METHOD method_26233 asBlockState ()Lnet/minecraft/class_2680;
 		METHOD method_26234 isFullCube (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z
 			ARG 1 world

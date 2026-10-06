@@ -12,16 +12,9 @@ CLASS net/minecraft/class_7477 net/minecraft/world/poi/PointOfInterestTypes
 		ARG 1 states
 	METHOD method_43991 (Lnet/minecraft/class_6880;Lnet/minecraft/class_2680;)V
 		ARG 1 state
-	METHOD method_43992 registerAndGetDefault (Lnet/minecraft/class_2378;)Lnet/minecraft/class_4158;
+	METHOD method_43992 registerAndGetDefault (Lnet/minecraft/class_2378;)Lnet/minecraft/class_6880;
 		ARG 0 registry
-	METHOD method_43993 register (Lnet/minecraft/class_2378;Lnet/minecraft/class_5321;Ljava/util/Set;II)Lnet/minecraft/class_4158;
-		ARG 0 registry
-		ARG 1 key
-		ARG 2 states
-		ARG 3 ticketCount
-		ARG 4 searchDistance
-	METHOD method_43994 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
-		ARG 0 id
+	METHOD method_43994 of (Lnet/minecraft/class_5321;Ljava/util/Set;II)Lnet/minecraft/class_6880;
 	METHOD method_43995 (Lnet/minecraft/class_2248;)Ljava/util/stream/Stream;
 		ARG 0 block
 	METHOD method_43996 (Lnet/minecraft/class_2680;)Z

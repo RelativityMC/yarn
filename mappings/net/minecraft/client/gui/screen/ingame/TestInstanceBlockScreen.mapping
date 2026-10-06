@@ -2,8 +2,8 @@ CLASS net/minecraft/class_10643 net/minecraft/client/gui/screen/ingame/TestInsta
 	FIELD field_56043 statusWidget Lnet/minecraft/class_8577;
 	FIELD field_56044 saveButton Lnet/minecraft/class_4185;
 	FIELD field_56045 exportButton Lnet/minecraft/class_4185;
-	FIELD field_56046 entitiesButton Lnet/minecraft/class_5676;
-	FIELD field_56047 rotationButton Lnet/minecraft/class_5676;
+	FIELD field_56046 entitiesButton Lnet/minecraft/class_1_1747;
+	FIELD field_56047 rotationButton Lnet/minecraft/class_1_1747;
 	FIELD field_56048 TEST_ID_TEXT Lnet/minecraft/class_2561;
 	FIELD field_56049 SIZE_TEXT Lnet/minecraft/class_2561;
 	FIELD field_56050 ENTITIES_TEXT Lnet/minecraft/class_2561;

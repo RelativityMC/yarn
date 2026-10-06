@@ -43,8 +43,6 @@ CLASS net/minecraft/class_1_1126 net/minecraft/client/texture/palette/PalettedTe
 		FIELD field_1_7811 rootSlot Lnet/minecraft/class_1_1109;
 		METHOD <init> (Lnet/minecraft/class_2960;)V
 			ARG 1 id
-		METHOD method_1_7133 (I)I
-			ARG 0 color
 		METHOD method_1_7135 allocate (II)Lnet/minecraft/class_1_1117;
 			ARG 1 width
 			ARG 2 height

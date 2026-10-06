@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_5520 net/minecraft/client/friend/SocialInteractionsManager
 	FIELD field_1_6755 FAILED_TEXT Lnet/minecraft/class_2561;
-	FIELD field_1_6756 FORBIDDEN_TEXT Lnet/minecraft/class_2561;
 	FIELD field_1_6757 RATE_LIMITED_TEXT Lnet/minecraft/class_2561;
 	FIELD field_1_6758 UNAVAILABLE_TEXT Lnet/minecraft/class_2561;
 	FIELD field_1_6759 USER_MAY_LACK_ACTIVE_PROFILE_TEXT Lnet/minecraft/class_2561;

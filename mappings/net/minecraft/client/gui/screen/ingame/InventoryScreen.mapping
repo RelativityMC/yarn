@@ -5,16 +5,3 @@ CLASS net/minecraft/class_490 net/minecraft/client/gui/screen/ingame/InventorySc
 	FIELD field_54479 statusEffectsDisplay Lnet/minecraft/class_485;
 	METHOD <init> (Lnet/minecraft/class_1657;)V
 		ARG 1 player
-	METHOD method_2486 drawEntity (Lnet/minecraft/class_332;IIIIIFFFLnet/minecraft/class_1309;)V
-		ARG 0 context
-		ARG 1 x1
-		ARG 2 y1
-		ARG 3 x2
-		ARG 4 y2
-		ARG 5 size
-		ARG 6 scale
-		ARG 7 mouseX
-		ARG 8 mouseY
-		ARG 9 entity
-	METHOD method_48472 drawEntity (Lnet/minecraft/class_1309;)Lnet/minecraft/class_10017;
-		ARG 0 entity

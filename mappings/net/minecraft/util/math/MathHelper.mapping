@@ -91,10 +91,6 @@ CLASS net/minecraft/class_3532 net/minecraft/util/math/MathHelper
 		ARG 0 degrees
 	METHOD method_15339 smallestEncompassingPowerOfTwo (I)I
 		ARG 0 value
-	METHOD method_15340 clamp (III)I
-		ARG 0 value
-		ARG 1 min
-		ARG 2 max
 	METHOD method_15341 floorMod (FF)F
 		ARG 0 dividend
 		ARG 1 divisor
@@ -139,10 +135,6 @@ CLASS net/minecraft/class_3532 net/minecraft/util/math/MathHelper
 		COMMENT were performed initially.
 		ARG 0 y
 		ARG 2 x
-	METHOD method_15350 clamp (DDD)D
-		ARG 0 value
-		ARG 2 min
-		ARG 4 max
 	METHOD method_15351 floorLog2 (I)I
 		COMMENT {@return floor(log<sub>2</sub>({@code value}))}
 		COMMENT
@@ -187,10 +179,6 @@ CLASS net/minecraft/class_3532 net/minecraft/util/math/MathHelper
 			COMMENT equal to the value to be searched for
 	METHOD method_15362 cos (D)F
 		ARG 0 value
-	METHOD method_15363 clamp (FFF)F
-		ARG 0 value
-		ARG 1 min
-		ARG 2 max
 	METHOD method_15366 nextDouble (Lnet/minecraft/class_5819;DD)D
 		ARG 0 random
 		ARG 1 min
@@ -526,10 +514,6 @@ CLASS net/minecraft/class_3532 net/minecraft/util/math/MathHelper
 		ARG 0 delta
 		ARG 2 start
 		ARG 4 end
-	METHOD method_53062 clamp (JJJ)J
-		ARG 0 value
-		ARG 2 min
-		ARG 4 max
 	METHOD method_53063 lerpPositive (FII)I
 		COMMENT {@return linear interpolation of {@code delta} between {@code start} and {@code end},
 		COMMENT except that for any positive {@code delta} the value is positive}

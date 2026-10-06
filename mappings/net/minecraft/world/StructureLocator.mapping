@@ -3,14 +3,12 @@ CLASS net/minecraft/class_6832 net/minecraft/world/StructureLocator
 	FIELD field_1_10272 noiseSampler Lnet/minecraft/class_6544$class_6552;
 	FIELD field_36225 LOGGER Lorg/slf4j/Logger;
 	FIELD field_36226 START_NOT_PRESENT_REFERENCE I
-	FIELD field_36227 chunkIoWorker Lnet/minecraft/class_6830;
+	FIELD field_36227 chunkIoWorker Lnet/minecraft/class_1_1811;
 	FIELD field_36228 registryManager Lnet/minecraft/class_5455;
 	FIELD field_36230 structureTemplateManager Lnet/minecraft/class_3485;
-	FIELD field_36231 worldKey Lnet/minecraft/class_5321;
 	FIELD field_36232 chunkGenerator Lnet/minecraft/class_2794;
 	FIELD field_36233 world Lnet/minecraft/class_5539;
 	FIELD field_36235 seed J
-	FIELD field_36236 dataFixer Lcom/mojang/datafixers/DataFixer;
 	FIELD field_36237 cachedStructuresByChunkPos Lit/unimi/dsi/fastutil/longs/Long2ObjectMap;
 	FIELD field_36238 generationPossibilityByStructure Ljava/util/Map;
 	FIELD field_37750 noiseConfig Lnet/minecraft/class_7138;
@@ -69,7 +67,5 @@ CLASS net/minecraft/class_6832 net/minecraft/world/StructureLocator
 		ARG 1 referencesByStructure
 		ARG 2 structure
 		ARG 3 skipReferencedStructures
-	METHOD method_39842 collectStructuresAndReferences (Lnet/minecraft/class_2487;)Lit/unimi/dsi/fastutil/objects/Object2IntMap;
-		ARG 1 nbt
 	METHOD method_41143 (Lnet/minecraft/class_1923;Lnet/minecraft/class_3195;J)Z
 		ARG 3 chunkPos

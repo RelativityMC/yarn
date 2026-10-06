@@ -14,7 +14,6 @@ CLASS net/minecraft/class_340 net/minecraft/client/gui/hud/DebugHud
 	FIELD field_45913 tickChart Lnet/minecraft/class_8759;
 	FIELD field_45989 renderingChartVisible Z
 	FIELD field_45990 renderingAndTickChartsVisible Z
-	FIELD field_45991 packetSizeAndPingChartsVisible Z
 	FIELD field_45992 frameNanosLog Lnet/minecraft/class_9191;
 	FIELD field_45993 tickNanosLog Lnet/minecraft/class_9191;
 	FIELD field_45994 pingLog Lnet/minecraft/class_9191;

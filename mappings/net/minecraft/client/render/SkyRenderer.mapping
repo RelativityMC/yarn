@@ -8,7 +8,7 @@ CLASS net/minecraft/class_9975 net/minecraft/client/render/SkyRenderer
 	FIELD field_53146 topSkyVertexBuffer Lnet/minecraft/class_1_1211;
 	FIELD field_55153 endSkyVertexBuffer Lnet/minecraft/class_1_1211;
 	FIELD field_58198 starIndexCount I
-	FIELD field_62948 endSkyTexture Lnet/minecraft/class_1044;
+	FIELD field_62948 endSkyTexture Lnet/minecraft/class_1_1762;
 	FIELD field_62957 sunVertexBuffer Lnet/minecraft/class_1_1211;
 	FIELD field_62958 moonPhaseVertexBuffer Lnet/minecraft/class_1_1211;
 	FIELD field_62959 sunRiseVertexBuffer Lnet/minecraft/class_1_1211;
@@ -96,7 +96,7 @@ CLASS net/minecraft/class_9975 net/minecraft/client/render/SkyRenderer
 		ARG 4 pitch
 		ARG 5 yaw
 		ARG 6 withDepthAttachment
-	METHOD method_74757 bindTexture (Lnet/minecraft/class_1060;Lnet/minecraft/class_2960;)Lnet/minecraft/class_1044;
+	METHOD method_74757 bindTexture (Lnet/minecraft/class_1060;Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_1762;
 		ARG 1 textureManager
 		ARG 2 texture
 	METHOD method_74758 createSunRise ()Lnet/minecraft/class_1_1211;

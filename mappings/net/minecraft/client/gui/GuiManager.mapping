@@ -1,7 +1,6 @@
 CLASS net/minecraft/class_1_659 net/minecraft/client/gui/GuiManager
 	FIELD field_1_3262 LOGGER Lorg/slf4j/Logger;
 	FIELD field_1_3263 SAVING_LEVEL_TEXT Lnet/minecraft/class_2561;
-	FIELD field_1_3264 SOCIAL_INTERACTIONS_NOT_AVAILABLE_TEXT Lnet/minecraft/class_2561;
 	FIELD field_1_3265 messageHandler Lnet/minecraft/class_7594;
 	FIELD field_1_3266 disconnecting Z
 	FIELD field_1_3267 guiRenderState Lnet/minecraft/class_11246;

@@ -4,26 +4,10 @@ CLASS net/minecraft/class_1_1008 net/minecraft/client/friend/gui/widget/FriendLi
 	FIELD field_1_6908 playerNameTextWidget Lnet/minecraft/class_7842;
 	FIELD field_1_6909 skinWidget Lnet/minecraft/class_1_928;
 	FIELD field_1_6910 playerName Ljava/lang/String;
-	FIELD field_1_6911 friendsScreen Lnet/minecraft/class_1_986;
-	FIELD field_1_6912 renderPlayerNameHigh Z
 	FIELD field_1_7158 playerId Ljava/util/UUID;
-	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_1_986;IIIILnet/minecraft/class_5520$class_1_980;)V
+	METHOD <init> (Lnet/minecraft/class_310;ILjava/util/UUID;Ljava/lang/String;)V
 		ARG 1 client
-		ARG 2 friendsScreen
-		ARG 3 x
-		ARG 4 y
-		ARG 5 width
-		ARG 6 height
-		ARG 7 player
-	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_1_986;IIIILnet/minecraft/class_5520$class_1_980;Z)V
-		ARG 1 client
-		ARG 2 friendsScreen
-		ARG 3 x
-		ARG 4 y
-		ARG 5 width
-		ARG 6 height
-		ARG 7 player
-		ARG 8 renderPlayerNameHigh
+		ARG 2 width
 	METHOD method_1_6129 addChild (Lnet/minecraft/class_339;)V
 		ARG 1 widget
 	METHOD method_1_6130 update ()V
@@ -33,5 +17,3 @@ CLASS net/minecraft/class_1_1008 net/minecraft/client/friend/gui/widget/FriendLi
 	METHOD method_1_6133 (Lnet/minecraft/class_2561;Ljava/util/function/Supplier;)Lnet/minecraft/class_5250;
 		ARG 1 textSupplier
 	METHOD method_1_6413 getPlayerId ()Ljava/util/UUID;
-	METHOD method_1_6414 removeChild (Lnet/minecraft/class_339;)V
-		ARG 1 widget

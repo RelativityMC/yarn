@@ -153,19 +153,6 @@ CLASS net/minecraft/class_2794 net/minecraft/world/gen/chunk/ChunkGenerator
 		ARG 4 context
 	METHOD method_41040 (Lnet/minecraft/class_5138;Lnet/minecraft/class_2338;Lnet/minecraft/class_3449;)Z
 		ARG 2 start
-	METHOD method_41041 (Lnet/minecraft/class_5138;Lnet/minecraft/class_5455;Lnet/minecraft/class_7138;Lnet/minecraft/class_3485;Lnet/minecraft/class_7869;Lnet/minecraft/class_2791;Lnet/minecraft/class_1923;Lnet/minecraft/class_5321;Lnet/minecraft/class_6544$class_6552;Lnet/minecraft/class_6880;)V
-		ARG 10 structureSet
-	METHOD method_41044 trySetStructureStart (Lnet/minecraft/class_7059$class_7060;Lnet/minecraft/class_5138;Lnet/minecraft/class_5455;Lnet/minecraft/class_7138;Lnet/minecraft/class_3485;JLnet/minecraft/class_2791;Lnet/minecraft/class_1923;Lnet/minecraft/class_5321;Lnet/minecraft/class_6544$class_6552;)Z
-		ARG 1 weightedEntry
-		ARG 2 structureAccessor
-		ARG 3 dynamicRegistryManager
-		ARG 4 noiseConfig
-		ARG 5 structureManager
-		ARG 6 seed
-		ARG 8 chunk
-		ARG 9 pos
-		ARG 10 dimension
-		ARG 11 multiNoiseSampler
 	METHOD method_41045 (Lnet/minecraft/class_3449;Lnet/minecraft/class_2378;)Ljava/lang/String;
 		ARG 1 structureTypeRegistry
 	METHOD method_41046 (Lnet/minecraft/class_1_1143;)Ljava/util/Set;

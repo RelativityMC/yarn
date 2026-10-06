@@ -149,7 +149,7 @@ CLASS net/minecraft/class_3898 net/minecraft/server/world/ServerChunkLoadingMana
 		ARG 0 future
 	METHOD method_23272 getChunkLoadingDebugInfo (Lnet/minecraft/class_1923;)Ljava/lang/String;
 		ARG 1 chunkPos
-	METHOD method_27053 mark (Lnet/minecraft/class_1923;Lnet/minecraft/class_2808;)B
+	METHOD method_27053 mark (Lnet/minecraft/class_1923;Lnet/minecraft/class_2808;)V
 		ARG 1 pos
 		ARG 2 type
 	METHOD method_27054 markAsProtoChunk (Lnet/minecraft/class_1923;)V

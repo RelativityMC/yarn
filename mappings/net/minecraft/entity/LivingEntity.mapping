@@ -614,7 +614,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 0 slotId
 	METHOD method_32323 (Lnet/minecraft/class_1309;Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;)Z
 		ARG 2 stack
-	METHOD method_32324 removePowderSnowSlow ()V
 	METHOD method_32325 addPowderSnowSlowIfNeeded ()V
 	METHOD method_32326 getPreferredEquipmentSlot (Lnet/minecraft/class_1799;)Lnet/minecraft/class_1304;
 		ARG 1 stack

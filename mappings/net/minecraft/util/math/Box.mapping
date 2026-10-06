@@ -155,9 +155,6 @@ CLASS net/minecraft/class_238 net/minecraft/util/math/Box
 		ARG 0 pos
 	METHOD method_30048 of (Lnet/minecraft/class_243;DDD)Lnet/minecraft/class_238;
 		ARG 0 center
-		ARG 1 dx
-		ARG 3 dy
-		ARG 5 dz
 	METHOD method_35574 withMinX (D)Lnet/minecraft/class_238;
 		COMMENT {@return a new box with the minimum X provided and all other coordinates
 		COMMENT of this box}

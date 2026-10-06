@@ -14,9 +14,7 @@ CLASS net/minecraft/class_7574 net/minecraft/client/session/report/AbuseReportCo
 		ARG 0 environment
 		ARG 1 userApiService
 	METHOD method_46550 getSender ()Lnet/minecraft/class_7563;
-	METHOD method_46551 (Lnet/minecraft/class_310;Lnet/minecraft/class_7855;Lnet/minecraft/class_437;Ljava/lang/Runnable;Z)V
-		ARG 5 confirmed
-	METHOD method_46552 tryShowDraftScreen (Lnet/minecraft/class_310;Lnet/minecraft/class_437;Ljava/lang/Runnable;Z)V
+	METHOD method_46552 tryShowDraftScreen (Lnet/minecraft/class_310;Lnet/minecraft/class_437;Ljava/lang/Runnable;ZLjava/util/function/Predicate;)V
 		ARG 1 client
 		ARG 2 parent
 		ARG 3 callback

@@ -53,15 +53,3 @@ CLASS net/minecraft/class_8768 net/minecraft/client/gui/screen/report/ReportScre
 	METHOD method_61140 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
 	METHOD method_61141 addTitle ()V
-	CLASS class_7539 DiscardWarningScreen
-		FIELD field_39723 TITLE Lnet/minecraft/class_2561;
-		FIELD field_39724 MESSAGE Lnet/minecraft/class_2561;
-		FIELD field_39725 RETURN_BUTTON_TEXT Lnet/minecraft/class_2561;
-		FIELD field_39726 DISCARD_BUTTON_TEXT Lnet/minecraft/class_2561;
-		FIELD field_40794 DRAFT_BUTTON_TEXT Lnet/minecraft/class_2561;
-		METHOD method_57756 (Lnet/minecraft/class_4185;)V
-			ARG 1 button
-		METHOD method_57757 (Lnet/minecraft/class_4185;)V
-			ARG 1 button
-		METHOD method_57758 (Lnet/minecraft/class_4185;)V
-			ARG 1 button

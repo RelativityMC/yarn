@@ -65,7 +65,7 @@ CLASS net/minecraft/class_6686 net/minecraft/world/gen/surfacebuilder/MaterialRu
 		ARG 0 registry
 		ARG 1 id
 		ARG 2 codec
-	CLASS class_1_838 BiomeMaterialRule
+	CLASS class_1_838 BiomeMaterialCondition
 		METHOD apply (Ljava/lang/Object;)Ljava/lang/Object;
 			ARG 1 context
 		METHOD method_1_5125 isDisjoint (Ljava/util/Set;)Z

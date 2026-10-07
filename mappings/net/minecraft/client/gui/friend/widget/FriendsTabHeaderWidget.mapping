@@ -7,6 +7,7 @@ CLASS net/minecraft/class_1_964 net/minecraft/client/gui/friend/widget/FriendsTa
 	FIELD field_1_6684 main Lnet/minecraft/class_8667;
 	FIELD field_1_6685 client Lnet/minecraft/class_310;
 	METHOD <init> (Lnet/minecraft/class_1_1793;Lnet/minecraft/class_1_1789;ILjava/lang/Runnable;)V
+		ARG 2 comparator
 		ARG 3 width
 		ARG 4 onSendRequest
 	METHOD method_1_5812 setState (Lnet/minecraft/class_1_964$class_1_965;)V

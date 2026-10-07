@@ -1,0 +1,15 @@
+CLASS net/minecraft/class_1_1760 net/minecraft/client/dxgi/DXGISwapChain
+	FIELD field_1_11429 getBuffer Ljava/lang/invoke/MethodHandle;
+	FIELD field_1_11430 getCurrentBackBufferIndex Ljava/lang/invoke/MethodHandle;
+	FIELD field_1_11431 getFrameLatencyWaitableObject Ljava/lang/invoke/MethodHandle;
+	FIELD field_1_11432 present Ljava/lang/invoke/MethodHandle;
+	FIELD field_1_11433 setMaximumFrameLatency Ljava/lang/invoke/MethodHandle;
+	METHOD method_1_11131 getCurrentBackBufferIndex ()I
+	METHOD method_1_11132 getBuffer (I)Lnet/minecraft/class_1_1758;
+		ARG 1 bufferIndex
+	METHOD method_1_11133 present (II)I
+		ARG 1 swapInterval
+		ARG 2 flags
+	METHOD method_1_11134 setMaximumFrameLatency (I)I
+		ARG 1 maxLatency
+	METHOD method_1_11135 getFrameLatencyWaitableObject ()Lnet/minecraft/class_1_1737;

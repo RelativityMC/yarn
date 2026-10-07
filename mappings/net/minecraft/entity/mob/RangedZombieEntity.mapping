@@ -1,0 +1,34 @@
+CLASS net/minecraft/class_1_1778 net/minecraft/entity/mob/RangedZombieEntity
+	FIELD field_1_11597 attackingWithProjectile Z
+	FIELD field_1_11598 shotDivergence F
+	METHOD method_1_11253 createProjectile (Lnet/minecraft/class_1937;Lnet/minecraft/class_1309;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1676;
+		ARG 1 world
+		ARG 2 owner
+		ARG 3 stack
+	METHOD method_1_11254 getShootSoundEvent ()Lnet/minecraft/class_3414;
+	METHOD method_1_11255 getProjectileItem ()Lnet/minecraft/class_1792;
+	METHOD method_1_11256 isAttackingWithProjectile ()Z
+	METHOD method_1_11257 setShotDivergence (F)V
+		ARG 1 shotDivergence
+	METHOD method_1_11258 canShoot ()Z
+	CLASS class_1_1779 MeleeAttackGoal
+		FIELD field_1_11599 useWeapon Z
+		FIELD field_1_11600 rangedZombie Lnet/minecraft/class_1_1778;
+		METHOD <init> (Lnet/minecraft/class_1642;DZIZ)V
+			ARG 1 zombie
+			ARG 2 speed
+			ARG 4 pauseWhenMobIdle
+			ARG 5 attackIntervalTicks
+			ARG 6 useWeapon
+	CLASS class_1_1780 ProjectileAttackGoal
+		FIELD field_1_11601 useWeapon Z
+		FIELD field_1_11602 keepDistanceFromTarget Z
+		FIELD field_1_11603 rangedZombie Lnet/minecraft/class_1_1778;
+		METHOD <init> (Lnet/minecraft/class_1603;DLjava/util/function/IntSupplier;Ljava/util/function/IntSupplier;FZZ)V
+			ARG 1 mob
+			ARG 2 mobSpeed
+			ARG 4 minIntervalTicks
+			ARG 5 maxIntervalTicks
+			ARG 6 maxShootRange
+			ARG 7 useWeapon
+			ARG 8 keepDistanceFromTarget

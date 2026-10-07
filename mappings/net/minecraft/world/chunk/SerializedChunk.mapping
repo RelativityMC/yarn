@@ -19,6 +19,8 @@ CLASS net/minecraft/class_2852 net/minecraft/world/chunk/SerializedChunk
 		ARG 2 error
 	METHOD method_1_10786 (Lnet/minecraft/class_1_1691$class_1_1692;ILnet/minecraft/class_7522;)V
 		ARG 2 noiseBiomes
+	METHOD method_1_11434 (Lnet/minecraft/class_1_1811;Lnet/minecraft/class_1923;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 chunkPos
 	METHOD method_12385 writeStructures (Lnet/minecraft/class_6625;Lnet/minecraft/class_1923;Ljava/util/Map;Ljava/util/Map;)Lnet/minecraft/class_2487;
 		ARG 0 context
 		ARG 1 pos

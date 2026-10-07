@@ -33,6 +33,8 @@ CLASS net/minecraft/class_4185 net/minecraft/client/gui/widget/ButtonWidget
 		METHOD <init> (Lnet/minecraft/class_2561;Lnet/minecraft/class_4185$class_4241;)V
 			ARG 1 message
 			ARG 2 onPress
+		METHOD method_1_11057 tooltip (Lnet/minecraft/class_2561;)Lnet/minecraft/class_4185$class_7840;
+			ARG 1 tooltip
 		METHOD method_46431 build ()Lnet/minecraft/class_4185;
 		METHOD method_46432 width (I)Lnet/minecraft/class_4185$class_7840;
 			ARG 1 width

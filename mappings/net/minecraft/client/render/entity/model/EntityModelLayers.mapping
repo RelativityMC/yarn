@@ -1,6 +1,9 @@
 CLASS net/minecraft/class_5602 net/minecraft/client/render/entity/model/EntityModelLayers
 	FIELD field_1_3643 SULFUR_CUBE_INNER Lnet/minecraft/class_5601;
 	FIELD field_1_7074 SULFUR_CUBE_SMALL_INNER Lnet/minecraft/class_5601;
+	FIELD field_1_11335 FROSTBITE_EQUIPMENT Lnet/minecraft/class_11677;
+	FIELD field_1_11337 FROSTBITE_BABY_EQUIPMENT Lnet/minecraft/class_11677;
+	FIELD field_1_11338 FROSTBITE_OUTER Lnet/minecraft/class_5601;
 	FIELD field_27557 DROWNED_OUTER Lnet/minecraft/class_5601;
 	FIELD field_27575 PIG_SADDLE Lnet/minecraft/class_5601;
 	FIELD field_27594 SHEEP_WOOL Lnet/minecraft/class_5601;

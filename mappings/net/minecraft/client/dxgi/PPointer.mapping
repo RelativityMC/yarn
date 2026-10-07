@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1_1738 net/minecraft/client/dxgi/PPointer
+	FIELD field_1_11332 arena Ljava/lang/foreign/Arena;
+	FIELD field_1_11333 segment Ljava/lang/foreign/MemorySegment;
+	METHOD method_1_11063 guidToSegment (Lnet/minecraft/class_1_1728;)Ljava/lang/foreign/MemorySegment;
+		ARG 1 guid
+	METHOD method_1_11064 getArena ()Ljava/lang/foreign/Arena;
+	METHOD method_1_11065 getContents ()Ljava/lang/foreign/MemorySegment;
+	METHOD method_1_11066 getOutPtr ()Ljava/lang/foreign/MemorySegment;

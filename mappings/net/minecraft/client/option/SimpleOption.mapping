@@ -165,10 +165,60 @@ CLASS net/minecraft/class_7172 net/minecraft/client/option/SimpleOption
 	CLASS class_1_783 ChangeCallback
 		METHOD method_1_4750 accept (Ljava/lang/Object;)V
 			ARG 1 value
+	CLASS class_1_1729 WidgetFactory
+		METHOD method_1_11024 create (Lnet/minecraft/class_7172;Lnet/minecraft/class_7172$class_7277;Lnet/minecraft/class_315;IIILnet/minecraft/class_7172$class_1_783;)Lnet/minecraft/class_339;
+			ARG 1 option
+			ARG 2 tooltipFactory
+			ARG 3 gameOptions
+			ARG 4 x
+			ARG 5 y
+			ARG 6 width
+			ARG 7 callback
+		METHOD method_1_11025 forCyclingIconButton (Lnet/minecraft/class_7172$class_7305;Ljava/util/function/Function;)Lnet/minecraft/class_7172$class_1_1729;
+			ARG 0 callbacks
+			ARG 1 valueToIcon
+		METHOD method_1_11026 (Lnet/minecraft/class_7172$class_7305;Ljava/util/function/Function;Lnet/minecraft/class_7172;Lnet/minecraft/class_7172$class_7277;Lnet/minecraft/class_315;IIILnet/minecraft/class_7172$class_1_783;)Lnet/minecraft/class_339;
+			ARG 2 option
+			ARG 3 tooltipFactory
+			ARG 4 gameOptions
+			ARG 5 x
+			ARG 6 y
+			ARG 7 width
+			ARG 8 callback
+		METHOD method_1_11027 (Lnet/minecraft/class_7172;Lnet/minecraft/class_315;Lnet/minecraft/class_7172$class_1_783;Lnet/minecraft/class_5676;Ljava/lang/Object;)V
+			ARG 3 button
+			ARG 4 value
+		METHOD method_1_11028 (Lnet/minecraft/class_7172$class_7176;ZLnet/minecraft/class_7172;Lnet/minecraft/class_7172$class_7277;Lnet/minecraft/class_315;IIILnet/minecraft/class_7172$class_1_783;)Lnet/minecraft/class_339;
+			ARG 2 option
+			ARG 3 tooltipFactory
+			ARG 4 gameOptions
+			ARG 5 x
+			ARG 6 y
+			ARG 7 width
+			ARG 8 callback
+		METHOD method_1_11029 (Lnet/minecraft/class_7172$class_7305;Lnet/minecraft/class_7172;Lnet/minecraft/class_7172$class_7277;Lnet/minecraft/class_315;IIILnet/minecraft/class_7172$class_1_783;)Lnet/minecraft/class_339;
+			ARG 1 option
+			ARG 2 tooltipFactory
+			ARG 3 gameOptions
+			ARG 4 x
+			ARG 5 y
+			ARG 6 width
+			ARG 7 callback
+		METHOD method_1_11030 (Lnet/minecraft/class_7172;Lnet/minecraft/class_315;Lnet/minecraft/class_7172$class_1_783;Lnet/minecraft/class_5676;Ljava/lang/Object;)V
+			ARG 3 button
+			ARG 4 value
+		METHOD method_1_11031 forSlider (Lnet/minecraft/class_7172$class_7176;Z)Lnet/minecraft/class_7172$class_1_1729;
+			ARG 0 callbacks
+			ARG 1 shouldApplyImmediately
+		METHOD method_1_11032 forCyclingButton (Lnet/minecraft/class_7172$class_7305;)Lnet/minecraft/class_7172$class_1_1729;
+			ARG 0 callbacks
 	CLASS class_7173 PotentialValuesBasedCallbacks
 		COMMENT A set of callbacks for a cycling option.
 		COMMENT
 		COMMENT @see <a href="SimpleOption.html#callbacks">Callbacks</a>
+		METHOD <init> (Ljava/util/List;Lcom/mojang/serialization/Codec;)V
+			ARG 1 values
+			ARG 2 codec
 	CLASS class_7174 ValidatingIntSliderCallbacks
 		COMMENT A set of callbacks for a slider of integer values with a fixed minimum and maximum values.
 		COMMENT
@@ -227,6 +277,7 @@ CLASS net/minecraft/class_7172 net/minecraft/client/option/SimpleOption
 		COMMENT A set of callbacks to customize an option's behavior.
 		COMMENT
 		COMMENT @see <a href="SimpleOption.html#callbacks">Callbacks</a>
+		METHOD method_1_11033 createButton ()Lnet/minecraft/class_7172$class_1_1729;
 		METHOD method_41758 validate (Ljava/lang/Object;)Ljava/util/Optional;
 			COMMENT {@return the validated value}
 			COMMENT
@@ -239,6 +290,11 @@ CLASS net/minecraft/class_7172 net/minecraft/client/option/SimpleOption
 		COMMENT only when certain conditions are met.
 		COMMENT
 		COMMENT @see <a href="SimpleOption.html#callbacks">Callbacks</a>
+		METHOD <init> (Ljava/util/List;Ljava/util/List;Ljava/util/function/BooleanSupplier;Lcom/mojang/serialization/Codec;)V
+			ARG 1 values
+			ARG 2 altValues
+			ARG 3 altCondition
+			ARG 4 codec
 	CLASS class_7275 IntSliderCallbacks
 		METHOD method_42414 withModifier (Ljava/util/function/IntFunction;Ljava/util/function/ToIntFunction;Z)Lnet/minecraft/class_7172$class_7176;
 			COMMENT Creates a slider callback with the modifier applied. Note that when using this,
@@ -253,6 +309,10 @@ CLASS net/minecraft/class_7172 net/minecraft/client/option/SimpleOption
 		COMMENT A set of callbacks for a cycling option whose potential values are determined lazily.
 		COMMENT
 		COMMENT @see <a href="SimpleOption.html#callbacks">Callbacks</a>
+		METHOD <init> (Ljava/util/function/Supplier;Ljava/util/function/Function;Lcom/mojang/serialization/Codec;)V
+			ARG 1 values
+			ARG 2 validateValue
+			ARG 3 codec
 	CLASS class_7277 TooltipFactory
 		METHOD method_1_33 apply (Ljava/lang/Object;)Lnet/minecraft/class_7919;
 			ARG 1 value

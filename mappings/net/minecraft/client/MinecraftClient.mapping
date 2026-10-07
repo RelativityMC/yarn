@@ -54,6 +54,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_1_9834 multiDrawIndirectEnabled Z
 	FIELD field_1_10060 LEVEL_SECTION_CATEGORY Lcom/mojang/jtracy/SectionCategory;
 	FIELD field_1_10061 levelSection Lcom/mojang/jtracy/Section;
+	FIELD field_1_10921 gameProfileResolver Lnet/minecraft/class_11755;
 	FIELD field_1687 world Lnet/minecraft/class_638;
 		COMMENT Represents the world the client is currently viewing.
 		COMMENT This field is not null when in game.
@@ -216,6 +217,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_1_6370 toggleFriendsScreen ()Z
 	METHOD method_1_6371 toggleFullscreen ()V
 	METHOD method_1_6428 getPaletteManager ()Lnet/minecraft/class_1_1126;
+	METHOD method_1_11012 getGameProfileResolver ()Lnet/minecraft/class_11755;
 	METHOD method_1478 getResourceManager ()Lnet/minecraft/class_3300;
 	METHOD method_1479 getResourcePackDir ()Ljava/nio/file/Path;
 	METHOD method_1481 joinWorld (Lnet/minecraft/class_638;)V

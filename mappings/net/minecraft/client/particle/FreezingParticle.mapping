@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_1743 net/minecraft/client/particle/FreezingParticle
+	FIELD field_1_11359 landed Z
+	FIELD field_1_11360 startingAngularVelocity F
+	CLASS class_1_1744 Factory
+		FIELD field_1_11361 spriteProvider Lnet/minecraft/class_4002;
+		METHOD <init> (Lnet/minecraft/class_4002;)V
+			ARG 1 spriteProvider

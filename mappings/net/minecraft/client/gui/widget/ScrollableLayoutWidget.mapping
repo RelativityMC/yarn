@@ -2,6 +2,7 @@ CLASS net/minecraft/class_11467 net/minecraft/client/gui/widget/ScrollableLayout
 	FIELD field_1_636 minHeight I
 	FIELD field_1_637 marginSide Lnet/minecraft/class_11467$class_1_41;
 	FIELD field_1_638 marginWidth I
+	FIELD field_1_11476 verticalAlignment F
 	FIELD field_60715 DEFAULT_MARGIN_WIDTH I
 	FIELD field_60716 layout Lnet/minecraft/class_8133;
 	FIELD field_60717 container Lnet/minecraft/class_11467$class_11468;
@@ -21,6 +22,11 @@ CLASS net/minecraft/class_11467 net/minecraft/client/gui/widget/ScrollableLayout
 	METHOD method_1_6304 setMarginWidth (I)V
 		ARG 1 marginWidth
 	METHOD method_1_9274 getScrollY ()D
+	METHOD method_1_11160 setVerticalAlignment (F)V
+		ARG 1 verticalAlignment
+	METHOD method_1_11161 setBottomAlignment ()V
+	METHOD method_1_11162 setMiddleAlignment ()V
+	METHOD method_1_11163 setTopAlignment ()V
 	METHOD method_71806 setWidth (I)V
 		ARG 1 width
 	METHOD method_71807 setHeight (I)V
@@ -36,3 +42,4 @@ CLASS net/minecraft/class_11467 net/minecraft/client/gui/widget/ScrollableLayout
 			ARG 5 scrollbar
 		METHOD method_1_605 getSideMargin ()I
 		METHOD method_1_5644 resetContents ()V
+		METHOD method_1_11164 getContentYOffset ()I

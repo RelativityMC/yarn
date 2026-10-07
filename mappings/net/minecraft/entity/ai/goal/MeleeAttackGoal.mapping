@@ -15,6 +15,11 @@ CLASS net/minecraft/class_1366 net/minecraft/entity/ai/goal/MeleeAttackGoal
 		ARG 1 mob
 		ARG 2 speed
 		ARG 4 pauseWhenMobIdle
+	METHOD <init> (Lnet/minecraft/class_1314;DZI)V
+		ARG 1 mod
+		ARG 2 speed
+		ARG 4 pauseWhenMobIdle
+		ARG 5 attackIntervalTicks
 	METHOD method_6288 attack (Lnet/minecraft/class_1309;)V
 		ARG 1 target
 	METHOD method_28346 resetCooldown ()V

@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_1745 net/minecraft/client/dxgi/D3D12Fence
+	FIELD field_1_11362 setEventOnCompletion Ljava/lang/invoke/MethodHandle;
+	METHOD method_1_11076 setEventOnCompletion (J)I
+		ARG 1 value

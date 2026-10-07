@@ -1,0 +1,21 @@
+CLASS net/minecraft/class_1_1808 net/minecraft/client/friend/gui/widget/PresenceStatusWidget
+	FIELD field_1_11747 OFFLINE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11748 status Lnet/minecraft/class_1_1765;
+	METHOD <init> (Lnet/minecraft/class_1_1765;Lnet/minecraft/class_327;)V
+		ARG 1 status
+		ARG 2 textRenderer
+	METHOD method_1_11405 setStatus (Lnet/minecraft/class_1_1765;)V
+		ARG 1 status
+	METHOD method_1_11406 setPresenceStatus (Lcom/mojang/authlib/services/response/PresenceStatus;)V
+		ARG 1 presenceStatus
+	METHOD method_1_11407 onPresenceResponse (Lcom/mojang/authlib/services/response/PresenceResponse;Ljava/util/UUID;)V
+		ARG 1 presenceResponse
+		ARG 2 playerId
+	METHOD method_1_11408 setVisibility (Lnet/minecraft/class_5520$class_1_1800;)V
+		ARG 1 visibility
+	METHOD method_1_11409 wrapWithVisibility (Lnet/minecraft/class_5250;Lnet/minecraft/class_5520$class_1_1800;)Lnet/minecraft/class_5250;
+		ARG 0 text
+		ARG 1 visibility
+	METHOD method_1_11410 getStatus ()Lnet/minecraft/class_1_1765;
+	METHOD method_1_11411 getText (Lnet/minecraft/class_1_1765;)Lnet/minecraft/class_2561;
+		ARG 0 status

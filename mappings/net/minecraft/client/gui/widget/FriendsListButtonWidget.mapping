@@ -3,7 +3,12 @@ CLASS net/minecraft/class_1_917 net/minecraft/client/gui/widget/FriendsListButto
 	FIELD field_1_6477 NARRATION_SUPPLIER Lnet/minecraft/class_4185$class_7841;
 	FIELD field_1_6478 NOTIFICATION_COUNT_TEXTURES [Lnet/minecraft/class_2960;
 	FIELD field_1_6481 incomingRequestCount I
+	FIELD field_1_11409 FRIENDS_ICON Lnet/minecraft/class_1_1783;
+	FIELD field_1_11410 OPEN_TOOLTIP Lnet/minecraft/class_7919;
 	METHOD <init> (ILnet/minecraft/class_4185$class_4241;Z)V
 		ARG 1 width
 		ARG 2 pressAction
+		ARG 3 active
+	METHOD method_1_5610 (Ljava/util/function/Supplier;)Lnet/minecraft/class_5250;
+		ARG 0 textSupplier
 	METHOD method_1_5611 update ()V

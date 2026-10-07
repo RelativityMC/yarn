@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_1731 net/minecraft/item/IceBallItem
+	FIELD field_1_11110 PROJECTILE_POWER F

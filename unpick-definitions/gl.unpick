@@ -437,7 +437,7 @@ group int
 target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/pipeline/DepthTest;)I
 	return gl_depth_test_function
 
-target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/platform/PolygonMode;)I
+target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/vertex/PolygonMode;)I
 	return gl_polygon_mode
 
 target_method com.mojang.blaze3d.opengl.GlConst toGl (Lcom/mojang/blaze3d/pipeline/BlendParameter;)I

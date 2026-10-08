@@ -43,6 +43,8 @@ CLASS net/minecraft/class_2794 net/minecraft/world/gen/chunk/ChunkGenerator
 		ARG 7 dimension
 	METHOD method_1_10860 (Lnet/minecraft/class_5138;Lnet/minecraft/class_2791;Lnet/minecraft/class_7869;Lnet/minecraft/class_1923;Lnet/minecraft/class_6880;)Z
 		ARG 4 structureSet
+	METHOD method_1_11075 (Lnet/minecraft/class_5455;Lnet/minecraft/class_7869;Lnet/minecraft/class_2791;Lnet/minecraft/class_3485;Lnet/minecraft/class_5321;Lnet/minecraft/class_6544$class_6552;Lnet/minecraft/class_5138;Lnet/minecraft/class_6880;)V
+		ARG 8 structureSet
 	METHOD method_12098 getBiomeSource ()Lnet/minecraft/class_1966;
 	METHOD method_12100 getSpawnHeight (Lnet/minecraft/class_5539;)I
 		ARG 1 world

@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1822 net/minecraft/client/gui/hud/debug/ChunkSectionStatusDebugHudEntry
+	METHOD method_1_11468 getChunkStatusColor (Lnet/minecraft/class_1_797;II)I
+		ARG 1 chunks
+		ARG 2 sectionX
+		ARG 3 sectionZ

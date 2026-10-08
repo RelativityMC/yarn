@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1823 net/minecraft/entity/projectile/thrown/ThrownBallEntity
+	METHOD method_1_11473 getDamageAmount (Lnet/minecraft/class_3966;)I
+		ARG 1 hit
+	METHOD method_1_11474 getBreakSound ()Lnet/minecraft/class_3414;
+	METHOD method_1_11475 getParticleEffect ()Lnet/minecraft/class_2394;

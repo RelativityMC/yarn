@@ -1,9 +1,10 @@
 CLASS net/minecraft/class_5483 net/minecraft/world/biome/SpawnSettings
+	FIELD field_1_9879 RESET_ALL Lnet/minecraft/class_5483;
 	FIELD field_26403 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_26405 spawners Ljava/util/Map;
 	FIELD field_26406 spawnCosts Ljava/util/Map;
 	FIELD field_26645 LOGGER Lorg/slf4j/Logger;
-	FIELD field_26646 INSTANCE Lnet/minecraft/class_5483;
+	FIELD field_26646 INHERIT Lnet/minecraft/class_5483;
 	FIELD field_30982 EMPTY_ENTRY_POOL Lnet/minecraft/class_6012;
 	METHOD <init> (Ljava/util/Map;Ljava/util/Map;)V
 		ARG 1 spawners

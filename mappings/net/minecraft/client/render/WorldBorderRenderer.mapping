@@ -30,6 +30,7 @@ CLASS net/minecraft/class_9978 net/minecraft/client/render/WorldBorderRenderer
 		ARG 1 pass
 		ARG 2 dynamicTransforms
 		ARG 3 indexBuffer
+		ARG 4 texture
 	METHOD method_1_7444 draw (Lnet/minecraft/class_12078;Lnet/minecraft/class_1_1317;Lnet/minecraft/class_243;D)V
 		ARG 1 state
 		ARG 2 pass

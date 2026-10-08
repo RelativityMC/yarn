@@ -1,0 +1,21 @@
+CLASS net/minecraft/class_1_1751 net/minecraft/client/dxgi/DXGIFactory
+	FIELD field_1_11382 checkFeatureSupport Ljava/lang/invoke/MethodHandle;
+	FIELD field_1_11383 CREATE_DXGI_FACTORY_2 Ljava/lang/invoke/MethodHandle;
+	FIELD field_1_11384 createSwapChainForHwnd Ljava/lang/invoke/MethodHandle;
+	FIELD field_1_11385 enumAdapterByLuid Ljava/lang/invoke/MethodHandle;
+	FIELD field_1_11386 makeWindowAssociation Ljava/lang/invoke/MethodHandle;
+	METHOD <init> (Ljava/lang/foreign/MemorySegment;)V
+		ARG 1 segment
+	METHOD method_1_11102 hasAdapterByLuid (Ljava/lang/foreign/MemorySegment;)Z
+		ARG 1 adapterLuid
+	METHOD method_1_11103 supportsTearing ()Z
+	METHOD method_1_11104 createFactory ()Lnet/minecraft/class_1_1751;
+	METHOD method_1_11105 createSwapChainForHwnd (Lnet/minecraft/class_1_1773;JLnet/minecraft/class_1_1775;)Lnet/minecraft/class_1_1760;
+		ARG 1 device
+		ARG 2 hwnd
+		ARG 4 desc
+	METHOD method_1_11106 enumAdapterByLuid (Ljava/lang/foreign/MemorySegment;)Lnet/minecraft/class_1_1746;
+		ARG 1 adapterLuid
+	METHOD method_1_11107 makeWindowAssociation (JI)V
+		ARG 1 window
+		ARG 3 flags

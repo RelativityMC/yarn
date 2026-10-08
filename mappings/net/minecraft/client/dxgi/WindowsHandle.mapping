@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_1737 net/minecraft/client/dxgi/WindowsHandle
+	METHOD method_1_11055 getKernel32Func (Ljava/lang/String;Ljava/lang/foreign/FunctionDescriptor;)Ljava/lang/invoke/MethodHandle;
+		ARG 0 name
+		ARG 1 desc
+	METHOD method_1_11056 wait (IZ)I
+		ARG 1 ms
+		ARG 2 alertable

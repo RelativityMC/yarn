@@ -1,0 +1,33 @@
+CLASS net/minecraft/class_1_1809 net/minecraft/client/friend/gui/tab/PlayerInteractionsTab
+	FIELD field_1_11753 EMPTY_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11754 EMPTY_BLOCKED_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11755 EMPTY_MUTED_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11756 SEARCH_NO_RESULTS_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11758 MANAGE_ACCOUNT_FOOTER_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11759 EMPTY_BLOCKED_LINK Lnet/minecraft/class_2561;
+	FIELD field_1_11760 empty Z
+	FIELD field_1_11761 tab Lnet/minecraft/class_5522$class_5523;
+	FIELD field_1_11762 parent Lnet/minecraft/class_5522;
+	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_5522;Lnet/minecraft/class_5522$class_5523;IILnet/minecraft/class_8667;)V
+		ARG 1 client
+		ARG 2 parent
+		ARG 3 tab
+		ARG 4 width
+		ARG 5 height
+		ARG 6 header
+	METHOD method_1_11415 addEntry (Lnet/minecraft/class_5519;Z)V
+		ARG 1 playerEntry
+		ARG 2 searchEntry
+	METHOD method_1_11416 getTab ()Lnet/minecraft/class_5522$class_5523;
+	METHOD method_1_11417 (Lnet/minecraft/class_7847;)V
+		ARG 0 positioner
+	METHOD method_1_11418 (Lnet/minecraft/class_2583;)V
+		ARG 1 button
+	METHOD method_1_11419 (Lnet/minecraft/class_2583;)Lnet/minecraft/class_2583;
+		ARG 0 style
+	METHOD method_1_11420 setEntries (Ljava/util/List;Z)V
+		ARG 1 playerEntries
+		ARG 2 searchEmpty
+	METHOD method_1_11421 markEmpty ()V
+	METHOD method_1_11422 setText (Lnet/minecraft/class_2561;)V
+		ARG 1 text

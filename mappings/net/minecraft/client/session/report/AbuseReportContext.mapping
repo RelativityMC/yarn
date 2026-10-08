@@ -1,4 +1,13 @@
 CLASS net/minecraft/class_7574 net/minecraft/client/session/report/AbuseReportContext
+	FIELD field_1_11764 EDIT_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11765 QUIT_TO_TITLE_DISCARD_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11766 RESTART_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11767 QUIT_TO_TITLE_TOOLTIP Lnet/minecraft/class_7919;
+	FIELD field_1_11768 QUIT_TO_TITLE_CHAT_TOOLTIP Lnet/minecraft/class_7919;
+	FIELD field_1_11769 CONTENT_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11770 TITLE_NEW_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11771 QUIT_TO_TITLE_CONTENT_NEW_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11772 QUIT_TO_TITLE_TITLE_NEW_TEXT Lnet/minecraft/class_2561;
 	FIELD field_39675 MAX_LOGS I
 	FIELD field_40819 sender Lnet/minecraft/class_7563;
 	FIELD field_40820 environment Lnet/minecraft/class_7569;
@@ -8,17 +17,30 @@ CLASS net/minecraft/class_7574 net/minecraft/client/session/report/AbuseReportCo
 		ARG 1 sender
 		ARG 2 environment
 		ARG 3 chatLog
+	METHOD method_1_11423 tryShowDraftScreen (Lnet/minecraft/class_310;Lnet/minecraft/class_437;Ljava/lang/Runnable;Z)V
+		ARG 1 client
+		ARG 2 parent
+		ARG 3 callback
+		ARG 4 quit
+	METHOD method_1_11424 getDraft ()Lnet/minecraft/class_7855;
+	METHOD method_1_11425 (Lnet/minecraft/class_310;Lnet/minecraft/class_7855;Lnet/minecraft/class_437;ZLjava/lang/Runnable;Lnet/minecraft/class_7539$class_1_1820;)V
+		ARG 6 buttonFactory
+	METHOD method_1_11426 (Ljava/lang/Runnable;Lnet/minecraft/class_4185;)V
+		ARG 2 button
 	METHOD method_44598 environmentEquals (Lnet/minecraft/class_7569;)Z
 		ARG 1 environment
 	METHOD method_44599 create (Lnet/minecraft/class_7569;Lcom/mojang/authlib/minecraft/UserApiService;)Lnet/minecraft/class_7574;
 		ARG 0 environment
 		ARG 1 userApiService
 	METHOD method_46550 getSender ()Lnet/minecraft/class_7563;
+	METHOD method_46551 (Lnet/minecraft/class_310;Lnet/minecraft/class_7855;Lnet/minecraft/class_437;Lnet/minecraft/class_4185;)V
+		ARG 4 button
 	METHOD method_46552 tryShowDraftScreen (Lnet/minecraft/class_310;Lnet/minecraft/class_437;Ljava/lang/Runnable;ZLjava/util/function/Predicate;)V
 		ARG 1 client
 		ARG 2 parent
 		ARG 3 callback
 		ARG 4 quit
+		ARG 5 willBeLostOnQuit
 	METHOD method_46553 setDraft (Lnet/minecraft/class_7855;)V
 		ARG 1 draft
 	METHOD method_46554 draftPlayerUuidEquals (Ljava/util/UUID;)Z

@@ -1,0 +1,89 @@
+CLASS net/minecraft/class_1_1798 net/minecraft/client/friend/gui/screen/PlayerOptionsScreen
+	FIELD field_1_11671 CANCEL_REQUEST_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11672 UNFRIEND_CONFIRM_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11673 DRAFT_REPORT_ICON_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_11674 EDIT_REPORT_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11675 EDIT_REPORT_TOOLTIP Lnet/minecraft/class_7919;
+	FIELD field_1_11680 MUTE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11681 MUTE_TOOLTIP Lnet/minecraft/class_7919;
+	FIELD field_1_11682 PLAYER_DISPLAY_HEIGHT I
+	FIELD field_1_11683 PLAYER_DISPLAY_SENSITIVITY F
+	FIELD field_1_11684 PLAYER_DISPLAY_WIDTH I
+	FIELD field_1_11686 REPORT_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11687 REPORT_DISABLED_TOOLTIP Lnet/minecraft/class_7919;
+	FIELD field_1_11688 REPORT_TOOLTIP Lnet/minecraft/class_7919;
+	FIELD field_1_11689 SEND_REQUEST_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11693 TITLE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11694 UNFRIEND_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11695 UNMUTE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11696 UNMUTE_TOOLTIP Lnet/minecraft/class_7919;
+	FIELD field_1_11698 acceptRequestButton Lnet/minecraft/class_8662;
+	FIELD field_1_11699 body Lnet/minecraft/class_8667;
+	FIELD field_1_11700 declineRequestButton Lnet/minecraft/class_8662;
+	FIELD field_1_11701 addFriendButton Lnet/minecraft/class_8662;
+	FIELD field_1_11702 friendshipStatus Lnet/minecraft/class_5520$class_1_1799;
+	FIELD field_1_11703 friendActionManager Lnet/minecraft/class_1_1796;
+	FIELD field_1_11704 hasDraft Z
+	FIELD field_1_11705 parent Lnet/minecraft/class_437;
+	FIELD field_1_11706 root Lnet/minecraft/class_8132;
+	FIELD field_1_11707 muteButton Lnet/minecraft/class_4185;
+	FIELD field_1_11708 playerId Ljava/util/UUID;
+	FIELD field_1_11709 playerName Ljava/lang/String;
+	FIELD field_1_11710 playerRenderState Lnet/minecraft/class_10055;
+	FIELD field_1_11711 profileWidget Lnet/minecraft/class_1_1803;
+	FIELD field_1_11712 reportButton Lnet/minecraft/class_8662;
+	FIELD field_1_11713 skin Ljava/util/function/Supplier;
+	METHOD <init> (Lnet/minecraft/class_437;Ljava/util/UUID;Ljava/lang/String;Lnet/minecraft/class_1_1796;Ljava/util/function/Supplier;ZZZ)V
+		ARG 1 parent
+		ARG 2 playerId
+		ARG 3 playerName
+		ARG 4 friendActionManager
+		ARG 5 skin
+		ARG 6 skinReportable
+		ARG 7 chatReportable
+		ARG 8 sentMessage
+	METHOD method_1_11351 revokeOutgoingFriendRequest ()V
+	METHOD method_1_11352 promptUnfriendConfirmation ()V
+	METHOD method_1_11353 createPlayerRenderState ()Lnet/minecraft/class_10055;
+	METHOD method_1_11354 (Lnet/minecraft/class_8816;)V
+		ARG 1 button
+	METHOD method_1_11355 (Lnet/minecraft/class_8816;)V
+		ARG 1 button
+	METHOD method_1_11356 (Lnet/minecraft/class_7847;)V
+		ARG 0 positioner
+	METHOD method_1_11357 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_1_11358 (Lnet/minecraft/class_1_1798;Lnet/minecraft/class_339;)V
+		ARG 1 child
+	METHOD method_1_11359 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_1_11360 (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/minecraft/class_5250;
+		ARG 2 textSupplier
+	METHOD method_1_11361 (Lnet/minecraft/class_1_1796;Ljava/util/UUID;Lnet/minecraft/class_4185;)V
+		ARG 2 button
+	METHOD method_1_11362 (Lnet/minecraft/class_1_1796;Ljava/util/UUID;Lnet/minecraft/class_4185;)V
+		ARG 2 button
+	METHOD method_1_11363 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_1_11364 (Lnet/minecraft/class_7574;ZZZLnet/minecraft/class_4185;)V
+		ARG 5 button
+	METHOD method_1_11366 (Lnet/minecraft/class_7855;)Z
+		ARG 1 report
+	METHOD method_1_11367 mutePlayer ()V
+	METHOD method_1_11368 updatePresenceStatus (Lnet/minecraft/class_5520;)V
+		ARG 1 socialInteractionsManager
+	METHOD method_1_11369 setAbuseReportContext (Lnet/minecraft/class_7574;)V
+		ARG 1 reportContext
+	METHOD method_1_11370 update ()V
+	METHOD method_1_11371 reportPlayer (Lnet/minecraft/class_7574;ZZZ)V
+		ARG 1 reportContext
+		ARG 2 skinReportable
+		ARG 3 chatReportable
+		ARG 4 sentMessage
+	METHOD method_1_11372 addFriend ()V
+	METHOD method_1_11373 handlePendingAction (ZLnet/minecraft/class_1_1796$class_1_1797;)V
+		ARG 1 incoming
+		ARG 2 pendingAction
+	METHOD method_1_11374 beforeAction ()V
+	METHOD method_1_11375 onUpdateSuccess (Lnet/minecraft/class_5520;)V
+		ARG 1 socialInteractionsManager

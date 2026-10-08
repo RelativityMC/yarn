@@ -3,6 +3,12 @@ CLASS net/minecraft/class_3864 net/minecraft/world/gen/feature/DefaultBiomeFeatu
 		ARG 0 builder
 	METHOD method_1_6827 addDappledForestFeatures (Lnet/minecraft/class_5485$class_5495;)V
 		ARG 0 builder
+	METHOD method_1_11108 addIceCaveOres (Lnet/minecraft/class_5485$class_5495;)V
+		ARG 0 builder
+	METHOD method_1_11109 addIceCaveMineables (Lnet/minecraft/class_5485$class_5495;)V
+		ARG 0 builder
+	METHOD method_1_11110 addIceCavesDecoration (Lnet/minecraft/class_5485$class_5495;)V
+		ARG 0 builder
 	METHOD method_16957 addWindsweptHillsTrees (Lnet/minecraft/class_5485$class_5495;)V
 		ARG 0 builder
 	METHOD method_16958 addWindsweptForestTrees (Lnet/minecraft/class_5485$class_5495;)V
@@ -82,6 +88,8 @@ CLASS net/minecraft/class_3864 net/minecraft/world/gen/feature/DefaultBiomeFeatu
 		ARG 0 builder
 	METHOD method_17005 addMineables (Lnet/minecraft/class_5485$class_5495;ZZ)V
 		ARG 0 builder
+		ARG 1 addVegetation
+		ARG 2 addDirtAndGranite
 	METHOD method_17006 addDefaultOres (Lnet/minecraft/class_5485$class_5495;Z)V
 		ARG 0 builder
 		ARG 1 largeCopperOreBlob

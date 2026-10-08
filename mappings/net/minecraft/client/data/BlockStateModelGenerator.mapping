@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerator
 	FIELD field_1_2306 SKULL_TRANSFORMATION Lnet/minecraft/class_4590;
+	FIELD field_1_11552 ROTATE_Z_180 Lnet/minecraft/class_10804;
 	FIELD field_22830 blockStateCollector Ljava/util/function/Consumer;
 	FIELD field_22831 modelCollector Ljava/util/function/BiConsumer;
 	FIELD field_28548 CONNECTION_VARIANT_FUNCTIONS Ljava/util/Map;
@@ -99,6 +100,8 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 0 strawBedBlock
 		ARG 1 headModel
 		ARG 2 footModel
+	METHOD method_1_11188 registerIceCrystal ()V
+	METHOD method_1_11189 registerIcicle ()V
 	METHOD method_25508 registerChorusPlant ()V
 	METHOD method_25509 registerComposter ()V
 	METHOD method_25510 registerDaylightDetector ()V
@@ -427,7 +430,8 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 	METHOD method_32228 registerCandle (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
 		ARG 1 candle
 		ARG 2 cake
-	METHOD method_32229 registerAmethyst (Lnet/minecraft/class_2248;)V
+	METHOD method_32229 registerAttachedCrystal (Lnet/minecraft/class_2248;)V
+		ARG 1 block
 	METHOD method_32802 registerPointedDripstone (Lnet/minecraft/class_2248;)V
 		ARG 1 block
 	METHOD method_32803 getDripstoneVariant (Lnet/minecraft/class_2350;Lnet/minecraft/class_5691;Lnet/minecraft/class_2248;)Lnet/minecraft/class_807;

@@ -1,0 +1,39 @@
+CLASS net/minecraft/class_1_1804 net/minecraft/gui/widget/EntityDisplayWidget
+	FIELD field_1_11736 state Lnet/minecraft/class_10017;
+	FIELD field_1_11737 sensitivity F
+	METHOD <init> (IIFLnet/minecraft/class_10017;)V
+		ARG 1 width
+		ARG 2 height
+		ARG 3 sensitivity
+		ARG 4 state
+	METHOD <init> (Lnet/minecraft/class_2561;IIFLnet/minecraft/class_10017;)V
+		ARG 1 message
+		ARG 2 width
+		ARG 3 height
+		ARG 4 sensitivity
+		ARG 5 state
+	METHOD method_1_11392 render (Lnet/minecraft/class_332;IIIIFFFFFLnet/minecraft/class_10017;)V
+		ARG 0 context
+		ARG 1 left
+		ARG 2 top
+		ARG 3 right
+		ARG 4 bottom
+		ARG 5 scale
+		ARG 6 extraHeight
+		ARG 7 sensitivity
+		ARG 8 mouseX
+		ARG 9 mouseY
+		ARG 10 state
+	METHOD method_1_11393 renderEntity (Lnet/minecraft/class_332;IIIIFFFFLnet/minecraft/class_1297;)V
+		ARG 0 context
+		ARG 1 left
+		ARG 2 top
+		ARG 3 right
+		ARG 4 bottom
+		ARG 5 scale
+		ARG 6 extraHeight
+		ARG 7 mouseX
+		ARG 8 mouseY
+		ARG 9 entity
+	METHOD method_1_11394 getRenderState (Lnet/minecraft/class_1297;)Lnet/minecraft/class_10017;
+		ARG 0 entity

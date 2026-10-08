@@ -28,3 +28,5 @@ CLASS net/minecraft/class_1_1312 net/minecraft/client/window/WindowEventListener
 	METHOD method_1_8613 poll ()V
 	METHOD method_1_8614 flushEvents ()V
 	METHOD method_1_10242 flushEventsAndPoll ()V
+	METHOD method_1_11062 getKeyAction (Lorg/lwjgl/sdl/SDL_KeyboardEvent;)Ljava/lang/Integer;
+		ARG 0 event

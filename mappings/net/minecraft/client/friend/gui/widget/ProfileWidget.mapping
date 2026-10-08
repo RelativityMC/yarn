@@ -1,0 +1,20 @@
+CLASS net/minecraft/class_1_1803 net/minecraft/client/friend/gui/widget/ProfileWidget
+	FIELD field_1_11733 root Lnet/minecraft/class_8667;
+	FIELD field_1_11734 usernameWidget Lnet/minecraft/class_7077;
+	FIELD field_1_11735 presenceStatusWidget Lnet/minecraft/class_1_1808;
+	METHOD <init> (Lnet/minecraft/class_310;Ljava/util/UUID;Ljava/lang/String;)V
+		ARG 1 client
+		ARG 2 uuid
+		ARG 3 username
+	METHOD method_1_11386 createUsernameWidget (Lnet/minecraft/class_310;Ljava/lang/String;)Lnet/minecraft/class_7077;
+		ARG 1 client
+		ARG 2 username
+	METHOD method_1_11387 (Lnet/minecraft/class_310;Ljava/lang/String;Lnet/minecraft/class_4185;)V
+		ARG 2 button
+	METHOD method_1_11388 (Lnet/minecraft/class_2561;Ljava/util/function/Supplier;)Lnet/minecraft/class_5250;
+		ARG 1 textSupplier
+	METHOD method_1_11389 (Lnet/minecraft/class_332;IIFLnet/minecraft/class_339;)V
+		ARG 4 child
+	METHOD method_1_11390 (Lnet/minecraft/class_7847;)V
+		ARG 0 positioner
+	METHOD method_1_11391 getPresenceStatusWidget ()Lnet/minecraft/class_1_1808;

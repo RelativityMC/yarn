@@ -1,0 +1,18 @@
+CLASS net/minecraft/class_1_1740 net/minecraft/block/IcicleBlock
+	FIELD field_1_11339 ATTACHED Lnet/minecraft/class_2746;
+	FIELD field_1_11341 PARTICLE_TICK_CHANCE F
+	FIELD field_1_11342 MAX_GROWTH_LENGTH I
+	FIELD field_1_11343 ALLOWED_GROWTH_DIRECTIONS Ljava/util/List;
+	METHOD method_1_11067 isAboveMeltingBlock (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;)Z
+		ARG 1 world
+		ARG 2 pos
+	METHOD method_1_11068 isBase (Lnet/minecraft/class_2680;Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;)Z
+		ARG 1 state
+		ARG 2 world
+		ARG 3 pos
+	METHOD method_1_11069 isBrightEnoughToMelt (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;)Z
+		ARG 1 world
+		ARG 2 pos
+	METHOD method_1_11070 isSubjectToMelting (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;)Z
+		ARG 1 world
+		ARG 2 pos

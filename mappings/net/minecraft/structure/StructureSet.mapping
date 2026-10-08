@@ -3,6 +3,27 @@ CLASS net/minecraft/class_7059 net/minecraft/structure/StructureSet
 	FIELD field_37196 REGISTRY_CODEC Lcom/mojang/serialization/Codec;
 	METHOD <init> (Lnet/minecraft/class_6880;Lnet/minecraft/class_1_1143;)V
 		ARG 1 structure
+		ARG 2 placement
+	METHOD method_1_11309 setStructureStarts (Lnet/minecraft/class_2794;Lnet/minecraft/class_5455;Lnet/minecraft/class_7869;Lnet/minecraft/class_1923;Lnet/minecraft/class_5539;Lnet/minecraft/class_3485;Lnet/minecraft/class_5321;Lnet/minecraft/class_6544$class_6552;)Lnet/minecraft/class_3449;
+		ARG 1 chunkGenerator
+		ARG 2 registryManager
+		ARG 3 placementCalculator
+		ARG 4 chunkPos
+		ARG 5 world
+		ARG 6 structureTemplateManager
+		ARG 7 dimension
+		ARG 8 noiseSampler
+	METHOD method_1_11310 createStructureStart (Lnet/minecraft/class_6880;Lnet/minecraft/class_2794;Lnet/minecraft/class_5455;Lnet/minecraft/class_7138;Lnet/minecraft/class_3485;JLnet/minecraft/class_1923;Lnet/minecraft/class_5539;Lnet/minecraft/class_5321;Lnet/minecraft/class_6544$class_6552;)Lnet/minecraft/class_3449;
+		ARG 0 structure
+		ARG 1 chunkGenerator
+		ARG 2 registryManager
+		ARG 3 noiseConfig
+		ARG 4 structureTemplateManager
+		ARG 5 seed
+		ARG 7 chunkPos
+		ARG 8 world
+		ARG 9 dimension
+		ARG 10 noiseSampler
 	METHOD method_41144 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
 	METHOD method_41145 createEntry (Lnet/minecraft/class_6880;)Lnet/minecraft/class_7059$class_7060;

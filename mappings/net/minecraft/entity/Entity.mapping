@@ -313,6 +313,18 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
+	METHOD method_1_11015 addFrozenTicks (I)V
+		ARG 1 ticks
+	METHOD method_1_11016 (Lnet/minecraft/class_1_1769;Lnet/minecraft/class_6880;)V
+		ARG 2 stepSound
+	METHOD method_1_11017 (Lnet/minecraft/class_1_1769;Lnet/minecraft/class_6880;)V
+		ARG 2 stepSound
+	METHOD method_1_11018 (Lnet/minecraft/class_1_1769;Lnet/minecraft/class_6880;)V
+		ARG 2 stepSound
+	METHOD method_1_11019 playSound (Lnet/minecraft/class_6880;FF)V
+		ARG 1 sound
+		ARG 2 volume
+		ARG 3 pitch
 	METHOD method_5622 onBlockCollision (Lnet/minecraft/class_2680;)V
 		COMMENT Called when this entity's collision box intersects {@code state}.
 		COMMENT

@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_1_1773 net/minecraft/client/dxgi/D3D12CommandQueue
+	FIELD field_1_11558 executeCommandLists Ljava/lang/invoke/MethodHandle;
+	FIELD field_1_11559 signal Ljava/lang/invoke/MethodHandle;
+	FIELD field_1_11560 wait Ljava/lang/invoke/MethodHandle;
+	METHOD method_1_11195 executeCommandLists (Lnet/minecraft/class_1_1807;)I
+		ARG 1 commandList
+	METHOD method_1_11196 signal (Lnet/minecraft/class_1_1745;J)I
+		ARG 1 fence
+		ARG 2 value
+	METHOD method_1_11197 wait (Lnet/minecraft/class_1_1745;J)I
+		ARG 1 fence
+		ARG 2 value

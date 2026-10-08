@@ -31,12 +31,15 @@ CLASS net/minecraft/class_6954 net/minecraft/world/gen/densityfunction/DensityFu
 		ARG 2 noiseSet
 	METHOD method_1_8790 registerOreVeinFunctions (Lnet/minecraft/class_7891;)V
 		ARG 0 densityFunctionRegisterable
+	METHOD method_1_9220 createEndIslandsDensityFunction ()Lnet/minecraft/class_6910;
 	METHOD method_40539 verticalRangeChoice (Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;IIIII)Lnet/minecraft/class_6910;
 		ARG 0 y
 		ARG 1 whenInRange
 		ARG 2 minInclusive
 		ARG 3 maxInclusive
 		ARG 4 whenOutOfRange
+		ARG 5 cellSizeXz
+		ARG 6 cellSizeY
 	METHOD method_40540 createInitialDensityFunction (Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
 		ARG 0 factor
 		ARG 1 depth
@@ -86,6 +89,8 @@ CLASS net/minecraft/class_6954 net/minecraft/world/gen/densityfunction/DensityFu
 		ARG 1 noiseParametersLookup
 	METHOD method_41207 applyBlendDensity (Lnet/minecraft/class_6910;II)Lnet/minecraft/class_6910;
 		ARG 0 density
+		ARG 1 cellSizeXz
+		ARG 2 cellSizeY
 	METHOD method_41546 getPeaksValleysNoise (F)F
 		ARG 0 weirdness
 	METHOD method_41547 createRidgesFoldedOverworldFunction (Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
@@ -95,6 +100,7 @@ CLASS net/minecraft/class_6954 net/minecraft/world/gen/densityfunction/DensityFu
 		COMMENT This is used for the normal, large biomes and amplified world types.
 		ARG 0 densityFunctionRegisterable
 		ARG 1 densityFunctionLookup
+		ARG 2 fractalNoiseParametersLookup
 		ARG 3 jaggedNoise
 		ARG 4 continents
 		ARG 5 erosion
@@ -151,10 +157,12 @@ CLASS net/minecraft/class_6954 net/minecraft/world/gen/densityfunction/DensityFu
 			COMMENT the minimum block Y of the top slide, subtracted from the top height
 		ARG 4 topRelativeMaxY
 			COMMENT the maximum block Y of the top slide, subtracted from the top height
+		ARG 5 topValue
 		ARG 6 bottomRelativeMinY
 			COMMENT the minimum block Y of the bottom slide, added to the bottom height
 		ARG 7 bottomRelativeMaxY
 			COMMENT the maximum block Y of the bottom slide, added to the bottom height
+		ARG 8 bottomValue
 	METHOD method_42366 applySurfaceSlides (ZLnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
 		COMMENT Applies the slides for the overworld and the surface world type.
 		COMMENT
@@ -183,6 +191,7 @@ CLASS net/minecraft/class_6954 net/minecraft/world/gen/densityfunction/DensityFu
 		COMMENT @see https://www.minecraft.net/en-us/article/minecraft-26-2-snapshot-5
 		METHOD method_1_5223 selectorFunction (Lnet/minecraft/class_6880;F)Lnet/minecraft/class_6910;
 			ARG 0 noiseParameters
+			ARG 1 scale
 		METHOD method_1_5224 rarityValueMapperType1 (Lnet/minecraft/class_6910;Lnet/minecraft/class_6880;)Lnet/minecraft/class_6910;
 			ARG 0 input
 			ARG 1 noiseParameters

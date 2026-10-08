@@ -7,6 +7,8 @@ CLASS net/minecraft/class_3620 net/minecraft/block/MapColor
 	COMMENT base color. The "rendered color" is internally represented as a byte; the first six bits
 	COMMENT indicate the base color, and the last two bits indicate the brightness. This value is returned
 	COMMENT from {@link MapColor#getRenderColorByte} and is passed to {@link MapColor#getRenderColor}.
+	FIELD field_1_10589 DEFAULT_COLORS Lnet/minecraft/class_1_727;
+	FIELD field_1_10590 TERRACOTTA_COLORS Lnet/minecraft/class_1_727;
 	FIELD field_15976 LIGHT_BLUE_GRAY Lnet/minecraft/class_3620;
 	FIELD field_15977 BROWN Lnet/minecraft/class_3620;
 	FIELD field_15978 GRAY Lnet/minecraft/class_3620;

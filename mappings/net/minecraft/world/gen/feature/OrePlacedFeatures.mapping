@@ -1,4 +1,25 @@
 CLASS net/minecraft/class_6816 net/minecraft/world/gen/feature/OrePlacedFeatures
+	FIELD field_1_11451 ICE_CAVE_ORE_ANDESITE_LOWER Lnet/minecraft/class_5321;
+	FIELD field_1_11452 ICE_CAVE_ORE_ANDESITE_UPPER Lnet/minecraft/class_5321;
+	FIELD field_1_11453 ICE_CAVE_ORE_COAL_LOWER Lnet/minecraft/class_5321;
+	FIELD field_1_11454 ICE_CAVE_ORE_COAL_UPPER Lnet/minecraft/class_5321;
+	FIELD field_1_11455 ICE_CAVE_ORE_COPPER Lnet/minecraft/class_5321;
+	FIELD field_1_11456 ICE_CAVE_ORE_DIAMOND Lnet/minecraft/class_5321;
+	FIELD field_1_11457 ICE_CAVE_ORE_DIAMOND_BURIED Lnet/minecraft/class_5321;
+	FIELD field_1_11458 ICE_CAVE_ORE_DIAMOND_LARGE Lnet/minecraft/class_5321;
+	FIELD field_1_11459 ICE_CAVE_ORE_DIAMOND_MEDIUM Lnet/minecraft/class_5321;
+	FIELD field_1_11460 ICE_CAVE_ORE_DIORITE_LOWER Lnet/minecraft/class_5321;
+	FIELD field_1_11461 ICE_CAVE_ORE_DIORITE_UPPER Lnet/minecraft/class_5321;
+	FIELD field_1_11462 ICE_CAVE_ORE_GOLD Lnet/minecraft/class_5321;
+	FIELD field_1_11463 ICE_CAVE_ORE_GOLD_LOWER Lnet/minecraft/class_5321;
+	FIELD field_1_11464 ICE_CAVE_ORE_GRAVEL Lnet/minecraft/class_5321;
+	FIELD field_1_11465 ICE_CAVE_ORE_IRON_MIDDLE Lnet/minecraft/class_5321;
+	FIELD field_1_11466 ICE_CAVE_ORE_IRON_SMALL Lnet/minecraft/class_5321;
+	FIELD field_1_11467 ICE_CAVE_ORE_IRON_UPPER Lnet/minecraft/class_5321;
+	FIELD field_1_11468 ICE_CAVE_ORE_LAPIS Lnet/minecraft/class_5321;
+	FIELD field_1_11469 ICE_CAVE_ORE_LAPIS_BURIED Lnet/minecraft/class_5321;
+	FIELD field_1_11470 ICE_CAVE_ORE_REDSTONE Lnet/minecraft/class_5321;
+	FIELD field_1_11471 ICE_CAVE_ORE_REDSTONE_LOWER Lnet/minecraft/class_5321;
 	FIELD field_36039 ORE_REDSTONE_LOWER Lnet/minecraft/class_5321;
 	FIELD field_36040 ORE_DIAMOND Lnet/minecraft/class_5321;
 	FIELD field_36041 ORE_DIAMOND_LARGE Lnet/minecraft/class_5321;

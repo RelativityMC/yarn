@@ -2,6 +2,10 @@ CLASS net/minecraft/class_6801 net/minecraft/world/gen/feature/UndergroundFeatur
 	FIELD field_1_3727 ROOTED_SULFUR_SPRING Lnet/minecraft/class_5321;
 	FIELD field_1_5769 SULFUR_SPIKE Lnet/minecraft/class_5321;
 	FIELD field_1_5770 SULFUR_SPIKE_CLUSTER Lnet/minecraft/class_5321;
+	FIELD field_1_11420 ICE_CRYSTAL Lnet/minecraft/class_5321;
+	FIELD field_1_11421 ICICLE_CLUSTER Lnet/minecraft/class_5321;
+	FIELD field_1_11422 LARGE_ICICLE Lnet/minecraft/class_5321;
+	FIELD field_1_11423 SNOW_LAYER Lnet/minecraft/class_5321;
 	FIELD field_35770 MONSTER_ROOM Lnet/minecraft/class_5321;
 	FIELD field_35771 FOSSIL_COAL Lnet/minecraft/class_5321;
 	FIELD field_35772 FOSSIL_DIAMONDS Lnet/minecraft/class_5321;

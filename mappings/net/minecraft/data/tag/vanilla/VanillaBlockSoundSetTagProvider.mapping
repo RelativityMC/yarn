@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_1756 net/minecraft/data/tag/vanilla/VanillaBlockSoundSetTagProvider
+	METHOD <init> (Lnet/minecraft/class_7784;Ljava/util/concurrent/CompletableFuture;)V
+		ARG 1 dataOutput
+		ARG 2 registriesFuture

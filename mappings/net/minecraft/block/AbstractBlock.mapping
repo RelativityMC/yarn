@@ -221,6 +221,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 	COMMENT </ol>
 	FIELD field_1_3773 bounciness F
 	FIELD field_1_7565 fallDistanceReduction F
+	FIELD field_1_11522 sounds Ljava/util/Optional;
 	FIELD field_23154 dynamicBounds Z
 		COMMENT Whether this block's collision shape can change.
 		COMMENT
@@ -266,6 +267,8 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		COMMENT
 		COMMENT @see net.minecraft.resource.featuretoggle.FeatureFlags
 	FIELD field_54005 translationKey Ljava/lang/String;
+	METHOD <init> (Lnet/minecraft/class_4970$class_2251;)V
+		ARG 1 settings
 	METHOD method_1_5240 getWeakRedstonePower (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)I
 		ARG 1 state
 		ARG 2 view
@@ -884,6 +887,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 	CLASS class_2251 Settings
 		FIELD field_1_3774 bounciness F
 		FIELD field_1_7566 fallDistanceReduction F
+		FIELD field_1_11523 sounds Ljava/util/Optional;
 		FIELD field_10660 resistance F
 		FIELD field_10661 randomTicks Z
 		FIELD field_10662 mapColorProvider Ljava/util/function/Function;
@@ -930,6 +934,8 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 			ARG 1 state
 			ARG 2 world
 			ARG 3 pos
+			ARG 4 type
+		METHOD method_1_11183 noSounds ()Lnet/minecraft/class_4970$class_2251;
 		METHOD method_9618 breakInstantly ()Lnet/minecraft/class_4970$class_2251;
 			COMMENT Specifies that a block is broken instantly.
 		METHOD method_9624 dynamicBounds ()Lnet/minecraft/class_4970$class_2251;
@@ -937,6 +943,7 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 			COMMENT By default, block collision bounds are cached for performance.
 			COMMENT By invoking this method, the game will not cache the block collision bounds and instead calculate the collision bounds when needed.
 		METHOD method_9626 sounds (Lnet/minecraft/class_5321;)Lnet/minecraft/class_4970$class_2251;
+			ARG 1 sounds
 		METHOD method_9628 slipperiness (F)Lnet/minecraft/class_4970$class_2251;
 			ARG 1 slipperiness
 		METHOD method_9629 strength (FF)Lnet/minecraft/class_4970$class_2251;
@@ -1017,6 +1024,8 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		METHOD method_51369 solid ()Lnet/minecraft/class_4970$class_2251;
 		METHOD method_51370 notSolid ()Lnet/minecraft/class_4970$class_2251;
 		METHOD method_51371 replaceable ()Lnet/minecraft/class_4970$class_2251;
+		METHOD method_51519 (Lnet/minecraft/class_3620;Lnet/minecraft/class_2680;)Lnet/minecraft/class_3620;
+			ARG 1 state
 		METHOD method_51520 mapColor (Ljava/util/function/Function;)Lnet/minecraft/class_4970$class_2251;
 			ARG 1 mapColorProvider
 		METHOD method_51521 (Lnet/minecraft/class_2680;)Lnet/minecraft/class_3620;
@@ -1092,6 +1101,11 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 			ARG 1 world
 			ARG 2 pos
 			ARG 3 dir
+		METHOD method_1_11180 getSoundGroup ()Ljava/util/Optional;
+		METHOD method_1_11181 getSoundGroupOrEmpty (Lnet/minecraft/class_4538;)Lnet/minecraft/class_1_1769;
+			ARG 1 world
+		METHOD method_1_11182 getSoundGroupEntry (Lnet/minecraft/class_4538;)Ljava/util/Optional;
+			ARG 1 world
 		METHOD method_26165 calcBlockBreakingDelta (Lnet/minecraft/class_1657;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)F
 			ARG 1 player
 			ARG 2 world

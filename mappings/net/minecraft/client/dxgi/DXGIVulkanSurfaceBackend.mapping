@@ -1,0 +1,36 @@
+CLASS net/minecraft/class_1_1770 net/minecraft/client/dxgi/DXGIVulkanSurfaceBackend
+	FIELD field_1_11525 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_11526 commandAllocators Ljava/util/List;
+	FIELD field_1_11527 supportsTearing Z
+	FIELD field_1_11528 configured Z
+	FIELD field_1_11529 sharedHandles Ljava/util/List;
+	FIELD field_1_11530 commandList Lnet/minecraft/class_1_1807;
+	FIELD field_1_11531 commandQueue Lnet/minecraft/class_1_1773;
+	FIELD field_1_11532 device Lnet/minecraft/class_1_1749;
+	FIELD field_1_11534 closableResources Ljava/util/List;
+	FIELD field_1_11535 factory Lnet/minecraft/class_1_1751;
+	FIELD field_1_11537 fence Lnet/minecraft/class_1_1745;
+	FIELD field_1_11538 fenceHandle Lnet/minecraft/class_1_1737;
+	FIELD field_1_11539 fenceValue J
+	FIELD field_1_11540 presentMode Lnet/minecraft/class_1_1314$class_1_774;
+	FIELD field_1_11541 deviceNodeMask I
+	FIELD field_1_11542 height I
+	FIELD field_1_11543 swapChain Lnet/minecraft/class_1_1760;
+	FIELD field_1_11544 width I
+	FIELD field_1_11545 imageMemories Lit/unimi/dsi/fastutil/longs/LongList;
+	FIELD field_1_11546 swapChainImages Lit/unimi/dsi/fastutil/longs/LongList;
+	FIELD field_1_11547 vkSemaphore J
+	FIELD field_1_11548 vulkanDevice Lnet/minecraft/class_1_679;
+	FIELD field_1_11549 frameLatencyWaitableObject Lnet/minecraft/class_1_1737;
+	FIELD field_1_11550 hwnd J
+	METHOD <init> (Lnet/minecraft/class_1_679;J)V
+		ARG 1 vulkanDevice
+		ARG 2 window
+	METHOD method_1_11184 tryEnable (Lorg/lwjgl/vulkan/VkPhysicalDevice;Lnet/minecraft/class_1_1045;)Z
+		ARG 0 vkPhysicalDevice
+		ARG 1 featureSet
+	METHOD method_1_11185 doTryEnable (Lorg/lwjgl/vulkan/VkPhysicalDevice;Lnet/minecraft/class_1_1045;)Z
+		ARG 0 vkPhysicalDevice
+		ARG 1 featureSet
+	METHOD method_1_11186 freeCurrentSwapChain ()V
+	METHOD method_1_11187 shouldEnable ()Z

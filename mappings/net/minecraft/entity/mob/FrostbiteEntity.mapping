@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_1763 net/minecraft/entity/mob/FrostbiteEntity
+	METHOD method_1_11157 createFrostbiteAttributes ()Lnet/minecraft/class_5132$class_5133;
+	METHOD method_1_11158 getMaxIntervalTicks ()I
+	METHOD method_1_11159 getMinIntervalTicks ()I

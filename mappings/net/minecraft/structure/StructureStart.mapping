@@ -20,6 +20,8 @@ CLASS net/minecraft/class_3449 net/minecraft/structure/StructureStart
 		ARG 2 pos
 		ARG 3 references
 		ARG 4 children
+	METHOD method_1_11385 setReferences (I)V
+		ARG 1 references
 	METHOD method_14963 getChildren ()Ljava/util/List;
 	METHOD method_14964 incrementReferences ()V
 	METHOD method_14969 getBoundingBox ()Lnet/minecraft/class_3341;
@@ -39,5 +41,7 @@ CLASS net/minecraft/class_3449 net/minecraft/structure/StructureStart
 	METHOD method_23676 getReferences ()I
 	METHOD method_34000 getPos ()Lnet/minecraft/class_1923;
 	METHOD method_41621 fromNbt (Lnet/minecraft/class_6625;Lnet/minecraft/class_2487;JLnet/minecraft/class_3195;)Lnet/minecraft/class_3449;
+		ARG 0 context
 		ARG 1 nbt
 		ARG 2 seed
+		ARG 4 structure

@@ -1,0 +1,15 @@
+CLASS net/minecraft/class_1_1759 net/minecraft/client/dxgi/D3D12SampleDesc
+	FIELD field_1_11425 FIELD_COUNT Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11426 LAYOUT Ljava/lang/foreign/StructLayout;
+	FIELD field_1_11427 FIELD_QUALITY Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11428 segment Ljava/lang/foreign/MemorySegment;
+	METHOD <init> (Ljava/lang/foreign/Arena;)V
+		ARG 1 arena
+	METHOD <init> (Ljava/lang/foreign/MemorySegment;)V
+		ARG 1 segment
+	METHOD method_1_11127 getCount ()I
+	METHOD method_1_11128 setCount (I)V
+		ARG 1 count
+	METHOD method_1_11129 getQuality ()I
+	METHOD method_1_11130 setQuality (I)V
+		ARG 1 quality

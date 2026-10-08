@@ -31,6 +31,11 @@ CLASS net/minecraft/class_238 net/minecraft/util/math/Box
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
 	METHOD method_1_7585 contractSlightly ()Lnet/minecraft/class_238;
+	METHOD method_1_11011 withDiameters (Lnet/minecraft/class_243;DDD)Lnet/minecraft/class_238;
+		ARG 0 center
+		ARG 1 diameterX
+		ARG 3 diameterY
+		ARG 5 diameterZ
 	METHOD method_989 offset (DDD)Lnet/minecraft/class_238;
 		COMMENT Creates a box that is translated by {@code x}, {@code y}, {@code z} on
 		COMMENT each axis from this box.
@@ -153,8 +158,11 @@ CLASS net/minecraft/class_238 net/minecraft/util/math/Box
 		ARG 0 mutable
 	METHOD method_29968 from (Lnet/minecraft/class_243;)Lnet/minecraft/class_238;
 		ARG 0 pos
-	METHOD method_30048 of (Lnet/minecraft/class_243;DDD)Lnet/minecraft/class_238;
+	METHOD method_30048 withRadii (Lnet/minecraft/class_243;DDD)Lnet/minecraft/class_238;
 		ARG 0 center
+		ARG 1 radiusX
+		ARG 3 radiusY
+		ARG 5 radiusZ
 	METHOD method_35574 withMinX (D)Lnet/minecraft/class_238;
 		COMMENT {@return a new box with the minimum X provided and all other coordinates
 		COMMENT of this box}

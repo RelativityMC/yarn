@@ -4,6 +4,7 @@ CLASS net/minecraft/class_1_350 net/minecraft/client/gui/screen/RestrictionsScre
 	FIELD field_1_2007 restrictions Lnet/minecraft/class_1_317;
 	FIELD field_1_2008 layout Lnet/minecraft/class_8132;
 	FIELD field_1_2009 parent Lnet/minecraft/class_437;
+	FIELD field_1_11778 PERMISSION_KEY_PREFIX Ljava/lang/String;
 	METHOD <init> (Lnet/minecraft/class_437;Lnet/minecraft/class_1_317;)V
 		ARG 1 screen
 		ARG 2 restrictions
@@ -21,3 +22,6 @@ CLASS net/minecraft/class_1_350 net/minecraft/client/gui/screen/RestrictionsScre
 		ARG 1 button
 	METHOD method_1_2438 (Lnet/minecraft/class_1_350;Lnet/minecraft/class_339;)V
 		ARG 1 child
+	METHOD method_1_11438 getReceivePlayerMessagesAllowedOrDeniedText (Lnet/minecraft/class_1_317;Z)Lnet/minecraft/class_2561;
+		ARG 0 restrictions
+		ARG 1 friendsOnly

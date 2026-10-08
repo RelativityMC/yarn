@@ -6,6 +6,9 @@ CLASS net/minecraft/class_7887 net/minecraft/registry/BuiltinRegistries
 		ARG 0 worldRegistries
 	METHOD method_1_7866 (Lnet/minecraft/class_8944;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_8490;)V
 		ARG 2 lootDataType
+	METHOD method_1_7867 (Ljava/lang/String;Lnet/minecraft/class_8942$class_11337;)V
+		ARG 0 name
+		ARG 1 error
 	METHOD method_1_7868 validateReloadable (Lnet/minecraft/class_7225$class_7874;)V
 		ARG 0 registries
 	METHOD method_46817 createWorldRegistries ()Lnet/minecraft/class_7225$class_7874;

@@ -21,6 +21,7 @@ CLASS net/minecraft/class_315 net/minecraft/client/option/GameOptions
 	FIELD field_1_10047 ctrlClickEmulatesRightClick Lnet/minecraft/class_7172;
 	FIELD field_1_10353 MAC_FULLSCREEN_MENU_VISIBILITY_TOOLTIP Lnet/minecraft/class_2561;
 	FIELD field_1_10354 macFullscreenMenuVisibility Lnet/minecraft/class_7172;
+	FIELD field_1_10905 otherPlayersKey Lnet/minecraft/class_304;
 	FIELD field_1814 cloudRenderMode Lnet/minecraft/class_7172;
 	FIELD field_1815 hideServerAddress Z
 	FIELD field_1816 smoothCameraKey Lnet/minecraft/class_304;

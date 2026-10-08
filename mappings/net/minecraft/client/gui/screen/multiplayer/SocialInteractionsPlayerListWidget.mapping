@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_5521 net/minecraft/client/gui/screen/multiplayer/SocialInteractionsPlayerListWidget
 	FIELD field_1_11826 entryComparator Ljava/util/Comparator;
+	FIELD field_1_11827 friendSearchManager Lnet/minecraft/class_1_1793;
 	FIELD field_1_11828 playerInteractionsTab Lnet/minecraft/class_1_1809;
 	FIELD field_1_11829 client Lnet/minecraft/class_310;
 	FIELD field_26867 parent Lnet/minecraft/class_5522;
@@ -7,12 +8,16 @@ CLASS net/minecraft/class_5521 net/minecraft/client/gui/screen/multiplayer/Socia
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_5522;Lnet/minecraft/class_1_1793;Lnet/minecraft/class_1_1789;)V
 		ARG 1 client
 		ARG 2 parent
+		ARG 3 friendSearchManager
+		ARG 4 comparator
 	METHOD method_1_11460 startsWithValidCharacter (Ljava/lang/String;)Z
 		ARG 0 playerName
 	METHOD method_1_11461 (Lnet/minecraft/class_5519;)Ljava/lang/Boolean;
 		ARG 0 entry
 	METHOD method_1_11462 setPlayerInteractionsTab (Lnet/minecraft/class_1_1809;)V
 		ARG 1 playerInteractionsTab
+	METHOD method_1_11463 setEntries (Ljava/util/Collection;)V
+		ARG 1 playerEntries
 	METHOD method_31345 setPlayerOnline (Lnet/minecraft/class_640;Lnet/minecraft/class_5522$class_5523;)V
 		ARG 1 player
 		ARG 2 tab
@@ -20,11 +25,13 @@ CLASS net/minecraft/class_5521 net/minecraft/client/gui/screen/multiplayer/Socia
 		ARG 1 uuid
 	METHOD method_31348 isEmpty ()Z
 	METHOD method_31393 update (Ljava/util/Collection;Z)V
-		ARG 1 uuids
+		ARG 1 playerIds
 		ARG 2 includeOffline
 	METHOD method_44699 setPlayers (Ljava/util/Collection;Ljava/util/Map;)V
 		ARG 1 playerUuids
 		ARG 2 entriesByUuids
+	METHOD method_44758 (Ljava/util/UUID;Lcom/mojang/authlib/GameProfile;Ljava/util/UUID;)Lnet/minecraft/class_5519;
+		ARG 3 uuid1
 	METHOD method_44759 markOfflineMembers (Ljava/util/Map;Z)V
 		ARG 1 entries
 		ARG 2 includeOffline

@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_1059 net/minecraft/client/texture/SpriteAtlasTexture
+	FIELD field_1_11434 texture Lnet/minecraft/class_1_1777;
+	FIELD field_1_11435 textureManager Lnet/minecraft/class_1060;
 	FIELD field_5275 BLOCK_ATLAS_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_5277 spritesToLoad Ljava/util/List;
 	FIELD field_5278 LOGGER Lorg/slf4j/Logger;
@@ -15,6 +17,10 @@ CLASS net/minecraft/class_1059 net/minecraft/client/texture/SpriteAtlasTexture
 	FIELD field_64246 mipTextures [Lnet/minecraft/class_1_1330;
 	FIELD field_64247 uniformBuffer Lnet/minecraft/class_1_1211;
 	FIELD field_64467 ITEMS_ATLAS_TEXTURE Lnet/minecraft/class_2960;
+	METHOD <init> (Lnet/minecraft/class_1060;Lnet/minecraft/class_2960;)V
+		ARG 1 textureManager
+		ARG 2 id
+	METHOD method_1_11136 getTexture ()Lnet/minecraft/class_1_1777;
 	METHOD method_4601 clear ()V
 	METHOD method_4608 getSprite (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1058;
 		ARG 1 id
@@ -23,6 +29,8 @@ CLASS net/minecraft/class_1059 net/minecraft/client/texture/SpriteAtlasTexture
 	METHOD method_45848 create (Lnet/minecraft/class_7766$class_7767;)V
 		ARG 1 stitchResult
 	METHOD method_45849 dumpAtlasInfos (Lnet/minecraft/class_2960;Ljava/nio/file/Path;)V
+		ARG 1 id
+		ARG 2 directory
 	METHOD method_45850 getMaxTextureSize ()I
 	METHOD method_72240 createTexture (III)V
 		ARG 1 width

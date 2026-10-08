@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_1_1811
-	METHOD method_1_11432 (Lnet/minecraft/class_1923;)Ljava/util/concurrent/CompletableFuture;
-		ARG 1 chunkPos

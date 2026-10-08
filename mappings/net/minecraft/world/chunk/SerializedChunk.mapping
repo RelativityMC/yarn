@@ -19,7 +19,8 @@ CLASS net/minecraft/class_2852 net/minecraft/world/chunk/SerializedChunk
 		ARG 2 error
 	METHOD method_1_10786 (Lnet/minecraft/class_1_1691$class_1_1692;ILnet/minecraft/class_7522;)V
 		ARG 2 noiseBiomes
-	METHOD method_1_11434 (Lnet/minecraft/class_1_1811;Lnet/minecraft/class_1923;)Ljava/util/concurrent/CompletableFuture;
+	METHOD method_1_11434 read (Lnet/minecraft/class_1_1811;Lnet/minecraft/class_1923;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 chunkIoContext
 		ARG 1 chunkPos
 	METHOD method_12385 writeStructures (Lnet/minecraft/class_6625;Lnet/minecraft/class_1923;Ljava/util/Map;Ljava/util/Map;)Lnet/minecraft/class_2487;
 		ARG 0 context
@@ -88,5 +89,12 @@ CLASS net/minecraft/class_2852 net/minecraft/world/chunk/SerializedChunk
 		ARG 2 error
 	METHOD method_68298 (Lnet/minecraft/class_1923;ILjava/lang/String;)V
 		ARG 2 error
+	CLASS class_1_1812 Structures
+		METHOD method_1_11435 (Lnet/minecraft/class_2378;Lit/unimi/dsi/fastutil/objects/Object2IntMap;Ljava/lang/String;Lnet/minecraft/class_2520;)V
+			ARG 2 key
+			ARG 3 value
+		METHOD method_1_11436 (Lit/unimi/dsi/fastutil/objects/Object2IntMap;Lnet/minecraft/class_3195;Lnet/minecraft/class_2487;)V
+			ARG 2 valueCompound
+		METHOD method_1_11437 getReferencesByStructure ()Lit/unimi/dsi/fastutil/objects/Object2IntMap;
 	CLASS class_9314 ChunkLoadingException
 	CLASS class_9898 SectionData

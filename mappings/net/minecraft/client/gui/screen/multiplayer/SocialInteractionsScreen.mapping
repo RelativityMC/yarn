@@ -5,8 +5,15 @@ CLASS net/minecraft/class_5522 net/minecraft/client/gui/screen/multiplayer/Socia
 	FIELD field_1_11797 TAB_BLOCKED_TEXT Lnet/minecraft/class_2561;
 	FIELD field_1_11801 TAB_MUTED_TEXT Lnet/minecraft/class_2561;
 	FIELD field_1_11802 TITLE_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11804 friendTabButton Lnet/minecraft/class_1_992;
+	FIELD field_1_11805 playerInteractionsTabAll Lnet/minecraft/class_1_1809;
+	FIELD field_1_11806 playerInteractionsTabBlocked Lnet/minecraft/class_1_1809;
+	FIELD field_1_11807 tabContents Lnet/minecraft/class_8667;
+	FIELD field_1_11808 friendSearchManager Lnet/minecraft/class_1_1793;
 	FIELD field_1_11809 comparator Lnet/minecraft/class_1_1789;
+	FIELD field_1_11810 playerInteractionsTabMuted Lnet/minecraft/class_1_1809;
 	FIELD field_1_11811 tabManager Lnet/minecraft/class_8088;
+	FIELD field_1_11812 tabNavigation Lnet/minecraft/class_8089;
 	FIELD field_1_11813 titleWidget Lnet/minecraft/class_7842;
 	FIELD field_26871 playerCount I
 	FIELD field_26882 playerList Lnet/minecraft/class_5521;
@@ -19,6 +26,12 @@ CLASS net/minecraft/class_5522 net/minecraft/client/gui/screen/multiplayer/Socia
 	METHOD method_1_11444 unloadTab (Lnet/minecraft/class_8087;)V
 		ARG 1 tab
 	METHOD method_1_11445 getWidth ()I
+	METHOD method_1_11446 createPlayerInteractionsHeader ()Lnet/minecraft/class_8667;
+	METHOD method_1_11447 (Lnet/minecraft/class_5676;Lnet/minecraft/class_1_1789$class_1_1790;)V
+		ARG 1 button
+		ARG 2 value
+	METHOD method_1_11448 (Ljava/lang/String;)V
+		ARG 1 text
 	METHOD method_1_11449 (Lnet/minecraft/class_5522;Lnet/minecraft/class_339;)V
 		ARG 1 widget
 	METHOD method_1_11450 (Lnet/minecraft/class_5522;Lnet/minecraft/class_339;)V
@@ -33,4 +46,6 @@ CLASS net/minecraft/class_5522 net/minecraft/client/gui/screen/multiplayer/Socia
 	METHOD method_31355 setPlayerOffline (Ljava/util/UUID;)V
 		ARG 1 uuid
 	METHOD method_31362 getSearchBoxX ()I
+	METHOD method_57766 (Lnet/minecraft/class_5522;Lnet/minecraft/class_339;)V
+		ARG 1 child
 	CLASS class_5523 Tab

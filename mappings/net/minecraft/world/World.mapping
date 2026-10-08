@@ -60,6 +60,19 @@ CLASS net/minecraft/class_1937 net/minecraft/world/World
 	METHOD method_1_7594 getEntityMotionRate ()F
 	METHOD method_1_10517 (Lnet/minecraft/class_1657;)Ljava/lang/String;
 		ARG 0 player
+	METHOD method_1_11013 playSoundAtBlockCenterClient (Lnet/minecraft/class_2338;Lnet/minecraft/class_6880;Lnet/minecraft/class_3419;FFZ)V
+		ARG 1 pos
+		ARG 2 sound
+		ARG 3 category
+		ARG 4 volume
+		ARG 5 pitch
+		ARG 6 useDistance
+	METHOD method_1_11014 playSoundFromEntityClient (Lnet/minecraft/class_1297;Lnet/minecraft/class_6880;Lnet/minecraft/class_3419;FF)V
+		ARG 1 entity
+		ARG 2 sound
+		ARG 3 category
+		ARG 4 volume
+		ARG 5 pitch
 	METHOD method_8413 updateListeners (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;I)V
 		ARG 1 pos
 		ARG 2 oldState

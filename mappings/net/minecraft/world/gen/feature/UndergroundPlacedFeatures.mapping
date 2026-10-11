@@ -2,6 +2,10 @@ CLASS net/minecraft/class_6812 net/minecraft/world/gen/feature/UndergroundPlaced
 	FIELD field_1_3770 ROOTED_SULFUR_SPRING Lnet/minecraft/class_5321;
 	FIELD field_1_5801 SULFUR_SPIKE Lnet/minecraft/class_5321;
 	FIELD field_1_5802 SULFUR_SPIKE_CLUSTER Lnet/minecraft/class_5321;
+	FIELD field_1_11492 ICE_CRYSTALS Lnet/minecraft/class_5321;
+	FIELD field_1_11493 ICICLE_CLUSTER Lnet/minecraft/class_5321;
+	FIELD field_1_11494 LARGE_ICICLE Lnet/minecraft/class_5321;
+	FIELD field_1_11495 SNOW_LAYERS Lnet/minecraft/class_5321;
 	FIELD field_35980 MONSTER_ROOM Lnet/minecraft/class_5321;
 	FIELD field_35981 MONSTER_ROOM_DEEP Lnet/minecraft/class_5321;
 	FIELD field_35982 FOSSIL_UPPER Lnet/minecraft/class_5321;

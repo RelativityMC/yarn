@@ -1,1 +1,25 @@
 CLASS net/minecraft/class_7539 net/minecraft/client/gui/screen/report/DiscardWarningScreen
+	FIELD field_1_11830 BUTTON_ICON Lnet/minecraft/class_2960;
+	FIELD field_1_11836 buttonPopulator Ljava/util/function/Consumer;
+	FIELD field_1_11837 body Lnet/minecraft/class_8667;
+	FIELD field_1_11838 parent Lnet/minecraft/class_437;
+	FIELD field_1_11839 root Lnet/minecraft/class_8132;
+	FIELD field_1_11840 content Lnet/minecraft/class_2561;
+	METHOD <init> (Lnet/minecraft/class_437;Lnet/minecraft/class_2561;Lnet/minecraft/class_2561;Ljava/util/function/Consumer;)V
+		ARG 1 parent
+		ARG 2 title
+		ARG 3 content
+		ARG 4 buttonPopulator
+	METHOD method_1_11464 addButton (Lnet/minecraft/class_2561;ZLnet/minecraft/class_4185$class_4241;)Lnet/minecraft/class_4185;
+		ARG 1 text
+		ARG 2 icon
+		ARG 3 onPress
+	METHOD method_1_11465 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_1_11466 (Lnet/minecraft/class_7539;Lnet/minecraft/class_339;)V
+		ARG 1 child
+	CLASS class_1_1820 ButtonFactory
+		METHOD method_1_11467 create (Lnet/minecraft/class_2561;ZLnet/minecraft/class_4185$class_4241;)Lnet/minecraft/class_4185;
+			ARG 1 text
+			ARG 2 icon
+			ARG 3 onPress

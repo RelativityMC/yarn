@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_1_1807 net/minecraft/client/dxgi/D3D12CommandList
+	FIELD field_1_11739 close Ljava/lang/invoke/MethodHandle;
+	FIELD field_1_11740 COPY_RESOURCE Ljava/lang/invoke/MethodHandle;
+	FIELD field_1_11741 reset Ljava/lang/invoke/MethodHandle;
+	METHOD method_1_11398 copyResource (Lnet/minecraft/class_1_1758;Lnet/minecraft/class_1_1758;)V
+		ARG 1 dstResource
+		ARG 2 srcResource
+	METHOD method_1_11399 close ()I
+	METHOD method_1_11400 reset (Lnet/minecraft/class_1_1791;)I
+		ARG 1 allocator

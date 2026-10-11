@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_5726 net/minecraft/world/gen/feature/util/DripstoneHelper
+CLASS net/minecraft/class_5726 net/minecraft/world/gen/feature/util/SpeleothemHelper
 	METHOD method_1_4611 canSupportSpeleothem (Lnet/minecraft/class_2680;Lnet/minecraft/class_2248;Lnet/minecraft/class_6885;)Z
 		ARG 0 state
 		ARG 1 baseBlock
@@ -12,6 +12,22 @@ CLASS net/minecraft/class_5726 net/minecraft/world/gen/feature/util/DripstoneHel
 		ARG 1 pos
 		ARG 2 baseBlock
 		ARG 3 replaceableBlocks
+	METHOD method_1_11326 placeSpeleothem (Lnet/minecraft/class_2350;IZLjava/util/function/Consumer;Lnet/minecraft/class_2248;Lnet/minecraft/class_5726$class_1_1795;)V
+		ARG 0 direction
+		ARG 1 height
+		ARG 2 merge
+		ARG 3 placeCallback
+		ARG 4 pointedBlock
+		ARG 5 baseBlockTransformer
+	METHOD method_1_11327 generateSpeleothem (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;IZLnet/minecraft/class_2248;Lnet/minecraft/class_2248;Lnet/minecraft/class_6885;)V
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 direction
+		ARG 3 height
+		ARG 4 merge
+		ARG 5 baseBlock
+		ARG 6 pointedBlock
+		ARG 7 replaceableBlocks
 	METHOD method_33005 scaleHeightFromRadius (DDDD)D
 		ARG 0 radius
 		ARG 2 scale
@@ -35,6 +51,7 @@ CLASS net/minecraft/class_5726 net/minecraft/world/gen/feature/util/DripstoneHel
 		ARG 5 baseBlock
 		ARG 6 pointedBlock
 		ARG 7 replaceableBlocks
+		ARG 8 baseBlockTransformer
 	METHOD method_33012 getDripstoneThickness (Lnet/minecraft/class_2350;IZLjava/util/function/Consumer;Lnet/minecraft/class_2248;)V
 		ARG 0 direction
 		ARG 1 height
@@ -54,3 +71,13 @@ CLASS net/minecraft/class_5726 net/minecraft/world/gen/feature/util/DripstoneHel
 		ARG 0 state
 	METHOD method_40074 cannotGenerate (Lnet/minecraft/class_2680;)Z
 		ARG 0 state
+	CLASS class_1_1795 BaseBlockTransformer
+		FIELD field_1_11647 name Ljava/lang/String;
+		FIELD field_1_11648 stateTransformer Ljava/util/function/UnaryOperator;
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Ljava/util/function/UnaryOperator;)V
+			ARG 3 name
+			ARG 4 stateTransformer
+		METHOD method_1_11329 (Lnet/minecraft/class_2680;)Lnet/minecraft/class_2680;
+			ARG 0 state
+		METHOD method_1_11330 apply (Lnet/minecraft/class_2680;)Lnet/minecraft/class_2680;
+			ARG 1 state

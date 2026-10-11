@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_1_1793 net/minecraft/friend/gui/FriendSearchManager
+	FIELD field_1_11639 search Ljava/lang/String;
+	FIELD field_1_11640 onSearchChanged Ljava/lang/Runnable;
+	METHOD <init> (Ljava/lang/Runnable;)V
+		ARG 1 onSearchChanged
+	METHOD method_1_11321 filter (Ljava/util/List;)V
+		ARG 1 entries
+	METHOD method_1_11322 isSearchEmpty ()Z
+	METHOD method_1_11323 (Lnet/minecraft/class_1_1008;)Z
+		ARG 1 entry
+	METHOD method_1_11324 playerNameMatchesSearch (Ljava/lang/String;)Z
+		ARG 1 playerName
+	METHOD method_1_11325 setSearch (Ljava/lang/String;)V
+		ARG 1 search

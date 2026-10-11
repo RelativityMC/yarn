@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_1810 net/minecraft/client/texture/MipmappedTextureProvider
+	FIELD field_1_11773 maxMipmap I
+	METHOD <init> (I)V
+		ARG 1 maxMipmap
+	METHOD method_1_11427 getMaxMipmapLevel (II)I
+		ARG 1 width
+		ARG 2 height

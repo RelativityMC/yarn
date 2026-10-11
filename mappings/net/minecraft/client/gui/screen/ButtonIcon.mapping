@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_1_1783 net/minecraft/client/gui/screen/ButtonIcon
+	METHOD <init> (Lnet/minecraft/class_2960;I)V
+		ARG 1 spriteId
+		ARG 2 size
+	METHOD <init> (Lnet/minecraft/class_2960;II)V
+		ARG 1 spriteId
+		ARG 2 width
+		ARG 3 height
+	METHOD method_1_11268 drawOn (Lnet/minecraft/class_339;Lnet/minecraft/class_332;)V
+		ARG 1 widget
+		ARG 2 context
+	METHOD method_1_11269 drawAt (Lnet/minecraft/class_339;Lnet/minecraft/class_332;II)V
+		ARG 1 widget
+		ARG 2 context
+		ARG 3 x
+		ARG 4 y

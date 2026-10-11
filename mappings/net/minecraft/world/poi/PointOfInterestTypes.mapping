@@ -15,6 +15,10 @@ CLASS net/minecraft/class_7477 net/minecraft/world/poi/PointOfInterestTypes
 	METHOD method_43992 registerAndGetDefault (Lnet/minecraft/class_2378;)Lnet/minecraft/class_6880;
 		ARG 0 registry
 	METHOD method_43994 of (Lnet/minecraft/class_5321;Ljava/util/Set;II)Lnet/minecraft/class_6880;
+		ARG 0 key
+		ARG 1 blockStates
+		ARG 2 ticketCount
+		ARG 3 searchDistance
 	METHOD method_43995 (Lnet/minecraft/class_2248;)Ljava/util/stream/Stream;
 		ARG 0 block
 	METHOD method_43996 (Lnet/minecraft/class_2680;)Z

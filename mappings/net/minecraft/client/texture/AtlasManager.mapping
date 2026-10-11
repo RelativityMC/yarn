@@ -9,6 +9,9 @@ CLASS net/minecraft/class_11697 net/minecraft/client/texture/AtlasManager
 	METHOD <init> (Lnet/minecraft/class_1060;I)V
 		ARG 1 textureManager
 		ARG 2 mipmapLevels
+	METHOD method_1_11289 dumpAtlasInfos (Ljava/nio/file/Path;)V
+		ARG 1 directory
+	METHOD method_1_11290 tickAnimatedSprites ()V
 	METHOD method_73024 setMipmapLevels (I)V
 		ARG 1 mipmapLevels
 	METHOD method_73025 getAtlasTexture (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1059;
@@ -31,6 +34,7 @@ CLASS net/minecraft/class_11697 net/minecraft/client/texture/AtlasManager
 	METHOD method_76671 logDuplicates (Lnet/minecraft/class_11697$class_11700;)V
 		ARG 1 stitch
 	METHOD method_76672 (Ljava/util/Map;Lnet/minecraft/class_1_310;Lnet/minecraft/class_1058;)V
+		ARG 1 spriteId
 		ARG 2 sprite
 	CLASS class_7772 Entry
 		FIELD comp_4557 metadata Lnet/minecraft/class_11697$class_11698;

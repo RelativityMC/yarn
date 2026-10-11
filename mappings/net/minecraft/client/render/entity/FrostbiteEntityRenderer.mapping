@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_1776 net/minecraft/client/render/entity/FrostbiteEntityRenderer
+	FIELD field_1_11593 BABY_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_11594 TEXTURE Lnet/minecraft/class_2960;

@@ -47,6 +47,9 @@ CLASS net/minecraft/class_4717 net/minecraft/client/gui/screen/ChatInputSuggesto
 	METHOD method_1_2348 setSendPermissions (ZZ)V
 		ARG 1 canSendMessages
 		ARG 2 canSendCommands
+	METHOD method_1_11242 getSuggestionsX (II)I
+		ARG 1 startIndex
+		ARG 2 suggestionsWidth
 	METHOD method_23920 show (Z)V
 		ARG 1 narrateFirstSuggestion
 	METHOD method_23921 mouseScrolled (D)Z

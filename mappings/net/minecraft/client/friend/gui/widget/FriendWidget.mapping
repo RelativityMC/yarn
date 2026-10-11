@@ -1,4 +1,27 @@
 CLASS net/minecraft/class_1_929 net/minecraft/client/friend/gui/widget/FriendWidget
-	FIELD field_1_6558 presenceStatusText Lnet/minecraft/class_1_1808;
-	METHOD method_1_5676 getSortOrder ()I
-	METHOD method_1_6396 setPresenceStatus (Lcom/mojang/authlib/services/response/PresenceResponse;)V
+	FIELD field_1_6558 presenceStatusWidget Lnet/minecraft/class_1_1808;
+	FIELD field_1_11483 ALPHABETICAL_COMPARATOR Ljava/util/Comparator;
+	FIELD field_1_11485 PLAYER_OPTIONS_TOOLTIP Lnet/minecraft/class_7919;
+	FIELD field_1_11486 PRESENCE_COMPARATOR Ljava/util/Comparator;
+	FIELD field_1_11487 PROFILE_BUTTON_TEXTURES Lnet/minecraft/class_8666;
+	FIELD field_1_11488 profileButton Lnet/minecraft/class_4185;
+	METHOD <init> (Lnet/minecraft/class_310;ILjava/util/UUID;Ljava/lang/String;Lcom/mojang/authlib/services/response/PresenceResponse;Lnet/minecraft/class_5520$class_1_1800;Ljava/lang/Runnable;)V
+		ARG 1 client
+		ARG 2 width
+		ARG 3 playerId
+		ARG 4 playerName
+		ARG 5 presenceResponse
+		ARG 6 visibility
+		ARG 7 onProfileButton
+	METHOD <init> (Lnet/minecraft/class_310;ILjava/util/UUID;Ljava/lang/String;Lnet/minecraft/class_1_1765;Ljava/lang/Runnable;)V
+		ARG 1 client
+		ARG 2 width
+		ARG 3 playerId
+		ARG 4 playerName
+		ARG 5 userStatus
+		ARG 6 onProfileButton
+	METHOD method_1_5676 getPresenceOrder ()I
+	METHOD method_1_6396 onPresenceResponse (Lcom/mojang/authlib/services/response/PresenceResponse;)V
+		ARG 1 presenceResponse
+	METHOD method_1_11169 (Ljava/lang/Runnable;Lnet/minecraft/class_4185;)V
+		ARG 1 button

@@ -1,0 +1,20 @@
+CLASS net/minecraft/class_1_1794 net/minecraft/client/gui/widget/QuitButtonWidget
+	FIELD field_1_11641 DRAFT_REPORT_ICON Lnet/minecraft/class_1_1783;
+	FIELD field_1_11642 draftReportTooltip Lnet/minecraft/class_7919;
+	FIELD field_1_11643 willBeLostOnQuit Ljava/util/function/Predicate;
+	METHOD <init> (IIIILnet/minecraft/class_2561;Lnet/minecraft/class_4185$class_4241;Lnet/minecraft/class_7919;Ljava/util/function/Predicate;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+		ARG 5 message
+		ARG 6 onPress
+		ARG 7 draftReportTooltip
+		ARG 8 willBeLostOnQuit
+	METHOD <init> (IILnet/minecraft/class_2561;Lnet/minecraft/class_4185$class_4241;Lnet/minecraft/class_7919;Ljava/util/function/Predicate;)V
+		ARG 1 width
+		ARG 2 height
+		ARG 3 message
+		ARG 4 onPress
+		ARG 5 draftReportTooltip
+		ARG 6 willBeLostOnQuit

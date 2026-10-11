@@ -1,0 +1,29 @@
+CLASS net/minecraft/class_1_1728 net/minecraft/client/dxgi/Guid
+	FIELD field_1_10956 D3D12_COMMAND_ALLOCATOR Lnet/minecraft/class_1_1728;
+	FIELD field_1_10957 D3D12_COMMAND_LIST Lnet/minecraft/class_1_1728;
+	FIELD field_1_10959 D3D12_COMMAND_QUEUE Lnet/minecraft/class_1_1728;
+	FIELD field_1_10989 D3D12_DEVICE Lnet/minecraft/class_1_1728;
+	FIELD field_1_11009 D3D12_FENCE Lnet/minecraft/class_1_1728;
+	FIELD field_1_11043 D3D12_COMMITTED_RESOURCE Lnet/minecraft/class_1_1728;
+	FIELD field_1_11069 D3D12_ADAPTER Lnet/minecraft/class_1_1728;
+	FIELD field_1_11082 DXGI_FACTORY Lnet/minecraft/class_1_1728;
+	METHOD <init> (IIIIIIIIIII)V
+		ARG 1 a
+		ARG 2 b
+		ARG 3 c
+		ARG 4 d
+		ARG 5 e
+		ARG 6 f
+		ARG 7 g
+		ARG 8 h
+		ARG 9 i
+		ARG 10 j
+		ARG 11 k
+	METHOD method_1_11020 toMemorySegment (Ljava/lang/foreign/Arena;)Ljava/lang/foreign/MemorySegment;
+		ARG 1 arena
+	METHOD method_1_11021 assertUByteInRange (I)V
+		ARG 0 n
+	METHOD method_1_11022 assertUShortInRange (I)V
+		ARG 0 n
+	METHOD method_1_11023 write (Ljava/lang/foreign/MemorySegment;)V
+		ARG 1 memorySegment

@@ -8,6 +8,8 @@ CLASS net/minecraft/class_1_1008 net/minecraft/client/friend/gui/widget/FriendLi
 	METHOD <init> (Lnet/minecraft/class_310;ILjava/util/UUID;Ljava/lang/String;)V
 		ARG 1 client
 		ARG 2 width
+		ARG 3 playerId
+		ARG 4 playerName
 	METHOD method_1_6129 addChild (Lnet/minecraft/class_339;)V
 		ARG 1 widget
 	METHOD method_1_6130 update ()V
@@ -17,3 +19,10 @@ CLASS net/minecraft/class_1_1008 net/minecraft/client/friend/gui/widget/FriendLi
 	METHOD method_1_6133 (Lnet/minecraft/class_2561;Ljava/util/function/Supplier;)Lnet/minecraft/class_5250;
 		ARG 1 textSupplier
 	METHOD method_1_6413 getPlayerId ()Ljava/util/UUID;
+	METHOD method_1_11470 renderSkin (Lnet/minecraft/class_332;IIF)V
+		ARG 1 context
+		ARG 2 mouseX
+		ARG 3 mouseY
+		ARG 4 deltaTicks
+	METHOD method_1_11471 getTextHeight ()I
+	METHOD method_1_11472 getPlayerName ()Ljava/lang/String;

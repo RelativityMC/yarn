@@ -1,0 +1,50 @@
+CLASS net/minecraft/class_1_1774 net/minecraft/client/dxgi/D3D12ResourceDesc
+	FIELD field_1_11561 FIELD_ALIGNMENT Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11562 FIELD_DEPTH_OR_ARRAY_STRIDE Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11563 FIELD_DIMENSION Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11564 FIELD_FLAGS Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11565 FIELD_FORMAT Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11566 FIELD_HEIGHT Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11567 LAYOUT Ljava/lang/foreign/StructLayout;
+	FIELD field_1_11568 FIELD_LAYOUT Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11569 FIELD_MIP_LEVELS Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11570 FIELD_NODE_MASK Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11571 FIELD_SAMPLE_DESC_OFFSET J
+	FIELD field_1_11572 FIELD_WIDTH Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11573 segment Ljava/lang/foreign/MemorySegment;
+	METHOD <init> (Ljava/lang/foreign/Arena;)V
+		ARG 1 arena
+	METHOD <init> (Ljava/lang/foreign/MemorySegment;)V
+		ARG 1 segment
+	METHOD method_1_11198 getSegment ()Ljava/lang/foreign/MemorySegment;
+	METHOD method_1_11199 getAlignment ()I
+	METHOD method_1_11200 setAlignment (I)V
+		ARG 1 alignment
+	METHOD method_1_11201 getDepthOrArrayStride ()S
+	METHOD method_1_11202 setDepthOrArrayStride (S)V
+		ARG 1 depthOrArrayStride
+	METHOD method_1_11203 getDimension ()I
+	METHOD method_1_11204 setDimension (I)V
+		ARG 1 dimension
+	METHOD method_1_11205 getFlags ()I
+	METHOD method_1_11206 setFlags (I)V
+		ARG 1 flags
+	METHOD method_1_11207 getFormat ()I
+	METHOD method_1_11208 setFormat (I)V
+		ARG 1 format
+	METHOD method_1_11209 getHeight ()I
+	METHOD method_1_11210 setHeight (I)V
+		ARG 1 height
+	METHOD method_1_11211 getLayout ()I
+	METHOD method_1_11212 setLayout (I)V
+		ARG 1 layout
+	METHOD method_1_11213 getMipLevels ()S
+	METHOD method_1_11214 setMipLevels (S)V
+		ARG 1 mipLevels
+	METHOD method_1_11215 getNodeMask ()I
+	METHOD method_1_11216 setNodeMask (I)V
+		ARG 1 nodeMask
+	METHOD method_1_11217 getSampleDesc ()Lnet/minecraft/class_1_1759;
+	METHOD method_1_11218 getWidth ()J
+	METHOD method_1_11219 setWidth (J)V
+		ARG 1 width

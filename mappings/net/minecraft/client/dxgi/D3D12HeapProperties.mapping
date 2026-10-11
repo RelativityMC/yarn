@@ -1,0 +1,28 @@
+CLASS net/minecraft/class_1_1785 net/minecraft/client/dxgi/D3D12HeapProperties
+	FIELD field_1_11609 FIELD_CPU_PAGE_PROPERTY Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11610 FIELD_CREATION_NODE_MASK Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11611 LAYOUT Ljava/lang/foreign/StructLayout;
+	FIELD field_1_11612 FIELD_MEMORY_POOL_PREFERENCE Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11613 FIELD_TYPE Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11614 FIELD_VISIBLE_NODE_MASK Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11615 segment Ljava/lang/foreign/MemorySegment;
+	METHOD <init> (Ljava/lang/foreign/Arena;)V
+		ARG 1 arena
+	METHOD <init> (Ljava/lang/foreign/MemorySegment;)V
+		ARG 1 segment
+	METHOD method_1_11274 getSegment ()Ljava/lang/foreign/MemorySegment;
+	METHOD method_1_11275 getCpuPageProperty ()I
+	METHOD method_1_11276 setCpuPageProperty (I)V
+		ARG 1 cpuPageProperty
+	METHOD method_1_11277 getCreationNodeMask ()I
+	METHOD method_1_11278 setCreationNodeMask (I)V
+		ARG 1 creationNodeMask
+	METHOD method_1_11279 getMemoryPoolPreference ()I
+	METHOD method_1_11280 setMemoryPoolPreference (I)V
+		ARG 1 memoryPoolPreference
+	METHOD method_1_11281 getType ()I
+	METHOD method_1_11282 setType (I)V
+		ARG 1 type
+	METHOD method_1_11283 getVisibleNodeMask ()I
+	METHOD method_1_11284 setVisibleNodeMask (I)V
+		ARG 1 visibleNodeMask

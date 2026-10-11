@@ -8,6 +8,13 @@ CLASS net/minecraft/class_5478 net/minecraft/world/biome/OverworldBiomeCreator
 	METHOD method_1_6828 createDappledForest (Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;)Lnet/minecraft/class_1959;
 		ARG 0 featureLookup
 		ARG 1 carverLookup
+	METHOD method_1_11124 addBasicFeatures (Lnet/minecraft/class_5485$class_5495;ZZ)V
+		ARG 0 builder
+		ARG 1 addVegetation
+		ARG 2 addDirtAndGranite
+	METHOD method_1_11125 createIceCaves (Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;)Lnet/minecraft/class_1959;
+		ARG 0 featureLookup
+		ARG 1 carverLookup
 	METHOD method_30683 createJungle (Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;)Lnet/minecraft/class_1959;
 		ARG 0 featureLookup
 		ARG 1 carverLookup
@@ -146,3 +153,4 @@ CLASS net/minecraft/class_5478 net/minecraft/world/biome/OverworldBiomeCreator
 	METHOD method_75848 createColdPeaks (Lnet/minecraft/class_7871;Lnet/minecraft/class_7871;I)Lnet/minecraft/class_1959$class_1960;
 		ARG 0 featureLookup
 		ARG 1 carverLookup
+		ARG 2 frostbiteWeight

@@ -1,0 +1,36 @@
+CLASS net/minecraft/class_1_1796 net/minecraft/client/friend/FriendActionManager
+	FIELD field_1_11657 GENERIC_ERROR_TOAST_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11658 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_11659 client Lnet/minecraft/class_310;
+	FIELD field_1_11660 pendingActions Ljava/util/Map;
+	FIELD field_1_11661 onActionFailed Ljava/lang/Runnable;
+	FIELD field_1_11662 beforeAction Ljava/lang/Runnable;
+	FIELD field_1_11663 onActionComplete Ljava/lang/Runnable;
+	METHOD <init> (Lnet/minecraft/class_310;)V
+		ARG 1 client
+	METHOD method_1_11337 acceptIncoming (Ljava/util/UUID;)V
+		ARG 1 playerId
+	METHOD method_1_11338 setCallbacks (Ljava/lang/Runnable;Ljava/lang/Runnable;)V
+		ARG 1 beforeAction
+		ARG 2 onActionFailed
+	METHOD method_1_11339 declineIncoming (Ljava/util/UUID;)V
+		ARG 1 playerId
+	METHOD method_1_11340 getPendingAction (Ljava/util/UUID;)Lnet/minecraft/class_1_1796$class_1_1797;
+		ARG 1 playerId
+	METHOD method_1_11343 (Ljava/util/UUID;Ljava/lang/Object;Ljava/lang/Throwable;)V
+		ARG 2 result
+		ARG 3 ex
+	METHOD method_1_11344 onActionFailed (Ljava/lang/Throwable;)Ljava/lang/Void;
+		ARG 1 ex
+	METHOD method_1_11345 runAction (Ljava/util/UUID;Lnet/minecraft/class_1_1796$class_1_1797;Ljava/util/function/BiFunction;)V
+		ARG 1 playerId
+		ARG 2 actionType
+		ARG 3 request
+	METHOD method_1_11346 removeFriend (Ljava/util/UUID;)V
+		ARG 1 playerId
+	METHOD method_1_11347 clearCallbacks ()V
+	METHOD method_1_11348 revokeOutgoing (Ljava/util/UUID;)V
+		ARG 1 playerId
+	METHOD method_1_11349 addFriend (Ljava/util/UUID;)V
+		ARG 1 playerId
+	CLASS class_1_1797 ActionType

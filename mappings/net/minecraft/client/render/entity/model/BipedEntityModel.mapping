@@ -55,6 +55,8 @@ CLASS net/minecraft/class_572 net/minecraft/client/render/entity/model/BipedEnti
 		ARG 1 state
 		ARG 2 limbSwingAnimationProgress
 		ARG 3 leaningPitch
+	METHOD method_1_11047 getTexturedModelData (Lnet/minecraft/class_5605;)Lnet/minecraft/class_5607;
+		ARG 0 dilation
 	METHOD method_2807 getArmRollProgress (F)F
 		ARG 1 perquattuordecimage
 	METHOD method_2808 getArm (Lnet/minecraft/class_1306;)Lnet/minecraft/class_630;
@@ -83,10 +85,12 @@ CLASS net/minecraft/class_572 net/minecraft/client/render/entity/model/BipedEnti
 		ARG 1 armorDilation
 	CLASS class_573 ArmPose
 		FIELD field_25722 twoHanded Z
+		FIELD field_64557 disablesOtherArm Z
 		METHOD <init> (Ljava/lang/String;IZZ)V
 			ARG 1 name
 			ARG 2 id
 			ARG 3 twoHanded
+			ARG 4 disablesOtherArm
 		METHOD method_30156 isTwoHanded ()Z
 		METHOD method_75382 applyTransformation (Lnet/minecraft/class_10426;Lnet/minecraft/class_4587;FLnet/minecraft/class_1306;Lnet/minecraft/class_1799;)V
 			ARG 1 state
@@ -94,3 +98,4 @@ CLASS net/minecraft/class_572 net/minecraft/client/render/entity/model/BipedEnti
 			ARG 3 useTime
 			ARG 4 arm
 			ARG 5 stack
+		METHOD method_76639 disablesOtherArm ()Z

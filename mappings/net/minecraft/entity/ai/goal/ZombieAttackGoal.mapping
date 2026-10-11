@@ -5,3 +5,8 @@ CLASS net/minecraft/class_1396 net/minecraft/entity/ai/goal/ZombieAttackGoal
 		ARG 1 zombie
 		ARG 2 speed
 		ARG 4 pauseWhenMobIdle
+	METHOD <init> (Lnet/minecraft/class_1642;DZI)V
+		ARG 1 zombie
+		ARG 2 speed
+		ARG 4 pauseWhenMobIdle
+		ARG 5 attackIntervalTicks

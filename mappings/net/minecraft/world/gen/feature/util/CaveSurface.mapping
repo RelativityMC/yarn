@@ -21,6 +21,8 @@ CLASS net/minecraft/class_5721 net/minecraft/world/gen/feature/util/CaveSurface
 	METHOD method_32988 createHalfWithFloor (I)Lnet/minecraft/class_5721;
 		ARG 0 floor
 	METHOD method_33385 getOptionalHeight ()Ljava/util/OptionalInt;
+		COMMENT {@return the height between the ceiling and floor for a closed cave surface;
+		COMMENT {@code Optional.empty()} otherwise}
 	METHOD method_34280 getCaveSurface (Lnet/minecraft/class_3746;ILjava/util/function/Predicate;Ljava/util/function/Predicate;Lnet/minecraft/class_2338$class_2339;ILnet/minecraft/class_2350;)Ljava/util/OptionalInt;
 		ARG 0 world
 		ARG 1 height
@@ -29,11 +31,15 @@ CLASS net/minecraft/class_5721 net/minecraft/world/gen/feature/util/CaveSurface
 		ARG 4 mutablePos
 		ARG 5 y
 		ARG 6 direction
-	METHOD method_35326 (II)Lnet/minecraft/class_5721$class_5723;
+	METHOD method_35326 createBoundedExclusive (II)Lnet/minecraft/class_5721$class_5723;
 		ARG 0 floor
 		ARG 1 ceiling
+	METHOD method_35327 createHalfWithCeilingExclusive (I)Lnet/minecraft/class_5721;
+		ARG 0 ceiling
 	METHOD method_35328 withCeiling (Ljava/util/OptionalInt;)Lnet/minecraft/class_5721;
 		ARG 1 ceiling
+	METHOD method_35329 createHalfWithFloorExclusive (I)Lnet/minecraft/class_5721;
+		ARG 0 floor
 	CLASS class_5722 Empty
 		FIELD field_28197 INSTANCE Lnet/minecraft/class_5721$class_5722;
 	CLASS class_5723 Bounded

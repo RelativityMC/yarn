@@ -1,5 +1,7 @@
 CLASS net/minecraft/class_437 net/minecraft/client/gui/screen/Screen
 	FIELD field_1_7966 lastNarrationTrigger Lnet/minecraft/class_1_1171;
+	FIELD field_1_11294 INWORLD_MENU_LIST_BACKGROUND_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_11295 MENU_LIST_BACKGROUND_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_22782 LOGGER Lorg/slf4j/Logger;
 	FIELD field_22785 title Lnet/minecraft/class_2561;
 	FIELD field_22786 children Ljava/util/List;
@@ -36,6 +38,19 @@ CLASS net/minecraft/class_437 net/minecraft/client/gui/screen/Screen
 		ARG 1 title
 	METHOD method_1_7314 shouldIgnoreFriendsKey ()Z
 	METHOD method_1_9870 applySystemNarratorDelay ()V
+	METHOD method_1_11042 drawSeparators (Lnet/minecraft/class_332;IIIIIZ)V
+		ARG 0 context
+		ARG 1 x
+		ARG 2 headerBottom
+		ARG 3 bodyBottom
+		ARG 4 width
+		ARG 5 height
+		ARG 6 inWorld
+	METHOD method_1_11043 drawSeparators (Lnet/minecraft/class_332;Lnet/minecraft/class_8132;I)V
+		ARG 1 context
+		ARG 2 layout
+		ARG 3 height
+	METHOD method_1_11044 isScreenInitialized ()Z
 	METHOD method_25393 tick ()V
 	METHOD method_25408 getTooltipFromItem (Lnet/minecraft/class_310;Lnet/minecraft/class_1799;)Ljava/util/List;
 		ARG 0 client

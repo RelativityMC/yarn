@@ -1,0 +1,50 @@
+CLASS net/minecraft/class_1_1775 net/minecraft/client/dxgi/DXGISwapChainDesc1
+	FIELD field_1_11574 FIELD_ALPHA_MODE Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11575 FIELD_BUFFER_COUNT Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11576 FIELD_BUFFER_USAGE Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11577 FIELD_FLAGS Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11578 FIELD_FORMAT Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11579 FIELD_HEIGHT Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11580 LAYOUT Ljava/lang/foreign/StructLayout;
+	FIELD field_1_11581 FIELD_SAMPLE_DESC_OFFSET J
+	FIELD field_1_11582 FIELD_SCALING Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11583 FIELD_STEREO Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11584 FIELD_SWAP_EFFECT Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11585 FIELD_WIDTH Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11586 segment Ljava/lang/foreign/MemorySegment;
+	METHOD <init> (Ljava/lang/foreign/Arena;)V
+		ARG 1 arena
+	METHOD <init> (Ljava/lang/foreign/MemorySegment;)V
+		ARG 1 segment
+	METHOD method_1_11220 getSegment ()Ljava/lang/foreign/MemorySegment;
+	METHOD method_1_11221 getAlphaMode ()I
+	METHOD method_1_11222 setAlphaMode (I)V
+		ARG 1 alphaMode
+	METHOD method_1_11223 getBufferCount ()I
+	METHOD method_1_11224 setBufferCount (I)V
+		ARG 1 bufferCount
+	METHOD method_1_11225 getBufferUsage ()I
+	METHOD method_1_11226 setBufferUsage (I)V
+		ARG 1 bufferUsage
+	METHOD method_1_11227 getFlags ()I
+	METHOD method_1_11228 setFlags (I)V
+		ARG 1 flags
+	METHOD method_1_11229 getFormat ()I
+	METHOD method_1_11230 setFormat (I)V
+		ARG 1 format
+	METHOD method_1_11231 getHeight ()I
+	METHOD method_1_11232 setHeight (I)V
+		ARG 1 height
+	METHOD method_1_11233 getSampleDesc ()Lnet/minecraft/class_1_1759;
+	METHOD method_1_11234 getScaling ()I
+	METHOD method_1_11235 setScaling (I)V
+		ARG 1 scaling
+	METHOD method_1_11236 isStereo ()Z
+	METHOD method_1_11237 setStereo (Z)V
+		ARG 1 stereo
+	METHOD method_1_11238 getSwapEffect ()I
+	METHOD method_1_11239 setSwapEffect (I)V
+		ARG 1 swapEffect
+	METHOD method_1_11240 getWidth ()I
+	METHOD method_1_11241 setWidth (I)V
+		ARG 1 width

@@ -7,6 +7,8 @@ CLASS net/minecraft/class_3722 net/minecraft/block/entity/LecternBlockEntity
 	METHOD <init> (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
 		ARG 1 pos
 		ARG 2 state
+	METHOD method_1_11308 clampPageIndex (I)I
+		ARG 1 pageIndex
 	METHOD method_17511 setCurrentPage (I)V
 		ARG 1 currentPage
 	METHOD method_17512 getCommandSource (Lnet/minecraft/class_1657;Lnet/minecraft/class_3218;)Lnet/minecraft/class_2168;
@@ -19,6 +21,7 @@ CLASS net/minecraft/class_3722 net/minecraft/block/entity/LecternBlockEntity
 		ARG 2 player
 	METHOD method_17518 resolveBook (Lnet/minecraft/class_1799;Lnet/minecraft/class_1657;)Lnet/minecraft/class_1799;
 		ARG 1 book
+		ARG 2 player
 	METHOD method_17520 getBook ()Lnet/minecraft/class_1799;
 	METHOD method_17522 hasBook ()Z
 	METHOD method_17523 getCurrentPage ()I
@@ -26,3 +29,5 @@ CLASS net/minecraft/class_3722 net/minecraft/block/entity/LecternBlockEntity
 	METHOD method_17525 onBookRemoved ()V
 	METHOD method_57591 getPageCount (Lnet/minecraft/class_1799;)I
 		ARG 0 stack
+	METHOD method_67683 (Lnet/minecraft/class_1799;)Lnet/minecraft/class_1799;
+		ARG 1 stack

@@ -5,6 +5,14 @@ CLASS net/minecraft/class_1_946 net/minecraft/client/friend/gui/widget/IncomingF
 	FIELD field_1_6607 REJECT_BUTTON_TEXTURES Lnet/minecraft/class_8666;
 	FIELD field_1_6608 acceptButton Lnet/minecraft/class_8662;
 	FIELD field_1_6609 declineButton Lnet/minecraft/class_8662;
+	FIELD field_1_11588 ACCEPT_TOOLTIP Lnet/minecraft/class_7919;
+	FIELD field_1_11590 DECLINE_TOOLTIP Lnet/minecraft/class_7919;
 	METHOD <init> (Lnet/minecraft/class_310;ILnet/minecraft/class_1_1796;Lnet/minecraft/class_5520$class_1_980;)V
 		ARG 1 client
+		ARG 2 width
+		ARG 3 friendActionManager
 		ARG 4 player
+	METHOD method_1_11244 (Lnet/minecraft/class_1_1796;Lnet/minecraft/class_4185;)V
+		ARG 2 button
+	METHOD method_1_11245 (Lnet/minecraft/class_1_1796;Lnet/minecraft/class_4185;)V
+		ARG 2 button

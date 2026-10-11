@@ -918,7 +918,7 @@ group int vk_polygon_mode
 target_method org.lwjgl.vulkan.VkPipelineRasterizationStateCreateInfo polygonMode (I)Lorg/lwjgl/vulkan/VkPipelineRasterizationStateCreateInfo;
 	param 0 vk_polygon_mode
 
-target_method net.minecraft.client.vulkan.VulkanConst toVkPolygonMode (Lcom/mojang/blaze3d/platform/PolygonMode;)I
+target_method net.minecraft.client.vulkan.VulkanConst toVkPolygonMode (Lcom/mojang/blaze3d/vertex/PolygonMode;)I
 	return vk_polygon_mode
 
 # https://docs.vulkan.org/refpages/latest/refpages/source/VkCullModeFlagBits.html

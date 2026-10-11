@@ -14,7 +14,15 @@ CLASS net/minecraft/class_1381 net/minecraft/entity/ai/goal/ProjectileAttackGoal
 		ARG 2 mobSpeed
 		ARG 4 intervalTicks
 		ARG 5 maxShootRange
+	METHOD <init> (Lnet/minecraft/class_1603;DLjava/util/function/IntSupplier;F)V
+		ARG 1 mob
+		ARG 2 mobSpeed
+		ARG 4 intervalTicks
+		ARG 5 maxShootRange
 	METHOD <init> (Lnet/minecraft/class_1603;DLjava/util/function/IntSupplier;Ljava/util/function/IntSupplier;F)V
 		ARG 1 mob
 		ARG 2 mobSpeed
+		ARG 4 minIntervalTicks
+		ARG 5 maxIntervalTicks
 		ARG 6 maxShootRange
+	METHOD method_1_11156 shouldKeepDistanceFromTarget ()Z

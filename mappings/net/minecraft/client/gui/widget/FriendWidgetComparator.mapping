@@ -1,0 +1,21 @@
+CLASS net/minecraft/class_1_1789 net/minecraft/client/gui/widget/FriendWidgetComparator
+	FIELD field_1_11623 DEFAULT_ORDER Lnet/minecraft/class_1_1789$class_1_1790;
+	FIELD field_1_11624 order Lnet/minecraft/class_1_1789$class_1_1790;
+	FIELD field_1_11625 onReorder Ljava/lang/Runnable;
+	METHOD <init> (Ljava/lang/Runnable;)V
+		ARG 1 onReorder
+	METHOD compare (Ljava/lang/Object;Ljava/lang/Object;)I
+		ARG 1 a
+		ARG 2 b
+	METHOD method_1_11302 setOrder (Lnet/minecraft/class_1_1789$class_1_1790;)V
+		ARG 1 order
+	CLASS class_1_1790 SortOrder
+		FIELD field_1_11628 comparator Ljava/util/Comparator;
+		FIELD field_1_11629 icon Lnet/minecraft/class_1_1783;
+		FIELD field_1_11630 text Lnet/minecraft/class_2561;
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;Ljava/util/Comparator;)V
+			ARG 3 name
+			ARG 4 comparator
+		METHOD method_1_11304 getComparator ()Ljava/util/Comparator;
+		METHOD method_1_11305 getIcon ()Lnet/minecraft/class_1_1783;
+		METHOD method_1_11306 getText ()Lnet/minecraft/class_2561;

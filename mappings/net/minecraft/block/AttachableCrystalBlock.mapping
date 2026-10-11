@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_5542 net/minecraft/block/AttachableCrystalBlock
+	FIELD field_27086 WATERLOGGED Lnet/minecraft/class_2746;
+	FIELD field_27087 FACING Lnet/minecraft/class_2754;
+	FIELD field_55729 shapesByDirection Ljava/util/Map;
+	METHOD <init> (FFLnet/minecraft/class_4970$class_2251;)V
+		ARG 1 height
+		ARG 2 width
+		ARG 3 settings

@@ -3,7 +3,7 @@ CLASS net/minecraft/class_6832 net/minecraft/world/StructureLocator
 	FIELD field_1_10272 noiseSampler Lnet/minecraft/class_6544$class_6552;
 	FIELD field_36225 LOGGER Lorg/slf4j/Logger;
 	FIELD field_36226 START_NOT_PRESENT_REFERENCE I
-	FIELD field_36227 chunkIoWorker Lnet/minecraft/class_1_1811;
+	FIELD field_36227 structureIoContext Lnet/minecraft/class_1_1811;
 	FIELD field_36228 registryManager Lnet/minecraft/class_5455;
 	FIELD field_36230 structureTemplateManager Lnet/minecraft/class_3485;
 	FIELD field_36232 chunkGenerator Lnet/minecraft/class_2794;
@@ -13,10 +13,10 @@ CLASS net/minecraft/class_6832 net/minecraft/world/StructureLocator
 	FIELD field_36238 generationPossibilityByStructure Ljava/util/Map;
 	FIELD field_37750 noiseConfig Lnet/minecraft/class_7138;
 	METHOD <init> (Lnet/minecraft/class_6830;Lnet/minecraft/class_5455;Lnet/minecraft/class_3485;Lnet/minecraft/class_5321;Lnet/minecraft/class_2794;Lnet/minecraft/class_7138;Lnet/minecraft/class_5539;Lnet/minecraft/class_1966;JLcom/mojang/datafixers/DataFixer;)V
-		ARG 1 chunkIoWorker
+		ARG 1 storageAccess
 		ARG 2 registryManager
 		ARG 3 structureTemplateManager
-		ARG 4 worldKey
+		ARG 4 dimension
 		ARG 5 chunkGenerator
 		ARG 6 noiseConfig
 		ARG 7 world

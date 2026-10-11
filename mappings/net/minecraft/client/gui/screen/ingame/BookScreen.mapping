@@ -20,6 +20,8 @@ CLASS net/minecraft/class_3872 net/minecraft/client/gui/screen/ingame/BookScreen
 	METHOD <init> (Lnet/minecraft/class_3872$class_3931;Z)V
 		ARG 1 contents
 		ARG 2 playPageTurnSound
+	METHOD method_1_11307 clampPageIndex (I)I
+		ARG 1 pageIndex
 	METHOD method_17055 getPageCount ()I
 	METHOD method_17057 goToPreviousPage ()V
 	METHOD method_17058 goToNextPage ()V

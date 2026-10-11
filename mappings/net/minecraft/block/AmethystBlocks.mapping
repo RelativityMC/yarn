@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1761 net/minecraft/block/AmethystBlocks
+	METHOD method_1_11137 onProjectileHit (Lnet/minecraft/class_1937;Lnet/minecraft/class_2680;Lnet/minecraft/class_3965;)V
+		ARG 0 world
+		ARG 1 state
+		ARG 2 hit

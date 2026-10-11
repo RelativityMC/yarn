@@ -1,0 +1,24 @@
+CLASS net/minecraft/class_1_1792 net/minecraft/client/dxgi/D3D12CommandQueueDesc
+	FIELD field_1_11633 FIELD_FLAGS Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11634 LAYOUT Ljava/lang/foreign/StructLayout;
+	FIELD field_1_11635 FIELDS_NODE_MASK Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11636 FIELD_PRIORITY Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11637 FIELD_TYPE Ljava/lang/invoke/VarHandle;
+	FIELD field_1_11638 segment Ljava/lang/foreign/MemorySegment;
+	METHOD <init> (Ljava/lang/foreign/Arena;)V
+		ARG 1 arena
+	METHOD <init> (Ljava/lang/foreign/MemorySegment;)V
+		ARG 1 segment
+	METHOD method_1_11312 getSegment ()Ljava/lang/foreign/MemorySegment;
+	METHOD method_1_11313 getFlags ()I
+	METHOD method_1_11314 setFlags (I)V
+		ARG 1 flags
+	METHOD method_1_11315 getNodeMask ()I
+	METHOD method_1_11316 setNodeMask (I)V
+		ARG 1 nodeMask
+	METHOD method_1_11317 getPriority ()I
+	METHOD method_1_11318 setPriority (I)V
+		ARG 1 priority
+	METHOD method_1_11319 getType ()I
+	METHOD method_1_11320 setType (I)V
+		ARG 1 type

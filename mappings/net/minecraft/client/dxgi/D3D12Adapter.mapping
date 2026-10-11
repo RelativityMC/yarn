@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_1746 net/minecraft/client/dxgi/D3D12Adapter
+	FIELD field_1_11363 D3D12_CREATE_DEVICE Ljava/lang/invoke/MethodHandle;
+	METHOD method_1_11077 createDevice (I)Lnet/minecraft/class_1_1749;
+		ARG 1 minimumFeatureLevel

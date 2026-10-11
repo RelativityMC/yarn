@@ -1,4 +1,37 @@
 CLASS net/minecraft/class_5725 net/minecraft/world/gen/feature/SpeleothemClusterFeature
+	METHOD <init> (Lnet/minecraft/class_2680;Lnet/minecraft/class_2680;Lnet/minecraft/class_6885;ILnet/minecraft/class_6017;Lnet/minecraft/class_6017;IILnet/minecraft/class_6017;Lnet/minecraft/class_5863;Lnet/minecraft/class_5863;FII)V
+		ARG 1 baseBlock
+		ARG 2 pointedBlock
+		ARG 3 replaceableBlocks
+		ARG 4 floorToCeilingSearchRange
+		ARG 5 height
+		ARG 6 radius
+		ARG 7 maxStalagmiteStalactiteHeightDiff
+		ARG 8 heightDeviation
+		ARG 9 speleothemBlockLayerThickness
+		ARG 10 density
+		ARG 11 wetness
+		ARG 12 chanceOfSpeleothemAtMaxDistanceFromCenter
+		ARG 13 maxDistanceFromEdgeAffectingChanceOfSpeleothem
+		ARG 14 maxDistanceFromCenterAffectingHeightBias
+	METHOD method_1_7195 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_11453 canGenerate (Lnet/minecraft/class_2680;Z)Z
+		ARG 1 state
+		ARG 2 allowWaterPlacement
+	METHOD method_1_11454 filterPlaceable (Lnet/minecraft/class_5721;)Lnet/minecraft/class_5721;
+		ARG 1 caveSurface
+	METHOD method_1_11455 calculateMaxHeight (Lnet/minecraft/class_5281;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;ILjava/util/function/Predicate;)I
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 direction
+		ARG 4 maxDistance
+		ARG 5 placeablePredicate
+	METHOD method_1_11456 clampHeightToCaveSurfaceBounds (Lnet/minecraft/class_5721;I)I
+		ARG 1 caveSurface
+		ARG 2 height
+	METHOD method_1_11457 (Lnet/minecraft/class_2680;)Z
+		ARG 1 state
 	METHOD method_32997 dripstoneChance (IIII)D
 		ARG 1 radiusX
 		ARG 2 radiusZ
@@ -40,3 +73,11 @@ CLASS net/minecraft/class_5725 net/minecraft/world/gen/feature/SpeleothemCluster
 	METHOD method_33386 isLava (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;)Z
 		ARG 1 world
 		ARG 2 pos
+	CLASS class_1_1818 PlacementMode
+		FIELD field_1_11823 name Ljava/lang/String;
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 name
+	CLASS class_1_1819 Placement
+		FIELD field_1_11825 DEFAULT Lnet/minecraft/class_5725$class_1_1819;
+		METHOD method_1_11459 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance

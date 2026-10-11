@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_1814 net/minecraft/client/gui/hud/debug/ChunkLoadStatusDebugHudEntry
+	FIELD field_1_11816 CHUNK_GAP I
+	FIELD field_1_11817 CHUNK_LENGTH I
+	CLASS class_1_1815 Renderer

@@ -44,7 +44,8 @@ public record NameProposalConfig(FieldNameProvider fieldNameProvider) {
 			"net/minecraft/class_1_786",
 			"net/minecraft/class_1_789",
 			"net/minecraft/class_1_793",
-			"net/minecraft/class_1_819"
+			"net/minecraft/class_1_819",
+			"net/minecraft/class_1_1767"
 	);
 
 	public static final NameProposalConfig DEFAULT = new NameProposalConfig(new SequenceFieldNameProvider(List.of(

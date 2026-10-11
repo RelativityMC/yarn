@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_1816 net/minecraft/client/gui/hud/debug/LightmapTextureDebugHudEntry
+	FIELD field_1_11818 DRAW_SIZE I
+	CLASS class_1_1817 Renderer

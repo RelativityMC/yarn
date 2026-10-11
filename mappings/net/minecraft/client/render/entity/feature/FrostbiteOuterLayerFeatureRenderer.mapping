@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1813 net/minecraft/client/render/entity/feature/FrostbiteOuterLayerFeatureRenderer
+	FIELD field_1_11786 TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_11787 model Lnet/minecraft/class_1_1786;
+	METHOD <init> (Lnet/minecraft/class_3883;Lnet/minecraft/class_5599;)V
+		ARG 1 context

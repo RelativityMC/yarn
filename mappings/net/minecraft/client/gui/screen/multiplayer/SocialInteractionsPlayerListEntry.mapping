@@ -2,6 +2,24 @@ CLASS net/minecraft/class_5519 net/minecraft/client/gui/screen/multiplayer/Socia
 	FIELD field_26850 BLACK_COLOR I
 	FIELD field_26859 offline Z
 	FIELD field_39790 sentMessage Lorg/apache/commons/lang3/mutable/MutableBoolean;
+	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_5522;Ljava/util/UUID;Ljava/lang/String;Lnet/minecraft/class_5520$class_1_1800;Ljava/util/function/Supplier;Z)V
+		ARG 1 client
+		ARG 2 parent
+		ARG 3 playerId
+		ARG 4 playerName
+		ARG 5 visibility
+		ARG 6 skin
+		ARG 7 chatReportable
+	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_5522;Ljava/util/UUID;Ljava/lang/String;Lnet/minecraft/class_5520$class_1_1800;Ljava/util/function/Supplier;ZLorg/apache/commons/lang3/mutable/MutableBoolean;)V
+		ARG 1 client
+		ARG 2 parent
+		ARG 3 playerId
+		ARG 4 playerName
+		ARG 5 visibility
+		ARG 6 skin
+		ARG 7 chatReportable
+		ARG 8 sentMessage
+	METHOD method_1_11150 getSortKey ()I
 	METHOD method_31335 setOffline (Z)V
 		ARG 1 offline
 	METHOD method_44753 setSentMessage (Z)V

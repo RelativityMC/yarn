@@ -1,5 +1,7 @@
 CLASS net/minecraft/class_1642 net/minecraft/entity/mob/ZombieEntity
-	FIELD field_1_9107 conversionManager Lnet/minecraft/class_1_1316;
+	FIELD field_1_9107 drowningConversionManager Lnet/minecraft/class_1_1316;
+	FIELD field_1_11403 CONVERTING_IN_POWDER_SNOW Lnet/minecraft/class_2940;
+	FIELD field_1_11407 freezingConversionManager Lnet/minecraft/class_1_1316;
 	FIELD field_7425 CONVERTING_IN_WATER Lnet/minecraft/class_2940;
 	FIELD field_7427 ZOMBIE_TYPE Lnet/minecraft/class_2940;
 		COMMENT Unused tracked data, left over from 1.10 when zombies, zombie villagers and husks were all the same type of entity.
@@ -18,9 +20,15 @@ CLASS net/minecraft/class_1642 net/minecraft/entity/mob/ZombieEntity
 	FIELD field_57698 DEFAULT_CAN_BREAK_DOORS Z
 	METHOD <init> (Lnet/minecraft/class_1937;)V
 		ARG 1 world
-	METHOD method_1_8729 getConversionResult ()Lnet/minecraft/class_1299;
-	METHOD method_1_8730 getConversionWorldEvent ()I
+	METHOD method_1_8729 getDrowningConversionResult ()Lnet/minecraft/class_1299;
+	METHOD method_1_8730 getDrowningConversionWorldEvent ()I
 	METHOD method_1_8732 (Lnet/minecraft/class_1642;Lnet/minecraft/class_3218;)V
+		ARG 0 mob
+		ARG 1 world
+	METHOD method_1_11112 getFreezingConversionResult ()Lnet/minecraft/class_1299;
+	METHOD method_1_11113 canConvertInPowderSnow ()Z
+	METHOD method_1_11114 getFreezingConversionWorldEvent ()I
+	METHOD method_1_11116 (Lnet/minecraft/class_1642;Lnet/minecraft/class_3218;)V
 		ARG 0 mob
 		ARG 1 world
 	METHOD method_6001 initAttributes ()V

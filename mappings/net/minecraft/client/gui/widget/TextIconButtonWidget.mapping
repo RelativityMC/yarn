@@ -2,22 +2,44 @@ CLASS net/minecraft/class_8662 net/minecraft/client/gui/widget/TextIconButtonWid
 	COMMENT A button with an icon and an optional text.
 	COMMENT
 	COMMENT @see ButtonWidget
-	FIELD field_45379 texture Lnet/minecraft/class_1_1783;
+	FIELD field_1_11477 style Lnet/minecraft/class_8662$class_1_1764;
+	FIELD field_45379 icon Lnet/minecraft/class_1_1783;
 	METHOD <init> (IIIILnet/minecraft/class_2561;Lnet/minecraft/class_1_1783;Lnet/minecraft/class_8662$class_1_1764;Lnet/minecraft/class_4185$class_4241;Lnet/minecraft/class_7919;Lnet/minecraft/class_4185$class_7841;Z)V
+		ARG 1 x
+		ARG 2 y
 		ARG 3 width
 		ARG 4 height
 		ARG 5 message
+		ARG 6 icon
+		ARG 7 style
 		ARG 8 onPress
+		ARG 9 tooltip
+		ARG 10 narrationSupplier
 		ARG 11 setLoadingOnPress
 	METHOD method_1_5645 drawOverrideIcon (Lnet/minecraft/class_332;IIF)V
+		ARG 1 context
+		ARG 2 mouseX
+		ARG 3 mouseY
+		ARG 4 deltaTicks
+	METHOD method_1_11165 builder (Lnet/minecraft/class_2561;Lnet/minecraft/class_4185$class_4241;Lnet/minecraft/class_8662$class_1_1764;)Lnet/minecraft/class_8662$class_8663;
+		ARG 0 text
+		ARG 1 onPress
+		ARG 2 style
+	METHOD method_1_11166 setStyle (Lnet/minecraft/class_8662$class_1_1764;)V
+		ARG 1 style
 	METHOD method_52723 builder (Lnet/minecraft/class_2561;Lnet/minecraft/class_4185$class_4241;Z)Lnet/minecraft/class_8662$class_8663;
 		ARG 0 text
 		ARG 1 onPress
 		ARG 2 hideLabel
+	CLASS class_1_1764 Style
 	CLASS class_8663 Builder
+		FIELD field_1_11478 style Lnet/minecraft/class_8662$class_1_1764;
 		FIELD field_45387 texture Lnet/minecraft/class_1_1783;
 		METHOD <init> (Lnet/minecraft/class_2561;Lnet/minecraft/class_4185$class_4241;Lnet/minecraft/class_8662$class_1_1764;)V
+			ARG 1 message
 			ARG 2 onPress
+			ARG 3 style
+		METHOD method_1_11167 messageAsTooltip ()Lnet/minecraft/class_8662$class_8663;
 		METHOD method_52724 build ()Lnet/minecraft/class_8662;
 		METHOD method_52727 texture (Lnet/minecraft/class_2960;II)Lnet/minecraft/class_8662$class_8663;
 			ARG 1 texture

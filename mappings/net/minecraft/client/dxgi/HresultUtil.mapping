@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_1733 net/minecraft/client/dxgi/HresultUtil
+	METHOD method_1_11036 reportHresultError (I)V
+		ARG 0 hresult
+	METHOD method_1_11037 isError (I)Z
+		ARG 0 hresult
+	METHOD method_1_11038 describeError (I)Ljava/lang/String;
+		ARG 0 hresult

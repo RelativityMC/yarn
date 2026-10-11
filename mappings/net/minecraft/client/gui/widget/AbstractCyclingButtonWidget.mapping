@@ -1,0 +1,78 @@
+CLASS net/minecraft/class_5676 net/minecraft/client/gui/widget/AbstractCyclingButtonWidget
+	FIELD field_27961 HAS_ALT_DOWN Ljava/util/function/BooleanSupplier;
+	FIELD field_27963 optionText Lnet/minecraft/class_2561;
+	FIELD field_27964 index I
+	FIELD field_27965 value Ljava/lang/Object;
+	FIELD field_27966 values Lnet/minecraft/class_5676$class_5680;
+	FIELD field_27967 valueToText Ljava/util/function/Function;
+	FIELD field_27969 callback Lnet/minecraft/class_5676$class_5678;
+	FIELD field_27970 tooltipFactory Lnet/minecraft/class_7172$class_7277;
+	FIELD field_63504 valueSupplier Ljava/util/function/Supplier;
+	METHOD <init> (IIIILnet/minecraft/class_2561;ILjava/lang/Object;Ljava/util/function/Supplier;Lnet/minecraft/class_5676$class_5680;Ljava/util/function/Function;Lnet/minecraft/class_5676$class_5678;Lnet/minecraft/class_7172$class_7277;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+		ARG 5 optionText
+		ARG 6 index
+		ARG 7 value
+		ARG 8 valueSupplier
+		ARG 9 values
+		ARG 10 valueToText
+		ARG 11 callback
+		ARG 12 tooltipFactory
+	METHOD method_32603 getValue ()Ljava/lang/Object;
+	METHOD method_32605 setValue (Ljava/lang/Object;)V
+		ARG 1 value
+	METHOD method_32609 internalSetValue (Ljava/lang/Object;)V
+		ARG 1 value
+	METHOD method_32610 composeGenericOptionText (Ljava/lang/Object;)Lnet/minecraft/class_5250;
+		ARG 1 value
+	METHOD method_32612 cycle (I)V
+		ARG 1 amount
+	METHOD method_37026 composeText (Ljava/lang/Object;)Lnet/minecraft/class_2561;
+		ARG 1 value
+	METHOD method_37027 getValue (I)Ljava/lang/Object;
+		ARG 1 offset
+	METHOD method_47403 refreshTooltip ()V
+	CLASS class_1_1782 Builder
+		FIELD field_1_11605 valueSupplier Ljava/util/function/Supplier;
+		FIELD field_1_11606 tooltipFactory Lnet/minecraft/class_7172$class_7277;
+		FIELD field_1_11607 valueToText Ljava/util/function/Function;
+		FIELD field_1_11608 values Lnet/minecraft/class_5676$class_5680;
+		METHOD <init> (Ljava/util/function/Function;Ljava/util/function/Supplier;)V
+			ARG 1 valueToText
+			ARG 2 valueSupplier
+		METHOD method_1_11259 (Ljava/lang/Object;)Lnet/minecraft/class_7919;
+			ARG 0 value
+		METHOD method_1_11260 (Ljava/lang/Object;)Lnet/minecraft/class_7919;
+			ARG 1 value
+		METHOD method_1_11261 textAsTooltip ()Lnet/minecraft/class_5676$class_1_1782;
+		METHOD method_1_11262 tooltip (Lnet/minecraft/class_7172$class_7277;)Lnet/minecraft/class_5676$class_1_1782;
+			ARG 1 tooltipFactory
+		METHOD method_1_11263 values (Ljava/util/Collection;)Lnet/minecraft/class_5676$class_1_1782;
+			ARG 1 values
+		METHOD method_1_11264 alternativeValues (Ljava/util/List;Ljava/util/List;)Lnet/minecraft/class_5676$class_1_1782;
+			ARG 1 defaults
+			ARG 2 alternatives
+		METHOD method_1_11265 alternativeValues (Ljava/util/function/BooleanSupplier;Ljava/util/List;Ljava/util/List;)Lnet/minecraft/class_5676$class_1_1782;
+			ARG 1 alternativeToggle
+			ARG 2 defaults
+			ARG 3 alternatives
+		METHOD method_1_11266 values (Lnet/minecraft/class_5676$class_5680;)Lnet/minecraft/class_5676$class_1_1782;
+			ARG 1 values
+		METHOD method_1_11267 values ([Ljava/lang/Object;)Lnet/minecraft/class_5676$class_1_1782;
+			ARG 1 values
+	CLASS class_5678 UpdateCallback
+		METHOD method_1_161 onValueChange (Lnet/minecraft/class_5676;Ljava/lang/Object;)V
+			ARG 1 button
+			ARG 2 value
+	CLASS class_5680 Values
+		METHOD method_32626 getCurrent ()Ljava/util/List;
+		METHOD method_32627 of (Ljava/util/Collection;)Lnet/minecraft/class_5676$class_5680;
+			ARG 0 values
+		METHOD method_32628 of (Ljava/util/function/BooleanSupplier;Ljava/util/List;Ljava/util/List;)Lnet/minecraft/class_5676$class_5680;
+			ARG 0 alternativeToggle
+			ARG 1 defaults
+			ARG 2 alternatives
+		METHOD method_32629 getDefaults ()Ljava/util/List;

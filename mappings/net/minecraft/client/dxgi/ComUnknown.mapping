@@ -1,0 +1,39 @@
+CLASS net/minecraft/class_1_1735 net/minecraft/client/dxgi/ComUnknown
+	COMMENT An object that implements the <a href="https://learn.microsoft.com/en-us/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a>
+	COMMENT interface in the Component Object Model (COM).
+	COMMENT
+	COMMENT Subclasses are generally named identically to their equivalent in the
+	COMMENT respective Windows API, except that the leading <i>I</i> is omitted.
+	FIELD field_1_11303 MAX_VTABLE_INDEX I
+	FIELD field_1_11304 LOOKUP Ljava/lang/foreign/SymbolLookup;
+	FIELD field_1_11305 self Ljava/lang/foreign/MemorySegment;
+	FIELD field_1_11306 queryInterface Ljava/lang/invoke/MethodHandle;
+	FIELD field_1_11307 release Ljava/lang/invoke/MethodHandle;
+	FIELD field_1_11308 vtable Ljava/lang/foreign/MemorySegment;
+	METHOD <init> (Ljava/lang/foreign/MemorySegment;)V
+		ARG 1 ptr
+	METHOD method_1_11050 getSelf ()Ljava/lang/foreign/MemorySegment;
+	METHOD method_1_11051 lookupFunction (Ljava/lang/String;Ljava/lang/foreign/FunctionDescriptor;)Ljava/lang/invoke/MethodHandle;
+		ARG 0 name
+		ARG 1 desc
+	METHOD method_1_11052 queryInterface (Lnet/minecraft/class_1_1728;Ljava/util/function/Function;)Lnet/minecraft/class_1_1735;
+		ARG 1 iid
+		ARG 2 ctor
+	METHOD method_1_11053 getVtableEntry (JLjava/lang/foreign/FunctionDescriptor;)Ljava/lang/invoke/MethodHandle;
+		COMMENT Creates a {@link MethodHandle} to one of this object's vtable entry.
+		COMMENT
+		COMMENT @see {@code d3d12.h}
+		ARG 1 index
+		ARG 3 desc
+	CLASS class_1_1736 Layouts
+		FIELD field_1_11309 P_ADDRESS Ljava/lang/foreign/AddressLayout;
+		FIELD field_1_11310 BOOL Ljava/lang/foreign/ValueLayout$OfInt;
+		FIELD field_1_11311 ENUM Ljava/lang/foreign/ValueLayout$OfInt;
+		FIELD field_1_11312 HANDLE Ljava/lang/foreign/ValueLayout$OfLong;
+		FIELD field_1_11313 HRESULT Ljava/lang/foreign/ValueLayout$OfInt;
+		FIELD field_1_11314 HWND Ljava/lang/foreign/ValueLayout$OfLong;
+		FIELD field_1_11315 IID_PTR Ljava/lang/foreign/AddressLayout;
+		FIELD field_1_11316 ADDRESS Ljava/lang/foreign/AddressLayout;
+		FIELD field_1_11317 THIS Ljava/lang/foreign/AddressLayout;
+		FIELD field_1_11318 UINT Ljava/lang/foreign/ValueLayout$OfInt;
+		FIELD field_1_11319 UINT64 Ljava/lang/foreign/ValueLayout$OfLong;

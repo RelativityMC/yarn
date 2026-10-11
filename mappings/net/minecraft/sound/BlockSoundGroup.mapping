@@ -129,3 +129,7 @@ CLASS net/minecraft/class_2498 net/minecraft/sound/BlockSoundGroup
 	FIELD field_59759 DRIED_GHAST Lnet/minecraft/class_5321;
 	FIELD field_61429 COPPER_GOLEM_STATUE Lnet/minecraft/class_5321;
 	FIELD field_61430 SHELF Lnet/minecraft/class_5321;
+	METHOD method_1_11193 bootstrap (Lnet/minecraft/class_7891;)V
+		ARG 0 path
+	METHOD method_1_11194 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 path

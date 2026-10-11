@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_1806 net/minecraft/client/texture/CubemapTextureProvider
+	FIELD field_1_11738 SUFFIXES [Ljava/lang/String;

@@ -16,6 +16,10 @@ CLASS net/minecraft/class_3204 net/minecraft/server/world/ChunkLevelManager
 		ARG 1 ticketManager
 		ARG 2 executor
 		ARG 3 mainThreadExecutor
+	METHOD method_1_11058 updateFreshPlayerTicketPositions (Lnet/minecraft/class_3898;)V
+		ARG 1 chunkLoadingManager
+	METHOD method_1_11059 executePendingUpdates (Lnet/minecraft/class_3898;)Z
+		ARG 1 chunkLoadingManager
 	METHOD method_14035 isUnloaded (J)Z
 		ARG 1 pos
 	METHOD method_14038 getChunkHolder (J)Lnet/minecraft/class_3193;
@@ -81,6 +85,7 @@ CLASS net/minecraft/class_3204 net/minecraft/server/world/ChunkLevelManager
 			ARG 3 oldDistance
 			ARG 4 distance
 	CLASS class_3948 NearbyChunkTicketUpdater
+		FIELD field_1_10796 oldDistances Lit/unimi/dsi/fastutil/longs/Long2IntMap;
 		FIELD field_17464 watchDistance I
 		FIELD field_17465 distances Lit/unimi/dsi/fastutil/longs/Long2IntMap;
 		METHOD method_17658 setWatchDistance (I)V

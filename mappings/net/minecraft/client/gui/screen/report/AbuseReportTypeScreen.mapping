@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_8770 net/minecraft/client/gui/screen/report/AbuseReportTypeScreen
+	FIELD field_1_11750 chatReportButton Lnet/minecraft/class_4185;
+	FIELD field_1_11751 nameReportButton Lnet/minecraft/class_4185;
+	FIELD field_1_11752 skinReportButton Lnet/minecraft/class_4185;
 	FIELD field_46041 TITLE_TEXT Lnet/minecraft/class_2561;
 	FIELD field_46042 MESSAGE_TEXT Lnet/minecraft/class_2561;
 	FIELD field_46043 CHAT_TYPE_TEXT Lnet/minecraft/class_2561;
@@ -8,3 +11,21 @@ CLASS net/minecraft/class_8770 net/minecraft/client/gui/screen/report/AbuseRepor
 	FIELD field_46050 layout Lnet/minecraft/class_8667;
 	METHOD <init> (Lnet/minecraft/class_437;Lnet/minecraft/class_7574;Ljava/util/UUID;Ljava/lang/String;Ljava/util/function/Supplier;ZZZZ)V
 		ARG 1 parent
+		ARG 2 reportContext
+		ARG 3 playerId
+		ARG 4 playerName
+		ARG 5 skin
+		ARG 6 skinReportable
+		ARG 7 chatDisabledOrBlocked
+		ARG 8 chatReportable
+		ARG 9 sentMessage
+	METHOD method_1_11412 (Lnet/minecraft/class_437;Lnet/minecraft/class_7574;Ljava/util/UUID;Lnet/minecraft/class_4185;)V
+		ARG 4 button
+	METHOD method_1_11413 (Lnet/minecraft/class_437;Lnet/minecraft/class_7574;Ljava/util/UUID;Ljava/util/function/Supplier;Lnet/minecraft/class_4185;)V
+		ARG 5 button
+	METHOD method_1_11414 (Lnet/minecraft/class_437;Lnet/minecraft/class_7574;Ljava/util/UUID;Ljava/lang/String;Lnet/minecraft/class_4185;)V
+		ARG 5 button
+	METHOD method_53581 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_53582 (Lnet/minecraft/class_8770;Lnet/minecraft/class_339;)V
+		ARG 1 child

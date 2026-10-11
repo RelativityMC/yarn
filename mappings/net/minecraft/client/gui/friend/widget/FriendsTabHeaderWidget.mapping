@@ -6,7 +6,11 @@ CLASS net/minecraft/class_1_964 net/minecraft/client/gui/friend/widget/FriendsTa
 	FIELD field_1_6683 searchField Lnet/minecraft/class_342;
 	FIELD field_1_6684 main Lnet/minecraft/class_8667;
 	FIELD field_1_6685 client Lnet/minecraft/class_310;
+	FIELD field_1_11616 SORT_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11617 sortOrderButton Lnet/minecraft/class_1_1787;
 	METHOD <init> (Lnet/minecraft/class_1_1793;Lnet/minecraft/class_1_1789;ILjava/lang/Runnable;)V
+		ARG 1 friendSearchManager
+		ARG 2 comparator
 		ARG 3 width
 		ARG 4 onSendRequest
 	METHOD method_1_5812 setState (Lnet/minecraft/class_1_964$class_1_965;)V
@@ -22,4 +26,15 @@ CLASS net/minecraft/class_1_964 net/minecraft/client/gui/friend/widget/FriendsTa
 		ARG 1 username
 	METHOD method_1_6365 getFriendRequestErrorText (Ljava/lang/String;)Lnet/minecraft/class_2561;
 		ARG 1 username
+	METHOD method_1_6367 (Ljava/lang/Runnable;Lcom/mojang/authlib/services/FriendsService$ResultCode;)V
+		ARG 2 resultCode
+	METHOD method_1_11285 (Lnet/minecraft/class_1_1793;Ljava/lang/String;)V
+		ARG 2 text
+	METHOD method_1_11286 (Ljava/lang/Runnable;Lnet/minecraft/class_4185;)V
+		ARG 2 button
+	METHOD method_1_11287 (Lnet/minecraft/class_1_1789;Lnet/minecraft/class_5676;Lnet/minecraft/class_1_1789$class_1_1790;)V
+		ARG 1 button
+		ARG 2 value
+	METHOD method_1_11288 sendRequest (Ljava/lang/Runnable;)V
+		ARG 1 onSendRequest
 	CLASS class_1_965 State

@@ -1,0 +1,28 @@
+CLASS net/minecraft/class_1_1749 net/minecraft/client/dxgi/D3D12Device
+	FIELD field_1_11375 createCommandAllocator Ljava/lang/invoke/MethodHandle;
+	FIELD field_1_11376 createCommandList Ljava/lang/invoke/MethodHandle;
+	FIELD field_1_11377 createCommandQueue Ljava/lang/invoke/MethodHandle;
+	FIELD field_1_11378 createCommittedResource Ljava/lang/invoke/MethodHandle;
+	FIELD field_1_11379 createFence Ljava/lang/invoke/MethodHandle;
+	FIELD field_1_11380 createSharedHandle Ljava/lang/invoke/MethodHandle;
+	FIELD field_1_11381 openSharedHandle Ljava/lang/invoke/MethodHandle;
+	METHOD method_1_11095 createCommandAllocator (I)Lnet/minecraft/class_1_1791;
+		ARG 1 type
+	METHOD method_1_11096 createCommandList (IILnet/minecraft/class_1_1791;)Lnet/minecraft/class_1_1807;
+		ARG 1 nodeMask
+		ARG 2 type
+		ARG 3 commandAllocator
+	METHOD method_1_11097 createCommandQueue (Lnet/minecraft/class_1_1792;)Lnet/minecraft/class_1_1773;
+		ARG 1 desc
+	METHOD method_1_11098 createCommittedResource (Lnet/minecraft/class_1_1785;ILnet/minecraft/class_1_1774;I)Lnet/minecraft/class_1_1758;
+		ARG 1 heapProperties
+		ARG 2 heapFlags
+		ARG 3 desc
+		ARG 4 initialState
+	METHOD method_1_11099 createFence (JI)Lnet/minecraft/class_1_1745;
+		ARG 1 initialValue
+		ARG 3 flags
+	METHOD method_1_11100 createSharedHandle (Lnet/minecraft/class_1_1771;)Lnet/minecraft/class_1_1737;
+		ARG 1 object
+	METHOD method_1_11101 openSharedHandle (Lnet/minecraft/class_1_1737;)Lnet/minecraft/class_1_1758;
+		ARG 1 handle

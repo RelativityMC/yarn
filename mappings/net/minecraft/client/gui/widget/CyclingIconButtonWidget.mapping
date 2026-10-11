@@ -1,0 +1,52 @@
+CLASS net/minecraft/class_1_1787 net/minecraft/client/gui/widget/CyclingIconButtonWidget
+	FIELD field_1_11618 valueToIcon Ljava/util/function/Function;
+	METHOD <init> (IIIILnet/minecraft/class_2561;ILjava/lang/Object;Ljava/util/function/Supplier;Lnet/minecraft/class_5676$class_5680;Ljava/util/function/Function;Ljava/util/function/Function;Lnet/minecraft/class_5676$class_5678;Lnet/minecraft/class_7172$class_7277;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+		ARG 5 optionText
+		ARG 6 index
+		ARG 7 value
+		ARG 8 valueSupplier
+		ARG 9 values
+		ARG 10 valueToText
+		ARG 11 valueToIcon
+		ARG 12 callback
+		ARG 13 tooltipFactory
+	METHOD method_1_11291 builder (Lnet/minecraft/class_2561;Ljava/util/function/Function;Ljava/lang/Object;)Lnet/minecraft/class_1_1787$class_1_1788;
+		ARG 0 optionText
+		ARG 1 valueToText
+		ARG 2 value
+	METHOD method_1_11292 builder (Lnet/minecraft/class_2561;Ljava/util/function/Function;Ljava/util/function/Supplier;)Lnet/minecraft/class_1_1787$class_1_1788;
+		ARG 0 optionText
+		ARG 1 valueToText
+		ARG 2 valueSupplier
+	CLASS class_1_1788 Builder
+		FIELD field_1_11619 height I
+		FIELD field_1_11620 optionText Lnet/minecraft/class_2561;
+		FIELD field_1_11621 valueToIcon Ljava/util/function/Function;
+		FIELD field_1_11622 width I
+		METHOD <init> (Lnet/minecraft/class_2561;Ljava/util/function/Function;Ljava/util/function/Supplier;)V
+			ARG 1 optionText
+			ARG 2 valueToText
+			ARG 3 valueSupplier
+		METHOD method_1_11294 build (II)Lnet/minecraft/class_1_1787;
+			ARG 1 x
+			ARG 2 y
+		METHOD method_1_11295 build (IILnet/minecraft/class_5676$class_5678;)Lnet/minecraft/class_1_1787;
+			ARG 1 x
+			ARG 2 y
+			ARG 3 callback
+		METHOD method_1_11296 build (Lnet/minecraft/class_5676$class_5678;)Lnet/minecraft/class_1_1787;
+			ARG 1 callback
+		METHOD method_1_11297 (Lnet/minecraft/class_5676;Ljava/lang/Object;)V
+			ARG 0 button
+			ARG 1 value
+		METHOD method_1_11298 size (II)Lnet/minecraft/class_1_1787$class_1_1788;
+			ARG 1 width
+			ARG 2 height
+		METHOD method_1_11299 valueToIcon (Ljava/util/function/Function;)Lnet/minecraft/class_1_1787$class_1_1788;
+			ARG 1 valueToIcon
+		METHOD method_1_11300 width (I)Lnet/minecraft/class_1_1787$class_1_1788;
+			ARG 1 width

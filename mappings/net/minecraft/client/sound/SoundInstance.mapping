@@ -9,7 +9,7 @@ CLASS net/minecraft/class_1113 net/minecraft/client/sound/SoundInstance
 	METHOD method_4780 getRepeatDelay ()I
 	METHOD method_4781 getVolume ()F
 	METHOD method_4782 getPitch ()F
-	METHOD method_4783 getSoundSet (Lnet/minecraft/class_1144;)Lnet/minecraft/class_1146;
+	METHOD method_4783 getSoundSet (Lnet/minecraft/class_1144;)Z
 		ARG 1 soundManager
 	METHOD method_4784 getX ()D
 	METHOD method_4785 shouldAlwaysPlay ()Z

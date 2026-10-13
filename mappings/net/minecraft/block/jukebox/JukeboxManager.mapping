@@ -4,16 +4,15 @@ CLASS net/minecraft/class_9794 net/minecraft/block/jukebox/JukeboxManager
 	FIELD field_52034 song Lnet/minecraft/class_6880;
 	FIELD field_52035 pos Lnet/minecraft/class_2338;
 	FIELD field_52036 changeNotifier Lnet/minecraft/class_9794$class_9795;
-	METHOD <init> (Lnet/minecraft/class_9794$class_9795;Lnet/minecraft/class_2338;)V
+	METHOD <init> (Lnet/minecraft/class_9794$class_9795;Lnet/minecraft/class_2338;Ljava/util/function/BooleanSupplier;)V
 		ARG 1 changeNotifier
 		ARG 2 pos
 	METHOD method_60754 isPlaying ()Z
 	METHOD method_60755 stopPlaying (Lnet/minecraft/class_1936;Lnet/minecraft/class_2680;)V
 		ARG 1 world
 		ARG 2 state
-	METHOD method_60756 spawnNoteParticles (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;)V
-		ARG 0 world
-		ARG 1 pos
+	METHOD method_60756 spawnNoteParticles (Lnet/minecraft/class_1936;)V
+		ARG 1 world
 	METHOD method_60757 startPlaying (Lnet/minecraft/class_1936;Lnet/minecraft/class_6880;)V
 		ARG 1 world
 		ARG 2 song

@@ -11,5 +11,3 @@ CLASS net/minecraft/class_3616 net/minecraft/fluid/LavaFluid
 		ARG 2 pos
 	METHOD method_75749 shouldLavaFlowFaster (Lnet/minecraft/class_4538;)Z
 		ARG 0 world
-	CLASS class_3617 Flowing
-	CLASS class_3618 Still

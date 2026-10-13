@@ -39,9 +39,7 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 	CLASS class_1_343 GeometryBuffers
 	CLASS class_851 BuiltChunk
 		FIELD field_4458 boundingBox Lnet/minecraft/class_238;
-		FIELD field_4461 sortTask Lnet/minecraft/class_846$class_851$class_4579;
 		FIELD field_4467 origin Lnet/minecraft/class_2338$class_2339;
-		FIELD field_20834 rebuildTask Lnet/minecraft/class_846$class_851$class_4578;
 		FIELD field_29641 index I
 		FIELD field_53958 sectionPos J
 		FIELD field_60949 currentRenderData Ljava/util/concurrent/atomic/AtomicReference;
@@ -98,9 +96,9 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 			ARG 1 timeMs
 			ARG 3 chunkFadeMs
 		CLASS class_4577 Task
-			FIELD field_20836 cancelled Ljava/util/concurrent/atomic/AtomicBoolean;
+			FIELD field_20836 cancelled Z
 			FIELD field_53959 prioritized Z
-			FIELD field_54169 finished Ljava/util/concurrent/atomic/AtomicBoolean;
+			FIELD field_54169 finished Z
 			METHOD <init> (Lnet/minecraft/class_846$class_851;Z)V
 				ARG 2 prioritized
 			METHOD method_22782 cancel ()V

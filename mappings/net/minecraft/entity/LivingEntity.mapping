@@ -139,9 +139,7 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 3 y
 		ARG 5 z
 	METHOD method_1_9769 doTeleport (DDDZLjava/util/function/Predicate;Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;)Z
-		ARG 1 x
 		ARG 3 y
-		ARG 5 z
 		ARG 7 particleEffects
 		ARG 8 cannotTeleportTo
 		ARG 9 destState
@@ -822,10 +820,9 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_66282 tickMovementInput ()V
 	METHOD method_66283 playThornsSound (Lnet/minecraft/class_1282;)V
 		ARG 1 damageSource
-	METHOD method_66667 getEquipSound (Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;Lnet/minecraft/class_10192;)Lnet/minecraft/class_6880;
+	METHOD method_66667 getEquipSound (Lnet/minecraft/class_1304;Lnet/minecraft/class_10192;)Lnet/minecraft/class_6880;
 		ARG 1 slot
-		ARG 2 stack
-		ARG 3 equippableComponent
+		ARG 2 equippableComponent
 	METHOD method_66668 (Ljava/util/List;Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;)V
 		ARG 2 slot
 		ARG 3 stack

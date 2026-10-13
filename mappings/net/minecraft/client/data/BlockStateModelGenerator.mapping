@@ -112,7 +112,6 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 4 model
 	METHOD method_25513 registerFire ()V
 	METHOD method_25514 registerSoulFire ()V
-	METHOD method_25515 registerFrostedIce ()V
 	METHOD method_25516 registerTopSoils ()V
 	METHOD method_25517 registerCocoa ()V
 	METHOD method_25519 registerHopper ()V

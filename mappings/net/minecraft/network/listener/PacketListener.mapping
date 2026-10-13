@@ -18,9 +18,6 @@ CLASS net/minecraft/class_2547 net/minecraft/network/listener/PacketListener
 		ARG 2 section
 	METHOD method_55622 fillCrashReport (Lnet/minecraft/class_128;)V
 		ARG 1 report
-	METHOD method_59807 onPacketException (Lnet/minecraft/class_2596;Ljava/lang/Exception;)V
-		ARG 1 packet
-		ARG 2 exception
 	METHOD method_60881 createDisconnectionInfo (Lnet/minecraft/class_2561;Ljava/lang/Throwable;)Lnet/minecraft/class_9812;
 		ARG 1 reason
 		ARG 2 exception

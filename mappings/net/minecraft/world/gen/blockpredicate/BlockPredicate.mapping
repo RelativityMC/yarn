@@ -36,7 +36,7 @@ CLASS net/minecraft/class_6646 net/minecraft/world/gen/blockpredicate/BlockPredi
 		ARG 1 second
 	METHOD method_38885 anyOf (Ljava/util/List;)Lnet/minecraft/class_6646;
 		ARG 0 predicates
-	METHOD method_38886 matchingFluids (Lnet/minecraft/class_2382;Ljava/util/List;)Lnet/minecraft/class_6646;
+	METHOD method_38886 matchingFluids (Lnet/minecraft/class_2382;Ljava/util/List;Lnet/minecraft/class_4559;)Lnet/minecraft/class_6646;
 		ARG 0 offset
 		ARG 1 fluids
 	METHOD method_38887 anyOf ([Lnet/minecraft/class_6646;)Lnet/minecraft/class_6646;

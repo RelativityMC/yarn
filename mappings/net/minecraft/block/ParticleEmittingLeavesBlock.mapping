@@ -1,8 +1,7 @@
 CLASS net/minecraft/class_1_1123 net/minecraft/block/ParticleEmittingLeavesBlock
 	FIELD field_1_7764 leafParticleChance F
-	METHOD <init> (FLnet/minecraft/class_1_1136;Lnet/minecraft/class_4970$class_2251;)V
+	METHOD <init> (FLjava/util/Optional;Lnet/minecraft/class_4970$class_2251;)V
 		ARG 1 leafParticleChance
-		ARG 2 soundPlayer
 		ARG 3 settings
 	METHOD method_1_7098 tickLeafParticles (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)V
 		ARG 1 world

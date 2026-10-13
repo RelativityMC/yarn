@@ -111,7 +111,6 @@ CLASS net/minecraft/class_2784 net/minecraft/world/border/WorldBorder
 		ARG 5 margin
 	METHOD method_39459 canCollide (Lnet/minecraft/class_1297;Lnet/minecraft/class_238;)Z
 		ARG 1 entity
-		ARG 2 box
 	METHOD method_39538 clampFloored (DDD)Lnet/minecraft/class_2338;
 		ARG 1 x
 		ARG 3 y

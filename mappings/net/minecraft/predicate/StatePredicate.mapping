@@ -36,7 +36,7 @@ CLASS net/minecraft/class_4559 net/minecraft/predicate/StatePredicate
 		METHOD method_22527 exactMatch (Lnet/minecraft/class_2769;Z)Lnet/minecraft/class_4559$class_4560;
 			ARG 1 property
 			ARG 2 value
-		METHOD method_22528 build ()Ljava/util/Optional;
+		METHOD method_22528 build ()Lnet/minecraft/class_4559;
 	CLASS class_4561 ExactValueMatcher
 		FIELD comp_1831 value Ljava/lang/String;
 		FIELD field_45779 CODEC Lcom/mojang/serialization/Codec;

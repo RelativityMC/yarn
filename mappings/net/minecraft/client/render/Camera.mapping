@@ -46,7 +46,7 @@ CLASS net/minecraft/class_4184 net/minecraft/client/render/Camera
 	METHOD method_1_2096 getHudFov (F)F
 		ARG 1 tickProgress
 	METHOD method_1_2097 captureFrustum ()V
-	METHOD method_1_2098 getPerspectiveMatrix ()Lorg/joml/Matrix4f;
+	METHOD method_1_2098 getPerspectiveMatrix ()Lnet/minecraft/class_4604;
 	METHOD method_1_2099 revokePanoramaMode ()V
 	METHOD method_1_2100 setPanoramaMode ()V
 	METHOD method_1_2101 updateRenderState (Lnet/minecraft/class_12075;Lnet/minecraft/class_9779;)V
@@ -64,10 +64,7 @@ CLASS net/minecraft/class_4184 net/minecraft/client/render/Camera
 		ARG 1 tickProgress
 		ARG 2 fov
 	METHOD method_1_2109 getPanoramaHorizontalPlane ()Lorg/joml/Vector3fc;
-	METHOD method_1_2110 updateFrustum (Lorg/joml/Matrix4fc;Lorg/joml/Matrix4f;Lnet/minecraft/class_243;)V
-		ARG 1 positionMatrix
-		ARG 2 projectionMatrix
-		ARG 3 pos
+	METHOD method_1_2110 updateFrustum ()V
 	METHOD method_1_2111 setFocusedEntity (Lnet/minecraft/class_1297;)V
 		ARG 1 focusedEntity
 	METHOD method_1_2112 setArea (Lnet/minecraft/class_638;)V

@@ -122,9 +122,7 @@ CLASS net/minecraft/class_4717 net/minecraft/client/gui/screen/ChatInputSuggesto
 			ARG 1 amount
 		METHOD method_2371 scroll (I)V
 			ARG 1 offset
-		METHOD method_2372 mouseClicked (II)Z
-			ARG 1 x
-			ARG 2 y
+		METHOD method_2372 mouseClicked (Lnet/minecraft/class_11909;)Z
 		METHOD method_2373 render (Lnet/minecraft/class_332;II)V
 			ARG 1 context
 			ARG 2 mouseX

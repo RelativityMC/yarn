@@ -48,9 +48,8 @@ CLASS net/minecraft/class_1941 net/minecraft/world/CollisionView
 	METHOD method_39454 canCollide (Lnet/minecraft/class_1297;Lnet/minecraft/class_238;)Z
 		ARG 1 entity
 		ARG 2 box
-	METHOD method_39455 getWorldBorderCollisions (Lnet/minecraft/class_1297;Lnet/minecraft/class_238;)Lnet/minecraft/class_265;
-		ARG 1 entity
-		ARG 2 box
+	METHOD method_39455 getWorldBorderCollisions (DDLnet/minecraft/class_238;)Lnet/minecraft/class_265;
+		ARG 5 box
 	METHOD method_51715 (Lnet/minecraft/class_2338$class_2339;Lnet/minecraft/class_265;)Lnet/minecraft/class_2338;
 		ARG 0 pos
 		ARG 1 voxelShape

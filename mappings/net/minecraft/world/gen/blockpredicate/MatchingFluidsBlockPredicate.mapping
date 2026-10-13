@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_6650 net/minecraft/world/gen/blockpredicate/MatchingFluidsBlockPredicate
 	FIELD field_35065 CODEC Lcom/mojang/serialization/MapCodec;
 	FIELD field_35066 fluids Lnet/minecraft/class_6885;
-	METHOD <init> (Lnet/minecraft/class_2382;Lnet/minecraft/class_6885;)V
+	METHOD <init> (Lnet/minecraft/class_2382;Lnet/minecraft/class_6885;Lnet/minecraft/class_4559;)V
 		ARG 1 offset
 		ARG 2 fluids
 	METHOD method_38898 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

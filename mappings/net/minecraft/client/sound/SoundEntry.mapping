@@ -7,5 +7,5 @@ CLASS net/minecraft/class_1110 net/minecraft/client/sound/SoundEntry
 		ARG 2 replace
 		ARG 3 subtitle
 	METHOD method_4761 getSounds ()Ljava/util/List;
-	METHOD method_4762 getSubtitle ()Ljava/lang/String;
+	METHOD method_4762 getSubtitle ()Lnet/minecraft/class_2561;
 	METHOD method_4763 canReplace ()Z

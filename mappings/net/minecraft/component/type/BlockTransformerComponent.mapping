@@ -29,7 +29,7 @@ CLASS net/minecraft/class_1_1156 net/minecraft/component/type/BlockTransformerCo
 			FIELD field_1_8075 itemDamagePerUse I
 			FIELD field_1_8076 loot Ljava/util/Optional;
 			FIELD field_1_8077 particle Lnet/minecraft/class_1_1156$class_1_1161;
-			FIELD field_1_8078 sound Lnet/minecraft/class_6880;
+			FIELD field_1_8078 sound Ljava/util/Optional;
 			FIELD field_1_8079 blockStateProvider Lnet/minecraft/class_6880;
 			FIELD field_1_8080 transformType Lnet/minecraft/class_1_1156$class_1_1162;
 			FIELD field_1_8496 updateFromNeighbors Z

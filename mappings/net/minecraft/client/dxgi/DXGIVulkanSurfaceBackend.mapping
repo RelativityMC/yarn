@@ -21,7 +21,6 @@ CLASS net/minecraft/class_1_1770 net/minecraft/client/dxgi/DXGIVulkanSurfaceBack
 	FIELD field_1_11546 swapChainImages Lit/unimi/dsi/fastutil/longs/LongList;
 	FIELD field_1_11547 vkSemaphore J
 	FIELD field_1_11548 vulkanDevice Lnet/minecraft/class_1_679;
-	FIELD field_1_11549 frameLatencyWaitableObject Lnet/minecraft/class_1_1737;
 	FIELD field_1_11550 hwnd J
 	METHOD <init> (Lnet/minecraft/class_1_679;J)V
 		ARG 1 vulkanDevice

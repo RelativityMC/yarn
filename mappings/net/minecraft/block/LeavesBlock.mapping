@@ -1,13 +1,12 @@
 CLASS net/minecraft/class_2397 net/minecraft/block/LeavesBlock
-	FIELD field_1_7418 soundPlayer Lnet/minecraft/class_1_1136;
+	FIELD field_1_7418 soundPlayer Ljava/util/Optional;
 	FIELD field_11199 DISTANCE Lnet/minecraft/class_2758;
 	FIELD field_11200 PERSISTENT Lnet/minecraft/class_2746;
 	FIELD field_31111 MAX_DISTANCE I
 	FIELD field_31112 OPACITY I
 	FIELD field_38227 WATERLOGGED Lnet/minecraft/class_2746;
 	FIELD field_64683 cutoutLeaves Z
-	METHOD <init> (Lnet/minecraft/class_1_1136;Lnet/minecraft/class_4970$class_2251;)V
-		ARG 1 soundPlayer
+	METHOD <init> (Ljava/util/Optional;Lnet/minecraft/class_4970$class_2251;)V
 		ARG 2 settings
 	METHOD method_10300 updateDistanceFromLogs (Lnet/minecraft/class_2680;Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;)Lnet/minecraft/class_2680;
 		ARG 0 state

@@ -36,9 +36,6 @@ CLASS net/minecraft/class_7923 net/minecraft/registry/Registries
 	FIELD field_41161 STRUCTURE_PROCESSOR Lnet/minecraft/class_2378;
 	FIELD field_41162 STRUCTURE_POOL_ELEMENT Lnet/minecraft/class_2378;
 	FIELD field_41167 REGISTRIES Lnet/minecraft/class_2378;
-	FIELD field_41168 LOGGER Lorg/slf4j/Logger;
-	FIELD field_41169 DEFAULT_ENTRIES Ljava/util/Map;
-	FIELD field_41170 ROOT Lnet/minecraft/class_2385;
 	FIELD field_41171 GAME_EVENT Lnet/minecraft/class_7922;
 	FIELD field_41172 SOUND_EVENT Lnet/minecraft/class_2378;
 	FIELD field_41173 FLUID Lnet/minecraft/class_7922;
@@ -100,37 +97,5 @@ CLASS net/minecraft/class_7923 net/minecraft/registry/Registries
 	FIELD field_64250 SLOT_SOURCE_TYPE Lnet/minecraft/class_2378;
 	FIELD field_64251 GAME_RULE Lnet/minecraft/class_2378;
 	METHOD method_47476 bootstrap ()V
-	METHOD method_47478 create (Lnet/minecraft/class_5321;Lnet/minecraft/class_2385;Lnet/minecraft/class_7923$class_6889;)Lnet/minecraft/class_2385;
-		ARG 0 key
-		ARG 1 registry
-		ARG 2 initializer
-	METHOD method_47479 create (Lnet/minecraft/class_5321;Lnet/minecraft/class_7923$class_6889;)Lnet/minecraft/class_2378;
-		ARG 0 key
-		ARG 1 initializer
-	METHOD method_47481 create (Lnet/minecraft/class_5321;Ljava/lang/String;Lnet/minecraft/class_7923$class_6889;)Lnet/minecraft/class_7922;
-		ARG 0 key
-		ARG 1 defaultId
-		ARG 2 initializer
-	METHOD method_47482 (Lnet/minecraft/class_2960;Ljava/util/function/Supplier;)V
-		ARG 0 id
-		ARG 1 initializer
-	METHOD method_47483 validate (Lnet/minecraft/class_2378;)V
-		ARG 0 registries
-	METHOD method_47484 (Lnet/minecraft/class_2378;Lnet/minecraft/class_2378;)V
-		ARG 1 registry
-	METHOD method_47487 init ()V
-	METHOD method_47489 createIntrusive (Lnet/minecraft/class_5321;Ljava/lang/String;Lnet/minecraft/class_7923$class_6889;)Lnet/minecraft/class_7922;
-		ARG 0 key
-		ARG 1 defaultId
-		ARG 2 initializer
-	METHOD method_47491 freezeRegistries ()V
-	METHOD method_53495 createIntrusive (Lnet/minecraft/class_5321;Lnet/minecraft/class_7923$class_6889;)Lnet/minecraft/class_2378;
-		ARG 0 key
-		ARG 1 initializer
 	METHOD method_62715 createEntryLookup (Lnet/minecraft/class_2378;)Lnet/minecraft/class_7871;
 		ARG 0 registry
-	METHOD method_62716 resetTagEntries (Lnet/minecraft/class_2378;)V
-		ARG 0 registry
-	CLASS class_6889 Initializer
-		METHOD method_1_167 run (Lnet/minecraft/class_2378;)Ljava/lang/Object;
-			ARG 1 registry

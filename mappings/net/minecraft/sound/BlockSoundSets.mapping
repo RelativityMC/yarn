@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_2498 net/minecraft/sound/BlockSoundGroup
+CLASS net/minecraft/class_2498 net/minecraft/sound/BlockSoundSets
 	FIELD field_1_3571 CINNABAR Lnet/minecraft/class_5321;
 	FIELD field_1_3572 POTENT_SULFUR Lnet/minecraft/class_5321;
 	FIELD field_1_3573 SULFUR Lnet/minecraft/class_5321;

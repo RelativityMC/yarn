@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_1_1832 net/minecraft/block/CrumblingIceBlock
+	FIELD field_1_11905 AGE Lnet/minecraft/class_2758;
+	FIELD field_1_11906 MAX_AGE I
+	METHOD method_1_11542 getCrumblingSound ()Lnet/minecraft/class_3414;
+	METHOD method_1_11543 getCrumbleDelay (Lnet/minecraft/class_5819;)I
+		ARG 1 random
+	METHOD method_1_11544 onAdvanceAge (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)V
+		ARG 1 state
+		ARG 2 world
+		ARG 3 pos
+	METHOD method_1_11545 crumble (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)V
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 random
+	METHOD method_1_11546 advanceAge (Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)Z
+		COMMENT {@return {@code true} if this block has melted completely}
+		ARG 1 state
+		ARG 2 world
+		ARG 3 pos

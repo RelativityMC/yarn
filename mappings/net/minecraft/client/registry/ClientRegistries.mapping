@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_1845 net/minecraft/client/registry/ClientRegistries
+	FIELD field_1_11944 BLOCK_ENTITY_RENDERER Lnet/minecraft/class_2378;
+	FIELD field_1_11945 ROOT Lnet/minecraft/class_1_1834;
+	FIELD field_1_11946 DEBUG_SCREEN_ENTRY Lnet/minecraft/class_2378;
+	FIELD field_1_11947 ENTITY_RENDERER Lnet/minecraft/class_2378;
+	FIELD field_1_11948 MENU_SCREEN Lnet/minecraft/class_2378;
+	FIELD field_1_11949 PARTICLE_PROVIDER Lnet/minecraft/class_2378;
+	FIELD field_1_11950 REGISTRIES Lnet/minecraft/class_2378;
+	METHOD method_1_11682 bootstrap ()V

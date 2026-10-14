@@ -1,5 +1,10 @@
 CLASS net/minecraft/class_11910 net/minecraft/client/input/MouseInput
 	FIELD comp_4801 button I
 	METHOD comp_4801 button ()I
+	METHOD method_1_11506 isLeftClick ()Z
+	METHOD method_1_11507 isMiddleClick ()Z
+	METHOD method_1_11508 isSide1Click ()Z
+	METHOD method_1_11509 isSide2Click ()Z
+	METHOD method_1_11510 isRightClick ()Z
 	CLASS class_12147 MouseAction
 	CLASS class_12148 ButtonCode

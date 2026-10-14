@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_1_1827 net/minecraft/screen/JukeboxScreenHandler
+	FIELD field_1_11893 containerInventory Lnet/minecraft/class_1263;
+	FIELD field_1_11894 propertyDelegate Lnet/minecraft/class_3913;
+	METHOD <init> (ILnet/minecraft/class_1661;)V
+		ARG 1 syncId
+		ARG 2 playerInventory
+	METHOD <init> (ILnet/minecraft/class_1661;Lnet/minecraft/class_1263;Lnet/minecraft/class_3913;)V
+		ARG 1 syncId
+		ARG 2 playerInventory
+		ARG 3 containerInventory
+		ARG 4 propertyDelegate
+	METHOD method_1_11502 getNextSlot ()Ljava/util/OptionalInt;

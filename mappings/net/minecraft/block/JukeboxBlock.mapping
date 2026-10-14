@@ -1,2 +1,3 @@
 CLASS net/minecraft/class_2387 net/minecraft/block/JukeboxBlock
+	FIELD field_1_11899 PLAYLIST_MODE Lnet/minecraft/class_2746;
 	FIELD field_11180 HAS_RECORD Lnet/minecraft/class_2746;

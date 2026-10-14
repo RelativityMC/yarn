@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_2688 net/minecraft/state/State
+	FIELD field_1_2479 PROPERTY_NOT_FOUND I
 	FIELD field_1_2480 properties [Lnet/minecraft/class_2769;
 	FIELD field_1_2481 values [Ljava/lang/Comparable;
 	FIELD field_24739 owner Ljava/lang/Object;

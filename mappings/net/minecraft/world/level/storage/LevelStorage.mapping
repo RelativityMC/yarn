@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_32 net/minecraft/world/level/storage/LevelStorage
+	FIELD field_1_7080 FOLDER_ACCESS_TEXT Lnet/minecraft/class_2561;
 	FIELD field_17665 LOGGER Lorg/slf4j/Logger;
 	FIELD field_17666 savesDirectory Ljava/nio/file/Path;
 	FIELD field_17667 backupsDirectory Ljava/nio/file/Path;

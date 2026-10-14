@@ -1,1 +1,4 @@
 CLASS net/minecraft/class_1742 net/minecraft/item/ArmorStandItem
+	METHOD method_1_11494 playSound (Lnet/minecraft/class_1937;Lnet/minecraft/class_1531;)V
+		ARG 0 world
+		ARG 1 armorStand

@@ -218,6 +218,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	METHOD method_1_6371 toggleFullscreen ()V
 	METHOD method_1_6428 getPaletteManager ()Lnet/minecraft/class_1_1126;
 	METHOD method_1_11012 getGameProfileResolver ()Lnet/minecraft/class_11755;
+	METHOD method_1_11478 showWindow ()V
 	METHOD method_1478 getResourceManager ()Lnet/minecraft/class_3300;
 	METHOD method_1479 getResourcePackDir ()Ljava/nio/file/Path;
 	METHOD method_1481 joinWorld (Lnet/minecraft/class_638;)V

@@ -26,10 +26,14 @@ CLASS net/minecraft/class_3551 net/minecraft/datafixer/Schemas
 		ARG 0 replacements
 	METHOD method_30071 (Ljava/util/Map;Ljava/lang/String;)Ljava/lang/String;
 		ARG 1 string
+	METHOD method_43060 (Lcom/google/common/collect/ImmutableMap;Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 path
 	METHOD method_43061 (Lit/unimi/dsi/fastutil/ints/Int2ObjectOpenHashMap;)V
 		ARG 0 frogVariants
 	METHOD method_43062 (Lit/unimi/dsi/fastutil/ints/Int2ObjectOpenHashMap;)V
 		ARG 0 catVariants
+	METHOD method_44184 (Ljava/util/Map;Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 id
 	METHOD method_51289 (Ljava/lang/String;)Ljava/lang/String;
 		ARG 0 id
 	METHOD method_57075 replacingRaw (Ljava/util/Map;)Ljava/util/function/UnaryOperator;

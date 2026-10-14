@@ -1,5 +1,9 @@
 CLASS net/minecraft/class_1_1769 net/minecraft/block/BlockSoundSet
 	FIELD field_1_11521 EMPTY Lnet/minecraft/class_1_1769;
+	METHOD <init> (FFLnet/minecraft/class_1_1844;)V
+		ARG 1 volume
+		ARG 2 pitch
+		ARG 3 sounds
 	METHOD <init> (FFLnet/minecraft/class_6880;Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)V
 		ARG 1 volume
 		ARG 2 pitch
@@ -8,6 +12,8 @@ CLASS net/minecraft/class_1_1769 net/minecraft/block/BlockSoundSet
 		ARG 5 placeSound
 		ARG 6 hitSound
 		ARG 7 fallSound
+	METHOD <init> (Lnet/minecraft/class_1_1844;)V
+		ARG 1 sounds
 	METHOD <init> (Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;Lnet/minecraft/class_6880;)V
 		ARG 1 breakSound
 		ARG 2 stepSound

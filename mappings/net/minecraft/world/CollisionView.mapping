@@ -1,4 +1,17 @@
 CLASS net/minecraft/class_1941 net/minecraft/world/CollisionView
+	METHOD method_1_11503 doesNotCollideWithWorldBorder (DDLnet/minecraft/class_238;)Z
+		ARG 1 x
+		ARG 3 z
+		ARG 5 box
+	METHOD method_1_11504 isSpaceEmpty (DDLnet/minecraft/class_238;)Z
+		ARG 1 x
+		ARG 3 z
+		ARG 5 box
+	METHOD method_1_11505 isSpaceEmpty (DDLnet/minecraft/class_238;Z)Z
+		ARG 1 x
+		ARG 3 z
+		ARG 5 box
+		ARG 6 checkFluid
 	METHOD method_8587 isSpaceEmpty (Lnet/minecraft/class_1297;Lnet/minecraft/class_238;)Z
 		ARG 1 entity
 		ARG 2 box
@@ -49,6 +62,8 @@ CLASS net/minecraft/class_1941 net/minecraft/world/CollisionView
 		ARG 1 entity
 		ARG 2 box
 	METHOD method_39455 getWorldBorderCollisions (DDLnet/minecraft/class_238;)Lnet/minecraft/class_265;
+		ARG 1 x
+		ARG 3 z
 		ARG 5 box
 	METHOD method_51715 (Lnet/minecraft/class_2338$class_2339;Lnet/minecraft/class_265;)Lnet/minecraft/class_2338;
 		ARG 0 pos
@@ -84,7 +99,7 @@ CLASS net/minecraft/class_1941 net/minecraft/world/CollisionView
 	METHOD method_76791 isBlockSpaceEmpty (Lnet/minecraft/class_1297;Lnet/minecraft/class_238;Z)Z
 		ARG 1 entity
 		ARG 2 box
-		ARG 3 blockOrFluid
+		ARG 3 checkFluid
 	METHOD method_76792 doesNotCollideWithEntities (Lnet/minecraft/class_1297;Lnet/minecraft/class_238;)Z
 		ARG 1 entity
 		ARG 2 box

@@ -16,6 +16,10 @@ CLASS net/minecraft/class_2784 net/minecraft/world/border/WorldBorder
 	FIELD field_63954 initialized Z
 	METHOD <init> (Lnet/minecraft/class_2784$class_5200;)V
 		ARG 1 properties
+	METHOD method_1_11528 canCollide (DDLnet/minecraft/class_238;)Z
+		ARG 1 x
+		ARG 3 z
+		ARG 5 box
 	METHOD method_11951 contains (Lnet/minecraft/class_1923;)Z
 		ARG 1 chunkPos
 	METHOD method_11952 contains (Lnet/minecraft/class_2338;)Z
@@ -111,6 +115,7 @@ CLASS net/minecraft/class_2784 net/minecraft/world/border/WorldBorder
 		ARG 5 margin
 	METHOD method_39459 canCollide (Lnet/minecraft/class_1297;Lnet/minecraft/class_238;)Z
 		ARG 1 entity
+		ARG 2 box
 	METHOD method_39538 clampFloored (DDD)Lnet/minecraft/class_2338;
 		ARG 1 x
 		ARG 3 y

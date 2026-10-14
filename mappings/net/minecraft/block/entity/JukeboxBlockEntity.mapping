@@ -1,4 +1,10 @@
 CLASS net/minecraft/class_2619 net/minecraft/block/entity/JukeboxBlockEntity
+	FIELD field_1_11929 PLAYLIST_POSITION_INDEX I
+	FIELD field_1_11930 PLAYLIST_POSITION_DEFAULT I
+	FIELD field_1_11931 PLAYLIST_POSITION_COUNT I
+	FIELD field_1_11932 PLAYLIST_POSITION_KEY Ljava/lang/String;
+	FIELD field_1_11933 propertyDelegate Lnet/minecraft/class_3913;
+	FIELD field_1_11934 playlistPosition Ljava/util/OptionalInt;
 	FIELD field_46507 recordStack Lnet/minecraft/class_1799;
 	FIELD field_52064 RECORD_ITEM_NBT_KEY Ljava/lang/String;
 	FIELD field_52065 TICKS_SINCE_SONG_STARTED_NBT_KEY Ljava/lang/String;
@@ -6,6 +12,32 @@ CLASS net/minecraft/class_2619 net/minecraft/block/entity/JukeboxBlockEntity
 	METHOD <init> (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
 		ARG 1 pos
 		ARG 2 state
+	METHOD method_1_11634 swapDiscs (Lnet/minecraft/class_1263;I)V
+		ARG 1 containerInventory
+		ARG 2 slot
+	METHOD method_1_11635 createScreenHandlerForContainer (ILnet/minecraft/class_1661;Lnet/minecraft/class_1263;)Lnet/minecraft/class_1703;
+		ARG 1 syncId
+		ARG 2 playerInventory
+		ARG 3 containerInventory
+	METHOD method_1_11636 getNextSlot (Lnet/minecraft/class_1263;I)Ljava/util/OptionalInt;
+		ARG 0 containerInventory
+		ARG 1 playlistPosition
+	METHOD method_1_11637 isBelowJukeboxContainer (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)Z
+		ARG 0 world
+		ARG 1 pos
+	METHOD method_1_11638 isPlayable (Lnet/minecraft/class_1799;)Z
+		ARG 0 stack
+	METHOD method_1_11639 (Lnet/minecraft/class_1263;I)V
+		ARG 2 playlistPosition
+	METHOD method_1_11641 playCurrentDisc ()V
+	METHOD method_1_11642 shouldRaiseNoteParticles ()Z
+	METHOD method_1_11643 tickWithPlaylist (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2619;)V
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 state
+		ARG 3 blockEntity
+	METHOD method_1_11644 playNextEntry (Z)V
+		ARG 1 playCurrentDisc
 	METHOD method_44370 tick (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2619;)V
 		ARG 0 world
 		ARG 1 pos

@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_4559 net/minecraft/predicate/StatePredicate
 	FIELD comp_1830 conditions Ljava/util/List;
+	FIELD field_1_11951 PASS Lnet/minecraft/class_4559;
 	FIELD field_45777 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_45778 CONDITION_LIST_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_49396 PACKET_CODEC Lnet/minecraft/class_9139;

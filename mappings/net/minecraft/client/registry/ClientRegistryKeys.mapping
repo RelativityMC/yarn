@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_1836 net/minecraft/client/registry/ClientRegistryKeys
+	FIELD field_1_11917 ROOT Lnet/minecraft/class_2960;
+	METHOD method_1_11618 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 path

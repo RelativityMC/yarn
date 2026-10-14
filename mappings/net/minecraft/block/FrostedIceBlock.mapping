@@ -1,6 +1,13 @@
 CLASS net/minecraft/class_2360 net/minecraft/block/FrostedIceBlock
+	FIELD field_1_11903 CRUMBLE_MAX_DELAY I
+	FIELD field_1_11904 CRUMBLE_MIN_DELAY I
 	FIELD field_31097 NEIGHBORS_CHECKED_ON_SCHEDULED_TICK I
 	FIELD field_31098 NEIGHBORS_CHECKED_ON_NEIGHBOR_UPDATE I
+	METHOD method_1_11540 shouldStartCrumbling (Lnet/minecraft/class_2680;Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)Z
+		ARG 1 state
+		ARG 2 world
+		ARG 3 pos
+		ARG 4 random
 	METHOD method_10202 canMelt (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;I)Z
 		ARG 1 world
 		ARG 2 pos

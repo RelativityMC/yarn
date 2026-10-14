@@ -1,2 +1,7 @@
 CLASS net/minecraft/class_11909 net/minecraft/client/gui/Click
+	METHOD method_1_11514 isLeftClick ()Z
+	METHOD method_1_11515 isMiddleClick ()Z
+	METHOD method_1_11516 isSide1Click ()Z
+	METHOD method_1_11517 isSide2Click ()Z
+	METHOD method_1_11518 isRightClick ()Z
 	METHOD method_74245 button ()I

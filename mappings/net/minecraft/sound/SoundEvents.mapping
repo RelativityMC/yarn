@@ -11,6 +11,7 @@ CLASS net/minecraft/class_3417 net/minecraft/sound/SoundEvents
 	FIELD field_1_11859 BLOCK_SOUND_SET_STEM Lnet/minecraft/class_1_1844;
 	FIELD field_1_11863 BLOCK_SOUND_SET_NETHER_WART Lnet/minecraft/class_1_1844;
 	FIELD field_14573 BLOCK_SOUND_SET_CROP Lnet/minecraft/class_1_1844;
+	FIELD field_21887 BLOCK_SOUND_SET_NETHER_STEM Lnet/minecraft/class_1_1844;
 	FIELD field_39027 GOAT_HORN_SOUND_COUNT I
 	FIELD field_39028 GOAT_HORN_SOUNDS Lcom/google/common/collect/ImmutableList;
 	FIELD field_42580 BLOCK_SOUND_SET_DECORATED_POT_SHATTER Lnet/minecraft/class_1_1844;

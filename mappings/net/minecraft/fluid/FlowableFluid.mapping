@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_3609 net/minecraft/fluid/FlowableFluid
 	COMMENT Represents a fluid which can flow.
 	FIELD field_15900 LEVEL Lnet/minecraft/class_2758;
+	FIELD field_15901 NEIGHBOR_FLOW_CACHE Ljava/lang/ThreadLocal;
 	FIELD field_15902 SOURCE Lnet/minecraft/class_2746;
 	FIELD field_17587 shapeCache Ljava/util/Map;
 	FIELD field_31726 CACHE_SIZE I
@@ -26,19 +27,19 @@ CLASS net/minecraft/class_3609 net/minecraft/fluid/FlowableFluid
 	METHOD method_15732 receivesFlow (Lnet/minecraft/class_2350;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Z
 		ARG 0 face
 		ARG 1 world
-		ARG 2 pos
-		ARG 3 state
-		ARG 4 fromPos
-		ARG 5 fromState
+		ARG 2 fromPos
+		ARG 3 fromState
+		ARG 4 toPos
+		ARG 5 toState
 	METHOD method_15733 getMaxFlowDistance (Lnet/minecraft/class_4538;)I
 		COMMENT {@return the maximum horizontal distance to check for holes the fluid can flow down into}
 		ARG 1 world
 	METHOD method_15736 canFlowDownTo (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Z
 		ARG 1 world
-		ARG 2 pos
-		ARG 3 state
-		ARG 4 fromPos
-		ARG 5 fromState
+		ARG 2 fromPos
+		ARG 3 fromState
+		ARG 4 toPos
+		ARG 5 toState
 	METHOD method_15737 isInfinite (Lnet/minecraft/class_3218;)Z
 		ARG 1 world
 	METHOD method_15739 getLevelDecreasePerBlock (Lnet/minecraft/class_4538;)I
@@ -52,6 +53,7 @@ CLASS net/minecraft/class_3609 net/minecraft/fluid/FlowableFluid
 		COMMENT Finds the distance to the closest hole the fluid can flow down into starting with the direction specified.
 		ARG 1 world
 		ARG 2 pos
+		ARG 3 cumulativeDistance
 		ARG 4 direction
 		ARG 5 state
 		ARG 6 spreadCache
@@ -66,14 +68,14 @@ CLASS net/minecraft/class_3609 net/minecraft/fluid/FlowableFluid
 		ARG 3 state
 		ARG 4 direction
 		ARG 5 fluidState
-	METHOD method_15746 (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2350;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_3610;)Z
+	METHOD method_15746 canFlowIntoFillable (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2350;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_3610;)Z
 		ARG 1 world
-		ARG 2 pos
-		ARG 3 state
+		ARG 2 fromPos
+		ARG 3 fromState
 		ARG 4 face
-		ARG 5 fromPos
-		ARG 6 fromState
-		ARG 7 fluidState
+		ARG 5 toPos
+		ARG 6 toState
+		ARG 7 toFluidState
 	METHOD method_15748 isEmptyOrThis (Lnet/minecraft/class_3610;)Z
 		ARG 1 state
 	METHOD method_15749 isFlowBlocked (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;)Z
@@ -90,9 +92,9 @@ CLASS net/minecraft/class_3609 net/minecraft/fluid/FlowableFluid
 		ARG 4 newState
 	METHOD method_15754 canFill (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_3610;)Z
 		ARG 0 world
-		ARG 1 fromPos
-		ARG 2 fromState
-		ARG 3 toState
+		ARG 1 pos
+		ARG 2 state
+		ARG 3 fluidState
 	METHOD method_17773 (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_3610;)Lnet/minecraft/class_265;
 		ARG 2 state2
 	METHOD method_17774 isFluidAboveEqual (Lnet/minecraft/class_3610;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z
@@ -101,19 +103,22 @@ CLASS net/minecraft/class_3609 net/minecraft/fluid/FlowableFluid
 		ARG 2 pos
 	METHOD method_61813 canFlowThrough (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2350;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_3610;)Z
 		ARG 1 world
-		ARG 2 pos
-		ARG 3 state
+		ARG 2 fromPos
+		ARG 3 fromState
 		ARG 4 face
-		ARG 5 fromPos
-		ARG 6 fromState
-		ARG 7 fluidState
+		ARG 5 toPos
+		ARG 6 toState
+		ARG 7 toFluidState
 	METHOD method_61814 canFill (Lnet/minecraft/class_2680;)Z
 		ARG 0 state
 	METHOD method_61815 canFillWithFluid (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_3610;)Z
 		ARG 0 world
-		ARG 1 fromPos
-		ARG 2 fromState
-		ARG 3 toState
+		ARG 1 pos
+		ARG 2 state
+		ARG 3 fluidState
+	CLASS 1 1
+		METHOD rehash (I)V
+			ARG 1 size
 	CLASS class_2249 NeighborGroup
 		FIELD comp_3130 self Lnet/minecraft/class_2680;
 		FIELD comp_3131 other Lnet/minecraft/class_2680;

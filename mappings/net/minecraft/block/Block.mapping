@@ -22,6 +22,7 @@ CLASS net/minecraft/class_2248 net/minecraft/block/Block
 	COMMENT
 	COMMENT @see AbstractBlock
 	COMMENT @see BlockState
+	FIELD field_1_10568 BY_ID_PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_10638 LOGGER Lorg/slf4j/Logger;
 	FIELD field_10646 defaultState Lnet/minecraft/class_2680;
 	FIELD field_10647 stateManager Lnet/minecraft/class_2689;
@@ -452,7 +453,9 @@ CLASS net/minecraft/class_2248 net/minecraft/block/Block
 	METHOD method_72546 generateBlockInteractLoot (Lnet/minecraft/class_3218;Lnet/minecraft/class_5321;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2586;Lnet/minecraft/class_1_96;Lnet/minecraft/class_1297;Ljava/util/function/BiConsumer;)Z
 		ARG 0 world
 		ARG 1 lootTable
+		ARG 2 pos
 		ARG 3 state
+		ARG 4 blockEntity
 		ARG 5 tool
 		ARG 6 interactingEntity
 		ARG 7 lootConsumer

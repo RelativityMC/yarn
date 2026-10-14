@@ -1,9 +1,13 @@
 CLASS net/minecraft/class_10529 net/minecraft/client/render/block/entity/AbstractSignBlockEntityRenderer
+	FIELD field_1_10750 GLOWING_COLORS Lnet/minecraft/class_1_727;
+	FIELD field_1_10751 COLORS Lnet/minecraft/class_1_727;
 	FIELD field_55506 GLOWING_BLACK_TEXT_COLOR I
 	FIELD field_55507 MAX_COLORED_TEXT_OUTLINE_RENDER_DISTANCE I
 	FIELD field_55508 textRenderer Lnet/minecraft/class_327;
 	METHOD <init> (Lnet/minecraft/class_5614$class_5615;)V
 		ARG 1 context
+	METHOD method_1_10787 (Ljava/lang/Integer;)Ljava/lang/Integer;
+		ARG 0 color
 	METHOD method_65819 (Lnet/minecraft/class_11971;Lnet/minecraft/class_2561;)Lnet/minecraft/class_5481;
 		ARG 2 textx
 	METHOD method_65827 shouldRenderTextOutline (Lnet/minecraft/class_2338;)Z

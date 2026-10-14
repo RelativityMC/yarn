@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_1839 net/minecraft/client/gui/screen/ingame/JukeboxScreen
+	FIELD field_1_11924 PLAYING_NEXT_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_11925 screenHandler Lnet/minecraft/class_1_1827;

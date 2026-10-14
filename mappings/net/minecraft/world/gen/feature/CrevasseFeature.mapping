@@ -1,0 +1,59 @@
+CLASS net/minecraft/class_1_1841 net/minecraft/world/gen/feature/CrevasseFeature
+	FIELD field_1_11939 MAX_DESCENT I
+	METHOD method_1_11648 generateArmColumns (Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;Lnet/minecraft/class_5281;Lnet/minecraft/class_2338;IIFLnet/minecraft/class_5819;)V
+		ARG 1 columnsOut
+		ARG 2 world
+		ARG 3 origin
+		ARG 4 length
+		ARG 5 depth
+		ARG 6 angle
+		ARG 7 random
+	METHOD method_1_11649 carveColumn (Lnet/minecraft/class_5281;Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;Lnet/minecraft/class_1_1841$class_1_1842;ILnet/minecraft/class_5819;)V
+		ARG 1 world
+		ARG 2 columns
+		ARG 3 current
+		ARG 4 maxFillY
+		ARG 5 random
+	METHOD method_1_11650 findTopmostCarvableBlock (Lnet/minecraft/class_5281;Lnet/minecraft/class_2338;I)Ljava/util/Optional;
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 cursorSurfaceSearchRange
+	METHOD method_1_11651 getColumn (Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;II)Lnet/minecraft/class_1_1841$class_1_1842;
+		ARG 1 columns
+		ARG 2 x
+		ARG 3 z
+	METHOD method_1_11652 getMaxFillY (Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;II)I
+		ARG 1 columns
+		ARG 2 originY
+		ARG 3 fillDepth
+	METHOD method_1_11653 hasSteepDescent (Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;Lnet/minecraft/class_1_1841$class_1_1842;)Z
+		ARG 1 columns
+		ARG 2 current
+	METHOD method_1_11654 (Lnet/minecraft/class_1_1841$class_1_1842;)I
+		ARG 0 column
+	METHOD method_1_11655 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_11656 retainContiguousColumns (Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;Lnet/minecraft/class_2338;)V
+		ARG 1 columnsInOut
+		ARG 2 origin
+	METHOD method_1_11657 placeNeighbors (Lnet/minecraft/class_5281;Lit/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap;Lnet/minecraft/class_1_1841$class_1_1842;Lnet/minecraft/class_2338;Lnet/minecraft/class_2248;)V
+		ARG 1 world
+		ARG 2 columns
+		ARG 3 current
+		ARG 4 pos
+		ARG 5 block
+	METHOD method_1_11658 placeBlock (Lnet/minecraft/class_5281;Lnet/minecraft/class_1_1841$class_1_1842;Lnet/minecraft/class_2338;Lnet/minecraft/class_2248;)V
+		ARG 1 world
+		ARG 2 current
+		ARG 3 pos
+		ARG 4 block
+	METHOD method_1_11659 isSurroundedByDryBlocks (Lnet/minecraft/class_5281;Lnet/minecraft/class_2338;)Z
+		ARG 1 world
+		ARG 2 pos
+	CLASS class_1_1842 Column
+		METHOD compareTo (Ljava/lang/Object;)I
+			ARG 1 other
+		METHOD method_1_11661 containsY (I)Z
+			ARG 1 y
+		METHOD method_1_11662 getBasePos ()I
+	CLASS class_1_1843 PosAndState

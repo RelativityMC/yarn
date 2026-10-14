@@ -38,6 +38,8 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 	CLASS class_1_342 OffsetGeometryBuffers
 	CLASS class_1_343 GeometryBuffers
 	CLASS class_851 BuiltChunk
+		FIELD field_1_11940 rebuildTask Ljava/util/concurrent/atomic/AtomicReference;
+		FIELD field_1_11941 sortTask Ljava/util/concurrent/atomic/AtomicReference;
 		FIELD field_4458 boundingBox Lnet/minecraft/class_238;
 		FIELD field_4467 origin Lnet/minecraft/class_2338$class_2339;
 		FIELD field_29641 index I
@@ -101,8 +103,11 @@ CLASS net/minecraft/class_846 net/minecraft/client/render/chunk/ChunkBuilder
 			FIELD field_54169 finished Z
 			METHOD <init> (Lnet/minecraft/class_846$class_851;Z)V
 				ARG 2 prioritized
+			METHOD method_1_11663 markCancelled ()V
+			METHOD method_1_11664 run (Lnet/minecraft/class_750;)Lnet/minecraft/class_846$class_851$class_4577$class_4690;
+				ARG 1 buffers
 			METHOD method_22782 cancel ()V
-			METHOD method_22783 run (Lnet/minecraft/class_750;)Lnet/minecraft/class_846$class_851$class_4577$class_4690;
+			METHOD method_22783 doRun (Lnet/minecraft/class_750;)Lnet/minecraft/class_846$class_851$class_4577$class_4690;
 				ARG 1 buffers
 			METHOD method_62976 isPrioritized ()Z
 			METHOD method_62977 getOrigin ()Lnet/minecraft/class_2338;

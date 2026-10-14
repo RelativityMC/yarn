@@ -1,10 +1,18 @@
 CLASS net/minecraft/class_11939 net/minecraft/client/particle/ParticleSpriteManager
+	FIELD field_1_11900 SPRITE_PROVIDERS_BY_TYPE Ljava/util/Map;
 	FIELD field_62625 LOGGER Lorg/slf4j/Logger;
 	FIELD field_62626 PARTICLE_RESOURCE_FINDER Lnet/minecraft/class_7654;
-	FIELD field_62628 particleFactories Ljava/util/Map;
+	FIELD field_62628 PARTICLE_FACTORIES Ljava/util/Map;
 	FIELD field_62629 onPreparedTask Ljava/lang/Runnable;
+	METHOD method_1_11533 getParticleFactoriesByType ()Ljava/util/Map;
+	METHOD method_1_11536 getKey (Lnet/minecraft/class_2396;)Lnet/minecraft/class_5321;
+		ARG 0 particleType
+	METHOD method_1_11537 getKey (Lnet/minecraft/class_5321;)Lnet/minecraft/class_5321;
+		ARG 0 particleType
 	METHOD method_74292 getParticleFactories (Lnet/minecraft/class_2394;)Lnet/minecraft/class_707;
+		ARG 1 effect
 	METHOD method_74293 load (Lnet/minecraft/class_5321;Lnet/minecraft/class_3298;)Ljava/util/Optional;
+		ARG 1 key
 		ARG 2 resource
 	METHOD method_74295 (Lnet/minecraft/class_7766$class_7767;Ljava/util/Set;Lnet/minecraft/class_1058;Lnet/minecraft/class_11939$class_7759;)V
 		ARG 3 reloadResult
@@ -16,12 +24,15 @@ CLASS net/minecraft/class_11939 net/minecraft/client/particle/ParticleSpriteMana
 	METHOD method_74299 (Ljava/util/concurrent/Executor;Ljava/util/Map;)Ljava/util/concurrent/CompletionStage;
 		ARG 2 resources
 	METHOD method_74300 register (Lnet/minecraft/class_2378;Lnet/minecraft/class_2396;Lnet/minecraft/class_707;)Lnet/minecraft/class_707;
+		ARG 0 registry
 		ARG 1 type
 		ARG 2 factory
 	METHOD method_74301 register (Lnet/minecraft/class_2378;Lnet/minecraft/class_2396;Lnet/minecraft/class_11939$class_4091;)Lnet/minecraft/class_707;
+		ARG 0 registry
 		ARG 1 type
 		ARG 2 factory
-	METHOD method_74302 init (Lnet/minecraft/class_2378;)Lnet/minecraft/class_707;
+	METHOD method_74302 register (Lnet/minecraft/class_2378;)Lnet/minecraft/class_707;
+		ARG 0 registry
 	CLASS class_4090 SimpleSpriteProvider
 		FIELD field_18303 sprites Ljava/util/List;
 		METHOD method_18838 setSprites (Ljava/util/List;)V

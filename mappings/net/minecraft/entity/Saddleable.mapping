@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_1_1825 net/minecraft/entity/Saddleable
+	FIELD field_1_11888 DEFAULT_SOUND Lnet/minecraft/class_6880;
+	METHOD method_76103 getSaddleSound ()Lnet/minecraft/class_6880;

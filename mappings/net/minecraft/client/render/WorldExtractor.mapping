@@ -128,3 +128,13 @@ CLASS net/minecraft/class_1_816 net/minecraft/client/render/WorldExtractor
 		ARG 1 fact
 	METHOD method_1_10891 (Lnet/minecraft/class_846;Lnet/minecraft/class_1_1714;)V
 		ARG 1 fact
+	METHOD method_1_11597 filterGizmos (Ljava/util/List;Z)Ljava/util/List;
+		ARG 0 gizmos
+		ARG 1 showEntityHitboxes
+	METHOD method_1_11598 (Lnet/minecraft/class_12185$class_12186;)Z
+		ARG 0 gizmo
+	METHOD method_1_11599 (Lnet/minecraft/class_2680;)Z
+		ARG 0 state
+	METHOD method_1_11600 (Lnet/minecraft/class_746;Lnet/minecraft/class_238;Lorg/apache/commons/lang3/mutable/MutableObject;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Lnet/minecraft/class_7928;
+		ARG 3 pos
+		ARG 4 state

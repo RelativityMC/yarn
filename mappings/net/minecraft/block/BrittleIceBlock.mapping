@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1831 net/minecraft/block/BrittleIceBlock
+	FIELD field_1_11902 CRUMBLE_DELAY I
+	METHOD method_1_11539 isBrokenBy (Lnet/minecraft/class_1297;Lnet/minecraft/class_2338;)Z
+		ARG 1 entity
+		ARG 2 pos

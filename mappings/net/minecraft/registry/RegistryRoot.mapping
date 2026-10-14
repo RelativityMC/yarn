@@ -1,0 +1,40 @@
+CLASS net/minecraft/class_1_1834 net/minecraft/registry/RegistryRoot
+	FIELD field_1_11908 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_11909 bootstraps Ljava/util/Map;
+	FIELD field_1_11910 root Lnet/minecraft/class_2385;
+	METHOD <init> (Lnet/minecraft/class_2960;)V
+		ARG 1 id
+	METHOD method_1_11601 resetTagEntries (Lnet/minecraft/class_2378;)V
+		ARG 0 child
+	METHOD method_1_11602 bootstrap ()V
+	METHOD method_1_11603 getRegistries ()Lnet/minecraft/class_2378;
+	METHOD method_1_11604 runBootstraps ()V
+	METHOD method_1_11605 freeze ()V
+	METHOD method_1_11606 addChild (Lnet/minecraft/class_5321;Lnet/minecraft/class_2385;Lnet/minecraft/class_1_1834$class_1_1835;)Lnet/minecraft/class_2385;
+		ARG 1 key
+		ARG 2 registry
+		ARG 3 bootstrap
+	METHOD method_1_11607 (Lnet/minecraft/class_2960;Ljava/util/function/Supplier;)V
+		ARG 0 key
+		ARG 1 bootstrap
+	METHOD method_1_11610 (Lnet/minecraft/class_2378;Lnet/minecraft/class_2378;)V
+		ARG 1 registry
+	METHOD method_1_11611 addDefaulted (Lnet/minecraft/class_5321;Ljava/lang/String;Lnet/minecraft/class_1_1834$class_1_1835;)Lnet/minecraft/class_7922;
+		ARG 1 key
+		ARG 2 defaultId
+		ARG 3 bootstrap
+	METHOD method_1_11612 addDefaultedIntrusive (Lnet/minecraft/class_5321;Ljava/lang/String;Lnet/minecraft/class_1_1834$class_1_1835;)Lnet/minecraft/class_7922;
+		ARG 1 key
+		ARG 2 defaultId
+		ARG 3 bootstrap
+	METHOD method_1_11613 addSimple (Lnet/minecraft/class_5321;Lnet/minecraft/class_1_1834$class_1_1835;)Lnet/minecraft/class_2378;
+		ARG 1 key
+		ARG 2 bootstrap
+	METHOD method_1_11614 addSimpleIntrusive (Lnet/minecraft/class_5321;Lnet/minecraft/class_1_1834$class_1_1835;)Lnet/minecraft/class_2378;
+		ARG 1 key
+		ARG 2 bootstrap
+	METHOD method_1_11615 validate (Lnet/minecraft/class_2378;)V
+		ARG 0 root
+	CLASS class_1_1835 Bootstrap
+		METHOD method_1_11616 bootstrap (Lnet/minecraft/class_2378;)Ljava/lang/Object;
+			ARG 1 registry

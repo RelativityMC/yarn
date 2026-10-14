@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_3609 net/minecraft/fluid/FlowableFluid
 	COMMENT Represents a fluid which can flow.
 	FIELD field_15900 LEVEL Lnet/minecraft/class_2758;
-	FIELD field_15902 FALLING Lnet/minecraft/class_2746;
+	FIELD field_15902 SOURCE Lnet/minecraft/class_2746;
 	FIELD field_17587 shapeCache Ljava/util/Map;
 	FIELD field_31726 CACHE_SIZE I
 	METHOD method_15725 tryFlow (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_3610;)V
@@ -90,8 +90,9 @@ CLASS net/minecraft/class_3609 net/minecraft/fluid/FlowableFluid
 		ARG 4 newState
 	METHOD method_15754 canFill (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_3610;)Z
 		ARG 0 world
-		ARG 1 pos
-		ARG 2 state
+		ARG 1 fromPos
+		ARG 2 fromState
+		ARG 3 toState
 	METHOD method_17773 (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_3610;)Lnet/minecraft/class_265;
 		ARG 2 state2
 	METHOD method_17774 isFluidAboveEqual (Lnet/minecraft/class_3610;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Z
@@ -110,8 +111,9 @@ CLASS net/minecraft/class_3609 net/minecraft/fluid/FlowableFluid
 		ARG 0 state
 	METHOD method_61815 canFillWithFluid (Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_3610;)Z
 		ARG 0 world
-		ARG 1 pos
-		ARG 2 state
+		ARG 1 fromPos
+		ARG 2 fromState
+		ARG 3 toState
 	CLASS class_2249 NeighborGroup
 		FIELD comp_3130 self Lnet/minecraft/class_2680;
 		FIELD comp_3131 other Lnet/minecraft/class_2680;

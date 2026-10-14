@@ -1,1 +1,4 @@
 CLASS net/minecraft/class_1786 net/minecraft/item/FlintAndSteelItem
+	METHOD method_1_11511 playSound (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)V
+		ARG 0 world
+		ARG 1 pos

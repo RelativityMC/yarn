@@ -1,5 +1,23 @@
 CLASS net/minecraft/class_5616 net/minecraft/client/render/block/entity/BlockEntityRendererFactories
+	METHOD method_1_11684 getKey (Lnet/minecraft/class_2591;)Lnet/minecraft/class_5321;
+		ARG 0 type
+	METHOD method_1_11685 register (Lnet/minecraft/class_2378;)Lnet/minecraft/class_5614;
+		ARG 0 registry
+	METHOD method_1_11687 (Lnet/minecraft/class_5614$class_5615;)Lnet/minecraft/class_827;
+		ARG 0 ctx
+	METHOD method_1_11688 (Lnet/minecraft/class_5614$class_5615;)Lnet/minecraft/class_827;
+		ARG 0 ctx
+	METHOD method_1_11689 (Lnet/minecraft/class_5614$class_5615;)Lnet/minecraft/class_827;
+		ARG 0 ctx
+	METHOD method_1_11690 (Lnet/minecraft/class_5614$class_5615;)Lnet/minecraft/class_827;
+		ARG 0 ctx
+	METHOD method_1_11691 (Lnet/minecraft/class_5614$class_5615;)Lnet/minecraft/class_827;
+		ARG 0 ctx
+	METHOD method_1_11692 (Lnet/minecraft/class_5614$class_5615;)Lnet/minecraft/class_827;
+		ARG 0 ctx
 	METHOD method_32144 register (Lnet/minecraft/class_2378;Lnet/minecraft/class_2591;Lnet/minecraft/class_5614;)Lnet/minecraft/class_5614;
+		ARG 0 registry
 		ARG 1 type
 		ARG 2 factory
 	METHOD method_32146 reload (Lnet/minecraft/class_5614$class_5615;)Ljava/util/Map;
+		ARG 0 ctx

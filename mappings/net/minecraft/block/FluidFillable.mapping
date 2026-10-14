@@ -1,5 +1,10 @@
 CLASS net/minecraft/class_2402 net/minecraft/block/FluidFillable
 	METHOD method_10310 canFillWithFluid (Lnet/minecraft/class_1309;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_3610;)Z
+		ARG 1 user
+		ARG 2 world
+		ARG 3 pos
+		ARG 4 fromState
+		ARG 5 toState
 	METHOD method_10311 tryFillWithFluid (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_3610;)Z
 		ARG 1 world
 		ARG 2 pos

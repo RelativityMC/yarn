@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_1_1837 net/minecraft/entity/passive/AnimalSoundVariant
+	METHOD method_1_11623 getAdultSounds ()Ljava/lang/Object;
+	METHOD method_1_11624 getBabySounds ()Ljava/lang/Object;
+	METHOD method_1_11625 createCodec (Lcom/mojang/serialization/Codec;Lnet/minecraft/class_1_1837$class_1_1838;)Lcom/mojang/serialization/Codec;
+		ARG 0 subvariantCodec
+		ARG 1 constructor
+	METHOD method_1_11626 (Lcom/mojang/serialization/Codec;Lnet/minecraft/class_1_1837$class_1_1838;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 2 instance
+	CLASS class_1_1838 Constructor
+		METHOD method_1_11627 create (Ljava/lang/Object;Ljava/lang/Object;)Lnet/minecraft/class_1_1837;
+			ARG 1 adult
+			ARG 2 baby

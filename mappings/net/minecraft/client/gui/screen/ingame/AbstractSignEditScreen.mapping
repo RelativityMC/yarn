@@ -2,6 +2,9 @@ CLASS net/minecraft/class_7743 net/minecraft/client/gui/screen/ingame/AbstractSi
 	FIELD field_1_9275 NUM_LINES I
 	FIELD field_1_9276 side Lnet/minecraft/class_1_1337;
 	FIELD field_1_9277 color I
+	FIELD field_1_11954 body Lnet/minecraft/class_8667;
+	FIELD field_1_11955 root Lnet/minecraft/class_8132;
+	FIELD field_1_11956 lines [Lnet/minecraft/class_7743$class_1_1846;
 	FIELD field_40424 blockEntity Lnet/minecraft/class_2625;
 	FIELD field_40425 messages [Ljava/lang/String;
 	FIELD field_40426 signType Lnet/minecraft/class_4719;
@@ -15,6 +18,16 @@ CLASS net/minecraft/class_7743 net/minecraft/client/gui/screen/ingame/AbstractSi
 		ARG 2 side
 		ARG 3 filtered
 		ARG 4 title
+	METHOD method_1_11696 getLineWidth (Ljava/lang/String;)I
+		ARG 1 message
+	METHOD method_1_11697 getLineHeight ()I
+	METHOD method_1_11698 (Ljava/lang/String;I)Lnet/minecraft/class_5481;
+		ARG 0 string
+		ARG 1 firstCharacterIndex
+	METHOD method_1_11699 (ILjava/lang/String;)V
+		ARG 2 string
+	METHOD method_1_11700 (Lnet/minecraft/class_7743;Lnet/minecraft/class_339;)V
+		ARG 1 child
 	METHOD method_45656 renderSignBackground (Lnet/minecraft/class_332;)V
 		ARG 1 context
 	METHOD method_45657 (Lnet/minecraft/class_4185;)V
@@ -22,5 +35,10 @@ CLASS net/minecraft/class_7743 net/minecraft/client/gui/screen/ingame/AbstractSi
 	METHOD method_45662 finishEditing ()V
 	METHOD method_49912 canEdit ()Z
 	METHOD method_49913 setCurrentRowMessage (ILjava/lang/String;)V
+		ARG 1 row
 		ARG 2 message
 	METHOD method_70927 getYOffset ()I
+	CLASS class_1_1846 Line
+		METHOD <init> (Lnet/minecraft/class_7743;II)V
+			ARG 2 width
+			ARG 3 height

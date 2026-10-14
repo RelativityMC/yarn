@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_342 net/minecraft/client/gui/widget/TextFieldWidget
 	FIELD field_1_2068 preEditWidget Lnet/minecraft/class_1_374;
+	FIELD field_1_11897 maxWidth I
 	FIELD field_2088 changedListener Ljava/util/function/Consumer;
 	FIELD field_2092 text Ljava/lang/String;
 	FIELD field_2094 editable Z
@@ -49,6 +50,10 @@ CLASS net/minecraft/class_342 net/minecraft/client/gui/widget/TextFieldWidget
 	METHOD <init> (Lnet/minecraft/class_327;Lnet/minecraft/class_2561;)V
 		ARG 1 textRenderer
 		ARG 2 text
+	METHOD method_1_11512 canSetText (Ljava/lang/String;)Z
+		ARG 1 text
+	METHOD method_1_11513 setMaxWidth (I)V
+		ARG 1 maxWidth
 	METHOD method_1851 drawsBackground ()Z
 	METHOD method_1852 setText (Ljava/lang/String;)V
 		ARG 1 text

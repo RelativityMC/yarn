@@ -64,7 +64,7 @@ CLASS net/minecraft/class_3532 net/minecraft/util/math/MathHelper
 		ARG 0 a
 		ARG 1 b
 		ARG 2 c
-	METHOD method_1_9360 quaredHypot (FF)F
+	METHOD method_1_9360 squaredHypot (FF)F
 		ARG 0 a
 		ARG 1 b
 	METHOD method_1_9361 lerp2 (FFFFFF)F

@@ -1,0 +1,41 @@
+CLASS net/minecraft/class_1_1844 net/minecraft/sound/SoundSet
+	FIELD field_1_11942 TRUE Lnet/minecraft/class_1_1844;
+	FIELD field_1_11943 FALSE Lnet/minecraft/class_1_1844;
+	METHOD method_1_11665 of (Ljava/lang/Object;)Lnet/minecraft/class_1_1844;
+		ARG 0 sound
+	METHOD method_1_11666 withId (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_1844;
+		ARG 0 id
+	METHOD method_1_11667 withKey (Lnet/minecraft/class_5321;)Lnet/minecraft/class_1_1844;
+		ARG 0 key
+	METHOD method_1_11668 (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 path
+	METHOD method_1_11669 (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 path
+	METHOD method_1_11670 (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 path
+	METHOD method_1_11671 (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 path
+	METHOD method_1_11672 (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 path
+	METHOD method_1_11673 (Ljava/lang/Object;Ljava/lang/Boolean;)Ljava/util/Optional;
+		ARG 0 sound
+		ARG 1 retain
+	METHOD method_1_11674 map (Ljava/util/function/Function;)Lnet/minecraft/class_1_1844;
+		ARG 1 function
+	METHOD method_1_11675 filter (Lnet/minecraft/class_1_1844;Lnet/minecraft/class_1_1844;)Lnet/minecraft/class_1_1844;
+		ARG 0 sounds
+		ARG 1 filter
+	METHOD method_1_11676 withBreak (Ljava/lang/Object;)Lnet/minecraft/class_1_1844;
+		ARG 1 breakSound
+	METHOD method_1_11677 withFall (Ljava/lang/Object;)Lnet/minecraft/class_1_1844;
+		ARG 1 fallSound
+	METHOD method_1_11678 withHit (Ljava/lang/Object;)Lnet/minecraft/class_1_1844;
+		ARG 1 hitSound
+	METHOD method_1_11679 withPlace (Ljava/lang/Object;)Lnet/minecraft/class_1_1844;
+		ARG 1 placeSound
+	METHOD method_1_11680 withStep (Ljava/lang/Object;)Lnet/minecraft/class_1_1844;
+		ARG 1 stepSound
+	METHOD method_1_11681 mapZipped (Lnet/minecraft/class_1_1844;Lnet/minecraft/class_1_1844;Ljava/util/function/BiFunction;)Lnet/minecraft/class_1_1844;
+		ARG 0 first
+		ARG 1 second
+		ARG 2 function

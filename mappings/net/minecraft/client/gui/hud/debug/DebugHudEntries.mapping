@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_11631 net/minecraft/client/gui/hud/debug/DebugHudEntries
 	FIELD field_61557 PROFILES Ljava/util/Map;
 	FIELD field_61583 THREE_DIMENSIONAL_CROSSHAIR Lnet/minecraft/class_5321;
-	METHOD method_72764 registerVanilla (Ljava/lang/String;)Lnet/minecraft/class_5321;
+	METHOD method_1_11683 register (Lnet/minecraft/class_2378;)Ljava/lang/Object;
+		ARG 0 registry
+	METHOD method_72764 of (Ljava/lang/String;)Lnet/minecraft/class_5321;
+		ARG 0 path

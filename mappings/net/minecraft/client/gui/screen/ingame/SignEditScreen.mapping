@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_498 net/minecraft/client/gui/screen/ingame/SignEditScreen
+	FIELD field_1_6731 texture Lnet/minecraft/class_2960;
+	FIELD field_1_7018 textureHeight I
 	FIELD field_40436 BACKGROUND_SCALE F
 	METHOD <init> (Lnet/minecraft/class_2625;Lnet/minecraft/class_1_1337;Z)V
 		ARG 1 sign

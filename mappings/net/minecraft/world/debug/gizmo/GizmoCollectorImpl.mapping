@@ -8,6 +8,7 @@ CLASS net/minecraft/class_12185 net/minecraft/world/debug/gizmo/GizmoCollectorIm
 	METHOD method_75856 add (Ljava/util/Collection;)V
 		ARG 1 gizmos
 	CLASS class_12186 Entry
+		FIELD field_1_11892 entityHitbox Z
 		FIELD field_63662 gizmo Lnet/minecraft/class_12175;
 		FIELD field_63663 ignoreOcclusion Z
 		FIELD field_63930 creationTime J
@@ -15,6 +16,7 @@ CLASS net/minecraft/class_12185 net/minecraft/world/debug/gizmo/GizmoCollectorIm
 		FIELD field_63932 fadeOut Z
 		METHOD <init> (Lnet/minecraft/class_12175;)V
 			ARG 1 gizmo
+		METHOD method_1_11499 isEntityHitbox ()Z
 		METHOD method_75562 ignoresOcclusion ()Z
 		METHOD method_75563 getGizmo ()Lnet/minecraft/class_12175;
 		METHOD method_75857 getOpacity (J)F

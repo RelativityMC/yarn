@@ -183,6 +183,8 @@ CLASS net/minecraft/class_2248 net/minecraft/block/Block
 		COMMENT @see #onBroken
 		COMMENT @see AbstractBlock#onStacksDropped
 		COMMENT @see AbstractBlock#onStateReplaced
+		ARG 1 world
+		ARG 2 player
 		ARG 3 pos
 		ARG 4 state
 		ARG 5 blockEntity

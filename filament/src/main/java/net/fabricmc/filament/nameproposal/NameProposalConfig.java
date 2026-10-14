@@ -34,6 +34,7 @@ import net.fabricmc.filament.nameproposal.field.predicate.StaticFieldPredicate;
 public record NameProposalConfig(FieldNameProvider fieldNameProvider) {
 	// trusted owners, currently for most IDs
 	private static final Set<String> TRUSTED_ID_OWNERS = Set.of(
+			"net/minecraft/class_2498",
 			"net/minecraft/class_3612",
 			"net/minecraft/class_8057",
 			"net/minecraft/class_8173",
@@ -73,6 +74,7 @@ public record NameProposalConfig(FieldNameProvider fieldNameProvider) {
 			case "method_1_4732" -> "MUSIC_DISC_" + name;
 			case "method_1_4733" -> name + "_POTTERY_SHERD";
 			case "method_1_4735" -> name + "_SPAWN_EGG";
+			case "method_1_11483", "method_1_11484", "method_1_11485" -> "BLOCK_SOUND_SET_" + name;
 			default -> name;
 			}),
 			// Results of BlockItemTagKey#{block, item}

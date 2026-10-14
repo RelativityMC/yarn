@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_6646 net/minecraft/world/gen/blockpredicate/BlockPredicate
+	FIELD field_1_11957 IS_ANY_FLUID Lnet/minecraft/class_4559;
+	FIELD field_1_11958 IS_SOURCE Lnet/minecraft/class_4559;
 	FIELD field_35054 BASE_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_35696 IS_AIR Lnet/minecraft/class_6646;
 	FIELD field_35697 IS_AIR_OR_WATER Lnet/minecraft/class_6646;
@@ -17,6 +19,11 @@ CLASS net/minecraft/class_6646 net/minecraft/world/gen/blockpredicate/BlockPredi
 		ARG 2 match
 	METHOD method_1_10966 belowHeightmap (Lnet/minecraft/class_2902$class_2903;)Lnet/minecraft/class_6646;
 		ARG 0 heightmap
+	METHOD method_1_11701 matchingFluids ([Lnet/minecraft/class_3611;)Lnet/minecraft/class_6646;
+		ARG 0 fluids
+	METHOD method_1_11702 matchingSourceFluids (Lnet/minecraft/class_1_1038;[Lnet/minecraft/class_3611;)Lnet/minecraft/class_6646;
+		ARG 0 offset
+		ARG 1 fluids
 	METHOD method_38873 getType ()Lnet/minecraft/class_6647;
 	METHOD method_38877 not (Lnet/minecraft/class_6646;)Lnet/minecraft/class_6646;
 		ARG 0 predicate
@@ -39,6 +46,7 @@ CLASS net/minecraft/class_6646 net/minecraft/world/gen/blockpredicate/BlockPredi
 	METHOD method_38886 matchingFluids (Lnet/minecraft/class_2382;Ljava/util/List;Lnet/minecraft/class_4559;)Lnet/minecraft/class_6646;
 		ARG 0 offset
 		ARG 1 fluids
+		ARG 2 statePredicate
 	METHOD method_38887 anyOf ([Lnet/minecraft/class_6646;)Lnet/minecraft/class_6646;
 		ARG 0 predicates
 	METHOD method_39009 wouldSurvive (Lnet/minecraft/class_2248;)Lnet/minecraft/class_6646;
@@ -64,7 +72,7 @@ CLASS net/minecraft/class_6646 net/minecraft/world/gen/blockpredicate/BlockPredi
 		ARG 1 fluids
 	METHOD method_43290 matchingBlocks ([Lnet/minecraft/class_2248;)Lnet/minecraft/class_6646;
 		ARG 0 blocks
-	METHOD method_43291 matchingFluids ([Lnet/minecraft/class_3611;)Lnet/minecraft/class_6646;
+	METHOD method_43291 matchingSourceFluids ([Lnet/minecraft/class_3611;)Lnet/minecraft/class_6646;
 		ARG 0 fluids
 	METHOD method_45544 noFluid ()Lnet/minecraft/class_6646;
 	METHOD method_60285 unobstructed ()Lnet/minecraft/class_6646;

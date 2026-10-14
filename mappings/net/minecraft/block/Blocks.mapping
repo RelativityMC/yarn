@@ -359,6 +359,11 @@ CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 		ARG 0 state
 	METHOD method_1_11041 (Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
 		ARG 0 settings
+	METHOD method_1_11490 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_1299;)Z
+		ARG 0 state
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 entityType
 	METHOD method_9492 register (Lnet/minecraft/class_1_784;Lnet/minecraft/class_4970$class_2251;)Lnet/minecraft/class_2248;
 		ARG 0 key
 		ARG 1 settings

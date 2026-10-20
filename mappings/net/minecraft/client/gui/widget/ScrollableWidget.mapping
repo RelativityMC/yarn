@@ -25,10 +25,8 @@ CLASS net/minecraft/class_7528 net/minecraft/client/gui/widget/ScrollableWidget
 	METHOD method_44393 getDeltaYPerScroll ()D
 	METHOD method_44394 getScrollbarThumbHeight ()I
 	METHOD method_44395 getContentsHeightWithPadding ()I
-	METHOD method_44396 drawScrollbar (Lnet/minecraft/class_332;II)V
+	METHOD method_44396 drawScrollbar (Lnet/minecraft/class_332;)V
 		ARG 1 context
-		ARG 2 mouseX
-		ARG 3 mouseY
 	METHOD method_65505 checkScrollbarDragged (Lnet/minecraft/class_11909;)Z
 		ARG 1 click
 	METHOD method_65506 refreshScroll ()V

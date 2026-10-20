@@ -15,18 +15,16 @@ CLASS net/minecraft/class_4384 net/minecraft/client/realms/gui/screen/RealmsBrok
 	METHOD method_21178 addButtons ()V
 	METHOD method_21179 getFramePositionX (I)I
 		ARG 1 i
-	METHOD method_21180 drawSlotFrame (Lnet/minecraft/class_332;IIIIZLjava/lang/String;IJLjava/lang/String;Z)V
+	METHOD method_21180 drawSlotFrame (Lnet/minecraft/class_332;IIZLjava/lang/String;IJLjava/lang/String;Z)V
 		ARG 1 context
 		ARG 2 x
 		ARG 3 y
-		ARG 4 mouseX
-		ARG 5 mouseY
-		ARG 6 activeSlot
-		ARG 7 slotName
-		ARG 8 slotId
-		ARG 9 templateId
-		ARG 11 templateImage
-		ARG 12 empty
+		ARG 4 activeSlot
+		ARG 5 slotName
+		ARG 6 slotId
+		ARG 7 templateId
+		ARG 9 templateImage
+		ARG 10 empty
 	METHOD method_21181 fetchServerData (J)V
 		ARG 1 worldId
 	METHOD method_21187 downloadWorld (I)V

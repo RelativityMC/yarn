@@ -15,7 +15,6 @@ CLASS net/minecraft/class_10900 net/minecraft/nbt/SnbtParsing
 	FIELD field_57992 EXPECTED_HEX_NUMERAL_EXCEPTION Lnet/minecraft/class_10837;
 	FIELD field_57993 EMPTY_KEY_EXCEPTION Lnet/minecraft/class_10837;
 	FIELD field_57994 LEADING_ZERO_NOT_ALLOWED_EXCEPTION Lnet/minecraft/class_10837;
-	FIELD field_57995 HEX_FORMAT Ljava/util/HexFormat;
 	FIELD field_57996 BINARY_RULE Lnet/minecraft/class_10849;
 	FIELD field_57997 DECIMAL_RULE Lnet/minecraft/class_10849;
 	FIELD field_57998 HEX_RULE Lnet/minecraft/class_10849;
@@ -25,8 +24,6 @@ CLASS net/minecraft/class_10900 net/minecraft/nbt/SnbtParsing
 	FIELD field_58058 INVALID_CODEPOINT_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_58059 NO_SUCH_OPERATION_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_58060 INFINITY_NOT_ALLOWED_EXCEPTION Lnet/minecraft/class_10837;
-	METHOD method_68607 escapeSpecialChar (C)Ljava/lang/String;
-		ARG 0 c
 	METHOD method_68608 (Lnet/minecraft/class_9387;Lnet/minecraft/class_9387;Lnet/minecraft/class_9387;Lnet/minecraft/class_9387;Lnet/minecraft/class_9387;Lnet/minecraft/class_9393;)Ljava/lang/String;
 		ARG 5 state
 	METHOD method_68609 (Lnet/minecraft/class_9387;Lnet/minecraft/class_9387;Lnet/minecraft/class_9387;Lnet/minecraft/class_9387;Lnet/minecraft/class_9387;Lnet/minecraft/class_9400;)Lnet/minecraft/class_10900$class_10903;

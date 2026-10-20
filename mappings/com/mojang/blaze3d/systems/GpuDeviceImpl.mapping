@@ -20,7 +20,7 @@ CLASS net/minecraft/class_1_1209 com/mojang/blaze3d/systems/GpuDeviceImpl
 		ARG 4 filterModeV
 		ARG 5 maxAnisotropy
 		ARG 6 maxLevelOfDetail
-	METHOD method_1_7711 (JLjava/util/function/BooleanSupplier;)Lnet/minecraft/class_1_1314;
+	METHOD method_1_7711 (JLjava/util/function/BooleanSupplier;Z)Lnet/minecraft/class_1_1314;
 		ARG 1 window
 	METHOD method_1_7712 (Ljava/lang/String;ILnet/minecraft/class_1_658;IIII)Lnet/minecraft/class_1_1318;
 		ARG 1 label

@@ -13,5 +13,5 @@ CLASS net/minecraft/class_11226 net/minecraft/client/gui/hud/bar/LocatorBar
 		ARG 0 uuid
 	METHOD method_70873 (Lnet/minecraft/class_1297;Ljava/util/UUID;)Ljava/lang/Boolean;
 		ARG 1 uuid
-	METHOD method_73215 (Lnet/minecraft/class_9779;Lnet/minecraft/class_8921;Lnet/minecraft/class_1297;)F
+	METHOD method_73215 (Lnet/minecraft/class_332;Lnet/minecraft/class_8921;Lnet/minecraft/class_1297;)F
 		ARG 2 entity

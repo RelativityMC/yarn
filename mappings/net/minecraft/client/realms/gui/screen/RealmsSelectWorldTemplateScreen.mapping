@@ -23,11 +23,9 @@ CLASS net/minecraft/class_4419 net/minecraft/client/realms/gui/screen/RealmsSele
 		ARG 2 callback
 		ARG 3 worldType
 		ARG 4 templateList
-	METHOD method_21414 renderMessages (Lnet/minecraft/class_332;IILjava/util/List;)V
+	METHOD method_21414 renderMessages (Lnet/minecraft/class_332;Ljava/util/List;)V
 		ARG 1 context
-		ARG 2 x
-		ARG 3 y
-		ARG 4 messages
+		ARG 2 messages
 	METHOD method_21415 setPagination (Lnet/minecraft/class_4891;)V
 		ARG 1 templateList
 	METHOD method_21416 fetchWorldTemplates (Lnet/minecraft/class_4891;Lnet/minecraft/class_4341;)Lcom/mojang/datafixers/util/Either;

@@ -6,8 +6,6 @@ CLASS net/minecraft/class_359 net/minecraft/client/gui/hud/SubtitlesHud
 	FIELD field_47672 audibleEntries Ljava/util/List;
 	METHOD <init> (Lnet/minecraft/class_310;)V
 		ARG 1 client
-	METHOD method_1957 render (Lnet/minecraft/class_332;)V
-		ARG 1 context
 	CLASS class_360 SubtitleEntry
 		FIELD field_1_10223 repeatable Z
 		FIELD field_2188 text Lnet/minecraft/class_2561;

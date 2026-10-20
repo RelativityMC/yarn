@@ -206,15 +206,12 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 		METHOD method_38506 getRealmsServer ()Lnet/minecraft/class_4877;
 		METHOD method_52653 play ()V
 		METHOD method_52654 createRealm ()V
-		METHOD method_60862 drawPlayers (Lnet/minecraft/class_332;IIIIIIF)Z
+		METHOD method_60862 drawPlayers (Lnet/minecraft/class_332;IIII)Z
 			ARG 1 context
 			ARG 2 top
 			ARG 3 left
 			ARG 4 width
 			ARG 5 height
-			ARG 6 mouseX
-			ARG 7 mouseY
-			ARG 8 tickProgress
 	CLASS class_4866 Entry
 		METHOD method_54345 getNameY (I)I
 			ARG 1 y
@@ -222,21 +219,17 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 			ARG 1 x
 			ARG 2 width
 			ARG 3 version
-		METHOD method_54350 renderStatusIcon (Lnet/minecraft/class_4877;Lnet/minecraft/class_332;IIII)V
+		METHOD method_54350 renderStatusIcon (Lnet/minecraft/class_4877;Lnet/minecraft/class_332;II)V
 			ARG 1 server
 			ARG 2 context
 			ARG 3 x
 			ARG 4 y
-			ARG 5 mouseX
-			ARG 6 mouseY
-		METHOD method_54351 drawTextureWithTooltip (Lnet/minecraft/class_332;IIIILnet/minecraft/class_2960;Ljava/util/function/Supplier;)V
+		METHOD method_54351 drawTextureWithTooltip (Lnet/minecraft/class_332;IILnet/minecraft/class_2960;Ljava/util/function/Supplier;)V
 			ARG 1 context
 			ARG 2 x
 			ARG 3 y
-			ARG 4 mouseX
-			ARG 5 mouseY
-			ARG 6 texture
-			ARG 7 tooltip
+			ARG 4 texture
+			ARG 5 tooltip
 		METHOD method_54352 drawTrimmedText (Lnet/minecraft/class_332;Ljava/lang/String;IIII)V
 			ARG 1 context
 			ARG 2 string
@@ -306,8 +299,8 @@ CLASS net/minecraft/class_4325 net/minecraft/client/realms/gui/screen/RealmsMain
 		METHOD method_74177 getMessage ()Lnet/minecraft/class_2561;
 		METHOD method_74178 getTextWidth (I)I
 			ARG 0 width
-		METHOD method_76233 (Lnet/minecraft/class_332;IIFLnet/minecraft/class_339;)V
-			ARG 4 child
+		METHOD method_76233 (Lnet/minecraft/class_332;Lnet/minecraft/class_339;)V
+			ARG 1 child
 	CLASS class_8203 Request
 		METHOD method_1_71 request (Lnet/minecraft/class_4341;)Ljava/lang/Object;
 			ARG 1 client

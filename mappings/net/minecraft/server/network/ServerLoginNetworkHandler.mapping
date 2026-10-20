@@ -22,7 +22,6 @@ CLASS net/minecraft/class_3248 net/minecraft/server/network/ServerLoginNetworkHa
 	FIELD field_14167 nonce [B
 	FIELD field_29779 TIMEOUT_TICKS I
 	FIELD field_45028 profileName Ljava/lang/String;
-	FIELD field_45029 profile Lcom/mojang/authlib/GameProfile;
 	FIELD field_48275 transferred Z
 	FIELD field_63176 activityNotifier Lnet/minecraft/class_12085;
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_2535;Z)V

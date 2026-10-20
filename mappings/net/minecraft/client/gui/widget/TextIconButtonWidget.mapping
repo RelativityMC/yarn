@@ -16,11 +16,8 @@ CLASS net/minecraft/class_8662 net/minecraft/client/gui/widget/TextIconButtonWid
 		ARG 9 tooltip
 		ARG 10 narrationSupplier
 		ARG 11 setLoadingOnPress
-	METHOD method_1_5645 drawOverrideIcon (Lnet/minecraft/class_332;IIF)V
+	METHOD method_1_5645 drawOverrideIcon (Lnet/minecraft/class_332;)V
 		ARG 1 context
-		ARG 2 mouseX
-		ARG 3 mouseY
-		ARG 4 deltaTicks
 	METHOD method_1_11165 builder (Lnet/minecraft/class_2561;Lnet/minecraft/class_4185$class_4241;Lnet/minecraft/class_8662$class_1_1764;)Lnet/minecraft/class_8662$class_8663;
 		ARG 0 text
 		ARG 1 onPress

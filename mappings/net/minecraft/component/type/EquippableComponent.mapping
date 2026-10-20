@@ -21,7 +21,7 @@ CLASS net/minecraft/class_10192 net/minecraft/component/type/EquippableComponent
 		ARG 0 color
 	CLASS class_10217 Builder
 		FIELD field_54234 slot Lnet/minecraft/class_1304;
-		FIELD field_54235 equipSound Lnet/minecraft/class_6880;
+		FIELD field_54235 equipSound Ljava/util/Optional;
 		FIELD field_54236 model Ljava/util/Optional;
 		FIELD field_54237 allowedEntities Ljava/util/Optional;
 		FIELD field_54238 dispensable Z
@@ -30,7 +30,7 @@ CLASS net/minecraft/class_10192 net/minecraft/component/type/EquippableComponent
 		FIELD field_54908 cameraOverlay Ljava/util/Optional;
 		FIELD field_55982 equipOnInteract Z
 		FIELD field_60669 canBeSheared Z
-		FIELD field_60670 shearingSound Lnet/minecraft/class_6880;
+		FIELD field_60670 shearingSound Ljava/util/Optional;
 		METHOD <init> (Lnet/minecraft/class_1304;)V
 			ARG 1 slot
 		METHOD method_64203 build ()Lnet/minecraft/class_10192;

@@ -27,10 +27,8 @@ CLASS net/minecraft/class_513 net/minecraft/client/gui/screen/recipebook/RecipeB
 		ARG 1 resultCollections
 		ARG 2 resetCurrentPage
 		ARG 3 filteringCraftable
-	METHOD method_2628 drawTooltip (Lnet/minecraft/class_332;II)V
+	METHOD method_2628 drawTooltip (Lnet/minecraft/class_332;)V
 		ARG 1 context
-		ARG 2 x
-		ARG 3 y
 	METHOD method_2632 mouseClicked (Lnet/minecraft/class_11909;IIIIZ)Z
 		ARG 1 click
 		ARG 2 left
@@ -39,13 +37,10 @@ CLASS net/minecraft/class_513 net/minecraft/client/gui/screen/recipebook/RecipeB
 		ARG 5 height
 		ARG 6 doubled
 	METHOD method_2633 getRecipeBook ()Lnet/minecraft/class_299;
-	METHOD method_2634 draw (Lnet/minecraft/class_332;IIIIF)V
+	METHOD method_2634 draw (Lnet/minecraft/class_332;II)V
 		ARG 1 context
 		ARG 2 x
 		ARG 3 y
-		ARG 4 mouseX
-		ARG 5 mouseY
-		ARG 6 deltaTicks
 	METHOD method_2635 getLastClickedResults ()Lnet/minecraft/class_516;
 	METHOD method_2636 initialize (Lnet/minecraft/class_310;II)V
 		ARG 1 client

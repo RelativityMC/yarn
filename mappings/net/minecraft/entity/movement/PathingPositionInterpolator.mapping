@@ -6,7 +6,7 @@ CLASS net/minecraft/class_1_1279 net/minecraft/entity/movement/PathingPositionIn
 		ARG 0 entity
 	CLASS class_1_1280 Destination
 		FIELD field_1_8707 progress F
-		FIELD field_1_8710 steps Ljava/util/LinkedList;
+		FIELD field_1_8710 steps Ljava/util/List;
 		FIELD field_1_9192 ticksLeft F
 		FIELD field_1_9193 lastStance Lnet/minecraft/class_1_1193$class_1_1195;
 		FIELD field_1_9194 totalDuration F

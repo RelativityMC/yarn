@@ -17,8 +17,8 @@ CLASS net/minecraft/class_1_964 net/minecraft/client/gui/friend/widget/FriendsTa
 		ARG 1 state
 	METHOD method_1_5814 getSearchField ()Lnet/minecraft/class_342;
 	METHOD method_1_5815 getSearchText ()Ljava/lang/String;
-	METHOD method_1_5816 (Lnet/minecraft/class_332;IIFLnet/minecraft/class_339;)V
-		ARG 4 child
+	METHOD method_1_5816 (Lnet/minecraft/class_332;Lnet/minecraft/class_339;)V
+		ARG 1 child
 	METHOD method_1_5822 setSearchText (Ljava/lang/String;)V
 		ARG 1 searchText
 	METHOD method_1_6364 playerListContainsUsername (Ljava/util/List;Ljava/lang/String;)Z

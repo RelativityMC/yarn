@@ -5,7 +5,7 @@ CLASS net/minecraft/class_2896 net/minecraft/network/listener/ClientLoginPacketL
 		ARG 1 packet
 	METHOD method_12586 onQueryRequest (Lnet/minecraft/class_2899;)V
 		ARG 1 packet
-	METHOD method_12587 onHello (Lnet/minecraft/class_2905;)V
+	METHOD method_12587 onHello (Lnet/minecraft/class_1_1875;)V
 		ARG 1 packet
 	METHOD method_12588 onSuccess (Lnet/minecraft/class_2901;)V
 		ARG 1 packet

@@ -29,11 +29,8 @@ CLASS net/minecraft/class_1_979 net/minecraft/client/friend/gui/tab/FriendListTa
 	METHOD method_1_11331 createCenteredText (Lnet/minecraft/class_437;Lnet/minecraft/class_2561;)Lnet/minecraft/class_7843;
 		ARG 1 screen
 		ARG 2 text
-	METHOD method_1_11332 renderBackground (Lnet/minecraft/class_332;IIF)V
+	METHOD method_1_11332 renderBackground (Lnet/minecraft/class_332;)V
 		ARG 1 context
-		ARG 2 mouseX
-		ARG 3 mouseY
-		ARG 4 deltaTicks
 	METHOD method_1_11333 (Lnet/minecraft/class_437;Lnet/minecraft/class_2583;)V
 		ARG 1 style
 	METHOD method_1_11334 (Lnet/minecraft/class_7847;)V

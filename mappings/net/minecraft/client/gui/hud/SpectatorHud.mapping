@@ -30,5 +30,5 @@ CLASS net/minecraft/class_365 net/minecraft/client/gui/hud/SpectatorHud
 		ARG 5 height
 		ARG 6 command
 	METHOD method_1983 useSelectedCommand ()V
-	METHOD method_71054 render (Lnet/minecraft/class_332;)V
+	METHOD method_71054 (Lnet/minecraft/class_332;)V
 		ARG 1 context

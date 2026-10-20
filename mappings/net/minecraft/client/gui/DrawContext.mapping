@@ -14,16 +14,8 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 	FIELD field_63848 hoverStyle Lnet/minecraft/class_2583;
 	FIELD field_63849 clickStyle Lnet/minecraft/class_2583;
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_11246;II)V
-		ARG 1 client
-		ARG 2 state
 		ARG 3 mouseX
 		ARG 4 mouseY
-	METHOD <init> (Lnet/minecraft/class_310;Lorg/joml/Matrix3x2fStack;Lnet/minecraft/class_11246;II)V
-		ARG 1 client
-		ARG 2 matrices
-		ARG 3 state
-		ARG 4 mouseX
-		ARG 5 mouseY
 	METHOD method_1_399 drawTexturedQuad (Lnet/minecraft/class_1_1330;Lnet/minecraft/class_12137;IIIIFFFF)V
 		ARG 1 textureView
 		ARG 2 sampler
@@ -632,10 +624,7 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 3 width
 		ARG 4 height
 		ARG 5 color
-	METHOD method_73199 drawDeferredElements (IIF)V
-		ARG 1 mouseX
-		ARG 2 mouseY
-		ARG 3 deltaTicks
+	METHOD method_73199 drawDeferredElements ()V
 	METHOD method_74036 applyCursorTo (Lnet/minecraft/class_1041;)V
 		ARG 1 window
 	METHOD method_74037 setCursor (Lnet/minecraft/class_11875;)V

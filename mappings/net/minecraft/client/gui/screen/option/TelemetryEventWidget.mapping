@@ -28,8 +28,8 @@ CLASS net/minecraft/class_7941 net/minecraft/client/gui/screen/option/TelemetryE
 	METHOD method_47639 collectContents (Z)Lnet/minecraft/class_7941$class_7942;
 		ARG 1 optionalTelemetryEnabled
 	METHOD method_47640 getGridWidth ()I
-	METHOD method_48285 (Lnet/minecraft/class_332;IIFLnet/minecraft/class_339;)V
-		ARG 4 widget
+	METHOD method_48285 (Lnet/minecraft/class_332;Lnet/minecraft/class_339;)V
+		ARG 1 widget
 	METHOD method_54801 formatTitleText (Lnet/minecraft/class_2561;Z)Lnet/minecraft/class_2561;
 		ARG 1 title
 		ARG 2 disabled

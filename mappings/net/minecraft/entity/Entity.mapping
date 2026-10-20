@@ -84,14 +84,12 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	COMMENT To kill entities and drop loot, call {@link #kill} or {@link damage} (with large enough damage amount).
 	FIELD field_1_2019 fluidController Lnet/minecraft/class_1_370;
 	FIELD field_1_6915 bounced Z
-	FIELD field_1_8783 FLUID_CATEGORIES Ljava/util/Set;
 	FIELD field_1_9530 INVULNERABLE_TIME_KEY Ljava/lang/String;
 	FIELD field_1_9837 positionInterpolator Lnet/minecraft/class_1_1451;
 	FIELD field_5951 ridingCooldown I
 	FIELD field_5952 onGround Z
 	FIELD field_5953 firstUpdate Z
 	FIELD field_5956 fireTicks I
-	FIELD field_5957 touchingWater Z
 	FIELD field_5958 glowing Z
 	FIELD field_5960 noClip Z
 	FIELD field_5961 type Lnet/minecraft/class_1299;
@@ -181,9 +179,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	FIELD field_29979 ON_FIRE_FLAG_INDEX I
 	FIELD field_29980 GLOWING_FLAG_INDEX I
 	FIELD field_29981 GLIDING_FLAG_INDEX I
-	FIELD field_29982 SPEED_IN_LAVA_IN_NETHER D
-	FIELD field_29983 SPEED_IN_LAVA D
-	FIELD field_29984 SPEED_IN_WATER D
 	FIELD field_29985 ID_KEY Ljava/lang/String;
 	FIELD field_29986 PASSENGERS_KEY Ljava/lang/String;
 	FIELD field_29987 MAX_RIDING_COOLDOWN I
@@ -2118,13 +2113,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_51850 setPortalCooldown (I)V
 		ARG 1 portalCooldown
 	METHOD method_52172 isOnRail ()Z
-	METHOD method_52532 lerpPosAndRotation (IDDDDD)V
-		ARG 1 step
-		ARG 2 x
-		ARG 4 y
-		ARG 6 z
-		ARG 8 yaw
-		ARG 10 pitch
 	METHOD method_52533 getPassengerAttachmentPos (Lnet/minecraft/class_1297;Lnet/minecraft/class_4048;F)Lnet/minecraft/class_243;
 		ARG 1 passenger
 		ARG 2 dimensions

@@ -324,8 +324,6 @@ CLASS net/minecraft/class_315 net/minecraft/client/option/GameOptions
 		ARG 1 renderDistance
 	METHOD method_1_4723 (Ljava/lang/Boolean;)V
 		ARG 1 cutoutLeaves
-	METHOD method_1_4724 (Ljava/lang/Boolean;)V
-		ARG 1 value
 	METHOD method_1_4725 (Ljava/lang/Integer;)V
 		ARG 1 maxAnisotropy
 	METHOD method_1_4726 (Ljava/lang/Integer;)V
@@ -771,8 +769,6 @@ CLASS net/minecraft/class_315 net/minecraft/client/option/GameOptions
 		ARG 0 refresher
 	METHOD method_76784 (Ljava/lang/Integer;)V
 		ARG 1 renderCloudsDistance
-	METHOD method_76786 (Ljava/lang/Boolean;)V
-		ARG 1 value
 	CLASS 2 2
 		METHOD method_33676 find (Ljava/lang/String;)Ljava/lang/String;
 			ARG 1 key

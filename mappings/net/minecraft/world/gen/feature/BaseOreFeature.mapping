@@ -6,12 +6,6 @@ CLASS net/minecraft/class_1_1133 net/minecraft/world/gen/feature/BaseOreFeature
 		ARG 1 targets
 		ARG 2 size
 		ARG 3 discardChanceOnAirExposure
-	METHOD method_1_7136 shouldReplace (Lnet/minecraft/class_2680;Ljava/util/function/Function;Lnet/minecraft/class_5819;Lnet/minecraft/class_1_1124;Lnet/minecraft/class_2338$class_2339;)Z
-		ARG 1 state
-		ARG 2 stateGetter
-		ARG 3 random
-		ARG 4 replacement
-		ARG 5 pos
 	METHOD method_1_7137 isExposedTo (Ljava/util/function/Function;Lnet/minecraft/class_2338;Ljava/util/function/Predicate;)Z
 		ARG 0 stateGetter
 		ARG 1 pos

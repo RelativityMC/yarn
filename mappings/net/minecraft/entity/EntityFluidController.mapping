@@ -1,12 +1,5 @@
 CLASS net/minecraft/class_1_370 net/minecraft/entity/EntityFluidController
-	FIELD field_1_9120 effectsByFluid Lit/unimi/dsi/fastutil/objects/Reference2ObjectMap;
 	FIELD field_1_9121 collisions Ljava/util/List;
-	METHOD <init> (Ljava/util/Set;)V
-		ARG 1 fluids
-	METHOD method_1_2531 pushEntityFromFluid (Lnet/minecraft/class_6862;Lnet/minecraft/class_1297;D)V
-		ARG 1 fluidTag
-		ARG 2 entity
-		ARG 3 pushStrength
 	METHOD method_1_2532 getFeetSubmergence (Lnet/minecraft/class_6862;)D
 		ARG 1 fluidKey
 	METHOD method_1_2534 regionMightContainFluids (Lnet/minecraft/class_1937;IIIIII)Z
@@ -24,8 +17,6 @@ CLASS net/minecraft/class_1_370 net/minecraft/entity/EntityFluidController
 	METHOD method_1_2537 calculateFluidEffects (Lnet/minecraft/class_1297;Z)Z
 		ARG 1 entity
 		ARG 2 notPushedByFluids
-	METHOD method_1_8755 getEffect (Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_370$class_1_371;
-		ARG 1 fluidKey
 	METHOD method_1_8756 getCollision (Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_370$class_1_1328;
 		ARG 1 fluidKey
 	CLASS class_1_371 Effect
@@ -34,7 +25,7 @@ CLASS net/minecraft/class_1_370 net/minecraft/entity/EntityFluidController
 		FIELD field_1_2089 feetSubmergence D
 		METHOD method_1_2538 addVelocityFromFluid (Lnet/minecraft/class_243;)V
 			ARG 1 fluidVelocity
-		METHOD method_1_2539 pushEntity (Lnet/minecraft/class_1297;D)V
+		METHOD method_1_2539 pushEntity (Lnet/minecraft/class_1297;D)Lnet/minecraft/class_243;
 			ARG 1 entity
 			ARG 2 strength
 		METHOD method_1_2540 reset ()V

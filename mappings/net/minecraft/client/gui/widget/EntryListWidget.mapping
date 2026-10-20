@@ -17,11 +17,8 @@ CLASS net/minecraft/class_350 net/minecraft/client/gui/widget/EntryListWidget
 		ARG 3 y
 	METHOD method_25309 scroll (I)V
 		ARG 1 amount
-	METHOD method_25311 renderList (Lnet/minecraft/class_332;IIF)V
+	METHOD method_25311 renderList (Lnet/minecraft/class_332;)V
 		ARG 1 context
-		ARG 2 mouseX
-		ARG 3 mouseY
-		ARG 4 deltaTicks
 	METHOD method_25313 setSelected (Lnet/minecraft/class_350$class_351;)V
 		ARG 1 entry
 	METHOD method_25314 replaceEntries (Ljava/util/Collection;)V
@@ -49,12 +46,9 @@ CLASS net/minecraft/class_350 net/minecraft/client/gui/widget/EntryListWidget
 		ARG 1 builder
 		ARG 2 entry
 	METHOD method_37019 getHoveredEntry ()Lnet/minecraft/class_350$class_351;
-	METHOD method_44397 renderEntry (Lnet/minecraft/class_332;IIFLnet/minecraft/class_350$class_351;)V
+	METHOD method_44397 renderEntry (Lnet/minecraft/class_332;Lnet/minecraft/class_350$class_351;)V
 		ARG 1 context
-		ARG 2 mouseX
-		ARG 3 mouseY
-		ARG 4 delta
-		ARG 5 entry
+		ARG 2 entry
 	METHOD method_44398 drawSelectionHighlight (Lnet/minecraft/class_332;Lnet/minecraft/class_350$class_351;I)V
 		ARG 1 context
 		ARG 2 entry
@@ -121,13 +115,8 @@ CLASS net/minecraft/class_350 net/minecraft/client/gui/widget/EntryListWidget
 		FIELD field_62113 width I
 		FIELD field_62114 height I
 		FIELD field_62115 PADDING I
-		METHOD method_25343 render (Lnet/minecraft/class_332;IIZF)V
+		METHOD method_25343 render (Lnet/minecraft/class_332;Z)V
 			COMMENT Renders an entry in a list.
-			ARG 1 context
-			ARG 2 mouseX
-			ARG 3 mouseY
-			ARG 4 hovered
-			ARG 5 deltaTicks
 		METHOD method_73380 getContentX ()I
 		METHOD method_73381 setWidth (I)V
 			ARG 1 width

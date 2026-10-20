@@ -1,165 +1,29 @@
 CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
-	FIELD field_1_1015 LINES_DEPTH_BIAS Lnet/minecraft/class_1_1257;
-	FIELD field_1_1474 END_CRYSTAL_BEAM Lnet/minecraft/class_1_1257;
-	FIELD field_1_1475 ENTITY_CUTOUT_DISSOLVE Lnet/minecraft/class_1_1257;
-	FIELD field_1_1476 ENTITY_TRANSLUCENT_CULL Lnet/minecraft/class_1_1257;
-	FIELD field_1_1477 ITEM_CUTOUT Lnet/minecraft/class_1_1257;
-	FIELD field_1_1478 ITEM_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_1479 ITEM_TRANSLUCENT Lnet/minecraft/class_1_1257;
-	FIELD field_1_2466 BANNER_PATTERN Lnet/minecraft/class_1_1257;
-	FIELD field_1_2467 TRANSLUCENT_BLOCK Lnet/minecraft/class_1_1257;
-	FIELD field_1_3651 GUI_TEXT_GRAYSCALE Lnet/minecraft/class_1_1257;
-	FIELD field_1_3652 TEXT_GRAYSCALE Lnet/minecraft/class_1_1257;
-	FIELD field_1_3653 TEXT_GRAYSCALE_SEE_THROUGH Lnet/minecraft/class_1_1257;
-	FIELD field_1_3654 TEXT_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_1_6422 GLOBALS_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_6423 TEXT_GRAYSCALE_POLYGON_OFFSET Lnet/minecraft/class_1_1257;
 	FIELD field_1_7124 TERRAIN_ALPHA_CUTOUT F
 	FIELD field_1_7125 DEFAULT_ALPHA_CUTOUT F
-	FIELD field_1_7992 ARMOR_CUTOUT_NO_CULL_GLINT Lnet/minecraft/class_1_1257;
-	FIELD field_1_7994 CRUMBLING_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_7995 DEBUG_POINT_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_7996 LIGHTNING_TRIANGLES_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_7997 ENERGY_SWIRL_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_7998 ENTITY_SHADOW_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_7999 ENTITY_LIGHTING_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_8000 ENTITY_SOLID_GLINT Lnet/minecraft/class_1_1257;
-	FIELD field_1_8005 EYES_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_1_8006 GLINT_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_8007 SPECIAL_GLINT_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_8008 ITEM_CUTOUT_GLINT Lnet/minecraft/class_1_1257;
-	FIELD field_1_8009 ITEM_CUTOUT_GLINT_SPECIAL Lnet/minecraft/class_1_1257;
-	FIELD field_1_8010 ITEM_TRANSLUCENT_GLINT Lnet/minecraft/class_1_1257;
-	FIELD field_1_8012 ITEM_TRANSLUCENT_GLINT_SPECIAL Lnet/minecraft/class_1_1257;
-	FIELD field_1_8015 LIGHTNING_QUADS_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_8016 FOG_AND_SAMPLERS_02_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_1_8017 ACCUMULATE_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_8018 OIT_BEACON_BEAM Lnet/minecraft/class_1_1165;
-	FIELD field_1_8019 OIT_BREEZE_WIND Lnet/minecraft/class_1_1165;
-	FIELD field_1_8020 OIT_CLOUDS Lnet/minecraft/class_1_1165;
 	FIELD field_1_8022 OIT_COMPOSITE Lnet/minecraft/class_1_1257;
-	FIELD field_1_8023 OIT_CRUMBLING Lnet/minecraft/class_1_1165;
-	FIELD field_1_8024 OIT_DEBUG_FILLED_BOX Lnet/minecraft/class_1_1165;
-	FIELD field_1_8025 DEBUG_LINES_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_8026 OIT_DEBUG_POINTS Lnet/minecraft/class_1_1165;
-	FIELD field_1_8027 OIT_DEBUG_QUADS Lnet/minecraft/class_1_1165;
-	FIELD field_1_8028 OIT_DEBUG_TRIANGLE_FAN Lnet/minecraft/class_1_1165;
 	FIELD field_1_8029 DEPTH_BOUNDS_SNIPPEt Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_8030 OIT_DRAGON_RAYS Lnet/minecraft/class_1_1165;
-	FIELD field_1_8031 ENERGY_SWIRL Lnet/minecraft/class_1_1165;
-	FIELD field_1_8032 OIT_ENTITY Lnet/minecraft/class_1_1165;
-	FIELD field_1_8033 OIT_ENTITY_CULL Lnet/minecraft/class_1_1165;
-	FIELD field_1_8034 OIT_ENTITY_EMISSIVE Lnet/minecraft/class_1_1165;
-	FIELD field_1_8035 OIT_ENTITY_SHADOW Lnet/minecraft/class_1_1165;
-	FIELD field_1_8036 ENTITY_ALPHA_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_8037 OIT_EYES Lnet/minecraft/class_1_1165;
-	FIELD field_1_8039 OIT_ITEM Lnet/minecraft/class_1_1165;
-	FIELD field_1_8040 OIT_ITEM_GLINT Lnet/minecraft/class_1_1165;
-	FIELD field_1_8041 OIT_ITEM_GLINT_SPECIAL Lnet/minecraft/class_1_1165;
-	FIELD field_1_8042 ITEM_ALPHA_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_8043 OIT_LIGHTNING Lnet/minecraft/class_1_1165;
-	FIELD field_1_8044 LINES_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_8045 OIT_LINES_TRANSLUCENT Lnet/minecraft/class_1_1165;
-	FIELD field_1_8047 OIT_PARTICLE Lnet/minecraft/class_1_1165;
-	FIELD field_1_8048 DYNAMIC_TRANSFORM_PARTICLE_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_1_8050 OIT_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_8051 OIT_TERRAIN Lnet/minecraft/class_1_1165;
-	FIELD field_1_8052 OIT_TEXT Lnet/minecraft/class_1_1165;
-	FIELD field_1_8055 OIT_TEXT_GRAYSCALE Lnet/minecraft/class_1_1165;
-	FIELD field_1_8056 OIT_TEXT_GRAYSCALE_POLYGON_OFFSET Lnet/minecraft/class_1_1165;
-	FIELD field_1_8058 OIT_TEXT_POLYGON_OFFSET Lnet/minecraft/class_1_1165;
-	FIELD field_1_8060 OIT_TRANSLUCENT_BLOCK Lnet/minecraft/class_1_1165;
 	FIELD field_1_8061 TRANSMITTANCE_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_8062 OIT_WATER_MASK Lnet/minecraft/class_1_1257;
-	FIELD field_1_8063 OIT_WEATHER Lnet/minecraft/class_1_1165;
-	FIELD field_1_8064 OIT_WORLD_BORDER Lnet/minecraft/class_1_1165;
-	FIELD field_1_8066 WATER_MASK_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_8067 WEATHER Lnet/minecraft/class_1_1257;
 	FIELD field_1_9052 INTEGRATE_DEPTH Lnet/minecraft/class_1_1257;
 	FIELD field_1_9053 OIT_DEPTH_BOUNDS_CULL Lnet/minecraft/class_1_1257;
-	FIELD field_1_9408 LINES_TRANSLUCENT_NO_DEPTH_WRITE Lnet/minecraft/class_1_1257;
-	FIELD field_1_9552 CUTOUT_TERRAIN_MULTIDRAW Lnet/minecraft/class_1_1257;
-	FIELD field_1_9553 MULTIDRAW_TERRAIN_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_9554 OIT_TERRAIN_MULTIDRAW Lnet/minecraft/class_1_1165;
-	FIELD field_1_9555 OPTIONAL_PIPELINES Ljava/util/Map;
-	FIELD field_1_9556 SOLID_TERRAIN_MULTIDRAW Lnet/minecraft/class_1_1257;
-	FIELD field_1_9557 TRANSLUCENT_TERRAIN_MULTIDRAW Lnet/minecraft/class_1_1257;
-	FIELD field_1_9558 WIREFRAME_MULTIDRAW Lnet/minecraft/class_1_1257;
 	FIELD field_1_10373 BLIT_DEPTH Lnet/minecraft/class_1_1257;
 	FIELD field_1_10374 BLIT_DEPTH_BOUNDS Lnet/minecraft/class_1_1257;
 	FIELD field_1_10798 BLIT_SKY Lnet/minecraft/class_1_1257;
-	FIELD field_1_10799 CELESTIAL_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_10800 CELESTIAL_WITH_DEPTH_ATTACHMENT Lnet/minecraft/class_1_1257;
-	FIELD field_1_10801 CUTOUT_TERRAIN_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_10802 CUTOUT_TERRAIN_IMPROVED_FOG Lnet/minecraft/class_1_1257;
-	FIELD field_1_10803 CUTOUT_TERRAIN_IMPROVED_FOG_MULTIDRAW Lnet/minecraft/class_1_1257;
-	FIELD field_1_10804 END_PORTAL_GUI Lnet/minecraft/class_1_1257;
-	FIELD field_1_10805 END_SKY_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_10806 END_SKY_WITH_DEPTH_ATTACHMENT Lnet/minecraft/class_1_1257;
 	FIELD field_1_10807 IMPROVED_FOG_SKY_AND_CLOUDS_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_10808 BLIT_CLOUDS_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_10809 CHUNK_SECTION_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_10810 SKY_OCCLUDER Lnet/minecraft/class_1_1257;
-	FIELD field_1_10811 SKY_OCCLUDER_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_10812 SKY_OCCLUDER_WITH_DEPTH_ATTACHMENT Lnet/minecraft/class_1_1257;
-	FIELD field_1_10813 SKYT_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_10814 SKY_WIDTH_DEPTH_ATTACHMENT Lnet/minecraft/class_1_1257;
-	FIELD field_1_10815 SOLID_TERRAIN_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_10816 SOLID_TERRAIN_IMPROVED_FOG Lnet/minecraft/class_1_1257;
-	FIELD field_1_10817 SOLID_TERRAIN_IMPROVED_FOG_MULTIDRAW Lnet/minecraft/class_1_1257;
-	FIELD field_1_10818 STARS_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_10819 STARS_WITH_DEPTH_ATTACHMENT Lnet/minecraft/class_1_1257;
-	FIELD field_1_10820 SUNRISE_SUNSET_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_10821 SUNRISE_SUNSET_WITH_DEPTH_ATTACHMENT Lnet/minecraft/class_1_1257;
-	FIELD field_1_10822 TRANSLUCENT_TERRAIN_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_1_10823 WIREFRAME_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_56812 BEACON_BEAM_TRANSLUCENT Lnet/minecraft/class_1_1257;
 	FIELD field_56814 RENDERTYPE_LEASH Lnet/minecraft/class_1_1257;
-	FIELD field_56815 RENDERTYPE_WATER_MASK Lnet/minecraft/class_1_1257;
 	FIELD field_56816 GLINT Lnet/minecraft/class_1_1257;
-	FIELD field_56817 RENDERTYPE_CRUMBLING Lnet/minecraft/class_1_1257;
-	FIELD field_56818 TEXT Lnet/minecraft/class_1_1257;
-	FIELD field_56821 TEXT_POLYGON_OFFSET Lnet/minecraft/class_1_1257;
-	FIELD field_56822 TEXT_SEETHROUGH Lnet/minecraft/class_1_1257;
-	FIELD field_56825 RENDERTYPE_LIGHTNING Lnet/minecraft/class_1_1257;
-	FIELD field_56826 RENDERTYPE_LIGHTNING_DRAGON_RAYS Lnet/minecraft/class_1_1257;
-	FIELD field_56828 END_PORTAL Lnet/minecraft/class_1_1257;
-	FIELD field_56829 END_GATEWAY Lnet/minecraft/class_1_1257;
-	FIELD field_56830 FLAT_CLOUDS Lnet/minecraft/class_1_1257;
-	FIELD field_56831 CLOUDS Lnet/minecraft/class_1_1257;
-	FIELD field_56833 LINES Lnet/minecraft/class_1_1257;
-	FIELD field_56834 SECOND_BLOCK_OUTLINE Lnet/minecraft/class_1_1257;
-	FIELD field_56837 DEBUG_FILLED_BOX Lnet/minecraft/class_1_1257;
-	FIELD field_56838 POST_EFFECT_PROCESSOR_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_56839 MOJANG_LOGO Lnet/minecraft/class_1_1257;
 	FIELD field_56840 ENTITY_OUTLINE_BLIT Lnet/minecraft/class_1_1257;
 	FIELD field_56841 POSITION_TEX_PANORAMA Lnet/minecraft/class_1_1257;
 	FIELD field_56842 OUTLINE_CULL Lnet/minecraft/class_1_1257;
 	FIELD field_56843 OUTLINE_NO_CULL Lnet/minecraft/class_1_1257;
 	FIELD field_56844 BILT_SCREEN_LIGHTMAP Lnet/minecraft/class_1_1257;
-	FIELD field_56845 REQUIRED_PIPELINES Ljava/util/Map;
-	FIELD field_56853 TERRAIN_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_56854 ENTITY_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_56855 RENDERTYPE_BEACON_BEAM_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_56856 BASE_TEXT_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_56857 RENDERTYPE_END_PORTAL_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_56858 RENDERTYPE_CLOUDS_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_56859 RENDERTYPE_LINES_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_56860 POSITION_COLOR_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_56861 PARTICLE_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_56862 WEATHER_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_56863 GUI_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_56864 POSITION_TEX_COLOR_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_56865 DEBUG_QUADS Lnet/minecraft/class_1_1257;
-	FIELD field_56866 DEBUG_TRIANGLE_FAN Lnet/minecraft/class_1_1257;
-	FIELD field_56869 RENDERTYPE_WORLD_BORDER Lnet/minecraft/class_1_1257;
-	FIELD field_56870 OPAQUE_PARTICLE Lnet/minecraft/class_1_1257;
-	FIELD field_56871 TRANSLUCENT_PARTICLE Lnet/minecraft/class_1_1257;
-	FIELD field_56874 POSITION_SKY Lnet/minecraft/class_1_1257;
-	FIELD field_56875 END_SKY Lnet/minecraft/class_1_1257;
-	FIELD field_56876 SUNRISE_SUNSET Lnet/minecraft/class_1_1257;
-	FIELD field_56877 STARS Lnet/minecraft/class_1_1257;
-	FIELD field_56878 CELESTIAL Lnet/minecraft/class_1_1257;
 	FIELD field_56879 GUI Lnet/minecraft/class_1_1257;
 	FIELD field_56881 GUI_TEXT_HIGHLIGHT Lnet/minecraft/class_1_1257;
 	FIELD field_56883 GUI_TEXTURED Lnet/minecraft/class_1_1257;
@@ -170,67 +34,11 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_56889 VIGNETTE Lnet/minecraft/class_1_1257;
 	FIELD field_56890 CROSSHAIR Lnet/minecraft/class_1_1257;
 	FIELD field_56892 RENDERTYPE_OUTLINE_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_56895 TRANSLUCENT Lnet/minecraft/class_1_1257;
-	FIELD field_56898 ARMOR_CUTOUT_NO_CULL Lnet/minecraft/class_1_1257;
-	FIELD field_56899 ARMOR_DECAL_CUTOUT_NO_CULL Lnet/minecraft/class_1_1257;
-	FIELD field_56900 ARMOR_TRANSLUCENT Lnet/minecraft/class_1_1257;
-	FIELD field_56901 ENTITY_SOLID Lnet/minecraft/class_1_1257;
-	FIELD field_56902 ENTITY_SOLID_OFFSET_FORWARD Lnet/minecraft/class_1_1257;
-	FIELD field_56903 ENTITY_CUTOUT Lnet/minecraft/class_1_1257;
-	FIELD field_56904 ENTITY_CUTOUT_NO_CULL Lnet/minecraft/class_1_1257;
-	FIELD field_56905 ENTITY_CUTOUT_NO_CULL_Z_OFFSET Lnet/minecraft/class_1_1257;
-	FIELD field_56906 ENTITY_TRANSLUCENT Lnet/minecraft/class_1_1257;
-	FIELD field_56907 ENTITY_TRANSLUCENT_EMISSIVE Lnet/minecraft/class_1_1257;
-	FIELD field_56910 BREEZE_WIND Lnet/minecraft/class_1_1257;
-	FIELD field_56911 ENTITY_ENERGY_SWIRL Lnet/minecraft/class_1_1257;
-	FIELD field_56912 ENTITY_EYES Lnet/minecraft/class_1_1257;
-	FIELD field_56914 ENTITY_SHADOW Lnet/minecraft/class_1_1257;
-	FIELD field_56916 BEACON_BEAM_OPAQUE Lnet/minecraft/class_1_1257;
 	FIELD field_57928 TRACY_BLIT Lnet/minecraft/class_1_1257;
-	FIELD field_57929 WIREFRAME Lnet/minecraft/class_1_1257;
 	FIELD field_59968 GUI_TEXTURED_PREMULTIPLIED_ALPHA Lnet/minecraft/class_1_1257;
 	FIELD field_60127 TRANSFORMS_PROJECTION_FOG_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_60128 TRANSFORMS_PROJECTION_FOG_LIGHTING_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_60794 ENTITY_EMISSIVE_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_61068 GUI_INVERT Lnet/minecraft/class_1_1257;
-	FIELD field_61741 GUI_TEXT Lnet/minecraft/class_1_1257;
-	FIELD field_61743 GUI_TEXT_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_63575 DEBUG_POINTS Lnet/minecraft/class_1_1257;
 	FIELD field_64219 ANIMATE_SPRITE Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_64220 ANIMATE_SPRITE_BLIT Lnet/minecraft/class_1_1257;
 	FIELD field_64221 ANIMATE_SPRITE_INTERPOLATE Lnet/minecraft/class_1_1257;
-	FIELD field_64222 FOG_AND_SAMPLERS_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_64223 BLOCK_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_64224 SOLID_BLOCK Lnet/minecraft/class_1_1257;
-	FIELD field_64225 SOLID_TERRAIN Lnet/minecraft/class_1_1257;
-	FIELD field_64226 CUTOUT_BLOCK Lnet/minecraft/class_1_1257;
-	FIELD field_64227 CUTOUT_TERRAIN Lnet/minecraft/class_1_1257;
-	FIELD field_64567 LINES_TRANSLUCENT Lnet/minecraft/class_1_1257;
-	METHOD method_1_7362 (Lnet/minecraft/class_1_1257$class_1_1258;)V
-		ARG 0 builder
-	METHOD method_1_7363 (Lnet/minecraft/class_1_1257$class_1_1258;)V
-		ARG 0 builder
-	METHOD method_1_7364 (Lnet/minecraft/class_1_1257$class_1_1258;)V
-		ARG 0 builder
-	METHOD method_1_7365 (Lnet/minecraft/class_1_1257$class_1_1258;)V
-		ARG 0 builder
-	METHOD method_1_7367 (Lnet/minecraft/class_1_1257$class_1_1258;)V
-		ARG 0 builder
-	METHOD method_1_7368 (Lnet/minecraft/class_1_1257$class_1_1258;)V
-		ARG 0 builder
-	METHOD method_1_7370 register (Lnet/minecraft/class_1_1165;)Lnet/minecraft/class_1_1165;
-		ARG 0 oitPipelineSet
-	METHOD method_1_9077 (Lnet/minecraft/class_1_1257$class_1_1258;)V
-		ARG 0 builder
-	METHOD method_1_9199 (Lnet/minecraft/class_1_1257$class_1_1258;)V
-		ARG 0 builder
-	METHOD method_1_9200 getOptional ()Ljava/util/List;
-	METHOD method_1_9201 registerOptional (Lnet/minecraft/class_1_1257;)Lnet/minecraft/class_1_1257;
-		ARG 0 pipeline
-	METHOD method_1_10856 (Lnet/minecraft/class_1_1257$class_1_1258;)V
-		ARG 0 builder
-	METHOD method_1_10857 (Lnet/minecraft/class_1_1257$class_1_1258;)V
-		ARG 0 builder
 	METHOD method_67886 getRequired ()Ljava/util/List;
-	METHOD method_67887 register (Lnet/minecraft/class_1_1257;)Lnet/minecraft/class_1_1257;
-		ARG 0 pipeline

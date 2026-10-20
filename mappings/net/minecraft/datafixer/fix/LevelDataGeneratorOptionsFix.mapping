@@ -8,8 +8,6 @@ CLASS net/minecraft/class_1196 net/minecraft/datafixer/fix/LevelDataGeneratorOpt
 	METHOD method_5100 fixGeneratorOptions (Ljava/lang/String;Lcom/mojang/serialization/DynamicOps;)Lcom/mojang/serialization/Dynamic;
 		ARG 0 generatorOptions
 		ARG 1 levelDynamicOps
-	METHOD method_5101 (Ljava/util/HashMap;)V
-		ARG 0 map
 	METHOD method_5103 parseFlatLayers (Ljava/lang/String;)Ljava/util/List;
 		ARG 0 layers
 	METHOD method_28209 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;

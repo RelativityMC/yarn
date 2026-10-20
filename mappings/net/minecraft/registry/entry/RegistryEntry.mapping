@@ -119,7 +119,7 @@ CLASS net/minecraft/class_6880 net/minecraft/registry/entry/RegistryEntry
 		COMMENT @see net.minecraft.registry.Registry#entryOf
 		COMMENT @see net.minecraft.registry.Registry#getEntry
 		FIELD field_1_918 components Lnet/minecraft/class_9323;
-		FIELD field_36450 tags Ljava/util/Set;
+		FIELD field_36450 tags Lit/unimi/dsi/fastutil/objects/ReferenceSet;
 		FIELD field_36451 referenceType Lnet/minecraft/class_6880$class_6883$class_6884;
 		FIELD field_36452 registryKey Lnet/minecraft/class_5321;
 		FIELD field_36453 value Ljava/lang/Object;
@@ -163,7 +163,7 @@ CLASS net/minecraft/class_6880 net/minecraft/registry/entry/RegistryEntry
 			ARG 1 registryKey
 		METHOD method_45918 setValue (Ljava/lang/Object;)V
 			ARG 1 value
-		METHOD method_62677 getTags ()Ljava/util/Set;
+		METHOD method_62677 getTags ()Lit/unimi/dsi/fastutil/objects/ReferenceSet;
 		CLASS class_6884 Type
 			COMMENT The types of reference registry entries.
 			COMMENT

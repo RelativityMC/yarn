@@ -90,9 +90,8 @@ CLASS net/minecraft/class_329 net/minecraft/client/gui/hud/InGameHud
 	METHOD method_1735 renderVignetteOverlay (Lnet/minecraft/class_332;Lnet/minecraft/class_1297;)V
 		ARG 1 context
 		ARG 2 entity
-	METHOD method_1736 renderCrosshair (Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V
+	METHOD method_1736 renderCrosshair (Lnet/minecraft/class_332;)V
 		ARG 1 context
-		ARG 2 tickCounter
 	METHOD method_1737 getCameraPlayer ()Lnet/minecraft/class_1657;
 	METHOD method_1738 getTicks ()I
 	METHOD method_1739 getSpectatorHud ()Lnet/minecraft/class_365;
@@ -114,9 +113,6 @@ CLASS net/minecraft/class_329 net/minecraft/client/gui/hud/InGameHud
 	METHOD method_1750 getPlayerListHud ()Lnet/minecraft/class_355;
 	METHOD method_1751 (Lnet/minecraft/class_9011;)Z
 		ARG 0 score
-	METHOD method_1753 render (Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V
-		ARG 1 context
-		ARG 2 tickCounter
 	METHOD method_1756 getTextRenderer ()Lnet/minecraft/class_327;
 	METHOD method_1757 renderScoreboardSidebar (Lnet/minecraft/class_332;Lnet/minecraft/class_266;)V
 		ARG 1 context
@@ -124,26 +120,22 @@ CLASS net/minecraft/class_329 net/minecraft/client/gui/hud/InGameHud
 	METHOD method_1758 setOverlayMessage (Lnet/minecraft/class_2561;Z)V
 		ARG 1 message
 		ARG 2 tinted
-	METHOD method_1759 renderHotbar (Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V
+	METHOD method_1759 renderHotbar (Lnet/minecraft/class_332;)V
 		ARG 1 context
-		ARG 2 tickCounter
 	METHOD method_1760 renderStatusBars (Lnet/minecraft/class_332;)V
 		COMMENT Renders the armor, health, air, and hunger bars.
 		ARG 1 context
-	METHOD method_1762 renderHotbarItem (Lnet/minecraft/class_332;IILnet/minecraft/class_9779;Lnet/minecraft/class_1657;Lnet/minecraft/class_1799;I)V
+	METHOD method_1762 renderHotbarItem (Lnet/minecraft/class_332;IILnet/minecraft/class_1657;Lnet/minecraft/class_1799;I)V
 		ARG 1 context
 		ARG 2 x
 		ARG 3 y
-		ARG 4 tickCounter
-		ARG 5 player
-		ARG 6 stack
-		ARG 7 seed
-	METHOD method_1765 renderStatusEffectOverlay (Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V
+		ARG 4 player
+		ARG 5 stack
+		ARG 6 seed
+	METHOD method_1765 renderStatusEffectOverlay (Lnet/minecraft/class_332;)V
 		ARG 1 context
-		ARG 2 tickCounter
-	METHOD method_1766 renderDemoTimer (Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V
+	METHOD method_1766 renderDemoTimer (Lnet/minecraft/class_332;)V
 		ARG 1 context
-		ARG 2 tickCounter
 	METHOD method_17534 shouldRenderSpectatorCrosshair (Lnet/minecraft/class_239;)Z
 		ARG 1 hitResult
 	METHOD method_31977 renderOverlay (Lnet/minecraft/class_332;Lnet/minecraft/class_2960;F)V
@@ -193,30 +185,20 @@ CLASS net/minecraft/class_329 net/minecraft/client/gui/hud/InGameHud
 		ARG 3 scoreboardEntry
 	METHOD method_55441 (I)[Lnet/minecraft/class_329$class_9016;
 		ARG 0 size
-	METHOD method_55798 renderMiscOverlays (Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V
+	METHOD method_55798 renderMiscOverlays (Lnet/minecraft/class_332;)V
 		ARG 1 context
-		ARG 2 tickCounter
-	METHOD method_55799 renderSleepOverlay (Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V
+	METHOD method_55799 renderSleepOverlay (Lnet/minecraft/class_332;)V
 		ARG 1 context
-		ARG 2 tickCounter
-	METHOD method_55800 renderOverlayMessage (Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V
+	METHOD method_55800 renderOverlayMessage (Lnet/minecraft/class_332;)V
 		ARG 1 context
-		ARG 2 tickCounter
-	METHOD method_55801 renderTitleAndSubtitle (Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V
+	METHOD method_55801 renderTitleAndSubtitle (Lnet/minecraft/class_332;)V
 		ARG 1 context
-		ARG 2 tickCounter
-	METHOD method_55802 renderChat (Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V
+	METHOD method_55802 renderChat (Lnet/minecraft/class_332;)V
 		ARG 1 context
-		ARG 2 tickCounter
-	METHOD method_55803 renderScoreboardSidebar (Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V
+	METHOD method_55803 renderScoreboardSidebar (Lnet/minecraft/class_332;)V
 		ARG 1 context
-		ARG 2 tickCounter
-	METHOD method_55804 renderPlayerList (Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V
+	METHOD method_55805 renderMainHud (Lnet/minecraft/class_332;)V
 		ARG 1 context
-		ARG 2 tickCounter
-	METHOD method_55805 renderMainHud (Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V
-		ARG 1 context
-		ARG 2 tickCounter
 	METHOD method_58477 renderFood (Lnet/minecraft/class_332;Lnet/minecraft/class_1657;II)V
 		ARG 1 context
 		ARG 2 player
@@ -254,9 +236,8 @@ CLASS net/minecraft/class_329 net/minecraft/client/gui/hud/InGameHud
 		ARG 0 air
 		ARG 1 maxAir
 		ARG 2 delay
-	METHOD method_70837 renderBossBarHud (Lnet/minecraft/class_332;Lnet/minecraft/class_9779;)V
+	METHOD method_70837 renderBossBarHud (Lnet/minecraft/class_332;)V
 		ARG 1 context
-		ARG 2 tickCounter
 	METHOD method_70838 renderDebugHud (Lnet/minecraft/class_332;)V
 		ARG 1 context
 	METHOD method_70839 renderSubtitlesHud (Lnet/minecraft/class_332;Z)V

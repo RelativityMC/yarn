@@ -27,8 +27,6 @@ CLASS net/minecraft/class_2430 net/minecraft/data/loottable/vanilla/VanillaBlock
 		ARG 1 block
 	METHOD method_16282 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
-	METHOD method_16284 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
-		ARG 1 block
 	METHOD method_16290 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;
 		ARG 1 block
 	METHOD method_16295 (Lnet/minecraft/class_2248;)Lnet/minecraft/class_52$class_53;

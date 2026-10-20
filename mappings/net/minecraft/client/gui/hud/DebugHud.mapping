@@ -41,8 +41,6 @@ CLASS net/minecraft/class_340 net/minecraft/client/gui/hud/DebugHud
 	METHOD method_1841 (Lnet/minecraft/class_1132;)Ljava/util/Optional;
 		ARG 1 server
 	METHOD method_1842 resetChunk ()V
-	METHOD method_1846 render (Lnet/minecraft/class_332;)V
-		ARG 1 context
 	METHOD method_20541 (Lnet/minecraft/class_9259;)Lnet/minecraft/class_2818;
 		ARG 0 chunk
 	METHOD method_20603 getServerWorld ()Lnet/minecraft/class_3218;

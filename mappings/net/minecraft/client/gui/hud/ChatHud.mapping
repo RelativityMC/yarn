@@ -113,13 +113,11 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 		ARG 2 windowHeight
 		ARG 3 currentTick
 		ARG 4 mode
-	METHOD method_75804 render (Lnet/minecraft/class_332;Lnet/minecraft/class_327;IIILnet/minecraft/class_338$class_1_313;Z)V
+	METHOD method_75804 render (Lnet/minecraft/class_332;Lnet/minecraft/class_327;ILnet/minecraft/class_338$class_1_313;Z)V
 		ARG 1 context
 		ARG 2 textRenderer
 		ARG 3 currentTick
-		ARG 4 mouseX
-		ARG 5 mouseY
-		ARG 7 shouldInsert
+		ARG 5 shouldInsert
 	CLASS 1 1
 		FIELD field_63866 styledCurrentLine Z
 	CLASS class_1_313 Mode

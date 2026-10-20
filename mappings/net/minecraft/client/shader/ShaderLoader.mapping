@@ -15,8 +15,6 @@ CLASS net/minecraft/class_10151 net/minecraft/client/shader/ShaderLoader
 		ARG 1 textureManager
 		ARG 2 onError
 	METHOD method_1_7723 streamPostChainIds ()Ljava/util/stream/Stream;
-	METHOD method_1_9186 (Lnet/minecraft/class_2960;)Ljava/lang/String;
-		ARG 0 id
 	METHOD method_1_9433 canApplyPostEffect (Lnet/minecraft/class_2960;Ljava/util/Set;)Z
 		ARG 1 postEffect
 		ARG 2 accessibleTargets
@@ -28,11 +26,10 @@ CLASS net/minecraft/class_10151 net/minecraft/client/shader/ShaderLoader
 		ARG 4 applyExecutor
 	METHOD method_1_9903 (Lnet/minecraft/class_1_1685;Lnet/minecraft/class_12289;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;Lnet/minecraft/class_1_1257;)Ljava/util/concurrent/CompletableFuture;
 		ARG 4 pipeline
-	METHOD method_1_9905 (Lnet/minecraft/class_1_1685;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;Lnet/minecraft/class_10151$class_10153;)Ljava/util/concurrent/CompletionStage;
-		ARG 3 definitions
-	METHOD method_1_9906 (Lnet/minecraft/class_10151$class_10153;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Lnet/minecraft/class_10151$class_1_1488;
-		ARG 3 compiledRequiredPipelines
-		ARG 4 compiledOptionalPipelines
+	METHOD method_1_9905 (Lnet/minecraft/class_10151$class_1_1853;Lnet/minecraft/class_1_1685;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;Lnet/minecraft/class_10151$class_10153;)Ljava/util/concurrent/CompletionStage;
+		ARG 4 definitions
+	METHOD method_1_9906 (Lnet/minecraft/class_10151$class_10153;Ljava/util/List;Ljava/util/List;)Lnet/minecraft/class_10151$class_1_1488;
+		ARG 2 compiledRequiredPipelines
 	METHOD method_1_9907 (Lnet/minecraft/class_1_1685;Lnet/minecraft/class_10151$class_1_1488;)V
 		ARG 2 preparation
 	METHOD method_1_10243 includeFileToShadercId (Lnet/minecraft/class_2960;)Lnet/minecraft/class_2960;
@@ -69,8 +66,6 @@ CLASS net/minecraft/class_10151 net/minecraft/client/shader/ShaderLoader
 		ARG 2 builder
 	METHOD method_65232 handleError (Ljava/lang/Exception;)V
 		ARG 1 exception
-	METHOD method_68497 (Lnet/minecraft/class_2960;)Ljava/lang/String;
-		ARG 0 id
 	CLASS class_1_1488 Preparation
 	CLASS class_10152 LoadException
 		METHOD <init> (Ljava/lang/String;)V

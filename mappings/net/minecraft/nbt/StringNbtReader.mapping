@@ -4,8 +4,6 @@ CLASS net/minecraft/class_2522 net/minecraft/nbt/StringNbtReader
 	COMMENT @apiNote Methods in this class throw {@code CommandSyntaxException} to indicate
 	COMMENT syntax errors within the NBT representation.
 	FIELD field_11602 TRAILING Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
-	FIELD field_33265 COMMA C
-	FIELD field_33266 COLON C
 	FIELD field_51469 NBT_COMPOUND_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_56410 EXPECTED_COMPOUND Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_56411 STRINGIFIED_CODEC Lcom/mojang/serialization/Codec;

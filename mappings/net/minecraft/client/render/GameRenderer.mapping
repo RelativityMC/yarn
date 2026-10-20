@@ -49,7 +49,6 @@ CLASS net/minecraft/class_757 net/minecraft/client/render/GameRenderer
 	METHOD method_1_2674 extract (Lnet/minecraft/class_9779;Z)V
 		ARG 1 renderTickCounter
 		ARG 2 memoryOk
-	METHOD method_1_2676 updateOptionsRenderState ()V
 	METHOD method_1_2677 updateWindowRenderState ()V
 	METHOD method_1_2678 registerPanoramaTextures (Lnet/minecraft/class_1060;)V
 		ARG 1 textureManager

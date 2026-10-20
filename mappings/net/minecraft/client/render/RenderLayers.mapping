@@ -32,7 +32,6 @@ CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 	FIELD field_64040 FIRE_SCREEN_EFFECT Ljava/util/function/Function;
 	FIELD field_64041 OUTLINE Ljava/util/function/BiFunction;
 	FIELD field_64042 LINES Lnet/minecraft/class_1921;
-	FIELD field_64043 SECONDARY_BLOCK_OUTLINE Lnet/minecraft/class_1921;
 	FIELD field_64044 SOLID Lnet/minecraft/class_1921;
 	FIELD field_64045 CUTOUT Lnet/minecraft/class_1921;
 	FIELD field_64046 TRANSLUCENT_MOVING_BLOCK Lnet/minecraft/class_1921;
@@ -70,9 +69,6 @@ CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 		ARG 1 dissolveMaskTexture
 	METHOD method_1_3005 bannerPattern (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
-	METHOD method_1_3006 createBlockSetup (Lnet/minecraft/class_1_1257;Z)Lnet/minecraft/class_12247;
-		ARG 0 pipeline
-		ARG 1 translucent
 	METHOD method_1_3008 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
 	METHOD method_1_6898 armorTrim (Lnet/minecraft/class_2960;Z)Lnet/minecraft/class_1921;
@@ -228,7 +224,6 @@ CLASS net/minecraft/class_12249 net/minecraft/client/render/RenderLayers
 	METHOD method_76015 lines ()Lnet/minecraft/class_1921;
 	METHOD method_76016 entityTranslucentEmissiveNoOutline (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
-	METHOD method_76017 secondaryBlockOutline ()Lnet/minecraft/class_1921;
 	METHOD method_76018 outlineNoCull (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1921;
 		ARG 0 texture
 	METHOD method_76019 debugFilledBox ()Lnet/minecraft/class_1921;

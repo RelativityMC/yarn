@@ -27,20 +27,16 @@ CLASS net/minecraft/class_457 net/minecraft/client/gui/screen/advancement/Advanc
 	METHOD method_1_9817 (Lnet/minecraft/class_163;Lnet/minecraft/class_8779;Lnet/minecraft/class_167;)V
 		ARG 2 advancement
 		ARG 3 progress
-	METHOD method_2334 drawWindow (Lnet/minecraft/class_332;II)V
+	METHOD method_2334 drawWindow (Lnet/minecraft/class_332;)V
 		ARG 1 context
-		ARG 2 mouseX
-		ARG 3 mouseY
 	METHOD method_2335 getAdvancementWidget (Lnet/minecraft/class_8781;)Lnet/minecraft/class_456;
 		ARG 1 advancement
 	METHOD method_2336 getTab (Lnet/minecraft/class_8781;)Lnet/minecraft/class_454;
 		ARG 1 advancement
 	METHOD method_2337 drawAdvancementTree (Lnet/minecraft/class_332;)V
 		ARG 1 context
-	METHOD method_2338 drawWidgetTooltip (Lnet/minecraft/class_332;II)V
+	METHOD method_2338 drawWidgetTooltip (Lnet/minecraft/class_332;)V
 		ARG 1 context
-		ARG 2 mouseX
-		ARG 3 mouseY
 	METHOD method_57743 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
 	METHOD method_57744 (Lnet/minecraft/class_457;Lnet/minecraft/class_339;)V

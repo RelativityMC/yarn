@@ -27,8 +27,6 @@ CLASS net/minecraft/class_8744 net/minecraft/datafixer/fix/StatusEffectFix
 		ARG 3 newKey
 	METHOD method_53089 (Lcom/mojang/serialization/Dynamic;Ljava/util/stream/Stream;)Lcom/mojang/serialization/Dynamic;
 		ARG 1 effects
-	METHOD method_53090 (Lit/unimi/dsi/fastutil/ints/Int2ObjectOpenHashMap;)V
-		ARG 0 idMap
 	METHOD method_53091 (Ljava/lang/Number;)Ljava/lang/String;
 		ARG 0 oldId
 	METHOD method_53092 (Ljava/util/function/Function;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;

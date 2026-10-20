@@ -10,7 +10,6 @@ CLASS net/minecraft/class_10124 net/minecraft/component/type/ConsumableComponent
 	METHOD method_62842 shouldSpawnParticlesAndPlaySounds (I)Z
 		ARG 1 remainingUseTicks
 	METHOD method_62843 spawnParticlesAndPlaySound (Lnet/minecraft/class_5819;Lnet/minecraft/class_1309;Lnet/minecraft/class_1799;I)V
-		ARG 1 random
 		ARG 2 user
 		ARG 3 stack
 		ARG 4 particleCount
@@ -35,7 +34,7 @@ CLASS net/minecraft/class_10124 net/minecraft/component/type/ConsumableComponent
 	CLASS class_10125 Builder
 		FIELD field_53774 consumeSeconds F
 		FIELD field_53775 useAction Lnet/minecraft/class_1839;
-		FIELD field_53776 sound Lnet/minecraft/class_6880;
+		FIELD field_53776 sound Ljava/util/Optional;
 		FIELD field_53777 consumeParticles Z
 		FIELD field_53778 consumeEffects Ljava/util/List;
 		METHOD method_62851 build ()Lnet/minecraft/class_10124;
@@ -51,6 +50,3 @@ CLASS net/minecraft/class_10124 net/minecraft/component/type/ConsumableComponent
 			ARG 1 consumeParticles
 		METHOD method_62857 finishSound (Lnet/minecraft/class_6880;)Lnet/minecraft/class_10124$class_10125;
 			ARG 1 finishSound
-	CLASS class_10126 ConsumableSoundProvider
-		METHOD method_18807 getConsumeSound (Lnet/minecraft/class_1799;)Lnet/minecraft/class_3414;
-			ARG 1 stack

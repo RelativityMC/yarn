@@ -10,8 +10,6 @@ CLASS net/minecraft/class_374 net/minecraft/client/toast/ToastManager
 		ARG 1 client
 		ARG 2 gameOptions
 	METHOD method_1995 getClient ()Lnet/minecraft/class_310;
-	METHOD method_1996 draw (Lnet/minecraft/class_332;)V
-		ARG 1 context
 	METHOD method_1997 getToast (Ljava/lang/Class;Ljava/lang/Object;)Lnet/minecraft/class_368;
 		ARG 1 toastClass
 		ARG 2 type

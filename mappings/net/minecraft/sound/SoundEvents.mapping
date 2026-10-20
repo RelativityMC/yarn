@@ -13,7 +13,7 @@ CLASS net/minecraft/class_3417 net/minecraft/sound/SoundEvents
 	FIELD field_14573 BLOCK_SOUND_SET_CROP Lnet/minecraft/class_1_1844;
 	FIELD field_21887 BLOCK_SOUND_SET_NETHER_STEM Lnet/minecraft/class_1_1844;
 	FIELD field_39027 GOAT_HORN_SOUND_COUNT I
-	FIELD field_39028 GOAT_HORN_SOUNDS Lcom/google/common/collect/ImmutableList;
+	FIELD field_39028 GOAT_HORN_SOUNDS Ljava/util/List;
 	FIELD field_42580 BLOCK_SOUND_SET_DECORATED_POT_SHATTER Lnet/minecraft/class_1_1844;
 	FIELD field_57074 WOLF_SOUNDS Ljava/util/Map;
 	METHOD method_1_2127 (Lnet/minecraft/class_1_338$class_1_339;)Lnet/minecraft/class_1_338$class_1_339;
@@ -62,20 +62,20 @@ CLASS net/minecraft/class_3417 net/minecraft/sound/SoundEvents
 		ARG 0 id
 		ARG 1 soundId
 		ARG 2 distanceToTravel
-	METHOD method_43516 registerGoatHornSounds ()Lcom/google/common/collect/ImmutableList;
-	METHOD method_43517 (I)Lnet/minecraft/class_6880$class_6883;
+	METHOD method_43516 registerGoatHornSounds ()Ljava/util/List;
+	METHOD method_43517 (I)Lnet/minecraft/class_6880;
 		ARG 0 variant
 	METHOD method_47962 register (Lnet/minecraft/class_2960;)Lnet/minecraft/class_3414;
 		ARG 0 id
 	METHOD method_47963 register (Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;)Lnet/minecraft/class_3414;
 		ARG 0 id
 		ARG 1 soundId
-	METHOD method_47964 registerReference (Lnet/minecraft/class_2960;)Lnet/minecraft/class_6880$class_6883;
+	METHOD method_47964 registerReference (Lnet/minecraft/class_2960;)Lnet/minecraft/class_6880;
 		ARG 0 id
-	METHOD method_47965 registerReference (Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;)Lnet/minecraft/class_6880$class_6883;
+	METHOD method_47965 registerReference (Lnet/minecraft/class_2960;Lnet/minecraft/class_2960;)Lnet/minecraft/class_6880;
 		ARG 0 id
 		ARG 1 soundId
-	METHOD method_47966 registerReference (Ljava/lang/String;)Lnet/minecraft/class_6880$class_6883;
+	METHOD method_47966 registerReference (Ljava/lang/String;)Lnet/minecraft/class_6880;
 		ARG 0 id
 	METHOD method_68125 (Lnet/minecraft/class_10824$class_10825;)Lnet/minecraft/class_10823;
 		ARG 0 type

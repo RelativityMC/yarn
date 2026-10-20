@@ -26,21 +26,15 @@ CLASS net/minecraft/class_635 net/minecraft/client/network/ClientLoginNetworkHan
 		ARG 9 cookieStorage
 	METHOD method_2892 joinServerSession (Ljava/lang/String;)Lnet/minecraft/class_2561;
 		ARG 1 serverId
-	METHOD method_2894 (Ljava/lang/String;Lnet/minecraft/class_2917;Ljavax/crypto/Cipher;Ljavax/crypto/Cipher;)V
+	METHOD method_2894 (Ljava/lang/String;Lnet/minecraft/class_1_1876;Ljavax/crypto/SecretKey;)V
 		ARG 1 serverId
 		ARG 2 packet
-		ARG 3 decryptionCipher
-		ARG 4 encryptionCipher
 	METHOD method_51768 setMinigameName (Ljava/lang/String;)V
 		ARG 1 minigameName
 	METHOD method_53872 switchTo (Lnet/minecraft/class_635$class_8798;)V
 		ARG 1 state
 	METHOD method_53873 (Lnet/minecraft/class_635$class_8798;Lnet/minecraft/class_635$class_8798;)Lnet/minecraft/class_635$class_8798;
 		ARG 1 currentState
-	METHOD method_56151 setupEncryption (Lnet/minecraft/class_2917;Ljavax/crypto/Cipher;Ljavax/crypto/Cipher;)V
-		ARG 1 packet
-		ARG 2 decryptionCipher
-		ARG 3 encryptionCipher
 	CLASS class_8798 State
 		FIELD field_46197 name Lnet/minecraft/class_2561;
 		FIELD field_46198 prevStates Ljava/util/Set;

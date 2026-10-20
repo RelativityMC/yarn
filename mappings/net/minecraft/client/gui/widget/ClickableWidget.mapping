@@ -20,10 +20,8 @@ CLASS net/minecraft/class_339 net/minecraft/client/gui/widget/ClickableWidget
 		ARG 3 width
 		ARG 4 height
 		ARG 5 message
-	METHOD method_1_4445 renderWidgetTooltip (Lnet/minecraft/class_332;II)V
+	METHOD method_1_4445 renderWidgetTooltip (Lnet/minecraft/class_332;)V
 		ARG 1 context
-		ARG 2 mouseX
-		ARG 3 mouseY
 	METHOD method_1_10864 isVisible ()Z
 	METHOD method_1_10865 setVisible (Z)V
 		ARG 1 visible
@@ -59,11 +57,7 @@ CLASS net/minecraft/class_339 net/minecraft/client/gui/widget/ClickableWidget
 		ARG 1 tooltip
 	METHOD method_47402 setTooltipDelay (Ljava/time/Duration;)V
 		ARG 1 tooltipDelay
-	METHOD method_48579 renderWidget (Lnet/minecraft/class_332;IIF)V
-		ARG 1 context
-		ARG 2 mouseX
-		ARG 3 mouseY
-		ARG 4 deltaTicks
+	METHOD method_48579 renderWidget (Lnet/minecraft/class_332;)V
 	METHOD method_48591 setNavigationOrder (I)V
 		ARG 1 navigationOrder
 	METHOD method_49606 isHovered ()Z

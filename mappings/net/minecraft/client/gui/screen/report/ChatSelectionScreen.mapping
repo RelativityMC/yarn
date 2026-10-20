@@ -75,13 +75,11 @@ CLASS net/minecraft/class_7543 net/minecraft/client/gui/screen/report/ChatSelect
 				ARG 2 y
 				ARG 3 x
 				ARG 4 entryHeight
-			METHOD method_44729 renderIndicator (Lnet/minecraft/class_332;IIIII)V
+			METHOD method_44729 renderIndicator (Lnet/minecraft/class_332;III)V
 				ARG 1 context
 				ARG 2 x
 				ARG 3 y
 				ARG 4 entryHeight
-				ARG 5 mouseX
-				ARG 6 mouseY
 		CLASS class_7549 SenderEntry
 			FIELD field_39607 PLAYER_SKIN_SIZE I
 			FIELD field_39608 headingText Lnet/minecraft/class_2561;

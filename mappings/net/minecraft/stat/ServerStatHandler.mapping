@@ -10,9 +10,7 @@ CLASS net/minecraft/class_3442 net/minecraft/stat/ServerStatHandler
 	METHOD method_14906 parse (Lcom/mojang/datafixers/DataFixer;Lcom/google/gson/JsonElement;)V
 		ARG 1 dataFixer
 		ARG 2 json
-	METHOD method_14909 takePendingStats ()Ljava/util/Set;
 	METHOD method_14910 sendStats (Lnet/minecraft/class_3222;)V
-		ARG 1 player
 	METHOD method_14911 asString ()Lcom/google/gson/JsonElement;
 	METHOD method_14912 save ()V
 	METHOD method_14914 updateStatSet ()V

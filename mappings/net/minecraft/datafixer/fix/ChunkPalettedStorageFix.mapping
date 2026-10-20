@@ -17,9 +17,6 @@ CLASS net/minecraft/class_3582 net/minecraft/datafixer/fix/ChunkPalettedStorageF
 		ARG 1 east
 		ARG 2 north
 		ARG 3 south
-	METHOD method_15616 addTo (Lnet/minecraft/class_3513;Lcom/mojang/serialization/Dynamic;)I
-		ARG 0 statesById
-		ARG 1 state
 	METHOD method_15633 fixChunk (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
 		ARG 1 chunkDynamic
 	METHOD method_15637 getName (Lcom/mojang/serialization/Dynamic;)Ljava/lang/String;
@@ -63,7 +60,7 @@ CLASS net/minecraft/class_3582 net/minecraft/datafixer/fix/ChunkPalettedStorageF
 		FIELD field_15879 y I
 		FIELD field_15880 paletteData Ljava/util/List;
 		FIELD field_15881 inPlaceUpdates Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
-		FIELD field_15882 paletteMap Lnet/minecraft/class_3513;
+		FIELD field_15882 paletteMap Lnet/minecraft/class_3582$class_1_1873;
 		METHOD <init> (Lcom/mojang/serialization/Dynamic;)V
 			ARG 1 section
 		METHOD method_15646 (Ljava/nio/ByteBuffer;)Lnet/minecraft/class_3582$class_3583;

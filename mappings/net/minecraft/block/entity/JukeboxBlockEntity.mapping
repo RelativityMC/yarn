@@ -22,8 +22,7 @@ CLASS net/minecraft/class_2619 net/minecraft/block/entity/JukeboxBlockEntity
 	METHOD method_1_11636 getNextSlot (Lnet/minecraft/class_1263;I)Ljava/util/OptionalInt;
 		ARG 0 containerInventory
 		ARG 1 playlistPosition
-	METHOD method_1_11637 isBelowJukeboxContainer (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)Z
-		ARG 0 world
+	METHOD method_1_11637 isBelowJukeboxContainer (Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;)Z
 		ARG 1 pos
 	METHOD method_1_11638 isPlayable (Lnet/minecraft/class_1799;)Z
 		ARG 0 stack

@@ -13,7 +13,6 @@ CLASS net/minecraft/class_156 net/minecraft/util/Util
 		COMMENT The file system provider for handling jar and zip files.
 	FIELD field_34891 MAX_PARALLELISM I
 	FIELD field_34892 MAX_BG_THREADS_PROPERTY Ljava/lang/String;
-	FIELD field_34893 missingBreakpointHandler Ljava/util/function/Consumer;
 	FIELD field_37250 TICKER Lcom/google/common/base/Ticker;
 	FIELD field_39824 DATE_TIME_FORMATTER Ljava/time/format/DateTimeFormatter;
 		COMMENT A locale-independent datetime formatter that uses {@code yyyy-MM-dd_HH.mm.ss}
@@ -155,19 +154,6 @@ CLASS net/minecraft/class_156 net/minecraft/util/Util
 	METHOD method_18839 debugRunnable (Ljava/lang/Runnable;Ljava/util/function/Supplier;)Ljava/lang/Runnable;
 		ARG 0 runnable
 		ARG 1 messageSupplier
-	METHOD method_22320 getFatalOrPause (Ljava/lang/Throwable;)Ljava/lang/Throwable;
-		COMMENT Returns the provided fatal throwable, or pauses the game if
-		COMMENT {@link net.minecraft.SharedConstants#isDevelopment SharedConstants.isDevelopment}
-		COMMENT is {@code true}.
-		COMMENT
-		COMMENT <p>This method is usually chained with a {@code throw} statement:
-		COMMENT {@snippet :
-		COMMENT throw Util.getFatalOrPause(theFatalException);
-		COMMENT }
-		COMMENT
-		COMMENT @return the provided throwable
-		ARG 0 t
-			COMMENT the throwable
 	METHOD method_22321 getInnermostMessage (Ljava/lang/Throwable;)Ljava/lang/String;
 		ARG 0 t
 	METHOD method_24155 throwUnchecked (Ljava/lang/Throwable;)V
@@ -269,14 +255,6 @@ CLASS net/minecraft/class_156 net/minecraft/util/Util
 	METHOD method_33141 decodeFixedLengthList (Ljava/util/List;I)Lcom/mojang/serialization/DataResult;
 		ARG 0 list
 		ARG 1 length
-	METHOD method_33559 logErrorOrPause (Ljava/lang/String;)V
-		COMMENT Logs an error-level message and pauses the game if
-		COMMENT {@link net.minecraft.SharedConstants#isDevelopment SharedConstants.isDevelopment}
-		COMMENT is {@code true}.
-		ARG 0 message
-			COMMENT the log message
-	METHOD method_33560 pause (Ljava/lang/String;)V
-		ARG 0 message
 	METHOD method_33791 combineSafe (Ljava/util/List;)Ljava/util/concurrent/CompletableFuture;
 		COMMENT Combines a list of {@code futures} into one future that holds a list
 		COMMENT of their results.
@@ -294,19 +272,7 @@ CLASS net/minecraft/class_156 net/minecraft/util/Util
 		ARG 0 function
 	METHOD method_37153 (Ljava/nio/file/spi/FileSystemProvider;)Z
 		ARG 0 fileSystemProvider
-	METHOD method_38646 setMissingBreakpointHandler (Ljava/util/function/Consumer;)V
-		ARG 0 missingBreakpointHandler
-	METHOD method_38647 (Ljava/lang/String;)V
-		ARG 0 message
 	METHOD method_38648 getMaxBackgroundThreads ()I
-	METHOD method_39977 logErrorOrPause (Ljava/lang/String;Ljava/lang/Throwable;)V
-		COMMENT Logs an error-level message and pauses the game if
-		COMMENT {@link net.minecraft.SharedConstants#isDevelopment SharedConstants.isDevelopment}
-		COMMENT is {@code true}.
-		ARG 0 message
-			COMMENT the log message
-		ARG 1 throwable
-			COMMENT a throwable related to the log message
 	METHOD method_40082 (Ljava/util/List;Ljava/lang/Void;)Ljava/util/List;
 		ARG 1 void_
 	METHOD method_40083 getRandomOrEmpty (Ljava/util/List;Lnet/minecraft/class_5819;)Ljava/util/Optional;

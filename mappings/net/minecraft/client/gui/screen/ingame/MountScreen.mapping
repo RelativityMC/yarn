@@ -1,7 +1,5 @@
 CLASS net/minecraft/class_12348 net/minecraft/client/gui/screen/ingame/MountScreen
 	FIELD field_64544 slotColumnCount I
-	FIELD field_64545 mouseX F
-	FIELD field_64546 mouseY F
 	FIELD field_64547 mount Lnet/minecraft/class_1309;
 	METHOD <init> (Lnet/minecraft/class_12343;Lnet/minecraft/class_1661;Lnet/minecraft/class_2561;ILnet/minecraft/class_1309;)V
 		ARG 1 handler

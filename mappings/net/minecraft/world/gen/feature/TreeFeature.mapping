@@ -25,8 +25,6 @@ CLASS net/minecraft/class_2944 net/minecraft/world/gen/feature/TreeFeature
 		ARG 0 world
 		ARG 1 box
 		ARG 2 trunkPositions
-		ARG 3 decorationPositions
-		ARG 4 rootPositions
 	METHOD method_23381 (Lnet/minecraft/class_4662$class_7402;Lnet/minecraft/class_4662;)V
 		ARG 1 decorator
 	METHOD method_23384 (Lnet/minecraft/class_2680;)Z

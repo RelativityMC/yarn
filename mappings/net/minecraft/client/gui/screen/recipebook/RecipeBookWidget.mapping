@@ -64,11 +64,9 @@ CLASS net/minecraft/class_507 net/minecraft/client/gui/screen/recipebook/RecipeB
 		ARG 6 y
 		ARG 7 backgroundWidth
 		ARG 8 backgroundHeight
-	METHOD method_2601 drawTooltip (Lnet/minecraft/class_332;IILnet/minecraft/class_1735;)V
+	METHOD method_2601 drawTooltip (Lnet/minecraft/class_332;Lnet/minecraft/class_1735;)V
 		ARG 1 context
-		ARG 2 x
-		ARG 3 y
-		ARG 4 slot
+		ARG 2 slot
 	METHOD method_2603 refreshResults (ZZ)V
 		ARG 1 resetCurrentPage
 		ARG 2 filteringCraftable

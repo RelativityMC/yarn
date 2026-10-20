@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_1_1519 net/minecraft/world/gen/sampler/Sampler
 	METHOD method_1_10142 withContext (Lnet/minecraft/class_1_1521;)Lnet/minecraft/class_1_1519$class_1_1520;
 		ARG 1 context
-	METHOD method_1_10143 (Lnet/minecraft/class_1_1521;III)F
+	METHOD method_1_10143 sample (Lnet/minecraft/class_1_1521;III)F
 		ARG 1 context
 		ARG 2 x
 		ARG 3 y
@@ -11,7 +11,7 @@ CLASS net/minecraft/class_1_1519 net/minecraft/world/gen/sampler/Sampler
 		ARG 1 output
 		ARG 2 region
 		ARG 3 sampler
-	METHOD method_40470 (Lnet/minecraft/class_1_1521;Lnet/minecraft/class_1_1516;Lnet/minecraft/class_1_1441;)V
+	METHOD method_40470 fill (Lnet/minecraft/class_1_1521;Lnet/minecraft/class_1_1516;Lnet/minecraft/class_1_1441;)V
 		COMMENT Samples multiple values from this sampler.
 		COMMENT
 		COMMENT This can be more efficient than calling {@link #sample} repeatedly.

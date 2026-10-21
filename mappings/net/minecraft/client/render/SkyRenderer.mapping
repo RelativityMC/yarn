@@ -117,3 +117,4 @@ CLASS net/minecraft/class_9975 net/minecraft/client/render/SkyRenderer
 	METHOD method_75418 createQuadVertexBuffer (Ljava/lang/String;Lnet/minecraft/class_1058;)Lnet/minecraft/class_1_1211;
 		ARG 0 description
 		ARG 1 sprite
+	CLASS class_1_1852 Element

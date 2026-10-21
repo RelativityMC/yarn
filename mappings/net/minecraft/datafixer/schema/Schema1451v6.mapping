@@ -1,5 +1,7 @@
 CLASS net/minecraft/class_1236 net/minecraft/datafixer/schema/Schema1451v6
 	FIELD field_34013 SPECIAL_TYPE Ljava/lang/String;
+	FIELD field_34014 CRITERIA_NAME_TO_TYPE Lcom/mojang/datafixers/types/templates/Hook$HookFunction;
+	FIELD field_34015 CRITERIA_TYPE_TO_NAME Lcom/mojang/datafixers/types/templates/Hook$HookFunction;
 	METHOD method_37389 (Lcom/mojang/datafixers/schemas/Schema;)Ljava/util/Map;
 		ARG 0 schema
 	METHOD registerTypes (Lcom/mojang/datafixers/schemas/Schema;Ljava/util/Map;Ljava/util/Map;)V
@@ -10,9 +12,13 @@ CLASS net/minecraft/class_1236 net/minecraft/datafixer/schema/Schema1451v6
 		METHOD apply (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Ljava/lang/Object;
 			ARG 1 ops
 			ARG 2 value
+		METHOD method_1_11753 (Lcom/mojang/serialization/Dynamic;Ljava/lang/String;)Lcom/mojang/serialization/Dynamic;
+			ARG 1 criteriaName
 	CLASS 2 2
 		METHOD apply (Lcom/mojang/serialization/DynamicOps;Ljava/lang/Object;)Ljava/lang/Object;
 			ARG 1 ops
 			ARG 2 value
 		METHOD method_37398 (Lcom/mojang/serialization/Dynamic;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
 			ARG 1 criteriaName
+		METHOD method_37400 (Lcom/mojang/serialization/Dynamic;Lcom/mojang/serialization/Dynamic;)Ljava/util/Optional;
+			ARG 1 criteriaType

@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_1902 net/minecraft/client/render/variant/BlockVariant
+	FIELD field_1_12162 CUTOUT Lnet/minecraft/class_1_1902;
+	FIELD field_1_12163 SOLID Lnet/minecraft/class_1_1902;
+	FIELD field_1_12164 TRANSLUCENT Lnet/minecraft/class_1_1902;
+	FIELD field_1_12165 VALUES Lnet/minecraft/class_1_1883;
+	METHOD method_1_12004 values ()Ljava/util/List;

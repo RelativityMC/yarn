@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_12247 net/minecraft/client/render/RenderSetup
 	FIELD field_1_8182 hasCrumbling Z
 	FIELD field_1_10233 outlineSampler Ljava/lang/String;
+	FIELD field_1_12084 pipelines Ljava/util/function/Function;
 	FIELD field_63987 textures Ljava/util/Map;
 	FIELD field_63988 textureTransform Lnet/minecraft/class_12250;
 	FIELD field_63990 outlineMode Lnet/minecraft/class_12247$class_4750;
@@ -10,6 +11,7 @@ CLASS net/minecraft/class_12247 net/minecraft/client/render/RenderSetup
 	FIELD field_63994 translucent Z
 	FIELD field_63996 layeringTransform Lnet/minecraft/class_12245;
 	METHOD <init> (Ljava/util/function/Function;Ljava/util/Map;ZZLnet/minecraft/class_12245;Lnet/minecraft/class_12250;Lnet/minecraft/class_12247$class_4750;Ljava/lang/String;ZZZ)V
+		ARG 1 pipelines
 		ARG 2 textures
 		ARG 3 useLightmap
 		ARG 4 useOverlay
@@ -20,6 +22,10 @@ CLASS net/minecraft/class_12247 net/minecraft/client/render/RenderSetup
 		ARG 9 hasCrumbling
 		ARG 10 translucent
 		ARG 11 opaque
+	METHOD method_1_11804 builder (Ljava/util/function/Function;)Lnet/minecraft/class_12247$class_12248;
+		ARG 0 pipelines
+	METHOD method_1_11805 (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+		ARG 1 oitStage
 	METHOD method_75926 resolveTextures (Lnet/minecraft/class_1060;Lnet/minecraft/class_12136;Lnet/minecraft/class_1_1330;Lnet/minecraft/class_1_1330;)Ljava/util/List;
 		ARG 1 textureManager
 		ARG 2 samplerCache
@@ -34,6 +40,7 @@ CLASS net/minecraft/class_12247 net/minecraft/client/render/RenderSetup
 	CLASS class_12248 Builder
 		FIELD field_1_8184 opaque Z
 		FIELD field_1_10234 outlineSampler Ljava/lang/String;
+		FIELD field_1_12085 pipelines Ljava/util/function/Function;
 		FIELD field_63998 useLightmap Z
 		FIELD field_63999 useOverlay Z
 		FIELD field_64000 layeringTransform Lnet/minecraft/class_12245;
@@ -42,6 +49,8 @@ CLASS net/minecraft/class_12247 net/minecraft/client/render/RenderSetup
 		FIELD field_64004 translucent Z
 		FIELD field_64006 outlineMode Lnet/minecraft/class_12247$class_4750;
 		FIELD field_64007 textures Ljava/util/Map;
+		METHOD <init> (Ljava/util/function/Function;)V
+			ARG 1 pipelines
 		METHOD method_1_7472 opaque ()Lnet/minecraft/class_12247$class_12248;
 		METHOD method_1_10029 outlineMode (Lnet/minecraft/class_12247$class_4750;Ljava/lang/String;)Lnet/minecraft/class_12247$class_12248;
 			ARG 1 outlineMode

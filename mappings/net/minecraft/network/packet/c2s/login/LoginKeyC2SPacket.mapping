@@ -1,2 +1,2 @@
-CLASS net/minecraft/class_2917 net/minecraft/network/packet/c2s/login/LoginKeyC2SPacket
-	FIELD field_48251 CODEC Lnet/minecraft/class_9139;
+CLASS net/minecraft/class_1_1876 net/minecraft/network/packet/c2s/login/LoginKeyC2SPacket
+	FIELD field_1_12110 CODEC Lnet/minecraft/class_9139;

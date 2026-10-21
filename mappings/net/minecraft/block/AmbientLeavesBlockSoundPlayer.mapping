@@ -11,3 +11,9 @@ CLASS net/minecraft/class_1_1136 net/minecraft/block/AmbientLeavesBlockSoundPlay
 		ARG 1 world
 		ARG 2 pos
 		ARG 3 block
+		ARG 4 random
+	METHOD method_1_11981 isSurroundedByAtLeast (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Ljava/util/function/Predicate;I)Z
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 predicate
+		ARG 3 minimum

@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_1220 net/minecraft/datafixer/schema/IdentifierNormalizingSchema
+	FIELD field_1_12083 DEFAULT_NAMESPACE Ljava/lang/String;
 	FIELD field_24652 CODEC Lcom/mojang/serialization/codecs/PrimitiveCodec;
 	FIELD field_24653 IDENTIFIER_TYPE Lcom/mojang/datafixers/types/Type;
 	METHOD <init> (ILcom/mojang/datafixers/schemas/Schema;)V
@@ -7,6 +8,15 @@ CLASS net/minecraft/class_1220 net/minecraft/datafixer/schema/IdentifierNormaliz
 	METHOD getChoiceType (Lcom/mojang/datafixers/DSL$TypeReference;Ljava/lang/String;)Lcom/mojang/datafixers/types/Type;
 		ARG 1 type
 		ARG 2 choiceName
+	METHOD method_1_11798 separatorToColon (Ljava/lang/String;C)Ljava/lang/String;
+		ARG 0 string
+		ARG 1 oldSeparator
+	METHOD method_1_11799 colonToDot (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 string
+	METHOD method_1_11800 fixSeparator (Ljava/lang/String;CC)Ljava/lang/String;
+		ARG 0 string
+		ARG 1 oldSeparator
+		ARG 2 newSeparator
 	METHOD method_5193 normalize (Ljava/lang/String;)Ljava/lang/String;
 		ARG 0 id
 	METHOD method_28295 getIdentifierType ()Lcom/mojang/datafixers/types/Type;

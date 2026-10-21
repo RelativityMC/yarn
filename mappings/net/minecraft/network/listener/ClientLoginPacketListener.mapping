@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_2896 net/minecraft/network/listener/ClientLoginPacketListener
+	METHOD method_1_11955 onApplyOptions (Lnet/minecraft/class_1_1884;)V
+		ARG 1 packet
 	METHOD method_12584 onDisconnect (Lnet/minecraft/class_2909;)V
 		ARG 1 packet
 	METHOD method_12585 onCompression (Lnet/minecraft/class_2907;)V

@@ -8,6 +8,9 @@ CLASS net/minecraft/class_1214 net/minecraft/datafixer/fix/StatsCounterFix
 	FIELD field_29908 NEW_MINE_BLOCK_ID Ljava/lang/String;
 	FIELD field_29909 CUSTOM Ljava/lang/String;
 	FIELD field_45099 SKIPPED_STATS Ljava/util/Set;
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Z)V
+		ARG 1 outputSchema
+		ARG 2 changesType
 	METHOD method_5172 getItem (Ljava/lang/String;)Ljava/lang/String;
 		ARG 0 id
 	METHOD method_5173 getBlock (Ljava/lang/String;)Ljava/lang/String;

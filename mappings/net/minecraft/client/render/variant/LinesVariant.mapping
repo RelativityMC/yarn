@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_1900 net/minecraft/client/render/variant/LinesVariant
+	FIELD field_1_12148 SOLID Lnet/minecraft/class_1_1900;
+	FIELD field_1_12149 SOLID_WITH_DEPTH_BIAS Lnet/minecraft/class_1_1900;
+	FIELD field_1_12150 TRANSLUCENT Lnet/minecraft/class_1_1900;
+	FIELD field_1_12151 TRANSLUCENT_NO_DEPTH_WRITE Lnet/minecraft/class_1_1900;
+	FIELD field_1_12152 VALUES Lnet/minecraft/class_1_1883;
+	METHOD method_1_12002 values ()Ljava/util/List;

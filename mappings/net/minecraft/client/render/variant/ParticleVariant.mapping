@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_1907 net/minecraft/client/render/variant/ParticleVariant
+	FIELD field_1_12191 OPAQUE Lnet/minecraft/class_1_1907;
+	FIELD field_1_12192 TRANSLUCENT Lnet/minecraft/class_1_1907;
+	FIELD field_1_12193 VALUES Lnet/minecraft/class_1_1883;
+	FIELD field_1_12194 WEATHER Lnet/minecraft/class_1_1907;
+	METHOD method_1_12008 values ()Ljava/util/List;

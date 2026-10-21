@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_1_1898 net/minecraft/client/render/variant/ItemVariant
+	FIELD field_1_12138 CUTOUT Lnet/minecraft/class_1_1898;
+	FIELD field_1_12139 CUTOUT_GLINT Lnet/minecraft/class_1_1898;
+	FIELD field_1_12140 CUTOUT_GLINT_SPECIAL Lnet/minecraft/class_1_1898;
+	FIELD field_1_12141 TRANSLUCENT Lnet/minecraft/class_1_1898;
+	FIELD field_1_12142 TRANSLUCENT_GLINT Lnet/minecraft/class_1_1898;
+	FIELD field_1_12143 TRANSLUCENT_GLINT_SPECIAL Lnet/minecraft/class_1_1898;
+	FIELD field_1_12144 VALUES Lnet/minecraft/class_1_1883;
+	METHOD method_1_12000 values ()Ljava/util/List;
+	CLASS class_1_1899 GlintType

@@ -1,0 +1,43 @@
+CLASS net/minecraft/class_1_1874 net/minecraft/util/codegen/MonomorphizableDelegate
+	COMMENT The superclass for classes that can be monomorphized.
+	COMMENT
+	COMMENT A class that extends {@code MonomorphizableDelegate} is called a
+	COMMENT <i>delegate class</i>. This class must implement the interface
+	COMMENT {@code Interface}, which also has a substantial implementation {@code Target}
+	COMMENT (the <i>target class</i>). The delegate class wraps an instance of the
+	COMMENT target class, and its implementation of the interface methods should
+	COMMENT forward to the target’s implementation.
+	COMMENT
+	COMMENT In the context of this class, monomorphization entails creating a copy of
+	COMMENT the target class so that instances of the target class can be converted
+	COMMENT into instances of hidden classes where the target instance’s record
+	COMMENT components are inlined into the method definitions (using class data).
+	COMMENT When a {@code MonomorphizableDelegate} is instantiated with a new target
+	COMMENT class, the bytecode for a monomorphic version of the target class is
+	COMMENT generated. The resulting class implements {@link GeneratedDelegate}.
+	COMMENT
+	COMMENT @param Interface an interface type, which the delegate class must implement.
+	COMMENT @param Target a type of a class that implements {@code Interface}. Must be
+	COMMENT               a non-hidden record class with no non-static interfaces and no
+	COMMENT               {@code super} method calls.
+	FIELD field_1_12106 MONOMORPH_CACHE Ljava/util/concurrent/ConcurrentMap;
+	FIELD field_1_12107 monomorph Lnet/minecraft/class_1_1880;
+	FIELD field_1_12108 target Ljava/lang/Object;
+	METHOD <init> (Ljava/lang/Object;)V
+		ARG 1 target
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other
+	METHOD method_1_11914 getPolymorphicTarget ()Ljava/lang/Object;
+	METHOD method_1_11915 (Ljava/lang/reflect/Method;Ljava/lang/reflect/Method;)Z
+		ARG 1 delegateMethod
+	METHOD method_1_11916 monomorphize (Ljava/lang/invoke/MethodHandles$Lookup;)Ljava/lang/Object;
+		COMMENT Gets a monomorphized implementation of this delegate’s interface with the
+		COMMENT same functionality as the target.
+		COMMENT
+		COMMENT Note that depending on debug settings, this can return the delegate itself.
+		ARG 1 lookup
+	METHOD method_1_11917 createMonomorph (Ljava/lang/Class;)Lnet/minecraft/class_1_1880;
+		ARG 0 delegateClass
+	METHOD method_1_11918 assertDelegateImplementsInterface (Ljava/lang/Class;Ljava/lang/Class;)V
+		ARG 0 delegateClass
+		ARG 1 interfaceClass

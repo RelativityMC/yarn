@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_1878 net/minecraft/network/ConnectionOptions
+	FIELD field_1_12117 COMPRESS B
+	FIELD field_1_12118 ENCRYPT B
+	FIELD field_1_12119 CODEC Lnet/minecraft/class_9139;
+	METHOD method_1_11924 shouldEnableCompression (B)Z
+		ARG 0 options
+	METHOD method_1_11925 shouldEnableEncryption (B)Z
+		ARG 0 options
+	CLASS class_1_1879 Flags

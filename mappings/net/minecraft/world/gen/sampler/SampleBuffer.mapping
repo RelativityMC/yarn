@@ -33,3 +33,4 @@ CLASS net/minecraft/class_1_1516 net/minecraft/world/gen/sampler/SampleBuffer
 		ARG 4 count
 	METHOD method_1_10806 limit (I)Lnet/minecraft/class_1_1516;
 		ARG 1 count
+	METHOD method_1_11960 getElems ()[F

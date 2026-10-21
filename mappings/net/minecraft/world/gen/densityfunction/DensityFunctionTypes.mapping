@@ -100,6 +100,33 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 	METHOD method_1_9518 truncate (Lnet/minecraft/class_6910;Lnet/minecraft/class_6910;)Lnet/minecraft/class_6910;
 		ARG 0 input
 		ARG 1 multiplier
+	METHOD method_1_11974 bSplineCubic (Lnet/minecraft/class_6910;II)Lnet/minecraft/class_6910;
+		ARG 0 input
+		ARG 1 cellSizeXZ
+		ARG 2 cellSizeY
+	METHOD method_1_11975 interpolateCubic (Lnet/minecraft/class_6910;II)Lnet/minecraft/class_6910;
+		ARG 0 input
+		ARG 1 cellSizeXZ
+		ARG 2 cellSizeY
+	METHOD method_1_11976 interpolateLinear (Lnet/minecraft/class_6910;II)Lnet/minecraft/class_6910;
+		ARG 0 input
+		ARG 1 cellSizeXZ
+		ARG 2 cellSizeY
+	METHOD method_1_11977 nearestNeighbor (Lnet/minecraft/class_6910;II)Lnet/minecraft/class_6910;
+		ARG 0 input
+		ARG 1 cellSizeXZ
+		ARG 2 cellSizeY
+	METHOD method_1_11978 upscale (Lnet/minecraft/class_6910;Lnet/minecraft/class_1_1583$class_1_1909;II)Lnet/minecraft/class_1_1583;
+		ARG 0 input
+		ARG 1 mode
+		ARG 2 cellSizeXZ
+		ARG 3 cellSizeY
+	METHOD method_1_11979 upscale (Lnet/minecraft/class_6910;Lnet/minecraft/class_1_1583$class_1_1909;ILnet/minecraft/class_1_1583$class_1_1909;I)Lnet/minecraft/class_1_1583;
+		ARG 0 input
+		ARG 1 modeXZ
+		ARG 2 cellSizeXZ
+		ARG 3 modeY
+		ARG 4 cellSizeY
 	METHOD method_40479 zero ()Lnet/minecraft/class_6910;
 	METHOD method_40480 constant (F)Lnet/minecraft/class_6910;
 		ARG 0 value

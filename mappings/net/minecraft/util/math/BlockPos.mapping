@@ -58,6 +58,16 @@ CLASS net/minecraft/class_2338 net/minecraft/util/math/BlockPos
 	METHOD method_1_8239 iterateOutwardsO (Lnet/minecraft/class_2338;I)Ljava/lang/Iterable;
 		ARG 0 center
 		ARG 1 maxDistance
+	METHOD method_1_11712 horizontalOffsets (Lnet/minecraft/class_2338;I)Ljava/lang/Iterable;
+		ARG 0 pos
+		ARG 1 distance
+	METHOD method_1_11713 cross (Lnet/minecraft/class_2338;I)Ljava/lang/Iterable;
+		ARG 0 pos
+		ARG 1 maxDistance
+	METHOD method_1_11714 cross (Lnet/minecraft/class_2338;II)Ljava/lang/Iterable;
+		ARG 0 pos
+		ARG 1 minDistance
+		ARG 2 maxDistance
 	METHOD method_10060 offset (JLnet/minecraft/class_2350;)J
 		ARG 0 value
 		ARG 2 direction
@@ -262,6 +272,9 @@ CLASS net/minecraft/class_2338 net/minecraft/util/math/BlockPos
 	CLASS 5 5
 		FIELD field_1_3832 mutable Lnet/minecraft/class_2338$class_2339;
 		FIELD field_1_3833 index I
+	CLASS 6 6
+		FIELD field_1_11970 current Lnet/minecraft/class_2338$class_2339;
+		FIELD field_1_11971 index I
 	CLASS 7 7
 		FIELD field_48440 directions [Lnet/minecraft/class_2350;
 		FIELD field_48441 pos Lnet/minecraft/class_2338$class_2339;

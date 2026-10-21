@@ -15,6 +15,12 @@ CLASS net/minecraft/class_5298 net/minecraft/util/math/WordPackedArray
 		ARG 1 unitSize
 		ARG 2 length
 		ARG 3 array
+	METHOD method_1_11757 ceilDiv (II)I
+		ARG 0 dividend
+		ARG 1 divisor
+	METHOD method_1_11758 roundSizeToNextAlignment (II)I
+		ARG 0 size
+		ARG 1 alignment
 	METHOD method_28151 getAlignedArray ()[J
 	METHOD method_28152 get (I)I
 		ARG 1 index

@@ -1,0 +1,17 @@
+CLASS net/minecraft/class_1_1848 net/minecraft/util/Logging
+	FIELD field_1_11967 isDevelopment Z
+	FIELD field_1_11968 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_11969 missingBreakpointHandler Ljava/util/function/Consumer;
+	METHOD method_1_11706 pause (Ljava/lang/String;)V
+		ARG 0 message
+	METHOD method_1_11707 (Ljava/lang/String;)V
+		ARG 0 message
+	METHOD method_1_11708 logErrorOrPause (Ljava/lang/String;)V
+		ARG 0 message
+	METHOD method_1_11709 logErrorOrPause (Ljava/lang/String;Ljava/lang/Throwable;)V
+		ARG 0 message
+		ARG 1 ex
+	METHOD method_1_11710 getFatalOrPause (Ljava/lang/Throwable;)Ljava/lang/Throwable;
+		ARG 0 ex
+	METHOD method_1_11711 setMissingBreakpointHandler (Ljava/util/function/Consumer;)V
+		ARG 0 missingBreakpointHandler

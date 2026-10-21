@@ -53,5 +53,6 @@ CLASS net/minecraft/class_7138 net/minecraft/world/gen/noise/NoiseConfig
 		ARG 2 id2
 	METHOD method_42372 getSurfaceBuilder ()Lnet/minecraft/class_6724;
 	CLASS 1 1
+		FIELD field_1_12072 upscalerCache Lnet/minecraft/class_1_1889$class_1_1891;
 		METHOD method_42375 createRandom (J)Lnet/minecraft/class_5819;
 			ARG 1 seed

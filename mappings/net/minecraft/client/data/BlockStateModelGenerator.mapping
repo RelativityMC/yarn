@@ -102,6 +102,9 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 		ARG 2 footModel
 	METHOD method_1_11188 registerIceCrystal ()V
 	METHOD method_1_11189 registerIcicle ()V
+	METHOD method_1_11619 registerBrittleIce ()V
+	METHOD method_1_11620 registerCrumblingIceBlock (Lnet/minecraft/class_2248;)V
+		ARG 1 block
 	METHOD method_25508 registerChorusPlant ()V
 	METHOD method_25509 registerComposter ()V
 	METHOD method_25510 registerDaylightDetector ()V

@@ -4,6 +4,8 @@ CLASS net/minecraft/class_5196 net/minecraft/datafixer/fix/BitStorageAlignFix
 	FIELD field_29868 MAX_HEIGHT_VALUE I
 	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
 		ARG 1 outputSchema
+	METHOD method_1_11797 isPowerOf2 (I)Z
+		ARG 0 n
 	METHOD method_27288 resizePackedIntArray (II[J)[J
 		ARG 0 maxValue
 		ARG 1 elementBits

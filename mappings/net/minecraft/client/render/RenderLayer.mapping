@@ -12,6 +12,7 @@ CLASS net/minecraft/class_1921 net/minecraft/client/render/RenderLayer
 	COMMENT <p>Before drawing something, a render layer setups these states. After
 	COMMENT drawing something, a render layer resets those states to default.
 	FIELD field_1_9139 blended Z
+	FIELD field_1_12082 pipeline Lnet/minecraft/class_1_1257;
 	FIELD field_64011 name Ljava/lang/String;
 	FIELD field_64013 renderSetup Lnet/minecraft/class_12247;
 	FIELD field_64014 affectedOutline Ljava/util/Optional;
@@ -24,6 +25,8 @@ CLASS net/minecraft/class_1921 net/minecraft/client/render/RenderLayer
 		ARG 1 matrix
 	METHOD method_1_7462 hasCrumbling ()Z
 	METHOD method_1_8799 isBlended ()Z
+	METHOD method_1_11796 (Lnet/minecraft/class_12247$class_12338;)Lnet/minecraft/class_1921;
+		ARG 1 texture
 	METHOD method_23031 getVertexFormat ()Lnet/minecraft/class_1_1232;
 	METHOD method_23033 getDrawMode ()Lnet/minecraft/class_5596;
 	METHOD method_23037 isOpaque ()Z

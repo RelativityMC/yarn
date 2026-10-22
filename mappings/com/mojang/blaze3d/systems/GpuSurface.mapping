@@ -10,6 +10,7 @@ CLASS net/minecraft/class_1_1314 com/mojang/blaze3d/systems/GpuSurface
 	METHOD method_1_3994 needsReconfigure ()Z
 	METHOD method_1_3995 present ()V
 	METHOD method_1_4675 getSupportedPresentModes ()Ljava/util/Collection;
+	METHOD method_1_11759 isDxgi ()Z
 	CLASS class_1_666 Settings
 	CLASS class_1_774 PresentMode
 		FIELD field_1_3849 VSYNC_PRESENT_MODES [Lnet/minecraft/class_1_1314$class_1_774;

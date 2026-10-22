@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_1875 net/minecraft/network/packet/s2c/login/LoginKeyS2CPacket
+	FIELD field_1_12109 CODEC Lnet/minecraft/class_9139;

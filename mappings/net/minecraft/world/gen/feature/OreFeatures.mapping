@@ -50,5 +50,15 @@ CLASS net/minecraft/class_6806 net/minecraft/world/gen/feature/OreFeatures
 	METHOD method_1_11111 iceCaveOre (Ljava/util/List;Lnet/minecraft/class_3122;)Lnet/minecraft/class_1_760;
 		ARG 0 surroundingBlockReplacements
 		ARG 1 baseOreFeature
+	METHOD method_1_11786 createOreBearingStoneReplacementList (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)Ljava/util/List;
+		ARG 0 stone
+		ARG 1 deepslate
+	METHOD method_1_11787 createOreReplacementList (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)Ljava/util/List;
+		ARG 0 stoneOre
+		ARG 1 deepslateOre
+	METHOD method_1_11788 createOreReplacementList (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;Lnet/minecraft/class_3825;)Ljava/util/List;
+		ARG 0 stoneOre
+		ARG 1 deepslateOre
+		ARG 2 replaceableTest
 	METHOD method_46855 bootstrap (Lnet/minecraft/class_7891;)V
 		ARG 0 featureRegisterable

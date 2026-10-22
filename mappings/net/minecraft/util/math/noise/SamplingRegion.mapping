@@ -41,3 +41,10 @@ CLASS net/minecraft/class_1_1441 net/minecraft/util/math/noise/SamplingRegion
 	METHOD method_1_10132 maxBlockX ()I
 	METHOD method_1_10133 maxBlockY ()I
 	METHOD method_1_10134 maxBlockZ ()I
+	METHOD method_1_11961 alignsWithLattice (III)Z
+		ARG 1 cellSizeX
+		ARG 2 cellSizeY
+		ARG 3 cellSizeZ
+	METHOD method_1_11962 getStrideX ()I
+	METHOD method_1_11963 getStrideY ()I
+	METHOD method_1_11964 getStrideZ ()I

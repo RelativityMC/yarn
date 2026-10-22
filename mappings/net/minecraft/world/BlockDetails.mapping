@@ -1,0 +1,23 @@
+CLASS net/minecraft/class_1_1849 net/minecraft/world/BlockDetails
+	METHOD method_1_11722 getBlockLocationDetails (Lnet/minecraft/class_5539;DDD)Ljava/lang/String;
+		ARG 0 world
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_1_11723 getBlockLocationDetails (Lnet/minecraft/class_5539;III)Ljava/lang/String;
+		ARG 0 world
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_1_11724 getBlockLocationDetails (Lnet/minecraft/class_5539;Lnet/minecraft/class_2338;)Ljava/lang/String;
+		ARG 0 world
+		ARG 1 pos
+	METHOD method_1_11726 addBlockSections (Lnet/minecraft/class_129;Lnet/minecraft/class_5539;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
+		ARG 0 section
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 state
+	METHOD method_1_11727 addBlockLocationSection (Lnet/minecraft/class_129;Lnet/minecraft/class_5539;Lnet/minecraft/class_2338;)Lnet/minecraft/class_129;
+		ARG 0 section
+		ARG 1 world
+		ARG 2 pos

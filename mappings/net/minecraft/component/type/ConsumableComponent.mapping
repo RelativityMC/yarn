@@ -6,10 +6,16 @@ CLASS net/minecraft/class_10124 net/minecraft/component/type/ConsumableComponent
 	FIELD field_53772 PARTICLES_AND_SOUND_TICK_INTERVAL I
 	FIELD field_53773 PARTICLES_AND_SOUND_TICK_THRESHOLD F
 	METHOD comp_3086 useAction ()Lnet/minecraft/class_1839;
+	METHOD method_1_11766 getConsumeSound (Lnet/minecraft/class_1309;Lnet/minecraft/class_1799;)Ljava/util/Optional;
+		ARG 1 user
+		ARG 2 stack
+	METHOD method_1_11767 (Lnet/minecraft/class_5819;Lnet/minecraft/class_1309;Lnet/minecraft/class_6880;)V
+		ARG 3 sound
 	METHOD method_62841 getConsumeTicks ()I
 	METHOD method_62842 shouldSpawnParticlesAndPlaySounds (I)Z
 		ARG 1 remainingUseTicks
 	METHOD method_62843 spawnParticlesAndPlaySound (Lnet/minecraft/class_5819;Lnet/minecraft/class_1309;Lnet/minecraft/class_1799;I)V
+		ARG 1 random
 		ARG 2 user
 		ARG 3 stack
 		ARG 4 particleCount
@@ -37,6 +43,7 @@ CLASS net/minecraft/class_10124 net/minecraft/component/type/ConsumableComponent
 		FIELD field_53776 sound Ljava/util/Optional;
 		FIELD field_53777 consumeParticles Z
 		FIELD field_53778 consumeEffects Ljava/util/List;
+		METHOD method_1_11768 noSound ()Lnet/minecraft/class_10124$class_10125;
 		METHOD method_62851 build ()Lnet/minecraft/class_10124;
 		METHOD method_62852 consumeSeconds (F)Lnet/minecraft/class_10124$class_10125;
 			ARG 1 consumeSeconds

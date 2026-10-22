@@ -14,6 +14,9 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_1_10374 BLIT_DEPTH_BOUNDS Lnet/minecraft/class_1_1257;
 	FIELD field_1_10798 BLIT_SKY Lnet/minecraft/class_1_1257;
 	FIELD field_1_10807 IMPROVED_FOG_SKY_AND_CLOUDS_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
+	FIELD field_1_12092 CACHE Ljava/util/Map;
+	FIELD field_1_12093 STATIC Ljava/util/Set;
+	FIELD field_1_12094 staticPipelines Ljava/util/Set;
 	FIELD field_56814 RENDERTYPE_LEASH Lnet/minecraft/class_1_1257;
 	FIELD field_56816 GLINT Lnet/minecraft/class_1_1257;
 	FIELD field_56839 MOJANG_LOGO Lnet/minecraft/class_1_1257;
@@ -41,4 +44,207 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_64219 ANIMATE_SPRITE Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_64220 ANIMATE_SPRITE_BLIT Lnet/minecraft/class_1_1257;
 	FIELD field_64221 ANIMATE_SPRITE_INTERPOLATE Lnet/minecraft/class_1_1257;
-	METHOD method_67886 getRequired ()Ljava/util/List;
+	METHOD method_1_11833 createAdditiveVisualEffectPipeline (Lnet/minecraft/class_10799$class_1_1858;)Lnet/minecraft/class_1_1257;
+		ARG 0 parameters
+	METHOD method_1_11834 createBeaconBeamPipeline (Lnet/minecraft/class_10799$class_1_1859;)Lnet/minecraft/class_1_1257;
+		ARG 0 parameters
+	METHOD method_1_11835 createBlitCloudsPipeline (Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+		ARG 0 oitStage
+	METHOD method_1_11836 createBlockPipeline (Lnet/minecraft/class_10799$class_1_1860;)Lnet/minecraft/class_1_1257;
+		ARG 0 parameters
+	METHOD method_1_11837 createCloudsPipeline (Lnet/minecraft/class_10799$class_1_1861;)Lnet/minecraft/class_1_1257;
+		ARG 0 parameters
+	METHOD method_1_11838 createCrumblingPipeline (Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+		ARG 0 oitStage
+	METHOD method_1_11839 createDebugPrimitivePipeline (Lnet/minecraft/class_10799$class_1_1862;)Lnet/minecraft/class_1_1257;
+		ARG 0 parameters
+	METHOD method_1_11840 getOrCreate (Ljava/lang/Object;Ljava/lang/String;Ljava/util/function/Function;)Lnet/minecraft/class_1_1257;
+		ARG 0 parameters
+		ARG 1 name
+		ARG 2 factory
+	METHOD method_1_11841 createDynamic (Lnet/minecraft/class_10151$class_1_1853;)Ljava/util/List;
+		ARG 0 shaderConfig
+	METHOD method_1_11842 createEndPortalPipeline (Lnet/minecraft/class_10799$class_1_1864;)Lnet/minecraft/class_1_1257;
+		ARG 0 parameters
+	METHOD method_1_11843 createEntityPipeline (Lnet/minecraft/class_10799$class_1_1865;)Lnet/minecraft/class_1_1257;
+		ARG 0 parameters
+	METHOD method_1_11844 createEntityShadowPipeline (Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+		ARG 0 oitStage
+	METHOD method_1_11845 buildUnnamedPermutation (Lnet/minecraft/class_1_1257$class_1_1258;Ljava/lang/String;ZLnet/minecraft/class_1_1153;Ljava/util/function/Consumer;)Lnet/minecraft/class_1_1257;
+		ARG 0 builder
+		ARG 1 name
+		ARG 2 supportsOit
+		ARG 3 oitStage
+		ARG 4 withoutOit
+	METHOD method_1_11846 buildPermutation (Lnet/minecraft/class_1_1257$class_1_1258;Ljava/lang/String;ZLnet/minecraft/class_1_1153;Ljava/util/function/Consumer;Ljava/lang/String;)Lnet/minecraft/class_1_1257;
+		ARG 0 builder
+		ARG 1 name
+		ARG 2 supportsOit
+		ARG 3 oitStage
+		ARG 4 withoutOit
+		ARG 5 permutationName
+	METHOD method_1_11847 buildPermutation (Lnet/minecraft/class_1_1257$class_1_1258;Ljava/lang/String;ZLnet/minecraft/class_1_1153;Ljava/util/function/Consumer;Ljava/util/function/Consumer;Ljava/util/function/Consumer;Ljava/lang/String;)Lnet/minecraft/class_1_1257;
+		ARG 0 builder
+		ARG 1 name
+		ARG 2 supportsOit
+		ARG 3 oitStage
+		ARG 4 withoutOit
+		ARG 5 onAnyOitStage
+		ARG 6 onAccumulateStage
+		ARG 7 permutationName
+	METHOD method_1_11848 buildPermutation (Lnet/minecraft/class_1_1257$class_1_1258;Ljava/lang/String;ZLnet/minecraft/class_1_1153;Ljava/util/function/Consumer;Ljava/util/function/Consumer;Ljava/util/function/Consumer;Ljava/util/function/Consumer;Ljava/lang/String;)Lnet/minecraft/class_1_1257;
+		ARG 0 builder
+		ARG 1 name
+		ARG 2 supportsOit
+		ARG 3 oitStage
+		ARG 4 withoutOit
+		ARG 5 onAnyOitStage
+		ARG 6 onAccumulateStage
+		ARG 7 onOutput
+		ARG 8 permutationName
+	METHOD method_1_11849 createItemPipeline (Lnet/minecraft/class_10799$class_1_1866;)Lnet/minecraft/class_1_1257;
+		ARG 0 parameters
+	METHOD method_1_11850 (Lnet/minecraft/class_10799$class_1_1858;)Lnet/minecraft/class_1_1257;
+		ARG 0 params
+	METHOD method_1_11851 (Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 0 builder
+	METHOD method_1_11852 (Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 0 builder
+	METHOD method_1_11853 (Lnet/minecraft/class_10799$class_1_1859;)Lnet/minecraft/class_1_1257;
+		ARG 0 params
+	METHOD method_1_11854 (Lnet/minecraft/class_10799$class_1_1859;Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 1 builder
+	METHOD method_1_11855 (Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+		ARG 0 stage
+	METHOD method_1_11856 (Lnet/minecraft/class_10799$class_1_1860;)Lnet/minecraft/class_1_1257;
+		ARG 0 params
+	METHOD method_1_11857 (Lnet/minecraft/class_10799$class_1_1860;Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 1 builder
+	METHOD method_1_11858 (Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 0 builder
+	METHOD method_1_11859 (Lnet/minecraft/class_10799$class_1_1861;)Lnet/minecraft/class_1_1257;
+		ARG 0 params
+	METHOD method_1_11860 (Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+		ARG 0 stage
+	METHOD method_1_11861 (Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 0 builder
+	METHOD method_1_11862 (Lnet/minecraft/class_10799$class_1_1862;)Lnet/minecraft/class_1_1257;
+		ARG 0 params
+	METHOD method_1_11863 (Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 0 builder
+	METHOD method_1_11864 (Ljava/util/function/Function;Ljava/lang/Object;Lnet/minecraft/class_10799$class_1_1863;)Lnet/minecraft/class_1_1257;
+		ARG 2 key
+	METHOD method_1_11865 (Lnet/minecraft/class_1_1906;ZLnet/minecraft/class_10151$class_1_1853;Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+		ARG 3 oitStage
+	METHOD method_1_11866 (Lnet/minecraft/class_1_1903;Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+		ARG 1 oitStage
+	METHOD method_1_11867 (Lnet/minecraft/class_1_1900;Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+		ARG 1 oitStage
+	METHOD method_1_11868 (Lnet/minecraft/class_1_1907;Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+		ARG 1 oitStage
+	METHOD method_1_11869 (Lnet/minecraft/class_1_1898;Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+		ARG 1 oitStage
+	METHOD method_1_11870 (Lnet/minecraft/class_1_1902;Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+		ARG 1 oitStage
+	METHOD method_1_11871 (Lnet/minecraft/class_1_1901;Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+		ARG 1 oitStage
+	METHOD method_1_11872 (Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+		ARG 0 oitStage
+	METHOD method_1_11873 (Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+		ARG 0 oitStage
+	METHOD method_1_11874 (Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+		ARG 0 oitStage
+	METHOD method_1_11875 (Lnet/minecraft/class_10799$class_1_1864;)Lnet/minecraft/class_1_1257;
+		ARG 0 params
+	METHOD method_1_11876 (Lnet/minecraft/class_10799$class_1_1865;)Lnet/minecraft/class_1_1257;
+		ARG 0 params
+	METHOD method_1_11877 (Lnet/minecraft/class_10799$class_1_1865;Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 1 builder
+	METHOD method_1_11878 (Lnet/minecraft/class_10799$class_1_1865;Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 1 builder
+	METHOD method_1_11879 (Lnet/minecraft/class_10799$class_1_1865;Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 1 builder
+	METHOD method_1_11880 (Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+		ARG 0 stage
+	METHOD method_1_11881 (Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 0 builder
+	METHOD method_1_11882 (Lnet/minecraft/class_10799$class_1_1866;)Lnet/minecraft/class_1_1257;
+		ARG 0 params
+	METHOD method_1_11883 (Lnet/minecraft/class_10799$class_1_1866;Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 1 builder
+	METHOD method_1_11884 (Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 0 builder
+	METHOD method_1_11885 (Lnet/minecraft/class_10799$class_1_1867;)Lnet/minecraft/class_1_1257;
+		ARG 0 params
+	METHOD method_1_11886 (Lnet/minecraft/class_10799$class_1_1867;Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 1 builder
+	METHOD method_1_11887 (Lnet/minecraft/class_10799$class_1_1868;)Lnet/minecraft/class_1_1257;
+		ARG 0 params
+	METHOD method_1_11888 (Lnet/minecraft/class_10799$class_1_1868;Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 1 builder
+	METHOD method_1_11889 (Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 0 builder
+	METHOD method_1_11890 (Lnet/minecraft/class_10799$class_1_1869;)Lnet/minecraft/class_1_1257;
+		ARG 0 params
+	METHOD method_1_11891 (Lnet/minecraft/class_10799$class_1_1870;)Lnet/minecraft/class_1_1257;
+		ARG 0 params
+	METHOD method_1_11892 (Lnet/minecraft/class_10799$class_1_1870;Lnet/minecraft/class_1_1257$class_1_1258;Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 2 builder
+	METHOD method_1_11893 (Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 0 builder
+	METHOD method_1_11894 (Lnet/minecraft/class_10799$class_1_1871;)Lnet/minecraft/class_1_1257;
+		ARG 0 params
+	METHOD method_1_11895 (Lnet/minecraft/class_10799$class_1_1871;Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 1 builder
+	METHOD method_1_11896 (Lnet/minecraft/class_10799$class_1_1872;)Lnet/minecraft/class_1_1257;
+		ARG 0 params
+	METHOD method_1_11897 (Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+		ARG 0 stage
+	METHOD method_1_11898 (Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 0 builder
+	METHOD method_1_11899 (Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 0 builder
+	METHOD method_1_11900 createLinesPipeline (Lnet/minecraft/class_10799$class_1_1867;)Lnet/minecraft/class_1_1257;
+		ARG 0 parameters
+	METHOD method_1_11901 createParticlePipeline (Lnet/minecraft/class_10799$class_1_1868;)Lnet/minecraft/class_1_1257;
+		ARG 0 parameters
+	METHOD method_1_11902 registerStatic (Lnet/minecraft/class_1_1257;)Lnet/minecraft/class_1_1257;
+		ARG 0 pipeline
+	METHOD method_1_11903 addPipeline (Ljava/util/List;Lnet/minecraft/class_1_1257;)V
+		ARG 0 pipelinesOut
+		ARG 1 pipeline
+	METHOD method_1_11904 addPipelinesWithOitVariants (Ljava/util/List;Ljava/util/function/Function;Z)V
+		ARG 0 pipelinesOut
+		ARG 1 oitStageToPipeline
+		ARG 2 improvedTransparency
+	METHOD method_1_11905 addPipelines (Ljava/util/List;Lnet/minecraft/class_1_1887;Ljava/util/function/Function;Z)V
+		ARG 0 pipelinesOut
+		ARG 1 variant
+		ARG 2 oitStageToPipeline
+		ARG 3 improvedTransparency
+	METHOD method_1_11906 createSkyPipeline (Lnet/minecraft/class_10799$class_1_1869;)Lnet/minecraft/class_1_1257;
+		ARG 0 parameters
+	METHOD method_1_11907 createTerrainPipeline (Lnet/minecraft/class_10799$class_1_1870;)Lnet/minecraft/class_1_1257;
+		ARG 0 parameters
+	METHOD method_1_11908 createTextPipeline (Lnet/minecraft/class_10799$class_1_1871;)Lnet/minecraft/class_1_1257;
+		ARG 0 parameters
+	METHOD method_1_11909 createWaterMaskPipeline (Lnet/minecraft/class_10799$class_1_1872;)Lnet/minecraft/class_1_1257;
+		ARG 0 parameters
+	METHOD method_1_11910 createWorldBorderPipeline (Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+		ARG 0 oitStage
+	METHOD method_67886 getStatic ()Ljava/util/List;
+	CLASS class_1_1858 AdditiveVisualEffectParameters
+	CLASS class_1_1859 BeaconBeamParameters
+	CLASS class_1_1860 BlockParameters
+	CLASS class_1_1861 CloudsParameters
+	CLASS class_1_1862 DebugPrimitiveParameters
+	CLASS class_1_1863 Key
+	CLASS class_1_1864 EndPortalParameters
+	CLASS class_1_1865 EntityParameters
+	CLASS class_1_1866 ItemParameters
+	CLASS class_1_1867 LinesParameters
+	CLASS class_1_1868 ParticleParameters
+	CLASS class_1_1869 SkyParameters
+	CLASS class_1_1870 TerrainParameters
+	CLASS class_1_1871 TextParameters
+	CLASS class_1_1872 WaterMaskParameters

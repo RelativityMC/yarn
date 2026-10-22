@@ -1,5 +1,7 @@
 CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 	FIELD field_1_2025 preEditWidget Lnet/minecraft/class_4068;
+	FIELD field_1_12069 MOUSE_POSITION_SUSPENDED I
+	FIELD field_1_12070 mousePositionSuspended Z
 	FIELD field_44655 BACKGROUND_MARGIN I
 	FIELD field_44656 client Lnet/minecraft/class_310;
 	FIELD field_44657 matrices Lorg/joml/Matrix3x2fStack;
@@ -14,6 +16,8 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 	FIELD field_63848 hoverStyle Lnet/minecraft/class_2583;
 	FIELD field_63849 clickStyle Lnet/minecraft/class_2583;
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_11246;II)V
+		ARG 1 client
+		ARG 2 state
 		ARG 3 mouseX
 		ARG 4 mouseY
 	METHOD method_1_399 drawTexturedQuad (Lnet/minecraft/class_1_1330;Lnet/minecraft/class_12137;IIIIFFFF)V
@@ -55,6 +59,12 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 5 positioner
 		ARG 6 texture
 		ARG 7 focused
+	METHOD method_1_11761 getRenderTickCounter ()Lnet/minecraft/class_9779;
+	METHOD method_1_11762 withMousePositionSuspended (Ljava/lang/Runnable;)V
+		ARG 1 action
+	METHOD method_1_11763 getMouseX ()I
+	METHOD method_1_11764 getMouseY ()I
+	METHOD method_1_11765 getDynamicDeltaTicks ()F
 	METHOD method_25290 drawTexture (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_2960;IIFFIIII)V
 		COMMENT Draws a textured rectangle from a region in a texture.
 		COMMENT

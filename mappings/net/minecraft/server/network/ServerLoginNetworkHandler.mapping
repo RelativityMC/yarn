@@ -12,6 +12,10 @@ CLASS net/minecraft/class_3248 net/minecraft/server/network/ServerLoginNetworkHa
 	COMMENT UUID conflicts), it will accept the player by sending a login success
 	COMMENT packet and then transitions the connection's packet listener to a {@link
 	COMMENT ServerPlayNetworkHandler}.
+	FIELD field_1_12111 PROTOCOL_ERROR_MESSAGE Ljava/lang/String;
+	FIELD field_1_12112 secretKey Ljavax/crypto/SecretKey;
+	FIELD field_1_12113 compressionThreshold Ljava/util/OptionalInt;
+	FIELD field_1_12114 profile Lcom/mojang/authlib/GameProfile;
 	FIELD field_14156 loginTicks I
 	FIELD field_14157 NEXT_AUTHENTICATOR_THREAD_ID Ljava/util/concurrent/atomic/AtomicInteger;
 	FIELD field_14158 connection Lnet/minecraft/class_2535;
@@ -28,6 +32,12 @@ CLASS net/minecraft/class_3248 net/minecraft/server/network/ServerLoginNetworkHa
 		ARG 1 server
 		ARG 2 connection
 		ARG 3 transferred
+	METHOD method_1_11921 setProfileAndKey (Lcom/mojang/authlib/GameProfile;Ljavax/crypto/SecretKey;)V
+		ARG 1 profile
+		ARG 2 secretKey
+	METHOD method_1_11922 applyOptions (B)V
+		ARG 1 options
+	METHOD method_1_11923 getCompressionThresholdFlag ()B
 	METHOD method_14380 disconnect (Lnet/minecraft/class_2561;)V
 		ARG 1 reason
 	METHOD method_14383 getConnectionInfo ()Ljava/lang/String;

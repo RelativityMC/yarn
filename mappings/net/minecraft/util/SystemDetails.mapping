@@ -2,6 +2,9 @@ CLASS net/minecraft/class_6396 net/minecraft/util/SystemDetails
 	COMMENT Fetches the hardware and software information to populate crash reports
 	COMMENT and debug profiles. A custom section can be added by calling {@link
 	COMMENT #addSection(String, String)}.
+	FIELD field_1_11964 debugPropertyPrefix Ljava/lang/String;
+	FIELD field_1_11965 minecraftVersionId Ljava/lang/String;
+	FIELD field_1_11966 minecraftVersion Ljava/lang/String;
 	FIELD field_33852 MEBI J
 	FIELD field_33853 GIGA J
 	FIELD field_33854 LOGGER Lorg/slf4j/Logger;
@@ -17,6 +20,12 @@ CLASS net/minecraft/class_6396 net/minecraft/util/SystemDetails
 		ARG 1 process
 	METHOD method_1_4720 addSoftwareGroup (Loshi/SystemInfo;)V
 		ARG 1 systemInfo
+	METHOD method_1_11704 (Ljava/lang/String;)Z
+		ARG 0 arg
+	METHOD method_1_11705 initialize (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+		ARG 0 minecraftVersion
+		ARG 1 minecraftVersionId
+		ARG 2 debugPropertyPrefix
 	METHOD method_37120 collect ()Ljava/lang/String;
 		COMMENT {@return a string representation of the system details}
 		COMMENT

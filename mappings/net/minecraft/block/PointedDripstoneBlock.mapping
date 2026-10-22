@@ -67,3 +67,4 @@ CLASS net/minecraft/class_5689 net/minecraft/block/PointedDripstoneBlock
 		ARG 2 fluid
 		ARG 3 pos
 	CLASS class_7381 DrippingFluid
+		METHOD method_1_11832 drips ()Z

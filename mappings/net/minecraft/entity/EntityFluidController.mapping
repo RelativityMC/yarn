@@ -19,6 +19,13 @@ CLASS net/minecraft/class_1_370 net/minecraft/entity/EntityFluidController
 		ARG 2 notPushedByFluids
 	METHOD method_1_8756 getCollision (Lnet/minecraft/class_6880;)Lnet/minecraft/class_1_370$class_1_1328;
 		ARG 1 fluidKey
+	METHOD method_1_11790 pushEntity (Lnet/minecraft/class_1297;)V
+		ARG 1 entity
+	METHOD method_1_11791 splash (Ljava/util/function/Consumer;)V
+		ARG 1 splashCallback
+	METHOD method_1_11792 getMovementSpeedMultiplier ()Ljava/util/OptionalDouble;
+	METHOD method_1_11793 getFluidsAboveHeightThreshold (D)Ljava/util/List;
+		ARG 1 threshold
 	CLASS class_1_371 Effect
 		FIELD field_1_2086 totalFluidVelocity Lnet/minecraft/class_243;
 		FIELD field_1_2087 affectingBlockCount I
@@ -33,6 +40,11 @@ CLASS net/minecraft/class_1_370 net/minecraft/entity/EntityFluidController
 		FIELD field_1_9122 eyesSubmerged Z
 		FIELD field_1_9123 fluidKey Lnet/minecraft/class_6880;
 		FIELD field_1_9124 feetSubmergence D
+		FIELD field_1_12079 effect Lnet/minecraft/class_1_370$class_1_371;
+		FIELD field_1_12080 reset Z
 		METHOD <init> (Lnet/minecraft/class_6880;)V
 			ARG 1 fluidKey
 		METHOD method_1_8757 shouldRemove ()Z
+			COMMENT @apiNote Also resets the state of this collision.
+		METHOD method_1_11794 getEffect ()Lnet/minecraft/class_1_370$class_1_371;
+		METHOD method_1_11795 getOrInitEffect ()Lnet/minecraft/class_1_370$class_1_371;

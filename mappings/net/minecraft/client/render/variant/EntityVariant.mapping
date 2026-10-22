@@ -1,0 +1,21 @@
+CLASS net/minecraft/class_1_1903 net/minecraft/client/render/variant/EntityVariant
+	FIELD field_1_12166 ARMOR_CUTOUT_NO_CULL Lnet/minecraft/class_1_1903;
+	FIELD field_1_12167 ARMOR_CUTOUT_NO_CULL_GLINT Lnet/minecraft/class_1_1903;
+	FIELD field_1_12168 ARMOR_DECAL_CUTOUT_NO_CULL Lnet/minecraft/class_1_1903;
+	FIELD field_1_12169 BANNER_PATTERN Lnet/minecraft/class_1_1903;
+	FIELD field_1_12170 BREEZE_WIND Lnet/minecraft/class_1_1903;
+	FIELD field_1_12171 CUTOUT Lnet/minecraft/class_1_1903;
+	FIELD field_1_12172 CUTOUT_CULL Lnet/minecraft/class_1_1903;
+	FIELD field_1_12173 CUTOUT_DISSOLVE Lnet/minecraft/class_1_1903;
+	FIELD field_1_12174 END_CRYSTAL_BEAM Lnet/minecraft/class_1_1903;
+	FIELD field_1_12175 ENERGY_SWIRL Lnet/minecraft/class_1_1903;
+	FIELD field_1_12176 EYES Lnet/minecraft/class_1_1903;
+	FIELD field_1_12177 SOLID Lnet/minecraft/class_1_1903;
+	FIELD field_1_12178 SOLID_GLINT Lnet/minecraft/class_1_1903;
+	FIELD field_1_12179 TRANSLUCENT Lnet/minecraft/class_1_1903;
+	FIELD field_1_12180 TRANSLUCENT_CULL Lnet/minecraft/class_1_1903;
+	FIELD field_1_12181 TRANSLUCENT_EMISSIVE Lnet/minecraft/class_1_1903;
+	FIELD field_1_12182 VALUES Lnet/minecraft/class_1_1883;
+	FIELD field_1_12183 WOLF_ARMOR_CRACKS Lnet/minecraft/class_1_1903;
+	METHOD method_1_12005 values ()Ljava/util/List;
+	CLASS class_1_1904 Lighting

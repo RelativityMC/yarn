@@ -33,6 +33,8 @@ CLASS net/minecraft/class_10192 net/minecraft/component/type/EquippableComponent
 		FIELD field_60670 shearingSound Ljava/util/Optional;
 		METHOD <init> (Lnet/minecraft/class_1304;)V
 			ARG 1 slot
+		METHOD method_1_11769 noEquipSound ()Lnet/minecraft/class_10192$class_10217;
+		METHOD method_1_11770 noShearingSound ()Lnet/minecraft/class_10192$class_10217;
 		METHOD method_64203 build ()Lnet/minecraft/class_10192;
 		METHOD method_64204 model (Lnet/minecraft/class_5321;)Lnet/minecraft/class_10192$class_10217;
 			ARG 1 model

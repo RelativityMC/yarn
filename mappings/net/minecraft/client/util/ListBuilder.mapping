@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_1883 net/minecraft/client/util/ListBuilder
+	FIELD field_1_12126 elems Ljava/util/List;
+	METHOD method_1_11958 add (Ljava/lang/Object;)Ljava/lang/Object;
+		ARG 1 value
+	METHOD method_1_11959 build ()Ljava/util/List;

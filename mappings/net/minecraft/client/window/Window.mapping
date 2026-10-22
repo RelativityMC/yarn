@@ -7,6 +7,7 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 	FIELD field_1_9531 enableQuitShortcuts Z
 	FIELD field_1_10515 borderlessFullscreen Z
 	FIELD field_1_10780 wayland Z
+	FIELD field_1_10953 reserveBorderlessFullscreenMargin Z
 	FIELD field_5174 windowedWidth I
 	FIELD field_5175 windowedX I
 	FIELD field_5176 eventHandler Lnet/minecraft/class_3678;
@@ -106,6 +107,8 @@ CLASS net/minecraft/class_1041 net/minecraft/client/window/Window
 		ARG 1 width
 		ARG 2 height
 	METHOD method_1_11487 show ()V
+	METHOD method_1_11734 setReserveBorderlessFullscreenMargin (Z)V
+		ARG 1 reserveBorderlessFullscreenMargin
 	METHOD method_4474 setPhase (Ljava/lang/String;)V
 		ARG 1 phase
 	METHOD method_4475 applyFullscreenVideoMode ()V

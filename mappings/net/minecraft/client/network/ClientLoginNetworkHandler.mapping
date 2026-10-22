@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_635 net/minecraft/client/network/ClientLoginNetworkHandler
+	FIELD field_1_12127 compressionThreshold I
+	FIELD field_1_12128 secretKey Ljavax/crypto/SecretKey;
 	FIELD field_3706 parentScreen Lnet/minecraft/class_437;
 	FIELD field_3707 connection Lnet/minecraft/class_2535;
 	FIELD field_3708 client Lnet/minecraft/class_310;
@@ -24,6 +26,16 @@ CLASS net/minecraft/class_635 net/minecraft/client/network/ClientLoginNetworkHan
 		ARG 7 statusConsumer
 		ARG 8 clientChunkLoadProgress
 		ARG 9 cookieStorage
+	METHOD method_1_11965 setOptions (BLnet/minecraft/class_2596;)V
+		ARG 1 options
+		ARG 2 response
+	METHOD method_1_11966 setInboundOptions (B)V
+		ARG 1 options
+	METHOD method_1_11967 setOutboundOptions (B)V
+		ARG 1 options
+	METHOD method_1_11968 setKey (Lnet/minecraft/class_1_1876;Ljavax/crypto/SecretKey;)V
+		ARG 1 response
+		ARG 2 secretKey
 	METHOD method_2892 joinServerSession (Ljava/lang/String;)Lnet/minecraft/class_2561;
 		ARG 1 serverId
 	METHOD method_2894 (Ljava/lang/String;Lnet/minecraft/class_1_1876;Ljavax/crypto/SecretKey;)V

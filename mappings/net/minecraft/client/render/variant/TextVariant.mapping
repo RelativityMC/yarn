@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_1_1901 net/minecraft/client/render/variant/TextVariant
+	FIELD field_1_12153 GUI Lnet/minecraft/class_1_1901;
+	FIELD field_1_12154 GUI_GRAYSCALE Lnet/minecraft/class_1_1901;
+	FIELD field_1_12155 VALUES Lnet/minecraft/class_1_1883;
+	FIELD field_1_12156 WORLD Lnet/minecraft/class_1_1901;
+	FIELD field_1_12157 WORLD_GRAYSCALE Lnet/minecraft/class_1_1901;
+	FIELD field_1_12158 WORLD_GRAYSCALE_POLYGON_OFFSET Lnet/minecraft/class_1_1901;
+	FIELD field_1_12159 WORLD_GRAYSCALE_SEE_THROUGH Lnet/minecraft/class_1_1901;
+	FIELD field_1_12160 WORLD_POLYGON_OFFSET Lnet/minecraft/class_1_1901;
+	FIELD field_1_12161 WORLD_SEE_THROUGH Lnet/minecraft/class_1_1901;
+	METHOD method_1_12003 values ()Ljava/util/List;

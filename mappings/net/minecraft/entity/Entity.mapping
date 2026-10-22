@@ -320,6 +320,10 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 1 sound
 		ARG 2 volume
 		ARG 3 pitch
+	METHOD method_1_11732 splashInFluid (Lnet/minecraft/class_6880;)V
+		ARG 1 fluid
+	METHOD method_1_11733 playSound (Lnet/minecraft/class_6880;)V
+		ARG 1 sound
 	METHOD method_5622 onBlockCollision (Lnet/minecraft/class_2680;)V
 		COMMENT Called when this entity's collision box intersects {@code state}.
 		COMMENT
@@ -810,7 +814,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 1 maxDistance
 		ARG 3 tickProgress
 		ARG 4 includeFluids
-	METHOD method_5746 onSwimmingStart ()V
+	METHOD method_5746 splashInWater ()V
 	METHOD method_5747 handleFallDamage (DFLnet/minecraft/class_1282;)Z
 		COMMENT Called when an entity falls.
 		COMMENT

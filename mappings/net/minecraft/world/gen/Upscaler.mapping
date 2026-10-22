@@ -1,0 +1,78 @@
+CLASS net/minecraft/class_1_1889 net/minecraft/world/gen/Upscaler
+	METHOD method_1_11983 upscale (Lnet/minecraft/class_1_1889$class_1_1890;Lnet/minecraft/class_1_1889$class_1_1890;Lnet/minecraft/class_1_1889$class_1_1890;Lnet/minecraft/class_1_1516;Lnet/minecraft/class_1_1441;Lnet/minecraft/class_1_1516;Lnet/minecraft/class_1_1441;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 output
+		ARG 5 outputRegion
+		ARG 6 input
+		ARG 7 inputRegion
+	METHOD method_1_11984 upscale (Lnet/minecraft/class_1_1889$class_1_1891;Lnet/minecraft/class_1_1889$class_1_1890;Lnet/minecraft/class_1_1889$class_1_1890;Lnet/minecraft/class_1_1889$class_1_1890;Lnet/minecraft/class_1_1516;Lnet/minecraft/class_1_1441;Lnet/minecraft/class_1_1516;Lnet/minecraft/class_1_1441;)V
+		ARG 0 cache
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 output
+		ARG 5 outputRegion
+		ARG 6 input
+		ARG 7 inputRegion
+	METHOD method_1_11985 sample (IIILnet/minecraft/class_1_1516;)F
+		ARG 1 cellLocalX
+		ARG 2 cellLocalY
+		ARG 3 cellLocalZ
+		ARG 4 input
+	CLASS class_1_1890 AxisPlan
+		METHOD method_1_11986 identity (III)Lnet/minecraft/class_1_1889$class_1_1890;
+			ARG 0 cellSampleMinBlock
+			ARG 1 cellSampleCount
+			ARG 2 cellSampleStep
+	CLASS class_1_1891 Cache
+		FIELD field_1_12133 LOGGER Lorg/slf4j/Logger;
+		FIELD field_1_12134 WARN_SIZE_THRESHOLD I
+		FIELD field_1_12135 entries Ljava/util/concurrent/ConcurrentMap;
+		METHOD method_1_11987 get (Lnet/minecraft/class_1_1583$class_1_1909;Lnet/minecraft/class_1_1583$class_1_1909;Lnet/minecraft/class_1_1583$class_1_1909;III)Lnet/minecraft/class_1_1889;
+			ARG 1 modeX
+			ARG 2 modeY
+			ARG 3 modeZ
+			ARG 4 cellSizeX
+			ARG 5 cellSizeY
+			ARG 6 cellSizeZ
+		METHOD method_1_11988 (Lnet/minecraft/class_1_1889$class_1_1897;)Lnet/minecraft/class_1_1889;
+			ARG 0 key
+	CLASS class_1_1892 Coefficient
+		FIELD field_1_12136 NEAREST_NEIGHBOR Lnet/minecraft/class_1_1889$class_1_1892;
+		METHOD method_1_11989 getFactors ()[F
+		METHOD method_1_11990 sampleCoefficient (Lnet/minecraft/class_1_1583$class_1_1909;F)Lnet/minecraft/class_1_1889$class_1_1892;
+			ARG 0 mode
+			ARG 1 t
+		METHOD method_1_11991 sampleCoefficients (ILnet/minecraft/class_1_1583$class_1_1909;)[Lnet/minecraft/class_1_1889$class_1_1892;
+			ARG 0 count
+			ARG 1 mode
+		METHOD method_1_11992 sampleCoefficientBSpline (F)Lnet/minecraft/class_1_1889$class_1_1892;
+			ARG 0 t
+		METHOD method_1_11993 sampleCoefficientCosine (F)Lnet/minecraft/class_1_1889$class_1_1892;
+			ARG 0 t
+		METHOD method_1_11994 sampleCoefficientCubic (F)Lnet/minecraft/class_1_1889$class_1_1892;
+			ARG 0 t
+		METHOD method_1_11995 sampleCoefficientLinear (F)Lnet/minecraft/class_1_1889$class_1_1892;
+			ARG 0 t
+		METHOD method_1_11996 (Lnet/minecraft/class_1_1150;Lnet/minecraft/class_1_1889$class_1_1892;)Lnet/minecraft/class_1_1150;
+			ARG 1 coeff
+		METHOD method_1_11997 mapInterval (Lnet/minecraft/class_1_1150;)Lnet/minecraft/class_1_1150;
+			ARG 1 x
+		METHOD method_1_11998 mapInterval (Lnet/minecraft/class_1_1150;ILnet/minecraft/class_1_1583$class_1_1909;)Lnet/minecraft/class_1_1150;
+			ARG 0 x
+			ARG 1 coefficients
+			ARG 2 mode
+		METHOD method_1_11999 sample ([FII)F
+			ARG 1 values
+			ARG 2 start
+			ARG 3 stride
+		CLASS class_1_1893 Cubic
+		CLASS class_1_1894 Linear
+		CLASS class_1_1895 NearestNeighbor
+			FIELD field_1_12137 FACTORS [F
+	CLASS class_1_1896 DelegateUpscaler
+		METHOD <init> (Lnet/minecraft/class_1_1912;)V
+			ARG 1 target
+	CLASS class_1_1897 CacheKey

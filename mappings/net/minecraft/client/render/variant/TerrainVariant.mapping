@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_1906 net/minecraft/client/render/variant/TerrainVariant
+	FIELD field_1_12187 CUTOUT Lnet/minecraft/class_1_1906;
+	FIELD field_1_12188 SOLID Lnet/minecraft/class_1_1906;
+	FIELD field_1_12189 TRANSLUCENT Lnet/minecraft/class_1_1906;
+	FIELD field_1_12190 VALUES Lnet/minecraft/class_1_1883;
+	METHOD method_1_12007 values ()Ljava/util/List;

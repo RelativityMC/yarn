@@ -1,0 +1,43 @@
+CLASS net/minecraft/class_1_1583 net/minecraft/world/gen/densityfunction/UpscaleDensityFunction
+	METHOD method_1_10206 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	CLASS class_1_1908 Axis
+		METHOD method_1_12009 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+		METHOD method_1_12010 mapInterval (Lnet/minecraft/class_1_1150;)Lnet/minecraft/class_1_1150;
+			ARG 1 interval
+		METHOD method_1_12011 tryGetAxisPlan (III)Lnet/minecraft/class_1_1889$class_1_1890;
+			ARG 1 minBlock
+			ARG 2 size
+			ARG 3 stepBlock
+	CLASS class_1_1909 Mode
+		FIELD field_1_12202 passesThroughVertices Z
+		FIELD field_1_12203 name Ljava/lang/String;
+		FIELD field_1_12204 positivePoints I
+		FIELD field_1_12205 negativePoints I
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;IIZ)V
+			ARG 3 name
+			ARG 4 negativePoints
+			ARG 5 positivePoints
+			ARG 6 passesThroughVertices
+		METHOD method_1_12013 getSamplesPerAxis ()I
+	CLASS class_1_1910 NearestNeighborSampler
+		METHOD method_1_12014 getEnclosingRegion (Lnet/minecraft/class_1_1441;)Lnet/minecraft/class_1_1441;
+			ARG 1 region
+		METHOD method_1_12015 upscale (Lnet/minecraft/class_1_1516;Lnet/minecraft/class_1_1441;Lnet/minecraft/class_1_1441;Lnet/minecraft/class_1_1572;)V
+			ARG 1 output
+			ARG 2 outputRegion
+			ARG 3 inputRegion
+			ARG 4 input
+	CLASS class_1_1911 GeneralSampler
+		METHOD method_1_12016 upscale (Lnet/minecraft/class_1_1521;Lnet/minecraft/class_1_1516;Lnet/minecraft/class_1_1441;Lnet/minecraft/class_1_1889$class_1_1890;Lnet/minecraft/class_1_1889$class_1_1890;Lnet/minecraft/class_1_1889$class_1_1890;)V
+			ARG 1 context
+			ARG 2 output
+			ARG 3 region
+			ARG 4 x
+			ARG 5 y
+			ARG 6 z
+		METHOD method_1_12017 upscaleFallback (Lnet/minecraft/class_1_1521;Lnet/minecraft/class_1_1516;Lnet/minecraft/class_1_1441;)V
+			ARG 1 context
+			ARG 2 output
+			ARG 3 region

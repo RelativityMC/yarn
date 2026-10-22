@@ -1,12 +1,23 @@
 CLASS net/minecraft/class_3611 net/minecraft/fluid/Fluid
+	FIELD field_1_12049 bucketItem Lnet/minecraft/class_5321;
+	FIELD field_1_12050 movementSpeedMultiplier F
+	FIELD field_1_12051 particle Lnet/minecraft/class_2394;
+	FIELD field_1_12052 blastResistance F
+	FIELD field_1_12053 bucketFillSound Ljava/util/Optional;
+	FIELD field_1_12054 hasRandomTicks Z
 	FIELD field_15903 defaultState Lnet/minecraft/class_3610;
 	FIELD field_15904 STATE_IDS Lnet/minecraft/class_2361;
 	FIELD field_15905 stateManager Lnet/minecraft/class_2689;
 	FIELD field_36431 registryEntry Lnet/minecraft/class_6880$class_6883;
+	METHOD <init> (Lnet/minecraft/class_3611$class_1_1851;)V
+		ARG 1 settings
 	METHOD method_1_11497 isFullFlowing (Lnet/minecraft/class_3610;)Z
 		ARG 1 state
 	METHOD method_1_11498 source (Lnet/minecraft/class_3610;)Lnet/minecraft/class_3610;
 		ARG 1 state
+	METHOD method_1_11743 getMovementSpeedMultiplier ()F
+	METHOD method_1_11744 getPushStrength (Lnet/minecraft/class_1937;)D
+		ARG 1 world
 	METHOD method_15774 getBucketItem ()Lnet/minecraft/class_5321;
 	METHOD method_15775 appendProperties (Lnet/minecraft/class_2689$class_2690;)V
 		ARG 1 builder
@@ -73,3 +84,22 @@ CLASS net/minecraft/class_3611 net/minecraft/fluid/Fluid
 		ARG 2 pos
 		ARG 3 entity
 		ARG 4 handler
+	CLASS class_1_1851 Settings
+		FIELD field_1_12055 bucketItem Lnet/minecraft/class_5321;
+		FIELD field_1_12056 movementSpeedMultiplier F
+		FIELD field_1_12057 particle Lnet/minecraft/class_2394;
+		FIELD field_1_12058 blastResistance F
+		FIELD field_1_12059 bucketFillSound Ljava/util/Optional;
+		FIELD field_1_12060 hasRandomTicks Z
+		METHOD method_1_11745 bucketItem (Lnet/minecraft/class_5321;)Lnet/minecraft/class_3611$class_1_1851;
+			ARG 1 bucketItem
+		METHOD method_1_11746 movementSpeedMultiplier (F)Lnet/minecraft/class_3611$class_1_1851;
+			ARG 1 movementSpeedMultiplier
+		METHOD method_1_11747 particle (Lnet/minecraft/class_2394;)Lnet/minecraft/class_3611$class_1_1851;
+			ARG 1 particle
+		METHOD method_1_11748 blastResistance (F)Lnet/minecraft/class_3611$class_1_1851;
+			ARG 1 blastResistance
+		METHOD method_1_11749 create ()Lnet/minecraft/class_3611$class_1_1851;
+		METHOD method_1_11750 randomTicks ()Lnet/minecraft/class_3611$class_1_1851;
+		METHOD method_1_11751 bucketFillSound (Lnet/minecraft/class_3414;)Lnet/minecraft/class_3611$class_1_1851;
+			ARG 1 bucketFillSound

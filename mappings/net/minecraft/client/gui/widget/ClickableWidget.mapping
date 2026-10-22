@@ -58,6 +58,7 @@ CLASS net/minecraft/class_339 net/minecraft/client/gui/widget/ClickableWidget
 	METHOD method_47402 setTooltipDelay (Ljava/time/Duration;)V
 		ARG 1 tooltipDelay
 	METHOD method_48579 renderWidget (Lnet/minecraft/class_332;)V
+		ARG 1 context
 	METHOD method_48591 setNavigationOrder (I)V
 		ARG 1 navigationOrder
 	METHOD method_49606 isHovered ()Z

@@ -2,6 +2,7 @@ CLASS net/minecraft/class_2535 net/minecraft/network/ClientConnection
 	COMMENT A connection backed by a netty channel. It can be one to a client on the
 	COMMENT server or one to a server on a client.
 	FIELD field_1_10558 verification Lnet/minecraft/class_2535$class_1_1681;
+	FIELD field_1_11849 PACKET_ERROR_DISCONNECT_TEXT Lnet/minecraft/class_2561;
 	FIELD field_11639 NETWORK_PACKETS_MARKER Lorg/slf4j/Marker;
 	FIELD field_11640 errored Z
 	FIELD field_11641 NETWORK_MARKER Lorg/slf4j/Marker;
@@ -48,6 +49,15 @@ CLASS net/minecraft/class_2535 net/minecraft/network/ClientConnection
 		ARG 0 channel
 		ARG 1 side
 		ARG 2 log
+	METHOD method_1_11728 addDecryptionCipher (Ljavax/crypto/Cipher;)V
+		ARG 1 decryptionCipher
+	METHOD method_1_11729 addEncryptionCipher (Ljavax/crypto/Cipher;)V
+		ARG 1 encryptionCipher
+	METHOD method_1_11730 setInboundCompression (IZ)V
+		ARG 1 compressionThreshold
+		ARG 2 rejectBadPackets
+	METHOD method_1_11731 setOutboundCompression (I)V
+		ARG 1 compressionThreshold
 	METHOD method_10743 send (Lnet/minecraft/class_2596;)V
 		ARG 1 packet
 	METHOD method_10744 getPacketListener ()Lnet/minecraft/class_2547;

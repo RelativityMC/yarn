@@ -18,8 +18,12 @@ CLASS net/minecraft/class_1_1133 net/minecraft/world/gen/feature/BaseOreFeature
 		ARG 1 instance
 	METHOD method_1_7141 createMapCodec (Lcom/mojang/datafixers/util/Function3;)Lcom/mojang/serialization/MapCodec;
 		ARG 0 constructor
-	METHOD method_1_7142 passesAirExposureTest (Lnet/minecraft/class_5819;F)Z
+	METHOD method_1_7142 passesAirExposureRoll (Lnet/minecraft/class_5819;F)Z
 		ARG 0 random
 		ARG 1 discardChanceOnAirExposure
 	METHOD method_1_7143 getSize ()I
 	METHOD method_1_7144 getTargets ()Ljava/util/List;
+	METHOD method_1_11953 shouldGenerate (Ljava/util/function/Function;Lnet/minecraft/class_5819;Lnet/minecraft/class_2338$class_2339;)Z
+		ARG 1 stateGetter
+		ARG 2 random
+		ARG 3 pos

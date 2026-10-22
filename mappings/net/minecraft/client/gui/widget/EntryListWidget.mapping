@@ -117,6 +117,7 @@ CLASS net/minecraft/class_350 net/minecraft/client/gui/widget/EntryListWidget
 		FIELD field_62115 PADDING I
 		METHOD method_25343 render (Lnet/minecraft/class_332;Z)V
 			COMMENT Renders an entry in a list.
+			ARG 1 context
 		METHOD method_73380 getContentX ()I
 		METHOD method_73381 setWidth (I)V
 			ARG 1 width

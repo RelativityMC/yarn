@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_3940 net/minecraft/client/particle/BillboardParticle
 	COMMENT A {@link Particle} which renders a camera-facing sprite with a target texture scale.
+	FIELD field_1_12073 flip Lnet/minecraft/class_3940$class_1_1855;
 	FIELD field_17867 scale F
 	FIELD field_62632 sprite Lnet/minecraft/class_1058;
 	FIELD field_62633 red F
@@ -16,11 +17,13 @@ CLASS net/minecraft/class_3940 net/minecraft/client/particle/BillboardParticle
 		ARG 8 velocityX
 		ARG 10 velocityY
 		ARG 12 velocityZ
+		ARG 14 sprite
 	METHOD <init> (Lnet/minecraft/class_638;DDDLnet/minecraft/class_1058;)V
 		ARG 1 world
 		ARG 2 x
 		ARG 4 y
 		ARG 6 z
+		ARG 8 sprite
 	METHOD method_3074 render (Lnet/minecraft/class_11944;Lnet/minecraft/class_4184;F)V
 		ARG 1 submittable
 		ARG 2 camera
@@ -60,6 +63,14 @@ CLASS net/minecraft/class_3940 net/minecraft/client/particle/BillboardParticle
 		ARG 1 sprite
 	METHOD method_74308 setAlpha (F)V
 		ARG 1 alpha
+	CLASS class_1_1855 Flip
+		FIELD field_1_12077 privateValues [Lnet/minecraft/class_3940$class_1_1855;
+		METHOD method_1_11782 isFlippedHorizontally ()Z
+		METHOD method_1_11783 isFlippedVertically ()Z
+		METHOD method_1_11784 sample (Lnet/minecraft/class_5819;)Lnet/minecraft/class_3940$class_1_1855;
+			ARG 0 random
+		METHOD method_1_11785 sampleHorizontal (Lnet/minecraft/class_5819;)Lnet/minecraft/class_3940$class_1_1855;
+			ARG 0 random
 	CLASS class_8981 Rotator
 		FIELD field_47457 ALL_AXIS Lnet/minecraft/class_3940$class_8981;
 		FIELD field_47458 Y_AND_W_ONLY Lnet/minecraft/class_3940$class_8981;
@@ -84,3 +95,15 @@ CLASS net/minecraft/class_3940 net/minecraft/client/particle/BillboardParticle
 		FIELD field_64447 ITEM_ATLAS_TRANSLUCENT Lnet/minecraft/class_3940$class_11941;
 		METHOD method_1_2272 forSprite (Lnet/minecraft/class_1058;)Lnet/minecraft/class_3940$class_11941;
 			ARG 0 sprite
+		METHOD method_1_11775 (Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+			ARG 0 oitStage
+		METHOD method_1_11776 (Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+			ARG 0 oitStage
+		METHOD method_1_11777 (Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+			ARG 0 oitStage
+		METHOD method_1_11778 (Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+			ARG 0 oitStage
+		METHOD method_1_11779 (Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+			ARG 0 oitStage
+		METHOD method_1_11780 (Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+			ARG 0 oitStage

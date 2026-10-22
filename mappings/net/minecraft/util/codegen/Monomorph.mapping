@@ -1,0 +1,90 @@
+CLASS net/minecraft/class_1_1880 net/minecraft/util/codegen/Monomorph
+	FIELD field_1_12120 VOID_TO_VOID Ljava/lang/invoke/MethodType;
+	METHOD method_1_11926 convert (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/Object;)Lnet/minecraft/class_1_1856;
+		ARG 1 lookup
+		ARG 2 target
+	METHOD method_1_11927 create (Ljava/lang/Class;)Lnet/minecraft/class_1_1880;
+		ARG 0 targetClass
+	METHOD method_1_11928 methodContains (Ljava/lang/classfile/MethodModel;Ljava/util/function/Predicate;)Z
+		ARG 0 methodModel
+		ARG 1 instructionPredicate
+	METHOD method_1_11929 (Ljava/util/function/Predicate;Ljava/lang/classfile/CodeModel;)Ljava/lang/Boolean;
+		ARG 1 codeModel
+	METHOD method_1_11930 (Ljava/util/function/Predicate;Ljava/lang/classfile/CodeElement;)Z
+		ARG 1 codeElement
+	METHOD method_1_11931 (Ljava/lang/Class;Ljava/lang/Class;)Z
+		ARG 1 nestmate
+	METHOD method_1_11932 (Ljava/lang/Class;)Z
+		ARG 0 immediateNestmate
+	METHOD method_1_11933 (Ljava/lang/classfile/Instruction;)Z
+		ARG 0 instruction
+	METHOD method_1_11934 readClassBytes (Ljava/lang/Class;)[B
+		ARG 0 clazz
+	METHOD method_1_11935 monomorphize (Ljava/lang/classfile/ClassModel;Ljava/lang/ClassLoader;)[B
+		ARG 0 targetClassModel
+		ARG 1 targetClassLoader
+	METHOD method_1_11936 assertValidTargetClass (Ljava/lang/Class;)V
+		COMMENT A valid target class must be a non-hidden record class with no non-static
+		COMMENT inner classes.
+		ARG 0 targetClass
+	METHOD method_1_11937 assertNoSuperCalls (Ljava/lang/classfile/ClassModel;)V
+		ARG 0 targetClassModel
+	CLASS class_1_1881 MonomorphizingTransform
+		COMMENT @implNote All record attributes and fields are dropped. The superclass is
+		COMMENT           changed to {@link GeneratedDelegate}.
+		FIELD field_1_12121 GENERATED_DELEGATE_DESC Ljava/lang/constant/ClassDesc;
+		FIELD field_1_12122 targetClassDesc Ljava/lang/constant/ClassDesc;
+		FIELD field_1_12123 delegateClassEntry Ljava/lang/classfile/constantpool/ConstantDynamicEntry;
+		FIELD field_1_12124 generatedDelegateClassDesc Ljava/lang/constant/ClassDesc;
+		FIELD field_1_12125 dispatcherEntries Ljava/util/Set;
+		METHOD <init> (Ljava/lang/constant/ClassDesc;Ljava/lang/constant/ClassDesc;Ljava/lang/classfile/constantpool/ConstantDynamicEntry;)V
+			ARG 1 generatedDelegateClassDesc
+			ARG 2 targetClassDesc
+			ARG 3 delegateClassEntry
+		METHOD accept (Ljava/lang/classfile/ClassFileBuilder;Ljava/lang/classfile/ClassFileElement;)V
+			ARG 1 builder
+			ARG 2 element
+		METHOD atEnd (Ljava/lang/classfile/ClassFileBuilder;)V
+			ARG 1 builder
+		METHOD method_1_11939 acceptMethod (Ljava/lang/classfile/ClassBuilder;Ljava/lang/classfile/MethodModel;)V
+			COMMENT @implNote All constructors are dropped, as are the {@link Object#equals(Object)},
+			COMMENT           {@link Object#hashCode()}, and {@link Object#toString()} methods.
+			COMMENT           All static methods are unchanged.
+			ARG 1 builder
+			ARG 2 method
+		METHOD method_1_11940 classDescToTypeKind (Ljava/lang/constant/ClassDesc;)Ljava/lang/classfile/TypeKind;
+			ARG 0 classDesc
+		METHOD method_1_11942 addDispatcherMethod (Ljava/lang/classfile/ClassBuilder;Lnet/minecraft/class_1_1880$class_1_1881$class_1_1882;)V
+			ARG 1 builder
+			ARG 2 entry
+		METHOD method_1_11943 acceptInstancedInvokeInstruction (Ljava/lang/classfile/CodeBuilder;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;)V
+			COMMENT @implNote Instanced method calls are turned into static calls with the
+			COMMENT           receiver added as the last argument. The required “dispatcher”
+			COMMENT           methods are added later by {@link #atEnd()}.
+			ARG 1 builder
+			ARG 2 methodName
+			ARG 3 methodType
+		METHOD method_1_11944 (Ljava/lang/classfile/CodeBuilder;)V
+			ARG 1 codeBuilder
+		METHOD method_1_11945 (Ljava/lang/constant/MethodTypeDesc;Ljava/lang/constant/MethodTypeDesc;Ljava/lang/String;Ljava/lang/classfile/CodeBuilder;)V
+			ARG 4 codeBuilder
+		METHOD method_1_11946 (Ljava/lang/constant/MethodTypeDesc;Ljava/lang/constant/MethodTypeDesc;Ljava/lang/String;Ljava/lang/classfile/CodeBuilder$BlockCodeBuilder;)V
+			ARG 4 blockCodeBuilder
+		METHOD method_1_11947 (Ljava/lang/constant/MethodTypeDesc;Ljava/lang/String;Ljava/lang/classfile/CodeBuilder$BlockCodeBuilder;)V
+			ARG 3 blockCodeBuilder
+		METHOD method_1_11948 addParameterLoads (Ljava/lang/classfile/CodeBuilder;ILjava/lang/constant/MethodTypeDesc;)V
+			ARG 0 codeBuilder
+			ARG 1 parameterSlotOffset
+			ARG 2 targetDesc
+		METHOD method_1_11949 acceptMethodCode (Ljava/lang/classfile/CodeBuilder;Ljava/lang/classfile/CodeElement;)V
+			ARG 1 builder
+			ARG 2 code
+		METHOD method_1_11950 acceptInvokeInstruction (Ljava/lang/classfile/CodeBuilder;Ljava/lang/classfile/instruction/InvokeInstruction;)V
+			COMMENT Transforms an invoke instruction to a method defined within the target
+			COMMENT class.
+			ARG 1 builder
+			ARG 2 invokeInstruction
+		CLASS class_1_1882 DispatcherEntry
+			METHOD method_1_11951 dispatcherDesc (Ljava/lang/constant/ClassDesc;)Ljava/lang/constant/MethodTypeDesc;
+				ARG 1 targetClassDesc
+			METHOD method_1_11952 dispatcherName ()Ljava/lang/String;

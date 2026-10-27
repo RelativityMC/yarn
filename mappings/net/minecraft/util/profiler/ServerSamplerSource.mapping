@@ -14,7 +14,7 @@ CLASS net/minecraft/class_6402 net/minecraft/util/profiler/ServerSamplerSource
 		ARG 0 nanoTimeSupplier
 	CLASS class_6403 CpuUsageFetcher
 		FIELD field_33897 logicalProcessorCount I
-		FIELD field_33898 systemInfo Loshi/SystemInfo;
+		FIELD field_33898 systemInfo Loshi/spi/SystemInfoProvider;
 		FIELD field_33899 processor Loshi/hardware/CentralProcessor;
 		FIELD field_33900 loadTicks [[J
 		FIELD field_33901 loadBetweenTicks [D

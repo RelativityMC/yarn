@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_10517 net/minecraft/client/render/item/model/special/SpecialModelTypes
 	FIELD field_55452 CODEC Lcom/mojang/serialization/Codec;
-	FIELD field_55453 ID_MAPPER Lnet/minecraft/class_5699$class_10388;
-	METHOD method_65712 bootstrap ()V
+	METHOD method_65712 bootstrap (Lnet/minecraft/class_2378;)Ljava/lang/Object;
 	METHOD method_65713 (Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
 		ARG 0 codec

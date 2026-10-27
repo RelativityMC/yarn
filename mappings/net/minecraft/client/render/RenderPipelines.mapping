@@ -19,28 +19,14 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_1_12094 staticPipelines Ljava/util/Set;
 	FIELD field_56814 RENDERTYPE_LEASH Lnet/minecraft/class_1_1257;
 	FIELD field_56816 GLINT Lnet/minecraft/class_1_1257;
-	FIELD field_56839 MOJANG_LOGO Lnet/minecraft/class_1_1257;
 	FIELD field_56840 ENTITY_OUTLINE_BLIT Lnet/minecraft/class_1_1257;
 	FIELD field_56841 POSITION_TEX_PANORAMA Lnet/minecraft/class_1_1257;
 	FIELD field_56842 OUTLINE_CULL Lnet/minecraft/class_1_1257;
 	FIELD field_56843 OUTLINE_NO_CULL Lnet/minecraft/class_1_1257;
 	FIELD field_56844 BILT_SCREEN_LIGHTMAP Lnet/minecraft/class_1_1257;
-	FIELD field_56863 GUI_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_56864 POSITION_TEX_COLOR_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_56879 GUI Lnet/minecraft/class_1_1257;
-	FIELD field_56881 GUI_TEXT_HIGHLIGHT Lnet/minecraft/class_1_1257;
-	FIELD field_56883 GUI_TEXTURED Lnet/minecraft/class_1_1257;
-	FIELD field_56885 BLOCK_SCREEN_EFFECT Lnet/minecraft/class_1_1257;
-	FIELD field_56886 FIRE_SCREEN_EFFECT Lnet/minecraft/class_1_1257;
-	FIELD field_56887 GUI_OPAQUE_TEX_BG Lnet/minecraft/class_1_1257;
-	FIELD field_56888 GUI_NAUSEA_OVERLAY Lnet/minecraft/class_1_1257;
-	FIELD field_56889 VIGNETTE Lnet/minecraft/class_1_1257;
-	FIELD field_56890 CROSSHAIR Lnet/minecraft/class_1_1257;
 	FIELD field_56892 RENDERTYPE_OUTLINE_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_57928 TRACY_BLIT Lnet/minecraft/class_1_1257;
-	FIELD field_59968 GUI_TEXTURED_PREMULTIPLIED_ALPHA Lnet/minecraft/class_1_1257;
 	FIELD field_60127 TRANSFORMS_PROJECTION_FOG_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
-	FIELD field_61068 GUI_INVERT Lnet/minecraft/class_1_1257;
 	FIELD field_64219 ANIMATE_SPRITE Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_64220 ANIMATE_SPRITE_BLIT Lnet/minecraft/class_1_1257;
 	FIELD field_64221 ANIMATE_SPRITE_INTERPOLATE Lnet/minecraft/class_1_1257;
@@ -208,9 +194,8 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 		ARG 0 parameters
 	METHOD method_1_11901 createParticlePipeline (Lnet/minecraft/class_10799$class_1_1868;)Lnet/minecraft/class_1_1257;
 		ARG 0 parameters
-	METHOD method_1_11902 registerStatic (Lnet/minecraft/class_1_1257;)Lnet/minecraft/class_1_1257;
-		ARG 0 pipeline
-	METHOD method_1_11903 addPipeline (Ljava/util/List;Lnet/minecraft/class_1_1257;)V
+	METHOD method_1_11902 registerStatic (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_1_1924;[Lnet/minecraft/class_1_1924;)Lnet/minecraft/class_1_1257;
+	METHOD method_1_11903 addPipeline (Ljava/util/List;Lnet/minecraft/class_1_1257;Lnet/minecraft/class_1_1924;[Lnet/minecraft/class_1_1924;)V
 		ARG 0 pipelinesOut
 		ARG 1 pipeline
 	METHOD method_1_11904 addPipelinesWithOitVariants (Ljava/util/List;Ljava/util/function/Function;Z)V

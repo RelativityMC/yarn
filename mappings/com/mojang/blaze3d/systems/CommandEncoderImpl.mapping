@@ -55,18 +55,6 @@ CLASS net/minecraft/class_1_1256 com/mojang/blaze3d/systems/CommandEncoderImpl
 		ARG 2 to
 	METHOD method_1_7944 (Lnet/minecraft/class_1_900;)Lnet/minecraft/class_1_1317;
 		ARG 1 description
-	METHOD method_1_7945 (Ljava/util/function/Supplier;Lnet/minecraft/class_1_1330;Ljava/util/Optional;)Lnet/minecraft/class_1_1317;
-		ARG 1 labelGetter
-		ARG 3 clearColor
-	METHOD method_1_7946 (Ljava/util/function/Supplier;Lnet/minecraft/class_1_1330;Ljava/util/Optional;Lnet/minecraft/class_1_1330;Ljava/util/OptionalDouble;)Lnet/minecraft/class_1_1317;
-		ARG 1 labelGetter
-		ARG 3 clearColor
-		ARG 5 clearDepth
-	METHOD method_1_7947 (Ljava/util/function/Supplier;Lnet/minecraft/class_1_1330;Ljava/util/Optional;Lnet/minecraft/class_1_1330;Ljava/util/OptionalDouble;Lnet/minecraft/class_1_1317$class_1_837;)Lnet/minecraft/class_1_1317;
-		ARG 1 labelGetter
-		ARG 3 clearColor
-		ARG 5 clearDepth
-		ARG 6 renderArea
 	METHOD method_1_7948 isRenderPassOpen ()Z
 	METHOD method_1_7950 finishRenderPass ()V
 	METHOD method_1_7952 assertClearableColorTexture (Lnet/minecraft/class_1_1318;)V

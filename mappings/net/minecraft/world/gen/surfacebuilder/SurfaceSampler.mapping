@@ -4,14 +4,13 @@ CLASS net/minecraft/class_1_1703 net/minecraft/world/gen/surfacebuilder/SurfaceS
 	FIELD field_1_10691 materialRuleContext Lnet/minecraft/class_6694;
 	FIELD field_1_10692 blockStateRule Lnet/minecraft/class_6715;
 	FIELD field_1_10693 biomeSurfaceSampler Lnet/minecraft/class_1_1699;
-	METHOD <init> (Lnet/minecraft/class_7138;Lnet/minecraft/class_1_1552;Lnet/minecraft/class_1_1441;Lnet/minecraft/class_5843$class_1_1694;Lnet/minecraft/class_6708;Lnet/minecraft/class_1_1690;Ljava/util/Set;)V
+	METHOD <init> (Lnet/minecraft/class_7138;Lnet/minecraft/class_1_1552;Lnet/minecraft/class_1_1441;Lnet/minecraft/class_6708;Lnet/minecraft/class_1_1690;Ljava/util/Set;)V
 		ARG 1 noiseConfig
 		ARG 2 contextualSamplerProvider
 		ARG 3 region
-		ARG 4 heightContext
-		ARG 5 materialRule
-		ARG 6 posToBiome
-		ARG 7 includedBiomes
+		ARG 4 materialRule
+		ARG 5 posToBiome
+		ARG 6 includedBiomes
 	METHOD method_1_10735 getCarverFilteredColumn (Lnet/minecraft/class_2791;IILnet/minecraft/class_6643$class_1_1687;)Lnet/minecraft/class_6557;
 		COMMENT {@return a {@link BlockColumn} that ignores writes to carved positions}
 		ARG 1 chunk

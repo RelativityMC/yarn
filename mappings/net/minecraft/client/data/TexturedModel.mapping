@@ -6,7 +6,6 @@ CLASS net/minecraft/class_4946 net/minecraft/client/data/TexturedModel
 	FIELD field_23038 CUBE_COLUMN Lnet/minecraft/class_4946$class_4947;
 	FIELD field_23039 CUBE_COLUMN_HORIZONTAL Lnet/minecraft/class_4946$class_4947;
 	FIELD field_23040 CUBE_BOTTOM_TOP Lnet/minecraft/class_4946$class_4947;
-	FIELD field_23041 CUBE_TOP Lnet/minecraft/class_4946$class_4947;
 	FIELD field_23042 ORIENTABLE Lnet/minecraft/class_4946$class_4947;
 	FIELD field_23043 ORIENTABLE_WITH_BOTTOM Lnet/minecraft/class_4946$class_4947;
 	FIELD field_23044 CARPET Lnet/minecraft/class_4946$class_4947;

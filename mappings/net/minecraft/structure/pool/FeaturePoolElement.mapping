@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_3776 net/minecraft/structure/pool/FeaturePoolElement
 	FIELD field_16661 feature Lnet/minecraft/class_6880;
 	FIELD field_24948 CODEC Lcom/mojang/serialization/MapCodec;
-	METHOD <init> (Lnet/minecraft/class_6880;Lnet/minecraft/class_3785$class_3786;)V
+	METHOD <init> (Lnet/minecraft/class_6880;Lnet/minecraft/class_3785$class_3786;Ljava/util/Optional;)V
 		ARG 1 feature
 		ARG 2 projection
 	METHOD method_28871 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;

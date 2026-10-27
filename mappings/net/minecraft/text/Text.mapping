@@ -16,15 +16,8 @@ CLASS net/minecraft/class_2561 net/minecraft/text/Text
 		COMMENT {@return the content of the text}
 	METHOD method_10855 getSiblings ()Ljava/util/List;
 		COMMENT Returns the siblings of this text.
-	METHOD method_10858 asTruncatedString (I)Ljava/lang/String;
-		COMMENT Returns the full string representation of this text, truncated beyond
-		COMMENT the supplied {@code length}.
-		ARG 1 length
-			COMMENT the max length allowed for the string representation of the text
 	METHOD method_10866 getStyle ()Lnet/minecraft/class_2583;
 		COMMENT Returns the style of this text.
-	METHOD method_27655 (ILjava/lang/StringBuilder;Ljava/lang/String;)Ljava/util/Optional;
-		ARG 2 string
 	METHOD method_27661 copy ()Lnet/minecraft/class_5250;
 		COMMENT Copies the text's content, the style, and the siblings.
 		COMMENT
@@ -35,11 +28,6 @@ CLASS net/minecraft/class_2561 net/minecraft/text/Text
 		COMMENT Creates a literal text with the given string as content.
 		ARG 0 string
 	METHOD method_30937 asOrderedText ()Lnet/minecraft/class_5481;
-	METHOD method_36135 (Ljava/util/List;Lnet/minecraft/class_2583;Ljava/lang/String;)Ljava/util/Optional;
-		ARG 1 styleOverride
-		ARG 2 text
-	METHOD method_36136 getWithStyle (Lnet/minecraft/class_2583;)Ljava/util/List;
-		ARG 1 style
 	METHOD method_43466 score (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/class_5250;
 		ARG 0 name
 		ARG 1 objective
@@ -68,10 +56,6 @@ CLASS net/minecraft/class_2561 net/minecraft/text/Text
 	METHOD method_43472 keybind (Ljava/lang/String;)Lnet/minecraft/class_5250;
 		ARG 0 string
 	METHOD method_43473 empty ()Lnet/minecraft/class_5250;
-	METHOD method_44745 contains (Lnet/minecraft/class_2561;)Z
-		COMMENT {@return whether the text contains {@code text}, without considering styles}
-		ARG 1 text
-	METHOD method_44746 withoutStyle ()Ljava/util/List;
 	METHOD method_48321 translatableWithFallback (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/class_5250;
 		ARG 0 key
 		ARG 1 fallback

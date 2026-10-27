@@ -32,9 +32,9 @@ CLASS net/minecraft/class_1_1307 com/mojang/blaze3d/systems/RenderSystem
 	METHOD method_1_8496 wrongThreadException ()Ljava/lang/IllegalStateException;
 	METHOD method_1_8499 runGpuAsyncTasks ()V
 	METHOD method_1_8500 getFormattedLwjglVersion ()Ljava/lang/String;
-	METHOD method_1_8501 compilePipeline (Lnet/minecraft/class_1_1257;)Lnet/minecraft/class_1_1285;
+	METHOD method_1_8501 compilePipeline (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_1_1924$class_1_1928;)Lnet/minecraft/class_1_1285;
 		ARG 0 pipeline
-	METHOD method_1_8502 compilePipelineOrNull (Lnet/minecraft/class_1_1257;)Lnet/minecraft/class_1_1285;
+	METHOD method_1_8502 compilePipelineOrNull (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_1_1924$class_1_1928;)Lnet/minecraft/class_1_1285;
 		ARG 0 pipeline
 	METHOD method_1_8503 getDevice ()Lnet/minecraft/class_1_1313;
 	METHOD method_1_8504 getDynamicUniforms ()Lnet/minecraft/class_11282;

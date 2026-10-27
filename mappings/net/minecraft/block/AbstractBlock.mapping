@@ -920,10 +920,6 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 		FIELD field_54006 registryKey Lnet/minecraft/class_5321;
 		FIELD field_54007 lootTable Lnet/minecraft/class_10162;
 		FIELD field_54008 translationKey Lnet/minecraft/class_10162;
-		METHOD method_1_3011 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;)Lnet/minecraft/class_2338;
-			ARG 0 state
-			ARG 1 world
-			ARG 2 pos
 		METHOD method_1_3012 (Lnet/minecraft/class_2680;)Z
 			ARG 0 state
 		METHOD method_1_4491 bounciness (F)Lnet/minecraft/class_4970$class_2251;
@@ -975,13 +971,10 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 				COMMENT the predicate used to calculate whether an entity can spawn on this block
 		METHOD method_26236 solidBlock (Lnet/minecraft/class_4970$class_4973;)Lnet/minecraft/class_4970$class_2251;
 			ARG 1 predicate
-		METHOD method_26237 (Lnet/minecraft/class_2680;)I
-			ARG 0 state
 		METHOD method_26239 (Lnet/minecraft/class_2680;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_1299;)Z
 			ARG 0 state
 			ARG 1 world
 			ARG 2 pos
-			ARG 3 type
 		METHOD method_26243 suffocates (Lnet/minecraft/class_4970$class_4973;)Lnet/minecraft/class_4970$class_2251;
 			COMMENT Specifies logic that calculates whether an entity should suffocate if inside of a block.
 			ARG 1 predicate
@@ -1028,8 +1021,6 @@ CLASS net/minecraft/class_4970 net/minecraft/block/AbstractBlock
 			ARG 1 state
 		METHOD method_51520 mapColor (Ljava/util/function/Function;)Lnet/minecraft/class_4970$class_2251;
 			ARG 1 mapColorProvider
-		METHOD method_51521 (Lnet/minecraft/class_2680;)Lnet/minecraft/class_3620;
-			ARG 0 state
 		METHOD method_55226 copyShallow (Lnet/minecraft/class_4970;)Lnet/minecraft/class_4970$class_2251;
 			ARG 0 block
 		METHOD method_63500 registryKey (Lnet/minecraft/class_5321;)Lnet/minecraft/class_4970$class_2251;

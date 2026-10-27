@@ -117,7 +117,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	FIELD field_5995 NO_GRAVITY Lnet/minecraft/class_2940;
 	FIELD field_5996 pistonMovementTick J
 	FIELD field_5999 renderDistanceMultiplier D
-	FIELD field_6000 submergedInWater Z
 	FIELD field_6002 world Lnet/minecraft/class_1937;
 	FIELD field_6003 nextStepSoundDistance F
 	FIELD field_6004 lastPitch F
@@ -324,22 +323,21 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 1 fluid
 	METHOD method_1_11733 playSound (Lnet/minecraft/class_6880;)V
 		ARG 1 sound
-	METHOD method_5622 onBlockCollision (Lnet/minecraft/class_2680;)V
+	METHOD method_5622 onBlockCollision (Lnet/minecraft/class_2680;Ljava/util/function/BooleanSupplier;)V
 		COMMENT Called when this entity's collision box intersects {@code state}.
 		COMMENT
 		COMMENT @see net.minecraft.block.AbstractBlock#onEntityCollision
 		ARG 1 state
-	METHOD method_5623 fall (DZLnet/minecraft/class_2680;Lnet/minecraft/class_2338;)V
+	METHOD method_5623 fall (ZLnet/minecraft/class_2680;Lnet/minecraft/class_2338;)V
 		COMMENT Called when the entity falls. Flying mobs should override this to do nothing.
 		COMMENT
 		COMMENT @implNote If on ground, this calls {@link net.minecraft.block.Block#onLandedUpon}, which can add or
 		COMMENT reduce fall damage, emits {@link net.minecraft.world.event.GameEvent#HIT_GROUND}, then calls {@link #onLanding}.
 		COMMENT Otherwise, if {@code heightDifference} is negative, it subtracts that value from
 		COMMENT {@link #fallDistance}.
-		ARG 1 heightDifference
-		ARG 3 onGround
-		ARG 4 state
-		ARG 5 landedPosition
+		ARG 1 onGround
+		ARG 2 state
+		ARG 3 landedPosition
 	METHOD method_5624 isSprinting ()Z
 		COMMENT {@return whether the entity is sprinting}
 		COMMENT
@@ -2290,11 +2288,8 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_65342 setMovement (ZLnet/minecraft/class_243;)V
 		ARG 1 onGround
 		ARG 2 movement
-	METHOD method_65942 handleFall (DDDZ)V
-		ARG 1 xDifference
-		ARG 3 yDifference
-		ARG 5 zDifference
-		ARG 7 onGround
+	METHOD method_65942 handleFall (Lnet/minecraft/class_243;Z)V
+		ARG 2 onGround
 	METHOD method_66233 createInterpolator ()Lnet/minecraft/class_1_1451;
 	METHOD method_66245 isInterpolating ()Z
 	METHOD method_66246 updateTrackedPositionAndAngles (Lnet/minecraft/class_1_1198;FF)V

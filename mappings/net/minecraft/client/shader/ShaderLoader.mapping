@@ -24,8 +24,6 @@ CLASS net/minecraft/class_10151 net/minecraft/client/shader/ShaderLoader
 		ARG 2 pipelines
 		ARG 3 prepareExecutor
 		ARG 4 applyExecutor
-	METHOD method_1_9903 (Lnet/minecraft/class_1_1685;Lnet/minecraft/class_12289;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;Lnet/minecraft/class_1_1257;)Ljava/util/concurrent/CompletableFuture;
-		ARG 4 pipeline
 	METHOD method_1_9905 (Lnet/minecraft/class_10151$class_1_1853;Lnet/minecraft/class_1_1685;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;Lnet/minecraft/class_10151$class_10153;)Ljava/util/concurrent/CompletionStage;
 		ARG 4 definitions
 	METHOD method_1_9906 (Lnet/minecraft/class_10151$class_10153;Ljava/util/List;Ljava/util/List;)Lnet/minecraft/class_10151$class_1_1488;

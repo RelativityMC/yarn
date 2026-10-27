@@ -1,7 +1,6 @@
 CLASS net/minecraft/class_10866 net/minecraft/client/gl/GlRenderPassBackend
 	FIELD field_1_1151 device Lnet/minecraft/class_10865;
 	FIELD field_1_5954 defaultScissorState Lnet/minecraft/class_11219;
-	FIELD field_1_6269 numColorAttachments I
 	FIELD field_1_6270 dirty Z
 	FIELD field_1_9436 shaderParamsDirty Z
 	FIELD field_1_9437 indexBufferDirty Z
@@ -16,11 +15,10 @@ CLASS net/minecraft/class_10866 net/minecraft/client/gl/GlRenderPassBackend
 	FIELD field_57873 simpleUniforms Lit/unimi/dsi/fastutil/objects/ReferenceList;
 	FIELD field_57875 setSimpleUniforms Lit/unimi/dsi/fastutil/booleans/BooleanList;
 	FIELD field_57877 commandEncoder Lnet/minecraft/class_10860;
-	METHOD <init> (Lnet/minecraft/class_10860;Lnet/minecraft/class_10865;ILnet/minecraft/class_11219;)V
+	METHOD <init> (Lnet/minecraft/class_10860;Lnet/minecraft/class_10865;Lnet/minecraft/class_11219;Lnet/minecraft/class_1_1924;)V
 		ARG 1 commandEncoder
 		ARG 2 device
-		ARG 3 numColorAttachments
-		ARG 4 defaultScissorState
+		ARG 3 defaultScissorState
 	METHOD method_70808 isScissorEnabled ()Z
 	METHOD method_70809 getScissorX ()I
 	METHOD method_70810 getScissorY ()I

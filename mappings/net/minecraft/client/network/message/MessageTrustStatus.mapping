@@ -19,4 +19,3 @@ CLASS net/minecraft/class_7595 net/minecraft/client/network/message/MessageTrust
 		ARG 0 style
 	METHOD method_45757 (Lnet/minecraft/class_2583;Ljava/lang/String;)Ljava/util/Optional;
 		ARG 0 style
-		ARG 1 part

@@ -25,13 +25,12 @@ CLASS net/minecraft/class_3754 net/minecraft/world/gen/chunk/NoiseChunkGenerator
 		ARG 1 blender
 		ARG 2 world
 		ARG 3 region
-	METHOD method_1_10782 generateCarvingMask (Lnet/minecraft/class_2791;Lnet/minecraft/class_6748;Lnet/minecraft/class_7138;Lnet/minecraft/class_3233;Lnet/minecraft/class_6780;Lnet/minecraft/class_5843$class_1_1694;)Lnet/minecraft/class_6643;
+	METHOD method_1_10782 generateCarvingMask (Lnet/minecraft/class_2791;Lnet/minecraft/class_6748;Lnet/minecraft/class_7138;Lnet/minecraft/class_3233;Lnet/minecraft/class_6780;Lnet/minecraft/class_5539;Lnet/minecraft/class_5843$class_1_1694;)Lnet/minecraft/class_6643;
 		ARG 1 chunk
 		ARG 2 blender
 		ARG 3 noiseConfig
 		ARG 4 chunkRegion
 		ARG 5 biomeSupplier
-		ARG 6 yOffsetContext
 	METHOD method_28548 matchesSettings (Lnet/minecraft/class_5321;)Z
 		ARG 1 settings
 	METHOD method_28549 (Lnet/minecraft/class_3754;)Lnet/minecraft/class_6880;

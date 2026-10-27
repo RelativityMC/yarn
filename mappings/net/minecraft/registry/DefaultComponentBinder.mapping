@@ -44,8 +44,6 @@ CLASS net/minecraft/class_1_117 net/minecraft/registry/DefaultComponentBinder
 			ARG 1 second
 		METHOD method_1_1070 (Lnet/minecraft/class_9331;Ljava/lang/Object;Lnet/minecraft/class_9323$class_9324;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_5321;)V
 			ARG 2 builder
-			ARG 3 lookup
-			ARG 4 key
 		METHOD method_1_1071 (Lnet/minecraft/class_1_117$class_1_119;Lnet/minecraft/class_9323$class_9324;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_5321;)V
 			ARG 2 builder
 			ARG 3 lookup
@@ -73,4 +71,3 @@ CLASS net/minecraft/class_1_117 net/minecraft/registry/DefaultComponentBinder
 		METHOD method_1_1079 (Lnet/minecraft/class_9331;Lnet/minecraft/class_9323$class_9324;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_5321;)V
 			ARG 2 builder
 			ARG 3 lookup
-			ARG 4 key

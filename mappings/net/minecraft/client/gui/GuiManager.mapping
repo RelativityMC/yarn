@@ -60,7 +60,7 @@ CLASS net/minecraft/class_1_659 net/minecraft/client/gui/GuiManager
 	METHOD method_1_3924 getSplashTextSupplier ()Lnet/minecraft/class_4008;
 	METHOD method_1_3925 tick ()V
 	METHOD method_1_3926 getToastManager ()Lnet/minecraft/class_374;
-	METHOD method_1_3927 updateElements ()V
+	METHOD method_1_3927 updateElements (Lnet/minecraft/class_9779;)V
 	CLASS 1 1
 		FIELD field_1_3275 index I
 		METHOD method_1_3928 draw (Lnet/minecraft/class_12236;Z)V

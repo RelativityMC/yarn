@@ -13,7 +13,6 @@ CLASS net/minecraft/class_1_370 net/minecraft/entity/EntityFluidController
 	METHOD method_1_2535 areEyesSubmergedIn (Lnet/minecraft/class_6862;)Z
 		ARG 1 fluidKey
 	METHOD method_1_2536 areFeetSubmergedIn (Lnet/minecraft/class_6862;)Z
-		ARG 1 fluidKey
 	METHOD method_1_2537 calculateFluidEffects (Lnet/minecraft/class_1297;Z)Z
 		ARG 1 entity
 		ARG 2 notPushedByFluids

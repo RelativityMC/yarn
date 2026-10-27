@@ -2,7 +2,6 @@ CLASS net/minecraft/class_1_1227 com/mojang/blaze3d/systems/RenderPassImpl
 	COMMENT Wraps a {@link com.mojang.blaze3d.systems.RenderPassBackend} to provide
 	COMMENT extra run-time checks.
 	FIELD field_1_8520 backend Lnet/minecraft/class_1_149;
-	FIELD field_1_8521 colorAttachments Ljava/util/List;
 	FIELD field_1_8522 features Lnet/minecraft/class_1_893;
 	FIELD field_1_8523 gpuBackend Lnet/minecraft/class_1_1209;
 	FIELD field_1_8524 limits Lnet/minecraft/class_1_684;
@@ -15,11 +14,8 @@ CLASS net/minecraft/class_1_1227 com/mojang/blaze3d/systems/RenderPassImpl
 	FIELD field_1_9443 uniformsByName Ljava/util/HashMap;
 	FIELD field_1_9444 vertexBuffersBySlot [Lnet/minecraft/class_1_1254;
 	FIELD field_1_9568 pushConstantsProvided Z
-	METHOD <init> (Lnet/minecraft/class_1_149;Lnet/minecraft/class_1_1209;Ljava/util/List;Lnet/minecraft/class_1_658;Ljava/lang/Runnable;Lnet/minecraft/class_1_1317$class_1_837;)V
+	METHOD <init> (Lnet/minecraft/class_1_149;Lnet/minecraft/class_1_1209;Lnet/minecraft/class_1_1924;Ljava/lang/Runnable;Lnet/minecraft/class_1_1317$class_1_837;Ljava/util/List;)V
 		ARG 1 backend
-		ARG 3 colorAttachments
-		ARG 5 onFinish
-		ARG 6 renderArea
 	METHOD method_1_7792 (Ljava/lang/String;Lnet/minecraft/class_1_1330;Lnet/minecraft/class_12137;)V
 		ARG 3 sampler
 	METHOD method_1_7794 (IIII)V

@@ -19,6 +19,9 @@ CLASS net/minecraft/class_1_1313 com/mojang/blaze3d/systems/GpuDevice
 		ARG 5 maxAnisotropy
 		ARG 6 maxLevelOfDetail
 	METHOD method_1_7711 createSurface (JLjava/util/function/BooleanSupplier;Z)Lnet/minecraft/class_1_1314;
+		ARG 1 window
+		ARG 3 minimized
+		ARG 4 dxgi
 	METHOD method_1_7712 createTexture (Ljava/lang/String;ILnet/minecraft/class_1_658;IIII)Lnet/minecraft/class_1_1318;
 		ARG 1 labelGetter
 		ARG 2 usage

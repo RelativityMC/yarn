@@ -3,6 +3,8 @@ CLASS net/minecraft/class_265 net/minecraft/util/shape/VoxelShape
 	FIELD field_19318 shapeCache [Lnet/minecraft/class_265;
 	METHOD <init> (Lnet/minecraft/class_251;)V
 		ARG 1 voxels
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other
 	METHOD method_1089 forEachBox (Lnet/minecraft/class_259$class_260;)V
 		ARG 1 consumer
 	METHOD method_1090 getBoundingBoxes ()Ljava/util/List;
@@ -32,6 +34,8 @@ CLASS net/minecraft/class_265 net/minecraft/util/shape/VoxelShape
 	METHOD method_1100 getCoordIndex (Lnet/minecraft/class_2350$class_2351;D)I
 		ARG 1 axis
 		ARG 2 coord
+	METHOD method_1101 (DLnet/minecraft/class_2350$class_2351;I)Z
+		ARG 4 i
 	METHOD method_1102 getEndingCoord (Lnet/minecraft/class_2350$class_2351;DD)D
 		ARG 1 axis
 		ARG 2 from

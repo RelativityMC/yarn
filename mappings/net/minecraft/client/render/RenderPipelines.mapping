@@ -17,6 +17,7 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_1_12092 CACHE Ljava/util/Map;
 	FIELD field_1_12093 STATIC Ljava/util/Set;
 	FIELD field_1_12094 staticPipelines Ljava/util/Set;
+	FIELD field_1_12328 SCREEN_EFFECT Lnet/minecraft/class_1_1257;
 	FIELD field_56814 RENDERTYPE_LEASH Lnet/minecraft/class_1_1257;
 	FIELD field_56816 GLINT Lnet/minecraft/class_1_1257;
 	FIELD field_56840 ENTITY_OUTLINE_BLIT Lnet/minecraft/class_1_1257;
@@ -195,9 +196,14 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	METHOD method_1_11901 createParticlePipeline (Lnet/minecraft/class_10799$class_1_1868;)Lnet/minecraft/class_1_1257;
 		ARG 0 parameters
 	METHOD method_1_11902 registerStatic (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_1_1924;[Lnet/minecraft/class_1_1924;)Lnet/minecraft/class_1_1257;
+		ARG 0 pipeline
+		ARG 1 layout
+		ARG 2 additionalLayouts
 	METHOD method_1_11903 addPipeline (Ljava/util/List;Lnet/minecraft/class_1_1257;Lnet/minecraft/class_1_1924;[Lnet/minecraft/class_1_1924;)V
 		ARG 0 pipelinesOut
 		ARG 1 pipeline
+		ARG 2 layout
+		ARG 3 additionalLayouts
 	METHOD method_1_11904 addPipelinesWithOitVariants (Ljava/util/List;Ljava/util/function/Function;Z)V
 		ARG 0 pipelinesOut
 		ARG 1 oitStageToPipeline
@@ -217,6 +223,12 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 		ARG 0 parameters
 	METHOD method_1_11910 createWorldBorderPipeline (Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
 		ARG 0 oitStage
+	METHOD method_1_12147 createGuiPipeline (Lnet/minecraft/class_10799$class_1_1930;)Lnet/minecraft/class_1_1257;
+		ARG 0 parameters
+	METHOD method_1_12148 (Lnet/minecraft/class_1_1934;Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
+		ARG 1 oitStage
+	METHOD method_1_12149 (Lnet/minecraft/class_10799$class_1_1930;)Lnet/minecraft/class_1_1257;
+		ARG 0 paraqms
 	METHOD method_67886 getStatic ()Ljava/util/List;
 	CLASS class_1_1858 AdditiveVisualEffectParameters
 	CLASS class_1_1859 BeaconBeamParameters
@@ -233,3 +245,4 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	CLASS class_1_1870 TerrainParameters
 	CLASS class_1_1871 TextParameters
 	CLASS class_1_1872 WaterMaskParameters
+	CLASS class_1_1930 GuiParameters

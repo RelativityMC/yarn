@@ -1,5 +1,8 @@
 CLASS net/minecraft/class_1_894 net/minecraft/client/gl/GlFramebufferManager
 	FIELD field_1_6294 framebuffersByAttachment Lit/unimi/dsi/fastutil/objects/Object2IntMap;
+	FIELD field_1_10687 stateManager Lnet/minecraft/class_1_1267;
+	METHOD <init> (Lnet/minecraft/class_1_1267;)V
+		ARG 1 stateManager
 	METHOD method_1_5412 create (Lnet/minecraft/class_1_894$class_1_895;Lnet/minecraft/class_10874;Ljava/util/List;Lnet/minecraft/class_1_899;I)I
 		ARG 1 key
 		ARG 2 bufferManager

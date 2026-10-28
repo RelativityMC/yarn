@@ -1,0 +1,28 @@
+CLASS net/minecraft/class_1_1917 net/minecraft/client/gui/render/GuiLayer
+	FIELD field_1_12230 CROSSHAIR Lnet/minecraft/class_1_1917;
+	FIELD field_1_12231 DEFAULT Lnet/minecraft/class_1_1917;
+	FIELD field_1_12232 END_PORTAL Lnet/minecraft/class_1_1917;
+	FIELD field_1_12233 INVERT Lnet/minecraft/class_1_1917;
+	FIELD field_1_12234 MOJANG_LOGO Lnet/minecraft/class_1_1917;
+	FIELD field_1_12235 NAUSEA_OVERLAY Lnet/minecraft/class_1_1917;
+	FIELD field_1_12236 OPAQUE_TEXTURED_BACKGROUND Lnet/minecraft/class_1_1917;
+	FIELD field_1_12237 TEXT_GUI Lnet/minecraft/class_1_1917;
+	FIELD field_1_12238 TEXTURED Lnet/minecraft/class_1_1917;
+	FIELD field_1_12239 TEXTURED_PREMULTIPLIED_ALPHA Lnet/minecraft/class_1_1917;
+	FIELD field_1_12240 TEXT_GUI_GRAYSCALE Lnet/minecraft/class_1_1917;
+	FIELD field_1_12241 TEXT_HIGHLIGHT Lnet/minecraft/class_1_1917;
+	FIELD field_1_12242 VIGNETTE Lnet/minecraft/class_1_1917;
+	FIELD field_1_12243 pipeline Lnet/minecraft/class_1_1257;
+	FIELD field_1_12244 nextId I
+	FIELD field_1_12245 pipelineSupplier Ljava/util/function/Supplier;
+	FIELD field_1_12246 id I
+	FIELD field_1_12247 shuffleSeed I
+	METHOD <init> (Ljava/util/function/Supplier;)V
+		ARG 1 pipelineSupplier
+	METHOD method_1_12043 getSortKey ()I
+	METHOD method_1_12048 create (Ljava/util/function/Supplier;)Lnet/minecraft/class_1_1917;
+		ARG 0 pipelineSupplier
+	METHOD method_1_12049 create (Lnet/minecraft/class_1_1934;)Lnet/minecraft/class_1_1917;
+		ARG 0 variant
+	METHOD method_1_12050 getPipeline ()Lnet/minecraft/class_1_1257;
+	METHOD method_1_12051 shuffleRenderingOrder ()V

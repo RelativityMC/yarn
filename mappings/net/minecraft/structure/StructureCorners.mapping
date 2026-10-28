@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_1940 net/minecraft/structure/StructureCorners
+	FIELD field_1_12357 name Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+		ARG 3 name

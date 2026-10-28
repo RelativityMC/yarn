@@ -22,6 +22,7 @@ CLASS net/minecraft/class_1_1372 com/mojang/blaze3d/shaders/ShaderModule
 			METHOD method_1_9060 getName ()Ljava/lang/String;
 			METHOD method_1_9061 getResourceType ()I
 			METHOD method_1_9062 getType ()Lnet/minecraft/class_1_1372$class_1_1373$class_1_1376;
+			METHOD method_1_12086 getInputAttachmentIndex ()I
 		CLASS class_1_1375 Varying
 			METHOD method_1_9063 getDecoration (I)I
 				ARG 1 decoration

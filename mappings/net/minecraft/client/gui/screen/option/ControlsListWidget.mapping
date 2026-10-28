@@ -8,6 +8,9 @@ CLASS net/minecraft/class_459 net/minecraft/client/gui/screen/option/ControlsLis
 	METHOD method_49006 update ()V
 	METHOD method_49007 updateChildren ()V
 	CLASS class_460 CategoryEntry
+		FIELD field_62179 textWidget Lnet/minecraft/class_8019;
+		METHOD <init> (Lnet/minecraft/class_459;Lnet/minecraft/class_304$class_11900;)V
+			ARG 2 category
 	CLASS class_461 Entry
 		METHOD method_48269 update ()V
 	CLASS class_462 KeyBindingEntry

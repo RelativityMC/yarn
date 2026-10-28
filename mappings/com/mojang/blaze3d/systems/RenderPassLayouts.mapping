@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_1922 com/mojang/blaze3d/systems/RenderPassLayouts
+	FIELD field_1_12275 COLOR_AND_DEPTH Lnet/minecraft/class_1_1924;
+	FIELD field_1_12276 COLOR_ONLY Lnet/minecraft/class_1_1924;
+	FIELD field_1_12277 DEPTH_ONLY Lnet/minecraft/class_1_1924;
+	FIELD field_1_12278 OIT_ACCUMULATE Lnet/minecraft/class_1_1924;
+	FIELD field_1_12279 OIT_DEPTH_BOUNDS Lnet/minecraft/class_1_1924;
+	FIELD field_1_12280 OIT_TRANSMITTANCE Lnet/minecraft/class_1_1924;

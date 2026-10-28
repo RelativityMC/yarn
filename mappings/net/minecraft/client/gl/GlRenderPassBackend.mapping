@@ -7,6 +7,8 @@ CLASS net/minecraft/class_10866 net/minecraft/client/gl/GlRenderPassBackend
 	FIELD field_1_9438 scissorDirty Z
 	FIELD field_1_9566 pushedConstants Z
 	FIELD field_1_9567 pushConstantsBuffer Lnet/minecraft/class_1_1254;
+	FIELD field_1_12283 subpassIndex I
+	FIELD field_1_12284 layout Lnet/minecraft/class_1_1924;
 	FIELD field_57868 pipeline Lnet/minecraft/class_10867;
 	FIELD field_57869 vertexBuffers [Lnet/minecraft/class_1_1254;
 	FIELD field_57870 indexBuffer Lnet/minecraft/class_1_1211;
@@ -19,6 +21,7 @@ CLASS net/minecraft/class_10866 net/minecraft/client/gl/GlRenderPassBackend
 		ARG 1 commandEncoder
 		ARG 2 device
 		ARG 3 defaultScissorState
+		ARG 4 layout
 	METHOD method_70808 isScissorEnabled ()Z
 	METHOD method_70809 getScissorX ()I
 	METHOD method_70810 getScissorY ()I

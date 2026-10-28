@@ -1,0 +1,27 @@
+CLASS net/minecraft/class_1_1935 net/minecraft/world/gen/densityfunction/DomainWarpDensityFunction
+	FIELD field_1_12351 WARP_REGION_VOLUME_FACTOR_THRESHOLD_FOR_FALLBACK I
+	METHOD method_1_12178 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_12180 isWarpRegionTooBig (Lnet/minecraft/class_1_1441;IIIIII)Z
+		ARG 0 originalRegion
+		ARG 1 minOffsetX
+		ARG 2 minOffsetY
+		ARG 3 minOffsetZ
+		ARG 4 maxOffsetX
+		ARG 5 maxOffsetY
+		ARG 6 maxOffsetZ
+	METHOD method_1_12181 validate (Lnet/minecraft/class_1_1935;)Lcom/mojang/serialization/DataResult;
+		ARG 0 func
+	CLASS class_1_1936 TranslateSampler
+	CLASS class_1_1937 XZSampler
+		METHOD method_1_12182 fillFallback (Lnet/minecraft/class_1_1521;Lnet/minecraft/class_1_1516;[ILnet/minecraft/class_1_1441;)V
+			ARG 1 context
+			ARG 2 output
+			ARG 3 offsets
+			ARG 4 region
+	CLASS class_1_1938 XYZSampler
+		METHOD method_1_12183 sampleFallback (Lnet/minecraft/class_1_1521;Lnet/minecraft/class_1_1516;[ILnet/minecraft/class_1_1441;)V
+			ARG 1 context
+			ARG 2 output
+			ARG 3 offsets
+			ARG 4 region

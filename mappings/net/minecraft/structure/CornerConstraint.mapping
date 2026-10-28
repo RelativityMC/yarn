@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_1_1941 net/minecraft/structure/CornerConstraint
+	FIELD field_1_12358 CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_1_12187 test (Lnet/minecraft/class_3341;Lnet/minecraft/class_7138;)Z
+		ARG 1 box
+		ARG 2 noiseConfig
+	CLASS class_1_1942 DensityPredicate
+		FIELD field_1_12360 CODEC Lcom/mojang/serialization/Codec;
+		METHOD method_1_12188 getCorners (Lnet/minecraft/class_3341;Lnet/minecraft/class_1_1940;)Ljava/util/List;
+			ARG 0 box
+			ARG 1 corners
+		METHOD method_1_12189 (Ljava/util/List;Lnet/minecraft/class_2338;)V
+			ARG 1 pos
+		METHOD method_1_12190 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+		METHOD method_1_12191 (Lnet/minecraft/class_1_1941$class_1_1942;)Lcom/mojang/serialization/DataResult;
+			ARG 0 densityPredicate
+		METHOD method_1_12193 test (Lnet/minecraft/class_3341;Lnet/minecraft/class_7138;)Z
+			ARG 1 box
+			ARG 2 noiseConfig

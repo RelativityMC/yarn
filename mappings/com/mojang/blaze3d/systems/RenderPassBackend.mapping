@@ -60,3 +60,4 @@ CLASS net/minecraft/class_1_149 com/mojang/blaze3d/systems/RenderPassBackend
 		ARG 2 value
 	METHOD method_1_9273 pushConstants (Ljava/nio/ByteBuffer;)V
 		ARG 1 pushConstants
+	METHOD method_1_12138 advanceSubpass ()V

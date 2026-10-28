@@ -55,14 +55,19 @@ CLASS net/minecraft/class_1_1329 com/mojang/blaze3d/systems/CommandEncoder
 		ARG 1 description
 	METHOD method_1_7945 createRenderPass (Ljava/util/function/Supplier;Lnet/minecraft/class_1_1924;Lnet/minecraft/class_1_1330;Ljava/util/Optional;)Lnet/minecraft/class_1_1317;
 		ARG 1 labelGetter
+		ARG 2 layout
+		ARG 3 colorAttachment
 		ARG 4 clearColor
 	METHOD method_1_7946 createRenderPass (Ljava/util/function/Supplier;Lnet/minecraft/class_1_1924;Lnet/minecraft/class_1_1330;Ljava/util/Optional;Lnet/minecraft/class_1_1330;Ljava/util/OptionalDouble;)Lnet/minecraft/class_1_1317;
 		ARG 1 labelGetter
+		ARG 2 layout
+		ARG 3 colorAttachment
 		ARG 4 clearColor
 		ARG 5 depthAttachment
 		ARG 6 clearDepth
 	METHOD method_1_7947 createRenderPass (Ljava/util/function/Supplier;Lnet/minecraft/class_1_1924;Lnet/minecraft/class_1_1330;Ljava/util/Optional;Lnet/minecraft/class_1_1330;Ljava/util/OptionalDouble;Lnet/minecraft/class_1_1317$class_1_837;)Lnet/minecraft/class_1_1317;
 		ARG 1 labelGetter
+		ARG 2 layout
 		ARG 3 colorAttachment
 		ARG 4 clearColor
 		ARG 5 depthAttachment
@@ -85,3 +90,8 @@ CLASS net/minecraft/class_1_1329 com/mojang/blaze3d/systems/CommandEncoder
 		ARG 6 offsetY
 		ARG 7 width
 		ARG 8 height
+	METHOD method_1_12104 createRenderPass (Ljava/util/function/Supplier;Lnet/minecraft/class_1_1924;Lnet/minecraft/class_1_1330;[Lnet/minecraft/class_1_1330;)Lnet/minecraft/class_1_1317;
+		ARG 1 labelGetter
+		ARG 2 layout
+		ARG 3 attachmentTexture
+		ARG 4 moreAttachmentTextures

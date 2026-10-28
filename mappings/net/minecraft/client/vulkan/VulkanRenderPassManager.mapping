@@ -3,8 +3,23 @@ CLASS net/minecraft/class_1_1700 net/minecraft/client/vulkan/VulkanRenderPassMan
 	FIELD field_1_10683 renderPasses Lit/unimi/dsi/fastutil/objects/Object2ReferenceOpenHashMap;
 	METHOD <init> (Lnet/minecraft/class_1_679;)V
 		ARG 1 device
-	METHOD method_1_10728 createRenderPass (Lnet/minecraft/class_1_1924;Lnet/minecraft/class_1_1700$class_1_1929;)J
+	METHOD method_1_10728 getOrCreateRenderPass (Lnet/minecraft/class_1_1924;Lnet/minecraft/class_1_1700$class_1_1929;)J
+		ARG 1 layout
+		ARG 2 opMasks
 	METHOD method_1_10730 getRenderPass (Lnet/minecraft/class_1_1924;Ljava/util/List;)J
-	METHOD method_1_10731 getOrCreateRenderPass (Lnet/minecraft/class_1_1924;)J
+		ARG 1 layout
+		ARG 2 attachments
+	METHOD method_1_10731 getRenderPass (Lnet/minecraft/class_1_1924;)J
+		ARG 1 layout
 	METHOD method_1_10732 (J)V
 		ARG 1 renderPass
+	METHOD method_1_12139 (Lit/unimi/dsi/fastutil/objects/Object2LongMap;)V
+		ARG 1 renderPasses
+	METHOD method_1_12140 (Ljava/lang/Object;)Lit/unimi/dsi/fastutil/objects/Object2LongMap;
+		ARG 0 layout1
+	CLASS class_1_1929 OpMasks
+		FIELD field_1_12319 EMPTY Lnet/minecraft/class_1_1700$class_1_1929;
+		METHOD method_1_12141 getLoadOp (I)I
+			ARG 1 attachmentIndex
+		METHOD method_1_12142 getStoreOp (I)I
+			ARG 1 attachmentIndex

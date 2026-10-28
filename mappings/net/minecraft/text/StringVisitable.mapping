@@ -1,10 +1,27 @@
 CLASS net/minecraft/class_5348 net/minecraft/text/StringVisitable
 	COMMENT An object that can supply strings to a visitor,
 	COMMENT with or without a style context.
+	FIELD field_1_12258 MAX_STRINGS_TO_VISIT I
 	FIELD field_25309 TERMINATE_VISIT Ljava/util/Optional;
 		COMMENT Convenience object indicating the termination of a string visit.
 	FIELD field_25310 EMPTY Lnet/minecraft/class_5348;
 		COMMENT An empty visitable that does not call the visitors.
+	METHOD method_1_12071 trimToLength (I)Ljava/lang/String;
+		ARG 1 maxLength
+	METHOD method_1_12072 (ILjava/lang/StringBuilder;Ljava/lang/String;)Ljava/util/Optional;
+		ARG 2 string
+	METHOD method_1_12073 visitLimited (Lnet/minecraft/class_5348$class_5245;Ljava/lang/Object;)Ljava/util/Optional;
+		ARG 1 visitor
+		ARG 2 fallback
+	METHOD method_1_12074 visitLimited (Lnet/minecraft/class_5348$class_5246;Ljava/lang/Object;Lnet/minecraft/class_2583;)Ljava/util/Optional;
+		ARG 1 styledVisitor
+		ARG 2 fallback
+		ARG 3 style
+	METHOD method_1_12075 visitLimited (Lnet/minecraft/class_5348$class_5245;)V
+		ARG 1 visitor
+	METHOD method_1_12076 visitLimited (Lnet/minecraft/class_5348$class_5246;Lnet/minecraft/class_2583;)V
+		ARG 1 styledVisitor
+		ARG 2 style
 	METHOD method_27657 visit (Lnet/minecraft/class_5348$class_5245;)Ljava/util/Optional;
 		COMMENT Supplies this visitable's literal content to the visitor.
 		COMMENT
@@ -52,6 +69,11 @@ CLASS net/minecraft/class_5348 net/minecraft/text/StringVisitable
 			COMMENT @return {@code Optional.empty()} to continue, a non-empty result to terminate
 			ARG 1 asString
 				COMMENT the literal string
+		METHOD method_1_12077 limit (ILjava/lang/Object;)Lnet/minecraft/class_5348$class_5245;
+			ARG 1 limit
+			ARG 2 fallback
+		CLASS 1 1
+			FIELD field_1_12259 stringsVisited I
 	CLASS class_5246 StyledVisitor
 		COMMENT A visitor for string content and a contextual {@link Style}.
 		METHOD method_1_74 accept (Lnet/minecraft/class_2583;Ljava/lang/String;)Ljava/util/Optional;
@@ -69,3 +91,8 @@ CLASS net/minecraft/class_5348 net/minecraft/text/StringVisitable
 			ARG 1 style
 			ARG 2 asString
 				COMMENT the literal string
+		METHOD method_1_12078 limit (ILjava/lang/Object;)Lnet/minecraft/class_5348$class_5246;
+			ARG 1 limit
+			ARG 2 fallback
+		CLASS 1 1
+			FIELD field_1_12263 stringsVisited I

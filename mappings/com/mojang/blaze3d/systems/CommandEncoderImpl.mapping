@@ -8,6 +8,7 @@ CLASS net/minecraft/class_1_1256 com/mojang/blaze3d/systems/CommandEncoderImpl
 	FIELD field_1_8625 profiler Lnet/minecraft/class_1_708;
 	METHOD <init> (Lnet/minecraft/class_1_708;Lnet/minecraft/class_1_1209;Lnet/minecraft/class_1_154;)V
 		ARG 1 profiler
+		ARG 2 device
 		ARG 3 backend
 	METHOD method_1_7933 getBackend ()Lnet/minecraft/class_1_154;
 	METHOD method_1_7934 (Lnet/minecraft/class_1_1318;Lorg/joml/Vector4fc;Lnet/minecraft/class_1_1318;D)V

@@ -48,6 +48,7 @@ CLASS net/minecraft/class_3898 net/minecraft/server/world/ServerChunkLoadingMana
 		ARG 12 dsync
 	METHOD method_1_6278 isTrackingEntity (I)Z
 		ARG 1 entityId
+	METHOD method_1_12041 updateEntityTrackers ()V
 	METHOD method_17212 getLightingProvider ()Lnet/minecraft/class_3227;
 	METHOD method_17214 setViewDistance (I)V
 		ARG 1 watchDistance
@@ -331,6 +332,7 @@ CLASS net/minecraft/class_3898 net/minecraft/server/world/ServerChunkLoadingMana
 		COMMENT entity's network ID.
 		COMMENT
 		COMMENT @see ServerChunkLoadingManager#entityTrackers
+		FIELD field_1_12229 dirty Z
 		FIELD field_18246 entry Lnet/minecraft/class_3231;
 		FIELD field_18247 entity Lnet/minecraft/class_1297;
 		FIELD field_18248 maxDistance I
@@ -347,6 +349,7 @@ CLASS net/minecraft/class_3898 net/minecraft/server/world/ServerChunkLoadingMana
 			ARG 5 alwaysUpdateVelocity
 		METHOD equals (Ljava/lang/Object;)Z
 			ARG 1 o
+		METHOD method_1_12042 updateIfDirty ()V
 		METHOD method_18728 stopTracking ()V
 		METHOD method_18729 updateTrackedStatus (Ljava/util/List;)V
 			COMMENT Updates the tracked status of this tracker's entity for the given players.

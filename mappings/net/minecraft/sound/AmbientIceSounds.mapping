@@ -3,10 +3,10 @@ CLASS net/minecraft/class_1_1886 net/minecraft/sound/AmbientIceSounds
 	FIELD field_1_12131 ICE_REQUIRED_RANGE I
 	METHOD method_1_11970 (Lnet/minecraft/class_2680;)Z
 		ARG 0 state
-	METHOD method_1_11971 emitParticles (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)V
+	METHOD method_1_11971 tick (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)V
 		ARG 0 world
 		ARG 1 pos
 		ARG 2 random
-	METHOD method_1_11972 canEmitParticles (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)Z
+	METHOD method_1_11972 canPlaySound (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)Z
 		ARG 0 world
 		ARG 1 pos

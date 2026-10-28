@@ -32,6 +32,7 @@ CLASS net/minecraft/class_454 net/minecraft/client/gui/screen/advancement/Advanc
 	METHOD method_1_9805 copyPositioning (Lnet/minecraft/class_454;)V
 		ARG 1 source
 	METHOD method_1_9806 getRootEntry ()Lnet/minecraft/class_8779;
+	METHOD method_1_12163 initialize ()V
 	METHOD method_2308 getWidget (Lnet/minecraft/class_8779;)Lnet/minecraft/class_456;
 		ARG 1 advancement
 	METHOD method_2309 getTitle ()Lnet/minecraft/class_2561;

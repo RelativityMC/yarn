@@ -40,6 +40,7 @@ CLASS net/minecraft/class_5225 net/minecraft/client/font/TextHandler
 		ARG 2 width
 		ARG 3 style
 	METHOD method_27492 (Lorg/apache/commons/lang3/mutable/MutableFloat;ILnet/minecraft/class_2583;I)Z
+		ARG 2 index
 		ARG 3 style
 		ARG 4 codePoint
 	METHOD method_27493 (Lorg/apache/commons/lang3/mutable/MutableFloat;ILorg/apache/commons/lang3/mutable/MutableInt;ILnet/minecraft/class_2583;I)Z
@@ -61,6 +62,7 @@ CLASS net/minecraft/class_5225 net/minecraft/client/font/TextHandler
 		ARG 2 maxWidth
 		ARG 3 style
 	METHOD method_27496 (Lorg/apache/commons/lang3/mutable/MutableFloat;ILnet/minecraft/class_2583;I)Z
+		ARG 2 index
 		ARG 3 style
 		ARG 4 codePoint
 	METHOD method_27497 trimToWidthBackwards (Ljava/lang/String;ILnet/minecraft/class_2583;)Ljava/lang/String;
@@ -86,7 +88,9 @@ CLASS net/minecraft/class_5225 net/minecraft/client/font/TextHandler
 		ARG 1 text
 	METHOD method_30878 (Ljava/util/List;Lnet/minecraft/class_5348;Ljava/lang/Boolean;)V
 		ARG 1 text
+		ARG 2 continuation
 	METHOD method_30879 (Lorg/apache/commons/lang3/mutable/MutableFloat;ILnet/minecraft/class_2583;I)Z
+		ARG 2 index
 		ARG 3 style
 		ARG 4 codePoint
 	METHOD method_35717 getEndingIndex (Ljava/lang/String;ILnet/minecraft/class_2583;)I
@@ -94,14 +98,39 @@ CLASS net/minecraft/class_5225 net/minecraft/client/font/TextHandler
 		ARG 2 maxWidth
 		ARG 3 style
 	CLASS 1 1
+		FIELD field_1_12224 stringsVisitegd I
 		FIELD field_24219 collector Lnet/minecraft/class_5222;
 	CLASS class_5226 LineWrappingCollector
+		FIELD field_1_12225 currentPart Lnet/minecraft/class_5225$class_5345;
+			COMMENT Null if the current part is split over multiple lines.
+		FIELD field_1_12226 currentStringOffset I
+		FIELD field_1_12227 currentStyle Lnet/minecraft/class_2583;
 		FIELD field_24220 parts Ljava/util/Deque;
-		FIELD field_24221 joined Ljava/lang/String;
+		FIELD field_24221 currentString Ljava/lang/String;
+		METHOD <init> (Ljava/util/Deque;)V
+			ARG 1 parts
+		METHOD method_1_12033 splitCurrentPart (ILnet/minecraft/class_2583;)V
+			ARG 1 offset
+			ARG 2 style
+		METHOD method_1_12034 finishCurrentPart ()V
+		METHOD method_1_12035 dequeueNextPart ()V
+		METHOD method_1_12036 offsetToNextLine (Lnet/minecraft/class_5225$class_5227;Lnet/minecraft/class_2583;)Z
+			ARG 1 visitor
+			ARG 2 style
+		METHOD method_1_12037 addCurrentPartRemainder (Lnet/minecraft/class_5222;)V
+			ARG 1 collector
+		METHOD method_1_12038 addCurrentPartSubstring (Lnet/minecraft/class_5222;I)V
+			ARG 1 collector
+			ARG 2 currentStringLimit
 		METHOD method_27499 collectRemainders (Lnet/minecraft/class_5222;)V
+			ARG 1 collector
 		METHOD method_27501 collectLine (IILnet/minecraft/class_2583;Lnet/minecraft/class_5222;)V
+			ARG 1 endIndex
+			ARG 2 terminatorCount
 			ARG 3 style
+			ARG 4 collector
 	CLASS class_5227 LineBreakingVisitor
+		FIELD field_1_12228 breakChar I
 		FIELD field_24223 maxWidth F
 		FIELD field_24224 endIndex I
 		FIELD field_24225 endStyle Lnet/minecraft/class_2583;
@@ -112,10 +141,15 @@ CLASS net/minecraft/class_5225 net/minecraft/client/font/TextHandler
 		FIELD field_24231 startOffset I
 		METHOD <init> (Lnet/minecraft/class_5225;F)V
 			ARG 2 maxWidth
+		METHOD method_1_12039 getBreakChar ()I
+		METHOD method_1_12040 nextLine ()V
 		METHOD method_27505 getEndingIndex ()I
 		METHOD method_27506 offset (I)V
 			ARG 1 extraOffset
 		METHOD method_27507 breakLine (IILnet/minecraft/class_2583;)Z
+			ARG 1 endIndex
+			ARG 2 breakChar
+			ARG 3 endStyle
 		METHOD method_27508 getEndingStyle ()Lnet/minecraft/class_2583;
 	CLASS class_5229 LineWrappingConsumer
 		COMMENT A consumer of the line-breaking information.

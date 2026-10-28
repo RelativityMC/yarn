@@ -11,6 +11,9 @@ CLASS net/minecraft/class_1_659 net/minecraft/client/gui/GuiManager
 	FIELD field_1_3272 tutorialToast Lnet/minecraft/class_372;
 	FIELD field_1_3273 splashTextSupplier Lnet/minecraft/class_4008;
 	FIELD field_1_3274 toastManager Lnet/minecraft/class_374;
+	FIELD field_1_10048 CURRENT_SCREEN_SECTION_CATEGORY Lcom/mojang/jtracy/SectionCategory;
+	FIELD field_1_10049 currentScreenSection Lcom/mojang/jtracy/Section;
+	FIELD field_1_10906 OTHER_PLAYERS_NOT_AVAILABLE_TEXT Lnet/minecraft/class_2561;
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_329;Lnet/minecraft/class_11246;)V
 		ARG 1 client
 		ARG 2 hud
@@ -61,6 +64,7 @@ CLASS net/minecraft/class_1_659 net/minecraft/client/gui/GuiManager
 	METHOD method_1_3925 tick ()V
 	METHOD method_1_3926 getToastManager ()Lnet/minecraft/class_374;
 	METHOD method_1_3927 updateElements (Lnet/minecraft/class_9779;)V
+		ARG 1 renderTickCounter
 	CLASS 1 1
 		FIELD field_1_3275 index I
 		METHOD method_1_3928 draw (Lnet/minecraft/class_12236;Z)V

@@ -13,3 +13,13 @@ CLASS net/minecraft/class_1_1400 net/minecraft/world/gen/densityfunction/Gradien
 			ARG 2 region
 	CLASS class_1_1591 MirroredRepeatSampler
 	CLASS class_1_1592 RepeatSampler
+	CLASS class_1_1943 Coordinate
+		FIELD field_1_12361 CODEC Lcom/mojang/serialization/Codec;
+		METHOD method_1_12195 (Lnet/minecraft/class_1_1400$class_1_1943;)Lcom/mojang/datafixers/util/Either;
+			ARG 0 coordinate
+		METHOD method_1_12196 getValue (Lnet/minecraft/class_6910$class_1_1527;)I
+			ARG 1 context
+		CLASS class_1_1944 Absolute
+			FIELD field_1_12362 CODEC Lcom/mojang/serialization/Codec;
+		CLASS class_1_1945 Anchor
+			FIELD field_1_12363 CODEC Lcom/mojang/serialization/Codec;

@@ -1,0 +1,107 @@
+CLASS net/minecraft/class_1_1924 com/mojang/blaze3d/systems/RenderPassLayout
+	FIELD field_1_12293 MISSING I
+	FIELD field_1_12294 MAX_ATTACHMENTS I
+	FIELD field_1_12295 MAX_SUBPASSES I
+	FIELD field_1_12296 MAX_INPUT_ATTACHMENTS I
+	FIELD field_1_12297 MAX_COLOR_ATTACHMENTS I
+	FIELD field_1_12298 attachmentFormats Ljava/util/List;
+	FIELD field_1_12299 hash I
+	FIELD field_1_12300 serialized Lit/unimi/dsi/fastutil/bytes/ByteList;
+	FIELD field_1_12301 label Ljava/lang/String;
+	FIELD field_1_12302 subpasses Ljava/util/List;
+	METHOD <init> (Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
+		ARG 1 label
+		ARG 2 attachments
+		ARG 3 subpasses
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other
+	METHOD method_1_12109 getAttachmentFormats ()Ljava/util/List;
+	METHOD method_1_12110 builder (Ljava/lang/String;)Lnet/minecraft/class_1_1924$class_1_1925;
+		ARG 0 label
+	METHOD method_1_12111 getLabel ()Ljava/lang/String;
+	METHOD method_1_12112 withColorAttachments (Ljava/lang/String;Lnet/minecraft/class_1_658;I)Lnet/minecraft/class_1_1924;
+		ARG 0 label
+		ARG 1 attachmentFormat
+		ARG 2 attachmentCount
+	METHOD method_1_12113 withColorAndDepthAttachments (Ljava/lang/String;Lnet/minecraft/class_1_658;ILnet/minecraft/class_1_658;)Lnet/minecraft/class_1_1924;
+		ARG 0 label
+		ARG 1 colorAttachmentFormat
+		ARG 2 colorAttachmentCount
+		ARG 3 depthAttachmentFormat
+	METHOD method_1_12114 create (Ljava/lang/String;Lnet/minecraft/class_1_658;[Lnet/minecraft/class_1_658;)Lnet/minecraft/class_1_1924;
+		ARG 0 label
+		ARG 1 firstAttachment
+		ARG 2 moreAttachments
+	METHOD method_1_12115 create (Ljava/lang/String;[Lnet/minecraft/class_1_658;)Lnet/minecraft/class_1_1924;
+		ARG 0 label
+		ARG 1 attachments
+	METHOD method_1_12116 getSubpass (I)Lnet/minecraft/class_1_1924$class_1_1928;
+		ARG 1 subpassIndex
+	METHOD method_1_12117 getSubpasses ()Ljava/util/List;
+	CLASS class_1_1925 Builder
+		FIELD field_1_12303 attachments Ljava/util/List;
+		FIELD field_1_12304 label Ljava/lang/String;
+		FIELD field_1_12305 subpasses Ljava/util/List;
+		METHOD <init> (Ljava/lang/String;)V
+			ARG 1 label
+		METHOD method_1_12118 build ()Lnet/minecraft/class_1_1924;
+		METHOD method_1_12119 addAttachment (Lnet/minecraft/class_1_658;)Lnet/minecraft/class_1_1924$class_1_1925$class_1_1926;
+			ARG 1 format
+		METHOD method_1_12120 addAttachments (Lnet/minecraft/class_1_658;I)Ljava/util/List;
+			ARG 1 format
+			ARG 2 count
+		METHOD method_1_12121 addSubpass (Ljava/lang/String;)Lnet/minecraft/class_1_1924$class_1_1925$class_1_1927;
+			ARG 1 label
+		CLASS class_1_1926 Attachment
+		CLASS class_1_1927 Subpass
+			FIELD field_1_12306 colorAttachments Lit/unimi/dsi/fastutil/objects/ReferenceArrayList;
+			FIELD field_1_12307 depthAttachment Lnet/minecraft/class_1_1924$class_1_1925$class_1_1926;
+			FIELD field_1_12308 index I
+			FIELD field_1_12309 inputAttachments Lit/unimi/dsi/fastutil/objects/ReferenceArrayList;
+			FIELD field_1_12310 label Ljava/lang/String;
+			METHOD <init> (Lnet/minecraft/class_1_1924$class_1_1925;Ljava/lang/String;I)V
+				ARG 2 label
+				ARG 3 index
+			METHOD method_1_12122 isAttachmentUsed (Lnet/minecraft/class_1_1924$class_1_1925$class_1_1926;)Z
+				ARG 1 attachment
+			METHOD method_1_12123 getIndex ()I
+			METHOD method_1_12124 addColorAttachment (Lnet/minecraft/class_1_1924$class_1_1925$class_1_1926;)Lnet/minecraft/class_1_1924$class_1_1925$class_1_1927;
+				ARG 1 attachment
+			METHOD method_1_12125 setColorAttachment (Lnet/minecraft/class_1_1924$class_1_1925$class_1_1926;I)Lnet/minecraft/class_1_1924$class_1_1925$class_1_1927;
+				ARG 1 attachment
+				ARG 2 index
+			METHOD method_1_12126 addColorAttachments (Ljava/util/List;)Lnet/minecraft/class_1_1924$class_1_1925$class_1_1927;
+				ARG 1 attachments
+			METHOD method_1_12127 setDepthAttachment (Lnet/minecraft/class_1_1924$class_1_1925$class_1_1926;)Lnet/minecraft/class_1_1924$class_1_1925$class_1_1927;
+				ARG 1 attachment
+			METHOD method_1_12128 addInputAttachment (Lnet/minecraft/class_1_1924$class_1_1925$class_1_1926;)Lnet/minecraft/class_1_1924$class_1_1925$class_1_1927;
+				ARG 1 attachment
+			METHOD method_1_12129 setInputAttachment (Lnet/minecraft/class_1_1924$class_1_1925$class_1_1926;I)Lnet/minecraft/class_1_1924$class_1_1925$class_1_1927;
+				ARG 1 attachment
+				ARG 2 index
+			METHOD method_1_12130 addInputAttachments (Ljava/util/List;)Lnet/minecraft/class_1_1924$class_1_1925$class_1_1927;
+				ARG 1 attachments
+	CLASS class_1_1928 Subpass
+		FIELD field_1_12312 colorAttachmentIndices Lit/unimi/dsi/fastutil/bytes/ByteList;
+		FIELD field_1_12313 depthAttachmentIndex I
+		FIELD field_1_12314 index I
+		FIELD field_1_12315 inputAttachmentIndices Lit/unimi/dsi/fastutil/bytes/ByteList;
+		FIELD field_1_12316 label Ljava/lang/String;
+		FIELD field_1_12317 parent Lnet/minecraft/class_1_1924;
+		METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_1_1924;ILit/unimi/dsi/fastutil/bytes/ByteList;Lit/unimi/dsi/fastutil/bytes/ByteList;I)V
+			ARG 1 label
+			ARG 2 parent
+			ARG 3 index
+			ARG 4 inputAttachmentIndices
+			ARG 5 colorAttachmentIndices
+			ARG 6 depthAttachmentIndex
+		METHOD equals (Ljava/lang/Object;)Z
+			ARG 1 other
+		METHOD method_1_12131 write (Lit/unimi/dsi/fastutil/bytes/ByteArrayList;)V
+			ARG 1 bytesOut
+		METHOD method_1_12132 getColorAttachmentIndices ()Lit/unimi/dsi/fastutil/bytes/ByteList;
+		METHOD method_1_12133 getDepthAttachmentIndex ()I
+		METHOD method_1_12134 getIndex ()I
+		METHOD method_1_12135 getInputAttaqchmentIndices ()Lit/unimi/dsi/fastutil/bytes/ByteList;
+		METHOD method_1_12136 getLabel ()Ljava/lang/String;
+		METHOD method_1_12137 getParent ()Lnet/minecraft/class_1_1924;

@@ -1,5 +1,10 @@
 CLASS net/minecraft/class_12180 net/minecraft/world/debug/gizmo/GizmoDrawing
 	FIELD field_63656 CURRENT_GIZMO_COLLECTOR Ljava/lang/ThreadLocal;
+	METHOD method_1_12023 circle (Lnet/minecraft/class_243;FLnet/minecraft/class_12173$class_1_1914;Lnet/minecraft/class_12179;)Lnet/minecraft/class_12178;
+		ARG 0 pos
+		ARG 1 radius
+		ARG 2 plane
+		ARG 3 style
 	METHOD method_75540 entityLabel (Lnet/minecraft/class_1297;ILjava/lang/String;IF)Lnet/minecraft/class_12178;
 		ARG 0 entity
 		ARG 1 yOffset

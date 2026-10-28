@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_1939 net/minecraft/sound/AmbientIceCrystalSounds
+	FIELD field_1_12352 SOUND_CHANCE_PER_TICK_DENOMINATOR I
+	METHOD method_1_12184 tick (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)V
+		ARG 0 world
+		ARG 1 pos
+		ARG 2 random
+	METHOD method_1_12185 canPlaySound (Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)Z
+		ARG 0 world
+		ARG 1 pos

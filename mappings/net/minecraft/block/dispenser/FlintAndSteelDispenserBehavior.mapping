@@ -2,3 +2,11 @@ CLASS net/minecraft/class_1_879 net/minecraft/block/dispenser/FlintAndSteelDispe
 	METHOD method_1_5328 tryIgniteSulfurCube (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;)Z
 		ARG 0 world
 		ARG 1 pos
+	METHOD method_1_11954 tryIgnite (Lnet/minecraft/class_1799;Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;Lnet/minecraft/class_2680;)Z
+		ARG 0 stack
+		ARG 1 world
+		ARG 2 facingPos
+		ARG 3 facing
+		ARG 4 facingState
+	METHOD method_66899 (Lnet/minecraft/class_1799;)V
+		ARG 0 brokenStack

@@ -86,6 +86,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	FIELD field_1_6915 bounced Z
 	FIELD field_1_9530 INVULNERABLE_TIME_KEY Ljava/lang/String;
 	FIELD field_1_9837 positionInterpolator Lnet/minecraft/class_1_1451;
+	FIELD field_1_12223 ticksUntilNextExtinguishSound I
 	FIELD field_5951 ridingCooldown I
 	FIELD field_5952 onGround Z
 	FIELD field_5953 firstUpdate Z
@@ -300,7 +301,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_1_9761 onSetNbt ()V
 		COMMENT Called when the entity’s NBT is modified through commands.
 	METHOD method_1_9864 getInvulnerableTime ()I
-	METHOD method_1_9865 areFeetSubmergedInFloatableFluid ()Z
+	METHOD method_1_9865 isInFloatableFluid ()Z
 	METHOD method_1_10226 shouldProcessProjectileDeflection (Z)Z
 		ARG 1 damageSucceeded
 	METHOD method_1_10523 addVelocityInternal (DDD)V
@@ -323,11 +324,18 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 1 fluid
 	METHOD method_1_11733 playSound (Lnet/minecraft/class_6880;)V
 		ARG 1 sound
+	METHOD method_1_12029 isInSwimmableFluid ()Z
+	METHOD method_1_12031 handleFall (DZLnet/minecraft/class_2680;Lnet/minecraft/class_2338;)V
+		ARG 1 movementY
+		ARG 3 onGround
+		ARG 4 landingBlockState
+		ARG 5 landingPos
 	METHOD method_5622 onBlockCollision (Lnet/minecraft/class_2680;Ljava/util/function/BooleanSupplier;)V
 		COMMENT Called when this entity's collision box intersects {@code state}.
 		COMMENT
 		COMMENT @see net.minecraft.block.AbstractBlock#onEntityCollision
 		ARG 1 state
+		ARG 2 collides
 	METHOD method_5623 fall (ZLnet/minecraft/class_2680;Lnet/minecraft/class_2338;)V
 		COMMENT Called when the entity falls. Flying mobs should override this to do nothing.
 		COMMENT
@@ -2289,6 +2297,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 1 onGround
 		ARG 2 movement
 	METHOD method_65942 handleFall (Lnet/minecraft/class_243;Z)V
+		ARG 1 movement
 		ARG 2 onGround
 	METHOD method_66233 createInterpolator ()Lnet/minecraft/class_1_1451;
 	METHOD method_66245 isInterpolating ()Z

@@ -1,0 +1,17 @@
+CLASS net/minecraft/class_1_1933 net/minecraft/datafixer/fix/DefaultSoundsInConsumableAndEquippableComponentsFix
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;)V
+		ARG 1 outputSchema
+	METHOD method_1_12166 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 1 components
+	METHOD method_1_12167 (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 0 equippableTyped
+	METHOD method_1_12168 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 equippable
+	METHOD method_1_12169 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 remainder
+	METHOD method_1_12170 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 consumable
+	METHOD method_1_12171 addDefaultValue (Lcom/mojang/serialization/Dynamic;Ljava/lang/String;Ljava/lang/String;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 equippable
+		ARG 1 key
+		ARG 2 defaultValue

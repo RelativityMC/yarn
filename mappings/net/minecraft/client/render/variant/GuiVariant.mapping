@@ -1,0 +1,13 @@
+CLASS net/minecraft/class_1_1934 net/minecraft/client/render/variant/GuiVariant
+	FIELD field_1_12338 CROSSHAIR Lnet/minecraft/class_1_1934;
+	FIELD field_1_12339 DEFAULT Lnet/minecraft/class_1_1934;
+	FIELD field_1_12340 INVERT Lnet/minecraft/class_1_1934;
+	FIELD field_1_12341 MOJANG_LOGO Lnet/minecraft/class_1_1934;
+	FIELD field_1_12342 NAUSEA_OVERLAY Lnet/minecraft/class_1_1934;
+	FIELD field_1_12343 OPAQUE_TEXTURED_BACKGROUND Lnet/minecraft/class_1_1934;
+	FIELD field_1_12344 TEXTURED Lnet/minecraft/class_1_1934;
+	FIELD field_1_12345 TEXTURED_PREMULTIPLIED_ALPHA Lnet/minecraft/class_1_1934;
+	FIELD field_1_12346 TEXT_HIGHLIGHT Lnet/minecraft/class_1_1934;
+	FIELD field_1_12347 VALUES Lnet/minecraft/class_1_1883;
+	FIELD field_1_12348 VIGNETTE Lnet/minecraft/class_1_1934;
+	METHOD method_1_12175 values ()Ljava/util/List;

@@ -90,6 +90,13 @@ CLASS net/minecraft/class_3222 net/minecraft/server/network/ServerPlayerEntity
 	METHOD method_1_7646 removePostEffect (Lnet/minecraft/class_2960;)Z
 		ARG 1 effect
 	METHOD method_1_7647 sendPostEffectsPacket ()V
+	METHOD method_1_12068 handleFall (Lnet/minecraft/class_243;)V
+		ARG 1 lastPos
+	METHOD method_1_12069 isInstantaneousPortal (Lnet/minecraft/class_2680;)Z
+		ARG 1 state
+	METHOD method_1_12070 (Lnet/minecraft/class_243;Lnet/minecraft/class_243;Lnet/minecraft/class_2338;I)Z
+		ARG 3 pos
+		ARG 4 version
 	METHOD method_7333 lockRecipes (Ljava/util/Collection;)I
 		ARG 1 recipes
 	METHOD method_7335 unlockRecipes (Ljava/util/List;)V

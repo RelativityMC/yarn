@@ -73,7 +73,15 @@ CLASS net/minecraft/class_1_1317 com/mojang/blaze3d/systems/RenderPass
 		ARG 2 index
 	METHOD method_1_9202 pushConstants (Ljava/nio/ByteBuffer;)V
 		ARG 1 pushConstants
+	METHOD method_1_12088 getActiveSubpass ()Lnet/minecraft/class_1_1924$class_1_1928;
+	METHOD method_1_12089 getLayout ()Lnet/minecraft/class_1_1924;
+	METHOD method_1_12090 advanceSubpass ()V
+	METHOD method_1_12091 setInputAttachment (Ljava/lang/String;Lnet/minecraft/class_1_1330;)V
+		ARG 1 name
+		ARG 2 textureView
 	CLASS class_1_837 RenderArea
+		METHOD <init> (Lnet/minecraft/class_1_1330;)V
+			ARG 1 textureView
 		METHOD method_1_5116 coversEntirely (Lnet/minecraft/class_1_1330;)Z
 			ARG 1 textureView
 	CLASS class_10884 RenderObject

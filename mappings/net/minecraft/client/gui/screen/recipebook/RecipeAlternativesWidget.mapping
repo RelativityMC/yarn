@@ -29,12 +29,12 @@ CLASS net/minecraft/class_508 net/minecraft/client/gui/screen/recipebook/RecipeA
 		FIELD field_3114 recipeId Lnet/minecraft/class_10298;
 		FIELD field_3115 craftable Z
 		FIELD field_52834 inputSlots Ljava/util/List;
-		METHOD <init> (Lnet/minecraft/class_508;IILnet/minecraft/class_10298;ZLjava/util/List;)V
-			ARG 2 x
-			ARG 3 y
-			ARG 4 recipeId
-			ARG 5 craftable
-			ARG 6 inputSlots
+		METHOD <init> (IILnet/minecraft/class_10298;ZLjava/util/List;Lnet/minecraft/class_9938;)V
+			ARG 1 x
+			ARG 2 y
+			ARG 3 recipeId
+			ARG 4 craftable
+			ARG 5 inputSlots
 		METHOD method_62039 getOverlayTexture (Z)Lnet/minecraft/class_2960;
 			ARG 1 enabled
 		METHOD method_62040 slot (IILjava/util/List;)Lnet/minecraft/class_508$class_509$class_510;
@@ -53,37 +53,28 @@ CLASS net/minecraft/class_508 net/minecraft/client/gui/screen/recipebook/RecipeA
 			METHOD method_62041 get (I)Lnet/minecraft/class_1799;
 				ARG 1 index
 	CLASS class_511 FurnaceAlternativeButtonWidget
-		FIELD field_52835 FURNACE_OVERLAY Lnet/minecraft/class_2960;
-		FIELD field_52836 FURNACE_OVERLAY_HIGHLIGHTED Lnet/minecraft/class_2960;
-		FIELD field_52837 FURNACE_OVERLAY_DISABLED Lnet/minecraft/class_2960;
-		FIELD field_52838 FURNACE_OVERLAY_DISABLED_HIGHLIGHTED Lnet/minecraft/class_2960;
-		METHOD <init> (Lnet/minecraft/class_508;IILnet/minecraft/class_10298;Lnet/minecraft/class_10295;Lnet/minecraft/class_10352;Z)V
-			ARG 2 x
-			ARG 3 y
-			ARG 4 recipeId
-			ARG 5 display
-			ARG 6 context
-			ARG 7 craftable
+		METHOD <init> (IILnet/minecraft/class_10298;Lnet/minecraft/class_10295;Lnet/minecraft/class_10352;ZLnet/minecraft/class_9938;)V
+			ARG 1 x
+			ARG 2 y
+			ARG 3 recipeId
+			ARG 4 display
+			ARG 5 context
+			ARG 6 craftable
 		METHOD method_2619 alignRecipe (Lnet/minecraft/class_10295;Lnet/minecraft/class_10352;)Ljava/util/List;
 			ARG 0 display
 			ARG 1 context
 	CLASS class_9936 CraftingAlternativeButtonWidget
-		FIELD field_52830 CRAFTING_OVERLAY Lnet/minecraft/class_2960;
-		FIELD field_52831 CRAFTING_OVERLAY_HIGHLIGHTED Lnet/minecraft/class_2960;
-		FIELD field_52832 CRAFTING_OVERLAY_DISABLED Lnet/minecraft/class_2960;
-		FIELD field_52833 CRAFTING_OVERLAY_DISABLED_HIGHLIGHTED Lnet/minecraft/class_2960;
-		METHOD <init> (Lnet/minecraft/class_508;IILnet/minecraft/class_10298;Lnet/minecraft/class_10295;Lnet/minecraft/class_10352;Z)V
-			ARG 2 x
-			ARG 3 y
-			ARG 4 recipeId
-			ARG 5 display
-			ARG 6 context
-			ARG 7 craftable
+		METHOD <init> (IILnet/minecraft/class_10298;Lnet/minecraft/class_10295;Lnet/minecraft/class_10352;ZLnet/minecraft/class_9938;)V
+			ARG 1 x
+			ARG 2 y
+			ARG 3 recipeId
+			ARG 4 display
+			ARG 5 context
+			ARG 6 craftable
 		METHOD method_62036 collectInputSlots (Lnet/minecraft/class_10295;Lnet/minecraft/class_10352;)Ljava/util/List;
 			ARG 0 display
 			ARG 1 context
 		METHOD method_62037 (Lnet/minecraft/class_10352;Ljava/util/List;Lnet/minecraft/class_10302;III)V
 			ARG 2 slot
-			ARG 3 index
 			ARG 4 x
 			ARG 5 y

@@ -4,17 +4,16 @@ CLASS net/minecraft/class_9934 net/minecraft/client/gui/screen/recipebook/GhostR
 	METHOD <init> (Lnet/minecraft/class_9938;)V
 		ARG 1 currentIndexProvider
 	METHOD method_62029 clear ()V
-	METHOD method_62030 (ZLnet/minecraft/class_332;Lnet/minecraft/class_310;Lnet/minecraft/class_1735;Lnet/minecraft/class_9934$class_9935;)V
-		ARG 4 slot
-		ARG 5 item
+	METHOD method_62030 (IIZLnet/minecraft/class_332;Lnet/minecraft/class_310;Lnet/minecraft/class_1735;Lnet/minecraft/class_9934$class_9935;)V
+		ARG 6 slot
+		ARG 7 item
 	METHOD method_62032 drawTooltip (Lnet/minecraft/class_332;Lnet/minecraft/class_310;Lnet/minecraft/class_1735;)V
 		ARG 1 context
 		ARG 2 client
 		ARG 3 slot
-	METHOD method_62033 draw (Lnet/minecraft/class_332;Lnet/minecraft/class_310;Z)V
+	METHOD method_62033 draw (Lnet/minecraft/class_332;IILnet/minecraft/class_310;Z)V
 		ARG 1 context
-		ARG 2 client
-		ARG 3 resultHasPadding
+		ARG 4 client
 	METHOD method_64872 addInputs (Lnet/minecraft/class_1735;Lnet/minecraft/class_10352;Lnet/minecraft/class_10302;)V
 		ARG 1 slot
 		ARG 2 context

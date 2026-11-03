@@ -11,7 +11,6 @@ CLASS net/minecraft/class_1937 net/minecraft/world/World
 	FIELD field_9253 lastRainGradient F
 	FIELD field_9256 lcgBlockSeed I
 	FIELD field_17086 thread Ljava/lang/Thread;
-	FIELD field_24496 debugWorld Z
 	FIELD field_25176 registryKey Lnet/minecraft/class_5321;
 	FIELD field_25178 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_25179 OVERWORLD Lnet/minecraft/class_5321;
@@ -31,14 +30,13 @@ CLASS net/minecraft/class_1937 net/minecraft/world/World
 	FIELD field_42476 damageSources Lnet/minecraft/class_8109;
 	FIELD field_61989 EXPLOSION_BLOCK_PARTICLES Lnet/minecraft/class_6012;
 	FIELD field_62535 palettesFactory Lnet/minecraft/class_11897;
-	METHOD <init> (Lnet/minecraft/class_5269;Lnet/minecraft/class_5321;Lnet/minecraft/class_5455;Lnet/minecraft/class_6880;ZZI)V
+	METHOD <init> (Lnet/minecraft/class_5269;Lnet/minecraft/class_5321;Lnet/minecraft/class_5455;Lnet/minecraft/class_6880;ZI)V
 		ARG 1 properties
 		ARG 2 registryRef
 		ARG 3 registryManager
 		ARG 4 dimensionEntry
 		ARG 5 isClient
-		ARG 6 debugWorld
-		ARG 7 maxChainedNeighborUpdates
+		ARG 6 maxChainedNeighborUpdates
 	METHOD method_1_839 getClocks ()Lnet/minecraft/class_1_98;
 	METHOD method_1_840 getOverworldTime ()J
 		COMMENT {@return the current time in the {@code minecraft:overworld} clock}
@@ -369,14 +367,6 @@ CLASS net/minecraft/class_1937 net/minecraft/world/World
 		ARG 0 pos
 	METHOD method_27873 setSpawnPoint (Lnet/minecraft/class_5217$class_12064;)V
 		ARG 1 spawnPoint
-	METHOD method_27982 isDebugWorld ()Z
-		COMMENT Checks if this world is a debug world.
-		COMMENT
-		COMMENT <p>Debug worlds are not modifiable. They have a barrier layer at y=60,
-		COMMENT and lists all possible block states in game at y=70, helpful for finding
-		COMMENT block rendering and model errors.
-		COMMENT
-		COMMENT @see net.minecraft.world.gen.chunk.DebugChunkGenerator
 	METHOD method_27983 getRegistryKey ()Lnet/minecraft/class_5321;
 	METHOD method_31592 getEntityLookup ()Lnet/minecraft/class_5577;
 	METHOD method_31593 (Lnet/minecraft/class_1297;Ljava/util/function/Predicate;Ljava/util/List;Lnet/minecraft/class_1297;)V

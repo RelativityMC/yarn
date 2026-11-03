@@ -121,7 +121,7 @@ CLASS net/minecraft/class_4341 net/minecraft/client/realms/RealmsClient
 		ARG 4 motd
 	METHOD method_20997 sendPingResults (Lnet/minecraft/class_4873;)V
 		ARG 1 pingResult
-	METHOD method_20998 execute (Lnet/minecraft/class_4346;)Ljava/lang/String;
+	METHOD method_20998 execute (Lnet/minecraft/class_4346;Z)Ljava/lang/String;
 		ARG 1 r
 	METHOD method_20999 acceptInvitation (Ljava/lang/String;)V
 		ARG 1 invitationId

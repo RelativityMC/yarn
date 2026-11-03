@@ -4,7 +4,7 @@ CLASS net/minecraft/class_2245 net/minecraft/command/argument/TimeArgumentType
 	FIELD field_9972 UNITS Lit/unimi/dsi/fastutil/objects/Object2IntMap;
 	FIELD field_41857 TICK_COUNT_TOO_LOW_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
 	FIELD field_41858 minimum I
-	METHOD <init> (I)V
+	METHOD <init> (II)V
 		ARG 1 minimum
 	METHOD listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 context

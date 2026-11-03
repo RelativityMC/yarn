@@ -2,16 +2,12 @@ CLASS net/minecraft/class_8813 net/minecraft/block/SaplingGenerator
 	FIELD field_1_7511 floralVariants Lnet/minecraft/class_6012;
 	FIELD field_1_7512 treeFeatureForTrunkHeight Lnet/minecraft/class_5321;
 	FIELD field_1_7513 smallVariants Lnet/minecraft/class_6012;
-	FIELD field_46510 CODEC Lcom/mojang/serialization/Codec;
-	FIELD field_46520 GENERATORS Ljava/util/Map;
-	FIELD field_46521 id Ljava/lang/String;
 	FIELD field_46523 largeVariants Lnet/minecraft/class_6012;
-	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_6012;Lnet/minecraft/class_6012;Lnet/minecraft/class_6012;Lnet/minecraft/class_5321;)V
-		ARG 1 id
-		ARG 2 smallVariants
-		ARG 3 largeVariants
-		ARG 4 floralVariants
-		ARG 5 treeFeatureForTrunkHeight
+	METHOD <init> (Lnet/minecraft/class_6012;Lnet/minecraft/class_6012;Lnet/minecraft/class_6012;Lnet/minecraft/class_5321;)V
+		ARG 1 smallVariants
+		ARG 2 largeVariants
+		ARG 3 floralVariants
+		ARG 4 treeFeatureForTrunkHeight
 	METHOD method_1_2541 getBaseTrunkHeight (Lnet/minecraft/class_3218;)Ljava/util/OptionalInt;
 		ARG 1 world
 	METHOD method_1_6871 canGrow (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Z
@@ -50,8 +46,6 @@ CLASS net/minecraft/class_8813 net/minecraft/block/SaplingGenerator
 	METHOD method_54088 areFlowersNearby (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;)Z
 		ARG 1 world
 		ARG 2 pos
-	METHOD method_54089 (Lnet/minecraft/class_8813;)Ljava/lang/String;
-		ARG 0 generator
 	METHOD method_54090 canGenerateLargeTree (Lnet/minecraft/class_2680;Ljava/util/List;)Z
 		ARG 0 sapling
 		ARG 1 statesAndPositions

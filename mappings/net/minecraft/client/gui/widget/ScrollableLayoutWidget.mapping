@@ -12,11 +12,10 @@ CLASS net/minecraft/class_11467 net/minecraft/client/gui/widget/ScrollableLayout
 		ARG 1 client
 		ARG 2 layout
 		ARG 3 height
-	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_8133;ILnet/minecraft/class_11467$class_1_41;)V
+	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_8133;ILnet/minecraft/class_7528$class_1_47;ILnet/minecraft/class_11467$class_1_41;Lnet/minecraft/class_1_1951;)V
 		ARG 1 client
 		ARG 2 layout
 		ARG 3 height
-		ARG 4 marginSide
 	METHOD method_1_604 setMinHeight (I)V
 		ARG 1 minHeight
 	METHOD method_1_6304 setMarginWidth (I)V

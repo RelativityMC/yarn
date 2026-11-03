@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_6849 net/minecraft/client/render/chunk/RenderedChunk
 	FIELD field_36310 blockEntities Ljava/util/Map;
-	FIELD field_36312 debugWorld Z
 	FIELD field_60947 blockPalette Lnet/minecraft/class_2841;
 	FIELD field_60948 heightLimitView Lnet/minecraft/class_5539;
 	METHOD <init> (Lnet/minecraft/class_2818;I)V

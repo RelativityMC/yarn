@@ -28,11 +28,6 @@ CLASS net/minecraft/class_8089 net/minecraft/client/gui/widget/TabNavigationWidg
 	METHOD method_48989 getCurrentTabIndex ()I
 	METHOD method_48990 getTabForKey (Lnet/minecraft/class_11908;)I
 		ARG 1 keyInput
-	METHOD method_49612 appendNarrations (Lnet/minecraft/class_6382;Lnet/minecraft/class_8209;)V
-		ARG 1 builder
-		ARG 2 button
-	METHOD method_49614 (Lnet/minecraft/class_6382;Lnet/minecraft/class_8209;)V
-		ARG 2 button
 	METHOD method_49615 getCurrentTabButton ()Lnet/minecraft/class_8209;
 	METHOD method_71284 getTabs ()Ljava/util/List;
 	METHOD method_71520 getTabForKey (ILnet/minecraft/class_11908;)I

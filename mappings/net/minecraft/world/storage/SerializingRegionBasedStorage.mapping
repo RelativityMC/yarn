@@ -59,8 +59,7 @@ CLASS net/minecraft/class_4180 net/minecraft/world/storage/SerializingRegionBase
 		ARG 2 chunkNbt
 	METHOD method_61779 (Lnet/minecraft/class_6903;Lnet/minecraft/class_2487;)Lnet/minecraft/class_4180$class_9897;
 		ARG 2 nbt
-	METHOD method_61780 load (Lnet/minecraft/class_1923;)Ljava/util/concurrent/CompletableFuture;
-		ARG 1 chunkPos
+	METHOD method_61780 load (II)Ljava/util/concurrent/CompletableFuture;
 	METHOD method_61781 (Lnet/minecraft/class_1923;J)Ljava/util/concurrent/CompletableFuture;
 		ARG 2 pos
 	METHOD method_61782 onLoad (Lnet/minecraft/class_1923;Lnet/minecraft/class_4180$class_9897;)V
@@ -70,8 +69,6 @@ CLASS net/minecraft/class_4180 net/minecraft/world/storage/SerializingRegionBase
 		ARG 2 throwable
 	METHOD method_61784 (Ljava/util/Map;Lcom/mojang/serialization/DynamicOps;Ljava/lang/String;Ljava/lang/Object;)V
 		ARG 3 value
-	METHOD method_61785 (Lnet/minecraft/class_1923;J)Ljava/util/concurrent/CompletableFuture;
-		ARG 2 pos
 	METHOD method_61786 tickPendingLoads ()V
 	METHOD method_61787 loadAndWait (Lnet/minecraft/class_1923;)V
 		ARG 1 chunkPos

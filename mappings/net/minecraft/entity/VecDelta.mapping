@@ -14,7 +14,7 @@ CLASS net/minecraft/class_1_1216 net/minecraft/entity/VecDelta
 	CLASS class_1_1217 Linear
 	CLASS class_1_1218 Stepped
 		FIELD field_1_8368 SIZE_PER_STEP I
-		METHOD method_1_7747 fromMotion (Lnet/minecraft/class_7422;Ljava/util/List;)Lnet/minecraft/class_1_1216$class_1_1218;
+		METHOD method_1_7747 fromMotion (Lnet/minecraft/class_7422;Ljava/util/List;Z)Lnet/minecraft/class_1_1216$class_1_1218;
 			ARG 0 trackedPos
 			ARG 1 steps
 		CLASS class_1_1219 Step

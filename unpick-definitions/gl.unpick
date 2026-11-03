@@ -488,8 +488,6 @@ target_method com.mojang.blaze3d.opengl.GlStateManager getFrameBuffer (I)I
 	param 0 gl_framebuffer_target
 target_method org.lwjgl.opengl.ARBDirectStateAccess glNamedFramebufferTexture (IIII)V
 	param 1 gl_framebuffer_attachment
-target_method net.minecraft.client.gl.GlBufferManager setupFramebuffer (I[I[IIII)V
-	param 4 gl_framebuffer_target
 
 target_method net.minecraft.client.gl.GlBufferManager setupBlitFramebuffer (IIIIIIIIIIII)V
 	param 10 gl_buffer_mask

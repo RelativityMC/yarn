@@ -1,9 +1,6 @@
 CLASS net/minecraft/class_1_727 net/minecraft/util/ColorMap
 	FIELD field_1_5716 IDS Lnet/minecraft/class_1_727;
 	FIELD field_1_5717 COLORS Lnet/minecraft/class_1_727;
-	METHOD method_1_4393 values ()Ljava/util/List;
-	METHOD method_1_4394 forEach (Ljava/util/function/Consumer;)V
-		ARG 1 callback
 	METHOD method_1_4395 (Lorg/apache/commons/lang3/function/TriFunction;Ljava/util/function/BiFunction;Ljava/util/function/Function;Lnet/minecraft/class_1767;Ljava/lang/Object;)Lnet/minecraft/class_2248;
 		ARG 3 color
 		ARG 4 id

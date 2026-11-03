@@ -47,7 +47,6 @@ CLASS net/minecraft/class_2498 net/minecraft/sound/BlockSoundSets
 	FIELD field_22152 NETHER_STEM Lnet/minecraft/class_5321;
 	FIELD field_22153 NYLIUM Lnet/minecraft/class_5321;
 	FIELD field_22154 FUNGUS Lnet/minecraft/class_5321;
-	FIELD field_23082 WEEPING_VINES_LOW_PITCH Lnet/minecraft/class_5321;
 	FIELD field_23083 VINE Lnet/minecraft/class_5321;
 	FIELD field_23265 LODESTONE Lnet/minecraft/class_5321;
 	FIELD field_24119 CHAIN Lnet/minecraft/class_5321;

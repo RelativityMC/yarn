@@ -39,9 +39,6 @@ CLASS net/minecraft/class_7733 net/minecraft/command/argument/RegistryEntryRefer
 	METHOD method_45610 getSummonableEntityType (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880$class_6883;
 		ARG 0 context
 		ARG 1 name
-	METHOD method_45611 getStatusEffect (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880$class_6883;
-		ARG 0 context
-		ARG 1 name
 	METHOD method_45612 getEnchantment (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880$class_6883;
 		ARG 0 context
 		ARG 1 name

@@ -40,16 +40,15 @@ CLASS net/minecraft/class_3218 net/minecraft/server/world/ServerWorld
 	FIELD field_59630 waypointHandler Lnet/minecraft/class_11179;
 	FIELD field_62841 subscriptionTracker Lnet/minecraft/class_12026;
 	FIELD field_64261 environmentAttributeAccess Lnet/minecraft/class_12205;
-	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Ljava/util/concurrent/Executor;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_5268;Lnet/minecraft/class_5321;Lnet/minecraft/class_5363;ZLjava/util/List;Z)V
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Ljava/util/concurrent/Executor;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_5268;Lnet/minecraft/class_5321;Lnet/minecraft/class_5363;Ljava/util/List;Z)V
 		ARG 1 server
 		ARG 2 workerExecutor
 		ARG 3 session
 		ARG 4 properties
 		ARG 5 worldKey
 		ARG 6 dimensionOptions
-		ARG 7 debugWorld
-		ARG 8 spawners
-		ARG 9 shouldTickTime
+		ARG 7 spawners
+		ARG 8 shouldTickTime
 	METHOD method_1_413 (Lnet/minecraft/class_1297;)Ljava/lang/String;
 		ARG 0 entity
 	METHOD method_1_1681 getWeatherState ()Lnet/minecraft/class_1_216;
@@ -430,8 +429,6 @@ CLASS net/minecraft/class_3218 net/minecraft/server/world/ServerWorld
 		ARG 15 speed
 	METHOD method_66017 (Lnet/minecraft/class_2338;Lnet/minecraft/class_6880;)V
 		ARG 2 newPoiType
-	METHOD method_66019 (Lnet/minecraft/class_2338;Lnet/minecraft/class_6880;)V
-		ARG 2 oldPoiType
 	METHOD method_66588 shouldTickTestAt (Lnet/minecraft/class_1923;)Z
 		ARG 1 pos
 	METHOD method_67503 tickThunder (Lnet/minecraft/class_2818;)V

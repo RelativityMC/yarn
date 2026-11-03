@@ -104,9 +104,7 @@ CLASS net/minecraft/class_11568 net/minecraft/entity/ai/brain/task/MoveItemsTask
 		ARG 1 inventory
 	METHOD method_72429 setInteractionState (Lnet/minecraft/class_11568$class_11569;)V
 		ARG 1 state
-	METHOD method_72430 transitionToInteracting (Lnet/minecraft/class_11568$class_11572;Lnet/minecraft/class_1314;)V
-		ARG 1 storage
-		ARG 2 entity
+	METHOD method_72430 transitionToInteracting (Lnet/minecraft/class_11568$class_11572;Lnet/minecraft/class_1937;Lnet/minecraft/class_1314;)V
 	METHOD method_72431 matchesStoragePredicate (Lnet/minecraft/class_11568$class_11572;Lnet/minecraft/class_1937;)Z
 		ARG 1 storage
 		ARG 2 world
@@ -142,14 +140,10 @@ CLASS net/minecraft/class_11568 net/minecraft/entity/ai/brain/task/MoveItemsTask
 		ARG 1 entity
 	METHOD method_72445 (Lnet/minecraft/class_1314;Lnet/minecraft/class_1314;Lnet/minecraft/class_1263;)V
 		ARG 1 entity
-		ARG 2 entityx
-		ARG 3 inventory
 	METHOD method_72446 getVisitedPositions (Lnet/minecraft/class_1314;)Ljava/util/Set;
 		ARG 0 entity
 	METHOD method_72447 (Lnet/minecraft/class_1314;Lnet/minecraft/class_1314;Lnet/minecraft/class_1263;)V
 		ARG 1 entity
-		ARG 2 entityx
-		ARG 3 inventory
 	METHOD method_72448 canPickUpItem (Lnet/minecraft/class_1314;)Z
 		ARG 0 entity
 	METHOD method_72449 cooldown (Lnet/minecraft/class_1314;)V
@@ -213,8 +207,6 @@ CLASS net/minecraft/class_11568 net/minecraft/entity/ai/brain/task/MoveItemsTask
 	CLASS class_11570 InteractionCallback
 	CLASS class_11571 NavigationState
 	CLASS class_11572 Storage
-		FIELD comp_4428 inventory Lnet/minecraft/class_1263;
-		METHOD comp_4428 inventory ()Lnet/minecraft/class_1263;
 		METHOD method_72453 getInventory (Lnet/minecraft/class_2586;Lnet/minecraft/class_2680;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;)Lnet/minecraft/class_1263;
 			ARG 0 blockEntity
 			ARG 1 state

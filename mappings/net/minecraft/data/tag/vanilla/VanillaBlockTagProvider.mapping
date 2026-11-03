@@ -6,7 +6,3 @@ CLASS net/minecraft/class_2466 net/minecraft/data/tag/vanilla/VanillaBlockTagPro
 		ARG 1 key
 	METHOD method_1_4968 (Lnet/minecraft/class_6880$class_6883;)Z
 		ARG 0 entry
-	METHOD method_1_4970 blocks (Lnet/minecraft/class_1_727;)Lnet/minecraft/class_1_727;
-		ARG 0 keysByColor
-	METHOD method_1_4971 blocks (Lnet/minecraft/class_1_758;)Lnet/minecraft/class_1_758;
-		ARG 0 keysByOxidation

@@ -5,7 +5,7 @@ CLASS net/minecraft/class_702 net/minecraft/client/particle/ParticleManager
 	FIELD field_3836 newParticles Ljava/util/Queue;
 	FIELD field_3837 newEmitterParticles Ljava/util/Queue;
 	FIELD field_17820 PARTICLE_TEXTURE_SHEETS Ljava/util/List;
-	FIELD field_29072 groupCounts Lit/unimi/dsi/fastutil/objects/Object2IntOpenHashMap;
+	FIELD field_29072 groupCounts [I
 	FIELD field_62618 spriteManager Lnet/minecraft/class_11939;
 	METHOD <init> (Lnet/minecraft/class_638;Lnet/minecraft/class_11939;)V
 		ARG 1 world

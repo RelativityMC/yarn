@@ -12,8 +12,6 @@ CLASS net/minecraft/class_7803 net/minecraft/data/recipe/VanillaRecipeGenerator
 		ARG 0 settings
 		ARG 1 location
 	METHOD method_1_8146 createRegistriesGenerator ()Lnet/minecraft/class_1_1269;
-	METHOD method_51693 (Lcom/mojang/datafixers/util/Pair;)Lnet/minecraft/class_7803$class_8905;
-		ARG 0 pair
 	METHOD method_51694 streamSmithingTemplates ()Ljava/util/stream/Stream;
 	METHOD method_51695 (Lnet/minecraft/class_7803$class_8905;)V
 		ARG 1 template

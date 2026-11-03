@@ -33,7 +33,7 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 10 v2
 	METHOD method_1_400 (Ljava/util/List;Lnet/minecraft/class_5632;)V
 		ARG 1 data
-	METHOD method_1_401 drawTooltip (Lnet/minecraft/class_327;Ljava/util/List;Ljava/util/Optional;Lnet/minecraft/class_8000;IIZLnet/minecraft/class_2960;)V
+	METHOD method_1_401 drawTooltip (Lnet/minecraft/class_327;Ljava/util/List;Ljava/util/Optional;Lnet/minecraft/class_8000;IIZLnet/minecraft/class_2960;Z)V
 		ARG 1 textRenderer
 		ARG 2 text
 		ARG 3 tooltipData
@@ -244,7 +244,6 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 2 stack
 		ARG 3 x
 		ARG 4 y
-		ARG 5 stackCountText
 	METHOD method_51433 drawText (Lnet/minecraft/class_327;Ljava/lang/String;IIIZ)V
 		ARG 1 textRenderer
 		ARG 2 text
@@ -273,9 +272,6 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 5 y
 		ARG 6 focused
 	METHOD method_51437 drawTooltip (Lnet/minecraft/class_327;Ljava/util/List;Ljava/util/Optional;IILnet/minecraft/class_2960;Z)V
-		ARG 1 textRenderer
-		ARG 2 text
-		ARG 3 data
 		ARG 4 x
 		ARG 5 y
 		ARG 6 texture
@@ -483,7 +479,6 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 2 stack
 		ARG 3 x
 		ARG 4 y
-		ARG 5 stackCountText
 	METHOD method_64860 drawItemBar (Lnet/minecraft/class_1799;II)V
 		ARG 1 stack
 		ARG 2 x
@@ -603,8 +598,6 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 1 text
 		ARG 2 x
 		ARG 3 y
-	METHOD method_71275 (Ljava/util/List;Lnet/minecraft/class_5632;)V
-		ARG 1 datax
 	METHOD method_71276 drawTooltip (Lnet/minecraft/class_2561;II)V
 		ARG 1 text
 		ARG 2 x

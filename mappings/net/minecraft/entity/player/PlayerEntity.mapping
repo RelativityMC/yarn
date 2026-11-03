@@ -143,7 +143,6 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 			COMMENT the hand holding the book
 	METHOD method_7316 addExperienceLevels (I)V
 		ARG 1 levels
-	METHOD method_7317 canFoodHeal ()Z
 	METHOD method_7318 updatePose ()V
 	METHOD method_7320 setScore (I)V
 		ARG 1 score

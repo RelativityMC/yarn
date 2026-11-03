@@ -1,4 +1,4 @@
 CLASS net/minecraft/class_2907 net/minecraft/network/packet/s2c/login/LoginCompressionS2CPacket
 	FIELD comp_1_2056 compressionThreshold I
 	FIELD field_48236 CODEC Lnet/minecraft/class_9139;
-	METHOD comp_1_2056 getCompressionThreshold ()I
+	METHOD comp_1_2056 compressionThreshold ()I

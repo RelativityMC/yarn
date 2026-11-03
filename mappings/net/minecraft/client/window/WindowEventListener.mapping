@@ -8,8 +8,7 @@ CLASS net/minecraft/class_1_1312 net/minecraft/client/window/WindowEventListener
 	METHOD method_1_8593 getWindowFromEvent (Lorg/lwjgl/sdl/SDL_Event;)J
 		ARG 0 event
 	METHOD method_1_8594 onDropBegin ()V
-	METHOD method_1_8595 onDropComplete (Lorg/lwjgl/sdl/SDL_Event;)V
-		ARG 1 event
+	METHOD method_1_8595 onDropComplete ()V
 	METHOD method_1_8596 onDropFile (Lorg/lwjgl/sdl/SDL_Event;)V
 		ARG 1 event
 	METHOD method_1_8597 onKey (Lorg/lwjgl/sdl/SDL_Event;)V

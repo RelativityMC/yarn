@@ -32,7 +32,7 @@ CLASS net/minecraft/class_3971 net/minecraft/screen/StonecutterScreenHandler
 		ARG 1 contentsChangedListener
 	METHOD method_17862 getSelectedRecipe ()I
 	METHOD method_17863 getAvailableRecipes ()Lnet/minecraft/class_10291$class_10293;
-	METHOD method_17864 getAvailableRecipeCount ()I
+	METHOD method_17864 getAvailableRecipeCount ()Lnet/minecraft/class_1799;
 	METHOD method_17865 canCraft ()Z
 	METHOD method_17866 populateResult (I)V
 		ARG 1 selectedId

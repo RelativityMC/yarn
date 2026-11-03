@@ -20,7 +20,7 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 		COMMENT entity as determined during the {@link MobEntity#targetSelector}'s execution.
 	FIELD field_6203 canPickUpLoot Z
 	FIELD field_6204 jumpControl Lnet/minecraft/class_1334;
-	FIELD field_6206 lookControl Lnet/minecraft/class_1333;
+	FIELD field_6206 lookControl Lnet/minecraft/class_1_1954;
 	FIELD field_6207 moveControl Lnet/minecraft/class_1335;
 	FIELD field_18074 positionTarget Lnet/minecraft/class_2338;
 	FIELD field_18075 positionTargetRange I
@@ -183,7 +183,7 @@ CLASS net/minecraft/class_1308 net/minecraft/entity/mob/MobEntity
 		COMMENT like axolotls or dolphins, or {@code 180} for entities that can freely rotate
 		COMMENT their head, like shulkers. The default return value is {@code 75}.
 	METHOD method_5987 isAiDisabled ()Z
-	METHOD method_5988 getLookControl ()Lnet/minecraft/class_1333;
+	METHOD method_5988 getLookControl ()Lnet/minecraft/class_1_1954;
 	METHOD method_5990 playSpawnEffects ()V
 	METHOD method_5992 interactMob (Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;)Lnet/minecraft/class_1269;
 		ARG 1 player

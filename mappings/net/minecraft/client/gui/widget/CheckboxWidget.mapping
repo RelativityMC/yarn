@@ -1,9 +1,5 @@
 CLASS net/minecraft/class_4286 net/minecraft/client/gui/widget/CheckboxWidget
 	FIELD field_19230 checked Z
-	FIELD field_45348 SELECTED_HIGHLIGHTED_TEXTURE Lnet/minecraft/class_2960;
-	FIELD field_45349 SELECTED_TEXTURE Lnet/minecraft/class_2960;
-	FIELD field_45350 HIGHLIGHTED_TEXTURE Lnet/minecraft/class_2960;
-	FIELD field_45351 TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_47107 callback Lnet/minecraft/class_4286$class_8930;
 	FIELD field_52293 textWidget Lnet/minecraft/class_7940;
 	METHOD <init> (IIILnet/minecraft/class_2561;Lnet/minecraft/class_327;ZLnet/minecraft/class_4286$class_8930;)V

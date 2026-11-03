@@ -88,8 +88,6 @@ CLASS net/minecraft/class_1665 net/minecraft/entity/projectile/PersistentProject
 		ARG 1 drag
 	METHOD method_63670 applyCollision (Lnet/minecraft/class_3965;)V
 		ARG 1 blockHitResult
-	METHOD method_64646 spawnBubbleParticles (Lnet/minecraft/class_243;)V
-		ARG 1 pos
 	METHOD method_65058 setInGround (Z)V
 		ARG 1 inGround
 	METHOD method_65059 isInGround ()Z

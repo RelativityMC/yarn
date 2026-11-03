@@ -5,10 +5,7 @@ CLASS net/minecraft/class_312 net/minecraft/client/Mouse
 	FIELD field_1783 cursorLocked Z
 	FIELD field_1784 hasResolutionChanged Z
 	FIELD field_1787 cursorDeltaY D
-	FIELD field_1788 rightButtonClicked Z
 	FIELD field_1789 cursorDeltaX D
-	FIELD field_1790 middleButtonClicked Z
-	FIELD field_1791 leftButtonClicked Z
 	FIELD field_1792 glfwTime D
 	FIELD field_1793 cursorXSmoother Lnet/minecraft/class_3540;
 	FIELD field_1794 y D
@@ -42,20 +39,14 @@ CLASS net/minecraft/class_312 net/minecraft/client/Mouse
 		ARG 1 window
 		ARG 3 input
 		ARG 4 action
-	METHOD method_1603 getX ()D
-	METHOD method_1604 getY ()D
 	METHOD method_1606 updateMouse (D)V
 		ARG 1 timeDelta
-	METHOD method_1608 wasLeftButtonClicked ()Z
-	METHOD method_1609 wasRightButtonClicked ()Z
 	METHOD method_1610 unlockCursor ()V
 	METHOD method_1612 lockCursor ()V
 	METHOD method_1613 isCursorLocked ()Z
-	METHOD method_29616 onFilesDropped (JLjava/util/List;)V
-		ARG 1 window
-		ARG 3 files
+	METHOD method_29616 onFilesDropped (Ljava/util/List;)V
+		ARG 1 files
 	METHOD method_30134 setResolutionChanged ()V
-	METHOD method_35707 wasMiddleButtonClicked ()Z
 	METHOD method_55793 tick ()V
 	METHOD method_68879 getScaledX (Lnet/minecraft/class_1041;)D
 		ARG 1 window

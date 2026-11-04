@@ -8,6 +8,7 @@ CLASS net/minecraft/class_3735 net/minecraft/predicate/entity/EntityEquipmentSub
 		ARG 0 itemLookup
 		ARG 1 bannerPatternLookup
 	CLASS class_5278 Builder
+		FIELD field_1_12626 saddle Ljava/util/Optional;
 		FIELD field_24482 head Ljava/util/Optional;
 		FIELD field_24483 chest Ljava/util/Optional;
 		FIELD field_24484 legs Ljava/util/Optional;
@@ -15,6 +16,8 @@ CLASS net/minecraft/class_3735 net/minecraft/predicate/entity/EntityEquipmentSub
 		FIELD field_24486 mainhand Ljava/util/Optional;
 		FIELD field_24487 offhand Ljava/util/Optional;
 		FIELD field_51371 body Ljava/util/Optional;
+		METHOD method_1_12507 saddle (Lnet/minecraft/class_2073$class_2074;)Lnet/minecraft/class_3735$class_5278;
+			ARG 1 item
 		METHOD method_27965 create ()Lnet/minecraft/class_3735$class_5278;
 		METHOD method_27966 head (Lnet/minecraft/class_2073$class_2074;)Lnet/minecraft/class_3735$class_5278;
 			ARG 1 item

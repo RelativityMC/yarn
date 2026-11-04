@@ -1,3 +1,10 @@
 CLASS net/minecraft/class_9017 net/minecraft/client/gui/widget/ContainerWidget
+	FIELD field_1_12508 allowTabNavigation Z
 	FIELD field_47551 focusedElement Lnet/minecraft/class_364;
 	FIELD field_47552 dragging Z
+	METHOD method_1_12414 setAllowTabNavigation (Z)V
+		ARG 1 allowTabNavigation
+	METHOD method_1_12415 selectNarratableElement (Lnet/minecraft/class_1_1171;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+		ARG 0 narrationTrigger
+		ARG 1 hovered
+		ARG 2 focused

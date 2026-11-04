@@ -11,6 +11,7 @@ CLASS net/minecraft/class_1_726 net/minecraft/entity/passive/SulfurCubeArchetype
 	FIELD field_1_6080 EXPLOSIVE Lnet/minecraft/class_5321;
 	FIELD field_1_6328 HOT Lnet/minecraft/class_5321;
 	FIELD field_1_6329 SLOW_BOUNCY Lnet/minecraft/class_5321;
+	FIELD field_1_12281 COLD Lnet/minecraft/class_5321;
 	METHOD method_1_4354 add (Lnet/minecraft/class_6880;D)Ljava/util/function/Function;
 		ARG 0 attribute
 		ARG 1 value
@@ -42,6 +43,7 @@ CLASS net/minecraft/class_1_726 net/minecraft/entity/passive/SulfurCubeArchetype
 		ARG 6 contactDamage
 		ARG 7 knockbackModifiers
 		ARG 8 soundSettings
+		ARG 9 locationBasedEffects
 	METHOD method_1_5435 contactDamage (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_5863;Z)Lnet/minecraft/class_1_719$class_1_896;
 		ARG 0 registry
 		ARG 1 damageType
@@ -55,3 +57,13 @@ CLASS net/minecraft/class_1_726 net/minecraft/entity/passive/SulfurCubeArchetype
 		ARG 1 pushSound
 		ARG 2 pushSoundImpulseThreshold
 		ARG 3 pushSoundCooldown
+	METHOD method_1_12096 register (Lnet/minecraft/class_7891;Lnet/minecraft/class_5321;Lnet/minecraft/class_6862;Ljava/util/List;ZLjava/util/Optional;Ljava/util/Optional;Lnet/minecraft/class_1_719$class_1_898;Lnet/minecraft/class_1_719$class_1_1031;)V
+		ARG 0 registry
+		ARG 1 key
+		ARG 2 itemTag
+		ARG 3 attributes
+		ARG 4 buoyant
+		ARG 5 explosion
+		ARG 6 contactDamage
+		ARG 7 knockbackModifiers
+		ARG 8 soundSettings

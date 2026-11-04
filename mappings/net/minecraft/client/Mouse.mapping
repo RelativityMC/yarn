@@ -1,4 +1,8 @@
 CLASS net/minecraft/class_312 net/minecraft/client/Mouse
+	FIELD field_1_12386 SCALED_MOUSE_MOVEMENT_THRESHOLD D
+	FIELD field_1_12387 keyboard Z
+	FIELD field_1_12388 lastX D
+	FIELD field_1_12389 lastY D
 	FIELD field_1779 client Lnet/minecraft/class_310;
 	FIELD field_1780 activeButton Lnet/minecraft/class_11910;
 	FIELD field_1782 cursorYSmoother Lnet/minecraft/class_3540;
@@ -20,6 +24,10 @@ CLASS net/minecraft/class_312 net/minecraft/client/Mouse
 		ARG 1 client
 	METHOD method_1_10225 updatePosition ()V
 	METHOD method_1_10824 updateCursorLock ()V
+	METHOD method_1_12197 hasMouseSubstantiallyMoved ()Z
+	METHOD method_1_12198 setNavigationType (Lnet/minecraft/class_8015;)V
+		ARG 1 navigationType
+	METHOD method_1_12199 setLastPosition ()V
 	METHOD method_1598 onMouseScroll (JDD)V
 		COMMENT Called when a mouse is used to scroll.
 		ARG 1 window

@@ -16,6 +16,10 @@ CLASS net/minecraft/class_7528 net/minecraft/client/gui/widget/ScrollableWidget
 	METHOD method_1_642 create (I)Lnet/minecraft/class_7528$class_1_47;
 		ARG 0 scrollRate
 	METHOD method_1_643 getScrollbarWidth ()I
+	METHOD method_1_12339 drawScrollbarBackground (Lnet/minecraft/class_332;I)V
+		ARG 1 context
+		ARG 2 scrollbarX
+	METHOD method_1_12340 getScrollbarMinHeight ()I
 	METHOD method_44382 setScrollY (D)V
 		ARG 1 scrollY
 	METHOD method_44387 getScrollY ()D

@@ -105,6 +105,9 @@ CLASS net/minecraft/class_4910 net/minecraft/client/data/BlockStateModelGenerato
 	METHOD method_1_11619 registerBrittleIce ()V
 	METHOD method_1_11620 registerCrumblingIceBlock (Lnet/minecraft/class_2248;)V
 		ARG 1 block
+	METHOD method_1_12317 registerSeamedSlab (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
+		ARG 1 full
+		ARG 2 slab
 	METHOD method_25508 registerChorusPlant ()V
 	METHOD method_25509 registerComposter ()V
 	METHOD method_25510 registerDaylightDetector ()V

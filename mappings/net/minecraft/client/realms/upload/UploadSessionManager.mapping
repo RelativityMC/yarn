@@ -1,0 +1,62 @@
+CLASS net/minecraft/class_1_1973 net/minecraft/client/realms/upload/UploadSessionManager
+	FIELD field_1_12535 CANCEL_TIMEOUT Ljava/time/Duration;
+	FIELD field_1_12536 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_12537 RETRY_DELAY Ljava/time/Duration;
+	FIELD field_1_12538 WAIT_FOR_COMPLETION_TIMEOUT Ljava/time/Duration;
+	FIELD field_1_12539 SESSION_RENEWAL_MARGIN Ljava/time/Duration;
+	FIELD field_1_12540 UPLOAD_TIMEOUT Ljava/time/Duration;
+	FIELD field_1_12541 GSON Lnet/minecraft/class_4869;
+	FIELD field_1_12542 allowInsecure Z
+	FIELD field_1_12543 httpRequestable Lnet/minecraft/class_1_1963;
+	FIELD field_1_12544 realmsClient Lnet/minecraft/class_4341;
+	FIELD field_1_12545 retrying Lnet/minecraft/class_1_1958;
+	METHOD <init> (Lnet/minecraft/class_4341;Lnet/minecraft/class_1_1963;)V
+		ARG 1 client
+		ARG 2 httpRequestable
+	METHOD method_1_12461 createBodylessRequest (Ljava/net/URI;Ljava/lang/String;Ljava/lang/String;Ljava/time/Duration;)Ljava/net/http/HttpRequest;
+		ARG 0 url
+		ARG 1 token
+		ARG 2 method
+		ARG 3 timeout
+	METHOD method_1_12462 cancel (Lnet/minecraft/class_1_1960;)V
+		ARG 1 session
+	METHOD method_1_12463 complete (Lnet/minecraft/class_1_1960;Lnet/minecraft/class_1_1966;)Lnet/minecraft/class_1_1973$class_1_1974;
+		ARG 1 session
+		ARG 2 uploadTask
+	METHOD method_1_12464 createSession (JILjava/lang/String;Lnet/minecraft/class_1_1966;)Lnet/minecraft/class_1_1960;
+		ARG 1 worldId
+		ARG 3 slotId
+		ARG 4 extension
+		ARG 5 uploadTask
+	METHOD method_1_12465 isRetriable (Ljava/lang/Throwable;)Z
+		ARG 0 throwable
+	METHOD method_1_12466 (Ljava/util/concurrent/CompletableFuture;Ljava/net/http/HttpResponse;Ljava/lang/Throwable;)V
+		ARG 1 response
+		ARG 2 ex
+	METHOD method_1_12467 parseStatus (Ljava/lang/String;)Lnet/minecraft/class_1_1973$class_1_1974;
+		ARG 0 json
+	METHOD method_1_12468 waitForCompletion (Lnet/minecraft/class_1_1960;Lnet/minecraft/class_1_1966;)V
+		ARG 1 session
+		ARG 2 uploadTask
+	METHOD method_1_12469 getNonnegativeDurationTo (Ljava/time/Instant;)Ljava/time/Duration;
+		ARG 1 to
+	METHOD method_1_12470 renewSessionIfNeeded (Lnet/minecraft/class_1_1960;Lnet/minecraft/class_1_1966;)Lnet/minecraft/class_1_1960;
+		ARG 1 currentSession
+		ARG 2 uploadTask
+	METHOD method_1_12471 getStatus (Lnet/minecraft/class_1_1960;Lnet/minecraft/class_1_1966;)Lnet/minecraft/class_1_1973$class_1_1974;
+		ARG 1 session
+		ARG 2 uploadTask
+	METHOD method_1_12472 request (Ljava/net/URI;Ljava/lang/String;Ljava/lang/String;Ljava/time/Duration;Lnet/minecraft/class_1_1981$class_1_1982;Lnet/minecraft/class_1_1966;)Ljava/net/http/HttpResponse;
+		ARG 1 url
+		ARG 2 token
+		ARG 3 method
+		ARG 4 timeout
+		ARG 5 onFail
+		ARG 6 uploadTask
+	METHOD method_1_12473 requestWithRetries (Ljava/net/URI;Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/class_1_1981$class_1_1982;Lnet/minecraft/class_1_1966;)Ljava/lang/String;
+		ARG 1 url
+		ARG 2 token
+		ARG 3 method
+		ARG 4 onFail
+		ARG 5 uploadTask
+	CLASS class_1_1974 Status

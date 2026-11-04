@@ -187,7 +187,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 		ARG 1 tickProgress
 	METHOD method_1_3096 startEditingTextWidget (Lnet/minecraft/class_364;Z)V
 		ARG 1 element
-		ARG 2 focused
+		ARG 2 editing
 	METHOD method_1_3097 getTextInputController ()Lnet/minecraft/class_1_490;
 	METHOD method_1_3935 getYggdrasilGameProfileResult ()Lcom/mojang/authlib/services/ProfileResult;
 	METHOD method_1_3936 markSurfaceForUpdate ()V

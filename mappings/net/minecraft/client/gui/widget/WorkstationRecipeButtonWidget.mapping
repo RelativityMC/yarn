@@ -1,0 +1,27 @@
+CLASS net/minecraft/class_1_1969 net/minecraft/client/gui/widget/WorkstationRecipeButtonWidget
+	FIELD field_1_12526 content Lnet/minecraft/class_1_1969$class_1_1971;
+	FIELD field_1_12527 clickSound Lnet/minecraft/class_3414;
+	FIELD field_1_12528 enabled Ljava/util/function/BooleanSupplier;
+	FIELD field_1_12529 textures Lnet/minecraft/class_8666;
+	FIELD field_1_12530 tooltipGetter Ljava/util/function/Supplier;
+	METHOD <init> (IILnet/minecraft/class_2561;Lnet/minecraft/class_8666;Lnet/minecraft/class_1_1969$class_1_1971;Lnet/minecraft/class_3414;Lnet/minecraft/class_4185$class_4241;Lnet/minecraft/class_4185$class_7841;Ljava/util/function/Supplier;Ljava/util/function/BooleanSupplier;)V
+		ARG 1 width
+		ARG 2 height
+		ARG 3 message
+		ARG 4 textures
+		ARG 5 content
+		ARG 6 clickSound
+		ARG 7 onPress
+		ARG 8 narrationSupplier
+		ARG 9 tooltipGetter
+		ARG 10 enabled
+	CLASS class_1_1970 BannerPattern
+		FIELD field_1_12531 V_SCALE F
+		FIELD field_1_12532 U_SCALE F
+		FIELD field_1_12533 UV_DENOMINATOR F
+		METHOD method_1_12459 draw (Lnet/minecraft/class_332;II)V
+			ARG 1 context
+			ARG 2 x
+			ARG 3 y
+	CLASS class_1_1971 Content
+	CLASS class_1_1972 Item

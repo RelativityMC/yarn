@@ -1,7 +1,0 @@
-CLASS net/minecraft/class_1_1976
-	CLASS class_1_1978
-		FIELD comp_1_2243 body Ljava/lang/Object;
-		FIELD comp_1_2244 headers Ljava/net/http/HttpHeaders;
-		FIELD comp_1_2245 request Ljava/net/http/HttpRequest;
-		FIELD comp_1_2246 sslSession Ljava/util/Optional;
-		FIELD comp_1_2247 statusCode I

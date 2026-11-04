@@ -6,8 +6,10 @@ CLASS net/minecraft/class_2073 net/minecraft/predicate/item/ItemPredicate
 		ARG 1 stack
 	CLASS class_2074 Builder
 		FIELD field_9648 count Lnet/minecraft/class_2096$class_2100;
-		FIELD field_9650 item Ljava/util/Optional;
+		FIELD field_9650 items Ljava/util/Optional;
 		FIELD field_49235 components Lnet/minecraft/class_10914;
+		METHOD method_1_12301 items (Lnet/minecraft/class_6885;)Lnet/minecraft/class_2073$class_2074;
+			ARG 1 items
 		METHOD method_8973 create ()Lnet/minecraft/class_2073$class_2074;
 		METHOD method_8975 tag (Lnet/minecraft/class_7871;Lnet/minecraft/class_6862;)Lnet/minecraft/class_2073$class_2074;
 			ARG 1 itemRegistry

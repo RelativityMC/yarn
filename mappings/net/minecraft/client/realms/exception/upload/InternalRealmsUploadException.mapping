@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1_1981 net/minecraft/client/realms/exception/upload/InternalRealmsUploadException
+	FIELD field_1_12602 kind Lnet/minecraft/class_1_1981$class_1_1982;
+	METHOD <init> (Lnet/minecraft/class_1_1981$class_1_1982;)V
+		ARG 1 kind
+	CLASS class_1_1982 Kind
+		FIELD field_1_12616 translationKey Ljava/lang/String;
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
+			ARG 3 translationKey

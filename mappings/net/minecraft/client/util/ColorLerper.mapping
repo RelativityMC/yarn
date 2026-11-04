@@ -1,15 +1,32 @@
 CLASS net/minecraft/class_11462 net/minecraft/client/util/ColorLerper
+	COMMENT Handles the color of things that change color over time.
+	FIELD field_1_10569 MUSIC_NOTE_COLORS Lnet/minecraft/class_1_727;
+	FIELD field_1_10570 SHEEP_COLORS Lnet/minecraft/class_1_727;
 	FIELD field_60686 RAINBOW_COLORS [Lnet/minecraft/class_1767;
+	METHOD method_1_10545 (Lnet/minecraft/class_1767;Ljava/lang/Integer;)Ljava/lang/Integer;
+		ARG 0 dye
+		ARG 1 code
+	METHOD method_1_10546 (Lnet/minecraft/class_1767;Ljava/lang/Integer;)Ljava/lang/Integer;
+		ARG 0 dye
+		ARG 1 code
 	METHOD method_71789 getArgb (Lnet/minecraft/class_1767;IF)I
-		ARG 0 color
+		ARG 0 dye
+		ARG 1 code
 		ARG 2 multiplier
 	METHOD method_71790 lerpColor (Lnet/minecraft/class_11462$class_11463;F)I
 		ARG 0 type
 		ARG 1 step
 	CLASS class_11463 Type
+		FIELD field_1_10571 codes Lnet/minecraft/class_1_727;
+		FIELD field_60687 Lnet/minecraft/class_11462$class_11463;
+			COMMENT Sheep named {@code jeb_}.
+		FIELD field_60688 Lnet/minecraft/class_11462$class_11463;
+			COMMENT The music notes icon in the “Now Playing” toast.
 		FIELD field_60689 colorDuration I
 		FIELD field_60691 colors [Lnet/minecraft/class_1767;
 		METHOD <init> (Ljava/lang/String;II[Lnet/minecraft/class_1767;Lnet/minecraft/class_1_727;)V
 			ARG 3 colorDuration
+			ARG 4 colors
+			ARG 5 codes
 		METHOD method_71793 getArgb (Lnet/minecraft/class_1767;)I
 			ARG 1 color

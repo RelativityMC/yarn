@@ -17,11 +17,15 @@ CLASS net/minecraft/class_5604 net/minecraft/client/model/ModelCuboidData
 		ARG 7 sizeX
 		ARG 8 sizeY
 		ARG 9 sizeZ
-		ARG 10 extra
+		ARG 10 extraSize
 		ARG 11 mirror
 		ARG 12 textureScaleX
 		ARG 13 textureScaleY
 		ARG 14 directions
+	METHOD method_1_12354 adjustExtraSize (FFF)Lnet/minecraft/class_5604;
+		ARG 1 scaleX
+		ARG 2 scaleY
+		ARG 3 scaleZ
 	METHOD method_32093 createCuboid (II)Lnet/minecraft/class_630$class_628;
 		ARG 1 textureWidth
 		ARG 2 textureHeight

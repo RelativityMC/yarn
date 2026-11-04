@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_1_1966 net/minecraft/client/realms/upload/UploadTask
+	FIELD field_1_12524 task Ljava/util/concurrent/atomic/AtomicReference;
+	FIELD field_1_12525 canceled Ljava/util/concurrent/atomic/AtomicBoolean;
+	METHOD method_1_12453 execute (Ljava/util/concurrent/CompletableFuture;Ljava/time/Duration;)Ljava/lang/Object;
+		ARG 1 task
+		ARG 2 timeout
+	METHOD method_1_12454 cancel ()V
+	METHOD method_1_12455 isCanceled ()Z
+	METHOD method_1_12456 execute (Ljava/util/concurrent/CompletableFuture;)Ljava/lang/Object;
+		ARG 1 task
+	METHOD method_1_12457 executeWithTimeout (Ljava/util/concurrent/CompletableFuture;Ljava/time/Duration;)Ljava/lang/Object;
+		ARG 1 task
+		ARG 2 timeout
+	METHOD method_1_12458 throwIfCanceled ()V

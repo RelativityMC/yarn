@@ -1,0 +1,41 @@
+CLASS net/minecraft/class_1_1976 net/minecraft/client/realms/upload/HttpProxy
+	FIELD field_1_12553 EMPTY_AUTHENTICATOR Ljava/net/Authenticator;
+	FIELD field_1_12554 maxConnectTimeout Ljava/time/Duration;
+	FIELD field_1_12555 proxy Ljava/net/Proxy;
+	METHOD <init> (Ljava/net/Proxy;Ljava/time/Duration;)V
+		ARG 1 proxy
+		ARG 2 maxConnectTimeout
+	METHOD method_1_12476 send (Ljava/net/HttpURLConnection;Ljava/net/http/HttpRequest;Ljava/net/http/HttpResponse$BodyHandler;Ljava/util/concurrent/CompletableFuture;)Ljava/net/http/HttpResponse;
+		ARG 1 connection
+		ARG 2 request
+		ARG 3 bodyHandler
+		ARG 4 selfFuture
+	METHOD method_1_12477 (Ljava/net/HttpURLConnection;Ljava/lang/String;Ljava/util/List;)V
+		ARG 1 name
+		ARG 2 values
+	METHOD method_1_12478 (Ljava/net/HttpURLConnection;Ljava/lang/String;Ljava/lang/String;)V
+		ARG 2 value
+	METHOD method_1_12479 (Ljava/util/Map;Ljava/lang/String;Ljava/util/List;)V
+		ARG 1 name
+		ARG 2 values
+	METHOD method_1_12480 (Ljava/lang/String;Ljava/lang/String;)Z
+		ARG 0 name
+		ARG 1 value
+	METHOD method_1_12482 (Ljava/util/concurrent/CompletableFuture;Ljava/net/HttpURLConnection;Ljava/net/http/HttpResponse;Ljava/lang/Throwable;)V
+		ARG 2 response
+		ARG 3 ex
+	METHOD method_1_12484 getClampedMs (Ljava/time/Duration;)I
+		ARG 0 duration
+	CLASS class_1_1977 DelegateSubscriber
+		METHOD onError (Ljava/lang/Throwable;)V
+			ARG 1 throwable
+		METHOD onNext (Ljava/lang/Object;)V
+			ARG 1 item
+		METHOD onSubscribe (Ljava/util/concurrent/Flow$Subscription;)V
+			ARG 1 subscription
+	CLASS class_1_1978 ProxyHttpResponse
+		FIELD comp_1_2243 body Ljava/lang/Object;
+		FIELD comp_1_2244 headers Ljava/net/http/HttpHeaders;
+		FIELD comp_1_2245 request Ljava/net/http/HttpRequest;
+		FIELD comp_1_2246 sslSession Ljava/util/Optional;
+		FIELD comp_1_2247 statusCode I

@@ -1,2 +1,4 @@
 CLASS net/minecraft/class_1006 net/minecraft/client/render/entity/feature/WolfCollarFeatureRenderer
+	FIELD field_1_902 BABY_SKIN Lnet/minecraft/class_2960;
+	FIELD field_1_10744 COLORS Lnet/minecraft/class_1_727;
 	FIELD field_4913 SKIN Lnet/minecraft/class_2960;

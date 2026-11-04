@@ -1,0 +1,15 @@
+CLASS net/minecraft/class_1_1984 net/minecraft/client/gui/widget/EnchantmentSlotButtonWidget
+	FIELD field_1_12631 DISABLED_LEVEL_TEXTURES [Lnet/minecraft/class_2960;
+	FIELD field_1_12632 LEVEL_TEXTURES [Lnet/minecraft/class_2960;
+	FIELD field_1_12633 SLOT_DISABLED_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_12634 SLOT_HIGHLIGHTED_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_12635 SLOT_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_12640 TEXTURES Lnet/minecraft/class_8666;
+	FIELD field_1_12645 index I
+	FIELD field_1_12646 handler Lnet/minecraft/class_1718;
+	METHOD <init> (IILnet/minecraft/class_1718;ILnet/minecraft/class_4185$class_4241;)V
+		ARG 1 width
+		ARG 2 height
+		ARG 3 handler
+		ARG 4 index
+		ARG 5 onPress

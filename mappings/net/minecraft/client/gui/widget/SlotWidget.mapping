@@ -1,0 +1,68 @@
+CLASS net/minecraft/class_1_1961 net/minecraft/client/gui/widget/SlotWidget
+	FIELD field_1_12490 HEIGHT I
+	FIELD field_1_12491 DISPLAYED_ITEM_OVERRIDE_HIGHLIGHT_COLOR I
+	FIELD field_1_12492 SLOT_HIGHLIGHT_BACK_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_12493 SLOT_HIGHLIGHT_FRONT_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_12494 WIDTH I
+	FIELD field_1_12495 backgroundWidth I
+	FIELD field_1_12496 emptySlotTooltipGetter Ljava/util/function/Supplier;
+	FIELD field_1_12497 textRenderer Lnet/minecraft/class_327;
+	FIELD field_1_12498 submenuHandler Lnet/minecraft/class_9930;
+	FIELD field_1_12499 client Lnet/minecraft/class_310;
+	FIELD field_1_12500 displayedCount Ljava/lang/String;
+	FIELD field_1_12501 displayedStack Lnet/minecraft/class_1799;
+	FIELD field_1_12502 slot Lnet/minecraft/class_1735;
+	FIELD field_1_12503 tooltipGetter Ljava/util/function/Function;
+	METHOD <init> (Lnet/minecraft/class_1735;Lnet/minecraft/class_310;III)V
+		ARG 1 slot
+		ARG 2 client
+		ARG 3 backgroundWidth
+		ARG 4 x
+		ARG 5 y
+	METHOD <init> (Lnet/minecraft/class_1735;Lnet/minecraft/class_310;IIILjava/util/function/Function;Ljava/util/function/Supplier;)V
+		ARG 1 slot
+		ARG 2 client
+		ARG 3 backgroundWidth
+		ARG 4 x
+		ARG 5 y
+		ARG 6 tooltipGetter
+		ARG 7 emptySlotTooltipGetter
+	METHOD <init> (Lnet/minecraft/class_1735;Lnet/minecraft/class_310;IIILjava/util/function/Supplier;)V
+		ARG 1 slot
+		ARG 2 client
+		ARG 3 backgroundWidth
+		ARG 4 x
+		ARG 5 y
+		ARG 6 emptySlotTooltipGetter
+	METHOD method_1_12371 handleClickForSubmenu (Lnet/minecraft/class_1713;)V
+		ARG 1 actionType
+	METHOD method_1_12372 getContentsNarration ()Lnet/minecraft/class_2561;
+	METHOD method_1_12373 getNarrationText (Lnet/minecraft/class_2561;Lnet/minecraft/class_2561;)Lnet/minecraft/class_2561;
+		ARG 1 message
+		ARG 2 positionText
+	METHOD method_1_12374 getUsageNarration ()Lnet/minecraft/class_2561;
+	METHOD method_1_12375 createDefaultTooltipGetter (Lnet/minecraft/class_310;)Ljava/util/function/Function;
+		ARG 0 client
+	METHOD method_1_12376 drawHighlightTexture (Lnet/minecraft/class_332;Lnet/minecraft/class_2960;)V
+		ARG 1 context
+		ARG 2 texture
+	METHOD method_1_12377 getNarrationForStack (Lnet/minecraft/class_1799;)Lnet/minecraft/class_2561;
+		ARG 0 stack
+	METHOD method_1_12378 (Lnet/minecraft/class_310;Lnet/minecraft/class_1735;)Lnet/minecraft/class_7919;
+		ARG 1 slot
+	METHOD method_1_12380 setDisplay (Lnet/minecraft/class_1799;Ljava/lang/String;)V
+		ARG 1 displayedStack
+		ARG 2 displayedCount
+	METHOD method_1_12381 hasStickyTooltip ()Z
+	METHOD method_1_12382 getSlot ()Lnet/minecraft/class_1735;
+	METHOD method_1_12383 appendNarrations (Lnet/minecraft/class_6382;Lnet/minecraft/class_2561;Lnet/minecraft/class_2561;)V
+		ARG 1 builder
+		ARG 2 message
+		ARG 3 positionText
+	METHOD method_1_12384 appendClickableNarrations (Lnet/minecraft/class_6382;Lnet/minecraft/class_2561;Lnet/minecraft/class_2561;)V
+		ARG 1 builder
+		ARG 2 message
+		ARG 3 positionText
+	METHOD method_1_12385 setTooltipFromSlot ()V
+	METHOD method_1_12386 setRelativeX (I)V
+		ARG 1 x

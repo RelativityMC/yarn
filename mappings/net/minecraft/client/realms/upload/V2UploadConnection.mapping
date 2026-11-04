@@ -1,0 +1,68 @@
+CLASS net/minecraft/class_1_1964 net/minecraft/client/realms/upload/V2UploadConnection
+	FIELD field_1_12509 BLOCK_LIST_MS_BLOB_CONTENT_TYPE Ljava/lang/String;
+	FIELD field_1_12510 ESCAPER Lcom/google/common/escape/Escaper;
+	FIELD field_1_12511 TIMEOUT Ljava/time/Duration;
+	FIELD field_1_12512 httpRequestable Lnet/minecraft/class_1_1963;
+	FIELD field_1_12513 retrying Lnet/minecraft/class_1_1958;
+	METHOD <init> (Lnet/minecraft/class_1_1963;)V
+		ARG 1 httpRequestable
+	METHOD method_1_12416 addParamsToUrl (Ljava/net/URI;Ljava/util/Map;)Ljava/net/URI;
+		ARG 0 endpoint
+		ARG 1 params
+	METHOD method_1_12417 buildRequestBase (Ljava/net/URI;Ljava/net/http/HttpRequest$BodyPublisher;)Ljava/net/http/HttpRequest$Builder;
+		ARG 0 uploadUrl
+		ARG 1 bodyPublisher
+	METHOD method_1_12418 createBlockId (J)Ljava/lang/String;
+		ARG 0 blockNum
+	METHOD method_1_12419 blockIdsToXml (Ljava/util/List;)Ljava/lang/String;
+		ARG 0 blocks
+	METHOD method_1_12420 createBlockList (JJ)Ljava/util/List;
+		ARG 0 archiveSize
+		ARG 2 blockSize
+	METHOD method_1_12421 isRetriable (Ljava/lang/Throwable;)Z
+		ARG 0 throwable
+	METHOD method_1_12422 (Ljava/util/StringJoiner;Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 name
+		ARG 2 value
+	METHOD method_1_12425 (Ljava/util/function/Supplier;Lnet/minecraft/class_1_1964$class_1_1965;Ljava/net/http/HttpRequest$BodyPublisher;)Ljava/net/http/HttpRequest;
+		ARG 2 bodyPublisher
+	METHOD method_1_12427 (Ljava/util/function/Supplier;Ljava/net/http/HttpRequest$BodyPublisher;)Ljava/net/http/HttpRequest;
+		ARG 1 bodyPublisher
+	METHOD method_1_12429 (Ljava/util/function/Supplier;Ljava/net/http/HttpRequest$BodyPublisher;)Ljava/net/http/HttpRequest;
+		ARG 1 bodyPublisher
+	METHOD method_1_12430 getInputStreamForRange (Ljava/nio/file/Path;JJJLnet/minecraft/class_4351;)Ljava/io/InputStream;
+		ARG 0 archive
+		ARG 1 blockOffset
+		ARG 3 blockSize
+		ARG 5 fileSize
+		ARG 7 uploadProgress
+	METHOD method_1_12431 sendUploadRequest (Lorg/apache/commons/io/function/IOSupplier;JLjava/util/function/Function;Lnet/minecraft/class_1_1981$class_1_1982;Lnet/minecraft/class_1_1966;)V
+		ARG 1 inputSupplier
+		ARG 2 blockSize
+		ARG 4 requestFactory
+		ARG 5 onFail
+		ARG 6 uploadTask
+	METHOD method_1_12432 createBodyPublisherWithLength (Ljava/io/InputStream;J)Ljava/net/http/HttpRequest$BodyPublisher;
+		ARG 0 inputStream
+		ARG 1 contentLength
+	METHOD method_1_12433 upload (Lnet/minecraft/class_1_1957;Ljava/util/function/Supplier;Lnet/minecraft/class_4351;Lnet/minecraft/class_1_1966;Ljava/lang/Runnable;)V
+		ARG 1 info
+		ARG 2 sessionGetter
+		ARG 3 progress
+		ARG 4 uploadTask
+		ARG 5 onVerify
+	METHOD method_1_12434 blockUpload (Lnet/minecraft/class_1_1957;Ljava/util/function/Supplier;Lnet/minecraft/class_4351;Lnet/minecraft/class_1_1966;Ljava/lang/Runnable;)V
+		ARG 1 archiveInfo
+		ARG 2 sessionGetter
+		ARG 3 progress
+		ARG 4 uploadTask
+		ARG 5 onVerify
+	METHOD method_1_12435 singleUpload (Lnet/minecraft/class_1_1957;Ljava/util/function/Supplier;Lnet/minecraft/class_4351;Lnet/minecraft/class_1_1966;)V
+		ARG 1 info
+		ARG 2 sessionGetter
+		ARG 3 progress
+		ARG 4 uploadTask
+	CLASS 1 1
+		METHOD afterRead (I)V
+			ARG 1 bytes
+	CLASS class_1_1965 Block

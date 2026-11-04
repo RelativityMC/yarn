@@ -5,13 +5,22 @@ CLASS net/minecraft/class_1735 net/minecraft/screen/slot/Slot
 	COMMENT
 	COMMENT <p>To add slots, call {@link net.minecraft.screen.ScreenHandler#addSlot} inside
 	COMMENT the screen handler's constructor.
+	FIELD field_1_12390 type Lnet/minecraft/class_1735$class_1_1946;
 	FIELD field_7871 inventory Lnet/minecraft/class_1263;
 	FIELD field_7872 y I
 	FIELD field_7873 x I
 	FIELD field_7874 id I
 	FIELD field_7875 index I
+	METHOD <init> (Lnet/minecraft/class_1263;IIILnet/minecraft/class_1735$class_1_1946;)V
+		ARG 1 inventory
+		ARG 2 index
+		ARG 3 x
+		ARG 4 y
+		ARG 5 type
 	METHOD method_1_6277 cloneStackCreative (Lnet/minecraft/class_1657;)Lnet/minecraft/class_1799;
 		ARG 1 player
+	METHOD method_1_12201 getNarrationDescriptor ()Lnet/minecraft/class_2561;
+	METHOD method_1_12202 getType ()Lnet/minecraft/class_1735$class_1_1946;
 	METHOD method_7667 onTakeItem (Lnet/minecraft/class_1657;Lnet/minecraft/class_1799;)V
 		ARG 1 player
 		ARG 2 stack
@@ -69,3 +78,4 @@ CLASS net/minecraft/class_1735 net/minecraft/screen/slot/Slot
 		ARG 1 stack
 	METHOD method_55059 disablesDynamicDisplay ()Z
 		COMMENT {@return {@code true} to disable dynamic display for clocks and compasses}
+	CLASS class_1_1946 Type

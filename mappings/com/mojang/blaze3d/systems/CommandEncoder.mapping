@@ -95,3 +95,6 @@ CLASS net/minecraft/class_1_1329 com/mojang/blaze3d/systems/CommandEncoder
 		ARG 2 layout
 		ARG 3 attachmentTexture
 		ARG 4 moreAttachmentTextures
+	METHOD method_1_12296 clearStencilTexture (Lnet/minecraft/class_1_1318;B)V
+		ARG 1 texture
+		ARG 2 stencil

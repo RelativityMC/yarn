@@ -1,21 +1,31 @@
 CLASS net/minecraft/class_1_1279 net/minecraft/entity/movement/PathingPositionInterpolator
 	FIELD field_1_8705 destination Lnet/minecraft/class_1_1279$class_1_1280;
+	FIELD field_1_12483 trackTickInterval I
 	METHOD <init> (Lnet/minecraft/class_1297;)V
 		ARG 1 entity
+	METHOD <init> (Lnet/minecraft/class_1297;I)V
+		ARG 1 entity
+		ARG 2 trackTickInterval
 	METHOD method_1_9659 ifServer (Lnet/minecraft/class_1297;)Lnet/minecraft/class_1_1451;
 		ARG 0 entity
+	METHOD method_1_12342 ifServer (Lnet/minecraft/class_1297;I)Lnet/minecraft/class_1_1451;
+		ARG 0 entity
+		ARG 1 trackTickInterval
 	CLASS class_1_1280 Destination
 		FIELD field_1_8710 steps Ljava/util/List;
 		FIELD field_1_9193 lastStance Lnet/minecraft/class_1_1193$class_1_1195;
 		FIELD field_1_9194 totalDuration F
+		FIELD field_1_12484 lerpDuration F
 		METHOD method_1_8149 setMotionPath (Lnet/minecraft/class_1_1198;FFI)V
 			ARG 1 motion
 			ARG 2 yaw
 			ARG 3 pitch
+			ARG 4 duration
 		METHOD method_1_8853 addMotionStep (Lnet/minecraft/class_243;FFI)V
 			ARG 1 pos
 			ARG 2 yaw
 			ARG 3 pitch
+			ARG 4 duration
 		METHOD method_1_8855 getTotalTickOffset (Ljava/util/List;)I
 			ARG 0 steps
 		METHOD method_1_8857 clear ()V
@@ -23,8 +33,16 @@ CLASS net/minecraft/class_1_1279 net/minecraft/entity/movement/PathingPositionIn
 			ARG 1 pos
 			ARG 2 yaw
 			ARG 3 pitch
+		METHOD method_1_12343 tick (F)V
+			ARG 1 entityMotionRate
+		METHOD method_1_12344 advance (F)Z
+			COMMENT {@return {@code true} if there are still steps left; {@code false} if all
+			COMMENT the steps are exhausted}
+			ARG 1 ticks
 	CLASS class_1_1347 Step
+		FIELD field_1_12485 duration F
 		METHOD <init> (Lnet/minecraft/class_243;FFI)V
 			ARG 1 pos
 			ARG 2 yaw
 			ARG 3 pitch
+			ARG 4 duration

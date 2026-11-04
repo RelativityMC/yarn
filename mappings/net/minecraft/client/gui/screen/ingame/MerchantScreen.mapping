@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_492 net/minecraft/client/gui/screen/ingame/MerchantScreen
+	FIELD field_1_12505 offersWidget Lnet/minecraft/class_11467;
 	FIELD field_2950 TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_19161 selectedIndex I
 	FIELD field_26569 TRADES_TEXT Lnet/minecraft/class_2561;
@@ -29,12 +30,36 @@ CLASS net/minecraft/class_492 net/minecraft/client/gui/screen/ingame/MerchantScr
 		ARG 1 handler
 		ARG 2 inventory
 		ARG 3 title
+	METHOD method_1_12398 wrapOffersWidget (Lnet/minecraft/class_8133;)Lnet/minecraft/class_11467;
+		ARG 1 offerWidgetsLayout
+	METHOD method_1_12399 (Lnet/minecraft/class_492;Lnet/minecraft/class_339;)V
+		ARG 1 child
+	METHOD method_1_12400 (Lnet/minecraft/class_492;Lnet/minecraft/class_339;)V
+		ARG 1 child
+	METHOD method_1_12401 (ILnet/minecraft/class_4185;)V
+		ARG 2 button
+	METHOD method_1_12402 selectTrade (I)V
+		ARG 1 index
+	METHOD method_1_12403 onSetOffers ()V
 	METHOD method_19413 drawLevelInfo (Lnet/minecraft/class_332;II)V
 		ARG 1 context
 		ARG 2 x
 		ARG 3 y
 	CLASS class_493 WidgetButtonPage
+		FIELD field_1_12506 offer Lnet/minecraft/class_1914;
 		METHOD <init> (Lnet/minecraft/class_492;Lnet/minecraft/class_1914;Lnet/minecraft/class_4185$class_4241;)V
+			ARG 2 offer
 			ARG 3 onPress
+		METHOD method_1_12404 getNarrationForStack (Lnet/minecraft/class_1799;)Lnet/minecraft/class_2561;
+			ARG 0 stack
+		METHOD method_1_12405 drawBuyItem (Lnet/minecraft/class_332;Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;II)V
+			ARG 1 context
+			ARG 2 displayedFirstBuyItem
+			ARG 3 originalFirstBuyItem
+			ARG 4 x
+			ARG 5 y
+		METHOD method_1_12406 drawArrow (Lnet/minecraft/class_332;I)V
+			ARG 1 context
+			ARG 2 y
 		METHOD method_25352 renderTooltip (Lnet/minecraft/class_332;)V
 			ARG 1 context

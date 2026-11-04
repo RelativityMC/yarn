@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_7926 net/minecraft/server/command/FillBiomeCommand
+	FIELD field_1_8563 NO_CHANGES_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_41279 UNLOADED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_41281 TOO_BIG_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
 	METHOD method_47529 register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/class_7157;)V
@@ -7,8 +8,10 @@ CLASS net/minecraft/class_7926 net/minecraft/server/command/FillBiomeCommand
 	METHOD method_47530 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_47531 createBiomeSupplier (Lorg/apache/commons/lang3/mutable/MutableInt;Lnet/minecraft/class_2791;Lnet/minecraft/class_3341;Lnet/minecraft/class_6880;Ljava/util/function/Predicate;)Lnet/minecraft/class_1_1690;
+		ARG 0 filledCountOut
 		ARG 1 chunk
 		ARG 2 box
+		ARG 3 biome
 		ARG 4 filter
 	METHOD method_47533 execute (Lnet/minecraft/class_2168;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;Lnet/minecraft/class_6880$class_6883;Ljava/util/function/Predicate;)I
 		ARG 0 source
@@ -16,18 +19,32 @@ CLASS net/minecraft/class_7926 net/minecraft/server/command/FillBiomeCommand
 		ARG 2 to
 		ARG 3 biome
 		ARG 4 filter
+	METHOD method_47534 (Lnet/minecraft/class_2791;Lnet/minecraft/class_3341;Ljava/util/function/Predicate;Lnet/minecraft/class_6880;Lorg/apache/commons/lang3/mutable/MutableInt;III)Lnet/minecraft/class_6880;
+		ARG 5 x
+		ARG 6 y
+		ARG 7 z
 	METHOD method_47536 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 maximum
 		ARG 1 specified
 	METHOD method_47818 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
+	METHOD method_47819 (Lnet/minecraft/class_6880;)Z
+		ARG 0 current
 	METHOD method_55339 fillBiome (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;Lnet/minecraft/class_6880;)Lcom/mojang/datafixers/util/Either;
 		ARG 0 world
+		ARG 1 from
+		ARG 2 to
 		ARG 3 biome
 	METHOD method_55340 fillBiome (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;Lnet/minecraft/class_6880;Ljava/util/function/Predicate;Ljava/util/function/Consumer;)Lcom/mojang/datafixers/util/Either;
 		ARG 0 world
+		ARG 1 from
+		ARG 2 to
 		ARG 3 biome
 		ARG 4 filter
 		ARG 5 feedbackConsumer
 	METHOD method_55341 (Lnet/minecraft/class_2168;Ljava/util/function/Supplier;)V
 		ARG 1 feedbackSupplier
+	METHOD method_55342 (Lnet/minecraft/class_6880;)Z
+		ARG 0 current
+	METHOD method_55343 (Ljava/util/function/Supplier;)V
+		ARG 0 feedback

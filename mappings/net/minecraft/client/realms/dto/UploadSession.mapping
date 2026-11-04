@@ -1,0 +1,47 @@
+CLASS net/minecraft/class_1_1960 net/minecraft/client/realms/dto/UploadSession
+	FIELD field_1_12488 GSON Lnet/minecraft/class_4869;
+	METHOD <init> (Ljava/lang/String;Ljava/net/URI;Ljava/net/URI;Ljava/net/URI;Ljava/net/URI;Ljava/net/URI;Ljava/time/Instant;ZJJJJLjava/util/Set;)V
+		ARG 17 acceptedArchiveFormats
+	METHOD method_1_12356 getEndpointUrl (Ljava/net/URI;Ljava/lang/String;)Ljava/net/URI;
+		ARG 0 statusUrl
+		ARG 1 endpoint
+	METHOD method_1_12357 withResponse (Ljava/lang/String;Z)Lnet/minecraft/class_1_1960;
+		ARG 1 json
+		ARG 2 allowInsecure
+	METHOD method_1_12358 parseFailed (Ljava/lang/String;)Ljava/lang/IllegalArgumentException;
+		ARG 0 message
+	METHOD method_1_12359 parseUrlWithStatusDefault (Ljava/lang/String;Ljava/lang/String;Ljava/net/URI;Ljava/lang/String;Z)Ljava/net/URI;
+		ARG 0 urlString
+		ARG 1 fieldName
+		ARG 2 statusUrl
+		ARG 3 endpoint
+		ARG 4 allowInsecure
+	METHOD method_1_12360 fromResponse (Lnet/minecraft/class_1_1955$class_1_1956;Z)Lnet/minecraft/class_1_1960;
+		ARG 0 response
+		ARG 1 allowInsecure
+	METHOD method_1_12361 fromResponse (Ljava/lang/String;Z)Lnet/minecraft/class_1_1960;
+		ARG 0 json
+		ARG 1 allowInsecure
+	METHOD method_1_12362 parseUploadResponse (Ljava/lang/String;)Lnet/minecraft/class_1_1955$class_1_1956;
+		ARG 0 json
+	METHOD method_1_12363 assertFilled (Ljava/lang/Boolean;Ljava/lang/String;)Z
+		ARG 0 value
+		ARG 1 fieldName
+	METHOD method_1_12364 parseArchiveFormats (Ljava/util/Set;)Ljava/util/Set;
+		ARG 0 formats
+	METHOD method_1_12365 parseTimestamp (Ljava/lang/String;Ljava/lang/String;)Ljava/time/Instant;
+		ARG 0 timestamp
+		ARG 1 fieldName
+	METHOD method_1_12366 assertLong (Ljava/math/BigDecimal;Ljava/lang/String;)J
+		ARG 0 value
+		ARG 1 fieldName
+	METHOD method_1_12367 assertPositiveLong (Ljava/math/BigDecimal;Ljava/lang/String;)J
+		ARG 0 value
+		ARG 1 fieldName
+	METHOD method_1_12368 assertFilled (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 value
+		ARG 1 fieldName
+	METHOD method_1_12369 parseUrl (Ljava/lang/String;Ljava/lang/String;Z)Ljava/net/URI;
+		ARG 0 urlString
+		ARG 1 fieldName
+		ARG 2 allowInsecure

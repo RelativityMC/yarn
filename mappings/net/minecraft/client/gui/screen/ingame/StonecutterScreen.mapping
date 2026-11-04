@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_3979 net/minecraft/client/gui/screen/ingame/StonecutterScreen
+	FIELD field_1_12520 RECIPE_TEXTURES Lnet/minecraft/class_8666;
+	FIELD field_1_12522 lastStack Lnet/minecraft/class_1799;
+	FIELD field_1_12523 recipeList Lnet/minecraft/class_11467;
 	FIELD field_17673 TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_32372 SCROLLBAR_WIDTH I
 	FIELD field_32373 SCROLLBAR_HEIGHT I
@@ -14,4 +17,15 @@ CLASS net/minecraft/class_3979 net/minecraft/client/gui/screen/ingame/Stonecutte
 		ARG 1 handler
 		ARG 2 inventory
 		ARG 3 title
+	METHOD method_1_12444 wrapRecipeList (Lnet/minecraft/class_8133;)Lnet/minecraft/class_11467;
+		ARG 1 recipeListWidget
+	METHOD method_1_12445 updateRecipes ()V
+	METHOD method_1_12446 (Lnet/minecraft/class_3979;Lnet/minecraft/class_339;)V
+		ARG 1 child
+	METHOD method_1_12447 (Lnet/minecraft/class_3979;Lnet/minecraft/class_339;)V
+		ARG 1 child
+	METHOD method_1_12448 (ILnet/minecraft/class_4185;)V
+		ARG 2 button
+	METHOD method_1_12449 (Ljava/util/function/Supplier;)Lnet/minecraft/class_5250;
+		ARG 0 textSupplier
 	METHOD method_17955 onInventoryChange ()V

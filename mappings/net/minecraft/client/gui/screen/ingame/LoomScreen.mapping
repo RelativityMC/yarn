@@ -1,4 +1,10 @@
 CLASS net/minecraft/class_494 net/minecraft/client/gui/screen/ingame/LoomScreen
+	FIELD field_1_12468 PATTERN_BUTTON_TEXTURES Lnet/minecraft/class_8666;
+	FIELD field_1_12469 PATTERN_LIST_HEIGHT I
+	FIELD field_1_12470 PATTERN_LIST_WIDTH I
+	FIELD field_1_12471 scrollY D
+	FIELD field_1_12472 patterns Lnet/minecraft/class_11467;
+	FIELD field_1_12473 hasPatterns Z
 	FIELD field_2954 dye Lnet/minecraft/class_1799;
 	FIELD field_2955 banner Lnet/minecraft/class_1799;
 	FIELD field_2961 hasTooManyPatterns Z
@@ -23,4 +29,15 @@ CLASS net/minecraft/class_494 net/minecraft/client/gui/screen/ingame/LoomScreen
 		ARG 1 screenHandler
 		ARG 2 inventory
 		ARG 3 title
+	METHOD method_1_12318 wrapPatternList (Lnet/minecraft/class_8133;)Lnet/minecraft/class_11467;
+		ARG 1 layout
+	METHOD method_1_12319 setBannerPatterns (Ljava/util/List;Lnet/minecraft/class_1799;)V
+		ARG 1 patterns
+		ARG 2 dyeStack
+	METHOD method_1_12320 (Lnet/minecraft/class_494;Lnet/minecraft/class_339;)V
+		ARG 1 child
+	METHOD method_1_12321 (Lnet/minecraft/class_494;Lnet/minecraft/class_339;)V
+		ARG 1 child
+	METHOD method_1_12322 (ILnet/minecraft/class_4185;)V
+		ARG 2 button
 	METHOD method_17576 onInventoryChanged ()V

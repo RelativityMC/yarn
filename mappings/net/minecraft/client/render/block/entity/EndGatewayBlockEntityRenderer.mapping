@@ -1,2 +1,3 @@
 CLASS net/minecraft/class_841 net/minecraft/client/render/block/entity/EndGatewayBlockEntityRenderer
+	FIELD field_1_10759 COLORS Lnet/minecraft/class_1_727;
 	FIELD field_4409 BEAM_TEXTURE Lnet/minecraft/class_2960;

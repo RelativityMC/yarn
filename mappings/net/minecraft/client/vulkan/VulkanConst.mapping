@@ -29,3 +29,5 @@ CLASS net/minecraft/class_1_670 net/minecraft/client/vulkan/VulkanConst
 		ARG 0 presentMode
 	METHOD method_1_9092 getVkShaderStage (Lnet/minecraft/class_1_1229;)I
 		ARG 0 type
+	METHOD method_1_12282 toVulkanStencilOp (Lnet/minecraft/class_1_1948$class_1_1949;)I
+		ARG 0 stencilAction

@@ -42,6 +42,7 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 6 y
 		ARG 7 focused
 		ARG 8 texture
+		ARG 9 tall
 	METHOD method_1_2483 setPreEditWidget (Lnet/minecraft/class_4068;)V
 		ARG 1 widget
 	METHOD method_1_7768 drawTooltip (Lnet/minecraft/class_327;Ljava/util/List;Ljava/util/Optional;IILnet/minecraft/class_2960;)V
@@ -65,6 +66,26 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 	METHOD method_1_11763 getMouseX ()I
 	METHOD method_1_11764 getMouseY ()I
 	METHOD method_1_11765 getDynamicDeltaTicks ()F
+	METHOD method_1_12249 createTooltipComponents (Ljava/util/List;Ljava/util/Optional;)Ljava/util/List;
+		ARG 0 text
+		ARG 1 data
+	METHOD method_1_12250 (Ljava/util/List;Lnet/minecraft/class_5632;)V
+		ARG 1 data1
+	METHOD method_1_12251 drawTooltip (Lnet/minecraft/class_327;Ljava/util/List;Ljava/util/Optional;Lnet/minecraft/class_8000;IIZLnet/minecraft/class_2960;)V
+		ARG 1 textRenderer
+		ARG 2 text
+		ARG 3 tooltipData
+		ARG 4 positioner
+		ARG 5 x
+		ARG 6 y
+		ARG 7 focused
+		ARG 8 texture
+	METHOD method_1_12252 drawTooltip (Lnet/minecraft/class_327;Lnet/minecraft/class_1799;Lnet/minecraft/class_8000;II)V
+		ARG 1 textRenderer
+		ARG 2 stack
+		ARG 3 positioner
+		ARG 4 x
+		ARG 5 y
 	METHOD method_25290 drawTexture (Lnet/minecraft/class_1_1917;Lnet/minecraft/class_2960;IIFFIIII)V
 		COMMENT Draws a textured rectangle from a region in a texture.
 		COMMENT
@@ -244,6 +265,7 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 2 stack
 		ARG 3 x
 		ARG 4 y
+		ARG 5 displayedCount
 	METHOD method_51433 drawText (Lnet/minecraft/class_327;Ljava/lang/String;IIIZ)V
 		ARG 1 textRenderer
 		ARG 2 text
@@ -272,6 +294,9 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 5 y
 		ARG 6 focused
 	METHOD method_51437 drawTooltip (Lnet/minecraft/class_327;Ljava/util/List;Ljava/util/Optional;IILnet/minecraft/class_2960;Z)V
+		ARG 1 textRenderer
+		ARG 2 text
+		ARG 3 data
 		ARG 4 x
 		ARG 5 y
 		ARG 6 texture
@@ -479,6 +504,7 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 2 stack
 		ARG 3 x
 		ARG 4 y
+		ARG 5 displayedCount
 	METHOD method_64860 drawItemBar (Lnet/minecraft/class_1799;II)V
 		ARG 1 stack
 		ARG 2 x

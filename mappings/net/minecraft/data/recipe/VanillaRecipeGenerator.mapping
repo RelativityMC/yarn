@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_7803 net/minecraft/data/recipe/VanillaRecipeGenerator
 	FIELD field_1_8703 brewing Lnet/minecraft/class_1_1207;
+	FIELD field_1_9189 DEFAULT_SMELTING_TICKS I
 	FIELD field_40652 COAL_ORES Lcom/google/common/collect/ImmutableList;
 	FIELD field_40653 IRON_ORES Lcom/google/common/collect/ImmutableList;
 	FIELD field_40654 COPPER_ORES Lcom/google/common/collect/ImmutableList;
@@ -11,10 +12,71 @@ CLASS net/minecraft/class_7803 net/minecraft/data/recipe/VanillaRecipeGenerator
 	METHOD method_1_1551 (Lnet/minecraft/class_1860$class_1_145;Lnet/minecraft/class_3955$class_1_155;)Lnet/minecraft/class_1860;
 		ARG 0 settings
 		ARG 1 location
+	METHOD method_1_4534 (Lnet/minecraft/class_7803;Lnet/minecraft/class_1792;Lnet/minecraft/class_2248;)V
+		ARG 1 bed
+		ARG 2 wool
+	METHOD method_1_4535 (Lnet/minecraft/class_1767;)V
+		ARG 1 color
+	METHOD method_1_4537 (Lnet/minecraft/class_7803;Lnet/minecraft/class_1792;Lnet/minecraft/class_2248;)V
+		ARG 1 banner
+		ARG 2 wool
+	METHOD method_1_4538 (Lnet/minecraft/class_5955$class_5811;)V
+		ARG 1 oxidation
+	METHOD method_1_4539 (Lnet/minecraft/class_7803;Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
+		ARG 1 grate
+		ARG 2 block
+	METHOD method_1_4540 (Lnet/minecraft/class_7803;Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
+		ARG 1 bulb
+		ARG 2 block
+	METHOD method_1_4541 (Lnet/minecraft/class_5955$class_5811;)V
+		ARG 1 oxidation
+	METHOD method_1_4543 (Lnet/minecraft/class_7803;Lnet/minecraft/class_1792;Lnet/minecraft/class_1792;)V
+		ARG 1 dye
+		ARG 2 bundle
+	METHOD method_1_4544 (Lnet/minecraft/class_7803;Lnet/minecraft/class_1792;Lnet/minecraft/class_2248;)V
+		ARG 1 harness
+		ARG 2 wool
+	METHOD method_1_4545 (Lnet/minecraft/class_7803;Lnet/minecraft/class_2248;Lnet/minecraft/class_1792;)V
+		ARG 1 stainedGlass
+		ARG 2 dye
+	METHOD method_1_4546 (Lnet/minecraft/class_7803;Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
+		ARG 1 pane
+		ARG 2 block
+	METHOD method_1_4547 (Lnet/minecraft/class_7803;Lnet/minecraft/class_2248;Lnet/minecraft/class_1792;)V
+		ARG 1 pane
+		ARG 2 dye
+	METHOD method_1_4548 (Lnet/minecraft/class_7803;Lnet/minecraft/class_2248;Lnet/minecraft/class_1792;)V
+		ARG 1 terracotta
+		ARG 2 dye
+	METHOD method_1_4549 (Lnet/minecraft/class_7803;Lnet/minecraft/class_2248;Lnet/minecraft/class_1792;)V
+		ARG 1 powder
+		ARG 2 dye
+	METHOD method_1_4550 (Lnet/minecraft/class_7803;Lnet/minecraft/class_2248;Lnet/minecraft/class_1792;)V
+		ARG 1 candle
+		ARG 2 dye
+	METHOD method_1_5033 (Lnet/minecraft/class_7803;Lnet/minecraft/class_1792;Lnet/minecraft/class_1792;)V
+		ARG 1 dye
+		ARG 2 shulkerBox
+	METHOD method_1_5034 (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
+		ARG 1 cut
+		ARG 2 block
+	METHOD method_1_5035 (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
+		ARG 1 stairs
+		ARG 2 block
+	METHOD method_1_5036 (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
+		ARG 1 slab
+		ARG 2 block
+	METHOD method_1_5037 (Lnet/minecraft/class_2248;Lnet/minecraft/class_2248;)V
+		ARG 1 grate
+		ARG 2 block
 	METHOD method_1_8146 createRegistriesGenerator ()Lnet/minecraft/class_1_1269;
+	METHOD method_1_8147 (Lnet/minecraft/class_7803;Lnet/minecraft/class_1792;Lnet/minecraft/class_1792;)V
+		ARG 1 woolSlab
+		ARG 2 cushion
 	METHOD method_51694 streamSmithingTemplates ()Ljava/util/stream/Stream;
 	METHOD method_51695 (Lnet/minecraft/class_7803$class_8905;)V
 		ARG 1 template
 	METHOD method_62771 (Lnet/minecraft/class_1792;)V
 		ARG 1 item
 	CLASS class_8905 SmithingTemplate
+		METHOD method_1_12341 getSmithingTrimRecipeKey ()Lnet/minecraft/class_5321;

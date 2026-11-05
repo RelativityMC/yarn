@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_10584 net/minecraft/entity/movement/AbstractPositionInterpolator
 	FIELD field_1_8594 lastStance Lnet/minecraft/class_1_1193$class_1_1195;
 	FIELD field_55664 entity Lnet/minecraft/class_1297;
-	FIELD field_55665 trackTickInterval I
+	FIELD field_55665 lerpDuration I
 	METHOD <init> (Lnet/minecraft/class_1297;I)V
 		ARG 1 entity
 		ARG 2 trackTickInterval

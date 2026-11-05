@@ -1,0 +1,25 @@
+CLASS net/minecraft/class_1_1979 net/minecraft/client/realms/upload/V2Uploader
+	FIELD field_1_12556 connection Lnet/minecraft/class_1_1964;
+	FIELD field_1_12557 uploadTask Lnet/minecraft/class_1_1966;
+	FIELD field_1_12558 httpRequestable Lnet/minecraft/class_1_1963;
+	FIELD field_1_12559 managerCanceled Ljava/util/concurrent/atomic/AtomicBoolean;
+	FIELD field_1_12560 manager Lnet/minecraft/class_1_1973;
+	FIELD field_1_12561 session Lnet/minecraft/class_1_1960;
+	FIELD field_1_12562 state Ljava/util/concurrent/atomic/AtomicReference;
+	FIELD field_1_12563 uploadProgressTracker Lnet/minecraft/class_10239;
+	METHOD <init> (Lnet/minecraft/class_4341;Lnet/minecraft/class_10239;Lnet/minecraft/class_1_1966;)V
+		ARG 1 client
+		ARG 2 progressTracker
+		ARG 3 uploadTask
+	METHOD method_1_12486 cancel ()V
+	METHOD method_1_12487 onCanceled ()V
+	METHOD method_1_12488 assertRunning ()V
+	METHOD method_1_12490 getSession ()Lnet/minecraft/class_1_1960;
+	METHOD method_1_12491 setStateFromRunning (Lnet/minecraft/class_1_1979$class_1_1980;)Z
+		ARG 1 state
+	METHOD method_1_12492 upload (Ljava/nio/file/Path;JILjava/lang/String;)V
+		ARG 1 archive
+		ARG 2 worldId
+		ARG 4 slotId
+		ARG 5 extension
+	CLASS class_1_1980 State

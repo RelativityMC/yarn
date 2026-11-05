@@ -32,3 +32,5 @@ CLASS net/minecraft/class_1_1222 com/mojang/blaze3d/opengl/GlConst
 		ARG 0 format
 	METHOD method_1_7767 toGlType (Lnet/minecraft/class_1_658;)I
 		ARG 0 format
+	METHOD method_1_12248 toGl (Lnet/minecraft/class_1_1948$class_1_1949;)I
+		ARG 0 stencilAction

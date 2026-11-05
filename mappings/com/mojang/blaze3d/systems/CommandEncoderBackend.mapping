@@ -65,4 +65,7 @@ CLASS net/minecraft/class_1_154 com/mojang/blaze3d/systems/CommandEncoderBackend
 		ARG 1 timestampQueryPool
 		ARG 2 index
 	METHOD method_1_6231 getGpuBufferAllocator ()Lnet/minecraft/class_1_1013;
+	METHOD method_1_12370 clearStencilTexture (Lnet/minecraft/class_1_1318;B)V
+		ARG 1 texture
+		ARG 2 stencil
 	METHOD method_68346 closePass ()V

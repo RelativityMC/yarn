@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_4427 net/minecraft/client/realms/gui/screen/RealmsUploadScreen
+	FIELD field_1_12480 PROCESSING_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_12481 showProgress Z
 	FIELD field_20175 parent Lnet/minecraft/class_4410;
 	FIELD field_20176 selectedLevel Lnet/minecraft/class_34;
 	FIELD field_20177 worldId J
@@ -26,8 +28,10 @@ CLASS net/minecraft/class_4427 net/minecraft/client/realms/gui/screen/RealmsUplo
 		ARG 4 slotId
 		ARG 5 parent
 		ARG 6 selectedLevel
+	METHOD method_1_12336 setStatus (Lnet/minecraft/class_2561;)V
+		ARG 1 status
 	METHOD method_21525 onBack ()V
-	METHOD method_21526 drawUploadSpeed0 (Lnet/minecraft/class_332;J)V
+	METHOD method_21526 drawUploadSpeed (Lnet/minecraft/class_332;J)V
 		ARG 1 context
 		ARG 2 bytesPerSecond
 	METHOD method_21528 onCancel ()V
@@ -43,6 +47,8 @@ CLASS net/minecraft/class_4427 net/minecraft/client/realms/gui/screen/RealmsUplo
 	METHOD method_27460 setStatusTexts ([Lnet/minecraft/class_2561;)V
 		ARG 1 statusTexts
 	METHOD method_37014 getNarration ()Lnet/minecraft/class_2561;
+	METHOD method_56133 (Lnet/minecraft/class_4427;Lnet/minecraft/class_339;)V
+		ARG 1 child
 	METHOD method_64364 (Ljava/lang/Object;Ljava/lang/Throwable;)Ljava/lang/Object;
 		ARG 1 v
 		ARG 2 throwable

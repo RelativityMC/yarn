@@ -9,6 +9,10 @@ CLASS net/minecraft/class_1856 net/minecraft/recipe/Ingredient
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
 	METHOD method_1_7750 getUniqueEntry ()Ljava/util/Optional;
+	METHOD method_1_12246 of (Lnet/minecraft/class_6880;)Lnet/minecraft/class_1856;
+		ARG 0 item
+	METHOD method_1_12247 of ([Lnet/minecraft/class_6880;)Lnet/minecraft/class_1856;
+		ARG 0 items
 	METHOD method_8091 ofItems ([Lnet/minecraft/class_1935;)Lnet/minecraft/class_1856;
 		ARG 0 items
 	METHOD method_8101 ofItem (Lnet/minecraft/class_1935;)Lnet/minecraft/class_1856;
@@ -17,6 +21,7 @@ CLASS net/minecraft/class_1856 net/minecraft/recipe/Ingredient
 	METHOD method_8106 ofTag (Lnet/minecraft/class_6885;)Lnet/minecraft/class_1856;
 		ARG 0 tag
 	METHOD method_26964 ofItems (Ljava/util/stream/Stream;)Lnet/minecraft/class_1856;
+		ARG 0 items
 	METHOD method_61672 (Lnet/minecraft/class_1799;Lnet/minecraft/class_1856;)Ljava/lang/Boolean;
 		ARG 1 ingredient2
 	METHOD method_61673 (Lnet/minecraft/class_1856;)Lnet/minecraft/class_6885;

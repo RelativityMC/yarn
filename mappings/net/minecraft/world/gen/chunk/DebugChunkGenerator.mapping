@@ -1,7 +1,34 @@
 CLASS net/minecraft/class_2891 net/minecraft/world/gen/chunk/DebugChunkGenerator
+	FIELD field_1_12456 ENTITY_PERIOD I
+	FIELD field_1_12457 BABY_ENTITY_Y I
+	FIELD field_1_12458 ENTITY_Y I
+	FIELD field_1_12459 air Lnet/minecraft/class_2680;
+	FIELD field_1_12460 allBlockStates Ljava/util/List;
+	FIELD field_1_12461 allEntityTypes Ljava/util/List;
+	FIELD field_1_12462 barrier Lnet/minecraft/class_2680;
+	FIELD field_1_12463 entityFieldColumns I
+	FIELD field_1_12464 entityFieldRows I
+	FIELD field_1_12465 blockFieldColumns I
+	FIELD field_1_12466 blockFieldRows I
 	FIELD field_24768 CODEC Lcom/mojang/serialization/MapCodec;
+	FIELD field_31465 BLOCK_Y I
+	FIELD field_31466 BARRIER_Y I
+	FIELD field_31467 BLOCK_PERIOD I
 	METHOD <init> (Lnet/minecraft/class_6880$class_6883;)V
 		ARG 1 biomeEntry
+	METHOD method_1_12304 spawnEntity (Lnet/minecraft/class_3233;Lnet/minecraft/class_1297;)V
+		ARG 1 region
+		ARG 2 entity
+	METHOD method_1_12305 getEntityTypeAt (II)Ljava/util/Optional;
+		ARG 1 x
+		ARG 2 z
+	METHOD method_1_12306 (Lnet/minecraft/class_2248;)Ljava/util/stream/Stream;
+		ARG 0 block
+	METHOD method_1_12307 spawnEntity (Lnet/minecraft/class_3233;Lnet/minecraft/class_1299;II)V
+		ARG 1 region
+		ARG 2 entityType
+		ARG 3 x
+		ARG 4 z
 	METHOD method_12578 getBlockState (II)Lnet/minecraft/class_2680;
 		ARG 1 x
 		ARG 2 z

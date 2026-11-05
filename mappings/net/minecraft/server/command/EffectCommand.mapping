@@ -2,16 +2,22 @@ CLASS net/minecraft/class_3043 net/minecraft/server/command/EffectCommand
 	FIELD field_1_7420 CLEAR_EVERYTHING_REPORTER Lnet/minecraft/class_1_1083$class_1_1091;
 	FIELD field_1_7421 CLEAR_SPECIFIC_REPORTER Lnet/minecraft/class_1_1083$class_1_1091;
 	FIELD field_1_7422 GIVE_REPORTER Lnet/minecraft/class_1_1083$class_1_1091;
-	FIELD field_13607 GIVE_FAILED_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
-	FIELD field_13608 CLEAR_SPECIFIC_FAILED_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
+	FIELD field_1_12438 CLEAR_SPECIFIC_FAILED_MULTIPLE_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
+	FIELD field_1_12439 CLEAR_SPECIFIC_FAILED_REPORTER Lnet/minecraft/class_1_1083$class_1_1084;
+	FIELD field_1_12440 GIVE_FAILED_REPORTER Lnet/minecraft/class_1_1083$class_1_1084;
+	FIELD field_1_12441 GIVE_FAILED_MULTIPLE_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
+	FIELD field_13607 GIVE_FAILED_SINGLE_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
+	FIELD field_13608 CLEAR_SPECIFIC_FAILED_SINGLE_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_13609 CLEAR_EVERYTHING_FAILED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	METHOD method_1_6646 getEffectTicks (Ljava/lang/Integer;Lnet/minecraft/class_1291;)I
 		ARG 0 durationInput
 		ARG 1 effect
 	METHOD method_1_6647 (Lnet/minecraft/class_1309;I)Lnet/minecraft/class_2561;
 		ARG 0 entity
+		ARG 1 total
 	METHOD method_1_6648 (II)Lnet/minecraft/class_2561;
 		ARG 0 targets
+		ARG 1 total
 	METHOD method_1_6649 (Lnet/minecraft/class_1297;I)Lnet/minecraft/class_2561;
 		ARG 0 entity
 		ARG 1 total
@@ -20,8 +26,49 @@ CLASS net/minecraft/class_3043 net/minecraft/server/command/EffectCommand
 		ARG 1 total
 	METHOD method_1_6651 (Lnet/minecraft/class_1297;I)Lnet/minecraft/class_2561;
 		ARG 0 entity
+		ARG 1 total
 	METHOD method_1_6652 (II)Lnet/minecraft/class_2561;
 		ARG 0 targets
+		ARG 1 total
+	METHOD method_1_12233 giveEffects (Ljava/lang/Iterable;Lnet/minecraft/class_1309;Lnet/minecraft/class_1297;Ljava/lang/Integer;IZ)I
+		ARG 0 effects
+		ARG 1 target
+		ARG 2 source
+		ARG 3 durationInput
+		ARG 4 amplifier
+		ARG 5 showParticles
+	METHOD method_1_12234 getEffects (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_7737$class_7741;
+		ARG 0 context
+		ARG 1 name
+	METHOD method_1_12235 getEffects (Lnet/minecraft/class_7737$class_7741;)Ljava/lang/Iterable;
+		ARG 0 predicate
+	METHOD method_1_12236 (Lnet/minecraft/class_6885$class_6888;)Ljava/lang/Iterable;
+		ARG 0 effect
+	METHOD method_1_12237 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 effect
+		ARG 1 target
+	METHOD method_1_12238 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 effect
+		ARG 1 targets
+	METHOD method_1_12239 (Lnet/minecraft/class_1309;I)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+		ARG 0 entity
+		ARG 1 total
+	METHOD method_1_12240 (II)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+		ARG 0 targets
+		ARG 1 total
+	METHOD method_1_12241 (Lnet/minecraft/class_1297;I)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+		ARG 0 entity
+		ARG 1 total
+	METHOD method_1_12242 (II)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+		ARG 0 targets
+		ARG 1 total
+	METHOD method_1_12243 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 effect
+	METHOD method_1_12244 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 targets
+	METHOD method_1_12245 clearEffects (Ljava/lang/Iterable;Lnet/minecraft/class_1309;)I
+		ARG 0 effects
+		ARG 1 target
 	METHOD method_13225 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_13226 (Lcom/mojang/brigadier/context/CommandContext;)I
@@ -29,6 +76,7 @@ CLASS net/minecraft/class_3043 net/minecraft/server/command/EffectCommand
 	METHOD method_13227 executeGive (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_7737$class_7741;Ljava/lang/Integer;IZ)I
 		ARG 0 source
 		ARG 1 targets
+		ARG 2 effects
 		ARG 3 durationInput
 		ARG 4 amplifier
 		ARG 5 showParticles
@@ -43,6 +91,7 @@ CLASS net/minecraft/class_3043 net/minecraft/server/command/EffectCommand
 	METHOD method_13231 executeClear (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_7737$class_7741;)I
 		ARG 0 source
 		ARG 1 targets
+		ARG 2 effects
 	METHOD method_13232 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_13233 (Lcom/mojang/brigadier/context/CommandContext;)I

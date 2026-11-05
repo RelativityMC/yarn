@@ -168,6 +168,10 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 		ARG 1 stack
 	METHOD method_1_11741 (Lnet/minecraft/class_6880;)V
 		ARG 1 sound
+	METHOD method_1_12207 canRegenerate ()Z
+	METHOD method_1_12208 regenerate (F)V
+		ARG 1 amount
+	METHOD method_1_12209 isWearingFreezeProtectingEquipment ()Z
 	METHOD method_5673 setEquipment (Lnet/minecraft/class_1304;Lnet/minecraft/class_1799;)V
 		ARG 1 slot
 		ARG 2 stack

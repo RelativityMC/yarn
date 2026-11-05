@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_959 net/minecraft/client/render/entity/TropicalFishEntityRenderer
+	FIELD field_1_10731 BASE_COLORS Lnet/minecraft/class_1_727;
+	FIELD field_1_10732 PATTERN_COLORS Lnet/minecraft/class_1_727;
 	FIELD field_4799 largeModel Lnet/minecraft/class_583;
 	FIELD field_4800 smallModel Lnet/minecraft/class_583;
 	FIELD field_41643 A_TEXTURE Lnet/minecraft/class_2960;

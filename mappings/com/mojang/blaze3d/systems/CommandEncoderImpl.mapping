@@ -83,3 +83,5 @@ CLASS net/minecraft/class_1_1256 com/mojang/blaze3d/systems/CommandEncoderImpl
 		ARG 6 offsetY
 		ARG 7 width
 		ARG 8 height
+	METHOD method_1_12338 assertClearableStencilTexture (Lnet/minecraft/class_1_1318;)V
+		ARG 1 texture

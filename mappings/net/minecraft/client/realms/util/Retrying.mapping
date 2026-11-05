@@ -1,0 +1,20 @@
+CLASS net/minecraft/class_1_1958 net/minecraft/client/realms/util/Retrying
+	FIELD field_1_12478 MAX_RETRY_ATTEMPTS_FOR_EXPONENTIAL_BACKOFF I
+	FIELD field_1_12479 MAX_SLEEP_DURATION Ljava/time/Duration;
+	METHOD method_1_12327 getRetryDelay (Ljava/net/http/HttpResponse;I)Ljava/time/Duration;
+		ARG 1 response
+		ARG 2 retryAttempt
+	METHOD method_1_12328 getRetryDelay (Ljava/lang/String;I)Ljava/time/Duration;
+		ARG 1 retryAfter
+		ARG 2 retryAttempt
+	METHOD method_1_12329 isSuccess (I)Z
+		ARG 0 statusCode
+	METHOD method_1_12330 isRetriable (I)Z
+		ARG 0 statusCode
+	METHOD method_1_12331 (I)Z
+		ARG 0 c
+	METHOD method_1_12332 parseDuration (Ljava/lang/String;)Ljava/time/Duration;
+		ARG 1 durationString
+	METHOD method_1_12333 waitFor (Ljava/time/Duration;Lnet/minecraft/class_1_1966;)V
+		ARG 1 retryDelay
+		ARG 2 uploadTask

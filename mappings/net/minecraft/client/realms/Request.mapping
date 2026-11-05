@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_4346 net/minecraft/client/realms/Request
+	FIELD field_1_5955 NETWORK_PROTOCOL_VERSION_HEADER Ljava/lang/String;
+	FIELD field_1_9839 CLIENT_REF_HEADER Ljava/lang/String;
+	FIELD field_1_12413 canceled Ljava/util/concurrent/atomic/AtomicBoolean;
 	FIELD field_19596 connection Ljava/net/HttpURLConnection;
 	FIELD field_19597 url Ljava/lang/String;
 	FIELD field_19598 connected Z
@@ -10,6 +13,8 @@ CLASS net/minecraft/class_4346 net/minecraft/client/realms/Request
 		ARG 1 url
 		ARG 2 connectTimeout
 		ARG 3 readTimeout
+	METHOD method_1_12205 cancel ()V
+	METHOD method_1_12206 disconnectIfCanceled ()V
 	METHOD method_21038 getRetryAfterHeader ()I
 	METHOD method_21039 read (Ljava/io/InputStream;)Ljava/lang/String;
 		ARG 1 in
@@ -47,7 +52,8 @@ CLASS net/minecraft/class_4346 net/minecraft/client/realms/Request
 		ARG 1 content
 		ARG 2 connectTimeoutMillis
 		ARG 3 readTimeoutMillis
-	METHOD method_21051 text ()Ljava/lang/String;
+	METHOD method_21051 send ()Ljava/lang/String;
+		COMMENT {@return the string content of the response}
 	METHOD method_21052 getHeader (Ljava/lang/String;)Ljava/lang/String;
 		ARG 1 header
 	METHOD method_21053 put (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/class_4346;
@@ -57,6 +63,8 @@ CLASS net/minecraft/class_4346 net/minecraft/client/realms/Request
 	METHOD method_21055 doConnect ()Lnet/minecraft/class_4346;
 	METHOD method_21056 dispose ()V
 	METHOD method_54362 prerelease (Ljava/lang/String;IZ)V
+		ARG 1 clientRef
+		ARG 2 networkProtocolVersion
 		ARG 3 prerelease
 	CLASS class_4347 Delete
 	CLASS class_4348 Get

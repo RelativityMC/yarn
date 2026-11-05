@@ -6,6 +6,7 @@ CLASS net/minecraft/class_4264 net/minecraft/client/gui/widget/PressableWidget
 	METHOD method_25306 onPress (Lnet/minecraft/class_11907;)V
 		ARG 1 input
 	METHOD method_75752 drawIcon (Lnet/minecraft/class_332;)V
+		ARG 1 context
 	METHOD method_75793 drawLabel (Lnet/minecraft/class_12225;)V
 		ARG 1 drawer
 	METHOD method_75794 drawButton (Lnet/minecraft/class_332;)V

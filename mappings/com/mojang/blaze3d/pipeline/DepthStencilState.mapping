@@ -3,3 +3,14 @@ CLASS net/minecraft/class_1_386 com/mojang/blaze3d/pipeline/DepthStencilState
 	METHOD <init> (Lnet/minecraft/class_1_381;Z)V
 		ARG 1 depthTest
 		ARG 2 writeDepth
+	METHOD <init> (Lnet/minecraft/class_1_381;ZFF)V
+		ARG 1 depthTest
+		ARG 2 writeDepth
+		ARG 3 depthBiasScaleFActor
+		ARG 4 depthBiasConstant
+	METHOD <init> (Lnet/minecraft/class_1_381;ZLnet/minecraft/class_1_1948;)V
+		ARG 1 depthTest
+		ARG 2 writeDepth
+		ARG 3 stencilTest
+	METHOD <init> (Lnet/minecraft/class_1_1948;)V
+		ARG 1 stencilTest

@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_1963 net/minecraft/client/realms/upload/HttpRequestable
+	METHOD method_1_12412 fromProxy (Ljava/net/Proxy;)Lnet/minecraft/class_1_1963;
+		ARG 0 proxy
+	METHOD method_1_12413 sendAsync (Ljava/net/http/HttpRequest;Ljava/net/http/HttpResponse$BodyHandler;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 request
+		ARG 2 bodyHandler

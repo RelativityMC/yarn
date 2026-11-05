@@ -15,6 +15,8 @@ CLASS net/minecraft/class_4895 net/minecraft/client/gui/screen/ingame/SmithingSc
 		ARG 1 handler
 		ARG 2 playerInventory
 		ARG 3 title
+	METHOD method_1_12407 getEmptySlotTooltip (Lnet/minecraft/class_1735;)Lnet/minecraft/class_7919;
+		ARG 1 slot
 	METHOD method_48473 getSmithingTemplate ()Ljava/util/Optional;
 	METHOD method_48474 hasInvalidRecipe ()Z
 	METHOD method_48476 renderSlotTooltip (Lnet/minecraft/class_332;)V

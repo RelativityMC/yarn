@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_10239 net/minecraft/client/realms/util/UploadProgressTracker
+	METHOD method_1_12512 setVerifying ()V
+	METHOD method_1_12513 setProcessing ()V
 	METHOD method_64349 getUploadProgress ()Lnet/minecraft/class_4351;
 	METHOD method_64350 updateProgressDisplay ()V
 	METHOD method_64351 create ()Lnet/minecraft/class_10239;

@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_1947 net/minecraft/util/VariantMap
+	METHOD method_1_4591 values ()Ljava/util/List;
+	METHOD method_1_4593 forEach (Ljava/util/function/Consumer;)V
+		ARG 1 consumer
+	METHOD method_1_12204 map (Ljava/util/function/Function;)Lnet/minecraft/class_1_1947;
+		ARG 1 function

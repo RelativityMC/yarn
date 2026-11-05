@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_486 net/minecraft/client/gui/screen/ingame/EnchantmentScreen
+	FIELD field_1_12518 slotButtons [Lnet/minecraft/class_1_1984;
 	FIELD field_2901 BOOK_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_2904 pageTurningSpeed F
 	FIELD field_2905 nextPageTurningSpeed F
@@ -14,6 +15,16 @@ CLASS net/minecraft/class_486 net/minecraft/client/gui/screen/ingame/Enchantment
 		ARG 1 handler
 		ARG 2 inventory
 		ARG 3 title
+	METHOD method_1_12439 getEnchantmentClueText (I)Lnet/minecraft/class_2561;
+		ARG 1 index
+	METHOD method_1_12440 createTooltip (ILnet/minecraft/class_2561;)Lnet/minecraft/class_7919;
+		ARG 1 index
+		ARG 2 clueText
+	METHOD method_1_12441 (ILnet/minecraft/class_4185;)V
+		ARG 2 button
+	METHOD method_1_12442 (Lnet/minecraft/class_486;Lnet/minecraft/class_339;)V
+		ARG 1 child
+	METHOD method_1_12443 updateSlotButtons ()V
 	METHOD method_2478 doTick ()V
 	METHOD method_52223 drawBook (Lnet/minecraft/class_332;II)V
 		ARG 1 context

@@ -1,3 +1,5 @@
 CLASS net/minecraft/class_1_1839 net/minecraft/client/gui/screen/ingame/JukeboxScreen
 	FIELD field_1_11924 PLAYING_NEXT_TEXT Lnet/minecraft/class_2561;
 	FIELD field_1_11925 screenHandler Lnet/minecraft/class_1_1827;
+	METHOD method_1_12387 getSlotTooltip (Lnet/minecraft/class_1735;)Lnet/minecraft/class_7919;
+		ARG 1 slot

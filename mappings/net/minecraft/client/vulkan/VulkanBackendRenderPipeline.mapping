@@ -26,3 +26,6 @@ CLASS net/minecraft/class_1_718 net/minecraft/client/vulkan/VulkanBackendRenderP
 	METHOD method_1_10776 getDescriptorSetLayout ()J
 	METHOD method_1_10777 getMaxUniform ()I
 	METHOD method_1_10927 getHandle ()J
+	METHOD method_1_12411 setupStencilFace (Lnet/minecraft/class_1_1948$class_1_1950;Lorg/lwjgl/vulkan/VkStencilOpState;)V
+		ARG 0 op
+		ARG 1 vkStateOut

@@ -8,3 +8,7 @@ CLASS net/minecraft/class_1_1721 net/minecraft/client/render/entity/model/SmallA
 		ARG 1 equipment
 	METHOD method_1_10901 (Lnet/minecraft/class_5603;)Lnet/minecraft/class_5603;
 		ARG 0 transform
+	METHOD method_1_12325 (Lnet/minecraft/class_5603;)Lnet/minecraft/class_5603;
+		ARG 0 transform
+	METHOD method_1_12326 (Lnet/minecraft/class_5604;)Lnet/minecraft/class_5604;
+		ARG 0 cuboid

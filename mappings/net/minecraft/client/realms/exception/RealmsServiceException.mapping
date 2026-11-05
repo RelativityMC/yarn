@@ -1,4 +1,8 @@
 CLASS net/minecraft/class_4355 net/minecraft/client/realms/exception/RealmsServiceException
+	FIELD field_1_12489 retryAfter Ljava/lang/String;
 	FIELD field_36320 error Lnet/minecraft/class_4345;
 	METHOD <init> (Lnet/minecraft/class_4345;)V
 		ARG 1 error
+	METHOD <init> (Lnet/minecraft/class_4345;Ljava/lang/String;)V
+		ARG 1 error
+		ARG 2 retryAfter

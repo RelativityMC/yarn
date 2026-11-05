@@ -1,4 +1,21 @@
 CLASS net/minecraft/class_465 net/minecraft/client/gui/screen/ingame/HandledScreen
+	FIELD field_1_12572 SLOT_GROUP_EQUIPMENT_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_12574 SLOT_GROUP_FUEL_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_12576 SLOT_GROUP_HOTBAR_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_12578 SLOT_GROUP_INPUT_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_12580 SLOT_GROUP_INVENTORY_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_12584 SLOT_GROUP_RESULT_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_12586 SLOT_GROUP_SECOND_INPUT_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_12588 interpolateCursorStackMovement Z
+	FIELD field_1_12589 lastCursorStackRenderTime J
+	FIELD field_1_12590 lastCursorStackX F
+	FIELD field_1_12591 lastCursorStackY F
+	FIELD field_1_12592 doubleKeying Z
+	FIELD field_1_12593 lastClickedWidget Lnet/minecraft/class_1_1961;
+	FIELD field_1_12594 lastKeyTime J
+	FIELD field_1_12595 lastKeyScancode I
+	FIELD field_1_12596 lastKeyedSlot Lnet/minecraft/class_1_1961;
+	FIELD field_1_12597 slotGroups Ljava/util/List;
 	FIELD field_2776 x I
 	FIELD field_2778 heldButtonCode I
 	FIELD field_2779 backgroundHeight I
@@ -30,12 +47,15 @@ CLASS net/minecraft/class_465 net/minecraft/client/gui/screen/ingame/HandledScre
 		ARG 5 backgroundHeight
 	METHOD method_1_741 onFinishDrag ()V
 	METHOD method_1_742 canDrag (Lnet/minecraft/class_1_1961;Lnet/minecraft/class_1799;Z)Z
+		ARG 1 slot
 		ARG 2 stack
+		ARG 3 doubleClicking
 	METHOD method_1_8948 getClickedButton (Lnet/minecraft/class_11909;)I
 		ARG 0 click
 	METHOD method_1_10970 handleHotbarKeys (Ljava/util/function/Predicate;)Z
 		ARG 1 predicate
 	METHOD method_1_10971 onMouseRelease (Lnet/minecraft/class_1_1961;ZZI)Z
+		ARG 1 slot
 		ARG 2 doubleClicking
 		ARG 3 shift
 		ARG 4 button
@@ -45,6 +65,7 @@ CLASS net/minecraft/class_465 net/minecraft/client/gui/screen/ingame/HandledScre
 	METHOD method_1_10974 (Lnet/minecraft/class_11909;Lnet/minecraft/class_304;)Z
 		ARG 1 keybind
 	METHOD method_1_10975 onReleaseStack (Lnet/minecraft/class_1_1961;IIZZ)V
+		ARG 1 slot
 		ARG 2 id
 		ARG 3 button
 		ARG 4 pickItem
@@ -52,14 +73,38 @@ CLASS net/minecraft/class_465 net/minecraft/client/gui/screen/ingame/HandledScre
 	METHOD method_1_10976 setCursorDragging (Z)V
 		ARG 1 cursorDragging
 	METHOD method_1_10977 onMouseDrag (ZZZI)V
+		ARG 1 left
+		ARG 2 right
+		ARG 3 clone
 		ARG 4 button
 	METHOD method_1_10978 onMouseClick (Lnet/minecraft/class_1_1961;IIZZ)V
+		ARG 1 slot
 		ARG 2 id
 		ARG 3 button
 		ARG 4 clone
 		ARG 5 quickMove
 	METHOD method_1_10979 setQuickMovingStack (Lnet/minecraft/class_1735;)V
 		ARG 1 slot
+	METHOD method_1_12494 getKeyedButton (Lnet/minecraft/class_11908;)I
+		ARG 0 input
+	METHOD method_1_12495 getKeyboardFocusedWidget ()Lnet/minecraft/class_1_1961;
+	METHOD method_1_12496 getSlotTypeTitle (Lnet/minecraft/class_1735$class_1_1946;)Lnet/minecraft/class_2561;
+		ARG 1 type
+	METHOD method_1_12497 getSlotForHotbarKey ()Lnet/minecraft/class_1_1961;
+	METHOD method_1_12498 getSlotTypeNavigationOrder (Lnet/minecraft/class_1735$class_1_1946;)I
+		ARG 1 type
+	METHOD method_1_12499 (Lnet/minecraft/class_465;Lnet/minecraft/class_1_1959;)V
+		ARG 1 group
+	METHOD method_1_12500 (Lnet/minecraft/class_1735$class_1_1946;)Ljava/util/List;
+		ARG 0 type
+	METHOD method_1_12501 (Lnet/minecraft/class_1_1959;)V
+		ARG 1 group
+	METHOD method_1_12502 initializeSlotGroups (Ljava/util/List;)V
+		ARG 1 slotWidgets
+	METHOD method_1_12503 setSlotDisplay (Lnet/minecraft/class_1_1961;)V
+		ARG 1 slot
+	METHOD method_1_12504 setGroupRelativeX ()V
+	METHOD method_1_12505 initializeSlotWidgets ()V
 	METHOD method_2378 isPointWithinBounds (IIIIDD)Z
 		ARG 1 x
 		ARG 2 y
@@ -78,6 +123,7 @@ CLASS net/minecraft/class_465 net/minecraft/client/gui/screen/ingame/HandledScre
 		ARG 4 y
 	METHOD method_2383 onSlotClick (Lnet/minecraft/class_1_1961;IILnet/minecraft/class_1713;)V
 		COMMENT @see net.minecraft.screen.ScreenHandler#onSlotClick(int, int, net.minecraft.screen.slot.SlotActionType, net.minecraft.entity.player.PlayerEntity)
+		ARG 1 slot
 		ARG 2 slotId
 		ARG 3 button
 		ARG 4 slotActionType
@@ -90,9 +136,10 @@ CLASS net/minecraft/class_465 net/minecraft/client/gui/screen/ingame/HandledScre
 		ARG 1 slotId
 		ARG 2 handlerId
 		ARG 3 newState
-	METHOD method_64240 getSlotAt ()Lnet/minecraft/class_1_1961;
+	METHOD method_64240 getHoveredSlot ()Lnet/minecraft/class_1_1961;
 	METHOD method_64508 drawSlots (Lnet/minecraft/class_332;)V
 		ARG 1 context
 	METHOD method_71083 renderCursorStack (Lnet/minecraft/class_332;)V
+		ARG 1 context
 	METHOD method_71085 renderMain (Lnet/minecraft/class_332;)V
 		ARG 1 context

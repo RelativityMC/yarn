@@ -3,4 +3,7 @@ CLASS net/minecraft/class_6379 net/minecraft/client/gui/Selectable
 	METHOD method_37303 isInteractable ()Z
 	METHOD method_65516 getNarratedParts ()Ljava/util/Collection;
 	CLASS class_6380 SelectionType
+		METHOD method_1_12299 get (ZZ)Lnet/minecraft/class_6379$class_6380;
+			ARG 0 focused
+			ARG 1 hovered
 		METHOD method_37028 isFocused ()Z

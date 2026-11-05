@@ -2,6 +2,7 @@ CLASS net/minecraft/class_823 net/minecraft/client/render/block/entity/BannerBlo
 	FIELD field_1_2356 SCALING Lorg/joml/Vector3fc;
 	FIELD field_1_2357 TRANSLATION Lorg/joml/Vector3fc;
 	FIELD field_1_2358 TRANSFORMATIONS Lnet/minecraft/class_1_452;
+	FIELD field_1_10709 COLORS Lnet/minecraft/class_1_727;
 	FIELD field_32819 ROTATIONS I
 	FIELD field_55154 standingModel Lnet/minecraft/class_10378;
 	FIELD field_55155 wallModel Lnet/minecraft/class_10378;
@@ -40,6 +41,7 @@ CLASS net/minecraft/class_823 net/minecraft/client/render/block/entity/BannerBlo
 	METHOD method_58140 renderLayer (Lnet/minecraft/class_11701;Lnet/minecraft/class_4587;Lnet/minecraft/class_11785;IILnet/minecraft/class_3879;Ljava/lang/Object;Lnet/minecraft/class_1_310;Lnet/minecraft/class_1767;)V
 		ARG 0 materials
 		ARG 1 matrices
+		ARG 2 queue
 		ARG 3 light
 		ARG 4 overlay
 		ARG 5 model

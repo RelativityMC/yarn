@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_1_1947
-	METHOD method_1_4591 values ()Ljava/util/List;
-	METHOD method_1_4593 forEach (Ljava/util/function/Consumer;)V

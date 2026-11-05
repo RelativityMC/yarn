@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_9282 net/minecraft/component/type/DyedColorComponent
+	FIELD field_1_10632 COLORS Lnet/minecraft/class_1_727;
 	FIELD field_49312 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_49313 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_49314 DEFAULT_COLOR I

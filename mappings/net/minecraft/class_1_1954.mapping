@@ -1,5 +1,0 @@
-CLASS net/minecraft/class_1_1954
-	METHOD method_6230 lookAt (DDDFF)V
-	METHOD method_6231 tick ()V
-	METHOD method_20248 lookAt (DDD)V
-	METHOD method_38970 isLookingAtSpecificPosition ()Z

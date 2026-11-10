@@ -1,7 +1,6 @@
 CLASS net/minecraft/class_11412 net/minecraft/server/command/DialogCommand
-	METHOD method_71679 register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/class_7157;)V
+	METHOD method_71679 register (Lcom/mojang/brigadier/CommandDispatcher;)V
 		ARG 0 dispatcher
-		ARG 1 registryAccess
 	METHOD method_71680 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_71681 executeClear (Lnet/minecraft/class_2168;Ljava/util/Collection;)I

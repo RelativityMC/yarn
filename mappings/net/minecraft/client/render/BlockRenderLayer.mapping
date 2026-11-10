@@ -7,7 +7,6 @@ CLASS net/minecraft/class_11515 net/minecraft/client/render/BlockRenderLayer
 		ARG 5 translucent
 	METHOD method_1_2334 forTransparency (Lnet/minecraft/class_1_303;)Lnet/minecraft/class_11515;
 		ARG 0 transparency
-	METHOD method_1_2622 getVertexFormat ()Lnet/minecraft/class_1_1232;
 	METHOD method_72020 getPipeline (ZZZLnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
 		ARG 1 multidraw
 	METHOD method_72021 getBufferSize ()I

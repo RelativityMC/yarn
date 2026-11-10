@@ -8,9 +8,6 @@ CLASS net/minecraft/class_12083 net/minecraft/server/command/StopwatchCommand
 		ARG 0 dispatcher
 	METHOD method_74980 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
-	METHOD method_74981 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 context
-		ARG 1 builder
 	METHOD method_74982 executeCreate (Lnet/minecraft/class_2168;Lnet/minecraft/class_2960;)I
 		ARG 0 source
 		ARG 1 id

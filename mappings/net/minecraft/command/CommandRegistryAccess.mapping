@@ -5,10 +5,6 @@ CLASS net/minecraft/class_7157 net/minecraft/command/CommandRegistryAccess
 	COMMENT @apiNote You usually do not need to create your own instance; the command registration
 	COMMENT callbacks (such as {@link net.minecraft.server.command.CommandManager} constructor)
 	COMMENT provides an instance with proper configurations.
-	METHOD method_46722 of (Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_7699;)Lnet/minecraft/class_7157;
-		ARG 0 registries
-		ARG 1 enabledFeatures
+	METHOD method_46722 of (Lnet/minecraft/class_7699;)Lnet/minecraft/class_7157;
+		ARG 0 enabledFeatures
 	METHOD method_64226 getEnabledFeatures ()Lnet/minecraft/class_7699;
-	CLASS 1 1
-		METHOD method_56810 (Lnet/minecraft/class_7699;Lnet/minecraft/class_7225$class_7226;)Lnet/minecraft/class_7225$class_7226;
-			ARG 1 wrapper

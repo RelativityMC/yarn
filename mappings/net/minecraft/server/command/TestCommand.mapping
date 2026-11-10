@@ -58,9 +58,8 @@ CLASS net/minecraft/class_4527 net/minecraft/server/command/TestCommand
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_22270 register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/class_7157;)V
+	METHOD method_22270 register (Lcom/mojang/brigadier/CommandDispatcher;)V
 		ARG 0 dispatcher
-		ARG 1 registryAccess
 	METHOD method_22282 executeExport (Lnet/minecraft/class_2168;Lnet/minecraft/class_6880;)I
 		ARG 0 source
 		ARG 1 instance
@@ -110,8 +109,6 @@ CLASS net/minecraft/class_4527 net/minecraft/server/command/TestCommand
 		ARG 1 finderGetter
 	METHOD method_56270 (Lnet/minecraft/class_4517;)V
 		ARG 0 state
-	METHOD method_56274 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 context
 	METHOD method_57105 (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;)V
 		ARG 1 pos
 	METHOD method_66999 (Lnet/minecraft/class_10618;Lcom/mojang/brigadier/builder/ArgumentBuilder;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
@@ -120,9 +117,6 @@ CLASS net/minecraft/class_4527 net/minecraft/server/command/TestCommand
 		ARG 1 context
 	METHOD method_67001 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
-	METHOD method_67002 suggestTestFunctions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 context
-		ARG 1 builder
 	METHOD method_67003 (Lnet/minecraft/class_2168;Lnet/minecraft/class_6880$class_6883;)Z
 		ARG 1 instance
 	METHOD method_67004 (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;

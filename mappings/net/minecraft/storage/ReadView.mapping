@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_11368 net/minecraft/storage/ReadView
-	METHOD method_71414 getRegistries ()Lnet/minecraft/class_7225$class_7874;
+	METHOD method_71414 getRegistries ()Lnet/minecraft/class_7871$class_7872;
 	METHOD method_71418 read (Lcom/mojang/serialization/MapCodec;)Ljava/util/Optional;
 		ARG 1 mapCodec
 	METHOD method_71420 getOptionalReadView (Ljava/lang/String;)Ljava/util/Optional;

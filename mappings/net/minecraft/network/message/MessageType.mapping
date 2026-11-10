@@ -77,9 +77,8 @@ CLASS net/minecraft/class_2556 net/minecraft/network/message/MessageType
 	METHOD method_44833 params (Lnet/minecraft/class_5321;Lnet/minecraft/class_2168;)Lnet/minecraft/class_2556$class_7602;
 		ARG 0 typeKey
 		ARG 1 source
-	METHOD method_44834 params (Lnet/minecraft/class_5321;Lnet/minecraft/class_5455;Lnet/minecraft/class_2561;)Lnet/minecraft/class_2556$class_7602;
+	METHOD method_44834 params (Lnet/minecraft/class_5321;Lnet/minecraft/class_7871$class_7872;Lnet/minecraft/class_2561;)Lnet/minecraft/class_2556$class_7602;
 		ARG 0 typeKey
-		ARG 1 registryManager
 		ARG 2 name
 	CLASS class_7602 Parameters
 		COMMENT A record holding the message type and the decoration parameters.

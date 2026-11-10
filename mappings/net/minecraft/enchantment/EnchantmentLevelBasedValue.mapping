@@ -17,8 +17,7 @@ CLASS net/minecraft/class_9704 net/minecraft/enchantment/EnchantmentLevelBasedVa
 		ARG 0 type
 	METHOD method_60192 (Lnet/minecraft/class_9704;)Lcom/mojang/datafixers/util/Either;
 		ARG 0 type
-	METHOD method_60193 registerAndGetDefault (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
-		ARG 0 registry
+	METHOD method_60193 registerAndGetDefault (Lnet/minecraft/class_2385;)V
 	METHOD method_60194 linear (F)Lnet/minecraft/class_9704$class_9709;
 		ARG 0 base
 	METHOD method_60195 (Lnet/minecraft/class_9704;)Lnet/minecraft/class_9704;

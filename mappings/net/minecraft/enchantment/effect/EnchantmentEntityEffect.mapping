@@ -6,5 +6,4 @@ CLASS net/minecraft/class_9721 net/minecraft/enchantment/effect/EnchantmentEntit
 		ARG 3 context
 		ARG 4 user
 		ARG 5 pos
-	METHOD method_60231 registerAndGetDefault (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
-		ARG 0 registry
+	METHOD method_60231 registerAndGetDefault (Lnet/minecraft/class_2385;)V

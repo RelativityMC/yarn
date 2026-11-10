@@ -16,9 +16,6 @@ CLASS net/minecraft/class_3112 net/minecraft/server/command/ScheduleCommand
 		ARG 0 source
 	METHOD method_22834 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
-	METHOD method_22835 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 context
-		ARG 1 builder
 	METHOD method_22836 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 eventName
 	METHOD method_71690 (Lcom/mojang/brigadier/context/CommandContext;)I

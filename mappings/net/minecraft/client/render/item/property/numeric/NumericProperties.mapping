@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_10482 net/minecraft/client/render/item/property/numeric/NumericProperties
 	FIELD field_55407 CODEC Lcom/mojang/serialization/MapCodec;
-	METHOD method_65667 bootstrap (Lnet/minecraft/class_2378;)Ljava/lang/Object;
+	METHOD method_65667 bootstrap (Lnet/minecraft/class_2385;)V
 	METHOD method_65668 (Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
 		ARG 0 codec

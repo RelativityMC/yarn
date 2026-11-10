@@ -20,7 +20,7 @@ CLASS net/minecraft/class_4717 net/minecraft/client/gui/screen/ChatInputSuggesto
 	FIELD field_21607 messages Ljava/util/List;
 	FIELD field_21608 x I
 	FIELD field_21609 width I
-	FIELD field_21610 parse Lcom/mojang/brigadier/ParseResults;
+	FIELD field_21610 parse Lnet/minecraft/class_1_1996$class_1_1997;
 	FIELD field_21611 pendingSuggestions Ljava/util/concurrent/CompletableFuture;
 	FIELD field_21612 window Lnet/minecraft/class_4717$class_464;
 	FIELD field_21613 windowActive Z
@@ -41,8 +41,6 @@ CLASS net/minecraft/class_4717 net/minecraft/client/gui/screen/ChatInputSuggesto
 		ARG 9 chatScreenSized
 		ARG 10 color
 	METHOD method_1_2345 isAllowedToSend ()Z
-	METHOD method_1_2346 containsMessageArgument (Lcom/mojang/brigadier/ParseResults;)Z
-		ARG 0 parse
 	METHOD method_1_2347 calculateWidth ()V
 	METHOD method_1_2348 setSendPermissions (ZZ)V
 		ARG 1 canSendMessages
@@ -95,8 +93,6 @@ CLASS net/minecraft/class_4717 net/minecraft/client/gui/screen/ChatInputSuggesto
 	METHOD method_53868 getSuggestionUsageNarrationText ()Lnet/minecraft/class_2561;
 	METHOD method_53869 setCanLeave (Z)V
 		ARG 1 canLeave
-	CLASS class_1_326 MessageDetector
-		FIELD field_1_1926 message Z
 	CLASS class_464 SuggestionWindow
 		FIELD field_2765 completed Z
 		FIELD field_2766 selection I

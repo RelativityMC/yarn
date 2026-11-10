@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_8109 net/minecraft/entity/damage/DamageSources
-	FIELD field_42296 registry Lnet/minecraft/class_2378;
+	FIELD field_42296 registry Lnet/minecraft/class_7871;
 	FIELD field_42297 inFire Lnet/minecraft/class_1282;
 	FIELD field_42298 lightningBolt Lnet/minecraft/class_1282;
 	FIELD field_42299 onFire Lnet/minecraft/class_1282;
@@ -25,8 +25,6 @@ CLASS net/minecraft/class_8109 net/minecraft/entity/damage/DamageSources
 	FIELD field_44867 genericKill Lnet/minecraft/class_1282;
 	FIELD field_51564 campfire Lnet/minecraft/class_1282;
 	FIELD field_52430 enderPearl Lnet/minecraft/class_1282;
-	METHOD <init> (Lnet/minecraft/class_5455;)V
-		ARG 1 registryManager
 	METHOD method_48794 inFire ()Lnet/minecraft/class_1282;
 	METHOD method_48795 create (Lnet/minecraft/class_5321;)Lnet/minecraft/class_1282;
 		ARG 1 key

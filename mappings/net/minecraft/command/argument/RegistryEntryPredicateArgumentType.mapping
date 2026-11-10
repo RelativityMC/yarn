@@ -2,12 +2,10 @@ CLASS net/minecraft/class_7737 net/minecraft/command/argument/RegistryEntryPredi
 	FIELD field_40417 EXAMPLES Ljava/util/Collection;
 	FIELD field_40418 NOT_FOUND_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
 	FIELD field_40419 WRONG_TYPE_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic3CommandExceptionType;
-	FIELD field_40420 registryWrapper Lnet/minecraft/class_7225;
 	FIELD field_40421 registryRef Lnet/minecraft/class_5321;
-	METHOD <init> (Lnet/minecraft/class_7157;Lnet/minecraft/class_5321;)V
-		ARG 1 registryAccess
-		ARG 2 registryRef
-	METHOD listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+	METHOD <init> (Lnet/minecraft/class_5321;)V
+		ARG 1 registryRef
+	METHOD method_1_12878 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 context
 		ARG 2 builder
 	METHOD method_45632 (Lnet/minecraft/class_5321;Lnet/minecraft/class_6880$class_6883;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
@@ -18,9 +16,8 @@ CLASS net/minecraft/class_7737 net/minecraft/command/argument/RegistryEntryPredi
 		ARG 0 context
 		ARG 1 name
 		ARG 2 registryRef
-	METHOD method_45637 registryEntryPredicate (Lnet/minecraft/class_7157;Lnet/minecraft/class_5321;)Lnet/minecraft/class_7737;
-		ARG 0 registryRef
-		ARG 1 registryAccess
+	METHOD method_45637 registryEntryPredicate (Lnet/minecraft/class_5321;)Lcom/mojang/brigadier/arguments/ArgumentType;
+		ARG 0 registryAccess
 	METHOD method_45639 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 tag
 		ARG 1 type
@@ -28,13 +25,6 @@ CLASS net/minecraft/class_7737 net/minecraft/command/argument/RegistryEntryPredi
 		ARG 0 tag
 		ARG 1 type
 		ARG 2 expectedType
-	METHOD parse (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
-		ARG 1 reader
-	CLASS class_7738 Serializer
-		CLASS class_7739 Properties
-			FIELD field_40423 registryRef Lnet/minecraft/class_5321;
-			METHOD <init> (Lnet/minecraft/class_7737$class_7738;Lnet/minecraft/class_5321;)V
-				ARG 2 registryRef
 	CLASS class_7740 EntryBased
 		METHOD test (Ljava/lang/Object;)Z
 			ARG 1 entry

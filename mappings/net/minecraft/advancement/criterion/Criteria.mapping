@@ -61,5 +61,3 @@ CLASS net/minecraft/class_174 net/minecraft/advancement/criterion/Criteria
 	METHOD method_767 register (Ljava/lang/String;Lnet/minecraft/class_179;)Lnet/minecraft/class_179;
 		ARG 0 id
 		ARG 1 criterion
-	METHOD method_54933 getDefault (Lnet/minecraft/class_2378;)Lnet/minecraft/class_179;
-		ARG 0 registry

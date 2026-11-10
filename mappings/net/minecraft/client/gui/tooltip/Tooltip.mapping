@@ -12,7 +12,7 @@ CLASS net/minecraft/class_7919 net/minecraft/client/gui/tooltip/Tooltip
 		ARG 2 narration
 		ARG 3 data
 		ARG 4 texture
-	METHOD <init> (Lnet/minecraft/class_2561;Lnet/minecraft/class_2561;Ljava/util/Optional;Lnet/minecraft/class_2960;Z)V
+	METHOD <init> (Lnet/minecraft/class_2561;Lnet/minecraft/class_2561;Ljava/util/Optional;Lnet/minecraft/class_2960;ZZ)V
 		ARG 1 content
 		ARG 2 narration
 		ARG 3 data

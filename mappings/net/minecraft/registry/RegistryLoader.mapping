@@ -9,7 +9,7 @@ CLASS net/minecraft/class_1_102 net/minecraft/registry/RegistryLoader
 		ARG 1 entry
 		ARG 2 lifecycle
 		ARG 3 exceptionsByKey
-	METHOD method_1_453 load (Lnet/minecraft/class_6903$class_7863;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
+	METHOD method_1_453 load (Lnet/minecraft/class_7871$class_7872;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 infoGetter
 	METHOD method_1_889 freeze (Ljava/util/Map;)Z
 		ARG 1 exceptionsOut

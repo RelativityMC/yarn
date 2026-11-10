@@ -4,8 +4,6 @@ CLASS net/minecraft/class_173 net/minecraft/loot/context/LootContextTypes
 		ARG 0 builder
 	METHOD method_1_754 (Lnet/minecraft/class_176$class_177;)V
 		ARG 0 builder
-	METHOD method_1_7207 (Lnet/minecraft/class_176$class_177;)V
-		ARG 0 builder
 	METHOD method_1_8979 (Lnet/minecraft/class_176$class_177;)V
 		ARG 0 builder
 	METHOD method_1_10194 (Lnet/minecraft/class_176$class_177;)V
@@ -18,8 +16,6 @@ CLASS net/minecraft/class_173 net/minecraft/loot/context/LootContextTypes
 		ARG 0 builder
 	METHOD method_1_10198 (Lnet/minecraft/class_176$class_177;)V
 		ARG 0 builder
-	METHOD method_1_10476 registerAndGetDefault (Lnet/minecraft/class_2378;)Lnet/minecraft/class_176;
-		ARG 0 registry
 	METHOD method_1_10477 (Ljava/util/Set;Lnet/minecraft/class_176;)V
 		ARG 1 contextKey
 	METHOD method_1_10478 register (Ljava/util/function/Consumer;Lnet/minecraft/class_5321;)Lnet/minecraft/class_176;

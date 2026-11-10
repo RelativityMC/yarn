@@ -1,12 +1,13 @@
 CLASS net/minecraft/class_2191 net/minecraft/command/argument/GameProfileArgumentType
 	FIELD field_9868 EXAMPLES Ljava/util/Collection;
 	FIELD field_9869 UNKNOWN_PLAYER_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
-	METHOD listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
-		ARG 1 context
+	METHOD method_1_12878 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 2 builder
+	METHOD method_1_12879 (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/class_1_1994;)Ljava/lang/Object;
+		ARG 1 reader
 	METHOD method_9328 (Ljava/lang/String;Lnet/minecraft/class_2168;)Ljava/util/Collection;
 		ARG 1 source
-	METHOD method_9329 gameProfile ()Lnet/minecraft/class_2191;
+	METHOD method_9329 gameProfile ()Lcom/mojang/brigadier/arguments/ArgumentType;
 	METHOD method_9330 getProfileArgument (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Ljava/util/Collection;
 		ARG 0 context
 		ARG 1 name
@@ -15,11 +16,6 @@ CLASS net/minecraft/class_2191 net/minecraft/command/argument/GameProfileArgumen
 		ARG 1 allowAtSelectors
 	METHOD method_9332 (Lnet/minecraft/class_2172;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)V
 		ARG 1 builder
-	METHOD parse (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
-		ARG 1 reader
-	METHOD parse (Lcom/mojang/brigadier/StringReader;Ljava/lang/Object;)Ljava/lang/Object;
-		ARG 1 reader
-		ARG 2 source
 	CLASS class_2192 GameProfileArgument
 		METHOD method_1_239 getNames (Lnet/minecraft/class_2168;)Ljava/util/Collection;
 			ARG 1 source

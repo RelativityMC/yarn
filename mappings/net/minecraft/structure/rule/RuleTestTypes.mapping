@@ -1,3 +1,2 @@
 CLASS net/minecraft/class_1_1726 net/minecraft/structure/rule/RuleTestTypes
-	METHOD method_1_10996 registerAndGetDefault (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
-		ARG 0 registry
+	METHOD method_1_10996 registerAndGetDefault (Lnet/minecraft/class_2385;)V

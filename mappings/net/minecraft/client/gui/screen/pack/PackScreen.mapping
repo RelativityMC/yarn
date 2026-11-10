@@ -7,7 +7,7 @@ CLASS net/minecraft/class_5375 net/minecraft/client/gui/screen/pack/PackScreen
 	FIELD field_25473 selectedPackList Lnet/minecraft/class_521;
 	FIELD field_25474 file Ljava/nio/file/Path;
 	FIELD field_25475 doneButton Lnet/minecraft/class_4185;
-	FIELD field_25786 UNKNOWN_PACK Lnet/minecraft/class_2960;
+	FIELD field_25786 UNKNOWN_PACK Lnet/minecraft/class_5375$class_1_2076;
 	FIELD field_25787 directoryWatcher Lnet/minecraft/class_5375$class_5426;
 	FIELD field_25788 refreshTimeout J
 	FIELD field_25789 iconTextures Ljava/util/Map;
@@ -43,9 +43,9 @@ CLASS net/minecraft/class_5375 net/minecraft/client/gui/screen/pack/PackScreen
 		ARG 1 button
 	METHOD method_30287 getPackIconTexture (Lnet/minecraft/class_3288;)Lnet/minecraft/class_2960;
 		ARG 1 resourcePackProfile
-	METHOD method_30288 (Lnet/minecraft/class_3288;Ljava/lang/String;)Lnet/minecraft/class_2960;
+	METHOD method_30288 (Lnet/minecraft/class_3288;Ljava/lang/String;)Lnet/minecraft/class_5375$class_1_2076;
 		ARG 2 profileName
-	METHOD method_30289 loadPackIcon (Lnet/minecraft/class_1060;Lnet/minecraft/class_3288;)Lnet/minecraft/class_2960;
+	METHOD method_30289 loadPackIcon (Lnet/minecraft/class_1060;Lnet/minecraft/class_3288;)Lnet/minecraft/class_5375$class_1_2076;
 		ARG 1 textureManager
 		ARG 2 resourcePackProfile
 	METHOD method_30291 closeDirectoryWatcher ()V

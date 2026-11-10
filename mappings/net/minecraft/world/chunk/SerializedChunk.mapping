@@ -31,8 +31,7 @@ CLASS net/minecraft/class_2852 net/minecraft/world/chunk/SerializedChunk
 		ARG 0 world
 		ARG 1 entities
 		ARG 2 blockEntities
-	METHOD method_12387 readStructureReferences (Lnet/minecraft/class_5455;Lnet/minecraft/class_1923;Lnet/minecraft/class_2487;)Ljava/util/Map;
-		ARG 0 registryManager
+	METHOD method_12387 readStructureReferences (Lnet/minecraft/class_7871$class_7872;Lnet/minecraft/class_1923;Lnet/minecraft/class_2487;)Ljava/util/Map;
 		ARG 1 pos
 		ARG 2 nbt
 	METHOD method_12392 readStructureStarts (Lnet/minecraft/class_6625;Lnet/minecraft/class_2487;J)Ljava/util/Map;
@@ -82,7 +81,7 @@ CLASS net/minecraft/class_2852 net/minecraft/world/chunk/SerializedChunk
 		ARG 1 heightmaps
 	METHOD method_68294 (Ljava/util/Map;Lnet/minecraft/class_2902$class_2903;[J)V
 		ARG 2 heightmapType
-	METHOD method_68295 (Lnet/minecraft/class_2378;Lnet/minecraft/class_1923;Ljava/util/Map;Ljava/lang/String;Lnet/minecraft/class_2520;)V
+	METHOD method_68295 (Lnet/minecraft/class_1923;Lnet/minecraft/class_7871;Ljava/util/Map;Ljava/lang/String;Lnet/minecraft/class_2520;)V
 		ARG 3 id
 		ARG 4 chunkPos
 	METHOD method_68296 (Lnet/minecraft/class_1923;ILjava/lang/String;)V
@@ -90,10 +89,10 @@ CLASS net/minecraft/class_2852 net/minecraft/world/chunk/SerializedChunk
 	METHOD method_68298 (Lnet/minecraft/class_1923;ILjava/lang/String;)V
 		ARG 2 error
 	CLASS class_1_1812 Structures
-		METHOD method_1_11435 (Lnet/minecraft/class_2378;Lit/unimi/dsi/fastutil/objects/Object2IntMap;Ljava/lang/String;Lnet/minecraft/class_2520;)V
+		METHOD method_1_11435 (Lnet/minecraft/class_7871;Lit/unimi/dsi/fastutil/objects/Object2IntMap;Ljava/lang/String;Lnet/minecraft/class_2520;)V
 			ARG 2 key
 			ARG 3 value
-		METHOD method_1_11436 (Lit/unimi/dsi/fastutil/objects/Object2IntMap;Lnet/minecraft/class_3195;Lnet/minecraft/class_2487;)V
+		METHOD method_1_11436 (Lit/unimi/dsi/fastutil/objects/Object2IntMap;Lnet/minecraft/class_6880;Lnet/minecraft/class_2487;)V
 			ARG 2 valueCompound
 		METHOD method_1_11437 getReferencesByStructure ()Lit/unimi/dsi/fastutil/objects/Object2IntMap;
 	CLASS class_9314 ChunkLoadingException

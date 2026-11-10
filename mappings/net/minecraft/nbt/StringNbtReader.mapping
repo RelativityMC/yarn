@@ -17,11 +17,9 @@ CLASS net/minecraft/class_2522 net/minecraft/nbt/StringNbtReader
 		ARG 0 snbt
 	METHOD method_67310 readCompoundAsArgument (Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/class_2487;
 		ARG 0 reader
-	METHOD method_67311 expectCompound (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/class_2520;)Lnet/minecraft/class_2487;
-		ARG 0 reader
+	METHOD method_67311 expectCompound (Lnet/minecraft/class_1_2094;Lnet/minecraft/class_2520;)Lnet/minecraft/class_2487;
 		ARG 1 nbtElement
-	METHOD method_67312 read (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
-		ARG 1 reader
+	METHOD method_67312 read (Lnet/minecraft/class_1_2094;)Ljava/lang/Object;
 	METHOD method_67313 read (Ljava/lang/String;)Ljava/lang/Object;
 		ARG 1 snbt
 	METHOD method_67315 readCompound (Ljava/lang/String;)Lnet/minecraft/class_2487;

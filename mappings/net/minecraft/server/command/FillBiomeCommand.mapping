@@ -2,9 +2,8 @@ CLASS net/minecraft/class_7926 net/minecraft/server/command/FillBiomeCommand
 	FIELD field_1_8563 NO_CHANGES_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_41279 UNLOADED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_41281 TOO_BIG_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
-	METHOD method_47529 register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/class_7157;)V
+	METHOD method_47529 register (Lcom/mojang/brigadier/CommandDispatcher;)V
 		ARG 0 dispatcher
-		ARG 1 commandRegistryAccess
 	METHOD method_47530 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_47531 createBiomeSupplier (Lorg/apache/commons/lang3/mutable/MutableInt;Lnet/minecraft/class_2791;Lnet/minecraft/class_3341;Lnet/minecraft/class_6880;Ljava/util/function/Predicate;)Lnet/minecraft/class_1_1690;

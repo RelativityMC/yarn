@@ -158,11 +158,8 @@ CLASS net/minecraft/class_238 net/minecraft/util/math/Box
 		ARG 0 mutable
 	METHOD method_29968 from (Lnet/minecraft/class_243;)Lnet/minecraft/class_238;
 		ARG 0 pos
-	METHOD method_30048 withRadii (Lnet/minecraft/class_243;DDD)Lnet/minecraft/class_238;
+	METHOD method_30048 withRadii (Lnet/minecraft/class_243;DDDDDD)Lnet/minecraft/class_238;
 		ARG 0 center
-		ARG 1 radiusX
-		ARG 3 radiusY
-		ARG 5 radiusZ
 	METHOD method_35574 withMinX (D)Lnet/minecraft/class_238;
 		COMMENT {@return a new box with the minimum X provided and all other coordinates
 		COMMENT of this box}

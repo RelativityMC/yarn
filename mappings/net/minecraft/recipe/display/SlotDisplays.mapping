@@ -1,3 +1,2 @@
 CLASS net/minecraft/class_10313 net/minecraft/recipe/display/SlotDisplays
-	METHOD method_64756 registerAndGetDefault (Lnet/minecraft/class_2378;)Lnet/minecraft/class_10302$class_10312;
-		ARG 0 registries
+	METHOD method_64756 registerAndGetDefault (Lnet/minecraft/class_2385;)V

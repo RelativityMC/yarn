@@ -6,11 +6,9 @@ CLASS net/minecraft/class_10676 net/minecraft/registry/ContextSwappableRegistryL
 	METHOD <init> (Lnet/minecraft/class_7225$class_7874;)V
 		ARG 1 delegate
 	METHOD method_67088 createContextSwapper ()Lnet/minecraft/class_10678;
-	METHOD method_67089 createRegistryOps (Lcom/mojang/serialization/DynamicOps;)Lnet/minecraft/class_6903;
-		ARG 1 delegateOps
 	METHOD method_67090 hasEntries ()Z
-	CLASS 2 2
-		METHOD method_67093 (Lcom/mojang/serialization/Codec;Lnet/minecraft/class_7225$class_7874;Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
+	CLASS 1 1
+		METHOD method_67093 (Lcom/mojang/serialization/Codec;Lnet/minecraft/class_7871$class_7872;Ljava/lang/Object;)Lcom/mojang/serialization/DataResult;
 			ARG 2 encodedValue
 	CLASS class_10677 EntryLookupImpl
 		METHOD method_67094 asEntryLookup ()Lnet/minecraft/class_7871;

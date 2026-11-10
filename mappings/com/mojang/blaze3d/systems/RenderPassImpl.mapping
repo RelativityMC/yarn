@@ -45,10 +45,10 @@ CLASS net/minecraft/class_1_1227 com/mojang/blaze3d/systems/RenderPassImpl
 	METHOD method_1_7797 (Lnet/minecraft/class_1_1254;I)V
 		ARG 1 buffer
 		ARG 2 drawCount
-	METHOD method_1_7798 (Ljava/util/Collection;Lnet/minecraft/class_1_1211;Lnet/minecraft/class_5595;Ljava/util/Collection;Ljava/lang/Object;)V
+	METHOD method_1_7798 (Ljava/util/Collection;Ljava/util/Collection;Ljava/lang/Object;)V
 		ARG 1 objects
-		ARG 4 validationSkippedUniforms
-		ARG 5 uniformArgument
+		ARG 2 validationSkippedUniforms
+		ARG 3 uniformArgument
 	METHOD method_1_7799 (IIII)V
 		ARG 1 x
 		ARG 2 y

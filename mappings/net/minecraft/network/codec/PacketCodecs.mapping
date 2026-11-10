@@ -181,9 +181,6 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 		COMMENT
 		COMMENT @see #entryOf
 		ARG 0 registry
-	METHOD method_56366 registry (Lnet/minecraft/class_5321;Ljava/util/function/Function;)Lnet/minecraft/class_9139;
-		ARG 0 registry
-		ARG 1 registryTransformer
 	METHOD method_56367 registryEntry (Lnet/minecraft/class_5321;Lnet/minecraft/class_9139;)Lnet/minecraft/class_9139;
 		COMMENT {@return a codec for a {@link net.minecraft.registry.entry.RegistryEntry}}
 		COMMENT
@@ -205,8 +202,6 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 		COMMENT <p>Internally, the data is serialized as an NBT element of up to {@code 200000L}
 		COMMENT bytes.
 		ARG 0 codec
-	METHOD method_56372 (Lnet/minecraft/class_2378;)Lnet/minecraft/class_2359;
-		ARG 0 registry
 	METHOD method_56374 toCollection (Ljava/util/function/IntFunction;)Lnet/minecraft/class_9139$class_9140;
 		COMMENT Used to make a codec for a collection of values using {@link PacketCodec#collect}.
 		COMMENT
@@ -390,21 +385,18 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 		METHOD method_71583 (Lio/netty/buffer/ByteBuf;Lnet/minecraft/class_9139;Ljava/lang/Object;)V
 			ARG 2 left
 	CLASS 31 31
-	CLASS 32 32
-		METHOD method_71590 getRegistryContents (Lnet/minecraft/class_9129;)Lnet/minecraft/class_2359;
-			ARG 1 buf
-	CLASS 33 33
+	CLASS 34 34
 		FIELD field_61045 DIRECT_ID I
 		METHOD method_72191 getRegistryContents (Lnet/minecraft/class_9129;)Lnet/minecraft/class_2359;
 			ARG 1 buf
-	CLASS 34 34
+	CLASS 35 35
 		FIELD field_61046 TAG I
 		FIELD field_61047 ELEMENT_CODEC Lnet/minecraft/class_9139;
-	CLASS 35 35
+	CLASS 36 36
 		METHOD method_71596 (Lio/netty/buffer/ByteBuf;Ljava/lang/String;)V
 			ARG 0 buf
 			ARG 1 signature
 		METHOD method_71597 (Lio/netty/buffer/ByteBuf;)Ljava/lang/String;
 			ARG 0 buf1
-	CLASS 37 37
+	CLASS 38 38
 		FIELD field_60514 GSON Lcom/google/gson/Gson;

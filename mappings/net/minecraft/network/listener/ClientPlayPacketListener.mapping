@@ -117,8 +117,6 @@ CLASS net/minecraft/class_2602 net/minecraft/network/listener/ClientPlayPacketLi
 		ARG 1 packet
 	METHOD method_11144 onScoreboardObjectiveUpdate (Lnet/minecraft/class_2751;)V
 		ARG 1 packet
-	METHOD method_11145 onCommandTree (Lnet/minecraft/class_2641;)V
-		ARG 1 packet
 	METHOD method_11146 onPlaySound (Lnet/minecraft/class_2767;)V
 		ARG 1 packet
 	METHOD method_11148 onEntityStatus (Lnet/minecraft/class_2663;)V

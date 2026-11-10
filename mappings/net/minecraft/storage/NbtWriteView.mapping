@@ -8,9 +8,8 @@ CLASS net/minecraft/class_11362 net/minecraft/storage/NbtWriteView
 		ARG 3 nbt
 	METHOD method_71458 create (Lnet/minecraft/class_8942;)Lnet/minecraft/class_11362;
 		ARG 0 reporter
-	METHOD method_71459 create (Lnet/minecraft/class_8942;Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_11362;
+	METHOD method_71459 create (Lnet/minecraft/class_8942;Lnet/minecraft/class_7871$class_7872;)Lnet/minecraft/class_11362;
 		ARG 0 reporter
-		ARG 1 registries
 	METHOD method_71470 (Ljava/lang/String;Lnet/minecraft/class_2520;)V
 		ARG 2 partialValue
 	METHOD method_71474 (Lnet/minecraft/class_2520;)V

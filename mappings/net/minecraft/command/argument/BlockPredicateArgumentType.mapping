@@ -1,44 +1,41 @@
 CLASS net/minecraft/class_2252 net/minecraft/command/argument/BlockPredicateArgumentType
 	FIELD field_10672 EXAMPLES Ljava/util/Collection;
-	FIELD field_37963 registryWrapper Lnet/minecraft/class_7225;
-	METHOD <init> (Lnet/minecraft/class_7157;)V
-		ARG 1 commandRegistryAccess
-	METHOD listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+	METHOD method_1_12878 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 context
 		ARG 2 builder
 	METHOD method_9644 getBlockPredicate (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Ljava/util/function/Predicate;
 		ARG 0 context
 		ARG 1 name
-	METHOD method_9645 blockPredicate (Lnet/minecraft/class_7157;)Lnet/minecraft/class_2252;
-		ARG 0 commandRegistryAccess
-	METHOD method_41951 (Lnet/minecraft/class_2259$class_7211;)Lnet/minecraft/class_2252$class_2254;
+	METHOD method_9645 blockPredicate ()Lcom/mojang/brigadier/arguments/ArgumentType;
+	METHOD method_41951 (Lnet/minecraft/class_2259$class_7211;)Ljava/lang/Record;
 		ARG 0 result
-	METHOD method_41952 (Lnet/minecraft/class_2259$class_7212;)Lnet/minecraft/class_2252$class_2254;
+	METHOD method_41952 (Lnet/minecraft/class_2259$class_7212;)Ljava/lang/Record;
 		ARG 0 result
-	METHOD method_41953 parse (Lnet/minecraft/class_7225;Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/class_2252$class_2254;
-		ARG 0 registryWrapper
-		ARG 1 reader
-	METHOD parse (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
+	METHOD method_41953 parse (Lnet/minecraft/class_7871;Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/class_2252$class_1_2092;
 		ARG 1 reader
 	CLASS class_2253 StatePredicate
-		FIELD field_10673 properties Ljava/util/Set;
-		FIELD field_10674 state Lnet/minecraft/class_2680;
-		FIELD field_10675 nbt Lnet/minecraft/class_2487;
+		FIELD comp_1_2302 nbt Lnet/minecraft/class_2487;
+		FIELD comp_1_2303 properties Ljava/util/Set;
+		FIELD comp_1_2304 state Lnet/minecraft/class_2680;
 		METHOD <init> (Lnet/minecraft/class_2680;Ljava/util/Set;Lnet/minecraft/class_2487;)V
 			ARG 1 state
 			ARG 2 properties
 			ARG 3 nbt
+		METHOD comp_1_2302 nbt ()Lnet/minecraft/class_2487;
+		METHOD comp_1_2303 properties ()Ljava/util/Set;
+		METHOD comp_1_2304 state ()Lnet/minecraft/class_2680;
 		METHOD test (Ljava/lang/Object;)Z
 			ARG 1 context
-	CLASS class_2254 BlockPredicate
-		METHOD method_38559 hasNbt ()Z
 	CLASS class_2255 TagPredicate
-		FIELD field_10676 tag Lnet/minecraft/class_6885;
-		FIELD field_10677 nbt Lnet/minecraft/class_2487;
-		FIELD field_10678 properties Ljava/util/Map;
+		FIELD comp_1_2305 nbt Lnet/minecraft/class_2487;
+		FIELD comp_1_2306 tag Lnet/minecraft/class_6885;
+		FIELD comp_1_2307 properties Ljava/util/Map;
 		METHOD <init> (Lnet/minecraft/class_6885;Ljava/util/Map;Lnet/minecraft/class_2487;)V
 			ARG 1 tag
 			ARG 2 properties
 			ARG 3 nbt
+		METHOD comp_1_2305 nbt ()Lnet/minecraft/class_2487;
+		METHOD comp_1_2306 tag ()Lnet/minecraft/class_6885;
+		METHOD comp_1_2307 properties ()Ljava/util/Map;
 		METHOD test (Ljava/lang/Object;)Z
 			ARG 1 context

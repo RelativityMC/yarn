@@ -44,8 +44,7 @@ CLASS net/minecraft/class_430 net/minecraft/client/gui/screen/world/PresetsScree
 	METHOD method_29062 getGeneratorConfigString (Lnet/minecraft/class_3232;)Ljava/lang/String;
 		ARG 0 config
 	CLASS class_4196 SuperflatPresetsListWidget
-		METHOD <init> (Lnet/minecraft/class_430;Lnet/minecraft/class_5455;Lnet/minecraft/class_7699;)V
-			ARG 2 dynamicRegistryManager
+		METHOD <init> (Lnet/minecraft/class_430;Lnet/minecraft/class_7871$class_7872;Lnet/minecraft/class_7699;)V
 			ARG 3 featureSet
 		METHOD method_47409 (Lnet/minecraft/class_5321;)Ljava/lang/String;
 			ARG 0 key

@@ -1,10 +1,12 @@
 CLASS net/minecraft/class_2196 net/minecraft/command/argument/MessageArgumentType
 	FIELD field_9876 EXAMPLES Ljava/util/Collection;
 	FIELD field_51482 MESSAGE_TOO_LONG_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
+	METHOD method_1_12879 (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/class_1_1994;)Ljava/lang/Object;
+		ARG 1 reader
 	METHOD method_9339 getMessage (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_2561;
 		ARG 0 context
 		ARG 1 name
-	METHOD method_9340 message ()Lnet/minecraft/class_2196;
+	METHOD method_9340 message ()Lcom/mojang/brigadier/arguments/ArgumentType;
 	METHOD method_45562 getSignedMessage (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;Ljava/util/function/Consumer;)V
 		ARG 0 context
 		ARG 1 name
@@ -25,11 +27,6 @@ CLASS net/minecraft/class_2196 net/minecraft/command/argument/MessageArgumentTyp
 	METHOD method_59836 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 length
 		ARG 1 maxLength
-	METHOD parse (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
-		ARG 1 reader
-	METHOD parse (Lcom/mojang/brigadier/StringReader;Ljava/lang/Object;)Ljava/lang/Object;
-		ARG 1 reader
-		ARG 2 source
 	CLASS class_2197 MessageFormat
 		FIELD comp_2653 contents Ljava/lang/String;
 		FIELD comp_2654 selectors [Lnet/minecraft/class_2196$class_2198;

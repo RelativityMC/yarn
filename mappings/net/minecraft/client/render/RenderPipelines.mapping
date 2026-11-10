@@ -10,8 +10,6 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_1_8061 TRANSMITTANCE_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_1_9052 INTEGRATE_DEPTH Lnet/minecraft/class_1_1257;
 	FIELD field_1_9053 OIT_DEPTH_BOUNDS_CULL Lnet/minecraft/class_1_1257;
-	FIELD field_1_10373 BLIT_DEPTH Lnet/minecraft/class_1_1257;
-	FIELD field_1_10374 BLIT_DEPTH_BOUNDS Lnet/minecraft/class_1_1257;
 	FIELD field_1_10798 BLIT_SKY Lnet/minecraft/class_1_1257;
 	FIELD field_1_10807 IMPROVED_FOG_SKY_AND_CLOUDS_SNIPPET Lnet/minecraft/class_1_1257$class_1_1259;
 	FIELD field_1_12092 CACHE Ljava/util/Map;
@@ -49,7 +47,7 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 		ARG 0 parameters
 		ARG 1 name
 		ARG 2 factory
-	METHOD method_1_11841 createDynamic (Lnet/minecraft/class_10151$class_1_1853;)Ljava/util/List;
+	METHOD method_1_11841 createDynamic (Lnet/minecraft/class_10151$class_1_1853;)Ljava/util/stream/Stream;
 		ARG 0 shaderConfig
 	METHOD method_1_11842 createEndPortalPipeline (Lnet/minecraft/class_10799$class_1_1864;)Lnet/minecraft/class_1_1257;
 		ARG 0 parameters
@@ -173,8 +171,6 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 		ARG 0 builder
 	METHOD method_1_11890 (Lnet/minecraft/class_10799$class_1_1869;)Lnet/minecraft/class_1_1257;
 		ARG 0 params
-	METHOD method_1_11891 (Lnet/minecraft/class_10799$class_1_1870;)Lnet/minecraft/class_1_1257;
-		ARG 0 params
 	METHOD method_1_11892 (Lnet/minecraft/class_10799$class_1_1870;Lnet/minecraft/class_1_1257$class_1_1258;Lnet/minecraft/class_1_1257$class_1_1258;)V
 		ARG 2 builder
 	METHOD method_1_11893 (Lnet/minecraft/class_1_1257$class_1_1258;)V
@@ -183,8 +179,6 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 		ARG 0 params
 	METHOD method_1_11895 (Lnet/minecraft/class_10799$class_1_1871;Lnet/minecraft/class_1_1257$class_1_1258;)V
 		ARG 1 builder
-	METHOD method_1_11896 (Lnet/minecraft/class_10799$class_1_1872;)Lnet/minecraft/class_1_1257;
-		ARG 0 params
 	METHOD method_1_11897 (Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
 		ARG 0 stage
 	METHOD method_1_11898 (Lnet/minecraft/class_1_1257$class_1_1258;)V
@@ -219,8 +213,6 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 		ARG 0 parameters
 	METHOD method_1_11908 createTextPipeline (Lnet/minecraft/class_10799$class_1_1871;)Lnet/minecraft/class_1_1257;
 		ARG 0 parameters
-	METHOD method_1_11909 createWaterMaskPipeline (Lnet/minecraft/class_10799$class_1_1872;)Lnet/minecraft/class_1_1257;
-		ARG 0 parameters
 	METHOD method_1_11910 createWorldBorderPipeline (Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
 		ARG 0 oitStage
 	METHOD method_1_12147 createGuiPipeline (Lnet/minecraft/class_10799$class_1_1930;)Lnet/minecraft/class_1_1257;
@@ -229,7 +221,7 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 		ARG 1 oitStage
 	METHOD method_1_12149 (Lnet/minecraft/class_10799$class_1_1930;)Lnet/minecraft/class_1_1257;
 		ARG 0 paraqms
-	METHOD method_67886 getStatic ()Ljava/util/List;
+	METHOD method_67886 getStatic ()Ljava/util/stream/Stream;
 	CLASS class_1_1858 AdditiveVisualEffectParameters
 	CLASS class_1_1859 BeaconBeamParameters
 	CLASS class_1_1860 BlockParameters
@@ -244,5 +236,4 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	CLASS class_1_1869 SkyParameters
 	CLASS class_1_1870 TerrainParameters
 	CLASS class_1_1871 TextParameters
-	CLASS class_1_1872 WaterMaskParameters
 	CLASS class_1_1930 GuiParameters

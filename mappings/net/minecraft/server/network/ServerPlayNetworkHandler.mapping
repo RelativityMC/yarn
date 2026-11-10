@@ -177,9 +177,7 @@ CLASS net/minecraft/class_3244 net/minecraft/server/network/ServerPlayNetworkHan
 		ARG 1 message
 		ARG 2 command
 		ARG 3 sendAction
-	METHOD method_45002 (Lnet/minecraft/class_7448;Lnet/minecraft/class_2168;)Lnet/minecraft/class_2168;
-		ARG 2 source
-	METHOD method_45003 parse (Ljava/lang/String;)Lcom/mojang/brigadier/ParseResults;
+	METHOD method_45003 parse (Ljava/lang/String;)Lnet/minecraft/class_1_1986$class_1_1988;
 		COMMENT {@return the result of parsing {@code command}}
 		ARG 1 command
 			COMMENT the command to parse (without the leading slash)

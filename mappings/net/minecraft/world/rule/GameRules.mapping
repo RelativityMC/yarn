@@ -44,11 +44,10 @@ CLASS net/minecraft/class_1928 net/minecraft/world/rule/GameRules
 		ARG 2 rules
 	METHOD method_1_1754 (Lnet/minecraft/class_7699;Lnet/minecraft/class_12280;Lnet/minecraft/class_12279;)V
 		ARG 2 rule
-	METHOD method_8359 register (Ljava/lang/String;Lnet/minecraft/class_5198;Lnet/minecraft/class_11845;Lcom/mojang/brigadier/arguments/ArgumentType;Lcom/mojang/serialization/Codec;Ljava/lang/Object;Lnet/minecraft/class_7699;Lnet/minecraft/class_1928$class_5199;Ljava/util/function/ToIntFunction;)Lnet/minecraft/class_12279;
+	METHOD method_8359 register (Ljava/lang/String;Lnet/minecraft/class_5198;Lnet/minecraft/class_11845;Lnet/minecraft/class_1_2055$class_1_2057;Lcom/mojang/serialization/Codec;Ljava/lang/Object;Lnet/minecraft/class_7699;Lnet/minecraft/class_1928$class_5199;Ljava/util/function/ToIntFunction;)Lnet/minecraft/class_12279;
 		ARG 0 name
 		ARG 1 category
 		ARG 2 type
-		ARG 3 argumentType
 		ARG 4 codec
 		ARG 5 defaultValue
 		ARG 6 requiredFeatures
@@ -103,19 +102,15 @@ CLASS net/minecraft/class_1928 net/minecraft/world/rule/GameRules
 		ARG 2 defaultValue
 		ARG 3 minValue
 		ARG 4 maxValue
-	METHOD method_76197 registerIntRule (Ljava/lang/String;Lnet/minecraft/class_5198;IIILnet/minecraft/class_7699;)Lnet/minecraft/class_12279;
+	METHOD method_76197 registerIntRule (Ljava/lang/String;Lnet/minecraft/class_5198;ILnet/minecraft/class_2096$class_11893;Lnet/minecraft/class_7699;)Lnet/minecraft/class_12279;
 		ARG 0 name
 		ARG 1 category
 		ARG 2 defaultValue
-		ARG 3 minValue
-		ARG 4 maxValue
-		ARG 5 requiredFeatures
+		ARG 4 requiredFeatures
 	METHOD method_76198 registerBooleanRule (Ljava/lang/String;Lnet/minecraft/class_5198;Z)Lnet/minecraft/class_12279;
 		ARG 0 name
 		ARG 1 category
 		ARG 2 defaultValue
-	METHOD method_76199 registerAndGetDefault (Lnet/minecraft/class_2378;)Lnet/minecraft/class_12279;
-		ARG 0 registry
 	METHOD method_76200 getRuleValueName (Lnet/minecraft/class_12279;)Ljava/lang/String;
 		ARG 1 rule
 	CLASS class_5199 Acceptor

@@ -1,2 +1,2 @@
 CLASS net/minecraft/class_1820 net/minecraft/item/ShearsItem
-	METHOD method_58416 createToolComponent ()Lnet/minecraft/class_9424;
+	METHOD method_58416 createToolComponent (Lnet/minecraft/class_7871$class_7872;)Lnet/minecraft/class_9424;

@@ -3,31 +3,18 @@ CLASS net/minecraft/class_775 net/minecraft/client/render/block/FluidRenderer
 	FIELD field_32781 FLUID_HEIGHT F
 	METHOD <init> (Lnet/minecraft/class_1_478;)V
 		ARG 1 models
-	METHOD method_1_2989 quad (Lnet/minecraft/class_4588;FFFFFFFFFFFFFFFFFFFFIIZ)V
-		ARG 1 vertexConsumer
-		ARG 2 x0
-		ARG 3 y0
-		ARG 4 z0
-		ARG 5 u0
-		ARG 6 v0
-		ARG 7 x1
-		ARG 8 y1
-		ARG 9 z1
+	METHOD method_1_2989 quad (Lnet/minecraft/class_11515;Lnet/minecraft/class_775$class_1_473;FFFLorg/joml/Vector3fc;FFLorg/joml/Vector3fc;FFLorg/joml/Vector3fc;FFLorg/joml/Vector3fc;FFIIILnet/minecraft/class_2350;Z)V
+		ARG 7 u0
+		ARG 8 v0
 		ARG 10 u1
 		ARG 11 v1
-		ARG 12 x2
-		ARG 13 y2
-		ARG 14 z2
-		ARG 15 u2
-		ARG 16 v2
-		ARG 17 x3
-		ARG 18 y3
-		ARG 19 z3
-		ARG 20 u3
-		ARG 21 v3
-		ARG 22 color
-		ARG 23 light
-		ARG 24 twoSided
+		ARG 13 u2
+		ARG 14 v2
+		ARG 16 u3
+		ARG 17 v3
+		ARG 18 color
+		ARG 20 light
+		ARG 22 twoSided
 	METHOD method_3343 getLight (Lnet/minecraft/class_1_393;Lnet/minecraft/class_2338;)I
 		ARG 1 blockRenderView
 		ARG 2 pos
@@ -86,5 +73,3 @@ CLASS net/minecraft/class_775 net/minecraft/client/render/block/FluidRenderer
 		ARG 1 weightedAverageHeight
 		ARG 2 height
 	CLASS class_1_473 BlockVertexConsumerProvider
-		METHOD method_1_2990 get (Lnet/minecraft/class_11515;)Lnet/minecraft/class_4588;
-			ARG 1 layer

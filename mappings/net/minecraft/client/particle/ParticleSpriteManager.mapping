@@ -23,16 +23,13 @@ CLASS net/minecraft/class_11939 net/minecraft/client/particle/ParticleSpriteMana
 		ARG 4 resource
 	METHOD method_74299 (Ljava/util/concurrent/Executor;Ljava/util/Map;)Ljava/util/concurrent/CompletionStage;
 		ARG 2 resources
-	METHOD method_74300 register (Lnet/minecraft/class_2378;Lnet/minecraft/class_2396;Lnet/minecraft/class_707;)Lnet/minecraft/class_707;
-		ARG 0 registry
+	METHOD method_74300 register (Lnet/minecraft/class_2385;Lnet/minecraft/class_2396;Lnet/minecraft/class_707;)V
 		ARG 1 type
 		ARG 2 factory
-	METHOD method_74301 register (Lnet/minecraft/class_2378;Lnet/minecraft/class_2396;Lnet/minecraft/class_11939$class_4091;)Lnet/minecraft/class_707;
-		ARG 0 registry
+	METHOD method_74301 register (Lnet/minecraft/class_2385;Lnet/minecraft/class_2396;Lnet/minecraft/class_11939$class_4091;)V
 		ARG 1 type
 		ARG 2 factory
-	METHOD method_74302 register (Lnet/minecraft/class_2378;)Lnet/minecraft/class_707;
-		ARG 0 registry
+	METHOD method_74302 register (Lnet/minecraft/class_2385;)V
 	CLASS class_4090 SimpleSpriteProvider
 		FIELD field_18303 sprites Ljava/util/List;
 		METHOD method_18838 setSprites (Ljava/util/List;)V

@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_3079 net/minecraft/server/command/LocateCommand
 	FIELD field_39245 STRUCTURE_NOT_FOUND_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
-	FIELD field_39246 STRUCTURE_INVALID_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_39247 BIOME_NOT_FOUND_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_39249 POI_NOT_FOUND_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_39251 LOCATE_STRUCTURE_RADIUS I
@@ -14,39 +13,20 @@ CLASS net/minecraft/class_3079 net/minecraft/server/command/LocateCommand
 		ARG 1 y1
 		ARG 2 x2
 		ARG 3 y2
-	METHOD method_13443 register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/class_7157;)V
+	METHOD method_13443 register (Lcom/mojang/brigadier/CommandDispatcher;)V
 		ARG 0 dispatcher
-		ARG 1 registryAccess
 	METHOD method_13447 (Lnet/minecraft/class_2338;Ljava/lang/String;Lnet/minecraft/class_2583;)Lnet/minecraft/class_2583;
 		ARG 2 style
-	METHOD method_24499 sendCoordinates (Lnet/minecraft/class_2168;Lnet/minecraft/class_7066$class_7068;Lnet/minecraft/class_2338;Lcom/mojang/datafixers/util/Pair;Ljava/lang/String;ZLjava/time/Duration;)I
-		ARG 0 source
-		ARG 1 structure
-		ARG 2 currentPos
-		ARG 3 result
-		ARG 4 successMessage
-		ARG 5 includeY
-		ARG 6 timeTaken
 	METHOD method_39985 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 id
-	METHOD method_40998 (Lcom/mojang/datafixers/util/Pair;Lnet/minecraft/class_6862;)Ljava/lang/String;
-		ARG 1 key
-	METHOD method_41002 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
-		ARG 0 id
-	METHOD method_41004 (Lnet/minecraft/class_5321;)Ljava/lang/String;
-		ARG 0 key
 	METHOD method_43904 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
-	METHOD method_43905 executeLocateStructure (Lnet/minecraft/class_2168;Lnet/minecraft/class_7066$class_7068;)I
+	METHOD method_43905 executeLocateStructure (Lnet/minecraft/class_2168;Lnet/minecraft/class_7737$class_7741;)I
 		ARG 0 source
-		ARG 1 predicate
-	METHOD method_43907 getStructureListForPredicate (Lnet/minecraft/class_7066$class_7068;Lnet/minecraft/class_2378;)Ljava/util/Optional;
-		ARG 0 predicate
+	METHOD method_43907 getStructureListForPredicate (Lnet/minecraft/class_7737$class_7741;Lnet/minecraft/class_2378;)Lnet/minecraft/class_6885;
 		ARG 1 structureRegistry
 	METHOD method_43908 (Lnet/minecraft/class_6880;)Lnet/minecraft/class_6885$class_6886;
 		ARG 0 entry
-	METHOD method_43909 (Lnet/minecraft/class_2378;Lnet/minecraft/class_5321;)Ljava/util/Optional;
-		ARG 1 key
 	METHOD method_43911 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_43912 executeLocateBiome (Lnet/minecraft/class_2168;Lnet/minecraft/class_7737$class_7741;)I
@@ -77,7 +57,3 @@ CLASS net/minecraft/class_3079 net/minecraft/server/command/LocateCommand
 		ARG 4 includeY
 		ARG 5 entryString
 		ARG 6 timeTaken
-	METHOD method_45150 (Lnet/minecraft/class_7737$class_7741;Lcom/mojang/datafixers/util/Pair;Lnet/minecraft/class_6885$class_6888;)Ljava/lang/String;
-		ARG 2 tag
-	METHOD method_45151 (Lnet/minecraft/class_7737$class_7741;Lnet/minecraft/class_6880$class_6883;)Ljava/lang/String;
-		ARG 1 entry

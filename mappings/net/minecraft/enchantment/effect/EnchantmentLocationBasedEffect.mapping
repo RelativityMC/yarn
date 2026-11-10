@@ -13,5 +13,4 @@ CLASS net/minecraft/class_9722 net/minecraft/enchantment/effect/EnchantmentLocat
 		ARG 2 user
 		ARG 3 pos
 		ARG 4 level
-	METHOD method_60232 registerAndGetDefault (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
-		ARG 0 registry
+	METHOD method_60232 registerAndGetDefault (Lnet/minecraft/class_2385;)V

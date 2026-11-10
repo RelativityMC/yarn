@@ -27,8 +27,6 @@ CLASS net/minecraft/class_9701 net/minecraft/component/EnchantmentEffectComponen
 	METHOD method_60078 register (Ljava/lang/String;Ljava/util/function/UnaryOperator;)Lnet/minecraft/class_9331;
 		ARG 0 id
 		ARG 1 builderOperator
-	METHOD method_60079 getDefault (Lnet/minecraft/class_2378;)Lnet/minecraft/class_9331;
-		ARG 0 registry
 	METHOD method_60080 (Lnet/minecraft/class_9331$class_9332;)Lnet/minecraft/class_9331$class_9332;
 		ARG 0 builder
 	METHOD method_60081 (Lnet/minecraft/class_9331$class_9332;)Lnet/minecraft/class_9331$class_9332;

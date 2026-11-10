@@ -10,8 +10,4 @@ CLASS net/minecraft/class_4580 net/minecraft/command/StorageDataObject
 		ARG 0 argName
 	METHOD method_1_7015 (Ljava/lang/String;Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/class_3162;
 		ARG 1 context
-	METHOD method_22840 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 context
-		ARG 1 builder
-	METHOD method_22842 of (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/class_4565;
-		ARG 0 context
+	METHOD method_22842 of (Lnet/minecraft/server/MinecraftServer;)Lnet/minecraft/class_4565;

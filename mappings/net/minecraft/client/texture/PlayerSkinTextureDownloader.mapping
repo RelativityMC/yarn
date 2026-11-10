@@ -7,7 +7,6 @@ CLASS net/minecraft/class_10538 net/minecraft/client/texture/PlayerSkinTextureDo
 	FIELD field_62485 textureManager Lnet/minecraft/class_1060;
 	FIELD field_62486 executor Ljava/util/concurrent/Executor;
 	METHOD <init> (Ljava/net/Proxy;Lnet/minecraft/class_1060;Ljava/util/concurrent/Executor;)V
-		ARG 1 proxy
 		ARG 2 textureManager
 		ARG 3 executor
 	METHOD method_65860 registerTexture (Lnet/minecraft/class_12079$class_12081;Lnet/minecraft/class_1011;)Ljava/util/concurrent/CompletableFuture;

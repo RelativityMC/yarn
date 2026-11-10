@@ -9,8 +9,7 @@ CLASS net/minecraft/class_10665 net/minecraft/test/TestEnvironmentDefinition
 		ARG 1 world
 	METHOD method_67052 (Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
 		ARG 0 codec
-	METHOD method_67053 registerAndGetDefault (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
-		ARG 0 registry
+	METHOD method_67053 registerAndGetDefault (Lnet/minecraft/class_2385;)V
 	METHOD method_67054 teardown (Lnet/minecraft/class_3218;Ljava/lang/Object;)V
 		ARG 1 world
 		ARG 2 savedData

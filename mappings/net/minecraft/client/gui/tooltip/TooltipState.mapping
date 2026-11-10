@@ -8,7 +8,7 @@ CLASS net/minecraft/class_9110 net/minecraft/client/gui/tooltip/TooltipState
 		ARG 1 tooltip
 	METHOD method_56139 appendNarrations (Lnet/minecraft/class_6382;)V
 		ARG 1 builder
-	METHOD method_56140 createPositioner (Lnet/minecraft/class_8030;ZZ)Lnet/minecraft/class_8000;
+	METHOD method_56140 createPositioner (Lnet/minecraft/class_8030;ZZZ)Lnet/minecraft/class_8000;
 		ARG 1 focus
 		ARG 2 hovered
 		ARG 3 focused

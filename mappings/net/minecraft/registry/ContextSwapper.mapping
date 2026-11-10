@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_10678 net/minecraft/registry/ContextSwapper
-	METHOD method_67092 swapContext (Lcom/mojang/serialization/Codec;Ljava/lang/Object;Lnet/minecraft/class_7225$class_7874;)Lcom/mojang/serialization/DataResult;
+	METHOD method_67092 swapContext (Lcom/mojang/serialization/Codec;Ljava/lang/Object;Lnet/minecraft/class_7871$class_7872;)Lcom/mojang/serialization/DataResult;
 		COMMENT Recreates a value based on a new registry context (for example, for use in a
 		COMMENT different world).
 		COMMENT
@@ -7,4 +7,3 @@ CLASS net/minecraft/class_10678 net/minecraft/registry/ContextSwapper
 		COMMENT decoding it with the new one.
 		ARG 1 codec
 		ARG 2 value
-		ARG 3 registries

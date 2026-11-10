@@ -6,11 +6,10 @@ CLASS net/minecraft/class_3008 net/minecraft/server/command/AdvancementCommand
 		ARG 0 context
 	METHOD method_12980 register (Lcom/mojang/brigadier/CommandDispatcher;)V
 		ARG 0 dispatcher
-	METHOD method_12981 executeCriterion (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_3008$class_3009;Lnet/minecraft/class_8779;Ljava/lang/String;)I
+	METHOD method_12981 executeCriterion (Lnet/minecraft/class_2168;Ljava/util/Collection;Lnet/minecraft/class_3008$class_3009;Lnet/minecraft/class_6880$class_6883;Ljava/lang/String;)I
 		ARG 0 source
 		ARG 1 targets
 		ARG 2 operation
-		ARG 3 advancement
 		ARG 4 criterion
 	METHOD method_12982 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
@@ -31,21 +30,13 @@ CLASS net/minecraft/class_3008 net/minecraft/server/command/AdvancementCommand
 	METHOD method_12990 addChildrenRecursivelyToList (Lnet/minecraft/class_8781;Ljava/util/List;)V
 		ARG 0 parent
 		ARG 1 childList
-	METHOD method_12991 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 context
-		ARG 1 builder
-	METHOD method_12992 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 context
-		ARG 1 builder
 	METHOD method_12993 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_12994 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_12995 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
-	METHOD method_12996 select (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_8779;Lnet/minecraft/class_3008$class_3010;)Ljava/util/List;
-		ARG 0 context
-		ARG 1 advancement
+	METHOD method_12996 select (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_6880$class_6883;Lnet/minecraft/class_3008$class_3010;)Ljava/util/List;
 		ARG 2 selection
 	METHOD method_12997 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context

@@ -188,11 +188,10 @@ CLASS net/minecraft/class_2378 net/minecraft/registry/Registry
 	METHOD method_35842 contains (Lnet/minecraft/class_5321;)Z
 		COMMENT {@return whether {@code key} is registered in this registry}
 		ARG 1 key
-	METHOD method_39197 register (Lnet/minecraft/class_2378;Lnet/minecraft/class_5321;Ljava/lang/Object;)Ljava/lang/Object;
+	METHOD method_39197 register (Lnet/minecraft/class_2385;Lnet/minecraft/class_5321;Ljava/lang/Object;)Ljava/lang/Object;
 		COMMENT Registers {@code entry} to {@code registry} under {@code key}.
 		COMMENT
 		COMMENT @return the passed {@code entry}
-		ARG 0 registry
 		ARG 1 key
 		ARG 2 entry
 	METHOD method_39673 getCodec ()Lcom/mojang/serialization/Codec;
@@ -207,10 +206,6 @@ CLASS net/minecraft/class_2378 net/minecraft/registry/Registry
 		ARG 1 value
 	METHOD method_40272 streamTags ()Ljava/util/stream/Stream;
 	METHOD method_40276 freeze ()Lnet/minecraft/class_2378;
-	METHOD method_40286 iterateEntries (Lnet/minecraft/class_6862;)Ljava/lang/Iterable;
-		COMMENT {@return an iterable of values that are assigned {@code tag}, or an empty iterable
-		COMMENT if the tag is not known to the registry}
-		ARG 1 tag
 	METHOD method_40294 getEntryCodec ()Lcom/mojang/serialization/Codec;
 		COMMENT {@return the codec for serializing the registry entry of {@code T}}
 		COMMENT

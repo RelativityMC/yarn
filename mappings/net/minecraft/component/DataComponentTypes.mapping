@@ -102,8 +102,6 @@ CLASS net/minecraft/class_9334 net/minecraft/component/DataComponentTypes
 		ARG 0 builder
 	METHOD method_57904 (Lnet/minecraft/class_9331$class_9332;)Lnet/minecraft/class_9331$class_9332;
 		ARG 0 builder
-	METHOD method_57905 getDefault (Lnet/minecraft/class_2378;)Lnet/minecraft/class_9331;
-		ARG 0 registry
 	METHOD method_57906 register (Ljava/lang/String;Ljava/util/function/UnaryOperator;)Lnet/minecraft/class_9331;
 		ARG 0 id
 		ARG 1 builderOperator

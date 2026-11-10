@@ -4,5 +4,3 @@ CLASS net/minecraft/class_21 net/minecraft/item/map/MapDecorationTypes
 		ARG 1 assetId
 		ARG 2 showOnItemFrame
 		ARG 3 trackCount
-	METHOD method_58455 getDefault (Lnet/minecraft/class_2378;)Lnet/minecraft/class_6880;
-		ARG 0 registry

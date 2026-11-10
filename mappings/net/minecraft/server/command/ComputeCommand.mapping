@@ -1,28 +1,24 @@
 CLASS net/minecraft/class_1_1489 net/minecraft/server/command/ComputeCommand
 	FIELD field_1_10371 NAMED_INVALID_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
 	FIELD field_1_10372 UNNAMED_INVALID_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
-	METHOD method_1_9927 execute (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_1_1493$class_1_1494;Lnet/minecraft/class_6880;F)I
+	METHOD method_1_9927 execute (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_176;Lnet/minecraft/class_1_1493$class_1_1494;Lnet/minecraft/class_1_2034;F)I
 		ARG 0 context
-		ARG 1 target
-		ARG 2 provider
-		ARG 3 scale
-	METHOD method_1_9928 executeInteger (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_1_1493$class_1_1494;Lnet/minecraft/class_6880;)I
+		ARG 4 scale
+	METHOD method_1_9928 executeInteger (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_176;Lnet/minecraft/class_1_1493$class_1_1494;Lnet/minecraft/class_1_2034;)I
 		ARG 0 context
-		ARG 1 target
-		ARG 2 provider
+		ARG 2 target
 	METHOD method_1_9930 (ILnet/minecraft/class_5321;)Lnet/minecraft/class_5250;
 		ARG 1 key
 	METHOD method_1_9933 (FILnet/minecraft/class_5321;)Lnet/minecraft/class_5250;
 		ARG 2 key
-	METHOD method_1_9935 (Lnet/minecraft/class_7157;Lnet/minecraft/class_1_1493$class_1_1494;Ljava/util/function/Consumer;)V
-		ARG 1 target
+	METHOD method_1_9935 (Lnet/minecraft/class_1_1493$class_1_1494;Lnet/minecraft/class_176;Ljava/util/function/Consumer;)V
 		ARG 2 then
-	METHOD method_1_9936 (Lnet/minecraft/class_1_1493$class_1_1494;Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 1 context
-	METHOD method_1_9937 (Lnet/minecraft/class_1_1493$class_1_1494;Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 1 context
-	METHOD method_1_9938 (Lnet/minecraft/class_1_1493$class_1_1494;Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 1 context
+	METHOD method_1_9936 (Lnet/minecraft/class_176;Lnet/minecraft/class_1_1493$class_1_1494;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 2 context
+	METHOD method_1_9937 (Lnet/minecraft/class_176;Lnet/minecraft/class_1_1493$class_1_1494;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 2 context
+	METHOD method_1_9938 (Lnet/minecraft/class_176;Lnet/minecraft/class_1_1493$class_1_1494;Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 2 context
 	METHOD method_1_9939 sendFeedbackExact (Lnet/minecraft/class_2168;Lnet/minecraft/class_6880;I)V
 		ARG 0 source
 		ARG 1 provider
@@ -32,9 +28,8 @@ CLASS net/minecraft/class_1_1489 net/minecraft/server/command/ComputeCommand
 		ARG 1 provider
 		ARG 2 rounded
 		ARG 3 exact
-	METHOD method_1_9941 register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/class_7157;)V
+	METHOD method_1_9941 register (Lcom/mojang/brigadier/CommandDispatcher;)V
 		ARG 0 dispatcher
-		ARG 1 registryAccess
 	METHOD method_1_10249 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 name
 		ARG 1 message

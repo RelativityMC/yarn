@@ -76,9 +76,6 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_1_7339 drawOitTranslucentGeometry (Lnet/minecraft/class_11532;Lnet/minecraft/class_11684$class_1_875;)V
 		ARG 1 sectionRenderState
 		ARG 2 preparedFrame
-	METHOD method_1_7340 drawWaterMask (Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_276;)V
-		ARG 1 preparedFrame
-		ARG 2 mainFramebuffer
 	METHOD method_1_7341 drawOutlines (Lnet/minecraft/class_11684$class_1_875;)V
 		ARG 1 preparedFrame
 	METHOD method_1_7342 renderSolidGeometry (Lnet/minecraft/class_11532;Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_1_1317;)V
@@ -90,7 +87,6 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 1 preparedFrame
 		ARG 2 framebuffer
 		ARG 3 hasPostEffects
-	METHOD method_1_8617 oitCullDepthBounds ()V
 	METHOD method_1_8618 hasAlwaysOnTopPrimitives ()Z
 	METHOD method_1_9180 getSectionGeomtries (ZLjava/util/List;Ljava/util/Map;)I
 		ARG 1 sortTranslucent
@@ -167,9 +163,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 2 fogBuffer
 	METHOD method_62202 renderMain (Lnet/minecraft/class_9909;Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_1_1254;Lnet/minecraft/class_11532;Z)V
 		ARG 1 frameGraphBuilder
-		ARG 2 preparedFrame
 		ARG 3 fogBuffer
-		ARG 4 sectionRenderState
 		ARG 5 hasPostEffects
 	METHOD method_62206 renderBlockDamage (Lnet/minecraft/class_4587;Lnet/minecraft/class_11659;Lnet/minecraft/class_11658;)V
 		ARG 1 matrices

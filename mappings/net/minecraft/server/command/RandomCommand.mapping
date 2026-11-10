@@ -5,8 +5,7 @@ CLASS net/minecraft/class_8602 net/minecraft/server/command/RandomCommand
 		ARG 0 dispatcher
 	METHOD method_52319 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
-	METHOD method_52320 suggestSequences (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 context
+	METHOD method_52320 suggestSequences (Lnet/minecraft/server/MinecraftServer;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 suggestionsBuilder
 	METHOD method_52321 executeReset (Lnet/minecraft/class_2168;)I
 		ARG 0 source
@@ -34,7 +33,6 @@ CLASS net/minecraft/class_8602 net/minecraft/server/command/RandomCommand
 		ARG 1 roll
 	METHOD method_52327 (Ljava/util/List;Lnet/minecraft/class_2960;Lnet/minecraft/class_8564;)V
 		ARG 1 id
-		ARG 2 sequence
 	METHOD method_52328 (ZLcom/mojang/brigadier/context/CommandContext;)I
 		ARG 1 context
 	METHOD method_52331 (Lcom/mojang/brigadier/context/CommandContext;)I

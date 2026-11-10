@@ -4,7 +4,7 @@ CLASS net/minecraft/class_3043 net/minecraft/server/command/EffectCommand
 	FIELD field_1_7422 GIVE_REPORTER Lnet/minecraft/class_1_1083$class_1_1091;
 	FIELD field_1_12438 CLEAR_SPECIFIC_FAILED_MULTIPLE_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_1_12439 CLEAR_SPECIFIC_FAILED_REPORTER Lnet/minecraft/class_1_1083$class_1_1084;
-	FIELD field_1_12440 GIVE_FAILED_REPORTER Lnet/minecraft/class_1_1083$class_1_1084;
+	FIELD field_1_12440 GIVE_FAILED_REPORTER Lnet/minecraft/class_1_1083$class_1_1085;
 	FIELD field_1_12441 GIVE_FAILED_MULTIPLE_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
 	FIELD field_13607 GIVE_FAILED_SINGLE_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
 	FIELD field_13608 CLEAR_SPECIFIC_FAILED_SINGLE_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
@@ -50,12 +50,10 @@ CLASS net/minecraft/class_3043 net/minecraft/server/command/EffectCommand
 	METHOD method_1_12238 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 effect
 		ARG 1 targets
-	METHOD method_1_12239 (Lnet/minecraft/class_1309;I)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+	METHOD method_1_12239 (Lnet/minecraft/class_1309;ILjava/lang/Integer;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
 		ARG 0 entity
-		ARG 1 total
-	METHOD method_1_12240 (II)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+	METHOD method_1_12240 (IILjava/lang/Integer;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
 		ARG 0 targets
-		ARG 1 total
 	METHOD method_1_12241 (Lnet/minecraft/class_1297;I)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
 		ARG 0 entity
 		ARG 1 total
@@ -82,9 +80,8 @@ CLASS net/minecraft/class_3043 net/minecraft/server/command/EffectCommand
 		ARG 5 showParticles
 	METHOD method_13228 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
-	METHOD method_13229 register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/class_7157;)V
+	METHOD method_13229 register (Lcom/mojang/brigadier/CommandDispatcher;)V
 		ARG 0 dispatcher
-		ARG 1 registryAccess
 	METHOD method_13230 executeClear (Lnet/minecraft/class_2168;Ljava/util/Collection;)I
 		ARG 0 source
 		ARG 1 targets

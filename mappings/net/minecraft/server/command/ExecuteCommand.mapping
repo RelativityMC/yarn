@@ -5,23 +5,23 @@ CLASS net/minecraft/class_3050 net/minecraft/server/command/ExecuteCommand
 	FIELD field_33390 MAX_BLOCKS I
 	FIELD field_46642 INSTANTIATION_FAILURE_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
 	FIELD field_60332 LOGGER Lorg/slf4j/Logger;
-	METHOD method_1_6655 testItemPredicate (Lnet/minecraft/class_2168;Lnet/minecraft/class_1_1061;Lnet/minecraft/class_1_1077$class_1_1080;Ljava/util/function/Predicate;)I
+	METHOD method_1_6655 testItemPredicate (Lnet/minecraft/class_2168;Lnet/minecraft/class_1_1061;Lnet/minecraft/class_1_1077$class_1_2039;Ljava/util/function/Predicate;)I
 		ARG 0 source
 		ARG 1 sourceArg
 		ARG 2 slots
 		ARG 3 itemPredicate
-	METHOD method_1_6656 testItemSlots (Lnet/minecraft/class_2168;Lnet/minecraft/class_1_1061;Lnet/minecraft/class_1_1077$class_1_1080;)I
+	METHOD method_1_6656 testItemSlots (Lnet/minecraft/class_2168;Lnet/minecraft/class_1_1061;Lnet/minecraft/class_1_1077$class_1_2039;)I
 		ARG 0 source
 		ARG 1 sourceArg
 		ARG 2 slots
-	METHOD method_1_6657 (Lnet/minecraft/class_7157;Lcom/mojang/brigadier/tree/CommandNode;ZLnet/minecraft/class_1_1047;Lcom/mojang/brigadier/builder/ArgumentBuilder;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
-		ARG 4 builder
+	METHOD method_1_6657 (Lcom/mojang/brigadier/tree/CommandNode;ZLnet/minecraft/class_1_1047;Lcom/mojang/brigadier/builder/ArgumentBuilder;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+		ARG 3 builder
 	METHOD method_1_6658 (ZLnet/minecraft/class_1_1047;Lcom/mojang/brigadier/context/CommandContext;)Ljava/util/Collection;
 		ARG 2 context
 	METHOD method_1_6659 (Lnet/minecraft/class_1_1047;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 1 context
-	METHOD method_1_6660 (Lnet/minecraft/class_7157;Lcom/mojang/brigadier/tree/CommandNode;ZLnet/minecraft/class_1_1047;Lcom/mojang/brigadier/builder/ArgumentBuilder;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
-		ARG 4 builder
+	METHOD method_1_6660 (Lcom/mojang/brigadier/tree/CommandNode;ZLnet/minecraft/class_1_1047;Lcom/mojang/brigadier/builder/ArgumentBuilder;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+		ARG 3 builder
 	METHOD method_1_6661 (ZLnet/minecraft/class_1_1047;Lcom/mojang/brigadier/context/CommandContext;)Ljava/util/Collection;
 		ARG 2 context
 	METHOD method_1_6662 (Lnet/minecraft/class_1_1047;Lcom/mojang/brigadier/context/CommandContext;)I
@@ -78,9 +78,8 @@ CLASS net/minecraft/class_3050 net/minecraft/server/command/ExecuteCommand
 		ARG 1 context
 	METHOD method_13270 (ZLnet/minecraft/class_3050$class_3052;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 2 context
-	METHOD method_13271 register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/class_7157;)V
+	METHOD method_13271 register (Lcom/mojang/brigadier/CommandDispatcher;)V
 		ARG 0 dispatcher
-		ARG 1 commandRegistryAccess
 	METHOD method_13272 testBlocksCondition (Lcom/mojang/brigadier/context/CommandContext;Z)Ljava/util/OptionalInt;
 		ARG 0 context
 		ARG 1 masked
@@ -140,11 +139,10 @@ CLASS net/minecraft/class_3050 net/minecraft/server/command/ExecuteCommand
 		ARG 1 bossBar
 		ARG 2 storeInValue
 		ARG 3 requestResult
-	METHOD method_13298 addConditionArguments (Lcom/mojang/brigadier/tree/CommandNode;Lcom/mojang/brigadier/builder/LiteralArgumentBuilder;ZLnet/minecraft/class_7157;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+	METHOD method_13298 addConditionArguments (Lcom/mojang/brigadier/tree/CommandNode;Lcom/mojang/brigadier/builder/LiteralArgumentBuilder;Z)Lcom/mojang/brigadier/builder/ArgumentBuilder;
 		ARG 0 root
 		ARG 1 argumentBuilder
 		ARG 2 positive
-		ARG 3 commandRegistryAccess
 	METHOD method_13299 (II)Z
 		ARG 0 targetScore
 		ARG 1 sourceScore
@@ -213,9 +211,8 @@ CLASS net/minecraft/class_3050 net/minecraft/server/command/ExecuteCommand
 		ARG 1 condition
 	METHOD method_13324 (Lcom/mojang/brigadier/context/CommandContext;I)Lnet/minecraft/class_2520;
 		ARG 1 result
-	METHOD method_22829 testLootCondition (Lnet/minecraft/class_2168;Lnet/minecraft/class_6880;)Z
+	METHOD method_22829 testLootCondition (Lnet/minecraft/class_2168;Lnet/minecraft/class_1_2034;)Z
 		ARG 0 source
-		ARG 1 lootCondition
 	METHOD method_22830 (Lcom/mojang/brigadier/context/CommandContext;)Z
 		ARG 0 context
 	METHOD method_47527 (Lcom/mojang/brigadier/context/CommandContext;)Z

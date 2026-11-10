@@ -1,13 +1,11 @@
 CLASS net/minecraft/class_10846 net/minecraft/util/packrat/Parser
-	METHOD method_58341 parse (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
-		ARG 1 reader
-	METHOD method_58342 listSuggestions (Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
-		ARG 1 builder
+	METHOD method_58341 parse (Lnet/minecraft/class_1_2094;)Ljava/lang/Object;
+	METHOD method_58342 listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_1_2094$class_1_2095;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 	METHOD method_68239 withDecoding (Lcom/mojang/serialization/DynamicOps;Lnet/minecraft/class_10846;Lcom/mojang/serialization/Codec;Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;)Lnet/minecraft/class_10846;
-		ARG 1 ops
-		ARG 2 encodedParser
-		ARG 3 codec
-		ARG 4 invalidDataError
+		ARG 0 ops
+		ARG 1 encodedParser
+		ARG 2 codec
+		ARG 3 invalidDataError
 	METHOD method_68240 map (Ljava/util/function/Function;)Lnet/minecraft/class_10846;
 		ARG 1 mapper
 	CLASS 2 2

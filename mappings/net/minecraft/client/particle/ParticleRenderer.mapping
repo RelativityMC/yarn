@@ -13,7 +13,7 @@ CLASS net/minecraft/class_11938 net/minecraft/client/particle/ParticleRenderer
 	METHOD method_74284 isEmpty ()Z
 	METHOD method_74285 add (Lnet/minecraft/class_703;)Z
 		ARG 1 particle
-	METHOD method_74286 (Lnet/minecraft/class_5878;)V
+	METHOD method_74286 (Lnet/minecraft/class_1_2003;)V
 		ARG 1 group
 	METHOD method_74287 tick ()V
 	METHOD method_74288 tickParticle (Lnet/minecraft/class_703;)V

@@ -23,8 +23,7 @@ CLASS net/minecraft/class_2256 net/minecraft/block/Fertilizable
 		ARG 0 world
 		ARG 1 pos
 		ARG 2 state
-	METHOD method_67540 findPosToSpreadTo (Ljava/util/List;Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Ljava/util/Optional;
-		ARG 0 directions
+	METHOD method_67540 findPosToSpreadTo (Ljava/lang/Iterable;Lnet/minecraft/class_4538;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Ljava/util/Optional;
 		ARG 1 world
 		ARG 2 pos
 		ARG 3 state

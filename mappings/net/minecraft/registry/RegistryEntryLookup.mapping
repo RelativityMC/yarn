@@ -25,6 +25,7 @@ CLASS net/minecraft/class_7871 net/minecraft/registry/RegistryEntryLookup
 			ARG 1 registryRef
 		METHOD method_46759 getOptional (Lnet/minecraft/class_5321;)Ljava/util/Optional;
 			ARG 1 registryRef
+		METHOD method_57093 getOps (Lcom/mojang/serialization/DynamicOps;)Lnet/minecraft/class_6903;
 		METHOD method_58561 getOptionalEntry (Lnet/minecraft/class_5321;)Ljava/util/Optional;
 			ARG 1 registryRef
 		METHOD method_58562 (Lnet/minecraft/class_5321;Lnet/minecraft/class_7871;)Ljava/util/Optional;

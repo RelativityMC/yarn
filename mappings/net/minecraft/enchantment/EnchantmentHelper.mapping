@@ -195,11 +195,10 @@ CLASS net/minecraft/class_1890 net/minecraft/enchantment/EnchantmentHelper
 	METHOD method_60132 (Lnet/minecraft/class_3218;Lnet/minecraft/class_9699;Lnet/minecraft/class_1676;Lnet/minecraft/class_6880;I)V
 		ARG 3 enchantment
 		ARG 4 level
-	METHOD method_60133 enchant (Lnet/minecraft/class_5819;Lnet/minecraft/class_1799;ILnet/minecraft/class_5455;Ljava/util/Optional;)Lnet/minecraft/class_1799;
+	METHOD method_60133 enchant (Lnet/minecraft/class_5819;Lnet/minecraft/class_1799;ILnet/minecraft/class_7225$class_7874;Ljava/util/Optional;)Lnet/minecraft/class_1799;
 		ARG 0 random
 		ARG 1 stack
 		ARG 2 level
-		ARG 3 dynamicRegistryManager
 		ARG 4 enchantments
 	METHOD method_60134 (Lnet/minecraft/class_1304;Ljava/util/function/BiConsumer;Lnet/minecraft/class_6880;I)V
 		ARG 2 enchantment
@@ -210,9 +209,8 @@ CLASS net/minecraft/class_1890 net/minecraft/enchantment/EnchantmentHelper
 		ARG 1 enchantment
 		ARG 2 level
 		ARG 3 context
-	METHOD method_60137 applyEnchantmentProvider (Lnet/minecraft/class_1799;Lnet/minecraft/class_5455;Lnet/minecraft/class_5321;Lnet/minecraft/class_1266;Lnet/minecraft/class_5819;)V
+	METHOD method_60137 applyEnchantmentProvider (Lnet/minecraft/class_1799;Lnet/minecraft/class_7871$class_7872;Lnet/minecraft/class_5321;Lnet/minecraft/class_1266;Lnet/minecraft/class_5819;)V
 		ARG 0 stack
-		ARG 1 registryManager
 		ARG 2 providerKey
 		ARG 3 localDifficulty
 		ARG 4 random
@@ -239,7 +237,7 @@ CLASS net/minecraft/class_1890 net/minecraft/enchantment/EnchantmentHelper
 		ARG 2 enchantment
 	METHOD method_60144 (Lnet/minecraft/class_1889;Lnet/minecraft/class_1889;)Z
 		ARG 1 entry
-	METHOD method_60145 (Lnet/minecraft/class_9741;Lnet/minecraft/class_1799;Lnet/minecraft/class_5819;Lnet/minecraft/class_1266;Lnet/minecraft/class_9304$class_9305;)V
+	METHOD method_60145 (Lnet/minecraft/class_6880;Lnet/minecraft/class_1799;Lnet/minecraft/class_5819;Lnet/minecraft/class_1266;Lnet/minecraft/class_9304$class_9305;)V
 		ARG 4 componentBuilder
 	METHOD method_60146 (Lnet/minecraft/class_47;Lorg/apache/commons/lang3/mutable/MutableFloat;ILnet/minecraft/class_5819;Lnet/minecraft/class_9710;)V
 		ARG 4 effect

@@ -18,10 +18,8 @@ CLASS net/minecraft/class_10660 net/minecraft/test/TestInstance
 	METHOD method_66959 getFormattedDescription (Ljava/lang/String;Lnet/minecraft/class_5250;)Lnet/minecraft/class_5250;
 		ARG 1 key
 		ARG 2 description
-	METHOD method_66960 registerAndGetDefault (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
-		ARG 0 registry
-	METHOD method_66961 register (Lnet/minecraft/class_2378;Ljava/lang/String;Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
-		ARG 0 registry
+	METHOD method_66960 registerAndGetDefault (Lnet/minecraft/class_2385;)V
+	METHOD method_66961 register (Lnet/minecraft/class_2385;Ljava/lang/String;Lcom/mojang/serialization/MapCodec;)V
 		ARG 1 id
 		ARG 2 codec
 	METHOD method_66962 getEnvironment ()Lnet/minecraft/class_6880;

@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_1996
+	CLASS 1
+		FIELD field_63811 source Lnet/minecraft/class_12097;
+	CLASS class_11503 CommandRunResult

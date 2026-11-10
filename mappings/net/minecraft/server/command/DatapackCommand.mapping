@@ -29,9 +29,6 @@ CLASS net/minecraft/class_3027 net/minecraft/server/command/DatapackCommand
 		ARG 0 name
 	METHOD method_13118 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
-	METHOD method_13120 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 context
-		ARG 1 builder
 	METHOD method_13121 executeList (Lnet/minecraft/class_2168;)I
 		ARG 0 source
 	METHOD method_13122 (Ljava/util/List;Lnet/minecraft/class_3288;)V
@@ -39,9 +36,8 @@ CLASS net/minecraft/class_3027 net/minecraft/server/command/DatapackCommand
 		ARG 1 profile
 	METHOD method_13123 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
-	METHOD method_13125 register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/class_7157;)V
+	METHOD method_13125 register (Lcom/mojang/brigadier/CommandDispatcher;)V
 		ARG 0 dispatcher
-		ARG 1 registryAccess
 	METHOD method_13126 executeListEnabled (Lnet/minecraft/class_2168;)I
 		ARG 0 source
 	METHOD method_13127 getPackContainer (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;Z)Lnet/minecraft/class_3288;
@@ -63,9 +59,6 @@ CLASS net/minecraft/class_3027 net/minecraft/server/command/DatapackCommand
 		ARG 0 profile
 	METHOD method_13135 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 name
-	METHOD method_13136 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 context
-		ARG 1 builder
 	METHOD method_13137 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_13138 (Lcom/mojang/brigadier/context/CommandContext;)I

@@ -7,8 +7,6 @@ CLASS net/minecraft/class_5611 net/minecraft/client/util/math/Vector2f
 	METHOD comp_5231 x ()F
 	METHOD comp_5232 y ()F
 	METHOD method_76640 toLong (FF)J
-		ARG 0 x
-		ARG 1 y
 	METHOD method_76641 getX (J)F
 		ARG 0 x
 	METHOD method_76642 getY (J)F

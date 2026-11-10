@@ -56,7 +56,6 @@ CLASS net/minecraft/class_2096 net/minecraft/predicate/NumberRange
 		METHOD method_1_1406 toGuava ()Lcom/google/common/collect/Range;
 		METHOD method_74108 isAny ()Z
 		METHOD method_74109 createPacketCodec (Lnet/minecraft/class_9139;)Lnet/minecraft/class_9139;
-			ARG 0 valuePacketCodec
 		METHOD method_74110 shouldSkip (Lcom/mojang/brigadier/StringReader;)Z
 			ARG 0 reader
 		METHOD method_74111 parse (Lcom/mojang/brigadier/StringReader;Ljava/util/function/Function;Ljava/util/function/Supplier;)Lnet/minecraft/class_2096$class_11893;
@@ -64,16 +63,12 @@ CLASS net/minecraft/class_2096 net/minecraft/predicate/NumberRange
 			ARG 1 parsingFunction
 			ARG 2 exceptionSupplier
 		METHOD method_74113 createCodec (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
-			ARG 0 valueCodec
 		METHOD method_74114 (Lcom/mojang/serialization/Codec;Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 1 instance
 		METHOD method_74115 (Lnet/minecraft/class_2096$class_11893;)Lcom/mojang/datafixers/util/Either;
 			ARG 0 bounds
-		METHOD method_74116 exactly (Ljava/lang/Number;)Lnet/minecraft/class_2096$class_11893;
-			ARG 0 value
-		METHOD method_74117 between (Ljava/lang/Number;Ljava/lang/Number;)Lnet/minecraft/class_2096$class_11893;
-			ARG 0 min
-			ARG 1 max
+		METHOD method_74116 exactly (Ljava/lang/Comparable;)Lnet/minecraft/class_2096$class_11893;
+		METHOD method_74117 between (Ljava/lang/Comparable;Ljava/lang/Comparable;)Lnet/minecraft/class_2096$class_11893;
 		METHOD method_74119 map (Ljava/util/function/Function;)Lnet/minecraft/class_2096$class_11893;
 			ARG 1 mappingFunction
 		METHOD method_74120 validate ()Lcom/mojang/serialization/DataResult;
@@ -83,20 +78,14 @@ CLASS net/minecraft/class_2096 net/minecraft/predicate/NumberRange
 			ARG 2 exceptionSupplier
 		METHOD method_74122 (Lnet/minecraft/class_2096$class_11893;)Lnet/minecraft/class_2096$class_11893;
 			ARG 0 bounds
-		METHOD method_74123 atLeast (Ljava/lang/Number;)Lnet/minecraft/class_2096$class_11893;
-			ARG 0 value
+		METHOD method_74123 atLeast (Ljava/lang/Comparable;)Lnet/minecraft/class_2096$class_11893;
 		METHOD method_74124 isSwapped ()Z
-		METHOD method_74125 atMost (Ljava/lang/Number;)Lnet/minecraft/class_2096$class_11893;
-			ARG 0 value
+		METHOD method_74125 atMost (Ljava/lang/Comparable;)Lnet/minecraft/class_2096$class_11893;
 		METHOD method_74126 getPoint ()Ljava/util/Optional;
 		METHOD method_74127 any ()Lnet/minecraft/class_2096$class_11893;
 		CLASS 1 1
 			FIELD field_56289 MAX_PRESENT_FLAG I
 			FIELD field_56292 MIN_PRESENT_FLAG I
-			METHOD method_67183 (Lnet/minecraft/class_9139;Lio/netty/buffer/ByteBuf;Ljava/lang/Number;)V
-				ARG 2 max
-			METHOD method_67184 (Lnet/minecraft/class_9139;Lio/netty/buffer/ByteBuf;Ljava/lang/Number;)V
-				ARG 2 min
 	CLASS class_11894 AngleRange
 		FIELD field_62527 ANY Lnet/minecraft/class_2096$class_11894;
 		FIELD field_62528 CODEC Lcom/mojang/serialization/Codec;

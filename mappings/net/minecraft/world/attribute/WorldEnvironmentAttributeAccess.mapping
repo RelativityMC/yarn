@@ -6,10 +6,6 @@ CLASS net/minecraft/class_12205 net/minecraft/world/attribute/WorldEnvironmentAt
 		ARG 0 builder
 		ARG 1 world
 	METHOD method_76394 builder ()Lnet/minecraft/class_12205$class_12314;
-	METHOD method_76395 (Lnet/minecraft/class_12197;Lnet/minecraft/class_1_1690;Ljava/lang/Object;Lnet/minecraft/class_243;Lnet/minecraft/class_12211;)Ljava/lang/Object;
-		ARG 2 value
-		ARG 3 pos
-		ARG 4 weightedAttributeList
 	METHOD method_76396 computeEntry (Lnet/minecraft/class_12197;Ljava/util/List;)Lnet/minecraft/class_12205$class_12315;
 		ARG 1 attribute
 		ARG 2 mods

@@ -41,10 +41,10 @@ CLASS net/minecraft/class_1124 net/minecraft/client/search/SearchManager
 	METHOD method_60372 getItemTooltipReloadFuture ()Lnet/minecraft/class_1129;
 	METHOD method_64907 (Lnet/minecraft/class_10352;Lnet/minecraft/class_10297;)Ljava/util/stream/Stream;
 		ARG 1 display
-	METHOD method_64908 (Lnet/minecraft/class_10352;Lnet/minecraft/class_2378;Lnet/minecraft/class_516;)Ljava/util/stream/Stream;
-		ARG 2 resultCollection
-	METHOD method_64909 (Lnet/minecraft/class_2378;Lnet/minecraft/class_1799;)Lnet/minecraft/class_2960;
-		ARG 1 stack
+	METHOD method_64908 (Lnet/minecraft/class_10352;Lnet/minecraft/class_516;)Ljava/util/stream/Stream;
+		ARG 1 resultCollection
+	METHOD method_64909 (Lnet/minecraft/class_1799;)Ljava/util/stream/Stream;
+		ARG 0 stack
 	METHOD method_64910 (Lnet/minecraft/class_10352;Lnet/minecraft/class_10297;)Ljava/util/stream/Stream;
 		ARG 1 display
 	CLASS class_1125 Key

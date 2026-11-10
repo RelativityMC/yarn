@@ -1,3 +1,2 @@
 CLASS net/minecraft/class_11433 net/minecraft/dialog/DialogBodyTypes
-	METHOD method_71713 registerAndGetDefault (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
-		ARG 0 registry
+	METHOD method_71713 registerAndGetDefault (Lnet/minecraft/class_2385;)V

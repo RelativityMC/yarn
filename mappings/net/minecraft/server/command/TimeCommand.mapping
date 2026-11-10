@@ -3,21 +3,15 @@ CLASS net/minecraft/class_3149 net/minecraft/server/command/TimeCommand
 	FIELD field_1_992 NO_TIME_MARKER_FOUND_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
 	FIELD field_1_993 WRONG_TIMELINE_FOR_CLOCK_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
 	FIELD field_1_2457 MAX_CLOCK_RATE I
-	METHOD method_1_909 createClockSubcommands (Lnet/minecraft/class_7157;Lcom/mojang/brigadier/builder/ArgumentBuilder;Lnet/minecraft/class_3149$class_1_104;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
-		ARG 0 commandRegistryAccess
-		ARG 1 root
-		ARG 2 clockProvider
+	METHOD method_1_909 createClockSubcommands (Lcom/mojang/brigadier/builder/ArgumentBuilder;Lnet/minecraft/class_3149$class_1_104;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+		ARG 0 root
+		ARG 1 clockProvider
 	METHOD method_1_910 addTime (Lnet/minecraft/class_2168;Lnet/minecraft/class_6880;I)I
 		ARG 0 source
 		ARG 1 clock
 		ARG 2 ticks
-	METHOD method_1_911 getDefaultClock (Lnet/minecraft/class_2168;)Lnet/minecraft/class_6880;
-		ARG 0 source
 	METHOD method_1_912 (Lnet/minecraft/class_3149$class_1_104;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 1 context
-	METHOD method_1_913 (Lnet/minecraft/class_3149$class_1_104;Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
-		ARG 1 context
-		ARG 2 suggestionsBuilder
 	METHOD method_1_914 (Lnet/minecraft/class_3149$class_1_104;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 1 context
 	METHOD method_1_915 (Lnet/minecraft/class_3149$class_1_104;Lcom/mojang/brigadier/context/CommandContext;)I
@@ -28,17 +22,10 @@ CLASS net/minecraft/class_3149 net/minecraft/server/command/TimeCommand
 		ARG 1 context
 	METHOD method_1_918 (Lnet/minecraft/class_3149$class_1_104;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 1 context
-	METHOD method_1_919 (Lnet/minecraft/class_3149$class_1_104;Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
-		ARG 1 context
-		ARG 2 suggestionsBuilder
 	METHOD method_1_920 (Lnet/minecraft/class_3149$class_1_104;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 1 context
 	METHOD method_1_921 (Lnet/minecraft/class_3149$class_1_104;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 1 context
-	METHOD method_1_928 (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/class_6880;
-		ARG 0 context
-	METHOD method_1_929 (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/class_6880;
-		ARG 0 context
 	METHOD method_1_933 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 dimension
 	METHOD method_1_934 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
@@ -60,9 +47,8 @@ CLASS net/minecraft/class_3149 net/minecraft/server/command/TimeCommand
 		ARG 0 source
 		ARG 1 clock
 		ARG 2 timeline
-	METHOD method_1_940 register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/class_7157;)V
+	METHOD method_1_940 register (Lcom/mojang/brigadier/CommandDispatcher;)V
 		ARG 0 dispatcher
-		ARG 1 commandRegistryAccess
 	METHOD method_1_941 setClockPaused (Lnet/minecraft/class_2168;Lnet/minecraft/class_6880;Z)I
 		ARG 0 source
 		ARG 1 clock
@@ -75,14 +61,8 @@ CLASS net/minecraft/class_3149 net/minecraft/server/command/TimeCommand
 		ARG 0 source
 		ARG 1 clock
 		ARG 2 ticks
-	METHOD method_1_944 suggestTimeMarkers (Lnet/minecraft/class_2168;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Lnet/minecraft/class_6880;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 source
-		ARG 1 suggestionsBuilder
-		ARG 2 clock
-	METHOD method_1_945 suggestTimelines (Lnet/minecraft/class_2168;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Lnet/minecraft/class_6880;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 source
-		ARG 1 suggestionsBuilder
-		ARG 2 clock
+	METHOD method_1_944 suggestTimeMarkers (Lnet/minecraft/class_3149$class_1_104;)Lcom/mojang/brigadier/suggestion/SuggestionProvider;
+	METHOD method_1_945 suggestTimelines (Lnet/minecraft/class_3149$class_1_104;)Lcom/mojang/brigadier/suggestion/SuggestionProvider;
 	METHOD method_1_946 coerceTicksToInt (J)I
 		ARG 0 ticks
 	METHOD method_1_2940 (Lnet/minecraft/class_3149$class_1_104;Lcom/mojang/brigadier/context/CommandContext;)I

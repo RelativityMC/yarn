@@ -4,9 +4,8 @@ CLASS net/minecraft/class_3057 net/minecraft/server/command/FillCommand
 	FIELD field_13650 FAILED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	METHOD method_13346 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
-	METHOD method_13347 register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/class_7157;)V
+	METHOD method_13347 register (Lcom/mojang/brigadier/CommandDispatcher;)V
 		ARG 0 dispatcher
-		ARG 1 commandRegistryAccess
 	METHOD method_13348 (Lnet/minecraft/class_2694;)Z
 		ARG 0 pos
 	METHOD method_13352 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
@@ -23,13 +22,12 @@ CLASS net/minecraft/class_3057 net/minecraft/server/command/FillCommand
 		ARG 4 context
 	METHOD method_65986 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
-	METHOD method_65987 buildModeTree (Lnet/minecraft/class_7157;Lcom/mojang/brigadier/builder/ArgumentBuilder;Lnet/minecraft/class_10618;Lnet/minecraft/class_10618;Lnet/minecraft/class_10618;Lnet/minecraft/class_3057$class_10557;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
-		ARG 0 registries
-		ARG 1 argumentBuilder
-		ARG 2 from
-		ARG 3 to
-		ARG 4 state
-		ARG 5 filter
+	METHOD method_65987 buildModeTree (Lcom/mojang/brigadier/builder/ArgumentBuilder;Lnet/minecraft/class_10618;Lnet/minecraft/class_10618;Lnet/minecraft/class_10618;Lnet/minecraft/class_3057$class_10557;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+		ARG 0 argumentBuilder
+		ARG 1 from
+		ARG 2 to
+		ARG 3 state
+		ARG 4 filter
 	METHOD method_65988 (Lnet/minecraft/class_10618;Lnet/minecraft/class_10618;Lnet/minecraft/class_10618;Lnet/minecraft/class_3057$class_10557;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 4 context
 	METHOD method_65989 (Lcom/mojang/brigadier/context/CommandContext;)Ljava/util/function/Predicate;

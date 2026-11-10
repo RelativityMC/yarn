@@ -35,24 +35,21 @@ CLASS net/minecraft/class_3039 net/minecraft/server/command/LootCommand
 	METHOD method_13191 (Lcom/mojang/brigadier/context/CommandContext;Ljava/util/List;Lnet/minecraft/class_1_1083;)V
 		ARG 0 context
 		ARG 1 stacks
-	METHOD method_13193 register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/class_7157;)V
+	METHOD method_13193 register (Lcom/mojang/brigadier/CommandDispatcher;)V
 		ARG 0 dispatcher
-		ARG 1 commandRegistryAccess
 	METHOD method_13195 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 entityName
 	METHOD method_13196 executeInsert (Lnet/minecraft/class_2168;Lnet/minecraft/class_2338;Ljava/util/List;Lnet/minecraft/class_1_1083;)V
 		ARG 0 source
 		ARG 1 targetPos
 		ARG 2 stacks
-	METHOD method_13197 executeLoot (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_6880;Lnet/minecraft/class_3039$class_3041;)I
+	METHOD method_13197 executeLoot (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_1_2034;Lnet/minecraft/class_3039$class_3041;)I
 		ARG 0 context
-		ARG 1 lootTable
 		ARG 2 constructor
 	METHOD method_13198 (Lnet/minecraft/class_3039$class_3041;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 1 context
-	METHOD method_13199 executeFish (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_6880;Lnet/minecraft/class_2338;Lnet/minecraft/class_1_96;Lnet/minecraft/class_3039$class_3041;)I
+	METHOD method_13199 executeFish (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_1_2034;Lnet/minecraft/class_2338;Lnet/minecraft/class_1_96;Lnet/minecraft/class_3039$class_3041;)I
 		ARG 0 context
-		ARG 1 lootTable
 		ARG 2 pos
 		ARG 4 constructor
 	METHOD method_13201 executeGive (Ljava/util/Collection;Ljava/util/List;Lnet/minecraft/class_1_1083;)V
@@ -61,9 +58,9 @@ CLASS net/minecraft/class_3039 net/minecraft/server/command/LootCommand
 	METHOD method_13202 (Lcom/mojang/brigadier/context/CommandContext;Ljava/util/List;Lnet/minecraft/class_1_1083;)V
 		ARG 0 context
 		ARG 1 stacks
-	METHOD method_13203 (Lnet/minecraft/class_7157;Lcom/mojang/brigadier/builder/ArgumentBuilder;Lnet/minecraft/class_3039$class_3041;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
-		ARG 1 builder
-		ARG 2 constructor
+	METHOD method_13203 (Lcom/mojang/brigadier/builder/ArgumentBuilder;Lnet/minecraft/class_3039$class_3041;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+		ARG 0 builder
+		ARG 1 constructor
 	METHOD method_13204 (Lnet/minecraft/class_3039$class_3041;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 1 context
 	METHOD method_13205 (Lnet/minecraft/class_3039$class_3041;Lcom/mojang/brigadier/context/CommandContext;)I

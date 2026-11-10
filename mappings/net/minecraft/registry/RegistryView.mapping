@@ -31,8 +31,6 @@ CLASS net/minecraft/class_7225 net/minecraft/registry/RegistryView
 		METHOD method_46762 getWrapperOrThrow (Lnet/minecraft/class_5321;)Lnet/minecraft/class_7225$class_7226;
 			ARG 1 registryRef
 		METHOD method_55282 streamAllRegistryKeys ()Ljava/util/stream/Stream;
-		METHOD method_57093 getOps (Lcom/mojang/serialization/DynamicOps;)Lnet/minecraft/class_6903;
-			ARG 1 delegate
 		METHOD method_62678 stream ()Ljava/util/stream/Stream;
 		METHOD method_62679 getLifecycle ()Lcom/mojang/serialization/Lifecycle;
 		CLASS 1 1

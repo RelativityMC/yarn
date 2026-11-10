@@ -296,8 +296,6 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 	METHOD method_1_9562 getInterpolator ()Lnet/minecraft/class_1_1451;
 	METHOD method_1_9563 (Ljava/util/List;Lnet/minecraft/class_3222;)Z
 		ARG 1 player
-	METHOD method_1_9564 addVelocity (Lnet/minecraft/class_243;)V
-		ARG 1 vec
 	METHOD method_1_9761 onSetNbt ()V
 		COMMENT Called when the entity’s NBT is modified through commands.
 	METHOD method_1_9864 getInvulnerableTime ()I
@@ -551,9 +549,8 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		COMMENT water.
 		COMMENT
 		COMMENT @see #setSwimming
-	METHOD method_5683 updateTrackedHeadRotation (FI)V
+	METHOD method_5683 updateTrackedHeadRotation (F)V
 		ARG 1 yaw
-		ARG 2 interpolationSteps
 	METHOD method_5684 setInvulnerable (Z)V
 		COMMENT Sets whether the entity is invulnerable.
 		COMMENT

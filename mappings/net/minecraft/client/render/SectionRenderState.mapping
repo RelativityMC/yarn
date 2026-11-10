@@ -31,7 +31,6 @@ CLASS net/minecraft/class_11532 net/minecraft/client/render/SectionRenderState
 		FIELD field_1_9680 renderObjectsByLayer Ljava/util/Map;
 		METHOD <init> (Lnet/minecraft/class_1_1254;Ljava/util/Map;I[Lnet/minecraft/class_1_1254;)V
 			ARG 1 terrainUniform
-			ARG 2 renderObjectsByLayer
 			ARG 3 maxIndexCount
 			ARG 4 chunkSections
 	CLASS class_1_1418 IndirectDraw

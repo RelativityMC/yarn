@@ -44,7 +44,6 @@ CLASS net/minecraft/class_6538 net/minecraft/component/type/BlockPredicatesCompo
 	METHOD method_65042 getOrCreateTooltipText ()Ljava/util/List;
 	METHOD method_67185 (Lnet/minecraft/class_6538;)Ljava/util/List;
 		ARG 0 checker
-	METHOD method_71392 getNbt (Lnet/minecraft/class_2586;Lnet/minecraft/class_5455;Lnet/minecraft/class_8942;)Lnet/minecraft/class_2487;
+	METHOD method_71392 getNbt (Lnet/minecraft/class_2586;Lnet/minecraft/class_7871$class_7872;Lnet/minecraft/class_8942;)Lnet/minecraft/class_2487;
 		ARG 0 blockEntity
-		ARG 1 registries
 		ARG 2 errorReporter

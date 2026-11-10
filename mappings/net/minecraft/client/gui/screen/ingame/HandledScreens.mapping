@@ -1,7 +1,6 @@
 CLASS net/minecraft/class_3929 net/minecraft/client/gui/screen/ingame/HandledScreens
 	FIELD field_17408 LOGGER Lorg/slf4j/Logger;
-	METHOD method_1_11521 register (Lnet/minecraft/class_2378;)Lnet/minecraft/class_3929$class_3930;
-		ARG 0 registry
+	METHOD method_1_11521 register (Lnet/minecraft/class_2385;)V
 	METHOD method_1_11523 getKey (Lnet/minecraft/class_3917;)Lnet/minecraft/class_5321;
 		ARG 0 type
 	METHOD method_17539 isMissingScreens ()Z
@@ -12,8 +11,7 @@ CLASS net/minecraft/class_3929 net/minecraft/client/gui/screen/ingame/HandledScr
 		ARG 1 client
 		ARG 2 id
 		ARG 3 title
-	METHOD method_17542 register (Lnet/minecraft/class_2378;Lnet/minecraft/class_3917;Lnet/minecraft/class_3929$class_3930;)Lnet/minecraft/class_3929$class_3930;
-		ARG 0 registry
+	METHOD method_17542 register (Lnet/minecraft/class_2385;Lnet/minecraft/class_3917;Lnet/minecraft/class_3929$class_3930;)V
 		ARG 1 type
 		ARG 2 provider
 	CLASS class_3930 Provider

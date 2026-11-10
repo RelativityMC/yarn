@@ -2,10 +2,8 @@ CLASS net/minecraft/class_8990 net/minecraft/registry/RegistryCloner
 	FIELD field_47486 elementCodec Lcom/mojang/serialization/Codec;
 	METHOD <init> (Lcom/mojang/serialization/Codec;)V
 		ARG 1 elementCodec
-	METHOD method_55277 clone (Ljava/lang/Object;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_7225$class_7874;)Ljava/lang/Object;
+	METHOD method_55277 clone (Ljava/lang/Object;Lnet/minecraft/class_7871$class_7872;Lnet/minecraft/class_7871$class_7872;)Ljava/lang/Object;
 		ARG 1 value
-		ARG 2 subsetRegistry
-		ARG 3 fullRegistry
 	METHOD method_55278 (Ljava/lang/String;)Ljava/lang/IllegalStateException;
 		ARG 0 error
 	METHOD method_55279 (Ljava/lang/String;)Ljava/lang/IllegalStateException;

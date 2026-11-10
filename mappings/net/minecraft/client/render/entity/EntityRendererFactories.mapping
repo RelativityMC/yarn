@@ -1,7 +1,6 @@
 CLASS net/minecraft/class_5619 net/minecraft/client/render/entity/EntityRendererFactories
 	FIELD field_27767 LOGGER Lorg/slf4j/Logger;
-	METHOD method_1_11551 register (Lnet/minecraft/class_2378;)Lnet/minecraft/class_5617;
-		ARG 0 registry
+	METHOD method_1_11551 register (Lnet/minecraft/class_2385;)V
 	METHOD method_1_11552 getMissingRendererFactories ()Ljava/util/List;
 	METHOD method_1_11553 of (Lnet/minecraft/class_6880$class_6883;)Lnet/minecraft/class_5321;
 		ARG 0 entityType

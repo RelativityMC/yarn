@@ -1,11 +1,10 @@
 CLASS net/minecraft/class_9351 net/minecraft/command/argument/SlotRangeArgumentType
 	FIELD field_49767 EXAMPLES Ljava/util/Collection;
-	METHOD listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
-		ARG 1 context
+	METHOD method_1_12878 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 2 suggestionsBuilder
-	METHOD method_58130 slotRange ()Lnet/minecraft/class_9351;
+	METHOD method_1_12884 (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
+		ARG 1 stringReader
+	METHOD method_58130 slotRange ()Lcom/mojang/brigadier/arguments/ArgumentType;
 	METHOD method_58133 getSlotRange (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_9348;
 		ARG 0 context
 		ARG 1 name
-	METHOD parse (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
-		ARG 1 stringReader

@@ -49,8 +49,7 @@ CLASS net/minecraft/class_2300 net/minecraft/command/EntitySelector
 		ARG 1 pos
 		ARG 2 box
 		ARG 3 enabledFeatures
-	METHOD method_9818 checkSourcePermission (Lnet/minecraft/class_2168;)V
-		ARG 1 source
+	METHOD method_9818 checkSourcePermission (Lnet/minecraft/class_12097;)V
 	METHOD method_9819 includesNonPlayers ()Z
 	METHOD method_9820 isSenderOnly ()Z
 	METHOD method_9821 isLocalWorldOnly ()Z

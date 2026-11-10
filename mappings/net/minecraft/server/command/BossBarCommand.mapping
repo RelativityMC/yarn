@@ -48,9 +48,6 @@ CLASS net/minecraft/class_3019 net/minecraft/server/command/BossBarCommand
 		ARG 0 context
 	METHOD method_13043 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
-	METHOD method_13044 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 context
-		ARG 1 builder
 	METHOD method_13045 listBossBars (Lnet/minecraft/class_2168;)I
 		ARG 0 source
 	METHOD method_13046 (Lcom/mojang/brigadier/context/CommandContext;)I
@@ -71,9 +68,8 @@ CLASS net/minecraft/class_3019 net/minecraft/server/command/BossBarCommand
 		ARG 0 context
 	METHOD method_13052 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
-	METHOD method_13053 register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/class_7157;)V
+	METHOD method_13053 register (Lcom/mojang/brigadier/CommandDispatcher;)V
 		ARG 0 dispatcher
-		ARG 1 registryAccess
 	METHOD method_13054 getBossBar (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/class_3002;
 		ARG 0 context
 	METHOD method_13055 (Lcom/mojang/brigadier/context/CommandContext;)I

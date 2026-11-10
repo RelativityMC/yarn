@@ -5,13 +5,13 @@ CLASS net/minecraft/class_702 net/minecraft/client/particle/ParticleManager
 	FIELD field_3836 newParticles Ljava/util/Queue;
 	FIELD field_3837 newEmitterParticles Ljava/util/Queue;
 	FIELD field_17820 PARTICLE_TEXTURE_SHEETS Ljava/util/List;
-	FIELD field_29072 groupCounts [I
+	FIELD field_29072 groupCounts Lit/unimi/dsi/fastutil/objects/Reference2IntOpenHashMap;
 	FIELD field_62618 spriteManager Lnet/minecraft/class_11939;
 	METHOD <init> (Lnet/minecraft/class_638;Lnet/minecraft/class_11939;)V
 		ARG 1 world
 		ARG 2 spriteManager
 	METHOD method_1_6380 getRandom ()Lnet/minecraft/class_5819;
-	METHOD method_1_6381 (Lnet/minecraft/class_5878;)V
+	METHOD method_1_6381 (Lnet/minecraft/class_1_2003;)V
 		ARG 1 group
 	METHOD method_3045 setWorld (Lnet/minecraft/class_638;)V
 		ARG 1 world
@@ -42,11 +42,11 @@ CLASS net/minecraft/class_702 net/minecraft/client/particle/ParticleManager
 	METHOD method_3061 addEmitter (Lnet/minecraft/class_1297;Lnet/minecraft/class_2394;)V
 		ARG 1 entity
 		ARG 2 parameters
-	METHOD method_34021 canAdd (Lnet/minecraft/class_5878;)Z
+	METHOD method_34021 canAdd (Lnet/minecraft/class_1_2003;)Z
 		COMMENT {@return whether another particle from {@code group} can be rendered by this
 		COMMENT manager}
 		ARG 1 group
-	METHOD method_34022 addTo (Lnet/minecraft/class_5878;I)V
+	METHOD method_34022 addTo (Lnet/minecraft/class_1_2003;I)V
 		ARG 1 group
 		ARG 2 count
 	METHOD method_48015 clearParticles ()V

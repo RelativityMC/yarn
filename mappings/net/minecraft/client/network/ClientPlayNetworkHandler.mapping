@@ -7,7 +7,6 @@ CLASS net/minecraft/class_634 net/minecraft/client/network/ClientPlayNetworkHand
 	FIELD field_3692 dataQueryHandler Lnet/minecraft/class_300;
 	FIELD field_3693 playerListEntries Ljava/util/Map;
 	FIELD field_3695 LOGGER Lorg/slf4j/Logger;
-	FIELD field_3696 commandDispatcher Lcom/mojang/brigadier/CommandDispatcher;
 	FIELD field_3697 profile Lcom/mojang/authlib/GameProfile;
 	FIELD field_3699 world Lnet/minecraft/class_638;
 	FIELD field_3700 advancementHandler Lnet/minecraft/class_632;
@@ -45,14 +44,10 @@ CLASS net/minecraft/class_634 net/minecraft/client/network/ClientPlayNetworkHand
 	FIELD field_60782 restrictedCommandSource Lnet/minecraft/class_637;
 		COMMENT A {@link CommandSource} that always has a permission level of 0.
 	FIELD field_60783 CONFIRM_COMMAND_TITLE_TEXT Lnet/minecraft/class_2561;
-	FIELD field_60784 COMMAND_NODE_FACTORY Lnet/minecraft/class_2641$class_11408;
 	FIELD field_61723 chunkLoadProgress Lnet/minecraft/class_11653;
 	FIELD field_62028 CONFIRM_RUN_COMMAND_TEXT Lnet/minecraft/class_2561;
 	FIELD field_62029 CONFIRM_SUGGEST_COMMAND_TEXT Lnet/minecraft/class_2561;
 	FIELD field_62944 debugSubscriptionManager Lnet/minecraft/class_12036;
-	FIELD field_63565 RESTRICTED_PERMISSION Lnet/minecraft/class_12087;
-	FIELD field_63566 RESTRICTED_PERMISSION_CHECK Lnet/minecraft/class_12090;
-	FIELD field_63567 RESTRICTED_PERMISSION_PREDICATE Lnet/minecraft/class_12096;
 	FIELD field_64674 loaded Z
 	METHOD <init> (Lnet/minecraft/class_310;Lnet/minecraft/class_2535;Lnet/minecraft/class_8675;)V
 		ARG 1 client
@@ -87,11 +82,10 @@ CLASS net/minecraft/class_634 net/minecraft/client/network/ClientPlayNetworkHand
 		ARG 1 uuid
 	METHOD method_2874 getPlayerListEntry (Ljava/lang/String;)Lnet/minecraft/class_640;
 		ARG 1 profileName
-	METHOD method_2875 getCommandSource ()Lnet/minecraft/class_637;
+	METHOD method_2875 getCommandSource ()Lnet/minecraft/class_2172;
 	METHOD method_2876 getDataQueryHandler ()Lnet/minecraft/class_300;
 	METHOD method_2879 getProfile ()Lcom/mojang/authlib/GameProfile;
 	METHOD method_2880 getPlayerList ()Ljava/util/Collection;
-	METHOD method_2886 getCommandDispatcher ()Lcom/mojang/brigadier/CommandDispatcher;
 	METHOD method_2890 getWorld ()Lnet/minecraft/class_638;
 	METHOD method_19691 getActiveDeathProtector (Lnet/minecraft/class_1657;)Lnet/minecraft/class_1799;
 		ARG 0 player
@@ -191,8 +185,6 @@ CLASS net/minecraft/class_634 net/minecraft/client/network/ClientPlayNetworkHand
 	METHOD method_68825 (Lnet/minecraft/class_9336;Ljava/lang/String;)Ljava/lang/IllegalArgumentException;
 		ARG 1 error
 	METHOD method_70936 getWaypointHandler ()Lnet/minecraft/class_11264;
-	METHOD method_71925 validate (Lcom/mojang/brigadier/ParseResults;)Z
-		ARG 0 parseResults
 	METHOD method_71926 openConfirmRunCommandScreen (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/class_437;)V
 		ARG 1 command
 		ARG 2 message
@@ -200,8 +192,6 @@ CLASS net/minecraft/class_634 net/minecraft/client/network/ClientPlayNetworkHand
 	METHOD method_71927 runClickEventCommand (Ljava/lang/String;Lnet/minecraft/class_437;)V
 		ARG 1 command
 		ARG 2 afterActionScreen
-	METHOD method_71929 parseCommand (Ljava/lang/String;)Lnet/minecraft/class_634$class_11503;
-		ARG 1 command
 	METHOD method_72898 setPlayerLoaded ()V
 	METHOD method_73230 (Ljava/lang/Runnable;Lnet/minecraft/class_437;Z)V
 		ARG 3 confirmed
@@ -218,14 +208,8 @@ CLASS net/minecraft/class_634 net/minecraft/client/network/ClientPlayNetworkHand
 	METHOD method_73471 getCaseInsensitivePlayerInfo (Ljava/lang/String;)Lnet/minecraft/class_640;
 		ARG 1 name
 	METHOD method_74750 getDebugDataStore ()Lnet/minecraft/class_12021;
-	METHOD method_75404 (Lnet/minecraft/class_12087;)Z
-		ARG 0 perm
 	METHOD method_75405 (Lnet/minecraft/class_310;Lnet/minecraft/class_12087;)Z
 		ARG 1 permission
 	METHOD method_76760 isLoaded ()Z
 	METHOD method_76761 setLoaded (Z)V
 		ARG 1 loaded
-	CLASS 1 1
-		METHOD method_71930 (Lcom/mojang/brigadier/context/CommandContext;)I
-			ARG 0 context
-	CLASS class_11503 CommandRunResult

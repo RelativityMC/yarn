@@ -83,12 +83,11 @@ CLASS net/minecraft/class_7706 net/minecraft/item/ItemGroups
 		ARG 2 stack
 	METHOD method_48935 (Lnet/minecraft/class_1761$class_7704;Lnet/minecraft/class_1761$class_7705;Lnet/minecraft/class_6880$class_6883;)V
 		ARG 2 paintingVariant
-	METHOD method_48937 addPaintings (Lnet/minecraft/class_1761$class_7704;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_7225$class_7226;Ljava/util/function/Predicate;Lnet/minecraft/class_1761$class_7705;)V
+	METHOD method_48937 addPaintings (Lnet/minecraft/class_1761$class_7704;Lnet/minecraft/class_7225$class_7226;Ljava/util/function/Predicate;Lnet/minecraft/class_1761$class_7705;)V
 		ARG 0 entries
-		ARG 1 registries
-		ARG 2 registryWrapper
-		ARG 3 filter
-		ARG 4 stackVisibility
+		ARG 1 registryWrapper
+		ARG 2 filter
+		ARG 3 stackVisibility
 	METHOD method_48939 (Lnet/minecraft/class_1792;Lnet/minecraft/class_1761$class_7704;Lnet/minecraft/class_1761$class_7705;Lnet/minecraft/class_6885$class_6888;)V
 		ARG 3 entryList
 	METHOD method_48940 (Lnet/minecraft/class_1792;Lnet/minecraft/class_6880$class_6883;)Lnet/minecraft/class_1799;
@@ -104,15 +103,14 @@ CLASS net/minecraft/class_7706 net/minecraft/item/ItemGroups
 	METHOD method_51311 (Lnet/minecraft/class_1761$class_8128;Lnet/minecraft/class_1761$class_7704;)V
 		ARG 0 displayContext
 		ARG 1 entries
-	METHOD method_51312 (Lnet/minecraft/class_1761$class_7704;Lnet/minecraft/class_1761$class_8128;Lnet/minecraft/class_7225$class_7226;)V
-		ARG 2 registryWrapper
+	METHOD method_51312 (Lnet/minecraft/class_1761$class_7704;Lnet/minecraft/class_7225$class_7226;)V
+		ARG 1 registryWrapper
 	METHOD method_51313 (Lnet/minecraft/class_1761$class_7704;Lnet/minecraft/class_7225$class_7226;)V
 		ARG 1 registryWrapper
 	METHOD method_51314 (Lnet/minecraft/class_6880;)Z
 		ARG 0 registryEntry
-	METHOD method_51315 registerAndGetDefault (Lnet/minecraft/class_2378;)Lnet/minecraft/class_1761;
-		ARG 0 registry
-	METHOD method_51316 (Lnet/minecraft/class_2378;Lnet/minecraft/class_1761$class_8128;Lnet/minecraft/class_1761$class_7704;)V
+	METHOD method_51315 registerAndGetDefault (Lnet/minecraft/class_2385;)V
+	METHOD method_51316 (Lnet/minecraft/class_2385;Lnet/minecraft/class_1761$class_8128;Lnet/minecraft/class_1761$class_7704;)V
 		ARG 1 displayContext
 		ARG 2 entries
 	METHOD method_51317 register (Ljava/lang/String;)Lnet/minecraft/class_5321;
@@ -137,8 +135,8 @@ CLASS net/minecraft/class_7706 net/minecraft/item/ItemGroups
 	METHOD method_51325 (Lnet/minecraft/class_1761$class_8128;Lnet/minecraft/class_1761$class_7704;)V
 		ARG 0 displayContext
 		ARG 1 entries
-	METHOD method_51326 (Lnet/minecraft/class_1761$class_7704;Lnet/minecraft/class_1761$class_8128;Lnet/minecraft/class_7225$class_7226;)V
-		ARG 2 registryWrapper
+	METHOD method_51326 (Lnet/minecraft/class_1761$class_7704;Lnet/minecraft/class_7225$class_7226;)V
+		ARG 1 registryWrapper
 	METHOD method_51327 stream ()Ljava/util/stream/Stream;
 	METHOD method_51328 (Lnet/minecraft/class_1761$class_8128;Lnet/minecraft/class_1761$class_7704;)V
 		ARG 0 displayContext

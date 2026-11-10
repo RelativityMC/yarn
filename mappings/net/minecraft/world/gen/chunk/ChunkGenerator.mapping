@@ -33,9 +33,8 @@ CLASS net/minecraft/class_2794 net/minecraft/world/gen/chunk/ChunkGenerator
 		ARG 1 biomeSupplier
 		ARG 2 noiseConfig
 		ARG 3 chunk
-	METHOD method_1_10859 setStructureStartsSync (Ljava/util/List;Lnet/minecraft/class_5455;Lnet/minecraft/class_7869;Lnet/minecraft/class_5138;Lnet/minecraft/class_2791;Lnet/minecraft/class_3485;Lnet/minecraft/class_5321;)Lnet/minecraft/class_2791;
+	METHOD method_1_10859 setStructureStartsSync (Ljava/util/List;Lnet/minecraft/class_7871$class_7872;Lnet/minecraft/class_7869;Lnet/minecraft/class_5138;Lnet/minecraft/class_2791;Lnet/minecraft/class_3485;Lnet/minecraft/class_5321;)Lnet/minecraft/class_2791;
 		ARG 1 structuresToGenerate
-		ARG 2 registryManager
 		ARG 3 structurePlacementCalculator
 		ARG 4 accessor
 		ARG 5 chunk
@@ -43,7 +42,7 @@ CLASS net/minecraft/class_2794 net/minecraft/world/gen/chunk/ChunkGenerator
 		ARG 7 dimension
 	METHOD method_1_10860 (Lnet/minecraft/class_5138;Lnet/minecraft/class_2791;Lnet/minecraft/class_7869;Lnet/minecraft/class_1923;Lnet/minecraft/class_6880;)Z
 		ARG 4 structureSet
-	METHOD method_1_11075 (Lnet/minecraft/class_5455;Lnet/minecraft/class_7869;Lnet/minecraft/class_2791;Lnet/minecraft/class_3485;Lnet/minecraft/class_5321;Lnet/minecraft/class_6544$class_6552;Lnet/minecraft/class_5138;Lnet/minecraft/class_6880;)V
+	METHOD method_1_11075 (Lnet/minecraft/class_7871$class_7872;Lnet/minecraft/class_7869;Lnet/minecraft/class_2791;Lnet/minecraft/class_3485;Lnet/minecraft/class_5321;Lnet/minecraft/class_6544$class_6552;Lnet/minecraft/class_5138;Lnet/minecraft/class_6880;)V
 		ARG 8 structureSet
 	METHOD method_12098 getBiomeSource ()Lnet/minecraft/class_1966;
 	METHOD method_12100 getSpawnHeight (Lnet/minecraft/class_5539;)I
@@ -76,9 +75,8 @@ CLASS net/minecraft/class_2794 net/minecraft/world/gen/chunk/ChunkGenerator
 		ARG 2 accessor
 		ARG 3 group
 		ARG 4 pos
-	METHOD method_16129 setStructureStarts (Lnet/minecraft/class_5455;Lnet/minecraft/class_7869;Lnet/minecraft/class_5138;Lnet/minecraft/class_2791;Lnet/minecraft/class_3485;Lnet/minecraft/class_5321;)Ljava/util/concurrent/CompletableFuture;
+	METHOD method_16129 setStructureStarts (Lnet/minecraft/class_7871$class_7872;Lnet/minecraft/class_7869;Lnet/minecraft/class_5138;Lnet/minecraft/class_2791;Lnet/minecraft/class_3485;Lnet/minecraft/class_5321;)Ljava/util/concurrent/CompletableFuture;
 		COMMENT Determines which structures should start in the given chunk and creates their starting points.
-		ARG 1 registryManager
 		ARG 2 structurePlacementCalculator
 		ARG 3 accessor
 		ARG 4 chunk

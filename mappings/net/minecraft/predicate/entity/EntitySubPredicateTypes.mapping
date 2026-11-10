@@ -1,3 +1,2 @@
 CLASS net/minecraft/class_7378 net/minecraft/predicate/entity/EntitySubPredicateTypes
-	METHOD method_58157 getDefault (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/Codec;
-		ARG 0 registry
+	METHOD method_58157 getDefault (Lnet/minecraft/class_2385;)V

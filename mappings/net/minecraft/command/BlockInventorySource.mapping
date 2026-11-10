@@ -3,9 +3,8 @@ CLASS net/minecraft/class_1_1100 net/minecraft/command/BlockInventorySource
 	FIELD field_1_7562 MODIFY_REPORTER Lnet/minecraft/class_1_1083$class_1_1091;
 	FIELD field_1_7563 REPLACE_REPORTER Lnet/minecraft/class_1_1083$class_1_1091;
 	FIELD field_1_7564 REPLACE_KNOWN_ITEM_REPORTER Lnet/minecraft/class_1_1083$class_1_1092;
-	METHOD method_1_6954 getSlots (Lnet/minecraft/class_2168;Lnet/minecraft/class_12275;Lcom/mojang/brigadier/exceptions/Dynamic3CommandExceptionType;)Lnet/minecraft/class_12271;
+	METHOD method_1_6954 getSlots (Lnet/minecraft/class_2168;Lnet/minecraft/class_1_2034;Lcom/mojang/brigadier/exceptions/Dynamic3CommandExceptionType;)Lnet/minecraft/class_12271;
 		ARG 1 source
-		ARG 2 slotSource
 		ARG 3 onNonInventory
 	METHOD method_1_6955 getInventory (Lnet/minecraft/class_2168;Lnet/minecraft/class_2338;Lcom/mojang/brigadier/exceptions/Dynamic3CommandExceptionType;)Lnet/minecraft/class_1263;
 		ARG 0 source

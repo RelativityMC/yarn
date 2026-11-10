@@ -4,19 +4,17 @@ CLASS net/minecraft/class_7733 net/minecraft/command/argument/RegistryEntryRefer
 	FIELD field_40403 EXAMPLES Ljava/util/Collection;
 	FIELD field_40404 NOT_SUMMONABLE_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_40405 registryRef Lnet/minecraft/class_5321;
-	FIELD field_40406 registryWrapper Lnet/minecraft/class_7225;
-	METHOD <init> (Lnet/minecraft/class_7157;Lnet/minecraft/class_5321;)V
-		ARG 1 registryAccess
-		ARG 2 registryRef
-	METHOD listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
-		ARG 1 context
-		ARG 2 builder
+	METHOD <init> (Lnet/minecraft/class_5321;)V
+		ARG 1 registryRef
 	METHOD method_1_1023 getWorldClock (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880$class_6883;
 		ARG 0 context
 		ARG 1 name
 	METHOD method_1_1024 getTimeline (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880$class_6883;
 		ARG 0 context
 		ARG 1 name
+	METHOD method_1_12878 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 context
+		ARG 2 builder
 	METHOD method_45601 getEntityAttribute (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880$class_6883;
 		ARG 0 context
 		ARG 1 name
@@ -24,9 +22,8 @@ CLASS net/minecraft/class_7733 net/minecraft/command/argument/RegistryEntryRefer
 		ARG 0 context
 		ARG 1 name
 		ARG 2 registryRef
-	METHOD method_45603 registryEntry (Lnet/minecraft/class_7157;Lnet/minecraft/class_5321;)Lnet/minecraft/class_7733;
-		ARG 0 registryAccess
-		ARG 1 registryRef
+	METHOD method_45603 registryEntry (Lnet/minecraft/class_5321;)Lcom/mojang/brigadier/arguments/ArgumentType;
+		ARG 0 registryRef
 	METHOD method_45604 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 id
 	METHOD method_45605 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
@@ -42,10 +39,3 @@ CLASS net/minecraft/class_7733 net/minecraft/command/argument/RegistryEntryRefer
 	METHOD method_45612 getEnchantment (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880$class_6883;
 		ARG 0 context
 		ARG 1 name
-	METHOD parse (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
-		ARG 1 reader
-	CLASS class_7734 Serializer
-		CLASS class_7735 Properties
-			FIELD field_40408 registryRef Lnet/minecraft/class_5321;
-			METHOD <init> (Lnet/minecraft/class_7733$class_7734;Lnet/minecraft/class_5321;)V
-				ARG 2 registryRef

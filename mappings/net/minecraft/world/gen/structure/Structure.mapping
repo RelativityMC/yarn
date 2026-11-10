@@ -35,10 +35,9 @@ CLASS net/minecraft/class_3195 net/minecraft/world/gen/structure/Structure
 		ARG 2 width
 		ARG 3 z
 		ARG 4 height
-	METHOD method_41614 createStructureStart (Lnet/minecraft/class_6880;Lnet/minecraft/class_5321;Lnet/minecraft/class_5455;Lnet/minecraft/class_2794;Lnet/minecraft/class_1966;Lnet/minecraft/class_6544$class_6552;Lnet/minecraft/class_7138;Lnet/minecraft/class_3485;JLnet/minecraft/class_1923;Lnet/minecraft/class_5539;Ljava/util/function/Predicate;)Lnet/minecraft/class_3449;
+	METHOD method_41614 createStructureStart (Lnet/minecraft/class_6880;Lnet/minecraft/class_5321;Lnet/minecraft/class_7871$class_7872;Lnet/minecraft/class_2794;Lnet/minecraft/class_1966;Lnet/minecraft/class_6544$class_6552;Lnet/minecraft/class_7138;Lnet/minecraft/class_3485;JLnet/minecraft/class_1923;Lnet/minecraft/class_5539;Ljava/util/function/Predicate;)Lnet/minecraft/class_3449;
 		ARG 1 structure
 		ARG 2 dimension
-		ARG 3 dynamicRegistryManager
 		ARG 4 chunkGenerator
 		ARG 5 biomeSource
 		ARG 6 multiNoiseSampler
@@ -80,12 +79,11 @@ CLASS net/minecraft/class_3195 net/minecraft/world/gen/structure/Structure
 		ARG 3 z
 		ARG 4 height
 	CLASS class_7149 Context
-		FIELD comp_561 dynamicRegistryManager Lnet/minecraft/class_5455;
+		FIELD comp_561 dynamicRegistryManager Lnet/minecraft/class_7871$class_7872;
 		FIELD comp_564 noiseConfig Lnet/minecraft/class_7138;
 		FIELD comp_569 world Lnet/minecraft/class_5539;
 		FIELD comp_570 biomePredicate Ljava/util/function/Predicate;
-		METHOD <init> (Lnet/minecraft/class_5455;Lnet/minecraft/class_2794;Lnet/minecraft/class_1966;Lnet/minecraft/class_6544$class_6552;Lnet/minecraft/class_7138;Lnet/minecraft/class_3485;JLnet/minecraft/class_1923;Lnet/minecraft/class_5539;Ljava/util/function/Predicate;)V
-			ARG 1 dynamicRegistryManager
+		METHOD <init> (Lnet/minecraft/class_7871$class_7872;Lnet/minecraft/class_2794;Lnet/minecraft/class_1966;Lnet/minecraft/class_6544$class_6552;Lnet/minecraft/class_7138;Lnet/minecraft/class_3485;JLnet/minecraft/class_1923;Lnet/minecraft/class_5539;Ljava/util/function/Predicate;)V
 			ARG 2 chunkGenerator
 			ARG 3 biomeSource
 			ARG 4 climateSampler
@@ -95,7 +93,7 @@ CLASS net/minecraft/class_3195 net/minecraft/world/gen/structure/Structure
 			ARG 9 chunkPos
 			ARG 10 world
 			ARG 11 biomePredicate
-		METHOD comp_561 dynamicRegistryManager ()Lnet/minecraft/class_5455;
+		METHOD comp_561 dynamicRegistryManager ()Lnet/minecraft/class_7871$class_7872;
 		METHOD comp_564 noiseConfig ()Lnet/minecraft/class_7138;
 		METHOD comp_569 world ()Lnet/minecraft/class_5539;
 		METHOD comp_570 biomePredicate ()Ljava/util/function/Predicate;

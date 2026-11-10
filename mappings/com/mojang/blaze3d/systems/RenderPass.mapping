@@ -21,12 +21,10 @@ CLASS net/minecraft/class_1_1317 com/mojang/blaze3d/systems/RenderPass
 	METHOD method_1_7797 drawIndirect (Lnet/minecraft/class_1_1254;I)V
 		ARG 1 buffer
 		ARG 2 drawCount
-	METHOD method_1_7798 drawMultipleIndexed (Ljava/util/Collection;Lnet/minecraft/class_1_1211;Lnet/minecraft/class_5595;Ljava/util/Collection;Ljava/lang/Object;)V
+	METHOD method_1_7798 drawMultipleIndexed (Ljava/util/Collection;Ljava/util/Collection;Ljava/lang/Object;)V
 		ARG 1 objects
-		ARG 2 buffer
-		ARG 3 indexType
-		ARG 4 validationSkippedUniforms
-		ARG 5 uniformArgument
+		ARG 2 validationSkippedUniforms
+		ARG 3 uniformArgument
 	METHOD method_1_7799 enableScissor (IIII)V
 		ARG 1 x
 		ARG 2 y
@@ -90,14 +88,10 @@ CLASS net/minecraft/class_1_1317 com/mojang/blaze3d/systems/RenderPass
 		METHOD method_1_5116 coversEntirely (Lnet/minecraft/class_1_1330;)Z
 			ARG 1 textureView
 	CLASS class_10884 RenderObject
-		METHOD <init> (ILnet/minecraft/class_1_1211;Lnet/minecraft/class_1_1211;Lnet/minecraft/class_5595;III)V
-			ARG 1 slot
-			ARG 2 vertexBuffer
-			ARG 3 indexBuffer
-			ARG 4 indexType
-			ARG 5 firstIndex
-			ARG 6 indexCount
-			ARG 7 baseVertex
+		METHOD <init> (III)V
+			ARG 1 firstIndex
+			ARG 2 indexCount
+			ARG 3 baseVertex
 	CLASS class_10885 UniformUploader
 		METHOD method_1_7809 setUniform (Ljava/lang/String;Lnet/minecraft/class_1_1254;)V
 			ARG 1 name

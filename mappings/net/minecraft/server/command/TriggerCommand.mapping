@@ -5,9 +5,6 @@ CLASS net/minecraft/class_3153 net/minecraft/server/command/TriggerCommand
 		ARG 0 context
 	METHOD method_13813 register (Lcom/mojang/brigadier/CommandDispatcher;)V
 		ARG 0 dispatcher
-	METHOD method_13814 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 context
-		ARG 1 builder
 	METHOD method_13815 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_13816 (Lcom/mojang/brigadier/context/CommandContext;)I
@@ -21,9 +18,6 @@ CLASS net/minecraft/class_3153 net/minecraft/server/command/TriggerCommand
 		ARG 0 source
 		ARG 1 player
 		ARG 2 objective
-	METHOD method_13819 suggestObjectives (Lnet/minecraft/class_2168;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 source
-		ARG 1 builder
 	METHOD method_13820 executeSet (Lnet/minecraft/class_2168;Lnet/minecraft/class_3222;Lnet/minecraft/class_266;I)I
 		ARG 0 source
 		ARG 1 player

@@ -8,5 +8,3 @@ CLASS net/minecraft/class_12020 net/minecraft/world/debug/DebugSubscriptionTypes
 		ARG 0 id
 		ARG 1 packetCodec
 		ARG 2 expiry
-	METHOD method_74581 registerAndGetDefault (Lnet/minecraft/class_2378;)Lnet/minecraft/class_12017;
-		ARG 0 registry

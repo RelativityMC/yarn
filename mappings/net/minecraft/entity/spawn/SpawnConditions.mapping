@@ -1,3 +1,2 @@
 CLASS net/minecraft/class_10700 net/minecraft/entity/spawn/SpawnConditions
-	METHOD method_67168 registerAndGetDefault (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
-		ARG 0 registry
+	METHOD method_67168 registerAndGetDefault (Lnet/minecraft/class_2385;)V

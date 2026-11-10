@@ -5,5 +5,4 @@ CLASS net/minecraft/class_9723 net/minecraft/enchantment/effect/EnchantmentValue
 		ARG 1 level
 		ARG 2 random
 		ARG 3 inputValue
-	METHOD method_60233 registerAndGetDefault (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
-		ARG 0 registry
+	METHOD method_60233 registerAndGetDefault (Lnet/minecraft/class_2385;)V

@@ -8,4 +8,4 @@ CLASS net/minecraft/class_2989 net/minecraft/server/ServerAdvancementLoader
 	METHOD method_12896 get (Lnet/minecraft/class_2960;)Lnet/minecraft/class_8779;
 		ARG 1 id
 	METHOD method_53646 getManager ()Lnet/minecraft/class_163;
-	METHOD method_54921 validate (Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_6880$class_6883;)V
+	METHOD method_54921 validate (Lnet/minecraft/class_6880$class_6883;)V

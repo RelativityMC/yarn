@@ -2,16 +2,18 @@ CLASS net/minecraft/class_8942 net/minecraft/util/ErrorReporter
 	FIELD field_60348 EMPTY Lnet/minecraft/class_8942;
 	METHOD method_54946 makeChild (Lnet/minecraft/class_8942$class_11336;)Lnet/minecraft/class_8942;
 		ARG 1 context
-	METHOD method_54947 report (Lnet/minecraft/class_8942$class_11337;)V
+	METHOD method_54947 report (Lnet/minecraft/class_8942$class_1_1992;)V
 		ARG 1 error
 	CLASS class_1_6 NamedMapElementContext
 	CLASS class_1_1302 TagElementContext
+	CLASS class_1_1992 class_1_1992
+		METHOD method_71358 getMessage ()Ljava/lang/String;
 	CLASS class_8943 Impl
 		FIELD field_60349 CONTEXT Lnet/minecraft/class_8942$class_11336;
 		FIELD field_60350 parent Lnet/minecraft/class_8942$class_8943;
 		FIELD field_60351 context Lnet/minecraft/class_8942$class_11336;
 		FIELD field_60352 errors Ljava/util/Set;
-		METHOD <init> (Lnet/minecraft/class_8942$class_8943;Lnet/minecraft/class_8942$class_11336;)V
+		METHOD <init> (Lnet/minecraft/class_8942$class_8943;Lnet/minecraft/class_8942$class_11336;Z)V
 			ARG 1 parent
 			ARG 2 context
 		METHOD <init> (Lnet/minecraft/class_8942$class_11336;)V
@@ -25,8 +27,8 @@ CLASS net/minecraft/class_8942 net/minecraft/util/ErrorReporter
 			ARG 1 consumer
 		METHOD method_71351 getErrorsAsLongString ()Ljava/lang/String;
 		CLASS class_11330 ErrorEntry
-			FIELD comp_4200 error Lnet/minecraft/class_8942$class_11337;
-			METHOD comp_4200 error ()Lnet/minecraft/class_8942$class_11337;
+			FIELD comp_4200 error Lnet/minecraft/class_8942$class_1_1992;
+			METHOD comp_4200 error ()Lnet/minecraft/class_8942$class_1_1992;
 		CLASS class_11331 ErrorList
 			FIELD comp_4202 errors Ljava/util/List;
 			METHOD <init> (Lnet/minecraft/class_8942$class_11336;)V
@@ -38,7 +40,6 @@ CLASS net/minecraft/class_8942 net/minecraft/util/ErrorReporter
 			METHOD method_71355 (Ljava/lang/String;)Ljava/lang/String;
 				ARG 0 message
 			METHOD method_71356 (Ljava/util/List;Lnet/minecraft/class_8942$class_11336;Lnet/minecraft/class_8942$class_8943$class_11331;)V
-				ARG 1 context
 				ARG 2 errors
 			METHOD method_71357 (Ljava/util/List;Lnet/minecraft/class_8942$class_11336;Lnet/minecraft/class_8942$class_8943$class_11331;)V
 				ARG 1 context
@@ -53,9 +54,6 @@ CLASS net/minecraft/class_8942 net/minecraft/util/ErrorReporter
 	CLASS class_11335 ListElementContext
 	CLASS class_11336 Context
 		METHOD method_1_25 getName ()Ljava/lang/String;
-	CLASS class_11337 Error
-		METHOD method_1_9170 isGlobal ()Z
-		METHOD method_71358 getMessage ()Ljava/lang/String;
 	CLASS class_11338 LootTableContext
 	CLASS class_11339 CriterionContext
 	CLASS class_11340 Logging

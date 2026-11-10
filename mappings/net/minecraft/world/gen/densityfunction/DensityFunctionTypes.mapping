@@ -216,10 +216,8 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 		ARG 0 input
 	METHOD method_41063 (Lcom/mojang/datafixers/util/Either;)Lnet/minecraft/class_6910;
 		ARG 0 either
-	METHOD method_41066 registerAndGetDefault (Lnet/minecraft/class_2378;)Lcom/mojang/serialization/MapCodec;
-		ARG 0 registry
-	METHOD method_41067 register (Lnet/minecraft/class_2378;Ljava/lang/String;Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
-		ARG 0 registry
+	METHOD method_41066 registerAndGetDefault (Lnet/minecraft/class_2385;)V
+	METHOD method_41067 register (Lnet/minecraft/class_2385;Ljava/lang/String;Lcom/mojang/serialization/MapCodec;)V
 		ARG 1 id
 		ARG 2 mapCodec
 	METHOD method_41071 (Lnet/minecraft/class_6910;)Lcom/mojang/datafixers/util/Either;

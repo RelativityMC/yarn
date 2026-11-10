@@ -22,12 +22,12 @@ CLASS net/minecraft/class_9810 net/minecraft/client/render/chunk/SectionBuilder
 		ARG 5 z
 		ARG 6 quad
 		ARG 7 shading
-	METHOD method_1_3004 (Ljava/util/Map;Lnet/minecraft/class_750;Lnet/minecraft/class_11515;)Lnet/minecraft/class_4588;
+	METHOD method_1_3004 (Ljava/util/Map;Lnet/minecraft/class_750;Lnet/minecraft/class_11515;FFFLnet/minecraft/class_777;III)V
 		ARG 3 layer
 	METHOD method_60902 addBlockEntity (Lnet/minecraft/class_9810$class_9811;Lnet/minecraft/class_2586;)V
 		ARG 1 data
 		ARG 2 blockEntity
-	METHOD method_60903 beginBufferBuilding (Ljava/util/Map;Lnet/minecraft/class_750;Lnet/minecraft/class_11515;)Lnet/minecraft/class_287;
+	METHOD method_60903 beginBufferBuilding (Ljava/util/Map;Lnet/minecraft/class_750;Lnet/minecraft/class_11515;)Lnet/minecraft/class_1_2019;
 		ARG 1 builders
 		ARG 2 allocatorStorage
 		ARG 3 layer

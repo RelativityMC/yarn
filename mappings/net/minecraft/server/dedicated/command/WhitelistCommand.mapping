@@ -27,12 +27,6 @@ CLASS net/minecraft/class_3156 net/minecraft/server/dedicated/command/WhitelistC
 		ARG 1 targets
 	METHOD method_13846 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
-	METHOD method_13848 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 context
-		ARG 1 builder
-	METHOD method_13849 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
-		ARG 0 context
-		ARG 1 builder
 	METHOD method_13850 executeReload (Lnet/minecraft/class_2168;)I
 		ARG 0 source
 	METHOD method_13851 (Lcom/mojang/brigadier/context/CommandContext;)I

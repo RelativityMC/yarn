@@ -1,25 +1,9 @@
 CLASS net/minecraft/class_2170 net/minecraft/server/command/CommandManager
-	FIELD field_9832 dispatcher Lcom/mojang/brigadier/CommandDispatcher;
 	FIELD field_9833 LOGGER Lorg/slf4j/Logger;
-	FIELD field_31837 ALWAYS_PASS_CHECK Lnet/minecraft/class_12090;
-	FIELD field_31838 MODERATORS_CHECK Lnet/minecraft/class_12090;
-	FIELD field_31839 GAMEMASTERS_CHECK Lnet/minecraft/class_12090;
-	FIELD field_31840 ADMINS_CHECK Lnet/minecraft/class_12090;
-	FIELD field_31841 OWNERS_CHECK Lnet/minecraft/class_12090;
 	FIELD field_46823 CURRENT_CONTEXT Ljava/lang/ThreadLocal;
-	FIELD field_60672 INSPECTOR Lnet/minecraft/class_2641$class_11409;
 	FIELD field_60859 PREFIX Ljava/lang/String;
-	METHOD <init> (Lnet/minecraft/class_2170$class_5364;Lnet/minecraft/class_7157;)V
-		ARG 1 environment
-		ARG 2 commandRegistryAccess
-	METHOD method_9235 getDispatcher ()Lcom/mojang/brigadier/CommandDispatcher;
 	METHOD method_9238 getCommandValidator (Lnet/minecraft/class_2170$class_2171;)Ljava/util/function/Predicate;
 		ARG 0 parser
-	METHOD method_9239 deepCopyNodes (Lcom/mojang/brigadier/tree/CommandNode;Lcom/mojang/brigadier/tree/CommandNode;Ljava/lang/Object;Ljava/util/Map;)V
-		ARG 0 root
-		ARG 1 newRoot
-		ARG 2 source
-		ARG 3 nodes
 	METHOD method_9240 (Lnet/minecraft/class_2170$class_2171;Ljava/lang/String;)Z
 		ARG 1 string
 	METHOD method_9241 sendCommandTree (Lnet/minecraft/class_3222;)V
@@ -31,60 +15,33 @@ CLASS net/minecraft/class_2170 net/minecraft/server/command/CommandManager
 		ARG 1 type
 	METHOD method_9247 literal (Ljava/lang/String;)Lcom/mojang/brigadier/builder/LiteralArgumentBuilder;
 		ARG 0 literal
-	METHOD method_9249 execute (Lcom/mojang/brigadier/ParseResults;Ljava/lang/String;)V
+	METHOD method_9249 execute (Lnet/minecraft/class_2168;Lnet/minecraft/class_1_1986$class_1_1988;Ljava/lang/String;)V
 		COMMENT Executes {@code command}. The command cannot be prefixed with a slash.
 		COMMENT
 		COMMENT @see #executeWithPrefix(ServerCommandSource, String)
-		ARG 1 parseResults
 		ARG 2 command
 	METHOD method_23917 getException (Lcom/mojang/brigadier/ParseResults;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
 		ARG 0 parse
-	METHOD method_30851 (Lcom/mojang/brigadier/arguments/ArgumentType;)Ljava/lang/String;
-		ARG 0 type
 	METHOD method_30852 checkMissing ()V
-	METHOD method_30853 (Lcom/mojang/brigadier/arguments/ArgumentType;)Z
-		ARG 0 type
-	METHOD method_41710 (Lcom/mojang/brigadier/CommandDispatcher;Lcom/mojang/brigadier/tree/CommandNode;Lcom/mojang/brigadier/tree/CommandNode;Lcom/mojang/brigadier/tree/CommandNode;Ljava/util/Collection;)V
-		ARG 1 parent
-		ARG 2 child
-		ARG 3 sibling
-		ARG 4 inputs
 	METHOD method_44252 parseAndExecute (Lnet/minecraft/class_2168;Ljava/lang/String;)V
 		COMMENT Parses and executes {@code command}. Unlike {@link #execute} the command can be prefixed
 		COMMENT with a slash, which is removed before parsing.
 		ARG 1 source
 		ARG 2 command
-	METHOD method_45018 withCommandSource (Lcom/mojang/brigadier/ParseResults;Ljava/util/function/UnaryOperator;)Lcom/mojang/brigadier/ParseResults;
-		COMMENT {@return {@code parseResults} with {@code sourceMapper} applied to the
-		COMMENT command source}
-		ARG 0 parseResults
-		ARG 1 sourceMapper
-	METHOD method_46732 createRegistryAccess (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_7157;
-		ARG 0 registries
+	METHOD method_46732 createRegistryAccess ()Lnet/minecraft/class_7157;
 	METHOD method_54312 throwException (Lcom/mojang/brigadier/ParseResults;)V
 		ARG 0 parse
 	METHOD method_54313 callWithContext (Lnet/minecraft/class_2168;Ljava/util/function/Consumer;)V
 		ARG 0 commandSource
 		ARG 1 callback
-	METHOD method_54314 (Ljava/lang/String;Lcom/mojang/brigadier/context/ContextChain;Lnet/minecraft/class_2168;Lnet/minecraft/class_8854;)V
-		ARG 3 context
-	METHOD method_54492 checkCommand (Lcom/mojang/brigadier/ParseResults;Ljava/lang/String;Lnet/minecraft/class_2168;)Lcom/mojang/brigadier/context/ContextChain;
-		ARG 0 parseResults
-		ARG 1 command
-		ARG 2 source
-	METHOD method_54493 (Ljava/lang/String;Lnet/minecraft/class_2583;)Lnet/minecraft/class_2583;
+	METHOD method_54492 checkCommand (Lnet/minecraft/class_1_1986$class_1_1988;Lnet/minecraft/class_2168;)Lcom/mojang/brigadier/context/ContextChain;
+		ARG 1 source
+	METHOD method_54493 (Lnet/minecraft/class_1_1986$class_1_1988;Lnet/minecraft/class_2583;)Lnet/minecraft/class_2583;
 		ARG 1 style
 	METHOD method_71774 requirePermissionLevel (Lnet/minecraft/class_12090;)Lnet/minecraft/class_12095;
 		ARG 0 check
 	METHOD method_71971 stripLeadingSlash (Ljava/lang/String;)Ljava/lang/String;
 		ARG 0 command
-	METHOD method_75745 createSource (Lnet/minecraft/class_12096;)Lnet/minecraft/class_2168;
-		ARG 0 permissions
-	CLASS 1 1
-		FIELD field_63811 source Lnet/minecraft/class_2168;
-	CLASS 2 2
-		METHOD method_56811 createTagCreatingLookup (Lnet/minecraft/class_7225$class_7226;)Lnet/minecraft/class_7225$class_7226$class_7875;
-			ARG 1 original
 	CLASS class_2171 CommandParser
 		METHOD method_1_15 parse (Lcom/mojang/brigadier/StringReader;)V
 			ARG 1 reader

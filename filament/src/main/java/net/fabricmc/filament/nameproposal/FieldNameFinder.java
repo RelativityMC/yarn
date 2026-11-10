@@ -25,6 +25,8 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 
+import javax.lang.model.SourceVersion;
+
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.AbstractInsnNode;
 import org.objectweb.asm.tree.FieldInsnNode;
@@ -125,7 +127,7 @@ public class FieldNameFinder {
 			var field = new FieldData(fieldNode, methodNode, args, true, isEnum, fieldNames);
 			var name = nameProvider.getName(field);
 
-			if (name != null) {
+			if (name != null && SourceVersion.isName(name)) {
 				attemptedProposals.add(mappingEntry);
 
 				if (checker.add(name, field)) {

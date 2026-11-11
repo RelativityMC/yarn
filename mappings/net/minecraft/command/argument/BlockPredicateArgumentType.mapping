@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_2252 net/minecraft/command/argument/BlockPredicateArgumentType
+	FIELD field_1_12981 INSTANCE Lnet/minecraft/class_2252;
+	FIELD field_1_12982 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_10672 EXAMPLES Ljava/util/Collection;
 	METHOD method_1_12878 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 context
@@ -12,7 +14,9 @@ CLASS net/minecraft/class_2252 net/minecraft/command/argument/BlockPredicateArgu
 	METHOD method_41952 (Lnet/minecraft/class_2259$class_7212;)Ljava/lang/Record;
 		ARG 0 result
 	METHOD method_41953 parse (Lnet/minecraft/class_7871;Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/class_2252$class_1_2092;
+		ARG 0 blocks
 		ARG 1 reader
+	CLASS class_1_2092 Value
 	CLASS class_2253 StatePredicate
 		FIELD comp_1_2302 nbt Lnet/minecraft/class_2487;
 		FIELD comp_1_2303 properties Ljava/util/Set;

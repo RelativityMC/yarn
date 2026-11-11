@@ -6,6 +6,33 @@ CLASS net/minecraft/class_5341 net/minecraft/loot/condition/LootCondition
 	FIELD field_51809 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_51810 ENTRY_CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_1_745 getCodec ()Lcom/mojang/serialization/MapCodec;
+	METHOD method_1_13031 isPossible (Lnet/minecraft/class_58;)Z
+		ARG 1 reporter
+	METHOD method_1_13032 getKnownResult (Lnet/minecraft/class_5341$class_1_2104;)Ljava/lang/Boolean;
+		ARG 1 context
+	METHOD method_1_13033 getKnownResult (Lnet/minecraft/class_58;)Ljava/lang/Boolean;
+		ARG 1 reporter
+	METHOD method_60309 (Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 mapCodec
+	CLASS class_1_2102 ConditionAlwaysFalse
+		FIELD field_1_12992 in Lnet/minecraft/class_176;
+		METHOD <init> (Lnet/minecraft/class_176;)V
+			ARG 1 in
+	CLASS class_1_2103 ConditionAlwaysTrue
+		FIELD field_1_12993 in Lnet/minecraft/class_176;
+		METHOD <init> (Lnet/minecraft/class_176;)V
+			ARG 1 in
+	CLASS class_1_2104 Context
+		FIELD comp_1_2312 contextType Lnet/minecraft/class_176;
+		METHOD comp_1_2312 contextType ()Lnet/minecraft/class_176;
+		METHOD method_1_13034 fromReporter (Lnet/minecraft/class_58;)Lnet/minecraft/class_5341$class_1_2104;
+			ARG 0 reporter
+		METHOD method_1_13035 removeVisited (Lnet/minecraft/class_5341;)V
+			ARG 1 condition
+		METHOD method_1_13036 addVisited (Lnet/minecraft/class_5341;)Z
+			ARG 1 condition
+	CLASS class_1_2105 Contextual
+		METHOD method_1_13037 getRequiredParameters ()Ljava/util/Set;
 	CLASS class_210 Builder
 		METHOD method_1_327 and (Lnet/minecraft/class_5341$class_210;)Lnet/minecraft/class_8548$class_8549;
 			ARG 1 condition

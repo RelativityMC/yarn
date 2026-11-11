@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_2003 net/minecraft/particle/ParticleGroup
+	FIELD field_1_12691 WATER_SUSPEND Lnet/minecraft/class_1_2003;
+	FIELD field_1_12692 limit I
+	METHOD <init> (I)V
+		ARG 1 limit
+	METHOD method_1_12648 getLimit ()I

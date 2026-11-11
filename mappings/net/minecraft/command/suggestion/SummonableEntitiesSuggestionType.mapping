@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_2079 net/minecraft/command/suggestion/SummonableEntitiesSuggestionType
+	FIELD field_1_12967 INSTANCE Lnet/minecraft/class_1_2079;
+	FIELD field_1_12968 SERIALIZER Lnet/minecraft/class_1_2097$class_1_2098;
+	METHOD method_1_12968 (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_1299;)Z
+		ARG 1 entityType

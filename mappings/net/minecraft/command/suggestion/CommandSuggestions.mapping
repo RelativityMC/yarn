@@ -1,0 +1,46 @@
+CLASS net/minecraft/class_1_1996 net/minecraft/command/suggestion/CommandSuggestions
+	FIELD field_1_12668 CLIENT_COMMANDS_RESTRICTED_PREDICATE Lnet/minecraft/class_12096;
+	FIELD field_1_12669 NODE_FACTORY Lnet/minecraft/class_2641$class_11408;
+	FIELD field_1_12670 INSPECTOR Lnet/minecraft/class_2641$class_11409;
+	FIELD field_1_12671 EMPTY Lnet/minecraft/class_1_1996;
+	FIELD field_1_12672 CLIENT_COMMANDS_RESTRICTED_PERMISSION Lnet/minecraft/class_12087;
+	FIELD field_1_12673 CLIENT_COMMANDS_RESTRICTED_CHECK Lnet/minecraft/class_12090;
+	METHOD <init> (Lcom/mojang/brigadier/CommandDispatcher;)V
+		ARG 1 dispatcher
+	METHOD method_1_12599 fromPacket (Lnet/minecraft/class_2641;)Lnet/minecraft/class_1_1996;
+		ARG 0 packet
+	METHOD method_1_12601 (Lnet/minecraft/class_12087;)Z
+		ARG 0 permission
+	METHOD method_1_12602 parse (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/class_2172;)Lnet/minecraft/class_1_1996$class_1_1997;
+		ARG 1 reader
+		ARG 2 source
+	METHOD method_1_12603 parse (Ljava/lang/String;Lnet/minecraft/class_2172;)Lnet/minecraft/class_1_1996$class_1_1997;
+		ARG 1 reader
+		ARG 2 source
+	METHOD method_1_12604 createPacket (Lnet/minecraft/class_3222;)Lnet/minecraft/class_2641;
+		ARG 1 player
+	CLASS 1 1
+		FIELD field_63811 source Lnet/minecraft/class_12097;
+	CLASS 2 2
+		METHOD method_1_12607 (Lcom/mojang/brigadier/context/CommandContext;)I
+			ARG 0 context
+	CLASS class_1_1997 Parse
+		FIELD field_1_12674 parseResults Lcom/mojang/brigadier/ParseResults;
+		METHOD <init> (Lnet/minecraft/class_1_1996;Lcom/mojang/brigadier/ParseResults;)V
+			ARG 2 parseResults
+		METHOD method_1_12608 getCompletionSuggestions ()Ljava/util/concurrent/CompletableFuture;
+		METHOD method_1_12609 getCompletionSuggestions (I)Ljava/util/concurrent/CompletableFuture;
+			ARG 1 cursor
+		METHOD method_1_12610 hasMessages ()Z
+		METHOD method_1_12611 getParseResults ()Lcom/mojang/brigadier/ParseResults;
+		METHOD method_1_12612 getSignedArguments ()Lnet/minecraft/class_7644;
+		CLASS class_1_1998 Consumer
+			FIELD field_1_12676 hasMessages Z
+	CLASS class_1_1999 class_1_1999
+		FIELD field_1_12677 COMMAND Lcom/mojang/brigadier/Command;
+		FIELD field_1_12678 REDIRECT_MODIFIER Lcom/mojang/brigadier/RedirectModifier;
+		METHOD method_1_12613 (Lcom/mojang/brigadier/context/CommandContext;)I
+			ARG 0 context
+		METHOD method_1_12614 (Lcom/mojang/brigadier/context/CommandContext;)Ljava/util/Collection;
+			ARG 0 context
+	CLASS class_11503 CommandRunResult

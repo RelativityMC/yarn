@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_2067 net/minecraft/command/suggestion/LiteralSuggestionType
+	FIELD field_1_12920 PACKET_CODEC Lnet/minecraft/class_9139;
+	FIELD field_1_12921 SERIALIZER Lnet/minecraft/class_1_2097$class_1_2098;
+	METHOD method_1_12901 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_12902 provider ([Ljava/lang/String;)Lcom/mojang/brigadier/suggestion/SuggestionProvider;
+		ARG 0 values

@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_2239 net/minecraft/command/argument/ScoreboardSlotArgumentType
+	FIELD field_1_12913 INSTANCE Lnet/minecraft/class_2239;
+	FIELD field_1_12914 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_9953 EXAMPLES Ljava/util/Collection;
 	FIELD field_9954 INVALID_SLOT_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	METHOD method_1_12878 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;

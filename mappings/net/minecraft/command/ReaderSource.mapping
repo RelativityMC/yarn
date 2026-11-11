@@ -1,0 +1,15 @@
+CLASS net/minecraft/class_1_2094 net/minecraft/command/ReaderSource
+	METHOD method_1_13012 of (Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/class_1_2094;
+		ARG 0 reader
+	METHOD method_1_13013 of (Ljava/lang/String;)Lnet/minecraft/class_1_2094;
+		ARG 0 string
+	CLASS class_1_2095 class_1_2095
+		METHOD method_1_13014 (Lnet/minecraft/class_1_1994;Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/class_1_2094;
+			ARG 1 source
+			ARG 2 reader
+		METHOD method_1_13015 (Lnet/minecraft/class_1_1994;Ljava/lang/String;)Lnet/minecraft/class_1_2094;
+			ARG 1 source
+			ARG 2 string
+	CLASS class_1_2096 Immediate
+		METHOD method_1_13016 (Lnet/minecraft/class_1_1994;Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/class_1_2094$class_1_2096;
+			ARG 1 reader1

@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_2177 net/minecraft/command/argument/ColorArgumentType
+	FIELD field_1_12851 INSTANCE Lnet/minecraft/class_2177;
+	FIELD field_1_12852 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_9839 EXAMPLES Ljava/util/Collection;
 	FIELD field_9840 INVALID_COLOR_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	METHOD method_1_12878 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;

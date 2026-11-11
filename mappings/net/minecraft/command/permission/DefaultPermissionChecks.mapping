@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_1_2020 net/minecraft/command/permission/DefaultPermissionChecks
+	FIELD field_1_12751 ADMINS Lnet/minecraft/class_12090;
+	FIELD field_1_12752 ANY Lnet/minecraft/class_12090;
+	FIELD field_1_12753 GAMEMASTERS Lnet/minecraft/class_12090;
+	FIELD field_1_12754 MODERATORS Lnet/minecraft/class_12090;
+	FIELD field_1_12755 OWNERS Lnet/minecraft/class_12090;

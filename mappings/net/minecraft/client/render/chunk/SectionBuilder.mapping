@@ -24,6 +24,13 @@ CLASS net/minecraft/class_9810 net/minecraft/client/render/chunk/SectionBuilder
 		ARG 7 shading
 	METHOD method_1_3004 (Ljava/util/Map;Lnet/minecraft/class_750;Lnet/minecraft/class_11515;FFFLnet/minecraft/class_777;III)V
 		ARG 3 layer
+		ARG 4 x
+		ARG 5 y
+		ARG 6 z
+		ARG 7 quad
+		ARG 8 tint
+		ARG 9 brightness
+		ARG 10 light
 	METHOD method_60902 addBlockEntity (Lnet/minecraft/class_9810$class_9811;Lnet/minecraft/class_2586;)V
 		ARG 1 data
 		ARG 2 blockEntity

@@ -25,6 +25,8 @@ CLASS net/minecraft/class_7655 net/minecraft/registry/RegistryLoading
 		ARG 3 executor
 	METHOD method_1_953 (Ljava/util/Map;Lnet/minecraft/class_1_102;)Z
 		ARG 1 loader
+	METHOD method_1_12650 getCommandVisibleRegistries ()Ljava/util/stream/Stream;
+	METHOD method_1_12651 getCommandVisibleDynamicRegistries ()Ljava/util/stream/Stream;
 	METHOD method_45126 writeAndCreateLoadingException (Ljava/util/Map;)Lnet/minecraft/class_148;
 		ARG 0 exceptions
 	METHOD method_46619 createInfoGetter (Ljava/util/List;Ljava/util/List;)Lnet/minecraft/class_7871$class_7872;

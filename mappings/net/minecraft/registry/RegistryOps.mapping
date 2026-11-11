@@ -2,10 +2,29 @@ CLASS net/minecraft/class_6903 net/minecraft/registry/RegistryOps
 	FIELD field_40852 registryInfoGetter Lnet/minecraft/class_7871$class_7872;
 	METHOD <init> (Lcom/mojang/serialization/DynamicOps;Lnet/minecraft/class_7871$class_7872;)V
 		ARG 1 delegate
+		ARG 2 registryInfoGetter
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
+	METHOD method_1_7602 (Lnet/minecraft/class_7871;)Lcom/mojang/serialization/DataResult;
+		ARG 0 registry
+	METHOD method_1_12589 (Lnet/minecraft/class_6903;)Lcom/mojang/serialization/DataResult;
+		ARG 0 ops
+	METHOD method_1_12590 (Ljava/util/function/Function;Lcom/mojang/serialization/DynamicOps;)Lcom/mojang/serialization/DataResult;
+		ARG 1 ops
+	METHOD method_1_12592 (Ljava/lang/Object;)Ljava/lang/Object;
+		ARG 0 object
+	METHOD method_1_12593 getRegistryLookupCodec ()Lcom/mojang/serialization/codecs/RecordCodecBuilder;
+	METHOD method_1_12594 createRetrievalCodec (Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;
+		ARG 0 retriever
 	METHOD method_40414 of (Lcom/mojang/serialization/DynamicOps;Lnet/minecraft/class_7871$class_7872;)Lnet/minecraft/class_6903;
 		ARG 0 delegate
+		ARG 1 registryInfoGetter
+	METHOD method_46629 (Lnet/minecraft/class_5321;Lnet/minecraft/class_7871;)Ljava/util/Optional;
+		ARG 1 registry
+	METHOD method_46630 (Lnet/minecraft/class_5321;Lnet/minecraft/class_5321;Lnet/minecraft/class_6903;)Lcom/mojang/serialization/DataResult;
+		ARG 2 ops
+	METHOD method_46631 (Lnet/minecraft/class_5321;Lnet/minecraft/class_6903;)Lcom/mojang/serialization/DataResult;
+		ARG 1 ops
 	METHOD method_46634 getEntryLookup (Lnet/minecraft/class_5321;)Ljava/util/Optional;
 		ARG 1 registryRef
 	METHOD method_46636 getEntryLookupCodec (Lnet/minecraft/class_5321;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;
@@ -14,5 +33,6 @@ CLASS net/minecraft/class_6903 net/minecraft/registry/RegistryOps
 		ARG 0 key
 	METHOD method_56622 withRegistry (Lcom/mojang/serialization/Dynamic;Lnet/minecraft/class_7871$class_7872;)Lcom/mojang/serialization/Dynamic;
 		ARG 0 dynamic
+		ARG 1 registryInfoGetter
 	METHOD method_57110 withDelegate (Lcom/mojang/serialization/DynamicOps;)Lnet/minecraft/class_6903;
 		ARG 1 delegate

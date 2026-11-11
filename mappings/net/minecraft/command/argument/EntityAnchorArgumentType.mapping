@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_2183 net/minecraft/command/argument/EntityAnchorArgumentType
+	FIELD field_1_12893 INSTANCE Lnet/minecraft/class_2183;
+	FIELD field_1_12894 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_9846 INVALID_ANCHOR_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_9847 EXAMPLES Ljava/util/Collection;
 	METHOD method_1_12878 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;

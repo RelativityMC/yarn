@@ -5,6 +5,21 @@ CLASS net/minecraft/class_2172 net/minecraft/command/CommandSource
 		ARG 0 value
 	METHOD method_1_9206 (Ljava/util/function/Predicate;Lnet/minecraft/class_6880$class_6883;)Z
 		ARG 1 entry
+	METHOD method_1_12854 getPlayer ()Lnet/minecraft/class_1297;
+	METHOD method_1_12855 getDynamicRegistries ()Lnet/minecraft/class_7225$class_7874;
+	METHOD method_1_12856 getWorld ()Lnet/minecraft/class_1937;
+	METHOD method_1_12857 getPos ()Lnet/minecraft/class_243;
+	METHOD method_1_12858 getServer ()Lnet/minecraft/server/MinecraftServer;
+		COMMENT {@return the server for this command source, or {@code null} if this command
+		COMMENT source describes a logical client}
+	METHOD method_1_12859 getCompletions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 context
+		ARG 2 suggestionsBuilder
+	METHOD method_1_12860 listIdSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_5321;Lnet/minecraft/class_2172$class_7078;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 context
+		ARG 2 registryRef
+		ARG 3 suggestedIdType
+		ARG 4 builder
 	METHOD method_9250 forEachMatching (Ljava/lang/Iterable;Ljava/lang/String;Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Consumer;)V
 		ARG 0 candidates
 		ARG 1 remaining
@@ -94,6 +109,7 @@ CLASS net/minecraft/class_2172 net/minecraft/command/CommandSource
 		ARG 1 builder
 		ARG 2 prefix
 	METHOD method_41213 listIdSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_5321;Lnet/minecraft/class_2172$class_7078;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Ljava/util/function/Predicate;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 context
 		ARG 2 registryRef
 		ARG 3 suggestedIdType
 		ARG 4 builder
@@ -104,6 +120,18 @@ CLASS net/minecraft/class_2172 net/minecraft/command/CommandSource
 		ARG 3 builder
 		ARG 4 filter
 	METHOD method_44750 getChatSuggestions ()Ljava/util/Collection;
+	CLASS class_1_2048 Suggestor
+		METHOD method_1_12862 getSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+			ARG 1 context
+			ARG 2 builder
+		METHOD method_1_12863 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+			ARG 0 context
+			ARG 1 builder
+		METHOD method_1_12864 canonical ()Lnet/minecraft/class_2172$class_1_2048;
+	CLASS class_1_2049 Anchor
+		FIELD field_1_12889 FACING_RELATIVE Lnet/minecraft/class_2172$class_1_2049;
+		FIELD field_1_12890 AXIS_ALIGNED Lnet/minecraft/class_2172$class_1_2049;
 	CLASS class_7078 SuggestedIdType
+		METHOD method_1_12861 canSuggestHash ()Z
 		METHOD method_41215 canSuggestTags ()Z
 		METHOD method_41216 canSuggestElements ()Z

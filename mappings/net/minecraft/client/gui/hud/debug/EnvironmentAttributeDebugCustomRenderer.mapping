@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_2110 net/minecraft/client/gui/hud/debug/EnvironmentAttributeDebugCustomRenderer
+	FIELD comp_1_2320 textRenderer Lnet/minecraft/class_327;
+	FIELD field_1_13010 TEXT_AND_COLOR_SEPARATION I
+	METHOD comp_1_2320 textRenderer ()Lnet/minecraft/class_327;

@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_2214 net/minecraft/command/argument/ScoreboardObjectiveArgumentType
+	FIELD field_1_12846 INSTANCE Lnet/minecraft/class_2214;
+	FIELD field_1_12847 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_9919 EXAMPLES Ljava/util/Collection;
 	FIELD field_9921 READONLY_OBJECTIVE_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_9922 UNKNOWN_OBJECTIVE_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;

@@ -17,6 +17,12 @@ CLASS net/minecraft/class_1220 net/minecraft/datafixer/schema/IdentifierNormaliz
 		ARG 0 string
 		ARG 1 oldSeparator
 		ARG 2 newSeparator
+	METHOD method_1_12823 matches (Lcom/mojang/serialization/DynamicLike;Ljava/lang/String;)Z
+		ARG 0 actual
+		ARG 1 expected
+	METHOD method_1_12824 matches (Lcom/mojang/serialization/DynamicLike;Ljava/util/function/Predicate;)Z
+		ARG 0 actual
+		ARG 1 expected
 	METHOD method_5193 normalize (Ljava/lang/String;)Ljava/lang/String;
 		ARG 0 id
 	METHOD method_28295 getIdentifierType ()Lcom/mojang/datafixers/types/Type;

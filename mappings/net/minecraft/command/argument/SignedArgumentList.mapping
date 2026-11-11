@@ -2,6 +2,7 @@ CLASS net/minecraft/class_7644 net/minecraft/command/argument/SignedArgumentList
 	COMMENT A list of parsed {@linkplain SignedArgumentType signed arguments}.
 	COMMENT
 	COMMENT @see #of
+	METHOD method_1_12649 isNotEmpty ()Z
 	METHOD method_45043 of (Lcom/mojang/brigadier/ParseResults;)Lnet/minecraft/class_7644;
 		COMMENT {@return a new instance of this list from {@code parseResults}}
 		ARG 0 parseResults

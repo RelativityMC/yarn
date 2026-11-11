@@ -38,6 +38,7 @@ CLASS net/minecraft/class_287 net/minecraft/client/render/BufferBuilder
 	FIELD field_52074 vertexSizeByte I
 	FIELD field_52075 requiredMask I
 	FIELD field_52077 currentMask I
+	FIELD field_61051 MAX_VERTICES I
 	METHOD <init> (Lnet/minecraft/class_9799;Lnet/minecraft/class_5596;Lnet/minecraft/class_1_1232;)V
 		ARG 1 allocator
 		ARG 2 drawMode

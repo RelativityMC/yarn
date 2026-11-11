@@ -9,12 +9,20 @@ CLASS net/minecraft/class_9433 net/minecraft/command/argument/RegistryEntryArgum
 	METHOD <init> (Lnet/minecraft/class_5321;Lcom/mojang/serialization/Codec;)V
 		ARG 1 registry
 		ARG 2 entryCodec
+	METHOD method_1_12874 getValue (Lnet/minecraft/class_1_1994;Lnet/minecraft/class_6880;)Ljava/lang/Object;
+		COMMENT Gets the actual value to be returned from the parsed registry entry.
+		ARG 1 source
+		ARG 2 entry
 	METHOD method_1_12878 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 context
 		ARG 2 suggestionsBuilder
 	METHOD method_58483 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 argument
 	METHOD method_68814 parse (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/class_7871$class_7872;Lnet/minecraft/class_9408;Lcom/mojang/serialization/DynamicOps;)Lnet/minecraft/class_6880;
+		ARG 1 reader
+		ARG 2 registries
+		ARG 3 parser
+		ARG 4 ops
 	METHOD method_71495 createParser (Lnet/minecraft/class_5321;Lcom/mojang/serialization/DynamicOps;)Lnet/minecraft/class_9408;
 		ARG 0 key
 		ARG 1 ops
@@ -23,8 +31,17 @@ CLASS net/minecraft/class_9433 net/minecraft/command/argument/RegistryEntryArgum
 	METHOD method_71497 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 key
 		ARG 1 registryRef
-	CLASS class_1_2053 class_1_2053
+	CLASS class_1_2053 Parser
 		METHOD method_71499 parse (Lnet/minecraft/class_1_2094;Lnet/minecraft/class_7871$class_7872;Lcom/mojang/serialization/DynamicOps;Lcom/mojang/serialization/Codec;Lnet/minecraft/class_7871;)Lnet/minecraft/class_6880;
+			ARG 1 readerSource
+			ARG 2 registriesLookup
+			ARG 3 ops
+			ARG 4 entryCodec
+			ARG 5 registry
+	CLASS class_1_2054 ByValue
+		METHOD method_1_12876 getArgument (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880;
+			ARG 0 context
+			ARG 1 string
 	CLASS class_11380 DirectParser
 		METHOD method_71498 (Lnet/minecraft/class_1_2094;Ljava/lang/String;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
 			ARG 1 error

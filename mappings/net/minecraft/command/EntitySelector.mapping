@@ -29,6 +29,14 @@ CLASS net/minecraft/class_2300 net/minecraft/command/EntitySelector
 		ARG 11 uuid
 		ARG 12 type
 		ARG 13 usesAt
+	METHOD method_1_12909 streamAllEntities (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_2172;)Ljava/util/stream/Stream;
+		ARG 1 server
+		ARG 2 source
+	METHOD method_1_12910 streamEntities (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_2172;)Ljava/util/stream/Stream;
+		ARG 1 server
+		ARG 2 source
+	METHOD method_1_12911 (Lnet/minecraft/class_1297;)Z
+		ARG 0 entity
 	METHOD method_9809 getEntity (Lnet/minecraft/class_2168;)Lnet/minecraft/class_1297;
 		ARG 1 source
 	METHOD method_9810 (Lnet/minecraft/class_238;Lnet/minecraft/class_1297;)Z
@@ -50,6 +58,7 @@ CLASS net/minecraft/class_2300 net/minecraft/command/EntitySelector
 		ARG 2 box
 		ARG 3 enabledFeatures
 	METHOD method_9818 checkSourcePermission (Lnet/minecraft/class_12097;)V
+		ARG 1 permissionSource
 	METHOD method_9819 includesNonPlayers ()Z
 	METHOD method_9820 isSenderOnly ()Z
 	METHOD method_9821 isLocalWorldOnly ()Z

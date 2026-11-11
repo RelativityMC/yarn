@@ -2,6 +2,8 @@ CLASS net/minecraft/class_1_1436 net/minecraft/command/argument/SwingAnimationAr
 	FIELD field_1_9810 INVALID_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_1_9811 NAMES Ljava/util/Collection;
 	FIELD field_1_9812 VALUES [Lnet/minecraft/class_12122;
+	FIELD field_1_12915 INSTANCE Lnet/minecraft/class_1_1436;
+	FIELD field_1_12916 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	METHOD method_1_9526 getSwingAnimation (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_12122;
 		ARG 0 context
 		ARG 1 name

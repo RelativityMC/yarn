@@ -1,3 +1,5 @@
 CLASS net/minecraft/class_12095 net/minecraft/command/permission/PermissionSourcePredicate
+	FIELD field_1_12928 ALWAYS_PASS Lnet/minecraft/class_12095;
+	METHOD method_1_12912 cast ()Lnet/minecraft/class_12095;
 	METHOD test (Ljava/lang/Object;)Z
 		ARG 1 source

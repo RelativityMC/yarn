@@ -1,5 +1,9 @@
 CLASS net/minecraft/class_2287 net/minecraft/command/argument/ItemStackArgumentType
+	FIELD field_1_12863 INSTANCE Lnet/minecraft/class_2287;
+	FIELD field_1_12864 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_10790 EXAMPLES Ljava/util/Collection;
+	METHOD method_1_12808 reader (Lnet/minecraft/class_1_1994;)Lnet/minecraft/class_2291;
+		ARG 0 source
 	METHOD method_1_12878 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 context
 		ARG 2 builder

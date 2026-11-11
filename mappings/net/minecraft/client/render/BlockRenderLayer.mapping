@@ -1,14 +1,22 @@
 CLASS net/minecraft/class_11515 net/minecraft/client/render/BlockRenderLayer
+	FIELD field_1_12086 terrainVariant Lnet/minecraft/class_1_1906;
+	FIELD field_1_12892 vertexFormat Lnet/minecraft/class_1_1232;
 	FIELD field_60929 size I
 	FIELD field_60931 translucent Z
 	FIELD field_60932 name Ljava/lang/String;
 	METHOD <init> (Ljava/lang/String;ILnet/minecraft/class_1_1906;IZ)V
+		ARG 3 terrainVariant
 		ARG 4 size
 		ARG 5 translucent
 	METHOD method_1_2334 forTransparency (Lnet/minecraft/class_1_303;)Lnet/minecraft/class_11515;
 		ARG 0 transparency
+	METHOD method_1_12868 getVertexBakedFaceSize ()I
+	METHOD method_1_12869 getVertexFaceSize ()I
 	METHOD method_72020 getPipeline (ZZZLnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
 		ARG 1 multidraw
+		ARG 2 improvedFog
+		ARG 3 wireframe
+		ARG 4 oitStage
 	METHOD method_72021 getBufferSize ()I
 	METHOD method_72022 getName ()Ljava/lang/String;
 	METHOD method_72023 isTranslucent ()Z

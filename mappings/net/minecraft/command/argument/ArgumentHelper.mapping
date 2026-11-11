@@ -1,7 +1,12 @@
 CLASS net/minecraft/class_7218 net/minecraft/command/argument/ArgumentHelper
+	FIELD field_1_12667 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_37975 LOGGER Lorg/slf4j/Logger;
+	METHOD method_1_12595 writeCustomSuggestion (Lcom/google/gson/JsonObject;Lnet/minecraft/class_1_2097;)V
+		ARG 0 json
+		ARG 1 suggestion
 	METHOD method_41987 writeArgument (Lcom/google/gson/JsonObject;Lnet/minecraft/class_1_2055;)V
 		ARG 0 json
+		ARG 1 argument
 	METHOD method_41990 toJson (Lcom/mojang/brigadier/CommandDispatcher;Lcom/mojang/brigadier/tree/CommandNode;)Lcom/google/gson/JsonObject;
 		ARG 0 dispatcher
 		ARG 1 node

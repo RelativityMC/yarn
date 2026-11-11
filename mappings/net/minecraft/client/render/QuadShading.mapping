@@ -1,14 +1,15 @@
 CLASS net/minecraft/class_1_382 net/minecraft/client/render/QuadShading
-	FIELD field_1_2149 color0 S
-	FIELD field_1_2150 color1 S
-	FIELD field_1_2151 color2 S
-	FIELD field_1_2152 color3 S
+	FIELD field_1_2149 br0 S
+	FIELD field_1_2150 br1 S
+	FIELD field_1_2151 br2 S
+	FIELD field_1_2152 br3 S
 	FIELD field_1_2153 light0 I
 	FIELD field_1_2154 light1 I
 	FIELD field_1_2155 light2 I
 	FIELD field_1_2156 light3 I
 	FIELD field_1_2157 overlayTexture I
-	METHOD method_1_2582 getColor (I)S
+	FIELD field_1_12679 tint I
+	METHOD method_1_2582 getBrightness (I)S
 		ARG 1 index
 	METHOD method_1_2583 getLight (I)I
 		ARG 1 index
@@ -16,12 +17,13 @@ CLASS net/minecraft/class_1_382 net/minecraft/client/render/QuadShading
 		ARG 1 index
 		ARG 2 emission
 	METHOD method_1_2586 getOverlayTexture ()I
-	METHOD method_1_2587 scaleColors (F)V
+	METHOD method_1_2587 scaleBrightness (F)V
 		ARG 1 scale
-	METHOD method_1_2588 setColor (I)V
-		ARG 1 color
-	METHOD method_1_2589 setColor (IS)V
+	METHOD method_1_2588 setTint (I)V
+		ARG 1 tint
+	METHOD method_1_2589 setBrightness (IS)V
 		ARG 1 index
+		ARG 2 brightness
 	METHOD method_1_2590 setLight (I)V
 		ARG 1 light
 	METHOD method_1_2591 setLight (II)V
@@ -29,3 +31,6 @@ CLASS net/minecraft/class_1_382 net/minecraft/client/render/QuadShading
 		ARG 2 light
 	METHOD method_1_2592 setOverlayTexture (I)V
 		ARG 1 overlayTexture
+	METHOD method_1_12617 getTint ()I
+	METHOD method_1_12618 setBrightness (S)V
+		ARG 1 brightness

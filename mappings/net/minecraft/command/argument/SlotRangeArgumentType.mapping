@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_9351 net/minecraft/command/argument/SlotRangeArgumentType
+	FIELD field_1_12768 INSTANCE Lnet/minecraft/class_9351;
+	FIELD field_1_12769 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_49767 EXAMPLES Ljava/util/Collection;
 	METHOD method_1_12878 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 2 suggestionsBuilder

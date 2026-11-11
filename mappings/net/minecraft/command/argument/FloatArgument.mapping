@@ -1,0 +1,23 @@
+CLASS net/minecraft/class_1_2021 net/minecraft/command/argument/FloatArgument
+	FIELD field_1_12759 DEFAULT_MAX Ljava/lang/Float;
+	FIELD field_1_12760 DEFAULT_MIN Ljava/lang/Float;
+	FIELD field_1_12761 PACKET_CODEC Lnet/minecraft/class_9139;
+	FIELD field_1_12762 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
+	FIELD field_1_12763 bounds Lnet/minecraft/class_2096$class_11893;
+	METHOD <init> (Lnet/minecraft/class_2096$class_11893;)V
+		ARG 1 bounds
+	METHOD method_1_12712 any ()Lcom/mojang/brigadier/arguments/ArgumentType;
+	METHOD method_1_12713 atLeast (F)Lcom/mojang/brigadier/arguments/ArgumentType;
+		ARG 0 min
+	METHOD method_1_12714 atMost (FF)Lcom/mojang/brigadier/arguments/ArgumentType;
+		ARG 0 min
+		ARG 1 max
+	METHOD method_1_12715 of (Lnet/minecraft/class_2096$class_11893;)Lcom/mojang/brigadier/arguments/ArgumentType;
+		ARG 0 bounds
+	METHOD method_1_12716 getFloat (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)F
+		ARG 0 context
+		ARG 1 name
+	METHOD method_1_12717 (Lnet/minecraft/class_1_2021;)Lnet/minecraft/class_2096$class_11893;
+		ARG 0 arg
+	METHOD method_1_12718 (Lnet/minecraft/class_1_2021;)Lnet/minecraft/class_2096$class_11893;
+		ARG 0 arg

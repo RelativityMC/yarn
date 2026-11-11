@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_637 net/minecraft/client/network/ClientCommandSource
+	FIELD field_1_12926 dynamicRegistries Lnet/minecraft/class_7225$class_7874;
+	FIELD field_1_12927 registries Lnet/minecraft/class_7871$class_7872;
 	FIELD field_3722 networkHandler Lnet/minecraft/class_634;
 	FIELD field_3723 pendingCommandCompletion Ljava/util/concurrent/CompletableFuture;
 	FIELD field_3724 completionId I

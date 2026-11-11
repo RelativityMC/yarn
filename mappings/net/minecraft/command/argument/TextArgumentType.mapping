@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_2178 net/minecraft/command/argument/TextArgumentType
+	FIELD field_1_12841 INSTANCE Lnet/minecraft/class_2178;
+	FIELD field_1_12842 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_9841 EXAMPLES Ljava/util/Collection;
 	FIELD field_9842 INVALID_COMPONENT_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	METHOD method_9281 text ()Lcom/mojang/brigadier/arguments/ArgumentType;

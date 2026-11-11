@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_2031 net/minecraft/command/argument/FeatureArgumentType
+	FIELD field_1_12817 INSTANCE Lnet/minecraft/class_1_2031;
+	FIELD field_1_12818 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
+	METHOD method_1_12775 feature ()Lcom/mojang/brigadier/arguments/ArgumentType;
+	METHOD method_1_12776 getFeature (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880;
+		ARG 0 context
+		ARG 1 name

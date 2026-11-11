@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_2262 net/minecraft/command/argument/BlockPosArgumentType
+	FIELD field_1_12973 INSTANCE Lnet/minecraft/class_2262;
+	FIELD field_1_12974 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_10702 EXAMPLES Ljava/util/Collection;
 	FIELD field_10703 UNLOADED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_10704 OUT_OF_WORLD_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;

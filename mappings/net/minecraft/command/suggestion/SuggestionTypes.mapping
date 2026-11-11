@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_2093 net/minecraft/command/suggestion/SuggestionTypes
+	FIELD field_1_12985 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_12986 PACKET_CODEC Lnet/minecraft/class_9139;
+	METHOD method_1_13011 register (Lnet/minecraft/class_2385;)V
+		ARG 0 registry

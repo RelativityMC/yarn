@@ -31,5 +31,12 @@ CLASS net/minecraft/class_1_1834 net/minecraft/registry/RegistryRoot
 		ARG 2 bootstrap
 	METHOD method_1_11615 validate (Lnet/minecraft/class_2378;)V
 		ARG 0 root
+	METHOD method_1_12865 (Lnet/minecraft/class_1_1834$class_1_2050;Lnet/minecraft/class_2385;)V
+		ARG 1 registry
+	METHOD method_1_12866 classLoad (Lnet/minecraft/class_1_1834$class_1_2050;)Lnet/minecraft/class_1_1834$class_1_1835;
+		ARG 0 defaultGetter
 	CLASS class_1_1835 Bootstrap
 		METHOD method_1_11616 bootstrap (Lnet/minecraft/class_2385;)V
+			ARG 1 registry
+	CLASS class_1_2050 LoadCheck
+		METHOD method_1_12867 getElement ()Ljava/lang/Object;

@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_1_1994 net/minecraft/command/RegistryCommandSource
+	METHOD method_1_12585 canUseEntitySelectors ()Z
+	METHOD method_1_12586 wrapForValidation (Lnet/minecraft/class_6880;Lnet/minecraft/class_176;)Lnet/minecraft/class_1_2034;
+		ARG 1 entry
+		ARG 2 contextType
+	METHOD method_1_12587 from (Lnet/minecraft/class_2168;)Lnet/minecraft/class_1_1994;
+		ARG 0 source
+	METHOD method_1_12588 from (Lnet/minecraft/class_3222;)Lnet/minecraft/class_1_1994;
+		ARG 0 player
+	CLASS class_1_1995 Simple

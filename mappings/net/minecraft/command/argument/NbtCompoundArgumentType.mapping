@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_2179 net/minecraft/command/argument/NbtCompoundArgumentType
+	FIELD field_1_12878 INSTANCE Lnet/minecraft/class_2179;
+	FIELD field_1_12879 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_9843 EXAMPLES Ljava/util/Collection;
 	METHOD method_1_12884 (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
 		ARG 1 reader

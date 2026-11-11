@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_7487 net/minecraft/command/argument/BlockRotationArgumentType
+	FIELD field_1_12937 INSTANCE Lnet/minecraft/class_7487;
+	FIELD field_1_12938 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	METHOD method_44102 blockRotation ()Lcom/mojang/brigadier/arguments/ArgumentType;
 	METHOD method_44103 getBlockRotation (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_2470;
 		ARG 0 context

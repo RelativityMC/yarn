@@ -1,5 +1,13 @@
 CLASS net/minecraft/class_12211 net/minecraft/world/attribute/WeightedAttributeList
 	FIELD field_63767 entries Lit/unimi/dsi/fastutil/objects/Reference2DoubleArrayMap;
+	METHOD method_1_12954 (Lnet/minecraft/class_1_1690;IIID)V
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 weight
+	METHOD method_1_12955 interpolate (Lnet/minecraft/class_1_1690;Lnet/minecraft/class_243;)Lnet/minecraft/class_12211;
+		ARG 1 world
+		ARG 2 pos
 	METHOD method_75710 clear ()V
 	METHOD method_75711 add (DLnet/minecraft/class_12199;)Lnet/minecraft/class_12211;
 		ARG 1 weight

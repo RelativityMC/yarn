@@ -11,8 +11,10 @@ CLASS net/minecraft/class_4341 net/minecraft/client/realms/RealmsClient
 	FIELD field_1_10073 WORLD_SIM_DISTANCE_CONFIGURATION_ENDPOINT Ljava/lang/String;
 	FIELD field_1_10074 WORLD_TIER_CONFIGURATION_ENDPOINT Ljava/lang/String;
 	FIELD field_1_12431 CLIENT_VERSION_HEADER Ljava/lang/String;
-	FIELD field_1_12432 UPLOAD_ENDPOINT Ljava/lang/String;
+	FIELD field_1_12432 UPLOAD_ENDPOINT_V2 Ljava/lang/String;
 	FIELD field_1_12433 V2UPLOAD_FEATURE_FLAG Ljava/lang/String;
+	FIELD field_1_12699 DOWNLOAD_ENDPOINT_V2 Ljava/lang/String;
+	FIELD field_1_12700 DOWNLOAD_V2_FEATURE_FLAG Ljava/lang/String;
 	FIELD field_19578 LOGGER Lorg/slf4j/Logger;
 	FIELD field_19579 sessionId Ljava/lang/String;
 	FIELD field_19580 username Ljava/lang/String;
@@ -109,6 +111,14 @@ CLASS net/minecraft/class_4341 net/minecraft/client/realms/RealmsClient
 	METHOD method_1_12224 (Lnet/minecraft/class_4346;Ljava/lang/String;Ljava/lang/Throwable;)V
 		ARG 1 result
 		ARG 2 ex
+	METHOD method_1_12654 createRequest (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/class_4346;
+		ARG 1 path
+		ARG 2 queryString
+		ARG 3 content
+	METHOD method_1_12655 hasV2Download ()Z
+	METHOD method_1_12656 downloadV2 (JI)Lnet/minecraft/class_4889;
+		ARG 1 worldId
+		ARG 3 slotId
 	METHOD method_20989 createRealmsClient (Lnet/minecraft/class_310;)Lnet/minecraft/class_4341;
 		ARG 0 client
 	METHOD method_20990 fetchWorldTemplates (IILnet/minecraft/class_4877$class_4321;)Lnet/minecraft/class_4891;

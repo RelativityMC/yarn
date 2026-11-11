@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_7871 net/minecraft/registry/RegistryEntryLookup
+	METHOD method_1_12549 getEntries (Lnet/minecraft/class_6862;)Ljava/lang/Iterable;
+		ARG 1 tag
 	METHOD method_46733 getOptional (Lnet/minecraft/class_6862;)Ljava/util/Optional;
 		ARG 1 tag
 	METHOD method_46735 getOrThrow (Lnet/minecraft/class_6862;)Lnet/minecraft/class_6885$class_6888;
@@ -21,11 +23,14 @@ CLASS net/minecraft/class_7871 net/minecraft/registry/RegistryEntryLookup
 			ARG 1 registry
 		METHOD method_1_2932 (Lnet/minecraft/class_6862;Lnet/minecraft/class_7871;)Ljava/util/Optional;
 			ARG 1 registry
+		METHOD method_1_12550 withFallback (Lnet/minecraft/class_7871$class_7872;)Lnet/minecraft/class_7871$class_7872;
+			ARG 1 fallback
 		METHOD method_46751 getOrThrow (Lnet/minecraft/class_5321;)Lnet/minecraft/class_7871;
 			ARG 1 registryRef
 		METHOD method_46759 getOptional (Lnet/minecraft/class_5321;)Ljava/util/Optional;
 			ARG 1 registryRef
 		METHOD method_57093 getOps (Lcom/mojang/serialization/DynamicOps;)Lnet/minecraft/class_6903;
+			ARG 1 delegate
 		METHOD method_58561 getOptionalEntry (Lnet/minecraft/class_5321;)Ljava/util/Optional;
 			ARG 1 registryRef
 		METHOD method_58562 (Lnet/minecraft/class_5321;Lnet/minecraft/class_7871;)Ljava/util/Optional;

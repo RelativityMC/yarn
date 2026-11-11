@@ -3,6 +3,11 @@ CLASS net/minecraft/class_3149 net/minecraft/server/command/TimeCommand
 	FIELD field_1_992 NO_TIME_MARKER_FOUND_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
 	FIELD field_1_993 WRONG_TIMELINE_FOR_CLOCK_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
 	FIELD field_1_2457 MAX_CLOCK_RATE I
+	FIELD field_1_8319 ALREADY_AT_TIME_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
+	FIELD field_1_8320 ALREADY_AT_TIME_MARKER_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
+	FIELD field_1_8321 ALREADY_PAUSED_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
+	FIELD field_1_8322 ALREADY_RUNNING_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
+	FIELD field_1_8323 RATE_ALREADY_SAME_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
 	METHOD method_1_909 createClockSubcommands (Lcom/mojang/brigadier/builder/ArgumentBuilder;Lnet/minecraft/class_3149$class_1_104;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
 		ARG 0 root
 		ARG 1 clockProvider
@@ -76,5 +81,18 @@ CLASS net/minecraft/class_3149 net/minecraft/server/command/TimeCommand
 	METHOD method_13796 executeQuery (Lnet/minecraft/class_2168;)I
 		ARG 0 source
 	CLASS class_1_104 ClockProvider
+		FIELD field_1_12688 DEFAULT Lnet/minecraft/class_3149$class_1_104;
 		METHOD method_1_947 get (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/class_6880;
 			ARG 1 context
+		METHOD method_1_12641 named (Ljava/lang/String;)Lnet/minecraft/class_3149$class_1_104;
+			ARG 0 name
+		METHOD method_1_12642 (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/class_6880;
+			ARG 1 context
+		CLASS 1 1
+			METHOD method_1_12643 get (Ljava/util/Optional;)Lnet/minecraft/class_6880;
+				ARG 0 world
+			METHOD method_1_12644 (Lnet/minecraft/class_6880;)Ljava/util/Optional;
+				ARG 0 dimension
+		CLASS 2 2
+			METHOD method_1_12646 getInner (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/class_6880$class_6883;
+				ARG 1 context

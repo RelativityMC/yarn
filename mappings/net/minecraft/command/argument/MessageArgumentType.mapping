@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_2196 net/minecraft/command/argument/MessageArgumentType
+	FIELD field_1_12825 INSTANCE Lnet/minecraft/class_2196;
+	FIELD field_1_12826 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_9876 EXAMPLES Ljava/util/Collection;
 	FIELD field_51482 MESSAGE_TOO_LONG_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
 	METHOD method_1_12879 (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/class_1_1994;)Ljava/lang/Object;

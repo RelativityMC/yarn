@@ -1,0 +1,32 @@
+CLASS net/minecraft/class_1_2027 net/minecraft/command/argument/StringArgument
+	FIELD field_1_12802 PACKET_CODEC Lnet/minecraft/class_9139;
+	FIELD field_1_12803 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
+	FIELD field_1_12804 type Lnet/minecraft/class_1_2027$class_1_2028;
+	METHOD <init> (Lcom/mojang/brigadier/arguments/StringArgumentType;Lnet/minecraft/class_1_2027$class_1_2028;)V
+		ARG 1 underlying
+		ARG 2 type
+	METHOD <init> (Lnet/minecraft/class_1_2027$class_1_2028;)V
+		ARG 1 type
+	METHOD method_1_12744 toBrigadierArgumentType (Lnet/minecraft/class_1_2027$class_1_2028;)Lcom/mojang/brigadier/arguments/StringArgumentType;
+		ARG 0 type
+	METHOD method_1_12745 getString (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 context
+		ARG 1 name
+	METHOD method_1_12746 greedy ()Lcom/mojang/brigadier/arguments/ArgumentType;
+	METHOD method_1_12747 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_12748 (Lnet/minecraft/class_1_2027;)Lnet/minecraft/class_1_2027$class_1_2028;
+		ARG 0 arg
+	METHOD method_1_12749 (Lnet/minecraft/class_1_2027;)Lnet/minecraft/class_1_2027$class_1_2028;
+		ARG 0 arg
+	METHOD method_1_12750 quoted ()Lcom/mojang/brigadier/arguments/ArgumentType;
+	METHOD method_1_12751 word ()Lcom/mojang/brigadier/arguments/ArgumentType;
+	CLASS class_1_2028 Type
+		FIELD field_1_12808 PACKET_CODEC Lnet/minecraft/class_9139;
+		FIELD field_1_12810 index I
+		FIELD field_1_12811 name Ljava/lang/String;
+		METHOD <init> (Ljava/lang/String;IILjava/lang/String;)V
+			ARG 3 index
+			ARG 4 name
+		METHOD method_1_12753 (Lnet/minecraft/class_1_2027$class_1_2028;)I
+			ARG 0 type

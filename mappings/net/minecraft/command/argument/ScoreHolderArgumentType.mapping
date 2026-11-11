@@ -1,31 +1,76 @@
 CLASS net/minecraft/class_2233 net/minecraft/command/argument/ScoreHolderArgumentType
+	FIELD field_1_12882 EMPTY Lnet/minecraft/class_2233$class_1_2046;
+	FIELD field_1_12884 PACKET_CODEC Lnet/minecraft/class_9139;
+	FIELD field_1_12885 KNOWN_SCORE_HOLDERS Lnet/minecraft/class_2233$class_1_2046;
+	FIELD field_1_12886 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_9948 EXAMPLES Ljava/util/Collection;
 	FIELD field_9949 multiple Z
 	FIELD field_9950 EMPTY_SCORE_HOLDER_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_9951 SUGGESTION_PROVIDER Lcom/mojang/brigadier/suggestion/SuggestionProvider;
 	METHOD <init> (Z)V
 		ARG 1 multiple
+	METHOD method_1_12838 getScoreHolder (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;Lnet/minecraft/class_2233$class_1_2046;)Lnet/minecraft/class_9015;
+		ARG 0 context
+		ARG 1 name
+	METHOD method_1_12839 (Lnet/minecraft/server/MinecraftServer;Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;Lnet/minecraft/class_2233$class_1_2046;)Ljava/util/stream/Stream;
+		ARG 0 server
+		ARG 1 context
+		ARG 2 name
+	METHOD method_1_12840 (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_2233$class_1_2046;)Ljava/util/Collection;
+		ARG 0 server
+	METHOD method_1_12841 (Lnet/minecraft/server/MinecraftServer;)Ljava/util/Collection;
+		ARG 0 server
+	METHOD method_1_12842 (Lnet/minecraft/server/MinecraftServer;)Ljava/util/Collection;
+		ARG 0 server
+	METHOD method_1_12843 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_12844 (Lnet/minecraft/class_2233;)Ljava/lang/Boolean;
+		ARG 0 arg
+	METHOD method_1_12845 (Lnet/minecraft/class_2233;)Ljava/lang/Boolean;
+		ARG 0 arg
 	METHOD method_1_12879 (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/class_1_1994;)Ljava/lang/Object;
 		ARG 1 reader
 	METHOD method_9447 scoreHolder ()Lcom/mojang/brigadier/arguments/ArgumentType;
 	METHOD method_9448 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)V
 		ARG 1 builderx
 	METHOD method_9450 getScoreHolders (Lnet/minecraft/server/MinecraftServer;Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;Lnet/minecraft/class_2233$class_1_2046;)Ljava/util/Collection;
+		ARG 0 server
+		ARG 1 context
 		ARG 2 name
 	METHOD method_9451 scoreHolders ()Lcom/mojang/brigadier/arguments/ArgumentType;
 	METHOD method_9452 getScoreHolder (Lnet/minecraft/server/MinecraftServer;Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;Lnet/minecraft/class_2233$class_1_2046;)Lnet/minecraft/class_9015;
+		ARG 0 server
+		ARG 1 context
 		ARG 2 name
 	METHOD method_9453 parse (Lcom/mojang/brigadier/StringReader;Z)Lnet/minecraft/class_2233$class_1_2045;
 		ARG 1 reader
 		ARG 2 allowAtSelectors
 	METHOD method_9455 (Lnet/minecraft/server/MinecraftServer;Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 server
 		ARG 1 context
 		ARG 2 builder
+	METHOD method_9456 (Ljava/util/List;Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_2233$class_1_2046;)Ljava/util/Collection;
+		ARG 1 server
 	METHOD method_9458 getScoreHolders (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;Lnet/minecraft/class_2233$class_1_2046;)Ljava/util/Collection;
 		ARG 0 context
 		ARG 1 name
+	METHOD method_55587 (Ljava/lang/String;Ljava/util/List;Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_2233$class_1_2046;)Ljava/util/Collection;
+		ARG 2 server
+	METHOD method_55588 (Ljava/util/UUID;Ljava/util/List;Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_2233$class_1_2046;)Ljava/util/Collection;
+		ARG 2 server
+	CLASS class_1_2044 class_1_2044
+		METHOD method_1_12846 (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_2233$class_1_2046;)Ljava/util/Collection;
+			ARG 1 server
 	CLASS class_1_2045 class_1_2045
 		METHOD method_1_240 getNames (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_2168;Lnet/minecraft/class_2233$class_1_2046;)Ljava/util/Collection;
+			ARG 1 server
+			ARG 2 source
+		METHOD method_1_12847 (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_2172;Lnet/minecraft/class_2233$class_1_2046;)Ljava/util/stream/Stream;
+			ARG 1 server
+			ARG 2 source
+	CLASS class_1_2046 WildcardRule
+		METHOD method_1_12848 getAll (Lnet/minecraft/server/MinecraftServer;)Ljava/util/Collection;
+			ARG 1 server
 	CLASS class_2235 SelectorScoreHolders
 		FIELD field_9952 selector Lnet/minecraft/class_2300;
 		METHOD <init> (Lnet/minecraft/class_2300;)V

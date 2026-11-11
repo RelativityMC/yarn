@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_2243 net/minecraft/command/argument/TeamArgumentType
+	FIELD field_1_12725 INSTANCE Lnet/minecraft/class_2243;
+	FIELD field_1_12726 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_9963 UNKNOWN_TEAM_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_9964 EXAMPLES Ljava/util/Collection;
 	METHOD method_1_12878 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;

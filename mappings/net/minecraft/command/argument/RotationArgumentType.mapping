@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_2270 net/minecraft/command/argument/RotationArgumentType
+	FIELD field_1_12975 INSTANCE Lnet/minecraft/class_2270;
+	FIELD field_1_12976 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_10735 EXAMPLES Ljava/util/Collection;
 	FIELD field_10736 INCOMPLETE_ROTATION_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	METHOD method_1_12884 (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;

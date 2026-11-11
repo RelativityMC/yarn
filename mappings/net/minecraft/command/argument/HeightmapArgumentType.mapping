@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_8199 net/minecraft/command/argument/HeightmapArgumentType
+	FIELD field_1_12900 INSTANCE Lnet/minecraft/class_8199;
+	FIELD field_1_12901 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_42994 HEIGHTMAP_CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_49542 heightmap ()Lcom/mojang/brigadier/arguments/ArgumentType;
 	METHOD method_49544 getHeightmap (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_2902$class_2903;

@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_2085 net/minecraft/command/suggestion/BuiltInSuggestionType
+	METHOD method_1_12985 getSuggestions (Lnet/minecraft/server/MinecraftServer;Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 server
+		ARG 2 context
+		ARG 3 suggestionsBuilder

@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_7486 net/minecraft/command/argument/BlockMirrorArgumentType
+	FIELD field_1_12917 INSTANCE Lnet/minecraft/class_7486;
+	FIELD field_1_12918 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	METHOD method_44100 blockMirror ()Lcom/mojang/brigadier/arguments/ArgumentType;
 	METHOD method_44101 getBlockMirror (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_2415;
 		ARG 0 context

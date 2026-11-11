@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_2274 net/minecraft/command/argument/Vec2ArgumentType
+	FIELD field_1_12940 PACKET_CODEC Lnet/minecraft/class_9139;
+	FIELD field_1_12941 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_10742 EXAMPLES Ljava/util/Collection;
 	FIELD field_10743 INCOMPLETE_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_10744 centerIntegers Z
@@ -9,6 +11,12 @@ CLASS net/minecraft/class_2274 net/minecraft/command/argument/Vec2ArgumentType
 		ARG 2 builder
 	METHOD method_1_12884 (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
 		ARG 1 reader
+	METHOD method_1_12931 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_12932 (Lnet/minecraft/class_2274;)Ljava/lang/Boolean;
+		ARG 0 arg
+	METHOD method_1_12933 (Lnet/minecraft/class_2274;)Ljava/lang/Boolean;
+		ARG 0 arg
 	METHOD method_9723 vec2 ()Lcom/mojang/brigadier/arguments/ArgumentType;
 	METHOD method_9724 getVec2 (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_241;
 		ARG 0 context

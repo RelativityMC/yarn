@@ -67,7 +67,9 @@ CLASS net/minecraft/class_3149 net/minecraft/server/command/TimeCommand
 		ARG 1 clock
 		ARG 2 ticks
 	METHOD method_1_944 suggestTimeMarkers (Lnet/minecraft/class_3149$class_1_104;)Lcom/mojang/brigadier/suggestion/SuggestionProvider;
+		ARG 0 clockProvider
 	METHOD method_1_945 suggestTimelines (Lnet/minecraft/class_3149$class_1_104;)Lcom/mojang/brigadier/suggestion/SuggestionProvider;
+		ARG 0 clockProvider
 	METHOD method_1_946 coerceTicksToInt (J)I
 		ARG 0 ticks
 	METHOD method_1_2940 (Lnet/minecraft/class_3149$class_1_104;Lcom/mojang/brigadier/context/CommandContext;)I
@@ -76,6 +78,27 @@ CLASS net/minecraft/class_3149 net/minecraft/server/command/TimeCommand
 		ARG 0 source
 		ARG 1 clock
 		ARG 2 rate
+	METHOD method_1_7681 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 clock
+		ARG 1 marker
+	METHOD method_1_7682 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 clock
+		ARG 1 ticks
+	METHOD method_1_7683 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 clock
+	METHOD method_1_7684 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 clock
+	METHOD method_1_7685 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+		ARG 0 clock
+		ARG 1 rate
+	METHOD method_1_12639 (Lnet/minecraft/class_3149$class_1_104;Lnet/minecraft/server/MinecraftServer;Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 server
+		ARG 2 context
+		ARG 3 suggestionsBuilder
+	METHOD method_1_12640 (Lnet/minecraft/class_3149$class_1_104;Lnet/minecraft/server/MinecraftServer;Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 server
+		ARG 2 context
+		ARG 3 suggestionsBuilder
 	METHOD method_13794 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_13796 executeQuery (Lnet/minecraft/class_2168;)I
@@ -86,7 +109,7 @@ CLASS net/minecraft/class_3149 net/minecraft/server/command/TimeCommand
 			ARG 1 context
 		METHOD method_1_12641 named (Ljava/lang/String;)Lnet/minecraft/class_3149$class_1_104;
 			ARG 0 name
-		METHOD method_1_12642 (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/class_6880;
+		METHOD method_1_12642 suggest (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/class_6880;
 			ARG 1 context
 		CLASS 1 1
 			METHOD method_1_12643 get (Ljava/util/Optional;)Lnet/minecraft/class_6880;

@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_1_1989 net/minecraft/class_1_1989
+CLASS net/minecraft/class_1_1989 net/minecraft/command/AbstractCommandTree
 	FIELD field_1_12659 SOURCE Ljava/lang/ScopedValue;
 	FIELD field_1_12660 TEST_PREDICATE Ljava/util/function/Predicate;
 	FIELD field_1_12661 dispatcher Lcom/mojang/brigadier/CommandDispatcher;

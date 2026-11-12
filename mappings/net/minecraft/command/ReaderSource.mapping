@@ -3,13 +3,15 @@ CLASS net/minecraft/class_1_2094 net/minecraft/command/ReaderSource
 		ARG 0 reader
 	METHOD method_1_13013 of (Ljava/lang/String;)Lnet/minecraft/class_1_2094;
 		ARG 0 string
-	CLASS class_1_2095 class_1_2095
-		METHOD method_1_13014 (Lnet/minecraft/class_1_1994;Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/class_1_2094;
+	CLASS class_1_2095 Provider
+		METHOD method_1_13014 create (Lnet/minecraft/class_1_1994;Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/class_1_2094;
 			ARG 1 source
 			ARG 2 reader
-		METHOD method_1_13015 (Lnet/minecraft/class_1_1994;Ljava/lang/String;)Lnet/minecraft/class_1_2094;
+		METHOD method_1_13015 create (Lnet/minecraft/class_1_1994;Ljava/lang/String;)Lnet/minecraft/class_1_2094;
 			ARG 1 source
 			ARG 2 string
 	CLASS class_1_2096 Immediate
+		FIELD field_1_12987 PROVIDER Lnet/minecraft/class_1_2094$class_1_2095;
 		METHOD method_1_13016 (Lnet/minecraft/class_1_1994;Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/class_1_2094$class_1_2096;
-			ARG 1 reader1
+			ARG 0 source
+			ARG 1 reader

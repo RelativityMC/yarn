@@ -5,12 +5,15 @@ CLASS net/minecraft/class_2158 net/minecraft/server/function/CommandFunction
 		COMMENT
 		COMMENT <p>Any syntax errors, such as improper comment lines or unknown commands, will be thrown at this point.
 		ARG 0 id
+		ARG 1 contextChainProviderFactory
 		ARG 2 lines
 			COMMENT the raw lines (including comments) read from a function file
 	METHOD method_52592 continuesToNextLine (Ljava/lang/CharSequence;)Z
 		ARG 0 string
 	METHOD method_52595 withMacroReplaced (Lnet/minecraft/class_2487;)Lnet/minecraft/class_8868;
+		ARG 1 nbt
 	METHOD method_54417 parse (Lnet/minecraft/class_1_2022;Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/class_8856;
+		ARG 0 contextChainProvider
 		ARG 1 reader
 	METHOD method_57057 validateCommandLength (Ljava/lang/CharSequence;)V
 		ARG 0 command

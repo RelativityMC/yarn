@@ -13,6 +13,7 @@ CLASS net/minecraft/class_5349 net/minecraft/server/function/FunctionLoader
 	COMMENT first appearance will be considered.
 	COMMENT
 	COMMENT @see CommandFunctionManager
+	FIELD field_1_12693 contextChainProviderFactory Lnet/minecraft/class_1_2022$class_1_2023;
 	FIELD field_25326 LOGGER Lorg/slf4j/Logger;
 	FIELD field_25329 functions Ljava/util/Map;
 	FIELD field_25330 tagLoader Lnet/minecraft/class_3503;
@@ -23,6 +24,7 @@ CLASS net/minecraft/class_5349 net/minecraft/server/function/FunctionLoader
 		ARG 1 permissions
 		ARG 2 registries
 		ARG 3 enabledFeatures
+		ARG 4 tree
 	METHOD method_1_12652 (Lnet/minecraft/class_12096;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_7699;Lnet/minecraft/class_1_1986;Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_2022;
 		ARG 5 id
 	METHOD method_29447 getFunctions ()Ljava/util/Map;

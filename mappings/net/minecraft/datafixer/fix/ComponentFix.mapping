@@ -8,7 +8,20 @@ CLASS net/minecraft/class_9342 net/minecraft/datafixer/fix/ComponentFix
 		ARG 3 componentId
 	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 		ARG 1 outputSchema
+		ARG 2 name
 		ARG 3 oldComponentId
 		ARG 4 newComponentId
+	METHOD method_1_12948 fixHiddenComponent (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 hiddenComponent
+	METHOD method_1_12949 fixTooltipDisplay (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 tooltipDisplay
+	METHOD method_1_12950 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 hiddenComponents
+	METHOD method_1_12951 (Lcom/mojang/serialization/Dynamic;Ljava/util/stream/Stream;)Lcom/mojang/serialization/Dynamic;
+		ARG 2 hiddenComponentsStream
 	METHOD method_58045 fixComponent (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
 		ARG 1 dynamic
+	METHOD method_65329 (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 1 dataComponentsTyped
+	METHOD method_65330 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 dataComponents

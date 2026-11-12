@@ -8,3 +8,5 @@ CLASS net/minecraft/class_8779 net/minecraft/advancement/AdvancementEntry
 		ARG 1 o
 	METHOD method_1_7737 addTo (Lnet/minecraft/class_7891;)V
 		ARG 1 registry
+	METHOD method_1_12667 of (Lnet/minecraft/class_6880$class_6883;)Lnet/minecraft/class_8779;
+		ARG 0 advancement

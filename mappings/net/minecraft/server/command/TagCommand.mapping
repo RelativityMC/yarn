@@ -1,6 +1,43 @@
 CLASS net/minecraft/class_3140 net/minecraft/server/command/TagCommand
+	FIELD field_1_7347 ADD_REPORTER Lnet/minecraft/class_1_1083$class_1_1092;
+	FIELD field_1_7348 LIST_SUCCESS_REPORTER Lnet/minecraft/class_1_1083$class_1_1092;
+	FIELD field_1_7349 LIST_EMPTY_REPORTER Lnet/minecraft/class_1_1083$class_1_1091;
+	FIELD field_1_7350 REMOVE_REPORTER Lnet/minecraft/class_1_1083$class_1_1092;
 	FIELD field_13742 ADD_FAILED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_13743 REMOVE_FAILED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
+	METHOD method_1_6523 (Lnet/minecraft/class_1297;I)Lnet/minecraft/class_2561;
+		ARG 0 entity
+		ARG 1 count
+	METHOD method_1_6524 (II)Lnet/minecraft/class_2561;
+		ARG 0 targets
+		ARG 1 count
+	METHOD method_1_6525 (Lnet/minecraft/class_1297;ILjava/lang/String;)Lnet/minecraft/class_2561;
+		ARG 0 entity
+		ARG 1 count
+		ARG 2 tag
+	METHOD method_1_6526 (IILjava/lang/String;)Lnet/minecraft/class_2561;
+		ARG 0 targets
+		ARG 1 count
+		ARG 2 tag
+	METHOD method_1_6527 (Lnet/minecraft/class_1297;ILjava/lang/String;)Lnet/minecraft/class_2561;
+		ARG 0 entity
+		ARG 1 count
+		ARG 2 tag
+	METHOD method_1_6528 (IILjava/lang/String;)Lnet/minecraft/class_2561;
+		ARG 0 targets
+		ARG 1 count
+		ARG 2 tag
+	METHOD method_1_6529 (Lnet/minecraft/class_1297;ILjava/util/Set;)Lnet/minecraft/class_2561;
+		ARG 0 entity
+		ARG 1 count
+		ARG 2 tags
+	METHOD method_1_6530 (IILjava/util/Set;)Lnet/minecraft/class_2561;
+		ARG 0 targets
+		ARG 1 count
+		ARG 2 tags
+	METHOD method_1_12623 (Lnet/minecraft/class_1297;)Ljava/util/stream/Stream;
+		ARG 0 target
+	METHOD method_1_12624 suggestTags ()Lcom/mojang/brigadier/suggestion/SuggestionProvider;
 	METHOD method_13697 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_13698 register (Lcom/mojang/brigadier/CommandDispatcher;)V
@@ -11,6 +48,11 @@ CLASS net/minecraft/class_3140 net/minecraft/server/command/TagCommand
 		ARG 2 tag
 	METHOD method_13700 executeList (Lnet/minecraft/class_2168;Ljava/util/Collection;)I
 		ARG 0 source
+		ARG 1 targets
+	METHOD method_13701 (Lnet/minecraft/server/MinecraftServer;Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 server
+		ARG 1 context
+		ARG 2 suggestionsBuilder
 	METHOD method_13702 executeAdd (Lnet/minecraft/class_2168;Ljava/util/Collection;Ljava/lang/String;)I
 		ARG 0 source
 		ARG 1 targets
@@ -20,3 +62,4 @@ CLASS net/minecraft/class_3140 net/minecraft/server/command/TagCommand
 	METHOD method_13704 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_13706 getTags (Ljava/util/stream/Stream;)Ljava/util/stream/Stream;
+		ARG 0 targets

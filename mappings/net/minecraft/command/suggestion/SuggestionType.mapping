@@ -10,3 +10,4 @@ CLASS net/minecraft/class_1_2040 net/minecraft/command/suggestion/SuggestionType
 		METHOD getSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 			ARG 1 context
 			ARG 2 suggestionsBuilder
+		METHOD method_1_12822 cast ()Lnet/minecraft/class_1_2040$class_1_2041;

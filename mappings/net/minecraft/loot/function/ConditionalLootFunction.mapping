@@ -5,6 +5,8 @@ CLASS net/minecraft/class_120 net/minecraft/loot/function/ConditionalLootFunctio
 	METHOD apply (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 		ARG 1 itemStack
 		ARG 2 context
+	METHOD method_1_13052 reportInner (Lnet/minecraft/class_58;)V
+		ARG 1 reporter
 	METHOD method_520 builder (Ljava/util/function/Function;)Lnet/minecraft/class_120$class_121;
 		ARG 0 joiner
 	METHOD method_522 process (Lnet/minecraft/class_1799;Lnet/minecraft/class_47;)Lnet/minecraft/class_1799;
@@ -14,6 +16,7 @@ CLASS net/minecraft/class_120 net/minecraft/loot/function/ConditionalLootFunctio
 		ARG 0 instance
 	METHOD method_53345 (Lnet/minecraft/class_120;)Ljava/util/Optional;
 		ARG 0 function
+	CLASS class_1_2111 Parametric
 	CLASS class_121 Builder
 		FIELD field_1049 conditionList Lcom/google/common/collect/ImmutableList$Builder;
 		METHOD method_523 getThisBuilder ()Lnet/minecraft/class_120$class_121;

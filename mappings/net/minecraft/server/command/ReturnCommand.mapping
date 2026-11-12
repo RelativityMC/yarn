@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_8503 net/minecraft/server/command/ReturnCommand
+	METHOD method_1_12666 createCommandTree (Lcom/mojang/brigadier/CommandDispatcher;Lcom/mojang/brigadier/arguments/ArgumentType;)Lcom/mojang/brigadier/builder/LiteralArgumentBuilder;
+		ARG 0 dispatcher
+		ARG 1 valueArgumentType
 	METHOD method_51277 register (Lcom/mojang/brigadier/CommandDispatcher;)V
 		ARG 0 dispatcher
 	CLASS class_8834 ReturnRunRedirector

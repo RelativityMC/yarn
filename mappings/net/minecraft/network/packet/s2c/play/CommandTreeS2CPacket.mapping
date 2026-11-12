@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_2641 net/minecraft/network/packet/s2c/play/CommandTreeS2CPacket
+	FIELD field_1_9514 NODE_CODEC Lnet/minecraft/class_9139;
+	FIELD field_1_12977 CODEC_IMPL Lnet/minecraft/class_9139;
 	FIELD field_33317 NODE_TYPE_MASK B
 	FIELD field_33318 EXECUTABLE B
 	FIELD field_33319 HAS_REDIRECT B
@@ -16,6 +18,15 @@ CLASS net/minecraft/class_2641 net/minecraft/network/packet/s2c/play/CommandTree
 	METHOD <init> (Ljava/util/List;I)V
 		ARG 1 nodes
 		ARG 2 rootSize
+	METHOD method_1_9133 (Lnet/minecraft/class_9129;Lnet/minecraft/class_2641$class_2642;)V
+		ARG 0 buf
+		ARG 1 packet
+	METHOD method_1_9134 (Lnet/minecraft/class_2641;)Ljava/util/List;
+		ARG 0 packet
+	METHOD method_1_9135 (Lnet/minecraft/class_2641;)Ljava/lang/Integer;
+		ARG 0 packet
+	METHOD method_1_12986 (Lio/netty/buffer/ByteBuf;)Lnet/minecraft/class_9129;
+		ARG 0 buf
 	METHOD method_11401 createNodeData (Lcom/mojang/brigadier/tree/CommandNode;Lnet/minecraft/class_2641$class_11409;Lit/unimi/dsi/fastutil/objects/Object2IntMap;)Lnet/minecraft/class_2641$class_2642;
 		ARG 0 node
 		ARG 1 inspector
@@ -66,6 +77,7 @@ CLASS net/minecraft/class_2641 net/minecraft/network/packet/s2c/play/CommandTree
 			ARG 1 indices
 	CLASS class_7233 LiteralNode
 		FIELD comp_4291 literal Ljava/lang/String;
+		FIELD field_1_12980 CODEC Lnet/minecraft/class_9139;
 		METHOD <init> (Ljava/lang/String;)V
 			ARG 1 literal
 		METHOD comp_4291 literal ()Ljava/lang/String;

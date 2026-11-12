@@ -1,3 +1,4 @@
 CLASS net/minecraft/class_1_2074 net/minecraft/command/suggestion/AvailableSoundsSuggestionType
 	FIELD field_1_12945 INSTANCE Lnet/minecraft/class_1_2074;
 	FIELD field_1_12946 SERIALIZER Lnet/minecraft/class_1_2097$class_1_2098;
+	METHOD method_1_12937 availableSounds ()Lcom/mojang/brigadier/suggestion/SuggestionProvider;

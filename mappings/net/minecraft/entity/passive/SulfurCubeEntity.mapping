@@ -10,6 +10,7 @@ CLASS net/minecraft/class_1_748 net/minecraft/entity/passive/SulfurCubeEntity
 	FIELD field_1_6348 knockbackModifiers Lnet/minecraft/class_1_719$class_1_898;
 	FIELD field_1_7082 pushSoundCooldown I
 	FIELD field_1_7083 soundSettings Lnet/minecraft/class_1_719$class_1_1031;
+	FIELD field_1_12327 activeEffects Ljava/util/Set;
 	METHOD method_1_4505 canSpawn (Lnet/minecraft/class_1299;Lnet/minecraft/class_1936;Lnet/minecraft/class_3730;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)Z
 		ARG 0 type
 		ARG 1 world
@@ -80,6 +81,17 @@ CLASS net/minecraft/class_1_748 net/minecraft/entity/passive/SulfurCubeEntity
 	METHOD method_1_6307 playEatSound ()V
 	METHOD method_1_6360 (Lnet/minecraft/class_1304;)Lnet/minecraft/class_1799;
 		ARG 0 slot
+	METHOD method_1_11629 (Lnet/minecraft/class_6880;)V
+		ARG 1 hitSound
+	METHOD method_1_11630 (Lnet/minecraft/class_243;Lnet/minecraft/class_6880;)V
+		ARG 2 pushSound
+	METHOD method_1_12143 createContext (Lnet/minecraft/class_3218;Z)Lnet/minecraft/class_47;
+		ARG 1 world
+		ARG 2 enchantmentActive
+	METHOD method_1_12144 (Ljava/util/List;Lnet/minecraft/class_1_719;)Z
+		ARG 1 archetype
+	METHOD method_1_12145 (Lnet/minecraft/class_1_719;)Ljava/util/stream/Stream;
+		ARG 0 archetype
 	CLASS class_1_749 SulfurCubeLookControl
 	CLASS class_1_750 SulfurCubeMoveControl
 		METHOD <init> (Lnet/minecraft/class_1_748;)V

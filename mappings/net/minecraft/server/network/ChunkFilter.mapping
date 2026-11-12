@@ -1,6 +1,16 @@
 CLASS net/minecraft/class_8603 net/minecraft/server/network/ChunkFilter
 	FIELD field_44986 IGNORE_ALL Lnet/minecraft/class_8603;
 	METHOD method_1_11072 isSquareWithinDistance (III)Z
+		ARG 1 x
+		ARG 2 z
+		ARG 3 range
+	METHOD method_1_12679 isRegionWithinDistance (IIIIII)Z
+		ARG 1 x
+		ARG 2 z
+		ARG 3 rxLower
+		ARG 4 rxUpper
+		ARG 5 rzLower
+		ARG 6 rzUpper
 	METHOD method_52356 isWithinDistance (II)Z
 		ARG 1 x
 		ARG 2 z

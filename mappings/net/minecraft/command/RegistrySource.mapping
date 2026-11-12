@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_1_1994 net/minecraft/command/RegistryCommandSource
+CLASS net/minecraft/class_1_1994 net/minecraft/command/RegistrySource
 	METHOD method_1_12585 canUseEntitySelectors ()Z
 	METHOD method_1_12586 wrapForValidation (Lnet/minecraft/class_6880;Lnet/minecraft/class_176;)Lnet/minecraft/class_1_2034;
 		ARG 1 entry

@@ -5,3 +5,12 @@ CLASS net/minecraft/class_1_1440 net/minecraft/datafixer/fix/SwingAnimationCompo
 		ARG 0 component
 	METHOD method_1_9542 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
 		ARG 0 component1
+	METHOD method_1_13025 fixTooltipDisplay (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 tooltipDisplay
+	METHOD method_1_13026 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 hiddenComponents
+	METHOD method_1_13027 (Lcom/mojang/serialization/Dynamic;Ljava/util/stream/Stream;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 hiddenComponentsStream
+	METHOD method_1_13028 (Lcom/mojang/serialization/Dynamic;Ljava/util/function/Consumer;)V
+		ARG 0 hiddenComponent
+		ARG 1 output

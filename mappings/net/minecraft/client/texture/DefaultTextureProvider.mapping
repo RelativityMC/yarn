@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_1_1784 net/minecraft/client/texture/DefaultTextureProvider
+	FIELD field_1_12912 INSTANCE Lnet/minecraft/class_1_1784;

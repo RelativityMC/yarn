@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_1_2043 net/minecraft/class_1_2043
+CLASS net/minecraft/class_1_2043 net/minecraft/command/suggestion/ServerSuggestionSource
 	FIELD field_1_12875 reloadableRegistries Lnet/minecraft/class_7225$class_7874;
 	FIELD field_1_12876 server Lnet/minecraft/server/MinecraftServer;
 	FIELD field_1_12877 player Lnet/minecraft/class_3222;

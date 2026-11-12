@@ -1,6 +1,0 @@
-CLASS net/minecraft/class_1_2022 net/minecraft/class_1_2022
-	METHOD method_1_12719 (Lcom/mojang/brigadier/StringReader;)Lcom/mojang/brigadier/context/ContextChain;
-		ARG 1 reader
-	CLASS class_1_2023 class_1_2023
-		METHOD method_1_12720 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_2022;
-			ARG 1 id

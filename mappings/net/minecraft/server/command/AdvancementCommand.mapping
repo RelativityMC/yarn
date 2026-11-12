@@ -1,5 +1,10 @@
 CLASS net/minecraft/class_3008 net/minecraft/server/command/AdvancementCommand
 	FIELD field_47183 CRITERION_NOT_FOUND_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
+	METHOD method_1_12793 (Lnet/minecraft/server/MinecraftServer;Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 server
+		ARG 1 context
+		ARG 2 suggestionsBuilder
+	METHOD method_1_12794 suggestCriteria ()Lcom/mojang/brigadier/suggestion/SuggestionProvider;
 	METHOD method_12978 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_12979 (Lcom/mojang/brigadier/context/CommandContext;)I
@@ -10,6 +15,7 @@ CLASS net/minecraft/class_3008 net/minecraft/server/command/AdvancementCommand
 		ARG 0 source
 		ARG 1 targets
 		ARG 2 operation
+		ARG 3 advancement
 		ARG 4 criterion
 	METHOD method_12982 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
@@ -37,6 +43,8 @@ CLASS net/minecraft/class_3008 net/minecraft/server/command/AdvancementCommand
 	METHOD method_12995 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_12996 select (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_6880$class_6883;Lnet/minecraft/class_3008$class_3010;)Ljava/util/List;
+		ARG 0 context
+		ARG 1 advancement
 		ARG 2 selection
 	METHOD method_12997 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
@@ -51,8 +59,86 @@ CLASS net/minecraft/class_3008 net/minecraft/server/command/AdvancementCommand
 		ARG 2 operation
 		ARG 3 selection
 	CLASS class_3009 Operation
+		FIELD field_1_7497 criterionToNFailureReporter Lnet/minecraft/class_1_1083$class_1_1086;
+		FIELD field_1_7498 criterionToNSuccessReporter Lnet/minecraft/class_1_1083$class_1_1093;
+		FIELD field_1_7499 manyToNFailureReporter Lnet/minecraft/class_1_1083$class_1_1085;
+		FIELD field_1_7500 manyToNSuccessReporter Lnet/minecraft/class_1_1083$class_1_1092;
+		FIELD field_1_7501 oneToNSuccessReporter Lnet/minecraft/class_1_1083$class_1_1092;
+		FIELD field_1_7502 oneToNFailureReporter Lnet/minecraft/class_1_1083$class_1_1085;
 		METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
 			ARG 3 name
+		METHOD method_1_6832 (Ljava/lang/String;Lnet/minecraft/class_3222;ILnet/minecraft/class_8779;)Lnet/minecraft/class_2561;
+			ARG 1 entity
+			ARG 2 count
+			ARG 3 advancement
+		METHOD method_1_6833 (Ljava/lang/String;IILnet/minecraft/class_8779;)Lnet/minecraft/class_2561;
+			ARG 1 targets
+			ARG 2 count
+			ARG 3 advancement
+		METHOD method_1_6834 (Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;Lnet/minecraft/class_3222;ILjava/lang/Integer;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+			ARG 1 entity
+			ARG 2 count
+			ARG 3 advancements
+		METHOD method_1_6835 (Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;IILjava/lang/Integer;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+			ARG 1 targets
+			ARG 2 count
+			ARG 3 advancements
+		METHOD method_1_6836 (Ljava/lang/String;Lnet/minecraft/class_3222;ILnet/minecraft/class_8779;Ljava/lang/String;)Lnet/minecraft/class_2561;
+			ARG 1 entity
+			ARG 2 count
+			ARG 3 advancement
+			ARG 4 criterion
+		METHOD method_1_6837 (Ljava/lang/String;IILnet/minecraft/class_8779;Ljava/lang/String;)Lnet/minecraft/class_2561;
+			ARG 1 targets
+			ARG 2 count
+			ARG 3 advancement
+			ARG 4 criterion
+		METHOD method_1_6838 (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+			ARG 1 criterion
+			ARG 2 advancement
+			ARG 3 target
+		METHOD method_1_6839 (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+			ARG 1 criterion
+			ARG 2 advancement
+			ARG 3 targets
+		METHOD method_1_6840 (Lcom/mojang/brigadier/exceptions/Dynamic3CommandExceptionType;Lnet/minecraft/class_3222;ILnet/minecraft/class_8779;Ljava/lang/String;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+			ARG 1 entity
+			ARG 2 count
+			ARG 3 advancement
+			ARG 4 criterion
+		METHOD method_1_6841 (Lcom/mojang/brigadier/exceptions/Dynamic3CommandExceptionType;IILnet/minecraft/class_8779;Ljava/lang/String;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+			ARG 1 targets
+			ARG 2 count
+			ARG 3 advancement
+			ARG 4 criterion
+		METHOD method_1_6842 (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+			ARG 1 advancement
+			ARG 2 target
+		METHOD method_1_6843 (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+			ARG 1 advancement
+			ARG 2 targets
+		METHOD method_1_6844 (Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;Lnet/minecraft/class_3222;ILnet/minecraft/class_8779;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+			ARG 1 entity
+			ARG 2 count
+			ARG 3 advancement
+		METHOD method_1_6845 (Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;IILnet/minecraft/class_8779;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
+			ARG 1 targets
+			ARG 2 count
+			ARG 3 advancement
+		METHOD method_1_6846 (Ljava/lang/String;Lnet/minecraft/class_3222;ILjava/lang/Integer;)Lnet/minecraft/class_2561;
+			ARG 1 entity
+			ARG 2 count
+			ARG 3 advancements
+		METHOD method_1_6847 (Ljava/lang/String;IILjava/lang/Integer;)Lnet/minecraft/class_2561;
+			ARG 1 targets
+			ARG 2 count
+			ARG 3 advancements
+		METHOD method_1_6848 (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+			ARG 1 advancements
+			ARG 2 target
+		METHOD method_1_6849 (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
+			ARG 1 advancements
+			ARG 2 targets
 		METHOD method_12999 processAll (Lnet/minecraft/class_3222;Ljava/lang/Iterable;Z)I
 			ARG 1 player
 			ARG 2 advancements

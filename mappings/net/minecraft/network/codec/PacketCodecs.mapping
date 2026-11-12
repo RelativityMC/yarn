@@ -403,3 +403,6 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 			ARG 0 buf1
 	CLASS 38 38
 		FIELD field_60514 GSON Lcom/google/gson/Gson;
+	CLASS class_1_2002 RegistryCodec
+		METHOD method_1_12636 getElements (Lnet/minecraft/class_1_2004;)Lnet/minecraft/class_2359;
+			ARG 1 indexedRegistryHolder

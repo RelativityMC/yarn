@@ -1,12 +1,12 @@
-CLASS net/minecraft/class_1_1986 net/minecraft/class_1_1986
+CLASS net/minecraft/class_1_1986 net/minecraft/command/ServerCommandTree
 	FIELD field_1_12653 LOGGER Lorg/slf4j/Logger;
 	METHOD <init> (Lcom/mojang/brigadier/CommandDispatcher;)V
 		ARG 1 dispatcher
-	METHOD method_1_12537 (Lnet/minecraft/class_1_1994;)V
+	METHOD method_1_12537 findAmbiguities (Lnet/minecraft/class_1_1994;)V
 		ARG 1 source
-	METHOD method_1_12538 (Lcom/mojang/brigadier/CommandDispatcher;)Lnet/minecraft/class_1_1986;
+	METHOD method_1_12538 fromServerSourceDispatcher (Lcom/mojang/brigadier/CommandDispatcher;)Lnet/minecraft/class_1_1986;
 		ARG 0 dispatcher
-	METHOD method_1_12539 (Lnet/minecraft/class_1_1986$class_1_1988;Lnet/minecraft/class_1_1994;)Ljava/util/Map;
+	METHOD method_1_12539 getSmartUsage (Lnet/minecraft/class_1_1986$class_1_1988;Lnet/minecraft/class_1_1994;)Ljava/util/Map;
 		ARG 1 parsedInput
 		ARG 2 source
 	METHOD method_1_12541 (Lcom/mojang/brigadier/tree/CommandNode;Lcom/mojang/brigadier/tree/CommandNode;Lcom/mojang/brigadier/tree/CommandNode;Ljava/util/Collection;)V

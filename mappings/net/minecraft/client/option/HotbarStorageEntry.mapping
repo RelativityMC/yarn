@@ -7,9 +7,12 @@ CLASS net/minecraft/class_748 net/minecraft/client/option/HotbarStorageEntry
 	FIELD field_48947 stacks Ljava/util/List;
 	METHOD <init> (Ljava/util/List;)V
 		ARG 1 stacks
+	METHOD method_1_12668 parse (Lnet/minecraft/class_7871$class_7872;)Ljava/util/List;
+		ARG 1 registries
 	METHOD method_56835 isEmpty ()Z
 	METHOD method_56836 serialize (Lnet/minecraft/class_1661;Lnet/minecraft/class_7871$class_7872;)V
 		ARG 1 playerInventory
+		ARG 2 registries
 	METHOD method_56837 isEmpty (Lcom/mojang/serialization/Dynamic;)Z
 		ARG 0 stack
 	METHOD method_56838 (Lnet/minecraft/class_748;)Ljava/util/List;

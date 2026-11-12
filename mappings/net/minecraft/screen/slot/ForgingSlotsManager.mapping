@@ -14,6 +14,12 @@ CLASS net/minecraft/class_8047 net/minecraft/screen/slot/ForgingSlotsManager
 	CLASS class_8048 Builder
 		FIELD field_41910 resultSlot Lnet/minecraft/class_8047$class_8049;
 		FIELD field_54596 inputs Ljava/util/List;
+		METHOD method_1_12452 input (IIILjava/util/function/Predicate;Lnet/minecraft/class_1735$class_1_1946;)Lnet/minecraft/class_8047$class_8048;
+			ARG 1 slotId
+			ARG 2 x
+			ARG 3 y
+			ARG 4 mayPlace
+			ARG 5 slotType
 		METHOD method_48372 build ()Lnet/minecraft/class_8047;
 		METHOD method_48373 output (III)Lnet/minecraft/class_8047$class_8048;
 			ARG 1 slotId

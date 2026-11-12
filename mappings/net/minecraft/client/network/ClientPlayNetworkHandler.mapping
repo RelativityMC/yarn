@@ -68,6 +68,10 @@ CLASS net/minecraft/class_634 net/minecraft/client/network/ClientPlayNetworkHand
 		ARG 8 velocityX
 		ARG 10 velocityY
 		ARG 12 velocityZ
+	METHOD method_1_11621 (Lnet/minecraft/class_243;Lnet/minecraft/class_6880;)V
+		ARG 2 explosionSound
+	METHOD method_1_11622 (Lnet/minecraft/class_243;Lnet/minecraft/class_2394;)V
+		ARG 2 explosionParticle
 	METHOD method_2869 getAdvancementHandler ()Lnet/minecraft/class_632;
 	METHOD method_2870 updateLighting (IILnet/minecraft/class_3568;Lnet/minecraft/class_1944;Ljava/util/BitSet;Ljava/util/BitSet;Ljava/util/Iterator;Z)V
 		ARG 1 chunkX

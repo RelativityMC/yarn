@@ -19,7 +19,7 @@ CLASS net/minecraft/class_8673 net/minecraft/client/network/ClientCommonNetworkH
 		ARG 1 client
 		ARG 2 connection
 		ARG 3 connectionState
-	METHOD method_1_13018 getCommandSuggestions ()Lnet/minecraft/class_1_1996;
+	METHOD method_1_13018 getCommandSuggestionTree ()Lnet/minecraft/class_1_1996;
 	METHOD method_11152 onCustomPayload (Lnet/minecraft/class_8710;)V
 		ARG 1 payload
 	METHOD method_52773 getParsedResourcePackUrl (Ljava/lang/String;)Ljava/net/URL;

@@ -24,6 +24,7 @@ CLASS net/minecraft/class_10093 net/minecraft/client/texture/MapTextureManager
 		METHOD <init> (Lnet/minecraft/class_10093;ILnet/minecraft/class_22;)V
 			ARG 2 id
 			ARG 3 state
+		METHOD method_1_12772 destroy ()V
 		METHOD method_1776 updateTexture ()V
 		METHOD method_37450 setNeedsUpdate ()V
 		METHOD method_37451 setState (Lnet/minecraft/class_22;)V

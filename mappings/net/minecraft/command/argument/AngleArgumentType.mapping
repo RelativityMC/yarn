@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_5473 net/minecraft/command/argument/AngleArgumentType
+	FIELD field_1_12756 INSTANCE Lnet/minecraft/class_5473;
+	FIELD field_1_12757 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_26368 INCOMPLETE_ANGLE_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_26369 EXAMPLES Ljava/util/Collection;
 	FIELD field_27345 INVALID_ANGLE_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;

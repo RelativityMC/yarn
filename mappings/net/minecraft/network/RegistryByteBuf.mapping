@@ -2,9 +2,17 @@ CLASS net/minecraft/class_9129 net/minecraft/network/RegistryByteBuf
 	COMMENT A packet byte buffer bound to a particular {@link DynamicRegistryManager} instance.
 	COMMENT
 	COMMENT <p>This is used during the {@link NetworkPhase#PLAY} phase only.
+	FIELD field_1_12735 indexedRegistryHolder Lnet/minecraft/class_1_2004;
+	FIELD field_1_12736 registries Lnet/minecraft/class_7871$class_7872;
 	METHOD <init> (Lio/netty/buffer/ByteBuf;Lnet/minecraft/class_5455;)V
 		ARG 1 buf
 		ARG 2 registryManager
+	METHOD <init> (Lio/netty/buffer/ByteBuf;Lnet/minecraft/class_7871$class_7872;Lnet/minecraft/class_1_2004;)V
+		ARG 1 buf
+		ARG 2 registries
+		ARG 3 indexedRegistryHolder
+	METHOD method_1_12691 getIndexedRegistryHolder ()Lnet/minecraft/class_1_2004;
+	METHOD method_1_12692 getRegistries ()Lnet/minecraft/class_7871$class_7872;
 	METHOD method_56350 makeFactory (Lnet/minecraft/class_5455;)Ljava/util/function/Function;
 		ARG 0 registryManager
 	METHOD method_56351 (Lnet/minecraft/class_5455;Lio/netty/buffer/ByteBuf;)Lnet/minecraft/class_9129;

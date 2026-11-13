@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_2273 net/minecraft/command/argument/SwizzleArgumentType
+	FIELD field_1_12965 INSTANCE Lnet/minecraft/class_2273;
+	FIELD field_1_12966 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_10740 EXAMPLES Ljava/util/Collection;
 	FIELD field_10741 INVALID_SWIZZLE_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	METHOD method_1_12884 (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;

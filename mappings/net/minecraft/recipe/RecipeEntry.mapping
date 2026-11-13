@@ -6,3 +6,5 @@ CLASS net/minecraft/class_8786 net/minecraft/recipe/RecipeEntry
 	METHOD comp_1933 value ()Lnet/minecraft/class_1860;
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
+	METHOD method_1_12728 fromEntry (Lnet/minecraft/class_6880$class_6883;)Lnet/minecraft/class_8786;
+		ARG 0 entry

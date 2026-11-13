@@ -1,0 +1,23 @@
+CLASS net/minecraft/class_1_2032 net/minecraft/command/argument/IntegerArgument
+	FIELD field_1_12820 DEFAULT_MAX Ljava/lang/Integer;
+	FIELD field_1_12821 DEFAULT_MIN Ljava/lang/Integer;
+	FIELD field_1_12822 PACKET_CODEC Lnet/minecraft/class_9139;
+	FIELD field_1_12823 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
+	FIELD field_1_12824 bounds Lnet/minecraft/class_2096$class_11893;
+	METHOD <init> (Lnet/minecraft/class_2096$class_11893;)V
+		ARG 1 bounds
+	METHOD method_1_12777 getInteger (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)I
+		ARG 0 context
+		ARG 1 name
+	METHOD method_1_12778 any ()Lcom/mojang/brigadier/arguments/ArgumentType;
+	METHOD method_1_12779 atLeast (I)Lcom/mojang/brigadier/arguments/ArgumentType;
+		ARG 0 min
+	METHOD method_1_12780 between (II)Lcom/mojang/brigadier/arguments/ArgumentType;
+		ARG 0 min
+		ARG 1 max
+	METHOD method_1_12781 of (Lnet/minecraft/class_2096$class_11893;)Lcom/mojang/brigadier/arguments/ArgumentType;
+		ARG 0 bounds
+	METHOD method_1_12782 (Lnet/minecraft/class_1_2032;)Lnet/minecraft/class_2096$class_11893;
+		ARG 0 arg
+	METHOD method_1_12783 (Lnet/minecraft/class_1_2032;)Lnet/minecraft/class_2096$class_11893;
+		ARG 0 arg

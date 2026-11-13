@@ -1,2 +1,3 @@
 CLASS net/minecraft/class_12093 net/minecraft/command/permission/PermissionChecks
 	METHOD method_75025 registerAndGetDefault (Lnet/minecraft/class_2385;)V
+		ARG 0 registry

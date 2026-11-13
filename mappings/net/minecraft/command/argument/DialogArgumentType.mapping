@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_2024 net/minecraft/command/argument/DialogArgumentType
+	FIELD field_1_12786 INSTANCE Lnet/minecraft/class_1_2024;
+	FIELD field_1_12787 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
+	METHOD method_1_12729 dialog ()Lcom/mojang/brigadier/arguments/ArgumentType;
+	METHOD method_1_12730 getDialog (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880;
+		ARG 0 context
+		ARG 1 name

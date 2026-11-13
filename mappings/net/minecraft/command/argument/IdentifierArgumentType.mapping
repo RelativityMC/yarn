@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_2232 net/minecraft/command/argument/IdentifierArgumentType
+	FIELD field_1_12865 INSTANCE Lnet/minecraft/class_2232;
+	FIELD field_1_12866 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_9946 EXAMPLES Ljava/util/Collection;
 	METHOD method_1_12884 (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
 		ARG 1 reader

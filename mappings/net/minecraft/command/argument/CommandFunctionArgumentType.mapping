@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_2284 net/minecraft/command/argument/CommandFunctionArgumentType
+	FIELD field_1_12910 INSTANCE Lnet/minecraft/class_2284;
+	FIELD field_1_12911 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_10782 UNKNOWN_FUNCTION_TAG_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_10783 EXAMPLES Ljava/util/Collection;
 	FIELD field_10784 UNKNOWN_FUNCTION_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;

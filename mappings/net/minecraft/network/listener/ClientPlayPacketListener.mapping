@@ -8,6 +8,8 @@ CLASS net/minecraft/class_2602 net/minecraft/network/listener/ClientPlayPacketLi
 		ARG 1 packet
 	METHOD method_1_10500 onAddTransientBlock (Lnet/minecraft/class_1_1680;)V
 		ARG 1 packet
+	METHOD method_1_12970 onAddEntityMotion (Lnet/minecraft/class_1_2106;)V
+		ARG 1 packet
 	METHOD method_11077 onParticle (Lnet/minecraft/class_2675;)V
 		ARG 1 packet
 	METHOD method_11078 onBossBar (Lnet/minecraft/class_2629;)V

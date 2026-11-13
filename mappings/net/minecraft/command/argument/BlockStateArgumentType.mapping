@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_2257 net/minecraft/command/argument/BlockStateArgumentType
+	FIELD field_1_12952 INSTANCE Lnet/minecraft/class_2257;
+	FIELD field_1_12953 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_10679 EXAMPLES Ljava/util/Collection;
 	METHOD method_1_12878 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 context

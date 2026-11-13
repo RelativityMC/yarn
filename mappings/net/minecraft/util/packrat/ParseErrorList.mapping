@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_9390 net/minecraft/util/packrat/ParseErrorList
+	FIELD field_1_12840 NO_OP Lnet/minecraft/class_9390;
 	METHOD method_58304 setCursor (I)V
 		ARG 1 cursor
 	METHOD method_58305 add (ILnet/minecraft/class_1_2013;Ljava/lang/Object;)V

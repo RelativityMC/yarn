@@ -84,6 +84,11 @@ CLASS net/minecraft/class_5699 net/minecraft/util/dynamic/Codecs
 		ARG 0 typeCodec
 		ARG 1 getType
 		ARG 2 typeToCodec
+	METHOD method_1_12528 restrict (Lcom/mojang/serialization/Codec;Lcom/google/common/collect/Range;)Lcom/mojang/serialization/Codec;
+		ARG 0 delegate
+		ARG 1 range
+	METHOD method_1_12529 (Lcom/google/common/collect/Range;Ljava/lang/Comparable;)Lcom/mojang/serialization/DataResult;
+		ARG 1 value
 	METHOD method_36241 rangedInt (IILjava/util/function/Function;)Lcom/mojang/serialization/Codec;
 		ARG 0 min
 		ARG 1 max

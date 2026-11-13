@@ -1,0 +1,60 @@
+CLASS net/minecraft/class_1_1989 net/minecraft/command/AbstractCommandTree
+	FIELD field_1_12659 SOURCE Ljava/lang/ScopedValue;
+	FIELD field_1_12660 TEST_PREDICATE Ljava/util/function/Predicate;
+	FIELD field_1_12661 dispatcher Lcom/mojang/brigadier/CommandDispatcher;
+	METHOD <init> (Lcom/mojang/brigadier/CommandDispatcher;)V
+		ARG 1 dispatcher
+	METHOD method_1_12553 canAccessCommandNode (Lcom/mojang/brigadier/tree/CommandNode;Lnet/minecraft/class_12097;)Z
+		ARG 0 node
+		ARG 1 permissionSource
+	METHOD method_1_12554 cast (Ljava/util/function/Predicate;)Ljava/util/function/Predicate;
+		ARG 0 predicate
+	METHOD method_1_12555 getSmartUsage (Lcom/mojang/brigadier/tree/CommandNode;Lnet/minecraft/class_1_1994;)Ljava/util/Map;
+		ARG 1 node
+		ARG 2 source
+	METHOD method_1_12556 getSource ()Lnet/minecraft/class_1_1994;
+	METHOD method_1_12559 parse (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/class_1_1994;)Lcom/mojang/brigadier/ParseResults;
+		ARG 1 reader
+		ARG 2 source
+	METHOD method_1_12560 parse (Ljava/lang/String;Lnet/minecraft/class_1_1994;)Lcom/mojang/brigadier/ParseResults;
+		ARG 1 string
+		ARG 2 source
+	METHOD method_1_12561 withSource (Ljava/lang/Runnable;Lnet/minecraft/class_1_1994;)V
+		ARG 0 action
+		ARG 1 source
+	METHOD method_1_12562 withSource (Ljava/lang/ScopedValue$CallableOp;Lnet/minecraft/class_1_1994;)Ljava/lang/Object;
+		ARG 0 op
+		ARG 1 source
+	CLASS class_1_1990 CommandTreeTransformer
+		FIELD field_1_12662 inputToOutput Ljava/util/Map;
+		FIELD field_1_12663 pendingInputs Ljava/util/List;
+		METHOD method_1_12563 addMappedNode (Lcom/mojang/brigadier/tree/CommandNode;Lcom/mojang/brigadier/tree/CommandNode;)V
+			ARG 1 node
+			ARG 2 outputRedirect
+		METHOD method_1_12564 mapCommand (Lcom/mojang/brigadier/Command;)Lcom/mojang/brigadier/Command;
+			ARG 1 command
+		METHOD method_1_12565 map (Lcom/mojang/brigadier/CommandDispatcher;)Lcom/mojang/brigadier/CommandDispatcher;
+			ARG 1 dispatcher
+		METHOD method_1_12566 mapRedirectModifier (Lcom/mojang/brigadier/RedirectModifier;)Lcom/mojang/brigadier/RedirectModifier;
+			ARG 1 redirectModifier
+		METHOD method_1_12567 mapArgumentType (Lcom/mojang/brigadier/arguments/ArgumentType;)Lcom/mojang/brigadier/arguments/ArgumentType;
+			ARG 1 argumentType
+		METHOD method_1_12568 mapSuggestionProvider (Lcom/mojang/brigadier/suggestion/SuggestionProvider;)Lcom/mojang/brigadier/suggestion/SuggestionProvider;
+			ARG 1 suggestionProvider
+		METHOD method_1_12569 mapRoot (Lcom/mojang/brigadier/tree/RootCommandNode;)Lcom/mojang/brigadier/tree/RootCommandNode;
+			ARG 1 root
+		METHOD method_1_12570 mapPredicate (Ljava/util/function/Predicate;)Ljava/util/function/Predicate;
+			ARG 1 predicate
+		METHOD method_1_12571 mapNode (Lcom/mojang/brigadier/tree/CommandNode;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+			ARG 1 node
+		METHOD method_1_12572 visitChild (Lcom/mojang/brigadier/tree/CommandNode;)V
+			ARG 1 node
+		METHOD method_1_12573 copyChildren (Lcom/mojang/brigadier/tree/CommandNode;Lcom/mojang/brigadier/tree/CommandNode;)V
+			ARG 1 input
+			ARG 2 output
+		METHOD method_1_12574 eraseType (Lcom/mojang/brigadier/Command;)Lcom/mojang/brigadier/Command;
+			ARG 0 command
+		METHOD method_1_12575 eraseType (Lcom/mojang/brigadier/RedirectModifier;)Lcom/mojang/brigadier/RedirectModifier;
+			ARG 0 redirectModifier
+		METHOD method_1_12576 addMappedNode (Lcom/mojang/brigadier/tree/CommandNode;)V
+			ARG 1 node

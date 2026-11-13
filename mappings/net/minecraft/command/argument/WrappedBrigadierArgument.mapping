@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_2072 net/minecraft/command/argument/WrappedBrigadierArgument
+	FIELD field_1_12931 argumentType Lcom/mojang/brigadier/arguments/ArgumentType;
+	METHOD <init> (Lcom/mojang/brigadier/arguments/ArgumentType;)V
+		ARG 1 argumentType
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other
+	METHOD method_1_12924 getBrigadierArgumentType ()Lcom/mojang/brigadier/arguments/ArgumentType;

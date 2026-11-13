@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_2030 net/minecraft/command/argument/BooleanArgument
+	FIELD field_1_12815 INSTANCE Lnet/minecraft/class_1_2030;
+	FIELD field_1_12816 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
+	METHOD method_1_12773 of ()Lcom/mojang/brigadier/arguments/ArgumentType;
+	METHOD method_1_12774 getBool (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Z
+		ARG 0 context
+		ARG 1 name

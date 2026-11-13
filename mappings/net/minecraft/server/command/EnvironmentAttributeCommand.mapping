@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_1_2075 net/minecraft/server/command/EnvironmentAttributeCommand
+	FIELD field_1_12947 GAMEMASTERS_CHECK Lnet/minecraft/class_12090;
+	METHOD method_1_12938 getAttribute (Lcom/mojang/brigadier/context/CommandContext;)Lnet/minecraft/class_6880$class_6883;
+		ARG 0 context
+	METHOD method_1_12939 execute (Lnet/minecraft/class_2168;Lnet/minecraft/class_6880$class_6883;Lnet/minecraft/class_243;)I
+		ARG 0 source
+		ARG 1 attribute
+		ARG 2 pos
+	METHOD method_1_12942 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD method_1_12943 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD method_1_12944 register (Lcom/mojang/brigadier/CommandDispatcher;)V
+		ARG 0 dispatcher

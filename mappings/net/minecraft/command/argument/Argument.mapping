@@ -1,0 +1,35 @@
+CLASS net/minecraft/class_1_2055 net/minecraft/command/argument/Argument
+	METHOD method_1_12877 getExamples ()Ljava/util/Collection;
+	METHOD method_1_12878 listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 context
+		ARG 2 suggestionsBuilder
+	METHOD method_1_12879 parse (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/class_1_1994;)Ljava/lang/Object;
+		ARG 1 reader
+		ARG 2 source
+	METHOD method_1_12880 unitSerializer (Lnet/minecraft/class_1_2055;)Lnet/minecraft/class_1_2055$class_1_2060;
+		ARG 0 instance
+	METHOD method_1_12881 createArgumentType ()Lcom/mojang/brigadier/arguments/ArgumentType;
+	METHOD method_1_12882 getSerializer ()Lnet/minecraft/class_1_2055$class_1_2060;
+	METHOD method_1_12883 cast (Lcom/mojang/brigadier/arguments/ArgumentType;)Lnet/minecraft/class_1_2055$class_1_2056;
+		ARG 0 argumentType
+	CLASS class_1_2056 ArgumentType
+		METHOD listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+			ARG 1 context
+			ARG 2 suggestionsBuilder
+	CLASS class_1_2057 Free
+		COMMENT Argument types that do not depend on the command source for parsing.
+		METHOD method_1_12884 parse (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
+			ARG 1 reader
+	CLASS class_1_2058 SerializableArgumentType
+		METHOD parse (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
+			ARG 1 reader
+		METHOD parse (Lcom/mojang/brigadier/StringReader;Ljava/lang/Object;)Ljava/lang/Object;
+			ARG 1 reader
+			ARG 2 source
+	CLASS class_1_2059 ContextualArgumentType
+		METHOD parse (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
+			ARG 1 reader
+		METHOD parse (Lcom/mojang/brigadier/StringReader;Ljava/lang/Object;)Ljava/lang/Object;
+			ARG 1 reader
+			ARG 2 source
+	CLASS class_1_2060 Serializer

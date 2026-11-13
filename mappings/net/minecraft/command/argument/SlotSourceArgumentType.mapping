@@ -1,9 +1,22 @@
 CLASS net/minecraft/class_1_1077 net/minecraft/command/argument/SlotSourceArgumentType
 	FIELD field_1_7525 EXAMPLES Ljava/util/Collection;
 	FIELD field_1_7526 referenceArgumentType Lnet/minecraft/class_1_1077$class_1_2038;
+	FIELD field_1_12867 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
+	METHOD <init> (Lnet/minecraft/class_176;)V
+		ARG 1 contextType
 	METHOD method_1_6884 getSlotSourceProvider (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_1_1077$class_1_2039;
 		ARG 0 context
 		ARG 1 argument
 	METHOD method_1_6886 create (Lnet/minecraft/class_176;)Lcom/mojang/brigadier/arguments/ArgumentType;
+		ARG 0 contextType
+	METHOD method_1_12816 createArgument (Lnet/minecraft/class_1_1994;Lnet/minecraft/class_9348;)Lnet/minecraft/class_1_1077$class_1_2039;
+		ARG 1 source
+		ARG 2 range
 	METHOD method_1_12878 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 2 suggestionsBuilder
+	CLASS class_1_2038 Reference
+		FIELD field_1_12868 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
+		METHOD <init> (Lnet/minecraft/class_176;)V
+			ARG 1 contextType
+	CLASS class_1_2039 Argument
+		METHOD method_1_12817 asString ()Ljava/util/Optional;

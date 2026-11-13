@@ -1,5 +1,0 @@
-CLASS net/minecraft/class_1_1994
-	METHOD comp_1_2249 getEnabledFeatures ()Lnet/minecraft/class_7699;
-	CLASS class_1_1995
-		FIELD comp_1_2249 getEnabledFeatures Lnet/minecraft/class_7699;
-		FIELD comp_1_2251 getPermissions Lnet/minecraft/class_12096;

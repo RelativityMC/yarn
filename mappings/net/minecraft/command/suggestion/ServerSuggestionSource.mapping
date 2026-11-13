@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1_2043 net/minecraft/command/suggestion/ServerSuggestionSource
+	FIELD field_1_12875 reloadableRegistries Lnet/minecraft/class_7225$class_7874;
+	FIELD field_1_12876 server Lnet/minecraft/server/MinecraftServer;
+	FIELD field_1_12877 player Lnet/minecraft/class_3222;
+	METHOD <init> (Lnet/minecraft/class_3222;)V
+		ARG 1 player
+	METHOD method_1_12836 (Lnet/minecraft/class_2172$class_7078;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Ljava/util/function/Predicate;Lnet/minecraft/class_7225$class_7226;)Ljava/util/concurrent/CompletableFuture;
+		ARG 4 registry

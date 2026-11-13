@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_9019 net/minecraft/command/argument/StyleArgumentType
+	FIELD field_1_12770 INSTANCE Lnet/minecraft/class_9019;
+	FIELD field_1_12771 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_47554 EXAMPLES Ljava/util/Collection;
 	FIELD field_55866 INVALID_STYLE_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	METHOD method_55446 style ()Lcom/mojang/brigadier/arguments/ArgumentType;

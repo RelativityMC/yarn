@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_2293 net/minecraft/command/argument/ItemPredicateArgumentType
+	FIELD field_1_12956 INSTANCE Lnet/minecraft/class_2293;
+	FIELD field_1_12957 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_10812 EXAMPLES Ljava/util/Collection;
 	FIELD field_50056 INVALID_ITEM_ID_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_50057 UNKNOWN_ITEM_TAG_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
@@ -9,10 +11,15 @@ CLASS net/minecraft/class_2293 net/minecraft/command/argument/ItemPredicateArgum
 	FIELD field_50062 COUNT_ID Lnet/minecraft/class_2960;
 	FIELD field_50063 SPECIAL_COMPONENT_CHECKS Ljava/util/Map;
 	FIELD field_50064 SPECIAL_SUB_PREDICATE_CHECKS Ljava/util/Map;
+	METHOD method_1_12960 (Lnet/minecraft/class_1_1994;Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/class_2293$class_9445;
+		ARG 0 source
+		ARG 1 reader
 	METHOD method_9801 itemPredicate ()Lcom/mojang/brigadier/arguments/ArgumentType;
 	METHOD method_9804 getItemStackPredicate (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_2293$class_2295;
 		ARG 0 context
 		ARG 1 name
+	METHOD method_58522 (Lnet/minecraft/class_1799;)Z
+		ARG 0 stack
 	METHOD method_58523 (Lnet/minecraft/class_2096$class_2100;)Ljava/util/function/Predicate;
 		ARG 0 range
 	METHOD method_58524 (Lnet/minecraft/class_2096$class_2100;Lnet/minecraft/class_1799;)Z
@@ -41,6 +48,8 @@ CLASS net/minecraft/class_2293 net/minecraft/command/argument/ItemPredicateArgum
 		ARG 0 id
 	METHOD method_68548 (Ljava/util/List;)Lnet/minecraft/class_2293$class_2295;
 		ARG 0 predicates
+	METHOD method_75378 (Ljava/util/function/Predicate;Lnet/minecraft/class_3902;)Ljava/util/function/Predicate;
+		ARG 1 unit
 	METHOD method_75379 hasComponentCheck (Lnet/minecraft/class_6880$class_6883;)Lnet/minecraft/class_2293$class_9446;
 		ARG 0 type
 	METHOD method_75380 (Lnet/minecraft/class_6880$class_6883;Lnet/minecraft/class_1799;)Z
@@ -63,10 +72,20 @@ CLASS net/minecraft/class_2293 net/minecraft/command/argument/ItemPredicateArgum
 		METHOD method_58540 (Lnet/minecraft/class_9331;Ljava/lang/Object;Lnet/minecraft/class_1799;)Z
 			ARG 2 stack
 	CLASS class_9445 Context
+		FIELD field_1_12958 COMPONENT_ID_SUGGESTORS Lnet/minecraft/class_1_2013$class_1_2014;
+		FIELD field_1_12959 ITEM_ID_SUGGESTORS Lnet/minecraft/class_1_2013;
+		FIELD field_1_12960 TAG_SUGGESTORS Lnet/minecraft/class_1_2013;
+		FIELD field_1_12961 SUB_PREDICATE_ID_SUGGESTORS Lnet/minecraft/class_1_2013$class_1_2014;
+		FIELD field_1_12962 reader Lcom/mojang/brigadier/StringReader;
 		FIELD field_50066 itemRegistryWrapper Lnet/minecraft/class_7871;
 		FIELD field_50067 dataComponentTypeRegistryWrapper Lnet/minecraft/class_7871;
 		FIELD field_50068 itemSubPredicateTypeRegistryWrapper Lnet/minecraft/class_7871;
 		FIELD field_56366 registries Lnet/minecraft/class_7871$class_7872;
+		METHOD <init> (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/class_7871$class_7872;)V
+			ARG 1 reader
+			ARG 2 registries
+		METHOD method_1_12965 (Lnet/minecraft/class_9331;)Z
+			ARG 0 item
 		METHOD method_58545 (Lnet/minecraft/class_6880$class_6883;Lnet/minecraft/class_1799;)Z
 			ARG 1 stack
 		METHOD method_58546 (Lnet/minecraft/class_6885;Lnet/minecraft/class_1799;)Z

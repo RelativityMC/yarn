@@ -5,6 +5,23 @@ CLASS net/minecraft/class_12205 net/minecraft/world/attribute/WorldEnvironmentAt
 	METHOD method_1_8878 addModifiersFromWorld (Lnet/minecraft/class_12205$class_12314;Lnet/minecraft/class_1936;)V
 		ARG 0 builder
 		ARG 1 world
+	METHOD method_1_12913 formatBiomeContribution (Lnet/minecraft/class_12197;Lnet/minecraft/class_6880;)Ljava/lang/String;
+		ARG 0 attribute
+		ARG 1 biome
+	METHOD method_1_12914 formatModifier (Lnet/minecraft/class_12197;Lnet/minecraft/class_12310;Lnet/minecraft/class_243;)Ljava/lang/String;
+		ARG 0 attribute
+		ARG 1 func
+		ARG 2 pos
+	METHOD method_1_12915 explain (Lnet/minecraft/class_12197;Lnet/minecraft/class_243;Lnet/minecraft/class_12211;)Lnet/minecraft/class_1_2089;
+		ARG 1 attribute
+		ARG 2 pos
+		ARG 3 pool
+	METHOD method_1_12916 getFunctionKind (Lnet/minecraft/class_12310;)Ljava/lang/String;
+		ARG 0 func
+	METHOD method_1_12917 setDisabled (Lnet/minecraft/class_12197;IZ)V
+		ARG 1 attribute
+		ARG 2 index
+		ARG 3 disabled
 	METHOD method_76394 builder ()Lnet/minecraft/class_12205$class_12314;
 	METHOD method_76396 computeEntry (Lnet/minecraft/class_12197;Ljava/util/List;)Lnet/minecraft/class_12205$class_12315;
 		ARG 1 attribute
@@ -14,6 +31,7 @@ CLASS net/minecraft/class_12205 net/minecraft/world/attribute/WorldEnvironmentAt
 	METHOD method_76398 addModifiersFromBiomes (Lnet/minecraft/class_12205$class_12314;Lnet/minecraft/class_12197;Lnet/minecraft/class_1_1690;)V
 		ARG 0 builder
 		ARG 1 attribute
+		ARG 2 world
 	METHOD method_76399 addTimelinesFromWorld (Lnet/minecraft/class_12205$class_12314;Lnet/minecraft/class_1937;)V
 		ARG 0 builder
 		ARG 1 world
@@ -27,6 +45,7 @@ CLASS net/minecraft/class_12205 net/minecraft/world/attribute/WorldEnvironmentAt
 	METHOD method_76403 addModifiersFromBiomes (Lnet/minecraft/class_12205$class_12314;Lnet/minecraft/class_7225;Lnet/minecraft/class_1_1690;)V
 		ARG 0 builder
 		ARG 1 biome
+		ARG 2 world
 	METHOD method_76404 (Lnet/minecraft/class_6880$class_6883;)Ljava/util/stream/Stream;
 		ARG 0 biome
 	METHOD method_76405 tick ()V
@@ -39,6 +58,10 @@ CLASS net/minecraft/class_12205 net/minecraft/world/attribute/WorldEnvironmentAt
 		ARG 1 attribute
 	METHOD method_76409 getEntry (Lnet/minecraft/class_12197;)Lnet/minecraft/class_12205$class_12315;
 		ARG 1 attribute
+	CLASS class_1_2069 Biome
+		METHOD method_1_12918 getBiome (Lnet/minecraft/class_243;)Lnet/minecraft/class_6880;
+			ARG 1 pos
+	CLASS class_1_2070 FromModifier
 	CLASS class_12314 Builder
 		FIELD field_64322 modifications Ljava/util/Map;
 		METHOD method_1_8879 addTimelinesFromWorld (Lnet/minecraft/class_1937;)Lnet/minecraft/class_12205$class_12314;
@@ -75,6 +98,8 @@ CLASS net/minecraft/class_12205 net/minecraft/world/attribute/WorldEnvironmentAt
 			ARG 1 timeline
 			ARG 2 clocks
 	CLASS class_12315 Entry
+		FIELD field_1_12929 disabled Lit/unimi/dsi/fastutil/ints/IntSet;
+		FIELD field_1_12930 enabled Ljava/util/List;
 		FIELD field_64323 attribute Lnet/minecraft/class_12197;
 		FIELD field_64324 defaultValue Ljava/lang/Object;
 		FIELD field_64325 modifications Ljava/util/List;
@@ -86,6 +111,16 @@ CLASS net/minecraft/class_12205 net/minecraft/world/attribute/WorldEnvironmentAt
 			ARG 2 defaultValue
 			ARG 3 modifications
 			ARG 4 positional
+		METHOD method_1_12919 explain (Lnet/minecraft/class_243;Lnet/minecraft/class_12211;)Lnet/minecraft/class_1_2089;
+			ARG 1 pos
+			ARG 2 pool
+		METHOD method_1_12920 isDisabled (I)Z
+			ARG 1 modificationIndex
+		METHOD method_1_12921 (I)Z
+			ARG 1 index
+		METHOD method_1_12922 setDisabled (IZ)V
+			ARG 1 modificationIndex
+			ARG 2 disable
 		METHOD method_76421 tick ()V
 		METHOD method_76422 getAt (Lnet/minecraft/class_243;Lnet/minecraft/class_12211;)Ljava/lang/Object;
 			ARG 1 pos

@@ -12,3 +12,5 @@ CLASS net/minecraft/class_12328 net/minecraft/world/attribute/timeline/TrackAttr
 		ARG 4 track
 		ARG 5 interpolator
 		ARG 6 timeSupplier
+	METHOD method_1_12814 getModifiers ()Lnet/minecraft/class_12212;
+	METHOD method_1_12815 getValue ()Ljava/lang/Object;

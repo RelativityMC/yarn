@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_2203 net/minecraft/command/argument/NbtPathArgumentType
+	FIELD field_1_12827 INSTANCE Lnet/minecraft/class_2203;
+	FIELD field_1_12828 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_9898 EXAMPLES Ljava/util/Collection;
 	FIELD field_9899 NOTHING_FOUND_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	FIELD field_9900 INVALID_PATH_NODE_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;

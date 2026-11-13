@@ -1,0 +1,39 @@
+CLASS net/minecraft/class_1_2034 net/minecraft/loot/ValidationWrapper
+	COMMENT A {@link RegistryEntry registry entry} with a {@link ContextType loot context type}
+	COMMENT attached to it.
+	FIELD field_1_12853 RESOURCE_VALIDATION_FAILED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
+	FIELD field_1_12854 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_12855 contextType Lnet/minecraft/class_176;
+	FIELD field_1_12856 validated Z
+	FIELD field_1_12857 entry Lnet/minecraft/class_6880;
+	METHOD <init> (Lnet/minecraft/class_6880;Lnet/minecraft/class_176;)V
+		ARG 1 entry
+		ARG 2 contextType
+	METHOD method_1_12798 getIdAsStringOptional ()Ljava/util/Optional;
+	METHOD method_1_12799 reportErrors (Lnet/minecraft/class_8942;)V
+		ARG 1 reporter
+	METHOD method_1_12800 getEntry (Lnet/minecraft/class_176;)Lnet/minecraft/class_6880;
+		ARG 1 contextType
+	METHOD method_1_12801 validate ()V
+	CLASS class_1_2035 Provider
+		FIELD field_1_12858 VALIDATED Lnet/minecraft/class_1_2034$class_1_2035;
+		FIELD field_1_12859 UNVALIDATED Lnet/minecraft/class_1_2034$class_1_2035;
+		METHOD method_1_12802 create (Lnet/minecraft/class_6880;Lnet/minecraft/class_176;)Lnet/minecraft/class_1_2034;
+			ARG 1 entry
+			ARG 2 contextType
+		CLASS class_1_2036 DeferredValidating
+			FIELD field_1_12860 subtables Ljava/util/Map;
+			METHOD method_1_12803 validate (Lnet/minecraft/class_8942$class_8943;)V
+				ARG 1 reporter
+			CLASS class_1_2037 Subtable
+				FIELD field_1_12861 entry Lnet/minecraft/class_6880;
+				FIELD field_1_12862 wrappers Ljava/util/Map;
+				METHOD <init> (Lnet/minecraft/class_6880;)V
+					ARG 1 entry
+				METHOD method_1_12804 createNew (Lnet/minecraft/class_176;)Lnet/minecraft/class_1_2034;
+					ARG 1 contextType
+				METHOD method_1_12805 get (Lnet/minecraft/class_176;)Lnet/minecraft/class_1_2034;
+					ARG 1 contextType
+				METHOD method_1_12806 markValidated ()V
+				METHOD method_1_12807 reportErrors (Lnet/minecraft/class_8942;)V
+					ARG 1 reporter

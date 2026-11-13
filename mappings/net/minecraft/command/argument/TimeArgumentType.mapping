@@ -1,15 +1,26 @@
 CLASS net/minecraft/class_2245 net/minecraft/command/argument/TimeArgumentType
 	FIELD field_1_12443 TICK_COUNT_TOO_HIGH_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
+	FIELD field_1_12728 DEFAULT_MAX Ljava/lang/Integer;
+	FIELD field_1_12729 DEFAULT_MIN Ljava/lang/Integer;
+	FIELD field_1_12730 PACKET_CODEC Lnet/minecraft/class_9139;
+	FIELD field_1_12731 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
+	FIELD field_1_12732 bounds Lnet/minecraft/class_2096$class_11893;
 	FIELD field_9969 EXAMPLES Ljava/util/Collection;
 	FIELD field_9970 INVALID_UNIT_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_9972 UNITS Lit/unimi/dsi/fastutil/objects/Object2IntMap;
 	FIELD field_41857 TICK_COUNT_TOO_LOW_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
+	METHOD <init> (Lnet/minecraft/class_2096$class_11893;)V
+		ARG 1 bounds
 	METHOD method_1_12253 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 value
 		ARG 1 maximum
 	METHOD method_1_12254 time (II)Lcom/mojang/brigadier/arguments/ArgumentType;
 		ARG 0 minimum
 		ARG 1 maximum
+	METHOD method_1_12689 (Lnet/minecraft/class_2245;)Lnet/minecraft/class_2096$class_11893;
+		ARG 0 arg
+	METHOD method_1_12690 (Lnet/minecraft/class_2245;)Lnet/minecraft/class_2096$class_11893;
+		ARG 0 arg
 	METHOD method_1_12878 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 context
 		ARG 2 builder

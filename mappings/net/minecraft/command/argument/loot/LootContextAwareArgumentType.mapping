@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_2099 net/minecraft/command/argument/loot/LootContextAwareArgumentType
+	FIELD field_1_12990 contextType Lnet/minecraft/class_176;
+	METHOD <init> (Lnet/minecraft/class_5321;Lcom/mojang/serialization/Codec;Lnet/minecraft/class_176;)V
+		ARG 1 registry
+		ARG 2 entryCodec
+		ARG 3 contextType
+	METHOD method_1_13023 getArgument (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_1_2034;
+		ARG 0 context
+		ARG 1 name

@@ -6,6 +6,7 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 	FIELD field_1_9389 INSTANT_MS Lnet/minecraft/class_9139;
 	FIELD field_1_9391 RSA_PUBLIC_KEY_LENGTH I
 	FIELD field_1_9392 RSA_PUBLIC_KEY Lnet/minecraft/class_9139;
+	FIELD field_1_12685 PATTERN Lnet/minecraft/class_9139;
 	FIELD field_48547 BOOLEAN Lnet/minecraft/class_9139;
 		COMMENT A codec for a boolean value.
 		COMMENT
@@ -154,6 +155,8 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 		ARG 0 clazz
 		ARG 1 toId
 		ARG 2 fallback
+	METHOD method_1_12633 (Ljava/lang/String;)Ljava/util/regex/Pattern;
+		ARG 0 string
 	METHOD method_56363 toList ()Lnet/minecraft/class_9139$class_9140;
 		COMMENT Used to make a codec for a list of values using {@link PacketCodec#collect}.
 		COMMENT This creates an {@link java.util.ArrayList}, so the decoded result can be modified.
@@ -400,3 +403,6 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 			ARG 0 buf1
 	CLASS 38 38
 		FIELD field_60514 GSON Lcom/google/gson/Gson;
+	CLASS class_1_2002 RegistryCodec
+		METHOD method_1_12636 getElements (Lnet/minecraft/class_1_2004;)Lnet/minecraft/class_2359;
+			ARG 1 indexedRegistryHolder

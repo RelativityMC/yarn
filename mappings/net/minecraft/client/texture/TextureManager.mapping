@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_1060 net/minecraft/client/texture/TextureManager
+	FIELD field_1_12870 missingTexture Lnet/minecraft/class_1_1777;
 	FIELD field_5286 textures Ljava/util/Map;
 	FIELD field_5287 resourceContainer Lnet/minecraft/class_3300;
 	FIELD field_5288 LOGGER Lorg/slf4j/Logger;
@@ -7,13 +8,47 @@ CLASS net/minecraft/class_1060 net/minecraft/client/texture/TextureManager
 	METHOD method_1_11172 registerTextureProvider (Lnet/minecraft/class_2960;Lnet/minecraft/class_1_1772;)V
 		ARG 1 id
 		ARG 2 provider
+	METHOD method_1_12825 (Lnet/minecraft/class_2960;Lnet/minecraft/class_1060$class_1_2042;)V
+		ARG 0 id
+		ARG 1 entry
+	METHOD method_1_12826 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1060$class_1_2042;
+		ARG 0 id1
+	METHOD method_1_12828 (Lnet/minecraft/class_2960;Lnet/minecraft/class_1060$class_1_2042;)V
+		ARG 0 id
+		ARG 1 entry
 	METHOD method_4615 destroyTexture (Lnet/minecraft/class_2960;)V
 		ARG 1 id
 	METHOD method_4619 getTexture (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_1762;
 		ARG 1 id
 	METHOD method_30299 closeTexture (Lnet/minecraft/class_2960;Lnet/minecraft/class_1060$class_1_2042;)V
 		ARG 1 id
+		ARG 2 entry
 	METHOD method_49715 dumpDynamicTextures (Ljava/nio/file/Path;)V
 		ARG 1 path
 	METHOD method_49718 (Ljava/nio/file/Path;Lnet/minecraft/class_2960;Lnet/minecraft/class_1060$class_1_2042;)V
 		ARG 1 id
+		ARG 2 entry
+	METHOD method_65879 (Ljava/util/List;Lnet/minecraft/class_3300;Ljava/util/concurrent/Executor;Lnet/minecraft/class_2960;Lnet/minecraft/class_1060$class_1_2042;)V
+		ARG 3 id
+		ARG 4 entry
+	CLASS class_1_2042 Entry
+		FIELD field_1_12871 handle Lnet/minecraft/class_1_1762;
+		FIELD field_1_12872 id Lnet/minecraft/class_2960;
+		FIELD field_1_12873 reloadFuture Ljava/util/concurrent/CompletableFuture;
+		FIELD field_1_12874 provider Lnet/minecraft/class_1_1772;
+		METHOD <init> (Lnet/minecraft/class_2960;Lnet/minecraft/class_1_1772;Lnet/minecraft/class_1_1762;)V
+			ARG 1 id
+			ARG 2 provider
+			ARG 3 handle
+		METHOD method_1_12829 save (Ljava/nio/file/Path;)V
+			ARG 1 path
+		METHOD method_1_12830 finishReload ()V
+		METHOD method_1_12832 load (Lnet/minecraft/class_3300;)Lnet/minecraft/class_1_1772$class_1_2051;
+			ARG 1 resourceManager
+		METHOD method_1_12833 loadOrMissing (Lnet/minecraft/class_3300;)Lnet/minecraft/class_1_1772$class_1_2051;
+			ARG 1 resourceManager
+		METHOD method_1_12834 upload (Lnet/minecraft/class_3300;)V
+			ARG 1 resourceManager
+		METHOD method_1_12835 reload (Lnet/minecraft/class_3300;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;
+			ARG 1 resourceManager
+			ARG 2 executor

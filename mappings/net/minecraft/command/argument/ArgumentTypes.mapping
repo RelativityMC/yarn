@@ -1,2 +1,5 @@
 CLASS net/minecraft/class_2316 net/minecraft/command/argument/ArgumentTypes
+	FIELD field_1_12950 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_12951 PACKET_CODEC Lnet/minecraft/class_9139;
 	METHOD method_10015 register (Lnet/minecraft/class_2385;)V
+		ARG 0 registry

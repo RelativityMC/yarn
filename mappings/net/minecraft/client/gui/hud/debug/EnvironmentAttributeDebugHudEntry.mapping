@@ -1,0 +1,24 @@
+CLASS net/minecraft/class_1_2109 net/minecraft/client/gui/hud/debug/EnvironmentAttributeDebugHudEntry
+	FIELD field_1_13007 GROUP Lnet/minecraft/class_1_1716;
+	FIELD field_1_13008 MAX_LINE_CODEPOINTS I
+	FIELD field_1_13009 attribute Lnet/minecraft/class_12197;
+	METHOD method_1_13046 addModifierLine (Lnet/minecraft/class_11630;Lnet/minecraft/class_327;Ljava/lang/String;Ljava/lang/String;)V
+		ARG 0 lines
+		ARG 1 textRenderer
+		ARG 2 label
+		ARG 3 details
+	METHOD method_1_13047 addValueLine (Lnet/minecraft/class_11630;Lnet/minecraft/class_327;Ljava/lang/String;Ljava/lang/Object;I)V
+		ARG 0 lines
+		ARG 1 textRenderer
+		ARG 2 label
+		ARG 3 value
+		ARG 4 maxLength
+	METHOD method_1_13048 createValueFact (Ljava/lang/String;Ljava/lang/String;I)Lnet/minecraft/class_1_1714;
+		ARG 0 label
+		ARG 1 value
+		ARG 2 maxLength
+	METHOD method_1_13049 getAttribute ()Lnet/minecraft/class_12197;
+	METHOD method_1_13050 (Lnet/minecraft/class_12197;Lnet/minecraft/class_1_1714;)V
+		ARG 1 builder
+	METHOD method_1_13051 setAttribute (Lnet/minecraft/class_12197;)V
+		ARG 0 attribute

@@ -7,3 +7,7 @@ CLASS net/minecraft/class_12207 net/minecraft/util/math/WeightedInterpolation
 		ARG 1 accum
 	CLASS class_12208 Accumulator
 		METHOD method_1_144 accumulate (IIID)V
+			ARG 1 x
+			ARG 2 y
+			ARG 3 z
+			ARG 4 weight

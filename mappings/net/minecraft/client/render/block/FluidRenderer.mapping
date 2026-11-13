@@ -4,16 +4,27 @@ CLASS net/minecraft/class_775 net/minecraft/client/render/block/FluidRenderer
 	METHOD <init> (Lnet/minecraft/class_1_478;)V
 		ARG 1 models
 	METHOD method_1_2989 quad (Lnet/minecraft/class_11515;Lnet/minecraft/class_775$class_1_473;FFFLorg/joml/Vector3fc;FFLorg/joml/Vector3fc;FFLorg/joml/Vector3fc;FFLorg/joml/Vector3fc;FFIIILnet/minecraft/class_2350;Z)V
+		ARG 1 blockRenderLayer
+		ARG 2 blockVertexConsumers
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 pos0
 		ARG 7 u0
 		ARG 8 v0
+		ARG 9 pos1
 		ARG 10 u1
 		ARG 11 v1
+		ARG 12 pos2
 		ARG 13 u2
 		ARG 14 v2
+		ARG 15 pos3
 		ARG 16 u3
 		ARG 17 v3
-		ARG 18 color
+		ARG 18 tint
+		ARG 19 brightness
 		ARG 20 light
+		ARG 21 direction
 		ARG 22 twoSided
 	METHOD method_3343 getLight (Lnet/minecraft/class_1_393;Lnet/minecraft/class_2338;)I
 		ARG 1 blockRenderView
@@ -73,3 +84,12 @@ CLASS net/minecraft/class_775 net/minecraft/client/render/block/FluidRenderer
 		ARG 1 weightedAverageHeight
 		ARG 2 height
 	CLASS class_1_473 BlockVertexConsumerProvider
+		METHOD method_1_12785 accept (Lnet/minecraft/class_11515;FFFLnet/minecraft/class_777;III)V
+			ARG 1 blockRenderLayer
+			ARG 2 x
+			ARG 3 y
+			ARG 4 z
+			ARG 5 quad
+			ARG 6 tin
+			ARG 7 brightness
+			ARG 8 light

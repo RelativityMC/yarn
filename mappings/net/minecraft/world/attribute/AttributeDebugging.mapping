@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_1_2077 net/minecraft/world/attribute/AttributeDebugging
+	METHOD method_1_12952 explain (Lnet/minecraft/class_1937;Lnet/minecraft/class_12197;Lnet/minecraft/class_243;)Lnet/minecraft/class_1_2089;
+		ARG 0 world
+		ARG 1 attribute
+		ARG 2 pos
+	METHOD method_1_12953 setDisabled (Lnet/minecraft/class_1937;Lnet/minecraft/class_12197;IZ)V
+		ARG 0 world
+		ARG 1 attribute
+		ARG 2 index
+		ARG 3 disabled

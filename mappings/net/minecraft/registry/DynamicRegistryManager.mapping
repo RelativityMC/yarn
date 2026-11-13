@@ -30,6 +30,8 @@ CLASS net/minecraft/class_5455 net/minecraft/registry/DynamicRegistryManager
 			ARG 1 entryStream
 		METHOD method_45943 (Lnet/minecraft/class_2378;)Lnet/minecraft/class_2378;
 			ARG 0 registry
+		METHOD method_63537 (Lnet/minecraft/class_2378;)Lnet/minecraft/class_2378;
+			ARG 0 registry
 	CLASS class_6892 Entry
 		METHOD method_40330 of (Ljava/util/Map$Entry;)Lnet/minecraft/class_5455$class_6892;
 			ARG 0 entry
@@ -38,3 +40,5 @@ CLASS net/minecraft/class_5455 net/minecraft/registry/DynamicRegistryManager
 			ARG 1 value
 		METHOD method_40332 freeze ()Lnet/minecraft/class_5455$class_6892;
 	CLASS class_7781 Immutablized
+		METHOD <init> (Lnet/minecraft/class_5455;Ljava/util/stream/Stream;)V
+			ARG 2 entryStream

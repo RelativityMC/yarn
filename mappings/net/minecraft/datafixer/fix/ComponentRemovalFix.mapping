@@ -1,0 +1,19 @@
+CLASS net/minecraft/class_1_2068 net/minecraft/datafixer/fix/ComponentRemovalFix
+	FIELD field_1_12923 componentToRemove Ljava/lang/String;
+	FIELD field_1_12924 name Ljava/lang/String;
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 outputSchema
+		ARG 2 name
+		ARG 3 componentToRemove
+	METHOD method_1_12903 fixTooltipDisplay (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 tooltipDisplay
+	METHOD method_1_12904 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 hiddenComponents
+	METHOD method_1_12905 (Lcom/mojang/serialization/Dynamic;Ljava/util/stream/Stream;)Lcom/mojang/serialization/Dynamic;
+		ARG 2 componentsStream
+	METHOD method_1_12906 (Lcom/mojang/serialization/Dynamic;)Z
+		ARG 1 component
+	METHOD method_1_12907 (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 1 dataComponents
+	METHOD method_1_12908 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 dynamic

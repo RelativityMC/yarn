@@ -12,5 +12,7 @@ CLASS net/minecraft/class_11980 net/minecraft/network/PacketApplyBatcher
 	METHOD method_74449 apply ()V
 	CLASS class_1_1824 class_1_1824
 		METHOD method_59807 onPacketException (Lnet/minecraft/class_2596;Ljava/lang/Exception;)V
+			ARG 1 packet
+			ARG 2 ex
 	CLASS class_11981 Entry
 		METHOD method_74450 apply ()V

@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_2078 net/minecraft/command/argument/loot/LootIntProviderArgumentType
+	FIELD field_1_12955 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
+	METHOD <init> (Lnet/minecraft/class_176;)V
+		ARG 1 contextType
+	METHOD method_1_12958 get (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_1_2034;
+		ARG 0 context
+		ARG 1 name
+	METHOD method_1_12959 of (Lnet/minecraft/class_176;)Lcom/mojang/brigadier/arguments/ArgumentType;
+		ARG 0 contextType

@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_7737 net/minecraft/command/argument/RegistryEntryPredicateArgumentType
+	FIELD field_1_12908 PACKET_CODEC Lnet/minecraft/class_9139;
+	FIELD field_1_12909 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_40417 EXAMPLES Ljava/util/Collection;
 	FIELD field_40418 NOT_FOUND_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
 	FIELD field_40419 WRONG_TYPE_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic3CommandExceptionType;
@@ -8,6 +10,12 @@ CLASS net/minecraft/class_7737 net/minecraft/command/argument/RegistryEntryPredi
 	METHOD method_1_12878 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 context
 		ARG 2 builder
+	METHOD method_1_12891 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_12892 (Lnet/minecraft/class_7737;)Lnet/minecraft/class_5321;
+		ARG 0 arg
+	METHOD method_1_12893 (Lnet/minecraft/class_7737;)Lnet/minecraft/class_5321;
+		ARG 0 arg
 	METHOD method_45632 (Lnet/minecraft/class_5321;Lnet/minecraft/class_6880$class_6883;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
 		ARG 1 entry
 	METHOD method_45633 (Lnet/minecraft/class_5321;Lnet/minecraft/class_6885$class_6888;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;

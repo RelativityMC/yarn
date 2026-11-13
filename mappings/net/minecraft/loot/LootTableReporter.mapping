@@ -25,6 +25,7 @@ CLASS net/minecraft/class_58 net/minecraft/loot/LootTableReporter
 		ARG 2 key
 	METHOD method_1_8890 isInStack (Lnet/minecraft/class_6862;)Z
 		ARG 1 key
+	METHOD method_1_12923 getContextType ()Lnet/minecraft/class_176;
 	METHOD method_360 report (Lnet/minecraft/class_8942$class_1_1992;)V
 		ARG 1 error
 	METHOD method_364 makeChild (Lnet/minecraft/class_8942$class_11336;)Lnet/minecraft/class_58;

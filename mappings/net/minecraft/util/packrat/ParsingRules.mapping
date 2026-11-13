@@ -1,5 +1,9 @@
 CLASS net/minecraft/class_9389 net/minecraft/util/packrat/ParsingRules
 	FIELD field_49960 rules Ljava/util/Map;
+	METHOD method_1_12694 set (Lnet/minecraft/class_9387;Lnet/minecraft/class_9402;Lnet/minecraft/class_9396$class_1_2000;)Lnet/minecraft/class_10842;
+		ARG 1 symbol
+		ARG 2 term
+		ARG 3 action
 	METHOD method_58300 get (Lnet/minecraft/class_9387;)Lnet/minecraft/class_10842;
 		ARG 1 symbol
 	METHOD method_58301 set (Lnet/minecraft/class_9387;Lnet/minecraft/class_9396;)Lnet/minecraft/class_10842;

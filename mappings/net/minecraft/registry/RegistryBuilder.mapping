@@ -28,6 +28,8 @@ CLASS net/minecraft/class_7877 net/minecraft/registry/RegistryBuilder
 	METHOD method_55290 createWrapperLookup (Lnet/minecraft/class_7225$class_7874;Ljava/util/stream/Stream;)Lnet/minecraft/class_7225$class_7874;
 		ARG 0 registries
 		ARG 1 wrappers
+	METHOD method_55295 (Ljava/util/Set;Lnet/minecraft/class_5321;)Z
+		ARG 1 key
 	CLASS class_1_1191 BootstrappedRegistry
 		METHOD method_1_7610 applyRegisteredValues ()V
 		METHOD method_1_7611 create (Lnet/minecraft/class_5321;Lcom/mojang/serialization/Lifecycle;)Lnet/minecraft/class_7877$class_1_1191;

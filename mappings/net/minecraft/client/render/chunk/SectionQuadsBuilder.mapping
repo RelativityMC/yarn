@@ -1,0 +1,45 @@
+CLASS net/minecraft/class_1_2019 net/minecraft/client/render/chunk/SectionQuadsBuilder
+	FIELD field_1_12739 MAX_VERTICES I
+	FIELD field_1_12740 NOT_FOUND I
+	FIELD field_1_12741 quadIndices Lit/unimi/dsi/fastutil/objects/Object2IntMap;
+	FIELD field_1_12742 quads Ljava/util/ArrayList;
+	FIELD field_1_12743 bufferAllocator Lnet/minecraft/class_9799;
+	FIELD field_1_12744 building Z
+	FIELD field_1_12745 blockRenderLayer Lnet/minecraft/class_11515;
+	FIELD field_1_12746 drawMode Lnet/minecraft/class_5596;
+	FIELD field_1_12747 vertices I
+	METHOD <init> (Lnet/minecraft/class_9799;Lnet/minecraft/class_5596;Lnet/minecraft/class_11515;)V
+		ARG 1 bufferAllocator
+		ARG 2 drawMode
+		ARG 3 blockRenderLayer
+	METHOD method_1_12703 addQuad (FFFLnet/minecraft/class_777;III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 quad
+		ARG 5 tint
+		ARG 6 brightness
+		ARG 7 light
+	METHOD method_1_12704 addQuad (FFFLnet/minecraft/class_777;Lnet/minecraft/class_1_382;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 quad
+		ARG 5 shading
+	METHOD method_1_12705 addQuad (Lnet/minecraft/class_777;FFFIIJ)V
+		ARG 1 quad
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 tint
+		ARG 6 packedBrightness
+		ARG 7 packedLight
+	METHOD method_1_12706 finish ()Lnet/minecraft/class_9801;
+	METHOD method_1_12707 assertBuilding ()V
+	METHOD method_1_12708 getIndexOrAdd (Lnet/minecraft/class_777;)I
+		ARG 1 quad
+	METHOD method_1_12709 encodeCoord (F)I
+		ARG 0 coord
+	METHOD method_1_12710 buildBuffer ()Lnet/minecraft/class_9801;
+	METHOD method_1_12711 writeQuadToBuffer (Lnet/minecraft/class_777;)V
+		ARG 1 quad

@@ -1,0 +1,14 @@
+CLASS net/minecraft/class_1_2001 net/minecraft/data/report/LootContextRequirementsProvider
+	FIELD field_1_12683 dataOutput Lnet/minecraft/class_7784;
+	FIELD field_1_12684 registriesFuture Ljava/util/concurrent/CompletableFuture;
+	METHOD <init> (Lnet/minecraft/class_7784;Ljava/util/concurrent/CompletableFuture;)V
+		ARG 1 dataOutput
+		ARG 2 registriesFuture
+	METHOD method_1_12629 toJson (Lnet/minecraft/class_7225$class_7226;)Lcom/google/gson/JsonElement;
+		ARG 0 contextKeySets
+	METHOD method_1_12630 (Lcom/google/gson/JsonObject;Lnet/minecraft/class_6880$class_6883;)V
+		ARG 1 entry
+	METHOD method_1_12631 (Lnet/minecraft/class_7403;Lnet/minecraft/class_7225$class_7874;)Ljava/util/concurrent/CompletionStage;
+		ARG 2 registries
+	METHOD method_1_12632 toJsonArray (Ljava/util/Set;)Lcom/google/gson/JsonElement;
+		ARG 0 contextParameters

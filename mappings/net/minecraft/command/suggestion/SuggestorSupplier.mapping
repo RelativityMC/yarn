@@ -1,0 +1,27 @@
+CLASS net/minecraft/class_1_2013 net/minecraft/command/suggestion/SuggestorSupplier
+	FIELD field_1_12738 CANONICAL Lnet/minecraft/class_1_2013;
+	METHOD method_1_12695 get ()Lnet/minecraft/class_2172$class_1_2048;
+	CLASS class_1_2014 Sequence
+		METHOD method_1_12696 (Lnet/minecraft/class_2172$class_1_2048;Lnet/minecraft/class_2172$class_1_2048;Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+			ARG 2 context
+			ARG 3 builder
+	CLASS class_1_2015 Identifiers
+		METHOD method_1_12697 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+			ARG 1 context
+			ARG 2 builder
+	CLASS class_1_2016 Matching
+		METHOD method_1_12698 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+			ARG 1 context
+			ARG 2 builder
+	CLASS class_1_2017 ElementIds
+		METHOD <init> (Lnet/minecraft/class_5321;)V
+			ARG 1 registry
+		METHOD method_1_12699 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+			ARG 1 context
+			ARG 2 builder
+		METHOD method_1_12700 (Ljava/lang/Object;)Z
+			ARG 0 elem
+	CLASS class_1_2018 TagsWithoutPrefixIds
+		METHOD method_1_12701 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+			ARG 1 context
+			ARG 2 builder

@@ -1,0 +1,27 @@
+CLASS net/minecraft/class_1_2107 net/minecraft/client/render/debug/EnvironmentAttributeDebugRenderer
+	FIELD field_1_12997 ATTRIBUTE_DISPLAY_BLOCK_RANGE I
+	FIELD field_1_12998 attribute Lnet/minecraft/class_12197;
+	FIELD field_1_12999 pos Lnet/minecraft/class_2338;
+	FIELD field_1_13000 time J
+	FIELD field_1_13001 world Lnet/minecraft/class_1937;
+	FIELD field_1_13002 lastDisplayState Ljava/util/List;
+	FIELD field_1_13003 client Lnet/minecraft/class_310;
+	METHOD <init> (Lnet/minecraft/class_310;)V
+		ARG 1 client
+	METHOD method_1_13039 convertToColor (Ljava/lang/Object;)I
+		ARG 0 value
+	METHOD method_1_13040 hide ()V
+	METHOD method_1_13041 getDisplayState (Lnet/minecraft/class_1937;Lnet/minecraft/class_12197;Lnet/minecraft/class_2338;)Ljava/util/List;
+		ARG 1 world
+		ARG 2 attribute
+		ARG 3 pos
+	METHOD method_1_13042 renderAttributeDisplay (Lnet/minecraft/class_1937;Lnet/minecraft/class_12197;Lnet/minecraft/class_2338;)V
+		ARG 1 world
+		ARG 2 attribute
+		ARG 3 pos
+	METHOD method_1_13043 getAttributeValue (Lnet/minecraft/class_1937;Lnet/minecraft/class_12197;Lnet/minecraft/class_2338;Lnet/minecraft/class_12211;)Ljava/lang/Object;
+		ARG 0 world
+		ARG 1 attribute
+		ARG 2 pos
+		ARG 3 pool
+	CLASS class_1_2108 DisplayedPos

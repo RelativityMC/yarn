@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_7918 net/minecraft/command/argument/GameModeArgumentType
+	FIELD field_1_12831 INSTANCE Lnet/minecraft/class_7918;
+	FIELD field_1_12832 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_41088 EXAMPLES Ljava/util/Collection;
 	FIELD field_41089 VALUES [Lnet/minecraft/class_1934;
 	FIELD field_41090 INVALID_GAME_MODE_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;

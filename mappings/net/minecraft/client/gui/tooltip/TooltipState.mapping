@@ -12,6 +12,7 @@ CLASS net/minecraft/class_9110 net/minecraft/client/gui/tooltip/TooltipState
 		ARG 1 focus
 		ARG 2 hovered
 		ARG 3 focused
+		ARG 4 hoveredPositioning
 	METHOD method_56141 setDelay (Ljava/time/Duration;)V
 		ARG 1 delay
 	METHOD method_56142 render (Lnet/minecraft/class_332;IIZZLnet/minecraft/class_8030;)V

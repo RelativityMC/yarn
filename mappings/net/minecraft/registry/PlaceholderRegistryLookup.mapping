@@ -1,0 +1,27 @@
+CLASS net/minecraft/class_1_2005 net/minecraft/registry/PlaceholderRegistryLookup
+	FIELD field_1_12705 registries Ljava/util/Map;
+	METHOD <init> (Ljava/util/Map;)V
+		ARG 1 registries
+	METHOD method_1_12669 wrap (Ljava/util/stream/Stream;Lnet/minecraft/class_1_2005$class_1_2007;)Lnet/minecraft/class_7871$class_7872;
+		ARG 0 registryKeys
+		ARG 1 filter
+	METHOD method_1_12670 createLookup (Lnet/minecraft/class_1_2005$class_1_2007;)Lnet/minecraft/class_7871;
+		ARG 0 filter
+	METHOD method_1_12671 (Lnet/minecraft/class_5321;)Lnet/minecraft/class_5321;
+		ARG 0 key
+	METHOD method_1_12672 (Lnet/minecraft/class_1_2005$class_1_2007;Lnet/minecraft/class_5321;)Lnet/minecraft/class_7871;
+		ARG 1 key
+	CLASS class_1_2006 EmptyLookup
+	CLASS class_1_2007 Filter
+	CLASS class_1_2008 PlaceholderEntry
+		METHOD <init> (Lnet/minecraft/class_7876;Lnet/minecraft/class_5321;)V
+			ARG 1 owner
+			ARG 2 key
+	CLASS class_1_2009 PlaceholderLookup
+		FIELD field_1_12708 entryListsByTag Ljava/util/Map;
+		FIELD field_1_12709 entriesByKey Ljava/util/Map;
+		METHOD method_1_12674 (Lnet/minecraft/class_5321;)Lnet/minecraft/class_6880$class_6883;
+			ARG 1 k
+		METHOD method_1_12675 (Lnet/minecraft/class_6862;)Lnet/minecraft/class_6885$class_6888;
+			ARG 1 t
+	CLASS class_1_2010 PlaceholderTag

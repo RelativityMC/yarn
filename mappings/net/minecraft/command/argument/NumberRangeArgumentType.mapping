@@ -2,6 +2,8 @@ CLASS net/minecraft/class_2224 net/minecraft/command/argument/NumberRangeArgumen
 	METHOD method_9422 intRange ()Lcom/mojang/brigadier/arguments/ArgumentType;
 	METHOD method_30918 floatRange ()Lcom/mojang/brigadier/arguments/ArgumentType;
 	CLASS class_2225 FloatRangeArgumentType
+		FIELD field_1_12764 INSTANCE Lnet/minecraft/class_2224$class_2225;
+		FIELD field_1_12765 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 		FIELD field_9937 EXAMPLES Ljava/util/Collection;
 		METHOD method_1_12884 (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
 			ARG 1 reader
@@ -9,6 +11,8 @@ CLASS net/minecraft/class_2224 net/minecraft/command/argument/NumberRangeArgumen
 			ARG 0 context
 			ARG 1 name
 	CLASS class_2227 IntRangeArgumentType
+		FIELD field_1_12766 INSTANCE Lnet/minecraft/class_2224$class_2227;
+		FIELD field_1_12767 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 		FIELD field_9938 EXAMPLES Ljava/util/Collection;
 		METHOD method_1_12884 (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
 			ARG 1 reader

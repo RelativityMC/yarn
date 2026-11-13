@@ -328,6 +328,9 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 3 onGround
 		ARG 4 landingBlockState
 		ARG 5 landingPos
+	METHOD method_1_12200 seedDeterministically (Lnet/minecraft/class_5819;)V
+		ARG 1 random
+	METHOD method_1_12577 getControllingEntity ()Lnet/minecraft/class_1297;
 	METHOD method_5622 onBlockCollision (Lnet/minecraft/class_2680;Ljava/util/function/BooleanSupplier;)V
 		COMMENT Called when this entity's collision box intersects {@code state}.
 		COMMENT

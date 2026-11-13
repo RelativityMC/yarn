@@ -3,6 +3,15 @@ CLASS net/minecraft/class_5252 net/minecraft/server/command/AttributeCommand
 	FIELD field_24377 NO_ATTRIBUTE_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
 	FIELD field_24378 NO_MODIFIER_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic3CommandExceptionType;
 	FIELD field_24379 MODIFIER_ALREADY_PRESENT_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic3CommandExceptionType;
+	METHOD method_1_12721 (Lnet/minecraft/class_6880;Lnet/minecraft/class_1297;)Ljava/util/stream/Stream;
+		ARG 1 entity
+	METHOD method_1_12722 (Lnet/minecraft/class_1324;)Ljava/util/stream/Stream;
+		ARG 0 instance
+	METHOD method_1_12723 (Lnet/minecraft/server/MinecraftServer;Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 server
+		ARG 1 context
+		ARG 2 suggestionsBuilder
+	METHOD method_1_12724 suggestAttributeIds ()Lcom/mojang/brigadier/suggestion/SuggestionProvider;
 	METHOD method_27733 getLivingEntity (Lnet/minecraft/class_1297;)Lnet/minecraft/class_1309;
 		ARG 0 entity
 	METHOD method_27734 getAttributeInstance (Lnet/minecraft/class_1297;Lnet/minecraft/class_6880;)Lnet/minecraft/class_1324;
@@ -86,6 +95,7 @@ CLASS net/minecraft/class_5252 net/minecraft/server/command/AttributeCommand
 	METHOD method_65091 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_65093 streamModifiers (Ljava/util/stream/Stream;Lnet/minecraft/class_6880;)Ljava/util/stream/Stream;
+		ARG 0 targets
 		ARG 1 attribute
 	METHOD method_65094 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context

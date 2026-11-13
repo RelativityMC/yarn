@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_2106 net/minecraft/network/packet/s2c/play/AddEntityMotionS2CPacket
+	FIELD field_1_12994 CODEC Lnet/minecraft/class_9139;

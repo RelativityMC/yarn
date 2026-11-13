@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_173 net/minecraft/loot/context/LootContextTypes
+	FIELD field_1_13006 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_45856 CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_1_753 (Lnet/minecraft/class_176$class_177;)V
 		ARG 0 builder
@@ -22,6 +23,10 @@ CLASS net/minecraft/class_173 net/minecraft/loot/context/LootContextTypes
 		ARG 0 type
 		ARG 1 key
 	METHOD method_1_10479 assertGenericContainsAllParams ()V
+	METHOD method_1_13044 (Lnet/minecraft/class_176$class_177;)V
+		ARG 0 builder
+	METHOD method_1_13045 (Lnet/minecraft/class_176$class_177;)V
+		ARG 0 builder
 	METHOD method_755 (Lnet/minecraft/class_176$class_177;)V
 		ARG 0 builder
 	METHOD method_758 (Lnet/minecraft/class_176$class_177;)V

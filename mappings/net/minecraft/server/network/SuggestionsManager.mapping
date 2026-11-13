@@ -4,6 +4,7 @@ CLASS net/minecraft/class_1_1361 net/minecraft/server/network/SuggestionsManager
 	FIELD field_1_9245 recompute Z
 	FIELD field_1_9246 queuedTask Ljava/util/concurrent/atomic/AtomicReference;
 	FIELD field_1_9247 player Lnet/minecraft/class_3222;
+	FIELD field_1_9515 LOGGER Lorg/slf4j/Logger;
 	METHOD <init> (Lnet/minecraft/class_3222;)V
 		ARG 1 player
 	METHOD method_1_8908 (Lnet/minecraft/class_1_1361$class_1_1362;Lcom/mojang/brigadier/suggestion/Suggestions;)V

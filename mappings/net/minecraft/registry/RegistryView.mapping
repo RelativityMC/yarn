@@ -17,6 +17,7 @@ CLASS net/minecraft/class_7225 net/minecraft/registry/RegistryView
 		METHOD method_56882 withPredicateFilter (Ljava/util/function/Predicate;)Lnet/minecraft/class_7225$class_7226;
 			ARG 1 predicate
 		CLASS 1 1
+			FIELD field_40932 base Lnet/minecraft/class_7225$class_7226;
 			METHOD method_46756 (Ljava/util/function/Predicate;Lnet/minecraft/class_6880$class_6883;)Z
 				ARG 1 entry
 			METHOD method_46757 (Ljava/util/function/Predicate;Lnet/minecraft/class_6880$class_6883;)Z
@@ -24,6 +25,10 @@ CLASS net/minecraft/class_7225 net/minecraft/registry/RegistryView
 		CLASS class_7875 Delegating
 			METHOD comp_1_1258 getBase ()Lnet/minecraft/class_7225$class_7226;
 	CLASS class_7874 WrapperLookup
+		METHOD method_1_12551 withFeatureFilter (Lnet/minecraft/class_7699;)Lnet/minecraft/class_7225$class_7874;
+			ARG 1 features
+		METHOD method_1_12552 (Lnet/minecraft/class_7699;Lnet/minecraft/class_7225$class_7226;)Lnet/minecraft/class_7225$class_7226;
+			ARG 1 entry
 		METHOD method_46760 (Lnet/minecraft/class_7225$class_7226;)Lnet/minecraft/class_7225$class_7226;
 			ARG 0 wrapper
 		METHOD method_46761 of (Ljava/util/stream/Stream;)Lnet/minecraft/class_7225$class_7874;

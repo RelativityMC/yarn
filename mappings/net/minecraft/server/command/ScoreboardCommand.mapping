@@ -110,6 +110,11 @@ CLASS net/minecraft/class_3115 net/minecraft/server/command/ScoreboardCommand
 		ARG 1 total
 		ARG 2 objective
 		ARG 3 score
+	METHOD method_1_12770 (Lnet/minecraft/server/MinecraftServer;Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 server
+		ARG 1 context
+		ARG 2 suggestionsBuilder
+	METHOD method_1_12771 suggestObjectives ()Lcom/mojang/brigadier/suggestion/SuggestionProvider;
 	METHOD method_13574 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_13575 executeReset (Lnet/minecraft/class_2168;Ljava/util/Collection;)I
@@ -216,7 +221,9 @@ CLASS net/minecraft/class_3115 net/minecraft/server/command/ScoreboardCommand
 		ARG 3 displayName
 	METHOD method_13612 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
-	METHOD method_13613 suggestDisabled (Lnet/minecraft/server/MinecraftServer;Ljava/util/stream/Stream;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+	METHOD method_13613 suggestObjectives (Lnet/minecraft/server/MinecraftServer;Ljava/util/stream/Stream;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 server
+		ARG 1 targets
 		ARG 2 builder
 	METHOD method_13614 executeListScores (Lnet/minecraft/class_2168;Lnet/minecraft/class_9015;)I
 		ARG 0 source

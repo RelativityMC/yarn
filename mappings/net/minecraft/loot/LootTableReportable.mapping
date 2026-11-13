@@ -53,5 +53,23 @@ CLASS net/minecraft/class_1_38 net/minecraft/loot/LootTableReportable
 		ARG 1 key
 		ARG 2 entries
 		ARG 3 minCount
+	METHOD method_1_12809 (Lnet/minecraft/class_58;Ljava/lang/String;Lnet/minecraft/class_6880;)V
+		ARG 2 condition
+	METHOD method_1_12810 reportCondition (Lnet/minecraft/class_58;Ljava/lang/String;Ljava/util/Optional;)V
+		ARG 0 reporter
+		ARG 1 key
+		ARG 2 condition
+	METHOD method_1_12811 reportCondition (Lnet/minecraft/class_58;Ljava/lang/String;Lnet/minecraft/class_6880;)V
+		ARG 0 reporter
+		ARG 1 key
+		ARG 2 condition
+	METHOD method_1_12812 isConditionPossible (Lnet/minecraft/class_58;Ljava/lang/String;Ljava/util/Optional;)Z
+		ARG 0 reporter
+		ARG 1 key
+		ARG 2 condition
+	METHOD method_1_12813 isConditionPossible (Lnet/minecraft/class_58;Ljava/lang/String;Lnet/minecraft/class_6880;)Z
+		ARG 0 reporter
+		ARG 1 key
+		ARG 2 condition
 	METHOD method_292 report (Lnet/minecraft/class_58;)V
 		ARG 1 reporter

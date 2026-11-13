@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_1303 net/minecraft/entity/ExperienceOrbEntity
+	FIELD field_1_12427 velocityRandom Lnet/minecraft/class_5819;
 	FIELD field_6161 health I
 	FIELD field_6162 target Lnet/minecraft/class_1657;
 	FIELD field_6164 orbAge I

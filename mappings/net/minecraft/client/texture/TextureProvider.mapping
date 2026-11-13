@@ -1,7 +1,15 @@
 CLASS net/minecraft/class_1_1772 net/minecraft/client/texture/TextureProvider
 	METHOD method_1_11190 upload (Lnet/minecraft/class_1_1772$class_1_2051;Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_1762;
+		ARG 1 textureContents
 		ARG 2 id
 	METHOD method_1_11191 createMissing ()Lnet/minecraft/class_1_1772$class_1_2051;
 	METHOD method_1_11192 load (Lnet/minecraft/class_3300;Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_1772$class_1_2051;
 		ARG 1 resourceManager
 		ARG 2 id
+	METHOD method_1_12870 save (Lnet/minecraft/class_2960;Ljava/nio/file/Path;Lnet/minecraft/class_1_1762;)V
+		ARG 1 id
+		ARG 2 path
+		ARG 3 texture
+	METHOD method_1_12871 doClose (Lnet/minecraft/class_1_1762;)V
+		ARG 1 texture
+	CLASS class_1_2051 Contents

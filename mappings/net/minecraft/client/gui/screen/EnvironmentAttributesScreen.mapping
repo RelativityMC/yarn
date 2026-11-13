@@ -1,0 +1,59 @@
+CLASS net/minecraft/class_1_2112 net/minecraft/client/gui/screen/EnvironmentAttributesScreen
+	FIELD field_1_13011 ATTRIBUTES_TAB_TITLE Lnet/minecraft/class_2561;
+	FIELD field_1_13013 LAYERS_TAB_TITLE Lnet/minecraft/class_2561;
+	FIELD field_1_13015 NO_RESULTS_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_13020 SEARCH_BOX_PLACEHOLDER Lnet/minecraft/class_2561;
+	FIELD field_1_13022 TITLE Lnet/minecraft/class_2561;
+	FIELD field_1_13023 root Lnet/minecraft/class_8132;
+	FIELD field_1_13024 parent Lnet/minecraft/class_437;
+	FIELD field_1_13025 tabs Lnet/minecraft/class_1_923;
+	FIELD field_1_13026 tabManager Lnet/minecraft/class_8088;
+	METHOD <init> (Lnet/minecraft/class_437;)V
+		ARG 1 parent
+	METHOD method_1_13057 truncateToWidth (Ljava/lang/String;I)Lnet/minecraft/class_2561;
+		ARG 1 string
+		ARG 2 maxWidth
+	METHOD method_1_13058 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
+	METHOD method_1_13059 (Lnet/minecraft/class_1_2112;Lnet/minecraft/class_339;)V
+		ARG 1 child
+	METHOD method_1_13060 (Lnet/minecraft/class_1_2112;Lnet/minecraft/class_339;)V
+		ARG 1 tab
+	METHOD method_1_13061 (Lnet/minecraft/class_1_2112;Lnet/minecraft/class_339;)V
+		ARG 1 tab
+	METHOD method_1_13062 searchMatches (Ljava/lang/String;Ljava/lang/String;)Z
+		ARG 0 contents
+		ARG 1 search
+	METHOD method_1_13063 getInnerWidth ()I
+	CLASS class_1_2113 AttributeListWidget
+		METHOD method_1_13064 onChanged (Ljava/lang/String;)V
+			ARG 1 search
+		METHOD method_1_13065 (Lnet/minecraft/class_6880$class_6883;)Lnet/minecraft/class_1_2112$class_1_2113$class_1_2114;
+			ARG 1 entry
+		METHOD method_1_13066 (Ljava/lang/String;Lnet/minecraft/class_1_2112$class_1_2113$class_1_2114;)Z
+			ARG 1 entry
+		METHOD method_1_13067 (Lnet/minecraft/class_1_2112$class_1_2113$class_1_2114;)Ljava/lang/String;
+			ARG 0 entry
+		METHOD method_1_13068 (Lnet/minecraft/class_12197;Lnet/minecraft/class_1_2112$class_1_2113$class_1_2114;)Z
+			ARG 1 child
+		CLASS class_1_2114 Entry
+			FIELD field_1_13028 attribute Lnet/minecraft/class_12197;
+			FIELD field_1_13029 label Lnet/minecraft/class_2561;
+			METHOD <init> (Lnet/minecraft/class_1_2112$class_1_2113;Lnet/minecraft/class_12197;Lnet/minecraft/class_2561;)V
+				ARG 2 attribute
+				ARG 3 label
+	CLASS class_1_2115 AttributesTab
+		FIELD field_1_13031 attributeList Lnet/minecraft/class_1_2112$class_1_2113;
+		FIELD field_1_13032 searchBox Lnet/minecraft/class_342;
+	CLASS class_1_2116 LayerListWidget
+		METHOD method_1_13071 refresh ()V
+		CLASS class_1_2117 Entry
+			FIELD field_1_13035 enableButton Lnet/minecraft/class_1_1747;
+			METHOD <init> (Lnet/minecraft/class_1_2112$class_1_2116;Lnet/minecraft/class_12197;Lnet/minecraft/class_1_2089$class_1_2090;)V
+				ARG 2 attribute
+				ARG 3 layer
+			METHOD method_1_13072 (Lnet/minecraft/class_1_2112$class_1_2116;Lnet/minecraft/class_12197;Lnet/minecraft/class_1_2089$class_1_2090;Lnet/minecraft/class_5676;Ljava/lang/Boolean;)V
+				ARG 3 button
+				ARG 4 value
+	CLASS class_1_2118 LayersTab
+		FIELD field_1_13036 layerList Lnet/minecraft/class_1_2112$class_1_2116;

@@ -16,6 +16,8 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 	FIELD field_1_12093 STATIC Ljava/util/Set;
 	FIELD field_1_12094 staticPipelines Ljava/util/Set;
 	FIELD field_1_12328 SCREEN_EFFECT Lnet/minecraft/class_1_1257;
+	FIELD field_1_12898 BLIT_DEPTH_BOUNDS Lnet/minecraft/class_1_1257;
+	FIELD field_1_12899 WATER_MASK Lnet/minecraft/class_1_1257;
 	FIELD field_56814 RENDERTYPE_LEASH Lnet/minecraft/class_1_1257;
 	FIELD field_56816 GLINT Lnet/minecraft/class_1_1257;
 	FIELD field_56840 ENTITY_OUTLINE_BLIT Lnet/minecraft/class_1_1257;
@@ -171,6 +173,8 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 		ARG 0 builder
 	METHOD method_1_11890 (Lnet/minecraft/class_10799$class_1_1869;)Lnet/minecraft/class_1_1257;
 		ARG 0 params
+	METHOD method_1_11891 (Lnet/minecraft/class_10799$class_1_1870;Lnet/minecraft/class_10799$class_1_1870;)Lnet/minecraft/class_1_1257;
+		ARG 1 params
 	METHOD method_1_11892 (Lnet/minecraft/class_10799$class_1_1870;Lnet/minecraft/class_1_1257$class_1_1258;Lnet/minecraft/class_1_1257$class_1_1258;)V
 		ARG 2 builder
 	METHOD method_1_11893 (Lnet/minecraft/class_1_1257$class_1_1258;)V
@@ -221,6 +225,10 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 		ARG 1 oitStage
 	METHOD method_1_12149 (Lnet/minecraft/class_10799$class_1_1930;)Lnet/minecraft/class_1_1257;
 		ARG 0 paraqms
+	METHOD method_1_12886 registerStatic (Lnet/minecraft/class_1_1257;Lnet/minecraft/class_1_1924$class_1_1928;[Lnet/minecraft/class_1_1924$class_1_1928;)Lnet/minecraft/class_1_1257;
+		ARG 0 pipeline
+		ARG 1 subpass
+		ARG 2 additionalSubpasses
 	METHOD method_67886 getStatic ()Ljava/util/stream/Stream;
 	CLASS class_1_1858 AdditiveVisualEffectParameters
 	CLASS class_1_1859 BeaconBeamParameters

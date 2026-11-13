@@ -14,6 +14,7 @@ CLASS net/minecraft/class_4345 net/minecraft/client/realms/RealmsError
 		FIELD field_45236 RETRY_TEXT Lnet/minecraft/class_2561;
 		FIELD field_60674 BODY_HTML_OPENING_TAG Ljava/lang/String;
 		FIELD field_60675 BODY_HTML_CLOSING_TAG Ljava/lang/String;
+		METHOD method_1_12647 downloadFailed ()Lnet/minecraft/class_4345$class_8653;
 		METHOD method_52658 retryable (I)Lnet/minecraft/class_4345$class_8653;
 			ARG 0 statusCode
 		METHOD method_52659 connectivity (Lnet/minecraft/class_4354;)Lnet/minecraft/class_4345$class_8653;

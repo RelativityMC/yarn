@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_2291 net/minecraft/command/argument/ItemStringReader
+	FIELD field_1_12829 STRING_NBT_READER Lnet/minecraft/class_2522;
 	FIELD field_50044 OPEN_SQUARE_BRACKET C
 	FIELD field_50045 CLOSED_SQUARE_BRACKET C
 	FIELD field_50046 COMMA C
@@ -11,9 +12,13 @@ CLASS net/minecraft/class_2291 net/minecraft/command/argument/ItemStringReader
 	FIELD field_50054 itemRegistry Lnet/minecraft/class_7871;
 	FIELD field_50055 ops Lnet/minecraft/class_6903;
 	FIELD field_51831 EXCLAMATION_MARK C
+	METHOD <init> (Lnet/minecraft/class_7871$class_7872;)V
+		ARG 1 registries
 	METHOD method_9789 consume (Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/class_2290;
 		ARG 1 reader
 	METHOD method_9793 getSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 context
+		ARG 2 builder
 	METHOD method_58517 consume (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/class_2291$class_9219;)V
 		ARG 1 reader
 		ARG 2 callbacks
@@ -35,20 +40,24 @@ CLASS net/minecraft/class_2291 net/minecraft/command/argument/ItemStringReader
 		METHOD method_56869 read ()V
 		METHOD method_56872 readItem ()V
 		METHOD method_56874 suggestItems (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+			ARG 0 context
 			ARG 1 builder
 		METHOD method_57806 (ILnet/minecraft/class_9331;Ljava/lang/String;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
 			ARG 3 error
 		METHOD method_57807 readComponentType (Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/class_9331;
 			ARG 0 reader
 		METHOD method_57808 suggestBracket (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+			ARG 0 context
 			ARG 1 builder
 		METHOD method_57811 readComponentValue (Lnet/minecraft/class_2522;Lnet/minecraft/class_6903;Lnet/minecraft/class_9331;)V
 			ARG 1 snbtReader
 			ARG 2 ops
 			ARG 3 type
 		METHOD method_57812 suggestEndOfComponent (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+			ARG 0 context
 			ARG 1 builder
 		METHOD method_57813 suggestEqual (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+			ARG 0 context
 			ARG 1 builder
 		METHOD method_57814 readComponents ()V
 		METHOD method_60380 suggestComponents (Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture;
@@ -59,17 +68,22 @@ CLASS net/minecraft/class_2291 net/minecraft/command/argument/ItemStringReader
 		METHOD method_60382 (Ljava/util/Map$Entry;)Lnet/minecraft/class_2960;
 			ARG 0 entry
 		METHOD method_60383 suggestComponents (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+			ARG 0 context
 			ARG 1 builder
 		METHOD method_60384 suggestComponentsToRemove (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+			ARG 0 context
 			ARG 1 builder
 	CLASS class_9218 SuggestionCallbacks
 		FIELD field_48973 suggestor Lnet/minecraft/class_2172$class_1_2048;
 		METHOD method_56879 getSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;Lcom/mojang/brigadier/StringReader;)Ljava/util/concurrent/CompletableFuture;
+			ARG 1 context
+			ARG 2 builder
 			ARG 3 reader
 	CLASS class_9219 Callbacks
 		METHOD method_56853 onItem (Lnet/minecraft/class_6880;)V
 			ARG 1 item
 		METHOD method_56880 setSuggestor (Lnet/minecraft/class_2172$class_1_2048;)V
+			ARG 1 suggestor
 		METHOD method_57802 onComponentAdded (Lnet/minecraft/class_9331;Ljava/lang/Object;)V
 			ARG 1 type
 			ARG 2 value

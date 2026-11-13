@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_2004 net/minecraft/registry/IndexedRegistryHolder
+	METHOD method_1_12660 getIndexedEntries (Lnet/minecraft/class_5321;)Lnet/minecraft/class_2359;
+		ARG 1 registryRef
+	METHOD method_1_12661 getIndexedValues (Lnet/minecraft/class_5321;)Lnet/minecraft/class_2359;
+		ARG 1 registryRef

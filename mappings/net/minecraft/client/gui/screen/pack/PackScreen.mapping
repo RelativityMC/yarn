@@ -24,6 +24,9 @@ CLASS net/minecraft/class_5375 net/minecraft/client/gui/screen/pack/PackScreen
 		ARG 4 title
 	METHOD method_1_5449 setSearch (Ljava/lang/String;)V
 		ARG 1 search
+	METHOD method_1_12945 clearIconTextures ()V
+	METHOD method_1_12946 (Lnet/minecraft/class_5375$class_1_2076;)V
+		ARG 1 icon
 	METHOD method_29669 copyPacks (Lnet/minecraft/class_310;Ljava/util/List;Ljava/nio/file/Path;)V
 		ARG 0 client
 		ARG 1 srcPaths
@@ -63,6 +66,9 @@ CLASS net/minecraft/class_5375 net/minecraft/client/gui/screen/pack/PackScreen
 		ARG 2 packs
 		ARG 3 listWidget
 		ARG 4 focused
+	CLASS class_1_2076 Icon
+		METHOD method_1_12947 destroy (Lnet/minecraft/class_1060;)V
+			ARG 1 textureManager
 	CLASS class_5426 DirectoryWatcher
 		FIELD field_25790 watchService Ljava/nio/file/WatchService;
 		FIELD field_25791 path Ljava/nio/file/Path;

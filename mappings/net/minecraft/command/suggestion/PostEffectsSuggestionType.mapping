@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_2061 net/minecraft/command/suggestion/PostEffectsSuggestionType
+	FIELD field_1_12896 INSTANCE Lnet/minecraft/class_1_2061;
+	FIELD field_1_12897 SERIALIZER Lnet/minecraft/class_1_2097$class_1_2098;
+	METHOD method_1_12885 postEffects ()Lcom/mojang/brigadier/suggestion/SuggestionProvider;

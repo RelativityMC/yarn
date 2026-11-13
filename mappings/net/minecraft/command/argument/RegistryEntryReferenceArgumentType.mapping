@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_7733 net/minecraft/command/argument/RegistryEntryReferenceArgumentType
+	FIELD field_1_12838 PACKET_CODEC Lnet/minecraft/class_9139;
+	FIELD field_1_12839 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_40401 NOT_FOUND_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic2CommandExceptionType;
 	FIELD field_40402 INVALID_TYPE_EXCEPTION Lcom/mojang/brigadier/exceptions/Dynamic3CommandExceptionType;
 	FIELD field_40403 EXAMPLES Ljava/util/Collection;
@@ -12,6 +14,24 @@ CLASS net/minecraft/class_7733 net/minecraft/command/argument/RegistryEntryRefer
 	METHOD method_1_1024 getTimeline (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880$class_6883;
 		ARG 0 context
 		ARG 1 name
+	METHOD method_1_12786 getAdvancement (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880$class_6883;
+		ARG 0 context
+		ARG 1 name
+	METHOD method_1_12787 getRecipe (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_8786;
+		ARG 0 context
+		ARG 1 name
+	METHOD method_1_12788 getStructure (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880$class_6883;
+		ARG 0 context
+		ARG 1 name
+	METHOD method_1_12789 getTemplatePool (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_6880$class_6883;
+		ARG 0 context
+		ARG 1 name
+	METHOD method_1_12790 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_12791 (Lnet/minecraft/class_7733;)Lnet/minecraft/class_5321;
+		ARG 0 arg
+	METHOD method_1_12792 (Lnet/minecraft/class_7733;)Lnet/minecraft/class_5321;
+		ARG 0 arg
 	METHOD method_1_12878 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 context
 		ARG 2 builder

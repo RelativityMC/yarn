@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_2097 net/minecraft/command/suggestion/CustomSuggestionType
+	METHOD method_1_13019 unitSerializer (Lnet/minecraft/class_1_2097;)Lnet/minecraft/class_1_2097$class_1_2098;
+		ARG 0 instance
+	METHOD method_1_13020 getSerializer ()Lnet/minecraft/class_1_2097$class_1_2098;
+	CLASS class_1_2098 Serializer
+		FIELD comp_1_2310 packetCodec Lnet/minecraft/class_9139;
+		METHOD comp_1_2310 packetCodec ()Lnet/minecraft/class_9139;

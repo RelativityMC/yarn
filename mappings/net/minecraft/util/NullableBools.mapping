@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_1_1985 net/minecraft/util/NullableBools
+	METHOD method_1_12514 and (Ljava/lang/Boolean;Ljava/lang/Boolean;)Ljava/lang/Boolean;
+		ARG 0 p
+		ARG 1 q
+	METHOD method_1_12515 not (Ljava/lang/Boolean;)Ljava/lang/Boolean;
+		ARG 0 p
+	METHOD method_1_12516 or (Ljava/lang/Boolean;Ljava/lang/Boolean;)Ljava/lang/Boolean;
+		ARG 0 p
+		ARG 1 q

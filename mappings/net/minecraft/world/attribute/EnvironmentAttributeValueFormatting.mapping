@@ -1,0 +1,37 @@
+CLASS net/minecraft/class_1_2088 net/minecraft/world/attribute/EnvironmentAttributeValueFormatting
+	METHOD method_1_12987 showAmbientParticle (Lnet/minecraft/class_4761;)Ljava/lang/String;
+		ARG 0 ambientParticle
+	METHOD method_1_12988 showAmbientSounds (Lnet/minecraft/class_12190;)Ljava/lang/String;
+		ARG 0 ambientSounds
+	METHOD method_1_12989 showBackgroundMusic (Lnet/minecraft/class_12194;)Ljava/lang/String;
+		ARG 0 backgroundMusic
+	METHOD method_1_12990 showBedRule (Lnet/minecraft/class_12195;)Ljava/lang/String;
+		ARG 0 bedRule
+	METHOD method_1_12991 showSpawnSettings (Lnet/minecraft/class_5483;)Ljava/lang/String;
+		ARG 0 spawnSettings
+	METHOD method_1_12992 getSuffix (Lnet/minecraft/class_12192;Lnet/minecraft/class_12212;Ljava/lang/Object;)Ljava/lang/String;
+		ARG 0 attribute
+		ARG 1 modifier
+		ARG 2 argument
+	METHOD method_1_12993 showMusic (Ljava/lang/String;Lnet/minecraft/class_5195;)Ljava/lang/String;
+		ARG 0 type
+		ARG 1 music
+	METHOD method_1_12994 show (Ljava/lang/Object;)Ljava/lang/String;
+		ARG 0 argument
+	METHOD method_1_12995 showDouble (D)Ljava/lang/String;
+		ARG 0 x
+	METHOD method_1_12996 (Ljava/util/List;Lnet/minecraft/class_6880;)V
+		ARG 1 loop
+	METHOD method_1_12997 (Ljava/util/List;Lnet/minecraft/class_4968;)V
+		ARG 1 mood
+	METHOD method_1_12998 (Ljava/util/List;Lnet/minecraft/class_5195;)V
+		ARG 1 defaultMusic
+	METHOD method_1_12999 (Ljava/util/List;Lnet/minecraft/class_5195;)V
+		ARG 1 creativeMusic
+	METHOD method_1_13000 (Ljava/util/List;Lnet/minecraft/class_5195;)V
+		ARG 1 underwaterMusic
+	METHOD method_1_13001 (Ljava/lang/StringBuilder;Lnet/minecraft/class_2561;)V
+		ARG 1 error
+	METHOD method_1_13002 (Ljava/lang/StringBuilder;Lnet/minecraft/class_1299;Lnet/minecraft/class_5483$class_5265;)V
+		ARG 1 entityType
+		ARG 2 spawnDensity

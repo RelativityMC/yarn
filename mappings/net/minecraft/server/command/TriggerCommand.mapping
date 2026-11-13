@@ -1,6 +1,15 @@
 CLASS net/minecraft/class_3153 net/minecraft/server/command/TriggerCommand
+	FIELD field_1_12714 SUGGEST_OBJECTIVES Lcom/mojang/brigadier/suggestion/SuggestionProvider;
 	FIELD field_13763 FAILED_UNPRIMED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_13764 FAILED_INVALID_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
+	METHOD method_1_12677 (Lnet/minecraft/server/MinecraftServer;Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 server
+		ARG 1 context
+		ARG 2 suggestionsBuilder
+	METHOD method_1_12678 suggestObjectives (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_2172;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 server
+		ARG 1 source
+		ARG 2 suggestionsBuilder
 	METHOD method_13812 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_13813 register (Lcom/mojang/brigadier/CommandDispatcher;)V

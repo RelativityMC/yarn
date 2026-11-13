@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_2186 net/minecraft/command/argument/EntityArgumentType
+	FIELD field_1_12795 PACKET_CODEC Lnet/minecraft/class_9139;
+	FIELD field_1_12796 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_9856 PLAYER_NOT_FOUND_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_9857 playersOnly Z
 	FIELD field_9858 singleTarget Z
@@ -9,7 +11,18 @@ CLASS net/minecraft/class_2186 net/minecraft/command/argument/EntityArgumentType
 	FIELD field_9863 ENTITY_NOT_FOUND_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_9864 TOO_MANY_PLAYERS_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	METHOD <init> (ZZ)V
+		ARG 1 singleTarget
 		ARG 2 playersOnly
+	METHOD method_1_12738 getEntities (Lnet/minecraft/server/MinecraftServer;Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Ljava/util/stream/Stream;
+		ARG 0 server
+		ARG 1 context
+		ARG 2 name
+	METHOD method_1_12739 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_12740 (Lnet/minecraft/class_2186;)Ljava/lang/Boolean;
+		ARG 0 arg
+	METHOD method_1_12741 (Lnet/minecraft/class_2186;)Ljava/lang/Boolean;
+		ARG 0 arg
 	METHOD method_1_12878 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 2 builder
 	METHOD method_1_12879 (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/class_1_1994;)Ljava/lang/Object;
@@ -41,3 +54,6 @@ CLASS net/minecraft/class_2186 net/minecraft/command/argument/EntityArgumentType
 	METHOD method_9318 parse (Lcom/mojang/brigadier/StringReader;Z)Lnet/minecraft/class_2300;
 		ARG 1 reader
 		ARG 2 allowAtSelectors
+	CLASS 1 1
+		FIELD field_1_12797 PLAYERS_ONLY B
+		FIELD field_1_12798 SINGLE_TARGET B

@@ -3,11 +3,15 @@ CLASS net/minecraft/class_9437 net/minecraft/command/argument/ItemPredicateParsi
 		ARG 2 results
 	METHOD method_58493 (Lnet/minecraft/class_9387;Lnet/minecraft/class_9387;Lnet/minecraft/class_9387;Lnet/minecraft/class_9393;)Ljava/lang/Object;
 		ARG 3 state
+	METHOD method_58494 (Lnet/minecraft/class_9400;)Lnet/minecraft/class_3902;
+		ARG 0 results
 	METHOD method_58495 createParser ()Lnet/minecraft/class_9408;
 	METHOD method_58496 (Lnet/minecraft/class_9387;Lnet/minecraft/class_9387;Lnet/minecraft/class_9400;Lnet/minecraft/class_9437$class_9439;)Ljava/util/List;
 		ARG 2 results
+		ARG 3 reader
 	METHOD method_58497 (Lnet/minecraft/class_9387;Lnet/minecraft/class_9400;Lnet/minecraft/class_9437$class_9439;)Ljava/lang/Object;
 		ARG 1 results
+		ARG 2 reader
 	METHOD method_58498 (Ljava/lang/Object;Ljava/util/List;)Ljava/util/List;
 		ARG 1 predicates
 	METHOD method_58499 (Lnet/minecraft/class_9387;Lnet/minecraft/class_9387;Lnet/minecraft/class_9400;)Ljava/util/List;
@@ -22,7 +26,7 @@ CLASS net/minecraft/class_9437 net/minecraft/command/argument/ItemPredicateParsi
 		METHOD <init> (Lnet/minecraft/class_10842;)V
 			ARG 1 idParsingRule
 	CLASS class_9439 Callbacks
-		METHOD method_58503 streamItemIds ()Lnet/minecraft/class_1_2013;
+		METHOD method_58503 suggestItemIds ()Lnet/minecraft/class_1_2013;
 		METHOD method_58504 itemMatchPredicate (Lnet/minecraft/class_2960;)Ljava/lang/Object;
 			ARG 1 id
 		METHOD method_58505 componentPresencePredicate (Ljava/lang/Object;)Ljava/lang/Object;
@@ -34,16 +38,16 @@ CLASS net/minecraft/class_9437 net/minecraft/command/argument/ItemPredicateParsi
 			ARG 1 predicate
 		METHOD method_58508 anyOf (Ljava/util/List;)Ljava/lang/Object;
 			ARG 1 predicates
-		METHOD method_58509 streamTags ()Lnet/minecraft/class_1_2013;
+		METHOD method_58509 suggestTags ()Lnet/minecraft/class_1_2013;
 		METHOD method_58510 tagMatchPredicate (Lnet/minecraft/class_2960;)Ljava/lang/Object;
 			ARG 1 id
 		METHOD method_58511 subPredicatePredicate (Ljava/lang/Object;Lcom/mojang/serialization/Dynamic;)Ljava/lang/Object;
 			ARG 1 check
 			ARG 2 dynamic
-		METHOD method_58512 streamComponentIds ()Lnet/minecraft/class_1_2013;
+		METHOD method_58512 suggestComponentIds ()Lnet/minecraft/class_1_2013;
 		METHOD method_58513 componentCheck (Lnet/minecraft/class_2960;)Ljava/lang/Object;
 			ARG 1 id
-		METHOD method_58514 streamSubPredicateIds ()Lnet/minecraft/class_1_2013;
+		METHOD method_58514 suggestSubPredicateIds ()Lnet/minecraft/class_1_2013;
 		METHOD method_58515 subPredicateCheck (Lnet/minecraft/class_2960;)Ljava/lang/Object;
 			ARG 1 id
 	CLASS class_9440 ItemParsingRule

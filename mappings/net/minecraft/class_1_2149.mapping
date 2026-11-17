@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_1_2149
+	METHOD method_66900 (Lnet/minecraft/class_4970$class_4971;)Z
+		ARG 0 state
+	METHOD method_66901 pickupFluid (Lnet/minecraft/class_2342;Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;)Lnet/minecraft/class_2357$class_1_2132;
+		ARG 1 pointer
+		ARG 2 stack
+		ARG 3 result

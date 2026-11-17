@@ -69,19 +69,19 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 2 queue
 		ARG 3 renderBlockOutline
 	METHOD method_1_6185 getLoadedChunkPositions ()Lit/unimi/dsi/fastutil/longs/LongCollection;
-	METHOD method_1_7338 drawTranslucentGeometry (Lnet/minecraft/class_11532;Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_1_1317;)V
+	METHOD method_1_7338 drawTranslucentGeometry (Lnet/minecraft/class_11532;Lnet/minecraft/class_11532$class_1_1722;Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_1_1317;Z)V
 		ARG 1 state
-		ARG 2 preparedFrame
-		ARG 3 pass
-	METHOD method_1_7339 drawOitTranslucentGeometry (Lnet/minecraft/class_11532;Lnet/minecraft/class_11684$class_1_875;)V
+		ARG 3 preparedFrame
+		ARG 4 pass
+	METHOD method_1_7339 drawOitTranslucentGeometry (Lnet/minecraft/class_11532;Lnet/minecraft/class_11684$class_1_875;Z)V
 		ARG 1 sectionRenderState
 		ARG 2 preparedFrame
 	METHOD method_1_7341 drawOutlines (Lnet/minecraft/class_11684$class_1_875;)V
 		ARG 1 preparedFrame
-	METHOD method_1_7342 renderSolidGeometry (Lnet/minecraft/class_11532;Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_1_1317;)V
+	METHOD method_1_7342 renderSolidGeometry (Lnet/minecraft/class_11532;Lnet/minecraft/class_11532$class_1_1722;Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_1_1317;Z)V
 		ARG 1 sectionRenderState
-		ARG 2 preparedFrame
-		ARG 3 pass
+		ARG 3 preparedFrame
+		ARG 4 pass
 	METHOD method_1_7350 prepare ()V
 	METHOD method_1_8616 renderAlwaysOnTopFeatures (Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_276;Z)V
 		ARG 1 preparedFrame

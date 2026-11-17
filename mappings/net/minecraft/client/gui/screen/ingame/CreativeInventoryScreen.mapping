@@ -18,12 +18,8 @@ CLASS net/minecraft/class_481 net/minecraft/client/gui/screen/ingame/CreativeInv
 	FIELD field_32341 SCROLLBAR_WIDTH I
 	FIELD field_32342 SCROLLBAR_HEIGHT I
 	FIELD field_41112 operatorTabEnabled Z
-	FIELD field_45456 TAB_TOP_SELECTED_TEXTURES [Lnet/minecraft/class_2960;
-	FIELD field_45457 TAB_BOTTOM_UNSELECTED_TEXTURES [Lnet/minecraft/class_2960;
-	FIELD field_45458 TAB_BOTTOM_SELECTED_TEXTURES [Lnet/minecraft/class_2960;
 	FIELD field_45459 SCROLLER_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_45460 SCROLLER_DISABLED_TEXTURE Lnet/minecraft/class_2960;
-	FIELD field_45461 TAB_TOP_UNSELECTED_TEXTURES [Lnet/minecraft/class_2960;
 	FIELD field_54476 statusEffectsDisplay Lnet/minecraft/class_485;
 	METHOD <init> (Lnet/minecraft/class_746;Lnet/minecraft/class_7699;Z)V
 		ARG 1 player
@@ -34,10 +30,6 @@ CLASS net/minecraft/class_481 net/minecraft/client/gui/screen/ingame/CreativeInv
 		ARG 1 index
 		ARG 2 restore
 		ARG 3 save
-	METHOD method_2463 isClickInTab (Lnet/minecraft/class_1761;DD)Z
-		ARG 1 group
-		ARG 2 mouseX
-		ARG 4 mouseY
 	METHOD method_2464 search ()V
 	METHOD method_2465 hasScrollbar ()Z
 	METHOD method_2466 setSelectedTab (Lnet/minecraft/class_1761;)V
@@ -45,15 +37,7 @@ CLASS net/minecraft/class_481 net/minecraft/client/gui/screen/ingame/CreativeInv
 	METHOD method_2467 isClickInScrollbar (DD)Z
 		ARG 1 mouseX
 		ARG 3 mouseY
-	METHOD method_2468 renderTabIcon (Lnet/minecraft/class_332;Lnet/minecraft/class_1761;)V
-		ARG 1 context
-		ARG 2 tab
 	METHOD method_2470 isCreativeInventorySlot (Lnet/minecraft/class_1_1961;)Z
-	METHOD method_2471 renderTabTooltipIfHovered (Lnet/minecraft/class_332;Lnet/minecraft/class_1761;II)Z
-		ARG 1 context
-		ARG 2 group
-		ARG 3 mouseX
-		ARG 4 mouseY
 	METHOD method_15871 searchForTags (Ljava/lang/String;)V
 		ARG 1 id
 	METHOD method_15873 (Ljava/util/function/Predicate;Lnet/minecraft/class_6862;)Z
@@ -70,10 +54,6 @@ CLASS net/minecraft/class_481 net/minecraft/client/gui/screen/ingame/CreativeInv
 		ARG 3 registries
 	METHOD method_47421 refreshSelectedTab (Ljava/util/Collection;)V
 		ARG 1 displayStacks
-	METHOD method_47422 getTabX (Lnet/minecraft/class_1761;)I
-		ARG 1 group
-	METHOD method_47423 getTabY (Lnet/minecraft/class_1761;)I
-		ARG 1 group
 	METHOD method_47424 isInventoryTabSelected ()Z
 	METHOD method_51455 (Lnet/minecraft/class_1799;Ljava/util/List;Lnet/minecraft/class_6862;)V
 		ARG 2 tagKey

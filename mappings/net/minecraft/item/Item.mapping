@@ -37,8 +37,6 @@ CLASS net/minecraft/class_1792 net/minecraft/item/Item
 	FIELD field_54952 ENTRY_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_55708 ENTRY_PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_56296 DEFAULT_BLOCKS_ATTACKS_MAX_USE_TIME I
-	METHOD <init> (Lnet/minecraft/class_1792$class_1793;)V
-		ARG 1 settings
 	METHOD method_1_821 (Lnet/minecraft/class_6880;)Lcom/mojang/serialization/DataResult;
 		ARG 0 item
 	METHOD method_7836 use (Lnet/minecraft/class_1937;Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;)Lnet/minecraft/class_1269;
@@ -363,10 +361,6 @@ CLASS net/minecraft/class_1792 net/minecraft/item/Item
 			ARG 0 components
 		METHOD method_1_833 (Lnet/minecraft/class_5321;Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_9792;
 			ARG 1 registries
-		METHOD method_1_834 (Lnet/minecraft/class_9323$class_9324;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_5321;)V
-			ARG 0 builder
-			ARG 1 lookup
-			ARG 2 key
 		METHOD method_1_2914 (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_10215;
 			ARG 0 registries
 		METHOD method_1_3095 requires (Lnet/minecraft/class_7699;)Lnet/minecraft/class_1792$class_1793;

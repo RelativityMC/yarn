@@ -9,7 +9,7 @@ CLASS net/minecraft/class_514 net/minecraft/client/gui/screen/recipebook/Animate
 	FIELD field_52846 currentIndexProvider Lnet/minecraft/class_9938;
 	FIELD field_54834 results Ljava/util/List;
 	FIELD field_55503 allResultsEqual Z
-	METHOD <init> (Lnet/minecraft/class_9938;)V
+	METHOD <init> (Lnet/minecraft/class_9938;Lnet/minecraft/class_507$class_1_2170;Ljava/util/function/Predicate;)V
 		ARG 1 currentIndexProvider
 	METHOD method_2640 showResultCollection (Lnet/minecraft/class_516;ZLnet/minecraft/class_513;Lnet/minecraft/class_10352;)V
 		ARG 1 resultCollection
@@ -17,7 +17,7 @@ CLASS net/minecraft/class_514 net/minecraft/client/gui/screen/recipebook/Animate
 		ARG 3 results
 		ARG 4 context
 	METHOD method_2642 hasSingleResult ()Z
-	METHOD method_2644 getTooltip (Lnet/minecraft/class_1799;)Ljava/util/List;
+	METHOD method_2644 getTooltip (Lnet/minecraft/class_1799;Lnet/minecraft/class_2561;)Lnet/minecraft/class_7919;
 		ARG 1 stack
 	METHOD method_2645 getResultCollection ()Lnet/minecraft/class_516;
 	METHOD method_62048 hasMultipleResults ()Z

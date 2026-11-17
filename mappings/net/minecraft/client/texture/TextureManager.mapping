@@ -13,9 +13,6 @@ CLASS net/minecraft/class_1060 net/minecraft/client/texture/TextureManager
 		ARG 1 entry
 	METHOD method_1_12826 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1060$class_1_2042;
 		ARG 0 id1
-	METHOD method_1_12828 (Lnet/minecraft/class_2960;Lnet/minecraft/class_1060$class_1_2042;)V
-		ARG 0 id
-		ARG 1 entry
 	METHOD method_4615 destroyTexture (Lnet/minecraft/class_2960;)V
 		ARG 1 id
 	METHOD method_4619 getTexture (Lnet/minecraft/class_2960;)Lnet/minecraft/class_1_1762;
@@ -28,7 +25,7 @@ CLASS net/minecraft/class_1060 net/minecraft/client/texture/TextureManager
 	METHOD method_49718 (Ljava/nio/file/Path;Lnet/minecraft/class_2960;Lnet/minecraft/class_1060$class_1_2042;)V
 		ARG 1 id
 		ARG 2 entry
-	METHOD method_65879 (Ljava/util/List;Lnet/minecraft/class_3300;Ljava/util/concurrent/Executor;Lnet/minecraft/class_2960;Lnet/minecraft/class_1060$class_1_2042;)V
+	METHOD method_65879 (Ljava/util/Map;Lnet/minecraft/class_3300;Ljava/util/concurrent/Executor;Lnet/minecraft/class_2960;Lnet/minecraft/class_1060$class_1_2042;)V
 		ARG 3 id
 		ARG 4 entry
 	CLASS class_1_2042 Entry

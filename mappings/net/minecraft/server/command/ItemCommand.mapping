@@ -13,35 +13,35 @@ CLASS net/minecraft/class_5687 net/minecraft/server/command/ItemCommand
 	FIELD field_28023 KNOWN_ITEM_EXCEPTION Lcom/mojang/brigadier/exceptions/DynamicCommandExceptionType;
 	METHOD method_1_6782 fillIterator (Ljava/util/Collection;)Lnet/minecraft/class_1_1040;
 		ARG 0 stacks
-	METHOD method_1_6783 getSourceItems (Lnet/minecraft/class_2168;Lnet/minecraft/class_1_1061;Lnet/minecraft/class_1_1077$class_1_2039;Lnet/minecraft/class_1_2034;)Ljava/util/Collection;
+	METHOD method_1_6783 getSourceItems (Lnet/minecraft/class_2168;Lnet/minecraft/class_1_1061;Lnet/minecraft/class_1_1077$class_1_2039;ZLnet/minecraft/class_1_2034;)Ljava/util/Collection;
 		ARG 0 source
 		ARG 1 sourceInventory
 		ARG 2 sourceSlots
-		ARG 3 function
+		ARG 4 function
 	METHOD method_1_6784 getSlots (Lnet/minecraft/class_2168;Lnet/minecraft/class_12260;Lnet/minecraft/class_1_2034;)Lnet/minecraft/class_12271;
 		ARG 0 source
 		ARG 1 inventory
 		ARG 2 slotSource
 	METHOD method_1_6785 (Lnet/minecraft/class_117;Lnet/minecraft/class_47;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1799;
 		ARG 2 stack
-	METHOD method_1_6786 (Lnet/minecraft/class_1_1059;Lnet/minecraft/class_1_1052;Lnet/minecraft/class_1_1083;Ljava/lang/Object;Lnet/minecraft/class_12271;)I
+	METHOD method_1_6786 (Lnet/minecraft/class_1_1059;Lnet/minecraft/class_1_2144;Lnet/minecraft/class_1_1083;Ljava/lang/Object;Lnet/minecraft/class_12271;)I
 		ARG 3 target
 		ARG 4 slots
 	METHOD method_1_6787 (Lnet/minecraft/class_1_1047;Lcom/mojang/brigadier/builder/ArgumentBuilder;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
 		ARG 1 builder
 	METHOD method_1_6788 (Lnet/minecraft/class_1_1047;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 1 context
-	METHOD method_1_6789 (Lnet/minecraft/class_1_1040;Lnet/minecraft/class_1_1052;Lnet/minecraft/class_1_1083;Ljava/lang/Object;Lnet/minecraft/class_12271;)I
+	METHOD method_1_6789 (Lnet/minecraft/class_1_1040;Lnet/minecraft/class_1_2144;Lnet/minecraft/class_1_1083;Ljava/lang/Object;Lnet/minecraft/class_12271;)I
 		ARG 3 target
 		ARG 4 slots
-	METHOD method_1_6790 (Lnet/minecraft/class_1_1047;Lnet/minecraft/class_5687$class_1_1063;Lcom/mojang/brigadier/builder/ArgumentBuilder;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
-		ARG 2 builder
-	METHOD method_1_6791 (Lnet/minecraft/class_1_1047;Lnet/minecraft/class_5687$class_1_1063;Lnet/minecraft/class_1_1047;Lcom/mojang/brigadier/builder/ArgumentBuilder;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+	METHOD method_1_6790 (Lnet/minecraft/class_1_1047;Lnet/minecraft/class_5687$class_1_1063;ZLcom/mojang/brigadier/builder/ArgumentBuilder;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
 		ARG 3 builder
-	METHOD method_1_6792 (Lnet/minecraft/class_1_1047;Lnet/minecraft/class_5687$class_1_1063;Lnet/minecraft/class_1_1047;Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 3 context
-	METHOD method_1_6793 (Lnet/minecraft/class_1_1047;Lnet/minecraft/class_5687$class_1_1063;Lnet/minecraft/class_1_1047;Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 3 context
+	METHOD method_1_6791 (Lnet/minecraft/class_1_1047;Lnet/minecraft/class_5687$class_1_1063;Lnet/minecraft/class_1_1047;ZLcom/mojang/brigadier/builder/ArgumentBuilder;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+		ARG 4 builder
+	METHOD method_1_6792 (Lnet/minecraft/class_1_1047;Lnet/minecraft/class_5687$class_1_1063;Lnet/minecraft/class_1_1047;ZLcom/mojang/brigadier/context/CommandContext;)I
+		ARG 4 context
+	METHOD method_1_6793 (Lnet/minecraft/class_1_1047;Lnet/minecraft/class_5687$class_1_1063;Lnet/minecraft/class_1_1047;ZLcom/mojang/brigadier/context/CommandContext;)I
+		ARG 4 context
 	METHOD method_1_6794 (Lnet/minecraft/class_1_1047;Lnet/minecraft/class_5687$class_1_1063;Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 2 context
 	METHOD method_1_6795 (Lnet/minecraft/class_1_1047;Lnet/minecraft/class_5687$class_1_1063;Lcom/mojang/brigadier/context/CommandContext;)I
@@ -73,7 +73,7 @@ CLASS net/minecraft/class_5687 net/minecraft/server/command/ItemCommand
 		ARG 2 slotSourceProvider
 		ARG 3 items
 		ARG 4 fallback
-	METHOD method_1_6802 createCopyingSubcommand (Lcom/mojang/brigadier/builder/ArgumentBuilder;Lnet/minecraft/class_1_1047;Lnet/minecraft/class_5687$class_1_1063;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+	METHOD method_1_6802 createCopyingSubcommand (Lcom/mojang/brigadier/builder/ArgumentBuilder;Lnet/minecraft/class_1_1047;Lnet/minecraft/class_5687$class_1_1063;Z)Lcom/mojang/brigadier/builder/ArgumentBuilder;
 		ARG 0 node
 		ARG 1 targetArg
 		ARG 2 iteratorFactory

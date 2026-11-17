@@ -57,10 +57,6 @@ CLASS net/minecraft/class_528 net/minecraft/client/gui/screen/world/WorldListWid
 	METHOD method_44679 tryGet ()Ljava/util/List;
 	METHOD method_44680 load ()V
 	METHOD method_73451 refresh ()V
-	METHOD method_73452 (Ljava/util/List;Lnet/minecraft/class_528$class_7414;)Z
-		ARG 1 child
-	METHOD method_73453 (Lnet/minecraft/class_528$class_7414;)V
-		ARG 1 entry
 	METHOD method_73454 (Ljava/lang/String;Lnet/minecraft/class_34;)Z
 		ARG 2 summary
 	CLASS class_4272 WorldEntry

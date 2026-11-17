@@ -32,7 +32,6 @@ CLASS net/minecraft/server/MinecraftServer
 	FIELD field_4549 demo Z
 	FIELD field_4550 playerManager Lnet/minecraft/class_3324;
 	FIELD field_4551 lastPlayerSampleUpdate J
-	FIELD field_4552 keyPair Ljava/security/KeyPair;
 	FIELD field_4555 serverPort I
 	FIELD field_4558 scoreboard Lnet/minecraft/class_2995;
 	FIELD field_4560 preventProxyConnections Z
@@ -104,13 +103,12 @@ CLASS net/minecraft/server/MinecraftServer
 	FIELD field_63111 spawnPoint Lnet/minecraft/class_5217$class_12064;
 	FIELD field_63648 activityNotifier Lnet/minecraft/class_12085;
 	FIELD field_63649 stopwatchPersistentState Lnet/minecraft/class_12110;
-	METHOD <init> (Ljava/lang/Thread;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_3283;Lnet/minecraft/class_6904;Ljava/util/Optional;Ljava/net/Proxy;Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_7497;Lnet/minecraft/class_11545;ZLnet/minecraft/class_11870;)V
+	METHOD <init> (Ljava/lang/Thread;Lnet/minecraft/class_32$class_5143;Lnet/minecraft/class_3283;Lnet/minecraft/class_6904;Ljava/util/Optional;Ljava/net/Proxy;Lcom/mojang/datafixers/DataFixer;Lnet/minecraft/class_7497;Lnet/minecraft/class_11545;ZLnet/minecraft/class_11870;J)V
 		ARG 1 serverThread
 		ARG 2 session
 		ARG 3 dataPackManager
 		ARG 4 saveLoader
 		ARG 5 gameRules
-		ARG 6 proxy
 		ARG 7 dataFixer
 		ARG 8 apiServices
 		ARG 9 chunkLoadProgress
@@ -141,7 +139,6 @@ CLASS net/minecraft/server/MinecraftServer
 	METHOD method_1_10526 (Lnet/minecraft/class_3222;)Ljava/lang/String;
 		ARG 0 player
 	METHOD method_1_10527 getStatusConnectDetails ()Ljava/lang/String;
-	METHOD method_3716 getKeyPair ()Ljava/security/KeyPair;
 	METHOD method_3718 isFlightEnabled ()Z
 	METHOD method_3723 save (ZZZ)Z
 		COMMENT Saves the server to the data storage device.
@@ -377,7 +374,6 @@ CLASS net/minecraft/server/MinecraftServer
 	METHOD method_30612 getRateLimit ()I
 	METHOD method_31371 createFilterer (Lnet/minecraft/class_3222;)Lnet/minecraft/class_5513;
 		ARG 1 player
-	METHOD method_31400 generateKeyPair ()V
 	METHOD method_32303 requireResourcePack ()Z
 	METHOD method_32816 getPlayerInteractionManager (Lnet/minecraft/class_3222;)Lnet/minecraft/class_3225;
 		ARG 1 player

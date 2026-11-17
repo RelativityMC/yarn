@@ -22,11 +22,9 @@ CLASS net/minecraft/class_4516 net/minecraft/test/TestContext
 		ARG 2 range
 	METHOD method_1_2264 discardEntity (Lnet/minecraft/class_1297;)V
 		ARG 1 entity
-	METHOD method_1_2265 setEntityPos (Lnet/minecraft/class_1308;Lnet/minecraft/class_2338;)V
-		ARG 1 entity
+	METHOD method_1_2265 setEntityPos (Lnet/minecraft/class_1297;Lnet/minecraft/class_2338;)V
 		ARG 2 blockPos
-	METHOD method_1_2266 setEntityPos (Lnet/minecraft/class_1308;Lnet/minecraft/class_243;)V
-		ARG 1 entity
+	METHOD method_1_2266 setEntityPos (Lnet/minecraft/class_1297;Lnet/minecraft/class_243;)V
 		ARG 2 pos
 	METHOD method_1_2267 setDefaultClockTime (J)V
 		ARG 1 ticks
@@ -455,8 +453,6 @@ CLASS net/minecraft/class_4516 net/minecraft/test/TestContext
 	METHOD method_51821 setHealthLow (Lnet/minecraft/class_1309;)Lnet/minecraft/class_1309;
 		ARG 1 entity
 	METHOD method_51891 createMockCreativeServerPlayerInWorld ()Lnet/minecraft/class_3222;
-	METHOD method_52206 (Lnet/minecraft/class_1297;)Z
-		ARG 0 entity
 	METHOD method_52207 killAllEntities (Ljava/lang/Class;)V
 		ARG 1 entityClass
 	METHOD method_52225 expectRedstonePower (Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;Ljava/util/function/IntPredicate;Ljava/util/function/Supplier;)V
@@ -509,8 +505,7 @@ CLASS net/minecraft/class_4516 net/minecraft/test/TestContext
 		ARG 1 expected
 		ARG 2 value
 		ARG 3 message
-	METHOD method_57099 setEntityPos (Lnet/minecraft/class_1308;FFF)V
-		ARG 1 entity
+	METHOD method_57099 setEntityPos (Lnet/minecraft/class_1297;FFF)V
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z

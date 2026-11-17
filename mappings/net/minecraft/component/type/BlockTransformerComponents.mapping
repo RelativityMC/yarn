@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_1_1180 net/minecraft/component/type/BlockTransformerComponents
-	METHOD method_1_7536 rules (Ljava/util/Set;Lnet/minecraft/class_6880;Lnet/minecraft/class_1_1156$class_1_1161;)Ljava/util/List;
+	METHOD method_1_7536 rules (Ljava/util/Set;Lnet/minecraft/class_6880;Lnet/minecraft/class_1_1156$class_1_1161;Z)Ljava/util/List;
 		ARG 0 transformations
 		ARG 1 soundEvent
 		ARG 2 particle

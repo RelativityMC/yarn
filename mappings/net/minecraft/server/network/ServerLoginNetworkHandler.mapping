@@ -13,7 +13,6 @@ CLASS net/minecraft/class_3248 net/minecraft/server/network/ServerLoginNetworkHa
 	COMMENT packet and then transitions the connection's packet listener to a {@link
 	COMMENT ServerPlayNetworkHandler}.
 	FIELD field_1_12111 PROTOCOL_ERROR_MESSAGE Ljava/lang/String;
-	FIELD field_1_12112 secretKey Ljavax/crypto/SecretKey;
 	FIELD field_1_12113 compressionThreshold Ljava/util/OptionalInt;
 	FIELD field_1_12114 profile Lcom/mojang/authlib/GameProfile;
 	FIELD field_14156 loginTicks I
@@ -21,20 +20,16 @@ CLASS net/minecraft/class_3248 net/minecraft/server/network/ServerLoginNetworkHa
 	FIELD field_14158 connection Lnet/minecraft/class_2535;
 	FIELD field_14162 server Lnet/minecraft/server/MinecraftServer;
 	FIELD field_14163 state Lnet/minecraft/class_3248$class_3249;
-	FIELD field_14165 serverId Ljava/lang/String;
 	FIELD field_14166 LOGGER Lorg/slf4j/Logger;
-	FIELD field_14167 nonce [B
 	FIELD field_29779 TIMEOUT_TICKS I
 	FIELD field_45028 profileName Ljava/lang/String;
 	FIELD field_48275 transferred Z
 	FIELD field_63176 activityNotifier Lnet/minecraft/class_12085;
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_2535;Z)V
-		ARG 1 server
 		ARG 2 connection
 		ARG 3 transferred
-	METHOD method_1_11921 setProfileAndKey (Lcom/mojang/authlib/GameProfile;Ljavax/crypto/SecretKey;)V
+	METHOD method_1_11921 setProfileAndKey (Lcom/mojang/authlib/GameProfile;Lnet/minecraft/class_1_2120;)V
 		ARG 1 profile
-		ARG 2 secretKey
 	METHOD method_1_11922 applyOptions (B)V
 		ARG 1 options
 	METHOD method_1_11923 getCompressionThresholdFlag ()B

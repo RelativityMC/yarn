@@ -65,8 +65,6 @@ CLASS net/minecraft/class_4517 net/minecraft/test/GameTestState
 	METHOD method_36067 getTickLimit ()I
 	METHOD method_54434 (Lnet/minecraft/class_1297;)V
 		ARG 0 entity
-	METHOD method_54435 (Lnet/minecraft/class_1297;)Z
-		ARG 0 entity
 	METHOD method_56209 streamListeners ()Ljava/util/stream/Stream;
 	METHOD method_56210 copy ()Lnet/minecraft/class_4517;
 	METHOD method_56213 initializeImmediately ()V

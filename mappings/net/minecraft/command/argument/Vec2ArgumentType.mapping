@@ -2,7 +2,6 @@ CLASS net/minecraft/class_2274 net/minecraft/command/argument/Vec2ArgumentType
 	FIELD field_1_12940 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_1_12941 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_10742 EXAMPLES Ljava/util/Collection;
-	FIELD field_10743 INCOMPLETE_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_10744 centerIntegers Z
 	METHOD <init> (Z)V
 		ARG 1 centerIntegers

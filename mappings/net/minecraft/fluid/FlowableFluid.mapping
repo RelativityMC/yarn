@@ -21,8 +21,6 @@ CLASS net/minecraft/class_3609 net/minecraft/fluid/FlowableFluid
 	METHOD method_15728 getFlowing (I)Lnet/minecraft/class_3610;
 		ARG 1 level
 	METHOD method_15730 beforeBreakingBlock (Lnet/minecraft/class_1936;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
-		ARG 1 world
-		ARG 2 pos
 		ARG 3 state
 	METHOD method_15732 receivesFlow (Lnet/minecraft/class_2350;Lnet/minecraft/class_1922;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)Z
 		ARG 0 face

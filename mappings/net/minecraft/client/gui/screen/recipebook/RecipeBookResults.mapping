@@ -1,14 +1,10 @@
 CLASS net/minecraft/class_513 net/minecraft/client/gui/screen/recipebook/RecipeBookResults
 	FIELD field_3124 pageCount I
-	FIELD field_3125 lastClickedRecipe Lnet/minecraft/class_10298;
 	FIELD field_3126 client Lnet/minecraft/class_310;
 	FIELD field_3127 resultCollections Ljava/util/List;
 	FIELD field_3128 nextPageButton Lnet/minecraft/class_344;
-	FIELD field_3129 hoveredResultButton Lnet/minecraft/class_514;
 	FIELD field_3130 prevPageButton Lnet/minecraft/class_344;
 	FIELD field_3131 resultButtons Ljava/util/List;
-	FIELD field_3132 alternatesWidget Lnet/minecraft/class_508;
-	FIELD field_3133 resultCollection Lnet/minecraft/class_516;
 	FIELD field_3135 currentPage I
 	FIELD field_3136 recipeBook Lnet/minecraft/class_299;
 	FIELD field_45552 PAGE_FORWARD_TEXTURES Lnet/minecraft/class_8666;
@@ -17,38 +13,16 @@ CLASS net/minecraft/class_513 net/minecraft/client/gui/screen/recipebook/RecipeB
 	FIELD field_54832 recipeBookWidget Lnet/minecraft/class_507;
 	FIELD field_64550 NEXT_PAGE_TOOLTIP Lnet/minecraft/class_2561;
 	FIELD field_64551 PREVIOUS_PAGE_TOOLTIP Lnet/minecraft/class_2561;
-	METHOD <init> (Lnet/minecraft/class_507;Lnet/minecraft/class_9938;Z)V
+	METHOD <init> (Lnet/minecraft/class_507;Lnet/minecraft/class_9938;Lnet/minecraft/class_507$class_1_2170;Ljava/util/function/Predicate;)V
 		ARG 1 recipeBookWidget
 		ARG 2 currentIndexProvider
-		ARG 3 furnace
 	METHOD method_2625 refreshResultButtons ()V
 	METHOD method_2626 hideShowPageButtons ()V
 	METHOD method_2627 setResults (Ljava/util/List;ZZ)V
 		ARG 1 resultCollections
 		ARG 2 resetCurrentPage
 		ARG 3 filteringCraftable
-	METHOD method_2628 drawTooltip (Lnet/minecraft/class_332;)V
-		ARG 1 context
-	METHOD method_2632 mouseClicked (Lnet/minecraft/class_11909;IIIIZ)Z
-		ARG 1 click
-		ARG 2 left
-		ARG 3 top
-		ARG 4 width
-		ARG 5 height
-		ARG 6 doubled
 	METHOD method_2633 getRecipeBook ()Lnet/minecraft/class_299;
-	METHOD method_2634 draw (Lnet/minecraft/class_332;II)V
-		ARG 1 context
-		ARG 2 x
-		ARG 3 y
-	METHOD method_2635 getLastClickedResults ()Lnet/minecraft/class_516;
-	METHOD method_2636 initialize (Lnet/minecraft/class_310;II)V
-		ARG 1 client
-		ARG 2 parentLeft
-		ARG 3 parentTop
-	METHOD method_2638 hideAlternates ()V
-	METHOD method_37083 forEachButton (Ljava/util/function/Consumer;)V
-		ARG 1 action
-	METHOD method_64878 getLastClickedRecipe ()Lnet/minecraft/class_10298;
+	METHOD method_2636 initialize (Lnet/minecraft/class_310;)V
 	METHOD method_64879 onRecipeDisplayed (Lnet/minecraft/class_10298;)V
 		ARG 1 recipeId

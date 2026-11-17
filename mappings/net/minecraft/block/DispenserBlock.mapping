@@ -1,27 +1,15 @@
 CLASS net/minecraft/class_2315 net/minecraft/block/DispenserBlock
 	FIELD field_10918 FACING Lnet/minecraft/class_2754;
-	FIELD field_10919 BEHAVIORS Ljava/util/Map;
 	FIELD field_10920 TRIGGERED Lnet/minecraft/class_2746;
 	FIELD field_31082 SCHEDULED_TICK_DELAY I
 	FIELD field_46212 LOGGER Lorg/slf4j/Logger;
-	FIELD field_51412 DEFAULT_BEHAVIOR Lnet/minecraft/class_2347;
-	METHOD method_10009 registerBehavior (Lnet/minecraft/class_1935;Lnet/minecraft/class_2357;)V
-		ARG 0 provider
-		ARG 1 behavior
 	METHOD method_10010 getOutputLocation (Lnet/minecraft/class_2342;DLnet/minecraft/class_243;)Lnet/minecraft/class_2374;
 		ARG 0 pointer
 		ARG 1 facingOffset
 		ARG 3 constantOffset
-	METHOD method_10011 getBehaviorForItem (Lnet/minecraft/class_1937;Lnet/minecraft/class_1799;)Lnet/minecraft/class_2357;
-		ARG 1 world
-		ARG 2 stack
 	METHOD method_10012 dispense (Lnet/minecraft/class_3218;Lnet/minecraft/class_2680;Lnet/minecraft/class_2338;)V
 		ARG 1 world
 		ARG 2 state
 		ARG 3 pos
-	METHOD method_58681 registerProjectileBehavior (Lnet/minecraft/class_1935;)V
-		ARG 0 projectile
 	METHOD method_58682 getOutputLocation (Lnet/minecraft/class_2342;)Lnet/minecraft/class_2374;
 		ARG 0 pointer
-	METHOD method_64021 getBehaviorForItem (Lnet/minecraft/class_1799;)Lnet/minecraft/class_2357;
-		ARG 0 stack

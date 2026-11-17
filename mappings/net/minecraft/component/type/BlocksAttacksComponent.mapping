@@ -14,7 +14,7 @@ CLASS net/minecraft/class_10707 net/minecraft/component/type/BlocksAttacksCompon
 		ARG 4 stack
 	METHOD method_67201 (Lnet/minecraft/class_3218;Lnet/minecraft/class_1309;Lnet/minecraft/class_6880;)V
 		ARG 2 sound
-	METHOD method_67202 getDamageReductionAmount (Lnet/minecraft/class_1282;FD)F
+	METHOD method_67202 getDamageReductionAmount (Lnet/minecraft/class_1282;FD)Ljava/util/Optional;
 		ARG 1 source
 		ARG 2 damage
 		ARG 3 angle

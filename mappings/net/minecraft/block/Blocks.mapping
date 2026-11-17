@@ -441,10 +441,6 @@ CLASS net/minecraft/class_2246 net/minecraft/block/Blocks
 		ARG 0 state
 	METHOD method_26148 (Lnet/minecraft/class_2680;)I
 		ARG 0 state
-	METHOD method_26150 (Lnet/minecraft/class_2680;)I
-		ARG 0 state
-	METHOD method_26151 (Lnet/minecraft/class_2680;)I
-		ARG 0 state
 	METHOD method_26152 (Lnet/minecraft/class_2680;)I
 		ARG 0 state
 	METHOD method_32894 (Lnet/minecraft/class_2680;)I

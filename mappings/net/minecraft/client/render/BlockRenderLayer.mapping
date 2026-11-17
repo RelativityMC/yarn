@@ -12,11 +12,9 @@ CLASS net/minecraft/class_11515 net/minecraft/client/render/BlockRenderLayer
 		ARG 0 transparency
 	METHOD method_1_12868 getVertexBakedFaceSize ()I
 	METHOD method_1_12869 getVertexFaceSize ()I
-	METHOD method_72020 getPipeline (ZZZLnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
-		ARG 1 multidraw
+	METHOD method_72020 getPipeline (ZZZZLnet/minecraft/class_1_1153;Z)Lnet/minecraft/class_1_1257;
 		ARG 2 improvedFog
-		ARG 3 wireframe
-		ARG 4 oitStage
+		ARG 5 oitStage
 	METHOD method_72021 getBufferSize ()I
 	METHOD method_72022 getName ()Ljava/lang/String;
 	METHOD method_72023 isTranslucent ()Z

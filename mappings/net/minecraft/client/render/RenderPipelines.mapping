@@ -121,8 +121,6 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 		ARG 0 builder
 	METHOD method_1_11864 (Ljava/util/function/Function;Ljava/lang/Object;Lnet/minecraft/class_10799$class_1_1863;)Lnet/minecraft/class_1_1257;
 		ARG 2 key
-	METHOD method_1_11865 (Lnet/minecraft/class_1_1906;ZLnet/minecraft/class_10151$class_1_1853;Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
-		ARG 3 oitStage
 	METHOD method_1_11866 (Lnet/minecraft/class_1_1903;Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
 		ARG 1 oitStage
 	METHOD method_1_11867 (Lnet/minecraft/class_1_1900;Lnet/minecraft/class_1_1153;)Lnet/minecraft/class_1_1257;
@@ -175,10 +173,10 @@ CLASS net/minecraft/class_10799 net/minecraft/client/render/RenderPipelines
 		ARG 0 params
 	METHOD method_1_11891 (Lnet/minecraft/class_10799$class_1_1870;Lnet/minecraft/class_10799$class_1_1870;)Lnet/minecraft/class_1_1257;
 		ARG 1 params
-	METHOD method_1_11892 (Lnet/minecraft/class_10799$class_1_1870;Lnet/minecraft/class_1_1257$class_1_1258;Lnet/minecraft/class_1_1257$class_1_1258;)V
-		ARG 2 builder
-	METHOD method_1_11893 (Lnet/minecraft/class_1_1257$class_1_1258;)V
-		ARG 0 builder
+	METHOD method_1_11892 (Lnet/minecraft/class_10799$class_1_1870;Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 1 builder
+	METHOD method_1_11893 (Lnet/minecraft/class_10799$class_1_1870;Lnet/minecraft/class_1_1257$class_1_1258;)V
+		ARG 1 builder
 	METHOD method_1_11894 (Lnet/minecraft/class_10799$class_1_1871;)Lnet/minecraft/class_1_1257;
 		ARG 0 params
 	METHOD method_1_11895 (Lnet/minecraft/class_10799$class_1_1871;Lnet/minecraft/class_1_1257$class_1_1258;)V

@@ -3,8 +3,6 @@ CLASS net/minecraft/class_9228 net/minecraft/datafixer/FixUtil
 		ARG 0 dynamic
 	METHOD method_1_9436 (Ljava/util/Map;)Z
 		ARG 0 map
-	METHOD method_1_9437 (Lcom/mojang/serialization/Dynamic;Ljava/util/Map;)Ljava/util/Optional;
-		ARG 1 map
 	METHOD method_1_10621 getTypedOrThrow (Lcom/mojang/datafixers/types/Type;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/datafixers/Typed;
 		ARG 0 type
 		ARG 1 dynamic
@@ -34,8 +32,6 @@ CLASS net/minecraft/class_9228 net/minecraft/datafixer/FixUtil
 		ARG 0 dynamic
 		ARG 1 fieldName
 		ARG 2 applier
-	METHOD method_61353 (Lcom/mojang/serialization/DynamicOps;)Ljava/util/function/Function;
-		ARG 0 ops
 	METHOD method_61357 (Ljava/util/function/UnaryOperator;Lcom/mojang/serialization/Dynamic;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
 		ARG 2 value
 	METHOD method_66040 withType (Lcom/mojang/datafixers/types/Type;Ljava/lang/Object;Lcom/mojang/serialization/DynamicOps;)Lcom/mojang/datafixers/Typed;

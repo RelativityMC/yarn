@@ -2,9 +2,7 @@ CLASS net/minecraft/class_2277 net/minecraft/command/argument/Vec3ArgumentType
 	FIELD field_1_12943 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_1_12944 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
 	FIELD field_10754 EXAMPLES Ljava/util/Collection;
-	FIELD field_10755 INCOMPLETE_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	FIELD field_10756 centerIntegers Z
-	FIELD field_10757 MIXED_COORDINATE_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
 	METHOD <init> (Z)V
 		ARG 1 centerIntegers
 	METHOD method_1_12878 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;

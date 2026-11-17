@@ -4,8 +4,6 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 	COMMENT @see PacketCodec
 	FIELD field_1_9388 BIT_SET Lnet/minecraft/class_9139;
 	FIELD field_1_9389 INSTANT_MS Lnet/minecraft/class_9139;
-	FIELD field_1_9391 RSA_PUBLIC_KEY_LENGTH I
-	FIELD field_1_9392 RSA_PUBLIC_KEY Lnet/minecraft/class_9139;
 	FIELD field_1_12685 PATTERN Lnet/minecraft/class_9139;
 	FIELD field_48547 BOOLEAN Lnet/minecraft/class_9139;
 		COMMENT A codec for a boolean value.
@@ -142,8 +140,6 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 		ARG 1 codec
 	METHOD method_1_9026 bitSet (I)Lnet/minecraft/class_9139;
 		ARG 0 maxLength
-	METHOD method_1_9027 ([B)Ljava/security/PublicKey;
-		ARG 0 bytes
 	METHOD method_1_10580 ofEnum (Ljava/lang/Class;Ljava/util/function/ToIntFunction;)Lnet/minecraft/class_1_1686;
 		ARG 0 clazz
 		ARG 1 toId
@@ -199,12 +195,6 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 		COMMENT @see #registryEntry(RegistryKey)
 		ARG 0 registry
 		ARG 1 directCodec
-	METHOD method_56368 codec (Lcom/mojang/serialization/Codec;)Lnet/minecraft/class_9139;
-		COMMENT {@return a codec from DataFixerUpper codec {@code codec}}
-		COMMENT
-		COMMENT <p>Internally, the data is serialized as an NBT element of up to {@code 200000L}
-		COMMENT bytes.
-		ARG 0 codec
 	METHOD method_56374 toCollection (Ljava/util/function/IntFunction;)Lnet/minecraft/class_9139$class_9140;
 		COMMENT Used to make a codec for a collection of values using {@link PacketCodec#collect}.
 		COMMENT
@@ -342,7 +332,6 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 	METHOD method_68862 (ILjava/util/function/BiFunction;Lnet/minecraft/class_9139;)Lnet/minecraft/class_9139;
 		ARG 2 codec
 	METHOD method_68863 (Lio/netty/buffer/ByteBuf;Lio/netty/buffer/ByteBuf;)Lio/netty/buffer/ByteBuf;
-		ARG 0 entire
 		ARG 1 slice
 	METHOD method_68864 lengthPrepended (I)Lnet/minecraft/class_9139$class_9140;
 		ARG 0 maxSize
@@ -378,30 +367,30 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 	CLASS 21 21
 	CLASS 24 24
 	CLASS 26 26
-	CLASS 28 28
+	CLASS 29 29
 		METHOD method_72190 (Lnet/minecraft/class_9139;Lio/netty/buffer/ByteBuf;Lnet/minecraft/class_9139;Ljava/lang/Object;Ljava/lang/Object;)V
 			ARG 3 k
 			ARG 4 v
-	CLASS 29 29
+	CLASS 30 30
 		METHOD method_71582 (Lio/netty/buffer/ByteBuf;Lnet/minecraft/class_9139;Ljava/lang/Object;)V
 			ARG 2 right
 		METHOD method_71583 (Lio/netty/buffer/ByteBuf;Lnet/minecraft/class_9139;Ljava/lang/Object;)V
 			ARG 2 left
-	CLASS 31 31
-	CLASS 34 34
+	CLASS 32 32
+	CLASS 35 35
 		FIELD field_61045 DIRECT_ID I
 		METHOD method_72191 getRegistryContents (Lnet/minecraft/class_9129;)Lnet/minecraft/class_2359;
 			ARG 1 buf
-	CLASS 35 35
+	CLASS 36 36
 		FIELD field_61046 TAG I
 		FIELD field_61047 ELEMENT_CODEC Lnet/minecraft/class_9139;
-	CLASS 36 36
+	CLASS 37 37
 		METHOD method_71596 (Lio/netty/buffer/ByteBuf;Ljava/lang/String;)V
 			ARG 0 buf
 			ARG 1 signature
 		METHOD method_71597 (Lio/netty/buffer/ByteBuf;)Ljava/lang/String;
 			ARG 0 buf1
-	CLASS 38 38
+	CLASS 39 39
 		FIELD field_60514 GSON Lcom/google/gson/Gson;
 	CLASS class_1_2002 RegistryCodec
 		METHOD method_1_12636 getElements (Lnet/minecraft/class_1_2004;)Lnet/minecraft/class_2359;

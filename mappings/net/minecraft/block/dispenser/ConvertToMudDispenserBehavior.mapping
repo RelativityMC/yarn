@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_2156 net/minecraft/block/dispenser/ConvertToMudDispenserBehavior
+	FIELD field_1_13233 INSTANCE Lnet/minecraft/class_1_2156;

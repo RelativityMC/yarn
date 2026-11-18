@@ -1,4 +1,9 @@
 CLASS net/minecraft/class_514 net/minecraft/client/gui/screen/recipebook/AnimatedResultButton
+	FIELD field_1_13200 MORE_RECIPES_KEYBOARD_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_13201 SLOT_HIGHLIGHT_BACK_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_13202 SLOT_HIGHLIGHT_FRONT_TEXTURE Lnet/minecraft/class_2960;
+	FIELD field_1_13203 onPress Lnet/minecraft/class_507$class_1_2170;
+	FIELD field_1_13204 showAlternatives Ljava/util/function/Predicate;
 	FIELD field_3139 bounce F
 	FIELD field_3142 resultCollection Lnet/minecraft/class_516;
 	FIELD field_26595 MORE_RECIPES_TEXT Lnet/minecraft/class_2561;
@@ -11,6 +16,12 @@ CLASS net/minecraft/class_514 net/minecraft/client/gui/screen/recipebook/Animate
 	FIELD field_55503 allResultsEqual Z
 	METHOD <init> (Lnet/minecraft/class_9938;Lnet/minecraft/class_507$class_1_2170;Ljava/util/function/Predicate;)V
 		ARG 1 currentIndexProvider
+		ARG 2 onPress
+		ARG 3 showAlternatives
+	METHOD method_1_13220 drawSlotHighlightTexture (Lnet/minecraft/class_332;Lnet/minecraft/class_2960;)V
+		ARG 1 context
+		ARG 2 texture
+	METHOD method_1_13221 showAlternatives ()Z
 	METHOD method_2640 showResultCollection (Lnet/minecraft/class_516;ZLnet/minecraft/class_513;Lnet/minecraft/class_10352;)V
 		ARG 1 resultCollection
 		ARG 2 filteringCraftable
@@ -19,6 +30,7 @@ CLASS net/minecraft/class_514 net/minecraft/client/gui/screen/recipebook/Animate
 	METHOD method_2642 hasSingleResult ()Z
 	METHOD method_2644 getTooltip (Lnet/minecraft/class_1799;Lnet/minecraft/class_2561;)Lnet/minecraft/class_7919;
 		ARG 1 stack
+		ARG 2 moreRecipesText
 	METHOD method_2645 getResultCollection ()Lnet/minecraft/class_516;
 	METHOD method_62048 hasMultipleResults ()Z
 	METHOD method_64880 (Lnet/minecraft/class_10352;Lnet/minecraft/class_10297;)Lnet/minecraft/class_514$class_10330;

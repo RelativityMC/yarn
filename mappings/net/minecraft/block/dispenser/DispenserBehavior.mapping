@@ -1,2 +1,46 @@
 CLASS net/minecraft/class_2357 net/minecraft/block/dispenser/DispenserBehavior
+	FIELD field_1_13105 ENTRY_LIST_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_13106 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_13107 LIST_CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_1_13156 addResult (Lnet/minecraft/class_2342;Lnet/minecraft/class_1799;)V
+		ARG 0 pointer
+		ARG 1 resultStack
+	METHOD method_1_13157 getCodec ()Lcom/mojang/serialization/MapCodec;
+	METHOD method_1_13158 replace (Lnet/minecraft/class_2342;Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;)Lnet/minecraft/class_2357$class_1_2132;
+		ARG 0 pointer
+		ARG 1 stack
+		ARG 2 resultStack
+	METHOD method_1_13159 dispense (Ljava/lang/Iterable;Lnet/minecraft/class_2342;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1799;
+		ARG 0 behaviors
+		ARG 1 pointer
+		ARG 2 stack
+	METHOD method_1_13160 (Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 mapCodec
+	METHOD method_1_13161 onActivate (Lnet/minecraft/class_2342;Lnet/minecraft/class_2350;)V
+		ARG 1 pointer
+		ARG 2 direction
+	METHOD method_1_13162 emitActivateEvent (Lnet/minecraft/class_2342;Lnet/minecraft/class_2350;)V
+		ARG 0 pointer
+		ARG 1 direction
+	METHOD method_1_13163 emitFailEvent (Lnet/minecraft/class_2342;)V
+		ARG 0 pointer
+	METHOD method_1_13164 emitSuccessEvent (Lnet/minecraft/class_2342;)V
+		ARG 0 pointer
+	METHOD method_1_13165 onFail (Lnet/minecraft/class_2342;)V
+		ARG 1 pointer
+	METHOD method_1_13166 onSuccess (Lnet/minecraft/class_2342;)V
+		ARG 1 pointer
 	METHOD method_10135 dispenseSilently (Lnet/minecraft/class_2342;Lnet/minecraft/class_1799;)Lnet/minecraft/class_2357$class_1_2132;
+		ARG 1 pointer
+		ARG 2 stack
+	CLASS class_1_2132 Result
+		METHOD method_1_13167 pass ()Lnet/minecraft/class_2357$class_1_2132$class_1_2133;
+		METHOD method_1_13168 shouldStop ()Z
+		METHOD method_1_13169 fail ()Lnet/minecraft/class_2357$class_1_2132$class_1_2134;
+		METHOD method_1_13170 consume (Lnet/minecraft/class_1799;)Lnet/minecraft/class_2357$class_1_2132$class_1_2135;
+			ARG 0 remaining
+		CLASS class_1_2133 Pass
+			FIELD field_1_13108 INSTANCE Lnet/minecraft/class_2357$class_1_2132$class_1_2133;
+		CLASS class_1_2134 Fail
+			FIELD field_1_13109 INSTANCE Lnet/minecraft/class_2357$class_1_2132$class_1_2134;
+		CLASS class_1_2135 Consume

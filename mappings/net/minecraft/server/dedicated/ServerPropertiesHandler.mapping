@@ -5,6 +5,7 @@ CLASS net/minecraft/class_3806 net/minecraft/server/dedicated/ServerPropertiesHa
 	FIELD field_1_10713 allowedConnectionIds Ljava/lang/String;
 	FIELD field_1_10714 enableLegacyStatus Z
 	FIELD field_1_10715 statusConnectDetails Ljava/lang/String;
+	FIELD field_1_13220 keyRotationPeriodSeconds I
 	FIELD field_16802 broadcastConsoleToOps Z
 	FIELD field_16804 whiteList Lnet/minecraft/class_3808$class_3809;
 	FIELD field_16805 enforceWhitelist Lnet/minecraft/class_3808$class_3809;

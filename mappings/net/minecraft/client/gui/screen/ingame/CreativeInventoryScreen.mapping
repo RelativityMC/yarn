@@ -1,4 +1,11 @@
 CLASS net/minecraft/class_481 net/minecraft/client/gui/screen/ingame/CreativeInventoryScreen
+	FIELD field_1_12647 SLOT_TOOLTIP_SUPPLIER Ljava/util/function/Function;
+	FIELD field_1_13340 TAB_NAVIGATION_BOTTOM_MESSAGE Lnet/minecraft/class_2561;
+	FIELD field_1_13343 TITLE Lnet/minecraft/class_2561;
+	FIELD field_1_13344 TAB_NAVIGATION_TOP_MESSAGE Lnet/minecraft/class_2561;
+	FIELD field_1_13345 bottomTabs Lnet/minecraft/class_8089;
+	FIELD field_1_13346 topTabs Lnet/minecraft/class_8089;
+	FIELD field_1_13347 tabManager Lnet/minecraft/class_8088;
 	FIELD field_2886 slots Ljava/util/List;
 	FIELD field_2887 lastClickOutsideBounds Z
 	FIELD field_2888 ignoreTypedCharacter Z
@@ -25,6 +32,24 @@ CLASS net/minecraft/class_481 net/minecraft/client/gui/screen/ingame/CreativeInv
 		ARG 1 player
 		ARG 2 enabledFeatures
 		ARG 3 operatorTabEnabled
+	METHOD method_1_12508 (Lnet/minecraft/class_1735;)Lnet/minecraft/class_7919;
+		ARG 1 slot
+	METHOD method_1_13365 renderTabs (Lnet/minecraft/class_332;)V
+		ARG 1 context
+	METHOD method_1_13366 (Ljava/lang/String;)V
+		ARG 1 text
+	METHOD method_1_13367 (Lnet/minecraft/class_339;)V
+		ARG 0 widget
+	METHOD method_1_13368 (Lnet/minecraft/class_339;)V
+		ARG 0 widget
+	METHOD method_1_13369 (Lnet/minecraft/class_8087;)V
+		ARG 1 tab
+	METHOD method_1_13370 (Lnet/minecraft/class_8087;)V
+		ARG 1 tab
+	METHOD method_1_13372 selectTab (Lnet/minecraft/class_1761;)V
+		ARG 1 tab
+	METHOD method_1_13373 tryScroll (Lnet/minecraft/class_11908;)Z
+		ARG 1 input
 	METHOD method_2462 onHotbarKeyPress (Lnet/minecraft/class_310;IZZ)V
 		ARG 0 client
 		ARG 1 index
@@ -38,6 +63,7 @@ CLASS net/minecraft/class_481 net/minecraft/client/gui/screen/ingame/CreativeInv
 		ARG 1 mouseX
 		ARG 3 mouseY
 	METHOD method_2470 isCreativeInventorySlot (Lnet/minecraft/class_1_1961;)Z
+		ARG 1 slotWidget
 	METHOD method_15871 searchForTags (Ljava/lang/String;)V
 		ARG 1 id
 	METHOD method_15873 (Ljava/util/function/Predicate;Lnet/minecraft/class_6862;)Z
@@ -62,7 +88,24 @@ CLASS net/minecraft/class_481 net/minecraft/client/gui/screen/ingame/CreativeInv
 		ARG 2 enabledFeatures
 		ARG 3 showOperatorTab
 		ARG 4 registries
+	CLASS class_1_2173 LockableSlotWidget
+		FIELD field_1_13348 NARRATION_SOURCE Lnet/minecraft/class_1_1951;
+		METHOD <init> (Lnet/minecraft/class_481;Lnet/minecraft/class_1735;)V
+			ARG 2 slot
+	CLASS class_1_2174 ItemGroupTab
+		FIELD field_1_13350 itemGroup Lnet/minecraft/class_1761;
+		METHOD <init> (Lnet/minecraft/class_1761;)V
+			ARG 1 itemGroup
+		METHOD method_1_13375 getItemGroup ()Lnet/minecraft/class_1761;
+	CLASS class_1_2175 DeleteItemSlotWidget
+		FIELD field_1_13351 TOOLTIP Lnet/minecraft/class_7919;
 	CLASS class_482 LockableSlot
+		METHOD <init> (Lnet/minecraft/class_1263;III)V
+			ARG 1 inventory
+			ARG 2 backgroundWidth
+			ARG 3 x
+			ARG 4 y
+		METHOD method_1_13376 getRow ()I
 	CLASS class_483 CreativeScreenHandler
 		FIELD field_2897 itemList Lnet/minecraft/class_2371;
 		FIELD field_29349 parent Lnet/minecraft/class_1703;

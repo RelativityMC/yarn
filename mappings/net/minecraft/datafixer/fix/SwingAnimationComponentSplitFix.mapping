@@ -3,3 +3,7 @@ CLASS net/minecraft/class_1_1440 net/minecraft/datafixer/fix/SwingAnimationCompo
 		ARG 1 outputSchema
 	METHOD method_1_9541 (Lnet/minecraft/class_9228$class_1_2131;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
 		ARG 1 component
+	METHOD method_1_13347 (Ljava/lang/String;)Ljava/util/stream/Stream;
+		ARG 0 id
+	METHOD method_1_13348 (Lnet/minecraft/class_9228$class_1_2131;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 componentDynamic

@@ -1,4 +1,5 @@
-CLASS net/minecraft/class_1_2149
+CLASS net/minecraft/class_1_2149 net/minecraft/block/dispenser/FillBottleDispenserBehavior
+	FIELD field_1_13194 INSTANCE Lnet/minecraft/class_1_2149;
 	METHOD method_66900 (Lnet/minecraft/class_4970$class_4971;)Z
 		ARG 0 state
 	METHOD method_66901 pickupFluid (Lnet/minecraft/class_2342;Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;)Lnet/minecraft/class_2357$class_1_2132;

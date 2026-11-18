@@ -1,3 +1,4 @@
 CLASS net/minecraft/class_10205 net/minecraft/block/dispenser/EquippableDispenserBehavior
+	FIELD field_1_13170 INSTANCE Lnet/minecraft/class_10205;
 	METHOD method_64105 (Lnet/minecraft/class_1799;Lnet/minecraft/class_1309;)Z
 		ARG 1 entity

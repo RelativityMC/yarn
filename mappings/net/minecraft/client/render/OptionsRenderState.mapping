@@ -20,5 +20,6 @@ CLASS net/minecraft/class_1_421 net/minecraft/client/render/OptionsRenderState
 	FIELD field_1_5805 chunkFade D
 	FIELD field_1_5806 fov I
 	FIELD field_1_5807 chunkBuilderMode Lnet/minecraft/class_6597;
+	FIELD field_1_13188 improvedFog Z
 	METHOD method_1_2803 getBackgroundOpacity (F)F
 		ARG 1 opacity

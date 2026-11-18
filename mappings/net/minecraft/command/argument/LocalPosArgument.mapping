@@ -1,0 +1,24 @@
+CLASS net/minecraft/class_1_2168 net/minecraft/command/argument/LocalPosArgument
+	FIELD field_1_13298 CARET C
+	METHOD method_1_13313 parse3D (Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/class_1_2168;
+		ARG 0 reader
+	METHOD method_1_13314 parse2D (Lcom/mojang/brigadier/StringReader;)Lnet/minecraft/class_1_2168;
+		ARG 0 reader
+	METHOD method_1_13315 parseCoordinate (Lcom/mojang/brigadier/StringReader;I)D
+		ARG 0 reader
+		ARG 1 cursor
+	CLASS class_1_2169 XZ
+		FIELD field_1_13299 AXIS Lnet/minecraft/class_243;
+		METHOD method_1_13316 resolve (Lnet/minecraft/class_243;Lnet/minecraft/class_241;)Lnet/minecraft/class_243;
+			ARG 1 pos
+			ARG 2 rot
+	CLASS class_2268 XYZ
+		METHOD <init> (DDD)V
+			ARG 1 x
+			ARG 3 y
+			ARG 5 z
+		METHOD equals (Ljava/lang/Object;)Z
+			ARG 1 o
+		METHOD method_1_10097 resolve (Lnet/minecraft/class_243;Lnet/minecraft/class_241;)Lnet/minecraft/class_243;
+			ARG 1 pos
+			ARG 2 rot

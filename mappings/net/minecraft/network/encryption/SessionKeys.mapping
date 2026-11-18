@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_1_2120 net/minecraft/network/encryption/SessionKeys
+	FIELD field_1_13047 ENCODER Lorg/apache/commons/codec/binary/Base32;
+	FIELD field_1_13048 SEPARATOR_BYTE B
+	METHOD method_1_13093 getIntegrityTag ()[B
+	METHOD method_1_13094 getAuthenticationTag ()Ljava/lang/String;
+	METHOD method_1_13095 getStreamKeyTo (Lnet/minecraft/class_1_2128$class_1_2130;)Ljavax/crypto/SecretKey;
+		ARG 1 recipient
+	METHOD method_1_13096 getStreamKeyFrom (Lnet/minecraft/class_1_2128$class_1_2130;)Ljavax/crypto/SecretKey;
+		ARG 1 sender
+	METHOD method_1_13097 getPeerInfo (Lnet/minecraft/class_1_2128$class_1_2130;)Lnet/minecraft/class_1_2123;
+		ARG 1 side

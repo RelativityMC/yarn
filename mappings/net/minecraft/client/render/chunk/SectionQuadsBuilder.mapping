@@ -43,3 +43,5 @@ CLASS net/minecraft/class_1_2019 net/minecraft/client/render/chunk/SectionQuadsB
 	METHOD method_1_12710 buildBuffer ()Lnet/minecraft/class_9801;
 	METHOD method_1_12711 writeQuadToBuffer (Lnet/minecraft/class_777;)V
 		ARG 1 quad
+	METHOD method_1_13174 decodeCoord (I)F
+		ARG 0 coord

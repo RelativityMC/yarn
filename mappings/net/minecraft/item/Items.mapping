@@ -1431,6 +1431,22 @@ CLASS net/minecraft/class_1802 net/minecraft/item/Items
 	METHOD method_1_9389 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
 		ARG 0 settings
 	METHOD method_1_9390 createFilledMapSettings ()Lnet/minecraft/class_1792$class_1793;
+	METHOD method_1_12531 (Lnet/minecraft/class_1767;Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_10192;
+		ARG 1 registries
+	METHOD method_1_13081 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
+		ARG 0 settings
+	METHOD method_1_13082 (Lnet/minecraft/class_1792$class_1793;)Lnet/minecraft/class_1792$class_1793;
+		ARG 0 settings
+	METHOD method_1_13083 registerBoat (Lnet/minecraft/class_5321;Lnet/minecraft/class_1299;)Lnet/minecraft/class_1792;
+		ARG 0 key
+		ARG 1 entityType
+	METHOD method_1_13084 registerMinecart (Lnet/minecraft/class_5321;Lnet/minecraft/class_1299;)Lnet/minecraft/class_1792;
+		ARG 0 key
+		ARG 1 entityType
+	METHOD method_1_13085 registerMinecart (Lnet/minecraft/class_5321;Lnet/minecraft/class_1299;Ljava/util/function/UnaryOperator;)Lnet/minecraft/class_1792;
+		ARG 0 key
+		ARG 1 entityType
+		ARG 2 settingsChanger
 	METHOD method_7989 register (Lnet/minecraft/class_1_784;Lnet/minecraft/class_2248;)Lnet/minecraft/class_1792;
 		ARG 0 key
 		ARG 1 block

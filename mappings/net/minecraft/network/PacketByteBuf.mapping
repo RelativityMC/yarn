@@ -268,6 +268,9 @@ CLASS net/minecraft/class_2540 net/minecraft/network/PacketByteBuf
 		COMMENT @see #readBitSet
 		ARG 1 bitSet
 		ARG 2 size
+	METHOD method_1_13092 toArray (Lio/netty/buffer/ByteBuf;I)[B
+		ARG 0 buf
+		ARG 1 size
 	METHOD method_10787 readIntArray ()[I
 		COMMENT Reads an array of primitive ints from this buf. The array first has a
 		COMMENT var int indicating its length, followed by the var int entries. The array

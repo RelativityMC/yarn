@@ -1,0 +1,13 @@
+CLASS net/minecraft/class_1_2125 net/minecraft/network/encryption/NetworkEncryption
+	FIELD field_1_13077 CIPHER_ALGORITHM Ljava/lang/String;
+	METHOD method_1_13120 initCipher (ILjava/security/Key;Ljavax/crypto/spec/IvParameterSpec;)Ljavax/crypto/Cipher;
+		ARG 0 opmode
+		ARG 1 key
+		ARG 2 params
+	CLASS class_1_2126 IvGenerator
+		FIELD field_1_13080 random Ljava/util/Random;
+		METHOD <init> ([B)V
+			ARG 1 signature
+		METHOD method_1_13121 generateIvParams ()Ljavax/crypto/spec/IvParameterSpec;
+		METHOD method_1_13122 generateIvPair ()Lnet/minecraft/class_1_2125$class_1_2127;
+	CLASS class_1_2127 IvPair

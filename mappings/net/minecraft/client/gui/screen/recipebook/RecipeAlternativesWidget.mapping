@@ -1,17 +1,47 @@
 CLASS net/minecraft/class_508 net/minecraft/client/gui/screen/recipebook/RecipeAlternativesWidget
+	FIELD field_1_13330 CRAFTING_OVERLAY_TEXTURES Lnet/minecraft/class_8666;
+	FIELD field_1_13331 FURNACE_OVERLAY_TEXTURES Lnet/minecraft/class_8666;
+	FIELD field_1_13332 columns I
+	FIELD field_1_13333 resultButton Lnet/minecraft/class_514;
+	FIELD field_1_13334 onPress Lnet/minecraft/class_507$class_1_2170;
 	FIELD field_3106 alternativeButtons Ljava/util/List;
 	FIELD field_3111 resultCollection Lnet/minecraft/class_516;
 	FIELD field_3112 furnace Z
 	FIELD field_45541 OVERLAY_RECIPE_TEXTURE Lnet/minecraft/class_2960;
 	FIELD field_52829 currentIndexProvider Lnet/minecraft/class_9938;
 	METHOD <init> (Lnet/minecraft/class_9938;ZLnet/minecraft/class_507$class_1_2170;)V
+		ARG 1 currentIndexProvider
 		ARG 2 furnace
+		ARG 3 onPress
+	METHOD method_1_13352 getCraftingInputSlots (Lnet/minecraft/class_10295;Lnet/minecraft/class_10352;)Ljava/util/List;
+		ARG 0 display
+		ARG 1 context
+	METHOD method_1_13353 getFurnaceInputSlots (Lnet/minecraft/class_10295;Lnet/minecraft/class_10352;)Ljava/util/List;
+		ARG 0 display
+		ARG 1 context
+	METHOD method_1_13354 createInputSlot (IILjava/util/List;)Lnet/minecraft/class_508$class_510;
+		ARG 0 col
+		ARG 1 row
+		ARG 2 choices
+	METHOD method_1_13355 focusFirstAlternative ()V
+	METHOD method_1_13356 getFocusedAlternative ()Lnet/minecraft/class_508$class_509;
+	METHOD method_1_13357 getHoveredAlternative ()Lnet/minecraft/class_508$class_509;
+	METHOD method_1_13358 getResultButton ()Lnet/minecraft/class_514;
+	METHOD method_1_13359 (Lnet/minecraft/class_10352;Ljava/util/List;Lnet/minecraft/class_10302;III)V
+		ARG 2 slot
+		ARG 3 index
+		ARG 4 col
+		ARG 5 row
 	METHOD method_2617 showAlternativesForResult (Lnet/minecraft/class_514;Lnet/minecraft/class_10352;ZII)V
+		ARG 1 resultButton
 		ARG 2 context
 		ARG 3 filteringCraftable
 		ARG 4 areaCenterX
 		ARG 5 areaCenterY
 	CLASS class_509 AlternativeButtonWidget
+		FIELD field_1_12600 currentIndexProvider Lnet/minecraft/class_9938;
+		FIELD field_1_13335 firstResult Lnet/minecraft/class_1799;
+		FIELD field_1_13336 overlayTextures Lnet/minecraft/class_8666;
 		FIELD field_3114 recipeId Lnet/minecraft/class_10298;
 		FIELD field_3115 craftable Z
 		FIELD field_52834 inputSlots Ljava/util/List;
@@ -19,8 +49,11 @@ CLASS net/minecraft/class_508 net/minecraft/client/gui/screen/recipebook/RecipeA
 			ARG 2 x
 			ARG 3 y
 			ARG 4 recipeId
+			ARG 5 firstResult
 			ARG 6 craftable
+			ARG 7 overlayTextures
 			ARG 8 inputSlots
+			ARG 9 currentIndexProvider
 	CLASS class_510 InputSlot
 		FIELD comp_2985 y I
 		FIELD comp_2986 x I

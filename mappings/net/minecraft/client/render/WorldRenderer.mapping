@@ -80,8 +80,10 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 		ARG 1 preparedFrame
 	METHOD method_1_7342 renderSolidGeometry (Lnet/minecraft/class_11532;Lnet/minecraft/class_11532$class_1_1722;Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_1_1317;Z)V
 		ARG 1 sectionRenderState
+		ARG 2 improvedFogState
 		ARG 3 preparedFrame
 		ARG 4 pass
+		ARG 5 checkWaterMask
 	METHOD method_1_7350 prepare ()V
 	METHOD method_1_8616 renderAlwaysOnTopFeatures (Lnet/minecraft/class_11684$class_1_875;Lnet/minecraft/class_276;Z)V
 		ARG 1 preparedFrame
@@ -130,6 +132,7 @@ CLASS net/minecraft/class_761 net/minecraft/client/render/WorldRenderer
 	METHOD method_1_10852 shouldRenderSky ()Z
 	METHOD method_1_12658 renderWaterMask (Lnet/minecraft/class_11684$class_1_875;)V
 		ARG 1 preparedFrame
+	METHOD method_1_13117 getImprovedFogState ()Lnet/minecraft/class_11532$class_1_1722;
 	METHOD method_3242 onResized (II)V
 		ARG 1 width
 		ARG 2 height

@@ -1,0 +1,62 @@
+CLASS net/minecraft/class_1_2128 net/minecraft/network/encryption/KeyNegotiation
+	FIELD field_1_13082 CLIENT_SIDE Lnet/minecraft/class_1_2128$class_1_2130;
+	FIELD field_1_13083 SERVER_SIDE Lnet/minecraft/class_1_2128$class_1_2130;
+	FIELD field_1_13084 KEY_PAIR_GENERATOR_PARAMS Ljava/security/spec/NamedParameterSpec;
+	FIELD field_1_13085 MAC_ALGORITHM Ljava/lang/String;
+	FIELD field_1_13087 KEY_PAIR_GENERATOR_ALGORITHM Ljava/lang/String;
+	FIELD field_1_13088 KEY_AGREEMENT_ALGORITHM Ljava/lang/String;
+	FIELD field_1_13089 EXTRA_SALT [B
+	FIELD field_1_13090 sessionCommonInfo Lnet/minecraft/class_1_2124;
+	FIELD field_1_13091 keyPair Ljava/security/KeyPair;
+	FIELD field_1_13092 name Ljava/lang/String;
+	FIELD field_1_13093 mySide Lnet/minecraft/class_1_2128$class_1_2130;
+	METHOD <init> (Lnet/minecraft/class_1_2124;Lnet/minecraft/class_1_2128$class_1_2130;Ljava/lang/String;Ljava/security/KeyPair;)V
+		ARG 1 sessionCommonInfo
+		ARG 2 mySide
+		ARG 3 name
+		ARG 4 keyPair
+	METHOD method_1_13123 getAuthenticationKdfPayload (Lnet/minecraft/class_1_2123;Lnet/minecraft/class_1_2123;)Ljava/lang/String;
+		ARG 1 a
+		ARG 2 b
+	METHOD method_1_13124 getSessionCommonInfo ()Lnet/minecraft/class_1_2124;
+	METHOD method_1_13125 getStreamKdfPayload (Lnet/minecraft/class_1_2123;Lnet/minecraft/class_1_2123;)Ljava/lang/String;
+		ARG 1 a
+		ARG 2 b
+	METHOD method_1_13126 forClient (Ljava/lang/String;IJZ)Lnet/minecraft/class_1_2128;
+		ARG 0 username
+		ARG 1 protocolVersion
+		ARG 2 salt
+		ARG 4 authenticationRequested
+	METHOD method_1_13127 generateKeyPair (Ljava/security/SecureRandom;)Ljava/security/KeyPair;
+		ARG 0 secureRandom
+	METHOD method_1_13128 deriveKeys (Lnet/minecraft/class_1_2123;)Lnet/minecraft/class_1_2120;
+		ARG 1 otherPeerInfo
+	METHOD method_1_13129 selectSideA (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+		ARG 1 me
+		ARG 2 other
+	METHOD method_1_13130 selectSideB (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+		ARG 1 me
+		ARG 2 other
+	METHOD method_1_13131 getPublicKey ()Ljava/security/PublicKey;
+	CLASS class_1_2129 ServerSideProvider
+		FIELD field_1_13094 keyPair Ljava/security/KeyPair;
+		FIELD field_1_13095 lastRotatedAt J
+		FIELD field_1_13096 rotationPeriodMs J
+		FIELD field_1_13097 insecureRandom Lnet/minecraft/class_5819;
+		FIELD field_1_13098 secureRandom Ljava/security/SecureRandom;
+		METHOD <init> (Ljava/security/SecureRandom;J)V
+			ARG 1 secureRandom
+			ARG 2 rotationPeriodMs
+		METHOD method_1_13132 startNegotiation (Lnet/minecraft/class_1_2124;Ljava/lang/String;)Lnet/minecraft/class_1_2128;
+			ARG 1 sessionCommonInfo
+			ARG 2 name
+		METHOD method_1_13133 startNegotiation (Lio/netty/channel/ChannelId;Ljava/lang/String;IZ)Lnet/minecraft/class_1_2128;
+			ARG 1 channelId
+			ARG 2 name
+			ARG 3 protocolVersion
+			ARG 4 authenticationRequested
+		METHOD method_1_13134 getSalt (Lio/netty/channel/ChannelId;)J
+			ARG 1 channelId
+		METHOD method_1_13135 rotateKeys ()V
+		METHOD method_1_13136 rotateKeysIfNeeded ()V
+	CLASS class_1_2130 Side

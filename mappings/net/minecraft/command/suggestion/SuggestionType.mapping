@@ -6,6 +6,8 @@ CLASS net/minecraft/class_1_2040 net/minecraft/command/suggestion/SuggestionType
 	METHOD method_1_12820 toProvider ()Lcom/mojang/brigadier/suggestion/SuggestionProvider;
 	METHOD method_1_12821 cast (Lcom/mojang/brigadier/suggestion/SuggestionProvider;)Lnet/minecraft/class_1_2040$class_1_2041;
 		ARG 0 provider
+	METHOD method_1_13201 getSuggestion (Lcom/mojang/brigadier/suggestion/SuggestionProvider;)Lnet/minecraft/class_1_2040;
+		ARG 0 provider
 	CLASS class_1_2041 Provider
 		METHOD getSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 			ARG 1 context

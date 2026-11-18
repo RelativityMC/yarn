@@ -1,4 +1,13 @@
 CLASS net/minecraft/class_507 net/minecraft/client/gui/screen/recipebook/RecipeBookWidget
+	FIELD field_1_13304 FILTER_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_13306 SEARCH_BOX_TEXT Lnet/minecraft/class_2561;
+	FIELD field_1_13309 TAB_TEXTURES Lnet/minecraft/class_8666;
+	FIELD field_1_13313 children Ljava/util/List;
+	FIELD field_1_13314 recipeAlternativesWidget Lnet/minecraft/class_508;
+	FIELD field_1_13315 screenHeight I
+	FIELD field_1_13316 screenWidth I
+	FIELD field_1_13317 tabNavigationWidget Lnet/minecraft/class_8089;
+	FIELD field_1_13318 tabManager Lnet/minecraft/class_8088;
 	FIELD field_3086 recipesArea Lnet/minecraft/class_513;
 	FIELD field_3087 searching Z
 	FIELD field_3088 toggleCraftableButton Lnet/minecraft/class_1_1747;
@@ -25,15 +34,50 @@ CLASS net/minecraft/class_507 net/minecraft/client/gui/screen/recipebook/RecipeB
 	METHOD <init> (Lnet/minecraft/class_1729;Ljava/util/List;)V
 		ARG 1 craftingScreenHandler
 		ARG 2 tabs
+	METHOD method_1_13319 closeAlternativesWidget ()Z
+	METHOD method_1_13320 openAlternativesWidget ()V
+	METHOD method_1_13321 focusSearchField ()Z
+	METHOD method_1_13322 getChildren ()Ljava/util/List;
+	METHOD method_1_13323 getGhostRecipeTooltip (Lnet/minecraft/class_1735;)Lnet/minecraft/class_7919;
+		ARG 1 slot
+	METHOD method_1_13324 hasAnyResultsIn (Lnet/minecraft/class_10287;Z)Z
+		ARG 1 category
+		ARG 2 filteringCraftable
+	METHOD method_1_13325 hasDisplayableRecipes (Lnet/minecraft/class_10287;)Z
+		ARG 1 category
+	METHOD method_1_13326 hideAlternativesWidget ()V
+	METHOD method_1_13328 (Lnet/minecraft/class_332;Lnet/minecraft/class_339;)V
+		ARG 1 child
+	METHOD method_1_13329 (Lnet/minecraft/class_332;Lnet/minecraft/class_339;)V
+		ARG 1 child
+	METHOD method_1_13330 (Lnet/minecraft/class_339;)Ljava/util/stream/Stream;
+		ARG 0 child
+	METHOD method_1_13331 (Lnet/minecraft/class_339;)V
+		ARG 0 widget
+	METHOD method_1_13332 (Lnet/minecraft/class_339;)V
+		ARG 0 widget
+	METHOD method_1_13333 (Lnet/minecraft/class_8087;)V
+		ARG 1 tab
+	METHOD method_1_13334 (Lnet/minecraft/class_8087;)V
+		ARG 0 tab
+	METHOD method_1_13335 (Lnet/minecraft/class_1_2141$class_1_2142;Lnet/minecraft/class_507$class_10329;Lnet/minecraft/class_1799;)V
+		ARG 2 secondaryIcon
+	METHOD method_1_13337 repeatRecipe (Z)Z
+		ARG 1 hasShift
+	METHOD method_1_13338 showAlternatives (Lnet/minecraft/class_514;)Z
+		ARG 1 resultButton
 	METHOD method_2576 triggerPirateSpeakEasterEgg (Ljava/lang/String;)V
 		ARG 1 search
 	METHOD method_2579 reset ()V
 	METHOD method_2581 drawGhostSlots (Lnet/minecraft/class_332;IIZ)V
 		ARG 1 context
+		ARG 2 x
+		ARG 3 y
 		ARG 4 resultHasPadding
 	METHOD method_2584 (Lnet/minecraft/class_516;)Z
 		ARG 0 resultCollection
 	METHOD method_2586 refreshSearchResults (Ljava/lang/String;)V
+		ARG 1 search
 	METHOD method_2587 refreshInputs ()V
 	METHOD method_2588 sendBookDataPacket ()V
 	METHOD method_2589 toggleFilteringCraftable ()V
@@ -41,6 +85,8 @@ CLASS net/minecraft/class_507 net/minecraft/client/gui/screen/recipebook/RecipeB
 	METHOD method_2591 toggleOpen ()V
 	METHOD method_2592 refresh ()V
 	METHOD method_2597 initialize (IILnet/minecraft/class_310;)V
+		ARG 1 screenWidth
+		ARG 2 screenHeight
 		ARG 3 client
 	METHOD method_2598 isClickOutsideBounds (DDIIII)Z
 		ARG 1 mouseX
@@ -67,6 +113,7 @@ CLASS net/minecraft/class_507 net/minecraft/client/gui/screen/recipebook/RecipeB
 		ARG 1 recipeResultCollection
 		ARG 2 recipeFinder
 	METHOD method_62044 onMouseClick (Lnet/minecraft/class_1_1961;)V
+		ARG 1 slotWidget
 	METHOD method_62045 isFilteringCraftable ()Z
 	METHOD method_62889 select (Lnet/minecraft/class_516;Lnet/minecraft/class_10298;Z)V
 		ARG 1 results
@@ -92,6 +139,11 @@ CLASS net/minecraft/class_507 net/minecraft/client/gui/screen/recipebook/RecipeB
 	METHOD method_76634 (Lnet/minecraft/class_1_1747;Ljava/lang/Boolean;)Lnet/minecraft/class_2960;
 		ARG 1 button
 		ARG 2 value
+	CLASS class_1_2170 PressAction
+		METHOD method_1_13339 accept (Lnet/minecraft/class_516;Lnet/minecraft/class_10298;Z)V
+			ARG 1 results
+			ARG 2 recipeId
+			ARG 3 craftAll
 	CLASS class_10329 Tab
 		METHOD <init> (Lnet/minecraft/class_1792;Lnet/minecraft/class_1792;Lnet/minecraft/class_10355;)V
 			ARG 1 primaryIcon
@@ -102,3 +154,5 @@ CLASS net/minecraft/class_507 net/minecraft/client/gui/screen/recipebook/RecipeB
 			ARG 2 category
 		METHOD <init> (Lnet/minecraft/class_10331;)V
 			ARG 1 type
+		METHOD method_1_13340 getCategoryText (Lnet/minecraft/class_10355;)Lnet/minecraft/class_2561;
+			ARG 0 category

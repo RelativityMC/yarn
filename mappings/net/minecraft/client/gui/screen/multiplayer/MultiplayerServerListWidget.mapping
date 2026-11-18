@@ -37,6 +37,8 @@ CLASS net/minecraft/class_4267 net/minecraft/client/gui/screen/multiplayer/Multi
 		ARG 4 height
 		ARG 5 top
 		ARG 6 bottom
+	METHOD method_1_13341 refreshIcons ()V
+	METHOD method_1_13342 init ()V
 	METHOD method_20125 setServers (Lnet/minecraft/class_641;)V
 		ARG 1 servers
 	METHOD method_20126 setLanServers (Ljava/util/List;)V
@@ -72,6 +74,10 @@ CLASS net/minecraft/class_4267 net/minecraft/client/gui/screen/multiplayer/Multi
 		METHOD <init> (Lnet/minecraft/class_4267;Lnet/minecraft/class_500;Lnet/minecraft/class_642;)V
 			ARG 2 screen
 			ARG 3 server
+		METHOD method_1_13343 onPingCallback ()V
+		METHOD method_1_13344 onVisible ()V
+		METHOD method_1_13345 fetchIcon ()V
+		METHOD method_1_13346 fetchIconIfClosed ()V
 		METHOD method_20133 getServer ()Lnet/minecraft/class_642;
 		METHOD method_20134 draw (Lnet/minecraft/class_332;IILnet/minecraft/class_2960;)V
 			ARG 1 context

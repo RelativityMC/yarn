@@ -7,6 +7,9 @@ CLASS net/minecraft/class_3611 net/minecraft/fluid/Fluid
 	FIELD field_1_12054 hasRandomTicks Z
 	FIELD field_1_12267 fallDistanceMultiplier F
 	FIELD field_1_12268 cameraSubmersionType Lnet/minecraft/class_5636;
+	FIELD field_1_13064 dripIntoCauldronChance Ljava/util/OptionalDouble;
+	FIELD field_1_13065 canPathfindThrough Z
+	FIELD field_1_13066 requireCenterSubmersion Z
 	FIELD field_15903 defaultState Lnet/minecraft/class_3610;
 	FIELD field_15904 STATE_IDS Lnet/minecraft/class_2361;
 	FIELD field_15905 stateManager Lnet/minecraft/class_2689;
@@ -22,6 +25,9 @@ CLASS net/minecraft/class_3611 net/minecraft/fluid/Fluid
 		ARG 1 world
 	METHOD method_1_12079 getFallDistanceMultiplier ()F
 	METHOD method_1_12080 getCameraSubmersionType ()Lnet/minecraft/class_5636;
+	METHOD method_1_13100 dripIntoCauldronChance ()Ljava/util/OptionalDouble;
+	METHOD method_1_13101 requireCenterSubmersion ()Z
+	METHOD method_1_13102 canPathfindThrough ()Z
 	METHOD method_15774 getBucketItem ()Lnet/minecraft/class_5321;
 	METHOD method_15775 appendProperties (Lnet/minecraft/class_2689$class_2690;)V
 		ARG 1 builder
@@ -97,6 +103,9 @@ CLASS net/minecraft/class_3611 net/minecraft/fluid/Fluid
 		FIELD field_1_12060 hasRandomTicks Z
 		FIELD field_1_12269 fallDistanceMultiplier F
 		FIELD field_1_12270 cameraSubmersionType Lnet/minecraft/class_5636;
+		FIELD field_1_13067 dripIntoCauldronChance Ljava/util/OptionalDouble;
+		FIELD field_1_13068 canPathfindThrough Z
+		FIELD field_1_13069 requireCenterSubmersion Z
 		METHOD method_1_11745 bucketItem (Lnet/minecraft/class_5321;)Lnet/minecraft/class_3611$class_1_1851;
 			ARG 1 bucketItem
 		METHOD method_1_11746 movementSpeedMultiplier (F)Lnet/minecraft/class_3611$class_1_1851;
@@ -113,3 +122,7 @@ CLASS net/minecraft/class_3611 net/minecraft/fluid/Fluid
 			ARG 1 fallDistanceMultiplier
 		METHOD method_1_12082 cameraSubmersionType (Lnet/minecraft/class_5636;)Lnet/minecraft/class_3611$class_1_1851;
 			ARG 1 cameraSubmersionType
+		METHOD method_1_13103 dripIntoCauldronChance (D)Lnet/minecraft/class_3611$class_1_1851;
+			ARG 1 dripIntoCauldronChance
+		METHOD method_1_13104 canPathfindThrough ()Lnet/minecraft/class_3611$class_1_1851;
+		METHOD method_1_13105 requireCenterSubmersion ()Lnet/minecraft/class_3611$class_1_1851;

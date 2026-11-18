@@ -19,3 +19,5 @@ CLASS net/minecraft/class_1_1377 com/mojang/blaze3d/shaders/SpvcHelper
 		ARG 1 message
 	METHOD method_1_10672 shaderTypeToModel (Lnet/minecraft/class_1_1229;)I
 		ARG 0 shaderType
+	METHOD method_1_13180 describeValidationError (I)Ljava/lang/String;
+		ARG 0 status

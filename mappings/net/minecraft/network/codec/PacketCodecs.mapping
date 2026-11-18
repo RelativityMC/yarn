@@ -4,6 +4,7 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 	COMMENT @see PacketCodec
 	FIELD field_1_9388 BIT_SET Lnet/minecraft/class_9139;
 	FIELD field_1_9389 INSTANT_MS Lnet/minecraft/class_9139;
+	FIELD field_1_9390 X509_ALGORITHM_BYTES I
 	FIELD field_1_12685 PATTERN Lnet/minecraft/class_9139;
 	FIELD field_48547 BOOLEAN Lnet/minecraft/class_9139;
 		COMMENT A codec for a boolean value.
@@ -153,6 +154,15 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 		ARG 2 fallback
 	METHOD method_1_12633 (Ljava/lang/String;)Ljava/util/regex/Pattern;
 		ARG 0 string
+	METHOD method_1_13106 byteArrayExact (I)Lnet/minecraft/class_9139;
+		ARG 0 size
+	METHOD method_1_13107 (Ljava/security/KeyFactory;[B)Ljava/security/PublicKey;
+		ARG 1 bytes
+	METHOD method_1_13108 (Ljava/security/KeyFactory;Ljava/security/PublicKey;)[B
+		ARG 1 key
+	METHOD method_1_13109 publicKey (Ljava/lang/String;I)Lnet/minecraft/class_9139;
+		ARG 0 algorithm
+		ARG 1 size
 	METHOD method_56363 toList ()Lnet/minecraft/class_9139$class_9140;
 		COMMENT Used to make a codec for a list of values using {@link PacketCodec#collect}.
 		COMMENT This creates an {@link java.util.ArrayList}, so the decoded result can be modified.
@@ -332,6 +342,7 @@ CLASS net/minecraft/class_9135 net/minecraft/network/codec/PacketCodecs
 	METHOD method_68862 (ILjava/util/function/BiFunction;Lnet/minecraft/class_9139;)Lnet/minecraft/class_9139;
 		ARG 2 codec
 	METHOD method_68863 (Lio/netty/buffer/ByteBuf;Lio/netty/buffer/ByteBuf;)Lio/netty/buffer/ByteBuf;
+		ARG 0 entire
 		ARG 1 slice
 	METHOD method_68864 lengthPrepended (I)Lnet/minecraft/class_9139$class_9140;
 		ARG 0 maxSize

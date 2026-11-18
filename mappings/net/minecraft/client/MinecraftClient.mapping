@@ -55,6 +55,7 @@ CLASS net/minecraft/class_310 net/minecraft/client/MinecraftClient
 	FIELD field_1_10060 LEVEL_SECTION_CATEGORY Lcom/mojang/jtracy/SectionCategory;
 	FIELD field_1_10061 levelSection Lcom/mojang/jtracy/Section;
 	FIELD field_1_10921 gameProfileResolver Lnet/minecraft/class_11755;
+	FIELD field_1_13041 presenceStatusManager Lnet/minecraft/class_1_2158;
 	FIELD field_1687 world Lnet/minecraft/class_638;
 		COMMENT Represents the world the client is currently viewing.
 		COMMENT This field is not null when in game.

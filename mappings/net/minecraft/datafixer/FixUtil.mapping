@@ -14,6 +14,32 @@ CLASS net/minecraft/class_9228 net/minecraft/datafixer/FixUtil
 		ARG 0 input
 		ARG 1 type
 		ARG 2 op
+	METHOD method_1_13138 fixTooltipDisplayComponent (Lcom/mojang/serialization/Dynamic;Lnet/minecraft/class_9228$class_1_2131;)Lcom/mojang/serialization/Dynamic;
+		ARG 0 tooltipDisplay
+		ARG 1 filter
+	METHOD method_1_13139 fixDataComponents (Lcom/mojang/serialization/Dynamic;Lnet/minecraft/class_9228$class_1_2131;Z)Lcom/mojang/serialization/Dynamic;
+		ARG 0 dataComponents
+		ARG 1 filter
+		ARG 2 fixPositives
+	METHOD method_1_13140 fixRemainderComponents (Lcom/mojang/serialization/Dynamic;Lnet/minecraft/class_9228$class_1_2131;Z)Lcom/mojang/serialization/Dynamic;
+		ARG 0 dataComponents
+		ARG 1 filter
+		ARG 2 fixPositives
+	METHOD method_1_13141 (Lnet/minecraft/class_9228$class_1_2131;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 hiddenComponents
+	METHOD method_1_13142 (Lcom/mojang/serialization/Dynamic;Lnet/minecraft/class_9228$class_1_2131;Ljava/util/stream/Stream;)Lcom/mojang/serialization/Dynamic;
+		ARG 2 hiddenComponentsStream
+	METHOD method_1_13143 (Lnet/minecraft/class_9228$class_1_2131;Lcom/mojang/serialization/Dynamic;)Ljava/util/stream/Stream;
+		ARG 1 hiddenComponent
+	METHOD method_1_13144 (Lnet/minecraft/class_9228$class_1_2131;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 tooltipDisplay
+	METHOD method_1_13145 (Lnet/minecraft/class_9228$class_1_2131;Ljava/util/Map;ZLcom/mojang/serialization/Dynamic;Lcom/mojang/serialization/Dynamic;)V
+		ARG 3 componentId
+		ARG 4 componentValue
+	METHOD method_1_13146 (Ljava/util/Map;Lcom/mojang/serialization/Dynamic;Lcom/mojang/serialization/Dynamic;Ljava/lang/String;)V
+		ARG 3 filteredId
+	METHOD method_1_13147 (Ljava/util/Map;Lcom/mojang/serialization/Dynamic;Lcom/mojang/serialization/Dynamic;Ljava/lang/String;)V
+		ARG 3 filteredId
 	METHOD method_56943 fixBlockPos (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
 		ARG 0 dynamic
 	METHOD method_57182 withType (Lcom/mojang/datafixers/types/Type;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
@@ -55,3 +81,15 @@ CLASS net/minecraft/class_9228 net/minecraft/datafixer/FixUtil
 		ARG 0 dest
 		ARG 1 opticFinder
 		ARG 2 src
+	CLASS class_1_2131 StringFilter
+		METHOD method_1_13148 filter (Ljava/lang/String;)Ljava/util/stream/Stream;
+			ARG 1 string
+		METHOD method_1_13149 (Ljava/lang/String;Ljava/lang/String;)Ljava/util/stream/Stream;
+			ARG 1 string
+		METHOD method_1_13150 (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/stream/Stream;
+			ARG 2 string
+		METHOD method_1_13151 erase (Ljava/lang/String;)Lnet/minecraft/class_9228$class_1_2131;
+			ARG 0 value
+		METHOD method_1_13152 replace (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/class_9228$class_1_2131;
+			ARG 0 in
+			ARG 1 out

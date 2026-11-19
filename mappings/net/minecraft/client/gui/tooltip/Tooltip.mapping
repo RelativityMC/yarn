@@ -31,6 +31,10 @@ CLASS net/minecraft/class_7919 net/minecraft/client/gui/tooltip/Tooltip
 		ARG 1 stack
 	METHOD method_1_12230 isTall ()Z
 	METHOD method_1_12657 usesHoveredPositioning ()Z
+	METHOD method_1_13116 of (Ljava/util/List;Lnet/minecraft/class_2561;Lnet/minecraft/class_1799;)Lnet/minecraft/class_7919;
+		ARG 0 lines
+		ARG 1 narration
+		ARG 2 stack
 	METHOD method_47405 getLines (Lnet/minecraft/class_310;)Ljava/util/List;
 		ARG 1 client
 	METHOD method_47406 wrapLines (Lnet/minecraft/class_310;Lnet/minecraft/class_2561;)Ljava/util/List;

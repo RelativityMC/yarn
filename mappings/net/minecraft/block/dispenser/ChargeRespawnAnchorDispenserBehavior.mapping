@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_2171 net/minecraft/block/dispenser/ChargeRespawnAnchorDispenserBehavior
+	FIELD field_1_13319 INSTANCE Lnet/minecraft/class_1_2171;

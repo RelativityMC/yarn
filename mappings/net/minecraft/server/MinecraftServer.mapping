@@ -24,6 +24,7 @@ CLASS net/minecraft/server/MinecraftServer
 	FIELD field_1_1405 weatherState Lnet/minecraft/class_1_216;
 	FIELD field_1_1406 worldGenSettings Lnet/minecraft/class_7726;
 	FIELD field_1_5953 SERVER_THREAD_NAME Ljava/lang/String;
+	FIELD field_1_13046 negotiationProvider Lnet/minecraft/class_1_2128$class_1_2129;
 	FIELD field_4543 onlineMode Z
 	FIELD field_4544 running Z
 	FIELD field_4546 LOGGER Lorg/slf4j/Logger;
@@ -109,11 +110,13 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 3 dataPackManager
 		ARG 4 saveLoader
 		ARG 5 gameRules
+		ARG 6 proxy
 		ARG 7 dataFixer
 		ARG 8 apiServices
 		ARG 9 chunkLoadProgress
 		ARG 10 throwOnCrashReport
 		ARG 11 managementListener
+		ARG 12 keyRotationPeriodMs
 	METHOD method_1_402 checkLowDiskSpaceWarning ()V
 	METHOD method_1_847 getClocks ()Lnet/minecraft/class_1_109;
 	METHOD method_1_848 getOverworldGameRules ()Lnet/minecraft/class_1928;
@@ -139,6 +142,7 @@ CLASS net/minecraft/server/MinecraftServer
 	METHOD method_1_10526 (Lnet/minecraft/class_3222;)Ljava/lang/String;
 		ARG 0 player
 	METHOD method_1_10527 getStatusConnectDetails ()Ljava/lang/String;
+	METHOD method_1_13091 getNegotiationProvider ()Lnet/minecraft/class_1_2128$class_1_2129;
 	METHOD method_3718 isFlightEnabled ()Z
 	METHOD method_3723 save (ZZZ)Z
 		COMMENT Saves the server to the data storage device.

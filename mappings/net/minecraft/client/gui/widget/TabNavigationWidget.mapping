@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_8089 net/minecraft/client/gui/widget/TabNavigationWidget
 	FIELD field_1_10730 MAC_USAGE_NARRATION_TEXT Lnet/minecraft/class_2561;
 	FIELD field_1_12504 POSITION_TAB_NARRATION_SOURCE Lnet/minecraft/class_1_1951;
+	FIELD field_1_13221 POSITION_TAB_INDEX_NARRATION_SOURCE Lnet/minecraft/class_1_1951;
 	FIELD field_42146 tabManager Lnet/minecraft/class_8088;
 	FIELD field_42147 tabs Lcom/google/common/collect/ImmutableList;
 	FIELD field_42148 tabButtons Lcom/google/common/collect/ImmutableList;
@@ -12,18 +13,29 @@ CLASS net/minecraft/class_8089 net/minecraft/client/gui/widget/TabNavigationWidg
 		ARG 2 y
 		ARG 3 width
 		ARG 4 height
-		ARG 7 tagManager
+		ARG 5 displayAxis
+		ARG 6 spacing
+		ARG 7 tabManager
+		ARG 8 tabsByAlignment
+		ARG 9 message
 	METHOD method_1_5867 relayout (I)V
 		ARG 1 width
 	METHOD method_1_5868 (DDLjava/util/concurrent/atomic/AtomicBoolean;Lnet/minecraft/class_8021;)V
 		ARG 5 element
 	METHOD method_1_12389 getHoveredTabButton ()Lnet/minecraft/class_8209;
+	METHOD method_1_13256 builder (Lnet/minecraft/class_8088;IIII)Lnet/minecraft/class_8089$class_8090;
+		ARG 0 tabManager
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
 	METHOD method_48623 builder (Lnet/minecraft/class_8088;IIIILnet/minecraft/class_8667$class_8668;)Lnet/minecraft/class_8089$class_8090;
 		ARG 0 tabManager
 		ARG 1 x
 		ARG 2 y
 		ARG 3 width
 		ARG 4 height
+		ARG 5 displayAxis
 	METHOD method_48987 selectTab (IZ)V
 		ARG 1 index
 		ARG 2 clickSound
@@ -41,10 +53,26 @@ CLASS net/minecraft/class_8089 net/minecraft/client/gui/widget/TabNavigationWidg
 	METHOD method_71522 setTabActive (IZ)V
 		ARG 1 index
 		ARG 2 active
+	CLASS class_1_2154 Alignment
+		FIELD field_1_13225 offset F
+		METHOD <init> (Ljava/lang/String;IF)V
+			ARG 3 offset
+	CLASS class_1_2155 List
+		FIELD field_1_13230 buttons Ljava/util/List;
+		FIELD field_1_13231 tabs Ljava/util/List;
+		METHOD method_1_13263 addTab (Lnet/minecraft/class_8209;Lnet/minecraft/class_8087;)V
+			ARG 1 button
+			ARG 2 tab
+		METHOD method_1_13264 getButtons ()Ljava/util/List;
+		METHOD method_1_13265 getTabs ()Ljava/util/List;
 	CLASS class_8090 Builder
 		FIELD field_1_6709 height I
 		FIELD field_1_6711 x I
 		FIELD field_1_6712 y I
+		FIELD field_1_13226 tabsByAlignment Ljava/util/Map;
+		FIELD field_1_13227 message Lnet/minecraft/class_2561;
+		FIELD field_1_13228 displayAxis Lnet/minecraft/class_8667$class_8668;
+		FIELD field_1_13229 spacing I
 		FIELD field_42151 width I
 		FIELD field_42152 tabManager Lnet/minecraft/class_8088;
 		METHOD <init> (Lnet/minecraft/class_8088;IIIILnet/minecraft/class_8667$class_8668;)V
@@ -53,6 +81,19 @@ CLASS net/minecraft/class_8089 net/minecraft/client/gui/widget/TabNavigationWidg
 			ARG 3 y
 			ARG 4 width
 			ARG 5 height
+			ARG 6 displayAxis
+		METHOD method_1_13258 tab (Lnet/minecraft/class_8089$class_1_2154;Lnet/minecraft/class_8209;Lnet/minecraft/class_8087;)Lnet/minecraft/class_8089$class_8090;
+			ARG 1 alignment
+			ARG 2 button
+			ARG 3 tab
+		METHOD method_1_13259 getListFor (Lnet/minecraft/class_8089$class_1_2154;)Lnet/minecraft/class_8089$class_1_2155;
+			ARG 1 alignment
+		METHOD method_1_13260 (Lnet/minecraft/class_8089$class_1_2154;)Lnet/minecraft/class_8089$class_1_2155;
+			ARG 0 a
+		METHOD method_1_13261 message (Lnet/minecraft/class_2561;)Lnet/minecraft/class_8089$class_8090;
+			ARG 1 message
+		METHOD method_1_13262 spacing (I)Lnet/minecraft/class_8089$class_8090;
+			ARG 1 spacing
 		METHOD method_48627 build ()Lnet/minecraft/class_8089;
 		METHOD method_48631 tab (Lnet/minecraft/class_8209;Lnet/minecraft/class_8087;)Lnet/minecraft/class_8089$class_8090;
 			ARG 1 tabButton

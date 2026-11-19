@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_2146 net/minecraft/block/dispenser/TntDispenserBehavior
+	FIELD field_1_13183 INSTANCE Lnet/minecraft/class_1_2146;

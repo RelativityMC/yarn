@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_2139 net/minecraft/block/dispenser/EquipChestDispenserBehavior
+	FIELD field_1_13117 INSTANCE Lnet/minecraft/class_1_2139;
+	METHOD method_58766 (Lnet/minecraft/class_1492;)Z
+		ARG 0 donkey

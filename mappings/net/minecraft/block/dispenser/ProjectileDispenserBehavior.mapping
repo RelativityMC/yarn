@@ -1,0 +1,32 @@
+CLASS net/minecraft/class_1_2165 net/minecraft/block/dispenser/ProjectileDispenserBehavior
+	FIELD field_1_13287 DEFAULT Lnet/minecraft/class_1_2165;
+	FIELD field_1_13288 DEFAULT_POWER F
+	FIELD field_1_13289 DEFAULT_SOUND Lnet/minecraft/class_1_2165$class_1_2166;
+	FIELD field_1_13290 DEFAULT_UNCERTAINTY F
+	METHOD method_1_13306 builder ()Lnet/minecraft/class_1_2165$class_9465;
+	METHOD method_1_13307 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	CLASS class_1_2166 Sound
+		METHOD <init> (Lnet/minecraft/class_6880;FF)V
+			ARG 1 sound
+			ARG 2 volume
+			ARG 3 pitch
+		METHOD method_1_13311 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+			ARG 0 instance
+	CLASS class_9465 Builder
+		FIELD field_1_13292 offset Lnet/minecraft/class_243;
+		FIELD field_1_13293 scale D
+		FIELD field_50149 uncertainty F
+		FIELD field_50150 power F
+		FIELD field_50151 sound Ljava/util/Optional;
+		METHOD method_1_13308 movement (Lnet/minecraft/class_243;D)Lnet/minecraft/class_1_2165$class_9465;
+			ARG 1 offset
+			ARG 2 scale
+		METHOD method_1_13309 verticalMovement ()Lnet/minecraft/class_1_2165$class_9465;
+		METHOD method_1_13310 sound (Lnet/minecraft/class_1_2165$class_1_2166;)Lnet/minecraft/class_1_2165$class_9465;
+			ARG 1 sound
+		METHOD method_58664 build ()Lnet/minecraft/class_1_2165;
+		METHOD method_58665 uncertainty (F)Lnet/minecraft/class_1_2165$class_9465;
+			ARG 1 uncertainty
+		METHOD method_58669 power (F)Lnet/minecraft/class_1_2165$class_9465;
+			ARG 1 power

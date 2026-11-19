@@ -1,7 +1,18 @@
 CLASS net/minecraft/class_1_2027 net/minecraft/command/argument/StringArgument
+	METHOD <init> (Lcom/mojang/brigadier/arguments/StringArgumentType;)V
+		ARG 1 stringArgumentType
 	METHOD method_1_12745 getString (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Ljava/lang/String;
 		ARG 0 context
 		ARG 1 name
 	METHOD method_1_12746 greedy ()Lcom/mojang/brigadier/arguments/ArgumentType;
 	METHOD method_1_12750 quoted ()Lcom/mojang/brigadier/arguments/ArgumentType;
 	METHOD method_1_12751 word ()Lcom/mojang/brigadier/arguments/ArgumentType;
+	CLASS class_1_2136 Greedy
+		FIELD field_1_13111 INSTANCE Lnet/minecraft/class_1_2027$class_1_2136;
+		FIELD field_1_13112 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
+	CLASS class_1_2137 Quoted
+		FIELD field_1_13113 INSTANCE Lnet/minecraft/class_1_2027$class_1_2137;
+		FIELD field_1_13114 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;
+	CLASS class_1_2138 Word
+		FIELD field_1_13115 INSTANCE Lnet/minecraft/class_1_2027$class_1_2138;
+		FIELD field_1_13116 SERIALIZER Lnet/minecraft/class_1_2055$class_1_2060;

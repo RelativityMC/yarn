@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_2153 net/minecraft/block/dispenser/EmptyBucketDispenserBehavior
+	FIELD field_1_13218 INSTANCE Lnet/minecraft/class_1_2153;

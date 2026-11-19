@@ -58,6 +58,7 @@ CLASS net/minecraft/class_2535 net/minecraft/network/ClientConnection
 		ARG 2 rejectBadPackets
 	METHOD method_1_11731 setOutboundCompression (I)V
 		ARG 1 compressionThreshold
+	METHOD method_1_13086 getChannelId ()Lio/netty/channel/ChannelId;
 	METHOD method_10743 send (Lnet/minecraft/class_2596;)V
 		ARG 1 packet
 	METHOD method_10744 getPacketListener ()Lnet/minecraft/class_2547;

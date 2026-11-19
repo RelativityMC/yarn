@@ -1,0 +1,65 @@
+CLASS net/minecraft/class_1_2141 net/minecraft/client/gui/widget/IconTabButtonWidget
+	FIELD field_1_13147 ICON_TRIGGER_STRETCH F
+	FIELD field_1_13148 STARTING_TRIGGER_TICKS F
+	FIELD field_1_13149 ICON_TEXTURE_SIZE I
+	FIELD field_1_13150 triggerTicks F
+	FIELD field_1_13151 primaryIcon Lnet/minecraft/class_1799;
+	FIELD field_1_13152 iconOffsetX I
+	FIELD field_1_13153 iconOffsetY I
+	FIELD field_1_13154 secondaryIcon Lnet/minecraft/class_1799;
+	FIELD field_1_13155 iconDistanceX I
+	FIELD field_1_13156 buttonTextures Lnet/minecraft/class_8666;
+	FIELD field_1_13157 selectedShiftX I
+	METHOD <init> (Lnet/minecraft/class_8088;Lnet/minecraft/class_8087;IILnet/minecraft/class_2561;Lnet/minecraft/class_8666;Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;IIII)V
+		ARG 1 tabManager
+		ARG 2 tab
+		ARG 3 width
+		ARG 4 height
+		ARG 5 message
+		ARG 6 buttonTextures
+		ARG 7 primaryIcon
+		ARG 8 secondaryIcon
+		ARG 9 iconDistanceX
+		ARG 10 iconOffsetX
+		ARG 11 iconOffsetY
+		ARG 12 selectedShiftX
+	METHOD method_1_13187 builder (Lnet/minecraft/class_8088;Lnet/minecraft/class_8087;Lnet/minecraft/class_8666;)Lnet/minecraft/class_1_2141$class_1_2142;
+		ARG 0 tabManager
+		ARG 1 tab
+		ARG 2 buttonTextures
+	METHOD method_1_13188 trigger ()V
+	CLASS class_1_2142 Builder
+		FIELD field_1_13158 height I
+		FIELD field_1_13159 primaryIcon Lnet/minecraft/class_1799;
+		FIELD field_1_13160 iconOffsetX I
+		FIELD field_1_13161 iconOffsetY I
+		FIELD field_1_13162 message Lnet/minecraft/class_2561;
+		FIELD field_1_13163 secondaryIcon Lnet/minecraft/class_1799;
+		FIELD field_1_13164 iconDistanceX I
+		FIELD field_1_13165 buttonTextures Lnet/minecraft/class_8666;
+		FIELD field_1_13166 tab Lnet/minecraft/class_8087;
+		FIELD field_1_13167 tabManager Lnet/minecraft/class_8088;
+		FIELD field_1_13168 width I
+		FIELD field_1_13169 selectedShiftX I
+		METHOD <init> (Lnet/minecraft/class_8088;Lnet/minecraft/class_8087;Lnet/minecraft/class_8666;)V
+			ARG 1 tabManager
+			ARG 2 tab
+			ARG 3 buttonTextures
+		METHOD method_1_13189 build ()Lnet/minecraft/class_1_2141;
+		METHOD method_1_13190 icon (Lnet/minecraft/class_1799;)Lnet/minecraft/class_1_2141$class_1_2142;
+			ARG 1 icon
+		METHOD method_1_13191 iconOffsetX (I)Lnet/minecraft/class_1_2141$class_1_2142;
+			ARG 1 iconOffsetX
+		METHOD method_1_13192 iconOffsetY (I)Lnet/minecraft/class_1_2141$class_1_2142;
+			ARG 1 iconOffsetY
+		METHOD method_1_13193 icon (Lnet/minecraft/class_1799;Lnet/minecraft/class_1799;I)Lnet/minecraft/class_1_2141$class_1_2142;
+			ARG 1 primaryIcon
+			ARG 2 secondaryIcon
+			ARG 3 iconDistanceX
+		METHOD method_1_13194 message (Lnet/minecraft/class_2561;)Lnet/minecraft/class_1_2141$class_1_2142;
+			ARG 1 message
+		METHOD method_1_13195 size (II)Lnet/minecraft/class_1_2141$class_1_2142;
+			ARG 1 width
+			ARG 2 height
+		METHOD method_1_13196 selectedShiftX (I)Lnet/minecraft/class_1_2141$class_1_2142;
+			ARG 1 selectedShiftX

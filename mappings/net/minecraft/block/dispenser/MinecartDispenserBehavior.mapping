@@ -1,3 +1,4 @@
 CLASS net/minecraft/class_10242 net/minecraft/block/dispenser/MinecartDispenserBehavior
+	FIELD field_1_13263 INSTANCE Lnet/minecraft/class_10242;
 	METHOD method_64377 getRailShape (Lnet/minecraft/class_2680;)Lnet/minecraft/class_2768;
 		ARG 0 state

@@ -104,6 +104,8 @@ CLASS net/minecraft/class_4516 net/minecraft/test/TestContext
 		ARG 1 pos
 		ARG 2 block
 		ARG 3 flags
+	METHOD method_1_13183 isDiscardableEntity (Lnet/minecraft/class_1297;)Z
+		ARG 0 entity
 	METHOD method_35943 getWorld ()Lnet/minecraft/class_3218;
 	METHOD method_35945 pushButton (III)V
 		ARG 1 x

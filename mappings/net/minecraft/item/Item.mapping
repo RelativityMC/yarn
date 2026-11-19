@@ -37,6 +37,8 @@ CLASS net/minecraft/class_1792 net/minecraft/item/Item
 	FIELD field_54952 ENTRY_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_55708 ENTRY_PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_56296 DEFAULT_BLOCKS_ATTACKS_MAX_USE_TIME I
+	METHOD <init> (Lnet/minecraft/class_1792$class_1793;)V
+		ARG 1 settings
 	METHOD method_1_821 (Lnet/minecraft/class_6880;)Lcom/mojang/serialization/DataResult;
 		ARG 0 item
 	METHOD method_7836 use (Lnet/minecraft/class_1937;Lnet/minecraft/class_1657;Lnet/minecraft/class_1268;)Lnet/minecraft/class_1269;
@@ -357,6 +359,8 @@ CLASS net/minecraft/class_1792 net/minecraft/item/Item
 			ARG 4 key
 		METHOD method_1_831 (Lnet/minecraft/class_9323$class_9324;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_5321;)V
 			ARG 1 builder
+			ARG 2 lookup
+			ARG 3 key
 		METHOD method_1_832 (Lnet/minecraft/class_9323;)V
 			ARG 0 components
 		METHOD method_1_833 (Lnet/minecraft/class_5321;Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_9792;
@@ -382,6 +386,31 @@ CLASS net/minecraft/class_1792 net/minecraft/item/Item
 		METHOD method_1_8249 supportsSignText ()Lnet/minecraft/class_1792$class_1793;
 		METHOD method_1_8250 villagerFood (I)Lnet/minecraft/class_1792$class_1793;
 			ARG 1 nutrition
+		METHOD method_1_9858 (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_6880;
+			ARG 0 registries
+		METHOD method_1_9859 (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_6880;
+			ARG 0 registries
+		METHOD method_1_9860 (Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_6880;
+			ARG 0 registries
+		METHOD method_1_12522 (Lnet/minecraft/class_1741;Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_10192;
+			ARG 1 registries
+		METHOD method_1_12523 (Lnet/minecraft/class_1741;Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_10192;
+			ARG 1 registries
+		METHOD method_1_12524 (Lnet/minecraft/class_6862;Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_9890;
+			ARG 1 registries
+		METHOD method_1_12525 (Lnet/minecraft/class_1741;Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_10192;
+			ARG 1 registries
+		METHOD method_1_13075 dispenseBehavior (Lnet/minecraft/class_5321;)Lnet/minecraft/class_1792$class_1793;
+			ARG 1 dispenseBehavior
+		METHOD method_1_13076 initializeDefault (Lnet/minecraft/class_9323$class_9324;Lnet/minecraft/class_7225$class_7874;)V
+			ARG 0 builder
+			ARG 1 lookup
+		METHOD method_1_13077 (Lnet/minecraft/class_5321;Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_6880;
+			ARG 1 registries
+		METHOD method_1_13078 (Lnet/minecraft/class_9323$class_9324;Lnet/minecraft/class_7225$class_7874;Lnet/minecraft/class_5321;)V
+			ARG 0 builder
+			ARG 1 lookup
+			ARG 2 key
 		METHOD method_7889 maxCount (I)Lnet/minecraft/class_1792$class_1793;
 			COMMENT Sets the maximum stack count of any ItemStack with an Item using this Settings instance.
 			COMMENT

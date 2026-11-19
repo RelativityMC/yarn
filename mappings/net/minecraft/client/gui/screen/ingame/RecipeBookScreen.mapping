@@ -5,9 +5,23 @@ CLASS net/minecraft/class_10260 net/minecraft/client/gui/screen/ingame/RecipeBoo
 		ARG 2 recipeBook
 		ARG 3 inventory
 		ARG 4 title
+	METHOD method_1_13362 getRecipeBookButtonNavigationOrder ()I
 	METHOD method_64509 getRecipeBookButtonPos ()Lnet/minecraft/class_8029;
 	METHOD method_64510 onRecipeBookToggled ()V
 	METHOD method_64511 shouldAddPaddingToGhostResult ()Z
 	METHOD method_64512 addRecipeBook ()V
 	METHOD method_64513 (Lnet/minecraft/class_4185;)V
 		ARG 1 button
+	CLASS class_1_1983 RecipeBookButtonWidget
+		FIELD field_1_12617 BUTTON_TEXT Lnet/minecraft/class_2561;
+		FIELD field_1_12618 STATE_CLOSED_TEXT Lnet/minecraft/class_2561;
+		FIELD field_1_12619 STATE_OPEN_TEXT Lnet/minecraft/class_2561;
+		FIELD field_1_12620 USAGE_FOCUSED_CLOSE_TEXT Lnet/minecraft/class_2561;
+		FIELD field_1_12621 USAGE_FOCUSED_OPEN_TEXT Lnet/minecraft/class_2561;
+		FIELD field_1_12622 USAGE_HOVERED_CLOSE_TEXT Lnet/minecraft/class_2561;
+		FIELD field_1_12623 USAGE_HOVERED_OPEN_TEXT Lnet/minecraft/class_2561;
+		FIELD field_1_12624 TOOLTIP Lnet/minecraft/class_7919;
+		METHOD <init> (Lnet/minecraft/class_10260;IILnet/minecraft/class_4185$class_4241;)V
+			ARG 2 x
+			ARG 3 y
+			ARG 4 onPress

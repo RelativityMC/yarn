@@ -12,6 +12,8 @@ CLASS net/minecraft/class_1_951 net/minecraft/client/friend/InvitationManager
 		ARG 2 friendsService
 	METHOD method_1_5778 getPresenceResponse ()Lcom/mojang/authlib/services/response/PresenceResponse;
 	METHOD method_1_5779 getPresenceStatus ()Lcom/mojang/authlib/services/response/PresenceStatus;
+	METHOD method_1_5790 setPresenceResponse (Lcom/mojang/authlib/services/response/PresenceResponse;)V
+		ARG 1 presenceResponse
 	METHOD method_1_5794 shouldUpdatePresenceStatus ()Z
 	METHOD method_1_5795 checkPresenceStatus ()V
 	METHOD method_1_5796 markDirty ()V
@@ -21,3 +23,5 @@ CLASS net/minecraft/class_1_951 net/minecraft/client/friend/InvitationManager
 	METHOD method_1_9324 postPresence (Lcom/mojang/authlib/services/response/PresenceStatus;)Lcom/mojang/authlib/services/response/PresenceResponse;
 		ARG 1 presenceStatus
 	METHOD method_1_9325 shutdown ()V
+	METHOD method_1_13219 onPresenceUpdated (Lcom/mojang/authlib/services/response/PresenceStatusDto;)V
+		ARG 1 presenceStatusDto

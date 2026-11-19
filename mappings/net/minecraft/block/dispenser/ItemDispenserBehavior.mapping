@@ -1,4 +1,9 @@
 CLASS net/minecraft/class_2347 net/minecraft/block/dispenser/ItemDispenserBehavior
+	FIELD field_1_13179 INSTANCE Lnet/minecraft/class_2347;
+	FIELD field_51916 DEFAULT_EJECT_SPEED I
+	METHOD method_1_13211 eject (Lnet/minecraft/class_2342;Lnet/minecraft/class_1799;)Lnet/minecraft/class_2350;
+		ARG 0 pointer
+		ARG 1 stack
 	METHOD method_10134 spawnItem (Lnet/minecraft/class_1937;Lnet/minecraft/class_1799;ILnet/minecraft/class_2350;Lnet/minecraft/class_2374;)V
 		ARG 0 world
 		ARG 1 stack

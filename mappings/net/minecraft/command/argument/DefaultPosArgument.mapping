@@ -2,6 +2,10 @@ CLASS net/minecraft/class_2280 net/minecraft/command/argument/DefaultPosArgument
 	FIELD comp_4926 x Lnet/minecraft/class_2278;
 	FIELD comp_4927 y Lnet/minecraft/class_2278;
 	FIELD comp_4928 z Lnet/minecraft/class_2278;
+	FIELD field_1_13300 POS_MIXED_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
+	FIELD field_1_13301 POS2D_INCOMPLETE_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
+	FIELD field_1_13302 POS3D_INCOMPLETE_EXCEPTION Lcom/mojang/brigadier/exceptions/SimpleCommandExceptionType;
+	FIELD field_1_13303 ZERO Lnet/minecraft/class_2278;
 	FIELD field_63064 DEFAULT_ROTATION Lnet/minecraft/class_2280;
 	METHOD <init> (Lnet/minecraft/class_2278;Lnet/minecraft/class_2278;Lnet/minecraft/class_2278;)V
 		ARG 1 x
@@ -12,6 +16,12 @@ CLASS net/minecraft/class_2280 net/minecraft/command/argument/DefaultPosArgument
 	METHOD comp_4928 z ()Lnet/minecraft/class_2278;
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
+	METHOD method_1_13317 parse3D (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/class_2278$class_1_2163;)Lnet/minecraft/class_2280;
+		ARG 0 reader
+		ARG 1 coordinateParser
+	METHOD method_1_13318 parse2D (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/class_2278$class_1_2163;)Lnet/minecraft/class_2280;
+		ARG 0 reader
+		ARG 1 coordinateParser
 	METHOD method_35810 absolute (DDD)Lnet/minecraft/class_2280;
 		ARG 0 x
 		ARG 2 y

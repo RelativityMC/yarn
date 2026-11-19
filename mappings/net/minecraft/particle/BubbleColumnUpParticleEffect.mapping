@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_1_2159 net/minecraft/particle/BubbleColumnUpParticleEffect
+	FIELD field_1_13266 DEFAULT Lnet/minecraft/class_1_2159;
+	FIELD field_1_13267 PACKET_CODEC Lnet/minecraft/class_9139;
+	METHOD method_1_13296 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

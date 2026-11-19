@@ -1,0 +1,13 @@
+CLASS net/minecraft/class_1_2145 net/minecraft/block/dispenser/IgniteDispenserBehavior
+	FIELD field_1_13175 INSTANCE Lnet/minecraft/class_1_2145;
+	METHOD method_1_13202 (Lnet/minecraft/class_1799;)V
+		ARG 0 s
+	METHOD method_1_13203 ignite (Lnet/minecraft/class_1799;Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;Lnet/minecraft/class_2350;Lnet/minecraft/class_2680;)Z
+		ARG 0 stack
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 direction
+		ARG 4 state
+	METHOD method_1_13204 tryIgniteSulfurCube (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;)Z
+		ARG 0 world
+		ARG 1 pos

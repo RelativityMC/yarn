@@ -36,6 +36,8 @@ CLASS net/minecraft/class_528 net/minecraft/client/gui/screen/world/WorldListWid
 		ARG 7 selectionCallback
 		ARG 8 confirmationCallback
 		ARG 9 worldListType
+	METHOD method_1_13360 (Lnet/minecraft/class_528;Lnet/minecraft/class_528$class_7414;)V
+		ARG 1 child
 	METHOD method_2752 getParent ()Lnet/minecraft/class_437;
 	METHOD method_20159 getSelectedAsOptional ()Ljava/util/Optional;
 	METHOD method_43453 shouldShow (Ljava/lang/String;Lnet/minecraft/class_34;)Z
@@ -92,6 +94,7 @@ CLASS net/minecraft/class_528 net/minecraft/client/gui/screen/world/WorldListWid
 		METHOD method_73465 allowConfirmationByKeyboard ()Z
 		METHOD method_73466 getTextX ()I
 	CLASS class_7414 Entry
+		METHOD method_1_13361 onDisplayed ()V
 		METHOD method_73463 getLevel ()Lnet/minecraft/class_34;
 	CLASS class_7415 LoadingEntry
 		FIELD field_38997 LOADING_LIST_TEXT Lnet/minecraft/class_2561;

@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_1_2161 net/minecraft/block/dispenser/BrushArmadilloDispenserBehavior
+	FIELD field_1_13277 INSTANCE Lnet/minecraft/class_1_2161;
+	METHOD method_66902 (Lnet/minecraft/class_1799;)V
+		ARG 0 s

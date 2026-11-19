@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_1_2172 net/minecraft/block/dispenser/InsertIntoContainerDispenserBehavior
+	FIELD field_1_13321 INSTANCE Lnet/minecraft/class_1_2172;

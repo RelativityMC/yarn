@@ -15,6 +15,10 @@ CLASS net/minecraft/class_3248 net/minecraft/server/network/ServerLoginNetworkHa
 	FIELD field_1_12111 PROTOCOL_ERROR_MESSAGE Ljava/lang/String;
 	FIELD field_1_12113 compressionThreshold Ljava/util/OptionalInt;
 	FIELD field_1_12114 profile Lcom/mojang/authlib/GameProfile;
+	FIELD field_1_13268 MY_NAME Ljava/lang/String;
+	FIELD field_1_13270 ivPair Lnet/minecraft/class_1_2125$class_1_2127;
+	FIELD field_1_13271 keys Lnet/minecraft/class_1_2120;
+	FIELD field_1_13272 negotiation Lnet/minecraft/class_1_2128;
 	FIELD field_14156 loginTicks I
 	FIELD field_14157 NEXT_AUTHENTICATOR_THREAD_ID Ljava/util/concurrent/atomic/AtomicInteger;
 	FIELD field_14158 connection Lnet/minecraft/class_2535;
@@ -26,10 +30,12 @@ CLASS net/minecraft/class_3248 net/minecraft/server/network/ServerLoginNetworkHa
 	FIELD field_48275 transferred Z
 	FIELD field_63176 activityNotifier Lnet/minecraft/class_12085;
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_2535;Z)V
+		ARG 1 server
 		ARG 2 connection
 		ARG 3 transferred
 	METHOD method_1_11921 setProfileAndKey (Lcom/mojang/authlib/GameProfile;Lnet/minecraft/class_1_2120;)V
 		ARG 1 profile
+		ARG 2 key
 	METHOD method_1_11922 applyOptions (B)V
 		ARG 1 options
 	METHOD method_1_11923 getCompressionThresholdFlag ()B

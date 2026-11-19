@@ -1,12 +1,23 @@
 CLASS net/minecraft/class_4980 net/minecraft/entity/SaddledComponent
+	FIELD field_1_13101 BOOSTING_KEY Ljava/lang/String;
+	FIELD field_1_13102 BOOST_TIME_KEY Ljava/lang/String;
+	FIELD field_1_13103 BOOST_TIME_TOTAL_KEY Ljava/lang/String;
+	FIELD field_1_13104 ITEM_BASED_STEERING_KEY Ljava/lang/String;
 	FIELD field_23215 boosted Z
 	FIELD field_23216 boostedTime I
 	FIELD field_23218 dataTracker Lnet/minecraft/class_2945;
 	FIELD field_23219 boostTime Lnet/minecraft/class_2940;
 	FIELD field_30060 MIN_BOOST_TIME I
+	FIELD field_30061 MAX_BOOST_TIME I
 	METHOD <init> (Lnet/minecraft/class_2945;Lnet/minecraft/class_2940;)V
 		ARG 1 dataTracker
 		ARG 2 boostTime
+	METHOD method_1_13153 read (Lnet/minecraft/class_11368;)V
+		ARG 1 readView
+	METHOD method_1_13154 write (Lnet/minecraft/class_11372;)V
+		ARG 1 writeView
+	METHOD method_1_13155 setBoostTime (I)V
+		ARG 1 boostTime
 	METHOD method_26307 boost ()V
 	METHOD method_26308 boost (Lnet/minecraft/class_5819;)Z
 		ARG 1 random

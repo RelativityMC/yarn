@@ -1,0 +1,59 @@
+CLASS net/minecraft/class_1_2158 net/minecraft/client/friend/PresenceStatusManager
+	FIELD field_1_13243 BASE_RECONNECT_DELAY_MS J
+	FIELD field_1_13244 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_13245 MAX_RECONNECT_DELAY_MS J
+	FIELD field_1_13246 PING_METHOD Ljava/lang/String;
+	FIELD field_1_13247 PONG_METHOD Ljava/lang/String;
+	FIELD field_1_13249 PRESENCE_STATUS_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_1_13250 PRESENCE_UPDATED_METHOD Ljava/lang/String;
+	FIELD field_1_13251 PONG_TIMEOUT Ljava/time/Duration;
+	FIELD field_1_13252 closed Z
+	FIELD field_1_13253 signalingExecutor Ljava/util/concurrent/ScheduledThreadPoolExecutor;
+	FIELD field_1_13254 pingInterval Ljava/time/Duration;
+	FIELD field_1_13255 pingFuture Ljava/util/concurrent/ScheduledFuture;
+	FIELD field_1_13256 pongTimeoutFuture Ljava/util/concurrent/ScheduledFuture;
+	FIELD field_1_13257 signalingPresenceListeners Ljava/util/concurrent/CopyOnWriteArrayList;
+	FIELD field_1_13258 reconnectDelay J
+	FIELD field_1_13259 reconnectFuture Ljava/util/concurrent/ScheduledFuture;
+	FIELD field_1_13260 listener Lnet/minecraft/class_1_2151;
+	FIELD field_1_13261 signalingService Lcom/mojang/authlib/services/MinecraftServicesSignalingService;
+	FIELD field_1_13262 initialized Z
+	METHOD <init> (Lnet/minecraft/class_320;Lcom/mojang/authlib/services/MinecraftServicesDiscoveryService;)V
+		ARG 1 session
+		ARG 2 discoveryService
+	METHOD method_1_13271 sendEmptyResult (Lcom/google/gson/JsonElement;)V
+		ARG 1 id
+	METHOD method_1_13272 addSignalingPresenceListener (Ljava/util/function/Consumer;)V
+		ARG 1 listener
+	METHOD method_1_13273 cancelPongTimeout ()V
+	METHOD method_1_13274 initialize ()V
+	METHOD method_1_13275 connect (Lnet/minecraft/class_1_2151;)V
+		ARG 1 listener
+	METHOD method_1_13276 createListener ()Lnet/minecraft/class_1_2151;
+	METHOD method_1_13277 doOnSignalingExecutor (Ljava/lang/Runnable;)V
+		ARG 1 runnable
+	METHOD method_1_13278 onMessage (Lcom/google/gson/JsonElement;Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+		ARG 1 id
+		ARG 2 method
+		ARG 3 parameters
+	METHOD method_1_13279 onPresenceUpdated (Lcom/google/gson/JsonElement;Lcom/google/gson/JsonElement;)V
+		ARG 1 id
+		ARG 2 parameters
+	METHOD method_1_13282 (Lnet/minecraft/class_1_2151;Lcom/mojang/authlib/services/MinecraftServicesSignalingService$PreparedConnection;)Ljava/util/concurrent/CompletionStage;
+		ARG 2 preparedConnection
+	METHOD method_1_13283 (Lnet/minecraft/class_1_2151;Ljava/net/http/WebSocket;Ljava/lang/Throwable;)V
+		ARG 2 socket
+		ARG 3 ex
+	METHOD method_1_13286 (Ljava/lang/String;)Lcom/mojang/serialization/DataResult;
+		ARG 0 string
+	METHOD method_1_13288 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_1_13289 onConnect ()V
+	METHOD method_1_13290 onDisconnect ()V
+	METHOD method_1_13291 onPongTimeout ()V
+	METHOD method_1_13292 convertParametersToJsonObject (Lcom/google/gson/JsonElement;Ljava/lang/String;)Lcom/google/gson/JsonObject;
+		ARG 0 payload
+		ARG 1 method
+	METHOD method_1_13293 reconnect ()V
+	METHOD method_1_13294 ping ()V
+	METHOD method_1_13295 cancelPingPongFutures ()V

@@ -3,13 +3,19 @@ CLASS net/minecraft/class_9934 net/minecraft/client/gui/screen/recipebook/GhostR
 	FIELD field_52828 currentIndexProvider Lnet/minecraft/class_9938;
 	METHOD <init> (Lnet/minecraft/class_9938;)V
 		ARG 1 currentIndexProvider
+	METHOD method_1_13212 getTooltip (Lnet/minecraft/class_310;Lnet/minecraft/class_1735;)Lnet/minecraft/class_7919;
+		ARG 1 client
+		ARG 2 slot
 	METHOD method_62029 clear ()V
 	METHOD method_62030 (IIZLnet/minecraft/class_332;Lnet/minecraft/class_310;Lnet/minecraft/class_1735;Lnet/minecraft/class_9934$class_9935;)V
 		ARG 6 slot
 		ARG 7 item
 	METHOD method_62033 draw (Lnet/minecraft/class_332;IILnet/minecraft/class_310;Z)V
 		ARG 1 context
+		ARG 2 x
+		ARG 3 y
 		ARG 4 client
+		ARG 5 resultHasPadding
 	METHOD method_64872 addInputs (Lnet/minecraft/class_1735;Lnet/minecraft/class_10352;Lnet/minecraft/class_10302;)V
 		ARG 1 slot
 		ARG 2 context

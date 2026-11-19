@@ -14,6 +14,10 @@ CLASS net/minecraft/class_1838 net/minecraft/item/ItemUsageContext
 		ARG 3 hand
 		ARG 4 stack
 		ARG 5 hit
+	METHOD method_1_13171 world (Lnet/minecraft/class_1937;Lnet/minecraft/class_1799;Lnet/minecraft/class_3965;)Lnet/minecraft/class_1838;
+		ARG 0 world
+		ARG 1 stack
+		ARG 2 hit
 	METHOD method_8036 getPlayer ()Lnet/minecraft/class_1657;
 	METHOD method_8037 getBlockPos ()Lnet/minecraft/class_2338;
 	METHOD method_8038 getSide ()Lnet/minecraft/class_2350;

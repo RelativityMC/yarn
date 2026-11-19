@@ -1,0 +1,95 @@
+CLASS net/minecraft/class_1_2151 net/minecraft/client/network/rpc/JsonRpcListener
+	FIELD field_1_13205 LOGGER Lorg/slf4j/Logger;
+	FIELD field_1_13206 SEND_TIMEOUT Ljava/time/Duration;
+	FIELD field_1_13207 closed Z
+	FIELD field_1_13208 signalingExecutor Ljava/util/concurrent/ScheduledExecutorService;
+	FIELD field_1_13209 pendingText Ljava/lang/StringBuilder;
+	FIELD field_1_13210 onMessage Lnet/minecraft/class_1_2151$class_1_2152;
+	FIELD field_1_13211 id I
+	FIELD field_1_13212 onConnect Ljava/lang/Runnable;
+	FIELD field_1_13213 onDisconnect Ljava/lang/Runnable;
+	FIELD field_1_13214 requestsAwaitingResponse Ljava/util/Map;
+	FIELD field_1_13215 messagesToSend Ljava/util/Set;
+	FIELD field_1_13216 lastMessageToSend Ljava/util/concurrent/CompletableFuture;
+	FIELD field_1_13217 webSocket Ljava/net/http/WebSocket;
+	METHOD <init> (Ljava/util/concurrent/ScheduledExecutorService;Lnet/minecraft/class_1_2151$class_1_2152;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
+		ARG 1 signalingExecutor
+		ARG 2 onMessage
+		ARG 3 onConnect
+		ARG 4 onDisconnect
+	METHOD method_1_13222 disconnect (Ljava/lang/Throwable;)V
+		ARG 1 throwable
+	METHOD method_1_13223 reportException (Ljava/lang/String;Ljava/lang/Throwable;)V
+		ARG 1 message
+		ARG 2 throwable
+	METHOD method_1_13224 handleIncomingMessage (Lcom/google/gson/JsonObject;)V
+		ARG 1 payload
+	METHOD method_1_13225 handleRequest (Lcom/google/gson/JsonElement;Lcom/google/gson/JsonObject;)V
+		ARG 1 id
+		ARG 2 parameters
+	METHOD method_1_13226 (Ljava/lang/Throwable;Ljava/util/concurrent/CompletableFuture;)V
+		ARG 1 request
+	METHOD method_1_13227 (Ljava/lang/Throwable;Ljava/util/concurrent/CompletableFuture;)V
+		ARG 1 request
+	METHOD method_1_13231 (Ljava/net/http/WebSocket;Ljava/lang/Throwable;)Ljava/lang/Object;
+		ARG 1 ex
+	METHOD method_1_13233 (Ljava/util/concurrent/CompletableFuture;Ljava/lang/Void;Ljava/lang/Throwable;)V
+		ARG 3 ex
+	METHOD method_1_13234 (Ljava/util/concurrent/CompletableFuture;Ljava/lang/String;Ljava/lang/Void;Ljava/lang/Throwable;)V
+		ARG 4 ex
+	METHOD method_1_13235 (ILcom/google/gson/JsonElement;Ljava/lang/Throwable;)V
+		ARG 2 response
+		ARG 3 ex
+	METHOD method_1_13236 (Ljava/util/concurrent/CompletableFuture;Ljava/lang/Void;Ljava/lang/Throwable;)V
+		ARG 2 ex1
+	METHOD method_1_13237 (Ljava/util/concurrent/CompletableFuture;Ljava/net/http/WebSocket;Ljava/lang/Throwable;)V
+		ARG 1 socket
+		ARG 2 ex
+	METHOD method_1_13239 (Ljava/util/concurrent/ScheduledFuture;Ljava/lang/Object;Ljava/lang/Throwable;)V
+		ARG 1 result
+		ARG 2 ex
+	METHOD method_1_13240 setWebSocket (Ljava/net/http/WebSocket;)V
+		ARG 1 webSocket
+	METHOD method_1_13241 handleText (Ljava/net/http/WebSocket;Ljava/lang/String;Z)V
+		ARG 1 webSocket
+		ARG 2 text
+		ARG 3 finish
+	METHOD method_1_13242 send (Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 payload
+	METHOD method_1_13243 sendError (Lcom/google/gson/JsonElement;Lnet/minecraft/class_11803;)V
+		ARG 1 data
+		ARG 2 error
+	METHOD method_1_13244 sendRequest (Ljava/lang/String;Ljava/util/List;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 method
+		ARG 2 parameters
+	METHOD method_1_13245 request (Ljava/lang/String;Ljava/util/List;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 method
+		ARG 2 parameters
+	METHOD method_1_13246 sendResult (Lcom/google/gson/JsonElement;Lcom/google/gson/JsonElement;)V
+		ARG 1 id
+		ARG 2 result
+	METHOD method_1_13247 sendMessage (Ljava/lang/String;Ljava/util/concurrent/CompletableFuture;)V
+		ARG 1 payload
+		ARG 2 requestFuture
+	METHOD method_1_13248 doOnSignalingExecutor (Ljava/util/function/Supplier;)Ljava/util/concurrent/CompletableFuture;
+		ARG 1 supplier
+	METHOD method_1_13249 setTimeout (Ljava/util/concurrent/CompletableFuture;)V
+		ARG 1 future
+	METHOD onClose (Ljava/net/http/WebSocket;ILjava/lang/String;)Ljava/util/concurrent/CompletionStage;
+		ARG 1 webSocket
+		ARG 2 code
+		ARG 3 message
+	METHOD onError (Ljava/net/http/WebSocket;Ljava/lang/Throwable;)V
+		ARG 1 webSocket
+		ARG 2 ex
+	METHOD onOpen (Ljava/net/http/WebSocket;)V
+		ARG 1 webSocket
+	METHOD onText (Ljava/net/http/WebSocket;Ljava/lang/CharSequence;Z)Ljava/util/concurrent/CompletionStage;
+		ARG 1 webSocket
+		ARG 2 text
+		ARG 3 finish
+	CLASS class_1_2152 MessageListener
+		METHOD method_1_13250 accept (Lcom/google/gson/JsonElement;Ljava/lang/String;Lcom/google/gson/JsonElement;)V
+			ARG 1 id
+			ARG 2 method
+			ARG 3 parameters

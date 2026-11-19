@@ -11,6 +11,8 @@ CLASS net/minecraft/class_11580 net/minecraft/entity/TypedEntityData
 	METHOD method_1_6877 applyToSpawnerEntry (Lnet/minecraft/class_1952;Lnet/minecraft/class_7922;)Z
 		ARG 1 spawnerEntry
 		ARG 2 registry
+	METHOD method_1_13199 fromStack (Lnet/minecraft/class_1799;)Lnet/minecraft/class_1299;
+		ARG 0 stack
 	METHOD method_72530 getType ()Ljava/lang/Object;
 	METHOD method_72531 applyToEntity (Lnet/minecraft/class_1297;)V
 		ARG 1 entity

@@ -16,9 +16,8 @@ CLASS net/minecraft/class_2280 net/minecraft/command/argument/DefaultPosArgument
 	METHOD comp_4928 z ()Lnet/minecraft/class_2278;
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
-	METHOD method_1_13317 parse3D (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/class_2278$class_1_2163;)Lnet/minecraft/class_2280;
+	METHOD method_1_13317 parse3D (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/class_2278$class_1_2163;Lnet/minecraft/class_2278$class_1_2163;)Lnet/minecraft/class_2280;
 		ARG 0 reader
-		ARG 1 coordinateParser
 	METHOD method_1_13318 parse2D (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/class_2278$class_1_2163;)Lnet/minecraft/class_2280;
 		ARG 0 reader
 		ARG 1 coordinateParser

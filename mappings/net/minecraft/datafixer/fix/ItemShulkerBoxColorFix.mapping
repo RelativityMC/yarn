@@ -1,4 +1,2 @@
 CLASS net/minecraft/class_1185 net/minecraft/datafixer/fix/ItemShulkerBoxColorFix
 	FIELD field_5680 COLORED_SHULKER_BOX_IDS [Ljava/lang/String;
-	METHOD method_5031 (Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/OpticFinder;Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
-		ARG 3 itemStack

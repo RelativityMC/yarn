@@ -4,9 +4,7 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 	COMMENT
 	COMMENT @see net.minecraft.client.gui.screen.ChatScreen
 	FIELD field_1_1852 GO_TO_RESTRICTIONS_SCREEN_ID Lnet/minecraft/class_2960;
-	FIELD field_1_1853 RESTRICTED_TEXT Lnet/minecraft/class_2561;
 	FIELD field_1_1854 messageAllowedPredicate Ljava/util/function/Predicate;
-	FIELD field_1_2588 RESTRICTED_TEXT_WITH_TOOLTIP Lnet/minecraft/class_2561;
 	FIELD field_2061 messages Ljava/util/List;
 	FIELD field_2062 client Lnet/minecraft/class_310;
 	FIELD field_2063 messageHistory Lnet/minecraft/class_8623;
@@ -122,10 +120,9 @@ CLASS net/minecraft/class_338 net/minecraft/client/gui/hud/ChatHud
 		FIELD field_63866 styledCurrentLine Z
 	CLASS class_1_313 Mode
 		FIELD field_1_1859 foreground Z
-		FIELD field_1_1860 restricted Z
-		METHOD <init> (Ljava/lang/String;IZZ)V
+		FIELD field_1_1860 restricted Lnet/minecraft/class_338$class_1_2178;
+		METHOD <init> (Ljava/lang/String;IZLnet/minecraft/class_338$class_1_2178;)V
 			ARG 3 foreground
-			ARG 4 restricted
 	CLASS class_7731 RemovalQueuedMessage
 	CLASS class_9477 ChatState
 		FIELD field_50218 messages Ljava/util/List;

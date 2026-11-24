@@ -10,7 +10,6 @@ CLASS net/minecraft/class_6777 net/minecraft/client/gui/screen/option/OnlineOpti
 	FIELD field_1_6778 IN_GAME_NOTIFICATION Lnet/minecraft/class_2561;
 	FIELD field_1_6779 IN_GAME_NOTIFICATION_TOOLTIP Lnet/minecraft/class_7919;
 	FIELD field_1_6780 REALMS_HEADER_TEXT Lnet/minecraft/class_2561;
-	FIELD field_1_6781 XBOX_SETTINGS_TEXT Lnet/minecraft/class_2561;
 	FIELD field_1_6782 acceptsFriendInvitesButton Lnet/minecraft/class_1_1747;
 	FIELD field_1_6783 friendsEnabledButton Lnet/minecraft/class_1_1747;
 	FIELD field_1_6784 getInGameNotificationButton Lnet/minecraft/class_1_1747;

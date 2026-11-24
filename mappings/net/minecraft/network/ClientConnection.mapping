@@ -102,7 +102,7 @@ CLASS net/minecraft/class_2535 net/minecraft/network/ClientConnection
 		ARG 1 packet
 		ARG 2 listener
 		ARG 3 flush
-	METHOD method_10768 handleDisconnection ()V
+	METHOD method_10768 handleDisconnection (Z)V
 	METHOD method_10769 connectLocal (Ljava/net/SocketAddress;)Lnet/minecraft/class_2535;
 		ARG 0 address
 	METHOD method_10772 isChannelAbsent ()Z

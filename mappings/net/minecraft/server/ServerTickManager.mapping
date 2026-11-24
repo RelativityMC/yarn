@@ -15,9 +15,9 @@ CLASS net/minecraft/class_8915 net/minecraft/server/ServerTickManager
 	METHOD method_54676 stopStepping ()Z
 	METHOD method_54677 startSprint (I)Z
 		ARG 1 ticks
-	METHOD method_54678 stopSprinting ()Z
+	METHOD method_54678 stopSprinting (Lnet/minecraft/class_2168;)Z
 	METHOD method_54679 sprint ()Z
 	METHOD method_54680 updateSprintTime ()V
 	METHOD method_54681 sendUpdateTickRatePacket ()V
 	METHOD method_54682 sendStepPacket ()V
-	METHOD method_54683 finishSprinting ()V
+	METHOD method_54683 finishSprinting (Lnet/minecraft/class_2168;)V

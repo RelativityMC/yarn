@@ -7,15 +7,13 @@ CLASS net/minecraft/class_2284 net/minecraft/command/argument/CommandFunctionArg
 	METHOD method_1_12884 (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
 		ARG 1 reader
 	METHOD method_9760 commandFunction ()Lcom/mojang/brigadier/arguments/ArgumentType;
-	METHOD method_9761 getFunction (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_2960;)Lnet/minecraft/class_2158;
-		ARG 0 context
+	METHOD method_9761 getFunction (Lnet/minecraft/class_2168;Lnet/minecraft/class_2960;)Lnet/minecraft/class_2158;
 		ARG 1 id
 	METHOD method_9762 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 id
 	METHOD method_9765 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 id
-	METHOD method_9767 getFunctionTag (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/class_2960;)Ljava/util/Collection;
-		ARG 0 context
+	METHOD method_9767 getFunctionTag (Lnet/minecraft/class_2168;Lnet/minecraft/class_2960;)Ljava/util/Collection;
 		ARG 1 id
 	METHOD method_9768 getFunctionOrTag (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lcom/mojang/datafixers/util/Pair;
 		ARG 0 context
@@ -27,9 +25,6 @@ CLASS net/minecraft/class_2284 net/minecraft/command/argument/CommandFunctionArg
 		ARG 0 context
 		ARG 1 name
 	CLASS class_2285 FunctionArgument
-		METHOD method_9770 getFunctionOrTag (Lcom/mojang/brigadier/context/CommandContext;)Lcom/mojang/datafixers/util/Pair;
-			ARG 1 context
-		METHOD method_9771 getFunctions (Lcom/mojang/brigadier/context/CommandContext;)Ljava/util/Collection;
-			ARG 1 context
-		METHOD method_55591 getIdentifiedFunctions (Lcom/mojang/brigadier/context/CommandContext;)Lcom/mojang/datafixers/util/Pair;
-			ARG 1 context
+		METHOD method_9770 getFunctionOrTag (Lnet/minecraft/class_2168;)Lcom/mojang/datafixers/util/Pair;
+		METHOD method_9771 getFunctions (Lnet/minecraft/class_2168;)Ljava/util/Collection;
+		METHOD method_55591 getIdentifiedFunctions (Lnet/minecraft/class_2168;)Lcom/mojang/datafixers/util/Pair;

@@ -6,12 +6,12 @@ CLASS net/minecraft/class_801 net/minecraft/client/render/model/json/GeneratedIt
 	FIELD field_55274 TEXTURES Lnet/minecraft/class_10419$class_10420;
 	FIELD field_56930 FACING_SOUTH_UV Lnet/minecraft/class_783$class_10800;
 	FIELD field_56931 FACING_NORTH_UV Lnet/minecraft/class_783$class_10800;
-	METHOD method_1_2413 addGeometry (Lnet/minecraft/class_10817$class_10818;Lnet/minecraft/class_7775$class_12356;Lnet/minecraft/class_3665;Lnet/minecraft/class_777$class_1_320;)V
+	METHOD method_1_2413 addGeometry (Lnet/minecraft/class_10817$class_10818;Lnet/minecraft/class_7775$class_12356;Lnet/minecraft/class_3665;Lnet/minecraft/class_777$class_1_320;I)V
 		ARG 0 builder
 		ARG 1 interner
 		ARG 2 settings
 		ARG 3 spriteInfo
-	METHOD method_1_2414 addEdgeGeometry (Lnet/minecraft/class_10817$class_10818;Lnet/minecraft/class_7775$class_12356;Lnet/minecraft/class_3665;Lnet/minecraft/class_777$class_1_320;)V
+	METHOD method_1_2414 addEdgeGeometry (Lnet/minecraft/class_10817$class_10818;Lnet/minecraft/class_7775$class_12356;Lnet/minecraft/class_3665;Lnet/minecraft/class_777$class_1_320;I)V
 		ARG 0 builder
 		ARG 1 interner
 		ARG 2 settings

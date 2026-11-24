@@ -1,7 +1,5 @@
 CLASS net/minecraft/class_1_1960 net/minecraft/client/realms/dto/UploadSession
 	FIELD field_1_12488 GSON Lnet/minecraft/class_4869;
-	METHOD <init> (Ljava/lang/String;Ljava/net/URI;Ljava/net/URI;Ljava/net/URI;Ljava/net/URI;Ljava/net/URI;Ljava/time/Instant;ZJJJJLjava/util/Set;)V
-		ARG 17 acceptedArchiveFormats
 	METHOD method_1_12356 getEndpointUrl (Ljava/net/URI;Ljava/lang/String;)Ljava/net/URI;
 		ARG 0 statusUrl
 		ARG 1 endpoint

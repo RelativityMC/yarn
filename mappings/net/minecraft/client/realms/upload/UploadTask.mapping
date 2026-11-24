@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_1_1966 net/minecraft/client/realms/upload/UploadTask
-	FIELD field_1_12524 task Ljava/util/concurrent/atomic/AtomicReference;
+	FIELD field_1_12524 task Ljava/util/Set;
 	FIELD field_1_12525 canceled Ljava/util/concurrent/atomic/AtomicBoolean;
 	METHOD method_1_12453 execute (Ljava/util/concurrent/CompletableFuture;Ljava/time/Duration;)Ljava/lang/Object;
 		ARG 1 task

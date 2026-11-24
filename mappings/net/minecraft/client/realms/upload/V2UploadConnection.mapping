@@ -24,18 +24,15 @@ CLASS net/minecraft/class_1_1964 net/minecraft/client/realms/upload/V2UploadConn
 	METHOD method_1_12422 (Ljava/util/StringJoiner;Ljava/lang/String;Ljava/lang/String;)V
 		ARG 1 name
 		ARG 2 value
-	METHOD method_1_12425 (Ljava/util/function/Supplier;Lnet/minecraft/class_1_1964$class_1_1965;Ljava/net/http/HttpRequest$BodyPublisher;)Ljava/net/http/HttpRequest;
-		ARG 2 bodyPublisher
 	METHOD method_1_12427 (Ljava/util/function/Supplier;Ljava/net/http/HttpRequest$BodyPublisher;)Ljava/net/http/HttpRequest;
 		ARG 1 bodyPublisher
 	METHOD method_1_12429 (Ljava/util/function/Supplier;Ljava/net/http/HttpRequest$BodyPublisher;)Ljava/net/http/HttpRequest;
 		ARG 1 bodyPublisher
-	METHOD method_1_12430 getInputStreamForRange (Ljava/nio/file/Path;JJJLnet/minecraft/class_4351;)Ljava/io/InputStream;
+	METHOD method_1_12430 getInputStreamForRange (Ljava/nio/file/Path;JJJLjava/util/function/LongConsumer;)Ljava/io/InputStream;
 		ARG 0 archive
 		ARG 1 blockOffset
 		ARG 3 blockSize
 		ARG 5 fileSize
-		ARG 7 uploadProgress
 	METHOD method_1_12431 sendUploadRequest (Lorg/apache/commons/io/function/IOSupplier;JLjava/util/function/Function;Lnet/minecraft/class_1_1981$class_1_1982;Lnet/minecraft/class_1_1966;)V
 		ARG 1 inputSupplier
 		ARG 2 blockSize

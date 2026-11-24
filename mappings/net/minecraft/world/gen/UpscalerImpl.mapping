@@ -10,18 +10,12 @@ CLASS net/minecraft/class_1_1912 net/minecraft/world/gen/UpscalerImpl
 		ARG 4 y
 		ARG 5 z
 		ARG 6 inputSamples
-		ARG 7 ySamplesTemp
-		ARG 8 xySamplesTemp
 	METHOD method_1_12019 fillXZPlane (Lnet/minecraft/class_1_1516;[F[FIIIIII)V
 		ARG 1 output
 		ARG 2 xySamples
-		ARG 3 ySamplesTemp
-		ARG 4 startX
-		ARG 5 endX
 		ARG 6 startY
 		ARG 7 endY
 		ARG 8 startIndex
-		ARG 9 strideX
 	METHOD method_1_12020 fillYColumn (Lnet/minecraft/class_1_1516;[FIII)V
 		ARG 1 output
 		ARG 2 ySamples

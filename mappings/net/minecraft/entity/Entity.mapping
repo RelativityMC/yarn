@@ -2344,7 +2344,7 @@ CLASS net/minecraft/class_1297 net/minecraft/entity/Entity
 		ARG 1 uuid
 	METHOD method_67635 defrost ()V
 	METHOD method_68259 popQueuedCollisionCheck ()V
-	METHOD method_68260 tickBlockCollisions (Ljava/util/List;)V
+	METHOD method_68260 tickBlockCollisions (Ljava/util/List;Z)V
 		ARG 1 checks
 	METHOD method_70666 teleportSpectatingPlayers (Lnet/minecraft/class_5454;Lnet/minecraft/class_3218;)V
 		ARG 1 teleportTarget

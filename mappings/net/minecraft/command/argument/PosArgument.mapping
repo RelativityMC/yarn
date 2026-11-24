@@ -1,7 +1,6 @@
 CLASS net/minecraft/class_2267 net/minecraft/command/argument/PosArgument
-	METHOD method_1_13251 parse3D (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/class_2278$class_1_2163;)Lnet/minecraft/class_2267;
+	METHOD method_1_13251 parse3D (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/class_2278$class_1_2163;Lnet/minecraft/class_2278$class_1_2163;)Lnet/minecraft/class_2267;
 		ARG 0 reader
-		ARG 1 coordinateParser
 	METHOD method_1_13252 parse2D (Lcom/mojang/brigadier/StringReader;Lnet/minecraft/class_2278$class_1_2163;)Lnet/minecraft/class_2267;
 		ARG 0 reader
 		ARG 1 coordinateParser

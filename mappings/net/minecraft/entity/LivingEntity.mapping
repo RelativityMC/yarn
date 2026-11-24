@@ -831,7 +831,6 @@ CLASS net/minecraft/class_1309 net/minecraft/entity/LivingEntity
 	METHOD method_66281 stopGliding ()V
 	METHOD method_66282 tickMovementInput ()V
 	METHOD method_66283 playThornsSound (Lnet/minecraft/class_1282;)V
-		ARG 1 damageSource
 	METHOD method_66667 getEquipSound (Lnet/minecraft/class_1304;Lnet/minecraft/class_10192;)Ljava/util/Optional;
 		ARG 1 slot
 		ARG 2 equippableComponent

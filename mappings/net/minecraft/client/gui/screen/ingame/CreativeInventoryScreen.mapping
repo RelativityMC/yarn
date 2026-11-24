@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_481 net/minecraft/client/gui/screen/ingame/CreativeInventoryScreen
-	FIELD field_1_12647 SLOT_TOOLTIP_SUPPLIER Ljava/util/function/Function;
+	FIELD field_1_12647 SLOT_TOOLTIP_SUPPLIER Lnet/minecraft/class_1_1961$class_1_2180;
 	FIELD field_1_13340 TAB_NAVIGATION_BOTTOM_MESSAGE Lnet/minecraft/class_2561;
 	FIELD field_1_13343 TITLE Lnet/minecraft/class_2561;
 	FIELD field_1_13344 TAB_NAVIGATION_TOP_MESSAGE Lnet/minecraft/class_2561;
@@ -32,7 +32,7 @@ CLASS net/minecraft/class_481 net/minecraft/client/gui/screen/ingame/CreativeInv
 		ARG 1 player
 		ARG 2 enabledFeatures
 		ARG 3 operatorTabEnabled
-	METHOD method_1_12508 (Lnet/minecraft/class_1735;)Lnet/minecraft/class_7919;
+	METHOD method_1_12508 (Lnet/minecraft/class_1735;Lnet/minecraft/class_1799;)Lnet/minecraft/class_7919;
 		ARG 1 slot
 	METHOD method_1_13365 renderTabs (Lnet/minecraft/class_332;)V
 		ARG 1 context

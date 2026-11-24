@@ -1,16 +1,8 @@
 CLASS net/minecraft/class_2775 net/minecraft/network/packet/s2c/play/ItemPickupAnimationS2CPacket
-	FIELD field_12692 stackAmount I
-	FIELD field_12693 collectorEntityId I
-	FIELD field_12694 entityId I
+	FIELD comp_1_2368 stackAmount I
+	FIELD comp_1_2369 entityId I
+	FIELD comp_1_2370 collectorEntityId I
 	FIELD field_48003 CODEC Lnet/minecraft/class_9139;
-	METHOD <init> (III)V
-		ARG 1 entityId
-		ARG 2 collectorId
-		ARG 3 stackAmount
-	METHOD <init> (Lnet/minecraft/class_2540;)V
-		ARG 1 buf
-	METHOD method_11912 getCollectorEntityId ()I
-	METHOD method_11913 getStackAmount ()I
-	METHOD method_11915 getEntityId ()I
-	METHOD method_55948 write (Lnet/minecraft/class_2540;)V
-		ARG 1 buf
+	METHOD comp_1_2368 stackAmount ()I
+	METHOD comp_1_2369 entityId ()I
+	METHOD comp_1_2370 collectorEntityId ()I

@@ -31,9 +31,9 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 8 v1
 		ARG 9 u2
 		ARG 10 v2
-	METHOD method_1_400 (Ljava/util/List;Lnet/minecraft/class_5632;)V
-		ARG 1 data
-	METHOD method_1_401 drawTooltip (Lnet/minecraft/class_327;Ljava/util/List;Ljava/util/Optional;Lnet/minecraft/class_8000;IIZLnet/minecraft/class_2960;Z)V
+	METHOD method_1_400 (Ljava/util/List;ILnet/minecraft/class_5632;)V
+		ARG 2 data
+	METHOD method_1_401 drawTooltip (Lnet/minecraft/class_327;Ljava/util/List;Ljava/util/Optional;Lnet/minecraft/class_8000;IIZLnet/minecraft/class_2960;I)V
 		ARG 1 textRenderer
 		ARG 2 text
 		ARG 3 tooltipData
@@ -42,16 +42,8 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 6 y
 		ARG 7 focused
 		ARG 8 texture
-		ARG 9 tall
 	METHOD method_1_2483 setPreEditWidget (Lnet/minecraft/class_4068;)V
 		ARG 1 widget
-	METHOD method_1_7768 drawTooltip (Lnet/minecraft/class_327;Ljava/util/List;Ljava/util/Optional;IILnet/minecraft/class_2960;)V
-		ARG 1 textRenderer
-		ARG 2 text
-		ARG 3 data
-		ARG 4 x
-		ARG 5 y
-		ARG 6 texture
 	METHOD method_1_7769 drawTooltip (Lnet/minecraft/class_327;Ljava/util/List;IILnet/minecraft/class_8000;Lnet/minecraft/class_2960;Z)V
 		ARG 1 textRenderer
 		ARG 2 components
@@ -278,14 +270,13 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 2 text
 		ARG 3 x
 		ARG 4 y
-	METHOD method_51435 drawTooltipImmediately (Lnet/minecraft/class_327;Ljava/util/List;IILnet/minecraft/class_8000;Lnet/minecraft/class_2960;Z)V
+	METHOD method_51435 drawTooltipImmediately (Lnet/minecraft/class_327;Ljava/util/List;IILnet/minecraft/class_8000;Lnet/minecraft/class_2960;I)V
 		ARG 1 textRenderer
 		ARG 2 components
 		ARG 3 x
 		ARG 4 y
 		ARG 5 positioner
 		ARG 6 texture
-		ARG 7 tall
 	METHOD method_51436 drawTooltip (Lnet/minecraft/class_327;Ljava/util/List;Lnet/minecraft/class_8000;IIZ)V
 		ARG 1 textRenderer
 		ARG 2 text
@@ -293,14 +284,13 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 4 x
 		ARG 5 y
 		ARG 6 focused
-	METHOD method_51437 drawTooltip (Lnet/minecraft/class_327;Ljava/util/List;Ljava/util/Optional;IILnet/minecraft/class_2960;Z)V
+	METHOD method_51437 drawTooltip (Lnet/minecraft/class_327;Ljava/util/List;Ljava/util/Optional;IILnet/minecraft/class_2960;)V
 		ARG 1 textRenderer
 		ARG 2 text
 		ARG 3 data
 		ARG 4 x
 		ARG 5 y
 		ARG 6 texture
-		ARG 7 tall
 	METHOD method_51438 drawTooltip (Lnet/minecraft/class_327;Lnet/minecraft/class_2561;II)V
 		ARG 1 textRenderer
 		ARG 2 text
@@ -611,7 +601,7 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 4 x2
 		ARG 5 y2
 	METHOD method_71048 createNewRootLayer ()V
-	METHOD method_71273 drawTooltip (Lnet/minecraft/class_327;Ljava/util/List;IILnet/minecraft/class_8000;Lnet/minecraft/class_2960;ZZ)V
+	METHOD method_71273 drawTooltip (Lnet/minecraft/class_327;Ljava/util/List;IILnet/minecraft/class_8000;Lnet/minecraft/class_2960;ZI)V
 		ARG 1 textRenderer
 		ARG 2 components
 		ARG 3 x
@@ -619,7 +609,6 @@ CLASS net/minecraft/class_332 net/minecraft/client/gui/DrawContext
 		ARG 5 positioner
 		ARG 6 texture
 		ARG 7 focused
-		ARG 8 tall
 	METHOD method_71274 drawTooltip (Ljava/util/List;II)V
 		ARG 1 text
 		ARG 2 x

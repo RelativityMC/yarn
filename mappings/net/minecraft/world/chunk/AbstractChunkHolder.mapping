@@ -43,9 +43,6 @@ CLASS net/minecraft/class_9761 net/minecraft/world/chunk/AbstractChunkHolder
 		ARG 1 step
 		ARG 2 chunkLoadingManager
 		ARG 3 chunks
-	METHOD method_60462 (Lnet/minecraft/class_9770;Lnet/minecraft/class_2791;Ljava/lang/Throwable;)Lnet/minecraft/class_9259;
-		ARG 2 chunk
-		ARG 3 throwable
 	METHOD method_60463 getOrNull (Lnet/minecraft/class_2806;)Lnet/minecraft/class_2791;
 		ARG 1 requestedStatus
 	METHOD method_60464 getOrCreateFuture (Lnet/minecraft/class_2806;)Ljava/util/concurrent/CompletableFuture;

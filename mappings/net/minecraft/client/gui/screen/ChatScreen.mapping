@@ -5,7 +5,6 @@ CLASS net/minecraft/class_408 net/minecraft/client/gui/screen/ChatScreen
 	COMMENT the command key}.
 	COMMENT
 	COMMENT @see net.minecraft.client.gui.hud.ChatHud
-	FIELD field_1_1817 RESTRICTED_NARRATION Lnet/minecraft/class_2561;
 	FIELD field_1_1818 SUGGESTION_COLOR I
 	FIELD field_1_1820 closeOnSend Z
 	FIELD field_1_1821 mode Lnet/minecraft/class_338$class_1_313;

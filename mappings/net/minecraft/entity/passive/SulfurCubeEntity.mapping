@@ -81,8 +81,6 @@ CLASS net/minecraft/class_1_748 net/minecraft/entity/passive/SulfurCubeEntity
 	METHOD method_1_6307 playEatSound ()V
 	METHOD method_1_6360 (Lnet/minecraft/class_1304;)Lnet/minecraft/class_1799;
 		ARG 0 slot
-	METHOD method_1_11629 (Lnet/minecraft/class_6880;)V
-		ARG 1 hitSound
 	METHOD method_1_11630 (Lnet/minecraft/class_243;Lnet/minecraft/class_6880;)V
 		ARG 2 pushSound
 	METHOD method_1_12143 createContext (Lnet/minecraft/class_3218;Z)Lnet/minecraft/class_47;

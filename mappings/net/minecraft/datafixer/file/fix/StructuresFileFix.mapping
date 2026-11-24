@@ -14,18 +14,18 @@ CLASS net/minecraft/class_1_245 net/minecraft/datafixer/file/fix/StructuresFileF
 	METHOD method_1_1928 populateStructureInfoFromChunk (Lcom/mojang/serialization/Dynamic;Lit/unimi/dsi/fastutil/longs/Long2ObjectMap;)V
 		ARG 0 fixedNbt
 		ARG 1 structuresOut
-	METHOD method_1_1929 requestStructureDataFile (Lnet/minecraft/class_1_233;Ljava/lang/String;)Lnet/minecraft/class_1_203;
+	METHOD method_1_1929 requestStructureDataFile (Lnet/minecraft/class_1_233;Lnet/minecraft/class_1_206;Ljava/lang/String;)Lnet/minecraft/class_1_203;
 		ARG 0 tracker
-		ARG 1 structureName
+		ARG 2 structureName
 	METHOD method_1_1930 (Lit/unimi/dsi/fastutil/longs/Long2ObjectMap;JLcom/mojang/serialization/Dynamic;Ljava/lang/String;)V
 		ARG 4 id
 	METHOD method_1_1933 (Lnet/minecraft/class_1_233;)Lnet/minecraft/class_1_228$class_1_230;
 		ARG 0 tracker
 	METHOD method_1_1934 (Lnet/minecraft/class_1_233;Ljava/lang/String;)Lnet/minecraft/class_1_203;
 		ARG 1 name
-	METHOD method_1_1935 (Lnet/minecraft/class_1_233;Ljava/lang/String;)Lnet/minecraft/class_1_203;
+	METHOD method_1_1935 (Lnet/minecraft/class_1_233;Ljava/lang/String;)Ljava/util/stream/Stream;
 		ARG 1 name
-	METHOD method_1_1936 (Lnet/minecraft/class_1_233;Ljava/lang/String;)Lnet/minecraft/class_1_203;
+	METHOD method_1_1936 (Lnet/minecraft/class_1_233;Ljava/lang/String;)Ljava/util/stream/Stream;
 		ARG 1 name
 	METHOD method_1_1937 (Lnet/minecraft/class_1_203;Ljava/util/List;Lnet/minecraft/class_1_203;Ljava/util/List;Lnet/minecraft/class_1_203;Ljava/util/List;Lnet/minecraft/class_1_203;Lnet/minecraft/class_1_27;)V
 		ARG 7 worldUpdateProgress
@@ -38,9 +38,8 @@ CLASS net/minecraft/class_1_245 net/minecraft/datafixer/file/fix/StructuresFileF
 	METHOD method_1_1941 (Lnet/minecraft/class_2487;Ljava/lang/String;Lcom/mojang/serialization/Dynamic;)V
 		ARG 1 name
 		ARG 2 value
-	METHOD method_1_1942 (Lnet/minecraft/class_2487;Ljava/lang/String;Lit/unimi/dsi/fastutil/longs/LongList;)V
+	METHOD method_1_1942 (Lnet/minecraft/class_2487;Ljava/lang/String;Lit/unimi/dsi/fastutil/longs/LongSet;)V
 		ARG 1 name
-		ARG 2 indices
 	METHOD method_1_1943 fixChunks (Lit/unimi/dsi/fastutil/longs/Long2ObjectMap;Lnet/minecraft/class_1_196;Lnet/minecraft/class_2487;Lnet/minecraft/class_1_27;)V
 		ARG 0 structureInfoByChunkPos
 		ARG 1 chunkFixer
@@ -56,7 +55,7 @@ CLASS net/minecraft/class_1_245 net/minecraft/datafixer/file/fix/StructuresFileF
 		METHOD method_1_1945 addStart (Ljava/lang/String;Lcom/mojang/serialization/Dynamic;)V
 			ARG 1 name
 			ARG 2 value
-		METHOD method_1_1946 (Ljava/lang/String;)Lit/unimi/dsi/fastutil/longs/LongList;
+		METHOD method_1_1946 (Ljava/lang/String;)Lit/unimi/dsi/fastutil/longs/LongSet;
 			ARG 0 n
 	CLASS class_1_778 CompletableFuturePool
 		FIELD field_1_3863 futures Ljava/util/List;

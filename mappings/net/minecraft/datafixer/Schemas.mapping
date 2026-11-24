@@ -58,7 +58,3 @@ CLASS net/minecraft/class_3551 net/minecraft/datafixer/Schemas
 		ARG 0 value
 	METHOD method_67100 (Ljava/lang/String;)Ljava/lang/String;
 		ARG 0 value
-	METHOD method_74011 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
-		ARG 0 dynamic
-	METHOD method_74012 (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
-		ARG 0 dynamic

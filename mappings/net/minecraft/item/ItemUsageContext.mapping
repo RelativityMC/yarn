@@ -18,6 +18,8 @@ CLASS net/minecraft/class_1838 net/minecraft/item/ItemUsageContext
 		ARG 0 world
 		ARG 1 stack
 		ARG 2 hit
+	METHOD method_1_13400 getBlockState ()Lnet/minecraft/class_2680;
+	METHOD method_1_13401 getFluidState ()Lnet/minecraft/class_3610;
 	METHOD method_8036 getPlayer ()Lnet/minecraft/class_1657;
 	METHOD method_8037 getBlockPos ()Lnet/minecraft/class_2338;
 	METHOD method_8038 getSide ()Lnet/minecraft/class_2350;

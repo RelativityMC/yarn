@@ -13,6 +13,8 @@ CLASS net/minecraft/class_7133 net/minecraft/block/entity/SculkShriekerBlockEnti
 	METHOD <init> (Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
 		ARG 1 pos
 		ARG 2 state
+	METHOD method_1_13433 getPlacedEntityAttacker (Lnet/minecraft/class_1297;)Lnet/minecraft/class_1297;
+		ARG 0 entity
 	METHOD method_43141 shriek (Lnet/minecraft/class_3218;Lnet/minecraft/class_3222;)V
 		ARG 1 world
 		ARG 2 player

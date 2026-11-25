@@ -42,6 +42,7 @@ CLASS net/minecraft/class_1657 net/minecraft/entity/player/PlayerEntity
 		ARG 0 premissions
 	METHOD method_1_10577 toStringHelper (Z)Lcom/google/common/base/MoreObjects$ToStringHelper;
 		ARG 1 server
+	METHOD method_1_13392 cancelUsingItem ()V
 	METHOD method_7254 unlockRecipes (Ljava/util/Collection;)I
 		ARG 1 recipes
 	METHOD method_7255 addExperience (I)V

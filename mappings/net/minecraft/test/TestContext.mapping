@@ -23,8 +23,10 @@ CLASS net/minecraft/class_4516 net/minecraft/test/TestContext
 	METHOD method_1_2264 discardEntity (Lnet/minecraft/class_1297;)V
 		ARG 1 entity
 	METHOD method_1_2265 setEntityPos (Lnet/minecraft/class_1297;Lnet/minecraft/class_2338;)V
+		ARG 1 entity
 		ARG 2 blockPos
 	METHOD method_1_2266 setEntityPos (Lnet/minecraft/class_1297;Lnet/minecraft/class_243;)V
+		ARG 1 entity
 		ARG 2 pos
 	METHOD method_1_2267 setDefaultClockTime (J)V
 		ARG 1 ticks
@@ -104,8 +106,20 @@ CLASS net/minecraft/class_4516 net/minecraft/test/TestContext
 		ARG 1 pos
 		ARG 2 block
 		ARG 3 flags
+	METHOD method_1_13181 dontExpectBlock (Lnet/minecraft/class_2248;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;)V
+		ARG 1 block
+		ARG 2 start
+		ARG 3 end
+	METHOD method_1_13182 expectBlock (Lnet/minecraft/class_2248;Lnet/minecraft/class_2338;Lnet/minecraft/class_2338;)V
+		ARG 1 block
+		ARG 2 start
+		ARG 3 end
 	METHOD method_1_13183 isDiscardableEntity (Lnet/minecraft/class_1297;)Z
 		ARG 0 entity
+	METHOD method_1_13184 (Lnet/minecraft/class_2248;Lnet/minecraft/class_2338;)Z
+		ARG 2 pos
+	METHOD method_1_13185 (Lnet/minecraft/class_2248;Lnet/minecraft/class_2338;)Z
+		ARG 2 pos
 	METHOD method_35943 getWorld ()Lnet/minecraft/class_3218;
 	METHOD method_35945 pushButton (III)V
 		ARG 1 x
@@ -508,6 +522,7 @@ CLASS net/minecraft/class_4516 net/minecraft/test/TestContext
 		ARG 2 value
 		ARG 3 message
 	METHOD method_57099 setEntityPos (Lnet/minecraft/class_1297;FFF)V
+		ARG 1 entity
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z

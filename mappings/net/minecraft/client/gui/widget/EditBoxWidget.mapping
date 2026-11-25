@@ -27,6 +27,8 @@ CLASS net/minecraft/class_7529 net/minecraft/client/gui/widget/EditBoxWidget
 		ARG 10 cursorColor
 		ARG 11 hasBackground
 		ARG 12 hasOverlay
+	METHOD method_1_13205 setTextColor (I)V
+		ARG 1 textColor
 	METHOD method_44400 setText (Ljava/lang/String;)V
 		COMMENT Sets the text of the edit box and moves the cursor to the end of the edit box.
 		ARG 1 text

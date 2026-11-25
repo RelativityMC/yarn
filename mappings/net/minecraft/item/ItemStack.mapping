@@ -94,6 +94,10 @@ CLASS net/minecraft/class_1799 net/minecraft/item/ItemStack
 	METHOD method_1_8457 (Lnet/minecraft/class_9299;)Lnet/minecraft/class_9299;
 		ARG 0 component
 	METHOD method_1_9394 getInteractAnimation ()Lnet/minecraft/class_12126;
+	METHOD method_1_13386 applyRemainderAndCooldown (Lnet/minecraft/class_1269$class_9860;Lnet/minecraft/class_1657;Lnet/minecraft/class_1799;)Lnet/minecraft/class_1269$class_9860;
+		ARG 1 result
+		ARG 2 user
+		ARG 3 stack
 	METHOD method_7909 getItem ()Lnet/minecraft/class_1792;
 		COMMENT {@return the item of this stack}
 		COMMENT

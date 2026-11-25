@@ -3,14 +3,23 @@ CLASS net/minecraft/class_7919 net/minecraft/client/gui/tooltip/Tooltip
 	FIELD field_1_206 texture Lnet/minecraft/class_2960;
 	FIELD field_1_12436 tall Z
 	FIELD field_1_12701 hoveredPositioning Z
+	FIELD field_1_13358 firstLineRowCount I
+	FIELD field_1_13359 lineSplitContent Ljava/util/List;
+	FIELD field_1_13360 moreLines Ljava/util/List;
+	FIELD field_1_13361 splitLines Z
 	FIELD field_41101 ROW_LENGTH I
-	FIELD field_41102 content Lnet/minecraft/class_2561;
+	FIELD field_41102 firstLine Lnet/minecraft/class_2561;
 	FIELD field_41104 narration Lnet/minecraft/class_2561;
 	FIELD field_51822 language Lnet/minecraft/class_2477;
 	METHOD <init> (Lnet/minecraft/class_2561;Ljava/util/List;Lnet/minecraft/class_2561;Ljava/util/Optional;Lnet/minecraft/class_2960;ZZZ)V
+		ARG 1 firstLine
+		ARG 2 moreLines
+		ARG 3 narration
 		ARG 4 data
 		ARG 5 texture
+		ARG 6 tall
 		ARG 7 hoveredPositioning
+		ARG 8 splitLines
 	METHOD <init> (Lnet/minecraft/class_2561;Lnet/minecraft/class_2561;Ljava/util/Optional;Lnet/minecraft/class_2960;)V
 		ARG 1 content
 		ARG 2 narration
@@ -30,7 +39,10 @@ CLASS net/minecraft/class_7919 net/minecraft/client/gui/tooltip/Tooltip
 		ARG 0 lines
 		ARG 1 narration
 		ARG 2 stack
+	METHOD method_1_13398 getBreakRowIndex (Lnet/minecraft/class_310;)I
+		ARG 1 client
 	METHOD method_47405 getLines (Lnet/minecraft/class_310;)Ljava/util/List;
+		ARG 1 client
 	METHOD method_47406 wrapLines (Lnet/minecraft/class_310;Lnet/minecraft/class_2561;)Ljava/util/List;
 		ARG 0 client
 		ARG 1 text

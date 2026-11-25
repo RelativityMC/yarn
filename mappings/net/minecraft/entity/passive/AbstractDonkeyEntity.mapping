@@ -2,6 +2,7 @@ CLASS net/minecraft/class_1492 net/minecraft/entity/passive/AbstractDonkeyEntity
 	FIELD field_6943 CHEST Lnet/minecraft/class_2940;
 	FIELD field_47806 babyBaseDimensions Lnet/minecraft/class_4048;
 	FIELD field_57629 DEFAULT_HAS_CHEST Z
+	METHOD method_1_13431 getEquipChestSound ()Lnet/minecraft/class_3414;
 	METHOD method_6703 hasChest ()Z
 	METHOD method_6704 setHasChest (Z)V
 		ARG 1 hasChest

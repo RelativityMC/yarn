@@ -6,6 +6,8 @@ CLASS net/minecraft/class_10260 net/minecraft/client/gui/screen/ingame/RecipeBoo
 		ARG 3 inventory
 		ARG 4 title
 	METHOD method_1_13362 getRecipeBookButtonNavigationOrder ()I
+	METHOD method_1_13436 repeatRecipe (Z)Z
+		ARG 1 hasShift
 	METHOD method_64509 getRecipeBookButtonPos ()Lnet/minecraft/class_8029;
 	METHOD method_64510 onRecipeBookToggled ()V
 	METHOD method_64511 shouldAddPaddingToGhostResult ()Z

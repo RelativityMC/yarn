@@ -38,6 +38,8 @@ CLASS net/minecraft/class_5522 net/minecraft/client/gui/screen/multiplayer/Socia
 	METHOD method_1_11451 onReorderEntries ()V
 	METHOD method_1_11452 loadTab (Lnet/minecraft/class_8087;)V
 		ARG 1 tab
+	METHOD method_1_13434 updateTitles ()V
+	METHOD method_1_13435 updateFriendTabText ()V
 	METHOD method_31352 setCurrentTab ()V
 	METHOD method_31353 setPlayerOnline (Lnet/minecraft/class_640;)V
 		ARG 1 player

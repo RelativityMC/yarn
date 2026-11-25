@@ -29,6 +29,9 @@ CLASS net/minecraft/class_898 net/minecraft/client/render/entity/EntityRenderMan
 		ARG 11 palettedTextureManager
 	METHOD method_1_9671 getPlayerRenderer (Lnet/minecraft/class_10055;)Lnet/minecraft/class_1007;
 		ARG 1 playerRenderState
+	METHOD method_1_13424 updateShadow (Lnet/minecraft/class_10017;Lnet/minecraft/class_1937;)V
+		ARG 1 renderState
+		ARG 2 world
 	METHOD method_3941 configure (Lnet/minecraft/class_4184;Lnet/minecraft/class_1297;)V
 		ARG 1 camera
 		ARG 2 targetedEntity

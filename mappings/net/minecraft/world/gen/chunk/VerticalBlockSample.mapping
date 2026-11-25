@@ -39,3 +39,4 @@ CLASS net/minecraft/class_4966 net/minecraft/world/gen/chunk/VerticalBlockSample
 	METHOD method_1_10668 getDydz ()I
 	METHOD method_1_10669 getMaxSetY ()I
 	METHOD method_1_10670 getMaxSetIndex ()I
+	METHOD method_1_13402 getTopY ()I

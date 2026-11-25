@@ -59,6 +59,10 @@ CLASS net/minecraft/class_2535 net/minecraft/network/ClientConnection
 	METHOD method_1_11731 setOutboundCompression (I)V
 		ARG 1 compressionThreshold
 	METHOD method_1_13086 getChannelId ()Lio/netty/channel/ChannelId;
+	METHOD method_1_13381 disconnectAbruptly (Lnet/minecraft/class_9812;)V
+		ARG 1 disconnectionInfo
+	METHOD method_1_13382 handleDisconnection ()V
+	METHOD method_1_13383 handleAbruptDisconnection ()V
 	METHOD method_10743 send (Lnet/minecraft/class_2596;)V
 		ARG 1 packet
 	METHOD method_10744 getPacketListener ()Lnet/minecraft/class_2547;
@@ -103,6 +107,7 @@ CLASS net/minecraft/class_2535 net/minecraft/network/ClientConnection
 		ARG 2 listener
 		ARG 3 flush
 	METHOD method_10768 handleDisconnection (Z)V
+		ARG 1 requireChannelClosed
 	METHOD method_10769 connectLocal (Ljava/net/SocketAddress;)Lnet/minecraft/class_2535;
 		ARG 0 address
 	METHOD method_10772 isChannelAbsent ()Z

@@ -16,13 +16,18 @@ CLASS net/minecraft/class_1_1004 net/minecraft/client/friend/FriendListManager
 	FIELD field_1_6884 updating Ljava/util/concurrent/atomic/AtomicBoolean;
 	FIELD field_1_6885 updateListeners Ljava/util/Set;
 	METHOD <init> (Lcom/mojang/authlib/services/FriendsService;Lnet/minecraft/class_310;)V
+		ARG 1 friendsService
 		ARG 2 client
 	METHOD method_1_6091 addUpdateListener (Ljava/lang/Runnable;)V
 		ARG 1 listener
 	METHOD method_1_6092 shutdown ()V
 	METHOD method_1_6093 updateFromFriendData (Lcom/mojang/authlib/services/response/FriendData;Lnet/minecraft/class_1_1004$class_1_1006;)Z
+		ARG 1 friendData
 		ARG 2 status
-	METHOD method_1_6094 onFriendStatusChanged (Ljava/util/UUID;Ljava/lang/String;Lnet/minecraft/class_1_945$class_1_1005;)V
+	METHOD method_1_6094 notifyFriendStatusChange (Ljava/util/UUID;Ljava/lang/String;Lnet/minecraft/class_1_945$class_1_1005;)V
+		ARG 1 id
+		ARG 2 name
+		ARG 3 notifier
 	METHOD method_1_6095 updateAsync ()Ljava/util/concurrent/CompletableFuture;
 	METHOD method_1_6096 getFriendData ()Lcom/mojang/authlib/services/response/FriendData;
 	METHOD method_1_6097 getStatus ()Lnet/minecraft/class_1_1004$class_1_1006;
@@ -31,6 +36,7 @@ CLASS net/minecraft/class_1_1004 net/minecraft/client/friend/FriendListManager
 	METHOD method_1_6103 (Ljava/lang/Runnable;)Ljava/lang/Thread;
 		ARG 0 runnable
 	METHOD method_1_6105 convertYggdrasilResultCode (Lcom/mojang/authlib/services/FriendsService$ResultCode;)Lnet/minecraft/class_1_1004$class_1_1006;
+		ARG 0 resultCode
 	METHOD method_1_6106 notifyUpdateListeners ()V
 	METHOD method_1_6107 removeUpdateListener (Ljava/lang/Runnable;)V
 		ARG 1 listener
@@ -38,4 +44,20 @@ CLASS net/minecraft/class_1_1004 net/minecraft/client/friend/FriendListManager
 	METHOD method_1_6109 update ()V
 	METHOD method_1_6110 onFriendsEnabled ()V
 	METHOD method_1_6111 onFriendsDisabled ()V
+	METHOD method_1_13439 updateFriends (Lcom/mojang/authlib/services/response/FriendUpdateType;Lcom/mojang/authlib/services/response/FriendDto;)V
+		ARG 1 friendUpdateType
+		ARG 2 friendDto
+	METHOD method_1_13440 doUpdateFriends (Lcom/mojang/authlib/services/response/FriendUpdateType;Lcom/mojang/authlib/services/response/FriendDto;)V
+		ARG 1 friendUpdateType
+		ARG 2 friendDto
+	METHOD method_1_13441 addEntry (Ljava/util/List;Lcom/mojang/authlib/services/response/FriendDto;)Ljava/util/List;
+		ARG 1 entries
+		ARG 2 addendum
+	METHOD method_1_13442 removeEntry (Ljava/util/List;Ljava/util/UUID;)Ljava/util/List;
+		ARG 1 entries
+		ARG 2 delendum
+	METHOD method_1_13444 (Ljava/util/UUID;Lcom/mojang/authlib/services/response/FriendDto;)Z
+		ARG 1 friend
+	METHOD method_1_13445 (Ljava/util/UUID;Lcom/mojang/authlib/services/response/FriendDto;)Z
+		ARG 1 request
 	CLASS class_1_1006 Status

@@ -3,11 +3,10 @@ CLASS net/minecraft/class_12152 net/minecraft/client/render/entity/state/Lancing
 		ARG 0 value
 		ARG 1 start
 		ARG 2 end
-	METHOD method_75391 applyStabbingTransformation (FLnet/minecraft/class_4587;ILnet/minecraft/class_1306;)V
+	METHOD method_75391 applyStabbingTransformation (FLnet/minecraft/class_4587;IDZ)V
 		ARG 0 swingProgress
 		ARG 1 matrices
 		ARG 2 side
-		ARG 3 arm
 	METHOD method_75392 applyChargingTransformation (Lnet/minecraft/class_10426;Lnet/minecraft/class_4587;FLnet/minecraft/class_1306;Lnet/minecraft/class_1799;)V
 		ARG 0 state
 		ARG 1 matrices

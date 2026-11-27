@@ -12,8 +12,7 @@ CLASS net/minecraft/class_3043 net/minecraft/server/command/EffectCommand
 	METHOD method_1_6646 getEffectTicks (Ljava/lang/Integer;Lnet/minecraft/class_1291;)I
 		ARG 0 durationInput
 		ARG 1 effect
-	METHOD method_1_6647 (Lnet/minecraft/class_1309;I)Lnet/minecraft/class_2561;
-		ARG 0 entity
+	METHOD method_1_6647 (Lnet/minecraft/class_1297;I)Lnet/minecraft/class_2561;
 		ARG 1 total
 	METHOD method_1_6648 (II)Lnet/minecraft/class_2561;
 		ARG 0 targets
@@ -50,8 +49,6 @@ CLASS net/minecraft/class_3043 net/minecraft/server/command/EffectCommand
 	METHOD method_1_12238 (Ljava/lang/Object;Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 effect
 		ARG 1 targets
-	METHOD method_1_12239 (Lnet/minecraft/class_1309;ILjava/lang/Integer;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
-		ARG 0 entity
 	METHOD method_1_12240 (IILjava/lang/Integer;)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;
 		ARG 0 targets
 	METHOD method_1_12241 (Lnet/minecraft/class_1297;I)Lcom/mojang/brigadier/exceptions/CommandSyntaxException;

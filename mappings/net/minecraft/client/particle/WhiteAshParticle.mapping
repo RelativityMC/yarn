@@ -14,3 +14,5 @@ CLASS net/minecraft/class_5165 net/minecraft/client/particle/WhiteAshParticle
 		FIELD field_23936 spriteProvider Lnet/minecraft/class_4002;
 		METHOD <init> (Lnet/minecraft/class_4002;)V
 			ARG 1 spriteProvider
+		METHOD method_1_13176 sampleSpread (Lnet/minecraft/class_5819;)F
+			ARG 1 random

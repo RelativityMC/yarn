@@ -26,3 +26,5 @@ CLASS net/minecraft/class_8216 net/minecraft/util/Urls
 	METHOD method_49719 getExtendJavaRealmsUrl (Ljava/lang/String;Ljava/util/UUID;Lnet/minecraft/class_8216$class_1_1675;)Ljava/net/URI;
 		ARG 0 subscriptionId
 		ARG 1 uuid
+		ARG 2 reason
+	CLASS class_1_1675 RenewalReason

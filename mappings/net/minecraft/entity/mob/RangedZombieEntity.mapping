@@ -11,6 +11,7 @@ CLASS net/minecraft/class_1_1778 net/minecraft/entity/mob/RangedZombieEntity
 	METHOD method_1_11257 setShotDivergence (F)V
 		ARG 1 shotDivergence
 	METHOD method_1_11258 canShoot ()Z
+	METHOD method_1_13409 getRangedAttackRange ()F
 	CLASS class_1_1779 MeleeAttackGoal
 		FIELD field_1_11599 useWeapon Z
 		FIELD field_1_11600 rangedZombie Lnet/minecraft/class_1_1778;

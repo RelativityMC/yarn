@@ -18,6 +18,7 @@ CLASS net/minecraft/class_1_1961 net/minecraft/client/gui/widget/SlotWidget
 		ARG 3 backgroundWidth
 		ARG 4 x
 		ARG 5 y
+		ARG 6 tooltipGetter
 	METHOD method_1_12371 handleClickForSubmenu (Lnet/minecraft/class_1713;)V
 		ARG 1 actionType
 	METHOD method_1_12372 getContentsNarration ()Lnet/minecraft/class_2561;
@@ -48,3 +49,21 @@ CLASS net/minecraft/class_1_1961 net/minecraft/client/gui/widget/SlotWidget
 	METHOD method_1_12385 setTooltipFromSlot ()V
 	METHOD method_1_12386 setRelativeX (I)V
 		ARG 1 x
+	METHOD method_1_13415 createDefaultTooltipGetter (Lnet/minecraft/class_310;Ljava/util/function/Function;)Lnet/minecraft/class_1_1961$class_1_2180;
+		ARG 0 client
+		ARG 1 emptySlotTooltipGetter
+	METHOD method_1_13416 createDefaultTooltipGetter (Lnet/minecraft/class_310;Lnet/minecraft/class_7919;)Lnet/minecraft/class_1_1961$class_1_2180;
+		ARG 0 client
+		ARG 1 emptySlotTooltip
+	CLASS class_1_2180 TooltipGetter
+		METHOD method_1_13417 getForEmptySlot (Lnet/minecraft/class_1735;)Lnet/minecraft/class_7919;
+			ARG 1 slot
+		METHOD method_1_13418 get (Lnet/minecraft/class_1735;Lnet/minecraft/class_1799;)Lnet/minecraft/class_7919;
+			ARG 1 slot
+			ARG 2 stack
+		METHOD method_1_13419 get (Lnet/minecraft/class_1735;)Lnet/minecraft/class_7919;
+			ARG 1 slot
+		CLASS class_1_2181 Default
+			FIELD field_1_13371 client Lnet/minecraft/class_310;
+			METHOD <init> (Lnet/minecraft/class_310;)V
+				ARG 1 client

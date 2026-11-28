@@ -1,6 +1,10 @@
 CLASS net/minecraft/class_11489 net/minecraft/client/gui/screen/dialog/InputControlHandlers
+	FIELD field_1_13323 EMAIL_ADDRESS_PREDICATE Ljava/util/function/Predicate;
 	FIELD field_60776 LOGGER Lorg/slf4j/Logger;
 	FIELD field_60777 INPUT_CONTROL_HANDLERS Ljava/util/Map;
+	METHOD method_1_13349 warnOnPossibleEmailAddress (Lnet/minecraft/class_339;Ljava/lang/String;)V
+		ARG 0 field
+		ARG 1 text
 	METHOD method_71901 bootstrap ()V
 	METHOD method_71902 getHandler (Lnet/minecraft/class_11438;)Lnet/minecraft/class_11487;
 		ARG 0 inputControl
@@ -33,3 +37,7 @@ CLASS net/minecraft/class_11489 net/minecraft/client/gui/screen/dialog/InputCont
 			METHOD method_72150 getActualValue ()F
 	CLASS class_11493 SimpleOptionInputControlHandler
 	CLASS class_11494 TextInputControlHandler
+		METHOD method_1_13350 (Lnet/minecraft/class_7529;Ljava/lang/String;)V
+			ARG 1 text
+		METHOD method_1_13351 (Lnet/minecraft/class_342;Ljava/lang/String;)V
+			ARG 1 text

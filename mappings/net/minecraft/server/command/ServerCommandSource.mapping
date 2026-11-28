@@ -61,6 +61,17 @@ CLASS net/minecraft/class_2168 net/minecraft/server/command/ServerCommandSource
 	METHOD method_1_12626 getReloadableRegistries ()Lnet/minecraft/class_7871$class_7872;
 	METHOD method_1_12627 getReloadableRegistryWrapper ()Lnet/minecraft/class_7225$class_7874;
 	METHOD method_1_12628 getWorldRegistryKeys ()Ljava/util/Set;
+	METHOD method_1_13394 sendFeedback (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_2165;ZLjava/util/function/Supplier;Ljava/util/function/Supplier;Z)V
+		ARG 0 server
+		ARG 1 output
+		ARG 2 silent
+		ARG 3 displayNameGetter
+		ARG 4 message
+		ARG 5 broadcastToOps
+	METHOD method_1_13395 sendFeedback (Lnet/minecraft/server/MinecraftServer;Ljava/util/function/Supplier;Z)V
+		ARG 0 server
+		ARG 1 message
+		ARG 2 broadcastToOps
 	METHOD method_9206 withPermissions (Lnet/minecraft/class_12096;)Lnet/minecraft/class_2168;
 		ARG 1 permissions
 	METHOD method_9207 getPlayerOrThrow ()Lnet/minecraft/class_3222;
@@ -75,6 +86,9 @@ CLASS net/minecraft/class_2168 net/minecraft/server/command/ServerCommandSource
 	METHOD method_9210 getRotation ()Lnet/minecraft/class_241;
 	METHOD method_9211 getServer ()Lnet/minecraft/server/MinecraftServer;
 	METHOD method_9212 sendToOps (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_2165;Lnet/minecraft/class_2561;Lnet/minecraft/class_2561;)V
+		ARG 0 server
+		ARG 1 output
+		ARG 2 senderName
 		ARG 3 message
 	METHOD method_9213 sendError (Lnet/minecraft/class_2561;)V
 		ARG 1 message
@@ -94,6 +108,7 @@ CLASS net/minecraft/class_2168 net/minecraft/server/command/ServerCommandSource
 	METHOD method_9223 getDisplayName ()Lnet/minecraft/class_2561;
 	METHOD method_9225 getWorld ()Lnet/minecraft/class_3218;
 	METHOD method_9226 sendFeedback (Ljava/util/function/Supplier;Z)V
+		ARG 1 message
 		ARG 2 broadcastToOps
 	METHOD method_9227 withWorld (Lnet/minecraft/class_3218;)Lnet/minecraft/class_2168;
 		ARG 1 world

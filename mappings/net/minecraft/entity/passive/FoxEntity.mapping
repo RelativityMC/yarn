@@ -157,6 +157,8 @@ CLASS net/minecraft/class_4019 net/minecraft/entity/passive/FoxEntity
 			ARG 2 speed
 			ARG 4 pauseWhenIdle
 	CLASS class_4030 FoxMoveControl
+		METHOD <init> (Lnet/minecraft/class_4019;)V
+			ARG 1 fox
 	CLASS class_4031 GoToVillageGoal
 		METHOD <init> (Lnet/minecraft/class_4019;II)V
 			ARG 2 unused

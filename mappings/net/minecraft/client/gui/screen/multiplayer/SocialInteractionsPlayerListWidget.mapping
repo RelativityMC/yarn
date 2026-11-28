@@ -18,6 +18,7 @@ CLASS net/minecraft/class_5521 net/minecraft/client/gui/screen/multiplayer/Socia
 		ARG 1 playerInteractionsTab
 	METHOD method_1_11463 setEntries (Ljava/util/Collection;)V
 		ARG 1 playerEntries
+	METHOD method_1_13438 getPlayerCount ()I
 	METHOD method_31345 setPlayerOnline (Lnet/minecraft/class_640;Lnet/minecraft/class_5522$class_5523;)V
 		ARG 1 player
 		ARG 2 tab

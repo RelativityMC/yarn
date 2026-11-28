@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_1_2179 net/minecraft/datafixer/fix/AddLocatorBarIconStyleDataFix
+	FIELD field_1_13368 targetType Lcom/mojang/datafixers/DSL$TypeReference;
+	METHOD <init> (Lcom/mojang/datafixers/schemas/Schema;Lcom/mojang/datafixers/DSL$TypeReference;)V
+		ARG 1 outputSchema
+		ARG 2 targetType
+	METHOD method_1_13411 fixTarget (Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 target
+	METHOD method_1_13412 (Lcom/mojang/serialization/Dynamic;Lcom/mojang/serialization/Dynamic;)Lcom/mojang/serialization/Dynamic;
+		ARG 1 locatorBarIcon
+	METHOD method_1_13413 (Lcom/mojang/datafixers/Typed;)Lcom/mojang/datafixers/Typed;
+		ARG 1 target

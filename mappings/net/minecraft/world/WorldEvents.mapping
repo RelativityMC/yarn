@@ -422,4 +422,9 @@ CLASS net/minecraft/class_6088 net/minecraft/world/WorldEvents
 		COMMENT <br>Spawns dust pillar particles.
 		COMMENT <p>The amount of particles to spawn must be supplied as extra data.
 		COMMENT <p>Called by {@link net.minecraft.item.MaceItem#knockbackNearbyEntities}
+	METHOD method_1_13397 syncBlockBroken (Lnet/minecraft/class_1297;Lnet/minecraft/class_1937;Lnet/minecraft/class_2338;Lnet/minecraft/class_2680;)V
+		ARG 0 entity
+		ARG 1 world
+		ARG 2 pos
+		ARG 3 state
 	CLASS class_1_1310 Event

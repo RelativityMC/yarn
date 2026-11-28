@@ -25,6 +25,7 @@ CLASS net/minecraft/server/MinecraftServer
 	FIELD field_1_1406 worldGenSettings Lnet/minecraft/class_7726;
 	FIELD field_1_5953 SERVER_THREAD_NAME Ljava/lang/String;
 	FIELD field_1_13046 negotiationProvider Lnet/minecraft/class_1_2128$class_1_2129;
+	FIELD field_1_13356 SERVER_NAME Lnet/minecraft/class_2561;
 	FIELD field_4543 onlineMode Z
 	FIELD field_4544 running Z
 	FIELD field_4546 LOGGER Lorg/slf4j/Logger;
@@ -143,6 +144,8 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 0 player
 	METHOD method_1_10527 getStatusConnectDetails ()Ljava/lang/String;
 	METHOD method_1_13091 getNegotiationProvider ()Lnet/minecraft/class_1_2128$class_1_2129;
+	METHOD method_1_13387 getCommandSource (Lnet/minecraft/class_3218;)Lnet/minecraft/class_2168;
+		ARG 1 world
 	METHOD method_3718 isFlightEnabled ()Z
 	METHOD method_3723 save (ZZZ)Z
 		COMMENT Saves the server to the data storage device.

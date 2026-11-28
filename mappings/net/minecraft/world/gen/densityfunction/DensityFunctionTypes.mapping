@@ -217,7 +217,9 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 	METHOD method_41063 (Lcom/mojang/datafixers/util/Either;)Lnet/minecraft/class_6910;
 		ARG 0 either
 	METHOD method_41066 registerAndGetDefault (Lnet/minecraft/class_2385;)V
+		ARG 0 registry
 	METHOD method_41067 register (Lnet/minecraft/class_2385;Ljava/lang/String;Lcom/mojang/serialization/MapCodec;)V
+		ARG 0 registry
 		ARG 1 id
 		ARG 2 mapCodec
 	METHOD method_41071 (Lnet/minecraft/class_6910;)Lcom/mojang/datafixers/util/Either;
@@ -240,3 +242,12 @@ CLASS net/minecraft/class_6916 net/minecraft/world/gen/densityfunction/DensityFu
 		ARG 2 lowerBound
 		ARG 3 cellHeight
 	CLASS class_7051 RegistryEntryHolder
+		FIELD field_1_13382 VARIANT_AXES_NOT_COMPUTED I
+		FIELD field_1_13383 variantAxes I
+		FIELD field_1_13384 entry Lnet/minecraft/class_6880;
+		FIELD field_1_13385 range Lnet/minecraft/class_1_1150;
+		METHOD <init> (Lnet/minecraft/class_6880;)V
+			ARG 1 entry
+		METHOD equals (Ljava/lang/Object;)Z
+			ARG 1 other
+		METHOD method_1_13437 getEntry ()Lnet/minecraft/class_6880;
